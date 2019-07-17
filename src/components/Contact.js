@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import {storeScroll} from '../ScrollFn'
 
 class Contact extends Component {
     render() {
+        storeScroll()
+
         return (
             <ContactBody>
                 <LogoHolder>
@@ -12,7 +15,7 @@ class Contact extends Component {
                     <LogoSpan><Logo className="fab fa-linkedin" /> linkedin.com/in/kung8</LogoSpan>
                 </LogoHolder>
                 <div style={{ display: 'flex', flexDirection: 'column', minHeight: 510, background: 'black', width: '95%', fontSize: 35, alignItems: 'center', textAlign: 'left', position: 'relative', color: 'white' }}>
-                    {/* <h1>Contact Me:</h1> */}
+                    <h1>Contact Me:</h1>
                     <span style={{ textAlign: 'left', position: 'absolute', top: 75, left: 25 }}>Email:</span>
                     <InputField style={{  }} type="text" placeholder='Email' />
                     <span style={{ textAlign: 'left', position: 'absolute', top: 165, left: 25 }}>Phone:</span>
@@ -29,7 +32,9 @@ class Contact extends Component {
 export default Contact
 
 const ContactBody = styled.div`
-    height: calc(100vh - 100px);
+    background: linear-gradient(#bbbabb,lightgrey,#BBBABB);
+    min-height: 100vh;
+    // height: calc(100vh - 100px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -44,6 +49,8 @@ const LogoHolder = styled.div`
         margin:50px auto;
         width:320px;
     }
+    margin-top:120px;
+    margin-bottom:20px;
     width: 400px; 
     color: black; 
     display: flex;
