@@ -41,7 +41,7 @@ class Project extends Component {
                     </ProjName>
                 </ProjNameHolder>
                 <HR/>
-                <Img src={image} alt="website"/>
+                <Img src={image[0]} alt="website"/>
                 <HR/>
                 {/* <h3>Tech: {mappedTech}</h3> */}
                 <DescTextHolder style={{ background: hosting}}>

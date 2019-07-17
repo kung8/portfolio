@@ -4,7 +4,6 @@ import {Redirect} from 'react-router-dom'
 
 function IndProject (props){
         let mappedTech
-        console.log(props.selectedProject)
         if(Object.keys(props.selectedProject).length === 0){
             return <Redirect to='/projects'/>
         } else {
