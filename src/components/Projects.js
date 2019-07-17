@@ -31,7 +31,6 @@ class Projects extends Component {
 
     render() {
         storeScroll()
-
         const {isBlueSelected,isGreenSelected,isPinkSelected} = this.state
 
         const mappedProj = this.state.projects.filter(project=>{
@@ -41,33 +40,49 @@ class Projects extends Component {
             if(!domain && !hosted && isPinkSelected) { return project}
         }).map(project => {
             return (
-                <Project project={project} />
+                <Project key={project.id} project={project} />
             )
         })
 
         return (
-            <div style={{ background: 'linear-gradient(#bbbabb,lightgrey,#BBBABB)', height: '100%', minHeight: '100vh' }}>
-                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', minWidth: '350px', maxWidth: '80%', alignItems: 'center', margin: '0 auto' }}>
+            <ProjBody>
+                <Mapped>
                     {mappedProj}
-                </div>
+                </Mapped>
                 <Legend style={{marginTop:!isBlueSelected && !isGreenSelected && !isPinkSelected && 120}}>
                     <h1>Legend</h1>
-                    <KeyHolder onClick={()=>this.setState({isBlueSelected:!this.state.isBlueSelected})} style={{ top: 45 }}>
+                    <KeyHolder onClick={()=>this.setState({isBlueSelected:!isBlueSelected})} style={{ top: 45 }}>
                         <Key  style={{ background: 'lightblue' }}></Key>  <Text style={{textDecoration:!isBlueSelected && 'line-through'}}>Hosted with Domain</Text>
                     </KeyHolder>
-                    <KeyHolder onClick={()=>this.setState({isGreenSelected:!this.state.isGreenSelected})} style={{ top: 105 }}>
+                    <KeyHolder onClick={()=>this.setState({isGreenSelected:!isGreenSelected})} style={{ top: 105 }}>
                         <Key style={{ background: 'lightgreen' }}></Key> <Text style={{textDecoration:!isGreenSelected && 'line-through'}}>Hosted, No Domain</Text>
                     </KeyHolder>
-                    <KeyHolder onClick={()=>this.setState({isPinkSelected:!this.state.isPinkSelected})} style={{ top: 165 }}>
+                    <KeyHolder onClick={()=>this.setState({isPinkSelected:!isPinkSelected})} style={{ top: 165 }}>
                         <Key style={{ background: 'pink' }}></Key> <Text style={{textDecoration:!isPinkSelected && 'line-through'}}>Not Hosted</Text>
                     </KeyHolder>
                 </Legend>
-            </div>
+            </ProjBody>
         )
     }
 }
 
 export default Projects
+
+const ProjBody = styled.div`
+    background: linear-gradient(#bbbabb,lightgrey,#BBBABB);
+    height: 100%;
+    min-height: 100vh; 
+`
+
+const Mapped = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 350px;
+    max-width: 80%;
+    align-items: center;
+    margin: 0 auto;
+`
 
 const Legend = styled.div`
     box-shadow: 6px 6px 15px 3px black;

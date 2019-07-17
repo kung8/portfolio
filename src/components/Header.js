@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import styled from 'styled-components'
 
 class Header extends Component {
@@ -12,7 +12,7 @@ class Header extends Component {
     }
 
     render() {
-        const { ham } = this.state
+        // const { ham } = this.state
         // console.log(ham)
         return (
             <HeaderBody id='HeaderBody'>
@@ -79,10 +79,10 @@ const NavLinks = styled.div`
         display:none;
     }
 `
-const Tag = styled.div`
-    position:absolute;
-    // display:block;
-    // top:50px;
-    // background:blue;
-    // z-index:4;
-`
+// const Tag = styled.div`
+//     position:absolute;
+//     // display:block;
+//     // top:50px;
+//     // background:blue;
+//     // z-index:4;
+// `

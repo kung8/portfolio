@@ -1,39 +1,128 @@
 import React, { Component } from 'react'
+import IndProject from './IndProject'
+import styled from 'styled-components'
+import {withRouter} from 'react-router-dom'
+import {connect} from 'react-redux'
+import {selectProject} from '../Ducks/reducer'
+
+const target = '_blank'
 
 class Project extends Component {
-    render() {
-        const { name, id, url, tech, desc, domain, date, image,hosted } = this.props.project
+    state={
+        isExpanded:null,
+        isSelected:false
+    }
 
-        const mappedTech = tech.map(item => {
-            return (
-                <>
-                    <li>{item}</li>
-                </>
-            )
-        })
+    async expand(project){
+        const {name} = project
+        await this.props.selectProject(project)
+        this.props.history.push(`/projects/${name}`)
+    }
+
+    render() {
+        console.log(this.props)
+        // const {isExpanded,isSelected} = this.state
+        
+        const { name, url, tech, desc, domain, date, image,hosted } = this.props.project
+
+        const hosting = hosted ? (domain ?'lightblue' : 'lightgreen') : 'pink'
 
         return (
-            <div id='project' key={id} style={{ borderRadius: '10px', boxShadow: '6px 6px 15px 3px black', background: 'white', width: '350px', height: '450px', display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop:120 }}>
-                <div style={{ background: hosted ? (domain ?'lightblue' : 'lightgreen') : 'pink', width: '100%', height: '60px', borderRadius: '10px 10px 0px 0px', textAlign: 'center' }}>
-                    <h1 style={{ letterSpacing:'0.035em',padding: 5 ,textShadow:'3px 1px 10px black',color:'white'}}>
-                        {hosted ? <a style={{color:'white',textDecoration:'none'}} target='_blank' href={domain ? `https://${url}` : `http://${url}`}>{name}</a>:name}
-                    </h1>
-                </div>
-                <hr style={{ width: '100%' }} />
-                <img src={image} alt="website" height='200px' style={{ margin:10, maxWidth:'90%'}} />
-                <hr style={{ width: '100%' }} />
+            <>
+            <ProjectBody>
+                <ProjNameHolder style={{ background: hosting }}>
+                    <ProjName>
+                        {hosted ? 
+                            <LinkName  target={target} 
+                                rel="noopener noreferrer" 
+                                href={domain ? `https://${url}`:`http://${url}`}>{name}</LinkName>
+                             :
+                             name}
+                    </ProjName>
+                </ProjNameHolder>
+                <HR/>
+                <Img src={image} alt="website"/>
+                <HR/>
                 {/* <h3>Tech: {mappedTech}</h3> */}
-                <div style={{ background: hosted ? (domain ?'lightblue' : 'lightgreen') : 'pink', width: '100%', height: '180px', borderRadius: '0px 0px 10px 10px' ,display:'flex',justifyContent:'center'}}>
+                <DescTextHolder style={{ background: hosting}}>
                     <div style={{width:'90%',position:'relative'}}>
                         {/* <h3 style={{color:'white'}}>{date}</h3> */}
-                        {/* <h3><a target='_blank' href={domain ? `https://${url}` : `http://${url}`}>{url}</a></h3> */}
-                        <h4 style={{fontSize:25,textAlign:'center'}}>{desc}</h4>
-                        <button style={{position:'absolute',bottom:10,width:150,height:50,left:'calc(175px - 85px)',fontSize:35,borderRadius:10,outline:'none'}}>Click Me</button>
+                        <Text>{desc}</Text>
+                        <Button onClick={()=>this.expand(this.props.project)}>Click Me</Button>
                     </div>
-                </div>
-            </div>
+                </DescTextHolder>
+            </ProjectBody>
+            </>
         )
     }
 }
 
-export default Project
+export default withRouter(connect(null,{selectProject})(Project))
+
+
+const ProjectBody = styled.div`
+    border-radius: 10px;
+    box-shadow: 6px 6px 15px 3px black;
+    background: white;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-ttems: center;
+    margin-top:120px;
+`
+
+const ProjNameHolder = styled.div`
+    width: 100%;
+    height: 60px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center
+`
+
+const ProjName = styled.h1`
+    letter-spacing:0.035em;
+    padding: 5px ;
+    text-shadow:3px 1px 10px black;
+    color:white;
+`
+
+const LinkName = styled.a`
+    color:white;
+    text-decoration:none
+`
+
+const HR = styled.hr`
+    width:100%;
+`
+
+const Img = styled.img`
+    height:200px; 
+    margin:10px; 
+    max-width:90%;
+`
+
+const DescTextHolder = styled.div`
+    width: 100%;
+    height: 180px;
+    border-radius: 0px 0px 10px 10px;
+    display:flex;
+    justify-content:center
+`
+
+const Text = styled.h4`
+    font-size:25px;
+    text-align:center;
+`
+
+const Button = styled.button`
+    position:absolute;
+    bottom:10px;
+    width:150px;
+    height:50px;
+    left:calc(175px - 85px);
+    font-size:35px;
+    border-radius:10px;
+    outline:none;
+    background:black;
+    color:white;
+`
