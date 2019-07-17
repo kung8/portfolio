@@ -57,7 +57,7 @@ const HeaderBody = styled.div`
     font-size:25px;
     height:80px;
     border-bottom:solid 1px black;
-    background:transparent;
+    background:linear-gradient(#bbbabb,lightgrey,#BBBABB);
     align-items:center;
     ::-webkit-scrollbar {
         width:0px

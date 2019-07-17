@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import {storeScroll} from '../ScrollFn'
+import { storeScroll } from '../ScrollFn'
 
 class Contact extends Component {
     render() {
@@ -9,21 +9,21 @@ class Contact extends Component {
         return (
             <ContactBody >
                 <LogoHolder>
-                    <LogoSpan><Logo className="fas fa-phone-square" /> (571) 623-9450</LogoSpan>
-                    <LogoSpan><Logo className="fas fa-envelope-square" /> ung.kevin78@gmail.com</LogoSpan>
-                    <LogoSpan><Logo className="fab fa-github-square" /> github.com/kung8</LogoSpan>
-                    <LogoSpan><Logo className="fab fa-linkedin" /> linkedin.com/in/kung8</LogoSpan>
+                    <LogoSpan ><Logo className="fas fa-phone-square" /> (571) 623-9450</LogoSpan>
+                    <LogoSpan ><Logo className="fas fa-envelope-square" /> ung.kevin78@gmail.com</LogoSpan>
+                    <LogoSpan ><Logo className="fab fa-github-square" /> github.com/kung8</LogoSpan>
+                    <LogoSpan ><Logo className="fab fa-linkedin" /> linkedin.com/in/kung8</LogoSpan>
                 </LogoHolder>
-                <div style={{ display: 'flex', flexDirection: 'column', minHeight: 510, background: 'black', width: '95%', fontSize: 35, alignItems: 'center', textAlign: 'left', position: 'relative', color: 'white' }}>
-                    <h1>Contact Me:</h1>
+                <FormHolder style={{ borderRadius:10,display: 'flex', flexDirection: 'column', marginBottom: 10, minHeight: 510, background: 'black', width: '95%', fontSize: 35, alignItems: 'center', textAlign: 'left', position: 'relative', top:60, color: 'white' }}>
+                    {/* <h1>Contact Me:</h1> */}
                     <span style={{ textAlign: 'left', position: 'absolute', top: 75, left: 25 }}>Email:</span>
-                    <InputField style={{  }} type="text" placeholder='Email' />
+                    <InputField style={{ top: '120px', left: '25px' }} type="text" placeholder='Email' />
                     <span style={{ textAlign: 'left', position: 'absolute', top: 165, left: 25 }}>Phone:</span>
-                    <InputField style={{ width: 350, fontSize: 35, height: 40, position: 'absolute', top: 210, left: 25 }} type="text" placeholder='Phone' />
+                    <InputField style={{ top: 210, left: 25 }} type="text" placeholder='Phone' />
                     <span style={{ textAlign: 'left', position: 'absolute', top: 255, left: 25 }}>Message:</span>
-                    <TextField type="text" placeholder='Message' style={{ width: 350, fontSize: 35, height: 40, position: 'absolute', top: 300, left: 25, minHeight: 200 }}
+                    <TextField type="text" placeholder='Message' style={{}}
                     />
-                </div>
+                </FormHolder>
             </ContactBody>
         )
     }
@@ -35,33 +35,50 @@ const ContactBody = styled.div`
     background: linear-gradient(#bbbabb,lightgrey,#BBBABB);
     height: 100%;
     min-height: 100vh;
-    margin-top:80px;
-    overflow:hidden;
     display:flex;
     flex-direction:column;
+    align-items:center;
     width:100%;
     max-width:100vw;
+    overflow-x:hidden;
     ::-webkit-scrollbar {
         width:0px
     };
-    @media screen and (min-height:810px){
-        margin-top:100px;
-    }
+
 `
 
 const LogoHolder = styled.div`
-    @media screen and (max-width:400px){
-        margin:50px auto;
-        width:320px;
-    }
-    margin-top:120px;
-    margin-bottom:20px;
+    margin-top:80px;
     width: 400px; 
     color: black; 
     display: flex;
     flex-direction: column;
+    position:relative;
+    left:20px;
+    top:60px;
     font-size: 25px;
-    background:blue;
+    @media screen and (min-height:810px){
+        margin-top:100px;
+    }    
+    @media screen and (max-width:400px){
+        margin:50px auto;
+        width:320px;
+    }
+    @media screen and (min-width:400px) and (max-width:415px){
+        left:70px
+    }
+    @media screen and (min-width:320px) and (max-width:400px){
+        left:60px
+    }
+    @media screen and (min-width:360px) and (max-width:376px){
+        left:35px
+    }
+    @media screen and (width:375px){
+        top:100px;
+    }
+    @media screen and (width:320px){
+        top:70px;
+    }
 `
 
 const Logo = styled.i`
@@ -80,19 +97,58 @@ const LogoSpan = styled.h3`
     }
 `
 
-const InputField = styled.input`
-    @media screen and (max-width:300px){
-        width:180px;
-        margin:0 auto;
+const FormHolder = styled.div`
+    @media screen and (min-height:731px){
+        margin-top:40px;
     }
-    width: 350px;
+
+    @media screen and (width:375px){
+        margin-top:60px;
+    }
+`
+
+const InputField = styled.input`
+    @media screen and (min-width:1000px) and (max-width:1200px){
+        width:95%;
+    }
+
+    @media screen and (min-width:760px) and (max-width:1000px){
+        width:93%;
+    }    
+
+    @media screen and (min-width:320px) and (max-width:700px){
+        width:87%;
+    }
+
+    @media screen and (max-width:321px){
+        width:260px;
+    }
     font-size: 35px;
     height: 40px;
     position: absolute;
-    top: 120px;
-    left: 25px;
+
 `
 
 const TextField = styled.textarea`
+    font-size: 35px;
+    height: 40px;
+    position: absolute;
+    top: 300px;
+    left: 25px;
+    min-height: 200px;
+    @media screen and (min-width:1000px) and (max-width:1200px){
+        width:95%;
+    }
 
+    @media screen and (min-width:760px) and (max-width:1000px){
+        width:93%;
+    }
+
+    @media screen and (min-width:320px) and (max-width:700px){
+        width:87%;
+    }
+
+    @media screen and (max-width:321px){
+        width:85%;
+    }
 `
