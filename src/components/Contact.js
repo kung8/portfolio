@@ -7,7 +7,7 @@ class Contact extends Component {
         storeScroll()
 
         return (
-            <ContactBody>
+            <ContactBody >
                 <LogoHolder>
                     <LogoSpan><Logo className="fas fa-phone-square" /> (571) 623-9450</LogoSpan>
                     <LogoSpan><Logo className="fas fa-envelope-square" /> ung.kevin78@gmail.com</LogoSpan>
@@ -35,12 +35,17 @@ const ContactBody = styled.div`
     background: linear-gradient(#bbbabb,lightgrey,#BBBABB);
     height: 100%;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap; 
+    margin-top:80px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    max-width:100vw;
     ::-webkit-scrollbar {
         width:0px
+    };
+    @media screen and (min-height:810px){
+        margin-top:100px;
     }
 `
 

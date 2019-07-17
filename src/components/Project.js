@@ -44,7 +44,7 @@ class Project extends Component {
                 <Img src={image[0]} alt="website"/>
                 <HR/>
                 <DescTextHolder style={{ background: hosting}}>
-                    <div style={{width:'90%',position:'relative'}}>
+                    <div style={{width:'90%',position:'relative',display:'flex',flexDirection:'column',alignItems:'center'}}>
                         {/* <h3 style={{color:'white'}}>{date}</h3> */}
                         <Text>{desc}</Text>
                         <Button onClick={()=>this.expand(this.props.project)}>Click Me</Button>
@@ -63,11 +63,11 @@ const ProjectBody = styled.div`
     border-radius: 10px;
     box-shadow: 6px 6px 15px 3px black;
     background: white;
-    width: 350px;
+    width: 300px;
     height: 450px;
     display: flex;
     flex-direction: column;
-    align-ttems: center;
+    align-items: center;
     margin-top:120px;
 `
 
@@ -118,7 +118,6 @@ const Button = styled.button`
     bottom:10px;
     width:150px;
     height:50px;
-    left:calc(175px - 85px);
     font-size:35px;
     border-radius:10px;
     outline:none;

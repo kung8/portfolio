@@ -102,7 +102,8 @@ export default Projects
 const ProjBody = styled.div`
     background: linear-gradient(#bbbabb,lightgrey,#BBBABB);
     height: 100%;
-    min-height: 100vh; 
+    min-height: 100vh;
+    overflow:hidden;
 `
 
 const Mapped = styled.div`
@@ -113,6 +114,9 @@ const Mapped = styled.div`
     max-width: 80%;
     align-items: center;
     margin: 0 auto;
+    @media screen and (max-width:321px){
+        min-width:300px
+    }
 `
 
 const Legend = styled.div`

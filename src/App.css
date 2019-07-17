@@ -6,4 +6,6 @@
 
 html:not([data-scroll='0']) #HeaderBody {
     background:#bbbabb;
+    width:100%;
+    min-width:100vw;
 }

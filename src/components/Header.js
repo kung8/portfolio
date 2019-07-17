@@ -6,34 +6,34 @@ class Header extends Component {
     constructor() {
         super()
         this.state = {
-            style: 'flex',
-            ham: false
+            ham: false,
+
         }
     }
 
+    closeBar(string){
+        this.setState({ham:false})
+        this.props.history.push(string)
+    }
+
     render() {
-        // const { ham } = this.state
-        // console.log(ham)
+        const { ham } = this.state
         return (
             <HeaderBody id='HeaderBody'>
                 <h1 onClick={() => this.props.history.push('/')} style={{ marginLeft: 20 }}>KU</h1>
 
                 <NavLinks 
-                    style={{ display: this.state.style, position: 'relative' }}>
-                    <div onClick={() => this.props.history.push('/projects')}>
+                    style={{ top:ham && 80, display:ham && 'block', background:ham && 'grey',width:ham && '100%',textAlign:ham && 'center'}}>
+                    <div onClick={() => this.closeBar('/projects')}>
                         <h1>Projects</h1>
                     </div>
-                    <div onClick={() => this.props.history.push('/contact')}>
+                    <div onClick={() => this.closeBar('/contact')}>
                         <h1>Contact</h1>
                     </div>
-                    {/* <div onClick={() => this.props.history.push('/blog')}>
-                        <h1>Blog</h1>
-                    </div> */}
                 </NavLinks>
 
-                <Ham 
-                    style={{ display: this.state.ham ? 'block' : 'flex' }} 
-                    onClick={() => this.setState({ ham:!this.state.ham , style: 'block' })} 
+                <Ham
+                    onClick={() => this.setState({ ham:!ham })} 
                     className="fas fa-bars" />
 
             </HeaderBody>
@@ -45,29 +45,35 @@ export default withRouter(Header)
 
 const HeaderBody = styled.div`
     z-index:4;
-    top:0;
     display:flex;
     position:fixed;
+    top:0px;
+    min-width:100vw;
     width:100%;
     color:#E9E9E9;
     justify-content:space-between;
     font-weight:bold;
     text-shadow:3px 1px 10px black;
     font-size:25px;
-    height:100px;
-    // background:transparent;
+    height:80px;
+    border-bottom:solid 1px black;
+    background:transparent;
     align-items:center;
     ::-webkit-scrollbar {
         width:0px
     }
+    @media screen and (min-height:812px){
+        height:100px;
+    }
 `
 
 const Ham = styled.i`
-    margin-right: 20px;
     color: #E9E9E9;
+    position:absolute;
     font-size: 35px;
     display:flex;
-    @media screen and (max-width: 300px){
+    right:40px;
+    @media screen and (min-width: 700px){
         display:none;
     }   
 `
@@ -75,8 +81,11 @@ const Ham = styled.i`
 const NavLinks = styled.div`
     width:60vw;
     justify-content:space-evenly;
-    @media screen and (max-width: 750px){
-        display:none;
+    position:absolute;
+    display:none;
+    @media screen and (min-width:700px){
+        display:flex;
+        right:20px;
     }
 `
 // const Tag = styled.div`

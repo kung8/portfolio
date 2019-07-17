@@ -5,7 +5,7 @@ import routes from './routes'
 
 function App() {
   return (
-    <div>
+    <div style={{minWidth:'100vw',width:'100%',display:'flex'}}>
      <Header/>
      {routes}
     </div>
