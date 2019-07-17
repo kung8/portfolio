@@ -23,7 +23,7 @@ class Project extends Component {
         console.log(this.props)
         // const {isExpanded,isSelected} = this.state
         
-        const { name, url, tech, desc, domain, date, image,hosted } = this.props.project
+        const { name, url, desc, domain, image,hosted } = this.props.project
 
         const hosting = hosted ? (domain ?'lightblue' : 'lightgreen') : 'pink'
 
@@ -43,7 +43,6 @@ class Project extends Component {
                 <HR/>
                 <Img src={image[0]} alt="website"/>
                 <HR/>
-                {/* <h3>Tech: {mappedTech}</h3> */}
                 <DescTextHolder style={{ background: hosting}}>
                     <div style={{width:'90%',position:'relative'}}>
                         {/* <h3 style={{color:'white'}}>{date}</h3> */}

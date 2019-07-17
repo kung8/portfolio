@@ -44,7 +44,7 @@ class Header extends Component {
 export default withRouter(Header)
 
 const HeaderBody = styled.div`
-    z-index:2;
+    z-index:4;
     top:0;
     display:flex;
     position:fixed;
@@ -55,7 +55,7 @@ const HeaderBody = styled.div`
     text-shadow:3px 1px 10px black;
     font-size:25px;
     height:100px;
-    background:transparent;
+    // background:transparent;
     align-items:center;
     ::-webkit-scrollbar {
         width:0px
