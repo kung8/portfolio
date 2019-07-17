@@ -9,10 +9,10 @@ class Contact extends Component {
         return (
             <ContactBody >
                 <LogoHolder>
-                    <LogoSpan ><Logo className="fas fa-phone-square" /> (571) 623-9450</LogoSpan>
-                    <LogoSpan ><Logo className="fas fa-envelope-square" /> ung.kevin78@gmail.com</LogoSpan>
-                    <LogoSpan ><Logo className="fab fa-github-square" /> github.com/kung8</LogoSpan>
-                    <LogoSpan ><Logo className="fab fa-linkedin" /> linkedin.com/in/kung8</LogoSpan>
+                    <LogoSpan ><Logo className="fas fa-phone-square" /><a href='tel:5716239450'> (571) 623-9450</a></LogoSpan>
+                    <LogoSpan ><Logo className="fas fa-envelope-square"/> <a href='mailto:ung.kevin78@gmail.com'>ung.kevin78@gmail.com</a></LogoSpan>
+                    <LogoSpan ><Logo className="fab fa-github-square" /> <a href='https://github.com/kung8' rel="noopener noreferrer" target='_blank'>github.com/kung8</a></LogoSpan>
+                    <LogoSpan ><Logo className="fab fa-linkedin" /> <a href='https://www.linkedin.com/in/kung8/' rel="noopener noreferrer" target='_blank'>linkedin.com/in/kung8</a></LogoSpan>
                 </LogoHolder>
                 <FormHolder style={{ borderRadius:10,display: 'flex', flexDirection: 'column', marginBottom: 10, minHeight: 510, background: 'black', width: '95%', fontSize: 35, alignItems: 'center', textAlign: 'left', position: 'relative', top:60, color: 'white' }}>
                     {/* <h1>Contact Me:</h1> */}
@@ -108,7 +108,7 @@ const FormHolder = styled.div`
 `
 
 const InputField = styled.input`
-    @media screen and (min-width:1000px) and (max-width:1200px){
+    @media screen and (min-width:1000px) {
         width:95%;
     }
 
@@ -136,7 +136,7 @@ const TextField = styled.textarea`
     top: 300px;
     left: 25px;
     min-height: 200px;
-    @media screen and (min-width:1000px) and (max-width:1200px){
+    @media screen and (min-width:1000px){
         width:95%;
     }
 
