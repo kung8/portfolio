@@ -1,26 +1,48 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { storeScroll } from '../ScrollFn'
+import PropTypes from 'prop-types'
 
 class Contact extends Component {
+    // static propTypes = {
+    //     name:PropTypes.string,
+    //     email:PropTypes.string,
+    //     phone:PropTypes.string,
+    //     message:PropTypes.string
+    // }
+
+    constructor() {
+        super()
+        this.state = {
+            name: '',
+            email: '',
+            phone: '',
+            message: ''
+        }
+    }
     render() {
         storeScroll()
 
         return (
-            <ContactBody >
+            <ContactBody>
                 <LogoHolder>
-                    <LogoSpan ><Logo className="fas fa-phone-square" /><a href='tel:5716239450'> (571) 623-9450</a></LogoSpan>
-                    <LogoSpan ><Logo className="fas fa-envelope-square"/> <a href='mailto:ung.kevin78@gmail.com'>ung.kevin78@gmail.com</a></LogoSpan>
-                    <LogoSpan ><Logo className="fab fa-github-square" /> <a href='https://github.com/kung8' rel="noopener noreferrer" target='_blank'>github.com/kung8</a></LogoSpan>
-                    <LogoSpan ><Logo className="fab fa-linkedin" /> <a href='https://www.linkedin.com/in/kung8/' rel="noopener noreferrer" target='_blank'>linkedin.com/in/kung8</a></LogoSpan>
+                    <LogoSpan><Logo className="fas fa-phone-square" /><a href='tel:5716239450'> (571) 623-9450</a></LogoSpan>
+                    <LogoSpan><Logo className="fas fa-envelope-square" /> <a href='mailto:ung.kevin78@gmail.com'>ung.kevin78@gmail.com</a></LogoSpan>
+                    <LogoSpan><Logo className="fab fa-github-square" /> <a href='https://github.com/kung8' rel="noopener noreferrer" target='_blank'>github.com/kung8</a></LogoSpan>
+                    <LogoSpan><Logo className="fab fa-linkedin" /> <a href='https://www.linkedin.com/in/kung8/' rel="noopener noreferrer" target='_blank'>linkedin.com/in/kung8</a></LogoSpan>
                 </LogoHolder>
-                <FormHolder style={{ borderRadius:10,display: 'flex', flexDirection: 'column', marginBottom: 10, minHeight: 510, background: 'black', width: '95%', fontSize: 35, alignItems: 'center', textAlign: 'left', position: 'relative', top:60, color: 'white' }}>
+                <FormHolder style={{ borderRadius: 10, display: 'flex', flexDirection: 'column', marginBottom: 10, minHeight: 510, background: 'black', width: '95%', fontSize: 35, alignItems: 'center', textAlign: 'left', position: 'relative', top: 60, color: 'white' }}>
                     {/* <h1>Contact Me:</h1> */}
-                    <span style={{ textAlign: 'left', position: 'absolute', top: 75, left: 25 }}>Email:</span>
-                    <InputField style={{ top: '120px', left: '25px' }} type="text" placeholder='Email' />
-                    <span style={{ textAlign: 'left', position: 'absolute', top: 165, left: 25 }}>Phone:</span>
-                    <InputField style={{ top: 210, left: 25 }} type="text" placeholder='Phone' />
-                    <span style={{ textAlign: 'left', position: 'absolute', top: 255, left: 25 }}>Message:</span>
+                    <InputSpan style={{ top: 75, left: 25 }}>Name:</InputSpan>
+                    <ShorterInputField style={{ top: '120px', left: '25px', width: '40%' }} type="text" placeholder='Name' />
+
+                    <InputSpan style={{ textAlign: 'left', position: 'absolute', top: 75, left: '50vw' }}>Phone:</InputSpan>
+                    <ShorterInputField style={{ top: 120, left: '50vw', width: '40%' }} type="text" placeholder='Phone' />
+
+                    <InputSpan style={{ textAlign: 'left', position: 'absolute', top: 165, left: 25 }}>Email:</InputSpan>
+                    <InputField style={{ top: '210px', left: '25px' }} type="text" placeholder='Email' />
+
+                    <InputSpan style={{ textAlign: 'left', position: 'absolute', top: 255, left: 25 }}>Message:</InputSpan>
                     <TextField type="text" placeholder='Message' style={{}}
                     />
                 </FormHolder>
@@ -105,6 +127,33 @@ const FormHolder = styled.div`
     @media screen and (width:375px){
         margin-top:60px;
     }
+`
+
+const InputSpan = styled.span`
+    text-align: left;
+    position: absolute ;
+`
+
+const ShorterInputField = styled.input`
+    @media screen and (min-width:1000px) {
+        width:95%;
+    }
+
+    @media screen and (min-width:760px) and (max-width:1000px){
+        width:93%;
+    }    
+
+    @media screen and (min-width:320px) and (max-width:700px){
+        width:87%;
+    }
+
+    @media screen and (max-width:321px){
+        width:260px;
+    }
+    font-size: 35px;
+    height: 40px;
+    position: absolute;
+
 `
 
 const InputField = styled.input`
