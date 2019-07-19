@@ -16,11 +16,13 @@ class Header extends Component {
         this.props.history.push(string)
     }
 
+
+
     render() {
         const { ham } = this.state
         return (
             <HeaderBody id='HeaderBody'>
-                <h1 onClick={() => this.props.history.push('/')} style={{ marginLeft: 20 }}>KU</h1>
+                <h1 onClick={() => this.closeBar('/')} style={{ marginLeft: 20 }}>KU</h1>
 
                 <NavLinks 
                     style={{ top:ham && 80, display:ham && 'block', background:ham && 'linear-gradient(to bottom,#585563,silver)',width:ham && '100%',textAlign:ham && 'center'}}>
