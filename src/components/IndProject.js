@@ -41,19 +41,19 @@ class IndProject extends Component {
     render() {
         storeScroll()
 
-        let mappedTech
+        // let mappedTech
         if (Object.keys(this.props.selectedProject).length === 0) {
             return <Redirect to='/projects' />
         } else {
             const { name, date, image, tech, url, lessons, hosted, domain } = this.props.selectedProject
 
-            mappedTech = tech.map((item, index) => {
-                return (
-                    <div key={index}>
-                        <li >{item}</li>
-                    </div>
-                )
-            })
+            // mappedTech = tech.map((item, index) => {
+            //     return (
+            //         <div key={index}>
+            //             <li >{item}</li>
+            //         </div>
+            //     )
+            // })
 
             const hosting = hosted ? (domain ? '#7EBDC3' : '#C6DEA6') : '#F6E27F'
 

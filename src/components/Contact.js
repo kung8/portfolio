@@ -1,16 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { storeScroll } from '../ScrollFn'
-import PropTypes from 'prop-types'
 
 class Contact extends Component {
-    // static propTypes = {
-    //     name:PropTypes.string,
-    //     email:PropTypes.string,
-    //     phone:PropTypes.string,
-    //     message:PropTypes.string
-    // }
-
     constructor() {
         super()
         this.state = {
@@ -26,10 +18,10 @@ class Contact extends Component {
         return (
             <ContactBody style={{overflowX:'hidden'}}>
                 <LogoHolder>
-                    <LogoSpan><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fas fa-phone-square" /><a style={{position:'absolute', left:35, top:'calc(50% - 10px)', color:'white',textDecoration:'none'}} href='tel:5716239450'> (571) 623-9450</a></LogoSpan>
-                    <LogoSpan><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fas fa-envelope-square" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='mailto:ung.kevin78@gmail.com'>ung.kevin78@gmail.com</a></LogoSpan>
-                    <LogoSpan><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fab fa-github-square" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='https://github.com/kung8' rel="noopener noreferrer" target='_blank'>github.com/kung8</a></LogoSpan>
-                    <LogoSpan><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fab fa-linkedin" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='https://www.linkedin.com/in/kung8/' rel="noopener noreferrer" target='_blank'>linkedin.com/in/kung8</a></LogoSpan>
+                    <LogoButton><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fas fa-phone-square" /><a style={{position:'absolute', left:35, top:'calc(50% - 10px)', color:'white',textDecoration:'none'}} href='tel:5716239450'> (571) 623-9450</a></LogoButton>
+                    <LogoButton><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fas fa-envelope-square" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='mailto:ung.kevin78@gmail.com'>ung.kevin78@gmail.com</a></LogoButton>
+                    <LogoButton><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fab fa-github-square" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='https://github.com/kung8' rel="noopener noreferrer" target='_blank'>github.com/kung8</a></LogoButton>
+                    <LogoButton><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fab fa-linkedin" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='https://www.linkedin.com/in/kung8/' rel="noopener noreferrer" target='_blank'>linkedin.com/in/kung8</a></LogoButton>
                 </LogoHolder>
                 <FormHolder>
                     <ContactMe>Contact Me:</ContactMe>
@@ -79,19 +71,6 @@ const LogoHolder = styled.div`
     margin-bottom:40px;
     top:60px;
     font-size: 25px;
-    // @media screen and (min-height:810px){
-    //     margin-top:100px;
-    // }    
-    // @media screen and (max-width:400px){
-    //     margin:50px auto;
-    //     width:320px;
-    // }
-    // @media screen and (width:375px){
-    //     top:100px;
-    // }
-    // @media screen and (width:320px){
-    //     top:70px;
-    // }
 `
 
 const Logo = styled.i`
@@ -101,7 +80,7 @@ const Logo = styled.i`
     }
 `
 
-const LogoSpan = styled.button`
+const LogoButton = styled.button`
     @media screen and (max-width:450px){
         font-size:20px;
     }
@@ -130,6 +109,7 @@ const FormHolder = styled.div`
     position: relative;
     top: 60px;
     color: white;
+    box-shadow: 6px 6px 15px 3px black;
     @media screen and (min-width:){}
     @media screen and (min-height:731px){
         margin-top:40px;

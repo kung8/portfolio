@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import IndProject from './IndProject'
 import styled from 'styled-components'
 import {withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
