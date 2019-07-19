@@ -25,7 +25,7 @@ class Project extends Component {
         
         const { name, url, desc, domain, image,hosted } = this.props.project
 
-        const hosting = hosted ? (domain ?'lightblue' : 'lightgreen') : 'pink'
+        const hosting = hosted ? (domain ?'#7EBDC3' : '#C6DEA6') : '#F6E27F'
 
         return (
             <>
@@ -47,7 +47,7 @@ class Project extends Component {
                     <div style={{width:'90%',position:'relative',display:'flex',flexDirection:'column',alignItems:'center'}}>
                         {/* <h3 style={{color:'white'}}>{date}</h3> */}
                         <Text>{desc}</Text>
-                        <Button onClick={()=>this.expand(this.props.project)}>Click Me</Button>
+                        <Button onClick={()=>this.expand(this.props.project)}>View</Button>
                     </div>
                 </DescTextHolder>
             </ProjectBody>

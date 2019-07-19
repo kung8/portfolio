@@ -5,7 +5,42 @@
 }
 
 html:not([data-scroll='0']) #HeaderBody {
-    background:#bbbabb;
+    background:linear-gradient(to bottom,silver,#585563);
     width:100%;
     min-width:100vw;
+}
+
+#name-label {
+    top:75px;
+    left:25px;
+}
+
+#name-input {
+    top:120px;
+    left:25px;
+}
+
+#phone-label {
+    top: 75px;
+    left: 50vw
+}
+
+#phone-input {
+    top:120px;
+    left:50vw;
+}
+
+#email-label {
+    top:165px;
+    left:25px;
+}
+
+#email-input {
+    top:210px;
+    left:25px;
+}
+
+#message-label {
+    top:255px;
+    left:25px;
 }

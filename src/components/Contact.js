@@ -24,27 +24,27 @@ class Contact extends Component {
         storeScroll()
 
         return (
-            <ContactBody>
+            <ContactBody style={{overflowX:'hidden'}}>
                 <LogoHolder>
-                    <LogoSpan><Logo className="fas fa-phone-square" /><a href='tel:5716239450'> (571) 623-9450</a></LogoSpan>
-                    <LogoSpan><Logo className="fas fa-envelope-square" /> <a href='mailto:ung.kevin78@gmail.com'>ung.kevin78@gmail.com</a></LogoSpan>
-                    <LogoSpan><Logo className="fab fa-github-square" /> <a href='https://github.com/kung8' rel="noopener noreferrer" target='_blank'>github.com/kung8</a></LogoSpan>
-                    <LogoSpan><Logo className="fab fa-linkedin" /> <a href='https://www.linkedin.com/in/kung8/' rel="noopener noreferrer" target='_blank'>linkedin.com/in/kung8</a></LogoSpan>
+                    <LogoSpan><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fas fa-phone-square" /><a style={{position:'absolute', left:35, top:'calc(50% - 10px)', color:'white',textDecoration:'none'}} href='tel:5716239450'> (571) 623-9450</a></LogoSpan>
+                    <LogoSpan><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fas fa-envelope-square" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='mailto:ung.kevin78@gmail.com'>ung.kevin78@gmail.com</a></LogoSpan>
+                    <LogoSpan><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fab fa-github-square" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='https://github.com/kung8' rel="noopener noreferrer" target='_blank'>github.com/kung8</a></LogoSpan>
+                    <LogoSpan><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fab fa-linkedin" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='https://www.linkedin.com/in/kung8/' rel="noopener noreferrer" target='_blank'>linkedin.com/in/kung8</a></LogoSpan>
                 </LogoHolder>
-                <FormHolder style={{ borderRadius: 10, display: 'flex', flexDirection: 'column', marginBottom: 10, minHeight: 510, background: 'black', width: '95%', fontSize: 35, alignItems: 'center', textAlign: 'left', position: 'relative', top: 60, color: 'white' }}>
-                    {/* <h1>Contact Me:</h1> */}
-                    <InputSpan style={{ top: 75, left: 25 }}>Name:</InputSpan>
-                    <ShorterInputField style={{ top: '120px', left: '25px', width: '40%' }} type="text" placeholder='Name' />
+                <FormHolder>
+                    <ContactMe>Contact Me:</ContactMe>
+                    <InputSpan id='name-label'>Name:</InputSpan>
+                    <ShorterInputField id='name-input' type="text" placeholder='Name' />
 
-                    <InputSpan style={{ textAlign: 'left', position: 'absolute', top: 75, left: '50vw' }}>Phone:</InputSpan>
-                    <ShorterInputField style={{ top: 120, left: '50vw', width: '40%' }} type="text" placeholder='Phone' />
+                    <InputSpan id='phone-label'>Phone:</InputSpan>
+                    <ShorterInputField id='phone-input' type="text" placeholder='Phone' />
 
-                    <InputSpan style={{ textAlign: 'left', position: 'absolute', top: 165, left: 25 }}>Email:</InputSpan>
-                    <InputField style={{ top: '210px', left: '25px' }} type="text" placeholder='Email' />
+                    <InputSpan id='email-label'>Email:</InputSpan>
+                    <InputField id='email-input' type="text" placeholder='Email' />
 
-                    <InputSpan style={{ textAlign: 'left', position: 'absolute', top: 255, left: 25 }}>Message:</InputSpan>
-                    <TextField type="text" placeholder='Message' style={{}}
-                    />
+                    <InputSpan id='message-label'>Message:</InputSpan>
+                    <TextField type="text" placeholder='Message'/>
+                    <Send>Leave a Message</Send>
                 </FormHolder>
             </ContactBody>
         )
@@ -54,7 +54,7 @@ class Contact extends Component {
 export default Contact
 
 const ContactBody = styled.div`
-    background: linear-gradient(#bbbabb,lightgrey,#BBBABB);
+    background: #585563;
     height: 100%;
     min-height: 100vh;
     display:flex;
@@ -71,62 +71,85 @@ const ContactBody = styled.div`
 
 const LogoHolder = styled.div`
     margin-top:80px;
-    width: 400px; 
-    color: black; 
+    width: 100%;
+    align-items:center; 
     display: flex;
     flex-direction: column;
     position:relative;
-    left:20px;
+    margin-bottom:40px;
     top:60px;
     font-size: 25px;
-    @media screen and (min-height:810px){
-        margin-top:100px;
-    }    
-    @media screen and (max-width:400px){
-        margin:50px auto;
-        width:320px;
-    }
-    @media screen and (min-width:400px) and (max-width:415px){
-        left:70px
-    }
-    @media screen and (min-width:320px) and (max-width:400px){
-        left:60px
-    }
-    @media screen and (min-width:360px) and (max-width:376px){
-        left:35px
-    }
-    @media screen and (width:375px){
-        top:100px;
-    }
-    @media screen and (width:320px){
-        top:70px;
-    }
+    // @media screen and (min-height:810px){
+    //     margin-top:100px;
+    // }    
+    // @media screen and (max-width:400px){
+    //     margin:50px auto;
+    //     width:320px;
+    // }
+    // @media screen and (width:375px){
+    //     top:100px;
+    // }
+    // @media screen and (width:320px){
+    //     top:70px;
+    // }
 `
 
 const Logo = styled.i`
-    color:navy;
+    color:#F7F9F9;
     @media screen and (max-width:400px){
         font-size:20px;
     }
 `
 
-const LogoSpan = styled.h3`
+const LogoSpan = styled.button`
     @media screen and (max-width:450px){
         font-size:20px;
     }
-    @media screen and (max-width:320px){
-        font-size:12px;
-    }
+    background:black;
+    margin-bottom:5px;
+    border-radius:10px;
+    width:265px;
+    position:relative;
+    height:35px;
+    font-size:20px;
 `
 
+
+
 const FormHolder = styled.div`
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    min-height: 550px;
+    background: #7ebdc3;
+    width: 95%;
+    font-size: 35px;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    top: 60px;
+    color: white;
+    @media screen and (min-width:){}
     @media screen and (min-height:731px){
         margin-top:40px;
     }
-
     @media screen and (width:375px){
         margin-top:60px;
     }
+`
+
+const ContactMe = styled.h1`
+    @media screen and (max-width:415px){
+        font-size:55px;
+    }
+    @media screen and (max-width:320px){
+        font-size:30px
+    }
+    @media screen and (max-width:321px){
+        font-size:50px
+    }
+
 `
 
 const InputSpan = styled.span`
@@ -135,26 +158,31 @@ const InputSpan = styled.span`
 `
 
 const ShorterInputField = styled.input`
-    @media screen and (min-width:1000px) {
-        width:95%;
-    }
-
     @media screen and (min-width:760px) and (max-width:1000px){
-        width:93%;
+        width:43%
     }    
 
     @media screen and (min-width:320px) and (max-width:700px){
-        width:87%;
+        width: 40%
     }
 
-    @media screen and (max-width:321px){
-        width:260px;
+    @media screen and (max-width:320px){
+        width: 40%
     }
+
     font-size: 35px;
     height: 40px;
     position: absolute;
+    border-radius:10px;
+    color:black;
 
-`
+    ::placeholder {
+        color:black;
+        opacity:0.567
+    }
+    `
+
+
 
 const InputField = styled.input`
     @media screen and (min-width:1000px) {
@@ -175,29 +203,61 @@ const InputField = styled.input`
     font-size: 35px;
     height: 40px;
     position: absolute;
-
+    border-radius:10px;
+    color:black;
+    ::placeholder {
+        color:black;
+        opacity:0.567
+    }
 `
 
 const TextField = styled.textarea`
     font-size: 35px;
-    height: 40px;
     position: absolute;
     top: 300px;
     left: 25px;
     min-height: 200px;
+    max-height:200px;
+    border-radius:10px;
+    color:black;
     @media screen and (min-width:1000px){
         width:95%;
+        max-width:95%;
+        min-width:95%;
     }
 
     @media screen and (min-width:760px) and (max-width:1000px){
         width:93%;
+        max-width:93%;
+        min-width:93%;
     }
 
     @media screen and (min-width:320px) and (max-width:700px){
         width:87%;
+        max-width:87%;
+        min-width:87%;
     }
 
     @media screen and (max-width:321px){
         width:85%;
+        max-width:85%;
+        min-width:85%;
     }
+    ::placeholder {
+        color:black;
+        opacity:0.567
+    }
+`
+
+const Send = styled.button`
+    position:absolute;
+    top:510px;
+    background:black;
+    color:white;
+    border-radius:10px;
+    width:250px;
+    height:35px;
+    font-size:25px;
+    outline:none;
+    border:black solid 1px;
 `

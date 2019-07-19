@@ -23,11 +23,11 @@ class Header extends Component {
                 <h1 onClick={() => this.props.history.push('/')} style={{ marginLeft: 20 }}>KU</h1>
 
                 <NavLinks 
-                    style={{ top:ham && 80, display:ham && 'block', background:ham && 'grey',width:ham && '100%',textAlign:ham && 'center'}}>
-                    <div onClick={() => this.closeBar('/projects')}>
+                    style={{ top:ham && 80, display:ham && 'block', background:ham && 'linear-gradient(to bottom,#585563,silver)',width:ham && '100%',textAlign:ham && 'center'}}>
+                    <div style={{borderBottom:ham && 'solid 1px black'}} onClick={() => this.closeBar('/projects')}>
                         <h1>Projects</h1>
                     </div>
-                    <div onClick={() => this.closeBar('/contact')}>
+                    <div style={{borderBottom:ham && 'solid 1px black'}} onClick={() => this.closeBar('/contact')}>
                         <h1>Contact</h1>
                     </div>
                 </NavLinks>
@@ -49,7 +49,7 @@ const HeaderBody = styled.div`
     position:fixed;
     top:0px;
     min-width:100vw;
-    width:100%;
+    width:100vw;
     color:#E9E9E9;
     justify-content:space-between;
     font-weight:bold;
@@ -57,7 +57,7 @@ const HeaderBody = styled.div`
     font-size:25px;
     height:80px;
     border-bottom:solid 1px black;
-    background:linear-gradient(#bbbabb,lightgrey,#BBBABB);
+    background:transparent;
     align-items:center;
     ::-webkit-scrollbar {
         width:0px

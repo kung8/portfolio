@@ -55,7 +55,7 @@ class IndProject extends Component {
                 )
             })
 
-            const hosting = hosted ? (domain ? 'lightblue' : 'lightgreen') : 'pink'
+            const hosting = hosted ? (domain ? '#7EBDC3' : '#C6DEA6') : '#F6E27F'
 
 
             return (
@@ -81,9 +81,9 @@ class IndProject extends Component {
                             <Text style={{marginBottom:10}}> {lessons}</Text>
                             {/* <h3>Tech:</h3> */}
                             {/* {mappedTech} */}
-                            <Button><LinkName target='_blank'
+                            {hosted && <Button><LinkName target='_blank'
                                 rel="noopener noreferrer"
-                                href={domain ? `https://${url}` : `http://${url}`}>Go to {url}</LinkName></Button>
+                                href={domain ? `https://${url}` : `http://${url}`}>Go to {url}</LinkName></Button>}
                         </DescTextHolder>
                     </ProjectBody>
                 </BigBody>
@@ -97,7 +97,7 @@ class IndProject extends Component {
 export default connect(reduxState => reduxState)(IndProject)
 
 const BigBody = styled.div`
-    background: linear-gradient(#bbbabb,lightgrey,#BBBABB);
+    background: #585563;
     min-height:100vh;
     display:flex;
     min-width:100vw;
