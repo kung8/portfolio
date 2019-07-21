@@ -5,14 +5,12 @@ import Singapore from '../Assets/Me/Singapore.jpg'
 import frisbee from '../Assets/Me/Frisbee.png'
 import running from '../Assets/Me/Running.png'
 
-
 const {css,express,fontAwesome,git,html,js,node, postman,redux, s3,socket,stripe,materialui,postgres,react,sqltabs} = images
 
 class About extends Component {
     state={
         process:0
     }
-
 
     catchFrisbee(){
         setTimeout(()=>{
@@ -23,36 +21,26 @@ class About extends Component {
             }
         },1000)
     }
+    
     render(){
         this.catchFrisbee()
         return(
             <AboutBody>
                 <ProfileImgHolder>
                     <ProfilePic src={Singapore} alt=""/>
-                    {/* <div> */}
                         <Profile>
                             <p>
                                 Hello, my name is <span style={{fontWeight:'bold',fontSize:20}}>Kevin Ung</span>! 
                                 I am a web developer who loves the exciting challenge of problem solving and am passionate about learning. I am a songwriter and an avid Ultimate Frisbee player.   
                             </p>
                            
-                           <div style={{width:'100%',background:'blue',display:'flex',justifyContent:'space-between',position:'relative',marginTop:10}}>
+                           <RunnerHolder>
                                 <RunnerImg src={frisbee} style={{display:this.state.process !== 4 && 'none',left:'0%'}} alt=""/>
                                 <RunnerImg src={running} style={{display:this.state.process !== 3 && 'none',left:'25%'}} alt=""/>
                                 <RunnerImg src={running} style={{display:this.state.process !== 2 && 'none',left:'50%'}} alt=""/>
                                 <RunnerImg src={running} style={{display:this.state.process !== 1 && 'none',left:'75%'}} alt=""/>
-                                {/* <img src={running} height='45px' style={{display:this.state.process !== 8 && 'none',position:'absolute',left:'0px'}} alt=""/> */}
-                                {/* <img src={running} height='45px' style={{display:this.state.process !== 8 && 'none',position:'absolute',left:'0px'}} alt=""/> */}
-                                {/* <img src={running} height='45px' style={{display:this.state.process !== 8 && 'none',position:'absolute',left:'0px'}} alt=""/> */}
-                                {/* <img src={running} height='45px' style={{display:this.state.process !== 8 && 'none',position:'absolute',left:'0px'}} alt=""/> */}
-                                {/* <img src={running} height='45px' style={{display:this.state.process !== 8 && 'none',position:'absolute',left:'0px'}} alt=""/> */}
-                           </div>
+                           </RunnerHolder>
                         </Profile>
-                        {/* <div>
-
-                        </div>
-                    </div> */}
-
                 </ProfileImgHolder>
                 
                 <SkillsHolder>
@@ -195,6 +183,15 @@ const  Profile = styled.div`
         height:280px;
         min-height:280px;
     }
+`
+
+const RunnerHolder = styled.div`
+    width:100%;
+    background:blue;
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+    margin-top:10px;
 `
 
 const RunnerImg = styled.img`

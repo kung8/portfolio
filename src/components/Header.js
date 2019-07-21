@@ -7,7 +7,6 @@ class Header extends Component {
         super()
         this.state = {
             ham: false,
-
         }
     }
 
@@ -15,8 +14,6 @@ class Header extends Component {
         this.setState({ham:false})
         this.props.history.push(string)
     }
-
-
 
     render() {
         const { ham } = this.state
