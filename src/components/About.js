@@ -56,76 +56,76 @@ class About extends Component {
                 </ProfileImgHolder>
                 
                 <SkillsHolder>
-                    <SkillsHeader style={{}}>SKILLS</SkillsHeader>
-                    <div style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap'}}>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={react} style={{height:150,width:150}} alt="react"/>
-                            <p style={{fontSize:30,marginTop:5}}>React</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={js} style={{height:150,width:150}} alt="js"/>
-                            <p style={{fontSize:30,marginTop:5}}>JavaScript</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={express} style={{height:150,width:150}} alt="express"/>
-                            <p style={{fontSize:30,marginTop:5}}>Express</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={node} style={{height:150,width:150}} alt="node"/>
-                            <p style={{fontSize:30,marginTop:5}}>Node</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={postgres} style={{height:150,width:150}} alt="postgres"/>
-                            <p style={{fontSize:30,marginTop:5}}>Postgres SQL</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={css} style={{height:150,width:150}} alt="css"/>
-                            <p style={{fontSize:30,marginTop:5}}>CSS</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={html} style={{height:150,width:150}} alt="html"/>
-                            <p style={{fontSize:30,marginTop:5}}>HTML</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={redux} style={{height:150,width:150}} alt="redux"/>
-                            <p style={{fontSize:30,marginTop:5}}>Redux</p>
-                        </div>
+                    <SkillsHeader>SKILLS</SkillsHeader>
+                    <MiniSkillsHolder>
+                        <Skills>
+                            <SkillsImg src={react} alt="react"/>
+                            <SkillsName>React</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={js} alt="js"/>
+                            <SkillsName>JavaScript</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={express} alt="express"/>
+                            <SkillsName>Express</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={node} alt="node"/>
+                            <SkillsName>Node</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={postgres} alt="postgres"/>
+                            <SkillsName>Postgres SQL</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={css} alt="css"/>
+                            <SkillsName>CSS</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={html} alt="html"/>
+                            <SkillsName>HTML</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={redux} alt="redux"/>
+                            <SkillsName>Redux</SkillsName>
+                        </Skills>
 
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={socket} style={{height:150,width:150}} alt="socket"/>
-                            <p style={{fontSize:30,marginTop:5}}>Socket</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={fontAwesome} style={{height:150,width:150}} alt="fontAwesome"/>
-                            <p style={{fontSize:30,marginTop:5}}>Font Awesome</p>
-                        </div>
+                        <Skills>
+                            <SkillsImg src={socket} alt="socket"/>
+                            <SkillsName>Socket</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={fontAwesome} alt="fontAwesome"/>
+                            <SkillsName>Font Awesome</SkillsName>
+                        </Skills>
 
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={s3} style={{height:150,width:150}} alt="s3"/>
-                            <p style={{fontSize:30,marginTop:5}}>S3</p>
-                        </div>
+                        <Skills>
+                            <SkillsImg src={s3} alt="s3"/>
+                            <SkillsName>S3</SkillsName>
+                        </Skills>
 
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={sqltabs} style={{height:150,width:150}} alt="sqltabs"/>
-                            <p style={{fontSize:30,marginTop:5}}>SQL Tabs</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={git} style={{height:150,width:150}} alt="git"/>
-                            <p style={{fontSize:30,marginTop:5}}>Git</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={postman} style={{height:150,width:150}} alt="postman"/>
-                            <p style={{fontSize:30,marginTop:5}}>Postman</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={materialui} style={{height:150,width:150}} alt="materialui"/>
-                            <p style={{fontSize:30,marginTop:5}}>Material UI</p>
-                        </div>
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={stripe} style={{height:150,width:150}} alt="stripe"/>
-                            <p style={{fontSize:30,marginTop:5}}>Stripe</p>
-                        </div>
-                    </div>                    
+                        <Skills>
+                            <SkillsImg src={sqltabs} alt="sqltabs"/>
+                            <SkillsName>SQL Tabs</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={git} alt="git"/>
+                            <SkillsName>Git</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={postman} alt="postman"/>
+                            <SkillsName>Postman</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={materialui} alt="materialui"/>
+                            <SkillsName>Material UI</SkillsName>
+                        </Skills>
+                        <Skills>
+                            <SkillsImg src={stripe} alt="stripe"/>
+                            <SkillsName>Stripe</SkillsName>
+                        </Skills>
+                    </MiniSkillsHolder>                    
                 </SkillsHolder>
                 
             </AboutBody>
@@ -217,4 +217,27 @@ const SkillsHeader = styled.h1`
     @media screen and (max-width:321px){
         font-size: 82px;
     }
+`
+
+const MiniSkillsHolder = styled.div`
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+`
+
+const Skills = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:20px;
+`
+
+const SkillsImg = styled.img`
+    height:150px;
+    width:150px
+`
+
+const SkillsName = styled.p`
+    font-size:30px;
+    margin-top:5px;
 `
