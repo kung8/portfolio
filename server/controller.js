@@ -18,7 +18,7 @@ module.exports = {
       let info = await transporter.sendMail({
         from: `'${name}' <${email}>`, 
         to: EMAIL,
-        subject: 'YOU ARE ', 
+        subject: `New message from ${name}`, 
         text: message,
         html:   `<div>
                     <h1>${name}</h1>        
