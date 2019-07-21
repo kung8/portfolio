@@ -201,7 +201,7 @@ const RunnerImg = styled.img`
     position:absolute;
     height:45px;
     @media screen and (max-width:321px){
-        font-size:30px;
+        font-size:25px;
     }
 `
 
