@@ -37,10 +37,10 @@ class About extends Component {
                             </p>
                            
                            <div style={{width:'100%',background:'blue',display:'flex',justifyContent:'space-between',position:'relative',marginTop:10}}>
-                                <img src={frisbee} height='50px' style={{display:this.state.process !== 4 && 'none',position:'absolute',left:'0%'}} alt=""/>
-                                <img src={running} height='45px' style={{display:this.state.process !== 3 && 'none',position:'absolute',left:'25%'}} alt=""/>
-                                <img src={running} height='45px' style={{display:this.state.process !== 2 && 'none',position:'absolute',left:'50%'}} alt=""/>
-                                <img src={running} height='45px' style={{display:this.state.process !== 1 && 'none',position:'absolute',left:'75%'}} alt=""/>
+                                <RunnerImg src={frisbee} style={{display:this.state.process !== 4 && 'none',left:'0%'}} alt=""/>
+                                <RunnerImg src={running} style={{display:this.state.process !== 3 && 'none',left:'25%'}} alt=""/>
+                                <RunnerImg src={running} style={{display:this.state.process !== 2 && 'none',left:'50%'}} alt=""/>
+                                <RunnerImg src={running} style={{display:this.state.process !== 1 && 'none',left:'75%'}} alt=""/>
                                 {/* <img src={running} height='45px' style={{display:this.state.process !== 8 && 'none',position:'absolute',left:'0px'}} alt=""/> */}
                                 {/* <img src={running} height='45px' style={{display:this.state.process !== 8 && 'none',position:'absolute',left:'0px'}} alt=""/> */}
                                 {/* <img src={running} height='45px' style={{display:this.state.process !== 8 && 'none',position:'absolute',left:'0px'}} alt=""/> */}
@@ -191,9 +191,17 @@ const  Profile = styled.div`
     @media screen and (min-width:777px) and (max-width:850px){
         width:40%;
     }
-    @media screen and (max-width:320px){
+    @media screen and (max-width:321px){
         height:280px;
         min-height:280px;
+    }
+`
+
+const RunnerImg = styled.img`
+    position:absolute;
+    height:45px;
+    @media screen and (max-width:321px){
+        font-size:30px;
     }
 `
 
