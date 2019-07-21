@@ -59,15 +59,42 @@ class About extends Component {
                     <SkillsHeader style={{}}>SKILLS</SkillsHeader>
                     <div style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap'}}>
                         <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={css} style={{height:150,width:150}} alt="css"/>
-                            <p style={{fontSize:30,marginTop:5}}>CSS</p>
+                            <img src={react} style={{height:150,width:150}} alt="react"/>
+                            <p style={{fontSize:30,marginTop:5}}>React</p>
                         </div>
-
+                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
+                            <img src={js} style={{height:150,width:150}} alt="js"/>
+                            <p style={{fontSize:30,marginTop:5}}>JavaScript</p>
+                        </div>
                         <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
                             <img src={express} style={{height:150,width:150}} alt="express"/>
                             <p style={{fontSize:30,marginTop:5}}>Express</p>
                         </div>
+                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
+                            <img src={node} style={{height:150,width:150}} alt="node"/>
+                            <p style={{fontSize:30,marginTop:5}}>Node</p>
+                        </div>
+                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
+                            <img src={postgres} style={{height:150,width:150}} alt="postgres"/>
+                            <p style={{fontSize:30,marginTop:5}}>Postgres SQL</p>
+                        </div>
+                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
+                            <img src={css} style={{height:150,width:150}} alt="css"/>
+                            <p style={{fontSize:30,marginTop:5}}>CSS</p>
+                        </div>
+                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
+                            <img src={html} style={{height:150,width:150}} alt="html"/>
+                            <p style={{fontSize:30,marginTop:5}}>HTML</p>
+                        </div>
+                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
+                            <img src={redux} style={{height:150,width:150}} alt="redux"/>
+                            <p style={{fontSize:30,marginTop:5}}>Redux</p>
+                        </div>
 
+                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
+                            <img src={socket} style={{height:150,width:150}} alt="socket"/>
+                            <p style={{fontSize:30,marginTop:5}}>Socket</p>
+                        </div>
                         <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
                             <img src={fontAwesome} style={{height:150,width:150}} alt="fontAwesome"/>
                             <p style={{fontSize:30,marginTop:5}}>Font Awesome</p>
@@ -82,52 +109,14 @@ class About extends Component {
                             <img src={sqltabs} style={{height:150,width:150}} alt="sqltabs"/>
                             <p style={{fontSize:30,marginTop:5}}>SQL Tabs</p>
                         </div>
-
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={react} style={{height:150,width:150}} alt="react"/>
-                            <p style={{fontSize:30,marginTop:5}}>React</p>
-                        </div>
-
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={postgres} style={{height:150,width:150}} alt="postgres"/>
-                            <p style={{fontSize:30,marginTop:5}}>Postgres SQL</p>
-                        </div>
-
                         <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
                             <img src={git} style={{height:150,width:150}} alt="git"/>
                             <p style={{fontSize:30,marginTop:5}}>Git</p>
                         </div>
-
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={html} style={{height:150,width:150}} alt="html"/>
-                            <p style={{fontSize:30,marginTop:5}}>HTML</p>
-                        </div>
-
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={js} style={{height:150,width:150}} alt="js"/>
-                            <p style={{fontSize:30,marginTop:5}}>JavaScript</p>
-                        </div>
-
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={node} style={{height:150,width:150}} alt="node"/>
-                            <p style={{fontSize:30,marginTop:5}}>Node</p>
-                        </div>
-
                         <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
                             <img src={postman} style={{height:150,width:150}} alt="postman"/>
                             <p style={{fontSize:30,marginTop:5}}>Postman</p>
                         </div>
-
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={redux} style={{height:150,width:150}} alt="redux"/>
-                            <p style={{fontSize:30,marginTop:5}}>Redux</p>
-                        </div>
-
-                        <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
-                            <img src={socket} style={{height:150,width:150}} alt="socket"/>
-                            <p style={{fontSize:30,marginTop:5}}>Socket</p>
-                        </div>
-
                         <div style={{display:'flex',flexDirection:'column',alignItems:'center',margin:20}}>
                             <img src={materialui} style={{height:150,width:150}} alt="materialui"/>
                             <p style={{fontSize:30,marginTop:5}}>Material UI</p>
@@ -181,29 +170,29 @@ const ProfilePic = styled.img`
 `
 
 const  Profile = styled.div`
+    @media screen and (max-width:777px){
+        margin-top:20px;
+    }    
+    @media screen and (max-width:470px){
+        min-height:260px;
+    }
     border-radius:10px;
     background:#7EBDC3;
     width:60%;
     padding:5px;
-    min-height:120px;
-    height:180px;
+    min-height:140px;
+    height:220px;
+    margin-bottom:10px;
     text-align:center;
     box-shadow: 6px 6px 15px 3px black;
-    
-    @media screen and (max-width:777px){
-        margin-top:20px;
-    }
-
     @media screen and (min-width:850px) and (max-width:1015px){
         width:50%
     }
-
-    @media screen and (max-width:470px){
-        min-height:260px;
-    }
-
     @media screen and (min-width:777px) and (max-width:850px){
         width:40%;
+    }
+    @media screen and (max-width:320px){
+        height:270px;
     }
 `
 

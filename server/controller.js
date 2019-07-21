@@ -3,6 +3,7 @@ const { EMAIL, PASSWORD } = process.env
 
 module.exports = {
   message: async (req, res) => {
+    const db = req.app.get('db')
     const { name, message, email, phone } = req.body
 
     try {
@@ -26,13 +27,13 @@ module.exports = {
                     <p>${message}</p>
                 </div>`
         
-      }, (err, res) => {
+      }, async(err, response) => {
         if (err) {
           console.log('err', err)
         } else {
-          console.log('res', res)
-          //save to the db -- await db call
-          res.status(200).send()
+          console.log('res', response)
+          await db.create_message({name,phone,email,message})
+          res.sendStatus(200)
         }
       })
     } catch (err) {

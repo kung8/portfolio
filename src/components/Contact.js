@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { storeScroll } from '../ScrollFn'
+import axios from 'axios'
+import {toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+import {css} from 'glamor';
+
+toast.configure({draggable:true, autoClose:3000,background:'green'})
+
 
 class Contact extends Component {
     constructor() {
@@ -12,31 +19,76 @@ class Contact extends Component {
             message: ''
         }
     }
+
+    sendMessage=async()=>{
+        const {name,email,phone,message} = this.state
+        if(name.length && email.length && phone.length && message.length){
+            await axios.post('/api/message',this.state)
+            this.setState({
+                name: '',
+                email: '',
+                phone: '',
+                message: ''
+            })
+            toast('Thank you so much for your message. Kevin Ung will be in contact with you!',{
+                className: css({
+                  background: '#C6DEA6',
+                  borderRadius:10,
+                  width:'90%',
+                  margin:'120px auto'
+                }),
+                bodyClassName: css({
+                  color:'black',
+                  fontSize:20
+                }),
+                progressClassName: css({
+                  background: 'green'
+                })
+              })
+        } else {
+            toast('Please fill out all the info!',{
+                className: css({
+                  background: 'pink',
+                  borderRadius:10,
+                  width:'90%',
+                  margin:'120px auto'
+                }),
+                bodyClassName: css({
+                    color:'black',
+                    fontSize:20
+                }),
+                progressClassName: css({
+                  background: 'red'
+                })
+              })
+        }
+    }
+
     render() {
         storeScroll()
 
         return (
             <ContactBody style={{overflowX:'hidden'}}>
                 <LogoHolder>
-                    <LogoButton><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fas fa-phone-square" /><a style={{position:'absolute', left:35, top:'calc(50% - 10px)', color:'white',textDecoration:'none'}} href='tel:5716239450'> (571) 623-9450</a></LogoButton>
-                    <LogoButton><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fas fa-envelope-square" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='mailto:ung.kevin78@gmail.com'>ung.kevin78@gmail.com</a></LogoButton>
-                    <LogoButton><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fab fa-github-square" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='https://github.com/kung8' rel="noopener noreferrer" target='_blank'>github.com/kung8</a></LogoButton>
-                    <LogoButton><Logo style={{position:'absolute',left:10,top:'calc(50% - 10px)'}} className="fab fa-linkedin" /> <a style={{position:'absolute', left:35, top:'calc(50% - 10px)',color:'white',textDecoration:'none'}} href='https://www.linkedin.com/in/kung8/' rel="noopener noreferrer" target='_blank'>linkedin.com/in/kung8</a></LogoButton>
+                    <LogoButton><Logo className="fas fa-phone-square" /><ContactLink href='tel:5716239450'> (571) 623-9450</ContactLink></LogoButton>
+                    <LogoButton><Logo className="fas fa-envelope-square" /> <ContactLink href='mailto:ung.kevin78@gmail.com'>ung.kevin78@gmail.com</ContactLink></LogoButton>
+                    <LogoButton><Logo className="fab fa-github-square" /> <ContactLink href='https://github.com/kung8' rel="noopener noreferrer" target='_blank'>github.com/kung8</ContactLink></LogoButton>
+                    <LogoButton><Logo className="fab fa-linkedin" /> <ContactLink href='https://www.linkedin.com/in/kung8/' rel="noopener noreferrer" target='_blank'>linkedin.com/in/kung8</ContactLink></LogoButton>
                 </LogoHolder>
                 <FormHolder>
                     <ContactMe>Contact Me:</ContactMe>
                     <InputSpan id='name-label'>Name:</InputSpan>
-                    <ShorterInputField id='name-input' type="text" placeholder='Name' />
+                    <ShorterInputField id='name-input' type="text" placeholder='Name' onChange={e=>this.setState({name:e.target.value})} />
 
                     <InputSpan id='phone-label'>Phone:</InputSpan>
-                    <ShorterInputField id='phone-input' type="text" placeholder='Phone' />
+                    <ShorterInputField id='phone-input' type="text" placeholder='Phone' onChange={e=>this.setState({phone:e.target.value})}/>
 
                     <InputSpan id='email-label'>Email:</InputSpan>
-                    <InputField id='email-input' type="text" placeholder='Email' />
+                    <InputField id='email-input' type="text" placeholder='Email' onChange={e=>this.setState({email:e.target.value})}/>
 
                     <InputSpan id='message-label'>Message:</InputSpan>
-                    <TextField type="text" placeholder='Message'/>
-                    <Send>Leave a Message</Send>
+                    <TextField type="text" placeholder='Message' onChange={e=>this.setState({message:e.target.value})}/>
+                    <Send onClick={this.sendMessage}>Leave a Message</Send>
                 </FormHolder>
             </ContactBody>
         )
@@ -73,27 +125,36 @@ const LogoHolder = styled.div`
     font-size: 25px;
 `
 
+const LogoButton = styled.button`
+@media screen and (max-width:450px){
+    font-size:20px;
+}
+background:black;
+margin-bottom:5px;
+border-radius:10px;
+width:265px;
+position:relative;
+height:35px;
+font-size:20px;
+`
+
 const Logo = styled.i`
     color:#F7F9F9;
+    position:absolute;
+    left:10px;
+    top:calc(50% - 10px);
     @media screen and (max-width:400px){
         font-size:20px;
     }
 `
 
-const LogoButton = styled.button`
-    @media screen and (max-width:450px){
-        font-size:20px;
-    }
-    background:black;
-    margin-bottom:5px;
-    border-radius:10px;
-    width:265px;
-    position:relative;
-    height:35px;
-    font-size:20px;
+const ContactLink = styled.a`
+    position:absolute;
+    left:35px;
+    top:calc(50% - 10px);
+    color:white;
+    text-decoration:none;
 `
-
-
 
 const FormHolder = styled.div`
     border-radius: 10px;

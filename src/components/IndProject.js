@@ -66,7 +66,7 @@ class IndProject extends Component {
                             <ProjName>{name} ({date})</ProjName>
                         </ProjNameHolder>
                         <HR />
-                        <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <ImageHolder>
                             <Img src={image[this.state.current]} />
                             <Left onClick={() => this.handlePrev(image)}>
                                 <Icon className="fas fa-chevron-left" />
@@ -75,10 +75,10 @@ class IndProject extends Component {
                                 <Icon className="fas fa-chevron-right" />
                             </Right>
 
-                        </div>
+                        </ImageHolder>
                         <HR />
                         <DescTextHolder style={{ background: hosting }}>
-                            <Text style={{marginBottom:10}}> {lessons}</Text>
+                            <Text> {lessons}</Text>
                             {/* <h3>Tech:</h3> */}
                             {/* {mappedTech} */}
                             {hosted && <Button><LinkName target='_blank'
@@ -163,6 +163,13 @@ const HR = styled.hr`
     width:100%;
 `
 
+const ImageHolder = styled.div`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
 const Img = styled.img`
     height:250px; 
     margin:10px; 
@@ -179,6 +186,7 @@ const Left = styled.button`
     left: 10px;
     top: 125px;
     outline:none;
+    color:red;
     @media screen and (min-height:1366px){
         top:200px;
     }
@@ -188,6 +196,7 @@ const Right = styled.button`
     position: absolute;
     right: 10px;
     top: 125px;
+    color:red;
     outline:none;
     @media screen and (min-height:1366px){
         top:200px;
@@ -195,7 +204,7 @@ const Right = styled.button`
 `
 
 const Icon = styled.i`
-    font-size:35px;
+    font-size:30px;
     @media screen and (min-height:1366px){
         font-size:60px;
     }
@@ -218,6 +227,7 @@ const Text = styled.h4`
     font-size:20px;
     text-align:center;
     margin:0 auto;
+    margin-bottom:10px;
     max-width:90%;
     padding:5px;
 `

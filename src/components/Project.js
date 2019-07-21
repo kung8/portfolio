@@ -18,12 +18,8 @@ class Project extends Component {
         this.props.history.push(`/projects/${name}`)
     }
 
-    render() {
-        console.log(this.props)
-        // const {isExpanded,isSelected} = this.state
-        
+    render() {        
         const { name, url, desc, domain, image,hosted } = this.props.project
-
         const hosting = hosted ? (domain ?'#7EBDC3' : '#C6DEA6') : '#F6E27F'
 
         return (
@@ -43,11 +39,10 @@ class Project extends Component {
                 <Img src={image[0]} alt="website"/>
                 <HR/>
                 <DescTextHolder style={{ background: hosting}}>
-                    <div style={{width:'90%',position:'relative',display:'flex',flexDirection:'column',alignItems:'center'}}>
-                        {/* <h3 style={{color:'white'}}>{date}</h3> */}
+                    <MiniTextHolder>
                         <Text>{desc}</Text>
                         <Button onClick={()=>this.expand(this.props.project)}>View</Button>
-                    </div>
+                    </MiniTextHolder>
                 </DescTextHolder>
             </ProjectBody>
             </>
@@ -107,14 +102,23 @@ const DescTextHolder = styled.div`
     justify-content:center
 `
 
+const MiniTextHolder = styled.div`
+    width:90%;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+`
+
 const Text = styled.h4`
     font-size:25px;
     text-align:center;
+    margin-bottom:25px;
 `
 
 const Button = styled.button`
     position:absolute;
-    bottom:10px;
+    bottom:5px;
     width:150px;
     height:50px;
     font-size:35px;
