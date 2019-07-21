@@ -192,7 +192,8 @@ const  Profile = styled.div`
         width:40%;
     }
     @media screen and (max-width:320px){
-        height:270px;
+        height:280px;
+        min-height:280px;
     }
 `
 
