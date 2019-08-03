@@ -5,7 +5,7 @@ import Singapore from '../Assets/Me/Singapore.jpg'
 import frisbee from '../Assets/Me/Frisbee.png'
 import running from '../Assets/Me/Running.png'
 
-const {css,express,fontAwesome,git,html,js,node, postman,redux, s3,socket,stripe,materialui,postgres,react,sqltabs} = images
+const {css,express,fontAwesome,git,html,js,node, postman,redux, s3,socket,stripe,materialui,postgres,react,sqltabs,native} = images
 
 class About extends Component {
     state={
@@ -83,6 +83,12 @@ class About extends Component {
                             <SkillsImg src={socket} alt="socket"/>
                             <SkillsName>Socket</SkillsName>
                         </Skills>
+                        <Skills>
+                            <SkillsImg src={native} alt="react-native"/>
+                            <SkillsName>React-Native</SkillsName>
+                        </Skills>
+
+
                         <Skills>
                             <SkillsImg src={fontAwesome} alt="fontAwesome"/>
                             <SkillsName>Font Awesome</SkillsName>

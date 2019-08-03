@@ -18,6 +18,7 @@ import postgres from '../Assets/Tech/postgres.png'
 import react from '../Assets/Tech/react.png'
 import sqltabs from '../Assets/Tech/sqltabs.png'
 // import vue from '../Assets/Tech/vue.png'
+import native from '../Assets/Tech/React-Native.png'
 
 export const images = {
     css,
@@ -36,5 +37,6 @@ export const images = {
     materialui,
     postgres,
     react,
-    sqltabs
+    sqltabs,
+    native
 }
