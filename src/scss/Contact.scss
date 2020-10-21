@@ -1,0 +1,134 @@
+.contact-page {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    text-align: center;
+    .contact-inner-container {
+        margin-bottom: 25px;
+        width: 100%;
+        .resume-iframe {
+            width: 90%;
+            height: 570px;
+            overflow: scroll;
+            @media screen and (max-width: $tablet) {
+                height: 500px;
+            }
+        }
+    }
+    .resume-links-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        min-width: 300px;
+    }
+    .resume-link, .form-link {
+        z-index: 1;
+        cursor: pointer;
+        padding: 8px 20px;
+        max-width: 250px;
+        color: white;
+        border-radius: 16px;
+        text-decoration: none;
+        text-shadow: 1px 1px 10px black;
+        background: lightgreen;
+        outline: none;
+        @media screen and (max-width: $tablet) {
+            padding: 6px 15px;
+            font-size: 14px;
+        }
+        &:hover {
+            box-shadow: 1px 1px 8px 2px rgb(173, 251, 173);
+        }
+        &.downloadable-link {
+            background: skyblue;
+            &:hover {
+                box-shadow: 1px 1px 8px 2px rgb(176, 221, 239);
+            }
+            &:focus {
+                box-shadow: 1px 1px 8px 2px rgb(176, 221, 239);
+            }
+        }
+        &.form-link {
+            border: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            background: skyblue;
+            &:hover {
+                box-shadow: 1px 1px 8px 2px rgb(176, 221, 239);
+            }
+            &:focus {
+                box-shadow: 1px 1px 8px 2px rgb(176, 221, 239);
+            }
+        }
+    }
+    .contact-form {
+        background: white;
+        width: 95%;
+        border-radius: 6px;
+        box-shadow: 1px 1px 10px 1px black;
+        color: black;
+        margin-bottom: 40px;
+        h1 {
+            font-size: 24px; 
+            padding-top: 10px;
+            text-align: left;
+            margin-left: 5%;
+            margin-bottom: 12px;
+        }
+        form {
+            .select-container {
+                margin-left: 5%;
+                margin-bottom: 20px;
+                select {
+                    width: 70%;
+                    outline: none; 
+                    padding: 4px;
+                    min-width: 500px;
+                    @media screen and (min-width: $tablet) {
+                        width: 40%;
+                    }
+                    @media screen and (max-width: $mobile-xl) {
+                        width: 40%;
+                        min-width: 300px;
+                    }
+                }
+            }
+            textarea {
+                width: 90%;
+                min-width: 90%;
+                max-width: 90%;
+                max-height: 150px;
+                min-height: 150px;
+                outline: none;
+                padding: 8px;
+                display: inline-block;
+                margin-bottom: 12px;
+                margin-left: 5%;
+            }
+            .name-container, .email-container {
+                margin-left: 5%;
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                h4 {
+                    margin-right: 5px;
+                }
+                input {
+                    outline: none;
+                    padding: 6px 8px;
+                    width: 200px;
+                }
+                .name-notice, .email-notice {
+                    padding: 4px;
+                    margin-left: 10px;
+                    color: red;
+                }
+            }
+        }
+    }
+}

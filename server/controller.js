@@ -1,44 +1,38 @@
-const nodemailer = require('nodemailer')
-const { EMAIL, PASSWORD } = process.env
+const nodemailer = require('nodemailer');
+const { EMAIL, PASSWORD } = process.env;
 
 module.exports = {
-  message: async (req, res) => {
-    const db = req.app.get('db')
-    const { name, message, email, phone } = req.body
+    message: async (req, res) => {
+        const { name, message, email, type } = req.body;
 
-    try {
-      let transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-          user: EMAIL,
-          pass: PASSWORD
-        }
-      });
-
-      let info = await transporter.sendMail({
-        from: `'${name}' <${email}>`, 
-        to: EMAIL,
-        subject: `New message from ${name}`, 
-        text: message,
-        html:   `<div>
+        try {
+            let transporter = nodemailer.createTransport({
+                service: 'gmail',
+                auth: {
+                    user: EMAIL,
+                    pass: PASSWORD
+                }
+            });
+            await transporter.sendMail({
+                from: `'${name}' <${email}>`,
+                to: EMAIL,
+                subject: `Re: Request for ${type} from ${name}`,
+                text: message,
+                html: `<div>
                     <h1>${name}</h1>        
-                    <h3>Phone:${phone}</h3>  
                     <h3>Email:${email}</h3>  
                     <p>${message}</p>
                 </div>`
-        
-      }, async(err, response) => {
-        if (err) {
-          console.log('err', err)
-        } else {
-          console.log('res', response)
-          await db.create_message({name,phone,email,message})
-          res.sendStatus(200)
+            }, async (err, response) => {
+                if (err) {
+                    console.log('err', err);
+                } else {
+                    res.sendStatus(200);
+                }
+            })
+        } catch (err) {
+            console.log(err);
+            res.sendStatus(500);
         }
-      })
-    } catch (err) {
-      console.log(err)
-      res.sendStatus(500)
     }
-  }
 }

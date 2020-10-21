@@ -1,0 +1,9 @@
+.main {
+    @import './_variables';
+    @import './global';
+    @import './Header';
+    @import './About';
+    @import './Projects';
+    @import './Contact';
+    @import './Resume';
+}
