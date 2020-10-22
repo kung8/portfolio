@@ -147,7 +147,7 @@ const Chatterbox = {
 }
 const MiniGames = {
     id: 6,
-    name: 'MiniGames',
+    name: 'Mini Games',
     url: null,
     tech: ['React-Native', 'React-Navigation', 'Toast'],
     images: [
@@ -171,7 +171,7 @@ const projects = [MiniGames, Chatterbox, DeadStock, MarketIn, Helo, Houser];
 
 export default function () {
     const [posArr, updatePosArr] = useState([]);
-
+    const [showModal, updateShow] = useState(false);
 
     useEffect(() => {
         determineArr();
@@ -189,7 +189,7 @@ export default function () {
 
     const handleLeft = (projectNum, position) => {
         let copy = [...posArr];
-        if ((position - 1) > 0) {
+        if (position > 0) {
             copy[projectNum].position = position - 1;
             updatePosArr(copy);
         } else {
@@ -197,6 +197,7 @@ export default function () {
             updatePosArr(copy);
         }
     }
+
     const handleRight = (projectNum, position) => {
         let copy = [...posArr];
         if (copy[projectNum].length > position + 1) {
@@ -207,24 +208,47 @@ export default function () {
             updatePosArr(copy);
         }
     }
+
+    const updateModal = (project) => {
+        const modal = document.querySelector('.modal-message');
+        let techStr = '';
+        project.tech.forEach(tech => techStr += `${tech}, `);
+        const message = `<h1>${project.name}</h1><p><strong>Date:</strong> ${project.date}</p><br/><p><strong>Description:</strong> ${project.desc}</p><br/><p><strong>Lesson:</strong> ${project.lessons}</p><br/><p><strong>Tech:</strong> ${techStr}</p>`;
+        modal.innerHTML = message;
+        updateShow(true);
+    }
+
     return (
-        <div className="projects-page flex" style={{ backgroundImage: `url(${Bako})` }}>
-            <div className="projects-inner-container set-top">
+        <div className={`projects-page flex ${showModal && 'transparent'}`} style={{ backgroundImage: `url(${Bako})` }}>
+            <div className="projects-inner-container set-top p-rel">
                 <h1>Projects:</h1>
                 <div className="general-projects-container">
                     {projects.map((project, index) => {
                         let position = posArr[index]?.position || 0;
                         return (
-                            <div key={project.id} className="individual-project">
+                            <div key={project.id} className="individual-project" onClick={() => updateModal(project)}>
                                 <h4>{project.name}</h4>
                                 <div className="img-container">
                                     <img className="project-img" src={project.images[position].img} alt={project.name + index} />
+                                    <div className="scroll-dots-container">
+                                        {project.images.map((img, index) => {
+                                            return (
+                                                <div key={project.name + '-img-' + index} className={`selected-ring ${position === index && 'selected'}`}>
+                                                    <div className='scroll-dot'></div>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
                                     <div className="left-arrow fas fa-chevron-right" onClick={() => handleLeft(index, position)}></div>
                                     <div className="right-arrow fas fa-chevron-right" onClick={() => handleRight(index, position)}></div>
                                 </div>
                             </div>
                         )
                     })}
+                </div>
+                <div className={`project-modal ${!showModal && 'none'}`}>
+                    <div className="close-btn p-abs" onClick={() => updateShow(false)}>x</div>
+                    <div className="modal-message"></div>
                 </div>
             </div>
         </div>
