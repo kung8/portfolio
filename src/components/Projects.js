@@ -201,7 +201,7 @@ export default function () {
                                     </div>
                                     <div className="left-arrow fas fa-chevron-right" onClick={() => handleLeft(index, position)}></div>
                                     <div className="right-arrow fas fa-chevron-right" onClick={() => handleRight(index, position)}></div>
-                                    <div className="open-btn" onClick={() => updateModal(project)}>Open]</div>
+                                    <div className="open-btn" onClick={() => updateModal(project)}>Open</div>
                                 </div>
                             </div>
                         )
