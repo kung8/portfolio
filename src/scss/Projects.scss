@@ -23,7 +23,10 @@
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            justify-content: center;
+            margin-bottom: 75px;
+            @media screen and (max-width: $desktop) {
+                justify-content: center;
+            }
             .individual-project {
                 display: flex; 
                 flex-direction: column;
@@ -34,6 +37,7 @@
                 @media screen and (min-width: $desktop) {
                     min-width: 300px; 
                     margin-bottom: 72px;
+                    width: 50%;
                 }
                 @media screen and (max-width: $mobile-xl) {
                     width: 90%;
@@ -174,7 +178,7 @@
             right: 20px;
             color: red;
             font-size: 24px;
-            z-index: 2;
+            z-index: 3;
         }
         .modal-message {
             color: black;

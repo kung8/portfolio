@@ -48,6 +48,21 @@ import ttt from '../assets/MiniGames/TicTacToe.png';
 import war from '../assets/MiniGames/war.png';
 import War from '../assets/MiniGames/War2.png';
 
+import four04 from '../assets/YourMove/404.png';
+import chat from '../assets/YourMove/chat.png';
+import chord from '../assets/YourMove/chord-dash.png';
+import codebreaker from '../assets/YourMove/codebreaker.png';
+import guitarDesktop from '../assets/YourMove/guitar-desktop.png';
+import guitarMobile from '../assets/YourMove/guitar-mobile.png';
+import instructions from '../assets/YourMove/instructions.png';
+import lobby from '../assets/YourMove/lobby.png';
+import loginYM from '../assets/YourMove/login.png';
+import mainDash from '../assets/YourMove/main-dashboard.png';
+import navToggle from '../assets/YourMove/nav-toggle.png';
+import recipe from '../assets/YourMove/recipe.png';
+import registerYM from '../assets/YourMove/register.png';
+import subjectDash from '../assets/YourMove/subject-dashboard.png';
+
 const Houser = {
     id: 1,
     name: 'Houser',
@@ -120,8 +135,20 @@ const MiniGames = {
     hosted: false,
     lessons: "Learned differences in React-Native and built own logic for game play."
 }
+const YourMove = {
+    id: 7,
+    name: 'Your Move',
+    url: null,
+    tech: ['Sass', 'Sockets', 'Toast', 'Express-Session', 'Bcryptjs', 'Redux', 'Redux-Persist', 'React-Router-Dom'],
+    images: [mainDash, subjectDash, recipe, four04, chord, guitarDesktop, guitarMobile, loginYM, registerYM, codebreaker, lobby, chat, instructions, navToggle],
+    desc: 'SPA to simplify learning and making it fun along the way.',
+    domain: false,
+    date: 'Sep 2020',
+    hosted: false,
+    lessons: "I've learned a lot about simple layouts and consistent designs. I've practiced good UX principles with this SPA such as making sure buttons are identifable, selecting contrasting colors, and keeping page layouts user-friendly. Implemented consistent page layouts with adaptable features and components. Used sockets to allow two-player game play. Independently styled pages and components to allow unique user experience and ensuring mobile responsiveness."
+}
 
-const projects = [MiniGames, Chatterbox, DeadStock, MarketIn, Helo, Houser];
+const projects = [YourMove, MiniGames, Chatterbox, DeadStock, MarketIn, Helo, Houser];
 
 export default function () {
     const [posArr, updatePosArr] = useState([]);
@@ -176,6 +203,13 @@ export default function () {
             behavior: 'smooth'
         });
         updateShow(true);
+
+        document.querySelector('header').style.display = 'none';
+    }
+
+    const closeModal = () => {
+        document.querySelector('header').style.display = 'flex';
+        updateShow(false)
     }
 
     return (
@@ -208,7 +242,7 @@ export default function () {
                     })}
                 </div>
                 <div className={`project-modal ${!showModal && 'none'}`}>
-                    <div className="close-btn p-abs" onClick={() => updateShow(false)}>x</div>
+                    <div className="close-btn p-abs" onClick={() => closeModal()}>x</div>
                     <div className="modal-message"></div>
                 </div>
             </div>
