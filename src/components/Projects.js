@@ -190,6 +190,12 @@ export default function () {
         }
     }
 
+    const handleDotSelected = (projectNum, position) => {
+        let copy = [...posArr];
+        copy[projectNum].position = position;
+        updatePosArr(copy);
+    }
+
     const updateModal = (project) => {
         const modal = document.querySelector('.modal-message');
         let techStr = '';
@@ -225,16 +231,16 @@ export default function () {
                                 <div className="img-container">
                                     <img className="project-img" src={project.images[position]} alt={project.name + index} />
                                     <div className="scroll-dots-container">
-                                        {project.images.map((img, index) => {
+                                        {project.images.map((img, i) => {
                                             return (
-                                                <div key={project.name + '-img-' + index} className={`selected-ring ${position === index && 'selected'}`}>
+                                                <div onClick={() => handleDotSelected(index, i)} key={project.name + '-img-' + i} className={`selected-ring ${position === i && 'selected'} pointer`}>
                                                     <div className='scroll-dot'></div>
                                                 </div>
                                             )
                                         })}
                                     </div>
-                                    <div className="left-arrow fas fa-chevron-right" onClick={() => handleLeft(index, position)}></div>
-                                    <div className="right-arrow fas fa-chevron-right" onClick={() => handleRight(index, position)}></div>
+                                    <div className="left-arrow fas fa-chevron-right pointer" onClick={() => handleLeft(index, position)}></div>
+                                    <div className="right-arrow fas fa-chevron-right pointer" onClick={() => handleRight(index, position)}></div>
                                     <div className="open-btn" onClick={() => updateModal(project)}>Open</div>
                                 </div>
                             </div>

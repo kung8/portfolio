@@ -66,7 +66,7 @@ const About = (props) => {
                         <img src={guitar} alt="guitar" />
                         <p>Cover Artist / Songwriter</p>
                     </div>
-                    <div onClick={() => history.push('/resume')} className="icon-container">
+                    <div onClick={() => history.push('/resume')} className="icon-container pointer">
                         <img src={resume} alt="resume" />
                         <p>Resume Coach</p>
                     </div>
