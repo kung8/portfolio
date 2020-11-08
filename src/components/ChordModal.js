@@ -25,7 +25,7 @@ function determineChordDisplay(chordName) {
         'D/F#': [0, 3, 0, 4, 5, 0],
         'F': [1, 1, 2, 3, 3, 1],
         'Em': [0, 0, 0, 2, 2, 0],
-        'X': [0, 0, 0, 0, 0, 2]
+        'G/F#': [3, 3, 0, 0, 0, 2]
     }
 
     let foundChord = chords[chordName];
