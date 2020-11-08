@@ -3,7 +3,7 @@
     min-width: 250px;
     height: 200px;
     position: absolute;
-    box-shadow: 1px 1px 10px 1px white;
+    box-shadow: 1px 1px 10px 2px white;
     border-radius: 4px;
     @media screen and (max-width: $tablet) {
         transform: translate(0, 50%);

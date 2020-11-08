@@ -29,8 +29,6 @@ function determineChordDisplay(chordName) {
     }
 
     let foundChord = chords[chordName];
-    // console.log(foundChord);
-
     let [first, second, third, fourth, fifth, sixth] = foundChord;
     let filled = <div className="filled"></div>
     let closed = 'X';
@@ -47,63 +45,115 @@ function determineChordDisplay(chordName) {
         fretTwo = fretThree - 1;
         fretOne = fretTwo - 1;
         return (
-            <div id={chordName} className="chord-diagram flex-col align-ctr">
-                <h4 className="chord-name">{chordName}</h4>
-            </div>
-        )
-    } else {
-        return (
-            <div id={chordName} className="chord-diagram flex-col align-ctr">
+            <div className="chord-diagram flex-col align-ctr">
                 <h4 className="chord-name">{chordName}</h4>
                 <div className="fret-board">
                     <div className="string-1 flex p-rel">
                         <div className="outside p-abs">{first === 'x' ? closed : first === 0 ? opened : null}</div>
-                        <div className="first">{(first === 1 /*|| first === fretOne*/) && filled}</div>
-                        <div className="second">{(first === 2 /*|| first === fretTwo*/) && filled}</div>
-                        <div className="third">{(first === 3 /*|| first === fretThree*/) && filled}</div>
-                        <div className="fourth">{(first === 4 /*|| first === fretFour*/) && filled}</div>
+                        <div className="first">{first === fretOne && filled}</div>
+                        <div className="second">{first === fretTwo && filled}</div>
+                        <div className="third">{first === fretThree && filled}</div>
+                        <div className="fourth">{first === fretFour && filled}</div>
                     </div>
                     <div className="string-2 flex p-rel">
                         <div className="outside p-abs">{second === 'x' ? closed : second === 0 ? opened : null}</div>
-                        <div className="first">{(second === 1 /*|| second === fretOne*/) && filled}</div>
-                        <div className="second">{(second === 2 /*|| second === fretTwo*/) && filled}</div>
-                        <div className="third">{(second === 3 /*|| second === fretThree*/) && filled}</div>
-                        <div className="fourth">{(second === 4 /*|| second === fretFour*/) && filled}</div>
+                        <div className="first">{second === fretOne && filled}</div>
+                        <div className="second">{second === fretTwo && filled}</div>
+                        <div className="third">{second === fretThree && filled}</div>
+                        <div className="fourth">{second === fretFour && filled}</div>
                     </div>
                     <div className="string-3 flex p-rel">
                         <div className="outside p-abs">{third === 'x' ? closed : third === 0 ? opened : null}</div>
-                        <div className="first">{(third === 1 /*|| third === fretOne*/) && filled}</div>
-                        <div className="second">{(third === 2 /*|| third === fretTwo*/) && filled}</div>
-                        <div className="third">{(third === 3 /*|| third === fretThree*/) && filled}</div>
-                        <div className="fourth">{(third === 4 /*|| third === fretFour*/) && filled}</div>
+                        <div className="first">{third === fretOne && filled}</div>
+                        <div className="second">{third === fretTwo && filled}</div>
+                        <div className="third">{third === fretThree && filled}</div>
+                        <div className="fourth">{third === fretFour && filled}</div>
                     </div>
                     <div className="string-4 flex p-rel">
                         <div className="outside p-abs">{fourth === 'x' ? closed : fourth === 0 ? opened : null}</div>
-                        <div className="first">{(fourth === 1 /*|| (fourth === fretOne*/) && filled}</div>
-                        <div className="second">{(fourth === 2 /*|| fourth === fretTwo*/) && filled}</div>
-                        <div className="third">{(fourth === 3 /*|| fourth === fretThree*/) && filled}</div>
-                        <div className="fourth">{(fourth === 4 /*|| fourth === fretFour*/) && filled}</div>
+                        <div className="first">{fourth === fretOne && filled}</div>
+                        <div className="second">{fourth === fretTwo && filled}</div>
+                        <div className="third">{fourth === fretThree && filled}</div>
+                        <div className="fourth">{fourth === fretFour && filled}</div>
                     </div>
                     <div className="string-5 flex p-rel">
                         <div className="outside p-abs">{fifth === 'x' ? closed : fifth === 0 ? opened : null}</div>
-                        <div className="first">{(fifth === 1 /*|| fifth === fretOne*/) && filled}</div>
-                        <div className="second">{(fifth === 2 /*|| fifth === fretTwo*/) && filled}</div>
-                        <div className="third">{(fifth === 3 /*|| fifth === fretThree*/) && filled}</div>
-                        <div className="fourth">{(fifth === 4 /*|| fifth === fretFour*/) && filled}</div>
+                        <div className="first">{fifth === fretOne && filled}</div>
+                        <div className="second">{fifth === fretTwo && filled}</div>
+                        <div className="third">{fifth === fretThree && filled}</div>
+                        <div className="fourth">{fifth === fretFour && filled}</div>
                     </div>
                     <div className="string-6 flex p-rel">
                         <div className="outside p-abs">{sixth === 'x' ? closed : sixth === 0 ? opened : null}</div>
-                        <div className="first p-rel">{(sixth === 1 /*|| sixth === fretOne*/) && filled}{fretOne &&
+                        <div className="first p-rel">{sixth === fretOne && filled}{fretOne &&
                             <div className="fret-num p-abs">{fretOne}</div>}
                         </div>
-                        <div className="second p-rel">{(sixth === 2 /*|| sixth === fretTwo*/) && filled}{fretTwo &&
+                        <div className="second p-rel">{sixth === fretTwo && filled}{fretTwo &&
                             <div className="fret-num p-abs">{fretTwo}</div>}
                         </div>
-                        <div className="third p-rel">{(sixth === 3 /*|| sixth === fretThree*/) && filled}{fretThree &&
+                        <div className="third p-rel">{sixth === fretThree && filled}{fretThree &&
                             <div className="fret-num p-abs">{fretThree}</div>}
                         </div>
-                        <div className="fourth p-rel">{(sixth === 4 /*|| sixth === fretFour*/) && filled}{fretFour &&
+                        <div className="fourth p-rel">{sixth === fretFour && filled}{fretFour &&
                             <div className="fret-num p-abs">{fretFour}</div>}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    } else {
+        return (
+            <div className="chord-diagram flex-col align-ctr">
+                <h4 className="chord-name">{chordName}</h4>
+                <div className="fret-board">
+                    <div className="string-1 flex p-rel">
+                        <div className="outside p-abs">{first === 'x' ? closed : first === 0 ? opened : null}</div>
+                        <div className="first">{(first === fretOne || first === 1) && filled}</div>
+                        <div className="second">{first === 2 && filled}</div>
+                        <div className="third">{first === 3 && filled}</div>
+                        <div className="fourth">{first === 4 && filled}</div>
+                    </div>
+                    <div className="string-2 flex p-rel">
+                        <div className="outside p-abs">{second === 'x' ? closed : second === 0 ? opened : null}</div>
+                        <div className="first">{second === 1 && filled}</div>
+                        <div className="second">{second === 2 && filled}</div>
+                        <div className="third">{second === 3 && filled}</div>
+                        <div className="fourth">{second === 4 && filled}</div>
+                    </div>
+                    <div className="string-3 flex p-rel">
+                        <div className="outside p-abs">{third === 'x' ? closed : third === 0 ? opened : null}</div>
+                        <div className="first">{third === 1 && filled}</div>
+                        <div className="second">{third === 2 && filled}</div>
+                        <div className="third">{third === 3 && filled}</div>
+                        <div className="fourth">{third === 4 && filled}</div>
+                    </div>
+                    <div className="string-4 flex p-rel">
+                        <div className="outside p-abs">{fourth === 'x' ? closed : fourth === 0 ? opened : null}</div>
+                        <div className="first">{fourth === 1 && filled}</div>
+                        <div className="second">{fourth === 2 && filled}</div>
+                        <div className="third">{fourth === 3 && filled}</div>
+                        <div className="fourth">{fourth === 4 && filled}</div>
+                    </div>
+                    <div className="string-5 flex p-rel">
+                        <div className="outside p-abs">{fifth === 'x' ? closed : fifth === 0 ? opened : null}</div>
+                        <div className="first">{fifth === 1 && filled}</div>
+                        <div className="second">{fifth === 2 && filled}</div>
+                        <div className="third">{fifth === 3 && filled}</div>
+                        <div className="fourth">{fifth === 4 && filled}</div>
+                    </div>
+                    <div className="string-6 flex p-rel">
+                        <div className="outside p-abs">{sixth === 'x' ? closed : sixth === 0 ? opened : null}</div>
+                        <div className="first p-rel">{sixth === 1 && filled}
+                            <div className="fret-num p-abs">1</div>
+                        </div>
+                        <div className="second p-rel">{sixth === 2 && filled}
+                            <div className="fret-num p-abs">2</div>
+                        </div>
+                        <div className="third p-rel">{sixth === 3 && filled}
+                            <div className="fret-num p-abs">3</div>
+                        </div>
+                        <div className="fourth p-rel">{sixth === 4 && filled}
+                            <div className="fret-num p-abs">4</div>
                         </div>
                     </div>
                 </div>
