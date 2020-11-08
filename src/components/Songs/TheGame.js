@@ -6,7 +6,7 @@ function TheGame() {
             <h4>The Game</h4>
             <div className="music-card">
                 <p>
-                    <strong>Intro:</strong> Em C G X Em X G D
+                    <strong>Intro:</strong> <span className="ind-chord">Em</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">X</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Em</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">D</span>
                 </p>
                 <p>
                     <strong>Verse 1:</strong><br/><br/>
@@ -56,7 +56,7 @@ function TheGame() {
                     <strong>(Chorus)</strong>
                 </p>
                 <p>
-                    <strong>Outro:</strong> Em X G D
+                    <strong>Outro:</strong> <span className="ind-chord">Em</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">D</span>
                 </p>
             </div>
         </>

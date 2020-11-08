@@ -6,7 +6,7 @@ function HeroToMe() {
             <h4>Hero To Me</h4>
             <div className="music-card">
                 <p>
-                    <strong>Intro:</strong> G C G C
+                    <strong>Intro:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>
                 </p>
                 <p>
                     <strong>Verse 1:</strong><br /><br />

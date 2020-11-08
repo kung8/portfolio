@@ -6,7 +6,7 @@ function ProdigalSon() {
             <h4>Prodigal Son</h4>
             <div className="music-card">
                 <p>
-                    <strong>Intro:</strong> C F Am G
+                    <strong>Intro:</strong> <span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">F</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Am</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>
                 </p>
                 <p>
                     <strong>Verse 1:</strong><br /><br />
@@ -31,7 +31,7 @@ function ProdigalSon() {
                     <span className="p-rel">But<span className="p-abs beginning">Am</span></span> riding still on your <span className="p-rel">heart.<span className="p-abs beginning">G</span></span>
                 </p>
                 <p>
-                    <strong>Interlude:</strong> C F Am G
+                    <strong>Interlude:</strong> <span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">F</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Am</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>
                 </p>
                 <p>
                     <strong>Verse 2:</strong><br /><br />
@@ -66,7 +66,7 @@ function ProdigalSon() {
                     <span className="p-rel">Think<span className="p-abs beginning">Am</span></span> of all the changes you've <span className="p-rel">made<span className="p-abs beginning">G</span></span>
                 </p>
                 <p>
-                    <strong>Outro:</strong> C F Am G C
+                    <strong>Outro:</strong> <span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">F</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Am</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>
                 </p>
             </div>
         </>

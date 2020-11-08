@@ -6,7 +6,7 @@ function KeepOnKeepingOn() {
             <h4>Keep On Keeping On</h4>
             <div className="music-card">
                 <p>
-                    <strong>Intro:</strong> G X Em C
+                    <strong>Intro:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">X</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Em</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>
                 </p>
                 <p>
                     <strong>Verse 1:</strong><br /><br />
@@ -24,7 +24,7 @@ function KeepOnKeepingOn() {
                     It'll <span className="p-rel">work<span className="p-abs beginning">Am</span></span> itself <span className="p-rel">out,<span className="p-abs beginning">Dm</span></span> <span className="p-rel">somehow.<span className="p-abs beginning">G</span></span>
                 </p>
                 <p>
-                    <strong>Interlude:</strong> G X Em C
+                    <strong>Interlude:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">X</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Em</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>
                 </p>
                 <p>
                     <strong>Verse 2:</strong><br /><br />
@@ -49,7 +49,7 @@ function KeepOnKeepingOn() {
                     <strong>(Chorus)</strong>
                 </p>
                 <p>
-                    <strong>Outro:</strong> G X Em C
+                    <strong>Outro:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">X</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Em</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>
                 </p>
             </div>
         </>

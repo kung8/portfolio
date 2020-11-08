@@ -6,7 +6,7 @@ function Strong() {
             <h4>Strong</h4>
             <div className="music-card">
                 <p>
-                    <strong>Intro:</strong> G C Am D7
+                    <strong>Intro:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Am</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">D7</span>
                 </p>
                 <p>
                     <strong>Verse 1:</strong><br /><br />

@@ -6,7 +6,7 @@ function SearchingForYou() {
             <h4>Searching For You</h4>
             <div className="music-card">
                 <p>
-                    <strong>Intro:</strong> G X Cadd9 D
+                    <strong>Intro:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">X</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Cadd9</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">D</span>
                 </p>
                 <p>
                     <strong>Verse 1:</strong><br /><br />
@@ -27,6 +27,9 @@ function SearchingForYou() {
                     <span className="p-rel">Of<span className="p-abs beginning">Cadd9</span></span> life without you <span className="p-rel">here.<span className="p-abs beginning">D</span></span>
                 </p>
                 <p>
+                    <strong>Interlude:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">X</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Cadd9</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">D</span>
+                </p>
+                <p>
                     <strong>Verse 2:</strong><br /><br />
                     <span className="p-rel">It<span className="p-abs beginning">G</span></span> comes and goes, <span className="p-rel">thinking<span className="p-abs beginning">X</span></span> of you.<br /><br />
                     <span className="p-rel">My<span className="p-abs beginning">Cadd9</span></span> mind fades, <span className="p-rel">I<span className="p-abs beginning">D</span></span> haven't a clue<br /><br />
@@ -37,7 +40,7 @@ function SearchingForYou() {
                     <strong>(Chorus x 2)</strong>
                 </p>
                 <p>
-                    <strong>Outro:</strong> G (single strum)
+                    <strong>Outro:</strong> <span className="ind-chord">G</span> (single strum)
                 </p>
             </div>
         </>
