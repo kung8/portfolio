@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // import axios from 'axios';
-import song from '../../assets/Music/fragile-heart.m4a';
+// import song from '../../assets/Music/fragile-heart.m4a';
 
 function FragileHeart() {
     // const id = 'fragileHeart';
@@ -18,9 +18,9 @@ function FragileHeart() {
     return (
         <>
             <h4>Fragile Heart</h4>
-            <audio id="fragile-heart" className="audio-control" controls>
+            {/* <audio id="fragile-heart" className="audio-control" controls>
                 <source src={song} type="audio/mp3"/>
-            </audio>
+            </audio> */}
             <div className="music-card">
                 <p>
                     <strong>Verse 1:</strong><br /><br />
