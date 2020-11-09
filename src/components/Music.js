@@ -44,11 +44,8 @@ function Music() {
 
     const handlePlayAndPause = (selectedAudio) => {
         document.querySelectorAll('.audio-control').forEach(audio => {
-            if (selectedAudio === audio.getAttribute('id')) {
-                audio.play();
-            } else {
-                audio.pause();
-            }
+            if (selectedAudio === audio.getAttribute('id')) audio.play();
+            else audio.pause();
         });
     }
 
