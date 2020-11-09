@@ -5,5 +5,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 app.use(express.static(`${__dirname}/../build`));
+// app.use(express.static(`${__dirname}/../public/assets`));
 app.post('/api/message', ctrl.message);
+// app.get('/api/song/:name', ctrl.getSong);
 app.listen(SERVER_PORT, () => console.log(`Portfolio running on ${SERVER_PORT}`));

@@ -22,11 +22,11 @@ const Header = props => {
 
     return (
         <header className="justify-btwn align-ctr">
-            <h2 className="logo">KU</h2>
+            <h2 className="logo" onClick={() => history.push(home)}>KU</h2>
             <div className="links-container">
-                <h2 className={pathname === home ? 'selected-page': undefined} onClick={() => history.push('/')}>About</h2>
-                <h2 className={pathname === projects ? 'selected-page': undefined} onClick={() => history.push('/projects')}>Projects</h2>
-                <h2 className={pathname === contact ? 'selected-page': undefined} onClick={() => history.push('/contact')}>Contact</h2>
+                <h2 className={pathname === home ? 'selected-page' : undefined} onClick={() => history.push('/')}>About</h2>
+                <h2 className={pathname === projects ? 'selected-page' : undefined} onClick={() => history.push('/projects')}>Projects</h2>
+                <h2 className={pathname === contact ? 'selected-page' : undefined} onClick={() => history.push('/contact')}>Contact</h2>
             </div>
             <div className="hamburger-toggle" onClick={handleToggle}>
                 <div className="ham-bars"></div>
