@@ -52,7 +52,7 @@ function Contact() {
                     <h1>Leave a Message:</h1>
                     <form className="flex-col align-start">
                         <div className="select-container flex-start">
-                            <select name="message" id="message-form" value={messageDropdown} onChange={e => updateDropdown(e.target.value)}>
+                            <select name="message" id="message-form" className="pointer" value={messageDropdown} onChange={e => updateDropdown(e.target.value)}>
                                 <option value="dev">Have dev work?</option>
                                 <option value="resume">Need resume help?</option>
                                 <option value="cookies">Want homemade cookies?</option>
