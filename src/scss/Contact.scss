@@ -95,6 +95,9 @@
                         width: 40%;
                         min-width: 300px;
                     }
+                    @media screen and (max-width: $mobile) {
+                        min-width: 270px;
+                    }
                 }
             }
             textarea {
