@@ -48,17 +48,27 @@ import ttt from '../assets/MiniGames/TicTacToe.png';
 import war from '../assets/MiniGames/war.png';
 import War from '../assets/MiniGames/War2.png';
 
+import four04 from '../assets/YourMove/404.png';
+import chat from '../assets/YourMove/chat.png';
+import chord from '../assets/YourMove/chord-dash.png';
+import codebreaker from '../assets/YourMove/codebreaker.png';
+import guitarDesktop from '../assets/YourMove/guitar-desktop.png';
+import guitarMobile from '../assets/YourMove/guitar-mobile.png';
+import instructions from '../assets/YourMove/instructions.png';
+import lobby from '../assets/YourMove/lobby.png';
+import loginYM from '../assets/YourMove/login.png';
+import mainDash from '../assets/YourMove/main-dashboard.png';
+import navToggle from '../assets/YourMove/nav-toggle.png';
+import recipe from '../assets/YourMove/recipe.png';
+import registerYM from '../assets/YourMove/register.png';
+import subjectDash from '../assets/YourMove/subject-dashboard.png';
+
 const Houser = {
     id: 1,
     name: 'Houser',
     url: null,
     tech: ['React-Router-Dom', 'Redux'],
-    images: [
-        { img: houser, left: false, right: true },
-        { img: wizard1, left: false, right: true },
-        { img: wizard2, left: false, right: true },
-        { img: wizard3, left: false, right: true }
-    ],
+    images: [houser, wizard1, wizard2, wizard3],
     desc: 'Housing display app to practice redux and wizard forms',
     domain: false,
     date: 'Feb 2019',
@@ -70,14 +80,7 @@ const Helo = {
     name: 'Helo',
     url: null,
     tech: ['React-Router-Dom', 'Bcryptjs', 'Express-Session', 'Redux', 'Redux-Persist'],
-    images: [
-        { img: helo, left: true, right: true },
-        { img: login, left: true, right: true },
-        { img: list, left: true, right: true },
-        { img: searchother, left: true, right: true },
-        { img: searchown, left: true, right: true },
-        { img: createpost, left: true, right: true }
-    ],
+    images: [helo, login, list, searchother, searchown, createpost],
     desc: 'Blog posting app practicing authentication, redux, session & routing',
     domain: false,
     date: 'Feb 2019',
@@ -89,17 +92,11 @@ const MarketIn = {
     name: 'MarketIn',
     url: 'marketin.dev',
     tech: ['Sockets', 'Stripe', '3rd Party API', 'Amazon S3', 'Dropzone', 'Express-Session', 'Bcryptjs', 'Redux', 'Redux-Persist', 'React-Router-Dom'],
-    images: [
-        { img: marketin, left: false, right: true },
-        { img: chats, left: false, right: true },
-        { img: contacts, left: true, right: true },
-        { img: search, left: true, right: true },
-        { img: services, left: true, right: true }
-    ],
+    images: [marketin, chats, contacts, search, services],
     desc: 'Professional portfolio SPA combined with an ecommerce twist',
-    domain: true,
+    domain: false,
     date: 'Mar 2019',
-    hosted: true,
+    hosted: false,
     lessons: "I really enjoyed applying all these different technologies. My favorite parts were taking a desired goal such as the Chat component and figuring out how to display the different colors with the date and time formatted how I wanted it and learning how to use this.props.match and this.props.history. After the project, I learned that I unnecessarily used Redux in places that I didn't need to use it.This app was my first full-stack app which could definitely be improved upon but it was where I solidified my understanding of some foundational concepts. The main takeaways from this project would probably be understanding the flow of data and learning how to console log correctly."
 }
 const DeadStock = {
@@ -107,18 +104,11 @@ const DeadStock = {
     name: 'DeadStock',
     url: '159.65.98.93:8080',
     tech: ['Sockets', 'Material-UI', 'AWS S3'],
-    images: [
-        { img: deadstock, left: false, right: true },
-        { img: community, left: false, right: true },
-        { img: chatlist, left: true, right: true },
-        { img: favorites, left: true, right: true },
-        { img: friends, left: true, right: true },
-        { img: profile, left: true, right: true }
-    ],
+    images: [deadstock, community, chatlist, favorites, friends, profile],
     desc: 'A shoe collection social media SPA',
     domain: false,
     date: 'Apr 2019',
-    hosted: true,
+    hosted: false,
     lessons: "This group project was an incredible experience. I was blessed to work with Joseph Hamblin, Matias Perez, and Samantha Jeet. I learned a ton about working with others especially having to interact with different ways of coding and how to adapt my way. There were differences in styling and coding methods but we learned to trust each other.This was my first team full-stack app. I used most of the same technologies from previous projects but had a chance to further dive into Amazon S3 and Sockets. I took ownership of the image uploads and the chat functionality. I enjoyed learning Chartjs which working with the data was a little tricky."
 }
 const Chatterbox = {
@@ -126,52 +116,43 @@ const Chatterbox = {
     name: 'Chatterbox',
     url: 'thechatterbox.fun',
     tech: ['Sockets', 'Styled-Components'],
-    images: [
-        { img: groupchat, left: true, right: true },
-        { img: chatterbox, left: false, right: true },
-        { img: sidebar, left: false, right: true },
-        { img: alllist, left: true, right: true },
-        { img: editgroup, left: true, right: true },
-        { img: editprofile, left: true, right: true },
-        { img: indchat, left: true, right: true },
-        { img: loginchat, left: true, right: true },
-        { img: otherprofile, left: true, right: true },
-        { img: searchuser, left: true, right: true },
-        { img: startchat, left: true, right: true }
-    ],
+    images: [groupchat, chatterbox, sidebar, alllist, editgroup, editprofile, indchat, loginchat, otherprofile, searchuser, startchat],
     desc: 'SPA chat app to connect individuals and groups to practice real-live updates',
-    domain: true,
+    domain: false,
     date: 'Jun 2019',
-    hosted: true,
+    hosted: false,
     lessons: "Some valuable things that I learned from this project was Sockets cannot be invoked in multiple components and Styled-Components rock! There were issues with my chat functionality initially due to its unexpected behavior of establishing three separate socket instances so it was not sending the message to the proper connection."
 }
 const MiniGames = {
     id: 6,
-    name: 'MiniGames',
+    name: 'Mini Games',
     url: null,
     tech: ['React-Native', 'React-Navigation', 'Toast'],
-    images: [
-        { img: cards, left: false, right: true },
-        { img: I, left: false, right: true },
-        { img: de, left: false, right: true },
-        { img: clare, left: false, right: true },
-        { img: War, left: false, right: true },
-        { img: victory, left: false, right: true },
-        { img: war, left: false, right: true },
-        { img: blackjack, left: false, right: true },
-        { img: ttt, left: false, right: true }
-    ],
+    images: [cards, I, de, clare, War, victory, war, blackjack, ttt],
     desc: 'First React-Native app to build a mini game platform',
+    domain: false,
     date: 'July 2019',
     hosted: false,
     lessons: "Learned differences in React-Native and built own logic for game play."
 }
+const YourMove = {
+    id: 7,
+    name: 'Your Move',
+    url: null,
+    tech: ['Sass', 'Sockets', 'Toast', 'Express-Session', 'Bcryptjs', 'Redux', 'Redux-Persist', 'React-Router-Dom'],
+    images: [mainDash, subjectDash, recipe, four04, chord, guitarDesktop, guitarMobile, loginYM, registerYM, codebreaker, lobby, chat, instructions, navToggle],
+    desc: 'SPA to simplify learning and making it fun along the way.',
+    domain: false,
+    date: 'Sep 2020',
+    hosted: false,
+    lessons: "I've learned a lot about simple layouts and consistent designs. I've practiced good UX principles with this SPA such as making sure buttons are identifable, selecting contrasting colors, and keeping page layouts user-friendly. Implemented consistent page layouts with adaptable features and components. Used sockets to allow two-player game play. Independently styled pages and components to allow unique user experience and ensuring mobile responsiveness."
+}
 
-const projects = [MiniGames, Chatterbox, DeadStock, MarketIn, Helo, Houser];
+const projects = [YourMove, MiniGames, Chatterbox, DeadStock, MarketIn, Helo, Houser];
 
 export default function () {
     const [posArr, updatePosArr] = useState([]);
-
+    const [showModal, updateShow] = useState(false);
 
     useEffect(() => {
         determineArr();
@@ -189,7 +170,7 @@ export default function () {
 
     const handleLeft = (projectNum, position) => {
         let copy = [...posArr];
-        if ((position - 1) > 0) {
+        if (position > 0) {
             copy[projectNum].position = position - 1;
             updatePosArr(copy);
         } else {
@@ -197,6 +178,7 @@ export default function () {
             updatePosArr(copy);
         }
     }
+
     const handleRight = (projectNum, position) => {
         let copy = [...posArr];
         if (copy[projectNum].length > position + 1) {
@@ -207,9 +189,38 @@ export default function () {
             updatePosArr(copy);
         }
     }
+
+    const handleDotSelected = (projectNum, position) => {
+        let copy = [...posArr];
+        copy[projectNum].position = position;
+        updatePosArr(copy);
+    }
+
+    const updateModal = (project) => {
+        const modal = document.querySelector('.modal-message');
+        let techStr = '';
+        project.tech.forEach(tech => techStr += `${tech}, `);
+        const message = `<h1>${project.name}</h1><p><strong>Date:</strong> ${project.date}</p><br/><p><strong>Description:</strong> ${project.desc}</p><br/><p><strong>Lesson:</strong> ${project.lessons}</p><br/><p><strong>Tech:</strong> ${techStr}</p>`;
+        modal.innerHTML = message;
+        let top = document.querySelector('.general-projects-container').getBoundingClientRect().top;
+        window.scrollBy({
+            top,
+            left: 0,
+            behavior: 'smooth'
+        });
+        updateShow(true);
+
+        document.querySelector('header').style.display = 'none';
+    }
+
+    const closeModal = () => {
+        document.querySelector('header').style.display = 'flex';
+        updateShow(false)
+    }
+
     return (
-        <div className="projects-page flex" style={{ backgroundImage: `url(${Bako})` }}>
-            <div className="projects-inner-container set-top">
+        <div className={`projects-page flex ${showModal && 'transparent'}`} style={{ backgroundImage: `url(${Bako})` }}>
+            <div className="projects-inner-container set-top p-rel">
                 <h1>Projects:</h1>
                 <div className="general-projects-container">
                     {projects.map((project, index) => {
@@ -218,13 +229,27 @@ export default function () {
                             <div key={project.id} className="individual-project">
                                 <h4>{project.name}</h4>
                                 <div className="img-container">
-                                    <img className="project-img" src={project.images[position].img} alt={project.name + index} />
-                                    <div className="left-arrow fas fa-chevron-right" onClick={() => handleLeft(index, position)}></div>
-                                    <div className="right-arrow fas fa-chevron-right" onClick={() => handleRight(index, position)}></div>
+                                    <img className="project-img" src={project.images[position]} alt={project.name + index} />
+                                    <div className="scroll-dots-container">
+                                        {project.images.map((img, i) => {
+                                            return (
+                                                <div onClick={() => handleDotSelected(index, i)} key={project.name + '-img-' + i} className={`selected-ring ${position === i && 'selected'} pointer`}>
+                                                    <div className='scroll-dot'></div>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                    <div className="left-arrow fas fa-chevron-right pointer" onClick={() => handleLeft(index, position)}></div>
+                                    <div className="right-arrow fas fa-chevron-right pointer" onClick={() => handleRight(index, position)}></div>
+                                    <div className="open-btn" onClick={() => updateModal(project)}>Open</div>
                                 </div>
                             </div>
                         )
                     })}
+                </div>
+                <div className={`project-modal ${!showModal && 'none'}`}>
+                    <div className="close-btn p-abs" onClick={() => closeModal()}>x</div>
+                    <div className="modal-message"></div>
                 </div>
             </div>
         </div>

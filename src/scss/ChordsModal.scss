@@ -1,0 +1,89 @@
+.chords-modal {
+    background: white;
+    min-width: 250px;
+    height: 200px;
+    position: absolute;
+    box-shadow: 1px 1px 10px 2px white;
+    border-radius: 4px;
+    @media screen and (max-width: $tablet) {
+        transform: translate(0, 50%);
+    }
+    
+    .close-modal-btn {
+        right: 5px;
+        top: 5px;
+        background: none;
+        border: none;
+        outline: none;
+    }
+    .chord-diagram {
+        .chord-name {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .fret-board {
+            height: 136px;
+            width: 140px;
+            .string-1, .string-2, .string-3, .string-4, .string-5, .string-6 {
+                height: 16.67%;
+                width: 100%;
+                border-bottom: 1px solid slategrey;
+                &.string-1 {
+                    border-top: 2px solid slategrey;
+                }
+                &.string-6 {
+                    border-bottom: 2px solid slategrey;
+                    .fret-num {
+                        top: 100%;
+                        transform: translateY(5px);
+                    }
+                }
+                .outside {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 25%;
+                    height: 100%;
+                    text-align: center;
+                    left: 0;
+                    transform: translate(-100%, 0);
+                    .opened {
+                        height: 15px; 
+                        width: 15px;
+                        border: 1px solid black;
+                        border-radius: 100%;
+                    }
+                    .closed {
+                        height: 15px; 
+                        width: 15px;
+                        border: 1px solid black;
+                        background: black;
+                        border-radius: 100%;
+                    }
+                }
+                .first, .second, .third, .fourth {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-right: 1px solid slategrey;
+                    width: 25%;
+                    height: 100%;
+                    text-align: center;
+                    &.first {
+                        border-left: 2px solid slategrey;
+                    }
+                    &.fourth {
+                        border-right: 2px solid slategrey;
+                    }
+                    .filled {
+                        height: 15px; 
+                        width: 15px;
+                        border: 1px solid black;
+                        background: black;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
