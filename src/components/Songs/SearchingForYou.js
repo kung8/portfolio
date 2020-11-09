@@ -1,9 +1,13 @@
 import React from 'react';
+import song from '../../assets/Music/searching-for-you.m4a';
 
 function SearchingForYou() {
     return (
         <>
             <h4>Searching For You</h4>
+            <audio id="searching-for-you" className="audio-control" controls>
+                <source src={song} type="audio/mp3"/>
+            </audio>
             <div className="music-card">
                 <p>
                     <strong>Intro:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G/F<sup>#</sup></span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Cadd9</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">D</span>
@@ -17,7 +21,7 @@ function SearchingForYou() {
                     <span className="p-rel">I<span className="p-abs beginning">G</span></span> thought it'd work out <span className="p-rel">time<span className="p-abs beginning">G/F<sup>#</sup></span></span> and again<br /><br />
                     <span className="p-rel">Feelings<span className="p-abs beginning">Cadd9</span></span> unmeasured, <span className="p-rel">we're<span className="p-abs beginning">D</span></span> just friends<br /><br />
                     <span className="p-rel">Driven<span className="p-abs beginning">G</span></span> to learn from <span className="p-rel">all<span className="p-abs beginning">G/F<sup>#</sup></span></span> my mistakes<br /><br />
-                    <span className="p-rel">Countless<span className="p-abs beginning">Cadd9</span></span> times I <span className="p-rel">want<span className="p-abs beginning">D</span></span> to say
+                    <span className="p-rel">Countless<span className="p-abs beginning">Cadd9</span></span> times I just <span className="p-rel">wanna<span className="p-abs beginning">D</span></span> say
                 </p>
                 <p>
                     <strong>Chorus:</strong><br /><br />

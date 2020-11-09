@@ -1,9 +1,13 @@
 import React from 'react';
+import song from '../../assets/Music/fragile-heart.m4a';
 
 function FragileHeart() {
     return (
         <>
             <h4>Fragile Heart</h4>
+            <audio id="fragile-heart" className="audio-control" controls>
+                <source src={song} type="audio/mp3"/>
+            </audio>
             <div className="music-card">
                 <p>
                     <strong>Verse 1:</strong><br /><br />

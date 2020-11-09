@@ -1,9 +1,13 @@
 import React from 'react';
+import song from '../../assets/Music/prodigal-son.m4a';
 
 function ProdigalSon() {
     return (
         <>
             <h4>Prodigal Son</h4>
+            <audio id="prodigal-son" className="audio-control" controls>
+                <source src={song} type="audio/mp3"/>
+            </audio>
             <div className="music-card">
                 <p>
                     <strong>Intro:</strong> <span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">F</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Am</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>
@@ -57,7 +61,7 @@ function ProdigalSon() {
                 <p>
                     <strong>Chorus 2:</strong><br /><br />
                     <span className="p-rel">Ya<span className="p-abs beginning">C</span></span> know, <span className="p-rel">I<span className="p-abs beginning">Am</span></span> care<br /><br />
-                    No <span className="p-rel">need<span className="p-abs beginning">F</span></span> to explain yourself to <span className="p-rel">me<span className="p-abs beginning">G</span></span><br /><br />
+                    You <span className="p-rel">don't<span className="p-abs beginning">F</span></span> have to explain yourself to <span className="p-rel">me<span className="p-abs beginning">G</span></span><br /><br />
                     <span className="p-rel">I'm<span className="p-abs beginning">C</span></span> just glad you're <span className="p-rel">back<span className="p-abs beginning">Am</span></span><br /><br />
                     Let the <span className="p-rel">past<span className="p-abs beginning">F</span></span> be past and <span className="p-rel">free<span className="p-abs beginning">G</span></span><br /><br />
                     <span className="p-rel">You<span className="p-abs beginning">C</span></span> know that <span className="p-rel">I<span className="p-abs beginning">F</span></span> love you<br /><br />

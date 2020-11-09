@@ -1,9 +1,13 @@
 import React from 'react';
+import song from '../../assets/Music/strong.m4a';
 
 function Strong() {
     return (
         <>
             <h4>Strong</h4>
+            <audio id="strong" className="audio-control" controls>
+                <source src={song} type="audio/mp3"/>
+            </audio>
             <div className="music-card">
                 <p>
                     <strong>Intro:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Am</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">D7</span>

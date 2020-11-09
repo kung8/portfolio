@@ -30,11 +30,26 @@ function Music() {
                 updateModalIsOpen(true);
             });
         });
+
+        document.querySelectorAll('.audio-control').forEach(audio => {
+            let id = audio.getAttribute('id');
+            audio.addEventListener('play', () => handlePlayAndPause(id))
+        });
     }
 
     const closeModal = () => {
         updateSelectedChord(null);
         updateModalIsOpen(false);
+    }
+
+    const handlePlayAndPause = (selectedAudio) => {
+        document.querySelectorAll('.audio-control').forEach(audio => {
+            if (selectedAudio === audio.getAttribute('id')) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
     }
 
     return (
@@ -50,7 +65,7 @@ function Music() {
                     <Strong />
                     <FragileHeart />
                 </div>
-                {modalIsOpen && <ChordModal selectedChord={selectedChord} closeModal={closeModal}/>}
+                {modalIsOpen && <ChordModal selectedChord={selectedChord} closeModal={closeModal} />}
             </div>
         </div>
     )
