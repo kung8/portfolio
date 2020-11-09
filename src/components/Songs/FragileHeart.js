@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+// import axios from 'axios';
 import song from '../../assets/Music/fragile-heart.m4a';
 
 function FragileHeart() {
+    // const id = 'fragileHeart';
+    // const [song, updateSong] = useState(null);
+
+    // useEffect(() => {
+    //     getSong();
+    // }, []);
+
+    // const getSong = async() => {
+    //     let response = await axios.get('/api/song/' + id);
+    //     console.log(response)
+    //     updateSong(response.data);
+    // }
     return (
         <>
             <h4>Fragile Heart</h4>
