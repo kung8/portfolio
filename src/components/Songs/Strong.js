@@ -1,13 +1,13 @@
 import React from 'react';
-// import song from '../../assets/Music/strong.m4a';
 
 function Strong() {
+    const song = 'https://docs.google.com/uc?id=1u_3_tW1anTRgBGOABO9RhTzwSDGJZfOY';
     return (
         <>
             <h4>Strong</h4>
-            {/* <audio id="strong" className="audio-control" controls>
+            <audio id="strong" className="audio-control" controls>
                 <source src={song} type="audio/mp3"/>
-            </audio> */}
+            </audio>
             <div className="music-card">
                 <p>
                     <strong>Intro:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Am</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">D7</span>

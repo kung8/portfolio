@@ -15,6 +15,7 @@ function Music() {
 
     useEffect(() => {
         addModalClick();
+        // eslint-disable-next-line
     }, []);
 
     const addModalClick = () => {

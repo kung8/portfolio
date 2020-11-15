@@ -1,13 +1,13 @@
 import React from 'react';
-// import song from '../../assets/Music/the-game.m4a';
 
 function TheGame() {
+    const song = 'https://docs.google.com/uc?id=1uquwDj3iJCx3sLXcYR_iXZ4ddWajNETl';
     return (
         <>
             <h4>The Game</h4>
-            {/* <audio id="the-game" className="audio-control" controls>
+            <audio id="the-game" className="audio-control" controls>
                 <source src={song} type="audio/mp3"/>
-            </audio> */}
+            </audio>
             <div className="music-card">
                 <p>
                     <strong>Intro:</strong> <span className="ind-chord">Em</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G/F<sup>#</sup></span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Em</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">D</span>

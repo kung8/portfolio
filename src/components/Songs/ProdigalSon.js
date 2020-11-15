@@ -1,13 +1,13 @@
 import React from 'react';
-// import song from '../../assets/Music/prodigal-son.m4a';
 
 function ProdigalSon() {
+    const song = 'https://docs.google.com/uc?id=1DpeIRnIWUBgUl6mtgDR94xyibSptS6tH';
     return (
         <>
             <h4>Prodigal Son</h4>
-            {/* <audio id="prodigal-son" className="audio-control" controls>
+            <audio id="prodigal-son" className="audio-control" controls>
                 <source src={song} type="audio/mp3"/>
-            </audio> */}
+            </audio>
             <div className="music-card">
                 <p>
                     <strong>Intro:</strong> <span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">F</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Am</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>
