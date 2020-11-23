@@ -28,6 +28,11 @@ function Contact() {
                 return;
             }).catch(err => {
                 console.log(err);
+                window.location.href = 'mailto:kevthedev8@gmail.com?body=' + message + '&subject="Request for ' + messageDropdown;
+                updateName('');
+                updateEmail('');
+                updateMessage('');
+                toast('Sorry we had trouble sending your request directly. Please feel free to email me instead! Thank you for your patience as I work through this bug.', { className: 'salmon' });
             });
         }
 
