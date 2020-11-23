@@ -25,15 +25,15 @@ function Contact() {
         if (name !== null && email !== null && email.includes('@') && email.includes('.') && message !== null && name !== '' && email !== '' && message !== '') {
             try {
                 updateSendingStatus(true);
-                let sendingInt = setInterval(() => {
+                let sendingInt = setInterval(async () => {
                     if (sendingStatus) {
                         let num = numOfDots;
                         if (num < 2) {
                             num += 1;
-                            updateNumOfDots(num);
+                            await updateNumOfDots(num);
                         } else {
                             num = 0;
-                            updateNumOfDots(num);
+                            await updateNumOfDots(num);
                         }
                     } else {
                         clearInterval(sendingInt);
@@ -49,7 +49,9 @@ function Contact() {
             } catch (err) {
                 updateSendingStatus(false);
                 console.log(err);
-                window.location.href = 'mailto:kevthedev8@gmail.com?body=' + message + '\n' + '\n' + name + '\n' + email + '&subject=Request for ' + messageDropdown;
+                let body = message + ' \r\n -' + name + ' \n (' + email + ')';
+                let encodedBody = encodeURIComponent(body)
+                window.location.href = 'mailto:kevthedev8@gmail.com?body=' + encodedBody + '&subject=Request for ' + messageDropdown;
                 updateName('');
                 updateEmail('');
                 updateMessage('');
