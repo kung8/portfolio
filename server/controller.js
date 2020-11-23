@@ -6,7 +6,7 @@ module.exports = {
         const { name, message, email, type } = req.body;
 
         try {
-            let transporter = nodemailer.createTransport({
+            let transporter = await nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
                     user: EMAIL,

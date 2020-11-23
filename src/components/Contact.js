@@ -23,22 +23,22 @@ function Contact() {
     const send = async (e) => {
         e.preventDefault();
         if (name !== null && email !== null && email.includes('@') && email.includes('.') && message !== null && name !== '' && email !== '' && message !== '') {
-            updateSendingStatus(true);
-            let sendingInt = setInterval(() => {
-                if (sendingStatus) {
-                    let num = numOfDots;
-                    if (num < 2) {
-                        num += 1;
-                        updateNumOfDots(num);
-                    } else {
-                        num = 0;
-                        updateNumOfDots(num);
-                    }
-                } else {
-                    clearInterval(sendingInt);
-                }
-            }, 200);
             try {
+                updateSendingStatus(true);
+                let sendingInt = setInterval(() => {
+                    if (sendingStatus) {
+                        let num = numOfDots;
+                        if (num < 2) {
+                            num += 1;
+                            updateNumOfDots(num);
+                        } else {
+                            num = 0;
+                            updateNumOfDots(num);
+                        }
+                    } else {
+                        clearInterval(sendingInt);
+                    }
+                }, 200);
                 await axios.post('/api/message', { name, email, message, type: messageDropdown });
                 updateSendingStatus(false);
                 updateName('');
@@ -49,7 +49,7 @@ function Contact() {
             } catch (err) {
                 updateSendingStatus(false);
                 console.log(err);
-                window.location.href = 'mailto:kevthedev8@gmail.com?body=' + message + '<br/><br/>' + name + '&subject="Request for ' + messageDropdown;
+                window.location.href = 'mailto:kevthedev8@gmail.com?body=' + message + '\n' + '\n' + name + '\n' + email + '&subject=Request for ' + messageDropdown;
                 updateName('');
                 updateEmail('');
                 updateMessage('');
