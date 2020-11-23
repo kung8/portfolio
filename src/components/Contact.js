@@ -38,8 +38,8 @@ function Contact() {
                     clearInterval(sendingInt);
                 }
             }, 200);
-            await axios.post('/api/message', { name, email, message, type: messageDropdown });
             try {
+                await axios.post('/api/message', { name, email, message, type: messageDropdown });
                 updateSendingStatus(false);
                 updateName('');
                 updateEmail('');
