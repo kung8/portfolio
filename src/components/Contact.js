@@ -42,7 +42,6 @@ function Contact() {
                 updateEmail('');
                 updateMessage('');
                 toast('Thank you for your email! I\'ll get back to you as soon as I can. Please have a great day!', { className: 'lime' });
-                return;
             } catch (err) {
                 updateSendingStatus(false);
                 clearInterval(sendingInt);
@@ -52,8 +51,8 @@ function Contact() {
                 updateEmail('');
                 updateMessage('');
                 toast('Sorry we had trouble sending your request directly. Please feel free to email me instead! Thank you for your patience as I work through this bug.', { className: 'salmon' });
-                return;
             }
+            clearInterval(sendingInt);
         }
 
         if (name === null || name === '') {
