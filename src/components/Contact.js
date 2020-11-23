@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import bako from '../assets/bako.jpg';
 import axios from 'axios';
+import { ToastContainer, toast, Flip } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const id = '1_MzAF6uXKsBsqrPZOjxg44XXDQ08oS7M';
 const open = `https://drive.google.com/file/d/${id}/view?usp=sharing`;
@@ -22,6 +24,7 @@ function Contact() {
                 updateName('');
                 updateEmail('');
                 updateMessage('');
+                toast('Thank you for your email! I\'ll get back to you as soon as I can. Please have a great day!', { className: 'lime' });
                 return;
             }).catch(err => {
                 console.log(err);
@@ -77,6 +80,15 @@ function Contact() {
                     <a className="resume-link downloadable-link" href={download}>Download Resume</a>
                 </div>
             </div>
+            <ToastContainer
+                position="bottom-center"
+                hideProgressBar={true}
+                closeOnClick={true}
+                autoClose={8000}
+                transition={Flip}
+                draggable={true}
+                draggablePercent={80}
+            />
         </div>
     )
 }
