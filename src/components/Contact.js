@@ -16,17 +16,35 @@ function Contact() {
     const [showNameNotice, updateNameNotice] = useState(false);
     const [showEmailNotice, updateEmailNotice] = useState(false);
     const emailErrors = ['Email field is required.', 'Please enter a valid email.'];
+    const [sendingStatus, updateSendingStatus] = useState(false);
+    const [numOfDots, updateNumOfDots] = useState(0);
+    const dotsArr = ['.', '..', '...'];
 
     const send = (e) => {
         e.preventDefault();
         if (name !== null && email !== null && email.includes('@') && email.includes('.') && message !== null && name !== '' && email !== '' && message !== '') {
+            updateSendingStatus(true);
+            let sendingInt = setInterval(() => {
+                let num = numOfDots;
+                if (num < 2) {
+                    num += 1;
+                    updateNumOfDots(num)
+                } else {
+                    num = 0;
+                    updateNumOfDots(num)
+                }
+            }, 250)
             axios.post('/api/message', { name, email, message, type: messageDropdown }).then(() => {
+                updateSendingStatus(false);
+                clearInterval(sendingInt);
                 updateName('');
                 updateEmail('');
                 updateMessage('');
                 toast('Thank you for your email! I\'ll get back to you as soon as I can. Please have a great day!', { className: 'lime' });
                 return;
             }).catch(err => {
+                updateSendingStatus(false);
+                clearInterval(sendingInt);
                 console.log(err);
                 window.location.href = 'mailto:kevthedev8@gmail.com?body=' + message + '&subject="Request for ' + messageDropdown;
                 updateName('');
@@ -77,7 +95,7 @@ function Contact() {
                             <div className={`${!showEmailNotice && 'none'} email-notice`}></div>
                         </div>
                         <textarea name="message" value={message} onChange={(e) => updateMessage(e.target.value)}></textarea>
-                        <button className="form-link" onClick={e => send(e)}>Send</button>
+                        <button className="form-link" onClick={e => send(e)}>Send{sendingStatus && dotsArr[numOfDots]}</button>
                     </form>
                 </div>
                 <div className="resume-links-container">
