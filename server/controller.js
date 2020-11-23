@@ -1,18 +1,12 @@
 const nodemailer = require('nodemailer');
 const { EMAIL, PASSWORD } = process.env;
-// const fragileHeart = '../assets/fragile-heart.m4a';
-
-// const songs = {
-//     fragileHeart, 
-// }
-
 
 module.exports = {
     message: async (req, res) => {
         const { name, message, email, type } = req.body;
 
         try {
-            let transporter = nodemailer.createTransport({
+            let transporter = await nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
                     user: EMAIL,
@@ -40,9 +34,5 @@ module.exports = {
             console.log(err);
             res.sendStatus(500);
         }
-    },
-    // getSong: async (req, res) => {
-    //     console.log(req.params, songs[req.params.name]);
-    //     res.send(songs[req.params.name]);
-    // }
+    }
 }
