@@ -20,7 +20,7 @@ function Contact() {
     const [numOfDots, updateNumOfDots] = useState(0);
     const dotsArr = ['.', '..', '...'];
 
-    const send = (e) => {
+    const send = async (e) => {
         e.preventDefault();
         if (name !== null && email !== null && email.includes('@') && email.includes('.') && message !== null && name !== '' && email !== '' && message !== '') {
             updateSendingStatus(true);
@@ -28,13 +28,14 @@ function Contact() {
                 let num = numOfDots;
                 if (num < 2) {
                     num += 1;
-                    updateNumOfDots(num)
+                    updateNumOfDots(num);
                 } else {
                     num = 0;
-                    updateNumOfDots(num)
+                    updateNumOfDots(num);
                 }
-            }, 250)
-            axios.post('/api/message', { name, email, message, type: messageDropdown }).then(() => {
+            }, 200);
+            await axios.post('/api/message', { name, email, message, type: messageDropdown });
+            try {
                 updateSendingStatus(false);
                 clearInterval(sendingInt);
                 updateName('');
@@ -42,16 +43,17 @@ function Contact() {
                 updateMessage('');
                 toast('Thank you for your email! I\'ll get back to you as soon as I can. Please have a great day!', { className: 'lime' });
                 return;
-            }).catch(err => {
+            } catch (err) {
                 updateSendingStatus(false);
                 clearInterval(sendingInt);
                 console.log(err);
-                window.location.href = 'mailto:kevthedev8@gmail.com?body=' + message + '&subject="Request for ' + messageDropdown;
+                window.location.href = 'mailto:kevthedev8@gmail.com?body=' + message + '<br/><br/>' + name + '&subject="Request for ' + messageDropdown;
                 updateName('');
                 updateEmail('');
                 updateMessage('');
                 toast('Sorry we had trouble sending your request directly. Please feel free to email me instead! Thank you for your patience as I work through this bug.', { className: 'salmon' });
-            });
+                return;
+            }
         }
 
         if (name === null || name === '') {
