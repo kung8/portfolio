@@ -1,15 +1,18 @@
 import React from 'react';
 
 function SearchingForYou() {
-    const song = 'https://docs.google.com/uc?id=1mDLkC2hj6FgNANtL9-dwvH12EzkE-5nx';
+    const id = '1mDLkC2hj6FgNANtL9-dwvH12EzkE-5nx';
+    const song = 'https://docs.google.com/uc?id=' + id;
+    const download = 'https://drive.google.com/uc?export=download&id=' + id;
     return (
         <>
             <h4>Searching For You</h4>
             <audio id="searching-for-you" className="audio-control" controls>
+                <source src={song} type="audio/mp4" />
                 <source src={song} type="audio/mp3" />
                 <source src={song} type="audio/mpeg" />
                 <source src={song} type="audio/m4a" />
-                <p>Your browser does not support HTML5 audio, but you can download my music at <a href={song}>here</a></p>
+                <p>Your browser does not support HTML5 audio, but you can download my music at <a href={download}>here</a></p>
             </audio>
             <div className="music-card">
                 <p>

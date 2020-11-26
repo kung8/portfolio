@@ -1,15 +1,18 @@
 import React from 'react';
 
 function KeepOnKeepingOn() {
-    const song = 'https://docs.google.com/uc?id=1htoIJiGHzon5qEqNUTBhl9URCQDXpk5u';
+    const id = '1htoIJiGHzon5qEqNUTBhl9URCQDXpk5u';
+    const song = 'https://docs.google.com/uc?id=' + id;
+    const download = 'https://drive.google.com/uc?export=download&id=' + id;
     return (
         <>
             <h4>Keep On Keeping On</h4>
             <audio id="keep-on-keeping-on" className="audio-control" controls>
+                <source src={song} type="audio/mp4" />
                 <source src={song} type="audio/mp3" />
                 <source src={song} type="audio/mpeg" />
                 <source src={song} type="audio/m4a" />
-                <p>Your browser does not support HTML5 audio, but you can download my music at <a href={song}>here</a></p>
+                <p>Your browser does not support HTML5 audio, but you can download my music at <a href={download}>here</a></p>
             </audio>
             <div className="music-card">
                 <p>

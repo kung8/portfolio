@@ -1,15 +1,18 @@
 import React from 'react';
 
 function FragileHeart() {
-    const song = 'https://docs.google.com/uc?id=1piobuUmoL6PS2OVEf26jkSz56lbQziR3';
+    const id = '1piobuUmoL6PS2OVEf26jkSz56lbQziR3';
+    const song = 'https://docs.google.com/uc?id=' + id;
+    const download = 'https://drive.google.com/uc?export=download&id=' + id;
     return (
         <>
             <h4>Fragile Heart</h4>
             <audio id="fragile-heart" className="audio-control" controls>
+                <source src={song} type="audio/mp4" />
                 <source src={song} type="audio/mp3" />
                 <source src={song} type="audio/mpeg" />
                 <source src={song} type="audio/m4a" />
-                <p>Your browser does not support HTML5 audio, but you can download my music at <a href={song}>here</a></p>
+                <p>Your browser does not support HTML5 audio, but you can download my music at <a href={download}>here</a></p>
             </audio>
             <div className="music-card">
                 <p>

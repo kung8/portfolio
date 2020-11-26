@@ -1,15 +1,18 @@
 import React from 'react';
 
 function HeroToMe() {
-    const song = 'https://docs.google.com/uc?id=1iWKzcqV8OIpJPvgG716bt9pJjvsJtmAU';
+    const id = '1iWKzcqV8OIpJPvgG716bt9pJjvsJtmAU';
+    const song = 'https://docs.google.com/uc?id=' + id;
+    const download = 'https://drive.google.com/uc?export=download&id=' + id;
     return (
         <>
             <h4>Hero To Me</h4>
             <audio id="hero-to-me" className="audio-control" controls>
+                <source src={song} type="audio/mp4" />
                 <source src={song} type="audio/mp3" />
                 <source src={song} type="audio/mpeg" />
                 <source src={song} type="audio/m4a" />
-                <p>Your browser does not support HTML5 audio, but you can download my music at <a href={song}>here</a></p>
+                <p>Your browser does not support HTML5 audio, but you can download my music at <a href={download}>here</a></p>
             </audio>
             <div className="music-card">
                 <p>
