@@ -7,6 +7,7 @@ function ProdigalSon() {
             <h4>Prodigal Son</h4>
             <audio id="prodigal-son" className="audio-control" controls>
                 <source src={song} type="audio/mp3"/>
+                <source src={song} type="audio/m4a"/>
             </audio>
             <div className="music-card">
                 <p>

@@ -7,6 +7,7 @@ function HeroToMe() {
             <h4>Hero To Me</h4>
             <audio id="hero-to-me" className="audio-control" controls>
                 <source src={song} type="audio/mp3"/>
+                <source src={song} type="audio/m4a"/>
             </audio>
             <div className="music-card">
                 <p>

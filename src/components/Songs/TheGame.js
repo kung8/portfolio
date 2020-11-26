@@ -7,6 +7,7 @@ function TheGame() {
             <h4>The Game</h4>
             <audio id="the-game" className="audio-control" controls>
                 <source src={song} type="audio/mp3"/>
+                <source src={song} type="audio/m4a"/>
             </audio>
             <div className="music-card">
                 <p>

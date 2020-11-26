@@ -7,6 +7,7 @@ function KeepOnKeepingOn() {
             <h4>Keep On Keeping On</h4>
             <audio id="keep-on-keeping-on" className="audio-control" controls>
                 <source src={song} type="audio/mp3"/>
+                <source src={song} type="audio/m4a"/>
             </audio>
             <div className="music-card">
                 <p>

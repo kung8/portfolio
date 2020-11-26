@@ -7,6 +7,7 @@ function Strong() {
             <h4>Strong</h4>
             <audio id="strong" className="audio-control" controls>
                 <source src={song} type="audio/mp3"/>
+                <source src={song} type="audio/m4a"/>s
             </audio>
             <div className="music-card">
                 <p>
