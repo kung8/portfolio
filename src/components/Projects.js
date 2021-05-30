@@ -73,7 +73,7 @@ import menuCollapsed from '../assets/FatBoyCatering/menu-page-collapsed.png';
 import menuExpanded from '../assets/FatBoyCatering/menu-page-expanded.png';
 import status from '../assets/FatBoyCatering/status-page.png';
 import statusFiltered from '../assets/FatBoyCatering/status-page-filtered.png';
-// import statusNothingToDisplay from '../assets/FatBoyCatering/status-page-nothing-to-display.png';
+import statusNothingToDisplay from '../assets/FatBoyCatering/status-page-nothing-to-display.png';
 
 const Houser = {
     id: 1,
@@ -164,9 +164,7 @@ const FatBoyCatering = {
     name: 'Fat Boy Catering',
     url: 'https://aladonerecipes.com',
     tech: ['Sass', 'Sockets', 'Toast', 'Bcryptjs', 'React-Router-Dom', 'Lodash'],
-    images: [adminBottom, adminMenu, adminMenuNoSelection, cart, editMenuItem, menuItem, menuCollapsed, menuExpanded, status, statusFiltered, 
-        // statusNothingToDisplay
-    ],
+    images: [adminBottom, adminMenu, adminMenuNoSelection, cart, editMenuItem, menuItem, menuCollapsed, menuExpanded, status, statusFiltered, statusNothingToDisplay],
     desc: 'SPA for client to manage menu options, allow his customers to place orders, and track and send messages in real time.',
     domain: true,
     date: 'May 2021',
