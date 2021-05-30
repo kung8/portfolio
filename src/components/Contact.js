@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import bako from '../assets/bako.jpg';
+import bako from '../Assets/bako.jpg';
 import axios from 'axios';
 import { ToastContainer, toast, Flip } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

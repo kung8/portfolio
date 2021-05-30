@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import frisbee from '../assets/captain-america.png';
-import guitar from '../assets/guitar.png';
-import code from '../assets/programing.png';
-import resume from '../assets/resume.png';
-import bake from '../assets/baking.png';
-import omelette from '../assets/omelette.png';
-import bio from '../assets/biology.png';
-import chem from '../assets/chemical.png';
-import fried from '../assets/fried.png';
-import mix from '../assets/mixer.png';
-import math from '../assets/maths.png';
-import reading from '../assets/reading.png';
-import bako from '../assets/bako.jpg';
+import frisbee from '../Assets/captain-america.png';
+import guitar from '../Assets/guitar.png';
+import code from '../Assets/programing.png';
+import resume from '../Assets/resume.png';
+import bake from '../Assets/baking.png';
+import omelette from '../Assets/omelette.png';
+import bio from '../Assets/biology.png';
+import chem from '../Assets/chemical.png';
+import fried from '../Assets/fried.png';
+import mix from '../Assets/mixer.png';
+import math from '../Assets/maths.png';
+import reading from '../Assets/reading.png';
+import bako from '../Assets/bako.jpg';
 
 const hp = [
     { src: bio, label: 'biology', light: true },

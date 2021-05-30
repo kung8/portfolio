@@ -1,5 +1,5 @@
 import React from 'react';
-import bako from '../assets/bako.jpg';
+import bako from '../Assets/bako.jpg';
 const id = '1bDCHy2UFCUI_oy3_tSp1OwubXwv7srba';
 const embed = `https://drive.google.com/file/d/${id}/preview`;
 const open = `https://drive.google.com/file/d/${id}/view?usp=sharing`;

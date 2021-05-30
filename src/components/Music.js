@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import bako from '../assets/bako.jpg';
+import bako from '../Assets/bako.jpg';
 import KeepOnKeepingOn from './Songs/KeepOnKeepingOn';
 import HeroToMe from './Songs/HeroToMe';
 import TheGame from './Songs/TheGame';
