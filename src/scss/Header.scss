@@ -2,13 +2,10 @@ header {
     height: 100px;
     width: 100vw;
     position: fixed;
-    z-index: 3;
-    @media screen and (max-width: $tablet) {
-        height: 75px;
-    }
-    @media screen and (max-width: $mobile) {
-        position: absolute;
-        top: 0;
+    z-index: 4;
+    top: 0;
+    &.slateblue {
+        background-color: slateblue;
     }
     .logo {
         color: white;
@@ -44,7 +41,7 @@ header {
             }
             &.selected-page {
                 text-decoration: underline;
-                text-underline-position: under;
+                text-underline-offset: 3.5px;
             }
             &.darker-font {
                 color: black;
@@ -91,7 +88,7 @@ header {
         background: white;
         top: 0;
         right: 0;
-        margin-top: 75px;
+        margin-top: 100px;
         text-align: center;    
         justify-content: space-around;
         transition: 0.2s all ease-in;

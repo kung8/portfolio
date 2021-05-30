@@ -63,6 +63,18 @@ import recipe from '../assets/YourMove/recipe.png';
 import registerYM from '../assets/YourMove/register.png';
 import subjectDash from '../assets/YourMove/subject-dashboard.png';
 
+import adminBottom from '../assets/FatBoyCatering/admin-page-bottom.png';
+import adminMenu from '../assets/FatBoyCatering/admin-page-menu-item-edit.png';
+import adminMenuNoSelection from '../assets/FatBoyCatering/admin-page-menu-item-edit-no-selection.png';
+import cart from '../assets/FatBoyCatering/cart-page.png';
+import editMenuItem from '../assets/FatBoyCatering/edit-menu-item-page.png';
+import menuItem from '../assets/FatBoyCatering/menu-item-page.png';
+import menuCollapsed from '../assets/FatBoyCatering/menu-page-collapsed.png';
+import menuExpanded from '../assets/FatBoyCatering/menu-page-expanded.png';
+import status from '../assets/FatBoyCatering/status-page.png';
+import statusFiltered from '../assets/FatBoyCatering/status-page-filtered.png';
+import statusNothingToDisplay from '../assets/FatBoyCatering/status-page-nothing-to-display.png';
+
 const Houser = {
     id: 1,
     name: 'Houser',
@@ -90,7 +102,7 @@ const Helo = {
 const MarketIn = {
     id: 3,
     name: 'MarketIn',
-    url: 'marketin.dev',
+    url: null,
     tech: ['Sockets', 'Stripe', '3rd Party API', 'Amazon S3', 'Dropzone', 'Express-Session', 'Bcryptjs', 'Redux', 'Redux-Persist', 'React-Router-Dom'],
     images: [marketin, chats, contacts, search, services],
     desc: 'Professional portfolio SPA combined with an ecommerce twist',
@@ -102,7 +114,7 @@ const MarketIn = {
 const DeadStock = {
     id: 4,
     name: 'DeadStock',
-    url: '159.65.98.93:8080',
+    url: null,
     tech: ['Sockets', 'Material-UI', 'AWS S3'],
     images: [deadstock, community, chatlist, favorites, friends, profile],
     desc: 'A shoe collection social media SPA',
@@ -114,7 +126,7 @@ const DeadStock = {
 const Chatterbox = {
     id: 5,
     name: 'Chatterbox',
-    url: 'thechatterbox.fun',
+    url: null,
     tech: ['Sockets', 'Styled-Components'],
     images: [groupchat, chatterbox, sidebar, alllist, editgroup, editprofile, indchat, loginchat, otherprofile, searchuser, startchat],
     desc: 'SPA chat app to connect individuals and groups to practice real-live updates',
@@ -138,7 +150,7 @@ const MiniGames = {
 const YourMove = {
     id: 7,
     name: 'Your Move',
-    url: null,
+    url: 'https://yourmove.dev',
     tech: ['Sass', 'Sockets', 'Toast', 'Express-Session', 'Bcryptjs', 'Redux', 'Redux-Persist', 'React-Router-Dom'],
     images: [mainDash, subjectDash, recipe, four04, chord, guitarDesktop, guitarMobile, loginYM, registerYM, codebreaker, lobby, chat, instructions, navToggle],
     desc: 'SPA to simplify learning and making it fun along the way.',
@@ -147,8 +159,21 @@ const YourMove = {
     hosted: false,
     lessons: "I've learned a lot about simple layouts and consistent designs. I've practiced good UX principles with this SPA such as making sure buttons are identifable, selecting contrasting colors, and keeping page layouts user-friendly. Implemented consistent page layouts with adaptable features and components. Used sockets to allow two-player game play. Independently styled pages and components to allow unique user experience and ensuring mobile responsiveness."
 }
+const FatBoyCatering = {
+    id: 8,
+    name: 'Fat Boy Catering',
+    url: 'https://aladonerecipes.com',
+    tech: ['Sass', 'Sockets', 'Toast', 'Bcryptjs', 'React-Router-Dom', 'Lodash'],
+    images: [adminBottom, adminMenu, adminMenuNoSelection, cart, editMenuItem, menuItem, menuCollapsed, menuExpanded, status, statusFiltered, statusNothingToDisplay],
+    desc: 'SPA for client to manage menu options, allow his customers to place orders, and track and send messages in real time.',
+    domain: true,
+    date: 'May 2021',
+    hosted: true,
+    lessons: "This app builds on basic socket connections, React components, personal sass styling and animations, and engineered with an increased focus on admin and non-admin UX/UI. I got to practice organizing data from the backend and formatted it to display correctly in the frontend. This app does not utilize Redux because I didn't think it needed a global state management, but ended up accessing sessionStorage and cookies (which is what redux is doing under the hood)."
+}
 
-const projects = [YourMove, MiniGames, Chatterbox, DeadStock, MarketIn, Helo, Houser];
+
+const projects = [FatBoyCatering, YourMove, MiniGames, Chatterbox, DeadStock, MarketIn, Helo, Houser];
 
 export default function () {
     const [posArr, updatePosArr] = useState([]);
@@ -203,8 +228,10 @@ export default function () {
         const message = `<h1>${project.name}</h1><p><strong>Date:</strong> ${project.date}</p><br/><p><strong>Description:</strong> ${project.desc}</p><br/><p><strong>Lesson:</strong> ${project.lessons}</p><br/><p><strong>Tech:</strong> ${techStr}</p>`;
         modal.innerHTML = message;
         let top = document.querySelector('.general-projects-container').getBoundingClientRect().top;
+        let screenHeight = window.innerHeight;
+        console.log(top - (screenHeight * 0.5));
         window.scrollBy({
-            top,
+            top: top - (screenHeight * 0.16),
             left: 0,
             behavior: 'smooth'
         });
@@ -219,8 +246,8 @@ export default function () {
     }
 
     return (
-        <div className={`projects-page flex ${showModal && 'transparent'}`} style={{ backgroundImage: `url(${Bako})` }}>
-            <div className="projects-inner-container set-top p-rel">
+        <div className="projects-page flex" style={{ backgroundImage: `url(${Bako})` }}>
+            <div className="projects-inner-container set-top p-rel" style={{ display: showModal && 'none' }}>
                 <h1>Projects:</h1>
                 <div className="general-projects-container">
                     {projects.map((project, index) => {
@@ -247,10 +274,13 @@ export default function () {
                         )
                     })}
                 </div>
-                <div className={`project-modal ${!showModal && 'none'}`}>
-                    <div className="close-btn p-abs" onClick={() => closeModal()}>x</div>
-                    <div className="modal-message"></div>
-                </div>
+            </div>
+            {showModal &&
+                <div className="modal-wrapper"></div>
+            }
+            <div className={`project-modal ${!showModal && 'none'}`}>
+                <div className="close-btn p-abs" onClick={() => closeModal()}>x</div>
+                <div className="modal-message"></div>
             </div>
         </div>
     )

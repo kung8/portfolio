@@ -38,6 +38,9 @@
         @media screen and (max-width: $extra-small){
             margin-bottom: 35px;
         }
+        @media screen and (min-height: 1000px) {
+            height: 800px;
+        }
         h1 {
             color: white;
             font-size: 56px;
