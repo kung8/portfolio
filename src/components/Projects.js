@@ -63,17 +63,17 @@ import recipe from '../assets/YourMove/recipe.png';
 import registerYM from '../assets/YourMove/register.png';
 import subjectDash from '../assets/YourMove/subject-dashboard.png';
 
-import adminBottom from '../assets/FatBoyCatering/admin-page-bottom.png';
-import adminMenu from '../assets/FatBoyCatering/admin-page-menu-item-edit.png';
-import adminMenuNoSelection from '../assets/FatBoyCatering/admin-page-menu-item-edit-no-selection.png';
-import cart from '../assets/FatBoyCatering/cart-page.png';
-import editMenuItem from '../assets/FatBoyCatering/edit-menu-item-page.png';
-import menuItem from '../assets/FatBoyCatering/menu-item-page.png';
-import menuCollapsed from '../assets/FatBoyCatering/menu-page-collapsed.png';
-import menuExpanded from '../assets/FatBoyCatering/menu-page-expanded.png';
-import status from '../assets/FatBoyCatering/status-page.png';
-import statusFiltered from '../assets/FatBoyCatering/status-page-filtered.png';
-import statusNothingToDisplay from '../assets/FatBoyCatering/status-page-nothing-to-display.png';
+// import adminBottom from '../assets/FatBoyCatering/admin-page-bottom.png';
+// import adminMenu from '../assets/FatBoyCatering/admin-page-menu-item-edit.png';
+// import adminMenuNoSelection from '../assets/FatBoyCatering/admin-page-menu-item-edit-no-selection.png';
+// import cart from '../assets/FatBoyCatering/cart-page.png';
+// import editMenuItem from '../assets/FatBoyCatering/edit-menu-item-page.png';
+// import menuItem from '../assets/FatBoyCatering/menu-item-page.png';
+// import menuCollapsed from '../assets/FatBoyCatering/menu-page-collapsed.png';
+// import menuExpanded from '../assets/FatBoyCatering/menu-page-expanded.png';
+// import status from '../assets/FatBoyCatering/status-page.png';
+// import statusFiltered from '../assets/FatBoyCatering/status-page-filtered.png';
+// import statusNothingToDisplay from '../assets/FatBoyCatering/status-page-nothing-to-display.png';
 
 const Houser = {
     id: 1,
@@ -164,7 +164,8 @@ const FatBoyCatering = {
     name: 'Fat Boy Catering',
     url: 'https://aladonerecipes.com',
     tech: ['Sass', 'Sockets', 'Toast', 'Bcryptjs', 'React-Router-Dom', 'Lodash'],
-    images: [adminBottom, adminMenu, adminMenuNoSelection, cart, editMenuItem, menuItem, menuCollapsed, menuExpanded, status, statusFiltered, statusNothingToDisplay],
+    // images: [adminBottom, adminMenu, adminMenuNoSelection, cart, editMenuItem, menuItem, menuCollapsed, menuExpanded, status, statusFiltered, statusNothingToDisplay],
+    images: [mainDash, subjectDash, recipe, four04, chord, guitarDesktop, guitarMobile, loginYM, registerYM, codebreaker, lobby, chat, instructions, navToggle],
     desc: 'SPA for client to manage menu options, allow his customers to place orders, and track and send messages in real time.',
     domain: true,
     date: 'May 2021',
