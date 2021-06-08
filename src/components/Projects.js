@@ -1,23 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Bako from '../Assets/bako.jpg';
 
-import houser from '../Assets/Houser/Houser.png';
-import wizard1 from '../Assets/Houser/Wizard1.png';
-import wizard2 from '../Assets/Houser/Wizard2.png';
-import wizard3 from '../Assets/Houser/Wizard3.png';
-
-import helo from '../Assets/Helo/Helo.png';
-import login from '../Assets/Helo/login.png';
-import list from '../Assets/Helo/list.png';
-import searchother from '../Assets/Helo/searchOther.png';
-import searchown from '../Assets/Helo/searchOwn.png';
-import createpost from '../Assets/Helo/createpost.png';
-
-import marketin from '../Assets/Marketin/MarketIn.png';
-import chats from '../Assets/Marketin/chats.png';
-import contacts from '../Assets/Marketin/contacts.png';
-import search from '../Assets/Marketin/search.png';
-import services from '../Assets/Marketin/services.png';
 
 import deadstock from '../Assets/Deadstock/DeadStock.png';
 import community from '../Assets/Deadstock/community.png';
@@ -75,42 +58,6 @@ import status from '../Assets/FatBoyCatering/status-page.png';
 import statusFiltered from '../Assets/FatBoyCatering/status-page-filtered.png';
 import statusNothingToDisplay from '../Assets/FatBoyCatering/status-page-nothing-to-display.png';
 
-const Houser = {
-    id: 1,
-    name: 'Houser',
-    url: null,
-    tech: ['React-Router-Dom', 'Redux'],
-    images: [houser, wizard1, wizard2, wizard3],
-    desc: 'Housing display app to practice redux and wizard forms',
-    domain: false,
-    date: 'Feb 2019',
-    hosted: false,
-    lessons: "Some valuable things that I learned from this project was understanding the management of state and props using Redux as I had to reconfigure my components from just passing props between each other. I have gotten a better grasp of state and props and Redux. I had the chance to learn about wizards (no not about J.K. Rowling's magical world) but the set up for a form to be filled out using routing.Through vanilla CSS, I replicated the style-design of this project."
-}
-const Helo = {
-    id: 2,
-    name: 'Helo',
-    url: null,
-    tech: ['React-Router-Dom', 'Bcryptjs', 'Express-Session', 'Redux', 'Redux-Persist'],
-    images: [helo, login, list, searchother, searchown, createpost],
-    desc: 'Blog posting app practicing authentication, redux, session & routing',
-    domain: false,
-    date: 'Feb 2019',
-    hosted: false,
-    lessons: "I learn about linear-gradients and other basic styling techniques can help embellish the application. This was another project that I had replicated the styling based off another site.I incorporated additional technologies including bcryptjs for authentication, express-session for keeping a user on session, redux and redux-persist to pass state/props between components without having to worry about refreshing the page."
-}
-const MarketIn = {
-    id: 3,
-    name: 'MarketIn',
-    url: null,
-    tech: ['Sockets', 'Stripe', '3rd Party API', 'Amazon S3', 'Dropzone', 'Express-Session', 'Bcryptjs', 'Redux', 'Redux-Persist', 'React-Router-Dom'],
-    images: [marketin, chats, contacts, search, services],
-    desc: 'Professional portfolio SPA combined with an ecommerce twist',
-    domain: false,
-    date: 'Mar 2019',
-    hosted: false,
-    lessons: "I really enjoyed applying all these different technologies. My favorite parts were taking a desired goal such as the Chat component and figuring out how to display the different colors with the date and time formatted how I wanted it and learning how to use this.props.match and this.props.history. After the project, I learned that I unnecessarily used Redux in places that I didn't need to use it.This app was my first full-stack app which could definitely be improved upon but it was where I solidified my understanding of some foundational concepts. The main takeaways from this project would probably be understanding the flow of data and learning how to console log correctly."
-}
 const DeadStock = {
     id: 4,
     name: 'DeadStock',
@@ -173,7 +120,7 @@ const FatBoyCatering = {
 }
 
 
-const projects = [FatBoyCatering, YourMove, MiniGames, Chatterbox, DeadStock, MarketIn, Helo, Houser];
+const projects = [FatBoyCatering, YourMove, MiniGames, Chatterbox, DeadStock];
 
 export default function () {
     const [posArr, updatePosArr] = useState([]);
