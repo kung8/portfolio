@@ -22,7 +22,7 @@ const Header = props => {
     const addScrollEventListener = () => {
         updateEventListenerAdded(true);
         window.addEventListener('scroll', () => {
-            let page = document.querySelector('.projects-page') || document.querySelector('.contact-page') || document.querySelector('.resume-page');
+            let page = document.querySelector('.projects-page') || document.querySelector('.contact-page') || document.querySelector('.resume-page') || document.querySelector('.about-page');
             let top = page.getBoundingClientRect().top;
             updateHeight(top);
         })
@@ -39,7 +39,7 @@ const Header = props => {
     }
 
     return (
-        <header className={`justify-btwn align-ctr ${height < -100 && 'slateblue'}`}>
+        <header className={`justify-btwn align-ctr ${height < -75 && 'slateblue'} ${toggleOpen && 'opened'}`}>
             <h2 className="logo" onClick={() => history.push(home)}>KU</h2>
             <div className="links-container">
                 <h2 className={pathname === home ? 'selected-page' : undefined} onClick={() => history.push('/')}>About</h2>

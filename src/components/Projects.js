@@ -163,7 +163,7 @@ const FatBoyCatering = {
     id: 8,
     name: 'Fat Boy Catering',
     url: 'https://aladonerecipes.com',
-    tech: ['Sass', 'Sockets', 'Toast', 'Bcryptjs', 'React-Router-Dom', 'Lodash'],
+    tech: ['Sass', 'Sockets', 'Toast', 'Bcryptjs', 'React-Router-Dom', 'Lodash', 'Twilio'],
     images: [adminBottom, adminMenu, adminMenuNoSelection, cart, editMenuItem, menuItem, menuCollapsed, menuExpanded, status, statusFiltered, statusNothingToDisplay],
     desc: 'SPA for client to manage menu options, allow his customers to place orders, and track and send messages in real time.',
     domain: true,
@@ -221,11 +221,21 @@ export default function () {
         updatePosArr(copy);
     }
 
+    const displayTech = (tech) => {
+        let last = tech.length - 1;
+        let str = '';
+        tech.forEach((item, index) => {
+            if (index === last) str += item;
+            else str += item + ', ';
+        });
+        return str;
+    }
+
     const updateModal = (project) => {
         const modal = document.querySelector('.modal-message');
-        let techStr = '';
-        project.tech.forEach(tech => techStr += `${tech}, `);
-        const message = `<h1>${project.name}</h1><p><strong>Date:</strong> ${project.date}</p><br/><p><strong>Description:</strong> ${project.desc}</p><br/><p><strong>Lesson:</strong> ${project.lessons}</p><br/><p><strong>Tech:</strong> ${techStr}</p>`;
+
+        let techStr = displayTech(project.tech);
+        const message = `<h1 style="margin-bottom: 16px;">${project.name}</h1><p><strong>Date:</strong> ${project.date}</p><br/><p><strong>Description:</strong> ${project.desc}</p><br/><p><strong>Lesson:</strong> ${project.lessons}</p><br/><p><strong>Tech:</strong> ${techStr}</p>`;
         modal.innerHTML = message;
         let top = document.querySelector('.general-projects-container').getBoundingClientRect().top;
         let screenHeight = window.innerHeight;

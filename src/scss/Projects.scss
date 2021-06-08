@@ -184,6 +184,25 @@
             width: 300px;
             min-height: 580px;
             transform: translate(-50%, 0);
+            top: 100px;
+        }
+        @media screen and (max-width: 415px) {
+            top: 75px;
+        }
+        @media screen and (max-width: 380px) {
+            top: 45px;
+        }
+        @media screen and (max-width: 374px) {
+            top: 35px;
+        }
+        @media screen and (max-width: 320px) {
+            min-height: 495px;
+            p {
+                font-size: 12px;
+            }
+        }
+        @media screen and (min-height: 812px) {
+            top: 100px;
         }
         .close-btn {
             top: 8px;

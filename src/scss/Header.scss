@@ -4,8 +4,16 @@ header {
     position: fixed;
     z-index: 4;
     top: 0;
+    @media (max-width: $mobile) {
+        &.opened {
+            background-color: slateblue;
+        }
+    }
     &.slateblue {
         background-color: slateblue;
+    }
+    @media screen and (max-width: 450px) {
+        height: 75px;
     }
     .logo {
         color: white;
@@ -96,6 +104,7 @@ header {
         border-bottom: darkslategrey 1px solid;
         font-weight: 400;
         @media screen and (max-width: $mobile) {
+            margin-top: 75px;
             &.show-toggle {
                 display: flex;
                 &.less-transparent {
