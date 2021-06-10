@@ -7,7 +7,10 @@ module.exports = {
 
         try {
             let transporter = await nodemailer.createTransport({
+                host: 'smtp.gmail.com',
                 service: 'gmail',
+                port: 587,
+                secure: false,
                 auth: {
                     user: EMAIL,
                     pass: PASSWORD
