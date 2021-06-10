@@ -19,9 +19,10 @@ module.exports = {
                 subject: `Re: Request for ${type} from ${name}`,
                 text: message,
                 html: `<div>
-                    <h1>${name}</h1>        
-                    <h3>Email:${email}</h3>  
+                    <h1>${type}</h1>        
+                    <h3>Email: ${email}</h3>  
                     <p>${message}</p>
+                    <p>Sincerely,<br/>${name}</p>
                 </div>`
             }, async (err, response) => {
                 if (err) {
