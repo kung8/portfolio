@@ -144,6 +144,9 @@
     }
     .Toastify {
         .Toastify__toast-container {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
             .Toastify__toast-body {
                 font-size: 12px;
             }
