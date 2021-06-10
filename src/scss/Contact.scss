@@ -142,4 +142,11 @@
         background: salmon;
         color: white;
     }
+    .Toastify {
+        .Toastify__toast-container {
+            .Toastify__toast-body {
+                font-size: 12px;
+            }
+        }
+    }
 }
