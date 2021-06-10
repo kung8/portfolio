@@ -111,7 +111,6 @@ function Contact() {
             </div>
             <ToastContainer
                 position="bottom-center"
-                hideProgressBar={true}
                 closeOnClick={true}
                 autoClose={8000}
                 transition={Flip}
