@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 
 const home = '/';
 const projects = '/projects';
+const music = '/music';
 const contact = '/contact';
 
 const Header = props => {
@@ -44,6 +45,7 @@ const Header = props => {
             <div className="links-container">
                 <h2 className={pathname === home ? 'selected-page' : undefined} onClick={() => history.push('/')}>About</h2>
                 <h2 className={pathname === projects ? 'selected-page' : undefined} onClick={() => history.push('/projects')}>Projects</h2>
+                <h2 className={pathname === music ? 'selected-page' : undefined} onClick={() => history.push('/music')}>Music</h2>
                 <h2 className={pathname === contact ? 'selected-page' : undefined} onClick={() => history.push('/contact')}>Contact</h2>
             </div>
             <div className="hamburger-toggle" onClick={handleToggle}>
@@ -54,6 +56,7 @@ const Header = props => {
             <div className={`nav-toggle ${toggleOpen ? 'show-toggle' : 'close-toggle'} ${pathname === home ? 'less-transparent' : null}`}>
                 <h2 onClick={() => handleRoute('/')}>About</h2>
                 <h2 onClick={() => handleRoute('/projects')}>Projects</h2>
+                <h2 onClick={() => handleRoute('/music')}>Music</h2>
                 <h2 onClick={() => handleRoute('/contact')}>Contact</h2>
             </div>
         </header>

@@ -20,7 +20,7 @@
         margin: 150px auto 0;
         height: 450px;
         @media screen and (max-width: $desktop) {
-            height: 510px;
+            height: calc(100vh - 125px);
         }
         @media screen and (max-width: $tablet) {
             flex-direction: column;

@@ -70,17 +70,13 @@ const About = (props) => {
                         <img src={resume} alt="resume" />
                         <p>Resume Coach</p>
                     </div>
-                    <a href="https://yourmove.dev/" target="_blank" rel="noopener noreferrer">
-                        <div className="icon-container">
-                            <img src={selectedHp.src} alt={selectedHp.label} />
-                            <p>Ravenclaw at Heart</p>
-                        </div>
+                    <a href="https://yourmove.dev/" target="_blank" rel="noopener noreferrer" className="icon-container">
+                        <img src={selectedHp.src} alt={selectedHp.label} />
+                        <p>Ravenclaw at Heart</p>
                     </a>
-                    <a href="https://yourmove.dev/#/cooking/recipes/" target="_blank" rel="noopener noreferrer">
-                        <div className="icon-container">
-                            <img src={selectedFood.src} alt={selectedFood.label} />
-                            <p>Experimental Cook</p>
-                        </div>
+                    <a href="https://yourmove.dev/#/cooking/recipes/" target="_blank" rel="noopener noreferrer" className="icon-container">
+                        <img src={selectedFood.src} alt={selectedFood.label} />
+                        <p>Experimental Cook</p>
                     </a>
                     <div className="icon-container">
                         <img src={frisbee} alt="frisbee" />
