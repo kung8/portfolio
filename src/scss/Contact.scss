@@ -67,11 +67,23 @@
     }
     .contact-form {
         background: white;
-        width: 95%;
+        width: 60%;
         border-radius: 6px;
         box-shadow: 1px 1px 10px 1px black;
         color: black;
         margin-bottom: 40px;
+        @media (max-width: $desktop) {
+            width: 75%;
+        }
+        @media (max-width: $tablet) {
+            width: 85%;
+        }
+        @media (max-width: $mobile-xl) {
+            width: 95%;
+        }
+        @media (max-width: $mobile) {
+            width: 92%;
+        }
         h1 {
             font-size: 24px; 
             padding-top: 10px;
@@ -88,15 +100,16 @@
                     outline: none; 
                     padding: 4px;
                     min-width: 500px;
-                    @media screen and (min-width: $tablet) {
+                    @media screen and (max-width: $tablet) {
                         width: 40%;
+                        min-width: 475px;
                     }
                     @media screen and (max-width: $mobile-xl) {
                         width: 40%;
                         min-width: 300px;
                     }
                     @media screen and (max-width: $mobile) {
-                        min-width: 270px;
+                        min-width: 265px;
                     }
                 }
             }
@@ -111,6 +124,10 @@
                 display: inline-block;
                 margin-bottom: 12px;
                 margin-left: 5%;
+                @media (max-width: $mobile) {
+                    max-height: 225px;
+                    min-height: 225px;
+                }
             }
             .name-container, .email-container {
                 margin-left: 5%;

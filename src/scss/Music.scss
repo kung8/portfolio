@@ -18,9 +18,9 @@
         z-index: 1;
         width: 90%;
         margin: 150px auto 0;
-        height: 450px;
+        height: calc(100vh - 225px);
         @media screen and (max-width: $desktop) {
-            height: calc(100vh - 125px);
+            height: calc(100vh - 200px);
         }
         @media screen and (max-width: $tablet) {
             flex-direction: column;
@@ -28,12 +28,15 @@
             width: 100%;
             justify-content: unset;
             margin: 125px auto 0;
+            height: calc(100vh - 175px);
         }
         @media screen and (max-width: $mobile-xl) {
+            height: calc(100vh - 150px);
             margin: 100px auto 0;
         }
         @media screen and (max-width: $mobile) {
             margin: 85px auto 0;
+            height: calc(100vh - 125px);
         }
         @media screen and (max-width: $extra-small){
             margin-bottom: 35px;
@@ -54,7 +57,7 @@
             color: white;
             overflow: auto;
             @media screen and (max-width: $mobile) {
-                width: 94%;
+                width: 92%;
             }
             h4 {
                 margin-bottom: 24px;
@@ -64,6 +67,9 @@
             .audio-control {
                 margin-bottom: 24px;
                 outline: none;
+                @media (max-width: $mobile) {
+                    width: 260px;
+                }
             }
             .music-card {
                 margin-bottom: 50px;

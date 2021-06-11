@@ -100,7 +100,7 @@ function Contact() {
                             <input type="text" value={email} onChange={(e) => updateEmail(e.target.value)} />
                             <div className={`${!showEmailNotice && 'none'} email-notice`}></div>
                         </div>
-                        <textarea name="message" value={message} onChange={(e) => updateMessage(e.target.value)}></textarea>
+                        <textarea placeholder="Leave a message..." name="message" value={message} onChange={(e) => updateMessage(e.target.value)}></textarea>
                         <button className="form-link" onClick={e => send(e)}>Send{sendingStatus && dotsArr[numOfDots]}</button>
                     </form>
                 </div>

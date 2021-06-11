@@ -6,11 +6,11 @@ header {
     top: 0;
     @media (max-width: $mobile) {
         &.opened {
-            background-color: slateblue;
+            background-color: #ABCEFF;
         }
     }
     &.slateblue {
-        background-color: slateblue;
+        background-color: #ABCEFF;
     }
     @media screen and (max-width: 450px) {
         height: 75px;
