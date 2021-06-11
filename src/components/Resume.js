@@ -14,7 +14,7 @@ function Resume() {
                     className="resume-iframe"
                     src={embed}
                     allowFullScreen={true}
-                    allow
+                    allow="true"
                 ></iframe>
             </div>
             <div className="resume-links-container">
