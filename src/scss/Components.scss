@@ -1,0 +1,181 @@
+.components-page {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    text-align: center;
+    overflow: scroll;
+    .components-inner-container {
+        width: 100%;
+        h1 {
+            font-size: 48px;
+            margin-bottom: 35px;
+            @media screen and (max-width: $tablet) {
+                font-size: 40px;
+            }
+        }
+        .components-container {
+            width: 90%;
+            margin: 0 auto;
+            @media (max-width: $tablet) {
+                width: 95%;
+            }
+            .card {
+                width: calc(100% / 3 - (3 * 5px));
+                max-width: 33.33%;
+                height: 300px;
+                border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                margin: 5px;
+                position: relative;
+                @media (max-width: $desktop) {
+                    height: 250px;
+                }
+                @media (max-width: $tablet) {
+                    height: 225px;
+                    width: calc(100% / 2 - (2 * 5px));
+                    max-width: 50%;
+                }
+                @media (max-width: $mobile-xl) {
+                }
+                @media (max-width: $mobile) {
+                    width: calc(100% - 5px);
+                    max-width: 100%;
+                    height: 275px;
+                }
+                .learn-more,
+                .card-label {
+                    display: none;
+                }
+                &:hover,
+                &:focus {
+                    &::before {
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        background-color: white;
+                        opacity: 1;
+                        position: absolute;
+                        top: 0;
+                        animation: add-overlay 0.25s ease-in-out;
+                        @keyframes add-overlay {
+                            from {
+                                background-color: transparent;
+                            }
+                            to {
+                                background-color: white;
+                            }
+                        }
+                    }
+                    .card-label {
+                        z-index: 2;
+                        color: black;
+                        letter-spacing: 1.3px;
+                        display: block;
+                        font-size: 20px;
+                        position: absolute;
+                        top: 60px;
+                        animation: top-slide-in-60 0.25s ease-in-out;
+                        @media (max-width: $desktop) {
+                            top: 45px;
+                            animation: top-slide-in-45 0.25s ease-in-out;
+                        }
+                        @media (max-width: $tablet) {
+                            font-size: 16px;
+                            top: 40px;
+                            animation: top-slide-in-40 0.25s ease-in-out;
+                        }
+                        @media (max-width: $mobile) {
+                            font-size: 20px;
+                            top: 60px;
+                            animation: top-slide-in-60 0.25s ease-in-out;
+                        }
+                    }
+                    .learn-more {
+                        padding: 10px 16px;
+                        background: transparent;
+                        border: 2px solid orange;
+                        outline: none;
+                        z-index: 2;
+                        cursor: pointer;
+                        letter-spacing: 1.25px;
+                        display: block;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        position: absolute;
+                        bottom: 60px;
+                        transition: all 0.25s;
+                        animation: bottom-slide-in-60 0.25s ease-in-out;
+                        @media (max-width: $desktop) {
+                            bottom: 45px;
+                            font-size: 14px;
+                            animation: bottom-slide-in-45 0.25s ease-in-out;
+                        }
+                        @media (max-width: $tablet) {
+                            bottom: 35px;
+                            padding: 8px 12px;
+                        }
+                        @media (max-width: $mobile-xl) {
+                            padding: 8px 16px;
+                        }
+                        @media (max-width: $mobile) {
+                            bottom: 60px;
+                            font-size: 12px;
+                            animation: bottom-slide-in-60 0.25s ease-in-out;
+                        }
+                        &:hover,
+                        &:focus {
+                            background: orange;
+                            color: white;
+                        }
+                    }
+                    @keyframes top-slide-in-60 {
+                        from {
+                            top: 0;
+                        }
+                        to {
+                            top: 60px;
+                        }
+                    }
+                    @keyframes top-slide-in-45 {
+                        from {
+                            top: 0;
+                        }
+                        to {
+                            top: 45px;
+                        }
+                    }
+                    @keyframes top-slide-in-40 {
+                        from {
+                            top: 0;
+                        }
+                        to {
+                            top: 45px;
+                        }
+                    }
+                    @keyframes bottom-slide-in-60 {
+                        from {
+                            bottom: 0;
+                        }
+                        to {
+                            bottom: 60px;
+                        }
+                    }
+                    @keyframes bottom-slide-in-45 {
+                        from {
+                            bottom: 0;
+                        }
+                        to {
+                            bottom: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

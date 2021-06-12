@@ -1,5 +1,6 @@
 .main {
     @import './_variables';
+    @import './mixins';
     @import './global';
     @import './Header';
     @import './About';
@@ -8,4 +9,5 @@
     @import './Resume';
     @import './Music';
     @import './ChordsModal';
+    @import './Components';
 }

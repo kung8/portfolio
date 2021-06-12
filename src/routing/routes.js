@@ -6,9 +6,11 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Resume from '../components/Resume';
 import Music from '../components/Music';
+import Components from '../components/Components';
 
 export default (
     <Switch>
+        <Route path="/components" component={Components} />
         <Route path="/resume" component={Resume} />
         <Route path="/projects" component={Projects} />
         <Route path="/music" component={Music} />
