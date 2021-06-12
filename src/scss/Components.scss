@@ -17,11 +17,8 @@
             }
         }
         .components-container {
-            width: 90%;
-            margin: 0 auto;
-            @media (max-width: $tablet) {
-                width: 95%;
-            }
+            width: 95%;
+            margin: 0 auto 50px;
             .card {
                 width: calc(100% / 3 - (3 * 5px));
                 max-width: 33.33%;
@@ -31,22 +28,54 @@
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
-                margin: 5px;
+                margin: 5px 5px 16px;
                 position: relative;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
                 @media (max-width: $desktop) {
                     height: 250px;
-                }
-                @media (max-width: $tablet) {
-                    height: 225px;
                     width: calc(100% / 2 - (2 * 5px));
                     max-width: 50%;
                 }
-                @media (max-width: $mobile-xl) {
+                @media (max-width: $tablet) {
+                    height: 225px;
                 }
-                @media (max-width: $mobile) {
+                @media (max-width: $mobile-xl) {
                     width: calc(100% - 5px);
                     max-width: 100%;
-                    height: 275px;
+                    height: 300px;
+                    margin-left: 0; 
+                    margin-right: 0;
+                }
+                &.guitar {
+                    background-position: left center;
+                }
+                &.code-breaker {
+                    background-position: top center;
+                }
+                &.mancala {
+                    background-position: -30px 0;
+                    @media (max-width: $desktop) {
+                        background-position: center center;
+                    }
+                    @media (max-width: $mobile) {
+                        background-position: -30px 0;
+                    }
+                }
+                &.sinker {
+                    @media (max-width: $extra-large) {
+                        background-position: -150px 0;
+                    }
+                    @media (max-width: $desktop) {
+                        background-position: center center;   
+                    }
+                    @media (max-width: $mobile) {
+                        background-position: center center;
+                    }
+                    @media (max-width: 400px) {
+                        background-position: -175px 0;
+                    }
                 }
                 .learn-more,
                 .card-label {
@@ -119,6 +148,7 @@
                         @media (max-width: $tablet) {
                             bottom: 35px;
                             padding: 8px 12px;
+                            animation: bottom-slide-in-35 0.25s ease-in-out;
                         }
                         @media (max-width: $mobile-xl) {
                             padding: 8px 16px;
@@ -172,6 +202,14 @@
                         }
                         to {
                             bottom: 45px;
+                        }
+                    }
+                    @keyframes bottom-slide-in-35 {
+                        from {
+                            bottom: 0;
+                        }
+                        to {
+                            bottom: 35px;
                         }
                     }
                 }
