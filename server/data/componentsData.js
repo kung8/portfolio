@@ -17,85 +17,85 @@ module.exports = [
     {
         image: menu,
         label: 'Menu',
-        link: 'https://aladonerecipes.com',
+        link: 'https://aladonerecipes.com/#/',
         className: 'menu'
     },
     {
         image: playingCard,
         label: 'Playing Cards',
-        link: 'https://yourmove.dev/game/Black%20Jack',
+        link: 'https://yourmove.dev/#/game/Black%20Jack',
         className: null
     },
     {
         image: guitar,
         label: 'Guitar',
-        link: 'https://yourmove.dev/music/instruments/guitar',
+        link: 'https://yourmove.dev/#/music/instruments/guitar',
         className: 'guitar'
     },
     {
         image: battleship,
         label: 'Battleship',
-        link: 'https://yourmove.dev/game/lobby/Battleship',
+        link: 'https://yourmove.dev/#/game/lobby/Battleship',
         className: 'battleship'
     },
     {
         image: codeBreaker,
         label: 'Code Breaker',
-        link: 'https://yourmove.dev/game/Code%20Breaker',
+        link: 'https://yourmove.dev/#/game/Code%20Breaker',
         className: 'code-breaker'
     },
     {
         image: mancala,
         label: 'Mancala',
-        link: 'https://yourmove.dev/game/lobby/Mancala',
+        link: 'https://yourmove.dev/#/game/lobby/Mancala',
         className: 'mancala'
     },
     {
         image: sinker,
         label: 'Sinker',
-        link: 'https://yourmove.dev/game/Sinker',
+        link: 'https://yourmove.dev/#/game/Sinker',
         className: 'sinker'
     },
     {
         image: ticTacToe,
         label: 'Tic Tac Toe',
-        link: 'https://yourmove.dev/game/lobby/Tic%20Tac%20Toe',
+        link: 'https://yourmove.dev/#/game/lobby/Tic%20Tac%20Toe',
         className: null
     },
     {
         image: zodiac,
         label: 'Chinese Zodiac',
-        link: 'https://yourmove.dev/recreation/chinese-zodiac',
+        link: 'https://yourmove.dev/#/recreation/chinese-zodiac',
         className: null
     },
     {
         image: periodicTable,
         label: 'Periodic Table',
-        link: 'https://yourmove.dev/science/chemistry',
+        link: 'https://yourmove.dev/#/science/chemistry',
         className: null
     },
     {
         image: perfectFifth,
         label: 'Perfect Fifths',
-        link: 'https://yourmove.dev/music/resources/perfect-5ths',
+        link: 'https://yourmove.dev/#/music/resources/perfect-5ths',
         className: null
     },
     {
         image: notes,
         label: 'Music Notes',
-        link: 'https://yourmove.dev/music/resources/basics',
+        link: 'https://yourmove.dev/#/music/resources/basics',
         className: 'notes'
     },
     {
         image: astrology,
         label: 'Astrology Zodiac',
-        link: 'https://yourmove.dev/recreation/astrology',
+        link: 'https://yourmove.dev/#/recreation/astrology',
         className: null
     },
     {
         image: chords,
         label: 'Guitar Chords',
-        link: 'https://yourmove.dev/music/resources/guitar-chords',
+        link: 'https://yourmove.dev/#/music/resources/guitar-chords',
         className: 'chord'
     },
 ]
