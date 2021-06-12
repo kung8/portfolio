@@ -12,7 +12,7 @@
         h1 {
             font-size: 48px;
             margin-bottom: 35px;
-            @media screen and (max-width: $tablet) {
+            @include down($tablet) {
                 font-size: 40px;
             }
         }
@@ -33,20 +33,35 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
-                @media (max-width: $desktop) {
+                @include down($desktop) {
                     height: 250px;
                     width: calc(100% / 2 - (2 * 5px));
                     max-width: 50%;
                 }
-                @media (max-width: $tablet) {
+                @include down($tablet) {
                     height: 225px;
                 }
-                @media (max-width: $mobile-xl) {
+                @include down($mobile-xl) {
                     width: calc(100% - 5px);
                     max-width: 100%;
                     height: 300px;
                     margin-left: 0; 
                     margin-right: 0;
+                }
+                &.menu {
+                    background-position: center top;
+                }
+                &.battleship {
+                    background-position: bottom;
+                }
+                &.notes {
+                    background-position: -25px 0;
+                    @include down($desktop) {
+                        background-position: 0 0;
+                    }
+                    @include down($mobile) {
+                        background-position: -20px 0;
+                    }
                 }
                 &.guitar {
                     background-position: left center;
@@ -56,26 +71,29 @@
                 }
                 &.mancala {
                     background-position: -30px 0;
-                    @media (max-width: $desktop) {
+                    @include down($desktop) {
                         background-position: center center;
                     }
-                    @media (max-width: $mobile) {
+                    @include down($mobile) {
                         background-position: -30px 0;
                     }
                 }
                 &.sinker {
-                    @media (max-width: $extra-large) {
+                    @include down($extra-large) {
                         background-position: -150px 0;
                     }
-                    @media (max-width: $desktop) {
+                    @include down($desktop) {
                         background-position: center center;   
                     }
-                    @media (max-width: $mobile) {
+                    @include down($mobile) {
                         background-position: center center;
                     }
                     @media (max-width: 400px) {
                         background-position: -175px 0;
                     }
+                }
+                &.chord {
+                    background-position: top center;
                 }
                 .learn-more,
                 .card-label {
@@ -110,16 +128,16 @@
                         position: absolute;
                         top: 60px;
                         animation: top-slide-in-60 0.25s ease-in-out;
-                        @media (max-width: $desktop) {
+                        @include down($desktop) {
                             top: 45px;
                             animation: top-slide-in-45 0.25s ease-in-out;
                         }
-                        @media (max-width: $tablet) {
+                        @include down($tablet) {
                             font-size: 16px;
                             top: 40px;
                             animation: top-slide-in-40 0.25s ease-in-out;
                         }
-                        @media (max-width: $mobile) {
+                        @include down($mobile) {
                             font-size: 20px;
                             top: 60px;
                             animation: top-slide-in-60 0.25s ease-in-out;
@@ -140,20 +158,20 @@
                         bottom: 60px;
                         transition: all 0.25s;
                         animation: bottom-slide-in-60 0.25s ease-in-out;
-                        @media (max-width: $desktop) {
+                        @include down($desktop) {
                             bottom: 45px;
                             font-size: 14px;
                             animation: bottom-slide-in-45 0.25s ease-in-out;
                         }
-                        @media (max-width: $tablet) {
+                        @include down($tablet) {
                             bottom: 35px;
                             padding: 8px 12px;
                             animation: bottom-slide-in-35 0.25s ease-in-out;
                         }
-                        @media (max-width: $mobile-xl) {
+                        @include down($mobile-xl) {
                             padding: 8px 16px;
                         }
-                        @media (max-width: $mobile) {
+                        @include down($mobile) {
                             bottom: 60px;
                             font-size: 12px;
                             animation: bottom-slide-in-60 0.25s ease-in-out;

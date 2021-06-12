@@ -4,6 +4,8 @@ const ctrl = require('./controller');
 const express = require('express');
 const app = express();
 app.use(express.json());
+app.use(express.static(`${__dirname}/../public/assets`));
 app.use(express.static(`${__dirname}/../build`));
 app.post('/api/message', ctrl.message);
+app.get('/api/component', ctrl.getComponentArrData);
 app.listen(SERVER_PORT, () => console.log(`Portfolio running on ${SERVER_PORT}`));
