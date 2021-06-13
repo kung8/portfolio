@@ -44,7 +44,7 @@ const omnidroid = [
     {
         img: v4,
         version: 'X4',
-        feature: 'Quadra-pedal, locomotion/2 grappling claws, quadra-directional sensory array',
+        feature: 'Quadra-pedal, locomotion, 2 grappling claws, quadra-directional sensory array',
         killed: [
             'Hypershock',
             'Apogee',
@@ -67,7 +67,7 @@ const omnidroid = [
     {
         img: v6,
         version: 'X6',
-        feature: 'Four legs with omni-articulated grappling claws, singular sensor cluster, spherical body shell.',
+        feature: 'Four legs with omni-articulated grappling claws, singular sensor cluster, spherical body shell',
         killed: [
             'Gamma Jack',
         ],
@@ -76,7 +76,7 @@ const omnidroid = [
     {
         img: v7,
         version: 'X7',
-        feature: 'The 07 has the defining set of features that would be inherited by the subsequent units, most particularly the five legs with four-fingered claws and bi-polar sensor clusters, and possibly the ability to collapse into a sphere and roll around like a ball.',
+        feature: 'Five legs with four-fingered claws, bi-polar sensor clusters, spherical body shell',
         killed: [
             null,
         ],
@@ -85,7 +85,7 @@ const omnidroid = [
     {
         img: v8,
         version: 'X8',
-        feature: 'The Omnidroid 08 has five bisymmetrical, segmented legs with four-fingered grappling claws (that can also be spun like buzzsaws) for pentilateral movement, bi-polar sensor clusters, and revision 4.0 of the artificial intelligence programming.',
+        feature: 'Five bisymmetrical, four-fingered grappling claws, bi-polar sensor clusters, artificial intelligence programming.',
         killed: [
             null,
         ],
@@ -94,7 +94,7 @@ const omnidroid = [
     {
         img: v9,
         version: 'X9',
-        feature: 'Omnidirectional, trans-universal articulation, bi-polar sensor clusters, new version of the artificial intelligence',
+        feature: 'Omni-directional, trans-universal articulation, bi-polar sensor clusters, artificial intelligence programming',
         killed: [
             'Mr. Incredible',
         ],

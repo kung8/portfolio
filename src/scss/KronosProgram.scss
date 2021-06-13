@@ -14,12 +14,11 @@ $pearl: white;
         min-height: 100vh;
     }
     .kronos-screen {
-        width: 850px;
-        height: 350px;
         background: $turquoise;
+        width: 850px;
+        height: 365px;
         @media (max-width: 875px) {
             width: 750px;
-            height: 365px;
         } 
         @include down($tablet) {
             width: 585px;
@@ -129,6 +128,9 @@ $pearl: white;
                 font-family: sans-serif;
                 &.visible-none {
                     visibility: hidden;
+                }
+                @include down($tablet) {
+                    font-size: 40px;
                 }
             }
         }

@@ -7,6 +7,7 @@ export default function KronosProgram() {
 
     useEffect(() => {
         getHeroData();
+        // eslint-disable-next-line
     }, [heroes]);
     
     const getHeroData = async () => {
@@ -63,9 +64,9 @@ export default function KronosProgram() {
                         <div className="top-part">
                             <div className="opponent-top-banner">
                                 <h2 className="opponent-label">Opponent</h2>
-                                <div className="threat-rating">Threat Rating</div>
+                                {/* <div className="threat-rating">Threat Rating</div> */}
                             </div>
-                            <img className="superhero-image" src={image} />
+                            <img className="superhero-image" src={image} alt={name} />
                         </div>
                         <div className="superhero-info-container">
                             <h3 className="superhero-name">{name}</h3>
@@ -78,7 +79,7 @@ export default function KronosProgram() {
                             <div className="prototype-top-banner">
                                 <h2 className="prototype-label">Prototype</h2>
                             </div>
-                            <img className="prototype-image" src={img} />
+                            <img className="prototype-image" src={img} alt={'prototype-version-' + version} />
                         </div>
                         <div className="prototype-info-container">
                             <h3 className="prototype-name">Omnidroid <span className="version-label">v.</span>{version}</h3>
