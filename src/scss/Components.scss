@@ -20,7 +20,7 @@
             width: 95%;
             margin: 0 auto 50px;
             .card {
-                width: calc(100% / 3 - (3 * 5px));
+                width: calc((100% / 3) - (3.33 * 3px));
                 max-width: 33.33%;
                 height: 300px;
                 border: 1px solid black;
