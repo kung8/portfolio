@@ -1,0 +1,136 @@
+$turquoise: #608B91;
+$sky: #CDF0EB;
+$pearl: white;
+
+.kronos-program {
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include down($mobile-xl) {
+        height: unset;
+        min-height: 100vh;
+    }
+    .kronos-screen {
+        width: 850px;
+        height: 350px;
+        background: $turquoise;
+        @media (max-width: 875px) {
+            width: 750px;
+            height: 365px;
+        } 
+        @include down($tablet) {
+            width: 585px;
+            height: 365px;
+        } 
+        @include down($mobile-xl) {
+            flex-direction: column;
+            height: unset;
+            width: 80%;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        @include down($mobile) {
+            margin-top: 75px;
+            margin-bottom: 75px;
+            width: 90%;
+        }
+        .opponent-container, .prototype-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            &.opponent-container {
+                border-right: 0.25px solid $pearl;
+            }
+            @include down($mobile-xl) {
+                width: 100%;
+                &.opponent-container {
+                    border-right: 0;
+                    padding-bottom: 24px;
+                    border-bottom: 0.25px solid $pearl;
+                }
+                &.prototype-container {
+                    margin-bottom: 24px;
+                }
+            }
+            .superhero-image, .prototype-image {
+                width: 100%;
+                max-height: 216px;
+                min-height: 216px;
+                margin-bottom: 12px;
+            }
+            .opponent-top-banner, .prototype-top-banner {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding: 8px;
+            }
+            .opponent-label, .prototype-label {
+                text-transform: uppercase;
+                font-size: 18px;
+                letter-spacing: 1.1px;
+                @include down($mobile) {
+                    font-size: 16px;
+                }
+            }
+            .threat-rating {
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 1.2px;
+                @include down($mobile) {
+                    font-size: 10px;
+                }
+            }
+            .threat-rating, .superhero-info-container, .prototype-info-container {
+                color: $pearl;
+            }
+            .superhero-name, .prototype-name {
+                text-align: center;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+                letter-spacing: 1.3px;
+                font-size: 16px;
+                .version-label {
+                    text-transform: lowercase;
+                }
+                @include down($mobile) {
+                    font-size: 14px;
+                    margin-bottom: 4px;
+                }
+            } 
+            .superhero-power-details, .prototype-power-details {
+                text-align: center;
+                padding-left: 16px;
+                padding-right: 16px;
+                font-size: 14px;
+                text-transform: uppercase;
+                @include down($mobile) {
+                    font-size: 12px;
+                    letter-spacing: 1.1px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                }
+            }
+            .termination {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -100%);
+                background-color: red;
+                width: 100%;
+                text-align: center;
+                color: $pearl;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                font-size: 48px;
+                font-weight: 600;
+                font-family: sans-serif;
+                &.visible-none {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}

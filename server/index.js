@@ -8,4 +8,5 @@ app.use(express.static(`${__dirname}/../public/assets`));
 app.use(express.static(`${__dirname}/../build`));
 app.post('/api/message', ctrl.message);
 app.get('/api/component', ctrl.getComponentArrData);
+app.get('/api/hero', ctrl.getHeroData);
 app.listen(SERVER_PORT, () => console.log(`Portfolio running on ${SERVER_PORT}`));
