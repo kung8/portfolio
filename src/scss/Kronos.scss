@@ -1,11 +1,12 @@
 $turquoise: #608B91;
 $sky: #CDF0EB;
 $pearl: white;
+$silver: silver;
 
-.kronos-program {
+.kronos {
     height: 100vh;
     width: 100vw;
-    background: silver;
+    background: $silver;
     display: flex;
     justify-content: center;
     align-items: center;

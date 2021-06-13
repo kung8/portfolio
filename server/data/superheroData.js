@@ -14,6 +14,7 @@ const stormicide = '../assets/superhero/Stormicide.jpeg';
 const universalMan = '../assets/superhero/UniversalMan.jpeg';
 const vectress = '../assets/superhero/Vectress.jpeg';
 const team = '../assets/superhero/the-incredibles-and-frozone.jpeg';
+const metaMan = '../assets/superhero/MetaMan.jpeg';
 
 const omnidroid = require('./omnidroidData');
 
@@ -124,7 +125,7 @@ const superheroes = [
     },
     {
         name: 'Tradewind',
-        image: blitzerman,
+        image: metaMan,
         power: 'Elemental control',
         omnidroid: omnidroid[3], 
         terminated: true,

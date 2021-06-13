@@ -12,6 +12,7 @@ const notes = '../assets/notes.png';
 const periodicTable = '../assets/periodic-table.png';
 const perfectFifth = '../assets/perfect-fifth.png';
 const menu = '../assets/menu.png';
+const kronos = '../assets/kronos.png';
 
 module.exports = [
     {
@@ -51,15 +52,22 @@ module.exports = [
         className: 'mancala'
     },
     {
+        image: kronos,
+        label: 'Disney\'s Kronos Program',
+        link: 'https://kevinung8.com/#/kronos',
+        className: null
+    },
+    {
         image: sinker,
         label: 'Sinker',
         link: 'https://yourmove.dev/#/game/Sinker',
         className: 'sinker'
     },
+
     {
-        image: ticTacToe,
-        label: 'Tic Tac Toe',
-        link: 'https://yourmove.dev/#/game/lobby/Tic%20Tac%20Toe',
+        image: periodicTable,
+        label: 'Periodic Table',
+        link: 'https://yourmove.dev/#/science/chemistry',
         className: null
     },
     {
@@ -69,9 +77,9 @@ module.exports = [
         className: null
     },
     {
-        image: periodicTable,
-        label: 'Periodic Table',
-        link: 'https://yourmove.dev/#/science/chemistry',
+        image: astrology,
+        label: 'Astrology Zodiac',
+        link: 'https://yourmove.dev/#/recreation/astrology',
         className: null
     },
     {
@@ -87,15 +95,15 @@ module.exports = [
         className: 'notes'
     },
     {
-        image: astrology,
-        label: 'Astrology Zodiac',
-        link: 'https://yourmove.dev/#/recreation/astrology',
-        className: null
-    },
-    {
         image: chords,
         label: 'Guitar Chords',
         link: 'https://yourmove.dev/#/music/resources/guitar-chords',
         className: 'chord'
+    },
+    {
+        image: ticTacToe,
+        label: 'Tic Tac Toe',
+        link: 'https://yourmove.dev/#/game/lobby/Tic%20Tac%20Toe',
+        className: null
     },
 ]

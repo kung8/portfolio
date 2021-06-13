@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export default function KronosProgram() {
+export default function Kronos() {
     const [heroes, updateHeroes] = useState([]);
     const [selected, updateSelected] = useState(0);
 
@@ -43,7 +43,7 @@ export default function KronosProgram() {
                     superhero.classList.add('visible-none');
                     prototype.classList.remove('visible-none');
                 }
-            }, 500);
+            }, 350);
 
             const secondInterval = setInterval(async () => {
                 if (newSelected < heroes.length && newSelected !== heroes.length) {
@@ -95,7 +95,7 @@ export default function KronosProgram() {
     }
 
     return (
-        <div className="kronos-program">
+        <div className="kronos">
             {mapHeroes()}
         </div>
     )

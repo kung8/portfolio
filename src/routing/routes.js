@@ -7,11 +7,11 @@ import Contact from '../components/Contact';
 import Resume from '../components/Resume';
 import Music from '../components/Music';
 import Components from '../components/Components';
-import KronosProgram from '../components/incredibles/KronosProgram';
+import Kronos from '../components/incredibles/Kronos';
 
 export default (
     <Switch>
-        <Route path="/kronos-program" component={KronosProgram} />
+        <Route path="/kronos" component={Kronos} />
         <Route path="/components" component={Components} />
         <Route path="/resume" component={Resume} />
         <Route path="/projects" component={Projects} />

@@ -139,8 +139,8 @@
                         }
                         @include down($mobile) {
                             font-size: 20px;
-                            top: 60px;
-                            animation: top-slide-in-60 0.25s ease-in-out;
+                            top: 75px;
+                            animation: top-slide-in-75 0.25s ease-in-out;
                         }
                     }
                     .learn-more {
@@ -172,9 +172,9 @@
                             padding: 8px 16px;
                         }
                         @include down($mobile) {
-                            bottom: 60px;
+                            bottom: 75px;
                             font-size: 12px;
-                            animation: bottom-slide-in-60 0.25s ease-in-out;
+                            animation: bottom-slide-in-75 0.25s ease-in-out;
                         }
                         &:hover,
                         &:focus {
@@ -206,6 +206,14 @@
                             top: 45px;
                         }
                     }
+                    @keyframes top-slide-in-75 {
+                        from {
+                            top: 0;
+                        }
+                        to {
+                            top: 75px;
+                        }
+                    }
                     @keyframes bottom-slide-in-60 {
                         from {
                             bottom: 0;
@@ -228,6 +236,14 @@
                         }
                         to {
                             bottom: 35px;
+                        }
+                    }
+                    @keyframes bottom-slide-in-75 {
+                        from {
+                            bottom: 0;
+                        }
+                        to {
+                            bottom: 75px;
                         }
                     }
                 }
