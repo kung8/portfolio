@@ -24,7 +24,7 @@ const Header = props => {
     const addScrollEventListener = () => {
         updateEventListenerAdded(true);
         window.addEventListener('scroll', () => {
-            let page = document.querySelector('.projects-page') || document.querySelector('.contact-page') || document.querySelector('.resume-page') || document.querySelector('.music-page') || document.querySelector('.about-page') || document.querySelector('.components-page') || document.querySelector('.kronos-program');
+            let page = document.querySelector('.projects-page') || document.querySelector('.contact-page') || document.querySelector('.resume-page') || document.querySelector('.music-page') || document.querySelector('.about-page') || document.querySelector('.components-page') || document.querySelector('.kronos');
             let top = page.getBoundingClientRect().top;
             updateHeight(top);
         })

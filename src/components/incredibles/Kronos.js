@@ -1,102 +1,62 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import Screens from './Screens';
+import Supers from './Supers';
 
 export default function Kronos() {
-    const [heroes, updateHeroes] = useState([]);
-    const [selected, updateSelected] = useState(0);
+    const [text, updateText] = useState('');
+    const [inputClicked, updateInputClicked] = useState(false);
+    const [screenDisplay, updateScreenDisplay] = useState(null);
 
     useEffect(() => {
-        getHeroData();
         // eslint-disable-next-line
-    }, [heroes]);
-    
-    const getHeroData = async () => {
-        const { data } = await axios.get('/api/hero');
-        await updateHeroes(data);
-        handleTransition(data);
+    }, [text]);
+
+    const handleInputContainerClick = (value) => {
+        updateInputClicked(value);
     }
 
-    const handleTransition = (data) => {
-        const interval = setInterval(async () => {
-            if (data.length > 0) {
-                await addInterval();
-                clearInterval(interval);
-            }
-        }, 1000);
+    const handleInputClick = (e, value) => {
+        e.stopPropagation();
+        updateInputClicked(value);
     }
 
-    const addInterval = async () => {
-        const prototype = document.querySelector('.prototype-termination');
-        const superhero = document.querySelector('.superhero-termination');
+    const handleInput = (value) => {
+        updateText(value);
+    }
 
-        if (superhero && selected === 0 && heroes[selected] && heroes[selected].terminated) superhero.classList.remove('visible-none');
-
-        let newSelected = selected + 1;
-
-        if (heroes[newSelected]) {
-            setTimeout(() => {
-                const { terminated } = heroes[newSelected];
-                if (terminated) {
-                    prototype.classList.add('visible-none');
-                    superhero.classList.remove('visible-none');
-                } else {
-                    superhero.classList.add('visible-none');
-                    prototype.classList.remove('visible-none');
-                }
-            }, 350);
-
-            const secondInterval = setInterval(async () => {
-                if (newSelected < heroes.length && newSelected !== heroes.length) {
-                    await updateSelected(newSelected);
-                    clearInterval(secondInterval);
-                }
-            }, 500);
+    const handleScreenToShow = () => {
+        if (screenDisplay === 'omnidroid') {
+            return <Supers />
         }
-    }
-
-    const mapHeroes = () => {
-        if (heroes.length > 0 && heroes[selected]) {
-            const { name, image, power, omnidroid } = heroes[selected];
-            const { img, version, feature } = omnidroid;
-            return (
-                <div className="kronos-screen flex">
-                    <div className="opponent-container">
-                        <div className="top-part">
-                            <div className="opponent-top-banner">
-                                <h2 className="opponent-label">Opponent</h2>
-                                {/* <div className="threat-rating">Threat Rating</div> */}
-                            </div>
-                            <img className="superhero-image" src={image} alt={name} />
-                        </div>
-                        <div className="superhero-info-container">
-                            <h3 className="superhero-name">{name}</h3>
-                            <p className="superhero-power-details"><strong>Powers:</strong> {power}</p>
-                        </div>
-                        <div className="termination superhero-termination visible-none">Terminated</div>
-                    </div>
-                    <div className="prototype-container">
-                        <div className="top-part">
-                            <div className="prototype-top-banner">
-                                <h2 className="prototype-label">Prototype</h2>
-                            </div>
-                            <img className="prototype-image" src={img} alt={'prototype-version-' + version} />
-                        </div>
-                        <div className="prototype-info-container">
-                            <h3 className="prototype-name">Omnidroid <span className="version-label">v.</span>{version}</h3>
-                            <p className="prototype-power-details">{feature}</p>
-                        </div>
-                        <div className="termination prototype-termination visible-none">Terminated</div>
-                    </div>
-                </div>
-            )
-        } else {
-            return null;
+        // else if (screenDisplay === 'super') {
+        //     return <SupersDisplay />
+        // } else if (screenDisplay === 'finance') {
+        //     return <Finance />
+        // } else if (screenDisplay === 'island') {
+        //     return <Island />
+        // }
+        else {
+            return <Screens updateScreenDisplay={updateScreenDisplay} />
         }
     }
 
     return (
-        <div className="kronos">
-            {mapHeroes()}
+        <div className="kronos flex-col">
+            {
+                text.toLowerCase() === 'kronos' ?
+                    handleScreenToShow()
+                    :
+                    <div className="kronos-screen password-container flex align-ctr" onClick={() => handleInputContainerClick(false)}>
+                        <div className="input-container flex justify-ctr">
+                            {
+                                inputClicked ?
+                                    <input className="password-input" type="text" onClick={(e) => handleInputClick(e, true)} onChange={(e) => handleInput(e.target.value)} value={text} placeholder="Password" />
+                                    :
+                                    <label className="password-label" onClick={(e) => handleInputClick(e, true)}>Password<span className="last-letter"></span></label>
+                            }
+                        </div>
+                    </div>
+            }
         </div>
     )
 }
