@@ -13,6 +13,7 @@ const periodicTable = '../assets/periodic-table.png';
 const perfectFifth = '../assets/perfect-fifth.png';
 const menu = '../assets/menu.png';
 const kronos = '../assets/kronos.png';
+const arcanine = '../assets/arcanine.png';
 
 module.exports = [
     {
@@ -55,6 +56,12 @@ module.exports = [
         image: kronos,
         label: 'Disney\'s Kronos Program',
         link: 'https://kevinung8.com/#/kronos',
+        className: null
+    },
+    {
+        image: arcanine,
+        label: 'Ditto\'s Transformation',
+        link: 'https://kevinung8.com/#/pokemon',
         className: null
     },
     {

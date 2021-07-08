@@ -8,9 +8,11 @@ import Resume from '../components/Resume';
 import Music from '../components/Music';
 import Components from '../components/Components';
 import Kronos from '../components/incredibles/Kronos';
+import Pokemon from '../components/pokemon/Pokemon';
 
 export default (
     <Switch>
+        <Route path="/pokemon" component={Pokemon} />
         <Route path="/kronos" component={Kronos} />
         <Route path="/components" component={Components} />
         <Route path="/resume" component={Resume} />
