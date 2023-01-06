@@ -31,7 +31,8 @@ const Header = props => {
                         document.querySelector('.about-page') || 
                         document.querySelector('.components-page') || 
                         document.querySelector('.kronos') || 
-                        document.querySelector('.pokemon-page');
+                        document.querySelector('.pokemon-page') || 
+                        document.querySelector('.selector-page');
             let top = page.getBoundingClientRect().top;
             updateHeight(top);
         })

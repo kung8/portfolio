@@ -9,9 +9,11 @@ import Music from '../components/Music';
 import Components from '../components/Components';
 import Kronos from '../components/incredibles/Kronos';
 import Pokemon from '../components/pokemon/Pokemon';
+import Selector from '../components/selector/Selector';
 
 export default (
     <Switch>
+        <Route path="/selector" component={Selector} />
         <Route path="/pokemon" component={Pokemon} />
         <Route path="/kronos" component={Kronos} />
         <Route path="/components" component={Components} />

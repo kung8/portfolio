@@ -64,6 +64,6 @@ export default function Pokemon() {
                 <div className="glow hide"></div>
             </div>
             {mapPokemonList()}
-        </div >
+        </div>
     )
 }
