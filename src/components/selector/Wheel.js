@@ -30,7 +30,9 @@ const Wheel = (props) => {
 				if (onSelect) {
 					onSelect(items[selectedItem]);
 				}
-				setIsReset(false);
+				if (setIsReset) {
+					setIsReset(false);
+				}
 			}, 3950)
 		} else {
 			setSelectedItem(null)
@@ -41,7 +43,7 @@ const Wheel = (props) => {
 	return (
 		<div className="wheel-container">
 			<div
-				className={`wheel ${spinning} ${disabled && 'remove-cursor'}`}
+				className={`wheel ${spinning ? spinning : undefined} ${disabled ? 'remove-cursor' : undefined}`}
 				style={wheelVars}
 				onClick={() => !disabled ? selectItem() : null}
 			>

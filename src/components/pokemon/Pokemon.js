@@ -48,7 +48,7 @@ export default function Pokemon() {
                         <button
                             key={'pokemon-' + index}
                             onClick={() => transformDitto(url, name)}
-                            className={`pokemon-button ${selected === name && 'selected'}`}>
+                            className={`pokemon-button ${selected === name ? 'selected' : undefined}`}>
                             {name}
                         </button>
                     )

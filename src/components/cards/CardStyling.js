@@ -206,7 +206,7 @@ function style(card) {
         }
 
         return (
-            <div className={`playing-card-holder ${card.class && card.class}`}>
+            <div className={`playing-card-holder ${card.class ? card.class : undefined}`}>
                 <div className="card-front-container" key={card.card_id}>
                     <div className="card-front-left-corner">
                         <h3 className="card-name" style={{ color }}>{card.name}</h3>
@@ -226,7 +226,7 @@ function style(card) {
         )
     } else {
         return (
-            <div className={`playing-card-holder ${card.class && card.class}`}>
+            <div className={`playing-card-holder ${card.class ? card.class : undefined}`}>
                 <div key={card.card_id} className="card-back-container">
                     <h3 className="card-back-logo">KU</h3>
                 </div>

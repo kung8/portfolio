@@ -217,7 +217,7 @@ export default function () {
                                     <div className="scroll-dots-container">
                                         {project.images.map((img, i) => {
                                             return (
-                                                <div onClick={() => handleDotSelected(index, i)} key={project.name + '-img-' + i} className={`selected-ring ${position === i && 'selected'} pointer`}>
+                                                <div onClick={() => handleDotSelected(index, i)} key={project.name + '-img-' + i} className={`selected-ring ${position === i ? 'selected' : undefined} pointer`}>
                                                     <div className='scroll-dot'></div>
                                                 </div>
                                             )
@@ -235,7 +235,7 @@ export default function () {
             {showModal &&
                 <div className="modal-wrapper"></div>
             }
-            <div className={`project-modal ${!showModal && 'none'}`}>
+            <div className={`project-modal ${!showModal ? 'none' : undefined}`}>
                 <div className="close-btn p-abs" onClick={() => closeModal()}>x</div>
                 <div className="modal-message"></div>
             </div>

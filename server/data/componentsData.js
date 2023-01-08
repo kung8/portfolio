@@ -14,6 +14,7 @@ const perfectFifth = '../assets/perfect-fifth.png';
 const menu = '../assets/menu.png';
 const kronos = '../assets/kronos.png';
 const arcanine = '../assets/arcanine.png';
+const selector = '../assets/selector.png';
 
 module.exports = [
     // {
@@ -22,6 +23,12 @@ module.exports = [
     //     link: 'https://aladonerecipes.com/#/',
     //     className: 'menu'
     // },
+    {
+        image: selector,
+        label: 'List Selector',
+        link: 'https://kevinung8.com/#/selector',
+        className: null
+    },
     {
         image: playingCard,
         label: 'Playing Cards',

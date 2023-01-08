@@ -22,7 +22,7 @@ export default function Components() {
         return compArr.map((item, index) => {
             const { image, label, link, className } = item;
             return (
-                <div key={index} className={`card ${className}`} style={{ backgroundImage: `url(${image})` }}>
+                <div key={index} className={`card ${className ? className : undefined}`} style={{ backgroundImage: `url(${image})` }}>
                     <h3 className="card-label">{label}</h3>
                     <button className="learn-more" onClick={() => handleLink(link)}>View</button>
                 </div>

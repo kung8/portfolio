@@ -130,26 +130,29 @@ const Selector = (props) => {
     return (
         <div className="selector-page">
             {(!type || type !== 'work') && (
-                <div className="items-and-rotator">
-                    <div className="item-list-container">
-                        {type === 'work' && <span className="list-label">Update Attendance:</span>}
-                        <div className="input-and-button-container">
-                            <input type="text" value={item} onChange={(e) => setItem(e.target.value)} />
-                            <button onClick={handleAdd}>Add</button>
+                <>
+                    <div className="items-and-rotator">
+                        <div className="item-list-container">
+                            {type === 'work' && <span className="list-label">Update Attendance:</span>}
+                            <div className="input-and-button-container">
+                                <input type="text" value={item} onChange={(e) => setItem(e.target.value)} />
+                                <button onClick={handleAdd}>Add</button>
+                            </div>
+                            <ul className="items-container">
+                                {items.map((selection, index) => (
+                                    <div key={index} className="item-container" onClick={() => handleDelete(index)}>
+                                        <li>{selection}</li>
+                                        <img src={deleteIcon} alt="delete" />
+                                    </div>
+                                ))}
+                            </ul>
                         </div>
-                        <ul className="items-container">
-                            {items.map((selection, index) => (
-                                <div key={index} className="item-container" onClick={() => handleDelete(index)}>
-                                    <li>{selection}</li>
-                                    <img src={deleteIcon} alt="delete" />
-                                </div>
-                            ))}
-                        </ul>
+                        <div className="rotator-container">
+                            <Wheel items={items} onSelect={setSelected} disabled={selected} isReset={isReset} setIsReset={setIsReset} />
+                        </div>
                     </div>
-                    <div className="rotator-container">
-                        <Wheel items={items} />
-                    </div>
-                </div>
+                    {selected && <button className="reset-btn" onClick={resetWork}>RESET</button>}
+                </>
             )}
             {type === 'work' && (
                 <>
@@ -168,7 +171,7 @@ const Selector = (props) => {
                                     </div>
                                 ))}
                             </ul>
-                            <button className={`resort-btn ${isRevealed && 'disabled'}`} disabled={isRevealed} onClick={handleResort}>RESORT</button>
+                            <button className={`resort-btn ${isRevealed ? 'disabled' : undefined}`} disabled={isRevealed} onClick={handleResort}>RESORT</button>
                         </div>
                         <div className="rotator-container">
                             <Wheel items={decider} onSelect={setSelected} disabled={selected} isReset={isReset} setIsReset={setIsReset} />
@@ -190,8 +193,8 @@ const Selector = (props) => {
                         </div>
                     </div>
 
-                    <div className={`btn-container ${selected !== 'Choose Own Time' && isRevealed && 'space-between'}`}>
-                        {selected && selected !== 'Choose Own Time' && <button onClick={handleUpdateClick} disabled={isRevealed} className={`reveal-btn ${isRevealed && 'disabled'}`}>REVEAL</button>}
+                    <div className={`btn-container ${selected !== 'Choose Own Time' && isRevealed ? 'space-between' : undefined}`}>
+                        {selected && selected !== 'Choose Own Time' && <button onClick={handleUpdateClick} disabled={isRevealed} className={`reveal-btn ${isRevealed ? 'disabled' : undefined}`}>REVEAL</button>}
                         {((selected && selected !== 'Choose Own Time' && isRevealed) || (selected && selected === 'Choose Own Time')) && <button className="reset-btn" onClick={resetWork}>RESET</button>}
                     </div>
 
