@@ -11,7 +11,7 @@ module.exports = {
         res.send(heroData);
     },
     message: async (req, res) => {
-        const { name, message, email, type } = req.body;
+        const { name, message, email, subject } = req.body;
 
         try {
             let transporter = await nodemailer.createTransport({
@@ -27,13 +27,11 @@ module.exports = {
             await transporter.sendMail({
                 from: `'${name}' <${email}>`,
                 to: EMAIL,
-                subject: `Re: Request for ${type} from ${name}`,
+                subject: subject,
                 text: message,
                 html: `<div>
-                    <h1>${type}</h1>        
-                    <h3>Email: ${email}</h3>  
                     <p>${message}</p>
-                    <p>Sincerely,<br/>${name}</p>
+                    <p>Sincerely,<br/>${name}<br/>${email}</p>
                 </div>`
             }, async (err, response) => {
                 if (err) {

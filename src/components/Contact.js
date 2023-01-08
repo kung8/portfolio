@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import japan from '../Assets/japan.jpeg';
 import axios from 'axios';
-import { ToastContainer, toast, Flip } from 'react-toastify';
+import japan from '../Assets/me.jpeg';
+import { validator } from "../utils/validator";
+import { Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const id = '1jMAfdIYWomKJf6khY9Eq-3pVWVmoXH82';
@@ -9,100 +10,61 @@ const open = `https://drive.google.com/file/d/${id}/view?usp=sharing`;
 const download = `https://drive.google.com/uc?export=download&id=${id}`;
 
 function Contact() {
-    const [messageDropdown, updateDropdown] = useState('dev');
-    const [name, updateName] = useState('');
-    const [email, updateEmail] = useState('');
-    const [message, updateMessage] = useState('');
-    const [showNameNotice, updateNameNotice] = useState(false);
-    const [showEmailNotice, updateEmailNotice] = useState(false);
-    const emailErrors = ['Email field is required.', 'Please enter a valid email.'];
-    const [sendingStatus, updateSendingStatus] = useState(false);
-    const [numOfDots, updateNumOfDots] = useState(0);
-    const dotsArr = ['.', '..', '...'];
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
 
-    const send = async (e) => {
+    const reset = () => {
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+    }
+
+    const submit = async (e) => {
         e.preventDefault();
-        if (name !== null && email !== null && email.includes('@') && email.includes('.') && message !== null && name !== '' && email !== '' && message !== '') {
+        if (name && email && subject && message) {
             try {
-                updateSendingStatus(true);
-                let sendingInt = setInterval(async () => {
-                    if (sendingStatus) {
-                        let num = numOfDots;
-                        if (num < 2) {
-                            num += 1;
-                            await updateNumOfDots(num);
-                        } else {
-                            num = 0;
-                            await updateNumOfDots(num);
-                        }
-                    } else {
-                        clearInterval(sendingInt);
-                    }
-                }, 200);
-                await axios.post('/api/message', { name, email, message, type: messageDropdown });
-                updateSendingStatus(false);
-                updateName('');
-                updateEmail('');
-                updateMessage('');
-                toast('Thank you for your email! I\'ll get back to you as soon as I can. Please have a great day!', { className: 'lime' });
-                return;
-            } catch (err) {
-                updateSendingStatus(false);
-                console.log(err);
-                let body = message + ' \r\n -' + name + ' \n (' + email + ')';
-                let encodedBody = encodeURIComponent(body)
-                window.location.href = 'mailto:kevthedev8@gmail.com?body=' + encodedBody + '&subject=Request for ' + messageDropdown;
-                updateName('');
-                updateEmail('');
-                updateMessage('');
-                toast('Sorry we had trouble sending your request directly. Please feel free to email me instead! Thank you for your patience as I work through this bug.', { className: 'salmon' });
-                return;
+                await axios.post('/api/message', { name, email, subject, message })
+                toast('Submitted form', { className: 'success' });
+                reset();
+            } catch {
+                toast('Sorry there was a problem.', { className: 'error' });
             }
-        }
-
-        if (name === null || name === '') {
-            updateNameNotice(true);
         } else {
-            updateNameNotice(false);
-        }
-
-        if (email === null || email === '') {
-            document.querySelector('.email-notice').innerText = emailErrors[0];
-            updateEmailNotice(true);
-        } else if (!email.includes('@') || !email.includes('.')) {
-            document.querySelector('.email-notice').innerText = emailErrors[1];
-            updateEmailNotice(true);
-        } else {
-            updateEmailNotice(false);
+            toast('Please fill out all the required form fields', { className: 'error' });
         }
     }
 
     return (
-        <div className="contact-page flex-col align-ctr" style={{ backgroundImage: `url(${japan})` }}>
-            <div className="contact-inner-container set-top flex-col align-ctr">
-                <div className="contact-form">
-                    <h1>Leave a Message:</h1>
-                    <form className="flex-col align-start">
-                        <div className="select-container flex-start">
-                            <select name="message" id="message-form" className="pointer" value={messageDropdown} onChange={e => updateDropdown(e.target.value)}>
-                                <option value="dev">Have dev work?</option>
-                                <option value="resume">Need resume help?</option>
-                                <option value="cookies">Want homemade cookies?</option>
-                            </select>
-                        </div>
-                        <div className="name-container">
-                            <h4>Name:</h4>
-                            <input type="text" value={name} onChange={(e) => updateName(e.target.value)} />
-                            <div className={`${!showNameNotice && 'none'} name-notice`}>Name field is required.</div>
-                        </div>
-                        <div className="email-container">
-                            <h4>Email:</h4>
-                            <input type="text" value={email} onChange={(e) => updateEmail(e.target.value)} />
-                            <div className={`${!showEmailNotice && 'none'} email-notice`}></div>
-                        </div>
-                        <textarea placeholder="Leave a message..." name="message" value={message} onChange={(e) => updateMessage(e.target.value)}></textarea>
-                        <button className="form-link" onClick={e => send(e)}>Send{sendingStatus && dotsArr[numOfDots]}</button>
-                    </form>
+        <div id="contact-page" className="contact-page page">
+            <div className="container contact">
+                <div className="contact-container">
+                    <img className="me-or-company" src={japan} alt="me" />
+                    <div className="contact-form-container">
+                        <h1 className="heading">Contact Me</h1>
+                        <p className="message-text">Feel free to leave a comment, ask a question, or share your favorite dad joke.</p>
+                        <form className="contact-form" action="submit">
+                            <div className="form-field">
+                                <span>Name</span>
+                                <input type="text" name="name" id="name" value={name} onChange={(e) => setName(e.target.value)} />
+                            </div>
+                            <div className="form-field">
+                                <span>Email</span>
+                                <input className={`${validator({ type: 'email', text: email }) ? 'validated' : 'invalid'}`} required type="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                            </div>
+                            <div className="form-field">
+                                <span>Subject</span>
+                                <input type="text" name="subject" id="subject" value={subject} onChange={(e) => setSubject(e.target.value)} />
+                            </div>
+                            <div className="form-field">
+                                <span>Leave a message...</span>
+                                <textarea value={message} onChange={(e) => setMessage(e.target.value)} />
+                            </div>
+                            <button className="submit-btn" onClick={submit}>Submit</button>
+                        </form>
+                    </div>
                 </div>
                 <div className="resume-links-container">
                     <a className="resume-link open-link" href={open} target="_blank" rel="noopener noreferrer">View Resume</a>
@@ -110,10 +72,11 @@ function Contact() {
                 </div>
             </div>
             <ToastContainer
-                position="bottom-center"
+                position="top-right"
+                hideProgressBar={true}
                 closeOnClick={true}
-                autoClose={8000}
-                transition={Flip}
+                autoClose={1500}
+                transition={Slide}
                 draggable={true}
                 draggablePercent={80}
             />
