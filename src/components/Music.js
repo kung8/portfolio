@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import bako from '../Assets/bako.jpg';
+import japan from '../Assets/japan.jpeg';
 import KeepOnKeepingOn from './Songs/KeepOnKeepingOn';
 import HeroToMe from './Songs/HeroToMe';
 import TheGame from './Songs/TheGame';
@@ -51,7 +51,7 @@ function Music() {
     }
 
     return (
-        <div className="music-page flex" style={{ backgroundImage: `url(${bako})` }}>
+        <div className="music-page flex" style={{ backgroundImage: `url(${japan})` }}>
             <div className="music-inner-container flex-col justify-around set-top align-ctr">
                 <h1>Music:</h1>
                 <div className="music-cards">

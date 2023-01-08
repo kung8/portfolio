@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Bako from '../Assets/bako.jpg';
+import japan from '../Assets/japan.jpeg';
 
 
 import deadstock from '../Assets/Deadstock/DeadStock.png';
@@ -203,7 +203,7 @@ export default function () {
     }
 
     return (
-        <div className="projects-page flex" style={{ backgroundImage: `url(${Bako})` }}>
+        <div className="projects-page flex" style={{ backgroundImage: `url(${japan})` }}>
             <div className="projects-inner-container set-top p-rel" style={{ display: showModal && 'none' }}>
                 <h1>Projects:</h1>
                 <div className="general-projects-container">

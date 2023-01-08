@@ -16,12 +16,12 @@ const kronos = '../assets/kronos.png';
 const arcanine = '../assets/arcanine.png';
 
 module.exports = [
-    {
-        image: menu,
-        label: 'Menu',
-        link: 'https://aladonerecipes.com/#/',
-        className: 'menu'
-    },
+    // {
+    //     image: menu,
+    //     label: 'Menu',
+    //     link: 'https://aladonerecipes.com/#/',
+    //     className: 'menu'
+    // },
     {
         image: playingCard,
         label: 'Playing Cards',
@@ -37,7 +37,7 @@ module.exports = [
     {
         image: battleship,
         label: 'Battleship',
-        link: 'https://yourmove.dev/#/game/lobby/Battleship',
+        link: 'https://yourmove.dev/#/game/Battleship',
         className: 'battleship'
     },
     {
@@ -49,7 +49,7 @@ module.exports = [
     {
         image: mancala,
         label: 'Mancala',
-        link: 'https://yourmove.dev/#/game/lobby/Mancala',
+        link: 'https://yourmove.dev/#/game/Mancala',
         className: 'mancala'
     },
     {
@@ -110,7 +110,7 @@ module.exports = [
     {
         image: ticTacToe,
         label: 'Tic Tac Toe',
-        link: 'https://yourmove.dev/#/game/lobby/Tic%20Tac%20Toe',
+        link: 'https://yourmove.dev/#/game/Tic%20Tac%20Toe',
         className: null
     },
 ]

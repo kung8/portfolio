@@ -1,5 +1,5 @@
 import React from 'react';
-import bako from '../Assets/bako.jpg';
+import japan from '../Assets/japan.jpeg';
 const id = '1bDCHy2UFCUI_oy3_tSp1OwubXwv7srba';
 const embed = `https://drive.google.com/file/d/${id}/preview`;
 const open = `https://drive.google.com/file/d/${id}/view?usp=sharing`;
@@ -7,7 +7,7 @@ const download = `https://drive.google.com/uc?export=download&id=${id}`;
 
 function Resume() {
     return (
-        <div className="resume-page flex-col align-ctr" style={{ backgroundImage: `url(${bako})` }}>
+        <div className="resume-page flex-col align-ctr" style={{ backgroundImage: `url(${japan})` }}>
             <div className="resume-inner-container set-top">
                 <iframe
                     title="resume"

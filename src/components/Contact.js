@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import bako from '../Assets/bako.jpg';
+import japan from '../Assets/japan.jpeg';
 import axios from 'axios';
 import { ToastContainer, toast, Flip } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -78,7 +78,7 @@ function Contact() {
     }
 
     return (
-        <div className="contact-page flex-col align-ctr" style={{ backgroundImage: `url(${bako})` }}>
+        <div className="contact-page flex-col align-ctr" style={{ backgroundImage: `url(${japan})` }}>
             <div className="contact-inner-container set-top flex-col align-ctr">
                 <div className="contact-form">
                     <h1>Leave a Message:</h1>

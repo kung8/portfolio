@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Bako from '../Assets/bako.jpg';
+import japan from '../Assets/japan.jpeg';
 
 export default function Components() {
     const [compArr, updateCompArr] = useState([]);
@@ -31,7 +31,7 @@ export default function Components() {
     }
 
     return (
-        <div className="components-page flex" style={{ backgroundImage: `url(${Bako})` }}>
+        <div className="components-page flex" style={{ backgroundImage: `url(${japan})` }}>
             <div className="components-inner-container set-top p-rel">
                 <h1>Components:</h1>
                 <div className="components-container flex wrap">
