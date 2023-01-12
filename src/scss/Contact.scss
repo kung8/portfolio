@@ -151,25 +151,4 @@
             }
         }
     }
-    .Toastify__toast-container--top-right {
-        position: fixed;
-        top: 120px;
-        .Toastify__toast {
-            &.error {
-                background: #ffbbbb;
-            }
-            &.success {
-                background: #9fffba;
-            }
-            .Toastify__toast-body {
-                display: flex;
-                justify-content: center;
-                font-size: 16px;
-                text-align: center;
-            }
-            .Toastify__close-button {
-                font-size: 16px;
-            }
-        }
-    }
 }

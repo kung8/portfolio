@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import deleteIcon from '../../Assets/close.png';
 import Wheel from './Wheel';
 import { times } from './time';
+import { Slide, ToastContainer, toast } from 'react-toastify';
 
 const convertStringToObject = (str) => str.split('&').reduce((acc, item) => {
     const index = item.indexOf('=');
@@ -60,11 +61,24 @@ const Selector = (props) => {
     }, [type])
 
     const handleAdd = () => {
-        if (item) {
+        if (items.includes(item)) {
+            toast.dismiss();
+            toast('This item already exists.', { className: 'error' })
+            return;
+        }
+        if (item && !items.includes(item)) {
             const newItems = [...items];
             newItems.push(item);
             setItems(newItems);
             setItem('');
+            toast.dismiss();
+            toast('Item added successfully!', { className: 'success' })
+        }
+    }
+
+    const handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            handleAdd();
         }
     }
 
@@ -135,7 +149,7 @@ const Selector = (props) => {
                         <div className="item-list-container">
                             {type === 'work' && <span className="list-label">Update Attendance:</span>}
                             <div className="input-and-button-container">
-                                <input type="text" value={item} onChange={(e) => setItem(e.target.value)} />
+                                <input type="text" value={item} onChange={(e) => setItem(e.target.value)} onKeyDown={e => handleKeyPress(e)} />
                                 <button onClick={handleAdd}>Add</button>
                             </div>
                             <ul className="items-container">
@@ -160,7 +174,7 @@ const Selector = (props) => {
                         <div className="item-list-container">
                             {type === 'work' && <span className="list-label">Update Attendance:</span>}
                             <div className="input-and-button-container">
-                                <input type="text" value={item} onChange={(e) => setItem(e.target.value)} />
+                                <input type="text" value={item} onChange={(e) => setItem(e.target.value)} onKeyDown={e => handleKeyPress(e)} />
                                 <button onClick={handleAdd}>Add</button>
                             </div>
                             <ul className="items-container">
@@ -242,6 +256,15 @@ const Selector = (props) => {
                     }
                 </>
             )}
+            <ToastContainer
+                position="top-right"
+                hideProgressBar={true}
+                closeOnClick={true}
+                autoClose={1500}
+                transition={Slide}
+                draggable={true}
+                draggablePercent={80}
+            />
         </div>
     )
 }
