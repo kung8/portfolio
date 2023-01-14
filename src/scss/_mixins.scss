@@ -4,7 +4,7 @@
     }
 }
 @mixin up($size) {
-    @media (min-width: $size + 1) {
+    @media (min-width: ($size + 1)) {
         @content;
     }
 }

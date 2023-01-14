@@ -1,4 +1,5 @@
 .contact-page {
+    @extend .fade-in;
     .container {
         margin-top: 150px;
         @include down($mobile-xl) {
