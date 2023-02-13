@@ -55,7 +55,7 @@ const About = (props) => {
         <div className="about-page flex" style={{ backgroundImage: `url(${japan})` }}>
             <div className="about-inner-container justify-around set-top align-ctr">
                 <p className="about-me-summary">
-                    My name is Kevin Ung. I am a software engineer, founder and CEO of Budding Acorn, songwriter, and lover of learning, brain teasers, riddles, and dad jokes.
+                    Hi, my name is Kevin Ung. I love learning and problem solving. I dabble with the guitar, enjoy a good pickleball game, Ravenclaw through and through, listener of Christmas music spontaneously throughout the year, and I want to inspire others to follow their passions!
                 </p>
                 <div className="about-me-container wrap">
                     <div onClick={() => history.push('/projects')} className="icon-container pointer">
