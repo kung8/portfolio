@@ -1,0 +1,87 @@
+.camera-page {
+    min-height: 100vh;
+    width: 100vw;
+    background: $silver;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @extend .fade-in;
+
+    .camera-container {
+        margin-top: 150px;
+        min-width: 200px;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        max-width: 800px;
+        flex-direction: column;
+
+        .heading {
+            text-transform: unset;
+        }
+
+        .display-cover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            margin: 5% auto;
+            position: relative;
+
+            video {
+                width: 100%;
+                background: rgba(0, 0, 0, 0.2);
+                min-height: 292.95px;
+            }
+
+            .controls {
+                display: flex;
+                position: absolute;
+                bottom: 20px;
+
+                @media (min-width: 300px) and (max-width: 400px) {
+                    flex-direction: column;
+                }
+
+                .btn {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 100%;
+                    margin: 0 6px;
+                    display: flex;
+                    align-items: center;
+                    background: transparent;
+
+                    @media (min-width: 300px) and (max-width: 400px) {
+                        margin: 5px 0 !important;
+                    }
+
+                    &.play {
+                        border: 2px solid #00b541;
+                    }
+
+                    &.stop {
+                        border: 2px solid #d2002e;
+                    }
+
+                    &.mute {
+                        border: 2px solid #64b5f6;
+                    }
+
+                    &.sound {
+                        border: 2px solid rgb(255, 225, 0);
+                    }
+
+                    &.reverse {
+                        border: 2px solid #00b541;
+                    }
+
+                    .control-img {
+                        width: 100%;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

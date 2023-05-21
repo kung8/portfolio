@@ -10,9 +10,11 @@ import Components from '../components/Components';
 import Kronos from '../components/incredibles/Kronos';
 import Pokemon from '../components/pokemon/Pokemon';
 import Selector from '../components/selector/Selector';
+import Camera from '../components/camera/Camera';
 
 export default (
     <Switch>
+        <Route path="/camera" component={Camera} />
         <Route path="/selector" component={Selector} />
         <Route path="/pokemon" component={Pokemon} />
         <Route path="/kronos" component={Kronos} />
