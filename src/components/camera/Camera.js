@@ -144,3 +144,6 @@ const Camera = () => {
 }
 
 export default Camera;
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API/Taking_still_photos
+// https://www.digitalocean.com/community/tutorials/front-and-rear-camera-access-with-javascripts-getusermedia
