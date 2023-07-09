@@ -1,0 +1,281 @@
+.timer-page {
+    min-height: 100vh;
+    width: 100vw;
+    background: $silver;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @extend .fade-in;
+
+    .timer-container {
+        margin-top: 150px;
+        min-width: 200px;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        max-width: 800px;
+        flex-direction: column;
+
+        .timer {
+            margin-top: 56px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .timer-clock-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // .timer-clock {
+                //     height: 150px;
+                //     width: 300px;
+                //     border-radius: 10rem 10rem 0 0;
+                //     border: 20px solid #878585;
+                //     border-bottom: none;
+                //     position: relative;
+                //     &.progress-10 {
+                //         background-image: -webkit-linear-gradient(36deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+                //         background-image: linear-gradient(54deg, #ddd 50%, transparent 50%), linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+                //     }
+                //     &::after {
+                //         content: "";
+                //         position: absolute;
+                //         left: -20px;
+                //         top: -20px;
+                //         height: 130px;
+                //         width: 260px;
+                //         border-radius: 10rem 10rem 0 0;
+                //         border: 20px solid rgb(251, 192, 83);
+                //         border-bottom: none;
+                //         &.progress-0 {
+
+                //         }
+                //         &.progress-5 {
+
+                //         }
+
+                //         &.progress-15 {
+
+                //         }
+                //         &.progress-20 {
+
+                //         }
+                //         &.progress-25 {
+
+                //         }
+                //         &.progress-30 {
+
+                //         }
+                //         &.progress-35 {
+
+                //         }
+                //         &.progress-40 {
+
+                //         }
+                //         &.progress-45 {
+
+                //         }
+                //         &.progress-50 {
+
+                //         }
+                //         &.progress-55 {
+
+                //         }
+                //         &.progress-60 {
+
+                //         }
+                //         &.progress-65 {
+
+                //         }
+                //         &.progress-70 {
+
+                //         }
+                //         &.progress-75 {
+
+                //         }
+                //         &.progress-80 {
+
+                //         }
+                //         &.progress-85 {
+
+                //         }
+                //         &.progress-90 {
+
+                //         }
+                //         &.progress-95 {
+
+                //         }
+                //         &.progress-100 {
+
+                //         }
+                //     }
+                // }
+
+                .radialProgressBar {
+                    border-radius: 50%;
+                    width: 300px;
+                    height: 300px;
+                    display: flex;
+                    background: #ddd;
+                    .overlay {
+                        border-radius: 50%;
+                        width: 240px;
+                        height: 240px;
+                        margin: auto;
+                        background: black;
+                        text-align: center;
+                        padding-top: 30%;
+                    }
+                    &.progress-5 {
+                        background-image: linear-gradient(72deg, #ddd 50%, transparent 50%),
+                            linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+                    }
+                    &.progress-10 {
+                        background-image: linear-gradient(54deg, #ddd 50%, transparent 50%),
+                            linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+                    }
+                    &.progress-15 {
+                        background-image: linear-gradient(36deg, #ddd 50%, transparent 50%),
+                            linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+                    }
+                    &.progress-20 {
+                        background-image: linear-gradient(18deg, #ddd 50%, transparent 50%),
+                            linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+                    }
+                    &.progress-25 {
+                        background-image: linear-gradient(0deg, #ddd 50%, transparent 50%),
+                            linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+                    }
+                    &.progress-30 {
+                        background-image: linear-gradient(-18deg, #ddd 50%, transparent 50%),
+                            linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+                    }
+                    &.progress-35 {
+                        background-image: linear-gradient(-36deg, #ddd 50%, transparent 50%),
+                            linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+                    }
+                    &.progress-40 {
+                        background-image: linear-gradient(-54deg, #ddd 50%, transparent 50%),
+                            linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+                    }
+                    &.progress-45 {
+                        background-image: linear-gradient(-72deg, #ddd 50%, transparent 50%),
+                            linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+                    }
+                    &.progress-50 {
+                        background-image: linear-gradient(-90deg, #ddd 50%, transparent 50%),
+                            linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+                    }
+                    // &.progress-55 {
+                    //     background-image: linear-gradient(90deg, #ddd 50%, transparent 50%),
+                    //         linear-gradient(118deg, #ddd 50%, #028cd5 50%);
+                    // }
+                }
+
+                .timer-time {
+                    text-align: center;
+                    color: $pearl;
+                    font-size: 80px;
+                }
+            }
+
+            .timer-selection {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 400px;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                max-height: 300px;
+                position: relative;
+
+                .actual-selection {
+                    padding: 8px 16px;
+                    background: black;
+                    opacity: 0.15;
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    height: 32px;
+                    transform: translate(0, -50%);
+                    border-radius: 8px;
+                }
+
+                .timer-selector {
+                    display: flex;
+                    align-items: center;
+
+                    .time {
+                        display: flex;
+                        flex-direction: column;
+                        overflow: auto;
+                        max-height: 250px;
+                        -ms-overflow-style: none; /* IE and Edge */
+                        scrollbar-width: none; /* Firefox */
+                        scroll-behavior: smooth;
+                        scroll-snap-type: y mandatory;
+
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+
+                        .number {
+                            padding: 8px 16px;
+                            min-height: 36px;
+                            font-size: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            scroll-snap-align: center;
+                            letter-spacing: 1.25px;
+                        }
+                    }
+                    .label {
+                        padding-right: 16px;
+                        font-size: 20px;
+                        color: $pearl;
+                        letter-spacing: 1.25px;
+                    }
+                }
+            }
+
+            .timer-clock {
+            }
+
+            .timer-buttons {
+                display: flex;
+                justify-content: center;
+
+                .timer-button {
+                    margin: 20px;
+                    border: none;
+                    border-radius: 4px;
+                    padding: 8px 32px;
+                    cursor: pointer;
+                    color: $pearl;
+                    letter-spacing: 1.25px;
+
+                    &.start-btn {
+                        background-color: green;
+                    }
+
+                    &.cancel-btn {
+                        background-color: red;
+                    }
+
+                    &.pause-btn {
+                        background-color: blue;
+                    }
+
+                    &:disabled {
+                        cursor: unset;
+                        opacity: 0.1;
+                    }
+                }
+            }
+
+            .timer-alarm {
+            }
+        }
+    }
+}

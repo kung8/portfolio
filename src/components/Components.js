@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 import japan from '../Assets/japan.jpeg';
 
-export default function Components() {
+function Components(props) {
     const [compArr, updateCompArr] = useState([]);
 
     useEffect(() => {
@@ -15,7 +16,11 @@ export default function Components() {
     }
 
     const handleLink = (link) => {
-        window.open(link, '_blank');
+        if (link.includes('http')) {
+            window.open(link, '_blank');
+        } else {
+            props.history.push(link);
+        }
     }
 
     const mapComponentArr = () => {
@@ -41,3 +46,5 @@ export default function Components() {
         </div>
     )
 }
+
+export default withRouter(Components); 

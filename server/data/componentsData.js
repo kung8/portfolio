@@ -15,6 +15,7 @@ const menu = '../assets/menu.png';
 const kronos = '../assets/kronos.png';
 const arcanine = '../assets/arcanine.png';
 const selector = '../assets/selector.png';
+const stopwatch = '../assets/stopwatch.png';
 
 module.exports = [
     // {
@@ -24,9 +25,33 @@ module.exports = [
     //     className: 'menu'
     // },
     {
+        image: stopwatch,
+        label: 'Stopwatch',
+        link: '/stopwatch',
+        className: null
+    },
+    {
+        image: selector,
+        label: 'Timer',
+        link: '/timer',
+        className: null
+    },
+    {
+        image: selector,
+        label: 'Clock',
+        link: '/clock',
+        className: null
+    },
+    {
+        image: selector,
+        label: 'Weather',
+        link: '/weather',
+        className: null
+    },
+    {
         image: selector,
         label: 'List Selector',
-        link: 'https://kevinung8.com/#/selector',
+        link: '/selector',
         className: null
     },
     {
@@ -62,13 +87,13 @@ module.exports = [
     {
         image: kronos,
         label: 'Disney\'s Kronos Program',
-        link: 'https://kevinung8.com/#/kronos',
+        link: '/kronos',
         className: null
     },
     {
         image: arcanine,
         label: 'Ditto\'s Transformation',
-        link: 'https://kevinung8.com/#/pokemon',
+        link: '/pokemon',
         className: null
     },
     {

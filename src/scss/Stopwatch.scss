@@ -1,0 +1,92 @@
+.stopwatch-page {
+    min-height: 100vh;
+    width: 100vw;
+    background: $silver;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @extend .fade-in;
+
+    .stopwatch-container {
+        margin-top: 150px;
+        min-width: 200px;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        max-width: 800px;
+        flex-direction: column;
+
+        .stopwatch {
+            margin-top: 56px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .stopwatch-time {
+                text-align: center;
+                color: $pearl;
+                font-size: 80px;
+            }
+
+            .stopwatch-buttons {
+                display: flex;
+                justify-content: center;
+
+                .stopwatch-button {
+                    margin: 20px;
+                    border: none;
+                    border-radius: 4px;
+                    padding: 8px 32px;
+                    cursor: pointer;
+                    color: $pearl;
+                    padding: 8px 32px;
+                    letter-spacing: 1.25px;
+
+                    &.play-btn {
+                        background-color: green;
+                    }
+
+                    &.stop-btn {
+                        background-color: red;
+                    }
+
+                    &.reset-btn, &.lap-btn {
+                        background-color: blue;
+                    }
+
+                    &:disabled {
+                        cursor: unset;
+                        opacity: 0.1;
+                    }
+                }
+            }
+
+            .stopwatch-laps {
+                margin-top: 24px;
+                max-height: 300px;
+                overflow-y: auto; 
+
+                .lap-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 400px;
+                    font-size: 24px;
+                    padding: 16px;
+                    border-top: 1px solid slategrey;
+                    &:last-of-type {
+                        border-bottom: 1px solid slategrey;
+                    }
+
+                    &.smallest {
+                        color: green;
+                    }
+
+                    &.largest {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}

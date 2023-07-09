@@ -97,7 +97,7 @@ $pearl: white;
     
     .card-front-container {
         position: relative;
-        background-color: #fff;
+        background-color: $pearl;
         border-radius: 16px;
         display: flex;
         border: solid $hitam 1px;
