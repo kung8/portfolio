@@ -1,7 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Home from '../components/About';
+import { Dashboard } from '../components/dashboard';
+
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Resume from '../components/Resume';
@@ -23,6 +24,6 @@ export default (
         <Route path="/projects" component={Projects} />
         <Route path="/music" component={Music} />
         <Route path="/contact" component={Contact} />
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Dashboard} />
     </Switch>
 )
