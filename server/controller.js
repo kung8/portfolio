@@ -1,12 +1,8 @@
 const nodemailer = require('nodemailer');
 const { EMAIL, PASSWORD } = process.env;
-const componentArr = require('./data/componentsData');
 const heroData = require('./data/superheroData');
 
 module.exports = {
-    getComponentArrData: async (req, res) => {
-        res.send(componentArr);
-    },
     getHeroData: async (req, res) => {
         res.send(heroData);
     },
