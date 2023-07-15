@@ -1,155 +1,124 @@
-.contact-page {
-    @extend .fade-in;
-    .container {
-        margin-top: 150px;
-        @include down($mobile-xl) {
-            margin-top: 100px;
-        }
-        .contact-container {
-            min-height: calc(100vh - 300px);
-            display: flex;
-            margin-bottom: 56px;
-            @include down($desktop) {
-                flex-direction: column-reverse;
-                align-items: center;
-            }
-            .me-or-company {
-                width: 50%;
-                padding: 32px;
-                height: fit-content;
-                @include down($desktop) {
-                    width: 100%;
-                    padding: 20px;
-                }
-            }
-            .contact-form-container {
-                width: 50%;
-                padding: 32px;
-                max-width: 550px;
-                @include down($desktop) {
-                    margin-bottom: 40px;
-                    padding: 20px;
-                    width: 75%;
-                }
-                @include down($tablet) {
-                    width: 100%;
-                }
-                .heading {
-                    margin-bottom: 40px;
-                    text-transform: uppercase;
-                    letter-spacing: 0.75px;
-                    @include down($tablet) {
-                        text-align: center;
-                    }
-                    @include down($mobile) {
-                        font-size: 28px;
-                    }
-                    @include down($extra-small) {
-                        margin-bottom: 32px;
-                    }
-                }
-                .message-text {
-                    margin-bottom: 40px;
-                    font-size: 14px;
-                    @include down($desktop) {
-                        margin-bottom: 24px;
-                    }
-                }
-                .contact-form {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .form-field {
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        margin-bottom: 24px;
-                        &:last-of-type {
-                            margin-bottom: 32px;
-                        }
-                        span {
-                            margin-bottom: 8px;
-                            font-size: 14px;
-                            @include down($desktop) {
-                                margin-bottom: 4px;
-                            }
-                        }
-                        input, textarea {
-                            padding: 12px;
-                            border: none;
-                            border-bottom: 1px solid black;
-                            outline: none;
-                            font-size: 18px;
-                            cursor: pointer;
-                            &:hover {
-                                border-bottom: 2px solid black;
-                            }
-                            &.validated {
-                                border-bottom: 1px solid #9fffba;
-                            }
-                            &.invalid {
-                                border-bottom: 1px solid red;
-                            }
-                            @include down($desktop) {
-                                padding: 8px;
-                            }
-                        }
-                        textarea {
-                            max-height: 100px;
-                            max-width: 100%;
-                            min-height: 100px;
-                            min-width: 100%;
-                            @include down($desktop) {
-                                max-height: 85px;
-                                min-height: 85px;
-                            }
-                        }
-                    }
-                    .submit-btn {
-                        cursor: pointer;
-                        border: none;
-                        background-color: transparent;
-                        text-transform: uppercase;
-                        letter-spacing: 0.75px;
-                    }
-                }
-            }
-        }
-        .resume-links-container {
-            display: flex;
-            justify-content: space-evenly;
-            width: 100%;
-            min-width: 300px;
-            margin-bottom: 56px;
-        }
-        .resume-link {
-            z-index: 1;
-            cursor: pointer;
-            padding: 8px 20px;
-            max-width: 250px;
-            color: white;
-            border-radius: 16px;
-            text-decoration: none;
-            text-shadow: 1px 1px 10px black;
-            background: lightgreen;
-            outline: none;
-            @media screen and (max-width: $tablet) {
-                padding: 6px 15px;
-                font-size: 14px;
-            }
-            &:hover {
-                box-shadow: 1px 1px 8px 2px rgb(173, 251, 173);
-            }
-            &.downloadable-link {
-                background: skyblue;
-                &:hover {
-                    box-shadow: 1px 1px 8px 2px rgb(176, 221, 239);
-                }
-                &:focus {
-                    box-shadow: 1px 1px 8px 2px rgb(176, 221, 239);
-                }
-            }
+.contact-container {
+    padding-left: 24px;
+
+    .message-text {
+        margin-bottom: 40px;
+        font-size: 14px;
+        @include down($desktop) {
+            margin-bottom: 24px;
         }
     }
+
+    .contact-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 24px;
+            &:last-of-type {
+                margin-bottom: 32px;
+            }
+
+            span {
+                margin-bottom: 8px;
+                font-size: 14px;
+                @include down($desktop) {
+                    margin-bottom: 4px;
+                }
+            }
+
+            input, textarea {
+                padding: 12px;
+                border: none;
+                border-bottom: 1px solid $white;
+                font-size: 16px;
+                background: transparent;
+                outline: none;
+                cursor: pointer;
+                color: $white;
+                &:hover {
+                    border-bottom: 2px solid $white;
+                }
+                &.validated {
+                    border-bottom: 1px solid #9fffba;
+                }
+                &.invalid {
+                    border-bottom: 1px solid red;
+                }
+                @include down($desktop) {
+                    padding: 8px;
+                }
+            }
+            textarea {
+                max-height: 100px;
+                max-width: 100%;
+                min-height: 100px;
+                min-width: 100%;
+                @include down($desktop) {
+                    max-height: 85px;
+                    min-height: 85px;
+                }
+            }
+        }
+        .submit-btn {
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 0.75px;
+            color: $white;
+        }
+    }
+
+    .me-or-company {
+        width: 100%;
+        height: fit-content;
+        // margin-bottom: 40px;
+        @include down($desktop) {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+
+    // .resume-links-container {
+    //     display: flex;
+    //     justify-content: space-evenly;
+    //     width: 100%;
+    //     min-width: 300px;
+    // }
+
+    // .resume-link {
+    //     z-index: 1;
+    //     cursor: pointer;
+    //     padding: 8px 20px;
+    //     max-width: 250px;
+    //     color: white;
+    //     border-radius: 16px;
+    //     text-decoration: none;
+    //     text-shadow: 1px 1px 10px black;
+    //     background: lightgreen;
+    //     outline: none;
+    //     @media screen and (max-width: $tablet) {
+    //         padding: 6px 15px;
+    //         font-size: 14px;
+    //     }
+    //     &:hover {
+    //         box-shadow: 1px 1px 8px 2px rgb(173, 251, 173);
+    //     }
+    //     &.downloadable-link {
+    //         background: skyblue;
+    //         &:hover {
+    //             box-shadow: 1px 1px 8px 2px rgb(176, 221, 239);
+    //         }
+    //         &:focus {
+    //             box-shadow: 1px 1px 8px 2px rgb(176, 221, 239);
+    //         }
+    //     }
+    // }
 }

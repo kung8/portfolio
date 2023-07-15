@@ -1,5 +1,5 @@
 import React from 'react';
-import finance from '../../Assets/dollar-symbol.png';
+import finance from '../../assets/dollar-symbol.png';
 
 export default function Screens(props) {
     const { updateScreenDisplay } = props;
