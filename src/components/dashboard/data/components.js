@@ -1,10 +1,10 @@
-import playingCard from '../assets/Components/8-of-hearts.png';
-import guitar from '../assets/Components/guitar.png';
-import battleship from '../assets/Components/battleship.png';
-import periodicTable from '../assets/Components/periodic-table.png';
-import kronos from '../assets/Components/kronos.png';
-// import arcanine from '../assets/Components/arcanine.png';
-import selector from '../assets/Components/selector.png';
+import playingCard from '../../../assets/Components/8-of-hearts.png';
+import guitar from '../../../assets/Components/guitar.png';
+import battleship from '../../../assets/Components/battleship.png';
+import periodicTable from '../../../assets/Components/periodic-table.png';
+import kronos from '../../../assets/Components/kronos.png';
+// import arcanine from '../../../assets/Components/arcanine.png';
+import selector from '../../../assets/Components/selector.png';
 
 export const components = [
     {
