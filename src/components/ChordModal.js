@@ -1,7 +1,6 @@
 import React from 'react';
 
 function ChordModal(props) {
-
     return (
         <div className="chords-modal">
             <button className="close-modal-btn p-abs" onClick={() => props.closeModal()}>X</button>
