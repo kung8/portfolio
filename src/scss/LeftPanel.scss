@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 2;
-    padding: 64px 0 64px 64px;
+    padding: 64px 0 64px 80px;
     @include down($desktop) {
         margin-bottom: 96px;
         justify-content: unset;

@@ -50,11 +50,21 @@
     }
 
     .item-image {
+        @include up(1200px) {
+            width: 200px;
+            height: 200px;
+            min-width: 200px;
+        }
         width: 175px;
         height: 175px;
         min-width: 175px;
         margin-right: 24px;
         border-radius: 8px;
+        @include down($desktop) {
+            width: 200px;
+            height: 200px;
+            min-width: 200px;
+        }
         @include down($tablet) {
             width: unset;
             min-width: unset;
@@ -74,12 +84,24 @@
     }
 
     .item-date-range {
+        @include up(1200px) {
+            width: 200px;
+            height: 200px;
+            min-width: 200px;
+        }
         font-size: 14px;
         color: $default;
         min-width: 170px;
+        @include down($desktop) {
+            width: 200px;
+            height: 200px;
+            min-width: 200px;
+            margin-right: 24px;
+        }
         @include down($tablet) {
             min-width: unset;
             margin-bottom: 8px;
+            margin-right: 0;
         }
     }
 

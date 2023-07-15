@@ -15,7 +15,7 @@ const Item = ({ title, organization, dateRange, showEndDateOnly, images, bullets
                 <span className='item-date-range'>{dateRange.join(' - ')}</span>
             )
         }
-        <div>
+        <div className="item-details">
             {organization && <h6 className='item-organization'>{organization} {hosted && <span className="hosted-badge">H</span>}</h6>}
             {title && <h6 className='item-title'>{title}</h6>}
             {bullets?.length ? (
