@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { music } from '../dashboard';
+import { music } from './data';
 import playLogo from '../../assets/play-btn.png';
 
 const MusicItem = ({ song, index, selectedSong, setSelectedSong, setPreviousSong }) => {
