@@ -8,9 +8,7 @@ export const Cursor = () => {
         cursor.style.setProperty('top', y + 'px');
     }
 
-    useEffect(() => {
-        document.addEventListener('mousemove', cursorMove);
-    }, []);
+    useEffect(() => document.addEventListener('mousemove', cursorMove), []);
 
     return <div className='cursor'></div>
 }
