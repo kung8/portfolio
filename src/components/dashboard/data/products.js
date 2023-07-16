@@ -1,6 +1,8 @@
 import playingCard from '../../../assets/Components/8-of-hearts.png';
 import games from '../../../assets/Products/full-set.png';
 
+const baseUrl = process.env.NODE_ENV === 'production' ? 'https://kevinung8.com/#' : 'http://localhost:3000/#';
+
 export const products = [
     {
         organization: 'Songs',
@@ -8,7 +10,7 @@ export const products = [
         bullets: [
             'Meet Eden, my guitar! I dabble with music production and songwriting. T-Swift among many other country/pop artists have been my inspiration. I am hoping to work on more music over the next half of the year.',
         ],
-        url: 'https://kevinung8.com/#/music',
+        url: baseUrl + '/music',
         hosted: true,
         show: true,
     },
