@@ -115,28 +115,70 @@
 .music {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: unset;
-    padding: 80px;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    // &.sticky {
+    //     align-items: unset;
+    // }
+    &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    @include down($desktop) {
+        padding: 0;
+    }
+
     .music-heading-container {
         width: 100%;
-        
+        padding: 80px 48px 24px;
+        z-index: 1;
+        @include down($desktop) {
+            padding: 56px 48px 0px;
+        }
+
+        .back-btn {
+            cursor: pointer;
+            color: $white;
+            margin-bottom: 8px;
+            display: block;
+            
+            &:hover {
+                color: $primary-blue;
+            }
+
+            @include down($tablet) {
+                color: $primary-blue;
+            }
+        }
+
         .music-heading {
             margin-bottom: 40px;
         }
     }
+
     .music-table {
         z-index: 1;
+        margin-bottom: 175px;
+        width: 100vw;
         .row {
             display: flex;
             list-style: none;
-            padding: 12px 20px;
+            padding: 12px;
             cursor: pointer;
             &.row-labels {
-                border-bottom: 1px solid $default;
                 margin-bottom: 8px;
+                position: sticky;
+                top: 0;
                 li {
                     color: $default;
+                }
+                &.sticky {
+                    border-bottom: 1px solid $default;
+                    background: $hover;
                 }
             }
             &.row-item {
@@ -147,23 +189,71 @@
             }
 
             .id {
-                width: 50px;
+                width: 24px;
+                text-align: right;
+
+                .id-number {
+                    display: block;
+                    &.selected-song {
+                        color: $primary-blue;
+                    }
+                }
+
+                .play-btn {
+                    width: 16px;
+                    height: 16px;
+                    &.double-digits {
+                        transform: translate(-1px, 0);
+                    }
+                    &.single-digit {
+                        transform: translate(2px, 0);
+                    }
+                }
             }
             .song-name {
                 width: 275px;
+                padding-left: 32px;
+                @include down($tablet) {
+                    max-width: 275px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                &.selected-song {
+                    color: $primary-blue;
+                }
             }
             .added-at {
                 width: 150px;
                 text-align: center;
+                @include down($mobile-xl) {
+                    display: none;
+                }
             }
             .created-at {
                 width: 100px;
                 text-align: center;
+                @include down($tablet) {
+                    display: none;
+                }
             }
             .time {
                 width: 100px;
                 text-align: center;
             }
         }
+    }
+
+    .music-player {
+        position: fixed;
+        bottom: 0;
+        padding: 40px;
+        background: $aqua;
+        width: 100vw;
+        color: $default;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
     }
 }
