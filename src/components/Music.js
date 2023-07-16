@@ -1,72 +1,32 @@
-import React, { useState, useEffect } from 'react';
-import japan from '../assets/me.jpeg';
-import KeepOnKeepingOn from './Songs/KeepOnKeepingOn';
-import HeroToMe from './Songs/HeroToMe';
-import TheGame from './Songs/TheGame';
-import SearchingForYou from './Songs/SearchingForYou';
-import ProdigalSon from './Songs/ProdigalSon';
-import FragileHeart from './Songs/FragileHeart';
-import Strong from './Songs/Strong';
-import ChordModal from './ChordModal';
+import React from 'react';
+import { Cursor } from './Cursor';
+import { music } from './data';
 
-function Music() {
-    const [selectedChord, updateSelectedChord] = useState(null);
-    const [modalIsOpen, updateModalIsOpen] = useState(false);
-
-    useEffect(() => {
-        addModalClick();
-        // eslint-disable-next-line
-    }, []);
-
-    const addModalClick = () => {
-        document.querySelectorAll('.music-cards .p-abs').forEach(chord => {
-            chord.addEventListener('click', () => {
-                updateSelectedChord(chord.innerText);
-                updateModalIsOpen(true);
-            });
-        });
-        document.querySelectorAll('.music-cards .ind-chord').forEach(chord => {
-            chord.addEventListener('click', () => {
-                updateSelectedChord(chord.innerText);
-                updateModalIsOpen(true);
-            });
-        });
-
-        document.querySelectorAll('.audio-control').forEach(audio => {
-            let id = audio.getAttribute('id');
-            audio.addEventListener('play', () => handlePlayAndPause(id))
-        });
-    }
-
-    const closeModal = () => {
-        updateSelectedChord(null);
-        updateModalIsOpen(false);
-    }
-
-    const handlePlayAndPause = (selectedAudio) => {
-        document.querySelectorAll('.audio-control').forEach(audio => {
-            if (selectedAudio === audio.getAttribute('id')) audio.play();
-            else audio.pause();
-        });
-    }
-
+export const Music = () => {
     return (
-        <div className="music-page flex" style={{ backgroundImage: `url(${japan})` }}>
-            <div className="music-inner-container flex-col justify-around set-top align-ctr">
-                <h1>Music:</h1>
-                <div className="music-cards">
-                    <ProdigalSon />
-                    <SearchingForYou />
-                    <KeepOnKeepingOn />
-                    <TheGame />
-                    <HeroToMe />
-                    <Strong />
-                    <FragileHeart />
-                </div>
-                {modalIsOpen && <ChordModal selectedChord={selectedChord} closeModal={closeModal} />}
+        <div className='music page'>
+            <div className="music-heading-container">
+                <h1 className="music-heading">Music</h1>
             </div>
+            <div className="music-table">
+                <ul className="row row-labels">
+                    <li className="id">#</li>
+                    <li className="song-name">Song Name</li>
+                    <li className="date-added">Date Added</li>
+                    <li className="year-created">Year Created</li>
+                    <li className="time">Time</li>
+                </ul>
+                {music.reverse().map((song, index) => (
+                    <ul key={index} className="row row-item">
+                        <li className="id">{index}</li>
+                        <li className="song-name">{song.name}</li>
+                        <li className="date-added">{song.dateAdded}</li>
+                        <li className="year-created">{song.yearCreated}</li>
+                        <li className="time">{song.time}</li>
+                    </ul>
+                ))}
+            </div>
+            <Cursor />
         </div>
     )
 }
-
-export default Music;

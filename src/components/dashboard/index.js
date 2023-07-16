@@ -4,6 +4,7 @@ export * from './RightPanel';
 export * from './About';
 export * from './Experiences';
 export * from './Projects';
+export * from './Products';
 export * from './Components';
 export * from './Education';
 export * from './Contact';

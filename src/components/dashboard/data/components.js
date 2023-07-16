@@ -3,7 +3,6 @@ import guitar from '../../../assets/Components/guitar.png';
 import battleship from '../../../assets/Components/battleship.png';
 import periodicTable from '../../../assets/Components/periodic-table.png';
 import kronos from '../../../assets/Components/kronos.png';
-// import arcanine from '../../../assets/Components/arcanine.png';
 import selector from '../../../assets/Components/selector.png';
 
 export const components = [
@@ -20,23 +19,8 @@ export const components = [
         images: [periodicTable],
         url: 'https://yourmove.dev/#/science/chemistry',
         hosted: true,
-        className: null,
         show: true,
     },
-    // {
-    //     organization: 'Ditto\'s Transformation',
-    //     bullets: [
-    //         'Mimicking a Pokedex, I used Ditto as the main character and he transforms into whichever Pokemon the user selects.',
-    //     ],
-    //     chips: [
-    //         'React JS',
-    //     ],
-    //     images: [arcanine],
-    //     url: 'https://kevinung8.com/#/pokemon',
-    //     hosted: true,e
-    //     className: null,
-    //     show: false,
-    // },
     {
         organization: 'Disney\'s Kronos Program',
         bullets: [
@@ -48,7 +32,6 @@ export const components = [
         images: [kronos],
         url: 'https://kevinung8.com/#/kronos',
         hosted: true,
-        className: null,
         show: false,
     },
     {
@@ -65,7 +48,6 @@ export const components = [
         images: [battleship],
         url: 'https://yourmove.dev/#/game/Battleship',
         hosted: true,
-        className: 'battleship',
         show: true,
     },
     {
@@ -80,7 +62,6 @@ export const components = [
         images: [guitar],
         url: 'https://yourmove.dev/#/music/instruments/guitar',
         hosted: true,
-        className: 'guitar',
         show: true,
     },
     {
@@ -96,7 +77,6 @@ export const components = [
         images: [playingCard],
         url: 'https://yourmove.dev/#/game/Black%20Jack',
         hosted: true,
-        className: null,
         show: true,
     },
     {
@@ -112,7 +92,6 @@ export const components = [
         images: [selector],
         url: 'https://kevinung8.com/#/selector',
         hosted: true,
-        className: null,
         show: false,
     },
 ]

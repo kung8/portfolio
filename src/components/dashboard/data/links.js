@@ -1,4 +1,4 @@
-import { About, Experiences, Projects, Components, Education, Contact } from '..';
+import { About, Experiences, Projects, Products, Components, Education, Contact } from '..';
 
 export const links = [
     {
@@ -17,6 +17,12 @@ export const links = [
         label: 'Projects',
         id: 'projects',
         component: Projects,
+        show: true,
+    },
+    {
+        label: 'Products',
+        id: 'products',
+        component: Products,
         show: true,
     },
     {

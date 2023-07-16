@@ -84,17 +84,11 @@
     }
 
     .item-date-range {
-        @include up(1200px) {
-            width: 200px;
-            height: 200px;
-            min-width: 200px;
-        }
         font-size: 14px;
         color: $default;
         min-width: 170px;
         @include down($desktop) {
             width: 200px;
-            height: 200px;
             min-width: 200px;
             margin-right: 24px;
         }

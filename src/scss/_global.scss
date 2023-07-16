@@ -16,7 +16,7 @@
 }
 
 .flex {
-    display: flex;   
+    display: flex;
 }
 
 .flex-col {
@@ -124,5 +124,38 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+.page {
+    background-color: $aqua;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    @include down($desktop) {
+        padding: 80px 32px;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.cursor {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease-out;
+    &:before {
+        content: "";
+        display: block;
+        width: 800px;
+        height: 800px;
+        border-radius: 50%;
+        background: rgba(240, 234, 214, 0.5);
+        opacity: 0.01;
+        pointer-events: none;
+    }
+
+    @include down($desktop) {
+        display: none;
     }
 }
