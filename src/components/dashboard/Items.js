@@ -5,7 +5,7 @@ import whiteDown from '../../assets/white-down.png';
 import whiteUp from '../../assets/white-up.png';
 
 const Item = ({ title, organization, dateRange, showEndDateOnly, images, bullets, chips, url, hosted }) => (
-    <a href={url && url} target={url && '_blank'} className={`item-container ${url ? 'clickable' : ''}`}>
+    <a href={url && url} target={url?.includes('kevinung8.com') || url?.includes('localhost') ? '_self' : '_blank'} className={`item-container ${url ? 'clickable' : ''}`}>
         {images && images[0] ?
             <img className='item-image' src={images[0]} alt={title} />
             :

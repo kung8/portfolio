@@ -126,23 +126,43 @@
         }
     }
     .music-table {
+        z-index: 1;
         .row {
             display: flex;
             list-style: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            &.row-labels {
+                border-bottom: 1px solid $default;
+                margin-bottom: 8px;
+                li {
+                    color: $default;
+                }
+            }
+            &.row-item {
+                &:hover {
+                    background: $hover;
+                    border-radius: 4px;
+                }
+            }
+
             .id {
-                width: 100px;
+                width: 50px;
             }
             .song-name {
-                width: 300px;
+                width: 275px;
             }
-            .date-added {
+            .added-at {
+                width: 150px;
+                text-align: center;
+            }
+            .created-at {
                 width: 100px;
-            }
-            .year-created {
-                width: 200px;
+                text-align: center;
             }
             .time {
                 width: 100px;
+                text-align: center;
             }
         }
     }

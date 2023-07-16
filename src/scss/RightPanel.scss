@@ -25,7 +25,7 @@
         @include up($desktop) {
             width: 550px;
         }
-        @include up(1200px) {
+        @include up($mid-desktop) {
             width: 700px;
         }
         @include down($desktop) {
