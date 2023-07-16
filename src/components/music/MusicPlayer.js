@@ -16,7 +16,9 @@ export const MusicPlayer = ({ selectedSong, previousSong }) => {
             <source src={song ? song : ''} type="audio/mp3" />
             <source src={song ? song : ''} type="audio/mpeg" />
             <source src={song ? song : ''} type="audio/m4a" />
-            {/* <p>Your browser does not support HTML5 audio, but you can download my music at <a href={download}>here</a></p> */}
+            {/* 
+                <p>Your browser does not support HTML5 audio, but you can download my music at <a href={download}>here</a></p> 
+            */}
         </audio>
     )
 
