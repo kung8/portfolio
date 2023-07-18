@@ -130,6 +130,7 @@ export const experiences = [
             'Figma',
             'Postman',
             'Cypress',
+            'Linear',
         ],
         url: 'https://www.getweave.com/',
         hosted: true,

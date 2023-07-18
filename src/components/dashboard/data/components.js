@@ -28,6 +28,7 @@ export const components = [
         ],
         chips: [
             'React JS',
+            'Sass',
         ],
         images: [kronos],
         url: 'https://kevinung8.com/#/kronos',
@@ -43,7 +44,8 @@ export const components = [
             'React JS',
             'Toast',
             'Sockets',
-            'Redux'
+            'Redux',
+            'Sass',
         ],
         images: [battleship],
         url: 'https://yourmove.dev/#/game/Battleship',
