@@ -1,9 +1,9 @@
 import React from 'react';
 import { links } from '.';
-import githubLogo from '../../assets/github-logo.png';
-import linkedInLogo from '../../assets/linkedin-logo.png';
-import gmailLogo from '../../assets/gmail-logo.png';
-import messageLogo from '../../assets/message-logo.png';
+import githubLogo from '../../Assets/github-logo.png';
+import linkedInLogo from '../../Assets/linkedin-logo.png';
+import gmailLogo from '../../Assets/gmail-logo.png';
+import messageLogo from '../../Assets/message-logo.png';
 
 export const LeftPanel = ({ selected, setSelected }) => {
     const handleScroll = (num) => {

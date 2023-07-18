@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import deleteIcon from '../../assets/close.png';
+import deleteIcon from '../../Assets/close.png';
 import Wheel from './Wheel';
 import { times } from './time';
 import { Slide, ToastContainer, toast } from 'react-toastify';

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { music } from './data';
-import playLogo from '../../assets/play-btn.png';
-import pauseLogo from '../../assets/pause-btn.png';
+import playLogo from '../../Assets/play-btn.png';
+import pauseLogo from '../../Assets/pause-btn.png';
 
 const MusicItem = ({ song, index, selectedSong, setSelectedSong, setPreviousSong, isPlaying, setIsPlaying }) => {
     const [hover, setHover] = useState(false);

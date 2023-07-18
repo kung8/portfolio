@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import japan from '../assets/me.jpeg';
+import japan from '../Assets/me.jpeg';
 import KeepOnKeepingOn from './Songs/KeepOnKeepingOn';
 import HeroToMe from './Songs/HeroToMe';
 import TheGame from './Songs/TheGame';

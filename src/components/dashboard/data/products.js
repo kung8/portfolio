@@ -1,5 +1,5 @@
-import eden from '../../../assets/Products/eden.jpeg';
-import games from '../../../assets/Products/full-set.png';
+import eden from '../../../Assets/Products/eden.jpeg';
+import games from '../../../Assets/Products/full-set.png';
 
 const baseUrl = process.env.NODE_ENV === 'production' ? 'https://kevinung8.com/#' : 'http://localhost:3000/#';
 

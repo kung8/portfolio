@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import japan from '../../assets/me.jpeg';
+import japan from '../../Assets/me.jpeg';
 import { validator } from "../../utils/validator";
 
 // const id = '1jMAfdIYWomKJf6khY9Eq-3pVWVmoXH82';
