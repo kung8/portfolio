@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { music } from './data';
 import playLogo from '../../assets/play-btn.png';
+import pauseLogo from '../../assets/pause-btn.png';
 
-const MusicItem = ({ song, index, selectedSong, setSelectedSong, setPreviousSong }) => {
+const MusicItem = ({ song, index, selectedSong, setSelectedSong, setPreviousSong, isPlaying, setIsPlaying }) => {
     const [hover, setHover] = useState(false);
+
     return (
         <ul
             key={index}
@@ -15,11 +17,18 @@ const MusicItem = ({ song, index, selectedSong, setSelectedSong, setPreviousSong
                 {hover ? (
                     <img
                         className={`play-btn ${index > 9 ? 'double-digits' : 'single-digit'}`}
-                        src={playLogo}
-                        alt="play"
+                        src={selectedSong === song.url && isPlaying ? pauseLogo : playLogo}
+                        alt={selectedSong === song.url && isPlaying ? 'pause' : 'play'}
                         onClick={() => {
-                            const previousSong = selectedSong;
-                            if (selectedSong !== song.url) {
+                            if (selectedSong === song.url && isPlaying) {
+                                setIsPlaying(false);
+                                document.querySelector('.audio-control').pause();
+                            } else if (selectedSong === song.url) {
+                                setIsPlaying(true);
+                                document.querySelector('.audio-control').play();
+                            } else {
+                                setIsPlaying(true);
+                                const previousSong = selectedSong;
                                 setPreviousSong(previousSong);
                                 setSelectedSong(song.url)
                             }
@@ -39,7 +48,7 @@ const MusicItem = ({ song, index, selectedSong, setSelectedSong, setPreviousSong
 
 const sortedMusic = music.reverse();
 
-export const MusicTable = ({ selectedSong, setSelectedSong, setPreviousSong }) => (
+export const MusicTable = ({ selectedSong, setSelectedSong, setPreviousSong, isPlaying, setIsPlaying }) => (
     <div className="music-table">
         <ul className="row row-labels">
             <li className="id">#</li>
@@ -49,7 +58,7 @@ export const MusicTable = ({ selectedSong, setSelectedSong, setPreviousSong }) =
             <li className="time">Time</li>
         </ul>
         {sortedMusic.map((song, index) => (
-            <MusicItem key={index} {...{ song, index, selectedSong, setSelectedSong, setPreviousSong }} />
+            <MusicItem key={index} {...{ song, index, selectedSong, setSelectedSong, setPreviousSong, isPlaying, setIsPlaying }} />
         ))}
     </div>
 )

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export const MusicPlayer = ({ selectedSong, previousSong }) => {
+export const MusicPlayer = ({ selectedSong, previousSong, setIsPlaying }) => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -10,8 +10,16 @@ export const MusicPlayer = ({ selectedSong, previousSong }) => {
         }, 0);
     }, [selectedSong]);
 
+    const pause = () => {
+        setIsPlaying(false);
+    }
+
+    const play = () => {
+        setIsPlaying(true);
+    }
+
     const createAudioPlayer = (song) => (
-        <audio id="selected-song" className="audio-control" controls autoPlay>
+        <audio id="selected-song" className="audio-control" controls autoPlay onPause={pause} onPlay={play}>
             <source src={song ? song : ''} type="audio/mp4" />
             <source src={song ? song : ''} type="audio/mp3" />
             <source src={song ? song : ''} type="audio/mpeg" />

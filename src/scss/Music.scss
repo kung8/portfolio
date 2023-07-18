@@ -113,12 +113,15 @@
 // }
 
 .music {
-    display: flex;
-    flex-direction: column;
-    justify-content: unset;
-    align-items: center;
+    display: block;
     height: auto;
     min-height: 100vh;
+    padding: 80px;
+    min-width: 100vw;
+    @include down($tablet) {
+        padding: 56px 56px;
+    }
+
     // &.sticky {
     //     align-items: unset;
     // }
@@ -128,24 +131,16 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 
-    @include down($desktop) {
-        padding: 0;
-    }
-
     .music-heading-container {
-        width: 100%;
-        padding: 80px 48px 24px;
+        position: relative;
         z-index: 1;
-        @include down($desktop) {
-            padding: 56px 48px 0px;
-        }
 
         .back-btn {
             cursor: pointer;
             color: $white;
             margin-bottom: 8px;
             display: block;
-            
+
             &:hover {
                 color: $primary-blue;
             }
@@ -161,9 +156,10 @@
     }
 
     .music-table {
+        position: relative;
         z-index: 1;
         margin-bottom: 175px;
-        width: 100vw;
+
         .row {
             display: flex;
             list-style: none;
@@ -248,12 +244,16 @@
     .music-player {
         position: fixed;
         bottom: 0;
-        padding: 40px;
+        padding: 40px 0;
         background: $aqua;
-        width: 100vw;
         color: $default;
         z-index: 2;
         display: flex;
         justify-content: center;
+        width: 100vw;
+        margin-left: -80px;
+        @include down($tablet) {
+            margin-left: -56px;
+        }
     }
 }
