@@ -6,4 +6,7 @@ export const useGetData = (type) =>
         queryKey: ['getData', type],
         queryFn: async () => axios.get('/api/data?type=' + type),
         select: res => res.data,
+        refetchOnMount: false,
+        refetchOnWindowFocus: false,
+        refetchOnReconnect: false,
     })
