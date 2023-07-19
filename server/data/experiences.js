@@ -1,4 +1,4 @@
-export const experiences = [
+const experiences = [
     {
         title: 'Talent / HR Admin',
         organization: 'THG',
@@ -160,4 +160,6 @@ export const experiences = [
         hosted: true,
         show: true,
     }
-]
+];
+
+module.exports = experiences;

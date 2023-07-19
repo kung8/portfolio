@@ -1,4 +1,4 @@
-export const education = [
+const education = [
     {
         title: 'BS, Business Management',
         organization: 'Brigham Young University',
@@ -44,4 +44,6 @@ export const education = [
         ],
         show: true,
     },
-]
+];
+
+module.exports = education;

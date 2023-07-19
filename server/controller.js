@@ -2,9 +2,17 @@ const nodemailer = require('nodemailer');
 const { EMAIL, PASSWORD } = process.env;
 const heroes = require('./data/superheroData');
 const components = require('./data/components');
+const education = require('./data/education');
+const experiences = require('./data/experiences');
+const products = require('./data/products');
+const projects = require('./data/projects');
 
 const data = {
     components, 
+    education,
+    experiences,
+    products,
+    projects,
     // heroes, 
 }
 

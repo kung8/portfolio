@@ -1,9 +1,9 @@
-import eden from '../../../Assets/Products/eden.jpeg';
-import games from '../../../Assets/Products/full-set.png';
+const eden = '../assets/Products/eden.jpeg';
+const games = '../assets/Products/full-set.png';
 
 const baseUrl = process.env.NODE_ENV === 'production' ? 'https://kevinung8.com/#' : 'http://localhost:3000/#';
 
-export const products = [
+const products = [
     {
         organization: 'Songs',
         images: [eden],
@@ -24,4 +24,6 @@ export const products = [
         hosted: true,
         show: true,
     },
-]
+];
+
+module.exports = products;

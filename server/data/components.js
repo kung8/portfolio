@@ -2,7 +2,7 @@ const playingCard = '../assets/Components/8-of-hearts.png';
 const guitar = '../assets/Components/guitar.png';
 const battleship = '../assets/Components/battleship.png';
 const periodicTable = '../assets/Components/periodic-table.png';
-const kronos = '../assets/Components/kronos.png';
+// const kronos = '../assets/Components/kronos.png';
 const selector = '../assets/Components/selector.png';
 
 const components = [
