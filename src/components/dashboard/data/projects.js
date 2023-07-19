@@ -142,7 +142,7 @@ export const projects = [
         dateRange: ['Mar 2021', 'Jun 2021'],
         images: [adminBottom, adminMenu, adminMenuNoSelection, cart, editMenuItem, menuItem, menuCollapsed, menuExpanded, status, statusFiltered, statusNothingToDisplay],
         bullets: [
-            "This app builds on basic socket connections, React components, personal sass styling and animations, and engineered with an increased focus on admin and non-admin UX/UI. I got to practice organizing data from the backend and formatted it to display correctly in the frontend. This app does not utilize Redux because I didn't think it needed a global state management, but ended up accessing sessionStorage and cookies (which is what redux is doing under the hood).",
+            "This app builds on basic socket connections, React components, personal sass styling and animations, and engineered with an increased focus on admin and non-admin UX/UI. I got to practice organizing data from the backend and formatted it to display correctly in the frontend. I managed state with React's useState and the browser's sessionStorage and cookies.",
         ],
         chips: [
             'React JS',
