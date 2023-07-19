@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import { components, Items } from '.';
+import { Items } from '.';
+import { useGetData } from '../../hooks';
 
 export const Components = ({ id }) => {
     const [showMore, setShowMore] = useState(false);
+    const { data: components } = useGetData('components');
+
     return (
         <div id={id} className='components-container section-container'>
             <h4 className='label'>Components</h4>
-            <Items
+            {components?.length && <Items
                 items={components}
                 showMore={showMore}
                 setShowMore={setShowMore}
@@ -14,7 +17,7 @@ export const Components = ({ id }) => {
                     show: 'View More Components',
                     hide: 'View Less Components'
                 }}
-            />
+            />}
         </div>
     )
 }

@@ -1,10 +1,21 @@
 const nodemailer = require('nodemailer');
 const { EMAIL, PASSWORD } = process.env;
-const heroData = require('./data/superheroData');
+const heroes = require('./data/superheroData');
+const components = require('./data/components');
+
+const data = {
+    components, 
+    // heroes, 
+}
+
 
 module.exports = {
-    getHeroData: async (req, res) => {
-        res.send(heroData);
+    getHeroData: async (_req, res) => {
+        res.send(heroes);
+    },
+    getData: async (req, res) => {
+        const { type } = req.query;
+        res.send(data[type] ?? []);
     },
     message: async (req, res) => {
         const { name, message, email, subject } = req.body;
