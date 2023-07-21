@@ -107,6 +107,8 @@ const experiences = [
             'Bcrypt',
             'dotenv',
         ],
+        url: 'http://159.65.98.93:8586/#/',
+        hosted: true,
         show: true,
     },
     {

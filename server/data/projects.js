@@ -154,6 +154,7 @@ const projects = [
             'Lodash',
             'Twilio',
         ],
+        url: 'http://159.65.98.93:8586/#/',
         // url: 'https://aladonerecipes.com',
         domain: false,
         hosted: false,
