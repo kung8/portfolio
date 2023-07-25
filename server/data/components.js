@@ -4,6 +4,7 @@ const battleship = '../assets/Components/battleship.png';
 const periodicTable = '../assets/Components/periodic-table.png';
 // const kronos = '../assets/Components/kronos.png';
 const selector = '../assets/Components/selector.png';
+const genericScoreSheet = '../assets/Components/generic-score-sheet.png';
 
 const components = [
     {
@@ -95,6 +96,21 @@ const components = [
         url: 'https://kevinung8.com/#/selector',
         hosted: true,
         show: false,
+    },
+    {
+        organization: 'Generic Score Sheet',
+        bullets: [
+            'After a long day or week full of responsibilities, the last thing we want to do is more math to keep track of scores.',
+        ],
+        chips: [
+            'React JS',
+            'Sass',
+            'Lodash'
+        ],
+        images: [genericScoreSheet],
+        url: 'https://buddingacorn.dev/#/resources/1',
+        hosted: true,
+        show: true,
     },
 ];
 
