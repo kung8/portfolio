@@ -1,9 +1,9 @@
 import React from 'react';
 import { links } from '.';
-import githubLogo from '../../Assets/github-logo.png';
-import linkedInLogo from '../../Assets/linkedin-logo.png';
-import gmailLogo from '../../Assets/gmail-logo.png';
-import messageLogo from '../../Assets/message-logo.png';
+import githubLogo from '../../Assets/github.png';
+import linkedInLogo from '../../Assets/linkedin.png';
+import gmailLogo from '../../Assets/gmail.png';
+import messageLogo from '../../Assets/messages.png';
 
 export const LeftPanel = ({ selected, setSelected }) => {
     const handleScroll = (num) => {
@@ -34,11 +34,11 @@ export const LeftPanel = ({ selected, setSelected }) => {
                 <a href="https://github.com/kung8" target="_blank" rel="noopener noreferrer">
                     <img src={githubLogo} alt="github-logo" />
                 </a>
+                <a href="mailto:kevthedev8@gmail.com" target="_top" rel="noopener noreferrer">
+                    <img src={gmailLogo} alt="gmail-logo" />
+                </a>
                 <a href="https://www.linkedin.com/in/kung8" target="_blank" rel="noopener noreferrer">
                     <img src={linkedInLogo} alt="linkedIn-logo" />
-                </a>
-                <a href="mailto:kevthedev8@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <img src={gmailLogo} alt="gmail-logo" />
                 </a>
                 <a href={`sms:+18018556361?&body=Hi Kevin! I'd love to connect with you.`} rel="noopener noreferrer">
                     <img src={messageLogo} alt="message-logo" />

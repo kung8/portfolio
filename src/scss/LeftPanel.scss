@@ -74,6 +74,10 @@
             margin-right: 16px;
             color: $white;
             cursor: pointer;
+            
+            &:hover {
+                transform: scale(1.25);
+            }
         }
     }
 }
