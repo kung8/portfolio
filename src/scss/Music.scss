@@ -165,6 +165,7 @@
             list-style: none;
             padding: 12px;
             cursor: pointer;
+            max-width: 650px;
             &.row-labels {
                 margin-bottom: 8px;
                 position: sticky;
@@ -244,16 +245,127 @@
     .music-player {
         position: fixed;
         bottom: 0;
-        padding: 40px 0;
-        background: $aqua;
-        color: $default;
-        z-index: 2;
+        padding: 40px 32px;
+        background: $dark-aqua;
+        z-index: 3;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
         width: 100vw;
         margin-left: -80px;
         @include down($tablet) {
             margin-left: -56px;
+        }
+        @include down($mobile-xl) {
+            flex-direction: column;
+            padding: 32px 16px;
+        }
+
+        .song-detail-container {
+            display: flex;
+            flex-direction: column;
+            min-width: 200px;
+            @include down($tablet) {
+                min-width: unset;
+            }
+            @include down($mobile-xl) {
+                display: none;
+            }
+
+            .song-name {
+                font-size: 16px;
+                color: $white;
+                margin-bottom: 12px;
+            }
+
+            .artist-name {
+                font-size: 16px;
+                color: $default;
+            }
+        }
+
+        .interactions-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+
+            .icon-buttons-container {
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+
+                .logo-btn {
+                    height: 24px;
+                    width: 24px;
+                    margin-right: 32px;
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                    &:hover {
+                        transform: scale(1.25);
+                    }
+                }
+
+                .shuffle-logo,
+                .repeat-logo {
+                    height: 28px;
+                    width: 28px;
+                    &.selected-type {
+                        color: $primary-blue;
+                    }
+                }
+                .shuffle-btn {
+                    margin-top: -1px;
+                }
+                .repeat-logo {
+                    margin-top: 6px;
+                }
+            }
+            .progress-bar-container {
+                display: flex;
+                align-items: center;
+
+                .progress-time {
+                    min-width: 40px;
+                }
+
+                .progress-bar {
+                    background: $default;
+                    height: 6px;
+                    width: 250px;
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    .progress-bar-fill {
+                        background: $white;
+                        height: 100%;
+                    }
+                    @include down($mobile-xl) {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+
+        .supplementary-interactions-container {
+            display: flex;
+            align-items: center;
+            @include down($tablet) {
+                display: none;
+            }
+
+            .logo-btn {
+                height: 28px;
+                width: 28px;
+                margin-right: 24px;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+                &:hover {
+                    transform: scale(1.25);
+                }
+            }
         }
     }
 }

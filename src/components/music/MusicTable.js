@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { music } from './data';
+import { reversedSongs } from './data';
 import playLogo from '../../Assets/play-btn.png';
 import pauseLogo from '../../Assets/pause-btn.png';
 
-const MusicItem = ({ song, index, selectedSong, setSelectedSong, setPreviousSong, isPlaying, setIsPlaying }) => {
+const MusicItem = ({ song, index, selectedSong, setSelectedSong, isPlaying, setIsPlaying }) => {
     const [hover, setHover] = useState(false);
+    const url = selectedSong?.url;
+    const isCurrent = url === song.url && isPlaying;
 
     return (
         <ul
@@ -17,36 +19,44 @@ const MusicItem = ({ song, index, selectedSong, setSelectedSong, setPreviousSong
                 {hover ? (
                     <img
                         className={`play-btn ${index > 9 ? 'double-digits' : 'single-digit'}`}
-                        src={selectedSong === song.url && isPlaying ? pauseLogo : playLogo}
-                        alt={selectedSong === song.url && isPlaying ? 'pause' : 'play'}
+                        src={isCurrent ? pauseLogo : playLogo}
+                        alt={isCurrent ? 'pause' : 'play'}
                         onClick={() => {
-                            if (selectedSong === song.url && isPlaying) {
+                            let audio = document.querySelector('.audio-control');
+
+                            if (isCurrent) {
                                 setIsPlaying(false);
-                                document.querySelector('.audio-control').pause();
-                            } else if (selectedSong === song.url) {
+                                if (audio) audio.pause();
+                            } else if (url === song.url) {
                                 setIsPlaying(true);
-                                document.querySelector('.audio-control').play();
+                                if (audio){
+                                    audio.play();
+                                    audio.setAttribute('autoplay', 'true');
+                                }
                             } else {
+                                setIsPlaying(false);
+                                setSelectedSong(song);
+                                if (audio) {
+                                    audio.pause();
+                                    audio.load();
+                                    audio.play();
+                                    audio.setAttribute('autoplay', 'true');
+                                }
                                 setIsPlaying(true);
-                                const previousSong = selectedSong;
-                                setPreviousSong(previousSong);
-                                setSelectedSong(song.url)
                             }
                         }}
                     />
                 ) : (
-                    <span className={`id-number ${selectedSong === song.url ? 'selected-song' : ''}`}>{index + 1}</span>
+                    <span className={`id-number ${url === song.url ? 'selected-song' : ''}`}>{index + 1}</span>
                 )}
             </li>
-            <li className={`song-name ${selectedSong === song.url ? 'selected-song' : ''}`}>{song.name}</li>
+            <li className={`song-name ${url === song.url ? 'selected-song' : ''}`}>{song.name}</li>
             <li className="added-at">{song.addedAt}</li>
             <li className="created-at">{song.createdAt}</li>
             <li className="time">{song.time}</li>
         </ul>
     )
 }
-
-const sortedMusic = music.reverse();
 
 export const MusicTable = ({ selectedSong, setSelectedSong, setPreviousSong, isPlaying, setIsPlaying }) => (
     <div className="music-table">
@@ -57,7 +67,7 @@ export const MusicTable = ({ selectedSong, setSelectedSong, setPreviousSong, isP
             <li className="created-at">Created At</li>
             <li className="time">Time</li>
         </ul>
-        {sortedMusic.map((song, index) => (
+        {reversedSongs.map((song, index) => (
             <MusicItem key={index} {...{ song, index, selectedSong, setSelectedSong, setPreviousSong, isPlaying, setIsPlaying }} />
         ))}
     </div>
