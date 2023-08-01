@@ -30,6 +30,7 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
     const currentIndex = orderedSongs.findIndex(song => song.id === selectedSong?.id);
     const [orderType, setOrderType] = useState(orderTypeMap.none);
     const [currentTime, setCurrentTime] = useState(0);
+    const [clickedSpot, setClickedSpot] = useState(null);
 
     const pause = () => {
         setIsPlaying(false);
@@ -108,15 +109,20 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
     }, [url]);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            console.log('hit this point: ', document.querySelector('.audio-control')?.currentTime);
-            setCurrentTime(document.querySelector('.audio-control')?.currentTime);
-        }, 1000);
-
+        let interval;
+        if (clickedSpot) {
+            interval = setInterval(() => {
+                setCurrentTime(time => time + 1);
+            }, 1000);
+        } else {
+            interval = setInterval(() => {
+                setCurrentTime(document.querySelector('.audio-control')?.currentTime);
+            }, 1000);
+        }
         if (!isPlaying) clearInterval(interval);
         return () => clearInterval(interval);
         // eslint-disable-next-line
-    }, [isPlaying]);
+    }, [isPlaying, clickedSpot]);
 
     useEffect(() => {
         setCurrentTime(0);
@@ -140,11 +146,10 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
     }, [currentTime]);
 
     const handleProgressBarClick = (e) => {
+        const clientPosition = e.clientX;
+        setClickedSpot(clientPosition);
         const progressBarPosition = document.querySelector('.progress-bar').getBoundingClientRect().left;
-        const clickedPosition = e.clientX;
-
-        const difference = clickedPosition - progressBarPosition;
-        const audio = document.querySelector('.audio-control');
+        const difference = clientPosition - progressBarPosition;
         let percentage = 0;
 
         if (window.innerWidth < 600) {
@@ -155,7 +160,7 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
 
         const newCurrentTime = percentage * convertTimeToNumber(selectedSong?.time) || 0;
         setCurrentTime(newCurrentTime);
-        audio.setAttribute('currentTime', newCurrentTime);
+        document.querySelectorAll('.audio-control').forEach(audio => audio.currentTime = newCurrentTime);
         setIsPlaying(true);
         play();
     }
