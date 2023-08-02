@@ -331,13 +331,22 @@
                     min-width: 40px;
                 }
 
+                &:hover {
+                    .progress-bar {
+                        .progress-bar-fill {
+                            background: $primary-blue;
+                        }
+                    }
+                }
                 .progress-bar {
+                    border-radius: 12px;
                     background: $default;
                     height: 6px;
                     width: 250px;
                     margin-left: 8px;
                     margin-right: 8px;
                     .progress-bar-fill {
+                        border-radius: 12px;
                         background: $white;
                         height: 100%;
                     }
@@ -351,7 +360,9 @@
         .supplementary-interactions-container {
             display: flex;
             align-items: center;
-            @include down($tablet) {
+            position: relative;
+            cursor: pointer;
+            @include down($desktop) {
                 display: none;
             }
 
@@ -360,10 +371,39 @@
                 width: 28px;
                 margin-right: 24px;
                 &:last-of-type {
-                    margin-right: 0;
+                    margin-right: 16px;
                 }
                 &:hover {
                     transform: scale(1.25);
+                }
+            }
+
+            .volume-container {
+                height: 8px;
+                width: 100px;
+                background: $default;
+                border-radius: 12px;
+                position: relative;
+                &:hover {
+                    .volume-bar {
+                        background: $primary-blue;
+                    }
+
+                    .volume-peg {
+                        position: absolute;
+                        top: 0;
+                        transform: translate(25%, -25%);
+                        height: 18px;
+                        width: 18px;
+                        border-radius: 50%;
+                        background: $white;
+                    }
+                }
+
+                .volume-bar {
+                    border-radius: 12px;
+                    background: $white;
+                    height: 100%;
                 }
             }
         }

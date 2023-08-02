@@ -30,12 +30,9 @@
     }
 
     .headline {
-        margin-bottom: 56px;
+        margin-bottom: 32px;
         font-size: 16px;
         color: $default;
-        @include down($desktop) {
-            margin-bottom: 32px;
-        }
     }
 
     .link-container {
