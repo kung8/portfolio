@@ -1,8 +1,7 @@
-import React, { useCallback, useEffect, useState } from 'react';
-import queueBtn from '../../Assets/queue-btn.png';
+import React, { useEffect, useState } from 'react';
 import { reversedSongs } from './data';
 import { convertTimeToNumber } from '../../utils/time';
-import { InteractionButtons, ProgressBar, VolumeControls } from '.';
+import { AudioPlayer, InteractionButtons, ProgressBar, Queue, VolumeControls } from '.';
 
 const formatSongName = (name) => name.toLowerCase().replaceAll(' ', '-');
 
@@ -13,28 +12,11 @@ const orderTypeMap = {
 };
 
 export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPlaying }) => {
-    const url = selectedSong?.url;
     const [orderedSongs, setOrderedSongs] = useState([...reversedSongs]);
-    const songName = selectedSong?.name ? formatSongName(selectedSong?.name) : undefined;
     const currentIndex = orderedSongs.findIndex(song => song.id === selectedSong?.id);
     const [orderType, setOrderType] = useState(orderTypeMap.none);
     const [currentTime, setCurrentTime] = useState(0);
     const [clickedSpot, setClickedSpot] = useState(null);
-
-    const createAudioPlayer = useCallback(() => {
-        return (
-            songName ? (
-                <audio hidden id={`selected-song-${songName}`} className="audio-control" controls>
-                    <source src={url ? url : ''} type="audio/mp4" />
-                    <source src={url ? url : ''} type="audio/mp3" />
-                    <source src={url ? url : ''} type="audio/mpeg" />
-                    <source src={url ? url : ''} type="audio/m4a" />
-                    {/* <p>Your browser does not support HTML5 audio, but you can download my music at <a href={download}>here</a></p> */}
-                </audio>
-            ) : null
-        )
-        // eslint-disable-next-line
-    }, [url]);
 
     useEffect(() => {
         let interval;
@@ -102,10 +84,6 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
         // eslint-disable-next-line
     }, [currentTime]);
 
-    const queue = () => {
-
-    }
-
     return (
         <>
             <div className="music-player">
@@ -125,7 +103,7 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
                             setOrderedSongs,
                             currentIndex,
                             setSelectedSong,
-                            play, 
+                            play,
                             startSong,
                             next,
                         }}
@@ -142,11 +120,14 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
                     />
                 </div>
                 <div className="supplementary-interactions-container">
-                    <img className="logo-btn queue-logo" src={queueBtn} alt="queue" onClick={queue} />
+                    <Queue />
                     <VolumeControls />
                 </div>
             </div>
-            {createAudioPlayer()}
+            <AudioPlayer {...{
+                songName: selectedSong?.name ? formatSongName(selectedSong?.name) : undefined,
+                url: selectedSong?.url,
+            }} />
         </>
     )
 }
