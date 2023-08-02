@@ -9,14 +9,14 @@ import repeatBtn from '../../Assets/repeat-btn.png';
 import selectedShuffleBtn from '../../Assets/selected-shuffle-btn.png';
 import selectedRepeatBtn from '../../Assets/selected-repeat-btn.png';
 import { randomize } from '../../utils/randomize';
-import { reversedSongs } from './data';
+import { orderTypeMap, reversedSongs } from './data';
+
 
 export const InteractionButtons = ({
     orderedSongs,
     setOrderedSongs,
     orderType,
     setOrderType,
-    orderTypeMap,
     isPlaying,
     setIsPlaying,
     currentIndex,

@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { reversedSongs } from './data';
+import { orderTypeMap, reversedSongs } from './data';
 import { convertTimeToNumber } from '../../utils/time';
 import { AudioPlayer, InteractionButtons, ProgressBar, Queue, VolumeControls } from '.';
 
 const formatSongName = (name) => name.toLowerCase().replaceAll(' ', '-');
-
-const orderTypeMap = {
-    shuffled: 'shuffled',
-    repeated: 'repeated',
-    none: 'none'
-};
 
 export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPlaying }) => {
     const [orderedSongs, setOrderedSongs] = useState([...reversedSongs]);
@@ -94,7 +88,6 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
                 <div className="interactions-container">
                     <InteractionButtons
                         {...{
-                            orderTypeMap,
                             orderType,
                             setOrderType,
                             isPlaying,
