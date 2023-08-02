@@ -249,6 +249,7 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
                         <span className="progress-time">{convertNumberToTime(currentTime)}</span>
                         <div className="progress-bar" onClick={handleProgressBarClick}>
                             <div className="progress-bar-fill" style={{ width: (currentTime / (convertTimeToNumber(selectedSong?.time) || 1)) * 100 + '%' }}></div>
+                            <div className="progress-peg" style={{ left: (currentTime / (convertTimeToNumber(selectedSong?.time) || 1)) * 100 + '%' }}></div>
                         </div>
                         <span className="progress-time">{selectedSong?.time}</span>
                     </div>
@@ -268,6 +269,5 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
 }
 
 /* 
-    TODO: add peg for time bar too and make it draggable and move when clicked
     TODO: add functionality for the queue to open up as a modal
 */

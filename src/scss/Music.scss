@@ -333,8 +333,20 @@
 
                 &:hover {
                     .progress-bar {
+                        position: relative;
+
                         .progress-bar-fill {
                             background: $primary-blue;
+                        }
+
+                        .progress-peg {
+                            position: absolute;
+                            top: 0;
+                            transform: translate(-50%, -25%);
+                            height: 18px;
+                            width: 18px;
+                            border-radius: 50%;
+                            background: $white;
                         }
                     }
                 }
@@ -345,13 +357,14 @@
                     width: 250px;
                     margin-left: 8px;
                     margin-right: 8px;
+                    @include down($mobile-xl) {
+                        width: 200px;
+                    }
+
                     .progress-bar-fill {
                         border-radius: 12px;
                         background: $white;
                         height: 100%;
-                    }
-                    @include down($mobile-xl) {
-                        width: 200px;
                     }
                 }
             }
