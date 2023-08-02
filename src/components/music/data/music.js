@@ -4,6 +4,7 @@ const music = [
     {
         id: 1,
         name: 'Keep On, Keeping On',
+        artist: 'Kevin Ung',
         addedAt: '07/16/23',
         createdAt: '2017',
         time: '1:57',
@@ -12,6 +13,7 @@ const music = [
     {
         id: 2,
         name: 'Searching For You',
+        artist: 'Kevin Ung',
         addedAt: '07/16/23',
         createdAt: '2017',
         time: '1:53',
@@ -20,6 +22,7 @@ const music = [
     {
         id: 3,
         name: 'Fragile Heart',
+        artist: 'Kevin Ung',
         addedAt: '07/16/23',
         createdAt: '2017',
         time: '3:12',
@@ -28,6 +31,7 @@ const music = [
     {
         id: 4,
         name: 'Strong',
+        artist: 'Kevin Ung',
         addedAt: '07/16/23',
         createdAt: '2017',
         time: '1:43',
@@ -36,6 +40,7 @@ const music = [
     {
         id: 5,
         name: 'The Game',
+        artist: 'Kevin Ung',
         addedAt: '07/16/23',
         createdAt: '2017',
         time: '3:52',
@@ -44,6 +49,7 @@ const music = [
     {   
         id: 6,
         name: 'Hero To Me',
+        artist: 'Kevin Ung',
         addedAt: '07/16/23',
         createdAt: '2018',
         time: '2:16',
@@ -52,6 +58,7 @@ const music = [
     {
         id: 7,
         name: 'Prodigal Son',
+        artist: 'Kevin Ung',
         addedAt: '07/16/23',
         createdAt: '2019',
         time: '3:28',
