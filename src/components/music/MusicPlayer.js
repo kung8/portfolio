@@ -124,7 +124,3 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
         </>
     )
 }
-
-/* 
-    TODO: add functionality for the queue to open up as a modal
-*/
