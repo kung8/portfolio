@@ -86,7 +86,6 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
 
         if (isFinished && isLastSong && !isRepeated) {
             setIsPlaying(false);
-            // setSelectedSong(orderedSongs.length);
         }
         // eslint-disable-next-line
     }, [currentTime]);
