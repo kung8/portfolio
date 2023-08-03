@@ -1,7 +1,7 @@
 const eden = '../assets/Products/eden.jpeg';
 const games = '../assets/Products/full-set.png';
 
-const baseUrl = !process.env.NODE_ENV ? 'http://localhost:3000/#' : 'https://kevinung8.com/#';
+// const baseUrl = !process.env.NODE_ENV ? 'http://localhost:3000/#' : 'https://kevinung8.com/#';
 
 const products = [
     {
@@ -10,7 +10,7 @@ const products = [
         bullets: [
             'Meet Eden, my guitar! I dabble with music production and songwriting. T-Swift among many other country/pop artists have been my inspiration. I am hoping to work on more music over the next half of the year.',
         ],
-        url: baseUrl + '/music',
+        url: 'https://kevinung8.com/#/music',
         hosted: true,
         show: true,
     },
