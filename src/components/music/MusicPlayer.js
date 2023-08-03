@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { orderTypeMap, reversedSongs } from './data';
 import { convertTimeToNumber } from '../../utils/time';
-import { AudioPlayer, InteractionButtons, ProgressBar, Queue, VolumeControls } from '.';
+import { AudioPlayer, InteractionButtons, Overlay, ProgressBar, QueueModal, VolumeControls } from '.';
+import queueBtn from '../../Assets/queue-btn.png';
 
 const formatSongName = (name) => name.toLowerCase().replaceAll(' ', '-');
 
@@ -11,6 +12,7 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
     const [orderType, setOrderType] = useState(orderTypeMap.none);
     const [currentTime, setCurrentTime] = useState(0);
     const [clickedSpot, setClickedSpot] = useState(null);
+    const [queueOpen, setQueueOpen] = useState(false);
 
     useEffect(() => {
         let interval;
@@ -49,6 +51,12 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
         audio.play();
     }
 
+    const pause = () => {
+        setIsPlaying(false);
+        const audio = document.querySelector('.audio-control');
+        audio.pause();
+    }
+
     const next = () => {
         const nextIndex = currentIndex + 1;
         const isRepeated = orderType === orderTypeMap.repeated;
@@ -75,8 +83,37 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
             setSelectedSong(orderedSongs[0]);
             startSong();
         }
+
+        if (isFinished && isLastSong && !isRepeated) {
+            setIsPlaying(false);
+            setSelectedSong(orderedSongs.length);
+        }
         // eslint-disable-next-line
     }, [currentTime]);
+
+    const handleOverlay = () => {
+        setQueueOpen(true);
+        document.querySelector('.overlay').classList.add('show');
+        document.querySelector('#root').style.height = '100vh';
+        document.querySelector('#root').style.overflowY = 'hidden';
+        document.querySelector('#root').style.position = 'relative';
+    }
+
+    const handleClose = () => {
+        setQueueOpen(false);
+        document.querySelector('.queue-modal').classList.remove('closed');
+
+        setTimeout(() => {
+            document.querySelector('.overlay').classList.remove('show');
+        }, 500);
+
+        setTimeout(() => {
+            document.querySelector('#root').style.height = 'unset';
+            document.querySelector('#root').style.overflowY = 'unset';
+            document.querySelector('#root').style.position = 'unset';
+            document.querySelector('.queue-modal').classList.add('closed');
+        }, 50);
+    }
 
     return (
         <>
@@ -91,12 +128,12 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
                             orderType,
                             setOrderType,
                             isPlaying,
-                            setIsPlaying,
                             orderedSongs,
                             setOrderedSongs,
                             currentIndex,
                             setSelectedSong,
                             play,
+                            pause,
                             startSong,
                             next,
                         }}
@@ -113,7 +150,7 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
                     />
                 </div>
                 <div className="supplementary-interactions-container">
-                    <Queue />
+                    <img className="logo-btn queue-logo" src={queueBtn} alt="queue" onClick={handleOverlay} />
                     <VolumeControls />
                 </div>
             </div>
@@ -121,6 +158,33 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
                 songName: selectedSong?.name ? formatSongName(selectedSong?.name) : undefined,
                 url: selectedSong?.url,
             }} />
+            <Overlay onClose={handleClose} />
+            <QueueModal
+                selectedSong={selectedSong}
+                isPlaying={isPlaying}
+                playSelectedSong={(song) => {
+                    setSelectedSong(song);
+                    startSong();
+                    handleClose();
+                }}
+                pauseSelectedSong={() => {
+                    setIsPlaying(false);
+                    pause();
+                    handleClose();
+                }}
+                continueSong={() => {
+                    let audio = document.querySelector('.audio-control');
+                    setIsPlaying(true);
+                    if (audio) {
+                        audio.play();
+                        audio.setAttribute('autoplay', 'true');
+                    }
+                    handleClose();
+                }}
+                songs={[...orderedSongs.slice(currentIndex)]}
+                show={queueOpen}
+                handleClose={handleClose}
+            />
         </>
     )
 }

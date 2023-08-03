@@ -1,0 +1,16 @@
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: $overlay;
+    backdrop-filter: blur(16px);
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    display: none;
+    cursor: pointer;
+    max-height: 100vh;
+    margin-left: -80px;
+    &.show {
+        display: block;
+    }
+}

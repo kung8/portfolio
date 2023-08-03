@@ -18,19 +18,13 @@ export const InteractionButtons = ({
     orderType,
     setOrderType,
     isPlaying,
-    setIsPlaying,
     currentIndex,
     setSelectedSong,
     next, 
     play, 
+    pause,
     startSong
 }) => {
-    const pause = () => {
-        setIsPlaying(false);
-        const audio = document.querySelector('.audio-control');
-        audio.pause();
-    }
-
     const previous = () => {
         const previousIndex = currentIndex - 1;
         if (previousIndex < 0) return;
