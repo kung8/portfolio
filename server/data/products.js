@@ -1,7 +1,7 @@
 const eden = '../assets/Products/eden.jpeg';
 const games = '../assets/Products/full-set.png';
 
-const baseUrl = process.env.NODE_ENV === 'production' ? 'https://kevinung8.com/#' : 'http://localhost:3000/#';
+const baseUrl = !process.env.NODE_ENV ? 'http://localhost:3000/#' : 'https://kevinung8.com/#';
 
 const products = [
     {
