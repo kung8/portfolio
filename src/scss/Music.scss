@@ -344,6 +344,10 @@
             transition: right 1s;
         }
 
+        @include down($mobile) {
+            width: 100%;
+        }
+
         .heading-container {
             display: flex;
             justify-content: space-between;
