@@ -1,4 +1,4 @@
-require('dotenv/config')
+require('dotenv').config();
 const { SERVER_PORT } = process.env;
 const ctrl = require('./controller');
 const express = require('express');

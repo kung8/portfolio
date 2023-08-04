@@ -43,6 +43,9 @@
         margin-left: 0;
         margin-bottom: 48px;
         padding: 0;
+        &:first-of-type {
+            margin-top: 32px;
+        }
     }
 
     @include down($tablet) {
