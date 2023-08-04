@@ -51,7 +51,7 @@ export const LyricsModal = ({
                 // left: 0,
                 behavior: 'smooth',
             })
-        }, 50);
+        }, 100);
     }, [selectedLyric])
 
     return (
