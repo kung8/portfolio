@@ -34,7 +34,7 @@ export const LeftPanel = ({ selected, setSelected }) => {
                 <a href="https://github.com/kung8" target="_blank" rel="noopener noreferrer">
                     <img src={githubLogo} alt="github-logo" />
                 </a>
-                <a href="mailto:kevthedev8@gmail.com" target="_top" rel="noopener noreferrer">
+                <a href="mailto:kevthedev8@gmail.com" target="_blank" rel="noopener noreferrer">
                     <img src={gmailLogo} alt="gmail-logo" />
                 </a>
                 <a href="https://www.linkedin.com/in/kung8" target="_blank" rel="noopener noreferrer">
