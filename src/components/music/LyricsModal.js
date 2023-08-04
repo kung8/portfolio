@@ -14,7 +14,7 @@ export const LyricsModal = ({
     selectedLyric,
 }) => {
     const getLyrics = () => {
-        switch (selectedLyric) {
+        switch (selectedLyric?.id) {
             case 1:
                 return <KeepOnKeepingOn />
             case 2:
@@ -57,7 +57,7 @@ export const LyricsModal = ({
     return (
         <div className="lyrics-modal">
             <div className='heading-container'>
-                <h2>Lyrics</h2>
+                <h2>{selectedLyric?.name}</h2>
                 <button className="close-btn">
                     <img src={closeBtn} alt="close" onClick={handleClose} />
                 </button>

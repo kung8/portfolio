@@ -57,10 +57,15 @@ const MusicItem = ({ song, index, selectedSong, setSelectedSong, isPlaying, setI
             <li className="created-at">{song.createdAt}</li>
             <li className="time">{song.time}</li>
             <li className="lyrics">
-                <img className="document-logo" src={documentLogo} alt="document" onClick={() => {
-                    handleOverlay();
-                    setSelectedLyric(song.id);
-                }} />
+                <img 
+                    className="document-logo" 
+                    src={documentLogo} 
+                    alt="document" 
+                    onClick={() => {
+                        handleOverlay();
+                        setSelectedLyric(song);
+                    }} 
+                />
             </li>
         </ul>
     )
