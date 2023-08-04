@@ -7,19 +7,6 @@ export const Music = ({ history }) => {
     const [selectedSong, setSelectedSong] = useState(reversedSongs[0]);
     const [isPlaying, setIsPlaying] = useState(false);
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', () => {
-    //         const position = document.querySelector('.row-labels').getBoundingClientRect().top;
-    //         if (position === 0) {
-    //             document.querySelector('.row-labels').classList.add('sticky');
-    //             document.querySelector('.music').classList.add('sticky');
-    //         } else {
-    //             document.querySelector('.row-labels').classList.remove('sticky');
-    //             document.querySelector('.music').classList.remove('sticky');
-    //         }
-    //     })
-    // }, [])
-
     return (
         <div className='music page'>
             <div className="music-heading-container">

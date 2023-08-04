@@ -3,7 +3,6 @@ export * from './InteractionButtons';
 export * from './Music';
 export * from './MusicPlayer';
 export * from './MusicTable';
-export * from './Overlay';
 export * from './ProgressBar';
 export * from './QueueModal';
 export * from './VolumeControls';

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { orderTypeMap, reversedSongs } from './data';
 import { convertTimeToNumber } from '../../utils/time';
-import { AudioPlayer, InteractionButtons, Overlay, ProgressBar, QueueModal, VolumeControls } from '.';
+import { AudioPlayer, InteractionButtons, ProgressBar, QueueModal, VolumeControls } from '.';
 import queueBtn from '../../Assets/queue-btn.png';
 
 const formatSongName = (name) => name.toLowerCase().replaceAll(' ', '-');
@@ -92,7 +92,7 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
 
     const handleOverlay = () => {
         setQueueOpen(true);
-        document.querySelector('.overlay').classList.add('show');
+        document.querySelector('.music-player-overlay').classList.add('show');
         document.querySelector('#root').style.height = '100vh';
         document.querySelector('#root').style.overflowY = 'hidden';
         document.querySelector('#root').style.position = 'relative';
@@ -103,7 +103,7 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
         document.querySelector('.queue-modal').classList.remove('closed');
 
         setTimeout(() => {
-            document.querySelector('.overlay').classList.remove('show');
+            document.querySelector('.music-player-overlay').classList.remove('show');
         }, 500);
 
         setTimeout(() => {
@@ -157,7 +157,7 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
                 songName: selectedSong?.name ? formatSongName(selectedSong?.name) : undefined,
                 url: selectedSong?.url,
             }} />
-            <Overlay onClose={handleClose} />
+            <div className="music-player-overlay" onClick={handleClose}></div>
             <QueueModal
                 selectedSong={selectedSong}
                 isPlaying={isPlaying}
