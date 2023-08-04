@@ -319,7 +319,8 @@
         }
     }
 
-    .queue-modal, .lyrics-modal {
+    .queue-modal,
+    .lyrics-modal {
         position: absolute;
         background: $dark-aqua;
         width: 400px;
@@ -348,14 +349,22 @@
             justify-content: space-between;
             padding: 24px 32px;
 
+            h2 {
+                font-size: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width: calc(100% - 40px);
+            }
+
             .close-btn {
                 cursor: pointer;
                 background: none;
                 border: none;
                 outline: none;
                 img {
-                    height: 24px;
-                    width: 24px;
+                    height: 20px;
+                    width: 20px;
                 }
             }
         }
@@ -374,7 +383,8 @@
                 border-radius: 4px;
                 &.selected-song {
                     background: $hover;
-                    .song-name, .song-number {
+                    .song-name,
+                    .song-number {
                         color: $primary-blue;
                     }
                 }
@@ -425,11 +435,6 @@
             padding: 0 32px;
             max-height: calc(100% - 100px);
 
-            h4 {
-                margin-bottom: 24px;
-                font-size: 20px;
-            }
-
             .music-card {
                 margin-bottom: 50px;
                 padding-bottom: 50px;
@@ -442,7 +447,8 @@
                 strong {
                     display: block;
                     margin-bottom: 28px;
-                    &.intro-label, &.outro-label {
+                    &.intro-label,
+                    &.outro-label {
                         margin-bottom: 12px;
                     }
                 }
