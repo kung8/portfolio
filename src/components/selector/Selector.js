@@ -29,8 +29,8 @@ const getRandomTimes = (list, start, end) => {
     });
 }
 
-const Selector = (props) => {
-    const { type } = convertStringToObject(props?.location?.search.replace('?', ''));
+const Selector = ({ history, location }) => {
+    const { type } = convertStringToObject(location?.search.replace('?', ''));
     let list1 = ['Add to Me'];
     if (type === 'work') {
         list1 = resort(['Alo', 'Annalisa', 'Ben', 'Bob', 'Curtis', 'Ethan', 'Kevin', 'Kylir', 'Richard']);
@@ -142,7 +142,11 @@ const Selector = (props) => {
     }
 
     return (
-        <div className="selector-page">
+        <div className="selector page">
+            <div className="heading-container">
+                <span className='back-btn' onClick={() => history.push('/')}>Back Home</span>
+                <h1 className="heading">Selector</h1>
+            </div>
             {(!type || type !== 'work') && (
                 <>
                     <div className="items-and-rotator">

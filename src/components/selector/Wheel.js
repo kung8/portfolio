@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./index.css";
 
 const Wheel = (props) => {
-	const { items, disabled, onSelect, isReset, setIsReset } = props;
+	const { items,  disabled, onSelect, isReset, setIsReset } = props;
 	const [counter, setCounter] = useState(0);
 	const [selectedItem, setSelectedItem] = useState(null);
 
@@ -16,6 +16,11 @@ const Wheel = (props) => {
 			setSelectedItem(null);
 		}
 	}, [isReset])
+
+	useEffect(() => {
+		onSelect(undefined);
+		setSelectedItem(null);
+	}, [items]);
 
 	const spinning = selectedItem !== null ? "spinning" : "";
 

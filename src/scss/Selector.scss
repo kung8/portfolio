@@ -1,13 +1,21 @@
-.selector-page {
+.selector {
+    display: block;
+    height: auto;
     min-height: 100vh;
-    width: 100vw;
-    background: $silver;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    @extend .fade-in;
+    padding: 80px;
+    min-width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    @include down($tablet) {
+        padding: 56px 56px;
+    }
+    &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
     .items-and-rotator {
-        margin-top: 150px;
         position: relative;
         min-height: 450px;
         min-width: 200px;
@@ -18,6 +26,7 @@
         @include down($desktop) {
             flex-direction: column;
             align-items: center;
+            width: unset;
         }
         &.bottom-section {
             margin-bottom: 100px;
@@ -30,8 +39,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-right: 100px;
+            margin-bottom: 24px;
             @include down($desktop) {
                 margin-bottom: 56px;
+                margin-right: unset;
             }
             .list-label {
                 display: block;
@@ -56,7 +68,7 @@
                     height: 32px;
                     width: 42px;
                     letter-spacing: 1.1px;
-                    background: orange;
+                    background: $sunshine;
                     color: white;
                     outline: none;
                     border: none;
@@ -79,6 +91,7 @@
                     margin-bottom: 6px;
                     cursor: pointer;
                     width: 95%;
+                    color: $black;
                     &:hover {
                         transform: scale(1.05);
                     }
@@ -86,7 +99,7 @@
                         background: lightgreen;
                     }
                     &:nth-of-type(2n) {
-                        background: lightblue;
+                        background: $primary-blue;
                     }
                     li {
                         list-style-type: none;
@@ -122,6 +135,7 @@
             }
         }
     }
+
     .time-ranges-container {
         display: flex;
         justify-content: space-evenly;
@@ -158,7 +172,9 @@
         padding: 4px 8px;
         border-radius: 4px;
         outline: none;
-        border: 1px solid black;
+        border: 1px solid $black;
+        background: $sunshine;
+        color: $white;
         cursor: pointer;
         &.disabled {
             cursor: unset;

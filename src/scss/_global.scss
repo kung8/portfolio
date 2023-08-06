@@ -138,6 +138,29 @@
         flex-direction: column;
         height: auto;
     }
+
+    .heading-container {
+        position: relative;
+        z-index: 1;
+
+        .back-btn {
+            cursor: pointer;
+            color: $white;
+            margin-bottom: 8px;
+            display: block;
+            &:hover {
+                color: $primary-blue;
+            }
+
+            @include down($tablet) {
+                color: $primary-blue;
+            }
+        }
+
+        .heading {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 .cursor {
