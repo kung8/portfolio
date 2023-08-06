@@ -75,6 +75,10 @@
             margin-bottom: 24px;
             margin-right: 0;
         }
+
+        &.image-border {
+            border: 1px solid $white;
+        }
     }
 
     .item-end-date {

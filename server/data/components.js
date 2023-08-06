@@ -95,7 +95,8 @@ const components = [
         images: [selector],
         url: 'https://kevinung8.com/#/selector',
         hosted: true,
-        show: false,
+        show: true,
+        borderAdded: true,
     },
     {
         organization: 'Generic Score Sheet',

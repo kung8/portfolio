@@ -4,10 +4,10 @@ import defaultUp from '../../Assets/default-up.png';
 import whiteDown from '../../Assets/white-down.png';
 import whiteUp from '../../Assets/white-up.png';
 
-const Item = ({ title, organization, dateRange, showEndDateOnly, images, bullets, chips, url, hosted }) => (
+const Item = ({ title, organization, dateRange, showEndDateOnly, images, bullets, chips, url, hosted, borderAdded }) => (
     <a href={url && url} target={url?.includes('kevinung8.com') || url?.includes('localhost') ? '_self' : '_blank'} className={`item-container ${url ? 'clickable' : ''}`}>
         {images && images[0] ?
-            <img className='item-image' src={images[0]} alt={title} />
+            <img className={`item-image ${borderAdded ? 'image-border' : ''}`} src={images[0]} alt={title} />
             :
             showEndDateOnly ? (
                 <span className='item-end-date'>{dateRange[1]}</span>
