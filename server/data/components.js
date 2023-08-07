@@ -61,9 +61,10 @@ const components = [
         chips: [
             'React JS',
             'Sass',
+            'Axios',
         ],
         images: [guitar],
-        url: 'https://yourmove.dev/#/music/instruments/guitar',
+        url: 'https://buddingacorn.dev/#/resources/guitar',
         hosted: true,
         show: true,
     },
