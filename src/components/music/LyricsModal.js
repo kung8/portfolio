@@ -7,6 +7,7 @@ import Strong from '../Songs/Strong';
 import TheGame from '../Songs/TheGame';
 import HeroToMe from '../Songs/HeroToMe';
 import ProdigalSon from '../Songs/ProdigalSon';
+import Fearless from '../Songs/Fearless';
 
 export const LyricsModal = ({
     show,
@@ -29,8 +30,10 @@ export const LyricsModal = ({
                 return <HeroToMe />
             case 7:
                 return <ProdigalSon />;
+            case 8:
+                return <Fearless />;
             default:
-                return <ProdigalSon />
+                return <ProdigalSon />;
         }
     }
 

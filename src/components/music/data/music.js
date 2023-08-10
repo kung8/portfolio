@@ -46,7 +46,7 @@ const music = [
         time: '3:52',
         url: baseUrl + '1uquwDj3iJCx3sLXcYR_iXZ4ddWajNETl',
     },
-    {   
+    {
         id: 6,
         name: 'Hero To Me',
         artist: 'Kevin Ung',
@@ -62,7 +62,16 @@ const music = [
         addedAt: '07/16/23',
         createdAt: '2019',
         time: '3:28',
-        url: baseUrl + '1DpeIRnIWUBgUl6mtgDR94xyibSptS6tH'
+        url: baseUrl + '1DpeIRnIWUBgUl6mtgDR94xyibSptS6tH',
+    },
+    {
+        id: 8,
+        name: 'Fearless (cover)',
+        artist: 'Kevin Ung',
+        addedAt: '08/8/23',
+        createdAt: '2023',
+        time: '3:28',
+        url: baseUrl + '1Y0XkgpPLhYZL2C5FX6J5qRE7l-4u6fsR',
     },
 ];
 

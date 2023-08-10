@@ -324,6 +324,9 @@
             display: flex;
             justify-content: space-between;
             padding: 24px 32px;
+            @include down($mobile) {
+                padding: 24px;
+            }
 
             h2 {
                 font-size: 20px;
@@ -410,15 +413,16 @@
             overflow-y: scroll;
             padding: 0 32px;
             max-height: calc(100% - 100px);
+            @include down($mobile) {
+                padding: 0 24px;
+            }
 
             .music-card {
-                margin-bottom: 50px;
                 padding-bottom: 50px;
-                border-bottom: 3px solid white;
+                border-bottom: 3px solid $white;
                 &:last-of-type {
                     border-bottom: 0;
                     padding-bottom: 0;
-                    margin-bottom: 80px;
                 }
                 strong {
                     display: block;
@@ -428,28 +432,45 @@
                         margin-bottom: 12px;
                     }
                 }
+                .ind-chord {
+                    font-size: 10px;
+                    @include down($mobile) {
+                        font-size: 8px;
+                    }
+                }
                 p {
                     margin-bottom: 24px;
                     letter-spacing: 1px;
-                    font-size: 14px;
+                    font-size: 12px;
                     .p-rel {
                         display: inline-block;
                         margin-bottom: 4px;
                     }
                     .p-abs {
+                        top: -100%;
+                        font-size: 10px;
+                        letter-spacing: 0.5px;
                         &.beginning {
-                            top: -100%;
                             left: 0;
-                            font-size: 10px;
-                            letter-spacing: 0.5px;
+                        }
+                        &.middle {
+                            left: 50%;
+                        }
+                        &.ending {
+                            left: 100%;
+                            transform: translateX(-100%);
+                            &.long {
+                                transform: translateX(-10px);
+                                @include down($mobile) {
+                                    transform: translateX(-6px);
+                                }
+                            }
                         }
                     }
-                    @media screen and (max-width: $mobile) {
+                    @include down($mobile) {
                         font-size: 10px;
                         .p-abs {
-                            &.beginning {
-                                font-size: 8px;
-                            }
+                            font-size: 8px;
                         }
                     }
                     &:last-of-type {
