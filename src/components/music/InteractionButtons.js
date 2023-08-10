@@ -23,9 +23,17 @@ export const InteractionButtons = ({
     next, 
     play, 
     pause,
-    startSong
+    startSong,
+    currentTime,
+    setCurrentTime
 }) => {
     const previous = () => {
+        if (currentTime > 10) {
+            const audio = document.querySelector('.audio-control');
+            audio.currentTime = 0;
+            setCurrentTime(0);
+            return;
+        }
         const previousIndex = currentIndex - 1;
         if (previousIndex < 0) return;
         setSelectedSong(orderedSongs[previousIndex]);

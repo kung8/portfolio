@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { orderTypeMap, reversedSongs } from './data';
 import { convertTimeToNumber } from '../../utils/time';
 import { AudioPlayer, InteractionButtons, ProgressBar, QueueModal, VolumeControls } from '.';
@@ -114,6 +114,11 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
         }, 50);
     }
 
+    const queuedSongs = useMemo(() => {
+        if (orderType === orderTypeMap.repeated) return [...orderedSongs.slice(currentIndex + 1), ...orderedSongs];
+        return [...orderedSongs.slice(currentIndex + 1)];
+    }, [currentIndex, orderType, orderedSongs])
+
     return (
         <>
             <div className="music-player">
@@ -135,6 +140,8 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
                             pause,
                             startSong,
                             next,
+                            currentTime,
+                            setCurrentTime,
                         }}
                     />
                     <ProgressBar
@@ -180,7 +187,7 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
                     }
                     handleClose();
                 }}
-                songs={[...orderedSongs.slice(currentIndex)]}
+                songs={queuedSongs}
                 show={queueOpen}
                 handleClose={handleClose}
             />

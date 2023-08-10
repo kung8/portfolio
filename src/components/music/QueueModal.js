@@ -76,7 +76,7 @@ export const QueueModal = ({
             <div className="song-list-container">
                 {songs.length ? songs.map((song, index) => (
                     <SongItem
-                        key={song.id}
+                        key={index}
                         song={song}
                         index={index}
                         selectedSong={selectedSong}
