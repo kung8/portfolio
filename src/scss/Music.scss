@@ -11,6 +11,9 @@
     @include down($tablet) {
         padding: 56px 56px;
     }
+    @include down($mobile) {
+        padding: 56px 24px;
+    }
     &::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera */
     }
@@ -19,6 +22,7 @@
         position: relative;
         z-index: 1;
         margin-bottom: 175px;
+        margin-top: 24px; 
 
         .row {
             display: flex;
@@ -68,7 +72,7 @@
                 }
             }
             .song-name {
-                width: 275px;
+                width: 300px;
                 padding-left: 32px;
                 @include down($tablet) {
                     max-width: 275px;
@@ -82,7 +86,7 @@
                 }
             }
             .added-at {
-                width: 150px;
+                width: 125px;
                 text-align: center;
                 @include down($mobile-xl) {
                     display: none;
@@ -125,10 +129,14 @@
         margin-left: -80px;
         @include down($tablet) {
             margin-left: -56px;
+            flex-direction: column;
         }
         @include down($mobile-xl) {
             flex-direction: column;
             padding: 32px 16px;
+        }
+        @include down($mobile) {
+            margin-left: -24px;
         }
 
         .song-detail-container {
@@ -136,9 +144,6 @@
             flex-direction: column;
             min-width: 200px;
             @include down($tablet) {
-                min-width: unset;
-            }
-            @include down($mobile-xl) {
                 display: none;
             }
 
@@ -318,6 +323,7 @@
 
         @include down($mobile) {
             width: 100%;
+            right: -100%;
         }
 
         .heading-container {

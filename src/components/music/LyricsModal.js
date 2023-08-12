@@ -51,7 +51,6 @@ export const LyricsModal = ({
         setTimeout(() => {
             document.querySelector('.lyrics-container').scrollTo({
                 top: 0,
-                // left: 0,
                 behavior: 'smooth',
             })
         }, 100);
