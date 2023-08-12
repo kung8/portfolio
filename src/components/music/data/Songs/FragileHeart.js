@@ -2,6 +2,7 @@ import React from 'react';
 
 const FragileHeart = () => (
     <div className="music-card">
+        <span className="capo">Capo 3</span>
         <p>
             <strong>Verse 1:</strong>
             <span className="p-rel">Inside<span className="p-abs beginning">F</span></span> this <span className="p-rel">madness<span className="p-abs beginning">C</span></span><br /><br />

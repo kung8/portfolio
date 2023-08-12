@@ -1,41 +1,12 @@
 import React, { useEffect } from 'react';
 import closeBtn from '../../Assets/x.png';
-import KeepOnKeepingOn from '../Songs/KeepOnKeepingOn';
-import SearchingForYou from '../Songs/SearchingForYou';
-import FragileHeart from '../Songs/FragileHeart';
-import Strong from '../Songs/Strong';
-import TheGame from '../Songs/TheGame';
-import HeroToMe from '../Songs/HeroToMe';
-import ProdigalSon from '../Songs/ProdigalSon';
-import Fearless from '../Songs/Fearless';
 
 export const LyricsModal = ({
     show,
     handleClose,
     selectedLyric,
 }) => {
-    const getLyrics = () => {
-        switch (selectedLyric?.id) {
-            case 1:
-                return <KeepOnKeepingOn />
-            case 2:
-                return <SearchingForYou />
-            case 3:
-                return <FragileHeart />
-            case 4:
-                return <Strong />
-            case 5:
-                return <TheGame />
-            case 6:
-                return <HeroToMe />
-            case 7:
-                return <ProdigalSon />;
-            case 8:
-                return <Fearless />;
-            default:
-                return <ProdigalSon />;
-        }
-    }
+    const Lyrics = selectedLyric?.lyrics ?? null;
 
     useEffect(() => {
         if (show) {
@@ -65,7 +36,7 @@ export const LyricsModal = ({
                 </button>
             </div>
             <div className="lyrics-container">
-                {getLyrics()}
+                {selectedLyric && selectedLyric.lyrics ? Lyrics() : null}
             </div>
         </div>
     )

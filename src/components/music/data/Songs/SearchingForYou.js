@@ -2,6 +2,7 @@ import React from 'react';
 
 const SearchingForYou = () => (
     <div className="music-card">
+        <span className="capo">Capo 3</span>
         <p>
             <strong className="intro-label">Intro:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G/F<sup>#</sup></span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Cadd9</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">D</span>
         </p>

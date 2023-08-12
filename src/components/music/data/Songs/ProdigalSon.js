@@ -2,6 +2,7 @@ import React from 'react';
 
 const ProdigalSon = () => (
     <div className="music-card">
+        <span className="capo">Capo 7</span>
         <p>
             <strong className="intro-label">Intro:</strong> <span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">F</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Am</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>
         </p>

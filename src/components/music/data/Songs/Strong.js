@@ -2,6 +2,7 @@ import React from 'react';
 
 const Strong = () => (
     <div className="music-card">
+        <span className="capo">Capo 3</span>
         <p>
             <strong className="intro-label">Intro:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Am</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">D7</span>
         </p>

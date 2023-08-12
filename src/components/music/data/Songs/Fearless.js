@@ -2,6 +2,7 @@ import React from 'react';
 
 const Fearless = () => (
     <div className="music-card">
+        <span className="capo">Capo 6</span>
         <p>
             <strong className="intro-label">Intro:</strong> <span className="ind-chord">D</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">A</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Em</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G</span>
         </p>

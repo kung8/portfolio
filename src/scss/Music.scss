@@ -430,6 +430,16 @@
                     border-bottom: 0;
                     padding-bottom: 0;
                 }
+                
+                .capo {
+                    display: block;
+                    font-size: 12px;
+                    margin-bottom: 8px;
+                    @include down($mobile) {
+                        font-size: 10px;
+                    }
+                }
+
                 strong {
                     display: block;
                     margin-bottom: 28px;

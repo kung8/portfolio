@@ -2,6 +2,7 @@ import React from 'react';
 
 const KeepOnKeepingOn = () => (
     <div className="music-card">
+        <span className="capo">Capo 1</span>
         <p>
             <strong className="intro-label">Intro:</strong> <span className="ind-chord">G</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">G/F<sup>#</sup></span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">Em</span>&nbsp;&nbsp;&nbsp;<span className="ind-chord">C</span>
         </p>
