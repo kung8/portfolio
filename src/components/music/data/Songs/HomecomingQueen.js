@@ -8,56 +8,51 @@ const HomecomingQueen = () => (
         </p>
         <p>
             <strong>Verse 1:</strong>
-            <span className="p-rel"><span className="p-abs beginning">D</span>There's</span> something 'bout the way<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">A</span>The</span> street looks when it's just <span className="p-rel"><span className="p-abs beginning">Em</span>rained</span><br /><br />
-            There's a glow off the <span className="p-rel"><span className="p-abs beginning">G</span>pavement</span><br /><br />
-            Walk me to the <span className="p-rel"><span className="p-abs beginning">D</span>car</span><br /><br />
-            And you know I wanna&nbsp;<span className="p-rel"><span className="p-abs beginning">A</span>ask</span>&nbsp;you to dance right<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">Em</span>there</span><br /><br />
-            In the middle of the <span className="p-rel"><span className="p-abs beginning">G</span>parking</span> lot.<br /><br />
-            <span className="p-rel">Yeah<span className="p-abs ending long">D&nbsp;&nbsp;A&nbsp;&nbsp;Em&nbsp;&nbsp;G</span></span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">D</span>Hey</span> homecoming <span className="p-rel"><span className="p-abs beginning">A</span>queen</span>, why do you <span className="p-rel"><span className="p-abs beginning">Em</span>lie</span>?<br /><br />
+            When somebody's <span className="p-rel"><span className="p-abs beginning">G</span>mean</span>, where do you <span className="p-rel"><span className="p-abs beginning">D</span>hide</span>?<br /><br />
+            Do people ass<span className="p-rel"><span className="p-abs beginning">A</span>ume</span>, you're always al<span className="p-rel"><span className="p-abs beginning">Em</span>right</span>?<br /><br />
+            Been so good at <span className="p-rel"><span className="p-abs beginning">G</span>smiling</span>, most of your <span className="p-rel"><span className="p-abs beginning">D</span>life</span><br /><br />
         </p>
+        <p>
+            <strong>Pre-Chorus 1:</strong>
+            Look <span className="p-rel"><span className="p-abs beginning">Cadd9</span>so</span> good in the dress, <span className="p-rel"><span className="p-abs beginning">G</span>zippin'</span> up the mess
+            <span className="p-rel"><span className="p-abs beginning">Em7</span>Dancin'</span> with your <span className="p-rel"><span className="p-abs beginning">Dadd4</span>best</span> foot forward
+            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Does</span> it get hard, <span className="p-rel"><span className="p-abs beginning">G</span>to'</span> have to play the part?
+            <span className="p-rel"><span className="p-abs beginning">Em7</span>Nobody's</span> feeling <span className="p-rel"><span className="p-abs beginning">Dadd4</span>sorry</span> for ya
+        </p>
+        <p>
+            <strong>Chorus 1:</strong>
+            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>But</span> what if I <span className="p-rel"><span className="p-abs beginning">G</span>told</span> you the world wouldn't <span className="p-rel"><span className="p-abs beginning">Em7</span>end</span><br /><br />
+            If you started <span className="p-rel"><span className="p-abs beginning">Dadd4</span>showing</span> what's under your <span className="p-rel"><span className="p-abs beginning">Cadd9</span>skin</span><br /><br />
+            What if you <span className="p-rel"><span className="p-abs beginning">G</span>let</span> 'em all in on the <span className="p-rel"><span className="p-abs beginning">Em7</span>lie</span>?<br /><br />
+            Even the home<span className="p-rel"><span className="p-abs beginning">Dadd4</span>coming</span> queen cries<br /><br />
+        </p>
+
         <p>
             <strong>Verse 2:</strong>
-            <span className="p-rel"><span className="p-abs beginning">D</span>We're</span> drivin' down the road<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">A</span>I</span> wonder if you <span className="p-rel"><span className="p-abs beginning">Em</span>know</span><br /><br />
-            I'm trying so hard <span className="p-rel"><span className="p-abs beginning">G</span>not</span> to get caught up now<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">D</span>But</span> you're just so cool<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">A</span>Run</span> your hands through your <span className="p-rel"><span className="p-abs beginning">Em</span>hair</span><br /><br />
-            Absent-mindedly <span className="p-rel"><span className="p-abs beginning">G</span>making</span> me <span className="p-rel"><span className="p-abs beginning">A</span>want</span> you<br /><br />
-        </p>
-        <p>
-            <strong>Chorus:</strong>
-            <span className="p-rel"><span className="p-abs beginning">D</span>And</span> I don't know how <span className="p-rel"><span className="p-abs beginning">A</span>it</span> gets better than <span className="p-rel"><span className="p-abs beginning">Em</span>this</span><br /><br />
-            You take my hand and drag me <span className="p-rel"><span className="p-abs beginning">G</span>head</span> first, <span className="p-rel"><span className="p-abs beginning">A</span>fearless</span><br /><br />
-            <span className="p-rel"><span className="p-abs beginning">D</span>And</span> I don't know why <span className="p-rel"><span className="p-abs beginning">A</span>but</span> with you I'd <span className="p-rel"><span className="p-abs beginning">Em</span>dance</span><br /><br />
-            In a storm in my <span className="p-rel"><span className="p-abs beginning">G</span>best</span> dress <span className="p-rel"><span className="p-abs beginning">A</span>fearless</span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">D</span>Hey</span> homecoming <span className="p-rel"><span className="p-abs beginning">A</span>queen</span>, how's things at <span className="p-rel"><span className="p-abs beginning">Em</span>home</span>?<br /><br />
+            Still walking on <span className="p-rel"><span className="p-abs beginning">G</span>eggshells</span>, when that curtains <span className="p-rel"><span className="p-abs beginning">D</span>closed</span><br /><br />
+            Did your daddy <span className="p-rel"><span className="p-abs beginning">A</span>teach</span> you, how to act <span className="p-rel"><span className="p-abs beginning">Em</span>tough</span>?<br /><br />
+            Or more like your <span className="p-rel"><span className="p-abs beginning">G</span>momma</span>, sweep it under the <span className="p-rel"><span className="p-abs beginning">D</span>rug</span><br /><br />
         </p>
 
         <p>
-            <strong>Verse 3:</strong>
-            <span className="p-rel"><span className="p-abs beginning">D</span>So</span> baby drive slow
-            <span className="p-rel"><span className="p-abs beginning">A</span>'til</span> we run out of <span className="p-rel"><span className="p-abs beginning">Em</span>road</span><br /><br />
-            in this one horse <span className="p-rel"><span className="p-abs beginning">G</span>town</span> I wanna stay right <span className="p-rel"><span className="p-abs beginning">D</span>here</span><br /><br />
-            In this passenger <span className="p-rel"><span className="p-abs beginning">A</span>seat</span> you put your eyes on <span className="p-rel"><span className="p-abs beginning">Em</span>me</span><br /><br />
-            In this moment now <span className="p-rel"><span className="p-abs beginning">G</span>capture</span> it, <span className="p-rel"><span className="p-abs beginning">A</span>remember</span> it<br /><br />
+            <strong>Pre-Chorus 2</strong>
+            Look <span className="p-rel"><span className="p-abs beginning">Cadd9</span>so</span> good in the dress, <span className="p-rel"><span className="p-abs beginning">G</span>zippin'</span> up the mess
+            <span className="p-rel"><span className="p-abs beginning">Em7</span>Dancin'</span> with your <span className="p-rel"><span className="p-abs beginning">Dadd4</span>best</span> foot forward
+            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Did</span> you want the crown.  <span className="p-rel"><span className="p-abs beginning">G</span>or</span> does it weigh you down?
+            <span className="p-rel"><span className="p-abs beginning">Em7</span>Nobody's</span> feeling <span className="p-rel"><span className="p-abs beginning">Dadd4</span>sorry</span> for ya
         </p>
 
         <p>
-            <strong>(Chorus)</strong>
+            <strong>(Chorus 1)</strong>
         </p>
-
         <p>
-            <strong>Bridge:</strong>
-            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Well</span> you stood there with <span className="p-rel"><span className="p-abs beginning">D</span>me</span> in the doorway<br /><br />
-            My <span className="p-rel"><span className="p-abs beginning">Em</span>hands</span> shake and <span className="p-rel"><span className="p-abs beginning">D</span>I'm</span> not <span className="p-rel"><span className="p-abs beginning">G</span>usually</span> this <span className="p-rel"><span className="p-abs beginning">A</span>way</span> but<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>You</span> pull me in and I'm a <span className="p-rel"><span className="p-abs beginning">D</span>little</span> more brave<br /><br />
-            It's the <span className="p-rel"><span className="p-abs beginning">Em</span>first</span> kiss, it's <span className="p-rel"><span className="p-abs beginning">D</span>flawless</span>, really <span className="p-rel"><span className="p-abs beginning">G</span><span className="p-abs ending">A</span>something</span>,<br /><br />
-            it's <span className="p-rel"><span className="p-abs ending long">D&nbsp;&nbsp;A&nbsp;&nbsp;Em&nbsp;&nbsp;G</span>fearless</span><br /><br />
-        </p>
-
-        <p>
-            <strong>(Chorus)</strong>
+            <strong>Chorus 2:</strong>
+            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Yeah</span>, what if I <span className="p-rel"><span className="p-abs beginning">G</span>told</span> you the sky wouldn't <span className="p-rel"><span className="p-abs beginning">Em7</span>fall</span>?<br /><br />
+            If you lost your com<span className="p-rel"><span className="p-abs beginning">Dadd4</span>posure</span>, said to hell with it all<br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Not</span> everything <span className="p-rel"><span className="p-abs beginning">G</span>pretty</span> sparkles and <span className="p-rel"><span className="p-abs beginning">Em7</span>shines</span><br /><br />
+            And even the home<span className="p-rel"><span className="p-abs beginning">Dadd4</span>coming</span> queen cries<br /><br />
         </p>
     </div>
 );

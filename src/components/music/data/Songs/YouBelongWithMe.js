@@ -8,56 +8,81 @@ const YouBelongWithMe = () => (
         </p>
         <p>
             <strong>Verse 1:</strong>
-            <span className="p-rel"><span className="p-abs beginning">D</span>There's</span> something 'bout the way<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">A</span>The</span> street looks when it's just <span className="p-rel"><span className="p-abs beginning">Em</span>rained</span><br /><br />
-            There's a glow off the <span className="p-rel"><span className="p-abs beginning">G</span>pavement</span><br /><br />
-            Walk me to the <span className="p-rel"><span className="p-abs beginning">D</span>car</span><br /><br />
-            And you know I wanna&nbsp;<span className="p-rel"><span className="p-abs beginning">A</span>ask</span>&nbsp;you to dance right<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">Em</span>there</span><br /><br />
-            In the middle of the <span className="p-rel"><span className="p-abs beginning">G</span>parking</span> lot.<br /><br />
-            <span className="p-rel">Yeah<span className="p-abs ending long">D&nbsp;&nbsp;A&nbsp;&nbsp;Em&nbsp;&nbsp;G</span></span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">D</span>You're</span> on the phone with your girlfriend, <span className="p-rel"><span className="p-abs beginning">A</span>she's</span> upset<br /><br />
+            She's going off about <span className="p-rel"><span className="p-abs beginning">Em</span>some</span> thing that you said<br /><br />
+            'Cause she doesn't get <span className="p-rel"><span className="p-abs beginning">G</span>your</span> humor like I do<br /><br />
+            <span className="p-rel"><span className="p-abs beginning">D</span>I'm</span> in the room it's a typical <span className="p-rel"><span className="p-abs beginning">A</span>Tuesday</span> night<br /><br />
+            I'm listening to the kind of music she <span className="p-rel"><span className="p-abs beginning">Em</span>doesn't</span> like<br /><br />
+            And she'll never know your <span className="p-rel"><span className="p-abs beginning">G</span>story</span> like I do<br /><br />
         </p>
         <p>
-            <strong>Verse 2:</strong>
-            <span className="p-rel"><span className="p-abs beginning">D</span>We're</span> drivin' down the road<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">A</span>I</span> wonder if you <span className="p-rel"><span className="p-abs beginning">Em</span>know</span><br /><br />
-            I'm trying so hard <span className="p-rel"><span className="p-abs beginning">G</span>not</span> to get caught up now<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">D</span>But</span> you're just so cool<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">A</span>Run</span> your hands through your <span className="p-rel"><span className="p-abs beginning">Em</span>hair</span><br /><br />
-            Absent-mindedly <span className="p-rel"><span className="p-abs beginning">G</span>making</span> me <span className="p-rel"><span className="p-abs beginning">A</span>want</span> you<br /><br />
+            <strong>Pre-Chorus 1:</strong>
+            But she <span className="p-rel"><span className="p-abs beginning">Em</span>wears</span> short skirts, I <span className="p-rel"><span className="p-abs beginning">G</span>wear</span> T-shirts<br /><br />
+            <span className="p-rel"><span className="p-abs beginning">D</span>She's</span> cheer captain and I'm on the <span className="p-rel"><span className="p-abs beginning">A</span>bleachers</span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Em</span>Dreaming</span> about the day when you wake <span className="p-rel"><span className="p-abs beginning">G</span>up</span> and find<br /><br />
+            That what you're looking <span className="p-rel"><span className="p-abs beginning">A</span>for</span> has been here the whole time<br /><br />
         </p>
         <p>
             <strong>Chorus:</strong>
-            <span className="p-rel"><span className="p-abs beginning">D</span>And</span> I don't know how <span className="p-rel"><span className="p-abs beginning">A</span>it</span> gets better than <span className="p-rel"><span className="p-abs beginning">Em</span>this</span><br /><br />
-            You take my hand and drag me <span className="p-rel"><span className="p-abs beginning">G</span>head</span> first, <span className="p-rel"><span className="p-abs beginning">A</span>fearless</span><br /><br />
-            <span className="p-rel"><span className="p-abs beginning">D</span>And</span> I don't know why <span className="p-rel"><span className="p-abs beginning">A</span>but</span> with you I'd <span className="p-rel"><span className="p-abs beginning">Em</span>dance</span><br /><br />
-            In a storm in my <span className="p-rel"><span className="p-abs beginning">G</span>best</span> dress <span className="p-rel"><span className="p-abs beginning">A</span>fearless</span><br /><br />
+            If you could see that <span className="p-rel"><span className="p-abs beginning">D</span>I'm</span> the one who understands you<br /><br />
+            <span className="p-rel"><span className="p-abs beginning">A</span>Been</span> here all along, so why <span className="p-rel"><span className="p-abs beginning">Em</span>can't</span> you see?<br /><br />
+            You belong with <span className="p-rel"><span className="p-abs beginning">G</span>me</span>, you belong <span className="p-rel"><span className="p-abs beginning">D</span>with</span> me<br /><br />
         </p>
 
         <p>
-            <strong>Verse 3:</strong>
-            <span className="p-rel"><span className="p-abs beginning">D</span>So</span> baby drive slow
-            <span className="p-rel"><span className="p-abs beginning">A</span>'til</span> we run out of <span className="p-rel"><span className="p-abs beginning">Em</span>road</span><br /><br />
-            in this one horse <span className="p-rel"><span className="p-abs beginning">G</span>town</span> I wanna stay right <span className="p-rel"><span className="p-abs beginning">D</span>here</span><br /><br />
-            In this passenger <span className="p-rel"><span className="p-abs beginning">A</span>seat</span> you put your eyes on <span className="p-rel"><span className="p-abs beginning">Em</span>me</span><br /><br />
-            In this moment now <span className="p-rel"><span className="p-abs beginning">G</span>capture</span> it, <span className="p-rel"><span className="p-abs beginning">A</span>remember</span> it<br /><br />
+            <strong>Verse 2:</strong>
+            <span className="p-rel"><span className="p-abs beginning">D</span>Walkin'</span> the streets with you and your worn <span className="p-rel"><span className="p-abs beginning">A</span>out</span> jeans<br /><br />
+            I can't help thinking this is how it <span className="p-rel"><span className="p-abs beginning">Em</span>ought</span> to be<br /><br />
+            Laughing on a park bench, <span className="p-rel"><span className="p-abs beginning">G</span>thinking</span> to myself<br /><br />
+            Hey isn't this easy<br /><br />
+            And you've got <span className="p-rel"><span className="p-abs beginning">D</span>a</span> smile that could light up this whole <span className="p-rel"><span className="p-abs beginning">A</span>town</span><br /><br />
+            I haven't seen it in a while since she <span className="p-rel"><span className="p-abs beginning">Em</span>brought</span> you down<br /><br />
+            You say you're fine, I know you better then that<br /><br />
+            <span className="p-rel"><span className="p-abs beginning">G</span>Hey</span> what you doing with a girl like that
+        </p>
+
+        <p>
+            <strong>Pre-Chorus 2:</strong>
+            <span className="p-rel"><span className="p-abs beginning">Em</span>She</span> wears high heels, I wear sneakers<br /><br />
+            <span className="p-rel"><span className="p-abs beginning">G</span>She's</span> cheer captain and I'm on the <span className="p-rel"><span className="p-abs beginning">D</span>bleachers</span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Em</span>Dreaming</span> about the day when you wake <span className="p-rel"><span className="p-abs beginning">G</span>up</span> and find<br /><br />
+            That what you're looking <span className="p-rel"><span className="p-abs beginning">A</span>for</span> has been here the whole time<br /><br />
         </p>
 
         <p>
             <strong>(Chorus)</strong>
+        </p>
+
+        <p>
+            <strong>Chorus 2:</strong>
+            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Standing</span> by and waiting at your back <span className="p-rel"><span className="p-abs beginning">D</span>door</span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Em</span>All</span> this time how could you not <span className="p-rel"><span className="p-abs beginning">D</span>know</span>, baby<br /><br />
+            You belong with <span className="p-rel"><span className="p-abs beginning">G</span>me</span>, you belong with <span className="p-rel"><span className="p-abs beginning">D</span>me</span><br /><br />
         </p>
 
         <p>
             <strong>Bridge:</strong>
-            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Well</span> you stood there with <span className="p-rel"><span className="p-abs beginning">D</span>me</span> in the doorway<br /><br />
-            My <span className="p-rel"><span className="p-abs beginning">Em</span>hands</span> shake and <span className="p-rel"><span className="p-abs beginning">D</span>I'm</span> not <span className="p-rel"><span className="p-abs beginning">G</span>usually</span> this <span className="p-rel"><span className="p-abs beginning">A</span>way</span> but<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>You</span> pull me in and I'm a <span className="p-rel"><span className="p-abs beginning">D</span>little</span> more brave<br /><br />
-            It's the <span className="p-rel"><span className="p-abs beginning">Em</span>first</span> kiss, it's <span className="p-rel"><span className="p-abs beginning">D</span>flawless</span>, really <span className="p-rel"><span className="p-abs beginning">G</span><span className="p-abs ending">A</span>something</span>,<br /><br />
-            it's <span className="p-rel"><span className="p-abs ending long">D&nbsp;&nbsp;A&nbsp;&nbsp;Em&nbsp;&nbsp;G</span>fearless</span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Em</span>Oh</span> I remember you drivin' to my <span className="p-rel"><span className="p-abs beginning">D</span>house</span> in the middle of the night<br /><br />
+            I'm the one who makes you laugh when you know you're about to <span className="p-rel"><span className="p-abs beginning">G</span>cry</span><br /><br />
+            And I know your favorite songs and you tell me about your <span className="p-rel"><span className="p-abs beginning">A</span>dreams</span><br /><br />
+            Think I know where you belong, think I know it's with <span className="p-rel"><span className="p-abs beginning">Em</span>me</span><br /><br />
         </p>
 
         <p>
-            <strong>(Chorus)</strong>
+            <strong>Chorus 3:</strong>
+            <span className="p-rel"><span className="p-abs beginning">D</span>Can't</span> you see that I'm the one who <span className="p-rel"><span className="p-abs beginning">A</span>understands</span> you<br /><br />
+            Been here all along, so why can't you <span className="p-rel"><span className="p-abs beginning">Em</span>see</span>?<br /><br />
+            You belong with <span className="p-rel"><span className="p-abs beginning">G</span>me</span>, you belong with <span className="p-rel"><span className="p-abs beginning">D</span>me</span><br /><br />
+        </p>
+
+        <p>
+            <strong>Chorus 4:</strong>
+            Standing by and waiting at your back <span className="p-rel"><span className="p-abs beginning">A</span>door</span><br /><br />
+            All this time how could you not <span className="p-rel"><span className="p-abs beginning">Em</span>know</span>, baby<br /><br />
+            You belong with <span className="p-rel"><span className="p-abs beginning">G</span>me</span>, you belong with <span className="p-rel"><span className="p-abs beginning">D</span>me</span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>You</span> belong with <span className="p-rel"><span className="p-abs beginning">G</span>me</span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Have</span> you ever thought just maybe<br /><br />
+            You belong with <span className="p-rel"><span className="p-abs beginning">G</span>me</span>, you belong with <span className="p-rel"><span className="p-abs beginning">D</span>me</span>
         </p>
     </div>
 );

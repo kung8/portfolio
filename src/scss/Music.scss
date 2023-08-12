@@ -319,6 +319,9 @@
             right: -400px;
             animation: slide-out 1s ease-in-out;
             transition: right 1s;
+            @include down($mobile) {
+                right: -100%;
+            }
         }
 
         @include down($mobile) {
@@ -501,6 +504,9 @@
 @keyframes slide-in {
     from {
         right: -400px;
+        @include down($mobile) {
+            right: -100%;
+        }
     }
     to {
         right: 0;
@@ -513,5 +519,8 @@
     }
     to {
         right: -400px;
+        @include down($mobile) {
+            right: -100%;
+        }
     }
 }
