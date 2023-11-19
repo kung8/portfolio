@@ -110,7 +110,7 @@ const components = [
             'Lodash'
         ],
         images: [genericScoreSheet],
-        url: 'https://buddingacorn.dev/#/resources/1',
+        url: 'https://buddingacorn.dev/#/resources/recreation/scoresheet',
         hosted: true,
         show: true,
     },
