@@ -43,6 +43,9 @@
             @include down($mobile-xl) {
                 width: 50%;
             }
+            @include down($extra-small) {
+                width: 100%;
+            }
 
             img {
                 width: 100%;

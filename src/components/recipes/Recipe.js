@@ -6,18 +6,14 @@ import { Loader } from '../Loader';
 export const Recipe = ({ history, match }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const { id } = match.params;
-    const { data: recipe = [], isFetched, isFetching } = useGetData('recipes', id);
+    const { data: recipe = [] } = useGetData('recipes', id);
     const item = recipe[0];
 
     useEffect(() => {
-        if (!isFetched) {
-            setTimeout(() => {
-                setIsLoaded(true);
-            }, 1500);
-        } else {
+        setTimeout(() => {
             setIsLoaded(true);
-        }
-    }, [isFetching])
+        }, 3000);
+    }, [])
 
     return (
         <div className='recipe page'>
