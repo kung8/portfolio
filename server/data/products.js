@@ -1,5 +1,6 @@
 const eden = '../assets/Products/eden.jpeg';
 const games = '../assets/Products/full-set.png';
+const cookbook = '../assets/Products/cookbook.png';
 
 const products = [
     {
@@ -15,7 +16,7 @@ const products = [
     },
     {
         organization: 'Cookbook',
-        images: [games],
+        images: [cookbook],
         bullets: [
             'I love to cook and almost as much as I love to eat. Here are some of my favorite recipes that I have collected over the years.',
         ],
