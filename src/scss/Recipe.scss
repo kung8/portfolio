@@ -24,6 +24,9 @@
             aspect-ratio: 1/1;
             width: 350px;
             margin-bottom: 24px;
+            @include down($mobile) {
+                width: 100%;
+            }
         }
 
         .prep-time {
@@ -43,10 +46,12 @@
         }
 
         .recipe-detail-list {
-            margin-bottom: 24px;
+            margin-bottom: 40px;
             list-style: none;
             &.numbered {
                 list-style-type: decimal;
+                padding-left: 24px;
+                margin-bottom: 0;
                 li {
                     margin-bottom: 8px;
                 }

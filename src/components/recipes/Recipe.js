@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useQueryClient } from 'react-query';
 import { useGetData } from '../../hooks';
 import { Cursor } from '../Cursor';
 import { Loader } from '../Loader';
@@ -9,10 +10,22 @@ export const Recipe = ({ history, match }) => {
     const { data: recipe = [] } = useGetData('recipes', id);
     const item = recipe[0];
 
+    const queryClient = useQueryClient();
+    const queryKey = ['getData', 'recipes', id];
+    const cache = queryClient.getQueryData(queryKey)?.data?.length;
+
     useEffect(() => {
-        setTimeout(() => {
+        if (cache) {
             setIsLoaded(true);
-        }, 3000);
+        } else {
+            setTimeout(() => {
+                setIsLoaded(true);
+            }, 3000);
+        }
+        return () => {
+            setIsLoaded(false);
+        }
+        // eslint-disable-next-line
     }, [])
 
     return (
