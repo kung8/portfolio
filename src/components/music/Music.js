@@ -9,7 +9,7 @@ export const Music = ({ history }) => {
 
     return (
         <div className='music page'>
-            <div className="music-heading-container">
+            <div className="heading-container">
                 <span className='back-btn' onClick={() => history.push('/')}>Back Home</span>
                 <h1 className="music-heading">Music</h1>
             </div>

@@ -1,8 +1,6 @@
 const eden = '../assets/Products/eden.jpeg';
 const games = '../assets/Products/full-set.png';
 
-// const baseUrl = process.env.NODE_ENV === 'production' ? 'https://kevinung8.com/#' : 'http://localhost:3000/#';
-
 const products = [
     {
         organization: 'Songs',
@@ -11,7 +9,18 @@ const products = [
             'Meet Eden, my guitar! I dabble with music production and songwriting. T-Swift among many other country/pop artists have been my inspiration. I am hoping to work on more music over the next half of the year.',
         ],
         url: 'https://kevinung8.com/#/music',
-        // url: 'http://localhost:3000/#/music',
+        localUrl: 'http://localhost:3000/#/music',
+        hosted: true,
+        show: true,
+    },
+    {
+        organization: 'Cookbook',
+        images: [games],
+        bullets: [
+            'I love to cook and almost as much as I love to eat. Here are some of my favorite recipes that I have collected over the years.',
+        ],
+        url: 'https://kevinung8.com/#/recipes',
+        localUrl: 'http://localhost:3000/#/recipes',
         hosted: true,
         show: true,
     },

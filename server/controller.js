@@ -6,6 +6,7 @@ const education = require('./data/education');
 const experiences = require('./data/experiences');
 const products = require('./data/products');
 const projects = require('./data/projects');
+const recipes = require('./data/recipes');
 
 const data = {
     components, 
@@ -13,6 +14,7 @@ const data = {
     experiences,
     products,
     projects,
+    recipes,
     // heroes, 
 }
 
@@ -22,8 +24,12 @@ module.exports = {
         res.send(heroes);
     },
     getData: async (req, res) => {
-        const { type } = req.query;
-        res.send(data[type] ?? []);
+        const { type, id } = req.query;
+        if (id) {
+            const item = data[type].filter(item => item.id === id);
+            return res.send(item);
+        }
+        return res.send(data[type] ?? []);
     },
     message: async (req, res) => {
         const { name, message, email, subject } = req.body;
