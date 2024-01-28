@@ -18,7 +18,7 @@ const components = [
             'Sass',
         ],
         images: [periodicTable],
-        url: 'https://yourmove.dev/#/science/chemistry',
+        url: 'https://buddingacorn.dev/#/resources/science/chemistry',
         hosted: true,
         show: true,
     },
