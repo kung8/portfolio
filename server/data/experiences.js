@@ -139,7 +139,7 @@ const experiences = [
         show: true,
     },
     {
-        title: 'CEO / Game Designer / Developer',
+        title: 'Business Owner / Tabletop Game Designer',
         organization: 'Budding Acorn',
         description: 'Board game company',
         location: 'American Fork, UT',

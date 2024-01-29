@@ -24,7 +24,7 @@ export const LeftPanel = ({ selected, setSelected }) => {
         <div className='left-panel-container'>
             <div className='top-container'>
                 <h2 className='name'>Kevin Ung</h2>
-                <h4 className='title'>Software Engineer | CEO</h4>
+                <h4 className='title'>Software Engineer | Tabletop Game Designer</h4>
                 <p className='headline'>Building stuff to make life easier and more enjoyable and hoping to inspire others.</p>
                 <ul className="link-container">
                     {links.filter(link => link.show).map((link, index) => <li key={index} onClick={() => handleScroll(index)} className={`${selected === index ? 'selected-link' : ''}`}>{link.label}</li>)}
