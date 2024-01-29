@@ -1,14 +1,14 @@
 const cookies = '../assets/Products/baked-cookies.jpeg';
 const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
-const pizza = '../assets/Products/pizza.jpeg';
+// const pizza = '../assets/Products/pizza.jpeg';
 const taco = '../assets/Products/taco-in-a-bag.jpeg';
 const sushi = '../assets/Products/sushi.jpeg';
 const smoothie = '../assets/Products/smoothie.jpeg';
 const butterChicken = '../assets/Products/butter-chicken.jpeg';
 const katsu = '../assets/Products/katsu.jpeg';
-const spaghetti = '../assets/Products/spaghetti.jpeg';
-const alfredo = '../assets/Products/dutch-apple-pie.jpeg';
-const pancakes = '../assets/Products/pancakes.jpeg';
+// const spaghetti = '../assets/Products/spaghetti.jpeg';
+// const alfredo = '../assets/Products/dutch-apple-pie.jpeg';
+// const pancakes = '../assets/Products/pancakes.jpeg';
 const omelette = '../assets/Products/omelette.jpeg';
 const hawaiian = '../assets/Products/hawaiian-haystacks-aerial.jpeg';
 const aji = '../assets/Products/aji-de-gallina.jpeg';
@@ -29,24 +29,27 @@ const hamburger = '../assets/Products/hamburger.jpeg';
 const hospitalityChicken = '../assets/Products/hospitality-chicken.jpeg';
 const smores = '../assets/Products/smores.jpeg';
 const wraps = '../assets/Products/wraps.jpeg';
-const salad = '../assets/Products/chicken-salad.jpeg';
+// const salad = '../assets/Products/chicken-salad.jpeg';
 const padThai = '../assets/Products/pad-thai.jpeg';
 const sourChicken = '../assets/Products/sour-chicken.jpeg';
 const pigsInABlanket = '../assets/Products/pigs-in-a-blanket.jpeg';
 const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
 const greenBeanWithBeef = '../assets/Products/green-bean-with-beef.jpeg';
-const dutchApplePie = '../assets/Products/dutch-apple-pie.jpeg';
+// const dutchApplePie = '../assets/Products/dutch-apple-pie.jpeg';
 const turkeyPlaceholder = '../assets/Products/dutch-apple-pie.jpeg';
+const lemonChicken = '../assets/Products/lemon-chicken.jpeg';
+const loMein = '../assets/Products/lo-mein-noodles.jpeg';
+const meatballSpinachTortelliniSoup = '../assets/Products/turkey-meatball-spinach-tortellini-soup.jpeg';
 // const turkeyCookingTable = '../assets/Products/cooking-turkey-estimates.png';
 // const turkeyThawingTable = '../assets/Products/thawing-turkey-estimates.png';
 
 const recipes = [
-    { 
+    {
         id: 'pad-thai',
-        cardName: 'Pad Thai', 
-        name: 'Thai Pad Thai', 
-        img: padThai, 
-        available: true, 
+        cardName: 'Pad Thai',
+        name: 'Thai Pad Thai',
+        img: padThai,
+        available: true,
         type: 'Lunch / Dinner',
         yields: '6 serving',
         prepTime: '15 m',
@@ -90,12 +93,12 @@ const recipes = [
             'Serve and garnish with green onion, peanuts, bean sprout, cilantro, and lime juice. Enjoy this majestic Thai dish!',
         ]
     },
-    { 
-        id: 'sour-chicken', 
-        cardName: 'Sour Chicken', 
-        name: 'Sour Chicken', 
-        img: sourChicken, 
-        available: true, 
+    {
+        id: 'sour-chicken',
+        cardName: 'Sour Chicken',
+        name: 'Sour Chicken',
+        img: sourChicken,
+        available: true,
         type: 'Lunch / Dinner',
         yields: '10 servings',
         prepTime: '10 m',
@@ -119,15 +122,15 @@ const recipes = [
             'Ladle out about 1.5 cup of the soup for the sour mix. Pour in tamarind powder and lime juice and mix together.',
             'When ready to eat, add sour mixture to the soup (as desired).',
             'Serve soup over rice and enjoy this nostalgic piece of home for me.',
-        ] 
+        ]
     },
-    { 
-        id: 'green-bean-with-beef', 
-        cardName: 'Green Bean & Beef', 
-        name: 'Green Bean & Beef', 
-        img: greenBeanWithBeef, 
-        available: true, 
-        type: 'Lunch / Dinner', 
+    {
+        id: 'green-bean-with-beef',
+        cardName: 'Green Bean & Beef',
+        name: 'Green Bean & Beef',
+        img: greenBeanWithBeef,
+        available: true,
+        type: 'Lunch / Dinner',
         yields: '4 servings',
         prepTime: '15 m',
         cookTime: '20 m',
@@ -150,12 +153,12 @@ const recipes = [
             'Serve over rice and enjoy this Chinese stir-fry.'
         ]
     },
-    { 
-        id: 'roasted-turkey', 
-        cardName: 'Roast Turkey', 
-        name: 'Garlic Herb Butter Roast Turkey', 
-        img: turkeyPlaceholder, 
-        available: false, 
+    {
+        id: 'roasted-turkey',
+        cardName: 'Roast Turkey',
+        name: 'Garlic Herb Butter Roast Turkey',
+        img: turkeyPlaceholder,
+        available: false,
         type: 'Lunch / Dinner',
         yields: '10 servings (recipe based on 14 lb)',
         prepTime: '20 m',
@@ -172,12 +175,12 @@ const recipes = [
             { name: 'pepper', amount: '', additionalDetails: 'minced', optional: false },
         ],
         supplies: [
-            { name: 'oven',  },
+            { name: 'oven' },
             { name: 'roasting pan' },
-            { name: '2 tongs',  },
+            { name: '2 tongs' },
             { name: 'medium bowl' },
-            { name: 'basting brush',  },
-            { name: 'internal thermometer',  },
+            { name: 'basting brush' },
+            { name: 'internal thermometer' },
         ],
         directions: [
             'Note: Typically you need to cook a turkey for about 13 - 15 min per pound. Small = 13 lb or less; large = 14 lb or more. Refer to additional resources to plan for thawing and cooking estimates (figures 1 and 2, respectively).',
@@ -199,7 +202,7 @@ const recipes = [
         supplemental: [
             { title: 'Thawing Estimate', content: 'Estimations for thawing turkey.' },
             { title: 'Cooking Estimate', content: 'Estimations for cooking turkey.' }
-        ] 
+        ]
     },
     {
         id: 'black-pepper-chicken',
@@ -346,12 +349,12 @@ const recipes = [
             'Serve with rice (and naan is optional and delicious).'
         ]
     },
-    { 
-        id: 'vietnamese-pho', 
-        cardName: 'Pho', 
-        name: 'Vietnamese Pho', 
-        img: pho, 
-        available: true, 
+    {
+        id: 'vietnamese-pho',
+        cardName: 'Pho',
+        name: 'Vietnamese Pho',
+        img: pho,
+        available: true,
         type: 'Lunch / Dinner',
         yields: '4 servings',
         prepTime: '8 - 10 m',
@@ -463,8 +466,8 @@ const recipes = [
             { name: 'measuring spoons' },
             { name: 'cutting board(s) and knife(ves)' },
             { name: 'small bowls (for dredging)' },
-            { name: 'long-handled tongs',  },
-            { name: 'cooking thermometer',  },
+            { name: 'long-handled tongs' },
+            { name: 'cooking thermometer' },
             { name: 'cooling rack' },
             { name: 'large plate' },
             { name: 'oven mitts' },
@@ -485,12 +488,12 @@ const recipes = [
             'Serve with rice and optionally with tomato, cabbage, and lemon slices (squeezed over chicken, or cabbage, or both) and enjoy this Japanese goodness!',
         ]
     },
-    { 
-        id: 'beef-bulgogi', 
-        cardName: 'Beef Bulgogi', 
-        name: 'Korean Beef Bulgogi', 
-        img: beefBulgogi, 
-        available: true, 
+    {
+        id: 'beef-bulgogi',
+        cardName: 'Beef Bulgogi',
+        name: 'Korean Beef Bulgogi',
+        img: beefBulgogi,
+        available: true,
         type: 'Lunch / Dinner',
         yields: '6 servings',
         prepTime: '8 h',
@@ -522,14 +525,164 @@ const recipes = [
             'Heat frying pan over medium heat and add 1 Tbsp vegetable and cook beef in batches.',
             'Flip beef over and cook. Repeat for additional batch.',
             'Serve over rice and top with green onion and sesame seeds.'
-        ] 
+        ]
     },
-    { 
-        id: 'hospitality-chicken', 
-        cardName: 'Hospitality Chicken', 
-        name: 'Hospitality Chicken', 
-        img: hospitalityChicken, 
-        available: true, 
+    {
+        id: 'lemon-chicken',
+        cardName: 'Lemon Chicken',
+        name: 'Lemon Chicken',
+        img: lemonChicken,
+        available: true,
+        type: 'Lunch / Dinner',
+        yields: '10 servings',
+        prepTime: '10 m',
+        cookTime: '10 m',
+        ingredients: [
+            { name: 'boneless chicken thigh', amount: '3 lbs', additionalDetails: 'cut into small pieces', optional: false },
+            { name: 'soy sauce', amount: '2 1/2 Tbsp', additionalDetails: '', optional: false },
+            { name: 'shaoxing wine', amount: '2 1/2 Tbsp', additionalDetails: '', optional: false },
+            { name: 'cornstarch', amount: '5 Tbsp', additionalDetails: '', optional: false },
+            
+            { name: 'cornstarch', amount: '1 1/4 cups', additionalDetails: '', optional: false },
+            { name: 'flour', amount: '1 1/4 cups', additionalDetails: '', optional: false },
+            { name: 'vegetable oil', amount: '', additionalDetails: 'for deep-frying', optional: false },
+            
+            
+            { name: 'lemon juice', amount: '15 Tbsp', additionalDetails: '', optional: false },
+            { name: 'sugar', amount: '5 Tbsp', additionalDetails: '', optional: false },
+            { name: 'water', amount: '25 Tbsp', additionalDetails: '', optional: false },
+            { name: 'cornstarch', amount: '5 tsp', additionalDetails: '', optional: false },
+            { name: 'salt', amount: '5 pinches', additionalDetails: 'to taste', optional: false },
+            { name: 'white sesame', amount: '2 1/2 tsp', additionalDetails: 'to top', optional: false },
+        ],
+        supplies: [
+            { name: 'stove' },
+            { name: 'deep pot' },
+            { name: 'large bowl' },
+            { name: 'sauce pan' },
+            { name: 'medium bowl' },
+            { name: 'baking sheet' },
+            { name: 'cooling rack' },
+            { name: 'paper towels' },
+        ],
+        directions: [
+            'In a large bowl, marinate the chicken with the soy sauce, shaoxing wine, and cornstarch (5 Tbsp) for at least 30 minutes.',
+            'Mix the sugar, cornstarch (5 tsp), salt, water,lemon juice, and white sesame in a sauce pan. Set aside. This is the sauce.',
+            'In a medium bowl, mix the flour and cornstarch (1 1/4 cups) for the dredging station.',
+            'Heat up a deep pot with vegetable oil over medium-high heat.',
+            'Line a baking sheet with paper towels and place a cooling rack on top.',
+            'Once the oil is hot, dredge the chicken in the flour mixture and shake off any excess. Then fry the chicken in the oil until golden brown (about 7 to 10 minutes).',
+            'Remove the chicken from the oil and place on the cooling rack.',
+            'Continue until all of the chicken is cooked.',
+            'Heat the sauce over medium heat until it thickens. Serve over the chicken with rice.',
+        ]
+    },
+    {
+        id: 'turkey-meatball-spinach-tortellini-soup',
+        cardName: 'Tortellini Soup',
+        name: 'Turkey Meatball Spinach Tortellini Soup',
+        img: meatballSpinachTortelliniSoup,
+        available: true,
+        type: 'Lunch / Dinner',
+        yields: '6 servings',
+        prepTime: '15 m',
+        cookTime: '35 m',
+        ingredients: [
+            { name: 'ground turkey', amount: '16 oz', additionalDetails: '', optional: false },
+            { name: 'breadcrumbs', amount: '2 Tbsp', additionalDetails: '', optional: false },
+            { name: 'parmesan cheese', amount: '2 Tbsp', additionalDetails: '', optional: false },
+            { name: 'parsley', amount: '2 Tbsp', additionalDetails: '', optional: false },
+            { name: 'egg', amount: '1 large', additionalDetails: '', optional: false },
+            { name: 'garlic', amount: '1 clove', additionalDetails: 'minced', optional: false },
+            { name: 'salt', amount: '1/8 tsp', additionalDetails: '', optional: false },
+            { name: 'unsalted butter', amount: '1/2 Tbsp', additionalDetails: '', optional: false },
+            { name: 'celery', amount: '2 stalks', additionalDetails: '', optional: false },
+            { name: 'onion', amount: '1 small', additionalDetails: '', optional: false },
+            { name: 'carrot', amount: '1 large', additionalDetails: 'peeled and chopped', optional: false },
+            { name: 'garlic', amount: '2 cloves', additionalDetails: 'minced', optional: false },
+            { name: 'chicken broth', amount: '58 oz', additionalDetails: '', optional: false },
+            { name: 'spinach cheese tortellini', amount: '18 oz', additionalDetails: '', optional: false },
+            { name: 'baby spinach', amount: '3 c', additionalDetails: '', optional: false },
+            { name: 'black pepper', amount: '', additionalDetails: 'to taste', optional: false },
+        ],
+        supplies: [
+            { name: 'stove' },
+            { name: 'large bowl' },
+            { name: 'large pot' },
+        ],
+        directions: [
+            'Combine the ground turkey, breadcrumbs, parmesan cheese, parsley, egg, garlic, and salt in a large bowl.',
+            'Gently mix together with hands until combined.',
+            'Make small meatballs (about 1 Tbsp each).',
+            'Melt butter in a large pot over medium heat.',
+            'Once melted, add the celery, onion, carrot, and garlic. Cover and reduce heat to low. Cook until vegetables begin to soften (about 8 to 10 minutes).',
+            'Add the chicken broth and increase heat to medium-high. Bring to a boil.',
+            'Add black pepper to taste.',
+            'Reduce heat to medium and drop in the meatballs. Cook for about 4 minutes.',
+            'Add tortellini and simmer until cooked (about 7 minutes).',
+            'Once cooked, add the baby spinach and stir to combine.',
+        ]
+    },
+    {
+        id: 'lo-mein-noodles',
+        cardName: 'Lo Mein',
+        name: 'Lo Mein Noodles',
+        img: loMein,
+        available: true,
+        type: 'Lunch / Dinner',
+        yields: ' servings',
+        prepTime: '1 m',
+        cookTime: '10 m',
+        ingredients: [
+            { name: 'flank steak', amount: '1/2 pound', additionalDetails: 'sliced', optional: false },
+            { name: 'salt', amount: '1/4 tsp', additionalDetails: '', optional: false },
+            { name: 'sugar', amount: '1/4 tsp', additionalDetails: '', optional: false },
+            { name: 'black pepper', amount: '1/8 tsp', additionalDetails: '', optional: false },
+            { name: 'shaoxing wine', amount: '1/2 tsp', additionalDetails: '', optional: false },
+            { name: 'light soy sauce', amount: '1/2 tsp', additionalDetails: '', optional: false },
+            { name: 'cornstarch', amount: '1/2 tsp', additionalDetails: '', optional: false },
+
+            { name: 'sesame oil', amount: '1 Tbsp', additionalDetails: '', optional: false },
+            { name: 'light soy sauce', amount: '2 tsp', additionalDetails: '', optional: false },
+            { name: 'dark soy sauce', amount: '2 tsp', additionalDetails: '', optional: false },
+            { name: 'oyster sauce', amount: '2 tsp', additionalDetails: '', optional: false },
+            { name: 'salt', amount: '1/4 tsp', additionalDetails: '', optional: false },
+            { name: 'sugar', amount: '1/4 tsp', additionalDetails: '', optional: false },
+            { name: 'shaoxing wine', amount: '1 tsp', additionalDetails: '', optional: false },
+            { name: 'water', amount: '1 Tbsp', additionalDetails: '', optional: false },
+
+            { name: 'lo mein noodles', amount: '1 pound', additionalDetails: '', optional: false },
+            { name: 'vegetable oil', amount: '4 Tbsp', additionalDetails: '', optional: false },
+            { name: 'broccoli', amount: '1/2 pound', additionalDetails: 'cut into florets', optional: false },
+            { name: 'garlic', amount: '3 medium cloves', additionalDetails: '', optional: false },
+        ],
+        supplies: [
+            { name: 'stove' },
+            { name: 'medium bowl' },
+            { name: 'wok' },
+            { name: 'large pot' },
+            { name: 'stove' },
+            { name: 'large bowl'},
+        ],
+        directions: [
+            'Combine beef, salt, sugar, pepper, shaoxing wine (1/2 tsp), light soy sauce (1/2 tsp), and cornstarch in a medium bowl. Mix with hands until beef is well-coated. Let it marinate for at least 30 minutes.',
+            'Combine sesame oil, light soy sauce (2 tsp), dark soy sauce, oyster sauce, salt, sugar, shaoxing wine (1 tsp), and water in a small bowl. Mix well and set aside. This is the sauce.',
+            'Bring a large pot of water to a boil. Add the noodles and cook until al dente. Drain and set aside.',
+            'Over high heat, heat 2 Tbsp of vegetable oil in a wok. Add the beef and cook until lightly browned (about 1 minute). Remove beef from wok and set aside.',
+            'Add 2 Tbsp of vegetable oil to the wok. Add the broccoli and a couple of pinches of salt, and cook until lightly browned (about 30 seconds).',
+            'Add water to the wok and continue cooking until it steams (about 2 minutes). Transfer broccoli to bowl with beef.',
+            'Heat the last Tbsp of vegetable oil in the wok. Add the noodles and stir noodles until coated with oil (about 30 seconds).',
+            'Add the sauce and stir until noodles are evenly coated (about 1 minute).',
+            'Add the garlic, beef and broccoli and continue to cook until everything is combined (about 1 minutes).',
+            'Serve and enjoy this delicious Chinese dish!'
+        ]
+    },
+    {
+        id: 'hospitality-chicken',
+        cardName: 'Hospitality Chicken',
+        name: 'Hospitality Chicken',
+        img: hospitalityChicken,
+        available: true,
         type: 'Lunch / Dinner',
         yields: '6 servings',
         prepTime: '5 m',
@@ -553,7 +706,7 @@ const recipes = [
             'While chicken is cooking, steam the peas and carrots over a medium-high heat for about 8 - 12 min (or until softened).',
             'Optional: If you like it a little crispy you can slightly grill the peas and carrots for that stir-fry taste. Heat frying pan over medium-high heat and add just a little oil. Add snow peas and carrot to pan and cook for a few minutes or until desired level of char.',
             'Serve with rice and enjoy this simple meal that can take you back to the South.'
-        ] 
+        ]
     },
     {
         id: 'aji-de-gallina',
@@ -646,148 +799,148 @@ const recipes = [
             'Layer your taco in a bag (or bowl) with whatever toppings you want and enjoy this simple, fun party in a bag.'
         ]
     },
-    { 
-        id: 'chicken-alfredo', 
-        cardName: 'Chicken Alfredo', 
-        name: 'Chicken Alfredo', 
-        img: alfredo, 
-        available: false, 
-        type: 'Lunch / Dinner',
-        yields: '4 servings',
-        prepTime: '8 - 10 m',
-        cookTime: '30 - 40 m',
-        ingredients: [
-            { name: 'fettuccine noodles', amount: '12 oz', additionalDetails: '', optional: false },
-            { name: 'olive oil (for tossing and sauteing)', amount: '', additionalDetails: '', optional: false },
-            { name: 'green bell pepper', amount: '2/3', additionalDetails: '', optional: false },
-            { name: 'onion', amount: '1/2', additionalDetails: '', optional: false },
-            { name: 'chicken breast', amount: '2', additionalDetails: 'sliced', optional: false },
-            { name: 'heavy cream', amount: '2 c', additionalDetails: '', optional: false },
-            { name: 'butter', amount: '4 Tbsp', additionalDetails: '', optional: false },
-            { name: 'nutmeg', amount: '2 pinches', additionalDetails: '', optional: false },
-            { name: 'shredded parmesan', amount: '1 1/2 c', additionalDetails: '', optional: false },
-            { name: 'salt (to taste)', amount: '', additionalDetails: '', optional: false },
-            { name: 'pepper (to taste)', amount: '', additionalDetails: '', optional: false },
-        ],
-        supplies: [
-            { name: 'stove' },
-            { name: 'large pot' },
-            { name: 'large pan' },
-            { name: 'cutting board and knife' },
-            { name: 'mixing bowl' },
-            { name: 'small and medium bowls' },
-            { name: 'colander/strainer' },
-        ],
-        directions: [
-            'Prep the vegetables and set in a small bowl. Then cut the chicken into 1/4" slices and season with salt and pepper.',
-            'In a large pot, bring water and salt to a boil.',
-            'Add pasta to pot and cook until al dente (tender but center is still a little firm).',
-            'Drain in a colander/strainer and save some of the starchy water for later.',
-            'In a large mixing bowl, add the pasta and toss with a little oil.',
-            'In a pan over medium heat, melt 1 Tbsp of butter.',
-            'Once butter melts, brown chicken in a pan over medium-high heat, 2 to 3 minutes per side. Make sure that it\'s cooked through, cook chicken in batches if necessary.',
-            'Once chicken is cooked, place in a medium bowl.',
-            'Saute the vegetables with a little bit of butter in the same pan that the chicken was cooked in. Add the vegetables in with the chicken.',
-            'In the same pan over medium heat, melt the remaining butter.',
-            'Mix together heavy cream and nutmeg before pouring into the pan and cook until it simmers, then for another 2 minutes.',
-            'Set to a low heat and slowly mix in the parmesan, chicken, veggies, pasta, a little starchy noodle water, salt and pepper.',
-            'Serve and enjoy the nostalgic creamy, delicious chicken alfredo!',
-        ] 
-    },
-    { 
-        id: 'beef-spaghetti', 
-        cardName: 'Beef Spaghetti', 
-        name: 'Beef Spaghetti', 
-        img: spaghetti, 
-        available: true, 
-        type: 'Lunch / Dinner',
-        yields: '6 servings',
-        prepTime: '5 m',
-        cookTime: '10 - 15 m',
-        ingredients: [
-            { name: 'ground beef', amount: '1 lb', additionalDetails: '', optional: false },
-            { name: 'spaghetti noodles', amount: '16 oz', additionalDetails: '', optional: false },
-            { name: 'onion', amount: '1', additionalDetails: 'diced', optional: false },
-            { name: 'olive oil (to toss)', amount: '', additionalDetails: '', optional: false },
-            { name: 'tomato sauce', amount: '24 oz', additionalDetails: '', optional: false },
-        ],
-        supplies: [
-            { name: 'stove' },
-            { name: 'large pot' },
-            { name: 'large pan' },
-            { name: 'spatula' },
-            { name: 'colander/strainer' },
-            { name: 'cutting board and knife' },
-        ],
-        directions: [
-            'NOTE: You can cook pasta and beef sauce at the same time.',
-            'In a large pot, bring water and salt to a boil. Add pasta to pot and cook until al dente (tender but center is still a little firm).',
-            'Drain pasta in a colander/strainer and save some of the starchy water for later. Return pasta back into the pot and toss with a little oil.',
-            'While the pasta is cooking, heat a pan over medium-high heat and add the ground beef. Cook until browned and break into smaller chunks with the spatula.',
-            'While the beef is cooking, dice the onions and add the onions with the beef. After the beef is browned, pour tomato sauce into the pan. And heat for another 3 to 5 minutes.',
-            'Combine the beefy sauce and the pasta and mix over medium heat. Add the starchy water to the help thicken the sauce.',
-            'Serve with a side salad and garlic bread. Enjoy this simple Italian pasta dish.'
-        ] 
-    },
-    { 
-        id: 'chicken-spaghetti', 
-        cardName: 'Chicken Spaghetti', 
-        name: 'Chicken Spaghetti', 
-        img: spaghetti, 
-        available: true, 
-        type: 'Lunch / Dinner',
-        yields: '3 servings',
-        prepTime: '5 - 7 m',
-        cookTime: '15 - 20 m',
-        ingredients: [
-            { name: 'chicken breast (or preferred protein)', amount: '1', additionalDetails: 'sliced', optional: false },
-            { name: 'any preferred noodle', amount: '3 c', additionalDetails: '', optional: false },
-            { name: 'onion', amount: '1/3', additionalDetails: 'diced', optional: false },
-            { name: 'green bell pepper', amount: '2/3', additionalDetails: 'diced', optional: false },
-            { name: 'butter', amount: '1 Tbsp', additionalDetails: '', optional: false },
-            { name: 'olive oil (to toss)', amount: '', additionalDetails: '', optional: false },
-            { name: 'sugar', amount: '2 tsp', additionalDetails: '', optional: false },
-            { name: 'tomato sauce', amount: '12 oz', additionalDetails: '', optional: false },
-            { name: 'rosemary (to taste)', amount: '', additionalDetails: '', optional: false },
-            { name: 'thyme (to taste)', amount: '', additionalDetails: '', optional: false },
-            { name: 'basil (to taste)', amount: '', additionalDetails: '', optional: false },
-            { name: 'oregano (to taste)', amount: '', additionalDetails: '', optional: false },
-            { name: 'garlic powder (to taste)', amount: '', additionalDetails: '', optional: false },
-            { name: 'parsley flakes (to taste)', amount: '', additionalDetails: '', optional: false },
-        ],
-        supplies: [
-            { name: 'stove' },
-            { name: 'large pot' },
-            { name: 'large pan' },
-            { name: 'spatula' },
-            { name: 'large mixing bowl' },
-            { name: 'small bowl' },
-            { name: 'colander/strainer' },
-            { name: 'cutting board and knife' },
-        ],
-        directions: [
-            'Prep the vegetables and set in a small bowl. Then slice chicken and season generously with salt, pepper, oregano, thyme, rosemary, basil and garlic powder (you will be adding some more later optionally).',
-            'In a large pot, bring water and salt to a boil.',
-            'Add pasta to pot and cook until al dente (tender but center is still a little firm).',
-            'Drain in a colander/strainer and save some of the starchy water for later.',
-            'In a large mixing bowl, add the pasta and toss with a little oil.',
-            'While the pasta is cooking you could cook the chicken and veggies, in a pan over medium heat, melt 1 Tbsp of butter.',
-            'Once butter melts, brown chicken in a pan over medium-high heat, 2 to 3 minutes per side. Make sure that it\'s cooked through, cook chicken in batches if necessary.',
-            'Once chicken is cooked, place in a medium bowl.',
-            'Saute the vegetables with a little bit of butter in the same pan that the chicken was cooked in. Add the vegetables in with the chicken.',
-            'Once everything is cooked pour in the tomato sauce and add any more of the seasonings as desired.',
-            'Let sauce warm up a little before adding pasta directly in a pan. When you do add the pasta in, also add a little of the starchy pasta water.',
-            'Mix until all of the ingredients are completely mixed and warm.',
-            'I like to add the parsley afterwards because the flavor gets lost during the cooking process.',
-            'Enjoy this simple Italian pasta dish.'
-        ]
-    },
-    { 
-        id: 'beef-stroganoff', 
-        cardName: 'Beef Stroganoff', 
-        name: 'Beef Stroganoff', 
-        img: beefStroganoff, 
-        available: true, 
+    // {
+    //     id: 'chicken-alfredo',
+    //     cardName: 'Chicken Alfredo',
+    //     name: 'Chicken Alfredo',
+    //     img: alfredo,
+    //     available: false,
+    //     type: 'Lunch / Dinner',
+    //     yields: '4 servings',
+    //     prepTime: '8 - 10 m',
+    //     cookTime: '30 - 40 m',
+    //     ingredients: [
+    //         { name: 'fettuccine noodles', amount: '12 oz', additionalDetails: '', optional: false },
+    //         { name: 'olive oil (for tossing and sauteing)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'green bell pepper', amount: '2/3', additionalDetails: '', optional: false },
+    //         { name: 'onion', amount: '1/2', additionalDetails: '', optional: false },
+    //         { name: 'chicken breast', amount: '2', additionalDetails: 'sliced', optional: false },
+    //         { name: 'heavy cream', amount: '2 c', additionalDetails: '', optional: false },
+    //         { name: 'butter', amount: '4 Tbsp', additionalDetails: '', optional: false },
+    //         { name: 'nutmeg', amount: '2 pinches', additionalDetails: '', optional: false },
+    //         { name: 'shredded parmesan', amount: '1 1/2 c', additionalDetails: '', optional: false },
+    //         { name: 'salt (to taste)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'pepper (to taste)', amount: '', additionalDetails: '', optional: false },
+    //     ],
+    //     supplies: [
+    //         { name: 'stove' },
+    //         { name: 'large pot' },
+    //         { name: 'large pan' },
+    //         { name: 'cutting board and knife' },
+    //         { name: 'mixing bowl' },
+    //         { name: 'small and medium bowls' },
+    //         { name: 'colander/strainer' },
+    //     ],
+    //     directions: [
+    //         'Prep the vegetables and set in a small bowl. Then cut the chicken into 1/4" slices and season with salt and pepper.',
+    //         'In a large pot, bring water and salt to a boil.',
+    //         'Add pasta to pot and cook until al dente (tender but center is still a little firm).',
+    //         'Drain in a colander/strainer and save some of the starchy water for later.',
+    //         'In a large mixing bowl, add the pasta and toss with a little oil.',
+    //         'In a pan over medium heat, melt 1 Tbsp of butter.',
+    //         'Once butter melts, brown chicken in a pan over medium-high heat, 2 to 3 minutes per side. Make sure that it\'s cooked through, cook chicken in batches if necessary.',
+    //         'Once chicken is cooked, place in a medium bowl.',
+    //         'Saute the vegetables with a little bit of butter in the same pan that the chicken was cooked in. Add the vegetables in with the chicken.',
+    //         'In the same pan over medium heat, melt the remaining butter.',
+    //         'Mix together heavy cream and nutmeg before pouring into the pan and cook until it simmers, then for another 2 minutes.',
+    //         'Set to a low heat and slowly mix in the parmesan, chicken, veggies, pasta, a little starchy noodle water, salt and pepper.',
+    //         'Serve and enjoy the nostalgic creamy, delicious chicken alfredo!',
+    //     ]
+    // },
+    // {
+    //     id: 'beef-spaghetti',
+    //     cardName: 'Beef Spaghetti',
+    //     name: 'Beef Spaghetti',
+    //     img: spaghetti,
+    //     available: true,
+    //     type: 'Lunch / Dinner',
+    //     yields: '6 servings',
+    //     prepTime: '5 m',
+    //     cookTime: '10 - 15 m',
+    //     ingredients: [
+    //         { name: 'ground beef', amount: '1 lb', additionalDetails: '', optional: false },
+    //         { name: 'spaghetti noodles', amount: '16 oz', additionalDetails: '', optional: false },
+    //         { name: 'onion', amount: '1', additionalDetails: 'diced', optional: false },
+    //         { name: 'olive oil (to toss)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'tomato sauce', amount: '24 oz', additionalDetails: '', optional: false },
+    //     ],
+    //     supplies: [
+    //         { name: 'stove' },
+    //         { name: 'large pot' },
+    //         { name: 'large pan' },
+    //         { name: 'spatula' },
+    //         { name: 'colander/strainer' },
+    //         { name: 'cutting board and knife' },
+    //     ],
+    //     directions: [
+    //         'NOTE: You can cook pasta and beef sauce at the same time.',
+    //         'In a large pot, bring water and salt to a boil. Add pasta to pot and cook until al dente (tender but center is still a little firm).',
+    //         'Drain pasta in a colander/strainer and save some of the starchy water for later. Return pasta back into the pot and toss with a little oil.',
+    //         'While the pasta is cooking, heat a pan over medium-high heat and add the ground beef. Cook until browned and break into smaller chunks with the spatula.',
+    //         'While the beef is cooking, dice the onions and add the onions with the beef. After the beef is browned, pour tomato sauce into the pan. And heat for another 3 to 5 minutes.',
+    //         'Combine the beefy sauce and the pasta and mix over medium heat. Add the starchy water to the help thicken the sauce.',
+    //         'Serve with a side salad and garlic bread. Enjoy this simple Italian pasta dish.'
+    //     ]
+    // },
+    // {
+    //     id: 'chicken-spaghetti',
+    //     cardName: 'Chicken Spaghetti',
+    //     name: 'Chicken Spaghetti',
+    //     img: spaghetti,
+    //     available: true,
+    //     type: 'Lunch / Dinner',
+    //     yields: '3 servings',
+    //     prepTime: '5 - 7 m',
+    //     cookTime: '15 - 20 m',
+    //     ingredients: [
+    //         { name: 'chicken breast (or preferred protein)', amount: '1', additionalDetails: 'sliced', optional: false },
+    //         { name: 'any preferred noodle', amount: '3 c', additionalDetails: '', optional: false },
+    //         { name: 'onion', amount: '1/3', additionalDetails: 'diced', optional: false },
+    //         { name: 'green bell pepper', amount: '2/3', additionalDetails: 'diced', optional: false },
+    //         { name: 'butter', amount: '1 Tbsp', additionalDetails: '', optional: false },
+    //         { name: 'olive oil (to toss)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'sugar', amount: '2 tsp', additionalDetails: '', optional: false },
+    //         { name: 'tomato sauce', amount: '12 oz', additionalDetails: '', optional: false },
+    //         { name: 'rosemary (to taste)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'thyme (to taste)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'basil (to taste)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'oregano (to taste)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'garlic powder (to taste)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'parsley flakes (to taste)', amount: '', additionalDetails: '', optional: false },
+    //     ],
+    //     supplies: [
+    //         { name: 'stove' },
+    //         { name: 'large pot' },
+    //         { name: 'large pan' },
+    //         { name: 'spatula' },
+    //         { name: 'large mixing bowl' },
+    //         { name: 'small bowl' },
+    //         { name: 'colander/strainer' },
+    //         { name: 'cutting board and knife' },
+    //     ],
+    //     directions: [
+    //         'Prep the vegetables and set in a small bowl. Then slice chicken and season generously with salt, pepper, oregano, thyme, rosemary, basil and garlic powder (you will be adding some more later optionally).',
+    //         'In a large pot, bring water and salt to a boil.',
+    //         'Add pasta to pot and cook until al dente (tender but center is still a little firm).',
+    //         'Drain in a colander/strainer and save some of the starchy water for later.',
+    //         'In a large mixing bowl, add the pasta and toss with a little oil.',
+    //         'While the pasta is cooking you could cook the chicken and veggies, in a pan over medium heat, melt 1 Tbsp of butter.',
+    //         'Once butter melts, brown chicken in a pan over medium-high heat, 2 to 3 minutes per side. Make sure that it\'s cooked through, cook chicken in batches if necessary.',
+    //         'Once chicken is cooked, place in a medium bowl.',
+    //         'Saute the vegetables with a little bit of butter in the same pan that the chicken was cooked in. Add the vegetables in with the chicken.',
+    //         'Once everything is cooked pour in the tomato sauce and add any more of the seasonings as desired.',
+    //         'Let sauce warm up a little before adding pasta directly in a pan. When you do add the pasta in, also add a little of the starchy pasta water.',
+    //         'Mix until all of the ingredients are completely mixed and warm.',
+    //         'I like to add the parsley afterwards because the flavor gets lost during the cooking process.',
+    //         'Enjoy this simple Italian pasta dish.'
+    //     ]
+    // },
+    {
+        id: 'beef-stroganoff',
+        cardName: 'Beef Stroganoff',
+        name: 'Beef Stroganoff',
+        img: beefStroganoff,
+        available: true,
         type: 'Lunch / Dinner',
         yields: '7 servings',
         prepTime: '10 - 12 m',
@@ -820,53 +973,53 @@ const recipes = [
             'Add remaining broth, flour and vegetables. Heat until boiling. Stir occasionally.',
             'Add sour cream. Heat until hot and solid color.',
             'Serve over noodles.',
-        ] 
-    },
-    {
-        id: 'pizza',
-        cardName: 'Pizza',
-        name: 'Pizza',
-        img: pizza,
-        available: true,
-        type: 'Lunch / Dinner',
-        yields: '1 serving',
-        prepTime: '5 m',
-        cookTime: '10 m',
-        ingredients: [
-            { name: 'pita bread', amount: '1', additionalDetails: '', optional: false },
-            { name: 'shredded cheese', amount: '1/3 cup', additionalDetails: '', optional: false },
-            { name: 'tomato sauce', amount: '1/2 cup', additionalDetails: '', optional: false },
-            { name: 'green pepper', amount: '1/4', additionalDetails: 'diced', optional: false },
-            { name: 'small onion', amount: '1/4 cup', additionalDetails: 'diced/sliced', optional: false },
-            { name: 'roma tomato', amount: '1/4', additionalDetails: 'diced/sliced', optional: false },
-            { name: 'pepperoni slices', amount: '5 - 8', additionalDetails: '', optional: false },
-            { name: 'mushroom', amount: '3 - 5', additionalDetails: 'sliced', optional: false },
-            { name: 'pineapple tidbits', amount: '3 - 5', additionalDetails: '', optional: false },
-        ],
-        supplies: [
-            { name: 'oven',  },
-            { name: 'baking sheets' },
-            { name: 'aluminum foil' },
-            { name: 'measuring cups' },
-            { name: 'measuring spoons' },
-            { name: 'spoon' },
-        ],
-        directions: [
-            'Preheat oven to 425 degrees F and lay aluminum foil on baking sheet.',
-            'Measure out ingredients you wish to use as toppings on your personal pizza.',
-            'Place pita bread on a baking sheet. Pita bread can be replaced with tortilla but be careful with how much sauce to place on it. You can even find premade pizza dough which may yield more than 1 serving depending on the size.',
-            'Top with tomato sauce and spread so it covers the top of the pita bread.',
-            'Sprinkle cheese to make a nice layer over the sauce',
-            'Add all of the ingredients above or substitute with whatever ingredients your heart desires. Note: if using any poultry or meat make sure it is not raw prior to placing on pizza.',
-            'Bake for 10 - 12 minutes.'
         ]
     },
-    { 
-        id: 'lasagna', 
-        cardName: 'Lasagna', 
-        name: 'Lasagna', 
-        img: lasagna, 
-        available: true, 
+    // {
+    //     id: 'pizza',
+    //     cardName: 'Pizza',
+    //     name: 'Pizza',
+    //     img: pizza,
+    //     available: true,
+    //     type: 'Lunch / Dinner',
+    //     yields: '1 serving',
+    //     prepTime: '5 m',
+    //     cookTime: '10 m',
+    //     ingredients: [
+    //         { name: 'pita bread', amount: '1', additionalDetails: '', optional: false },
+    //         { name: 'shredded cheese', amount: '1/3 cup', additionalDetails: '', optional: false },
+    //         { name: 'tomato sauce', amount: '1/2 cup', additionalDetails: '', optional: false },
+    //         { name: 'green pepper', amount: '1/4', additionalDetails: 'diced', optional: false },
+    //         { name: 'small onion', amount: '1/4 cup', additionalDetails: 'diced/sliced', optional: false },
+    //         { name: 'roma tomato', amount: '1/4', additionalDetails: 'diced/sliced', optional: false },
+    //         { name: 'pepperoni slices', amount: '5 - 8', additionalDetails: '', optional: false },
+    //         { name: 'mushroom', amount: '3 - 5', additionalDetails: 'sliced', optional: false },
+    //         { name: 'pineapple tidbits', amount: '3 - 5', additionalDetails: '', optional: false },
+    //     ],
+    //     supplies: [
+    //         { name: 'oven' },
+    //         { name: 'baking sheets' },
+    //         { name: 'aluminum foil' },
+    //         { name: 'measuring cups' },
+    //         { name: 'measuring spoons' },
+    //         { name: 'spoon' },
+    //     ],
+    //     directions: [
+    //         'Preheat oven to 425 degrees F and lay aluminum foil on baking sheet.',
+    //         'Measure out ingredients you wish to use as toppings on your personal pizza.',
+    //         'Place pita bread on a baking sheet. Pita bread can be replaced with tortilla but be careful with how much sauce to place on it. You can even find premade pizza dough which may yield more than 1 serving depending on the size.',
+    //         'Top with tomato sauce and spread so it covers the top of the pita bread.',
+    //         'Sprinkle cheese to make a nice layer over the sauce',
+    //         'Add all of the ingredients above or substitute with whatever ingredients your heart desires. Note: if using any poultry or meat make sure it is not raw prior to placing on pizza.',
+    //         'Bake for 10 - 12 minutes.'
+    //     ]
+    // },
+    {
+        id: 'lasagna',
+        cardName: 'Lasagna',
+        name: 'Lasagna',
+        img: lasagna,
+        available: true,
         type: 'Lunch / Dinner',
         yields: '12 servings',
         prepTime: '15 m',
@@ -889,12 +1042,12 @@ const recipes = [
             { name: 'lasagna noodles', amount: '12 noodles', additionalDetails: '', optional: false },
             { name: 'ricotta cheese', amount: '16 oz', additionalDetails: '', optional: false },
             { name: 'egg', amount: '1', additionalDetails: '', optional: false },
-            { name: 'mozzarella cheese',  amount: '3/4 lb', additionalDetails: 'sliced', optional: false },
+            { name: 'mozzarella cheese', amount: '3/4 lb', additionalDetails: 'sliced', optional: false },
             { name: 'parmesan cheese', amount: '3/4 c', additionalDetails: 'grated', optional: false },
         ],
         supplies: [
             { name: 'stove' },
-            { name: 'oven',  },
+            { name: 'oven' },
             { name: 'large pan' },
             { name: 'spatula' },
             { name: 'pot' },
@@ -932,12 +1085,12 @@ const recipes = [
             'Serve and enjoy this splash of Italian goodness.'
         ]
     },
-    { 
-        id: 'hamburger', 
-        cardName: 'Hamburger', 
-        name: 'Hamburger', 
-        img: hamburger, 
-        available: true, 
+    {
+        id: 'hamburger',
+        cardName: 'Hamburger',
+        name: 'Hamburger',
+        img: hamburger,
+        available: true,
         type: 'Lunch / Dinner',
         yields: '8 servings',
         prepTime: '5 m',
@@ -950,7 +1103,7 @@ const recipes = [
             { name: 'red onion', amount: '1', additionalDetails: '', optional: false },
             { name: 'pickle', amount: '', additionalDetails: '', optional: false },
             { name: 'tomato', amount: '', additionalDetails: '', optional: false },
-            { name: 'spinach',  amount: '', additionalDetails: '', optional: false },
+            { name: 'spinach', amount: '', additionalDetails: '', optional: false },
             { name: 'cheese slices', amount: '8', additionalDetails: '', optional: false },
             { name: 'mushroom', amount: '', additionalDetails: '', optional: false },
             { name: 'hamburger bun', amount: '8', additionalDetails: '', optional: false },
@@ -967,14 +1120,14 @@ const recipes = [
             'Place patties on baking sheet and bake for 30 minutes.',
             'Broil for 5 minutes.',
             'Serve on hamburger bun with preferred toppings and condiments (and fries or preferred side optional).',
-        ] 
+        ]
     },
-    { 
-        id: 'philly-cheesesteak', 
-        cardName: 'Philly Cheesesteak', 
-        name: 'Philly Cheesesteak', 
-        img: phillyCheesesteak, 
-        available: true, 
+    {
+        id: 'philly-cheesesteak',
+        cardName: 'Philly Cheesesteak',
+        name: 'Philly Cheesesteak',
+        img: phillyCheesesteak,
+        available: true,
         type: 'Lunch / Dinner',
         yields: '8 servings',
         prepTime: '10 m',
@@ -1002,22 +1155,22 @@ const recipes = [
             'Add onions and bell pepper slices into pan and caramelize.',
             'Open up hoagie bread and layer with meat, cheese and vegetables to your hearts content.',
             'Enjoy the taste of freedom!',
-        ], 
+        ],
     },
-    { 
-        id: 'wraps', 
-        cardName: 'Wraps', 
-        name: 'Wraps', 
-        img: wraps, 
-        available: true, 
-        type: 'Lunch / Dinner', 
+    {
+        id: 'wraps',
+        cardName: 'Wraps',
+        name: 'Wraps',
+        img: wraps,
+        available: true,
+        type: 'Lunch / Dinner',
         yields: '1 serving',
         prepTime: '1 m',
         cookTime: '2 m',
         ingredients: [
             { name: 'tortilla', amount: '1', additionalDetails: '', optional: false },
             { name: 'lunch meat slices', amount: '4', additionalDetails: 'preferred', optional: false },
-            { name: 'spinach',  amount: '', additionalDetails: '', optional: false },
+            { name: 'spinach', amount: '', additionalDetails: '', optional: false },
             { name: 'cheese slices', amount: '3', additionalDetails: '', optional: false },
             { name: 'tomato', amount: '1/2', additionalDetails: 'sliced', optional: false },
             { name: 'honey mustard', amount: '', additionalDetails: '', optional: false },
@@ -1069,7 +1222,7 @@ const recipes = [
             { name: 'measuring cups' },
             { name: 'measuring spoons' },
             { name: 'spoons' },
-            { name: 'tongs',  },
+            { name: 'tongs' },
         ],
         directions: [
             'Line the slow cooker with the slow cooker liner. This will save you a lot of time when you need to clean up afterwards.',
@@ -1086,12 +1239,12 @@ const recipes = [
             'Serve over rice and top with your favorite toppings--mine is Chow Mein Noodles.'
         ]
     },
-    { 
-        id: 'chicken-pot-pie', 
-        cardName: 'Chicken Pot Pie', 
-        name: 'Chicken Pot Pie', 
-        img: chickenPotPie, 
-        available: true, 
+    {
+        id: 'chicken-pot-pie',
+        cardName: 'Chicken Pot Pie',
+        name: 'Chicken Pot Pie',
+        img: chickenPotPie,
+        available: true,
         type: 'Lunch / Dinner',
         yields: '4 servings',
         prepTime: '10 m',
@@ -1143,7 +1296,7 @@ const recipes = [
             { name: 'olive oil', amount: '1 Tbsp', additionalDetails: '', optional: false },
             { name: 'large onion', amount: '1', additionalDetails: 'sliced', optional: false },
             { name: 'large carrots', amount: '2', additionalDetails: 'sliced', optional: false },
-            { name: 'celery',  amount: '2 stalks', additionalDetails: 'sliced', optional: false },
+            { name: 'celery', amount: '2 stalks', additionalDetails: 'sliced', optional: false },
             { name: 'chicken broth', amount: '6 cups', additionalDetails: '', optional: false },
             { name: 'salt (to taste)', amount: '', additionalDetails: '', optional: false },
             { name: 'pepper (to taste)', amount: '', additionalDetails: '', optional: false },
@@ -1172,12 +1325,12 @@ const recipes = [
             'Serve and enjoy - I typically make this when I or somebody I know is sick, so get better if you too are sick!'
         ]
     },
-    { 
-        id: 'scrambled-eggs', 
-        cardName: 'Scrambled Eggs', 
-        name: 'Scrambled Eggs', 
-        img: scrambledEggs, 
-        available: true, 
+    {
+        id: 'scrambled-eggs',
+        cardName: 'Scrambled Eggs',
+        name: 'Scrambled Eggs',
+        img: scrambledEggs,
+        available: true,
         type: 'Breakfast',
         yields: '1 serving',
         prepTime: '5 m',
@@ -1213,56 +1366,56 @@ const recipes = [
             'While still keeping it over the heat, tilt and angle the pan so the runny egg on top can spread to more parts of the pan and you can even take the spatula and lift the edges of the cooking egg and let gravity do its job to have the runny egg batter fill underneath it. Allow to cook for just a few minutes.',
             'Start scrambling the eggs and continue to cook until the egg pieces are brownish-yellow (and you can cook them to your preferred egg state).',
             'Serve and enjoy this nice warm start to a beautiful day!'
-        ] 
-    },
-    {
-        id: 'pancakes',
-        cardName: 'Pancakes',
-        name: 'Pancakes (Kodiak Cake\'s Mix)',
-        img: pancakes,
-        available: true,
-        type: 'Breakfast',
-        yields: '2 servings',
-        prepTime: '3 m',
-        cookTime: '8 - 12 m',
-        ingredients: [
-            { name: 'Kodiak Cake\'s pancake mix', amount: '1 c', additionalDetails: '', optional: false },
-            { name: 'water (or milk)', amount: '1 c', additionalDetails: '', optional: false },
-            { name: 'egg', amount: '1', additionalDetails: '', optional: false },
-            { name: 'vanilla', amount: '1 tsp', additionalDetails: '', optional: false },
-            { name: 'butter', amount: '1 Tbsp', additionalDetails: '', optional: false },
-            { name: 'syrup (optional topping)', amount: '', additionalDetails: '', optional: false },
-            { name: 'banana (optional topping)', amount: '', additionalDetails: '', optional: false },
-            { name: 'strawberry (optional topping)', amount: '', additionalDetails: '', optional: false },
-            { name: 'peanut butter (optional topping)', amount: '', additionalDetails: '', optional: false },
-            { name: 'whipped cream (optional topping)', amount: '', additionalDetails: '', optional: false },
-            { name: 'blueberries (optional topping)',  amount: '', additionalDetails: '', optional: false },
-        ],
-        supplies: [
-            { name: 'stove or griddle' },
-            { name: 'frying pan or griddle' },
-            { name: 'spatula' },
-            { name: 'small mixing bowl' },
-            { name: 'measuring spoon' },
-            { name: 'measuring cup' },
-            { name: 'fork' },
-        ],
-        directions: [
-            'Add pancake mix, water (or milk), vanilla, and an egg to a small mixing bowl.',
-            'Mix with a fork until it is smooth and no lumps.',
-            'Heat the pan on a medium-high heat then add a quarter of the butter amount. Try to spread the butter across the pan by angling the pan.',
-            'Once the pan is hot and the butter is spread, ladle in pancake batter into the pan using a 1/3-cup measuring cup.',
-            'Keep an eye on the edges of the pancake as it will start to bubble when it is ready to flip. I like to feel out the edge by sliding my spatula beneath it to see if it is ready.',
-            'Flip it when it\'s ready and let the other side cook. I like to flip the pancake again to lightly brown the original side again.',
-            'Serve with your favorite toppings. I like syrup, bananas and strawberries, or peanut butter with bananas.'
         ]
     },
-    { 
-        id: 'omelette', 
-        cardName: 'Omelette', 
-        name: 'Omelette', 
-        img: omelette, 
-        available: true, 
+    // {
+    //     id: 'pancakes',
+    //     cardName: 'Pancakes',
+    //     name: 'Pancakes (Kodiak Cake\'s Mix)',
+    //     img: pancakes,
+    //     available: true,
+    //     type: 'Breakfast',
+    //     yields: '2 servings',
+    //     prepTime: '3 m',
+    //     cookTime: '8 - 12 m',
+    //     ingredients: [
+    //         { name: 'Kodiak Cake\'s pancake mix', amount: '1 c', additionalDetails: '', optional: false },
+    //         { name: 'water (or milk)', amount: '1 c', additionalDetails: '', optional: false },
+    //         { name: 'egg', amount: '1', additionalDetails: '', optional: false },
+    //         { name: 'vanilla', amount: '1 tsp', additionalDetails: '', optional: false },
+    //         { name: 'butter', amount: '1 Tbsp', additionalDetails: '', optional: false },
+    //         { name: 'syrup (optional topping)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'banana (optional topping)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'strawberry (optional topping)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'peanut butter (optional topping)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'whipped cream (optional topping)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'blueberries (optional topping)', amount: '', additionalDetails: '', optional: false },
+    //     ],
+    //     supplies: [
+    //         { name: 'stove or griddle' },
+    //         { name: 'frying pan or griddle' },
+    //         { name: 'spatula' },
+    //         { name: 'small mixing bowl' },
+    //         { name: 'measuring spoon' },
+    //         { name: 'measuring cup' },
+    //         { name: 'fork' },
+    //     ],
+    //     directions: [
+    //         'Add pancake mix, water (or milk), vanilla, and an egg to a small mixing bowl.',
+    //         'Mix with a fork until it is smooth and no lumps.',
+    //         'Heat the pan on a medium-high heat then add a quarter of the butter amount. Try to spread the butter across the pan by angling the pan.',
+    //         'Once the pan is hot and the butter is spread, ladle in pancake batter into the pan using a 1/3-cup measuring cup.',
+    //         'Keep an eye on the edges of the pancake as it will start to bubble when it is ready to flip. I like to feel out the edge by sliding my spatula beneath it to see if it is ready.',
+    //         'Flip it when it\'s ready and let the other side cook. I like to flip the pancake again to lightly brown the original side again.',
+    //         'Serve with your favorite toppings. I like syrup, bananas and strawberries, or peanut butter with bananas.'
+    //     ]
+    // },
+    {
+        id: 'omelette',
+        cardName: 'Omelette',
+        name: 'Omelette',
+        img: omelette,
+        available: true,
         type: 'Breakfast',
         yields: '1 serving',
         prepTime: '5 m',
@@ -1302,12 +1455,12 @@ const recipes = [
             'Enjoy this beautiful piece of art.'
         ]
     },
-    { 
-        id: 'egg-casserole', 
-        cardName: 'Egg Casserole', 
-        name: 'Egg Casserole', 
-        img: eggCasserole, 
-        available: true, 
+    {
+        id: 'egg-casserole',
+        cardName: 'Egg Casserole',
+        name: 'Egg Casserole',
+        img: eggCasserole,
+        available: true,
         type: 'Breakfast',
         yields: '6 servings',
         prepTime: '15 m',
@@ -1326,7 +1479,7 @@ const recipes = [
             { name: 'salsa (optional serving)', amount: '', additionalDetails: '', optional: false },
         ],
         supplies: [
-            { name: 'oven',  },
+            { name: 'oven' },
             { name: 'mixing bowl' },
             { name: 'baking pan' },
             { name: 'cutting board + knife' },
@@ -1346,14 +1499,14 @@ const recipes = [
             'Uncover casserole and bake for 40 minutes - 1 hour (or until it sets). This mostly depends on your oven.',
             'Once the casserole is cooked, let cool for a few minutes.',
             'Serve and enjoy this simple, hot breakfast feast.'
-        ] 
+        ]
     },
-    { 
-        id: 'french-toast', 
-        cardName: 'French Toast', 
-        name: 'French Toast', 
-        img: frenchToast, 
-        available: true, 
+    {
+        id: 'french-toast',
+        cardName: 'French Toast',
+        name: 'French Toast',
+        img: frenchToast,
+        available: true,
         type: 'Breakfast',
         yields: '2 servings',
         prepTime: '5 m',
@@ -1381,13 +1534,13 @@ const recipes = [
             'Serve and add fruits, syrup, and all your favorite toppings.'
         ]
     },
-    { 
-        id: 'crepes', 
+    {
+        id: 'crepes',
         cardName: 'Crepes',
         name: 'Crepes',
         recipeCredit: 'Sam Giraud-Carrier',
-        img: crepes, 
-        available: true, 
+        img: crepes,
+        available: true,
         type: 'Snack',
         yields: '4 - 5 servings',
         prepTime: '5 - 8 m',
@@ -1401,7 +1554,7 @@ const recipes = [
             { name: 'vanilla', amount: '1 Tbsp', additionalDetails: '', optional: false },
             { name: 'water', amount: '1/2 c', additionalDetails: '', optional: false },
             { name: 'strawberries (optional)', amount: '', additionalDetails: 'sliced', optional: false },
-            { name: 'blueberries (optional)',  amount: '', additionalDetails: 'halved', optional: false },
+            { name: 'blueberries (optional)', amount: '', additionalDetails: 'halved', optional: false },
             { name: 'bananas (optional)', amount: '', additionalDetails: 'sliced', optional: false },
             { name: 'nutella (optional)', amount: '', additionalDetails: '', optional: false },
             { name: 'peanut butter (optional)', amount: '', additionalDetails: '', optional: false },
@@ -1428,12 +1581,12 @@ const recipes = [
             'Add your favorite toppings, fold them however you like, and enjoy this ingenious, light French dish: sweet, savory or a combination of both!'
         ]
     },
-    { 
-        id: 'kebabs', 
-        cardName: 'Kebabs', 
-        name: 'Kebabs', 
-        img: kebabs, 
-        available: true, 
+    {
+        id: 'kebabs',
+        cardName: 'Kebabs',
+        name: 'Kebabs',
+        img: kebabs,
+        available: true,
         type: 'Appetizer',
         yields: '6 servings',
         prepTime: '10 m',
@@ -1453,7 +1606,7 @@ const recipes = [
             { name: 'cutting board + knife' },
             { name: 'ziploc bag' },
             { name: 'bamboo skewer' },
-            { name: 'oven',  },
+            { name: 'oven' },
             { name: 'baking sheet' },
             { name: 'aluminum foil' },
         ],
@@ -1466,14 +1619,14 @@ const recipes = [
             'Thread the skewers with chicken and veggies leaving enough space between to allow the pieces to get cooked thoroughly.',
             'Place the finished skewers on the baking sheet with space in between each other.',
             'Once the oven is 450ºF, cook the kebabs for 15 to 25 minutes (cook time will depend on the size of meat).'
-        ] 
+        ]
     },
-    { 
-        id: 'pigs-in-a-blanket', 
-        cardName: 'Pigs In A Blanket', 
-        name: 'Pigs In A Blanket', 
-        img: pigsInABlanket, 
-        available: true, 
+    {
+        id: 'pigs-in-a-blanket',
+        cardName: 'Pigs In A Blanket',
+        name: 'Pigs In A Blanket',
+        img: pigsInABlanket,
+        available: true,
         type: 'Appetizer',
         yields: '8 servings',
         prepTime: '10 m',
@@ -1484,11 +1637,11 @@ const recipes = [
             { name: 'mini hot dogs', amount: '14 oz', additionalDetails: '', optional: false },
         ],
         supplies: [
-            { name: 'oven',  },
+            { name: 'oven' },
             { name: 'baking sheet' },
             { name: 'aluminum foil' },
             { name: 'cutting board + knife' },
-            { name: 'basting brush',  },
+            { name: 'basting brush' },
             { name: 'plate' },
         ],
         directions: [
@@ -1499,7 +1652,7 @@ const recipes = [
             'Bake for about 12 - 15 min or until golden brown.',
             'Serve with your favorite condiment, and enjoy this easy tailgate hors d\'oeuvre!',
         ],
-        
+
     },
     {
         id: 'macaroni-salad',
@@ -1520,7 +1673,7 @@ const recipes = [
             { name: 'salt (+ for boiling)', amount: '1 1/2 tsp', additionalDetails: '', optional: false },
             { name: 'pepper', amount: '1/2 tsp', additionalDetails: '', optional: false },
             { name: 'onion', amount: '1', additionalDetails: 'diced', optional: false },
-            { name: 'celery',  amount: '2 stalks', additionalDetails: 'sliced', optional: false },
+            { name: 'celery', amount: '2 stalks', additionalDetails: 'sliced', optional: false },
             { name: 'green bell pepper', amount: '1', additionalDetails: 'diced', optional: false },
         ],
         supplies: [
@@ -1540,49 +1693,49 @@ const recipes = [
             'Enjoy this sweet, creamy, fresh appetizer while you relax with some relaxing Hawaiian music.'
         ]
     },
-    { 
-        id: 'chicken-salad', 
-        cardName: 'Chicken Salad', 
-        name: 'Small Chicken Salad', 
-        img: salad, 
-        available: true, 
-        type: 'Appetizer',
-        yields: '2 serving',
-        prepTime: '7 - 10 m',
-        cookTime: '7 - 10 m',
-        ingredients: [
-            { name: 'chicken breast', amount: '1', additionalDetails: 'strips', optional: false },
-            { name: 'spinach/lettuce',  amount: 'large handfuls', additionalDetails: 'sliced', optional: false },
-            { name: 'green bell pepper', amount: '1/2', additionalDetails: 'sliced', optional: false },
-            { name: 'baby carrots', amount: '6 - 8', additionalDetails: 'sliced', optional: false },
-            { name: 'roma tomato', amount: '1/2', additionalDetails: 'diced', optional: false },
-            { name: 'cucumber', amount: '1/2', additionalDetails: 'sliced + halved', optional: false },
-            { name: 'lemon juice (for dressing)', amount: '', additionalDetails: '', optional: false },
-            { name: 'salt (to taste + for boiling)', amount: '', additionalDetails: '', optional: false },
-            { name: 'pepper (to taste)', amount: '', additionalDetails: '', optional: false },
-        ],
-        supplies: [
-            { name: 'stove' },
-            { name: 'pot' },
-            { name: 'medium bowl' },
-            { name: 'cutting board + knife' },
-        ],
-        directions: [
-            'Boil a pot of water on medium-high heat with salt.',
-            'Once the water is boiling, add the raw chicken breast whole inside the pot and cook until cooked all the way through.',
-            'While the chicken is boiling, cut up the rest of the vegetables and put in a bowl. Note: if you are prepping this for future meals, it is best to store the individual wet ingredients such as the tomatoes and cucumber separately. Then mix them together when you are about to eat them. This should keep for about a day or two at most.',
-            'When the chicken is finished cooking, cut the chicken into strips on the cutting board. If the chicken\'s center is still pink, cook a little longer in the pot.',
-            'Again if you are planning on eating the salad another day, wait for the chicken to cool down a little before adding to the salad or else it will cause some of the vegetables to shrivel or cook.',
-            'Add the chicken and the salad mix when ready to eat.',
-            'Enjoy this simple, healthy meal. I like to add a little bit of salt, pepper, and lemon juice to give it a bit of flavor.'
-        ]
-    },
-    { 
-        id: 'smoothie', 
-        cardName: 'Smoothie', 
-        name: 'Smoothie', 
-        img: smoothie, 
-        available: true, 
+    // {
+    //     id: 'chicken-salad',
+    //     cardName: 'Chicken Salad',
+    //     name: 'Small Chicken Salad',
+    //     img: salad,
+    //     available: true,
+    //     type: 'Appetizer',
+    //     yields: '2 serving',
+    //     prepTime: '7 - 10 m',
+    //     cookTime: '7 - 10 m',
+    //     ingredients: [
+    //         { name: 'chicken breast', amount: '1', additionalDetails: 'strips', optional: false },
+    //         { name: 'spinach/lettuce', amount: 'large handfuls', additionalDetails: 'sliced', optional: false },
+    //         { name: 'green bell pepper', amount: '1/2', additionalDetails: 'sliced', optional: false },
+    //         { name: 'baby carrots', amount: '6 - 8', additionalDetails: 'sliced', optional: false },
+    //         { name: 'roma tomato', amount: '1/2', additionalDetails: 'diced', optional: false },
+    //         { name: 'cucumber', amount: '1/2', additionalDetails: 'sliced + halved', optional: false },
+    //         { name: 'lemon juice (for dressing)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'salt (to taste + for boiling)', amount: '', additionalDetails: '', optional: false },
+    //         { name: 'pepper (to taste)', amount: '', additionalDetails: '', optional: false },
+    //     ],
+    //     supplies: [
+    //         { name: 'stove' },
+    //         { name: 'pot' },
+    //         { name: 'medium bowl' },
+    //         { name: 'cutting board + knife' },
+    //     ],
+    //     directions: [
+    //         'Boil a pot of water on medium-high heat with salt.',
+    //         'Once the water is boiling, add the raw chicken breast whole inside the pot and cook until cooked all the way through.',
+    //         'While the chicken is boiling, cut up the rest of the vegetables and put in a bowl. Note: if you are prepping this for future meals, it is best to store the individual wet ingredients such as the tomatoes and cucumber separately. Then mix them together when you are about to eat them. This should keep for about a day or two at most.',
+    //         'When the chicken is finished cooking, cut the chicken into strips on the cutting board. If the chicken\'s center is still pink, cook a little longer in the pot.',
+    //         'Again if you are planning on eating the salad another day, wait for the chicken to cool down a little before adding to the salad or else it will cause some of the vegetables to shrivel or cook.',
+    //         'Add the chicken and the salad mix when ready to eat.',
+    //         'Enjoy this simple, healthy meal. I like to add a little bit of salt, pepper, and lemon juice to give it a bit of flavor.'
+    //     ]
+    // },
+    {
+        id: 'smoothie',
+        cardName: 'Smoothie',
+        name: 'Smoothie',
+        img: smoothie,
+        available: true,
         type: 'Snack',
         yields: '40 oz',
         prepTime: '1 m',
@@ -1609,14 +1762,14 @@ const recipes = [
             'When you are satisfied with what you want inside the smoothie, begin to blend. I like to start on a blend setting with a low speed. Then as it begins to blend then I increase the speed.',
             'From my Jamba Juice years, if you can see a tornado inside the smoothie - it\'s perfect. I continue to follow that as I blend my smoothies.',
             'Enjoy the fresh, fruity sweetness and goodness!'
-        ] 
+        ]
     },
-    { 
-        id: 'smores', 
-        cardName: 'S\'mores', 
-        name: 'S\'mores', 
-        img: smores, 
-        available: true, 
+    {
+        id: 'smores',
+        cardName: 'S\'mores',
+        name: 'S\'mores',
+        img: smores,
+        available: true,
         type: 'dessert',
         yields: '2 servings',
         prepTime: '1 m',
@@ -1629,7 +1782,7 @@ const recipes = [
         supplies: [
             { name: 'aluminum foil' },
             { name: 'baking sheet' },
-            { name: 'oven',  },
+            { name: 'oven' },
         ],
         directions: [
             'Lay aluminum foil on baking sheet and turn on oven to broil.',
@@ -1638,7 +1791,7 @@ const recipes = [
             'Take tray out and add graham crackers with 3 pieces of chocolate.',
             'Flip marshallow and bake for an additional 2 minutes.',
             'Enjoy the sweet tastes of a campfire indoors.'
-        ] 
+        ]
     },
     {
         id: 'chocolate-chip-cookies',
@@ -1663,7 +1816,7 @@ const recipes = [
             { name: 'semisweet chocolate chips', amount: '2 cups', additionalDetails: '', optional: false },
         ],
         supplies: [
-            { name: 'oven',  },
+            { name: 'oven' },
             { name: 'baking sheets' },
             { name: 'aluminum foil' },
             { name: 'large mixing bowl' },
@@ -1688,31 +1841,31 @@ const recipes = [
             { title: 'Cookie Dough', content: 'I ball up the cookie dough into balls similar to this about an inch round.' }
         ]
     },
-    { 
-        id: 'dutch-apple-pie', 
-        cardName: 'Dutch Apple Pie', 
-        name: 'Dutch Apple Pie Ala Mode', 
-        img: dutchApplePie, 
-        available: true, 
-        type: 'Dessert',
-        yields: '8 servings',
-        prepTime: '1 m',
-        cookTime: '10 m',
-        ingredients: [
-            { name: 'dutch apple pie', amount: '1', additionalDetails: '', optional: false },
-            { name: 'vanilla ice cream', amount: '1 tub of', additionalDetails: '', optional: false },
-        ],
-        supplies: [
-            { name: 'oven',  },
-            { name: 'knife' },
-            { name: 'baking sheet' },
-        ],
-        directions: [
-            'Preheat oven to 400ºF.',
-            'Set apple pie on the baking sheet and "warm" for 10 min.',
-            'Serve with ice cream. Enjoy my favorite dessert! :)'
-        ] 
-    },
+    // {
+    //     id: 'dutch-apple-pie',
+    //     cardName: 'Dutch Apple Pie',
+    //     name: 'Dutch Apple Pie Ala Mode',
+    //     img: dutchApplePie,
+    //     available: true,
+    //     type: 'Dessert',
+    //     yields: '8 servings',
+    //     prepTime: '1 m',
+    //     cookTime: '10 m',
+    //     ingredients: [
+    //         { name: 'dutch apple pie', amount: '1', additionalDetails: '', optional: false },
+    //         { name: 'vanilla ice cream', amount: '1 tub of', additionalDetails: '', optional: false },
+    //     ],
+    //     supplies: [
+    //         { name: 'oven' },
+    //         { name: 'knife' },
+    //         { name: 'baking sheet' },
+    //     ],
+    //     directions: [
+    //         'Preheat oven to 400ºF.',
+    //         'Set apple pie on the baking sheet and "warm" for 10 min.',
+    //         'Serve with ice cream. Enjoy my favorite dessert! :)'
+    //     ]
+    // },
     // {
     //     id: 1,
     //     title: 'Pumpkin Pie',
@@ -1775,6 +1928,26 @@ const recipes = [
     //         'Bake for 10 to 15 minutes in the preheated oven, or until golden brown.'
     //     ]
     // },
+    {
+        id: '',
+        cardName: '',
+        name: '',
+        img: '',
+        available: false,
+        type: '',
+        yields: ' servings',
+        prepTime: 'm',
+        cookTime: 'm',
+        ingredients: [
+            { name: '', amount: '', additionalDetails: '', optional: false },
+        ],
+        supplies: [
+            { name: '' },
+        ],
+        directions: [
+            '',
+        ]
+    },
 ]
 
 module.exports = recipes;
