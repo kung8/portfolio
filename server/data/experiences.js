@@ -112,7 +112,7 @@ const experiences = [
         show: true,
     },
     {
-        title: 'Software Engineer 2',
+        title: 'Software Engineer 3',
         organization: 'Weave',
         description: 'Software company',
         location: 'Lehi, UT',
