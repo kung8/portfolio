@@ -2,18 +2,30 @@
     display: block;
     height: auto;
     min-height: 100vh;
-    padding: 80px;
+    padding: 80px 0;
     min-width: 100vw;
     position: relative;
     overflow-x: hidden;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    .heading-container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 
     @include down($tablet) {
-        padding: 56px 56px;
+        padding: 56px 0;
+        .heading-container {
+            padding-left: 56px;
+            padding-right: 56px;
+        }
     }
     @include down($mobile) {
-        padding: 56px 24px;
+        padding: 56px 0px;
+        .heading-container {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
     }
     &::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera */
@@ -23,12 +35,20 @@
         display: flex;
         flex-wrap: wrap;
         .recipe-item-container {
-            padding: 1px 2px;
             aspect-ratio: 1/1;
             cursor: pointer;
             z-index: 1;
             position: relative;
             width: 25%;
+            padding: 3px 3px 0 3px;
+            // targeting the first of the four multiples
+            &:nth-of-type(4n + 1) {
+                padding: 3px 3px 0 6px;
+            }
+            // targeting the fourth of the four multiples
+            &:nth-of-type(4n + 4) {
+                padding: 3px 6px 0 3px;
+            }
             &:hover {
                 background: $hover;
                 opacity: 0.7;
@@ -39,12 +59,49 @@
 
             @include down($tablet) {
                 width: 33.33%;
+                padding: 3px 3px 0 3px;
+                // resetting the first of the four multiples
+                &:nth-of-type(4n + 1) {
+                    padding: 3px 3px 0 3px;
+                }
+                // resetting the fourth of the four multiples
+                &:nth-of-type(4n + 4) {
+                    padding: 3px 3px 0 3px;
+                }
+                // targeting the first of the three multiples
+                &:nth-of-type(3n + 1) {
+                    padding: 3px 3px 0 6px;
+                }
+                // targeting the fourth of the three multiples
+                &:nth-of-type(3n + 3) {
+                    padding: 3px 6px 0 3px;
+                }
             }
             @include down($mobile-xl) {
                 width: 50%;
+                padding: 3px 3px 0 3px;
+                // resetting the first of the three multiples
+                &:nth-of-type(3n + 1) {
+                    padding: 3px 3px 0 3px;
+                }
+                // resetting the third of the three multiples
+                &:nth-of-type(3n + 3) {
+                    padding: 3px 3px 0 3px;
+                }
+                // targeting the first of the two multiples
+                &:nth-of-type(2n + 1) {
+                    padding: 3px 3px 0 6px;
+                }
+                // targeting the second of the two multiples
+                &:nth-of-type(2n + 2) {
+                    padding: 3px 6px 0 3px;
+                }
             }
             @include down($extra-small) {
                 width: 100%;
+                padding-left: 8px !important;
+                padding-right: 8px !important;
+                margin-bottom: 8px;
             }
 
             img {
@@ -55,16 +112,28 @@
 
             .recipe-item-title {
                 position: absolute;
-                top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                bottom: 0;
+                transform: translate(-50%, 0);
                 color: $white;
                 padding: 8px;
-                font-size: 1.2rem;
                 font-weight: 600;
                 text-align: center;
                 text-shadow: 2px 2px 1px $black;
                 letter-spacing: 1.5px;
+                width: 100%;
+                display: inline-block;
+                word-wrap: unset;
+                font-size: 24px;
+                @include down($desktop) {
+                    font-size: 20px;
+                }
+                @include down($tablet) {
+                    font-size: 18px;
+                }
+                @include down($mobile) {
+                    font-size: 16px;
+                }
             }
         }
     }
