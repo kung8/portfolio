@@ -40,14 +40,14 @@
             z-index: 1;
             position: relative;
             width: 25%;
-            padding: 3px 3px 0 3px;
+            padding: 8px 8px 0 8px;
             // targeting the first of the four multiples
             &:nth-of-type(4n + 1) {
-                padding: 3px 3px 0 6px;
+                padding: 8px 8px 0 16px;
             }
             // targeting the fourth of the four multiples
             &:nth-of-type(4n + 4) {
-                padding: 3px 6px 0 3px;
+                padding: 8px 12px 0 8px;
             }
             &:hover {
                 background: $hover;
@@ -90,11 +90,11 @@
                 }
                 // targeting the first of the two multiples
                 &:nth-of-type(2n + 1) {
-                    padding: 3px 3px 0 6px;
+                    padding: 6px 3px 0 6px;
                 }
                 // targeting the second of the two multiples
                 &:nth-of-type(2n + 2) {
-                    padding: 3px 6px 0 3px;
+                    padding: 6px 6px 0 3px;
                 }
             }
             @include down($extra-small) {
