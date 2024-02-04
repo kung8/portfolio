@@ -9,7 +9,7 @@ const projects = require('./data/projects');
 const recipes = require('./data/recipes');
 
 const data = {
-    components, 
+    components,
     education,
     experiences,
     products,
@@ -18,6 +18,10 @@ const data = {
     // heroes, 
 }
 
+const convertIdToName = (id) =>
+    id.split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
 
 module.exports = {
     getHeroData: async (_req, res) => {
@@ -26,7 +30,8 @@ module.exports = {
     getData: async (req, res) => {
         const { type, id } = req.query;
         if (id) {
-            const item = data[type].filter(item => item.id === id);
+            const name = convertIdToName(id);
+            const item = data[type].filter(item => item.name === name);
             return res.send(item);
         }
         return res.send(data[type] ?? []);

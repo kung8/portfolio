@@ -25,7 +25,10 @@ export const Recipes = ({ history }) => {
             setIsLoaded(false);
         }
         // eslint-disable-next-line
-    }, [])
+    }, []);
+
+    // convert to kebab case
+    const convertNameToId = (name) => name.toLowerCase().split(' ').join('-');
 
     return (
         <div className='recipes page'>
@@ -37,7 +40,9 @@ export const Recipes = ({ history }) => {
             </div>
             {recipes.length && isLoaded ? (
                 <div className="recipe-items-container">
-                    {recipes.filter(item => !!item.available).map((item) => <RecipeItem key={item.id} item={item} onClick={() => history.push('/recipes/' + item.id)} />)}
+                    {recipes.filter(item => !!item.available).map((item) =>
+                        <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertNameToId(item.name))} />
+                    )}
                 </div>
             ) : <Loader />}
             <Cursor />
