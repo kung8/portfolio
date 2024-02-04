@@ -1,7 +1,6 @@
 const katsu = '../assets/Products/katsu-full.jpeg';
 
 module.exports = {
-    id: 'chicken-katsu',
     cardName: 'Chicken Katsu',
     name: 'Japanese Chicken Katsu',
     recipeCredit: 'Aldin Pope',

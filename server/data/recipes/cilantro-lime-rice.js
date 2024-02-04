@@ -1,7 +1,6 @@
 const cilantroLimeChicken = '../assets/Products/cilantro-lime-chicken.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: cilantroLimeChicken,

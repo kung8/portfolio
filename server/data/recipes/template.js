@@ -1,5 +1,4 @@
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: '',

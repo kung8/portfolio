@@ -1,7 +1,6 @@
 const hospitalityChicken = '../assets/Products/hospitality-chicken.jpeg';
 
 module.exports = {
-    id: 'hospitality-chicken',
     cardName: 'Hospitality Chicken',
     name: 'Hospitality Chicken',
     img: hospitalityChicken,

@@ -1,7 +1,6 @@
 const graveyardDessert = '../assets/Products/graveyard-dessert.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: graveyardDessert,

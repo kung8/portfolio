@@ -1,7 +1,6 @@
 const aji = '../assets/Products/aji-de-gallina.jpeg';
 
 module.exports = {
-    id: 'aji-de-gallina',
     cardName: 'Aji de Gallina',
     name: 'Peruvian Aji de Gallina',
     recipeCredit: 'Gaby Ward',

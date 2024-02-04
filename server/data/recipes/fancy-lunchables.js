@@ -1,7 +1,6 @@
 const lunchables = '../assets/Products/fancy-lunchables.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: lunchables,

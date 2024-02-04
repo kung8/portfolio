@@ -1,7 +1,6 @@
 const bao = '../assets/Products/bao.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: bao,

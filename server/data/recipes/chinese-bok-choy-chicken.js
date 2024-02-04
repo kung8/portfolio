@@ -1,7 +1,6 @@
 const bokChoyChicken = '../assets/Products/bok-choy-chicken.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: bokChoyChicken,

@@ -1,7 +1,6 @@
 const beefStroganoff = '../assets/Products/beef-stroganoff.jpeg';
 
 module.exports = {
-    id: 'beef-stroganoff',
     cardName: 'Beef Stroganoff',
     name: 'Beef Stroganoff',
     img: beefStroganoff,

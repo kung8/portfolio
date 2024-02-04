@@ -1,7 +1,6 @@
 const bbq = '../assets/Products/bbq-pulled-pork.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: bbq,

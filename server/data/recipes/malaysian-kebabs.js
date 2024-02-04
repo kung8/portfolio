@@ -1,7 +1,6 @@
 const kebabs = '../assets/Products/kebabs.jpeg';
 
 module.exports = {
-    id: 'kebabs',
     cardName: 'Kebabs',
     name: 'Malaysian Kebabs',
     img: kebabs,

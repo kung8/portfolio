@@ -1,7 +1,6 @@
 const butterChicken = '../assets/Products/butter-chicken.jpeg';
 
 module.exports = {
-    id: 'indian-butter-chicken',
     cardName: 'Butter Chicken',
     name: 'Indian Butter Chicken',
     img: butterChicken,

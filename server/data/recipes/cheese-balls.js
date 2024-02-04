@@ -1,7 +1,6 @@
 const cheeseBalls = '../assets/Products/cheese-balls.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: cheeseBalls,

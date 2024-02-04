@@ -1,7 +1,6 @@
 const scrambledEggs = '../assets/Products/scrambled-eggs.jpeg';
 
 module.exports = {
-    id: 'scrambled-eggs',
     cardName: 'Scrambled Eggs',
     name: 'Scrambled Eggs',
     img: scrambledEggs,

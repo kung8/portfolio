@@ -1,7 +1,6 @@
 const hamburger = '../assets/Products/hamburger.jpeg';
 
 module.exports = {
-    id: 'hamburger',
     cardName: 'Hamburger',
     name: 'Hamburger',
     img: hamburger,

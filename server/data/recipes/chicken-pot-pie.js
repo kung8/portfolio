@@ -1,7 +1,6 @@
 const chickenPotPie = '../assets/Products/chicken-pot-pie.jpeg';
 
 module.exports = {
-    id: 'chicken-pot-pie',
     cardName: 'Chicken Pot Pie',
     name: 'Chicken Pot Pie',
     img: chickenPotPie,

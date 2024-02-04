@@ -1,7 +1,6 @@
 const katsudon = '../assets/Products/katsudon.jpeg';
 
 module.exports = {
-    id: 'japanese-pork-katsudon',
     cardName: 'Pork Katsudon',
     name: 'Japanese Pork Katsudon',
     img: katsudon,

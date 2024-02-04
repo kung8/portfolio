@@ -5,7 +5,6 @@ const porkLoafOpened = '../assets/Products/pork-loaf-opened.jpeg';
 const porkLoafWrapped = '../assets/Products/pork-loaf-wrapped.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: banhMi,

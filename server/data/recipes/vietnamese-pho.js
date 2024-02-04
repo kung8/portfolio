@@ -1,7 +1,6 @@
 const pho = '../assets/Products/pho.jpeg';
 
 module.exports = {
-    id: 'vietnamese-pho',
     cardName: 'Pho',
     name: 'Vietnamese Pho',
     img: pho,

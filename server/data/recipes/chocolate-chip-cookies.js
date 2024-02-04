@@ -2,7 +2,6 @@ const cookieDough = '../assets/Products/cookie-dough.jpeg';
 const cookies = '../assets/Products/chocolate-chip-cookies.jpeg';
 
 module.exports = {
-    id: 'chocolate-chip-cookies',
     cardName: 'Chocolate Chip Cookies',
     name: 'Chocolate Chip Cookies',
     img: cookies,

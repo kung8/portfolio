@@ -1,7 +1,6 @@
 const macaroni = '../assets/Products/macaroni-salad.jpeg';
 
 module.exports = {
-    id: 'macaroni-salad',
     cardName: 'Macaroni Salad',
     name: 'Macaroni Salad',
     img: macaroni,

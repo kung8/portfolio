@@ -1,7 +1,6 @@
 const greenBeanWithBeef = '../assets/Products/green-bean-with-beef.jpeg';
 
 module.exports = {
-    id: 'green-bean-with-beef',
     cardName: 'Green Bean Beef',
     name: 'Green Bean Beef',
     img: greenBeanWithBeef,

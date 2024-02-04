@@ -1,7 +1,6 @@
 const blackPepperChicken = '../assets/Products/black-pepper-chicken.jpeg';
 
 module.exports = {
-    id: 'black-pepper-chicken',
     cardName: 'Black Pepper Chicken',
     name: 'Malaysian Black Pepper Chicken',
     img: blackPepperChicken,

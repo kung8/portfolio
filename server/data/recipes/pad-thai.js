@@ -1,7 +1,6 @@
 const padThai = '../assets/Products/pad-thai.jpeg';
 
 module.exports = {
-    id: 'pad-thai',
     cardName: 'Pad Thai',
     name: 'Thai Pad Thai',
     img: padThai,

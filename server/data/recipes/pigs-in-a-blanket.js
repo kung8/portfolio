@@ -1,7 +1,6 @@
 const pigsInABlanket = '../assets/Products/pigs-in-a-blanket.jpeg';
 
 module.exports = {
-    id: 'pigs-in-a-blanket',
     cardName: 'Pigs In A Blanket',
     name: 'Pigs In A Blanket',
     img: pigsInABlanket,

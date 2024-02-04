@@ -1,7 +1,6 @@
 const cafeRioSalad = '../assets/Products/cafe-rio-salad.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: cafeRioSalad,

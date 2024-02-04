@@ -1,7 +1,6 @@
 const beefBulgogi = '../assets/Products/beef-bulgogi.jpeg';
 
 module.exports = {
-    id: 'beef-bulgogi',
     cardName: 'Beef Bulgogi',
     name: 'Korean Beef Bulgogi',
     img: beefBulgogi,

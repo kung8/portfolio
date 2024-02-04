@@ -1,9 +1,8 @@
 const lasagna = '../assets/Products/lasagna.jpeg';
 
 module.exports = {
-    id: 'lasagna',
     cardName: 'Lasagna',
-    name: 'Lasagna',
+    name: 'Italian Lasagna',
     img: lasagna,
     available: true,
     type: 'Lunch / Dinner',

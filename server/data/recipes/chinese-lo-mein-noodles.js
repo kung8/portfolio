@@ -1,7 +1,6 @@
 const loMein = '../assets/Products/lo-mein-noodles.jpeg';
 
 module.exports = {
-    id: 'lo-mein-noodles',
     cardName: 'Lo Mein',
     name: 'Lo Mein Noodles',
     img: loMein,

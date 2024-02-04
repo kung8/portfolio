@@ -1,7 +1,6 @@
 const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
 
 module.exports = {
-    id: 'philly-cheesesteak',
     cardName: 'Philly Cheesesteak',
     name: 'Philly Cheesesteak',
     img: phillyCheesesteak,

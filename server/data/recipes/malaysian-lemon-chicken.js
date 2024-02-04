@@ -1,7 +1,6 @@
 const lemonChicken = '../assets/Products/lemon-chicken.jpeg';
 
 module.exports = {
-    id: 'lemon-chicken',
     cardName: 'Lemon Chicken',
     name: 'Malaysian Lemon Chicken',
     img: lemonChicken,

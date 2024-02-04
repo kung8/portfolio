@@ -1,7 +1,6 @@
 const riceCrispyBall = '../assets/Products/rice-crispy-ball.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: riceCrispyBall,

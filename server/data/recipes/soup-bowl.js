@@ -1,7 +1,6 @@
 const soupBowl = '../assets/Products/soup-bowl.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: soupBowl,

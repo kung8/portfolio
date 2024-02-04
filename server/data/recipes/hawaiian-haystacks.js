@@ -1,7 +1,6 @@
 const hawaiian = '../assets/Products/hawaiian-haystacks-aerial.jpeg';
 
 module.exports = {
-    id: 'hawaiian-haystacks',
     cardName: 'Hawaiian Haystacks',
     name: 'Slow-Cooked Hawaiian Haystacks',
     img: hawaiian,

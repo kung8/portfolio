@@ -1,7 +1,6 @@
 const chickenTikkaMasala = '../assets/Products/chicken-tikka-masala.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: chickenTikkaMasala,

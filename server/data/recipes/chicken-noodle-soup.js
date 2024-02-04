@@ -1,7 +1,6 @@
 const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
 
 module.exports = {
-    id: 'chicken-noodle-soup',
     cardName: 'Chicken Soup',
     name: 'Chicken Noodle Soup',
     img: chickenNoodle,

@@ -1,7 +1,6 @@
 const wraps = '../assets/Products/wraps.jpeg';
 
 module.exports = {
-    id: 'wraps',
     cardName: 'Wraps',
     name: 'Wraps',
     img: wraps,

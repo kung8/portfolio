@@ -1,7 +1,6 @@
 const roast = '../assets/Products/roast.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: roast,

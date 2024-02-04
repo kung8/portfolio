@@ -1,7 +1,6 @@
 const crepes = '../assets/Products/crepes.jpeg';
 
 module.exports = {
-    id: 'crepes',
     cardName: 'Crepes',
     name: 'Crepes',
     recipeCredit: 'Sam Giraud-Carrier',

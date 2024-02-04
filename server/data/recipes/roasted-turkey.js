@@ -3,7 +3,6 @@ const turkey = '../assets/Products/dutch-apple-pie.jpeg';
 // const turkeyThawingTable = '../assets/Products/thawing-turkey-estimates.png';
 
 module.exports = {
-    id: 'roasted-turkey',
     cardName: 'Roast Turkey',
     name: 'Garlic Herb Butter Roast Turkey',
     img: turkey,

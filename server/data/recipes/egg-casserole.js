@@ -1,7 +1,6 @@
 const eggCasserole = '../assets/Products/egg-casserole.jpeg';
 
 module.exports = {
-    id: 'egg-casserole',
     cardName: 'Egg Casserole',
     name: 'Egg Casserole',
     img: eggCasserole,

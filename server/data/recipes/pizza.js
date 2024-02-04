@@ -2,7 +2,6 @@ const pizza = '../assets/Products/pizza.jpeg';
 const pizzaDough = '../assets/Products/pizza-dough.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: pizza,

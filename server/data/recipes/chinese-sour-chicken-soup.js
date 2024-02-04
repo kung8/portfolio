@@ -1,7 +1,6 @@
 const sourChicken = '../assets/Products/sour-chicken.jpeg';
 
 module.exports = {
-    id: 'sour-chicken',
     cardName: 'Sour Chicken Soup',
     name: 'Chinese Sour Chicken Soup',
     img: sourChicken,

@@ -1,7 +1,6 @@
 const garlicBread = '../assets/Products/garlic-bread.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: garlicBread,

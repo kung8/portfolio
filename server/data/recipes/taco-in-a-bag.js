@@ -1,7 +1,6 @@
 const taco = '../assets/Products/taco-in-a-bag.jpeg';
 
 module.exports = {
-    id: 'taco-in-a-bag',
     cardName: 'Taco in a Bag',
     name: 'Taco in a Bag',
     img: taco,

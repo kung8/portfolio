@@ -1,7 +1,6 @@
 const gingerChicken = '../assets/Products/ginger-chicken.jpeg';
 
 module.exports = {
-    id: '',
     cardName: '',
     name: '',
     img: gingerChicken,

@@ -1,7 +1,6 @@
 const sushi = '../assets/Products/sushi.jpeg';
 
 module.exports = {
-    id: 'sushi',
     cardName: 'Sushi',
     name: 'Sushi',
     recipeCredit: 'Aldin Pope',

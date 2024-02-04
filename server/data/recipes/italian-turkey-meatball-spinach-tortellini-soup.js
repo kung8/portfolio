@@ -1,7 +1,6 @@
 const meatballSpinachTortelliniSoup = '../assets/Products/turkey-meatball-spinach-tortellini-soup.jpeg';
 
 module.exports = {
-        id: 'turkey-meatball-spinach-tortellini-soup',
         cardName: 'Tortellini Soup',
         name: 'Turkey Meatball Spinach Tortellini Soup',
         img: meatballSpinachTortelliniSoup,
