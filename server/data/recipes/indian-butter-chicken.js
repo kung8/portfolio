@@ -1,0 +1,53 @@
+const butterChicken = '../assets/Products/butter-chicken.jpeg';
+
+module.exports = {
+    id: 'indian-butter-chicken',
+    cardName: 'Butter Chicken',
+    name: 'Indian Butter Chicken',
+    img: butterChicken,
+    available: true,
+    type: 'Lunch / Dinner',
+    yields: '4 servings',
+    prepTime: '12 - 15 m',
+    cookTime: '25 - 30 m',
+    ingredients: [
+        { name: 'butter', amount: '4 Tbsp', additionalDetails: 'divided', optional: false },
+        { name: 'boneless/skinless chicken', amount: '2 lbs', additionalDetails: '1/2" pieces', optional: false },
+        { name: 'yellow onion', amount: '1', additionalDetails: 'diced', optional: false },
+        { name: 'bell pepper', amount: '2', additionalDetails: 'diced', optional: false },
+        { name: 'garlic cloves', amount: '3', additionalDetails: 'minced', optional: false },
+        { name: 'ginger', amount: '1 Tbsp', additionalDetails: 'minced', optional: false },
+        { name: 'garam masala', amount: '1 Tbsp', additionalDetails: '', optional: false },
+        { name: 'chili powder', amount: '1 tsp', additionalDetails: '', optional: false },
+        { name: 'ground cumin', amount: '1 tsp', additionalDetails: '', optional: false },
+        { name: 'cayenne pepper', amount: '1/2 tsp', additionalDetails: '', optional: false },
+        { name: 'tomato sauce', amount: '18 oz', additionalDetails: '', optional: false },
+        { name: 'coconut milk', amount: '2 - 10.5 oz cans', additionalDetails: '', optional: false },
+        { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false },
+        { name: 'pepper', amount: '', additionalDetails: 'to taste', optional: false },
+        { name: 'rice', amount: 'cooked', additionalDetails: '', optional: false },
+    ],
+    supplies: [
+        { name: 'stove' },
+        { name: 'frying pan' },
+        { name: 'large mixing bowl' },
+        { name: 'medium bowl' },
+        { name: 'spatula' },
+        { name: 'measuring spoons' },
+    ],
+    directions: [
+        'Melt 1 Tbsp of butter in a large cooking pan on medium-high heat.',
+        'Cook the chicken in batches. Brown the pieces of chicken until each side is brown. The chicken doesn\'t need to be cooked all the way through. Store in a large mixing bowl to use later.',
+        'While the chicken is cooking, in a medium-size bowl mix together the garlic, ginger, garam masala, chili powder, cumin, and cayenne. Set aside the seasoning for the vegetables.',
+        'If the rice hasn\'t been cooked, you can start that after measuring the seasoning while the chicken is cooking.',
+        'Melt 1 Tbsp of butter in the pan over medium heat.',
+        'Cook the onion and green pepper in a pan until the vegetables begin to soften (approximately 3 to 5 min).',
+        'Add the seasoning, mix, and cook for about 1 minute.',
+        'Add the tomato sauce and bring to a simmer (approximately 5 minutes).',
+        'Add the coconut milk and bring to a simmer.',
+        'Add the browned chicken.',
+        'Let simmer for 10-15 minutes on low heat.',
+        'Add the remaining 2 Tbsp of butter. Add salt and pepper to taste.',
+        'Serve with rice (and naan is optional and delicious).'
+    ]
+};

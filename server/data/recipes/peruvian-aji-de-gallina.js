@@ -1,0 +1,51 @@
+const aji = '../assets/Products/aji-de-gallina.jpeg';
+
+module.exports = {
+    id: 'aji-de-gallina',
+    cardName: 'Aji de Gallina',
+    name: 'Peruvian Aji de Gallina',
+    recipeCredit: 'Gaby Ward',
+    img: aji,
+    available: true,
+    type: 'Lunch / Dinner',
+    yields: '3 - 4 servings',
+    prepTime: '5 m',
+    cookTime: '25 - 40 m',
+    ingredients: [
+        { name: 'chicken breast', amount: '2', additionalDetails: '', optional: false },
+        { name: 'large onion', amount: '1', additionalDetails: 'diced', optional: false },
+        { name: 'oil', amount: 'small drizzle', additionalDetails: '', optional: false },
+        { name: 'garlic', amount: '1 tsp', additionalDetails: 'minced', optional: false },
+        { name: 'yellow bell peppers', amount: '1 1/2', additionalDetails: '', optional: false },
+        { name: 'bread slices', amount: '4', additionalDetails: '', optional: false },
+        { name: 'milk', amount: '2 cups', additionalDetails: '', optional: false },
+        { name: 'salt (or to taste)', amount: '1 tsp', additionalDetails: '', optional: false },
+        { name: 'pepper (or to taste)', amount: '1/4 tsp', additionalDetails: '', optional: false },
+        { name: 'oregano (or to taste)', amount: '1/4 tsp', additionalDetails: '', optional: false },
+        { name: 'nutmeg (optional)', amount: '1 pinch of', additionalDetails: '', optional: true },
+        { name: 'rice (served with)', amount: '', additionalDetails: '', optional: false },
+    ],
+    supplies: [
+        { name: 'stove' },
+        { name: 'blender' },
+        { name: 'large pan' },
+        { name: 'large pot' },
+        { name: 'measuring cups' },
+        { name: 'measuring spoons' },
+        { name: 'cutting board and knife' },
+        { name: 'mixing bowl' },
+        { name: 'small bowl' },
+        { name: 'spoon' },
+    ],
+    directions: [
+        'Cut the onion and measure out the seasonings. You can keep them in the same bowl.',
+        'Boil the chicken breasts in a pot of water.',
+        'Once the chicken is cooked, shred the chicken on a cutting board. Place the shredded chicken in a large mixing bowl. Keep some of the chicken broth in the pot.',
+        'Blend together the bread, milk, and the yellow peppers in a blender.',
+        'In a hot pan with oil on medium high heat, brown the garlic.',
+        'Add the onion, oregano, salt, pepper, and nutmeg to the pan and cook until the onions are browned.',
+        'Add the blended mix and chicken to the pan.',
+        'Continue to mix this mixture and let cook a few more minutes until well blended. At this point if you want to thin the sauce you can add a little chicken broth or milk, depending on your preference.',
+        'Serve with rice and enjoy the taste of my favorite Peruvian dish!'
+    ]
+};
