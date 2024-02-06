@@ -1,4 +1,5 @@
 const soupBowl = '../assets/Products/soup-bowl.jpeg';
+const { MAIN } = require('./constants');
 
 module.exports = {
     cardName: '',
@@ -10,12 +11,12 @@ module.exports = {
     prepTime: 'm',
     cookTime: 'm',
     ingredients: [
-        { name: '', amount: '', additionalDetails: '', optional: false },
+        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
     ],
     supplies: [
         { name: '' },
     ],
     directions: [
-        '',
+        { step: '', type: '' },
     ]
 };

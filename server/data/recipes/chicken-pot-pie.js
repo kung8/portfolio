@@ -1,4 +1,5 @@
 const chickenPotPie = '../assets/Products/chicken-pot-pie.jpeg';
+const { MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Pot Pie',
@@ -31,13 +32,13 @@ module.exports = {
         { name: 'pie pan' },
     ],
     directions: [
-        'Heat a pan over medium heat and add butter.',
-        'Add flour, onion, salt, and pepper to pan and cook until bubbling.',
-        'Mix milk and broth into the mixture and stir constantly until boils for 1 minute.',
-        'Mix in chicken, peas, and carrots until hot.',
-        'Preheat the oven to 425ºF.',
-        'Roll the pie crust inside pie pan and add chicken mixture inside.',
-        'Roll the remaining dough on top of the mixture and turn edges over pie pan.',
-        'Bake the pie for 35 minutes or until golden brown.'
+        { step: 'Heat a pan over medium heat and add butter.', type: MAIN },
+        { step: 'Add flour, onion, salt, and pepper to pan and cook until bubbling.', type: MAIN },
+        { step: 'Mix milk and broth into the mixture and stir constantly until boils for 1 minute.', type: MAIN },
+        { step: 'Mix in chicken, peas, and carrots until hot.', type: MAIN },
+        { step: 'Preheat the oven to 425ºF.', type: MAIN },
+        { step: 'Roll the pie crust inside pie pan and add chicken mixture inside.', type: MAIN },
+        { step: 'Roll the remaining dough on top of the mixture and turn edges over pie pan.', type: MAIN },
+        { step: 'Bake the pie for 35 minutes or until golden brown.', type: MAIN },
     ]
 };

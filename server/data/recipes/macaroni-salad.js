@@ -1,4 +1,5 @@
 const macaroni = '../assets/Products/macaroni-salad.jpeg';
+const { MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Macaroni Salad',
@@ -29,12 +30,12 @@ module.exports = {
         { name: 'strainer' },
     ],
     directions: [
-        'Over a high heat boil water and salt in a large pot.',
-        'Once the water boils, add the pasta and cook for about 8 - 10 minutes or until tender.',
-        'Rinse the pasta under cold water and drain in colander.',
-        'In the mixing bowl, combine the mayo, vinegar, sugar, mustard, salt, and pepper until well mixed.',
-        'Then combine the onions, celery, green pepper, and pasta.',
-        'Best to refrigerate at least 4 hours (or even overnight).',
-        'Enjoy this sweet, creamy, fresh appetizer while you relax with some relaxing Hawaiian music.'
+        { step: 'Over a high heat boil water and salt in a large pot.', type: MAIN },
+        { step: 'Once the water boils, add the pasta and cook for about 8 - 10 minutes or until tender.', type: MAIN },
+        { step: 'Rinse the pasta under cold water and drain in colander.', type: MAIN },
+        { step: 'In the mixing bowl, combine the mayo, vinegar, sugar, mustard, salt, and pepper until well mixed.', type: MAIN },
+        { step: 'Then combine the onions, celery, green pepper, and pasta.', type: MAIN },
+        { step: 'Best to refrigerate at least 4 hours (or even overnight).', type: MAIN },
+        { step: 'Enjoy this sweet, creamy, fresh appetizer while you relax with some relaxing Hawaiian music.', type: MAIN },
     ]
 };

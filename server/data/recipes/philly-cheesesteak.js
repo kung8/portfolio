@@ -1,4 +1,5 @@
 const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
+const { MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Philly Cheesesteak',
@@ -15,9 +16,9 @@ module.exports = {
         { name: 'onion', amount: '1', additionalDetails: 'sliced', optional: false },
         { name: 'bell peppers', amount: '3', additionalDetails: 'sliced', optional: false },
         { name: 'mozzarella cheese', amount: '16 slices', additionalDetails: '', optional: false },
-        { name: 'hoagie bread', amount: '8', additionalDetails: '', optional: false },
         { name: 'salt', amount: '', additionalDetails: 'minced', optional: false },
         { name: 'pepper', amount: '', additionalDetails: 'minced', optional: false },
+        { name: 'hoagie bread', amount: '8', additionalDetails: '', optional: false },
     ],
     supplies: [
         { name: 'stove' },
@@ -27,10 +28,10 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        'Heat pan over medium-high heat and place slices of beef in pan. Cook until close to brown. Set aside.',
-        'Add oil to pan over medium-high heat.',
-        'Add onions and bell pepper slices into pan and caramelize.',
-        'Open up hoagie bread and layer with meat, cheese and vegetables to your hearts content.',
-        'Enjoy the taste of freedom!',
+        { step: 'Heat pan over medium-high heat and place slices of beef in pan. Cook until close to brown. Set aside.', type: MAIN },
+        { step: 'Add oil to pan over medium-high heat.', type: MAIN },
+        { step: 'Add onions and bell pepper slices into pan and caramelize.', type: MAIN },
+        { step: 'Open up hoagie bread and layer with meat, cheese and vegetables to your hearts content.', type: MAIN },
+        { step: 'Enjoy the taste of freedom!', type: MAIN },
     ],
 };

@@ -60,5 +60,32 @@
                 margin-bottom: 4px;
             }
         }
+
+        .separated-recipe-container {
+            .separated-recipe-detail-label {
+                margin-bottom: 4px;
+                text-decoration: underline;
+            }
+            .separated-recipe-detail-list {
+                margin-bottom: 24px;
+                list-style: none;
+                &.numbered {
+                    list-style-type: decimal;
+                    padding-left: 24px;
+                    margin-bottom: 0;
+                    li {
+                        margin-bottom: 8px;
+                    }
+                }
+                li {
+                    margin-bottom: 4px;
+                }
+            }
+            &:last-of-type {
+                .separated-recipe-detail-list {
+                    margin-bottom: 40px;
+                }
+            }
+        }
     }
 }

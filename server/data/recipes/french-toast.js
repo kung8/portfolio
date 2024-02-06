@@ -1,4 +1,5 @@
 const frenchToast = '../assets/Products/french-toast.jpeg';
+const { MAIN } = require("./constants");
 
 module.exports = {
     cardName: 'French Toast',
@@ -25,10 +26,10 @@ module.exports = {
         { name: 'measuring cup' },
     ],
     directions: [
-        'Mix eggs, vanilla, cinnamon, and milk together.',
-        'Dredge bread in on both sides in batter one at a time right before frying.',
-        'Heat a frying pan over medium heat and add some butter to pan.',
-        'Brown each side of bread (about 30 seconds on each side).',
-        'Serve and add fruits, syrup, and all your favorite toppings.'
+        { step: 'Mix eggs, vanilla, cinnamon, and milk together.', type: MAIN },
+        { step: 'Dredge bread in on both sides in batter one at a time right before frying.', type: MAIN },
+        { step: 'Heat a frying pan over medium heat and add some butter to pan.', type: MAIN },
+        { step: 'Brown each side of bread (about 30 seconds on each side).', type: MAIN },
+        { step: 'Serve and add fruits, syrup, and all your favorite toppings.', type: MAIN },
     ]
 };

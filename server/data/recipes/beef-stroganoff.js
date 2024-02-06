@@ -1,4 +1,5 @@
 const beefStroganoff = '../assets/Products/beef-stroganoff.jpeg';
+const { MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Beef Stroganoff',
@@ -29,13 +30,13 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        'Heat pan over medium-high heat and add butter.',
-        'Cook mushroom, garlic, and onion until tender and set aside.',
-        'Brown beef.',
-        'Add 2 cup of broth, salt and worchestershire sauce until boiling.',
-        'Lower heat. Cover and simmer for 15 minutes.',
-        'Add remaining broth, flour and vegetables. Heat until boiling. Stir occasionally.',
-        'Add sour cream. Heat until hot and solid color.',
-        'Serve over noodles.',
+        { step: 'Heat pan over medium-high heat and add butter.', type: MAIN },
+        { step: 'Cook mushroom, garlic, and onion until tender and set aside.', type: MAIN },
+        { step: 'Brown beef.', type: MAIN },
+        { step: 'Add 2 cup of broth, salt and worchestershire sauce until boiling.', type: MAIN },
+        { step: 'Lower heat. Cover and simmer for 15 minutes.', type: MAIN },
+        { step: 'Add remaining broth, flour and vegetables. Heat until boiling. Stir occasionally.', type: MAIN },
+        { step: 'Add sour cream. Heat until hot and solid color.', type: MAIN },
+        { step: 'Serve over noodles.', type: MAIN },
     ]
 };

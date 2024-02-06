@@ -1,4 +1,5 @@
 const sourChicken = '../assets/Products/sour-chicken.jpeg';
+const { MAIN } = require("./constants");
 
 module.exports = {
     cardName: 'Sour Chicken Soup',
@@ -22,11 +23,11 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        'Cut up chicken using cleaver knife into about 1" thick pieces.',
-        'Place chicken into pressure cooker pot and fill with water.',
-        'Set pressure cooker on "soup" mode (which may differ between pressure cooker brand but it\'s so the chicken isn\'t too soft).',
-        'Ladle out about 1.5 cup of the soup for the sour mix. Pour in tamarind powder and lime juice and mix together.',
-        'When ready to eat, add sour mixture to the soup (as desired).',
-        'Serve soup over rice and enjoy this nostalgic piece of home for me.',
+        { step: 'Cut up chicken using cleaver knife into about 1" thick pieces.', type: MAIN },
+        { step: 'Place chicken into pressure cooker pot and fill with water.', type: MAIN },
+        { step: 'Set pressure cooker on "soup" mode (which may differ between pressure cooker brand but it\'s so the chicken isn\'t too soft).', type: MAIN },
+        { step: 'Ladle out about 1.5 cup of the soup for the sour mix. Pour in tamarind powder and lime juice and mix together.', type: MAIN },
+        { step: 'When ready to eat, add sour mixture to the soup (as desired).', type: MAIN },
+        { step: 'Serve soup over rice and enjoy this nostalgic piece of home for me.', type: MAIN },
     ]
 }

@@ -1,4 +1,5 @@
 const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
+const { MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Soup',
@@ -35,11 +36,11 @@ module.exports = {
         { name: 'spoon' },
     ],
     directions: [
-        'Prep all the vegetables and add them to the mixing bowl. Then prep the raw chicken. Or best to use separate cutting boards to avoid cross contamination.',
-        'In a hot pan with oil over medium-high heat, add the chicken, salt, pepper, and oregano. Cook until chicken is browned on both sides. Set aside.',
-        'In a large pot, add together the chicken broth, onion, carrots, celery, salt, pepper, oregano, rosemary, and thyme and cook for 8 - 10 minutes over medium-high heat.',
-        'Add the noodles and bring to a roaring boil (about another 6 to 8 minutes).',
-        'Add the chicken and let it simmer on a low-heat for about 10 minutes.',
-        'Serve and enjoy - I typically make this when I or somebody I know is sick, so get better if you too are sick!'
+        { step: 'Prep all the vegetables and add them to the mixing bowl. Then prep the raw chicken. Or best to use separate cutting boards to avoid cross contamination.', type: MAIN },
+        { step: 'In a hot pan with oil over medium-high heat, add the chicken, salt, pepper, and oregano. Cook until chicken is browned on both sides. Set aside.', type: MAIN },
+        { step: 'In a large pot, add together the chicken broth, onion, carrots, celery, salt, pepper, oregano, rosemary, and thyme and cook for 8 - 10 minutes over medium-high heat.', type: MAIN },
+        { step: 'Add the noodles and bring to a roaring boil (about another 6 to 8 minutes).', type: MAIN },
+        { step: 'Add the chicken and let it simmer on a low-heat for about 10 minutes.', type: MAIN },
+        { step: 'Serve and enjoy - I typically make this when I or somebody I know is sick, so get better if you too are sick!', type: MAIN },
     ]
 };

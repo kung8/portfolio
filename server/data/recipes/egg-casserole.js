@@ -1,4 +1,5 @@
 const eggCasserole = '../assets/Products/egg-casserole.jpeg';
+const { MAIN } = require("./constants");
 
 module.exports = {
     cardName: 'Egg Casserole',
@@ -34,14 +35,14 @@ module.exports = {
         { name: 'aluminum foil' },
     ],
     directions: [
-        'Cut the bread, ham, onion, and bell peppers.',
-        'Mix together eggs, milk, salt, and pepper in the mixing bowl.',
-        'Layer the base of the baking pan with the cubes of bread.',
-        'Pour the egg batter over the bread, add the veggies, and cheese.',
-        'Cover with tin foil and refrigerate for at least 8 hours (or overnight).',
-        'Once ready to cook, preheat oven to 350ºF.',
-        'Uncover casserole and bake for 40 minutes - 1 hour (or until it sets). This mostly depends on your oven.',
-        'Once the casserole is cooked, let cool for a few minutes.',
-        'Serve and enjoy this simple, hot breakfast feast.'
+        { step: 'Cut the bread, ham, onion, and bell peppers.', type: MAIN },
+        { step: 'Mix together eggs, milk, salt, and pepper in the mixing bowl.', type: MAIN },
+        { step: 'Layer the base of the baking pan with the cubes of bread.', type: MAIN },
+        { step: 'Pour the egg batter over the bread, add the veggies, and cheese.', type: MAIN },
+        { step: 'Cover with tin foil and refrigerate for at least 8 hours (or overnight).', type: MAIN },
+        { step: 'Once ready to cook, preheat oven to 350ºF.', type: MAIN },
+        { step: 'Uncover casserole and bake for 40 minutes - 1 hour (or until it sets). This mostly depends on your oven.', type: MAIN },
+        { step: 'Once the casserole is cooked, let cool for a few minutes.', type: MAIN },
+        { step: 'Serve and enjoy this simple, hot breakfast feast.', type: MAIN },
     ]
 };

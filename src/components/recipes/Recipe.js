@@ -26,7 +26,27 @@ export const Recipe = ({ history, match }) => {
             setIsLoaded(false);
         }
         // eslint-disable-next-line
-    }, [])
+    }, []);
+
+    const separatedIngredients = item?.separated && item?.ingredients &&
+        item.ingredients.reduce((acc, ingredient) => {
+            if (ingredient.section && !acc[ingredient.section]) acc[ingredient.section] = [];
+            if (ingredient.section && acc[ingredient.section]) {
+                acc[ingredient.section].push(ingredient);
+            }
+            return acc;
+        }, {});
+
+    const formatSeparatedIngredients = () => {
+        const finalIngredients = [];
+        for (const key in separatedIngredients) {
+            const ingredients = separatedIngredients[key];
+            finalIngredients.push([key, ingredients]);
+        }
+        return finalIngredients;
+    }
+
+    const formattedIngredients = separatedIngredients && formatSeparatedIngredients();
 
     return (
         <div className='recipe page'>
@@ -53,25 +73,47 @@ export const Recipe = ({ history, match }) => {
                     </ul>
 
                     <h4 className="recipe-detail-label">Ingredients:</h4>
-                    <ul className="recipe-detail-list">
-                        {(item.ingredients || []).map(ingredient => (
-                            <li key={ingredient.name}>
-                                {ingredient.amount}{' '}
-                                {ingredient.name}
-                                {ingredient.additionalDetails ? `, ${ingredient.additionalDetails}` : ''}
-                            </li>
-                        ))}
-                    </ul>
+                    {item.separated ? (
+                        <>
+                            {formattedIngredients.map(([section, ingredients]) => (
+                                <div key={section} className="separated-recipe-container">
+                                    <h5 className="separated-recipe-detail-label">{section}</h5>
+                                    <ul className="separated-recipe-detail-list">
+                                        {ingredients.map(ingredient => (
+                                            <li key={ingredient.name}>
+                                                {ingredient.amount}{' '}
+                                                {ingredient.name}
+                                                {ingredient.additionalDetails ? `, ${ingredient.additionalDetails}` : ''}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </>
+                    ) : (
+                        <ul className="recipe-detail-list">
+                            {(item.ingredients || []).map(ingredient => (
+                                <li key={ingredient.name}>
+                                    {ingredient.amount}{' '}
+                                    {ingredient.name}
+                                    {ingredient.additionalDetails ? `, ${ingredient.additionalDetails}` : ''}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
 
                     <h4 className="recipe-detail-label">Directions:</h4>
                     <ol className="recipe-detail-list numbered">
-                        {(item.directions || []).map(step => (
-                            <li key={step}>{step}</li>
-                        ))}
+                        {(item.directions || []).map(({ step }) => {
+                            return (
+                                <li key={step}>{step}</li>
+                            )
+                        })}
                     </ol>
                 </div>
-            ) : <Loader />}
+            ) : <Loader />
+            }
             <Cursor />
-        </div>
+        </div >
     )
 }

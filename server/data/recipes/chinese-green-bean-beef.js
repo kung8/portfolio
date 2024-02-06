@@ -1,4 +1,5 @@
 const greenBeanWithBeef = '../assets/Products/green-bean-with-beef.jpeg';
+const { MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Green Bean Beef',
@@ -22,9 +23,9 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        'Heat frying pan over medium-high heat, and add beef. Cook until browned.',
-        'Add the green beans into pan and continue to cook until beans are softened. Stir occasionally.',
-        'Add salt and pepper as desired.',
-        'Serve over rice and enjoy this Chinese stir-fry.'
+        { step: 'Heat frying pan over medium-high heat, and add beef. Cook until browned.', type: MAIN },
+        { step: 'Add the green beans into pan and continue to cook until beans are softened. Stir occasionally.', type: MAIN },
+        { step: 'Add salt and pepper as desired.', type: MAIN },
+        { step: 'Serve over rice and enjoy this Chinese stir-fry.', type: MAIN },
     ]
 }

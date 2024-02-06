@@ -1,4 +1,5 @@
 const wraps = '../assets/Products/wraps.jpeg';
+const { MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Wraps',
@@ -21,7 +22,7 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        'Place tortilla on a plate and lay on toppings in the center of tortilla as desired.',
-        'Roll the edge towards the center of the tortilla and continue to completely roll wrap.'
+        { step: 'Place tortilla on a plate and lay on toppings in the center of tortilla as desired.', type: MAIN },
+        { step: 'Roll the edge towards the center of the tortilla and continue to completely roll wrap.', type: MAIN },
     ]
 }
