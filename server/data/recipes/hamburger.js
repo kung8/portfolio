@@ -1,5 +1,5 @@
 const hamburger = '../assets/Products/hamburger.jpeg';
-const { MAIN, TOPPINGS } = require('./constants');
+const { DINNER, LUNCH, MAIN, TOPPINGS } = require('./constants');
 
 module.exports = {
     cardName: 'Hamburger',

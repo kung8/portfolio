@@ -1,5 +1,5 @@
 const scrambledEggs = '../assets/Products/scrambled-eggs.jpeg';
-const { MAIN } = require('./constants');
+const { BREAKFAST, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Scrambled Eggs',

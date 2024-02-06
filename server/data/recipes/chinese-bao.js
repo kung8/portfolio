@@ -1,5 +1,5 @@
 const bao = '../assets/Products/bao.jpeg';
-const { APPETIZER } = require("./constants");
+const { APPETIZER, SNACK } = require("./constants");
 
 module.exports = {
     cardName: '',
