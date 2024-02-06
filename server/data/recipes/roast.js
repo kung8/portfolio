@@ -1,11 +1,12 @@
 const roast = '../assets/Products/roast.jpeg';
+const { LUNCH, DINNER } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: roast,
     available: false,
-    type: '',
+    type: [LUNCH, DINNER],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

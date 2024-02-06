@@ -1,3 +1,5 @@
+const { LUNCH, DINNER } = require("./constants");
+
 const cilantroLimeChicken = '../assets/Products/cilantro-lime-chicken.jpeg';
 
 module.exports = {
@@ -5,7 +7,7 @@ module.exports = {
     name: '',
     img: cilantroLimeChicken,
     available: false,
-    type: '',
+    type: [LUNCH, DINNER],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

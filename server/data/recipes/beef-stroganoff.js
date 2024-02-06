@@ -1,12 +1,12 @@
 const beefStroganoff = '../assets/Products/beef-stroganoff.jpeg';
-const { MAIN } = require('./constants');
+const { MAIN, DINNER, LUNCH } = require('./constants');
 
 module.exports = {
     cardName: 'Beef Stroganoff',
     name: 'Beef Stroganoff',
     img: beefStroganoff,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '7 servings',
     prepTime: '10 - 12 m',
     cookTime: '45 m',

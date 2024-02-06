@@ -1,12 +1,12 @@
 const blackPepperChicken = '../assets/Products/black-pepper-chicken.jpeg';
-const { MAIN, TOPPINGS } = require('./constants');
+const { DINNER, LUNCH, MAIN, TOPPINGS } = require('./constants');
 
 module.exports = {
     cardName: 'Black Pepper Chicken',
     name: 'Malaysian Black Pepper Chicken',
     img: blackPepperChicken,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '4 - 5 servings',
     prepTime: '45 m',
     cookTime: '20 m',

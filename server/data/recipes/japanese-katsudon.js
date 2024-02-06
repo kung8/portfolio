@@ -1,12 +1,12 @@
 const katsudon = '../assets/Products/katsudon.jpeg';
-const { MAIN, TOPPINGS } = require('./constants');
+const { DINNER, LUNCH, MAIN, TOPPINGS } = require('./constants');
 
 module.exports = {
     cardName: 'Pork Katsudon',
     name: 'Japanese Pork Katsudon',
     img: katsudon,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '10 servings',
     prepTime: '20 m',
     cookTime: '20 m',

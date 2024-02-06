@@ -1,12 +1,12 @@
 const padThai = '../assets/Products/pad-thai.jpeg';
-const { MAIN, SAUCE, TOPPINGS } = require('./constants');
+const { DINNER, LUNCH, MAIN, SAUCE, TOPPINGS } = require('./constants');
 
 module.exports = {
     cardName: 'Pad Thai',
     name: 'Thai Pad Thai',
     img: padThai,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '6 serving',
     prepTime: '15 m',
     cookTime: '45 m',

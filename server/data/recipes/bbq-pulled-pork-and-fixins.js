@@ -1,11 +1,12 @@
 const bbq = '../assets/Products/bbq-pulled-pork.jpeg';
+const { DINNER, LUNCH } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: bbq,
     available: false,
-    type: '',
+    type: [LUNCH, DINNER],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',
@@ -16,6 +17,6 @@ module.exports = {
         { name: '' },
     ],
     directions: [
-        { step: '', type: ''},
+        { step: '', type: '' },
     ]
 };

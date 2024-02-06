@@ -1,12 +1,12 @@
 const meatballSpinachTortelliniSoup = '../assets/Products/turkey-meatball-spinach-tortellini-soup.jpeg';
-const { MAIN } = require('./constants');
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Tortellini Soup',
     name: 'Turkey Meatball Spinach Tortellini Soup',
     img: meatballSpinachTortelliniSoup,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '6 servings',
     prepTime: '15 m',
     cookTime: '35 m',

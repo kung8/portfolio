@@ -1,12 +1,12 @@
 const butterChicken = '../assets/Products/butter-chicken.jpeg';
-const { MAIN } = require('./constants');
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Butter Chicken',
     name: 'Indian Butter Chicken',
     img: butterChicken,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '4 servings',
     prepTime: '12 - 15 m',
     cookTime: '25 - 30 m',

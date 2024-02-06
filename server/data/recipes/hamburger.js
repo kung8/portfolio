@@ -6,7 +6,7 @@ module.exports = {
     name: 'Hamburger',
     img: hamburger,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '8 servings',
     prepTime: '5 m',
     cookTime: '50 m',

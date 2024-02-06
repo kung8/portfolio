@@ -1,12 +1,12 @@
 const loMein = '../assets/Products/lo-mein-noodles.jpeg';
-const { MAIN, MARINADE, SAUCE } = require("./constants");
+const { DINNER, LUNCH, MAIN, MARINADE, SAUCE } = require("./constants");
 
 module.exports = {
     cardName: 'Lo Mein',
     name: 'Lo Mein Noodles',
     img: loMein,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '8 servings',
     prepTime: '1 m',
     cookTime: '10 m',

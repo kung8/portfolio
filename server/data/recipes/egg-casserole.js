@@ -1,12 +1,12 @@
 const eggCasserole = '../assets/Products/egg-casserole.jpeg';
-const { MAIN } = require("./constants");
+const { BREAKFAST, MAIN } = require("./constants");
 
 module.exports = {
     cardName: 'Egg Casserole',
     name: 'Egg Casserole',
     img: eggCasserole,
     available: true,
-    type: 'Breakfast',
+    type: [BREAKFAST],
     yields: '6 servings',
     prepTime: '15 m',
     cookTime: '1 h',

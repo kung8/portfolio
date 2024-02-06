@@ -1,12 +1,12 @@
 const hospitalityChicken = '../assets/Products/hospitality-chicken.jpeg';
-const { MAIN } = require('./constants');
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Hospitality Chicken',
     name: 'Hospitality Chicken',
     img: hospitalityChicken,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '6 servings',
     prepTime: '5 m',
     cookTime: '25 - 40 m',

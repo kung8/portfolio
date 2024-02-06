@@ -1,12 +1,12 @@
 const sourChicken = '../assets/Products/sour-chicken.jpeg';
-const { MAIN } = require("./constants");
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Sour Chicken Soup',
     name: 'Chinese Sour Chicken Soup',
     img: sourChicken,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '10 servings',
     prepTime: '10 m',
     cookTime: '1 h',

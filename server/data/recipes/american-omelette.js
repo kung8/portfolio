@@ -1,12 +1,12 @@
 const omelette = '../assets/Products/omelette.jpeg';
-const { MAIN } = require('./constants');
+const { BREAKFAST, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Omelette',
     name: 'Omelette',
     img: omelette,
     available: true,
-    type: 'Breakfast',
+    type: [BREAKFAST],
     yields: '1 serving',
     prepTime: '5 m',
     cookTime: '10 m',

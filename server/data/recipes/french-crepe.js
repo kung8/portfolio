@@ -1,5 +1,5 @@
 const crepes = '../assets/Products/crepes.jpeg';
-const { MAIN, TOPPINGS } = require("./constants");
+const { BREAKFAST, DESSERT, DINNER, LUNCH, MAIN, TOPPINGS } = require("./constants");
 
 module.exports = {
     cardName: 'Crepes',
@@ -7,7 +7,7 @@ module.exports = {
     recipeCredit: 'Sam Giraud-Carrier',
     img: crepes,
     available: true,
-    type: 'Snack',
+    type: [BREAKFAST, LUNCH, DINNER, DESSERT],
     yields: '4 - 5 servings',
     prepTime: '5 - 8 m',
     cookTime: '15 - 20 m',

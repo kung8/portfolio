@@ -1,12 +1,12 @@
 const kebabs = '../assets/Products/kebabs.jpeg';
-const { MAIN } = require('./constants');
+const { APPETIZER, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Kebabs',
     name: 'Malaysian Kebabs',
     img: kebabs,
     available: true,
-    type: 'Appetizer',
+    type: [APPETIZER],
     yields: '6 servings',
     prepTime: '10 m',
     cookTime: '25 - 30 m',

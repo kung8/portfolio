@@ -1,12 +1,12 @@
 const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
-const { MAIN } = require('./constants');
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Soup',
     name: 'Chicken Noodle Soup',
     img: chickenNoodle,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '5 - 6 servings',
     prepTime: '6 - 8 m',
     cookTime: '40 - 45 m',

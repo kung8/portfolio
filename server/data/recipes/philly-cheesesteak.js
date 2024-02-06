@@ -1,12 +1,12 @@
 const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
-const { MAIN } = require('./constants');
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Philly Cheesesteak',
     name: 'Philly Cheesesteak',
     img: phillyCheesesteak,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '8 servings',
     prepTime: '10 m',
     cookTime: '20 m',

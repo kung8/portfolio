@@ -1,5 +1,5 @@
 const aji = '../assets/Products/aji-de-gallina.jpeg';
-const { MAIN } = require('./constants');
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Aji de Gallina',
@@ -7,7 +7,7 @@ module.exports = {
     recipeCredit: 'Gaby Ward',
     img: aji,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '3 - 4 servings',
     prepTime: '5 m',
     cookTime: '25 - 40 m',

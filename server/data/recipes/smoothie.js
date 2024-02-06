@@ -1,12 +1,12 @@
 const smoothie = '../assets/Products/smoothie.jpeg';
-const { MAIN } = require('./constants');
+const { BREAKFAST, DINNER, LUNCH, MAIN, SNACK } = require('./constants');
 
 module.exports = {
     cardName: 'Smoothie',
     name: 'Smoothie',
     img: smoothie,
     available: true,
-    type: 'Snack',
+    type: [BREAKFAST, LUNCH, SNACK, DINNER],
     yields: '40 oz',
     prepTime: '1 m',
     cookTime: '2 m',

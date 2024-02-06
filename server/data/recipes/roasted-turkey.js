@@ -1,14 +1,14 @@
 const turkey = '../assets/Products/dutch-apple-pie.jpeg';
 // const turkeyCookingTable = '../assets/Products/cooking-turkey-estimates.png';
 // const turkeyThawingTable = '../assets/Products/thawing-turkey-estimates.png';
-const { MAIN } = require('./constants');
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Roast Turkey',
     name: 'Garlic Herb Butter Roast Turkey',
     img: turkey,
     available: false,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '10 servings (recipe based on 14 lb)',
     prepTime: '20 m',
     cookTime: '2 h 15 m - 4 h 20 m',

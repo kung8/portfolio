@@ -1,12 +1,12 @@
 const pigsInABlanket = '../assets/Products/pigs-in-a-blanket.jpeg';
-const { MAIN } = require('./constants');
+const { APPETIZER, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Pigs In A Blanket',
     name: 'Pigs In A Blanket',
     img: pigsInABlanket,
     available: true,
-    type: 'Appetizer',
+    type: [APPETIZER],
     yields: '8 servings',
     prepTime: '10 m',
     cookTime: '15 m',

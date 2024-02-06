@@ -1,12 +1,12 @@
 const lemonChicken = '../assets/Products/lemon-chicken.jpeg';
-const { MAIN, MARINADE, SAUCE, TOPPINGS } = require('./constants');
+const { DINNER, LUNCH, MAIN, MARINADE, SAUCE, TOPPINGS } = require('./constants');
 
 module.exports = {
     cardName: 'Lemon Chicken',
     name: 'Malaysian Lemon Chicken',
     img: lemonChicken,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '10 servings',
     prepTime: '10 m',
     cookTime: '10 m',

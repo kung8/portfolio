@@ -1,12 +1,12 @@
 const macaroni = '../assets/Products/macaroni-salad.jpeg';
-const { MAIN } = require('./constants');
+const { APPETIZER, MAIN, SIDE_DISH } = require('./constants');
 
 module.exports = {
     cardName: 'Macaroni Salad',
     name: 'Macaroni Salad',
     img: macaroni,
     available: true,
-    type: 'Appetizer',
+    type: [APPETIZER, SIDE_DISH],
     yields: '10 servings',
     prepTime: '20 m',
     cookTime: '10 m',

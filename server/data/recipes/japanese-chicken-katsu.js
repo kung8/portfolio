@@ -1,5 +1,5 @@
 const katsu = '../assets/Products/katsu-full.jpeg';
-const { MAIN, TOPPINGS } = require('./constants');
+const { DINNER, LUNCH, MAIN, TOPPINGS } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Katsu',
@@ -7,7 +7,7 @@ module.exports = {
     recipeCredit: 'Aldin Pope',
     img: katsu,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '4 servings',
     prepTime: '15 m',
     cookTime: '15 - 20 m',

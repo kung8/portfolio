@@ -1,12 +1,12 @@
 const taco = '../assets/Products/taco-in-a-bag.jpeg';
-const { MAIN, TOPPINGS } = require('./constants');
+const { DINNER, LUNCH, MAIN, TOPPINGS } = require('./constants');
 
 module.exports = {
     cardName: 'Taco in a Bag',
     name: 'Taco in a Bag',
     img: taco,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '3 - 4 servings',
     prepTime: '5 - 10 m',
     cookTime: '10 m',

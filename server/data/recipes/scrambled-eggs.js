@@ -6,7 +6,7 @@ module.exports = {
     name: 'Scrambled Eggs',
     img: scrambledEggs,
     available: true,
-    type: 'Breakfast',
+    type: [BREAKFAST],
     yields: '1 serving',
     prepTime: '5 m',
     cookTime: '12 - 15 m',

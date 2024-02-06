@@ -1,12 +1,12 @@
 const frenchToast = '../assets/Products/french-toast.jpeg';
-const { MAIN } = require("./constants");
+const { BREAKFAST, MAIN } = require("./constants");
 
 module.exports = {
     cardName: 'French Toast',
     name: 'French Toast',
     img: frenchToast,
     available: true,
-    type: 'Breakfast',
+    type: [BREAKFAST],
     yields: '2 servings',
     prepTime: '5 m',
     cookTime: '8 - 10 m',

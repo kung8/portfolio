@@ -1,12 +1,12 @@
 const beefBulgogi = '../assets/Products/beef-bulgogi.jpeg';
-const { MAIN, TOPPINGS } = require('./constants');
+const { DINNER, LUNCH, MAIN, TOPPINGS } = require('./constants');
 
 module.exports = {
     cardName: 'Beef Bulgogi',
     name: 'Korean Beef Bulgogi',
     img: beefBulgogi,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '6 servings',
     prepTime: '8 h',
     cookTime: '25 m',

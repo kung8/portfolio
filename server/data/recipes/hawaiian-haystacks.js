@@ -1,12 +1,12 @@
 const hawaiian = '../assets/Products/hawaiian-haystacks-aerial.jpeg';
-const { MAIN, TOPPINGS } = require('./constants');
+const { DINNER, LUNCH, MAIN, TOPPINGS } = require('./constants');
 
 module.exports = {
     cardName: 'Hawaiian Haystacks',
     name: 'Slow-Cooked Hawaiian Haystacks',
     img: hawaiian,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '10 - 12 servings',
     prepTime: '10 m',
     cookTime: '4.5 h',

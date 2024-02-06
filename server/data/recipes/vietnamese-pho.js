@@ -1,12 +1,12 @@
 const pho = '../assets/Products/pho.jpeg';
-const { MAIN, TOPPINGS } = require('./constants');
+const { DINNER, LUNCH, MAIN, TOPPINGS } = require('./constants');
 
 module.exports = {
     cardName: 'Pho',
     name: 'Vietnamese Pho',
     img: pho,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '4 servings',
     prepTime: '8 - 10 m',
     cookTime: '40 - 50 m',

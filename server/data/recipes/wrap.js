@@ -1,12 +1,12 @@
 const wraps = '../assets/Products/wraps.jpeg';
-const { MAIN } = require('./constants');
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Wraps',
     name: 'Wraps',
     img: wraps,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '1 serving',
     prepTime: '1 m',
     cookTime: '2 m',

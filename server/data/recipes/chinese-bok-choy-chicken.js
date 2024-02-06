@@ -1,3 +1,5 @@
+const { SIDE_DISH, LUNCH, DINNER } = require("./constants");
+
 const bokChoyChicken = '../assets/Products/bok-choy-chicken.jpeg';
 
 module.exports = {
@@ -5,7 +7,7 @@ module.exports = {
     name: '',
     img: bokChoyChicken,
     available: false,
-    type: '',
+    type: [SIDE_DISH, LUNCH, DINNER],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

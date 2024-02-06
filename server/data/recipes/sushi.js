@@ -1,5 +1,5 @@
 const sushi = '../assets/Products/sushi.jpeg';
-const { MAIN } = require('./constants');
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Sushi',
@@ -7,7 +7,7 @@ module.exports = {
     recipeCredit: 'Aldin Pope',
     img: sushi,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '4 servings',
     prepTime: '10 m',
     cookTime: '15 m',

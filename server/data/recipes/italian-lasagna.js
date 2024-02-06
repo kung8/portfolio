@@ -1,12 +1,12 @@
 const lasagna = '../assets/Products/lasagna.jpeg';
-const { MAIN } = require('./constants');
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Lasagna',
     name: 'Italian Lasagna',
     img: lasagna,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '12 servings',
     prepTime: '15 m',
     cookTime: '3 h',

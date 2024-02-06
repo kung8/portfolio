@@ -1,12 +1,12 @@
 const greenBeanWithBeef = '../assets/Products/green-bean-with-beef.jpeg';
-const { MAIN } = require('./constants');
+const { DINNER, LUNCH, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'Green Bean Beef',
     name: 'Green Bean Beef',
     img: greenBeanWithBeef,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '4 servings',
     prepTime: '15 m',
     cookTime: '20 m',

@@ -1,12 +1,12 @@
 const smores = '../assets/Products/smores.jpeg';
-const { MAIN } = require('./constants');
+const { DESSERT, MAIN } = require('./constants');
 
 module.exports = {
     cardName: 'S\'mores',
     name: 'S\'mores',
     img: smores,
     available: true,
-    type: 'dessert',
+    type: [DESSERT],
     yields: '2 servings',
     prepTime: '1 m',
     cookTime: '5 m',

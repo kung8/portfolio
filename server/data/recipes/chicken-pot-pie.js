@@ -1,12 +1,12 @@
 const chickenPotPie = '../assets/Products/chicken-pot-pie.jpeg';
-const { MAIN } = require('./constants');
+const { MAIN, DINNER, LUNCH } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Pot Pie',
     name: 'Chicken Pot Pie',
     img: chickenPotPie,
     available: true,
-    type: 'Lunch / Dinner',
+    type: [LUNCH, DINNER],
     yields: '4 servings',
     prepTime: '10 m',
     cookTime: '50 m - 1 h',

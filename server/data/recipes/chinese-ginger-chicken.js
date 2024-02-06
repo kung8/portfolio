@@ -1,3 +1,5 @@
+const { SIDE_DISH, LUNCH, DINNER } = require("./constants");
+
 const gingerChicken = '../assets/Products/ginger-chicken.jpeg';
 
 module.exports = {
@@ -5,7 +7,7 @@ module.exports = {
     name: '',
     img: gingerChicken,
     available: false,
-    type: '',
+    type: [LUNCH, DINNER, SIDE_DISH],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',
