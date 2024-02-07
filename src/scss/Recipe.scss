@@ -103,5 +103,12 @@
                 }
             }
         }
+
+        .recipe-notes {
+            list-style: none;
+            li {
+                margin-bottom: 8px;
+            }
+        }
     }
 }

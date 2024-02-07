@@ -183,6 +183,17 @@ export const Recipe = ({ history, match }) => {
                             })}
                         </ol>
                     )}
+
+                    {item.notes && (
+                        <>
+                            <h4 className="recipe-detail-label">Notes:</h4>
+                            <ul className="recipe-notes">
+                                {item.notes.map((note, i) => (
+                                    <li key={i}>{note}</li>
+                                ))}
+                            </ul>
+                        </>
+                    )}
                 </div>
             ) : <Loader />
             }
