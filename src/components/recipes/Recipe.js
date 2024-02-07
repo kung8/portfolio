@@ -10,6 +10,8 @@ export const Recipe = ({ history, match }) => {
     const { id } = match.params;
     const { data: recipe = [] } = useGetData('recipes', id);
     const item = recipe[0];
+    const [selectedFigure, setSelectedFigure] = useState(null);
+    const [selectedFigureLabel, setSelectedFigureLabel] = useState(null);
 
     const queryClient = useQueryClient();
     const queryKey = ['getData', 'recipes', id];
@@ -49,17 +51,24 @@ export const Recipe = ({ history, match }) => {
 
     const formattedIngredients = separatedIngredients && formatSeparatedIngredients();
 
-    const separatedDirections = item?.separated && item?.directions &&
-        item.directions.reduce((acc, direction) => {
+    const formatSeparatedDirections = () => {
+        let figureCount = 1;
+        const separatedDirections = item.directions.reduce((acc, direction) => {
             if (direction.type && !acc[direction.type]) acc[direction.type] = [];
             if (direction.type && acc[direction.type]) {
-                acc[direction.type].push(direction);
+                const newDirection = { ...direction };
+                if (direction.img) {
+                    newDirection.figure = figureCount;
+                    figureCount += 1;
+                }
+
+                acc[direction.type].push(newDirection);
             }
             return acc;
         }, {});
 
-    const formatSeparatedDirections = () => {
         const finalDirections = [];
+
         for (const key in separatedDirections) {
             const directions = separatedDirections[key];
             finalDirections.push([key, directions]);
@@ -67,7 +76,9 @@ export const Recipe = ({ history, match }) => {
         return finalDirections;
     }
 
-    const formattedDirections = separatedDirections && formatSeparatedDirections();
+    const formattedDirections = item?.separated && item?.directions && formatSeparatedDirections();
+
+    const figures = formattedDirections?.flat(2)?.filter(step => step.img);
 
     const handleCheckboxChange = (value) => {
         const included = selectedIngredients.includes(value);
@@ -80,6 +91,28 @@ export const Recipe = ({ history, match }) => {
             setSelectedIngredients([...selectedIngredients, value]);
         }
     }
+
+    useEffect(() => {
+        if (selectedFigure) {
+            const el = document.getElementById(`figure-${selectedFigure}`);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+            setSelectedFigure(null);
+            setSelectedFigureLabel(null);
+        }
+    }, [selectedFigure]);
+
+    useEffect(() => {
+        if (selectedFigureLabel) {
+            const el = document.getElementById(`figure-label-${selectedFigureLabel}`);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+            setSelectedFigure(null);
+            setSelectedFigureLabel(null);
+        }
+    }, [selectedFigureLabel]);
 
     const formatIngredientItem = (item) => {
         const amount = item.amount ? item.amount + ' ' : '';
@@ -167,8 +200,12 @@ export const Recipe = ({ history, match }) => {
                                 <div key={section} className="separated-recipe-container">
                                     <h5 className="separated-recipe-detail-label">{section}</h5>
                                     <ol className="separated-recipe-detail-list numbered">
-                                        {directions.map(({ step }) => (
-                                            <li key={step}>{step}</li>
+                                        {directions.map(({ step, figure }) => (
+                                            <li key={step}>
+                                                {step} {figure && (
+                                                    <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className="figure-label-anchor">(See figure {figure})</span>
+                                                )}
+                                            </li>
                                         ))}
                                     </ol>
                                 </div>
@@ -192,8 +229,19 @@ export const Recipe = ({ history, match }) => {
                                     <li key={i}>{note}</li>
                                 ))}
                             </ul>
+                            {figures && (
+                                <div className="figures-container">
+                                    {figures.map((figure, i) => (
+                                        <div key={i} className="figure-container">
+                                            <label id={`figure-${i + 1}`} onClick={() => setSelectedFigureLabel(i + 1)}>Figure {i + 1}</label>
+                                            <img className="recipe-image" src={figure.img} alt={figure.step} />
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
                         </>
                     )}
+
                 </div>
             ) : <Loader />
             }

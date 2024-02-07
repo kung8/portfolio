@@ -8,6 +8,7 @@
     overflow-x: hidden;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    overflow-y: scroll;
 
     @include down($tablet) {
         padding: 56px 56px;
@@ -108,6 +109,23 @@
             list-style: none;
             li {
                 margin-bottom: 8px;
+            }
+        }
+
+        .figure-label-anchor {
+            color: $primary-blue;
+        }
+
+        .figures-container {
+            margin-top: 40px;
+            .figure-container {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin-bottom: 6px;
+                    color: $primary-blue;
+                }
             }
         }
     }

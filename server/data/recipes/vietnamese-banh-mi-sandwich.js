@@ -59,13 +59,14 @@ module.exports = {
         { step: 'In a mixing bowl, add ground pork and mix by hand until meat starts falling a part.', type: PORK_LOAF },
         { step: 'Add the seasoning and continue mixing until meat becomes a lighter color long strands (about 10 minutes).', type: PORK_LOAF },
         { step: 'Split the pork in half. Knead and thump the mixture to help get rid of air bubbles.', type: PORK_LOAF },
-        { step: 'Double up the banana leaves then place the pork in the center and roll the banana leaves around the pork and tuck in the ends. Make sure there is no exposed pork through the leaves.', type: PORK_LOAF },
+        { step: 'Double up the banana leaves then place the pork in the center.', type: PORK_LOAF, img: porkLoafOpened },
+        { step: 'Roll the banana leaves around the pork and tuck in the ends. Make sure there is no exposed pork through the leaves.', type: PORK_LOAF, img: porkLoafWrapped },
         { step: 'Tie up the roll with 2 pieces of twine.', type: PORK_LOAF },
         { step: 'Repeat these steps for the second half.', type: PORK_LOAF },
         { step: 'Fill a large pot with water, enough to submerge the rolls over high heat, and sea salt.', type: PORK_LOAF },
         { step: 'Place the rolls in the pot and cover. Cooking for about 45 minutes.', type: PORK_LOAF },
         { step: 'Remove the rolls and let cool.', type: PORK_LOAF },
-        { step: 'Once you are ready to make the sandwiches, remove the banana leaves, slice and add them to the sandwiches.', type: PORK_LOAF },
+        { step: 'Once you are ready to make the sandwiches, remove the banana leaves, slice and add them to the sandwiches.', type: PORK_LOAF, img: porkLoafCut },
         { step: 'Preheat the oven to 350°F about 15 to 20 minutes before you want to assemble the sandwich.', type: MAIN },
         { step: 'Cut open the roll and spread a light layer of mayo on one side and pate on the other. Add the desired meats.', type: MAIN },
         { step: 'Warm the rolls in the oven for just a few minutes or until golden brown.', type: MAIN },
@@ -76,5 +77,6 @@ module.exports = {
         'If you cannot find banana leaves, you can use aluminum foil.',
         'If you cannot find daikon, you can use turnips.',
         'My favorite place to get Banh Mi Sandwiches is called D.C. Banh Mi in Falls Church, VA. Get their #1 Combination Sandwich, and you won\'t regret it!'
-    ]
+    ],
+    tags: ['vietnamese', 'sandwich', 'banh mi', 'pork', 'pickled vegetables', 'french bread'],
 };
