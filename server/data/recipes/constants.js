@@ -31,6 +31,7 @@ const SECTIONS = {
     PORK_LOAF: 'Pork Loaf', // Vietnamese Banh Mi Sandwich
     RICE: 'Rice',
     FILLING: 'Filling',
+    PICKLED_VEGETABLES: 'Pickled Vegetables',
 };
 
 const CATEGORY = {
