@@ -12,7 +12,7 @@ module.exports = {
     cookTime: '25 - 30 m',
     ingredients: [
         { name: 'butter', amount: '4 Tbsp', additionalDetails: 'divided', optional: false },
-        { name: 'boneless/skinless chicken', amount: '2 lbs', additionalDetails: '1/2" pieces', optional: false },
+        { name: 'boneless, skinless chicken', amount: '2 lbs', additionalDetails: '1/2" pieces', optional: false },
         { name: 'yellow onion', amount: '1', additionalDetails: 'diced', optional: false },
         { name: 'bell pepper', amount: '2', additionalDetails: 'diced', optional: false },
         { name: 'garlic cloves', amount: '3', additionalDetails: 'minced', optional: false },

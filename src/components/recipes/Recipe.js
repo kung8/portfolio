@@ -82,10 +82,10 @@ export const Recipe = ({ history, match }) => {
     }
 
     const formatIngredientItem = (item) => {
-        const amount = item.amount;
+        const amount = item.amount ? item.amount + ' ' : '';
         const name = item.name;
-        const additionalDetails = item.additionalDetails;
-        return amount + ' ' + name + (additionalDetails ? ', ' + additionalDetails : '');
+        const additionalDetails = item.additionalDetails ? ', ' + item.additionalDetails : '';
+        return amount + name + additionalDetails;
     }
 
     return (
