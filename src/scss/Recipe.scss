@@ -43,6 +43,7 @@
 
         .recipe-detail-label {
             margin-bottom: 4px;
+            font-size: 20px;
         }
 
         .recipe-detail-list {
@@ -61,15 +62,29 @@
             }
         }
 
+        .recipe-container,
         .separated-recipe-container {
+            margin-bottom: 48px;
             .separated-recipe-detail-label {
-                margin-bottom: 4px;
+                margin-bottom: 8px;
                 text-decoration: underline;
                 text-underline-offset: 4px;
             }
+            .sectioned-recipe-container {
+                margin-bottom: 24px;
+            }
+            .checkbox-ingredient-container {
+                margin-bottom: 6px;
+                .checkbox-ingredient {
+                    margin-right: 6px;
+                    min-height: 16px;
+                    min-width: 16px;
+                    transform: translateY(2px);
+                }
+            }
             .separated-recipe-detail-list {
                 margin-bottom: 24px;
-                list-style: none;
+                padding-left: 16px;
                 &.numbered {
                     list-style-type: decimal;
                     padding-left: 24px;

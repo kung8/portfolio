@@ -29,6 +29,8 @@ const SECTIONS = {
     SAUCE: 'Sauce',
     TOPPINGS: 'Toppings',
     PORK_LOAF: 'Pork Loaf', // Vietnamese Banh Mi Sandwich
+    RICE: 'Rice',
+    FILLING: 'Filling',
 };
 
 const CATEGORY = {

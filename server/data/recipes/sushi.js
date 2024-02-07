@@ -1,5 +1,5 @@
 const sushi = '../assets/Products/sushi.jpeg';
-const { DINNER, LUNCH, MAIN } = require('./constants');
+const { DINNER, FILLING, LUNCH, MAIN, RICE, SAUCE, TOPPINGS } = require('./constants');
 
 module.exports = {
     cardName: 'Sushi',
@@ -11,16 +11,24 @@ module.exports = {
     yields: '4 servings',
     prepTime: '10 m',
     cookTime: '15 m',
+    separated: true,
     ingredients: [
-        { name: 'seaweed', amount: '8 sheets', additionalDetails: '', optional: false },
-        { name: 'cooked short-grained rice', amount: '4 c', additionalDetails: 'room temperature', optional: false },
-        { name: 'vinegar', amount: '7 Tbsp', additionalDetails: '', optional: false },
-        { name: 'sugar', amount: '7 Tbsp', additionalDetails: '', optional: false },
-        { name: 'salt', amount: '1 Tbsp + 1 tsp', additionalDetails: '', optional: false },
-        { name: 'avocado', amount: '2', additionalDetails: 'sliced', optional: false },
-        { name: 'cucumber', amount: '1', additionalDetails: 'sliced', optional: false },
-        { name: 'imitation crab meat', amount: '8 oz', additionalDetails: 'sliced', optional: false },
-        { name: 'wasabi (optional)', amount: '', additionalDetails: '', optional: false },
+        { name: 'seaweed', amount: '8 sheets', additionalDetails: '', optional: false, section: MAIN },
+        { name: 'cooked short-grained rice', amount: '4 c', additionalDetails: 'cooled to room temperature', optional: false, section: RICE },
+        { name: 'vinegar', amount: '7 Tbsp', additionalDetails: '', optional: false, section: RICE },
+        { name: 'sugar', amount: '7 Tbsp', additionalDetails: '', optional: false, section: RICE },
+        { name: 'salt', amount: '1 Tbsp + 1 tsp', additionalDetails: '', optional: false, section: RICE },
+        { name: 'avocado', amount: '2', additionalDetails: 'sliced', optional: true, section: FILLING },
+        { name: 'cucumber', amount: '1', additionalDetails: 'sliced', optional: true, section: FILLING },
+        { name: 'crab', amount: '8 oz', additionalDetails: 'sliced', optional: true, section: FILLING },
+        { name: 'tempura shrimp', amount: '8 oz', additionalDetails: 'cooked', optional: true, section: FILLING },
+        { name: 'cream cheese', amount: '8 oz', additionalDetails: '', optional: true, section: FILLING },
+        { name: 'salmon', amount: '8 oz', additionalDetails: 'sliced', optional: true, section: FILLING },
+        { name: 'lemon', amount: '1', additionalDetails: 'thinly sliced', optional: true, section: FILLING },
+        { name: 'sesame seed', amount: '', additionalDetails: '', optional: true, section: TOPPINGS },
+        { name: 'wasabi', amount: '', additionalDetails: '', optional: true, section: SAUCE },
+        { name: 'ponzu sauce', amount: '1', additionalDetails: 'sliced', optional: true, section: SAUCE },
+        { name: 'soy sauce', amount: '', additionalDetails: '', optional: true, section: SAUCE },
     ],
     supplies: [
         { name: 'cutting board and knife' },
@@ -28,13 +36,13 @@ module.exports = {
         { name: 'plates' },
     ],
     directions: [
-        { step: 'Mix in sugar, salt, and vinegar until sugar dissolves.', type: MAIN },
-        { step: 'Mix this into the rice (make sure that the rice is close to room temperature to prevent the seaweed from shriveling up).', type: MAIN },
-        { step: 'Slice the avocado, cucumber, and imitation crab and set aside to be placed inside the sushi rolls.', type: MAIN },
+        { step: 'Mix in sugar, salt, and vinegar until sugar dissolves.', type: RICE },
+        { step: 'Mix this into the rice (make sure that the rice is close to room temperature to prevent the seaweed from shriveling up).', type: RICE },
+        { step: 'Prepare all the ingredients you want to use to fill the sushi rolls with.', type: MAIN },
         { step: 'Place the shiny side of the seaweed on the bottom (so it will be on the outside when it\'s rolled up).', type: MAIN },
         { step: 'The seaweed lines should be perpendicular to the sushi mat\'s lines.', type: MAIN },
         { step: 'Place a light layer of rice on the seaweed covering the entire seaweed. Note: the more rice you add the less other ingredients you can fit.', type: MAIN },
-        { step: 'Starting about 1/3 the way up, place a few strips of imitation crab, cucumber, and avocado, making sure to not pack it too much.', type: MAIN },
+        { step: 'Starting about 1/3 the way up, place filling items, making sure to not pack it too much.', type: MAIN },
         { step: 'Fold the sushi mat over the newly placed interior ingredients to secure the roll. Then pull back the mat and roll up some of it so that it will not get caught inside the roll.', type: MAIN },
         { step: 'Continue rolling up the sushi roll, and pulling back the mat as needed.', type: MAIN },
         { step: 'Place the finished sushi rolls on a plate and repeat these steps until all the sushi rolls are completed.', type: MAIN },
