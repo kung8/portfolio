@@ -6,6 +6,7 @@ const cafeRioSalad = require("./recipes/cafe-rio-salad");
 const cheeseBalls = require("./recipes/cheese-balls");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
+const chili = require("./recipes/chili");
 const chineseBokChoyChicken = require("./recipes/chinese-bok-choy-chicken");
 const chineseGreenBeanBeef = require("./recipes/chinese-green-bean-beef");
 const chineseGingerChicken = require("./recipes/chinese-ginger-chicken");
@@ -109,6 +110,7 @@ const recipes = [
     roast,
     chickenPotPie,
     chickenNoodleSoup,
+    chili,
     pigsInABlanket,
     macaroniSalad,
     frenchCrepe,
