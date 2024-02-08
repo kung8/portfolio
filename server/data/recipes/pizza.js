@@ -13,6 +13,11 @@ module.exports = {
     cookTime: 'm',
     ingredients: [
         { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
+        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
+        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
+        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
+        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
+        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
     ],
     supplies: [
         { name: '' },

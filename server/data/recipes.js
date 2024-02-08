@@ -2,6 +2,7 @@ const americanOmelette = require("./recipes/american-omelette");
 const chineseBao = require("./recipes/chinese-bao");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefStroganoff = require("./recipes/beef-stroganoff");
+const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cafeRioSalad = require("./recipes/cafe-rio-salad");
 const cheeseBalls = require("./recipes/cheese-balls");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
@@ -121,6 +122,7 @@ const recipes = [
     scrambledEggs,
     americanOmelette,
     eggCasserole,
+    buttermilkSyrup,
     hamburger,
     fancyLunchables,
     wrap,

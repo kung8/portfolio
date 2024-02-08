@@ -78,7 +78,8 @@ export const Recipe = ({ history, match }) => {
 
     const formattedDirections = item?.separated && item?.directions && formatSeparatedDirections();
 
-    const figures = formattedDirections?.flat(2)?.filter(step => step.img);
+    const figures = formattedDirections?.flat(2)?.filter(step => step.img) ?? [];
+    const nonSeparatedFigures = item?.directions?.filter(step => step.img) ?? [];
 
     const handleCheckboxChange = (value) => {
         const included = selectedIngredients.includes(value);
@@ -131,7 +132,7 @@ export const Recipe = ({ history, match }) => {
             </div>
             {item && isLoaded ? (
                 <div className="recipe-details">
-                    <img src={item.img} alt={item.name} className="recipe-image" />
+                    {item.img ? <img src={item.img} alt={item.name} className="recipe-image" /> : <div className="recipe-image">Image Coming Soon!</div>}
                     <p className="prep-time">Prep Time: {item.prepTime}</p>
                     <p className="cook-time">Cook Time: {item.cookTime}</p>
                     <p className="yields">Yields: {item.yields}</p>
@@ -213,9 +214,12 @@ export const Recipe = ({ history, match }) => {
                         </>
                     ) : (
                         <ol className="recipe-detail-list numbered">
-                            {(item.directions || []).map(({ step }) => {
+                            {(item.directions || []).map(({ step, img }) => {
+                                const figure = nonSeparatedFigures.findIndex(item => item.img === img) + 1;
                                 return (
-                                    <li key={step}>{step}</li>
+                                    <li key={step}>{step} {img && (
+                                        <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className="figure-label-anchor">(See figure {figure})</span>
+                                    )}</li>
                                 )
                             })}
                         </ol>
@@ -229,19 +233,27 @@ export const Recipe = ({ history, match }) => {
                                     <li key={i}>{note}</li>
                                 ))}
                             </ul>
-                            {figures && (
-                                <div className="figures-container">
-                                    {figures.map((figure, i) => (
-                                        <div key={i} className="figure-container">
-                                            <label id={`figure-${i + 1}`} onClick={() => setSelectedFigureLabel(i + 1)}>Figure {i + 1}</label>
-                                            <img className="recipe-image" src={figure.img} alt={figure.step} />
-                                        </div>
-                                    ))}
-                                </div>
-                            )}
                         </>
                     )}
-
+                    {item.separated && figures ? (
+                        <div className="figures-container">
+                            {figures.map((figure, i) => (
+                                <div key={i} className="figure-container">
+                                    <label id={`figure-${i + 1}`} onClick={() => setSelectedFigureLabel(i + 1)}>Figure {i + 1}</label>
+                                    <img className="recipe-image" src={figure.img} alt={figure.step} />
+                                </div>
+                            ))}
+                        </div>
+                    ) : nonSeparatedFigures ? (
+                        <div className="figures-container">
+                            {nonSeparatedFigures.map((figure, i) => (
+                                <div key={i} className="figure-container">
+                                    <label id={`figure-${i + 1}`} onClick={() => setSelectedFigureLabel(i + 1)}>Figure {i + 1}</label>
+                                    <img className="recipe-image" src={figure.img} alt={figure.step} />
+                                </div>
+                            ))}
+                        </div>
+                    ) : null}
                 </div>
             ) : <Loader />
             }

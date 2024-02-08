@@ -28,6 +28,12 @@
             @include down($mobile) {
                 width: 100%;
             }
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $primary-blue;
+            color: $black;
         }
 
         .prep-time {

@@ -1,12 +1,12 @@
-const chili = '../assets/Products/chili-placeholder.png';
-const { APPETIZER, SNACK, MAIN, TOPPINGS } = require("./constants");
+// const chili = '../assets/Products/chili-placeholder.png';
+const { LUNCH, DINNER, MAIN, TOPPINGS } = require("./constants");
 
 module.exports = {
     cardName: 'Chili',
     name: 'Chili',
-    img: chili,
+    // img: chili,
     available: true,
-    type: [SNACK, APPETIZER],
+    type: [LUNCH, DINNER],
     yields: '6 servings',
     prepTime: '20 m',
     cookTime: '45 m',
