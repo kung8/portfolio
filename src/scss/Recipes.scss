@@ -39,15 +39,15 @@
             cursor: pointer;
             z-index: 1;
             position: relative;
-            width: 25%;
-            padding: 8px 8px 0 8px;
+            width: calc(25% - 2px);
+            padding: 4px;
             // targeting the first of the four multiples
             &:nth-of-type(4n + 1) {
-                padding: 8px 8px 0 16px;
+                margin-left: 4px
             }
             // targeting the fourth of the four multiples
             &:nth-of-type(4n + 4) {
-                padding: 8px 12px 0 8px;
+                margin-right: 4px;
             }
             &:hover {
                 background: $hover;
@@ -58,50 +58,58 @@
             }
 
             @include down($tablet) {
-                width: 33.33%;
-                padding: 3px 3px 0 3px;
+                width: calc(33.33% - 2.66px);
                 // resetting the first of the four multiples
                 &:nth-of-type(4n + 1) {
-                    padding: 3px 3px 0 3px;
+                    margin-left: 0;
                 }
                 // resetting the fourth of the four multiples
                 &:nth-of-type(4n + 4) {
-                    padding: 3px 3px 0 3px;
+                    margin-right: 0;
                 }
                 // targeting the first of the three multiples
                 &:nth-of-type(3n + 1) {
-                    padding: 3px 3px 0 6px;
+                    margin-left: 4px;
                 }
-                // targeting the fourth of the three multiples
+                // targeting the third of the three multiples
                 &:nth-of-type(3n + 3) {
-                    padding: 3px 6px 0 3px;
+                    margin-right: 4px;
                 }
             }
             @include down($mobile-xl) {
-                width: 50%;
-                padding: 3px 3px 0 3px;
+                width: calc(50% - 4px);
                 // resetting the first of the three multiples
                 &:nth-of-type(3n + 1) {
-                    padding: 3px 3px 0 3px;
+                    margin-left: 0;
                 }
                 // resetting the third of the three multiples
                 &:nth-of-type(3n + 3) {
-                    padding: 3px 3px 0 3px;
+                    margin-right: 0;
                 }
                 // targeting the first of the two multiples
                 &:nth-of-type(2n + 1) {
-                    padding: 6px 3px 0 6px;
+                    margin-left: 4px;
                 }
                 // targeting the second of the two multiples
                 &:nth-of-type(2n + 2) {
-                    padding: 6px 6px 0 3px;
+                    margin-right: 4px;
                 }
             }
             @include down($extra-small) {
-                width: 100%;
-                padding-left: 8px !important;
-                padding-right: 8px !important;
-                margin-bottom: 8px;
+                width: calc(100% - 8px);
+                // targeting the first of the two multiples
+                &:nth-of-type(2n + 1) {
+                    margin-left: 0;
+                }
+                // targeting the second of the two multiples
+                &:nth-of-type(2n + 2) {
+                    margin-right: 0;
+                }
+                // targeting each item
+                &:nth-of-type(n + 1) {
+                    margin-left: 4px;
+                    margin-right: 4px;
+                }
             }
 
             .recipe-image {
