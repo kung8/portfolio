@@ -14,6 +14,11 @@
         align-items: center;
         padding-left: 80px;
         padding-right: 80px;
+
+        @include down($mobile-xl) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     @include down($tablet) {
@@ -38,9 +43,12 @@
         margin-bottom: 40px;
         display: flex;
         align-items: center;
+        @include down($mobile-xl) {
+            width: 100%;
+        }
 
         .search-bar {
-            width: 100px;
+            width: 200px;
             height: 40px;
             padding: 4px 16px;
             border: 1px solid $white;
@@ -52,8 +60,14 @@
             transition: all 0.3s ease;
             border-radius: 20px;
             &.contains-search, &:focus-within {
-                width: 250px;
+                width: 350px;
                 transition: width 0.3s ease;
+                @include down($mobile-xl) {
+                    width: 100%;
+                }
+            }
+            @include down($mobile-xl) {
+                width: 100%;
             }
             input {
                 height: 32px;
