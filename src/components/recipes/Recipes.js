@@ -3,7 +3,7 @@ import { useQueryClient } from 'react-query';
 import { Cursor } from '../Cursor';
 import { 
     useGetData, 
-    // useGetRecipeCategories
+    useGetRecipeCategories
 } from '../../hooks';
 import { RecipeItem } from './RecipeItem';
 import { Loader } from '../Loader';
@@ -14,13 +14,13 @@ export const Recipes = ({ history }) => {
     const queryKey = ['getData', 'recipes', undefined];
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
     const [search, setSearch] = useState('');
-    // const [selectedFilters, setSelectedFilters] = useState([]);
+    const [selectedFilters, setSelectedFilters] = useState([]);
 
     const { data: recipes = [] } = useGetData('recipes');
-    // const { data: recipeCategories = { CATEGORIES: {}, GENRES: {} } } = useGetRecipeCategories();
-    // const categories = Object.values(recipeCategories.CATEGORIES);
-    // const genres = Object.values(recipeCategories.GENRES);
-    // console.log(categories, genres);
+    const { data: recipeCategories = { CATEGORIES: {}, GENRES: {} } } = useGetRecipeCategories();
+    const categories = Object.values(recipeCategories.CATEGORIES);
+    const genres = Object.values(recipeCategories.GENRES);
+    console.log(categories, genres);
 
     const filteredRecipes = recipes.filter(item => {
         if (search === '') return item;
@@ -71,8 +71,8 @@ export const Recipes = ({ history }) => {
                 </div>
             </div>
 
-            {/*
-            <div className="filter-container">
+            
+            {/* <div className="filter-container">
                 <h4>Category:</h4>
                 <select id="category" name="category">
                     <option value="">All</option>
@@ -97,8 +97,8 @@ export const Recipes = ({ history }) => {
                         <span key={genre} className="filter-btn">{genre}</span>
                     ))}
                 </div>
-            </div>
-            */}
+            </div> */}
+           
 
             {filteredRecipes.length && isLoaded ? (
                 <div className="recipe-items-container">
@@ -107,7 +107,7 @@ export const Recipes = ({ history }) => {
                     )}
                 </div>
             ) : <Loader />}
-            <Cursor />
+            {/* <Cursor /> */}
         </div>
     )
 }

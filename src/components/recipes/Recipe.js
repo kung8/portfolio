@@ -57,7 +57,7 @@ export const Recipe = ({ history, match }) => {
             if (direction.type && !acc[direction.type]) acc[direction.type] = [];
             if (direction.type && acc[direction.type]) {
                 const newDirection = { ...direction };
-                if (direction.img) {
+                if (direction.video || direction.img) {
                     newDirection.figure = figureCount;
                     figureCount += 1;
                 }
@@ -78,8 +78,8 @@ export const Recipe = ({ history, match }) => {
 
     const formattedDirections = item?.separated && item?.directions && formatSeparatedDirections();
 
-    const figures = formattedDirections?.flat(2)?.filter(step => step.img) ?? [];
-    const nonSeparatedFigures = item?.directions?.filter(step => step.img) ?? [];
+    const figures = formattedDirections?.flat(2)?.filter(step => step.video || step.img) ?? [];
+    const nonSeparatedFigures = item?.directions?.filter(step => step.video || step.img) ?? [];
 
     const handleCheckboxChange = (value) => {
         const included = selectedIngredients.includes(value);
@@ -240,7 +240,13 @@ export const Recipe = ({ history, match }) => {
                             {figures.map((figure, i) => (
                                 <div key={i} className="figure-container">
                                     <label id={`figure-${i + 1}`} onClick={() => setSelectedFigureLabel(i + 1)}>Figure {i + 1}</label>
-                                    <img className="recipe-image" src={figure.img} alt={figure.step} />
+                                    {figure.video ? (
+                                        <video className="additional-recipe-video" autoPlay loop>
+                                            <source src={figure.video} type="video/mp4" />
+                                        </video>
+                                    ) : (
+                                        <img className="additional-recipe-image" src={figure.img} alt={figure.step} />
+                                    )}
                                 </div>
                             ))}
                         </div>
@@ -249,7 +255,13 @@ export const Recipe = ({ history, match }) => {
                             {nonSeparatedFigures.map((figure, i) => (
                                 <div key={i} className="figure-container">
                                     <label id={`figure-${i + 1}`} onClick={() => setSelectedFigureLabel(i + 1)}>Figure {i + 1}</label>
-                                    <img className="recipe-image" src={figure.img} alt={figure.step} />
+                                    {figure.video ? (
+                                        <video className="additional-recipe-video" autoPlay loop>
+                                            <source src={figure.video} type="video/mp4" />
+                                        </video>
+                                    ) : (
+                                        <img className="additional-recipe-image" src={figure.img} alt={figure.step} />
+                                    )}
                                 </div>
                             ))}
                         </div>

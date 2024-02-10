@@ -1,28 +1,69 @@
-const pizza = '../assets/Products/pizza.jpeg';
+const pizza = '../assets/Products/pizza-2.jpeg';
 const pizzaDough = '../assets/Products/pizza-dough.jpeg';
-const { CATEGORIES } = require("./constants");
+const frozenDough = '../assets/Products/frozen-pizza-dough.jpeg';
+const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
+const tossing = '../assets/Products/pizza-toss.MOV';
+
+const { CATEGORIES, SECTIONS } = require("./constants");
 
 module.exports = {
-    cardName: '',
-    name: '',
+    cardName: 'Homemade Pizza',
+    name: 'Homemade Pizza',
     img: pizza,
-    available: false,
+    available: true,
     type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    yields: ' servings',
-    prepTime: 'm',
-    cookTime: 'm',
+    yields: '6 - 8 servings',
+    prepTime: '45 m',
+    cookTime: '25 m',
+    separated: true,
     ingredients: [
-        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
-        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
-        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
-        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
-        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
-        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
+        { name: 'bread flour', amount: '4 1/2 c', additionalDetails: '', optional: false, section: SECTIONS.BREAD },
+        { name: 'salt', amount: '2 tsp', additionalDetails: '', optional: false, section: SECTIONS.BREAD },
+        { name: 'instant dry yeast', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.BREAD },
+        { name: 'honey', amount: '1 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.BREAD },
+        { name: 'water', amount: '2 c', additionalDetails: 'room-temperature', optional: false, section: SECTIONS.BREAD },
+        { name: 'olive oil', amount: '2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.BREAD },
+        { name: 'pizza sauce', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'shredded cheese', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'crisping pepperoni', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'cooked sausage', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'spinach', amount: '', additionalDetails: 'sliced or diced', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'red onion', amount: '', additionalDetails: 'sliced or diced', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'mushroom', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'olive', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'bell pepper', amount: '', additionalDetails: 'sliced or diced', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'ham', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'pineapple', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'ranch', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'bbq sauce', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'cooked chicken', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
+        { name: 'cooked bacon', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
     ],
     supplies: [
-        { name: '' },
+        { name: 'clean counter' },
+        { name: 'large bowl' },
+        { name: 'oven' },
+        { name: 'rolling pin' },
+        { name: 'plastic wrap or cooking towel' },
+        { name: 'baking sheet' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: 'On a clean counter, combine flour, salt, and yeast by hand. We are making focaccia bread.', type: SECTIONS.BREAD },
+        { step: 'Form a well in the center of the mixture and slowly add water and honey.', type: SECTIONS.BREAD },
+        { step: 'Continue to work the liquid into the entire mixture until the dough becomes only a little sticky.', type: SECTIONS.BREAD },
+        { step: 'Coat the inside of a large bowl with some oil.', type: SECTIONS.BREAD },
+        { step: 'Place the dough inside that oiled bowl and cover with plastic wrap or a cooking towel and refrigerate between 48 to 72 hours. This allows the dough to rise and adds flavor.', type: SECTIONS.BREAD, img: refrigeratedDough },
+        { step: 'When you are ready to make the pizza, preheat the oven too 450ºF.', type: SECTIONS.BREAD },
+        { step: 'Grease a baking sheet with 1 Tablespoon olive oil.', type: SECTIONS.BREAD },
+        { step: 'This is the fun part where you will work the dough. Again on a clean counter sprinkle some flour (and you may need to add some more later so keep that flour handy).', type: SECTIONS.BREAD },
+        { step: 'Depending on how much the dough rose you might be able to make 2 to 3 pizzas. Note that the dough will rise slightly more as it returns to room temperature. Cut the dough to that number of desired pizzas and re-ball each of the dough parts and set aside.', type: SECTIONS.BREAD, img: pizzaDough },
+        { step: 'Place one of dough balls on the floured counter. And begin kneading and pulling and stretching the dough. Continue until the dough has become less sticky. Add more flour conservatively. If you have added too much flour, you can add more water but try to avoid doing that.', type: SECTIONS.BREAD },
+        { step: 'Tossing the dough helps form the crust and gives the dough texture and flavor. Flatten the dough using a rolling pin until it\'s about 8 inches wide and you will place your closed fists beneath it (at about 10-and-2 steering wheel position). The tricky part is to avoid tearing the dough by making it too thin and accidentally ripping the dough with your fingers. So tuck those fingers in and use just your knuckles.', type: SECTIONS.BREAD },
+        { step: 'Pull your fists apart to pull the dough edges and try to get all around. Then with a quick flick of the wrists throw the dough directly up in the air and catch the dough with your closed fists.', type: SECTIONS.BREAD, video: tossing },
+        { step: 'Keep doing this until you are satisfied with the pizza size and thickness.', type: SECTIONS.BREAD },
+        { step: 'Place the shaped dough on the pan and add your favorite toppings.', type: SECTIONS.MAIN },
+        { step: 'Bake the pizza for 20 to 25 minutes or until a nice golden brown.', type: SECTIONS.MAIN },
+        { step: 'Enjoy these slices of heaven with friends and family.', type: SECTIONS.MAIN },
+        { step: 'If you have any leftover dough that you aren\'t ready to use, you can freeze it.', type: SECTIONS.MAIN, img: frozenDough}
     ]
 };

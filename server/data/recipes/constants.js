@@ -32,6 +32,7 @@ const SECTIONS = {
     RICE: 'Rice',
     FILLING: 'Filling',
     PICKLED_VEGETABLES: 'Pickled Vegetables',
+    BREAD: 'Bread',
 };
 
 const CATEGORIES = {

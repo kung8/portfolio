@@ -134,5 +134,13 @@
                 }
             }
         }
+
+        .additional-recipe-image, .additional-recipe-video {
+            width: 350px;
+            margin-bottom: 24px;
+            @include down($mobile) {
+                width: 100%;
+            }
+        }
     }
 }
