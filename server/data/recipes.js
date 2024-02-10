@@ -40,8 +40,8 @@ const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
 const pizza = require("./recipes/pizza");
+const potRoast = require("./recipes/pot-roast");
 const riceCrispyBall = require("./recipes/rice-crispy-ball");
-const roast = require("./recipes/roast");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const scrambledEggs = require("./recipes/scrambled-eggs");
 const smoothie = require("./recipes/smoothie");
@@ -108,7 +108,7 @@ const recipes = [
     phillyCheesesteak,
     hawaiianHaystacks,
     bbqPulledPorkAndFixins,
-    roast,
+    potRoast,
     chickenPotPie,
     chickenNoodleSoup,
     chili,
