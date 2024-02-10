@@ -1,12 +1,12 @@
 const cafeRioSalad = '../assets/Products/cafe-rio-salad.jpeg';
-const { DINNER, LUNCH } = require("./constants");
+const { CATEGORIES } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: cafeRioSalad,
     available: false,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

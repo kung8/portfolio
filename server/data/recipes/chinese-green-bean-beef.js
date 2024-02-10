@@ -1,12 +1,12 @@
 const greenBeanWithBeef = '../assets/Products/green-bean-with-beef.jpeg';
-const { DINNER, LUNCH, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Green Bean Beef',
     name: 'Green Bean Beef',
     img: greenBeanWithBeef,
     available: true,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: '4 servings',
     prepTime: '15 m',
     cookTime: '20 m',
@@ -23,9 +23,9 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'Heat frying pan over medium-high heat, and add beef. Cook until browned.', type: MAIN },
-        { step: 'Add the green beans into pan and continue to cook until beans are softened. Stir occasionally.', type: MAIN },
-        { step: 'Add salt and pepper as desired.', type: MAIN },
-        { step: 'Serve over rice and enjoy this Chinese stir-fry.', type: MAIN },
+        { step: 'Heat frying pan over medium-high heat, and add beef. Cook until browned.', type: SECTIONS.MAIN },
+        { step: 'Add the green beans into pan and continue to cook until beans are softened. Stir occasionally.', type: SECTIONS.MAIN },
+        { step: 'Add salt and pepper as desired.', type: SECTIONS.MAIN },
+        { step: 'Serve over rice and enjoy this Chinese stir-fry.', type: SECTIONS.MAIN },
     ]
 }

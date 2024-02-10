@@ -1,12 +1,12 @@
 const garlicBread = '../assets/Products/garlic-bread.jpeg';
-const { APPETIZER, SIDE_DISH } = require("./constants");
+const { CATEGORIES } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: garlicBread,
     available: false,
-    type: [APPETIZER, SIDE_DISH],
+    type: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

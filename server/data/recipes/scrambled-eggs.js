@@ -1,12 +1,12 @@
 const scrambledEggs = '../assets/Products/scrambled-eggs.jpeg';
-const { BREAKFAST, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Scrambled Eggs',
     name: 'Scrambled Eggs',
     img: scrambledEggs,
     available: true,
-    type: [BREAKFAST],
+    type: [CATEGORIES.BREAKFAST],
     yields: '1 serving',
     prepTime: '5 m',
     cookTime: '12 - 15 m',
@@ -32,14 +32,14 @@ module.exports = {
         { name: 'medium bowl' },
     ],
     directions: [
-        { step: 'Mix together the eggs, milk, sour cream, salt, pepper, and basil. Allow the seasonings some time to enrich the flavor.', type: MAIN },
-        { step: 'While the seasonings are doing their thing, prep all the cutting of these ingredients (and any additional ingredients that you may want to add to your eggs). Be sure any meats are cooked or else you will need to add some additional time for those ingredients to cook.', type: MAIN },
-        { step: 'Once the ingredients are prepped, heat up a pan over medium-high heat. Add just a little butter when the pan is hot.', type: MAIN },
-        { step: 'Once butter has melted, add the vegetables and ham being sure they are spread around the pan to ensure proper browning.', type: MAIN },
-        { step: 'Cook for about 3 - 4 minutes being sure to stir occasionally to prevent burnt pieces.', type: MAIN },
-        { step: 'Now pour in the egg batter over the vegetables.', type: MAIN },
-        { step: 'While still keeping it over the heat, tilt and angle the pan so the runny egg on top can spread to more parts of the pan and you can even take the spatula and lift the edges of the cooking egg and let gravity do its job to have the runny egg batter fill underneath it. Allow to cook for just a few minutes.', type: MAIN },
-        { step: 'Start scrambling the eggs and continue to cook until the egg pieces are brownish-yellow (and you can cook them to your preferred egg state).', type: MAIN },
-        { step: 'Serve and enjoy this nice warm start to a beautiful day!', type: MAIN },
+        { step: 'Mix together the eggs, milk, sour cream, salt, pepper, and basil. Allow the seasonings some time to enrich the flavor.', type: SECTIONS.MAIN },
+        { step: 'While the seasonings are doing their thing, prep all the cutting of these ingredients (and any additional ingredients that you may want to add to your eggs). Be sure any meats are cooked or else you will need to add some additional time for those ingredients to cook.', type: SECTIONS.MAIN },
+        { step: 'Once the ingredients are prepped, heat up a pan over medium-high heat. Add just a little butter when the pan is hot.', type: SECTIONS.MAIN },
+        { step: 'Once butter has melted, add the vegetables and ham being sure they are spread around the pan to ensure proper browning.', type: SECTIONS.MAIN },
+        { step: 'Cook for about 3 - 4 minutes being sure to stir occasionally to prevent burnt pieces.', type: SECTIONS.MAIN },
+        { step: 'Now pour in the egg batter over the vegetables.', type: SECTIONS.MAIN },
+        { step: 'While still keeping it over the heat, tilt and angle the pan so the runny egg on top can spread to more parts of the pan and you can even take the spatula and lift the edges of the cooking egg and let gravity do its job to have the runny egg batter fill underneath it. Allow to cook for just a few minutes.', type: SECTIONS.MAIN },
+        { step: 'Start scrambling the eggs and continue to cook until the egg pieces are brownish-yellow (and you can cook them to your preferred egg state).', type: SECTIONS.MAIN },
+        { step: 'Serve and enjoy this nice warm start to a beautiful day!', type: SECTIONS.MAIN },
     ]
 }

@@ -1,12 +1,12 @@
 const pigsInABlanket = '../assets/Products/pigs-in-a-blanket.jpeg';
-const { APPETIZER, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Pigs In A Blanket',
     name: 'Pigs In A Blanket',
     img: pigsInABlanket,
     available: true,
-    type: [APPETIZER],
+    type: [CATEGORIES.APPETIZER],
     yields: '8 servings',
     prepTime: '10 m',
     cookTime: '15 m',
@@ -24,11 +24,11 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        { step: 'Preheat oven to 375ºF and line baking sheet with aluminum foil.', type: MAIN },
-        { step: 'Tubs of croissant dough usually make about 8 croissants. Cut each croissant dough triangle into thirds.', type: MAIN },
-        { step: 'Place hot dog on one end of the croissant piece and roll until it is snugly wrapped inside its blanket.', type: MAIN },
-        { step: 'Separate the egg white and the yolk. Lightly brush some of the yolk over the blanket to create a seal.', type: MAIN },
-        { step: 'Bake for about 12 - 15 min or until golden brown.', type: MAIN },
-        { step: 'Serve with your favorite condiment, and enjoy this easy tailgate hors d\'oeuvre!', type: MAIN },
+        { step: 'Preheat oven to 375ºF and line baking sheet with aluminum foil.', type: SECTIONS.MAIN },
+        { step: 'Tubs of croissant dough usually make about 8 croissants. Cut each croissant dough triangle into thirds.', type: SECTIONS.MAIN },
+        { step: 'Place hot dog on one end of the croissant piece and roll until it is snugly wrapped inside its blanket.', type: SECTIONS.MAIN },
+        { step: 'Separate the egg white and the yolk. Lightly brush some of the yolk over the blanket to create a seal.', type: SECTIONS.MAIN },
+        { step: 'Bake for about 12 - 15 min or until golden brown.', type: SECTIONS.MAIN },
+        { step: 'Serve with your favorite condiment, and enjoy this easy tailgate hors d\'oeuvre!', type: SECTIONS.MAIN },
     ],
 };

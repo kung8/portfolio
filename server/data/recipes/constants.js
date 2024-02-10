@@ -1,4 +1,4 @@
-const GENRE = {
+const GENRES = {
     AMERICAN: 'American',
     ASIAN: 'Asian',
     EUROPEAN: 'European',
@@ -34,7 +34,7 @@ const SECTIONS = {
     PICKLED_VEGETABLES: 'Pickled Vegetables',
 };
 
-const CATEGORY = {
+const CATEGORIES = {
     BREAKFAST: 'Breakfast',
     LUNCH: 'Lunch',
     DINNER: 'Dinner',
@@ -48,7 +48,7 @@ const CATEGORY = {
 };
 
 module.exports = {
-    ...GENRE,
-    ...SECTIONS,
-    ...CATEGORY,
+    GENRES,
+    SECTIONS,
+    CATEGORIES,
 }

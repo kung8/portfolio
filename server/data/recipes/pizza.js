@@ -1,13 +1,13 @@
 const pizza = '../assets/Products/pizza.jpeg';
 const pizzaDough = '../assets/Products/pizza-dough.jpeg';
-const { LUNCH, DINNER } = require("./constants");
+const { CATEGORIES } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: pizza,
     available: false,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

@@ -1,12 +1,12 @@
 const butterChicken = '../assets/Products/butter-chicken.jpeg';
-const { DINNER, LUNCH, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Butter Chicken',
     name: 'Indian Butter Chicken',
     img: butterChicken,
     available: true,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: '4 servings',
     prepTime: '12 - 15 m',
     cookTime: '25 - 30 m',
@@ -36,18 +36,18 @@ module.exports = {
         { name: 'measuring spoons' },
     ],
     directions: [
-        { step: 'Melt 1 Tbsp of butter in a large cooking pan on medium-high heat.', type: MAIN },
-        { step: 'Cook the chicken in batches. Brown the pieces of chicken until each side is brown. The chicken doesn\'t need to be cooked all the way through. Store in a large mixing bowl to use later.', type: MAIN },
-        { step: 'While the chicken is cooking, in a medium-size bowl mix together the garlic, ginger, garam masala, chili powder, cumin, and cayenne. Set aside the seasoning for the vegetables.', type: MAIN },
-        { step: 'If the rice hasn\'t been cooked, you can start that after measuring the seasoning while the chicken is cooking.', type: MAIN },
-        { step: 'Melt 1 Tbsp of butter in the pan over medium heat.', type: MAIN },
-        { step: 'Cook the onion and green pepper in a pan until the vegetables begin to soften (approximately 3 to 5 min).', type: MAIN },
-        { step: 'Add the seasoning, mix, and cook for about 1 minute.', type: MAIN },
-        { step: 'Add the tomato sauce and bring to a simmer (approximately 5 minutes).', type: MAIN },
-        { step: 'Add the coconut milk and bring to a simmer.', type: MAIN },
-        { step: 'Add the browned chicken.', type: MAIN },
-        { step: 'Let simmer for 10-15 minutes on low heat.', type: MAIN },
-        { step: 'Add the remaining 2 Tbsp of butter. Add salt and pepper to taste.', type: MAIN },
-        { step: 'Serve with rice (and naan is optional and delicious).', type: MAIN },
+        { step: 'Melt 1 Tbsp of butter in a large cooking pan on medium-high heat.', type: SECTIONS.MAIN },
+        { step: 'Cook the chicken in batches. Brown the pieces of chicken until each side is brown. The chicken doesn\'t need to be cooked all the way through. Store in a large mixing bowl to use later.', type: SECTIONS.MAIN },
+        { step: 'While the chicken is cooking, in a medium-size bowl mix together the garlic, ginger, garam masala, chili powder, cumin, and cayenne. Set aside the seasoning for the vegetables.', type: SECTIONS.MAIN },
+        { step: 'If the rice hasn\'t been cooked, you can start that after measuring the seasoning while the chicken is cooking.', type: SECTIONS.MAIN },
+        { step: 'Melt 1 Tbsp of butter in the pan over medium heat.', type: SECTIONS.MAIN },
+        { step: 'Cook the onion and green pepper in a pan until the vegetables begin to soften (approximately 3 to 5 min).', type: SECTIONS.MAIN },
+        { step: 'Add the seasoning, mix, and cook for about 1 minute.', type: SECTIONS.MAIN },
+        { step: 'Add the tomato sauce and bring to a simmer (approximately 5 minutes).', type: SECTIONS.MAIN },
+        { step: 'Add the coconut milk and bring to a simmer.', type: SECTIONS.MAIN },
+        { step: 'Add the browned chicken.', type: SECTIONS.MAIN },
+        { step: 'Let simmer for 10-15 minutes on low heat.', type: SECTIONS.MAIN },
+        { step: 'Add the remaining 2 Tbsp of butter. Add salt and pepper to taste.', type: SECTIONS.MAIN },
+        { step: 'Serve with rice (and naan is optional and delicious).', type: SECTIONS.MAIN },
     ]
 };

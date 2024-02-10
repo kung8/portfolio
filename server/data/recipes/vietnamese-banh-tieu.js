@@ -1,12 +1,12 @@
 const banhTieu = '../assets/Products/banh-tieu.jpeg';
-const { MAIN, APPETIZER, SNACK } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: '',
     name: '',
     img: banhTieu,
     available: false,
-    type: [APPETIZER, SNACK],
+    type: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

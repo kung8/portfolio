@@ -66,7 +66,7 @@ const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 // TODO: Add the separate direction steps for each recipe
 // TODO: Add categories to the recipes
 // TODO: Add figures to the recipes to show additional pictures of the recipe (link them in the instructions?)
-// TODO: Add a way to search the recipes by name, category, type, origin, etc.
+// TODO: Add a way to search the recipes by name, CATEGORIES, type, origin, etc.
 // TODO: Add a way to add ingredients to a shopping list and save in local storage
 // TODO: Add a way to add recipes to a favorites list and save in local storage
 // TODO: Add credits to the recipes (if applicable) and websites where to find them?
@@ -145,7 +145,7 @@ module.exports = recipes;
 //     name: 'Pizza',
 //     img: pizza,
 //     available: true,
-//     type: [LUNCH, DINNER],
+//     type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
 //     yields: '1 serving',
 //     prepTime: '5 m',
 //     cookTime: '10 m',
@@ -184,7 +184,7 @@ module.exports = recipes;
 //     name: 'Pancakes (Kodiak Cake\'s Mix)',
 //     img: pancakes,
 //     available: true,
-//     type: [BREAKFAST],
+//     type: [CATEGORIES.BREAKFAST],
 //     yields: '2 servings',
 //     prepTime: '3 m',
 //     cookTime: '8 - 12 m',
@@ -350,7 +350,7 @@ module.exports = recipes;
 //     name: 'Ginger Chicken',
 //     img: gingerChicken,
 //     available: true,
-//     type: [LUNCH, DINNER],
+//     type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
 //     yields: '8 servings',
 //     prepTime: '40 m',
 //     cookTime: '20 m',
@@ -394,7 +394,7 @@ module.exports = recipes;
 //     name: 'Chicken Alfredo',
 //     img: alfredo,
 //     available: false,
-//     type: [LUNCH, DINNER],
+//     type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
 //     yields: '4 servings',
 //     prepTime: '8 - 10 m',
 //     cookTime: '30 - 40 m',
@@ -442,7 +442,7 @@ module.exports = recipes;
 //     name: 'Beef Spaghetti',
 //     img: spaghetti,
 //     available: true,
-//     type: [LUNCH, DINNER],
+//     type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
 //     yields: '6 servings',
 //     prepTime: '5 m',
 //     cookTime: '10 - 15 m',
@@ -477,7 +477,7 @@ module.exports = recipes;
 //     name: 'Chicken Spaghetti',
 //     img: spaghetti,
 //     available: true,
-//     type: [LUNCH, DINNER],
+//     type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
 //     yields: '3 servings',
 //     prepTime: '5 - 7 m',
 //     cookTime: '15 - 20 m',

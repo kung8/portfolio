@@ -1,12 +1,12 @@
 const macaroni = '../assets/Products/macaroni-salad.jpeg';
-const { APPETIZER, MAIN, SIDE_DISH } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Macaroni Salad',
     name: 'Macaroni Salad',
     img: macaroni,
     available: true,
-    type: [APPETIZER, SIDE_DISH],
+    type: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     yields: '10 servings',
     prepTime: '20 m',
     cookTime: '10 m',
@@ -30,12 +30,12 @@ module.exports = {
         { name: 'strainer' },
     ],
     directions: [
-        { step: 'Over a high heat boil water and salt in a large pot.', type: MAIN },
-        { step: 'Once the water boils, add the pasta and cook for about 8 - 10 minutes or until tender.', type: MAIN },
-        { step: 'Rinse the pasta under cold water and drain in colander.', type: MAIN },
-        { step: 'In the mixing bowl, combine the mayo, vinegar, sugar, mustard, salt, and pepper until well mixed.', type: MAIN },
-        { step: 'Then combine the onions, celery, green pepper, and pasta.', type: MAIN },
-        { step: 'Best to refrigerate at least 4 hours (or even overnight).', type: MAIN },
-        { step: 'Enjoy this sweet, creamy, fresh appetizer while you relax with some relaxing Hawaiian music.', type: MAIN },
+        { step: 'Over a high heat boil water and salt in a large pot.', type: SECTIONS.MAIN },
+        { step: 'Once the water boils, add the pasta and cook for about 8 - 10 minutes or until tender.', type: SECTIONS.MAIN },
+        { step: 'Rinse the pasta under cold water and drain in colander.', type: SECTIONS.MAIN },
+        { step: 'In the mixing bowl, combine the mayo, vinegar, sugar, mustard, salt, and pepper until well mixed.', type: SECTIONS.MAIN },
+        { step: 'Then combine the onions, celery, green pepper, and pasta.', type: SECTIONS.MAIN },
+        { step: 'Best to refrigerate at least 4 hours (or even overnight).', type: SECTIONS.MAIN },
+        { step: 'Enjoy this sweet, creamy, fresh appetizer while you relax with some relaxing Hawaiian music.', type: SECTIONS.MAIN },
     ]
 };

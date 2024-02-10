@@ -1,12 +1,12 @@
 const lunchables = '../assets/Products/fancy-lunchables.jpeg';
-const { LUNCH } = require("./constants");
+const { CATEGORIES } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: lunchables,
     available: false,
-    type: [LUNCH],
+    type: [CATEGORIES.LUNCH],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

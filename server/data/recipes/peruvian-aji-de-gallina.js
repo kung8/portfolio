@@ -1,5 +1,5 @@
 const aji = '../assets/Products/aji-de-gallina.jpeg';
-const { DINNER, LUNCH, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Aji de Gallina',
@@ -7,7 +7,7 @@ module.exports = {
     recipeCredit: 'Gaby Ward',
     img: aji,
     available: true,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: '3 - 4 servings',
     prepTime: '5 m',
     cookTime: '25 - 40 m',
@@ -38,14 +38,14 @@ module.exports = {
         { name: 'spoon' },
     ],
     directions: [
-        { step: 'Cut the onion and measure out the seasonings. You can keep them in the same bowl.', type: MAIN },
-        { step: 'Boil the chicken breasts in a pot of water.', type: MAIN },
-        { step: 'Once the chicken is cooked, shred the chicken on a cutting board. Place the shredded chicken in a large mixing bowl. Keep some of the chicken broth in the pot.', type: MAIN },
-        { step: 'Blend together the bread, milk, and the yellow peppers in a blender.', type: MAIN },
-        { step: 'In a hot pan with oil on medium high heat, brown the garlic.', type: MAIN },
-        { step: 'Add the onion, oregano, salt, pepper, and nutmeg to the pan and cook until the onions are browned.', type: MAIN },
-        { step: 'Add the blended mix and chicken to the pan.', type: MAIN },
-        { step: 'Continue to mix this mixture and let cook a few more minutes until well blended. At this point if you want to thin the sauce you can add a little chicken broth or milk, depending on your preference.', type: MAIN },
-        { step: 'Serve with rice and enjoy the taste of my favorite Peruvian dish!', type: MAIN },
+        { step: 'Cut the onion and measure out the seasonings. You can keep them in the same bowl.', type: SECTIONS.MAIN },
+        { step: 'Boil the chicken breasts in a pot of water.', type: SECTIONS.MAIN },
+        { step: 'Once the chicken is cooked, shred the chicken on a cutting board. Place the shredded chicken in a large mixing bowl. Keep some of the chicken broth in the pot.', type: SECTIONS.MAIN },
+        { step: 'Blend together the bread, milk, and the yellow peppers in a blender.', type: SECTIONS.MAIN },
+        { step: 'In a hot pan with oil on medium high heat, brown the garlic.', type: SECTIONS.MAIN },
+        { step: 'Add the onion, oregano, salt, pepper, and nutmeg to the pan and cook until the onions are browned.', type: SECTIONS.MAIN },
+        { step: 'Add the blended mix and chicken to the pan.', type: SECTIONS.MAIN },
+        { step: 'Continue to mix this mixture and let cook a few more minutes until well blended. At this point if you want to thin the sauce you can add a little chicken broth or milk, depending on your preference.', type: SECTIONS.MAIN },
+        { step: 'Serve with rice and enjoy the taste of my favorite Peruvian dish!', type: SECTIONS.MAIN },
     ]
 };

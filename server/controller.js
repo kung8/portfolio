@@ -7,6 +7,7 @@ const experiences = require('./data/experiences');
 const products = require('./data/products');
 const projects = require('./data/projects');
 const recipes = require('./data/recipes');
+const recipeCategories = require('./data/recipes/constants');
 
 const data = {
     components,
@@ -35,6 +36,12 @@ module.exports = {
             return res.send(item);
         }
         return res.send(data[type] ?? []);
+    },
+    getRecipeCategories: async (_req, res) => {
+        return res.send({
+            CATEGORIES: recipeCategories.CATEGORIES,
+            GENRES: recipeCategories.GENRES
+        });
     },
     message: async (req, res) => {
         const { name, message, email, subject } = req.body;

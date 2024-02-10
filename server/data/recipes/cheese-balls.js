@@ -1,12 +1,12 @@
 const cheeseBalls = '../assets/Products/cheese-balls.jpeg';
-const { APPETIZER, SNACK } = require("./constants");
+const { CATEGORIES } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: cheeseBalls,
     available: false,
-    type: [SNACK, APPETIZER],
+    type: [CATEGORIES.SNACK, CATEGORIES.APPETIZER],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

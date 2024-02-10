@@ -1,12 +1,12 @@
 const sourChicken = '../assets/Products/sour-chicken.jpeg';
-const { DINNER, LUNCH, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Sour Chicken Soup',
     name: 'Chinese Sour Chicken Soup',
     img: sourChicken,
     available: true,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: '10 servings',
     prepTime: '10 m',
     cookTime: '1 h',
@@ -23,11 +23,11 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'Cut up chicken using cleaver knife into about 1" thick pieces.', type: MAIN },
-        { step: 'Place chicken into pressure cooker pot and fill with water.', type: MAIN },
-        { step: 'Set pressure cooker on "soup" mode (which may differ between pressure cooker brand but it\'s so the chicken isn\'t too soft).', type: MAIN },
-        { step: 'Ladle out about 1.5 cup of the soup for the sour mix. Pour in tamarind powder and lime juice and mix together.', type: MAIN },
-        { step: 'When ready to eat, add sour mixture to the soup (as desired).', type: MAIN },
-        { step: 'Serve soup over rice and enjoy this nostalgic piece of home for me.', type: MAIN },
+        { step: 'Cut up chicken using cleaver knife into about 1" thick pieces.', type: SECTIONS.MAIN },
+        { step: 'Place chicken into pressure cooker pot and fill with water.', type: SECTIONS.MAIN },
+        { step: 'Set pressure cooker on "soup" mode (which may differ between pressure cooker brand but it\'s so the chicken isn\'t too soft).', type: SECTIONS.MAIN },
+        { step: 'Ladle out about 1.5 cup of the soup for the sour mix. Pour in tamarind powder and lime juice and mix together.', type: SECTIONS.MAIN },
+        { step: 'When ready to eat, add sour mixture to the soup (as desired).', type: SECTIONS.MAIN },
+        { step: 'Serve soup over rice and enjoy this nostalgic piece of home for me.', type: SECTIONS.MAIN },
     ]
 }

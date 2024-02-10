@@ -1,12 +1,12 @@
 const wraps = '../assets/Products/wraps.jpeg';
-const { DINNER, LUNCH, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Wraps',
     name: 'Wraps',
     img: wraps,
     available: true,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: '1 serving',
     prepTime: '1 m',
     cookTime: '2 m',
@@ -22,7 +22,7 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        { step: 'Place tortilla on a plate and lay on toppings in the center of tortilla as desired.', type: MAIN },
-        { step: 'Roll the edge towards the center of the tortilla and continue to completely roll wrap.', type: MAIN },
+        { step: 'Place tortilla on a plate and lay on toppings in the center of tortilla as desired.', type: SECTIONS.MAIN },
+        { step: 'Roll the edge towards the center of the tortilla and continue to completely roll wrap.', type: SECTIONS.MAIN },
     ]
 }

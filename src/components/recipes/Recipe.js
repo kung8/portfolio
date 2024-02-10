@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
 import { useGetData } from '../../hooks';
-import { Cursor } from '../Cursor';
+// import { Cursor } from '../Cursor';
 import { Loader } from '../Loader';
 
 export const Recipe = ({ history, match }) => {
@@ -257,7 +257,7 @@ export const Recipe = ({ history, match }) => {
                 </div>
             ) : <Loader />
             }
-            <Cursor />
+            {/* <Cursor /> */}
         </div >
     )
 }

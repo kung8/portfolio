@@ -1,12 +1,12 @@
 const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
-const { DINNER, LUNCH, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Philly Cheesesteak',
     name: 'Philly Cheesesteak',
     img: phillyCheesesteak,
     available: true,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: '8 servings',
     prepTime: '10 m',
     cookTime: '20 m',
@@ -28,10 +28,10 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        { step: 'Heat pan over medium-high heat and place slices of beef in pan. Cook until close to brown. Set aside.', type: MAIN },
-        { step: 'Add oil to pan over medium-high heat.', type: MAIN },
-        { step: 'Add onions and bell pepper slices into pan and caramelize.', type: MAIN },
-        { step: 'Open up hoagie bread and layer with meat, cheese and vegetables to your hearts content.', type: MAIN },
-        { step: 'Enjoy the taste of freedom!', type: MAIN },
+        { step: 'Heat pan over medium-high heat and place slices of beef in pan. Cook until close to brown. Set aside.', type: SECTIONS.MAIN },
+        { step: 'Add oil to pan over medium-high heat.', type: SECTIONS.MAIN },
+        { step: 'Add onions and bell pepper slices into pan and caramelize.', type: SECTIONS.MAIN },
+        { step: 'Open up hoagie bread and layer with meat, cheese and vegetables to your hearts content.', type: SECTIONS.MAIN },
+        { step: 'Enjoy the taste of freedom!', type: SECTIONS.MAIN },
     ],
 };

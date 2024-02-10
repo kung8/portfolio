@@ -1,12 +1,12 @@
 const frenchToast = '../assets/Products/french-toast.jpeg';
-const { BREAKFAST, MAIN } = require("./constants");
+const { CATEGORIES, SECTIONS } = require("./constants");
 
 module.exports = {
     cardName: 'French Toast',
     name: 'French Toast',
     img: frenchToast,
     available: true,
-    type: [BREAKFAST],
+    type: [CATEGORIES.BREAKFAST],
     yields: '2 servings',
     prepTime: '5 m',
     cookTime: '8 - 10 m',
@@ -26,10 +26,10 @@ module.exports = {
         { name: 'measuring cup' },
     ],
     directions: [
-        { step: 'Mix eggs, vanilla, cinnamon, and milk together.', type: MAIN },
-        { step: 'Dredge bread in on both sides in batter one at a time right before frying.', type: MAIN },
-        { step: 'Heat a frying pan over medium heat and add some butter to pan.', type: MAIN },
-        { step: 'Brown each side of bread (about 30 seconds on each side).', type: MAIN },
-        { step: 'Serve and add fruits, syrup, and all your favorite toppings.', type: MAIN },
+        { step: 'Mix eggs, vanilla, cinnamon, and milk together.', type: SECTIONS.MAIN },
+        { step: 'Dredge bread in on both sides in batter one at a time right before frying.', type: SECTIONS.MAIN },
+        { step: 'Heat a frying pan over medium heat and add some butter to pan.', type: SECTIONS.MAIN },
+        { step: 'Brown each side of bread (about 30 seconds on each side).', type: SECTIONS.MAIN },
+        { step: 'Serve and add fruits, syrup, and all your favorite toppings.', type: SECTIONS.MAIN },
     ]
 };

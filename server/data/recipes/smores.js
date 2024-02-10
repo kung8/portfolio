@@ -1,12 +1,12 @@
 const smores = '../assets/Products/smores.jpeg';
-const { DESSERT, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'S\'mores',
     name: 'S\'mores',
     img: smores,
     available: true,
-    type: [DESSERT],
+    type: [CATEGORIES.DESSERT],
     yields: '2 servings',
     prepTime: '1 m',
     cookTime: '5 m',
@@ -21,11 +21,11 @@ module.exports = {
         { name: 'oven' },
     ],
     directions: [
-        { step: 'Lay aluminum foil on baking sheet and turn on oven to broil.', type: MAIN },
-        { step: 'Place graham cracker halves on baking sheet and place marshmallows on each half.', type: MAIN },
-        { step: 'Bake inside the oven for about 3 minutes (or browned as desired).', type: MAIN },
-        { step: 'Take tray out and add graham crackers with 3 pieces of chocolate.', type: MAIN },
-        { step: 'Flip marshallow and bake for an additional 2 minutes.', type: MAIN },
-        { step: 'Enjoy the sweet tastes of a campfire indoors.', type: MAIN },
+        { step: 'Lay aluminum foil on baking sheet and turn on oven to broil.', type: SECTIONS.MAIN },
+        { step: 'Place graham cracker halves on baking sheet and place marshmallows on each half.', type: SECTIONS.MAIN },
+        { step: 'Bake inside the oven for about 3 minutes (or browned as desired).', type: SECTIONS.MAIN },
+        { step: 'Take tray out and add graham crackers with 3 pieces of chocolate.', type: SECTIONS.MAIN },
+        { step: 'Flip marshallow and bake for an additional 2 minutes.', type: SECTIONS.MAIN },
+        { step: 'Enjoy the sweet tastes of a campfire indoors.', type: SECTIONS.MAIN },
     ]
 };

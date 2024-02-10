@@ -1,12 +1,12 @@
 const soupBowl = '../assets/Products/soup-bowl.jpeg';
-const { MAIN, LUNCH, DINNER } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: '',
     name: '',
     img: soupBowl,
     available: false,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

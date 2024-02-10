@@ -1,12 +1,12 @@
 const graveyardDessert = '../assets/Products/graveyard-dessert.jpeg';
-const { DESSERT } = require("./constants");
+const { CATEGORIES } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: graveyardDessert,
     available: false,
-    type: [DESSERT],
+    type: [CATEGORIES.DESSERT],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

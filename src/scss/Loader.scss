@@ -34,7 +34,7 @@
       linear-gradient(#0000 0 0);
     -webkit-mask-composite:destination-out;
     mask-composite:exclude,add,add,add,add,add,add;
-    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
     animation: l8 3s infinite;
   }
   @keyframes l8 {

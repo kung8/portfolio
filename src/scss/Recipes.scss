@@ -9,6 +9,9 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
     .heading-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding-left: 80px;
         padding-right: 80px;
     }
@@ -31,6 +34,75 @@
         display: none; /* Chrome, Safari, Opera */
     }
 
+    .search-and-filter-container {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+
+        .search-bar {
+            width: 100px;
+            height: 40px;
+            padding: 4px 16px;
+            border: 1px solid $white;
+            background: $white;
+            color: $black;
+            font-size: 20px;
+            font-weight: 600;
+            outline: none;
+            transition: all 0.3s ease;
+            border-radius: 20px;
+            &.contains-search, &:focus-within {
+                width: 250px;
+                transition: width 0.3s ease;
+            }
+            input {
+                height: 32px;
+                width: 100%;
+                border: none;
+                padding: 0 8px;
+                outline: none;
+            }
+        }
+        .filter-icon {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 16px;
+            .top-bar {
+                width: 32px;
+                height: 5px;
+                background: $white;
+                margin-bottom: 4px;
+            }
+            .middle-bar {
+                width: 24px;
+                height: 5px;
+                background: $white;
+                margin-bottom: 4px;
+            }
+            .bottom-bar {
+                width: 16px;
+                height: 5px;
+                background: $white;
+            }
+        }
+    }
+
+    .filter-container {
+        width: 85%;
+        height: 80px;
+        background: $white;
+        margin: 0 auto 40px;
+        color: $primary-blue;
+        padding: 16px;
+        .filter-btn {
+            border: 1px solid $primary-blue;
+            border-radius: 20px;
+            padding: 2px 8px;
+            margin-right: 6px;
+        }
+    }
+
     .recipe-items-container {
         display: flex;
         flex-wrap: wrap;
@@ -43,7 +115,7 @@
             padding: 4px;
             // targeting the first of the four multiples
             &:nth-of-type(4n + 1) {
-                margin-left: 4px
+                margin-left: 4px;
             }
             // targeting the fourth of the four multiples
             &:nth-of-type(4n + 4) {

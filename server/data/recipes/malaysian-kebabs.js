@@ -1,12 +1,12 @@
 const kebabs = '../assets/Products/kebabs.jpeg';
-const { APPETIZER, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Kebabs',
     name: 'Malaysian Kebabs',
     img: kebabs,
     available: true,
-    type: [APPETIZER],
+    type: [CATEGORIES.APPETIZER],
     yields: '6 servings',
     prepTime: '10 m',
     cookTime: '25 - 30 m',
@@ -30,13 +30,13 @@ module.exports = {
         { name: 'aluminum foil' },
     ],
     directions: [
-        { step: 'Make the marinade in a ziploc bag: adding soy sauce, sprite, oil, and garlic powder.', type: MAIN },
-        { step: 'Cut the chicken into 1-inch pieces and marinate for 1 to 3 hours.', type: MAIN },
-        { step: 'Cut the veggies into large pieces.', type: MAIN },
-        { step: 'Preheat oven to 450ºF (whenever you are ready to actually cook).', type: MAIN },
-        { step: 'Place aluminum foil on the baking sheet.', type: MAIN },
-        { step: 'Thread the skewers with chicken and veggies leaving enough space between to allow the pieces to get cooked thoroughly.', type: MAIN },
-        { step: 'Place the finished skewers on the baking sheet with space in between each other.', type: MAIN },
-        { step: 'Once the oven is 450ºF, cook the kebabs for 15 to 25 minutes (cook time will depend on the size of meat).', type: MAIN },
+        { step: 'Make the marinade in a ziploc bag: adding soy sauce, sprite, oil, and garlic powder.', type: SECTIONS.MAIN },
+        { step: 'Cut the chicken into 1-inch pieces and marinate for 1 to 3 hours.', type: SECTIONS.MAIN },
+        { step: 'Cut the veggies into large pieces.', type: SECTIONS.MAIN },
+        { step: 'Preheat oven to 450ºF (whenever you are ready to actually cook).', type: SECTIONS.MAIN },
+        { step: 'Place aluminum foil on the baking sheet.', type: SECTIONS.MAIN },
+        { step: 'Thread the skewers with chicken and veggies leaving enough space between to allow the pieces to get cooked thoroughly.', type: SECTIONS.MAIN },
+        { step: 'Place the finished skewers on the baking sheet with space in between each other.', type: SECTIONS.MAIN },
+        { step: 'Once the oven is 450ºF, cook the kebabs for 15 to 25 minutes (cook time will depend on the size of meat).', type: SECTIONS.MAIN },
     ]
 };

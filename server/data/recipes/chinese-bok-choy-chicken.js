@@ -1,13 +1,12 @@
-const { SIDE_DISH, LUNCH, DINNER } = require("./constants");
-
 const bokChoyChicken = '../assets/Products/bok-choy-chicken.jpeg';
+const { CATEGORIES } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: bokChoyChicken,
     available: false,
-    type: [SIDE_DISH, LUNCH, DINNER],
+    type: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

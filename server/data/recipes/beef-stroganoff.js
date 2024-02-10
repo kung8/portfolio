@@ -1,12 +1,12 @@
 const beefStroganoff = '../assets/Products/beef-stroganoff.jpeg';
-const { MAIN, DINNER, LUNCH } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Beef Stroganoff',
     name: 'Beef Stroganoff',
     img: beefStroganoff,
     available: true,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: '7 servings',
     prepTime: '10 - 12 m',
     cookTime: '45 m',
@@ -30,13 +30,13 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'Heat pan over medium-high heat and add butter.', type: MAIN },
-        { step: 'Cook mushroom, garlic, and onion until tender and set aside.', type: MAIN },
-        { step: 'Brown beef.', type: MAIN },
-        { step: 'Add 2 cup of broth, salt and worchestershire sauce until boiling.', type: MAIN },
-        { step: 'Lower heat. Cover and simmer for 15 minutes.', type: MAIN },
-        { step: 'Add remaining broth, flour and vegetables. Heat until boiling. Stir occasionally.', type: MAIN },
-        { step: 'Add sour cream. Heat until hot and solid color.', type: MAIN },
-        { step: 'Serve over noodles.', type: MAIN },
+        { step: 'Heat pan over medium-high heat and add butter.', type: SECTIONS.MAIN },
+        { step: 'Cook mushroom, garlic, and onion until tender and set aside.', type: SECTIONS.MAIN },
+        { step: 'Brown beef.', type: SECTIONS.MAIN },
+        { step: 'Add 2 cup of broth, salt and worchestershire sauce until boiling.', type: SECTIONS.MAIN },
+        { step: 'Lower heat. Cover and simmer for 15 minutes.', type: SECTIONS.MAIN },
+        { step: 'Add remaining broth, flour and vegetables. Heat until boiling. Stir occasionally.', type: SECTIONS.MAIN },
+        { step: 'Add sour cream. Heat until hot and solid color.', type: SECTIONS.MAIN },
+        { step: 'Serve over noodles.', type: SECTIONS.MAIN },
     ]
 };

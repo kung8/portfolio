@@ -1,12 +1,12 @@
 const chickenTikkaMasala = '../assets/Products/chicken-tikka-masala.jpeg';
-const { SIDE_DISH, LUNCH, DINNER } = require("./constants");
+const { CATEGORIES } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: chickenTikkaMasala,
     available: false,
-    type: [SIDE_DISH, LUNCH, DINNER],
+    type: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

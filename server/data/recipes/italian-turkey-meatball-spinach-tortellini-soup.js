@@ -1,12 +1,12 @@
 const meatballSpinachTortelliniSoup = '../assets/Products/turkey-meatball-spinach-tortellini-soup.jpeg';
-const { DINNER, LUNCH, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Tortellini Soup',
     name: 'Turkey Meatball Spinach Tortellini Soup',
     img: meatballSpinachTortelliniSoup,
     available: true,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: '6 servings',
     prepTime: '15 m',
     cookTime: '35 m',
@@ -34,15 +34,15 @@ module.exports = {
         { name: 'large pot' },
     ],
     directions: [
-        { step: 'Combine the ground turkey, breadcrumbs, parmesan cheese, parsley, egg, garlic, and salt in a large bowl.', type: MAIN },
-        { step: 'Gently mix together with hands until combined.', type: MAIN },
-        { step: 'Make small meatballs (about 1 Tbsp each).', type: MAIN },
-        { step: 'Melt butter in a large pot over medium heat.', type: MAIN },
-        { step: 'Once melted, add the celery, onion, carrot, and garlic. Cover and reduce heat to low. Cook until vegetables begin to soften (about 8 to 10 minutes).', type: MAIN },
-        { step: 'Add the chicken broth and increase heat to medium-high. Bring to a boil.', type: MAIN },
-        { step: 'Add black pepper to taste.', type: MAIN },
-        { step: 'Reduce heat to medium and drop in the meatballs. Cook for about 4 minutes.', type: MAIN },
-        { step: 'Add tortellini and simmer until cooked (about 7 minutes).', type: MAIN },
-        { step: 'Once cooked, add the baby spinach and stir to combine.', type: MAIN },
+        { step: 'Combine the ground turkey, breadcrumbs, parmesan cheese, parsley, egg, garlic, and salt in a large bowl.', type: SECTIONS.MAIN },
+        { step: 'Gently mix together with hands until combined.', type: SECTIONS.MAIN },
+        { step: 'Make small meatballs (about 1 Tbsp each).', type: SECTIONS.MAIN },
+        { step: 'Melt butter in a large pot over medium heat.', type: SECTIONS.MAIN },
+        { step: 'Once melted, add the celery, onion, carrot, and garlic. Cover and reduce heat to low. Cook until vegetables begin to soften (about 8 to 10 minutes).', type: SECTIONS.MAIN },
+        { step: 'Add the chicken broth and increase heat to medium-high. Bring to a boil.', type: SECTIONS.MAIN },
+        { step: 'Add black pepper to taste.', type: SECTIONS.MAIN },
+        { step: 'Reduce heat to medium and drop in the meatballs. Cook for about 4 minutes.', type: SECTIONS.MAIN },
+        { step: 'Add tortellini and simmer until cooked (about 7 minutes).', type: SECTIONS.MAIN },
+        { step: 'Once cooked, add the baby spinach and stir to combine.', type: SECTIONS.MAIN },
     ]
 }

@@ -1,12 +1,12 @@
 const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
-const { DINNER, LUNCH, MAIN } = require('./constants');
+const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Soup',
     name: 'Chicken Noodle Soup',
     img: chickenNoodle,
     available: true,
-    type: [LUNCH, DINNER],
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: '5 - 6 servings',
     prepTime: '6 - 8 m',
     cookTime: '40 - 45 m',
@@ -36,11 +36,11 @@ module.exports = {
         { name: 'spoon' },
     ],
     directions: [
-        { step: 'Prep all the vegetables and add them to the mixing bowl. Then prep the raw chicken. Or best to use separate cutting boards to avoid cross contamination.', type: MAIN },
-        { step: 'In a hot pan with oil over medium-high heat, add the chicken, salt, pepper, and oregano. Cook until chicken is browned on both sides. Set aside.', type: MAIN },
-        { step: 'In a large pot, add together the chicken broth, onion, carrots, celery, salt, pepper, oregano, rosemary, and thyme and cook for 8 - 10 minutes over medium-high heat.', type: MAIN },
-        { step: 'Add the noodles and bring to a roaring boil (about another 6 to 8 minutes).', type: MAIN },
-        { step: 'Add the chicken and let it simmer on a low-heat for about 10 minutes.', type: MAIN },
-        { step: 'Serve and enjoy - I typically make this when I or somebody I know is sick, so get better if you too are sick!', type: MAIN },
+        { step: 'Prep all the vegetables and add them to the mixing bowl. Then prep the raw chicken. Or best to use separate cutting boards to avoid cross contamination.', type: SECTIONS.MAIN },
+        { step: 'In a hot pan with oil over medium-high heat, add the chicken, salt, pepper, and oregano. Cook until chicken is browned on both sides. Set aside.', type: SECTIONS.MAIN },
+        { step: 'In a large pot, add together the chicken broth, onion, carrots, celery, salt, pepper, oregano, rosemary, and thyme and cook for 8 - 10 minutes over medium-high heat.', type: SECTIONS.MAIN },
+        { step: 'Add the noodles and bring to a roaring boil (about another 6 to 8 minutes).', type: SECTIONS.MAIN },
+        { step: 'Add the chicken and let it simmer on a low-heat for about 10 minutes.', type: SECTIONS.MAIN },
+        { step: 'Serve and enjoy - I typically make this when I or somebody I know is sick, so get better if you too are sick!', type: SECTIONS.MAIN },
     ]
 };
