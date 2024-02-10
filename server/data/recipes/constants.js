@@ -44,6 +44,7 @@ const CATEGORY = {
     DESSERT: 'Dessert',
     DRINK: 'Drink',
     SAUCE: 'Sauce',
+    TOPPING: 'Topping',
 };
 
 module.exports = {

@@ -53,6 +53,8 @@ const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich"
 const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
 const vietnamesePho = require("./recipes/vietnamese-pho");
 const wrap = require("./recipes/wrap");
+const caramelizedOnion = require("./recipes/caramelized-onion");
+const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 
 // const alfredo = '../assets/Products/dutch-apple-pie.jpeg';
 // const dutchApplePie = '../assets/Products/dutch-apple-pie.jpeg';
@@ -124,6 +126,8 @@ const recipes = [
     eggCasserole,
     buttermilkSyrup,
     hamburger,
+    caramelizedMushroom,
+    caramelizedOnion,
     fancyLunchables,
     wrap,
     smoothie,
