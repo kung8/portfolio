@@ -21,8 +21,7 @@
     }
 
     .recipe-details {
-        .recipe-image {
-            aspect-ratio: 1/1;
+        .recipe-image, .additional-recipe-image, .additional-recipe-video {
             width: 350px;
             margin-bottom: 24px;
             @include down($mobile) {
@@ -132,14 +131,6 @@
                     margin-bottom: 6px;
                     color: $primary-blue;
                 }
-            }
-        }
-
-        .additional-recipe-image, .additional-recipe-video {
-            width: 350px;
-            margin-bottom: 24px;
-            @include down($mobile) {
-                width: 100%;
             }
         }
     }

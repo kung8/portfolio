@@ -40,7 +40,7 @@ module.exports = {
         { name: 'rice wine vinegar', amount: '2 cups', additionalDetails: '', optional: false, section: PICKLED_VEGETABLES },
         { name: 'french bread rolls', amount: '10', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'chicken/pork pate', amount: '10 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
-        { name: 'mayonnaise', amount: '', additionalDetails: '10 Tbsp', optional: false, section: SECTIONS.TOPPINGS },
+        { name: 'light mayonnaise', amount: '', additionalDetails: '10 Tbsp', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'cilantro', amount: '1 bunch', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'cucumber', amount: '2', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'Maggi Seasoning', amount: '5 tsp', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },

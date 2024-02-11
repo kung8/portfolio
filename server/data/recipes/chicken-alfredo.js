@@ -1,0 +1,48 @@
+const { CATEGORIES, SECTIONS } = require('./constants');
+
+module.exports = {
+    cardName: 'Chicken Alfredo',
+    name: 'Chicken Alfredo',
+    available: true,
+    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    yields: '4 servings',
+    prepTime: '8 - 10 m',
+    cookTime: '30 - 40 m',
+    ingredients: [
+        { name: 'fettuccine noodles', amount: '12 oz', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'olive oil (for tossing and sauteing)', amount: '', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'green bell pepper', amount: '2/3', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'onion', amount: '1/2', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'chicken breast', amount: '2', additionalDetails: 'sliced', optional: false, section: SECTIONS.MAIN },
+        { name: 'heavy cream', amount: '2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'butter', amount: '4 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'nutmeg', amount: '2 pinches', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'shredded parmesan', amount: '1 1/2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
+        { name: 'pepper', amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
+    ],
+    supplies: [
+        { name: 'stove' },
+        { name: 'large pot' },
+        { name: 'large pan' },
+        { name: 'cutting board and knife' },
+        { name: 'mixing bowl' },
+        { name: 'small and medium bowls' },
+        { name: 'colander/strainer' },
+    ],
+    directions: [
+        { step: 'Prep the vegetables and set in a small bowl. Then cut the chicken into 1/4" slices and season with salt and pepper.', type: SECTIONS.MAIN },
+        { step: 'In a large pot, bring water and salt to a boil.', type: SECTIONS.MAIN },
+        { step: 'Add pasta to pot and cook until al dente (tender but center is still a little firm).', type: SECTIONS.MAIN },
+        { step: 'Drain in a colander/strainer and save some of the starchy water for later.', type: SECTIONS.MAIN },
+        { step: 'In a large mixing bowl, add the pasta and toss with a little oil.', type: SECTIONS.MAIN },
+        { step: 'In a pan over medium heat, melt 1 Tbsp of butter.', type: SECTIONS.MAIN },
+        { step: 'Once butter melts, brown chicken in a pan over medium-high heat, 2 to 3 minutes per side. Make sure that it\'s cooked through, cook chicken in batches if necessary.', type: SECTIONS.MAIN },
+        { step: 'Once chicken is cooked, place in a medium bowl.', type: SECTIONS.MAIN },
+        { step: 'Saute the vegetables with a little bit of butter in the same pan that the chicken was cooked in. Add the vegetables in with the chicken.', type: SECTIONS.MAIN },
+        { step: 'In the same pan over medium heat, melt the remaining butter.', type: SECTIONS.MAIN },
+        { step: 'Mix together heavy cream and nutmeg before pouring into the pan and cook until it simmers, then for another 2 minutes.', type: SECTIONS.MAIN },
+        { step: 'Set to a low heat and slowly mix in the parmesan, chicken, veggies, pasta, a little starchy noodle water, salt and pepper.', type: SECTIONS.MAIN },
+        { step: 'Serve and enjoy the nostalgic creamy, delicious chicken alfredo!', type: SECTIONS.MAIN },
+    ]
+};

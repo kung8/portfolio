@@ -59,7 +59,8 @@
             outline: none;
             transition: all 0.3s ease;
             border-radius: 20px;
-            &.contains-search, &:focus-within {
+            &.contains-search,
+            &:focus-within {
                 width: 350px;
                 transition: width 0.3s ease;
                 @include down($mobile-xl) {
@@ -207,6 +208,14 @@
                 align-items: center;
                 background: $primary-blue;
                 color: $black;
+
+                & > p {
+                    max-width: 90%;
+                    text-align: center;
+                    color: $white;
+                    text-shadow: 1px 1px 1px $black;
+                    letter-spacing: 1.5px;
+                }
             }
 
             .recipe-item-title {
@@ -218,7 +227,7 @@
                 padding: 8px;
                 font-weight: 600;
                 text-align: center;
-                text-shadow: 2px 2px 1px $black;
+                text-shadow: 1px 1px 1px $black;
                 letter-spacing: 1.5px;
                 width: 97%;
                 display: inline-block;
