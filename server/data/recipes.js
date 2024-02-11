@@ -2,8 +2,11 @@ const americanOmelette = require("./recipes/american-omelette");
 const chineseBao = require("./recipes/chinese-bao");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefStroganoff = require("./recipes/beef-stroganoff");
+const brownies = require("./recipes/brownies");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cafeRioSalad = require("./recipes/cafe-rio-salad");
+const caramelizedOnion = require("./recipes/caramelized-onion");
+const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 const cheeseBalls = require("./recipes/cheese-balls");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
@@ -31,6 +34,7 @@ const italianLasagna = require("./recipes/italian-lasagna");
 const japaneseChickenKatsu = require("./recipes/japanese-chicken-katsu");
 const japaneseKatsudon = require("./recipes/japanese-katsudon");
 const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
+const koreanFriedChicken = require("./recipes/korean-fried-chicken");
 const macaroniSalad = require("./recipes/macaroni-salad");
 const malaysianBlackPepperChicken = require("./recipes/malaysian-black-pepper-chicken");
 const malaysianKebabs = require("./recipes/malaysian-kebabs");
@@ -53,9 +57,6 @@ const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich"
 const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
 const vietnamesePho = require("./recipes/vietnamese-pho");
 const wrap = require("./recipes/wrap");
-const caramelizedOnion = require("./recipes/caramelized-onion");
-const caramelizedMushroom = require("./recipes/caramelized-mushroom");
-const koreanFriedChicken = require("./recipes/korean-fried-chicken");
 
 // const alfredo = '../assets/Products/dutch-apple-pie.jpeg';
 // const dutchApplePie = '../assets/Products/dutch-apple-pie.jpeg';
@@ -132,6 +133,7 @@ const recipes = [
     wrap,
     smoothie,
     chocolateChipCookies,
+    brownies,
     riceCrispyBall,
     graveyardDessert,
     smores,
