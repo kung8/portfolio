@@ -55,6 +55,7 @@ const vietnamesePho = require("./recipes/vietnamese-pho");
 const wrap = require("./recipes/wrap");
 const caramelizedOnion = require("./recipes/caramelized-onion");
 const caramelizedMushroom = require("./recipes/caramelized-mushroom");
+const koreanFriedChicken = require("./recipes/korean-fried-chicken");
 
 // const alfredo = '../assets/Products/dutch-apple-pie.jpeg';
 // const dutchApplePie = '../assets/Products/dutch-apple-pie.jpeg';
@@ -63,9 +64,7 @@ const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 // const spaghetti = '../assets/Products/spaghetti.jpeg';
 
 // TODO: Add the new recipes
-// TODO: Add the separate direction steps for each recipe
 // TODO: Add categories to the recipes
-// TODO: Add figures to the recipes to show additional pictures of the recipe (link them in the instructions?)
 // TODO: Add a way to search the recipes by name, CATEGORIES, type, origin, etc.
 // TODO: Add a way to add ingredients to a shopping list and save in local storage
 // TODO: Add a way to add recipes to a favorites list and save in local storage
@@ -85,6 +84,7 @@ const recipes = [
     japaneseChickenKatsu,
     japaneseKatsudon,
     koreanBeefBulgogi,
+    koreanFriedChicken,
     vietnameseBanhMiSandwich,
     malaysianLemonChicken,
     chineseBokChoyChicken,

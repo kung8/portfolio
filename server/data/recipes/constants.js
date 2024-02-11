@@ -28,11 +28,12 @@ const SECTIONS = {
     MARINADE: 'Marinade',
     SAUCE: 'Sauce',
     TOPPINGS: 'Toppings',
-    PORK_LOAF: 'Pork Loaf', // Vietnamese Banh Mi Sandwich
     RICE: 'Rice',
     FILLING: 'Filling',
-    PICKLED_VEGETABLES: 'Pickled Vegetables',
     BREAD: 'Bread',
+    DRESSING: 'Dressing',
+    DRY_RUB: 'Dry Rub',
+    WET_RUB: 'Wet Rub',
 };
 
 const CATEGORIES = {
