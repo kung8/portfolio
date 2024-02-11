@@ -241,7 +241,7 @@ export const Recipe = ({ history, match }) => {
                                 <div key={i} className="figure-container">
                                     <label id={`figure-${i + 1}`} onClick={() => setSelectedFigureLabel(i + 1)}>Figure {i + 1}</label>
                                     {figure.video ? (
-                                        <video className="additional-recipe-video" autoPlay loop>
+                                        <video className="additional-recipe-video" autoPlay loop muted>
                                             <source src={figure.video} type="video/mp4" />
                                         </video>
                                     ) : (
@@ -256,7 +256,7 @@ export const Recipe = ({ history, match }) => {
                                 <div key={i} className="figure-container">
                                     <label id={`figure-${i + 1}`} onClick={() => setSelectedFigureLabel(i + 1)}>Figure {i + 1}</label>
                                     {figure.video ? (
-                                        <video className="additional-recipe-video" autoPlay loop>
+                                        <video className="additional-recipe-video" autoPlay loop muted>
                                             <source src={figure.video} type="video/mp4" />
                                         </video>
                                     ) : (
