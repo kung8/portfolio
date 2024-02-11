@@ -31,6 +31,7 @@ const SECTIONS = {
     RICE: 'Rice',
     FILLING: 'Filling',
     DOUGH: 'Dough',
+    BREAD: 'Bread',
     DRESSING: 'Dressing',
     DRY_RUB: 'Dry Rub',
     WET_RUB: 'Wet Rub',
