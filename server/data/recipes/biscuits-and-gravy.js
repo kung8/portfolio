@@ -54,5 +54,8 @@ module.exports = {
         { step: 'Reduce to medium-low and let simmer, about 2 minutes.', type: GRAVY },
         { step: 'Season with salt and pepper.', type: GRAVY },
         { step: 'Serve over warm biscuits.', type: GRAVY },
-    ]
+    ],
+    notes: [
+        'Feel free to replace the ground pork with ground turkey.',
+    ],
 };
