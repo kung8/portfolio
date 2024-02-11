@@ -8,7 +8,7 @@ const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cafeRioSalad = require("./recipes/cafe-rio-salad");
 const caramelizedOnion = require("./recipes/caramelized-onion");
 const caramelizedMushroom = require("./recipes/caramelized-mushroom");
-const cheeseBalls = require("./recipes/cheese-balls");
+const cheeseballs = require("./recipes/cheeseballs");
 const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
@@ -24,7 +24,7 @@ const eggCasserole = require("./recipes/egg-casserole");
 const fancyLunchables = require("./recipes/fancy-lunchables");
 const frenchCrepe = require("./recipes/french-crepe");
 const frenchToast = require("./recipes/french-toast");
-const garlicBread = require("./recipes/garlic-bread");
+const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const graveyardDessert = require("./recipes/graveyard-dessert");
 const hamburger = require("./recipes/hamburger");
 const hawaiianHaystacks = require("./recipes/hawaiian-haystacks");
@@ -117,8 +117,8 @@ const recipes = [
     frenchCrepe,
     frenchToast,
     soupBowl,
-    cheeseBalls,
-    garlicBread,
+    cheeseballs,
+    garlicBreadsticks,
     biscuitsAndGravy,
     scrambledEggs,
     americanOmelette,

@@ -214,12 +214,18 @@ export const Recipe = ({ history, match }) => {
                         </>
                     ) : (
                         <ol className="recipe-detail-list numbered">
-                            {(item.directions || []).map(({ step, img }) => {
+                            {(item.directions || []).map(({ step, img, video }) => {
                                 const figure = nonSeparatedFigures.findIndex(item => item.img === img) + 1;
                                 return (
-                                    <li key={step}>{step} {img && (
-                                        <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className="figure-label-anchor">(See figure {figure})</span>
-                                    )}</li>
+                                    <li key={step}>
+                                        {step}
+                                        {img && (
+                                            <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className="figure-label-anchor">(See figure {figure})</span>
+                                        )}
+                                        {video && (
+                                            <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className="figure-label-anchor">(See figure {figure})</span>
+                                        )}
+                                    </li>
                                 )
                             })}
                         </ol>

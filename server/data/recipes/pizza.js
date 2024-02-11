@@ -3,7 +3,6 @@ const pizzaDough = '../assets/Products/pizza-dough.jpeg';
 const frozenDough = '../assets/Products/frozen-pizza-dough.jpeg';
 const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
 const tossing = '../assets/Products/pizza-toss.MOV';
-
 const { CATEGORIES, SECTIONS } = require("./constants");
 
 module.exports = {
@@ -64,6 +63,6 @@ module.exports = {
         { step: 'Place the shaped dough on the pan and add your favorite toppings.', type: SECTIONS.MAIN },
         { step: 'Bake the pizza for 20 to 25 minutes or until a nice golden brown.', type: SECTIONS.MAIN },
         { step: 'Enjoy these slices of heaven with friends and family.', type: SECTIONS.MAIN },
-        { step: 'If you have any leftover dough that you aren\'t ready to use, you can freeze it.', type: SECTIONS.MAIN, img: frozenDough}
+        { step: 'If you have any leftover dough that you aren\'t ready to use, you can freeze it and make pizzas, breadsticks, or cheeseballs.', type: SECTIONS.MAIN, img: frozenDough}
     ]
 };
