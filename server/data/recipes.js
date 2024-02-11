@@ -2,6 +2,7 @@ const americanOmelette = require("./recipes/american-omelette");
 const chineseBao = require("./recipes/chinese-bao");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefStroganoff = require("./recipes/beef-stroganoff");
+const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
 const brownies = require("./recipes/brownies");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cafeRioSalad = require("./recipes/cafe-rio-salad");
@@ -118,6 +119,7 @@ const recipes = [
     soupBowl,
     cheeseBalls,
     garlicBread,
+    biscuitsAndGravy,
     scrambledEggs,
     americanOmelette,
     eggCasserole,

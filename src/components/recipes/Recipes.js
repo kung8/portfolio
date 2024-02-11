@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
-import { Cursor } from '../Cursor';
+// import { Cursor } from '../Cursor';
 import { 
     useGetData, 
-    useGetRecipeCategories
+    // useGetRecipeCategories
 } from '../../hooks';
 import { RecipeItem } from './RecipeItem';
 import { Loader } from '../Loader';
@@ -14,13 +14,13 @@ export const Recipes = ({ history }) => {
     const queryKey = ['getData', 'recipes', undefined];
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
     const [search, setSearch] = useState('');
-    const [selectedFilters, setSelectedFilters] = useState([]);
+    // const [selectedFilters, setSelectedFilters] = useState([]);
 
     const { data: recipes = [] } = useGetData('recipes');
-    const { data: recipeCategories = { CATEGORIES: {}, GENRES: {} } } = useGetRecipeCategories();
-    const categories = Object.values(recipeCategories.CATEGORIES);
-    const genres = Object.values(recipeCategories.GENRES);
-    console.log(categories, genres);
+    // const { data: recipeCategories = { CATEGORIES: {}, GENRES: {} } } = useGetRecipeCategories();
+    // const categories = Object.values(recipeCategories.CATEGORIES);
+    // const genres = Object.values(recipeCategories.GENRES);
+    // console.log(categories, genres);
 
     const filteredRecipes = recipes.filter(item => {
         if (search === '') return item;
@@ -31,6 +31,7 @@ export const Recipes = ({ history }) => {
             item.ingredients.some(ingredient => ingredient.name.toLowerCase().includes(searchValue)) ||
             item.supplies.some(supply => supply.name.toLowerCase().includes(searchValue))
         ) return item;
+        return null;
     })
 
     useEffect(() => {
