@@ -1,22 +1,31 @@
 const graveyardDessert = '../assets/Products/graveyard-dessert.jpeg';
-const { CATEGORIES } = require("./constants");
+const { CATEGORIES, SECTIONS } = require("./constants");
 
 module.exports = {
-    cardName: '',
-    name: '',
+    cardName: 'Graveyard Dessert',
+    name: 'Graveyard Dessert',
     img: graveyardDessert,
-    available: false,
+    available: true,
     type: [CATEGORIES.DESSERT],
     yields: ' servings',
-    prepTime: 'm',
-    cookTime: 'm',
+    prepTime: '7 m',
+    cookTime: '0 m',
     ingredients: [
-        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
+        { name: 'chocolate pudding cups', amount: '6', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'Oreo cookies', amount: 'package of', additionalDetails: 'without cream', optional: false, section: SECTIONS.MAIN },
+        { name: 'Manila cookie', amount: 'package of', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'gummy worms', amount: '', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
     supplies: [
-        { name: '' },
+        { name: 'Clear Cups' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: 'Fill cups with a layer of chocolate pudding.', type: SECTIONS.MAIN },
+        { step: 'Stick one or two gummy worms in the pudding.', type: SECTIONS.MAIN },
+        { step: 'Add a layer of crushed Oreo.', type: SECTIONS.MAIN },
+        { step: 'Add another layer of pudding and stick a worm through the top.', type: SECTIONS.MAIN },
+        { step: 'Break an Manila cookie in half and stick it into the pudding. This is a gravestone.', type: SECTIONS.MAIN },
+        { step: 'Sprinkle crushed Oreo around the worm and the gravestone and fill the rest of the layer.', type: SECTIONS.MAIN },
+        { step: 'Get creative and have fun! You can add chocolate, sprinkles, and other cookies and candies.', type: SECTIONS.MAIN },
     ]
 };
