@@ -1,10 +1,10 @@
-// const bbq = '../assets/Products/bbq-pulled-pork.jpeg';
+const brownies = '../assets/Products/brownies.jpeg';
 const { CATEGORIES, SECTIONS } = require("./constants");
 
 module.exports = {
     cardName: 'Brownies',
     name: 'Brownies',
-    // img: bbq,
+    img: brownies,
     available: true,
     type: [CATEGORIES.DESSERT],
     yields: '12 servings',

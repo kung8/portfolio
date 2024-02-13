@@ -13,7 +13,7 @@ module.exports = {
     ingredients: [
         { name: 'chocolate pudding cups', amount: '6', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'Oreo cookies', amount: 'package of', additionalDetails: 'without cream', optional: false, section: SECTIONS.MAIN },
-        { name: 'Manila cookie', amount: 'package of', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'Milano cookies', amount: 'package of', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'gummy worms', amount: '', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
     supplies: [
@@ -24,7 +24,7 @@ module.exports = {
         { step: 'Stick one or two gummy worms in the pudding.', type: SECTIONS.MAIN },
         { step: 'Add a layer of crushed Oreo.', type: SECTIONS.MAIN },
         { step: 'Add another layer of pudding and stick a worm through the top.', type: SECTIONS.MAIN },
-        { step: 'Break an Manila cookie in half and stick it into the pudding. This is a gravestone.', type: SECTIONS.MAIN },
+        { step: 'Break an Milano cookie in half and stick it into the pudding. This is a gravestone.', type: SECTIONS.MAIN },
         { step: 'Sprinkle crushed Oreo around the worm and the gravestone and fill the rest of the layer.', type: SECTIONS.MAIN },
         { step: 'Get creative and have fun! You can add chocolate, sprinkles, and other cookies and candies.', type: SECTIONS.MAIN },
     ]
