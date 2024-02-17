@@ -145,14 +145,10 @@
 
         .back-btn {
             cursor: pointer;
-            color: $white;
+            color: $primary-blue;
             margin-bottom: 8px;
             display: block;
             &:hover {
-                color: $primary-blue;
-            }
-
-            @include down($tablet) {
                 color: $primary-blue;
             }
         }

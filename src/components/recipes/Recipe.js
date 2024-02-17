@@ -132,7 +132,7 @@ export const Recipe = ({ history, match }) => {
             </div>
             {item && isLoaded ? (
                 <div className="recipe-details">
-                    {item.img ? <img src={item.img} alt={item.name} className="recipe-image" /> : <div className="recipe-image">Image Coming Soon!</div>}
+                    {item.img ? <img src={item.img} alt={item.name} className="recipe-image" /> : <div className="recipe-image empty">Image Coming Soon!</div>}
                     <p className="prep-time">Prep Time: {item.prepTime}</p>
                     <p className="cook-time">Cook Time: {item.cookTime}</p>
                     <p className="yields">Yields: {item.yields}</p>
