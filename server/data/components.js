@@ -37,23 +37,6 @@ const components = [
     //     show: false,
     // },
     {
-        organization: 'Battleship',
-        bullets: [
-            'E-5. You sunk my battleship! The ships were designed with css and the user can orient their ships vertically or horizontally on the board. Once the user is ready they can start playing the game against another player. Sockets is configured for this game but I still need to revise the rooms so it can tracked without needing users to create an account.',
-        ],
-        chips: [
-            'React JS',
-            'Toast',
-            'Sockets',
-            'Redux',
-            'Sass',
-        ],
-        images: [battleship],
-        url: 'https://yourmove.dev/#/game/Battleship',
-        hosted: true,
-        show: true,
-    },
-    {
         organization: 'Guitar',
         bullets: [
             'Combining my love of music and coding, I designed a guitar with css and some selectors to help users learn basic chords and notes.',
@@ -111,6 +94,23 @@ const components = [
         ],
         images: [genericScoreSheet],
         url: 'https://buddingacorn.dev/#/resources/recreation/scoresheet',
+        hosted: true,
+        show: true,
+    },
+    {
+        organization: 'Battleship',
+        bullets: [
+            'E-5. You sunk my battleship! The ships were designed with css and the user can orient their ships vertically or horizontally on the board. Once the user is ready they can start playing the game against another player. Sockets is configured for this game but I still need to revise the rooms so it can tracked without needing users to create an account.',
+        ],
+        chips: [
+            'React JS',
+            'Toast',
+            'Sockets',
+            'Sass',
+            'crypto-js'
+        ],
+        images: [battleship],
+        url: 'https://buddingacorn.dev/#/products/games/14',
         hosted: true,
         show: true,
     },
