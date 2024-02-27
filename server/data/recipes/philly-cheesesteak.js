@@ -12,7 +12,7 @@ module.exports = {
     cookTime: '20 m',
     ingredients: [
         { name: 'beef', amount: '1 lb', additionalDetails: 'thinly sliced', optional: false },
-        { name: 'olive oil', amount: '1 tsp', additionalDetails: '', optional: false },
+        { name: 'olive oil', amount: '1 t', additionalDetails: '', optional: false },
         { name: 'onion', amount: '1', additionalDetails: 'sliced', optional: false },
         { name: 'bell peppers', amount: '3', additionalDetails: 'sliced', optional: false },
         { name: 'mozzarella cheese', amount: '16 slices', additionalDetails: '', optional: false },

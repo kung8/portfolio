@@ -12,11 +12,11 @@ module.exports = {
     cookTime: '40 - 45 m',
     ingredients: [
         { name: 'chicken breast', amount: '1.5 lbs', additionalDetails: 'cubed', optional: false },
-        { name: 'olive oil', amount: '1 Tbsp', additionalDetails: '', optional: false },
+        { name: 'olive oil', amount: '1 T', additionalDetails: '', optional: false },
         { name: 'large onion', amount: '1', additionalDetails: 'sliced', optional: false },
         { name: 'large carrots', amount: '2', additionalDetails: 'sliced', optional: false },
         { name: 'celery', amount: '2 stalks', additionalDetails: 'sliced', optional: false },
-        { name: 'chicken broth', amount: '6 cups', additionalDetails: '', optional: false },
+        { name: 'chicken broth', amount: '6 c', additionalDetails: '', optional: false },
         { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false },
         { name: 'pepper', amount: '', additionalDetails: 'to taste', optional: false },
         { name: 'oregano', amount: '', additionalDetails: 'to taste', optional: false },

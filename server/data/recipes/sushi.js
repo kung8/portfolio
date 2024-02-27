@@ -15,9 +15,9 @@ module.exports = {
     ingredients: [
         { name: 'seaweed', amount: '8 sheets', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'cooked short-grained rice', amount: '4 c', additionalDetails: 'cooled to room temperature', optional: false, section: SECTIONS.RICE },
-        { name: 'vinegar', amount: '7 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.RICE },
-        { name: 'sugar', amount: '7 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.RICE },
-        { name: 'salt', amount: '1 Tbsp + 1 tsp', additionalDetails: '', optional: false, section: SECTIONS.RICE },
+        { name: 'vinegar', amount: '7 T', additionalDetails: '', optional: false, section: SECTIONS.RICE },
+        { name: 'sugar', amount: '7 T', additionalDetails: '', optional: false, section: SECTIONS.RICE },
+        { name: 'salt', amount: '1 T + 1 t', additionalDetails: '', optional: false, section: SECTIONS.RICE },
         { name: 'avocado', amount: '2', additionalDetails: 'sliced', optional: true, section: SECTIONS.FILLING },
         { name: 'cucumber', amount: '1', additionalDetails: 'sliced', optional: true, section: SECTIONS.FILLING },
         { name: 'crab', amount: '8 oz', additionalDetails: 'sliced', optional: true, section: SECTIONS.FILLING },

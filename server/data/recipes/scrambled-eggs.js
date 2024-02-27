@@ -18,7 +18,7 @@ module.exports = {
         { name: 'onion', amount: '1/8', additionalDetails: 'diced', optional: false },
         { name: 'roma tomato', amount: '1/8', additionalDetails: 'diced', optional: false },
         { name: 'cooked ham', amount: '1 slice', additionalDetails: 'diced', optional: false },
-        { name: 'butter (for pan)', amount: '1 tsp', additionalDetails: '', optional: false },
+        { name: 'butter (for pan)', amount: '1 t', additionalDetails: '', optional: false },
         { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false },
         { name: 'pepper', amount: '', additionalDetails: 'to taste', optional: false },
         { name: 'basil', amount: '', additionalDetails: 'to taste', optional: false },

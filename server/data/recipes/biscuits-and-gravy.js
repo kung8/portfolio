@@ -16,9 +16,9 @@ module.exports = {
     separated: true,
     ingredients: [
         { name: 'flour', amount: '5 1/2 c', additionalDetails: '', optional: false, section: BISCUITS },
-        { name: 'baking powder', amount: '2 Tbsp', additionalDetails: '', optional: false, section: BISCUITS },
-        { name: 'baking soda', amount: '2 tsp', additionalDetails: '', optional: false, section: BISCUITS },
-        { name: 'kosher salt', amount: '2 Tbsp', additionalDetails: '', optional: false, section: BISCUITS },
+        { name: 'baking powder', amount: '2 T', additionalDetails: '', optional: false, section: BISCUITS },
+        { name: 'baking soda', amount: '2 t', additionalDetails: '', optional: false, section: BISCUITS },
+        { name: 'kosher salt', amount: '2 T', additionalDetails: '', optional: false, section: BISCUITS },
         { name: 'unsalted butter', amount: '1 1/2 c', additionalDetails: 'cut into 1/2" slices', optional: false, section: BISCUITS },
         { name: 'unsalted butter', amount: '', additionalDetails: 'melted', optional: false, section: BISCUITS },
         { name: 'buttermilk', amount: '3 c', additionalDetails: '', optional: false, section: BISCUITS },

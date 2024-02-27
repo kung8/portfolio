@@ -37,11 +37,14 @@ const japaneseChickenKatsu = require("./recipes/japanese-chicken-katsu");
 const japaneseKatsudon = require("./recipes/japanese-katsudon");
 const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
 const koreanFriedChicken = require("./recipes/korean-fried-chicken");
+const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
 const macaroniSalad = require("./recipes/macaroni-salad");
 const malaysianBlackPepperChicken = require("./recipes/malaysian-black-pepper-chicken");
 const malaysianKebabs = require("./recipes/malaysian-kebabs");
 const malaysianLemonChicken = require("./recipes/malaysian-lemon-chicken");
 const padThai = require("./recipes/pad-thai");
+const parfait = require("./recipes/parfait");
+const pepperSteak = require("./recipes/pepper-steak");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
@@ -88,6 +91,8 @@ const recipes = [
     chineseGingerChicken,
     chineseSourChickenSoup,
     chineseLoMeinNoodles,
+    lemonChickenOnLettuce,
+    pepperSteak,
     hospitalityChicken,
     peruvianAjiDeGallina,
     chineseBao,
@@ -129,6 +134,7 @@ const recipes = [
     caramelizedOnion,
     fancyLunchables,
     wrap,
+    parfait,
     smoothie,
     chocolateChipCookies,
     brownies,

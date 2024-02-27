@@ -31,8 +31,8 @@ module.exports = {
     getData: async (req, res) => {
         const { type, id } = req.query;
         if (id) {
-            const name = convertIdToName(id).replace('And', 'and');
-            const item = data[type].filter(item => item.name === name);
+            const name = convertIdToName(id).toLowerCase();
+            const item = data[type].filter(item => item.name.toLowerCase() === name);
             return res.send(item);
         }
         return res.send(data[type] ?? []);

@@ -1,0 +1,31 @@
+const parfait = '../assets/Products/parfait.jpeg';
+const { CATEGORIES, SECTIONS } = require("./constants");
+
+module.exports = {
+    cardName: 'Parfait',
+    name: 'Parfait',
+    img: parfait,
+    available: true,
+    type: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT, CATEGORIES.SNACK],
+    yields: '2 servings',
+    prepTime: '1 m',
+    cookTime: '1 m',
+    ingredients: [
+        { name: 'plain yogurt', amount: '2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'vanilla', amount: '1 T', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
+        { name: 'honey', amount: '1 T', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
+        { name: 'granola', amount: '', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
+        { name: 'berries', amount: '', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
+        { name: 'cashews', amount: '', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
+    ],
+    supplies: [
+        { name: 'bowl' },
+        { name: 'spoon' },
+    ],
+    directions: [
+        { step: 'Fill a bowl with yogurt.', type: SECTIONS.MAIN },
+        { step: 'Mix in vanilla and honey.', type: SECTIONS.MAIN },
+        { step: 'Cover with preferred toppings such as granola, fruits, and nuts.', type: SECTIONS.MAIN },
+        { step: 'Enjoy a light breakfast / snack.', type: SECTIONS.MAIN },
+    ]
+};
