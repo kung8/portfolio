@@ -20,7 +20,7 @@ module.exports = {
         { name: 'roma tomato', amount: '1/4', additionalDetails: 'diced', optional: false },
         { name: 'cooked honey ham', amount: '1 slice', additionalDetails: 'diced', optional: false },
         { name: 'basil', amount: '', additionalDetails: 'to taste', optional: false },
-        { name: 'butter', amount: '1/2 T', additionalDetails: '', optional: false },
+        { name: 'butter', amount: '1/2 Tbsp', additionalDetails: '', optional: false },
     ],
     supplies: [
         { name: 'stove' },
@@ -32,7 +32,7 @@ module.exports = {
     ],
     directions: [
         { step: 'Prep the vegetables and ham (I use deli lunch meat) and set aside on cutting board.', type: SECTIONS.MAIN },
-        { step: 'In a bowl, mix together the eggs, water (no more than 1 T), salt, pepper, and basil.', type: SECTIONS.MAIN },
+        { step: 'In a bowl, mix together the eggs, water (no more than 1 Tbsp), salt, pepper, and basil.', type: SECTIONS.MAIN },
         { step: 'Heat up the pan on a medium-high heat. Add the butter. Then add the peppers and onion.', type: SECTIONS.MAIN },
         { step: 'Once the onions have browned a little, turn down to medium heat, and add the egg batter.', type: SECTIONS.MAIN },
         { step: 'While still keeping it over the heat, tilt and angle the pan so the runny egg on top can spread to more parts of the pan and you can even take the spatula and lift the edges of the cooking egg and let gravity do its job to have the runny egg batter fill underneath it (try to keep it a circle).', type: SECTIONS.MAIN },

@@ -17,7 +17,7 @@ module.exports = {
         { name: 'vegetable oil', amount: '1 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'egg', amount: '1', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'panko bread crumbs', amount: '1 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'flour', amount: '2 T', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'flour', amount: '2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
         { name: 'rice', amount: '', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'cabbage (optional)', amount: '1/4', additionalDetails: 'julienned', optional: false, section: SECTIONS.TOPPINGS },

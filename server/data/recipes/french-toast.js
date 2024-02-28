@@ -12,8 +12,8 @@ module.exports = {
     cookTime: '8 - 10 m',
     ingredients: [
         { name: 'egg', amount: '2', additionalDetails: '', optional: false },
-        { name: 'vanilla', amount: '1 t', additionalDetails: '', optional: false },
-        { name: 'cinnamon', amount: '1 t', additionalDetails: '', optional: false },
+        { name: 'vanilla', amount: '1 tsp', additionalDetails: '', optional: false },
+        { name: 'cinnamon', amount: '1 tsp', additionalDetails: '', optional: false },
         { name: 'milk', amount: '3/4 c', additionalDetails: '', optional: false },
         { name: 'bread', amount: '8', additionalDetails: '', optional: false },
         { name: 'butter', amount: '8', additionalDetails: '', optional: false },

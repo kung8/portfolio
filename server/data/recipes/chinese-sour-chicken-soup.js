@@ -13,7 +13,7 @@ module.exports = {
     ingredients: [
         { name: 'chicken thigh (with bone and skin)', amount: '6 lb', additionalDetails: '', optional: false },
         { name: 'Knorr tamarind soup mix', amount: '1 packet', additionalDetails: '', optional: false },
-        { name: 'lime juice', amount: '2 T', additionalDetails: '', optional: false },
+        { name: 'lime juice', amount: '2 Tbsp', additionalDetails: '', optional: false },
     ],
     supplies: [
         { name: 'stove' },

@@ -14,8 +14,8 @@ module.exports = {
         { name: 'white sugar', amount: '1 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
         { name: 'buttermilk', amount: '1/2 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
         { name: 'butter', amount: '1/2 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { name: 'baking soda', amount: '1 t', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { name: 'vanilla extract', amount: '1 t', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
+        { name: 'baking soda', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
+        { name: 'vanilla extract', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
     ],
     supplies: [
         { name: 'stove' },

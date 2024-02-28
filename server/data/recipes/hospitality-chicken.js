@@ -15,7 +15,7 @@ module.exports = {
         { name: 'McCormick seasoning packet', amount: '1', additionalDetails: '', optional: false },
         { name: 'snow peas', amount: '1 lb', additionalDetails: '', optional: false },
         { name: 'carrot chips', amount: '1 lb', additionalDetails: '', optional: false },
-        { name: 'olive oil', amount: '1 t', additionalDetails: '', optional: false },
+        { name: 'olive oil', amount: '1 tsp', additionalDetails: '', optional: false },
     ],
     supplies: [
         { name: 'air fryer' },
