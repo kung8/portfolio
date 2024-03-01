@@ -100,7 +100,7 @@ const components = [
     {
         organization: 'Battleship',
         bullets: [
-            'E-5. You sunk my battleship! The ships were designed with css and the user can orient their ships vertically or horizontally on the board. Once the user is ready they can start playing the game against another player. Sockets is configured for this game but I still need to revise the rooms so it can tracked without needing users to create an account.',
+            'E-5. You sunk my battleship! The ships were designed with css and the user can orient their ships vertically or horizontally on the board. Play against your friends or your enemies. Sockets is configured for this game so you can play with your friends in real time.',
         ],
         chips: [
             'React JS',
