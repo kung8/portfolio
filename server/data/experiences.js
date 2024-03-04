@@ -157,6 +157,8 @@ const experiences = [
             'Massive',
             'Nodemailer',
             'Dayjs',
+            'Sockets',
+            'Crypto JS'
         ],
         url: 'https://buddingacorn.dev',
         hosted: true,
