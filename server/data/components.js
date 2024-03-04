@@ -107,7 +107,7 @@ const components = [
             'Toast',
             'Sockets',
             'Sass',
-            'crypto-js'
+            'Crypto JS'
         ],
         images: [battleship],
         url: 'https://buddingacorn.dev/#/products/games/14',

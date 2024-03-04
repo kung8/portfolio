@@ -180,6 +180,8 @@ const projects = [
             'Massive',
             'dotenv',
             'Xlsx',
+            'Sockets',
+            'Crypto JS'
         ],
         url: 'https://buddingacorn.dev',
         domain: true,
