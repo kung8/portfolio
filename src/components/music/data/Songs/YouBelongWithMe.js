@@ -62,10 +62,14 @@ const YouBelongWithMe = () => (
 
         <p>
             <strong>Bridge:</strong>
-            <span className="p-rel"><span className="p-abs beginning">Em</span>Oh</span> I remember you drivin' to my <span className="p-rel"><span className="p-abs beginning">D</span>house</span> in the middle of the night<br /><br />
-            I'm the one who makes you laugh when you know you're about to <span className="p-rel"><span className="p-abs beginning">G</span>cry</span><br /><br />
-            And I know your favorite songs and you tell me about your <span className="p-rel"><span className="p-abs beginning">A</span>dreams</span><br /><br />
-            Think I know where you belong, think I know it's with <span className="p-rel"><span className="p-abs beginning">Em</span>me</span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Em</span>Oh</span> I remember you drivin' to my <span className="p-rel"><span className="p-abs beginning">D</span>house</span><br /><br /> 
+            in the middle of the night<br /><br />
+            I'm the one who makes you laugh<br /><br /> 
+            when you know you're about to <span className="p-rel"><span className="p-abs beginning">G</span>cry</span><br /><br />
+            And I know your favorite songs<br /><br /> 
+            and you tell me about your <span className="p-rel"><span className="p-abs beginning">A</span>dreams</span><br /><br />
+            Think I know where you belong,<br /><br />
+            think I know it's with <span className="p-rel"><span className="p-abs beginning">Em</span>me</span><br /><br />
         </p>
 
         <p>

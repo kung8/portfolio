@@ -9,7 +9,8 @@ import repeatBtn from '../../Assets/repeat-btn.png';
 import selectedShuffleBtn from '../../Assets/selected-shuffle-btn.png';
 import selectedRepeatBtn from '../../Assets/selected-repeat-btn.png';
 import { randomize } from '../../utils/randomize';
-import { orderTypeMap, reversedSongs } from './data';
+import { orderTypeMap } from './data';
+import { useGetData } from '../../hooks';
 
 
 export const InteractionButtons = ({
@@ -27,6 +28,8 @@ export const InteractionButtons = ({
     currentTime,
     setCurrentTime
 }) => {
+    const { data: songs = [] } = useGetData('music');
+
     const previous = () => {
         if (currentTime > 10) {
             const audio = document.querySelector('.audio-control');
@@ -43,7 +46,7 @@ export const InteractionButtons = ({
     const shuffle = () => {
         if (orderType === orderTypeMap.shuffled) {
             setOrderType(orderTypeMap.none);
-            setOrderedSongs([...reversedSongs]);
+            setOrderedSongs([...songs]);
         } else {
             setOrderedSongs([...randomize(orderedSongs)]);
             setOrderType(orderTypeMap.shuffled);
@@ -55,7 +58,7 @@ export const InteractionButtons = ({
             setOrderType(orderTypeMap.none);
         } else {
             setOrderType(orderTypeMap.repeated);
-            setOrderedSongs([...reversedSongs]);
+            setOrderedSongs([...songs]);
         }
     }
 

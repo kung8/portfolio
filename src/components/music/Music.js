@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Cursor } from '../Cursor';
-import { reversedSongs } from './data';
 import { MusicPlayer, MusicTable } from '.';
+import { useGetData } from '../../hooks';
 
 export const Music = ({ history }) => {
-    const [selectedSong, setSelectedSong] = useState(reversedSongs[0]);
+    const { data: songs = [] } = useGetData('music');
+    const [selectedSong, setSelectedSong] = useState(songs[0]);
     const [isPlaying, setIsPlaying] = useState(false);
 
     return (

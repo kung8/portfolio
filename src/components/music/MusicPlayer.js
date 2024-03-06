@@ -1,13 +1,15 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { orderTypeMap, reversedSongs } from './data';
+import { orderTypeMap } from './data';
 import { convertTimeToNumber } from '../../utils/time';
 import { AudioPlayer, InteractionButtons, ProgressBar, QueueModal, VolumeControls } from '.';
 import queueBtn from '../../Assets/queue-btn.png';
+import { useGetData } from '../../hooks';
 
 const formatSongName = (name) => name.toLowerCase().replaceAll(' ', '-');
 
 export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPlaying }) => {
-    const [orderedSongs, setOrderedSongs] = useState([...reversedSongs]);
+    const { data: songs = [] } = useGetData('music');
+    const [orderedSongs, setOrderedSongs] = useState([...songs]);
     const currentIndex = orderedSongs.findIndex(song => song.id === selectedSong?.id);
     const [orderType, setOrderType] = useState(orderTypeMap.none);
     const [currentTime, setCurrentTime] = useState(0);

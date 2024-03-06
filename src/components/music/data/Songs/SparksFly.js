@@ -26,17 +26,17 @@ const SparksFly = () => (
             <span className="p-rel"><span className="p-abs beginning">C</span>Meet</span> me in the <span className="p-rel"><span className="p-abs beginning">G</span>pouring</span> rain<br /><br />
             <span className="p-rel"><span className="p-abs beginning">Am</span>Kiss</span> me on the sidewalk<br /><br />
             <span className="p-rel"><span className="p-abs beginning">F</span>Take</span> away the pain<br /><br />
-            'Cause <span className="p-rel"><span className="p-abs beginning">C</span> I </span> see, <span className="p-rel"><span className="p-abs beginning">G</span>sparks</span> fly, when<span className="p-rel"><span className="p-abs beginning">Am</span>ever</span> you smile<span className="p-rel"><span className="p-abs beginning">F</span></span><br /><br />
+            'Cause <span className="p-rel"><span className="p-abs beginning">C</span> I </span> see, <span className="p-rel"><span className="p-abs beginning">G</span>sparks</span> fly, when<span className="p-rel"><span className="p-abs beginning">Am</span>ever</span> you <span className="p-rel">smile<span className="p-abs ending">F</span></span><br /><br />
             Get me with those<span className="p-rel"><span className="p-abs beginning">C</span> green</span> eyes, baby<br /><br />
             As the<span className="p-rel"><span className="p-abs beginning">G</span> lights</span> go down<br /><br />
             Gimme <span className="p-rel"><span className="p-abs beginning">Am</span> something</span> that'll haunt me<span className="p-rel"><span className="p-abs beginning">F</span></span><br /><br />
             When you're not <span className="p-rel"><span className="p-abs beginning">C</span> around</span><br /><br />
-            'Cause<span className="p-rel"><span className="p-abs beginning">G</span> I </span> see, <span className="p-rel"><span className="p-abs beginning">Am</span>sparks</span> fly, when<span className="p-rel"><span className="p-abs beginning">F</span>ever</span> you <span className="p-rel"><span className="p-abs beginning">C</span>smile</span><span className="p-rel"><span className="p-abs beginning">G</span></span><br /><br />
+            'Cause<span className="p-rel"><span className="p-abs beginning">G</span>&nbsp;I </span> see, <span className="p-rel"><span className="p-abs beginning">Am</span>sparks</span> fly, when<span className="p-rel"><span className="p-abs beginning">F</span>ever</span> you <span className="p-rel"><span className="p-abs beginning">C</span>smile<span className="p-abs ending">G</span></span><br /><br />
         </p>
 
         <p>
             <strong>Verse 2:</strong>
-            <span className="p-rel"><span className="p-abs beginning">Am</span>My</span> mind forgets <span className="p-rel"><span className="p-abs beginning">F</span> to</span> remind me, <span className="p-rel"><span className="p-abs beginning">C</span>your</span> a bad idea<span className="p-rel"><span className="p-abs beginning">G</span></span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Am</span>My</span> mind forgets <span className="p-rel"><span className="p-abs beginning">F</span> to</span> remind me, <span className="p-rel"><span className="p-abs beginning">C</span>your</span> a bad <span className="p-rel">idea<span className="p-abs ending">G</span></span><br /><br />
             <span className="p-rel"><span className="p-abs beginning">Am</span>You</span> touch me once and it's <span className="p-rel"><span className="p-abs beginning">F</span> really</span> something<br /><br />
             You find <span className="p-rel"><span className="p-abs beginning">C</span> I'm</span> even better than you, <span className="p-rel"><span className="p-abs beginning">G</span> imagined</span> I would be<br /><br />
         </p>
@@ -62,7 +62,7 @@ const SparksFly = () => (
             And <span className="p-rel"><span className="p-abs beginning">Am</span> lead</span> me up the stair<span className="p-rel"><span className="p-abs beginning">F</span>case</span><br /><br />
             Won't you <span className="p-rel"><span className="p-abs beginning">C</span> whisper </span> soft and <span className="p-rel"><span className="p-abs beginning">G</span> slow</span><br /><br />
             I'm <span className="p-rel"><span className="p-abs beginning">Am</span> captivated</span> by you baby<br /><br />
-            Like a <span className="p-rel"><span className="p-abs beginning">F</span> fireworks</span> show <span className="p-rel"><span className="p-abs beginning">C</span></span><br /><br />
+            Like a <span className="p-rel"><span className="p-abs beginning">F</span> fireworks</span> <span className="p-rel">show<span className="p-abs ending">C</span></span><br /><br />
         </p>
 
         <p>

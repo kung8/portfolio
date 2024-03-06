@@ -8,6 +8,7 @@ const products = require('./data/products');
 const projects = require('./data/projects');
 const recipes = require('./data/recipes');
 const recipeCategories = require('./data/recipes/constants');
+const music = require('./data/music');
 
 const data = {
     components,
@@ -16,6 +17,7 @@ const data = {
     products,
     projects,
     recipes,
+    music,
     // heroes, 
 }
 

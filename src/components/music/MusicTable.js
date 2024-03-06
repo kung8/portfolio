@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { reversedSongs } from './data';
+import { lyricMap } from './data';
 import playLogo from '../../Assets/play-btn.png';
 import pauseLogo from '../../Assets/pause-btn.png';
 import documentLogo from '../../Assets/document.png';
 import { LyricsModal } from './LyricsModal';
+import { useGetData } from '../../hooks';
 
 const MusicItem = ({ song, index, selectedSong, setSelectedSong, isPlaying, setIsPlaying, handleOverlay, setSelectedLyric }) => {
     const [hover, setHover] = useState(false);
@@ -63,7 +64,7 @@ const MusicItem = ({ song, index, selectedSong, setSelectedSong, isPlaying, setI
                     alt="document" 
                     onClick={() => {
                         handleOverlay();
-                        setSelectedLyric(song);
+                        setSelectedLyric({...song, lyrics: lyricMap[song.id]});
                     }} 
                 />
             </li>
@@ -74,6 +75,8 @@ const MusicItem = ({ song, index, selectedSong, setSelectedSong, isPlaying, setI
 export const MusicTable = ({ selectedSong, setSelectedSong, setPreviousSong, isPlaying, setIsPlaying }) => {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedLyric, setSelectedLyric] = useState(null);
+
+    const { data: songs = [] } = useGetData('music');
 
     const handleOverlay = () => {
         setModalOpen(true);
@@ -110,7 +113,7 @@ export const MusicTable = ({ selectedSong, setSelectedSong, setPreviousSong, isP
                     <li className="time">Time</li>
                     <li className="lyrics">Lyrics</li>
                 </ul>
-                {reversedSongs.map((song, index) => (
+                {songs.map((song, index) => (
                     <MusicItem key={index} {...{ song, index, selectedSong, setSelectedSong, setPreviousSong, isPlaying, setIsPlaying, handleOverlay, setSelectedLyric }} />
                 ))}
             </div>

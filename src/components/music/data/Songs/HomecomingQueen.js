@@ -15,10 +15,10 @@ const HomecomingQueen = () => (
         </p>
         <p>
             <strong>Pre-Chorus 1:</strong>
-            Look <span className="p-rel"><span className="p-abs beginning">Cadd9</span>so</span> good in the dress, <span className="p-rel"><span className="p-abs beginning">G</span>zippin'</span> up the mess
-            <span className="p-rel"><span className="p-abs beginning">Em7</span>Dancin'</span> with your <span className="p-rel"><span className="p-abs beginning">Dadd4</span>best</span> foot forward
-            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Does</span> it get hard, <span className="p-rel"><span className="p-abs beginning">G</span>to'</span> have to play the part?
-            <span className="p-rel"><span className="p-abs beginning">Em7</span>Nobody's</span> feeling <span className="p-rel"><span className="p-abs beginning">Dadd4</span>sorry</span> for ya
+            Look <span className="p-rel"><span className="p-abs beginning">Cadd9</span>so</span> good in the dress, <span className="p-rel"><span className="p-abs beginning">G</span>zippin'</span> up the mess<br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Em7</span>Dancin'</span> with your <span className="p-rel"><span className="p-abs beginning">Dadd4</span>best</span> foot forward<br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Does</span> it get hard, <span className="p-rel"><span className="p-abs beginning">G</span>to'</span> have to play the part?<br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Em7</span>Nobody's</span> feeling <span className="p-rel"><span className="p-abs beginning">Dadd4</span>sorry</span> for yas
         </p>
         <p>
             <strong>Chorus 1:</strong>
@@ -38,9 +38,9 @@ const HomecomingQueen = () => (
 
         <p>
             <strong>Pre-Chorus 2</strong>
-            Look <span className="p-rel"><span className="p-abs beginning">Cadd9</span>so</span> good in the dress, <span className="p-rel"><span className="p-abs beginning">G</span>zippin'</span> up the mess
-            <span className="p-rel"><span className="p-abs beginning">Em7</span>Dancin'</span> with your <span className="p-rel"><span className="p-abs beginning">Dadd4</span>best</span> foot forward
-            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Did</span> you want the crown.  <span className="p-rel"><span className="p-abs beginning">G</span>or</span> does it weigh you down?
+            Look <span className="p-rel"><span className="p-abs beginning">Cadd9</span>so</span> good in the dress, <span className="p-rel"><span className="p-abs beginning">G</span>zippin'</span> up the mess<br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Em7</span>Dancin'</span> with your <span className="p-rel"><span className="p-abs beginning">Dadd4</span>best</span> foot forward<br /><br />
+            <span className="p-rel"><span className="p-abs beginning">Cadd9</span>Did</span> you want the crown.  <span className="p-rel"><span className="p-abs beginning">G</span>or</span> does it weigh you down?<br /><br />
             <span className="p-rel"><span className="p-abs beginning">Em7</span>Nobody's</span> feeling <span className="p-rel"><span className="p-abs beginning">Dadd4</span>sorry</span> for ya
         </p>
 

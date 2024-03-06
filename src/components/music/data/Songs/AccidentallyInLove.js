@@ -28,13 +28,13 @@ const AccidentallyInLove = () => (
             <span className="p-rel"><span className="p-abs beginning">G</span>Come</span> on, come <span className="p-rel"><span className="p-abs beginning">Am</span>on</span><br /><br />
             The <span className="p-rel"><span className="p-abs beginning">C</span>world</span> will follow <span className="p-rel"><span className="p-abs beginning">D</span>after</span><br /><br />
             <span className="p-rel"><span className="p-abs beginning">G</span>Come</span> on, come <span className="p-rel"><span className="p-abs beginning">Am</span>on</span><br /><br />
-            <span className="p-rel"><span className="p-abs beginning">C</span>'Cause</span> everybody's<span className="p-rel"><span className="p-abs beginning">D</span> after</span><span className="p-rel"><span className="p-abs beginning">Em</span> lov</span><span className="p-rel"><span className="p-abs beginning">A</span>e  </span><span className="p-rel"><span className="p-abs beginning">C</span> </span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">C</span>'Cause</span> everybody's&nbsp;<span className="p-rel"><span className="p-abs beginning">D</span> after</span><span className="p-rel"><span className="p-abs beginning">Em</span>&nbsp;love<span className="p-abs ending long">A&nbsp;C</span></span>
         </p>
 
         <p>
             <strong>Verse 2:</strong>
             <span className="p-rel"><span className="p-abs beginning">G</span>So</span> I said I'm <span className="p-rel"><span className="p-abs beginning">C</span>a</span> snowball running<br /><br />
-            <span className="p-rel"><span className="p-abs beginning">G</span>Running</span> down into the <span className="p-rel"><span className="p-abs beginning">C</span></span><br /><br />
+            <span className="p-rel"><span className="p-abs beginning">G</span>Running</span> down into <span className="p-rel">the<span className="p-abs ending">C</span></span><br /><br />
             spring that's coming all <span className="p-rel"><span className="p-abs beginning">Em</span>this</span> love<br /><br />
             Melting under <span className="p-rel"><span className="p-abs beginning">A</span>blue</span> skies belting out <span className="p-rel"><span className="p-abs beginning">C</span>sunlight</span><br /><br />
             shimmering <span className="p-rel"><span className="p-abs beginning">G</span>love</span><br /><br />
@@ -61,10 +61,10 @@ const AccidentallyInLove = () => (
 
         <p>
             <strong>Bridge 2:</strong>
-            We're accidentally <span className="p-rel"><span className="p-abs beginning">G</span>in</span> love <span className="p-rel"><span className="p-abs beginning">C</span></span><br /><br />
-            We're accidentally <span className="p-rel"><span className="p-abs beginning">Em</span>in</span> love <span className="p-rel"><span className="p-abs beginning">D</span></span><br /><br />
-            We're accidentally <span className="p-rel"><span className="p-abs beginning">G</span>in</span> love <span className="p-rel"><span className="p-abs beginning">C</span></span><br /><br />
-            We're accidentally <span className="p-rel"><span className="p-abs beginning">Em</span>in</span> love <span className="p-rel"><span className="p-abs beginning">D</span></span><br /><br />
+            We're accidentally <span className="p-rel"><span className="p-abs beginning">G</span>in</span> <span className="p-rel">love<span className="p-abs ending">C</span></span><br /><br />
+            We're accidentally <span className="p-rel"><span className="p-abs beginning">Em</span>in</span> <span className="p-rel">love<span className="p-abs ending">D</span></span><br /><br />
+            We're accidentally <span className="p-rel"><span className="p-abs beginning">G</span>in</span> <span className="p-rel">love<span className="p-abs ending">C</span></span><br /><br />
+            We're accidentally <span className="p-rel"><span className="p-abs beginning">Em</span>in</span> <span className="p-rel">love<span className="p-abs ending">D</span></span><br /><br />
         </p>
     </div>
 );
