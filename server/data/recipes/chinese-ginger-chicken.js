@@ -1,4 +1,5 @@
 const gingerChicken = '../assets/Products/ginger-chicken.jpeg';
+const stored = '../assets/Products/stored-ginger-chicken.jpeg';
 const { CATEGORIES, SECTIONS } = require("./constants");
 
 module.exports = {
@@ -28,7 +29,7 @@ module.exports = {
     directions: [
         { step: 'Place wok on stove over medium heat, be careful there may be a moderate amount of splashing oil.', type: SECTIONS.MAIN },
         { step: 'Add half of the minced garlic into the wok and cook until fragrant, about 30 seconds.', type: SECTIONS.MAIN },
-        { step: 'Cook the chicken in two batches. Add the chicken into the wok, and make sure it\'s a single layer.', type: SECTIONS.MAIN },
+        { step: 'Cook the chicken in two batches. Add the chicken into the wok, and make sure it\'s a single layer.', type: SECTIONS.MAIN, img: stored },
         { step: 'Add salt and pepper as desired. If you are using low-sodium soy sauce, you can be a little more generous with the salt.', type: SECTIONS.MAIN },
         { step: 'Do not mix or stir too frequently. We want it to brown and smoke a little (about 3 to 5 minutes).', type: SECTIONS.MAIN },
         { step: 'Once the chicken begins to brown, flip the chicken and continue cooking until it begins to brown on that side.', type: SECTIONS.MAIN },

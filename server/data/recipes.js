@@ -1,5 +1,5 @@
 const americanOmelette = require("./recipes/american-omelette");
-const chineseBao = require("./recipes/chinese-bao");
+const bakedChicken = require("./recipes/baked-chicken");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefStroganoff = require("./recipes/beef-stroganoff");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
@@ -13,6 +13,7 @@ const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
 const chili = require("./recipes/chili");
+const chineseBao = require("./recipes/chinese-bao");
 const chineseBokChoyChicken = require("./recipes/chinese-bok-choy-chicken");
 const chineseGreenBeanBeef = require("./recipes/chinese-green-bean-beef");
 const chineseGingerChicken = require("./recipes/chinese-ginger-chicken");
@@ -87,15 +88,16 @@ const recipes = [
     koreanFriedChicken,
     vietnameseBanhMiSandwich,
     malaysianLemonChicken,
-    chineseBokChoyChicken,
+    chineseBokChoyChicken, // TODO: add
     chineseGingerChicken,
     chineseSourChickenSoup,
     chineseLoMeinNoodles,
+    peruvianAjiDeGallina,
     lemonChickenOnLettuce,
     pepperSteak,
     hospitalityChicken,
-    peruvianAjiDeGallina,
-    chineseBao,
+    bakedChicken,
+    chineseBao, // TODO: add
     vietnameseBanhTieu,
     italianLasagna,
     indianChickenTikkaMasala,
@@ -105,9 +107,9 @@ const recipes = [
     malaysianKebabs,
     pizza,
     italianTurkeyMeatballSpinachTortelliniSoup,
-    cilantroLimeRice,
+    cilantroLimeRice, // TODO: add
     tacoInABag,
-    cafeRioSalad,
+    cafeRioSalad, // TODO: add
     beefStroganoff,
     chickenAlfredo,
     phillyCheesesteak,
@@ -121,7 +123,7 @@ const recipes = [
     macaroniSalad,
     frenchCrepe,
     frenchToast,
-    soupBowl,
+    soupBowl, // TODO: add
     cheeseballs,
     garlicBreadsticks,
     biscuitsAndGravy,
@@ -138,7 +140,7 @@ const recipes = [
     smoothie,
     chocolateChipCookies,
     brownies,
-    riceCrispyBall,
+    riceCrispyBall, // TODO: add
     graveyardDessert,
     smores,
 ]
