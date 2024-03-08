@@ -129,6 +129,9 @@ export const Recipe = ({ history, match }) => {
                     Back to Recipes
                 </span>
                 <h1 className="heading">{item?.name ?? ''}</h1>
+                {item?.recipeCredit && (
+                    <h4 className="recipe-credit">Credit to {item.recipeCredit}</h4>
+                )}
             </div>
             {item && isLoaded ? (
                 <div className="recipe-details">

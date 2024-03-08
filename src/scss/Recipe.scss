@@ -20,6 +20,19 @@
         display: none; /* Chrome, Safari, Opera */
     }
 
+    .heading-container {
+        margin-bottom: 40px;
+        
+        .heading {
+            margin-bottom: 8px;
+        }
+
+        .recipe-credit {
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+
     .recipe-details {
         .recipe-image, .additional-recipe-image, .additional-recipe-video {
             width: 350px;
