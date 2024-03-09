@@ -6,6 +6,7 @@ const periodicTable = '../assets/Components/periodic-table.png';
 const playingCard = '../assets/Components/8-of-hearts.png';
 // const kronos = '../assets/Components/kronos.png';
 const selector = '../assets/Components/selector.png';
+const sinker = '../assets/Components/sinker.png';
 
 const components = [
     {
@@ -112,6 +113,21 @@ const components = [
         ],
         images: [battleship],
         url: 'https://buddingacorn.dev/#/products/games/14',
+        hosted: true,
+        show: true,
+    },
+    {
+        organization: 'Sinker',
+        bullets: [
+            'The reusable keyboard component has been used in a few of my apps and it\'s been amazing seeing it evolve and still do all of the things that it does. The water filling is using a basic css keyframe and animation. Enjoy this mental exercise to guess the random word.',
+        ],
+        chips: [
+            'React JS',
+            'Toast',
+            'Sass',
+        ],
+        images: [sinker],
+        url: 'https://buddingacorn.dev/#/products/games/17',
         hosted: true,
         show: true,
     },
