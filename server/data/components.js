@@ -1,10 +1,11 @@
-const playingCard = '../assets/Components/8-of-hearts.png';
-const guitar = '../assets/Components/guitar.png';
 const battleship = '../assets/Components/battleship.png';
+const connect4 = '../assets/Components/connect-4.png';
+const genericScoreSheet = '../assets/Components/generic-score-sheet.png';
+const guitar = '../assets/Components/guitar.png';
 const periodicTable = '../assets/Components/periodic-table.png';
+const playingCard = '../assets/Components/8-of-hearts.png';
 // const kronos = '../assets/Components/kronos.png';
 const selector = '../assets/Components/selector.png';
-const genericScoreSheet = '../assets/Components/generic-score-sheet.png';
 
 const components = [
     {
@@ -111,6 +112,23 @@ const components = [
         ],
         images: [battleship],
         url: 'https://buddingacorn.dev/#/products/games/14',
+        hosted: true,
+        show: true,
+    },
+    {
+        organization: 'Connect 4',
+        bullets: [
+            'This one was a fun one to build. I initially built some recursion logic for Tic Tac Toe, with Connect 4 in mind. It was really cool to drop in the Connect 4 component and alter a few things to make the basic game play work.',
+        ],
+        chips: [
+            'React JS',
+            'Toast',
+            'Sockets',
+            'Sass',
+            'Crypto JS'
+        ],
+        images: [connect4],
+        url: 'https://buddingacorn.dev/#/products/games/19',
         hosted: true,
         show: true,
     },
