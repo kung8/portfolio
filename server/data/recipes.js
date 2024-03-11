@@ -59,6 +59,7 @@ const smores = require("./recipes/smores");
 const soupBowl = require("./recipes/soup-bowl");
 const sushi = require("./recipes/sushi");
 const tacoInABag = require("./recipes/taco-in-a-bag");
+const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
 const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich");
 const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
 const vietnamesePho = require("./recipes/vietnamese-pho");
@@ -139,6 +140,7 @@ const recipes = [
     parfait,
     smoothie,
     chocolateChipCookies,
+    tedLassoBiscuits,
     brownies,
     riceCrispyBall, // TODO: add
     graveyardDessert,

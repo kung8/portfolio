@@ -1,10 +1,10 @@
-// const chili = '../assets/Products/chili-placeholder.png';
+const chili = '../assets/Products/chili.jpeg';
 const { CATEGORIES, SECTIONS } = require("./constants");
 
 module.exports = {
     cardName: 'Chili',
     name: 'Chili',
-    // img: chili,
+    img: chili,
     available: true,
     type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: '6 servings',
@@ -17,7 +17,7 @@ module.exports = {
         { name: 'garlic cloves', amount: '4', additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
         { name: 'chili powder', amount: '2 1/2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'cumin', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'green bell pepper', amount: '1', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'green bell pepper', amount: '1', additionalDetails: 'diced', optional: false, section: SECTIONS.MAIN },
         { name: 'crushed tomatoes', amount: '14.5 oz can', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'kidney beans', amount: '20 oz', additionalDetails: 'drained and rinsed', optional: false, section: SECTIONS.MAIN },
         { name: 'diced tomatoes', amount: '14.5 oz can', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
