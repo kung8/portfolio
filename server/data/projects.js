@@ -131,7 +131,7 @@ const projects = [
             'Redux Persist',
             'React Router Dom',
         ],
-        url: 'https://yourmove.dev',
+        url: 'http://159.65.98.93:5432/#/',
         domain: true,
         hosted: true,
         show: true,

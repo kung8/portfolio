@@ -64,7 +64,7 @@ const components = [
             'Sass',
         ],
         images: [playingCard],
-        url: 'https://yourmove.dev/#/game/Black%20Jack',
+        url: 'https://buddingacorn.dev/#/products/games/21',
         hosted: true,
         show: true,
     },
