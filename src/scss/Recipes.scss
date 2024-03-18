@@ -8,6 +8,11 @@
     overflow-x: hidden;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+
+    &.isLoading {
+        overflow-y: hidden;
+    }
+
     .heading-container {
         display: flex;
         justify-content: space-between;
@@ -243,6 +248,19 @@
                     font-size: 16px;
                 }
             }
+        }
+    }
+
+    .loader-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        .watermelon {
+            transform: unset;
+            position: relative;
+            left: unset;
+            top: unset;
         }
     }
 }

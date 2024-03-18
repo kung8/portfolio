@@ -20,6 +20,10 @@
         display: none; /* Chrome, Safari, Opera */
     }
 
+    &.isLoading {
+        overflow-y: hidden;
+    }
+
     .heading-container {
         margin-bottom: 40px;
         
@@ -148,6 +152,19 @@
                     color: $primary-blue;
                 }
             }
+        }
+    }
+
+    .loader-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        .watermelon {
+            transform: unset;
+            position: relative;
+            left: unset;
+            top: unset;
         }
     }
 }

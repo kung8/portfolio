@@ -123,7 +123,7 @@ export const Recipe = ({ history, match }) => {
     }
 
     return (
-        <div className='recipe page'>
+        <div className={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
             <div className="heading-container">
                 <span className='back-btn' onClick={() => history.push('/recipes')}>
                     Back to Recipes
@@ -276,8 +276,11 @@ export const Recipe = ({ history, match }) => {
                         </div>
                     ) : null}
                 </div>
-            ) : <Loader />
-            }
+            ) : (
+                <div className="loader-container">
+                    <Loader />
+                </div>
+            )}
             {/* <Cursor /> */}
         </div >
     )

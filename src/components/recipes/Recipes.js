@@ -52,7 +52,7 @@ export const Recipes = ({ history }) => {
     const convertNameToId = (name) => name.toLowerCase().split(' ').join('-');
 
     return (
-        <div className='recipes page'>
+        <div className={`recipes page ${isLoaded ? '' : 'isLoading'}`}>
             <div className="heading-container">
                 <div>
                     <span className='back-btn' onClick={() => history.push('/')}>
@@ -72,7 +72,6 @@ export const Recipes = ({ history }) => {
                 </div>
             </div>
 
-            
             {/* <div className="filter-container">
                 <h4>Category:</h4>
                 <select id="category" name="category">
@@ -99,7 +98,6 @@ export const Recipes = ({ history }) => {
                     ))}
                 </div>
             </div> */}
-           
 
             {filteredRecipes.length && isLoaded ? (
                 <div className="recipe-items-container">
@@ -107,7 +105,11 @@ export const Recipes = ({ history }) => {
                         <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertNameToId(item.name))} />
                     )}
                 </div>
-            ) : <Loader />}
+            ) : (
+                <div className="loader-container">
+                    <Loader />
+                </div>
+            )}
             {/* <Cursor /> */}
         </div>
     )
