@@ -13,8 +13,8 @@ module.exports = {
     ingredients: [
         { name: 'fettuccine noodles', amount: '12 oz', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'olive oil (for tossing and sauteing)', amount: '', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'green bell pepper', amount: '2/3', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'onion', amount: '1/2', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'green bell pepper', amount: '2', additionalDetails: 'diced', optional: false, section: SECTIONS.MAIN },
+        { name: 'onion', amount: '1/2', additionalDetails: 'diced', optional: false, section: SECTIONS.MAIN },
         { name: 'chicken breast', amount: '2', additionalDetails: 'sliced', optional: false, section: SECTIONS.MAIN },
         { name: 'heavy cream', amount: '2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'butter', amount: '4 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
