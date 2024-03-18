@@ -1,8 +1,10 @@
+const alfredo = '../assets/Products/chicken-alfredo.jpeg';
 const { CATEGORIES, SECTIONS } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Alfredo',
     name: 'Chicken Alfredo',
+    img: alfredo,
     available: true,
     type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     yields: '4 servings',

@@ -3,7 +3,7 @@ const connect4 = '../assets/Components/connect-4.png';
 const genericScoreSheet = '../assets/Components/generic-score-sheet.png';
 const guitar = '../assets/Components/guitar.png';
 const periodicTable = '../assets/Components/periodic-table.png';
-const playingCard = '../assets/Components/displayed-cards.png';
+const blackjack = '../assets/Components/blackjack.png';
 // const kronos = '../assets/Components/kronos.png';
 const selector = '../assets/Components/selector.png';
 const sinker = '../assets/Components/sinker.png';
@@ -63,7 +63,7 @@ const components = [
             'React Redux',
             'Sass',
         ],
-        images: [playingCard],
+        images: [blackjack],
         url: 'https://buddingacorn.dev/#/products/games/21',
         hosted: true,
         show: true,
