@@ -1,10 +1,11 @@
 const battleship = '../assets/Components/battleship.png';
+const blackjack = '../assets/Components/blackjack.png';
 const connect4 = '../assets/Components/connect-4.png';
 const genericScoreSheet = '../assets/Components/generic-score-sheet.png';
 const guitar = '../assets/Components/guitar.png';
-const periodicTable = '../assets/Components/periodic-table.png';
-const blackjack = '../assets/Components/blackjack.png';
 // const kronos = '../assets/Components/kronos.png';
+const mancala = '../assets/Components/mancala.png';
+const periodicTable = '../assets/Components/periodic-table.png';
 const selector = '../assets/Components/selector.png';
 const sinker = '../assets/Components/sinker.png';
 
@@ -145,6 +146,23 @@ const components = [
         ],
         images: [connect4],
         url: 'https://buddingacorn.dev/#/products/games/19',
+        hosted: true,
+        show: true,
+    },
+    {
+        organization: 'Mancala',
+        bullets: [
+            'I revamped the Mancala game that I built when I first started coding. I added sockets to be played in real time with friends.',
+        ],
+        chips: [
+            'React JS',
+            'Toast',
+            'Sockets',
+            'Sass',
+            'Crypto JS'
+        ],
+        images: [mancala],
+        url: 'https://buddingacorn.dev/#/products/games/23',
         hosted: true,
         show: true,
     },
