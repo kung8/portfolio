@@ -83,7 +83,7 @@ const components = [
         url: 'https://kevinung8.com/#/selector',
         hosted: true,
         show: true,
-        borderAdded: true,
+        borderAdded: false,
     },
     {
         organization: 'Generic Score Sheet',
@@ -98,7 +98,7 @@ const components = [
         images: [genericScoreSheet],
         url: 'https://buddingacorn.dev/#/resources/recreation/scoresheet',
         hosted: true,
-        show: true,
+        show: false,
     },
     {
         organization: 'Battleship',
@@ -164,7 +164,7 @@ const components = [
         images: [mancala],
         url: 'https://buddingacorn.dev/#/products/games/23',
         hosted: true,
-        show: true,
+        show: false,
     },
 ];
 
