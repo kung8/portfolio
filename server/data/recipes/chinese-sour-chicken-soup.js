@@ -18,14 +18,15 @@ module.exports = {
     supplies: [
         { name: 'stove' },
         { name: 'cutting board and cleaver' },
-        { name: 'pressure cooker' },
+        { name: 'large pot' },
         { name: 'small bowl' },
         { name: 'spatula' },
     ],
     directions: [
         { step: 'Cut up chicken using cleaver knife into about 1" thick pieces.', type: SECTIONS.MAIN },
-        { step: 'Place chicken into pressure cooker pot and fill with water.', type: SECTIONS.MAIN },
-        { step: 'Set pressure cooker on "soup" mode (which may differ between pressure cooker brand but it\'s so the chicken isn\'t too soft).', type: SECTIONS.MAIN },
+        { step: 'Place chicken into pot and fill with water.', type: SECTIONS.MAIN },
+        { step: 'Let the chicken boil for about 30 minutes.', type: SECTIONS.MAIN },
+        { step: 'Skim off the froth that develops on the top using a shallow spatula.', type: SECTIONS.MAIN },
         { step: 'Ladle out about 1.5 cup of the soup for the sour mix. Pour in tamarind powder and lime juice and mix together.', type: SECTIONS.MAIN },
         { step: 'When ready to eat, add sour mixture to the soup (as desired).', type: SECTIONS.MAIN },
         { step: 'Serve soup over rice and enjoy this nostalgic piece of home for me.', type: SECTIONS.MAIN },

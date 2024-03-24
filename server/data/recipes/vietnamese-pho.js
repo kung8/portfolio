@@ -35,9 +35,10 @@ module.exports = {
         { name: 'liquid measuring cup' },
     ],
     directions: [
-        { step: 'Over high heat, place beef, broth, salt and pepper in a large pot and bring to a boil. Cover with a lid.', type: SECTIONS.MAIN },
+        { step: 'Over high heat, place beef, broth, salt and pepper in a large pot and bring to a boil.', type: SECTIONS.MAIN },
         { step: 'Add the onion to the pot.', type: SECTIONS.MAIN },
-        { step: 'Check occasionally, but the beef should turn a nice brown color (and bloodless), and the broth should be boiling. Note: do not check too often to prevent the steam from releasing.', type: SECTIONS.MAIN },
+        { step: 'Check occasionally, but the beef should turn a nice brown color (and bloodless), and the broth should be boiling.', type: SECTIONS.MAIN },
+        { step: 'Skim off the froth that develops on the top using a shallow spatula.', type: SECTIONS.MAIN },
         { step: 'When the beef is getting close to being cooked, start boiling another medium pot of water with salt for the noodles. Note: the noodles will need to be completely submerged in the boiling water so make sure that the strainer will sink low enough in the water. You may need to add more water.', type: SECTIONS.MAIN },
         { step: 'When the beef is cooked, lower the heat to a warm heat.', type: SECTIONS.MAIN },
         { step: 'Once the water in the medium pot begins to boil, put the strainer in the pot with some of the noodle (best to cook the noodles in batches so it can cook thoroughly).', type: SECTIONS.MAIN },
