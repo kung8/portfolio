@@ -31,10 +31,12 @@ const SECTIONS = {
     RICE: 'Rice',
     FILLING: 'Filling',
     DOUGH: 'Dough',
+    CRUST: 'Crust',
     BREAD: 'Bread',
     DRESSING: 'Dressing',
     DRY_RUB: 'Dry Rub',
     WET_RUB: 'Wet Rub',
+    SERVE: 'Serve',
 };
 
 const CATEGORIES = {

@@ -9,6 +9,7 @@ const cafeRioSalad = require("./recipes/cafe-rio-salad");
 const caramelizedOnion = require("./recipes/caramelized-onion");
 const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 const cheeseballs = require("./recipes/cheeseballs");
+const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
 const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
@@ -139,6 +140,7 @@ const recipes = [
     wrap,
     parfait,
     smoothie,
+    cheesecake,
     chocolateChipCookies,
     tedLassoBiscuits,
     brownies,
