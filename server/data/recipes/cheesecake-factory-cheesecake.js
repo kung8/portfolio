@@ -18,7 +18,7 @@ module.exports = {
     cookTime: '2 h',
     ingredients: [
         { name: 'cooking spray', amount: '', additionalDetails: '', optional: false, section: SECTIONS.CRUST },
-        { name: 'graham crackers', amount: '18', additionalDetails: 'finely crushed', optional: false, section: SECTIONS.CRUST },
+        { name: 'graham crackers', amount: '14.4 oz', additionalDetails: 'finely crushed', optional: false, section: SECTIONS.CRUST },
         { name: 'sugar', amount: '6 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.CRUST },
         { name: 'butter', amount: '12 Tbsp', additionalDetails: 'melted', optional: false, section: SECTIONS.CRUST },
         { name: 'cream cheese', amount: '32 oz', additionalDetails: 'softened', optional: false, section: SECTIONS.FILLING },
