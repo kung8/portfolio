@@ -28,7 +28,7 @@ module.exports = {
         { name: 'sour cream', amount: '8 oz', additionalDetails: '', optional: false, section: SECTIONS.FILLING },
         { name: 'all-purpose flour', amount: '2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.FILLING },
         { name: 'salt', amount: '1/4 tsp', additionalDetails: '', optional: false, section: SECTIONS.FILLING },
-        { name: 'strawberries', amount: '1 lb', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
+        { name: 'strawberries', amount: '1 lb', additionalDetails: 'halved', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'cornstarch', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'warm water', amount: '1/4 c', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'sugar', amount: '1/4 c', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
