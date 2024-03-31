@@ -44,6 +44,7 @@ export const Recipes = ({ history }) => {
         }
         return () => {
             setIsLoaded(false);
+            setSearch('');
         }
         // eslint-disable-next-line
     }, []);

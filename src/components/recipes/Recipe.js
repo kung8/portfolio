@@ -27,6 +27,8 @@ export const Recipe = ({ history, match }) => {
         }
         return () => {
             setIsLoaded(false);
+            setSelectedFigure(null);
+            setSelectedFigureLabel(null);
         }
         // eslint-disable-next-line
     }, []);
