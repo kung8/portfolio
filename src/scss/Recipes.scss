@@ -188,7 +188,7 @@
                     margin-right: 4px;
                 }
             }
-            @include down($small-small) {
+            @include down($mobile) {
                 width: calc(100% - 8px);
                 // targeting the first of the two multiples
                 &:nth-of-type(2n + 1) {
