@@ -1,12 +1,16 @@
 const hospitalityChicken = '../assets/Products/hospitality-chicken.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Hospitality Chicken',
     name: 'Hospitality Chicken',
     img: hospitalityChicken,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.SOUTHERN],
+    method: [METHODS.AIR_FRY],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.RICE],
     yields: '6 servings',
     prepTime: '5 m',
     cookTime: '25 - 40 m',

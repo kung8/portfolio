@@ -1,12 +1,14 @@
 // const cheeseBalls = '../assets/Products/cheese-balls.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Buttermilk Syrup',
     name: 'Buttermilk Syrup',
     // img: cheeseBalls,
     available: true,
-    type: [CATEGORIES.SAUCE, CATEGORIES.BREAKFAST],
+    category: [CATEGORIES.SAUCE, CATEGORIES.BREAKFAST],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BOIL],
     yields: '6 servings',
     prepTime: '5 m',
     cookTime: '5 m',

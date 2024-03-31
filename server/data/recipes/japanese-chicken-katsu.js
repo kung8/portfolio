@@ -1,5 +1,5 @@
 const katsu = '../assets/Products/katsu-full.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Katsu',
@@ -7,7 +7,11 @@ module.exports = {
     recipeCredit: 'Aldin Pope',
     img: katsu,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.JAPANESE],
+    method: [METHODS.DEEP_FRY],
+    protein: [PROTEIN.ALTERNATIVE],
+    type: [TYPES.RICE],
     yields: '4 servings',
     prepTime: '15 m',
     cookTime: '15 - 20 m',

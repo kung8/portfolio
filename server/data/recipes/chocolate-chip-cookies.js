@@ -1,13 +1,15 @@
 const cookieDough = '../assets/Products/cookie-dough.jpeg';
 const cookies = '../assets/Products/chocolate-chip-cookies.jpeg';
-const {CATEGORIES, SECTIONS } = require("./constants");
+const {CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Chocolate Chip Cookies',
     name: 'Chocolate Chip Cookies',
     img: cookies,
     available: true,
-    type: [CATEGORIES.DESSERT],
+    category: [CATEGORIES.DESSERT],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKE],
     yields: '3-4 dozens',
     prepTime: '10 m',
     cookTime: '10 m',

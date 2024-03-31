@@ -1,12 +1,14 @@
 const parfait = '../assets/Products/parfait.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Parfait',
     name: 'Parfait',
     img: parfait,
     available: true,
-    type: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT, CATEGORIES.SNACK],
+    category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT, CATEGORIES.SNACK],
+    genre: [GENRES.AMERICAN, GENRES.EUROPEAN],
+    method: [METHODS.RAW],
     yields: '2 servings',
     prepTime: '1 m',
     cookTime: '1 m',

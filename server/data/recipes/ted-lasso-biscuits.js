@@ -1,12 +1,14 @@
 const biscuits = '../assets/Products/ted-lasso-biscuits.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
 
 module.exports = {
     cardName: 'Lasso Biscuits',
     name: 'Ted Lasso Biscuits',
     img: biscuits,
     available: true,
-    type: [CATEGORIES.DESSERT],
+    category: [CATEGORIES.DESSERT],
+    genre: [GENRES.AMERICAN, GENRES.BRITISH],
+    method: [METHODS.BAKE],
     yields: '15 servings',
     prepTime: '20 m',
     cookTime: '60 m',

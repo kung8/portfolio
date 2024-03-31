@@ -1,12 +1,15 @@
 const roast = '../assets/Products/roast.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
 
 module.exports = {
     cardName: 'Pot Roast',
     name: 'Pot Roast',
     img: roast,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKE],
+    protein: [PROTEIN.BEEF],
     yields: '6 servings',
     prepTime: '15 m',
     cookTime: '4 h 15 m',

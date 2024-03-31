@@ -1,12 +1,16 @@
 const lasagna = '../assets/Products/lasagna.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Lasagna',
     name: 'Italian Lasagna',
     img: lasagna,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ITALIAN],
+    method: [METHODS.BAKE],
+    protein: [PROTEIN.BEEF, PROTEIN.PORK],
+    type: [TYPES.NOODLE],
     yields: '12 servings',
     prepTime: '15 m',
     cookTime: '3 h',

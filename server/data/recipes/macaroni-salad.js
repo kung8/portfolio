@@ -1,12 +1,15 @@
 const macaroni = '../assets/Products/macaroni-salad.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
 
 module.exports = {
     cardName: 'Macaroni Salad',
     name: 'Macaroni Salad',
     img: macaroni,
     available: true,
-    type: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
+    category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BOIL],
+    type: [TYPES.NOODLE],
     yields: '10 servings',
     prepTime: '20 m',
     cookTime: '10 m',

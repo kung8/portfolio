@@ -4,14 +4,16 @@ const frozenDough = '../assets/Products/frozen-pizza-dough.jpeg';
 const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
 const pizzaSpread = '../assets/Products/pizza-spread.jpeg';
 const tossing = '../assets/Products/pizza-toss.MOV';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Homemade Pizza',
     name: 'Homemade Pizza',
     img: pizza,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ITALIAN],
+    method: [METHODS.BAKE],
     yields: '6 - 8 servings',
     prepTime: '45 m',
     cookTime: '25 m',

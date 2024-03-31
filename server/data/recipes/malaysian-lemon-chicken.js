@@ -1,12 +1,16 @@
 const lemonChicken = '../assets/Products/lemon-chicken.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Lemon Chicken',
     name: 'Malaysian Lemon Chicken',
     img: lemonChicken,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.MALAYSIAN],
+    method: [METHODS.DEEP_FRY, METHODS.MARINADE],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.RICE],
     yields: '10 servings',
     prepTime: '10 m',
     cookTime: '10 m',

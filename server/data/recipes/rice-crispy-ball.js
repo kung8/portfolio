@@ -1,12 +1,14 @@
 const riceCrispyBall = '../assets/Products/rice-crispy-ball.jpeg';
-const { CATEGORIES } = require("./constants");
+const { CATEGORIES, GENRES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: riceCrispyBall,
     available: false,
-    type: [CATEGORIES.DESSERT],
+    category: [CATEGORIES.DESSERT],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.PAN_FRY],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

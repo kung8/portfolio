@@ -1,12 +1,15 @@
 const beefStroganoff = '../assets/Products/beef-stroganoff.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS } = require('./constants');
 
 module.exports = {
     cardName: 'Beef Stroganoff',
     name: 'Beef Stroganoff',
     img: beefStroganoff,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BOIL, METHODS.PAN_FRY],
+    type: [TYPES.NOODLE],
     yields: '7 servings',
     prepTime: '10 - 12 m',
     cookTime: '45 m',

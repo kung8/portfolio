@@ -1,12 +1,15 @@
 const scrambledEggs = '../assets/Products/scrambled-eggs.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Scrambled Eggs',
     name: 'Scrambled Eggs',
     img: scrambledEggs,
     available: true,
-    type: [CATEGORIES.BREAKFAST],
+    category: [CATEGORIES.BREAKFAST],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.PAN_FRY],
+    protein: [PROTEIN.EGG],
     yields: '1 serving',
     prepTime: '5 m',
     cookTime: '12 - 15 m',

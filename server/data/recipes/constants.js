@@ -2,6 +2,7 @@ const GENRES = {
     AMERICAN: 'American',
     ASIAN: 'Asian',
     EUROPEAN: 'European',
+    BRITISH: 'British',
     AFRICAN: 'African',
     MIDDLE_EASTERN: 'Middle Eastern',
     LATIN: 'Latin',
@@ -21,6 +22,12 @@ const GENRES = {
     INDONESIAN: 'Indonesian',
     MALAYSIAN: 'Malaysian',
     SINGAPOREAN: 'Singaporean',
+    PERUVIAN: 'Peruvian',
+    BRAZILIAN: 'Brazilian',
+    SOUTHERN: 'Southern',
+    CAJUN: 'Cajun',
+    BBQ: 'BBQ',
+    WESTERN: 'Western',
 };
 
 const SECTIONS = {
@@ -52,8 +59,77 @@ const CATEGORIES = {
     TOPPING: 'Topping',
 };
 
+const TYPES = {
+    NOODLE: 'Noodle',
+    RICE: 'Rice',
+    SANDWICH: 'Sandwich',
+    SOUP: 'Soup',
+    SALAD: 'Salad',
+    CURRY: 'Curry',
+    BREAD: 'Bread',
+    WRAP: 'Wrap',
+    CASSEROLE: 'Casserole',
+}
+
+const METHODS = {
+    AIR_FRY: 'Air Fry',
+    BAKE: 'Bake',
+    BOIL: 'Boil',
+    BLEND: 'Blend',
+    DEEP_FRY: 'Deep Fry',
+    GRILL: 'Grill',
+    MARINADE: 'Marinade',
+    PAN_FRY: 'Pan Fry',
+    RAW: 'Raw',
+    ROAST: 'Roast',
+    SAUTE: 'Saute',
+    SIMMER: 'Simmer',
+    SLOW_COOK: 'Slow Cook',
+    STEAM: 'Steam',
+    STIR_FRY: 'Stir-Fry',
+}
+
+const PROTEIN = {
+    ALTERNATIVE: 'Alternative',
+    BEAN: 'Bean',
+    BEEF: 'Beef',
+    CHICKEN: 'Chicken',
+    EGG: 'Egg',
+    FISH: 'Fish',
+    LAMB: 'Lamb',
+    PEANUT: 'Peanut',
+    PORK: 'Pork',
+    SEAFOOD: 'Seafood',
+    TOFU: 'Tofu',
+    TURKEY: 'Turkey',
+}
+
+const DIET = {
+    VEGETARIAN: 'Vegetarian',
+    VEGAN: 'Vegan',
+    GLUTEN_FREE: 'Gluten-Free',
+    DAIRY_FREE: 'Dairy-Free',
+    NUT_FREE: 'Nut-Free',
+    SOY_FREE: 'Soy-Free',
+    EGG_FREE: 'Egg-Free',
+    SUGAR_FREE: 'Sugar-Free',
+    LOW_CARB: 'Low-Carb',
+    LOW_FAT: 'Low-Fat',
+    LOW_SODIUM: 'Low-Sodium',
+    LOW_SUGAR: 'Low-Sugar',
+    HIGH_PROTEIN: 'High-Protein',
+    HIGH_FIBER: 'High-Fiber',
+    KETO: 'Keto',
+    PALEO: 'Paleo',
+    WHOLE_30: 'Whole30',
+}
+
 module.exports = {
     GENRES,
     SECTIONS,
     CATEGORIES,
+    TYPES,
+    METHODS,
+    PROTEIN,
+    DIET,
 }

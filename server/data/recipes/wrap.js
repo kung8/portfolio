@@ -1,12 +1,15 @@
 const wraps = '../assets/Products/wraps.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
 
 module.exports = {
     cardName: 'Wraps',
     name: 'Wraps',
     img: wraps,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN, GENRES.WESTERN],
+    method: [METHODS.RAW],
+    type: [TYPES.WRAP],
     yields: '1 serving',
     prepTime: '1 m',
     cookTime: '2 m',

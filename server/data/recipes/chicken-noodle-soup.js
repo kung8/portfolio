@@ -1,12 +1,16 @@
 const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Soup',
     name: 'Chicken Noodle Soup',
     img: chickenNoodle,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BOIL],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.NOODLE, TYPES.SOUP],
     yields: '5 - 6 servings',
     prepTime: '6 - 8 m',
     cookTime: '40 - 45 m',

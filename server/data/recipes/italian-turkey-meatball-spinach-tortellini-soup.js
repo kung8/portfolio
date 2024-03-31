@@ -1,12 +1,16 @@
 const meatballSpinachTortelliniSoup = '../assets/Products/turkey-meatball-spinach-tortellini-soup.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Tortellini Soup',
     name: 'Turkey Meatball Spinach Tortellini Soup',
     img: meatballSpinachTortelliniSoup,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ITALIAN],
+    method: [METHODS.BOIL],
+    protein: [PROTEIN.TURKEY],
+    type: [TYPES.NOODLE, TYPES.SOUP],
     yields: '6 servings',
     prepTime: '15 m',
     cookTime: '35 m',

@@ -1,13 +1,17 @@
 const gingerChicken = '../assets/Products/ginger-chicken.jpeg';
 const stored = '../assets/Products/stored-ginger-chicken.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
 
 module.exports = {
     cardName: 'Ginger Chicken',
     name: 'Chinese Ginger Chicken',
     img: gingerChicken,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
+    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    method: [METHODS.STIR_FRY],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.RICE],
     yields: '4 servings',
     prepTime: '15 m',
     cookTime: '20 m',

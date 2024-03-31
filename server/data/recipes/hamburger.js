@@ -1,12 +1,15 @@
 const hamburger = '../assets/Products/hamburger.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, TYPES, GENRES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Hamburger',
     name: 'Hamburger',
     img: hamburger,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN, GENRES.WESTERN],
+    method: [METHODS.BAKE],
+    protein: [PROTEIN.BEEF],
     yields: '8 servings',
     prepTime: '5 m',
     cookTime: '50 m',

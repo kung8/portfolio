@@ -1,12 +1,15 @@
 const omelette = '../assets/Products/omelette.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Omelette',
     name: 'Omelette',
     img: omelette,
     available: true,
-    type: [CATEGORIES.BREAKFAST],
+    category: [CATEGORIES.BREAKFAST],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.PAN_FRY],
+    protein: [PROTEIN.EGG],
     yields: '1 serving',
     prepTime: '5 m',
     cookTime: '10 m',

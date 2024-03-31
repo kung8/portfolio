@@ -1,12 +1,15 @@
 const pho = '../assets/Products/pho.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Pho',
     name: 'Vietnamese Pho',
     img: pho,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.VIETNAMESE],
+    protein: [PROTEIN.BEEF],
+    type: [TYPES.NOODLE, TYPES.SOUP],
     yields: '4 servings',
     prepTime: '8 - 10 m',
     cookTime: '40 - 50 m',

@@ -1,12 +1,16 @@
 const blackPepperChicken = '../assets/Products/black-pepper-chicken.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Black Pepper Chicken',
     name: 'Malaysian Black Pepper Chicken',
     img: blackPepperChicken,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.MALAYSIAN],
+    method: [METHODS.STIR_FRY],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.RICE],
     yields: '4 - 5 servings',
     prepTime: '45 m',
     cookTime: '20 m',

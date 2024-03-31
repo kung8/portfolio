@@ -1,12 +1,16 @@
 const katsudon = '../assets/Products/katsudon.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Pork Katsudon',
     name: 'Japanese Pork Katsudon',
     img: katsudon,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.JAPANESE],
+    method: [METHODS.DEEP_FRY],
+    protein: [PROTEIN.EGG, PROTEIN.PORK],
+    type: [TYPES.RICE],
     yields: '10 servings',
     prepTime: '20 m',
     cookTime: '20 m',

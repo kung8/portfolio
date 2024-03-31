@@ -1,12 +1,14 @@
 const graveyardDessert = '../assets/Products/graveyard-dessert.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Graveyard Dessert',
     name: 'Graveyard Dessert',
     img: graveyardDessert,
     available: true,
-    type: [CATEGORIES.DESSERT],
+    category: [CATEGORIES.DESSERT],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.RAW],
     yields: ' servings',
     prepTime: '7 m',
     cookTime: '0 m',

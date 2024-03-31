@@ -1,5 +1,5 @@
 const biscuits = '../assets/Products/biscuits-and-gravy.jpeg';
-const { CATEGORIES } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
 
 const BISCUITS = 'Biscuits';
 const GRAVY = 'Gravy';
@@ -9,7 +9,11 @@ module.exports = {
     name: 'Southern Biscuits and Gravy',
     img: biscuits,
     available: true,
-    type: [CATEGORIES.BREAKFAST],
+    category: [CATEGORIES.BREAKFAST],
+    genre: [GENRES.AMERICAN, GENRES.SOUTHERN],
+    method: [METHODS.PAN_FRY, METHODS.BAKE],
+    protein: [PROTEIN.PORK],
+    type: [TYPES.BREAD],
     yields: '8 - 10 servings',
     prepTime: '20 m',
     cookTime: '15 m',

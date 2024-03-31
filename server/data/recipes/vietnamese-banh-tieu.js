@@ -1,12 +1,14 @@
 const banhTieu = '../assets/Products/banh-tieu.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS } = require('./constants');
 
 module.exports = {
     cardName: 'Banh Tieu',
     name: 'Vietnamese Banh Tieu',
     img: banhTieu,
     available: true,
-    type: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
+    category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
+    genre: [GENRES.ASIAN, GENRES.VIETNAMESE],
+    method: [METHODS.DEEP_FRY],
     yields: '10 servings',
     prepTime: '10 m',
     cookTime: '7 m',

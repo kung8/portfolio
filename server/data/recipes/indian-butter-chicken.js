@@ -1,12 +1,16 @@
 const butterChicken = '../assets/Products/butter-chicken.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Butter Chicken',
     name: 'Indian Butter Chicken',
     img: butterChicken,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.INDIAN],
+    method: [METHODS.PAN_FRY],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.CURRY, TYPES.RICE],
     yields: '4 servings',
     prepTime: '12 - 15 m',
     cookTime: '25 - 30 m',

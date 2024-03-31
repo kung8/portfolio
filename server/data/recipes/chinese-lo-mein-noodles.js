@@ -1,12 +1,16 @@
 const loMein = '../assets/Products/lo-mein-noodles.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
 
 module.exports = {
     cardName: 'Lo Mein',
     name: 'Lo Mein Noodles',
     img: loMein,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    method: [METHODS.STIR_FRY],
+    protein: [PROTEIN.BEEF],
+    type: [TYPES.NOODLE],
     yields: '8 servings',
     prepTime: '1 m',
     cookTime: '10 m',

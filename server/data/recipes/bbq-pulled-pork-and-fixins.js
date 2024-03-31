@@ -1,12 +1,16 @@
 const bbq = '../assets/Products/bbq-pulled-pork.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
 
 module.exports = {
     cardName: 'BBQ Pulled Pork',
     name: 'BBQ Pulled Pork',
     img: bbq,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN, GENRES.SOUTHERN, GENRES.BBQ],
+    method: [METHODS.SLOW_COOK],
+    protein: [PROTEIN.PORK],
+    type: [TYPES.SANDWICH],
     yields: '8 servings',
     prepTime: '30 m',
     cookTime: '6 h',

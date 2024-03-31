@@ -1,12 +1,16 @@
 const padThai = '../assets/Products/pad-thai.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Pad Thai',
     name: 'Thai Pad Thai',
     img: padThai,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.THAI],
+    method: [METHODS.STIR_FRY],
+    protein: [PROTEIN.ALTERNATIVE, PROTEIN.CHICKEN, PROTEIN.PEANUT],
+    type: [TYPES.NOODLE],
     yields: '6 serving',
     prepTime: '15 m',
     cookTime: '45 m',

@@ -1,12 +1,16 @@
 const chili = '../assets/Products/chili.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
 
 module.exports = {
     cardName: 'Chili',
     name: 'Chili',
     img: chili,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN, GENRES.MEXICAN],
+    method: [METHODS.BOIL],
+    protein: [PROTEIN.BEEF],
+    type: [TYPES.SOUP],
     yields: '6 servings',
     prepTime: '20 m',
     cookTime: '45 m',

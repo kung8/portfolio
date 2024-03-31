@@ -1,12 +1,14 @@
 const pigsInABlanket = '../assets/Products/pigs-in-a-blanket.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
 
 module.exports = {
     cardName: 'Pigs In A Blanket',
     name: 'Pigs In A Blanket',
     img: pigsInABlanket,
     available: true,
-    type: [CATEGORIES.APPETIZER],
+    category: [CATEGORIES.APPETIZER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKE],
     yields: '8 servings',
     prepTime: '10 m',
     cookTime: '15 m',

@@ -1,12 +1,15 @@
 const smoothie = '../assets/Products/smoothie.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Smoothie',
     name: 'Smoothie',
     img: smoothie,
     available: true,
-    type: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.SNACK, CATEGORIES.DINNER],
+    category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.SNACK, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BLEND],
+    protein: [PROTEIN.PEANUT],
     yields: '40 oz',
     prepTime: '1 m',
     cookTime: '2 m',

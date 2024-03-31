@@ -1,12 +1,16 @@
 const eggCasserole = '../assets/Products/egg-casserole.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
 
 module.exports = {
     cardName: 'Egg Casserole',
     name: 'Egg Casserole',
     img: eggCasserole,
     available: true,
-    type: [CATEGORIES.BREAKFAST],
+    category: [CATEGORIES.BREAKFAST],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKE],
+    protein: [PROTEIN.EGG],
+    type: [TYPES.BREAD, TYPES.CASSEROLE],
     yields: '6 servings',
     prepTime: '15 m',
     cookTime: '1 h',

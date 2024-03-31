@@ -1,12 +1,15 @@
 const kebabs = '../assets/Products/kebabs.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Kebabs',
     name: 'Malaysian Kebabs',
     img: kebabs,
     available: true,
-    type: [CATEGORIES.APPETIZER],
+    category: [CATEGORIES.APPETIZER],
+    genre: [GENRES.ASIAN, GENRES.MALAYSIAN],
+    method: [METHODS.BAKE],
+    protein: [PROTEIN.CHICKEN],
     yields: '6 servings',
     prepTime: '10 m',
     cookTime: '25 - 30 m',

@@ -1,12 +1,14 @@
 const smores = '../assets/Products/smores.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS } = require('./constants');
 
 module.exports = {
     cardName: 'S\'mores',
     name: 'S\'mores',
     img: smores,
     available: true,
-    type: [CATEGORIES.DESSERT],
+    category: [CATEGORIES.DESSERT],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKE],
     yields: '2 servings',
     prepTime: '1 m',
     cookTime: '5 m',

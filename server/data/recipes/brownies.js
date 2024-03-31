@@ -1,12 +1,14 @@
 const brownies = '../assets/Products/brownies.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Brownies',
     name: 'Brownies',
     img: brownies,
     available: true,
-    type: [CATEGORIES.DESSERT],
+    category: [CATEGORIES.DESSERT],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKE],
     yields: '12 servings',
     prepTime: '7 m',
     cookTime: '35 m',

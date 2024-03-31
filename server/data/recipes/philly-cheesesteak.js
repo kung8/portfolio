@@ -1,12 +1,16 @@
 const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Philly Cheesesteak',
     name: 'Philly Cheesesteak',
     img: phillyCheesesteak,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.PAN_FRY],
+    protein: [PROTEIN.BEEF],
+    type: [TYPES.SANDWICH],
     yields: '8 servings',
     prepTime: '10 m',
     cookTime: '20 m',

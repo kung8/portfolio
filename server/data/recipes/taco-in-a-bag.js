@@ -1,12 +1,15 @@
 const taco = '../assets/Products/taco-in-a-bag.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Taco in a Bag',
     name: 'Taco in a Bag',
     img: taco,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN, GENRES.MEXICAN],
+    method: [METHODS.PAN_FRY],
+    protein: [PROTEIN.BEEF],
     yields: '3 - 4 servings',
     prepTime: '5 - 10 m',
     cookTime: '10 m',

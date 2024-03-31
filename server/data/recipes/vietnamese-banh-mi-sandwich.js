@@ -3,7 +3,7 @@ const frenchBread = '../assets/Products/french-bread.jpeg';
 const porkLoafCut = '../assets/Products/pork-loaf-cut.jpeg';
 const porkLoafOpened = '../assets/Products/pork-loaf-opened.jpeg';
 const porkLoafWrapped = '../assets/Products/pork-loaf-wrapped.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN } = require('./constants');
 
 const PORK_LOAF = 'Pork Loaf';
 const PICKLED_VEGETABLES = 'Pickled Vegetables';
@@ -13,7 +13,10 @@ module.exports = {
     name: 'Vietnamese Banh Mi Sandwich',
     img: banhMi,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.VIETNAMESE],
+    protein: [PROTEIN.PORK],
+    type: [TYPES.SANDWICH],
     yields: '10 servings',
     prepTime: '30 m',
     cookTime: '1 h',

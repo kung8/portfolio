@@ -5,7 +5,7 @@ const drip = '../assets/Products/korean-fried-chicken-oil-drip-station.jpeg';
 const sauce = '../assets/Products/korean-fried-chicken-raw-sauce.jpeg';
 const rice = '../assets/Products/korean-fried-chicken-with-rice.jpeg';
 const chicken = '../assets/Products/korean-fried-chicken.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
 
 const SWEET_AND_TANGY_SAUCE = 'Sweet and Tangy Sauce';
 const SWEET_AND_SPICY_SAUCE = 'Sweet and Spicy Sauce';
@@ -15,7 +15,11 @@ module.exports = {
     name: 'Korean Fried Chicken',
     img: chicken,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.KOREAN],
+    method: [METHODS.MARINADE, METHODS.DEEP_FRY],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.RICE],
     yields: '5-6 servings',
     prepTime: '20 m',
     cookTime: '20 m',

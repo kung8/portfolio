@@ -1,12 +1,16 @@
 const cilantroLimeChicken = '../assets/Products/cilantro-lime-chicken.jpeg';
-const { CATEGORIES } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: cilantroLimeChicken,
     available: false,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN, GENRES.MEXICAN],
+    method: [METHODS.GRILL],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.RICE],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

@@ -1,5 +1,5 @@
 const aji = '../assets/Products/aji-de-gallina.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Aji de Gallina',
@@ -7,7 +7,11 @@ module.exports = {
     recipeCredit: 'Gaby Ward',
     img: aji,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.LATIN, GENRES.PERUVIAN],
+    method: [METHODS.BOIL],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.RICE],
     yields: '3 - 4 servings',
     prepTime: '5 m',
     cookTime: '25 - 40 m',

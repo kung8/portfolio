@@ -1,14 +1,18 @@
 const bakedChicken = '../assets/Products/baked-chicken.jpeg';
 const rawChicken = '../assets/Products/raw-chicken.jpeg';
 const pan = '../assets/Products/baked-chicken-in-pan.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
 
 module.exports = {
     cardName: 'Baked Chicken',
     name: 'Baked Chicken',
     img: bakedChicken,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKE],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.RICE],
     yields: '5 servings',
     prepTime: '5 m',
     cookTime: '50 m',

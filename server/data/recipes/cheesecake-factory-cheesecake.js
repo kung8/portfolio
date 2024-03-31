@@ -5,14 +5,16 @@ const baked = '../assets/Products/baked-cheesecake.jpeg';
 const slice = '../assets/Products/cheesecake-slice.jpeg';
 const glaze = '../assets/Products/glazed-strawberries.jpeg';
 const aerial = '../assets/Products/aerial-cheesecake.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Cheesecake',
     name: 'Cheesecake Factory Cheesecake',
     img: aerial,
     available: true,
-    type: [CATEGORIES.DESSERT],
+    category: [CATEGORIES.DESSERT],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKE],
     yields: '8 servings',
     prepTime: '45 m',
     cookTime: '2 h',

@@ -1,12 +1,14 @@
 // const cilantroLimeChicken = '../assets/Products/cilantro-lime-chicken.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Caramelized Mushroom',
     name: 'Caramelized Mushroom',
     // img: cilantroLimeChicken,
     available: true,
-    type: [CATEGORIES.TOPPING],
+    category: [CATEGORIES.TOPPING],
+    genre: [GENRES.AMERICAN, GENRES.WESTERN],
+    method: [METHODS.SAUTE],
     yields: '6 servings',
     prepTime: '2 m',
     cookTime: '20 m',

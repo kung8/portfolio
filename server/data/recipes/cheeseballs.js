@@ -3,14 +3,17 @@ const pizzaDough = '../assets/Products/pizza-dough.jpeg';
 const frozenDough = '../assets/Products/frozen-pizza-dough.jpeg';
 const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
 const tossing = '../assets/Products/pizza-toss.MOV';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Cheeseballs',
     name: 'Cheeseballs',
     img: cheeseballs,
     available: true,
-    type: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
+    category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
+    genre: [GENRES.ITALIAN],
+    method: [METHODS.BAKE],
+    type: [TYPES.BREAD],
     yields: '6 - 8 servings',
     prepTime: '45 m',
     cookTime: '20 m',

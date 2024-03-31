@@ -1,12 +1,16 @@
 const hawaiian = '../assets/Products/hawaiian-haystacks-aerial.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Hawaiian Haystacks',
     name: 'Slow-Cooked Hawaiian Haystacks',
     img: hawaiian,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.SLOW_COOK],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.RICE],
     yields: '10 - 12 servings',
     prepTime: '10 m',
     cookTime: '4.5 h',

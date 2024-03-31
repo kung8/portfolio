@@ -1,5 +1,5 @@
 const crepes = '../assets/Products/crepes.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
 
 module.exports = {
     cardName: 'Crepes',
@@ -7,7 +7,10 @@ module.exports = {
     recipeCredit: 'Sam Giraud-Carrier',
     img: crepes,
     available: true,
-    type: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.DESSERT],
+    category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.DESSERT],
+    genre: [GENRES.FRENCH],
+    method: [METHODS.PAN_FRY],
+    protein: [PROTEIN.PEANUT],
     yields: '4 - 5 servings',
     prepTime: '5 - 8 m',
     cookTime: '15 - 20 m',

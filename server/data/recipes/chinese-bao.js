@@ -1,12 +1,14 @@
 const bao = '../assets/Products/bao.jpeg';
-const { CATEGORIES } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: '',
     name: '',
     img: bao,
     available: false,
-    type: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
+    category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
+    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    method: [METHODS.STEAM],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

@@ -1,12 +1,15 @@
 const sourChicken = '../assets/Products/sour-chicken.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Sour Chicken Soup',
     name: 'Chinese Sour Chicken Soup',
     img: sourChicken,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.RICE, TYPES.SOUP],
     yields: '10 servings',
     prepTime: '10 m',
     cookTime: '1 h',

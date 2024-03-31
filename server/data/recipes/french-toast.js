@@ -1,12 +1,15 @@
 const frenchToast = '../assets/Products/french-toast.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'French Toast',
     name: 'French Toast',
     img: frenchToast,
     available: true,
-    type: [CATEGORIES.BREAKFAST],
+    category: [CATEGORIES.BREAKFAST],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.PAN_FRY],
+    type: [TYPES.BREAD],
     yields: '2 servings',
     prepTime: '5 m',
     cookTime: '8 - 10 m',

@@ -1,12 +1,14 @@
 const lunchables = '../assets/Products/fancy-lunchables.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Fancy Lunchables',
     name: 'Fancy Lunchables',
     img: lunchables,
     available: true,
-    type: [CATEGORIES.LUNCH],
+    category: [CATEGORIES.LUNCH, CATEGORIES.SNACK],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.RAW],
     yields: '1 servings',
     prepTime: '5 m',
     cookTime: '0 m',

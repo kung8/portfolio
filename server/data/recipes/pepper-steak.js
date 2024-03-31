@@ -1,12 +1,16 @@
 const pepperSteak = '../assets/Products/pepper-steak.jpeg';
-const { CATEGORIES, SECTIONS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
 
 module.exports = {
     cardName: 'Pepper Steak',
     name: 'Pepper Steak',
     img: pepperSteak,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    method: [METHODS.STIR_FRY],
+    protein: [PROTEIN.BEEF],
+    type: [TYPES.RICE],
     yields: '4 servings',
     prepTime: '10 m',
     cookTime: '25 m',

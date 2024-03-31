@@ -1,13 +1,17 @@
 const beefBulgogi = '../assets/Products/beef-bulgogi.jpeg';
 const marinating = '../assets/Products/marinating-bulgogi-beef.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Beef Bulgogi',
     name: 'Korean Beef Bulgogi',
     img: beefBulgogi,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.KOREAN],
+    method: [METHODS.MARINADE, METHODS.PAN_FRY],
+    protein: [PROTEIN.BEEF],
+    type: [TYPES.RICE],
     yields: '6 servings',
     prepTime: '8 h',
     cookTime: '25 m',

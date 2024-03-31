@@ -1,5 +1,5 @@
 const sushi = '../assets/Products/sushi.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Sushi',
@@ -7,7 +7,11 @@ module.exports = {
     recipeCredit: 'Aldin Pope',
     img: sushi,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.ASIAN, GENRES.JAPANESE],
+    method: [METHODS.RAW],
+    protein: [PROTEIN.FISH, PROTEIN.SEAFOOD],
+    type: [TYPES.RICE],
     yields: '4 servings',
     prepTime: '10 m',
     cookTime: '15 m',

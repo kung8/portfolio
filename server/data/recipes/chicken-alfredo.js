@@ -1,12 +1,16 @@
 const alfredo = '../assets/Products/chicken-alfredo.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Alfredo',
     name: 'Chicken Alfredo',
     img: alfredo,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BOIL, METHODS.PAN_FRY],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.NOODLE],
     yields: '4 servings',
     prepTime: '8 - 10 m',
     cookTime: '30 - 40 m',

@@ -1,12 +1,15 @@
 const chickenPotPie = '../assets/Products/chicken-pot-pie.jpeg';
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Pot Pie',
     name: 'Chicken Pot Pie',
     img: chickenPotPie,
     available: true,
-    type: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKE],
+    protein: [PROTEIN.CHICKEN],
     yields: '4 servings',
     prepTime: '10 m',
     cookTime: '50 m - 1 h',
