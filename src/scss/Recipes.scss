@@ -88,6 +88,7 @@
             align-items: center;
             flex-direction: column;
             margin-left: 16px;
+            cursor: pointer;
             .top-bar {
                 width: 32px;
                 height: 5px;
@@ -105,21 +106,6 @@
                 height: 5px;
                 background: $white;
             }
-        }
-    }
-
-    .filter-container {
-        width: 85%;
-        height: 80px;
-        background: $white;
-        margin: 0 auto 40px;
-        color: $primary-blue;
-        padding: 16px;
-        .filter-btn {
-            border: 1px solid $primary-blue;
-            border-radius: 20px;
-            padding: 2px 8px;
-            margin-right: 6px;
         }
     }
 
@@ -148,6 +134,9 @@
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 transition-duration: 0.15s;
                 border-radius: 4px;
+                .recipe-image {
+                    background: $hover;
+                }
             }
 
             @include down($tablet) {
@@ -212,7 +201,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: $primary-blue;
+                background: $aqua;
                 color: $black;
 
                 & > p {
@@ -246,11 +235,13 @@
                     font-size: 18px;
                 }
                 @include down($mobile) {
-                    font-size: 16px;
+                    font-size: 32px;
                 }
             }
         }
     }
+
+    @import './RecipeFilterContainer';
 
     .loader-container {
         width: 100%;
@@ -262,6 +253,23 @@
             position: relative;
             left: unset;
             top: unset;
+        }
+    }
+
+    .back-to-top-arrow {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: $white;
+        border: 1px solid $white;
+        padding: 16px;
+        color: $default;
+        z-index: 1;
+        border-radius: 50%;
+
+        img {
+            width: 50px;
+            height: 50px;
         }
     }
 }

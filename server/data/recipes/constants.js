@@ -1,3 +1,36 @@
+const CATEGORIES = {
+    BREAKFAST: 'Breakfast',
+    LUNCH: 'Lunch',
+    DINNER: 'Dinner',
+    APPETIZER: 'Appetizer',
+    SIDE_DISH: 'Side Dish',
+    SNACK: 'Snack',
+    DESSERT: 'Dessert',
+    DRINK: 'Drink',
+    SAUCE: 'Sauce',
+    TOPPING: 'Topping',
+};
+
+const DIET = {
+    VEGETARIAN: 'Vegetarian',
+    VEGAN: 'Vegan',
+    GLUTEN_FREE: 'Gluten-Free',
+    DAIRY_FREE: 'Dairy-Free',
+    NUT_FREE: 'Nut-Free',
+    SOY_FREE: 'Soy-Free',
+    EGG_FREE: 'Egg-Free',
+    SUGAR_FREE: 'Sugar-Free',
+    LOW_CARB: 'Low-Carb',
+    LOW_FAT: 'Low-Fat',
+    LOW_SODIUM: 'Low-Sodium',
+    LOW_SUGAR: 'Low-Sugar',
+    HIGH_PROTEIN: 'High-Protein',
+    HIGH_FIBER: 'High-Fiber',
+    KETO: 'Keto',
+    PALEO: 'Paleo',
+    WHOLE_30: 'Whole30',
+}
+
 const GENRES = {
     AMERICAN: 'American',
     ASIAN: 'Asian',
@@ -29,47 +62,6 @@ const GENRES = {
     BBQ: 'BBQ',
     WESTERN: 'Western',
 };
-
-const SECTIONS = {
-    MAIN: 'Main',
-    MARINADE: 'Marinade',
-    SAUCE: 'Sauce',
-    TOPPINGS: 'Toppings',
-    RICE: 'Rice',
-    FILLING: 'Filling',
-    DOUGH: 'Dough',
-    CRUST: 'Crust',
-    BREAD: 'Bread',
-    DRESSING: 'Dressing',
-    DRY_RUB: 'Dry Rub',
-    WET_RUB: 'Wet Rub',
-    SERVE: 'Serve',
-};
-
-const CATEGORIES = {
-    BREAKFAST: 'Breakfast',
-    LUNCH: 'Lunch',
-    DINNER: 'Dinner',
-    APPETIZER: 'Appetizer',
-    SIDE_DISH: 'Side Dish',
-    SNACK: 'Snack',
-    DESSERT: 'Dessert',
-    DRINK: 'Drink',
-    SAUCE: 'Sauce',
-    TOPPING: 'Topping',
-};
-
-const TYPES = {
-    NOODLE: 'Noodle',
-    RICE: 'Rice',
-    SANDWICH: 'Sandwich',
-    SOUP: 'Soup',
-    SALAD: 'Salad',
-    CURRY: 'Curry',
-    BREAD: 'Bread',
-    WRAP: 'Wrap',
-    CASSEROLE: 'Casserole',
-}
 
 const METHODS = {
     AIR_FRY: 'Air Fry',
@@ -104,32 +96,40 @@ const PROTEIN = {
     TURKEY: 'Turkey',
 }
 
-const DIET = {
-    VEGETARIAN: 'Vegetarian',
-    VEGAN: 'Vegan',
-    GLUTEN_FREE: 'Gluten-Free',
-    DAIRY_FREE: 'Dairy-Free',
-    NUT_FREE: 'Nut-Free',
-    SOY_FREE: 'Soy-Free',
-    EGG_FREE: 'Egg-Free',
-    SUGAR_FREE: 'Sugar-Free',
-    LOW_CARB: 'Low-Carb',
-    LOW_FAT: 'Low-Fat',
-    LOW_SODIUM: 'Low-Sodium',
-    LOW_SUGAR: 'Low-Sugar',
-    HIGH_PROTEIN: 'High-Protein',
-    HIGH_FIBER: 'High-Fiber',
-    KETO: 'Keto',
-    PALEO: 'Paleo',
-    WHOLE_30: 'Whole30',
+const SECTIONS = {
+    MAIN: 'Main',
+    MARINADE: 'Marinade',
+    SAUCE: 'Sauce',
+    TOPPINGS: 'Toppings',
+    RICE: 'Rice',
+    FILLING: 'Filling',
+    DOUGH: 'Dough',
+    CRUST: 'Crust',
+    BREAD: 'Bread',
+    DRESSING: 'Dressing',
+    DRY_RUB: 'Dry Rub',
+    WET_RUB: 'Wet Rub',
+    SERVE: 'Serve',
+};
+
+const TYPES = {
+    NOODLE: 'Noodle',
+    RICE: 'Rice',
+    SANDWICH: 'Sandwich',
+    SOUP: 'Soup',
+    SALAD: 'Salad',
+    CURRY: 'Curry',
+    BREAD: 'Bread',
+    WRAP: 'Wrap',
+    CASSEROLE: 'Casserole',
 }
 
 module.exports = {
-    GENRES,
-    SECTIONS,
     CATEGORIES,
-    TYPES,
+    DIET,
+    GENRES,
     METHODS,
     PROTEIN,
-    DIET,
+    SECTIONS,
+    TYPES,
 }

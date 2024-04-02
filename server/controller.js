@@ -42,7 +42,11 @@ module.exports = {
     getRecipeCategories: async (_req, res) => {
         return res.send({
             CATEGORIES: recipeCategories.CATEGORIES,
-            GENRES: recipeCategories.GENRES
+            DIET: recipeCategories.DIET,
+            GENRES: recipeCategories.GENRES,
+            METHODS: recipeCategories.METHODS,
+            PROTEIN: recipeCategories.PROTEIN,
+            TYPES: recipeCategories.TYPES,
         });
     },
     message: async (req, res) => {

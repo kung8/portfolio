@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
-// import { Cursor } from '../Cursor';
-import { 
-    useGetData, 
-    // useGetRecipeCategories
-} from '../../hooks';
+import { useGetData, useGetRecipeCategories } from '../../hooks';
+import { convertToKebabCase } from '../../utils';
 import { RecipeItem } from './RecipeItem';
 import { Loader } from '../Loader';
+import { RecipeFilterContainer } from './RecipeFilterContainer';
+import top from './top.png';
+
+const initialShownFilters = {
+    category: false,
+    diet: false,
+    genre: false,
+    method: false,
+    protein: false,
+    type: false,
+};
 
 export const Recipes = ({ history }) => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -14,13 +22,28 @@ export const Recipes = ({ history }) => {
     const queryKey = ['getData', 'recipes', undefined];
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
     const [search, setSearch] = useState('');
-    // const [selectedFilters, setSelectedFilters] = useState([]);
+
+    const [show, setShow] = useState(false);
+    const [selectedFilters, setSelectedFilters] = useState({
+        category: [],
+        diet: [],
+        genre: [],
+        method: [],
+        protein: [],
+        type: [],
+    });
+    const [shownFilters, setShownFilters] = useState(initialShownFilters);
+
+    const [showArrow, setShowArrow] = useState(false);
 
     const { data: recipes = [] } = useGetData('recipes');
-    // const { data: recipeCategories = { CATEGORIES: {}, GENRES: {} } } = useGetRecipeCategories();
-    // const categories = Object.values(recipeCategories.CATEGORIES);
-    // const genres = Object.values(recipeCategories.GENRES);
-    // console.log(categories, genres);
+    const { data: recipeCategories = { CATEGORIES: {}, DIET: {}, GENRES: {}, METHODS: {}, PROTEIN: {}, TYPES: {} } } = useGetRecipeCategories();
+    const categories = Object.values(recipeCategories.CATEGORIES);
+    // const diet = Object.values(recipeCategories.DIET);
+    const genres = Object.values(recipeCategories.GENRES);
+    const methods = Object.values(recipeCategories.METHODS);
+    const protein = Object.values(recipeCategories.PROTEIN);
+    const types = Object.values(recipeCategories.TYPES);
 
     const filteredRecipes = recipes.filter(item => {
         if (search === '') return item;
@@ -49,11 +72,35 @@ export const Recipes = ({ history }) => {
         // eslint-disable-next-line
     }, []);
 
-    // convert to kebab case
-    const convertNameToId = (name) => name.toLowerCase().split(' ').join('-');
+    const filterMapping = [
+        { heading: 'Categories', type: 'category', filterOptions: categories },
+        { heading: 'Genres', type: 'genre', filterOptions: genres },
+        // { heading: 'Diet', type: 'diet', filterOptions: diet },
+        { heading: 'Cooking Methods', type: 'method', filterOptions: methods },
+        { heading: 'Proteins', type: 'protein', filterOptions: protein },
+        { heading: 'Type', type: 'type', filterOptions: types },
+    ];
+
+    const resetShownFilters = () => {
+        setShownFilters(initialShownFilters);
+        setShow(false);
+    }
+
+    const filterRecipeBySelectedFilters = (compared, filter) => {
+        return compared.some(value => filter.find(v => v === value))
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            const scrollHeight = window.scrollY;
+            if (scrollHeight > 300) setShowArrow(true);
+            else setShowArrow(false);
+            setShow(false);
+        })
+    }, []);
 
     return (
-        <div className={`recipes page ${isLoaded ? '' : 'isLoading'}`}>
+        <div className={`recipes page ${isLoaded ? '' : 'isLoading'}`} onClick={resetShownFilters}>
             <div className="heading-container">
                 <div>
                     <span className='back-btn' onClick={() => history.push('/')}>
@@ -65,45 +112,44 @@ export const Recipes = ({ history }) => {
                     <div className={`search-bar ${search ? 'contains-search' : ''}`}>
                         <input type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
                     </div>
-                    {/* <div className="filter-icon">
+                    <div className="filter-icon" onClick={(e) => {
+                        e.stopPropagation();
+                        setShow(!show)
+                    }}>
                         <div className="top-bar"></div>
                         <div className="middle-bar"></div>
                         <div className="bottom-bar"></div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
 
-            {/* <div className="filter-container">
-                <h4>Category:</h4>
-                <select id="category" name="category">
-                    <option value="">All</option>
-                    {categories.map((category) => (
-                        <option key={category} value={category}>{category}</option>
-                    ))}
-                </select>
-                <div className="filter-btn-container">
-                    {categories.map((category) => (
-                        <span key={category} className="filter-btn">{category}</span>
+            {show && (
+                <div className="filters-container" onClick={(e) => {
+                    e.stopPropagation();
+                    setShownFilters(initialShownFilters);
+                }}>
+                    {filterMapping.map((option =>
+                        <RecipeFilterContainer
+                            key={option.heading}
+                            {...{ ...option, selectedFilters, setSelectedFilters, shownFilters, setShownFilters }} />
                     ))}
                 </div>
-                <h4>Genre:</h4>
-                <select id="genre" name="genre">
-                    <option value="">All</option>
-                    {genres.map((genre) => (
-                        <option key={genre} value={genre}>{genre}</option>
-                    ))}
-                </select>
-                <div className="filter-btn-container">
-                    {genres.map((genre) => (
-                        <span key={genre} className="filter-btn">{genre}</span>
-                    ))}
-                </div>
-            </div> */}
+            )}
 
             {filteredRecipes.length && isLoaded ? (
                 <div className="recipe-items-container">
-                    {filteredRecipes.filter(item => !!item.available).map((item) =>
-                        <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertNameToId(item.name))} />
+                    {filteredRecipes.filter(item => !!item.available).filter(item => {
+                        const { category, diet, genre, method, protein, type } = selectedFilters;
+                        return (
+                            (!category.length || filterRecipeBySelectedFilters(item.category || [], category)) &&
+                            (!diet.length || filterRecipeBySelectedFilters(item.diet || [], diet)) &&
+                            (!genre.length || filterRecipeBySelectedFilters(item.genre || [], genre)) &&
+                            (!method.length || filterRecipeBySelectedFilters(item.method || [], method)) &&
+                            (!protein.length || filterRecipeBySelectedFilters(item.protein || [], protein)) &&
+                            (!type.length || filterRecipeBySelectedFilters(item.type || [], type))
+                        );
+                    }).map((item) =>
+                        <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertToKebabCase(item.name))} />
                     )}
                 </div>
             ) : (
@@ -111,7 +157,21 @@ export const Recipes = ({ history }) => {
                     <Loader />
                 </div>
             )}
-            {/* <Cursor /> */}
+
+            {showArrow && (
+                <div
+                    className="back-to-top-arrow"
+                    onClick={() => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                >
+                    <img src={top} alt="top" />
+                </div>
+            )}
         </div>
     )
 }
+
+/*
+    TODO: add icons on the thumbnails
+*/
