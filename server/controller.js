@@ -40,13 +40,20 @@ module.exports = {
         return res.send(data[type] ?? []);
     },
     getRecipeCategories: async (_req, res) => {
+        const category = recipes.flatMap(recipe => recipe.category);
+        const diet = recipes.flatMap(recipe => recipe.diet);
+        const genre = recipes.flatMap(recipe => recipe.genre);
+        const method = recipes.flatMap(recipe => recipe.method);
+        const protein = recipes.flatMap(recipe => recipe.protein);
+        const type = recipes.flatMap(recipe => recipe.type);
+
         return res.send({
-            CATEGORIES: recipeCategories.CATEGORIES,
-            DIET: recipeCategories.DIET,
-            GENRES: recipeCategories.GENRES,
-            METHODS: recipeCategories.METHODS,
-            PROTEIN: recipeCategories.PROTEIN,
-            TYPES: recipeCategories.TYPES,
+            CATEGORIES: Object.values(recipeCategories.CATEGORIES).filter(item => category.includes(item)),
+            DIET: Object.values(recipeCategories.DIET).filter(item => diet.includes(item)),
+            GENRES: Object.values(recipeCategories.GENRES).filter(item => genre.includes(item)),
+            METHODS: Object.values(recipeCategories.METHODS).filter(item => method.includes(item)),
+            PROTEIN: Object.values(recipeCategories.PROTEIN).filter(item => protein.includes(item)),
+            TYPES: Object.values(recipeCategories.TYPES).filter(item => type.includes(item)),
         });
     },
     message: async (req, res) => {

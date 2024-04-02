@@ -37,13 +37,13 @@ export const Recipes = ({ history }) => {
     const [showArrow, setShowArrow] = useState(false);
 
     const { data: recipes = [] } = useGetData('recipes');
-    const { data: recipeCategories = { CATEGORIES: {}, DIET: {}, GENRES: {}, METHODS: {}, PROTEIN: {}, TYPES: {} } } = useGetRecipeCategories();
-    const categories = Object.values(recipeCategories.CATEGORIES);
-    // const diet = Object.values(recipeCategories.DIET);
-    const genres = Object.values(recipeCategories.GENRES);
-    const methods = Object.values(recipeCategories.METHODS);
-    const protein = Object.values(recipeCategories.PROTEIN);
-    const types = Object.values(recipeCategories.TYPES);
+    const { data: recipeCategories = { CATEGORIES: [], DIET: [], GENRES: [], METHODS: [], PROTEIN: [], TYPES: [] } } = useGetRecipeCategories();
+    const categories = recipeCategories.CATEGORIES;
+    // const diet = recipeCategories.DIET;
+    const genres = recipeCategories.GENRES;
+    const methods = recipeCategories.METHODS;
+    const protein = recipeCategories.PROTEIN;
+    const types = recipeCategories.TYPES;
 
     const filteredRecipes = recipes.filter(item => {
         if (search === '') return item;
