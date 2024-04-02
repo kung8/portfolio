@@ -67,17 +67,10 @@ const vietnamesePho = require("./recipes/vietnamese-pho");
 const wrap = require("./recipes/wrap");
 
 // TODO: Add the new recipes
-// TODO: Add categories to the recipes
-// TODO: Add a way to search the recipes by name, CATEGORIES, type, origin, etc.
 // TODO: Add a way to add ingredients to a shopping list and save in local storage
 // TODO: Add a way to add recipes to a favorites list and save in local storage
-// TODO: Add credits to the recipes (if applicable) and websites where to find them?
+// TODO: Add websites where to find them?
 // TODO: Add facts to the recipes = nutritional facts, calories, interesting facts about the recipe, origins, etc.
-
-// MEAL TYPES: Breakfast, Lunch, Dinner, Snack, Dessert, Drink
-// CATEGORIES: American, Chinese, Italian, Mexican, Japanese, Indian, Thai, Vietnamese, Korean, French, German, Greek, Mediterranean, Middle Eastern, African
-// ORIGINS: American, Chinese, Italian, Mexican, Japanese, Indian, Thai, Vietnamese, Korean, French, German, Greek, Mediterranean, Middle Eastern, African
-// DIETARY RESTRICTIONS: Vegetarian, Vegan, Gluten-Free, Dairy-Free, Nut-Free, Soy-Free, Egg-Free, Sugar-Free, Low-Carb, Low-Fat, Low-Sodium, Low-Sugar, High-Protein, High-Fiber, Keto, Paleo, Whole30, Mediterranean, DASH, Atkins, Zone, South Beach, Weight Watchers, Raw, FODMAP, Flexitarian, Pescatarian, Lacto-Vegetarian, Ovo-Vegetarian, Lacto-Ovo-Vegetarian, Pollotarian, Vegan, Vegetarian, Paleo, Pescatarian, Flexitarian, Raw, FODMAP, Low-Carb, Low-Fat, Low-Sodium, Low-Sugar, High-Protein, High-Fiber, Keto, Paleo, Whole30, Mediterranean, DASH, Atkins, Zone, South Beach, Weight Watchers, Raw, FODMAP, Flexitarian, Pescatarian, Lacto-Vegetarian, Ovo-Vegetarian, Lacto-Ovo-Vegetarian, Pollotarian, Vegan, Vegetarian, Paleo, Pescatarian, Flexitarian, Raw, FODMAP, Low-Carb, Low-Fat, Low-Sodium, Low-Sugar, High-Protein, High-Fiber, Keto, Paleo, Whole30, Mediterranean, DASH, Atkins, Zone, South Beach, Weight Watchers, Raw, FODMAP, Flexitarian, Pescatarian, Lacto-Vegetarian, Ovo-Vegetarian, Lacto-Ovo-Vegetarian, Pollotarian, Vegan, Vegetarian, Paleo, Pescatarian, Flexitarian, Raw, FODMAP, Low-Carb, Low-Fat, Low-Sodium, Low-Sugar, High-Protein, High-Fiber, Keto, Paleo, Whole30, Mediterranean, DASH, Atkins, Zone, South Beach, Weight Watchers, Raw, FODMAP, Flexitarian, Pescatarian, Lacto-Vegetarian, Ovo-Vegetarian, Lacto-Ovo-Vegetarian, Pollotarian, Vegan, Vegetarian, Paleo, Pescatarian, Flexitarian, Raw, FODMAP, Low-Carb, Low-Fat, Low-Sodium, Low-Sugar, High-Protein, High-Fiber, Keto,
 
 const recipes = [
     padThai,
