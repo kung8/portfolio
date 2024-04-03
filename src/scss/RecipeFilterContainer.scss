@@ -4,6 +4,7 @@
     padding: 24px 16px;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
     column-gap: 16px;
     position: absolute;
     z-index: 2;
@@ -18,6 +19,10 @@
     @include down($mobile-xl) {
         animation: slide-in-small 0.3s ease-in-out;
         transform: translate(0, 205px);
+    }
+    @include down(498px) {
+        flex-direction: column;
+        align-items: center;
     }
 
     &.is-closing {
@@ -103,6 +108,14 @@
             &:nth-of-type(4) {
                 .selected-filters {
                     margin-bottom: 0;
+                }
+            }
+        }
+
+        @include down(498px) {
+            &:last-of-type {
+                .selected-filters {
+                    margin-bottom: 16px;
                 }
             }
         }
@@ -224,5 +237,9 @@
             height: 2px;
             width: 12px;
         }
+    }
+
+    .total-ratio {
+        font-size: 32px;
     }
 }

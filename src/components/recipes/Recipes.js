@@ -90,6 +90,19 @@ export const Recipes = ({ history }) => {
         return compared.some(value => filter.find(v => v === value))
     }
 
+    const availableFilteredRecipes = filteredRecipes.filter(item => !!item.available);
+    const filteredRecipeBySelectedFilters = availableFilteredRecipes.filter(item => {
+        const { category, diet, genre, method, protein, type } = selectedFilters;
+        return (
+            (!category.length || filterRecipeBySelectedFilters(item.category || [], category)) &&
+            (!diet.length || filterRecipeBySelectedFilters(item.diet || [], diet)) &&
+            (!genre.length || filterRecipeBySelectedFilters(item.genre || [], genre)) &&
+            (!method.length || filterRecipeBySelectedFilters(item.method || [], method)) &&
+            (!protein.length || filterRecipeBySelectedFilters(item.protein || [], protein)) &&
+            (!type.length || filterRecipeBySelectedFilters(item.type || [], type))
+        );
+    })
+
     useEffect(() => {
         window.addEventListener('scroll', () => {
             const scrollHeight = window.scrollY;
@@ -141,22 +154,13 @@ export const Recipes = ({ history }) => {
                             key={option.heading}
                             {...{ ...option, selectedFilters, setSelectedFilters, shownFilters, setShownFilters }} />
                     ))}
+                    <span className="total-ratio">{filteredRecipeBySelectedFilters.length} / {availableFilteredRecipes.length}</span>
                 </div>
             )}
 
             {filteredRecipes.length && isLoaded ? (
                 <div className="recipe-items-container">
-                    {filteredRecipes.filter(item => !!item.available).filter(item => {
-                        const { category, diet, genre, method, protein, type } = selectedFilters;
-                        return (
-                            (!category.length || filterRecipeBySelectedFilters(item.category || [], category)) &&
-                            (!diet.length || filterRecipeBySelectedFilters(item.diet || [], diet)) &&
-                            (!genre.length || filterRecipeBySelectedFilters(item.genre || [], genre)) &&
-                            (!method.length || filterRecipeBySelectedFilters(item.method || [], method)) &&
-                            (!protein.length || filterRecipeBySelectedFilters(item.protein || [], protein)) &&
-                            (!type.length || filterRecipeBySelectedFilters(item.type || [], type))
-                        );
-                    }).map((item) =>
+                    {filteredRecipeBySelectedFilters.map((item) =>
                         <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertToKebabCase(item.name))} />
                     )}
                 </div>
