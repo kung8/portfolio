@@ -1,5 +1,6 @@
 const americanOmelette = require("./recipes/american-omelette");
 const bakedChicken = require("./recipes/baked-chicken");
+const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefStroganoff = require("./recipes/beef-stroganoff");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
@@ -110,6 +111,7 @@ const recipes = [
     phillyCheesesteak,
     hawaiianHaystacks,
     bbqPulledPorkAndFixins,
+    bbqChickenWings,
     potRoast,
     chickenPotPie,
     chickenNoodleSoup,
