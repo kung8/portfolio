@@ -8,3 +8,8 @@
         @content;
     }
 }
+@mixin between($min, $max) {
+    @media (min-width: ($min + 1)) and (max-width: $max) {
+        @content;
+    }
+}

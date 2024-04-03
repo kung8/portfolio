@@ -1,11 +1,13 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import arrow from './arrow.png';
 import check from './check.png';
+import greenCheck from './green-check.png';
 import partial from './partial.png';
 
 export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFilters, setSelectedFilters, shownFilters, setShownFilters }) => {
     const show = shownFilters[type];
-    const containerRef = useRef(null);
+
+    const [isHovered, setIsHovered] = useState(false);
 
     const handleFilterSelector = (type, value) => {
         const newType = [...selectedFilters[type]];
@@ -49,7 +51,7 @@ export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFi
                     <img src={arrow} alt="arrow" className={`icon chevron-arrow ${show ? 'is-open' : ''}`} />
                 </div>
                 {show && (
-                    <div ref={containerRef} className="filter-selector-container">
+                    <div className="filter-selector-container">
                         <span className="select-all-text" onClick={(e) => {
                             e.stopPropagation();
                             if (filterOptions.length && filterOptions.length === selectedFilters[type]?.length) {
@@ -69,20 +71,40 @@ export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFi
                         </span>
                         <ul className="filter-selector">
                             {filterOptions.map((option) => (
-                                <li key={option} value={option} className="filter-selector-item" onClick={(e) => {
-                                    e.stopPropagation();
-                                    handleFilterSelector(type, option);
-                                }}>
-                                    <span className={`${selectedFilters[type].includes(option) ? 'selected-option' : ''}`}>{option}</span>
-                                    <div className="checkbox">
-                                        {selectedFilters[type].includes(option) ? <img className="icon" src={check} alt="check" /> : ''}
-                                    </div>
-                                </li>
+                                <FilterListItem 
+                                    key={option} 
+                                    option={option} 
+                                    type={type} 
+                                    selectedFilters={selectedFilters} 
+                                    handleFilterSelector={handleFilterSelector} 
+                                />
                             ))}
                         </ul>
                     </div>
                 )}
             </div>
         </div>
+    )
+}
+
+const FilterListItem = ({ option, type, selectedFilters, handleFilterSelector }) => {
+    const [isHovered, setIsHovered] = useState(false);
+
+    return (
+        <li
+            value={option}
+            className="filter-selector-item"
+            onClick={(e) => {
+                e.stopPropagation();
+                handleFilterSelector(type, option);
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            <span className={`${selectedFilters[type].includes(option) ? 'selected-option' : ''}`}>{option}</span>
+            <div className="checkbox">
+                {selectedFilters[type].includes(option) ? <img className="icon" src={isHovered ? greenCheck : check} alt="check" /> : ''}
+            </div>
+        </li>
     )
 }

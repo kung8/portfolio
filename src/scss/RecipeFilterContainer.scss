@@ -1,7 +1,6 @@
 .filters-container {
     width: 100%;
-    background: $white;
-    color: $default;
+    background: $aqua;
     padding: 16px;
     display: flex;
     flex-wrap: wrap;
@@ -10,20 +9,106 @@
     z-index: 2;
     top: 0;
     left: 0;
-    border-radius: 0 0 4px 4px;
-    transform: translate(0, 160px);
+    animation: slide-in-large 0.3s ease-in-out;
+    transform: translate(0, 150px);
     @include down($tablet) {
-        transform: translate(0, 140px);
+        animation: slide-in-medium 0.3s ease-in-out;
+        transform: translate(0, 130px);
     }
     @include down($mobile-xl) {
-        transform: translate(0, 220px);
+        animation: slide-in-small 0.3s ease-in-out;
+        transform: translate(0, 205px);
+    }
+
+    &.is-closing {
+        animation: slide-out-large 0.3s ease-in-out;
+        transform: translate(100%, 150px);
+        @include down($tablet) {
+            animation: slide-out-medium 0.3s ease-in-out;
+            transform: translate(100%, 130px);
+        }
+        @include down($mobile-xl) {
+            animation: slide-out-small 0.3s ease-in-out;
+            transform: translate(100%, 205px);
+        }
+    }
+
+    @keyframes slide-in-large {
+        0% {
+            transform: translate(100%, 150px);
+        }
+        100% {
+            transform: translate(0, 150px);
+        }
+    }
+    @keyframes slide-in-medium {
+        0% {
+            transform: translate(100%, 130px);
+        }
+        100% {
+            transform: translate(0, 130px);
+        }
+    }
+    @keyframes slide-in-small {
+        0% {
+            transform: translate(100%, 205px);
+        }
+        100% {
+            transform: translate(0, 205px);
+        }
+    }
+
+    @keyframes slide-out-large {
+        0% {
+            transform: translate(0%, 150px);
+        }
+        100% {
+            transform: translate(100%, 150px);
+        }
+    }
+    @keyframes slide-out-medium {
+        0% {
+            transform: translate(0%, 130px);
+        }
+        100% {
+            transform: translate(100%, 130px);
+        }
+    }
+    @keyframes slide-out-small {
+        0% {
+            transform: translate(0%, 205px);
+        }
+        100% {
+            transform: translate(100%, 205px);
+        }
     }
 
     .filter-container {
         min-width: 225px;
+
+        &:last-of-type {
+            .selected-filters {
+                margin-bottom: 0;
+            }
+        }
+
+        @include up(1220px) {
+            .selected-filters {
+                margin-bottom: 0;
+            }
+        }
+
+        // 739 - 979
+        @include between(738px, 979px) {
+            &:nth-of-type(4) {
+                .selected-filters {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 
-    h4 { 
+    h4 {
         margin-bottom: 8px;
         width: fit-content;
     }
@@ -50,14 +135,9 @@
 
         .selected-filter-chip {
             padding: 2px 8px;
-            border: 1px solid $aqua;
-            color: $aqua;
-            border-radius: 16px; 
+            border: 1px solid $white;
+            border-radius: 16px;
             margin-right: 6px;
-        }
-        
-        .additional-filter-text {
-            color: $aqua;
         }
 
         .chevron-arrow {
@@ -72,11 +152,10 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background: $white;
+        background: $aqua;
         width: 100%;
         max-width: 250px;
         border: 1px solid $default;
-        border-radius: 0 0 4px 4px;
         box-shadow: 0 1px 10px $default;
         z-index: 2;
 
@@ -91,7 +170,7 @@
         .filter-selector {
             max-height: 200px;
             overflow-y: scroll;
-            list-style-type: none;            
+            list-style-type: none;
 
             .filter-selector-item {
                 padding: 8px;
@@ -102,15 +181,11 @@
 
                 &:hover {
                     background: $light;
-                    color: $white
+                    color: $aqua;
                 }
 
                 &:last-of-type {
                     border-bottom: none;
-                }
-
-                .selected-option {
-                    color: $aqua;
                 }
             }
         }

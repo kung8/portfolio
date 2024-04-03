@@ -95,7 +95,6 @@ export const Recipes = ({ history }) => {
             const scrollHeight = window.scrollY;
             if (scrollHeight > 300) setShowArrow(true);
             else setShowArrow(false);
-            setShow(false);
         })
     }, []);
 
@@ -114,7 +113,16 @@ export const Recipes = ({ history }) => {
                     </div>
                     <div className="filter-icon" onClick={(e) => {
                         e.stopPropagation();
-                        setShow(!show)
+                        if (show) {
+                            const filtersContainer = document.querySelector('.filters-container');
+                            if (filtersContainer) filtersContainer.classList.add('is-closing');
+                            setTimeout(() => {
+                                if (filtersContainer) filtersContainer.classList.remove('is-closing');
+                                setShow(!show);
+                            }, 300);
+                        } else {
+                            setShow(!show);
+                        }
                     }}>
                         <div className="top-bar"></div>
                         <div className="middle-bar"></div>
@@ -166,6 +174,7 @@ export const Recipes = ({ history }) => {
                     }}
                 >
                     <img src={top} alt="top" />
+                    <span>TOP</span>
                 </div>
             )}
         </div>
