@@ -1,5 +1,5 @@
 const graveyardDessert = '../assets/Products/graveyard-dessert.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Graveyard Dessert',

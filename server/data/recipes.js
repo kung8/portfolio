@@ -45,6 +45,7 @@ const macaroniSalad = require("./recipes/macaroni-salad");
 const malaysianBlackPepperChicken = require("./recipes/malaysian-black-pepper-chicken");
 const malaysianKebabs = require("./recipes/malaysian-kebabs");
 const malaysianLemonChicken = require("./recipes/malaysian-lemon-chicken");
+const noBakeCookie = require("./recipes/no-bake-cookie");
 const padThai = require("./recipes/pad-thai");
 const parfait = require("./recipes/parfait");
 const pepperSteak = require("./recipes/pepper-steak");
@@ -139,6 +140,7 @@ const recipes = [
     chocolateChipCookies,
     tedLassoBiscuits,
     brownies,
+    noBakeCookie,
     riceCrispyBall, // TODO: add
     graveyardDessert,
     smores,

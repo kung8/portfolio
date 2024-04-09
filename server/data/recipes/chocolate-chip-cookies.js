@@ -1,6 +1,6 @@
 const cookieDough = '../assets/Products/cookie-dough.jpeg';
 const cookies = '../assets/Products/chocolate-chip-cookies.jpeg';
-const {CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
+const {CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Chocolate Chip Cookies',
@@ -44,10 +44,7 @@ module.exports = {
         { step: 'Separately combine baking soda, salt, and hot water. Wait a few seconds for the baking soda to dissolve before adding to the batter.', type: SECTIONS.MAIN },
         { step: 'Mix flour one cup at a time into the batter.', type: SECTIONS.MAIN },
         { step: 'Add chocolate chips.', type: SECTIONS.MAIN },
-        { step: 'Take a spoonful of batter, ball it up about an inch in diameter, and place on baking sheets (Refer to Figure 1 under Additional Resources).', type: SECTIONS.MAIN },
+        { step: 'Take a spoonful of batter, ball it up about an inch in diameter, and place on baking sheets.', type: SECTIONS.MAIN, img: cookieDough },
         { step: 'Bake for 10 minutes.', type: SECTIONS.MAIN },
-    ],
-    supplemental: [
-        { title: 'Cookie Dough', content: 'I ball up the cookie dough into balls similar to this about an inch round.' }
     ]
 };
