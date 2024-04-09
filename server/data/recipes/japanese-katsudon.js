@@ -1,4 +1,10 @@
 const katsudon = '../assets/Products/katsudon.jpeg';
+const drying = '../assets/Products/chicken-katsudon-drying.jpeg';
+const strip = '../assets/Products/chicken-katsudon-strips.jpeg';
+const onion = '../assets/Products/chicken-katsudon-onion.jpeg';
+const mirin = '../assets/Products/chicken-katsudon-onion-in-mirin.jpeg';
+const layered = '../assets/Products/chicken-katsudon-layered.jpeg';
+const finished = '../assets/Products/chicken-katsudon-finished.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
@@ -9,7 +15,7 @@ module.exports = {
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.JAPANESE],
     method: [METHODS.DEEP_FRY],
-    protein: [PROTEIN.EGG, PROTEIN.PORK],
+    protein: [PROTEIN.EGG, PROTEIN.PORK, PROTEIN.ALTERNATIVE],
     type: [TYPES.RICE],
     yields: '10 servings',
     prepTime: '20 m',
@@ -48,15 +54,16 @@ module.exports = {
         { step: 'Be careful as the oil is very hot by this point, so be sure to wear oven mitts to help protect your hands from getting burned.', type: SECTIONS.MAIN },
         { step: 'Place the pork chop in the hot oil, and cook for 5 - 6 minutes per side. Then flip.', type: SECTIONS.MAIN },
         { step: 'Line a baking sheet with paper towels and place a cooling rack on top.', type: SECTIONS.MAIN },
-        { step: 'Place the pork chops on the cooling rack to drain any excess oil.', type: SECTIONS.MAIN },
+        { step: 'Place the pork chops on the cooling rack to drain any excess oil.', type: SECTIONS.MAIN, img: drying },
         { step: 'While the pork is resting, make the egg mixture and the sauce.', type: SECTIONS.MAIN },
         { step: 'In one bowl, combine the broth, sugar, soy sauce, and mirin. In another bowl, beat 10 eggs.', type: SECTIONS.MAIN },
         { step: 'For the next steps cook in batches to avoid overcrowding the pan.', type: SECTIONS.MAIN },
         { step: 'Over medium heat, add a tablespoon of oil to a pan', type: SECTIONS.MAIN },
-        { step: 'Add the onions and cook until they are slightly caramelized. Split the onions evenly between the batches.', type: SECTIONS.MAIN },
-        { step: 'Add the portioned broth mixture over the onions.', type: SECTIONS.MAIN },
-        { step: 'Slice the tonkatsu into strips and place on top of the onions.', type: SECTIONS.MAIN },
-        { step: 'Drizzle some egg over the tonkatsu and cook until the egg is set.', type: SECTIONS.MAIN },
+        { step: 'Add the onions and cook until they are slightly caramelized. Split the onions evenly between the batches.', type: SECTIONS.MAIN, img: onion },
+        { step: 'Add the portioned broth mixture over the onions.', type: SECTIONS.MAIN, img: mirin },
+        { step: 'Slice the katsudon into strips.', type: SECTIONS.MAIN, img: strip },
+        { step: 'Place the sliced katsudon on top of the onions.', type: SECTIONS.MAIN, img: layered },
+        { step: 'Drizzle some egg over the katsudon and cook until the egg is set.', type: SECTIONS.MAIN, img: finished },
         { step: 'Serve over rice and garnish with green onions.', type: SECTIONS.MAIN },
     ]
 };
