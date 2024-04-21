@@ -18,6 +18,7 @@ module.exports = {
     yields: '8 servings',
     prepTime: '45 m',
     cookTime: '2 h',
+    separated: true,
     ingredients: [
         { name: 'cooking spray', amount: '', additionalDetails: '', optional: false, section: SECTIONS.CRUST },
         { name: 'graham crackers', amount: '14.4 oz', additionalDetails: 'finely crushed', optional: false, section: SECTIONS.CRUST },

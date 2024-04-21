@@ -54,6 +54,7 @@ const phillyCheesesteak = require("./recipes/philly-cheesesteak");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
 const pizza = require("./recipes/pizza");
 const potRoast = require("./recipes/pot-roast");
+const pretzel = require("./recipes/pretzel");
 const riceCrispyBall = require("./recipes/rice-crispy-ball");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const scrambledEggs = require("./recipes/scrambled-eggs");
@@ -136,6 +137,7 @@ const recipes = [
     wrap,
     parfait,
     smoothie,
+    pretzel,
     cheesecake,
     chocolateChipCookies,
     tedLassoBiscuits,
