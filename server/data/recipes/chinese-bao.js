@@ -1,9 +1,9 @@
 const bao = '../assets/Products/bao.jpeg';
-const { CATEGORIES, GENRES, TYPES, METHODS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS } = require("./constants");
 
 module.exports = {
-    cardName: '',
-    name: '',
+    cardName: 'Bao',
+    name: 'Chinese Bao',
     img: bao,
     available: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],

@@ -2,8 +2,8 @@ const bokChoyChicken = '../assets/Products/bok-choy-chicken.jpeg';
 const { CATEGORIES, GENRES, TYPES, PROTEIN } = require("./constants");
 
 module.exports = {
-    cardName: '',
-    name: '',
+    cardName: 'Bok Choy Chicken',
+    name: 'Bok Choy Chicken',
     img: bokChoyChicken,
     available: false,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],

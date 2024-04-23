@@ -1,4 +1,4 @@
-// const turkey = '../assets/Products/dutch-apple-pie.jpeg';
+const turkey = '../assets/Products/roast-turkey.jpeg';
 const turkeyCookingTable = '../assets/Products/cooking-turkey-estimates.png';
 const turkeyThawingTable = '../assets/Products/thawing-turkey-estimates.png';
 const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN } = require('./constants');
@@ -6,7 +6,7 @@ const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN } = require('./constants'
 module.exports = {
     cardName: 'Roast Turkey',
     name: 'Garlic Herb Butter Roast Turkey',
-    // img: turkey,
+    img: turkey,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
