@@ -1,0 +1,47 @@
+const { CATEGORIES, SECTIONS } = require('./constants');
+const aerial = '../assets/Products/banana-bread-aerial-view.jpeg';
+const side = '../assets/Products/banana-bread-baked-side-view.jpeg';
+const creamedSugar = '../assets/Products/banana-bread-creamed-sugar.jpeg';
+const mixture = '../assets/Products/banana-bread-flour-mixture.jpeg';
+const mashed = '../assets/Products/banana-bread-mashed-banana.jpeg';
+const batter = '../assets/Products/banana-bread-batter.jpeg';
+
+module.exports = {
+    cardName: 'Banana Bread',
+    name: 'Banana Bread',
+    img: aerial,
+    available: true,
+    type: CATEGORIES.DESSERT,
+    yields: '1 loaf',
+    prepTime: '10 m',
+    cookTime: '55 m - 1 h',
+    ingredients: [
+        { name: 'ripe bananas', amount: '3', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'unsalted butter', amount: '1/2 c', additionalDetails: 'room temperature', optional: false, section: SECTIONS.MAIN },
+        { name: 'granulated sugar', amount: '3/4 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'eggs', amount: '2', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'all-purpose flour', amount: '1 1/2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'baking soda', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'salt', amount: '1/2 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'vanilla extract', amount: '1/2 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+    ],
+    supplies: [
+        { name: 'oven' },
+        { name: 'mixing bowl' },
+        { name: 'large bowl' },
+        { name: 'rubber spatula' },
+        { name: 'bread pan' },
+        { name: 'toothpick' },
+    ],
+    directions: [
+        { step: 'Preheat the oven to 350ºF.', type: SECTIONS.MAIN },
+        { step: 'In large bowl, cream together the softened butter and sugar.', type: SECTIONS.MAIN, img: creamedSugar },
+        { step: 'In mixing bowl, mash bananas until its consistency is smooth.', type: SECTIONS.MAIN, img: mashed },
+        { step: 'Add the butter and sugar and eggs to the bananas.', type: SECTIONS.MAIN },
+        { step: 'In the large bowl, combine flour, baking soda, and salt. Then add to the batter.', type: SECTIONS.MAIN, img: mixture },
+        { step: 'Add vanilla to the batter.', type: SECTIONS.MAIN },
+        { step: 'Pour the batter into the bread pan.', type: SECTIONS.MAIN, img: batter },
+        { step: 'Bake for 55 to 60 minutes, or until a toothpick inserted into the center comes out clean.', type: SECTIONS.MAIN },
+        { step: 'Let bread rest for 10 minutes before serving.', type: SECTIONS.MAIN },
+    ]
+};

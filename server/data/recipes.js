@@ -1,5 +1,6 @@
 const americanOmelette = require("./recipes/american-omelette");
 const bakedChicken = require("./recipes/baked-chicken");
+const bananaBread = require("./recipes/banana-bread");
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefStroganoff = require("./recipes/beef-stroganoff");
@@ -137,6 +138,7 @@ const recipes = [
     wrap,
     parfait,
     smoothie,
+    bananaBread,
     pretzel,
     cheesecake,
     chocolateChipCookies,
