@@ -1,15 +1,16 @@
 const { CATEGORIES, SECTIONS } = require('./constants');
-const aerial = '../assets/Products/banana-bread-aerial-view.jpeg';
-const side = '../assets/Products/banana-bread-baked-side-view.jpeg';
 const creamedSugar = '../assets/Products/banana-bread-creamed-sugar.jpeg';
 const mixture = '../assets/Products/banana-bread-flour-mixture.jpeg';
 const mashed = '../assets/Products/banana-bread-mashed-banana.jpeg';
 const batter = '../assets/Products/banana-bread-batter.jpeg';
+const zoomed = '../assets/Products/banana-bread-with-chocolate-chips-side-view.jpeg';
+const raw = '../assets/Products/banana-bread-with-chocolate-chips-raw.jpeg';
+const baked = '../assets/Products/banana-bread-with-chocolate-chips-baked.jpeg';
 
 module.exports = {
     cardName: 'Banana Bread',
     name: 'Banana Bread',
-    img: aerial,
+    img: zoomed,
     available: true,
     type: CATEGORIES.DESSERT,
     yields: '1 loaf',
@@ -24,6 +25,7 @@ module.exports = {
         { name: 'baking soda', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'salt', amount: '1/2 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'vanilla extract', amount: '1/2 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'chocolate chips', amount: '1/2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
     supplies: [
         { name: 'oven' },
@@ -41,7 +43,8 @@ module.exports = {
         { step: 'In the large bowl, combine flour, baking soda, and salt. Then add to the batter.', type: SECTIONS.MAIN, img: mixture },
         { step: 'Add vanilla to the batter.', type: SECTIONS.MAIN },
         { step: 'Pour the batter into the bread pan.', type: SECTIONS.MAIN, img: batter },
+        { step: 'Add chocolate chips to the pan.', type: SECTIONS.MAIN, img: raw },
         { step: 'Bake for 55 to 60 minutes, or until a toothpick inserted into the center comes out clean.', type: SECTIONS.MAIN },
-        { step: 'Let bread rest for 10 minutes before serving.', type: SECTIONS.MAIN },
+        { step: 'Let bread rest for 10 minutes before serving.', type: SECTIONS.MAIN, img: baked },
     ]
 };

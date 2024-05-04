@@ -122,6 +122,9 @@ const TYPES = {
     BREAD: 'Bread',
     WRAP: 'Wrap',
     CASSEROLE: 'Casserole',
+    VEGETABLE: 'Vegetable',
+    FRUIT: 'Fruit',
+    MEAT: 'Meat',
 }
 
 module.exports = {
