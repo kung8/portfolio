@@ -112,13 +112,12 @@ const recipes = [
     chineseBao, // TODO: add
     vietnameseBanhTieu,
     italianLasagna,
-    indianChickenTikkaMasala,
+    indianChickenTikkaMasala, // TODO: add
     chineseGreenBeanBeef,
     chineseBroccoliBeef, // TODO: add
     cabbageStirFry, // TODO: add
     roastedTurkey,
     malaysianBlackPepperChicken,
-    malaysianSatay, // TODO: add
     pizza,
     chickenCordonBleu,
     chickenParmesan, // TODO: add
@@ -135,6 +134,7 @@ const recipes = [
     hawaiianHaystacks,
     bbqPulledPorkAndFixins,
     bbqChickenWings,
+    malaysianSatay, // TODO: add
     chickenKebab,
     potRoast,
     chickenPotPie,
