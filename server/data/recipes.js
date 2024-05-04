@@ -134,7 +134,7 @@ const recipes = [
     hawaiianHaystacks,
     bbqPulledPorkAndFixins,
     bbqChickenWings,
-    malaysianSatay, // TODO: add
+    malaysianSatay,
     chickenKebab,
     potRoast,
     chickenPotPie,
