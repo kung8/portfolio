@@ -20,6 +20,7 @@ const chickenKebab = require("./recipes/chicken-kebabs");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenParmesan = require("./recipes/chicken-parmesan");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
+const chickenStuffedCrescentRolls = require("./recipes/chicken-stuffed-crescent-rolls");
 const chili = require("./recipes/chili");
 const chineseBao = require("./recipes/chinese-bao");
 const chineseBokChoyChicken = require("./recipes/chinese-bok-choy-chicken");
@@ -37,6 +38,7 @@ const frenchCrepe = require("./recipes/french-crepe");
 const frenchToast = require("./recipes/french-toast");
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const graveyardDessert = require("./recipes/graveyard-dessert");
+const greenBeanAlmondine = require("./recipes/green-bean-almondine");
 const hamburger = require("./recipes/hamburger");
 const hawaiianHaystacks = require("./recipes/hawaiian-haystacks");
 const hospitalityChicken = require("./recipes/hospitality-chicken");
@@ -138,7 +140,9 @@ const recipes = [
     chickenPotPie,
     chickenNoodleSoup,
     chili,
+    greenBeanAlmondine,
     pigsInABlanket,
+    chickenStuffedCrescentRolls,
     macaroniSalad,
     frenchCrepe,
     frenchToast,
