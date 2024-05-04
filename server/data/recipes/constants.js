@@ -125,6 +125,9 @@ const TYPES = {
     VEGETABLE: 'Vegetable',
     FRUIT: 'Fruit',
     MEAT: 'Meat',
+    FINGER_FOOD: 'Finger Food',
+    DESSERT: 'Dessert',
+    SAUCE: 'Sauce',
 }
 
 module.exports = {

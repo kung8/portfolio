@@ -5,7 +5,7 @@ const baked = '../assets/Products/baked-cheesecake.jpeg';
 const slice = '../assets/Products/cheesecake-slice.jpeg';
 const glaze = '../assets/Products/glazed-strawberries.jpeg';
 const aerial = '../assets/Products/aerial-cheesecake.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
 
 module.exports = {
     cardName: 'Cheesecake',
@@ -15,6 +15,7 @@ module.exports = {
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
+    type: [TYPES.DESSERT],
     yields: '8 servings',
     prepTime: '45 m',
     cookTime: '2 h',

@@ -1,5 +1,5 @@
 const breakfastSandwich = '../assets/Products/breakfast-sandwich.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Breakfast Sandwich',
@@ -10,6 +10,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.EGG, PROTEIN.PORK],
+    type: [TYPES.SANDWICH],
     yields: '1 serving',
     prepTime: '5 m',
     cookTime: '10 m',

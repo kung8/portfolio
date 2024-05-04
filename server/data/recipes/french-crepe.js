@@ -11,6 +11,7 @@ module.exports = {
     genre: [GENRES.FRENCH],
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.PEANUT],
+    type: [TYPES.DESSERT, TYPES.FINGER_FOOD],
     yields: '4 - 5 servings',
     prepTime: '5 - 8 m',
     cookTime: '15 - 20 m',

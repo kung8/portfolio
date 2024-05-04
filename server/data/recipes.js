@@ -80,6 +80,7 @@ const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
 const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich");
 const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
 const vietnamesePho = require("./recipes/vietnamese-pho");
+const waffles = require("./recipes/waffles");
 const wrap = require("./recipes/wrap");
 
 // TODO: Add the new recipes
@@ -154,6 +155,7 @@ const recipes = [
     scrambledEggs,
     americanOmelette,
     eggCasserole,
+    waffles,
     buttermilkSyrup,
     hamburger,
     caramelizedMushroom,

@@ -10,7 +10,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
-    type: [TYPES.NOODLE],
+    type: [TYPES.NOODLE, TYPES.MEAT],
     yields: '4 servings',
     prepTime: '8 - 10 m',
     cookTime: '30 - 40 m',

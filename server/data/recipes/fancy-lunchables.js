@@ -9,6 +9,7 @@ module.exports = {
     category: [CATEGORIES.LUNCH, CATEGORIES.SNACK],
     genre: [GENRES.AMERICAN],
     method: [METHODS.RAW],
+    type: [TYPES.FINGER_FOOD],
     yields: '1 servings',
     prepTime: '5 m',
     cookTime: '0 m',

@@ -9,6 +9,7 @@ module.exports = {
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     protein: [PROTEIN.CHICKEN],
+    type: [TYPES.VEGETABLE],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',

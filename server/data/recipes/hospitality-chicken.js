@@ -10,7 +10,7 @@ module.exports = {
     genre: [GENRES.SOUTHERN],
     method: [METHODS.AIR_FRY],
     protein: [PROTEIN.CHICKEN],
-    type: [TYPES.RICE],
+    type: [TYPES.RICE, TYPES.MEAT],
     yields: '6 servings',
     prepTime: '5 m',
     cookTime: '25 - 40 m',

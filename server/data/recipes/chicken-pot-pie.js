@@ -10,6 +10,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
+    type: [TYPES.DESSERT],
     yields: '4 servings',
     prepTime: '10 m',
     cookTime: '50 m - 1 h',

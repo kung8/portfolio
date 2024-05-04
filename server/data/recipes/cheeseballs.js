@@ -13,7 +13,7 @@ module.exports = {
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
-    type: [TYPES.BREAD],
+    type: [TYPES.BREAD, TYPES.FINGER_FOOD],
     yields: '6 - 8 servings',
     prepTime: '45 m',
     cookTime: '20 m',

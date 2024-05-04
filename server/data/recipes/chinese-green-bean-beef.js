@@ -10,7 +10,7 @@ module.exports = {
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.BEEF],
-    type: [TYPES.RICE],
+    type: [TYPES.RICE, TYPES.VEGETABLE],
     yields: '4 servings',
     prepTime: '15 m',
     cookTime: '20 m',

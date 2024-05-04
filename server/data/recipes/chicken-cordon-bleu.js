@@ -7,7 +7,7 @@ const rawGrouped = '../assets/Products/chicken-cordon-bleu-raw-grouped.jpeg';
 const rawSlices = '../assets/Products/chicken-cordon-bleu-raw-slices.jpeg';
 const saltAndPepper = '../assets/Products/chicken-cordon-bleu-salt-and-pepper.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, TYPES } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Cordon Bleu',
@@ -18,6 +18,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
+    type: [TYPES.MEAT],
     yields: '8 servings',
     prepTime: '20 m',
     cookTime: '30 m',

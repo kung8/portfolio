@@ -13,6 +13,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
+    type: [TYPES.FINGER_FOOD],
     yields: '3 servings',
     prepTime: '7 m',
     cookTime: '25 m',

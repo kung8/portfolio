@@ -9,6 +9,7 @@ module.exports = {
     category: [CATEGORIES.SAUCE, CATEGORIES.BREAKFAST],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BOIL],
+    type: [TYPES.SAUCE],
     yields: '6 servings',
     prepTime: '5 m',
     cookTime: '5 m',

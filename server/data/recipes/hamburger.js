@@ -10,6 +10,7 @@ module.exports = {
     genre: [GENRES.AMERICAN, GENRES.WESTERN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.BEEF],
+    type: [TYPES.SANDWICH],
     yields: '8 servings',
     prepTime: '5 m',
     cookTime: '50 m',

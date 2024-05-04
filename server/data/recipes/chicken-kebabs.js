@@ -1,5 +1,5 @@
 const kebabs = '../assets/Products/kebabs.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, TYPES } = require('./constants');
 
 module.exports = {
     cardName: 'Kebabs',
@@ -10,6 +10,7 @@ module.exports = {
     genre: [GENRES.ASIAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
+    type: [TYPES.FINGER_FOOD, TYPES.MEAT],
     yields: '6 servings',
     prepTime: '10 m',
     cookTime: '25 - 30 m',

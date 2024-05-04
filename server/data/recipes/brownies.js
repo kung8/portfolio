@@ -9,6 +9,7 @@ module.exports = {
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
+    type: [TYPES.DESSERT],
     yields: '12 servings',
     prepTime: '7 m',
     cookTime: '35 m',
