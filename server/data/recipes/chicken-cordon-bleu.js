@@ -1,47 +1,63 @@
-const chickenCordonBleu = '../assets/Products/chicken-cordon-bleu.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
+const breadcrumb = '../assets/Products/chicken-cordon-bleu-breadcrumb.jpeg';
+const cookedZoomed = '../assets/Products/chicken-cordon-bleu-cooked-zoomed.jpeg';
+const cooked = '../assets/Products/chicken-cordon-bleu-cooked.jpeg';
+const hamAndCheese = '../assets/Products/chicken-cordon-bleu-ham-and-cheese.jpeg';
+const zoomed = '../assets/Products/chicken-cordon-bleu-on-plate-zoomed.jpeg';
+const rawGrouped = '../assets/Products/chicken-cordon-bleu-raw-grouped.jpeg';
+const rawSlices = '../assets/Products/chicken-cordon-bleu-raw-slices.jpeg';
+const saltAndPepper = '../assets/Products/chicken-cordon-bleu-salt-and-pepper.jpeg';
+
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Cordon Bleu',
     name: 'Chicken Cordon Bleu',
-    img: chickenCordonBleu,
-    available: false,
+    img: cookedZoomed,
+    available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
-    yields: '4 servings',
-    prepTime: '10 m',
-    cookTime: '50 m - 1 h',
+    yields: '8 servings',
+    prepTime: '20 m',
+    cookTime: '30 m',
+    separated: true,
     ingredients: [
-        // { name: 'cooked chicken', amount: '2 1/2 c', additionalDetails: '', optional: false },
-        // { name: 'butter', amount: '1/3 c', additionalDetails: '', optional: false },
-        // { name: 'flour', amount: '1/3 c', additionalDetails: '', optional: false },
-        // { name: 'onion', amount: '1/3 c', additionalDetails: '', optional: false },
-        // { name: 'salt', amount: '1/2 tsp', additionalDetails: '', optional: false },
-        // { name: 'pepper', amount: '1/4 tsp', additionalDetails: '', optional: false },
-        // { name: 'chicken broth', amount: '1 3/4 c', additionalDetails: '', optional: false },
-        // { name: 'milk', amount: '2/3 c', additionalDetails: '', optional: false },
-        // { name: 'frozen peas', amount: '5 oz', additionalDetails: '', optional: false },
-        // { name: 'frozen carrots', amount: '5 oz', additionalDetails: '', optional: false },
-        // { name: 'refrigerated pie crust', amount: '15 oz', additionalDetails: '', optional: false },
+        { name: 'boneless skinless chicken breast', amount: '4', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'ham slices', amount: '8', additionalDetails: 'halved', optional: false, section: SECTIONS.MAIN },
+        { name: 'swiss cheese slices', amount: '8', additionalDetails: 'halved', optional: false, section: SECTIONS.MAIN },
+        { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
+        { name: 'pepper', amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
+        { name: 'corn flake', amount: '3 c', additionalDetails: 'crushed', optional: false, section: SECTIONS.MAIN },
+        { name: 'butter', amount: '6 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'mayonnaise', amount: '1 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
+        { name: 'yellow mustard', amount: '1 - 2 tsp', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
     ],
     supplies: [
-        // { name: 'aluminum foil' },
-        // { name: 'frying pan' },
-        // { name: 'rubber spatula' },
-        // { name: 'measuring spoons' },
-        // { name: 'measuring cups' },
-        // { name: 'pie pan' },
+        { name: 'oven' },
+        { name: 'cutting board' },
+        { name: 'knife' },
+        { name: 'paper towel' },
+        { name: 'small bowls' },
+        { name: 'basting brush' },
+        { name: 'baking pan' },
+        { name: 'sauce pan' },
     ],
     directions: [
-        // { step: 'Heat a pan over medium heat and add butter.', type: SECTIONS.MAIN },
-        // { step: 'Add flour, onion, salt, and pepper to pan and cook until bubbling.', type: SECTIONS.MAIN },
-        // { step: 'Mix milk and broth into the mixture and stir constantly until boils for 1 minute.', type: SECTIONS.MAIN },
-        // { step: 'Mix in chicken, peas, and carrots until hot.', type: SECTIONS.MAIN },
-        // { step: 'Preheat the oven to 425ºF.', type: SECTIONS.MAIN },
-        // { step: 'Roll the pie crust inside pie pan and add chicken mixture inside.', type: SECTIONS.MAIN },
-        // { step: 'Roll the remaining dough on top of the mixture and turn edges over pie pan.', type: SECTIONS.MAIN },
-        // { step: 'Bake the pie for 35 minutes or until golden brown.', type: SECTIONS.MAIN },
+        { step: 'Cut chicken breast in half horizontally so it is less thick and will be easier to work with.', type: SECTIONS.MAIN, img: rawSlices },
+        { step: 'Pat the chicken dry with paper towels.', type: SECTIONS.MAIN },
+        { step: 'Lay the halved cheese slices and halved ham slices on top of the breasts.', type: SECTIONS.MAIN, img: hamAndCheese },
+        { step: 'Fold over the chicken to enclose the ham and cheese.', type: SECTIONS.MAIN, img: rawGrouped },
+        { step: 'Preheat the oven to 400ºF when ready to bake.', type: SECTIONS.MAIN },
+        { step: 'Crush the cornflakes cereal until it becomes fine and place in a bowl as a "dredging" station.', type: SECTIONS.MAIN },
+        { step: 'Add salt and pepper to the chicken on both sides.', type: SECTIONS.MAIN, img: saltAndPepper },
+        { step: 'Melt the butter and brush the chicken on both sides.', type: SECTIONS.MAIN },
+        { step: 'Dip the chicken into the cornflakes and place in a baking pan.', type: SECTIONS.MAIN, img: breadcrumb },
+        { step: 'Bake on the center rack for 30 minutes, or until the chicken is cooked through (160ºF).', type: SECTIONS.MAIN, img: cooked },
+        { step: 'Warm mayo and mustard together in a sauce pan right before you serve it with the chicken cordon bleu.', type: SECTIONS.SAUCE },
+        { step: 'Serve the chicken cordon bleu with the warm mayo and mustard sauce.', type: SECTIONS.SERVE, img: zoomed },
+    ],
+    notes: [
+        'You can choose to freeze the chicken cordon bleu up to 3 months. Thaw in the refrigerator overnight before baking.'
     ]
 };

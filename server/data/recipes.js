@@ -118,7 +118,7 @@ const recipes = [
     malaysianBlackPepperChicken,
     malaysianSatay, // TODO: add
     pizza,
-    chickenCordonBleu, // TODO: add
+    chickenCordonBleu,
     chickenParmesan, // TODO: add
     italianTurkeyMeatballSpinachTortelliniSoup,
     chipotleChicken, // TODO: add

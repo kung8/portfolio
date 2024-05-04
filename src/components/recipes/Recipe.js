@@ -238,7 +238,7 @@ export const Recipe = ({ history, match }) => {
 
                     {item.notes && (
                         <>
-                            <h4 className="recipe-detail-label">Notes:</h4>
+                            <h4 className="recipe-detail-label notes-label">Notes:</h4>
                             <ul className="recipe-notes">
                                 {item.notes.map((note, i) => (
                                     <li key={i}>{note}</li>
