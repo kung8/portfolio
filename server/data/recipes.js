@@ -1,5 +1,6 @@
 const americanOmelette = require("./recipes/american-omelette");
 const bakedChicken = require("./recipes/baked-chicken");
+const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
 const bananaBread = require("./recipes/banana-bread");
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
@@ -110,6 +111,7 @@ const recipes = [
     pepperSteak,
     hospitalityChicken,
     bakedChicken,
+    bakedLemonChicken,
     chineseBao, // TODO: add
     vietnameseBanhTieu,
     italianLasagna,
