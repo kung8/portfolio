@@ -1,10 +1,11 @@
 const chickenPotPie = '../assets/Products/chicken-pot-pie.jpeg';
+const slice = '../assets/Products/chicken-pot-pie-slice-zoomed.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
     cardName: 'Chicken Pot Pie',
     name: 'Chicken Pot Pie',
-    img: chickenPotPie,
+    img: slice,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
@@ -43,6 +44,6 @@ module.exports = {
         { step: 'Preheat the oven to 425ºF.', type: SECTIONS.MAIN },
         { step: 'Roll the pie crust inside pie pan and add chicken mixture inside.', type: SECTIONS.MAIN },
         { step: 'Roll the remaining dough on top of the mixture and turn edges over pie pan.', type: SECTIONS.MAIN },
-        { step: 'Bake the pie for 35 minutes or until golden brown.', type: SECTIONS.MAIN },
+        { step: 'Bake the pie for 35 minutes or until golden brown.', type: SECTIONS.MAIN, img: chickenPotPie },
     ]
 };
