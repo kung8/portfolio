@@ -1,4 +1,5 @@
 const lasagna = '../assets/Products/lasagna.jpeg';
+const pan = '../assets/Products/lasagna-pan.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
@@ -75,6 +76,6 @@ module.exports = {
         { step: 'Bake for 25 minutes.', type: SECTIONS.MAIN },
         { step: 'Remove the foil, and bake for another 25 minutes.', type: SECTIONS.MAIN },
         { step: 'Let cool for at least 15 minutes.', type: SECTIONS.MAIN },
-        { step: 'Serve and enjoy this splash of Italian goodness.', type: SECTIONS.MAIN },
+        { step: 'Serve and enjoy this splash of Italian goodness.', type: SECTIONS.MAIN, img: pan },
     ]
 };
