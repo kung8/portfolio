@@ -75,6 +75,7 @@ export const Recipe = ({ history, match }) => {
             const directions = separatedDirections[key];
             finalDirections.push([key, directions]);
         }
+
         return finalDirections;
     }
 
@@ -124,6 +125,17 @@ export const Recipe = ({ history, match }) => {
         return amount + name + additionalDetails;
     }
 
+    const formatLink = (link) => link ? (
+        <>
+            <a href={link.link} target="_blank" className="link-text">
+                {link.text}
+            </a>
+            {link.additionalText && (
+                <span>{link.additionalText}</span>
+            )}
+        </>
+    ) : null
+
     return (
         <div className={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
             <div className="heading-container">
@@ -142,11 +154,25 @@ export const Recipe = ({ history, match }) => {
                     <p className="cook-time">Cook Time: {item.cookTime}</p>
                     <p className="yields">Yields: {item.yields}</p>
 
+                    {item.appliances && item.appliances.length > 0 && (
+                        <h4 className="recipe-detail-label">Appliances:</h4>
+                    )}
+
+                    {item.appliances && item.appliances.length > 0 && (
+                        <ul className="recipe-detail-list">
+                            {(item.appliances || []).map(appliance => (
+                                <li key={appliance.name}>
+                                    {appliance.name}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+
                     <h4 className="recipe-detail-label">Supplies:</h4>
                     <ul className="recipe-detail-list">
-                        {(item.supplies || []).map(ingredient => (
-                            <li key={ingredient.name}>
-                                {ingredient.name}
+                        {(item.supplies || []).map(supply => (
+                            <li key={supply.name}>
+                                {supply.name}
                             </li>
                         ))}
                     </ul>
@@ -206,9 +232,11 @@ export const Recipe = ({ history, match }) => {
                                 <div key={section} className="separated-recipe-container">
                                     <h5 className="separated-recipe-detail-label">{section}</h5>
                                     <ol className="separated-recipe-detail-list numbered">
-                                        {directions.map(({ step, figure }) => (
+                                        {directions.map(({ step, figure, link }) => (
                                             <li key={step}>
-                                                {step} {figure && (
+                                                {step} 
+                                                {formatLink(link)}
+                                                {figure && (
                                                     <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className="figure-label-anchor">(See figure {figure})</span>
                                                 )}
                                             </li>
@@ -219,11 +247,12 @@ export const Recipe = ({ history, match }) => {
                         </>
                     ) : (
                         <ol className="recipe-detail-list numbered">
-                            {(item.directions || []).map(({ step, img, video }) => {
+                            {(item.directions || []).map(({ step, img, video, link }) => {
                                 const figure = nonSeparatedFigures.findIndex(item => item.img === img) + 1;
                                 return (
                                     <li key={step}>
                                         {step}
+                                        {formatLink(link)}
                                         {img && (
                                             <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className="figure-label-anchor">(See figure {figure})</span>
                                         )}
