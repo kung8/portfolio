@@ -1,5 +1,5 @@
-const beefBulgogi = '../assets/Products/beef-bulgogi.jpeg';
-const marinating = '../assets/Products/marinating-bulgogi-beef.jpeg';
+const beefBulgogi = '../assets/Products/bulgogi-beef.jpeg';
+const marinating = '../assets/Products/bulgogi-beef-marinating.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {

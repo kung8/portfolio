@@ -30,9 +30,8 @@ const chineseGreenBeanBeef = require("./recipes/chinese-green-bean-beef");
 const chineseGingerChicken = require("./recipes/chinese-ginger-chicken");
 const chineseLoMeinNoodles = require("./recipes/chinese-lo-mein-noodles");
 const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
-const chipotleChicken = require("./recipes/chipotle-chicken");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
-const cilantroLimeRice = require("./recipes/cilantro-lime-rice");
+const cilantroLimeChicken = require("./recipes/cilantro-lime-chicken");
 const eggCasserole = require("./recipes/egg-casserole");
 const fancyLunchables = require("./recipes/fancy-lunchables");
 const frenchCrepe = require("./recipes/french-crepe");
@@ -77,6 +76,7 @@ const scrambledEggs = require("./recipes/scrambled-eggs");
 const smoothie = require("./recipes/smoothie");
 const smores = require("./recipes/smores");
 const soupBowl = require("./recipes/broccoli-cheese-soup-bowl");
+const southwestSalad = require("./recipes/southwest-salad");
 const sushi = require("./recipes/sushi");
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
@@ -110,6 +110,7 @@ const recipes = [
     chineseSourChickenSoup,
     chineseLoMeinNoodles,
     peruvianAjiDeGallina,
+    cilantroLimeChicken,
     lemonChickenOnLettuce,
     pepperSteak,
     hospitalityChicken,
@@ -126,13 +127,11 @@ const recipes = [
     malaysianBlackPepperChicken,
     pizza,
     chickenCordonBleu,
-    chickenParmesan, // TODO: add
+    chickenParmesan,
     italianTurkeyMeatballSpinachTortelliniSoup,
-    chipotleChicken, // TODO: add
-    cilantroLimeRice, // TODO: add
     mexicanChickenBake, // TODO: add
     tacoInABag,
-    cafeRioSalad, // TODO: add
+    cafeRioSalad,
     thaiMassamanCurry, // TODO: add
     beefStroganoff,
     chickenAlfredo,
@@ -150,6 +149,7 @@ const recipes = [
     greenBeanAlmondine,
     pigsInABlanket,
     chickenStuffedCrescentRolls,
+    southwestSalad,
     macaroniSalad,
     frenchCrepe,
     frenchToast,

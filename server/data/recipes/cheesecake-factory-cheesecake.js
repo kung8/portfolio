@@ -1,10 +1,10 @@
-const rawIngredients = '../assets/Products/raw-cheesecake-ingredients.jpeg';
-const raw = '../assets/Products/raw-cheesecake.jpeg';
-const bath = '../assets/Products/baked-cheesecake-in-bath.jpeg';
-const baked = '../assets/Products/baked-cheesecake.jpeg';
+const rawIngredients = '../assets/Products/cheesecake-raw-cheesecake-ingredients.jpeg';
+const raw = '../assets/Products/cheesecake-raw-cheesecake.jpeg';
+const bath = '../assets/Products/cheesecake-baked-cheesecake-in-bath.jpeg';
+const baked = '../assets/Products/cheesecake-baked-cheesecake.jpeg';
 const slice = '../assets/Products/cheesecake-slice.jpeg';
-const glaze = '../assets/Products/glazed-strawberries.jpeg';
-// const aerial = '../assets/Products/aerial-cheesecake.jpeg';
+const glaze = '../assets/Products/cheesecake-glazed-strawberries.jpeg';
+// const aerial = '../assets/Products/cheesecake-aerial.jpeg';
 const zoomed = '../assets/Products/cheesecake-zoomed.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
 

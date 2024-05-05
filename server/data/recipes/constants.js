@@ -111,6 +111,7 @@ const SECTIONS = {
     WET_RUB: 'Wet Rub',
     SERVE: 'Serve',
     SOUP: 'Soup',
+    MEAT: 'Meat',
 };
 
 const TYPES = {
