@@ -61,6 +61,7 @@ const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const padThai = require("./recipes/pad-thai");
 const parfait = require("./recipes/parfait");
+const peachCobbler = require("./recipes/peach-cobbler");
 const pepperSteak = require("./recipes/pepper-steak");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
@@ -168,6 +169,7 @@ const recipes = [
     smoothie,
     bananaBread,
     pretzel,
+    peachCobbler,
     cheesecake,
     chocolateChipCookies,
     tedLassoBiscuits,
