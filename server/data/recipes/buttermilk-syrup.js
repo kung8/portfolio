@@ -1,10 +1,11 @@
-// const cheeseBalls = '../assets/Products/cheese-balls.jpeg';
+const cooked = '../assets/Products/buttermilk-syrup-cooked.jpeg';
+const raw = '../assets/Products/buttermilk-syrup-raw.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
 
 module.exports = {
     cardName: 'Buttermilk Syrup',
     name: 'Buttermilk Syrup',
-    // img: cheeseBalls,
+    img: cooked,
     available: true,
     category: [CATEGORIES.SAUCE, CATEGORIES.BREAKFAST],
     genre: [GENRES.AMERICAN],
@@ -31,7 +32,7 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'Combine sugar, buttermilk, and butter in a saucepan. And heat over medium-high heat until it boils, about 5 minutes. Stir occasionally.', type: SECTIONS.SAUCE },
+        { step: 'Combine sugar, buttermilk, and butter in a saucepan. And heat over medium-high heat until it boils, about 5 minutes. Stir occasionally.', type: SECTIONS.SAUCE, img: raw },
         { step: 'Remove from heat, and add baking soda and vanilla. And stir.', type: SECTIONS.SAUCE },
     ]
 };
