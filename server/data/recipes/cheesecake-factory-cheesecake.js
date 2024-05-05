@@ -8,7 +8,7 @@ const aerial = '../assets/Products/aerial-cheesecake.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
 
 module.exports = {
-    cardName: 'Cheesecake',
+    cardName: 'CF Cheesecake',
     name: 'Cheesecake Factory Cheesecake',
     img: aerial,
     available: true,
