@@ -10,7 +10,7 @@ module.exports = {
     genre: [GENRES.ASIAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
-    type: [TYPES.FINGER_FOOD, TYPES.MEAT],
+    type: [TYPES.FINGER_FOOD, TYPES.PROTEIN],
     yields: '6 servings',
     prepTime: '10 m',
     cookTime: '25 - 30 m',

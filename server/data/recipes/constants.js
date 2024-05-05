@@ -124,7 +124,7 @@ const TYPES = {
     CASSEROLE: 'Casserole',
     VEGETABLE: 'Vegetable',
     FRUIT: 'Fruit',
-    MEAT: 'Meat',
+    PROTEIN: 'Protein',
     FINGER_FOOD: 'Finger Food',
     DESSERT: 'Dessert',
     SAUCE: 'Sauce',

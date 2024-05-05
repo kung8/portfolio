@@ -41,6 +41,7 @@ const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const graveyardDessert = require("./recipes/graveyard-dessert");
 const greenBeanAlmondine = require("./recipes/green-bean-almondine");
 const hamburger = require("./recipes/hamburger");
+const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
 const hawaiianHaystacks = require("./recipes/hawaiian-haystacks");
 const hospitalityChicken = require("./recipes/hospitality-chicken");
 const indianButterChicken = require("./recipes/indian-butter-chicken");
@@ -156,6 +157,7 @@ const recipes = [
     biscuitsAndGravy,
     breakfastSandwich, // TODO: add
     scrambledEggs,
+    hardBoiledEggs,
     americanOmelette,
     eggCasserole,
     waffles,

@@ -1,9 +1,16 @@
+const example = '../assets/Products/example.jpeg';
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+
 module.exports = {
     cardName: '',
     name: '',
     img: '',
     available: false,
-    type: '',
+    category: [],
+    genre: [],
+    method: [],
+    protein: [],
+    type: [],
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',
