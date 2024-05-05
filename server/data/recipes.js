@@ -153,11 +153,11 @@ const recipes = [
     macaroniSalad,
     frenchCrepe,
     frenchToast,
-    soupBowl, // TODO: add
+    soupBowl,
     cheeseballs,
     garlicBreadsticks,
     biscuitsAndGravy,
-    breakfastSandwich, // TODO: add
+    breakfastSandwich,
     scrambledEggs,
     hardBoiledEggs,
     americanOmelette,
