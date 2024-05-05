@@ -11,7 +11,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    yields: '8 servings',
+    yields: '12 servings',
     prepTime: '10 m',
     cookTime: '40 m',
     ingredients: [
