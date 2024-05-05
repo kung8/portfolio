@@ -10,7 +10,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.RAW],
     type: [TYPES.DESSERT],
-    yields: ' servings',
+    yields: '3 servings',
     prepTime: '7 m',
     cookTime: '0 m',
     ingredients: [
