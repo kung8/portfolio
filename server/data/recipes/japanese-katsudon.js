@@ -37,8 +37,10 @@ module.exports = {
         { name: 'white rice', amount: '5 c', additionalDetails: 'steamed', optional: false, section: SECTIONS.MAIN },
         { name: 'green onion', amount: '5', additionalDetails: 'chopped', optional: false, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'deep pot' },
         { name: 'cooling rack' },
         { name: 'paper towels' },

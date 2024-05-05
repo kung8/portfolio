@@ -35,8 +35,10 @@ module.exports = {
         { name: 'sour cream', amount: '8 oz', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'chow mein noodles', amount: '2 c', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'slow cooker' },
+    ],
+    supplies: [
         { name: 'slow cooker liner' },
         { name: 'rubber spatula' },
         { name: 'cutting board and knife' },

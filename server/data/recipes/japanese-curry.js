@@ -28,8 +28,10 @@ module.exports = {
         // { name: 'tomato (optional)', amount: '2', additionalDetails: 'sliced', optional: false, section: SECTIONS.TOPPINGS },
         // { name: 'lemon (optional)', amount: '', additionalDetails: 'wedges', optional: false, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         // { name: 'small-based pot' },
         // { name: 'measuring cups' },
         // { name: 'measuring spoons' },

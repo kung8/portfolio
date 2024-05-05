@@ -20,8 +20,10 @@ module.exports = {
         { name: 'baking soda', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
         { name: 'vanilla extract', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'saucepan' },
         { name: 'spatula' },
     ],

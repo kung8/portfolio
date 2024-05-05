@@ -28,6 +28,9 @@ module.exports = {
         { name: 'cheese slices', amount: '8', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'mushroom', amount: '', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
     ],
+    appliances: [
+        { name: 'oven' },
+    ],
     supplies: [
         { name: 'aluminum foil' },
         { name: 'large mixing bowl' },

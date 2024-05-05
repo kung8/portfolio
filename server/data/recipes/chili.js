@@ -34,8 +34,10 @@ module.exports = {
         { name: 'green onion', amount: '', additionalDetails: 'diced', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'saltine crackers', amount: '', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'large pot' },
         { name: 'spatula' },
     ],

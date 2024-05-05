@@ -36,9 +36,11 @@ module.exports = {
         { name: 'baking soda', amount: '1/2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'water', amount: '9 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
-        { name: 'oven' },
+    appliances: [
         { name: 'stove' },
+        { name: 'oven' },
+    ],
+    supplies: [
         { name: 'stand mixer (or hand mixer)' },
         { name: 'slotted spatula' },
         { name: 'silicon mats' },

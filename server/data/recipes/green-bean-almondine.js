@@ -30,8 +30,10 @@ module.exports = {
         { name: 'pepper', amount: '1/4 tsp', additionalDetails: '', optional: false, section: '' },
         { name: 'ice', amount: '', additionalDetails: '', optional: false, section: '' },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'saucepan' },
         { name: 'mixing bowl' },
     ],

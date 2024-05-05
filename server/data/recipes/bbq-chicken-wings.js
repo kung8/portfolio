@@ -31,8 +31,10 @@ module.exports = {
         { name: 'ketchup', amount: '1 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'mustard', amount: '1 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'large bowl' },
         { name: 'pan with lid' },
     ],

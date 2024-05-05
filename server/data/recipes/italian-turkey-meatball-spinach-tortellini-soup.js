@@ -32,8 +32,10 @@ module.exports = {
         { name: 'baby spinach', amount: '3 c', additionalDetails: '', optional: false },
         { name: 'black pepper', amount: '', additionalDetails: 'to taste', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'large bowl' },
         { name: 'large pot' },
     ],

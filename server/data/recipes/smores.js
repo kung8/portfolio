@@ -17,10 +17,12 @@ module.exports = {
         { name: 'marshmallow', amount: '2', additionalDetails: '', optional: false },
         { name: 'Hershey chocolate pieces', amount: '6', additionalDetails: '', optional: false },
     ],
+    appliances: [
+        { name: 'oven' },
+    ],
     supplies: [
         { name: 'aluminum foil' },
         { name: 'baking sheet' },
-        { name: 'oven' },
     ],
     directions: [
         { step: 'Lay aluminum foil on baking sheet and turn on oven to broil.', type: SECTIONS.MAIN },

@@ -29,10 +29,12 @@ module.exports = {
         { name: 'parsley', amount: '3 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'marinara sauce', amount: '', additionalDetails: 'warmed', optional: true, section: SECTIONS.MAIN },
     ],
+    appliances: [
+        { name: 'oven' },
+    ],
     supplies: [
         { name: 'clean counter' },
         { name: 'large bowl' },
-        { name: 'oven' },
         { name: 'rolling pin' },
         { name: 'plastic wrap or cooking towel' },
         { name: 'baking sheet' },

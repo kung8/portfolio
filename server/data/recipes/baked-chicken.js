@@ -25,8 +25,10 @@ module.exports = {
         { name: 'paprika', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'cayenne pepper', amount: '1/4 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'baking pan' },
         { name: 'basting brush' },
         { name: 'small bowl' },

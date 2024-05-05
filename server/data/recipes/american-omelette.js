@@ -25,8 +25,10 @@ module.exports = {
         { name: 'basil', amount: '', additionalDetails: 'to taste', optional: false },
         { name: 'butter', amount: '1/2 Tbsp', additionalDetails: '', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'curvy frying pan' },
         { name: 'cutting board and knife' },
         { name: 'small bowl' },

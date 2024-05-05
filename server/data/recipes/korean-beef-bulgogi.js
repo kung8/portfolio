@@ -30,10 +30,14 @@ module.exports = {
         { name: 'green onion', amount: '4', additionalDetails: 'sliced', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'sesame seeds', amount: '2 tsp', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
     ],
+    appliances: [
+        { name: 'stove' },
+    ],
     supplies: [
         { name: 'ziploc' },
         { name: 'peeler' },
-        { name: 'cutting board + knife' },
+        { name: 'cutting board' },
+        { name: 'knife' },
         { name: 'measuring spoons' },
         { name: 'stove' },
         { name: 'frying pan' },

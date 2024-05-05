@@ -63,8 +63,10 @@ module.exports = {
         { name: 'salt', amount: '1/2 tsp', additionalDetails: '', optional: false, section: SWEET_AND_SPICY_SAUCE },
         { name: 'thai chili peppers', amount: '2', additionalDetails: 'optional and minced', optional: true, section: SWEET_AND_SPICY_SAUCE },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'large bowl' },
         { name: 'medium bowl' },
         { name: 'large bowl for wet rub' },

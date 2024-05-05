@@ -25,8 +25,10 @@ module.exports = {
         { name: 'fresh rosemary', amount: '2', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'fresh thyme', amount: '2 sprigs', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'roasting pan' },
         { name: 'large pan' },
         { name: 'aluminum foil' },

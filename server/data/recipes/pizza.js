@@ -41,10 +41,12 @@ module.exports = {
         { name: 'cooked chicken', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
         { name: 'cooked bacon', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
     ],
+    appliances: [
+        { name: 'oven' },
+    ],
     supplies: [
         { name: 'clean counter' },
         { name: 'large bowl' },
-        { name: 'oven' },
         { name: 'rolling pin' },
         { name: 'plastic wrap or cooking towel' },
         { name: 'baking sheet' },

@@ -21,6 +21,9 @@ module.exports = {
         { name: 'bread', amount: '8', additionalDetails: '', optional: false },
         { name: 'butter', amount: '8', additionalDetails: '', optional: false },
     ],
+    appliances: [
+        { name: 'stove' },
+    ],
     supplies: [
         { name: 'medium bowl' },
         { name: 'frying pan' },

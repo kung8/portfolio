@@ -34,8 +34,10 @@ module.exports = {
         { name: 'bean sprout', amount: '6 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'cilantro', amount: '1 bunch', additionalDetails: 'chopped', optional: false, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'frying pan' },
         { name: 'large mixing bowl' },
         { name: 'medium bowl' },

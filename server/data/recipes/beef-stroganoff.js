@@ -26,9 +26,12 @@ module.exports = {
         { name: 'sour cream', amount: '3 c', additionalDetails: '', optional: false },
         { name: 'noodles', amount: '6 c', additionalDetails: 'cooked', optional: false },
     ],
-    supplies: [
-        { name: 'cutting board + knife' },
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
+        { name: 'cutting board' },
+        { name: 'knife' },
         { name: 'frying pan' },
         { name: 'spatula' },
     ],

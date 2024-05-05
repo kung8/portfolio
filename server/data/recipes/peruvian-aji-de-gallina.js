@@ -29,14 +29,17 @@ module.exports = {
         { name: 'nutmeg', amount: '1 pinch of', additionalDetails: '', optional: true },
         { name: 'rice', amount: '', additionalDetails: '', optional: false },
     ],
-    supplies: [
-        { name: 'stove' },
+    appliances: [
         { name: 'blender' },
+        { name: 'stove' },
+    ],
+    supplies: [
         { name: 'large pan' },
         { name: 'large pot' },
         { name: 'measuring cups' },
         { name: 'measuring spoons' },
-        { name: 'cutting board and knife' },
+        { name: 'cutting board' },
+        { name: 'knife' },
         { name: 'mixing bowl' },
         { name: 'small bowl' },
         { name: 'spoon' },

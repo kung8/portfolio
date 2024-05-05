@@ -29,8 +29,10 @@ module.exports = {
         { name: 'rosemary', amount: '', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'lemon', amount: '', additionalDetails: 'sliced', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'baking pan' },
         { name: 'frying pan' },
         { name: 'small bowl' },

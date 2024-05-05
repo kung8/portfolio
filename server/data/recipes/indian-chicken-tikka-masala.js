@@ -16,6 +16,9 @@ module.exports = {
     ingredients: [
         { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
     ],
+    appliances: [
+        { name: '' },
+    ],
     supplies: [
         { name: '' },
     ],

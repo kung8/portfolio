@@ -24,10 +24,13 @@ module.exports = {
         { name: 'pepper', amount: '', additionalDetails: 'minced', optional: false },
         { name: 'hoagie bread', amount: '8', additionalDetails: '', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'pan' },
-        { name: 'cutting board + knife' },
+        { name: 'cutting board' },
+        { name: 'knife' },
         { name: 'medium bowl' },
         { name: 'plate' },
     ],

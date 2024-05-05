@@ -38,12 +38,13 @@ module.exports = {
         { name: 'broccoli', amount: '1/2 lb', additionalDetails: 'cut into florets', optional: false, section: SECTIONS.MAIN },
         { name: 'garlic', amount: '3 medium cloves', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'medium bowl' },
         { name: 'wok' },
         { name: 'large pot' },
-        { name: 'stove' },
         { name: 'large bowl' },
     ],
     directions: [

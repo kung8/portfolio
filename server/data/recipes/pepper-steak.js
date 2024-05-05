@@ -25,8 +25,10 @@ module.exports = {
         { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false, section: '' },
         { name: 'black pepper', amount: '', additionalDetails: 'to taste', optional: false, section: '' },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'wok' },
     ],
     directions: [

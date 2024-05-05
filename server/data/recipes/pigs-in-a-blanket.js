@@ -17,11 +17,14 @@ module.exports = {
         { name: 'egg', amount: '2', additionalDetails: '', optional: false },
         { name: 'mini hot dogs', amount: '14 oz', additionalDetails: '', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'baking sheet' },
         { name: 'aluminum foil' },
-        { name: 'cutting board + knife' },
+        { name: 'cutting board' },
+        { name: 'knife' },
         { name: 'basting brush' },
         { name: 'plate' },
     ],

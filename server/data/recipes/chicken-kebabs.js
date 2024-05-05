@@ -25,11 +25,14 @@ module.exports = {
         { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false },
         { name: 'pepper', amount: '', additionalDetails: 'to taste', optional: false },
     ],
+    appliances: [
+        { name: 'oven' },
+    ],
     supplies: [
-        { name: 'cutting board + knife' },
+        { name: 'cutting board' },
+        { name: 'knife' },
         { name: 'ziploc bag' },
         { name: 'bamboo skewer' },
-        { name: 'oven' },
         { name: 'baking sheet' },
         { name: 'aluminum foil' },
     ],

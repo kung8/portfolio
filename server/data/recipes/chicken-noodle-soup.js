@@ -28,13 +28,16 @@ module.exports = {
         { name: 'thyme', amount: '', additionalDetails: 'to taste', optional: false },
         { name: 'egg noodles', amount: '16 oz', additionalDetails: '', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'large pan' },
         { name: 'large pot' },
         { name: 'measuring cups' },
         { name: 'measuring spoons' },
-        { name: 'cutting board(s) and knife(ves)' },
+        { name: 'cutting boards' },
+        { name: 'knives' },
         { name: 'mixing bowl' },
         { name: 'small bowl' },
         { name: 'spoon' },

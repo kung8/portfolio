@@ -18,9 +18,12 @@ module.exports = {
         { name: 'Knorr tamarind soup mix', amount: '1 packet', additionalDetails: '', optional: false },
         { name: 'lime juice', amount: '2 Tbsp', additionalDetails: '', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
-        { name: 'cutting board and cleaver' },
+    ],
+    supplies: [
+        { name: 'cutting board' },
+        { name: 'cleaver' },
         { name: 'large pot' },
         { name: 'small bowl' },
         { name: 'spatula' },

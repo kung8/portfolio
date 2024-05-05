@@ -27,8 +27,10 @@ module.exports = {
         { name: 'vanilla extract', amount: '1/2 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'chocolate chips', amount: '1/2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'mixing bowl' },
         { name: 'large bowl' },
         { name: 'rubber spatula' },

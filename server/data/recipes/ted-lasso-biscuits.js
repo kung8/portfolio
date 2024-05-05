@@ -18,8 +18,10 @@ module.exports = {
         { name: 'flour', amount: '2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'salt', amount: '1/4 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'mixing bowl' },
         { name: 'baking pan' },
         { name: 'electric/standing mixer' },

@@ -22,8 +22,10 @@ module.exports = {
         { name: 'eggs', amount: '3 large', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'flour', amount: '1 1/4 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'mixing bowl' },
         { name: 'baking pan' },
         { name: 'spatula' },

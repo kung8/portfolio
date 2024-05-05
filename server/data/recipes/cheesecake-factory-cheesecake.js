@@ -39,8 +39,10 @@ module.exports = {
         { name: 'sugar', amount: '1/4 c', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'lemon', amount: '1', additionalDetails: 'juiced', optional: false, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'stand mixer and bowl' },
         { name: 'cake spring form pan' },
         { name: 'roasting pan' },

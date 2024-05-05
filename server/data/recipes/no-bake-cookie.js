@@ -26,8 +26,10 @@ module.exports = {
         { name: 'creamy peanut butter', amount: '2/3 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'quick oats', amount: '3 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'saucepan' },
         { name: 'plates' },
     ],

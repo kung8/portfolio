@@ -35,16 +35,19 @@ module.exports = {
         { name: 'mozzarella cheese', amount: '3/4 lb', additionalDetails: 'sliced', optional: false },
         { name: 'parmesan cheese', amount: '3/4 c', additionalDetails: 'grated', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'large pan' },
         { name: 'spatula' },
         { name: 'pot' },
         { name: 'baking pan' },
         { name: 'measuring cups' },
         { name: 'measuring spoons' },
-        { name: 'cutting board + knife' },
+        { name: 'cutting board' },
+        { name: 'knife' },
         { name: 'colander' },
         { name: 'mixing bowl' },
     ],

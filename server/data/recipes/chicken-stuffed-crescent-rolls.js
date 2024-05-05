@@ -34,8 +34,10 @@ module.exports = {
         { name: 'chili powder', amount: '', additionalDetails: 'too taste', optional: false, section: SECTIONS.FILLING },
         { name: 'butter', amount: '2 Tbsp', additionalDetails: 'melted', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'baking sheet' },
         { name: 'silicon baking mat' },
         { name: 'mixing bowl' },

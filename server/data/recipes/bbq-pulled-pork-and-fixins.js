@@ -29,8 +29,10 @@ module.exports = {
         { name: 'thyme', amount: '1 1/2 tsp', additionalDetails: '', optional: false, section: SECTIONS.FILLING },
         { name: 'brioche buns', amount: '8', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'slow cooker' },
+    ],
+    supplies: [
         { name: 'slow cooker liner' },
         { name: '2 forks' },
     ],

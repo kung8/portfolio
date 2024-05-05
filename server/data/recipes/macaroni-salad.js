@@ -25,8 +25,10 @@ module.exports = {
         { name: 'celery', amount: '2 stalks', additionalDetails: 'sliced', optional: false },
         { name: 'green bell pepper', amount: '1', additionalDetails: 'diced', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'pot' },
         { name: 'large mixing bowl' },
         { name: 'rubber spatula' },

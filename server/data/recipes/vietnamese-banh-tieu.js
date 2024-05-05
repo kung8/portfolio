@@ -23,8 +23,10 @@ module.exports = {
         { name: 'sesame seed', amount: '', additionalDetails: '', optional: false, section: SECTIONS.DOUGH },
         { name: 'vegetable oil', amount: '', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'large bowl' },
         { name: 'pot' },
         { name: 'tongs' },

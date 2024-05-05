@@ -27,11 +27,14 @@ module.exports = {
         { name: 'ketchup (optional serving)', amount: '', additionalDetails: '', optional: false },
         { name: 'salsa (optional serving)', amount: '', additionalDetails: '', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'mixing bowl' },
         { name: 'baking pan' },
-        { name: 'cutting board + knife' },
+        { name: 'cutting board' },
+        { name: 'knife' },
         { name: 'fork' },
         { name: 'measuring cups' },
         { name: 'measuring spoons' },

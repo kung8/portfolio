@@ -168,14 +168,19 @@ export const Recipe = ({ history, match }) => {
                         </ul>
                     )}
 
-                    <h4 className="recipe-detail-label">Supplies:</h4>
-                    <ul className="recipe-detail-list">
-                        {(item.supplies || []).map(supply => (
-                            <li key={supply.name}>
-                                {supply.name}
-                            </li>
-                        ))}
-                    </ul>
+                    {item.supplies && item.supplies.length > 0 && (
+                        <h4 className="recipe-detail-label">Supplies:</h4>
+                    )}
+
+                    {item.supplies && item.supplies.length > 0 && (
+                        <ul className="recipe-detail-list">
+                            {(item.supplies || []).map(supply => (
+                                <li key={supply.name}>
+                                    {supply.name}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
 
                     <h4 className="recipe-detail-label">Ingredients:</h4>
                     {item.separated ? (

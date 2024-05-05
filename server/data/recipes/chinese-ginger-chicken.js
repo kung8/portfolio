@@ -24,8 +24,10 @@ module.exports = {
         { name: 'black pepper', amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
         { name: 'cornstarch', amount: '', additionalDetails: 'to thicken', optional: false, section: SECTIONS.MAIN },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'wok' },
         { name: 'spatula' },
         { name: '2 large bowls' },

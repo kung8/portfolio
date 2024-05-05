@@ -28,15 +28,16 @@ module.exports = {
         { name: 'shredded cheese', amount: '', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'lettuce', amount: '', additionalDetails: 'shredded', optional: false, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'pan' },
         { name: 'pot' },
         { name: 'spatula' },
         { name: 'cutting board and knife' },
         { name: 'small bowls for SECTIONS.toppings' },
         { name: 'serving spoons' },
-
     ],
     directions: [
         { step: 'Heat up a pan over medium-high heat, and once it is hot add in the ground beef.', type: SECTIONS.MAIN },

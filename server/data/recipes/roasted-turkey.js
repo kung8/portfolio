@@ -26,8 +26,10 @@ module.exports = {
         { name: 'salt', amount: '', additionalDetails: 'minced', optional: false },
         { name: 'pepper', amount: '', additionalDetails: 'minced', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'roasting pan' },
         { name: '2 tongs' },
         { name: 'medium bowl' },

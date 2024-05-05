@@ -34,8 +34,10 @@ module.exports = {
         { name: 'mayonnaise', amount: '1 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
         { name: 'yellow mustard', amount: '1 - 2 tsp', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'cutting board' },
         { name: 'knife' },
         { name: 'paper towel' },

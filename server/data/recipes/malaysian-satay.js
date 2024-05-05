@@ -27,13 +27,15 @@ module.exports = {
         { name: 'cooking oil', amount: '3 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MARINADE },
         { name: 'cucumber', amount: '1', additionalDetails: 'sliced', optional: false, section: SECTIONS.SERVE },
     ],
+    appliances: [
+        { name: 'blender' },
+        { name: 'oven' },
+    ],
     supplies: [
         { name: 'cutting board' },
         { name: 'knife' },
         { name: 'ziploc bag' },
         { name: 'bamboo skewer' },
-        { name: 'blender' },
-        { name: 'oven' },
         { name: 'baking sheet' },
     ],
     directions: [

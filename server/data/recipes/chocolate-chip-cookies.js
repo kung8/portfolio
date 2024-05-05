@@ -26,8 +26,10 @@ module.exports = {
         { name: 'flour', amount: '3 c', additionalDetails: '', optional: false },
         { name: 'semisweet chocolate chips', amount: '2 c', additionalDetails: '', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'baking sheets' },
         { name: 'aluminum foil' },
         { name: 'large mixing bowl' },

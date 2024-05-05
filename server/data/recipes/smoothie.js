@@ -21,7 +21,7 @@ module.exports = {
         { name: 'plain yogurt', amount: '1 spoonful of', additionalDetails: '', optional: false },
         { name: 'peanut butter', amount: '2 spoonfuls of', additionalDetails: '', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'blender' },
     ],
     directions: [

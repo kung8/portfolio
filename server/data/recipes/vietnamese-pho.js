@@ -29,8 +29,10 @@ module.exports = {
         { name: 'soy sauce', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
         { name: 'sriracha sauce', amount: '', additionalDetails: '', optional: true, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'medium and large pot' },
         { name: 'cutting board and knife' },
         { name: 'small and medium bowls' },

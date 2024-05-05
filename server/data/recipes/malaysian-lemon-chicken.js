@@ -30,8 +30,10 @@ module.exports = {
         { name: 'salt', amount: '5 pinches', additionalDetails: 'to taste', optional: false, section: SECTIONS.SAUCE },
         { name: 'white sesame', amount: '2 1/2 tsp', additionalDetails: 'to top', optional: false, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'deep pot' },
         { name: 'large bowl' },
         { name: 'sauce pan' },

@@ -35,8 +35,10 @@ module.exports = {
         { name: 'powdered sugar', amount: '', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'lemon juice', amount: '', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'mixing bowl' },
         { name: 'curvy frying pan' },
         { name: 'whisk' },

@@ -21,8 +21,11 @@ module.exports = {
         { name: 'carrot chips', amount: '1 lb', additionalDetails: '', optional: false },
         { name: 'olive oil', amount: '1 tsp', additionalDetails: '', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'air fryer' },
+        { name: 'stove' },
+    ],
+    supplies: [
         { name: 'pot with steamer' },
         { name: 'frying pan' },
         { name: 'spatula' },

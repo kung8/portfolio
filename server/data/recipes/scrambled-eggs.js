@@ -26,10 +26,13 @@ module.exports = {
         { name: 'pepper', amount: '', additionalDetails: 'to taste', optional: false },
         { name: 'basil', amount: '', additionalDetails: 'to taste', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: 'frying pan' },
-        { name: 'cutting board and knife' },
+        { name: 'cutting board' },
+        { name: 'knife' },
         { name: 'spatula' },
         { name: 'measuring cups' },
         { name: 'medium bowl' },

@@ -59,8 +59,10 @@ module.exports = {
         { name: 'salami', amount: '10 slices', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
         { name: 'chili peppers', amount: '5', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'oven' },
+    ],
+    supplies: [
         { name: 'clean counter'},
         { name: 'baking pan' },
         { name: '2 baguette pans' },

@@ -28,6 +28,10 @@ module.exports = {
         { name: 'frozen carrots', amount: '5 oz', additionalDetails: '', optional: false },
         { name: 'refrigerated pie crust', amount: '15 oz', additionalDetails: '', optional: false },
     ],
+    appliances: [
+        { name: 'stove' },
+        { name: 'oven' },
+    ],
     supplies: [
         { name: 'aluminum foil' },
         { name: 'frying pan' },

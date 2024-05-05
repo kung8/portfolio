@@ -32,8 +32,10 @@ module.exports = {
         { name: 'rice', amount: '', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'cilantro', amount: '', additionalDetails: '', optional: false, section: SECTIONS.TOPPINGS },
     ],
-    supplies: [
+    appliances: [
         { name: 'stove' },
+    ],
+    supplies: [
         { name: '2 large frying pans' },
         { name: 'spatula' },
         { name: 'large mixing bowl' },

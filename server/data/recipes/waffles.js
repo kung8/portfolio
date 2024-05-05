@@ -24,12 +24,14 @@ module.exports = {
         { name: 'vanilla', amount: '1 tsp', additionalDetails: '', optional: false },
         { name: '', amount: '', additionalDetails: '', optional: false },
     ],
-    supplies: [
+    appliances: [
         { name: 'waffle iron' },
+        { name: 'mixer' },
+    ],
+    supplies: [
         { name: 'mixing bowl' },
         { name: 'medium bowl' },
         { name: 'small bowl' },
-        { name: 'mixer' },
     ],
     directions: [
         { step: 'Preheat the waffle iron.', type: SECTIONS.MAIN },

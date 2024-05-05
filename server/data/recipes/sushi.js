@@ -35,7 +35,8 @@ module.exports = {
         { name: 'soy sauce', amount: '', additionalDetails: '', optional: true, section: SECTIONS.SAUCE },
     ],
     supplies: [
-        { name: 'cutting board and knife' },
+        { name: 'cutting board' },
+        { name: 'knife' },
         { name: 'sushi mat' },
         { name: 'plates' },
     ],
