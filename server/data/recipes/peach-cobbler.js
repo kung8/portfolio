@@ -40,7 +40,7 @@ module.exports = {
         { step: 'Combine milk to the mixing bowl.', type: SECTIONS.MAIN },
         { step: 'Pour mixture into the baking pan and smooth to an even layer.', type: SECTIONS.MAIN },
         { step: 'Add the canned peaches and its juices to the baking pan.', type: SECTIONS.MAIN },
-        { step: 'Generously sprinkle cinnamon on top.', type: SECTIONS.MAIN },
+        { step: 'Generously drizzle cinnamon on top.', type: SECTIONS.MAIN },
         { step: 'Bake for 35 to 40 minutes.', type: SECTIONS.MAIN },
         { step: 'Serve warm with ice cream.', type: SECTIONS.SERVE, img: pan },
     ]

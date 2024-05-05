@@ -43,6 +43,7 @@ const greenBeanAlmondine = require("./recipes/green-bean-almondine");
 const hamburger = require("./recipes/hamburger");
 const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
 const hawaiianHaystacks = require("./recipes/hawaiian-haystacks");
+const hoboDinner = require("./recipes/hobo-dinner");
 const hospitalityChicken = require("./recipes/hospitality-chicken");
 const indianButterChicken = require("./recipes/indian-butter-chicken");
 const indianChickenTikkaMasala = require("./recipes/indian-chicken-tikka-masala");
@@ -145,6 +146,7 @@ const recipes = [
     chickenPotPie,
     chickenNoodleSoup,
     chili,
+    hoboDinner,
     greenBeanAlmondine,
     pigsInABlanket,
     chickenStuffedCrescentRolls,
