@@ -8,11 +8,12 @@ module.exports = {
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.ASIAN, GENRES.MALAYSIAN],
-    method: [METHODS.BAKE],
+    method: [METHODS.MARINADE, METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     yields: '6 servings',
     prepTime: '12 m',
     cookTime: '25 m',
+    separated: true,
     ingredients: [
         { name: 'chicken thigh', amount: '2 lb', additionalDetails: 'chunks', optional: false, section: SECTIONS.MAIN },
         { name: 'sugar', amount: '2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MARINADE },
@@ -43,6 +44,7 @@ module.exports = {
         { step: 'Preheat the oven to 450°F.', type: SECTIONS.MAIN },
         { step: 'Thread 5 to 6 chicken pieces on the skewer, leaving gaps between chicken.', type: SECTIONS.MAIN },
         { step: 'Bake for 15 to 25 minutes (cooking time will vary depending on the size of meat).', type: SECTIONS.MAIN },
+        { step: 'Serve with cucumbers.', type: SECTIONS.SERVE },
     ], 
     notes: [
         'lemongrass can be found in the frozen section of Asian grocery stores',
