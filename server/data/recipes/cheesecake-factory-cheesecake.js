@@ -4,13 +4,14 @@ const bath = '../assets/Products/baked-cheesecake-in-bath.jpeg';
 const baked = '../assets/Products/baked-cheesecake.jpeg';
 const slice = '../assets/Products/cheesecake-slice.jpeg';
 const glaze = '../assets/Products/glazed-strawberries.jpeg';
-const aerial = '../assets/Products/aerial-cheesecake.jpeg';
+// const aerial = '../assets/Products/aerial-cheesecake.jpeg';
+const zoomed = '../assets/Products/cheesecake-zoomed.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
 
 module.exports = {
-    cardName: 'CF Cheesecake',
+    cardName: 'C.F. Cheesecake',
     name: 'Cheesecake Factory Cheesecake',
-    img: aerial,
+    img: zoomed,
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
