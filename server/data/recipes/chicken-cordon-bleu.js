@@ -23,6 +23,9 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '30 m',
     separated: true,
+    websites: [
+        'https://tastesbetterfromscratch.com/chicken-cordon-bleu/'
+    ],
     ingredients: [
         { name: 'boneless skinless chicken breast', amount: '4', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'ham slices', amount: '8', additionalDetails: 'halved', optional: false, section: SECTIONS.MAIN },

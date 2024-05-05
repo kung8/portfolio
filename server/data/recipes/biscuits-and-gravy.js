@@ -18,6 +18,9 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '15 m',
     separated: true,
+    websites: [
+        'https://www.allrecipes.com/recipe/216391/easy-sausage-gravy-and-biscuits/'
+    ],
     ingredients: [
         { name: 'flour', amount: '5 1/2 c', additionalDetails: '', optional: false, section: BISCUITS },
         { name: 'baking powder', amount: '2 Tbsp', additionalDetails: '', optional: false, section: BISCUITS },

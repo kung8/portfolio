@@ -15,6 +15,9 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '10 m',
     separated: true,
+    websites: [
+        'https://rasamalaysia.com/lemon-chicken/'
+    ],
     ingredients: [
         { name: 'boneless chicken thigh', amount: '3 lbs', additionalDetails: 'cut into small pieces', optional: false, section: SECTIONS.MARINADE },
         { name: 'soy sauce', amount: '2 1/2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MARINADE },

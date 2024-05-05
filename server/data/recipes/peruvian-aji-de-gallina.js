@@ -15,6 +15,9 @@ module.exports = {
     yields: '3 - 4 servings',
     prepTime: '5 m',
     cookTime: '25 - 40 m',
+    websites: [
+        'https://www.carolinescooking.com/aji-de-gallina-peruvian-chicken-stew/'
+    ],
     ingredients: [
         { name: 'chicken breast', amount: '2', additionalDetails: '', optional: false },
         { name: 'large onion', amount: '1', additionalDetails: 'diced', optional: false },

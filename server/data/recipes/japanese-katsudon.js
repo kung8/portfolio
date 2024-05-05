@@ -21,6 +21,9 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '20 m',
     separated: true,
+    websites: [
+        'https://thewoksoflife.com/katsudon/'
+    ],
     ingredients: [
         { name: 'boneless pork chops', amount: '10', additionalDetails: 'pounded flat', optional: false, section: SECTIONS.MAIN },
         { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },

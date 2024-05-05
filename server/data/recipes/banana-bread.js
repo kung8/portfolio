@@ -16,6 +16,9 @@ module.exports = {
     yields: '1 loaf',
     prepTime: '10 m',
     cookTime: '55 m - 1 h',
+    websites: [
+        'https://natashaskitchen.com/banana-bread-recipe-video/'
+    ],
     ingredients: [
         { name: 'ripe bananas', amount: '3', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'unsalted butter', amount: '1/2 c', additionalDetails: 'room temperature', optional: false, section: SECTIONS.MAIN },

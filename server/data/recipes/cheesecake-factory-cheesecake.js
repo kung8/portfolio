@@ -21,6 +21,9 @@ module.exports = {
     prepTime: '45 m',
     cookTime: '2 h',
     separated: true,
+    websites: [
+        'https://www.delish.com/cooking/recipe-ideas/a37762621/cheesecake-factory-original-cheesecake-copycat-recipe/'
+    ],
     ingredients: [
         { name: 'cooking spray', amount: '', additionalDetails: '', optional: false, section: SECTIONS.CRUST },
         { name: 'graham crackers', amount: '14.4 oz', additionalDetails: 'finely crushed', optional: false, section: SECTIONS.CRUST },

@@ -13,6 +13,9 @@ module.exports = {
     yields: '6 servings',
     prepTime: '15 m',
     cookTime: '4 h 15 m',
+    websites: [
+        'https://www.foodnetwork.com/recipes/ina-garten/pot-roast-recipe-1941651'
+    ],
     ingredients: [
         { name: 'beef roast', amount: '3 lb', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'black pepper', amount: '2 sprigs', additionalDetails: '', optional: false, section: SECTIONS.MAIN },

@@ -14,6 +14,9 @@ module.exports = {
     prepTime: '12 m',
     cookTime: '25 m',
     separated: true,
+    websites: [
+        'https://rasamalaysia.com/recipe-chicken-satay/'
+    ],
     ingredients: [
         { name: 'chicken thigh', amount: '2 lb', additionalDetails: 'chunks', optional: false, section: SECTIONS.MAIN },
         { name: 'sugar', amount: '2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MARINADE },

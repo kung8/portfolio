@@ -16,6 +16,9 @@ module.exports = {
     yields: '5 servings',
     prepTime: '5 m',
     cookTime: '50 m',
+    websites: [
+        'https://www.lecremedelacrumb.com/easy-healthy-baked-lemon-chicken/'
+    ],
     ingredients: [
         { name: 'chicken wings', amount: '4', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'butter', amount: '3 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },

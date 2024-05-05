@@ -16,9 +16,12 @@ module.exports = {
     genre: [GENRES.FRENCH],
     method: [METHODS.BOIL, METHODS.SAUTE],
     type: [TYPES.VEGETABLE],
-    yields: ' servings',
-    prepTime: 'm',
-    cookTime: 'm',
+    yields: '4 servings',
+    prepTime: '5 m',
+    cookTime: '15 m',
+    websites: [
+        'https://www.abeautifulplate.com/green-beans-almondine/'
+    ],
     ingredients: [
         { name: 'salt', amount: '2 1/2 tsp', additionalDetails: '', optional: false, section: '' },
         { name: 'french green bean', amount: '1 lb', additionalDetails: '', optional: false, section: '' },

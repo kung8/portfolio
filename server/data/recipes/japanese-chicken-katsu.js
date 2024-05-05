@@ -16,6 +16,9 @@ module.exports = {
     prepTime: '15 m',
     cookTime: '15 - 20 m',
     separated: true,
+    websites: [
+        'https://www.justonecookbook.com/chicken-katsu/'
+    ],
     ingredients: [
         { name: 'chicken breast (or pork loins)', amount: '4', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'vegetable oil', amount: '1 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },

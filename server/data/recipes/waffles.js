@@ -13,6 +13,9 @@ module.exports = {
     yields: '1 serving',
     prepTime: '1 m',
     cookTime: '2 m',
+    websites: [
+        'https://www.spendwithpennies.com/fluffy-homemade-waffle-recipe/'
+    ],
     ingredients: [
         { name: 'flour', amount: '2 c', additionalDetails: '', optional: false },
         { name: 'baking powder', amount: '1 Tbsp', additionalDetails: '', optional: false },

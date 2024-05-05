@@ -14,6 +14,9 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '25 m',
     separated: true,
+    websites: [
+        'https://www.the-girl-who-ate-everything.com/panera-broccoli-cheese-soup/'
+    ],
     ingredients: [
         { name: 'butter', amount: '1/4 c', additionalDetails: '', optional: false, section: SECTIONS.SOUP },
         { name: 'medium onion', amount: '1/2', additionalDetails: 'diced', optional: false, section: SECTIONS.SOUP },

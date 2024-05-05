@@ -21,6 +21,10 @@ module.exports = {
     prepTime: '30 m',
     cookTime: '1 h',
     separated: true,
+    websites: [
+        'https://www.recipetineats.com/banh-mi-vietnamese-sandwich/',
+        'https://www.simplyrecipes.com/recipes/vietnamese_daikon_and_carrot_pickles/',
+    ],
     ingredients: [
         { name: 'water', amount: '1 3/4 c', additionalDetails: '', optional: false, section: SECTIONS.BREAD },
         { name: 'bread flour', amount: '2 2/3 c', additionalDetails: '', optional: false, section: SECTIONS.BREAD },

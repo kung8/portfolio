@@ -24,6 +24,9 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '20 m',
     separated: true,
+    websites: [
+        'https://www.koreanbapsang.com/yangnyeom-chicken-korean-fried-chicken/'
+    ],
     ingredients: [
         { name: 'chicken thigh', amount: '3 lb', additionalDetails: 'cut into 2 - 2.5" pieces', optional: false, section: SECTIONS.MARINADE },
         { name: 'garlic', amount: '3 cloves', additionalDetails: 'minced', optional: false, section: SECTIONS.MARINADE },

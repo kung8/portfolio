@@ -13,6 +13,9 @@ module.exports = {
     yields: '6 servings',
     prepTime: '5 m',
     cookTime: '5 m',
+    websites: [
+        'https://www.allrecipes.com/recipe/239478/grandmas-buttermilk-syrup/'
+    ],
     ingredients: [
         { name: 'white sugar', amount: '1 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
         { name: 'buttermilk', amount: '1/2 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
