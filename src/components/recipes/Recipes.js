@@ -83,7 +83,12 @@ export const Recipes = ({ history }) => {
 
     const resetShownFilters = () => {
         setShownFilters(initialShownFilters);
-        setShow(false);
+        const filtersContainer = document.querySelector('.filters-container');
+        if (filtersContainer) filtersContainer.classList.add('is-closing');
+        setTimeout(() => {
+            if (filtersContainer) filtersContainer.classList.remove('is-closing');
+            setShow(false);
+        }, 300);
     }
 
     const filterRecipeBySelectedFilters = (compared, filter) => {
