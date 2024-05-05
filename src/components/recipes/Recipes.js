@@ -51,8 +51,8 @@ export const Recipes = ({ history }) => {
         if (
             item.name.toLowerCase().includes(searchValue) ||
             item.cardName.toLowerCase().includes(searchValue) ||
-            item.ingredients.some(ingredient => ingredient.name.toLowerCase().includes(searchValue)) ||
-            item.supplies.some(supply => supply.name.toLowerCase().includes(searchValue))
+            item.ingredients?.some(ingredient => ingredient.name.toLowerCase().includes(searchValue)) ||
+            item.supplies?.some(supply => supply.name.toLowerCase().includes(searchValue))
         ) return item;
         return null;
     })
