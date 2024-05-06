@@ -127,7 +127,7 @@ const recipes = [
     malaysianBlackPepperChicken,
     pizza,
     chickenCordonBleu,
-    chickenParmesan,
+    chickenParmesan, // TODO: add
     italianTurkeyMeatballSpinachTortelliniSoup,
     mexicanChickenBake, // TODO: add
     tacoInABag,
@@ -149,7 +149,7 @@ const recipes = [
     greenBeanAlmondine,
     pigsInABlanket,
     chickenStuffedCrescentRolls,
-    southwestSalad,
+    southwestSalad, // TODO: add
     macaroniSalad,
     frenchCrepe,
     frenchToast,

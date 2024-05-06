@@ -1,16 +1,17 @@
-const chickenParm = '../assets/Products/chicken-parmesan.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
+const salad = '../assets/Products/southwest-salad.jpeg';
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 
 module.exports = {
-    cardName: 'Chicken Parmesan',
-    name: 'Chicken Parmesan',
-    img: chickenParm,
+    cardName: 'Southwest Salad',
+    name: 'Southwest Salad',
+    img: salad,
     available: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
-    method: [METHODS.BAKE],
+    method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
-    yields: 'servings',
+    type: [TYPES.SALAD, TYPES.PROTEIN],
+    yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',
     ingredients: [
