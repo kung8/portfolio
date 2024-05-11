@@ -1,12 +1,15 @@
-const bakedChicken = '../assets/Products/baked-chicken.jpeg';
-const rawChicken = '../assets/Products/raw-chicken.jpeg';
-const pan = '../assets/Products/baked-chicken-in-pan.jpeg';
+const spices = '../assets/Products/baked-chicken-spices.jpeg';
+const oil = '../assets/Products/baked-chicken-oil.jpeg';
+const rawChicken = '../assets/Products/baked-chicken-raw-zoomed.jpeg';
+const pan = '../assets/Products/baked-chicken-cooked.jpeg';
+const plated = '../assets/Products/baked-chicken-plated.jpeg';
+const full = '../assets/Products/baked-chicken-plated-full.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
 
 module.exports = {
     cardName: 'Baked Chicken',
     name: 'Baked Chicken',
-    img: bakedChicken,
+    img: pan,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
@@ -36,9 +39,11 @@ module.exports = {
     directions: [
         { step: 'Preheat the oven to 400ºF.', type: SECTIONS.MAIN },
         { step: 'Place the chicken in the baking pan in a single layer.', type: SECTIONS.MAIN },
-        { step: 'Mix the dry seasoning together and then add the oil.', type: SECTIONS.MAIN },
+        { step: 'Mix the dry seasoning together.', type: SECTIONS.MAIN, img: spices },
+        { step: 'Then add the oil.', type: SECTIONS.MAIN, img: oil },
         { step: 'Once all is mixed, use the basting brush to coat the top of the chicken.', type: SECTIONS.MAIN, img: rawChicken },
         { step: 'Bake the chicken for 40 - 50 minutes, or until the internal temperature reaches 165ºF.', type: SECTIONS.MAIN, img: pan },
-        { step: 'Serve with rice and your favorite veggies.', type: SECTIONS.MAIN },
+        { step: 'Move them out of the pan so the oils does not gelatinize.', type: SECTIONS.MAIN, img: plated },
+        { step: 'Serve with rice and your favorite veggies.', type: SECTIONS.SERVE, img: full },
     ]
 };

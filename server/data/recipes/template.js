@@ -14,6 +14,8 @@ module.exports = {
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',
+    websites: [],
+    separated: false,
     ingredients: [
         { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
     ],

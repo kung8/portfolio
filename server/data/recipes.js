@@ -75,6 +75,7 @@ const roastedTurkey = require("./recipes/roasted-turkey");
 const scrambledEggs = require("./recipes/scrambled-eggs");
 const smoothie = require("./recipes/smoothie");
 const smores = require("./recipes/smores");
+const snickerdoodle = require("./recipes/snickerdoodle-cookies");
 const soupBowl = require("./recipes/broccoli-cheese-soup-bowl");
 const southwestSalad = require("./recipes/southwest-salad");
 const sushi = require("./recipes/sushi");
@@ -175,6 +176,7 @@ const recipes = [
     cheesecake,
     peachCobbler,
     pretzel,
+    snickerdoodle,
     chocolateChipCookies,
     tedLassoBiscuits,
     brownies,
