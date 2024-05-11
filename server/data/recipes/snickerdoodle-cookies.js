@@ -13,7 +13,7 @@ const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const COATING = 'Coating';
 
 module.exports = {
-    cardName: 'Snickerdoodle',
+    cardName: 'Snickerdoodles',
     name: 'Snickerdoodle Cookies',
     img: cooked,
     available: true,
