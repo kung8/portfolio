@@ -1,5 +1,6 @@
 const battleship = '../assets/Components/battleship.png';
 const blackjack = '../assets/Components/blackjack.png';
+const checkers = '../assets/Components/checkers.png';
 const connect4 = '../assets/Components/connect-4.png';
 const genericScoreSheet = '../assets/Components/generic-score-sheet.png';
 const guitar = '../assets/Components/guitar.png';
@@ -142,7 +143,8 @@ const components = [
             'Toast',
             'Sockets',
             'Sass',
-            'Crypto JS'
+            'Crypto JS',
+            'Recursion'
         ],
         images: [connect4],
         url: 'https://buddingacorn.dev/#/products/games/19',
@@ -159,12 +161,31 @@ const components = [
             'Toast',
             'Sockets',
             'Sass',
-            'Crypto JS'
+            'Crypto JS',
+            'Recursion'
         ],
         images: [mancala],
         url: 'https://buddingacorn.dev/#/products/games/23',
         hosted: true,
         show: false,
+    },
+    {
+        organization: 'Checkers',
+        bullets: [
+            'Checkers is a classic game that I wanted to build for a while now. It has sockets to be played in real time with friends. The styling for this was very fun. I hit a kink when I was trying to do recursion to determine if a piece could jump multiple times, but finally figured it out. I also learned that in checkers if your piece can jump, you must jump (but you don\'t have to jump multiple if you don\'t want to).',
+        ],
+        chips: [
+            'React JS',
+            'Toast',
+            'Sockets',
+            'Sass',
+            'Crypto JS',
+            'Recursion',
+        ],
+        images: [checkers],
+        url: 'https://buddingacorn.dev/#/products/games/25',
+        hosted: true,
+        show: true,
     },
 ];
 
