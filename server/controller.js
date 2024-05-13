@@ -1,24 +1,28 @@
 const nodemailer = require('nodemailer');
 const { EMAIL, PASSWORD } = process.env;
 const heroes = require('./data/superheroData');
+
 const components = require('./data/components');
 const education = require('./data/education');
 const experiences = require('./data/experiences');
+const friends = require('./data/episodes/friends');
+const hymns = require('./data/hymns');
+const music = require('./data/music');
 const products = require('./data/products');
 const projects = require('./data/projects');
 const recipes = require('./data/recipes');
 const recipeCategories = require('./data/recipes/constants');
-const music = require('./data/music');
 
 const data = {
     components,
     education,
     experiences,
+    friends,
+    hymns,
+    music,
     products,
     projects,
     recipes,
-    music,
-    // heroes, 
 }
 
 const convertIdToName = (id) =>
