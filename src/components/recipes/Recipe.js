@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
 import { useGetData } from '../../hooks';
-// import { Cursor } from '../Cursor';
 import { Loader } from '../Loader';
+import { NonDashboardPage } from '../Page';
 
-export const Recipe = ({ history, match }) => {
+export const Recipe = ({ match }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [selectedIngredients, setSelectedIngredients] = useState([]);
     const { id } = match.params;
@@ -18,6 +18,7 @@ export const Recipe = ({ history, match }) => {
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
 
     useEffect(() => {
+        setIsLoaded(false);
         if (cache) {
             setIsLoaded(true);
         } else {
@@ -29,6 +30,7 @@ export const Recipe = ({ history, match }) => {
             setIsLoaded(false);
             setSelectedFigure(null);
             setSelectedFigureLabel(null);
+            setSelectedIngredients([]);
         }
         // eslint-disable-next-line
     }, []);
@@ -127,7 +129,7 @@ export const Recipe = ({ history, match }) => {
 
     const formatLink = (link) => link ? (
         <>
-            <a href={link.link} target="_blank" className="link-text">
+            <a href={link.link} target="_blank" rel="noopener noreferrer" className="link-text">
                 {link.text}
             </a>
             {link.additionalText && (
@@ -137,16 +139,16 @@ export const Recipe = ({ history, match }) => {
     ) : null
 
     return (
-        <div className={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
-            <div className="heading-container">
-                <span className='back-btn' onClick={() => history.push('/recipes')}>
-                    Back to Recipes
-                </span>
-                <h1 className="heading">{item?.name ?? ''}</h1>
+        <NonDashboardPage mainClassName={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
+            <NonDashboardPage.Header
+                backRoute='/recipes'
+                backText='Back to Recipes'
+                title={item?.name ?? ''}
+            >
                 {item?.recipeCredit && (
                     <h4 className="recipe-credit">Credit to {item.recipeCredit}</h4>
                 )}
-            </div>
+            </NonDashboardPage.Header>
             {item && isLoaded ? (
                 <div className="recipe-details">
                     {item.img ? <img src={item.img} alt={item.name} className="recipe-image" /> : <div className="recipe-image empty">Image Coming Soon!</div>}
@@ -239,7 +241,7 @@ export const Recipe = ({ history, match }) => {
                                     <ol className="separated-recipe-detail-list numbered">
                                         {directions.map(({ step, figure, link }) => (
                                             <li key={step}>
-                                                {step} 
+                                                {step}
                                                 {formatLink(link)}
                                                 {figure && (
                                                     <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className="figure-label-anchor">(See figure {figure})</span>
@@ -317,7 +319,6 @@ export const Recipe = ({ history, match }) => {
                     <Loader />
                 </div>
             )}
-            {/* <Cursor /> */}
-        </div >
+        </NonDashboardPage>
     )
 }

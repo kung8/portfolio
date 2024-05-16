@@ -7,8 +7,6 @@ import partial from './partial.png';
 export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFilters, setSelectedFilters, shownFilters, setShownFilters }) => {
     const show = shownFilters[type];
 
-    const [isHovered, setIsHovered] = useState(false);
-
     const handleFilterSelector = (type, value) => {
         const newType = [...selectedFilters[type]];
         newType.includes(value) ? newType.splice(newType.indexOf(value), 1) : newType.push(value);

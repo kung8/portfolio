@@ -3,6 +3,7 @@ import deleteIcon from '../../Assets/close.png';
 import Wheel from './Wheel';
 import { times } from './time';
 import { Slide, ToastContainer, toast } from 'react-toastify';
+import { NonDashboardPage } from "../Page";
 
 const convertStringToObject = (str) => str.split('&').reduce((acc, item) => {
     const index = item.indexOf('=');
@@ -29,7 +30,7 @@ const getRandomTimes = (list, start, end) => {
     });
 }
 
-const Selector = ({ history, location }) => {
+const Selector = ({ location }) => {
     const { type } = convertStringToObject(location?.search.replace('?', ''));
     let list1 = ['Add to Me'];
     if (type === 'work') {
@@ -142,11 +143,8 @@ const Selector = ({ history, location }) => {
     }
 
     return (
-        <div className="selector page">
-            <div className="heading-container">
-                <span className='back-btn' onClick={() => history.push('/')}>Back Home</span>
-                <h1 className="heading">Selector</h1>
-            </div>
+        <NonDashboardPage mainClassName="selector">
+            <NonDashboardPage.Header title="Selector" />
             {(!type || type !== 'work') && (
                 <>
                     <div className="items-and-rotator">
@@ -269,7 +267,7 @@ const Selector = ({ history, location }) => {
                 draggable={true}
                 draggablePercent={80}
             />
-        </div>
+        </NonDashboardPage>
     )
 }
 

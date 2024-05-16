@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
 import { useGetData, useGetRecipeCategories } from '../../hooks';
 import { convertToKebabCase } from '../../utils';
+import { NonDashboardPage } from '../Page';
 import { RecipeItem } from './RecipeItem';
 import { Loader } from '../Loader';
 import { RecipeFilterContainer } from './RecipeFilterContainer';
@@ -22,18 +23,17 @@ export const Recipes = ({ history }) => {
     const queryKey = ['getData', 'recipes', undefined];
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
     const [search, setSearch] = useState('');
-
     const [show, setShow] = useState(false);
-    const [selectedFilters, setSelectedFilters] = useState({
+    const initialSelectedFilters = {
         category: [],
         diet: [],
         genre: [],
         method: [],
         protein: [],
         type: [],
-    });
+    }
+    const [selectedFilters, setSelectedFilters] = useState(initialSelectedFilters);
     const [shownFilters, setShownFilters] = useState(initialShownFilters);
-
     const [showArrow, setShowArrow] = useState(false);
 
     const { data: recipes = [] } = useGetData('recipes');
@@ -58,6 +58,7 @@ export const Recipes = ({ history }) => {
     })
 
     useEffect(() => {
+        setIsLoaded(false);
         if (cache) {
             setIsLoaded(true);
         } else {
@@ -68,6 +69,10 @@ export const Recipes = ({ history }) => {
         return () => {
             setIsLoaded(false);
             setSearch('');
+            setShow(false);
+            setShowArrow(false);
+            setShownFilters(initialShownFilters);
+            setSelectedFilters(initialSelectedFilters);
         }
         // eslint-disable-next-line
     }, []);
@@ -82,6 +87,7 @@ export const Recipes = ({ history }) => {
     ];
 
     const resetShownFilters = () => {
+        if (!show) return;
         setShownFilters(initialShownFilters);
         const filtersContainer = document.querySelector('.filters-container');
         if (filtersContainer) filtersContainer.classList.add('is-closing');
@@ -117,14 +123,8 @@ export const Recipes = ({ history }) => {
     }, []);
 
     return (
-        <div className={`recipes page ${isLoaded ? '' : 'isLoading'}`} onClick={resetShownFilters}>
-            <div className="heading-container">
-                <div>
-                    <span className='back-btn' onClick={() => history.push('/')}>
-                        Back Home
-                    </span>
-                    <h1 className="heading">Recipes</h1>
-                </div>
+        <NonDashboardPage mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`} onClick={resetShownFilters}>
+            <NonDashboardPage.Header title='Recipes'>
                 <div className="search-and-filter-container">
                     <div className={`search-bar ${search ? 'contains-search' : ''}`}>
                         <input type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
@@ -147,7 +147,7 @@ export const Recipes = ({ history }) => {
                         <div className="bottom-bar"></div>
                     </div>
                 </div>
-            </div>
+            </NonDashboardPage.Header>
 
             {show && (
                 <div className="filters-container" onClick={(e) => {
@@ -192,7 +192,7 @@ export const Recipes = ({ history }) => {
                     <span>TOP</span>
                 </div>
             )}
-        </div>
+        </NonDashboardPage>
     )
 }
 

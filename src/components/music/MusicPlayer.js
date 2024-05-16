@@ -17,6 +17,10 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
     const [queueOpen, setQueueOpen] = useState(false);
 
     useEffect(() => {
+        setOrderedSongs([...songs]);
+    }, [songs])
+
+    useEffect(() => {
         let interval;
         if (clickedSpot) {
             interval = setInterval(() => {
@@ -49,14 +53,18 @@ export const MusicPlayer = ({ selectedSong, setSelectedSong, isPlaying, setIsPla
 
     const play = () => {
         setIsPlaying(true);
-        const audio = document.querySelector('.audio-control');
-        audio.play();
+        setTimeout(() => {
+            const audio = document.querySelector('.audio-control');
+            if (audio) audio.play();
+        }, 0);
     }
 
     const pause = () => {
         setIsPlaying(false);
-        const audio = document.querySelector('.audio-control');
-        audio.pause();
+        setTimeout(() => {
+            const audio = document.querySelector('.audio-control');
+            if (audio) audio.pause();
+        }, 0);
     }
 
     const next = () => {

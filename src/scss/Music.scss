@@ -1,23 +1,5 @@
 .music {
-    display: block;
-    height: auto;
-    min-height: 100vh;
     padding: 80px;
-    min-width: 100vw;
-    position: relative;
-    overflow-x: hidden;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-    @include down($tablet) {
-        padding: 56px 56px;
-    }
-    @include down($mobile) {
-        padding: 56px 24px;
-    }
-    &::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
-    }
-
     .music-table {
         position: relative;
         z-index: 1;

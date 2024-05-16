@@ -3,6 +3,7 @@
     @import './mixins';
     @import './global';
     @import './Dashboard';
+    @import './NonDashboardPage';
     @import './Music';
     @import './Overlay';
     // @import './ChordsModal';
@@ -10,5 +11,6 @@
     @import './Selector';
     @import './Recipe';
     @import './Recipes';
+    @import './Recommendations';
     @import './Loader';
 }

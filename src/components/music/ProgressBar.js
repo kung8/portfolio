@@ -31,7 +31,7 @@ export const ProgressBar = ({
 
     return (
         <div className="progress-bar-container">
-            <span className="progress-time">{convertNumberToTime(currentTime)}</span>
+            <span className="progress-time">{currentTime > 0 ? convertNumberToTime(currentTime) : '0:00'}</span>
             <div className="progress-bar" onClick={handleProgressBarClick}>
                 <div className="progress-bar-fill" style={{ width: (currentTime / (convertTimeToNumber(selectedSong?.time) || 1)) * 100 + '%' }}></div>
                 <div className="progress-peg" style={{ left: (currentTime / (convertTimeToNumber(selectedSong?.time) || 1)) * 100 + '%' }}></div>
