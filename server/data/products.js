@@ -4,6 +4,17 @@ const cookbook = '../assets/Products/cookbook.png';
 
 const products = [
     {
+        organization: 'Recommendations / Reviews',
+        images: [games],
+        bullets: [
+            'I was tired of storing these recommendations and my reviews about random things in a bunch of places. I hope you find them useful!',
+        ],
+        url: 'https://kevinung8.com/#/recommendations',
+        localUrl: 'http://localhost:3000/#/recommendations',
+        hosted: true,
+        show: false,
+    },
+    {
         organization: 'Songs',
         images: [eden],
         bullets: [
