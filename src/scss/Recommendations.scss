@@ -1,32 +1,5 @@
 .recommendations {
-    .heading-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 80px;
-        padding-right: 80px;
-
-        @include down($mobile-xl) {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-
-    @include down($tablet) {
-        padding: 56px 0;
-        .heading-container {
-            padding-left: 56px;
-            padding-right: 56px;
-        }
-    }
-    @include down($mobile) {
-        padding: 56px 0px;
-        .heading-container {
-            padding-left: 24px;
-            padding-right: 24px;
-        }
-    }
-    &::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
-    }
+    .categories {
+        margin-bottom: 20px;
+    } 
 }

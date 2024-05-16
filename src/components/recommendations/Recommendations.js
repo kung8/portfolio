@@ -1,12 +1,15 @@
 import React from 'react';
-import { Page } from '../Page';
+import { NonDashboardPage } from '../Page';
 
 export const Recommendations = () => {
     const isLoaded = true;
 
     return (
-        <Page mainClassName={`recommendations ${isLoaded ? '' : 'isLoading'}`}>
-            <Page.Header title='Recommendations / Reviews' />
-        </Page>
+        <NonDashboardPage mainClassName={`recommendations ${isLoaded ? '' : 'isLoading'}`}>
+            <NonDashboardPage.Header title='Recommendations / Reviews' />
+            <div className="categories">
+                Placeholder
+            </div>
+        </NonDashboardPage>
     )
 }
