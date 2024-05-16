@@ -55,17 +55,30 @@ export const Recipes = ({ history }) => {
             item.supplies?.some(supply => supply.name.toLowerCase().includes(searchValue))
         ) return item;
         return null;
-    })
+    });
+
+    const onScroll = () => {
+        const scrollHeight = window.scrollY;
+        if (scrollHeight > 300 && !showArrow) {
+            setShowArrow(true);
+        } else {
+            if (showArrow) setShowArrow(false);
+        }
+    }
 
     useEffect(() => {
-        setIsLoaded(false);
-        if (cache) {
-            setIsLoaded(true);
-        } else {
-            setTimeout(() => {
+        window.addEventListener('scroll', onScroll);
+
+        if (!isLoaded) {
+            if (cache) {
                 setIsLoaded(true);
-            }, 3000);
+            } else {
+                setTimeout(() => {
+                    setIsLoaded(true);
+                }, 3000);
+            }
         }
+
         return () => {
             setIsLoaded(false);
             setSearch('');
@@ -73,6 +86,7 @@ export const Recipes = ({ history }) => {
             setShowArrow(false);
             setShownFilters(initialShownFilters);
             setSelectedFilters(initialSelectedFilters);
+            window.removeEventListener('scroll', onScroll);
         }
         // eslint-disable-next-line
     }, []);
@@ -112,15 +126,7 @@ export const Recipes = ({ history }) => {
             (!protein.length || filterRecipeBySelectedFilters(item.protein || [], protein)) &&
             (!type.length || filterRecipeBySelectedFilters(item.type || [], type))
         );
-    })
-
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            const scrollHeight = window.scrollY;
-            if (scrollHeight > 300) setShowArrow(true);
-            else setShowArrow(false);
-        })
-    }, []);
+    });
 
     return (
         <NonDashboardPage mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`} onClick={resetShownFilters}>

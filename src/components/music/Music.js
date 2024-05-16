@@ -13,7 +13,7 @@ export const Music = () => {
         if (isPlaying && !selectedSong) {
             setSelectedSong(songs[0]);
         }
-    }, [isPlaying]);
+    }, [isPlaying, selectedSong, songs]);
 
     return (
         <NonDashboardPage mainClassName="music">

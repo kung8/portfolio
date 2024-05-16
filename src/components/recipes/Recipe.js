@@ -18,15 +18,19 @@ export const Recipe = ({ match }) => {
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
 
     useEffect(() => {
+        let mounted = true;
         setIsLoaded(false);
         if (cache) {
             setIsLoaded(true);
         } else {
             setTimeout(() => {
-                setIsLoaded(true);
+                if (mounted) {
+                    setIsLoaded(true);
+                }
             }, 3000);
         }
         return () => {
+            mounted = false;
             setIsLoaded(false);
             setSelectedFigure(null);
             setSelectedFigureLabel(null);
