@@ -1,9 +1,4 @@
 .selector {
-    padding: 80px;
-    @include down($tablet) {
-        padding: 56px 56px;
-    }
-
     .items-and-rotator {
         position: relative;
         min-height: 450px;
