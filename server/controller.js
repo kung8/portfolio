@@ -12,6 +12,7 @@ const products = require('./data/products');
 const projects = require('./data/projects');
 const recipes = require('./data/recipes');
 const recipeCategories = require('./data/recipes/constants');
+const recommendations = require('./data/recommendations');
 
 const data = {
     components,
@@ -23,6 +24,7 @@ const data = {
     products,
     projects,
     recipes,
+    recommendations,
 }
 
 const convertIdToName = (id) =>
