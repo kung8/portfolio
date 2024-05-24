@@ -1,5 +1,9 @@
 const pizza = '../assets/Products/pizza-2.jpeg';
 const pizzaDough = '../assets/Products/pizza-dough.jpeg';
+const oil = '../assets/Products/pizza-oil-bowl.jpeg';
+const oilDough = '../assets/Products/pizza-oil-dough-ball.jpeg';
+const plastic = '../assets/Products/pizza-plastic-wrap.jpeg';
+const ball = '../assets/Products/pizza-dough-ball.jpeg';
 const frozenDough = '../assets/Products/frozen-pizza-dough.jpeg';
 const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
 const pizzaSpread = '../assets/Products/pizza-spread.jpeg';
@@ -54,9 +58,9 @@ module.exports = {
     directions: [
         { step: 'On a clean counter, combine flour, salt, and yeast by hand. We are making focaccia bread.', type: SECTIONS.DOUGH },
         { step: 'Form a well in the center of the mixture and slowly add water and honey.', type: SECTIONS.DOUGH },
-        { step: 'Continue to work the liquid into the entire mixture until the dough becomes only a little sticky.', type: SECTIONS.DOUGH },
-        { step: 'Coat the inside of a large bowl with some oil.', type: SECTIONS.DOUGH },
-        { step: 'Place the dough inside that oiled bowl and cover with plastic wrap or a cooking towel and refrigerate between 48 to 72 hours. This allows the dough to rise and adds flavor.', type: SECTIONS.DOUGH, img: refrigeratedDough },
+        { step: 'Continue to work the liquid into the entire mixture until the dough becomes only a little sticky.', type: SECTIONS.DOUGH, img: ball },
+        { step: 'Coat the inside of a large bowl with some oil.', type: SECTIONS.DOUGH, img: oil },
+        { step: 'Place the dough inside that oiled bowl and cover with plastic wrap or a cooking towel and refrigerate between 48 to 72 hours. This allows the dough to rise and adds flavor.', type: SECTIONS.DOUGH, img: oilDough },
         { step: 'When you are ready to make the pizza, preheat the oven too 450ºF.', type: SECTIONS.DOUGH },
         { step: 'Grease a baking sheet with 1 Tablespoon olive oil.', type: SECTIONS.DOUGH },
         { step: 'This is the fun part where you will work the dough. Again on a clean counter sprinkle some flour (and you may need to add some more later so keep that flour handy).', type: SECTIONS.DOUGH },
