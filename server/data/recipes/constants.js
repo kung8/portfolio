@@ -61,6 +61,7 @@ const GENRES = {
     CAJUN: 'Cajun',
     BBQ: 'BBQ',
     WESTERN: 'Western',
+    CAMBODIAN: 'Cambodian',
 };
 
 const METHODS = {

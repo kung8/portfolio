@@ -53,6 +53,7 @@ const japaneseCurry = require("./recipes/japanese-curry");
 const japaneseKatsudon = require("./recipes/japanese-katsudon");
 const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
 const koreanFriedChicken = require("./recipes/korean-fried-chicken");
+const khmerRedCurry = require("./recipes/khmer-red-curry");
 const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
 const macaroniSalad = require("./recipes/macaroni-salad");
 const malaysianBlackPepperChicken = require("./recipes/malaysian-black-pepper-chicken");
@@ -109,6 +110,7 @@ const recipes = [
     chineseBokChoyChicken, // TODO: add
     chineseGingerChicken,
     chineseSourChickenSoup,
+    khmerRedCurry,
     chineseLoMeinNoodles,
     peruvianAjiDeGallina,
     cilantroLimeChicken,

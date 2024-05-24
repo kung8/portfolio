@@ -39,7 +39,7 @@ export const Recipe = ({ match }) => {
         // eslint-disable-next-line
     }, []);
 
-    const separatedIngredients = item?.separated && item?.ingredients &&
+    const separatedIngredients = !!item?.separated && item?.ingredients &&
         item.ingredients.reduce((acc, ingredient) => {
             if (ingredient.section && !acc[ingredient.section]) acc[ingredient.section] = [];
             if (ingredient.section && acc[ingredient.section]) {
@@ -85,7 +85,7 @@ export const Recipe = ({ match }) => {
         return finalDirections;
     }
 
-    const formattedDirections = item?.separated && item?.directions && formatSeparatedDirections();
+    const formattedDirections = !!item?.separated && item?.directions ? formatSeparatedDirections() : null;
 
     const figures = formattedDirections?.flat(2)?.filter(step => step.video || step.img) ?? [];
     const nonSeparatedFigures = item?.directions?.filter(step => step.video || step.img) ?? [];
