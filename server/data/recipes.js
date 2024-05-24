@@ -74,6 +74,7 @@ const pretzel = require("./recipes/pretzel");
 const riceCrispyBall = require("./recipes/rice-crispy-ball");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const scrambledEggs = require("./recipes/scrambled-eggs");
+const sloppyJoes = require("./recipes/sloppy-joes");
 const smoothie = require("./recipes/smoothie");
 const smores = require("./recipes/smores");
 const snickerdoodle = require("./recipes/snickerdoodle-cookies");
@@ -148,6 +149,7 @@ const recipes = [
     chickenPotPie,
     chickenNoodleSoup,
     chili,
+    sloppyJoes,
     hoboDinner,
     greenBeanAlmondine,
     pigsInABlanket,
