@@ -15,8 +15,14 @@
 
         &.scrolled-categories {
             width: 100vw;
-            margin-left: -56px;
+            margin-left: -80px;
             transition: margin-left 0.25s ease-in-out;
+            @include down($tablet) {
+                margin-left: -56px;
+            }
+            @include down($mobile) {
+                margin-left: -24px;
+            }
         }
 
         .category {
@@ -24,6 +30,7 @@
             min-width: fit-content;
             color: $light;
             border-bottom: 6px solid transparent;
+            cursor: pointer;
             &.selected {
                 color: $default;
                 border-bottom: 6px solid $default;
@@ -62,8 +69,8 @@
                         color: $primary-blue;
                     }
 
-                    .review-author,
-                    .recommendation-author {
+                    .review-subtitle,
+                    .recommendation-subtitle {
                         font-size: 12px;
                         margin-top: 4px;
                     }

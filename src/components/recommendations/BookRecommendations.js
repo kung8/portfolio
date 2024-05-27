@@ -1,4 +1,7 @@
 import React from 'react';
+import { RecommendationContainer } from './RecommendationContainer';
+import { ReviewContainer } from './ReviewContainer';
+import { RecommendationPage } from './RecommendationPage';
 
 export const BookRecommendations = ({ category, reviews, recommendations }) => {
     const getAuthor = (authors) => {
@@ -13,43 +16,29 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
     }
 
     return (
-        <div className="recommendation-category-container">
-            <h3 className="recommendation-category">{category} Recommendations</h3>
-            <div className="recommendations-container">
+        <RecommendationPage>
+            <RecommendationPage.SectionTitle category={category} type="Recommendations" />
+            <RecommendationContainer>
                 {recommendations.map(recommendation => (
-                    <div key={recommendation.title + '-' + recommendation.author} className="recommendation">
-                        <div className="recommendation-header">
-                            <h4 className="recommendation-title">{recommendation.title}</h4>
-                            <span className="recommendation-author">by {getAuthor(recommendation.author)}</span>
-                        </div>
-                        {recommendation.source && (
-                            <span className="recommendation-source">Recommendation from {recommendation.source}</span>
-                        )}
-                    </div>
+                    <RecommendationContainer.Recommendation key={recommendation.title + '-' + recommendation.author}>
+                        <RecommendationContainer.Header title={recommendation.title} subtitle={`by ${getAuthor(recommendation.author)}`} />
+                        <RecommendationContainer.Source source={recommendation.source} />
+                    </RecommendationContainer.Recommendation>
                 ))}
-            </div>
-            <h3 className="recommendation-category">{category} Reviews</h3>
-            <div className="reviews-container">
+            </RecommendationContainer>
+            <RecommendationPage.SectionTitle category={category} type="Reviews" />
+            <ReviewContainer>
                 {reviews.map(review => (
-                    <div key={review.title + '-' + review.author} className="review">
-                        <div className="review-header">
-                            <h4 className="review-title">{review.title}</h4>
-                            <span className="review-author">by {getAuthor(review.author)}</span>
-                        </div>
+                    <ReviewContainer.Review key={review.title + '-' + review.author}>
+                        <ReviewContainer.Header title={review.title} subtitle={`by ${getAuthor(review.author)}`} />
                         {/* {review.date && (
                             <span className="review-date">{review.date}</span>
                         )} */}
-                        {review.review && (
-                            <p className="review-text">{review.review}</p>
-                        )}
-                        {review.rating === "n/a" ? (
-                            <p className="review-rating">N/A</p>
-                        ) : (
-                            <p className="review-rating">{review.rating} / 5</p>
-                        )}
-                    </div>
+                        <ReviewContainer.Content review={review.review} />
+                        <ReviewContainer.Rating rating={review.rating} />
+                    </ReviewContainer.Review>
                 ))}
-            </div>
-        </div>
+            </ReviewContainer>
+        </RecommendationPage>
     )
 }

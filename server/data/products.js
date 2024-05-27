@@ -12,7 +12,7 @@ const products = [
         url: 'https://kevinung8.com/#/recommendations',
         localUrl: 'http://localhost:3000/#/recommendations',
         hosted: true,
-        show: true,
+        show: false,
     },
     {
         organization: 'Songs',
