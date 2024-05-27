@@ -7,7 +7,7 @@ const Header = ({ title, subtitle }) => (
         <span className="review-subtitle">{subtitle}</span>
     </div>
 )
-const Content = ({ review }) => review ? <p className="review-text">{review.review}</p> : null;
+const Content = ({ review }) => review ? <p className="review-text">{review}</p> : null;
 const Rating = ({ rating }) => <p className="review-rating">{rating === "n/a" ? "N/A" : `${rating} / 5`}</p>;
 const DateSection = ({ date }) => date ? <span className="review-date">{date}</span> : null;
 
