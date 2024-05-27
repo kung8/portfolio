@@ -1,7 +1,5 @@
 import React from 'react';
-import { RecommendationContainer } from './RecommendationContainer';
-import { ReviewContainer } from './ReviewContainer';
-import { RecommendationPage } from './RecommendationPage';
+import { RecommendationPage, RecommendationContainer, ReviewContainer } from './RecommendationPage';
 
 export const BookRecommendations = ({ category, reviews, recommendations }) => {
     const getAuthor = (authors) => {
@@ -31,9 +29,7 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
                 {reviews.map(review => (
                     <ReviewContainer.Review key={review.title + '-' + review.author}>
                         <ReviewContainer.Header title={review.title} subtitle={`by ${getAuthor(review.author)}`} />
-                        {/* {review.date && (
-                            <span className="review-date">{review.date}</span>
-                        )} */}
+                        {/* <ReviewContainer.Date date={review.date} /> */}
                         <ReviewContainer.Content review={review.review} />
                         <ReviewContainer.Rating rating={review.rating} />
                     </ReviewContainer.Review>

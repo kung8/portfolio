@@ -9,10 +9,12 @@ const Header = ({ title, subtitle }) => (
 )
 const Content = ({ review }) => review ? <p className="review-text">{review.review}</p> : null;
 const Rating = ({ rating }) => <p className="review-rating">{rating === "n/a" ? "N/A" : `${rating} / 5`}</p>;
+const DateSection = ({ date }) => date ? <span className="review-date">{date}</span> : null;
 
 export const ReviewContainer = ({ children }) => <div className="reviews-container">{children}</div>;
 
 ReviewContainer.Review = Review;
 ReviewContainer.Header = Header;
+ReviewContainer.Date = DateSection;
 ReviewContainer.Content = Content;
 ReviewContainer.Rating = Rating;
