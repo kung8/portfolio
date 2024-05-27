@@ -8,10 +8,70 @@ module.exports = {
         //     review: [
         //         ""
         //     ],
-        //     quotes: [{}],
+        //     quotes: [
+        //         {
+        //             text: "",
+        //             pages: [],
+        //             thoughts: "",
+        //             context: ""
+        //         },
+        //     ],
         //     image: "",
         //     rating: 5,
         // },
+        {
+            date: "05/24",
+            title: "Steelheart",
+            author: ["Brandon Sanderson"],
+            review: [
+                "This was an enthralling book. I had some guesses on some of the reckoners and was slightly correct. This was the first of the Brandon Sanderson books that I’ve read and it was so good. I’m going to be reading more of his books. I really enjoyed the way his characters were more than just two dimensional in the sense they had personalities and backstories. The amount of details that he puts into this book made me connect with them. I really enjoyed the storyline. "
+            ],
+            quotes: [
+                {
+                    text: "...never throw the first punch. If you have to throw the second, try to make sure they don't get up for a third.",
+                    pages: [144, 145],
+                    thoughts: "It's smart to not be the aggressor but to be the one that finishes the fight.",
+                    context: "David recalls his father's advice on fighting."
+                },
+                {
+                    text: "Don't just act because you can; act because it's the right thing to do. If you keep that in mind, you'll be all right.",
+                    pages: [184],
+                    thoughts: "A simple and uplifting thought that as long as you do the right thing, you'll be okay.",
+                    context: "Prof counsels David on his brashness and recklessness."
+                },
+                {
+                    text: "It's good for you to think of this, son. Ponder. Worry. Stay up nights, frightened for the casualties of your ideology. It will do you good to realize the price of fighting.",
+                    pages: [222, 223],
+                    thoughts: "It's good to think about the consequences of your actions.",
+                    context: "Wise words from the Prof to David as he cautions David that in his planning he needs to consider the consequences."
+                },
+                {
+                    text: "I think I fell for you that first day. Stupid, huh? Love at first sight. What a cliche.",
+                    pages: [291],
+                    thoughts: "I think it's sweet that David fell for Megan the first day he met her.",
+                    context: "David confesses his feelings to Megan as she is unconscious/dead."
+                },
+                {
+                    text: "I think...that a month ago, i would have left you by the cycle. Because I wanted so badly to get my vengeance on him....that scares me about myself. For what it's worth, thank you for making me care about something other than Steelheart. I don't know if I love you. But whatever the emotion is, it's the strongest one I've felt in years.",
+                    pages: [291, 292],
+                    thoughts: "People do change us. They can make us better or worse. Sometimes our decisions are affected by the people we surround ourselves with.",
+                    context: "David is reflecting on his feelings for Megan and how she has changed him."
+                },
+                {
+                    text: "I've seen it. There are troubles there you can't understand, David. Sometimes doing things we used to do reminds us of who we used to be, and not always in good ways.",
+                    pages: [305],
+                    thoughts: "Thinking on the past can be therapeutic but it can also be dangerous. It's important to remember the past but not to dwell on it. Memories can truly shape who we are and who we become.",
+                    context: "Prof is warning David about the dangers of going back to the past."
+                },
+                {
+                    text: "The truth is not a downer...the lies that you pretend to accept are the true downer.",
+                    pages: [320],
+                    thoughts: "Interesting thought about truth and lies. It's better to know the truth than to live a lie. It's like the saying 'don't shoot the messenger'.",
+                    context: "Abraham wisely shares his thoughts with the other Reckoners as they plot their next move."
+                },
+            ],
+            rating: 5,
+        },
         {
             date: "05/24",
             title: "Project Hail Mary",
@@ -62,7 +122,7 @@ module.exports = {
             quotes: [
                 {
                     text: "There is more than one kind of freedom, said Aunt Lydia. Freedom to and freedom from. In the days of anarchy, it was freedom to. Now you are being given freedom from. Don't underrate it.",
-                    page: [24],
+                    pages: [24],
                     thoughts: "It's true that one's man's freedom could be another person's cage. In this point of the book, the main character describes her past as she's living and having to deal with real world problems like potentially get raped, mugged, attacked, harassed, etc where she was not pretty much a slave—and then on the flip side as a slave she doesn't have to deal with such things. She's now property but doesn't have to deal with it or at least to that extent."
                 }
             ],
@@ -105,7 +165,7 @@ module.exports = {
             quotes: [
                 {
                     text: "The morality of an action depends, ultimately and only, on its outcomes.",
-                    page: [127],
+                    pages: [127],
                     thoughts: "Grayson tries to teach Avery about how to create the greatest impact. Donations to a specific individual doesn't do very much, but Avery argued that her intentions to buy a home for the homeless guy in the park would be a huge thing for him."
                 }
             ],
@@ -130,16 +190,16 @@ module.exports = {
             quotes: [
                 {
                     text: "This is the thing about good and evil. They aren't so far apart—and they often start from the same valiant place of wanting something to be different.",
-                    page: [266],
+                    pages: [266],
                     context: "Hannah's wise thoughts about Nicholas' wall of pictures.",
                     thoughts: "He has a wall plastered of his daughter and granddaughter whom are deceased and out of his life, respectively."
                 }, {
                     text: "‘My grandfather used to say that most people don't want to hear the thing that will make it work better,' I said. ‘They want to hear what will make it easier.'",
-                    page: [160],
+                    pages: [160],
                     thoughts: "it's probably true that most people want to hear how their life can be made easier rather than better."
                 }, {
                     text: "Favorite part of my day?",
-                    page: [38],
+                    pages: [38],
                     context: "the main couple asked each other that question every day.",
                     thoughts: "I am going to adopt that saying and use that in my relationships. I think questions like that will help me connect better with people instead of 'how are you doing?'"
                 }],
@@ -155,22 +215,22 @@ module.exports = {
             quotes: [
                 {
                     text: "‘This case, Tom Robinsons case, is something that goes to the essence of a man's conscience—scout I couldn't go to t church and worship god if I didn't try to help that man'…'They're certainly entitled to think that, and they're entitled to full respect for their opinions,' said Atticus, ‘but before I can live with other folks I've got to live with myself. The one thing that doesn't abide by majority rule is a persons conscience.'",
-                    page: [119, 120],
+                    pages: [119, 120],
                     thoughts: "Atticus describing the importance of each individual duty to their own conscience. It's important to follow what your moral compass is telling you. To each of us it may stray from what the majority may believe in."
                 },
                 {
                     text: "There are just some kind of men who—who're so busy worrying about the next world they've never learned to live in this one, and you can look down the street and see the results.",
-                    page: [50],
+                    pages: [50],
                     context: "miss Maudie tries to explain that there are some people who forget to enjoy the present",
                     thoughts: "They get caught up always thinking about the future that they never enjoy the now."
                 }, {
                     text: "My first impulse was to get it into my mouth as quickly as possible, but I remembered where I was. I ran home, and on our front porch I examined my loot. The gum looked fresh. I sniffed it and it smelled all right. I licked it and waited for a while. When I did not die I crammed it into my mouth: Wrigley's Double-Mint.",
-                    page: [37],
+                    pages: [37],
                     context: "Scout coming home from school came across two sticks of gum inside a tree.",
                     thoughts: "She did her due diligence effort in making sure the gum was safe to eat. This made me laugh and it reminded me of silly things that I did when I was little."
                 }, {
                     text: "You never really understand a person until you consider things from his point of view",
-                    page: [33],
+                    pages: [33],
                     context: "Atticus giving advise to Scout whom is not wanting to go back to school",
                     thoughts: "Her experience the first day of school made her not want to go back. She got told to stop having whoever was teaching her at home because the teacher believed she was being taught incorrectly. She got scolded for talking (sharing that the Cunninghams don't have money and they won't ever borrow money from anyone ever)"
                 }],
@@ -195,22 +255,22 @@ module.exports = {
             quotes: [
                 {
                     text: "For some reason, dying men always ask questions they know the answer to. Perhaps it's so they can die being right.",
-                    page: [150],
+                    pages: [150],
                     context: "Michael Holtzapfel recounted the death of his brother Robert but this story includes his friend Pieter's death which is kind of confusing",
                     thoughts: "I thought it was interesting that people on their deathbeds tend to want to share everything they feel they need to share with their loved ones as their final words. Imparting the world with wisdom and advice and regrets and secrets."
                 }, {
                     text: "Not leaving: an act of trust and love, often deciphered by children",
-                    page: [12],
+                    pages: [12],
                     context: "foster dad soothing Liesel to sleep as she has regular nightmares of her dead brother",
                     thoughts: "He has become a father to her mainly through these occasions."
                 }, {
                     text: "When she came to write her story, she would wonder exactly when the books and the words started to mean not just something, but everything.",
-                    page: [10],
+                    pages: [10],
                     context: "beautiful quote that gets me inspired to write and create something for myself.",
                     thoughts: "Something that is more than the product or idea of itself but something that will impact others and hopefully a future generation."
                 }, {
                     text: "That's the sort of things I'll never know, or comprehend—what humans are capable of.",
-                    page: [9],
+                    pages: [9],
                     thoughts: "Something very true. People amaze me of what they are able to do. It inspires me to see talented individuals achieve and do some incredible things. It's gets me excited about seeing what I'm capable of. I know that everyone has potential to do some great things, maybe not necessarily famous things but things that can change the course of an individual's life or impact somebody to become better"
                 }
             ],
@@ -298,7 +358,7 @@ module.exports = {
             quotes: [
                 {
                     text: "If life ever seems too complicated, if you think no one can help, sometimes the right person to turn to is an eight-year-old",
-                    page: [178],
+                    pages: [178],
                     context: "Ibrahim referring to Ron's grandson whom is 8",
                     thoughts: "Though he's only 8, he has some delightful thoughts and is a great rubber ducky"
                 }, {
@@ -306,12 +366,12 @@ module.exports = {
                     thoughts: "Victor is supposed to be dead and so they stage some photos of his buried body to be sent to this Viking who order this hit technically he threaten to kill them if they didn't finish this job. Victor embraces his fate but was spared and at this time he's at peace looking up at some people including of one person he's known for years."
                 }, {
                     text: "Ron turns his head, and see Pauline's smile. He has to catch a breath. You only get sent so many of those smiles in a lifetime. Ron reached out a hand, and Pauline takes it. Ron realizes what the feeling is. He is not in pain. Not a single hi of his battered old body is nagging at him.",
-                    page: [166],
+                    pages: [166],
                     context: "right after Ron wakes up from his nap during his couples massage",
                     thoughts: "He is so at peace and happy and glad he came."
                 }, {
                     text: "He hears Pauline sigh in deep satisfaction. That, at least, makes him happy.",
-                    page: [165],
+                    pages: [165],
                     thoughts: "Ron with his girlfriend Pauline are getting a couples massage and he is not looking forward to it at all. He was told that he should just relax and let his mind wander during it all. He starts listing potential things to think about and it was cute to hear him say that"
                 }, {
                     text: "And he's helping her understand that if you're fooling everyone, you're really only fooling one person, and that's yourself. Ibrahim had said to her, ‘Our great strengths are also our great weakness'",
@@ -511,12 +571,12 @@ module.exports = {
             quotes: [
                 {
                     text: "The happiness he gives is quite as great as if it cost a fortune.",
-                    page: [46],
+                    pages: [46],
                     context: "Ebenezer Scrooge speaking of Mr. Fezziwig after the dancing memory on Christmas Eve",
                 },
                 {
                     text: "They were not a handsome family, they were not well dressed, their shoes were far from being waterproof, their clothes were scanty....but they were happy, grateful, pleased with one another, and contented with the time.",
-                    page: [73],
+                    pages: [73],
                 }
             ],
             rating: 2.5,
@@ -531,7 +591,7 @@ module.exports = {
             quotes: [
                 {
                     text: "You must learn some of my philosophy. Think only of the past as its remembrance gives you pleasure.",
-                    page: [355],
+                    pages: [355],
                 }
             ],
             rating: 3,
@@ -546,19 +606,19 @@ module.exports = {
             quotes: [
                 {
                     text: "During the winter encampments, Hamilton constantly educated himself, as if equipping his mind got the larger tasks ahead. ‘Force of intellect and force of will were his sources of his success.' (Henry Cabot Lodge) Hamilton fit the type of the self-improving autodidact, employing all his spare time to better himself. He aspired to the eighteenth-century aristocratic ideal of the versatile man conversant in every area of knowledge...This was hardly light fare after a day of demanding correspondence for Washington, yet he retained the information and applied it to profitable use.",
-                    page: [110],
+                    pages: [110],
                     context: "",
                     thoughts: ""
                 },
                 {
                     text: "‘As a general marches at the head of his troops,' so should wise politicians ‘March at the head of affairs, insomuch that they ought not to wait the event to know what measure to take, but the measure which they have taken ought to produce the event.'",
-                    page: [111],
+                    pages: [111],
                     context: "",
                     thoughts: ""
                 },
                 {
                     text: "A letter Hamilton wrote to John Laurens after ‘the war' (hadn't officially ended), “Quit your sword my friend, put on the toga, come to Congress. We know each other's sentiments, our views are the same. We have fought side by side to make America free. Let us hand in hand struggle to make her happy.",
-                    page: [],
+                    pages: [],
                     context: "",
                     thoughts: "As I reflect on the above quote I think does freedom bring happiness in of itself, then what does? I feel there is a lot of truth in what Hamilton is saying. Even though they have won the war, there was still a lot of change that needed to happen for this fledging new country. It was corruptible and hinged on a plan of government that early patriots saw as weakness to the future existence of a longstanding government."
                 },
@@ -575,17 +635,17 @@ module.exports = {
             quotes: [
                 {
                     text: "During his twelve years in the community, he had never felt such simple moments of exquisite happiness.",
-                    page: [172],
+                    pages: [172],
                     context: "As Jonas looked at nature and life outside of his community.",
                 },
                 {
                     text: "If he had stayed, he would have starved in other ways. He would have lived a life hungry for feelings, for color, for love.",
-                    page: [174],
+                    pages: [174],
                     context: "Regretting his decision to leave, but thought that it would have been harder to live a life where he would be trapped with knowing something but not being able to do anything with it. ",
                 },
                 {
                     text: "For a fleeting second he felt that he wanted to keep it for himself, to let himself bathe in sunlight, unburdened by anything or anyone else. But the moment passed was followed by an urge, a need, a passionate yearning to share the warmth with the one person left for him to love.",
-                    page: [177],
+                    pages: [177],
                     context: "Though he was tired and cold, he felt a love for Gabriel.",
                 },
             ],
