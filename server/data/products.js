@@ -1,11 +1,12 @@
 const eden = '../assets/Products/eden.jpeg';
 const games = '../assets/Products/full-set.png';
 const cookbook = '../assets/Products/cookbook.png';
+const recommendations = '../assets/Products/recommendations.png';
 
 const products = [
     {
         organization: 'Recommendations / Reviews',
-        images: [games],
+        images: [recommendations],
         bullets: [
             'I was tired of storing these recommendations and my reviews about random things in a bunch of places. I hope you find them useful!',
         ],
