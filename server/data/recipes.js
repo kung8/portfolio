@@ -120,7 +120,7 @@ const recipes = [
     hospitalityChicken,
     bakedChicken,
     bakedLemonChicken,
-    chineseBao, // TODO: add
+    chineseBao,
     vietnameseBanhTieu,
     italianLasagna,
     indianChickenTikkaMasala, // TODO: add
