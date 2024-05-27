@@ -18,7 +18,9 @@ module.exports = {
     yields: '6 servings',
     prepTime: '7 m',
     cookTime: '25 m',
-    websites: [],
+    websites: [
+        'https://cambodiarecipe.com/recipe/khmer-red-chicken-curry/'
+    ],
     separated: false,
     ingredients: [
         { name: 'chicken thigh', amount: '5 lbs', additionalDetails: 'sliced', optional: false, section: SECTIONS.MAIN },

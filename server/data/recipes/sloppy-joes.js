@@ -19,7 +19,9 @@ module.exports = {
     yields: '4 servings',
     prepTime: '7 m',
     cookTime: '25 m',
-    websites: [],
+    websites: [
+        'https://natashaskitchen.com/sloppy-joe-recipe/'
+    ],
     separated: false,
     ingredients: [
         { name: 'small onion', amount: '1', additionalDetails: 'chopped', optional: false, section: SECTIONS.MAIN },
