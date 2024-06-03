@@ -18,8 +18,8 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.NOODLE],
     yields: '6 servings',
-    prepTime: 'm',
-    cookTime: 'm',
+    prepTime: '5 m',
+    cookTime: '30 m',
     websites: [
         'https://www.halfbakedharvest.com/better-than-takeout-thai-drunken-noodles'
     ],
