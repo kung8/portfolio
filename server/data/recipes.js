@@ -6,6 +6,7 @@ const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefStroganoff = require("./recipes/beef-stroganoff");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
+const blondie = require("./recipes/blondie");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
 const brownies = require("./recipes/brownies");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
@@ -186,6 +187,7 @@ const recipes = [
     pretzel,
     snickerdoodle,
     chocolateChipCookies,
+    blondie,
     tedLassoBiscuits,
     brownies,
     noBakeCookie,
