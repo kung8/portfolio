@@ -1026,5 +1026,20 @@ module.exports = {
             author: ["Lindsey Fitzharris"],
             source: ["Jules from the book exchange"],
         },
+        {
+            title: "Dark Matter",
+            author: ["Blake Crouch"],
+            source: ["Jami's Mutual profile"],
+        },
+        {
+            title: "Lovely War",
+            author: ["Julie Berry"],
+            source: ["Jami's Mutual profile"],
+        },
+        {
+            title: "7 1/2 Deaths of Evelyn Hardcastle",
+            author: ["Stuart Turton"],
+            source: ["Jami's Mutual profile"],
+        },
     ]
 };
