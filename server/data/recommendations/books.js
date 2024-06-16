@@ -20,6 +20,24 @@ module.exports = {
         //     rating: 5,
         // },
         {
+            date: "06/24",
+            title: "Firefight",
+            author: ["Brandon Sanderson"],
+            review: [
+                "This was another quick read. I thoroughly enjoyed the character's development throughout this book. The love story was cute and the way it ended was sad but I think is a clever way to keep the story going. I am excited to read the next book in the series."
+            ],
+            quotes: [
+                {
+                    text: "This time, when she'd pointed it at me, she'd flicked the safety on. If that wasn't true love, I don't know what was.",
+                    pages: [179],
+                    thoughts: "I think it's so cute as this girl who doesn't like to express her feelings is developing as a character and a person. She's learning to trust and love and not give into her fears.",
+                    context: "Megan wants to talk to David and they share with each some news of each sides plans, hoping to trust each other. David tells her that he loves her (or has feelings for her)."
+                },
+            ],
+            image: "",
+            rating: 5,
+        },
+        {
             date: "05/24",
             title: "Steelheart",
             author: ["Brandon Sanderson"],
