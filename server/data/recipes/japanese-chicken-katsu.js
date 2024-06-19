@@ -2,7 +2,7 @@ const katsu = '../assets/Products/katsu-full.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
-    cardName: 'Chicken Katsu',
+    cardName: 'Japanese Chicken Katsu',
     name: 'Japanese Chicken Katsu',
     recipeCredit: 'Aldin Pope',
     img: katsu,

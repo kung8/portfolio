@@ -9,7 +9,7 @@ const PORK_LOAF = 'Pork Loaf';
 const PICKLED_VEGETABLES = 'Pickled Vegetables';
 
 module.exports = {
-    cardName: 'Banh Mi Sandwich',
+    cardName: 'Vietnamese Banh Mi Sandwich',
     name: 'Vietnamese Banh Mi Sandwich',
     img: banhMi,
     available: true,

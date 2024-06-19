@@ -197,7 +197,7 @@
                 background: $black;
                 opacity: 0.65;
                 width: 100%;
-                padding: 8px;
+                padding: 12px 8px;
                 display: flex;
                 justify-content: center;
                 
@@ -209,11 +209,14 @@
                     letter-spacing: 1.5px;
                     display: inline-block;
                     word-wrap: unset;
-                    font-size: 20px;
+                    font-size: 14px;
                     z-index: 1;
     
                     @include down($desktop) {
-                        font-size: 14px;
+                        font-size: 12px;
+                    }
+                    @include down($tablet) {
+                        font-size: 12px;
                     }
                     @include down($mobile) {
                         font-size: 24px;

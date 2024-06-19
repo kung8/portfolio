@@ -2,7 +2,7 @@ const pho = '../assets/Products/pho.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN } = require('./constants');
 
 module.exports = {
-    cardName: 'Pho',
+    cardName: 'Vietnamese Pho',
     name: 'Vietnamese Pho',
     img: pho,
     available: true,

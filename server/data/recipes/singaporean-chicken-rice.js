@@ -10,7 +10,7 @@ const CHICKEN = 'Chicken';
 const CHILI_SAUCE = 'Chili Sauce';
 
 module.exports = {
-    cardName: 'Chicken Rice',
+    cardName: 'Singaporean Chicken Rice',
     name: 'Singaporean Chicken Rice',
     img: plated,
     available: true,

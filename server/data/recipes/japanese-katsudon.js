@@ -8,7 +8,7 @@ const finished = '../assets/Products/chicken-katsudon-finished.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
-    cardName: 'Pork Katsudon',
+    cardName: 'Japanese Pork Katsudon',
     name: 'Japanese Pork Katsudon',
     img: katsudon,
     available: true,

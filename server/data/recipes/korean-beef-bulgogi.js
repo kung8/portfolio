@@ -3,7 +3,7 @@ const marinating = '../assets/Products/bulgogi-beef-marinating.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
-    cardName: 'Beef Bulgogi',
+    cardName: 'Korean Beef Bulgogi',
     name: 'Korean Beef Bulgogi',
     img: beefBulgogi,
     available: true,

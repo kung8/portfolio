@@ -1,8 +1,8 @@
-const butterChicken = '../assets/Products/butter-chicken.jpeg';
+const butterChicken = '../assets/Products/indian-butter-chicken.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 
 module.exports = {
-    cardName: 'Butter Chicken',
+    cardName: 'Indian Butter Chicken',
     name: 'Indian Butter Chicken',
     img: butterChicken,
     available: true,
