@@ -12,7 +12,7 @@ const plated = '../assets/Products/bok-choy-plated.jpeg';
 const sauce = '../assets/Products/bok-choy-sauce.jpeg';
 const zoomed = '../assets/Products/bok-choy-zoomed.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, METHODS } = require("./constants");
 
 const CHICKEN = 'Chicken';
 
@@ -23,6 +23,7 @@ module.exports = {
     available: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
+    method: [METHODS.BLANCH, METHODS.ROAST, METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.VEGETABLE],
     yields: '2 servings',

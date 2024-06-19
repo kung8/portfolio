@@ -68,6 +68,7 @@ const METHODS = {
     AIR_FRY: 'Air Fry',
     BAKE: 'Bake',
     BOIL: 'Boil',
+    BLANCH: 'Blanch',
     BLEND: 'Blend',
     DEEP_FRY: 'Deep Fry',
     GRILL: 'Grill',
