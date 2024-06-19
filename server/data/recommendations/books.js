@@ -19,6 +19,42 @@ module.exports = {
         //     image: "",
         //     rating: 5,
         // },
+        // {
+        //     date: "06/24",
+        //     title: "Calamity",
+        //     author: ["Brandon Sanderson"],
+        //     review: [
+        //         ""
+        //     ],
+        //     quotes: [
+        //         {
+        //             text: "The robots, on the other hand, acted like a bunch of youthful dreams and got thoroughly crushed.",
+        //             pages: [41],
+        //             thoughts: "I found this hilarious. Enough said.",
+        //             context: "Megan and David were in a tight pinch and to get out they needed to create some havoc and confusion which lead to the robots demise."
+        //         },
+        //         {
+        //             text: "I felt cowardly, but part of being in a team was about recognizing when someone else could do a job better than you. And part of being a man was learning to let your immortal girlfriend take a turn being the heroic one.",
+        //             pages: [43],
+        //             thoughts: "Feminism. Teamwork. Trust. Love. It's all there.",
+        //             context: "In order for David to get out alive, Megan decided that she would be a distraction to help slow the robots down."
+        //         },
+        //         {
+        //             text: "'We're not moments, Megan, you and me. We're events. You say you might not be the same person you were a year ago? Well, who is? I'm sure not. We change, like swirling clouds and a rising sun. The cells in me have died, and new nones were born. My mind has changed, and I don't feel the thrill of killing Epics I once did. I'm not the same David. Yet I am.' I met her eyes and shrugged. 'I'm glad you're not the same Megan. I don't want you to be the same. My Megan is a sunrise, always changing, but beautiful the entire time.'",
+        //             pages: [137],
+        //             thoughts: "So cute. David is so sweet and romantic at times. I love it!",
+        //             context: "Megan is contemplating whether she could revert back to her old ways or if she will come back forgetting who she is or wouldn't be the same person. David reassures her that everyone changes and that he still loves her."
+        //         },
+        //         // {
+        //         //     text: "",
+        //         //     pages: [],
+        //         //     thoughts: "",
+        //         //     context: ""
+        //         // },
+        //     ],
+        //     image: "",
+        //     rating: 5,
+        // },
         {
             date: "06/24",
             title: "Firefight",
@@ -27,6 +63,12 @@ module.exports = {
                 "This was another quick read. I thoroughly enjoyed the character's development throughout this book. The love story was cute and the way it ended was sad but I think is a clever way to keep the story going. I am excited to read the next book in the series."
             ],
             quotes: [
+                {
+                    text: "'You can't immerse yourself in something,' Prof said softly, 'without coming to respect it.'",
+                    pages: [56],
+                    thoughts: "That is interesting. As you learn more about something and spends hours and hours slaving away at understanding it whether that's a person, a thing, a concept, you start to respect it.",
+                    context: "Prof is talking to David about the Epics and how they are not just monsters but people."
+                },
                 {
                     text: "This time, when she'd pointed it at me, she'd flicked the safety on. If that wasn't true love, I don't know what was.",
                     pages: [179],
@@ -1040,6 +1082,156 @@ module.exports = {
             title: "7 1/2 Deaths of Evelyn Hardcastle",
             author: ["Stuart Turton"],
             source: ["Jami's Mutual profile"],
+        },
+        {
+            title: "Less Than Zero",
+            author: ["Bret Easton Ellis"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "Me Talk Pretty One Day",
+            author: ["David Sedaris"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "A House For Mr. Biswas",
+            author: ["V.S. Naipaul"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "Norwegian Wood",
+            author: ["Haruki Murakami"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "One Flew Over the Cuckoo's Nest",
+            author: ["Ken Kesey"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "Americanah",
+            author: ["Chimamanda Ngozi Adichie"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "The Picture of Dorian Gray",
+            author: ["Oscar Wilde"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "The Love Song of J. Alfred Prufrock",
+            author: ["T.S. Eliot"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "The Satanic Verses",
+            author: ["Salman Rushdie"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "The Secret History",
+            author: ["Donna Tartt"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "Slaughterhouse-Five",
+            author: ["Kurt Vonnegut"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "The Brief Wondrous Life of Oscar Wao",
+            author: ["Junot Diaz"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "The Fall",
+            author: ["Albert Camus"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "A Death in the Family",
+            author: ["Karl Ove Knausgaard"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "The Golden Notebook",
+            author: ["Doris Lessing"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "The Road",
+            author: ["Cormac McCarthy"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "What We Talk About When We Talk About Love",
+            author: ["Raymond Carver"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "Generation X",
+            author: ["Douglas Coupland"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "The Bell Jar",
+            author: ["Sylvia Plath"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "On The Road",
+            author: ["Jack Kerouac"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "White Teeth",
+            author: ["Zadie Smith"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "Brave New World",
+            author: ["Aldous Huxley"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "American Pastoral",
+            author: ["Philip Roth"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "High Windows",
+            author: ["Philip Larkin"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "Fear and Loathing in Las Vegas",
+            author: ["Hunter S. Thompson"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "The Line of Beauty",
+            author: ["Alan Hollinghurst"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "The Catcher in the Rye",
+            author: ["J.D. Salinger"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "Men Without Women",
+            author: ["Ernest Hemingway"],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "",
+            author: [],
+            source: ["online - books to read by 30"],
+        },
+        {
+            title: "",
+            author: [],
+            source: ["online - books to read by 30"],
         },
     ]
 };
