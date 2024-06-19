@@ -1,5 +1,13 @@
 const pan = '../assets/Products/peach-cobbler-pan.jpeg'
 const slice = '../assets/Products/peach-cobbler-slice.jpeg'
+const baked = '../assets/Products/peach-cobbler-baked.jpeg'
+const butter = '../assets/Products/peach-cobbler-butter.jpeg'
+const cinnamon = '../assets/Products/peach-cobbler-cinnamon.jpeg'
+const dry = '../assets/Products/peach-cobbler-dry.jpeg'
+const melted = '../assets/Products/peach-cobbler-melted-butter.jpeg'
+const milk = '../assets/Products/peach-cobbler-milk.jpeg'
+const mixed = '../assets/Products/peach-cobbler-mixed.jpeg'
+const peaches = '../assets/Products/peach-cobbler-peaches.jpeg'
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
 
 module.exports = {
@@ -34,14 +42,14 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', type: SECTIONS.MAIN },
-        { step: 'Add butter into the baking pan and place pan in the oven while it preheats.', type: SECTIONS.MAIN },
-        { step: 'Remove the pan from the oven once the butter has melted.', type: SECTIONS.MAIN },
-        { step: 'In a mixing bowl, mix together flour, sugar, salt, and baking powder.', type: SECTIONS.MAIN },
-        { step: 'Combine milk to the mixing bowl.', type: SECTIONS.MAIN },
-        { step: 'Pour mixture into the baking pan and smooth to an even layer.', type: SECTIONS.MAIN },
-        { step: 'Add the canned peaches and its juices to the baking pan.', type: SECTIONS.MAIN },
-        { step: 'Generously drizzle cinnamon on top.', type: SECTIONS.MAIN },
-        { step: 'Bake for 35 to 40 minutes.', type: SECTIONS.MAIN },
+        { step: 'Add butter into the baking pan and place pan in the oven while it preheats.', type: SECTIONS.MAIN, img: butter },
+        { step: 'Remove the pan from the oven once the butter has melted.', type: SECTIONS.MAIN, img: melted },
+        { step: 'In a mixing bowl, mix together flour, sugar, salt, and baking powder.', type: SECTIONS.MAIN, img: dry },
+        { step: 'Combine milk to the mixing bowl.', type: SECTIONS.MAIN, img: milk },
+        { step: 'Pour mixture into the baking pan and smooth to an even layer.', type: SECTIONS.MAIN, img: mixed },
+        { step: 'Add the canned peaches and its juices to the baking pan.', type: SECTIONS.MAIN, img: peaches },
+        { step: 'Generously drizzle cinnamon on top.', type: SECTIONS.MAIN, img: cinnamon },
+        { step: 'Bake for 35 to 40 minutes.', type: SECTIONS.MAIN, img: baked },
         { step: 'Serve warm with ice cream.', type: SECTIONS.SERVE, img: pan },
     ]
 };
