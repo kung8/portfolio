@@ -12,7 +12,7 @@ const CHILI_SAUCE = 'Chili Sauce';
 module.exports = {
     cardName: 'Chicken Rice',
     name: 'Singaporean Chicken Rice',
-    img: cooked,
+    img: plated,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.SINGAPOREAN],
@@ -60,6 +60,6 @@ module.exports = {
         { step: 'Cook until the chicken and rice is cooked (about 15 to 25 minutes).', type: SECTIONS.RICE, img: cooked },
         { step: 'Mix together garlic, ginger, sriracha, chicken stock, lime juice, and sugar in a bowl.', type: CHILI_SAUCE, img: chili },
         { step: 'Cut the chicken into slices.', type: SECTIONS.SERVE },
-        { step: 'Serve the sliced chicken with rice and sliced cucumbers. Top with chili sauce.', type: SECTIONS.SERVE, img: plated },
+        { step: 'Serve the sliced chicken with rice and sliced cucumbers. Top with chili sauce.', type: SECTIONS.SERVE },
     ]
 };

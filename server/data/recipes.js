@@ -76,6 +76,7 @@ const pretzel = require("./recipes/pretzel");
 const riceCrispyBall = require("./recipes/rice-crispy-ball");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const scrambledEggs = require("./recipes/scrambled-eggs");
+const singaporeanChickenRice = require("./recipes/singaporean-chicken-rice");
 const sloppyJoes = require("./recipes/sloppy-joes");
 const smoothie = require("./recipes/smoothie");
 const smores = require("./recipes/smores");
@@ -111,7 +112,8 @@ const recipes = [
     koreanFriedChicken,
     vietnameseBanhMiSandwich,
     malaysianLemonChicken,
-    chineseBokChoyChicken, // TODO: add
+    singaporeanChickenRice,
+    chineseBokChoyChicken,
     chineseGingerChicken,
     chineseSourChickenSoup,
     khmerRedCurry,

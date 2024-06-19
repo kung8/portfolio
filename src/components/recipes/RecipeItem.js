@@ -10,9 +10,11 @@ export const RecipeItem = ({ item, onClick }) => {
                     <p>Image Coming Soon!</p>
                 </div>
             )}
-            <h2 className="recipe-item-title">
-                {item.cardName}
-            </h2>
+            <div className="recipe-item-title-container">
+                <h2 className="recipe-item-title">
+                    {item.cardName}
+                </h2>
+            </div>
         </div>
     )
 }

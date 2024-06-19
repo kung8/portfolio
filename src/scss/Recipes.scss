@@ -189,41 +189,48 @@
                 }
             }
 
-            .recipe-item-title {
+            .recipe-item-title-container {
                 position: absolute;
                 left: 50%;
                 bottom: 0;
-                transform: translate(-50%, -4px);
-                color: $white;
-                padding: 8px 8px 16px;
-                font-weight: 600;
-                text-align: center;
-                text-shadow: 1px 1px 1px $black;
-                letter-spacing: 1.5px;
-                width: 97%;
-                display: inline-block;
-                word-wrap: unset;
-                font-size: 24px;
-                @include down($desktop) {
+                transform: translate(-50%, -12px);
+                background: $black;
+                opacity: 0.65;
+                width: 100%;
+                padding: 8px;
+                display: flex;
+                justify-content: center;
+                
+                .recipe-item-title {
+                    color: $white;
+                    font-weight: 600;
+                    text-align: center;
+                    text-shadow: 1px 1px 1px $black;
+                    letter-spacing: 1.5px;
+                    display: inline-block;
+                    word-wrap: unset;
                     font-size: 20px;
-                }
-                @include down($tablet) {
-                    font-size: 18px;
-                }
-                @include down($mobile) {
-                    font-size: 32px;
+                    z-index: 1;
+    
+                    @include down($desktop) {
+                        font-size: 14px;
+                    }
+                    @include down($mobile) {
+                        font-size: 24px;
+                    }
                 }
             }
+
         }
     }
 
     .empty-recipe-container {
-        display: flex; 
+        display: flex;
         justify-content: center;
         margin-top: 100px;
     }
 
-    @import './RecipeFilterContainer';
+    @import "./RecipeFilterContainer";
 
     .loader-container {
         width: 100%;
