@@ -1,4 +1,5 @@
 const banhTieu = '../assets/Products/banh-tieu.jpeg';
+const flat = '../assets/Products/banh-tieu-flat.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, METHODS } = require('./constants');
 
 module.exports = {
@@ -51,6 +52,6 @@ module.exports = {
         { step: 'Once the oil is hot, add the dough and it will float. Use the tongs to push down the dough.', type: SECTIONS.MAIN },
         { step: 'The dough should start to puff up, then flip.', type: SECTIONS.MAIN },
         { step: 'Fry until golden brown. The frying process doesn\'t take too long so keep an eye on it.', type: SECTIONS.MAIN },
-        { step: 'Place fried bread on the cooling rack to drain the excess oil.', type: SECTIONS.MAIN },
+        { step: 'Place fried bread on the cooling rack to drain the excess oil.', type: SECTIONS.MAIN, img: flat },
     ]
 };

@@ -72,6 +72,7 @@ const phillyCheesesteak = require("./recipes/philly-cheesesteak");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
 const pizza = require("./recipes/pizza");
 const potRoast = require("./recipes/pot-roast");
+const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
 const riceCrispyBall = require("./recipes/rice-crispy-ball");
 const roastedTurkey = require("./recipes/roasted-turkey");
@@ -86,7 +87,7 @@ const southwestSalad = require("./recipes/southwest-salad");
 const sushi = require("./recipes/sushi");
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
-const thaiDrunkenNoodles = require("./recipes/thai-drunken-noodles");
+const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
 const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
 const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich");
 const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
@@ -117,7 +118,7 @@ const recipes = [
     chineseGingerChicken,
     chineseSourChickenSoup,
     khmerRedCurry,
-    thaiDrunkenNoodles,
+    thaiPadSeeEw,
     chineseLoMeinNoodles,
     peruvianAjiDeGallina,
     cilantroLimeChicken,
@@ -151,6 +152,7 @@ const recipes = [
     bbqPulledPorkAndFixins,
     bbqChickenWings,
     malaysianSatay,
+    potstickers,
     chickenKebab,
     potRoast,
     chickenPotPie,
