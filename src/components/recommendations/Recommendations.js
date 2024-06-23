@@ -43,9 +43,9 @@ export const Recommendations = () => {
         <NonDashboardPage mainClassName={`recommendations ${isLoaded ? '' : 'isLoading'}`}>
             <NonDashboardPage.Header title='Recommendations / Reviews' />
             <div className="categories">
-                {categories.map(category => (
+                {categories.map((category, index) => (
                     <h3
-                        key={category}
+                        key={category + '-' + index}
                         className={`category ${selectedCategory === category ? 'selected' : ''}`}
                         onClick={() => setSelectedCategory(category)}
                     >

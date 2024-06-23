@@ -874,11 +874,6 @@ module.exports = {
             source: ["online"],
         },
         {
-            title: "The Catcher in the Rye",
-            author: ["J.D. Salinger"],
-            source: ["online"],
-        },
-        {
             title: "The Lion, the Witch, and the Wardrobe",
             author: ["C.S. Lewis"],
             source: ["online"],
@@ -976,11 +971,6 @@ module.exports = {
         {
             title: "Do Androids Dream of Electric Sheep?",
             author: ["Phillip K. Dick"],
-            source: ["online"],
-        },
-        {
-            title: "The Secret History",
-            author: ["Donna Tartt"],
             source: ["online"],
         },
         {
@@ -1221,16 +1211,6 @@ module.exports = {
         {
             title: "Men Without Women",
             author: ["Ernest Hemingway"],
-            source: ["online - books to read by 30"],
-        },
-        {
-            title: "",
-            author: [],
-            source: ["online - books to read by 30"],
-        },
-        {
-            title: "",
-            author: [],
             source: ["online - books to read by 30"],
         },
     ]

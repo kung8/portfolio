@@ -1,7 +1,7 @@
 const books = require('./books');
 // const movies = require('./movies');
 // const products = require('./products');
-// const restaurants = require('./restaurants');
+const restaurants = require('./restaurants');
 // const talks = require('./talks');
 // const tvShows = require('./tv-shows');
 
@@ -10,7 +10,7 @@ module.exports = [
     // tvShows,
     // movies,
     // products,
-    // restaurants,
+    restaurants,
     // talks,
 ];
 

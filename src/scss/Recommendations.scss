@@ -98,5 +98,23 @@
                 }
             }
         }
+
+        .review-rating-group-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            margin-top: 24px;
+            .review-rating-group {
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                .review-rating-type {
+                    font-size: 14px;
+                }
+                .review-rating {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }

@@ -17,7 +17,7 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
         <RecommendationPage>
             <RecommendationPage.SectionTitle category={category} type="Recommendations" />
             <RecommendationContainer>
-                {recommendations.map(recommendation => (
+                {recommendations.filter((item, index) => recommendations.indexOf(item) === index).map(recommendation => (
                     <RecommendationContainer.Recommendation key={recommendation.title + '-' + recommendation.author}>
                         <RecommendationContainer.Header title={recommendation.title} subtitle={`by ${getAuthor(recommendation.author)}`} />
                         <RecommendationContainer.Source source={recommendation.source} />
