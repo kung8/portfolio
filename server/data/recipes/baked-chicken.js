@@ -11,6 +11,7 @@ module.exports = {
     name: 'Baked Chicken',
     img: pan,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

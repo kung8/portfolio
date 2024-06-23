@@ -6,6 +6,7 @@ module.exports = {
     name: 'Lemon Chicken on Lettuce',
     img: lemonChickenOnLettuce,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     method: [METHODS.PAN_FRY],

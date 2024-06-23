@@ -12,6 +12,7 @@ module.exports = {
     name: 'Banana Bread',
     img: zoomed,
     available: true,
+    recommended: true,
     type: [CATEGORIES.DESSERT],
     yields: '1 loaf',
     prepTime: '10 m',

@@ -6,6 +6,7 @@ module.exports = {
     name: 'Vietnamese Pho',
     img: pho,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.VIETNAMESE],
     protein: [PROTEIN.BEEF],

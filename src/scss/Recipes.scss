@@ -200,7 +200,7 @@
                 padding: 12px 8px;
                 display: flex;
                 justify-content: center;
-                
+
                 .recipe-item-title {
                     color: $white;
                     font-weight: 600;
@@ -211,7 +211,7 @@
                     word-wrap: unset;
                     font-size: 14px;
                     z-index: 1;
-    
+
                     @include down($desktop) {
                         font-size: 12px;
                     }
@@ -224,6 +224,33 @@
                 }
             }
 
+            .recipe-item-recommended-container {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: $white;
+                transform: translate(0, 8px);
+                padding-left: 2px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .heart {
+        &:before {
+            content: "\2665";
+            color: $red;
+        }
+    }
+
+    .chef-recommended-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        .heart {
+            margin-right: 8px;
         }
     }
 

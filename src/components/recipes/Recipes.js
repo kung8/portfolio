@@ -171,11 +171,17 @@ export const Recipes = ({ history }) => {
 
             {isLoaded ? (
                 filteredRecipes.length ? (
-                    <div className="recipe-items-container">
-                        {filteredRecipeBySelectedFilters.map((item) =>
-                            <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertToKebabCase(item.name))} />
-                        )}
-                    </div>
+                    <>
+                        <div className="recipe-items-container">
+                            {filteredRecipeBySelectedFilters.map((item) =>
+                                <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertToKebabCase(item.name))} />
+                            )}
+                        </div>
+                        <p className="chef-recommended-container">
+                            <span className="heart" /> 
+                            <span>= Chef (AKA me) Recommended</span>
+                        </p>
+                    </>
                 ) : (
                     <div className="empty-recipe-container">
                         <p>No recipes found</p>

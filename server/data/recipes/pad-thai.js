@@ -6,6 +6,7 @@ module.exports = {
     name: 'Thai Pad Thai',
     img: padThai,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.THAI],
     method: [METHODS.STIR_FRY],

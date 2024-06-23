@@ -7,6 +7,7 @@ module.exports = {
     recipeCredit: 'Aldin Pope',
     img: katsu,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.JAPANESE],
     method: [METHODS.DEEP_FRY],

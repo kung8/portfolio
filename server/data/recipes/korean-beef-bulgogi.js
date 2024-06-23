@@ -7,6 +7,7 @@ module.exports = {
     name: 'Korean Beef Bulgogi',
     img: beefBulgogi,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.KOREAN],
     method: [METHODS.MARINADE, METHODS.PAN_FRY],

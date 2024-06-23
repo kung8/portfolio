@@ -15,6 +15,7 @@ module.exports = {
     name: 'Homemade Pizza',
     img: pizza,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],

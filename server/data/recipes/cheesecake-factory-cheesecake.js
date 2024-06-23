@@ -13,6 +13,7 @@ module.exports = {
     name: 'Cheesecake Factory Cheesecake',
     img: zoomed,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

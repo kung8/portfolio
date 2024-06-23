@@ -15,6 +15,7 @@ module.exports = {
     name: 'Peach Cobbler',
     img: slice,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

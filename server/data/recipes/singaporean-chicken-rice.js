@@ -14,6 +14,7 @@ module.exports = {
     name: 'Singaporean Chicken Rice',
     img: plated,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.SINGAPOREAN],
     method: [METHODS.SIMMER],

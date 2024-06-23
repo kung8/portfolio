@@ -12,6 +12,7 @@ module.exports = {
     name: 'Chinese Ginger Chicken',
     img: plated,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     method: [METHODS.STIR_FRY],

@@ -6,6 +6,7 @@ module.exports = {
     name: 'Chinese Sour Chicken Soup',
     img: sourChicken,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     protein: [PROTEIN.CHICKEN],

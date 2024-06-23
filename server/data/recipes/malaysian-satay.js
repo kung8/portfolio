@@ -6,6 +6,7 @@ module.exports = {
     name: 'Malaysian Satay',
     img: satay,
     available: true,
+    recommended: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.ASIAN, GENRES.MALAYSIAN],
     method: [METHODS.MARINADE, METHODS.BAKE],

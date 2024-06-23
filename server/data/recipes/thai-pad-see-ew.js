@@ -19,6 +19,7 @@ module.exports = {
     recipeCredit: 'Leah Cohen',
     img: padSeeEw,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.THAI],
     method: [METHODS.PAN_FRY],
@@ -27,7 +28,9 @@ module.exports = {
     yields: '2 servings',
     prepTime: '10 m',
     cookTime: '30 m',
-    websites: [],
+    websites: [
+        "https://hot-thai-kitchen.com/chili-vinegar/"
+    ],
     separated: true,
     ingredients: [
         { name: 'chicken thighs', amount: '6 oz', additionalDetails: 'cut into 2 inches', optional: false, section: CHICKEN },
@@ -43,7 +46,7 @@ module.exports = {
         { name: 'golden mountain sauce', amount: '2 tsp', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
         { name: 'sugar', amount: '1 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
         { name: 'white pepper', amount: '', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { name: 'garlic', amount: '1 clove', additionalDetails: 'minced', optional: true, section: THAI_CHILI_PEPPER },
+        { name: 'garlic', amount: '1 clove', additionalDetails: '', optional: true, section: THAI_CHILI_PEPPER },
         { name: 'thai chili pepper', amount: '2 - 3', additionalDetails: '', optional: true, section: THAI_CHILI_PEPPER },
         { name: 'white vinegar', amount: '1/4 c', additionalDetails: '', optional: true, section: THAI_CHILI_PEPPER },
     ],

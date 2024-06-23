@@ -6,6 +6,7 @@ module.exports = {
     name: 'Indian Butter Chicken',
     img: butterChicken,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.INDIAN],
     method: [METHODS.PAN_FRY],
