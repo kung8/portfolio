@@ -26,11 +26,12 @@ export const Recommendations = () => {
     useEffect(() => {
         const handleScroll = () => {
             const categoriesContainer = document.querySelector('.categories');
-            const top = categoriesContainer.getBoundingClientRect().top;
-            if (top === 0) {
-                categoriesContainer.classList.add('scrolled-categories');
-            } else {
+            const headingContainer = document.querySelector('.heading-container');
+            const scrollHeight = headingContainer.getBoundingClientRect().bottom;
+            if (scrollHeight > -40) {
                 categoriesContainer.classList.remove('scrolled-categories');
+            } else {
+                categoriesContainer.classList.add('scrolled-categories');
             }
         }
         window.addEventListener('scroll', handleScroll);

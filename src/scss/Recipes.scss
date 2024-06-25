@@ -232,6 +232,13 @@
                 transform: translate(0, 8px);
                 padding-left: 2px;
                 border-radius: 4px;
+
+                .heart {
+                    font-size: 20px;
+                    @include down($mobile) {
+                        font-size: 28px;
+                    }
+                }
             }
         }
     }
