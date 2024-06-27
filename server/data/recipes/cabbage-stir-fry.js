@@ -1,28 +1,34 @@
 const cabbageStirFry = '../assets/Products/cabbage-stir-fry.jpeg';
-const { CATEGORIES, GENRES, TYPES, PROTEIN } = require("./constants");
+const raw = '../assets/Products/cabbage-stir-fry-raw.jpeg';
+const bowl = '../assets/Products/cabbage-stir-fry-in-bowl.jpeg';
+const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS } = require("./constants");
 
 module.exports = {
     cardName: 'Cabbage Stir Fry',
     name: 'Cabbage Stir Fry',
-    img: cabbageStirFry,
-    available: false,
+    img: bowl,
+    available: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.VEGETABLE],
-    yields: ' servings',
-    prepTime: 'm',
-    cookTime: 'm',
+    yields: '4 servings',
+    prepTime: '3 m',
+    cookTime: '10 m',
     ingredients: [
-        { name: '', amount: '', additionalDetails: '', optional: false, section: '' },
+        { name: 'cabbage', amount: '1/2 head of', additionalDetails: 'chopped', optional: false, section: SECTIONS.MAIN },
+        { name: 'red pepper flakes', amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
+        { name: 'sesame oil', amount: '2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: '' },
+        { name: 'stove' },
     ],
     supplies: [
-        { name: '' },
+        { name: 'frying pan' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: 'Over medium-high heat, in a frying pan add cabbage.', type: SECTIONS.MAIN, img: raw },
+        { step: 'Top with oil and toss or mix until oil has coated cabbage.', type: SECTIONS.MAIN },
+        { step: 'Add red pepper flakes as desired. Stir.', type: SECTIONS.MAIN, img: cabbageStirFry },
     ]
 };

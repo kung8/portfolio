@@ -1,7 +1,10 @@
+const boiled = '../assets/Products/potstickers-boiled.jpeg';
+const covered = '../assets/Products/potstickers-covered.jpeg';
 const cut = '../assets/Products/potstickers-cut-dough.jpeg';
 const dough = '../assets/Products/potstickers-dough.jpeg';
 const filling = '../assets/Products/potstickers-filling.jpeg';
 const raw = '../assets/Products/potstickers-raw.jpeg';
+const zoomed = '../assets/Products/potstickers-zoomed.jpeg';
 const potstickers = '../assets/Products/potstickers.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 
@@ -17,6 +20,7 @@ module.exports = {
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     method: [METHODS.PAN_FRY, METHODS.STEAM],
     protein: [PROTEIN.PORK],
+    types: [TYPES.FINGER_FOOD],
     yields: '2 dozen',
     prepTime: '30 m',
     cookTime: '12 m',
@@ -66,13 +70,11 @@ module.exports = {
         { step: 'Lightly tap the potstickers on the surface to flatten the bottom.', type: ASSEMBLY },
         { step: 'Repeat for the remaining potstickers.', type: ASSEMBLY },
         { step: 'Mix together sauce ingredients.', type: DIPPING_SAUCE },
-        { step: 'Heat oil over medium - high heat.', type: SECTIONS.MAIN },
-        { step: 'Add 6 or 7 in hot oil, bottom down.', type: SECTIONS.MAIN },
-        { step: 'Cook until the bottom is golden brown (about 2 minutes).', type: SECTIONS.MAIN },
-        { step: 'Add water and cover pan. Steaming (about 3 minutes).', type: SECTIONS.MAIN },
+        { step: 'Over medium-high heat, in a pan add potstickers and water.', type: SECTIONS.MAIN, img: boiled },
+        { step: 'Cover pan with a lid. Steam (about 3 minutes).', type: SECTIONS.MAIN, img: covered },
         { step: 'Uncover. Reduce heat to medium.', type: SECTIONS.MAIN },
-        { step: 'Cook until water evaporates and bottoms are browned (about 1 to 2 minutes).', type: SECTIONS.MAIN },
-        { step: 'Remove and set somewhere to keep warm.', type: SECTIONS.MAIN },
+        { step: 'Add oil and cook until bottom is golden brown (about 2 minutes).', type: SECTIONS.MAIN },
+        { step: 'Remove and set somewhere to keep warm.', type: SECTIONS.MAIN, img: zoomed },
         { step: 'Serve with dipping sauce.', type: SECTIONS.MAIN },
     ]
 };
