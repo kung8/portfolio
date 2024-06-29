@@ -13,8 +13,41 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
         }, '')
     }
 
+    const getPageNumbers = (pages) => {
+        const min = Math.min(...pages);
+        const max = Math.max(...pages);
+        return min === max ? min : `${min} - ${max}`;
+    }
+
     return (
         <RecommendationPage>
+            <RecommendationPage.SectionTitle category={category} type="Reviews" />
+            <ReviewContainer>
+                {reviews.map(review => (
+                    <ReviewContainer.Review
+                        key={review.title + '-' + review.author}
+                        ExpandedElement={review?.quotes && review.quotes.length && (
+                            <>
+                                {review.quotes.map(({ text, pages, thoughts, context }, index) => (
+                                    <div key={index} className="expanded-review-item">
+                                        <p className="expanded-review-label">{'Quote: "' + text + '"' + (pages && pages.filter(page => page) && pages.length ? ` (pg ${getPageNumbers(pages)})` : "")}</p>
+                                        {thoughts && (
+                                            <p className="expanded-review-quote-thoughts">Thoughts: {thoughts}</p>
+                                        )}
+                                        {context && (
+                                            <p className="expanded-review-quote-context">Context: {context}</p>
+                                        )}
+                                    </div>
+                                ))}
+                            </>
+                        )}
+                    >
+                        <ReviewContainer.Header title={review.title} subtitle={`by ${getAuthor(review.author)}`} date={review.date} />
+                        <ReviewContainer.Content review={review.review} />
+                        <ReviewContainer.Rating rating={review.rating} />
+                    </ReviewContainer.Review>
+                ))}
+            </ReviewContainer>
             <RecommendationPage.SectionTitle category={category} type="Recommendations" />
             <RecommendationContainer>
                 {recommendations.filter((item, index) => recommendations.indexOf(item) === index).map(recommendation => (
@@ -24,17 +57,6 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
                     </RecommendationContainer.Recommendation>
                 ))}
             </RecommendationContainer>
-            <RecommendationPage.SectionTitle category={category} type="Reviews" />
-            <ReviewContainer>
-                {reviews.map(review => (
-                    <ReviewContainer.Review key={review.title + '-' + review.author}>
-                        <ReviewContainer.Header title={review.title} subtitle={`by ${getAuthor(review.author)}`} />
-                        {/* <ReviewContainer.Date date={review.date} /> */}
-                        <ReviewContainer.Content review={review.review} />
-                        <ReviewContainer.Rating rating={review.rating} />
-                    </ReviewContainer.Review>
-                ))}
-            </ReviewContainer>
         </RecommendationPage>
     )
 }

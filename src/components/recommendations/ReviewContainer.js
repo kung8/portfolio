@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
-const Review = ({ children }) => <div className="review">{children}</div>;
-const Header = ({ title, subtitle }) => (
+const ReviewContext = createContext(null);
+
+const Review = ({ children, ExpandedElement }) => {
+    const [expanded, setExpanded] = useState(false);
+
+    return (
+        <ReviewContext.Provider value={{ expanded, hasExpandedValue: !!ExpandedElement, setExpanded }}>
+            <div className="review">{children}</div>
+            {ExpandedElement && expanded && (
+                <ExpandedReview Element={ExpandedElement} />
+            )}
+        </ReviewContext.Provider>
+    )
+};
+const Header = ({ title, subtitle, date }) => (
     <div className="review-header">
-        <h4 className="review-title">{title}</h4>
-        <span className="review-subtitle">{subtitle}</span>
+        <div className="review-title-and-subtitle-container">
+            <h4 className="review-title">{title}</h4>
+            <span className="review-subtitle">{subtitle}</span>
+        </div>
+        {date && (
+            <span className="review-date">{date}</span>
+        )}
     </div>
 )
 const Content = ({ review }) => review ?
@@ -15,7 +33,17 @@ const Content = ({ review }) => review ?
             <p className="review-text">{review}</p>
         )
     : null;
-const Rating = ({ rating }) => <p className="review-rating">{rating === "n/a" ? "N/A" : `${rating} / 5`}</p>;
+const Rating = ({ rating }) => {
+    const { expanded, hasExpandedValue, setExpanded } = useContext(ReviewContext);
+    return (
+        <div className="rating-container">
+            <p className="review-rating">{rating === "n/a" ? "N/A" : `${rating} / 5`}</p>
+            {hasExpandedValue && (
+                <span className="expand-text" onClick={() => setExpanded(!expanded)}>{expanded ? 'Collapse' : 'Expand'}</span>
+            )}
+        </div>
+    )
+};
 const RatingGroup = ({ ratingGroup }) => (
     <div className="review-rating-group-container">
         {ratingGroup.map(({ type, rating }) => (
@@ -27,6 +55,12 @@ const RatingGroup = ({ ratingGroup }) => (
     </div>
 )
 const DateSection = ({ date }) => date ? <span className="review-date">{date}</span> : null;
+const ExpandedReview = ({ Element }) => (
+    <div className="expanded-review-container">
+        {Element}
+    </div>
+)
+
 
 export const ReviewContainer = ({ children }) => <div className="reviews-container">{children}</div>;
 

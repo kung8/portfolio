@@ -7,6 +7,7 @@
         position: sticky;
         top: 0;
         background: $white;
+        transition: margin-left 0.25s ease-in-out;
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
         &::-webkit-scrollbar {
@@ -16,7 +17,6 @@
         &.scrolled-categories {
             width: 100vw;
             margin-left: -80px;
-            transition: margin-left 0.25s ease-in-out;
             @include down($tablet) {
                 margin-left: -56px;
             }
@@ -55,10 +55,18 @@
                 .review-header,
                 .recommendation-header {
                     display: flex;
-                    column-gap: 6px;
                     align-items: flex-end;
                     margin-bottom: 6px;
                     flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .recommendation-title-container,
+                    .review-title-and-subtitle-container {
+                        display: flex;
+                        justify-content: space-between;
+                        column-gap: 6px;
+                    }
 
                     .review-title,
                     .recommendation-title {
@@ -77,8 +85,6 @@
                 }
 
                 .review-date {
-                    display: block;
-                    margin-bottom: 6px;
                     font-size: 12px;
                 }
 
@@ -88,13 +94,47 @@
                     margin-bottom: 6px;
                 }
 
-                .review-rating {
-                    font-size: 24px;
+                .rating-container {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    .review-rating {
+                        font-size: 24px;
+                    }
+
+                    .expand-text {
+                        font-size: 12px;
+                        color: $primary-blue;
+                        cursor: pointer;
+                    }
                 }
+
 
                 .recommendation-source {
                     font-size: 12px;
                     color: $light;
+                }
+            }
+
+            .expanded-review-container {
+                border: 2px double $light;
+                padding: 12px;
+                margin-top: -12px;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 40px;
+
+                .expanded-review-item {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 8px;
+
+                    p {
+                        font-size: 12px;
+                    }
                 }
             }
         }

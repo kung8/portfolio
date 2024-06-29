@@ -19,42 +19,36 @@ module.exports = {
         //     image: "",
         //     rating: 5,
         // },
-        // {
-        //     date: "06/24",
-        //     title: "Calamity",
-        //     author: ["Brandon Sanderson"],
-        //     review: [
-        //         ""
-        //     ],
-        //     quotes: [
-        //         {
-        //             text: "The robots, on the other hand, acted like a bunch of youthful dreams and got thoroughly crushed.",
-        //             pages: [41],
-        //             thoughts: "I found this hilarious. Enough said.",
-        //             context: "Megan and David were in a tight pinch and to get out they needed to create some havoc and confusion which lead to the robots demise."
-        //         },
-        //         {
-        //             text: "I felt cowardly, but part of being in a team was about recognizing when someone else could do a job better than you. And part of being a man was learning to let your immortal girlfriend take a turn being the heroic one.",
-        //             pages: [43],
-        //             thoughts: "Feminism. Teamwork. Trust. Love. It's all there.",
-        //             context: "In order for David to get out alive, Megan decided that she would be a distraction to help slow the robots down."
-        //         },
-        //         {
-        //             text: "'We're not moments, Megan, you and me. We're events. You say you might not be the same person you were a year ago? Well, who is? I'm sure not. We change, like swirling clouds and a rising sun. The cells in me have died, and new nones were born. My mind has changed, and I don't feel the thrill of killing Epics I once did. I'm not the same David. Yet I am.' I met her eyes and shrugged. 'I'm glad you're not the same Megan. I don't want you to be the same. My Megan is a sunrise, always changing, but beautiful the entire time.'",
-        //             pages: [137],
-        //             thoughts: "So cute. David is so sweet and romantic at times. I love it!",
-        //             context: "Megan is contemplating whether she could revert back to her old ways or if she will come back forgetting who she is or wouldn't be the same person. David reassures her that everyone changes and that he still loves her."
-        //         },
-        //         // {
-        //         //     text: "",
-        //         //     pages: [],
-        //         //     thoughts: "",
-        //         //     context: ""
-        //         // },
-        //     ],
-        //     image: "",
-        //     rating: 5,
-        // },
+        {
+            date: "06/24",
+            title: "Calamity",
+            author: ["Brandon Sanderson"],
+            review: [
+                "Good ending to the series. I liked most of the wrap up. Parts of it were left to interpretation about what will happen next. I found myself really interested for the first quarter, the second quarter was a little slow and the last half kept me on pins and needles wondering what will happen next."
+            ],
+            quotes: [
+                {
+                    text: "The robots, on the other hand, acted like a bunch of youthful dreams and got thoroughly crushed.",
+                    pages: [41],
+                    thoughts: "I found this hilarious. Enough said.",
+                    context: "Megan and David were in a tight pinch and to get out they needed to create some havoc and confusion which lead to the robots demise."
+                },
+                {
+                    text: "I felt cowardly, but part of being in a team was about recognizing when someone else could do a job better than you. And part of being a man was learning to let your immortal girlfriend take a turn being the heroic one.",
+                    pages: [43],
+                    thoughts: "Feminism. Teamwork. Trust. Love. It's all there.",
+                    context: "In order for David to get out alive, Megan decided that she would be a distraction to help slow the robots down."
+                },
+                {
+                    text: "'We're not moments, Megan, you and me. We're events. You say you might not be the same person you were a year ago? Well, who is? I'm sure not. We change, like swirling clouds and a rising sun. The cells in me have died, and new nones were born. My mind has changed, and I don't feel the thrill of killing Epics I once did. I'm not the same David. Yet I am.' I met her eyes and shrugged. 'I'm glad you're not the same Megan. I don't want you to be the same. My Megan is a sunrise, always changing, but beautiful the entire time.'",
+                    pages: [137],
+                    thoughts: "So cute. David is so sweet and romantic at times. I love it!",
+                    context: "Megan is contemplating whether she could revert back to her old ways or if she will come back forgetting who she is or wouldn't be the same person. David reassures her that everyone changes and that he still loves her."
+                },
+            ],
+            image: "",
+            rating: 5,
+        },
         {
             date: "06/24",
             title: "Firefight",
@@ -310,7 +304,7 @@ module.exports = {
             title: "The Book Thief",
             author: ["Markus Zusak"],
             review: [
-                "a brilliant, cute and sad story of a German girl who develops a passion and interest in books. The Nazi Germany campaign impacts her life in many ways and as well as her family and friends. She gets adopted by the Hubermanns whom the dad Hans is who I want to be more like. The love, shenanigans, adventures shared in this book is precious."
+                "A brilliant, cute and sad story of a German girl who develops a passion and interest in books. The Nazi Germany campaign impacts her life in many ways and as well as her family and friends. She gets adopted by the Hubermanns whom the dad Hans is who I want to be more like. The love, shenanigans, adventures shared in this book is precious."
             ],
             quotes: [
                 {
@@ -639,7 +633,7 @@ module.exports = {
                     pages: [73],
                 }
             ],
-            rating: 2.5,
+            rating: 5,
         },
         {
             date: "11/20",
