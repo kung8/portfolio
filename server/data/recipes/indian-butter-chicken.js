@@ -12,6 +12,9 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CURRY, TYPES.RICE],
+    websites: [
+        "https://gimmedelicious.com/easy-20-minute-butter-chicken/"
+    ],
     yields: '4 servings',
     prepTime: '12 - 15 m',
     cookTime: '25 - 30 m',
