@@ -24,7 +24,7 @@ const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./con
 module.exports = {
     cardName: 'Pad See Ew',
     name: 'Thai Pad See Ew',
-    // recipeCredit: '',
+    recipeCredit: 'Derek K Chen',
     img: platedZoomed,
     available: true,
     recommended: true,
