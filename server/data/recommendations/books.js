@@ -708,6 +708,11 @@ module.exports = {
     ],
     recommendations: [
         {
+            title: "The Glass Castle",
+            author: ["Jeannette Walls"],
+            source: ["Kate from Mutual"],
+        },
+        {
             title: "In the Wild Light",
             author: ["Jeff Zentner"],
             source: ["Madelyn"],
@@ -715,7 +720,7 @@ module.exports = {
         {
             title: "Throne of Glass",
             author: ["Sarah J. Maas"],
-            source: ["Madeline"],
+            source: ["Madeline from Hinge"],
         },
         {
             title: "Maze Runner",
