@@ -64,6 +64,7 @@ const malaysianSatay = require("./recipes/malaysian-satay");
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const padThai = require("./recipes/pad-thai");
+const paoDeQueijo = require("./recipes/pao-de-queijo");
 const parfait = require("./recipes/parfait");
 const peachCobbler = require("./recipes/peach-cobbler");
 const pepperSteak = require("./recipes/pepper-steak");
@@ -152,6 +153,7 @@ const recipes = [
     bbqPulledPorkAndFixins,
     bbqChickenWings,
     malaysianSatay,
+    paoDeQueijo,
     potstickers,
     chickenKebab,
     potRoast,

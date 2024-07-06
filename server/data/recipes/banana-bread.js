@@ -2,10 +2,12 @@ const { CATEGORIES, SECTIONS } = require('./constants');
 const creamedSugar = '../assets/Products/banana-bread-creamed-sugar.jpeg';
 const mixture = '../assets/Products/banana-bread-flour-mixture.jpeg';
 const mashed = '../assets/Products/banana-bread-mashed-banana.jpeg';
-const batter = '../assets/Products/banana-bread-batter.jpeg';
+// const batter = '../assets/Products/banana-bread-batter.jpeg';
 const zoomed = '../assets/Products/banana-bread-with-chocolate-chips-side-view.jpeg';
-const raw = '../assets/Products/banana-bread-with-chocolate-chips-raw.jpeg';
+// const raw = '../assets/Products/banana-bread-with-chocolate-chips-raw.jpeg';
 const baked = '../assets/Products/banana-bread-with-chocolate-chips-baked.jpeg';
+const walnuts = '../assets/Products/banana-bread-with-walnuts-and-nutmeg.jpeg';
+const walnutsBatter = '../assets/Products/banana-bread-batter-with-walnuts-and-nutmeg.jpeg';
 
 module.exports = {
     cardName: 'Banana Bread',
@@ -29,7 +31,9 @@ module.exports = {
         { name: 'baking soda', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'salt', amount: '1/2 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'vanilla extract', amount: '1/2 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'chocolate chips', amount: '1/2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'chocolate chips', amount: '1/2 c', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
+        { name: 'walnuts', amount: '1/2 c', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
+        { name: 'nutmeg', amount: '2 tsp', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },
@@ -48,8 +52,8 @@ module.exports = {
         { step: 'Add the butter and sugar and eggs to the bananas.', type: SECTIONS.MAIN },
         { step: 'In the large bowl, combine flour, baking soda, and salt. Then add to the batter.', type: SECTIONS.MAIN, img: mixture },
         { step: 'Add vanilla to the batter.', type: SECTIONS.MAIN },
-        { step: 'Pour the batter into the bread pan.', type: SECTIONS.MAIN, img: batter },
-        { step: 'Add chocolate chips to the pan.', type: SECTIONS.MAIN, img: raw },
+        { step: 'Add chocolate chips, nutmeg and walnuts to the batter. Feel free to experiment with your favorite ingredients.', type: SECTIONS.MAIN, img: walnutsBatter },
+        { step: 'Pour the batter into the bread pan.', type: SECTIONS.MAIN, img: walnuts },
         { step: 'Bake for 55 to 60 minutes, or until a toothpick inserted into the center comes out clean.', type: SECTIONS.MAIN },
         { step: 'Let bread rest for 10 minutes before serving.', type: SECTIONS.MAIN, img: baked },
     ]
