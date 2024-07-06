@@ -39,6 +39,9 @@
     }
 
     .recommendation-category-container {
+        max-width: unquote("min(650px, 100%)");
+        margin: 0 auto;
+
         .recommendation-category {
             margin-bottom: 16px;
             font-size: 20px;
@@ -59,13 +62,21 @@
                     margin-bottom: 6px;
                     flex-wrap: wrap;
                     justify-content: space-between;
+                    column-gap: 8px;
                     width: 100%;
+                    row-gap: 6px;
+
+                    @include down($small-mobile) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
 
                     .recommendation-title-container,
                     .review-title-and-subtitle-container {
                         display: flex;
                         justify-content: space-between;
                         column-gap: 6px;
+                        flex-wrap: wrap;
                     }
 
                     .review-title,

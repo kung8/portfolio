@@ -75,13 +75,15 @@
             padding-left: 24px;
             margin-bottom: 16px;
             @include down($desktop) {
-                padding: 16px 0;
+                padding: 16px 0 16px 32px;
                 margin-bottom: 32px;
                 font-size: 14px;
                 position: sticky;
                 top: -1px;
                 background: $aqua;
                 margin-bottom: 0;
+                width: 100vw;
+                margin-left: -32px;
             }
         }
 

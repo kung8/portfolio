@@ -19,7 +19,7 @@ const products = [
         organization: 'Songs',
         images: [eden],
         bullets: [
-            'Meet Eden, my guitar! I dabble with music production and songwriting. T-Swift among many other country/pop artists have been my inspiration. I am hoping to work on more music over the next half of the year.',
+            'Meet Eden, my guitar! I dabble with music production and songwriting. T-Swift among many other country/pop artists have been my inspiration. I love serenading my neighbors in the evenings on my balcony.',
         ],
         url: 'https://kevinung8.com/#/music',
         localUrl: 'http://localhost:3000/#/music',

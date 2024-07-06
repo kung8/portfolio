@@ -49,7 +49,8 @@ export const Contact = ({ id }) => {
                     </div>
                     <div className="form-field">
                         <span>Email</span>
-                        <input className={`${validator({ type: 'email', text: email }) ? 'validated' : 'invalid'}`} required type="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <input required type="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        {!validator({ type: 'email', text: email }) && <span className="error-message">Please enter a valid email address.</span>}
                     </div>
                     <div className="form-field">
                         <span>Subject</span>

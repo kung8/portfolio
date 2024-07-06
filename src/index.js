@@ -13,7 +13,7 @@ ReactDOM.render(
   <HashRouter>
     <React.StrictMode>
       <QueryClientProvider client={queryClient}>
-        {environment !== 'production' && <ReactQueryDevtools initialIsOpen={false} />}
+        {/* {environment !== 'production' && <ReactQueryDevtools initialIsOpen={false} />} */}
         <App />
       </QueryClientProvider>
     </React.StrictMode>
