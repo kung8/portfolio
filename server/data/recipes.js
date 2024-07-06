@@ -63,6 +63,7 @@ const malaysianLemonChicken = require("./recipes/malaysian-lemon-chicken");
 const malaysianSatay = require("./recipes/malaysian-satay");
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
 const noBakeCookie = require("./recipes/no-bake-cookie");
+const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const padThai = require("./recipes/pad-thai");
 const paoDeQueijo = require("./recipes/pao-de-queijo");
 const parfait = require("./recipes/parfait");
@@ -193,6 +194,7 @@ const recipes = [
     pretzel,
     snickerdoodle,
     chocolateChipCookies,
+    oatmealRaisinCookies,
     blondie,
     tedLassoBiscuits,
     brownies,
