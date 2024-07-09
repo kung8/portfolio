@@ -88,6 +88,7 @@ const PROTEIN = {
     BEAN: 'Bean',
     BEEF: 'Beef',
     CHICKEN: 'Chicken',
+    EDAMAME: 'Edamame',
     EGG: 'Egg',
     FISH: 'Fish',
     LAMB: 'Lamb',

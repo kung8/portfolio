@@ -28,6 +28,7 @@ const chili = require("./recipes/chili");
 const chineseBao = require("./recipes/chinese-bao");
 const chineseBokChoyChicken = require("./recipes/chinese-bok-choy-chicken");
 const chineseBroccoliBeef = require("./recipes/chinese-broccoli-beef");
+const chineseCashewChicken = require("./recipes/chinese-cashew-chicken");
 const chineseGreenBeanBeef = require("./recipes/chinese-green-bean-beef");
 const chineseGingerChicken = require("./recipes/chinese-ginger-chicken");
 const chineseLoMeinNoodles = require("./recipes/chinese-lo-mein-noodles");
@@ -134,6 +135,7 @@ const recipes = [
     vietnameseBanhTieu,
     italianLasagna,
     indianChickenTikkaMasala, // TODO: add
+    chineseCashewChicken,
     chineseGreenBeanBeef,
     chineseBroccoliBeef, // TODO: add
     cabbageStirFry,
