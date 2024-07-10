@@ -20,7 +20,17 @@ module.exports = {
         //     rating: 5,
         // },
         {
-            date: "06/24",
+            date: "7/24",
+            title: "The Good Enough Job: Reclaiming Life from Work",
+            author: ["Simone Stolzoff"],
+            review: [
+                "This book was a good read. The stories shared were much more relatable than other books I've read. It taught great principles about finding peace and balance in your life that doesn't require you to be a workaholic. Though a majority of the examples ended with people leaving their careers to pursue their personal life. I don't think there were enough examples of people who found peace while still working. I think it's possible to find that balance without giving up a good job, but I guess that's the whole point of the book."
+            ],
+            image: "",
+            rating: 4.5,
+        },
+        {
+            date: "6/24",
             title: "Calamity",
             author: ["Brandon Sanderson"],
             review: [
@@ -50,7 +60,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "06/24",
+            date: "6/24",
             title: "Firefight",
             author: ["Brandon Sanderson"],
             review: [
@@ -74,7 +84,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "05/24",
+            date: "5/24",
             title: "Steelheart",
             author: ["Brandon Sanderson"],
             review: [
@@ -127,7 +137,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "05/24",
+            date: "5/24",
             title: "Project Hail Mary",
             author: ["Andy Weir"],
             review: [
@@ -136,7 +146,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "02/24",
+            date: "2/24",
             title: "The Hunger Games: Ballad of Songbirds and Snakes",
             author: ["Suzanne Collins"],
             review: [
@@ -145,7 +155,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "02/24",
+            date: "2/24",
             title: "Extreme Ownership",
             author: ["Jocko Willink", "Leif Babin"],
             review: [
@@ -166,7 +176,7 @@ module.exports = {
             rating: 2.5,
         },
         {
-            date: "01/24",
+            date: "1/24",
             incomplete: true,
             title: "The Handmaid's Tale",
             author: ["Margaret Atwood"],
@@ -183,7 +193,7 @@ module.exports = {
             rating: 'n/a',
         },
         {
-            date: "01/24",
+            date: "1/24",
             title: "The Christmas Murder Game",
             author: ["Alexandra Benedict"],
             review: [
@@ -192,7 +202,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "01/24",
+            date: "1/24",
             title: "The Final Gambit",
             author: ["Jennifer Lynn Barnes"],
             review: [
@@ -260,7 +270,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "09/23",
+            date: "9/23",
             title: "To Kill a Mockingbird",
             author: ["Harper Lee"],
             review: [
@@ -291,7 +301,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "08/23",
+            date: "8/23",
             title: "Missing Dead Girls",
             author: ["Sara Walters"],
             review: [
@@ -300,7 +310,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "08/23",
+            date: "8/23",
             title: "The Book Thief",
             author: ["Markus Zusak"],
             review: [
@@ -331,7 +341,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "06/23",
+            date: "6/23",
             title: "Otherwise Known as Sheila the Great",
             author: ["Judy Blume"],
             review: [
@@ -340,7 +350,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "06/23",
+            date: "6/23",
             title: "Double Fudge",
             author: ["Judy Blume"],
             review: [
@@ -349,7 +359,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "06/23",
+            date: "6/23",
             title: "Tale of a Fourth Grade Nothing",
             author: ["Judy Blume"],
             review: [
@@ -358,7 +368,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "06/23",
+            date: "6/23",
             title: "Fudge-a-mania",
             author: ["Judy Blume"],
             review: [
@@ -367,7 +377,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "06/23",
+            date: "6/23",
             title: "Super Fudge",
             author: ["Judy Blume"],
             review: [
@@ -376,7 +386,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "05/23",
+            date: "5/23",
             title: "Stuart Little",
             author: ["E.B. White"],
             review: [
@@ -385,7 +395,7 @@ module.exports = {
             rating: 1,
         },
         {
-            date: "05/23",
+            date: "5/23",
             title: "The Graveyard Book",
             author: ["Neil Gaiman"],
             review: [
@@ -394,7 +404,7 @@ module.exports = {
             rating: 2,
         },
         {
-            date: "05/23",
+            date: "5/23",
             title: "Charlotte's Web",
             author: ["E.B. White"],
             review: [
@@ -403,7 +413,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "05/23",
+            date: "5/23",
             title: "The Bullet That Missed (A Thursday Murder Club Mystery)",
             author: ["Richard Osman"],
             review: [
@@ -437,7 +447,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "04/23",
+            date: "4/23",
             title: "Something in the Water",
             author: ["Catherine Steadman"],
             review: [
@@ -453,7 +463,7 @@ module.exports = {
             rating: 3,
         },
         {
-            date: "03/23",
+            date: "3/23",
             title: "Crazy Rich Girlfriend",
             author: ["Kevin Kwan"],
             review: [
@@ -462,7 +472,7 @@ module.exports = {
             rating: 3,
         },
         {
-            date: "03/23",
+            date: "3/23",
             title: "The Maiden",
             author: ["Alex Michaelides"],
             review: [
@@ -471,7 +481,7 @@ module.exports = {
             rating: 3,
         },
         {
-            date: "02/23",
+            date: "2/23",
             incomplete: true,
             title: "Unbroken",
             author: ["Laura Hillenbrand"],
@@ -489,7 +499,7 @@ module.exports = {
             rating: 3,
         },
         {
-            date: "02/23",
+            date: "2/23",
             title: "People We Meet on Vacation",
             author: ["Emily Henry"],
             review: [
@@ -533,7 +543,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "02/23",
+            date: "2/23",
             title: "The Silent Patient",
             author: ["Alex Michaelides"],
             review: [
@@ -553,7 +563,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "01/23",
+            date: "1/23",
             title: "The Martian",
             author: ["Andy Weir"],
             review: [
@@ -562,7 +572,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "01/23",
+            date: "1/23",
             title: "On the Path Home",
             author: ["Henry B. Eyring"],
             review: [
@@ -580,7 +590,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "08/22",
+            date: "8/22",
             title: "No Doubt About It",
             author: ["Sheri Dew"],
             review: [
@@ -589,7 +599,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "06/22",
+            date: "6/22",
             title: "The Guernsey Literary and Potato Peel Pie Society",
             author: ["Mary Ann Shaffer", "Annie Barrows"],
             review: [
@@ -598,7 +608,7 @@ module.exports = {
             rating: 4,
         },
         {
-            date: "03/22",
+            date: "3/22",
             title: "The Heroes of Olympus: The Lost Hero",
             author: ["Rick Riordan"],
             review: [
@@ -607,7 +617,7 @@ module.exports = {
             rating: 4,
         },
         {
-            date: "01/22",
+            date: "1/22",
             title: "The Three Musketeers",
             author: ["Alexandre Dumas"],
             review: [
@@ -651,7 +661,7 @@ module.exports = {
             rating: 3,
         },
         {
-            date: "09/20",
+            date: "9/20",
             title: "Hamilton",
             author: ["Ron Chernow"],
             review: [
@@ -680,7 +690,7 @@ module.exports = {
             rating: 2.5,
         },
         {
-            date: "03/20",
+            date: "3/20",
             title: "The Giver",
             author: ["Lois Lowry"],
             review: [
