@@ -1,13 +1,16 @@
 const batter = '../assets/Products/pao-de-queijo-batter.jpeg';
 const boiling = '../assets/Products/pao-de-queijo-boiling-milk-mixture.jpeg';
 const cooked = '../assets/Products/pao-de-queijo-cooked-cheeseballs.jpeg';
+const zoomed = '../assets/Products/pao-de-queijo-cooked-zoomed.jpeg';
 const pan = '../assets/Products/pao-de-queijo-dough-balls-in-pan.jpeg';
 const balls = '../assets/Products/pao-de-queijo-dough-balls.jpeg';
+const flour = '../assets/Products/pao-de-queijo-flour.jpeg';
 const milk = '../assets/Products/pao-de-queijo-milk-mixture.jpeg';
 const rawZoomed = '../assets/Products/pao-de-queijo-mixer-zoomed.jpeg';
 const raw = '../assets/Products/pao-de-queijo-mixer.jpeg';
-const zoomed = '../assets/Products/pao-de-queijo-zoomed-cheeseballs.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+// const first = '../assets/Products/pao-de-queijo-zoomed-cheeseballs.jpeg';
+const plated = '../assets/Products/pao-de-queijo-plated.jpeg';
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 
 module.exports = {
     cardName: 'Pao de Queijo',
@@ -27,8 +30,7 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { name: 'tapioca flour', amount: '3 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'cornstarch', amount: '1 c', additionalDetails: 'plus some for thickening', optional: false, section: SECTIONS.MAIN },
+        { name: 'cornstarch', amount: '4 c', additionalDetails: 'plus some for thickening', optional: false, section: SECTIONS.MAIN },
         { name: 'milk', amount: '1 1/4 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'water', amount: '1/2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { name: 'oil', amount: '', additionalDetails: '6 Tbsp', optional: false, section: SECTIONS.MAIN },
@@ -47,7 +49,7 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 400ºF.', type: SECTIONS.MAIN },
-        { step: 'In a stand mixer bowl, combine tapioca flour and cornstarch.', type: SECTIONS.DOUGH },
+        { step: 'In a stand mixer bowl, combine tapioca flour and cornstarch.', type: SECTIONS.DOUGH, img: flour },
         { step: 'Over medium-high heat, combine milk, water, oil and salt in a saucepan.', type: SECTIONS.DOUGH, img: milk },
         { step: 'Bring to a boil.', type: SECTIONS.DOUGH, img: boiling },
         { step: 'Pour the boiled milk into the stand mixer bowl.', type: SECTIONS.DOUGH, img: raw },
@@ -58,5 +60,6 @@ module.exports = {
         { step: 'Shape the dough into 1.5 inch balls.', type: SECTIONS.DOUGH, img: balls },
         { step: 'Place on a baking sheet about 2 inches apart. They do not expand very much.', type: SECTIONS.DOUGH, img: pan },
         { step: 'Bake until the cheeseballs are a golden brown (about 15 to 25 minutes).', type: SECTIONS.DOUGH, img: cooked },
+        { step: 'Serve these warm.', type: SECTIONS.DOUGH, img: plated },
     ]
 };
