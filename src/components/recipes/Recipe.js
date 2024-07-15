@@ -3,6 +3,68 @@ import { useQueryClient } from 'react-query';
 import { useGetData } from '../../hooks';
 import { Loader } from '../Loader';
 import { NonDashboardPage } from '../Page';
+import list from './list.png';
+import { GroceryListModal } from './GroceryListModal';
+import { useGroceryList } from './use-grocery-list';
+
+const IngredientItem = ({ item, selectedIngredients, setSelectedIngredients }) => {
+    const [checked, setChecked] = useState(false);
+
+    useEffect(() => {
+        setChecked(!!selectedIngredients.find(i => i === item));
+    }, [selectedIngredients, item]);
+
+    const handleCheckboxChange = (value) => {
+        const included = selectedIngredients.includes(value);
+        if (included) {
+            // removes the ingredient if it's already included
+            const newSelectedIngredients = selectedIngredients.filter(item => item !== value);
+            setSelectedIngredients(newSelectedIngredients);
+        } else {
+            // adds the ingredient if it's not included
+            setSelectedIngredients([...selectedIngredients, value]);
+        }
+    }
+
+    return (
+        <div className="checkbox-ingredient-container">
+            <input
+                type="checkbox"
+                id={item}
+                checked={checked}
+                className="checkbox-ingredient"
+                onChange={(e) => handleCheckboxChange(e.target.id)}
+            />
+            <label htmlFor={item}>
+                {item}
+            </label>
+        </div>
+    )
+};
+
+const Notes = ({ notes }) => (
+    <>
+        <h4 className="recipe-detail-label notes-label">Notes:</h4>
+        <ul className="recipe-notes">
+            {notes.map((note, i) => (
+                <li key={i}>{note}</li>
+            ))}
+        </ul>
+    </>
+)
+
+const Figure = ({ index, figure, setSelectedFigureLabel }) => (
+    <div key={index} className="figure-container">
+        <label id={`figure-${index + 1}`} onClick={() => setSelectedFigureLabel(index + 1)}>Figure {index + 1}</label>
+        {figure.video ? (
+            <video className="additional-recipe-video" autoPlay loop muted>
+                <source src={figure.video} type="video/mp4" />
+            </video>
+        ) : (
+            <img className="additional-recipe-image" src={figure.img} alt={figure.step} />
+        )}
+    </div>
+);
 
 export const Recipe = ({ match }) => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -90,18 +152,6 @@ export const Recipe = ({ match }) => {
     const figures = formattedDirections?.flat(2)?.filter(step => step.video || step.img) ?? [];
     const nonSeparatedFigures = item?.directions?.filter(step => step.video || step.img) ?? [];
 
-    const handleCheckboxChange = (value) => {
-        const included = selectedIngredients.includes(value);
-        if (included) {
-            // removes the ingredient if it's already included
-            const newSelectedIngredients = selectedIngredients.filter(item => item !== value);
-            setSelectedIngredients(newSelectedIngredients);
-        } else {
-            // adds the ingredient if it's not included
-            setSelectedIngredients([...selectedIngredients, value]);
-        }
-    }
-
     useEffect(() => {
         if (selectedFigure) {
             const el = document.getElementById(`figure-${selectedFigure}`);
@@ -140,7 +190,9 @@ export const Recipe = ({ match }) => {
                 <span>{link.additionalText}</span>
             )}
         </>
-    ) : null
+    ) : null;
+
+    const { show: showGroceryList, setShow: setShowGroceryList, handleClose, handleOpen, groceryList, setGroceryList } = useGroceryList();
 
     return (
         <NonDashboardPage mainClassName={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
@@ -148,6 +200,12 @@ export const Recipe = ({ match }) => {
                 backRoute='/recipes'
                 backText='Back to Recipes'
                 title={item?.name ?? ''}
+                customTitle={(
+                    <div className="custom-heading-wrapper">
+                        <h1 className="heading">{item?.name ?? ''}</h1>
+                        <img src={list} alt="list" className="list-img" onClick={showGroceryList ? handleClose : handleOpen} />
+                    </div>
+                )}
             >
                 {item?.recipeCredit && (
                     <h4 className="recipe-credit">Credit to {item.recipeCredit}</h4>
@@ -188,7 +246,33 @@ export const Recipe = ({ match }) => {
                         </ul>
                     )}
 
-                    <h4 className="recipe-detail-label">Ingredients:</h4>
+                    <div className="recipe-ingredients-label-container">
+                        <h4 className="recipe-detail-label">Ingredients:</h4>
+                        <div className="grocery-list-button-container">
+                            <span
+                                onClick={() => {
+                                    if (selectedIngredients.length === item.ingredients.length) {
+                                        setSelectedIngredients([]);
+                                    } else {
+                                        setSelectedIngredients(item.ingredients.map(ingredient => formatIngredientItem(ingredient)));
+                                    }
+                                }}
+                            >
+                                {item.ingredients.length > 0 && selectedIngredients.length === item.ingredients.length ? 'Deselect All' : 'Select All'}
+                            </span>
+                            <span
+                                className={`add-to-list-button ${selectedIngredients.length > 0 ? 'active' : ''}`}
+                                onClick={() => {
+                                    setGroceryList([...groceryList, ...selectedIngredients.map(item => ({ name: item, checked: false }))]);
+                                    handleOpen();
+                                    setSelectedIngredients([]);
+                                }}
+                            >
+                                Add to List
+                            </span>
+                        </div>
+                    </div>
+
                     {item.separated ? (
                         <div className="separated-recipe-container">
                             {formattedIngredients.map(([section, ingredients]) => (
@@ -196,20 +280,7 @@ export const Recipe = ({ match }) => {
                                     <h5 className="separated-recipe-detail-label">{section}</h5>
                                     {ingredients.map((ingredient) => {
                                         const formattedIngredient = formatIngredientItem(ingredient);
-                                        return (
-                                            <div key={formattedIngredient} className="checkbox-ingredient-container">
-                                                <input
-                                                    type="checkbox"
-                                                    id={formattedIngredient}
-                                                    value={formattedIngredient}
-                                                    className="checkbox-ingredient"
-                                                    onChange={(e) => handleCheckboxChange(e.target.value)}
-                                                />
-                                                <label htmlFor={formattedIngredient}>
-                                                    {formattedIngredient}
-                                                </label>
-                                            </div>
-                                        )
+                                        return <IngredientItem key={formattedIngredient} item={formattedIngredient} selectedIngredients={selectedIngredients} setSelectedIngredients={setSelectedIngredients} />
                                     })}
                                 </div>
                             ))}
@@ -218,20 +289,7 @@ export const Recipe = ({ match }) => {
                         <div className="recipe-container">
                             {item?.ingredients?.map((ingredient) => {
                                 const formattedIngredient = formatIngredientItem(ingredient);
-                                return (
-                                    <div key={formattedIngredient} className="checkbox-ingredient-container">
-                                        <input
-                                            type="checkbox"
-                                            id={formattedIngredient}
-                                            value={formattedIngredient}
-                                            className="checkbox-ingredient"
-                                            onChange={(e) => handleCheckboxChange(e.target.value)}
-                                        />
-                                        <label htmlFor={formattedIngredient}>
-                                            {formattedIngredient}
-                                        </label>
-                                    </div>
-                                )
+                                return <IngredientItem key={formattedIngredient} item={formattedIngredient} selectedIngredients={selectedIngredients} setSelectedIngredients={setSelectedIngredients} />
                             })}
                         </div>
                     )}
@@ -276,45 +334,15 @@ export const Recipe = ({ match }) => {
                         </ol>
                     )}
 
-                    {item.notes && (
-                        <>
-                            <h4 className="recipe-detail-label notes-label">Notes:</h4>
-                            <ul className="recipe-notes">
-                                {item.notes.map((note, i) => (
-                                    <li key={i}>{note}</li>
-                                ))}
-                            </ul>
-                        </>
-                    )}
+                    {item.notes && <Notes notes={item.notes} />}
+
                     {item.separated && figures ? (
                         <div className="figures-container">
-                            {figures.map((figure, i) => (
-                                <div key={i} className="figure-container">
-                                    <label id={`figure-${i + 1}`} onClick={() => setSelectedFigureLabel(i + 1)}>Figure {i + 1}</label>
-                                    {figure.video ? (
-                                        <video className="additional-recipe-video" autoPlay loop muted>
-                                            <source src={figure.video} type="video/mp4" />
-                                        </video>
-                                    ) : (
-                                        <img className="additional-recipe-image" src={figure.img} alt={figure.step} />
-                                    )}
-                                </div>
-                            ))}
+                            {figures.map((figure, i) => <Figure key={i} index={i} figure={figure} setSelectedFigureLabel={setSelectedFigureLabel} />)}
                         </div>
                     ) : nonSeparatedFigures ? (
                         <div className="figures-container">
-                            {nonSeparatedFigures.map((figure, i) => (
-                                <div key={i} className="figure-container">
-                                    <label id={`figure-${i + 1}`} onClick={() => setSelectedFigureLabel(i + 1)}>Figure {i + 1}</label>
-                                    {figure.video ? (
-                                        <video className="additional-recipe-video" autoPlay loop muted>
-                                            <source src={figure.video} type="video/mp4" />
-                                        </video>
-                                    ) : (
-                                        <img className="additional-recipe-image" src={figure.img} alt={figure.step} />
-                                    )}
-                                </div>
-                            ))}
+                            {nonSeparatedFigures.map((figure, i) => <Figure key={i} index={i} figure={figure} setSelectedFigureLabel={setSelectedFigureLabel} />)}
                         </div>
                     ) : null}
                 </div>
@@ -322,6 +350,10 @@ export const Recipe = ({ match }) => {
                 <div className="loader-container">
                     <Loader />
                 </div>
+            )}
+
+            {showGroceryList && (
+                <GroceryListModal show={showGroceryList} setShow={setShowGroceryList} handleClose={handleClose} groceryList={groceryList} setGroceryList={setGroceryList} />
             )}
         </NonDashboardPage>
     )

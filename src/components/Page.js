@@ -1,13 +1,15 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-const Header = ({ backRoute = '/', backText = 'Back Home', children, title, history }) => (
+const Header = ({ backRoute = '/', backText = 'Back Home', children, title, customTitle, history }) => (
     <div className="heading-container">
         <div>
             <span className='back-btn' onClick={() => history.push(backRoute)}>
                 {backText}
             </span>
-            <h1 className="heading">{title}</h1>
+            {customTitle ? customTitle : (
+                <h1 className="heading">{title}</h1>
+            )}
         </div>
         {children}
     </div>

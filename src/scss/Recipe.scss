@@ -5,12 +5,23 @@
         margin-bottom: 40px;
         
         .heading {
+            margin-bottom: 0;
+        }
+
+        .custom-heading-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 8px;
         }
 
         .recipe-credit {
             font-weight: 400;
             font-size: 12px;
+        }
+
+        .list-img {
+            height: 24px;
         }
     }
 
@@ -42,6 +53,37 @@
 
         .yields {
             margin-bottom: 24px;
+        }
+
+        .recipe-ingredients-label-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 16px;
+            row-gap: 8px;
+            margin-bottom: 4px;
+
+            .recipe-detail-label {
+                margin-bottom: 0;
+            }
+
+            .grocery-list-button-container {
+                display: flex;
+                align-items: center;
+                column-gap: 24px;
+
+                span {
+                    color: $primary-blue;
+                }
+
+                .add-to-list-button {
+                    color: $default;
+                    &.active {
+                        color: $primary-blue;
+                    }
+                }
+            }
         }
 
         .recipe-detail-label {

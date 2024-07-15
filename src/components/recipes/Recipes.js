@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
-import { useGetData, useGetRecipeCategories } from '../../hooks';
+import { useGetData } from '../../hooks';
 import { convertToKebabCase } from '../../utils';
 import { NonDashboardPage } from '../Page';
+import { EmptyRecipeContainer } from './EmptyRecipeContainer';
+import { GroceryListModal } from './GroceryListModal';
+import { LoaderContainer } from './LoaderContainer';
 import { RecipeItem } from './RecipeItem';
-import { Loader } from '../Loader';
-import { RecipeFilterContainer } from './RecipeFilterContainer';
-import top from './top.png';
+import { FilterContainer, SearchAndFilterContainer } from './SearchAndFilterContainer';
+import { TopArrow } from './TopArrow';
+import { useGroceryList } from './use-grocery-list';
+import { useFilters } from './use-filters';
 
-const initialShownFilters = {
+export const initialShownFilters = {
     category: false,
     diet: false,
     genre: false,
@@ -37,13 +41,6 @@ export const Recipes = ({ history }) => {
     const [showArrow, setShowArrow] = useState(false);
 
     const { data: recipes = [] } = useGetData('recipes');
-    const { data: recipeCategories = { CATEGORIES: [], DIET: [], GENRES: [], METHODS: [], PROTEIN: [], TYPES: [] } } = useGetRecipeCategories();
-    const categories = recipeCategories.CATEGORIES;
-    // const diet = recipeCategories.DIET;
-    const genres = recipeCategories.GENRES;
-    const methods = recipeCategories.METHODS;
-    const protein = recipeCategories.PROTEIN;
-    const types = recipeCategories.TYPES;
 
     const filteredRecipes = recipes.filter(item => {
         if (search === '') return item;
@@ -91,15 +88,6 @@ export const Recipes = ({ history }) => {
         // eslint-disable-next-line
     }, []);
 
-    const filterMapping = [
-        { heading: 'Categories', type: 'category', filterOptions: categories },
-        { heading: 'Genres', type: 'genre', filterOptions: genres },
-        // { heading: 'Diet', type: 'diet', filterOptions: diet },
-        { heading: 'Cooking Methods', type: 'method', filterOptions: methods },
-        { heading: 'Proteins', type: 'protein', filterOptions: protein },
-        { heading: 'Type', type: 'type', filterOptions: types },
-    ];
-
     const resetShownFilters = () => {
         if (!show) return;
         setShownFilters(initialShownFilters);
@@ -111,63 +99,36 @@ export const Recipes = ({ history }) => {
         }, 300);
     }
 
-    const filterRecipeBySelectedFilters = (compared, filter) => {
-        return compared.some(value => filter.find(v => v === value))
-    }
+    const { show: showGroceryList, handleClose, handleOpen, groceryList, setGroceryList } = useGroceryList();
+    const { filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
 
-    const availableFilteredRecipes = filteredRecipes.filter(item => !!item.available);
-    const filteredRecipeBySelectedFilters = availableFilteredRecipes.filter(item => {
-        const { category, diet, genre, method, protein, type } = selectedFilters;
-        return (
-            (!category.length || filterRecipeBySelectedFilters(item.category || [], category)) &&
-            (!diet.length || filterRecipeBySelectedFilters(item.diet || [], diet)) &&
-            (!genre.length || filterRecipeBySelectedFilters(item.genre || [], genre)) &&
-            (!method.length || filterRecipeBySelectedFilters(item.method || [], method)) &&
-            (!protein.length || filterRecipeBySelectedFilters(item.protein || [], protein)) &&
-            (!type.length || filterRecipeBySelectedFilters(item.type || [], type))
-        );
-    });
+    const filterProps = {
+        filteredRecipes,
+        search,
+        selectedFilters,
+        setSearch,
+        setSelectedFilters,
+        setShow,
+        setShownFilters,
+        show,
+        shownFilters,
+    };
+
+    const groceryListProps = {
+        groceryList,
+        handleClose,
+        handleOpen,
+        showGroceryList,
+        setGroceryList,
+    };
 
     return (
         <NonDashboardPage mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`} onClick={resetShownFilters}>
             <NonDashboardPage.Header title='Recipes'>
-                <div className="search-and-filter-container">
-                    <div className={`search-bar ${search ? 'contains-search' : ''}`}>
-                        <input type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
-                    </div>
-                    <div className="filter-icon" onClick={(e) => {
-                        e.stopPropagation();
-                        if (show) {
-                            const filtersContainer = document.querySelector('.filters-container');
-                            if (filtersContainer) filtersContainer.classList.add('is-closing');
-                            setTimeout(() => {
-                                if (filtersContainer) filtersContainer.classList.remove('is-closing');
-                                setShow(!show);
-                            }, 300);
-                        } else {
-                            setShow(!show);
-                        }
-                    }}>
-                        <div className="top-bar"></div>
-                        <div className="middle-bar"></div>
-                        <div className="bottom-bar"></div>
-                    </div>
-                </div>
+                <SearchAndFilterContainer {...{ ...filterProps, ...groceryListProps }} />
             </NonDashboardPage.Header>
 
-            {show && (
-                <div className="filters-container" onClick={(e) => {
-                    e.stopPropagation();
-                    setShownFilters(initialShownFilters);
-                }}>
-                    {filterMapping.map((option =>
-                        <RecipeFilterContainer
-                            key={option.heading}
-                            {...{ ...option, selectedFilters, setSelectedFilters, shownFilters, setShownFilters }} />
-                    ))}
-                    <span className="total-ratio">{filteredRecipeBySelectedFilters.length} / {availableFilteredRecipes.length}</span>
-                </div>
-            )}
+            {show && <FilterContainer {...{ ...filterProps }} />}
 
             {isLoaded ? (
                 filteredRecipes.length ? (
@@ -178,32 +139,16 @@ export const Recipes = ({ history }) => {
                             )}
                         </div>
                         <p className="chef-recommended-container">
-                            <span className="heart" /> 
+                            <span className="heart" />
                             <span>= Chef (AKA me) Recommended</span>
                         </p>
                     </>
-                ) : (
-                    <div className="empty-recipe-container">
-                        <p>No recipes found</p>
-                    </div>
-                )
-            ) : (
-                <div className="loader-container">
-                    <Loader />
-                </div>
-            )}
+                ) : <EmptyRecipeContainer />
+            ) : <LoaderContainer />}
 
-            {showArrow && (
-                <div
-                    className="back-to-top-arrow"
-                    onClick={() => {
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }}
-                >
-                    <img src={top} alt="top" />
-                    <span>TOP</span>
-                </div>
-            )}
+            {showArrow && <TopArrow />}
+
+            <GroceryListModal {...{ ...groceryListProps, show: showGroceryList }} />
         </NonDashboardPage>
     )
 }
