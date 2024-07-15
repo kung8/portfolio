@@ -40,7 +40,7 @@ export const LeftPanel = ({ selected, setSelected }) => {
                 <a href="https://www.linkedin.com/in/kung8" target="_blank" rel="noopener noreferrer">
                     <img src={linkedInLogo} alt="linkedIn-logo" />
                 </a>
-                <a href={`sms:+18018556361?&body=Hi Kevin! I'd love to connect with you.`} rel="noopener noreferrer">
+                <a href={`sms:+13852078347?&body=Hi Kevin! I'd love to connect with you.`} rel="noopener noreferrer">
                     <img src={messageLogo} alt="message-logo" />
                 </a>
             </div>
