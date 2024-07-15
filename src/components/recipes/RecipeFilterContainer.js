@@ -50,14 +50,17 @@ export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFi
                 </div>
                 {show && (
                     <div className="filter-selector-container">
-                        <span className="select-all-text" onClick={(e) => {
+                        <span 
+                            className="select-all-text" 
+                            onClick={(e) => {
                             e.stopPropagation();
                             if (filterOptions.length && filterOptions.length === selectedFilters[type]?.length) {
                                 deselectAllFilters(type);
                             } else {
                                 selectAllFilters(type, filterOptions);
                             }
-                        }}>
+                            }}
+                        >
                             {filterOptions.length && filterOptions.length === selectedFilters[type]?.length ? 'Deselect All' : 'Select All'}
                             <div className="checkbox">
                                 {filterOptions.length && filterOptions.length === selectedFilters[type]?.length ? (

@@ -250,6 +250,7 @@ export const Recipe = ({ match }) => {
                         <h4 className="recipe-detail-label">Ingredients:</h4>
                         <div className="grocery-list-button-container">
                             <span
+                                className="select-all-button"
                                 onClick={() => {
                                     if (selectedIngredients.length === item.ingredients.length) {
                                         setSelectedIngredients([]);

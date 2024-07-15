@@ -22,6 +22,7 @@
 
         .list-img {
             height: 24px;
+            cursor: pointer;
         }
     }
 
@@ -77,10 +78,15 @@
                     color: $primary-blue;
                 }
 
+                .select-all-button {
+                    cursor: pointer;
+                }
+
                 .add-to-list-button {
                     color: $default;
                     &.active {
                         color: $primary-blue;
+                        cursor: pointer;
                     }
                 }
             }
