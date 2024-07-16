@@ -1,17 +1,31 @@
 const rawIngredients = '../assets/Products/cheesecake-raw-cheesecake-ingredients.jpeg';
-const raw = '../assets/Products/cheesecake-raw-cheesecake.jpeg';
-const bath = '../assets/Products/cheesecake-baked-cheesecake-in-bath.jpeg';
 const baked = '../assets/Products/cheesecake-baked-cheesecake.jpeg';
 const slice = '../assets/Products/cheesecake-slice.jpeg';
 const glaze = '../assets/Products/cheesecake-glazed-strawberries.jpeg';
+const crustMixed = '../assets/Products/cheesecake-crust-mixed.jpeg';
+const crustRaw = '../assets/Products/cheesecake-crust-raw.jpeg';
+const crust = '../assets/Products/cheesecake-crust.jpeg';
+const fillingCombined = '../assets/Products/cheesecake-filling-combined.jpeg';
+const filling = '../assets/Products/cheesecake-filling-added.jpeg';
+const beforeCreaming = '../assets/Products/cheesecake-filling-before-creaming.jpeg';
+const creamed = '../assets/Products/cheesecake-filling-creamed.jpeg';
+const hulled = '../assets/Products/cheesecake-hulled-strawberries.jpeg';
+// const crummies = '../assets/Products/cheesecake-in-cake-holder-with-crummies.jpeg';
+const cakeHolder = '../assets/Products/cheesecake-in-cake-holder.jpeg';
+const roastingPan = '../assets/Products/cheesecake-in-roasting-pan.jpeg';
+const coolingRack = '../assets/Products/cheesecake-on-cooling-rack.jpeg';
+const strawberriesInPan = '../assets/Products/cheesecake-strawberries-in-pan.jpeg';
+// const toppingsInPan = '../assets/Products/cheesecake-strawberry-toppings-in-pan.jpeg';
+const wholeGlazed = '../assets/Products/cheesecake-whole-glazed-strawberry.jpeg';
+const zoomed = '../assets/Products/cheesecake-zoomed-in.jpeg';
 // const aerial = '../assets/Products/cheesecake-aerial.jpeg';
-const zoomed = '../assets/Products/cheesecake-zoomed.jpeg';
+// const zoomed = '../assets/Products/cheesecake-zoomed.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
 
 module.exports = {
     cardName: 'C.F. Cheesecake',
     name: 'Cheesecake Factory Cheesecake',
-    img: zoomed,
+    img: cakeHolder,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -58,22 +72,22 @@ module.exports = {
     directions: [
         { step: 'Grease cake pan with cooking spray.', type: SECTIONS.CRUST, img: rawIngredients },
         { step: 'Cover the bottom of the cake pan with the aluminum foil (to prevent it from soaking in water).', type: SECTIONS.CRUST },
-        { step: 'In the stand mixer bowl, combine graham cracker, sugar and butter until well incorporated.', type: SECTIONS.CRUST },
-        { step: 'Press crust mixture into the pan\'s bottom and up the sides.', type: SECTIONS.CRUST },
-        { step: 'In the stand mixer bowl, beat cream cheese and sugar at medium speed until smooth and fluffy (about 2 to 3 minutes).', type: SECTIONS.FILLING },
+        { step: 'In the stand mixer bowl, combine graham cracker, sugar and butter until well incorporated.', type: SECTIONS.CRUST, img: crustRaw },
+        { step: 'Press crust mixture into the pan\'s bottom and up the sides.', type: SECTIONS.CRUST, img: crust },
+        { step: 'In the stand mixer bowl, beat cream cheese and sugar at medium speed until smooth and fluffy (about 2 to 3 minutes).', type: SECTIONS.FILLING, img: beforeCreaming },
         { step: 'Add eggs one at a time and beat well.', type: SECTIONS.FILLING },
-        { step: 'Add vanilla, sour cream, flour, and salt and continue to beat until all is combined.', type: SECTIONS.FILLING },
+        { step: 'Add vanilla, sour cream, flour, and salt and continue to beat until all is combined.', type: SECTIONS.FILLING, img: fillingCombined },
         { step: 'Preheat oven to 325ºF.', type: SECTIONS.MAIN },
-        { step: 'Pour filling into the crust.', type: SECTIONS.MAIN },
-        { step: 'Place the cake pan in the roasting pan.', type: SECTIONS.MAIN },
-        { step: 'Fill the roasting pan with water (about halfway up the cake pan).', type: SECTIONS.MAIN, img: raw },
+        { step: 'Pour filling into the crust.', type: SECTIONS.MAIN, img: filling },
+        { step: 'Place the cake pan in the roasting pan and fill the roasting pan with water (about halfway up the cake pan).', type: SECTIONS.MAIN, img: roastingPan },
         { step: 'Place the roasting pan carefully in the oven and bake until just slightly jiggly, or until the center registers 145ºF (about 1 hour 30 minutes)', type: SECTIONS.MAIN },
-        { step: 'Turn oven off, leave door open, and let cool for 1 hour.', type: SECTIONS.MAIN, img: bath },
+        // { step: 'Turn oven off, leave door open, and let cool for 1 hour.', type: SECTIONS.MAIN, img: bath },
+        { step: 'Remove from the oven, transfer to a cooling rack and carefully remove the tin foil.', type: SECTIONS.MAIN, img: coolingRack },
         { step: 'Move cheesecake into the fridge and chill for about 5 hours to overnight.', type: SECTIONS.MAIN, img: baked },
         { step: 'In a small bowl, whisk cornstarch and water until combined.', type: SECTIONS.TOPPINGS },
-        { step: 'In a saucepan, add strawberries, sugar, lemon juice, and cornstarch mixture.', type: SECTIONS.TOPPINGS },
-        { step: 'Bring mixture to a simmer over medium heat.', type: SECTIONS.TOPPINGS },
-        { step: 'Cook until the sauce thickens to a syrupy texture and strawberries are coated.', type: SECTIONS.TOPPINGS },
+        { step: 'In a saucepan, add strawberries, sugar, lemon juice, and cornstarch mixture.', type: SECTIONS.TOPPINGS, img: hulled },
+        { step: 'Bring mixture to a simmer over medium heat.', type: SECTIONS.TOPPINGS, img: strawberriesInPan },
+        { step: 'Cook until the sauce thickens to a syrupy texture and strawberries are coated.', type: SECTIONS.TOPPINGS, img: wholeGlazed },
         { step: 'Transfer to bowl. Let cool and cover with plastic wrap.', type: SECTIONS.TOPPINGS, img: glaze },
         { step: 'Place in fridge to cool until ready to serve.', type: SECTIONS.TOPPINGS },
         { step: 'Enjoy this decadent, rich "Cheesecake Factory" imitation by topping each slice with the glazed strawberries and whipped cream.', type: SECTIONS.SERVE, img: slice },
