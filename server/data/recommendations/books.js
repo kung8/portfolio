@@ -21,6 +21,132 @@ module.exports = {
         // },
         {
             date: "7/24",
+            title: "Book Lover",
+            author: ["Emily Henry"],
+            review: [
+                "Wow I just finished Book Lover and I absolutely loved it. I’m a sucker for romantic comedies. It hit me hard around the middle of the book where I was able to connect with the main character Nora at more of a personal level. I felt she and I were the same even though we haven’t had exactly the same experiences. This book is definitely worth a read. I love Emily Henry’s writing—full of humor, witty, chock full of cultural references. There were some descriptive sensual scenes scattered in several parts throughout the book."
+            ],
+            quotes: [
+                {
+                    text: "Mom's theory was that youthful skin would make a woman more money (true in both acting and waitressing), good underwear would make her more confident (so far, so true), and good books would make her happy (universal truth), and we've clearly both packed with this theory in mind.",
+                    pages: [35],
+                    thoughts: "This is pretty funny. I agree with all of those things lol.",
+                    context: "Libby and Nora arrive to Sunshine Falls and remembers her mom's advice on how to pack for a trip. To pack the essentials to make you happy."
+                },
+                {
+                    text: "Maybe this is why people take trips, for that feeling of your real life liquefying around you, like nothing you do will tug on any other strand of your carefully built world.",
+                    pages: [170],
+                    thoughts: "Trips are a way to escape from the real world and to experience something new.",
+                    context: "Nora is enjoying her time in Sunshine Falls."
+                },
+                {
+                    text: "Usually I live like I'm trying to see four moves ahead in a chess game, but right now I can't seem to think past the next five minutes.",
+                    pages: [171],
+                    thoughts: "When you're in love or when you're in the moment of something, you might not be able to think clearly because of the awe.",
+                    context: "Nora is thinking about how Charlie makes her feel. She's learning to live in the moment which is absolutely distracting her from her normal habits."
+                },
+                {
+                    text: "Sometimes, even when you start with the last page and you think you know everything, a book finds a way to surprise you.",
+                    pages: [267],
+                    thoughts: "True. Life will surprise you. No matter how much we plan. No matter our goals. Life will throw curveballs at us or it might end differently than we think.",
+                    context: "Nora constantly reads the last page of a book before she starts it. And recognizes her life is like a book."
+                },
+                {
+                    text: "This book, this job, this trip, this never-ending, days-spanning conversation. I want to make it all last, and I need to know how it ends. I want to finish it, and I need it to go on forever.",
+                    pages: [271],
+                    thoughts: "Have you ever felt like you wanted something to last forever? I have. I think it's a beautiful feeling. It's a feeling of contentment and happiness.",
+                    context: "Nora doesn't want her time in Sunshine Falls to end. She's enjoying her time with Charlie."
+                },
+                {
+                    text: "If I had to pick one person to be in my corner, it'd be you. Every time. You take care of shit.",
+                    pages: [281],
+                    thoughts: "I think it's important to have people in your corner. Somebody that can help fight for you. Take care of you.",
+                    context: "Charlie has fallen for and completely trusts Nora. He would not choose anybody else."
+                },
+                {
+                    text: "Except nothing about him looks harmless to me. He looks like a Swiss Army knife. A man with six different means to undo me. This Charlie, for making you spill your secrets. This one for making you laugh. This one can turn you on. This is the one who will convince you you're capable of anything.Here is the Charlie who will pull you into his lap to form your human barricade at a hospital. And the one with the power to take you apart brick by brick.",
+                    pages: [293],
+                    thoughts: "It's so sweet that she's heads over heels for him. I hope to find somebody that will be heads over heels for me and vice versa.",
+                    context: "Nora is in love with Charlie and these are just some of the ways that he undoes her."
+                },
+                {
+                    text: "I stare at the blank page, emptied out. In my favorite books, it's never quite the ending I want. There's always a price to be paid. Mom and Libby liked the love stories where everything turned out perfectly, wrapped in a bow, and I've always wondered why I gravitate toward something else. I used to think it was because people like me don't get those endings. And asking for it, hoping for it, is a way to lose something you've never even had. The ones that speak to me are those whose final pages admit there is no going back. That every good thing must end. That every bad thing does too, that everything does. That is what I'm looking for everything time I flip to the back of the book, compulsively checking for proof that in a life where so many things have gone wrong, there can be beauty too. That there is always hope, no matter what. After losing Mom, those were the endings I found solace in. The ones that said, Yes, you have lost something, but maybe, someday, you'll find something too. For a decade, I've known I will never again have everything, and so all I've wanted is to believe that someday, again, I'll have enough. The ache won't always be so bad. People like me aren't beyond repair. No ice ever freezes too thick to thaw and no thorns ever grow too dense too dense to be cut away. This book has crushed me with its weight and dazzled me with its tiny bright spots. Some book you don't read so much live, and finishing one of those always makes me think of ascending from a scuba dive. Like if I surface too fast I might get the bends.",
+                    pages: [296],
+                    thoughts: "This is very true. We gravitate towards books that we aspire for our lives. We want the happy endings. We want hope. We want things that are missing in our lives.",
+                    context: "Nora internalizes why she has a habit of reading the last page."
+                },
+                {
+                    text: "She understands it...Everyone looks at that cat and sees it as a little monster. It doesn't know how to be a pet, but she doesn't care. That's why she says it isn't hers. Because it's not about what the cat can give her. It can't offer her anything. It's a mean, feral, hungry, socially unintelligent little bloodsucker...But it is her cat.",
+                    pages: [297],
+                    thoughts: "Even though the cat isn't the ideal cat. The cat is hers. It's a part of her. Sometimes we aren't who we expected to be, but we are who we are. It's important to accept that.",
+                    context: "Nora and Charlie talk about how they love the inclusion of the cat in the story. Originally they were unsure of it but it has since grown on them."
+                },
+                {
+                    text: "Tonight...can I just have you, Charlie? Even if it can't last. Even if we already know how it ends...You do have me, Nora. I never stood a chance.",
+                    pages: [300],
+                    thoughts: "",
+                    context: "Charlie and Nora have finally admitted some secrets they've been keeping from each other. The trajectory of their future is uncertain. Nora asks Charlie if they can be in the moment and not worry about the future. What a 180º--Nora wants to not let the fears of the future ruin this special moment. She asks Charlie to just let her have him for the night. Charlie reassures her that she has him."
+                },
+                {
+                    text: "Because nothing--not the beautiful and not the terrible--lasts.",
+                    pages: [327],
+                    thoughts: "Nothing will last forever. It's important to enjoy the moment. To live in the moment. To be present.",
+                    context: "Nora reflects on how her time in Sunshine Falls."
+                },
+                {
+                    text: "Maybe it's possible to belong in a hundred different ways to a hundred different people and places.",
+                    pages: [339],
+                    thoughts: "We can have our hearts in many places. We can belong to many people. We can have many homes.",
+                    context: "Nora is thinking if she could have more than one home. She's fallen in love with Sunshine Falls but still loves the city."
+                },
+                {
+                    text: "Even if you can't see them back in Manhattan, all of those stars will be over you too. Maybe every night, we look up at the sky at the same time...We get on the phone, and we look up at the sky, and then we'll know we're still together. Wherever we go.",
+                    pages: [345],
+                    thoughts: "Looking up at the stars and knowing that the person you love is looking at the same stars is a beautiful sentiment. It's a way to feel connected to someone even if you're miles apart.",
+                    context: "Libby tells Nora that they can still be together even if they are miles apart."
+                },
+                {
+                    text: "Mom will be with you too...just because you're leaving New York, it doesn't mean you're leaving her behind.",
+                    pages: [345],
+                    thoughts: "Such a cute sentiment. Sometimes all we need to know is that we aren't alone in this life.",
+                    context: "Nora tells her sister, Libby, that her mom will be with her wherever she goes."
+                },
+                {
+                    text: "If anyone could be enough....I think it might be you....I'm glad we had our moment. Even if it didn't last as long as we wanted it to...But, it really was fucking perfect.",
+                    pages: [352],
+                    thoughts: "If I can find somebody that is enough for me that would be amazing!",
+                    context: "Nora tells Charlie that he is enough and measures up to what she needs. Charlie in response says that he's glad they had their moment even if it was short-lived. Nora adds yeah it was perfect."
+                },
+                {
+                    text: "Or like I was taking a break from my own life, like this was a period of time when I'd sidestepped out of my own path for a while.",
+                    pages: [354],
+                    thoughts: "There are moments in our lives - trips I've taken or special events in my life that has left lasting memories and has even felt surreal.",
+                    context: "Her time in Sunshine Falls feels like a dream."
+                },
+                {
+                    text: "I wonder if I've been living at half volume too. With agenting. With dating. Tamping myself into a shape that felt sturdy and safe instead of right.",
+                    pages: [355],
+                    thoughts: "It is important to live to your potential. Reflection helps us recognize how we are doing and what else we can do.",
+                    context: "Nora is talking to Charlie's dad, Clint. He tells her that he's sad that Charlie has felt compelled to be back home instead of being in New York and doing what he loves."
+                },
+                {
+                    text: "I wanted her to stay, but i hope she finds everything she's looking for and more. Maybe love shouldn't be built on a foundation of compromises, but maybe it can't exist without them either. Not the kind that forces two people into shapes they don't fit, but the kind that loosens their grips, always leaves room to grow. Compromises that say, there wll be a you-shaped space in my heart, and if your shape changes, I will adapt. No matter where we go, our love will stretch out to hold us, and that makes me feel like...like everything will be okay.",
+                    pages: [361, 362],
+                    thoughts: "Compromises is a part of love. We don't have to look at them as all bad. It helps us grow and adapt to hopefully be better people and strengthen our relationships.",
+                    context: "Libby has just left the city and talks to Nora over the phone just 8 minutes after she left. Nora thinks about how she needs to let Libby go."
+                },
+                {
+                    text: "'For anyone who wants it all,' she begins, 'may you find something that is more than enough.'",
+                    pages: [372],
+                    thoughts: "We may be surprised by what we find. We may find something that is more than enough and might not be as we expected.",
+                    context: "Wrap up to the story. Nora looks around at the people who have gathered to celebrate the new book her client Dusty has written."
+                },
+            ],
+            image: "",
+            rating: 5,
+        },
+        {
+            date: "7/24",
             title: "The Good Enough Job: Reclaiming Life from Work",
             author: ["Simone Stolzoff"],
             review: [
@@ -717,6 +843,26 @@ module.exports = {
         },
     ],
     recommendations: [
+        {
+            title: "Mistborn",
+            author: ["Brandon Sanderson"],
+            source: ["Paige Wardle"],
+        },
+        {
+            title: "Stormlight",
+            author: ["Brandon Sanderson"],
+            source: ["Paige Wardle"],
+        },
+        {
+            title: "Dune",
+            author: ["Frank Herbert"],
+            source: ["Rachel"],
+        },
+        {
+            title: "Dune Messiah",
+            author: ["Frank Herbert"],
+            source: ["Rachel"],
+        },
         {
             title: "The Glass Castle",
             author: ["Jeannette Walls"],
