@@ -2,18 +2,19 @@ const rawIngredients = '../assets/Products/cheesecake-raw-cheesecake-ingredients
 const baked = '../assets/Products/cheesecake-baked-cheesecake.jpeg';
 const slice = '../assets/Products/cheesecake-slice.jpeg';
 const glaze = '../assets/Products/cheesecake-glazed-strawberries.jpeg';
-const crustMixed = '../assets/Products/cheesecake-crust-mixed.jpeg';
+// const crustMixed = '../assets/Products/cheesecake-crust-mixed.jpeg';
 const crustRaw = '../assets/Products/cheesecake-crust-raw.jpeg';
 const crust = '../assets/Products/cheesecake-crust.jpeg';
 const fillingCombined = '../assets/Products/cheesecake-filling-combined.jpeg';
 const filling = '../assets/Products/cheesecake-filling-added.jpeg';
 const beforeCreaming = '../assets/Products/cheesecake-filling-before-creaming.jpeg';
-const creamed = '../assets/Products/cheesecake-filling-creamed.jpeg';
+// const creamed = '../assets/Products/cheesecake-filling-creamed.jpeg';
 const hulled = '../assets/Products/cheesecake-hulled-strawberries.jpeg';
 // const crummies = '../assets/Products/cheesecake-in-cake-holder-with-crummies.jpeg';
 const cakeHolder = '../assets/Products/cheesecake-in-cake-holder.jpeg';
 const roastingPan = '../assets/Products/cheesecake-in-roasting-pan.jpeg';
 const coolingRack = '../assets/Products/cheesecake-on-cooling-rack.jpeg';
+const smallSlice = '../assets/Products/cheesecake-small-slice.jpeg';
 const strawberriesInPan = '../assets/Products/cheesecake-strawberries-in-pan.jpeg';
 // const toppingsInPan = '../assets/Products/cheesecake-strawberry-toppings-in-pan.jpeg';
 const wholeGlazed = '../assets/Products/cheesecake-whole-glazed-strawberry.jpeg';
@@ -25,7 +26,7 @@ const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
 module.exports = {
     cardName: 'C.F. Cheesecake',
     name: 'Cheesecake Factory Cheesecake',
-    img: cakeHolder,
+    img: smallSlice,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -89,7 +90,7 @@ module.exports = {
         { step: 'Bring mixture to a simmer over medium heat.', type: SECTIONS.TOPPINGS, img: strawberriesInPan },
         { step: 'Cook until the sauce thickens to a syrupy texture and strawberries are coated.', type: SECTIONS.TOPPINGS, img: wholeGlazed },
         { step: 'Transfer to bowl. Let cool and cover with plastic wrap.', type: SECTIONS.TOPPINGS, img: glaze },
-        { step: 'Place in fridge to cool until ready to serve.', type: SECTIONS.TOPPINGS },
+        { step: 'Place in fridge to cool until ready to serve.', type: SECTIONS.TOPPINGS, img: cakeHolder },
         { step: 'Enjoy this decadent, rich "Cheesecake Factory" imitation by topping each slice with the glazed strawberries and whipped cream.', type: SECTIONS.SERVE, img: slice },
     ]
 };
