@@ -7,10 +7,10 @@ const EmptyGroceryListItem = ({ setGroceryList }) => {
     return (
         <div className="grocery-list-item">
             <input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} />
-            <input 
-                type="text" 
-                placeholder="Add item" 
-                value={inputValue} 
+            <input
+                type="text"
+                placeholder="Add item"
+                value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={(e) => {
                     if (e.key === 'Enter') {
@@ -33,7 +33,7 @@ const GroceryListItem = ({ checked, index, groceryList, name, setGroceryList }) 
             if (newGroceryList[index]?.name && inputValue) {
                 newGroceryList[index].name = inputValue;
                 setGroceryList(newGroceryList);
-            } 
+            }
         }, 500);
 
         return () => clearTimeout(timeout);
@@ -52,7 +52,7 @@ const GroceryListItem = ({ checked, index, groceryList, name, setGroceryList }) 
                 }}
             />
             {checked ? (
-                <label className={checked ? 'checked': ''}>{inputValue}</label>
+                <label className={checked ? 'checked' : ''}>{inputValue}</label>
             ) : (
                 <input
                     type="text"
@@ -64,16 +64,10 @@ const GroceryListItem = ({ checked, index, groceryList, name, setGroceryList }) 
     )
 }
 
-export const GroceryListModal = ({ show, setShow, handleClose, groceryList, setGroceryList }) => {
+export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryList }) => {
     const showClass = show ? 'opened' : '';
 
-    const deleteChecked = () => {
-        setGroceryList(prev => prev.filter(item => !item.checked));
-        setShow(false);
-        setTimeout(() => {
-            setShow(true);
-        }, 100);
-    }
+    const deleteChecked = () => setGroceryList(prev => prev.filter(item => !item.checked));
 
     const deleteAll = () => {
         setGroceryList([]);
@@ -91,7 +85,7 @@ export const GroceryListModal = ({ show, setShow, handleClose, groceryList, setG
                 </div>
                 <div className="grocery-list">
                     {groceryList.map((item, index) => (
-                        <GroceryListItem key={index} {...{ ...item, index, groceryList, setGroceryList }} />
+                        <GroceryListItem key={item.name + '-' + index} {...{ ...item, index, groceryList, setGroceryList }} />
                     ))}
                     <EmptyGroceryListItem setGroceryList={setGroceryList} />
                 </div>
