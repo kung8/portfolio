@@ -14,10 +14,10 @@ module.exports = {
     prepTime: '7 m',
     cookTime: '0 m',
     ingredients: [
-        { name: 'chocolate pudding cups', amount: '6', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'Oreo cookies', amount: 'package of', additionalDetails: 'without cream', optional: false, section: SECTIONS.MAIN },
-        { name: 'Milano cookies', amount: 'package of', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'gummy worms', amount: '', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'chocolate pudding cups', amount: '6', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'Oreo cookies', amount: 'package of', additionalDetails: 'without cream', section: SECTIONS.MAIN },
+        { name: 'Milano cookies', amount: 'package of', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'gummy worms', amount: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     supplies: [
         { name: 'Clear Cups' },

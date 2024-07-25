@@ -13,10 +13,10 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '60 m',
     ingredients: [
-        { name: 'unsalted butter', amount: '2 sticks', additionalDetails: 'at room temperature', optional: false, section: SECTIONS.MAIN },
-        { name: 'powdered sugar', amount: '3/4 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'flour', amount: '2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'salt', amount: '1/4 tsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'unsalted butter', amount: '2 sticks', additionalDetails: 'at room temperature', section: SECTIONS.MAIN },
+        { name: 'powdered sugar', amount: '3/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'flour', amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'salt', amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

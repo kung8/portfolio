@@ -14,12 +14,12 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '0 m',
     ingredients: [
-        { name: 'preferred cracker', amount: '12', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'ham slices', amount: '5', additionalDetails: 'sliced', optional: false, section: SECTIONS.MAIN },
-        { name: 'cheese', amount: '6', additionalDetails: 'sliced or cubed', optional: false, section: SECTIONS.MAIN },
-        { name: 'lettuce', amount: '2 layers', additionalDetails: 'sliced', optional: false, section: SECTIONS.MAIN },
-        { name: 'tomato', amount: '1', additionalDetails: 'sliced', optional: false, section: SECTIONS.MAIN },
-        { name: 'butter pickle chips', amount: '6', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'preferred cracker', amount: '12', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'ham slices', amount: '5', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { name: 'cheese', amount: '6', additionalDetails: 'sliced or cubed', section: SECTIONS.MAIN },
+        { name: 'lettuce', amount: '2 layers', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { name: 'tomato', amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { name: 'butter pickle chips', amount: '6', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     supplies: [
         { name: 'plate' },

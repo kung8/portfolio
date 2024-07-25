@@ -16,9 +16,9 @@ module.exports = {
     prepTime: '3 m',
     cookTime: '10 m',
     ingredients: [
-        { name: 'cabbage', amount: '1/2 head of', additionalDetails: 'chopped', optional: false, section: SECTIONS.MAIN },
-        { name: 'red pepper flakes', amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
-        { name: 'sesame oil', amount: '2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'cabbage', amount: '1/2 head of', additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { name: 'red pepper flakes', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { name: 'sesame oil', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

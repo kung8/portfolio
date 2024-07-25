@@ -13,12 +13,12 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '1 m',
     ingredients: [
-        { name: 'plain yogurt', amount: '2 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'vanilla', amount: '1 Tbsp', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
-        { name: 'honey', amount: '1 Tbsp', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
-        { name: 'granola', amount: '', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
-        { name: 'berries', amount: '', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
-        { name: 'cashews', amount: '', additionalDetails: 'optional', optional: true, section: SECTIONS.MAIN },
+        { name: 'plain yogurt', amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'vanilla', amount: '1 Tbsp', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { name: 'honey', amount: '1 Tbsp', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { name: 'granola', amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { name: 'berries', amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { name: 'cashews', amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     supplies: [
         { name: 'bowl' },

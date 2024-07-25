@@ -15,10 +15,10 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '10 m',
     ingredients: [
-        { name: 'large egg', amount: '1', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'ham slice', amount: '1', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'fresh biscuit', amount: '1', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'cheese slice', amount: '1', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'large egg', amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'ham slice', amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'fresh biscuit', amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'cheese slice', amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

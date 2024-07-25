@@ -18,11 +18,11 @@ module.exports = {
         'https://www.allrecipes.com/recipe/239478/grandmas-buttermilk-syrup/'
     ],
     ingredients: [
-        { name: 'white sugar', amount: '1 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { name: 'buttermilk', amount: '1/2 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { name: 'butter', amount: '1/2 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { name: 'baking soda', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { name: 'vanilla extract', amount: '1 tsp', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
+        { name: 'white sugar', amount: '1 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { name: 'buttermilk', amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { name: 'butter', amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { name: 'baking soda', amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { name: 'vanilla extract', amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stove' },
