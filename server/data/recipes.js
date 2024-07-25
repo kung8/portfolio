@@ -5,6 +5,7 @@ const bananaBread = require("./recipes/banana-bread");
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefStroganoff = require("./recipes/beef-stroganoff");
+const bibimbap = require("./recipes/bibimbap");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
 const blondie = require("./recipes/blondie");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
@@ -128,6 +129,7 @@ const recipes = [
     lemonChickenOnLettuce,
     pepperSteak,
     chickenRamen,
+    bibimbap,
     hospitalityChicken,
     bakedChicken,
     bakedLemonChicken,
