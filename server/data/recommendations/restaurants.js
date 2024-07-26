@@ -35,6 +35,28 @@ module.exports = {
             price: 0
         }
     */
+    recommendations: [
+        {
+            title: "Gourmandise The Bakery",
+            location: "American Fork, UT",
+            items: [
+                {
+                    item: "Blueberry Grilled Cheese",
+                    source: "Rhiannon Sanderson"
+                }
+            ]
+        },
+        {
+            title: "(Filipino Restaurant in Provo)",
+            location: "Provo, UT",
+            items: [
+                {
+                    item: "",
+                    source: "Brianna Gee"
+                }
+            ]
+        },
+    ],
     reviews: [
         {
             title: "Asa Ramen",
@@ -108,7 +130,7 @@ module.exports = {
                 { name: "Yellowtail Jalapeno", thoughts: "There wasn't a lot in it, but it was good." },
                 { name: "California Girl", thoughts: "2nd favorite of the ones that we tried." },
             ],
-            image: "", 
+            image: "",
             rating: {
                 service: 5,
                 food: 4,
