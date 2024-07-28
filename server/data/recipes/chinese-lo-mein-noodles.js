@@ -1,10 +1,19 @@
-const loMein = '../assets/Products/lo-mein-noodles.jpeg';
+const broccoli = '../assets/Products/lo-mein-broccoli.jpeg';
+const beef = '../assets/Products/lo-mein-beef.jpeg';
+const drained = '../assets/Products/lo-mein-drained-noodles.jpeg';
+const pan = '../assets/Products/lo-mein-in-pan.jpeg';
+const marinated = '../assets/Products/lo-mein-marinated-beef.jpeg';
+const plated = '../assets/Products/lo-mein-plated.jpeg';
+const sauce = '../assets/Products/lo-mein-sauce.jpeg';
+const steamed = '../assets/Products/lo-mein-steamed-broccoli.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+
+const BEEF = 'Beef';
 
 module.exports = {
     cardName: 'Lo Mein',
     name: 'Lo Mein Noodles',
-    img: loMein,
+    img: plated,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
@@ -16,13 +25,13 @@ module.exports = {
     cookTime: '10 m',
     separated: true,
     ingredients: [
-        { name: 'flank steak', amount: '1/2 lb', additionalDetails: 'sliced', section: SECTIONS.MARINADE },
-        { name: 'salt', amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'sugar', amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'black pepper', amount: '1/8 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'shaoxing wine', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'light soy sauce', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'cornstarch', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { name: 'flank steak', amount: '1/2 lb', additionalDetails: 'sliced', section: BEEF },
+        { name: 'salt', amount: '1/4 tsp', additionalDetails: '', section: BEEF },
+        { name: 'sugar', amount: '1/4 tsp', additionalDetails: '', section: BEEF },
+        { name: 'black pepper', amount: '1/8 tsp', additionalDetails: '', section: BEEF },
+        { name: 'shaoxing wine', amount: '1/2 tsp', additionalDetails: '', section: BEEF },
+        { name: 'light soy sauce', amount: '1/2 tsp', additionalDetails: '', section: BEEF },
+        { name: 'cornstarch', amount: '1/2 tsp', additionalDetails: '', section: BEEF },
 
         { name: 'sesame oil', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { name: 'light soy sauce', amount: '2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
@@ -34,9 +43,10 @@ module.exports = {
         { name: 'water', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
 
         { name: 'lo mein noodles', amount: '1 lb', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'vegetable oil', amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'vegetable oil', amount: '3 Tbsp', additionalDetails: 'divided', section: SECTIONS.MAIN },
         { name: 'broccoli', amount: '1/2 lb', additionalDetails: 'cut into florets', section: SECTIONS.MAIN },
-        { name: 'garlic', amount: '3 medium cloves', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'garlic', amount: '3 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { name: 'salt', amount: '1/4 t', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },
@@ -48,15 +58,15 @@ module.exports = {
         { name: 'large bowl' },
     ],
     directions: [
-        { step: 'Combine beef, salt, sugar, pepper, shaoxing wine (1/2 t), light soy sauce (1/2 t), and cornstarch in a medium bowl. Mix with hands until beef is well-coated. Let it marinate for at least 30 minutes.', type: SECTIONS.MAIN },
-        { step: 'Combine sesame oil, light soy sauce (2 t), dark soy sauce, oyster sauce, salt, sugar, shaoxing wine (1 t), and water in a small bowl. Mix well and set aside. This is the sauce.', type: SECTIONS.MAIN },
-        { step: 'Bring a large pot of water to a boil. Add the noodles and cook until al dente. Drain and set aside.', type: SECTIONS.MAIN },
-        { step: 'Over high heat, heat 2 Tbsp of vegetable oil in a wok. Add the beef and cook until lightly browned (about 1 minute). Remove beef from wok and set aside.', type: SECTIONS.MAIN },
-        { step: 'Add 2 Tbsp of vegetable oil to the wok. Add the broccoli and a couple of pinches of salt, and cook until lightly browned (about 30 seconds).', type: SECTIONS.MAIN },
-        { step: 'Add water to the wok and continue cooking until it steams (about 2 minutes). Transfer broccoli to bowl with beef.', type: SECTIONS.MAIN },
-        { step: 'Heat the last Tbsp of vegetable oil in the wok. Add the noodles and stir noodles until coated with oil (about 30 seconds).', type: SECTIONS.MAIN },
+        { step: 'Combine beef, salt, sugar, pepper, shaoxing wine, light soy sauce, and cornstarch in a large bowl. Mix with hands until beef is well-coated. Let it marinate for at least 30 minutes.', type: BEEF, img: marinated },
+        { step: 'Combine sauce ingredients in a medium bowl. Mix well and set aside.', type: SECTIONS.SAUCE, img: sauce },
+        { step: 'Bring a large pot of water to a boil. Add the noodles and cook until al dente. Drain and set aside.', type: SECTIONS.MAIN, img: drained },
+        { step: 'Over high heat, heat 1 Tbsp of vegetable oil in a wok. Add the beef and cook until about 80% and lightly browned (about 1 minute). Remove beef from wok and set aside.', type: SECTIONS.MAIN, img: beef },
+        { step: 'Add 1 Tbsp of vegetable oil to the wok. Add the broccoli and salt, and cook until lightly browned (about 30 seconds).', type: SECTIONS.MAIN, img: broccoli },
+        { step: 'Add water to the wok and continue cooking until it steams (about 2 minutes). Set broccoli aside.', type: SECTIONS.MAIN, img: steamed },
+        { step: 'Heat 1 Tbsp vegetable oil in the wok. Add the noodles and stir noodles until coated with oil (about 30 seconds).', type: SECTIONS.MAIN },
         { step: 'Add the sauce and stir until noodles are evenly coated (about 1 minute).', type: SECTIONS.MAIN },
-        { step: 'Add the garlic, beef and broccoli and continue to cook until everything is combined (about 1 minutes).', type: SECTIONS.MAIN },
+        { step: 'Add the garlic, beef and broccoli and continue to cook until everything is combined (about 1 minutes). I like to add these in one at a time and mix.', type: SECTIONS.MAIN, img: pan },
         { step: 'Serve and enjoy this delicious Chinese dish!', type: SECTIONS.MAIN },
     ]
 };
