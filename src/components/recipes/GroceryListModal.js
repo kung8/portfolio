@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import closeBtn from '../../Assets/x.png';
 
+const EMPTY_GROCERY_ITEM_ID = 'empty-grocery-list-item';
+const GROCERY_ITEM_ID = 'grocery-list-item-';
+
 const EmptyGroceryListItem = ({ setGroceryList }) => {
     const [inputValue, setInputValue] = useState('');
     const [checked, setChecked] = useState(false);
+    
     return (
         <div className="grocery-list-item">
             <input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} />
             <input
+                id={EMPTY_GROCERY_ITEM_ID}
                 type="text"
                 placeholder="Add item"
                 value={inputValue}
@@ -38,7 +43,7 @@ const GroceryListItem = ({ checked, index, groceryList, name, setGroceryList }) 
 
         return () => clearTimeout(timeout);
         // eslint-disable-next-line
-    }, [inputValue, index, groceryList]);
+    }, [inputValue, index, JSON.stringify(groceryList)]);
 
     return (
         <div className="grocery-list-item">
@@ -55,9 +60,30 @@ const GroceryListItem = ({ checked, index, groceryList, name, setGroceryList }) 
                 <label className={checked ? 'checked' : ''}>{inputValue}</label>
             ) : (
                 <input
+                    id={GROCERY_ITEM_ID + index}
                     type="text"
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
+                    onKeyDown={async (e) => {
+                        const getNextItem = (nextItem, nextIndex) => {
+                            if (nextItem) {
+                                document.getElementById(GROCERY_ITEM_ID + nextIndex).focus();
+                            } else {
+                                document.getElementById(EMPTY_GROCERY_ITEM_ID).focus();
+                            }
+                        }
+
+                        if (e.key === 'Enter') {
+                            const nextIndex = index + 1;
+                            const nextItem = groceryList[nextIndex];
+                            if (!inputValue) {
+                                await setGroceryList(prev => prev.filter((_, i) => i !== index))
+                                getNextItem(nextItem, index);
+                            } else {
+                                getNextItem(nextItem, nextIndex);
+                            }
+                        }
+                    }}
                 />
             )}
         </div>
@@ -72,6 +98,12 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
     const deleteAll = () => {
         setGroceryList([]);
     }
+
+    useEffect(() => {
+        if (show && document.getElementById(EMPTY_GROCERY_ITEM_ID)) {
+            document.getElementById(EMPTY_GROCERY_ITEM_ID).focus();
+        }
+    }, [show])
 
     return (
         <>
