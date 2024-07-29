@@ -13,7 +13,7 @@ const EmptyGroceryListItem = ({ setGroceryList }) => {
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={(e) => {
-                    if (e.key === 'Enter') {
+                    if (e.key === 'Enter' && inputValue) {
                         setGroceryList(prev => [...prev, { name: inputValue, checked }]);
                         setInputValue('');
                         setChecked(false);
