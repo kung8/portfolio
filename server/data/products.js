@@ -1,6 +1,6 @@
 const eden = '../assets/Products/eden.jpeg';
 const games = '../assets/Products/full-set.png';
-const cookbook = '../assets/Products/cookbook.png';
+const cookbook = '../assets/Products/cookbook.jpg';
 const recommendations = '../assets/Products/recommendations.png';
 
 const products = [
