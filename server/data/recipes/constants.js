@@ -97,6 +97,7 @@ const PROTEIN = {
     SEAFOOD: 'Seafood',
     TOFU: 'Tofu',
     TURKEY: 'Turkey',
+    PINE_NUT: 'Pine Nut',
 }
 
 const SECTIONS = {

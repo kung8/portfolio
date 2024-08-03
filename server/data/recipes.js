@@ -1,7 +1,9 @@
 const americanOmelette = require("./recipes/american-omelette");
+const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
 const bakedChicken = require("./recipes/baked-chicken");
 const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
 const bananaBread = require("./recipes/banana-bread");
+const basilPesto = require("./recipes/basil-pesto");
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefStroganoff = require("./recipes/beef-stroganoff");
@@ -80,6 +82,7 @@ const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
 const riceCrispyBall = require("./recipes/rice-crispy-ball");
 const roastedTurkey = require("./recipes/roasted-turkey");
+const sauteedSquash = require("./recipes/sauteed-squash");
 const scrambledEggs = require("./recipes/scrambled-eggs");
 const singaporeanChickenRice = require("./recipes/singaporean-chicken-rice");
 const sloppyJoes = require("./recipes/sloppy-joes");
@@ -153,6 +156,9 @@ const recipes = [
     thaiMassamanCurry, // TODO: add
     beefStroganoff,
     chickenAlfredo,
+    basilPesto,
+    sauteedSquash,
+    bakedBreadedChicken,
     phillyCheesesteak,
     hawaiianHaystacks,
     bbqPulledPorkAndFixins,

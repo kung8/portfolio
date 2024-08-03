@@ -61,7 +61,11 @@ const Figure = ({ index, figure, setSelectedFigureLabel }) => (
                 <source src={figure.video} type="video/mp4" />
             </video>
         ) : (
-            <img className="additional-recipe-image" src={figure.img} alt={figure.step} />
+            Array.isArray(figure.img) ? figure.img.map((img, i) => (
+                <img key={i} className="additional-recipe-image" src={img} alt={figure.step} />
+            )) : (
+                <img className="additional-recipe-image" src={figure.img} alt={figure.step} />
+            )
         )}
     </div>
 );
