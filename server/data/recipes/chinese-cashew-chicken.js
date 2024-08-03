@@ -5,10 +5,10 @@ const cooked = '../assets/Products/cashew-chicken-cooked.jpeg';
 const cooking = '../assets/Products/cashew-chicken-cooking-chicken.jpeg';
 const oils = '../assets/Products/cashew-chicken-oils.jpeg';
 const plated = '../assets/Products/cashew-chicken-plated.jpeg';
-const withSauce = '../assets/Products/cashew-chicken-sauce.jpeg';
+const sauce = '../assets/Products/cashew-chicken-sauce.jpeg';
 const cashews = '../assets/Products/cashew-chicken-veggies-with-cashew.jpeg';
 const veggies = '../assets/Products/cashew-chicken-veggies.jpeg';
-const sauce = '../assets/Products/cashew-chicken-with-sauce.jpeg';
+const withSauce = '../assets/Products/cashew-chicken-with-sauce.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 
 const CHICKEN = 'Chicken';
