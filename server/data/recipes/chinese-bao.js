@@ -22,6 +22,7 @@ module.exports = {
     name: 'Chinese Bao',
     img: cooked,
     available: true,
+    recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     method: [METHODS.STEAM],

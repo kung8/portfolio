@@ -15,6 +15,7 @@ module.exports = {
     name: 'Lo Mein Noodles',
     img: plated,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     method: [METHODS.STIR_FRY],
