@@ -5,7 +5,7 @@ module.exports = {
     cardName: '',
     name: '',
     img: '',
-    available: false,
+    available: true,
     category: [],
     genre: [],
     method: [],

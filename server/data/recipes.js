@@ -37,6 +37,7 @@ const chineseGingerChicken = require("./recipes/chinese-ginger-chicken");
 const chineseLoMeinNoodles = require("./recipes/chinese-lo-mein-noodles");
 const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
+const chocolateMousse = require("./recipes/chocolate-mousse");
 const cilantroLimeChicken = require("./recipes/cilantro-lime-chicken");
 const eggCasserole = require("./recipes/egg-casserole");
 const fancyLunchables = require("./recipes/fancy-lunchables");
@@ -209,6 +210,7 @@ const recipes = [
     tedLassoBiscuits,
     brownies,
     noBakeCookie,
+    chocolateMousse,
     riceCrispyBall, // TODO: add
     graveyardDessert,
     smores,
