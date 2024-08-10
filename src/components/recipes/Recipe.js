@@ -7,22 +7,22 @@ import list from './list.png';
 import { GroceryListModal } from './GroceryListModal';
 import { useGroceryList } from './use-grocery-list';
 
-const IngredientItem = ({ item, selectedIngredients, setSelectedIngredients }) => {
+const IngredientItem = ({ index, item, selectedIngredients, setSelectedIngredients }) => {
     const [checked, setChecked] = useState(false);
 
     useEffect(() => {
-        setChecked(!!selectedIngredients.find(i => i === item));
+        setChecked(!!selectedIngredients.find(i => i.name === item && i.index === index));
     }, [selectedIngredients, item]);
 
-    const handleCheckboxChange = (value) => {
-        const included = selectedIngredients.includes(value);
+    const handleCheckboxChange = () => {
+        const included = selectedIngredients.find(i => i.name === item && i.index === index);
         if (included) {
             // removes the ingredient if it's already included
-            const newSelectedIngredients = selectedIngredients.filter(item => item !== value);
+            const newSelectedIngredients = selectedIngredients.filter(item => item.name !== item && item.index !== index);
             setSelectedIngredients(newSelectedIngredients);
-        } else {
+        } else {            
             // adds the ingredient if it's not included
-            setSelectedIngredients([...selectedIngredients, value]);
+            setSelectedIngredients([...selectedIngredients, { name: item, index }]);
         }
     }
 
@@ -30,12 +30,12 @@ const IngredientItem = ({ item, selectedIngredients, setSelectedIngredients }) =
         <div className="checkbox-ingredient-container">
             <input
                 type="checkbox"
-                id={item}
+                id={item + '-' + index}
                 checked={checked}
                 className="checkbox-ingredient"
-                onChange={(e) => handleCheckboxChange(e.target.id)}
+                onChange={handleCheckboxChange}
             />
-            <label htmlFor={item}>
+            <label htmlFor={item + '-' + index}>
                 {item}
             </label>
         </div>
@@ -106,10 +106,10 @@ export const Recipe = ({ match }) => {
     }, []);
 
     const separatedIngredients = !!item?.separated && item?.ingredients &&
-        item.ingredients.reduce((acc, ingredient) => {
+        item.ingredients.reduce((acc, ingredient, index) => {
             if (ingredient.section && !acc[ingredient.section]) acc[ingredient.section] = [];
             if (ingredient.section && acc[ingredient.section]) {
-                acc[ingredient.section].push(ingredient);
+                acc[ingredient.section].push({ ...ingredient, index });
             }
             return acc;
         }, {});
@@ -259,7 +259,13 @@ export const Recipe = ({ match }) => {
                                     if (selectedIngredients.length === item.ingredients.length) {
                                         setSelectedIngredients([]);
                                     } else {
-                                        setSelectedIngredients(item.ingredients.map(ingredient => formatIngredientItem(ingredient)));
+                                        if (item.separated) {
+                                            const newIngredients = Object.values(formattedIngredients).flatMap((group) => group[1].map(ingredient => ({ name: formatIngredientItem(ingredient), index: ingredient.index })));
+                                            setSelectedIngredients(newIngredients);
+                                        } else {
+                                            const newIngredients = item.ingredients.map((ingredient, index) => ({ name: formatIngredientItem(ingredient), index }))
+                                            setSelectedIngredients(newIngredients);
+                                        }
                                     }
                                 }}
                             >
@@ -268,7 +274,7 @@ export const Recipe = ({ match }) => {
                             <span
                                 className={`add-to-list-button ${selectedIngredients.length > 0 ? 'active' : ''}`}
                                 onClick={() => {
-                                    setGroceryList([...groceryList, ...selectedIngredients.map(item => ({ name: item, checked: false }))]);
+                                    setGroceryList([...groceryList, ...selectedIngredients.map(item => ({ name: item.name, checked: false }))]);
                                     handleOpen();
                                     setSelectedIngredients([]);
                                 }}
@@ -285,16 +291,16 @@ export const Recipe = ({ match }) => {
                                     <h5 className="separated-recipe-detail-label">{section}</h5>
                                     {ingredients.map((ingredient) => {
                                         const formattedIngredient = formatIngredientItem(ingredient);
-                                        return <IngredientItem key={formattedIngredient} item={formattedIngredient} selectedIngredients={selectedIngredients} setSelectedIngredients={setSelectedIngredients} />
+                                        return <IngredientItem key={formattedIngredient + '-' + ingredient.index} index={ingredient.index} item={formattedIngredient} selectedIngredients={selectedIngredients} setSelectedIngredients={setSelectedIngredients} />
                                     })}
                                 </div>
                             ))}
                         </div>
                     ) : (
                         <div className="recipe-container">
-                            {item?.ingredients?.map((ingredient) => {
+                            {item?.ingredients?.map((ingredient, index) => {
                                 const formattedIngredient = formatIngredientItem(ingredient);
-                                return <IngredientItem key={formattedIngredient} item={formattedIngredient} selectedIngredients={selectedIngredients} setSelectedIngredients={setSelectedIngredients} />
+                                return <IngredientItem key={formattedIngredient + '-' + index} index={index} item={formattedIngredient} selectedIngredients={selectedIngredients} setSelectedIngredients={setSelectedIngredients} />
                             })}
                         </div>
                     )}
