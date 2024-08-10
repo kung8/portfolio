@@ -20,6 +20,120 @@ module.exports = {
         //     rating: 5,
         // },
         {
+            date: "8/24",
+            title: "Beach Read",
+            author: ["Emily Henry"],
+            review: [
+                "This book was good. I loved the other two books by Emily Henry better, but it was still a good read. This one didn't seem to have as much humor as the other two, but I loved the characters and their development. I liked the message that life isn't all about the happy endings and that we need to enjoy the moment."
+            ],
+            quotes: [
+                {
+                    text: "Here's the thing about writing Happily Ever Afters: it helps if you believe in them. Here's the thing about me: I did until the day of my father's funeral.",
+                    pages: [13],
+                    thoughts: "Tragedies in our lives can affect us in ways we never thought possible. It can change our perspective on life, love, and happiness. Secrets are usually revealed in these moments.",
+                    context: "Intro to the book. January is a romance writer who has lost her father and is struggling to write her next book."
+                },
+                {
+                    text: "For years, I had a purpose, something good to focus on. But when Dad died, suddenly writing--the one thing that had always put me at ease, a verb that felt more like a place only for me, the thing that had freed me from my darkest moments and brought hope into my chest at my heart's heaviest--had seemed impossible.",
+                    pages: [89],
+                    thoughts: "Again tragedies and events in our lives can change even the things that we love.",
+                    context: "She is still bothered that she is having writer's block."
+                },
+                {
+                    text: "I'd probably spent more than 10,000 hours typing novels (those published as well as those cast aside), and I still wasn't an expert at typing, leet alone an expert on writing books. Because even when you'd spent 10,000 hours writing feel-good fiction and another 10,000 reading it, it didn't make you an expert at writing any other kind of book.",
+                    pages: [92],
+                    thoughts: "Just like everything else in life--practice does makes perfect but in that specific thing. It doesn't make you an expert in all aspects of that thing - just the aspects that you've spent a lot of time doing it.",
+                    context: "January is thinking about the challenge Gus has given her to write a literary fiction book."
+                },
+                // {
+                //     text: "",
+                //     pages: [105],
+                //     thoughts: "",
+                //     context: ""
+                // },
+                // {
+                //     text: "",
+                //     pages: [111],
+                //     thoughts: "",
+                //     context: ""
+                // },
+                // {
+                //     text: "",
+                //     pages: [112],
+                //     thoughts: "",
+                //     context: ""
+                // },
+                // {
+                //     text: "",
+                //     pages: [118],
+                //     thoughts: "",
+                //     context: ""
+                // },
+                // {
+                //     text: "",
+                //     pages: [131],
+                //     thoughts: "",
+                //     context: ""
+                // },
+                {
+                    text: "I want to know whether you could ever fully know someone. If knowing how they were--how they moved and spoke and the faces they made and the things they tried not to look at--amounted to knowing them. Or if knowing things about them--where they'd been born, all the people they'd been, who they'd loved, the worlds they'd come from--added up to anything.",
+                    pages: [134, 135],
+                    thoughts: "It's an interesting thought that we may truly never know somebody completely. We can know their habits, their likes, their dislikes, but we may never know their thoughts, their fears, their dreams.",
+                    context: "January is thinking about her dad and how she didn't know everything about him."
+                },
+                {
+                    text: "'It's shit like this that makes it impossible for me to believe in happy endings. You never get the paper umbrellas you were promised in this world.''Gus,' I said. 'You must be the paper umbrellas you wish to see in this world.'",
+                    pages: [143],
+                    thoughts: "I think it's okay to think that sometimes things don't work out the way we planned. Happy endings aren't alway the case. Though I am a romantic at heart and an optimistic person and believe that things will work out.",
+                    context: "Gus jokingly says that he can't believe in happy endings because things as simple as ordering a drink missing the umbrella. January reassures him that sometimes we need to change the way we think or make that difference."
+                },
+                {
+                    text: "'And if we're lucky, maybe it will help someone. To feel known and understood, like their story matters.'",
+                    pages: [179],
+                    thoughts: "Our stories can help others. We might not know how or why, but maybe others are going through similar things that we might not be aware of.",
+                    context: "Gus is comforting Dave about the exact details of his interview with him is not going to be published in his book."
+                },
+                {
+                    text: "'Your mother has been a lot of people in the twenty years I've known her, and I've had a chance to fall in love with every single one of them, Janie. That's the key to marriage. You have to keep falling in love with every version of each other, and it's the best feeling in the whole world.'",
+                    pages: [219],
+                    thoughts: "It's wild to think that each of us are different people every day. And to make a marriage work we need to constantly fall in love with each version. Some versions can be rough to love while others might be easier because of decisions that we make or others make.",
+                    context: "January recalls something that her father told her about her mother."
+                },
+                {
+                    text: "'When you love someone,' he said haltingly, '...you want to make the world look different for them. To give all the ugly stuff meaning, and amplify the good. That's what you do. For your readers. For me. You make beautiful things, because you love the world, and maybe the world doesn't always look how it does in your books, but...I think putting them out there, that changes the world a little bit. And the world can't afford to lose that.'",
+                    pages: [292],
+                    thoughts: "We shouldn't lose hope in the world. Even though fictional worlds aren't always like how this world is, it's important to have these stories to remind of us the good or hope that could exist in the world.",
+                    context: "Gus tells January that she makes the world a better place with her books."
+                },
+                {
+                    text: "I spent all last summer thinking I'd never be happy again, and now, a year later, I still feel sick and worried and angry, but at moments, I'm also happy. Bad things don't dig down through your life until the pit's so deep that nothing good will ever be big enough to make you happy again. No matter how much shit, there will always be wildflowers. There will always be Petes and Maggies and rainstorms in forests and sun on waves.",
+                    pages: [294],
+                    thoughts: "We can't get caught up in the weeds of things and not look pass the trees in the forest",
+                    context: "Gus and January talk about how life can be complicated."
+                },
+                {
+                    text: "Falling's the part that takes your breath away. It's the part when you can't believe the person standing in front of you both exists and happened to wander into your path. It's supposed to make you feel lucky to be alive, exactly when and where you are.",
+                    pages: [338],
+                    thoughts: "Love should be beautiful. In its pureness. Being in love shouldn't be a chore.",
+                    context: "Shadi explains to January what falling in love is like."
+                },
+                {
+                    text: "'When I watch you sleep,' he said shakily, 'I feel overwhelmed that you exist.'",
+                    pages: [347],
+                    thoughts: "We can love someone but maybe it's in different ways than what romantic relationships should be. We can love the situation or the feeling of being in a relationship, rather than the person themselves.",
+                    context: "This is a phrase that Shadi first said to January about actually being in love with somebody."
+                },
+                {
+                    text: "'Then maybe we should enjoy our Happy for Now,' Gus said. I could live with that. I could learn to live with that.",
+                    pages: [347],
+                    thoughts: "Disney, fairy tales, and romance books have always ended with happily ever afters. We don't always know how the story will end even though it's love. It's important to enjoy the moment and not let those fears control decisions that you make. And remember that happily ever afters don't always happen too.",
+                    context: "Perpetually January overthinks the future and lets fear creep in. Gus tells her to enjoy the moment."
+                },
+            ],
+            image: "",
+            rating: 5,
+        },
+        {
             date: "7/24",
             title: "Book Lover",
             author: ["Emily Henry"],
