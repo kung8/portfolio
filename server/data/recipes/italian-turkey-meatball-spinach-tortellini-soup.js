@@ -1,10 +1,30 @@
-const meatballSpinachTortelliniSoup = '../assets/Products/turkey-meatball-spinach-tortellini-soup.jpeg';
+const bowl = '../assets/Products/turkey-meatball-spinach-tortellini-soup-bowl.jpeg';
+const addedMeatballs = '../assets/Products/turkey-meatball-spinach-tortellini-soup-added-meatballs.jpeg';
+const boilingBroth = '../assets/Products/turkey-meatball-spinach-tortellini-soup-boiling-broth.jpeg';
+const boilingTortellini = '../assets/Products/turkey-meatball-spinach-tortellini-soup-boiling-tortellini.jpeg';
+const breading = '../assets/Products/turkey-meatball-spinach-tortellini-soup-breading.jpeg';
+const broth = '../assets/Products/turkey-meatball-spinach-tortellini-soup-broth.jpeg';
+const butter = '../assets/Products/turkey-meatball-spinach-tortellini-soup-butter.jpeg';
+const cookedMeatballs = '../assets/Products/turkey-meatball-spinach-tortellini-soup-cooked-meatballs.jpeg';
+const turkey = '../assets/Products/turkey-meatball-spinach-tortellini-soup-ground-turkey.jpeg';
+const meatballs = '../assets/Products/turkey-meatball-spinach-tortellini-soup-meatballs.jpeg';
+const melted = '../assets/Products/turkey-meatball-spinach-tortellini-soup-melted-butter.jpeg';
+const mixedBreading = '../assets/Products/turkey-meatball-spinach-tortellini-soup-mixed-breading.jpeg';
+const veggies = '../assets/Products/turkey-meatball-spinach-tortellini-soup-raw-veggies.jpeg';
+const softened = '../assets/Products/turkey-meatball-spinach-tortellini-soup-softened-veggies.jpeg';
+const spinach = '../assets/Products/turkey-meatball-spinach-tortellini-soup-spinach.jpeg';
+const steamed = '../assets/Products/turkey-meatball-spinach-tortellini-soup-steamed.jpeg';
+const tortellini = '../assets/Products/turkey-meatball-spinach-tortellini-soup-tortellini.jpeg';
+const veggiesInPot = '../assets/Products/turkey-meatball-spinach-tortellini-soup-veggies-in-pot.jpeg';
+const ladle = '../assets/Products/turkey-meatball-spinach-tortellini-soup-zoomed-ladle.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+
+const MEATBALLS = 'Meatballs';
 
 module.exports = {
     cardName: 'Tortellini Soup',
     name: 'Turkey Meatball Spinach Tortellini Soup',
-    img: meatballSpinachTortelliniSoup,
+    img: ladle,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
@@ -14,23 +34,24 @@ module.exports = {
     yields: '6 servings',
     prepTime: '15 m',
     cookTime: '35 m',
+    separated: true,
     ingredients: [
-        { name: 'ground turkey', amount: '16 oz', additionalDetails: '', optional: false },
-        { name: 'breadcrumbs', amount: '2 Tbsp', additionalDetails: '', optional: false },
-        { name: 'parmesan cheese', amount: '2 Tbsp', additionalDetails: '', optional: false },
-        { name: 'parsley', amount: '2 Tbsp', additionalDetails: '', optional: false },
-        { name: 'egg', amount: '1 large', additionalDetails: '', optional: false },
-        { name: 'garlic', amount: '1 clove', additionalDetails: 'minced', optional: false },
-        { name: 'salt', amount: '1/8 tsp', additionalDetails: '', optional: false },
-        { name: 'unsalted butter', amount: '1/2 Tbsp', additionalDetails: '', optional: false },
-        { name: 'celery', amount: '2 stalks', additionalDetails: '', optional: false },
-        { name: 'onion', amount: '1 small', additionalDetails: '', optional: false },
-        { name: 'carrot', amount: '1 large', additionalDetails: 'peeled and chopped', optional: false },
-        { name: 'garlic', amount: '2 cloves', additionalDetails: 'minced', optional: false },
-        { name: 'chicken broth', amount: '58 oz', additionalDetails: '', optional: false },
-        { name: 'spinach cheese tortellini', amount: '18 oz', additionalDetails: '', optional: false },
-        { name: 'baby spinach', amount: '3 c', additionalDetails: '', optional: false },
-        { name: 'black pepper', amount: '', additionalDetails: 'to taste', optional: false },
+        { name: 'ground turkey', amount: '16 oz', additionalDetails: '', optional: false, section: MEATBALLS },
+        { name: 'breadcrumbs', amount: '2 Tbsp', additionalDetails: '', optional: false, section: MEATBALLS },
+        { name: 'parmesan cheese', amount: '2 Tbsp', additionalDetails: '', optional: false, section: MEATBALLS },
+        { name: 'parsley', amount: '2 Tbsp', additionalDetails: '', optional: false, section: MEATBALLS },
+        { name: 'egg', amount: '1 large', additionalDetails: '', optional: false, section: MEATBALLS },
+        { name: 'garlic', amount: '1 clove', additionalDetails: 'minced', optional: false, section: MEATBALLS },
+        { name: 'salt', amount: '1/8 tsp', additionalDetails: '', optional: false, section: MEATBALLS },
+        { name: 'unsalted butter', amount: '1/2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'celery', amount: '2 stalks', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'onion', amount: '1 small', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'carrot', amount: '1 large', additionalDetails: 'peeled and chopped', optional: false, section: SECTIONS.MAIN },
+        { name: 'garlic', amount: '2 cloves', additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
+        { name: 'chicken broth', amount: '10 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'black pepper', amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
+        { name: 'spinach cheese tortellini', amount: '18 oz', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { name: 'baby spinach', amount: '3 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },
@@ -40,15 +61,15 @@ module.exports = {
         { name: 'large pot' },
     ],
     directions: [
-        { step: 'Combine the ground turkey, breadcrumbs, parmesan cheese, parsley, egg, garlic, and salt in a large bowl.', type: SECTIONS.MAIN },
-        { step: 'Gently mix together with hands until combined.', type: SECTIONS.MAIN },
-        { step: 'Make small meatballs (about 1 Tbsp each).', type: SECTIONS.MAIN },
-        { step: 'Melt butter in a large pot over medium heat.', type: SECTIONS.MAIN },
-        { step: 'Once melted, add the celery, onion, carrot, and garlic. Cover and reduce heat to low. Cook until vegetables begin to soften (about 8 to 10 minutes).', type: SECTIONS.MAIN },
-        { step: 'Add the chicken broth and increase heat to medium-high. Bring to a boil.', type: SECTIONS.MAIN },
+        { step: 'Combine the ground turkey, breadcrumbs, parmesan cheese, parsley, egg, garlic, and salt in a large bowl.', type: MEATBALLS, img: [breading, mixedBreading, turkey] },
+        { step: 'Make small meatballs (about 1 Tbsp each).', type: MEATBALLS, img: meatballs },
+        { step: 'Melt butter in a large pot over medium heat.', type: SECTIONS.MAIN, img: [butter, melted] },
+        { step: 'Once melted, add the celery, onion, carrot, and garlic. Cover and reduce heat to low. Cook until vegetables begin to soften (about 8 to 10 minutes).', type: SECTIONS.MAIN, img: [veggies, veggiesInPot, steamed, softened] },
+        { step: 'Remove lid. Add the chicken broth and increase heat to medium-high. Bring to a boil.', type: SECTIONS.MAIN, img: [broth, boilingBroth] },
         { step: 'Add black pepper to taste.', type: SECTIONS.MAIN },
-        { step: 'Reduce heat to medium and drop in the meatballs. Cook for about 4 minutes.', type: SECTIONS.MAIN },
-        { step: 'Add tortellini and simmer until cooked (about 7 minutes).', type: SECTIONS.MAIN },
-        { step: 'Once cooked, add the baby spinach and stir to combine.', type: SECTIONS.MAIN },
+        { step: 'Reduce heat to medium and drop in the meatballs. Cook for about 4 minutes.', type: SECTIONS.MAIN, img: [addedMeatballs, cookedMeatballs] },
+        { step: 'Add tortellini and simmer until cooked (about 7 minutes).', type: SECTIONS.MAIN, img: [tortellini, boilingTortellini] },
+        { step: 'Once cooked, add the baby spinach and stir to combine.', type: SECTIONS.MAIN, img: [spinach] },
+        { step: 'Serve warm.', type: SECTIONS.SERVE, img: [bowl] },
     ]
 }
