@@ -16,6 +16,7 @@ const mousse = '../assets/Products/chocolate-mousse-mixed-mousse.jpeg';
 const plated = '../assets/Products/chocolate-mousse-plated.jpeg';
 const shaved = '../assets/Products/chocolate-mousse-shaved-chocolate.jpeg';
 const peaks = '../assets/Products/chocolate-mousse-stiff-peaks.jpeg';
+const topped = '../assets/Products/chocolate-mousse-topped.jpeg';
 const whipped = '../assets/Products/chocolate-mousse-whipped-cream.jpeg';
 const yolkInCream = '../assets/Products/chocolate-mousse-yolk-in-cream.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
@@ -26,7 +27,7 @@ const WHIPPED_CREAM = 'Whipped Cream';
 module.exports = {
     cardName: 'Chocolate Mousse',
     name: 'Chocolate Mousse',
-    img: plated,
+    img: topped,
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
@@ -78,6 +79,6 @@ module.exports = {
         { step: 'Refrigerate for at least 6 hours.', type: SECTIONS.MAIN },
         { step: 'Combine heavy cream and sugar in a bowl.', type: WHIPPED_CREAM },
         { step: 'Whisk together until stiff peaks form. Set aside to top the mousse.', type: WHIPPED_CREAM, whipped },
-        { step: 'Top the mousse with whipped cream, chopped chocolate shavings, raspberries, and sprig of mint. I used 100% cocoa dark chocolate so it was really bitter. You can use whatever preferred ratio and subsidize the amount of sweetness with the toppings.', type: SECTIONS.SERVE, img: [shaved, raspberries] },
+        { step: 'Top the mousse with whipped cream, chopped chocolate shavings, raspberries, and sprig of mint. I used 100% cocoa dark chocolate so it was really bitter. You can use whatever preferred ratio and subsidize the amount of sweetness with the toppings.', type: SECTIONS.SERVE, img: [shaved, raspberries, plated] },
     ]
 };
