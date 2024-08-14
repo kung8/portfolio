@@ -45,36 +45,36 @@ module.exports = {
                     thoughts: "Just like everything else in life--practice does makes perfect but in that specific thing. It doesn't make you an expert in all aspects of that thing - just the aspects that you've spent a lot of time doing it.",
                     context: "January is thinking about the challenge Gus has given her to write a literary fiction book."
                 },
-                // {
-                //     text: "",
-                //     pages: [105],
-                //     thoughts: "",
-                //     context: ""
-                // },
-                // {
-                //     text: "",
-                //     pages: [111],
-                //     thoughts: "",
-                //     context: ""
-                // },
-                // {
-                //     text: "",
-                //     pages: [112],
-                //     thoughts: "",
-                //     context: ""
-                // },
-                // {
-                //     text: "",
-                //     pages: [118],
-                //     thoughts: "",
-                //     context: ""
-                // },
-                // {
-                //     text: "",
-                //     pages: [131],
-                //     thoughts: "",
-                //     context: ""
-                // },
+                {
+                    text: "How he could keep asking questions when all I'd wanted all night was to grab Grace and hold her tight, apologize for what the world had taken from her, find some way -- any way-- to make the loss one ounce lighter.",
+                    pages: [105],
+                    thoughts: "Sometimes when we see someone hurting, all we want to do is to help them lift that burden off them. But life doesn't always work like that.",
+                    context: "Gus and January are interviewing Grace about her life in the cult and how she coped with it as mother."
+                },
+                {
+                    text: "JANUARY, JANUARY, WHEREFORE ART THOU, JANUARY? The message was ironic. The butterflies in my chest were not.",
+                    pages: [111],
+                    thoughts: "Gus is not a romantic, but he's trying to be. January who is a romantic at heart and a romance writer is looking at life through the lens of her books or her type of writing. I think the simplicity of that statement is beautiful, 'The butterflies in my chest were not.'",
+                    context: "Gus and January scribble notes to each other and hold them up to the window, like in the Taylor Swift music video."
+                },
+                {
+                    text: "I know feeling small gets to some people, he had once told me, but I kind of like it. Takes the pressure off when you're just one life of six billion at any given moment. And when you're going through something hard--at the time, Mom was doing chemo--it's nice to know you're not even close to the only one.",
+                    pages: [112],
+                    thoughts: "I think it is interesting to think of life that way. It's easy to forget that there are other people in the world going through similar things that we are going through because the odds of another person experiencing it of six to seven billion people. Chances are really high.",
+                    context: "January is thinking about how she felt during her mom's remission and those subsequent rounds of chemo."
+                },
+                {
+                    text: "Again and again he told me I wasn't myself. But he was wrong. I was the same me I'd always been. I'd just stopped trying to glow in the dark for him, or anyone else.",
+                    pages: [118],
+                    thoughts: "People change in relationships. Sometimes we look at others differently. We sometimes change ourselves because of the people we are with and it's important to recognize that.",
+                    context: "January thinks back to her relationship with the guy who appeared perfect. She was living a life that wasn't her own."
+                },
+                {
+                    text: "'To my parents,' Gus said, 'Who are proof of fate's strong, if animatronic, hand.'",
+                    pages: [131],
+                    thoughts: "It's sweet to think of love in this fate-like way. I think I have grown over the years in cynicism and that love is not guided by cupid's arrow or by fate. I think love is a choice, that sometimes we put up walls and prevent ourselves from falling in love.",
+                    context: "January's dedication to her parent in one of her books. The backstory is sweet. They met at a carnival or fair."
+                },
                 {
                     text: "I want to know whether you could ever fully know someone. If knowing how they were--how they moved and spoke and the faces they made and the things they tried not to look at--amounted to knowing them. Or if knowing things about them--where they'd been born, all the people they'd been, who they'd loved, the worlds they'd come from--added up to anything.",
                     pages: [134, 135],
