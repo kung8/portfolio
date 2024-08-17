@@ -12,6 +12,11 @@
     &.opened {
         display: block;
     }
+
+    &.layered-opened {
+        z-index: 4;
+        margin-left: -80px;
+    }
 }
 
 .grocery-list-modal {
@@ -72,14 +77,14 @@
                 border: none;
                 color: $white;
                 width: 100%;
-                font-size: 24px;
+                font-size: 16px;
             }
 
             label {
                 &.checked {
                     color: $default;
                     text-decoration: line-through;
-                    font-size: 24px;
+                    font-size: 16px;
                 }
             }
         }
@@ -101,6 +106,71 @@
             &.has-values {
                 color: $primary-blue;
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+.delete-grocery-item-modal {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    padding: 36px 48px;
+    background: $dark-aqua;
+    margin: 50vh auto;
+    transform: translate(50%, -50%);
+    width: 600px;
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            h3 {
+                font-size: 16px;
+                font-weight: 400;
+            }
+            img {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            column-gap: 16px;
+
+            button {
+                padding: 6px 12px;
+                cursor: pointer;
+                border-radius: 16px;
+                outline: none;
+                border: 1.5px solid transparent;
+                &.cancel-btn {
+                    color: $white;
+                    background: $black;
+                    &:hover {
+                        background: $white;
+                        color: $black;
+                        border: 1.5px solid $default;
+                    }
+                }
+                &.delete-btn {
+                    background: $coral;
+                    color: $white;
+                    &:hover {
+                        background: $white;
+                        color: $coral;
+                        border: 1.5px solid $coral;
+                    }
+                }
             }
         }
     }

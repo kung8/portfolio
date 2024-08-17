@@ -7,7 +7,7 @@ const GROCERY_ITEM_ID = 'grocery-list-item-';
 const EmptyGroceryListItem = ({ setGroceryList }) => {
     const [inputValue, setInputValue] = useState('');
     const [checked, setChecked] = useState(false);
-    
+
     return (
         <div className="grocery-list-item">
             <input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} />
@@ -91,23 +91,41 @@ const GroceryListItem = ({ checked, index, groceryList, name, setGroceryList }) 
 }
 
 export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryList }) => {
-    const showClass = show ? 'opened' : '';
+    const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+    const [deleteType, setDeleteType] = useState(null);
+    const showClass = show || isDeleteModalOpen ? 'opened' : '';
 
-    const deleteChecked = () => setGroceryList(prev => prev.filter(item => !item.checked));
+    const openDeleteModal = (type) => {
+        setIsDeleteModalOpen(true);
+        setDeleteType(type);
+    }
 
-    const deleteAll = () => {
-        setGroceryList([]);
+    const closeDeleteModal = () => {
+        setIsDeleteModalOpen(false);
+        setDeleteType(null);
+    }
+
+    const handleDelete = () => {
+        if (!deleteType) return;
+        if (deleteType === 'checked') {
+            setGroceryList(prev => prev.filter(item => !item.checked));
+        } else if (deleteType === 'all') {
+            setGroceryList([]);
+        }
+        closeDeleteModal();
     }
 
     useEffect(() => {
         if (show && document.getElementById(EMPTY_GROCERY_ITEM_ID)) {
             document.getElementById(EMPTY_GROCERY_ITEM_ID).focus();
         }
-    }, [show])
+    }, [show]);
+
+    const deleteTitle = deleteType === 'all' ? 'Are you sure you want to delete all the items?' : 'Are you sure you want to delete all the checked items?'
 
     return (
         <>
-            <div className={`overlay ${showClass}`} onClick={handleClose} />
+            <div className={`overlay ${showClass} ${isDeleteModalOpen ? 'layered-opened' : ''}`} onClick={isDeleteModalOpen ? closeDeleteModal : handleClose} />
             <div className={`grocery-list-modal ${showClass}`}>
                 <div className="modal-header">
                     <h3>Grocery List</h3>
@@ -122,10 +140,24 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                     <EmptyGroceryListItem setGroceryList={setGroceryList} />
                 </div>
                 <div className="modal-footer">
-                    <span onClick={groceryList.filter(item => item.checked).length > 0 ? deleteChecked : undefined} className={groceryList.filter(item => item.checked).length > 0 ? 'has-values' : ''}>Delete Checked</span>
-                    <span onClick={groceryList.length > 0 ? deleteAll : undefined} className={groceryList.length > 0 ? 'has-values' : ''}>Delete All</span>
+                    <span onClick={groceryList.filter(item => item.checked).length > 0 ? () => openDeleteModal('checked') : undefined} className={groceryList.filter(item => item.checked).length > 0 ? 'has-values' : ''}>Delete Checked</span>
+                    <span onClick={groceryList.length > 0 ? () => openDeleteModal('all') : undefined} className={groceryList.length > 0 ? 'has-values' : ''}>Delete All</span>
                 </div>
             </div>
+            {isDeleteModalOpen && (
+                <div className="delete-grocery-item-modal">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h3>{deleteTitle}</h3>
+                            <img src={closeBtn} alt="close" onClick={closeDeleteModal} />
+                        </div>
+                        <div className="modal-footer">
+                            <button className="cancel-btn" onClick={closeDeleteModal}>No</button>
+                            <button className="delete-btn" onClick={handleDelete}>Yes</button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </>
     )
 }
