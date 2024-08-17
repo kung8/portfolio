@@ -103,5 +103,8 @@ module.exports = {
         { step: 'If the sauce is too thick, add a teaspoon of water at a time to thin it out.', type: SECTIONS.SAUCE },
 
         { step: 'While sauce is hot, drizzle onto the chicken and serve with rice.', type: SECTIONS.SERVE, img: rice },
+    ],
+    notes: [
+        'Be sure the oil is hot enough or else the chicken/batter will just soak in the oil and will not get browned.'
     ]
 };
