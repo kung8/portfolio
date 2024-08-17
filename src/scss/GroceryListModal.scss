@@ -15,8 +15,13 @@
 
     &.layered-opened {
         z-index: 4;
-        margin-left: -80px;
     }
+}
+
+.grocery-list-modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grocery-list-modal {
@@ -103,6 +108,10 @@
 
         span {
             color: $default;
+            @include down($mobile) {
+                font-size: 12px;
+            }
+
             &.has-values {
                 color: $primary-blue;
                 cursor: pointer;
@@ -115,11 +124,11 @@
     position: absolute;
     top: 0;
     z-index: 5;
-    padding: 36px 48px;
+    padding: 24px;
     background: $dark-aqua;
-    margin: 50vh auto;
-    transform: translate(50%, -50%);
-    width: 600px;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    width: unquote("min(calc(100% - 16px), 600px)");
 
     .modal-content {
         display: flex;
@@ -129,16 +138,17 @@
         .modal-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
             width: 100%;
+            column-gap: 16px;
             h3 {
                 font-size: 16px;
                 font-weight: 400;
             }
             img {
-                width: 20px;
-                height: 20px;
+                width: 19px;
+                height: 19px;
                 cursor: pointer;
+                padding: 1.5px;
             }
         }
 

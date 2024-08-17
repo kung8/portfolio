@@ -125,6 +125,7 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
 
     return (
         <>
+        <div className="grocery-list-modal-container">
             <div className={`overlay ${showClass} ${isDeleteModalOpen ? 'layered-opened' : ''}`} onClick={isDeleteModalOpen ? closeDeleteModal : handleClose} />
             <div className={`grocery-list-modal ${showClass}`}>
                 <div className="modal-header">
@@ -158,6 +159,7 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                     </div>
                 </div>
             )}
+        </div>
         </>
     )
 }
