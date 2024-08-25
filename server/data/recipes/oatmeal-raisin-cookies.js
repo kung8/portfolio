@@ -9,6 +9,7 @@ const plated = '../assets/Products/oatmeal-raisin-cookies-plated.jpeg';
 const raisin = '../assets/Products/oatmeal-raisin-cookies-raisins-added.jpeg';
 const raw = '../assets/Products/oatmeal-raisin-cookies-raw-pan.jpeg';
 const zoomed = '../assets/Products/oatmeal-raisin-cookies-zoomed.jpeg';
+const chocolate = '../assets/Products/oatmeal-raisin-cookies-with-chocolate-chips.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 
 module.exports = {
@@ -40,6 +41,7 @@ module.exports = {
         { name: 'vanilla extract', amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { name: 'oats', amount: '3 c', additionalDetails: 'non-instant', section: SECTIONS.MAIN },
         { name: 'raisins', amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { name: 'chocolate chips', amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },
@@ -55,8 +57,9 @@ module.exports = {
         { step: 'Slowly add the softened butter, eggs, and vanilla. Mix as each component is added.', type: SECTIONS.MAIN, img: liquid },
         { step: 'Mix as you slowly add the oats.', type: SECTIONS.MAIN, img: oatmeal },
         { step: 'Mix as you slowly add the raisins.', type: SECTIONS.MAIN, img: raisin },
+        { step: 'Optionally add chocolate chips.', type: SECTIONS.MAIN, img: raisin },
         { step: 'Shape the dough into 1 inch balls. Place them onto a baking sheet.', type: SECTIONS.MAIN, img: raw },
-        { step: 'Bake until the cookies are golden brown (about 12 to 13 minutes).', type: SECTIONS.MAIN, img: zoomed },
+        { step: 'Bake until the cookies are golden brown (about 12 to 13 minutes).', type: SECTIONS.MAIN, img: [zoomed, chocolate] },
         { step: 'Remove the cookies from the oven. Let the cookies sit on the baking sheet for at least 2 minutes before transferring to a cooling rack.', type: SECTIONS.MAIN, img: cooled },
         { step: 'Enjoy these crispy treats.', type: SECTIONS.MAIN, img: plated },
     ]
