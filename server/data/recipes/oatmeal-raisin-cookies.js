@@ -9,8 +9,8 @@ const plated = '../assets/Products/oatmeal-raisin-cookies-plated.jpeg';
 const raisin = '../assets/Products/oatmeal-raisin-cookies-raisins-added.jpeg';
 const raw = '../assets/Products/oatmeal-raisin-cookies-raw-pan.jpeg';
 const zoomed = '../assets/Products/oatmeal-raisin-cookies-zoomed.jpeg';
-const chocolate = '../assets/Products/oatmeal-raisin-cookies-with-chocolate-chips.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const chocolate = '../assets/Products/oatmeal-raisin-cookies-with-chocolate-chip.jpeg';
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 
 module.exports = {
     cardName: 'Oatmeal Raisin Cookies',
