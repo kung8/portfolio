@@ -12,7 +12,7 @@ const butter = '../assets/Products/philly-cheesesteak-pizza-butter.jpeg';
 const cookedSteak = '../assets/Products/philly-cheesesteak-pizza-cooked-steak.jpeg';
 const zoomed = '../assets/Products/philly-cheesesteak-pizza-cooked-zoomed.jpeg';
 const zoomed1 = '../assets/Products/philly-cheesesteak-pizza-cooked-zoomed-1.jpeg';
-const cooked = '../assets/Products/philly-cheesesteak-pizza-cooked.jpeg';
+const phillyCooked = '../assets/Products/philly-cheesesteak-pizza-cooked.jpeg';
 const flour = '../assets/Products/philly-cheesesteak-pizza-flour.jpeg';
 const garlicMilk = '../assets/Products/philly-cheesesteak-pizza-milk-and-garlic.jpeg';
 const oilSteak = '../assets/Products/philly-cheesesteak-pizza-oil.jpeg';
@@ -22,6 +22,11 @@ const seared = '../assets/Products/philly-cheesesteak-pizza-seared-steak.jpeg';
 const strips = '../assets/Products/philly-cheesesteak-pizza-steak-strips.jpeg';
 const steak = '../assets/Products/philly-cheesesteak-pizza-steak.jpeg';
 const topped = '../assets/Products/philly-cheesesteak-pizza-topped.jpeg';
+const cooked = '../assets/Products/pizza-cooked.jpeg';
+const well = '../assets/Products/pizza-flour-well.jpeg';
+const wellWater = '../assets/Products/pizza-flour-well-with-water.jpeg';
+const expandedWell = '../assets/Products/pizza-flour-expanded-well-with-water.jpeg';
+const dough = '../assets/Products/pizza-dough-in-bowl.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS } = require("./constants");
 
 const PHILLY_CHEESESTEAK_SAUCE = 'Philly Cheesesteak Sauce';
@@ -92,8 +97,8 @@ module.exports = {
     ],
     directions: [
         { step: 'On a clean counter, combine flour, salt, and yeast by hand. We are making focaccia bread.', type: SECTIONS.DOUGH },
-        { step: 'Form a well in the center of the mixture and slowly add water and honey.', type: SECTIONS.DOUGH },
-        { step: 'Continue to work the liquid into the entire mixture until the dough becomes only a little sticky.', type: SECTIONS.DOUGH, img: ball },
+        { step: 'Form a well in the center of the mixture and slowly add water and honey.', type: SECTIONS.DOUGH, img: [well, wellWater, expandedWell] },
+        { step: 'Continue to work the liquid into the entire mixture until the dough becomes only a little sticky.', type: SECTIONS.DOUGH, img: [dough, ball] },
         { step: 'Coat the inside of a large bowl with some oil.', type: SECTIONS.DOUGH, img: oil },
         { step: 'Place the dough inside that oiled bowl and cover with plastic wrap or a cooking towel and refrigerate between 48 to 72 hours. This allows the dough to rise and adds flavor.', type: SECTIONS.DOUGH, img: oilDough },
         { step: 'When you are ready to make the pizza, preheat the oven too 450ºF.', type: SECTIONS.DOUGH },
@@ -118,7 +123,7 @@ module.exports = {
         { step: 'Add the other ingredients evenly across the pizza and follow the baking steps below.', type: PHILLY_CHEESESTEAK_PIZZA, img: topped },
         { step: 'Place the shaped dough on the pan and add your favorite toppings.', type: SECTIONS.MAIN },
         { step: 'Bake the pizza for 20 to 25 minutes or until a nice golden brown.', type: SECTIONS.MAIN },
-        { step: 'Enjoy these slices of heaven with friends and family.', type: SECTIONS.MAIN, img: [pizzaSpread, pizza, cooked, zoomed1] },
+        { step: 'Enjoy these slices of heaven with friends and family.', type: SECTIONS.MAIN, img: [pizzaSpread, pizza, cooked, phillyCooked, zoomed1] },
         { step: 'If you have any leftover dough that you aren\'t ready to use, you can freeze it and make pizzas, breadsticks, or cheeseballs.', type: SECTIONS.MAIN, img: frozenDough },
     ],
     notes: [
