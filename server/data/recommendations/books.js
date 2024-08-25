@@ -21,6 +21,73 @@ module.exports = {
         // },
         {
             date: "8/24",
+            title: "Mistborn: The Final Empire",
+            author: ["Brandon Sanderson"],
+            source: ["Paige Wardle"],
+            review: [
+                "At the beginning it was pretty slow character development but it got very good once things started to happen. I thoroughly enjoyed myself. I love the world Sanderson created and Vin's character. She is strong and independent, but still trying to find herself and her place in the world. I am looking forward to continuing the series."
+            ],
+            quotes: [
+                {
+                    text: "That depends. The right belief is like a good cloak, I think. If it fits you well, it keeps you warm and safe. The wrong fit, however, can suffocate.",
+                    pages: [135],
+                    thoughts: "I think it's important to have your own beliefs whatever that may be. It establishes who you are and what you stand for. Tolerance of other's belief is very important too.",
+                    context: "Vin and Sazed are speaking about the vast religions Sazed has studied."
+                },
+                {
+                    text: "The best liars are those who tell the truth most of the time.",
+                    pages: [224],
+                    thoughts: "Yes it's true that the best lies have elements of truth in them, to make them more believable.",
+                    context: "Vin who has always been skeptical of others because of her upbringing, is always questioning what other people say."
+                },
+                {
+                    text: "Kelsier shrugged. \"I think...I think given the choice between loving Mare--betrayal included--and never knowing her, I'd choose love. I risked, and I lost, but the risk was still worth it. It's the same with my friends. Suspicion is healthy in our profession--but only to an extent. I'd rather trust my men than worry about what will happen if they turn on me.\"",
+                    pages: [235],
+                    thoughts: "It's sweet to think that he would choose love even with all the weight that it carries. He has accepted the risks that come with love and friendship. I think that's a great attitude to have. I have been told by people that I don't open up enough to others. I think it's because I'm afraid of getting hurt.",
+                    context: "Kelsier doesn't like talking about his wife but he's opening up to Vin about his past and explains that "
+                },
+                {
+                    text: "But what is money? A physical representation of the abstract concept of effort.",
+                    pages: [329],
+                    thoughts: "It's interesting if you really think about it. Money is just an idea that we as society have associated to power.",
+                    context: "Ham abstracted the concept of money and effort."
+                },
+                {
+                    text: "If you're always on time, it implies that you never have anything better you should be doing.",
+                    pages: [368],
+                    thoughts: "I don't completely agree with this but I think it's funny. I think there are a lot of people who are always on time and have a lot of things to do and in the same breath there are people who are always late and have nothing to do.",
+                    context: "Kelsier is always late and retorts when he gets called out on it."
+                },
+                {
+                    text: "You don't stop loving someone just because they hurt you...It would certainly make things easier if you did.",
+                    pages: [430],
+                    thoughts: "People can hurt us in many ways. But this becomes very apparent how strong our love is when this happens.",
+                    context: "Kelsier is talking to Vin about his wife, whom betrayed him to the Lord Ruler."
+                },
+                {
+                    text: "It's not you...really it isn't. It's just that...well, you can't help who you love. Trust me, there are some people I really would rather not have loved. They didn't deserve it.",
+                    pages: [443],
+                    thoughts: "We have family members who are easy to love and some that aren't. We have a little more control on the friends that we choose to have. In a romantic sense we typically have a choice as well. But I can understand Vin's feeling of falling in love with someone because you have associated yourself with them for so long.",
+                    context: "Vin casually mentions to Spook that she loves Elend, which I'm sure is the last thing Spook wants to hear from someone he likes."
+                },
+                {
+                    text: "Once maybe I would have thought you a fool, but...well, that's kind of what trust is, isn't it? A willful self-delusion? You have to shut out that voice that whispers about betrayal, and just hope that your friends aren't going to hurt you.",
+                    pages: [444, 445],
+                    thoughts: "Trust is a hard thing to give. Throughout this book Vin has slowly come to understand that trusting in others has made her life more enjoyable.",
+                    context: "Vin is sharing with Kelsier some things she's been taught by him and the crew. Specifically about trust."
+                },
+                {
+                    text: "Sazed shook his head, walking over to stand beside her. \"Belief isn't simply a thing for fair times and bright days, I think. What is belief--what is faith--if you don't continue in it after failure?...Anyone can believe in someone, or something, that always succeed, mistress. But failure...now, that is hard to believe in, certainly and truly. Difficult enough to have value, I think.\"",
+                    pages: [481],
+                    thoughts: "This idea of belief is very true. Belief shouldn't be something that you change when things get hard. I think belief in something should help you get through both the easy and hard times.",
+                    context: "Sazed explains to Vin what Kelsier was trying to do and what he believed in."
+                },
+            ],
+            image: "",
+            rating: 5,
+        },
+        {
+            date: "8/24",
             title: "Beach Read",
             author: ["Emily Henry"],
             review: [
@@ -421,7 +488,7 @@ module.exports = {
                 "Need to set the right priorities, be willing to adjust plans to refocus, clear priorities communication, prioritize then execute",
                 "Lead up the chain, communication is very important up and down the chain, take ownership",
             ],
-            rating: 2.5,
+            rating: 3,
         },
         {
             date: "1/24",
@@ -613,7 +680,7 @@ module.exports = {
             author: ["Judy Blume"],
             source: ["classic"],
             review: [
-                "again another hilarious book where we hear the ridiculous adventures of a family. The fact that Fudge has become obsessed with money seems all too familiar with childhood and the hopes and dreams that one day you'll be rich is something that I feel each child has thought of."
+                "Again another hilarious book where we hear the ridiculous adventures of a family. The fact that Fudge has become obsessed with money seems all too familiar with childhood and the hopes and dreams that one day you'll be rich is something that I feel each child has thought of."
             ],
             rating: 5,
         },
@@ -623,7 +690,7 @@ module.exports = {
             author: ["Judy Blume"],
             source: ["classic"],
             review: [
-                "this hilarious children's book was exactly what I remember it being from my teacher's reading of it. The characters were precious."
+                "This hilarious children's book was exactly what I remember it being from my teacher's reading of it. The characters were precious."
             ],
             rating: 5,
         },
@@ -633,7 +700,7 @@ module.exports = {
             author: ["Judy Blume"],
             source: ["classic"],
             review: [
-                "this children's book was cute and had some funny childish/childlike scenes and reactions that I could very much see children do, so Judy Blume did a fantastic job capturing childhood. This was listened through audiobook."
+                "This children's book was cute and had some funny childish/childlike scenes and reactions that I could very much see children do, so Judy Blume did a fantastic job capturing childhood. This was listened through audiobook."
             ],
             rating: 5,
         },
@@ -643,7 +710,7 @@ module.exports = {
             author: ["Judy Blume"],
             source: ["classic"],
             review: [
-                "it was nostalgic to revisit this book series. I didn't remember this book at all. It was a cute listen of a family and their relationships, growth and development as individuals and as a family, and problems and real life situations that we go through on a daily (maybe not all of those now that I've grown up)."
+                "It was nostalgic to revisit this book series. I didn't remember this book at all. It was a cute listen of a family and their relationships, growth and development as individuals and as a family, and problems and real life situations that we go through on a daily (maybe not all of those now that I've grown up)."
             ],
             rating: 5,
         },
@@ -673,7 +740,7 @@ module.exports = {
             author: ["E.B. White"],
             source: ["classic"],
             review: [
-                "cute story of a girl, pig and a spider. This nostalgic book, since a little kid, when a teacher/librarian read it to me. I listened to it on an audiobook since I am recovering from Lasik surgery. It was a beautiful story and so cute to hear the innocence of a pig and a little girl."
+                "Cute story of a girl, pig and a spider. This nostalgic book, since a little kid, when a teacher/librarian read it to me. I listened to it on an audiobook since I am recovering from Lasik surgery. It was a beautiful story and so cute to hear the innocence of a pig and a little girl."
             ],
             rating: 5,
         },
@@ -683,7 +750,7 @@ module.exports = {
             author: ["Richard Osman"],
             source: ["Adrianna Cesar"],
             review: [
-                "this third book in this series was kind of hard to follow since it jumped between several people and I got the gist based off contextual flashbacks/references since I didn't read the first two books prior to this one. However as soon I passed a lot of the backstory and focused on the progression of the crime it became great! I enjoyed the mystery and it seemed to have potentially two mysteries in it. The ending felt like it dragged on but I am glad I stuck it out to the end. Some confusing things presented itself with the deaths but it got clarified at the end. "
+                "This third book in this series was kind of hard to follow since it jumped between several people and I got the gist based off contextual flashbacks/references since I didn't read the first two books prior to this one. However as soon I passed a lot of the backstory and focused on the progression of the crime it became great! I enjoyed the mystery and it seemed to have potentially two mysteries in it. The ending felt like it dragged on but I am glad I stuck it out to the end. Some confusing things presented itself with the deaths but it got clarified at the end. "
             ],
             quotes: [
                 {
@@ -718,7 +785,7 @@ module.exports = {
             author: ["Catherine Steadman"],
             source: ["Kindle/Libby"],
             review: [
-                "the background story was far too long. I started to get suspicious and a lot of these books I've been reading recently kind of have the same turn of events. I think there were too many side stories that garbled the main plot. Nearly after the main character, Erin, starts to act on her intuition things started to get interesting but it took way too long to get to that point. There were some parts that it went into too many details unnecessarily like the part where she describes how a Glock 22 works."
+                "The background story was far too long. I started to get suspicious and a lot of these books I've been reading recently kind of have the same turn of events. I think there were too many side stories that garbled the main plot. Nearly after the main character, Erin, starts to act on her intuition things started to get interesting but it took way too long to get to that point. There were some parts that it went into too many details unnecessarily like the part where she describes how a Glock 22 works."
             ],
             quotes: [
                 {
@@ -735,7 +802,7 @@ module.exports = {
             author: ["Kevin Kwan"],
             source: ["series"],
             review: [
-                "sequel to the beloved Crazy Rich Asians, not as good as the first. It's more of a drama and very interested in how they will portray it in the movie. It was a lot of build up and I never felt like I couldn't put the book down until around the last quarter of the book. Spoiler alert there's a poisoning. The biggest takeaway from the book was to not let money change who you are. It's crazy how poorly people treated their employees because they had money. One of the characters I really liked, but turned out to be a monster. The story of Michael and Astrid is something that I am always scared about happening to me, I am someone who can relate to Michael's story of having to work very hard to get to where I am today (not without help from others btw) and I don't ever want to make others feel bad around me. I have recognized I have lived a more lavish lifestyle with buying Legos and pretty much what I have wanted without considering finances the past couple of years. I need to be better. "
+                "Sequel to the beloved Crazy Rich Asians, not as good as the first. It's more of a drama and very interested in how they will portray it in the movie. It was a lot of build up and I never felt like I couldn't put the book down until around the last quarter of the book. Spoiler alert there's a poisoning. The biggest takeaway from the book was to not let money change who you are. It's crazy how poorly people treated their employees because they had money. One of the characters I really liked, but turned out to be a monster. The story of Michael and Astrid is something that I am always scared about happening to me, I am someone who can relate to Michael's story of having to work very hard to get to where I am today (not without help from others btw) and I don't ever want to make others feel bad around me. I have recognized I have lived a more lavish lifestyle with buying Legos and pretty much what I have wanted without considering finances the past couple of years. I need to be better. "
             ],
             rating: 3,
         },
@@ -747,7 +814,7 @@ module.exports = {
             review: [
                 "Another one of Alex's great writings. I enjoyed the intrigue and this fantastic mystery. At times I kept saying this is the last chapter but then he left me wanting to read more especially since it was very short chapters. The physical connection between this book and the Silent Patient was great where he bridged the two main characters' story and intertwined their universes. I enjoyed the romantic tease and that the characters at some point were up on the chopping block in my mind of the killers. Each could have had a motive and some of the journal entries from the killer was probably kept me the most intrigued as they evolved into that killer."
             ],
-            rating: 3,
+            rating: 4,
         },
         {
             date: "2/23",
@@ -1001,9 +1068,34 @@ module.exports = {
     ],
     recommendations: [
         {
-            title: "Mistborn",
-            author: ["Brandon Sanderson"],
-            source: ["Paige Wardle"],
+            title: "The Importance of Being Little",
+            author: ["Erika Christakis"],
+            source: ["Online"],
+        },
+        {
+            title: "The Photo Album",
+            author: ["Brian O'Sullivan"],
+            source: ["Online"],
+        },
+        {
+            title: "Th1rt3en",
+            author: ["Steve Savanagh"],
+            source: ["Online"],
+        },
+        {
+            title: "Twilight Territory",
+            author: ["Andrew Pham"],
+            source: ["Online"],
+        },
+        {
+            title: "How to Hug a Porcupine",
+            author: ["Dr. Debbie Ellis"],
+            source: ["Online"],
+        },
+        {
+            title: "How to Talk So Kids Will Listen & Listen So Kids Will Talk",
+            author: ["Adele Faber", "Elaine Mazlish"],
+            source: ["Online"],
         },
         {
             title: "Stormlight",
