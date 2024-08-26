@@ -91,6 +91,8 @@ const smoothie = require("./recipes/smoothie");
 const smores = require("./recipes/smores");
 const snickerdoodle = require("./recipes/snickerdoodle-cookies");
 const soupBowl = require("./recipes/broccoli-cheese-soup-bowl");
+const sourdoughBread = require("./recipes/sourdough-bread");
+const sourdoughStarter = require("./recipes/sourdough-starter");
 const southwestSalad = require("./recipes/southwest-salad");
 const sushi = require("./recipes/sushi");
 const tacoInABag = require("./recipes/taco-in-a-bag");
@@ -162,6 +164,8 @@ const recipes = [
     bakedBreadedChicken,
     phillyCheesesteak,
     hawaiianHaystacks,
+    sourdoughStarter,
+    sourdoughBread,
     bbqPulledPorkAndFixins,
     bbqChickenWings,
     malaysianSatay,

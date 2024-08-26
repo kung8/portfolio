@@ -1,6 +1,8 @@
 import { useQuery } from 'react-query';
 import axios from 'axios';
 
+const getApiCall = (type, id, option = {}) => axios.get('/api/data?type=' + type + (id ? '&id=' + id : ''), option)
+
 export const useGetData = (type, id) =>
     useQuery({
         queryKey: ['getData', type, id],
@@ -8,7 +10,7 @@ export const useGetData = (type, id) =>
             const CancelToken = axios.CancelToken;
             const source = CancelToken.source();
 
-            const response = axios.get('/api/data?type=' + type + (id ? '&id=' + id : ''), {
+            const response = getApiCall(type, id, {
                 // Pass the source token to your request
                 cancelToken: source.token,
             })
@@ -27,3 +29,5 @@ export const useGetData = (type, id) =>
         refetchOnWindowFocus: false,
         refetchOnReconnect: false,
     })
+
+export const getAsyncData = (type, id) => getApiCall(type, id);

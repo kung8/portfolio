@@ -1,43 +1,71 @@
 import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
-import { useGetData } from '../../hooks';
+import { getAsyncData, useGetData } from '../../hooks';
 import { Loader } from '../Loader';
 import { NonDashboardPage } from '../Page';
 import list from './list.png';
 import { GroceryListModal } from './GroceryListModal';
 import { useGroceryList } from './use-grocery-list';
 
-const IngredientItem = ({ index, item, selectedIngredients, setSelectedIngredients }) => {
+const formatIngredientItem = (item) => {
+    const amount = item.amount ? item.amount + ' ' : '';
+    const name = item.name;
+    const additionalDetails = item.additionalDetails ? ', ' + item.additionalDetails : '';
+    return amount + name + additionalDetails;
+}
+
+const getIngredientData = (recipeName, ingredient, index) => ({
+    name: formatIngredientItem(ingredient),
+    index,
+    linkId: ingredient.linkId,
+    category: ingredient.category,
+    recipeName,
+});
+
+const IngredientItem = ({ index, item, link, selectedIngredients, setSelectedIngredients }) => {
     const [checked, setChecked] = useState(false);
 
     useEffect(() => {
-        setChecked(!!selectedIngredients.find(i => i.name === item && i.index === index));
-    }, [selectedIngredients, item]);
+        setChecked(!!selectedIngredients.find(i => i.name === item.name && i.index === index));
+    }, [selectedIngredients, item.name]);
 
     const handleCheckboxChange = () => {
-        const included = selectedIngredients.find(i => i.name === item && i.index === index);
+        const included = selectedIngredients.find(i => i.name === item.name && i.index === index);
         if (included) {
             // removes the ingredient if it's already included
-            const newSelectedIngredients = selectedIngredients.filter(item => item.name !== item && item.index !== index);
+            const newSelectedIngredients = selectedIngredients.filter(item => item.name !== item.name && item.index !== index);
             setSelectedIngredients(newSelectedIngredients);
-        } else {            
+        } else {
             // adds the ingredient if it's not included
-            setSelectedIngredients([...selectedIngredients, { name: item, index }]);
+            setSelectedIngredients([...selectedIngredients, getIngredientData(item.recipeName, item, index)]);
         }
     }
+
+    const getLink = () => {
+        const isDev = process.env.NODE_ENV === 'development';
+        return link.url.includes('http') ? link.url : (isDev ? 'http://localhost:3000/#/' : 'https://kevinung8.com/#/') + link.url;
+    }
+
+    const labelId = item.name + '-' + index;
 
     return (
         <div className="checkbox-ingredient-container">
             <input
                 type="checkbox"
-                id={item + '-' + index}
+                id={labelId}
                 checked={checked}
                 className="checkbox-ingredient"
                 onChange={handleCheckboxChange}
             />
-            <label htmlFor={item + '-' + index}>
-                {item}
-            </label>
+            {link ? (
+                <a href={getLink()} target="_blank" rel="noopener noreferrer" className="ingredient-label-with-link">
+                    {item.name}
+                </a>
+            ) : (
+                <label htmlFor={labelId}>
+                    {item.name}
+                </label>
+            )}
         </div>
     )
 };
@@ -109,7 +137,7 @@ export const Recipe = ({ match }) => {
         item.ingredients.reduce((acc, ingredient, index) => {
             if (ingredient.section && !acc[ingredient.section]) acc[ingredient.section] = [];
             if (ingredient.section && acc[ingredient.section]) {
-                acc[ingredient.section].push({ ...ingredient, index });
+                acc[ingredient.section].push({ ...ingredient, index, linkId: ingredient.link?.id });
             }
             return acc;
         }, {});
@@ -178,13 +206,6 @@ export const Recipe = ({ match }) => {
         }
     }, [selectedFigureLabel]);
 
-    const formatIngredientItem = (item) => {
-        const amount = item.amount ? item.amount + ' ' : '';
-        const name = item.name;
-        const additionalDetails = item.additionalDetails ? ', ' + item.additionalDetails : '';
-        return amount + name + additionalDetails;
-    }
-
     const formatLink = (link) => link ? (
         <>
             <a href={link.link} target="_blank" rel="noopener noreferrer" className="link-text">
@@ -219,7 +240,9 @@ export const Recipe = ({ match }) => {
                 <div className="recipe-details">
                     {item.img ? <img src={item.img} alt={item.name} className="recipe-image" /> : <div className="recipe-image empty">Image Coming Soon!</div>}
                     <p className="prep-time">Prep Time: {item.prepTime}</p>
-                    <p className="cook-time">Cook Time: {item.cookTime}</p>
+                    {item.cookTime && (
+                        <p className="cook-time">Cook Time: {item.cookTime}</p>
+                    )}
                     <p className="yields">Yields: {item.yields}</p>
 
                     {item.appliances && item.appliances.length > 0 && (
@@ -260,10 +283,10 @@ export const Recipe = ({ match }) => {
                                         setSelectedIngredients([]);
                                     } else {
                                         if (item.separated) {
-                                            const newIngredients = Object.values(formattedIngredients).flatMap((group) => group[1].map(ingredient => ({ name: formatIngredientItem(ingredient), index: ingredient.index })));
+                                            const newIngredients = Object.values(formattedIngredients).flatMap((group) => group[1].map(ingredient => getIngredientData(item.name, ingredient, ingredient.index)));
                                             setSelectedIngredients(newIngredients);
                                         } else {
-                                            const newIngredients = item.ingredients.map((ingredient, index) => ({ name: formatIngredientItem(ingredient), index }))
+                                            const newIngredients = item.ingredients.map((ingredient, index) => getIngredientData(item.name, ingredient, index));
                                             setSelectedIngredients(newIngredients);
                                         }
                                     }
@@ -273,10 +296,23 @@ export const Recipe = ({ match }) => {
                             </span>
                             <span
                                 className={`add-to-list-button ${selectedIngredients.length > 0 ? 'active' : ''}`}
-                                onClick={() => {
-                                    setGroceryList([...groceryList, ...selectedIngredients.map(item => ({ name: item.name, checked: false }))]);
-                                    handleOpen();
-                                    setSelectedIngredients([]);
+                                onClick={async () => {
+
+                                    console.log(selectedIngredients);
+                                    
+
+                                    const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {
+                                        if (item.linkId) {
+                                            const response = await getAsyncData('recipes', item.linkId);
+                                            return response?.data?.[0]?.ingredients?.map((ingredient, index) => getIngredientData(response.data[0].name, ingredient, index + item.index));
+                                        }
+                                        return { ...item, checked: false };
+                                    })];
+                                    Promise.all(newIngredientsToAdd).then((newIngredientsToAdd) => {
+                                        setGroceryList(newIngredientsToAdd.flat());
+                                        handleOpen();
+                                        setSelectedIngredients([]);
+                                    });
                                 }}
                             >
                                 Add to List
@@ -291,7 +327,16 @@ export const Recipe = ({ match }) => {
                                     <h5 className="separated-recipe-detail-label">{section}</h5>
                                     {ingredients.map((ingredient) => {
                                         const formattedIngredient = formatIngredientItem(ingredient);
-                                        return <IngredientItem key={formattedIngredient + '-' + ingredient.index} index={ingredient.index} item={formattedIngredient} selectedIngredients={selectedIngredients} setSelectedIngredients={setSelectedIngredients} />
+                                        return (
+                                            <IngredientItem
+                                                key={formattedIngredient + '-' + ingredient.index}
+                                                index={ingredient.index}
+                                                item={{ name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
+                                                link={ingredient.link}
+                                                selectedIngredients={selectedIngredients}
+                                                setSelectedIngredients={setSelectedIngredients}
+                                            />
+                                        )
                                     })}
                                 </div>
                             ))}
@@ -300,7 +345,16 @@ export const Recipe = ({ match }) => {
                         <div className="recipe-container">
                             {item?.ingredients?.map((ingredient, index) => {
                                 const formattedIngredient = formatIngredientItem(ingredient);
-                                return <IngredientItem key={formattedIngredient + '-' + index} index={index} item={formattedIngredient} selectedIngredients={selectedIngredients} setSelectedIngredients={setSelectedIngredients} />
+                                return (
+                                    <IngredientItem
+                                        key={formattedIngredient + '-' + index}
+                                        index={index}
+                                        item={{ name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
+                                        link={ingredient.link}
+                                        selectedIngredients={selectedIngredients}
+                                        setSelectedIngredients={setSelectedIngredients}
+                                    />
+                                )
                             })}
                         </div>
                     )}

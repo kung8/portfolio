@@ -133,6 +133,11 @@
                     min-width: 16px;
                     transform: translateY(2px);
                 }
+                .ingredient-label-with-link {
+                    color: $primary-blue;
+                    text-underline-offset: 4px;
+                    cursor: pointer;
+                }
             }
             .separated-recipe-detail-list {
                 margin-bottom: 24px;

@@ -68,12 +68,39 @@
 
         .grocery-list-item {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+            row-gap: 8px;
             column-gap: 8px;
+            width: 100%;
 
             input[type="checkbox"] {
                 min-height: 20px;
                 min-width: 20px;
+            }
+
+            .grocery-list-item-detail-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 6px;
+                width: calc(100% - 28px);
+    
+                label {
+                    &.checked {
+                        color: $default;
+                        text-decoration: line-through;
+                        font-size: 16px;
+                    }
+                }
+
+                .ingredient-category,
+                .recipe-name {
+                    font-size: 14px;
+                    color: $default;
+                    max-width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
             }
 
             input[type="text"] {
@@ -83,14 +110,6 @@
                 color: $white;
                 width: 100%;
                 font-size: 16px;
-            }
-
-            label {
-                &.checked {
-                    color: $default;
-                    text-decoration: line-through;
-                    font-size: 16px;
-                }
             }
         }
     }

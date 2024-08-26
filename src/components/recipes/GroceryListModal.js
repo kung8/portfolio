@@ -22,6 +22,10 @@ const EmptyGroceryListItem = ({ setGroceryList }) => {
                         setGroceryList(prev => [...prev, { name: inputValue, checked }]);
                         setInputValue('');
                         setChecked(false);
+                        setTimeout(() => {
+                            const container = document.querySelector('.grocery-list');
+                            if (container) container.scrollTop = container.scrollHeight + 20;
+                        }, 50)
                     }
                 }}
             />
@@ -29,7 +33,7 @@ const EmptyGroceryListItem = ({ setGroceryList }) => {
     )
 }
 
-const GroceryListItem = ({ checked, index, groceryList, name, setGroceryList }) => {
+const GroceryListItem = ({ category, checked, index, groceryList, name, recipeName, setGroceryList }) => {
     const [inputValue, setInputValue] = useState(name);
 
     useEffect(() => {
@@ -56,36 +60,40 @@ const GroceryListItem = ({ checked, index, groceryList, name, setGroceryList }) 
                     setGroceryList(newGroceryList);
                 }}
             />
-            {checked ? (
-                <label className={checked ? 'checked' : ''}>{inputValue}</label>
-            ) : (
-                <input
-                    id={GROCERY_ITEM_ID + index}
-                    type="text"
-                    value={inputValue}
-                    onChange={(e) => setInputValue(e.target.value)}
-                    onKeyDown={async (e) => {
-                        const getNextItem = (nextItem, nextIndex) => {
-                            if (nextItem) {
-                                document.getElementById(GROCERY_ITEM_ID + nextIndex).focus();
-                            } else {
-                                document.getElementById(EMPTY_GROCERY_ITEM_ID).focus();
+            <div className="grocery-list-item-detail-container">
+                {checked ? (
+                    <label className={checked ? 'checked' : ''}>{inputValue}</label>
+                ) : (
+                    <input
+                        id={GROCERY_ITEM_ID + index}
+                        type="text"
+                        value={inputValue}
+                        onChange={(e) => setInputValue(e.target.value)}
+                        onKeyDown={async (e) => {
+                            const getNextItem = (nextItem, nextIndex) => {
+                                if (nextItem) {
+                                    document.getElementById(GROCERY_ITEM_ID + nextIndex).focus();
+                                } else {
+                                    document.getElementById(EMPTY_GROCERY_ITEM_ID).focus();
+                                }
                             }
-                        }
 
-                        if (e.key === 'Enter') {
-                            const nextIndex = index + 1;
-                            const nextItem = groceryList[nextIndex];
-                            if (!inputValue) {
-                                await setGroceryList(prev => prev.filter((_, i) => i !== index))
-                                getNextItem(nextItem, index);
-                            } else {
-                                getNextItem(nextItem, nextIndex);
+                            if (e.key === 'Enter') {
+                                const nextIndex = index + 1;
+                                const nextItem = groceryList[nextIndex];
+                                if (!inputValue) {
+                                    await setGroceryList(prev => prev.filter((_, i) => i !== index))
+                                    getNextItem(nextItem, index);
+                                } else {
+                                    getNextItem(nextItem, nextIndex);
+                                }
                             }
-                        }
-                    }}
-                />
-            )}
+                        }}
+                    />
+                )}
+                {category && <span className="ingredient-category">{category}</span>}
+                {recipeName && <span className="recipe-name"><strong>Recipe:</strong> {recipeName}</span>}
+            </div>
         </div>
     )
 }
@@ -125,41 +133,41 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
 
     return (
         <>
-        <div className="grocery-list-modal-container">
-            <div className={`overlay ${showClass} ${isDeleteModalOpen ? 'layered-opened' : ''}`} onClick={isDeleteModalOpen ? closeDeleteModal : handleClose} />
-            <div className={`grocery-list-modal ${showClass}`}>
-                <div className="modal-header">
-                    <h3>Grocery List</h3>
-                    <button className="close" onClick={handleClose}>
-                        <img src={closeBtn} alt="close" onClick={handleClose} />
-                    </button>
-                </div>
-                <div className="grocery-list">
-                    {groceryList.map((item, index) => (
-                        <GroceryListItem key={item.name + '-' + index} {...{ ...item, index, groceryList, setGroceryList }} />
-                    ))}
-                    <EmptyGroceryListItem setGroceryList={setGroceryList} />
-                </div>
-                <div className="modal-footer">
-                    <span onClick={groceryList.filter(item => item.checked).length > 0 ? () => openDeleteModal('checked') : undefined} className={groceryList.filter(item => item.checked).length > 0 ? 'has-values' : ''}>Delete Checked</span>
-                    <span onClick={groceryList.length > 0 ? () => openDeleteModal('all') : undefined} className={groceryList.length > 0 ? 'has-values' : ''}>Delete All</span>
-                </div>
-            </div>
-            {isDeleteModalOpen && (
-                <div className="delete-grocery-item-modal">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h3>{deleteTitle}</h3>
-                            <img src={closeBtn} alt="close" onClick={closeDeleteModal} />
-                        </div>
-                        <div className="modal-footer">
-                            <button className="cancel-btn" onClick={closeDeleteModal}>No</button>
-                            <button className="delete-btn" onClick={handleDelete}>Yes</button>
-                        </div>
+            <div className="grocery-list-modal-container">
+                <div className={`overlay ${showClass} ${isDeleteModalOpen ? 'layered-opened' : ''}`} onClick={isDeleteModalOpen ? closeDeleteModal : handleClose} />
+                <div className={`grocery-list-modal ${showClass}`}>
+                    <div className="modal-header">
+                        <h3>Grocery List</h3>
+                        <button className="close" onClick={handleClose}>
+                            <img src={closeBtn} alt="close" onClick={handleClose} />
+                        </button>
+                    </div>
+                    <div className="grocery-list">
+                        {groceryList.map((item, index) => (
+                            <GroceryListItem key={item.name + '-' + index} {...{ ...item, index, groceryList, setGroceryList }} />
+                        ))}
+                        <EmptyGroceryListItem setGroceryList={setGroceryList} />
+                    </div>
+                    <div className="modal-footer">
+                        <span onClick={groceryList.filter(item => item.checked).length > 0 ? () => openDeleteModal('checked') : undefined} className={groceryList.filter(item => item.checked).length > 0 ? 'has-values' : ''}>Delete Checked</span>
+                        <span onClick={groceryList.length > 0 ? () => openDeleteModal('all') : undefined} className={groceryList.length > 0 ? 'has-values' : ''}>Delete All</span>
                     </div>
                 </div>
-            )}
-        </div>
+                {isDeleteModalOpen && (
+                    <div className="delete-grocery-item-modal">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h3>{deleteTitle}</h3>
+                                <img src={closeBtn} alt="close" onClick={closeDeleteModal} />
+                            </div>
+                            <div className="modal-footer">
+                                <button className="cancel-btn" onClick={closeDeleteModal}>No</button>
+                                <button className="delete-btn" onClick={handleDelete}>Yes</button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </div>
         </>
     )
 }
