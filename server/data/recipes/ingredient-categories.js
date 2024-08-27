@@ -27,6 +27,4 @@ const ingredientCategories = {
     TOYS: 'Toys & Games',
 };
 
-module.exports = {
-    ingredientCategories
-}
+module.exports = ingredientCategories;

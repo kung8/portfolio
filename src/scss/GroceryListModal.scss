@@ -94,12 +94,16 @@
 
                 .ingredient-category,
                 .recipe-name {
-                    font-size: 14px;
+                    font-size: 12px;
                     color: $default;
                     max-width: 100%;
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
+                }
+
+                .ingredient-category {
+                    color: $primary-blue;
                 }
             }
 

@@ -297,10 +297,6 @@ export const Recipe = ({ match }) => {
                             <span
                                 className={`add-to-list-button ${selectedIngredients.length > 0 ? 'active' : ''}`}
                                 onClick={async () => {
-
-                                    console.log(selectedIngredients);
-                                    
-
                                     const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {
                                         if (item.linkId) {
                                             const response = await getAsyncData('recipes', item.linkId);
