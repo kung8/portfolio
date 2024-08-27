@@ -917,7 +917,7 @@ module.exports = {
             author: ["Henry B. Eyring"],
             source: ["Jaden Hansen"],
             review: [
-                "powerful quotes from talks and inspirational messages speaking about our faith, love, patience, effort, trust, relationship with our Father/Savior/Holy Ghost, hope. Quick read (read in one day). Imagery associated with the quotes were beautiful."
+                "Powerful quotes from talks and inspirational messages speaking about our faith, love, patience, effort, trust, relationship with our Father/Savior/Holy Ghost, hope. Quick read (read in one day). Imagery associated with the quotes were beautiful."
             ],
             rating: 5,
         },
@@ -927,7 +927,7 @@ module.exports = {
             author: ["The Church of Jesus Christ of Latter-day Saints"],
             source: ["Casey Peterson"],
             review: [
-                "uplifting messages to young people. There were some odd inserts that should have been better placed though."
+                "Uplifting messages to young people. There were some odd inserts that should have been better placed though."
             ],
             rating: 5,
         },
@@ -937,7 +937,7 @@ module.exports = {
             author: ["Sheri Dew"],
             source: ["Linda Mason"],
             review: [
-                "well written geared towards the importance of specific principles like testimony, vision, identity, purpose. Last half of the book focused on women and the importance of their role."
+                "Well written geared towards the importance of specific principles like testimony, vision, identity, purpose. Last half of the book focused on women and the importance of their role."
             ],
             rating: 5,
         },
@@ -947,7 +947,7 @@ module.exports = {
             author: ["Mary Ann Shaffer", "Annie Barrows"],
             source: ["Rhiannon Sanderson"],
             review: [
-                "interesting. Slower. Love story honestly wasn't the main thing until a little later in the book which about when it got interesting. I liked the ending. The back and forth between characters and varying stories made it difficult to follow."
+                "Interesting. Slower. Love story honestly wasn't the main thing until a little later in the book which about when it got interesting. I liked the ending. The back and forth between characters and varying stories made it difficult to follow."
             ],
             rating: 4,
         },
@@ -957,7 +957,7 @@ module.exports = {
             author: ["Rick Riordan"],
             source: ["Rhiannon Sanderson"],
             review: [
-                "catered to children, a few typos. Story was interesting and loved the connections with real mythology."
+                "Catered to children, a few typos. Story was interesting and loved the connections with real mythology."
             ],
             rating: 4,
         },
