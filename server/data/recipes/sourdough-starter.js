@@ -1,4 +1,11 @@
-const starter = '../assets/Products/sourdough-starter.jpeg';
+const base = '../assets/Products/sourdough-starter-base.jpeg';
+const risen = '../assets/Products/sourdough-starter-risen.jpeg';
+const zoomed = '../assets/Products/sourdough-starter-risen-zoomed.jpeg';
+const flour = '../assets/Products/sourdough-starter-feeding-flour.jpeg';
+const water = '../assets/Products/sourdough-starter-feeding-water.jpeg';
+const mix = '../assets/Products/sourdough-starter-feeding-mix.jpeg';
+const mixed = '../assets/Products/sourdough-starter-feeding-mixed.jpeg';
+
 const {
     ALL_PURPOSE_FLOUR,
     WARM_WATER,
@@ -10,7 +17,7 @@ const FEEDING_STARTER = 'Feeding Starter';
 module.exports = {
     cardName: 'Sourdough Starter',
     name: 'Sourdough Starter',
-    img: starter,
+    img: risen,
     available: true,
     yields: 'Infinite',
     prepTime: '35 m',
@@ -35,10 +42,10 @@ module.exports = {
         { step: 'Day 2, stir the mixture to give it some air.', type: CREATING_STARTER },
         { step: 'Day 3, discard 1/2 cup of the starter mixture and feed it flour and warm water (refer to the "Feeding Starter" ingredients for amounts).', type: CREATING_STARTER },
         { step: 'Continue to discard 1/2 cup of the starter mixture and feed the starter mixture for the next 4 days around the same time.', type: CREATING_STARTER },
-        { step: 'The starter should be ready to use in your recipes.', type: CREATING_STARTER },
+        { step: 'The starter should be ready to use in your recipes.', type: CREATING_STARTER, img: base },
         { step: 'Once you have created the starter, you just need to feed it at least once a week. When it\'s not being fed you will refrigerate it.', type: FEEDING_STARTER },
         { step: 'When you are feeding the starter, take it out of the fridge and remove 1/2 cup of starter. To make room for the new amount of ingredients.', type: FEEDING_STARTER },
-        { step: 'Mix in flour and warm water and leave it in a warm area for the next 24 hours.', type: FEEDING_STARTER },
-        { step: 'Refrigerate the starter after it has grown.', type: FEEDING_STARTER },
+        { step: 'Mix in flour and warm water and leave it in a warm area for the next 24 hours.', type: FEEDING_STARTER, img: [flour, water, mix, mixed] },
+        { step: 'Refrigerate the starter after it has grown.', type: FEEDING_STARTER, img: zoomed },
     ]
 }; 
