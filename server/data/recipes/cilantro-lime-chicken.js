@@ -1,5 +1,16 @@
 const cilantroLimeChicken = '../assets/Products/cilantro-lime-chicken.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    CHICKEN_WINGS,
+    CILANTRO,
+    LIME_JUICE,
+    GARLIC,
+    AVOCADO_OIL,
+    CHILI_POWDER,
+    SALT,
+    BLACK_PEPPER,
+    CAYENNE_PEPPER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Cilantro Lime Chicken',
@@ -18,15 +29,15 @@ module.exports = {
         'https://kaleforniakravings.com/easy-cilantro-lime-chicken-wings/'
     ],
     ingredients: [
-        { name: 'chicken wings', amount: '2 lbs', additionalDetails: '', section: SECTIONS.MEAT },
-        { name: 'cilantro', amount: '1 bunch of', additionalDetails: 'chopped', section: SECTIONS.DRESSING },
-        { name: 'lime juice', amount: '1/2 c + 4 Tbsp', additionalDetails: 'about 6 limes', section: SECTIONS.DRESSING },
-        { name: 'garlic cloves', amount: '4', additionalDetails: '', section: SECTIONS.DRESSING },
-        { name: 'avocado oil', amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.DRESSING },
-        { name: 'chili powder', amount: '2 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
-        { name: 'salt', amount: '1 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
-        { name: 'pepper', amount: '1 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
-        { name: 'cayenne pepper', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...CHICKEN_WINGS, amount: '2 lbs', additionalDetails: '', section: SECTIONS.MEAT },
+        { ...CILANTRO, amount: '1 bunch of', additionalDetails: 'chopped', section: SECTIONS.DRESSING },
+        { ...LIME_JUICE, amount: '1/2 c + 4 Tbsp', additionalDetails: 'about 6 limes', section: SECTIONS.DRESSING },
+        { ...GARLIC, amount: '4', additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...AVOCADO_OIL, amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...CHILI_POWDER, amount: '2 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...BLACK_PEPPER, amount: '1 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...CAYENNE_PEPPER, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
     ],
     appliances: [
         { name: 'blender' },

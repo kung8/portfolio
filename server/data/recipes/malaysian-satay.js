@@ -1,5 +1,18 @@
 const satay = '../assets/Products/malaysian-satay.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN } = require('./constants');
+const {
+    CHICKEN_THIGH,
+    WHITE_SUGAR,
+    SALT,
+    LEMONGRASS,
+    GARLIC,
+    SMALL_YELLOW_ONION,
+    TURMERIC,
+    CHILI_POWDER,
+    CORIANDER,
+    VEGETABLE_OIL,
+    CUCUMBER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Malaysian Satay',
@@ -19,17 +32,17 @@ module.exports = {
         'https://rasamalaysia.com/recipe-chicken-satay/'
     ],
     ingredients: [
-        { name: 'chicken thigh', amount: '2 lb', additionalDetails: 'chunks', section: SECTIONS.MAIN },
-        { name: 'sugar', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'salt', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'lemongrass', amount: '2 stalks', additionalDetails: 'diced', section: SECTIONS.MARINADE },
-        { name: 'garlic', amount: '2 cloves', additionalDetails: 'diced', section: SECTIONS.MARINADE },
-        { name: 'small onion', amount: '6', additionalDetails: 'diced', section: SECTIONS.MARINADE },
-        { name: 'turmeric powder', amount: '2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'chili powder', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'coriander powder', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'cooking oil', amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'cucumber', amount: '1', additionalDetails: 'sliced', section: SECTIONS.SERVE },
+        { ...CHICKEN_THIGH, amount: '2 lb', additionalDetails: 'chunks', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...LEMONGRASS, amount: '2 stalks', additionalDetails: 'diced', section: SECTIONS.MARINADE },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'diced', section: SECTIONS.MARINADE },
+        { ...SMALL_YELLOW_ONION, amount: '6', additionalDetails: 'diced', section: SECTIONS.MARINADE },
+        { ...TURMERIC, amount: '2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CHILI_POWDER, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CORIANDER, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...VEGETABLE_OIL, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CUCUMBER, amount: '1', additionalDetails: 'sliced', section: SECTIONS.SERVE },
     ],
     appliances: [
         { name: 'blender' },

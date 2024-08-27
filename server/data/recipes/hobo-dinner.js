@@ -1,6 +1,15 @@
 const dinner = '../assets/Products/hobo-dinner.jpeg';
 const pan = '../assets/Products/hobo-dinner-pan.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    BLACK_PEPPER,
+    CARROTS,
+    LARGE_YELLOW_ONION,
+    OLIVE_OIL,
+    POTATOES,
+    SALT,
+    SUMMER_SAUSAGE,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Hobo Dinner',
@@ -16,13 +25,13 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '40 m',
     ingredients: [
-        { name: 'summer sausage', amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'large carrots', amount: '3', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'medium potatoes', amount: '3', additionalDetails: 'chunked', section: SECTIONS.MAIN },
-        { name: 'large onion', amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'olive oil', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SUMMER_SAUSAGE, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...CARROTS, amount: '3', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...POTATOES, amount: '3', additionalDetails: 'chunked', section: SECTIONS.MAIN },
+        { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

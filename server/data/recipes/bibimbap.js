@@ -7,10 +7,27 @@ const marinating = '../assets/Products/bibimbap-marinating-chicken.jpeg';
 // const spinach = '../assets/Products/bibimbap-spinach.jpeg';
 const sauce = '../assets/Products/bibimbap-with-sauce.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    GROUND_BEEF,
+    LIGHT_SOY_SAUCE,
+    SESAME_OIL,
+    BROWN_SUGAR,
+    GARLIC,
+    CARROTS,
+    SPINACH,
+    CORN,
+    EGGS,
+    GOCHUJANG_SAUCE,
+    WHITE_SUGAR,
+    WARM_WATER,
+    SESAME_SEEDS,
+    WHITE_VINEGAR,
+    JASMINE_RICE,
+} = require('./ingredients');
 
 const BEEF = 'Beef';
 const VEGETABLES = 'Vegetables';
-const EGGS = 'Eggs';
+const EGGS_SECTION = 'Eggs';
 const BIBIMBAP_SAUCE = 'Bibimbap Sauce';
 
 module.exports = {
@@ -31,23 +48,23 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { name: 'ground beef', amount: '1 lb', additionalDetails: '', section: BEEF },
-        { name: 'soy sauce', amount: '1 Tbsp', additionalDetails: '', section: BEEF },
-        { name: 'sesame oil', amount: '1 Tbsp', additionalDetails: '', section: BEEF },
-        { name: 'brown sugar', amount: '1 tsp', additionalDetails: '', section: BEEF },
-        { name: 'garlic', amount: '1/4 tsp', additionalDetails: 'minced', section: BEEF },
-        { name: 'carrot', amount: '4 oz', additionalDetails: 'matchsticks', section: VEGETABLES },
-        { name: 'spinach', amount: '8 oz', additionalDetails: '', section: VEGETABLES },
-        { name: 'corn', amount: '', additionalDetails: '', section: VEGETABLES },
-        { name: 'eggs', amount: '3', additionalDetails: '', section: EGGS },
-        { name: 'gochujang sauce', amount: '2 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { name: 'sesame oil', amount: '1 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { name: 'sugar', amount: '1 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { name: 'water', amount: '1 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { name: 'sesame seeds', amount: '1 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { name: 'vinegar', amount: '1 tsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { name: 'garlic', amount: '1 tsp', additionalDetails: 'minced', section: BIBIMBAP_SAUCE },
-        { name: 'rice', amount: '', additionalDetails: '', section: SECTIONS.SERVE },
+        { ...GROUND_BEEF, amount: '1 lb', additionalDetails: '', section: BEEF },
+        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: BEEF },
+        { ...SESAME_OIL, amount: '1 Tbsp', additionalDetails: '', section: BEEF },
+        { ...BROWN_SUGAR, amount: '1 tsp', additionalDetails: '', section: BEEF },
+        { ...GARLIC, amount: '1/4 tsp', additionalDetails: 'minced', section: BEEF },
+        { ...CARROTS, amount: '4 oz', additionalDetails: 'matchsticks', section: VEGETABLES },
+        { ...SPINACH, amount: '8 oz', additionalDetails: '', section: VEGETABLES },
+        { ...CORN, amount: '', additionalDetails: '', section: VEGETABLES },
+        { ...EGGS, amount: '3', additionalDetails: '', section: EGGS_SECTION },
+        { ...GOCHUJANG_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...SESAME_OIL, amount: '1 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...WHITE_SUGAR, amount: '1 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...WARM_WATER, amount: '1 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...SESAME_SEEDS, amount: '1 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...WHITE_VINEGAR, amount: '1 tsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...GARLIC, amount: '1 tsp', additionalDetails: 'minced', section: BIBIMBAP_SAUCE },
+        { ...JASMINE_RICE, amount: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
         { name: 'stove' },
@@ -64,8 +81,8 @@ module.exports = {
         { step: 'Over medium-high heat, cook the beef until browned then remove.', type: BEEF, img: cookingChicken },
         { step: 'To prepare the vegetable toppings, boil each of the vegetables separately until they soften/wilt.', type: VEGETABLES, img: cookedMatchsticks },
         { step: 'Set the vegetables aside until ready to top.', type: VEGETABLES, img: carrots },
-        { step: 'Over medium-high heat, add oil.', type: EGGS },
-        { step: 'Fry the eggs over-easy, or as preferred.', type: EGGS, img: eggs },
+        { step: 'Over medium-high heat, add oil.', type: EGGS_SECTION },
+        { step: 'Fry the eggs over-easy, or as preferred.', type: EGGS_SECTION, img: eggs },
         { step: 'Mix the sauce ingredients together in a medium bowl.', type: BIBIMBAP_SAUCE },
         { step: 'In a serving bowl, scoop some rice and top the rice with the beef, veggies, and eggs.', type: SECTIONS.SERVE, img: bowl },
         { step: 'Top with the sauce.', type: SECTIONS.SERVE, img: sauce },

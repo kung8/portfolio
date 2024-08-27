@@ -1,5 +1,6 @@
 const lunchables = '../assets/Products/fancy-lunchables.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
+const { BUTTER_PICKLE_CHIPS, CHEDDAR_CHEESE, CRACKERS, COOKED_HAM, LETTUCE, ROMA_TOMATO } = require('./ingredients');
 
 module.exports = {
     cardName: 'Fancy Lunchables',
@@ -14,12 +15,12 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '0 m',
     ingredients: [
-        { name: 'preferred cracker', amount: '12', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'ham slices', amount: '5', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'cheese', amount: '6', additionalDetails: 'sliced or cubed', section: SECTIONS.MAIN },
-        { name: 'lettuce', amount: '2 layers', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'tomato', amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'butter pickle chips', amount: '6', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CRACKERS, amount: '12', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COOKED_HAM, amount: '5', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...CHEDDAR_CHEESE, amount: '6', additionalDetails: 'sliced or cubed', section: SECTIONS.MAIN },
+        { ...LETTUCE, amount: '2 layers', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...ROMA_TOMATO, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...BUTTER_PICKLE_CHIPS, amount: '6', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     supplies: [
         { name: 'plate' },

@@ -18,6 +18,23 @@ const tortellini = '../assets/Products/turkey-meatball-spinach-tortellini-soup-t
 const veggiesInPot = '../assets/Products/turkey-meatball-spinach-tortellini-soup-veggies-in-pot.jpeg';
 const ladle = '../assets/Products/turkey-meatball-spinach-tortellini-soup-zoomed-ladle.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const {
+    GROUND_TURKEY,
+    BREADCRUMBS,
+    PARMESAN_CHEESE,
+    PARSLEY,
+    EGGS,
+    GARLIC,
+    SALT,
+    UNSALTED_BUTTER,
+    CELERY,
+    MEDIUM_YELLOW_ONION,
+    CARROTS,
+    CHICKEN_BROTH,
+    BLACK_PEPPER,
+    SPINACH_CHEESE_TORTELLINI,
+    BABY_SPINACH,
+} = require('./ingredients');
 
 const MEATBALLS = 'Meatballs';
 
@@ -36,22 +53,22 @@ module.exports = {
     cookTime: '35 m',
     separated: true,
     ingredients: [
-        { name: 'ground turkey', amount: '16 oz', additionalDetails: '', optional: false, section: MEATBALLS },
-        { name: 'breadcrumbs', amount: '2 Tbsp', additionalDetails: '', optional: false, section: MEATBALLS },
-        { name: 'parmesan cheese', amount: '2 Tbsp', additionalDetails: '', optional: false, section: MEATBALLS },
-        { name: 'parsley', amount: '2 Tbsp', additionalDetails: '', optional: false, section: MEATBALLS },
-        { name: 'egg', amount: '1 large', additionalDetails: '', optional: false, section: MEATBALLS },
-        { name: 'garlic', amount: '1 clove', additionalDetails: 'minced', optional: false, section: MEATBALLS },
-        { name: 'salt', amount: '1/8 tsp', additionalDetails: '', optional: false, section: MEATBALLS },
-        { name: 'unsalted butter', amount: '1/2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'celery', amount: '2 stalks', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'onion', amount: '1 small', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'carrot', amount: '1 large', additionalDetails: 'peeled and chopped', optional: false, section: SECTIONS.MAIN },
-        { name: 'garlic', amount: '2 cloves', additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
-        { name: 'chicken broth', amount: '10 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'black pepper', amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
-        { name: 'spinach cheese tortellini', amount: '18 oz', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { name: 'baby spinach', amount: '3 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { ...GROUND_TURKEY, amount: '16 oz', additionalDetails: '', optional: false, section: MEATBALLS },
+        { ...BREADCRUMBS, amount: '2 Tbsp', additionalDetails: '', optional: false, section: MEATBALLS },
+        { ...PARMESAN_CHEESE, amount: '2 Tbsp', additionalDetails: '', optional: false, section: MEATBALLS },
+        { ...PARSLEY, amount: '2 Tbsp', additionalDetails: '', optional: false, section: MEATBALLS },
+        { ...EGGS, amount: '1 large', additionalDetails: '', optional: false, section: MEATBALLS },
+        { ...GARLIC, amount: '1 clove', additionalDetails: 'minced', optional: false, section: MEATBALLS },
+        { ...SALT, amount: '1/8 tsp', additionalDetails: '', optional: false, section: MEATBALLS },
+        { ...UNSALTED_BUTTER, amount: '1/2 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { ...CELERY, amount: '2 stalks', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { ...MEDIUM_YELLOW_ONION, amount: '1 small', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { ...CARROTS, amount: '1 large', additionalDetails: 'peeled and chopped', optional: false, section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
+        { ...CHICKEN_BROTH, amount: '10 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
+        { ...SPINACH_CHEESE_TORTELLINI, amount: '18 oz', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { ...BABY_SPINACH, amount: '3 c', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

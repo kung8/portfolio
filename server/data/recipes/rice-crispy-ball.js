@@ -1,5 +1,6 @@
 const riceCrispyBall = '../assets/Products/rice-crispy-ball.jpeg';
 const { CATEGORIES, GENRES, METHODS } = require("./constants");
+const {} = require('./ingredients');
 
 module.exports = {
     cardName: '',

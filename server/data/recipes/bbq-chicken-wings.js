@@ -3,6 +3,20 @@ const raw = '../assets/Products/bbq-chicken-wings-raw.jpeg';
 const rawInPan = '../assets/Products/bbq-chicken-wings-raw-in-pan.jpeg';
 const pan = '../assets/Products/bbq-chicken-wings-in-pan.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const {
+    CHICKEN_DRUMETTES,
+    BAKING_SODA,
+    ROOT_BEER,
+    UNSALTED_BUTTER,
+    SALT,
+    PAPRIKA,
+    BLACK_PEPPER,
+    GARLIC,
+    LIGHT_SOY_SAUCE,
+    HONEY,
+    KETCHUP,
+    YELLOW_MUSTARD,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'BBQ Chicken Wings',
@@ -18,18 +32,18 @@ module.exports = {
     prepTime: '7 m',
     cookTime: '25 m',
     ingredients: [
-        { name: 'chicken drumettes', amount: '14', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'baking soda', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'root beer', amount: '300 ml', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'butter', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'paprika', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'black pepper', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'garlic cloves', amount: '4', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { name: 'soy sauce', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'honey', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'ketchup', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'mustard', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_DRUMETTES, amount: '14', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_SODA, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ROOT_BEER, amount: '300 ml', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PAPRIKA, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '4', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HONEY, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...KETCHUP, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YELLOW_MUSTARD, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

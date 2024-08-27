@@ -4,6 +4,16 @@ const leaves = '../assets/Products/khmer-red-curry-lime-leaves.jpeg';
 const cooked = '../assets/Products/khmer-red-curry-cooked.jpeg';
 const bread = '../assets/Products/khmer-red-curry-with-bread.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    CHICKEN_THIGH,
+    RED_CURRY_PASTE,
+    COCONUT_MILK,
+    LEMONGRASS,
+    KAFFIR_LIME_LEAVES,
+    WARM_WATER,
+    SALT,
+    BLACK_PEPPER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Khmer Red Curry',
@@ -23,14 +33,14 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { name: 'chicken thigh', amount: '5 lbs', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'red curry paste', amount: '1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'coconut milk', amount: '13.5 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'lemongrass', amount: '', additionalDetails: 'diagonally sliced', section: SECTIONS.MAIN },
-        { name: 'kaffir lime leaves', amount: '10 - 12', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'water', amount: '', additionalDetails: 'to thin', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...CHICKEN_THIGH, amount: '5 lbs', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...RED_CURRY_PASTE, amount: '1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COCONUT_MILK, amount: '13.5 oz', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LEMONGRASS, amount: '', additionalDetails: 'diagonally sliced', section: SECTIONS.MAIN },
+        { ...KAFFIR_LIME_LEAVES, amount: '10 - 12', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: '', additionalDetails: 'to thin', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

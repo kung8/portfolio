@@ -7,6 +7,23 @@ const plated = '../assets/Products/lo-mein-plated.jpeg';
 const sauce = '../assets/Products/lo-mein-sauce.jpeg';
 const steamed = '../assets/Products/lo-mein-steamed-broccoli.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const {
+    FLANK_STEAK,
+    SALT,
+    WHITE_SUGAR,
+    BLACK_PEPPER,
+    SHAOXING_WINE,
+    LIGHT_SOY_SAUCE,
+    CORNSTARCH,
+    SESAME_OIL,
+    DARK_SOY_SAUCE,
+    OYSTER_SAUCE,
+    WARM_WATER,
+    LO_MEIN_NOODLES,
+    VEGETABLE_OIL,
+    BROCCOLI,
+    GARLIC,
+} = require('./ingredients');
 
 const BEEF = 'Beef';
 
@@ -26,28 +43,28 @@ module.exports = {
     cookTime: '10 m',
     separated: true,
     ingredients: [
-        { name: 'flank steak', amount: '1/2 lb', additionalDetails: 'sliced', section: BEEF },
-        { name: 'salt', amount: '1/4 tsp', additionalDetails: '', section: BEEF },
-        { name: 'sugar', amount: '1/4 tsp', additionalDetails: '', section: BEEF },
-        { name: 'black pepper', amount: '1/8 tsp', additionalDetails: '', section: BEEF },
-        { name: 'shaoxing wine', amount: '1/2 tsp', additionalDetails: '', section: BEEF },
-        { name: 'light soy sauce', amount: '1/2 tsp', additionalDetails: '', section: BEEF },
-        { name: 'cornstarch', amount: '1/2 tsp', additionalDetails: '', section: BEEF },
+        { ...FLANK_STEAK, amount: '1/2 lb', additionalDetails: 'sliced', section: BEEF },
+        { ...SALT, amount: '1/4 tsp', additionalDetails: '', section: BEEF },
+        { ...WHITE_SUGAR, amount: '1/4 tsp', additionalDetails: '', section: BEEF },
+        { ...BLACK_PEPPER, amount: '1/8 tsp', additionalDetails: '', section: BEEF },
+        { ...SHAOXING_WINE, amount: '1/2 tsp', additionalDetails: '', section: BEEF },
+        { ...LIGHT_SOY_SAUCE, amount: '1/2 tsp', additionalDetails: '', section: BEEF },
+        { ...CORNSTARCH, amount: '1/2 tsp', additionalDetails: '', section: BEEF },
 
-        { name: 'sesame oil', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'light soy sauce', amount: '2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'dark soy sauce', amount: '2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'oyster sauce', amount: '2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'salt', amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'sugar', amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'shaoxing wine', amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'water', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SESAME_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: '2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...DARK_SOY_SAUCE, amount: '2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OYSTER_SAUCE, amount: '2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SHAOXING_WINE, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WARM_WATER, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { name: 'lo mein noodles', amount: '1 lb', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'vegetable oil', amount: '3 Tbsp', additionalDetails: 'divided', section: SECTIONS.MAIN },
-        { name: 'broccoli', amount: '1/2 lb', additionalDetails: 'cut into florets', section: SECTIONS.MAIN },
-        { name: 'garlic', amount: '3 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '1/4 t', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LO_MEIN_NOODLES, amount: '1 lb', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: '3 Tbsp', additionalDetails: 'divided', section: SECTIONS.MAIN },
+        { ...BROCCOLI, amount: '1/2 lb', additionalDetails: 'cut into florets', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...SALT, amount: '1/4 t', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

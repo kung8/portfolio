@@ -4,6 +4,15 @@ const oat = '../assets/Products/no-bake-cookie-oat.jpeg';
 const all = '../assets/Products/no-bake-cookie-all.jpeg';
 const finished = '../assets/Products/no-bake-cookie-finished.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS } = require("./constants");
+const {
+    UNSALTED_BUTTER,
+    WHITE_SUGAR,
+    MILK,
+    VANILLA_EXTRACT,
+    STEEL_OATS,
+    PEANUT_BUTTER,
+    COCOA_POWDER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'No Bake Cookies',
@@ -18,13 +27,13 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '10 m',
     ingredients: [
-        { name: 'butter', amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'sugar', amount: '1 3/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'cocoa powder', amount: '1/3 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'milk', amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'vanilla', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'creamy peanut butter', amount: '2/3 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'quick oats', amount: '3 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: '1 3/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COCOA_POWDER, amount: '1/3 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MILK, amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PEANUT_BUTTER, amount: '2/3 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...STEEL_OATS, amount: '3 c', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

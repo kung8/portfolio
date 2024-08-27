@@ -1,5 +1,18 @@
 const hamburger = '../assets/Products/hamburger.jpeg';
 const { CATEGORIES, SECTIONS, TYPES, GENRES, METHODS, PROTEIN } = require('./constants');
+const {
+    BREADCRUMBS,
+    CHEDDAR_CHEESE,
+    EGGS,
+    GROUND_TURKEY,
+    HAMBURGER_BUNS,
+    MEDIUM_YELLOW_ONION,
+    MUSHROOMS,
+    PICKLES,
+    RED_ONION,
+    ROMA_TOMATO,
+    SPINACH,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Hamburger',
@@ -16,17 +29,17 @@ module.exports = {
     cookTime: '50 m',
     separated: true,
     ingredients: [
-        { name: 'ground turkey', amount: '3 lbs', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'egg', amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'bread crumb', amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'onion', amount: '1/4', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { name: 'hamburger bun', amount: '8', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'red onion', amount: '1', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'pickle', amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'tomato', amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'spinach', amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'cheese slices', amount: '8', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'mushroom', amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...GROUND_TURKEY, amount: '3 lbs', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BREADCRUMBS, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MEDIUM_YELLOW_ONION, amount: '1/4', additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...HAMBURGER_BUNS, amount: '8', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...RED_ONION, amount: '1', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...PICKLES, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...ROMA_TOMATO, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...SPINACH, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...CHEDDAR_CHEESE, amount: '8', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...MUSHROOMS, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'oven' },

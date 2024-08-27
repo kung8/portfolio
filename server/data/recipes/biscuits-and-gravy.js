@@ -10,6 +10,17 @@ const plated = '../assets/Products/biscuits-and-gravy-plated.jpeg';
 const pork = '../assets/Products/biscuits-and-gravy-pork.jpeg';
 const zoomed = '../assets/Products/biscuits-and-gravy-zoomed.jpeg';
 const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
+const {
+    ALL_PURPOSE_FLOUR,
+    BAKING_POWDER,
+    BAKING_SODA,
+    SALT,
+    UNSALTED_BUTTER,
+    BUTTERMILK,
+    GROUND_PORK,
+    MILK,
+    BLACK_PEPPER,
+} = require('./ingredients');
 
 const BISCUITS = 'Biscuits';
 const GRAVY = 'Gravy';
@@ -32,18 +43,18 @@ module.exports = {
         'https://www.allrecipes.com/recipe/216391/easy-sausage-gravy-and-biscuits/'
     ],
     ingredients: [
-        { name: 'flour', amount: '5 1/2 c', additionalDetails: '', section: BISCUITS },
-        { name: 'baking powder', amount: '2 Tbsp', additionalDetails: '', section: BISCUITS },
-        { name: 'baking soda', amount: '2 tsp', additionalDetails: '', section: BISCUITS },
-        { name: 'kosher salt', amount: '2 Tbsp', additionalDetails: '', section: BISCUITS },
-        { name: 'unsalted butter', amount: '1 1/2 c', additionalDetails: 'cut into 1/2" slices', section: BISCUITS },
-        { name: 'unsalted butter', amount: '', additionalDetails: 'melted', section: BISCUITS },
-        { name: 'buttermilk', amount: '3 c', additionalDetails: '', section: BISCUITS },
-        { name: 'ground pork', amount: '1 lb', additionalDetails: '', section: GRAVY },
-        { name: 'flour', amount: '1/2 c', additionalDetails: '', section: GRAVY },
-        { name: 'milk', amount: '5 c', additionalDetails: '', section: GRAVY },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: GRAVY },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: GRAVY },
+        { ...ALL_PURPOSE_FLOUR, amount: '5 1/2 c', additionalDetails: '', section: BISCUITS },
+        { ...BAKING_POWDER, amount: '2 Tbsp', additionalDetails: '', section: BISCUITS },
+        { ...BAKING_SODA, amount: '2 tsp', additionalDetails: '', section: BISCUITS },
+        { ...SALT, amount: '2 Tbsp', additionalDetails: '', section: BISCUITS },
+        { ...UNSALTED_BUTTER, amount: '1 1/2 c', additionalDetails: 'cut into 1/2" slices', section: BISCUITS },
+        { ...UNSALTED_BUTTER, amount: '', additionalDetails: 'melted', section: BISCUITS },
+        { ...BUTTERMILK, amount: '3 c', additionalDetails: '', section: BISCUITS },
+        { ...GROUND_PORK, amount: '1 lb', additionalDetails: '', section: GRAVY },
+        { ...ALL_PURPOSE_FLOUR, amount: '1/2 c', additionalDetails: '', section: GRAVY },
+        { ...MILK, amount: '5 c', additionalDetails: '', section: GRAVY },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: GRAVY },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: GRAVY },
     ],
     appliances: [
         { name: 'oven' },

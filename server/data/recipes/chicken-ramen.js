@@ -10,10 +10,26 @@ const noodles = '../assets/Products/chicken-ramen-noodles.jpeg';
 const rawChicken = '../assets/Products/chicken-ramen-raw-chicken.jpeg';
 const sliced = '../assets/Products/chicken-ramen-sliced.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    CHICKEN_BREAST,
+    UNSALTED_BUTTER,
+    BLACK_PEPPER,
+    SALT,
+    SESAME_OIL,
+    GINGER,
+    GARLIC,
+    LIGHT_SOY_SAUCE,
+    MIRIN,
+    CHICKEN_BROTH,
+    MUSHROOMS,
+    EGGS,
+    DRIED_RAMEN_NOODLES,
+    GREEN_ONIONS,
+} = require('./ingredients');
 
 const CHICKEN = 'Chicken';
 const BROTH = 'Broth';
-const EGGS = 'Eggs';
+const EGGS_SECTION = 'Eggs';
 const NOODLES = 'Noodles';
 
 module.exports = {
@@ -34,21 +50,21 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { name: 'chicken breast', amount: '2', additionalDetails: '', section: CHICKEN },
-        { name: 'unsalted butter', amount: '1 Tbsp', additionalDetails: '', section: CHICKEN },
-        { name: 'black pepper', amount: '', additionalDetails: 'to season', section: CHICKEN },
-        { name: 'salt', amount: '', additionalDetails: 'to season', section: CHICKEN },
-        { name: 'sesame oil', amount: '2 tsp', additionalDetails: '', section: BROTH },
-        { name: 'ginger', amount: '2 tsp', additionalDetails: '', section: BROTH },
-        { name: 'garlic', amount: '1 Tbsp', additionalDetails: '', section: BROTH },
-        { name: 'low-sodium soy sauce', amount: '3 Tbsp', additionalDetails: '', section: BROTH },
-        { name: 'mirin', amount: '2 Tbsp', additionalDetails: '', section: BROTH },
-        { name: 'chicken broth', amount: '4 c', additionalDetails: '', section: BROTH },
-        { name: 'mushrooms', amount: '1/2 c', additionalDetails: '', section: BROTH },
-        { name: 'salt', amount: '1 tsp', additionalDetails: '', section: BROTH },
-        { name: 'eggs', amount: '2', additionalDetails: '', section: EGGS },
-        { name: 'dried ramen noodles', amount: '2 - 3 oz', additionalDetails: '', section: NOODLES },
-        { name: 'green onions', amount: '3', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...CHICKEN_BREAST, amount: '2', additionalDetails: '', section: CHICKEN },
+        { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: CHICKEN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to season', section: CHICKEN },
+        { ...SALT, amount: '', additionalDetails: 'to season', section: CHICKEN },
+        { ...SESAME_OIL, amount: '2 tsp', additionalDetails: '', section: BROTH },
+        { ...GINGER, amount: '2 tsp', additionalDetails: '', section: BROTH },
+        { ...GARLIC, amount: '1 Tbsp', additionalDetails: '', section: BROTH },
+        { ...LIGHT_SOY_SAUCE, amount: '3 Tbsp', additionalDetails: '', section: BROTH },
+        { ...MIRIN, amount: '2 Tbsp', additionalDetails: '', section: BROTH },
+        { ...CHICKEN_BROTH, amount: '4 c', additionalDetails: '', section: BROTH },
+        { ...MUSHROOMS, amount: '1/2 c', additionalDetails: '', section: BROTH },
+        { ...SALT, amount: '1 tsp', additionalDetails: '', section: BROTH },
+        { ...EGGS, amount: '2', additionalDetails: '', section: EGGS_SECTION },
+        { ...DRIED_RAMEN_NOODLES, amount: '2 - 3 oz', additionalDetails: '', section: NOODLES },
+        { ...GREEN_ONIONS, amount: '3', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },
@@ -76,10 +92,10 @@ module.exports = {
         { step: 'Add chicken broth and cover. Cook until it boils.', type: BROTH },
         { step: 'Remove the lid, turn down the heat, and let simmer for 5 minutes.', type: BROTH },
         { step: 'Add mushrooms and salt to taste and cook for another 10 minutes.', type: BROTH, img: broth },
-        { step: 'Over medium-high heat, bring a pot of water to a boil.', type: EGGS },
-        { step: 'Gently lower cold eggs into the pot and let cook for 7 to 8 minutes.', type: EGGS, img: boiled },
-        { step: 'Prepare an ice water bath, and transfer the eggs into it once it is cooked. Leave in the bath for 5 minutes.', type: EGGS, img: ice },
-        { step: 'Slice the eggs in half length-wise.', type: EGGS, img: sliced },
+        { step: 'Over medium-high heat, bring a pot of water to a boil.', type: EGGS_SECTION },
+        { step: 'Gently lower cold eggs into the pot and let cook for 7 to 8 minutes.', type: EGGS_SECTION, img: boiled },
+        { step: 'Prepare an ice water bath, and transfer the eggs into it once it is cooked. Leave in the bath for 5 minutes.', type: EGGS_SECTION, img: ice },
+        { step: 'Slice the eggs in half length-wise.', type: EGGS_SECTION, img: sliced },
         { step: 'After the eggs are removed from the pot, place the dried noodles in the boiling water.', type: NOODLES, img: noodles },
         { step: 'Cook for 2 to 3 minutes and divide into bowls.', type: NOODLES },
         { step: 'Pour broth over ramen, chicken, and eggs. Top with green onions. Enjoy this upgraded ramen!', type: SECTIONS.SERVE, img: bowl },

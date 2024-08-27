@@ -1,5 +1,18 @@
 const scrambledEggs = '../assets/Products/scrambled-eggs.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN } = require('./constants');
+const {
+    EGGS,
+    MILK,
+    SOUR_CREAM,
+    GREEN_BELL_PEPPERS,
+    MEDIUM_YELLOW_ONION,
+    ROMA_TOMATO,
+    COOKED_HAM,
+    UNSALTED_BUTTER,
+    SALT,
+    BLACK_PEPPER,
+    BASIL,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Scrambled Eggs',
@@ -14,17 +27,17 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '12 - 15 m',
     ingredients: [
-        { name: 'eggs', amount: '3', additionalDetails: '', optional: false },
-        { name: 'milk', amount: '1/4 c', additionalDetails: '', optional: false },
-        { name: 'sour cream', amount: '1 spoonful', additionalDetails: '', optional: false },
-        { name: 'green pepper', amount: '1/8', additionalDetails: 'diced', optional: false },
-        { name: 'onion', amount: '1/8', additionalDetails: 'diced', optional: false },
-        { name: 'roma tomato', amount: '1/8', additionalDetails: 'diced', optional: false },
-        { name: 'cooked ham', amount: '1 slice', additionalDetails: 'diced', optional: false },
-        { name: 'butter (for pan)', amount: '1 tsp', additionalDetails: '', optional: false },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', optional: false },
-        { name: 'basil', amount: '', additionalDetails: 'to taste', optional: false },
+        { ...EGGS, amount: '3', additionalDetails: '', optional: false },
+        { ...MILK, amount: '1/4 c', additionalDetails: '', optional: false },
+        { ...SOUR_CREAM, amount: '1 spoonful', additionalDetails: '', optional: false },
+        { ...GREEN_BELL_PEPPERS, amount: '1/8', additionalDetails: 'diced', optional: false },
+        { ...MEDIUM_YELLOW_ONION, amount: '1/8', additionalDetails: 'diced', optional: false },
+        { ...ROMA_TOMATO, amount: '1/8', additionalDetails: 'diced', optional: false },
+        { ...COOKED_HAM, amount: '1 slice', additionalDetails: 'diced', optional: false },
+        { ...UNSALTED_BUTTER, amount: '1 tsp', additionalDetails: '', optional: false },
+        { ...SALT, amount: '', additionalDetails: 'to taste', optional: false },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', optional: false },
+        { ...BASIL, amount: '', additionalDetails: 'to taste', optional: false },
     ],
     appliances: [
         { name: 'stove' },

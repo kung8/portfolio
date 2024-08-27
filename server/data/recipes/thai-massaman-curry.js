@@ -1,5 +1,6 @@
 const thaiMassamanCurry = '../assets/Products/thai-massaman-curry.jpeg';
 const { CATEGORIES, GENRES, TYPES, METHODS } = require("./constants");
+const {} = require('./ingredients');
 
 module.exports = {
     cardName: 'Massaman Curry',

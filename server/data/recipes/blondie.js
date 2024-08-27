@@ -8,6 +8,19 @@ const pan = '../assets/Products/blondie-pan.jpeg';
 const plated = '../assets/Products/blondie-plated.jpeg';
 const sugars = '../assets/Products/blondie-sugars.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    UNSALTED_BUTTER,
+    BROWN_SUGAR,
+    WHITE_SUGAR,
+    EGGS,
+    EGG_YOLKS,
+    VANILLA_EXTRACT,
+    ALL_PURPOSE_FLOUR,
+    CORNSTARCH,
+    BAKING_POWDER,
+    SALT,
+    SEMI_SWEET_CHOCOLATE_CHIPS,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Blondie',
@@ -25,17 +38,17 @@ module.exports = {
     websites: ["https://sugarspunrun.com/blondies-recipe/"],
     separated: false,
     ingredients: [
-        { name: 'unsalted butter', amount: '1 c', additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { name: 'brown sugar', amount: '1 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'sugar', amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'eggs', amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'egg yolk', amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'vanilla extract', amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'all-purpose flour', amount: '2 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'cornstarch', amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'baking powder', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'chocolate chips', amount: '2/3 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '1 c', additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...BROWN_SUGAR, amount: '1 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG_YOLKS, amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: '2 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORNSTARCH, amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_POWDER, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '2/3 c', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

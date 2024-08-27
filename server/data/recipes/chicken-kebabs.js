@@ -1,5 +1,16 @@
 const kebabs = '../assets/Products/kebabs.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, TYPES } = require('./constants');
+const {
+    LIGHT_SOY_SAUCE,
+    TERIYAKI_SAUCE,
+    VEGETABLE_OIL,
+    GARLIC_POWDER,
+    CHICKEN_THIGH,
+    RED_BELL_PEPPERS,
+    MEDIUM_YELLOW_ONION,
+    SALT,
+    BLACK_PEPPER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Kebabs',
@@ -15,15 +26,15 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '25 - 30 m',
     ingredients: [
-        { name: 'soy sauce', amount: '1/2 c', additionalDetails: '', optional: false },
-        { name: 'teriyaki sauce', amount: '1/2 c', additionalDetails: '', optional: false },
-        { name: 'vegetable oil', amount: '1/2 c', additionalDetails: '', optional: false },
-        { name: 'garlic powder', amount: '1', additionalDetails: '', optional: false },
-        { name: 'chicken', amount: '2 lbs', additionalDetails: '', optional: false },
-        { name: 'bell pepper', amount: '2', additionalDetails: '', optional: false },
-        { name: 'onion', amount: '1', additionalDetails: '', optional: false },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', optional: false },
+        { ...LIGHT_SOY_SAUCE, amount: '1/2 c', additionalDetails: '', optional: false },
+        { ...TERIYAKI_SAUCE, amount: '1/2 c', additionalDetails: '', optional: false },
+        { ...VEGETABLE_OIL, amount: '1/2 c', additionalDetails: '', optional: false },
+        { ...GARLIC_POWDER, amount: '1', additionalDetails: '', optional: false },
+        { ...CHICKEN_THIGH, amount: '2 lbs', additionalDetails: '', optional: false },
+        { ...RED_BELL_PEPPERS, amount: '2', additionalDetails: '', optional: false },
+        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: '', optional: false },
+        { ...SALT, amount: '', additionalDetails: 'to taste', optional: false },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', optional: false },
     ],
     appliances: [
         { name: 'oven' },

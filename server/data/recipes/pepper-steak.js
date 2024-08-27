@@ -1,5 +1,16 @@
 const pepperSteak = '../assets/Products/pepper-steak.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const {
+    BEEF,
+    RED_BELL_PEPPERS,
+    MEDIUM_YELLOW_ONION,
+    GARLIC,
+    LIGHT_SOY_SAUCE,
+    WARM_WATER,
+    SALT,
+    BLACK_PEPPER,
+    VEGETABLE_OIL,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Pepper Steak',
@@ -15,15 +26,15 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '25 m',
     ingredients: [
-        { name: 'vegetable oil', amount: '1 Tbsp', additionalDetails: '', section: '' },
-        { name: 'beef', amount: '1.5 lb', additionalDetails: 'sliced or 1" chunks', section: '' },
-        { name: 'bell pepper', amount: '2', additionalDetails: 'sliced', section: '' },
-        { name: 'onion', amount: '1', additionalDetails: 'sliced', section: '' },
-        { name: 'garlic', amount: '2 tsp', additionalDetails: 'minced', section: '' },
-        { name: 'soy sauce', amount: '2 Tbsp', additionalDetails: '', section: '' },
-        { name: 'water', amount: '1/2 c', additionalDetails: '', section: '' },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: '' },
-        { name: 'black pepper', amount: '', additionalDetails: 'to taste', section: '' },
+        { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', section: '' },
+        { ...BEEF, amount: '1.5 lb', additionalDetails: 'sliced or 1" chunks', section: '' },
+        { ...RED_BELL_PEPPERS, amount: '2', additionalDetails: 'sliced', section: '' },
+        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', section: '' },
+        { ...GARLIC, amount: '2 tsp', additionalDetails: 'minced', section: '' },
+        { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: '' },
+        { ...WARM_WATER, amount: '1/2 c', additionalDetails: '', section: '' },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: '' },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: '' },
     ],
     appliances: [
         { name: 'stove' },

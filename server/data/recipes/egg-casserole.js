@@ -1,5 +1,18 @@
 const eggCasserole = '../assets/Products/egg-casserole.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
+const {
+    BREAD,
+    CHEDDAR_CHEESE,
+    COOKED_HAM,
+    MEDIUM_YELLOW_ONION,
+    RED_BELL_PEPPERS,
+    EGGS,
+    MILK,
+    SALT,
+    BLACK_PEPPER,
+    KETCHUP,
+    SALSA,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Egg Casserole',
@@ -15,17 +28,17 @@ module.exports = {
     prepTime: '15 m',
     cookTime: '1 h',
     ingredients: [
-        { name: 'white bread slices', amount: '8', additionalDetails: 'cubed', optional: false },
-        { name: 'shredded cheddar cheese', amount: '2 c', additionalDetails: '', optional: false },
-        { name: 'cooked ham', amount: '1 1/4 c', additionalDetails: 'diced', optional: false },
-        { name: 'onion', amount: '', additionalDetails: 'diced', optional: false },
-        { name: 'bell pepper', amount: '1/4 c', additionalDetails: 'diced', optional: false },
-        { name: 'eggs', amount: '6', additionalDetails: '', optional: false },
-        { name: 'milk', amount: '3 c', additionalDetails: '', optional: false },
-        { name: 'salt', amount: '1/4 tsp', additionalDetails: '', optional: false },
-        { name: 'pepper', amount: '1/4 tsp', additionalDetails: '', optional: false },
-        { name: 'ketchup (optional serving)', amount: '', additionalDetails: '', optional: false },
-        { name: 'salsa (optional serving)', amount: '', additionalDetails: '', optional: false },
+        { ...BREAD, amount: '8', additionalDetails: 'cubed', optional: false },
+        { ...CHEDDAR_CHEESE, amount: '2 c', additionalDetails: 'shredded', optional: false },
+        { ...COOKED_HAM, amount: '1 1/4 c', additionalDetails: 'diced', optional: false },
+        { ...MEDIUM_YELLOW_ONION, amount: '', additionalDetails: 'diced', optional: false },
+        { ...RED_BELL_PEPPERS, amount: '1/4 c', additionalDetails: 'diced', optional: false },
+        { ...EGGS, amount: '6', additionalDetails: '', optional: false },
+        { ...MILK, amount: '3 c', additionalDetails: '', optional: false },
+        { ...SALT, amount: '1/4 tsp', additionalDetails: '', optional: false },
+        { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', optional: false },
+        { ...KETCHUP, amount: '', additionalDetails: '(optional)', optional: false },
+        { ...SALSA, amount: '', additionalDetails: '(optional)', optional: false },
     ],
     appliances: [
         { name: 'oven' },

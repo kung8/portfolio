@@ -2,6 +2,19 @@ const plate = '../assets/Products/baked-lemon-chicken-plate.jpeg';
 const full = '../assets/Products/baked-lemon-chicken-full-plate.jpeg';
 const pan = '../assets/Products/baked-lemon-chicken-pan.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const {
+    CHICKEN_WINGS,
+    UNSALTED_BUTTER,
+    CHICKEN_BROTH,
+    LEMON_JUICE,
+    HONEY,
+    GARLIC,
+    ITALIAN_SEASONING,
+    SALT,
+    BLACK_PEPPER,
+    ROSEMARY,
+    LEMON
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Baked Lemon Chicken',
@@ -20,17 +33,17 @@ module.exports = {
         'https://www.lecremedelacrumb.com/easy-healthy-baked-lemon-chicken/'
     ],
     ingredients: [
-        { name: 'chicken wings', amount: '4', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'butter', amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'chicken broth', amount: '1/3 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'lemon juice', amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'honey', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'garlic cloves', amount: '2 tsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { name: 'italian seasoning', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'rosemary', amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'lemon', amount: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...CHICKEN_WINGS, amount: '4', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_BROTH, amount: '1/3 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LEMON_JUICE, amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HONEY, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '2 tsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...ITALIAN_SEASONING, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...ROSEMARY, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LEMON, amount: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

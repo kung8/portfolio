@@ -11,6 +11,16 @@ const raw = '../assets/Products/pao-de-queijo-mixer.jpeg';
 // const first = '../assets/Products/pao-de-queijo-zoomed-cheeseballs.jpeg';
 const plated = '../assets/Products/pao-de-queijo-plated.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    TAPIOCA_STARCH,
+    MILK,
+    WARM_WATER,
+    VEGETABLE_OIL,
+    PARMESAN_CHEESE,
+    MOZZARELLA_CHEESE,
+    EGGS,
+    SALT,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Pao de Queijo',
@@ -30,14 +40,14 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { name: 'cornstarch', amount: '4 c', additionalDetails: 'plus some for thickening', section: SECTIONS.MAIN },
-        { name: 'milk', amount: '1 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'water', amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'oil', amount: '', additionalDetails: '6 Tbsp', section: SECTIONS.MAIN },
-        { name: 'parmesan cheese', amount: '1 1/2 c', additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { name: 'mozzarella cheese', amount: '1 c', additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { name: 'large eggs', amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...TAPIOCA_STARCH, amount: '4 c', additionalDetails: 'plus some for thickening', section: SECTIONS.MAIN },
+        { ...MILK, amount: '1 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: '', additionalDetails: '6 Tbsp', section: SECTIONS.MAIN },
+        { ...PARMESAN_CHEESE, amount: '1 1/2 c', additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...MOZZARELLA_CHEESE, amount: '1 c', additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

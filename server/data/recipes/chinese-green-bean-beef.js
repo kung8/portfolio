@@ -1,5 +1,11 @@
 const greenBeanWithBeef = '../assets/Products/green-bean-with-beef.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const {
+    GREEN_BEANS,
+    BEEF_CHUNK,
+    SALT,
+    BLACK_PEPPER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Green Bean Beef',
@@ -15,10 +21,10 @@ module.exports = {
     prepTime: '15 m',
     cookTime: '20 m',
     ingredients: [
-        { name: 'green beans', amount: '24 oz', additionalDetails: 'cut to 2" pieces', optional: false },
-        { name: 'lean beef chunks', amount: '1 lb', additionalDetails: '', optional: false },
-        { name: 'salt', amount: '', additionalDetails: '', optional: false },
-        { name: 'black pepper', amount: '', additionalDetails: '', optional: false },
+        { ...GREEN_BEANS, amount: '24 oz', additionalDetails: 'cut to 2" pieces', optional: false },
+        { ...BEEF_CHUNK, amount: '1 lb', additionalDetails: 'lean', optional: false },
+        { ...SALT, amount: '', additionalDetails: '', optional: false },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },

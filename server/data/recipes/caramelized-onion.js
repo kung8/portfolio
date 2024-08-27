@@ -4,6 +4,15 @@ const combined = '../assets/Products/caramelized-onion-combined.jpeg';
 const cooked = '../assets/Products/caramelized-onion-cooked.jpeg';
 const sliced = '../assets/Products/caramelized-onion-thinly-sliced.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
+const {
+    RED_ONION,
+    UNSALTED_BUTTER,
+    BROWN_SUGAR,
+    LIGHT_SOY_SAUCE,
+    SALT,
+    BLACK_PEPPER,
+    BALSAMIC_VINEGAR,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Caramelized Onion',
@@ -17,13 +26,13 @@ module.exports = {
     prepTime: '2 m',
     cookTime: '15 m',
     ingredients: [
-        { name: 'red onion', amount: '1', additionalDetails: 'thinly sliced', section: SECTIONS.TOPPING },
-        { name: 'butter', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
-        { name: 'brown sugar', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
-        { name: 'balsamic vinegar', amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
-        { name: 'soy sauce', amount: '1 tsp', additionalDetails: '', section: SECTIONS.TOPPING },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
+        { ...RED_ONION, amount: '1', additionalDetails: 'thinly sliced', section: SECTIONS.TOPPING },
+        { ...UNSALTED_BUTTER, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...BROWN_SUGAR, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...BALSAMIC_VINEGAR, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...LIGHT_SOY_SAUCE, amount: '1 tsp', additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
     ],
     appliances: [
         { name: 'stove' },

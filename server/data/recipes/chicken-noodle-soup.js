@@ -1,5 +1,19 @@
 const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
+const {
+    CHICKEN_BREAST,
+    OLIVE_OIL,
+    LARGE_YELLOW_ONION,
+    CARROTS,
+    CELERY,
+    CHICKEN_BROTH,
+    SALT,
+    BLACK_PEPPER,
+    OREGANO,
+    ROSEMARY,
+    THYME,
+    EGG_NOODLES,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Chicken Soup',
@@ -15,18 +29,18 @@ module.exports = {
     prepTime: '6 - 8 m',
     cookTime: '40 - 45 m',
     ingredients: [
-        { name: 'chicken breast', amount: '1.5 lbs', additionalDetails: 'cubed', optional: false },
-        { name: 'olive oil', amount: '1 Tbsp', additionalDetails: '', optional: false },
-        { name: 'large onion', amount: '1', additionalDetails: 'sliced', optional: false },
-        { name: 'large carrots', amount: '2', additionalDetails: 'sliced', optional: false },
-        { name: 'celery', amount: '2 stalks', additionalDetails: 'sliced', optional: false },
-        { name: 'chicken broth', amount: '6 c', additionalDetails: '', optional: false },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', optional: false },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', optional: false },
-        { name: 'oregano', amount: '', additionalDetails: 'to taste', optional: false },
-        { name: 'rosemary', amount: '', additionalDetails: 'to taste', optional: false },
-        { name: 'thyme', amount: '', additionalDetails: 'to taste', optional: false },
-        { name: 'egg noodles', amount: '16 oz', additionalDetails: '', optional: false },
+        { ...CHICKEN_BREAST, amount: '1.5 lbs', additionalDetails: 'cubed', optional: false },
+        { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', optional: false },
+        { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', optional: false },
+        { ...CARROTS, amount: '2', additionalDetails: 'sliced', optional: false },
+        { ...CELERY, amount: '2 stalks', additionalDetails: 'sliced', optional: false },
+        { ...CHICKEN_BROTH, amount: '6 c', additionalDetails: '', optional: false },
+        { ...SALT, amount: '', additionalDetails: 'to taste', optional: false },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', optional: false },
+        { ...OREGANO, amount: '', additionalDetails: 'to taste', optional: false },
+        { ...ROSEMARY, amount: '', additionalDetails: 'to taste', optional: false },
+        { ...THYME, amount: '', additionalDetails: 'to taste', optional: false },
+        { ...EGG_NOODLES, amount: '16 oz', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },

@@ -1,6 +1,16 @@
 const banhTieu = '../assets/Products/banh-tieu.jpeg';
 const flat = '../assets/Products/banh-tieu-flat.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, METHODS } = require('./constants');
+const {
+    BREAD_FLOUR,
+    WARM_WATER,
+    WHITE_SUGAR,
+    SALT,
+    YEAST,
+    BAKING_POWDER,
+    SESAME_SEEDS,
+    VEGETABLE_OIL,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Banh Tieu',
@@ -15,14 +25,14 @@ module.exports = {
     cookTime: '7 m',
     separated: true,
     ingredients: [
-        { name: 'bread flour', amount: '2 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'water', amount: '2/3 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'sugar', amount: '1/2 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'salt', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'instant yeast', amount: '2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'baking powder', amount: '2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'sesame seed', amount: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'vegetable oil', amount: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BREAD_FLOUR, amount: '2 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: '2/3 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: '1/2 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: '2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BAKING_POWDER, amount: '2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SESAME_SEEDS, amount: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...VEGETABLE_OIL, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

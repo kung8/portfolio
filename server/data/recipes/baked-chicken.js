@@ -5,6 +5,15 @@ const pan = '../assets/Products/baked-chicken-cooked.jpeg';
 const plated = '../assets/Products/baked-chicken-plated.jpeg';
 const full = '../assets/Products/baked-chicken-plated-full.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const {
+    CHICKEN_DRUMSTICKS,
+    OLIVE_OIL,
+    SALT,
+    BLACK_PEPPER,
+    GARLIC_POWDER,
+    PAPRIKA,
+    CAYENNE_PEPPER
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Baked Chicken',
@@ -21,13 +30,13 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '50 m',
     ingredients: [
-        { name: 'chicken drumsticks', amount: '10', additionalDetails: 'skin on', section: SECTIONS.MAIN },
-        { name: 'olive oil', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'black pepper', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'garlic powder', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'paprika', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'cayenne pepper', amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_DRUMSTICKS, amount: '10', additionalDetails: 'skin on', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC_POWDER, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PAPRIKA, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CAYENNE_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

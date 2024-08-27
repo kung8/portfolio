@@ -7,6 +7,20 @@ const opened = '../assets/Products/chicken-stuffed-crescent-rolls-opened.jpeg';
 const wrap = '../assets/Products/chicken-stuffed-crescent-rolls-wrap.jpeg';
 const wrapped = '../assets/Products/chicken-stuffed-crescent-rolls-wrapped.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
+const {
+    MOZZARELLA_CHEESE,
+    CREAM_CHEESE,
+    RED_BELL_PEPPERS,
+    MEDIUM_YELLOW_ONION,
+    GARLIC_POWDER,
+    SALT,
+    BLACK_PEPPER,
+    CHILI_POWDER,
+    UNSALTED_BUTTER,
+    CRESCENT_ROLLS,
+    CHICKEN_BREAST,
+    PARSLEY,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Chicken Crescent Rolls',
@@ -21,18 +35,18 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '12 m',
     ingredients: [
-        { name: 'crescent rolls', amount: '1 can', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'cooked chicken', amount: '1 c', additionalDetails: 'shredded', section: SECTIONS.FILLING },
-        { name: 'mozzarella cheese', amount: '1/2 c', additionalDetails: 'shredded', section: SECTIONS.FILLING },
-        { name: 'cream cheese', amount: '1/4 c', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'bell peppers', amount: '1', additionalDetails: 'diced', section: SECTIONS.FILLING },
-        { name: 'medium onion', amount: '3/4', additionalDetails: 'diced', section: SECTIONS.FILLING },
-        { name: 'garlic powder', amount: '1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'dried parsley', amount: '1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.FILLING },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.FILLING },
-        { name: 'chili powder', amount: '', additionalDetails: 'too taste', section: SECTIONS.FILLING },
-        { name: 'butter', amount: '2 Tbsp', additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...CRESCENT_ROLLS, amount: '1 can', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_BREAST, amount: '1 c', additionalDetails: 'cooked and shredded', section: SECTIONS.FILLING },
+        { ...MOZZARELLA_CHEESE, amount: '1/2 c', additionalDetails: 'shredded', section: SECTIONS.FILLING },
+        { ...CREAM_CHEESE, amount: '1/4 c', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...RED_BELL_PEPPERS, amount: '1', additionalDetails: 'diced', section: SECTIONS.FILLING },
+        { ...MEDIUM_YELLOW_ONION, amount: '3/4', additionalDetails: 'diced', section: SECTIONS.FILLING },
+        { ...GARLIC_POWDER, amount: '1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...PARSLEY, amount: '1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.FILLING },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.FILLING },
+        { ...CHILI_POWDER, amount: '', additionalDetails: 'too taste', section: SECTIONS.FILLING },
+        { ...UNSALTED_BUTTER, amount: '2 Tbsp', additionalDetails: 'melted', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

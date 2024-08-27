@@ -1,5 +1,6 @@
 const chickenParm = '../assets/Products/chicken-parmesan.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
+const {} = require('./ingredients');
 
 module.exports = {
     cardName: 'Chicken Parmesan',

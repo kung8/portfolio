@@ -1,5 +1,18 @@
 const beefStroganoff = '../assets/Products/beef-stroganoff.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS } = require('./constants');
+const {
+    BEEF,
+    MEDIUM_YELLOW_ONION,
+    MUSHROOMS,
+    GARLIC,
+    UNSALTED_BUTTER,
+    BEEF_BROTH,
+    SALT,
+    WORCESTERSHIRE_SAUCE,
+    ALL_PURPOSE_FLOUR,
+    SOUR_CREAM,
+    SPAGHETTI_NOODLES,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Beef Stroganoff',
@@ -14,17 +27,17 @@ module.exports = {
     prepTime: '10 - 12 m',
     cookTime: '45 m',
     ingredients: [
-        { name: 'beef', amount: '3 lbs', additionalDetails: 'sliced', optional: false },
-        { name: 'medium onion', amount: '4', additionalDetails: 'sliced', optional: false },
-        { name: 'mushroom', amount: '1 lb', additionalDetails: 'sliced', optional: false },
-        { name: 'garlic', amount: '2 cloves', additionalDetails: 'minced', optional: false },
-        { name: 'butter', amount: '1/2 c', additionalDetails: '', optional: false },
-        { name: 'beef broth', amount: '3 c', additionalDetails: '', optional: false },
-        { name: 'salt', amount: '1 tsp', additionalDetails: '', optional: false },
-        { name: 'worchestershire sauce', amount: '2 tsp', additionalDetails: '', optional: false },
-        { name: 'flour', amount: '1/2 c', additionalDetails: '', optional: false },
-        { name: 'sour cream', amount: '3 c', additionalDetails: '', optional: false },
-        { name: 'noodles', amount: '6 c', additionalDetails: 'cooked', optional: false },
+        { ...BEEF, amount: '3 lbs', additionalDetails: 'sliced', optional: false },
+        { ...MEDIUM_YELLOW_ONION, amount: '4', additionalDetails: 'sliced', optional: false },
+        { ...MUSHROOMS, amount: '1 lb', additionalDetails: 'sliced', optional: false },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', optional: false },
+        { ...UNSALTED_BUTTER, amount: '1/2 c', additionalDetails: '', optional: false },
+        { ...BEEF_BROTH, amount: '3 c', additionalDetails: '', optional: false },
+        { ...SALT, amount: '1 tsp', additionalDetails: '', optional: false },
+        { ...WORCESTERSHIRE_SAUCE, amount: '2 tsp', additionalDetails: '', optional: false },
+        { ...ALL_PURPOSE_FLOUR, amount: '1/2 c', additionalDetails: '', optional: false },
+        { ...SOUR_CREAM, amount: '3 c', additionalDetails: '', optional: false },
+        { ...SPAGHETTI_NOODLES, amount: '6 c', additionalDetails: 'cooked', optional: false },
     ],
     appliances: [
         { name: 'stove' },

@@ -1,5 +1,12 @@
 const hospitalityChicken = '../assets/Products/hospitality-chicken.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const {
+    CHICKEN_THIGH,
+    MCCORMICK_SEASONING_PACKET,
+    SNOW_PEAS,
+    CARROT_CHIPS,
+    OLIVE_OIL,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Hospitality Chicken',
@@ -15,11 +22,11 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '25 - 40 m',
     ingredients: [
-        { name: 'chicken thigh', amount: '5 lb', additionalDetails: '', optional: false },
-        { name: 'McCormick seasoning packet', amount: '1', additionalDetails: '', optional: false },
-        { name: 'snow peas', amount: '1 lb', additionalDetails: '', optional: false },
-        { name: 'carrot chips', amount: '1 lb', additionalDetails: '', optional: false },
-        { name: 'olive oil', amount: '1 tsp', additionalDetails: '', optional: false },
+        { ...CHICKEN_THIGH, amount: '5 lb', additionalDetails: '', optional: false },
+        { ...MCCORMICK_SEASONING_PACKET, amount: '1', additionalDetails: '', optional: false },
+        { ...SNOW_PEAS, amount: '1 lb', additionalDetails: '', optional: false },
+        { ...CARROT_CHIPS, amount: '1 lb', additionalDetails: '', optional: false },
+        { ...OLIVE_OIL, amount: '1 tsp', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'air fryer' },

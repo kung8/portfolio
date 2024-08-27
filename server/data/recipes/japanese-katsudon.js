@@ -6,6 +6,22 @@ const mirin = '../assets/Products/chicken-katsudon-onion-in-mirin.jpeg';
 const layered = '../assets/Products/chicken-katsudon-layered.jpeg';
 const finished = '../assets/Products/chicken-katsudon-finished.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const {
+    BONELESS_PORK_CHOPS,
+    SALT,
+    BLACK_PEPPER,
+    ALL_PURPOSE_FLOUR,
+    EGGS,
+    PANKO_BREADCRUMBS,
+    VEGETABLE_OIL,
+    CHICKEN_BROTH,
+    WHITE_SUGAR,
+    LIGHT_SOY_SAUCE,
+    MIRIN,
+    MEDIUM_YELLOW_ONION,
+    JASMINE_RICE,
+    GREEN_ONIONS,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Japanese Pork Katsudon',
@@ -25,20 +41,20 @@ module.exports = {
         'https://thewoksoflife.com/katsudon/'
     ],
     ingredients: [
-        { name: 'boneless pork chops', amount: '10', additionalDetails: 'pounded flat', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'flour', amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'eggs', amount: '15', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'panko', amount: '5 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'oil', amount: '', additionalDetails: 'for frying', section: SECTIONS.MAIN },
-        { name: 'chicken broth', amount: '2 1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'sugar', amount: '10 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'soy sauce', amount: '5 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'mirin', amount: '10 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'medium onion', amount: '5', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
-        { name: 'white rice', amount: '5 c', additionalDetails: 'steamed', section: SECTIONS.MAIN },
-        { name: 'green onion', amount: '5', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...BONELESS_PORK_CHOPS, amount: '10', additionalDetails: 'pounded flat', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '15', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PANKO_BREADCRUMBS, amount: '5 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: '', additionalDetails: 'for frying', section: SECTIONS.MAIN },
+        { ...CHICKEN_BROTH, amount: '2 1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: '10 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LIGHT_SOY_SAUCE, amount: '5 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MIRIN, amount: '10 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MEDIUM_YELLOW_ONION, amount: '5', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
+        { ...JASMINE_RICE, amount: '5 c', additionalDetails: 'steamed', section: SECTIONS.MAIN },
+        { ...GREEN_ONIONS, amount: '5', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

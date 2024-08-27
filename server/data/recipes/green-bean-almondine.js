@@ -6,6 +6,17 @@ const bath = '../assets/Products/green-bean-almondine-ice-bath.jpeg';
 const ice = '../assets/Products/green-bean-almondine-ice-water.jpeg';
 const plate = '../assets/Products/green-bean-almondine-plate.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
+const {
+    SALT,
+    FRENCH_GREEN_BEAN,
+    UNSALTED_BUTTER,
+    SLICED_ALMONDS,
+    SHALLOTS,
+    LEMON_ZEST,
+    LEMON_JUICE,
+    BLACK_PEPPER,
+    ICE,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Green Bean Almondine',
@@ -23,15 +34,15 @@ module.exports = {
         'https://www.abeautifulplate.com/green-beans-almondine/'
     ],
     ingredients: [
-        { name: 'salt', amount: '2 1/2 tsp', additionalDetails: '', section: '' },
-        { name: 'french green bean', amount: '1 lb', additionalDetails: '', section: '' },
-        { name: 'unsalted butter', amount: '1/4 c', additionalDetails: '', section: '' },
-        { name: 'sliced almonds', amount: '1/4 c', additionalDetails: '', section: '' },
-        { name: 'shallot', amount: '1', additionalDetails: '', section: '' },
-        { name: 'lemon zest', amount: '1 tsp', additionalDetails: '', section: '' },
-        { name: 'lemon juice', amount: '2 tsp', additionalDetails: '', section: '' },
-        { name: 'pepper', amount: '1/4 tsp', additionalDetails: '', section: '' },
-        { name: 'ice', amount: '', additionalDetails: '', section: '' },
+        { ...SALT, amount: '2 1/2 tsp', additionalDetails: '', section: '' },
+        { ...FRENCH_GREEN_BEAN, amount: '1 lb', additionalDetails: '', section: '' },
+        { ...UNSALTED_BUTTER, amount: '1/4 c', additionalDetails: '', section: '' },
+        { ...SLICED_ALMONDS, amount: '1/4 c', additionalDetails: '', section: '' },
+        { ...SHALLOTS, amount: '1', additionalDetails: '', section: '' },
+        { ...LEMON_ZEST, amount: '1 tsp', additionalDetails: '', section: '' },
+        { ...LEMON_JUICE, amount: '2 tsp', additionalDetails: '', section: '' },
+        { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: '' },
+        { ...ICE, amount: '', additionalDetails: '', section: '' },
     ],
     appliances: [
         { name: 'stove' },

@@ -13,9 +13,25 @@ const rawBroccoli = '../assets/Products/broccoli-beef-raw-broccoli.jpeg';
 const thickened = '../assets/Products/broccoli-beef-sauce-thickened.jpeg';
 const sauce = '../assets/Products/broccoli-beef-sauce.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    BAKING_SODA,
+    BEEF,
+    BROCCOLI,
+    CORNSTARCH,
+    GARLIC,
+    GINGER,
+    LIGHT_SOY_SAUCE,
+    SALT,
+    SESAME_OIL,
+    SHAOXING_WINE,
+    SESAME_SEEDS,
+    VEGETABLE_OIL,
+    WHITE_SUGAR,
+    WARM_WATER,
+} = require('./ingredients');
 
-const BEEF = 'Beef';
-const BROCCOLI = 'Broccoli';
+const BEEF_SECTION = 'Beef';
+const BROCCOLI_SECTION = 'Broccoli';
 
 module.exports = {
     cardName: 'Broccoli Beef',
@@ -34,23 +50,23 @@ module.exports = {
     websites: [],
     separated: true,
     ingredients: [
-        { name: 'beef', amount: '1 lb', additionalDetails: 'sliced', section: BEEF },
-        { name: 'water', amount: '3 Tbsp', additionalDetails: '', section: BEEF },
-        { name: 'shaoxing', amount: '2 Tbsp', additionalDetails: '', section: BEEF },
-        { name: 'salt', amount: '1 tsp', additionalDetails: '', section: BEEF },
-        { name: 'cornstarch', amount: '3 Tbsp', additionalDetails: '', section: BEEF },
-        { name: 'baking soda', amount: '1/2 tsp', additionalDetails: '', section: BEEF },
-        { name: 'vegetable oil', amount: '2 Tbsp', additionalDetails: '', section: BEEF },
-        { name: 'light soy sauce', amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'water', amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'sugar', amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'cornstarch', amount: '1 1/2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'sesame oil', amount: '1 1/2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'broccoli', amount: '2 heads of', additionalDetails: 'cut into florets', section: SECTIONS.MAIN },
-        { name: 'ginger', amount: '1 1/2 Tbsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { name: 'garlic', amount: '1 1/2 Tbsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { name: 'vegetable oil', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'sesame seeds', amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...BEEF, amount: '1 lb', additionalDetails: 'sliced', section: BEEF_SECTION },
+        { ...WARM_WATER, amount: '3 Tbsp', additionalDetails: '', section: BEEF_SECTION },
+        { ...SHAOXING_WINE, amount: '2 Tbsp', additionalDetails: '', section: BEEF_SECTION },
+        { ...SALT, amount: '1 tsp', additionalDetails: '', section: BEEF_SECTION },
+        { ...CORNSTARCH, amount: '3 Tbsp', additionalDetails: '', section: BEEF_SECTION },
+        { ...BAKING_SODA, amount: '1/2 tsp', additionalDetails: '', section: BEEF_SECTION },
+        { ...VEGETABLE_OIL, amount: '2 Tbsp', additionalDetails: '', section: BEEF_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WARM_WATER, amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CORNSTARCH, amount: '1 1/2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SESAME_OIL, amount: '1 1/2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROCCOLI, amount: '2 heads of', additionalDetails: 'cut into florets', section: SECTIONS.MAIN },
+        { ...GINGER, amount: '1 1/2 Tbsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '1 1/2 Tbsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SESAME_SEEDS, amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },
@@ -61,11 +77,11 @@ module.exports = {
         { name: '2 large bowls' },
     ],
     directions: [
-        { step: 'In a large bowl, combine the beef marinade ingredients. Let it marinate for 30 minutes.', type: BEEF, img: marinating },
+        { step: 'In a large bowl, combine the beef marinade ingredients. Let it marinate for 30 minutes.', type: BEEF_SECTION, img: marinating },
         { step: 'In a medium bowl, combine the sauce ingredients and set aside.', type: SECTIONS.SAUCE, img: sauce },
-        { step: 'In a large pot, boil water.', type: BROCCOLI, img: rawBroccoli },
-        { step: 'Add broccoli to the boiling water.', type: BROCCOLI, img: blanching },
-        { step: 'Transfer to ice bath after 3 or 4 minutes.', type: BROCCOLI, img: bath },
+        { step: 'In a large pot, boil water.', type: BROCCOLI_SECTION, img: rawBroccoli },
+        { step: 'Add broccoli to the boiling water.', type: BROCCOLI_SECTION, img: blanching },
+        { step: 'Transfer to ice bath after 3 or 4 minutes.', type: BROCCOLI_SECTION, img: bath },
         { step: 'Over medium-high heat, heat up a wok and add beef.', type: SECTIONS.MAIN, img: cookingBeef },
         { step: 'Cook beef just until cooked about 80% of the way.', type: SECTIONS.MAIN, img: partialBeef },
         { step: 'Remove beef from the wok.', type: SECTIONS.MAIN, img: eighty },

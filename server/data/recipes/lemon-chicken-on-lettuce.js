@@ -1,5 +1,16 @@
 const lemonChickenOnLettuce = '../assets/Products/lemon-chicken-on-lettuce.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const {
+    VEGETABLE_OIL,
+    CHICKEN_BREAST,
+    LEMON_JUICE,
+    LIGHT_SOY_SAUCE,
+    WARM_WATER,
+    CORNSTARCH,
+    LETTUCE,
+    SALT,
+    BLACK_PEPPER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Lettuce Chicken',
@@ -16,15 +27,15 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '15 m',
     ingredients: [
-        { name: 'vegetable oil', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'chicken', amount: '1.5 lb', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'lemon juice', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'soy sauce', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'water', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'cornstarch', amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'lettuce', amount: '7 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_BREAST, amount: '1.5 lb', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...LEMON_JUICE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORNSTARCH, amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LETTUCE, amount: '7 oz', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

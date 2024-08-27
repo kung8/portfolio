@@ -6,6 +6,15 @@ const placed = '../assets/Products/ginger-chicken-placed-ginger.jpeg';
 const plated = '../assets/Products/ginger-chicken-plated.jpeg';
 const sauce = '../assets/Products/ginger-chicken-soy-sauce.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const {
+    CHICKEN_THIGH,
+    GINGER,
+    GARLIC,
+    LIGHT_SOY_SAUCE,
+    SALT,
+    BLACK_PEPPER,
+    CORNSTARCH,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Ginger Chicken',
@@ -22,13 +31,13 @@ module.exports = {
     prepTime: '15 m',
     cookTime: '20 m',
     ingredients: [
-        { name: 'chicken thigh', amount: '3 lb', additionalDetails: 'cut into 2 inch pieces', section: SECTIONS.MAIN },
-        { name: 'fresh ginger', amount: '3 inch', additionalDetails: 'strips', section: SECTIONS.MAIN },
-        { name: 'garlic', amount: '3 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { name: 'low-sodium soy sauce', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'black pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'cornstarch', amount: '', additionalDetails: 'to thicken', section: SECTIONS.MAIN },
+        { ...CHICKEN_THIGH, amount: '3 lb', additionalDetails: 'cut into 2 inch pieces', section: SECTIONS.MAIN },
+        { ...GINGER, amount: '3 inch', additionalDetails: 'strips', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...LIGHT_SOY_SAUCE, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...CORNSTARCH, amount: '', additionalDetails: 'to thicken', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

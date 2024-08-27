@@ -1,5 +1,19 @@
 const taco = '../assets/Products/taco-in-a-bag.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN } = require('./constants');
+const {
+    BLACK_BEANS,
+    BLACK_PEPPER,
+    CHEDDAR_CHEESE,
+    CORN,
+    GREEN_BELL_PEPPERS,
+    GROUND_BEEF,
+    LETTUCE,
+    SALT,
+    SOUR_CREAM,
+    FRITOS,
+    TACO_SEASONING,
+    ROMA_TOMATO,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Taco in a Bag',
@@ -15,18 +29,18 @@ module.exports = {
     cookTime: '10 m',
     separated: true,
     ingredients: [
-        { name: 'ground beef', amount: '1 lb', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'medium-sized frito chips', amount: '1 bag', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'taco seasoning', amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'black bean', amount: '8 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'corn', amount: '8 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'tomato', amount: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
-        { name: 'green bell peppers', amount: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
-        { name: 'sour cream', amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'shredded cheese', amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'lettuce', amount: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
+        { ...GROUND_BEEF, amount: '1 lb', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRITOS, amount: '1 medium bag', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...TACO_SEASONING, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_BEANS, amount: '8 oz', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORN, amount: '8 oz', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...ROMA_TOMATO, amount: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
+        { ...GREEN_BELL_PEPPERS, amount: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
+        { ...SOUR_CREAM, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...CHEDDAR_CHEESE, amount: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
+        { ...LETTUCE, amount: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

@@ -9,6 +9,16 @@ const milk = '../assets/Products/peach-cobbler-milk.jpeg'
 const mixed = '../assets/Products/peach-cobbler-mixed.jpeg'
 const peaches = '../assets/Products/peach-cobbler-peaches.jpeg'
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
+const {
+    UNSALTED_BUTTER,
+    ALL_PURPOSE_FLOUR,
+    WHITE_SUGAR,
+    BAKING_POWDER,
+    SALT,
+    MILK,
+    CINNAMON,
+    CANNED_PEACH,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Peach Cobbler',
@@ -24,14 +34,14 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '40 m',
     ingredients: [
-        { name: 'butter', amount: '6 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'flour', amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'sugar', amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'baking powder', amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'milk', amount: '3/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'canned peach', amount: '4 c', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'ground cinnamon', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '6 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_POWDER, amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MILK, amount: '3/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CANNED_PEACH, amount: '4 c', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...CINNAMON, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

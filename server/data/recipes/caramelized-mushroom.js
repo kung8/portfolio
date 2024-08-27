@@ -3,6 +3,15 @@ const cooked = '../assets/Products/caramelized-mushroom-cooked.jpeg';
 const cooking = '../assets/Products/caramelized-mushroom-cooking.jpeg';
 const raw = '../assets/Products/caramelized-mushroom-raw.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
+const {
+    MUSHROOMS,
+    UNSALTED_BUTTER,
+    BROWN_SUGAR,
+    LIGHT_SOY_SAUCE,
+    SALT,
+    BLACK_PEPPER,
+    BALSAMIC_VINEGAR,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Caramelized Mushroom',
@@ -16,13 +25,13 @@ module.exports = {
     prepTime: '2 m',
     cookTime: '20 m',
     ingredients: [
-        { name: 'mushroom', amount: '8 oz', additionalDetails: '', section: SECTIONS.TOPPING },
-        { name: 'butter', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
-        { name: 'brown sugar', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
-        { name: 'balsamic vinegar', amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
-        { name: 'soy sauce', amount: '1 tsp', additionalDetails: '', section: SECTIONS.TOPPING },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
+        { ...MUSHROOMS, amount: '8 oz', additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...UNSALTED_BUTTER, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...BROWN_SUGAR, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...BALSAMIC_VINEGAR, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...LIGHT_SOY_SAUCE, amount: '1 tsp', additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
     ],
     appliances: [
         { name: 'stove' },

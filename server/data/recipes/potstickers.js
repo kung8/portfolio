@@ -7,6 +7,22 @@ const raw = '../assets/Products/potstickers-raw.jpeg';
 const zoomed = '../assets/Products/potstickers-zoomed.jpeg';
 const potstickers = '../assets/Products/potstickers.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    GROUND_PORK,
+    GARLIC,
+    GREEN_ONIONS,
+    GINGER,
+    LIGHT_SOY_SAUCE,
+    SESAME_OIL,
+    CAYENNE_PEPPER,
+    CABBAGE,
+    ALL_PURPOSE_FLOUR,
+    HOT_WATER,
+    SALT,
+    RICE_WINE_VINEGAR,
+    VEGETABLE_OIL,
+    WARM_WATER,
+} = require('./ingredients');
 
 const DIPPING_SAUCE = 'Dipping Sauce';
 const ASSEMBLY = 'Assembly';
@@ -29,21 +45,21 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { name: 'ground pork', amount: '1 lb', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'garlic', amount: '4 cloves', additionalDetails: 'minced', section: SECTIONS.FILLING },
-        { name: 'green onion', amount: '½ c', additionalDetails: 'finely diced', section: SECTIONS.FILLING },
-        { name: 'ginger', amount: '3 Tbsp', additionalDetails: 'minced', section: SECTIONS.FILLING },
-        { name: 'soy sauce', amount: '2 Tbsp + 1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'sesame oil', amount: '1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'cayenne pepper', amount: '1 pinch', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'cabbage', amount: '1 ½ c', additionalDetails: 'finely chopped', section: SECTIONS.FILLING },
-        { name: 'all-purpose flour', amount: '2 ½ c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'hot water', amount: '1 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'salt', amount: '¾ tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'rice vinegar', amount: '¼ c', additionalDetails: '', section: DIPPING_SAUCE },
-        { name: 'soy sauce', amount: '¼ c', additionalDetails: '', section: DIPPING_SAUCE },
-        { name: 'vegetable oil', amount: '6 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'water', amount: '8 Tbsp', additionalDetails: 'for steaming', section: SECTIONS.MAIN },
+        { ...GROUND_PORK, amount: '1 lb', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...GREEN_ONIONS, amount: '½ c', additionalDetails: 'finely diced', section: SECTIONS.FILLING },
+        { ...GINGER, amount: '3 Tbsp', additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp + 1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SESAME_OIL, amount: '1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CAYENNE_PEPPER, amount: '1 pinch', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CABBAGE, amount: '1 ½ c', additionalDetails: 'finely chopped', section: SECTIONS.FILLING },
+        { ...ALL_PURPOSE_FLOUR, amount: '2 ½ c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...HOT_WATER, amount: '1 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: '¾ tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...RICE_WINE_VINEGAR, amount: '¼ c', additionalDetails: '', section: DIPPING_SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: '¼ c', additionalDetails: '', section: DIPPING_SAUCE },
+        { ...VEGETABLE_OIL, amount: '6 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: '8 Tbsp', additionalDetails: 'for steaming', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

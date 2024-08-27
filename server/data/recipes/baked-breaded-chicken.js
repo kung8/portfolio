@@ -6,6 +6,20 @@ const plated = '../assets/Products/baked-breaded-chicken-plated.jpeg';
 const seasoned = '../assets/Products/baked-breaded-chicken-seasoned.jpeg';
 const full = '../assets/Products/basil-pesto-meal-plated.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    BREADCRUMBS,
+    PANKO_BREADCRUMBS,
+    PARMESAN_CHEESE,
+    BASIL,
+    OREGANO,
+    ONION_POWDER,
+    BLACK_PEPPER,
+    OLIVE_OIL,
+    GARLIC,
+    PAPRIKA,
+    CHICKEN_BREAST,
+    SALT
+} = require('./ingredients');
 
 const BREADING = 'Breading';
 const DREDGING = 'Dredging';
@@ -28,19 +42,19 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { name: 'bread crumb', amount: '1/2 c', additionalDetails: '', section: BREADING },
-        { name: 'panko', amount: '1/2 c', additionalDetails: '', section: BREADING },
-        { name: 'parmesan', amount: '2/3 c', additionalDetails: '', section: BREADING },
-        { name: 'basil', amount: '1 tsp', additionalDetails: '', section: BREADING },
-        { name: 'oregano', amount: '1 tsp', additionalDetails: '', section: BREADING },
-        { name: 'onion powder', amount: '1/2 tsp', additionalDetails: '', section: BREADING },
-        { name: 'black pepper', amount: '1/4 tsp', additionalDetails: '', section: BREADING },
-        { name: 'olive oil', amount: '1/4 c', additionalDetails: '', section: DREDGING },
-        { name: 'garlic', amount: '2 cloves', additionalDetails: 'minced', section: DREDGING },
-        { name: 'paprika', amount: '1/2 tsp', additionalDetails: '', section: DREDGING },
-        { name: 'chicken breast', amount: '6', additionalDetails: 'halved', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'season', section: SECTIONS.MAIN },
-        { name: 'pepper', amount: '', additionalDetails: 'season', section: SECTIONS.MAIN },
+        { ...BREADCRUMBS, amount: '1/2 c', additionalDetails: '', section: BREADING },
+        { ...PANKO_BREADCRUMBS, amount: '1/2 c', additionalDetails: '', section: BREADING },
+        { ...PARMESAN_CHEESE, amount: '2/3 c', additionalDetails: '', section: BREADING },
+        { ...BASIL, amount: '1 tsp', additionalDetails: '', section: BREADING },
+        { ...OREGANO, amount: '1 tsp', additionalDetails: '', section: BREADING },
+        { ...ONION_POWDER, amount: '1/2 tsp', additionalDetails: '', section: BREADING },
+        { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: BREADING },
+        { ...OLIVE_OIL, amount: '1/4 c', additionalDetails: '', section: DREDGING },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', section: DREDGING },
+        { ...PAPRIKA, amount: '1/2 tsp', additionalDetails: '', section: DREDGING },
+        { ...CHICKEN_BREAST, amount: '6', additionalDetails: 'halved', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'season', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'season', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

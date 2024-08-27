@@ -1,5 +1,17 @@
 const roast = '../assets/Products/roast.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
+const {
+    BEEF_ROAST,
+    BLACK_PEPPER,
+    SALT,
+    OLIVE_OIL,
+    MEDIUM_YELLOW_ONION,
+    CARROTS,
+    RED_WINE_VINEGAR,
+    BEEF_BROTH,
+    FRESH_ROSEMARY,
+    FRESH_THYME,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Pot Roast',
@@ -17,16 +29,16 @@ module.exports = {
         'https://www.foodnetwork.com/recipes/ina-garten/pot-roast-recipe-1941651'
     ],
     ingredients: [
-        { name: 'beef roast', amount: '3 lb', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'black pepper', amount: '2 sprigs', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'olive oil', amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'onions', amount: '2', additionalDetails: 'quartered', section: SECTIONS.MAIN },
-        { name: 'carrots', amount: '8', additionalDetails: 'cut into 2"', section: SECTIONS.MAIN },
-        { name: 'red wine', amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'beef broth', amount: '3 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'fresh rosemary', amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'fresh thyme', amount: '2 sprigs', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BEEF_ROAST, amount: '3 lb', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '2 sprigs', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MEDIUM_YELLOW_ONION, amount: '2', additionalDetails: 'quartered', section: SECTIONS.MAIN },
+        { ...CARROTS, amount: '8', additionalDetails: 'cut into 2"', section: SECTIONS.MAIN },
+        { ...RED_WINE_VINEGAR, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BEEF_BROTH, amount: '3 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRESH_ROSEMARY, amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRESH_THYME, amount: '2 sprigs', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

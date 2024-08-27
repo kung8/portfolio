@@ -1,5 +1,18 @@
 const lemonChicken = '../assets/Products/lemon-chicken.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const {
+    BONELESS_CHICKEN_THIGH,
+    LIGHT_SOY_SAUCE,
+    SHAOXING_WINE,
+    CORNSTARCH,
+    ALL_PURPOSE_FLOUR,
+    VEGETABLE_OIL,
+    LEMON_JUICE,
+    WHITE_SUGAR,
+    WARM_WATER,
+    SALT,
+    SESAME_SEEDS,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Lemon Chicken',
@@ -19,19 +32,19 @@ module.exports = {
         'https://rasamalaysia.com/lemon-chicken/'
     ],
     ingredients: [
-        { name: 'boneless chicken thigh', amount: '3 lbs', additionalDetails: 'cut into small pieces', section: SECTIONS.MARINADE },
-        { name: 'soy sauce', amount: '2 1/2 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'shaoxing wine', amount: '2 1/2 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'cornstarch', amount: '5 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
-        { name: 'cornstarch', amount: '1 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'flour', amount: '1 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'vegetable oil', amount: '', additionalDetails: 'for deep-frying', section: SECTIONS.MAIN },
-        { name: 'lemon juice', amount: '15 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'sugar', amount: '5 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'water', amount: '25 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'cornstarch', amount: '5 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'salt', amount: '5 pinches', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
-        { name: 'white sesame', amount: '2 1/2 tsp', additionalDetails: 'to top', section: SECTIONS.TOPPINGS },
+        { ...BONELESS_CHICKEN_THIGH, amount: '3 lbs', additionalDetails: 'cut into small pieces', section: SECTIONS.MARINADE },
+        { ...LIGHT_SOY_SAUCE, amount: '2 1/2 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...SHAOXING_WINE, amount: '2 1/2 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CORNSTARCH, amount: '5 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CORNSTARCH, amount: '1 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: '1 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: '', additionalDetails: 'for deep-frying', section: SECTIONS.MAIN },
+        { ...LEMON_JUICE, amount: '15 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: '5 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WARM_WATER, amount: '25 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CORNSTARCH, amount: '5 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: '5 pinches', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
+        { ...SESAME_SEEDS, amount: '2 1/2 tsp', additionalDetails: 'to top', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

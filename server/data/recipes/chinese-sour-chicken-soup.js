@@ -1,5 +1,10 @@
 const sourChicken = '../assets/Products/sour-chicken.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN } = require('./constants');
+const {
+    CHICKEN_THIGH,
+    KNORR_TAMARIND_SOUP_BASE,
+    LIME_JUICE,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Sour Chicken Soup',
@@ -15,9 +20,9 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '1 h',
     ingredients: [
-        { name: 'chicken thigh (with bone and skin)', amount: '6 lb', additionalDetails: '', optional: false },
-        { name: 'Knorr tamarind soup mix', amount: '1 packet', additionalDetails: '', optional: false },
-        { name: 'lime juice', amount: '2 Tbsp', additionalDetails: '', optional: false },
+        { ...CHICKEN_THIGH, amount: '6 lb', additionalDetails: '', optional: false },
+        { ...KNORR_TAMARIND_SOUP_BASE, amount: '1 packet', additionalDetails: '', optional: false },
+        { ...LIME_JUICE, amount: '2 Tbsp', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },

@@ -11,6 +11,20 @@ const raw = '../assets/Products/oatmeal-raisin-cookies-raw-pan.jpeg';
 const zoomed = '../assets/Products/oatmeal-raisin-cookies-zoomed.jpeg';
 const chocolate = '../assets/Products/oatmeal-raisin-cookies-with-chocolate-chip.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    ALL_PURPOSE_FLOUR,
+    BAKING_SODA,
+    BAKING_POWDER,
+    SALT,
+    WHITE_SUGAR,
+    BROWN_SUGAR,
+    UNSALTED_BUTTER,
+    EGGS,
+    VANILLA_EXTRACT,
+    STEEL_OATS,
+    RAISINS,
+    SEMI_SWEET_CHOCOLATE_CHIPS,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Oatmeal Raisin Cookies',
@@ -30,18 +44,18 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { name: 'all-purpose flour', amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'baking soda', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'baking powder', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'sugar', amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'brown sugar', amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'unsalted butter', amount: '1 c', additionalDetails: 'softened', section: SECTIONS.MAIN },
-        { name: 'large eggs', amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'vanilla extract', amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'oats', amount: '3 c', additionalDetails: 'non-instant', section: SECTIONS.MAIN },
-        { name: 'raisins', amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'chocolate chips', amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_SODA, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_POWDER, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BROWN_SUGAR, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '1 c', additionalDetails: 'softened', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: '2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...STEEL_OATS, amount: '3 c', additionalDetails: 'non-instant', section: SECTIONS.MAIN },
+        { ...RAISINS, amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

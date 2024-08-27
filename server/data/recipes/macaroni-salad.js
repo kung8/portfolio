@@ -1,5 +1,17 @@
 const macaroni = '../assets/Products/macaroni-salad.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
+const {
+    ELBOW_MACARONI,
+    MAYONNAISE,
+    WHITE_VINEGAR,
+    WHITE_SUGAR,
+    YELLOW_MUSTARD,
+    SALT,
+    BLACK_PEPPER,
+    MEDIUM_YELLOW_ONION,
+    CELERY,
+    GREEN_BELL_PEPPERS,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Macaroni Salad',
@@ -14,16 +26,16 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '10 m',
     ingredients: [
-        { name: 'elbow macaroni', amount: '4 c', additionalDetails: '', optional: false },
-        { name: 'mayonnaise', amount: '1 c', additionalDetails: '', optional: false },
-        { name: 'vinegar', amount: '1/4 c', additionalDetails: '', optional: false },
-        { name: 'sugar', amount: '2/3 c', additionalDetails: '', optional: false },
-        { name: 'yellow mustard', amount: '2 1/2 Tbsp', additionalDetails: '', optional: false },
-        { name: 'salt (+ for boiling)', amount: '1 1/2 tsp', additionalDetails: '', optional: false },
-        { name: 'pepper', amount: '1/2 tsp', additionalDetails: '', optional: false },
-        { name: 'onion', amount: '1', additionalDetails: 'diced', optional: false },
-        { name: 'celery', amount: '2 stalks', additionalDetails: 'sliced', optional: false },
-        { name: 'green bell pepper', amount: '1', additionalDetails: 'diced', optional: false },
+        { ...ELBOW_MACARONI, amount: '4 c', additionalDetails: '', optional: false },
+        { ...MAYONNAISE, amount: '1 c', additionalDetails: '', optional: false },
+        { ...WHITE_VINEGAR, amount: '1/4 c', additionalDetails: '', optional: false },
+        { ...WHITE_SUGAR, amount: '2/3 c', additionalDetails: '', optional: false },
+        { ...YELLOW_MUSTARD, amount: '2 1/2 Tbsp', additionalDetails: '', optional: false },
+        { ...SALT, amount: '1 1/2 tsp', additionalDetails: '', optional: false },
+        { ...BLACK_PEPPER, amount: '1/2 tsp', additionalDetails: '', optional: false },
+        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'diced', optional: false },
+        { ...CELERY, amount: '2 stalks', additionalDetails: 'sliced', optional: false },
+        { ...GREEN_BELL_PEPPERS, amount: '1', additionalDetails: 'diced', optional: false },
     ],
     appliances: [
         { name: 'stove' },

@@ -4,7 +4,18 @@ const oil = '../assets/Products/sauteed-squash-oil-in-pan.jpeg';
 const onions = '../assets/Products/sauteed-squash-onions.jpeg';
 const plated = '../assets/Products/sauteed-squash-plated.jpeg';
 const raw = '../assets/Products/sauteed-squash-raw.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    OLIVE_OIL,
+    UNSALTED_BUTTER,
+    MEDIUM_YELLOW_ONION,
+    SALT,
+    BLACK_PEPPER,
+    THYME,
+    PARMESAN_CHEESE,
+    ZUCCHINI,
+    SUMMER_SQUASH,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Sauteed Squash',
@@ -23,15 +34,15 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { name: 'olive oil', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'butter', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'yellow onion', amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'zucchini', amount: '3', additionalDetails: 'sliced into 2"', section: SECTIONS.MAIN },
-        { name: 'summer squash', amount: '1', additionalDetails: 'sliced into 2"', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'black pepper', amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'thyme', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'parmesan', amount: '1/4 c', additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...ZUCCHINI, amount: '3', additionalDetails: 'sliced into 2"', section: SECTIONS.MAIN },
+        { ...SUMMER_SQUASH, amount: '1', additionalDetails: 'sliced into 2"', section: SECTIONS.MAIN },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...THYME, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PARMESAN_CHEESE, amount: '1/4 c', additionalDetails: 'shredded', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

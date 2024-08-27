@@ -1,5 +1,17 @@
 const katsu = '../assets/Products/katsu-full.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const {
+    CHICKEN_BREAST,
+    VEGETABLE_OIL,
+    EGGS,
+    PANKO_BREADCRUMBS,
+    ALL_PURPOSE_FLOUR,
+    SALT,
+    JASMINE_RICE,
+    CABBAGE,
+    ROMA_TOMATO,
+    LEMON,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Japanese Chicken Katsu',
@@ -21,16 +33,16 @@ module.exports = {
         'https://www.justonecookbook.com/chicken-katsu/'
     ],
     ingredients: [
-        { name: 'chicken breast (or pork loins)', amount: '4', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'vegetable oil', amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'egg', amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'panko bread crumbs', amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'flour', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'rice', amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'cabbage (optional)', amount: '1/4', additionalDetails: 'julienned', section: SECTIONS.TOPPINGS },
-        { name: 'tomato (optional)', amount: '2', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
-        { name: 'lemon (optional)', amount: '', additionalDetails: 'wedges', section: SECTIONS.TOPPINGS },
+        { ...CHICKEN_BREAST, amount: '4', additionalDetails: 'or ' + PORK_LOIN.name, section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PANKO_BREADCRUMBS, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...JASMINE_RICE, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CABBAGE, amount: '1/4', additionalDetails: 'julienne', section: SECTIONS.TOPPINGS },
+        { ...ROMA_TOMATO, amount: '2', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...LEMON, amount: '', additionalDetails: 'wedges', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

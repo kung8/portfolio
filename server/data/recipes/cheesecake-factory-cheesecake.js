@@ -22,6 +22,22 @@ const zoomed = '../assets/Products/cheesecake-zoomed-in.jpeg';
 // const aerial = '../assets/Products/cheesecake-aerial.jpeg';
 // const zoomed = '../assets/Products/cheesecake-zoomed.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
+const {
+    WHITE_SUGAR,
+    UNSALTED_BUTTER,
+    CREAM_CHEESE,
+    EGGS,
+    VANILLA_EXTRACT,
+    SOUR_CREAM,
+    ALL_PURPOSE_FLOUR,
+    SALT,
+    STRAWBERRIES,
+    CORNSTARCH,
+    WARM_WATER,
+    LEMON,
+    COOKING_SPRAY,
+    GRAHAM_CRACKER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'C.F. Cheesecake',
@@ -41,22 +57,22 @@ module.exports = {
         'https://www.delish.com/cooking/recipe-ideas/a37762621/cheesecake-factory-original-cheesecake-copycat-recipe/'
     ],
     ingredients: [
-        { name: 'cooking spray', amount: '', additionalDetails: '', section: SECTIONS.CRUST },
-        { name: 'graham crackers', amount: '14.4 oz', additionalDetails: 'finely crushed', section: SECTIONS.CRUST },
-        { name: 'sugar', amount: '6 Tbsp', additionalDetails: '', section: SECTIONS.CRUST },
-        { name: 'butter', amount: '12 Tbsp', additionalDetails: 'melted', section: SECTIONS.CRUST },
-        { name: 'cream cheese', amount: '32 oz', additionalDetails: 'softened', section: SECTIONS.FILLING },
-        { name: 'sugar', amount: '1 c', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'large egg', amount: '4', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'vanilla extract', amount: '1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'sour cream', amount: '8 oz', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'all-purpose flour', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'salt', amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'strawberries', amount: '1 lb', additionalDetails: 'halved', section: SECTIONS.TOPPINGS },
-        { name: 'cornstarch', amount: '1 tsp', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'warm water', amount: '1/4 c', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'sugar', amount: '1/4 c', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'lemon', amount: '1', additionalDetails: 'juiced', section: SECTIONS.TOPPINGS },
+        { ...COOKING_SPRAY, amount: '', additionalDetails: '', section: SECTIONS.CRUST },
+        { ...GRAHAM_CRACKER, amount: '14.4 oz', additionalDetails: 'finely crushed', section: SECTIONS.CRUST },
+        { ...WHITE_SUGAR, amount: '6 Tbsp', additionalDetails: '', section: SECTIONS.CRUST },
+        { ...UNSALTED_BUTTER, amount: '12 Tbsp', additionalDetails: 'melted', section: SECTIONS.CRUST },
+        { ...CREAM_CHEESE, amount: '32 oz', additionalDetails: 'softened', section: SECTIONS.FILLING },
+        { ...WHITE_SUGAR, amount: '1 c', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...EGGS, amount: '4', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...VANILLA_EXTRACT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SOUR_CREAM, amount: '8 oz', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...ALL_PURPOSE_FLOUR, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALT, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...STRAWBERRIES, amount: '1 lb', additionalDetails: 'halved', section: SECTIONS.TOPPINGS },
+        { ...CORNSTARCH, amount: '1 tsp', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...WARM_WATER, amount: '1/4 c', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...WHITE_SUGAR, amount: '1/4 c', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...LEMON, amount: '1', additionalDetails: 'juiced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'oven' },

@@ -1,5 +1,13 @@
 const wraps = '../assets/Products/wraps.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
+const { 
+    CHEDDAR_CHEESE,
+    COOKED_HAM,
+    HONEY_MUSTARD,
+    ROMA_TOMATO,
+    SPINACH,
+    TORTILLA,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Wraps',
@@ -14,12 +22,12 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '2 m',
     ingredients: [
-        { name: 'tortilla', amount: '1', additionalDetails: '', optional: false },
-        { name: 'lunch meat slices', amount: '4', additionalDetails: 'preferred', optional: false },
-        { name: 'spinach', amount: '', additionalDetails: '', optional: false },
-        { name: 'cheese slices', amount: '3', additionalDetails: '', optional: false },
-        { name: 'tomato', amount: '1/2', additionalDetails: 'sliced', optional: false },
-        { name: 'honey mustard', amount: '', additionalDetails: '', optional: false },
+        { ...TORTILLA, amount: '1', additionalDetails: '', optional: false },
+        { ...COOKED_HAM, amount: '4', additionalDetails: 'preferred', optional: false },
+        { ...SPINACH, amount: '', additionalDetails: '', optional: false },
+        { ...CHEDDAR_CHEESE, amount: '3', additionalDetails: '', optional: false },
+        { ...ROMA_TOMATO, amount: '1/2', additionalDetails: 'sliced', optional: false },
+        { ...HONEY_MUSTARD, amount: '', additionalDetails: '', optional: false },
     ],
     supplies: [
         { name: 'plate' },

@@ -13,6 +13,16 @@ const sauce = '../assets/Products/bok-choy-sauce.jpeg';
 const zoomed = '../assets/Products/bok-choy-zoomed.jpeg';
 
 const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, METHODS } = require("./constants");
+const {
+    CHICKEN_BREAST,
+    BABY_BOK_CHOY,
+    LIGHT_SOY_SAUCE,
+    SALT,
+    BLACK_PEPPER,
+    OLIVE_OIL,
+    SESAME_SEEDS,
+    UNSALTED_BUTTER,
+} = require('./ingredients');
 
 const CHICKEN = 'Chicken';
 
@@ -31,14 +41,14 @@ module.exports = {
     cookTime: '40 m',
     separated: true,
     ingredients: [
-        { name: 'chicken breast', amount: '2', additionalDetails: '', section: CHICKEN },
-        { name: 'unsalted butter', amount: '1 Tbsp', additionalDetails: '', section: CHICKEN },
-        { name: 'baby bok choy', amount: '1 lb', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'soy sauce', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'olive oil', amount: '', additionalDetails: 'for wok', section: SECTIONS.MAIN },
-        { name: 'sesame seeds', amount: '', additionalDetails: 'to taste', section: SECTIONS.TOPPINGS },
+        { ...CHICKEN_BREAST, amount: '2', additionalDetails: '', section: CHICKEN },
+        { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: CHICKEN },
+        { ...BABY_BOK_CHOY, amount: '1 lb', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: '', additionalDetails: 'for wok', section: SECTIONS.MAIN },
+        { ...SESAME_SEEDS, amount: '', additionalDetails: 'to taste', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

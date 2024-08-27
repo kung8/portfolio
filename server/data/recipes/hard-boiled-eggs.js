@@ -1,7 +1,17 @@
 const egg = '../assets/Products/hard-boiled-egg.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    EGGS,
+    SALT,
+    BLACK_PEPPER,
+    OREGANO,
+    BASIL,
+    UNSALTED_BUTTER,
+    MEDIUM_YELLOW_ONION,
+    RED_BELL_PEPPERS,
+} = require('./ingredients');
 
-const EGGS = 'Eggs';
+const EGGS_SECTION = 'Eggs';
 const VEGGIES = 'Veggies';
 
 module.exports = {
@@ -19,14 +29,14 @@ module.exports = {
     cookTime: '10 m',
     separated: true,
     ingredients: [
-        { name: 'eggs', amount: '2', additionalDetails: '', section: EGGS },
-        { name: 'salt', amount: '', additionalDetails: 'to taste and for boiling', section: EGGS },
-        { name: 'black pepper', amount: '', additionalDetails: 'to taste', section: EGGS },
-        { name: 'oregano', amount: '', additionalDetails: 'to taste', section: EGGS },
-        { name: 'basil', amount: '', additionalDetails: 'to taste', section: EGGS },
-        { name: 'butter', amount: '1 Tbsp', additionalDetails: '', section: VEGGIES },
-        { name: 'onion', amount: '1/4', additionalDetails: 'diced', section: VEGGIES },
-        { name: 'bell pepper', amount: '1', additionalDetails: 'diced', section: VEGGIES },
+        { ...EGGS, amount: '2', additionalDetails: '', section: EGGS_SECTION },
+        { ...SALT, amount: '', additionalDetails: 'to taste and for boiling', section: EGGS_SECTION },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: EGGS_SECTION },
+        { ...OREGANO, amount: '', additionalDetails: 'to taste', section: EGGS_SECTION },
+        { ...BASIL, amount: '', additionalDetails: 'to taste', section: EGGS_SECTION },
+        { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: VEGGIES },
+        { ...MEDIUM_YELLOW_ONION, amount: '1/4', additionalDetails: 'diced', section: VEGGIES },
+        { ...RED_BELL_PEPPERS, amount: '1', additionalDetails: 'diced', section: VEGGIES },
     ],
     appliances: [
         { name: 'stove' },
@@ -36,10 +46,10 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'Over medium-high heat, boil water and salt in a saucepan.', type: EGGS },
-        { step: 'Once water has boiled, carefully add the raw eggs into the saucepan.', type: EGGS },
-        { step: 'Set a timer for 10 minutes.', type: EGGS },
-        { step: 'Once the eggs are cooked, peel them and add the preferred seasonings.', type: EGGS },
+        { step: 'Over medium-high heat, boil water and salt in a saucepan.', type: EGGS_SECTION },
+        { step: 'Once water has boiled, carefully add the raw eggs into the saucepan.', type: EGGS_SECTION },
+        { step: 'Set a timer for 10 minutes.', type: EGGS_SECTION },
+        { step: 'Once the eggs are cooked, peel them and add the preferred seasonings.', type: EGGS_SECTION },
         { step: 'While the eggs are cooking, heat a frying pan over medium-high heat.', type: VEGGIES },
         { step: 'Add a little butter to the frying pan once it\'s hot.', type: VEGGIES },
         { step: 'Brown some diced onion and peppers.', type: VEGGIES },

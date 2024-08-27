@@ -11,6 +11,12 @@ const scored = '../assets/Products/sourdough-bread-scored.jpeg';
 const uncovered = '../assets/Products/sourdough-bread-uncovered.jpeg';
 const cut = '../assets/Products/sourdough-bread-cut.jpeg';
 const { METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    ALL_PURPOSE_FLOUR,
+    SALT,
+    SOURDOUGH_STARTER,
+    WARM_WATER,
+} = require('./ingredients');
 
 const BAKING = 'Baking';
 
@@ -28,10 +34,10 @@ module.exports = {
     websites: [],
     separated: true,
     ingredients: [
-        { name: 'sourdough starter', amount: '1 c', additionalDetails: '', section: SECTIONS.DOUGH, link: { id: 'sourdough-starter', url: 'recipes/sourdough-starter' } },
-        { name: 'flour', amount: '2 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'water', amount: '1 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'salt', amount: '1 1/2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SOURDOUGH_STARTER, amount: '1 c', additionalDetails: '', section: SECTIONS.DOUGH, link: { id: 'sourdough-starter', url: 'recipes/sourdough-starter' } },
+        { ...ALL_PURPOSE_FLOUR, amount: '2 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: '1 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: '1 1/2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
     ],
     appliances: [
         { name: 'oven' },

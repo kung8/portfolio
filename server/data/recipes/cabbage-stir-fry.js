@@ -2,6 +2,11 @@ const cabbageStirFry = '../assets/Products/cabbage-stir-fry.jpeg';
 const raw = '../assets/Products/cabbage-stir-fry-raw.jpeg';
 const bowl = '../assets/Products/cabbage-stir-fry-in-bowl.jpeg';
 const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS } = require("./constants");
+const {
+    CABBAGE,
+    RED_PEPPER_FLAKES,
+    SESAME_OIL,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Cabbage Stir Fry',
@@ -16,9 +21,9 @@ module.exports = {
     prepTime: '3 m',
     cookTime: '10 m',
     ingredients: [
-        { name: 'cabbage', amount: '1/2 head of', additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { name: 'red pepper flakes', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'sesame oil', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CABBAGE, amount: '1/2 head of', additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...RED_PEPPER_FLAKES, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...SESAME_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

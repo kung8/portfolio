@@ -1,5 +1,10 @@
 const smores = '../assets/Products/smores.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS } = require('./constants');
+const {
+    GRAHAM_CRACKER,
+    MARSHMALLOW,
+    HERSHEY_CHOCOLATE_BAR,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'S\'mores',
@@ -13,9 +18,9 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '5 m',
     ingredients: [
-        { name: 'graham cracker', amount: '2', additionalDetails: '', optional: false },
-        { name: 'marshmallow', amount: '2', additionalDetails: '', optional: false },
-        { name: 'Hershey chocolate pieces', amount: '6', additionalDetails: '', optional: false },
+        { ...GRAHAM_CRACKER, amount: '2', additionalDetails: '', optional: false },
+        { ...MARSHMALLOW, amount: '2', additionalDetails: '', optional: false },
+        { ...HERSHEY_CHOCOLATE_BAR, amount: '6', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'oven' },

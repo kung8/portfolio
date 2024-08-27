@@ -9,6 +9,17 @@ const pan = '../assets/Products/snickerdoodle-dough-in-pan.jpeg';
 const cooked = '../assets/Products/snickerdoodle-cooked.jpeg';
 const full = '../assets/Products/snickerdoodle-cooked-full.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    ALL_PURPOSE_FLOUR,
+    CREAM_OF_TARTAR,
+    BAKING_SODA,
+    SALT,
+    UNSALTED_BUTTER,
+    WHITE_SUGAR,
+    EGGS,
+    VANILLA_EXTRACT,
+    CINNAMON,
+} = require('./ingredients');
 
 const COATING = 'Coating';
 
@@ -29,16 +40,16 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { name: 'flour', amount: '2 3/4 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'cream of tartar', amount: '2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'baking soda', amount: '1 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'salt', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'unsalted butter', amount: '1 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'sugar', amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'eggs', amount: '2', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'vanilla extract', amount: '1 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'sugar', amount: '1/3 c', additionalDetails: '', section: COATING },
-        { name: 'cinnamon', amount: '2 Tbsp', additionalDetails: '', section: COATING },
+        { ...ALL_PURPOSE_FLOUR, amount: '2 3/4 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...CREAM_OF_TARTAR, amount: '2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BAKING_SODA, amount: '1 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...UNSALTED_BUTTER, amount: '1 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...EGGS, amount: '2', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...VANILLA_EXTRACT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: '1/3 c', additionalDetails: '', section: COATING },
+        { ...CINNAMON, amount: '2 Tbsp', additionalDetails: '', section: COATING },
     ],
     appliances: [
         { name: 'oven' },

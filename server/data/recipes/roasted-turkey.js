@@ -2,6 +2,17 @@ const turkey = '../assets/Products/roast-turkey.jpeg';
 const turkeyCookingTable = '../assets/Products/cooking-turkey-estimates.png';
 const turkeyThawingTable = '../assets/Products/thawing-turkey-estimates.png';
 const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN } = require('./constants');
+const {
+    TURKEY,
+    LEMON,  
+    GARLIC,
+    OLIVE_OIL,
+    UNSALTED_BUTTER,
+    THYME,
+    ROSEMARY,
+    SALT,
+    BLACK_PEPPER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Roast Turkey',
@@ -16,15 +27,15 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '2 h 15 m - 4 h 20 m',
     ingredients: [
-        { name: 'turkey', amount: '', additionalDetails: 'desired size', optional: false },
-        { name: 'lemons', amount: '2', additionalDetails: 'sliced', optional: false },
-        { name: 'garlic', amount: '3.5 heads', additionalDetails: '3 heads halved, 1/2 head minced', optional: false },
-        { name: 'olive oil', amount: '2 c', additionalDetails: '3 heads halved, 1/2 head minced', optional: false },
-        { name: 'unsalted butter', amount: '4 oz', additionalDetails: '', optional: false },
-        { name: 'thyme', amount: '1 tsp + more as desired', additionalDetails: '', optional: false },
-        { name: 'rosemary', amount: '1 tsp + more as desired', additionalDetails: '', optional: false },
-        { name: 'salt', amount: '', additionalDetails: 'minced', optional: false },
-        { name: 'pepper', amount: '', additionalDetails: 'minced', optional: false },
+        { ...TURKEY, amount: '', additionalDetails: 'desired size', optional: false },
+        { ...LEMON, amount: '2', additionalDetails: 'sliced', optional: false },
+        { ...GARLIC, amount: '3.5 heads', additionalDetails: '3 heads halved, 1/2 head minced', optional: false },
+        { ...OLIVE_OIL, amount: '2 c', additionalDetails: '3 heads halved, 1/2 head minced', optional: false },
+        { ...UNSALTED_BUTTER, amount: '4 oz', additionalDetails: '', optional: false },
+        { ...THYME, amount: '1 tsp + more as desired', additionalDetails: '', optional: false },
+        { ...ROSEMARY, amount: '1 tsp + more as desired', additionalDetails: '', optional: false },
+        { ...SALT, amount: '', additionalDetails: 'minced', optional: false },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'minced', optional: false },
     ],
     appliances: [
         { name: 'oven' },

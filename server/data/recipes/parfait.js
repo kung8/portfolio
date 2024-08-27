@@ -1,5 +1,13 @@
 const parfait = '../assets/Products/parfait.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
+const {
+    PLAIN_YOGURT,
+    VANILLA_EXTRACT,
+    HONEY,
+    GRANOLA,
+    BERRIES,
+    CASHEWS,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Parfait',
@@ -13,12 +21,12 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '1 m',
     ingredients: [
-        { name: 'plain yogurt', amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'vanilla', amount: '1 Tbsp', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { name: 'honey', amount: '1 Tbsp', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { name: 'granola', amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { name: 'berries', amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { name: 'cashews', amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...PLAIN_YOGURT, amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: '1 Tbsp', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...HONEY, amount: '1 Tbsp', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...GRANOLA, amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...BERRIES, amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...CASHEWS, amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     supplies: [
         { name: 'bowl' },

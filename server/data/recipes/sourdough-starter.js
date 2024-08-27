@@ -1,4 +1,8 @@
 const starter = '../assets/Products/sourdough-starter.jpeg';
+const {
+    ALL_PURPOSE_FLOUR,
+    WARM_WATER,
+} = require('./ingredients');
 
 const CREATING_STARTER = 'Creating Starter';
 const FEEDING_STARTER = 'Feeding Starter';
@@ -15,10 +19,10 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { name: 'all-purpose flour', amount: '3 1/2 c', additionalDetails: 'divided', section: CREATING_STARTER },
-        { name: 'warm water', amount: '1 3/4 c', additionalDetails: 'divided', section: CREATING_STARTER },
-        { name: 'all-purpose flour', amount: '1/2 c', additionalDetails: '', section: FEEDING_STARTER },
-        { name: 'warm water', amount: '1/4 c', additionalDetails: '', section: FEEDING_STARTER },
+        { ...ALL_PURPOSE_FLOUR, amount: '3 1/2 c', additionalDetails: 'divided', section: CREATING_STARTER },
+        { ...WARM_WATER, amount: '1 3/4 c', additionalDetails: 'divided', section: CREATING_STARTER },
+        { ...ALL_PURPOSE_FLOUR, amount: '1/2 c', additionalDetails: '', section: FEEDING_STARTER },
+        { ...WARM_WATER, amount: '1/4 c', additionalDetails: '', section: FEEDING_STARTER },
     ],
     supplies: [
         { name: 'jar' },

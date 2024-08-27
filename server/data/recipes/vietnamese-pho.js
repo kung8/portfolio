@@ -1,5 +1,20 @@
 const pho = '../assets/Products/pho.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN } = require('./constants');
+const {
+    BEAN_SPROUTS,
+    BEEF_BROTH,
+    BEEF_TENDERLOIN,
+    BLACK_PEPPER,
+    CILANTRO,
+    GREEN_ONIONS,
+    LIME_JUICE,
+    LIGHT_SOY_SAUCE,
+    MEDIUM_YELLOW_ONION,
+    MINT,
+    DRIED_RICE_NOODLES,
+    SALT,
+    SRIRACHA_SAUCE,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Vietnamese Pho',
@@ -16,19 +31,19 @@ module.exports = {
     cookTime: '40 - 50 m',
     separated: true,
     ingredients: [
-        { name: 'rice noodles', amount: '12 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'beef broth (alternative to Pho Seasoning)', amount: '10 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'beef tenderloin', amount: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'onion', amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'black pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'cilantro', amount: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
-        { name: 'green onion', amount: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
-        { name: 'bean sprout', amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'mint', amount: '', additionalDetails: 'plucked', section: SECTIONS.TOPPINGS },
-        { name: 'lime juice', amount: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
-        { name: 'soy sauce', amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: 'sriracha sauce', amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...DRIED_RICE_NOODLES, amount: '12 oz', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BEEF_BROTH, amount: '10 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BEEF_TENDERLOIN, amount: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...CILANTRO, amount: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...GREEN_ONIONS, amount: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...BEAN_SPROUTS, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...MINT, amount: '', additionalDetails: 'plucked', section: SECTIONS.TOPPINGS },
+        { ...LIME_JUICE, amount: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...LIGHT_SOY_SAUCE, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...SRIRACHA_SAUCE, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

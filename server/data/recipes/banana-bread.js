@@ -8,6 +8,19 @@ const zoomed = '../assets/Products/banana-bread-with-chocolate-chips-side-view.j
 const baked = '../assets/Products/banana-bread-with-chocolate-chips-baked.jpeg';
 const walnuts = '../assets/Products/banana-bread-with-walnuts-and-nutmeg.jpeg';
 const walnutsBatter = '../assets/Products/banana-bread-batter-with-walnuts-and-nutmeg.jpeg';
+const {
+    BANANA,
+    UNSALTED_BUTTER,
+    WHITE_SUGAR,
+    EGGS,
+    ALL_PURPOSE_FLOUR,
+    BAKING_SODA,
+    SALT,
+    VANILLA_EXTRACT,
+    SEMI_SWEET_CHOCOLATE_CHIPS,
+    WALNUTS,
+    NUTMEG
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Banana Bread',
@@ -23,17 +36,17 @@ module.exports = {
         'https://natashaskitchen.com/banana-bread-recipe-video/'
     ],
     ingredients: [
-        { name: 'ripe bananas', amount: '3', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'unsalted butter', amount: '1/2 c', additionalDetails: 'room temperature', section: SECTIONS.MAIN },
-        { name: 'granulated sugar', amount: '3/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'eggs', amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'all-purpose flour', amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'baking soda', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'vanilla extract', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'chocolate chips', amount: '1/2 c', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { name: 'walnuts', amount: '1/2 c', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { name: 'nutmeg', amount: '2 tsp', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...BANANA, amount: '3', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '1/2 c', additionalDetails: 'room temperature', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: '3/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_SODA, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '1/2 c', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...WALNUTS, amount: '1/2 c', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...NUTMEG, amount: '2 tsp', additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

@@ -8,6 +8,17 @@ const rawSlices = '../assets/Products/chicken-cordon-bleu-raw-slices.jpeg';
 const saltAndPepper = '../assets/Products/chicken-cordon-bleu-salt-and-pepper.jpeg';
 
 const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, TYPES } = require('./constants');
+const {
+    UNSALTED_BUTTER,
+    MAYONNAISE,
+    YELLOW_MUSTARD,
+    SALT,
+    BLACK_PEPPER,
+    COOKED_HAM,
+    CORN_FLAKES,
+    SWISS_CHEESE,
+    BONELESS_AND_SKINLESS_CHICKEN_BREAST,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Chicken Cordon Bleu',
@@ -27,15 +38,15 @@ module.exports = {
         'https://tastesbetterfromscratch.com/chicken-cordon-bleu/'
     ],
     ingredients: [
-        { name: 'boneless skinless chicken breast', amount: '4', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'ham slices', amount: '8', additionalDetails: 'halved', section: SECTIONS.MAIN },
-        { name: 'swiss cheese slices', amount: '8', additionalDetails: 'halved', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'corn flake', amount: '3 c', additionalDetails: 'crushed', section: SECTIONS.MAIN },
-        { name: 'butter', amount: '6 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'mayonnaise', amount: '1 c', additionalDetails: '', section: SECTIONS.SAUCE },
-        { name: 'yellow mustard', amount: '1 - 2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '4', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COOKED_HAM, amount: '8', additionalDetails: 'halved slices', section: SECTIONS.MAIN },
+        { ...SWISS_CHEESE, amount: '8', additionalDetails: 'halved slices', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...CORN_FLAKES, amount: '3 c', additionalDetails: 'crushed', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '6 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MAYONNAISE, amount: '1 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...YELLOW_MUSTARD, amount: '1 - 2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'oven' },

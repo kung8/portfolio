@@ -1,5 +1,6 @@
 const salad = '../assets/Products/southwest-salad.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {} = require('./ingredients');
 
 module.exports = {
     cardName: 'Southwest Salad',

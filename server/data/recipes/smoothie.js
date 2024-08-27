@@ -1,5 +1,13 @@
 const smoothie = '../assets/Products/smoothie.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
+const {
+    ALMOND_MILK,
+    BANANA,
+    FROZEN_BERRIES,
+    KALE,
+    PLAIN_YOGURT,
+    PEANUT_BUTTER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Smoothie',
@@ -14,12 +22,12 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '2 m',
     ingredients: [
-        { name: 'almond milk', amount: '2 c', additionalDetails: '', optional: false },
-        { name: 'bananas', amount: '2', additionalDetails: '', optional: false },
-        { name: 'frozen berries', amount: '1 c', additionalDetails: '', optional: false },
-        { name: 'kale', amount: '1/2 c', additionalDetails: '', optional: false },
-        { name: 'plain yogurt', amount: '1 spoonful of', additionalDetails: '', optional: false },
-        { name: 'peanut butter', amount: '2 spoonfuls of', additionalDetails: '', optional: false },
+        { ...ALMOND_MILK, amount: '2 c', additionalDetails: '', optional: false },
+        { ...BANANA, amount: '2', additionalDetails: '', optional: false },
+        { ...FROZEN_BERRIES, amount: '1 c', additionalDetails: '', optional: false },
+        { ...KALE, amount: '1/2 c', additionalDetails: '', optional: false },
+        { ...PLAIN_YOGURT, amount: '1 spoonful of', additionalDetails: '', optional: false },
+        { ...PEANUT_BUTTER, amount: '2 spoonfuls of', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'blender' },

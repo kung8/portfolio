@@ -1,5 +1,6 @@
 const pigsInABlanket = '../assets/Products/pigs-in-a-blanket.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
+const { CROISSANT_DOUGH, EGGS, MINI_HOT_DOG } = require('./ingredients');
 
 module.exports = {
     cardName: 'Pigs In A Blanket',
@@ -13,9 +14,9 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '15 m',
     ingredients: [
-        { name: 'croissant dough', amount: '2 can of', additionalDetails: '', optional: false },
-        { name: 'egg', amount: '2', additionalDetails: '', optional: false },
-        { name: 'mini hot dogs', amount: '14 oz', additionalDetails: '', optional: false },
+        { ...CROISSANT_DOUGH, amount: '2 can of', additionalDetails: '', optional: false },
+        { ...EGGS, amount: '2', additionalDetails: '', optional: false },
+        { ...MINI_HOT_DOG, amount: '14 oz', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'oven' },

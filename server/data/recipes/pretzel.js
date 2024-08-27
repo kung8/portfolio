@@ -12,6 +12,16 @@ const formed = '../assets/Products/pretzels-formed.jpeg';
 const raw = '../assets/Products/pretzels-on-baking-sheet-raw.jpeg';
 const rope = '../assets/Products/pretzels-rope.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
+const {
+    WARM_WATER,
+    YEAST,
+    SALT,
+    BROWN_SUGAR,
+    UNSALTED_BUTTER,
+    ALL_PURPOSE_FLOUR,
+    COARSE_SALT,
+    BAKING_SODA,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Pretzel',
@@ -26,15 +36,15 @@ module.exports = {
     cookTime: '15 m',
     separated: true,
     ingredients: [
-        { name: 'warm water', amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'instant yeast', amount: '2 1/4 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'salt', amount: '1 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'brown sugar', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'unsalted butter', amount: '1 Tbsp', additionalDetails: 'melted', section: SECTIONS.DOUGH },
-        { name: 'all-purpose flour', amount: '4 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'coarse salt', amount: '', additionalDetails: 'sprinkling', section: SECTIONS.DOUGH },
-        { name: 'baking soda', amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'water', amount: '9 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: '2 1/4 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BROWN_SUGAR, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: 'melted', section: SECTIONS.DOUGH },
+        { ...ALL_PURPOSE_FLOUR, amount: '4 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...COARSE_SALT, amount: '', additionalDetails: 'sprinkling', section: SECTIONS.DOUGH },
+        { ...BAKING_SODA, amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: '9 c', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

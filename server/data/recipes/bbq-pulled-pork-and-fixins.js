@@ -1,5 +1,20 @@
 const bbq = '../assets/Products/bbq-pulled-pork.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const {
+    PORK_ROAST,
+    VEGETABLE_OIL,
+    BBQ_SAUCE,
+    APPLE_CIDER_VINEGAR,
+    CHICKEN_BROTH,
+    BROWN_SUGAR,
+    YELLOW_MUSTARD,
+    WORCESTERSHIRE_SAUCE,
+    CHILI_POWDER,
+    LARGE_YELLOW_ONION,
+    GARLIC,
+    THYME,
+    BRIOCHE_BUNS,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'BBQ Pulled Pork',
@@ -15,19 +30,19 @@ module.exports = {
     prepTime: '30 m',
     cookTime: '6 h',
     ingredients: [
-        { name: 'pork roast', amount: '4 lb', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'vegetable oil', amount: '1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'preferred BBQ sauce', amount: '1 c', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'apple cider vinegar', amount: '1/2 c', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'chicken broth', amount: '1/2 c', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'brown sugar', amount: '1/4 c', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'yellow mustard', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'Worcestershire sauce', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'chili powder', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'large onion', amount: '1', additionalDetails: 'chopped', section: SECTIONS.FILLING },
-        { name: 'garlic cloves', amount: '2', additionalDetails: 'diced', section: SECTIONS.FILLING },
-        { name: 'thyme', amount: '1 1/2 tsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { name: 'brioche buns', amount: '8', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PORK_ROAST, amount: '4 lb', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...VEGETABLE_OIL, amount: '1 tsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...BBQ_SAUCE, amount: '1 c', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...APPLE_CIDER_VINEGAR, amount: '1/2 c', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CHICKEN_BROTH, amount: '1/2 c', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...BROWN_SUGAR, amount: '1/4 c', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...YELLOW_MUSTARD, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WORCESTERSHIRE_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CHILI_POWDER, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'chopped', section: SECTIONS.FILLING },
+        { ...GARLIC, amount: '2', additionalDetails: 'diced', section: SECTIONS.FILLING },
+        { ...THYME, amount: '1 1/2 tsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...BRIOCHE_BUNS, amount: '8', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'slow cooker' },

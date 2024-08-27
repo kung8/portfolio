@@ -1,6 +1,18 @@
 const cookieDough = '../assets/Products/cookie-dough.jpeg';
 const cookies = '../assets/Products/chocolate-chip-cookies.jpeg';
 const {CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
+const {
+    UNSALTED_BUTTER,
+    WHITE_SUGAR,
+    EGGS,
+    VANILLA_EXTRACT,
+    BAKING_SODA,
+    HOT_WATER,
+    SALT,
+    ALL_PURPOSE_FLOUR,
+    SEMI_SWEET_CHOCOLATE_CHIPS,
+    BROWN_SUGAR,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Chocolate Chip Cookies',
@@ -15,16 +27,16 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '10 m',
     ingredients: [
-        { name: 'butter', amount: '1 c', additionalDetails: 'softened', optional: false },
-        { name: 'white sugar', amount: '1 c', additionalDetails: '', optional: false },
-        { name: 'packed brown sugar', amount: '1 c', additionalDetails: '', optional: false },
-        { name: 'eggs', amount: '2', additionalDetails: '', optional: false },
-        { name: 'vanilla extract', amount: '2 tsp', additionalDetails: '', optional: false },
-        { name: 'baking soda', amount: '1 tsp', additionalDetails: '', optional: false },
-        { name: 'hot water', amount: '2 tsp', additionalDetails: '', optional: false },
-        { name: 'salt', amount: '1/2 tsp', additionalDetails: '', optional: false },
-        { name: 'flour', amount: '3 c', additionalDetails: '', optional: false },
-        { name: 'semisweet chocolate chips', amount: '2 c', additionalDetails: '', optional: false },
+        { ...UNSALTED_BUTTER, amount: '1 c', additionalDetails: 'softened', optional: false },
+        { ...WHITE_SUGAR, amount: '1 c', additionalDetails: '', optional: false },
+        { ...BROWN_SUGAR, amount: '1 c', additionalDetails: '', optional: false },
+        { ...EGGS, amount: '2', additionalDetails: '', optional: false },
+        { ...VANILLA_EXTRACT, amount: '2 tsp', additionalDetails: '', optional: false },
+        { ...BAKING_SODA, amount: '1 tsp', additionalDetails: '', optional: false },
+        { ...HOT_WATER, amount: '2 tsp', additionalDetails: '', optional: false },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', optional: false },
+        { ...ALL_PURPOSE_FLOUR, amount: '3 c', additionalDetails: '', optional: false },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '2 c', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'oven' },

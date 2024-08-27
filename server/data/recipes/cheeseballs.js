@@ -4,6 +4,18 @@ const frozenDough = '../assets/Products/frozen-pizza-dough.jpeg';
 const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
 const tossing = '../assets/Products/pizza-toss.MOV';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
+const {
+    BREAD_FLOUR,
+    SALT,
+    HONEY,
+    WARM_WATER,
+    OLIVE_OIL,
+    MOZZARELLA_CHEESE,
+    UNSALTED_BUTTER,
+    GARLIC,
+    YEAST,
+    MARINARA_SAUCE,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Cheeseballs',
@@ -18,16 +30,16 @@ module.exports = {
     prepTime: '45 m',
     cookTime: '20 m',
     ingredients: [
-        { name: 'bread flour', amount: '4 1/2 c', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'salt', amount: '2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'instant dry yeast', amount: '1 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'honey', amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'water', amount: '2 c', additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
-        { name: 'olive oil', amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { name: 'mozzarella cheese', amount: '', additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { name: 'butter', amount: '1 Tbsp', additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { name: 'garlic', amount: '2 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { name: 'marinara sauce', amount: '', additionalDetails: 'warmed', section: SECTIONS.MAIN },
+        { ...BREAD_FLOUR, amount: '4 1/2 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: '2 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: '1 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...HONEY, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: '2 c', additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
+        { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...MARINARA_SAUCE, amount: '', additionalDetails: 'warmed', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

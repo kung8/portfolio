@@ -8,6 +8,22 @@ const chili = '../assets/Products/singaporean-chicken-rice-chili-sauce.jpeg';
 const cooked = '../assets/Products/singaporean-chicken-rice-cooked.jpeg';
 const plated = '../assets/Products/singaporean-chicken-rice-plated.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    CHICKEN_THIGH,
+    SESAME_OIL,
+    SALT,
+    JASMINE_RICE,
+    GARLIC,
+    GINGER,
+    GREEN_ONIONS,
+    CHICKEN_BROTH,
+    TURMERIC,
+    SRIRACHA_SAUCE,
+    LIME_JUICE,
+    WHITE_SUGAR,
+    CUCUMBER,
+    ROMA_TOMATO,
+} = require('./ingredients');
 
 const CHICKEN = 'Chicken';
 const CHILI_SAUCE = 'Chili Sauce';
@@ -29,23 +45,23 @@ module.exports = {
     websites: [],
     separated: true,
     ingredients: [
-        { name: 'chicken thigh', amount: '1 lb', additionalDetails: 'bone-in, skin on', section: CHICKEN },
-        { name: 'sesame oil', amount: '2 tsp', additionalDetails: '', section: CHICKEN },
-        { name: 'salt', amount: '1/4 tsp', additionalDetails: '', section: CHICKEN },
-        { name: 'jasmine rice', amount: '2 c', additionalDetails: '', section: SECTIONS.RICE },
-        { name: 'garlic cloves', amount: '6', additionalDetails: 'minced', section: SECTIONS.RICE },
-        { name: 'ginger', amount: '1/2 inch', additionalDetails: 'minced', section: SECTIONS.RICE },
-        { name: 'green onion', amount: '2', additionalDetails: 'chopped', section: SECTIONS.RICE },
-        { name: 'chicken broth', amount: '2 c', additionalDetails: '', section: SECTIONS.RICE },
-        { name: 'turmeric', amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.RICE },
-        { name: 'garlic cloves', amount: '6', additionalDetails: 'minced', section: CHILI_SAUCE },
-        { name: 'ginger', amount: '1/2 inch', additionalDetails: 'minced', section: CHILI_SAUCE },
-        { name: 'sriracha', amount: '2 Tbsp', additionalDetails: '', section: CHILI_SAUCE },
-        { name: 'chicken stock', amount: '2 Tbsp', additionalDetails: '', section: CHILI_SAUCE },
-        { name: 'lime juice', amount: '1 Tbsp', additionalDetails: '', section: CHILI_SAUCE },
-        { name: 'sugar', amount: '2 tsp', additionalDetails: '', section: CHILI_SAUCE },
-        { name: 'cucumber', amount: '1', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
-        { name: 'tomatoes', amount: '1', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...CHICKEN_THIGH, amount: '1 lb', additionalDetails: 'bone-in, skin on', section: CHICKEN },
+        { ...SESAME_OIL, amount: '2 tsp', additionalDetails: '', section: CHICKEN },
+        { ...SALT, amount: '1/4 tsp', additionalDetails: '', section: CHICKEN },
+        { ...JASMINE_RICE, amount: '2 c', additionalDetails: '', section: SECTIONS.RICE },
+        { ...GARLIC, amount: '6', additionalDetails: 'minced', section: SECTIONS.RICE },
+        { ...GINGER, amount: '1/2 inch', additionalDetails: 'minced', section: SECTIONS.RICE },
+        { ...GREEN_ONIONS, amount: '2', additionalDetails: 'chopped', section: SECTIONS.RICE },
+        { ...CHICKEN_BROTH, amount: '2 c', additionalDetails: '', section: SECTIONS.RICE },
+        { ...TURMERIC, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.RICE },
+        { ...GARLIC, amount: '6', additionalDetails: 'minced', section: CHILI_SAUCE },
+        { ...GINGER, amount: '1/2 inch', additionalDetails: 'minced', section: CHILI_SAUCE },
+        { ...SRIRACHA_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: CHILI_SAUCE },
+        { ...CHICKEN_BROTH, amount: '2 Tbsp', additionalDetails: '', section: CHILI_SAUCE },
+        { ...LIME_JUICE, amount: '1 Tbsp', additionalDetails: '', section: CHILI_SAUCE },
+        { ...WHITE_SUGAR, amount: '2 tsp', additionalDetails: '', section: CHILI_SAUCE },
+        { ...CUCUMBER, amount: '1', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...ROMA_TOMATO, amount: '1', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

@@ -1,5 +1,15 @@
 const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const {
+    BEEF,
+    OLIVE_OIL,
+    MEDIUM_YELLOW_ONION,
+    RED_BELL_PEPPERS,
+    MOZZARELLA_CHEESE,
+    SALT,
+    BLACK_PEPPER,
+    HOAGIE_BREAD,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Philly Cheesesteak',
@@ -15,14 +25,14 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '20 m',
     ingredients: [
-        { name: 'beef', amount: '1 lb', additionalDetails: 'thinly sliced', optional: false },
-        { name: 'olive oil', amount: '1 tsp', additionalDetails: '', optional: false },
-        { name: 'onion', amount: '1', additionalDetails: 'sliced', optional: false },
-        { name: 'bell peppers', amount: '3', additionalDetails: 'sliced', optional: false },
-        { name: 'mozzarella cheese', amount: '16 slices', additionalDetails: '', optional: false },
-        { name: 'salt', amount: '', additionalDetails: 'minced', optional: false },
-        { name: 'pepper', amount: '', additionalDetails: 'minced', optional: false },
-        { name: 'hoagie bread', amount: '8', additionalDetails: '', optional: false },
+        { ...BEEF, amount: '1 lb', additionalDetails: 'thinly sliced', optional: false },
+        { ...OLIVE_OIL, amount: '1 tsp', additionalDetails: '', optional: false },
+        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', optional: false },
+        { ...RED_BELL_PEPPERS, amount: '3', additionalDetails: 'sliced', optional: false },
+        { ...MOZZARELLA_CHEESE, amount: '16 slices', additionalDetails: '', optional: false },
+        { ...SALT, amount: '', additionalDetails: 'minced', optional: false },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'minced', optional: false },
+        { ...HOAGIE_BREAD, amount: '8', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },

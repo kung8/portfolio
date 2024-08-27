@@ -1,5 +1,18 @@
 const alfredo = '../assets/Products/chicken-alfredo.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const {
+    RED_BELL_PEPPERS,
+    MEDIUM_YELLOW_ONION,
+    CHICKEN_BREAST,
+    UNSALTED_BUTTER,
+    NUTMEG,
+    SALT,
+    BLACK_PEPPER,
+    FETTUCCINE_NOODLES,
+    OLIVE_OIL,
+    HEAVY_CREAM,
+    PARMESAN_CHEESE,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Chicken Alfredo',
@@ -15,17 +28,17 @@ module.exports = {
     prepTime: '8 - 10 m',
     cookTime: '30 - 40 m',
     ingredients: [
-        { name: 'fettuccine noodles', amount: '12 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'olive oil (for tossing and sauteing)', amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'green bell pepper', amount: '2', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { name: 'onion', amount: '1/2', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { name: 'chicken breast', amount: '2', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { name: 'heavy cream', amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'butter', amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'nutmeg', amount: '2 pinches', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'shredded parmesan', amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { name: 'pepper', amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...FETTUCCINE_NOODLES, amount: '12 oz', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...RED_BELL_PEPPERS, amount: '2', additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...MEDIUM_YELLOW_ONION, amount: '1/2', additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...CHICKEN_BREAST, amount: '2', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...HEAVY_CREAM, amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...NUTMEG, amount: '2 pinches', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PARMESAN_CHEESE, amount: '1 1/2 c', additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

@@ -20,6 +20,15 @@ const topped = '../assets/Products/chocolate-mousse-topped.jpeg';
 const whipped = '../assets/Products/chocolate-mousse-whipped-cream.jpeg';
 const yolkInCream = '../assets/Products/chocolate-mousse-yolk-in-cream.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const {
+    EGGS,
+    UNSALTED_BUTTER,
+    WHITE_SUGAR,
+    HEAVY_CREAM,
+    DARK_COOKING_CHOCOLATE,
+    SEMI_SWEET_CHOCOLATE_CHIPS,
+    RASPBERRIES,
+} = require('./ingredients');
 
 const CHOCOLATE = 'Chocolate';
 const WHIPPED_CREAM = 'Whipped Cream';
@@ -42,15 +51,15 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { name: 'eggs', amount: '3', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'cream', amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'sugar', amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'dark cooking chocolate', amount: '4 oz', additionalDetails: '', section: CHOCOLATE },
-        { name: 'butter', amount: '1 Tbsp', additionalDetails: '', section: CHOCOLATE },
-        { name: 'cream', amount: '1/2 c', additionalDetails: '', section: WHIPPED_CREAM },
-        { name: 'sugar', amount: '3 Tbsp', additionalDetails: '', section: WHIPPED_CREAM },
-        { name: 'semi-sweet chocolate', amount: '', additionalDetails: 'finely chopped', section: SECTIONS.TOPPINGS },
-        { name: 'raspberry', amount: '', additionalDetails: 'washed', section: SECTIONS.TOPPINGS },
+        { ...EGGS, amount: '3', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HEAVY_CREAM, amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...DARK_COOKING_CHOCOLATE, amount: '4 oz', additionalDetails: '', section: CHOCOLATE },
+        { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: CHOCOLATE },
+        { ...HEAVY_CREAM, amount: '1/2 c', additionalDetails: '', section: WHIPPED_CREAM },
+        { ...WHITE_SUGAR, amount: '3 Tbsp', additionalDetails: '', section: WHIPPED_CREAM },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '', additionalDetails: 'finely chopped', section: SECTIONS.TOPPINGS },
+        { ...RASPBERRIES, amount: '', additionalDetails: 'washed', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'microwave' },

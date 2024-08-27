@@ -13,6 +13,20 @@ const rawOnions = '../assets/Products/aji-de-gallina-raw-onions.jpeg';
 const shredded = '../assets/Products/aji-de-gallina-shredded-chicken.jpeg';
 const aji = '../assets/Products/aji-de-gallina.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const {
+    CHICKEN_BREAST,
+    LARGE_YELLOW_ONION,
+    VEGETABLE_OIL,
+    GARLIC,
+    YELLOW_BELL_PEPPERS,
+    BREAD,
+    MILK,
+    SALT,
+    BLACK_PEPPER,
+    OREGANO,    
+    NUTMEG,
+    JASMINE_RICE,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Aji de Gallina',
@@ -32,18 +46,18 @@ module.exports = {
         'https://www.carolinescooking.com/aji-de-gallina-peruvian-chicken-stew/'
     ],
     ingredients: [
-        { name: 'chicken breast', amount: '2', additionalDetails: '', optional: false },
-        { name: 'large onion', amount: '1', additionalDetails: 'diced', optional: false },
-        { name: 'vegetable oil', amount: '1 Tbsp', additionalDetails: '', optional: false },
-        { name: 'garlic', amount: '1 tsp', additionalDetails: 'minced', optional: false },
-        { name: 'yellow bell peppers', amount: '1 1/2', additionalDetails: '', optional: false },
-        { name: 'bread slices', amount: '4', additionalDetails: '', optional: false },
-        { name: 'milk', amount: '2 c', additionalDetails: '', optional: false },
-        { name: 'salt', amount: '1 tsp', additionalDetails: 'to taste', optional: false },
-        { name: 'pepper', amount: '1/4 tsp', additionalDetails: 'to taste', optional: false },
-        { name: 'oregano', amount: '1/4 tsp', additionalDetails: 'to taste', optional: false },
-        { name: 'nutmeg', amount: '1 pinch of', additionalDetails: '', optional: true },
-        { name: 'rice', amount: '', additionalDetails: '', optional: false },
+        { ...CHICKEN_BREAST, amount: '2', additionalDetails: '', optional: false },
+        { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'diced', optional: false },
+        { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', optional: false },
+        { ...GARLIC, amount: '1 tsp', additionalDetails: 'minced', optional: false },
+        { ...YELLOW_BELL_PEPPERS, amount: '1 1/2', additionalDetails: '', optional: false },
+        { ...BREAD, amount: '4', additionalDetails: '', optional: false },
+        { ...MILK, amount: '2 c', additionalDetails: '', optional: false },
+        { ...SALT, amount: '1 tsp', additionalDetails: 'to taste', optional: false },
+        { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: 'to taste', optional: false },
+        { ...OREGANO, amount: '1/4 tsp', additionalDetails: 'to taste', optional: false },
+        { ...NUTMEG, amount: '1 pinch of', additionalDetails: '', optional: true },
+        { ...JASMINE_RICE, amount: '', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'blender' },

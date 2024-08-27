@@ -1,5 +1,6 @@
 const chickenTikkaMasala = '../assets/Products/chicken-tikka-masala.jpeg';
 const { CATEGORIES, GENRES, TYPES, METHODS } = require("./constants");
+const {} = require('./ingredients');
 
 module.exports = {
     cardName: '',

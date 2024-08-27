@@ -1,5 +1,13 @@
 const frenchToast = '../assets/Products/french-toast.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
+const {
+    EGGS,
+    VANILLA_EXTRACT,
+    CINNAMON,
+    MILK,
+    BREAD,
+    UNSALTED_BUTTER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'French Toast',
@@ -14,12 +22,12 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '8 - 10 m',
     ingredients: [
-        { name: 'egg', amount: '2', additionalDetails: '', optional: false },
-        { name: 'vanilla', amount: '1 tsp', additionalDetails: '', optional: false },
-        { name: 'cinnamon', amount: '1 tsp', additionalDetails: '', optional: false },
-        { name: 'milk', amount: '3/4 c', additionalDetails: '', optional: false },
-        { name: 'bread', amount: '8', additionalDetails: '', optional: false },
-        { name: 'butter', amount: '8', additionalDetails: '', optional: false },
+        { ...EGGS, amount: '2', additionalDetails: '', optional: false },
+        { ...VANILLA_EXTRACT, amount: '1 tsp', additionalDetails: '', optional: false },
+        { ...CINNAMON, amount: '1 tsp', additionalDetails: '', optional: false },
+        { ...MILK, amount: '3/4 c', additionalDetails: '', optional: false },
+        { ...BREAD, amount: '8', additionalDetails: '', optional: false },
+        { ...UNSALTED_BUTTER, amount: '8', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },

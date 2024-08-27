@@ -1,5 +1,14 @@
 const brownies = '../assets/Products/brownies.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
+const {
+    UNSALTED_BUTTER,
+    WHITE_SUGAR,
+    SALT,
+    VANILLA_EXTRACT,
+    EGGS,
+    ALL_PURPOSE_FLOUR,
+    COCOA_POWDER,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Brownies',
@@ -14,13 +23,13 @@ module.exports = {
     prepTime: '7 m',
     cookTime: '35 m',
     ingredients: [
-        { name: 'butter', amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'cocoa powder', amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'sugar', amount: '2 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'salt', amount: '3/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'vanilla', amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'eggs', amount: '3 large', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'flour', amount: '1 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COCOA_POWDER, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: '2 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '3/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '3 large', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: '1 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },
