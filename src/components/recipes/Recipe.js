@@ -27,13 +27,13 @@ const IngredientItem = ({ index, item, link, selectedIngredients, setSelectedIng
 
     useEffect(() => {
         setChecked(!!selectedIngredients.find(i => i.name === item.name && i.index === index));
-    }, [selectedIngredients, item.name]);
+    }, [selectedIngredients, item.name, index]);
 
     const handleCheckboxChange = () => {
         const included = selectedIngredients.find(i => i.name === item.name && i.index === index);
         if (included) {
             // removes the ingredient if it's already included
-            const newSelectedIngredients = selectedIngredients.filter(item => item.name !== item.name && item.index !== index);
+            const newSelectedIngredients = selectedIngredients.filter(ingredient => ingredient.name !== item.name && ingredient.index !== index);
             setSelectedIngredients(newSelectedIngredients);
         } else {
             // adds the ingredient if it's not included
