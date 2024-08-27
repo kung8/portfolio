@@ -11,6 +11,7 @@ const {
     CABBAGE,
     ROMA_TOMATO,
     LEMON,
+    PORK_LOIN,
 } = require('./ingredients');
 
 module.exports = {

@@ -7,6 +7,8 @@ const education = require('./data/education');
 const experiences = require('./data/experiences');
 const friends = require('./data/episodes/friends');
 const hymns = require('./data/hymns');
+const ingredients = require('./data/recipes/ingredients');
+const ingredientCategories = require('./data/recipes/ingredient-categories');
 const music = require('./data/music');
 const products = require('./data/products');
 const projects = require('./data/projects');
@@ -44,6 +46,12 @@ module.exports = {
             return res.send(item);
         }
         return res.send(data[type] ?? []);
+    },
+    getIngredients: async (_req, res) => {
+        res.send(ingredients);
+    },
+    getIngredientCategories: async (_req, res) => {
+        res.send(ingredientCategories);
     },
     getRecipeCategories: async (_req, res) => {
         const category = recipes.flatMap(recipe => recipe.category);

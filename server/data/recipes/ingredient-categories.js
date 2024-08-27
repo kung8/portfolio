@@ -7,6 +7,7 @@ const ingredientCategories = {
     CANNED: 'Canned Goods, Broths & Soups',
     CLOTHING: 'Clothing & Accessories',
     CONDIMENTS: 'Condiments, Dressings & Sauces',
+    COOKING_SUPPLIES: 'Cooking & Baking Supplies',
     DAIRY: 'Dairy & Eggs',
     DELI: 'Deli',
     FROZEN: 'Frozen Foods',
