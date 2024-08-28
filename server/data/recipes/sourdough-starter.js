@@ -44,8 +44,8 @@ module.exports = {
         { step: 'Continue to discard 1/2 cup of the starter mixture and feed the starter mixture for the next 4 days around the same time.', type: CREATING_STARTER },
         { step: 'The starter should be ready to use in your recipes.', type: CREATING_STARTER, img: base },
         { step: 'Once you have created the starter, you just need to feed it at least once a week. When it\'s not being fed you will refrigerate it.', type: FEEDING_STARTER },
-        { step: 'When you are feeding the starter, take it out of the fridge and remove 1/2 cup of starter. To make room for the new amount of ingredients.', type: FEEDING_STARTER },
-        { step: 'Mix in flour and warm water and leave it in a warm area for the next 24 hours.', type: FEEDING_STARTER, img: [flour, water, mix, mixed] },
+        { step: 'When you are feeding the starter, take it out of the fridge and remove 1/2 cup of starter. To make room for the new amount of ingredients. This removed portion can be used to make a new starter if you want.', type: FEEDING_STARTER },
+        { step: 'Mix in flour and warm water and leave it in a warm area for the next 24 hours. Bubbling means it is alive and is eating the new.', type: FEEDING_STARTER, img: [flour, water, mix, mixed] },
         { step: 'Refrigerate the starter after it has grown.', type: FEEDING_STARTER, img: zoomed },
     ]
 }; 
