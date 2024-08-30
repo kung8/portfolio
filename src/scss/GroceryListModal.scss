@@ -65,6 +65,18 @@
         margin-top: 16px;
         max-height: calc(100vh - 120px);
         overflow-y: auto;
+        scrollbar-width: none;
+
+        .category-ingredient-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+
+            .ingredient-category {
+                font-size: 12px;
+                color: $primary-blue;
+            }
+        }
 
         .grocery-list-item {
             display: flex;
@@ -92,7 +104,6 @@
                     }
                 }
 
-                .ingredient-category,
                 .recipe-name {
                     font-size: 12px;
                     color: $default;
@@ -104,6 +115,18 @@
 
                 .ingredient-category {
                     color: $primary-blue;
+                }
+            }
+
+            .grocery-input-container {
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                justify-content: space-between;
+
+                .edit-icon {
+                    height: 12px;
+                    cursor: pointer;
                 }
             }
 
@@ -143,7 +166,8 @@
     }
 }
 
-.delete-grocery-item-modal {
+.delete-grocery-item-modal,
+.edit-ingredient-modal {
     position: absolute;
     top: 0;
     z-index: 5;
@@ -152,6 +176,79 @@
     margin-top: 50vh;
     transform: translateY(-50%);
     width: unquote("min(calc(100% - 16px), 600px)");
+
+    &.edit-ingredient-modal {
+        height: 320px;
+        padding: 24px 16px;
+        .modal-content {
+            justify-content: space-between;
+            height: 100%;
+
+            .top-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 16px;
+            }
+            .modal-body {
+                display: flex;
+                flex-direction: column;
+                row-gap: 16px;
+                .edit-ingredient-input {
+                    width: 100%;
+                    padding: 8px 12px;
+                    outline: none;
+                    border: 1.5px solid $default;
+                    background: $aqua;
+                    color: $white;
+                    font-size: 14px;
+                }
+
+                .category-dropdown-container {
+                    position: relative;
+
+                    .selected-category {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border: 1.5px solid $default;
+                        padding: 6px 12px;
+                        background: $aqua;
+                        font-size: 14px;
+                        cursor: pointer;
+
+                        .chevron-arrow {
+                            height: 14px;
+                            transition: transform 0.3s ease;
+                            &.is-open {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+
+                    .category-selector {
+                        display: none;
+                        position: absolute;
+                        max-height: 150px;
+                        overflow-y: auto;
+                        width: 100%;
+
+                        &.is-open {
+                            display: block;
+                        }
+
+                        .category-selector-item {
+                            padding: 6px 12px;
+                            background: $aqua;
+                            border: 1.5px solid $default;
+                            cursor: pointer;
+                            border-top: none;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .modal-content {
         display: flex;
@@ -182,26 +279,45 @@
 
             button {
                 padding: 6px 12px;
-                cursor: pointer;
                 border-radius: 16px;
                 outline: none;
                 border: 1.5px solid transparent;
                 &.cancel-btn {
                     color: $white;
                     background: $black;
+                    cursor: pointer;
                     &:hover {
                         background: $white;
                         color: $black;
                         border: 1.5px solid $default;
                     }
                 }
+
                 &.delete-btn {
                     background: $coral;
                     color: $white;
+                    cursor: pointer;
                     &:hover {
                         background: $white;
                         color: $coral;
                         border: 1.5px solid $coral;
+                    }
+                }
+
+                &.edit-btn {
+                    background: $primary-blue;
+                    color: $white;
+                    cursor: pointer;
+                    &:hover {
+                        background: $white;
+                        color: $primary-blue;
+                        border: 1.5px solid $primary-blue;
+                    }
+                    &:disabled {
+                        background: $default;
+                        color: $black;
+                        cursor: not-allowed;
+                        border: 1.5px solid transparent;
                     }
                 }
             }

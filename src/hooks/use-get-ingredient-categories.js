@@ -5,7 +5,7 @@ export const useGetIngredientCategories = () =>
     useQuery({
         queryKey: ['ingredient-categories'],
         queryFn: async () => axios.get('/api/ingredient/category'),
-        select: res => res.data,
+        select: res => Object.values(res.data),
         refetchOnMount: false,
         refetchOnWindowFocus: false,
         refetchOnReconnect: false,
