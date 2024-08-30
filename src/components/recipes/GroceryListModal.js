@@ -53,10 +53,6 @@ const EmptyGroceryListItem = ({ setGroceryList }) => {
                         setGroceryList(prev => [...prev, { name: inputValue, index: prev.length, checked, category }]);
                         setInputValue('');
                         setChecked(false);
-                        // setTimeout(() => {
-                        //     const container = document.querySelector('.grocery-list');
-                        //     if (container) container.scrollTop = container.scrollHeight + 20;
-                        // }, 50)
                     }
                 }}
             />
@@ -121,7 +117,7 @@ const GroceryListItem = ({ checked, index, groceryList, name, openEditModal, onC
                         <img onClick={openEditModal} src={pencil} alt="pencil" className="edit-icon" />
                     </div>
                 )}
-                {recipeName && <span className="recipe-name"><strong>Recipe:</strong> {recipeName}</span>}
+                {recipeName && <p className="recipe-name"><span>Needed for</span> {recipeName}</p>}
             </div>
         </div>
     )
@@ -258,7 +254,7 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                                     <img src={closeBtn} alt="close" onClick={closeEditModal} />
                                 </div>
                                 <div className="modal-body">
-                                    <input className="edit-ingredient-input" value={itemToEdit?.name} onChange={(e) => setItemToEdit({ ...itemToEdit, name: e.target.value })} />
+                                    <input className="edit-ingredient-input" placeholder="Ingredient Name" value={itemToEdit?.name} onChange={(e) => setItemToEdit({ ...itemToEdit, name: e.target.value })} />
                                     <div className="category-dropdown-container">
                                         <li className="selected-category category-selector-item" onClick={() => setIsCategoryDropdownOpen(!isCategoryDropdownOpen)}>
                                             <span>{itemToEdit.category}</span>
@@ -281,15 +277,18 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                                             ))}
                                         </ul>
                                     </div>
+                                    <input className="edit-recipe-name-input" placeholder="(Optional) Add what this is needed for..." value={itemToEdit?.recipeName} onChange={(e) => setItemToEdit({ ...itemToEdit, recipeName: e.target.value })} />
                                 </div>
                             </div>
                             <div className="modal-footer">
                                 <button className="cancel-btn" onClick={closeEditModal}>Cancel</button>
                                 <button
                                     className="edit-btn"
-                                    disabled={
+                                    disabled={(
                                         originalItemToEdit.name === itemToEdit.name &&
-                                        originalItemToEdit.category === itemToEdit.category
+                                        originalItemToEdit.category === itemToEdit.category &&
+                                        originalItemToEdit.recipeName === itemToEdit.recipeName
+                                    ) || !itemToEdit.name
                                     }
                                     onClick={() => {
                                         updateItem(originalItemToEdit, itemToEdit);
