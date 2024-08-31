@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import closeBtn from '../../Assets/x.png';
-import { useGetIngredientCategories, useGetIngredients } from '../../hooks';
+import { useGetIngredientCategories } from '../../hooks';
 import arrow from './arrow.png';
 import pencil from './pencil.png';
+import { useCategoryName } from './use-category-name';
 
 const EMPTY_GROCERY_ITEM_ID = 'empty-grocery-list-item';
 const GROCERY_ITEM_ID = 'grocery-list-item-';
@@ -10,7 +11,7 @@ const GROCERY_ITEM_ID = 'grocery-list-item-';
 const EmptyGroceryListItem = ({ setGroceryList }) => {
     const [inputValue, setInputValue] = useState('');
     const [checked, setChecked] = useState(false);
-    const { data: ingredients } = useGetIngredients();
+    const { getCategoryName } = useCategoryName();
 
     return (
         <div className="grocery-list-item">
@@ -23,33 +24,7 @@ const EmptyGroceryListItem = ({ setGroceryList }) => {
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={(e) => {
                     if (e.key === 'Enter' && inputValue) {
-                        const matchingIngredients = ingredients.filter(ingredient => ingredient.name.includes(inputValue.toLowerCase()));
-
-                        let category = 'Other';
-                        if (matchingIngredients.length === 1) {
-                            category = matchingIngredients[0].category;
-                        } else if (matchingIngredients.length > 1) {
-                            const categories = matchingIngredients.map(ingredient => ingredient.category);
-                            // logic to see if there's only one category type
-                            const uniqueCategories = [...new Set(categories)];
-                            if (uniqueCategories.length === 1) {
-                                category = uniqueCategories[0];
-                            }
-                            // logic to see which is a dominant category
-                            else {
-                                const counts = categories.reduce((acc, category) => ({
-                                    ...acc,
-                                    [category]: (acc[category] || 0) + 1
-                                }), {});
-
-                                const maxCount = Math.max(...Object.values(counts));
-                                const matchingCount = Object.entries(counts).filter(([_category, value]) => value === maxCount);
-                                if (matchingCount.length === 1) {
-                                    category = matchingCount[0][0];
-                                }
-                            }
-                        }
-
+                        const category = getCategoryName(inputValue);
                         setGroceryList(prev => [...prev, { name: inputValue, index: prev.length, checked, category }]);
                         setInputValue('');
                         setChecked(false);
@@ -71,6 +46,7 @@ const GroceryListItem = ({ checked, index, groceryList, name, openEditModal, onC
 
             return () => clearTimeout(timeout);
         }
+        // eslint-disable-next-line
     }, [inputValue]);
 
     return (

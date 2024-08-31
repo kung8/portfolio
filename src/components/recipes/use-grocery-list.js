@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
+import { useCategoryName } from './use-category-name';
 
 const GROCERY_LIST_LOCAL_STORAGE_KEY = 'groceryList';
 
 export const useGroceryList = () => {
     const [show, setShow] = useState(false);
     const [groceryList, setGroceryList] = useState([]);
+    const { getCategoryName } = useCategoryName();
 
     const handleOpen = () => {
         setShow(true);
@@ -21,7 +23,12 @@ export const useGroceryList = () => {
     const getGroceryListFromLocalStorage = () => {
         const groceryList = localStorage.getItem(GROCERY_LIST_LOCAL_STORAGE_KEY);
         if (groceryList) {
-            return JSON.parse(groceryList);
+            return JSON.parse(groceryList).map(ingredient => {
+                if (!ingredient.category) {
+                    ingredient.category = getCategoryName(ingredient.name);
+                }
+                return ingredient;
+            });
         }
         return [];
     }
