@@ -35,7 +35,7 @@ const EmptyGroceryListItem = ({ setGroceryList }) => {
     )
 }
 
-const GroceryListItem = ({ checked, index, groceryList, name, openEditModal, onCheckboxChange, onInputChange, recipeName, setGroceryList }) => {
+const GroceryListItem = ({ checked, index, name, openEditModal, onCheckboxChange, onEmptyInputChange, onInputChange, recipeName }) => {
     const [inputValue, setInputValue] = useState(name);
 
     useEffect(() => {
@@ -69,23 +69,10 @@ const GroceryListItem = ({ checked, index, groceryList, name, openEditModal, onC
                             type="text"
                             value={inputValue}
                             onChange={(e) => setInputValue(e.target.value)}
-                            onKeyDown={async (e) => {
-                                const getNextItem = (nextItem, nextIndex) => {
-                                    if (nextItem) {
-                                        document.getElementById(GROCERY_ITEM_ID + nextIndex).focus();
-                                    } else {
-                                        document.getElementById(EMPTY_GROCERY_ITEM_ID).focus();
-                                    }
-                                }
-
+                            onKeyDown={(e) => {
                                 if (e.key === 'Enter') {
-                                    const nextIndex = index + 1;
-                                    const nextItem = groceryList[nextIndex];
                                     if (!inputValue) {
-                                        await setGroceryList(prev => prev.filter((_, i) => i !== index))
-                                        getNextItem(nextItem, index);
-                                    } else {
-                                        getNextItem(nextItem, nextIndex);
+                                        onEmptyInputChange();
                                     }
                                 }
                             }}
@@ -169,6 +156,11 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
         setGroceryList(newGroceryList);
     }
 
+    const removeItem = async (index) => {
+        const newGroceryList = [...groceryList].filter(ingredient => ingredient.index !== index);
+        setGroceryList(newGroceryList);
+    }
+
     const { data: categories } = useGetIngredientCategories();
 
     return (
@@ -191,11 +183,12 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                                     return (
                                         <GroceryListItem
                                             key={ingredient.name + '-' + index}
-                                            {...{ ...ingredient, index, groceryList, setGroceryList }}
+                                            {...{ ...ingredient, index }}
                                             onInputChange={(value) => updateItem(ingredient, { name: value })}
                                             onCheckboxChange={() => updateItem(ingredient, { checked: !ingredient.checked })}
                                             onCategoryChange={(value) => updateItem(ingredient, { category: value })}
                                             openEditModal={() => openEditModal(ingredient)}
+                                            onEmptyInputChange={() => removeItem(ingredient.index)}
                                         />
                                     )
                                 })}
