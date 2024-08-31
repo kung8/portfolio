@@ -19,6 +19,30 @@ module.exports = {
         //     image: "",
         //     rating: 5,
         // },
+        // {
+        //     date: "",
+        //     title: "Happy Place",
+        //     author: ["Emily Henry"],
+        //     review: [
+        //         ""
+        //     ],
+        //     quotes: [
+        //         {
+        //             text: "His gaze slides down me and back up. 'So you're saying you're slow-release hot.'",
+        //             pages: [36],
+        //             thoughts: "I've never heard it described as slow-release hot. I think it's a cute phrase, someone who isn't right off the bat “hot” but someone once you get to know them you will find them hot. Her statement that triggered this statement was ‘I'm not the one their eyes go to first.'",
+        //             context: "Wyndham Connors is picking up a future roommate and mutual friend of friends, Harriet, from the airport. This is their first time meeting."
+        //         },
+        //         {
+        //             text: "",
+        //             pages: [],
+        //             thoughts: "",
+        //             context: ""
+        //         },
+        //     ],
+        //     image: "",
+        //     rating: 5,
+        // },
         {
             date: "8/24",
             title: "Mistborn: The Final Empire",
@@ -206,7 +230,7 @@ module.exports = {
             author: ["Emily Henry"],
             source: ["Kindle/Libby"],
             review: [
-                "Wow I just finished Book Lover and I absolutely loved it. I’m a sucker for romantic comedies. It hit me hard around the middle of the book where I was able to connect with the main character Nora at more of a personal level. I felt she and I were the same even though we haven’t had exactly the same experiences. This book is definitely worth a read. I love Emily Henry’s writing—full of humor, witty, chock full of cultural references. There were some descriptive sensual scenes scattered in several parts throughout the book."
+                "Wow I just finished Book Lover and I absolutely loved it. I'm a sucker for romantic comedies. It hit me hard around the middle of the book where I was able to connect with the main character Nora at more of a personal level. I felt she and I were the same even though we haven't had exactly the same experiences. This book is definitely worth a read. I love Emily Henry's writing—full of humor, witty, chock full of cultural references. There were some descriptive sensual scenes scattered in several parts throughout the book."
             ],
             quotes: [
                 {
@@ -400,7 +424,7 @@ module.exports = {
             author: ["Brandon Sanderson"],
             source: ["Riley Adams"],
             review: [
-                "This was an enthralling book. I had some guesses on some of the reckoners and was slightly correct. This was the first of the Brandon Sanderson books that I’ve read and it was so good. I’m going to be reading more of his books. I really enjoyed the way his characters were more than just two dimensional in the sense they had personalities and backstories. The amount of details that he puts into this book made me connect with them. I really enjoyed the storyline. "
+                "This was an enthralling book. I had some guesses on some of the reckoners and was slightly correct. This was the first of the Brandon Sanderson books that I've read and it was so good. I'm going to be reading more of his books. I really enjoyed the way his characters were more than just two dimensional in the sense they had personalities and backstories. The amount of details that he puts into this book made me connect with them. I really enjoyed the storyline. "
             ],
             quotes: [
                 {
@@ -483,7 +507,7 @@ module.exports = {
                 "There are no bad teams, bad leaders (think about the boats)",
                 "Leader takes the blames, if the team doesn't execute.",
                 "Don't let your ego get in your way. You may need to accept/take the blame to help that egos don't get in the way of your work.",
-                "Break down the silos, work together, “not us versus them” mentality",
+                "Break down the silos, work together, 'not us versus them' mentality",
                 "Make things simple. Help connect the tasks and the rewards.",
                 "Need to set the right priorities, be willing to adjust plans to refocus, clear priorities communication, prioritize then execute",
                 "Lead up the chain, communication is very important up and down the chain, take ownership",
@@ -789,7 +813,7 @@ module.exports = {
             ],
             quotes: [
                 {
-                    text: "Mark notices things. He's very good with people. People light up when they see him coming. They love him. People often ask me, on the rare occasions that we do anything separately, “Isn't Mark coming?” with a tone of bemused disappointment. Mark makes all situations better. He listens, really listens. He holds eye contact. Not aggressively but in a way that reassures people—his look says: I'm here, and that's enough for me. He's interested in people. Mark's look has no angle; he's just there, with you.",
+                    text: "Mark notices things. He's very good with people. People light up when they see him coming. They love him. People often ask me, on the rare occasions that we do anything separately, 'Isn't Mark coming?' with a tone of bemused disappointment. Mark makes all situations better. He listens, really listens. He holds eye contact. Not aggressively but in a way that reassures people—his look says: I'm here, and that's enough for me. He's interested in people. Mark's look has no angle; he's just there, with you.",
                     pages: [13],
                     thoughts: "I want to be described like that. The main character reflects on the early days of their marriage/courtship. By this point I think they just got engaged or has been dating for a very long time"
                 }
@@ -1030,7 +1054,7 @@ module.exports = {
                     thoughts: ""
                 },
                 {
-                    text: "A letter Hamilton wrote to John Laurens after ‘the war' (hadn't officially ended), “Quit your sword my friend, put on the toga, come to Congress. We know each other's sentiments, our views are the same. We have fought side by side to make America free. Let us hand in hand struggle to make her happy.",
+                    text: "A letter Hamilton wrote to John Laurens after ‘the war' (hadn't officially ended), 'Quit your sword my friend, put on the toga, come to Congress. We know each other's sentiments, our views are the same. We have fought side by side to make America free. Let us hand in hand struggle to make her happy.",
                     pages: [],
                     context: "",
                     thoughts: "As I reflect on the above quote I think does freedom bring happiness in of itself, then what does? I feel there is a lot of truth in what Hamilton is saying. Even though they have won the war, there was still a lot of change that needed to happen for this fledging new country. It was corruptible and hinged on a plan of government that early patriots saw as weakness to the future existence of a longstanding government."

@@ -327,6 +327,7 @@ const INGREDIENTS = {
         OREGANO: { name: 'oregano', category: INGREDIENT_CATEGORY.SPICES },
         PAPRIKA: { name: 'paprika', category: INGREDIENT_CATEGORY.SPICES },
         PARSLEY: { name: 'parsley', category: INGREDIENT_CATEGORY.SPICES },
+        RANCH_DIP_DRESSING: { name: 'ranch dip dressing', category: INGREDIENT_CATEGORY.SPICES },
         RED_PEPPER_FLAKES: { name: 'red pepper flakes', category: INGREDIENT_CATEGORY.SPICES },
         ROSEMARY: { name: 'rosemary', category: INGREDIENT_CATEGORY.SPICES },
         SALT: { name: 'salt', category: INGREDIENT_CATEGORY.SPICES },

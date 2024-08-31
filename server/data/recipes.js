@@ -14,7 +14,7 @@ const breakfastSandwich = require("./recipes/breakfast-sandwich");
 const brownies = require("./recipes/brownies");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cabbageStirFry = require("./recipes/cabbage-stir-fry");
-const cafeRioSalad = require("./recipes/cafe-rio-salad");
+const cafeRioBowl = require("./recipes/cafe-rio-bowl");
 const caramelizedOnion = require("./recipes/caramelized-onion");
 const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 const cheeseballs = require("./recipes/cheeseballs");
@@ -155,7 +155,7 @@ const recipes = [
     italianTurkeyMeatballSpinachTortelliniSoup,
     mexicanChickenBake, // TODO: add
     tacoInABag,
-    cafeRioSalad,
+    cafeRioBowl,
     thaiMassamanCurry, // TODO: add
     beefStroganoff,
     chickenAlfredo,
