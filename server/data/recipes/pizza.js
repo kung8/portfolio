@@ -35,7 +35,6 @@ const {
     WARM_WATER,
     OLIVE_OIL,
     MOZZARELLA_CHEESE,
-    SPINACH,
     RED_ONION,
     MUSHROOMS,
     RED_BELL_PEPPERS,
@@ -60,10 +59,23 @@ const {
     BACON,
     PEPPERONI,
     MILK,
+    RED_PEPPER_FLAKES,
+    BASIL_LEAVES,
+    BUFFALO_SAUCE,
 } = require('./ingredients');
 
-const PHILLY_CHEESESTEAK_SAUCE = 'Philly Cheesesteak Sauce';
+const BBQ_CHICKEN_PIZZA = 'BBQ Chicken Pizza';
+const BOBO_BRAZIL_PIZZA = 'Bobo Brazil Pizza';
+const BOBO_BRAZIL_SAUCE = 'Bobo Brazil Sauce';
+const BUFFALO_CHICKEN_PIZZA = 'Buffalo Chicken Pizza';
+const BUFFALO_CHICKEN_SAUCE = 'Buffalo Chicken Sauce';
+const HAWAIIAN_PIZZA = 'Hawaiian Pizza';
+const MARGHERITA_PIZZA = 'Margherita Pizza';
+const PEPPERONI_PIZZA = 'Pepperoni Pizza';
 const PHILLY_CHEESESTEAK_PIZZA = 'Philly Cheesesteak Pizza';
+const PHILLY_CHEESESTEAK_SAUCE = 'Philly Cheesesteak Sauce';
+const RANCH_CHICKEN_PIZZA = 'Ranch Chicken Pizza';
+const SUPREME_PIZZA = 'Supreme Pizza';
 
 module.exports = {
     cardName: 'Homemade Pizza',
@@ -88,21 +100,50 @@ module.exports = {
         { ...HONEY, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
         { ...WARM_WATER, amount: '2 c', additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
         { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...PIZZA_SAUCE, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
-        { ...PEPPERONI, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...SAUSAGE, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...SPINACH, amount: '', additionalDetails: 'sliced or diced', section: SECTIONS.TOPPINGS },
-        { ...RED_ONION, amount: '', additionalDetails: 'sliced or diced', section: SECTIONS.TOPPINGS },
-        { ...MUSHROOMS, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...OLIVES, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...RED_BELL_PEPPERS, amount: '', additionalDetails: 'sliced or diced', section: SECTIONS.TOPPINGS },
-        { ...COOKED_HAM, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...PINEAPPLE, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...RANCH_DRESSING, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...BBQ_SAUCE, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...CHICKEN_BREAST, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...BACON, amount: '', additionalDetails: 'cooked', section: SECTIONS.TOPPINGS },
+        
+        // BBQ CHICKEN
+        { ...BBQ_SAUCE, amount: '', additionalDetails: '', section: BBQ_CHICKEN_PIZZA },
+        { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: BBQ_CHICKEN_PIZZA },
+        { ...CHICKEN_BREAST, amount: '', additionalDetails: '', section: BBQ_CHICKEN_PIZZA },
+        { ...RED_ONION, amount: '', additionalDetails: 'sliced or diced', section: BBQ_CHICKEN_PIZZA },
+        { ...RED_BELL_PEPPERS, amount: '', additionalDetails: 'sliced or diced', section: BBQ_CHICKEN_PIZZA },
+                
+        // BOBO BRAZIL- TOPPINGS
+        { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: BOBO_BRAZIL_PIZZA },
+        { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: BOBO_BRAZIL_PIZZA },
+        { ...SAUSAGE, amount: '', additionalDetails: '', section: BOBO_BRAZIL_PIZZA },
+        { ...RED_ONION, amount: '', additionalDetails: 'sliced or diced', section: BOBO_BRAZIL_PIZZA },
+        // BOBO BRAZIL- SAUCE
+        { ...OLIVE_OIL, amount: '2 tsp', additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
+        { ...HONEY, amount: '2 Tbsp', additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
+        { ...RED_PEPPER_FLAKES, amount: '1/2 tsp', additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
+        
+        // BUFFALO CHICKEN - SAUCE
+        { ...PIZZA_SAUCE, amount: '1/2 c', additionalDetails: '', section: BUFFALO_CHICKEN_SAUCE },
+        { ...BUFFALO_SAUCE, amount: '1/3 c', additionalDetails: '', section: BUFFALO_CHICKEN_SAUCE },
+        { ...RANCH_DRESSING, amount: '1/4 c', additionalDetails: '', section: BUFFALO_CHICKEN_SAUCE },
+        // BUFFALO CHICKEN - TOPPINGS
+        { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: BUFFALO_CHICKEN_PIZZA },
+        { ...CHICKEN_BREAST, amount: '', additionalDetails: '', section: BUFFALO_CHICKEN_PIZZA },
+        { ...RED_ONION, amount: '', additionalDetails: 'sliced or diced', section: BUFFALO_CHICKEN_PIZZA },
+
+        // HAWAIIAN
+        { ...PIZZA_SAUCE, amount: '', additionalDetails: '', section: HAWAIIAN_PIZZA },
+        { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: HAWAIIAN_PIZZA },
+        { ...COOKED_HAM, amount: '', additionalDetails: '', section: HAWAIIAN_PIZZA },
+        { ...PINEAPPLE, amount: '', additionalDetails: '', section: HAWAIIAN_PIZZA },
+        
+        // MARGHERITA
+        { ...PIZZA_SAUCE, amount: '', additionalDetails: '', section: MARGHERITA_PIZZA },
+        { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: MARGHERITA_PIZZA },
+        { ...BASIL_LEAVES, amount: '', additionalDetails: 'sliced (or sub wth baby spinach)', section: MARGHERITA_PIZZA },
+
+        // PEPPERONI
+        { ...PIZZA_SAUCE, amount: '', additionalDetails: '', section: PEPPERONI_PIZZA },
+        { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: PEPPERONI_PIZZA },
+        { ...PEPPERONI, amount: '', additionalDetails: '', section: PEPPERONI_PIZZA },
+
+        // PHILLY CHEESESTEAK - SAUCE
         { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
         { ...ALL_PURPOSE_FLOUR, amount: '1 Tbsp', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
         { ...MILK, amount: '1/2 c', additionalDetails: 'cold', section: PHILLY_CHEESESTEAK_SAUCE },
@@ -111,12 +152,30 @@ module.exports = {
         { ...BLACK_PEPPER, amount: 'pinch', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
         { ...NUTMEG, amount: 'pinch', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
         { ...PARMESAN_CHEESE, amount: '1/4 c', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
-        { ...PROVOLONE_CHEESE, amount: '1 1/4 c', additionalDetails: 'shredded', section: PHILLY_CHEESESTEAK_PIZZA },
+        // PHILLY CHEESESTEAK - TOPPINGS
         { ...OLIVE_OIL, amount: '2 tsp', additionalDetails: '', section: PHILLY_CHEESESTEAK_PIZZA },
         { ...FLANK_STEAK, amount: '6 oz', additionalDetails: 'thinly sliced', section: PHILLY_CHEESESTEAK_PIZZA },
         { ...RED_BELL_PEPPERS, amount: '1/2', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
         { ...MUSHROOMS, amount: '5', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
         { ...MEDIUM_YELLOW_ONION, amount: '1/2', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
+        { ...PROVOLONE_CHEESE, amount: '1 1/4 c', additionalDetails: 'shredded', section: PHILLY_CHEESESTEAK_PIZZA },
+
+        // RANCH CHICKEN
+        { ...RANCH_DRESSING, amount: '', additionalDetails: '', section: RANCH_CHICKEN_PIZZA },
+        { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: RANCH_CHICKEN_PIZZA },
+        { ...CHICKEN_BREAST, amount: '', additionalDetails: '', section: RANCH_CHICKEN_PIZZA },
+        { ...RED_BELL_PEPPERS, amount: '', additionalDetails: 'sliced or diced', section: RANCH_CHICKEN_PIZZA },
+        { ...RED_ONION, amount: '', additionalDetails: 'sliced or diced', section: RANCH_CHICKEN_PIZZA },
+        { ...BACON, amount: '', additionalDetails: 'cooked', section: RANCH_CHICKEN_PIZZA },
+
+        // SUPREME
+        { ...PIZZA_SAUCE, amount: '', additionalDetails: '', section: SUPREME_PIZZA },
+        { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: SUPREME_PIZZA },
+        { ...PEPPERONI, amount: '', additionalDetails: '', section: SUPREME_PIZZA },
+        { ...SAUSAGE, amount: '', additionalDetails: '', section: SUPREME_PIZZA },
+        { ...MUSHROOMS, amount: '', additionalDetails: '', section: SUPREME_PIZZA },
+        { ...OLIVES, amount: '', additionalDetails: '', section: SUPREME_PIZZA },
+        { ...RED_BELL_PEPPERS, amount: '', additionalDetails: 'sliced or diced', section: SUPREME_PIZZA },
     ],
     appliances: [
         { name: 'oven' },
@@ -142,6 +201,8 @@ module.exports = {
         { step: 'Tossing the dough helps form the crust and gives the dough texture and flavor. Flatten the dough using a rolling pin until it\'s about 8 inches wide and you will place your closed fists beneath it (at about 10-and-2 steering wheel position). The tricky part is to avoid tearing the dough by making it too thin and accidentally ripping the dough with your fingers. So tuck those fingers in and use just your knuckles.', type: SECTIONS.DOUGH },
         { step: 'Pull your fists apart to pull the dough edges and try to get all around. Then with a quick flick of the wrists throw the dough directly up in the air and catch the dough with your closed fists.', type: SECTIONS.DOUGH, video: tossing },
         { step: 'Keep doing this until you are satisfied with the pizza size and thickness.', type: SECTIONS.DOUGH },
+        { step: 'Over medium-high heat, combine olive oil, honey, and red pepper flakes in a saucepan.', type: BOBO_BRAZIL_SAUCE },
+        { step: 'Cook for 1 to 2 minutes and set aside. Top the Bobo Brazil pizza with this sauce after baking.', type: BOBO_BRAZIL_SAUCE },
         { step: 'Over medium heat, melt the butter in a saucepan.', type: PHILLY_CHEESESTEAK_SAUCE, img: butter },
         { step: 'Mix in flour and cook (about 1 minute).', type: PHILLY_CHEESESTEAK_SAUCE, img: [flour, rue] },
         { step: 'Slowly mix in cold milk and garlic. Bring the sauce to a simmer.', type: PHILLY_CHEESESTEAK_SAUCE, img: garlicMilk },
