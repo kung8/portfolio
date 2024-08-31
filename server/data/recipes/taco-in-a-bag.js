@@ -10,7 +10,7 @@ const {
     LETTUCE,
     SALT,
     SOUR_CREAM,
-    FRITOS,
+    FRITOS_CHIPS,
     TACO_SEASONING,
     ROMA_TOMATO,
 } = require('./ingredients');
@@ -30,7 +30,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...GROUND_BEEF, amount: '1 lb', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...FRITOS, amount: '1 medium bag', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRITOS_CHIPS, amount: '1 medium bag', additionalDetails: '', section: SECTIONS.MAIN },
         { ...TACO_SEASONING, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...BLACK_BEANS, amount: '8 oz', additionalDetails: '', section: SECTIONS.MAIN },
         { ...CORN, amount: '8 oz', additionalDetails: '', section: SECTIONS.MAIN },
