@@ -6,6 +6,10 @@ export const useCategoryName = () => {
     const getCategoryName = (search) => {
         const searchIndices = search.toLowerCase().split(' ');
 
+        if (!ingredients) {
+            return 'Other';
+        }
+
         const matchingIngredients = ingredients.filter(ingredient => {
             const ingredientIndices = ingredient.name.toLowerCase().split(' ');
             const categoryIndices = ingredient.category.toLowerCase().split(' ');
