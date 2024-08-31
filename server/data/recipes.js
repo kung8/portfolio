@@ -81,7 +81,7 @@ const pizza = require("./recipes/pizza");
 const potRoast = require("./recipes/pot-roast");
 const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
-const riceCrispyBall = require("./recipes/rice-crispy-ball");
+const riceKrispyBall = require("./recipes/rice-krispy-ball");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const sauteedSquash = require("./recipes/sauteed-squash");
 const scrambledEggs = require("./recipes/scrambled-eggs");
@@ -105,8 +105,6 @@ const vietnamesePho = require("./recipes/vietnamese-pho");
 const waffles = require("./recipes/waffles");
 const wrap = require("./recipes/wrap");
 
-// TODO: Add the new recipes
-// TODO: Add a way to add ingredients to a shopping list and save in local storage
 // TODO: Add a way to add recipes to a favorites list and save in local storage
 // TODO: Add websites where to find them?
 // TODO: Add facts to the recipes = nutritional facts, calories, interesting facts about the recipe, origins, etc.
@@ -215,7 +213,7 @@ const recipes = [
     brownies,
     noBakeCookie,
     chocolateMousse,
-    riceCrispyBall, // TODO: add
+    riceKrispyBall, // TODO: add
     graveyardDessert,
     smores,
 ]

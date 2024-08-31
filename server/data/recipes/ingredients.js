@@ -880,6 +880,7 @@ const INGREDIENTS = {
         MARSHMALLOW: { name: 'marshmallow', category: INGREDIENT_CATEGORY.SNACKS },
         MENTOS: { name: 'mentos', category: INGREDIENT_CATEGORY.SNACKS },
         MILANO_COOKIES: { name: 'milano cookies', category: INGREDIENT_CATEGORY.SNACKS },
+        MINI_MARSHMALLOWS: { name: 'mini marshmallows', category: INGREDIENT_CATEGORY.SNACKS },
         MISS_VICKIES_CHIPS: { name: 'miss vickies chips', category: INGREDIENT_CATEGORY.SNACKS },
         MONDELEZ_INTERNATIONAL: { name: 'mondelez international', category: INGREDIENT_CATEGORY.SNACKS },
         MULTI_SEED_CRACKERS: { name: 'multi-seed crackers', category: INGREDIENT_CATEGORY.SNACKS },
