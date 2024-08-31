@@ -12,12 +12,12 @@ export const useCategoryName = () => {
 
         const matchingIngredients = ingredients.filter(ingredient => {
             const ingredientIndices = ingredient.name.toLowerCase().split(' ');
-            const categoryIndices = ingredient.category.toLowerCase().split(' ');
+            const categoryIndices = ingredient.category.toLowerCase().split(' ').map(c => c.replace(/,/g, ''));
             
             return ingredientIndices.find(ingredient => searchIndices.includes(ingredient)) ||
                 searchIndices.find(search => ingredientIndices.includes(search)) ||
-                categoryIndices.find(category => searchIndices.find(s => s.includes(category))) ||
-                searchIndices.find(search => categoryIndices.find(c => c.includes(search)))
+                categoryIndices.find(category => searchIndices.find(s => s ===category)) ||
+                searchIndices.find(search => categoryIndices.find(c => c === search));
         });
 
         let category = 'Other';
