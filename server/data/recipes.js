@@ -78,10 +78,11 @@ const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
 const pizza = require("./recipes/pizza");
+const popcornBalls = require("./recipes/popcorn-balls");
 const potRoast = require("./recipes/pot-roast");
 const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
-const riceKrispyBall = require("./recipes/rice-krispy-ball");
+const riceKrispyTreats = require("./recipes/rice-krispy-treats");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const sauteedSquash = require("./recipes/sauteed-squash");
 const scrambledEggs = require("./recipes/scrambled-eggs");
@@ -212,8 +213,9 @@ const recipes = [
     tedLassoBiscuits,
     brownies,
     noBakeCookie,
+    riceKrispyTreats,
+    popcornBalls,
     chocolateMousse,
-    riceKrispyBall, // TODO: add
     graveyardDessert,
     smores,
 ]
