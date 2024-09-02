@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import closeBtn from '../../Assets/x.png';
 import { useGetIngredientCategories } from '../../hooks';
 import arrow from './arrow.png';
-import pencil from './pencil.png';
+import edit from './edit.png';
 import { useCategoryName } from './use-category-name';
 
 const EMPTY_GROCERY_ITEM_ID = 'empty-grocery-list-item';
@@ -60,7 +60,7 @@ const GroceryListItem = ({ checked, index, name, openEditModal, onCheckboxChange
                 {checked ? (
                     <div className="grocery-input-container">
                         <label className={checked ? 'checked' : ''}>{inputValue}</label>
-                        <img onClick={openEditModal} src={pencil} alt="pencil" className="edit-icon" />
+                        <img onClick={openEditModal} src={edit} alt="edit" className="edit-icon" />
                     </div>
                 ) : (
                     <div className="grocery-input-container">
@@ -77,7 +77,7 @@ const GroceryListItem = ({ checked, index, name, openEditModal, onCheckboxChange
                                 }
                             }}
                         />
-                        <img onClick={openEditModal} src={pencil} alt="pencil" className="edit-icon" />
+                        <img onClick={openEditModal} src={edit} alt="edit" className="edit-icon" />
                     </div>
                 )}
                 {recipeName && <p className="recipe-name"><span>Needed for</span> {recipeName}</p>}
