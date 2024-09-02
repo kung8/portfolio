@@ -7,11 +7,12 @@ const ingredientCategories = {
     CANNED: 'Canned Goods, Broths & Soups',
     CLOTHING: 'Clothing & Accessories',
     CONDIMENTS: 'Condiments, Dressings & Sauces',
-    COOKING_SUPPLIES: 'Cooking & Baking Supplies & Dinnerware',
+    COOKING_SUPPLIES: 'Cooking & Dinnerware',
     DAIRY: 'Dairy, Pastries & Eggs',
     DELI: 'Deli',
     FROZEN: 'Frozen Foods',
     FURNITURE: 'Furniture',
+    GARDEN: 'Garden & Outdoor',
     GRAIN: 'Grain, Pasta & Rice',
     HEALTH: 'Health & Wellness',
     HOUSEWARES: 'Housewares & Cleaning',
@@ -25,6 +26,7 @@ const ingredientCategories = {
     SNACKS: 'Snacks & Candy',
     SPICES: 'Herbs, Spices & Seasonings',
     SPORTING: 'Sporting Goods',
+    TOOLS: 'Tools & Home Improvement',
     TOYS: 'Toys & Games',
 };
 
