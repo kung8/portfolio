@@ -43,9 +43,18 @@ module.exports = {
     ],
     directions: [
         { step: 'Over low heat, melt butter and marshmallows in a saucepan. Stir to prevent it from burning and help it be consistent. My suggestion is to mix until the marshmallows are coated with the butter.', type: SECTIONS.MAIN, img: [marshmallows, marshmallowsZoomed, melting, melted, completely] },
-        { step: 'Remove the saucepan from heat and mix in vanilla.', type: SECTIONS.MAIN, img: vanilla },
+        { step: 'If you want to make one of the variations with chocolate, melt chocolate chip after marshmallows are melted and stir.', type: SECTIONS.MAIN },
+        { step: 'Remove the saucepan from heat and mix in vanilla (optional depending on how sweet the chocolate chips is).', type: SECTIONS.MAIN, img: vanilla },
         { step: 'Stir while adding in the Rice Krispies cereal. Mix until the cereal is evenly coated.', type: SECTIONS.MAIN, img: riceKrispy },
         { step: 'Press into a greased 9x13 pan. But do not press them too hard if you want the treats to be a little softer.', type: SECTIONS.MAIN, img: [pan, corner, zoomed1, zoomed2, lengthwise] },
         { step: 'Let cool and enjoy.', type: SECTIONS.MAIN },
+    ],
+    notes: [
+        "Be generous on marshmallows. The more marshmallows, the chewier the treats will be. Make sure it is completely melted to adhere well and are soft.",
+        "Do not use stale or old marshmallows. They will not melt well and will make the treats hard.",
+        "Do not overcook the marshmallows or the sugar will become hard.",
+        "If you want a thicker treat, use a smaller baking pan.",
+        "Use real butter and some vanilla for the best flavor.",
+        "Variations of this recipe include (1) Lemon, (2) Turtle (chocolate, caramel, and pecans), (3) Peanut Butter (chocolate and peanut butter), (4) Pineapple Coconut (pineapple and coconut), (5) Chocolate Oreo (crushed Oreo), and (6) Dulce de Leche (milk and white chocolate).",
     ]
 };
