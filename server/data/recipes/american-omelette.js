@@ -2,13 +2,16 @@ const butter = '../assets/Products/american-omelette-melting-butter.jpeg';
 const interior = '../assets/Products/american-omelette-raw-interior.jpeg';
 const spinach = '../assets/Products/american-omelette-spinach-and-cheese.jpeg';
 // E.g. of flipping method result
-const aerial = '../assets/Products/american-omelette-plated-aerial.jpeg'; 
+const aerial = '../assets/Products/american-omelette-plated-aerial.jpeg';
 // E.g. of folding method result
 const halved = '../assets/Products/american-omelette-plated-halved.jpeg';
 const split = '../assets/Products/american-omelette-plated-split.jpeg';
 const side = '../assets/Products/american-omelette-plated-side.jpeg';
+const moreCooked = '../assets/Products/american-omelette-plated-more-cooked.jpeg';
+const moreCookedZoomed = '../assets/Products/american-omelette-plated-more-cooked-zoomed.jpeg';
+const moreCookedSide = '../assets/Products/american-omelette-plated-more-cooked-side.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN } = require('./constants');
 const {
     EGGS,
     COLD_WATER,
@@ -17,7 +20,7 @@ const {
     SMALL_YELLOW_ONION,
     RED_BELL_PEPPERS,
     ROMA_TOMATO,
-    COOKED_HAM,           
+    COOKED_HAM,
     BASIL,
     UNSALTED_BUTTER,
     MUSHROOMS,
@@ -29,7 +32,7 @@ const FOLDING_METHOD = 'Folding Method';
 module.exports = {
     cardName: 'American Omelette',
     name: 'American Omelette',
-    img: halved,
+    img: moreCookedZoomed,
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.AMERICAN],
@@ -75,7 +78,7 @@ module.exports = {
         { step: 'If you have successfully flipped it then the rest of this will be a piece of cake. Put it right back over the heat and add the tomatoes and ham to one half of the egg.', type: FLIPPING_METHOD },
         { step: 'Let the other side of the egg cook a few minutes.', type: FLIPPING_METHOD },
         { step: 'Fold over the side that doesn\'t have the tomatoes. If the egg could use more time you can carefully flip the egg over again using your spatula this time.', type: FLIPPING_METHOD, img: aerial },
-        { step: 'Slowly check the bottom of the egg to see if it is a nice golden brown, add the spinach and cheese before folding the egg.', type: FOLDING_METHOD, img: [side, split] },
+        { step: 'Slowly check the bottom of the egg to see if it is a nice golden brown, add the spinach and cheese before folding the egg.', type: FOLDING_METHOD, img: [side, split, halved, moreCooked, moreCookedSide] },
         { step: 'Enjoy this beautiful piece of art.', type: SECTIONS.MAIN },
     ]
 }
