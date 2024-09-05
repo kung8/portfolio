@@ -28,15 +28,33 @@ module.exports = [
     //         {
     //             text: "His gaze slides down me and back up. 'So you're saying you're slow-release hot.'",
     //             pages: [36],
-    //             thoughts: "I've never heard it described as slow-release hot. I think it's a cute phrase, someone who isn't right off the bat “hot” but someone once you get to know them you will find them hot. Her statement that triggered this statement was ‘I'm not the one their eyes go to first.'",
+    //             thoughts: "I've never heard it described as slow-release hot. I think it's a cute phrase, someone who isn't right off the bat “hot” but someone once you get to know them you will find them hot. Her statement that triggered this statement was 'I'm not the one their eyes go to first.'",
     //             context: "Wyndham Connors is picking up a future roommate and mutual friend of friends, Harriet, from the airport. This is their first time meeting."
     //         },
     //         {
-    //             text: "",
-    //             pages: [],
-    //             thoughts: "",
-    //             context: ""
+    //             text: "Time doesn't move the same way when we're there. Things change, but we stretch and grow and make room for one another. Our love is a place we can always come back to and it will be waiting, the same as it ever was. You belong here.",
+    //             pages: [225],
+    //             thoughts: "We do need to adapt because as another of Emily Henry's books, Book Lovers, she says in there that each of us are different people every day. So we need to make room for the changes in ourselves and of others. We need to create a place of refuge and love to make it feel safe for each other and feel belongingness.",
+    //             context: "Harriet is reminiscing about the proposal and when they celebrate on the engagement in Maine."
     //         },
+    //         {
+    //             text: "\"We both know that's not true.\" He studies me for a second, brow furrowed. 'Frustrate, maybe. Not annoy.' 'What's the difference?' I ask. His eyes drop to my legs and back up. 'When you're annoyed, you don't want to be around a person.' His chin shifts to the left, not quite a shake of his head. 'I always want to be around you.'",
+    //             pages: [232],
+    //             thoughts: "It's sweet to get to a point in a relationship where you never want to be away from somebody. Over the years I have become more and more of a homebody and introvert, and it will be challenging for me to let people in especially into my routines, my space, etc. for long periods of time. But if I find somebody that I can connect with that would be great. She will probably get tired of me tbh but I guess it's not perfect. I think naturally with different jobs and other circles that we are in will hopefully give us enough distinction and time apart that will not tire ourselves out of seeing each other. Having friends outside of your partner/spouse is probably a good thing too so that you aren't considered this ambiguous blob of a couple and aren't separate entities anymore.",
+    //             context: "Wyn explains to Harriett that he is never annoyed by her. He may be frustrated but doesn't not want to ever be around Harriet."
+    //         },
+    //         {
+    //             text: "What if I'm bad at it? I ask. 'Being a parent.'...'You won't be.'...'Because you're good at loving,' he says. 'And that's all you have to do.'",
+    //             pages: [244],
+    //             thoughts: "Wyn is absolutely in love with Harriet. I want to find somebody that I can feel the same way about as Wyn does to Harriet. It's not all that defines a good parent but it is very important to love your child unconditionally.",
+    //             context: "Wyn affirms to Harriet that she will be a good parent."
+    //         },
+    //         // {
+    //         //     text: "",
+    //         //     pages: [],
+    //         //     thoughts: "",
+    //         //     context: ""
+    //         // },
     //     ],
     //     image: "",
     //     rating: 5,
@@ -69,7 +87,7 @@ module.exports = [
             {
                 text: "His gaze slides down me and back up. 'So you're saying you're slow-release hot.'",
                 pages: [36],
-                thoughts: "I've never heard it described as slow-release hot. I think it's a cute phrase, someone who isn't right off the bat “hot” but someone once you get to know them you will find them hot. Her statement that triggered this statement was ‘I'm not the one their eyes go to first.'",
+                thoughts: "I've never heard it described as slow-release hot. I think it's a cute phrase, someone who isn't right off the bat “hot” but someone once you get to know them you will find them hot. Her statement that triggered this statement was 'I'm not the one their eyes go to first.'",
                 context: "Wyndham Connors is picking up a future roommate and mutual friend of friends, Harriet, from the airport. This is their first time meeting."
             },
             {
@@ -559,32 +577,32 @@ module.exports = [
         ],
         rating: 3,
     },
-    {
-        date: "1/24",
-        incomplete: true,
-        title: "The Handmaid's Tale",
-        author: ["Margaret Atwood"],
-        review: [
-            ""
-        ],
-        quotes: [
-            {
-                text: "There is more than one kind of freedom, said Aunt Lydia. Freedom to and freedom from. In the days of anarchy, it was freedom to. Now you are being given freedom from. Don't underrate it.",
-                pages: [24],
-                thoughts: "It's true that one's man's freedom could be another person's cage. In this point of the book, the main character describes her past as she's living and having to deal with real world problems like potentially get raped, mugged, attacked, harassed, etc where she was not pretty much a slave—and then on the flip side as a slave she doesn't have to deal with such things. She's now property but doesn't have to deal with it or at least to that extent."
-            },
-            {
-                text: "They seemed to be able to choose. We seemed to be able to choose, then. We were a society dying, said Aunt Lydia, of too much choice.",
-                pages: [25],
-                thoughts: "Interesting to think society given too many choices is a curse too. Too many options can cause us to be overwhelmed."
-            }, {
-                text: "Then I think: I used to dress like that. That was freedom. Westernized, they used to call it.",
-                pages: [28],
-                thoughts: "Having the freedom to choose what you wear is a freedom that we take for granted. It's interesting to think about how we dress and how we present ourselves to the world. The things that we wear can say a lot about where we are from."
-            }
-        ],
-        rating: 'n/a',
-    },
+    // {
+    //     date: "1/24",
+    //     incomplete: true,
+    //     title: "The Handmaid's Tale",
+    //     author: ["Margaret Atwood"],
+    //     review: [
+    //         ""
+    //     ],
+    //     quotes: [
+    //         {
+    //             text: "There is more than one kind of freedom, said Aunt Lydia. Freedom to and freedom from. In the days of anarchy, it was freedom to. Now you are being given freedom from. Don't underrate it.",
+    //             pages: [24],
+    //             thoughts: "It's true that one's man's freedom could be another person's cage. In this point of the book, the main character describes her past as she's living and having to deal with real world problems like potentially get raped, mugged, attacked, harassed, etc where she was not pretty much a slave—and then on the flip side as a slave she doesn't have to deal with such things. She's now property but doesn't have to deal with it or at least to that extent."
+    //         },
+    //         {
+    //             text: "They seemed to be able to choose. We seemed to be able to choose, then. We were a society dying, said Aunt Lydia, of too much choice.",
+    //             pages: [25],
+    //             thoughts: "Interesting to think society given too many choices is a curse too. Too many options can cause us to be overwhelmed."
+    //         }, {
+    //             text: "Then I think: I used to dress like that. That was freedom. Westernized, they used to call it.",
+    //             pages: [28],
+    //             thoughts: "Having the freedom to choose what you wear is a freedom that we take for granted. It's interesting to think about how we dress and how we present ourselves to the world. The things that we wear can say a lot about where we are from."
+    //         }
+    //     ],
+    //     rating: 'n/a',
+    // },
     {
         date: "1/24",
         title: "The Christmas Murder Game",
@@ -657,7 +675,7 @@ module.exports = [
                 context: "Hannah's wise thoughts about Nicholas' wall of pictures.",
                 thoughts: "He has a wall plastered of his daughter and granddaughter whom are deceased and out of his life, respectively."
             }, {
-                text: "‘My grandfather used to say that most people don't want to hear the thing that will make it work better,' I said. ‘They want to hear what will make it easier.'",
+                text: "'My grandfather used to say that most people don't want to hear the thing that will make it work better,' I said. 'They want to hear what will make it easier.'",
                 pages: [160],
                 thoughts: "it's probably true that most people want to hear how their life can be made easier rather than better."
             }, {
@@ -678,7 +696,7 @@ module.exports = [
         ],
         quotes: [
             {
-                text: "‘This case, Tom Robinsons case, is something that goes to the essence of a man's conscience—scout I couldn't go to t church and worship god if I didn't try to help that man'…'They're certainly entitled to think that, and they're entitled to full respect for their opinions,' said Atticus, ‘but before I can live with other folks I've got to live with myself. The one thing that doesn't abide by majority rule is a persons conscience.'",
+                text: "'This case, Tom Robinsons case, is something that goes to the essence of a man's conscience—scout I couldn't go to t church and worship god if I didn't try to help that man'…'They're certainly entitled to think that, and they're entitled to full respect for their opinions,' said Atticus, 'but before I can live with other folks I've got to live with myself. The one thing that doesn't abide by majority rule is a persons conscience.'",
                 pages: [119, 120],
                 thoughts: "Atticus describing the importance of each individual duty to their own conscience. It's important to follow what your moral compass is telling you. To each of us it may stray from what the majority may believe in."
             },
@@ -849,7 +867,7 @@ module.exports = [
                 pages: [165],
                 thoughts: "Ron with his girlfriend Pauline are getting a couples massage and he is not looking forward to it at all. He was told that he should just relax and let his mind wander during it all. He starts listing potential things to think about and it was cute to hear him say that"
             }, {
-                text: "And he's helping her understand that if you're fooling everyone, you're really only fooling one person, and that's yourself. Ibrahim had said to her, ‘Our great strengths are also our great weakness'",
+                text: "And he's helping her understand that if you're fooling everyone, you're really only fooling one person, and that's yourself. Ibrahim had said to her, 'Our great strengths are also our great weakness'",
                 pages: [147],
                 context: "where Connie is internalizing some of the doctor's insight and began reflecting on these wise words",
                 thoughts: "She has been living like nothing bothered her. But she is realizing that maybe there are things and that she's now having to face the music."
@@ -945,7 +963,7 @@ module.exports = [
             }, {
                 text: "All you have to do is think back and ask yourself, when was the last time you were truly happy?",
                 pages: [23],
-                context: "Rachel echos her mom/Dr Krohn‘s advice to Poppy"
+                context: "Rachel echos her mom/Dr Krohn's advice to Poppy"
             }, {
                 text: "My life turned out how I hoped it would, and now I just miss wanting something.",
                 pages: [20],
@@ -1096,19 +1114,19 @@ module.exports = [
         ],
         quotes: [
             {
-                text: "During the winter encampments, Hamilton constantly educated himself, as if equipping his mind got the larger tasks ahead. ‘Force of intellect and force of will were his sources of his success.' (Henry Cabot Lodge) Hamilton fit the type of the self-improving autodidact, employing all his spare time to better himself. He aspired to the eighteenth-century aristocratic ideal of the versatile man conversant in every area of knowledge...This was hardly light fare after a day of demanding correspondence for Washington, yet he retained the information and applied it to profitable use.",
+                text: "During the winter encampments, Hamilton constantly educated himself, as if equipping his mind got the larger tasks ahead. 'Force of intellect and force of will were his sources of his success.' (Henry Cabot Lodge) Hamilton fit the type of the self-improving autodidact, employing all his spare time to better himself. He aspired to the eighteenth-century aristocratic ideal of the versatile man conversant in every area of knowledge...This was hardly light fare after a day of demanding correspondence for Washington, yet he retained the information and applied it to profitable use.",
                 pages: [110],
                 context: "",
                 thoughts: ""
             },
             {
-                text: "‘As a general marches at the head of his troops,' so should wise politicians ‘March at the head of affairs, insomuch that they ought not to wait the event to know what measure to take, but the measure which they have taken ought to produce the event.'",
+                text: "'As a general marches at the head of his troops,' so should wise politicians 'March at the head of affairs, insomuch that they ought not to wait the event to know what measure to take, but the measure which they have taken ought to produce the event.'",
                 pages: [111],
                 context: "",
                 thoughts: ""
             },
             {
-                text: "A letter Hamilton wrote to John Laurens after ‘the war' (hadn't officially ended), 'Quit your sword my friend, put on the toga, come to Congress. We know each other's sentiments, our views are the same. We have fought side by side to make America free. Let us hand in hand struggle to make her happy.",
+                text: "A letter Hamilton wrote to John Laurens after 'the war' (hadn't officially ended), 'Quit your sword my friend, put on the toga, come to Congress. We know each other's sentiments, our views are the same. We have fought side by side to make America free. Let us hand in hand struggle to make her happy.",
                 pages: [],
                 context: "",
                 thoughts: "As I reflect on the above quote I think does freedom bring happiness in of itself, then what does? I feel there is a lot of truth in what Hamilton is saying. Even though they have won the war, there was still a lot of change that needed to happen for this fledging new country. It was corruptible and hinged on a plan of government that early patriots saw as weakness to the future existence of a longstanding government."

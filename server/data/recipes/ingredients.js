@@ -776,6 +776,7 @@ const INGREDIENTS = {
         ACORN_SQUASH: { name: 'acorn squash', category: INGREDIENT_CATEGORY.PRODUCE },
         APPLES: { name: 'apples', category: INGREDIENT_CATEGORY.PRODUCE },
         APRICOTS: { name: 'apricots', category: INGREDIENT_CATEGORY.PRODUCE },
+        ARTICHOKE: { name: 'artichoke', category: INGREDIENT_CATEGORY.PRODUCE },
         ASIAN_SALAD_KIT: { name: 'asian salad kit', category: INGREDIENT_CATEGORY.PRODUCE },
         ASPARAGUS: { name: 'asparagus', category: INGREDIENT_CATEGORY.PRODUCE },
         AVOCADO: { name: 'avocado', category: INGREDIENT_CATEGORY.PRODUCE },
