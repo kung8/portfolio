@@ -66,7 +66,6 @@
         max-height: calc(100vh - 120px);
         overflow-y: auto;
         scrollbar-width: none;
-        margin-bottom: 120px;
 
         .category-ingredient-container {
             display: flex;
@@ -150,12 +149,11 @@
         align-items: center;
         column-gap: 24px;
         height: 40px;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         width: 100%;
         margin-left: -24px;
         padding: 0 24px;
-        background: $aqua;
 
         span {
             color: $default;
