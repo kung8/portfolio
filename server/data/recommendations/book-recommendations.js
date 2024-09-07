@@ -5,6 +5,61 @@ module.exports = [
     //     source: [""],
     // },
     {
+        title: "Vacationland",
+        author: ["Meg Mitchell Moore"],
+        source: ["Emily Henry (author of Beach Read)"],
+    },
+    {
+        title: "Part of Your World",
+        author: ["Abby Jimenez"],
+        source: ["Emily Henry (author of Beach Read)"],
+    },
+    {
+        title: "This Time Tomorrow",
+        author: ["Emma Straub"],
+        source: ["Emily Henry (author of Beach Read)"],
+    },
+    {
+        title: "The Vibrant Years",
+        author: ["Sonali Dev"],
+        source: ["Emily Henry (author of Beach Read)"],
+    },
+    {
+        title: "Killers of a Certain Age",
+        author: ["Deanna Raybourn"],
+        source: ["Emily Henry (author of Beach Read)"],
+    },
+    {
+        title: "Miss Aldridge Regrets",
+        author: ["Louise Hare"],
+        source: ["Emily Henry (author of Beach Read)"],
+    },
+    {
+        title: "Before I Let Go",
+        author: ["Kennedy Ryan"],
+        source: ["Emily Henry (author of Beach Read)"],
+    },
+    {
+        title: "Something Wilder",
+        author: ["Christina Lauren"],
+        source: ["Emily Henry (author of Beach Read)"],
+    },
+    {
+        title: "The Bodyguard",
+        author: ["Katherine Center"],
+        source: ["Emily Henry (author of Beach Read)"],
+    },
+    {
+        title: "Listening",
+        author: ["Julia Whelan"],
+        source: ["Emily Henry (author of Beach Read)"],
+    },
+    {
+        title: "Drunk on Love",
+        author: ["Jasmine Guillory"],
+        source: ["Emily Henry (author of Beach Read)"],
+    },
+    {
         title: "Fahrenheit 451",
         author: ["Ray Bradbury"],
         source: ["Online"],
@@ -351,7 +406,7 @@ module.exports = [
     },
     {
         title: "Treasure Island",
-        author: ["Rober Louis Stevenson"],
+        author: ["Robert Louis Stevenson"],
         source: ["online"],
     },
     {
@@ -365,7 +420,7 @@ module.exports = [
         source: ["online"],
     },
     {
-        title: "Gullivar's Travels",
+        title: "Gulliver's Travels",
         author: ["Jonathan Swift"],
         source: ["online"],
     },

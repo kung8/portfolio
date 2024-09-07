@@ -19,48 +19,6 @@ module.exports = [
     // },
     // {
     //     date: "",
-    //     title: "Happy Place",
-    //     author: ["Emily Henry"],
-    //     review: [
-    //         ""
-    //     ],
-    //     quotes: [
-    //         {
-    //             text: "His gaze slides down me and back up. 'So you're saying you're slow-release hot.'",
-    //             pages: [36],
-    //             thoughts: "I've never heard it described as slow-release hot. I think it's a cute phrase, someone who isn't right off the bat “hot” but someone once you get to know them you will find them hot. Her statement that triggered this statement was 'I'm not the one their eyes go to first.'",
-    //             context: "Wyndham Connors is picking up a future roommate and mutual friend of friends, Harriet, from the airport. This is their first time meeting."
-    //         },
-    //         {
-    //             text: "Time doesn't move the same way when we're there. Things change, but we stretch and grow and make room for one another. Our love is a place we can always come back to and it will be waiting, the same as it ever was. You belong here.",
-    //             pages: [225],
-    //             thoughts: "We do need to adapt because as another of Emily Henry's books, Book Lovers, she says in there that each of us are different people every day. So we need to make room for the changes in ourselves and of others. We need to create a place of refuge and love to make it feel safe for each other and feel belongingness.",
-    //             context: "Harriet is reminiscing about the proposal and when they celebrate on the engagement in Maine."
-    //         },
-    //         {
-    //             text: "\"We both know that's not true.\" He studies me for a second, brow furrowed. 'Frustrate, maybe. Not annoy.' 'What's the difference?' I ask. His eyes drop to my legs and back up. 'When you're annoyed, you don't want to be around a person.' His chin shifts to the left, not quite a shake of his head. 'I always want to be around you.'",
-    //             pages: [232],
-    //             thoughts: "It's sweet to get to a point in a relationship where you never want to be away from somebody. Over the years I have become more and more of a homebody and introvert, and it will be challenging for me to let people in especially into my routines, my space, etc. for long periods of time. But if I find somebody that I can connect with that would be great. She will probably get tired of me tbh but I guess it's not perfect. I think naturally with different jobs and other circles that we are in will hopefully give us enough distinction and time apart that will not tire ourselves out of seeing each other. Having friends outside of your partner/spouse is probably a good thing too so that you aren't considered this ambiguous blob of a couple and aren't separate entities anymore.",
-    //             context: "Wyn explains to Harriett that he is never annoyed by her. He may be frustrated but doesn't not want to ever be around Harriet."
-    //         },
-    //         {
-    //             text: "What if I'm bad at it? I ask. 'Being a parent.'...'You won't be.'...'Because you're good at loving,' he says. 'And that's all you have to do.'",
-    //             pages: [244],
-    //             thoughts: "Wyn is absolutely in love with Harriet. I want to find somebody that I can feel the same way about as Wyn does to Harriet. It's not all that defines a good parent but it is very important to love your child unconditionally.",
-    //             context: "Wyn affirms to Harriet that she will be a good parent."
-    //         },
-    //         // {
-    //         //     text: "",
-    //         //     pages: [],
-    //         //     thoughts: "",
-    //         //     context: ""
-    //         // },
-    //     ],
-    //     image: "",
-    //     rating: 5,
-    // },
-    // {
-    //     date: "",
     //     title: "Little White Lies",
     //     author: ["Jennifer Lynn Barnes"],
     //     review: [
@@ -77,11 +35,11 @@ module.exports = [
     //     rating: 5,
     // },
     {
-        date: "",
+        date: "9/24",
         title: "Happy Place",
         author: ["Emily Henry"],
         review: [
-            ""
+            "This book has taught me a lot about relationships haha. I think that fighting and conflict resolution is very important. I believe that not all romantic relationships need to avoid separations and divorces, but it's important to resolve what you can and learn how to empathize with your partner. Emily Henry again does such a great job captivating the world in a witty, funny and romantic way. The back and forth of the past and the present isn't everyone's cup of tea, but in this book it was really well done and needed. It kept some suspense and mystery in the book."
         ],
         quotes: [
             {
@@ -93,7 +51,7 @@ module.exports = [
             {
                 text: "He's become my best friend the way the others did: bit by bit, sand passing through an hourglass, so slowly, it's impossible to pin down the moment it happens. When suddenly more of my heart belongs to him than doesn't, and I know I'll never get a single grain back.",
                 pages: [104, 105],
-                thoughts: "",
+                thoughts: "Friends are a necessity in life. It fulfills part of the Maslow's hierarchy of needs of belongingness. And relationships are built over time. There's a lot of giving and taking in relationships. And even though some relationships might not end up the way we want, we can't take back the time we had with them.",
                 context: "Harriet thinks about how she has become friends with Wyn and how she has given him her heart."
             },
             {
@@ -101,6 +59,66 @@ module.exports = [
                 pages: [163],
                 thoughts: "Genius idea to look at life this way. Have something to look forward to. When I set goals for the new year, I know that I won't accomplish all of them, but I know that even if I accomplish one or some of them, I have become better in those areas.",
                 context: "Harriet shares a story when she was 10 years old and how she learned how to make good out of a bad situation."
+            },
+            {
+                text: "Time doesn't move the same way when we're there. Things change, but we stretch and grow and make room for one another. Our love is a place we can always come back to and it will be waiting, the same as it ever was. You belong here.",
+                pages: [225],
+                thoughts: "We do need to adapt because as another of Emily Henry's books, Book Lovers, she says in there that each of us are different people every day. So we need to make room for the changes in ourselves and of others. We need to create a place of refuge and love to make it feel safe for each other and feel belongingness.",
+                context: "Harriet is reminiscing about the proposal and when they celebrate on the engagement in Maine."
+            },
+            {
+                text: "\"We both know that's not true.\" He studies me for a second, brow furrowed. 'Frustrate, maybe. Not annoy.' 'What's the difference?' I ask. His eyes drop to my legs and back up. 'When you're annoyed, you don't want to be around a person.' His chin shifts to the left, not quite a shake of his head. 'I always want to be around you.'",
+                pages: [232],
+                thoughts: "It's sweet to get to a point in a relationship where you never want to be away from somebody. Over the years I have become more and more of a homebody and introvert, and it will be challenging for me to let people in especially into my routines, my space, etc. for long periods of time. But if I find somebody that I can connect with that would be great. She will probably get tired of me tbh but I guess it's not perfect. I think naturally with different jobs and other circles that we are in will hopefully give us enough distinction and time apart that will not tire ourselves out of seeing each other. Having friends outside of your partner/spouse is probably a good thing too so that you aren't considered this ambiguous blob of a couple and aren't separate entities anymore.",
+                context: "Wyn explains to Harriett that he is never annoyed by her. He may be frustrated but doesn't not want to ever be around Harriet."
+            },
+            {
+                text: "What if I'm bad at it? I ask. 'Being a parent.'...'You won't be.'...'Because you're good at loving,' he says. 'And that's all you have to do.'",
+                pages: [244],
+                thoughts: "Wyn is absolutely in love with Harriet. I want to find somebody that I can feel the same way about as Wyn does to Harriet. It's not all that defines a good parent but it is very important to love your child unconditionally.",
+                context: "Wyn affirms to Harriet that she will be a good parent."
+            },
+            {
+                text: "Maybe I used to think there'd be a perfect time or place. But now I think, if you really want to be with someone, you don't wait for things to be perfect.",
+                pages: [253],
+                thoughts: "This is true. Like good old Chandler Bing said, 'I thought that it mattered what I said or where I said it. Then I realized the only thing that matters is that you make me happier than I ever thought I could be.'",
+                context: "Wyn tells Harriet that there doesn't need to be a perfect time or place to propose."
+            },
+            {
+                text: "It's okay to walk away...everyone says Don't go to bed angry, but sometimes a person needs time to think. And if you that, it's okay, but yuo should tell me, because otherwise....the person might assume you're leaving for good.",
+                pages: [316],
+                thoughts: "The misconception of 'Don't go to bed angry' is that you need to resolve the issue before you go to bed. But sometimes you need time to think and reflect on the situation. It's important to communicate that to your partner.",
+                context: "Harriet is learning how normal people fight. Wyn is teaching her how to fight in a healthy way."
+            },
+            {
+                text: "There doesn't need to be a winner and a loser. You just have to care how the other person feels. You have to care more about them than you do about being right.",
+                pages: [316],
+                thoughts: "Fighting is not about winning or losing. It's about finding understanding and bettering the relationship through communicating and sacrificing and changing.",
+                context: "Harriet is learning how normal people fight. Wyn is teaching her how to fight in a healthy way."
+            },
+            {
+                text: "Love means constantly saying you're sorry, and then doing better.",
+                pages: [322],
+                thoughts: "Families and friends fight. And what's a greater thing than just always loving them, is apologizing and forgiving others and moving on with life.",
+                context: "Wyn assures Harriet that their friends will forgive them for everything."
+            },
+            {
+                text: "A happy potter's better for this world than a miserable surgeon.",
+                pages: [347],
+                thoughts: "When I read this I thought it said 'A harry potter's better for this world...' and I laughed. Follow your dreams.",
+                context: "Wyn is trying to convince Harriet to follow her heart. Do what makes her happy and what's right for her not what others expect of her."
+            },
+            {
+                text: "Want is a kind of thief. It's a door in your heart, and once you know it's there, you'll spend your life longing for whatever's behind it.",
+                pages: [364],
+                thoughts: "As soon you realize you are missing something in your life and know what it is, you will always want it.",
+                context: "Harriet is thinking about she wants to be with Wyn. Before she met him, she was content with her life."
+            },
+            {
+                text: "I want my life to be like--like making pottery. I want to enjoy it while it's happening, not just for where it might get me eventually.",
+                pages: [372],
+                thoughts: "It's important to not go into a career just because of the money or the prestige. There is more to life than work.",
+                context: "Harriet tells Wyn that she wants to enjoy her life. She wants to be able to enjoy the journey not just the destination."
             },
         ],
         image: "",
