@@ -80,7 +80,7 @@ const GroceryListItem = ({ checked, index, name, openEditModal, onCheckboxChange
                         <img onClick={openEditModal} src={edit} alt="edit" className="edit-icon" />
                     </div>
                 )}
-                {recipeName && <p className="recipe-name"><span>Needed for</span> {recipeName}</p>}
+                {recipeName && <p className="recipe-name"><span>Needed for</span> "{recipeName}"</p>}
             </div>
         </div>
     )
