@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import edit from '../assets/edit.png';
 
-export const GroceryListItem = ({ checked, name, openEditModal, onCheckboxChange, onEmptyInputChange, onInputChange, recipeName }) => {
+export const GroceryListItem = ({
+    checked,
+    date,
+    name,
+    openEditModal,
+    onCheckboxChange,
+    onEmptyInputChange,
+    onInputChange,
+    recipeName
+}) => {
     const [inputValue, setInputValue] = useState(name);
 
     useEffect(() => {
@@ -46,6 +55,7 @@ export const GroceryListItem = ({ checked, name, openEditModal, onCheckboxChange
                     </div>
                 )}
                 {recipeName && <p className="recipe-name"><span>Needed for</span> "{recipeName}"</p>}
+                {date && <p className="recipe-date"><span>Needed on {date}</span></p>}
             </div>
         </div>
     )

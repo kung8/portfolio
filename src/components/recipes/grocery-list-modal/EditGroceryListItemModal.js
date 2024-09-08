@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import dayjs from 'dayjs';
 import closeBtn from '../../../Assets/x.png';
 import arrow from '../assets/arrow.png';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
-export const EditGroceryListItemModal = ({ 
-    itemToEdit, 
-    setItemToEdit, 
-    originalItemToEdit, 
-    updateItem, 
-    closeEditModal, 
+export const EditGroceryListItemModal = ({
+    itemToEdit,
+    setItemToEdit,
+    originalItemToEdit,
+    updateItem,
+    closeEditModal,
     categories,
     isCategoryDropdownOpen,
     setIsCategoryDropdownOpen
 }) => {
+    const [date, setDate] = useState(originalItemToEdit.date);
+    const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+    const today = dayjs();    
+
+    useEffect(() => {
+        setDate(itemToEdit.date);
+    }, [itemToEdit]);
+
     return (
         <div className="edit-ingredient-modal">
             <div className="modal-content">
@@ -45,6 +56,23 @@ export const EditGroceryListItemModal = ({
                             </ul>
                         </div>
                         <input className="edit-recipe-name-input" placeholder="(Optional) Add what this is needed for..." value={itemToEdit?.recipeName} onChange={(e) => setItemToEdit({ ...itemToEdit, recipeName: e.target.value })} />
+                        <div className="edit-recipe-date-input">
+                            <span className="edit-recipe-date-label" onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? date : '(Optional) Set a due date...'}</span>
+                            {isCalendarOpen && (
+                                <Calendar
+                                    minDate={new Date(today)}
+                                    onChange={(value) => {
+                                        const formattedDate = dayjs(value).format('MMMM D, YYYY');
+                                        setDate(formattedDate);
+                                        setItemToEdit({ ...itemToEdit, date: formattedDate });
+                                        setIsCalendarOpen(false);
+                                    }}
+                                    prev2Label={null}
+                                    next2Label={null}
+                                    value={date}
+                                />
+                            )}
+                        </div>
                     </div>
                 </div>
                 <div className="modal-footer">
@@ -54,7 +82,8 @@ export const EditGroceryListItemModal = ({
                         disabled={(
                             originalItemToEdit.name === itemToEdit.name &&
                             originalItemToEdit.category === itemToEdit.category &&
-                            originalItemToEdit.recipeName === itemToEdit.recipeName
+                            originalItemToEdit.recipeName === itemToEdit.recipeName && 
+                            originalItemToEdit.date === itemToEdit.date
                         ) || !itemToEdit.name
                         }
                         onClick={() => {

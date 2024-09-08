@@ -33,7 +33,9 @@
     z-index: 3;
     left: -100%;
     padding: 24px;
-    transition: display 0.5s ease-in-out, 0.5s ease-in-out;
+    transition:
+        display 0.5s ease-in-out,
+        0.5s ease-in-out;
     display: none;
     &.opened {
         left: 0;
@@ -95,7 +97,7 @@
                 flex-direction: column;
                 row-gap: 6px;
                 width: calc(100% - 28px);
-    
+
                 label {
                     &.checked {
                         color: $default;
@@ -140,6 +142,11 @@
                 color: $white;
                 width: 100%;
                 font-size: 16px;
+            }
+
+            .recipe-date {
+                font-size: 12px;
+                color: $sunshine;
             }
         }
     }
@@ -186,6 +193,7 @@
         .modal-content {
             justify-content: space-between;
             height: 100%;
+            row-gap: 0;
 
             .top-container {
                 display: flex;
@@ -196,7 +204,9 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 16px;
-                .edit-ingredient-input, .edit-recipe-name-input {
+                .edit-ingredient-input,
+                .edit-recipe-name-input, 
+                .edit-recipe-date-input {
                     width: 100%;
                     padding: 8px 12px;
                     outline: none;
@@ -272,6 +282,47 @@
                 height: 19px;
                 cursor: pointer;
                 padding: 1.5px;
+            }
+        }
+
+        .edit-recipe-date-input {
+            position: relative;
+            .edit-recipe-date-label {
+                display: inline-block;
+                width: 100%;
+                cursor: pointer;
+            }
+            .react-calendar {
+                width: 300px;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                .react-calendar__navigation {
+                    height: 24px;
+                    margin-bottom: 0;
+                    button {
+                        font-size: 12px;
+                    }
+                }
+                .react-calendar__viewContainer {
+                    .react-calendar__month-view__weekdays__weekday {
+                        padding: 4px 8px;
+                        abbr {
+                            font-size: 8px;
+                            text-decoration: none;
+                            color: $black;
+                        }
+                    }
+                }
+                .react-calendar__month-view__days__day {
+                    padding: 4px 8px;
+                    &:not(:disabled) {
+                        color: $aqua;
+                    }
+                    abbr {
+                        font-size: 10px;
+                    }
+                }
             }
         }
 

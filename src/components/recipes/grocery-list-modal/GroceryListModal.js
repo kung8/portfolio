@@ -5,7 +5,6 @@ import { EmptyGroceryListItem } from './EmptyGroceryListItem';
 import { GroceryListItem } from './GroceryListItem';
 import { DeleteGroceryListModal } from './DeleteGroceryListModal';
 import { EditGroceryListItemModal } from './EditGroceryListItemModal';
-// import Calendar from 'react-calendar';
 
 export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryList }) => {
     const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
@@ -94,19 +93,17 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                         {displayedIngredientsList.map(([category, ingredients]) => (
                             <div key={category} className="category-ingredient-container">
                                 <h6 className="ingredient-category">{category}</h6>
-                                {ingredients.map((ingredient, index) => {
-                                    return (
-                                        <GroceryListItem
-                                            key={ingredient.name + '-' + index}
-                                            {...{ ...ingredient }}
-                                            onInputChange={(value) => updateItem(ingredient, { name: value })}
-                                            onCheckboxChange={() => updateItem(ingredient, { checked: !ingredient.checked })}
-                                            onCategoryChange={(value) => updateItem(ingredient, { category: value })}
-                                            openEditModal={() => openEditModal(ingredient)}
-                                            onEmptyInputChange={() => removeItem(ingredient.index)}
-                                        />
-                                    )
-                                })}
+                                {ingredients.map((ingredient, index) => (
+                                    <GroceryListItem
+                                        key={ingredient.name + '-' + index}
+                                        {...{ ...ingredient }}
+                                        onInputChange={(value) => updateItem(ingredient, { name: value })}
+                                        onCheckboxChange={() => updateItem(ingredient, { checked: !ingredient.checked })}
+                                        onCategoryChange={(value) => updateItem(ingredient, { category: value })}
+                                        openEditModal={() => openEditModal(ingredient)}
+                                        onEmptyInputChange={() => removeItem(ingredient.index)}
+                                    />
+                                ))}
                             </div>
                         ))}
                     </div>
@@ -116,14 +113,14 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                     </div>
                 </div>
                 {isDeleteModalOpen && (
-                    <DeleteGroceryListModal 
+                    <DeleteGroceryListModal
                         deleteTitle={deleteTitle}
                         closeDeleteModal={closeDeleteModal}
                         handleDelete={handleDelete}
                     />
                 )}
                 {isEditModalOpen && originalItemToEdit && (
-                    <EditGroceryListItemModal 
+                    <EditGroceryListItemModal
                         itemToEdit={itemToEdit}
                         setItemToEdit={setItemToEdit}
                         originalItemToEdit={originalItemToEdit}
