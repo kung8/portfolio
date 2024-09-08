@@ -1,4 +1,6 @@
-const brownies = '../assets/Products/brownies.jpeg';
+const plated = '../assets/Products/brownies-plated.jpeg';
+const pan = '../assets/Products/brownies-pan.jpeg';
+const zoomed = '../assets/Products/brownies-zoomed.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
 const {
     UNSALTED_BUTTER,
@@ -13,7 +15,7 @@ const {
 module.exports = {
     cardName: 'Brownies',
     name: 'Brownies',
-    img: brownies,
+    img: plated,
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
@@ -47,6 +49,6 @@ module.exports = {
         { step: 'Add salt, vanilla, and eggs and mix.', type: SECTIONS.MAIN },
         { step: 'Mix in the flour.', type: SECTIONS.MAIN },
         { step: 'Spread the batter into the baking pan.', type: SECTIONS.MAIN },
-        { step: 'Bake for 30 to 35 minutes or until a toothpick comes out clean.', type: SECTIONS.MAIN },
+        { step: 'Bake for 30 to 35 minutes or until a toothpick comes out clean.', type: SECTIONS.MAIN, img: [pan, zoomed] },
     ]
 };
