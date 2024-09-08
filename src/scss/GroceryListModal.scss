@@ -287,13 +287,23 @@
 
         .edit-recipe-date-input {
             position: relative;
+            .edit-recipe-date-label-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
             .edit-recipe-date-label {
                 display: inline-block;
                 width: 100%;
                 cursor: pointer;
             }
+            .delete-date-btn {
+                height: 14px;
+                cursor: pointer;
+            }
             .react-calendar {
-                width: 300px;
+                width: 350px;
+                max-width: 100%;
                 position: absolute;
                 left: 0;
                 top: 100%;
@@ -315,7 +325,7 @@
                     }
                 }
                 .react-calendar__month-view__days__day {
-                    padding: 4px 8px;
+                    padding: 8px;
                     &:not(:disabled) {
                         color: $aqua;
                     }

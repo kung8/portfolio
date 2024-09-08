@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
-import closeBtn from '../../../Assets/x.png';
+import xBtn from '../../../Assets/x.png';
+import closeBtn from '../../../Assets/close.png';
 import arrow from '../assets/arrow.png';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
@@ -17,7 +18,7 @@ export const EditGroceryListItemModal = ({
 }) => {
     const [date, setDate] = useState(originalItemToEdit.date);
     const [isCalendarOpen, setIsCalendarOpen] = useState(false);
-    const today = dayjs();    
+    const today = dayjs();
 
     useEffect(() => {
         setDate(itemToEdit.date);
@@ -29,7 +30,7 @@ export const EditGroceryListItemModal = ({
                 <div className="top-container">
                     <div className="modal-header">
                         <h3>Update Ingredient</h3>
-                        <img src={closeBtn} alt="close" onClick={closeEditModal} />
+                        <img src={xBtn} alt="close" onClick={closeEditModal} />
                     </div>
                     <div className="modal-body">
                         <input className="edit-ingredient-input" placeholder="Ingredient Name" value={itemToEdit?.name} onChange={(e) => setItemToEdit({ ...itemToEdit, name: e.target.value })} />
@@ -57,7 +58,20 @@ export const EditGroceryListItemModal = ({
                         </div>
                         <input className="edit-recipe-name-input" placeholder="(Optional) Add what this is needed for..." value={itemToEdit?.recipeName} onChange={(e) => setItemToEdit({ ...itemToEdit, recipeName: e.target.value })} />
                         <div className="edit-recipe-date-input">
-                            <span className="edit-recipe-date-label" onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? date : '(Optional) Set a due date...'}</span>
+                            <p className="edit-recipe-date-label-container">
+                                <span className="edit-recipe-date-label" onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? date : '(Optional) Set a due date...'}</span>
+                                {date && (
+                                    <img
+                                        className="delete-date-btn"
+                                        src={closeBtn}
+                                        alt="delete date"
+                                        onClick={() => {
+                                            setDate('');
+                                            setItemToEdit({ ...itemToEdit, date: '' });
+                                        }}
+                                    />
+                                )}
+                            </p>
                             {isCalendarOpen && (
                                 <Calendar
                                     minDate={new Date(today)}
@@ -82,7 +96,7 @@ export const EditGroceryListItemModal = ({
                         disabled={(
                             originalItemToEdit.name === itemToEdit.name &&
                             originalItemToEdit.category === itemToEdit.category &&
-                            originalItemToEdit.recipeName === itemToEdit.recipeName && 
+                            originalItemToEdit.recipeName === itemToEdit.recipeName &&
                             originalItemToEdit.date === itemToEdit.date
                         ) || !itemToEdit.name
                         }
