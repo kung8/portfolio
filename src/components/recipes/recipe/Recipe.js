@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
-import { getAsyncData, useGetData } from '../../hooks';
-import { Loader } from '../Loader';
-import { NonDashboardPage } from '../Page';
-import list from './list.png';
-import { GroceryListModal } from './GroceryListModal';
-import { useGroceryList } from './use-grocery-list';
+import { getAsyncData, useGetData } from '../../../hooks';
+import { Loader } from '../../Loader';
+import { NonDashboardPage } from '../../Page';
+import list from '../assets/list.png';
+import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
+import { useGroceryList } from '../hooks/use-grocery-list';
 
 const formatIngredientItem = (item) => {
     const amount = item.amount ? item.amount + ' ' : '';

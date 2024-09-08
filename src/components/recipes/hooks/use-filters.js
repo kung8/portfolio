@@ -1,4 +1,4 @@
-import { useGetRecipeCategories } from '../../hooks';
+import { useGetRecipeCategories } from '../../../hooks';
 
 export const useFilters = ({ filteredRecipes, selectedFilters }) => {
     const { data: recipeCategories = { CATEGORIES: [], DIET: [], GENRES: [], METHODS: [], PROTEIN: [], TYPES: [] } } = useGetRecipeCategories();

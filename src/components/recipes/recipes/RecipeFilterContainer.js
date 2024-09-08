@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import arrow from './arrow.png';
-import check from './check.png';
-import greenCheck from './green-check.png';
-import partial from './partial.png';
+import arrow from '../assets/arrow.png';
+import check from '../assets/check.png';
+import greenCheck from '../assets/green-check.png';
+import partial from '../assets/partial.png';
 
 export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFilters, setSelectedFilters, shownFilters, setShownFilters }) => {
     const show = shownFilters[type];

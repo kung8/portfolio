@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
-import { useGetData } from '../../hooks';
-import { convertToKebabCase } from '../../utils';
-import { NonDashboardPage } from '../Page';
+import { useGetData } from '../../../hooks';
+import { convertToKebabCase } from '../../../utils';
+import { NonDashboardPage } from '../../Page';
 import { EmptyRecipeContainer } from './EmptyRecipeContainer';
-import { GroceryListModal } from './GroceryListModal';
+import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { LoaderContainer } from './LoaderContainer';
 import { RecipeItem } from './RecipeItem';
 import { FilterContainer, SearchAndFilterContainer } from './SearchAndFilterContainer';
 import { TopArrow } from './TopArrow';
-import { useGroceryList } from './use-grocery-list';
-import { useFilters } from './use-filters';
+import { useGroceryList } from '../hooks/use-grocery-list';
+import { useFilters } from '../hooks/use-filters';
 
 export const initialShownFilters = {
     category: false,

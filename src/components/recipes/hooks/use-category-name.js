@@ -1,4 +1,4 @@
-import { useGetIngredients } from '../../hooks';
+import { useGetIngredients } from '../../../hooks';
 
 export const useCategoryName = () => {
     const { data: ingredients } = useGetIngredients();

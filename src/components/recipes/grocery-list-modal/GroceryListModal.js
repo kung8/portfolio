@@ -1,90 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import closeBtn from '../../Assets/x.png';
-import { useGetIngredientCategories } from '../../hooks';
-import arrow from './arrow.png';
-import edit from './edit.png';
-import { useCategoryName } from './use-category-name';
-
-const EMPTY_GROCERY_ITEM_ID = 'empty-grocery-list-item';
-const GROCERY_ITEM_ID = 'grocery-list-item-';
-
-const EmptyGroceryListItem = ({ setGroceryList }) => {
-    const [inputValue, setInputValue] = useState('');
-    const [checked, setChecked] = useState(false);
-    const { getCategoryName } = useCategoryName();
-
-    return (
-        <div className="grocery-list-item">
-            <input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} />
-            <input
-                id={EMPTY_GROCERY_ITEM_ID}
-                type="text"
-                placeholder="Add item"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                onKeyDown={(e) => {
-                    if (e.key === 'Enter' && inputValue) {
-                        const category = getCategoryName(inputValue);
-                        setGroceryList(prev => [...prev, { name: inputValue, index: prev.length, checked, category }]);
-                        setInputValue('');
-                        setChecked(false);
-                    }
-                }}
-            />
-        </div>
-    )
-}
-
-const GroceryListItem = ({ checked, index, name, openEditModal, onCheckboxChange, onEmptyInputChange, onInputChange, recipeName }) => {
-    const [inputValue, setInputValue] = useState(name);
-
-    useEffect(() => {
-        if (inputValue !== name) {
-            const timeout = setTimeout(() => {
-                onInputChange(inputValue);
-            }, 500);
-
-            return () => clearTimeout(timeout);
-        }
-        // eslint-disable-next-line
-    }, [inputValue]);
-
-    return (
-        <div className="grocery-list-item">
-            <input
-                type="checkbox"
-                checked={checked}
-                onChange={() => onCheckboxChange()}
-            />
-            <div className="grocery-list-item-detail-container">
-                {checked ? (
-                    <div className="grocery-input-container">
-                        <label className={checked ? 'checked' : ''}>{inputValue}</label>
-                        <img onClick={openEditModal} src={edit} alt="edit" className="edit-icon" />
-                    </div>
-                ) : (
-                    <div className="grocery-input-container">
-                        <input
-                            id={GROCERY_ITEM_ID + index}
-                            type="text"
-                            value={inputValue}
-                            onChange={(e) => setInputValue(e.target.value)}
-                            onKeyDown={(e) => {
-                                if (e.key === 'Enter') {
-                                    if (!inputValue) {
-                                        onEmptyInputChange();
-                                    }
-                                }
-                            }}
-                        />
-                        <img onClick={openEditModal} src={edit} alt="edit" className="edit-icon" />
-                    </div>
-                )}
-                {recipeName && <p className="recipe-name"><span>Needed for</span> "{recipeName}"</p>}
-            </div>
-        </div>
-    )
-}
+import React, { useState } from 'react';
+import closeBtn from '../../../Assets/x.png';
+import { useGetIngredientCategories } from '../../../hooks';
+import arrow from '../assets/arrow.png';
+import { EmptyGroceryListItem } from './EmptyGroceryListItem';
+import { GroceryListItem } from './GroceryListItem';
+import { DeleteGroceryListModal } from './DeleteGroceryListModal';
+// import Calendar from 'react-calendar';
 
 export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryList }) => {
     const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
@@ -126,12 +47,6 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
         }
         closeDeleteModal();
     }
-
-    useEffect(() => {
-        if (show && document.getElementById(EMPTY_GROCERY_ITEM_ID)) {
-            document.getElementById(EMPTY_GROCERY_ITEM_ID).focus();
-        }
-    }, [show]);
 
     const deleteTitle = deleteType === 'all' ? 'Are you sure you want to delete all the items?' : 'Are you sure you want to delete all the checked items?'
 
@@ -183,7 +98,7 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                                     return (
                                         <GroceryListItem
                                             key={ingredient.name + '-' + index}
-                                            {...{ ...ingredient, index }}
+                                            {...{ ...ingredient }}
                                             onInputChange={(value) => updateItem(ingredient, { name: value })}
                                             onCheckboxChange={() => updateItem(ingredient, { checked: !ingredient.checked })}
                                             onCategoryChange={(value) => updateItem(ingredient, { category: value })}
@@ -201,18 +116,11 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                     </div>
                 </div>
                 {isDeleteModalOpen && (
-                    <div className="delete-grocery-item-modal">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <h3>{deleteTitle}</h3>
-                                <img src={closeBtn} alt="close" onClick={closeDeleteModal} />
-                            </div>
-                            <div className="modal-footer">
-                                <button className="cancel-btn" onClick={closeDeleteModal}>No</button>
-                                <button className="delete-btn" onClick={handleDelete}>Yes</button>
-                            </div>
-                        </div>
-                    </div>
+                    <DeleteGroceryListModal 
+                        deleteTitle={deleteTitle}
+                        closeDeleteModal={closeDeleteModal}
+                        handleDelete={handleDelete}
+                    />
                 )}
                 {isEditModalOpen && originalItemToEdit && (
                     <div className="edit-ingredient-modal">

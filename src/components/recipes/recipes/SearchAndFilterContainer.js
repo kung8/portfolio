@@ -1,8 +1,8 @@
 import React from 'react';
-import list from './list.png';
+import list from '../assets/list.png';
 import { RecipeFilterContainer } from './RecipeFilterContainer';
 import { initialShownFilters } from './Recipes';
-import { useFilters } from './use-filters';
+import { useFilters } from '../hooks/use-filters';
 
 export const FilterContainer = ({
     filteredRecipes,
