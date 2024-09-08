@@ -1,3 +1,4 @@
+const marinating = '../assets/Products/korean-fried-chicken-marinating.jpeg';
 const dredging = '../assets/Products/korean-fried-chicken-dredging-station.jpeg';
 const oil = '../assets/Products/korean-fried-chicken-frying-in-oil.jpeg';
 const fullSet = '../assets/Products/korean-fried-chicken-full-set.jpeg';
@@ -102,7 +103,7 @@ module.exports = {
         { name: 'paper towels' },
     ],
     directions: [
-        { step: 'In a large bowl, combine the chicken thighs with the garlic, ginger, sea salt, and mirin.', type: SECTIONS.MARINADE },
+        { step: 'In a large bowl, combine the chicken thighs with the garlic, ginger, sea salt, and mirin.', type: SECTIONS.MARINADE, img: marinating },
         { step: 'Let it marinate for at least 1 hour.', type: SECTIONS.MARINADE },
 
         { step: 'In a medium bowl, mix the dry rub ingredients together then coat each chicken thigh.', type: SECTIONS.DRY_RUB },
