@@ -58,7 +58,7 @@
                 .review-header,
                 .recommendation-header {
                     display: flex;
-                    align-items: flex-end;
+                    align-items: center;
                     margin-bottom: 6px;
                     flex-wrap: wrap;
                     justify-content: space-between;
@@ -75,7 +75,9 @@
                     .review-title-and-subtitle-container {
                         display: flex;
                         justify-content: space-between;
+                        align-items: center;
                         column-gap: 6px;
+                        row-gap: 6px;
                         flex-wrap: wrap;
                     }
 
@@ -91,7 +93,6 @@
                     .review-subtitle,
                     .recommendation-subtitle {
                         font-size: 12px;
-                        margin-top: 4px;
                     }
                 }
 
@@ -113,6 +114,11 @@
                     
                     .review-rating {
                         font-size: 24px;
+                    }
+
+                    .review-in-progress {
+                        font-size: 14px;
+                        color: $light;
                     }
 
                     .expand-text {

@@ -1,3 +1,6 @@
+const IN_PROGRESS = "In Progress";
+const NO_RATING = "n/a";
+
 module.exports = [
     // {
     //     date: "",
@@ -17,6 +20,24 @@ module.exports = [
     //     image: "",
     //     rating: 5,
     // },
+    {
+        // date: IN_PROGRESS,
+        title: "Artemis",
+        author: ["Andy Weir"],
+        review: [
+            ""
+        ],
+        quotes: [
+            {
+                text: "People will trust a reliable criminal more readily than a shady businessman.",
+                pages: [42],
+                thoughts: "There's really honor among thieves. You don't want to work with somebody that will sabotage or back stab you.",
+                context: "Jazz is offered a job to smuggle something to the moon."
+            },
+        ],
+        image: "",
+        rating: NO_RATING,
+    },
     // {
     //     date: "",
     //     title: "Little White Lies",
@@ -595,32 +616,32 @@ module.exports = [
         ],
         rating: 3,
     },
-    // {
-    //     date: "1/24",
-    //     incomplete: true,
-    //     title: "The Handmaid's Tale",
-    //     author: ["Margaret Atwood"],
-    //     review: [
-    //         ""
-    //     ],
-    //     quotes: [
-    //         {
-    //             text: "There is more than one kind of freedom, said Aunt Lydia. Freedom to and freedom from. In the days of anarchy, it was freedom to. Now you are being given freedom from. Don't underrate it.",
-    //             pages: [24],
-    //             thoughts: "It's true that one's man's freedom could be another person's cage. In this point of the book, the main character describes her past as she's living and having to deal with real world problems like potentially get raped, mugged, attacked, harassed, etc where she was not pretty much a slave—and then on the flip side as a slave she doesn't have to deal with such things. She's now property but doesn't have to deal with it or at least to that extent."
-    //         },
-    //         {
-    //             text: "They seemed to be able to choose. We seemed to be able to choose, then. We were a society dying, said Aunt Lydia, of too much choice.",
-    //             pages: [25],
-    //             thoughts: "Interesting to think society given too many choices is a curse too. Too many options can cause us to be overwhelmed."
-    //         }, {
-    //             text: "Then I think: I used to dress like that. That was freedom. Westernized, they used to call it.",
-    //             pages: [28],
-    //             thoughts: "Having the freedom to choose what you wear is a freedom that we take for granted. It's interesting to think about how we dress and how we present ourselves to the world. The things that we wear can say a lot about where we are from."
-    //         }
-    //     ],
-    //     rating: 'n/a',
-    // },
+    {
+        // date: "1/24",
+        incomplete: true,
+        title: "The Handmaid's Tale",
+        author: ["Margaret Atwood"],
+        review: [
+            ""
+        ],
+        quotes: [
+            {
+                text: "There is more than one kind of freedom, said Aunt Lydia. Freedom to and freedom from. In the days of anarchy, it was freedom to. Now you are being given freedom from. Don't underrate it.",
+                pages: [24],
+                thoughts: "It's true that one's man's freedom could be another person's cage. In this point of the book, the main character describes her past as she's living and having to deal with real world problems like potentially get raped, mugged, attacked, harassed, etc where she was not pretty much a slave—and then on the flip side as a slave she doesn't have to deal with such things. She's now property but doesn't have to deal with it or at least to that extent."
+            },
+            {
+                text: "They seemed to be able to choose. We seemed to be able to choose, then. We were a society dying, said Aunt Lydia, of too much choice.",
+                pages: [25],
+                thoughts: "Interesting to think society given too many choices is a curse too. Too many options can cause us to be overwhelmed."
+            }, {
+                text: "Then I think: I used to dress like that. That was freedom. Westernized, they used to call it.",
+                pages: [28],
+                thoughts: "Having the freedom to choose what you wear is a freedom that we take for granted. It's interesting to think about how we dress and how we present ourselves to the world. The things that we wear can say a lot about where we are from."
+            }
+        ],
+        rating: NO_RATING,
+    },
     {
         date: "1/24",
         title: "The Christmas Murder Game",

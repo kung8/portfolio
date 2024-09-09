@@ -37,7 +37,15 @@ const Rating = ({ rating }) => {
     const { expanded, hasExpandedValue, setExpanded } = useContext(ReviewContext);
     return (
         <div className="rating-container">
-            <p className="review-rating">{rating === "n/a" ? "N/A" : `${rating} / 5`}</p>
+            {rating === "n/a" ? (
+                <p className="review-in-progress">
+                    Review In Progress...
+                </p>
+            ) : (
+                <p className="review-rating">
+                    {`${rating} / 5`}
+                </p>
+            )}
             {hasExpandedValue && (
                 <span className="expand-text" onClick={() => setExpanded(!expanded)}>{expanded ? 'Collapse' : 'Expand'}</span>
             )}
