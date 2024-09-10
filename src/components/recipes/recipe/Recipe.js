@@ -6,6 +6,7 @@ import { NonDashboardPage } from '../../Page';
 import list from '../assets/list.png';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { useGroceryList } from '../hooks/use-grocery-list';
+import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 
 const formatIngredientItem = (item) => {
     const amount = item.amount ? item.amount + ' ' : '';
@@ -411,6 +412,10 @@ export const Recipe = ({ match }) => {
                 <div className="loader-container">
                     <Loader />
                 </div>
+            )}
+
+            {item && isLoaded && (
+                <EmailRecipe />
             )}
 
             {showGroceryList && (

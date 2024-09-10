@@ -11,6 +11,7 @@ import { FilterContainer, SearchAndFilterContainer } from './SearchAndFilterCont
 import { TopArrow } from './TopArrow';
 import { useGroceryList } from '../hooks/use-grocery-list';
 import { useFilters } from '../hooks/use-filters';
+import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 
 export const initialShownFilters = {
     category: false,
@@ -145,6 +146,10 @@ export const Recipes = ({ history }) => {
                     </>
                 ) : <EmptyRecipeContainer />
             ) : <LoaderContainer />}
+
+            {isLoaded && (
+                <EmailRecipe />
+            )}
 
             {showArrow && <TopArrow />}
 
