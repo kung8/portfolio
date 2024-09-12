@@ -18,7 +18,7 @@ module.exports = {
     websites: [],
     separated: false,
     ingredients: [
-        { name: '', amount: '', additionalDetails: '', section: '' },
+        { ...GENRES, amount: '', additionalDetails: '', section: '' },
     ],
     appliances: [
         { name: '' },

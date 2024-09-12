@@ -1,4 +1,5 @@
 const americanOmelette = require("./recipes/american-omelette");
+const antsOnALog = require("./recipes/ants-on-a-log");
 const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
 const bakedChicken = require("./recipes/baked-chicken");
 const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
@@ -202,6 +203,7 @@ const recipes = [
     wrap,
     parfait,
     smoothie,
+    antsOnALog,
     bananaBread,
     cheesecake,
     peachCobbler,

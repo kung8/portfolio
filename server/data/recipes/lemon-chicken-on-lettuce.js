@@ -1,6 +1,8 @@
 const cooked = '../assets/Products/lemon-chicken-on-lettuce-cooked.jpeg';
 const frying = '../assets/Products/lemon-chicken-on-lettuce-frying-chicken.jpeg';
 const partially = '../assets/Products/lemon-chicken-on-lettuce-partially-cooked.jpeg';
+const rice = '../assets/Products/lemon-chicken-on-lettuce-plated-with-rice.jpeg';
+const zoomed = '../assets/Products/lemon-chicken-on-lettuce-plated-zoomed.jpeg';
 const plated = '../assets/Products/lemon-chicken-on-lettuce-plated.jpeg';
 const raw = '../assets/Products/lemon-chicken-on-lettuce-raw-chicken.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
@@ -19,7 +21,7 @@ const {
 module.exports = {
     cardName: 'Lettuce Chicken',
     name: 'Lemon Chicken on Lettuce',
-    img: plated,
+    img: zoomed,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -55,6 +57,6 @@ module.exports = {
         { step: 'Season the chicken with salt and pepper.', type: SECTIONS.MAIN },
         { step: 'Add soy sauce, water, lemon juice and cornstarch to the chicken.', type: SECTIONS.MAIN, img: cooked },
         { step: 'The cornstarch should thicken the sauce slightly. Add more cornstarch to continuing thickening as preferred.', type: SECTIONS.MAIN },
-        { step: 'Serve the lemon chicken over leaves of lettuce with a side of rice.', type: SECTIONS.MAIN },
+        { step: 'Serve the lemon chicken over leaves of lettuce with a side of rice.', type: SECTIONS.MAIN, img: [plated, rice] },
     ]
 };
