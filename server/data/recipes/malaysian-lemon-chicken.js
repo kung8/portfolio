@@ -44,7 +44,7 @@ module.exports = {
         { ...WARM_WATER, amount: '25 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...CORNSTARCH, amount: '5 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SALT, amount: '5 pinches', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
-        { ...SESAME_SEEDS, amount: '2 1/2 tsp', additionalDetails: 'to top', section: SECTIONS.TOPPINGS },
+        { ...SESAME_SEEDS, amount: '2 1/2 tsp', additionalDetails: 'topping', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

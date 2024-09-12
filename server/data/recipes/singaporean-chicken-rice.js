@@ -25,7 +25,6 @@ const {
     ROMA_TOMATO,
 } = require('./ingredients');
 
-const CHICKEN = 'Chicken';
 const CHILI_SAUCE = 'Chili Sauce';
 
 module.exports = {
@@ -45,9 +44,9 @@ module.exports = {
     websites: [],
     separated: true,
     ingredients: [
-        { ...CHICKEN_THIGH, amount: '1 lb', additionalDetails: 'bone-in, skin on', section: CHICKEN },
-        { ...SESAME_OIL, amount: '2 tsp', additionalDetails: '', section: CHICKEN },
-        { ...SALT, amount: '1/4 tsp', additionalDetails: '', section: CHICKEN },
+        { ...CHICKEN_THIGH, amount: '1 lb', additionalDetails: 'bone-in, skin on', section: SECTIONS.CHICKEN },
+        { ...SESAME_OIL, amount: '2 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...SALT, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...JASMINE_RICE, amount: '2 c', additionalDetails: '', section: SECTIONS.RICE },
         { ...GARLIC, amount: '6', additionalDetails: 'minced', section: SECTIONS.RICE },
         { ...GINGER, amount: '1/2 inch', additionalDetails: 'minced', section: SECTIONS.RICE },
@@ -73,7 +72,7 @@ module.exports = {
         { name: 'knife' },
     ],
     directions: [
-        { step: 'Marinade the chicken thigh with salt and sesame oil.', type: CHICKEN },
+        { step: 'Marinade the chicken thigh with salt and sesame oil.', type: SECTIONS.CHICKEN },
         { step: 'Wash the rice.', type: SECTIONS.RICE },
         { step: 'Prep the garlic, ginger, and green onion.', type: SECTIONS.RICE, img: aromatics },
         { step: 'Place the washed rice, garlic, ginger, green onion, chicken broth, and turmeric in a pot.', type: SECTIONS.RICE, img: broth },

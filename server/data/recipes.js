@@ -21,6 +21,7 @@ const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 const cheeseballs = require("./recipes/cheeseballs");
 const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
 const chickenAlfredo = require("./recipes/chicken-alfredo");
+const chickenBiryani = require("./recipes/chicken-biryani");
 const chickenCordonBleu = require("./recipes/chicken-cordon-bleu");
 const chickenKebab = require("./recipes/chicken-kebabs");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
@@ -114,6 +115,7 @@ const wrap = require("./recipes/wrap");
 const recipes = [
     padThai,
     vietnamesePho,
+    chickenBiryani,
     indianButterChicken,
     sushi,
     japaneseChickenKatsu,

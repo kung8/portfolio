@@ -16,7 +16,6 @@ const sauce = '../assets/Products/pad-see-ew-sauce.jpeg';
 const vinegar = '../assets/Products/pad-see-ew-thai-chili-vinegar.jpeg';
 const veggies = '../assets/Products/pad-see-ew-veggies.jpeg';
 
-const CHICKEN = 'Chicken';
 const THAI_CHILI_PEPPER = 'Thai Chili Pepper';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
@@ -60,11 +59,11 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHICKEN_THIGH, amount: '1/2 lb', additionalDetails: 'cut into 2 inches', section: CHICKEN },
-        { ...LIGHT_SOY_SAUCE, amount: '1 tsp', additionalDetails: '', section: CHICKEN },
-        { ...OYSTER_SAUCE, amount: '1 tsp', additionalDetails: '', section: CHICKEN },
-        { ...VEGETABLE_OIL, amount: '1 tsp', additionalDetails: '', section: CHICKEN },
-        { ...CORNSTARCH, amount: '1 tsp', additionalDetails: '', section: CHICKEN },
+        { ...CHICKEN_THIGH, amount: '1/2 lb', additionalDetails: 'cut into 2 inches', section: SECTIONS.CHICKEN },
+        { ...LIGHT_SOY_SAUCE, amount: '1 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...OYSTER_SAUCE, amount: '1 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...VEGETABLE_OIL, amount: '1 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CORNSTARCH, amount: '1 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
 
         { ...EGGS, amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
         { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },

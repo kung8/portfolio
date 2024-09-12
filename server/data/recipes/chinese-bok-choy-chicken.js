@@ -24,8 +24,6 @@ const {
     UNSALTED_BUTTER,
 } = require('./ingredients');
 
-const CHICKEN = 'Chicken';
-
 module.exports = {
     cardName: 'Bok Choy Chicken',
     name: 'Bok Choy Chicken',
@@ -41,8 +39,8 @@ module.exports = {
     cookTime: '40 m',
     separated: true,
     ingredients: [
-        { ...CHICKEN_BREAST, amount: '2', additionalDetails: '', section: CHICKEN },
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: CHICKEN },
+        { ...CHICKEN_BREAST, amount: '2', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...BABY_BOK_CHOY, amount: '1 lb', additionalDetails: '', section: SECTIONS.MAIN },
         { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
@@ -61,12 +59,12 @@ module.exports = {
         { name: 'colander' },
     ],
     directions: [
-        { step: 'Preheat the oven to 375ºF.', type: CHICKEN },
-        { step: 'Generously season the chicken breast with salt and pepper.', type: CHICKEN, img: rawChicken },
-        { step: 'Over medium heat, melt butter in an oven-safe pan or pot.', type: CHICKEN, img: butter },
-        { step: 'Add the chicken and cook until each side is golden brown (about 4 to 6 minutes each side)', type: CHICKEN, img: cookingChicken },
-        { step: 'Place the pot with chicken in the oven and roast until the chicken is cooked all the way through (about 15 to 25 minutes, depending on the chicken thickness and the oven).', type: CHICKEN },
-        { step: 'Remove from the oven and transfer the chicken to a cutting board. Cut the chicken into slices and cover with tin-foil to keep warm.', type: CHICKEN },
+        { step: 'Preheat the oven to 375ºF.', type: SECTIONS.CHICKEN },
+        { step: 'Generously season the chicken breast with salt and pepper.', type: SECTIONS.CHICKEN, img: rawChicken },
+        { step: 'Over medium heat, melt butter in an oven-safe pan or pot.', type: SECTIONS.CHICKEN, img: butter },
+        { step: 'Add the chicken and cook until each side is golden brown (about 4 to 6 minutes each side)', type: SECTIONS.CHICKEN, img: cookingChicken },
+        { step: 'Place the pot with chicken in the oven and roast until the chicken is cooked all the way through (about 15 to 25 minutes, depending on the chicken thickness and the oven).', type: SECTIONS.CHICKEN },
+        { step: 'Remove from the oven and transfer the chicken to a cutting board. Cut the chicken into slices and cover with tin-foil to keep warm.', type: SECTIONS.CHICKEN },
         { step: 'Cut the ends of the baby bok choy so that each leaf is free and wash carefully to clean each leaf.', type: SECTIONS.MAIN, img: cut },
         { step: 'While the chicken is roasting in the oven for the last couple of minutes, boil a pot of water over medium-high heat.', type: SECTIONS.MAIN },
         { step: 'Blanch your bok choy by placing it the boiling water for 3 to 4 minutes. This should only soften the vegetables.', type: SECTIONS.MAIN, img: blanched },

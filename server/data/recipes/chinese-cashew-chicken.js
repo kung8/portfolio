@@ -30,8 +30,6 @@ const {
     BLACK_PEPPER,
 } = require('./ingredients');
 
-const CHICKEN = 'Chicken';
-
 module.exports = {
     cardName: 'Cashew Chicken',
     name: 'Chinese Cashew Chicken',
@@ -56,10 +54,10 @@ module.exports = {
         { ...RICE_WINE_VINEGAR, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...ASIAN_CHILI_GARLIC_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...GINGER_POWDER, amount: '3/4 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '1.5 lb', additionalDetails: '1 inch cubes', section: CHICKEN },
-        { ...CORNSTARCH, amount: '3 Tbsp', additionalDetails: '', section: CHICKEN },
-        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: CHICKEN },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', additionalDetails: '', section: CHICKEN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '1.5 lb', additionalDetails: '1 inch cubes', section: SECTIONS.CHICKEN },
+        { ...CORNSTARCH, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...BLACK_PEPPER, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...SESAME_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...BROCCOLI, amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
@@ -79,10 +77,10 @@ module.exports = {
     ],
     directions: [
         { step: 'In a medium bowl, combine the sauce ingredients. Mix well.', type: SECTIONS.SAUCE, img: sauce },
-        { step: 'In a large bowl, combine diced chicken, salt, pepper and cornstarch. Mix well until chicken is well coated.', type: CHICKEN, img: raw },
-        { step: 'Over medium-high heat, add the combination of oils in a wok.', type: CHICKEN, img: oils },
-        { step: 'Add the chicken and cook until the chicken is about 80% cooked through (about 3 to 4 minutes on each side).', type: CHICKEN, img: cooking },
-        { step: 'Remove chicken from the wok and transfer to a clean large bowl.', type: CHICKEN, img: eighty },
+        { step: 'In a large bowl, combine diced chicken, salt, pepper and cornstarch. Mix well until chicken is well coated.', type: SECTIONS.CHICKEN, img: raw },
+        { step: 'Over medium-high heat, add the combination of oils in a wok.', type: SECTIONS.CHICKEN, img: oils },
+        { step: 'Add the chicken and cook until the chicken is about 80% cooked through (about 3 to 4 minutes on each side).', type: SECTIONS.CHICKEN, img: cooking },
+        { step: 'Remove chicken from the wok and transfer to a clean large bowl.', type: SECTIONS.CHICKEN, img: eighty },
         { step: 'Add the broccoli, bell peppers, frozen edamame, and garlic to the wok. Cook until the vegetables are tender (about 3 to 4 minutes).', type: SECTIONS.MAIN, img: veggies },
         { step: 'Add the cashews. Stir until mixed.', type: SECTIONS.MAIN, img: cashews },
         { step: 'Re-add the chicken. Stir until mixed and chicken is cooked through.', type: SECTIONS.MAIN, img: oneHundred },

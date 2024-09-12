@@ -105,8 +105,11 @@ const SECTIONS = {
     MAIN: 'Main',
     MARINADE: 'Marinade',
     SAUCE: 'Sauce',
+    BROTH: 'Broth',
     TOPPINGS: 'Toppings',
     RICE: 'Rice',
+    NOODLES: 'Noodles',
+    CHICKEN: 'Chicken',
     FILLING: 'Filling',
     DOUGH: 'Dough',
     CRUST: 'Crust',
@@ -117,6 +120,7 @@ const SECTIONS = {
     SERVE: 'Serve',
     SOUP: 'Soup',
     MEAT: 'Meat',
+    EGGS: 'Eggs',
 };
 
 const TYPES = {
