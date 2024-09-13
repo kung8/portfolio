@@ -64,6 +64,7 @@ const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
 const koreanFriedChicken = require("./recipes/korean-fried-chicken");
 const khmerRedCurry = require("./recipes/khmer-red-curry");
 const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
+const lemonChickenRamen = require("./recipes/lemon-chicken-ramen");
 const macaroniSalad = require("./recipes/macaroni-salad");
 const malaysianBlackPepperChicken = require("./recipes/malaysian-black-pepper-chicken");
 const malaysianLemonChicken = require("./recipes/malaysian-lemon-chicken");
@@ -136,6 +137,7 @@ const recipes = [
     cilantroLimeChicken,
     lemonChickenOnLettuce,
     pepperSteak,
+    lemonChickenRamen,
     chickenRamen,
     bibimbap,
     hospitalityChicken,

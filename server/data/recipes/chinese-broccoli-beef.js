@@ -36,7 +36,6 @@ const BROCCOLI_SECTION = 'Broccoli';
 module.exports = {
     cardName: 'Broccoli Beef',
     name: 'Chinese Broccoli Beef',
-    recipeCredit: 'Leah Cohen',
     img: cookedZoomed,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -47,7 +46,9 @@ module.exports = {
     yields: '4 servings',
     prepTime: '10 m',
     cookTime: '30 m',
-    websites: [],
+    websites: [
+        "https://www.instagram.com/leahscohen/reel/C1a15_1OgWY/"
+    ],
     separated: true,
     ingredients: [
         { ...BEEF, amount: '1 lb', additionalDetails: 'sliced', section: BEEF_SECTION },

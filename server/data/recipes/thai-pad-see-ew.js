@@ -42,7 +42,6 @@ const {
 module.exports = {
     cardName: 'Pad See Ew',
     name: 'Thai Pad See Ew',
-    recipeCredit: 'Derek K Chen',
     img: platedZoomed,
     available: true,
     recommended: true,
