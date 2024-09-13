@@ -53,13 +53,13 @@ export const AddToGroceryListModal = ({
                 <div className="modal-footer">
                     <button className="cancel-btn" onClick={closeModal}>Cancel</button>
                     <button 
-                        className="save-btn"
+                        className="add-btn"
                         onClick={() => {
                             onAdd(date);
                             closeModal();
                         }}
                     >
-                        Save
+                        Add
                     </button>
                 </div>
             </div>
