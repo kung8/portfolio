@@ -7,6 +7,7 @@ import list from '../assets/list.png';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { useGroceryList } from '../hooks/use-grocery-list';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
+import { AddToGroceryListModal } from './AddToGroceryListModal';
 
 const formatIngredientItem = (item) => {
     const amount = item.amount ? item.amount + ' ' : '';
@@ -218,7 +219,44 @@ export const Recipe = ({ match }) => {
         </>
     ) : null;
 
-    const { show: showGroceryList, setShow: setShowGroceryList, handleClose, handleOpen, groceryList, setGroceryList } = useGroceryList();
+    const { show: showGroceryList, setShow: setShowGroceryList, handleClose: closeGroceryListModal, handleOpen: openGroceryListModal, groceryList, setGroceryList } = useGroceryList();
+
+    const [isAddToGroceryListModalOpen, setIsAddToGroceryListModalOpen] = useState(false);
+
+    const handleAddToGroceryList = async (date) => {
+        const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {
+            if (item.linkId) {
+                const response = await getAsyncData('recipes', item.linkId);
+                return response?.data?.[0]?.ingredients?.map((ingredient, index) => getIngredientData(response.data[0].name, ingredient, index + item.index));
+            }
+            return { ...item, checked: false, date };
+        })];
+        Promise.all(newIngredientsToAdd).then((newIngredientsToAdd) => {
+            setGroceryList(newIngredientsToAdd.flat());
+            openGroceryListModal();
+            setSelectedIngredients([]);
+        });
+    }
+
+    const openAddToGroceryListModal = () => setIsAddToGroceryListModalOpen(true);
+    const closeAddToGroceryListModal = () => setIsAddToGroceryListModalOpen(false);
+    const [previousScrollPosition, setPreviousScrollPosition] = useState(0);
+
+    useEffect(() => {
+        const rootId = document.getElementById('root');
+        if (isAddToGroceryListModalOpen) {
+            setPreviousScrollPosition(window.scrollY);
+            rootId.style.overflowY = 'hidden';
+            rootId.style.height = '100vh';
+        } else {
+            rootId.style.overflowY = '';
+            rootId.style.height = '';
+            window.scrollTo({ top: previousScrollPosition, behavior: 'smooth' });
+            setTimeout(() => {
+                setPreviousScrollPosition(0);
+            }, 50);
+        }
+    }, [isAddToGroceryListModalOpen]);
 
     return (
         <NonDashboardPage mainClassName={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
@@ -229,7 +267,7 @@ export const Recipe = ({ match }) => {
                 customTitle={(
                     <div className="custom-heading-wrapper">
                         <h1 className="heading">{item?.name ?? ''}</h1>
-                        <img src={list} alt="list" className="list-img" onClick={showGroceryList ? handleClose : handleOpen} />
+                        <img src={list} alt="list" className="list-img" onClick={showGroceryList ? closeGroceryListModal : openGroceryListModal} />
                     </div>
                 )}
             >
@@ -297,20 +335,7 @@ export const Recipe = ({ match }) => {
                             </span>
                             <span
                                 className={`add-to-list-button ${selectedIngredients.length > 0 ? 'active' : ''}`}
-                                onClick={async () => {
-                                    const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {
-                                        if (item.linkId) {
-                                            const response = await getAsyncData('recipes', item.linkId);
-                                            return response?.data?.[0]?.ingredients?.map((ingredient, index) => getIngredientData(response.data[0].name, ingredient, index + item.index));
-                                        }
-                                        return { ...item, checked: false };
-                                    })];
-                                    Promise.all(newIngredientsToAdd).then((newIngredientsToAdd) => {
-                                        setGroceryList(newIngredientsToAdd.flat());
-                                        handleOpen();
-                                        setSelectedIngredients([]);
-                                    });
-                                }}
+                                onClick={openAddToGroceryListModal}
                             >
                                 Add to List
                             </span>
@@ -419,7 +444,12 @@ export const Recipe = ({ match }) => {
             )}
 
             {showGroceryList && (
-                <GroceryListModal show={showGroceryList} setShow={setShowGroceryList} handleClose={handleClose} groceryList={groceryList} setGroceryList={setGroceryList} />
+                <GroceryListModal show={showGroceryList} setShow={setShowGroceryList} handleClose={closeGroceryListModal} groceryList={groceryList} setGroceryList={setGroceryList} />
+            )}
+
+            <div className={`overlay ${isAddToGroceryListModalOpen ? 'opened' : ''}`} onClick={closeAddToGroceryListModal} />
+            {isAddToGroceryListModalOpen && (
+                <AddToGroceryListModal closeModal={closeAddToGroceryListModal} onAdd={handleAddToGroceryList} />
             )}
         </NonDashboardPage>
     )
