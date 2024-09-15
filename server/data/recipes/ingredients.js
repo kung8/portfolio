@@ -1,7 +1,5 @@
 const INGREDIENT_CATEGORY = require('./ingredient-categories');
 
-// get nutritional facts per 100 grams
-
 const INGREDIENTS = {
     BABY: {},
     BAKING: {
