@@ -37,6 +37,7 @@ module.exports = {
     img: clean,
     recipeCredit: 'Jon Browne',
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.INDIAN],
     method: [METHODS.BOIL, METHODS.SAUTE, METHODS.STEAM],
