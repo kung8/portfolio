@@ -1,4 +1,30 @@
-const example = '../assets/Products/example.jpeg';
+const aromatics = '../assets/Products/chicken-biryani-aromatics.jpeg';
+const boiled = '../assets/Products/chicken-biryani-boiled-rice.jpeg';
+const boiling = '../assets/Products/chicken-biryani-boiling-rice.jpeg';
+const chickenMarinade = '../assets/Products/chicken-biryani-chicken-in-marinade.jpeg';
+const cooking = '../assets/Products/chicken-biryani-cooking-chicken.jpeg';
+const drained = '../assets/Products/chicken-biryani-drained-rice.jpeg';
+const flipped = '../assets/Products/chicken-biryani-flipped-chicken.jpeg';
+const layeredGhee = '../assets/Products/chicken-biryani-layered-ghee.jpeg';
+const layeredRice = '../assets/Products/chicken-biryani-layered-rice.jpeg';
+const layeredSaffron = '../assets/Products/chicken-biryani-layered-saffron.jpeg';
+const layeredVeggies = '../assets/Products/chicken-biryani-layered-veggies.jpeg';
+const marinade = '../assets/Products/chicken-biryani-marinade.jpeg';
+const marinating = '../assets/Products/chicken-biryani-marinating-chicken.jpeg';
+const partially = '../assets/Products/chicken-biryani-partially-cooked-chicken.jpeg';
+const clean = '../assets/Products/chicken-biryani-plated-clean.jpeg';
+const side = '../assets/Products/chicken-biryani-plated-side.jpeg';
+const zoomed = '../assets/Products/chicken-biryani-plated-zoomed.jpeg';
+const plated = '../assets/Products/chicken-biryani-plated.jpeg';
+const onions = '../assets/Products/chicken-biryani-raw-onions.jpeg';
+const saffron = '../assets/Products/chicken-biryani-saffron.jpeg';
+const sauteed = '../assets/Products/chicken-biryani-sauteed-onions.jpeg';
+const sauteing = '../assets/Products/chicken-biryani-sauteing-onions.jpeg';
+const soakingAromatics = '../assets/Products/chicken-biryani-soaking-aromatics.jpeg';
+const soakingSaffron = '../assets/Products/chicken-biryani-soaking-saffron.jpeg';
+const spiceInPot = '../assets/Products/chicken-biryani-spice-marinade-in-pot.jpeg';
+const spice = '../assets/Products/chicken-biryani-spice-marinade.jpeg';
+const workstation = '../assets/Products/chicken-biryani-workstation.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { CARDAMOM, CHICKEN_THIGH, YOGURT, COLD_WATER, VEGETABLE_OIL, GARLIC, GINGER, TURMERIC, CINNAMON, CAYENNE_PEPPER, GARAM_MASALA, CORIANDER, CUMIN, PAPRIKA, SALT, CLOVES, BAY_LEAVES, STAR_ANISE, BASMATI_RICE, CARDAMOM_PODS, MEDIUM_YELLOW_ONION, SAFFRON_THREADS, WARM_WATER, CILANTRO, GHEE } = require('./ingredients');
 
@@ -8,7 +34,7 @@ const SAFFRON_WATER = 'Saffron Water';
 module.exports = {
     cardName: 'Chicken Biryani',
     name: 'Chicken Biryani',
-    // img: '',
+    img: clean,
     recipeCredit: 'Jon Browne',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -71,29 +97,29 @@ module.exports = {
         { name: 'sauce pan' },
     ],
     directions: [
-        { step: 'In a large pot, mix the marinade ingredients.', type: SECTIONS.CHICKEN },
-        { step: 'Add chicken to the marinade and coat the chicken. Marinade for at least 20 minutes to overnight.', type: SECTIONS.CHICKEN },
+        { step: 'In a large pot, mix the marinade ingredients.', type: SECTIONS.CHICKEN, img: [spice, spiceInPot, marinade] },
+        { step: 'Add chicken to the marinade and coat the chicken. Marinade for at least 20 minutes to overnight.', type: SECTIONS.CHICKEN, img: [chickenMarinade, marinating] },
         { step: 'Over medium-high heat, bring 3 liters of water to boil.', type: SECTIONS.RICE },
-        { step: 'Add salt and whole spices to the water.', type: SECTIONS.RICE },
-        { step: 'Add rice and bring to a boil.', type: SECTIONS.RICE },
+        { step: 'Add salt and whole spices to the water.', type: SECTIONS.RICE, img: [aromatics, soakingAromatics] },
+        { step: 'Add rice and bring to a boil.', type: SECTIONS.RICE, img: [boiling, boiled] },
         { step: 'Cook until rice is al dente (about 4 minutes).', type: SECTIONS.RICE },
-        { step: 'Drain immediately and set aside. Note that the rice will be a little salty at this point but will balance out later on.', type: SECTIONS.RICE },
+        { step: 'Drain immediately and set aside. Note that the rice will be a little salty at this point but will balance out later on.', type: SECTIONS.RICE, img: drained },
         { step: 'Line a plate with paper towels.', type: CRISPY_ONION },
         { step: 'Over medium-high heat, heat oil in a saucepan.', type: CRISPY_ONION },
-        { step: 'Add onion and cook until golden brown (don\'t burn or it will be bitter). Cook in batches as needed.', type: CRISPY_ONION },
+        { step: 'Add onion and cook until golden brown (don\'t burn or it will be bitter). Cook in batches as needed.', type: CRISPY_ONION, img: [onions, sauteing, sauteed] },
         { step: 'Place the onions on the paper towel lined plate to drain off some of the oil.', type: CRISPY_ONION },
-        { step: 'In a bowl, soak the saffron threads in the warm water.', type: SAFFRON_WATER },
-        { step: 'Over medium heat, cover with lid and cook the pot of marinading chicken for 5 minutes.', type: SECTIONS.MAIN },
-        { step: 'Uncover and cook for 5 minutes, turning chicken twice.', type: SECTIONS.MAIN },
+        { step: 'In a bowl, soak the saffron threads in the warm water.', type: SAFFRON_WATER, img: [saffron, soakingSaffron] },
+        { step: 'Over medium heat, cover with lid and cook the pot of marinading chicken for 5 minutes.', type: SECTIONS.MAIN, img: [cooking, workstation] },
+        { step: 'Uncover and cook for 5 minutes, turning chicken twice.', type: SECTIONS.MAIN, img: partially },
         { step: 'Remove from heat.', type: SECTIONS.MAIN },
-        { step: 'Arrange the chicken in the pot with the skin side down.', type: SECTIONS.MAIN },
-        { step: 'Add half of the sauteed onions and half of the cilantro.', type: SECTIONS.MAIN },
-        { step: 'Add the cooked rice and gently flatten.', type: SECTIONS.MAIN },
-        { step: 'Top with saffron.', type: SECTIONS.MAIN },
-        { step: 'Drizzle with ghee.', type: SECTIONS.MAIN },
+        { step: 'Arrange the chicken in the pot with the skin side down.', type: SECTIONS.MAIN, img: flipped },
+        { step: 'Add half of the sauteed onions and half of the cilantro.', type: SECTIONS.MAIN, img: layeredVeggies },
+        { step: 'Add the cooked rice and gently flatten.', type: SECTIONS.MAIN, img: layeredRice },
+        { step: 'Top with saffron.', type: SECTIONS.MAIN, img: layeredSaffron },
+        { step: 'Drizzle with ghee.', type: SECTIONS.MAIN, img: layeredGhee },
         { step: 'Cover and return to stove over medium heat.', type: SECTIONS.MAIN },
         { step: 'Once you see steam, turn down the heat to low and cook for 25 minutes.', type: SECTIONS.MAIN },
         { step: 'Remove from heat and let it rest for 10 minutes with the lid on.', type: SECTIONS.MAIN },
-        { step: 'Serve this authentic chicken rice dish with cilantro, yogurt, and sauteed onions.', type: SECTIONS.SERVE },
+        { step: 'Serve this authentic chicken rice dish with cilantro, yogurt, and sauteed onions.', type: SECTIONS.SERVE, img: [plated, side, zoomed] },
     ]
 };

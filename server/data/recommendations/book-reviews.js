@@ -34,6 +34,12 @@ module.exports = [
                 thoughts: "There's really honor among thieves. You don't want to work with somebody that will sabotage or back stab you.",
                 context: "Jazz is offered a job to smuggle something to the moon."
             },
+            {
+                text: "Five a.m. was a largely theoretical concept to me. I knew it existed, but I rarely observed it. Nor did I want to.",
+                pages: [50],
+                thoughts: "It's funny to think that there are certain concepts of time that we might never have seen but have heard of.",
+                context: "Trond and Jazz are planning to meet at a very early time so Jazz can see the harvester."
+            },
         ],
         image: "",
         rating: NO_RATING,

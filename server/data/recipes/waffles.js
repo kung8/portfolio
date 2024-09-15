@@ -36,7 +36,7 @@ module.exports = {
     genre: [GENRES.AMERICAN, GENRES.WESTERN],
     method: [METHODS.GRILL],
     type: [TYPES.BREAD],
-    yields: '1 serving',
+    yields: '3 servings',
     prepTime: '1 m',
     cookTime: '2 m',
     websites: [
