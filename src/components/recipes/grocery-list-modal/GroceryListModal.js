@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import closeBtn from '../../../Assets/x.png';
 import { useGetIngredientCategories } from '../../../hooks';
 import { EmptyGroceryListItem } from './EmptyGroceryListItem';
 import { GroceryListItem } from './GroceryListItem';
 import { DeleteGroceryListModal } from './DeleteGroceryListModal';
 import { EditGroceryListItemModal } from './EditGroceryListItemModal';
+import { SortBy } from './SortBy';
+
+const GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY = 'groceryListSortBy';
 
 export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryList }) => {
     const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
@@ -14,6 +17,12 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
     const [deleteType, setDeleteType] = useState(null);
     const [isCategoryDropdownOpen, setIsCategoryDropdownOpen] = useState(false);
     const showClass = show || isDeleteModalOpen || isEditModalOpen ? 'opened' : '';
+    const sortByFromLocalStorage = localStorage.getItem(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY);
+    const [sortBy, setSortBy] = useState(sortByFromLocalStorage || 'category');
+
+    useEffect(() => {
+        localStorage.setItem(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY, sortBy);
+    }, [sortBy]);
 
     const openDeleteModal = (type) => {
         setIsDeleteModalOpen(true);
@@ -49,7 +58,8 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
 
     const deleteTitle = deleteType === 'all' ? 'Are you sure you want to delete all the items?' : 'Are you sure you want to delete all the checked items?'
 
-    const displayedIngredientsList = Object.entries((groceryList || [])?.reduce((group, ingredient) => {
+    // Group ingredients by category
+    const displayedIngredientsListByCategory = Object.entries((groceryList || [])?.reduce((group, ingredient) => {
         if (!group[ingredient.category]) group[ingredient.category] = [];
         group[ingredient.category].push(ingredient);
         return group;
@@ -59,6 +69,25 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
         if (a[0] > b[0]) return 1;
         return 0;
     });
+
+    // Group ingredients by date
+    const displayedIngredientsListByDate = Object.entries(groceryList.reduce((group, ingredient) => {
+        if (!ingredient.date) {
+            if (!group['No Specified Date']) group['No Specified Date'] = [];
+            group['No Specified Date'].push(ingredient);
+        } else {
+            if (!group[ingredient.date]) group[ingredient.date] = [];
+            group[ingredient.date].push(ingredient);
+        }
+        return group;
+    }, {})).sort((a, b) => {
+        if (a[0] === 'No Specified Date') return -1;
+        if (a[0] < b[0]) return -1;
+        if (a[0] > b[0]) return 1;
+        return 0;
+    });
+
+    const displayedIngredientsList = sortBy === 'category' ? displayedIngredientsListByCategory : displayedIngredientsListByDate;
 
     const updateItem = (originalItem, newItemValue) => {
         const newGroceryList = [...groceryList];
@@ -92,7 +121,7 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                         <EmptyGroceryListItem setGroceryList={setGroceryList} />
                         {displayedIngredientsList.map(([category, ingredients]) => (
                             <div key={category} className="category-ingredient-container">
-                                <h6 className="ingredient-category">{category}</h6>
+                                <h6 className={`${sortBy === 'date' ? 'ingredient-date' : 'ingredient-category'}`}>{category}</h6>
                                 {ingredients.map((ingredient, index) => (
                                     <GroceryListItem
                                         key={ingredient.name + '-' + index}
@@ -102,14 +131,18 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                                         onCategoryChange={(value) => updateItem(ingredient, { category: value })}
                                         openEditModal={() => openEditModal(ingredient)}
                                         onEmptyInputChange={() => removeItem(ingredient.index)}
+                                        sortBy={sortBy}
                                     />
                                 ))}
                             </div>
                         ))}
                     </div>
                     <div className="modal-footer">
-                        <span onClick={groceryList.filter(item => item.checked).length > 0 ? () => openDeleteModal('checked') : undefined} className={groceryList.filter(item => item.checked).length > 0 ? 'has-values' : ''}>Delete Checked</span>
-                        <span onClick={groceryList.length > 0 ? () => openDeleteModal('all') : undefined} className={groceryList.length > 0 ? 'has-values' : ''}>Delete All</span>
+                        <div className="delete-buttons-container">
+                            <span onClick={groceryList.filter(item => item.checked).length > 0 ? () => openDeleteModal('checked') : undefined} className={groceryList.filter(item => item.checked).length > 0 ? 'has-values' : ''}>Delete Checked</span>
+                            <span onClick={groceryList.length > 0 ? () => openDeleteModal('all') : undefined} className={groceryList.length > 0 ? 'has-values' : ''}>Delete All</span>
+                        </div>
+                        <SortBy options={[{ id: 'category', label: 'Category' }, { id: 'date', label: 'Date' }]} setSortBy={setSortBy} sortBy={sortBy} />
                     </div>
                 </div>
                 {isDeleteModalOpen && (

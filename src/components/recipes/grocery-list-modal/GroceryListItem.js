@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import edit from '../assets/edit.png';
 
 export const GroceryListItem = ({
+    category,
     checked,
     date,
     name,
@@ -9,7 +10,8 @@ export const GroceryListItem = ({
     onCheckboxChange,
     onEmptyInputChange,
     onInputChange,
-    recipeName
+    recipeName,
+    sortBy,
 }) => {
     const [inputValue, setInputValue] = useState(name);
 
@@ -55,7 +57,8 @@ export const GroceryListItem = ({
                     </div>
                 )}
                 {recipeName && <p className="recipe-name"><span>Needed for</span> "{recipeName}"</p>}
-                {date && <p className="recipe-date"><span>Needed on {date}</span></p>}
+                {sortBy === 'date' && category && <p className="recipe-category"><span>{category}</span></p>}
+                {sortBy === 'category' && date && <p className="recipe-date"><span>Needed on {date}</span></p>}
             </div>
         </div>
     )
