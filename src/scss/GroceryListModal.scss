@@ -204,7 +204,7 @@
                 flex-direction: column;
                 row-gap: 16px;
                 .edit-ingredient-input,
-                .edit-recipe-name-input, 
+                .edit-recipe-name-input,
                 .edit-recipe-date-input {
                     width: 100%;
                     padding: 8px 12px;
@@ -213,6 +213,12 @@
                     background: $aqua;
                     color: $white;
                     font-size: 14px;
+                    &::placeholder {
+                        color: $default;
+                    }
+                    &::-ms-input-placeholder {
+                        color: $default;
+                    }
                 }
 
                 .category-dropdown-container {
@@ -246,6 +252,7 @@
 
                         &.is-open {
                             display: block;
+                            z-index: 1;
                         }
 
                         .category-selector-item {
@@ -295,6 +302,9 @@
                 display: inline-block;
                 width: 100%;
                 cursor: pointer;
+                &.is-default {
+                    color: $default;
+                }
             }
             .delete-date-btn {
                 height: 14px;

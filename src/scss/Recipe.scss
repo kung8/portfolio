@@ -4,7 +4,7 @@
 
     .heading-container {
         margin-bottom: 40px;
-        
+
         .heading {
             margin-bottom: 0;
         }
@@ -255,7 +255,7 @@
                 .modal-body {
                     display: flex;
                     flex-direction: column;
-                    row-gap: 16px; 
+                    row-gap: 16px;
 
                     .edit-recipe-date-input {
                         width: 100%;
@@ -275,6 +275,9 @@
                             display: inline-block;
                             width: 100%;
                             cursor: pointer;
+                            &.is-default {
+                                color: $default;
+                            }
                         }
                         .delete-date-btn {
                             height: 14px;
@@ -340,4 +343,3 @@
         }
     }
 }
-

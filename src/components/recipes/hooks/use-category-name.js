@@ -11,8 +11,8 @@ export const useCategoryName = () => {
         }
 
         const matchingIngredients = ingredients.filter(ingredient => {
-            const ingredientIndices = ingredient.name.toLowerCase().split(' ');
-            const categoryIndices = ingredient.category.toLowerCase().split(' ').map(c => c.replace(/,/g, ''));
+            const ingredientIndices = ingredient.name?.toLowerCase().split(' ') ?? [];
+            const categoryIndices = ingredient.category?.toLowerCase().split(' ').map(c => c.replace(/,/g, '')) ?? [];
             
             return ingredientIndices.find(ingredient => searchIndices.find(s => s.includes(ingredient))) ||
                 searchIndices.find(search => ingredientIndices.find(i => i.includes(search))) ||

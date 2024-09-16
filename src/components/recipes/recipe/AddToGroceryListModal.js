@@ -24,7 +24,7 @@ export const AddToGroceryListModal = ({
                     <div className="modal-body">
                         <div className="edit-recipe-date-input">
                             <p className="edit-recipe-date-label-container">
-                                <span className="edit-recipe-date-label" onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? date : '(Optional) Set when you need it by...'}</span>
+                                <span className={`edit-recipe-date-label ${!date ? 'is-default' : ''}`} onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? date : '(Optional) Set when you need it by...'}</span>
                                 {date && (
                                     <img
                                         className="delete-date-btn"
