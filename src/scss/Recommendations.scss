@@ -53,13 +53,16 @@
             flex-direction: column;
             row-gap: 32px;
             margin-bottom: 40px;
+
             .review,
             .recommendation {
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
                 .review-header,
                 .recommendation-header {
                     display: flex;
                     align-items: center;
-                    margin-bottom: 6px;
                     flex-wrap: wrap;
                     justify-content: space-between;
                     column-gap: 8px;
@@ -87,7 +90,7 @@
                         text-underline-offset: 2px;
                         font-weight: 400;
                         font-size: 16px;
-                        color: $primary-blue;
+                        color: $sunshine;
                     }
 
                     .review-subtitle,
@@ -103,7 +106,6 @@
                 .review-text {
                     font-size: 14px;
                     color: $light;
-                    margin-bottom: 6px;
                 }
 
                 .rating-container {
@@ -120,14 +122,21 @@
                         font-size: 14px;
                         color: $light;
                     }
-
-                    .expand-text {
-                        font-size: 12px;
-                        color: $primary-blue;
-                        cursor: pointer;
-                    }
                 }
 
+                .expand-text {
+                    font-size: 12px;
+                    color: $primary-blue;
+                    cursor: pointer;
+                }
+
+                .recommendation-source-container {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 8px;
+                    justify-content: space-between;
+                    row-gap: 6px;
+                }
 
                 .recommendation-source {
                     font-size: 12px;
@@ -152,6 +161,25 @@
                     p {
                         font-size: 12px;
                     }
+                }
+
+                .review-subheader {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    row-gap: 6px;
+                    column-gap: 8px;
+                }
+
+                .review-source {
+                    font-size: 12px;
+                    color: $light;
+                }
+
+                .review-additional-text {
+                    font-size: 12px;
+                    color: $default;
                 }
             }
         }

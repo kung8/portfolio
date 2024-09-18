@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
+import { formatSource } from './format-source';
 
 const ReviewContext = createContext(null);
 
@@ -24,7 +25,13 @@ const Header = ({ title, subtitle, date }) => (
             <span className="review-date">{date}</span>
         )}
     </div>
-)
+);
+const Subheader = ({ additionalText, source }) => (
+    <div className="review-subheader">
+        {source ? <span className="review-source">Recommendation from {formatSource(source)}</span> : <span></span>}
+        {additionalText ? <span className="review-additional-text">{additionalText}</span> : <span></span>}
+    </div>
+);
 const Content = ({ review }) => review ?
     Array.isArray(review) ?
         review.map((item, index) => (
@@ -74,6 +81,7 @@ export const ReviewContainer = ({ children }) => <div className="reviews-contain
 
 ReviewContainer.Review = Review;
 ReviewContainer.Header = Header;
+ReviewContainer.Subheader = Subheader;
 ReviewContainer.Date = DateSection;
 ReviewContainer.Content = Content;
 ReviewContainer.Rating = Rating;

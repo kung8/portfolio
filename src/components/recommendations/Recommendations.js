@@ -14,6 +14,26 @@ export const Recommendations = () => {
         return categoryData ?? { category: 'No Category', reviews: [], recommendations: [] };
     }
 
+    const getBookReviews = () => {
+        const foundData = data.find(item => item.category === 'Books')?.reviews || [];
+        const reviews = foundData.filter(item => item.date !== "NO DATE").sort((a, b) => {
+            if (a.date === 'In Progress') return -1;
+            const splitA = a.date.split('/');
+            const splitB = b.date.split('/');
+            const monthA = parseInt(splitA[0]);
+            const monthB = parseInt(splitB[0]);
+            const yearA = parseInt(splitA[1]);
+            const yearB = parseInt(splitB[1]);
+            if (yearA === yearB) {
+                return monthB - monthA;
+            }
+            return yearB - yearA;
+        });
+        const recommendations = foundData.filter((item) => item.date === "NO DATE");        
+        return { category: 'Books', reviews, recommendations };
+    }
+
+
     const categories = data.map(item => item.category);
 
     useEffect(() => {
@@ -42,7 +62,7 @@ export const Recommendations = () => {
 
     return (
         <NonDashboardPage mainClassName={`recommendations ${isLoaded ? '' : 'isLoading'}`}>
-            <NonDashboardPage.Header title='Recommendations / Reviews' />
+            <NonDashboardPage.Header title='Reviews' />
             <div className="categories">
                 {categories.map((category, index) => (
                     <h3
@@ -54,7 +74,7 @@ export const Recommendations = () => {
                     </h3>
                 ))}
             </div>
-            {selectedCategory === 'Books' && <BookRecommendations {...getCategoryProps('Books')} />}
+            {selectedCategory === 'Books' && <BookRecommendations {...getBookReviews()} />}
             {selectedCategory === 'Restaurants' && <RestaurantRecommendations {...getCategoryProps('Restaurants')} />}
             {/* 
                 This will have all the different categories of recommendations.
