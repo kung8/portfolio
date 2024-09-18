@@ -10,6 +10,7 @@ const risen = '../assets/Products/sourdough-bread-risen.jpeg';
 const scored = '../assets/Products/sourdough-bread-scored.jpeg';
 const uncovered = '../assets/Products/sourdough-bread-uncovered.jpeg';
 const cut = '../assets/Products/sourdough-bread-cut.jpeg';
+const board = '../assets/Products/sourdough-bread-on-board.jpeg';
 const { METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
@@ -23,7 +24,7 @@ const BAKING = 'Baking';
 module.exports = {
     cardName: 'Sourdough Bread',
     name: 'Sourdough Bread',
-    img: cut,
+    img: board,
     available: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SNACK],
     method: [METHODS.BAKE],
@@ -58,6 +59,6 @@ module.exports = {
         { step: 'Once the oven has reached 450ºF, take out the dutch oven pot and place the dough ball in the pot and return the pot with the lid to the oven.', type: BAKING, img: [inPan, zoomedOut, preheating] },
         { step: 'Bake for 25 to 30 minutes with the lid on.', type: BAKING },
         { step: 'Remove the lid and bake for an additional 10 to 20 minutes.', type: BAKING, img: uncovered },
-        { step: 'Remove from oven and let cool.', type: BAKING, img: [baked, zoomed] },
+        { step: 'Remove from oven and let cool.', type: BAKING, img: [baked, zoomed, cut] },
     ]
 };

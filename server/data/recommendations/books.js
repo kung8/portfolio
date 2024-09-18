@@ -6,9 +6,10 @@ module.exports = {
     category: 'Books',
     reviews: [
         // {
-        //     date: "",
+        //     date: NO_DATE,
         //     title: "",
         //     author: [""],
+        //     source: [""],
         //     review: [
         //         ""
         //     ],
@@ -23,10 +24,10 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
-            date: IN_PROGRESS,
-            title: "Funny Story",
-            author: ["Emily Henry"],
-            source: ["same author"],
+            date: NO_DATE,
+            title: "The Reaping",
+            author: ["Jess Lourey"],
+            source: ["Kindle"],
             review: [
                 ""
             ],
@@ -36,6 +37,48 @@ module.exports = {
                     pages: [],
                     thoughts: "",
                     context: ""
+                },
+            ],
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Taken Ones",
+            author: ["Jess Lourey"],
+            source: ["Kindle"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            rating: NO_RATING,
+        },
+        {
+            date: IN_PROGRESS,
+            title: "Funny Story",
+            author: ["Emily Henry"],
+            source: ["same author"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "Life, I'd learned, is a revolving door. Most things that come into it only stay awhile.",
+                    pages: [17],
+                    thoughts: "It's a shame that some good things are fleeting, but it's also a comfort to know that bad things are too.",
+                    context: "Daphne hasn't had the greatest luck with people in her life."
+                },
+                {
+                    text: "Miles is the other kind. The kind that's disarming enough that you don't feel nervous talking to him, or like you need to show your best angle, until -- wham! Suddenly, he's smiling at you with his messy hair and impish smirk, and you realize his hotness has been boiling around you so slowly you missed it.",
+                    pages: [29],
+                    thoughts: "Love is interesting. It can sneak up on you when you least expect it.",
+                    context: "Daphne is still upset of her ex-fiance, Peter, leaving her for his best friend (Miles' girlfriend). She's thinking of Miles and how she's starting to see him in a different light."
                 },
             ],
             pageCount: 395,
