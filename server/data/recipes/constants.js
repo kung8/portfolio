@@ -140,6 +140,7 @@ const TYPES = {
     DESSERT: 'Dessert',
     SAUCE: 'Sauce',
     STIR_FRY: 'Stir Fry',
+    PIE: 'Pie',
 }
 
 module.exports = {

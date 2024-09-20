@@ -1,5 +1,6 @@
 const americanOmelette = require("./recipes/american-omelette");
 const antsOnALog = require("./recipes/ants-on-a-log");
+const applePie = require("./recipes/apple-pie");
 const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
 const bakedChicken = require("./recipes/baked-chicken");
 const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
@@ -216,8 +217,9 @@ const recipes = [
     chocolateChipCookies,
     oatmealRaisinCookies,
     blondie,
-    tedLassoBiscuits,
     brownies,
+    applePie,
+    tedLassoBiscuits,
     noBakeCookie,
     riceKrispyTreats,
     popcornBalls,

@@ -371,6 +371,7 @@ const INGREDIENTS = {
         COCONUT_MILK: { name: 'coconut milk', category: INGREDIENT_CATEGORY.DAIRY },
         CREAM_CHEESE: { name: 'cream cheese', category: INGREDIENT_CATEGORY.DAIRY },
         COFFEE_CREAMER: { name: 'coffee creamer', category: INGREDIENT_CATEGORY.DAIRY },
+        DOUBLE_CRUST_PIE_CRUST: { name: 'double crust pie crust', category: INGREDIENT_CATEGORY.DAIRY },
         EGGS: { name: 'eggs', category: INGREDIENT_CATEGORY.DAIRY },
         EGG_WHITES: { name: 'egg whites', category: INGREDIENT_CATEGORY.DAIRY },
         EGG_YOLKS: { name: 'egg yolks', category: INGREDIENT_CATEGORY.DAIRY },
