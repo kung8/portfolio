@@ -19,6 +19,7 @@ const cabbageStirFry = require("./recipes/cabbage-stir-fry");
 const cafeRioBowl = require("./recipes/cafe-rio-bowl");
 const caramelizedOnion = require("./recipes/caramelized-onion");
 const caramelizedMushroom = require("./recipes/caramelized-mushroom");
+const carrotCake = require("./recipes/carrot-cake");
 const cheeseballs = require("./recipes/cheeseballs");
 const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
 const chickenAlfredo = require("./recipes/chicken-alfredo");
@@ -77,6 +78,8 @@ const padThai = require("./recipes/pad-thai");
 const paoDeQueijo = require("./recipes/pao-de-queijo");
 const parfait = require("./recipes/parfait");
 const peachCobbler = require("./recipes/peach-cobbler");
+const peanutBrittle = require("./recipes/peanut-brittle");
+const peppermintBark = require("./recipes/peppermint-bark");
 const pepperSteak = require("./recipes/pepper-steak");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
@@ -211,8 +214,11 @@ const recipes = [
     antsOnALog,
     bananaBread,
     cheesecake,
+    carrotCake,
     peachCobbler,
     pretzel,
+    peanutBrittle,
+    peppermintBark,
     snickerdoodle,
     chocolateChipCookies,
     oatmealRaisinCookies,

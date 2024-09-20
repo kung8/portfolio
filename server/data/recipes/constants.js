@@ -70,9 +70,11 @@ const METHODS = {
     BOIL: 'Boil',
     BLANCH: 'Blanch',
     BLEND: 'Blend',
+    CHILLED: 'Chilled',
     DEEP_FRY: 'Deep Fry',
     GRILL: 'Grill',
     MARINADE: 'Marinade',
+    MELT: 'Melt',
     PAN_FRY: 'Pan Fry',
     RAW: 'Raw',
     ROAST: 'Roast',
@@ -141,6 +143,12 @@ const TYPES = {
     SAUCE: 'Sauce',
     STIR_FRY: 'Stir Fry',
     PIE: 'Pie',
+    PASTA: 'Pasta',
+    PIZZA: 'Pizza',
+    TACO: 'Taco',
+    BURGER: 'Burger',
+    CAKE: 'Cake',
+    COOKIE: 'Cookie',
 }
 
 module.exports = {
