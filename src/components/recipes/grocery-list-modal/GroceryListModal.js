@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import dayjs from 'dayjs';
 import closeBtn from '../../../Assets/x.png';
 import { useGetIngredientCategories } from '../../../hooks';
 import { EmptyGroceryListItem } from './EmptyGroceryListItem';
@@ -71,7 +72,13 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
     });
 
     // Group ingredients by date
-    const displayedIngredientsListByDate = Object.entries(groceryList.reduce((group, ingredient) => {
+    const displayedIngredientsListByDate = Object.entries(groceryList.sort((a,b) => {
+        if (!a.date) return -1;
+        if (!b.date) return 1;
+        if (dayjs(a.date) < dayjs(b.date)) return -1;
+        if (dayjs(a.date) > dayjs(b.date)) return 1;
+        return 0;
+    }).reduce((group, ingredient) => {
         if (!ingredient.date) {
             if (!group['No Specified Date']) group['No Specified Date'] = [];
             group['No Specified Date'].push(ingredient);
@@ -80,11 +87,9 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
             group[ingredient.date].push(ingredient);
         }
         return group;
-    }, {})).sort((a, b) => {
-        if (a[0] === 'No Specified Date') return -1;
-        if (a[0] < b[0]) return -1;
-        if (a[0] > b[0]) return 1;
-        return 0;
+    }, {})).map(([date, ingredients]) => {
+        if (date === 'No Specified Date') return ['No Specified Date', ingredients];
+        return [dayjs(date).format('MMMM D, YYYY'), ingredients];
     });
 
     const displayedIngredientsList = sortBy === 'category' ? displayedIngredientsListByCategory : displayedIngredientsListByDate;

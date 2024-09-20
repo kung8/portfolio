@@ -24,7 +24,7 @@ export const AddToGroceryListModal = ({
                     <div className="modal-body">
                         <div className="edit-recipe-date-input">
                             <p className="edit-recipe-date-label-container">
-                                <span className={`edit-recipe-date-label ${!date ? 'is-default' : ''}`} onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? date : '(Optional) Set when you need it by...'}</span>
+                                <span className={`edit-recipe-date-label ${!date ? 'is-default' : ''}`} onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? dayjs(date).format('MMMM D, YYYY') : '(Optional) Set when you need it by...'}</span>
                                 {date && (
                                     <img
                                         className="delete-date-btn"
@@ -38,7 +38,7 @@ export const AddToGroceryListModal = ({
                                 <Calendar
                                     minDate={new Date(today)}
                                     onChange={(value) => {
-                                        const formattedDate = dayjs(value).format('MMMM D, YYYY');
+                                        const formattedDate = dayjs(value).format('M/D/YY');
                                         setDate(formattedDate);
                                         setIsCalendarOpen(false);
                                     }}

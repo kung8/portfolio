@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import dayjs from 'dayjs';
 import edit from '../assets/edit.png';
 
 export const GroceryListItem = ({
@@ -58,7 +59,7 @@ export const GroceryListItem = ({
                 )}
                 {recipeName && <p className="recipe-name"><span>Needed for</span> "{recipeName}"</p>}
                 {sortBy === 'date' && category && <p className="recipe-category"><span>{category}</span></p>}
-                {sortBy === 'category' && date && <p className="recipe-date"><span>Needed on {date}</span></p>}
+                {sortBy === 'category' && date && <p className="recipe-date"><span>Needed on {dayjs(date).format('MMMM D, YYYY')}</span></p>}
             </div>
         </div>
     )

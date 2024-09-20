@@ -26,6 +26,7 @@ module.exports = {
     name: 'Sourdough Bread',
     img: board,
     available: true,
+    recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SNACK],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
@@ -51,8 +52,9 @@ module.exports = {
     directions: [
         { step: 'In a mixing bowl, blend together starter and water.', type: SECTIONS.DOUGH },
         { step: 'Mix in salt and flour.', type: SECTIONS.DOUGH, img: mixed },
+        { step: 'Knead the dough a little bit and add some more flour as needed to make it less sticky.', type: SECTIONS.DOUGH },
         { step: 'Let the mixture rest for 30 to 45 minutes.', type: SECTIONS.DOUGH },
-        { step: 'Stretch the dough to loosen. Form a ball.', type: SECTIONS.DOUGH, img: ball },
+        { step: 'Lift the dough and fold it over the dangling part (at the top). Rotate the bowl 180 degrees and repeat the lift and fold. Then turn it 90 degrees and repeat the lift and fold. And then 180 degrees and repeat the lift and fold. This is called the coil fold which helps strengthen the dough and develop gluten. Do the coil fold on the sides opposite for balance.', type: SECTIONS.DOUGH, img: ball },
         { step: 'Cover the bowl and let the dough rest for 5 to 10 hours. It should double in size.', type: SECTIONS.DOUGH, img: [covered, risen] },
         { step: 'When you\'re ready to bake, place a dutch oven pot with a lid on the center rack and set the oven temperature to 450ºF.', type: BAKING, img: preheating },
         { step: 'Score the dough with whatever preferred design.', type: BAKING, img: scored },

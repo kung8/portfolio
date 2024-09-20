@@ -256,6 +256,7 @@ export const Recipe = ({ match }) => {
                 setPreviousScrollPosition(0);
             }, 50);
         }
+        // eslint-disable-next-line
     }, [isAddToGroceryListModalOpen]);
 
     return (
