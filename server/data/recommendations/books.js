@@ -21,8 +21,104 @@ module.exports = {
         //             context: ""
         //         },
         //     ],
+        //     pageCount: 0,
         //     rating: NO_RATING,
         // },
+        {
+            date: NO_DATE,
+            title: "Daphne du Maurier",
+            author: ["Rebecca"],
+            source: ["Kindle"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 449,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Legends & Lattes",
+            author: ["Travis Baldree"],
+            source: [""],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 296,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "If We Were Villains",
+            author: ["M.L. Rio"],
+            source: [""],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 354,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Sentence",
+            author: ["Louise Erdrich"],
+            source: [""],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 387,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Weyward",
+            author: ["Emilia Hart"],
+            source: [""],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 387,
+            rating: NO_RATING,
+        },
         {
             date: NO_DATE,
             title: "The Reaping",
@@ -39,6 +135,7 @@ module.exports = {
                     context: ""
                 },
             ],
+            pageCount: 326,
             rating: NO_RATING,
         },
         {
@@ -57,6 +154,7 @@ module.exports = {
                     context: ""
                 },
             ],
+            pageCount: 339,
             rating: NO_RATING,
         },
         {
