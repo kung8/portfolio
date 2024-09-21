@@ -2,10 +2,22 @@ import React from 'react';
 import closeBtn from '../../../Assets/x.png';
 
 export const DeleteGroceryListModal = ({
-    deleteTitle,
     closeDeleteModal,
-    handleDelete
+    deleteType,
+    setGroceryList,
 }) => {
+    const deleteTitle = deleteType === 'all' ? 'Are you sure you want to delete all the items?' : 'Are you sure you want to delete all the checked items?'
+
+    const handleDelete = () => {
+        if (!deleteType) return;
+        if (deleteType === 'checked') {
+            setGroceryList(prev => prev.filter(item => !item.checked));
+        } else if (deleteType === 'all') {
+            setGroceryList([]);
+        }
+        closeDeleteModal();
+    }
+
     return (
         <div className="delete-grocery-item-modal">
             <div className="modal-content">

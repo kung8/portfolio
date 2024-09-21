@@ -22,8 +22,6 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
         localStorage.setItem(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY, sortBy);
     }, [sortBy]);
 
-    const deleteTitle = deleteType === 'all' ? 'Are you sure you want to delete all the items?' : 'Are you sure you want to delete all the checked items?'
-
     const closeDeleteModal = () => {
         setIsDeleteModalOpen(false);
         setDeleteType(null);
@@ -33,16 +31,6 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
         setIsEditModalOpen(false);
         setOriginalItemToEdit(null);
         setItemToEdit(null);
-    }
-
-    const handleDelete = () => {
-        if (!deleteType) return;
-        if (deleteType === 'checked') {
-            setGroceryList(prev => prev.filter(item => !item.checked));
-        } else if (deleteType === 'all') {
-            setGroceryList([]);
-        }
-        closeDeleteModal();
     }
 
     const updateItem = (originalItem, newItemValue) => {
@@ -56,6 +44,7 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
     }
 
     const [selectedView, setSelectedView] = useState('groceryList');
+    const isGroceryList = selectedView === 'groceryList';
 
     return (
         <>
@@ -67,7 +56,7 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                         setSelectedView={setSelectedView}
                         selectedView={selectedView}
                     />
-                    {selectedView === 'groceryList' && (
+                    {isGroceryList && (
                         <GroceryListModalContent
                             {...{
                                 groceryList,
@@ -85,14 +74,10 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
                     )}
                 </div>
             </div>
-            {isDeleteModalOpen && (
-                <DeleteGroceryListModal
-                    deleteTitle={deleteTitle}
-                    closeDeleteModal={closeDeleteModal}
-                    handleDelete={handleDelete}
-                />
+            {isGroceryList && isDeleteModalOpen && (
+                <DeleteGroceryListModal {...{ closeDeleteModal, deleteType, setGroceryList }} />
             )}
-            {isEditModalOpen && originalItemToEdit && (
+            {isGroceryList && isEditModalOpen && originalItemToEdit && (
                 <EditGroceryListItemModal
                     itemToEdit={itemToEdit}
                     setItemToEdit={setItemToEdit}
