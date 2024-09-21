@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import xBtn from '../../../Assets/x.png';
 import closeBtn from '../../../Assets/close.png';
-import arrow from '../assets/arrow.png';
+import arrow from '../../../Assets/arrow.png';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import { useGetIngredientCategories } from '../../../hooks';
 
 export const EditGroceryListItemModal = ({
     itemToEdit,
@@ -12,7 +13,6 @@ export const EditGroceryListItemModal = ({
     originalItemToEdit,
     updateItem,
     closeEditModal,
-    categories,
     isCategoryDropdownOpen,
     setIsCategoryDropdownOpen
 }) => {
@@ -23,6 +23,8 @@ export const EditGroceryListItemModal = ({
     useEffect(() => {
         setDate(itemToEdit.date);
     }, [itemToEdit]);
+
+    const { data: categories = [] } = useGetIngredientCategories();
 
     return (
         <div className="edit-ingredient-modal">

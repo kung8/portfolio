@@ -193,18 +193,35 @@
                 }
             }
         }
+    }
 
-        .sort-by-container {
-            display: flex;
-            align-items: center;
-            column-gap: 4px;
-            select {
-                padding: 2px;
-                font-size: 12px;
-                @include down($mobile) {
-                    font-size: 10px;
-                }
+    .dropdown-container {
+        padding: 4px 8px;
+        min-width: 80px;
+        .dropdown-options-container {
+            &.open-above {
+                top: -62px;
             }
+        }
+
+        .dropdown-label {
+            font-size: 12px;
+        }
+
+        li {
+            list-style: none;
+            padding: 8px;
+            cursor: pointer;
+            font-size: 12px;
+            &:hover {
+                background: $light;
+                color: $aqua;
+            }
+        }
+
+        .icon {
+            height: 6px; 
+            width: 10px;
         }
     }
 }
@@ -245,7 +262,7 @@
                     border: 1.5px solid $default;
                     background: $aqua;
                     color: $white;
-                    font-size: 14px;
+                    font-size: 12px;
                     &::placeholder {
                         color: $default;
                     }
@@ -264,11 +281,11 @@
                         border: 1.5px solid $default;
                         padding: 6px 12px;
                         background: $aqua;
-                        font-size: 14px;
+                        font-size: 12px;
                         cursor: pointer;
 
                         .chevron-arrow {
-                            height: 14px;
+                            height: 12px;
                             transition: transform 0.3s ease;
                             &.is-open {
                                 transform: rotate(180deg);
@@ -294,7 +311,7 @@
                             border: 1.5px solid $default;
                             cursor: pointer;
                             border-top: none;
-                            font-size: 14px;
+                            font-size: 12px;
                         }
                     }
                 }

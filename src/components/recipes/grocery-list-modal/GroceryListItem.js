@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
-import edit from '../assets/edit.png';
+import edit from '../../../Assets/edit.png';
 
 export const GroceryListItem = ({
     category,

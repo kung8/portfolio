@@ -1,5 +1,5 @@
 import React from 'react';
-import top from '../assets/top.png';
+import top from '../../../Assets/top.png';
 
 export const TopArrow = () => (
     <div

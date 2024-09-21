@@ -1,5 +1,5 @@
 import React from 'react';
-import list from '../assets/list.png';
+import list from '../../../Assets/list.png';
 import { RecipeFilterContainer } from './RecipeFilterContainer';
 import { initialShownFilters } from './Recipes';
 import { useFilters } from '../hooks/use-filters';

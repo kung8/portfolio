@@ -153,7 +153,9 @@ export const Recipes = ({ history }) => {
 
             {showArrow && <TopArrow />}
 
-            <GroceryListModal {...{ ...groceryListProps, show: showGroceryList }} />
+            {showGroceryList && (
+                <GroceryListModal {...{ ...groceryListProps, show: showGroceryList }} />
+            )}
         </NonDashboardPage>
     )
 }

@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import dayjs from 'dayjs';
-import closeBtn from '../../../Assets/x.png';
-import { useGetIngredientCategories } from '../../../hooks';
-import { EmptyGroceryListItem } from './EmptyGroceryListItem';
-import { GroceryListItem } from './GroceryListItem';
+import { GroceryListModalHeader } from './GroceryListModalHeader';
+import { GroceryListModalContent } from './GroceryListModalContent';
 import { DeleteGroceryListModal } from './DeleteGroceryListModal';
 import { EditGroceryListItemModal } from './EditGroceryListItemModal';
-import { SortBy } from './SortBy';
 
 const GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY = 'groceryListSortBy';
 
@@ -17,6 +13,7 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
     const [itemToEdit, setItemToEdit] = useState(null);
     const [deleteType, setDeleteType] = useState(null);
     const [isCategoryDropdownOpen, setIsCategoryDropdownOpen] = useState(false);
+
     const showClass = show || isDeleteModalOpen || isEditModalOpen ? 'opened' : '';
     const sortByFromLocalStorage = localStorage.getItem(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY);
     const [sortBy, setSortBy] = useState(sortByFromLocalStorage || 'category');
@@ -25,20 +22,11 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
         localStorage.setItem(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY, sortBy);
     }, [sortBy]);
 
-    const openDeleteModal = (type) => {
-        setIsDeleteModalOpen(true);
-        setDeleteType(type);
-    }
+    const deleteTitle = deleteType === 'all' ? 'Are you sure you want to delete all the items?' : 'Are you sure you want to delete all the checked items?'
 
     const closeDeleteModal = () => {
         setIsDeleteModalOpen(false);
         setDeleteType(null);
-    }
-
-    const openEditModal = (item) => {
-        setIsEditModalOpen(true);
-        setOriginalItemToEdit(item);
-        setItemToEdit(item);
     }
 
     const closeEditModal = () => {
@@ -57,43 +45,6 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
         closeDeleteModal();
     }
 
-    const deleteTitle = deleteType === 'all' ? 'Are you sure you want to delete all the items?' : 'Are you sure you want to delete all the checked items?'
-
-    // Group ingredients by category
-    const displayedIngredientsListByCategory = Object.entries((groceryList || [])?.reduce((group, ingredient) => {
-        if (!group[ingredient.category]) group[ingredient.category] = [];
-        group[ingredient.category].push(ingredient);
-        return group;
-    }, {})).sort((a, b) => {
-        if (a[0] === 'Other') return 1;
-        if (a[0] < b[0]) return -1;
-        if (a[0] > b[0]) return 1;
-        return 0;
-    });
-
-    // Group ingredients by date
-    const displayedIngredientsListByDate = Object.entries(groceryList.sort((a,b) => {
-        if (!a.date) return -1;
-        if (!b.date) return 1;
-        if (dayjs(a.date) < dayjs(b.date)) return -1;
-        if (dayjs(a.date) > dayjs(b.date)) return 1;
-        return 0;
-    }).reduce((group, ingredient) => {
-        if (!ingredient.date) {
-            if (!group['No Specified Date']) group['No Specified Date'] = [];
-            group['No Specified Date'].push(ingredient);
-        } else {
-            if (!group[ingredient.date]) group[ingredient.date] = [];
-            group[ingredient.date].push(ingredient);
-        }
-        return group;
-    }, {})).map(([date, ingredients]) => {
-        if (date === 'No Specified Date') return ['No Specified Date', ingredients];
-        return [dayjs(date).format('MMMM D, YYYY'), ingredients];
-    });
-
-    const displayedIngredientsList = sortBy === 'category' ? displayedIngredientsListByCategory : displayedIngredientsListByDate;
-
     const updateItem = (originalItem, newItemValue) => {
         const newGroceryList = [...groceryList];
         const foundItem = newGroceryList.findIndex((item) => originalItem.index === item.index && originalItem.name === item.name);
@@ -104,72 +55,54 @@ export const GroceryListModal = ({ show, handleClose, groceryList, setGroceryLis
         setGroceryList(newGroceryList);
     }
 
-    const removeItem = async (index) => {
-        const newGroceryList = [...groceryList].filter(ingredient => ingredient.index !== index);
-        setGroceryList(newGroceryList);
-    }
-
-    const { data: categories } = useGetIngredientCategories();
+    const [selectedView, setSelectedView] = useState('groceryList');
 
     return (
         <>
             <div className="grocery-list-modal-container">
                 <div className={`overlay ${showClass} ${isDeleteModalOpen || isEditModalOpen ? 'layered-opened' : ''}`} onClick={isDeleteModalOpen ? closeDeleteModal : isEditModalOpen ? closeEditModal : handleClose} />
                 <div className={`grocery-list-modal ${showClass}`}>
-                    <div className="modal-header">
-                        <h3>Grocery List</h3>
-                        <button className="close" onClick={handleClose}>
-                            <img src={closeBtn} alt="close" onClick={handleClose} />
-                        </button>
-                    </div>
-                    <div className="grocery-list">
-                        <EmptyGroceryListItem setGroceryList={setGroceryList} />
-                        {displayedIngredientsList.map(([category, ingredients]) => (
-                            <div key={category} className="category-ingredient-container">
-                                <h6 className={`${sortBy === 'date' ? 'ingredient-date' : 'ingredient-category'}`}>{category}</h6>
-                                {ingredients.map((ingredient, index) => (
-                                    <GroceryListItem
-                                        key={ingredient.name + '-' + index}
-                                        {...{ ...ingredient }}
-                                        onInputChange={(value) => updateItem(ingredient, { name: value })}
-                                        onCheckboxChange={() => updateItem(ingredient, { checked: !ingredient.checked })}
-                                        onCategoryChange={(value) => updateItem(ingredient, { category: value })}
-                                        openEditModal={() => openEditModal(ingredient)}
-                                        onEmptyInputChange={() => removeItem(ingredient.index)}
-                                        sortBy={sortBy}
-                                    />
-                                ))}
-                            </div>
-                        ))}
-                    </div>
-                    <div className="modal-footer">
-                        <div className="delete-buttons-container">
-                            <span onClick={groceryList.filter(item => item.checked).length > 0 ? () => openDeleteModal('checked') : undefined} className={groceryList.filter(item => item.checked).length > 0 ? 'has-values' : ''}>Delete Checked</span>
-                            <span onClick={groceryList.length > 0 ? () => openDeleteModal('all') : undefined} className={groceryList.length > 0 ? 'has-values' : ''}>Delete All</span>
-                        </div>
-                        <SortBy options={[{ id: 'category', label: 'Category' }, { id: 'date', label: 'Date' }]} setSortBy={setSortBy} sortBy={sortBy} />
-                    </div>
+                    <GroceryListModalHeader
+                        handleClose={handleClose}
+                        setSelectedView={setSelectedView}
+                        selectedView={selectedView}
+                    />
+                    {selectedView === 'groceryList' && (
+                        <GroceryListModalContent
+                            {...{
+                                groceryList,
+                                setGroceryList,
+                                setSortBy,
+                                sortBy,
+                                setIsDeleteModalOpen,
+                                setIsEditModalOpen,
+                                setOriginalItemToEdit,
+                                setItemToEdit,
+                                setDeleteType,
+                                updateItem
+                            }}
+                        />
+                    )}
                 </div>
-                {isDeleteModalOpen && (
-                    <DeleteGroceryListModal
-                        deleteTitle={deleteTitle}
-                        closeDeleteModal={closeDeleteModal}
-                        handleDelete={handleDelete}
-                    />
-                )}
-                {isEditModalOpen && originalItemToEdit && (
-                    <EditGroceryListItemModal
-                        itemToEdit={itemToEdit}
-                        setItemToEdit={setItemToEdit}
-                        originalItemToEdit={originalItemToEdit}
-                        updateItem={updateItem}
-                        closeEditModal={closeEditModal}
-                        categories={categories}
-                        isCategoryDropdownOpen={isCategoryDropdownOpen}
-                        setIsCategoryDropdownOpen={setIsCategoryDropdownOpen}
-                    />
-                )}
             </div>
+            {isDeleteModalOpen && (
+                <DeleteGroceryListModal
+                    deleteTitle={deleteTitle}
+                    closeDeleteModal={closeDeleteModal}
+                    handleDelete={handleDelete}
+                />
+            )}
+            {isEditModalOpen && originalItemToEdit && (
+                <EditGroceryListItemModal
+                    itemToEdit={itemToEdit}
+                    setItemToEdit={setItemToEdit}
+                    originalItemToEdit={originalItemToEdit}
+                    updateItem={updateItem}
+                    closeEditModal={closeEditModal}
+                    isCategoryDropdownOpen={isCategoryDropdownOpen}
+                    setIsCategoryDropdownOpen={setIsCategoryDropdownOpen}
+                />
+            )}
         </>
     )
 }

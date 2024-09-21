@@ -3,7 +3,7 @@ import { useQueryClient } from 'react-query';
 import { getAsyncData, useGetData } from '../../../hooks';
 import { Loader } from '../../Loader';
 import { NonDashboardPage } from '../../Page';
-import list from '../assets/list.png';
+import list from '../../../Assets/list.png';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { useGroceryList } from '../hooks/use-grocery-list';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
@@ -219,7 +219,7 @@ export const Recipe = ({ match }) => {
         </>
     ) : null;
 
-    const { show: showGroceryList, setShow: setShowGroceryList, handleClose: closeGroceryListModal, handleOpen: openGroceryListModal, groceryList, setGroceryList } = useGroceryList();
+    const { show: showGroceryList, handleClose: closeGroceryListModal, handleOpen: openGroceryListModal, groceryList, setGroceryList } = useGroceryList();
 
     const [isAddToGroceryListModalOpen, setIsAddToGroceryListModalOpen] = useState(false);
 
@@ -445,7 +445,12 @@ export const Recipe = ({ match }) => {
             )}
 
             {showGroceryList && (
-                <GroceryListModal show={showGroceryList} setShow={setShowGroceryList} handleClose={closeGroceryListModal} groceryList={groceryList} setGroceryList={setGroceryList} />
+                <GroceryListModal
+                    groceryList={groceryList}
+                    handleClose={closeGroceryListModal}
+                    show={showGroceryList}
+                    setGroceryList={setGroceryList}
+                />
             )}
 
             <div className={`overlay ${isAddToGroceryListModalOpen ? 'opened' : ''}`} onClick={closeAddToGroceryListModal} />

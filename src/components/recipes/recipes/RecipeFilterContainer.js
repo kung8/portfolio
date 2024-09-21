@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import arrow from '../assets/arrow.png';
-import check from '../assets/check.png';
-import greenCheck from '../assets/green-check.png';
-import partial from '../assets/partial.png';
+import check from '../../../Assets/check.png';
+import greenCheck from '../../../Assets/green-check.png';
+import partial from '../../../Assets/partial.png';
+import { Dropdown } from "../../dropdown/dropdown";
 
 export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFilters, setSelectedFilters, shownFilters, setShownFilters }) => {
     const show = shownFilters[type];
@@ -27,38 +27,18 @@ export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFi
     return (
         <div className="filter-container">
             <h4>{heading}</h4>
-            <div className={`selected-filters ${show ? 'is-open' : ''}`}>
-                <div className={`selected-filter`} onClick={(e) => {
-                    e.stopPropagation();
-                    const newShownFilters = { ...shownFilters };
-                    Object.keys(newShownFilters).forEach(key => newShownFilters[key] = false);
-                    setShownFilters({ ...newShownFilters, [type]: !shownFilters[type] })
-                }}>
-                    <div>
-                        {selectedFilters[type].length > 1 ? (
-                            <div>
-                                <span className="selected-filter-chip">{selectedFilters[type][0]}</span>
-                                <span className="additional-filter-text">+ {selectedFilters[type].slice(1).length}</span>
-                            </div>
-                        ) : selectedFilters[type].length ? (
-                            <span className="selected-filter-chip">{selectedFilters[type][0]}</span>
-                        ) : (
-                            <span className="no-selected-filter">No selected {type.toLowerCase()}</span>
-                        )}
-                    </div>
-                    <img src={arrow} alt="arrow" className={`icon chevron-arrow ${show ? 'is-open' : ''}`} />
-                </div>
-                {show && (
-                    <div className="filter-selector-container">
-                        <span 
-                            className="select-all-text" 
+            <Dropdown
+                DropdownContent={(
+                    <>
+                        <span
+                            className="select-all-text"
                             onClick={(e) => {
-                            e.stopPropagation();
-                            if (filterOptions.length && filterOptions.length === selectedFilters[type]?.length) {
-                                deselectAllFilters(type);
-                            } else {
-                                selectAllFilters(type, filterOptions);
-                            }
+                                e.stopPropagation();
+                                if (filterOptions.length && filterOptions.length === selectedFilters[type]?.length) {
+                                    deselectAllFilters(type);
+                                } else {
+                                    selectAllFilters(type, filterOptions);
+                                }
                             }}
                         >
                             {filterOptions.length && filterOptions.length === selectedFilters[type]?.length ? 'Deselect All' : 'Select All'}
@@ -72,18 +52,39 @@ export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFi
                         </span>
                         <ul className="filter-selector">
                             {filterOptions.map((option) => (
-                                <FilterListItem 
-                                    key={option} 
-                                    option={option} 
-                                    type={type} 
-                                    selectedFilters={selectedFilters} 
-                                    handleFilterSelector={handleFilterSelector} 
+                                <FilterListItem
+                                    key={option}
+                                    option={option}
+                                    type={type}
+                                    selectedFilters={selectedFilters}
+                                    handleFilterSelector={handleFilterSelector}
                                 />
                             ))}
                         </ul>
+                    </>
+                )}
+                dropdownOnClick={(e) => {
+                    e.stopPropagation();
+                    const newShownFilters = { ...shownFilters };
+                    Object.keys(newShownFilters).forEach(key => newShownFilters[key] = false);
+                    setShownFilters({ ...newShownFilters, [type]: !shownFilters[type] })
+                }}
+                DropdownSelectorLeftContent={(
+                    <div>
+                        {selectedFilters[type].length > 1 ? (
+                            <div>
+                                <span className="selected-filter-chip">{selectedFilters[type][0]}</span>
+                                <span className="additional-filter-text">+ {selectedFilters[type].slice(1).length}</span>
+                            </div>
+                        ) : selectedFilters[type].length ? (
+                            <span className="selected-filter-chip">{selectedFilters[type][0]}</span>
+                        ) : (
+                            <span className="no-selected-filter">No selected {type.toLowerCase()}</span>
+                        )}
                     </div>
                 )}
-            </div>
+                show={show}
+            />
         </div>
     )
 }

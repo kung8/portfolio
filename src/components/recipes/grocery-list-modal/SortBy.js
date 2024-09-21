@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Dropdown } from '../../dropdown/dropdown';
 export const SortBy = ({ options, setSortBy, sortBy }) => {
+    const [show, setShow] = useState(false);
     return (
-        <div className="sort-by-container">
-            <select onChange={(e) => setSortBy(e.target.value)} defaultValue={sortBy}>
-                {options.map(({ id, label }) => (
-                    <option key={id} value={id}>{label}</option>
-                ))}
-            </select>
-        </div>
+        <Dropdown
+            DropdownSelectorLeftContent={<span className="dropdown-label">{options.find(({ id }) => id === sortBy).label}</span>}
+            dropdownOnClick={() => setShow(!show)}
+            DropdownContent={options.map(({ id, label }) => (
+                <li
+                    key={id}
+                    onClick={() => {
+                        setSortBy(id);
+                        setShow(false);
+                    }}
+                >{label}</li>
+            ))}
+            openAbove
+            show={show}
+        />
     )
 }
