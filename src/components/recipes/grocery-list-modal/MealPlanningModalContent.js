@@ -2,8 +2,7 @@ import React from 'react';
 import dayjs from 'dayjs';
 import { SortBy } from './SortBy';
 import { MealItem } from './MealItem';
-import { MEAL_PLAN_MEAL_TYPES } from '../constants';
-import { DATE_FORMAT, READABLE_LONG_DATE_FORMAT, READABLE_SHORT_DATE_FORMAT } from '../constants';
+import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_SHORT_DATE, READABLE_SHORT_DATE_WITH_DAY_OF_WEEK, READABLE_SHORT_DATE_WITH_YEAR } from '../constants';
 
 export const MealPlanningModalContent = ({
     mealPlan,
@@ -89,13 +88,26 @@ export const MealPlanningModalContent = ({
         setDeleteType(type);
     }
 
+    const getDateByRelativity = (date) => {
+        const today = dayjs().format(DATE_FORMAT);
+        const tomorrow = dayjs(today).add(1, 'day').format(DATE_FORMAT);
+        const withinWeek = dayjs(today).isBefore(date) && dayjs(today).add(1, 'week').isAfter(date);
+        const exactlyOneWeek = dayjs(today).add(1, 'week').isSame(date);
+
+        if (date === today) return 'Today (' + dayjs(date).format(READABLE_SHORT_DATE) + ')';
+        if (date === tomorrow) return 'Tomorrow (' + dayjs(date).format(READABLE_SHORT_DATE) + ')';
+        if (withinWeek) return 'This ' + dayjs(date).format(READABLE_SHORT_DATE_WITH_DAY_OF_WEEK);
+        if (exactlyOneWeek) return 'Next ' + dayjs(date).format(READABLE_SHORT_DATE_WITH_DAY_OF_WEEK);
+        return dayjs(date).format(READABLE_SHORT_DATE_WITH_DAY_OF_WEEK);
+    }
+
     return (
         <>
             <div className="meal-planning">
                 {dates.map((date, dateIndex) => Array.isArray(date) ? (
                     <div key={dateIndex} className="meal-plan-container">
                         <div className="meal-plan-header">
-                            <span className="meal-plan-date">{dayjs(date[0]).format(READABLE_SHORT_DATE_FORMAT)} - {dayjs(date[1]).format(READABLE_SHORT_DATE_FORMAT)}</span>
+                            <span className="meal-plan-date">{dayjs(date[0]).format(READABLE_SHORT_DATE_WITH_YEAR)} - {dayjs(date[1]).format(READABLE_SHORT_DATE_WITH_YEAR)}</span>
                         </div>
                         {!!displayedData[date.join(' - ')]?.length && (<ul className="meals-container">
                             {displayedData[date.join(' - ')].sort((a, b) => {
@@ -142,7 +154,8 @@ export const MealPlanningModalContent = ({
                     <div key={dateIndex} className="meal-plan-container">
                         <div className="meal-plan-header">
                             <span className="meal-plan-date">
-                                {dayjs(date).format(READABLE_LONG_DATE_FORMAT)}
+                                {getDateByRelativity(date)}
+                                {/* {dayjs(date).format(READABLE_LONG_DATE_FORMAT)} */}
                             </span>
                         </div>
                         <div className="meals-for-day-container">
