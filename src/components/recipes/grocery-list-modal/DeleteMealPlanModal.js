@@ -1,8 +1,8 @@
 import React from 'react';
 import closeBtn from '../../../Assets/x.png';
 
-export const DeleteGroceryListModal = ({
-    closeDeleteIngredientModal,
+export const DeleteMealPlanModal = ({
+    closeDeleteMealPlanModal,
     deleteType,
     setMealPlan,
 }) => {
@@ -15,7 +15,7 @@ export const DeleteGroceryListModal = ({
         } else if (deleteType === 'all') {
             setMealPlan([]);
         }
-        closeDeleteIngredientModal();
+        closeDeleteMealPlanModal();
     }
 
     return (
@@ -23,10 +23,10 @@ export const DeleteGroceryListModal = ({
             <div className="modal-content">
                 <div className="modal-header">
                     <h3>{deleteTitle}</h3>
-                    <img src={closeBtn} alt="close" onClick={closeDeleteIngredientModal} />
+                    <img src={closeBtn} alt="close" onClick={closeDeleteMealPlanModal} />
                 </div>
                 <div className="modal-footer">
-                    <button className="cancel-btn" onClick={closeDeleteIngredientModal}>No</button>
+                    <button className="cancel-btn" onClick={closeDeleteMealPlanModal}>No</button>
                     <button className="delete-btn" onClick={handleDelete}>Yes</button>
                 </div>
             </div>

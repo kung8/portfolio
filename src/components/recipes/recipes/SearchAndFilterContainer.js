@@ -32,13 +32,11 @@ export const FilterContainer = ({
 };
 
 export const SearchAndFilterContainer = ({
-    handleClose,
-    handleOpen,
+    imageOnClick,
     search,
     setSearch,
     setShow,
     show,
-    showGroceryList,
 }) => (
     <div className="search-and-filter-container">
         <div className={`search-bar ${search ? 'contains-search' : ''}`}>
@@ -61,6 +59,6 @@ export const SearchAndFilterContainer = ({
             <div className="middle-bar"></div>
             <div className="bottom-bar"></div>
         </div>
-        <img src={list} alt="list" className="list-img" onClick={showGroceryList ? handleClose : handleOpen} />
+        <img src={list} alt="list" className="list-img" onClick={imageOnClick} />
     </div>
 );

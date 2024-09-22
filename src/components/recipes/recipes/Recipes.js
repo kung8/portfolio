@@ -12,6 +12,8 @@ import { TopArrow } from './TopArrow';
 import { useGroceryList } from '../hooks/use-grocery-list';
 import { useFilters } from '../hooks/use-filters';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
+import { useMealPlanning } from '../hooks/use-meal-planning';
+import { SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 
 export const initialShownFilters = {
     category: false,
@@ -100,8 +102,44 @@ export const Recipes = ({ history }) => {
         }, 300);
     }
 
-    const { show: showGroceryList, handleClose, handleOpen, groceryList, setGroceryList } = useGroceryList();
+    const { show: showGroceryList, setShow: setShowGroceryList, handleClose: closeGroceryListModal, handleOpen: openGroceryListModal, groceryList, setGroceryList } = useGroceryList();
+    const { show: showMealPlanning, setShow: setShowMealPlanning, handleClose: closeMealPlanningModal, handleOpen: openMealPlanningModal, mealPlan, setMealPlan } = useMealPlanning();
     const { filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
+
+    const getModalClose = () => {
+        const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
+        if (selectedModalView === 'mealPlanning') {
+            closeMealPlanningModal();
+        } else if (selectedModalView === 'groceryList') {
+            closeGroceryListModal();
+        }
+    }
+
+    const getModalOpen = () => {
+        const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
+        if (selectedModalView === 'mealPlanning') {
+            openMealPlanningModal();
+        } else if (selectedModalView === 'groceryList') {
+            openGroceryListModal();
+        }
+    }
+
+    const imageOnClick = () => {
+        const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);        
+        if (selectedModalView === 'mealPlanning') {
+            if (showMealPlanning) {
+                closeMealPlanningModal();
+            } else {
+                openMealPlanningModal();
+            }
+        } else if (selectedModalView === 'groceryList') {
+            if (showGroceryList) {
+                closeGroceryListModal();
+            } else {
+                openGroceryListModal();
+            }
+        }
+    }
 
     const filterProps = {
         filteredRecipes,
@@ -117,16 +155,21 @@ export const Recipes = ({ history }) => {
 
     const groceryListProps = {
         groceryList,
-        handleClose,
-        handleOpen,
+        handleClose: getModalClose,
+        handleOpen: getModalOpen,
         showGroceryList,
         setGroceryList,
     };
 
+    const handleSelectedViewChange = (newSelectedView) => {
+        setShowMealPlanning(newSelectedView === 'mealPlanning');
+        setShowGroceryList(newSelectedView === 'groceryList');
+    }    
+
     return (
         <NonDashboardPage mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`} onClick={resetShownFilters}>
             <NonDashboardPage.Header title='Recipes'>
-                <SearchAndFilterContainer {...{ ...filterProps, ...groceryListProps }} />
+                <SearchAndFilterContainer {...{ ...filterProps, ...groceryListProps, imageOnClick }} />
             </NonDashboardPage.Header>
 
             {show && <FilterContainer {...{ ...filterProps }} />}
@@ -153,8 +196,16 @@ export const Recipes = ({ history }) => {
 
             {showArrow && <TopArrow />}
 
-            {showGroceryList && (
-                <GroceryListModal {...{ ...groceryListProps, show: showGroceryList }} />
+            {(showGroceryList || showMealPlanning) && (
+                <GroceryListModal
+                    {...{
+                        ...groceryListProps,
+                        show: showGroceryList || showMealPlanning,
+                        mealPlan,
+                        setMealPlan,
+                        handleSelectedViewChange,
+                    }}
+                />
             )}
         </NonDashboardPage>
     )

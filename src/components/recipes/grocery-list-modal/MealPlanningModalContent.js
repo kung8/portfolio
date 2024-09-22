@@ -1,0 +1,190 @@
+import React from 'react';
+import dayjs from 'dayjs';
+import { SortBy } from './SortBy';
+import { MealItem } from './MealItem';
+import { MEAL_PLAN_MEAL_TYPES } from '../constants';
+
+const DATE_FORMAT = 'M/DD/YYYY';
+const READABLE_LONG_DATE_FORMAT = 'MMMM D, YYYY (dddd)';
+const READABLE_SHORT_DATE_FORMAT = 'MMM D, YYYY';
+
+export const MealPlanningModalContent = ({
+    mealPlan,
+    setMealPlan,
+    setSortBy,
+    sortBy,
+    setIsDeleteMealPlanModalOpen,
+    setIsEditMealPlanModalOpen,
+    setOriginalMealToEdit,
+    setMealToEdit,
+    setDeleteType,
+    updateMeal
+}) => {
+    const getDays = () => {
+        // get only a month out
+        const days = [];
+        for (let i = 0; i < 30; i++) {
+            days.push(dayjs().add(i, 'day').format(DATE_FORMAT));
+        }
+        return days;
+    }
+
+    const getWeeks = () => {
+        // gets 12 weeks out
+        const weeks = [];
+        const closestSunday = dayjs().startOf('week').format(DATE_FORMAT);
+        for (let i = 0; i < 13; i++) {
+            weeks.push([
+                dayjs(closestSunday).add(i, 'week').format(DATE_FORMAT),
+                dayjs(closestSunday).add(i, 'week').add(6, 'day').format(DATE_FORMAT)
+            ]);
+        }
+        return weeks;
+    }
+
+    const getMonths = () => {
+        // get 6 months out
+        const months = [];
+        const closestFirstOfMonth = dayjs().startOf('month').format(DATE_FORMAT);
+        for (let i = 0; i < 7; i++) {
+            months.push([
+                dayjs(closestFirstOfMonth).add(i, 'month').format(DATE_FORMAT),
+                dayjs(closestFirstOfMonth).add(i, 'month').endOf('month').format(DATE_FORMAT)
+            ]);
+        }
+        return months;
+    }
+
+    const dates = sortBy === 'daily' ? getDays() : sortBy === 'weekly' ? getWeeks() : getMonths();
+
+    const indexedMealPlan = mealPlan.map((item, index) => ({ ...item, index }));
+    const data = sortBy === 'daily' ? indexedMealPlan.reduce((acc, item) => {
+        if (!acc[item.date]) {
+            acc[item.date] = [];
+        }
+        acc[item.date].push(item);
+        return acc;
+    }, {}) : undefined;
+
+    const groupedData = sortBy !== 'daily' ? indexedMealPlan.reduce((acc, item) => {
+        const foundRange = dates.find(date => {
+            const isBefore = dayjs(item.date).isAfter(date[0]) || dayjs(item.date).isSame(date[0]);
+            const isAfter = dayjs(date[1]).isAfter(dayjs(item.date)) || dayjs(date[1]).isSame(dayjs(item.date));
+            return isBefore && isAfter;
+        });
+
+        if (foundRange) {
+            const formattedRange = foundRange.join(' - ');
+            return { ...acc, [formattedRange]: [...(acc[formattedRange] ?? []), item] };
+        }
+        return { ...acc };
+    }, {}) : undefined;
+
+    const displayedData = data ?? groupedData;
+
+    const removeMenuItem = (index) => {
+        const newMealPlan = [...indexedMealPlan].filter(item => item.index !== index);
+        setMealPlan(newMealPlan);
+    }
+
+    const openDeleteModal = (type) => {
+        setIsDeleteMealPlanModalOpen(true);
+        setDeleteType(type);
+    }
+
+    return (
+        <>
+            <div className="meal-planning">
+                {dates.map((date, dateIndex) => Array.isArray(date) ? (
+                    <div key={dateIndex} className="meal-plan-container">
+                        <div className="meal-plan-header">
+                            <span className="meal-plan-date">{dayjs(date[0]).format(READABLE_SHORT_DATE_FORMAT)} - {dayjs(date[1]).format(READABLE_SHORT_DATE_FORMAT)}</span>
+                        </div>
+                        {!!displayedData[date.join(' - ')]?.length && (<ul className="meals-container">
+                            {displayedData[date.join(' - ')]?.map((item, index) =>
+                                <MealItem
+                                    key={index}
+                                    item={item}
+                                    onCheckboxChange={() => updateMeal(item, { checked: !item.checked })}
+                                    onEditClick={() => {
+                                        setIsEditMealPlanModalOpen(true);
+                                        setOriginalMealToEdit(item);
+                                        setMealToEdit(item);
+                                    }}
+                                    onEmptyInputChange={() => removeMenuItem(item.index)}
+                                    onInputChange={(value) => updateMeal(item, { recipeName: value })}
+                                    showDate
+                                    showType
+                                />
+                            )}
+                        </ul>)}
+                        <span
+                            className="add-meal-item-btn"
+                            onClick={() => {
+                                setIsEditMealPlanModalOpen(true);
+                                setOriginalMealToEdit(null);
+                                setMealToEdit({ date: date[1], type: 'Breakfast' });
+                            }}
+                        >
+                            Add
+                        </span>
+                    </div>
+                ) : (
+                    <div key={dateIndex} className="meal-plan-container">
+                        <div className="meal-plan-header">
+                            <span className="meal-plan-date">
+                                {dayjs(date).format(READABLE_LONG_DATE_FORMAT)}
+                            </span>
+                        </div>
+                        <div className="meals-for-day-container">
+                            {MEAL_PLAN_MEAL_TYPES.map((type) =>
+                                <div key={type} className="meal-type-container">
+                                    <h6 className="meal-type-header">{type}</h6>
+                                    {!!displayedData[date]?.filter(item => item.type === type)?.length && (
+                                        <ul className="meals-container">
+                                            {(displayedData[date].filter(item => item.type === type) ?? [])?.map((item, index) =>
+                                                <MealItem
+                                                    key={index}
+                                                    item={item}
+                                                    onCheckboxChange={() => updateMeal(item, { checked: !item.checked })}
+                                                    onEditClick={() => {
+                                                        setIsEditMealPlanModalOpen(true);
+                                                        setOriginalMealToEdit(item);
+                                                        setMealToEdit(item);
+                                                    }}
+                                                    onEmptyInputChange={() => removeMenuItem(item.index)}
+                                                    onInputChange={(value) => updateMeal(item, { recipeName: value })}
+                                                />
+                                            )}
+                                        </ul>
+                                    )}
+                                    <span
+                                        className="add-meal-item-btn"
+                                        onClick={() => {
+                                            setIsEditMealPlanModalOpen(true);
+                                            setOriginalMealToEdit(null);
+                                            setMealToEdit({ date, type });
+                                        }}
+                                    >
+                                        Add
+                                    </span>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                ))}
+            </div>
+            <div className="modal-footer">
+                <div className="delete-buttons-container">
+                    <span onClick={mealPlan.filter(item => item.checked).length > 0 ? () => openDeleteModal('checked') : undefined} className={mealPlan.filter(item => item.checked).length > 0 ? 'has-values' : ''}>Delete Checked</span>
+                    <span onClick={mealPlan.length > 0 ? () => openDeleteModal('all') : undefined} className={mealPlan.length > 0 ? 'has-values' : ''}>Delete All</span>
+                </div>
+                <SortBy
+                    options={[{ id: 'daily', label: 'Daily' }, { id: 'weekly', label: 'Weekly' }, { id: 'monthly', label: 'Monthly' }]}
+                    setSortBy={setSortBy}
+                    sortBy={sortBy}
+                />
+            </div>
+        </>
+    )
+}

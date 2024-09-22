@@ -12,10 +12,9 @@ export const EditGroceryListItemModal = ({
     setItemToEdit,
     originalItemToEdit,
     updateItem,
-    closeEditModal,
-    isCategoryDropdownOpen,
-    setIsCategoryDropdownOpen
+    closeEditIngredientModal,
 }) => {
+    const [isCategoryDropdownOpen, setIsCategoryDropdownOpen] = useState(false);
     const [date, setDate] = useState(originalItemToEdit.date);
     const [isCalendarOpen, setIsCalendarOpen] = useState(false);
     const today = dayjs();
@@ -32,7 +31,7 @@ export const EditGroceryListItemModal = ({
                 <div className="top-container">
                     <div className="modal-header">
                         <h3>Update Ingredient</h3>
-                        <img src={xBtn} alt="close" onClick={closeEditModal} />
+                        <img src={xBtn} alt="close" onClick={closeEditIngredientModal} />
                     </div>
                     <div className="modal-body">
                         <input className="edit-ingredient-input" placeholder="Ingredient Name" value={itemToEdit?.name} onChange={(e) => setItemToEdit({ ...itemToEdit, name: e.target.value })} />
@@ -92,7 +91,7 @@ export const EditGroceryListItemModal = ({
                     </div>
                 </div>
                 <div className="modal-footer">
-                    <button className="cancel-btn" onClick={closeEditModal}>Cancel</button>
+                    <button className="cancel-btn" onClick={closeEditIngredientModal}>Cancel</button>
                     <button
                         className="edit-btn"
                         disabled={(
@@ -104,7 +103,7 @@ export const EditGroceryListItemModal = ({
                         }
                         onClick={() => {
                             updateItem(originalItemToEdit, itemToEdit);
-                            closeEditModal();
+                            closeEditIngredientModal();
                         }}
                     >
                         Save

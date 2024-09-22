@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useCategoryName } from './use-category-name';
-
-const GROCERY_LIST_LOCAL_STORAGE_KEY = 'groceryList';
+import { GROCERY_LIST_LOCAL_STORAGE_KEY } from '../constants';
 
 export const useGroceryList = () => {
     const [show, setShow] = useState(false);

@@ -9,8 +9,8 @@ export const GroceryListModalContent = ({
     setGroceryList,
     setSortBy,
     sortBy,
-    setIsDeleteModalOpen,
-    setIsEditModalOpen,
+    setIsDeleteIngredientModalOpen,
+    setIsEditIngredientModalOpen,
     setOriginalItemToEdit,
     setItemToEdit,
     setDeleteType,
@@ -52,18 +52,18 @@ export const GroceryListModalContent = ({
 
     const displayedList = sortBy === 'category' ? displayedIngredientsListByCategory : displayedIngredientsListByDate
 
-    const removeItem = async (index) => {
+    const removeItem = (index) => {
         const newGroceryList = [...groceryList].filter(ingredient => ingredient.index !== index);
         setGroceryList(newGroceryList);
     }
 
     const openDeleteModal = (type) => {
-        setIsDeleteModalOpen(true);
+        setIsDeleteIngredientModalOpen(true);
         setDeleteType(type);
     }
 
     const openEditModal = (item) => {
-        setIsEditModalOpen(true);
+        setIsEditIngredientModalOpen(true);
         setOriginalItemToEdit(item);
         setItemToEdit(item);
     }

@@ -6,8 +6,10 @@ import { NonDashboardPage } from '../../Page';
 import list from '../../../Assets/list.png';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { useGroceryList } from '../hooks/use-grocery-list';
+import { useMealPlanning } from '../hooks/use-meal-planning';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
+import { SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 
 const formatIngredientItem = (item) => {
     const amount = item.amount ? item.amount + ' ' : '';
@@ -219,11 +221,18 @@ export const Recipe = ({ match }) => {
         </>
     ) : null;
 
-    const { show: showGroceryList, handleClose: closeGroceryListModal, handleOpen: openGroceryListModal, groceryList, setGroceryList } = useGroceryList();
+    const { show: showGroceryList, setShow: setShowGroceryList, handleClose: closeGroceryListModal, handleOpen: openGroceryListModal, groceryList, setGroceryList } = useGroceryList();
+    const { show: showMealPlanning, setShow: setShowMealPlanning, handleClose: closeMealPlanningModal, handleOpen: openMealPlanningModal, mealPlan, setMealPlan } = useMealPlanning();
 
     const [isAddToGroceryListModalOpen, setIsAddToGroceryListModalOpen] = useState(false);
 
-    const handleAddToGroceryList = async (date) => {
+    const handleAddToGroceryList = async (date, type) => {
+        // Adds to Meal Plan
+        const newMealPlan = [...mealPlan, { recipeName: item.name, date, type, checked: false }];
+        setMealPlan(newMealPlan);
+        localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, 'groceryList');
+
+        // Adds to Grocery List
         const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {
             if (item.linkId) {
                 const response = await getAsyncData('recipes', item.linkId);
@@ -259,6 +268,36 @@ export const Recipe = ({ match }) => {
         // eslint-disable-next-line
     }, [isAddToGroceryListModalOpen]);
 
+    const getModalOnClick = () => {
+        const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
+        if (selectedModalView === 'mealPlanning') {
+            if (showMealPlanning) {
+                closeMealPlanningModal();
+            } else {
+                openMealPlanningModal();
+            }
+        } else {
+            if (showGroceryList) {
+                closeGroceryListModal();
+            } else {
+                openGroceryListModal();
+            }
+        }
+    }
+
+    const getModalClose = () => {
+        if (showGroceryList) {
+            closeGroceryListModal();
+        } else if (showMealPlanning) {
+            closeMealPlanningModal();
+        }
+    }
+
+    const handleSelectedViewChange = (newSelectedView) => {
+        setShowMealPlanning(newSelectedView === 'mealPlanning');
+        setShowGroceryList(newSelectedView === 'groceryList');
+    }
+
     return (
         <NonDashboardPage mainClassName={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
             <NonDashboardPage.Header
@@ -268,7 +307,7 @@ export const Recipe = ({ match }) => {
                 customTitle={(
                     <div className="custom-heading-wrapper">
                         <h1 className="heading">{item?.name ?? ''}</h1>
-                        <img src={list} alt="list" className="list-img" onClick={showGroceryList ? closeGroceryListModal : openGroceryListModal} />
+                        <img src={list} alt="list" className="list-img" onClick={getModalOnClick} />
                     </div>
                 )}
             >
@@ -444,18 +483,21 @@ export const Recipe = ({ match }) => {
                 <EmailRecipe />
             )}
 
-            {showGroceryList && (
+            {(showGroceryList || showMealPlanning) && (
                 <GroceryListModal
                     groceryList={groceryList}
-                    handleClose={closeGroceryListModal}
-                    show={showGroceryList}
+                    handleClose={getModalClose}
+                    mealPlan={mealPlan}
+                    show={showGroceryList || showMealPlanning}
                     setGroceryList={setGroceryList}
+                    setMealPlan={setMealPlan}
+                    handleSelectedViewChange={handleSelectedViewChange}
                 />
             )}
 
             <div className={`overlay ${isAddToGroceryListModalOpen ? 'opened' : ''}`} onClick={closeAddToGroceryListModal} />
             {isAddToGroceryListModalOpen && (
-                <AddToGroceryListModal closeModal={closeAddToGroceryListModal} onAdd={handleAddToGroceryList} />
+                <AddToGroceryListModal closeModal={closeAddToGroceryListModal} onAdd={handleAddToGroceryList} initialType={item.category?.[0]} />
             )}
         </NonDashboardPage>
     )

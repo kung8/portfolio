@@ -161,6 +161,134 @@
         }
     }
 
+    .meal-planning {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        margin-top: 16px;
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+        scrollbar-width: none;
+
+        .meal-plan-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+
+            .meal-plan-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                column-gap: 8px;
+
+                .meal-plan-date {
+                    font-size: 12px;
+                    color: $sunshine;
+                }
+            }
+
+            .meals-for-day-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+
+                .meal-type-container {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 8px;
+
+                    .meal-type-header {
+                        font-size: 12px;
+                        color: $default;
+                        margin-bottom: 4px;
+                    }
+                }
+
+                .meals-container {
+                    padding-left: 16px;
+                }
+
+                .add-meal-item-btn {
+                    padding-left: 16px;
+                }
+            }
+            .meals-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+                margin-bottom: 8px;
+            }
+
+            .meal-item-container {
+                font-size: 16px;
+                display: flex;
+                justify-content: space-between;
+                column-gap: 8px;
+
+                input[type="checkbox"] {
+                    height: 20px;
+                    width: 20px;
+                }
+
+                .meal-item-content {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 6px;
+                }
+
+                .meal-text-input-container {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 8px;
+
+                    input[type="text"] {
+                        background: transparent;
+                        outline: none;
+                        border: none;
+                        color: $white;
+                        width: calc(100% - 24px);
+                        font-size: 16px;
+                    }
+
+                    label {
+                        &.checked {
+                            color: $default;
+                            text-decoration: line-through;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .meal-item-date {
+                    font-size: 12px;
+                    color: $default;
+                }
+
+                .meal-item-meal-type {
+                    font-size: 12px;
+                    color: $light;
+                }
+            }
+
+            .add-meal-item-btn {
+                cursor: pointer;
+                color: $primary-blue;
+                font-size: 12px;
+            }
+
+            .edit-icon {
+                height: 12px;
+                cursor: pointer;
+            }
+        }
+
+        .react-calendar {
+            position: relative;
+        }
+    }
+
     .modal-footer {
         display: flex;
         align-items: center;
@@ -186,7 +314,7 @@
                 @include down($mobile) {
                     font-size: 10px;
                 }
-    
+
                 &.has-values {
                     color: $primary-blue;
                     cursor: pointer;
@@ -220,24 +348,35 @@
         }
 
         .icon {
-            height: 6px; 
+            height: 6px;
             width: 10px;
         }
     }
 }
 
 .delete-grocery-item-modal,
-.edit-ingredient-modal {
+.edit-ingredient-modal,
+.delete-meal-plan-modal,
+.edit-meal-plan-modal {
     position: absolute;
     top: 50vh;
+    left: 50%;
     z-index: 5;
     padding: 24px;
     background: $dark-aqua;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     width: unquote("min(calc(100% - 16px), 600px)");
 
     &.edit-ingredient-modal {
         height: 320px;
+    }
+
+    &.edit-meal-plan-modal {
+        height: 260px;
+    }
+
+    &.edit-ingredient-modal,
+    &.edit-meal-plan-modal {
         padding: 24px 16px;
         .modal-content {
             justify-content: space-between;
@@ -268,51 +407,6 @@
                     }
                     &::-ms-input-placeholder {
                         color: $default;
-                    }
-                }
-
-                .category-dropdown-container {
-                    position: relative;
-
-                    .selected-category {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        border: 1.5px solid $default;
-                        padding: 6px 12px;
-                        background: $aqua;
-                        font-size: 12px;
-                        cursor: pointer;
-
-                        .chevron-arrow {
-                            height: 12px;
-                            transition: transform 0.3s ease;
-                            &.is-open {
-                                transform: rotate(180deg);
-                            }
-                        }
-                    }
-
-                    .category-selector {
-                        display: none;
-                        position: absolute;
-                        max-height: 150px;
-                        overflow-y: auto;
-                        width: 100%;
-
-                        &.is-open {
-                            display: block;
-                            z-index: 1;
-                        }
-
-                        .category-selector-item {
-                            padding: 6px 12px;
-                            background: $aqua;
-                            border: 1.5px solid $default;
-                            cursor: pointer;
-                            border-top: none;
-                            font-size: 12px;
-                        }
                     }
                 }
             }
@@ -411,6 +505,51 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.category-dropdown-container {
+    position: relative;
+
+    .selected-category {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1.5px solid $default;
+        padding: 6px 12px;
+        background: $aqua;
+        font-size: 12px;
+        cursor: pointer;
+
+        .chevron-arrow {
+            height: 12px;
+            transition: transform 0.3s ease;
+            &.is-open {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .category-selector {
+        display: none;
+        position: absolute;
+        max-height: 150px;
+        overflow-y: auto;
+        width: 100%;
+
+        &.is-open {
+            display: block;
+            z-index: 1;
+        }
+
+        .category-selector-item {
+            padding: 6px 12px;
+            background: $aqua;
+            border: 1.5px solid $default;
+            cursor: pointer;
+            border-top: none;
+            font-size: 12px;
         }
     }
 }
