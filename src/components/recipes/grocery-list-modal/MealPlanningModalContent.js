@@ -98,7 +98,19 @@ export const MealPlanningModalContent = ({
                             <span className="meal-plan-date">{dayjs(date[0]).format(READABLE_SHORT_DATE_FORMAT)} - {dayjs(date[1]).format(READABLE_SHORT_DATE_FORMAT)}</span>
                         </div>
                         {!!displayedData[date.join(' - ')]?.length && (<ul className="meals-container">
-                            {displayedData[date.join(' - ')]?.map((item, index) =>
+                            {displayedData[date.join(' - ')].sort((a, b) => {
+                                if (a.date < b.date) return -1;
+                                if (a.date > b.date) return 1;
+                                if (a.type === 'Breakfast') return -1;
+                                if (b.type === 'Breakfast') return 1;
+                                if (a.type === 'Lunch') return -1;
+                                if (b.type === 'Lunch') return 1;
+                                if (a.type === 'Dinner') return -1;
+                                if (b.type === 'Dinner') return 1;
+                                if (a.type === 'Snack') return -1;
+                                if (b.type === 'Snack') return 1;
+                                return 0;
+                            })?.map((item, index) =>
                                 <MealItem
                                     key={index}
                                     item={item}
