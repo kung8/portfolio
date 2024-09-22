@@ -5,7 +5,7 @@ import closeBtn from '../../../Assets/close.png';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import arrow from '../../../Assets/arrow.png';
-import { MEAL_PLAN_MEAL_TYPES } from '../constants';
+import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_LONG_DATE_FORMAT } from '../constants';
 
 export const AddToGroceryListModal = ({
     closeModal,
@@ -52,7 +52,7 @@ export const AddToGroceryListModal = ({
                         </div>
                         <div className="edit-recipe-date-input">
                             <p className="edit-recipe-date-label-container">
-                                <span className={`edit-recipe-date-label ${!date ? 'is-default' : ''}`} onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? dayjs(date).format('MMMM D, YYYY') : '(Optional) Set when you need it by...'}</span>
+                                <span className={`edit-recipe-date-label ${!date ? 'is-default' : ''}`} onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? dayjs(date).format(READABLE_LONG_DATE_FORMAT) : '(Optional) Set when you need it by...'}</span>
                                 {date && (
                                     <img
                                         className="delete-date-btn"
@@ -66,7 +66,7 @@ export const AddToGroceryListModal = ({
                                 <Calendar
                                     minDate={new Date(today)}
                                     onChange={(value) => {
-                                        const formattedDate = dayjs(value).format('M/D/YYYY');
+                                        const formattedDate = dayjs(value).format(DATE_FORMAT);
                                         setDate(formattedDate);
                                         setIsCalendarOpen(false);
                                     }}

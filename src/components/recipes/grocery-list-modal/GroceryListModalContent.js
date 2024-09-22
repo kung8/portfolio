@@ -3,6 +3,7 @@ import dayjs from 'dayjs';
 import { EmptyGroceryListItem } from './EmptyGroceryListItem';
 import { GroceryListItem } from './GroceryListItem';
 import { SortBy } from './SortBy';
+import { READABLE_LONG_DATE_FORMAT } from '../constants';
 
 export const GroceryListModalContent = ({
     groceryList,
@@ -47,7 +48,7 @@ export const GroceryListModalContent = ({
         return group;
     }, {})).map(([date, ingredients]) => {
         if (date === 'No Specified Date') return ['No Specified Date', ingredients];
-        return [dayjs(date).format('MMMM D, YYYY'), ingredients];
+        return [dayjs(date).format(READABLE_LONG_DATE_FORMAT), ingredients];
     });
 
     const displayedList = sortBy === 'category' ? displayedIngredientsListByCategory : displayedIngredientsListByDate

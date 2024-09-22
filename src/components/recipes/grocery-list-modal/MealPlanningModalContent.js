@@ -3,10 +3,7 @@ import dayjs from 'dayjs';
 import { SortBy } from './SortBy';
 import { MealItem } from './MealItem';
 import { MEAL_PLAN_MEAL_TYPES } from '../constants';
-
-const DATE_FORMAT = 'M/DD/YYYY';
-const READABLE_LONG_DATE_FORMAT = 'MMMM D, YYYY (dddd)';
-const READABLE_SHORT_DATE_FORMAT = 'MMM D, YYYY';
+import { DATE_FORMAT, READABLE_LONG_DATE_FORMAT, READABLE_SHORT_DATE_FORMAT } from '../constants';
 
 export const MealPlanningModalContent = ({
     mealPlan,

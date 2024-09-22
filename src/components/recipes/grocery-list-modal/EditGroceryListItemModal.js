@@ -6,6 +6,7 @@ import arrow from '../../../Assets/arrow.png';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { useGetIngredientCategories } from '../../../hooks';
+import { DATE_FORMAT, READABLE_LONG_DATE_FORMAT } from '../constants';
 
 export const EditGroceryListItemModal = ({
     itemToEdit,
@@ -60,7 +61,7 @@ export const EditGroceryListItemModal = ({
                         <input className="edit-recipe-name-input" placeholder="(Optional) Add what this is needed for..." value={itemToEdit?.recipeName} onChange={(e) => setItemToEdit({ ...itemToEdit, recipeName: e.target.value })} />
                         <div className="edit-recipe-date-input">
                             <p className="edit-recipe-date-label-container">
-                                <span className={`edit-recipe-date-label ${!date ? 'is-default' : ''}`} onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? dayjs(date).format('MMMM D, YYYY') : '(Optional) Set when you need it by...'}</span>
+                                <span className={`edit-recipe-date-label ${!date ? 'is-default' : ''}`} onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? dayjs(date).format(READABLE_LONG_DATE_FORMAT) : '(Optional) Set when you need it by...'}</span>
                                 {date && (
                                     <img
                                         className="delete-date-btn"
@@ -77,7 +78,7 @@ export const EditGroceryListItemModal = ({
                                 <Calendar
                                     minDate={new Date(today)}
                                     onChange={(value) => {
-                                        const formattedDate = dayjs(value).format('M/D/YY');
+                                        const formattedDate = dayjs(value).format(DATE_FORMAT);
                                         setDate(formattedDate);
                                         setItemToEdit({ ...itemToEdit, date: formattedDate });
                                         setIsCalendarOpen(false);
