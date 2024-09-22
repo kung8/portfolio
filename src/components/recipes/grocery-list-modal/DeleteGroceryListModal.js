@@ -4,16 +4,16 @@ import closeBtn from '../../../Assets/x.png';
 export const DeleteGroceryListModal = ({
     closeDeleteIngredientModal,
     deleteType,
-    setMealPlan,
+    setGroceryList,
 }) => {
     const deleteTitle = deleteType === 'all' ? 'Are you sure you want to delete all the items?' : 'Are you sure you want to delete all the checked items?'
 
     const handleDelete = () => {
         if (!deleteType) return;
         if (deleteType === 'checked') {
-            setMealPlan(prev => prev.filter(item => !item.checked));
+            setGroceryList(prev => prev.filter(item => !item.checked));
         } else if (deleteType === 'all') {
-            setMealPlan([]);
+            setGroceryList([]);
         }
         closeDeleteIngredientModal();
     }
