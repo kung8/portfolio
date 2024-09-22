@@ -65,6 +65,7 @@ const japaneseKatsudon = require("./recipes/japanese-katsudon");
 const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
 const koreanFriedChicken = require("./recipes/korean-fried-chicken");
 const khmerRedCurry = require("./recipes/khmer-red-curry");
+const lemonBars = require("./recipes/lemon-bars");
 const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
 const lemonChickenRamen = require("./recipes/lemon-chicken-ramen");
 const macaroniSalad = require("./recipes/macaroni-salad");
@@ -112,10 +113,6 @@ const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
 const vietnamesePho = require("./recipes/vietnamese-pho");
 const waffles = require("./recipes/waffles");
 const wrap = require("./recipes/wrap");
-
-// TODO: Add a way to add recipes to a favorites list and save in local storage
-// TODO: Add websites where to find them?
-// TODO: Add facts to the recipes = nutritional facts, calories, interesting facts about the recipe, origins, etc.
 
 const recipes = [
     padThai,
@@ -225,6 +222,7 @@ const recipes = [
     blondie,
     brownies,
     applePie,
+    lemonBars,
     tedLassoBiscuits,
     noBakeCookie,
     riceKrispyTreats,

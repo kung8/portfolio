@@ -149,6 +149,7 @@ const TYPES = {
     BURGER: 'Burger',
     CAKE: 'Cake',
     COOKIE: 'Cookie',
+    BAR: 'Bar',
 }
 
 module.exports = {
