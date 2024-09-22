@@ -18,6 +18,7 @@ export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChan
 
     useEffect(() => {
         if (recipeName !== inputValue) setInputValue(recipeName);
+        // eslint-disable-next-line
     }, [recipeName])
     
 

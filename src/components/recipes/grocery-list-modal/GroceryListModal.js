@@ -109,6 +109,7 @@ export const GroceryListModal = ({
     useEffect(() => {
         localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, selectedView);
         handleSelectedViewChange(selectedView);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedView]);
     const isGroceryList = selectedView === GROCERY_LIST_VIEW;
     const isMealPlanning = selectedView === MEAL_PLANNING_VIEW;
