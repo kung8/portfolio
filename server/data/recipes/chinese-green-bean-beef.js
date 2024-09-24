@@ -31,7 +31,7 @@ module.exports = {
     cookTime: '20 m',
     separated: true,
     websites: [
-        "https://barefeetinthekitchen.com/thai-steak-and-green-bean-stir-fry/"
+        "https://todayscreativelife.com/chinese-beef-green-beans/"
     ],
     ingredients: [
         { ...CHICKEN_BROTH, amount: '1/3 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
