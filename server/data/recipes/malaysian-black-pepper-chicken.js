@@ -29,7 +29,9 @@ module.exports = {
     yields: '4 - 5 servings',
     prepTime: '45 m',
     cookTime: '20 m',
-    websites: ["https://dapurmalaysia.com/resepi-ayam-black-pepper/"],
+    websites: [
+        "https://dapurmalaysia.com/resepi-ayam-black-pepper/"
+    ],
     separated: true,
     ingredients: [
         { ...SWEET_SOY_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
