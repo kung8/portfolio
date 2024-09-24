@@ -53,14 +53,14 @@ module.exports = {
         { name: 'stove' },
     ],
     supplies: [
-        { name: '2 large frying pans' },
+        { name: 'wok' },
         { name: 'spatula' },
-        { name: 'large mixing bowl' },
+        { name: 'mixing bowl' },
         { name: 'medium bowl' },
     ],
     directions: [
         { step: 'Cut the chicken into 1" cubes.', type: SECTIONS.MARINADE },
-        { step: 'In a bowl, combine the marinade ingredients.', type: SECTIONS.MARINADE },
+        { step: 'In a mixing bowl, combine the marinade ingredients.', type: SECTIONS.MARINADE },
         { step: 'Add chicken. Marinate the chicken for 30 minutes.', type: SECTIONS.MARINADE },
         { step: 'Over medium-high heat, heat 1 Tbsp of oil in a wok.', type: SECTIONS.MAIN },
         { step: 'Cook the chicken in batches if needed. Cook until chicken is cooked through. Remove chicken and set aside.', type: SECTIONS.MAIN },
