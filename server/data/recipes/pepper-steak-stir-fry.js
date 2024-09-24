@@ -29,6 +29,10 @@ module.exports = {
     yields: '4 servings',
     prepTime: '10 m',
     cookTime: '25 m',
+    separated: true,
+    websites: [
+        'https://www.dinneratthezoo.com/pepper-steak-stir-fry/'
+    ],
     ingredients: [
         { ...VEGETABLE_OIL, amount: '2 Tbsp', additionalDetails: 'divided', section: SECTIONS.MAIN },
         { ...RED_BELL_PEPPERS, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },

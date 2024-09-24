@@ -81,7 +81,7 @@ const parfait = require("./recipes/parfait");
 const peachCobbler = require("./recipes/peach-cobbler");
 const peanutBrittle = require("./recipes/peanut-brittle");
 const peppermintBark = require("./recipes/peppermint-bark");
-const pepperSteak = require("./recipes/pepper-steak");
+const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
@@ -137,7 +137,7 @@ const recipes = [
     peruvianAjiDeGallina,
     cilantroLimeChicken,
     lemonChickenOnLettuce,
-    pepperSteak,
+    pepperSteakStirFry,
     lemonChickenRamen,
     chickenRamen,
     bibimbap,
