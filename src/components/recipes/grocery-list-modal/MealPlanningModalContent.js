@@ -155,7 +155,6 @@ export const MealPlanningModalContent = ({
                         <div className="meal-plan-header">
                             <span className="meal-plan-date">
                                 {getDateByRelativity(date)}
-                                {/* {dayjs(date).format(READABLE_LONG_DATE_FORMAT)} */}
                             </span>
                         </div>
                         <div className="meals-for-day-container">

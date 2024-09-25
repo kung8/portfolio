@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import xBtn from '../../../Assets/x.png';
 import closeBtn from '../../../Assets/close.png';
@@ -6,18 +6,29 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import arrow from '../../../Assets/arrow.png';
 import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_LONG_DATE_FORMAT } from '../constants';
+import { useGetRecipeCategories } from '../../../hooks/use-get-recipe-categories';
+import { categorizeRecipeType } from '../categorize-recipe-type';
 
 export const AddToGroceryListModal = ({
     closeModal,
     onAdd,
     initialType,
 }) => {
-    const [type, setType] = useState(initialType ?? MEAL_PLAN_MEAL_TYPES[0]);
+    const [type, setType] = useState(initialType);
     const [isTypeDropdownOpen, setIsTypeDropdownOpen] = useState(false);
 
     const [isCalendarOpen, setIsCalendarOpen] = useState(false);
     const [date, setDate] = useState('');
     const today = dayjs();
+
+    const { data: categoryData } = useGetRecipeCategories();
+    const categories = categoryData?.CATEGORIES ?? [];
+
+    useEffect(() => {
+        if (!type) {
+            setType(categorizeRecipeType(categories[0]));
+        }
+    }, [categoryData]);
 
     return (
         <div className="add-to-grocery-list-modal">

@@ -10,6 +10,7 @@ import { useMealPlanning } from '../hooks/use-meal-planning';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
 import { SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
+import { categorizeRecipeType } from '../categorize-recipe-type';
 
 const formatIngredientItem = (item) => {
     const amount = item.amount ? item.amount + ' ' : '';
@@ -497,7 +498,7 @@ export const Recipe = ({ match }) => {
 
             <div className={`overlay ${isAddToGroceryListModalOpen ? 'opened' : ''}`} onClick={closeAddToGroceryListModal} />
             {isAddToGroceryListModalOpen && (
-                <AddToGroceryListModal closeModal={closeAddToGroceryListModal} onAdd={handleAddToGroceryList} initialType={item.category?.[0]} />
+                <AddToGroceryListModal closeModal={closeAddToGroceryListModal} onAdd={handleAddToGroceryList} initialType={categorizeRecipeType(item.category?.[0])} />
             )}
         </NonDashboardPage>
     )
