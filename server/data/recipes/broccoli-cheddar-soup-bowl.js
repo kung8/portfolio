@@ -19,8 +19,8 @@ const {
 } = require('./ingredients');
 
 module.exports = {
-    cardName: 'Broccoli Cheese Soup Bowl',
-    name: 'Broccoli Cheese Soup Bowl',
+    cardName: 'Broccoli Cheddar Soup Bowl',
+    name: 'Broccoli Cheddar Soup Bowl',
     img: soupBowl,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
