@@ -49,6 +49,7 @@ const fancyLunchables = require("./recipes/fancy-lunchables");
 const frenchCrepe = require("./recipes/french-crepe");
 const frenchToast = require("./recipes/french-toast");
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
+const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
 const graveyardDessert = require("./recipes/graveyard-dessert");
 const greenBeanAlmondine = require("./recipes/green-bean-almondine");
 const hamburger = require("./recipes/hamburger");
@@ -143,6 +144,7 @@ const recipes = [
     chickenRamen,
     bibimbap,
     hospitalityChicken,
+    garlicChickenWithHerbs,
     bakedChicken,
     bakedLemonChicken,
     chineseBao,
