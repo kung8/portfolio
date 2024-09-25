@@ -93,6 +93,7 @@ const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
 const riceKrispyTreats = require("./recipes/rice-krispy-treats");
 const roastedTurkey = require("./recipes/roasted-turkey");
+const rosemaryLemonade = require("./recipes/rosemary-lemonade");
 const sauteedSquash = require("./recipes/sauteed-squash");
 const scrambledEggs = require("./recipes/scrambled-eggs");
 const singaporeanChickenRice = require("./recipes/singaporean-chicken-rice");
@@ -230,6 +231,7 @@ const recipes = [
     chocolateMousse,
     graveyardDessert,
     smores,
+    rosemaryLemonade,
 ]
 
 module.exports = recipes;

@@ -75,6 +75,7 @@ const METHODS = {
     GRILL: 'Grill',
     MARINADE: 'Marinade',
     MELT: 'Melt',
+    MIX: 'Mix',
     PAN_FRY: 'Pan Fry',
     RAW: 'Raw',
     ROAST: 'Roast',
@@ -150,6 +151,20 @@ const TYPES = {
     CAKE: 'Cake',
     COOKIE: 'Cookie',
     BAR: 'Bar',
+    DRINK: 'Drink',
+    SMOOTHIE: 'Smoothie',
+    ICE_CREAM: 'Ice Cream',
+    SORBET: 'Sorbet',
+    SHERBET: 'Sherbet',
+    CANDY: 'Candy',
+    CHOCOLATE: 'Chocolate',
+    TRUFFLE: 'Truffle',
+    FUDGE: 'Fudge',
+    BROWNIE: 'Brownie',
+    CUPCAKE: 'Cupcake',
+    MUFFIN: 'Muffin',
+    BISCUIT: 'Biscuit',
+    SCONES: 'Scones',
 }
 
 module.exports = {
