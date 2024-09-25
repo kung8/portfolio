@@ -147,7 +147,7 @@ const recipes = [
     chineseBao,
     vietnameseBanhTieu,
     italianLasagna,
-    indianChickenTikkaMasala, // TODO: add
+    indianChickenTikkaMasala,
     chineseCashewChicken,
     chineseGreenBeanBeef,
     chineseBroccoliBeef,

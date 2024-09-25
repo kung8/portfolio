@@ -1181,6 +1181,7 @@ const INGREDIENTS = {
         COARSE_SALT: { name: 'coarse salt', category: INGREDIENT_CATEGORY.SPICES },
         CREAM_OF_TARTAR: { name: 'cream of tartar', category: INGREDIENT_CATEGORY.SPICES },
         CUMIN: { name: 'cumin', category: INGREDIENT_CATEGORY.SPICES },
+        CURRY_POWDER: { name: 'curry powder', category: INGREDIENT_CATEGORY.SPICES },
         FENNEL_SEEDS: { name: 'fennel seeds', category: INGREDIENT_CATEGORY.SPICES },
         GARAM_MASALA: { name: 'garam masala', category: INGREDIENT_CATEGORY.SPICES },
         GARLIC_POWDER: { name: 'garlic powder', category: INGREDIENT_CATEGORY.SPICES },
