@@ -178,6 +178,48 @@ module.exports = {
                     thoughts: "Love is interesting. It can sneak up on you when you least expect it.",
                     context: "Daphne is still upset of her ex-fiance, Peter, leaving her for his best friend (Miles' girlfriend). She's thinking of Miles and how she's starting to see him in a different light."
                 },
+                {
+                    text: "You can't force a person to show up, but you can learn a lesson when they don't.",
+                    pages: [161],
+                    thoughts: "This is a hard lesson to learn. We can be burned multiple times before we realize this truth.",
+                    context: "Advice that Daphne has received over the years."
+                },
+                {
+                    text: "Trust people's actions, not their words.",
+                    pages: [161],
+                    thoughts: "Actions speak louder than words. It's easy to say something but it's harder to do it.",
+                    context: "Advice that Daphne has received over the years."
+                },
+                {
+                    text: "Don't love anyone who isn't ready to love you back.",
+                    pages: [161],
+                    thoughts: "Hmmm I have a difficult time with expressing my feelings. I don't show my affection through words but rather through gifts specifically through food and service. However I appreciate receiving words of affirmation myself.",
+                    context: "Advice that Daphne has received over the years."
+                },
+                {
+                    text: "Let go of people who don't hold on to you.",
+                    pages: [161],
+                    thoughts: "I am guilty of keeping up with old relationships. It can be draining but I don't want to forget people.",
+                    context: "Advice that Daphne has received over the years."
+                },
+                {
+                    text: "Don't wait on anyone who's in no rush to get to you.",
+                    pages: [161],
+                    thoughts: "Wise advice - easier said than done. It's difficult when you are in the midst of this but timing is everything. We shouldn't rush others to be ready for us, but we also shouldn't always wait around for them to be ready.",
+                    context: "Advice that Daphne has received over the years."
+                },
+                {
+                    text: "Somebody recently told me that feelings are like the weather. They just kind of happen.",
+                    pages: [270],
+                    thoughts: "It's cute that he remembers and this is true. We can't feel guilty of how we feel because we each will have rollercoaster or waves of emotions and feelings. We have to learn how to handle our feelings just like situations we are in.",
+                    context: "Miles jokingly mentions something Daphne told him while ago."
+                },
+                {
+                    text: "You make the people you care about feel like...like you want all of them. Not just the good parts. And that's terrifying to someone who's spent a lifetime avoiding those other pieces of themselves.",
+                    pages: [299],
+                    thoughts: "We tend to gravitate to people who accept us. We don't want to be around others who are constantly judging us.",
+                    context: "Miles confides in Daphne why he enjoys being around her."
+                },
             ],
             pageCount: 395,
             rating: NO_RATING,
