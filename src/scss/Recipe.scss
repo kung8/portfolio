@@ -28,7 +28,9 @@
     }
 
     .recipe-details {
-        .recipe-image, .additional-recipe-image, .additional-recipe-video {
+        .recipe-image,
+        .additional-recipe-image,
+        .additional-recipe-video {
             width: 350px;
             margin-bottom: 24px;
             @include down($mobile) {
@@ -222,7 +224,7 @@
         transform: translate(-50%, -50%);
         width: unquote("min(calc(100% - 16px), 600px)");
         padding: 24px 16px;
-    
+
         .modal-content {
             display: flex;
             flex-direction: column;
@@ -257,6 +259,11 @@
                     flex-direction: column;
                     row-gap: 16px;
 
+                    .edit-recipe-date-range-container {
+                        display: flex;
+                        column-gap: 12px;
+                    }
+
                     .edit-recipe-date-input {
                         width: 100%;
                         padding: 8px 12px;
@@ -287,15 +294,15 @@
 
                     .edit-recipe-meal-date-inputs-container {
                         display: flex;
-        
+
                         .edit-recipe-meal-date-input-container {
                             position: relative;
-        
+
                             .edit-recipe-date-label-container {
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-        
+
                                 .delete-date-btn {
                                     height: 12px;
                                     cursor: pointer;
@@ -310,7 +317,7 @@
                 display: flex;
                 justify-content: flex-end;
                 column-gap: 16px;
-    
+
                 button {
                     padding: 6px 12px;
                     border-radius: 16px;
@@ -326,7 +333,7 @@
                             border: 1.5px solid $default;
                         }
                     }
-    
+
                     &.add-btn {
                         background: $primary-blue;
                         color: $white;
@@ -353,11 +360,11 @@
         z-index: 2;
         display: none;
         cursor: pointer;
-    
+
         &.opened {
             display: block;
         }
-    
+
         &.layered-opened {
             z-index: 4;
         }

@@ -392,6 +392,12 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 16px;
+
+                .edit-recipe-date-range-container {
+                    display: flex;
+                    column-gap: 12px;
+                } 
+
                 .edit-ingredient-input,
                 .edit-recipe-name-input,
                 .edit-recipe-date-input {

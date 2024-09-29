@@ -94,7 +94,6 @@ export const MealPlanningModalContent = ({
         const foundRange = dates.filter(date => {
             const mealPlanningDateRange = item.mealPlanningDateRange ?? [];
 
-            
             if (mealPlanningDateRange.length > 0) {
                 let startingDate = dayjs(mealPlanningDateRange[0]);
                 let endingDate = dayjs(mealPlanningDateRange[1]);
@@ -105,10 +104,6 @@ export const MealPlanningModalContent = ({
                     const isAfter = dayjs(date[1]).isAfter(dayjs(d)) || dayjs(date[1]).isSame(dayjs(d));
                     return isBefore && isAfter;
                 });
-                // const isStartingWithinRange = (dayjs(startingDate).isAfter(dayjs(date[0])) || dayjs(startingDate).isSame(dayjs(date[0]))) && (dayjs(startingDate).isBefore(dayjs(date[1])) || dayjs(startingDate).isSame(dayjs(date[1])));
-                // const isEndingWithinRange = (dayjs(endingDate).isAfter(dayjs(date[0])) || dayjs(endingDate).isSame(dayjs(date[0]))) && (dayjs(endingDate).isBefore(dayjs(date[1])) || dayjs(endingDate).isSame(dayjs(date[1])));
-
-                // return isStartingWithinRange || isEndingWithinRange;
             }
 
             if (mealPlanningDateRange.length === 0) {
@@ -116,6 +111,7 @@ export const MealPlanningModalContent = ({
                 const isAfter = dayjs(date[1]).isAfter(dayjs(item.date)) || dayjs(date[1]).isSame(dayjs(item.date));
                 return isBefore && isAfter;
             }
+            return false;
         });
 
         if (foundRange.length > 0) {
