@@ -77,7 +77,7 @@ export const GroceryListModal = ({
         setMealToEdit(null);
     }
 
-    const updateMeal = (originalItem, newItemValue) => {        
+    const updateMeal = (originalItem, newItemValue) => {
         const newMealPlan = [...mealPlan];
 
         if (!originalItem) {
@@ -121,7 +121,13 @@ export const GroceryListModal = ({
             <div className="grocery-list-modal-container">
                 <div
                     className={`overlay ${showClass} ${checkLayeredOpenedClassName() ? 'layered-opened' : ''}`}
-                    onClick={handleClose}
+                    onClick={checkLayeredOpenedClassName() ?
+                        () => {
+                            if (isDeleteIngredientModalOpen) closeDeleteIngredientModal();
+                            if (isEditIngredientModalOpen) closeEditIngredientModal();
+                            if (isDeleteMealPlanModalOpen) closeDeleteMealPlanModal();
+                            if (isEditMealPlanModalOpen) closeEditMealPlanModal();
+                        } : handleClose}
                 />
                 <div className={`grocery-list-modal ${showClass}`}>
                     <GroceryListModalHeader
@@ -146,7 +152,7 @@ export const GroceryListModal = ({
                         />
                     )}
                     {isMealPlanning && (
-                        <MealPlanningModalContent 
+                        <MealPlanningModalContent
                             {...{
                                 mealPlan,
                                 setMealPlan,

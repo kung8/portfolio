@@ -396,6 +396,11 @@
                 .edit-recipe-date-range-container {
                     display: flex;
                     column-gap: 12px;
+                    position: relative;
+                    & > div {
+                        width: 50%;
+                        position: unset;
+                    }
                 } 
 
                 .edit-ingredient-input,

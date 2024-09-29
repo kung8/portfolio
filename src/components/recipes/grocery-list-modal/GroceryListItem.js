@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import edit from '../../../Assets/edit.png';
-import { READABLE_LONG_DATE_FORMAT } from '../constants';
+import { READABLE_SHORT_DATE } from '../constants';
 
 export const GroceryListItem = ({
     category,
@@ -60,7 +60,7 @@ export const GroceryListItem = ({
                 )}
                 {recipeName && <p className="recipe-name"><span>Needed for</span> "{recipeName}"</p>}
                 {sortBy === 'date' && category && <p className="recipe-category"><span>{category}</span></p>}
-                {sortBy === 'category' && date && <p className="recipe-date"><span>Needed on {dayjs(date).format(READABLE_LONG_DATE_FORMAT)}</span></p>}
+                {sortBy === 'category' && date && <p className="recipe-date"><span>Needed on {dayjs(date).format(READABLE_SHORT_DATE)}</span></p>}
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import { useGetIngredientCategories } from '../../../hooks';
-import { DATE_FORMAT, READABLE_LONG_DATE_FORMAT } from '../constants';
+import { DATE_FORMAT, READABLE_SHORT_DATE } from '../constants';
 import { RecipeDateInput } from './RecipeDateInput';
 import { RecipeCategoryInput } from './RecipeCategoryInput';
 import { RecipeModalBody, RecipeModalContent, RecipeModalFooter, RecipeModalHeader } from './RecipeModalContent';
@@ -69,7 +69,7 @@ export const EditGroceryListItemModal = ({
                             }}
                             hasDate={!!date}
                             isCalendarOpen={isCalendarOpen}
-                            label={date ? dayjs(date).format(READABLE_LONG_DATE_FORMAT) : '(Optional) Need by date...'}
+                            label={date ? dayjs(date).format(READABLE_SHORT_DATE) : '(Optional) Need by date...'}
                         />
                         <div className="edit-recipe-date-range-container">
                             <RecipeDateInput
@@ -101,8 +101,8 @@ export const EditGroceryListItemModal = ({
                                 hasDate={mealPlanningDateRange?.[0]}
                                 isCalendarOpen={isStartMealPlanningCalendarOpen}
                                 label={mealPlanningDateRange?.[0] ?
-                                    dayjs(mealPlanningDateRange[0]).format(READABLE_LONG_DATE_FORMAT) :
-                                    '(Optional) Beginning range...'}
+                                    dayjs(mealPlanningDateRange[0]).format(READABLE_SHORT_DATE) :
+                                    'Starting range...'}
                             />
                             <RecipeDateInput
                                 date={mealPlanningDateRange?.[1]}
@@ -133,8 +133,8 @@ export const EditGroceryListItemModal = ({
                                 hasDate={mealPlanningDateRange?.[1]}
                                 isCalendarOpen={isEndMealPlanningCalendarOpen}
                                 label={mealPlanningDateRange?.[1] ?
-                                    dayjs(mealPlanningDateRange[1]).format(READABLE_LONG_DATE_FORMAT) :
-                                    '(Optional) Ending range...'}
+                                    dayjs(mealPlanningDateRange[1]).format(READABLE_SHORT_DATE) :
+                                    'Ending range...'}
                             />
                         </div>
                     </RecipeModalBody>
