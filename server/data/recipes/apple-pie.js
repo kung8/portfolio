@@ -1,4 +1,5 @@
 const apples = '../assets/Products/apple-pie-apples.jpeg';
+const baked = '../assets/Products/apple-pie-baked.jpeg';
 const zoomed1 = '../assets/Products/apple-pie-baked-zoomed-1.jpeg';
 const zoomed2 = '../assets/Products/apple-pie-baked-zoomed-2.jpeg';
 const zoomed3 = '../assets/Products/apple-pie-baked-zoomed-3.jpeg';
@@ -10,9 +11,11 @@ const crust = '../assets/Products/apple-pie-pastry-dough.jpeg';
 const latticeAerialZoomed = '../assets/Products/apple-pie-raw-aerial-zoomed.jpeg';
 const latticeAerial = '../assets/Products/apple-pie-raw-lattice-aerial.jpeg';
 const lattice = '../assets/Products/apple-pie-raw-lattice.jpeg';
+const plated = '../assets/Products/apple-pie-plated.jpeg';
 const rawSauceZoomed = '../assets/Products/apple-pie-raw-with-sauce-zoomed.jpeg';
 const rawSauce = '../assets/Products/apple-pie-raw-with-sauce.jpeg';
 const sauce = '../assets/Products/apple-pie-sauce.jpeg';
+const sliced = '../assets/Products/apple-pie-sliced.jpeg';
 const sugars = '../assets/Products/apple-pie-sugars.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { GRANNY_SMITH_APPLES, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHITE_SUGAR, BROWN_SUGAR, COLD_WATER, DOUBLE_CRUST_PIE_CRUST } = require('./ingredients');
@@ -20,7 +23,7 @@ const { GRANNY_SMITH_APPLES, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHITE_SUGAR, BR
 module.exports = {
     cardName: 'Apple Pie',
     name: 'Apple Pie',
-    img: zoomed2,
+    img: baked,
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
@@ -68,6 +71,9 @@ module.exports = {
         { step: 'Pour the sugar mixture over the lattice and make sure that it (1) gets onto the apples and (2) does not spill over the sides.', type: SECTIONS.MAIN, img: [rawSauce, rawSauceZoomed] },
         { step: 'Bake for 15 minutes.', type: SECTIONS.MAIN },
         { step: 'Reduce to 350ºF and bake until apples are soft (about 35 to 45 minutes).', type: SECTIONS.MAIN },
-        { step: 'Enjoy a taste of America\'s traditional dessert al la mode (i.e. topped with ice cream) or all by itself.', type: SECTIONS.MAIN, img: [zoomed1, zoomed3, zoomed4, zoomed5] },
+        { step: 'Enjoy a taste of America\'s traditional dessert al la mode (i.e. topped with ice cream) or all by itself.', type: SECTIONS.MAIN, img: [plated, sliced, zoomed1, zoomed2, zoomed3, zoomed4, zoomed5] },
+    ],
+    notes: [
+        'Slicing this pie is easier when it is cooled but it may come out crumbly but it\'s still good.',
     ]
 };

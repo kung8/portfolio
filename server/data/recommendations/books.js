@@ -158,12 +158,12 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: IN_PROGRESS,
+            date: "9/24",
             title: "Funny Story",
             author: ["Emily Henry"],
             source: ["same author"],
             review: [
-                ""
+                "The humor in this book is consistent with her other books. I am glad the sensual scenes were not as explicit as in a some of the other books. There were great lessons to learn about relationships."
             ],
             quotes: [
                 {
@@ -220,9 +220,27 @@ module.exports = {
                     thoughts: "We tend to gravitate to people who accept us. We don't want to be around others who are constantly judging us.",
                     context: "Miles confides in Daphne why he enjoys being around her."
                 },
+                {
+                    text: "I don't want to be a part of the wrong we. I'd rather be on my own, even if it hurts right now.",
+                    pages: [321],
+                    thoughts: "It's better to be alone than to be with someone who doesn't make you happy. I am a firm believer that each of us need to be happy by ourselves and not rely on relationships to make us happy.",
+                    context: "Daphne is thinking that she doesn't want to be in a relationship."
+                },
+                {
+                    text: "Those are the moments that make a life.",
+                    pages: [329],
+                    thoughts: "We are constantly moving at a million miles an hour to fill the day. It's not about one particular thing or having to be perfect, but it's about the moments that make up our lives.",
+                    context: "Daphne is reflecting on what she's been learning about life. The advice she's been given and have held dear have shifted in ways. "
+                },
+                {
+                    text: "But if I've learned anything from parenting, it's that it matters way more that you're present than that you're perfect. Just be here, really be here, and the kids will love it.",
+                    pages: [355],
+                    thoughts: "Be present. Being perfect will never be achievable.",
+                    context: "Ashleigh tells Daphne what she's learned from parenting."
+                },
             ],
             pageCount: 395,
-            rating: NO_RATING,
+            rating: 5,
         },
         {
             date: NO_DATE,
