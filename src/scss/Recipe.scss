@@ -280,12 +280,32 @@
                             }
                         }
                         .delete-date-btn {
-                            height: 14px;
+                            height: 12px;
                             cursor: pointer;
+                        }
+                    }
+
+                    .edit-recipe-meal-date-inputs-container {
+                        display: flex;
+        
+                        .edit-recipe-meal-date-input-container {
+                            position: relative;
+        
+                            .edit-recipe-date-label-container {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+        
+                                .delete-date-btn {
+                                    height: 12px;
+                                    cursor: pointer;
+                                }
+                            }
                         }
                     }
                 }
             }
+
             .modal-footer {
                 display: flex;
                 justify-content: flex-end;

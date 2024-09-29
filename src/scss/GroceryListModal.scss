@@ -368,11 +368,11 @@
     width: unquote("min(calc(100% - 16px), 600px)");
 
     &.edit-ingredient-modal {
-        height: 320px;
+        height: 360px;
     }
 
     &.edit-meal-plan-modal {
-        height: 260px;
+        height: 310px;
     }
 
     &.edit-ingredient-modal,
@@ -451,59 +451,8 @@
                 }
             }
             .delete-date-btn {
-                height: 14px;
+                height: 12px;
                 cursor: pointer;
-            }
-        }
-
-        .modal-footer {
-            display: flex;
-            justify-content: flex-end;
-            column-gap: 16px;
-
-            button {
-                padding: 6px 12px;
-                border-radius: 16px;
-                outline: none;
-                border: 1.5px solid transparent;
-                &.cancel-btn {
-                    color: $white;
-                    background: $black;
-                    cursor: pointer;
-                    &:hover {
-                        background: $white;
-                        color: $black;
-                        border: 1.5px solid $default;
-                    }
-                }
-
-                &.delete-btn {
-                    background: $coral;
-                    color: $white;
-                    cursor: pointer;
-                    &:hover {
-                        background: $white;
-                        color: $coral;
-                        border: 1.5px solid $coral;
-                    }
-                }
-
-                &.edit-btn {
-                    background: $primary-blue;
-                    color: $white;
-                    cursor: pointer;
-                    &:hover {
-                        background: $white;
-                        color: $primary-blue;
-                        border: 1.5px solid $primary-blue;
-                    }
-                    &:disabled {
-                        background: $default;
-                        color: $black;
-                        cursor: not-allowed;
-                        border: 1.5px solid transparent;
-                    }
-                }
             }
         }
     }
@@ -520,10 +469,12 @@
         padding: 6px 12px;
         background: $aqua;
         font-size: 12px;
+        height: 33px;
         cursor: pointer;
 
         .chevron-arrow {
-            height: 12px;
+            height: 10px;
+            width: 14px;
             transition: transform 0.3s ease;
             &.is-open {
                 transform: rotate(180deg);
@@ -560,6 +511,7 @@
     position: absolute;
     left: 0;
     top: 100%;
+    z-index: 1;
     .react-calendar__navigation {
         height: 24px;
         margin-bottom: 0;

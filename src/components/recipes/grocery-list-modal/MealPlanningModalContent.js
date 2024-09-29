@@ -53,27 +53,79 @@ export const MealPlanningModalContent = ({
 
     const dates = sortBy === 'daily' ? getDays() : sortBy === 'weekly' ? getWeeks() : getMonths();
 
+    const createRange = (start, end) => {
+        let range = [];
+        for (let i = start; i <= end; i.add(1, 'day')) {
+            range.push(i);
+            i = i.add(1, 'day');
+        }
+        return range;
+    }
+
     const indexedMealPlan = mealPlan.map((item, index) => ({ ...item, index }));
     const data = sortBy === 'daily' ? indexedMealPlan.reduce((acc, item) => {
-        if (!acc[item.date]) {
-            acc[item.date] = [];
+        const mealPlanningDateRange = item.mealPlanningDateRange ?? [];
+
+        if (mealPlanningDateRange.length > 0) {
+            let startingDate = dayjs(mealPlanningDateRange[0]);
+            let endingDate = dayjs(mealPlanningDateRange[1]);
+            const datesWithinRange = createRange(startingDate, endingDate);
+            console.log(datesWithinRange);
+            
+            datesWithinRange.forEach(d => {
+                const formattedKey = d.format(DATE_FORMAT);
+                if (!acc[formattedKey]) {
+                    acc[formattedKey] = [];
+                }
+                acc[formattedKey].push(item);
+            });
         }
-        acc[item.date].push(item);
+
+        if (mealPlanningDateRange.length === 0) {
+            if (!acc[item.date]) {
+                acc[item.date] = [];
+            }
+            acc[item.date].push(item);
+        }
         return acc;
     }, {}) : undefined;
 
     const groupedData = sortBy !== 'daily' ? indexedMealPlan.reduce((acc, item) => {
-        const foundRange = dates.find(date => {
-            const isBefore = dayjs(item.date).isAfter(date[0]) || dayjs(item.date).isSame(date[0]);
-            const isAfter = dayjs(date[1]).isAfter(dayjs(item.date)) || dayjs(date[1]).isSame(dayjs(item.date));
-            return isBefore && isAfter;
+        const foundRange = dates.filter(date => {
+            const mealPlanningDateRange = item.mealPlanningDateRange ?? [];
+
+            
+            if (mealPlanningDateRange.length > 0) {
+                let startingDate = dayjs(mealPlanningDateRange[0]);
+                let endingDate = dayjs(mealPlanningDateRange[1]);
+                const includedDateRange = createRange(startingDate, endingDate);
+                
+                return includedDateRange.find(d => {
+                    const isBefore = dayjs(d).isAfter(date[0]) || dayjs(d).isSame(date[0]);
+                    const isAfter = dayjs(date[1]).isAfter(dayjs(d)) || dayjs(date[1]).isSame(dayjs(d));
+                    return isBefore && isAfter;
+                });
+                // const isStartingWithinRange = (dayjs(startingDate).isAfter(dayjs(date[0])) || dayjs(startingDate).isSame(dayjs(date[0]))) && (dayjs(startingDate).isBefore(dayjs(date[1])) || dayjs(startingDate).isSame(dayjs(date[1])));
+                // const isEndingWithinRange = (dayjs(endingDate).isAfter(dayjs(date[0])) || dayjs(endingDate).isSame(dayjs(date[0]))) && (dayjs(endingDate).isBefore(dayjs(date[1])) || dayjs(endingDate).isSame(dayjs(date[1])));
+
+                // return isStartingWithinRange || isEndingWithinRange;
+            }
+
+            if (mealPlanningDateRange.length === 0) {
+                const isBefore = dayjs(item.date).isAfter(date[0]) || dayjs(item.date).isSame(date[0]);
+                const isAfter = dayjs(date[1]).isAfter(dayjs(item.date)) || dayjs(date[1]).isSame(dayjs(item.date));
+                return isBefore && isAfter;
+            }
         });
 
-        if (foundRange) {
-            const formattedRange = foundRange.join(' - ');
-            return { ...acc, [formattedRange]: [...(acc[formattedRange] ?? []), item] };
+        if (foundRange.length > 0) {
+            foundRange.forEach(d => {
+                const formattedRange = d.join(' - ');
+                acc[formattedRange] = [...(acc[formattedRange] ?? []), item];
+            })
+            return acc;
         }
-        return { ...acc };
+        return acc;
     }, {}) : undefined;
 
     const displayedData = data ?? groupedData;

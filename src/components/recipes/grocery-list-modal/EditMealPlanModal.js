@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
-import xBtn from '../../../Assets/x.png';
-import closeBtn from '../../../Assets/close.png';
-import arrow from '../../../Assets/arrow.png';
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
 import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_LONG_DATE_FORMAT } from '../constants';
+import { RecipeDateInput } from './RecipeDateInput';
+import { RecipeCategoryInput } from './RecipeCategoryInput';
+import { RecipeModalBody, RecipeModalContent, RecipeModalFooter, RecipeModalHeader } from './RecipeModalContent';
 
 export const EditMealPlanModal = ({
     mealToEdit,
@@ -19,7 +17,9 @@ export const EditMealPlanModal = ({
     const [isTypeDropdownOpen, setIsTypeDropdownOpen] = useState(false);
     const [date, setDate] = useState(originalMealToEdit?.date);
     const [isCalendarOpen, setIsCalendarOpen] = useState(false);
-    const today = dayjs();
+
+    const [isMealPlanningCalendarOpen, setIsMealPlanningCalendarOpen] = useState(false);
+    const [mealPlanningDateRange, setMealPlanningDateRange] = useState(originalMealToEdit.mealPlanningDateRange ?? []);
 
     useEffect(() => {
         setDate(mealToEdit?.date);
@@ -27,87 +27,82 @@ export const EditMealPlanModal = ({
 
     return (
         <div className="edit-meal-plan-modal">
-            <div className="modal-content">
+            <RecipeModalContent>
                 <div className="top-container">
-                    <div className="modal-header">
-                        <h3>{title}</h3>
-                        <img src={xBtn} alt="close" onClick={closeEditMealPlanModal} />
-                    </div>
-                    <div className="modal-body">
+                    <RecipeModalHeader 
+                        handleClose={closeEditMealPlanModal}
+                        title={title}
+                    />
+                    <RecipeModalBody>
                         <input className="edit-recipe-name-input" placeholder="Meal Name" value={mealToEdit?.recipeName} onChange={(e) => setMealToEdit({ ...mealToEdit, recipeName: e.target.value })} />
-                        <div className="category-dropdown-container">
-                            <li className="selected-category category-selector-item" onClick={() => setIsTypeDropdownOpen(!isTypeDropdownOpen)}>
-                                <span>{mealToEdit?.type}</span>
-                                <img src={arrow} alt="arrow" className={`chevron-arrow ${isTypeDropdownOpen ? 'is-open' : ''}`} />
-                            </li>
-                            <ul className={`category-selector ${isTypeDropdownOpen ? 'is-open' : ''}`}>
-                                {MEAL_PLAN_MEAL_TYPES.map((option) => (
-                                    <li
-                                        key={option}
-                                        value={option}
-                                        className="category-selector-item"
-                                        onClick={(e) => {
-                                            e.stopPropagation();
-                                            setMealToEdit({ ...mealToEdit, type: option });
-                                            setIsTypeDropdownOpen(false);
-                                        }}
-                                    >
-                                        {option}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="edit-recipe-date-input">
-                            <p className="edit-recipe-date-label-container">
-                                <span className={`edit-recipe-date-label ${!date ? 'is-default' : ''}`} onClick={() => setIsCalendarOpen(!isCalendarOpen)}>{date ? dayjs(date).format(READABLE_LONG_DATE_FORMAT) : '(Optional) Set when you need it by...'}</span>
-                                {date && (
-                                    <img
-                                        className="delete-date-btn"
-                                        src={closeBtn}
-                                        alt="delete date"
-                                        onClick={() => {
-                                            setDate('');
-                                            setMealToEdit({ ...mealToEdit, date: '' });
-                                        }}
-                                    />
-                                )}
-                            </p>
-                            {isCalendarOpen && (
-                                <Calendar
-                                    minDate={new Date(today)}
-                                    onChange={(value) => {
-                                        const formattedDate = dayjs(value).format(DATE_FORMAT);
-                                        setDate(formattedDate);
-                                        setMealToEdit({ ...mealToEdit, date: formattedDate });
-                                        setIsCalendarOpen(false);
-                                    }}
-                                    prev2Label={null}
-                                    next2Label={null}
-                                    value={date}
-                                />
-                            )}
-                        </div>
-                    </div>
+                        <RecipeCategoryInput 
+                            isDropdownOpen={isTypeDropdownOpen}
+                            handleDropdownToggle={() => setIsTypeDropdownOpen(!isTypeDropdownOpen)}
+                            handleDropdownSelection={(e) => {
+                                e.stopPropagation();
+                                setMealToEdit({ ...mealToEdit, type: e.target.value });
+                                setIsTypeDropdownOpen(false);
+                            }}
+                            label={mealToEdit.type}
+                            options={MEAL_PLAN_MEAL_TYPES}
+                        />
+                        <RecipeDateInput
+                            date={date}
+                            handleChange={(value) => {
+                                const formattedDate = dayjs(value).format(DATE_FORMAT);
+                                setDate(formattedDate);
+                                setMealToEdit({ ...mealToEdit, date: formattedDate });
+                                setIsCalendarOpen(false);
+                            }}
+                            handleClick={() => {
+                                setIsMealPlanningCalendarOpen(false);
+                                setIsCalendarOpen(!isCalendarOpen);
+                            }}
+                            handleDelete={() => {
+                                setDate('');
+                                setMealToEdit((prev) => ({ ...prev, date: '' }));
+                            }}
+                            hasDate={!!date}
+                            isCalendarOpen={isCalendarOpen}
+                            label={date ? dayjs(date).format(READABLE_LONG_DATE_FORMAT) : '(Optional) Need by date...'}
+                        />
+                        <RecipeDateInput
+                            date={mealPlanningDateRange}
+                            handleChange={(value) => {
+                                const formattedDates = value.map(date => dayjs(date).format(DATE_FORMAT));
+                                setMealPlanningDateRange(formattedDates);
+                                setMealToEdit({ ...mealToEdit, mealPlanningDateRange: formattedDates });
+                            }}
+                            handleClick={() => {
+                                setIsCalendarOpen(false);
+                                setIsMealPlanningCalendarOpen(!isMealPlanningCalendarOpen);
+                            }}
+                            handleDelete={() => {
+                                setMealPlanningDateRange([]);
+                                setMealToEdit((prev) => ({ ...prev, mealPlanningDateRange: [] }));
+                            }}
+                            hasDate={mealPlanningDateRange?.length > 0}
+                            isCalendarOpen={isMealPlanningCalendarOpen}
+                            label={mealPlanningDateRange.length ? `${dayjs(mealPlanningDateRange[0]).format(READABLE_LONG_DATE_FORMAT)} - ${dayjs(mealPlanningDateRange[1]).format(READABLE_LONG_DATE_FORMAT)}` : '(Optional) Meal prep date range...'}
+                            selectRange
+                        />
+                    </RecipeModalBody>
                 </div>
-                <div className="modal-footer">
-                    <button className="cancel-btn" onClick={closeEditMealPlanModal}>Cancel</button>
-                    <button
-                        className="edit-btn"
-                        disabled={(
-                            originalMealToEdit?.recipeName === mealToEdit?.recipeName &&
-                            originalMealToEdit?.type === mealToEdit?.type &&
-                            originalMealToEdit?.date === mealToEdit?.date
-                        ) || !mealToEdit?.recipeName
-                        }
-                        onClick={() => {
-                            updateMeal(originalMealToEdit, mealToEdit);
-                            closeEditMealPlanModal();
-                        }}
-                    >
-                        {buttonText}
-                    </button>
-                </div>
-            </div>
+                <RecipeModalFooter
+                    actionLabel={buttonText}
+                    disabled={(
+                        originalMealToEdit?.recipeName === mealToEdit?.recipeName &&
+                        originalMealToEdit?.type === mealToEdit?.type &&
+                        originalMealToEdit?.date === mealToEdit?.date &&
+                        originalMealToEdit?.mealPlanningDateRange === mealToEdit?.mealPlanningDateRange
+                    ) || !mealToEdit?.recipeName}
+                    handleAction={() => {
+                        updateMeal(originalMealToEdit, mealToEdit);
+                        closeEditMealPlanModal();
+                    }}
+                    handleCancel={closeEditMealPlanModal}
+                />
+            </RecipeModalContent>
         </div>
     )
 }

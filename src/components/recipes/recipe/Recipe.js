@@ -227,9 +227,9 @@ export const Recipe = ({ match }) => {
 
     const [isAddToGroceryListModalOpen, setIsAddToGroceryListModalOpen] = useState(false);
 
-    const handleAddToGroceryList = async (date, type) => {
+    const handleAddToGroceryList = async (date, type, mealPlanningDateRange) => {
         // Adds to Meal Plan
-        const newMealPlan = [...mealPlan, { recipeName: item.name, date, type, checked: false }];
+        const newMealPlan = [...mealPlan, { recipeName: item.name, date, type, checked: false, mealPlanningDateRange }];
         setMealPlan(newMealPlan);
         localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, 'groceryList');
 
@@ -239,7 +239,7 @@ export const Recipe = ({ match }) => {
                 const response = await getAsyncData('recipes', item.linkId);
                 return response?.data?.[0]?.ingredients?.map((ingredient, index) => getIngredientData(response.data[0].name, ingredient, index + item.index));
             }
-            return { ...item, checked: false, date };
+            return { ...item, checked: false, date, mealPlanningDateRange };
         })];
         Promise.all(newIngredientsToAdd).then((newIngredientsToAdd) => {
             setGroceryList(newIngredientsToAdd.flat());
@@ -498,7 +498,11 @@ export const Recipe = ({ match }) => {
 
             <div className={`overlay ${isAddToGroceryListModalOpen ? 'opened' : ''}`} onClick={closeAddToGroceryListModal} />
             {isAddToGroceryListModalOpen && (
-                <AddToGroceryListModal closeModal={closeAddToGroceryListModal} onAdd={handleAddToGroceryList} initialType={categorizeRecipeType(item.category?.[0])} />
+                <AddToGroceryListModal
+                    closeModal={closeAddToGroceryListModal}
+                    initialType={categorizeRecipeType(item.category?.[0])}
+                    onAdd={handleAddToGroceryList}
+                />
             )}
         </NonDashboardPage>
     )

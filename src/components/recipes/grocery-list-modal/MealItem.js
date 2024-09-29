@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import edit from '../../../Assets/edit.png';
 
 export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChange, onInputChange, showDate, showType }) => {
-    const { checked, date, recipeName, type } = item;
+    const { checked, date, mealPlanningDateRange, recipeName, type } = item;
     const [inputValue, setInputValue] = useState(recipeName);    
 
     useEffect(() => {
@@ -37,7 +37,7 @@ export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChan
                             onClick={onEditClick}
                             src={edit} alt="edit" className="edit-icon" />
                     </div>
-                    {showDate && <span className="meal-item-date">{date}</span>}
+                    {showDate && <span className="meal-item-date">{mealPlanningDateRange?.length > 0 ? mealPlanningDateRange.join('-') : date}</span>}
                     {showType && <span className="meal-item-meal-type">{type}</span>}
                 </div>
             ) : (
@@ -59,7 +59,7 @@ export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChan
                             onClick={onEditClick}
                             src={edit} alt="edit" className="edit-icon" />
                     </div>
-                    {showDate && <span className="meal-item-date">{date}</span>}
+                    {showDate && <span className="meal-item-date">{mealPlanningDateRange?.length > 0 ? mealPlanningDateRange.join('-') : date}</span>}
                     {showType && <span className="meal-item-meal-type">{type}</span>}
                 </div>
             )}
