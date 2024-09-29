@@ -21,7 +21,7 @@ export const EditGroceryListItemModal = ({
 
     const [isStartMealPlanningCalendarOpen, setIsStartMealPlanningCalendarOpen] = useState(false);
     const [isEndMealPlanningCalendarOpen, setIsEndMealPlanningCalendarOpen] = useState(false);
-    const [mealPlanningDateRange, setMealPlanningDateRange] = useState(originalItemToEdit.mealPlanningDateRange ?? []);
+    const [mealPlanningDateRange, setMealPlanningDateRange] = useState(originalItemToEdit?.mealPlanningDateRange ?? []);
 
     useEffect(() => {
         setDate(itemToEdit.date);
@@ -143,9 +143,9 @@ export const EditGroceryListItemModal = ({
                     actionLabel={'Save'}
                     handleAction={() => {
                         const finalItemToEdit = { ...itemToEdit };
-                        if (itemToEdit?.mealPlanningDateRange[0] && !itemToEdit?.mealPlanningDateRange[1]) {
+                        if (finalItemToEdit?.mealPlanningDateRange?.[0] && !finalItemToEdit?.mealPlanningDateRange?.[1]) {
                             finalItemToEdit.mealPlanningDateRange = [finalItemToEdit.mealPlanningDateRange[0], finalItemToEdit.mealPlanningDateRange[0]];
-                        } else if (!itemToEdit?.mealPlanningDateRange[0] && itemToEdit?.mealPlanningDateRange[1]) {
+                        } else if (!finalItemToEdit?.mealPlanningDateRange?.[0] && finalItemToEdit?.mealPlanningDateRange?.[1]) {
                             finalItemToEdit.mealPlanningDateRange = [finalItemToEdit.mealPlanningDateRange[1], finalItemToEdit.mealPlanningDateRange[1]];
                         }
 
@@ -158,8 +158,8 @@ export const EditGroceryListItemModal = ({
                         originalItemToEdit.category === itemToEdit.category &&
                         originalItemToEdit.recipeName === itemToEdit.recipeName &&
                         originalItemToEdit.date === itemToEdit.date &&
-                        originalItemToEdit.mealPlanningDateRange[0] === itemToEdit.mealPlanningDateRange[0] &&
-                        originalItemToEdit.mealPlanningDateRange[1] === itemToEdit.mealPlanningDateRange[1]
+                        originalItemToEdit?.mealPlanningDateRange?.[0] === itemToEdit?.mealPlanningDateRange?.[0] &&
+                        originalItemToEdit?.mealPlanningDateRange?.[1] === itemToEdit?.mealPlanningDateRange?.[1]
                     ) || !itemToEdit.name}
                 />
             </RecipeModalContent>
