@@ -41,6 +41,10 @@
     
             .dropdown-option {
                 padding: 8px 16px;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
         }
     }

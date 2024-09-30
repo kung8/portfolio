@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Dropdown } from '../dropdown/dropdown';
-import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../modal/ModalContent';
+import { ModalBody, ModalContent, ModalHeader } from '../modal/ModalContent';
+import check from '../../Assets/check.png';
 
 const FilterDropdown = ({
     category,
@@ -25,7 +26,10 @@ const FilterDropdown = ({
                         setSelectedFilters({ ...selectedFilters, [category]: value });
                         setShow(false);
                     }}
-                >{label}</li>
+                >
+                    <span>{label}</span>
+                    {selectedFilters[category] === value && <img className="icon" src={check} alt="check" />}
+                </li>
             ))}
             show={show}
         />
