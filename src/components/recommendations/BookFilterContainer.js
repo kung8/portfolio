@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Dropdown } from '../dropdown/dropdown';
-import { ModalBody, ModalContent, ModalHeader } from '../modal/ModalContent';
+import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../modal/ModalContent';
 
 const FilterDropdown = ({
     category,
@@ -34,9 +34,11 @@ const FilterDropdown = ({
 
 export const BookFilterContainer = ({
     closeFilters,
+    filteredBooks,
     filterOptions,
     selectedFilters,
     setSelectedFilters,
+    totalBooks,
 }) => {
     return (
         <div className="modal-container">
@@ -51,7 +53,7 @@ export const BookFilterContainer = ({
                         {filterOptions && Object.entries(filterOptions).map(([key, { label, options }]) => {
                             return (
                                 <div key={key} className={`filter-category-container ${key}`}>
-                                    <h6 className="filter-category-label">{label}</h6>
+                                    <h4>{label}</h4>
                                     <FilterDropdown
                                         category={key}
                                         options={options}
@@ -62,6 +64,9 @@ export const BookFilterContainer = ({
                             )
                         })}
                     </ModalBody>
+                    <div className="modal-footer">
+                        <span className="total-ratio">{filteredBooks} / {totalBooks}</span>
+                    </div>
                 </ModalContent>
             </div>
         </div>

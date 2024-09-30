@@ -39,34 +39,19 @@
                 font-weight: 400;
             }
     
-            &.date {
-                .dropdown-container {
-                    width: 85px;
-                }
-            }
-    
-            &.genre {
-                .dropdown-container {
-                    width: 145px;
-                }
-            }
-    
-            &.pageCount {
-                .dropdown-container {
-                    width: 125px;
-                }
-            }
-    
-            &.rating {
-                .dropdown-container {
-                    width: 75px;
-                }
-            }
-    
             .dropdown-option {
                 padding: 8px 16px;
             }
         }
     }
 
+    .modal-footer {
+        position: absolute;
+        bottom: 0;
+        padding: 16px 0;
+        
+        .total-ratio {
+            font-size: 32px;
+        }
+    }
 }

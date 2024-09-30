@@ -33,9 +33,11 @@ export const RecipeFilterModal = ({
                                     key={option.heading}
                                     {...{ ...option, selectedFilters, setSelectedFilters }} />
                             ))}
-                            <span className="total-ratio">{filteredRecipeBySelectedFilters.length} / {totalAvailableRecipes}</span>
                         </div>
                     </ModalBody>
+                    <div className="modal-footer">
+                        <span className="total-ratio">{filteredRecipeBySelectedFilters.length} / {totalAvailableRecipes}</span>
+                    </div>
                 </ModalContent>
             </div>
         </div>

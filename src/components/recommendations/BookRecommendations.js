@@ -46,6 +46,7 @@ const bookFilterOptions = {
             { label: '2024', value: 2024 },
             { label: '2023', value: 2023 },
             { label: '2022', value: 2022 },
+            { label: '2020', value: 2020 },
         ]
     },
     // genre: {
@@ -94,6 +95,8 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
             if (selectedFilters[key] !== 'all') {
                 if (key === 'date' && selectedFilters[key] !== 'NO DATE') {
                     const year = review.date.split('/')[1];
+                    console.log(year);
+
                     showReview = `${selectedFilters[key]}`.includes(year);
                 } else if (key === 'pageCount') {
                     const [min, max] = selectedFilters[key].split('-');
@@ -151,10 +154,12 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
             {showFilter && (
                 <BookFilterContainer
                     closeFilters={() => setShowFilter(false)}
+                    filteredBooks={displayedReviews.length + displayedRecommendations.length}
                     filterOptions={bookFilterOptions}
                     selectedFilters={selectedFilters}
                     setSelectedFilters={setSelectedFilters}
                     show={showFilter}
+                    totalBooks={reviews.length + recommendations.length}
                 />
             )}
             <ReviewContainer>
@@ -178,7 +183,11 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
                             </>
                         )}
                     >
-                        <ReviewContainer.Header title={review.title} subtitle={`by ${getAuthor(review.author)}`} date={review.date} />
+                        <ReviewContainer.Header title={review.title} subtitle={`by ${getAuthor(review.author)}`} date={review.date !== 'NO DATE' ?
+                            review.date.split('/').map((value, index) => {
+                                if (index === 0) return value
+                                else return value.substring(2)
+                            }).join('/') : review.date} />
                         {review.review?.[0] && (
                             <ReviewContainer.Content review={review.review} />
                         )}
