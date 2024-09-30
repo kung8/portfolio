@@ -1,22 +1,24 @@
 import React from 'react';
-import xBtn from '../../../Assets/x.png';
+import xBtn from '../../Assets/x.png';
 
-export const RecipeModalHeader = ({
+export const ModalHeader = ({
     handleClose,
     title,
 }) => (
     <div className="modal-header">
         <h3>{title}</h3>
-        <img src={xBtn} alt="close" onClick={handleClose} />
+        <button className="close" onClick={handleClose}>
+            <img src={xBtn} alt="close" />
+        </button>
     </div>
 );
 
-export const RecipeModalBody = ({ children }) =>
+export const ModalBody = ({ children }) =>
     <div className="modal-body">
         {children}
     </div>
 
-export const RecipeModalFooter = ({
+export const ModalFooter = ({
     actionLabel,
     disabled,
     handleAction,
@@ -34,7 +36,7 @@ export const RecipeModalFooter = ({
     </div>
 );
 
-export const RecipeModalContent = ({ children }) =>
+export const ModalContent = ({ children }) =>
     <div className="modal-content">
         {children}
     </div>

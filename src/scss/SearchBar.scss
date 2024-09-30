@@ -1,0 +1,31 @@
+.search-bar {
+    width: 200px;
+    height: 40px;
+    padding: 4px 16px;
+    border: 1px solid $white;
+    background: $white;
+    color: $black;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    &.contains-search,
+    &:focus-within {
+        width: 350px;
+        transition: width 0.3s ease;
+        @include down($mobile-xl) {
+            width: 100%;
+        }
+    }
+    @include down($mobile-xl) {
+        width: 100%;
+    }
+    input {
+        height: 32px;
+        width: 100%;
+        border: none;
+        padding: 0 8px;
+        outline: none;
+    }
+}

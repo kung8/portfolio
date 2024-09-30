@@ -31,7 +31,7 @@ export const GroceryListModalHeader = ({
                 show={showViewOptions}
             />
             <button className="close" onClick={handleClose}>
-                <img src={closeBtn} alt="close" onClick={handleClose} />
+                <img src={closeBtn} alt="close" />
             </button>
         </div>
     )

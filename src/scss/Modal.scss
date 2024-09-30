@@ -1,51 +1,79 @@
 .modal-content {
-    .modal-footer {
-        display: flex;
-        justify-content: flex-end;
-        column-gap: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
 
-        button {
-            padding: 6px 12px;
-            border-radius: 16px;
-            outline: none;
-            border: 1.5px solid transparent;
-            &.cancel-btn {
-                color: $white;
-                background: $black;
-                cursor: pointer;
-                &:hover {
-                    background: $white;
-                    color: $black;
-                    border: 1.5px solid $default;
-                }
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .close {
+        background: none;
+        border: none;
+        color: $white;
+        cursor: pointer;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 16px;
+
+    button {
+        padding: 6px 12px;
+        border-radius: 16px;
+        outline: none;
+        border: 1.5px solid transparent;
+        &.cancel-btn {
+            color: $white;
+            background: $black;
+            cursor: pointer;
+            &:hover {
+                background: $white;
+                color: $black;
+                border: 1.5px solid $default;
             }
+        }
 
-            &.delete-btn {
-                background: $coral;
-                color: $white;
-                cursor: pointer;
-                &:hover {
-                    background: $white;
-                    color: $coral;
-                    border: 1.5px solid $coral;
-                }
+        &.delete-btn {
+            background: $coral;
+            color: $white;
+            cursor: pointer;
+            &:hover {
+                background: $white;
+                color: $coral;
+                border: 1.5px solid $coral;
             }
+        }
 
-            &.action-btn {
-                background: $primary-blue;
-                color: $white;
-                cursor: pointer;
-                &:hover {
-                    background: $white;
-                    color: $primary-blue;
-                    border: 1.5px solid $primary-blue;
-                }
-                &:disabled {
-                    background: $default;
-                    color: $black;
-                    cursor: not-allowed;
-                    border: 1.5px solid transparent;
-                }
+        &.action-btn {
+            background: $primary-blue;
+            color: $white;
+            cursor: pointer;
+            &:hover {
+                background: $white;
+                color: $primary-blue;
+                border: 1.5px solid $primary-blue;
+            }
+            &:disabled {
+                background: $default;
+                color: $black;
+                cursor: not-allowed;
+                border: 1.5px solid transparent;
             }
         }
     }

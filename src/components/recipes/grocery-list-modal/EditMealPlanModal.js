@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_SHORT_DATE } from '../constants';
 import { RecipeDateInput } from './RecipeDateInput';
 import { RecipeCategoryInput } from './RecipeCategoryInput';
-import { RecipeModalBody, RecipeModalContent, RecipeModalFooter, RecipeModalHeader } from './RecipeModalContent';
+import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
 import { getValidDateRangeError } from './getValidDateRangeError';
 
 export const EditMealPlanModal = ({
@@ -29,13 +29,13 @@ export const EditMealPlanModal = ({
 
     return (
         <div className="edit-meal-plan-modal">
-            <RecipeModalContent>
+            <ModalContent>
                 <div className="top-container">
-                    <RecipeModalHeader
+                    <ModalHeader
                         handleClose={closeEditMealPlanModal}
                         title={title}
                     />
-                    <RecipeModalBody>
+                    <ModalBody>
                         <input className="edit-recipe-name-input" placeholder="Meal Name" value={mealToEdit?.recipeName} onChange={(e) => setMealToEdit({ ...mealToEdit, recipeName: e.target.value })} />
                         <RecipeCategoryInput
                             isDropdownOpen={isTypeDropdownOpen}
@@ -137,9 +137,9 @@ export const EditMealPlanModal = ({
                                 }
                             />
                         </div>
-                    </RecipeModalBody>
+                    </ModalBody>
                 </div>
-                <RecipeModalFooter
+                <ModalFooter
                     actionLabel={buttonText}
                     disabled={(
                         originalMealToEdit?.recipeName === mealToEdit?.recipeName &&
@@ -161,7 +161,7 @@ export const EditMealPlanModal = ({
                     }}
                     handleCancel={closeEditMealPlanModal}
                 />
-            </RecipeModalContent>
+            </ModalContent>
         </div>
     )
 }

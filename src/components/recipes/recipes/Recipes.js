@@ -7,13 +7,14 @@ import { EmptyRecipeContainer } from './EmptyRecipeContainer';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { LoaderContainer } from './LoaderContainer';
 import { RecipeItem } from './RecipeItem';
-import { FilterContainer, SearchAndFilterContainer } from './SearchAndFilterContainer';
+import { SearchAndFilterContainer } from './SearchAndFilterContainer';
 import { TopArrow } from './TopArrow';
 import { useGroceryList } from '../hooks/use-grocery-list';
 import { useFilters } from '../hooks/use-filters';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { useMealPlanning } from '../hooks/use-meal-planning';
 import { SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
+import { RecipeFilterModal } from './RecipeFilterModal';
 
 export const initialShownFilters = {
     category: false,
@@ -151,6 +152,7 @@ export const Recipes = ({ history }) => {
         setShownFilters,
         show,
         shownFilters,
+        totalAvailableRecipes: recipes.filter(item => item.available).length,
     };
 
     const groceryListProps = {
@@ -172,7 +174,7 @@ export const Recipes = ({ history }) => {
                 <SearchAndFilterContainer {...{ ...filterProps, ...groceryListProps, imageOnClick }} />
             </NonDashboardPage.Header>
 
-            {show && <FilterContainer {...{ ...filterProps }} />}
+            {show && <RecipeFilterModal {...{ ...filterProps, closeFilters: () => setShow(false) }} />}
 
             {isLoaded ? (
                 filteredRecipes.length ? (

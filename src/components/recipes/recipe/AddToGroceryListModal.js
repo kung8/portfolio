@@ -5,7 +5,7 @@ import { useGetRecipeCategories } from '../../../hooks/use-get-recipe-categories
 import { categorizeRecipeType } from '../categorize-recipe-type';
 import { RecipeDateInput } from '../grocery-list-modal/RecipeDateInput';
 import { RecipeCategoryInput } from '../grocery-list-modal/RecipeCategoryInput';
-import { RecipeModalBody, RecipeModalContent, RecipeModalFooter, RecipeModalHeader } from '../grocery-list-modal/RecipeModalContent';
+import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
 import { getValidDateRangeError } from '../grocery-list-modal/getValidDateRangeError';
 
 export const AddToGroceryListModal = ({
@@ -35,13 +35,13 @@ export const AddToGroceryListModal = ({
 
     return (
         <div className="add-to-grocery-list-modal">
-            <RecipeModalContent>
+            <ModalContent>
                 <div className="top-container">
-                    <RecipeModalHeader
+                    <ModalHeader
                         handleClose={closeModal}
                         title="Add to Grocery List"
                     />
-                    <RecipeModalBody>
+                    <ModalBody>
                         <RecipeCategoryInput
                             isDropdownOpen={isTypeDropdownOpen}
                             handleDropdownToggle={() => setIsTypeDropdownOpen(!isTypeDropdownOpen)}
@@ -127,9 +127,9 @@ export const AddToGroceryListModal = ({
                                 }
                             />
                         </div>
-                    </RecipeModalBody>
+                    </ModalBody>
                 </div>
-                <RecipeModalFooter
+                <ModalFooter
                     actionLabel="Add"
                     disabled={!(date || mealPlanningDateRange.length > 0) || !type}
                     handleAction={() => {
@@ -145,7 +145,7 @@ export const AddToGroceryListModal = ({
                     }}
                     handleCancel={closeModal}
                 />
-            </RecipeModalContent>
+            </ModalContent>
         </div>
     )
 }

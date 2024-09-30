@@ -4,8 +4,8 @@ import { useGetIngredientCategories } from '../../../hooks';
 import { DATE_FORMAT, READABLE_SHORT_DATE } from '../constants';
 import { RecipeDateInput } from './RecipeDateInput';
 import { RecipeCategoryInput } from './RecipeCategoryInput';
-import { RecipeModalBody, RecipeModalContent, RecipeModalFooter, RecipeModalHeader } from './RecipeModalContent';
 import { getValidDateRangeError } from './getValidDateRangeError';
+import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
 
 export const EditGroceryListItemModal = ({
     itemToEdit,
@@ -31,13 +31,13 @@ export const EditGroceryListItemModal = ({
 
     return (
         <div className="edit-ingredient-modal">
-            <RecipeModalContent>
+            <ModalContent>
                 <div className="top-container">
-                    <RecipeModalHeader
+                    <ModalHeader
                         handleClose={closeEditIngredientModal}
                         title="Update Ingredient"
                     />
-                    <RecipeModalBody>
+                    <ModalBody>
                         <input className="edit-ingredient-input" placeholder="Ingredient Name" value={itemToEdit?.name} onChange={(e) => setItemToEdit({ ...itemToEdit, name: e.target.value })} />
                         <RecipeCategoryInput
                             isDropdownOpen={isCategoryDropdownOpen}
@@ -137,9 +137,9 @@ export const EditGroceryListItemModal = ({
                                     'Ending range...'}
                             />
                         </div>
-                    </RecipeModalBody>
+                    </ModalBody>
                 </div>
-                <RecipeModalFooter
+                <ModalFooter
                     actionLabel={'Save'}
                     handleAction={() => {
                         const finalItemToEdit = { ...itemToEdit };
@@ -162,7 +162,7 @@ export const EditGroceryListItemModal = ({
                         originalItemToEdit?.mealPlanningDateRange?.[1] === itemToEdit?.mealPlanningDateRange?.[1]
                     ) || !itemToEdit.name}
                 />
-            </RecipeModalContent>
+            </ModalContent>
         </div>
     )
 }

@@ -1,0 +1,23 @@
+.filter-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    .top-bar {
+        width: 32px;
+        height: 5px;
+        background: $white;
+        margin-bottom: 4px;
+    }
+    .middle-bar {
+        width: 24px;
+        height: 5px;
+        background: $white;
+        margin-bottom: 4px;
+    }
+    .bottom-bar {
+        width: 16px;
+        height: 5px;
+        background: $white;
+    }
+}
