@@ -16,15 +16,6 @@ import { useMealPlanning } from '../hooks/use-meal-planning';
 import { SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 import { RecipeFilterModal } from './RecipeFilterModal';
 
-export const initialShownFilters = {
-    category: false,
-    diet: false,
-    genre: false,
-    method: false,
-    protein: false,
-    type: false,
-};
-
 export const Recipes = ({ history }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const queryClient = useQueryClient();
@@ -41,7 +32,6 @@ export const Recipes = ({ history }) => {
         type: [],
     }
     const [selectedFilters, setSelectedFilters] = useState(initialSelectedFilters);
-    const [shownFilters, setShownFilters] = useState(initialShownFilters);
     const [showArrow, setShowArrow] = useState(false);
 
     const { data: recipes = [] } = useGetData('recipes');
@@ -85,7 +75,6 @@ export const Recipes = ({ history }) => {
             setSearch('');
             setShow(false);
             setShowArrow(false);
-            setShownFilters(initialShownFilters);
             setSelectedFilters(initialSelectedFilters);
             window.removeEventListener('scroll', onScroll);
         }
@@ -94,7 +83,6 @@ export const Recipes = ({ history }) => {
 
     const resetShownFilters = () => {
         if (!show) return;
-        setShownFilters(initialShownFilters);
         const filtersContainer = document.querySelector('.filters-container');
         if (filtersContainer) filtersContainer.classList.add('is-closing');
         setTimeout(() => {
@@ -149,9 +137,9 @@ export const Recipes = ({ history }) => {
         setSearch,
         setSelectedFilters,
         setShow,
-        setShownFilters,
+        // setShownFilters,
         show,
-        shownFilters,
+        // shownFilters,
         totalAvailableRecipes: recipes.filter(item => item.available).length,
     };
 
@@ -167,6 +155,18 @@ export const Recipes = ({ history }) => {
         setShowMealPlanning(newSelectedView === 'mealPlanning');
         setShowGroceryList(newSelectedView === 'groceryList');
     }    
+
+    useEffect(() => {
+        const rootId = document.getElementById('root');
+        if (show) {
+            rootId.style.overflowY = 'hidden';
+            rootId.style.height = '100vh';
+        } else {
+            rootId.style.overflowY = '';
+            rootId.style.height = '';
+        }
+        // eslint-disable-next-line
+    }, [show]);
 
     return (
         <NonDashboardPage mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`} onClick={resetShownFilters}>

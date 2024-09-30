@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ModalBody, ModalContent, ModalHeader } from '../../modal/ModalContent';
 import { useFilters } from '../hooks/use-filters';
-import { initialShownFilters } from './Recipes';
 import { RecipeFilterContainer } from './RecipeFilterContainer';
 
 export const RecipeFilterModal = ({
@@ -9,24 +8,9 @@ export const RecipeFilterModal = ({
     filteredRecipes,
     selectedFilters,
     setSelectedFilters,
-    shownFilters,
-    show,
-    setShownFilters,
     totalAvailableRecipes,
 }) => {
     const { filterMapping, filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
-
-    useEffect(() => {
-        const rootId = document.getElementById('root');
-        if (show) {
-            rootId.style.overflowY = 'hidden';
-            rootId.style.height = '100vh';
-        } else {
-            rootId.style.overflowY = '';
-            rootId.style.height = '';
-        }
-        // eslint-disable-next-line
-    }, [show]);
 
     return (
         <div className="modal-container">
@@ -42,13 +26,12 @@ export const RecipeFilterModal = ({
                             className="filters-container"
                             onClick={(e) => {
                                 e.stopPropagation();
-                                setShownFilters(initialShownFilters);
                             }}
                         >
                             {filterMapping.map((option =>
                                 <RecipeFilterContainer
                                     key={option.heading}
-                                    {...{ ...option, selectedFilters, setSelectedFilters, shownFilters, setShownFilters }} />
+                                    {...{ ...option, selectedFilters, setSelectedFilters }} />
                             ))}
                             <span className="total-ratio">{filteredRecipeBySelectedFilters.length} / {totalAvailableRecipes}</span>
                         </div>

@@ -4,8 +4,8 @@ import greenCheck from '../../../Assets/green-check.png';
 import partial from '../../../Assets/partial.png';
 import { Dropdown } from "../../dropdown/dropdown";
 
-export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFilters, setSelectedFilters, shownFilters, setShownFilters }) => {
-    const show = shownFilters[type];
+export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFilters, setSelectedFilters }) => {
+    const [show, setShow] = useState(false);
 
     const handleFilterSelector = (type, value) => {
         const newType = [...selectedFilters[type]];
@@ -65,9 +65,7 @@ export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFi
                 )}
                 dropdownOnClick={(e) => {
                     e.stopPropagation();
-                    const newShownFilters = { ...shownFilters };
-                    Object.keys(newShownFilters).forEach(key => newShownFilters[key] = false);
-                    setShownFilters({ ...newShownFilters, [type]: !shownFilters[type] })
+                    setShow(!show);
                 }}
                 DropdownSelectorLeftContent={(
                     <div>

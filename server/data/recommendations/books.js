@@ -25,6 +25,25 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: IN_PROGRESS,
+            title: "The Well of Ascension",
+            author: ["Brandon Sanderson"],
+            source: ["same author"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 590,
+            rating: NO_RATING,
+        },
+        {
             date: NO_DATE,
             title: "Daphne du Maurier",
             author: ["Rebecca"],

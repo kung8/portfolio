@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Dropdown } from '../dropdown/dropdown';
 import { ModalBody, ModalContent, ModalHeader } from '../modal/ModalContent';
 
@@ -37,20 +37,7 @@ export const BookFilterContainer = ({
     filterOptions,
     selectedFilters,
     setSelectedFilters,
-    show,
 }) => {
-    useEffect(() => {
-        const rootId = document.getElementById('root');
-        if (show) {
-            rootId.style.overflowY = 'hidden';
-            rootId.style.height = '100vh';
-        } else {
-            rootId.style.overflowY = '';
-            rootId.style.height = '';
-        }
-        // eslint-disable-next-line
-    }, [show]);
-
     return (
         <div className="modal-container">
             <div

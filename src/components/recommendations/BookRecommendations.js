@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { RecommendationPage, RecommendationContainer, ReviewContainer } from './RecommendationPage';
 import { SearchBar } from '../search-bar/SearchBar';
 import { Filter } from '../filter/Filter';
@@ -48,16 +48,16 @@ const bookFilterOptions = {
             { label: '2022', value: 2022 },
         ]
     },
-    genre: {
-        label: 'Genre',
-        options: [
-            { label: 'All', value: 'all' },
-            { label: 'Mystery', value: 'mystery' },
-            { label: 'Non-Fiction', value: 'non-fiction' },
-            { label: 'Fantasy', value: 'fantasy' },
-            { label: 'Sci-Fi', value: 'science-fiction' },
-        ]
-    },
+    // genre: {
+    //     label: 'Genre',
+    //     options: [
+    //         { label: 'All', value: 'all' },
+    //         { label: 'Mystery', value: 'mystery' },
+    //         { label: 'Non-Fiction', value: 'non-fiction' },
+    //         { label: 'Fantasy', value: 'fantasy' },
+    //         { label: 'Sci-Fi', value: 'science-fiction' },
+    //     ]
+    // },
 };
 
 export const BookRecommendations = ({ category, reviews, recommendations }) => {
@@ -115,6 +115,18 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
     const displayedReviews = reviews.filter(review => checkFilter(review) && (!search || checkSearch(review)));
 
     const displayedRecommendations = recommendations.filter(recommendation => checkFilter(recommendation) && (!search || checkSearch(recommendation)));
+
+    useEffect(() => {
+        const rootId = document.getElementById('root');
+        if (showFilter) {
+            rootId.style.overflowY = 'hidden';
+            rootId.style.height = '100vh';
+        } else {
+            rootId.style.overflowY = '';
+            rootId.style.height = '';
+        }
+        // eslint-disable-next-line
+    }, [showFilter]);
 
     return (
         <RecommendationPage>
