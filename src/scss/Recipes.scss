@@ -159,17 +159,40 @@
                     letter-spacing: 1.5px;
                     display: inline-block;
                     word-wrap: unset;
-                    font-size: 14px;
+                    font-size: 24px;
                     z-index: 1;
-
-                    @include down($desktop) {
+                    @include down($xxx-large) {
+                        font-size: 20px;
+                    }
+                    @include down($xx-large) {
+                        font-size: 18px;
+                    }
+                    @include down($extra-large) {
+                        font-size: 16px;
+                    }
+                    @include down($mid-desktop) {
                         font-size: 12px;
+                    }
+                    @include down($desktop) {
+                        font-size: 10px;
+                    }
+                    @include down($large-tablet) {
+                        font-size: 8px;
                     }
                     @include down($tablet) {
                         font-size: 12px;
                     }
+                    @include down($mobile-xl) {
+                        font-size: 16px;
+                    }
                     @include down($mobile) {
                         font-size: 24px;
+                    }
+                    @include down($small-mobile) {
+                        font-size: 20px;
+                    }
+                    @include down($extra-small) {
+                        font-size: 16px;
                     }
                 }
             }
