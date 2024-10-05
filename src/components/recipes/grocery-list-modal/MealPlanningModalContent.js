@@ -159,16 +159,16 @@ export const MealPlanningModalContent = ({
                         </div>
                         {!!displayedData[date.join(' - ')]?.length && (<ul className="meals-container">
                             {displayedData[date.join(' - ')].sort((a, b) => {
-                                if (a.date < b.date) return -1;
-                                if (a.date > b.date) return 1;
-                                if (a.type === 'Breakfast') return -1;
-                                if (b.type === 'Breakfast') return 1;
-                                if (a.type === 'Lunch') return -1;
-                                if (b.type === 'Lunch') return 1;
-                                if (a.type === 'Dinner') return -1;
-                                if (b.type === 'Dinner') return 1;
-                                if (a.type === 'Snack') return -1;
-                                if (b.type === 'Snack') return 1;
+                                const order = ['Breakfast', 'Lunch', 'Dinner', 'Dessert', 'Snack'];
+                                const startingDateRangeA = a?.mealPlanningDateRange?.[0] ?? a.date;
+                                const startingDateRangeB = b?.mealPlanningDateRange?.[0] ?? b.date;                                
+
+                                if (startingDateRangeA < startingDateRangeB) return -1;
+                                if (startingDateRangeA > startingDateRangeB) return 1;
+
+                                // this is the same date, so sort by types
+                                if (order.indexOf(a.type) < order.indexOf(b.type)) return -1;
+                                if (order.indexOf(a.type) > order.indexOf(b.type)) return 1;
                                 return 0;
                             })?.map((item, index) =>
                                 <MealItem

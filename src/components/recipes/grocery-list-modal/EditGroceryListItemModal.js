@@ -32,6 +32,20 @@ export const EditGroceryListItemModal = ({
 
     const { data: categories = [] } = useGetIngredientCategories();
 
+    const getDateRange = (startDate = null, endDate = null) => {
+        const formattedStartDate = startDate ? dayjs(startDate).format(DATE_FORMAT) : startDate;
+        const formattedEndDate = endDate ? dayjs(endDate).format(DATE_FORMAT) : endDate;
+        const formattedDates = [formattedStartDate, formattedEndDate];
+        const invalid = getValidDateRangeError(formattedDates);
+
+        if (formattedDates[0] && formattedDates[1] && invalid) {
+            // reverse the dates if the range is invalid
+            formattedDates.reverse();
+        }
+
+        return formattedDates;
+    }
+
     return (
         <div className="edit-ingredient-modal">
             <ModalContent>
@@ -45,9 +59,9 @@ export const EditGroceryListItemModal = ({
                         <RecipeCategoryInput
                             isDropdownOpen={isCategoryDropdownOpen}
                             handleDropdownToggle={() => setIsCategoryDropdownOpen(!isCategoryDropdownOpen)}
-                            handleDropdownSelection={(e) => {
-                                e.stopPropagation();
-                                setItemToEdit({ ...itemToEdit, category: e.target.value });
+                            handleDropdownSelection={(option, event) => {
+                                event.stopPropagation();
+                                setItemToEdit(prev => ({ ...prev, category: option }));
                                 setIsCategoryDropdownOpen(false);
                             }}
                             label={itemToEdit.category}
@@ -59,7 +73,7 @@ export const EditGroceryListItemModal = ({
                             handleChange={(value) => {
                                 const formattedDate = dayjs(value).format(DATE_FORMAT);
                                 setDate(formattedDate);
-                                setItemToEdit({ ...itemToEdit, date: formattedDate });
+                                setItemToEdit(prev => ({ ...prev, date: formattedDate }));
                                 setIsCalendarOpen(false);
                             }}
                             handleClick={() => {
@@ -69,7 +83,7 @@ export const EditGroceryListItemModal = ({
                             }}
                             handleDelete={() => {
                                 setDate('');
-                                setItemToEdit({ ...itemToEdit, date: '' });
+                                setItemToEdit(prev => ({ ...prev, date: '' }));
                             }}
                             hasDate={!!date}
                             isCalendarOpen={isCalendarOpen}
@@ -79,17 +93,11 @@ export const EditGroceryListItemModal = ({
                             <RecipeDateInput
                                 date={mealPlanningDateRange?.[0]}
                                 handleChange={(value) => {
-                                    const formattedDate = dayjs(value).format(DATE_FORMAT);
-                                    const formattedDates = [formattedDate, mealPlanningDateRange?.[1]];
-                                    const invalid = getValidDateRangeError(formattedDates);
-
-                                    if (formattedDates[0] && formattedDates[1] && invalid) {
-                                        // reverse the dates if the range is invalid
-                                        formattedDates.reverse();
-                                    }
-
-                                    setMealPlanningDateRange(formattedDates);
-                                    setItemToEdit({ ...itemToEdit, mealPlanningDateRange: formattedDates });
+                                    setMealPlanningDateRange(prev => getDateRange(value, prev?.[1]));
+                                    setItemToEdit(prev => ({
+                                        ...prev,
+                                        mealPlanningDateRange: getDateRange(value, prev?.mealPlanningDateRange?.[1])
+                                    }));
                                     setIsStartMealPlanningCalendarOpen(false);
                                 }}
                                 handleClick={() => {
@@ -98,9 +106,11 @@ export const EditGroceryListItemModal = ({
                                     setIsStartMealPlanningCalendarOpen(!isStartMealPlanningCalendarOpen);
                                 }}
                                 handleDelete={() => {
-                                    const formattedDates = [null, mealPlanningDateRange?.[1]];
-                                    setMealPlanningDateRange(formattedDates);
-                                    setItemToEdit({ ...itemToEdit, mealPlanningDateRange: formattedDates });
+                                    setMealPlanningDateRange(prev => getDateRange(null, prev?.[1]));
+                                    setItemToEdit(prev => ({
+                                        ...prev,
+                                        mealPlanningDateRange: getDateRange(null, prev?.mealPlanningDateRange?.[1])
+                                    }));
                                 }}
                                 hasDate={mealPlanningDateRange?.[0]}
                                 isCalendarOpen={isStartMealPlanningCalendarOpen}
@@ -111,17 +121,8 @@ export const EditGroceryListItemModal = ({
                             <RecipeDateInput
                                 date={mealPlanningDateRange?.[1]}
                                 handleChange={(value) => {
-                                    const formattedDate = dayjs(value).format(DATE_FORMAT);
-                                    const formattedDates = [mealPlanningDateRange?.[0], formattedDate];
-                                    const invalid = getValidDateRangeError(formattedDates);
-
-                                    if (formattedDates[0] && formattedDates[1] && invalid) {
-                                        // reverse the dates if the range is invalid
-                                        formattedDates.reverse();
-                                    }
-
-                                    setMealPlanningDateRange(formattedDates);
-                                    setItemToEdit({ ...itemToEdit, mealPlanningDateRange: formattedDates });
+                                    setMealPlanningDateRange(prev => getDateRange(prev?.[0], value));
+                                    setItemToEdit(prev => ({ ...prev, mealPlanningDateRange: getDateRange(prev?.mealPlanningDateRange?.[0], value) }));
                                     setIsEndMealPlanningCalendarOpen(false);
                                 }}
                                 handleClick={() => {
@@ -130,9 +131,11 @@ export const EditGroceryListItemModal = ({
                                     setIsEndMealPlanningCalendarOpen(!isEndMealPlanningCalendarOpen);
                                 }}
                                 handleDelete={() => {
-                                    const formattedDates = [mealPlanningDateRange?.[1], null];
-                                    setMealPlanningDateRange(formattedDates);
-                                    setItemToEdit({ ...itemToEdit, mealPlanningDateRange: formattedDates });
+                                    setMealPlanningDateRange(prev => getDateRange(prev?.[0], null));
+                                    setItemToEdit(prev => ({
+                                        ...prev,
+                                        mealPlanningDateRange: getDateRange(prev?.mealPlanningDateRange?.[0], null)
+                                    }));
                                 }}
                                 hasDate={mealPlanningDateRange?.[1]}
                                 isCalendarOpen={isEndMealPlanningCalendarOpen}
@@ -152,6 +155,8 @@ export const EditGroceryListItemModal = ({
                         } else if (!finalItemToEdit?.mealPlanningDateRange?.[0] && finalItemToEdit?.mealPlanningDateRange?.[1]) {
                             finalItemToEdit.mealPlanningDateRange = [finalItemToEdit.mealPlanningDateRange[1], finalItemToEdit.mealPlanningDateRange[1]];
                         }
+                        console.log('finalItemToEdit', finalItemToEdit);
+                        
 
                         updateItem(originalItemToEdit, finalItemToEdit);
 
@@ -164,15 +169,20 @@ export const EditGroceryListItemModal = ({
                         const newDate = finalItemToEdit.date;
                         const originalRecipeName = originalItemToEdit.recipeName;
                         const newRecipeName = finalItemToEdit.recipeName;
+                        const originalCategory = originalItemToEdit.category;
+                        const newCategory = finalItemToEdit.category;
 
                         if (
                             originalStartMealPlanningDate !== newStartMealPlanningDate ||
                             originalEndMealPlanningDate !== newEndMealPlanningDate ||
                             originalDate !== newDate ||
-                            originalRecipeName !== newRecipeName
+                            originalRecipeName !== newRecipeName || 
+                            originalCategory !== newCategory
                         ) {
                             const updatedMealPlan = {
                                 ...originalItemToEdit,
+                                name: finalItemToEdit.name,
+                                category: finalItemToEdit.category,
                                 mealPlanningDateRange: finalItemToEdit.mealPlanningDateRange,
                                 date: finalItemToEdit.date,
                                 recipeName: finalItemToEdit.recipeName,

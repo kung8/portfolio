@@ -44,13 +44,15 @@ export const GroceryListModal = ({
     }
 
     const updateItem = (originalItem, newItemValue) => {
-        const newGroceryList = [...groceryList];
-        const foundItem = newGroceryList.findIndex((item) => originalItem.index === item.index && originalItem.name === item.name);
-        if (foundItem > -1) {
-            const updatedItem = { ...originalItem, ...newItemValue };
-            newGroceryList[foundItem] = updatedItem;
-        }
-        setGroceryList(newGroceryList);
+        setGroceryList(prev => {
+            const newGroceryList = [...prev];
+            const foundItem = newGroceryList.findIndex((item) => originalItem.index === item.index && originalItem.name === item.name);
+            if (foundItem > -1) {
+                const updatedItem = { ...originalItem, ...newItemValue };
+                newGroceryList[foundItem] = updatedItem;
+            }
+            return newGroceryList;
+        });
     }
 
 
@@ -78,22 +80,22 @@ export const GroceryListModal = ({
     }
 
     const updateMeal = (originalItem, newItemValue) => {
-        const newMealPlan = [...mealPlan];
-
         if (!originalItem) {
-            newMealPlan.push(newItemValue);
-            setMealPlan(newMealPlan);
+            setMealPlan(prev => [...prev, newItemValue]);
             return;
         }
 
-        const foundItem = newMealPlan.findIndex(item => originalItem.date === item.date && originalItem.type === item.type);
-        if (foundItem > -1) {
-            const updatedItem = { ...originalItem, ...newItemValue };
-            newMealPlan[foundItem] = updatedItem;
-        } else {
-            newMealPlan.push(newItemValue);
-        }
-        setMealPlan(newMealPlan);
+        setMealPlan(prev => {
+            const newMealPlan = [...prev];
+            const foundItem = newMealPlan.findIndex(item => originalItem.date === item.date && originalItem.type === item.type);
+            if (foundItem > -1) {
+                const updatedItem = { ...originalItem, ...newItemValue };
+                newMealPlan[foundItem] = updatedItem;
+            } else {
+                newMealPlan.push(newItemValue);
+            }
+            return newMealPlan;
+        });
     }
 
 
@@ -185,18 +187,19 @@ export const GroceryListModal = ({
                         const originalItemStartingDate = originalItem?.mealPlanningDateRange?.[0];
                         const originalItemEndingDate = originalItem?.mealPlanningDateRange?.[1];
                         const originalDate = originalItem?.date;
-
-                        const newGroceryList = groceryList.map((item) => {
-                            const matches = originalItem.recipeName === item.recipeName &&
-                                originalItemStartingDate === item?.mealPlanningDateRange?.[0] &&
-                                originalItemEndingDate === item?.mealPlanningDateRange?.[1] &&
-                                originalDate === item.date;
-                            if (matches) {
-                                return { ...item, mealPlanningDateRange: newItem.mealPlanningDateRange, date: newItem.date, recipeName: newItem.recipeName };
-                            }
-                            return item;
+                        setGroceryList(prev => {
+                            const newGroceryList = prev.map((item) => {
+                                const matches = originalItem.recipeName === item.recipeName &&
+                                    originalItemStartingDate === item?.mealPlanningDateRange?.[0] &&
+                                    originalItemEndingDate === item?.mealPlanningDateRange?.[1] &&
+                                    originalDate === item.date;
+                                if (matches) {
+                                    return { ...item,  mealPlanningDateRange: newItem.mealPlanningDateRange, date: newItem.date, recipeName: newItem.recipeName };
+                                }
+                                return item;
+                            });
+                            return newGroceryList;
                         });
-                        setGroceryList(newGroceryList);
                     }}
 
                     // only add if the original item didn't have a mealPlanningDateRange and date
@@ -206,8 +209,7 @@ export const GroceryListModal = ({
                         const originalDate = originalItem?.date;
 
                         if (!originalStartDate && !originalEndDate && !originalDate) {
-                            const newMealPlan = [...mealPlan, newMeal];
-                            setMealPlan(newMealPlan);
+                            setMealPlan(prev => [...prev, newMeal]);
                         }
                     }}
 
@@ -215,17 +217,15 @@ export const GroceryListModal = ({
                     updateMealPlan={(originalItem, newItem) => {
                         const originalItemStartingDate = originalItem?.mealPlanningDateRange?.[0];
                         const originalItemEndingDate = originalItem?.mealPlanningDateRange?.[1];
-                        console.log(originalItem, newItem);
-                        const newMeal = mealPlan.map((meal => {
+                        setMealPlan(prev => prev.map((meal => {
                             const startMealDate = meal?.mealPlanningDateRange[0];
                             const endMealDate = meal?.mealPlanningDateRange[1];
-
+                            
                             if (startMealDate === originalItemStartingDate && endMealDate === originalItemEndingDate) {
                                 return { ...meal, mealPlanningDateRange: newItem.mealPlanningDateRange, date: newItem.date, recipeName: newItem.recipeName };
                             }
                             return meal;
-                        }));
-                        setMealPlan(newMeal);
+                        })));
                     }}
                 />
             )}
@@ -250,24 +250,27 @@ export const GroceryListModal = ({
                         const newMealDate = newMeal.date;
                         const newStartDate = newMeal?.mealPlanningDateRange?.[0];
                         const newEndDate = newMeal?.mealPlanningDateRange?.[1];
+                        const newRecipeName = newMeal.recipeName;
 
-                        const newGroceryList = groceryList.map((item) => {
-                            if (
-                                originalStartDate === item?.mealPlanningDateRange?.[0] &&
-                                originalEndDate === item?.mealPlanningDateRange?.[1] &&
-                                originalMealDate === item?.date &&
-                                originalRecipeName === item.recipeName
-                            ) {
-                                return {
-                                    ...item,
-                                    mealPlanningDateRange: [newStartDate, newEndDate],
-                                    date: newMealDate,
-                                };
-                            }
-                            return item;
+                        setGroceryList(prev => {
+                            const newGroceryList = prev.map((item) => {
+                                if (
+                                    originalStartDate === item?.mealPlanningDateRange?.[0] &&
+                                    originalEndDate === item?.mealPlanningDateRange?.[1] &&
+                                    originalMealDate === item?.date &&
+                                    originalRecipeName === item.recipeName
+                                ) {
+                                    return {
+                                        ...item,
+                                        recipeName: newRecipeName,
+                                        mealPlanningDateRange: [newStartDate, newEndDate],
+                                        date: newMealDate,
+                                    };
+                                }
+                                return item;
+                            });
+                            return newGroceryList;
                         });
-                        
-                        setGroceryList(newGroceryList);
                     }}
                 />
             )}

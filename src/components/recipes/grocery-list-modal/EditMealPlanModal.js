@@ -41,9 +41,9 @@ export const EditMealPlanModal = ({
                         <RecipeCategoryInput
                             isDropdownOpen={isTypeDropdownOpen}
                             handleDropdownToggle={() => setIsTypeDropdownOpen(!isTypeDropdownOpen)}
-                            handleDropdownSelection={(e) => {
-                                e.stopPropagation();
-                                setMealToEdit({ ...mealToEdit, type: e.target.value });
+                            handleDropdownSelection={(option, event) => {
+                                event.stopPropagation();
+                                setMealToEdit(prev => ({ ...prev, type: option }));
                                 setIsTypeDropdownOpen(false);
                             }}
                             label={mealToEdit.type}
@@ -54,7 +54,7 @@ export const EditMealPlanModal = ({
                             handleChange={(value) => {
                                 const formattedDate = dayjs(value).format(DATE_FORMAT);
                                 setDate(formattedDate);
-                                setMealToEdit({ ...mealToEdit, date: formattedDate });
+                                setMealToEdit(prev => ({ ...prev, date: formattedDate }));
                                 setIsCalendarOpen(false);
                             }}
                             handleClick={() => {
@@ -64,7 +64,7 @@ export const EditMealPlanModal = ({
                             }}
                             handleDelete={() => {
                                 setDate('');
-                                setMealToEdit((prev) => ({ ...prev, date: '' }));
+                                setMealToEdit(prev => ({ ...prev, date: '' }));
                             }}
                             hasDate={!!date}
                             isCalendarOpen={isCalendarOpen}
@@ -84,7 +84,7 @@ export const EditMealPlanModal = ({
                                     }
 
                                     setMealPlanningDateRange(formattedDates);
-                                    setMealToEdit({ ...mealToEdit, mealPlanningDateRange: formattedDates });
+                                    setMealToEdit(prev => ({ ...prev, mealPlanningDateRange: formattedDates }));
                                     setIsStartMealPlanningCalendarOpen(false);
                                 }}
                                 handleClick={() => {
@@ -95,7 +95,7 @@ export const EditMealPlanModal = ({
                                 handleDelete={() => {
                                     const formattedDates = [null, mealPlanningDateRange[1]];
                                     setMealPlanningDateRange(formattedDates);
-                                    setMealToEdit((prev) => ({ ...prev, mealPlanningDateRange: formattedDates }));
+                                    setMealToEdit(prev => ({ ...prev, mealPlanningDateRange: formattedDates }));
                                 }}
                                 hasDate={mealPlanningDateRange?.[0]}
                                 isCalendarOpen={isStartMealPlanningCalendarOpen}
@@ -117,7 +117,7 @@ export const EditMealPlanModal = ({
                                     }
 
                                     setMealPlanningDateRange(formattedDates);
-                                    setMealToEdit({ ...mealToEdit, mealPlanningDateRange: formattedDates });
+                                    setMealToEdit(prev => ({ ...prev, mealPlanningDateRange: formattedDates }));
                                     setIsEndMealPlanningCalendarOpen(false);
                                 }}
                                 handleClick={() => {
@@ -128,7 +128,7 @@ export const EditMealPlanModal = ({
                                 handleDelete={() => {
                                     const formattedDates = [mealPlanningDateRange[0], null];
                                     setMealPlanningDateRange(formattedDates);
-                                    setMealToEdit((prev) => ({ ...prev, mealPlanningDateRange: formattedDates }));
+                                    setMealToEdit(prev => ({ ...prev, mealPlanningDateRange: formattedDates }));
                                 }}
                                 hasDate={mealPlanningDateRange?.[1]}
                                 isCalendarOpen={isEndMealPlanningCalendarOpen}
@@ -158,7 +158,7 @@ export const EditMealPlanModal = ({
                         }
                         // update the meal
                         updateMeal(originalMealToEdit, finalMealToEdit);
-                        
+
                         // update the shared ingredients
                         updateSharedIngredients(originalMealToEdit, finalMealToEdit);
 
