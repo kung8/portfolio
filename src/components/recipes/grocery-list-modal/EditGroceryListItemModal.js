@@ -57,6 +57,7 @@ export const EditGroceryListItemModal = ({
                                 const formattedDate = dayjs(value).format(DATE_FORMAT);
                                 setDate(formattedDate);
                                 setItemToEdit({ ...itemToEdit, date: formattedDate });
+                                setIsCalendarOpen(false);
                             }}
                             handleClick={() => {
                                 setIsStartMealPlanningCalendarOpen(false);
