@@ -1,4 +1,5 @@
 const soupBowl = '../assets/Products/broccoli-cheddar-soup-bowl.jpeg';
+const broccoli = '../assets/Products/broccoli-cheddar-soup-broccoli.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
 const {
     UNSALTED_BUTTER,
@@ -19,7 +20,7 @@ const {
 } = require('./ingredients');
 
 module.exports = {
-    cardName: 'Broccoli Cheddar Soup Bowl',
+    cardName: 'Broccoli Cheddar Soup',
     name: 'Broccoli Cheddar Soup Bowl',
     img: soupBowl,
     available: true,
@@ -66,8 +67,9 @@ module.exports = {
         { step: 'Stir for 1 to 2 minutes.', type: SECTIONS.SOUP },
         { step: 'Stir in half and half and broth.', type: SECTIONS.SOUP },
         { step: 'Bring to a boil and reduce to a low heat.', type: SECTIONS.SOUP },
-        { step: 'Add broccoli and carrots and cook for 20 to 25 minutes.', type: SECTIONS.SOUP },
-        { step: 'Add salt, pepper, and nutmeg as desired', type: SECTIONS.SOUP },
+        { step: 'Add broccoli and carrots and cook for 20 to 25 minutes.', type: SECTIONS.SOUP, img: [broccoli] },
+        { step: 'Add salt, pepper, and nutmeg as desired.', type: SECTIONS.SOUP },
+        { step: 'Add cheese and stir until melted (about 1 minute).', type: SECTIONS.SOUP },
         { step: 'Cut the tops off the bread bowls and remove some of the insides so it can be filled with soup. Be sure not to take too much of the bread out or poke a hole in the bread so the soup doesn\'t leak out.', type: SECTIONS.MAIN },
         { step: 'Enjoy these soup bowls on a cold day. Serve  warm soup inside the bread bowls and top with your favorite toppings.', type: SECTIONS.SERVE },
     ]
