@@ -13,6 +13,9 @@ export const EditGroceryListItemModal = ({
     originalItemToEdit,
     updateItem,
     closeEditIngredientModal,
+    addMealPlan,
+    updateSharedIngredients,
+    updateMealPlan,
 }) => {
     const [isCategoryDropdownOpen, setIsCategoryDropdownOpen] = useState(false);
 
@@ -151,6 +154,45 @@ export const EditGroceryListItemModal = ({
                         }
 
                         updateItem(originalItemToEdit, finalItemToEdit);
+
+                        // update the meal plan date range if it already exists
+                        const originalStartMealPlanningDate = originalItemToEdit?.mealPlanningDateRange?.[0];
+                        const originalEndMealPlanningDate = originalItemToEdit?.mealPlanningDateRange?.[1];
+                        const newStartMealPlanningDate = finalItemToEdit?.mealPlanningDateRange?.[0];
+                        const newEndMealPlanningDate = finalItemToEdit?.mealPlanningDateRange?.[1];
+                        const originalDate = originalItemToEdit.date;
+                        const newDate = finalItemToEdit.date;
+                        const originalRecipeName = originalItemToEdit.recipeName;
+                        const newRecipeName = finalItemToEdit.recipeName;
+
+                        if (
+                            originalStartMealPlanningDate !== newStartMealPlanningDate ||
+                            originalEndMealPlanningDate !== newEndMealPlanningDate ||
+                            originalDate !== newDate ||
+                            originalRecipeName !== newRecipeName
+                        ) {
+                            const updatedMealPlan = {
+                                ...originalItemToEdit,
+                                mealPlanningDateRange: finalItemToEdit.mealPlanningDateRange,
+                                date: finalItemToEdit.date,
+                                recipeName: finalItemToEdit.recipeName,
+                            };
+                            // update the mealPlanningDateRange, recipeName, and date
+                            updateMealPlan(originalItemToEdit, updatedMealPlan);
+                        }
+
+                        // add the mealPlanningDateRange if it doesn't exist
+                        addMealPlan(originalItemToEdit, {
+                            check: false,
+                            date: finalItemToEdit.date,
+                            mealPlanningDateRange: finalItemToEdit.mealPlanningDateRange,
+                            recipeName: finalItemToEdit.recipeName,
+                            type: 'Dinner' // TODO: should look up the type based on the recipeName?
+                        });
+
+                        // update the shared ingredients mealPlanningDateRange, recipeName, and date
+                        updateSharedIngredients(originalItemToEdit, finalItemToEdit);
+
                         closeEditIngredientModal();
                     }}
                     handleCancel={closeEditIngredientModal}

@@ -58,6 +58,7 @@ export const AddToGroceryListModal = ({
                             handleChange={(value) => {
                                 const formattedDate = dayjs(value).format(DATE_FORMAT);
                                 setDate(formattedDate);
+                                setIsCalendarOpen(false);
                             }}
                             handleClick={() => {
                                 setIsCalendarOpen(!isCalendarOpen);

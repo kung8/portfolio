@@ -179,6 +179,54 @@ export const GroceryListModal = ({
                     originalItemToEdit={originalItemToEdit}
                     updateItem={updateItem}
                     closeEditIngredientModal={closeEditIngredientModal}
+
+                    // when the ingredient is updated, update all the other shared ingredients with the same date
+                    updateSharedIngredients={(originalItem, newItem) => {
+                        const originalItemStartingDate = originalItem?.mealPlanningDateRange?.[0];
+                        const originalItemEndingDate = originalItem?.mealPlanningDateRange?.[1];
+                        const originalDate = originalItem?.date;
+
+                        const newGroceryList = groceryList.map((item) => {
+                            const matches = originalItem.recipeName === item.recipeName &&
+                                originalItemStartingDate === item?.mealPlanningDateRange?.[0] &&
+                                originalItemEndingDate === item?.mealPlanningDateRange?.[1] &&
+                                originalDate === item.date;
+                            if (matches) {
+                                return { ...item, mealPlanningDateRange: newItem.mealPlanningDateRange, date: newItem.date, recipeName: newItem.recipeName };
+                            }
+                            return item;
+                        });
+                        setGroceryList(newGroceryList);
+                    }}
+
+                    // only add if the original item didn't have a mealPlanningDateRange and date
+                    addMealPlan={(originalItem, newMeal) => {
+                        const originalStartDate = originalItem?.mealPlanningDateRange?.[0];
+                        const originalEndDate = originalItem?.mealPlanningDateRange?.[1];
+                        const originalDate = originalItem?.date;
+
+                        if (!originalStartDate && !originalEndDate && !originalDate) {
+                            const newMealPlan = [...mealPlan, newMeal];
+                            setMealPlan(newMealPlan);
+                        }
+                    }}
+
+                    // when the ingredient's meal plan date is update, need to update the meal plan date as well
+                    updateMealPlan={(originalItem, newItem) => {
+                        const originalItemStartingDate = originalItem?.mealPlanningDateRange?.[0];
+                        const originalItemEndingDate = originalItem?.mealPlanningDateRange?.[1];
+                        console.log(originalItem, newItem);
+                        const newMeal = mealPlan.map((meal => {
+                            const startMealDate = meal?.mealPlanningDateRange[0];
+                            const endMealDate = meal?.mealPlanningDateRange[1];
+
+                            if (startMealDate === originalItemStartingDate && endMealDate === originalItemEndingDate) {
+                                return { ...meal, mealPlanningDateRange: newItem.mealPlanningDateRange, date: newItem.date, recipeName: newItem.recipeName };
+                            }
+                            return meal;
+                        }));
+                        setMealPlan(newMeal);
+                    }}
                 />
             )}
             {isMealPlanning && isDeleteMealPlanModalOpen && (
@@ -191,6 +239,36 @@ export const GroceryListModal = ({
                     originalMealToEdit={originalMealToEdit}
                     updateMeal={updateMeal}
                     closeEditMealPlanModal={closeEditMealPlanModal}
+
+                    // when the meal plan is updated, update all the ingredients with the same date
+                    updateSharedIngredients={(originalMeal, newMeal) => {
+                        const originalMealDate = originalMeal.date;
+                        const originalStartDate = originalMeal?.mealPlanningDateRange?.[0];
+                        const originalEndDate = originalMeal?.mealPlanningDateRange?.[1];
+                        const originalRecipeName = originalMeal?.recipeName;
+
+                        const newMealDate = newMeal.date;
+                        const newStartDate = newMeal?.mealPlanningDateRange?.[0];
+                        const newEndDate = newMeal?.mealPlanningDateRange?.[1];
+
+                        const newGroceryList = groceryList.map((item) => {
+                            if (
+                                originalStartDate === item?.mealPlanningDateRange?.[0] &&
+                                originalEndDate === item?.mealPlanningDateRange?.[1] &&
+                                originalMealDate === item?.date &&
+                                originalRecipeName === item.recipeName
+                            ) {
+                                return {
+                                    ...item,
+                                    mealPlanningDateRange: [newStartDate, newEndDate],
+                                    date: newMealDate,
+                                };
+                            }
+                            return item;
+                        });
+                        
+                        setGroceryList(newGroceryList);
+                    }}
                 />
             )}
         </>

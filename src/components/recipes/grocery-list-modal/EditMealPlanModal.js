@@ -12,6 +12,7 @@ export const EditMealPlanModal = ({
     originalMealToEdit,
     updateMeal,
     closeEditMealPlanModal,
+    updateSharedIngredients,
 }) => {
     const title = originalMealToEdit ? 'Update Meal' : 'Add Meal';
     const buttonText = originalMealToEdit ? 'Update' : 'Add';
@@ -155,8 +156,12 @@ export const EditMealPlanModal = ({
                         } else if (!mealToEdit?.mealPlanningDateRange[0] && mealToEdit?.mealPlanningDateRange[1]) {
                             finalMealToEdit.mealPlanningDateRange = [mealToEdit.mealPlanningDateRange[1], mealToEdit.mealPlanningDateRange[1]];
                         }
-
+                        // update the meal
                         updateMeal(originalMealToEdit, finalMealToEdit);
+                        
+                        // update the shared ingredients
+                        updateSharedIngredients(originalMealToEdit, finalMealToEdit);
+
                         closeEditMealPlanModal();
                     }}
                     handleCancel={closeEditMealPlanModal}
