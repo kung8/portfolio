@@ -154,9 +154,7 @@ export const EditGroceryListItemModal = ({
                             finalItemToEdit.mealPlanningDateRange = [finalItemToEdit.mealPlanningDateRange[0], finalItemToEdit.mealPlanningDateRange[0]];
                         } else if (!finalItemToEdit?.mealPlanningDateRange?.[0] && finalItemToEdit?.mealPlanningDateRange?.[1]) {
                             finalItemToEdit.mealPlanningDateRange = [finalItemToEdit.mealPlanningDateRange[1], finalItemToEdit.mealPlanningDateRange[1]];
-                        }
-                        console.log('finalItemToEdit', finalItemToEdit);
-                        
+                        }                        
 
                         updateItem(originalItemToEdit, finalItemToEdit);
 

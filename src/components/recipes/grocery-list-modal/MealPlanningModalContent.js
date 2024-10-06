@@ -70,7 +70,6 @@ export const MealPlanningModalContent = ({
             let startingDate = dayjs(mealPlanningDateRange[0]);
             let endingDate = dayjs(mealPlanningDateRange[1]);
             const datesWithinRange = createRange(startingDate, endingDate);
-            console.log(datesWithinRange);
             
             datesWithinRange.forEach(d => {
                 const formattedKey = d.format(DATE_FORMAT);

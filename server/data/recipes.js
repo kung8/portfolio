@@ -13,7 +13,7 @@ const bibimbap = require("./recipes/bibimbap");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
 const blondie = require("./recipes/blondie");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
-const broccoliCheddarSoupBowl = require("./recipes/broccoli-cheddar-soup-bowl");
+const broccoliCheddarSoup = require("./recipes/broccoli-cheddar-soup");
 const brownies = require("./recipes/brownies");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cabbageStirFry = require("./recipes/cabbage-stir-fry");
@@ -193,7 +193,7 @@ const recipes = [
     macaroniSalad,
     frenchCrepe,
     frenchToast,
-    broccoliCheddarSoupBowl,
+    broccoliCheddarSoup,
     cheeseballs,
     garlicBreadsticks,
     biscuitsAndGravy,

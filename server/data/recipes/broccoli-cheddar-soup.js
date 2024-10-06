@@ -1,5 +1,18 @@
-const soupBowl = '../assets/Products/broccoli-cheddar-soup-bowl.jpeg';
+const bowl1 = '../assets/Products/broccoli-cheddar-soup-bread-bowl-1.jpeg';
+const bowl2 = '../assets/Products/broccoli-cheddar-soup-bread-bowl-2.jpeg';
+const broccoliCarrots = '../assets/Products/broccoli-cheddar-soup-broccoli-and-carrots.jpeg';
 const broccoli = '../assets/Products/broccoli-cheddar-soup-broccoli.jpeg';
+const broth = '../assets/Products/broccoli-cheddar-soup-broth.jpeg';
+const butter = '../assets/Products/broccoli-cheddar-soup-butter.jpeg';
+const zoomed = '../assets/Products/broccoli-cheddar-soup-combined-zoomed.jpeg';
+const combined = '../assets/Products/broccoli-cheddar-soup-combined.jpeg';
+const half = '../assets/Products/broccoli-cheddar-soup-half-and-half.jpeg';
+const hollowed = '../assets/Products/broccoli-cheddar-soup-hollowed-bread-bowl.jpeg';
+const melting = '../assets/Products/broccoli-cheddar-soup-melting-butter.jpeg';
+const onions = '../assets/Products/broccoli-cheddar-soup-onions.jpeg';
+const sauteed = '../assets/Products/broccoli-cheddar-soup-sauteed-onion.jpeg';
+const simmering1 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-1.jpeg';
+const simmering2 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-2.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
 const {
     UNSALTED_BUTTER,
@@ -21,8 +34,8 @@ const {
 
 module.exports = {
     cardName: 'Broccoli Cheddar Soup',
-    name: 'Broccoli Cheddar Soup Bowl',
-    img: soupBowl,
+    name: 'Broccoli Cheddar Soup',
+    img: simmering2,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
@@ -61,16 +74,15 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'Over medium heat, melt butter.', type: SECTIONS.SOUP },
-        { step: 'Sauté onions in butter until soft.', type: SECTIONS.SOUP },
+        { step: 'Over medium heat, melt butter.', type: SECTIONS.SOUP, img: [butter, melting] },
+        { step: 'Sauté onions in butter until soft.', type: SECTIONS.SOUP, img: [onions, sauteed] },
         { step: 'Sprinkle flour over mixture.', type: SECTIONS.SOUP },
         { step: 'Stir for 1 to 2 minutes.', type: SECTIONS.SOUP },
-        { step: 'Stir in half and half and broth.', type: SECTIONS.SOUP },
+        { step: 'Stir in half and half and broth.', type: SECTIONS.SOUP, img: [broth, half] },
         { step: 'Bring to a boil and reduce to a low heat.', type: SECTIONS.SOUP },
-        { step: 'Add broccoli and carrots and cook for 20 to 25 minutes.', type: SECTIONS.SOUP, img: [broccoli] },
+        { step: 'Add broccoli and carrots and cook for 20 to 25 minutes.', type: SECTIONS.SOUP, img: [broccoliCarrots, broccoli, combined, zoomed] },
         { step: 'Add salt, pepper, and nutmeg as desired.', type: SECTIONS.SOUP },
-        { step: 'Add cheese and stir until melted (about 1 minute).', type: SECTIONS.SOUP },
-        { step: 'Cut the tops off the bread bowls and remove some of the insides so it can be filled with soup. Be sure not to take too much of the bread out or poke a hole in the bread so the soup doesn\'t leak out.', type: SECTIONS.MAIN },
-        { step: 'Enjoy these soup bowls on a cold day. Serve  warm soup inside the bread bowls and top with your favorite toppings.', type: SECTIONS.SERVE },
+        { step: 'Optionally blend the soup if you would like a smoother texture.', type: SECTIONS.SOUP },
+        { step: 'Eat this in bread bowls or just serve with bread. Top with cheese and your favorite toppings.', type: SECTIONS.SERVE, img: [simmering1, hollowed, bowl1, bowl2] },
     ]
 };

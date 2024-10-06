@@ -95,7 +95,6 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
             if (selectedFilters[key] !== 'all') {
                 if (key === 'date' && selectedFilters[key] !== 'NO DATE') {
                     const year = review.date.split('/')[1];
-                    console.log(year);
 
                     showReview = `${selectedFilters[key]}`.includes(year);
                 } else if (key === 'pageCount') {
