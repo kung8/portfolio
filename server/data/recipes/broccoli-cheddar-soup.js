@@ -13,6 +13,9 @@ const onions = '../assets/Products/broccoli-cheddar-soup-onions.jpeg';
 const sauteed = '../assets/Products/broccoli-cheddar-soup-sauteed-onion.jpeg';
 const simmering1 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-1.jpeg';
 const simmering2 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-2.jpeg';
+const baked = '../assets/Products/carrot-cake-baked-bread-bowls.jpeg';
+const dough = '../assets/Products/carrot-cake-baked-bread-bowl-dough.jpeg';
+const plated = '../assets/Products/carrot-cake-baked-plated-bread-bowl.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
 const {
     UNSALTED_BUTTER,
@@ -83,6 +86,6 @@ module.exports = {
         { step: 'Add broccoli and carrots and cook for 20 to 25 minutes.', type: SECTIONS.SOUP, img: [broccoliCarrots, broccoli, combined, zoomed] },
         { step: 'Add salt, pepper, and nutmeg as desired.', type: SECTIONS.SOUP },
         { step: 'Optionally blend the soup if you would like a smoother texture.', type: SECTIONS.SOUP },
-        { step: 'Eat this in bread bowls or just serve with bread. Top with cheese and your favorite toppings.', type: SECTIONS.SERVE, img: [simmering1, hollowed, bowl1, bowl2] },
+        { step: 'Eat this in bread bowls or just serve with bread. Top with cheese and your favorite toppings.', type: SECTIONS.SERVE, img: [simmering1, dough, baked, plated, hollowed, bowl1, bowl2] },
     ]
 };

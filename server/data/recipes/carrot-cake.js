@@ -12,8 +12,12 @@ const grated = '../assets/Products/carrot-cake-grated-carrots.jpeg';
 const nonFlour = '../assets/Products/carrot-cake-non-flour-dry-ingredients.jpeg';
 const pans = '../assets/Products/carrot-cake-pans.jpeg';
 const softened = '../assets/Products/carrot-cake-softened.jpeg';
-const toppings = '../assets/Products/carrot-cake-toppings.jpeg';
+const topping = '../assets/Products/carrot-cake-topping.jpeg';
 const walnuts = '../assets/Products/carrot-cake-walnuts.jpeg';
+const side = '../assets/Products/carrot-cake-plated-side.jpeg';
+const flat = '../assets/Products/carrot-cake-plated-sliced-flat.jpeg';
+const plated = '../assets/Products/carrot-cake-plated.jpeg';
+const zoomed = '../assets/Products/carrot-cake-plated-zoomed.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { BROWN_SUGAR, CARROTS, EGGS, WHITE_SUGAR, VEGETABLE_OIL, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, CINNAMON, BAKING_SODA, SALT, BAKING_POWDER, CREAM_CHEESE, UNSALTED_BUTTER, POWDERED_SUGAR, WALNUTS } = require('./ingredients');
 
@@ -25,7 +29,7 @@ const ASSEMBLING = 'Assembling';
 module.exports = {
     cardName: 'Carrot Cake',
     name: 'Carrot Cake',
-    img: three,
+    img: zoomed,
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
@@ -81,9 +85,9 @@ module.exports = {
         { step: 'Cool for 10 minutes before taking the cake out of the pan.', type: CAKE },
         { step: 'Cool completely before assembling and decorating the cake.', type: CAKE },
         { step: 'In a mixing bowl, combine together the softened cream cheese and butter.', type: FROSTING, img: [softened, creamed] },
-        { step: 'Add powdered sugar and vanilla and mix until well incorporated.', type: FROSTING, img: toppings },
+        { step: 'Add powdered sugar and vanilla and mix until well incorporated.', type: FROSTING, img: topping },
         { step: 'Spread the frosting on one layer of the cake and place the other layer on top.', type: ASSEMBLING, img: [two] },
         { step: 'Frost the top layer and sprinkle it with walnut, as desired.', type: ASSEMBLING, img: [three] },
-        { step: 'Slice up the cake and enjoy this tasty rabbit food (just kidding don\'t feed this to rabbits).', type: SECTIONS.SERVE },
+        { step: 'Slice up the cake and enjoy this tasty rabbit food (just kidding don\'t feed this to rabbits).', type: SECTIONS.SERVE, img: [plated, side, flat] },
     ]
 };
