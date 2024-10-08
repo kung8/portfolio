@@ -1,4 +1,5 @@
 const popcornBalls = '../assets/Products/popcorn-balls.jpeg';
+const popped = '../assets/Products/popcorn-balls-popped-corn.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { POPCORN, CORN_SYRUP, UNSALTED_BUTTER, COLD_WATER, POWDERED_SUGAR, MINI_MARSHMALLOWS, COOKING_SPRAY } = require('./ingredients');
 
@@ -36,8 +37,8 @@ module.exports = {
         { name: 'plastic wrap or sandwich ziploc bag' },
     ],
     directions: [
-        { step: 'Remove any unpopped kernels so you don\'t break your teeth.', type: SECTIONS.MAIN },
-        { step: 'Prepare a baking sheet and line with parchment paper before beginning to cook.'},
+        { step: 'Remove any unpopped kernels so you don\'t break your teeth.', type: SECTIONS.MAIN, img: popped },
+        { step: 'Prepare a baking sheet and line with parchment paper before beginning to cook.' },
         { step: 'Over medium heat, mix together corn syrup, butter, water, powdered sugar and marshmallows in a large pot.', type: SECTIONS.MAIN },
         { step: 'Stir and continue to let the mixture melt.', type: SECTIONS.MAIN },
         { step: 'Slowly pour mixture over popcorn and mix until the popcorn is evenly coated.', type: SECTIONS.MAIN },
