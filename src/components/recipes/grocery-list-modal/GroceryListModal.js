@@ -190,6 +190,7 @@ export const GroceryListModal = ({
                         setGroceryList(prev => {
                             const newGroceryList = prev.map((item) => {
                                 const matches = originalItem.recipeName === item.recipeName &&
+                                    !!item.recipeName && // don't update the ones that don't have a recipe name
                                     originalItemStartingDate === item?.mealPlanningDateRange?.[0] &&
                                     originalItemEndingDate === item?.mealPlanningDateRange?.[1] &&
                                     originalDate === item.date;
@@ -258,7 +259,8 @@ export const GroceryListModal = ({
                                     originalStartDate === item?.mealPlanningDateRange?.[0] &&
                                     originalEndDate === item?.mealPlanningDateRange?.[1] &&
                                     originalMealDate === item?.date &&
-                                    originalRecipeName === item.recipeName
+                                    originalRecipeName === item.recipeName &&
+                                    !!item.recipeName // don't update the ones that don't have a recipe name
                                 ) {
                                     return {
                                         ...item,
