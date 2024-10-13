@@ -1,11 +1,17 @@
-// const example = '../assets/Products/example.jpeg';
+const boiled = '../assets/Products/rosemary-lemonade-boiled.jpeg';
+const zoomed = '../assets/Products/rosemary-lemonade-pitcher-zoomed.jpeg';
+const pitcher = '../assets/Products/rosemary-lemonade-pitcher.jpeg';
+const rosemary = '../assets/Products/rosemary-lemonade-rosemary.jpeg';
+const sugar = '../assets/Products/rosemary-lemonade-sugar.jpeg';
+const sweet = '../assets/Products/rosemary-lemonade-sweet-mix.jpeg';
+const water = '../assets/Products/rosemary-lemonade-water.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { COLD_WATER, FRESH_ROSEMARY, WHITE_SUGAR, HONEY, LEMON_JUICE, ICE, LEMON } = require('./ingredients');
 
 module.exports = {
     cardName: 'Rosemary Lemonade',
     name: 'Rosemary Lemonade',
-    // img: '',
+    img: zoomed,
     available: true,
     category: [CATEGORIES.DRINK],
     genre: [GENRES.AMERICAN],
@@ -37,12 +43,12 @@ module.exports = {
         { name: 'pitcher' },
     ],
     directions: [
-        { step: 'Over medium-high heat, heat 2 cups of water in a saucepan. Bring to a boil.', type: SECTIONS.MAIN },
-        { step: 'Add rosemary sprigs and cover with a lid. Reduce to low heat and simmer for 10 minutes.', type: SECTIONS.MAIN },
-        { step: 'Take out the rosemary.', type: SECTIONS.MAIN },
-        { step: 'Add honey and sugar. Mix until dissolved.', type: SECTIONS.MAIN },
-        { step: 'Transfer sugar mixture to a pitcher. Place in the fridge for 15 minutes.', type: SECTIONS.MAIN },
-        { step: 'Add lemon juice and cold water.', type: SECTIONS.SERVE },
+        { step: 'Over medium-high heat, heat 2 cups of water in a saucepan. Bring to a boil.', type: SECTIONS.MAIN, img: water },
+        { step: 'Add rosemary sprigs and cover with a lid. Reduce to low heat and simmer for 10 minutes.', type: SECTIONS.MAIN, img: rosemary },
+        { step: 'Take out the rosemary.', type: SECTIONS.MAIN, img: boiled },
+        { step: 'Add honey and sugar. Mix until dissolved.', type: SECTIONS.MAIN, img: sugar },
+        { step: 'Transfer sugar mixture to a pitcher. Place in the fridge for 15 minutes.', type: SECTIONS.MAIN, img: sweet },
+        { step: 'Add lemon juice and cold water.', type: SECTIONS.SERVE, img: pitcher },
         { step: 'Serve with ice, lemon slices, and more rosemary.', type: SECTIONS.SERVE },
     ]
 };
