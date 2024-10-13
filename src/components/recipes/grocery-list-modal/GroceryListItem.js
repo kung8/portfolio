@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import edit from '../../../Assets/edit.png';
 import { READABLE_SHORT_DATE } from '../constants';
+import { useDebounce } from 'use-debounce';
 
 export const GroceryListItem = ({
     category,
@@ -16,17 +17,18 @@ export const GroceryListItem = ({
     sortBy,
 }) => {
     const [inputValue, setInputValue] = useState(name);
+    const [debouncedValue] = useDebounce(inputValue, 1000);
 
     useEffect(() => {
-        if (inputValue !== name) {
-            const timeout = setTimeout(() => {
-                onInputChange(inputValue);
-            }, 500);
-
-            return () => clearTimeout(timeout);
+        if (debouncedValue !== name) {
+            onInputChange(debouncedValue);
         }
         // eslint-disable-next-line
-    }, [inputValue]);
+    }, [debouncedValue]);
+
+    const handleInputChange = (event) => {
+        setInputValue(event.target.value);
+    }
 
     return (
         <div className="grocery-list-item">
@@ -46,7 +48,7 @@ export const GroceryListItem = ({
                         <input
                             type="text"
                             value={inputValue}
-                            onChange={(e) => setInputValue(e.target.value)}
+                            onChange={handleInputChange}
                             onKeyDown={(e) => {
                                 if (e.key === 'Enter') {
                                     if (!inputValue) {
