@@ -136,6 +136,7 @@ const experiences = [
             'Dayjs',
             'React Virtuoso',
             'Craft JS',
+            'Use Debounced'
         ],
         url: 'https://www.getweave.com/',
         hosted: true,
