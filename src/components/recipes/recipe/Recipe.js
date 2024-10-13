@@ -227,77 +227,8 @@ export const Recipe = ({ match }) => {
 
     const [isAddToGroceryListModalOpen, setIsAddToGroceryListModalOpen] = useState(false);
 
-    const handleAddToGroceryList = async (date, type, mealPlanningDateRange) => {
-        // Adds to Meal Plan
-        const newMealPlan = [...mealPlan, { recipeName: item.name, date, type, checked: false, mealPlanningDateRange }];
-        setMealPlan(newMealPlan);
-        localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, 'groceryList');
-
-        // Adds to Grocery List
-        const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {
-            if (item.linkId) {
-                const response = await getAsyncData('recipes', item.linkId);
-                return response?.data?.[0]?.ingredients?.map((ingredient, index) => getIngredientData(response.data[0].name, ingredient, index + item.index));
-            }
-            return { ...item, checked: false, date, mealPlanningDateRange };
-        })];
-        Promise.all(newIngredientsToAdd).then((newIngredientsToAdd) => {
-            setGroceryList(newIngredientsToAdd.flat());
-            openGroceryListModal();
-            setSelectedIngredients([]);
-        });
-    }
-
     const openAddToGroceryListModal = () => setIsAddToGroceryListModalOpen(true);
     const closeAddToGroceryListModal = () => setIsAddToGroceryListModalOpen(false);
-    const [previousScrollPosition, setPreviousScrollPosition] = useState(0);
-
-    useEffect(() => {
-        const rootId = document.getElementById('root');
-        if (isAddToGroceryListModalOpen) {
-            setPreviousScrollPosition(window.scrollY);
-            rootId.style.overflowY = 'hidden';
-            rootId.style.height = '100vh';
-        } else {
-            rootId.style.overflowY = '';
-            rootId.style.height = '';
-            window.scrollTo({ top: previousScrollPosition, behavior: 'smooth' });
-            setTimeout(() => {
-                setPreviousScrollPosition(0);
-            }, 50);
-        }
-        // eslint-disable-next-line
-    }, [isAddToGroceryListModalOpen]);
-
-    const getModalOnClick = () => {
-        const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
-        if (selectedModalView === 'mealPlanning') {
-            if (showMealPlanning) {
-                closeMealPlanningModal();
-            } else {
-                openMealPlanningModal();
-            }
-        } else {
-            if (showGroceryList) {
-                closeGroceryListModal();
-            } else {
-                openGroceryListModal();
-            }
-        }
-    }
-
-    const getModalClose = () => {
-        if (showGroceryList) {
-            closeGroceryListModal();
-        } else if (showMealPlanning) {
-            closeMealPlanningModal();
-        }
-    }
-
-    const handleSelectedViewChange = (newSelectedView) => {
-        setShowMealPlanning(newSelectedView === 'mealPlanning');
-        setShowGroceryList(newSelectedView === 'groceryList');
-    }
 
     return (
         <NonDashboardPage mainClassName={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
@@ -308,7 +239,27 @@ export const Recipe = ({ match }) => {
                 customTitle={(
                     <div className="custom-heading-wrapper">
                         <h1 className="heading">{item?.name ?? ''}</h1>
-                        <img src={list} alt="list" className="list-img" onClick={getModalOnClick} />
+                        <img
+                            src={list}
+                            alt="list"
+                            className="list-img"
+                            onClick={() => {
+                                const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
+                                if (selectedModalView === 'mealPlanning') {
+                                    if (showMealPlanning) {
+                                        closeMealPlanningModal();
+                                    } else {
+                                        openMealPlanningModal();
+                                    }
+                                } else {
+                                    if (showGroceryList) {
+                                        closeGroceryListModal();
+                                    } else {
+                                        openGroceryListModal();
+                                    }
+                                }
+                            }}
+                        />
                     </div>
                 )}
             >
@@ -480,28 +431,54 @@ export const Recipe = ({ match }) => {
                 </div>
             )}
 
-            {item && isLoaded && (
-                <EmailRecipe />
-            )}
+            {item && isLoaded && <EmailRecipe />}
+            <GroceryListModal
+                groceryList={groceryList}
+                handleClose={() => {
+                    const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);                    
+                    if (selectedModalView === 'mealPlanning') {
+                        closeMealPlanningModal();
+                    } else if (selectedModalView === 'groceryList') {
+                        closeGroceryListModal();
+                    }
+                }}
+                handleSelectedViewChange={(newSelectedView) => {
+                    setShowMealPlanning(newSelectedView === 'mealPlanning');
+                    setShowGroceryList(newSelectedView === 'groceryList');
+                }}
+                mealPlan={mealPlan}
+                setGroceryList={setGroceryList}
+                setMealPlan={setMealPlan}
+                show={showGroceryList || showMealPlanning}
+                showGroceryList={showGroceryList}
+            />
 
-            {(showGroceryList || showMealPlanning) && (
-                <GroceryListModal
-                    groceryList={groceryList}
-                    handleClose={getModalClose}
-                    mealPlan={mealPlan}
-                    show={showGroceryList || showMealPlanning}
-                    setGroceryList={setGroceryList}
-                    setMealPlan={setMealPlan}
-                    handleSelectedViewChange={handleSelectedViewChange}
-                />
-            )}
-
-            <div className={`overlay ${isAddToGroceryListModalOpen ? 'opened' : ''}`} onClick={closeAddToGroceryListModal} />
+            <div id="add-to-grocery-list-modal-overlay" className="overlay" onClick={closeAddToGroceryListModal} />
             {isAddToGroceryListModalOpen && (
                 <AddToGroceryListModal
                     closeModal={closeAddToGroceryListModal}
                     initialType={categorizeRecipeType(item.category?.[0])}
-                    onAdd={handleAddToGroceryList}
+                    onAdd={async (date, type, mealPlanningDateRange) => {
+                        // Adds to Meal Plan
+                        const newMealPlan = [...mealPlan, { recipeName: item.name, date, type, checked: false, mealPlanningDateRange }];
+                        setMealPlan(newMealPlan);
+                        localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, 'groceryList');
+
+                        // Adds to Grocery List
+                        const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {
+                            if (item.linkId) {
+                                const response = await getAsyncData('recipes', item.linkId);
+                                return response?.data?.[0]?.ingredients?.map((ingredient, index) => getIngredientData(response.data[0].name, ingredient, index + item.index));
+                            }
+                            return { ...item, checked: false, date, mealPlanningDateRange };
+                        })];
+                        Promise.all(newIngredientsToAdd).then((newIngredientsToAdd) => {
+                            setGroceryList(newIngredientsToAdd.flat());
+                            openGroceryListModal();
+                            setSelectedIngredients([]);
+                        });
+                    }}
+                    show={isAddToGroceryListModalOpen}
                 />
             )}
         </NonDashboardPage>

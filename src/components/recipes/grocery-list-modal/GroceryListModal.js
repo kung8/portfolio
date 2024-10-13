@@ -11,6 +11,7 @@ import {
     MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY,
     SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY,
 } from '../constants';
+import { handleModalClass } from '../utils/handle-modal-class';
 
 export const GroceryListModal = ({
     show,
@@ -110,7 +111,7 @@ export const GroceryListModal = ({
     const [selectedView, setSelectedView] = useState(selectedViewFromLocalStorage || GROCERY_LIST_VIEW);
     useEffect(() => {
         localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, selectedView);
-        handleSelectedViewChange(selectedView);
+        if (showClass) handleSelectedViewChange(selectedView);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedView]);
     const isGroceryList = selectedView === GROCERY_LIST_VIEW;
@@ -118,11 +119,20 @@ export const GroceryListModal = ({
 
     const checkLayeredOpenedClassName = () => isDeleteIngredientModalOpen || isEditIngredientModalOpen || isDeleteMealPlanModalOpen || isEditMealPlanModalOpen;
 
+    useEffect(() => {
+        handleModalClass(
+            show || isDeleteIngredientModalOpen || isEditIngredientModalOpen || isDeleteMealPlanModalOpen || isEditMealPlanModalOpen, 
+            '.grocery-list-modal',
+            'grocery-list-modal-overlay'
+        );
+    }, [show, isDeleteIngredientModalOpen, isEditIngredientModalOpen, isDeleteMealPlanModalOpen, isEditMealPlanModalOpen]);
+
     return (
         <>
             <div className="grocery-list-modal-container">
                 <div
-                    className={`overlay ${showClass} ${checkLayeredOpenedClassName() ? 'layered-opened' : ''}`}
+                    id="grocery-list-modal-overlay"
+                    className={`overlay ${checkLayeredOpenedClassName() ? 'layered-opened' : ''}`}
                     onClick={checkLayeredOpenedClassName() ?
                         () => {
                             if (isDeleteIngredientModalOpen) closeDeleteIngredientModal();
@@ -131,7 +141,7 @@ export const GroceryListModal = ({
                             if (isEditMealPlanModalOpen) closeEditMealPlanModal();
                         } : handleClose}
                 />
-                <div className={`grocery-list-modal ${showClass}`}>
+                <div className="grocery-list-modal">
                     <GroceryListModalHeader
                         handleClose={handleClose}
                         setSelectedView={setSelectedView}
@@ -195,7 +205,7 @@ export const GroceryListModal = ({
                                     originalItemEndingDate === item?.mealPlanningDateRange?.[1] &&
                                     originalDate === item.date;
                                 if (matches) {
-                                    return { ...item,  mealPlanningDateRange: newItem.mealPlanningDateRange, date: newItem.date, recipeName: newItem.recipeName };
+                                    return { ...item, mealPlanningDateRange: newItem.mealPlanningDateRange, date: newItem.date, recipeName: newItem.recipeName };
                                 }
                                 return item;
                             });
@@ -221,7 +231,7 @@ export const GroceryListModal = ({
                         setMealPlan(prev => prev.map((meal => {
                             const startMealDate = meal?.mealPlanningDateRange?.[0];
                             const endMealDate = meal?.mealPlanningDateRange?.[1];
-                            
+
                             if (startMealDate === originalItemStartingDate && endMealDate === originalItemEndingDate) {
                                 return { ...meal, mealPlanningDateRange: newItem.mealPlanningDateRange, date: newItem.date, recipeName: newItem.recipeName };
                             }

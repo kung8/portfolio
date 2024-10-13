@@ -25,12 +25,35 @@
     z-index: 2;
     display: none;
     cursor: pointer;
-
     &.opened {
         display: block;
     }
 
     &.layered-opened {
         z-index: 4;
+    }
+
+    @media only screen and (hover: none) and (pointer: coarse) {
+        height: calc(100vh - 108px);
+    }
+}
+
+@keyframes in {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes out {
+    from {
+        left: 0;
+        display: block;
+    }
+    to {
+        left: -100%;
+        display: none;
     }
 }

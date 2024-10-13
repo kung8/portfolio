@@ -7,11 +7,13 @@ import { RecipeDateInput } from '../grocery-list-modal/RecipeDateInput';
 import { RecipeCategoryInput } from '../grocery-list-modal/RecipeCategoryInput';
 import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
 import { getValidDateRangeError } from '../grocery-list-modal/getValidDateRangeError';
+import { handleModalClass } from '../utils/handle-modal-class';
 
 export const AddToGroceryListModal = ({
     closeModal,
-    onAdd,
     initialType,
+    onAdd,
+    show,
 }) => {
     const [type, setType] = useState(initialType);
     const [isTypeDropdownOpen, setIsTypeDropdownOpen] = useState(false);
@@ -32,6 +34,14 @@ export const AddToGroceryListModal = ({
         }
         // eslint-disable-next-line
     }, [categoryData]);
+
+    useEffect(() => {
+        handleModalClass(
+            show, 
+            '.add-to-grocery-list-modal',
+            'add-to-grocery-list-modal-overlay'
+        );
+    }, [show]);
 
     return (
         <div className="add-to-grocery-list-modal">

@@ -22,7 +22,7 @@ export const Recipes = ({ history }) => {
     const queryKey = ['getData', 'recipes', undefined];
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
     const [search, setSearch] = useState('');
-    const [show, setShow] = useState(false);
+    const [showFilters, setShowFilters] = useState(false);
     const initialSelectedFilters = {
         category: [],
         diet: [],
@@ -73,23 +73,13 @@ export const Recipes = ({ history }) => {
         return () => {
             setIsLoaded(false);
             setSearch('');
-            setShow(false);
+            setShowFilters(false);
             setShowArrow(false);
             setSelectedFilters(initialSelectedFilters);
             window.removeEventListener('scroll', onScroll);
         }
         // eslint-disable-next-line
     }, []);
-
-    const resetShownFilters = () => {
-        if (!show) return;
-        const filtersContainer = document.querySelector('.filters-container');
-        if (filtersContainer) filtersContainer.classList.add('is-closing');
-        setTimeout(() => {
-            if (filtersContainer) filtersContainer.classList.remove('is-closing');
-            setShow(false);
-        }, 300);
-    }
 
     const { show: showGroceryList, setShow: setShowGroceryList, handleClose: closeGroceryListModal, handleOpen: openGroceryListModal, groceryList, setGroceryList } = useGroceryList();
     const { show: showMealPlanning, setShow: setShowMealPlanning, handleClose: closeMealPlanningModal, handleOpen: openMealPlanningModal, mealPlan, setMealPlan } = useMealPlanning();
@@ -113,68 +103,66 @@ export const Recipes = ({ history }) => {
         }
     }
 
-    const imageOnClick = () => {
-        const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);        
-        if (selectedModalView === 'mealPlanning') {
-            if (showMealPlanning) {
-                closeMealPlanningModal();
-            } else {
-                openMealPlanningModal();
-            }
-        } else if (selectedModalView === 'groceryList') {
-            if (showGroceryList) {
-                closeGroceryListModal();
-            } else {
-                openGroceryListModal();
-            }
-        }
-    }
-
-    const filterProps = {
-        filteredRecipes,
-        search,
-        selectedFilters,
-        setSearch,
-        setSelectedFilters,
-        setShow,
-        // setShownFilters,
-        show,
-        // shownFilters,
-        totalAvailableRecipes: recipes.filter(item => item.available).length,
-    };
-
-    const groceryListProps = {
-        groceryList,
-        handleClose: getModalClose,
-        handleOpen: getModalOpen,
-        showGroceryList,
-        setGroceryList,
-    };
-
-    const handleSelectedViewChange = (newSelectedView) => {
-        setShowMealPlanning(newSelectedView === 'mealPlanning');
-        setShowGroceryList(newSelectedView === 'groceryList');
-    }    
-
-    useEffect(() => {
-        const rootId = document.getElementById('root');
-        if (show) {
-            rootId.style.overflowY = 'hidden';
-            rootId.style.height = '100vh';
-        } else {
-            rootId.style.overflowY = '';
-            rootId.style.height = '';
-        }
-        // eslint-disable-next-line
-    }, [show]);
-
     return (
-        <NonDashboardPage mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`} onClick={resetShownFilters}>
+        <NonDashboardPage
+            mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`}
+            onClick={() => {
+                if (!showFilters) return;
+                const filtersContainer = document.querySelector('.filters-container');
+                if (filtersContainer) filtersContainer.classList.add('is-closing');
+                setTimeout(() => {
+                    if (filtersContainer) filtersContainer.classList.remove('is-closing');
+                    setShowFilters(false);
+                }, 300);
+            }}
+        >
             <NonDashboardPage.Header title='Recipes'>
-                <SearchAndFilterContainer {...{ ...filterProps, ...groceryListProps, imageOnClick }} />
+                <SearchAndFilterContainer
+                    {...{
+                        filteredRecipes,
+                        search,
+                        selectedFilters,
+                        setSearch,
+                        setSelectedFilters,
+                        setShow: setShowFilters,
+                        show: showFilters,
+                        totalAvailableRecipes: recipes.filter(item => item.available).length,
+                        groceryList,
+                        handleClose: getModalClose,
+                        handleOpen: getModalOpen,
+                        showGroceryList,
+                        setGroceryList,
+                        imageOnClick: () => {
+                            const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
+                            if (selectedModalView === 'mealPlanning') {
+                                if (showMealPlanning) {
+                                    closeMealPlanningModal();
+                                } else {
+                                    openMealPlanningModal();
+                                }
+                            } else if (selectedModalView === 'groceryList') {
+                                if (showGroceryList) {
+                                    closeGroceryListModal();
+                                } else {
+                                    openGroceryListModal();
+                                }
+                            }
+                        },
+                    }}
+                />
             </NonDashboardPage.Header>
 
-            {show && <RecipeFilterModal {...{ ...filterProps, closeFilters: () => setShow(false) }} />}
+            <RecipeFilterModal {...{
+                filteredRecipes,
+                search,
+                selectedFilters,
+                setSearch,
+                setSelectedFilters,
+                setShow: setShowFilters,
+                show: showFilters,
+                totalAvailableRecipes: recipes.filter(item => item.available).length,
+                closeFilters: () => setShowFilters(false)
+            }} />
 
             {isLoaded ? (
                 filteredRecipes.length ? (
@@ -198,17 +186,19 @@ export const Recipes = ({ history }) => {
 
             {showArrow && <TopArrow />}
 
-            {(showGroceryList || showMealPlanning) && (
-                <GroceryListModal
-                    {...{
-                        ...groceryListProps,
-                        show: showGroceryList || showMealPlanning,
-                        mealPlan,
-                        setMealPlan,
-                        handleSelectedViewChange,
-                    }}
-                />
-            )}
+            <GroceryListModal
+                groceryList={groceryList}
+                handleClose={getModalClose}
+                handleSelectedViewChange={(newSelectedView) => {
+                    setShowMealPlanning(newSelectedView === 'mealPlanning');
+                    setShowGroceryList(newSelectedView === 'groceryList');
+                }}
+                mealPlan={mealPlan}
+                setGroceryList={setGroceryList}
+                setMealPlan={setMealPlan}
+                show={showGroceryList || showMealPlanning}
+                showGroceryList={showGroceryList}
+            />
         </NonDashboardPage>
     )
 }

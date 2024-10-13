@@ -22,7 +22,7 @@ export const EditMealPlanModal = ({
 
     const [isStartMealPlanningCalendarOpen, setIsStartMealPlanningCalendarOpen] = useState(false);
     const [isEndMealPlanningCalendarOpen, setIsEndMealPlanningCalendarOpen] = useState(false);
-    const [mealPlanningDateRange, setMealPlanningDateRange] = useState(originalMealToEdit.mealPlanningDateRange ?? []);
+    const [mealPlanningDateRange, setMealPlanningDateRange] = useState(originalMealToEdit?.mealPlanningDateRange ?? []);
 
     useEffect(() => {
         setDate(mealToEdit?.date);
