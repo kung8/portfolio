@@ -89,16 +89,8 @@ export const MealPlanningModalContent = ({
             }
             return acc;
         }, {}) : undefined;
-    }, [
-        mealPlan.map(item =>
-            item.recipeName +
-            item.date +
-            item.mealPlanningDateRange +
-            item.type +
-            item.checked
-        ).join(','),
-        sortBy,
-    ]);
+        // eslint-disable-next-line
+    }, [mealPlan.map(item => item.recipeName + item.date + item.mealPlanningDateRange + item.type + item.checked).join(','), sortBy]);
 
     const groupedData = useMemo(() => {
         return sortBy !== 'daily' ? indexedMealPlan.reduce((acc, item) => {
@@ -134,16 +126,8 @@ export const MealPlanningModalContent = ({
             }
             return acc;
         }, {}) : undefined;
-    }, [
-        mealPlan.map(item =>
-            item.recipeName +
-            item.date +
-            item.mealPlanningDateRange +
-            item.type +
-            item.checked
-        ).join(','),
-        sortBy,
-    ])
+        // eslint-disable-next-line
+    }, [mealPlan.map(item => item.recipeName + item.date + item.mealPlanningDateRange + item.type + item.checked).join(','), sortBy])
 
     const displayedData = data ?? groupedData;
 

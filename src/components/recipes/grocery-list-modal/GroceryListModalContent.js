@@ -32,17 +32,8 @@ export const GroceryListModalContent = ({
                 if (a[0] > b[0]) return 1;
                 return 0;
             });
-    }, [
-        groceryList.map(item =>
-            item.name +
-            item.recipeName +
-            item.date +
-            item.mealPlanningDateRange +
-            item.category +
-            item.checked
-        ).join(','),
-        sortBy,
-    ]);
+        // eslint-disable-next-line
+    }, [groceryList.map(item => item.name + item.recipeName + item.date + item.mealPlanningDateRange + item.category + item.checked).join(','), sortBy]);
 
     // Group ingredients by date
     const displayedIngredientsListByDate = useMemo(() => {
@@ -67,18 +58,8 @@ export const GroceryListModalContent = ({
                 if (date === 'No Specified Date') return ['No Specified Date', ingredients];
                 return [dayjs(date).format(READABLE_SHORT_DATE), ingredients];
             });
-
-    }, [
-        groceryList.map(item =>
-            item.name +
-            item.recipeName +
-            item.date +
-            item.mealPlanningDateRange +
-            item.category +
-            item.checked
-        ).join(','),
-        sortBy,
-    ])
+        // eslint-disable-next-line
+    }, [groceryList.map(item => item.name + item.recipeName + item.date + item.mealPlanningDateRange + item.category + item.checked).join(','), sortBy])
 
     const displayedList = sortBy === 'category' ? displayedIngredientsListByCategory : displayedIngredientsListByDate
 
@@ -108,7 +89,7 @@ export const GroceryListModalContent = ({
                         {ingredients.map((ingredient, index) => (
                             <GroceryListItem
                                 key={ingredient.name + '-' + index}
-                                {...{ ...ingredient }}
+                                {...ingredient}
                                 onInputChange={(value) => updateItem(ingredient, { name: value })}
                                 onCheckboxChange={() => updateItem(ingredient, { checked: !ingredient.checked })}
                                 onCategoryChange={(value) => updateItem(ingredient, { category: value })}

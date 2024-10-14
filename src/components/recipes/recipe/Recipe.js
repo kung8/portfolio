@@ -11,6 +11,7 @@ import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
 import { SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 import { categorizeRecipeType } from '../categorize-recipe-type';
+import { RecipeImageModal } from './RecipeImageModal';
 
 const formatIngredientItem = (item) => {
     const amount = item.amount ? item.amount + ' ' : '';
@@ -86,7 +87,7 @@ const Notes = ({ notes }) => (
     </>
 )
 
-const Figure = ({ index, figure, setSelectedFigureLabel }) => (
+const Figure = ({ index, figure, onClick, setSelectedFigureLabel }) => (
     <div key={index} className="figure-container">
         <label id={`figure-${index + 1}`} onClick={() => setSelectedFigureLabel(index + 1)}>Figure {index + 1}</label>
         {figure.video ? (
@@ -95,9 +96,9 @@ const Figure = ({ index, figure, setSelectedFigureLabel }) => (
             </video>
         ) : (
             Array.isArray(figure.img) ? figure.img.map((img, i) => (
-                <img key={i} className="additional-recipe-image" src={img} alt={figure.step} />
+                <img key={i} className="additional-recipe-image" src={img} alt={figure.step} onClick={() => onClick(img)} />
             )) : (
-                <img className="additional-recipe-image" src={figure.img} alt={figure.step} />
+                <img className="additional-recipe-image" src={figure.img} alt={figure.step} onClick={() => onClick(figure.img)} />
             )
         )}
     </div>
@@ -230,6 +231,13 @@ export const Recipe = ({ match }) => {
     const openAddToGroceryListModal = () => setIsAddToGroceryListModalOpen(true);
     const closeAddToGroceryListModal = () => setIsAddToGroceryListModalOpen(false);
 
+    const [isRecipeImageModalOpen, setIsRecipeImageModalOpen] = useState(false);
+    const [selectedRecipeImage, setSelectedRecipeImage] = useState(null);
+    const openRecipeImageModal = (image) => {
+        setIsRecipeImageModalOpen(true);
+        setSelectedRecipeImage(image);
+    }
+
     return (
         <NonDashboardPage mainClassName={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
             <NonDashboardPage.Header
@@ -269,7 +277,16 @@ export const Recipe = ({ match }) => {
             </NonDashboardPage.Header>
             {item && isLoaded ? (
                 <div className="recipe-details">
-                    {item.img ? <img src={item.img} alt={item.name} className="recipe-image" /> : <div className="recipe-image empty">Image Coming Soon!</div>}
+                    {item.img ? (
+                        <img
+                            src={item.img}
+                            alt={item.name}
+                            className="recipe-image"
+                            onClick={() => openRecipeImageModal(item.img)}
+                        />
+                    ) : (
+                        <div className="recipe-image empty">Image Coming Soon!</div>
+                    )}
                     <p className="prep-time">Prep Time: {item.prepTime}</p>
                     {item.cookTime && (
                         <p className="cook-time">Cook Time: {item.cookTime}</p>
@@ -417,11 +434,11 @@ export const Recipe = ({ match }) => {
 
                     {item.separated && figures ? (
                         <div className="figures-container">
-                            {figures.map((figure, i) => <Figure key={i} index={i} figure={figure} setSelectedFigureLabel={setSelectedFigureLabel} />)}
+                            {figures.map((figure, i) => <Figure key={i} index={i} figure={figure} setSelectedFigureLabel={setSelectedFigureLabel} onClick={openRecipeImageModal} />)}
                         </div>
                     ) : nonSeparatedFigures ? (
                         <div className="figures-container">
-                            {nonSeparatedFigures.map((figure, i) => <Figure key={i} index={i} figure={figure} setSelectedFigureLabel={setSelectedFigureLabel} />)}
+                            {nonSeparatedFigures.map((figure, i) => <Figure key={i} index={i} figure={figure} setSelectedFigureLabel={setSelectedFigureLabel} onClick={openRecipeImageModal} />)}
                         </div>
                     ) : null}
                 </div>
@@ -432,10 +449,16 @@ export const Recipe = ({ match }) => {
             )}
 
             {item && isLoaded && <EmailRecipe />}
+            <RecipeImageModal
+                closeModal={() => setIsRecipeImageModalOpen(false)}
+                image={selectedRecipeImage}
+                name={item?.name}
+                show={isRecipeImageModalOpen}
+            />
             <GroceryListModal
                 groceryList={groceryList}
                 handleClose={() => {
-                    const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);                    
+                    const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
                     if (selectedModalView === 'mealPlanning') {
                         closeMealPlanningModal();
                     } else if (selectedModalView === 'groceryList') {

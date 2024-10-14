@@ -1,0 +1,48 @@
+.recipe-image-modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .recipe-image-modal {
+        position: absolute;
+        top: 50vh;
+        left: 50%;
+        z-index: 5;
+        transform: translate(-50%, calc(-50% - 32px));
+        width: unquote("min(calc(100% - 16px), 600px)");
+        display: none;
+
+        &.opened {
+            display: block;
+        }
+        &.closed {
+            display: none;
+        }
+
+        .recipe-image-modal-image {
+            height: auto;
+            width: unquote("max(100%, 320px)");
+        }
+
+        .close {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            background: none;
+            border: none;
+            color: $white;
+            cursor: pointer;
+    
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .overlay {
+        &.opened {
+            display: block;
+        }
+    }
+}
