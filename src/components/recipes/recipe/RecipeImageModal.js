@@ -3,7 +3,7 @@ import { handleModalClass } from '../utils/handle-modal-class';
 import { ModalBody, ModalContent } from '../../modal/ModalContent';
 import xBtn from '../../../Assets/x.png';
 
-export const RecipeImageModal = ({ closeModal, name, image, show }) => {
+export const RecipeImageModal = ({ closeModal, name, image, images, show }) => {
     useEffect(() => {
         handleModalClass(show, '.recipe-image-modal', 'recipe-image-modal-overlay');
     }, [show]);
@@ -22,6 +22,7 @@ export const RecipeImageModal = ({ closeModal, name, image, show }) => {
                         <button className="close" onClick={closeModal}>
                             <img src={xBtn} alt="close" />
                         </button>
+                        {/* <div></div> */}
                     </ModalBody>
                 </ModalContent>
             </div>

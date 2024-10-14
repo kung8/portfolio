@@ -452,6 +452,7 @@ export const Recipe = ({ match }) => {
             <RecipeImageModal
                 closeModal={() => setIsRecipeImageModalOpen(false)}
                 image={selectedRecipeImage}
+                images={[item?.img, ...figures.flatMap(figure => figure.img)]}
                 name={item?.name}
                 show={isRecipeImageModalOpen}
             />
