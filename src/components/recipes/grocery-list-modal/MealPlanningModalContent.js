@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import dayjs from 'dayjs';
 import { SortBy } from './SortBy';
 import { MealItem } from './MealItem';
@@ -63,65 +63,87 @@ export const MealPlanningModalContent = ({
     }
 
     const indexedMealPlan = mealPlan.map((item, index) => ({ ...item, index }));
-    const data = sortBy === 'daily' ? indexedMealPlan.reduce((acc, item) => {
-        const mealPlanningDateRange = item.mealPlanningDateRange ?? [];
-
-        if (mealPlanningDateRange.length > 0) {
-            let startingDate = dayjs(mealPlanningDateRange[0]);
-            let endingDate = dayjs(mealPlanningDateRange[1]);
-            const datesWithinRange = createRange(startingDate, endingDate);
-            
-            datesWithinRange.forEach(d => {
-                const formattedKey = d.format(DATE_FORMAT);
-                if (!acc[formattedKey]) {
-                    acc[formattedKey] = [];
-                }
-                acc[formattedKey].push(item);
-            });
-        }
-
-        if (mealPlanningDateRange.length === 0) {
-            if (!acc[item.date]) {
-                acc[item.date] = [];
-            }
-            acc[item.date].push(item);
-        }
-        return acc;
-    }, {}) : undefined;
-
-    const groupedData = sortBy !== 'daily' ? indexedMealPlan.reduce((acc, item) => {
-        const foundRange = dates.filter(date => {
+    const data = useMemo(() => {
+        return sortBy === 'daily' ? indexedMealPlan.reduce((acc, item) => {
             const mealPlanningDateRange = item.mealPlanningDateRange ?? [];
 
             if (mealPlanningDateRange.length > 0) {
                 let startingDate = dayjs(mealPlanningDateRange[0]);
                 let endingDate = dayjs(mealPlanningDateRange[1]);
-                const includedDateRange = createRange(startingDate, endingDate);
-                
-                return includedDateRange.find(d => {
-                    const isBefore = dayjs(d).isAfter(date[0]) || dayjs(d).isSame(date[0]);
-                    const isAfter = dayjs(date[1]).isAfter(dayjs(d)) || dayjs(date[1]).isSame(dayjs(d));
-                    return isBefore && isAfter;
+                const datesWithinRange = createRange(startingDate, endingDate);
+
+                datesWithinRange.forEach(d => {
+                    const formattedKey = d.format(DATE_FORMAT);
+                    if (!acc[formattedKey]) {
+                        acc[formattedKey] = [];
+                    }
+                    acc[formattedKey].push(item);
                 });
             }
 
             if (mealPlanningDateRange.length === 0) {
-                const isBefore = dayjs(item.date).isAfter(date[0]) || dayjs(item.date).isSame(date[0]);
-                const isAfter = dayjs(date[1]).isAfter(dayjs(item.date)) || dayjs(date[1]).isSame(dayjs(item.date));
-                return isBefore && isAfter;
+                if (!acc[item.date]) {
+                    acc[item.date] = [];
+                }
+                acc[item.date].push(item);
             }
-            return false;
-        });
-
-        if (foundRange.length > 0) {
-            foundRange.forEach(d => {
-                const formattedRange = d.join(' - ');
-                acc[formattedRange] = [...(acc[formattedRange] ?? []), item];
-            })
             return acc;
-        }
-        return acc;
-    }, {}) : undefined;
+        }, {}) : undefined;
+    }, [
+        mealPlan.map(item =>
+            item.recipeName +
+            item.date +
+            item.mealPlanningDateRange +
+            item.type +
+            item.checked
+        ).join(','),
+        sortBy,
+    ]);
+
+    const groupedData = useMemo(() => {
+        return sortBy !== 'daily' ? indexedMealPlan.reduce((acc, item) => {
+            const foundRange = dates.filter(date => {
+                const mealPlanningDateRange = item.mealPlanningDateRange ?? [];
+
+                if (mealPlanningDateRange.length > 0) {
+                    let startingDate = dayjs(mealPlanningDateRange[0]);
+                    let endingDate = dayjs(mealPlanningDateRange[1]);
+                    const includedDateRange = createRange(startingDate, endingDate);
+
+                    return includedDateRange.find(d => {
+                        const isBefore = dayjs(d).isAfter(date[0]) || dayjs(d).isSame(date[0]);
+                        const isAfter = dayjs(date[1]).isAfter(dayjs(d)) || dayjs(date[1]).isSame(dayjs(d));
+                        return isBefore && isAfter;
+                    });
+                }
+
+                if (mealPlanningDateRange.length === 0) {
+                    const isBefore = dayjs(item.date).isAfter(date[0]) || dayjs(item.date).isSame(date[0]);
+                    const isAfter = dayjs(date[1]).isAfter(dayjs(item.date)) || dayjs(date[1]).isSame(dayjs(item.date));
+                    return isBefore && isAfter;
+                }
+                return false;
+            });
+
+            if (foundRange.length > 0) {
+                foundRange.forEach(d => {
+                    const formattedRange = d.join(' - ');
+                    acc[formattedRange] = [...(acc[formattedRange] ?? []), item];
+                })
+                return acc;
+            }
+            return acc;
+        }, {}) : undefined;
+    }, [
+        mealPlan.map(item =>
+            item.recipeName +
+            item.date +
+            item.mealPlanningDateRange +
+            item.type +
+            item.checked
+        ).join(','),
+        sortBy,
+    ])
 
     const displayedData = data ?? groupedData;
 
@@ -160,7 +182,7 @@ export const MealPlanningModalContent = ({
                             {displayedData[date.join(' - ')].sort((a, b) => {
                                 const order = ['Breakfast', 'Lunch', 'Dinner', 'Dessert', 'Snack'];
                                 const startingDateRangeA = a?.mealPlanningDateRange?.[0] ?? a.date;
-                                const startingDateRangeB = b?.mealPlanningDateRange?.[0] ?? b.date;                                
+                                const startingDateRangeB = b?.mealPlanningDateRange?.[0] ?? b.date;
 
                                 if (startingDateRangeA < startingDateRangeB) return -1;
                                 if (startingDateRangeA > startingDateRangeB) return 1;

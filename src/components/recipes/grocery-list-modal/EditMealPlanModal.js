@@ -151,9 +151,9 @@ export const EditMealPlanModal = ({
                     ) || !mealToEdit?.recipeName}
                     handleAction={() => {
                         const finalMealToEdit = { ...mealToEdit };
-                        if (mealToEdit?.mealPlanningDateRange[0] && !mealToEdit?.mealPlanningDateRange[1]) {
+                        if (mealToEdit?.mealPlanningDateRange?.[0] && !mealToEdit?.mealPlanningDateRange?.[1]) {
                             finalMealToEdit.mealPlanningDateRange = [mealToEdit.mealPlanningDateRange[0], mealToEdit.mealPlanningDateRange[0]];
-                        } else if (!mealToEdit?.mealPlanningDateRange[0] && mealToEdit?.mealPlanningDateRange[1]) {
+                        } else if (!mealToEdit?.mealPlanningDateRange?.[0] && mealToEdit?.mealPlanningDateRange?.[1]) {
                             finalMealToEdit.mealPlanningDateRange = [mealToEdit.mealPlanningDateRange[1], mealToEdit.mealPlanningDateRange[1]];
                         }
                         // update the meal

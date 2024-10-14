@@ -253,7 +253,7 @@ export const GroceryListModal = ({
 
                     // when the meal plan is updated, update all the ingredients with the same date
                     updateSharedIngredients={(originalMeal, newMeal) => {
-                        const originalMealDate = originalMeal.date;
+                        const originalMealDate = originalMeal?.date;
                         const originalStartDate = originalMeal?.mealPlanningDateRange?.[0];
                         const originalEndDate = originalMeal?.mealPlanningDateRange?.[1];
                         const originalRecipeName = originalMeal?.recipeName;

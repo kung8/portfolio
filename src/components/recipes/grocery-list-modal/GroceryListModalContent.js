@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import dayjs from 'dayjs';
 import { EmptyGroceryListItem } from './EmptyGroceryListItem';
 import { GroceryListItem } from './GroceryListItem';
@@ -19,37 +19,66 @@ export const GroceryListModalContent = ({
 }) => {
 
     // Group ingredients by category
-    const displayedIngredientsListByCategory = Object.entries((groceryList || [])?.reduce((group, ingredient) => {
-        if (!group[ingredient.category]) group[ingredient.category] = [];
-        group[ingredient.category].push(ingredient);
-        return group;
-    }, {})).sort((a, b) => {
-        if (a[0] === 'Other') return 1;
-        if (a[0] < b[0]) return -1;
-        if (a[0] > b[0]) return 1;
-        return 0;
-    });
+    const displayedIngredientsListByCategory = useMemo(() => {
+        return Object.entries((groceryList || [])
+            ?.reduce((group, ingredient) => {
+                if (!group[ingredient.category]) group[ingredient.category] = [];
+                group[ingredient.category].push(ingredient);
+                return group;
+            }, {}))
+            .sort((a, b) => {
+                if (a[0] === 'Other') return 1;
+                if (a[0] < b[0]) return -1;
+                if (a[0] > b[0]) return 1;
+                return 0;
+            });
+    }, [
+        groceryList.map(item =>
+            item.name +
+            item.recipeName +
+            item.date +
+            item.mealPlanningDateRange +
+            item.category +
+            item.checked
+        ).join(','),
+        sortBy,
+    ]);
 
     // Group ingredients by date
-    const displayedIngredientsListByDate = Object.entries(groceryList.sort((a, b) => {
-        if (!a.date) return -1;
-        if (!b.date) return 1;
-        if (dayjs(a.date) < dayjs(b.date)) return -1;
-        if (dayjs(a.date) > dayjs(b.date)) return 1;
-        return 0;
-    }).reduce((group, ingredient) => {
-        if (!ingredient.date) {
-            if (!group['No Specified Date']) group['No Specified Date'] = [];
-            group['No Specified Date'].push(ingredient);
-        } else {
-            if (!group[ingredient.date]) group[ingredient.date] = [];
-            group[ingredient.date].push(ingredient);
-        }
-        return group;
-    }, {})).map(([date, ingredients]) => {
-        if (date === 'No Specified Date') return ['No Specified Date', ingredients];
-        return [dayjs(date).format(READABLE_SHORT_DATE), ingredients];
-    });
+    const displayedIngredientsListByDate = useMemo(() => {
+        return Object.entries(groceryList
+            .sort((a, b) => {
+                if (!a.date) return -1;
+                if (!b.date) return 1;
+                if (dayjs(a.date) < dayjs(b.date)) return -1;
+                if (dayjs(a.date) > dayjs(b.date)) return 1;
+                return 0;
+            })
+            .reduce((group, ingredient) => {
+                if (!ingredient.date) {
+                    if (!group['No Specified Date']) group['No Specified Date'] = [];
+                    group['No Specified Date'].push(ingredient);
+                } else {
+                    if (!group[ingredient.date]) group[ingredient.date] = [];
+                    group[ingredient.date].push(ingredient);
+                }
+                return group;
+            }, {})).map(([date, ingredients]) => {
+                if (date === 'No Specified Date') return ['No Specified Date', ingredients];
+                return [dayjs(date).format(READABLE_SHORT_DATE), ingredients];
+            });
+
+    }, [
+        groceryList.map(item =>
+            item.name +
+            item.recipeName +
+            item.date +
+            item.mealPlanningDateRange +
+            item.category +
+            item.checked
+        ).join(','),
+        sortBy,
+    ])
 
     const displayedList = sortBy === 'category' ? displayedIngredientsListByCategory : displayedIngredientsListByDate
 
