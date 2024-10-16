@@ -13,7 +13,6 @@ export const AddToGroceryListModal = ({
     closeModal,
     initialType,
     onAdd,
-    show,
 }) => {
     const [type, setType] = useState(initialType);
     const [isTypeDropdownOpen, setIsTypeDropdownOpen] = useState(false);
@@ -35,14 +34,6 @@ export const AddToGroceryListModal = ({
         // eslint-disable-next-line
     }, [categoryData]);
 
-    useEffect(() => {
-        handleModalClass(
-            show, 
-            '.add-to-grocery-list-modal',
-            'add-to-grocery-list-modal-overlay'
-        );
-    }, [show]);
-
     return (
         <div className="add-to-grocery-list-modal">
             <ModalContent>
@@ -55,9 +46,9 @@ export const AddToGroceryListModal = ({
                         <RecipeCategoryInput
                             isDropdownOpen={isTypeDropdownOpen}
                             handleDropdownToggle={() => setIsTypeDropdownOpen(!isTypeDropdownOpen)}
-                            handleDropdownSelection={(e) => {
+                            handleDropdownSelection={(option, e) => {
                                 e.stopPropagation();
-                                setType(e.target.value);
+                                setType(option);
                                 setIsTypeDropdownOpen(false);
                             }}
                             label={type || 'Meal Type'}

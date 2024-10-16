@@ -12,6 +12,7 @@ import { AddToGroceryListModal } from './AddToGroceryListModal';
 import { SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 import { categorizeRecipeType } from '../categorize-recipe-type';
 import { RecipeImageModal } from './RecipeImageModal';
+import { handleModalClass } from '../utils/handle-modal-class';
 
 const formatIngredientItem = (item) => {
     const amount = item.amount ? item.amount + ' ' : '';
@@ -227,9 +228,15 @@ export const Recipe = ({ match }) => {
     const { show: showMealPlanning, setShow: setShowMealPlanning, handleClose: closeMealPlanningModal, handleOpen: openMealPlanningModal, mealPlan, setMealPlan } = useMealPlanning();
 
     const [isAddToGroceryListModalOpen, setIsAddToGroceryListModalOpen] = useState(false);
-
     const openAddToGroceryListModal = () => setIsAddToGroceryListModalOpen(true);
     const closeAddToGroceryListModal = () => setIsAddToGroceryListModalOpen(false);
+    useEffect(() => {
+        handleModalClass(
+            isAddToGroceryListModalOpen,
+            '.add-to-grocery-list-modal',
+            'add-to-grocery-list-modal-overlay'
+        );
+    }, [isAddToGroceryListModalOpen]);
 
     const [isRecipeImageModalOpen, setIsRecipeImageModalOpen] = useState(false);
     const [selectedRecipeImage, setSelectedRecipeImage] = useState(null);
@@ -502,7 +509,6 @@ export const Recipe = ({ match }) => {
                             setSelectedIngredients([]);
                         });
                     }}
-                    show={isAddToGroceryListModalOpen}
                 />
             )}
         </NonDashboardPage>
