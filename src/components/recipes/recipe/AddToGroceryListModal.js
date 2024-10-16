@@ -7,7 +7,6 @@ import { RecipeDateInput } from '../grocery-list-modal/RecipeDateInput';
 import { RecipeCategoryInput } from '../grocery-list-modal/RecipeCategoryInput';
 import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
 import { getValidDateRangeError } from '../grocery-list-modal/getValidDateRangeError';
-import { handleModalClass } from '../utils/handle-modal-class';
 
 export const AddToGroceryListModal = ({
     closeModal,
@@ -68,6 +67,7 @@ export const AddToGroceryListModal = ({
                             }}
                             handleDelete={() => setDate('')}
                             hasDate={!!date}
+                            initialDate={new Date(date || mealPlanningDateRange?.[0] || mealPlanningDateRange?.[1])}
                             isCalendarOpen={isCalendarOpen}
                             label={date ? dayjs(date).format(READABLE_SHORT_DATE) : '(Optional) Set when you need it by...'}
                         />
@@ -93,7 +93,8 @@ export const AddToGroceryListModal = ({
                                     setIsStartMealPlanningCalendarOpen(!isStartMealPlanningCalendarOpen);
                                 }}
                                 handleDelete={() => setMealPlanningDateRange([null, mealPlanningDateRange[1]])}
-                                hasDate={mealPlanningDateRange?.[0]}
+                                hasDate={!!mealPlanningDateRange?.[0]}
+                                initialDate={new Date(mealPlanningDateRange?.[0] || mealPlanningDateRange?.[1] || date)}
                                 isCalendarOpen={isStartMealPlanningCalendarOpen}
                                 label={mealPlanningDateRange?.[0] ?
                                     dayjs(mealPlanningDateRange[0]).format(READABLE_SHORT_DATE) :
@@ -121,7 +122,8 @@ export const AddToGroceryListModal = ({
                                     setIsEndMealPlanningCalendarOpen(!isEndMealPlanningCalendarOpen);
                                 }}
                                 handleDelete={() => setMealPlanningDateRange([mealPlanningDateRange[0], null])}
-                                hasDate={mealPlanningDateRange?.[1]}
+                                hasDate={!!mealPlanningDateRange?.[1]}
+                                initialDate={new Date(mealPlanningDateRange?.[1] || mealPlanningDateRange?.[0] || date)}
                                 isCalendarOpen={isEndMealPlanningCalendarOpen}
                                 label={mealPlanningDateRange?.[1] ?
                                     dayjs(mealPlanningDateRange[1]).format(READABLE_SHORT_DATE) :

@@ -10,6 +10,7 @@ export const RecipeDateInput = ({
     handleClick,
     handleDelete,
     hasDate,
+    initialDate,
     isCalendarOpen,
     label,
     selectRange,
@@ -42,7 +43,7 @@ export const RecipeDateInput = ({
                     next2Label={null}
                     prev2Label={null}
                     selectRange={selectRange}
-                    value={date}
+                    value={date ?? initialDate}
                 />
             )}
         </div>
