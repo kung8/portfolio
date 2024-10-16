@@ -15,6 +15,7 @@ import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { useMealPlanning } from '../hooks/use-meal-planning';
 import { SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 import { RecipeFilterModal } from './RecipeFilterModal';
+import { handleModalClass } from '../utils/handle-modal-class';
 
 export const Recipes = ({ history }) => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -103,6 +104,10 @@ export const Recipes = ({ history }) => {
         }
     }
 
+    useEffect(() => {
+        handleModalClass(showFilters, '.modal-tray', 'modal-tray-overlay');
+    }, [showFilters]);
+
     return (
         <NonDashboardPage
             mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`}
@@ -152,6 +157,7 @@ export const Recipes = ({ history }) => {
                 />
             </NonDashboardPage.Header>
 
+            <div id="modal-tray-overlay" className="overlay" onClick={() => setShowFilters(false)} />
             <RecipeFilterModal {...{
                 filteredRecipes,
                 search,
@@ -159,7 +165,6 @@ export const Recipes = ({ history }) => {
                 setSearch,
                 setSelectedFilters,
                 setShow: setShowFilters,
-                show: showFilters,
                 totalAvailableRecipes: recipes.filter(item => item.available).length,
                 closeFilters: () => setShowFilters(false)
             }} />

@@ -1,4 +1,4 @@
-export const handleModalClass = (show, trayClass, overlayId) => {
+export const handleModalClass = (show, trayClass, overlayId, delayed = false) => {
     const rootId = document.getElementById('root');
     const isMobile = window.screen.width < 768;
     const tray = document.querySelector(trayClass);
@@ -21,11 +21,12 @@ export const handleModalClass = (show, trayClass, overlayId) => {
         if (tray) {
             tray.classList.remove('opened');
             tray.classList.add('closed');
+            if (html) html.style.overflowY = '';
+            if (!delayed && overlay) overlay.classList.remove('opened');
             setTimeout(() => {
                 tray.classList.remove('closed');
-            }, 300);
+                if (delayed && overlay) overlay.classList.remove('opened');
+            }, 1000);
         }
-        if (html) html.style.overflowY = '';
-        if (overlay) overlay.classList.remove('opened');
     }
 }

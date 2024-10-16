@@ -234,7 +234,8 @@ export const Recipe = ({ match }) => {
         handleModalClass(
             isAddToGroceryListModalOpen,
             '.add-to-grocery-list-modal',
-            'add-to-grocery-list-modal-overlay'
+            'add-to-grocery-list-modal-overlay',
+            true
         );
     }, [isAddToGroceryListModalOpen]);
 
@@ -484,33 +485,31 @@ export const Recipe = ({ match }) => {
                 showGroceryList={showGroceryList}
             />
 
-            <div id="add-to-grocery-list-modal-overlay" className="overlay" onClick={closeAddToGroceryListModal} />
-            {isAddToGroceryListModalOpen && (
-                <AddToGroceryListModal
-                    closeModal={closeAddToGroceryListModal}
-                    initialType={categorizeRecipeType(item.category?.[0])}
-                    onAdd={async (date, type, mealPlanningDateRange) => {
-                        // Adds to Meal Plan
-                        const newMealPlan = [...mealPlan, { recipeName: item.name, date, type, checked: false, mealPlanningDateRange }];
-                        setMealPlan(newMealPlan);
-                        localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, 'groceryList');
+            <div id="add-to-grocery-list-modal-overlay" className="overlay" onClick={() => setIsAddToGroceryListModalOpen(false)} />
+            <AddToGroceryListModal
+                closeModal={closeAddToGroceryListModal}
+                initialType={categorizeRecipeType(item?.category?.[0])}
+                onAdd={async (date, type, mealPlanningDateRange) => {
+                    // Adds to Meal Plan
+                    const newMealPlan = [...mealPlan, { recipeName: item.name, date, type, checked: false, mealPlanningDateRange }];
+                    setMealPlan(newMealPlan);
+                    localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, 'groceryList');
 
-                        // Adds to Grocery List
-                        const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {
-                            if (item.linkId) {
-                                const response = await getAsyncData('recipes', item.linkId);
-                                return response?.data?.[0]?.ingredients?.map((ingredient, index) => getIngredientData(response.data[0].name, ingredient, index + item.index));
-                            }
-                            return { ...item, checked: false, date, mealPlanningDateRange };
-                        })];
-                        Promise.all(newIngredientsToAdd).then((newIngredientsToAdd) => {
-                            setGroceryList(newIngredientsToAdd.flat());
-                            openGroceryListModal();
-                            setSelectedIngredients([]);
-                        });
-                    }}
-                />
-            )}
+                    // Adds to Grocery List
+                    const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {
+                        if (item.linkId) {
+                            const response = await getAsyncData('recipes', item.linkId);
+                            return response?.data?.[0]?.ingredients?.map((ingredient, index) => getIngredientData(response.data[0].name, ingredient, index + item.index));
+                        }
+                        return { ...item, checked: false, date, mealPlanningDateRange };
+                    })];
+                    Promise.all(newIngredientsToAdd).then((newIngredientsToAdd) => {
+                        setGroceryList(newIngredientsToAdd.flat());
+                        openGroceryListModal();
+                        setSelectedIngredients([]);
+                    });
+                }}
+            />
         </NonDashboardPage>
     )
 }
