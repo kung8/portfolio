@@ -182,11 +182,15 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
                             </>
                         )}
                     >
-                        <ReviewContainer.Header title={review.title} subtitle={`by ${getAuthor(review.author)}`} date={review.date !== 'NO DATE' ?
-                            review.date.split('/').map((value, index) => {
-                                if (index === 0) return value
-                                else return value.substring(2)
-                            }).join('/') : review.date} />
+                        <ReviewContainer.Header
+                            title={review.title}
+                            subtitle={`by ${getAuthor(review.author)}`}
+                            date={review.date !== 'NO DATE' ?
+                                review.date.split('/').map((value, index) => {
+                                    if (index === 0 || index === 1) return value
+                                    else return value.substring(2)
+                                }).join('/') : review.date}
+                        />
                         {review.review?.[0] && (
                             <ReviewContainer.Content review={review.review} />
                         )}

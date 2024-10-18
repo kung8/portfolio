@@ -22,14 +22,18 @@ export const Recommendations = () => {
             const splitB = b.date.split('/');
             const monthA = parseInt(splitA[0]);
             const monthB = parseInt(splitB[0]);
-            const yearA = parseInt(splitA[1]);
-            const yearB = parseInt(splitB[1]);
-            if (yearA === yearB) {
+            const dayA = parseInt(splitA[1]);
+            const dayB = parseInt(splitB[1]);
+            const yearA = parseInt(splitA[2]);
+            const yearB = parseInt(splitB[2]);
+            if (yearA !== yearB) {
+                return yearB - yearA;
+            } else if (monthA !== monthB) {
                 return monthB - monthA;
             }
-            return yearB - yearA;
+            return dayB - dayA;
         });
-        const recommendations = foundData.filter((item) => item.date === "NO DATE");        
+        const recommendations = foundData.filter((item) => item.date === "NO DATE");
         return { category: 'Books', reviews, recommendations };
     }
 

@@ -177,7 +177,7 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: "9/2024",
+            date: "9/29/2024",
             title: "Funny Story",
             author: ["Emily Henry"],
             source: ["same author"],
@@ -2846,7 +2846,7 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: "9/2024",
+            date: "9/15/2024",
             title: "Artemis",
             author: ["Andy Weir"],
             source: ["some coworkers"],
@@ -2902,7 +2902,7 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: "9/2024",
+            date: "9/7/2024",
             title: "Happy Place",
             author: ["Emily Henry"],
             source: ["same author"],
@@ -2993,7 +2993,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "8/2024",
+            date: "8/24/2024",
             title: "Mistborn: The Final Empire",
             author: ["Brandon Sanderson"],
             source: ["Paige Wardle"],
@@ -3060,7 +3060,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "8/2024",
+            date: "8/3/2024",
             title: "Beach Read",
             author: ["Emily Henry"],
             review: [
@@ -3174,7 +3174,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "7/2024",
+            date: "7/17/2024",
             title: "Book Lover",
             author: ["Emily Henry"],
             source: ["Kindle/Libby"],
@@ -3301,7 +3301,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "7/2024",
+            date: "7/5/2024",
             title: "The Good Enough Job: Reclaiming Life from Work",
             author: ["Simone Stolzoff"],
             source: ["Lindsey Hunter"],
@@ -3312,7 +3312,7 @@ module.exports = {
             rating: 4.5,
         },
         {
-            date: "6/2024",
+            date: "6/27/2024",
             title: "Calamity",
             author: ["Brandon Sanderson"],
             source: ["series"],
@@ -3343,7 +3343,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "6/2024",
+            date: "6/9/2024",
             title: "Firefight",
             author: ["Brandon Sanderson"],
             source: ["series"],
@@ -3368,7 +3368,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "5/2024",
+            date: "5/26/2024",
             title: "Steelheart",
             author: ["Brandon Sanderson"],
             source: ["Riley Adams"],
@@ -3423,7 +3423,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "5/2024",
+            date: "5/9/2024",
             title: "Project Hail Mary",
             author: ["Andy Weir"],
             source: ["Andrea Schuetz", "Nathaniel Schuetz"],
@@ -3434,7 +3434,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "2/2024",
+            date: "2/19/2024",
             title: "Ballad of Songbirds and Snakes",
             author: ["Suzanne Collins"],
             source: ["Ashtyn Newbold", "Briana Wiberg"],
@@ -3445,7 +3445,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "2/2024",
+            date: "2/7/2024",
             title: "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
             author: ["Jocko Willink", "Leif Babin"],
             source: ["Branden Neish"],
@@ -3495,7 +3495,7 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: "1/2024",
+            date: "1/21/2024",
             title: "The Christmas Murder Game",
             author: ["Alexandra Benedict"],
             source: ["Kindle/Libby"],
@@ -3506,7 +3506,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "1/2024",
+            date: "1/12/2024",
             title: "The Final Gambit",
             author: ["Jennifer Lynn Barnes"],
             source: ["series"],
@@ -3517,7 +3517,7 @@ module.exports = {
             rating: 4,
         },
         {
-            date: "12/2023",
+            date: "12/24/2023",
             title: "The Hawthorne Legacy",
             author: ["Jennifer Lynn Barnes"],
             source: ["series"],
@@ -3528,7 +3528,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "11/2023",
+            date: "11/28/2023",
             title: "The Inheritance Games",
             author: ["Jennifer Lynn Barnes"],
             source: ["Kindle/Libby"],
@@ -3546,7 +3546,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "11/2023",
+            date: "11/15/2023",
             title: "Murder in an Irish Village (An Irish Village Mystery Book 1)",
             author: ["Carlene O'Connor"],
             source: ["Kindle/Libby"],
@@ -3557,7 +3557,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "10/2023",
+            date: "10/5/2023",
             title: "The Last Thing He Told Me",
             author: ["Laura Dave"],
             source: ["Kindle/Libby"],
@@ -3584,7 +3584,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "9/2023",
+            date: "9/5/2023",
             title: "To Kill a Mockingbird",
             author: ["Harper Lee"],
             source: ["classic"],
@@ -3617,7 +3617,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "8/2023",
+            date: "8/17/2023",
             title: "Missing Dead Girls",
             author: ["Sara Walters"],
             source: ["Kindle/Libby"],
@@ -3628,7 +3628,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "8/2023",
+            date: "8/6/2023",
             title: "The Book Thief",
             author: ["Markus Zusak"],
             source: ["classic", ""],
@@ -3661,7 +3661,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "6/2023",
+            date: "6/23/2023",
             title: "Otherwise Known as Sheila the Great",
             author: ["Judy Blume"],
             source: ["classic"],
@@ -3672,7 +3672,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "6/2023",
+            date: "6/23/2023",
             title: "Double Fudge",
             author: ["Judy Blume"],
             source: ["classic"],
@@ -3683,7 +3683,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "6/2023",
+            date: "6/18/2023",
             title: "Tale of a Fourth Grade Nothing",
             author: ["Judy Blume"],
             source: ["classic"],
@@ -3694,7 +3694,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "6/2023",
+            date: "6/16/2023",
             title: "Fudge-a-mania",
             author: ["Judy Blume"],
             source: ["classic"],
@@ -3705,7 +3705,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "6/2023",
+            date: "6/8/2023",
             title: "Super Fudge",
             author: ["Judy Blume"],
             source: ["classic"],
@@ -3716,7 +3716,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "5/2023",
+            date: "5/31/2023",
             title: "Stuart Little",
             author: ["E.B. White"],
             source: ["classic"],
@@ -3727,7 +3727,7 @@ module.exports = {
             rating: 1,
         },
         {
-            date: "5/2023",
+            date: "5/30/2023",
             title: "The Graveyard Book",
             author: ["Neil Gaiman"],
             source: ["Madeline from Hinge"],
@@ -3738,7 +3738,7 @@ module.exports = {
             rating: 2,
         },
         {
-            date: "5/2023",
+            date: "5/28/2023",
             title: "Charlotte's Web",
             author: ["E.B. White"],
             source: ["classic"],
@@ -3749,7 +3749,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "5/2023",
+            date: "5/21/2023",
             title: "The Bullet That Missed (A Thursday Murder Club Mystery)",
             author: ["Richard Osman"],
             source: ["Adrianna Cesar"],
@@ -3785,7 +3785,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "4/2023",
+            date: "4/30/2023",
             title: "Something in the Water",
             author: ["Catherine Steadman"],
             source: ["Kindle/Libby"],
@@ -3803,7 +3803,7 @@ module.exports = {
             rating: 3,
         },
         {
-            date: "3/2023",
+            date: "3/25/2023",
             title: "Crazy Rich Girlfriend",
             author: ["Kevin Kwan"],
             source: ["series"],
@@ -3814,8 +3814,8 @@ module.exports = {
             rating: 3,
         },
         {
-            date: "3/2023",
-            title: "The Maiden",
+            date: "3/1/2023",
+            title: "The Maidens",
             author: ["Alex Michaelides"],
             source: ["same author"],
             review: [
@@ -3844,7 +3844,7 @@ module.exports = {
             rating: 3,
         },
         {
-            date: "2/2023",
+            date: "2/13/2023",
             title: "People We Meet on Vacation",
             author: ["Emily Henry"],
             source: ["Micole Mayfield"],
@@ -3890,7 +3890,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "2/2023",
+            date: "2/6/2023",
             title: "The Silent Patient",
             author: ["Alex Michaelides"],
             source: ["Micole Mayfield"],
@@ -3912,7 +3912,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "1/2023",
+            date: "1/31/2023",
             title: "The Martian",
             author: ["Andy Weir"],
             source: ["movie"],
@@ -3923,7 +3923,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "1/2023",
+            date: "1/8/2023",
             title: "On the Path Home",
             author: ["Henry B. Eyring"],
             source: ["Jaden Hansen"],
@@ -3934,7 +3934,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "12/2022",
+            date: "12/30/2022",
             title: "We're With You: Counsel and Encouragement from Your Brethren",
             author: ["The Church of Jesus Christ of Latter-day Saints"],
             source: ["Casey Peterson"],
@@ -3945,7 +3945,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "8/2022",
+            date: "8/6/2022",
             title: "No Doubt About It",
             author: ["Sheri Dew"],
             source: ["Linda Mason"],
@@ -3956,7 +3956,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "6/2022",
+            date: "6/13/2022",
             title: "The Guernsey Literary and Potato Peel Pie Society",
             author: ["Mary Ann Shaffer", "Annie Barrows"],
             source: ["Rhiannon Sanderson"],
@@ -3967,7 +3967,7 @@ module.exports = {
             rating: 4,
         },
         {
-            date: "3/2022",
+            date: "10/24/2022",
             title: "The Heroes of Olympus: The Lost Hero",
             author: ["Rick Riordan"],
             source: ["Rhiannon Sanderson"],
@@ -3978,7 +3978,7 @@ module.exports = {
             rating: 4,
         },
         {
-            date: "1/2022",
+            date: "1/31/2022",
             title: "The Three Musketeers",
             author: ["Alexandre Dumas"],
             source: ["classic"],
@@ -3989,7 +3989,7 @@ module.exports = {
             rating: 2.5,
         },
         {
-            date: "12/2020",
+            date: "12/20/2020",
             title: "A Christmas Carol",
             author: ["Charles Dickens"],
             source: ["classic"],
@@ -4011,7 +4011,7 @@ module.exports = {
             rating: 5,
         },
         {
-            date: "11/2020",
+            date: "11/20/2020",
             title: "Pride and Prejudice",
             author: ["Jane Austen"],
             source: ["classic"],
@@ -4028,7 +4028,7 @@ module.exports = {
             rating: 3,
         },
         {
-            date: "9/2020",
+            date: "9/15/2020",
             title: "Hamilton",
             author: ["Ron Chernow"],
             source: ["hype from the music"],
@@ -4059,7 +4059,7 @@ module.exports = {
             rating: 2.5,
         },
         {
-            date: "3/2020",
+            date: "3/10/2020",
             title: "The Giver",
             author: ["Lois Lowry"],
             source: ["classic"],
