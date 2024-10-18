@@ -55,8 +55,8 @@ module.exports = {
     cookTime: '1 h',
     separated: true,
     websites: [
-        'https://www.recipetineats.com/banh-mi-vietnamese-sandwich/',
-        'https://www.simplyrecipes.com/recipes/vietnamese_daikon_and_carrot_pickles/',
+        { label: 'Banh Mi Sandwich', link: 'https://www.recipetineats.com/banh-mi-vietnamese-sandwich/' },
+        { label: 'Pickled Daikon and Carrots', link: 'https://www.simplyrecipes.com/recipes/vietnamese_daikon_and_carrot_pickles/' },
     ],
     ingredients: [
         { ...WARM_WATER, amount: '1 3/4 c', additionalDetails: '', section: SECTIONS.BREAD },
@@ -100,7 +100,7 @@ module.exports = {
         { name: 'oven' },
     ],
     supplies: [
-        { name: 'clean counter'},
+        { name: 'clean counter' },
         { name: 'baking pan' },
         { name: '2 baguette pans' },
         { name: '2 lightweight cheesecloth' },
@@ -153,7 +153,7 @@ module.exports = {
         { step: 'Warm the rolls in the oven for just a few minutes or until golden brown.', type: SECTIONS.MAIN },
         { step: 'Add the vegetables and a light drizzling of Maggi Seasoning on the pate.', type: SECTIONS.MAIN },
         { step: 'Add the vegetables and enjoy this delicious Vietnamese cuisine.', type: SECTIONS.MAIN },
-    ], 
+    ],
     notes: [
         'If you cannot find banana leaves, you can use aluminum foil.',
         'If you cannot find daikon, you can use turnips.',

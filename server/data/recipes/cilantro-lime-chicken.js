@@ -26,7 +26,7 @@ module.exports = {
     prepTime: '15 m',
     cookTime: '40 m',
     websites: [
-        'https://kaleforniakravings.com/easy-cilantro-lime-chicken-wings/'
+        { label: 'Cilantro Lime Chicken Wings', link: 'https://kaleforniakravings.com/easy-cilantro-lime-chicken-wings/' }
     ],
     ingredients: [
         { ...CHICKEN_WINGS, amount: '2 lbs', additionalDetails: '', section: SECTIONS.MEAT },

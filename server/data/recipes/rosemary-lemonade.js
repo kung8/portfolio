@@ -21,7 +21,7 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '15 m',
     websites: [
-        "https://www.tasteofhome.com/recipes/rosemary-lemonade/"
+        { label: 'Rosemary Lemonade', link: "https://www.tasteofhome.com/recipes/rosemary-lemonade/" }
     ],
     separated: true,
     ingredients: [

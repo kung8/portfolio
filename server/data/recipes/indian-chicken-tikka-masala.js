@@ -16,7 +16,7 @@ module.exports = {
     cookTime: '1 hr 15 m',
     separated: true,
     websites: [
-        "https://www.allrecipes.com/recipe/228293/curry-stand-chicken-tikka-masala-sauce"
+        { label: 'Chicken Tikka Masala', link: "https://www.allrecipes.com/recipe/228293/curry-stand-chicken-tikka-masala-sauce" }
     ],
     ingredients: [
         { ...GHEE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },

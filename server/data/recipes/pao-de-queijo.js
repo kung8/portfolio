@@ -36,7 +36,7 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '30 m',
     websites: [
-        "https://www.oliviascuisine.com/authentic-brazilian-cheese-bread/"
+        { label: 'Brazilian Cheese Bread', link: "https://www.oliviascuisine.com/authentic-brazilian-cheese-bread/" }
     ],
     separated: false,
     ingredients: [

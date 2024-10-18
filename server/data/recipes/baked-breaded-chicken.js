@@ -38,7 +38,7 @@ module.exports = {
     prepTime: '8 m',
     cookTime: '30 m',
     websites: [
-        "https://www.eazypeazymealz.com/baked-breaded-chicken/"
+        { label: 'Baked Breaded Chicken', link: "https://www.eazypeazymealz.com/baked-breaded-chicken/" }
     ],
     separated: true,
     ingredients: [

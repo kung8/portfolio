@@ -43,7 +43,7 @@ module.exports = {
     cookTime: '20 m',
     separated: true,
     websites: [
-        "https://todayscreativelife.com/chinese-beef-green-beans/"
+        { label: 'Green Bean Beef', link: "https://todayscreativelife.com/chinese-beef-green-beans/" }
     ],
     ingredients: [
         { ...CHICKEN_BROTH, amount: '1/3 c', additionalDetails: '', optional: false, section: SECTIONS.SAUCE },

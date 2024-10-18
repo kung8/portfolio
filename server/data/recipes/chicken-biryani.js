@@ -47,7 +47,7 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '1 hr 30 m',
     websites: [
-        "https://www.recipetineats.com/biryani/"
+        { label: 'Biryani', link: "https://www.recipetineats.com/biryani/" }
     ],
     separated: true,
     ingredients: [
@@ -66,23 +66,23 @@ module.exports = {
         { ...CUMIN, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...PAPRIKA, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...SALT, amount: '1 3/4 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
-        
+
         { ...SALT, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.RICE },
         { ...CLOVES, amount: '10', additionalDetails: '', section: SECTIONS.RICE },
         { ...BAY_LEAVES, amount: '5', additionalDetails: '', section: SECTIONS.RICE },
         { ...STAR_ANISE, amount: '1', additionalDetails: '', section: SECTIONS.RICE },
         { ...CARDAMOM_PODS, amount: '6', additionalDetails: '', section: SECTIONS.RICE },
         { ...BASMATI_RICE, amount: '2 1/4 c', additionalDetails: '', section: SECTIONS.RICE },
-        
+
         { ...MEDIUM_YELLOW_ONION, amount: '2', additionalDetails: 'sliced', section: CRISPY_ONION },
         { ...VEGETABLE_OIL, amount: '1 c', additionalDetails: 'for frying', section: CRISPY_ONION },
-        
-        { ...SAFFRON_THREADS, amount: '1 tsp', additionalDetails: '', section: SAFFRON_WATER  },
+
+        { ...SAFFRON_THREADS, amount: '1 tsp', additionalDetails: '', section: SAFFRON_WATER },
         { ...WARM_WATER, amount: '2 Tbsp', additionalDetails: '', section: SAFFRON_WATER },
-        
+
         { ...CILANTRO, amount: '1 c', additionalDetails: 'chopped', section: SECTIONS.MAIN },
         { ...GHEE, amount: '1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        
+
         { ...CILANTRO, amount: '', additionalDetails: 'topping', section: SECTIONS.TOPPINGS },
         { ...YOGURT, amount: '', additionalDetails: 'topping', section: SECTIONS.TOPPINGS },
     ],

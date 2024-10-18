@@ -1,6 +1,6 @@
 const example = '../assets/Products/example.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const {} = require('./ingredients');
+const { } = require('./ingredients');
 
 module.exports = {
     cardName: '',
@@ -15,7 +15,9 @@ module.exports = {
     yields: ' servings',
     prepTime: 'm',
     cookTime: 'm',
-    websites: [],
+    websites: [
+        { label: '', link: '' }
+    ],
     separated: false,
     ingredients: [
         { ...GENRES, amount: '', additionalDetails: '', section: '' },

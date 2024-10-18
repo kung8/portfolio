@@ -35,7 +35,7 @@ module.exports = {
     yields: '6 servings',
     prepTime: '25 m',
     cookTime: '50 m',
-    websites: [],
+    // websites: [],
     separated: true,
     ingredients: [
         { ...SOURDOUGH_STARTER, amount: '1 c', additionalDetails: '', section: SECTIONS.DOUGH, link: { id: 'sourdough-starter', url: 'recipes/sourdough-starter' } },

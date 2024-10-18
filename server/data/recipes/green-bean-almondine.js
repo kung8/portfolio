@@ -31,7 +31,7 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '15 m',
     websites: [
-        'https://www.abeautifulplate.com/green-beans-almondine/'
+        { label: 'Green Bean Almondine', link: 'https://www.abeautifulplate.com/green-beans-almondine/' }
     ],
     ingredients: [
         { ...SALT, amount: '2 1/2 tsp', additionalDetails: '', section: '' },

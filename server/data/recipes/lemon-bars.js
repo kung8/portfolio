@@ -36,7 +36,9 @@ module.exports = {
     yields: ' servings',
     prepTime: '20 m',
     cookTime: '55 m',
-    websites: ["https://preppykitchen.com/lemon-bars"],
+    websites: [
+        { label: 'Lemon Bars', link: "https://preppykitchen.com/lemon-bars" }
+    ],
     separated: true,
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: '2 1/2 c', additionalDetails: '', section: SECTIONS.CRUST },

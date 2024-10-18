@@ -16,7 +16,7 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '20 m',
     websites: [
-        "https://tastesbetterfromscratch.com/peanut-brittle/"
+        { label: 'Peanut Brittle', link: "https://tastesbetterfromscratch.com/peanut-brittle/" }
     ],
     separated: false,
     ingredients: [

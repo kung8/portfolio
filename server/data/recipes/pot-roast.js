@@ -26,7 +26,7 @@ module.exports = {
     prepTime: '15 m',
     cookTime: '4 h 15 m',
     websites: [
-        'https://www.foodnetwork.com/recipes/ina-garten/pot-roast-recipe-1941651'
+        { label: 'Pot Roast', link: 'https://www.foodnetwork.com/recipes/ina-garten/pot-roast-recipe-1941651' }
     ],
     ingredients: [
         { ...BEEF_ROAST, amount: '3 lb', additionalDetails: '', section: SECTIONS.MAIN },

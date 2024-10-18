@@ -41,7 +41,7 @@ module.exports = {
     yields: '4 servings',
     prepTime: '10 m',
     cookTime: '40 m',
-    websites: [],
+    // websites: [],
     separated: true,
     ingredients: [
         { ...CHICKEN_THIGH, amount: '1 lb', additionalDetails: 'bone-in, skin on', section: SECTIONS.CHICKEN },

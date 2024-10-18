@@ -45,7 +45,7 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '20 m',
     websites: [
-        "https://www.averiecooks.com/better-than-takeout-cashew-chicken"
+        { label: 'Cashew Chicken', link: "https://www.averiecooks.com/better-than-takeout-cashew-chicken" }
     ],
     separated: true,
     ingredients: [

@@ -29,7 +29,7 @@ module.exports = {
     prepTime: '7 m',
     cookTime: '25 m',
     websites: [
-        'https://cambodiarecipe.com/recipe/khmer-red-chicken-curry/'
+        { label: 'Khmer Red Chicken Curry', link: 'https://cambodiarecipe.com/recipe/khmer-red-chicken-curry/' }
     ],
     separated: false,
     ingredients: [

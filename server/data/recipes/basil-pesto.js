@@ -36,19 +36,19 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '7 m',
     websites: [
-        "https://www.loveandlemons.com/pesto-recipe"
+        { label: 'Pesto', link: "https://www.loveandlemons.com/pesto-recipe" }
     ],
     separated: true,
     ingredients: [
-        {...PINE_NUTS, amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
-        {...LEMON_JUICE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        {...GARLIC, amount: '1 clove', additionalDetails: '', section: SECTIONS.SAUCE },
-        {...SEA_SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        {...BLACK_PEPPER, amount: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        {...BASIL_LEAVES, amount: '2 c', additionalDetails: '', section: SECTIONS.SAUCE },
-        {...OLIVE_OIL, amount: '1/4 c', additionalDetails: '', section: SECTIONS.SAUCE },
-        {...PARMESAN_CHEESE, amount: '1/4 c', additionalDetails: '', section: SECTIONS.SAUCE },
-        {...SPAGHETTI_NOODLES, amount: '8 oz', additionalDetails: 'cooked', section: SECTIONS.SERVE },
+        { ...PINE_NUTS, amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LEMON_JUICE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: '1 clove', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SEA_SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BASIL_LEAVES, amount: '2 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OLIVE_OIL, amount: '1/4 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...PARMESAN_CHEESE, amount: '1/4 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SPAGHETTI_NOODLES, amount: '8 oz', additionalDetails: 'cooked', section: SECTIONS.SERVE },
     ],
     appliances: [
         { name: 'stove' },

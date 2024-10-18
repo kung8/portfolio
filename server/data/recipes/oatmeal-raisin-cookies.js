@@ -40,7 +40,7 @@ module.exports = {
     prepTime: '12 m',
     cookTime: '13 m',
     websites: [
-        "https://www.food.com/recipe/oatmeal-raisin-cookies-35813"
+        { label: 'Oatmeal Raisin Cookies', link: "https://www.food.com/recipe/oatmeal-raisin-cookies-35813" }
     ],
     separated: false,
     ingredients: [

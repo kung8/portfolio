@@ -39,8 +39,8 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '50 m',
     websites: [
-        "https://www.allrecipes.com/recipe/17393/best-carrot-cake-ever/",
-        "https://www.inspiredtaste.net/25753/carrot-cake-recipe/"
+        { label: 'Carrot Cake', link: "https://www.allrecipes.com/recipe/17393/best-carrot-cake-ever/" },
+        { label: 'Frosting', link: "https://www.inspiredtaste.net/25753/carrot-cake-recipe/" },
     ],
     separated: true,
     ingredients: [

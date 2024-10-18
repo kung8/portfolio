@@ -54,7 +54,7 @@ module.exports = {
     cookTime: '2 h',
     separated: true,
     websites: [
-        'https://www.delish.com/cooking/recipe-ideas/a37762621/cheesecake-factory-original-cheesecake-copycat-recipe/'
+        { label: 'Cheesecake Factory Copycat', link: 'https://www.delish.com/cooking/recipe-ideas/a37762621/cheesecake-factory-original-cheesecake-copycat-recipe/' }
     ],
     ingredients: [
         { ...COOKING_SPRAY, amount: '', additionalDetails: '', section: SECTIONS.CRUST },

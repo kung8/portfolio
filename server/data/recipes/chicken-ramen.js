@@ -41,7 +41,7 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '30 m',
     websites: [
-        "https://www.forkknifeswoon.com/simple-homemade-chicken-ramen"
+        { label: 'Homemade Chicken Ramen', link: "https://www.forkknifeswoon.com/simple-homemade-chicken-ramen" }
     ],
     separated: true,
     ingredients: [

@@ -26,7 +26,7 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '15 m',
     websites: [
-        "https://myriadrecipes.com/lemon-chicken-ramen/"
+        { label: 'Lemon Chicken Ramen', link: "https://myriadrecipes.com/lemon-chicken-ramen/" }
     ],
     separated: true,
     ingredients: [

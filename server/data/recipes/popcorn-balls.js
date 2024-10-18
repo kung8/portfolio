@@ -27,7 +27,7 @@ module.exports = {
     prepTime: '15 m',
     cookTime: '20 m',
     websites: [
-        "https://www.allrecipes.com/recipe/20519/best-ever-popcorn-balls/"
+        { label: 'Popcorn Balls', link: "https://www.allrecipes.com/recipe/20519/best-ever-popcorn-balls/" }
     ],
     separated: false,
     ingredients: [

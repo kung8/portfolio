@@ -40,7 +40,7 @@ module.exports = {
     cookTime: '15 m',
     separated: true,
     websites: [
-        'https://www.allrecipes.com/recipe/216391/easy-sausage-gravy-and-biscuits/'
+        { label: 'Sausage Gravy', link: 'https://www.allrecipes.com/recipe/216391/easy-sausage-gravy-and-biscuits/' }
     ],
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: '5 1/2 c', additionalDetails: '', section: BISCUITS },

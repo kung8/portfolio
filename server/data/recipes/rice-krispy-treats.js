@@ -26,7 +26,7 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '20 m',
     websites: [
-        "https://www.spendwithpennies.com/extra-chewy-rice-krispie-treats/"
+        { label: 'Rice Krispie Treats', link: "https://www.spendwithpennies.com/extra-chewy-rice-krispie-treats/" }
     ],
     ingredients: [
         { ...UNSALTED_BUTTER, amount: '1/4 c', additionalDetails: '', section: SECTIONS.MAIN },

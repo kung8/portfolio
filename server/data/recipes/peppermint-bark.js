@@ -15,7 +15,7 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '5 m',
     websites: [
-        "https://www.dinneratthezoo.com/peppermint-bark-recipe/"
+        { label: 'Peppermint Bark', link: "https://www.dinneratthezoo.com/peppermint-bark-recipe/" }
     ],
     separated: false,
     ingredients: [

@@ -35,7 +35,7 @@ module.exports = {
     cookTime: '30 m',
     separated: true,
     websites: [
-        'https://tastesbetterfromscratch.com/chicken-cordon-bleu/'
+        { label: 'Chicken Cordon Bleu', link: 'https://tastesbetterfromscratch.com/chicken-cordon-bleu/' }
     ],
     ingredients: [
         { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '4', additionalDetails: '', section: SECTIONS.MAIN },

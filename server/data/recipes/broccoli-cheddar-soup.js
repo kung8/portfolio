@@ -49,7 +49,7 @@ module.exports = {
     cookTime: '25 m',
     separated: true,
     websites: [
-        'https://www.the-girl-who-ate-everything.com/panera-broccoli-cheese-soup/'
+        { label: 'Panera Broccoli Cheese Soup', link: 'https://www.the-girl-who-ate-everything.com/panera-broccoli-cheese-soup/' }
     ],
     ingredients: [
         { ...UNSALTED_BUTTER, amount: '1/4 c', additionalDetails: '', section: SECTIONS.SOUP },

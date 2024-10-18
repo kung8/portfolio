@@ -33,7 +33,7 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '55 m - 1 h',
     websites: [
-        'https://natashaskitchen.com/banana-bread-recipe-video/'
+        { label: 'Banana Bread', link: 'https://natashaskitchen.com/banana-bread-recipe-video/' }
     ],
     ingredients: [
         { ...BANANA, amount: '3', additionalDetails: '', section: SECTIONS.MAIN },

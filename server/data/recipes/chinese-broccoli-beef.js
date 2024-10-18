@@ -47,7 +47,7 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '30 m',
     websites: [
-        "https://www.instagram.com/leahscohen/reel/C1a15_1OgWY/"
+        { label: 'Broccoli Beef', link: "https://www.instagram.com/leahscohen/reel/C1a15_1OgWY/" }
     ],
     separated: true,
     ingredients: [

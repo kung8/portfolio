@@ -227,7 +227,7 @@ export const Recipe = ({ match }) => {
 
 
     // add to grocery list modal
-    const { handleClose: handleAddToGroceryListModalClose, handleOpen: handleAddToGroceryListModalOpen } =  handleModalClass('.add-to-grocery-list-modal', 'add-to-grocery-list-modal-overlay');
+    const { handleClose: handleAddToGroceryListModalClose, handleOpen: handleAddToGroceryListModalOpen } = handleModalClass('.add-to-grocery-list-modal', 'add-to-grocery-list-modal-overlay');
 
 
 
@@ -448,6 +448,21 @@ export const Recipe = ({ match }) => {
                             {nonSeparatedFigures.map((figure, i) => <Figure key={i} index={i} figure={figure} setSelectedFigureLabel={setSelectedFigureLabel} onClick={openRecipeImageModal} />)}
                         </div>
                     ) : null}
+
+                    {item.websites && item.websites.length > 0 && (
+                        <>
+                            <h4 className="recipe-detail-label">Website References:</h4>
+                            <ul className="recipe-websites-list">
+                                {item.websites?.map(({ label, link }, i) => (
+                                    <li key={i} className="recipe-website-item">
+                                        <a href={link} target="_blank" rel="noopener noreferrer">
+                                            {label}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </>
+                    )}
                 </div>
             ) : (
                 <div className="loader-container">

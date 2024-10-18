@@ -45,7 +45,7 @@ module.exports = {
     prepTime: '45 m',
     cookTime: '20 m',
     websites: [
-        "https://dapurmalaysia.com/resepi-ayam-black-pepper/"
+        { label: 'Ayam Black Pepper', link: "https://dapurmalaysia.com/resepi-ayam-black-pepper/" }
     ],
     separated: true,
     ingredients: [

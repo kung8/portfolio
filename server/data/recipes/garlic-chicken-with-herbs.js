@@ -15,7 +15,7 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '20 m',
     websites: [
-        "https://www.tasteofhome.com/recipes/garlic-chicken-with-herbs/"
+        { label: 'Garlic Chicken', link: "https://www.tasteofhome.com/recipes/garlic-chicken-with-herbs/" }
     ],
     separated: true,
     ingredients: [

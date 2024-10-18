@@ -40,7 +40,7 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '2 m',
     websites: [
-        'https://www.spendwithpennies.com/fluffy-homemade-waffle-recipe/'
+        { label: 'Waffles', link: 'https://www.spendwithpennies.com/fluffy-homemade-waffle-recipe/' }
     ],
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },

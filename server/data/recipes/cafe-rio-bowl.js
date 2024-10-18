@@ -63,7 +63,7 @@ module.exports = {
     cookTime: '15 m',
     separated: true,
     websites: [
-        "https://lilluna.com/cafe-rio-cilantro-ranch-dressing/"
+        { label: 'Cafe Rio Cilantro Ranch Dressing', link: "https://lilluna.com/cafe-rio-cilantro-ranch-dressing/" }
     ],
     ingredients: [
         { ...SKIRT_STEAK, amount: '4 8-oz', additionalDetails: 'strips', section: SECTIONS.MEAT },
@@ -84,7 +84,7 @@ module.exports = {
         { ...GARLIC, amount: '1 tsp', additionalDetails: 'minced', section: CILANTRO_RANCH_DRESSING },
         { ...JALAPENO_PEPPERS, amount: '1 - 3', additionalDetails: 'depending on spice tolerance', section: CILANTRO_RANCH_DRESSING },
         { ...MILK, amount: '1/3 - 1/2 c', additionalDetails: 'depending on preferred thickness', section: CILANTRO_RANCH_DRESSING },
-        
+
         { ...TORTILLA, amount: '8', additionalDetails: '', section: SECTIONS.MAIN },
         { ...CHIPOTLE_SALAD_KITS, amount: '32 oz', additionalDetails: '', section: SECTIONS.MAIN },
         { ...BROWN_RICE, amount: '2 c', additionalDetails: 'cooked', section: SECTIONS.MAIN },

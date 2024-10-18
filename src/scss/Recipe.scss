@@ -212,6 +212,24 @@
             text-decoration: underline;
             text-underline-offset: 4px;
         }
+
+        .recipe-websites-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            margin-top: 8px;
+            padding-left: 16px;
+
+            .recipe-website-item {
+                color: $primary-blue;
+
+                a {
+                    color: $primary-blue;
+                    text-decoration: unset;
+                    text-underline-offset: 4px;
+                }
+            }
+        }
     }
 
     .loader-container {

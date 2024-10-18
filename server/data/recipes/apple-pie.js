@@ -33,7 +33,7 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '70 m',
     websites: [
-        "https://www.allrecipes.com/recipe/12682/apple-pie-by-grandma-ople/"
+        { label: 'Apple Pie', link: "https://www.allrecipes.com/recipe/12682/apple-pie-by-grandma-ople/" },
     ],
     separated: false,
     ingredients: [

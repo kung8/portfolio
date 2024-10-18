@@ -30,7 +30,7 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '25 m',
     websites: [
-        "https://www.wellplated.com/sauteed-zucchini/"
+        { label: 'Sauteed Zucchini', link: "https://www.wellplated.com/sauteed-zucchini/" }
     ],
     separated: false,
     ingredients: [

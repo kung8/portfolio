@@ -30,7 +30,7 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '50 m',
     websites: [
-        'https://www.lecremedelacrumb.com/easy-healthy-baked-lemon-chicken/'
+        { label: 'Baked Lemon Chicken', link: 'https://www.lecremedelacrumb.com/easy-healthy-baked-lemon-chicken/' }
     ],
     ingredients: [
         { ...CHICKEN_WINGS, amount: '4', additionalDetails: '', section: SECTIONS.MAIN },

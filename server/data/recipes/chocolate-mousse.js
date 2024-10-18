@@ -47,7 +47,7 @@ module.exports = {
     prepTime: '15 m',
     cookTime: '0 m',
     websites: [
-        "https://www.recipetineats.com/chocolate-mousse"
+        { label: 'Chocolate Mousse', link: "https://www.recipetineats.com/chocolate-mousse" }
     ],
     separated: true,
     ingredients: [

@@ -22,7 +22,7 @@ module.exports = {
     yields: 'Infinite',
     prepTime: '35 m',
     websites: [
-        "https://littlespoonfarm.com/sourdough-starter-recipe/"
+        { label: 'Sourdough Starter', link: "https://littlespoonfarm.com/sourdough-starter-recipe/" }
     ],
     separated: true,
     ingredients: [

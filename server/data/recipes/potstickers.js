@@ -41,7 +41,7 @@ module.exports = {
     prepTime: '30 m',
     cookTime: '12 m',
     websites: [
-        "https://www.allrecipes.com/recipe/261153/perfect-pot-stickers/"
+        { label: 'Potstickers', link: "https://www.allrecipes.com/recipe/261153/perfect-pot-stickers/" }
     ],
     separated: false,
     ingredients: [

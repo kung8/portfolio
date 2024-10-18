@@ -22,7 +22,7 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '5 m',
     websites: [
-        'https://www.allrecipes.com/recipe/239478/grandmas-buttermilk-syrup/'
+        { label: 'Buttermilk Syrup', link: 'https://www.allrecipes.com/recipe/239478/grandmas-buttermilk-syrup/' }
     ],
     ingredients: [
         { ...WHITE_SUGAR, amount: '1 c', additionalDetails: '', section: SECTIONS.SAUCE },

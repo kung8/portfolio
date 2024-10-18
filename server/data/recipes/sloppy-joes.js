@@ -34,7 +34,7 @@ module.exports = {
     prepTime: '7 m',
     cookTime: '25 m',
     websites: [
-        'https://natashaskitchen.com/sloppy-joe-recipe/'
+        { label: 'Sloppy Joe', link: 'https://natashaskitchen.com/sloppy-joe-recipe/' }
     ],
     separated: false,
     ingredients: [

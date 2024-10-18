@@ -48,7 +48,7 @@ const {
     NUTMEG,
     PARMESAN_CHEESE,
     PROVOLONE_CHEESE,
-    FLANK_STEAK,    
+    FLANK_STEAK,
     MEDIUM_YELLOW_ONION,
     YEAST,
     PIZZA_SAUCE,
@@ -91,7 +91,7 @@ module.exports = {
     cookTime: '25 m',
     separated: true,
     websites: [
-        'https://littlespicejar.com/philly-cheese-steak-pizza/'
+        { label: 'Philly Cheese Steak Pizza', link: 'https://littlespicejar.com/philly-cheese-steak-pizza/' }
     ],
     ingredients: [
         { ...BREAD_FLOUR, amount: '4 1/2 c', additionalDetails: '', section: SECTIONS.DOUGH },
@@ -100,14 +100,14 @@ module.exports = {
         { ...HONEY, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
         { ...WARM_WATER, amount: '2 c', additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
         { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        
+
         // BBQ CHICKEN
         { ...BBQ_SAUCE, amount: '', additionalDetails: '', section: BBQ_CHICKEN_PIZZA },
         { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: BBQ_CHICKEN_PIZZA },
         { ...CHICKEN_BREAST, amount: '', additionalDetails: '', section: BBQ_CHICKEN_PIZZA },
         { ...RED_ONION, amount: '', additionalDetails: 'sliced or diced', section: BBQ_CHICKEN_PIZZA },
         { ...RED_BELL_PEPPERS, amount: '', additionalDetails: 'sliced or diced', section: BBQ_CHICKEN_PIZZA },
-                
+
         // BOBO BRAZIL- TOPPINGS
         { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: BOBO_BRAZIL_PIZZA },
         { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: BOBO_BRAZIL_PIZZA },
@@ -117,7 +117,7 @@ module.exports = {
         { ...OLIVE_OIL, amount: '2 tsp', additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
         { ...HONEY, amount: '2 Tbsp', additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
         { ...RED_PEPPER_FLAKES, amount: '1/2 tsp', additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
-        
+
         // BUFFALO CHICKEN - SAUCE
         { ...PIZZA_SAUCE, amount: '1/2 c', additionalDetails: '', section: BUFFALO_CHICKEN_SAUCE },
         { ...BUFFALO_SAUCE, amount: '1/3 c', additionalDetails: '', section: BUFFALO_CHICKEN_SAUCE },
@@ -132,7 +132,7 @@ module.exports = {
         { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: HAWAIIAN_PIZZA },
         { ...COOKED_HAM, amount: '', additionalDetails: '', section: HAWAIIAN_PIZZA },
         { ...PINEAPPLE, amount: '', additionalDetails: '', section: HAWAIIAN_PIZZA },
-        
+
         // MARGHERITA
         { ...PIZZA_SAUCE, amount: '', additionalDetails: '', section: MARGHERITA_PIZZA },
         { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: MARGHERITA_PIZZA },

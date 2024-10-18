@@ -29,7 +29,7 @@ module.exports = {
     cookTime: '25 m',
     separated: true,
     websites: [
-        'https://rasamalaysia.com/recipe-chicken-satay/'
+        { label: 'Chicken Satay', link: 'https://rasamalaysia.com/recipe-chicken-satay/' }
     ],
     ingredients: [
         { ...CHICKEN_THIGH, amount: '2 lb', additionalDetails: 'chunks', section: SECTIONS.MAIN },
@@ -64,7 +64,7 @@ module.exports = {
         { step: 'Thread 5 to 6 chicken pieces on the skewer, leaving gaps between chicken.', type: SECTIONS.MAIN },
         { step: 'Bake for 15 to 25 minutes (cooking time will vary depending on the size of meat).', type: SECTIONS.MAIN },
         { step: 'Serve with cucumbers.', type: SECTIONS.SERVE },
-    ], 
+    ],
     notes: [
         'lemongrass can be found in the frozen section of Asian grocery stores',
         'lemongrass adds a fresh, sweet, lemony aroma.',

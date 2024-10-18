@@ -23,7 +23,7 @@ const {
     MILK,
     SALT,
     BLACK_PEPPER,
-    OREGANO,    
+    OREGANO,
     NUTMEG,
     JASMINE_RICE,
 } = require('./ingredients');
@@ -43,7 +43,7 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '25 - 40 m',
     websites: [
-        'https://www.carolinescooking.com/aji-de-gallina-peruvian-chicken-stew/'
+        { label: 'Aji de Gallina', link: 'https://www.carolinescooking.com/aji-de-gallina-peruvian-chicken-stew/' }
     ],
     ingredients: [
         { ...CHICKEN_BREAST, amount: '2', additionalDetails: '', optional: false },

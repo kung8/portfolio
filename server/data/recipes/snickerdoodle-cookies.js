@@ -36,7 +36,7 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '10 m',
     websites: [
-        'https://lilluna.com/snickerdoodles/',
+        { label: 'Snickerdoodles', link: 'https://lilluna.com/snickerdoodles/' },
     ],
     separated: true,
     ingredients: [

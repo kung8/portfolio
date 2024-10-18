@@ -29,7 +29,7 @@ module.exports = {
     cookTime: '10 m',
     separated: true,
     websites: [
-        'https://rasamalaysia.com/lemon-chicken/'
+        { label: 'Lemon Chicken', link: 'https://rasamalaysia.com/lemon-chicken/' }
     ],
     ingredients: [
         { ...BONELESS_CHICKEN_THIGH, amount: '3 lbs', additionalDetails: 'cut into small pieces', section: SECTIONS.MARINADE },

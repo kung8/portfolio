@@ -38,7 +38,7 @@ module.exports = {
     cookTime: '20 m',
     separated: true,
     websites: [
-        'https://thewoksoflife.com/katsudon/'
+        { label: 'Katsudon', link: 'https://thewoksoflife.com/katsudon/' }
     ],
     ingredients: [
         { ...BONELESS_PORK_CHOPS, amount: '10', additionalDetails: 'pounded flat', section: SECTIONS.MAIN },

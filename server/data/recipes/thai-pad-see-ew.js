@@ -54,7 +54,7 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '30 m',
     websites: [
-        "https://hot-thai-kitchen.com/chili-vinegar/"
+        { label: 'Chili Vinegar', link: "https://hot-thai-kitchen.com/chili-vinegar/" }
     ],
     separated: true,
     ingredients: [

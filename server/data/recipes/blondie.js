@@ -35,7 +35,9 @@ module.exports = {
     yields: '18 servings',
     prepTime: '10 m',
     cookTime: '30 m',
-    websites: ["https://sugarspunrun.com/blondies-recipe/"],
+    websites: [
+        { label: 'Blondies', link: "https://sugarspunrun.com/blondies-recipe/" }
+    ],
     separated: false,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: '1 c', additionalDetails: 'melted', section: SECTIONS.MAIN },

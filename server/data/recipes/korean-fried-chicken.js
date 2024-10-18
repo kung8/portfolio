@@ -7,12 +7,12 @@ const sauce = '../assets/Products/korean-fried-chicken-raw-sauce.jpeg';
 const rice = '../assets/Products/korean-fried-chicken-with-rice.jpeg';
 const chicken = '../assets/Products/korean-fried-chicken.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
-const { 
+const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
-    CHICKEN_THIGH, 
+    CHICKEN_THIGH,
     CORNSTARCH,
-    GARLIC, 
+    GARLIC,
     GINGER,
     GOCHUJANG_SAUCE,
     HOISIN_SAUCE,
@@ -49,7 +49,7 @@ module.exports = {
     cookTime: '20 m',
     separated: true,
     websites: [
-        'https://www.koreanbapsang.com/yangnyeom-chicken-korean-fried-chicken/'
+        { label: 'Korean Fried Chicken', link: 'https://www.koreanbapsang.com/yangnyeom-chicken-korean-fried-chicken/' }
     ],
     ingredients: [
         { ...CHICKEN_THIGH, amount: '3 lb', additionalDetails: 'cut into 2 - 2.5" pieces', section: SECTIONS.MARINADE },

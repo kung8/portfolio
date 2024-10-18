@@ -30,7 +30,7 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CURRY, TYPES.RICE],
     websites: [
-        "https://gimmedelicious.com/easy-20-minute-butter-chicken/"
+        { label: 'Butter Chicken', link: "https://gimmedelicious.com/easy-20-minute-butter-chicken/" }
     ],
     yields: '4 servings',
     prepTime: '12 - 15 m',

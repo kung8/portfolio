@@ -44,7 +44,7 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '20 m',
     websites: [
-        "https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/"
+        { label: 'Bibimbap', link: "https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/" }
     ],
     separated: true,
     ingredients: [

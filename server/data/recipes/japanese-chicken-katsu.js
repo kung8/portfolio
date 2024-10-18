@@ -31,7 +31,7 @@ module.exports = {
     cookTime: '15 - 20 m',
     separated: true,
     websites: [
-        'https://www.justonecookbook.com/chicken-katsu/'
+        { label: 'Chicken Katsu', link: 'https://www.justonecookbook.com/chicken-katsu/'}
     ],
     ingredients: [
         { ...CHICKEN_BREAST, amount: '4', additionalDetails: 'or ' + PORK_LOIN.name, section: SECTIONS.MAIN },
