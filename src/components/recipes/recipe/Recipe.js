@@ -235,7 +235,6 @@ export const Recipe = ({ match }) => {
             isAddToGroceryListModalOpen,
             '.add-to-grocery-list-modal',
             'add-to-grocery-list-modal-overlay',
-            true
         );
     }, [isAddToGroceryListModalOpen]);
 

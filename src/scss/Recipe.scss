@@ -230,43 +230,38 @@
     .add-to-grocery-list-modal {
         position: absolute;
         top: 50vh;
-        left: 50%;
+        left: -50%;
         z-index: 5;
         background: $dark-aqua;
         transform: translate(-50%, -50%);
         width: unquote("min(calc(100% - 16px), 600px)");
         padding: 24px 16px;
-        display: none;
         &.opened {
-            display: block;
             top: 50vh;
+            left: 50%;
             animation: slide-up 1s ease-in-out;
         }
         &.closed {
-            display: none;
-            top: 100vh;
+            top: 50vh;
+            left: -50%;
             animation: slide-down 1s ease-in-out;
         }
 
         @keyframes slide-up {
             0% {
-                display: none;
-                top: 100vh;
+                left: -50%;
             }
             100% {
-                display: block;
-                top: 50vh;
+                left: 50%;
             }
         }
 
         @keyframes slide-down {
             0% {
-                display: block;
-                top: 50vh;
+                left: 50%;
             }
             100% {
-                display: none;
-                top: 100vh;
+                left: -50%;
             }
         }
 

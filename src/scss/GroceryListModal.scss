@@ -13,18 +13,12 @@
     z-index: 3;
     left: -100%;
     padding: 24px;
-    transition:
-        display 0.5s ease-in-out,
-        left 0.5s ease-in-out;
-    display: none;
     &.opened {
         left: 0;
-        display: block;
         animation: in 1s ease-in-out;
     }
     &.closed {
         left: -100%;
-        display: none;
         animation: out 1s ease-in-out;
     }
 
