@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { handleModalClass } from '../utils/handle-modal-class';
 import { ModalBody, ModalContent } from '../../modal/ModalContent';
 import xBtn from '../../../Assets/x.png';
 import arrow from '../../../Assets/arrow.png';
 import disabledArrow from '../../../Assets/disabled-arrow.png';
 
-export const RecipeImageModal = ({ closeModal, name, image: initialImage, images, show }) => {
+export const RecipeImageModal = ({ closeModal, name, image: initialImage, images }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    useEffect(() => {
-        handleModalClass(show, '.recipe-image-modal', 'recipe-image-modal-overlay');
-    }, [show]);
 
     useEffect(() => {
         const index = images.indexOf(initialImage);
@@ -21,7 +17,7 @@ export const RecipeImageModal = ({ closeModal, name, image: initialImage, images
             <div
                 id="recipe-image-modal-overlay"
                 className="overlay"
-                onClick={() => closeModal()}
+                onClick={closeModal}
             />
             <div className="recipe-image-modal">
                 <ModalContent>

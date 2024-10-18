@@ -12,8 +12,6 @@ import { TopArrow } from './TopArrow';
 import { useGroceryList } from '../hooks/use-grocery-list';
 import { useFilters } from '../hooks/use-filters';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
-import { useMealPlanning } from '../hooks/use-meal-planning';
-import { SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 import { RecipeFilterModal } from './RecipeFilterModal';
 import { handleModalClass } from '../utils/handle-modal-class';
 
@@ -23,7 +21,6 @@ export const Recipes = ({ history }) => {
     const queryKey = ['getData', 'recipes', undefined];
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
     const [search, setSearch] = useState('');
-    const [showFilters, setShowFilters] = useState(false);
     const initialSelectedFilters = {
         category: [],
         diet: [],
@@ -48,6 +45,8 @@ export const Recipes = ({ history }) => {
         ) return item;
         return null;
     });
+
+    const { filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
 
     const onScroll = () => {
         const scrollHeight = window.scrollY;
@@ -74,7 +73,7 @@ export const Recipes = ({ history }) => {
         return () => {
             setIsLoaded(false);
             setSearch('');
-            setShowFilters(false);
+            handleCloseFilterModal();
             setShowArrow(false);
             setSelectedFilters(initialSelectedFilters);
             window.removeEventListener('scroll', onScroll);
@@ -82,93 +81,60 @@ export const Recipes = ({ history }) => {
         // eslint-disable-next-line
     }, []);
 
-    const { show: showGroceryList, setShow: setShowGroceryList, handleClose: closeGroceryListModal, handleOpen: openGroceryListModal, groceryList, setGroceryList } = useGroceryList();
-    const { show: showMealPlanning, setShow: setShowMealPlanning, handleClose: closeMealPlanningModal, handleOpen: openMealPlanningModal, mealPlan, setMealPlan } = useMealPlanning();
-    const { filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
+    // grocery list modal
+    const {
+        show: showGroceryListModal,
+        setShow: setShowGroceryListModal,
+        handleClose: closeGroceryListModal,
+        handleOpen: openGroceryListModal,
+        groceryList,
+        setGroceryList,
+        mealPlan,
+        setMealPlan
+    } = useGroceryList();
 
-    const getModalClose = () => {
-        const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
-        if (selectedModalView === 'mealPlanning') {
-            closeMealPlanningModal();
-        } else if (selectedModalView === 'groceryList') {
-            closeGroceryListModal();
-        }
-    }
-
-    const getModalOpen = () => {
-        const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
-        if (selectedModalView === 'mealPlanning') {
-            openMealPlanningModal();
-        } else if (selectedModalView === 'groceryList') {
-            openGroceryListModal();
-        }
-    }
-
-    useEffect(() => {
-        handleModalClass(showFilters, '.modal-tray', 'modal-tray-overlay');
-    }, [showFilters]);
+    // filters modal
+    const [showFiltersModal, setShowFiltersModal] = useState(false);
+    const { handleClose: handleCloseFilterModal, handleOpen: handleOpenFilterModal } = handleModalClass('.modal-tray', 'modal-tray-overlay');
 
     return (
         <NonDashboardPage
             mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`}
-            onClick={() => {
-                if (!showFilters) return;
-                const filtersContainer = document.querySelector('.filters-container');
-                if (filtersContainer) filtersContainer.classList.add('is-closing');
-                setTimeout(() => {
-                    if (filtersContainer) filtersContainer.classList.remove('is-closing');
-                    setShowFilters(false);
-                }, 300);
-            }}
+            onClick={() => handleCloseFilterModal()}
         >
             <NonDashboardPage.Header title='Recipes'>
                 <SearchAndFilterContainer
                     {...{
-                        filteredRecipes,
-                        search,
-                        selectedFilters,
-                        setSearch,
-                        setSelectedFilters,
-                        setShow: setShowFilters,
-                        show: showFilters,
-                        totalAvailableRecipes: recipes.filter(item => item.available).length,
-                        groceryList,
-                        handleClose: getModalClose,
-                        handleOpen: getModalOpen,
-                        showGroceryList,
-                        setGroceryList,
-                        imageOnClick: () => {
-                            const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
-                            if (selectedModalView === 'mealPlanning') {
-                                if (showMealPlanning) {
-                                    closeMealPlanningModal();
-                                } else {
-                                    openMealPlanningModal();
-                                }
-                            } else if (selectedModalView === 'groceryList') {
-                                if (showGroceryList) {
-                                    closeGroceryListModal();
-                                } else {
-                                    openGroceryListModal();
-                                }
-                            }
+                        filterOnClick: () => {
+                            if (showFiltersModal) handleCloseFilterModal();
+                            else handleOpenFilterModal();
+                            setShowFiltersModal((toggle) => !toggle);
                         },
+                        imageOnClick: () => {
+                            if (showGroceryListModal) closeGroceryListModal();
+                            else openGroceryListModal();
+                            setShowGroceryListModal(toggle => !toggle);
+                        },
+                        search,
+                        setSearch,
                     }}
                 />
             </NonDashboardPage.Header>
 
-            <div id="modal-tray-overlay" className="overlay" onClick={() => setShowFilters(false)} />
-            <RecipeFilterModal {...{
-                filteredRecipes,
-                search,
-                selectedFilters,
-                setSearch,
-                setSelectedFilters,
-                setShow: setShowFilters,
-                totalAvailableRecipes: recipes.filter(item => item.available).length,
-                closeFilters: () => setShowFilters(false)
-            }} />
-
+            <div
+                id="modal-tray-overlay"
+                className="overlay"
+                onClick={handleCloseFilterModal}
+            />
+            <RecipeFilterModal
+                {...{
+                    closeFilters: handleCloseFilterModal,
+                    filteredRecipes,
+                    selectedFilters,
+                    setSelectedFilters,
+                    totalAvailableRecipes: recipes.filter(item => item.available).length,
+                }}
+            />
             {isLoaded ? (
                 filteredRecipes.length ? (
                     <>
@@ -193,16 +159,10 @@ export const Recipes = ({ history }) => {
 
             <GroceryListModal
                 groceryList={groceryList}
-                handleClose={getModalClose}
-                handleSelectedViewChange={(newSelectedView) => {
-                    setShowMealPlanning(newSelectedView === 'mealPlanning');
-                    setShowGroceryList(newSelectedView === 'groceryList');
-                }}
+                handleClose={closeGroceryListModal}
                 mealPlan={mealPlan}
                 setGroceryList={setGroceryList}
                 setMealPlan={setMealPlan}
-                show={showGroceryList || showMealPlanning}
-                showGroceryList={showGroceryList}
             />
         </NonDashboardPage>
     )

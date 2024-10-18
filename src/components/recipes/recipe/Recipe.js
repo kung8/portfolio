@@ -6,7 +6,6 @@ import { NonDashboardPage } from '../../Page';
 import list from '../../../Assets/list.png';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { useGroceryList } from '../hooks/use-grocery-list';
-import { useMealPlanning } from '../hooks/use-meal-planning';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
 import { SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
@@ -224,26 +223,38 @@ export const Recipe = ({ match }) => {
         </>
     ) : null;
 
-    const { show: showGroceryList, setShow: setShowGroceryList, handleClose: closeGroceryListModal, handleOpen: openGroceryListModal, groceryList, setGroceryList } = useGroceryList();
-    const { show: showMealPlanning, setShow: setShowMealPlanning, handleClose: closeMealPlanningModal, handleOpen: openMealPlanningModal, mealPlan, setMealPlan } = useMealPlanning();
 
-    const [isAddToGroceryListModalOpen, setIsAddToGroceryListModalOpen] = useState(false);
-    const openAddToGroceryListModal = () => setIsAddToGroceryListModalOpen(true);
-    const closeAddToGroceryListModal = () => setIsAddToGroceryListModalOpen(false);
-    useEffect(() => {
-        handleModalClass(
-            isAddToGroceryListModalOpen,
-            '.add-to-grocery-list-modal',
-            'add-to-grocery-list-modal-overlay',
-        );
-    }, [isAddToGroceryListModalOpen]);
 
-    const [isRecipeImageModalOpen, setIsRecipeImageModalOpen] = useState(false);
+
+    // add to grocery list modal
+    const { handleClose: handleAddToGroceryListModalClose, handleOpen: handleAddToGroceryListModalOpen } =  handleModalClass('.add-to-grocery-list-modal', 'add-to-grocery-list-modal-overlay');
+
+
+
+    // image modal
+    const { handleClose: handleCloseImageModal, handleOpen: handleOpenImageModal } = handleModalClass('.recipe-image-modal', 'recipe-image-modal-overlay');
     const [selectedRecipeImage, setSelectedRecipeImage] = useState(null);
     const openRecipeImageModal = (image) => {
-        setIsRecipeImageModalOpen(true);
+        handleOpenImageModal();
         setSelectedRecipeImage(image);
     }
+
+
+
+    // grocery list modal
+    const {
+        show: showGroceryListModal,
+        setShow: setShowGroceryListModal,
+        handleClose: closeGroceryListModal,
+        handleOpen: openGroceryListModal,
+        groceryList,
+        setGroceryList,
+        mealPlan,
+        setMealPlan
+    } = useGroceryList();
+
+
+
 
     return (
         <NonDashboardPage mainClassName={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
@@ -259,20 +270,9 @@ export const Recipe = ({ match }) => {
                             alt="list"
                             className="list-img"
                             onClick={() => {
-                                const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
-                                if (selectedModalView === 'mealPlanning') {
-                                    if (showMealPlanning) {
-                                        closeMealPlanningModal();
-                                    } else {
-                                        openMealPlanningModal();
-                                    }
-                                } else {
-                                    if (showGroceryList) {
-                                        closeGroceryListModal();
-                                    } else {
-                                        openGroceryListModal();
-                                    }
-                                }
+                                if (showGroceryListModal) closeGroceryListModal();
+                                else openGroceryListModal();
+                                setShowGroceryListModal(toggle => !toggle);
                             }}
                         />
                     </div>
@@ -351,7 +351,7 @@ export const Recipe = ({ match }) => {
                             </span>
                             <span
                                 className={`add-to-list-button ${selectedIngredients.length > 0 ? 'active' : ''}`}
-                                onClick={openAddToGroceryListModal}
+                                onClick={handleAddToGroceryListModalOpen}
                             >
                                 Add to List
                             </span>
@@ -457,36 +457,22 @@ export const Recipe = ({ match }) => {
 
             {item && isLoaded && <EmailRecipe />}
             <RecipeImageModal
-                closeModal={() => setIsRecipeImageModalOpen(false)}
+                closeModal={handleCloseImageModal}
                 image={selectedRecipeImage}
                 images={[item?.img, ...figures.flatMap(figure => figure.img)]}
                 name={item?.name}
-                show={isRecipeImageModalOpen}
             />
             <GroceryListModal
                 groceryList={groceryList}
-                handleClose={() => {
-                    const selectedModalView = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
-                    if (selectedModalView === 'mealPlanning') {
-                        closeMealPlanningModal();
-                    } else if (selectedModalView === 'groceryList') {
-                        closeGroceryListModal();
-                    }
-                }}
-                handleSelectedViewChange={(newSelectedView) => {
-                    setShowMealPlanning(newSelectedView === 'mealPlanning');
-                    setShowGroceryList(newSelectedView === 'groceryList');
-                }}
+                handleClose={closeGroceryListModal}
                 mealPlan={mealPlan}
                 setGroceryList={setGroceryList}
                 setMealPlan={setMealPlan}
-                show={showGroceryList || showMealPlanning}
-                showGroceryList={showGroceryList}
             />
 
-            <div id="add-to-grocery-list-modal-overlay" className="overlay" onClick={() => setIsAddToGroceryListModalOpen(false)} />
+            <div id="add-to-grocery-list-modal-overlay" className="overlay" onClick={handleAddToGroceryListModalClose} />
             <AddToGroceryListModal
-                closeModal={closeAddToGroceryListModal}
+                closeModal={handleAddToGroceryListModalClose}
                 initialType={categorizeRecipeType(item?.category?.[0])}
                 onAdd={async (date, type, mealPlanningDateRange) => {
                     // Adds to Meal Plan

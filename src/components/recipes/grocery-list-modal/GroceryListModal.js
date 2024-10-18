@@ -11,16 +11,13 @@ import {
     MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY,
     SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY,
 } from '../constants';
-import { handleModalClass } from '../utils/handle-modal-class';
 
 export const GroceryListModal = ({
-    show,
-    handleClose,
     groceryList,
-    setGroceryList,
+    handleClose,
     mealPlan,
+    setGroceryList,
     setMealPlan,
-    handleSelectedViewChange,
 }) => {
     // INGREDIENTS
     const [isDeleteIngredientModalOpen, setIsDeleteIngredientModalOpen] = useState(false);
@@ -104,28 +101,14 @@ export const GroceryListModal = ({
 
     // SHARED
     const [deleteType, setDeleteType] = useState(null);
-    const showClass = show || isDeleteIngredientModalOpen || isEditIngredientModalOpen || isDeleteMealPlanModalOpen || isEditMealPlanModalOpen ? 'opened' : '';
     const GROCERY_LIST_VIEW = 'groceryList';
     const MEAL_PLANNING_VIEW = 'mealPlanning';
     const selectedViewFromLocalStorage = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
     const [selectedView, setSelectedView] = useState(selectedViewFromLocalStorage || GROCERY_LIST_VIEW);
-    useEffect(() => {
-        localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, selectedView);
-        if (showClass) handleSelectedViewChange(selectedView);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [selectedView]);
     const isGroceryList = selectedView === GROCERY_LIST_VIEW;
     const isMealPlanning = selectedView === MEAL_PLANNING_VIEW;
 
     const checkLayeredOpenedClassName = () => isDeleteIngredientModalOpen || isEditIngredientModalOpen || isDeleteMealPlanModalOpen || isEditMealPlanModalOpen;
-
-    useEffect(() => {
-        handleModalClass(
-            show || isDeleteIngredientModalOpen || isEditIngredientModalOpen || isDeleteMealPlanModalOpen || isEditMealPlanModalOpen, 
-            '.grocery-list-modal',
-            'grocery-list-modal-overlay'
-        );
-    }, [show, isDeleteIngredientModalOpen, isEditIngredientModalOpen, isDeleteMealPlanModalOpen, isEditMealPlanModalOpen]);
 
     return (
         <>

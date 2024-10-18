@@ -237,12 +237,10 @@
         width: unquote("min(calc(100% - 16px), 600px)");
         padding: 24px 16px;
         &.opened {
-            top: 50vh;
             left: 50%;
             animation: slide-up 1s ease-in-out;
         }
         &.closed {
-            top: 50vh;
             left: -50%;
             animation: slide-down 1s ease-in-out;
         }
@@ -262,6 +260,7 @@
             }
             100% {
                 left: -50%;
+                display: none;
             }
         }
 
