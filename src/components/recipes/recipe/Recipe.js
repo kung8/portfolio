@@ -496,9 +496,21 @@ export const Recipe = ({ match }) => {
                 closeModal={handleAddToGroceryListModalClose}
                 initialType={categorizeRecipeType(item?.category?.[0])}
                 onAdd={async (date, type, mealPlanningDateRange) => {
-                    // Adds to Meal Plan
-                    const newMealPlan = [...mealPlan, { recipeName: item.name, date, type, checked: false, mealPlanningDateRange }];
-                    setMealPlan(newMealPlan);
+                    // Adds if it doesn't already exist inside the meal plan
+                    const hasMealPlanItem = mealPlan.find(meal => 
+                        meal?.recipeName === item.name &&
+                        meal?.date === date &&
+                        meal?.type === type &&
+                        meal?.mealPlanningDateRange?.[0] === mealPlanningDateRange?.[0] &&
+                        meal?.mealPlanningDateRange?.[1] === mealPlanningDateRange?.[1]
+                    );
+                    const newMealPlan = [...mealPlan];
+                    if (!hasMealPlanItem) {
+                        newMealPlan.push({ recipeName: item.name, date, type, checked: false, mealPlanningDateRange });
+                        setMealPlan(newMealPlan);
+                    }
+
+                    // Handle selected view for modal
                     localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, GROCERY_LIST_VIEW);
                     setSelectedView(GROCERY_LIST_VIEW);
 
@@ -510,7 +522,7 @@ export const Recipe = ({ match }) => {
                         }
                         return { ...item, checked: false, date, mealPlanningDateRange };
                     })];
-                    
+
                     Promise.all(newIngredientsToAdd).then((newGroceryList) => {
                         setGroceryList(newGroceryList.flat());
                         updateLocalStorage({ groceryList: newGroceryList.flat(), mealPlan: newMealPlan });
