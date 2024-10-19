@@ -18,6 +18,7 @@ export const AddToGroceryListModal = ({
 
     const [isCalendarOpen, setIsCalendarOpen] = useState(false);
     const [date, setDate] = useState('');
+    const today = dayjs();
 
     const [isStartMealPlanningCalendarOpen, setIsStartMealPlanningCalendarOpen] = useState(false);
     const [isEndMealPlanningCalendarOpen, setIsEndMealPlanningCalendarOpen] = useState(false);
@@ -67,7 +68,7 @@ export const AddToGroceryListModal = ({
                             }}
                             handleDelete={() => setDate('')}
                             hasDate={!!date}
-                            initialDate={new Date(date || mealPlanningDateRange?.[0] || mealPlanningDateRange?.[1])}
+                            initialDate={new Date(date || mealPlanningDateRange?.[0] || mealPlanningDateRange?.[1] || today)}
                             isCalendarOpen={isCalendarOpen}
                             label={date ? dayjs(date).format(READABLE_SHORT_DATE) : '(Optional) Set when you need it by...'}
                         />
@@ -94,7 +95,7 @@ export const AddToGroceryListModal = ({
                                 }}
                                 handleDelete={() => setMealPlanningDateRange([null, mealPlanningDateRange[1]])}
                                 hasDate={!!mealPlanningDateRange?.[0]}
-                                initialDate={new Date(mealPlanningDateRange?.[0] || mealPlanningDateRange?.[1] || date)}
+                                initialDate={new Date(mealPlanningDateRange?.[0] || mealPlanningDateRange?.[1] || date || today)}
                                 isCalendarOpen={isStartMealPlanningCalendarOpen}
                                 label={mealPlanningDateRange?.[0] ?
                                     dayjs(mealPlanningDateRange[0]).format(READABLE_SHORT_DATE) :
@@ -123,7 +124,7 @@ export const AddToGroceryListModal = ({
                                 }}
                                 handleDelete={() => setMealPlanningDateRange([mealPlanningDateRange[0], null])}
                                 hasDate={!!mealPlanningDateRange?.[1]}
-                                initialDate={new Date(mealPlanningDateRange?.[1] || mealPlanningDateRange?.[0] || date)}
+                                initialDate={new Date(mealPlanningDateRange?.[1] || mealPlanningDateRange?.[0] || date || today)}
                                 isCalendarOpen={isEndMealPlanningCalendarOpen}
                                 label={mealPlanningDateRange?.[1] ?
                                     dayjs(mealPlanningDateRange[1]).format(READABLE_SHORT_DATE) :
