@@ -8,7 +8,7 @@ import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { useGroceryList } from '../hooks/use-grocery-list';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
-import { SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
+import { GROCERY_LIST_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 import { categorizeRecipeType } from '../categorize-recipe-type';
 import { RecipeImageModal } from './RecipeImageModal';
 import { handleModalClass } from '../utils/handle-modal-class';
@@ -252,6 +252,8 @@ export const Recipe = ({ match }) => {
         mealPlan,
         setMealPlan,
         updateLocalStorage,
+        selectedView,
+        setSelectedView,
     } = useGroceryList();
 
     return (
@@ -485,6 +487,8 @@ export const Recipe = ({ match }) => {
                 setGroceryList={setGroceryList}
                 setMealPlan={setMealPlan}
                 updateLocalStorage={updateLocalStorage}
+                selectedView={selectedView}
+                setSelectedView={setSelectedView}
             />
 
             <div id="add-to-grocery-list-modal-overlay" className="overlay" onClick={handleAddToGroceryListModalClose} />
@@ -495,7 +499,8 @@ export const Recipe = ({ match }) => {
                     // Adds to Meal Plan
                     const newMealPlan = [...mealPlan, { recipeName: item.name, date, type, checked: false, mealPlanningDateRange }];
                     setMealPlan(newMealPlan);
-                    localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, 'groceryList');
+                    localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, GROCERY_LIST_VIEW);
+                    setSelectedView(GROCERY_LIST_VIEW);
 
                     // Adds to Grocery List
                     const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {

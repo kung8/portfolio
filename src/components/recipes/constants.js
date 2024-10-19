@@ -5,6 +5,9 @@ export const MEAL_PLAN_LOCAL_STORAGE_KEY = 'mealPlan';
 export const MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY = 'mealPlanSortBy';
 export const SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY = 'selectedModalView';
 
+export const GROCERY_LIST_VIEW = 'groceryList';
+export const MEAL_PLANNING_VIEW = 'mealPlanning';
+
 // DATE FORMATS
 export const DATE_FORMAT = 'M/D/YYYY';
 export const READABLE_SHORT_DATE = 'MMM D';

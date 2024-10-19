@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import closeBtn from '../../../Assets/x.png';
 import { Dropdown } from '../../dropdown/dropdown';
+import { GROCERY_LIST_VIEW, MEAL_PLANNING_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 
 export const GroceryListModalHeader = ({ 
     handleClose,
@@ -10,8 +11,8 @@ export const GroceryListModalHeader = ({
     const [showViewOptions, setShowViewOptions] = useState(false);
 
     const viewOptions = [
-        { id: 'groceryList', label: 'Grocery List' },
-        { id: 'mealPlanning', label: 'Meal Planning' },
+        { id: GROCERY_LIST_VIEW, label: 'Grocery List' },
+        { id: MEAL_PLANNING_VIEW, label: 'Meal Planning' },
     ];
 
     return (
@@ -24,6 +25,7 @@ export const GroceryListModalHeader = ({
                         key={id}
                         onClick={() => {
                             setSelectedView(id);
+                            localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, id);
                             setShowViewOptions(false);
                         }}
                     >{label}</li>

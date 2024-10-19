@@ -92,6 +92,8 @@ export const Recipes = ({ history }) => {
         mealPlan,
         setMealPlan,
         updateLocalStorage,
+        selectedView,
+        setSelectedView,
     } = useGroceryList();
 
     // filters modal
@@ -168,6 +170,8 @@ export const Recipes = ({ history }) => {
                 setGroceryList={setGroceryList}
                 setMealPlan={setMealPlan}
                 updateLocalStorage={updateLocalStorage}
+                selectedView={selectedView}
+                setSelectedView={setSelectedView}
             />
         </NonDashboardPage>
     )

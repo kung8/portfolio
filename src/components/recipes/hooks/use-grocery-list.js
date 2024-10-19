@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useCategoryName } from './use-category-name';
-import { GROCERY_LIST_LOCAL_STORAGE_KEY, MEAL_PLAN_LOCAL_STORAGE_KEY } from '../constants';
+import { GROCERY_LIST_LOCAL_STORAGE_KEY, MEAL_PLAN_LOCAL_STORAGE_KEY, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, GROCERY_LIST_VIEW } from '../constants';
 import { handleModalClass } from '../utils/handle-modal-class';
 
 export const useGroceryList = () => {
@@ -47,6 +47,11 @@ export const useGroceryList = () => {
 
     const { handleClose, handleOpen } = handleModalClass('.grocery-list-modal', 'grocery-list-modal-overlay');
 
+    const getSelectedViewFromLocalStorage = () => {
+        return localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY) || GROCERY_LIST_VIEW;
+    }
+    const [selectedView, setSelectedView] = useState(getSelectedViewFromLocalStorage());
+
     return {
         show,
         setShow,
@@ -59,6 +64,8 @@ export const useGroceryList = () => {
         updateLocalStorage: ({ groceryList, mealPlan }) => {
             if (groceryList) localStorage.setItem(GROCERY_LIST_LOCAL_STORAGE_KEY, JSON.stringify(groceryList));
             if (mealPlan) localStorage.setItem(MEAL_PLAN_LOCAL_STORAGE_KEY, JSON.stringify(mealPlan));
-        }
+        }, 
+        selectedView,
+        setSelectedView,
     };
 }

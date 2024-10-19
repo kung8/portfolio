@@ -9,7 +9,8 @@ import { MealPlanningModalContent } from './MealPlanningModalContent';
 import {
     GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY,
     MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY,
-    SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY,
+    GROCERY_LIST_VIEW,
+    MEAL_PLANNING_VIEW,
 } from '../constants';
 
 export const GroceryListModal = ({
@@ -19,6 +20,8 @@ export const GroceryListModal = ({
     setGroceryList,
     setMealPlan,
     updateLocalStorage,
+    selectedView,
+    setSelectedView,
 }) => {
     // INGREDIENTS
     const [isDeleteIngredientModalOpen, setIsDeleteIngredientModalOpen] = useState(false);
@@ -108,10 +111,6 @@ export const GroceryListModal = ({
 
     // SHARED
     const [deleteType, setDeleteType] = useState(null);
-    const GROCERY_LIST_VIEW = 'groceryList';
-    const MEAL_PLANNING_VIEW = 'mealPlanning';
-    const selectedViewFromLocalStorage = localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY);
-    const [selectedView, setSelectedView] = useState(selectedViewFromLocalStorage || GROCERY_LIST_VIEW);
     const isGroceryList = selectedView === GROCERY_LIST_VIEW;
     const isMealPlanning = selectedView === MEAL_PLANNING_VIEW;
 
