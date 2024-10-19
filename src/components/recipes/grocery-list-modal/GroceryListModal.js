@@ -18,6 +18,7 @@ export const GroceryListModal = ({
     mealPlan,
     setGroceryList,
     setMealPlan,
+    updateLocalStorage,
 }) => {
     // INGREDIENTS
     const [isDeleteIngredientModalOpen, setIsDeleteIngredientModalOpen] = useState(false);
@@ -49,6 +50,7 @@ export const GroceryListModal = ({
                 const updatedItem = { ...originalItem, ...newItemValue };
                 newGroceryList[foundItem] = updatedItem;
             }
+            updateLocalStorage({ groceryList: newGroceryList })
             return newGroceryList;
         });
     }
@@ -79,7 +81,11 @@ export const GroceryListModal = ({
 
     const updateMeal = (originalItem, newItemValue) => {
         if (!originalItem) {
-            setMealPlan(prev => [...prev, newItemValue]);
+            setMealPlan(prev => {
+                const newMealPlan = [...prev, newItemValue];
+                updateLocalStorage({ mealPlan: newMealPlan });
+                return newMealPlan;
+            });
             return;
         }
 
@@ -92,6 +98,7 @@ export const GroceryListModal = ({
             } else {
                 newMealPlan.push(newItemValue);
             }
+            updateLocalStorage({ mealPlan: newMealPlan });
             return newMealPlan;
         });
     }
@@ -115,6 +122,11 @@ export const GroceryListModal = ({
             <div className="grocery-list-modal-container">
                 <div
                     id="grocery-list-modal-overlay"
+                    className="overlay"
+                    onClick={checkLayeredOpenedClassName() ? undefined : handleClose}
+                />
+                <div
+                    id="grocery-list-modal-action-overlay"
                     className={`overlay ${checkLayeredOpenedClassName() ? 'layered-opened' : ''}`}
                     onClick={checkLayeredOpenedClassName() ?
                         () => {
@@ -142,7 +154,8 @@ export const GroceryListModal = ({
                                 setOriginalItemToEdit,
                                 setItemToEdit,
                                 setDeleteType,
-                                updateItem
+                                updateItem,
+                                updateLocalStorage,
                             }}
                         />
                     )}
@@ -158,14 +171,15 @@ export const GroceryListModal = ({
                                 setOriginalMealToEdit,
                                 setMealToEdit,
                                 setDeleteType,
-                                updateMeal
+                                updateMeal,
+                                updateLocalStorage,
                             }}
                         />
                     )}
                 </div>
             </div>
             {isGroceryList && isDeleteIngredientModalOpen && (
-                <DeleteGroceryListModal {...{ closeDeleteIngredientModal, deleteType, setGroceryList }} />
+                <DeleteGroceryListModal {...{ closeDeleteIngredientModal, deleteType, setGroceryList, updateLocalStorage }} />
             )}
             {isGroceryList && isEditIngredientModalOpen && originalItemToEdit && (
                 <EditGroceryListItemModal
@@ -192,6 +206,7 @@ export const GroceryListModal = ({
                                 }
                                 return item;
                             });
+                            updateLocalStorage({ groceryList: newGroceryList });
                             return newGroceryList;
                         });
                     }}
@@ -203,7 +218,11 @@ export const GroceryListModal = ({
                         const originalDate = originalItem?.date;
 
                         if (!originalStartDate && !originalEndDate && !originalDate) {
-                            setMealPlan(prev => [...prev, newMeal]);
+                            setMealPlan(prev => {
+                                const newMealPlan = [...prev, newMeal];
+                                updateLocalStorage({ mealPlan: newMealPlan });
+                                return newMealPlan;
+                            });
                         }
                     }}
 
@@ -211,20 +230,24 @@ export const GroceryListModal = ({
                     updateMealPlan={(originalItem, newItem) => {
                         const originalItemStartingDate = originalItem?.mealPlanningDateRange?.[0];
                         const originalItemEndingDate = originalItem?.mealPlanningDateRange?.[1];
-                        setMealPlan(prev => prev.map((meal => {
-                            const startMealDate = meal?.mealPlanningDateRange?.[0];
-                            const endMealDate = meal?.mealPlanningDateRange?.[1];
+                        setMealPlan(prev => {
+                            const newMealPlan = prev.map((meal => {
+                                const startMealDate = meal?.mealPlanningDateRange?.[0];
+                                const endMealDate = meal?.mealPlanningDateRange?.[1];
 
-                            if (startMealDate === originalItemStartingDate && endMealDate === originalItemEndingDate) {
-                                return { ...meal, mealPlanningDateRange: newItem.mealPlanningDateRange, date: newItem.date, recipeName: newItem.recipeName };
-                            }
-                            return meal;
-                        })));
+                                if (startMealDate === originalItemStartingDate && endMealDate === originalItemEndingDate) {
+                                    return { ...meal, mealPlanningDateRange: newItem.mealPlanningDateRange, date: newItem.date, recipeName: newItem.recipeName };
+                                }
+                                return meal;
+                            }));
+                            updateLocalStorage({ mealPlan: newMealPlan });
+                            return newMealPlan;
+                        });
                     }}
                 />
             )}
             {isMealPlanning && isDeleteMealPlanModalOpen && (
-                <DeleteMealPlanModal {...{ closeDeleteMealPlanModal, deleteType, setMealPlan }} />
+                <DeleteMealPlanModal {...{ closeDeleteMealPlanModal, deleteType, setMealPlan, updateLocalStorage }} />
             )}
             {isMealPlanning && isEditMealPlanModalOpen && (
                 <EditMealPlanModal
@@ -264,6 +287,7 @@ export const GroceryListModal = ({
                                 }
                                 return item;
                             });
+                            updateLocalStorage({ groceryList: newGroceryList });
                             return newGroceryList;
                         });
                     }}

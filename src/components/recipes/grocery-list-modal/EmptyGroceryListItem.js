@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useCategoryName } from '../hooks/use-category-name';
 
-export const EmptyGroceryListItem = ({ setGroceryList }) => {
+export const EmptyGroceryListItem = ({ setGroceryList, updateLocalStorage }) => {
     const [inputValue, setInputValue] = useState('');
     const [checked, setChecked] = useState(false);
     const { getCategoryName } = useCategoryName();
@@ -17,7 +17,11 @@ export const EmptyGroceryListItem = ({ setGroceryList }) => {
                 onKeyDown={(e) => {
                     if (e.key === 'Enter' && inputValue) {
                         const category = getCategoryName(inputValue);
-                        setGroceryList(prev => [...prev, { name: inputValue, index: prev.length, checked, category }]);
+                        setGroceryList(prev => {
+                            const newGroceryList = [...prev, { name: inputValue, index: prev.length, checked, category }]
+                            updateLocalStorage({ groceryList: newGroceryList });
+                            return newGroceryList;
+                        });
                         setInputValue('');
                         setChecked(false);
                     }

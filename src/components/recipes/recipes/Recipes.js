@@ -90,7 +90,8 @@ export const Recipes = ({ history }) => {
         groceryList,
         setGroceryList,
         mealPlan,
-        setMealPlan
+        setMealPlan,
+        updateLocalStorage,
     } = useGroceryList();
 
     // filters modal
@@ -159,10 +160,14 @@ export const Recipes = ({ history }) => {
 
             <GroceryListModal
                 groceryList={groceryList}
-                handleClose={closeGroceryListModal}
+                handleClose={() => {
+                    closeGroceryListModal();
+                    setShowGroceryListModal(false);
+                }}
                 mealPlan={mealPlan}
                 setGroceryList={setGroceryList}
                 setMealPlan={setMealPlan}
+                updateLocalStorage={updateLocalStorage}
             />
         </NonDashboardPage>
     )

@@ -5,6 +5,8 @@ import { handleModalClass } from '../utils/handle-modal-class';
 
 export const useGroceryList = () => {
     const [show, setShow] = useState(false);
+
+    // GROCERY LIST
     const [groceryList, setGroceryList] = useState([]);
     const { getCategoryName } = useCategoryName();
 
@@ -21,13 +23,6 @@ export const useGroceryList = () => {
         return [];
     }
 
-    useEffect(() => {
-        localStorage.setItem(GROCERY_LIST_LOCAL_STORAGE_KEY, JSON.stringify(groceryList));
-    }, [groceryList]);
-
-
-
-
 
     // MEAL PLANNING
     const [mealPlan, setMealPlan] = useState([]);
@@ -38,13 +33,6 @@ export const useGroceryList = () => {
         }
         return [];
     }
-
-    useEffect(() => {
-        localStorage.setItem(MEAL_PLAN_LOCAL_STORAGE_KEY, JSON.stringify(mealPlan));
-    }, [mealPlan]);
-
-
-
 
 
     // SHARED
@@ -57,10 +45,6 @@ export const useGroceryList = () => {
         // eslint-disable-next-line
     }, []);
 
-
-
-
-
     const { handleClose, handleOpen } = handleModalClass('.grocery-list-modal', 'grocery-list-modal-overlay');
 
     return {
@@ -72,5 +56,9 @@ export const useGroceryList = () => {
         setMealPlan,
         handleClose,
         handleOpen,
+        updateLocalStorage: ({ groceryList, mealPlan }) => {
+            if (groceryList) localStorage.setItem(GROCERY_LIST_LOCAL_STORAGE_KEY, JSON.stringify(groceryList));
+            if (mealPlan) localStorage.setItem(MEAL_PLAN_LOCAL_STORAGE_KEY, JSON.stringify(mealPlan));
+        }
     };
 }

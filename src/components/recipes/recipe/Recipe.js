@@ -250,11 +250,9 @@ export const Recipe = ({ match }) => {
         groceryList,
         setGroceryList,
         mealPlan,
-        setMealPlan
+        setMealPlan,
+        updateLocalStorage,
     } = useGroceryList();
-
-
-
 
     return (
         <NonDashboardPage mainClassName={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
@@ -479,10 +477,14 @@ export const Recipe = ({ match }) => {
             />
             <GroceryListModal
                 groceryList={groceryList}
-                handleClose={closeGroceryListModal}
+                handleClose={() => {
+                    closeGroceryListModal();
+                    setShowGroceryListModal(false);
+                }}
                 mealPlan={mealPlan}
                 setGroceryList={setGroceryList}
                 setMealPlan={setMealPlan}
+                updateLocalStorage={updateLocalStorage}
             />
 
             <div id="add-to-grocery-list-modal-overlay" className="overlay" onClick={handleAddToGroceryListModalClose} />
@@ -503,8 +505,10 @@ export const Recipe = ({ match }) => {
                         }
                         return { ...item, checked: false, date, mealPlanningDateRange };
                     })];
-                    Promise.all(newIngredientsToAdd).then((newIngredientsToAdd) => {
-                        setGroceryList(newIngredientsToAdd.flat());
+                    
+                    Promise.all(newIngredientsToAdd).then((newGroceryList) => {
+                        setGroceryList(newGroceryList.flat());
+                        updateLocalStorage({ groceryList: newGroceryList.flat(), mealPlan: newMealPlan });
                         openGroceryListModal();
                         setSelectedIngredients([]);
                     });

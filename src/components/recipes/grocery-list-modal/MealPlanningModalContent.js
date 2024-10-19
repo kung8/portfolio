@@ -14,7 +14,8 @@ export const MealPlanningModalContent = ({
     setOriginalMealToEdit,
     setMealToEdit,
     setDeleteType,
-    updateMeal
+    updateMeal,
+    updateLocalStorage,
 }) => {
     const getDays = () => {
         // get only a month out
@@ -134,6 +135,7 @@ export const MealPlanningModalContent = ({
     const removeMenuItem = (index) => {
         const newMealPlan = [...indexedMealPlan].filter(item => item.index !== index);
         setMealPlan(newMealPlan);
+        updateLocalStorage({ mealPlan: newMealPlan });
     }
 
     const openDeleteModal = (type) => {

@@ -15,7 +15,8 @@ export const GroceryListModalContent = ({
     setOriginalItemToEdit,
     setItemToEdit,
     setDeleteType,
-    updateItem
+    updateItem,
+    updateLocalStorage,
 }) => {
 
     // Group ingredients by category
@@ -66,6 +67,7 @@ export const GroceryListModalContent = ({
     const removeItem = (index) => {
         const newGroceryList = [...groceryList].filter(ingredient => ingredient.index !== index);
         setGroceryList(newGroceryList);
+        updateLocalStorage({ groceryList: newGroceryList });
     }
 
     const openDeleteModal = (type) => {
@@ -82,7 +84,7 @@ export const GroceryListModalContent = ({
     return (
         <>
             <div className="grocery-list">
-                <EmptyGroceryListItem setGroceryList={setGroceryList} />
+                <EmptyGroceryListItem setGroceryList={setGroceryList} updateLocalStorage={updateLocalStorage} />
                 {displayedList.map(([category, ingredients]) => (
                     <div key={category} className="category-ingredient-container">
                         <h6 className={`${sortBy === 'date' ? 'ingredient-date' : 'ingredient-category'}`}>{category}</h6>

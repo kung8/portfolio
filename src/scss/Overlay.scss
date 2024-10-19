@@ -32,6 +32,7 @@
 
     &.layered-opened {
         z-index: 4;
+        display: block;
     }
 
     @media only screen and (hover: none) and (pointer: coarse) {
