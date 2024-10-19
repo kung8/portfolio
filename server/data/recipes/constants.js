@@ -124,6 +124,7 @@ const SECTIONS = {
     SOUP: 'Soup',
     MEAT: 'Meat',
     EGGS: 'Eggs',
+    ASSEMBLY: 'Assembly',
 };
 
 const TYPES = {
@@ -165,6 +166,7 @@ const TYPES = {
     MUFFIN: 'Muffin',
     BISCUIT: 'Biscuit',
     SCONES: 'Scones',
+    PASTRY: 'Pastry',
 }
 
 module.exports = {
