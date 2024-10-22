@@ -1,4 +1,5 @@
-const padThai = '../assets/Products/pad-thai.jpeg';
+const aerial = '../assets/Products/pad-thai-aerial.jpeg';
+const plated = '../assets/Products/pad-thai-plated.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 const {
     UNSALTED_BUTTER,
@@ -24,7 +25,7 @@ const {
 module.exports = {
     cardName: 'Pad Thai',
     name: 'Thai Pad Thai',
-    img: padThai,
+    img: aerial,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -74,6 +75,6 @@ module.exports = {
         { step: 'While noodles are cooking, you can roast the peanuts in a pan and set aside for later.', type: SECTIONS.MAIN },
         { step: 'Beat eggs and cook eggs. Scramble and break into small pieces.', type: SECTIONS.MAIN },
         { step: 'Mix together noodles, chicken, vegetables, eggs, pad thai sauce, and some of the peanuts in a pan.', type: SECTIONS.MAIN },
-        { step: 'Serve and garnish with green onion, peanuts, bean sprout, cilantro, and lime juice. Enjoy this majestic Thai dish!', type: SECTIONS.MAIN },
+        { step: 'Serve and garnish with green onion, peanuts, bean sprout, cilantro, and lime juice. Enjoy this majestic Thai dish!', type: SECTIONS.MAIN, img: plated },
     ]
 };
