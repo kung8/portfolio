@@ -9,6 +9,10 @@ const {
     SALT,
     BLACK_PEPPER,
     HOAGIE_BREAD,
+    BEEF_RIBEYE_STEAK,
+    LARGE_YELLOW_ONION,
+    MUSHROOMS,
+    PROVOLONE_CHEESE,
 } = require('./ingredients');
 
 module.exports = {
@@ -21,18 +25,22 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SANDWICH],
-    yields: '8 servings',
-    prepTime: '10 m',
-    cookTime: '20 m',
+    yields: '6 servings',
+    prepTime: '20 m',
+    cookTime: '25 m',
+    websites: [
+        { label: 'Philly Cheesesteak', link: 'https://momsdish.com/easy-philly-cheesesteak' }
+    ],
     ingredients: [
-        { ...BEEF, amount: '1 lb', additionalDetails: 'thinly sliced', optional: false },
-        { ...OLIVE_OIL, amount: '1 tsp', additionalDetails: '', optional: false },
-        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', optional: false },
-        { ...RED_BELL_PEPPERS, amount: '3', additionalDetails: 'sliced', optional: false },
-        { ...MOZZARELLA_CHEESE, amount: '16 slices', additionalDetails: '', optional: false },
-        { ...SALT, amount: '', additionalDetails: 'minced', optional: false },
-        { ...BLACK_PEPPER, amount: '', additionalDetails: 'minced', optional: false },
-        { ...HOAGIE_BREAD, amount: '8', additionalDetails: '', optional: false },
+        { ...BEEF_RIBEYE_STEAK, amount: '2 lb', additionalDetails: 'thin strips', optional: false },
+        { ...RED_BELL_PEPPERS, amount: '2', additionalDetails: 'sliced strips', optional: false },
+        { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'sliced strips', optional: false },
+        { ...MUSHROOMS, amount: '1 lb', additionalDetails: 'sliced', optional: true },
+        { ...PROVOLONE_CHEESE, amount: '1 lb', additionalDetails: '', optional: false },
+        { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', optional: false },
+        { ...SALT, amount: '1 Tbsp', additionalDetails: '', optional: false },
+        { ...BLACK_PEPPER, amount: '1 tsp', additionalDetails: '', optional: false },
+        { ...HOAGIE_BREAD, amount: '6', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },
@@ -45,10 +53,12 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        { step: 'Heat pan over medium-high heat and place slices of beef in pan. Cook until close to brown. Set aside.', type: SECTIONS.MAIN },
-        { step: 'Add oil to pan over medium-high heat.', type: SECTIONS.MAIN },
-        { step: 'Add onions and bell pepper slices into pan and caramelize.', type: SECTIONS.MAIN },
-        { step: 'Open up hoagie bread and layer with meat, cheese and vegetables to your hearts content.', type: SECTIONS.MAIN },
+        { step: 'Over high heat, heat oil in pan.', type: SECTIONS.MAIN },
+        { step: 'Add onions, bell peppers and mushrooms into pan and caramelize. Saute until browned and set aside.', type: SECTIONS.MAIN },
+        { step: 'In same pan, add beef and season with salt and pepper. Cook until beef is cooked and Set aside.', type: SECTIONS.MAIN },
+        { step: 'Re-add the veggies to pan and stir.', type: SECTIONS.MAIN },
+        { step: 'Layer cheese slices and melt (about a minute).', type: SECTIONS.MAIN },
+        { step: 'Optionally toast the buns. Open up hoagie bread and layer with meat, cheese and vegetables to your hearts content.', type: SECTIONS.MAIN },
         { step: 'Enjoy the taste of freedom!', type: SECTIONS.MAIN },
     ],
 };
