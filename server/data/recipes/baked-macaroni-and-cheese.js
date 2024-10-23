@@ -17,7 +17,7 @@ module.exports = {
     websites: [
         { label: 'Macaroni and Cheese', link: 'https://www.momontimeout.com/best-homemade-baked-mac-and-cheese-recipe/' }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
         { ...ELBOW_MACARONI, amount: '16 oz', additionalDetails: '', section: SECTIONS.NOODLES },
         { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.NOODLES },
@@ -60,13 +60,13 @@ module.exports = {
         { step: 'Whisk for about 2 minutes.', type: SECTIONS.SAUCE },
         { step: 'Add salt and pepper.', type: SECTIONS.SAUCE },
         { step: 'Add 2 cups of the mixed cheeses and mix. Repeat with another 2 cups. Sauce should be thick.', type: SECTIONS.SAUCE },
-        { step: 'Mix together the sauce and the pasta until the pasta is coated.', type: SECTIONS.MAIN },
-        { step: 'Pour half of the macaroni and cheese into the baking dish.', type: SECTIONS.MAIN },
-        { step: 'Add the last 2 cups of cheese on top of the mac and cheese.', type: SECTIONS.MAIN },
-        { step: 'Add the last of the mac and cheese.', type: SECTIONS.MAIN },
-        { step: 'In a small bowl, combine together panko breadcrumbs, parmesan cheese, paprika and melted butter.', type: SECTIONS.MAIN },
-        { step: 'Sprinkle this mixture over the mac and cheese.', type: SECTIONS.MAIN },
-        { step: 'Bake until bubbly and golden brown (about 30 minutes).', type: SECTIONS.MAIN },
-        { step: 'Serve this warm and enjoy this comfort food.', type: SECTIONS.MAIN },
+        { step: 'Mix together the sauce and the pasta until the pasta is coated.', type: SECTIONS.ASSEMBLY },
+        { step: 'Pour half of the macaroni and cheese into the baking dish.', type: SECTIONS.ASSEMBLY },
+        { step: 'Add the last 2 cups of cheese on top of the mac and cheese.', type: SECTIONS.ASSEMBLY },
+        { step: 'Add the last of the mac and cheese.', type: SECTIONS.ASSEMBLY },
+        { step: 'In a small bowl, combine together panko breadcrumbs, parmesan cheese, paprika and melted butter.', type: SECTIONS.ASSEMBLY },
+        { step: 'Sprinkle this mixture over the mac and cheese.', type: SECTIONS.ASSEMBLY },
+        { step: 'Bake until bubbly and golden brown (about 30 minutes).', type: SECTIONS.ASSEMBLY },
+        { step: 'Serve this warm and enjoy this comfort food.', type: SECTIONS.SERVE },
     ]
 };
