@@ -7,7 +7,7 @@ module.exports = {
     name: 'Baked Macaroni and Cheese',
     img: '',
     available: true,
-    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BOIL, METHODS.BAKE],
     type: [TYPES.CASSEROLE, TYPES.PASTA],
