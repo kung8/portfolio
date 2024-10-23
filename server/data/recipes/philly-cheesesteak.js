@@ -1,11 +1,8 @@
 const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 const {
-    BEEF,
     OLIVE_OIL,
-    MEDIUM_YELLOW_ONION,
     RED_BELL_PEPPERS,
-    MOZZARELLA_CHEESE,
     SALT,
     BLACK_PEPPER,
     HOAGIE_BREAD,
