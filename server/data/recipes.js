@@ -4,6 +4,7 @@ const applePie = require("./recipes/apple-pie");
 const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
 const bakedChicken = require("./recipes/baked-chicken");
 const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
+const bakedMacaroniAndCheese = require("./recipes/baked-macaroni-and-cheese");
 const bananaBread = require("./recipes/banana-bread");
 const basilPesto = require("./recipes/basil-pesto");
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
@@ -177,6 +178,7 @@ const recipes = [
     sourdoughStarter,
     sourdoughBread,
     bbqPulledPorkAndFixins,
+    bakedMacaroniAndCheese,
     bbqChickenWings,
     malaysianSatay,
     paoDeQueijo,

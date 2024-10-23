@@ -1,0 +1,72 @@
+// const example = '../assets/Products/example.jpeg';
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { ELBOW_MACARONI, OLIVE_OIL, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHOLE_MILK, HEAVY_CREAM, CHEDDAR_CHEESE, BLACK_PEPPER, SALT, PANKO_BREADCRUMBS, PARMESAN_CHEESE, SMOKED_PAPRIKA, GRUYERE_CHEESE } = require('./ingredients');
+
+module.exports = {
+    cardName: 'Baked Mac and Cheese',
+    name: 'Baked Macaroni and Cheese',
+    img: '',
+    available: true,
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BOIL, METHODS.BAKE],
+    type: [TYPES.CASSEROLE, TYPES.PASTA],
+    yields: '12 servings',
+    prepTime: '25 m',
+    cookTime: '30 m',
+    websites: [
+        { label: 'Macaroni and Cheese', link: 'https://www.momontimeout.com/best-homemade-baked-mac-and-cheese-recipe/' }
+    ],
+    separated: false,
+    ingredients: [
+        { ...ELBOW_MACARONI, amount: '16 oz', additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...UNSALTED_BUTTER, amount: '6 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...ALL_PURPOSE_FLOUR, amount: '1/3 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHOLE_MILK, amount: '3 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HEAVY_CREAM, amount: '1 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CHEDDAR_CHEESE, amount: '4 c', additionalDetails: 'shredded', section: SECTIONS.SAUCE },
+        { ...GRUYERE_CHEESE, amount: '2 c', additionalDetails: 'shredded', section: SECTIONS.SAUCE },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
+        { ...PANKO_BREADCRUMBS, amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PARMESAN_CHEESE, amount: '1/2 c', additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...SMOKED_PAPRIKA, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+    ],
+    appliances: [
+        { name: 'oven' },
+        { name: 'stove' },
+    ],
+    supplies: [
+        { name: 'cooking oil spray' },
+        { name: 'large pot' },
+        { name: 'colander' },
+        { name: '2 mixing bowl' },
+        { name: 'small bowl' },
+    ],
+    directions: [
+        { step: 'Preheat the oven to 350ºF.', type: SECTIONS.MAIN },
+        { step: 'Light spray some cooking oil spray in a baking dish.', type: SECTIONS.MAIN },
+        { step: 'In a large pot, boil water.', type: SECTIONS.NOODLES },
+        { step: 'Cook pasta until it is cooked to al dente (follow the instructions on the package).', type: SECTIONS.NOODLES },
+        { step: 'Drain the pasta in a colander and place in a bowl.', type: SECTIONS.NOODLES },
+        { step: 'Drizzle with olive oil and mix until pasta is coated. Set aside.', type: SECTIONS.NOODLES },
+        { step: 'In a mixing bowl, combine shredded cheese and set aside.', type: SECTIONS.SAUCE },
+        { step: 'Over medium heat, melt butter in a large pot.', type: SECTIONS.SAUCE },
+        { step: 'Whisk flour until it becomes golden (about 1 minute).', type: SECTIONS.SAUCE },
+        { step: 'Add milk and heavy cream and whisk until smooth.', type: SECTIONS.SAUCE },
+        { step: 'Continue to whisk until it bubbles.', type: SECTIONS.SAUCE },
+        { step: 'Whisk for about 2 minutes.', type: SECTIONS.SAUCE },
+        { step: 'Add salt and pepper.', type: SECTIONS.SAUCE },
+        { step: 'Add 2 cups of the mixed cheeses and mix. Repeat with another 2 cups. Sauce should be thick.', type: SECTIONS.SAUCE },
+        { step: 'Mix together the sauce and the pasta until the pasta is coated.', type: SECTIONS.MAIN },
+        { step: 'Pour half of the macaroni and cheese into the baking dish.', type: SECTIONS.MAIN },
+        { step: 'Add the last 2 cups of cheese on top of the mac and cheese.', type: SECTIONS.MAIN },
+        { step: 'Add the last of the mac and cheese.', type: SECTIONS.MAIN },
+        { step: 'In a small bowl, combine together panko breadcrumbs, parmesan cheese, paprika and melted butter.', type: SECTIONS.MAIN },
+        { step: 'Sprinkle this mixture over the mac and cheese.', type: SECTIONS.MAIN },
+        { step: 'Bake until bubbly and golden brown (about 30 minutes).', type: SECTIONS.MAIN },
+        { step: 'Serve this warm and enjoy this comfort food.', type: SECTIONS.MAIN },
+    ]
+};
