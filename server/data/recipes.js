@@ -57,6 +57,7 @@ const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
 const graveyardDessert = require("./recipes/graveyard-dessert");
 const greenBeanAlmondine = require("./recipes/green-bean-almondine");
+const guacamole = require("./recipes/guacamole");
 const hamburger = require("./recipes/hamburger");
 const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
 const hawaiianHaystacks = require("./recipes/hawaiian-haystacks");
@@ -220,6 +221,7 @@ const recipes = [
     parfait,
     smoothie,
     antsOnALog,
+    guacamole,
     bananaBread,
     cheesecake,
     carrotCake,

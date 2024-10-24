@@ -9,6 +9,8 @@ const CATEGORIES = {
     DRINK: 'Drink',
     SAUCE: 'Sauce',
     TOPPING: 'Topping',
+    DRESSING: 'Dressing',
+    DIP: 'Dip',
 };
 
 const DIET = {
@@ -167,6 +169,7 @@ const TYPES = {
     BISCUIT: 'Biscuit',
     SCONES: 'Scones',
     PASTRY: 'Pastry',
+    DIP: 'Dip',
 }
 
 module.exports = {
