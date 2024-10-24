@@ -231,7 +231,6 @@ export const GroceryListModal = ({
                     updateSharedIngredients={(originalItem, newItem) => {
                         const originalItemStartingDate = originalItem?.mealPlanningDateRange?.[0];
                         const originalItemEndingDate = originalItem?.mealPlanningDateRange?.[1];
-                        const originalDate = originalItem?.date;
 
                         // check to see if there are any additional ingredients for the same recipe name, date, and mealPlanningDateRange
                         const hasExistingGroceryListItem = groceryList.find(item =>
@@ -239,7 +238,6 @@ export const GroceryListModal = ({
                             !!item.recipeName && // don't update the ones that don't have a recipe name
                             originalItemStartingDate === item?.mealPlanningDateRange?.[0] &&
                             originalItemEndingDate === item?.mealPlanningDateRange?.[1] &&
-                            originalDate === item.date &&
                             originalItem.name !== item.name
                         );
                         if (hasExistingGroceryListItem) {
@@ -249,13 +247,21 @@ export const GroceryListModal = ({
                         }
                     }}
 
-                    // only add if the original item didn't have a mealPlanningDateRange and date
+                    // only add if the original item didn't have a mealPlanningDateRange and date and ONLY if the meal plan doesn't already have the meal (doesn't matter about the purchase date)
                     addMealPlan={(originalItem, newMeal) => {
                         const originalStartDate = originalItem?.mealPlanningDateRange?.[0];
                         const originalEndDate = originalItem?.mealPlanningDateRange?.[1];
                         const originalDate = originalItem?.date;
 
-                        if (!originalStartDate && !originalEndDate && !originalDate) {
+                        const hasExistingMealPlan = mealPlan.find(meal => {
+                            const startMealDate = meal?.mealPlanningDateRange?.[0];
+                            const endMealDate = meal?.mealPlanningDateRange?.[1];
+                            const newMealStartMealDate = newMeal?.mealPlanningDateRange?.[0];
+                            const newMealEndMealDate = newMeal?.mealPlanningDateRange?.[1];                            
+                            return startMealDate === newMealStartMealDate && endMealDate === newMealEndMealDate && meal.recipeName === newMeal.recipeName;
+                        });                        
+
+                        if (!originalStartDate && !originalEndDate && !originalDate && !hasExistingMealPlan) {
                             setMealPlan(prev => {
                                 const newMealPlan = [...prev, newMeal];
                                 updateLocalStorage({ mealPlan: newMealPlan });
