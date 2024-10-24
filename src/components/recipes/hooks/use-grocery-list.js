@@ -10,15 +10,35 @@ export const useGroceryList = () => {
     const [groceryList, setGroceryList] = useState([]);
     const { getCategoryName } = useCategoryName();
 
+    const generateUUID = () => {
+        return Math.random().toString(36).substring(2) + (new Date()).getTime().toString(36);
+    }
+
     const getGroceryListFromLocalStorage = () => {
+        let changed = false;
         const groceryList = localStorage.getItem(GROCERY_LIST_LOCAL_STORAGE_KEY);
         if (groceryList) {
-            return JSON.parse(groceryList).map(ingredient => {
+            const list = JSON.parse(groceryList).map(ingredient => {
                 if (!ingredient.category) {
                     ingredient.category = getCategoryName(ingredient.name);
                 }
+                // add a unique id to each ingredient item if it doesn't already have one
+                if (!ingredient.id) {
+                    changed = true;
+                    ingredient.id = generateUUID();
+                }
+                // keep this in here to clean up the index property for existing ingredient items
+                if (ingredient.index !== undefined && ingredient.index !== null) {
+                    delete ingredient.index;
+                    changed = true;
+                }
+
                 return ingredient;
             });
+            if (changed) {
+                localStorage.setItem(GROCERY_LIST_LOCAL_STORAGE_KEY, JSON.stringify(list));
+            }
+            return list;
         }
         return [];
     }
@@ -27,9 +47,27 @@ export const useGroceryList = () => {
     // MEAL PLANNING
     const [mealPlan, setMealPlan] = useState([]);
     const getMealPlanFromLocalStorage = () => {
+        let changed = false;
         const mealPlan = localStorage.getItem(MEAL_PLAN_LOCAL_STORAGE_KEY);
         if (mealPlan) {
-            return JSON.parse(mealPlan);
+            const parsed = JSON.parse(mealPlan);
+            const list = parsed.map(meal => {
+                // add a unique id to each meal plan item if it doesn't already have one
+                if (!meal.id) {
+                    meal.id = generateUUID();
+                    changed = true;
+                }
+                // keep this in here to clean up the index property for existing meal plan items
+                if (meal.index !== undefined && meal.index !== null) {
+                    delete meal.index;
+                    changed = true;
+                }
+                return meal;
+            });
+            if (changed) {
+                localStorage.setItem(MEAL_PLAN_LOCAL_STORAGE_KEY, JSON.stringify(list));
+            }
+            return list;
         }
         return [];
     }
@@ -59,12 +97,13 @@ export const useGroceryList = () => {
         setGroceryList,
         mealPlan,
         setMealPlan,
+        generateUUID,
         handleClose,
         handleOpen,
         updateLocalStorage: ({ groceryList, mealPlan }) => {
             if (groceryList) localStorage.setItem(GROCERY_LIST_LOCAL_STORAGE_KEY, JSON.stringify(groceryList));
             if (mealPlan) localStorage.setItem(MEAL_PLAN_LOCAL_STORAGE_KEY, JSON.stringify(mealPlan));
-        }, 
+        },
         selectedView,
         setSelectedView,
     };

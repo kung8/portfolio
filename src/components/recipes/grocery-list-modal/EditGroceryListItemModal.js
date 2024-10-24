@@ -8,6 +8,7 @@ import { getValidDateRangeError } from './getValidDateRangeError';
 import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
 
 export const EditGroceryListItemModal = ({
+    generateUUID,
     itemToEdit,
     setItemToEdit,
     originalItemToEdit,
@@ -195,6 +196,7 @@ export const EditGroceryListItemModal = ({
 
                         // add the mealPlanningDateRange if it doesn't exist
                         addMealPlan(originalItemToEdit, {
+                            id: generateUUID(),
                             check: false,
                             date: finalItemToEdit.date,
                             mealPlanningDateRange: finalItemToEdit.mealPlanningDateRange,

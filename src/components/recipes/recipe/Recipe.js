@@ -20,30 +20,30 @@ const formatIngredientItem = (item) => {
     return amount + name + additionalDetails;
 }
 
-const getIngredientData = (recipeName, ingredient, index) => ({
+const getIngredientData = (recipeName, ingredient, id) => ({
     name: formatIngredientItem(ingredient),
-    index,
+    id,
     linkId: ingredient.linkId,
     category: ingredient.category,
     recipeName,
 });
 
-const IngredientItem = ({ index, item, link, selectedIngredients, setSelectedIngredients }) => {
+const IngredientItem = ({ id, item, link, selectedIngredients, setSelectedIngredients, }) => {
     const [checked, setChecked] = useState(false);
 
     useEffect(() => {
-        setChecked(!!selectedIngredients.find(i => i.name === item.name && i.index === index));
-    }, [selectedIngredients, item.name, index]);
+        setChecked(!!selectedIngredients.find(i => i.id === id));
+    }, [selectedIngredients, item.name, id]);
 
     const handleCheckboxChange = () => {
-        const included = selectedIngredients.find(i => i.name === item.name && i.index === index);
+        const included = selectedIngredients.find(i => i.id === id);
         if (included) {
             // removes the ingredient if it's already included
-            const newSelectedIngredients = selectedIngredients.filter(ingredient => ingredient.name !== item.name && ingredient.index !== index);
+            const newSelectedIngredients = selectedIngredients.filter(ingredient => ingredient.id !== id);
             setSelectedIngredients(newSelectedIngredients);
         } else {
             // adds the ingredient if it's not included
-            setSelectedIngredients([...selectedIngredients, getIngredientData(item.recipeName, item, index)]);
+            setSelectedIngredients([...selectedIngredients, getIngredientData(item.recipeName, item, id)]);
         }
     }
 
@@ -52,13 +52,11 @@ const IngredientItem = ({ index, item, link, selectedIngredients, setSelectedIng
         return link.url.includes('http') ? link.url : (isDev ? 'http://localhost:3000/#/' : 'https://kevinung8.com/#/') + link.url;
     }
 
-    const labelId = item.name + '-' + index;
-
     return (
         <div className="checkbox-ingredient-container">
             <input
                 type="checkbox"
-                id={labelId}
+                id={id}
                 checked={checked}
                 className="checkbox-ingredient"
                 onChange={handleCheckboxChange}
@@ -68,7 +66,7 @@ const IngredientItem = ({ index, item, link, selectedIngredients, setSelectedIng
                     {item.name}
                 </a>
             ) : (
-                <label htmlFor={labelId}>
+                <label htmlFor={id}>
                     {item.name}
                 </label>
             )}
@@ -117,6 +115,26 @@ export const Recipe = ({ match }) => {
     const queryKey = ['getData', 'recipes', id];
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
 
+
+
+    // grocery list modal
+    const {
+        show: showGroceryListModal,
+        setShow: setShowGroceryListModal,
+        handleClose: closeGroceryListModal,
+        handleOpen: openGroceryListModal,
+        groceryList,
+        setGroceryList,
+        mealPlan,
+        setMealPlan,
+        updateLocalStorage,
+        selectedView,
+        setSelectedView,
+        generateUUID,
+    } = useGroceryList();
+
+
+
     useEffect(() => {
         let mounted = true;
         setIsLoaded(false);
@@ -140,10 +158,11 @@ export const Recipe = ({ match }) => {
     }, []);
 
     const separatedIngredients = !!item?.separated && item?.ingredients &&
-        item.ingredients.reduce((acc, ingredient, index) => {
+        item.ingredients.reduce((acc, ingredient) => {
+            if (!ingredient.id) ingredient.id = generateUUID();
             if (ingredient.section && !acc[ingredient.section]) acc[ingredient.section] = [];
             if (ingredient.section && acc[ingredient.section]) {
-                acc[ingredient.section].push({ ...ingredient, index, linkId: ingredient.link?.id });
+                acc[ingredient.section].push({ ...ingredient, linkId: ingredient.link?.id });
             }
             return acc;
         }, {});
@@ -239,23 +258,6 @@ export const Recipe = ({ match }) => {
         setSelectedRecipeImage(image);
     }
 
-
-
-    // grocery list modal
-    const {
-        show: showGroceryListModal,
-        setShow: setShowGroceryListModal,
-        handleClose: closeGroceryListModal,
-        handleOpen: openGroceryListModal,
-        groceryList,
-        setGroceryList,
-        mealPlan,
-        setMealPlan,
-        updateLocalStorage,
-        selectedView,
-        setSelectedView,
-    } = useGroceryList();
-
     return (
         <NonDashboardPage mainClassName={`recipe page ${isLoaded ? '' : 'isLoading'}`}>
             <NonDashboardPage.Header
@@ -338,10 +340,10 @@ export const Recipe = ({ match }) => {
                                         setSelectedIngredients([]);
                                     } else {
                                         if (item.separated) {
-                                            const newIngredients = Object.values(formattedIngredients).flatMap((group) => group[1].map(ingredient => getIngredientData(item.name, ingredient, ingredient.index)));
+                                            const newIngredients = Object.values(formattedIngredients).flatMap((group) => group[1].map(ingredient => getIngredientData(item.name, ingredient, ingredient.id)));
                                             setSelectedIngredients(newIngredients);
                                         } else {
-                                            const newIngredients = item.ingredients.map((ingredient, index) => getIngredientData(item.name, ingredient, index));
+                                            const newIngredients = item.ingredients.map((ingredient) => getIngredientData(item.name, ingredient, ingredient.id));
                                             setSelectedIngredients(newIngredients);
                                         }
                                     }
@@ -360,34 +362,36 @@ export const Recipe = ({ match }) => {
 
                     {item.separated ? (
                         <div className="separated-recipe-container">
-                            {formattedIngredients.map(([section, ingredients]) => (
-                                <div key={section} className="sectioned-recipe-container">
-                                    <h5 className="separated-recipe-detail-label">{section}</h5>
-                                    {ingredients.map((ingredient) => {
-                                        const formattedIngredient = formatIngredientItem(ingredient);
-                                        return (
-                                            <IngredientItem
-                                                key={formattedIngredient + '-' + ingredient.index}
-                                                index={ingredient.index}
-                                                item={{ name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
-                                                link={ingredient.link}
-                                                selectedIngredients={selectedIngredients}
-                                                setSelectedIngredients={setSelectedIngredients}
-                                            />
-                                        )
-                                    })}
-                                </div>
-                            ))}
+                            {formattedIngredients.map(([section, ingredients], index) => {                                
+                                return (
+                                    <div key={section} className="sectioned-recipe-container">
+                                        <h5 className="separated-recipe-detail-label">{section}</h5>
+                                        {ingredients.map((ingredient) => {
+                                            const formattedIngredient = formatIngredientItem(ingredient);
+                                            return (
+                                                <IngredientItem
+                                                    key={ingredient.id}
+                                                    id={ingredient.id}
+                                                    item={{ id: ingredient.id, name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
+                                                    link={ingredient.link}
+                                                    selectedIngredients={selectedIngredients}
+                                                    setSelectedIngredients={setSelectedIngredients}
+                                                />
+                                            )
+                                        })}
+                                    </div>
+                                )
+                            })}
                         </div>
                     ) : (
                         <div className="recipe-container">
-                            {item?.ingredients?.map((ingredient, index) => {
+                            {item?.ingredients?.map((ingredient) => {
                                 const formattedIngredient = formatIngredientItem(ingredient);
                                 return (
                                     <IngredientItem
-                                        key={formattedIngredient + '-' + index}
-                                        index={index}
-                                        item={{ name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
+                                        key={ingredient.id}
+                                        id={ingredient.id}
+                                        item={{ id: ingredient.id, name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
                                         link={ingredient.link}
                                         selectedIngredients={selectedIngredients}
                                         setSelectedIngredients={setSelectedIngredients}
@@ -478,6 +482,7 @@ export const Recipe = ({ match }) => {
                 name={item?.name}
             />
             <GroceryListModal
+                generateUUID={generateUUID}
                 groceryList={groceryList}
                 handleClose={() => {
                     closeGroceryListModal();
@@ -497,7 +502,7 @@ export const Recipe = ({ match }) => {
                 initialType={categorizeRecipeType(item?.category?.[0])}
                 onAdd={async (date, type, mealPlanningDateRange) => {
                     // Adds if it doesn't already exist inside the meal plan
-                    const hasMealPlanItem = mealPlan.find(meal => 
+                    const hasMealPlanItem = mealPlan.find(meal =>
                         meal?.recipeName === item.name &&
                         meal?.date === date &&
                         meal?.type === type &&
@@ -506,7 +511,7 @@ export const Recipe = ({ match }) => {
                     );
                     const newMealPlan = [...mealPlan];
                     if (!hasMealPlanItem) {
-                        newMealPlan.push({ recipeName: item.name, date, type, checked: false, mealPlanningDateRange });
+                        newMealPlan.push({ id: generateUUID(), recipeName: item.name, date, type, checked: false, mealPlanningDateRange });
                         setMealPlan(newMealPlan);
                     }
 
@@ -518,7 +523,7 @@ export const Recipe = ({ match }) => {
                     const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {
                         if (item.linkId) {
                             const response = await getAsyncData('recipes', item.linkId);
-                            return response?.data?.[0]?.ingredients?.map((ingredient, index) => getIngredientData(response.data[0].name, ingredient, index + item.index));
+                            return response?.data?.[0]?.ingredients?.map((ingredient) => getIngredientData(response.data[0].name, ingredient, ingredient.id ?? generateUUID()));
                         }
                         return { ...item, checked: false, date, mealPlanningDateRange };
                     })];

@@ -94,6 +94,7 @@ export const Recipes = ({ history }) => {
         updateLocalStorage,
         selectedView,
         setSelectedView,
+        generateUUID,
     } = useGroceryList();
 
     // filters modal
@@ -161,6 +162,7 @@ export const Recipes = ({ history }) => {
             {showArrow && <TopArrow />}
 
             <GroceryListModal
+                generateUUID={generateUUID}
                 groceryList={groceryList}
                 handleClose={() => {
                     closeGroceryListModal();

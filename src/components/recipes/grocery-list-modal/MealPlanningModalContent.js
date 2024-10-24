@@ -5,6 +5,7 @@ import { MealItem } from './MealItem';
 import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_SHORT_DATE, READABLE_SHORT_DATE_WITH_DAY_OF_WEEK, READABLE_SHORT_DATE_WITH_YEAR } from '../constants';
 
 export const MealPlanningModalContent = ({
+    generateUUID,
     mealPlan,
     setMealPlan,
     setSortBy,
@@ -63,9 +64,8 @@ export const MealPlanningModalContent = ({
         return range;
     }
 
-    const indexedMealPlan = mealPlan.map((item, index) => ({ ...item, index }));
     const data = useMemo(() => {
-        return sortBy === 'daily' ? indexedMealPlan.reduce((acc, item) => {
+        return sortBy === 'daily' ? mealPlan.reduce((acc, item) => {
             const mealPlanningDateRange = item.mealPlanningDateRange ?? [];
 
             if (mealPlanningDateRange.length > 0) {
@@ -94,7 +94,7 @@ export const MealPlanningModalContent = ({
     }, [mealPlan.map(item => item.recipeName + item.date + item.mealPlanningDateRange + item.type + item.checked).join(','), sortBy]);
 
     const groupedData = useMemo(() => {
-        return sortBy !== 'daily' ? indexedMealPlan.reduce((acc, item) => {
+        return sortBy !== 'daily' ? mealPlan.reduce((acc, item) => {
             const foundRange = dates.filter(date => {
                 const mealPlanningDateRange = item.mealPlanningDateRange ?? [];
 
@@ -132,8 +132,8 @@ export const MealPlanningModalContent = ({
 
     const displayedData = data ?? groupedData;
 
-    const removeMenuItem = (index) => {
-        const newMealPlan = [...indexedMealPlan].filter(item => item.index !== index);
+    const removeMenuItem = (id) => {
+        const newMealPlan = mealPlan.filter(item => item.id !== id);
         setMealPlan(newMealPlan);
         updateLocalStorage({ mealPlan: newMealPlan });
     }
@@ -177,29 +177,32 @@ export const MealPlanningModalContent = ({
                                 if (order.indexOf(a.type) < order.indexOf(b.type)) return -1;
                                 if (order.indexOf(a.type) > order.indexOf(b.type)) return 1;
                                 return 0;
-                            })?.map((item, index) =>
-                                <MealItem
-                                    key={index}
-                                    item={item}
-                                    onCheckboxChange={() => updateMeal(item, { checked: !item.checked })}
-                                    onEditClick={() => {
-                                        setIsEditMealPlanModalOpen(true);
-                                        setOriginalMealToEdit(item);
-                                        setMealToEdit(item);
-                                    }}
-                                    onEmptyInputChange={() => removeMenuItem(item.index)}
-                                    onInputChange={(value) => updateMeal(item, { recipeName: value })}
-                                    showDate
-                                    showType
-                                />
-                            )}
+                            })?.map((item) => {
+                                const id = item.id ?? generateUUID();
+                                return (
+                                    <MealItem
+                                        key={id}
+                                        item={{ ...item, id }}
+                                        onCheckboxChange={() => updateMeal(item, { checked: !item.checked })}
+                                        onEditClick={() => {
+                                            setIsEditMealPlanModalOpen(true);
+                                            setOriginalMealToEdit(item);
+                                            setMealToEdit(item);
+                                        }}
+                                        onEmptyInputChange={() => removeMenuItem(id)}
+                                        onInputChange={(value) => updateMeal({ ...item, id }, { recipeName: value })}
+                                        showDate
+                                        showType
+                                    />
+                                )
+                            })}
                         </ul>)}
                         <span
                             className="add-meal-item-btn"
                             onClick={() => {
                                 setIsEditMealPlanModalOpen(true);
                                 setOriginalMealToEdit(null);
-                                setMealToEdit({ date: date[1], type: 'Breakfast' });
+                                setMealToEdit({ id: generateUUID(), date: date[1], type: 'Breakfast' });
                             }}
                         >
                             Add
@@ -218,9 +221,9 @@ export const MealPlanningModalContent = ({
                                     <h6 className="meal-type-header">{type}</h6>
                                     {!!displayedData[date]?.filter(item => item.type === type)?.length && (
                                         <ul className="meals-container">
-                                            {(displayedData[date].filter(item => item.type === type) ?? [])?.map((item, index) =>
+                                            {(displayedData[date].filter(item => item.type === type) ?? [])?.map((item) =>
                                                 <MealItem
-                                                    key={index}
+                                                    key={item.id}
                                                     item={item}
                                                     onCheckboxChange={() => updateMeal(item, { checked: !item.checked })}
                                                     onEditClick={() => {
@@ -228,7 +231,7 @@ export const MealPlanningModalContent = ({
                                                         setOriginalMealToEdit(item);
                                                         setMealToEdit(item);
                                                     }}
-                                                    onEmptyInputChange={() => removeMenuItem(item.index)}
+                                                    onEmptyInputChange={() => removeMenuItem(item.id)}
                                                     onInputChange={(value) => updateMeal(item, { recipeName: value })}
                                                 />
                                             )}

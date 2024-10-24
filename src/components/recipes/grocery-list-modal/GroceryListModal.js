@@ -15,6 +15,7 @@ import {
 import { ApplyToIngredientsInPlannedMealModal } from './ApplyToIngredientsInPlannedMealModal';
 
 export const GroceryListModal = ({
+    generateUUID,
     groceryList,
     handleClose,
     mealPlan,
@@ -49,7 +50,7 @@ export const GroceryListModal = ({
     const updateItem = (originalItem, newItemValue) => {
         setGroceryList(prev => {
             const newGroceryList = [...prev];
-            const foundItem = newGroceryList.findIndex((item) => originalItem.index === item.index && originalItem.name === item.name);
+            const foundItem = newGroceryList.findIndex((item) => originalItem.id === item.id);
             if (foundItem > -1) {
                 const updatedItem = { ...originalItem, ...newItemValue };
                 newGroceryList[foundItem] = updatedItem;
@@ -95,7 +96,7 @@ export const GroceryListModal = ({
 
         setMealPlan(prev => {
             const newMealPlan = [...prev];
-            const foundItem = newMealPlan.findIndex(item => originalItem.date === item.date && originalItem.type === item.type);
+            const foundItem = newMealPlan.findIndex(item => originalItem.id === item.id);
             if (foundItem > -1) {
                 const updatedItem = { ...originalItem, ...newItemValue };
                 newMealPlan[foundItem] = updatedItem;
@@ -183,6 +184,7 @@ export const GroceryListModal = ({
                     {isGroceryList && (
                         <GroceryListModalContent
                             {...{
+                                generateUUID,
                                 groceryList,
                                 setGroceryList,
                                 setSortBy: setGroceryListSortBy,
@@ -200,6 +202,7 @@ export const GroceryListModal = ({
                     {isMealPlanning && (
                         <MealPlanningModalContent
                             {...{
+                                generateUUID,
                                 mealPlan,
                                 setMealPlan,
                                 setIsDeleteMealPlanModalOpen,
@@ -225,6 +228,7 @@ export const GroceryListModal = ({
                     setItemToEdit={setItemToEdit}
                     originalItemToEdit={originalItemToEdit}
                     updateItem={updateItem}
+                    generateUUID={generateUUID}
                     closeEditIngredientModal={closeEditIngredientModal}
 
                     // when the ingredient is updated, update all the other shared ingredients with the same date
@@ -259,7 +263,7 @@ export const GroceryListModal = ({
                             const newMealStartMealDate = newMeal?.mealPlanningDateRange?.[0];
                             const newMealEndMealDate = newMeal?.mealPlanningDateRange?.[1];                            
                             return startMealDate === newMealStartMealDate && endMealDate === newMealEndMealDate && meal.recipeName === newMeal.recipeName;
-                        });                        
+                        });
 
                         if (!originalStartDate && !originalEndDate && !originalDate && !hasExistingMealPlan) {
                             setMealPlan(prev => {
@@ -295,6 +299,7 @@ export const GroceryListModal = ({
             )}
             {isMealPlanning && isEditMealPlanModalOpen && (
                 <EditMealPlanModal
+                    generateUUID={generateUUID}
                     mealToEdit={mealToEdit}
                     setMealToEdit={setMealToEdit}
                     originalMealToEdit={originalMealToEdit}

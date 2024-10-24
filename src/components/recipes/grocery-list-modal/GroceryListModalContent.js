@@ -6,6 +6,7 @@ import { SortBy } from './SortBy';
 import { READABLE_SHORT_DATE } from '../constants';
 
 export const GroceryListModalContent = ({
+    generateUUID,
     groceryList,
     setGroceryList,
     setSortBy,
@@ -64,8 +65,8 @@ export const GroceryListModalContent = ({
 
     const displayedList = sortBy === 'category' ? displayedIngredientsListByCategory : displayedIngredientsListByDate
 
-    const removeItem = (index) => {
-        const newGroceryList = [...groceryList].filter(ingredient => ingredient.index !== index);
+    const removeItem = (id) => {
+        const newGroceryList = [...groceryList].filter(ingredient => ingredient.id !== id);
         setGroceryList(newGroceryList);
         updateLocalStorage({ groceryList: newGroceryList });
     }
@@ -84,19 +85,19 @@ export const GroceryListModalContent = ({
     return (
         <>
             <div className="grocery-list">
-                <EmptyGroceryListItem setGroceryList={setGroceryList} updateLocalStorage={updateLocalStorage} />
+                <EmptyGroceryListItem generateUUID={generateUUID} setGroceryList={setGroceryList} updateLocalStorage={updateLocalStorage} />
                 {displayedList.map(([category, ingredients]) => (
                     <div key={category} className="category-ingredient-container">
                         <h6 className={`${sortBy === 'date' ? 'ingredient-date' : 'ingredient-category'}`}>{category}</h6>
-                        {ingredients.map((ingredient, index) => (
+                        {ingredients.map((ingredient) => (
                             <GroceryListItem
-                                key={ingredient.name + '-' + index}
+                                key={ingredient.id}
                                 {...ingredient}
                                 onInputChange={(value) => updateItem(ingredient, { name: value })}
                                 onCheckboxChange={() => updateItem(ingredient, { checked: !ingredient.checked })}
                                 onCategoryChange={(value) => updateItem(ingredient, { category: value })}
                                 openEditModal={() => openEditModal(ingredient)}
-                                onEmptyInputChange={() => removeItem(ingredient.index)}
+                                onEmptyInputChange={() => removeItem(ingredient.id)}
                                 sortBy={sortBy}
                             />
                         ))}
