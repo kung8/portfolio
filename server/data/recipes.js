@@ -46,6 +46,7 @@ const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateMousse = require("./recipes/chocolate-mousse");
 const cilantroLimeChicken = require("./recipes/cilantro-lime-chicken");
+const coleslaw = require("./recipes/coleslaw");
 const creamPuffs = require("./recipes/cream-puffs");
 const eclair = require("./recipes/eclair");
 const eggCasserole = require("./recipes/egg-casserole");
@@ -180,6 +181,7 @@ const recipes = [
     sourdoughBread,
     bbqPulledPorkAndFixins,
     bakedMacaroniAndCheese,
+    coleslaw,
     bakedBeans,
     bbqChickenWings,
     malaysianSatay,
