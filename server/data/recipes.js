@@ -58,6 +58,7 @@ const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
 const graveyardDessert = require("./recipes/graveyard-dessert");
 const gravy = require("./recipes/gravy");
 const greenBeanAlmondine = require("./recipes/green-bean-almondine");
+const greenBeanCasserole = require("./recipes/green-bean-casserole");
 const guacamole = require("./recipes/guacamole");
 const hamburger = require("./recipes/hamburger");
 const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
@@ -168,6 +169,7 @@ const recipes = [
     mashPotatoes,
     gravy,
     stuffing,
+    greenBeanCasserole,
     malaysianBlackPepperChicken,
     pizza,
     chickenCordonBleu,
