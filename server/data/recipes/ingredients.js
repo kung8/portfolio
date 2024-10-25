@@ -828,6 +828,7 @@ const INGREDIENTS = {
         CHINESE_CABBAGE: { name: 'Chinese cabbage', category: INGREDIENT_CATEGORY.PRODUCE },
         CHINESE_MUSTARD_GREENS: { name: 'Chinese mustard greens', category: INGREDIENT_CATEGORY.PRODUCE },
         CHIPOTLE_SALAD_KITS: { name: 'chipotle salad kits', category: INGREDIENT_CATEGORY.PRODUCE },
+        CHIVES: { name: 'chives', category: INGREDIENT_CATEGORY.PRODUCE },
         CHOY_SUM: { name: 'choy sum', category: INGREDIENT_CATEGORY.PRODUCE },
         CHRYSANTHEMUM_LEAVES: { name: 'chrysanthemum leaves', category: INGREDIENT_CATEGORY.PRODUCE },
         CILANTRO: { name: 'cilantro', category: INGREDIENT_CATEGORY.PRODUCE },
