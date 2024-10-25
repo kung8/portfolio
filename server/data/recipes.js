@@ -80,6 +80,7 @@ const macaroniSalad = require("./recipes/macaroni-salad");
 const malaysianBlackPepperChicken = require("./recipes/malaysian-black-pepper-chicken");
 const malaysianLemonChicken = require("./recipes/malaysian-lemon-chicken");
 const malaysianSatay = require("./recipes/malaysian-satay");
+const mashPotatoes = require("./recipes/mash-potatoes");
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
@@ -162,6 +163,7 @@ const recipes = [
     chineseBroccoliBeef,
     cabbageStirFry,
     roastedTurkey,
+    mashPotatoes,
     malaysianBlackPepperChicken,
     pizza,
     chickenCordonBleu,
