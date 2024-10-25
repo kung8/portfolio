@@ -17,7 +17,7 @@ module.exports = {
     websites: [
         { label: 'Mash Potatoes', link: 'https://www.spendwithpennies.com/how-to-make-mashed-potatoes/' }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
         { ...YUKON_GOLD_POTATOES, amount: '4 lbs', additionalDetails: 'peeled and quartered', section: SECTIONS.MAIN },
         { ...GARLIC, amount: '3', additionalDetails: '', section: SECTIONS.MAIN },
@@ -25,10 +25,10 @@ module.exports = {
         { ...MILK, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...GREEN_ONIONS, amount: '', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
-        { ...SOUR_CREAM, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHEDDAR_CHEESE, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHIVES, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GREEN_ONIONS, amount: '', additionalDetails: 'thinly sliced', section: SECTIONS.TOPPINGS },
+        { ...SOUR_CREAM, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...CHEDDAR_CHEESE, amount: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
+        { ...CHIVES, amount: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },
@@ -47,6 +47,6 @@ module.exports = {
         { step: 'Add melted butter to the potatoes and mash.', type: SECTIONS.MAIN },
         { step: 'Pour warm milk into the potatoes a little at a time while mashing.', type: SECTIONS.MAIN },
         { step: 'Season with salt and pepper until desired taste.', type: SECTIONS.MAIN },
-        { step: 'Serve hot as a side dish. Topping with gravy and green onion is optional.', type: SECTIONS.SERVE },
+        { step: 'Serve hot as a side dish. Top mashed potatoes with gravy and your favorite toppings.', type: SECTIONS.SERVE },
     ]
 };
