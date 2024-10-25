@@ -46,6 +46,6 @@ module.exports = {
         { step: 'Pour in half of the liquid and stir until incorporated. It should thicken pretty quick.', type: SECTIONS.MAIN },
         { step: 'Pour in the remaining liquid.', type: SECTIONS.MAIN },
         { step: 'Continue to stir until it\'s the desired gravy consistency (about 1.5 to 2 minutes).', type: SECTIONS.MAIN },
-        { step: 'Serve with your favorite proteins.', type: SECTIONS.MAIN },
+        { step: 'Serve over your favorite proteins, mash potatoes or holiday dishes.', type: SECTIONS.MAIN },
     ]
 };

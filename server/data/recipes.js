@@ -113,6 +113,7 @@ const snickerdoodle = require("./recipes/snickerdoodle-cookies");
 const sourdoughBread = require("./recipes/sourdough-bread");
 const sourdoughStarter = require("./recipes/sourdough-starter");
 const southwestSalad = require("./recipes/southwest-salad");
+const stuffing = require("./recipes/stuffing");
 const sushi = require("./recipes/sushi");
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
@@ -166,6 +167,7 @@ const recipes = [
     roastedTurkey,
     mashPotatoes,
     gravy,
+    stuffing,
     malaysianBlackPepperChicken,
     pizza,
     chickenCordonBleu,
