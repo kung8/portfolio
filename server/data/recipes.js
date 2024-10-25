@@ -56,6 +56,7 @@ const frenchToast = require("./recipes/french-toast");
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
 const graveyardDessert = require("./recipes/graveyard-dessert");
+const gravy = require("./recipes/gravy");
 const greenBeanAlmondine = require("./recipes/green-bean-almondine");
 const guacamole = require("./recipes/guacamole");
 const hamburger = require("./recipes/hamburger");
@@ -164,6 +165,7 @@ const recipes = [
     cabbageStirFry,
     roastedTurkey,
     mashPotatoes,
+    gravy,
     malaysianBlackPepperChicken,
     pizza,
     chickenCordonBleu,
