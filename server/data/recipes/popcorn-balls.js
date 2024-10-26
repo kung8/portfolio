@@ -11,6 +11,9 @@ const rackZoomed = '../assets/Products/popcorn-balls-rack-zoomed.jpeg';
 const mixed = '../assets/Products/popcorn-balls-unmelted-mixed.jpeg';
 const unmeltedZoomed = '../assets/Products/popcorn-balls-unmelted-zoomed.jpeg';
 const unmelted = '../assets/Products/popcorn-balls-unmelted.jpeg';
+const baggies1 = '../assets/Products/popcorn-ball-in-baggies-1.jpeg';
+const baggies2 = '../assets/Products/popcorn-ball-in-baggies-2.jpeg';
+const baggiesZoomed = '../assets/Products/popcorn-ball-in-baggies-zoomed.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { POPCORN, CORN_SYRUP, UNSALTED_BUTTER, COLD_WATER, POWDERED_SUGAR, MINI_MARSHMALLOWS, COOKING_SPRAY } = require('./ingredients');
 
@@ -55,7 +58,7 @@ module.exports = {
         { step: 'Slowly pour mixture over popcorn and mix until the popcorn is evenly coated.', type: SECTIONS.MAIN, img: [poured, pouredZoomed] },
         { step: 'Quickly grease hands with cooking spray and form the popcorn into balls.', type: SECTIONS.MAIN },
         { step: 'Place popcorn balls on the prepared baking sheet.', type: SECTIONS.MAIN, img: [rack, rackZoomed] },
-        { step: 'Wrap each ball in plastic wrap or in individual sandwich ziploc bags and keep at room temperature.', type: SECTIONS.MAIN, img: [bagBowls, bagZoomed] },
+        { step: 'Wrap each ball in plastic wrap or in individual sandwich ziploc bags and keep at room temperature.', type: SECTIONS.MAIN, img: [bagBowls, bagZoomed, baggies1, baggies2, baggiesZoomed] },
         { step: 'Enjoy these sweet treats while you watch a show or movie!', type: SECTIONS.MAIN },
     ]
 };
