@@ -170,7 +170,6 @@ const projects = [
         hosted: false,
         show: true,
     },
-    formatCookbookExperience(),
     {
         organization: 'Budding Acorn',
         description: 'SPA to showcase my products and provide a direct platform in which customers can interact with me.',
@@ -199,6 +198,7 @@ const projects = [
         hosted: true,
         show: true,
     },
+    formatCookbookExperience(),
 ];
 
 module.exports = projects;
