@@ -1,65 +1,76 @@
-const example = '../assets/Products/example.jpeg';
+// const example = '../assets/Products/example.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { HEAVY_CREAM, VANILLA_BEAN, EGG_YOLKS, HOT_WATER, WHITE_SUGAR } = require('./ingredients');
 
+const CREAM = 'Cream';
+const VANILLA_SUGAR = 'Vanilla Sugar';
+const BURNING_SUGAR = 'Burning Sugar';
+
 module.exports = {
-    cardName: 'Creme Brulee',
-    name: 'Creme Brulee',
+    cardName: 'Crème Brûlée',
+    name: 'Crème Brûlée',
     img: '',
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [],
-    method: [],
-    protein: [],
-    type: [],
-    yields: ' servings',
-    prepTime: 'm',
-    cookTime: 'm',
+    genre: [GENRES.FRENCH],
+    method: [METHODS.BOIL, METHODS.BAKE],
+    protein: [PROTEIN.EGG],
+    type: [TYPES.DESSERT],
+    yields: '6 servings',
+    prepTime: '25 m',
+    cookTime: '1 h',
     websites: [
-        { label: 'Creme Brulee', link: 'https://www.foodnetwork.com/recipes/alton-brown/creme-brulee-recipe-1916827' },
+        { label: 'Crème Brûlée', link: 'https://www.foodnetwork.com/recipes/alton-brown/creme-brulee-recipe-1916827' },
         { label: 'Vanilla Sugar', link: 'https://sallysbakingaddiction.com/homemade-vanilla-sugar/' }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...HEAVY_CREAM, amount: '1 qt', additionalDetails: '', section: '' },
-        { ...VANILLA_BEAN, amount: '1', additionalDetails: 'split and scraped', section: '' },
-        { ...WHITE_SUGAR, amount: '2 c', additionalDetails: '', section: '' },
-        { ...VANILLA_BEAN, amount: '1', additionalDetails: '', section: '' },
-        { ...EGG_YOLKS, amount: '6', additionalDetails: '', section: '' },
-        { ...HOT_WATER, amount: '2 qt', additionalDetails: '', section: '' },
+        { ...WHITE_SUGAR, amount: '2 c', additionalDetails: '', section: VANILLA_SUGAR },
+        { ...VANILLA_BEAN, amount: '1', additionalDetails: 'split and scraped', section: VANILLA_SUGAR },
+
+        { ...HEAVY_CREAM, amount: '1 qt', additionalDetails: '', section: CREAM },
+        { ...VANILLA_BEAN, amount: '1', additionalDetails: 'split and scraped', section: CREAM },
+        { ...EGG_YOLKS, amount: '6', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HOT_WATER, amount: '2 qt', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: '' },
+        { name: 'stove' },
+        { name: 'oven' },
     ],
     supplies: [
-        { name: '' },
+        { name: '2 medium bowls' },
+        { name: 'saucepan' },
+        { name: '6 ramekins' },
+        { name: 'baking pan' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: 'Place sugar in a medium bowl.', type: VANILLA_SUGAR },
+        { step: 'Carefully slice the vanilla bean in half lengthwise.', type: VANILLA_SUGAR },
+        { step: 'Scrape the seeds with a knife and place on top of the sugar.', type: VANILLA_SUGAR },
+        { step: 'Use another spoon or knife to scrape off the residual seeds from the knife. Repeat as needed.', type: VANILLA_SUGAR },
+        { step: 'Submerge the empty pods in the sugar.', type: VANILLA_SUGAR },
+        { step: 'Keep this at room temperature for up to 2 weeks (for best flavor).', type: VANILLA_SUGAR },
+
+        { step: 'Preheat the oven to 325ºF.', type: SECTIONS.MAIN },
+        { step: 'Over medium-high heat, add heavy cream and scraped vanilla beans to a saucepan.', type: SECTIONS.MAIN },
+        { step: 'Bring to a boil.', type: SECTIONS.MAIN },
+        { step: 'Remove from heat.', type: SECTIONS.MAIN },
+        { step: 'Cover and let it set for 15 minutes.', type: SECTIONS.MAIN },
+        { step: 'Remove the vanilla bean and save to use later.', type: SECTIONS.MAIN },
+        { step: 'In a medium bowl, combine the 1/2 cup vanilla sugar and egg yolks. It should be a lighter color.', type: SECTIONS.MAIN },
+        { step: 'Slowly add in the cream while stirring.', type: SECTIONS.MAIN },
+        { step: 'Pour the batter into the ramekins.', type: SECTIONS.MAIN },
+        { step: 'Place the ramekins inside a tall enough baking pan (or a roasting pan).', type: SECTIONS.MAIN },
+        { step: 'Fill the pan with hot water until the water comes to halfway up the sides of the ramekins.', type: SECTIONS.MAIN },
+        { step: 'Bake until the crème brûlée are set--center will be jiggly (about 40 to 45 minutes).', type: SECTIONS.MAIN },
+        { step: 'Remove the ramekins from the pan and chill for at least 2 hours (and up to 3 days).', type: SECTIONS.MAIN },
+
+        { step: 'Let the crème brûlée sit outside of the fridge for at least 30 minutes prior to browning the sugar on top.', type: BURNING_SUGAR },
+        { step: 'Evenly spread 1/2 cup of the vanilla sugar between the ramekins.', type: BURNING_SUGAR },
+        { step: 'Set the oven rack as close to the top of the oven and turn on the broiler (or around 500ºF).', type: BURNING_SUGAR },
+        { step: 'Place the ramekins in the oven once it reaches the temperature.', type: BURNING_SUGAR },
+        { step: 'Broil until the sugar is light gold (about 1 minute).', type: BURNING_SUGAR },
+
+        { step: 'Let the crème brûlée cool for at least 5 minutes before serving.', type: SECTIONS.SERVE },
     ]
 };
-
-// VANILLA SUGAR
-// Place sugar in your food processor or blender. Any small chopper or even a coffee bean grinder works. (Process in batches if needed.) You can skip the food processor/blender and just mix the sugar and vanilla bean seeds in a bowl with a whisk, but you’ll get better flavor if you pulse the two together.
-
-// Cut the vanilla bean pod in half lengthwise. Use a knife to scrape out the seeds. Place the seeds on top of the sugar. (Save the empty beans/pods.) Use a spoon or another knife to scrape the seeds off the knife—they’re sticky and clumpy.
-
-// Pulse/blend/whisk until all the seeds are broken up and blended, about 10-12 pulses. If you notice extra large clumps, feel free to keep pulsing/whisking or sift them out. Pour vanilla sugar into your jar or container.
-
-// Submerge the empty bean/pod into the sugar. Cut it as needed to fit. This is actually optional, but the empty bean adds more flavor as the weeks go on. You could also use the empty beans to make vanilla extract. See written details above this recipe.
-
-// Use sugar immediately or wait at least 2 weeks for optimal flavor.
-
-// Store vanilla sugar at room temperature. Give it a shake every few weeks because it can clump up. If stored in a cool, dry place, vanilla sugar has a long shelf life, 2+ years at least. (I guarantee you’ll use it up before then!)
-
-
-
-
-// CREME BRULEE
-// Preheat the oven to 325 degrees F. 
-
-// Place the cream, vanilla bean and its pulp into a medium saucepan set over medium-high heat and bring to a boil. Remove from the heat, cover and allow to sit for 15 minutes. Remove the vanilla bean and reserve for another use.
-
-// In a medium bowl, whisk together 1/2 cup sugar and the egg yolks until well blended and it just starts to lighten in color. Add the cream a little at a time, stirring continually. Pour the liquid into 6 (7 to 8-ounce) ramekins. Place the ramekins into a large cake pan or roasting pan. Pour enough hot water into the pan to come halfway up the sides of the ramekins. Bake just until the creme brulee is set, but still trembling in the center, approximately 40 to 45 minutes.
-
-// Remove the ramekins from the roasting pan and refrigerate for at least 2 hours and up to 3 days. Remove the creme brulee from the refrigerator for at least 30 minutes prior to browning the sugar on top. Divide the remaining 1/2 cup vanilla sugar equally among the 6 dishes and spread evenly on top. Using a torch, melt the sugar and form a crispy top. Allow the creme brulee to sit for at least 5 minutes before serving.

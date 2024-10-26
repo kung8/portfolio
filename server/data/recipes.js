@@ -45,9 +45,9 @@ const chineseLoMeinNoodles = require("./recipes/chinese-lo-mein-noodles");
 const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateMousse = require("./recipes/chocolate-mousse");
-const peruvianChicken = require("./recipes/peruvian-chicken");
 const coleslaw = require("./recipes/coleslaw");
 const creamPuffs = require("./recipes/cream-puffs");
+const cremeBrulee = require("./recipes/creme-brulee");
 const eclair = require("./recipes/eclair");
 const eggCasserole = require("./recipes/egg-casserole");
 const fancyLunchables = require("./recipes/fancy-lunchables");
@@ -94,6 +94,7 @@ const peanutBrittle = require("./recipes/peanut-brittle");
 const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
 const peppermintBark = require("./recipes/peppermint-bark");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
+const peruvianChicken = require("./recipes/peruvian-chicken");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
 const pizza = require("./recipes/pizza");
@@ -249,6 +250,7 @@ const recipes = [
     riceKrispyTreats,
     creamPuffs,
     eclair,
+    cremeBrulee,
     popcornBalls,
     chocolateMousse,
     graveyardDessert,
