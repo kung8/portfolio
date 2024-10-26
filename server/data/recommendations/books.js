@@ -25,23 +25,53 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
-            date: IN_PROGRESS,
+            date: '10/25/2024',
             title: "The Well of Ascension",
             author: ["Brandon Sanderson"],
             source: ["same author"],
             review: [
-                ""
+                "This second book didn't disappoint. The ending caught me off guard and excited to continue the series. I love the premise of this book of how to build a kingdom. The character development of Vin and Elend was amazing. This was a story of how to become a good or better leader and how to love."
             ],
             quotes: [
                 {
-                    text: "",
-                    pages: [],
-                    thoughts: "",
-                    context: ""
+                    text: "Many Mistborn stop seeing the value in coins. To us, they simply become something to be used for jumping. It's easy to forget the value of something when you use it so often. When it becomes commonplace and convenient to you. When it becomes...just a tool.",
+                    pages: [215],
+                    thoughts: "Very interesting. We take for granted even some of the most simple things in our lives.",
+                    context: "Zane shares with Vin his observation on coins."
+                },
+                {
+                    text: "He didn't like to think about that event. His bungled attempt at rescuing Vin now seemed a metaphor for all he had done wrong in his life. He'd always been well-intentioned, but he'd rarely been able to deliver. That was going to change.",
+                    pages: [310],
+                    thoughts: "There are moments in our lives that we wish could change the past. We find ourselves wishing we could have done something, not done something or do something different.",
+                    context: "Elend is feeling guilty about not being able to save Vin and feeling impotent."
+                },
+                {
+                    text: "I still do not believe that your duty is to do as the people wish. Your duty is to lead as best you can, following the dictates of your conscience. You must be true, Your Majesty, to the man you wish to become. If that man is not whom the people wish to have lead them, then they will choose someone else.",
+                    pages: [312],
+                    thoughts: "We as people are always trying to please others. We want to be liked and accepted. However, we need to be true to ourselves and our values.",
+                    context: "Elend is trying to determine what kind of king he should be and make a decision of how to save his kingdom."
+                },
+                {
+                    text: "But he's the first man I loved...How do I know it's right? Shouldn't I pay more attention to the man who is a better match for me?",
+                    pages: [437],
+                    thoughts: "I've always wondered about this haha. Love is a tricky thing. We can't always choose who we love.",
+                    context: "Vin is seeking advice from Sazed about her relationship with Elend. She is feeling that Zane might be a better match for her."
+                },
+                {
+                    text: "It was his ability to trust...It was the way that he made good people into better people, the way that he inspired them. His crew worked because he had confidence in them--because he respected them. And in return, they respected each other. Men like Breeze and Clubs became heroes because Kelsier had faith in them.",
+                    pages: [469],
+                    thoughts: "To be a good leader, you need to trust and believe in your team. This trust and confidence in them will help them have confidence in themselves and others on the team.",
+                    context: "Vin is reflecting on Kelsier's leadership and how he was able to inspire others."
+                },
+                {
+                    text: "I do not think you need one. I have known you both for some time, and am willing to give my blessing to this union. I simply offer counsel. Those who take lightly promises they make to those they love are people who find little lasting satisfaction in life. This is not an easy time in which to live. That does not mean that it has to be a difficult time to love, but it does mean that you will find unusual stresses upon your lives and your relationship.",
+                    pages: [469],
+                    thoughts: "This is great advice. We need to remember our vows and promises whether matrimonial or not. If we forget our words, we will not have as much joy in our lives at least in the long run.",
+                    context: "Sazed gives Vin and Elend advice right before marrying the two."
                 },
             ],
             pageCount: 590,
-            rating: NO_RATING,
+            rating: 5,
         },
         {
             date: NO_DATE,
@@ -1459,7 +1489,7 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: NO_DATE,
+            date: IN_PROGRESS,
             title: "The Hobbit",
             author: ["J.R.R. Tolkien"],
             source: ["online"],
