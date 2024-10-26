@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
+import Fuse from 'fuse.js';
 import { useGetData } from '../../../hooks';
 import { convertToKebabCase } from '../../../utils';
 import { NonDashboardPage } from '../../Page';
@@ -34,17 +35,21 @@ export const Recipes = ({ history }) => {
 
     const { data: recipes = [] } = useGetData('recipes');
 
-    const filteredRecipes = recipes.filter(item => {
-        if (search === '') return item;
-        const searchValue = search.toLowerCase();
-        if (
-            item.name.toLowerCase().includes(searchValue) ||
-            item.cardName.toLowerCase().includes(searchValue) ||
-            item.ingredients?.some(ingredient => ingredient.name.toLowerCase().includes(searchValue)) ||
-            item.supplies?.some(supply => supply.name.toLowerCase().includes(searchValue))
-        ) return item;
-        return null;
+    const fuse = new Fuse(recipes, {
+        keys: [
+            'name', 
+            'cardName',
+            // , 'ingredients.name'
+            // , 'supplies.name'
+        ],
+        threshold: 0.4,
+        // threshold value
+        // closer to 1 => the more broad 
+        // Closer to 0 => the more exact
     });
+
+    const matchingSearchResults = fuse.search(search).flatMap(recipe => recipe.item);
+    const filteredRecipes = search ? matchingSearchResults : recipes
 
     const { filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
 
