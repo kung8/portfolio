@@ -27,6 +27,7 @@ module.exports = {
         'Axios',
     ],
     url: 'https://kevinung8.com/#/recipes',
+    localUrl: 'http://localhost:3000/#/recipes',
     domain: true,
     hosted: true,
     show: true,

@@ -1,4 +1,11 @@
-const bbq = '../assets/Products/bbq-pulled-pork.jpeg';
+const fullPlate = '../assets/Products/bbq-pulled-pork-full-plate.jpeg';
+const covered = '../assets/Products/bbq-pulled-pork-covered.jpeg';
+const dryWithPork = '../assets/Products/bbq-pulled-pork-dry-mixed-with-pork.jpeg';
+const mixed = '../assets/Products/bbq-pulled-pork-dry-mixed.jpeg';
+const dry = '../assets/Products/bbq-pulled-pork-dry.jpeg';
+const liner = '../assets/Products/bbq-pulled-pork-liner.jpeg';
+const raw = '../assets/Products/bbq-pulled-pork-raw-pork.jpeg';
+const wet = '../assets/Products/bbq-pulled-pork-wet.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
 const {
     PORK_ROAST,
@@ -19,7 +26,7 @@ const {
 module.exports = {
     cardName: 'BBQ Pulled Pork',
     name: 'BBQ Pulled Pork',
-    img: bbq,
+    img: fullPlate,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.SOUTHERN, GENRES.BBQ],
@@ -52,11 +59,11 @@ module.exports = {
         { name: '2 forks' },
     ],
     directions: [
-        { step: 'Line a slow cooker with a liner to make cleaning quick.', type: SECTIONS.FILLING },
+        { step: 'Line a slow cooker with a liner to make cleaning quick.', type: SECTIONS.FILLING, img: liner },
         { step: 'Pour the vegetable oil into the slow cooker.', type: SECTIONS.FILLING },
-        { step: 'Place roast in the slow cooker and massage the pork with the dry ingredient.', type: SECTIONS.FILLING },
-        { step: 'Pour the wet ingredients into the slow cooker.', type: SECTIONS.FILLING },
-        { step: 'Cover and cook on high for 5 - 6 hours (or on low for 10 - 12 hours).', type: SECTIONS.FILLING },
+        { step: 'Place roast in the slow cooker and massage the pork with the dry ingredient.', type: SECTIONS.FILLING, img: [raw, dry, mixed, dryWithPork] },
+        { step: 'Pour the wet ingredients into the slow cooker.', type: SECTIONS.FILLING, img: wet },
+        { step: 'Cover and cook on high for 5 - 6 hours (or on low for 10 - 12 hours).', type: SECTIONS.FILLING, img: covered },
         { step: 'Shred the pork with two forks.', type: SECTIONS.FILLING },
         { step: 'Return shredded pork to soak in more of the sauce.', type: SECTIONS.FILLING },
         { step: 'Fill the brioche buns with pulled pork.', type: SECTIONS.MAIN },
