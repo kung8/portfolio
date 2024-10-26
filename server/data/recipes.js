@@ -45,7 +45,7 @@ const chineseLoMeinNoodles = require("./recipes/chinese-lo-mein-noodles");
 const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateMousse = require("./recipes/chocolate-mousse");
-const cilantroLimeChicken = require("./recipes/cilantro-lime-chicken");
+const peruvianChicken = require("./recipes/peruvian-chicken");
 const coleslaw = require("./recipes/coleslaw");
 const creamPuffs = require("./recipes/cream-puffs");
 const eclair = require("./recipes/eclair");
@@ -147,7 +147,7 @@ const recipes = [
     thaiPadSeeEw,
     chineseLoMeinNoodles,
     peruvianAjiDeGallina,
-    cilantroLimeChicken,
+    peruvianChicken,
     lemonChickenOnLettuce,
     pepperSteakStirFry,
     lemonChickenRamen,

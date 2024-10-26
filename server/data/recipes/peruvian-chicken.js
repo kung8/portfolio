@@ -13,8 +13,8 @@ const {
 } = require('./ingredients');
 
 module.exports = {
-    cardName: 'Cilantro Lime Chicken',
-    name: 'Cilantro Lime Chicken',
+    cardName: 'Peruvian Chicken',
+    name: 'Peruvian Chicken',
     img: cilantroLimeChicken,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

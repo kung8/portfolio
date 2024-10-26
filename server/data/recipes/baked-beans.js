@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { SALT, DRY_BEAN, BAKING_SODA, BACON, SMALL_YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR } = require('./ingredients');
+const { SALT, BAKING_SODA, BACON, SMALL_YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR, DRY_NAVY_BEAN } = require('./ingredients');
 
 const BEANS = 'Beans';
 
@@ -22,15 +22,15 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...DRY_BEAN, amount: '1 lb', additionalDetails: '', section: BEANS },
+        { ...DRY_NAVY_BEAN, amount: '1 lb', additionalDetails: '', section: BEANS },
         { ...SALT, amount: '2 tsp', additionalDetails: '', section: BEANS },
         { ...BAKING_SODA, amount: '1/4 tsp', additionalDetails: '', section: BEANS },
         { ...BACON, amount: '8 slices', additionalDetails: 'diced', section: SECTIONS.MAIN },
         { ...SMALL_YELLOW_ONION, amount: '1 c', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...BROWN_SUGAR, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...KETCHUP, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MAPLE_SYRUP, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...APPLE_CIDER_VINEGAR, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BROWN_SUGAR, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...KETCHUP, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MAPLE_SYRUP, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...APPLE_CIDER_VINEGAR, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

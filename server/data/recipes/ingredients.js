@@ -201,6 +201,7 @@ const INGREDIENTS = {
         CRUSHED_TOMATOES: { name: 'crushed tomatoes', category: INGREDIENT_CATEGORY.CANNED },
         DICED_TOMATO: { name: 'diced tomato', category: INGREDIENT_CATEGORY.CANNED },
         DRY_BEAN: { name: 'dry bean', category: INGREDIENT_CATEGORY.CANNED },
+        DRY_NAVY_BEAN: { name: 'dry navy bean', category: INGREDIENT_CATEGORY.CANNED },
         DUMPLING_SOUP: { name: 'dumpling soup', category: INGREDIENT_CATEGORY.CANNED },
         ENCHILADA_SOUP: { name: 'enchilada soup', category: INGREDIENT_CATEGORY.CANNED },
         EVAPORATED_MILK: { name: 'evaporated milk', category: INGREDIENT_CATEGORY.CANNED },
