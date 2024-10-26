@@ -1,3 +1,12 @@
+const { cloneDeep } = require('lodash');
+const cookbook = require('./cookbook');
+
+const formatCookbookExperience = () => {
+    const newCookbook = cloneDeep(cookbook);
+    delete newCookbook.images
+    return newCookbook;
+}
+
 const experiences = [
     {
         title: 'Talent / HR Admin',
@@ -167,7 +176,8 @@ const experiences = [
         url: 'https://buddingacorn.dev',
         hosted: true,
         show: true,
-    }
+    },
+    formatCookbookExperience(),
 ];
 
 module.exports = experiences;

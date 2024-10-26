@@ -1,7 +1,17 @@
 const eden = '../assets/Products/eden.jpeg';
 const games = '../assets/Products/full-set.png';
-const cookbook = '../assets/Products/cookbook.jpg';
 const recommendations = '../assets/Products/recommendations.png';
+
+const { cloneDeep } = require('lodash');
+const cookbook = require('./cookbook');
+
+const formatCookbookExperience = () => {
+    const newCookbook = cloneDeep(cookbook);
+    newCookbook.organization = 'Cookbook';
+    delete newCookbook.title;
+    delete newCookbook.chips;
+    return newCookbook;
+}
 
 const products = [
     {
@@ -26,17 +36,7 @@ const products = [
         hosted: true,
         show: true,
     },
-    {
-        organization: 'Cookbook',
-        images: [cookbook],
-        bullets: [
-            'I love to cook and almost as much as I love to eat. Here are some of my favorite recipes that I have collected over the years.',
-        ],
-        url: 'https://kevinung8.com/#/recipes',
-        localUrl: 'http://localhost:3000/#/recipes',
-        hosted: true,
-        show: true,
-    },
+    formatCookbookExperience(),
     {
         organization: 'Tabletop Games',
         images: [games],

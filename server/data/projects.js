@@ -54,6 +54,16 @@ const status = '../assets/Projects/FatBoyCatering/status-page.png';
 const statusFiltered = '../assets/Projects/FatBoyCatering/status-page-filtered.png';
 const statusNothingToDisplay = '../assets/Projects/FatBoyCatering/status-page-nothing-to-display.png';
 
+const { cloneDeep } = require('lodash');
+const cookbook = require('./cookbook');
+
+const formatCookbookExperience = () => {
+    const newCookbook = cloneDeep(cookbook);
+    newCookbook.organization = 'Cookbook';
+    delete newCookbook.title;
+    return newCookbook;
+}
+
 const homePage = '../assets/Projects/BuddingAcorn/home.png';
 
 const projects = [
@@ -160,6 +170,7 @@ const projects = [
         hosted: false,
         show: true,
     },
+    formatCookbookExperience(),
     {
         organization: 'Budding Acorn',
         description: 'SPA to showcase my products and provide a direct platform in which customers can interact with me.',
