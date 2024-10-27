@@ -16,6 +16,8 @@ const beanWithSauce = '../assets/Products/baked-beans-sauce-with-beans.jpeg';
 const sauce = '../assets/Products/baked-beans-sauce.jpeg';
 const seasoning = '../assets/Products/baked-beans-seasoning.jpeg';
 const soaking = '../assets/Products/baked-beans-soaking.jpeg';
+const plate1 = '../assets/Products/baked-beans-full-plate-1.jpeg';
+const plateZoomed = '../assets/Products/baked-beans-full-plate-zoomed.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { SALT, BAKING_SODA, BACON, SMALL_YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR, DRY_NAVY_BEAN } = require('./ingredients');
 
@@ -24,7 +26,7 @@ const BEANS = 'Beans';
 module.exports = {
     cardName: 'Baked Beans',
     name: 'Baked Beans',
-    img: zoomed,
+    img: plateZoomed,
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
@@ -76,7 +78,7 @@ module.exports = {
         { step: 'Bake for 1 hour.', type: SECTIONS.MAIN },
         { step: 'Stir. If it looks dry, add more of the reserved bean water.', type: SECTIONS.MAIN },
         { step: 'Bake for another 30 minutes.', type: SECTIONS.MAIN },
-        { step: 'Remove the lid. Bake for another 30 minutes. The beans will thicken now.', type: SECTIONS.MAIN, img: cooked },
-        { step: 'Stir and serve warm.', type: SECTIONS.MAIN },
+        { step: 'Remove the lid. Bake for another 30 minutes. The beans will thicken now.', type: SECTIONS.MAIN, img: [cooked, zoomed] },
+        { step: 'Stir and serve warm.', type: SECTIONS.MAIN, img: plate1 },
     ]
 };

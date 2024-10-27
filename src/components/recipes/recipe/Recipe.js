@@ -362,36 +362,36 @@ export const Recipe = ({ match }) => {
 
                     {item.separated ? (
                         <div className="separated-recipe-container">
-                            {formattedIngredients.map(([section, ingredients], index) => {                                
-                                return (
-                                    <div key={section} className="sectioned-recipe-container">
-                                        <h5 className="separated-recipe-detail-label">{section}</h5>
-                                        {ingredients.map((ingredient) => {
-                                            const formattedIngredient = formatIngredientItem(ingredient);
-                                            return (
-                                                <IngredientItem
-                                                    key={ingredient.id}
-                                                    id={ingredient.id}
-                                                    item={{ id: ingredient.id, name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
-                                                    link={ingredient.link}
-                                                    selectedIngredients={selectedIngredients}
-                                                    setSelectedIngredients={setSelectedIngredients}
-                                                />
-                                            )
-                                        })}
-                                    </div>
-                                )
-                            })}
+                            {formattedIngredients.map(([section, ingredients]) => (
+                                <div key={section} className="sectioned-recipe-container">
+                                    <h5 className="separated-recipe-detail-label">{section}</h5>
+                                    {ingredients.map((ingredient) => {
+                                        const ingredientId = ingredient.id ?? generateUUID();
+                                        const formattedIngredient = formatIngredientItem(ingredient);
+                                        return (
+                                            <IngredientItem
+                                                key={ingredientId}
+                                                id={ingredientId}
+                                                item={{ id: ingredientId, name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
+                                                link={ingredient.link}
+                                                selectedIngredients={selectedIngredients}
+                                                setSelectedIngredients={setSelectedIngredients}
+                                            />
+                                        )
+                                    })}
+                                </div>
+                            ))}
                         </div>
                     ) : (
                         <div className="recipe-container">
                             {item?.ingredients?.map((ingredient) => {
                                 const formattedIngredient = formatIngredientItem(ingredient);
+                                const ingredientId = ingredient.id ?? generateUUID();
                                 return (
                                     <IngredientItem
-                                        key={ingredient.id}
-                                        id={ingredient.id}
-                                        item={{ id: ingredient.id, name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
+                                        key={ingredientId}
+                                        id={ingredientId}
+                                        item={{ id: ingredientId, name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
                                         link={ingredient.link}
                                         selectedIngredients={selectedIngredients}
                                         setSelectedIngredients={setSelectedIngredients}

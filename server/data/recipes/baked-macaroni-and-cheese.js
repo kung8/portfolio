@@ -26,13 +26,18 @@ const second = '../assets/Products/baked-macaroni-and-cheese-second-cheeses.jpeg
 const angled = '../assets/Products/baked-macaroni-and-cheese-top-pasta-layer-angled.jpeg';
 const topPasta = '../assets/Products/baked-macaroni-and-cheese-top-pasta-layer.jpeg';
 const tupperware = '../assets/Products/baked-macaroni-and-cheese-tupperware.jpeg';
+const plate1 = '../assets/Products/baked-macaroni-and-cheese-full-plate-1.jpeg';
+const plate2 = '../assets/Products/baked-macaroni-and-cheese-full-plate-2.jpeg';
+const plate3 = '../assets/Products/baked-macaroni-and-cheese-full-plate-3.jpeg';
+const plate4 = '../assets/Products/baked-macaroni-and-cheese-full-plate-4.jpeg';
+const plate5 = '../assets/Products/baked-macaroni-and-cheese-full-plate-5.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { ELBOW_MACARONI, OLIVE_OIL, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHOLE_MILK, HEAVY_CREAM, CHEDDAR_CHEESE, BLACK_PEPPER, SALT, PANKO_BREADCRUMBS, PARMESAN_CHEESE, SMOKED_PAPRIKA, GRUYERE_CHEESE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Baked Mac and Cheese',
     name: 'Baked Macaroni and Cheese',
-    img: baked1,
+    img: plate4,
     available: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
@@ -93,7 +98,7 @@ module.exports = {
         { step: 'Add the last of the mac and cheese.', type: SECTIONS.ASSEMBLY, img: [topPasta, angled] },
         { step: 'In a small bowl, combine together panko breadcrumbs, parmesan cheese, paprika and melted butter.', type: SECTIONS.ASSEMBLY, img: crumb },
         { step: 'Sprinkle this mixture over the mac and cheese.', type: SECTIONS.ASSEMBLY, img: crumbLayer },
-        { step: 'Bake until bubbly and golden brown (about 30 minutes).', type: SECTIONS.ASSEMBLY, img: baked2 },
-        { step: 'Serve this warm and enjoy this comfort food.', type: SECTIONS.SERVE },
+        { step: 'Bake until bubbly and golden brown (about 30 minutes).', type: SECTIONS.ASSEMBLY, img: [baked1, baked2] },
+        { step: 'Serve this warm and enjoy this comfort food.', type: SECTIONS.SERVE, img: [plate1, plate2, plate3, plate5] },
     ]
 };

@@ -1,4 +1,3 @@
-const fullPlate = '../assets/Products/bbq-pulled-pork-full-plate.jpeg';
 const garlic = '../assets/Products/bbq-pulled-pork-garlic.jpeg';
 const beforePulled = '../assets/Products/bbq-pulled-pork-finished-before-pulled.jpeg';
 const finished = '../assets/Products/bbq-pulled-pork-finished.jpeg';
@@ -10,6 +9,8 @@ const dry = '../assets/Products/bbq-pulled-pork-dry.jpeg';
 const liner = '../assets/Products/bbq-pulled-pork-liner.jpeg';
 const raw = '../assets/Products/bbq-pulled-pork-raw-pork.jpeg';
 const wet = '../assets/Products/bbq-pulled-pork-wet.jpeg';
+const plate1 = '../assets/Products/bbq-pulled-pork-full-plate-1.jpeg';
+const plate2 = '../assets/Products/bbq-pulled-pork-full-plate-2.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
 const {
     PORK_ROAST,
@@ -71,6 +72,6 @@ module.exports = {
         { step: 'Shred the pork with two forks.', type: SECTIONS.FILLING, img: [beforePulled, pulled] },
         { step: 'Return shredded pork to soak in more of the sauce.', type: SECTIONS.FILLING },
         { step: 'Fill the brioche buns with pulled pork.', type: SECTIONS.MAIN },
-        { step: 'Serve with coleslaw, baked beans, homemade macaroni and cheese, and any other favorite fixins\'.', type: SECTIONS.MAIN, img: fullPlate},
+        { step: 'Serve with coleslaw, baked beans, homemade macaroni and cheese, and any other favorite fixins\'.', type: SECTIONS.MAIN, img: [plate1, plate2] },
     ]
 };
