@@ -256,11 +256,11 @@
         padding: 24px 16px;
         &.opened {
             left: 50%;
-            animation: slide-up 1s ease-in-out;
+            animation: slide-up 0.75s ease-in-out;
         }
         &.closed {
             left: -50%;
-            animation: slide-down 1s ease-in-out;
+            animation: slide-down 0.75s ease-in-out;
         }
 
         @keyframes slide-up {

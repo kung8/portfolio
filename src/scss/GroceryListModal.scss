@@ -15,11 +15,11 @@
     padding: 24px;
     &.opened {
         left: 0;
-        animation: in 1s ease-in-out;
+        animation: in 0.75s ease-in-out;
     }
     &.closed {
         left: -100%;
-        animation: out 1s ease-in-out;
+        animation: out 0.75s ease-in-out;
     }
 
     @media only screen and (hover: none) and (pointer: coarse) {

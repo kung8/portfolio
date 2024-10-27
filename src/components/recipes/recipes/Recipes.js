@@ -38,7 +38,7 @@ export const Recipes = ({ history }) => {
 
     const fuse = new Fuse(recipes, {
         keys: [
-            'name', 
+            'name',
             'cardName',
             // , 'ingredients.name'
             // , 'supplies.name'
@@ -110,15 +110,23 @@ export const Recipes = ({ history }) => {
     return (
         <NonDashboardPage
             mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`}
-            onClick={() => handleCloseFilterModal()}
+            onClick={() => {
+                handleCloseFilterModal();
+                setShowFiltersModal(false);
+            }}
         >
             <NonDashboardPage.Header title='Recipes'>
                 <SearchAndFilterContainer
                     {...{
                         filterOnClick: () => {
-                            if (showFiltersModal) handleCloseFilterModal();
-                            else handleOpenFilterModal();
-                            setShowFiltersModal((toggle) => !toggle);
+                            if (showFiltersModal) {
+                                handleCloseFilterModal();
+                                setShowFiltersModal(false);
+                            } else {
+                                handleOpenFilterModal();
+                                setShowFiltersModal(true);
+                            }
+                            setShowFiltersModal(toggle => !toggle);
                         },
                         imageOnClick: () => {
                             if (showGroceryListModal) closeGroceryListModal();
