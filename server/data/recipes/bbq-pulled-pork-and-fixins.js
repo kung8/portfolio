@@ -1,4 +1,8 @@
 const fullPlate = '../assets/Products/bbq-pulled-pork-full-plate.jpeg';
+const garlic = '../assets/Products/bbq-pulled-pork-garlic.jpeg';
+const beforePulled = '../assets/Products/bbq-pulled-pork-finished-before-pulled.jpeg';
+const finished = '../assets/Products/bbq-pulled-pork-finished.jpeg';
+const pulled = '../assets/Products/bbq-pulled-pork-pulled.jpeg';
 const covered = '../assets/Products/bbq-pulled-pork-covered.jpeg';
 const dryWithPork = '../assets/Products/bbq-pulled-pork-dry-mixed-with-pork.jpeg';
 const mixed = '../assets/Products/bbq-pulled-pork-dry-mixed.jpeg';
@@ -26,7 +30,7 @@ const {
 module.exports = {
     cardName: 'BBQ Pulled Pork',
     name: 'BBQ Pulled Pork',
-    img: fullPlate,
+    img: finished,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.SOUTHERN, GENRES.BBQ],
@@ -61,12 +65,12 @@ module.exports = {
     directions: [
         { step: 'Line a slow cooker with a liner to make cleaning quick.', type: SECTIONS.FILLING, img: liner },
         { step: 'Pour the vegetable oil into the slow cooker.', type: SECTIONS.FILLING },
-        { step: 'Place roast in the slow cooker and massage the pork with the dry ingredient.', type: SECTIONS.FILLING, img: [raw, dry, mixed, dryWithPork] },
+        { step: 'Place roast in the slow cooker and massage the pork with the dry ingredient.', type: SECTIONS.FILLING, img: [garlic, raw, dry, mixed, dryWithPork] },
         { step: 'Pour the wet ingredients into the slow cooker.', type: SECTIONS.FILLING, img: wet },
         { step: 'Cover and cook on high for 5 - 6 hours (or on low for 10 - 12 hours).', type: SECTIONS.FILLING, img: covered },
-        { step: 'Shred the pork with two forks.', type: SECTIONS.FILLING },
+        { step: 'Shred the pork with two forks.', type: SECTIONS.FILLING, img: [beforePulled, pulled] },
         { step: 'Return shredded pork to soak in more of the sauce.', type: SECTIONS.FILLING },
         { step: 'Fill the brioche buns with pulled pork.', type: SECTIONS.MAIN },
-        { step: 'Serve with coleslaw, baked beans, homemade macaroni and cheese, and any other favorite fixins\'.', type: SECTIONS.MAIN },
+        { step: 'Serve with coleslaw, baked beans, homemade macaroni and cheese, and any other favorite fixins\'.', type: SECTIONS.MAIN, img: fullPlate},
     ]
 };
