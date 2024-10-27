@@ -29,6 +29,7 @@ export const Recipes = ({ history }) => {
         method: [],
         protein: [],
         type: [],
+        image: [],
     }
     const [selectedFilters, setSelectedFilters] = useState(initialSelectedFilters);
     const [showArrow, setShowArrow] = useState(false);
