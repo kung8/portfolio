@@ -1,11 +1,12 @@
-// const example = '../assets/Products/example.jpeg';
+const zoomed = '../assets/Products/coleslaw-zoomed.jpeg';
+const coleslaw = '../assets/Products/coleslaw.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { CABBAGE, CARROTS, MAYONNAISE, WHITE_SUGAR, APPLE_CIDER_VINEGAR, LEMON_JUICE, SALT, BLACK_PEPPER } = require('./ingredients');
 
 module.exports = {
     cardName: 'Coleslaw',
     name: 'Coleslaw',
-    img: '',
+    img: coleslaw,
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
@@ -37,7 +38,7 @@ module.exports = {
         { step: 'Shred the carrots and add to the mixing bowl.', type: SECTIONS.MAIN },
         { step: 'Mix together cabbage and carrots.', type: SECTIONS.MAIN },
         { step: 'In a medium bowl, combine together the dressing ingredients.', type: SECTIONS.DRESSING },
-        { step: 'Pour the dressing over the vegetable mixture.', type: SECTIONS.ASSEMBLY },
+        { step: 'Pour the dressing over the vegetable mixture.', type: SECTIONS.ASSEMBLY, img: zoomed },
         { step: 'Place the coleslaw in the fridge for at least a day. Mix the coleslaw several times while it is in the fridge.', type: SECTIONS.ASSEMBLY },
         { step: 'Serve this cold and enjoy.', type: SECTIONS.SERVE },
     ]
