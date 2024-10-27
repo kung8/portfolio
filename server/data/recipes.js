@@ -84,6 +84,7 @@ const malaysianLemonChicken = require("./recipes/malaysian-lemon-chicken");
 const malaysianSatay = require("./recipes/malaysian-satay");
 const mashPotatoes = require("./recipes/mash-potatoes");
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
+const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chicken");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const padThai = require("./recipes/pad-thai");
@@ -149,6 +150,7 @@ const recipes = [
     chineseLoMeinNoodles,
     peruvianAjiDeGallina,
     peruvianChicken,
+    mexicanCilantroLimeChicken,
     lemonChickenOnLettuce,
     pepperSteakStirFry,
     lemonChickenRamen,

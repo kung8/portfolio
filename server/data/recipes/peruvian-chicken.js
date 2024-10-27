@@ -1,62 +1,67 @@
-const cilantroLimeChicken = '../assets/Products/cilantro-lime-chicken.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const {
-    CHICKEN_WINGS,
-    CILANTRO,
-    LIME_JUICE,
-    GARLIC,
-    AVOCADO_OIL,
-    CHILI_POWDER,
-    SALT,
-    BLACK_PEPPER,
-    CAYENNE_PEPPER,
-} = require('./ingredients');
+// const example = '../assets/Products/example.jpeg';
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, GARLIC, LIGHT_SOY_SAUCE, LIME_JUICE, OLIVE_OIL, CUMIN, PAPRIKA, OREGANO, BLACK_PEPPER, JALAPENO_PEPPERS, CILANTRO, GREEN_ONIONS, MAYONNAISE, SALT, GREEK_YOGURT } = require('./ingredients');
+
+const CREAMY_GREEN_SAUCE = 'Creamy Green Sauce';
 
 module.exports = {
     cardName: 'Peruvian Chicken',
     name: 'Peruvian Chicken',
-    img: cilantroLimeChicken,
+    img: '',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.PERUVIAN],
+    genre: [GENRES.MEXICAN],
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN, TYPES.RICE],
-    yields: '6 servings',
+    yields: '4 servings',
     prepTime: '15 m',
-    cookTime: '40 m',
+    cookTime: '35 m',
     websites: [
-        { label: 'Cilantro Lime Chicken Wings', link: 'https://kaleforniakravings.com/easy-cilantro-lime-chicken-wings/' }
+        { label: 'Peruvian Chicken', link: 'https://www.platingsandpairings.com/peruvian-grilled-chicken-creamy-green-sauce/' }
     ],
+    separated: true,
     ingredients: [
-        { ...CHICKEN_WINGS, amount: '2 lbs', additionalDetails: '', section: SECTIONS.MEAT },
-        { ...CILANTRO, amount: '1 bunch of', additionalDetails: 'chopped', section: SECTIONS.DRESSING },
-        { ...LIME_JUICE, amount: '1/2 c + 4 Tbsp', additionalDetails: 'about 6 limes', section: SECTIONS.DRESSING },
-        { ...GARLIC, amount: '4', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...AVOCADO_OIL, amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...CHILI_POWDER, amount: '2 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...BLACK_PEPPER, amount: '1 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...CAYENNE_PEPPER, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: '2 lbs', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...GARLIC, amount: '5', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...LIGHT_SOY_SAUCE, amount: '1/3 c', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...LIME_JUICE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CUMIN, amount: '2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...PAPRIKA, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...OREGANO, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...JALAPENO_PEPPERS, amount: '3', additionalDetails: 'seeds and ribs removed, chopped', section: CREAMY_GREEN_SAUCE },
+        { ...CILANTRO, amount: '1 c', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...GREEN_ONIONS, amount: '2', additionalDetails: 'chopped', section: CREAMY_GREEN_SAUCE },
+        { ...GARLIC, amount: '2', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...MAYONNAISE, amount: '1/2 c', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...GREEK_YOGURT, amount: '1/4 c', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...LIME_JUICE, amount: '1 Tbsp', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
     ],
     appliances: [
         { name: 'blender' },
         { name: 'oven' },
     ],
     supplies: [
-        { name: 'ziploc' },
-        { name: 'wire rack' },
-        { name: 'baking sheet' },
-        { name: 'tongs' },
+        { name: 'mixing bowl' },
+        { name: 'baking pan' },
+        { name: 'aluminum foil' },
     ],
     directions: [
-        { step: 'Combine all the dressing ingredients in a blender.', type: SECTIONS.DRESSING },
-        { step: 'Pour 1/2 of the dressing into a ziploc bag and place the chicken wings and drum.', type: SECTIONS.MEAT },
-        { step: 'Let the chicken marinate for 4 hours.', type: SECTIONS.MEAT },
-        { step: 'Preheat the oven to 400ºF.', type: SECTIONS.MAIN },
-        { step: 'Place a wire rack on top of a baking pan.', type: SECTIONS.MAIN },
-        { step: 'Use tongs to transfer chicken to wire rack in a single layer.', type: SECTIONS.MAIN },
-        { step: 'Bake for 30 to 35 minutes. Feel free to broil the wings for 2 to 3 minutes in addition to make it crispier.', type: SECTIONS.MAIN },
-        { step: 'Dip this chicken in the dressing and serve it with a side of salad and cilantro rice.', type: SECTIONS.SERVE },
+        { step: 'Combine marinade ingredients in a blender.', type: SECTIONS.MARINADE },
+        { step: 'In a mixing bowl or ziploc bag, marinade the chicken for at least 8 hours (up to 24 hours).', type: SECTIONS.MARINADE },
+        { step: 'In a blender, add all the sauce ingredients except the oil.', type: CREAMY_GREEN_SAUCE },
+        { step: 'Blend and slowly add the olive oil.', type: CREAMY_GREEN_SAUCE },
+        { step: 'Transfer to a container and refrigerate.', type: CREAMY_GREEN_SAUCE },
+        { step: 'Preheat the oven to 500ºF.', type: SECTIONS.MAIN },
+        { step: 'Place the chicken in a baking pan.', type: SECTIONS.MAIN },
+        { step: 'Add 1 cup of water to the pan.', type: SECTIONS.MAIN },
+        { step: 'Bake for 30 minutes.', type: SECTIONS.MAIN },
+        { step: 'Tent the pan with aluminum foil and cook until the chicken is cooked through (about 15 minutes).', type: SECTIONS.MAIN },
+        { step: 'Serve the chicken with the creamy green sauce.', type: SECTIONS.SERVE },
     ]
 };

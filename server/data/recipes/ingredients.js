@@ -388,6 +388,7 @@ const INGREDIENTS = {
         FETA_CHEESE: { name: 'feta cheese', category: INGREDIENT_CATEGORY.DAIRY },
         GOAT_CHEESE: { name: 'goat cheese', category: INGREDIENT_CATEGORY.DAIRY },
         GOUDA_CHEESE: { name: 'gouda cheese', category: INGREDIENT_CATEGORY.DAIRY },
+        GREEK_YOGURT: { name: 'greek yogurt', category: INGREDIENT_CATEGORY.DAIRY },
         GRUYERE_CHEESE: { name: 'gruyere cheese', category: INGREDIENT_CATEGORY.DAIRY },
         HALF_AND_HALF: { name: 'half and half', category: INGREDIENT_CATEGORY.DAIRY },
         HEAVY_CREAM: { name: 'heavy cream', category: INGREDIENT_CATEGORY.DAIRY },
