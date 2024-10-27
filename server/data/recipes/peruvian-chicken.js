@@ -1,4 +1,4 @@
-// const example = '../assets/Products/example.jpeg';
+const plated = '../assets/Products/peruvian-chicken-plated.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, GARLIC, LIGHT_SOY_SAUCE, LIME_JUICE, OLIVE_OIL, CUMIN, PAPRIKA, OREGANO, BLACK_PEPPER, JALAPENO_PEPPERS, CILANTRO, GREEN_ONIONS, MAYONNAISE, SALT, GREEK_YOGURT } = require('./ingredients');
 
@@ -7,7 +7,7 @@ const CREAMY_GREEN_SAUCE = 'Creamy Green Sauce';
 module.exports = {
     cardName: 'Peruvian Chicken',
     name: 'Peruvian Chicken',
-    img: '',
+    img: plated,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN],
