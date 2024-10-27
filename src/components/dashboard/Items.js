@@ -41,6 +41,7 @@ export const Items = ({
     hasMore = true,
 }) => {
     const [hovered, setHovered] = useState(false);
+    const isLocalUrl = window.location.href.includes('localhost');
 
     const filteredItems = items.filter(item => {
         if (showMore) return true;
@@ -49,7 +50,7 @@ export const Items = ({
 
     return (
         <>
-            {filteredItems.map((item, index) => <Item key={index} {...{ ...item, showEndDateOnly }} />)}
+            {filteredItems.map((item, index) => <Item key={index} {...{ ...item, url: isLocalUrl && item.localUrl ? item.localUrl : item.url, showEndDateOnly }} />)}
             {hasMore && (
                 <div className='show-container'>
                     <span
