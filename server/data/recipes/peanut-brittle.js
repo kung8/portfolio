@@ -21,8 +21,8 @@ module.exports = {
     separated: false,
     ingredients: [
         { ...WHITE_SUGAR, amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CORN_SYRUP, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
         { ...COLD_WATER, amount: '1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORN_SYRUP, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_PEANUTS, amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...BAKING_SODA, amount: '1 1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
