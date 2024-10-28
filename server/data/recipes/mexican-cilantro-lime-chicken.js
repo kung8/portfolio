@@ -12,6 +12,11 @@ const broiled1 = '../assets/Products/mexican-cilantro-lime-chicken-broiled-1.jpe
 const broiled2 = '../assets/Products/mexican-cilantro-lime-chicken-broiled-2.jpeg';
 const zoomed = '../assets/Products/mexican-cilantro-lime-chicken-raw-on-baking-rack-zoomed.jpeg';
 const rack = '../assets/Products/mexican-cilantro-lime-chicken-raw-on-baking-rack.jpeg';
+const chicken = '../assets/Products/mexican-cilantro-lime-chicken-plated-just-chicken.jpeg';
+const set1 = '../assets/Products/mexican-cilantro-lime-chicken-plated-set-1.jpeg';
+const set2 = '../assets/Products/mexican-cilantro-lime-chicken-plated-set-2.jpeg';
+const rice = '../assets/Products/mexican-cilantro-lime-chicken-plated-with-rice.jpeg';
+
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const {
     CHICKEN_WINGS,
@@ -28,7 +33,7 @@ const {
 module.exports = {
     cardName: 'Cilantro Lime Chicken',
     name: 'Mexican Cilantro Lime Chicken',
-    img: '',
+    img: set1,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN],
@@ -70,6 +75,6 @@ module.exports = {
         { step: 'Place a wire rack on top of a baking pan.', type: SECTIONS.MAIN },
         { step: 'Use tongs to transfer chicken to wire rack in a single layer.', type: SECTIONS.MAIN, img: [rack, zoomed] },
         { step: 'Bake for 30 to 35 minutes. Feel free to broil the wings for 2 to 3 minutes in addition to make it crispier.', type: SECTIONS.MAIN, img: [baking, broiled1, broiled2] },
-        { step: 'Dip this chicken in the dressing and serve it with a side of salad and cilantro rice.', type: SECTIONS.SERVE },
+        { step: 'Dip this chicken in the dressing and serve it with a side of salad and cilantro rice.', type: SECTIONS.SERVE, img: [chicken, set2, rice] },
     ]
 };
