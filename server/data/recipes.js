@@ -85,6 +85,7 @@ const malaysianSatay = require("./recipes/malaysian-satay");
 const mashPotatoes = require("./recipes/mash-potatoes");
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
 const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chicken");
+const muddyBuddies = require("./recipes/muddy-buddies");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const padThai = require("./recipes/pad-thai");
@@ -249,6 +250,7 @@ const recipes = [
     lemonBars,
     tedLassoBiscuits,
     noBakeCookie,
+    muddyBuddies,
     riceKrispyTreats,
     creamPuffs,
     eclair,

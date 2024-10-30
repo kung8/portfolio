@@ -128,6 +128,7 @@ const SECTIONS = {
     MEAT: 'Meat',
     EGGS: 'Eggs',
     ASSEMBLY: 'Assembly',
+    STORE: 'Store',
 };
 
 const TYPES = {
