@@ -35,6 +35,7 @@ module.exports = {
     name: 'Mexican Cilantro Lime Chicken',
     img: set1,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN],
     method: [METHODS.GRILL],

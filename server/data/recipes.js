@@ -130,110 +130,146 @@ const waffles = require("./recipes/waffles");
 const wrap = require("./recipes/wrap");
 
 const recipes = [
+    //////////////////////////////////////////////////////////////////////// ASIAN ///////////////////////////////////////////////////////////////////////  
+    // THAI
     padThai,
-    vietnamesePho,
+    thaiPadSeeEw,
+    thaiMassamanCurry, // TODO: add
+
+    // INDIAN
     chickenBiryani,
     indianButterChicken,
+    indianChickenTikkaMasala,
+
+    // VIETNAMESE
+    vietnamesePho,
+    vietnameseBanhMiSandwich,
+    vietnameseBanhTieu,
+
+    // JAPANESE
     sushi,
     japaneseChickenKatsu,
     japaneseKatsudon,
     japaneseCurry, // TODO: add
-    koreanBeefBulgogi,
-    koreanFriedChicken,
-    vietnameseBanhMiSandwich,
-    malaysianLemonChicken,
-    singaporeanChickenRice,
-    chineseBokChoyChicken,
-    chineseGingerChicken,
-    chineseSourChickenSoup,
-    khmerRedCurry,
-    thaiPadSeeEw,
-    chineseLoMeinNoodles,
-    peruvianAjiDeGallina,
-    peruvianChicken,
-    mexicanCilantroLimeChicken,
-    lemonChickenOnLettuce,
-    pepperSteakStirFry,
     lemonChickenRamen,
     chickenRamen,
+
+    // KOREAN
+    koreanBeefBulgogi,
+    koreanFriedChicken,
     bibimbap,
-    hospitalityChicken,
-    garlicChickenWithHerbs,
-    bakedChicken,
-    bakedLemonChicken,
-    chineseBao,
-    vietnameseBanhTieu,
-    italianLasagna,
-    indianChickenTikkaMasala,
+
+    // CHINESE
+    chineseLoMeinNoodles,
+    chineseGingerChicken,
     chineseCashewChicken,
     chineseGreenBeanBeef,
     chineseBroccoliBeef,
+    chineseSourChickenSoup,
+    pepperSteakStirFry,
+    lemonChickenOnLettuce,
+    chineseBokChoyChicken,
     cabbageStirFry,
+    chineseBao,
+    potstickers,
+
+
+    // SINGAPOREAN
+    singaporeanChickenRice,
+
+    // MALAYSIAN
+    malaysianSatay,
+    malaysianLemonChicken,
+    malaysianBlackPepperChicken,
+
+    // KHMER
+    khmerRedCurry,
+
+    //////////////////////////////////////////////////////////////////////// LATIN ///////////////////////////////////////////////////////////////////////  
+    // PERUVIAN
+    peruvianAjiDeGallina,
+    peruvianChicken,
+
+    // BRAZILIAN
+    paoDeQueijo,
+
+    // MEXICAN
+    mexicanCilantroLimeChicken,
+    tacoInABag,
+    cafeRioBowl,
+    mexicanChickenBake, // TODO: add
+
+    ////////////////////////////////////////////////////////////////////// EUROPEAN //////////////////////////////////////////////////////////////////////  
+    italianLasagna,
+    pizza,
+    chickenCordonBleu,
+    chickenAlfredo,
+    chickenParmesan, // TODO: add
+    basilPesto,
+    italianTurkeyMeatballSpinachTortelliniSoup,
+    beefStroganoff,
+    greenBeanAlmondine,
+
+    ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
     roastedTurkey,
     mashPotatoes,
     gravy,
     stuffing,
     greenBeanCasserole,
-    malaysianBlackPepperChicken,
-    pizza,
-    chickenCordonBleu,
-    chickenParmesan, // TODO: add
-    italianTurkeyMeatballSpinachTortelliniSoup,
-    mexicanChickenBake, // TODO: add
-    tacoInABag,
-    cafeRioBowl,
-    thaiMassamanCurry, // TODO: add
-    beefStroganoff,
-    chickenAlfredo,
-    basilPesto,
-    sauteedSquash,
-    bakedBreadedChicken,
-    phillyCheesesteak,
-    hawaiianHaystacks,
-    sourdoughStarter,
-    sourdoughBread,
     bbqPulledPorkAndFixins,
     bakedMacaroniAndCheese,
     coleslaw,
     bakedBeans,
     bbqChickenWings,
-    malaysianSatay,
-    paoDeQueijo,
-    potstickers,
     chickenKebab,
     potRoast,
     chickenPotPie,
     chickenNoodleSoup,
+    broccoliCheddarSoup,
     chili,
+    sauteedSquash,
+    macaroniSalad,
+    bakedBreadedChicken,
+    phillyCheesesteak,
+    sourdoughStarter,
+    sourdoughBread,
+    hawaiianHaystacks,
+    hospitalityChicken,
+    garlicChickenWithHerbs,
+    bakedChicken,
+    bakedLemonChicken,
     sloppyJoes,
     hoboDinner,
-    greenBeanAlmondine,
-    pigsInABlanket,
-    chickenStuffedCrescentRolls,
-    southwestSalad, // TODO: add
-    macaroniSalad,
-    frenchCrepe,
-    frenchToast,
-    broccoliCheddarSoup,
-    cheeseballs,
-    garlicBreadsticks,
-    biscuitsAndGravy,
-    breakfastSandwich,
-    scrambledEggs,
-    hardBoiledEggs,
-    americanOmelette,
-    eggCasserole,
-    waffles,
-    buttermilkSyrup,
     hamburger,
     caramelizedMushroom,
     caramelizedOnion,
+    
+    //////////////////////////////////////////////////////////////////////// SNACK/APPETIZERS ///////////////////////////////////////////////////////////////////////
+    pigsInABlanket,
+    chickenStuffedCrescentRolls,
+    southwestSalad, // TODO: add
+    cheeseballs,
+    garlicBreadsticks,
     fancyLunchables,
     wrap,
     parfait,
     smoothie,
     antsOnALog,
     guacamole,
+
+    //////////////////////////////////////////////////////////////////////// BREAKFAST ///////////////////////////////////////////////////////////////////////
+    frenchCrepe,
+    frenchToast,
+    waffles,
+    buttermilkSyrup,
+    biscuitsAndGravy,
+    breakfastSandwich,
+    scrambledEggs,
+    hardBoiledEggs,
+    americanOmelette,
+    eggCasserole,
+
+    //////////////////////////////////////////////////////////////////////// DESSERT ///////////////////////////////////////////////////////////////////////
     bananaBread,
     cheesecake,
     carrotCake,
@@ -259,6 +295,8 @@ const recipes = [
     chocolateMousse,
     graveyardDessert,
     smores,
+
+    //////////////////////////////////////////////////////////////////////// DRINK ///////////////////////////////////////////////////////////////////////
     rosemaryLemonade,
 ]
 
