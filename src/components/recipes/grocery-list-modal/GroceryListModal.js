@@ -11,8 +11,10 @@ import {
     MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY,
     GROCERY_LIST_VIEW,
     MEAL_PLANNING_VIEW,
+    STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY,
 } from '../constants';
 import { ApplyToIngredientsInPlannedMealModal } from './ApplyToIngredientsInPlannedMealModal';
+import { SettingsModal } from './SettingsModal';
 
 export const GroceryListModal = ({
     generateUUID,
@@ -114,7 +116,7 @@ export const GroceryListModal = ({
     const [deleteType, setDeleteType] = useState(null);
     const isGroceryList = selectedView === GROCERY_LIST_VIEW;
     const isMealPlanning = selectedView === MEAL_PLANNING_VIEW;
-    const checkLayeredOpenedClassName = () => isDeleteIngredientModalOpen || isEditIngredientModalOpen || isDeleteMealPlanModalOpen || isEditMealPlanModalOpen || isApplyToIngredientsInPlannedMealModalOpen;
+    const checkLayeredOpenedClassName = () => isDeleteIngredientModalOpen || isEditIngredientModalOpen || isDeleteMealPlanModalOpen || isEditMealPlanModalOpen || isApplyToIngredientsInPlannedMealModalOpen || isSettingsModalOpen;
 
 
 
@@ -156,6 +158,23 @@ export const GroceryListModal = ({
 
 
 
+    // SETTINGS MODAL
+    const getStartingDay = () => {
+        const startingDay = localStorage.getItem(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY);
+        if (startingDay) return startingDay;
+        return 'sunday';
+    }
+    const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
+    const [startingDay, setStartingDay] = useState(getStartingDay());
+    const closeSettingsModal = () => {
+        setIsSettingsModalOpen(false);
+    }
+    const updateStartingDay = (day) => {
+        localStorage.setItem(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, day);
+    }
+
+
+
     return (
         <>
             <div className="grocery-list-modal-container">
@@ -173,6 +192,8 @@ export const GroceryListModal = ({
                             if (isEditIngredientModalOpen) closeEditIngredientModal();
                             if (isDeleteMealPlanModalOpen) closeDeleteMealPlanModal();
                             if (isEditMealPlanModalOpen) closeEditMealPlanModal();
+                            if (isApplyToIngredientsInPlannedMealModalOpen) closeApplyModal();
+                            if (isSettingsModalOpen) closeSettingsModal();
                         } : handleClose}
                 />
                 <div className="grocery-list-modal">
@@ -180,6 +201,7 @@ export const GroceryListModal = ({
                         handleClose={handleClose}
                         setSelectedView={setSelectedView}
                         selectedView={selectedView}
+                        openSettingsModal={() => setIsSettingsModalOpen(true)}
                     />
                     {isGroceryList && (
                         <GroceryListModalContent
@@ -212,6 +234,7 @@ export const GroceryListModal = ({
                                 setOriginalMealToEdit,
                                 setMealToEdit,
                                 setDeleteType,
+                                startingDay,
                                 updateMeal,
                                 updateLocalStorage,
                             }}
@@ -317,6 +340,17 @@ export const GroceryListModal = ({
                         handleApply();
                         closeApplyModal();
                     }}
+                />
+            )}
+            {isSettingsModalOpen && (
+                <SettingsModal 
+                    closeModal={closeSettingsModal}
+                    handleApply={() => {
+                        updateStartingDay(startingDay);
+                        closeSettingsModal();
+                    }}
+                    setStartingDay={setStartingDay}
+                    startingDay={startingDay}
                 />
             )}
         </>

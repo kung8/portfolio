@@ -31,6 +31,18 @@
         justify-content: space-between;
         align-items: center;
 
+        .left-modal-header-container {
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+
+            .settings-img {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+
         .close {
             background: none;
             border: none;
@@ -346,7 +358,8 @@
 .edit-ingredient-modal,
 .delete-meal-plan-modal,
 .edit-meal-plan-modal, 
-.apply-to-ingredients-in-planned-meal-modal {
+.apply-to-ingredients-in-planned-meal-modal, 
+.settings-modal {
     position: absolute;
     top: 50vh;
     left: 50%;
@@ -408,6 +421,49 @@
                     &::-ms-input-placeholder {
                         color: $default;
                     }
+                }
+            }
+        }
+    }
+
+    &.settings-modal {
+        .modal-content {
+            row-gap: 0;
+
+            .modal-header {
+                h3 {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .modal-body {
+            margin: 24px 0 32px;
+
+            .section-heading {
+                color: $default;
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+
+        .starting-day-checklist {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+
+            .starting-day-option {
+                list-style: none;
+                border: 1px solid $light;
+                padding: 4px 8px;
+                cursor: pointer;
+                border-radius: 8px;
+                color: $light;
+                &.selected-day {
+                    color: $sunshine;
+                    border: 1px solid $sunshine;
+                    border-radius: 8px;
                 }
             }
         }

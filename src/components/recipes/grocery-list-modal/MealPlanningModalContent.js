@@ -15,6 +15,7 @@ export const MealPlanningModalContent = ({
     setOriginalMealToEdit,
     setMealToEdit,
     setDeleteType,
+    startingDay,
     updateMeal,
     updateLocalStorage,
 }) => {
@@ -27,10 +28,20 @@ export const MealPlanningModalContent = ({
         return days;
     }
 
+    const dayMap = {
+        sunday: 0,
+        monday: 1,
+        tuesday: 2,
+        wednesday: 3,
+        thursday: 4,
+        friday: 5,
+        saturday: 6,
+    }
+
     const getWeeks = () => {
         // gets 12 weeks out
         const weeks = [];
-        const closestSunday = dayjs().startOf('week').format(DATE_FORMAT);
+        const closestSunday = dayjs().startOf('week').add(dayMap[startingDay], 'day').format(DATE_FORMAT);
         for (let i = 0; i < 13; i++) {
             weeks.push([
                 dayjs(closestSunday).add(i, 'week').format(DATE_FORMAT),
@@ -91,7 +102,7 @@ export const MealPlanningModalContent = ({
             return acc;
         }, {}) : undefined;
         // eslint-disable-next-line
-    }, [mealPlan.map(item => item.recipeName + item.date + item.mealPlanningDateRange + item.type + item.checked).join(','), sortBy]);
+    }, [mealPlan.map(item => item.recipeName + item.date + item.mealPlanningDateRange + item.type + item.checked).join(','), sortBy, startingDay]);
 
     const groupedData = useMemo(() => {
         return sortBy !== 'daily' ? mealPlan.reduce((acc, item) => {
@@ -128,7 +139,7 @@ export const MealPlanningModalContent = ({
             return acc;
         }, {}) : undefined;
         // eslint-disable-next-line
-    }, [mealPlan.map(item => item.recipeName + item.date + item.mealPlanningDateRange + item.type + item.checked).join(','), sortBy])
+    }, [mealPlan.map(item => item.recipeName + item.date + item.mealPlanningDateRange + item.type + item.checked).join(','), sortBy, startingDay])
 
     const displayedData = data ?? groupedData;
 
