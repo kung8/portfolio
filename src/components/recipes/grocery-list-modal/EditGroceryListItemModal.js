@@ -204,8 +204,20 @@ export const EditGroceryListItemModal = ({
                             type: 'Dinner' // TODO: should look up the type based on the recipeName?
                         });
 
-                        // update the shared ingredients mealPlanningDateRange, recipeName, and date
-                        updateSharedIngredients(originalItemToEdit, finalItemToEdit);
+                        const onlyItemNameChanged = originalItemToEdit.name !== finalItemToEdit.name && 
+                            originalItemToEdit.category === finalItemToEdit.category &&
+                            originalItemToEdit.recipeName === finalItemToEdit.recipeName &&
+                            originalItemToEdit.date === finalItemToEdit.date &&
+                            originalItemToEdit?.mealPlanningDateRange?.[0] === finalItemToEdit?.mealPlanningDateRange?.[0] &&
+                            originalItemToEdit?.mealPlanningDateRange?.[1] === finalItemToEdit?.mealPlanningDateRange?.[1];
+
+                        // update the shared ingredients if other details other than name changed
+                        if (!onlyItemNameChanged) {
+                            // update the shared ingredients mealPlanningDateRange, recipeName, and date
+                            updateSharedIngredients(originalItemToEdit, finalItemToEdit);
+                        }
+
+
 
                         closeEditIngredientModal();
                     }}
