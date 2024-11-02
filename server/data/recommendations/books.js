@@ -25,6 +25,101 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: NO_DATE,
+            title: "Think and Grow Rich",
+            author: ["Napoleon Hill"],
+            source: ["Top Read Books in the World"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Twilight Saga",
+            author: ["Stephenie Meyer"],
+            source: ["Top Read Books in the World"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Da Vinci Code",
+            author: ["Dan Brown"],
+            source: ["Top Read Books in the World"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Alchemist",
+            author: ["Paulo Coelho"],
+            source: ["Top Read Books in the World"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Quotations from the Works of Mao Tse-Tung",
+            author: ["Mao Zedong"],
+            source: ["Top Read Books in the World"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
             date: '10/25/2024',
             title: "The Well of Ascension",
             author: ["Brandon Sanderson"],
@@ -1109,7 +1204,7 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: NO_DATE,
+            date: IN_PROGRESS,
             title: "Into Thin Air",
             author: ["Jon Krakauer"],
             source: ["Madelyn Baxter"],
