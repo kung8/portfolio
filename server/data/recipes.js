@@ -20,6 +20,7 @@ const brownies = require("./recipes/brownies");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cabbageStirFry = require("./recipes/cabbage-stir-fry");
 const cafeRioBowl = require("./recipes/cafe-rio-bowl");
+const caramelApples = require("./recipes/caramel-apples");
 const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 const caramelizedOnion = require("./recipes/caramelized-onion");
 const carrotCake = require("./recipes/carrot-cake");
@@ -293,6 +294,7 @@ const recipes = [
     cremeBrulee,
     popcornBalls,
     chocolateMousse,
+    caramelApples,
     graveyardDessert,
     smores,
 

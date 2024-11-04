@@ -23,6 +23,7 @@ const INGREDIENTS = {
         SEMI_SWEET_CHOCOLATE_CHIPS: { name: 'semi-sweet chocolate chips', category: INGREDIENT_CATEGORY.BAKING },
         SHREDDED_COCONUT: { name: 'shredded coconut', category: INGREDIENT_CATEGORY.BAKING },
         SLICED_ALMONDS: { name: 'sliced almonds', category: INGREDIENT_CATEGORY.BAKING },
+        SWEETENED_CONDENSED_MILK: { name: 'sweetened condensed milk', category: INGREDIENT_CATEGORY.BAKING },
         SWEET_CHOCOLATE: { name: 'sweet chocolate', category: INGREDIENT_CATEGORY.BAKING },
         TAPIOCA_STARCH: { name: 'tapioca starch', category: INGREDIENT_CATEGORY.BAKING },
         UNSALTED_PEANUTS: { name: 'unsalted peanuts', category: INGREDIENT_CATEGORY.BAKING },
