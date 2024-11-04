@@ -108,6 +108,7 @@ const INGREDIENTS = {
         ICE_COLD_WATER: { name: 'ice cold water', category: INGREDIENT_CATEGORY.BEVERAGES },
         KOOLAID: { name: 'koolaid', category: INGREDIENT_CATEGORY.BEVERAGES },
         LEMON_LIME: { name: 'lemon lime', category: INGREDIENT_CATEGORY.BEVERAGES },
+        LUKEWARM_WATER: { name: 'lukewarm water', category: INGREDIENT_CATEGORY.BEVERAGES },
         MANGO_JUICE: { name: 'mango juice', category: INGREDIENT_CATEGORY.BEVERAGES },
         MATCHA_TEA: { name: 'matcha tea', category: INGREDIENT_CATEGORY.BEVERAGES },
         MILO: { name: 'milo', category: INGREDIENT_CATEGORY.BEVERAGES },
