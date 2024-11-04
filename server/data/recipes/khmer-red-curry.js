@@ -1,7 +1,8 @@
 // const raw = '../assets/Products/khmer-red-curry-raw.jpeg';
 // const paste = '../assets/Products/khmer-red-curry-paste-and-milk.jpeg';
 // const leaves = '../assets/Products/khmer-red-curry-lime-leaves.jpeg';
-const cooked = '../assets/Products/khmer-red-curry-cooked.jpeg';
+const cooked1 = '../assets/Products/khmer-red-curry-cooked-1.jpeg';
+const cooked2 = '../assets/Products/khmer-red-curry-cooked-2.jpeg';
 const bread = '../assets/Products/khmer-red-curry-with-bread.jpeg';
 const bagged = '../assets/Products/khmer-red-curry-bagged.jpeg';
 const chicken = '../assets/Products/khmer-red-curry-chicken.jpeg';
@@ -33,7 +34,7 @@ const {
 module.exports = {
     cardName: 'Khmer Red Curry',
     name: 'Khmer Red Curry',
-    img: plated2,
+    img: cooked2,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.CAMBODIAN],
@@ -73,6 +74,6 @@ module.exports = {
         { step: 'Cook for about 10 minutes.', type: SECTIONS.MAIN },
         { step: 'Turn down the heat and let it simmer for 10 minutes.', type: SECTIONS.MAIN },
         { step: 'Add water or more coconut milk to help thin the curry as desired and cut the spice level.', type: SECTIONS.MAIN },
-        { step: 'Serve this delicious Cambodian spicy curry with vermicelli noodles or baked bread.', type: SECTIONS.MAIN, img: [bread, plated1, cooked] },
+        { step: 'Serve this delicious Cambodian spicy curry with vermicelli noodles or baked bread.', type: SECTIONS.MAIN, img: [bread, plated1, plated2, cooked1] },
     ]
 };
