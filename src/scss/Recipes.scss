@@ -141,6 +141,16 @@
                     color: $white;
                     text-shadow: 1px 1px 1px $black;
                     letter-spacing: 1.5px;
+                    font-size: 18px;
+                    @include down($mid-desktop) {
+                        font-size: 16px;
+                    }
+                    @include down($desktop) {
+                        font-size: 14px;
+                    }
+                    @include down($large-tablet) {
+                        font-size: 12px;
+                    }
                 }
             }
 
