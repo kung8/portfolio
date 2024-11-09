@@ -1591,7 +1591,7 @@ module.exports = {
         },
         {
             date: IN_PROGRESS,
-            title: "The Hobbit",
+            title: "The Hobbit, or There and Back Again",
             author: ["J.R.R. Tolkien"],
             source: ["online"],
             review: [
