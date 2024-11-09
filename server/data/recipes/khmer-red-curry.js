@@ -69,11 +69,15 @@ module.exports = {
         { step: 'Over medium-high heat, add red curry paste and coconut milk in a pan.', type: SECTIONS.MAIN, img: milk },
         { step: 'Cook and stir until it is well combined.', type: SECTIONS.MAIN, img: [mixed1, mixed2] },
         { step: 'Place the lemongrass and kaffir lime leaves in a spice bag.', type: SECTIONS.MAIN, img: [lemongrass, kaffir, bagged] },
-        { step: 'Add the chicken, potatoes, eggplants, and spice bag.', type: SECTIONS.MAIN, img: [chicken, veggies, nonBeans1, nonBeans2, nonBeans3] },
-        { step: 'Add the green beans after a few minutes.', type: SECTIONS.MAIN, img: [beans1, beans2] },
-        { step: 'Cook for about 10 minutes.', type: SECTIONS.MAIN },
-        { step: 'Turn down the heat and let it simmer for 10 minutes.', type: SECTIONS.MAIN },
+        { step: 'Add the chicken, potatoes, and spice bag.', type: SECTIONS.MAIN, img: [chicken, veggies, nonBeans1, nonBeans2, nonBeans3] },
+        { step: 'Cook for about 10.', type: SECTIONS.MAIN },
+        { step: 'Turn down the heat and let it simmer for 10 to 15 minutes. Cook until the chicken is completely cooked through and the potatoes are softened but not mushy.', type: SECTIONS.MAIN, img: [beans1, beans2] },
         { step: 'Add water or more coconut milk to help thin the curry as desired and cut the spice level.', type: SECTIONS.MAIN },
         { step: 'Serve this delicious Cambodian spicy curry with vermicelli noodles or baked bread.', type: SECTIONS.MAIN, img: [bread, plated1, plated2, cooked1] },
+    ], 
+    notes: [
+        'You can really add any structural veggies. I did not like some of the textures of the eggplant when reheated.',
+        'Green beans does not add much to the taste besides some color.',
+        '1/4 cup of the red curry paste is a great spice level (don\'t add any more even if you double or triple the amount).',
     ]
 };
