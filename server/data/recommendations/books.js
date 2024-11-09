@@ -1204,23 +1204,29 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: IN_PROGRESS,
+            date: "11/5/2024",
             title: "Into Thin Air",
             author: ["Jon Krakauer"],
             source: ["Madelyn Baxter"],
             review: [
-                ""
+                "Really thorough telling of the devastating events that occurred on Mount Everest in 1996. I was convinced after reading this book that I will never attempt to climb Everest. Krakauer does his due diligence to interview witnesses and helps us understand the overall account at a holistic view. I appreciate his honesty and vulnerability in sharing his own experience."
             ],
             quotes: [
                 {
-                    text: "",
-                    pages: [],
-                    thoughts: "",
-                    context: ""
+                    text: "'Some people have big dreams, some people have small dreams,' he penned to a girl named Vanessa. 'Whatever you have, the important thing is that you never stop dreaming.'",
+                    pages: [87],
+                    thoughts: "I love this quote. It's important to keep dreaming and don't let reality or others stop us from achieving goals and our dreams.",
+                    context: "During the Everest expedition, the climbers had some free time to engage in whatever they wanted while the teams were acclimatizing. Doug Hansen wrote postcards to the elementary school students who helped raise money through a fundraiser to sponsor his climb."
+                },
+                {
+                    text: "My hunger to climb had been blunted, in short, by a bunch of small satisfactions that added up to something like happiness.",
+                    pages: [30],
+                    thoughts: "There are priorities in our lives that bring us happiness. Some things can satiate our happiness temporarily. People or events in our lives can fill our lives with happiness. Aspirations and goals in our lives that are related to our passions, careers and other areas of our lives are important. Balance is difficult to achieve especially in terms of our happiness. So good luck as you try to figure that out.",
+                    context: "Jon writes about how he was temporarily content with life but in the back of his mind, he still wanted to climb Everest."
                 },
             ],
             pageCount: 368,
-            rating: NO_RATING,
+            rating: 5,
         },
         {
             date: NO_DATE,
