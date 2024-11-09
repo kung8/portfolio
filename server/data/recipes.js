@@ -110,6 +110,7 @@ const pretzel = require("./recipes/pretzel");
 const riceKrispyTreats = require("./recipes/rice-krispy-treats");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const rosemaryLemonade = require("./recipes/rosemary-lemonade");
+const rosemarySweetPotatoFries = require("./recipes/rosemary-sweet-potato-fries");
 const sauteedSquash = require("./recipes/sauteed-squash");
 const scrambledEggs = require("./recipes/scrambled-eggs");
 const singaporeanChickenRice = require("./recipes/singaporean-chicken-rice");
@@ -225,6 +226,7 @@ const recipes = [
     bakedBeans,
     crescentRolls,
     bbqChickenWings,
+    rosemarySweetPotatoFries,
     panFriedChickenThighs,
     chickenKebab,
     potRoast,
