@@ -197,8 +197,11 @@
                     @include down($tablet) {
                         font-size: 12px;
                     }
+                    @include down(700px) {
+                        font-size: 10px;
+                    }
                     @include down($mobile-xl) {
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                     @include down($mobile) {
                         font-size: 24px;

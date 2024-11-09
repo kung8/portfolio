@@ -771,6 +771,7 @@ const INGREDIENTS = {
         OLIVE_OIL: { name: 'olive oil', category: INGREDIENT_CATEGORY.OILS },
         MIRIN: { name: 'mirin', category: INGREDIENT_CATEGORY.OILS },
         PEANUT_OIL: { name: 'peanut oil', category: INGREDIENT_CATEGORY.OILS },
+        RED_WINE: { name: 'red wine', category: INGREDIENT_CATEGORY.OILS },
         RED_WINE_VINEGAR: { name: 'red wine vinegar', category: INGREDIENT_CATEGORY.OILS },
         RICE_WINE_VINEGAR: { name: 'rice wine vinegar', category: INGREDIENT_CATEGORY.OILS },
         SESAME_OIL: { name: 'sesame oil', category: INGREDIENT_CATEGORY.OILS },

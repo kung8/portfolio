@@ -91,6 +91,7 @@ const muddyBuddies = require("./recipes/muddy-buddies");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const padThai = require("./recipes/pad-thai");
+const panFriedChickenThighs = require("./recipes/pan-fried-chicken-thighs");
 const paoDeQueijo = require("./recipes/pao-de-queijo");
 const parfait = require("./recipes/parfait");
 const peachCobbler = require("./recipes/peach-cobbler");
@@ -224,6 +225,7 @@ const recipes = [
     bakedBeans,
     crescentRolls,
     bbqChickenWings,
+    panFriedChickenThighs,
     chickenKebab,
     potRoast,
     chickenPotPie,
