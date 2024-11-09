@@ -49,6 +49,6 @@ module.exports = {
         { step: 'Stir in cream and rosemary.', type: SECTIONS.SAUCE },
         { step: 'Return to a boil.', type: SECTIONS.SAUCE },
         { step: 'Cook until slightly thickened (about 1 to 2 minutes).', type: SECTIONS.SAUCE },
-        { step: 'Top the chicken with the sauce and serve with your favorite sides.', type: SECTIONS.MAIN },
+        { step: 'Top the chicken with the sauce and serve with your favorite sides.', type: SECTIONS.SERVE },
     ]
 };
