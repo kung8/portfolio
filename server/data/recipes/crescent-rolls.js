@@ -4,7 +4,7 @@ const rolled = '../assets/Products/crescent-rolls-dough-rolled-out.jpeg';
 const dough = '../assets/Products/crescent-rolls-dough.jpeg';
 const salt = '../assets/Products/crescent-rolls-salt.jpeg';
 const sugar = '../assets/Products/crescent-rolls-sugar.jpeg';
-const uniformed = '../assets/Products/crescent-rolls-uniformed-yeast-mixture.jpeg';
+const uniform = '../assets/Products/crescent-rolls-uniform-yeast-mixture.jpeg';
 const mixed = '../assets/Products/crescent-rolls-yeast-mixture-mixed.jpeg';
 const yeast = '../assets/Products/crescent-rolls-yeast-mixture.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
@@ -49,7 +49,7 @@ module.exports = {
         { name: 'silicon baking mat' },
     ],
     directions: [
-        { step: 'Combine ingredients in medium bowl.', type: YEAST_MIXTURE, img: [yeast, mixed, uniformed] },
+        { step: 'Combine ingredients in medium bowl.', type: YEAST_MIXTURE, img: [yeast, mixed, uniform] },
         { step: 'Let mixture sit for 3 to 5 minutes.', type: YEAST_MIXTURE },
         { step: 'Combine ingredients in mixing bowl.', type: LIQUID_MIXTURE, img: [butter, sugar, salt] },
         { step: 'Add yeast mixture into liquid mixture. Mix.', type: LIQUID_MIXTURE },
