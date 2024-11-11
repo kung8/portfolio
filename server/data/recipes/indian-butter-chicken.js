@@ -87,7 +87,7 @@ module.exports = {
         { step: 'Add the diced onion and cook until light brown.', type: SECTIONS.MAIN, img: [onion, browned] },
         { step: 'Add the ginger and garlic to the pan and cook until aromatic (about 30 seconds).', img: [fragrant, fragrantAdded] },
         { step: 'Add the chicken, spices, and tomato paste to the pan. Cook until the chicken is browned (about 5 to 6 minutes).', img: [raw, spices, chickenSpicesAdded, paste, browning] },
-        { step: 'Add the heavy cream and let simmer for 8 to 10 minutes.', type: SECTIONS.MAIN, img: [cream, creamAdded, simmering, cooked1, cooked2, cooked3, cooked4] },
+        { step: 'Add the heavy cream and let simmer for 8 to 10 minutes.', type: SECTIONS.MAIN, img: [cream, creamAdded, simmering, cooked1, cooked2, cooked4] },
         { step: 'Serve with rice (and naan or roti is optional and delicious).', type: SECTIONS.MAIN, img: [plated1, plated2, plated3, plated4] },
     ]
 };
