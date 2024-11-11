@@ -29,6 +29,7 @@ const {
     WARM_WATER,
     SALT,
     BLACK_PEPPER,
+    RUSSET_POTATOES,
 } = require('./ingredients');
 
 module.exports = {
@@ -51,6 +52,7 @@ module.exports = {
     ingredients: [
         { ...CHICKEN_THIGH, amount: '5 lbs', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...RED_CURRY_PASTE, amount: '1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...RUSSET_POTATOES, amount: '1', additionalDetails: 'peeled and cubed', section: SECTIONS.MAIN },
         { ...COCONUT_MILK, amount: '13.5 oz', additionalDetails: '', section: SECTIONS.MAIN },
         { ...LEMONGRASS, amount: '', additionalDetails: 'diagonally sliced', section: SECTIONS.MAIN },
         { ...KAFFIR_LIME_LEAVES, amount: '10 - 12', additionalDetails: '', section: SECTIONS.MAIN },
