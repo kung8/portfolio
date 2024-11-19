@@ -34,6 +34,7 @@ module.exports = {
     name: 'Cream Puffs',
     img: plated4,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH, GENRES.ITALIAN],
     method: [METHODS.BAKE],
