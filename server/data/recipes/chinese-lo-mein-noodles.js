@@ -3,7 +3,9 @@ const beef = '../assets/Products/lo-mein-beef.jpeg';
 const drained = '../assets/Products/lo-mein-drained-noodles.jpeg';
 const pan = '../assets/Products/lo-mein-in-pan.jpeg';
 const marinated = '../assets/Products/lo-mein-marinated-beef.jpeg';
-const plated = '../assets/Products/lo-mein-plated.jpeg';
+const plated1 = '../assets/Products/lo-mein-plated-1.jpeg';
+const plated2 = '../assets/Products/lo-mein-plated-2.jpeg';
+const plated3 = '../assets/Products/lo-mein-plated-3.jpeg';
 const sauce = '../assets/Products/lo-mein-sauce.jpeg';
 const steamed = '../assets/Products/lo-mein-steamed-broccoli.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
@@ -28,9 +30,9 @@ const {
 const BEEF = 'Beef';
 
 module.exports = {
-    cardName: 'Lo Mein',
+    cardName: 'Lo Mein Noodles',
     name: 'Lo Mein Noodles',
-    img: plated,
+    img: plated2,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -85,6 +87,6 @@ module.exports = {
         { step: 'Heat 1 Tbsp vegetable oil in the wok. Add the noodles and stir noodles until coated with oil (about 30 seconds).', type: SECTIONS.MAIN },
         { step: 'Add the sauce and stir until noodles are evenly coated (about 1 minute).', type: SECTIONS.MAIN },
         { step: 'Add the garlic, beef and broccoli and continue to cook until everything is combined (about 1 minutes). I like to add these in one at a time and mix.', type: SECTIONS.MAIN, img: pan },
-        { step: 'Serve and enjoy this delicious Chinese dish!', type: SECTIONS.MAIN },
+        { step: 'Serve and enjoy this delicious Chinese dish!', type: SECTIONS.MAIN, img: [plated1, plated3] },
     ]
 };
