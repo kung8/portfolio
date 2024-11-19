@@ -92,6 +92,6 @@ module.exports = {
     ],
     notes: [
         'With one jalapeno pepper it is very mild and a great base for those who do not like spicy food.',
-        'I prefer a thicker chili, so I added more tomato paste and let it simmer longer.',
+        'I prefer a thicker chili, so I added more tomato paste (total of 6 oz) and let it simmer longer.',
     ]
 };
