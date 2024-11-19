@@ -3,7 +3,6 @@ const yeast2 = '../assets/Products/crescent-rolls-yeast-2.jpeg';
 const yeast3 = '../assets/Products/crescent-rolls-yeast-3.jpeg';
 const yeast4 = '../assets/Products/crescent-rolls-yeast-4.jpeg';
 const yeast5 = '../assets/Products/crescent-rolls-yeast-5.jpeg';
-
 const baked1 = '../assets/Products/crescent-rolls-baked-1.jpeg';
 const baked2 = '../assets/Products/crescent-rolls-baked-2.jpeg';
 const baked3 = '../assets/Products/crescent-rolls-baked-3.jpeg';
@@ -40,7 +39,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
-    yields: '10 servings',
+    yields: '32 rolls',
     prepTime: '15 m',
     cookTime: '20 m',
     separated: true,
