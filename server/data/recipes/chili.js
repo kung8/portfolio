@@ -52,6 +52,9 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.SOUP],
     separated: true,
+    websites: [
+        { label: 'Chili', link: 'https://www.spendwithpennies.com/the-best-chili-recipe/' }
+    ],
     yields: '6 servings',
     prepTime: '20 m',
     cookTime: '45 m',
