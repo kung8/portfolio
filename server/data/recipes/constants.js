@@ -127,8 +127,10 @@ const SECTIONS = {
     SOUP: 'Soup',
     MEAT: 'Meat',
     EGGS: 'Eggs',
+    BAKE: 'Bake',
     ASSEMBLY: 'Assembly',
     STORE: 'Store',
+    FROSTING: 'Frosting',
 };
 
 const TYPES = {

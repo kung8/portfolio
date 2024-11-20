@@ -1,0 +1,73 @@
+const example = '../assets/Products/example.jpeg';
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { YEAST, WHITE_SUGAR, EGGS, EGG_YOLKS, UNSALTED_BUTTER, BREAD_FLOUR, SALT, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, POWDERED_SUGAR, VANILLA_EXTRACT, MILK } = require('./ingredients');
+
+module.exports = {
+    cardName: 'Cinnamon Rolls',
+    name: 'Cinnamon Rolls',
+    img: '',
+    available: true,
+    category: [CATEGORIES.DESSERT],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKE],
+    type: [TYPES.DESSERT],
+    yields: '9 servings',
+    prepTime: '2 h',
+    cookTime: '20 m',
+    websites: [
+        { label: 'Cinnamon Rolls', link: 'https://www.ambitiouskitchen.com/best-cinnamon-rolls/' }
+    ],
+    separated: true,
+    ingredients: [
+        { ...MILK, amount: '3/4 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: '2 1/4 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: '1/4 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...EGGS, amount: '1', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...EGG_YOLKS, amount: '1', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...UNSALTED_BUTTER, amount: '1/4 c', additionalDetails: 'melted', section: SECTIONS.DOUGH },
+        { ...BREAD_FLOUR, amount: '3 c', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: '3/4 tsp', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...UNSALTED_BUTTER, amount: '1/4 c', additionalDetails: 'softened', section: SECTIONS.FILLING },
+        { ...BROWN_SUGAR, amount: '2/3 c', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CINNAMON, amount: '1 1/2 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CREAM_CHEESE, amount: '4 oz', additionalDetails: 'softened', section: SECTIONS.FROSTING },
+        { ...UNSALTED_BUTTER, amount: '3 Tbsp', additionalDetails: 'softened', section: SECTIONS.FROSTING },
+        { ...POWDERED_SUGAR, amount: '3/4 c', additionalDetails: '', section: SECTIONS.FROSTING },
+        { ...VANILLA_EXTRACT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.FROSTING },
+    ],
+    appliances: [
+        { name: 'microwave' },
+        { name: 'stand mixer' },
+        { name: 'oven' },
+    ],
+    supplies: [
+        { name: 'microwavable bowl' },
+        { name: '2 mixing bowls' },
+        { name: 'small bowl' },
+    ],
+    directions: [
+        { step: 'Add milk to a microwavable bowl and microwave for 40 to 45 seconds. It should be about 110ºF (or like warm bath water).', type: SECTIONS.DOUGH },
+        { step: 'Transfer milk to a bowl in a stand mixer.', type: SECTIONS.DOUGH },
+        { step: 'Add egg, yolk, sugar, and melted butter. Mix.', type: SECTIONS.DOUGH },
+        { step: 'Add flour and salt. Mix until dough.', type: SECTIONS.DOUGH },
+        { step: 'Attach the dough hook and knead the dough on medium speed for 8 minutes. It should form a ball and be only slightly sticky. If it\'s too sticky (i.e. sticking to the bottom of the mixer), add up to 2 tablespoons of bread flour.', type: SECTIONS.DOUGH },
+        { step: 'Oil a mixing bowl, transfer dough.', type: SECTIONS.DOUGH },
+        { step: 'Cover with plastic wrap and warm towel.', type: SECTIONS.DOUGH },
+        { step: 'Let the dough double in size (about 1 to 1 1/2 hours).', type: SECTIONS.DOUGH },
+        { step: 'Line a baking sheet with a silicon baking mat.', type: SECTIONS.DOUGH },
+        { step: 'Roll out the dough on a clean, well-floured surface to about 14x9 inches.', type: SECTIONS.DOUGH },
+        { step: 'Spread softened butter on dough with a quarter inch from the border.', type: SECTIONS.FILLING },
+        { step: 'In a small bowl, combine brown sugar and cinnamon.', type: SECTIONS.FILLING },
+        { step: 'Sprinkle cinnamon sugar over buttered dough.', type: SECTIONS.FILLING },
+        { step: 'Rub cinnamon sugar into the butter.', type: SECTIONS.FILLING },
+        { step: 'Tightly roll the dough from the shorter side.', type: SECTIONS.FILLING },
+        { step: 'Using a serrated knife, cut the rolls into 1 inch.', type: SECTIONS.FILLING },
+        { step: 'Cover the rolls with plastic wrap and a warm towel. Let it rise again for 30 to 45 minutes.', type: SECTIONS.FILLING },
+        { step: 'Preheat the oven to 350ºF.', type: SECTIONS.BAKE },
+        { step: 'Remove the plastic wrap and the towel.', type: SECTIONS.BAKE },
+        { step: 'Bake until the edges are slightly golden brown (about 20 to 25 minutes). Do not bake all the way through to prevent it from being dried out in the center.', type: SECTIONS.BAKE },
+        { step: 'Let the rolls cooled for 5 to 10 minutes.', type: SECTIONS.BAKE },
+        { step: 'In a mixing bowl, combine frosting ingredients.', type: SECTIONS.FROSTING },
+        { step: 'Spread frosting over cinnamon rolls and enjoy warm!', type: SECTIONS.SERVE },
+    ]
+};

@@ -47,6 +47,7 @@ const chineseLoMeinNoodles = require("./recipes/chinese-lo-mein-noodles");
 const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateMousse = require("./recipes/chocolate-mousse");
+const cinnamonRolls = require("./recipes/cinnamon-rolls");
 const coleslaw = require("./recipes/coleslaw");
 const creamPuffs = require("./recipes/cream-puffs");
 const cremeBrulee = require("./recipes/creme-brulee");
@@ -291,12 +292,13 @@ const recipes = [
     blondie,
     brickleBars,
     brownies,
-    applePie,
-    lemonBars,
     tedLassoBiscuits,
+    lemonBars,
+    applePie,
     noBakeCookie,
     muddyBuddies,
     riceKrispyTreats,
+    cinnamonRolls,
     creamPuffs,
     eclair,
     cremeBrulee,
