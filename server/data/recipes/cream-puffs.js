@@ -40,7 +40,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.EGG],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT, TYPES.PASTRY],
-    yields: '8 servings',
+    yields: '8 puffs',
     prepTime: '30 m',
     cookTime: '30 m',
     websites: [

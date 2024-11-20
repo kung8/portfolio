@@ -14,6 +14,7 @@ const INGREDIENTS = {
         COCOA_POWDER: { name: 'cocoa powder', category: INGREDIENT_CATEGORY.BAKING },
         CORNSTARCH: { name: 'cornstarch', category: INGREDIENT_CATEGORY.BAKING },
         DARK_COOKING_CHOCOLATE: { name: 'dark cooking chocolate', category: INGREDIENT_CATEGORY.BAKING },
+        ENGLISH_TOFFEE_BITS: { name: 'english toffee bits', category: INGREDIENT_CATEGORY.BAKING },
         PECANS: { name: 'pecans', category: INGREDIENT_CATEGORY.BAKING },
         PANKO_BREADCRUMBS: { name: 'panko breadcrumbs', category: INGREDIENT_CATEGORY.BAKING },
         PEPPERMINT_EXTRACT: { name: 'peppermint extract', category: INGREDIENT_CATEGORY.BAKING },

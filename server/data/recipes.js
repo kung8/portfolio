@@ -15,6 +15,7 @@ const bibimbap = require("./recipes/bibimbap");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
 const blondie = require("./recipes/blondie");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
+const brickleBars = require("./recipes/brickle-bars");
 const broccoliCheddarSoup = require("./recipes/broccoli-cheddar-soup");
 const brownies = require("./recipes/brownies");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
@@ -288,6 +289,7 @@ const recipes = [
     chocolateChipCookies,
     oatmealRaisinCookies,
     blondie,
+    brickleBars,
     brownies,
     applePie,
     lemonBars,
