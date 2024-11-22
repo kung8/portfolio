@@ -16,7 +16,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.COOKIE],
-    yields: '24 servings',
+    yields: '8 to 24 servings',
     prepTime: '15 m',
     cookTime: '11 m',
     separated: true,
