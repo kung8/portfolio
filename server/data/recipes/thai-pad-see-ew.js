@@ -65,7 +65,7 @@ module.exports = {
         { ...CORNSTARCH, amount: '1 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
 
         { ...EGGS, amount: '2', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '4', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...CHINESE_BROCCOLI, amount: '5 pc', additionalDetails: 'leaves and stems separated', section: SECTIONS.MAIN },
         { ...RED_BELL_PEPPERS, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
@@ -79,7 +79,7 @@ module.exports = {
         { ...BROWN_SUGAR, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...WHITE_PEPPER, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { ...GARLIC, amount: '1 clove', additionalDetails: '', section: THAI_CHILI_PEPPER },
+        { ...GARLIC, amount: '1', additionalDetails: '', section: THAI_CHILI_PEPPER },
         { ...THAI_CHILI_PEPPERS, amount: '2 - 3', additionalDetails: '', section: THAI_CHILI_PEPPER },
         { ...WHITE_VINEGAR, amount: '1/4 c', additionalDetails: '', section: THAI_CHILI_PEPPER },
     ],

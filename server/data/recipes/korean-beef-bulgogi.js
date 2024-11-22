@@ -43,7 +43,7 @@ module.exports = {
         { ...SESAME_OIL, amount: '4 Tbsp', additionalDetails: '', section: BEEF_SECTION },
         { ...LIGHT_SOY_SAUCE, amount: '1/2 c', additionalDetails: '', section: BEEF_SECTION },
         { ...BROWN_SUGAR, amount: '4 Tbsp', additionalDetails: '', section: BEEF_SECTION },
-        { ...GARLIC, amount: '6 cloves', additionalDetails: 'minced', section: BEEF_SECTION },
+        { ...GARLIC, amount: '6', additionalDetails: 'minced', section: BEEF_SECTION },
         { ...GINGER, amount: '2 Tbsp', additionalDetails: 'peeled and diced', section: BEEF_SECTION },
         { ...GOCHUJANG_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: BEEF_SECTION },
         { ...VEGETABLE_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },

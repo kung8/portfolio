@@ -50,7 +50,7 @@ module.exports = {
         { ...ONION_POWDER, amount: '1/2 tsp', additionalDetails: '', section: BREADING },
         { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: BREADING },
         { ...OLIVE_OIL, amount: '1/4 c', additionalDetails: '', section: DREDGING },
-        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', section: DREDGING },
+        { ...GARLIC, amount: '2', additionalDetails: 'minced', section: DREDGING },
         { ...PAPRIKA, amount: '1/2 tsp', additionalDetails: '', section: DREDGING },
         { ...CHICKEN_BREAST, amount: '6', additionalDetails: 'halved', section: SECTIONS.MAIN },
         { ...SALT, amount: '', additionalDetails: 'season', section: SECTIONS.MAIN },

@@ -55,7 +55,7 @@ module.exports = {
         { ...BEEF_CHUCK_ROAST, amount: '1 lb', additionalDetails: 'thin strips', optional: false, section: SECTIONS.MAIN },
         { ...GREEN_BEANS, amount: '24 oz', additionalDetails: 'cut to 2" pieces', optional: false, section: SECTIONS.MAIN },
         { ...GREEN_ONIONS, amount: '6', additionalDetails: 'diagonally sliced', optional: false, section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '4', additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
         { ...SALT, amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
     ],

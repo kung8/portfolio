@@ -147,7 +147,7 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
         { ...ALL_PURPOSE_FLOUR, amount: '1 Tbsp', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
         { ...MILK, amount: '1/2 c', additionalDetails: 'cold', section: PHILLY_CHEESESTEAK_SAUCE },
-        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: PHILLY_CHEESESTEAK_SAUCE },
+        { ...GARLIC, amount: '3', additionalDetails: 'minced', section: PHILLY_CHEESESTEAK_SAUCE },
         { ...SALT, amount: '1/8 tsp', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
         { ...BLACK_PEPPER, amount: 'pinch', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
         { ...NUTMEG, amount: 'pinch', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },

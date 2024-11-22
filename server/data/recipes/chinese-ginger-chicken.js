@@ -33,7 +33,7 @@ module.exports = {
     ingredients: [
         { ...CHICKEN_THIGH, amount: '3 lb', additionalDetails: 'cut into 2 inch pieces', section: SECTIONS.MAIN },
         { ...GINGER, amount: '3 inch', additionalDetails: 'strips', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '3', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...LIGHT_SOY_SAUCE, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },

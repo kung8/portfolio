@@ -30,7 +30,7 @@ module.exports = {
         { ...BEEF, amount: '3 lbs', additionalDetails: 'sliced', optional: false },
         { ...MEDIUM_YELLOW_ONION, amount: '4', additionalDetails: 'sliced', optional: false },
         { ...MUSHROOMS, amount: '1 lb', additionalDetails: 'sliced', optional: false },
-        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', optional: false },
+        { ...GARLIC, amount: '2', additionalDetails: 'minced', optional: false },
         { ...UNSALTED_BUTTER, amount: '1/2 c', additionalDetails: '', optional: false },
         { ...BEEF_BROTH, amount: '3 c', additionalDetails: '', optional: false },
         { ...SALT, amount: '1 tsp', additionalDetails: '', optional: false },

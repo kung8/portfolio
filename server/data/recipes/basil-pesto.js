@@ -42,7 +42,7 @@ module.exports = {
     ingredients: [
         { ...PINE_NUTS, amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...LEMON_JUICE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: '1 clove', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: '1', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SEA_SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...BLACK_PEPPER, amount: '', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...BASIL_LEAVES, amount: '2 c', additionalDetails: '', section: SECTIONS.SAUCE },

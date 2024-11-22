@@ -53,7 +53,7 @@ module.exports = {
     ],
     ingredients: [
         { ...CHICKEN_THIGH, amount: '3 lb', additionalDetails: 'cut into 2 - 2.5" pieces', section: SECTIONS.MARINADE },
-        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SECTIONS.MARINADE },
+        { ...GARLIC, amount: '3', additionalDetails: 'minced', section: SECTIONS.MARINADE },
         { ...GINGER, amount: '1/2 tsp', additionalDetails: 'grated', section: SECTIONS.MARINADE },
         { ...SALT, amount: '2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...MIRIN, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
@@ -71,7 +71,7 @@ module.exports = {
 
         { ...HONEY, amount: '1/4 c', additionalDetails: '', section: SWEET_AND_TANGY_SAUCE },
         { ...LIGHT_SOY_SAUCE, amount: '1/4 c', additionalDetails: '', section: SWEET_AND_TANGY_SAUCE },
-        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SWEET_AND_TANGY_SAUCE },
+        { ...GARLIC, amount: '3', additionalDetails: 'minced', section: SWEET_AND_TANGY_SAUCE },
         { ...GINGER, amount: '1/2 tsp', additionalDetails: 'grated', section: SWEET_AND_TANGY_SAUCE },
         { ...RICE_WINE_VINEGAR, amount: '3 Tbsp', additionalDetails: '', section: SWEET_AND_TANGY_SAUCE },
         { ...HOISIN_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: SWEET_AND_TANGY_SAUCE },
@@ -85,7 +85,7 @@ module.exports = {
         { ...HONEY, amount: '1 Tbsp', additionalDetails: '', section: SWEET_AND_SPICY_SAUCE },
         { ...KETCHUP, amount: '1 Tbsp', additionalDetails: '', section: SWEET_AND_SPICY_SAUCE },
         { ...WARM_WATER, amount: '6 Tbsp', additionalDetails: '', section: SWEET_AND_SPICY_SAUCE },
-        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', section: SWEET_AND_SPICY_SAUCE },
+        { ...GARLIC, amount: '2', additionalDetails: 'minced', section: SWEET_AND_SPICY_SAUCE },
         { ...GINGER, amount: '1/2 tsp', additionalDetails: 'grated', section: SWEET_AND_SPICY_SAUCE },
         { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SWEET_AND_SPICY_SAUCE },
         { ...THAI_CHILI_PEPPERS, amount: '2', additionalDetails: 'optional and minced', section: SWEET_AND_SPICY_SAUCE },
