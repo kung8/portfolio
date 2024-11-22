@@ -131,6 +131,7 @@ const SECTIONS = {
     ASSEMBLY: 'Assembly',
     STORE: 'Store',
     FROSTING: 'Frosting',
+    BEEF: 'Beef',
 };
 
 const TYPES = {
