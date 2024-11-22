@@ -17,6 +17,8 @@ const blondie = require("./recipes/blondie");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
 const brickleBars = require("./recipes/brickle-bars");
 const broccoliCheddarSoup = require("./recipes/broccoli-cheddar-soup");
+const brownedButter = require("./recipes/browned-butter");
+const brownedButterChocolateChipCookies = require("./recipes/browned-butter-chocolate-chip-cookies");
 const brownies = require("./recipes/brownies");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cabbageStirFry = require("./recipes/cabbage-stir-fry");
@@ -291,6 +293,7 @@ const recipes = [
     snickerdoodle,
     chocolateChipCookies,
     oatmealRaisinCookies,
+    brownedButterChocolateChipCookies,
     blondie,
     brickleBars,
     brownies,
@@ -309,6 +312,7 @@ const recipes = [
     caramelApples,
     graveyardDessert,
     smores,
+    brownedButter,
 
     //////////////////////////////////////////////////////////////////////// DRINK ///////////////////////////////////////////////////////////////////////
     rosemaryLemonade,
