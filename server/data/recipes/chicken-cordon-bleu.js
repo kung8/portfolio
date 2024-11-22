@@ -1,11 +1,24 @@
 const breadcrumb = '../assets/Products/chicken-cordon-bleu-breadcrumb.jpeg';
 const cookedZoomed = '../assets/Products/chicken-cordon-bleu-cooked-zoomed.jpeg';
-const cooked = '../assets/Products/chicken-cordon-bleu-cooked.jpeg';
 const hamAndCheese = '../assets/Products/chicken-cordon-bleu-ham-and-cheese.jpeg';
 const zoomed = '../assets/Products/chicken-cordon-bleu-on-plate-zoomed.jpeg';
 const rawGrouped = '../assets/Products/chicken-cordon-bleu-raw-grouped.jpeg';
 const rawSlices = '../assets/Products/chicken-cordon-bleu-raw-slices.jpeg';
 const saltAndPepper = '../assets/Products/chicken-cordon-bleu-salt-and-pepper.jpeg';
+
+const plated1 = '../assets/Products/chicken-cordon-bleu-plated-1.jpeg';
+const plated2 = '../assets/Products/chicken-cordon-bleu-plated-2.jpeg';
+const plated3 = '../assets/Products/chicken-cordon-bleu-plated-3.jpeg';
+const plated4 = '../assets/Products/chicken-cordon-bleu-plated-4.jpeg';
+const plated5 = '../assets/Products/chicken-cordon-bleu-plated-5.jpeg';
+const sauce1 = '../assets/Products/chicken-cordon-bleu-sauce-1.jpeg';
+const sauce2 = '../assets/Products/chicken-cordon-bleu-sauce-2.jpeg';
+const sauce3 = '../assets/Products/chicken-cordon-bleu-sauce-3.jpeg';
+const cooked1 = '../assets/Products/chicken-cordon-bleu-cooked-1.jpeg';
+const cooked2 = '../assets/Products/chicken-cordon-bleu-cooked-2.jpeg';
+const cooked3 = '../assets/Products/chicken-cordon-bleu-cooked-3.jpeg';
+const cooked4 = '../assets/Products/chicken-cordon-bleu-cooked-4.jpeg';
+const baking = '../assets/Products/chicken-cordon-bleu-baking.jpeg';
 
 const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, TYPES } = require('./constants');
 const {
@@ -23,7 +36,7 @@ const {
 module.exports = {
     cardName: 'Chicken Cordon Bleu',
     name: 'Chicken Cordon Bleu',
-    img: cookedZoomed,
+    img: zoomed,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
@@ -70,9 +83,9 @@ module.exports = {
         { step: 'Add salt and pepper to the chicken on both sides.', type: SECTIONS.MAIN, img: saltAndPepper },
         { step: 'Melt the butter and brush the chicken on both sides.', type: SECTIONS.MAIN },
         { step: 'Dip the chicken into the cornflakes and place in a baking pan.', type: SECTIONS.MAIN, img: breadcrumb },
-        { step: 'Bake on the center rack for 30 minutes, or until the chicken is cooked through (160ºF).', type: SECTIONS.MAIN, img: cooked },
-        { step: 'Warm mayo and mustard together in a sauce pan right before you serve it with the chicken cordon bleu.', type: SECTIONS.SAUCE },
-        { step: 'Serve the chicken cordon bleu with the warm mayo and mustard sauce.', type: SECTIONS.SERVE, img: zoomed },
+        { step: 'Bake on the center rack for 30 minutes, or until the chicken is cooked through (160ºF).', type: SECTIONS.MAIN, img: [baking, cooked1, cooked2, cooked3, cooked4] },
+        { step: 'Warm mayo and mustard together in a sauce pan right before you serve it with the chicken cordon bleu.', type: SECTIONS.SAUCE, img: [sauce1, sauce2, sauce3] },
+        { step: 'Serve the chicken cordon bleu with the warm mayo and mustard sauce.', type: SECTIONS.SERVE, img: [cookedZoomed, plated1, plated2, plated3, plated4, plated5] },
     ],
     notes: [
         'You can choose to freeze the chicken cordon bleu up to 3 months. Thaw in the refrigerator overnight before baking.'
