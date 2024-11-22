@@ -77,7 +77,7 @@ module.exports = {
         { step: 'Continue to boil cream until thick (about 30 seconds).', type: SECTIONS.FILLING },
         { step: 'Strain.', type: SECTIONS.FILLING },
         { step: 'Cover with plastic wrap and chill for at least 30 minutes.', type: SECTIONS.FILLING },
-        { step: 'In a mixing bowl, whip cream until soft peaks form.', type: SECTIONS.FILLING },
+        { step: 'In a mixing bowl, whip the heavy cream until soft peaks form.', type: SECTIONS.FILLING },
         { step: 'Whisk chilled cream.', type: SECTIONS.FILLING },
         { step: 'Fold in cream until mixed.', type: SECTIONS.FILLING },
         { step: 'In a microwavable bowl, melt chocolate at 50% power in 30 second intervals.', type: CHOCOLATE_GLAZE },
