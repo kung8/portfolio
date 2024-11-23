@@ -444,18 +444,6 @@ export const Recipe = ({ match }) => {
                         </ol>
                     )}
 
-                    {item.notes && <Notes notes={item.notes} />}
-
-                    {item.separated && figures ? (
-                        <div className="figures-container">
-                            {figures.map((figure, i) => <Figure key={i} index={i} figure={figure} setSelectedFigureLabel={setSelectedFigureLabel} onClick={openRecipeImageModal} />)}
-                        </div>
-                    ) : nonSeparatedFigures ? (
-                        <div className="figures-container">
-                            {nonSeparatedFigures.map((figure, i) => <Figure key={i} index={i} figure={figure} setSelectedFigureLabel={setSelectedFigureLabel} onClick={openRecipeImageModal} />)}
-                        </div>
-                    ) : null}
-
                     {item.websites && item.websites.length > 0 && (
                         <>
                             <h4 className="recipe-detail-label">Website References:</h4>
@@ -470,6 +458,18 @@ export const Recipe = ({ match }) => {
                             </ul>
                         </>
                     )}
+
+                    {item.notes && <Notes notes={item.notes} />}
+
+                    {item.separated && figures ? (
+                        <div className="figures-container">
+                            {figures.map((figure, i) => <Figure key={i} index={i} figure={figure} setSelectedFigureLabel={setSelectedFigureLabel} onClick={openRecipeImageModal} />)}
+                        </div>
+                    ) : nonSeparatedFigures ? (
+                        <div className="figures-container">
+                            {nonSeparatedFigures.map((figure, i) => <Figure key={i} index={i} figure={figure} setSelectedFigureLabel={setSelectedFigureLabel} onClick={openRecipeImageModal} />)}
+                        </div>
+                    ) : null}
                 </div>
             ) : (
                 <div className="loader-container">
