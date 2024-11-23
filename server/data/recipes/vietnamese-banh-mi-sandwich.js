@@ -155,9 +155,9 @@ module.exports = {
         { step: 'Add the vegetables and enjoy this delicious Vietnamese cuisine.', type: SECTIONS.MAIN },
     ],
     notes: [
-        'If you cannot find banana leaves, you can use aluminum foil.',
-        'If you cannot find daikon, you can use turnips.',
-        'My favorite place to get Banh Mi Sandwiches is called D.C. Banh Mi in Falls Church, VA. Get their #1 Combination Sandwich, and you won\'t regret it!'
+        { note: 'If you cannot find banana leaves, you can use aluminum foil.' },
+        { note: 'If you cannot find daikon, you can use turnips.' },
+        { note: 'My favorite place to get Banh Mi Sandwiches is called D.C. Banh Mi in Falls Church, VA. Get their #1 Combination Sandwich, and you won\'t regret it!' }
     ],
     tags: ['vietnamese', 'sandwich', 'banh mi', 'pork', 'pickled vegetables', 'french bread'],
 };

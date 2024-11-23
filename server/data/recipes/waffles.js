@@ -83,9 +83,9 @@ module.exports = {
         { step: 'Eat these warm topped with your favorite toppings.', type: SECTIONS.SERVE, img: aesthetic },
     ],
     notes: [
-        'To keep waffles warm, place them in an oven at 225ºF.',
-        'If you want to make buttermilk waffles, use buttermilk in place of milk and use 1 1/2 tsp baking powder instead and 1/2 tsp baking soda.',
-        'Do not overmix the batter. It is okay if there are a few lumps.',
-        'Fill the waffle iron until it is almost full--it will spill out a little bit.'
+        { note: 'To keep waffles warm, place them in an oven at 225ºF.' },
+        { note: 'If you want to make buttermilk waffles, use buttermilk in place of milk and use 1 1/2 tsp baking powder instead and 1/2 tsp baking soda.' },
+        { note: 'Do not overmix the batter. It is okay if there are a few lumps.' },
+        { note: 'Fill the waffle iron until it is almost full--it will spill out a little bit.' },
     ]
 }

@@ -119,6 +119,6 @@ module.exports = {
         { step: 'Assemble the salad bowls with the warmed tortilla, cooked rice, warmed beans, cooked steak, salad kit, and all the other desired toppings.', type: SECTIONS.MAIN, img: [tortilla, bowled, cilantroRanchDressing, cilantroAvocadoDressing, southwestDressing] },
     ],
     notes: [
-        'I sometimes forget items in fridge or pantry when I am ready to make the salad. I recommend making a list of items beforehand, so you can reference at the time of assembly and not miss your favorite ingredients.'
+        { note: 'I sometimes forget items in fridge or pantry when I am ready to make the salad. I recommend making a list of items beforehand, so you can reference at the time of assembly and not miss your favorite ingredients.' }
     ]
 };

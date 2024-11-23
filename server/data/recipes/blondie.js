@@ -74,6 +74,6 @@ module.exports = {
         { step: 'Enjoy these tasty, simple and light desserts.', type: SECTIONS.MAIN },
     ],
     notes: [
-        'The melted butter and the extra yolk are what give these blondies their chewy texture.',
+        { note: 'The melted butter and the extra yolk are what give these blondies their chewy texture.' },
     ]
 };

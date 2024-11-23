@@ -97,7 +97,7 @@ module.exports = {
         { step: 'Serve with your favorite toppings and feel free to add as much spice as you can handle or desire.', type: SECTIONS.TOPPINGS, img: [plated1, plated2, plated3, plated4, plated5, plated6] },
     ],
     notes: [
-        'With one jalapeno pepper it is very mild and a great base for those who do not like spicy food.',
-        'I prefer a thicker chili, so I added more tomato paste (total of 6 oz) and let it simmer longer.',
+        { note: 'With one jalapeno pepper it is very mild and a great base for those who do not like spicy food.' },
+        { note: 'I prefer a thicker chili, so I added more tomato paste (total of 6 oz) and let it simmer longer.' },
     ]
 };

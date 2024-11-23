@@ -128,6 +128,6 @@ module.exports = {
         { step: 'While sauce is hot, drizzle onto the chicken and serve with rice.', type: SECTIONS.SERVE, img: rice },
     ],
     notes: [
-        'Be sure the oil is hot enough or else the chicken/batter will just soak in the oil and will not get browned.'
+        { note: 'Be sure the oil is hot enough or else the chicken/batter will just soak in the oil and will not get browned.' }
     ]
 };

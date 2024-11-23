@@ -46,8 +46,8 @@ module.exports = {
         { step: 'Drizzle a light amount of olive oil. If you choose to use other proteins, note that the amount of oil may need to be adjusted.', type: SECTIONS.MAIN },
         { step: 'Cover with aluminum foil.', type: SECTIONS.MAIN },
         { step: 'Bake for 40 minutes, or until the selected protein is cooked.', type: SECTIONS.MAIN, img: dinner },
-    ], 
+    ],
     notes: [
-        'This was a favorite tradition of mine when camping. Simply wrapping whatever food in layers of tin foil and cooking over a campfire. And while it cooked, telling stories and enjoying the outdoors.',
+        { note: 'This was a favorite tradition of mine when camping. Simply wrapping whatever food in layers of tin foil and cooking over a campfire. And while it cooked, telling stories and enjoying the outdoors.' },
     ],
 };

@@ -86,6 +86,6 @@ module.exports = {
         { step: 'Serve over warm biscuits.', type: GRAVY, img: biscuits },
     ],
     notes: [
-        'Feel free to replace the ground pork with ground turkey.',
+        { note: 'Feel free to replace the ground pork with ground turkey.' },
     ],
 };

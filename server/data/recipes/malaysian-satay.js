@@ -66,13 +66,13 @@ module.exports = {
         { step: 'Serve with cucumbers.', type: SECTIONS.SERVE },
     ],
     notes: [
-        'lemongrass can be found in the frozen section of Asian grocery stores',
-        'lemongrass adds a fresh, sweet, lemony aroma.',
-        'shallows add sweetness.',
-        'turmeric powder adds a nice yellow color to the chicken.',
-        'coriander powder\'s citrusy and peppery flavor complements the lemongrass',
-        'chili powder adds a little heat to the chicken.',
-        'salt and sugar enhances the other flavors.',
-        'garlic adds a savory flavor.'
+        { note: 'lemongrass can be found in the frozen section of Asian grocery stores' },
+        { note: 'lemongrass adds a fresh, sweet, lemony aroma.' },
+        { note: 'shallows add sweetness.' },
+        { note: 'turmeric powder adds a nice yellow color to the chicken.' },
+        { note: 'coriander powder\'s citrusy and peppery flavor complements the lemongrass' },
+        { note: 'chili powder adds a little heat to the chicken.' },
+        { note: 'salt and sugar enhances the other flavors.' },
+        { note: 'garlic adds a savory flavor.' },
     ]
 };

@@ -74,6 +74,6 @@ module.exports = {
         { step: 'Enjoy a taste of America\'s traditional dessert al la mode (i.e. topped with ice cream) or all by itself.', type: SECTIONS.MAIN, img: [plated, sliced, zoomed1, zoomed2, zoomed3, zoomed4, zoomed5] },
     ],
     notes: [
-        'Slicing this pie is easier when it is cooled but it may come out crumbly but it\'s still good.',
+        { note: 'Slicing this pie is easier when it is cooled but it may come out crumbly but it\'s still good.' },
     ]
 };

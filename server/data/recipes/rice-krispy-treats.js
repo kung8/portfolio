@@ -50,11 +50,11 @@ module.exports = {
         { step: 'Let cool and enjoy.', type: SECTIONS.MAIN },
     ],
     notes: [
-        "Be generous on marshmallows. The more marshmallows, the chewier the treats will be. Make sure it is completely melted to adhere well and are soft.",
-        "Do not use stale or old marshmallows. They will not melt well and will make the treats hard.",
-        "Do not overcook the marshmallows or the sugar will become hard.",
-        "If you want a thicker treat, use a smaller baking pan.",
-        "Use real butter and some vanilla for the best flavor.",
-        "Variations of this recipe include (1) Lemon, (2) Turtle (chocolate, caramel, and pecans), (3) Peanut Butter (chocolate and peanut butter), (4) Pineapple Coconut (pineapple and coconut), (5) Chocolate Oreo (crushed Oreo), and (6) Dulce de Leche (milk and white chocolate).",
+        { note: "Be generous on marshmallows. The more marshmallows, the chewier the treats will be. Make sure it is completely melted to adhere well and are soft." },
+        { note: "Do not use stale or old marshmallows. They will not melt well and will make the treats hard." },
+        { note: "Do not overcook the marshmallows or the sugar will become hard." },
+        { note: "If you want a thicker treat, use a smaller baking pan." },
+        { note: "Use real butter and some vanilla for the best flavor." },
+        { note: "Variations of this recipe include (1) Lemon, (2) Turtle (chocolate, caramel, and pecans), (3) Peanut Butter (chocolate and peanut butter), (4) Pineapple Coconut (pineapple and coconut), (5) Chocolate Oreo (crushed Oreo), and (6) Dulce de Leche (milk and white chocolate)." },
     ]
 };

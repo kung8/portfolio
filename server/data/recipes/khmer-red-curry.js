@@ -76,10 +76,10 @@ module.exports = {
         { step: 'Turn down the heat and let it simmer for 10 to 15 minutes. Cook until the chicken is completely cooked through and the potatoes are softened but not mushy.', type: SECTIONS.MAIN, img: [beans1, beans2] },
         { step: 'Add water or more coconut milk to help thin the curry as desired and cut the spice level.', type: SECTIONS.MAIN },
         { step: 'Serve this delicious Cambodian spicy curry with vermicelli noodles or baked bread.', type: SECTIONS.MAIN, img: [bread, plated1, plated2, cooked1] },
-    ], 
+    ],
     notes: [
-        'You can really add any structural veggies. I did not like some of the textures of the eggplant when reheated.',
-        'Green beans does not add much to the taste besides some color and adds crunch as long as you do not overcook it. Make sure to add a little later in the cooking process.',
-        '1/4 cup of the red curry paste is a great spice level (don\'t add any more even if you double or triple the amount).',
+        { note: 'You can really add any structural veggies. I did not like some of the textures of the eggplant when reheated.' },
+        { note: 'Green beans does not add much to the taste besides some color and adds crunch as long as you do not overcook it. Make sure to add a little later in the cooking process.' },
+        { note: '1/4 cup of the red curry paste is a great spice level (don\'t add any more even if you double or triple the amount).' },
     ]
 };

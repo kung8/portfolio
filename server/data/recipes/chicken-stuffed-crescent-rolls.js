@@ -67,6 +67,6 @@ module.exports = {
         { step: 'Serve warm and enjoy this light appetizer.', type: SECTIONS.MAIN, img: baked },
     ],
     notes: [
-        'Be sure to cook the dough completely.'
+        { note: 'Be sure to cook the dough completely.' }
     ]
 };

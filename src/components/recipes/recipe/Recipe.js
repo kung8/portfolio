@@ -78,8 +78,11 @@ const Notes = ({ notes }) => (
     <>
         <h4 className="recipe-detail-label notes-label">Notes:</h4>
         <ul className="recipe-notes">
-            {notes.map((note, i) => (
-                <li key={i}>{note}</li>
+            {notes.map(({ note, img }, i) => (
+                <li key={i}>
+                    <p>{note}</p>
+                    {img && <img src={img} alt="note" />}
+                </li>
             ))}
         </ul>
     </>

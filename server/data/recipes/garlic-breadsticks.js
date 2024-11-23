@@ -71,6 +71,6 @@ module.exports = {
         { step: 'Enjoy the breadsticks warm with warmed pizza sauce or with your pasta of your choice.', type: SECTIONS.MAIN },
     ],
     notes: [
-        'The focaccia bread recipe which was used for the pizza was the same dough that we used for this breadsticks recipe. Freeze the remainder of the dough to make future breadsticks, cheeseballs, or pizza.'
+        { note: 'The focaccia bread recipe which was used for the pizza was the same dough that we used for this breadsticks recipe. Freeze the remainder of the dough to make future breadsticks, cheeseballs, or pizza.' }
     ]
 };
