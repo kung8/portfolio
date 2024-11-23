@@ -36,7 +36,7 @@ module.exports = {
         { ...WHITE_SUGAR, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...LEMONGRASS, amount: '2 stalks', additionalDetails: 'diced', section: SECTIONS.MARINADE },
-        { ...GARLIC, amount: '2', additionalDetails: 'diced', section: SECTIONS.MARINADE },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'diced', section: SECTIONS.MARINADE },
         { ...SMALL_YELLOW_ONION, amount: '6', additionalDetails: 'diced', section: SECTIONS.MARINADE },
         { ...TURMERIC, amount: '2 tsp', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...CHILI_POWDER, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MARINADE },

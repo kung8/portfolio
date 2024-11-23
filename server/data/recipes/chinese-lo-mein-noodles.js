@@ -65,7 +65,7 @@ module.exports = {
         { ...LO_MEIN_NOODLES, amount: '1 lb', additionalDetails: '', section: SECTIONS.MAIN },
         { ...VEGETABLE_OIL, amount: '3 Tbsp', additionalDetails: 'divided', section: SECTIONS.MAIN },
         { ...BROCCOLI, amount: '1/2 lb', additionalDetails: 'cut into florets', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '3', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...SALT, amount: '1/4 t', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [

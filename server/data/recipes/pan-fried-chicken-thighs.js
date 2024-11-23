@@ -25,7 +25,7 @@ module.exports = {
         { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...RED_WINE, amount: '1/3 c', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: '1', additionalDetails: 'minced', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: '1 clove', additionalDetails: 'minced', section: SECTIONS.SAUCE },
         { ...WHIPPED_CREAM, amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...ROSEMARY, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
     ],

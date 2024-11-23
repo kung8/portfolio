@@ -36,7 +36,7 @@ module.exports = {
         { ...HONEY, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
         { ...WARM_WATER, amount: '2 c', additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
         { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...GARLIC, amount: '3', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: '3 Tbsp', additionalDetails: 'melted', section: SECTIONS.MAIN },
         { ...PARSLEY, amount: '3 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...MARINARA_SAUCE, amount: '', additionalDetails: 'warmed', section: SECTIONS.MAIN },

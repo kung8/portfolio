@@ -35,7 +35,7 @@ module.exports = {
         { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
         { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
         { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...GARLIC, amount: '3', additionalDetails: 'minced', section: SECTIONS.BROTH },
+        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SECTIONS.BROTH },
         { ...PAPRIKA, amount: '1 tsp', additionalDetails: '', section: SECTIONS.BROTH },
         { ...OREGANO, amount: '1 tsp', additionalDetails: '', section: SECTIONS.BROTH },
         { ...RED_PEPPER_FLAKES, amount: '1 tsp', additionalDetails: '', section: SECTIONS.BROTH },

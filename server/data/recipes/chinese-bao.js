@@ -63,7 +63,7 @@ module.exports = {
         { ...EGGS, amount: '5', additionalDetails: 'hard-boiled', section: SECTIONS.FILLING },
         { ...MUSHROOMS, amount: 'handful', additionalDetails: 'minced', section: SECTIONS.FILLING },
         { ...OYSTER_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...GARLIC, amount: '2', additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', section: SECTIONS.FILLING },
     ],
     appliances: [
         { name: 'stove' },

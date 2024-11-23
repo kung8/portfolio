@@ -81,7 +81,7 @@ module.exports = {
         { ...MAYONNAISE, amount: '1 c', additionalDetails: '', section: CILANTRO_RANCH_DRESSING },
         { ...SOUR_CREAM, amount: '1 c', additionalDetails: '', section: CILANTRO_RANCH_DRESSING },
         { ...CILANTRO, amount: '1 bunch', additionalDetails: '', section: CILANTRO_RANCH_DRESSING },
-        { ...GARLIC, amount: '1 tsp', additionalDetails: 'minced', section: CILANTRO_RANCH_DRESSING },
+        { ...GARLIC, amount: '1 clove', additionalDetails: 'minced', section: CILANTRO_RANCH_DRESSING },
         { ...JALAPENO_PEPPERS, amount: '1 - 3', additionalDetails: 'depending on spice tolerance', section: CILANTRO_RANCH_DRESSING },
         { ...MILK, amount: '1/3 - 1/2 c', additionalDetails: 'depending on preferred thickness', section: CILANTRO_RANCH_DRESSING },
 

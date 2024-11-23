@@ -39,7 +39,7 @@ module.exports = {
         { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...GARLIC, amount: '10', additionalDetails: 'halved', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '10 cloves', additionalDetails: 'halved', section: SECTIONS.MAIN },
         { ...WHITE_WINE, amount: '1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
         { ...FRESH_ROSEMARY, amount: '1 1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...FRESH_SAGE, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },

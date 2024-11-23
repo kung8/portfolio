@@ -51,7 +51,7 @@ module.exports = {
         { ...CHICKEN_WINGS, amount: '2 lbs', additionalDetails: '', section: SECTIONS.MEAT },
         { ...CILANTRO, amount: '1 bunch of', additionalDetails: 'chopped', section: SECTIONS.DRESSING },
         { ...LIME_JUICE, amount: '5 limes', additionalDetails: 'juiced', section: SECTIONS.DRESSING },
-        { ...GARLIC, amount: '4', additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...GARLIC, amount: '4 cloves', additionalDetails: '', section: SECTIONS.DRESSING },
         { ...AVOCADO_OIL, amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.DRESSING },
         { ...CHILI_POWDER, amount: '2 tsp', additionalDetails: '', section: SECTIONS.DRESSING },
         { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.DRESSING },

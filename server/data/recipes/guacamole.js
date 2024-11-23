@@ -25,7 +25,7 @@ module.exports = {
         { ...ROMA_TOMATO, amount: '2', additionalDetails: 'diced', section: SECTIONS.MAIN },
         { ...SMALL_YELLOW_ONION, amount: '1/2 c', additionalDetails: 'diced', section: SECTIONS.MAIN },
         { ...CILANTRO, amount: '3 Tbsp', additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '1 tsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '1 clove', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...CAYENNE_PEPPER, amount: '1 pinch', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     supplies: [

@@ -52,7 +52,7 @@ module.exports = {
         { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: BEEF },
         { ...SESAME_OIL, amount: '1 Tbsp', additionalDetails: '', section: BEEF },
         { ...BROWN_SUGAR, amount: '1 tsp', additionalDetails: '', section: BEEF },
-        { ...GARLIC, amount: '1/4 tsp', additionalDetails: 'minced', section: BEEF },
+        { ...GARLIC, amount: '1 clove', additionalDetails: 'minced', section: BEEF },
         { ...CARROTS, amount: '4 oz', additionalDetails: 'matchsticks', section: VEGETABLES },
         { ...SPINACH, amount: '8 oz', additionalDetails: '', section: VEGETABLES },
         { ...CORN, amount: '', additionalDetails: '', section: VEGETABLES },
@@ -63,7 +63,7 @@ module.exports = {
         { ...WARM_WATER, amount: '1 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
         { ...SESAME_SEEDS, amount: '1 Tbsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
         { ...WHITE_VINEGAR, amount: '1 tsp', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...GARLIC, amount: '1 tsp', additionalDetails: 'minced', section: BIBIMBAP_SAUCE },
+        { ...GARLIC, amount: '1 clove', additionalDetails: 'minced', section: BIBIMBAP_SAUCE },
         { ...JASMINE_RICE, amount: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [

@@ -865,7 +865,7 @@ const INGREDIENTS = {
         FRESH_SAGE: { name: 'fresh sage', category: INGREDIENT_CATEGORY.PRODUCE },
         FRESH_THYME: { name: 'fresh thyme', category: INGREDIENT_CATEGORY.PRODUCE },
         FUJI_APPLES: { name: 'fuji apples', category: INGREDIENT_CATEGORY.PRODUCE },
-        GARLIC: { name: 'garlic cloves', category: INGREDIENT_CATEGORY.PRODUCE },
+        GARLIC: { name: 'garlic', category: INGREDIENT_CATEGORY.PRODUCE },
         GAI_CHOY: { name: 'gai choy', category: INGREDIENT_CATEGORY.PRODUCE },
         GALA_APPLES: { name: 'gala apples', category: INGREDIENT_CATEGORY.PRODUCE },
         GINGER: { name: 'ginger', category: INGREDIENT_CATEGORY.PRODUCE },

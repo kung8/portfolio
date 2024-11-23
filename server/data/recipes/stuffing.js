@@ -23,7 +23,7 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
         { ...SWEET_ONION, amount: '3 c', additionalDetails: 'diced', section: SECTIONS.MAIN },
         { ...CELERY, amount: '2 c', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '6', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '6 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...SALT, amount: '1 tsp', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '1 tsp', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...FRESH_SAGE, amount: '3 Tbsp', additionalDetails: 'chopped', section: SECTIONS.MAIN },

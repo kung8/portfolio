@@ -65,7 +65,7 @@ module.exports = {
         { ...SESAME_OIL, amount: '1 1/2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...BROCCOLI, amount: '2 heads of', additionalDetails: 'cut into florets', section: SECTIONS.MAIN },
         { ...GINGER, amount: '1 1/2 Tbsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '1 1/2 Tbsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '6 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...SESAME_SEEDS, amount: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],

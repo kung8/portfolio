@@ -60,7 +60,7 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', optional: false },
         { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'diced', optional: false },
         { ...GINGER, amount: '1 tsp', additionalDetails: 'minced', optional: false },
-        { ...GARLIC, amount: '3', additionalDetails: 'minced', optional: false },
+        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', optional: false },
         { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '2 lbs', additionalDetails: '1/2" pieces', optional: false },
         { ...TOMATO_PASTE, amount: '4 Tbsp', additionalDetails: '', optional: false },
         { ...GARAM_MASALA, amount: '1 Tbsp', additionalDetails: '', optional: false },

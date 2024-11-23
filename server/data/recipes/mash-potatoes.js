@@ -20,7 +20,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...YUKON_GOLD_POTATOES, amount: '4 lbs', additionalDetails: 'peeled and quartered', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '3', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '3 cloves', additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: '1/3 c', additionalDetails: 'melted', section: SECTIONS.MAIN },
         { ...MILK, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },

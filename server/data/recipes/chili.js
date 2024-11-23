@@ -65,7 +65,7 @@ module.exports = {
         { ...GROUND_BEEF, amount: '2 lbs', additionalDetails: '', section: BEEF },
         { ...MEDIUM_YELLOW_ONION, amount: '1 large', additionalDetails: 'diced', section: BEEF },
         { ...JALAPENO_PEPPERS, amount: '1 - 3', additionalDetails: 'diced', section: BEEF },
-        { ...GARLIC, amount: '4', additionalDetails: 'minced', section: BEEF },
+        { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', section: BEEF },
         { ...CHILI_POWDER, amount: '2 1/2 Tbsp', additionalDetails: '', section: BEEF },
         { ...CUMIN, amount: '1 tsp', additionalDetails: '', section: VEGGIES },
         { ...RED_BELL_PEPPERS, amount: '1', additionalDetails: 'diced', section: VEGGIES },

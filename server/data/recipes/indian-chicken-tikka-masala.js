@@ -53,7 +53,7 @@ module.exports = {
     ingredients: [
         { ...GHEE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'diced', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: '4', additionalDetails: 'minced', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', section: SECTIONS.SAUCE },
         { ...CUMIN, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...GINGER, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },

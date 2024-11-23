@@ -38,7 +38,7 @@ module.exports = {
         { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.DOUGH },
         { ...MOZZARELLA_CHEESE, amount: '', additionalDetails: 'shredded', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '2', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...MARINARA_SAUCE, amount: '', additionalDetails: 'warmed', section: SECTIONS.MAIN },
     ],
     appliances: [

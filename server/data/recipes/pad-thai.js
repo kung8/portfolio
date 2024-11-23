@@ -72,7 +72,7 @@ module.exports = {
     ingredients: [
         { ...BROWN_RICE_NOODLES, amount: '16 oz', additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '9', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '9 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...CHICKEN_BREAST, amount: '1 lb', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...EGGS, amount: '6', additionalDetails: '', section: SECTIONS.MAIN },
         { ...RED_BELL_PEPPERS, amount: '4', additionalDetails: 'sliced', section: SECTIONS.MAIN },

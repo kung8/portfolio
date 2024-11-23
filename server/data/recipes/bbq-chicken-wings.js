@@ -39,7 +39,7 @@ module.exports = {
         { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...PAPRIKA, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '4', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '4 clove', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...HONEY, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...KETCHUP, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },

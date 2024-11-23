@@ -27,7 +27,7 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.CHICKEN },
 
-        { ...GARLIC, amount: '3', additionalDetails: 'minced', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
         { ...CHICKEN_BROTH, amount: '3/4 c', additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
         { ...HEAVY_CREAM, amount: '1/2 c', additionalDetails: 'room temperature', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
         { ...PARMESAN_CHEESE, amount: '1/3 c', additionalDetails: 'shredded at room temperature', section: SUN_DRIED_TOMATO_CREAM_SAUCE },

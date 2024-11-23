@@ -32,7 +32,7 @@ module.exports = {
     ingredients: [
         { ...OLIVE_OIL, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...ROSEMARY, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '1', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '1 clove', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...CORNSTARCH, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '3/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '1/8 tsp', additionalDetails: '', section: SECTIONS.MAIN },

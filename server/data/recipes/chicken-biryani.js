@@ -55,7 +55,7 @@ module.exports = {
         { ...YOGURT, amount: '2/3 c', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...COLD_WATER, amount: '1/2 c', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...VEGETABLE_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...GARLIC, amount: '6', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...GARLIC, amount: '6 cloves', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...GINGER, amount: '2 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...TURMERIC, amount: '1/8 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...CINNAMON, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.CHICKEN },

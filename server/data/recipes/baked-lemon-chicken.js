@@ -38,7 +38,7 @@ module.exports = {
         { ...CHICKEN_BROTH, amount: '1/3 c', additionalDetails: '', section: SECTIONS.MAIN },
         { ...LEMON_JUICE, amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...HONEY, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '2 tsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...ITALIAN_SEASONING, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },

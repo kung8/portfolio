@@ -4,7 +4,7 @@ const turkeyThawingTable = '../assets/Products/thawing-turkey-estimates.png';
 const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN } = require('./constants');
 const {
     TURKEY,
-    LEMON,  
+    LEMON,
     GARLIC,
     OLIVE_OIL,
     UNSALTED_BUTTER,
@@ -13,6 +13,9 @@ const {
     SALT,
     BLACK_PEPPER,
 } = require('./ingredients');
+
+const TURKEY_SECTION = 'Turkey';
+const HERB_BUTTER = 'Herb Butter';
 
 module.exports = {
     cardName: 'Roast Turkey',
@@ -26,16 +29,20 @@ module.exports = {
     yields: '10 servings (recipe based on 14 lb)',
     prepTime: '20 m',
     cookTime: '2 h 15 m - 4 h 20 m',
+    separated: true,
     ingredients: [
-        { ...TURKEY, amount: '', additionalDetails: 'desired size', optional: false },
-        { ...LEMON, amount: '2', additionalDetails: 'sliced', optional: false },
-        { ...GARLIC, amount: '3.5 heads', additionalDetails: '3 heads halved, 1/2 head minced', optional: false },
-        { ...OLIVE_OIL, amount: '2 c', additionalDetails: '3 heads halved, 1/2 head minced', optional: false },
-        { ...UNSALTED_BUTTER, amount: '4 oz', additionalDetails: '', optional: false },
-        { ...THYME, amount: '1 tsp + more as desired', additionalDetails: '', optional: false },
-        { ...ROSEMARY, amount: '1 tsp + more as desired', additionalDetails: '', optional: false },
-        { ...SALT, amount: '', additionalDetails: 'minced', optional: false },
-        { ...BLACK_PEPPER, amount: '', additionalDetails: 'minced', optional: false },
+        { ...TURKEY, amount: '', additionalDetails: 'desired size', optional: false, section: TURKEY_SECTION },
+        { ...GARLIC, amount: '3 heads', additionalDetails: 'halved', optional: false, section: TURKEY_SECTION },
+        { ...LEMON, amount: '2', additionalDetails: 'sliced', optional: false, section: TURKEY_SECTION },
+        { ...THYME, amount: '6 sprigs', additionalDetails: '', optional: false, section: TURKEY_SECTION },
+        { ...ROSEMARY, amount: '6 sprigs', additionalDetails: '', optional: false, section: TURKEY_SECTION },
+        { ...OLIVE_OIL, amount: '1/2 c', additionalDetails: '', optional: false, section: TURKEY_SECTION },
+
+        { ...UNSALTED_BUTTER, amount: '8 Tbsp', additionalDetails: '', optional: false, section: HERB_BUTTER },
+        { ...THYME, amount: '1/2 tsp', additionalDetails: '', optional: false, section: HERB_BUTTER },
+        { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', optional: false, section: HERB_BUTTER },
+        { ...SALT, amount: '1 pinch', additionalDetails: '', optional: false, section: HERB_BUTTER },
+        { ...BLACK_PEPPER, amount: '1 pinch', additionalDetails: '', optional: false, section: HERB_BUTTER },
     ],
     appliances: [
         { name: 'oven' },
@@ -55,7 +62,7 @@ module.exports = {
         { step: 'In a medium bowl, combine melted butter, thyme, rosemary, 1/2 head of minced garlic as the rub.', type: SECTIONS.MAIN },
         { step: 'Rub half the mixture on the turkey, especially underneath the skin, and generously season with salt and pepper. Reserve half of the rub for later.', type: SECTIONS.MAIN },
         { step: 'Place turkey breast-side down and drizzle with oil.', type: SECTIONS.MAIN },
-        { step: 'Roast uncovered for 30 min for small turkey or 45 min for large turkey.', type: SECTIONS.MAIN, img: turkeyCookingTable},
+        { step: 'Roast uncovered for 30 min for small turkey or 45 min for large turkey.', type: SECTIONS.MAIN, img: turkeyCookingTable },
         { step: 'Turn turkey over and baste with pan juice.', type: SECTIONS.MAIN },
         { step: 'Use a brush to spread some more herb rub on the turkey. Save some for one more slathering.', type: SECTIONS.MAIN },
         { step: 'Turn oven to 325ºF and roast uncovered for another hour.', type: SECTIONS.MAIN },

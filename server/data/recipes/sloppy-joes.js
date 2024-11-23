@@ -48,7 +48,7 @@ module.exports = {
         { ...OLIVE_OIL, amount: '1 T', additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '3', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...HAMBURGER_BUNS, amount: '4', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [

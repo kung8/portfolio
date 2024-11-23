@@ -47,7 +47,7 @@ module.exports = {
         { ...BROWN_SUGAR, amount: '1/4 c', additionalDetails: '', section: SECTIONS.FILLING },
         { ...CHILI_POWDER, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
         { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'chopped', section: SECTIONS.FILLING },
-        { ...GARLIC, amount: '2', additionalDetails: 'diced', section: SECTIONS.FILLING },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'diced', section: SECTIONS.FILLING },
         { ...THYME, amount: '1 1/2 tsp', additionalDetails: '', section: SECTIONS.FILLING },
         { ...BBQ_SAUCE, amount: '1 c', additionalDetails: '', section: SECTIONS.FILLING },
         { ...APPLE_CIDER_VINEGAR, amount: '1/2 c', additionalDetails: '', section: SECTIONS.FILLING },

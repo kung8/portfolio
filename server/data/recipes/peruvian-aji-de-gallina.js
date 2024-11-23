@@ -49,7 +49,7 @@ module.exports = {
         { ...CHICKEN_BREAST, amount: '2', additionalDetails: '', optional: false },
         { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'diced', optional: false },
         { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', optional: false },
-        { ...GARLIC, amount: '1 tsp', additionalDetails: 'minced', optional: false },
+        { ...GARLIC, amount: '1 clove', additionalDetails: 'minced', optional: false },
         { ...YELLOW_BELL_PEPPERS, amount: '1 1/2', additionalDetails: '', optional: false },
         { ...BREAD, amount: '4', additionalDetails: '', optional: false },
         { ...MILK, amount: '2 c', additionalDetails: '', optional: false },

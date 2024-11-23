@@ -51,7 +51,7 @@ module.exports = {
         { ...SALT, amount: '', additionalDetails: 'to season', section: SECTIONS.CHICKEN },
         { ...SESAME_OIL, amount: '2 tsp', additionalDetails: '', section: SECTIONS.BROTH },
         { ...GINGER, amount: '2 tsp', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...GARLIC, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.BROTH },
+        { ...GARLIC, amount: '3 cloves', additionalDetails: '', section: SECTIONS.BROTH },
         { ...LIGHT_SOY_SAUCE, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.BROTH },
         { ...MIRIN, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.BROTH },
         { ...CHICKEN_BROTH, amount: '4 c', additionalDetails: '', section: SECTIONS.BROTH },

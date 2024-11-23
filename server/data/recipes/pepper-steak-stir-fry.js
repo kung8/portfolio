@@ -66,7 +66,7 @@ module.exports = {
         { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
 
-        { ...GARLIC, amount: '2 tsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...GINGER, amount: '1 tsp', additionalDetails: 'minced', section: SECTIONS.MAIN },
 
         { ...LIGHT_SOY_SAUCE, amount: '1/4 c', additionalDetails: '', section: SECTIONS.SAUCE },

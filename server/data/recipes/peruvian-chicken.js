@@ -23,7 +23,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: '2 lbs', additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...GARLIC, amount: '5', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...GARLIC, amount: '5 cloves', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...LIGHT_SOY_SAUCE, amount: '1/3 c', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...LIME_JUICE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
@@ -34,7 +34,7 @@ module.exports = {
         { ...JALAPENO_PEPPERS, amount: '3', additionalDetails: 'seeds and ribs removed, chopped', section: CREAMY_GREEN_SAUCE },
         { ...CILANTRO, amount: '1 c', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
         { ...GREEN_ONIONS, amount: '2', additionalDetails: 'chopped', section: CREAMY_GREEN_SAUCE },
-        { ...GARLIC, amount: '2', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
         { ...MAYONNAISE, amount: '1/2 c', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
         { ...GREEK_YOGURT, amount: '1/4 c', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
         { ...LIME_JUICE, amount: '1 Tbsp', additionalDetails: '', section: CREAMY_GREEN_SAUCE },
