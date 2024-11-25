@@ -186,8 +186,13 @@
                 margin-bottom: 8px;
                 line-height: 1.35;
 
-                img {
+                .note-image {
                     margin-top: 12px;
+                    width: 350px;
+                    margin-bottom: 24px;
+                    @include down($mobile) {
+                        width: 100%;
+                    }
                 }
             }
         }

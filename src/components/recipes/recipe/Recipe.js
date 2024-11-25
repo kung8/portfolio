@@ -81,7 +81,7 @@ const Notes = ({ notes }) => (
             {notes.map(({ note, img }, i) => (
                 <li key={i}>
                     <p>{note}</p>
-                    {img && <img src={img} alt="note" />}
+                    {img && <img className="note-image" src={img} alt="note" />}
                 </li>
             ))}
         </ul>
