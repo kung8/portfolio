@@ -1,5 +1,9 @@
 const baked1 = '../assets/Products/baked-macaroni-and-cheese-baked-1.jpeg';
 const baked2 = '../assets/Products/baked-macaroni-and-cheese-baked-2.jpeg';
+const baked3 = '../assets/Products/baked-macaroni-and-cheese-baked-3.jpeg';
+const baked4 = '../assets/Products/baked-macaroni-and-cheese-baked-4.jpeg';
+const baked5 = '../assets/Products/baked-macaroni-and-cheese-baked-5.jpeg';
+const baked6 = '../assets/Products/baked-macaroni-and-cheese-baked-6.jpeg';
 const boiled = '../assets/Products/baked-macaroni-and-cheese-boiled-macaroni.jpeg';
 const boilingMacaroni = '../assets/Products/baked-macaroni-and-cheese-boiling-macaroni.jpeg';
 const boilingRoux = '../assets/Products/baked-macaroni-and-cheese-boiling-roux.jpeg';
@@ -99,7 +103,7 @@ module.exports = {
         { step: 'Add the last of the mac and cheese.', type: SECTIONS.ASSEMBLY, img: [topPasta, angled] },
         { step: 'In a small bowl, combine together panko breadcrumbs, parmesan cheese, paprika and melted butter.', type: SECTIONS.ASSEMBLY, img: crumb },
         { step: 'Sprinkle this mixture over the mac and cheese.', type: SECTIONS.ASSEMBLY, img: crumbLayer },
-        { step: 'Bake until bubbly and golden brown (about 30 minutes).', type: SECTIONS.ASSEMBLY, img: [baked1, baked2] },
+        { step: 'Bake until bubbly and golden brown (about 30 minutes).', type: SECTIONS.ASSEMBLY, img: [baked1, baked2, baked3, baked4, baked5, baked6] },
         { step: 'Serve this warm and enjoy this comfort food.', type: SECTIONS.SERVE, img: [plate1, plate2, plate3, plate5] },
     ]
 };

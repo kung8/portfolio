@@ -4,8 +4,12 @@ const baked3 = '../assets/Products/cream-puffs-baked-3.jpeg';
 const baked4 = '../assets/Products/cream-puffs-baked-4.jpeg';
 const baked5 = '../assets/Products/cream-puffs-baked-5.jpeg';
 const baked6 = '../assets/Products/cream-puffs-baked-6.jpeg';
+const baked7 = '../assets/Products/cream-puffs-baked-7.jpeg';
+const baked8 = '../assets/Products/cream-puffs-baked-8.jpeg';
+const baked9 = '../assets/Products/cream-puffs-baked-9.jpeg';
 const butter = '../assets/Products/cream-puffs-butter.jpeg';
-const doled = '../assets/Products/cream-puffs-doled.jpeg';
+const doled1 = '../assets/Products/cream-puffs-doled-1.jpeg';
+const doled2 = '../assets/Products/cream-puffs-doled-2.jpeg';
 const filled = '../assets/Products/cream-puffs-filled.jpeg';
 const filling1 = '../assets/Products/cream-puffs-filling-1.jpeg';
 const filling2 = '../assets/Products/cream-puffs-filling-2.jpeg';
@@ -74,9 +78,9 @@ module.exports = {
         { step: 'Add in flour and salt. Mix until it becomes a ball.', type: PUFF, img: [flour, ball] },
         { step: 'Transfer to a mixing bowl.', type: PUFF },
         { step: 'Beat eggs in one at a time.', type: PUFF, img: batter },
-        { step: 'Place spoonful of batter on a baking sheet, a few inches apart.', type: PUFF, img: doled },
+        { step: 'Place spoonful of batter on a baking sheet, a few inches apart.', type: PUFF, img: [doled1, doled2] },
         { step: 'Bake until golden brown (about 20 to 25 minutes). Centers will be dry.', type: PUFF },
-        { step: 'Let cool.', type: PUFF, img: [baked1, baked2, baked3, baked4, baked5, baked6] },
+        { step: 'Let cool.', type: PUFF, img: [baked1, baked2, baked3, baked4, baked5, baked6, baked7, baked8, baked9] },
         { step: 'Either carefully split the puffs and fill with the cream filling or pipe into the shell.', type: SECTIONS.ASSEMBLY, img: [sliced1, sliced2, sliced3, filled] },
         { step: 'Enjoy these delicious desserts.', type: SECTIONS.SERVE, img: [plated1, plated2, plated3, plated5, plated6, plated7] },
     ]
