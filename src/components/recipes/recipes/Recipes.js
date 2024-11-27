@@ -18,6 +18,17 @@ import { RecipeFilterModal } from './RecipeFilterModal';
 import { handleModalClass } from '../utils/handle-modal-class';
 import { RECIPES_FILTERS_LOCAL_STORAGE_KEY } from '../constants';
 
+export const defaultSelectedFilters = {
+    category: [],
+    diet: [],
+    genre: [],
+    method: [],
+    protein: [],
+    type: [],
+    image: [],
+    search: '',
+};
+
 export const Recipes = ({ history }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const queryClient = useQueryClient();
@@ -29,16 +40,7 @@ export const Recipes = ({ history }) => {
         if (filters) {
             return JSON.parse(filters);
         }
-        return {
-            category: [],
-            diet: [],
-            genre: [],
-            method: [],
-            protein: [],
-            type: [],
-            image: [],
-            search: '',
-        };
+        return defaultSelectedFilters;
     };
 
     const setSelectedFiltersInLocalStorage = (value) => localStorage.setItem(RECIPES_FILTERS_LOCAL_STORAGE_KEY, JSON.stringify(value));
@@ -48,14 +50,23 @@ export const Recipes = ({ history }) => {
     const [debouncedValue] = useDebounce(search, 300);
 
     useEffect(() => {
-        setSelectedFiltersInLocalStorage({...selectedFilters, search: debouncedValue});
+        setSelectedFilters({ ...selectedFilters, search: debouncedValue });
         // eslint-disable-next-line
     }, [debouncedValue]);
 
     useEffect(() => {
         setSelectedFiltersInLocalStorage(selectedFilters);
         // eslint-disable-next-line
-    }, [JSON.stringify(selectedFilters)])
+    }, [
+        selectedFilters.category,
+        selectedFilters.diet,
+        selectedFilters.genre,
+        selectedFilters.method,
+        selectedFilters.protein,
+        selectedFilters.type,
+        selectedFilters.image,
+        selectedFilters.search,
+    ])
 
     const [showArrow, setShowArrow] = useState(false);
 
@@ -171,6 +182,15 @@ export const Recipes = ({ history }) => {
                 {...{
                     closeFilters: handleCloseFilterModal,
                     filteredRecipes,
+                    hasAnyFilters: Object.values(selectedFilters).some(filter => {
+                        if (Array.isArray(filter)) return filter.length > 0;
+                        // search is the only string valued filter
+                        return filter;
+                    }),
+                    resetAllFilters: () => {
+                        setSearch('');
+                        setSelectedFilters(defaultSelectedFilters)
+                    },
                     selectedFilters,
                     setSelectedFilters,
                     totalAvailableRecipes: recipes.filter(item => item.available).length,

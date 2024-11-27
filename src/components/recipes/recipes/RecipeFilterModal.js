@@ -6,6 +6,8 @@ import { RecipeFilterContainer } from './RecipeFilterContainer';
 export const RecipeFilterModal = ({
     closeFilters,
     filteredRecipes,
+    hasAnyFilters,
+    resetAllFilters,
     selectedFilters,
     setSelectedFilters,
     totalAvailableRecipes,
@@ -27,13 +29,19 @@ export const RecipeFilterModal = ({
                             {filterMapping.map((option =>
                                 <RecipeFilterContainer
                                     key={option.heading}
-                                    {...{ ...option, selectedFilters, setSelectedFilters }} 
+                                    {...{ ...option, selectedFilters, setSelectedFilters }}
                                 />
                             ))}
                         </div>
                     </ModalBody>
                     <div className="modal-footer">
                         <span className="total-ratio">{filteredRecipeBySelectedFilters.length} / {totalAvailableRecipes}</span>
+                        <span
+                            className={`reset-all ${hasAnyFilters ? 'has-values' : ''}`}
+                            onClick={hasAnyFilters ? resetAllFilters : undefined}
+                        >
+                            Reset All
+                        </span>
                     </div>
                 </ModalContent>
             </div>
