@@ -193,6 +193,7 @@ const INGREDIENTS = {
         CAMPBELLS_CHICKEN_NOODLE_SOUP: { name: 'campbell\'s chicken noodle soup', category: INGREDIENT_CATEGORY.CANNED },
         CANNED_GREEN_BEANS: { name: 'canned green beans', category: INGREDIENT_CATEGORY.CANNED },
         CANNED_PEACH: { name: 'canned peach', category: INGREDIENT_CATEGORY.CANNED },
+        CANNED_SWEET_CORN: { name: 'canned sweet corn', category: INGREDIENT_CATEGORY.CANNED },
         CANNED_TUNA: { name: 'canned tuna', category: INGREDIENT_CATEGORY.CANNED },
         CHICKEN_BOUILLON: { name: 'chicken bouillon', category: INGREDIENT_CATEGORY.CANNED },
         CHICKEN_BROTH: { name: 'chicken broth', category: INGREDIENT_CATEGORY.CANNED },

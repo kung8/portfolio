@@ -12,6 +12,7 @@ const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefStroganoff = require("./recipes/beef-stroganoff");
 const bibimbap = require("./recipes/bibimbap");
+const bigMac = require("./recipes/big-mac");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
 const blondie = require("./recipes/blondie");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
@@ -20,6 +21,7 @@ const broccoliCheddarSoup = require("./recipes/broccoli-cheddar-soup");
 const brownedButter = require("./recipes/browned-butter");
 const brownedButterChocolateChipCookies = require("./recipes/browned-butter-chocolate-chip-cookies");
 const brownies = require("./recipes/brownies");
+const butteredCorn = require("./recipes/buttered-corn");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cabbageStirFry = require("./recipes/cabbage-stir-fry");
 const cafeRioBowl = require("./recipes/cafe-rio-bowl");
@@ -226,6 +228,7 @@ const recipes = [
     gravy,
     stuffing,
     greenBeanCasserole,
+    butteredCorn,
     bbqPulledPorkAndFixins,
     bakedMacaroniAndCheese,
     coleslaw,
@@ -253,6 +256,7 @@ const recipes = [
     bakedLemonChicken,
     sloppyJoes,
     hoboDinner,
+    bigMac,
     hamburger,
     caramelizedMushroom,
     caramelizedOnion,
