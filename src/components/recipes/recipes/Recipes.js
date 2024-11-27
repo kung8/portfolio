@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
 import Fuse from 'fuse.js';
+import { useDebounce } from 'use-debounce';
 import { useGetData } from '../../../hooks';
 import { convertToKebabCase } from '../../../utils';
 import { NonDashboardPage } from '../../Page';
@@ -15,23 +16,42 @@ import { useFilters } from '../hooks/use-filters';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { RecipeFilterModal } from './RecipeFilterModal';
 import { handleModalClass } from '../utils/handle-modal-class';
+import { RECIPES_FILTERS_LOCAL_STORAGE_KEY } from '../constants';
 
 export const Recipes = ({ history }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const queryClient = useQueryClient();
     const queryKey = ['getData', 'recipes', undefined];
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
-    const [search, setSearch] = useState('');
-    const initialSelectedFilters = {
-        category: [],
-        diet: [],
-        genre: [],
-        method: [],
-        protein: [],
-        type: [],
-        image: [],
-    }
-    const [selectedFilters, setSelectedFilters] = useState(initialSelectedFilters);
+
+    const getInitialSelectedFilters = () => {
+        const filters = localStorage.getItem(RECIPES_FILTERS_LOCAL_STORAGE_KEY)
+        if (filters) {
+            return JSON.parse(filters);
+        }
+        return {
+            category: [],
+            diet: [],
+            genre: [],
+            method: [],
+            protein: [],
+            type: [],
+            image: [],
+            search: '',
+        };
+    };
+
+    const setSelectedFilters = (value) => localStorage.setItem(RECIPES_FILTERS_LOCAL_STORAGE_KEY, JSON.stringify(value));
+
+    const selectedFilters = getInitialSelectedFilters();
+    const [search, setSearch] = useState(selectedFilters.search);
+    const [debouncedValue] = useDebounce(search, 1000);
+
+    useEffect(() => {
+        setSelectedFilters({...selectedFilters, search: debouncedValue});
+        // eslint-disable-next-line
+    }, [debouncedValue]);
+
     const [showArrow, setShowArrow] = useState(false);
 
     const { data: recipes = [] } = useGetData('recipes');
@@ -50,7 +70,7 @@ export const Recipes = ({ history }) => {
     });
 
     const matchingSearchResults = fuse.search(search).flatMap(recipe => recipe.item);
-    const filteredRecipes = search ? matchingSearchResults : recipes
+    const filteredRecipes = search ? matchingSearchResults : recipes;
 
     const { filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
 
@@ -78,10 +98,8 @@ export const Recipes = ({ history }) => {
 
         return () => {
             setIsLoaded(false);
-            setSearch('');
             handleCloseFilterModal();
             setShowArrow(false);
-            setSelectedFilters(initialSelectedFilters);
             window.removeEventListener('scroll', onScroll);
         }
         // eslint-disable-next-line

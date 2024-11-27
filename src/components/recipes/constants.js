@@ -5,6 +5,7 @@ export const MEAL_PLAN_LOCAL_STORAGE_KEY = 'mealPlan';
 export const MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY = 'mealPlanSortBy';
 export const SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY = 'selectedModalView';
 export const STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY = 'startingDayOfWeek';
+export const RECIPES_FILTERS_LOCAL_STORAGE_KEY = 'recipesFilters';
 
 export const GROCERY_LIST_VIEW = 'groceryList';
 export const MEAL_PLANNING_VIEW = 'mealPlanning';
