@@ -42,6 +42,9 @@
         color: $white;
         letter-spacing: 2px;
         cursor: pointer;
+        &::placeholder {
+            color: $light;
+        }
     }
     .clear-btn {
         visibility: hidden;
