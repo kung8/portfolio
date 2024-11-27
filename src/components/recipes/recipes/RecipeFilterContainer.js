@@ -24,9 +24,19 @@ export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFi
         setSelectedFilters(newFilters);
     }
 
+    const hasFilter = selectedFilters[type].length;
+
     return (
         <div className="filter-container">
-            <h4>{heading}</h4>
+            <div className="filter-heading-container">
+                <h4>{heading}</h4>
+                <span
+                    className={`reset-filter-btn ${hasFilter ? 'has-filter' : ''}`}
+                    onClick={hasFilter ? () => deselectAllFilters(type) : undefined}
+                >
+                    Reset
+                </span>
+            </div>
             <Dropdown
                 DropdownContent={(
                     <>

@@ -27,7 +27,8 @@ export const RecipeFilterModal = ({
                             {filterMapping.map((option =>
                                 <RecipeFilterContainer
                                     key={option.heading}
-                                    {...{ ...option, selectedFilters, setSelectedFilters }} />
+                                    {...{ ...option, selectedFilters, setSelectedFilters }} 
+                                />
                             ))}
                         </div>
                     </ModalBody>

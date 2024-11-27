@@ -3,10 +3,24 @@
         min-width: 225px;
     }
 
-    h4 {
+    .filter-heading-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         margin-bottom: 8px;
-        width: fit-content;
+        h4 {
+            width: fit-content;
+        }
+        .reset-filter-btn {
+            font-size: 12px;
+            color: $default;
+            &.has-filter {
+                cursor: pointer;
+                color: $primary-blue;
+            }
+        }
     }
+
 
     .dropdown-container {
         .selected-filter-chip {

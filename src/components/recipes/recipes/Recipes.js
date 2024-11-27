@@ -41,16 +41,21 @@ export const Recipes = ({ history }) => {
         };
     };
 
-    const setSelectedFilters = (value) => localStorage.setItem(RECIPES_FILTERS_LOCAL_STORAGE_KEY, JSON.stringify(value));
+    const setSelectedFiltersInLocalStorage = (value) => localStorage.setItem(RECIPES_FILTERS_LOCAL_STORAGE_KEY, JSON.stringify(value));
 
-    const selectedFilters = getInitialSelectedFilters();
+    const [selectedFilters, setSelectedFilters] = useState(getInitialSelectedFilters());
     const [search, setSearch] = useState(selectedFilters.search);
-    const [debouncedValue] = useDebounce(search, 1000);
+    const [debouncedValue] = useDebounce(search, 300);
 
     useEffect(() => {
-        setSelectedFilters({...selectedFilters, search: debouncedValue});
+        setSelectedFiltersInLocalStorage({...selectedFilters, search: debouncedValue});
         // eslint-disable-next-line
     }, [debouncedValue]);
+
+    useEffect(() => {
+        setSelectedFiltersInLocalStorage(selectedFilters);
+        // eslint-disable-next-line
+    }, [JSON.stringify(selectedFilters)])
 
     const [showArrow, setShowArrow] = useState(false);
 
