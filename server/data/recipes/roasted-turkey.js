@@ -89,13 +89,13 @@ module.exports = {
         { step: 'Bring turkey to room temperature, clean, and pat dry.', type: PREPARING_TURKEY, img: [dry1, dry2] },
         { step: 'Loosen the skin of the turkey by gently sliding your fingers between the skin and the meat.', type: PREPARING_TURKEY },
         { step: 'Rub half the mixture on the turkey and in between the loosened skin and generously season with salt and pepper. I like the butter rub to be softened for between the skin and melted for the skin. I use my hand when stuffing it in between the skin and use a brush for the skin.', type: PREPARING_TURKEY, img: rub6 },
-        { step: 'Stuff the turkey cavity with the "Cavity Filling"', type: PREPARING_TURKEY, img: [cavity1, rub4, rub5] },
         { step: 'Place turkey breast-side down and drizzle with part of the oil.', type: PREPARING_TURKEY, img: [breastDown1, breastDown2] },
-
-
+        
+        
         { step: 'Roast uncovered for 30 min for small turkey or 45 min for large turkey.', type: COOKING_TURKEY },
         { step: 'Remove turkey from oven. Turn down the oven to 325ºF.', type: COOKING_TURKEY, img: breastDown3 },
         { step: 'Carefully flip the turkey and baste with pan juice.', type: COOKING_TURKEY, img: partial1 },
+        { step: 'Stuff the turkey cavity with the "Cavity Filling".', type: COOKING_TURKEY, img: [cavity1, rub4, rub5] },
         { step: 'Use a brush to spread some more herb rub on the turkey. Save some for one more slathering.', type: COOKING_TURKEY },
         { step: 'Roast uncovered for another hour.', type: COOKING_TURKEY },
         { step: 'Use a brush to spread the remaining herb rub and roast for an additional 30 min for small turkey or 1 hr for large turkey.', type: COOKING_TURKEY, img: partial2 },

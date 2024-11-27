@@ -2711,23 +2711,23 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: IN_PROGRESS,
+            date: '11/19/2024',
             title: "The Hobbit, or There and Back Again",
             author: ["J.R.R. Tolkien"],
             source: ["online"],
             review: [
-                ""
+                "I enjoyed this cute story of adventure. Tolkien did a great job creating this world of fantasy. I pushed off reading this book, because I convinced myself this and the Lord of the Ring book were complicated reads. Glad that I finally read it."
             ],
             quotes: [
                 {
-                    text: "",
-                    pages: [],
-                    thoughts: "",
-                    context: ""
+                    text: "If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.",
+                    pages: [262],
+                    thoughts: "Boy would it be a different world if we valued the simple things in life. The corruption, greed, and morality that comes with seeking after gold. Not everyone is like that in terms of gold seekers, but there is so much temptation and allure to want more or chase after the next big thing.",
+                    context: "Thorin Oakenshield commends Bilbo for his good heart."
                 },
             ],
             pageCount: 366,
-            rating: NO_RATING,
+            rating: 5,
         },
         {
             date: NO_DATE,
