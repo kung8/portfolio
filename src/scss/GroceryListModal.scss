@@ -379,6 +379,8 @@
 
     &.edit-ingredient-modal,
     &.edit-meal-plan-modal {
+        top: 0;
+        transform: translate(-50%, 40%);
         padding: 24px 16px;
         .modal-content {
             justify-content: space-between;
