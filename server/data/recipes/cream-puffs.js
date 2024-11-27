@@ -24,6 +24,10 @@ const plated4 = '../assets/Products/cream-puffs-plated-4.jpeg';
 const plated5 = '../assets/Products/cream-puffs-plated-5.jpeg';
 const plated6 = '../assets/Products/cream-puffs-plated-6.jpeg';
 const plated7 = '../assets/Products/cream-puffs-plated-7.jpeg';
+const plated8 = '../assets/Products/cream-puffs-plated-8.jpeg';
+const plated9 = '../assets/Products/cream-puffs-plated-9.jpeg';
+const plated10 = '../assets/Products/cream-puffs-plated-10.jpeg';
+const plated11 = '../assets/Products/cream-puffs-plated-11.jpeg';
 const sliced1 = '../assets/Products/cream-puffs-sliced-1.jpeg';
 const sliced2 = '../assets/Products/cream-puffs-sliced-2.jpeg';
 const sliced3 = '../assets/Products/cream-puffs-sliced-3.jpeg';
@@ -36,7 +40,7 @@ const PUFF = 'Puff';
 module.exports = {
     cardName: 'Cream Puffs',
     name: 'Cream Puffs',
-    img: plated4,
+    img: plated11,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -82,6 +86,6 @@ module.exports = {
         { step: 'Bake until golden brown (about 20 to 25 minutes). Centers will be dry.', type: PUFF },
         { step: 'Let cool.', type: PUFF, img: [baked1, baked2, baked3, baked4, baked5, baked6, baked7, baked8, baked9] },
         { step: 'Either carefully split the puffs and fill with the cream filling or pipe into the shell.', type: SECTIONS.ASSEMBLY, img: [sliced1, sliced2, sliced3, filled] },
-        { step: 'Enjoy these delicious desserts.', type: SECTIONS.SERVE, img: [plated1, plated2, plated3, plated5, plated6, plated7] },
+        { step: 'Enjoy these delicious desserts.', type: SECTIONS.SERVE, img: [plated1, plated2, plated3, plated5, plated6, plated7, plated8, plated9, plated10] },
     ]
 };
