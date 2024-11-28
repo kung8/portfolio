@@ -13,6 +13,7 @@ const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefStroganoff = require("./recipes/beef-stroganoff");
 const bibimbap = require("./recipes/bibimbap");
 const bigMac = require("./recipes/big-mac");
+const biscoffCookiePie = require("./recipes/biscoff-cookie-pie");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
 const blondie = require("./recipes/blondie");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
@@ -304,6 +305,7 @@ const recipes = [
     tedLassoBiscuits,
     lemonBars,
     applePie,
+    biscoffCookiePie,
     noBakeCookie,
     muddyBuddies,
     riceKrispyTreats,
