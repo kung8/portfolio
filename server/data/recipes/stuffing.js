@@ -1,11 +1,14 @@
-// const example = '../assets/Products/example.jpeg';
+const stuffing1 = '../assets/Products/stuffing-1.jpeg';
+const stuffing2 = '../assets/Products/stuffing-2.jpeg';
+const stuffing3 = '../assets/Products/stuffing-3.jpeg';
+const stuffing4 = '../assets/Products/stuffing-4.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { BREAD, UNSALTED_BUTTER, SWEET_ONION, CELERY, GARLIC, SALT, BLACK_PEPPER, FRESH_SAGE, FRESH_ROSEMARY, PARSLEY, CHICKEN_BROTH, EGGS } = require('./ingredients');
 
 module.exports = {
     cardName: 'Stuffing',
     name: 'Stuffing',
-    img: '',
+    img: stuffing4,
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
@@ -48,14 +51,14 @@ module.exports = {
         { step: 'Brush the baking pan with some cooking spray.', type: SECTIONS.MAIN },
         { step: 'Place cubed bread in baking pan.', type: SECTIONS.MAIN },
         { step: 'Over medium heat, heat butter in a pan.', type: SECTIONS.MAIN },
-        { step: 'Once melted, stir in onion, celery, garlic, salt and black pepper.', type: SECTIONS.MAIN },
+        { step: 'Once melted, stir in onion, celery, garlic, salt and black pepper.', type: SECTIONS.MAIN, img: stuffing1 },
         { step: 'Cook until the veggie are soft (about 8 to 10 minutes).', type: SECTIONS.MAIN },
         { step: 'Add in chopped fresh herbs. Mix and cook for 1 minute.', type: SECTIONS.MAIN },
         { step: 'Stir in 1 cup of stock.', type: SECTIONS.MAIN },
-        { step: 'Pour mixture over the cubed bread. Mix until coated.', type: SECTIONS.MAIN },
+        { step: 'Pour mixture over the cubed bread. Mix until coated.', type: SECTIONS.MAIN, img: stuffing2 },
         { step: 'In a small bowl, combine the eggs and the remaining stock.', type: SECTIONS.MAIN },
         { step: 'Pour egg mixture over the cubed bread and fold until combined.', type: SECTIONS.MAIN },
-        { step: 'Bake until the internal temperature is 160ºF (about 45 to 50 minutes). If getting browned and it isn\'t finished yet, you can cover it with foil in a tent shape.', type: SECTIONS.MAIN },
+        { step: 'Bake until the internal temperature is 160ºF (about 45 to 50 minutes). If getting browned and it isn\'t finished yet, you can cover it with foil in a tent shape.', type: SECTIONS.MAIN, img: stuffing3 },
         { step: 'Serve warm on the side of your holiday feast or on any occasion.', type: SECTIONS.MAIN },
     ]
 };
