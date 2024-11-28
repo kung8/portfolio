@@ -1,4 +1,5 @@
-const plated = '../assets/Products/roasted-turkey-plated.jpeg';
+const plated1 = '../assets/Products/roasted-turkey-plated-1.jpeg';
+const plated2 = '../assets/Products/roasted-turkey-plated-2.jpeg';
 const breastDown1 = '../assets/Products/roasted-turkey-breast-side-down-1.jpeg';
 const breastDown2 = '../assets/Products/roasted-turkey-breast-side-down-2.jpeg';
 const breastDown3  = '../assets/Products/roasted-turkey-breast-side-down-3.jpeg';
@@ -100,7 +101,7 @@ module.exports = {
         { step: 'Use a brush to spread the remaining herb rub and roast for an additional 30 min for small turkey or 1 hr for large turkey.', type: COOKING_TURKEY, img: partial1 },
         { step: 'Cook for an additional 30 minutes to 1 hour until the turkey reaches 165ºF. If the turkey is browning too quickly, tent the turkey with some foil.', type: COOKING_TURKEY, img: partial3 },
         { step: 'Let the turkey rest for 20 - 30 min before you carve and serve. Letting it rest allows for moisture and juices to spread throughout the turkey. While the turkey was cooking the juices were evaporated, so it would be dry.', type: COOKING_TURKEY, img: partial2 },
-        { step: 'Enjoy the moist turkey slices with many other holiday favorites!', type: SECTIONS.SERVE, img: plated },
+        { step: 'Enjoy the moist turkey slices with many other holiday favorites!', type: SECTIONS.SERVE, img: [plated1, plated2] },
     ],
     notes: [
         { note: 'Butterball is my favorite brand of turkey.', img: butterball },
