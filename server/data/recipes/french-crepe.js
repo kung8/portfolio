@@ -33,6 +33,7 @@ module.exports = {
     recipeCredit: 'Sam Giraud-Carrier',
     img: plated2,
     available: true,
+    recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH],
     method: [METHODS.PAN_FRY],

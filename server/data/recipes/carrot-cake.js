@@ -31,6 +31,7 @@ module.exports = {
     name: 'Carrot Cake',
     img: zoomed,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

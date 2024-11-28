@@ -11,6 +11,7 @@ module.exports = {
     name: 'Buttered Corn',
     img: cooked,
     available: true,
+    recommended: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BOIL],

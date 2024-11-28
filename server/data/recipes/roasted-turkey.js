@@ -46,6 +46,7 @@ module.exports = {
     name: 'Garlic Herb Butter Roast Turkey',
     img: cooked,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.ROAST],

@@ -1,4 +1,5 @@
 const example = '../assets/Products/example.jpeg';
+const { recommended } = require('./buttered-corn');
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { } = require('./ingredients');
 
@@ -7,6 +8,7 @@ module.exports = {
     name: '',
     img: '',
     available: true,
+    recommended: false,
     category: [],
     genre: [],
     method: [],
