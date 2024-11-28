@@ -1,11 +1,15 @@
-// const buttered = '../assets/Products/buttered-corn.jpeg';
+const butter = '../assets/Products/buttered-corn-butter.jpeg';
+const cooked = '../assets/Products/buttered-corn-cooked.jpeg';
+const corn = '../assets/Products/buttered-corn-corn.jpeg';
+const cream = '../assets/Products/buttered-corn-cream.jpeg';
+const honey = '../assets/Products/buttered-corn-honey.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { UNSALTED_BUTTER, CANNED_SWEET_CORN, SALT, BLACK_PEPPER, HEAVY_CREAM, HONEY } = require('./ingredients');
 
 module.exports = {
     cardName: 'Buttered Corn',
     name: 'Buttered Corn',
-    img: '',
+    img: cooked,
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
@@ -20,7 +24,7 @@ module.exports = {
     separated: false,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CANNED_SWEET_CORN, amount: '2 lb', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CANNED_SWEET_CORN, amount: '4 - 14.5 oz', additionalDetails: 'drained', section: SECTIONS.MAIN },
         { ...SALT, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...HEAVY_CREAM, amount: '1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
@@ -33,11 +37,11 @@ module.exports = {
         { name: 'saucepan' },
     ],
     directions: [
-        { step: 'Over medium heat, melt butter in a saucepan.', type: SECTIONS.MAIN },
-        { step: 'Add corn, salt and pepper. Cook for 5 to 10 minutes. Stirring occasionally.', type: SECTIONS.MAIN },
-        { step: 'Add heavy cream. Reduce heat.', type: SECTIONS.MAIN },
-        { step: 'Cook until sauce hass reduced slightly (about 5 minutes).', type: SECTIONS.MAIN },
-        { step: 'Add honey. Cook for 2 minutes.', type: SECTIONS.MAIN },
-        { step: 'Serve warm.', type: SECTIONS.MAIN },
+        { step: 'Over medium heat, melt butter in a saucepan.', type: SECTIONS.MAIN, img: butter },
+        { step: 'Add corn, salt and pepper. Cook for 5 to 10 minutes. Stirring occasionally.', type: SECTIONS.MAIN, img: corn },
+        { step: 'Add heavy cream. Reduce heat.', type: SECTIONS.MAIN, img: cream },
+        { step: 'Cook until sauce has reduced slightly (about 5 minutes).', type: SECTIONS.MAIN },
+        { step: 'Add honey. Cook for 2 minutes.', type: SECTIONS.MAIN, img: honey },
+        { step: 'Serve warm and enjoy this sweet appetizer.', type: SECTIONS.MAIN },
     ]
 };
