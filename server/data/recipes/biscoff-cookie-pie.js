@@ -5,8 +5,8 @@ const pie4 = '../assets/Products/biscoff-cookie-pie-4.jpeg';
 const pie5 = '../assets/Products/biscoff-cookie-pie-5.jpeg'; // TODO: not sure if adding a layer of chocolate is necessary
 const pie6 = '../assets/Products/biscoff-cookie-pie-6.jpeg'; // TODO: get a photo of the finished pie
 const pie7 = '../assets/Products/biscoff-cookie-pie-7.jpeg'; // TODO: get a photo of the plated pie
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { BISCOFF_COOKIES, UNSALTED_BUTTER, BISCOFF_BUTTER, SWEETENED_CONDENSED_MILK, WHIPPED_CREAM } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { BISCOFF_COOKIES, UNSALTED_BUTTER, BISCOFF_BUTTER, SWEETENED_CONDENSED_MILK, WHIPPED_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS } = require('./ingredients');
 
 module.exports = {
     cardName: 'Biscoff Cookie Pie',
@@ -32,7 +32,8 @@ module.exports = {
         { ...BISCOFF_BUTTER, amount: '1/2 c', additionalDetails: '', section: SECTIONS.FILLING },
         { ...SWEETENED_CONDENSED_MILK, amount: '1/2 c', additionalDetails: '', section: SECTIONS.FILLING },
         { ...WHIPPED_CREAM, amount: '8 oz', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...BISCOFF_COOKIES, amount: '', additionalDetails: 'crushed, for garnish', section: SECTIONS.FILLING },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '', additionalDetails: 'melted', optional: true, section: SECTIONS.FILLING },
+        { ...BISCOFF_COOKIES, amount: '', additionalDetails: 'crushed', optional: true, section: SECTIONS.FILLING },
     ],
     appliances: [
         { name: 'refrigerator' },
@@ -53,7 +54,7 @@ module.exports = {
         { step: 'Fold whipped cream into the Biscoff mixture.', type: SECTIONS.FILLING },
         { step: 'Pour into the crust.', type: SECTIONS.FILLING, img: pie4 },
         { step: 'Smooth the top.', type: SECTIONS.FILLING },
-        { step: 'Optionally add a layer of chocolate cream.', type: SECTIONS.FILLING, img: pie5 },
+        { step: 'Optionally add a layer of melted chocolate.', type: SECTIONS.FILLING, img: pie5 },
         { step: 'Optionally sprinkle cookie crumbs over the pie.', type: SECTIONS.FILLING },
         { step: 'Freeze for at least 8 hours and keep frozen until ready to serve.', type: SECTIONS.FILLING },
 
