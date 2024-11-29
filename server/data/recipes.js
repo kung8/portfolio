@@ -57,6 +57,7 @@ const coleslaw = require("./recipes/coleslaw");
 const creamPuffs = require("./recipes/cream-puffs");
 const cremeBrulee = require("./recipes/creme-brulee");
 const crescentRolls = require("./recipes/crescent-rolls");
+const dinnerRolls = require("./recipes/dinner-rolls");
 const eclair = require("./recipes/eclair");
 const eggCasserole = require("./recipes/egg-casserole");
 const fancyLunchables = require("./recipes/fancy-lunchables");
@@ -235,6 +236,7 @@ const recipes = [
     coleslaw,
     bakedBeans,
     crescentRolls,
+    dinnerRolls,
     bbqChickenWings,
     rosemaryFries,
     panFriedChickenThighs,
