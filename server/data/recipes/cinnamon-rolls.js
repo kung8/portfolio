@@ -82,7 +82,7 @@ module.exports = {
     directions: [
         { step: 'Add milk to a microwavable bowl and microwave for 40 to 45 seconds. It should be about 110ºF (or like warm bath water).', type: SECTIONS.DOUGH, img: dough1 },
         { step: 'Transfer milk to a bowl in a stand mixer.', type: SECTIONS.DOUGH, img: dough2 },
-        { step: 'Add egg, yolk, sugar, and melted butter. Mix.', type: SECTIONS.DOUGH, img: dough3 },
+        { step: 'Add yeast, egg, yolk, sugar, and melted butter. Mix.', type: SECTIONS.DOUGH, img: dough3 },
         { step: 'Add flour and salt. Mix until it forms a dough.', type: SECTIONS.DOUGH, img: [dough4, dough5] },
         { step: 'Attach the dough hook and knead the dough on medium speed for 8 minutes. It should form a ball and be only slightly sticky. If it\'s too sticky (i.e. sticking to the bottom of the mixer), add up to 2 tablespoons of bread flour.', type: SECTIONS.DOUGH },
         { step: 'Oil a mixing bowl, transfer dough.', type: SECTIONS.DOUGH, img: [dough6, dough7, dough8] },
