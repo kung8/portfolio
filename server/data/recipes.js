@@ -60,6 +60,7 @@ const crescentRolls = require("./recipes/crescent-rolls");
 const dinnerRolls = require("./recipes/dinner-rolls");
 const eclair = require("./recipes/eclair");
 const eggCasserole = require("./recipes/egg-casserole");
+const englishScones = require("./recipes/english-scones");
 const fancyLunchables = require("./recipes/fancy-lunchables");
 const frenchCrepe = require("./recipes/french-crepe");
 const frenchToast = require("./recipes/french-toast");
@@ -282,6 +283,7 @@ const recipes = [
     frenchToast,
     waffles,
     buttermilkSyrup,
+    englishScones,
     biscuitsAndGravy,
     breakfastSandwich,
     scrambledEggs,
