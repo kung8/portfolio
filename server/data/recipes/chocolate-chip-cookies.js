@@ -33,6 +33,7 @@ module.exports = {
     name: 'Chocolate Chip Cookies',
     img: zoomed,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

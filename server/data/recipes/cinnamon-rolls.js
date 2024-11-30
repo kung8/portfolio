@@ -41,6 +41,7 @@ module.exports = {
     name: 'Cinnamon Rolls',
     img: plated3,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

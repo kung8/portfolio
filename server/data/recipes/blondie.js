@@ -27,6 +27,7 @@ module.exports = {
     name: 'Blondie',
     img: plated,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
