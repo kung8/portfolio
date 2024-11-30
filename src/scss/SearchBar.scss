@@ -48,18 +48,18 @@
     }
     .clear-btn {
         visibility: hidden;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        padding: 4px;
+        transition: visibility 0.3s ease-in-out; 
         &.contains-search {
             visibility: visible;
-            cursor: pointer;
-            background: transparent;
-            border: none;
-            padding: 4px;
-            transition: visibility 0.3s ease-in-out; 
+        }
 
-            img {
-                width: 16px;
-                height: 16px;
-            }
+        img {
+            width: 16px;
+            height: 16px;
         }
     }
 }

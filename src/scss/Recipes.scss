@@ -35,7 +35,7 @@
         }
 
         .list-img {
-            height: 36px;
+            height: 24px;
             cursor: pointer;
         }
     }
@@ -104,6 +104,9 @@
                 .recipe-image {
                     background: $hover;
                 }
+                .empty-recipe-image {
+                    background: $default;
+                }
             }
 
             @include down($tablet) {
@@ -144,22 +147,6 @@
                     margin-right: 4px;
                 }
             }
-            @include down($mobile) {
-                width: calc(100% - 8px);
-                // targeting the first of the two multiples
-                &:nth-of-type(2n + 1) {
-                    margin-left: 0;
-                }
-                // targeting the second of the two multiples
-                &:nth-of-type(2n + 2) {
-                    margin-right: 0;
-                }
-                // targeting each item
-                &:nth-of-type(n + 1) {
-                    margin-left: 4px;
-                    margin-right: 4px;
-                }
-            }
 
             .recipe-image {
                 width: 100%;
@@ -168,8 +155,11 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: $aqua;
                 color: $black;
+                background: $aqua;
+                &.empty-recipe-image {
+                    background: $default;
+                }
 
                 & > p {
                     max-width: 90%;
@@ -186,6 +176,12 @@
                     }
                     @include down($large-tablet) {
                         font-size: 12px;
+                    }
+                    @include down($mobile) {
+                        font-size: 10px;
+                    }
+                    @include down($small-mobile) {
+                        font-size: 8px;
                     }
                 }
             }
@@ -240,13 +236,13 @@
                         font-size: 14px;
                     }
                     @include down($mobile) {
-                        font-size: 24px;
+                        font-size: 10px;
                     }
                     @include down($small-mobile) {
-                        font-size: 20px;
+                        font-size: 8px;
                     }
                     @include down($extra-small) {
-                        font-size: 16px;
+                        font-size: 6px;
                     }
                 }
             }
@@ -263,7 +259,7 @@
                 .heart {
                     font-size: 20px;
                     @include down($mobile) {
-                        font-size: 28px;
+                        font-size: 16px;
                     }
                 }
             }
