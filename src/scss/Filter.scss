@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
     .top-bar {
         width: 32px;
         height: 5px;
@@ -19,5 +20,21 @@
         width: 16px;
         height: 5px;
         background: $white;
+    }
+    .filter-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background: $primary-blue;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(50%, -50%);
+        border: 1px solid $white;
+        visibility: hidden;
+        transition: visibility 0.3s ease-in-out;
+        &.show {
+            visibility: visible;
+        }
     }
 }

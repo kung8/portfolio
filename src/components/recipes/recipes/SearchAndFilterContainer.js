@@ -5,13 +5,14 @@ import { Filter } from '../../filter/Filter';
 
 export const SearchAndFilterContainer = ({
     filterOnClick,
+    hasAnyFilters,
     imageOnClick,
     search,
     setSearch,
 }) => (
     <div className="search-and-filter-container">
         <SearchBar search={search} setSearch={setSearch} />
-        <Filter onClick={() => filterOnClick()} />
+        <Filter hasAnyFilters={hasAnyFilters} onClick={() => filterOnClick()} />
         <img src={list} alt="list" className="list-img" onClick={imageOnClick} />
     </div>
 );

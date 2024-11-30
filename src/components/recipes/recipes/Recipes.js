@@ -141,6 +141,12 @@ export const Recipes = ({ history }) => {
     const [showFiltersModal, setShowFiltersModal] = useState(false);
     const { handleClose: handleCloseFilterModal, handleOpen: handleOpenFilterModal } = handleModalClass('.modal-tray', 'modal-tray-overlay');
 
+    const hasAnyFilters = Object.values(selectedFilters).some(filter => {
+        if (Array.isArray(filter)) return filter.length > 0;
+        // search is the only string valued filter
+        return filter;
+    })
+
     return (
         <NonDashboardPage
             mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`}
@@ -162,6 +168,7 @@ export const Recipes = ({ history }) => {
                             }
                             setShowFiltersModal(toggle => !toggle);
                         },
+                        hasAnyFilters,
                         imageOnClick: () => {
                             if (showGroceryListModal) closeGroceryListModal();
                             else openGroceryListModal();
@@ -182,11 +189,7 @@ export const Recipes = ({ history }) => {
                 {...{
                     closeFilters: handleCloseFilterModal,
                     filteredRecipes,
-                    hasAnyFilters: Object.values(selectedFilters).some(filter => {
-                        if (Array.isArray(filter)) return filter.length > 0;
-                        // search is the only string valued filter
-                        return filter;
-                    }),
+                    hasAnyFilters,
                     resetAllFilters: () => {
                         setSearch('');
                         setSelectedFilters(defaultSelectedFilters)

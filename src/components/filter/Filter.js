@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Filter = ({ onClick }) => (
+export const Filter = ({ hasAnyFilters, onClick }) => (
     <div
         className="filter-icon"
         onClick={(e) => {
@@ -8,8 +8,9 @@ export const Filter = ({ onClick }) => (
             onClick();
         }}
     >
-        <div className="top-bar"></div>
-        <div className="middle-bar"></div>
-        <div className="bottom-bar"></div>
+        <div className="top-bar" />
+        <div className="middle-bar" />
+        <div className="bottom-bar" />
+        <div className={`filter-dot ${hasAnyFilters ? 'show' : ''}`} />
     </div>
 )
