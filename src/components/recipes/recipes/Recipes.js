@@ -17,6 +17,7 @@ import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { RecipeFilterModal } from './RecipeFilterModal';
 import { handleModalClass } from '../utils/handle-modal-class';
 import { RECIPES_FILTERS_LOCAL_STORAGE_KEY } from '../constants';
+import closeBtn from '../../../Assets/x.png';
 
 export const defaultSelectedFilters = {
     category: [],
@@ -147,6 +148,33 @@ export const Recipes = ({ history }) => {
         return filter;
     })
 
+    const formattedFilters = Object.entries(selectedFilters).reduce((acc, [key, values]) => {
+        let newAcc = [];
+        switch (key) {
+            case 'image':
+                if (values.includes('Yes')) newAcc = [...newAcc, { prop: key, value: 'Yes', label: 'Has Image' }];
+                if (values.includes('No')) newAcc = [...newAcc, { prop: key, value: 'No', label: 'No Image' }];
+                break;
+            case 'search':
+                // values is a string
+                if (values) {
+                    newAcc = [...newAcc, { prop: key, value: values, label: 'Search: ' + values }];
+                }
+                break;
+            case 'category':
+            case 'diet':
+            case 'genre':
+            case 'method':
+            case 'protein':
+            case 'type':
+            default:
+                newAcc = [...newAcc, ...values.map(item => ({ prop: key, value: item, label: item }))];
+                break;
+        }
+
+        return acc.concat(newAcc);
+    }, []);
+
     return (
         <NonDashboardPage
             mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`}
@@ -179,6 +207,33 @@ export const Recipes = ({ history }) => {
                     }}
                 />
             </NonDashboardPage.Header>
+            {formattedFilters.length > 0 && (
+                <div className="filter-chips">
+                    {formattedFilters.map((filter, index) => (
+                        <div
+                            key={index}
+                            className="chip"
+                            onClick={() => {
+                                if (filter.prop === 'search') {
+                                    setSearch('');
+                                    setSelectedFilters({
+                                        ...selectedFilters,
+                                        [filter.prop]: '',
+                                    });
+                                    return;
+                                } else {
+                                    setSelectedFilters({
+                                        ...selectedFilters,
+                                        [filter.prop]: selectedFilters[filter.prop].filter(item => item !== filter.value),
+                                    });
+                                }
+                            }}>
+                            <span>{filter.label}</span>
+                            <img src={closeBtn} alt="close" />
+                        </div>
+                    ))}
+                </div>
+            )}
 
             <div
                 id="modal-tray-overlay"
