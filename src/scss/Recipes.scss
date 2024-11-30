@@ -47,6 +47,13 @@
         padding-left: 8px;
         padding-right: 8px;
         margin-bottom: 32px;
+        &.show {
+            min-height: 35px;
+            transition: min-height 0.3s ease-in-out;
+            @include down($mobile) {
+                min-height: 27.5px;
+            }
+        }
 
         .chip {
             background: $hover;

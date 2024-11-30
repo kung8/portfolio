@@ -207,33 +207,31 @@ export const Recipes = ({ history }) => {
                     }}
                 />
             </NonDashboardPage.Header>
-            {formattedFilters.length > 0 && (
-                <div className="filter-chips">
-                    {formattedFilters.map((filter, index) => (
-                        <div
-                            key={index}
-                            className="chip"
-                            onClick={() => {
-                                if (filter.prop === 'search') {
-                                    setSearch('');
-                                    setSelectedFilters({
-                                        ...selectedFilters,
-                                        [filter.prop]: '',
-                                    });
-                                    return;
-                                } else {
-                                    setSelectedFilters({
-                                        ...selectedFilters,
-                                        [filter.prop]: selectedFilters[filter.prop].filter(item => item !== filter.value),
-                                    });
-                                }
-                            }}>
-                            <span>{filter.label}</span>
-                            <img src={closeBtn} alt="close" />
-                        </div>
-                    ))}
-                </div>
-            )}
+            <div className={`filter-chips ${formattedFilters.length > 0 ? 'show' : ''}`}>
+                {formattedFilters.map((filter, index) => (
+                    <div
+                        key={index}
+                        className="chip"
+                        onClick={() => {
+                            if (filter.prop === 'search') {
+                                setSearch('');
+                                setSelectedFilters({
+                                    ...selectedFilters,
+                                    [filter.prop]: '',
+                                });
+                                return;
+                            } else {
+                                setSelectedFilters({
+                                    ...selectedFilters,
+                                    [filter.prop]: selectedFilters[filter.prop].filter(item => item !== filter.value),
+                                });
+                            }
+                        }}>
+                        <span>{filter.label}</span>
+                        <img src={closeBtn} alt="close" />
+                    </div>
+                ))}
+            </div>
 
             <div
                 id="modal-tray-overlay"
