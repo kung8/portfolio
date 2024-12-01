@@ -57,9 +57,9 @@ export const GroceryListModalContent = ({
                     if (date === 'No Specified Date') return ['No Specified Date', ingredients];
                     return [dayjs(date).format(READABLE_SHORT_DATE), ingredients];
                 });
-            // eslint-disable-next-line
         }
         return sortBy === 'category' ? displayedIngredientsListByCategory() : displayedIngredientsListByDate();
+        // eslint-disable-next-line
     }, [groceryList.map(item => item.name + item.recipeName + item.date + item.mealPlanningDateRange + item.category + item.checked).join(','), sortBy]);
 
     const removeItem = (id) => {
