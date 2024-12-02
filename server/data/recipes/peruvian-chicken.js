@@ -1,6 +1,6 @@
 const plated = '../assets/Products/peruvian-chicken-plated.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, GARLIC, LIGHT_SOY_SAUCE, LIME_JUICE, OLIVE_OIL, CUMIN, PAPRIKA, OREGANO, BLACK_PEPPER, JALAPENO_PEPPERS, CILANTRO, GREEN_ONIONS, MAYONNAISE, SALT, GREEK_YOGURT } = require('./ingredients');
+const { GARLIC, LIGHT_SOY_SAUCE, LIME_JUICE, OLIVE_OIL, CUMIN, PAPRIKA, OREGANO, BLACK_PEPPER, JALAPENO_PEPPERS, CILANTRO, GREEN_ONIONS, MAYONNAISE, SALT, GREEK_YOGURT, CHICKEN_DRUMETTES } = require('./ingredients');
 
 const CREAMY_GREEN_SAUCE = 'Creamy Green Sauce';
 
@@ -22,7 +22,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: '2 lbs', additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CHICKEN_DRUMETTES, amount: '2 lbs', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...GARLIC, amount: '5 cloves', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...LIGHT_SOY_SAUCE, amount: '1/3 c', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...LIME_JUICE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MARINADE },
