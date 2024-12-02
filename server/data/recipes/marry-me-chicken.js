@@ -38,6 +38,7 @@ module.exports = {
     name: 'Marry Me Chicken',
     img: combined4,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
