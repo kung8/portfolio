@@ -1,6 +1,23 @@
-// const example = '../assets/Products/example.jpeg';
+const dry1 = '../assets/Products/sugar-cookies-dry-ingredients-1.jpeg';
+const dry2 = '../assets/Products/sugar-cookies-dry-ingredients-2.jpeg';
+const batter1 = '../assets/Products/sugar-cookies-batter-1.jpeg';
+const batter2 = '../assets/Products/sugar-cookies-batter-2.jpeg';
+const batter3 = '../assets/Products/sugar-cookies-batter-3.jpeg';
+const batter4 = '../assets/Products/sugar-cookies-batter-4.jpeg';
+const batter5 = '../assets/Products/sugar-cookies-batter-5.jpeg';
+const batter6 = '../assets/Products/sugar-cookies-batter-6.jpeg';
+const dough1 = '../assets/Products/sugar-cookies-dough-1.jpeg';
+const dough2 = '../assets/Products/sugar-cookies-dough-2.jpeg';
+const dough3 = '../assets/Products/sugar-cookies-dough-3.jpeg';
+const dough4 = '../assets/Products/sugar-cookies-dough-4.jpeg';
+const dough5 = '../assets/Products/sugar-cookies-dough-5.jpeg';
+const dough6 = '../assets/Products/sugar-cookies-dough-6.jpeg';
+const dough7 = '../assets/Products/sugar-cookies-dough-7.jpeg';
+const dough8 = '../assets/Products/sugar-cookies-dough-8.jpeg';
+const dough9 = '../assets/Products/sugar-cookies-dough-9.jpeg';
+const dough10 = '../assets/Products/sugar-cookies-dough-10.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { UNSALTED_BUTTER, WHITE_SUGAR, EGGS, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, BAKING_SODA, ALMOND_EXTRACT, SPRINKLES, CONFECTIONERS_SUGAR, MERINGUE_POWDER, ROOM_TEMPERATURE_WATER, CRYSTAL_SUGAR } = require('./ingredients');
+const { UNSALTED_BUTTER, WHITE_SUGAR, EGGS, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, SALT, BAKING_SODA, ALMOND_EXTRACT, SPRINKLES, CONFECTIONERS_SUGAR, MERINGUE_POWDER, ROOM_TEMPERATURE_WATER, CRYSTAL_SUGAR } = require('./ingredients');
 
 const DRY_INGREDIENTS = 'Dry Ingredients';
 const WET_BATTER = 'Wet Batter';
@@ -54,18 +71,18 @@ module.exports = {
         { name: 'cooling rack' },
     ],
     directions: [
-        { step: 'In medium bowl, combine the "Dry Ingredients" together.', type: DRY_INGREDIENTS },
-        { step: 'In a stand mixer bowl, cream butter and sugar (about 3 minutes on high).', type: WET_BATTER },
-        { step: 'Add egg, vanilla, and almond extract (about 1 minute on high).', type: WET_BATTER },
+        { step: 'In medium bowl, combine the "Dry Ingredients" together.', type: DRY_INGREDIENTS, img: [dry1, dry2] },
+        { step: 'In a stand mixer bowl, cream butter and sugar (about 3 minutes on high).', type: WET_BATTER, img: [batter1, batter2] },
+        { step: 'Add egg, vanilla, and almond extract (about 1 minute on high).', type: WET_BATTER, img: batter3 },
         { step: 'Scrape the sides down and continue beating if needed.', type: WET_BATTER },
-        { step: 'Add the dry ingredients to the stand mixer. Beat on low.', type: WET_BATTER },
-        { step: 'Beat on low. The dough should be soft. But if it is too soft add 1 Tbsp of flour.', type: WET_BATTER },
-        { step: 'Lightly flour two silicon baking mats.', type: SUGAR_COOKIES },
-        { step: 'Divide the dough in half and place each on the mats.', type: SUGAR_COOKIES },
-        { step: 'With a floured rolling pin, roll out dough until it is about 1/4 inch thick. Add more flour if it is still sticky.', type: SUGAR_COOKIES },
-        { step: 'Sprinkle flour on top of each of the rolled-out dough.', type: SUGAR_COOKIES },
-        { step: 'Place parchment paper on top of one. Stack the second mat on top.', type: SUGAR_COOKIES },
-        { step: 'Cover with plastic wrap. Refrigerate for 1 to 2 hours (up to 2 days).', type: SUGAR_COOKIES },
+        { step: 'Add the dry ingredients to the stand mixer.', type: WET_BATTER, img: batter4 },
+        { step: 'Beat on low. The dough should be soft. But if it is too soft add 1 Tbsp of flour.', type: WET_BATTER, img: [batter5, batter6] },
+        { step: 'Lightly flour two silicon baking mats.', type: SUGAR_COOKIES, img: dough1 },
+        { step: 'Divide the dough in half and place each on the mats.', type: SUGAR_COOKIES, img: dough2 },
+        { step: 'With a floured rolling pin, roll out dough until it is about 1/4 inch thick. Add more flour if it is still sticky.', type: SUGAR_COOKIES, img: [dough3, dough4, dough5] },
+        { step: 'Sprinkle flour on top of each of the rolled-out dough.', type: SUGAR_COOKIES, img: dough6 },
+        { step: 'Place parchment paper on top of one. Stack the second mat on top.', type: SUGAR_COOKIES, img: [dough7, dough8] },
+        { step: 'Cover with plastic wrap. Refrigerate for 1 to 2 hours (up to 2 days).', type: SUGAR_COOKIES, img: [dough9, dough10] },
         { step: 'Preheat the oven to 350ºF when ready to bake.', type: SUGAR_COOKIES },
         { step: 'Cut dough into your favorite shapes using cookie cutters.', type: SUGAR_COOKIES },
         { step: 'Re-roll the scraps and repeat until all the dough is used.', type: SUGAR_COOKIES },
