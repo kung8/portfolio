@@ -131,6 +131,8 @@ const SECTIONS = {
     ASSEMBLY: 'Assembly',
     STORE: 'Store',
     FROSTING: 'Frosting',
+    ICING: 'Icing',
+    DECORATING: 'Decorating',
     BEEF: 'Beef',
 };
 

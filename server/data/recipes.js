@@ -132,6 +132,7 @@ const sourdoughBread = require("./recipes/sourdough-bread");
 const sourdoughStarter = require("./recipes/sourdough-starter");
 const southwestSalad = require("./recipes/southwest-salad");
 const stuffing = require("./recipes/stuffing");
+const sugarCookies = require("./recipes/sugar-cookies");
 const sushi = require("./recipes/sushi");
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
@@ -303,6 +304,7 @@ const recipes = [
     chocolateChipCookies,
     oatmealRaisinCookies,
     brownedButterChocolateChipCookies,
+    sugarCookies,
     blondie,
     brickleBars,
     brownies,
