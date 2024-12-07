@@ -21,7 +21,8 @@ module.exports = {
     prepTime: '2 h 30 m',
     cookTime: '12 m',
     websites: [
-        { label: 'Sugar Cookies', link: 'https://sallysbakingaddiction.com/best-sugar-cookies/' }
+        { label: 'Sugar Cookies', link: 'https://sallysbakingaddiction.com/best-sugar-cookies/' },
+        { label: 'Royal Icing', link: 'https://sallysbakingaddiction.com/royal-icing/' },
     ],
     separated: true,
     ingredients: [
