@@ -15,6 +15,7 @@ import {
 } from '../constants';
 import { ApplyToIngredientsInPlannedMealModal } from './ApplyToIngredientsInPlannedMealModal';
 import { SettingsModal } from './SettingsModal';
+import { getStartingDay } from '../utils/get-starting-day';
 
 export const GroceryListModal = ({
     generateUUID,
@@ -159,11 +160,6 @@ export const GroceryListModal = ({
 
 
     // SETTINGS MODAL
-    const getStartingDay = () => {
-        const startingDay = localStorage.getItem(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY);
-        if (startingDay) return startingDay;
-        return 'sunday';
-    }
     const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
     const [startingDay, setStartingDay] = useState(getStartingDay());
     const closeSettingsModal = () => {

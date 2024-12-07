@@ -1,5 +1,6 @@
 import React from 'react';
 import closeBtn from '../../../Assets/x.png';
+import { getStartingDay } from '../utils/get-starting-day';
 
 export const SettingsModal = ({
     closeModal,
@@ -39,8 +40,8 @@ export const SettingsModal = ({
                     </ul>
                 </div>
                 <div className="modal-footer">
-                    <button className="cancel-btn" onClick={closeModal}>No</button>
-                    <button className="action-btn" onClick={handleApply}>Yes</button>
+                    <button className="cancel-btn" onClick={closeModal}>Cancel</button>
+                    <button className="action-btn" onClick={handleApply} disabled={startingDay === getStartingDay()}>Apply</button>
                 </div>
             </div>
         </div>
