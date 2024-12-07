@@ -311,8 +311,8 @@ export const Recipe = ({ match }) => {
 
                     {item.appliances && item.appliances.length > 0 && (
                         <ul className="recipe-detail-list">
-                            {(item.appliances || []).map(appliance => (
-                                <li key={appliance.name}>
+                            {(item.appliances || []).map((appliance, index) => (
+                                <li key={appliance.name + '-' + index}>
                                     {appliance.name}
                                 </li>
                             ))}
@@ -325,8 +325,8 @@ export const Recipe = ({ match }) => {
 
                     {item.supplies && item.supplies.length > 0 && (
                         <ul className="recipe-detail-list">
-                            {(item.supplies || []).map(supply => (
-                                <li key={supply.name}>
+                            {(item.supplies || []).map((supply, index) => (
+                                <li key={supply.name + '-' + index}>
                                     {supply.name}
                                 </li>
                             ))}
@@ -368,12 +368,12 @@ export const Recipe = ({ match }) => {
                             {formattedIngredients.map(([section, ingredients]) => (
                                 <div key={section} className="sectioned-recipe-container">
                                     <h5 className="separated-recipe-detail-label">{section}</h5>
-                                    {ingredients.map((ingredient) => {
+                                    {ingredients.map((ingredient, index) => {
                                         const ingredientId = ingredient.id ?? generateUUID();
                                         const formattedIngredient = formatIngredientItem(ingredient);
                                         return (
                                             <IngredientItem
-                                                key={ingredientId}
+                                                key={ingredientId + '-' + index}
                                                 id={ingredientId}
                                                 item={{ id: ingredientId, name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
                                                 link={ingredient.link}
@@ -387,12 +387,12 @@ export const Recipe = ({ match }) => {
                         </div>
                     ) : (
                         <div className="recipe-container">
-                            {item?.ingredients?.map((ingredient) => {
+                            {item?.ingredients?.map((ingredient, index) => {
                                 const formattedIngredient = formatIngredientItem(ingredient);
                                 const ingredientId = ingredient.id ?? generateUUID();
                                 return (
                                     <IngredientItem
-                                        key={ingredientId}
+                                        key={ingredientId + '-' + index}
                                         id={ingredientId}
                                         item={{ id: ingredientId, name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
                                         link={ingredient.link}
@@ -411,8 +411,8 @@ export const Recipe = ({ match }) => {
                                 <div key={section} className="separated-recipe-container">
                                     <h5 className="separated-recipe-detail-label">{section}</h5>
                                     <ol className="separated-recipe-detail-list numbered">
-                                        {directions.map(({ step, figure, link }) => (
-                                            <li key={step}>
+                                        {directions.map(({ step, figure, link }, index) => (
+                                            <li key={step + '-' + index}>
                                                 {step}
                                                 {formatLink(link)}
                                                 {figure && (
@@ -426,10 +426,10 @@ export const Recipe = ({ match }) => {
                         </>
                     ) : (
                         <ol className="recipe-detail-list numbered">
-                            {(item.directions || []).map(({ step, img, video, link }) => {
+                            {(item.directions || []).map(({ step, img, video, link }, index) => {
                                 const figure = nonSeparatedFigures.findIndex(item => item.img === img) + 1;
                                 return (
-                                    <li key={step}>
+                                    <li key={step + '-' + index}>
                                         {step}
                                         {formatLink(link)}
                                         {img && (
@@ -534,8 +534,12 @@ export const Recipe = ({ match }) => {
                     Promise.all(newIngredientsToAdd).then((newGroceryList) => {
                         setGroceryList(newGroceryList.flat());
                         updateLocalStorage({ groceryList: newGroceryList.flat(), mealPlan: newMealPlan });
-                        openGroceryListModal();
-                        setSelectedIngredients([]);
+                        handleAddToGroceryListModalClose();
+                        setTimeout(() => {
+                            setShowGroceryListModal(true);
+                            openGroceryListModal();
+                            setSelectedIngredients([]);
+                        }, 500);
                     });
                 }}
             />

@@ -83,12 +83,12 @@ export const GroceryListModalContent = ({
         <>
             <div className="grocery-list">
                 <EmptyGroceryListItem generateUUID={generateUUID} setGroceryList={setGroceryList} updateLocalStorage={updateLocalStorage} />
-                {displayedList.map(([category, ingredients]) => (
-                    <div key={category} className="category-ingredient-container">
+                {displayedList.map(([category, ingredients], index) => (
+                    <div key={category + '-' + index} className="category-ingredient-container">
                         <h6 className={`${sortBy === 'date' ? 'ingredient-date' : 'ingredient-category'}`}>{category}</h6>
-                        {ingredients.map((ingredient) => (
+                        {ingredients.map((ingredient, index) => (
                             <GroceryListItem
-                                key={ingredient.id}
+                                key={ingredient.id + '-' + index}
                                 {...ingredient}
                                 onInputChange={(value) => updateItem(ingredient, { name: value })}
                                 onCheckboxChange={() => updateItem(ingredient, { checked: !ingredient.checked })}
