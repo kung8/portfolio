@@ -35,6 +35,7 @@ const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
 const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenBiryani = require("./recipes/chicken-biryani");
 const chickenCordonBleu = require("./recipes/chicken-cordon-bleu");
+const chickenMcNuggets = require("./recipes/chicken-mcnuggets");
 const chickenKebab = require("./recipes/chicken-kebabs");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenParmesan = require("./recipes/chicken-parmesan");
@@ -75,6 +76,7 @@ const hamburger = require("./recipes/hamburger");
 const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
 const hawaiianHaystacks = require("./recipes/hawaiian-haystacks");
 const hoboDinner = require("./recipes/hobo-dinner");
+const homemadeBBQSauce = require("./recipes/homemade-bbq-sauce");
 const hospitalityChicken = require("./recipes/hospitality-chicken");
 const indianButterChicken = require("./recipes/indian-butter-chicken");
 const indianChickenTikkaMasala = require("./recipes/indian-chicken-tikka-masala");
@@ -261,10 +263,12 @@ const recipes = [
     bakedLemonChicken,
     sloppyJoes,
     hoboDinner,
+    chickenMcNuggets,
     bigMac,
     hamburger,
     caramelizedMushroom,
     caramelizedOnion,
+    homemadeBBQSauce,
     
     //////////////////////////////////////////////////////////////////////// SNACK/APPETIZERS ///////////////////////////////////////////////////////////////////////
     pigsInABlanket,
