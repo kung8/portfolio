@@ -16,6 +16,15 @@ const dough7 = '../assets/Products/sugar-cookies-dough-7.jpeg';
 const dough8 = '../assets/Products/sugar-cookies-dough-8.jpeg';
 const dough9 = '../assets/Products/sugar-cookies-dough-9.jpeg';
 const dough10 = '../assets/Products/sugar-cookies-dough-10.jpeg';
+const cookies1 = '../assets/Products/sugar-cookies-1.jpeg';
+const cookies2 = '../assets/Products/sugar-cookies-2.jpeg';
+const cookies3 = '../assets/Products/sugar-cookies-3.jpeg';
+const cookies4 = '../assets/Products/sugar-cookies-4.jpeg';
+const icing1 = '../assets/Products/sugar-cookies-icing-1.jpeg';
+const icing2 = '../assets/Products/sugar-cookies-icing-2.jpeg';
+const icing3 = '../assets/Products/sugar-cookies-icing-3.jpeg';
+const icing4 = '../assets/Products/sugar-cookies-icing-4.jpeg';
+
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { UNSALTED_BUTTER, WHITE_SUGAR, EGGS, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, SALT, BAKING_SODA, ALMOND_EXTRACT, SPRINKLES, CONFECTIONERS_SUGAR, MERINGUE_POWDER, ROOM_TEMPERATURE_WATER, CRYSTAL_SUGAR } = require('./ingredients');
 
@@ -27,7 +36,7 @@ const ROYAL_ICING = 'Royal Icing';
 module.exports = {
     cardName: 'Sugar Cookies',
     name: 'Sugar Cookies',
-    img: '',
+    img: cookies4,
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -84,15 +93,15 @@ module.exports = {
         { step: 'Place parchment paper on top of one. Stack the second mat on top.', type: SUGAR_COOKIES, img: [dough7, dough8] },
         { step: 'Cover with plastic wrap. Refrigerate for 1 to 2 hours (up to 2 days).', type: SUGAR_COOKIES, img: [dough9, dough10] },
         { step: 'Preheat the oven to 350ºF when ready to bake.', type: SUGAR_COOKIES },
-        { step: 'Cut dough into your favorite shapes using cookie cutters.', type: SUGAR_COOKIES },
+        { step: 'Cut dough into your favorite shapes using cookie cutters.', type: SUGAR_COOKIES, img: [cookies1, cookies2, cookies3] },
         { step: 'Re-roll the scraps and repeat until all the dough is used.', type: SUGAR_COOKIES },
-        { step: 'Place the cookies on silicon baking sheet 3 inches apart.', type: SUGAR_COOKIES },
+        { step: 'Place the cookies on silicon baking sheet an inch apart. They do not spread very much but they will rise slightly.', type: SUGAR_COOKIES },
         { step: 'Bake until the edges are lightly browned (about 11 to 12 minutes).', type: SUGAR_COOKIES },
         { step: 'Let cookies cool for 5 minutes before transferring to a cooling rack.', type: SUGAR_COOKIES },
         { step: 'Let the cookies cool completely before decorating.', type: SUGAR_COOKIES },
-        { step: 'In a stand mixer, combine the icing ingredients.', type: ROYAL_ICING },
-        { step: 'Beat on high until mixed (about 2 minutes).', type: ROYAL_ICING },
-        { step: 'When lifting the whisk, the icing should drip and smooth within 5 to 10 seconds. The longer you whisk the more air is added and the thicker the icing becomes. Normally the icing will dry in about 2 hours at room temperature. If the icing is too thin it will take longer to dry. If the icing is too thick it can also take longer to dry because of the layers. For intricate designs where you are layering the icing, you can place the decorated cookies in the refrigerator to speed up the drying process.', type: ROYAL_ICING },
+        { step: 'In a stand mixer, combine the icing ingredients.', type: ROYAL_ICING, img: [icing1, icing2] },
+        { step: 'Beat on high until mixed (about 2 minutes).', type: ROYAL_ICING, img: icing3 },
+        { step: 'When lifting the whisk, the icing should drip and smooth within 5 to 10 seconds. The longer you whisk the more air is added and the thicker the icing becomes. Normally the icing will dry in about 2 hours at room temperature. If the icing is too thin it will take longer to dry. If the icing is too thick it can also take longer to dry because of the layers. For intricate designs where you are layering the icing, you can place the decorated cookies in the refrigerator to speed up the drying process.', type: ROYAL_ICING, img: icing4 },
         { step: 'Use a knife to spread some icing on top of the cookies.', type: SECTIONS.DECORATING },
         { step: 'Add sprinkles and/or crystal sugars.', type: SECTIONS.DECORATING },
         { step: 'Let the decorated cookies cool for 2 hours.', type: SECTIONS.DECORATING },
