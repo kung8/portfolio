@@ -56,7 +56,7 @@ module.exports = {
         { name: 'cooking spray' },
         { name: 'frying pan' },
         { name: 'whisk' },
-        { name: 'small bowl'}
+        { name: 'small bowl' }
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', type: SECTIONS.MAIN },
@@ -67,7 +67,9 @@ module.exports = {
         { step: 'Cook until the veggie are soft (about 8 to 10 minutes).', type: SECTIONS.MAIN, img: stuffing9 },
         { step: 'Add in chopped fresh herbs. Mix and cook for 1 minute.', type: SECTIONS.MAIN, img: [stuffing10, stuffing11] },
         { step: 'Stir in 1 cup of stock.', type: SECTIONS.MAIN, img: stuffing12 },
+        { step: 'If you like a crispier stuffing, you can scoop out some of the bread and set it aside.', type: SECTIONS.MAIN },
         { step: 'Pour mixture over the cubed bread. Mix until coated.', type: SECTIONS.MAIN, img: stuffing14 },
+        { step: 'If you scooped out some bread, you can add it back in now.', type: SECTIONS.MAIN },
         { step: 'In a small bowl, combine the eggs and the remaining stock.', type: SECTIONS.MAIN, img: stuffing13 },
         { step: 'Pour egg mixture over the cubed bread and fold until combined.', type: SECTIONS.MAIN },
         { step: 'Bake until the internal temperature is 160ºF (about 45 to 50 minutes). If getting browned and it isn\'t finished yet, you can cover it with foil in a tent shape.', type: SECTIONS.MAIN, img: stuffing15 },
