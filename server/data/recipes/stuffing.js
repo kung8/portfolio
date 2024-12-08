@@ -2,13 +2,25 @@ const stuffing1 = '../assets/Products/stuffing-1.jpeg';
 const stuffing2 = '../assets/Products/stuffing-2.jpeg';
 const stuffing3 = '../assets/Products/stuffing-3.jpeg';
 const stuffing4 = '../assets/Products/stuffing-4.jpeg';
+const stuffing5 = '../assets/Products/stuffing-5.jpeg';
+const stuffing6 = '../assets/Products/stuffing-6.jpeg';
+const stuffing7 = '../assets/Products/stuffing-7.jpeg';
+const stuffing8 = '../assets/Products/stuffing-8.jpeg';
+const stuffing9 = '../assets/Products/stuffing-9.jpeg';
+const stuffing10 = '../assets/Products/stuffing-10.jpeg';
+const stuffing11 = '../assets/Products/stuffing-11.jpeg';
+const stuffing12 = '../assets/Products/stuffing-12.jpeg';
+const stuffing13 = '../assets/Products/stuffing-13.jpeg';
+const stuffing14 = '../assets/Products/stuffing-14.jpeg';
+const stuffing15 = '../assets/Products/stuffing-15.jpeg';
+const stuffing16 = '../assets/Products/stuffing-16.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { BREAD, UNSALTED_BUTTER, SWEET_ONION, CELERY, GARLIC, SALT, BLACK_PEPPER, FRESH_SAGE, FRESH_ROSEMARY, PARSLEY, CHICKEN_BROTH, EGGS } = require('./ingredients');
 
 module.exports = {
     cardName: 'Stuffing',
     name: 'Stuffing',
-    img: stuffing4,
+    img: stuffing16,
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
@@ -48,17 +60,17 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', type: SECTIONS.MAIN },
-        { step: 'Brush the baking pan with some cooking spray.', type: SECTIONS.MAIN },
-        { step: 'Place cubed bread in baking pan.', type: SECTIONS.MAIN },
-        { step: 'Over medium heat, heat butter in a pan.', type: SECTIONS.MAIN },
-        { step: 'Once melted, stir in onion, celery, garlic, salt and black pepper.', type: SECTIONS.MAIN, img: stuffing1 },
-        { step: 'Cook until the veggie are soft (about 8 to 10 minutes).', type: SECTIONS.MAIN },
-        { step: 'Add in chopped fresh herbs. Mix and cook for 1 minute.', type: SECTIONS.MAIN },
-        { step: 'Stir in 1 cup of stock.', type: SECTIONS.MAIN },
-        { step: 'Pour mixture over the cubed bread. Mix until coated.', type: SECTIONS.MAIN, img: stuffing2 },
-        { step: 'In a small bowl, combine the eggs and the remaining stock.', type: SECTIONS.MAIN },
+        { step: 'Brush the baking pan with some cooking spray.', type: SECTIONS.MAIN, img: stuffing1 },
+        { step: 'Place cubed bread in baking pan.', type: SECTIONS.MAIN, img: stuffing2 },
+        { step: 'Over medium heat, heat butter in a pan.', type: SECTIONS.MAIN, img: [stuffing3, stuffing4, stuffing5] },
+        { step: 'Once melted, stir in onion, celery, garlic, salt and black pepper.', type: SECTIONS.MAIN, img: [stuffing6, stuffing7, stuffing8] },
+        { step: 'Cook until the veggie are soft (about 8 to 10 minutes).', type: SECTIONS.MAIN, img: stuffing9 },
+        { step: 'Add in chopped fresh herbs. Mix and cook for 1 minute.', type: SECTIONS.MAIN, img: [stuffing10, stuffing11] },
+        { step: 'Stir in 1 cup of stock.', type: SECTIONS.MAIN, img: stuffing12 },
+        { step: 'Pour mixture over the cubed bread. Mix until coated.', type: SECTIONS.MAIN, img: stuffing14 },
+        { step: 'In a small bowl, combine the eggs and the remaining stock.', type: SECTIONS.MAIN, img: stuffing13 },
         { step: 'Pour egg mixture over the cubed bread and fold until combined.', type: SECTIONS.MAIN },
-        { step: 'Bake until the internal temperature is 160ºF (about 45 to 50 minutes). If getting browned and it isn\'t finished yet, you can cover it with foil in a tent shape.', type: SECTIONS.MAIN, img: stuffing3 },
+        { step: 'Bake until the internal temperature is 160ºF (about 45 to 50 minutes). If getting browned and it isn\'t finished yet, you can cover it with foil in a tent shape.', type: SECTIONS.MAIN, img: stuffing15 },
         { step: 'Serve warm on the side of your holiday feast or on any occasion.', type: SECTIONS.MAIN },
     ]
 };
