@@ -20,6 +20,8 @@ const cookies1 = '../assets/Products/sugar-cookies-1.jpeg';
 const cookies2 = '../assets/Products/sugar-cookies-2.jpeg';
 const cookies3 = '../assets/Products/sugar-cookies-3.jpeg';
 const cookies4 = '../assets/Products/sugar-cookies-4.jpeg';
+const cookies5 = '../assets/Products/sugar-cookies-5.jpeg';
+const cookies6 = '../assets/Products/sugar-cookies-6.jpeg';
 const icing1 = '../assets/Products/sugar-cookies-icing-1.jpeg';
 const icing2 = '../assets/Products/sugar-cookies-icing-2.jpeg';
 const icing3 = '../assets/Products/sugar-cookies-icing-3.jpeg';
@@ -36,7 +38,7 @@ const ROYAL_ICING = 'Royal Icing';
 module.exports = {
     cardName: 'Sugar Cookies',
     name: 'Sugar Cookies',
-    img: cookies4,
+    img: cookies6,
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -93,11 +95,11 @@ module.exports = {
         { step: 'Place parchment paper on top of one. Stack the second mat on top.', type: SUGAR_COOKIES, img: [dough7, dough8] },
         { step: 'Cover with plastic wrap. Refrigerate for 1 to 2 hours (up to 2 days).', type: SUGAR_COOKIES, img: [dough9, dough10] },
         { step: 'Preheat the oven to 350ºF when ready to bake.', type: SUGAR_COOKIES },
-        { step: 'Cut dough into your favorite shapes using cookie cutters.', type: SUGAR_COOKIES, img: [cookies1, cookies2, cookies3] },
+        { step: 'Cut dough into your favorite shapes using cookie cutters.', type: SUGAR_COOKIES, img: [cookies1, cookies2, cookies3, cookies4] },
         { step: 'Re-roll the scraps and repeat until all the dough is used.', type: SUGAR_COOKIES },
         { step: 'Place the cookies on silicon baking sheet an inch apart. They do not spread very much but they will rise slightly.', type: SUGAR_COOKIES },
         { step: 'Bake until the edges are lightly browned (about 11 to 12 minutes).', type: SUGAR_COOKIES },
-        { step: 'Let cookies cool for 5 minutes before transferring to a cooling rack.', type: SUGAR_COOKIES },
+        { step: 'Let cookies cool for 5 minutes before transferring to a cooling rack.', type: SUGAR_COOKIES, img: cookies5 },
         { step: 'Let the cookies cool completely before decorating.', type: SUGAR_COOKIES },
         { step: 'In a stand mixer, combine the icing ingredients.', type: ROYAL_ICING, img: [icing1, icing2] },
         { step: 'Beat on high until mixed (about 2 minutes).', type: ROYAL_ICING, img: icing3 },
