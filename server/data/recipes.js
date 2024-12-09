@@ -64,6 +64,7 @@ const eclair = require("./recipes/eclair");
 const eggCasserole = require("./recipes/egg-casserole");
 const englishScones = require("./recipes/english-scones");
 const fancyLunchables = require("./recipes/fancy-lunchables");
+const frenchBaguettes = require("./recipes/french-baguettes");
 const frenchCrepe = require("./recipes/french-crepe");
 const frenchToast = require("./recipes/french-toast");
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
@@ -260,6 +261,7 @@ const recipes = [
     macaroniSalad,
     bakedBreadedChicken,
     phillyCheesesteak,
+    frenchBaguettes,
     sourdoughStarter,
     sourdoughBread,
     hawaiianHaystacks,
