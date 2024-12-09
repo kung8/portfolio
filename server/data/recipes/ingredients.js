@@ -923,6 +923,7 @@ const INGREDIENTS = {
         ONG_CHOY: { name: 'ong choy', category: INGREDIENT_CATEGORY.PRODUCE },
         ORANGE_BELL_PEPPERS: { name: 'orange bell peppers', category: INGREDIENT_CATEGORY.PRODUCE },
         ORANGES: { name: 'oranges', category: INGREDIENT_CATEGORY.PRODUCE },
+        ORANGE_ZEST: { name: 'orange zest', category: INGREDIENT_CATEGORY.PRODUCE },
         PASSION_FRUIT: { name: 'passion fruit', category: INGREDIENT_CATEGORY.PRODUCE },
         PEACHES: { name: 'peaches', category: INGREDIENT_CATEGORY.PRODUCE },
         PEAR: { name: 'pear', category: INGREDIENT_CATEGORY.PRODUCE },

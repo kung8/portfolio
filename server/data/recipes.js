@@ -102,6 +102,7 @@ const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chic
 const muddyBuddies = require("./recipes/muddy-buddies");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
+const orangeChicken = require("./recipes/orange-chicken");
 const padThai = require("./recipes/pad-thai");
 const panFriedChickenThighs = require("./recipes/pan-fried-chicken-thighs");
 const paoDeQueijo = require("./recipes/pao-de-queijo");
@@ -180,6 +181,7 @@ const recipes = [
 
     // CHINESE
     chineseLoMeinNoodles,
+    orangeChicken,
     chineseGingerChicken,
     chineseCashewChicken,
     chineseGreenBeanBeef,
