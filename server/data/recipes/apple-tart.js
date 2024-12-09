@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'Apple Tart',
     name: 'Apple Tart',
     img: '',
-    recipeCredit: 'Sam Giraud-Carrier ',
+    recipeCredit: 'Sam Giraud-Carrier',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
