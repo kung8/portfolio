@@ -24,7 +24,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GROUND_PORK, amount: '', additionalDetails: '', section: FILLING_SECTION },
+        { ...GROUND_PORK, amount: '1/2 lb', additionalDetails: '', section: FILLING_SECTION },
         { ...MEDIUM_YELLOW_ONION, amount: '1/2', additionalDetails: 'diced', section: FILLING_SECTION },
         { ...GARLIC, amount: '2', additionalDetails: 'diced', section: FILLING_SECTION },
         { ...FISH_SAUCE, amount: '1 tsp', additionalDetails: '', section: FILLING_SECTION },

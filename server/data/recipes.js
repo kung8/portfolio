@@ -134,6 +134,7 @@ const snickerdoodle = require("./recipes/snickerdoodle-cookies");
 const sourdoughBread = require("./recipes/sourdough-bread");
 const sourdoughStarter = require("./recipes/sourdough-starter");
 const southwestSalad = require("./recipes/southwest-salad");
+const stickyToffeePudding = require("./recipes/sticky-toffee-pudding");
 const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
 const sushi = require("./recipes/sushi");
@@ -305,6 +306,7 @@ const recipes = [
     cheesecake,
     carrotCake,
     peachCobbler,
+    stickyToffeePudding,
     pretzel,
     peanutBrittle,
     peppermintBark,

@@ -1204,6 +1204,7 @@ const INGREDIENTS = {
         ZEBRA_COOKIES: { name: 'zebra cookies', category: INGREDIENT_CATEGORY.SNACKS },
     },
     SPICES: {
+        ALLSPICE: { name: 'allspice', category: INGREDIENT_CATEGORY.SPICES },
         BASIL: { name: 'basil', category: INGREDIENT_CATEGORY.SPICES },
         BAY_LEAVES: { name: 'bay leaves', category: INGREDIENT_CATEGORY.SPICES },
         BLACK_PEPPER: { name: 'black pepper', category: INGREDIENT_CATEGORY.SPICES },
