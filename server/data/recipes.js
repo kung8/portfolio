@@ -143,6 +143,7 @@ const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
 const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich");
 const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
 const vietnamesePho = require("./recipes/vietnamese-pho");
+const vietnameseStuffedTomatoes = require("./recipes/vietnamese-stuffed-tomatoes");
 const waffles = require("./recipes/waffles");
 const wrap = require("./recipes/wrap");
 
@@ -161,6 +162,7 @@ const recipes = [
     // VIETNAMESE
     vietnamesePho,
     vietnameseBanhMiSandwich,
+    vietnameseStuffedTomatoes,
     vietnameseBanhTieu,
 
     // JAPANESE
