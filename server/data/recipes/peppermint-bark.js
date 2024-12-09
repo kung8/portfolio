@@ -23,6 +23,7 @@ module.exports = {
     name: 'Peppermint Bark',
     img: plated4,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.MELT, METHODS.CHILLED],

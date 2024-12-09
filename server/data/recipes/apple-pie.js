@@ -25,6 +25,7 @@ module.exports = {
     name: 'Apple Pie',
     img: baked,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE, METHODS.SIMMER],

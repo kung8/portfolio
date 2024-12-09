@@ -5,6 +5,7 @@ const INGREDIENTS = {
     BAKING: {
         ALL_PURPOSE_FLOUR: { name: 'all-purpose flour', category: INGREDIENT_CATEGORY.BAKING },
         ALMOND_EXTRACT: { name: 'almond extract', category: INGREDIENT_CATEGORY.BAKING },
+        ALMOND_FLOUR: { name: 'almond flour', category: INGREDIENT_CATEGORY.BAKING },
         BAKING_POWDER: { name: 'baking powder', category: INGREDIENT_CATEGORY.BAKING },
         BAKING_SODA: { name: 'baking soda', category: INGREDIENT_CATEGORY.BAKING },
         BREADCRUMBS: { name: 'breadcrumbs', category: INGREDIENT_CATEGORY.BAKING },
@@ -268,6 +269,8 @@ const INGREDIENTS = {
     },
     CONDIMENTS: {
         AIOLI_SAUCE: { name: 'aioli sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        APRICOT_JAM: { name: 'apricot jam', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        APRICOT_JELLY: { name: 'apricot jelly', category: INGREDIENT_CATEGORY.CONDIMENTS },
         ASIAN_CHILI_GARLIC_SAUCE: { name: 'Asian chili garlic sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         BBQ_SAUCE: { name: 'BBQ sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         BISCOFF_BUTTER: { name: 'biscoff butter', category: INGREDIENT_CATEGORY.CONDIMENTS },
@@ -305,6 +308,7 @@ const INGREDIENTS = {
         SALSA: { name: 'salsa', category: INGREDIENT_CATEGORY.CONDIMENTS },
         SRIRACHA_SAUCE: { name: 'sriracha sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         STRAWBERRY_JAM: { name: 'strawberry jam', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        STRAWBERRY_JELLY: { name: 'strawberry jelly', category: INGREDIENT_CATEGORY.CONDIMENTS },
         SWEET_SOY_SAUCE: { name: 'sweet soy sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         SYRUP: { name: 'syrup', category: INGREDIENT_CATEGORY.CONDIMENTS },
         TABASCO_SAUCE: { name: 'tabasco sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
@@ -425,6 +429,7 @@ const INGREDIENTS = {
         REFRIGERATED_CRESCENT_ROLLS: { name: 'refrigerated crescent rolls', category: INGREDIENT_CATEGORY.DAIRY },
         REFRIGERATED_PIE_CRUST: { name: 'refrigerated pie crust', category: INGREDIENT_CATEGORY.DAIRY },
         REFRIGERATED_PIZZA_CRUST: { name: 'refrigerated pizza crust', category: INGREDIENT_CATEGORY.DAIRY },
+        REFRIGERATED_PUFF_PASTRY: { name: 'refrigerated puff pastry', category: INGREDIENT_CATEGORY.DAIRY },
         REFRIGERATED_SWISS_ROLLS: { name: 'refrigerated swiss rolls', category: INGREDIENT_CATEGORY.DAIRY },
         RICOTTA_CHEESE: { name: 'ricotta cheese', category: INGREDIENT_CATEGORY.DAIRY },
         SALTED_BUTTER: { name: 'salted butter', category: INGREDIENT_CATEGORY.DAIRY },

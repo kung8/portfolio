@@ -29,6 +29,7 @@ module.exports = {
     name: 'Lemon Bars',
     img: plated2,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

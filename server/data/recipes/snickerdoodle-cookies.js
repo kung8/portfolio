@@ -35,6 +35,7 @@ module.exports = {
     name: 'Snickerdoodle Cookies',
     img: plated1,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
