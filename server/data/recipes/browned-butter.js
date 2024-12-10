@@ -3,6 +3,7 @@ const { GENRES, METHODS, SECTIONS, CATEGORIES } = require('./constants');
 const { DRY_MILK_POWDER, UNSALTED_BUTTER } = require('./ingredients');
 
 module.exports = {
+    wip: true,
     cardName: 'Browned Butter',
     name: 'Browned Butter',
     img: '',

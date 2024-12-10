@@ -254,7 +254,8 @@
                 }
             }
 
-            .recipe-item-recommended-container {
+            .recipe-item-recommended-container,
+            .recipe-item-wip-container {
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -263,7 +264,8 @@
                 padding-left: 2px;
                 border-radius: 4px;
 
-                .heart {
+                .heart,
+                .wip {
                     font-size: 20px;
                     @include down($mobile) {
                         font-size: 16px;
@@ -280,14 +282,34 @@
         }
     }
 
-    .chef-recommended-container {
-        width: 100%;
+    .wip {
+        &:before {
+            content: "🥣";
+        }
+    }
+
+    .legend-container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         margin-top: 40px;
-        .heart {
-            margin-right: 8px;
+
+        .legend {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+        
+        .legend-items {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .chef-recommended-container,
+        .chef-wip-container {
+            display: flex;
+            column-gap: 8px;
         }
     }
 

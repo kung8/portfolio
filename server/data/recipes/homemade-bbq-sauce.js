@@ -3,6 +3,7 @@ const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { KETCHUP, BROWN_SUGAR, PAPRIKA, GARLIC_POWDER, SALT, DIJON_MUSTARD, WORCESTERSHIRE_SAUCE, WHITE_VINEGAR, COLD_WATER, RICE_WINE_VINEGAR } = require('./ingredients');
 
 module.exports = {
+    wip: true,
     cardName: 'Homemade BBQ Sauce',
     name: 'Homemade BBQ Sauce',
     img: '',

@@ -260,10 +260,21 @@ export const Recipes = ({ history }) => {
                                 <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertToKebabCase(item.name))} />
                             )}
                         </div>
-                        <p className="chef-recommended-container">
-                            <span className="heart" />
-                            <span>= Chef (AKA me) Recommended</span>
-                        </p>
+                        <div className="legend-container">
+                            <div className="legend">
+                                <h4>Legend</h4>
+                                <div className="legend-items">
+                                    <p className="chef-recommended-container">
+                                        <span className="heart" />
+                                        <span>= Chef Recommended</span>
+                                    </p>
+                                    <p className="chef-wip-container">
+                                        <span className="wip" />
+                                        <span>= Cooking in Progress</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </>
                 ) : <EmptyRecipeContainer />
             ) : <LoaderContainer />}

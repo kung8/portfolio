@@ -8,6 +8,7 @@ const EGG_DREDGE = 'Egg Dredge';
 const DEEP_FRY = 'Deep Fry';
 
 module.exports = {
+    wip: true,
     cardName: 'Orange Chicken',
     name: 'Orange Chicken',
     img: '',

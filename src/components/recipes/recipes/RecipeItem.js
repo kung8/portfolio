@@ -15,6 +15,11 @@ export const RecipeItem = ({ item, onClick }) => {
                     {item.cardName}
                 </h2>
             </div>
+            {item.wip && (
+                <div className="recipe-item-wip-container">
+                    <span className="wip" />
+                </div>
+            )}
             {item.recommended && (
                 <div className="recipe-item-recommended-container">
                     <span className="heart" />

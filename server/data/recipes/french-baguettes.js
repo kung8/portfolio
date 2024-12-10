@@ -5,6 +5,7 @@ const { ALL_PURPOSE_FLOUR, COLD_WATER, SALT, YEAST } = require('./ingredients');
 const BAGUETTES = 'Baguettes';
 
 module.exports = {
+    wip: true,
     cardName: 'French Baguettes',
     name: 'French Baguettes',
     img: '',

@@ -146,6 +146,7 @@ const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
 const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
 const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich");
 const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
+const vietnameseFreshSpringRolls = require("./recipes/vietnamese-fresh-spring-rolls");
 const vietnamesePho = require("./recipes/vietnamese-pho");
 const vietnameseStuffedTomatoes = require("./recipes/vietnamese-stuffed-tomatoes");
 const waffles = require("./recipes/waffles");
@@ -167,6 +168,7 @@ const recipes = [
     vietnamesePho,
     vietnameseBanhMiSandwich,
     vietnameseStuffedTomatoes,
+    vietnameseFreshSpringRolls,
     vietnameseBanhTieu,
 
     // JAPANESE

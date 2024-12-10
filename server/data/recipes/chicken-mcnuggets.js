@@ -8,6 +8,7 @@ const TEMPURA_BATTER_STATION = 'Tempura Batter Station';
 const DEEP_FRY = 'Deep Fry';
 
 module.exports = {
+    wip: true,
     cardName: 'Chicken McNuggets',
     name: 'Chicken McNuggets',
     img: '',

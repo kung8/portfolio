@@ -6,6 +6,7 @@ const FRANGIPANE = 'Frangipane';
 const BRUSH = 'Brush';
 
 module.exports = {
+    wip: true,
     cardName: 'Apple Tart',
     name: 'Apple Tart',
     img: '',

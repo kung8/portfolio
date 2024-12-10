@@ -6,7 +6,8 @@ const FILLING_SECTION = 'Filling';
 const TOMATOES_SECTION = 'Tomatoes';
 
 module.exports = {
-    cardName: 'Vietnamese Stuffed Tomatoes',
+    wip: true,
+    cardName: 'Stuffed Tomatoes',
     name: 'Vietnamese Stuffed Tomatoes',
     img: '',
     available: true,

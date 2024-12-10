@@ -3,6 +3,7 @@ const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { YUKON_GOLD_POTATOES, GARLIC, SALTED_BUTTER, UNSALTED_BUTTER, MILK, SALT, BLACK_PEPPER, GREEN_ONIONS, SOUR_CREAM, CHEDDAR_CHEESE, CHIVES } = require('./ingredients');
 
 module.exports = {
+    wip: true,
     cardName: 'Mash Potatoes',
     name: 'Mash Potatoes',
     img: '',

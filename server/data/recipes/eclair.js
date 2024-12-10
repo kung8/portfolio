@@ -6,6 +6,7 @@ const PASTRY = 'Pastry';
 const CHOCOLATE_GLAZE = 'Chocolate Glaze';
 
 module.exports = {
+    wip: true,
     cardName: 'Eclair',
     name: 'Eclair',
     img: '',

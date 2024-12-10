@@ -3,6 +3,7 @@ const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./con
 const { AVOCADO, LIME, SALT, ROMA_TOMATO, SMALL_YELLOW_ONION, CILANTRO, GARLIC, CAYENNE_PEPPER } = require('./ingredients');
 
 module.exports = {
+    wip: true,
     cardName: 'Guacamole',
     name: 'Guacamole',
     img: '',

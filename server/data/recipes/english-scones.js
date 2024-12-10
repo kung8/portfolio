@@ -8,6 +8,7 @@ const BUTTERMILK_MIXTURE = 'Buttermilk Mixture';
 const EGG_WASH = 'Egg Wash';
 
 module.exports = {
+    wip: true,
     cardName: 'English Scones',
     name: 'English Scones',
     img: '',

@@ -3,6 +3,7 @@ const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { } = require('./ingredients');
 
 module.exports = {
+    wip: true,
     cardName: '',
     name: '',
     img: '',

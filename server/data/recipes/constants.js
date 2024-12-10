@@ -87,6 +87,7 @@ const METHODS = {
     SLOW_COOK: 'Slow Cook',
     STEAM: 'Steam',
     STIR_FRY: 'Stir-Fry',
+    WRAP: 'Wrap',
 }
 
 const PROTEIN = {

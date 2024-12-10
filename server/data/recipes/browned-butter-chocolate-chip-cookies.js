@@ -8,6 +8,7 @@ const EGGS_SECTION = 'Eggs';
 const FLOURS = 'Flours';
 
 module.exports = {
+    wip: true,
     cardName: 'Browned Butter Cookies',
     name: 'Browned Butter Chocolate Chip Cookies',
     img: '',
