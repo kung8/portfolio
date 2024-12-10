@@ -1,4 +1,4 @@
-// const example = '../assets/Products/example.jpeg';
+const cookies1 = '../assets/Products/browned-butter-chocolate-chip-cookies-1.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { BROWNED_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGGS, EGG_YOLKS, CAKE_FLOUR, ALL_PURPOSE_FLOUR, CORNSTARCH, BAKING_SODA, SALT, SEMI_SWEET_CHOCOLATE_CHIPS, WALNUTS, MILK_CHOCOLATE } = require('./ingredients');
 
@@ -11,7 +11,7 @@ module.exports = {
     wip: true,
     cardName: 'Browned Butter Cookies',
     name: 'Browned Butter Chocolate Chip Cookies',
-    img: '',
+    img: cookies1,
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
