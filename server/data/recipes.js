@@ -112,6 +112,7 @@ const paoDeQueijo = require("./recipes/pao-de-queijo");
 const parfait = require("./recipes/parfait");
 const peachCobbler = require("./recipes/peach-cobbler");
 const peanutBrittle = require("./recipes/peanut-brittle");
+const peanutButterCookies = require("./recipes/peanut-butter-cookies");
 const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
 const peppermintBark = require("./recipes/peppermint-bark");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
@@ -319,6 +320,7 @@ const recipes = [
     peppermintBark,
     snickerdoodle,
     chocolateChipCookies,
+    peanutButterCookies,
     oatmealRaisinCookies,
     brownedButterChocolateChipCookies,
     sugarCookies,
@@ -413,7 +415,6 @@ module.exports = recipes;
 
 // DESSERT:
 // - Key Lime Pie - https://www.allrecipes.com/recipe/12698/easy-key-lime-pie-i/
-// - Peanut Butter Cookies - https://preppykitchen.com/peanut-butter-cookies-recipe/
 // - Brownies - https://www.loveandlemons.com/brownies-recipe/
 // - Gingerbread Cookies - https://tastesbetterfromscratch.com/gingerbread-cookies/
 
