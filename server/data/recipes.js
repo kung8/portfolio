@@ -349,3 +349,89 @@ const recipes = [
 ]
 
 module.exports = recipes;
+
+
+
+
+// RECIPES TO ADD
+// CHINESE:
+// - Fried Rice - https://www.madewithlau.com/recipes/egg-fried-rice
+// - Kung Pao Chicken - https://natashaskitchen.com/kung-pao-chicken/
+// - Sesame Chicken - https://www.dinneratthezoo.com/lighter-honey-sesame-chicken/
+
+// INDONESIAN:
+// - Gulai Ayam Padang (just the curry itself) - https://dailycookingquest.com/gulai-ayam-padang.html
+//     - OR - 
+// - Javanese Chicken Coconut Curry - https://www.taste.com.au/recipes/javanese-chicken-coconut-curry-opor-ayam/ffd7ae57-ebd8-4886-a95b-2e49d067bd19
+// (This is to pour over the Ayam Goreng)
+
+// THAI: 
+// - Spicy Thai Basil Chicken - https://www.allrecipes.com/recipe/257938/spicy-thai-basil-chicken-pad-krapow-gai/
+// - Thai Mango Sticky Rice - https://theforkedspoon.com/mango-sticky-rice/
+
+// JAPANESE:
+// - Karaage - https://www.justonecookbook.com/karaage/
+// - Japanese Chicken Curry - https://www.justonecookbook.com/simple-chicken-curry/
+// - Oyakodon - https://www.justonecookbook.com/oyakodon/
+// - Mochi - https://www.mochimommy.com/easy-homemade-mochi/
+
+// ITALIAN:
+// - Ravioli - https://www.saturdaysinrome.com/blog/ricotta-ravioli-recipe/
+// - Carbonara - https://www.recipetineats.com/carbonara/
+// - Pasta Pomodoro - https://www.allrecipes.com/recipe/23847/pasta-pomodoro/
+// - Potato Gnocchi - https://www.giallozafferano.com/recipes/Potato-gnocchi.html
+// - Pork Milanese - https://www.billyparisi.com/pork-milanese-spring-kale-salad-recipe/
+// - Beef Ragu - https://www.recipetineats.com/slow-cooked-shredded-beef-ragu-pasta/
+// - Cherry and Dark Chocolate Crostata - https://www.punchfork.com/recipe/Cherry-and-Dark-Chocolate-Crostata-Bon-Appetit
+// - Gelato - https://foodnouveau.com/how-to-make-gelato/
+// - Shrimp Scampi - https://www.allrecipes.com/recipe/19508/shrimp-scampi/
+// - Lasagna - https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/
+// - Focaccia Bread 
+
+// FRENCH:
+// - Monte Cristo Sandwich - https://www.allrecipes.com/recipe/264681/madame-cristo-grilled-ham-and-cheese/
+// - French Onion Soup Gratinée - https://www.allrecipes.com/recipe/91192/french-onion-soup-gratinee/
+// - Dijon Chicken - https://www.allrecipes.com/dijon-chicken-6575993
+// - Chicken Francese - https://www.allrecipes.com/recipe/16681/delicious-easy-chicken-francese/
+// - Poached Salmon with Hollandaise Sauce - https://www.allrecipes.com/recipe/133137/poached-salmon-with-hollandaise-sauce/
+// - Bearnaise Sauce - https://www.allrecipes.com/recipe/256569/chef-johns-bearnaise-sauce/
+
+// SPANISH:
+// - Churros - https://www.cookingclassy.com/churros/
+// - Chicken Paella - https://www.averiecooks.com/easy-chicken-paella/
+// - Shrimp Paella - https://www.allrecipes.com/recipe/238588/quick-and-easy-paella/
+
+// MEXICAN: 
+// - Enchiladas - https://www.isabeleats.com/red-chicken-enchiladas/
+// - Beef and Bean Chimichanga - https://www.allrecipes.com/recipe/36766/beef-and-bean-chimichangas/
+// - Beef Tacos - https://feelgoodfoodie.net/recipe/ground-beef-tacos-napa-cabbage-guacamole/
+// - Chicken Quesadilla - https://www.wellplated.com/chicken-quesadilla/
+// - Tortillas - 
+
+// GERMAN:
+// - Schnitzel - https://www.daringgourmet.com/traditional-german-pork-schnitzel/
+
+// DESSERT:
+// - Key Lime Pie - https://www.allrecipes.com/recipe/12698/easy-key-lime-pie-i/
+// - Peanut Butter Cookies - https://preppykitchen.com/peanut-butter-cookies-recipe/
+// - Brownies - https://www.loveandlemons.com/brownies-recipe/
+// - Gingerbread Cookies - https://tastesbetterfromscratch.com/gingerbread-cookies/
+
+// RUSSIAN:
+// - Beef Stroganoff - https://natashaskitchen.com/beef-stroganoff/
+
+// SWEDISH:
+// - Meatballs - https://www.allrecipes.com/recipe/216564/swedish-meatballs-svenska-kottbullar/
+
+// SHRIMP: 
+// - Cajun Shrimp - https://www.lecremedelacrumb.com/cajun-shrimp-and-rice-skillet/
+// - Jumbo Shrimp Parmesan - https://www.food.com/recipe/jumbo-shrimp-parmesan-42169
+// - Garlic Shrimp - https://www.allrecipes.com/recipe/220597/simple-garlic-shrimp/
+
+// INDIAN:
+// - Tandoori Chicken - https://www.indianhealthyrecipes.com/tandoori-chicken-recipe/
+// - Samosa - https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/
+// - Naan - 
+
+// AMERICAN:
+// - KFC Gravy - https://www.recipetineats.com/gravy/
