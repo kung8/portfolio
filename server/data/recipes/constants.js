@@ -117,6 +117,7 @@ const SECTIONS = {
     RICE: 'Rice',
     NOODLES: 'Noodles',
     CHICKEN: 'Chicken',
+    PORK: 'Pork',
     FILLING: 'Filling',
     DOUGH: 'Dough',
     CRUST: 'Crust',

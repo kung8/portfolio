@@ -1,5 +1,5 @@
 const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { } = require('./ingredients');
 
 module.exports = {

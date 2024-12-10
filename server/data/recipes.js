@@ -52,6 +52,7 @@ const chineseGingerChicken = require("./recipes/chinese-ginger-chicken");
 const chineseGreenBeanBeef = require("./recipes/chinese-green-bean-beef");
 const chineseLoMeinNoodles = require("./recipes/chinese-lo-mein-noodles");
 const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
+const chineseSweetAndSourPork = require("./recipes/chinese-sweet-and-sour-pork");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateMousse = require("./recipes/chocolate-mousse");
 const cinnamonRolls = require("./recipes/cinnamon-rolls");
@@ -187,6 +188,7 @@ const recipes = [
     // CHINESE
     chineseLoMeinNoodles,
     orangeChicken,
+    chineseSweetAndSourPork,
     chineseGingerChicken,
     chineseCashewChicken,
     chineseGreenBeanBeef,
