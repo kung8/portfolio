@@ -33,9 +33,9 @@ module.exports = {
     cookTime: '15 m',
     separated: true,
     ingredients: [
-        { ...MAYONNAISE, amount: '1/4 c', additionalDetails: '', section: BIG_MAC_SAUCE },
+        { ...MAYONNAISE, amount: '1/2 c', additionalDetails: '', section: BIG_MAC_SAUCE },
         { ...KETCHUP, amount: '2 Tbsp', additionalDetails: '', section: BIG_MAC_SAUCE },
-        { ...YELLOW_MUSTARD, amount: '1 tsp', additionalDetails: '', section: BIG_MAC_SAUCE },
+        { ...YELLOW_MUSTARD, amount: '1 Tbsp', additionalDetails: '', section: BIG_MAC_SAUCE },
         { ...PICKLES, amount: '2 Tbsp', additionalDetails: 'diced', section: BIG_MAC_SAUCE },
         { ...SMALL_YELLOW_ONION, amount: '2 Tbsp', additionalDetails: '', section: BIG_MAC_SAUCE },
         { ...PAPRIKA, amount: '1 tsp', additionalDetails: '', section: BIG_MAC_SAUCE },
