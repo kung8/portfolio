@@ -80,6 +80,7 @@ const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
 const hawaiianHaystacks = require("./recipes/hawaiian-haystacks");
 const hoboDinner = require("./recipes/hobo-dinner");
 const homemadeBBQSauce = require("./recipes/homemade-bbq-sauce");
+const honeySesameChicken = require("./recipes/honey-sesame-chicken");
 const hospitalityChicken = require("./recipes/hospitality-chicken");
 const indianButterChicken = require("./recipes/indian-butter-chicken");
 const indianChickenTikkaMasala = require("./recipes/indian-chicken-tikka-masala");
@@ -189,6 +190,7 @@ const recipes = [
 
     // CHINESE
     chineseLoMeinNoodles,
+    honeySesameChicken,
     orangeChicken,
     chineseSweetAndSourPork,
     kungPaoChicken,
@@ -360,7 +362,6 @@ module.exports = recipes;
 // RECIPES TO ADD
 // CHINESE:
 // - Fried Rice - https://www.madewithlau.com/recipes/egg-fried-rice
-// - Sesame Chicken - https://www.dinneratthezoo.com/lighter-honey-sesame-chicken/
 
 // INDONESIAN:
 // - Gulai Ayam Padang (just the curry itself) - https://dailycookingquest.com/gulai-ayam-padang.html

@@ -151,6 +151,7 @@ const TYPES = {
     VEGETABLE: 'Vegetable',
     FRUIT: 'Fruit',
     PROTEIN: 'Protein',
+    MAIN_COURSE: 'Main Course',
     SIDE_DISH: 'Side Dish',
     FINGER_FOOD: 'Finger Food',
     DESSERT: 'Dessert',

@@ -857,6 +857,7 @@ const INGREDIENTS = {
         CHERRY_TOMATOES: { name: 'cherry tomatoes', category: INGREDIENT_CATEGORY.PRODUCE },
         CHERRIES: { name: 'cherries', category: INGREDIENT_CATEGORY.PRODUCE },
         CELERY: { name: 'celery', category: INGREDIENT_CATEGORY.PRODUCE },
+        CHILI_PEPPERS: { name: 'chili peppers', category: INGREDIENT_CATEGORY.PRODUCE },
         CHINESE_BROCCOLI: { name: 'Chinese broccoli', category: INGREDIENT_CATEGORY.PRODUCE },
         CHINESE_CABBAGE: { name: 'Chinese cabbage', category: INGREDIENT_CATEGORY.PRODUCE },
         CHINESE_MUSTARD_GREENS: { name: 'Chinese mustard greens', category: INGREDIENT_CATEGORY.PRODUCE },
