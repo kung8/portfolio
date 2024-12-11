@@ -146,6 +146,7 @@ const stickyToffeePudding = require("./recipes/sticky-toffee-pudding");
 const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
 const sushi = require("./recipes/sushi");
+const swedishMeatballs = require("./recipes/swedish-meatballs");
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
 const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
@@ -243,6 +244,7 @@ const recipes = [
     chickenParmesan, // TODO: add
     basilPesto,
     italianTurkeyMeatballSpinachTortelliniSoup,
+    swedishMeatballs,
     beefStroganoff,
     greenBeanAlmondine,
 
@@ -425,9 +427,6 @@ module.exports = recipes;
 
 // RUSSIAN:
 // - Beef Stroganoff - https://natashaskitchen.com/beef-stroganoff/
-
-// SWEDISH:
-// - Meatballs - https://www.allrecipes.com/recipe/216564/swedish-meatballs-svenska-kottbullar/
 
 // SHRIMP: 
 // - Cajun Shrimp - https://www.lecremedelacrumb.com/cajun-shrimp-and-rice-skillet/
