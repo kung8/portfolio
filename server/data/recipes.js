@@ -100,6 +100,7 @@ const macaroniSalad = require("./recipes/macaroni-salad");
 const malaysianBlackPepperChicken = require("./recipes/malaysian-black-pepper-chicken");
 const malaysianLemonChicken = require("./recipes/malaysian-lemon-chicken");
 const malaysianSatay = require("./recipes/malaysian-satay");
+const mangoStickyRice = require("./recipes/mango-sticky-rice");
 const marryMeChicken = require("./recipes/marry-me-chicken");
 const mashPotatoes = require("./recipes/mash-potatoes");
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
@@ -161,6 +162,7 @@ const recipes = [
     // THAI
     padThai,
     thaiPadSeeEw,
+    mangoStickyRice,
     thaiMassamanCurry, // TODO: add
 
     // INDIAN
@@ -371,7 +373,6 @@ module.exports = recipes;
 
 // THAI: 
 // - Spicy Thai Basil Chicken - https://www.allrecipes.com/recipe/257938/spicy-thai-basil-chicken-pad-krapow-gai/
-// - Thai Mango Sticky Rice - https://theforkedspoon.com/mango-sticky-rice/
 
 // JAPANESE:
 // - Karaage - https://www.justonecookbook.com/karaage/

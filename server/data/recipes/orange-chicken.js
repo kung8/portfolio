@@ -62,8 +62,7 @@ module.exports = {
         { name: 'baking sheet' },
         { name: 'paper towels' },
         { name: 'pot' },
-        { name: 'thermometer' },
-        { name: '' },
+        { name: 'cooking thermometer' },
     ],
     directions: [
         { step: 'Over medium heat, combine all the "Sauce" ingredients except the orange zest, cornstarch and water in a medium saucepan.', type: ORANGE_SAUCE },
