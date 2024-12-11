@@ -191,6 +191,7 @@ const INGREDIENTS = {
     },
     CANNED: {
         BEEF_BOUILLON: { name: 'beef bouillon', category: INGREDIENT_CATEGORY.CANNED },
+        BEEF_BOUILLON_CUBE: { name: 'beef bouillon cube', category: INGREDIENT_CATEGORY.CANNED },
         BEEF_BROTH: { name: 'beef broth', category: INGREDIENT_CATEGORY.CANNED },
         BAKED_POTATO_SOUP: { name: 'baked potato soup', category: INGREDIENT_CATEGORY.CANNED },
         BLACK_BEANS: { name: 'black beans', category: INGREDIENT_CATEGORY.CANNED },
@@ -203,6 +204,7 @@ const INGREDIENTS = {
         CANNED_SWEET_CORN: { name: 'can of sweet corn', category: INGREDIENT_CATEGORY.CANNED },
         CANNED_TUNA: { name: 'can of tuna', category: INGREDIENT_CATEGORY.CANNED },
         CHICKEN_BOUILLON: { name: 'chicken bouillon', category: INGREDIENT_CATEGORY.CANNED },
+        CHICKEN_BOUILLON_CUBE: { name: 'chicken bouillon cube', category: INGREDIENT_CATEGORY.CANNED },
         CHICKEN_BROTH: { name: 'chicken broth', category: INGREDIENT_CATEGORY.CANNED },
         CHICKEN_RICE_SOUP: { name: 'chicken rice soup', category: INGREDIENT_CATEGORY.CANNED },
         CHILI: { name: 'chili', category: INGREDIENT_CATEGORY.CANNED },
