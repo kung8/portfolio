@@ -89,6 +89,7 @@ const italianTurkeyMeatballSpinachTortelliniSoup = require("./recipes/italian-tu
 const japaneseChickenKatsu = require("./recipes/japanese-chicken-katsu");
 const japaneseCurry = require("./recipes/japanese-curry");
 const japaneseKatsudon = require("./recipes/japanese-katsudon");
+const kfcGravy = require("./recipes/kfc-gravy");
 const khmerRedCurry = require("./recipes/khmer-red-curry");
 const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
 const koreanFriedChicken = require("./recipes/korean-fried-chicken");
@@ -249,6 +250,7 @@ const recipes = [
     marryMeChicken,
     roastedTurkey,
     mashPotatoes,
+    kfcGravy,
     gravy,
     stuffing,
     greenBeanCasserole,
@@ -436,6 +438,3 @@ module.exports = recipes;
 // - Tandoori Chicken - https://www.indianhealthyrecipes.com/tandoori-chicken-recipe/
 // - Samosa - https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/
 // - Naan - 
-
-// AMERICAN:
-// - KFC Gravy - https://www.recipetineats.com/gravy/
