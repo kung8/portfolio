@@ -91,6 +91,7 @@ const japaneseKatsudon = require("./recipes/japanese-katsudon");
 const khmerRedCurry = require("./recipes/khmer-red-curry");
 const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
 const koreanFriedChicken = require("./recipes/korean-fried-chicken");
+const kungPaoChicken = require("./recipes/kung-pao-chicken");
 const lemonBars = require("./recipes/lemon-bars");
 const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
 const lemonChickenRamen = require("./recipes/lemon-chicken-ramen");
@@ -190,6 +191,7 @@ const recipes = [
     chineseLoMeinNoodles,
     orangeChicken,
     chineseSweetAndSourPork,
+    kungPaoChicken,
     chineseGingerChicken,
     chineseCashewChicken,
     chineseGreenBeanBeef,
@@ -358,7 +360,6 @@ module.exports = recipes;
 // RECIPES TO ADD
 // CHINESE:
 // - Fried Rice - https://www.madewithlau.com/recipes/egg-fried-rice
-// - Kung Pao Chicken - https://natashaskitchen.com/kung-pao-chicken/
 // - Sesame Chicken - https://www.dinneratthezoo.com/lighter-honey-sesame-chicken/
 
 // INDONESIAN:
