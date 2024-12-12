@@ -30,6 +30,7 @@ const cafeRioBowl = require("./recipes/cafe-rio-bowl");
 const caramelApples = require("./recipes/caramel-apples");
 const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 const caramelizedOnion = require("./recipes/caramelized-onion");
+const carbonara = require("./recipes/carbonara");
 const carrotCake = require("./recipes/carrot-cake");
 const cheeseballs = require("./recipes/cheeseballs");
 const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
@@ -238,6 +239,7 @@ const recipes = [
     mexicanChickenBake, // TODO: add
 
     ////////////////////////////////////////////////////////////////////// EUROPEAN //////////////////////////////////////////////////////////////////////  
+    carbonara,
     italianLasagna,
     pizza,
     chickenCordonBleu,
@@ -386,7 +388,6 @@ module.exports = recipes;
 
 // ITALIAN:
 // - Ravioli - https://www.saturdaysinrome.com/blog/ricotta-ravioli-recipe/
-// - Carbonara - https://www.recipetineats.com/carbonara/
 // - Pasta Pomodoro - https://www.allrecipes.com/recipe/23847/pasta-pomodoro/
 // - Potato Gnocchi - https://www.giallozafferano.com/recipes/Potato-gnocchi.html
 // - Pork Milanese - https://www.billyparisi.com/pork-milanese-spring-kale-salad-recipe/
