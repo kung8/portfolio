@@ -71,6 +71,7 @@ const frenchCrepe = require("./recipes/french-crepe");
 const frenchToast = require("./recipes/french-toast");
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
+const gelato = require("./recipes/gelato");
 const gingerbreadCookies = require("./recipes/gingerbread-cookies");
 const graveyardDessert = require("./recipes/graveyard-dessert");
 const gravy = require("./recipes/gravy");
@@ -252,6 +253,7 @@ const recipes = [
     chickenParmesan, // TODO: add
     basilPesto,
     italianTurkeyMeatballSpinachTortelliniSoup,
+    gelato,
     shrimpPaella,
     swedishMeatballs,
     beefStroganoff,

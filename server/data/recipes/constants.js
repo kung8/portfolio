@@ -95,6 +95,7 @@ const METHODS = {
     STEAM: 'Steam',
     STIR_FRY: 'Stir-Fry',
     WRAP: 'Wrap',
+    FREEZE: 'Freeze',
 }
 
 const PROTEIN = {
