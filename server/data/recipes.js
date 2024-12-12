@@ -397,7 +397,6 @@ module.exports = recipes;
 // - Pork Milanese - https://www.billyparisi.com/pork-milanese-spring-kale-salad-recipe/
 // - Beef Ragu - https://www.recipetineats.com/slow-cooked-shredded-beef-ragu-pasta/
 // - Cherry and Dark Chocolate Crostata - https://www.punchfork.com/recipe/Cherry-and-Dark-Chocolate-Crostata-Bon-Appetit
-// - Gelato - https://foodnouveau.com/how-to-make-gelato/
 // - Shrimp Scampi - https://www.allrecipes.com/recipe/19508/shrimp-scampi/
 // - Lasagna - https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/
 // - Focaccia Bread 
