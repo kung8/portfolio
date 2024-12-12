@@ -89,5 +89,9 @@ module.exports = {
         { step: 'Add the pork, veggies and pineapple. Mix until everything is combined and coated with the sauce (about 1 to 2 minutes).', type: SECTIONS.ASSEMBLY },
 
         { step: 'Enjoy this immediately with jasmine rice', type: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'Do not try to fry too early or it will take longer to cook and will just soak oil.' },
+        { note: 'Avoid overcrowding the pork by working in batches.' }
     ]
 };

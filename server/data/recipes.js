@@ -153,6 +153,7 @@ const sushi = require("./recipes/sushi");
 const swedishMeatballs = require("./recipes/swedish-meatballs");
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
+const thaiBasil = require("./recipes/thai-basil");
 const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
 const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
 const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich");
@@ -168,6 +169,7 @@ const recipes = [
     // THAI
     padThai,
     thaiPadSeeEw,
+    thaiBasil,
     mangoStickyRice,
     thaiMassamanCurry, // TODO: add
 
@@ -299,7 +301,7 @@ const recipes = [
     caramelizedMushroom,
     caramelizedOnion,
     homemadeBBQSauce,
-    
+
     //////////////////////////////////////////////////////////////////////// SNACK/APPETIZERS ///////////////////////////////////////////////////////////////////////
     pigsInABlanket,
     chickenStuffedCrescentRolls,
@@ -380,9 +382,6 @@ module.exports = recipes;
 //     - OR - 
 // - Javanese Chicken Coconut Curry - https://www.taste.com.au/recipes/javanese-chicken-coconut-curry-opor-ayam/ffd7ae57-ebd8-4886-a95b-2e49d067bd19
 // (This is to pour over the Ayam Goreng)
-
-// THAI: 
-// - Spicy Thai Basil Chicken - https://www.allrecipes.com/recipe/257938/spicy-thai-basil-chicken-pad-krapow-gai/
 
 // JAPANESE:
 // - Karaage - https://www.justonecookbook.com/karaage/

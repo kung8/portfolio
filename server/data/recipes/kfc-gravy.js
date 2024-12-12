@@ -19,7 +19,7 @@ module.exports = {
     type: [TYPES.SAUCE],
     yields: '6 servings',
     prepTime: '1 m',
-    cookTime: '3 m',
+    cookTime: '5 m',
     websites: [
         { label: 'KFC Gravy', link: 'https://www.recipetineats.com/gravy/' }
     ],
