@@ -601,6 +601,7 @@ const INGREDIENTS = {
         VINES: { name: 'vines', category: INGREDIENT_CATEGORY.GARDEN },
     },
     GRAIN: {
+        ARBORIO_RICE: { name: 'arborio rice', category: INGREDIENT_CATEGORY.GRAIN },
         BAGELS: { name: 'bagels', category: INGREDIENT_CATEGORY.GRAIN },
         BASMATI_RICE: { name: 'basmati rice', category: INGREDIENT_CATEGORY.GRAIN },
         BRIOCHE_BUNS: { name: 'brioche buns', category: INGREDIENT_CATEGORY.GRAIN },
@@ -903,6 +904,7 @@ const INGREDIENTS = {
         GREEN_BELL_PEPPERS: { name: 'green bell peppers', category: INGREDIENT_CATEGORY.PRODUCE },
         GREEN_CABBAGE: { name: 'green cabbage', category: INGREDIENT_CATEGORY.PRODUCE },
         GREEN_ONIONS: { name: 'green onions', category: INGREDIENT_CATEGORY.PRODUCE },
+        GREEN_PEAS: { name: 'green peas', category: INGREDIENT_CATEGORY.PRODUCE },
         GUAVA: { name: 'guava', category: INGREDIENT_CATEGORY.PRODUCE },
         HASS_AVOCADO: { name: 'hass avocado', category: INGREDIENT_CATEGORY.PRODUCE },
         HONEY_CRISP_APPLES: { name: 'honey crisp apples', category: INGREDIENT_CATEGORY.PRODUCE },

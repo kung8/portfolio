@@ -136,6 +136,7 @@ const rosemaryLemonade = require("./recipes/rosemary-lemonade");
 const rosemaryFries = require("./recipes/rosemary-fries");
 const sauteedSquash = require("./recipes/sauteed-squash");
 const scrambledEggs = require("./recipes/scrambled-eggs");
+const shrimpPaella = require("./recipes/shrimp-paella");
 const singaporeanChickenRice = require("./recipes/singaporean-chicken-rice");
 const sloppyJoes = require("./recipes/sloppy-joes");
 const smoothie = require("./recipes/smoothie");
@@ -247,6 +248,7 @@ const recipes = [
     chickenParmesan, // TODO: add
     basilPesto,
     italianTurkeyMeatballSpinachTortelliniSoup,
+    shrimpPaella,
     swedishMeatballs,
     beefStroganoff,
     greenBeanAlmondine,
