@@ -69,6 +69,8 @@ const GENRES = {
     BBQ: 'BBQ',
     WESTERN: 'Western',
     CAMBODIAN: 'Cambodian',
+    SPANISH: 'Spanish',
+    HAWAIIAN: 'Hawaiian',
 };
 
 const METHODS = {
@@ -111,6 +113,7 @@ const PROTEIN = {
     TOFU: 'Tofu',
     TURKEY: 'Turkey',
     PINE_NUT: 'Pine Nut',
+    SHRIMP: 'Shrimp',
 }
 
 const SECTIONS = {

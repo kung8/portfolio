@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGGS, CORNSTARCH, ALL_PURPOSE_FLOUR, SALT, VEGETABLE_OIL, ORANGE_JUICE, WHITE_SUGAR, RICE_WINE_VINEGAR, LIGHT_SOY_SAUCE, GARLIC_POWDER, RED_PEPPER_FLAKES, ORANGE_ZEST, GINGER_POWDER, GREEN_ONIONS, COLD_WATER } = require('./ingredients');
+const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGGS, CORNSTARCH, ALL_PURPOSE_FLOUR, SALT, VEGETABLE_OIL, ORANGE_JUICE, WHITE_SUGAR, RICE_WINE_VINEGAR, LIGHT_SOY_SAUCE, GARLIC_POWDER, RED_PEPPER_FLAKES, ORANGE_ZEST, GROUND_GINGER, GREEN_ONIONS, COLD_WATER } = require('./ingredients');
 
 const ORANGE_SAUCE = 'Orange Sauce';
 const FLOUR_DREDGE = 'Flour Dredge';
@@ -31,7 +31,7 @@ module.exports = {
         { ...WHITE_SUGAR, amount: '1/2 c', additionalDetails: '', section: ORANGE_SAUCE },
         { ...RICE_WINE_VINEGAR, amount: '2 Tbsp', additionalDetails: '', section: ORANGE_SAUCE },
         { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: ORANGE_SAUCE },
-        { ...GINGER_POWDER, amount: '1/4 tsp', additionalDetails: '', section: ORANGE_SAUCE },
+        { ...GROUND_GINGER, amount: '1/4 tsp', additionalDetails: '', section: ORANGE_SAUCE },
         { ...GARLIC_POWDER, amount: '1/4 tsp', additionalDetails: '', section: ORANGE_SAUCE },
         { ...RED_PEPPER_FLAKES, amount: '1/2 tsp', additionalDetails: '', section: ORANGE_SAUCE },
         { ...ORANGE_ZEST, amount: '', additionalDetails: 'from 1 orange', section: ORANGE_SAUCE },

@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { BREADCRUMBS, HEAVY_CREAM, UNSALTED_BUTTER, SMALL_YELLOW_ONION, GROUND_BEEF, GROUND_PORK, EGGS, BROWN_SUGAR, SALT, BLACK_PEPPER, NUTMEG, ALLSPICE, GINGER_POWDER, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, BEEF_BROTH, SOUR_CREAM } = require('./ingredients');
+const { BREADCRUMBS, HEAVY_CREAM, UNSALTED_BUTTER, SMALL_YELLOW_ONION, GROUND_BEEF, GROUND_PORK, EGGS, BROWN_SUGAR, SALT, BLACK_PEPPER, NUTMEG, ALLSPICE, GROUND_GINGER, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, BEEF_BROTH, SOUR_CREAM } = require('./ingredients');
 
 const PREP_OVEN = 'Prep Oven';
 const BREADCRUMB_MIXTURE = 'Breadcrumb Mixture';
@@ -42,7 +42,7 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: SWEDISH_MEATBALLS },
         { ...NUTMEG, amount: '1/4 tsp', additionalDetails: '', section: SWEDISH_MEATBALLS },
         { ...ALLSPICE, amount: '1/4 tsp', additionalDetails: '', section: SWEDISH_MEATBALLS },
-        { ...GINGER_POWDER, amount: '1/8 tsp', additionalDetails: '', section: SWEDISH_MEATBALLS },
+        { ...GROUND_GINGER, amount: '1/8 tsp', additionalDetails: '', section: SWEDISH_MEATBALLS },
 
         { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: PAN_FRY_MEATBALLS },
         { ...CHICKEN_BROTH, amount: '1/4 c', additionalDetails: '', section: BAKING },

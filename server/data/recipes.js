@@ -108,6 +108,7 @@ const marryMeChicken = require("./recipes/marry-me-chicken");
 const mashPotatoes = require("./recipes/mash-potatoes");
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
 const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chicken");
+const mochi = require("./recipes/mochi");
 const muddyBuddies = require("./recipes/muddy-buddies");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
@@ -189,6 +190,7 @@ const recipes = [
     japaneseCurry, // TODO: add
     lemonChickenRamen,
     chickenRamen,
+    mochi,
 
     // KOREAN
     koreanBeefBulgogi,
@@ -386,7 +388,6 @@ module.exports = recipes;
 // - Karaage - https://www.justonecookbook.com/karaage/
 // - Japanese Chicken Curry - https://www.justonecookbook.com/simple-chicken-curry/
 // - Oyakodon - https://www.justonecookbook.com/oyakodon/
-// - Mochi - https://www.mochimommy.com/easy-homemade-mochi/
 
 // ITALIAN:
 // - Ravioli - https://www.saturdaysinrome.com/blog/ricotta-ravioli-recipe/
@@ -411,7 +412,6 @@ module.exports = recipes;
 // SPANISH:
 // - Churros - https://www.cookingclassy.com/churros/
 // - Chicken Paella - https://www.averiecooks.com/easy-chicken-paella/
-// - Shrimp Paella - https://www.allrecipes.com/recipe/238588/quick-and-easy-paella/
 
 // MEXICAN: 
 // - Enchiladas - https://www.isabeleats.com/red-chicken-enchiladas/
