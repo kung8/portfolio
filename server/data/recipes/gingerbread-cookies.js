@@ -1,0 +1,81 @@
+// const example = '../assets/Products/example.jpeg';
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
+const { ALL_PURPOSE_FLOUR, BROWN_SUGAR, BAKING_SODA, CINNAMON, GROUND_GINGER, GROUND_CLOVES, SALT, UNSALTED_BUTTER, MOLASSES, MILK, POWDERED_SUGAR } = require('./ingredients');
+
+const GINGERBREAD_DRY_INGREDIENTS = 'Gingerbread Dry Ingredients';
+const GINGERBREAD_BATTER = 'Gingerbread Batter';
+const BAKING = 'Baking';
+const FROSTING = 'Frosting';
+
+module.exports = {
+    wip: true,
+    cardName: 'Gingerbread Cookies',
+    name: 'Gingerbread Cookies',
+    img: '',
+    recipeCredit: '',
+    available: true,
+    recommended: false,
+    category: [CATEGORIES.DESSERT],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKING],
+    type: [TYPES.COOKIE],
+    yields: '2 dozen',
+    prepTime: '25 m',
+    cookTime: '10 m',
+    websites: [
+        { label: 'Gingerbread Cookie', link: 'https://tastesbetterfromscratch.com/gingerbread-cookies/' }
+    ],
+    separated: true,
+    ingredients: [
+        { ...ALL_PURPOSE_FLOUR, amount: '3 c', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...BROWN_SUGAR, amount: '3/4 c', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...BAKING_SODA, amount: '3/4 tsp', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...CINNAMON, amount: '1 Tbsp', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...GROUND_GINGER, amount: '1 Tbsp', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...GROUND_CLOVES, amount: '1/2 tsp', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        
+        { ...UNSALTED_BUTTER, amount: '12 Tbsp', additionalDetails: 'room temperature, divided into 12 pieces', section: GINGERBREAD_BATTER },
+        { ...MOLASSES, amount: '3/4 c', additionalDetails: '', section: GINGERBREAD_BATTER },
+        { ...MILK, amount: '2 Tbsp', additionalDetails: '', section: GINGERBREAD_BATTER },
+
+        { ...UNSALTED_BUTTER, amount: '2 Tbsp', additionalDetails: '', section: FROSTING },
+        { ...MILK, amount: '2 Tbsp', additionalDetails: '', section: FROSTING },
+        { ...POWDERED_SUGAR, amount: '2 c', additionalDetails: '', section: FROSTING },
+    ],
+    appliances: [
+        { name: 'stand mixer' },
+        { name: 'oven' },
+    ],
+    supplies: [
+        { name: 'pastry blender/attachment' },
+        { name: '2 baking sheets' },
+        { name: '2 silicon baking mat' },
+        { name: 'rolling pin' },
+        { name: 'cooling rack' },
+        { name: 'mixing bowl' },
+    ],
+    directions: [
+        { step: 'In a stand mixer, combine all the the "Gingerbread Dry Ingredients".', type: GINGERBREAD_DRY_INGREDIENTS },
+        { step: 'Add the divided butter to the dry ingredients.', type: GINGERBREAD_BATTER },
+        { step: 'Cut the butter using a pastry blender until it becomes very fine.', type: GINGERBREAD_BATTER },
+        { step: 'Add the molasses and milk to the bowl. Mix on low for about 30 seconds.', type: GINGERBREAD_BATTER },
+        { step: 'Divide the dough into two. Form them into balls.', type: GINGERBREAD_BATTER },
+        { step: 'Wrap the balls with plastic wrap and refrigerate for 2 hours or overnight. This is to help the dough be less sticky.', type: GINGERBREAD_BATTER },
+        
+        { step: 'Preheat the oven to 350ºF.', type: BAKING },
+        { step: 'Place silicon baking mats on baking sheets.', type: BAKING },
+        { step: 'Flour a clean surface and place one ball of dough on top.', type: BAKING },
+        { step: 'Lightly top the dough and rolling with flour.', type: BAKING },
+        { step: 'Roll out the dough to about 1/2 inch thick.', type: BAKING },
+        { step: 'Use a cookie cutter to cut out gingerbread men or whatever design you want.', type: BAKING },
+        { step: 'Place these cookies on a baking sheet and refrigerate while you prepare the second dough ball.', type: BAKING },
+        { step: 'Bake until the center is set and does not give much when lightly pressed (about 8 to 11 minutes). Avoid overbaking.', type: BAKING },
+        { step: 'Transfer to a cooling rack and let cool completely before frosting.', type: BAKING },
+
+        { step: 'In a mixing bowl, combine butter, milk and half of the powdered sugar. Mix until uniform.', type: FROSTING },
+        { step: 'Add remaining powdered sugar. Mix until uniform.', type: FROSTING },
+
+        { step: 'Frost the gingerbread men and enjoy these simple childhood treats.', type: SECTIONS.SERVE },
+    ]
+};

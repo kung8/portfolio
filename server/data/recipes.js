@@ -70,6 +70,7 @@ const frenchCrepe = require("./recipes/french-crepe");
 const frenchToast = require("./recipes/french-toast");
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
+const gingerbreadCookies = require("./recipes/gingerbread-cookies");
 const graveyardDessert = require("./recipes/graveyard-dessert");
 const gravy = require("./recipes/gravy");
 const greenBeanAlmondine = require("./recipes/green-bean-almondine");
@@ -334,6 +335,7 @@ const recipes = [
     oatmealRaisinCookies,
     brownedButterChocolateChipCookies,
     sugarCookies,
+    gingerbreadCookies,
     blondie,
     brickleBars,
     brownies,
@@ -361,8 +363,6 @@ const recipes = [
 ]
 
 module.exports = recipes;
-
-
 
 
 // RECIPES TO ADD
@@ -423,7 +423,6 @@ module.exports = recipes;
 // DESSERT:
 // - Key Lime Pie - https://www.allrecipes.com/recipe/12698/easy-key-lime-pie-i/
 // - Brownies - https://www.loveandlemons.com/brownies-recipe/
-// - Gingerbread Cookies - https://tastesbetterfromscratch.com/gingerbread-cookies/
 
 // RUSSIAN:
 // - Beef Stroganoff - https://natashaskitchen.com/beef-stroganoff/
