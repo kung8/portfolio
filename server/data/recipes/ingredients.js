@@ -421,6 +421,7 @@ const INGREDIENTS = {
         MANCHEGO_CHEESE: { name: 'manchego cheese', category: INGREDIENT_CATEGORY.DAIRY },
         MARGARINE: { name: 'margarine', category: INGREDIENT_CATEGORY.DAIRY },
         MEDIUM_CHEDDAR_CHEESE: { name: 'medium cheddar cheese', category: INGREDIENT_CATEGORY.DAIRY },
+        MEXICAN_BLEND_CHEESE: { name: 'mexican blend cheese', category: INGREDIENT_CATEGORY.DAIRY },
         MILD_CHEDDAR_CHEESE: { name: 'mild cheddar cheese', category: INGREDIENT_CATEGORY.DAIRY },
         MILK: { name: 'milk', category: INGREDIENT_CATEGORY.DAIRY },
         MOZZARELLA_CHEESE: { name: 'mozzarella cheese', category: INGREDIENT_CATEGORY.DAIRY },

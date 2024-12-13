@@ -110,6 +110,7 @@ const marryMeChicken = require("./recipes/marry-me-chicken");
 const mashPotatoes = require("./recipes/mash-potatoes");
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
 const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chicken");
+const mexicanEnchiladas = require("./recipes/mexican-enchiladas");
 const mochi = require("./recipes/mochi");
 const muddyBuddies = require("./recipes/muddy-buddies");
 const noBakeCookie = require("./recipes/no-bake-cookie");
@@ -242,6 +243,7 @@ const recipes = [
     // MEXICAN
     mexicanCilantroLimeChicken,
     chickenQuesadilla,
+    mexicanEnchiladas,
     cafeRioBowl,
     tacoInABag,
     mexicanChickenBake, // TODO: add
@@ -415,8 +417,7 @@ module.exports = recipes;
 // - Churros - https://www.cookingclassy.com/churros/
 // - Chicken Paella - https://www.averiecooks.com/easy-chicken-paella/
 
-// MEXICAN: 
-// - Enchiladas - https://www.isabeleats.com/red-chicken-enchiladas/
+// MEXICAN:
 // - Beef and Bean Chimichanga - https://www.allrecipes.com/recipe/36766/beef-and-bean-chimichangas/
 // - Beef Tacos - https://feelgoodfoodie.net/recipe/ground-beef-tacos-napa-cabbage-guacamole/
 // - Tortillas - 

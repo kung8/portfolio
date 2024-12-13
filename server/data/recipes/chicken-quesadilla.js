@@ -8,7 +8,7 @@ const VEGGIES = 'Veggies';
 const QUESADILLA = 'Quesadilla';
 const PREP_CHICKEN = 'Prep Chicken';
 const PREP_VEGGIES = 'Prep Veggies';
-const ASSEMBLING_QUESADILLA = 'Assembling Quesadilla';
+const ASSEMBLE_QUESADILLA = 'Assemble Quesadilla';
 const COOK_QUESADILLA = 'Cook Quesadilla';
 
 module.exports = {
@@ -68,6 +68,7 @@ module.exports = {
     ],
     directions: [
         { step: 'In a small bowl, combine spices.', type: SPICES },
+        
         { step: 'In a saucepan, add the chicken breast and fill the saucepan with water just enough to cover the chicken slightly.', type: PREP_CHICKEN },
         { step: 'Bring to a boil.', type: PREP_CHICKEN },
         { step: 'Reduce to a medium-low heat. Cook until chicken reaches 165ºF.', type: PREP_CHICKEN },
@@ -82,10 +83,10 @@ module.exports = {
         { step: 'Optionally add hot sauce. Mix.', type: PREP_VEGGIES },
         { step: 'Transfer veggies to the bowl of chicken. Mix.', type: PREP_VEGGIES },
 
-        { step: 'Place tortilla on a plate. On one half of each, top them with 1/8 of both cheeses and 1/4 of the chicken-veggies mixture.', type: ASSEMBLING_QUESADILLA },
-        { step: 'Top with 1/8 of both cheeses (should be the last of the cheeses).', type: ASSEMBLING_QUESADILLA },
-        { step: 'Fold to seal the goodness. Gently press to create a slight crease.', type: ASSEMBLING_QUESADILLA },
-        { step: 'Repeat filling with the remaining tortillas.', type: ASSEMBLING_QUESADILLA },
+        { step: 'Place tortilla on a plate. On one half of each, top them with 1/8 of both cheeses and 1/4 of the chicken-veggies mixture.', type: ASSEMBLE_QUESADILLA },
+        { step: 'Top with 1/8 of both cheeses (should be the last of the cheeses).', type: ASSEMBLE_QUESADILLA },
+        { step: 'Fold to seal the goodness. Gently press to create a slight crease.', type: ASSEMBLE_QUESADILLA },
+        { step: 'Repeat filling with the remaining tortillas.', type: ASSEMBLE_QUESADILLA },
         
         { step: 'Wipe off the frying pan with paper towel.', type: COOK_QUESADILLA },
         { step: 'Over medium-low heat, add a little butter to make the tortillas crisper.', type: COOK_QUESADILLA },
