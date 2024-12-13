@@ -42,6 +42,7 @@ const chickenKebab = require("./recipes/chicken-kebabs");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenParmesan = require("./recipes/chicken-parmesan");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
+const chickenQuesadilla = require("./recipes/chicken-quesadilla");
 const chickenRamen = require("./recipes/chicken-ramen");
 const chickenStuffedCrescentRolls = require("./recipes/chicken-stuffed-crescent-rolls");
 const chili = require("./recipes/chili");
@@ -240,8 +241,9 @@ const recipes = [
 
     // MEXICAN
     mexicanCilantroLimeChicken,
-    tacoInABag,
+    chickenQuesadilla,
     cafeRioBowl,
+    tacoInABag,
     mexicanChickenBake, // TODO: add
 
     ////////////////////////////////////////////////////////////////////// EUROPEAN //////////////////////////////////////////////////////////////////////  
@@ -417,7 +419,6 @@ module.exports = recipes;
 // - Enchiladas - https://www.isabeleats.com/red-chicken-enchiladas/
 // - Beef and Bean Chimichanga - https://www.allrecipes.com/recipe/36766/beef-and-bean-chimichangas/
 // - Beef Tacos - https://feelgoodfoodie.net/recipe/ground-beef-tacos-napa-cabbage-guacamole/
-// - Chicken Quesadilla - https://www.wellplated.com/chicken-quesadilla/
 // - Tortillas - 
 
 // GERMAN:
