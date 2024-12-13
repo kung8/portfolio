@@ -249,6 +249,7 @@ const recipes = [
     mexicanChickenBake, // TODO: add
 
     ////////////////////////////////////////////////////////////////////// EUROPEAN //////////////////////////////////////////////////////////////////////  
+    // ITALIAN
     carbonara,
     italianLasagna,
     pizza,
@@ -258,9 +259,17 @@ const recipes = [
     basilPesto,
     italianTurkeyMeatballSpinachTortelliniSoup,
     gelato,
+
+    // SPANISH
     shrimpPaella,
+
+    // SWEDISH
     swedishMeatballs,
+
+    // RUSSIAN
     beefStroganoff,
+
+    // FRENCH
     greenBeanAlmondine,
 
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
