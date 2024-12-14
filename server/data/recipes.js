@@ -196,7 +196,7 @@ const recipes = [
     japaneseChickenKatsu,
     japaneseKatsudon,
     karaage,
-    japaneseCurry, // TODO: add
+    japaneseCurry,
     lemonChickenRamen,
     chickenRamen,
     mochi,
@@ -405,7 +405,6 @@ module.exports = recipes;
 // (This is to pour over the Ayam Goreng)
 
 // JAPANESE:
-// - Japanese Chicken Curry - https://www.justonecookbook.com/simple-chicken-curry/
 // - Oyakodon - https://www.justonecookbook.com/oyakodon/
 
 // ITALIAN:

@@ -226,6 +226,7 @@ const INGREDIENTS = {
         GUMBO_SOUP: { name: 'gumbo soup', category: INGREDIENT_CATEGORY.CANNED },
         INSTANT_RAMEN: { name: 'instant ramen', category: INGREDIENT_CATEGORY.CANNED },
         JAMBALAYA_SOUP: { name: 'jambalaya soup', category: INGREDIENT_CATEGORY.CANNED },
+        JAPANESE_CURRY_MIX: { name: 'japanese curry mix', category: INGREDIENT_CATEGORY.CANNED },
         KIDNEY_BEANS: { name: 'kidney beans', category: INGREDIENT_CATEGORY.CANNED },
         KNORR_TAMARIND_SOUP_BASE: { name: 'Knorr tamarind', category: INGREDIENT_CATEGORY.CANNED },
         LENTIL_SOUP: { name: 'lentil soup', category: INGREDIENT_CATEGORY.CANNED },
