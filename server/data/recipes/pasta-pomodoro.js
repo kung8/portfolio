@@ -7,6 +7,7 @@ const TOMATO_SAUCE = 'Tomato Sauce';
 
 const COOK_PASTA = 'Cook Pasta';
 const MAKE_SAUCE = 'Make Sauce';
+const ASSEMBLE_PASTA = 'Assemble Pasta';
 
 module.exports = {
     wip: true,
