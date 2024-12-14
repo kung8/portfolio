@@ -121,6 +121,7 @@ const padThai = require("./recipes/pad-thai");
 const panFriedChickenThighs = require("./recipes/pan-fried-chicken-thighs");
 const paoDeQueijo = require("./recipes/pao-de-queijo");
 const parfait = require("./recipes/parfait");
+const pastaPomodoro = require("./recipes/pasta-pomodoro");
 const peachCobbler = require("./recipes/peach-cobbler");
 const peanutBrittle = require("./recipes/peanut-brittle");
 const peanutButterCookies = require("./recipes/peanut-butter-cookies");
@@ -259,6 +260,7 @@ const recipes = [
     chickenAlfredo,
     chickenParmesan, // TODO: add
     basilPesto,
+    pastaPomodoro,
     italianTurkeyMeatballSpinachTortelliniSoup,
     gelato,
 
@@ -407,7 +409,6 @@ module.exports = recipes;
 
 // ITALIAN:
 // - Ravioli - https://www.saturdaysinrome.com/blog/ricotta-ravioli-recipe/
-// - Pasta Pomodoro - https://www.allrecipes.com/recipe/23847/pasta-pomodoro/
 // - Potato Gnocchi - https://www.giallozafferano.com/recipes/Potato-gnocchi.html
 // - Pork Milanese - https://www.billyparisi.com/pork-milanese-spring-kale-salad-recipe/
 // - Beef Ragu - https://www.recipetineats.com/slow-cooked-shredded-beef-ragu-pasta/

@@ -609,6 +609,7 @@ const INGREDIENTS = {
     },
     GRAIN: {
         ARBORIO_RICE: { name: 'arborio rice', category: INGREDIENT_CATEGORY.GRAIN },
+        ANGEL_HAIR_PASTA: { name: 'angel hair pasta', category: INGREDIENT_CATEGORY.GRAIN },
         BAGELS: { name: 'bagels', category: INGREDIENT_CATEGORY.GRAIN },
         BASMATI_RICE: { name: 'basmati rice', category: INGREDIENT_CATEGORY.GRAIN },
         BRIOCHE_BUNS: { name: 'brioche buns', category: INGREDIENT_CATEGORY.GRAIN },
