@@ -42,7 +42,7 @@ module.exports = {
         { ...ALL_PURPOSE_FLOUR, amount: '2 Tbsp', additionalDetails: '', section: DEEP_FRY },
 
         { ...LEMON, amount: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
-        { ...KEWPIE_MAYONNAISE, amount: '', additionalDetails: '', section: '' },
+        { ...KEWPIE_MAYONNAISE, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },
