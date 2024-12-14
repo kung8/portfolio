@@ -49,8 +49,8 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'Bring a pot of water to a boil.', type: COOK_PASTA },
-        { step: 'Add pasta and cook until al dente (about 8 minutes).', type: COOK_PASTA },
+        { step: 'Bring a pot of water and salt to a boil.', type: COOK_PASTA },
+        { step: 'Add pasta and cook until al dente (about 8 minutes or per package instructions).', type: COOK_PASTA },
         { step: 'Drain and set aside.', type: COOK_PASTA },
 
         { step: 'Over high heat, add olive oil to a frying pan.', type: MAKE_SAUCE },

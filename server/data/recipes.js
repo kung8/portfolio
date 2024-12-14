@@ -12,6 +12,7 @@ const basilPesto = require("./recipes/basil-pesto");
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefAndBeanChimichangas = require("./recipes/beef-and-bean-chimichangas");
+const beefRagu = require("./recipes/beef-ragu");
 const beefStroganoff = require("./recipes/beef-stroganoff");
 const bibimbap = require("./recipes/bibimbap");
 const bigMac = require("./recipes/big-mac");
@@ -262,6 +263,7 @@ const recipes = [
     chickenAlfredo,
     chickenParmesan, // TODO: add
     basilPesto,
+    beefRagu,
     pastaPomodoro,
     italianTurkeyMeatballSpinachTortelliniSoup,
     gelato,
@@ -411,7 +413,6 @@ module.exports = recipes;
 // - Ravioli - https://www.saturdaysinrome.com/blog/ricotta-ravioli-recipe/
 // - Potato Gnocchi - https://www.giallozafferano.com/recipes/Potato-gnocchi.html
 // - Pork Milanese - https://www.billyparisi.com/pork-milanese-spring-kale-salad-recipe/
-// - Beef Ragu - https://www.recipetineats.com/slow-cooked-shredded-beef-ragu-pasta/
 // - Cherry and Dark Chocolate Crostata - https://www.punchfork.com/recipe/Cherry-and-Dark-Chocolate-Crostata-Bon-Appetit
 // - Shrimp Scampi - https://www.allrecipes.com/recipe/19508/shrimp-scampi/
 // - Lasagna - https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/
