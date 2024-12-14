@@ -14,6 +14,7 @@ const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const beefAndBeanChimichangas = require("./recipes/beef-and-bean-chimichangas");
 const beefRagu = require("./recipes/beef-ragu");
 const beefStroganoff = require("./recipes/beef-stroganoff");
+const beefTacos = require("./recipes/beef-tacos");
 const bibimbap = require("./recipes/bibimbap");
 const bigMac = require("./recipes/big-mac");
 const biscoffCookiePie = require("./recipes/biscoff-cookie-pie");
@@ -251,6 +252,7 @@ const recipes = [
     mexicanEnchiladas,
     beefAndBeanChimichangas,
     cafeRioBowl,
+    beefTacos,
     tacoInABag,
     mexicanChickenBake, // TODO: add
 
@@ -431,7 +433,6 @@ module.exports = recipes;
 // - Chicken Paella - https://www.averiecooks.com/easy-chicken-paella/
 
 // MEXICAN:
-// - Beef Tacos - https://feelgoodfoodie.net/recipe/ground-beef-tacos-napa-cabbage-guacamole/
 // - Tortillas - 
 
 // GERMAN:
