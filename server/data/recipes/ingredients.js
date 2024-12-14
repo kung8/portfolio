@@ -298,6 +298,7 @@ const INGREDIENTS = {
         HUMMUS: { name: 'hummus', category: INGREDIENT_CATEGORY.CONDIMENTS },
         ITALIAN_DRESSING: { name: 'italian dressing', category: INGREDIENT_CATEGORY.CONDIMENTS },
         KETCHUP: { name: 'ketchup', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        KEWPIE_MAYONNAISE: { name: 'kewpie mayonnaise', category: INGREDIENT_CATEGORY.CONDIMENTS },
         LIGHT_SOY_SAUCE: { name: 'light soy sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         MAGGI_SEASONING: { name: 'maggi seasoning', category: INGREDIENT_CATEGORY.CONDIMENTS },
         MAPLE_SYRUP: { name: 'maple syrup', category: INGREDIENT_CATEGORY.CONDIMENTS },

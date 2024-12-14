@@ -94,6 +94,7 @@ const italianTurkeyMeatballSpinachTortelliniSoup = require("./recipes/italian-tu
 const japaneseChickenKatsu = require("./recipes/japanese-chicken-katsu");
 const japaneseCurry = require("./recipes/japanese-curry");
 const japaneseKatsudon = require("./recipes/japanese-katsudon");
+const karaage = require("./recipes/karaage");
 const kfcGravy = require("./recipes/kfc-gravy");
 const khmerRedCurry = require("./recipes/khmer-red-curry");
 const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
@@ -194,6 +195,7 @@ const recipes = [
     sushi,
     japaneseChickenKatsu,
     japaneseKatsudon,
+    karaage,
     japaneseCurry, // TODO: add
     lemonChickenRamen,
     chickenRamen,
@@ -403,7 +405,6 @@ module.exports = recipes;
 // (This is to pour over the Ayam Goreng)
 
 // JAPANESE:
-// - Karaage - https://www.justonecookbook.com/karaage/
 // - Japanese Chicken Curry - https://www.justonecookbook.com/simple-chicken-curry/
 // - Oyakodon - https://www.justonecookbook.com/oyakodon/
 
