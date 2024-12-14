@@ -11,6 +11,7 @@ const bananaBread = require("./recipes/banana-bread");
 const basilPesto = require("./recipes/basil-pesto");
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
+const beefAndBeanChimichangas = require("./recipes/beef-and-bean-chimichangas");
 const beefStroganoff = require("./recipes/beef-stroganoff");
 const bibimbap = require("./recipes/bibimbap");
 const bigMac = require("./recipes/big-mac");
@@ -244,6 +245,7 @@ const recipes = [
     mexicanCilantroLimeChicken,
     chickenQuesadilla,
     mexicanEnchiladas,
+    beefAndBeanChimichangas,
     cafeRioBowl,
     tacoInABag,
     mexicanChickenBake, // TODO: add
@@ -427,7 +429,6 @@ module.exports = recipes;
 // - Chicken Paella - https://www.averiecooks.com/easy-chicken-paella/
 
 // MEXICAN:
-// - Beef and Bean Chimichanga - https://www.allrecipes.com/recipe/36766/beef-and-bean-chimichangas/
 // - Beef Tacos - https://feelgoodfoodie.net/recipe/ground-beef-tacos-napa-cabbage-guacamole/
 // - Tortillas - 
 
