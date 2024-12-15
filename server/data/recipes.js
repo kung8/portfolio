@@ -11,6 +11,7 @@ const bananaBread = require("./recipes/banana-bread");
 const basilPesto = require("./recipes/basil-pesto");
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
+const bearnaiseSauce = require("./recipes/bearnaise-sauce");
 const beefAndBeanChimichangas = require("./recipes/beef-and-bean-chimichangas");
 const beefRagu = require("./recipes/beef-ragu");
 const beefStroganoff = require("./recipes/beef-stroganoff");
@@ -30,6 +31,7 @@ const butteredCorn = require("./recipes/buttered-corn");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cabbageStirFry = require("./recipes/cabbage-stir-fry");
 const cafeRioBowl = require("./recipes/cafe-rio-bowl");
+const cajunShrimp = require("./recipes/cajun-shrimp");
 const caramelApples = require("./recipes/caramel-apples");
 const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 const caramelizedOnion = require("./recipes/caramelized-onion");
@@ -37,12 +39,15 @@ const carbonara = require("./recipes/carbonara");
 const carrotCake = require("./recipes/carrot-cake");
 const cheeseballs = require("./recipes/cheeseballs");
 const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
+const cherryAndDarkChocolateCrostata = require("./recipes/cherry-and-dark-chocolate-crostata");
 const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenBiryani = require("./recipes/chicken-biryani");
 const chickenCordonBleu = require("./recipes/chicken-cordon-bleu");
-const chickenMcNuggets = require("./recipes/chicken-mcnuggets");
+const chickenFrancese = require("./recipes/chicken-francese");
 const chickenKebab = require("./recipes/chicken-kebabs");
+const chickenMcNuggets = require("./recipes/chicken-mcnuggets");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
+const chickenPaella = require("./recipes/chicken-paella"); s
 const chickenParmesan = require("./recipes/chicken-parmesan");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
 const chickenQuesadilla = require("./recipes/chicken-quesadilla");
@@ -56,6 +61,7 @@ const chineseCashewChicken = require("./recipes/chinese-cashew-chicken");
 const chineseGingerChicken = require("./recipes/chinese-ginger-chicken");
 const chineseGreenBeanBeef = require("./recipes/chinese-green-bean-beef");
 const chineseLoMeinNoodles = require("./recipes/chinese-lo-mein-noodles");
+const chineseFriedRice = require("./recipes/chinese-fried-rice");
 const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
 const chineseSweetAndSourPork = require("./recipes/chinese-sweet-and-sour-pork");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
@@ -66,6 +72,7 @@ const coleslaw = require("./recipes/coleslaw");
 const creamPuffs = require("./recipes/cream-puffs");
 const cremeBrulee = require("./recipes/creme-brulee");
 const crescentRolls = require("./recipes/crescent-rolls");
+const dijonChicken = require("./recipes/dijon-chicken");
 const dinnerRolls = require("./recipes/dinner-rolls");
 const eclair = require("./recipes/eclair");
 const eggCasserole = require("./recipes/egg-casserole");
@@ -73,10 +80,13 @@ const englishScones = require("./recipes/english-scones");
 const fancyLunchables = require("./recipes/fancy-lunchables");
 const frenchBaguettes = require("./recipes/french-baguettes");
 const frenchCrepe = require("./recipes/french-crepe");
+const frenchOnionSoupGratinee = require("./recipes/french-onion-soup-gratinee");
 const frenchToast = require("./recipes/french-toast");
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
+const garlicShrimp = require("./recipes/garlic-shrimp");
 const gelato = require("./recipes/gelato");
+const germanSchnitzel = require("./recipes/german-schnitzel");
 const gingerbreadCookies = require("./recipes/gingerbread-cookies");
 const graveyardDessert = require("./recipes/graveyard-dessert");
 const gravy = require("./recipes/gravy");
@@ -97,12 +107,16 @@ const italianTurkeyMeatballSpinachTortelliniSoup = require("./recipes/italian-tu
 const japaneseChickenKatsu = require("./recipes/japanese-chicken-katsu");
 const japaneseCurry = require("./recipes/japanese-curry");
 const japaneseKatsudon = require("./recipes/japanese-katsudon");
+const javaneseChickenCoconutCurry = require("./recipes/javanese-chicken-coconut-curry");
+const jumboShrimpParmesan = require("./recipes/jumbo-shrimp-parmesan");
 const karaage = require("./recipes/karaage");
+const keyLimePie = require("./recipes/key-lime-pie");
 const kfcGravy = require("./recipes/kfc-gravy");
 const khmerRedCurry = require("./recipes/khmer-red-curry");
 const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
 const koreanFriedChicken = require("./recipes/korean-fried-chicken");
 const kungPaoChicken = require("./recipes/kung-pao-chicken");
+const lasagna = require("./recipes/lasagna");
 const lemonBars = require("./recipes/lemon-bars");
 const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
 const lemonChickenRamen = require("./recipes/lemon-chicken-ramen");
@@ -117,11 +131,13 @@ const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
 const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chicken");
 const mexicanEnchiladas = require("./recipes/mexican-enchiladas");
 const mochi = require("./recipes/mochi");
+const monteCristoSandwich = require("./recipes/monte-cristo-sandwich");
 const muddyBuddies = require("./recipes/muddy-buddies");
 const naan = require("./recipes/naan");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const orangeChicken = require("./recipes/orange-chicken");
+const oyakodon = require("./recipes/oyakodon");
 const padThai = require("./recipes/pad-thai");
 const panFriedChickenThighs = require("./recipes/pan-fried-chicken-thighs");
 const paoDeQueijo = require("./recipes/pao-de-queijo");
@@ -137,17 +153,24 @@ const peruvianChicken = require("./recipes/peruvian-chicken");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
 const pizza = require("./recipes/pizza");
+const poachedSalmonWithHollandaiseSauce = require("./recipes/poached-salmon-with-hollandaise-sauce");
 const popcornBalls = require("./recipes/popcorn-balls");
+const porkMilanese = require("./recipes/pork-milanese");
+const potatoGnocchi = require("./recipes/potato-gnocchi");
 const potRoast = require("./recipes/pot-roast");
 const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
+const ravioli = require("./recipes/ravioli");
 const riceKrispyTreats = require("./recipes/rice-krispy-treats");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const rosemaryLemonade = require("./recipes/rosemary-lemonade");
 const rosemaryFries = require("./recipes/rosemary-fries");
+const russianBeefStroganoff = require("./recipes/russian-beef-stroganoff");
+const samosa = require("./recipes/samosa");
 const sauteedSquash = require("./recipes/sauteed-squash");
 const scrambledEggs = require("./recipes/scrambled-eggs");
 const shrimpPaella = require("./recipes/shrimp-paella");
+const shrimpScampi = require("./recipes/shrimp-scampi");
 const singaporeanChickenRice = require("./recipes/singaporean-chicken-rice");
 const sloppyJoes = require("./recipes/sloppy-joes");
 const smoothie = require("./recipes/smoothie");
@@ -162,6 +185,7 @@ const sugarCookies = require("./recipes/sugar-cookies");
 const sushi = require("./recipes/sushi");
 const swedishMeatballs = require("./recipes/swedish-meatballs");
 const tacoInABag = require("./recipes/taco-in-a-bag");
+const tandooriChicken = require("./recipes/tandoori-chicken");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
 const thaiBasil = require("./recipes/thai-basil");
 const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
@@ -189,7 +213,9 @@ const recipes = [
     chickenBiryani,
     indianButterChicken,
     indianChickenTikkaMasala,
+    tandooriChicken, // TODO: add
     naan,
+    samosa, // TODO: add
 
     // VIETNAMESE
     vietnamesePho,
@@ -204,6 +230,7 @@ const recipes = [
     japaneseKatsudon,
     karaage,
     japaneseCurry,
+    oyakodon, // TODO: adds
     lemonChickenRamen,
     chickenRamen,
     mochi,
@@ -223,6 +250,7 @@ const recipes = [
     chineseCashewChicken,
     chineseGreenBeanBeef,
     chineseBroccoliBeef,
+    chineseFriedRice, // TODO: add
     chineseSourChickenSoup,
     pepperSteakStirFry,
     lemonChickenOnLettuce,
@@ -239,6 +267,9 @@ const recipes = [
     malaysianSatay,
     malaysianLemonChicken,
     malaysianBlackPepperChicken,
+
+    // INDONESIAN
+    javaneseChickenCoconutCurry, // TODO: add (This is to pour over the Ayam Goreng dish)
 
     // KHMER
     khmerRedCurry,
@@ -265,18 +296,24 @@ const recipes = [
     // ITALIAN
     carbonara,
     italianLasagna,
+    lasagna, // TODO: add (and determine if this is better than italianLasagna)
     pizza,
     chickenCordonBleu,
+    porkMilanese, // TODO: add
     chickenAlfredo,
     chickenParmesan, // TODO: add
     basilPesto,
     beefRagu,
     pastaPomodoro,
+    shrimpScampi, // TODO: add
+    potatoGnocchi, // TODO: add
+    ravioli, // TODO: add
     italianTurkeyMeatballSpinachTortelliniSoup,
     gelato,
 
     // SPANISH
     shrimpPaella,
+    chickenPaella, // TODO: add
     churros,
 
     // SWEDISH
@@ -284,9 +321,20 @@ const recipes = [
 
     // RUSSIAN
     beefStroganoff,
+    russianBeefStroganoff, // TODO: add (and determine if this is better than beefStroganoff)
 
     // FRENCH
     greenBeanAlmondine,
+    chickenFrancese, // TODO: add
+    bearnaiseSauce, // TODO: add
+    poachedSalmonWithHollandaiseSauce, // TODO: add
+    frenchOnionSoupGratinee, // TODO: add
+    dijonChicken, // TODO: add
+    monteCristoSandwich, // TODO: add
+    cherryAndDarkChocolateCrostata, // TODO: add
+
+    // GERMAN
+    germanSchnitzel, // TODO: add
 
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
     marryMeChicken,
@@ -321,6 +369,9 @@ const recipes = [
     sourdoughBread,
     hawaiianHaystacks,
     hospitalityChicken,
+    cajunShrimp, // TODO: add
+    jumboShrimpParmesan, // TODO: add
+    garlicShrimp, // TODO: add
     garlicChickenWithHerbs,
     bakedChicken,
     bakedLemonChicken,
@@ -383,6 +434,7 @@ const recipes = [
     appleTart,
     applePie,
     biscoffCookiePie,
+    keyLimePie, // TODO: add
     noBakeCookie,
     muddyBuddies,
     riceKrispyTreats,
@@ -405,56 +457,16 @@ module.exports = recipes;
 
 
 // RECIPES TO ADD
-// CHINESE:
-// - Fried Rice - https://www.madewithlau.com/recipes/egg-fried-rice
-
 // INDONESIAN:
 // - Gulai Ayam Padang (just the curry itself) - https://dailycookingquest.com/gulai-ayam-padang.html
-//     - OR - 
-// - Javanese Chicken Coconut Curry - https://www.taste.com.au/recipes/javanese-chicken-coconut-curry-opor-ayam/ffd7ae57-ebd8-4886-a95b-2e49d067bd19
 // (This is to pour over the Ayam Goreng)
 
-// JAPANESE:
-// - Oyakodon - https://www.justonecookbook.com/oyakodon/
-
 // ITALIAN:
-// - Ravioli - https://www.saturdaysinrome.com/blog/ricotta-ravioli-recipe/
-// - Potato Gnocchi - https://www.giallozafferano.com/recipes/Potato-gnocchi.html
-// - Pork Milanese - https://www.billyparisi.com/pork-milanese-spring-kale-salad-recipe/
-// - Cherry and Dark Chocolate Crostata - https://www.punchfork.com/recipe/Cherry-and-Dark-Chocolate-Crostata-Bon-Appetit
-// - Shrimp Scampi - https://www.allrecipes.com/recipe/19508/shrimp-scampi/
-// - Lasagna - https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/
 // - Focaccia Bread 
-
-// FRENCH:
-// - Monte Cristo Sandwich - https://www.allrecipes.com/recipe/264681/madame-cristo-grilled-ham-and-cheese/
-// - French Onion Soup Gratinée - https://www.allrecipes.com/recipe/91192/french-onion-soup-gratinee/
-// - Dijon Chicken - https://www.allrecipes.com/dijon-chicken-6575993
-// - Chicken Francese - https://www.allrecipes.com/recipe/16681/delicious-easy-chicken-francese/
-// - Poached Salmon with Hollandaise Sauce - https://www.allrecipes.com/recipe/133137/poached-salmon-with-hollandaise-sauce/
-// - Bearnaise Sauce - https://www.allrecipes.com/recipe/256569/chef-johns-bearnaise-sauce/
-
-// SPANISH:
-// - Chicken Paella - https://www.averiecooks.com/easy-chicken-paella/
 
 // MEXICAN:
 // - Tortillas - 
 
-// GERMAN:
-// - Schnitzel - https://www.daringgourmet.com/traditional-german-pork-schnitzel/
-
 // DESSERT:
-// - Key Lime Pie - https://www.allrecipes.com/recipe/12698/easy-key-lime-pie-i/
 // - Brownies - https://www.loveandlemons.com/brownies-recipe/
 
-// RUSSIAN:
-// - Beef Stroganoff - https://natashaskitchen.com/beef-stroganoff/
-
-// SHRIMP: 
-// - Cajun Shrimp - https://www.lecremedelacrumb.com/cajun-shrimp-and-rice-skillet/
-// - Jumbo Shrimp Parmesan - https://www.food.com/recipe/jumbo-shrimp-parmesan-42169
-// - Garlic Shrimp - https://www.allrecipes.com/recipe/220597/simple-garlic-shrimp/
-
-// INDIAN:
-// - Tandoori Chicken - https://www.indianhealthyrecipes.com/tandoori-chicken-recipe/
-// - Samosa - https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/
