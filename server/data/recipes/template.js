@@ -1,4 +1,4 @@
-const example = '../assets/Products/example.jpeg';
+// const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { } = require('./ingredients');
 
@@ -21,7 +21,7 @@ module.exports = {
     websites: [
         { label: '', link: '' }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
         { ...GENRES, amount: '', additionalDetails: '', section: '' },
     ],

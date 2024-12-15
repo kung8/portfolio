@@ -173,6 +173,7 @@ const vietnamesePho = require("./recipes/vietnamese-pho");
 const vietnameseStuffedTomatoes = require("./recipes/vietnamese-stuffed-tomatoes");
 const waffles = require("./recipes/waffles");
 const wrap = require("./recipes/wrap");
+const yellowCurry = require("./recipes/yellow-curry");
 
 const recipes = [
     //////////////////////////////////////////////////////////////////////// ASIAN ///////////////////////////////////////////////////////////////////////  
@@ -180,6 +181,7 @@ const recipes = [
     padThai,
     thaiPadSeeEw,
     thaiBasil,
+    yellowCurry,
     mangoStickyRice,
     thaiMassamanCurry, // TODO: add
 
