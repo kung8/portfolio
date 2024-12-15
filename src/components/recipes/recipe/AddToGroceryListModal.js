@@ -28,6 +28,12 @@ export const AddToGroceryListModal = ({
     const categories = categoryData?.CATEGORIES ?? [];
 
     useEffect(() => {
+        if (initialType) {
+            setType(initialType);
+        }
+    }, [initialType]);
+
+    useEffect(() => {
         if (!type) {
             setType(categorizeRecipeType(categories[0]));
         }

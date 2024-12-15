@@ -204,7 +204,7 @@ export const EditGroceryListItemModal = ({
                             type: 'Dinner' // TODO: should look up the type based on the recipeName?
                         });
 
-                        const onlyItemNameChanged = originalItemToEdit.name !== finalItemToEdit.name && 
+                        const onlyItemNameChanged = originalItemToEdit.name !== finalItemToEdit.name &&
                             originalItemToEdit.category === finalItemToEdit.category &&
                             originalItemToEdit.recipeName === finalItemToEdit.recipeName &&
                             originalItemToEdit.date === finalItemToEdit.date &&

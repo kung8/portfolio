@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useQueryClient } from 'react-query';
 import { getAsyncData, useGetData } from '../../../hooks';
 import { Loader } from '../../Loader';
@@ -33,7 +33,8 @@ const IngredientItem = ({ id, item, link, selectedIngredients, setSelectedIngred
 
     useEffect(() => {
         setChecked(!!selectedIngredients.find(i => i.id === id));
-    }, [selectedIngredients, item.name, id]);
+        // eslint-disable-next-line
+    }, [selectedIngredients.map(ingredient => ingredient.id), item.name, id]);
 
     const handleCheckboxChange = () => {
         const included = selectedIngredients.find(i => i.id === id);
@@ -48,7 +49,9 @@ const IngredientItem = ({ id, item, link, selectedIngredients, setSelectedIngred
     }
 
     const getLink = () => {
+        // eslint-disable-next-line
         const isDev = process.env.NODE_ENV === 'development';
+        // if the link is an external link, use the link as is
         return link.url.includes('http') ? link.url : (isDev ? 'http://localhost:3000/#/' : 'https://kevinung8.com/#/') + link.url;
     }
 
@@ -137,6 +140,12 @@ export const Recipe = ({ match }) => {
     } = useGroceryList();
 
 
+    // memoized ingredients
+    const localIngredients = useMemo(() => {
+        return item?.ingredients?.map(i => ({ ...i, id: i.id ?? generateUUID() })) ?? [];
+        // eslint-disable-next-line
+    }, [JSON.stringify(item?.ingredients)]);
+
 
     useEffect(() => {
         let mounted = true;
@@ -160,8 +169,8 @@ export const Recipe = ({ match }) => {
         // eslint-disable-next-line
     }, []);
 
-    const separatedIngredients = !!item?.separated && item?.ingredients &&
-        item.ingredients.reduce((acc, ingredient) => {
+    const separatedIngredients = !!item?.separated && localIngredients &&
+        localIngredients.reduce((acc, ingredient) => {
             if (!ingredient.id) ingredient.id = generateUUID();
             if (ingredient.section && !acc[ingredient.section]) acc[ingredient.section] = [];
             if (ingredient.section && acc[ingredient.section]) {
@@ -339,20 +348,20 @@ export const Recipe = ({ match }) => {
                             <span
                                 className="select-all-button"
                                 onClick={() => {
-                                    if (selectedIngredients.length === item.ingredients.length) {
+                                    if (selectedIngredients.length === localIngredients.length) {
                                         setSelectedIngredients([]);
                                     } else {
                                         if (item.separated) {
                                             const newIngredients = Object.values(formattedIngredients).flatMap((group) => group[1].map(ingredient => getIngredientData(item.name, ingredient, ingredient.id)));
                                             setSelectedIngredients(newIngredients);
                                         } else {
-                                            const newIngredients = item.ingredients.map((ingredient) => getIngredientData(item.name, ingredient, ingredient.id));
+                                            const newIngredients = localIngredients.map((ingredient) => getIngredientData(item.name, ingredient, ingredient.id));
                                             setSelectedIngredients(newIngredients);
                                         }
                                     }
                                 }}
                             >
-                                {item.ingredients.length > 0 && selectedIngredients.length === item.ingredients.length ? 'Deselect All' : 'Select All'}
+                                {localIngredients.length > 0 && selectedIngredients.length === localIngredients.length ? 'Deselect All' : 'Select All'}
                             </span>
                             <span
                                 className={`add-to-list-button ${selectedIngredients.length > 0 ? 'active' : ''}`}
@@ -387,7 +396,7 @@ export const Recipe = ({ match }) => {
                         </div>
                     ) : (
                         <div className="recipe-container">
-                            {item?.ingredients?.map((ingredient, index) => {
+                            {localIngredients?.map((ingredient, index) => {
                                 const formattedIngredient = formatIngredientItem(ingredient);
                                 const ingredientId = ingredient.id ?? generateUUID();
                                 return (
