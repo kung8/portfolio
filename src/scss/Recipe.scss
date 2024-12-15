@@ -141,6 +141,8 @@
                 margin-bottom: 24px;
             }
             .checkbox-ingredient-container {
+                display: flex;
+                align-items: flex-start;
                 margin-bottom: 6px;
                 .checkbox-ingredient {
                     margin-right: 6px;
@@ -152,6 +154,17 @@
                     color: $primary-blue;
                     text-underline-offset: 4px;
                     cursor: pointer;
+                }
+                .ingredient-label-with-link, 
+                .ingredient-label {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    column-gap: 4px;
+                    cursor: pointer;
+                }
+                .ingredient-additional-details {
+                    color: $darkgrey;
                 }
             }
             .separated-recipe-detail-list {

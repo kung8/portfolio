@@ -16,12 +16,12 @@ import { handleModalClass } from '../utils/handle-modal-class';
 const formatIngredientItem = (item) => {
     const amount = item.amount ? item.amount + ' ' : '';
     const name = item.name;
-    const additionalDetails = item.additionalDetails ? ', ' + item.additionalDetails : '';
-    return amount + name + additionalDetails;
+    return amount + name;
 }
 
 const getIngredientData = (recipeName, ingredient, id) => ({
     name: formatIngredientItem(ingredient),
+    additionalDetails: ingredient.additionalDetails,
     id,
     linkId: ingredient.linkId,
     category: ingredient.category,
@@ -66,11 +66,17 @@ const IngredientItem = ({ id, item, link, selectedIngredients, setSelectedIngred
             />
             {link ? (
                 <a href={getLink()} target="_blank" rel="noopener noreferrer" className="ingredient-label-with-link">
-                    {item.name}
+                    <span className="ingredient-name">{item.name}</span>
+                    {item.additionalDetails && (
+                        <span className="ingredient-additional-details">{item.additionalDetails}</span>
+                    )}
                 </a>
             ) : (
-                <label htmlFor={id}>
-                    {item.name}
+                <label htmlFor={id} className="ingredient-label">
+                    <span className="ingredient-name">{item.name}</span>
+                    {item.additionalDetails && (
+                        <span className="ingredient-additional-details">{item.additionalDetails}</span>
+                    )}
                 </label>
             )}
         </div>
@@ -384,7 +390,14 @@ export const Recipe = ({ match }) => {
                                             <IngredientItem
                                                 key={ingredientId + '-' + index}
                                                 id={ingredientId}
-                                                item={{ id: ingredientId, name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
+                                                item={{
+                                                    id: ingredientId,
+                                                    name: formattedIngredient,
+                                                    linkId: ingredient.linkId,
+                                                    recipeName: item.name,
+                                                    category: ingredient.category,
+                                                    additionalDetails: ingredient.additionalDetails,
+                                                }}
                                                 link={ingredient.link}
                                                 selectedIngredients={selectedIngredients}
                                                 setSelectedIngredients={setSelectedIngredients}
@@ -403,7 +416,14 @@ export const Recipe = ({ match }) => {
                                     <IngredientItem
                                         key={ingredientId + '-' + index}
                                         id={ingredientId}
-                                        item={{ id: ingredientId, name: formattedIngredient, linkId: ingredient.linkId, recipeName: item.name, category: ingredient.category }}
+                                        item={{
+                                            id: ingredientId,
+                                            name: formattedIngredient,
+                                            linkId: ingredient.linkId,
+                                            recipeName: item.name,
+                                            category: ingredient.category,
+                                            additionalDetails: ingredient.additionalDetails,
+                                        }}
                                         link={ingredient.link}
                                         selectedIngredients={selectedIngredients}
                                         setSelectedIngredients={setSelectedIngredients}
