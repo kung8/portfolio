@@ -96,7 +96,7 @@ export const Recipes = ({ history }) => {
         if (scrollHeight > 300 && !showArrow) {
             setShowArrow(true);
         } else {
-            if (showArrow) setShowArrow(false);
+            setShowArrow(false);
         }
     }
 
