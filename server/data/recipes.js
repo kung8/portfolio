@@ -60,6 +60,7 @@ const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
 const chineseSweetAndSourPork = require("./recipes/chinese-sweet-and-sour-pork");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateMousse = require("./recipes/chocolate-mousse");
+const churros = require("./recipes/churros");
 const cinnamonRolls = require("./recipes/cinnamon-rolls");
 const coleslaw = require("./recipes/coleslaw");
 const creamPuffs = require("./recipes/cream-puffs");
@@ -274,6 +275,7 @@ const recipes = [
 
     // SPANISH
     shrimpPaella,
+    churros,
 
     // SWEDISH
     swedishMeatballs,
@@ -431,7 +433,6 @@ module.exports = recipes;
 // - Bearnaise Sauce - https://www.allrecipes.com/recipe/256569/chef-johns-bearnaise-sauce/
 
 // SPANISH:
-// - Churros - https://www.cookingclassy.com/churros/
 // - Chicken Paella - https://www.averiecooks.com/easy-chicken-paella/
 
 // MEXICAN:
