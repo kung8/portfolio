@@ -250,6 +250,7 @@ const INGREDIENTS = {
         TORTILLA_SOUP: { name: 'tortilla soup', category: INGREDIENT_CATEGORY.CANNED },
         VEGETABLE_SOUP: { name: 'vegetable soup', category: INGREDIENT_CATEGORY.CANNED },
         WILD_RICE_SOUP: { name: 'wild rice soup', category: INGREDIENT_CATEGORY.CANNED },
+        YELLOW_CURRY_PASTE: { name: 'yellow curry paste', category: INGREDIENT_CATEGORY.CANNED },
     },
     CLOTHING: {
         BELT: { name: 'belt', category: INGREDIENT_CATEGORY.CLOTHING },
