@@ -1,4 +1,4 @@
-const example = '../assets/Products/example.jpeg';
+// const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGGS, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, CORNSTARCH, VEGETABLE_OIL, GARLIC, HONEY, LIGHT_SOY_SAUCE, KETCHUP, BROWN_SUGAR, RICE_WINE_VINEGAR, SESAME_OIL, GREEN_ONIONS, SESAME_SEEDS } = require('./ingredients');
 

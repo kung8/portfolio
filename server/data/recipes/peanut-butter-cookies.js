@@ -1,4 +1,4 @@
-const example = '../assets/Products/example.jpeg';
+// const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, PEANUT_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGGS, BAKING_POWDER, SALT } = require('./ingredients');
 

@@ -1,4 +1,4 @@
-const example = '../assets/Products/example.jpeg';
+// const example = '../assets/Products/example.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { CHICKEN_BREAST, BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, WHITE_SUGAR, ALL_PURPOSE_FLOUR, WHITE_PEPPER, CELERY_POWDER, CORNSTARCH, BAKING_POWDER, BAKING_SODA, EGGS, COLD_WATER, ROOM_TEMPERATURE_WATER, VEGETABLE_OIL } = require('./ingredients');
 
