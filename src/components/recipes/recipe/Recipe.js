@@ -68,14 +68,14 @@ const IngredientItem = ({ id, item, link, selectedIngredients, setSelectedIngred
                 <a href={getLink()} target="_blank" rel="noopener noreferrer" className="ingredient-label-with-link">
                     <span className="ingredient-name">{item.name}</span>
                     {item.additionalDetails && (
-                        <span className="ingredient-additional-details">{item.additionalDetails}</span>
+                        <span className="ingredient-additional-details">, {item.additionalDetails}</span>
                     )}
                 </a>
             ) : (
                 <label htmlFor={id} className="ingredient-label">
                     <span className="ingredient-name">{item.name}</span>
                     {item.additionalDetails && (
-                        <span className="ingredient-additional-details">{item.additionalDetails}</span>
+                        <span className="ingredient-additional-details">, {item.additionalDetails}</span>
                     )}
                 </label>
             )}
