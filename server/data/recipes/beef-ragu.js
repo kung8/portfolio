@@ -23,7 +23,7 @@ module.exports = {
     type: [TYPES.PASTA],
     yields: '5 servings',
     prepTime: '20 m',
-    cookTime: '2 h 30 m',
+    cookTime: '2 h 45 m',
     websites: [
         { label: 'Beef Ragu', link: 'https://www.recipetineats.com/slow-cooked-shredded-beef-ragu-pasta/' }
     ],

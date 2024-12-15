@@ -117,6 +117,7 @@ const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chic
 const mexicanEnchiladas = require("./recipes/mexican-enchiladas");
 const mochi = require("./recipes/mochi");
 const muddyBuddies = require("./recipes/muddy-buddies");
+const naan = require("./recipes/naan");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const orangeChicken = require("./recipes/orange-chicken");
@@ -185,6 +186,7 @@ const recipes = [
     chickenBiryani,
     indianButterChicken,
     indianChickenTikkaMasala,
+    naan,
 
     // VIETNAMESE
     vietnamesePho,
@@ -453,4 +455,3 @@ module.exports = recipes;
 // INDIAN:
 // - Tandoori Chicken - https://www.indianhealthyrecipes.com/tandoori-chicken-recipe/
 // - Samosa - https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/
-// - Naan - 
