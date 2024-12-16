@@ -44,7 +44,7 @@ module.exports = {
     img: cookies13,
     recipeCredit: '',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKING],
@@ -107,5 +107,8 @@ module.exports = {
         { step: 'Add remaining powdered sugar. Mix until uniform.', type: FROSTING, img: [frosting3, frosting4] },
 
         { step: 'Optionally frost the gingerbread men and enjoy these simple childhood treats.', type: SECTIONS.SERVE, img: [cookies9, cookies10, cookies11, cookies12, cookies14] },
+    ],
+    notes: [
+        { note: 'I personally prefer this without the frosting.' }
     ]
 };

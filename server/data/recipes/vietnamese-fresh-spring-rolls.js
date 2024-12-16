@@ -45,7 +45,7 @@ module.exports = {
     img: rolls9,
     recipeCredit: '',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     method: [METHODS.WRAP, METHODS.BOIL, METHODS.PAN_FRY],
