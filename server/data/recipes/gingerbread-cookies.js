@@ -39,7 +39,6 @@ const BAKING = 'Baking';
 const FROSTING = 'Frosting';
 
 module.exports = {
-    wip: true,
     cardName: 'Gingerbread Cookies',
     name: 'Gingerbread Cookies',
     img: cookies13,
@@ -107,6 +106,6 @@ module.exports = {
         { step: 'In a mixing bowl, combine butter, milk and half of the powdered sugar. Mix until uniform.', type: FROSTING, img: [frosting1, frosting2] },
         { step: 'Add remaining powdered sugar. Mix until uniform.', type: FROSTING, img: [frosting3, frosting4] },
 
-        { step: 'Frost the gingerbread men and enjoy these simple childhood treats.', type: SECTIONS.SERVE, img: [cookies9, cookies10, cookies11, cookies12, cookies13, cookies14] },
+        { step: 'Optionally frost the gingerbread men and enjoy these simple childhood treats.', type: SECTIONS.SERVE, img: [cookies9, cookies10, cookies11, cookies12, cookies14] },
     ]
 };
