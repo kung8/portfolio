@@ -1244,6 +1244,7 @@ const INGREDIENTS = {
         BASIL: { name: 'basil', category: INGREDIENT_CATEGORY.SPICES },
         BAY_LEAVES: { name: 'bay leaves', category: INGREDIENT_CATEGORY.SPICES },
         BLACK_PEPPER: { name: 'black pepper', category: INGREDIENT_CATEGORY.SPICES },
+        CAROM_SEEDS: { name: 'carom seeds', category: INGREDIENT_CATEGORY.SPICES },
         CARDAMOM: { name: 'cardamom', category: INGREDIENT_CATEGORY.SPICES },
         CARDAMOM_PODS: { name: 'cardamom pods', category: INGREDIENT_CATEGORY.SPICES },
         CAYENNE_PEPPER: { name: 'cayenne pepper', category: INGREDIENT_CATEGORY.SPICES },

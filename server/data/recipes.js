@@ -124,6 +124,7 @@ const macaroniSalad = require("./recipes/macaroni-salad");
 const malaysianBlackPepperChicken = require("./recipes/malaysian-black-pepper-chicken");
 const malaysianLemonChicken = require("./recipes/malaysian-lemon-chicken");
 const malaysianSatay = require("./recipes/malaysian-satay");
+const mangoChutney = require("./recipes/mango-chutney");
 const mangoStickyRice = require("./recipes/mango-sticky-rice");
 const marryMeChicken = require("./recipes/marry-me-chicken");
 const mashPotatoes = require("./recipes/mash-potatoes");
@@ -215,7 +216,8 @@ const recipes = [
     indianChickenTikkaMasala,
     tandooriChicken,
     naan,
-    samosa, // TODO: add
+    samosa,
+    mangoChutney, // TODO: add
 
     // VIETNAMESE
     vietnamesePho,
