@@ -213,7 +213,7 @@ const recipes = [
     chickenBiryani,
     indianButterChicken,
     indianChickenTikkaMasala,
-    tandooriChicken, // TODO: add
+    tandooriChicken,
     naan,
     samosa, // TODO: add
 
