@@ -25,6 +25,113 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: '12/26/2024',
+            title: "The Emperor's Soul",
+            author: ["Brandon Sanderson"],
+            source: ["Book Exchange"],
+            review: [
+                "It wasn't my favorite of the Brandon Sanderson book but it was generally an interesting concept of being able to create things using some type of alchemy-esque abilities. The writing was great like always. It's a quicker read compared to his other books."
+            ],
+            quotes: [
+                {
+                    text: "Changing a human soul is far more difficult. I can accept that conceptually, but I do not know the specifics. Why it is so?",
+                    pages: [52],
+                    thoughts: "A human is very complex. We can't just create a soul willy nilly. There's so much that goes into that.",
+                    context: "Shai tries to explain to Gaotona who is hiring her to clone the emperor's soul."
+                },
+                {
+                    text: "Respect the people you lie to, Tao had taught her. Steal from them long enough, and you will begin to understand them.",
+                    pages: [84],
+                    thoughts: "Just by nature of interacting with people it is impossible to not connect with them or understand them. Thieves and those committing crimes against a specific group of people regularly must blatantly ignore these emotions (or convince themselves otherwise).",
+                    context: "Shai thinks about something that her mentor Tao taught."
+                },
+                {
+                    text: "But we hadn't always been. No, in truth, he hadn't ever truly become despicable. He had been more complex than that. Every person was. She could understand him...",
+                    pages: [110],
+                    thoughts: "We can never completely understand anyone, even ourselves. We as humans are complex individuals with layers of emotions, personalities, and other characteristics.",
+                    context: "Shai is starting to understand the emperor better."
+                },
+            ],
+            pageCount: 186,
+            rating: 4.75,
+        },
+        {
+            date: NO_DATE,
+            title: "Red Rising",
+            author: ["Pierce Brown"],
+            source: ["Gabby the school counselor from the airplane"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 416,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Will of the Many",
+            author: ["James Islington"],
+            source: ["Gabby the school counselor from the airplane"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 640,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Seven Husbands of Evelyn Hugo",
+            author: ["Taylor Jenkins Reid"],
+            source: ["Taylor the news reporter from the airplane"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 400,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Verity",
+            author: ["Colleen Hoover"],
+            source: ["Taylor the news reporter from the airplane"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 336,
+            rating: NO_RATING,
+        },
+        {
             date: NO_DATE,
             title: "Influence: The Psychology of Persuasion",
             author: ["Robert B. Cialdini"],
