@@ -286,6 +286,7 @@ const INGREDIENTS = {
         BUTTER_PICKLE_CHIPS: { name: 'butter pickle chips', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CAESAR_DRESSING: { name: 'caesar dressing', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CHIPOTLE_SAUCE: { name: 'chipotle sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        COOKIE_BUTTER: { name: 'cookie butter', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CORN_SYRUP: { name: 'corn syrup', category: INGREDIENT_CATEGORY.CONDIMENTS },
         DARK_SOY_SAUCE: { name: 'dark soy sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         DIJON_MUSTARD: { name: 'dijon mustard', category: INGREDIENT_CATEGORY.CONDIMENTS },
