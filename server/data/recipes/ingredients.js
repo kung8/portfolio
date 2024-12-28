@@ -632,6 +632,7 @@ const INGREDIENTS = {
         CROISSANT_DOUGH: { name: 'croissant dough', category: INGREDIENT_CATEGORY.GRAIN },
         DRIED_RAMEN_NOODLES: { name: 'dried ramen noodles', category: INGREDIENT_CATEGORY.GRAIN },
         DRIED_RICE_NOODLES: { name: 'dried rice noodles', category: INGREDIENT_CATEGORY.GRAIN },
+        DURUM_WHEAT: { name: 'durum wheat', category: INGREDIENT_CATEGORY.GRAIN },
         EGG_NOODLES: { name: 'egg noodles', category: INGREDIENT_CATEGORY.GRAIN },
         ELBOW_MACARONI: { name: 'elbow macaroni', category: INGREDIENT_CATEGORY.GRAIN },
         FETTUCCINE_NOODLES: { name: 'fettuccine noodles', category: INGREDIENT_CATEGORY.GRAIN },

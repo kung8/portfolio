@@ -50,7 +50,7 @@ module.exports = {
         { ...CARROTS, amount: '1', additionalDetails: 'thinly sliced', section: YELLOW_CURRY_SECTION },
         { ...YELLOW_CURRY_PASTE, amount: '4 Tbsp', additionalDetails: '', section: YELLOW_CURRY_SECTION },
         { ...GINGER, amount: '2 tsp', additionalDetails: 'grated', section: YELLOW_CURRY_SECTION },
-        { ...GARLIC, amount: '2 cloves', additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', section: YELLOW_CURRY_SECTION },
         { ...COCONUT_MILK, amount: '27 oz', additionalDetails: '', section: YELLOW_CURRY_SECTION },
         { ...CORNSTARCH, amount: '2 tsp', additionalDetails: '', section: YELLOW_CURRY_SECTION },
         { ...FISH_SAUCE, amount: '1 tsp', additionalDetails: '', section: YELLOW_CURRY_SECTION },
