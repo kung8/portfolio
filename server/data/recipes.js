@@ -70,6 +70,7 @@ const churros = require("./recipes/churros");
 const cinnamonRolls = require("./recipes/cinnamon-rolls");
 const coleslaw = require("./recipes/coleslaw");
 const creamPuffs = require("./recipes/cream-puffs");
+const creamyCornCasserole = require("./recipes/creamy-corn-casserole");
 const cremeBrulee = require("./recipes/creme-brulee");
 const crescentRolls = require("./recipes/crescent-rolls");
 const dijonChicken = require("./recipes/dijon-chicken");
@@ -349,6 +350,7 @@ const recipes = [
     butteredCorn,
     bbqPulledPorkAndFixins,
     bakedMacaroniAndCheese,
+    creamyCornCasserole,
     coleslaw,
     bakedBeans,
     crescentRolls,
