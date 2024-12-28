@@ -96,6 +96,7 @@ const greenBeanCasserole = require("./recipes/green-bean-casserole");
 const guacamole = require("./recipes/guacamole");
 const hamburger = require("./recipes/hamburger");
 const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
+const hawaiianGlazedHam = require("./recipes/hawaiian-glazed-ham");
 const hawaiianHaystacks = require("./recipes/hawaiian-haystacks");
 const hoboDinner = require("./recipes/hobo-dinner");
 const homemadeBBQSauce = require("./recipes/homemade-bbq-sauce");
@@ -342,6 +343,7 @@ const recipes = [
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
     marryMeChicken,
     roastedTurkey,
+    hawaiianGlazedHam,
     mashPotatoes,
     kfcGravy,
     gravy,
