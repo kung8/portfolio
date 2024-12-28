@@ -1,9 +1,9 @@
 const pie1 = '../assets/Products/biscoff-cookie-pie-1.jpeg';
 const pie2 = '../assets/Products/biscoff-cookie-pie-2.jpeg';
-// const pie3 = '../assets/Products/biscoff-cookie-pie-3.jpeg'; // TODO: get a photo of the filling ingredients
+const pie3 = '../assets/Products/biscoff-cookie-pie-3.jpeg';
 const pie4 = '../assets/Products/biscoff-cookie-pie-4.jpeg';
-const pie5 = '../assets/Products/biscoff-cookie-pie-5.jpeg'; // TODO: not sure if adding a layer of chocolate is necessary
-const pie6 = '../assets/Products/biscoff-cookie-pie-6.jpeg'; // TODO: get a photo of the finished pie
+const pie5 = '../assets/Products/biscoff-cookie-pie-5.jpeg';
+const pie6 = '../assets/Products/biscoff-cookie-pie-6.jpeg';
 const pie7 = '../assets/Products/biscoff-cookie-pie-7.jpeg'; // TODO: get a photo of the plated pie
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { BISCOFF_COOKIES, UNSALTED_BUTTER, BISCOFF_BUTTER, WHIPPED_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, VANILLA_EXTRACT, WHITE_SUGAR, CREAM_CHEESE, SALT, COOKIE_BUTTER } = require('./ingredients');
@@ -17,7 +17,7 @@ module.exports = {
     name: 'Biscoff Cookie Pie',
     img: pie6,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -68,21 +68,21 @@ module.exports = {
         { step: 'Crush the cookies with a rolling pin.', type: SECTIONS.CRUST },
         { step: 'Combine the cookie crumbs with melted butter and salt.', type: SECTIONS.CRUST, img: pie1 },
         { step: 'Press the mixture into a 9-inch pie pan.', type: SECTIONS.CRUST, img: pie2 },
-        { step: 'Bake the crust for 10 minutes at 375ºF optionally to make the pie crust crispy.', type: SECTIONS.CRUST, img: pie2 },
+        { step: 'Bake the crust for 10 minutes at 375ºF optionally to make the pie crust crispy.', type: SECTIONS.CRUST },
         { step: 'Chill in the freezer.', type: SECTIONS.CRUST },
 
         { step: 'In a stand mixer, whisk together whipped cream, vanilla and sugar until soft peaks form.', type: SECTIONS.FILLING },
         { step: 'Transfer whipped cream mixture into a mixing bowl.', type: SECTIONS.FILLING },
-        { step: 'In the stand mixer bowl, add the cream cheese and cookie butter. Beat.', type: SECTIONS.FILLING },
+        { step: 'In the stand mixer bowl, add the cream cheese and cookie butter. Beat.', type: SECTIONS.FILLING, img: pie3 },
         { step: 'Fold in the whipped cream mixture into the cookie butter mixture.', type: SECTIONS.FILLING },
         { step: 'Pour into the crust.', type: SECTIONS.FILLING, img: pie4 },
         { step: 'Smooth the top.', type: SECTIONS.FILLING },
         { step: 'Chill in the freezer.', type: SECTIONS.FILLING },
 
-        { step: 'In a bowl, heat the cream in the microwave (about 1 minute).', type: CHOCOLATE_GANACHE, img: pie5 },
-        { step: 'Add the chocolate. Let it melt (for about 1 to 2 minutes). Mix.', type: CHOCOLATE_GANACHE, img: pie5 },
+        { step: 'In a bowl, heat the cream in the microwave (about 1 minute).', type: CHOCOLATE_GANACHE },
+        { step: 'Add the chocolate. Let it melt (for about 1 to 2 minutes). Mix.', type: CHOCOLATE_GANACHE },
         { step: 'Spread it on top of the pie.', type: CHOCOLATE_GANACHE, img: pie5 },
-        { step: 'Chill in the freezer.', type: CHOCOLATE_GANACHE, img: pie5 },
+        { step: 'Chill in the freezer.', type: CHOCOLATE_GANACHE },
 
         { step: 'In a bowl, microwave cookie butter until melted (about 10 to 15 seconds).', type: COOKIE_BUTTER_DRIZZLE },
         { step: 'Drizzle melted cookie butter over the pie using a piping bag.', type: COOKIE_BUTTER_DRIZZLE },
