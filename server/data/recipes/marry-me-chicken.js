@@ -76,7 +76,7 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 375ºF. Arrange the rack so the dutch oven pot will be cooked in the center of the oven.', type: SECTIONS.CHICKEN, img: chicken1 },
-        { step: 'Prepare chicken by removing any fat and at dry.', type: SECTIONS.CHICKEN, img: [chicken2, chicken3, chicken4] },
+        { step: 'Prepare chicken by removing any fat and pat dry.', type: SECTIONS.CHICKEN, img: [chicken2, chicken3, chicken4] },
         { step: 'Season with salt and pepper generously on both sides.', type: SECTIONS.CHICKEN, img: chicken6 },
         { step: 'Over medium-high heat, add olive oil and spread until covered.', type: SECTIONS.CHICKEN, img: chicken5 },
         { step: 'Sear chicken until lightly golden (about 3 to 4 minutes).', type: SECTIONS.CHICKEN, img: chicken7 },

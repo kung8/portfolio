@@ -157,9 +157,7 @@
                 }
                 .ingredient-label-with-link, 
                 .ingredient-label {
-                    display: flex;
-                    align-items: center;
-                    flex-wrap: wrap;
+                    display: inline;
                     cursor: pointer;
                 }
                 .ingredient-additional-details {
