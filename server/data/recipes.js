@@ -234,7 +234,7 @@ const recipes = [
     japaneseKatsudon,
     karaage,
     japaneseCurry,
-    oyakodon, // TODO: adds
+    oyakodon,
     lemonChickenRamen,
     chickenRamen,
     mochi,
