@@ -76,5 +76,8 @@ module.exports = {
         { step: 'Reduce heat to low and simmer until chicken and potatoes are cooked through (about 20 to 30 minutes). Thin curry by adding water if needed.', type: MAKE_CURRY, img: curry14 },
         { step: 'Add fish sauce, brown sugar and lime juice. Simmer for 5 minutes.', type: MAKE_CURRY, img: [curry15, curry16] },
         { step: 'Serve with jasmine rice (or your preferred rice).', type: SECTIONS.SERVE, img: curry18 },
+    ],
+    notes: [
+        { note: 'If you decide to double or triple this amount, you do not need to double or triple the yellow curry paste depending on your spice tolerance. I would suggest for a more mild spice level use 1.5 times for doubled and 2 times for tripled.' },
     ]
 };
