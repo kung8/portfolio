@@ -50,7 +50,7 @@ module.exports = {
     img: pot5,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN, GENRES.MEXICAN],
+    genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SOUP],

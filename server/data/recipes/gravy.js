@@ -17,7 +17,7 @@ module.exports = {
     img: gravy3,
     available: true,
     category: [CATEGORIES.SAUCE],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER],
     protein: [PROTEIN.BEEF, PROTEIN.CHICKEN],
     type: [TYPES.SAUCE],

@@ -15,7 +15,7 @@ module.exports = {
     img: wraps,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN, GENRES.WESTERN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],
     type: [TYPES.WRAP],
     yields: '1 serving',

@@ -8,7 +8,7 @@ module.exports = {
     img: lunchables,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.SNACK],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],
     type: [TYPES.FINGER_FOOD],
     yields: '1 servings',

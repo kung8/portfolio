@@ -1,4 +1,4 @@
-const { CATEGORIES, SECTIONS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES } = require('./constants');
 const creamedSugar = '../assets/Products/banana-bread-creamed-sugar.jpeg';
 const mixture = '../assets/Products/banana-bread-flour-mixture.jpeg';
 const mashed = '../assets/Products/banana-bread-mashed-banana.jpeg';
@@ -28,6 +28,7 @@ module.exports = {
     img: zoomed,
     available: true,
     recommended: true,
+    genre: [GENRES.AMERICAN],
     type: [CATEGORIES.DESSERT],
     yields: '1 loaf',
     prepTime: '10 m',

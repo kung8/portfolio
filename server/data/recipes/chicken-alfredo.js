@@ -20,7 +20,7 @@ module.exports = {
     img: alfredo,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.NOODLE, TYPES.PROTEIN],

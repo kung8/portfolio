@@ -29,7 +29,7 @@ module.exports = {
     img: plateZoomed,
     available: true,
     category: [CATEGORIES.SIDE_DISH],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.PORK, PROTEIN.BEAN],
     type: [TYPES.PROTEIN],

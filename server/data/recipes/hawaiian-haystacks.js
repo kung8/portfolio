@@ -27,7 +27,7 @@ module.exports = {
     img: hawaiian,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.POLYNESIAN, GENRES.AMERICAN],
     method: [METHODS.SLOW_COOK],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],

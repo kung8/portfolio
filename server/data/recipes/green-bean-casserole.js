@@ -17,7 +17,7 @@ module.exports = {
     img: casserole4,
     available: true,
     category: [CATEGORIES.SIDE_DISH],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.CASSEROLE],
     yields: '8 servings',

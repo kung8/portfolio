@@ -24,7 +24,7 @@ module.exports = {
     img: bbq,
     available: true,
     category: [CATEGORIES.APPETIZER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.FINGER_FOOD],

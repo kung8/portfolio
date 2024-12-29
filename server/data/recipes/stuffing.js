@@ -23,7 +23,7 @@ module.exports = {
     img: stuffing16,
     available: true,
     category: [CATEGORIES.SIDE_DISH],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.SIDE_DISH],
     yields: '8 servings',

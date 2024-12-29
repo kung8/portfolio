@@ -9,7 +9,7 @@ module.exports = {
     img: '',
     available: true,
     category: [CATEGORIES.SIDE_DISH],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BOIL, METHODS.MASH],
     type: [TYPES.SIDE_DISH],
     yields: '10 servings',

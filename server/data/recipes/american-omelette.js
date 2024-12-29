@@ -35,7 +35,7 @@ module.exports = {
     img: moreCookedZoomed,
     available: true,
     category: [CATEGORIES.BREAKFAST],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.EGG],
     yields: '1 serving',

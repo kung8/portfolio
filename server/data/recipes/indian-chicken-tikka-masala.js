@@ -40,7 +40,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.INDIAN],
+    genre: [GENRES.INDIAN, GENRES.ASIAN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.CURRY, TYPES.RICE],
     yields: '6 servings',

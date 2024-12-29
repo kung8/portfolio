@@ -51,7 +51,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.VIETNAMESE],
+    genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     protein: [PROTEIN.BEEF],
     type: [TYPES.NOODLE, TYPES.SOUP],
     yields: '6 servings',

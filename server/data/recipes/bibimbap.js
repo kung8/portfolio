@@ -36,7 +36,7 @@ module.exports = {
     img: bowl,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.KOREAN],
+    genre: [GENRES.KOREAN, GENRES.ASIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.EGG, PROTEIN.CHICKEN],
     type: [TYPES.RICE],

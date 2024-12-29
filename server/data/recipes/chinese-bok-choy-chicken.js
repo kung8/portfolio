@@ -30,7 +30,7 @@ module.exports = {
     img: zoomed,
     available: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.BLANCH, METHODS.ROAST, METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.VEGETABLE],

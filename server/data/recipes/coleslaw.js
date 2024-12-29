@@ -10,7 +10,7 @@ module.exports = {
     img: coleslaw,
     available: true,
     category: [CATEGORIES.SIDE_DISH],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.MIX],
     type: [TYPES.SALAD],
     yields: '8 servings',

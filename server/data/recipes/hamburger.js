@@ -20,7 +20,7 @@ module.exports = {
     img: hamburger,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN, GENRES.WESTERN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SANDWICH],

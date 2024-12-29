@@ -45,7 +45,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL, METHODS.BAKE],
     type: [TYPES.CASSEROLE, TYPES.PASTA],
     yields: '12 servings',

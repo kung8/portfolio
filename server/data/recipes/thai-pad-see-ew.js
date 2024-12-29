@@ -46,7 +46,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.THAI],
+    genre: [GENRES.THAI, GENRES.ASIAN],
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.NOODLE],

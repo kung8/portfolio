@@ -15,7 +15,7 @@ module.exports = {
     img: frenchToast,
     available: true,
     category: [CATEGORIES.BREAKFAST],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.BREAD],
     yields: '2 servings',

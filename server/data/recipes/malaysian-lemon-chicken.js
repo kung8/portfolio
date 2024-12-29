@@ -20,7 +20,7 @@ module.exports = {
     img: lemonChicken,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.MALAYSIAN],
+    genre: [GENRES.MALAYSIAN, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY, METHODS.MARINADE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],

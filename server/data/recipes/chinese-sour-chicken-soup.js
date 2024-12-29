@@ -13,7 +13,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    genre: [GENRES.CHINESE, GENRES.ASIAN],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE, TYPES.SOUP],
     yields: '10 servings',

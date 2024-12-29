@@ -34,7 +34,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.SINGAPOREAN],
+    genre: [GENRES.SINGAPOREAN, GENRES.ASIAN],
     method: [METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],

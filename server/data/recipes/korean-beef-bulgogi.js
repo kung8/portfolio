@@ -29,7 +29,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.KOREAN],
+    genre: [GENRES.KOREAN, GENRES.ASIAN],
     method: [METHODS.MARINADE, METHODS.PAN_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.RICE],

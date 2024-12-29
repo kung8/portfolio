@@ -31,7 +31,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
-    genre: [GENRES.THAI],
+    genre: [GENRES.THAI, GENRES.ASIAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN, PROTEIN.ALTERNATIVE],
     type: [TYPES.CURRY],

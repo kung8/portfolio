@@ -27,7 +27,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.JAPANESE],
+    genre: [GENRES.JAPANESE, GENRES.ASIAN],
     method: [METHODS.RAW],
     protein: [PROTEIN.FISH, PROTEIN.SEAFOOD],
     type: [TYPES.RICE],

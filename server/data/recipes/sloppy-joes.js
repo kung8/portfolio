@@ -26,7 +26,7 @@ module.exports = {
     img: cooked,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SAUTE],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SANDWICH],

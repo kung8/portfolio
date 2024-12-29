@@ -14,7 +14,7 @@ module.exports = {
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.APPETIZER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.CASSEROLE],
     yields: '8 servings',

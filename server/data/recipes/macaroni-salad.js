@@ -19,7 +19,7 @@ module.exports = {
     img: macaroni,
     available: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     type: [TYPES.NOODLE],
     yields: '10 servings',

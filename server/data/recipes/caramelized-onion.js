@@ -20,7 +20,7 @@ module.exports = {
     img: caramelized,
     available: true,
     category: [CATEGORIES.TOPPING],
-    genre: [GENRES.AMERICAN, GENRES.WESTERN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SAUTE],
     yields: '6 servings',
     prepTime: '2 m',

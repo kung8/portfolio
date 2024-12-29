@@ -37,7 +37,7 @@ module.exports = {
     img: zoomed,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.MALAYSIAN],
+    genre: [GENRES.MALAYSIAN, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],

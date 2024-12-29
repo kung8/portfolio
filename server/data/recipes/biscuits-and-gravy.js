@@ -31,7 +31,7 @@ module.exports = {
     img: plated,
     available: true,
     category: [CATEGORIES.BREAKFAST],
-    genre: [GENRES.AMERICAN, GENRES.SOUTHERN],
+    genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY, METHODS.BAKE],
     protein: [PROTEIN.PORK],
     type: [TYPES.BREAD],

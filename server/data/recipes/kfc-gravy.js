@@ -13,7 +13,7 @@ module.exports = {
     available: true,
     recommended: false,
     category: [CATEGORIES.SAUCE],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER],
     protein: [PROTEIN.BEEF, PROTEIN.CHICKEN],
     type: [TYPES.SAUCE],

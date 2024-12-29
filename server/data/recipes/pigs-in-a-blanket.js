@@ -8,7 +8,7 @@ module.exports = {
     img: pigsInABlanket,
     available: true,
     category: [CATEGORIES.APPETIZER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     yields: '8 servings',
     prepTime: '10 m',

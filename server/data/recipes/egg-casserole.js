@@ -20,7 +20,7 @@ module.exports = {
     img: eggCasserole,
     available: true,
     category: [CATEGORIES.BREAKFAST],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.EGG],
     type: [TYPES.BREAD, TYPES.CASSEROLE],

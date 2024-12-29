@@ -71,6 +71,8 @@ const GENRES = {
     CAMBODIAN: 'Cambodian',
     SPANISH: 'Spanish',
     HAWAIIAN: 'Hawaiian',
+    RUSSIAN: 'Russian',
+    POLYNESIAN: 'Polynesian',
 };
 
 const METHODS = {

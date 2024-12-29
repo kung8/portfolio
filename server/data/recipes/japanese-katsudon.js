@@ -29,7 +29,7 @@ module.exports = {
     img: katsudon,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.JAPANESE],
+    genre: [GENRES.JAPANESE, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.EGG, PROTEIN.PORK, PROTEIN.ALTERNATIVE],
     type: [TYPES.RICE],

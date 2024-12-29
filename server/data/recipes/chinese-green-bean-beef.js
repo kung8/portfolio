@@ -34,7 +34,7 @@ module.exports = {
     img: combinedZoomed2,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.RICE, TYPES.VEGETABLE],

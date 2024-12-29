@@ -14,7 +14,7 @@ module.exports = {
     img: bowl,
     available: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    genre: [GENRES.CHINESE, GENRES.ASIAN],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.VEGETABLE],
     yields: '4 servings',

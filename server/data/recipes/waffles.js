@@ -33,7 +33,7 @@ module.exports = {
     img: zoomed,
     available: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN, GENRES.WESTERN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.GRILL],
     type: [TYPES.BREAD],
     yields: '3 servings',

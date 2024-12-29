@@ -18,7 +18,7 @@ module.exports = {
     img: zoomed,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.JAPANESE],
+    genre: [GENRES.JAPANESE, GENRES.ASIAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SOUP, TYPES.NOODLE],

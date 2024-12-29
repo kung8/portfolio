@@ -35,7 +35,7 @@ module.exports = {
     img: cooked,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.LATIN, GENRES.PERUVIAN],
+    genre: [GENRES.PERUVIAN, GENRES.LATIN],
     method: [METHODS.BOIL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],

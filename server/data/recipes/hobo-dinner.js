@@ -17,7 +17,7 @@ module.exports = {
     img: pan,
     available: true,
     category: [CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.VEGETABLE, TYPES.PROTEIN],

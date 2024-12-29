@@ -21,7 +21,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER],
-    genre: [GENRES.ASIAN, GENRES.MALAYSIAN],
+    genre: [GENRES.MALAYSIAN, GENRES.ASIAN],
     method: [METHODS.MARINADE, METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     yields: '6 servings',

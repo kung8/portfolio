@@ -39,7 +39,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
-    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.STEAM],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT],
     yields: ' servings',

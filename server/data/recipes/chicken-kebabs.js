@@ -18,7 +18,7 @@ module.exports = {
     img: kebabs,
     available: true,
     category: [CATEGORIES.APPETIZER],
-    genre: [GENRES.ASIAN],
+    genre: [GENRES.MIDDLE_EASTERN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.FINGER_FOOD, TYPES.PROTEIN],

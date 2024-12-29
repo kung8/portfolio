@@ -13,7 +13,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     type: [TYPES.VEGETABLE],
     yields: '6 servings',

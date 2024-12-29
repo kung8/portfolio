@@ -13,7 +13,7 @@ module.exports = {
     img: breakfastSandwich,
     available: true,
     category: [CATEGORIES.BREAKFAST],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.EGG, PROTEIN.PORK],
     type: [TYPES.SANDWICH],

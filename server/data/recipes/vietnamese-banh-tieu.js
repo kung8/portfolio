@@ -18,7 +18,7 @@ module.exports = {
     img: banhTieu,
     available: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
-    genre: [GENRES.ASIAN, GENRES.VIETNAMESE],
+    genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY],
     yields: '10 servings',
     prepTime: '10 m',

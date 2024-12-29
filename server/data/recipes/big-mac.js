@@ -24,7 +24,7 @@ module.exports = {
     img: plated8,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.GRILL],
     protein: [PROTEIN.BEEF],
     type: [TYPES.BURGER],

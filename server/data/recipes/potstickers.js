@@ -33,7 +33,7 @@ module.exports = {
     img: potstickers,
     available: true,
     category: [CATEGORIES.APPETIZER],
-    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.PAN_FRY, METHODS.STEAM],
     protein: [PROTEIN.PORK],
     types: [TYPES.FINGER_FOOD],

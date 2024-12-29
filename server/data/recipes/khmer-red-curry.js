@@ -38,7 +38,7 @@ module.exports = {
     img: cooked2,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.CAMBODIAN],
+    genre: [GENRES.CAMBODIAN, GENRES.ASIAN],
     method: [METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CURRY],

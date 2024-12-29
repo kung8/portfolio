@@ -10,7 +10,7 @@ module.exports = {
     available: true,
     recommended: false,
     category: [CATEGORIES.SAUCE],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER],
     type: [TYPES.SAUCE],
     yields: ' servings',

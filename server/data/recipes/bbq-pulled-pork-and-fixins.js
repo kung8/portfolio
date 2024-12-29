@@ -34,7 +34,7 @@ module.exports = {
     img: finished,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN, GENRES.SOUTHERN, GENRES.BBQ],
+    genre: [GENRES.SOUTHERN, GENRES.BBQ, GENRES.AMERICAN],
     method: [METHODS.SLOW_COOK],
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],

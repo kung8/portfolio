@@ -15,7 +15,7 @@ module.exports = {
     img: parfait,
     available: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT, CATEGORIES.SNACK],
-    genre: [GENRES.AMERICAN, GENRES.EUROPEAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],
     yields: '2 servings',
     prepTime: '1 m',

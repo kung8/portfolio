@@ -213,11 +213,8 @@
                     letter-spacing: 1.5px;
                     display: inline-block;
                     word-wrap: unset;
-                    font-size: 24px;
+                    font-size: 20px;
                     z-index: 1;
-                    @include down($xxx-large) {
-                        font-size: 20px;
-                    }
                     @include down($xx-large) {
                         font-size: 18px;
                     }
@@ -292,14 +289,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        row-gap: 40px;
         margin-top: 40px;
 
         .legend {
             display: flex;
             flex-direction: column;
             row-gap: 16px;
+            min-width: 210px;
         }
-        
+
         .legend-items {
             display: flex;
             flex-direction: column;
@@ -310,6 +309,29 @@
         .chef-wip-container {
             display: flex;
             column-gap: 8px;
+        }
+
+        .recipes-sort-filter-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            min-width: 210px;
+
+            .dropdown-container {
+                min-width: 185px;
+    
+                .dropdown-options-container {
+                    li {
+                        padding: 4px 8px;
+                        &:first-of-type {
+                            padding-top: 8px;
+                        }
+                        &:last-of-type {
+                            padding-bottom: 8px;
+                        }
+                    }
+                }
+            }
         }
     }
 

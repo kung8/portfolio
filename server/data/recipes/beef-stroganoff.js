@@ -20,7 +20,7 @@ module.exports = {
     img: beefStroganoff,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.RUSSIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     type: [TYPES.NOODLE],
     yields: '7 servings',

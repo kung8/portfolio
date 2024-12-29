@@ -47,7 +47,7 @@ module.exports = {
     img: banhMi,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.ASIAN, GENRES.VIETNAMESE],
+    genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],
     yields: '10 servings',

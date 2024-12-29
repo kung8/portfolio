@@ -54,7 +54,7 @@ module.exports = {
     img: cilantroRanchDressingZoomed,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN, GENRES.MEXICAN],
+    genre: [GENRES.MEXICAN, GENRES.AMERICAN],
     method: [METHODS.MARINADE, METHODS.GRILL],
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.SALAD, TYPES.PROTEIN],

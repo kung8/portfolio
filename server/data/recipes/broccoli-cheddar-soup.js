@@ -41,7 +41,7 @@ module.exports = {
     img: simmering2,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SLOW_COOK],
     type: [TYPES.BREAD, TYPES.SOUP],
     yields: '6 servings',

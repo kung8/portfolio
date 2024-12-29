@@ -8,7 +8,7 @@ module.exports = {
     img: chickenParm,
     available: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     yields: 'servings',
