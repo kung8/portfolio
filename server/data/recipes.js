@@ -7,6 +7,7 @@ const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
 const bakedChicken = require("./recipes/baked-chicken");
 const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
 const bakedMacaroniAndCheese = require("./recipes/baked-macaroni-and-cheese");
+const bakedZiti = require("./recipes/baked-ziti");
 const bananaBread = require("./recipes/banana-bread");
 const basilPesto = require("./recipes/basil-pesto");
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
@@ -19,14 +20,18 @@ const beefTacos = require("./recipes/beef-tacos");
 const bibimbap = require("./recipes/bibimbap");
 const bigMac = require("./recipes/big-mac");
 const biscoffCookiePie = require("./recipes/biscoff-cookie-pie");
+const biscuits = require("./recipes/biscuits");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
 const blondie = require("./recipes/blondie");
+const blt = require("./recipes/blt");
+const breakfastBurrito = require("./recipes/breakfast-burrito");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
 const brickleBars = require("./recipes/brickle-bars");
 const broccoliCheddarSoup = require("./recipes/broccoli-cheddar-soup");
 const brownedButter = require("./recipes/browned-butter");
 const brownedButterChocolateChipCookies = require("./recipes/browned-butter-chocolate-chip-cookies");
 const brownies = require("./recipes/brownies");
+const bulgurPilaf = require("./recipes/bulgur-pilaf");
 const butteredCorn = require("./recipes/buttered-corn");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cabbageStirFry = require("./recipes/cabbage-stir-fry");
@@ -50,6 +55,7 @@ const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenPaella = require("./recipes/chicken-paella");
 const chickenParmesan = require("./recipes/chicken-parmesan");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
+const chickenPotPie1 = require("./recipes/chicken-pot-pie-1");
 const chickenQuesadilla = require("./recipes/chicken-quesadilla");
 const chickenRamen = require("./recipes/chicken-ramen");
 const chickenStuffedCrescentRolls = require("./recipes/chicken-stuffed-crescent-rolls");
@@ -72,6 +78,7 @@ const cinnamonRolls = require("./recipes/cinnamon-rolls");
 const coleslaw = require("./recipes/coleslaw");
 const creamPuffs = require("./recipes/cream-puffs");
 const creamyCornCasserole = require("./recipes/creamy-corn-casserole");
+const creamyTuscanChickenPasta = require("./recipes/creamy-tuscan-chicken-pasta");
 const cremeBrulee = require("./recipes/creme-brulee");
 const crescentRolls = require("./recipes/crescent-rolls");
 const dijonChicken = require("./recipes/dijon-chicken");
@@ -94,6 +101,7 @@ const graveyardDessert = require("./recipes/graveyard-dessert");
 const gravy = require("./recipes/gravy");
 const greenBeanAlmondine = require("./recipes/green-bean-almondine");
 const greenBeanCasserole = require("./recipes/green-bean-casserole");
+const grilledCheeseSandwich = require("./recipes/grilled-cheese-sandwich");
 const guacamole = require("./recipes/guacamole");
 const hamburger = require("./recipes/hamburger");
 const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
@@ -146,6 +154,7 @@ const padThai = require("./recipes/pad-thai");
 const panFriedChickenThighs = require("./recipes/pan-fried-chicken-thighs");
 const paoDeQueijo = require("./recipes/pao-de-queijo");
 const parfait = require("./recipes/parfait");
+const pastaAlLimone = require("./recipes/pasta-al-limone");
 const pastaPomodoro = require("./recipes/pasta-pomodoro");
 const peachCobbler = require("./recipes/peach-cobbler");
 const peanutBrittle = require("./recipes/peanut-brittle");
@@ -166,6 +175,7 @@ const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
 const ravioli = require("./recipes/ravioli");
 const riceKrispyTreats = require("./recipes/rice-krispy-treats");
+const ricePilaf = require("./recipes/rice-pilaf");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const rosemaryLemonade = require("./recipes/rosemary-lemonade");
 const rosemaryFries = require("./recipes/rosemary-fries");
@@ -183,6 +193,7 @@ const snickerdoodle = require("./recipes/snickerdoodle-cookies");
 const sourdoughBread = require("./recipes/sourdough-bread");
 const sourdoughStarter = require("./recipes/sourdough-starter");
 const southwestSalad = require("./recipes/southwest-salad");
+const spanishRice = require("./recipes/spanish-rice");
 const stickyToffeePudding = require("./recipes/sticky-toffee-pudding");
 const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
@@ -312,7 +323,10 @@ const recipes = [
     chickenParmesan, // TODO: add
     basilPesto,
     beefRagu,
+    bakedZiti, // TODO: add
+    creamyTuscanChickenPasta, // TODO: add
     pastaPomodoro,
+    pastaAlLimone, // TODO: add
     shrimpScampi, // TODO: add
     potatoGnocchi,
     ravioli, // TODO: add
@@ -322,6 +336,7 @@ const recipes = [
     // SPANISH
     shrimpPaella,
     chickenPaella, // TODO: add
+    spanishRice, // TODO: add
     churros,
 
     // SWEDISH
@@ -348,6 +363,10 @@ const recipes = [
     texasSausageKolaches, // TODO: add
     sweetKolaches, // TODO: add
 
+    // TURKISH
+    bulgurPilaf, // TODO: add
+    ricePilaf, // TODO: add
+
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
     marryMeChicken,
     roastedTurkey,
@@ -371,6 +390,7 @@ const recipes = [
     chickenKebab,
     potRoast,
     chickenPotPie,
+    chickenPotPie1, // TODO: add
     chickenNoodleSoup,
     broccoliCheddarSoup,
     chili,
@@ -394,6 +414,7 @@ const recipes = [
     chickenMcNuggets,
     bigMac,
     hamburger,
+    grilledCheeseSandwich, // TODO: add
     caramelizedMushroom,
     caramelizedOnion,
     homemadeBBQSauce,
@@ -417,8 +438,11 @@ const recipes = [
     waffles,
     buttermilkSyrup,
     englishScones,
+    biscuits, // TODO: add
     biscuitsAndGravy,
+    breakfastBurrito, // TODO: add
     breakfastSandwich,
+    blt, // TODO: add
     scrambledEggs,
     hardBoiledEggs,
     americanOmelette,
