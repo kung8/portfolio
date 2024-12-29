@@ -28,7 +28,7 @@ module.exports = {
     img: zoomed,
     available: true,
     recommended: true,
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],    
     type: [CATEGORIES.DESSERT],
     yields: '1 loaf',
     prepTime: '10 m',

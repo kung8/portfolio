@@ -28,7 +28,7 @@ module.exports = {
     img: opened,
     available: true,
     category: [CATEGORIES.APPETIZER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.FINGER_FOOD],
     yields: '8 servings',

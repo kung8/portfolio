@@ -20,7 +20,7 @@ module.exports = {
     img: zoomed3,
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     yields: '12 servings',
     prepTime: '1 m',

@@ -9,7 +9,7 @@ module.exports = {
     img: '',
     available: true,
     category: [CATEGORIES.TOPPING],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.MELT],
     yields: '1 1/2 c',
     prepTime: '1 m',

@@ -29,7 +29,7 @@ module.exports = {
     img: single,
     available: true,
     category: [CATEGORIES.DESSERT, CATEGORIES.SNACK],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     yields: '12',
     prepTime: '25 m',

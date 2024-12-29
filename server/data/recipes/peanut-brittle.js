@@ -21,7 +21,7 @@ module.exports = {
     img: plated2,
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.FINGER_FOOD],

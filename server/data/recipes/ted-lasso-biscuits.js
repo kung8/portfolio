@@ -13,7 +13,7 @@ module.exports = {
     img: biscuits,
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN, GENRES.BRITISH],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     yields: '15 servings',
     prepTime: '20 m',

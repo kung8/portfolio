@@ -14,7 +14,7 @@ module.exports = {
     img: cookies1,
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.COOKIE],
     yields: '8 to 24 servings',

@@ -24,7 +24,7 @@ module.exports = {
     img: oreo1,
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     type: [TYPES.DESSERT],
     yields: '8 servings',

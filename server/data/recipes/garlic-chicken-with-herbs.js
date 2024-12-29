@@ -24,7 +24,7 @@ module.exports = {
     img: plated,
     available: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     yields: '4 servings',

@@ -18,7 +18,7 @@ module.exports = {
     img: muddy11,
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.MIX],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.DESSERT],

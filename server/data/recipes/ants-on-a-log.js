@@ -9,7 +9,7 @@ module.exports = {
     img: side,
     available: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.VEGETABLE, TYPES.FINGER_FOOD],

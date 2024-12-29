@@ -73,6 +73,7 @@ const GENRES = {
     HAWAIIAN: 'Hawaiian',
     RUSSIAN: 'Russian',
     POLYNESIAN: 'Polynesian',
+    AUSTRIAN: 'Austrian',
 };
 
 const METHODS = {

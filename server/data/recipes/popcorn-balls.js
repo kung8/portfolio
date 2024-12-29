@@ -23,7 +23,7 @@ module.exports = {
     img: rackStacked,
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.DESSERT],
     yields: '16 - 20 servings',

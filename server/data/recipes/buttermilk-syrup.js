@@ -15,7 +15,7 @@ module.exports = {
     img: cooked,
     available: true,
     category: [CATEGORIES.SAUCE, CATEGORIES.BREAKFAST],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     type: [TYPES.SAUCE],
     yields: '6 servings',

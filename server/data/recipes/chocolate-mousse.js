@@ -39,7 +39,7 @@ module.exports = {
     img: topped,
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BLEND],
     protein: [PROTEIN.CHOCOLATE],
     type: [TYPES.DESSERT],

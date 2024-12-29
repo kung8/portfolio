@@ -10,7 +10,7 @@ module.exports = {
     img: plated,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.MEXICAN],
+    genre: [GENRES.PERUVIAN, GENRES.LATIN],
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN, TYPES.RICE],

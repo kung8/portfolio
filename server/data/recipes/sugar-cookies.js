@@ -42,7 +42,7 @@ module.exports = {
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.COOKIE],
     yields: '3 to 4 dozens',

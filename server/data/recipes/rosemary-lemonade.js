@@ -14,7 +14,7 @@ module.exports = {
     img: zoomed,
     available: true,
     category: [CATEGORIES.DRINK],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.MIX],
     type: [TYPES.DRINK],
     yields: '8 servings',

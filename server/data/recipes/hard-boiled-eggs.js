@@ -20,7 +20,7 @@ module.exports = {
     img: egg,
     available: true,
     category: [CATEGORIES.BREAKFAST],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     protein: [PROTEIN.EGG],
     type: [TYPES.PROTEIN],

@@ -15,7 +15,7 @@ module.exports = {
     img: smoothie,
     available: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.SNACK, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BLEND],
     protein: [PROTEIN.PEANUT],
     yields: '40 oz',

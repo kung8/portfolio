@@ -12,7 +12,7 @@ module.exports = {
     img: smores,
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     yields: '2 servings',
     prepTime: '1 m',

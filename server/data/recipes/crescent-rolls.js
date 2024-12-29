@@ -36,7 +36,7 @@ module.exports = {
     available: true,
     recipeCredit: 'Grandma Ward',
     category: [CATEGORIES.APPETIZER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.AUSTRIAN],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
     yields: '32 rolls',

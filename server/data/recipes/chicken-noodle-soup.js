@@ -21,7 +21,7 @@ module.exports = {
     img: chickenNoodle,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.NOODLE, TYPES.SOUP],

@@ -19,7 +19,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     // protein: [],
     type: [TYPES.PIE],

@@ -8,7 +8,7 @@ module.exports = {
     img: graveyardDessert,
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],
     type: [TYPES.DESSERT],
     yields: '3 servings',

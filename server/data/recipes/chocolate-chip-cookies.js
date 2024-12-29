@@ -35,7 +35,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
     yields: '3-4 dozens',

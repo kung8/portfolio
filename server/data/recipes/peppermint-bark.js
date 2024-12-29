@@ -25,7 +25,7 @@ module.exports = {
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.MELT, METHODS.CHILLED],
     type: [TYPES.DESSERT],
     yields: '16 servings',

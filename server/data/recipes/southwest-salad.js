@@ -8,7 +8,7 @@ module.exports = {
     img: salad,
     available: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SALAD, TYPES.PROTEIN],

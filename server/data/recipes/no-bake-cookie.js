@@ -20,7 +20,7 @@ module.exports = {
     img: finished,
     available: true,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER],
     protein: [PROTEIN.PEANUT],
     yields: '32 servings',
