@@ -16,8 +16,10 @@ import { useFilters } from '../hooks/use-filters';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { RecipeFilterModal } from './RecipeFilterModal';
 import { handleModalClass } from '../utils/handle-modal-class';
-import { RECIPES_FILTERS_LOCAL_STORAGE_KEY } from '../constants';
+import { GROUPED_BY_NONE, RECIPES_FILTERS_LOCAL_STORAGE_KEY, RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY } from '../constants';
 import closeBtn from '../../../Assets/x.png';
+import { Legend } from './Legend';
+import { RecipeSortFilter } from './RecipeSortFilter';
 
 export const defaultSelectedFilters = {
     category: [],
@@ -87,9 +89,39 @@ export const Recipes = ({ history }) => {
     });
 
     const matchingSearchResults = fuse.search(search).flatMap(recipe => recipe.item);
-    const filteredRecipes = search ? matchingSearchResults : recipes;
 
+    const getInitialGroupedBy = () => {
+        const initialGroupedBy = localStorage.getItem(RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY)
+        if (initialGroupedBy) return JSON.parse(initialGroupedBy);
+        return GROUPED_BY_NONE;
+    };
+
+    const setInitialGroupedByInLocalStorage = (value) => localStorage.setItem(RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, JSON.stringify(value));
+
+    const [groupedBy, setGroupedBy] = useState(getInitialGroupedBy());
+    const sortRecipes = (recipes) => {
+        if (groupedBy === 'none') return recipes;
+        if (groupedBy === 'alphabetic') return recipes.sort((a, b) => a.cardName.localeCompare(b.cardName));
+        if (groupedBy === 'genre') return Object.entries(recipes.reduce((acc, recipe, index) => {
+            const genre = recipe.genre?.[0];
+            if (!genre) return acc;
+            if (!acc[genre]) {
+                acc[genre] = [];
+            }
+            acc[genre].push({ ...recipe, id: index });
+            return acc;
+        }, {})).sort((a, b) => {
+            const itemsA = a[1];
+            const itemsB = b[1];
+            const idA = itemsA[0].id;
+            const idB = itemsB[0].id;
+            return idA - idB;
+        });
+    }
+
+    const filteredRecipes = search ? matchingSearchResults : recipes;
     const { filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
+    const groupedFilteredRecipes = sortRecipes(filteredRecipeBySelectedFilters);
 
     const onScroll = () => {
         const scrollHeight = window.scrollY;
@@ -255,25 +287,33 @@ export const Recipes = ({ history }) => {
             {isLoaded ? (
                 filteredRecipes.length ? (
                     <>
-                        <div className="recipe-items-container">
-                            {filteredRecipeBySelectedFilters.map((item) =>
-                                <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertToKebabCase(item.name))} />
-                            )}
-                        </div>
-                        <div className="legend-container">
-                            <div className="legend">
-                                <h4>Legend</h4>
-                                <div className="legend-items">
-                                    <p className="chef-recommended-container">
-                                        <span className="heart" />
-                                        <span>= Chef Recommended</span>
-                                    </p>
-                                    <p className="chef-wip-container">
-                                        <span className="wip" />
-                                        <span>= Cooking in Progress</span>
-                                    </p>
+                        {groupedBy === 'genre' ? (
+                            groupedFilteredRecipes.map(([genre, recipes]) => (
+                                <div className="recipes-grouped-container" key={genre}>
+                                    <h4>{genre}</h4>
+                                    <div className="recipe-items-container">
+                                        {recipes.map((item) =>
+                                            <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertToKebabCase(item.name))} />
+                                        )}
+                                    </div>
                                 </div>
+                            ))
+                        ) : (
+                            <div className="recipe-items-container">
+                                {filteredRecipeBySelectedFilters.map((item) =>
+                                    <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertToKebabCase(item.name))} />
+                                )}
                             </div>
+                        )}
+                        <div className="legend-container">
+                            <Legend />
+                            <RecipeSortFilter
+                                groupedBy={groupedBy}
+                                setGroupedBy={(value) => {
+                                    setGroupedBy(value);
+                                    setInitialGroupedByInLocalStorage(value);
+                                }}
+                            />
                         </div>
                     </>
                 ) : <EmptyRecipeContainer />

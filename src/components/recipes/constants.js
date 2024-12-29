@@ -6,7 +6,7 @@ export const MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY = 'mealPlanSortBy';
 export const SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY = 'selectedModalView';
 export const STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY = 'startingDayOfWeek';
 export const RECIPES_FILTERS_LOCAL_STORAGE_KEY = 'recipesFilters';
-export const RECIPES_SORT_BY_LOCAL_STORAGE_KEY = 'recipesSortBy';
+export const RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY = 'recipesGroupedBy';
 
 export const GROCERY_LIST_VIEW = 'groceryList';
 export const MEAL_PLANNING_VIEW = 'mealPlanning';
@@ -19,3 +19,18 @@ export const READABLE_SHORT_DATE_WITH_DAY_OF_WEEK = 'dddd (MMM D)';
 
 // MEAL TYPES
 export const MEAL_PLAN_MEAL_TYPES = ['Breakfast', 'Lunch', 'Dinner', 'Snack', 'Dessert'];
+
+// GROUPED BY OPTIONS
+export const GROUPED_BY_NONE = 'none';
+export const GROUPED_BY_ALPHABETIC = 'alphabetic';
+export const GROUPED_BY_RANDOM = 'random';
+export const GROUPED_BY_GENRE = 'genre';
+export const GROUPED_BY_CATEGORY = 'category';
+
+export const GROUPED_BY_OPTIONS = [
+    { id: GROUPED_BY_NONE, label: 'Default' },
+    { id: GROUPED_BY_ALPHABETIC, label: 'Alphabetic' },
+    // { id: GROUPED_BY_RANDOM, label: 'random' },
+    { id: GROUPED_BY_GENRE, label: 'Genre' },
+    // { id: GROUPED_BY_CATEGORY, label: 'Meal Category' },
+];
