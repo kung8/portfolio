@@ -64,6 +64,7 @@ const chineseLoMeinNoodles = require("./recipes/chinese-lo-mein-noodles");
 const chineseFriedRice = require("./recipes/chinese-fried-rice");
 const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
 const chineseSweetAndSourPork = require("./recipes/chinese-sweet-and-sour-pork");
+const chiveCakes = require("./recipes/chive-cakes");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateMousse = require("./recipes/chocolate-mousse");
 const churros = require("./recipes/churros");
@@ -209,6 +210,7 @@ const recipes = [
     thaiPadSeeEw,
     thaiBasil,
     yellowCurry,
+    chiveCakes,
     mangoStickyRice,
     thaiMassamanCurry, // TODO: add
 
@@ -310,7 +312,7 @@ const recipes = [
     beefRagu,
     pastaPomodoro,
     shrimpScampi, // TODO: add
-    potatoGnocchi, // TODO: add
+    potatoGnocchi,
     ravioli, // TODO: add
     italianTurkeyMeatballSpinachTortelliniSoup,
     gelato,
