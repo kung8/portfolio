@@ -188,9 +188,11 @@ const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
 const sushi = require("./recipes/sushi");
 const swedishMeatballs = require("./recipes/swedish-meatballs");
+const sweetKolaches = require("./recipes/sweet-kolaches");
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tandooriChicken = require("./recipes/tandoori-chicken");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
+const texasSausageKolaches = require("./recipes/texas-sausage-kolaches");
 const thaiBasil = require("./recipes/thai-basil");
 const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
 const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
@@ -341,6 +343,10 @@ const recipes = [
 
     // GERMAN
     germanSchnitzel, // TODO: add
+
+    // CZECH
+    texasSausageKolaches, // TODO: add
+    sweetKolaches, // TODO: add
 
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
     marryMeChicken,
