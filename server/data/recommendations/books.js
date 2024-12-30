@@ -969,25 +969,6 @@ module.exports = {
         },
         {
             date: NO_DATE,
-            title: "The Vibrant Years",
-            author: ["Sonali Dev"],
-            source: ["Kindle"],
-            review: [
-                ""
-            ],
-            quotes: [
-                {
-                    text: "",
-                    pages: [],
-                    thoughts: "",
-                    context: ""
-                },
-            ],
-            pageCount: 0,
-            rating: NO_RATING,
-        },
-        {
-            date: NO_DATE,
             title: "I'll Stop the World",
             author: ["Lauren Thoman"],
             source: ["Kindle"],
