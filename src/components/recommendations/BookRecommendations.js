@@ -121,9 +121,11 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
     useEffect(() => {
         const rootId = document.getElementById('root');
         const html = document.querySelector('html');
+        const isMobile = window.screen.width < 768;
+
         if (showFilter) {
             rootId.style.overflowY = 'hidden';
-            rootId.style.height = 'calc(100vh - 108px)';
+            rootId.style.height = isMobile ? 'calc(100vh - 108px)' : '100vh';
             html.style.overflowY = 'hidden';
         } else {
             rootId.style.overflowY = 'unset';
