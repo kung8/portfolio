@@ -123,7 +123,7 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
         const html = document.querySelector('html');
         if (showFilter) {
             rootId.style.overflowY = 'hidden';
-            rootId.style.height = '100vh';
+            rootId.style.height = 'calc(100vh - 108px)';
             html.style.overflowY = 'hidden';
         } else {
             rootId.style.overflowY = 'unset';
