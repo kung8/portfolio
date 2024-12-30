@@ -37,7 +37,8 @@ const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const cabbageStirFry = require("./recipes/cabbage-stir-fry");
 const cafeRioBowl = require("./recipes/cafe-rio-bowl");
 const cajunShrimp = require("./recipes/cajun-shrimp");
-const caramelApples = require("./recipes/caramel-apples");
+const caramelApples = require("./recipes/caramel-apples")
+const caramelPopcorn = require("./recipes/caramel-popcorn");
 const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 const caramelizedOnion = require("./recipes/caramelized-onion");
 const carbonara = require("./recipes/carbonara");
@@ -480,6 +481,7 @@ const recipes = [
     creamPuffs,
     eclair,
     cremeBrulee,
+    caramelPopcorn, // TODO: add
     popcornBalls,
     chocolateMousse,
     caramelApples,
