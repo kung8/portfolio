@@ -14,6 +14,8 @@ export const RecipeFilterModal = ({
 }) => {
     const { filterMapping, filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
 
+    console.log('filteredRecipeBySelectedFilters', selectedFilters);
+
     return (
         <div className="modal-container">
             <div className="modal-tray">
