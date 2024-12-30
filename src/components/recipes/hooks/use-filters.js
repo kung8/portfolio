@@ -57,7 +57,7 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
             (!protein.length || filterRecipeBySelectedFilters(item.protein || [], protein)) &&
             (!type.length || filterRecipeBySelectedFilters(item.type || [], type)) &&
             (!image.length || checkSelectedImageOption(item.img)) && 
-            (!wip.length || checkWIP(item.wip))
+            (!wip?.length || checkWIP(item.wip))
         );
     });
 
