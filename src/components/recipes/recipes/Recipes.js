@@ -29,6 +29,7 @@ export const defaultSelectedFilters = {
     protein: [],
     type: [],
     image: [],
+    wip: [],
     search: '',
 };
 
@@ -69,6 +70,7 @@ export const Recipes = ({ history }) => {
         selectedFilters.type,
         selectedFilters.image,
         selectedFilters.search,
+        selectedFilters.wip,
     ])
 
     const [showArrow, setShowArrow] = useState(false);
@@ -186,6 +188,10 @@ export const Recipes = ({ history }) => {
             case 'image':
                 if (values.includes('Yes')) newAcc = [...newAcc, { prop: key, value: 'Yes', label: 'Has Image' }];
                 if (values.includes('No')) newAcc = [...newAcc, { prop: key, value: 'No', label: 'No Image' }];
+                break;
+            case 'wip':
+                if (values.includes('Yes')) newAcc = [...newAcc, { prop: key, value: 'Yes', label: 'WIP' }];
+                if (values.includes('No')) newAcc = [...newAcc, { prop: key, value: 'No', label: 'Successfully Created' }];
                 break;
             case 'search':
                 // values is a string

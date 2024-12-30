@@ -16,7 +16,8 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
         { heading: 'Cooking Methods', type: 'method', filterOptions: methods },
         { heading: 'Proteins', type: 'protein', filterOptions: protein },
         { heading: 'Type', type: 'type', filterOptions: types },
-        { heading: 'Has Image', type: 'image', filterOptions: ['Yes', 'No'] }
+        { heading: 'Has Image', type: 'image', filterOptions: ['Yes', 'No'] },
+        { heading: 'Still WIP', type: 'wip', filterOptions: ['Yes', 'No'] },
     ];
 
     const filterRecipeBySelectedFilters = (compared, filter) => {
@@ -34,9 +35,20 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
         return false;
     }
 
+    const checkWIP = (wip) => {
+        const no = selectedFilters.wip.includes('No'); 
+        const yes = selectedFilters.wip.includes('Yes');
+        const all = no && yes;
+        
+        if (all) return true;
+        if (no && !wip) return true;
+        if (yes && wip) return true;
+        return false;
+    }
+
     const availableFilteredRecipes = filteredRecipes.filter(item => !!item.available);
     const filteredRecipeBySelectedFilters = availableFilteredRecipes.filter(item => {
-        const { category, diet, genre, image, method, protein, type } = selectedFilters;        
+        const { category, diet, genre, image, method, protein, type, wip } = selectedFilters;        
         return (
             (!category.length || filterRecipeBySelectedFilters(item.category || [], category)) &&
             (!diet.length || filterRecipeBySelectedFilters(item.diet || [], diet)) &&
@@ -44,7 +56,8 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
             (!method.length || filterRecipeBySelectedFilters(item.method || [], method)) &&
             (!protein.length || filterRecipeBySelectedFilters(item.protein || [], protein)) &&
             (!type.length || filterRecipeBySelectedFilters(item.type || [], type)) &&
-            (!image.length || checkSelectedImageOption(item.img))
+            (!image.length || checkSelectedImageOption(item.img)) && 
+            (!wip.length || checkWIP(item.wip))
         );
     });
 

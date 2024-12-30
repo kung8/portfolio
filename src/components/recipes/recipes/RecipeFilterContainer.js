@@ -8,7 +8,7 @@ export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFi
     const [show, setShow] = useState(false);
 
     const handleFilterSelector = (type, value) => {
-        const newType = [...selectedFilters[type]];
+        const newType = selectedFilters[type] ? [...selectedFilters[type]] : [];
         newType.includes(value) ? newType.splice(newType.indexOf(value), 1) : newType.push(value);
         const newFilters = { ...selectedFilters, [type]: newType };
         setSelectedFilters(newFilters);
@@ -24,7 +24,7 @@ export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFi
         setSelectedFilters(newFilters);
     }
 
-    const hasFilter = selectedFilters[type].length;
+    const hasFilter = selectedFilters[type]?.length;
 
     return (
         <div className="filter-container">
@@ -79,13 +79,13 @@ export const RecipeFilterContainer = ({ heading, type, filterOptions, selectedFi
                 }}
                 DropdownSelectorLeftContent={(
                     <div>
-                        {selectedFilters[type].length > 1 ? (
+                        {selectedFilters[type]?.length > 1 ? (
                             <div>
-                                <span className="selected-filter-chip">{selectedFilters[type][0]}</span>
-                                <span className="additional-filter-text">+ {selectedFilters[type].slice(1).length}</span>
+                                <span className="selected-filter-chip">{selectedFilters[type]?.[0]}</span>
+                                <span className="additional-filter-text">+ {selectedFilters[type]?.slice(1).length}</span>
                             </div>
-                        ) : selectedFilters[type].length ? (
-                            <span className="selected-filter-chip">{selectedFilters[type][0]}</span>
+                        ) : selectedFilters[type]?.length ? (
+                            <span className="selected-filter-chip">{selectedFilters[type]?.[0]}</span>
                         ) : (
                             <span className="no-selected-filter">No selected {type.toLowerCase()}</span>
                         )}
@@ -111,9 +111,9 @@ const FilterListItem = ({ option, type, selectedFilters, handleFilterSelector })
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <span className={`${selectedFilters[type].includes(option) ? 'selected-option' : ''}`}>{option}</span>
+            <span className={`${selectedFilters[type]?.includes(option) ? 'selected-option' : ''}`}>{option}</span>
             <div className="checkbox">
-                {selectedFilters[type].includes(option) ? <img className="icon" src={isHovered ? greenCheck : check} alt="check" /> : ''}
+                {selectedFilters[type]?.includes(option) ? <img className="icon" src={isHovered ? greenCheck : check} alt="check" /> : ''}
             </div>
         </li>
     )
