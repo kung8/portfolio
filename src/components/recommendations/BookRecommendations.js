@@ -120,12 +120,15 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
 
     useEffect(() => {
         const rootId = document.getElementById('root');
+        const html = document.querySelector('html');
         if (showFilter) {
             rootId.style.overflowY = 'hidden';
             rootId.style.height = '100vh';
+            html.style.overflowY = 'hidden';
         } else {
-            rootId.style.overflowY = '';
-            rootId.style.height = '';
+            rootId.style.overflowY = 'unset';
+            rootId.style.height = 'unset';
+            html.style.overflowY = 'unset';
         }
         // eslint-disable-next-line
     }, [showFilter]);
