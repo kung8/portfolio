@@ -4,6 +4,9 @@ const mochi3 = '../assets/Products/mochi-3.jpeg';
 const mochi4 = '../assets/Products/mochi-4.jpeg';
 const mochi5 = '../assets/Products/mochi-5.jpeg';
 const mochi6 = '../assets/Products/mochi-6.jpeg';
+const mochi7 = '../assets/Products/mochi-7.jpeg';
+const mochi8 = '../assets/Products/mochi-8.jpeg';
+const mochi9 = '../assets/Products/mochi-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { WHITE_SUGAR, COLD_WATER, COCONUT_MILK, POTATO_STARCH, MOCHIKO, FOOD_COLORING } = require('./ingredients');
@@ -14,9 +17,9 @@ const DUSTING = 'Dusting';
 module.exports = {
     cardName: 'Mochi',
     name: 'Japanese Mochi',
-    img: mochi6,
+    img: mochi8,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.JAPANESE],
     method: [METHODS.BAKE],
@@ -55,6 +58,6 @@ module.exports = {
         { step: 'Let mochi completely cool before dusting.', type: MOCHI },
         { step: 'Dust the mochi with potato starch to prevent sticking.', type: DUSTING },
         { step: 'Cut the mochi into rectangles. Add more starch if needed.', type: DUSTING },
-        { step: 'Enjoy these light delicious treats.', type: SECTIONS.SERVE },
+        { step: 'Enjoy these light delicious treats.', type: SECTIONS.SERVE, img: [mochi7, mochi9] },
     ]
 };
