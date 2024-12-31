@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
-const { ALL_PURPOSE_FLOUR, GHEE, WARM_WATER, CAROM_SEEDS, SALT, GREEN_PEAS, GINGER, SERRANO_PEPPERS, CORIANDER, LEMON_JUICE, CUMIN, GARAM_MASALA, CHILI_POWDER, FENNEL_SEEDS, YUKON_GOLD_POTATOES } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, GHEE, WARM_WATER, CAROM_SEEDS, SALT, GREEN_PEAS, GINGER, SERRANO_PEPPERS, CORIANDER, LEMON_JUICE, CUMIN, GARAM_MASALA, CHILI_POWDER, FENNEL_SEEDS, YUKON_GOLD_POTATOES, AMCHUR_POWDER } = require('./ingredients');
 
 const DOUGH = 'Dough';
 const POTATO_FILLING = 'Potato Filling';
@@ -46,11 +46,12 @@ module.exports = {
         { ...CORIANDER, amount: '4 Tbsp', additionalDetails: 'chopped', section: POTATO_FILLING },
         { ...LEMON_JUICE, amount: '1 tsp', additionalDetails: '', section: POTATO_FILLING },
         
-        { ...CUMIN, amount: '', additionalDetails: '', section: SPICES },
-        { ...GARAM_MASALA, amount: '', additionalDetails: '', section: SPICES },
-        { ...CHILI_POWDER, amount: '', additionalDetails: '', section: SPICES },
-        { ...CUMIN, amount: '', additionalDetails: '', section: SPICES },
-        { ...FENNEL_SEEDS, amount: '', additionalDetails: '', section: SPICES },
+        { ...CHILI_POWDER, amount: '3/4 tsp', additionalDetails: '', section: SPICES },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SPICES },
+        { ...GARAM_MASALA, amount: '1 tsp', additionalDetails: '', section: SPICES },
+        { ...CUMIN, amount: '1/2 tsp', additionalDetails: '', section: SPICES },
+        { ...AMCHUR_POWDER, amount: '1/2 tsp', additionalDetails: '', section: SPICES },
+        { ...FENNEL_SEEDS, amount: '1/2 tsp', additionalDetails: '', section: SPICES },
     ],
     appliances: [
         { name: 'stove' },

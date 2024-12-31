@@ -6,6 +6,7 @@ const INGREDIENTS = {
         ALL_PURPOSE_FLOUR: { name: 'all-purpose flour', category: INGREDIENT_CATEGORY.BAKING },
         ALMOND_EXTRACT: { name: 'almond extract', category: INGREDIENT_CATEGORY.BAKING },
         ALMOND_FLOUR: { name: 'almond flour', category: INGREDIENT_CATEGORY.BAKING },
+        AMCHUR_POWDER: { name: 'amchur powder', category: INGREDIENT_CATEGORY.BAKING },
         BAKING_POWDER: { name: 'baking powder', category: INGREDIENT_CATEGORY.BAKING },
         BAKING_SODA: { name: 'baking soda', category: INGREDIENT_CATEGORY.BAKING },
         BREADCRUMBS: { name: 'breadcrumbs', category: INGREDIENT_CATEGORY.BAKING },
