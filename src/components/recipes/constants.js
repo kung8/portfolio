@@ -26,6 +26,9 @@ export const GROUPED_BY_ALPHABETIC = 'alphabetic';
 export const GROUPED_BY_RANDOM = 'random';
 export const GROUPED_BY_GENRE = 'genre';
 export const GROUPED_BY_CATEGORY = 'category';
+export const GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT = 'overlappingIngredientCount';
+export const GROUPED_BY_INGREDIENTS_COUNT_ASCENDING = 'ingredientCountAscending';
+export const GROUPED_BY_INGREDIENTS_COUNT_DESCENDING = 'ingredientCountDescending';
 
 export const GROUPED_BY_OPTIONS = [
     { id: GROUPED_BY_NONE, label: 'Default' },
@@ -33,4 +36,7 @@ export const GROUPED_BY_OPTIONS = [
     // { id: GROUPED_BY_RANDOM, label: 'random' },
     { id: GROUPED_BY_GENRE, label: 'Genre' },
     // { id: GROUPED_BY_CATEGORY, label: 'Meal Category' },
+    { id: GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT, label: 'Searched Ingredients' }, // searched ingredients compared with the recipe's ingredients
+    { id: GROUPED_BY_INGREDIENTS_COUNT_ASCENDING, label: 'Ingredients Count (ASC)' },
+    { id: GROUPED_BY_INGREDIENTS_COUNT_DESCENDING, label: 'Ingredients Count (DESC)' },
 ];

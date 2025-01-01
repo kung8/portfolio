@@ -12,8 +12,13 @@
     border-radius: 20px;
     display: flex;
     column-gap: 4px;
+
+    &.full-width {
+        width: 100%;
+    }
+
     &.contains-search,
-    &:focus-within {
+    &.expandable:focus-within {
         width: 350px;
         transition: width 0.3s ease;
         @include down($tablet) {

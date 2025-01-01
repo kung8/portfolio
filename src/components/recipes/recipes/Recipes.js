@@ -16,7 +16,7 @@ import { useFilters } from '../hooks/use-filters';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { RecipeFilterModal } from './RecipeFilterModal';
 import { handleModalClass } from '../utils/handle-modal-class';
-import { GROUPED_BY_NONE, RECIPES_FILTERS_LOCAL_STORAGE_KEY, RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY } from '../constants';
+import { GROUPED_BY_ALPHABETIC, GROUPED_BY_GENRE, GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT, GROUPED_BY_NONE, RECIPES_FILTERS_LOCAL_STORAGE_KEY, RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, GROUPED_BY_INGREDIENTS_COUNT_ASCENDING, GROUPED_BY_INGREDIENTS_COUNT_DESCENDING } from '../constants';
 import closeBtn from '../../../Assets/x.png';
 import { Legend } from './Legend';
 import { RecipeSortFilter } from './RecipeSortFilter';
@@ -71,6 +71,7 @@ export const Recipes = ({ history }) => {
         selectedFilters.image,
         selectedFilters.search,
         selectedFilters.wip,
+        selectedFilters.ingredients,
     ])
 
     const [showArrow, setShowArrow] = useState(false);
@@ -102,9 +103,9 @@ export const Recipes = ({ history }) => {
 
     const [groupedBy, setGroupedBy] = useState(getInitialGroupedBy());
     const sortRecipes = (recipes) => {
-        if (groupedBy === 'none') return recipes;
-        if (groupedBy === 'alphabetic') return recipes.sort((a, b) => a.cardName.localeCompare(b.cardName));
-        if (groupedBy === 'genre') return Object.entries(recipes.reduce((acc, recipe, index) => {
+        if (groupedBy === GROUPED_BY_NONE) return recipes;
+        if (groupedBy === GROUPED_BY_ALPHABETIC) return recipes.sort((a, b) => a.cardName.localeCompare(b.cardName));
+        if (groupedBy === GROUPED_BY_GENRE) return Object.entries(recipes.reduce((acc, recipe, index) => {
             const genre = recipe.genre?.[0];
             if (!genre) return acc;
             if (!acc[genre]) {
@@ -119,7 +120,34 @@ export const Recipes = ({ history }) => {
             const idB = itemsB[0].id;
             return idA - idB;
         });
+        if (groupedBy === GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT && !selectedFilters.ingredients?.length) return recipes;
+        if (groupedBy === GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT && selectedFilters.ingredients?.length) return Object.entries(recipes.reduce((acc, recipe, index) => {
+            const overlappingIngredientsCount = getOverlappingIngredientsCount(recipe.ingredients);
+            if (!acc[overlappingIngredientsCount]) {
+                acc[overlappingIngredientsCount] = [];
+            }
+            acc[overlappingIngredientsCount].push({ ...recipe, id: index });
+            return acc;
+        }, {})).sort((a, b) => b[0] - a[0]); // sort by descending order
+        if (groupedBy === GROUPED_BY_INGREDIENTS_COUNT_ASCENDING) return Object.entries(recipes.reduce((acc, recipe, index) => {
+            const ingredientCount = recipe.ingredients.length;
+            if (!acc[ingredientCount]) {
+                acc[ingredientCount] = [];
+            }
+            acc[ingredientCount].push({ ...recipe, id: index });
+            return acc;
+        }, {})).sort((a, b) => a[0] - b[0]); // sort by ascending order        
+        if (groupedBy === GROUPED_BY_INGREDIENTS_COUNT_DESCENDING) return Object.entries(recipes.reduce((acc, recipe, index) => {
+            const ingredientCount = recipe.ingredients.length;
+            if (!acc[ingredientCount]) {
+                acc[ingredientCount] = [];
+            }
+            acc[ingredientCount].push({ ...recipe, id: index });
+            return acc;
+        }, {})).sort((a, b) => b[0] - a[0]); // sort by descending order   
     }
+
+    const getOverlappingIngredientsCount = (ingredients) => selectedFilters?.ingredients?.filter((ingredient => ingredients.find(i => i.name.toLowerCase().includes(ingredient.toLowerCase())))).length
 
     const filteredRecipes = search ? matchingSearchResults : recipes;
     const { filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
@@ -198,6 +226,9 @@ export const Recipes = ({ history }) => {
                 if (values) {
                     newAcc = [...newAcc, { prop: key, value: values, label: 'Search: ' + values }];
                 }
+                break;
+            case 'ingredients':
+                newAcc = [...newAcc, ...values.map(item => ({ prop: key, value: item, label: 'Ingredient: ' + item }))];
                 break;
             case 'category':
             case 'diet':
@@ -293,18 +324,29 @@ export const Recipes = ({ history }) => {
             {isLoaded ? (
                 filteredRecipes.length ? (
                     <>
-                        {groupedBy === 'genre' ? (
-                            groupedFilteredRecipes.map(([genre, recipes]) => (
-                                <div className="recipes-grouped-container" key={genre}>
-                                    <h4>{genre}</h4>
-                                    <div className="recipe-items-container">
-                                        {recipes.map((item) =>
-                                            <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertToKebabCase(item.name))} />
-                                        )}
+                        {groupedBy === GROUPED_BY_GENRE ||
+                            (groupedBy === GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT && selectedFilters.ingredients?.length) ||
+                            groupedBy === GROUPED_BY_INGREDIENTS_COUNT_ASCENDING ||
+                            groupedBy === GROUPED_BY_INGREDIENTS_COUNT_DESCENDING ? groupedFilteredRecipes.map(([genre, recipes]) => {
+                                let genreLabel = genre;
+                                if (groupedBy === GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT) {
+                                    const totalSearchIngredientsCount = selectedFilters.ingredients?.length;
+                                    genreLabel = `${genre} / ${totalSearchIngredientsCount} matching ingredients`;
+                                } else if (groupedBy === GROUPED_BY_INGREDIENTS_COUNT_ASCENDING || groupedBy === GROUPED_BY_INGREDIENTS_COUNT_DESCENDING) {
+                                    genreLabel += genre === '1' ? ' ingredient' : ' ingredients';
+                                }
+
+                                return (
+                                    <div className="recipes-grouped-container" key={genre}>
+                                        <h4>{genreLabel}</h4>
+                                        <div className="recipe-items-container">
+                                            {recipes.map((item) =>
+                                                <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertToKebabCase(item.name))} />
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
-                            ))
-                        ) : (
+                                )
+                            }) : (
                             <div className="recipe-items-container">
                                 {filteredRecipeBySelectedFilters.map((item) =>
                                     <RecipeItem key={item.name} item={item} onClick={() => history.push('/recipes/' + convertToKebabCase(item.name))} />

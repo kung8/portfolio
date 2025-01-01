@@ -96,4 +96,36 @@
             width: 12px;
         }
     }
+
+    .ingredients-filter-container {
+        .ingredient-filter-search {
+            margin-bottom: 12px;
+        }
+        
+        .ingredients-filter {
+            max-width: 250px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #b6a7a7;
+            cursor: pointer;
+            overflow-y: auto;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+
+            .ingredient-filter {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .remove-ingredient {
+                    img {
+                        height: 12px;
+                        width: 12px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -5,19 +5,19 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
     const categories = recipeCategories.CATEGORIES;
     // const diet = recipeCategories.DIET;
     const genres = recipeCategories.GENRES;
-    const methods = recipeCategories.METHODS;
-    const protein = recipeCategories.PROTEIN;
-    const types = recipeCategories.TYPES;
+    // const methods = recipeCategories.METHODS;
+    // const protein = recipeCategories.PROTEIN;
+    // const types = recipeCategories.TYPES;
 
     const filterMapping = [
         { heading: 'Categories', type: 'category', filterOptions: categories },
         { heading: 'Genres', type: 'genre', filterOptions: genres },
         // { heading: 'Diet', type: 'diet', filterOptions: diet },
-        { heading: 'Cooking Methods', type: 'method', filterOptions: methods },
-        { heading: 'Proteins', type: 'protein', filterOptions: protein },
-        { heading: 'Type', type: 'type', filterOptions: types },
-        { heading: 'Has Image', type: 'image', filterOptions: ['Yes', 'No'] },
-        { heading: 'Still WIP', type: 'wip', filterOptions: ['Yes', 'No'] },
+        // { heading: 'Cooking Methods', type: 'method', filterOptions: methods },
+        // { heading: 'Proteins', type: 'protein', filterOptions: protein },
+        // { heading: 'Type', type: 'type', filterOptions: types },
+        // { heading: 'Has Image', type: 'image', filterOptions: ['Yes', 'No'] },
+        // { heading: 'Still WIP', type: 'wip', filterOptions: ['Yes', 'No'] },
     ];
 
     const filterRecipeBySelectedFilters = (compared, filter) => {
