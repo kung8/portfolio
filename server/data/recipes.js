@@ -415,7 +415,7 @@ const recipes = [
     chickenMcNuggets,
     bigMac,
     hamburger,
-    grilledCheeseSandwich, // TODO: add
+    grilledCheeseSandwich,
     caramelizedMushroom,
     caramelizedOnion,
     homemadeBBQSauce,
