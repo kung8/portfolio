@@ -1,22 +1,16 @@
 const apples = '../assets/Products/apple-pie-apples.jpeg';
-const baked = '../assets/Products/apple-pie-baked.jpeg';
-const zoomed1 = '../assets/Products/apple-pie-baked-zoomed-1.jpeg';
 const zoomed2 = '../assets/Products/apple-pie-baked-zoomed-2.jpeg';
-const zoomed3 = '../assets/Products/apple-pie-baked-zoomed-3.jpeg';
-const zoomed4 = '../assets/Products/apple-pie-baked-zoomed-4.jpeg';
-const zoomed5 = '../assets/Products/apple-pie-baked-zoomed-5.jpeg';
+const baked = '../assets/Products/apple-pie-baked.jpeg';
 const melted = '../assets/Products/apple-pie-melted-butter.jpeg';
 const melting = '../assets/Products/apple-pie-melting-butter.jpeg';
 const crust = '../assets/Products/apple-pie-pastry-dough.jpeg';
-const latticeAerialZoomed = '../assets/Products/apple-pie-raw-aerial-zoomed.jpeg';
-const latticeAerial = '../assets/Products/apple-pie-raw-lattice-aerial.jpeg';
-const lattice = '../assets/Products/apple-pie-raw-lattice.jpeg';
 const plated = '../assets/Products/apple-pie-plated.jpeg';
-const rawSauceZoomed = '../assets/Products/apple-pie-raw-with-sauce-zoomed.jpeg';
+const lattice = '../assets/Products/apple-pie-raw-lattice.jpeg';
 const rawSauce = '../assets/Products/apple-pie-raw-with-sauce.jpeg';
 const sauce = '../assets/Products/apple-pie-sauce.jpeg';
 const sliced = '../assets/Products/apple-pie-sliced.jpeg';
 const sugars = '../assets/Products/apple-pie-sugars.jpeg';
+
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { GRANNY_SMITH_APPLES, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHITE_SUGAR, BROWN_SUGAR, COLD_WATER, DOUBLE_CRUST_PIE_CRUST } = require('./ingredients');
 
@@ -68,11 +62,11 @@ module.exports = {
         { step: 'Add the apple slices to the pie pan (a slight mound is fine).', type: SECTIONS.MAIN },
         { step: 'Lay out four of the pastry strips vertically evenly spaced.', type: SECTIONS.MAIN },
         { step: 'Weave the remaining pastry strips horizontally and alternating.', type: SECTIONS.MAIN },
-        { step: 'Fold the lattice over the pie, trim any excess, and pinch.', type: SECTIONS.MAIN, img: [lattice, latticeAerial, latticeAerialZoomed] },
-        { step: 'Pour the sugar mixture over the lattice and make sure that it (1) gets onto the apples and (2) does not spill over the sides.', type: SECTIONS.MAIN, img: [rawSauce, rawSauceZoomed] },
+        { step: 'Fold the lattice over the pie, trim any excess, and pinch.', type: SECTIONS.MAIN, img: lattice },
+        { step: 'Pour the sugar mixture over the lattice and make sure that it (1) gets onto the apples and (2) does not spill over the sides.', type: SECTIONS.MAIN, img: rawSauce },
         { step: 'Bake for 15 minutes.', type: SECTIONS.MAIN },
         { step: 'Reduce to 350ºF and bake until apples are soft (about 35 to 45 minutes).', type: SECTIONS.MAIN },
-        { step: 'Enjoy a taste of America\'s traditional dessert al la mode (i.e. topped with ice cream) or all by itself.', type: SECTIONS.MAIN, img: [plated, sliced, zoomed1, zoomed2, zoomed3, zoomed4, zoomed5] },
+        { step: 'Enjoy a taste of America\'s traditional dessert al la mode (i.e. topped with ice cream) or all by itself.', type: SECTIONS.MAIN, img: [plated, sliced, zoomed2] },
     ],
     notes: [
         { note: 'Slicing this pie is easier when it is cooled but it may come out crumbly but it\'s still good.' },
