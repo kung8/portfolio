@@ -1292,6 +1292,7 @@ const INGREDIENTS = {
         RED_CHILI_PASTE: { name: 'red chili paste', category: INGREDIENT_CATEGORY.SPICES },
         ROSEMARY: { name: 'rosemary', category: INGREDIENT_CATEGORY.SPICES },
         SAFFRON_THREADS: { name: 'saffron threads', category: INGREDIENT_CATEGORY.SPICES },
+        SAGE: { name: 'sage', category: INGREDIENT_CATEGORY.SPICES },
         SALT: { name: 'salt', category: INGREDIENT_CATEGORY.SPICES },
         SEA_SALT: { name: 'sea salt', category: INGREDIENT_CATEGORY.SPICES },
         SESAME_SEEDS: { name: 'sesame seeds', category: INGREDIENT_CATEGORY.SPICES },
