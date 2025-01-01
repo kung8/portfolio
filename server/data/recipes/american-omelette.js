@@ -5,9 +5,7 @@ const spinach = '../assets/Products/american-omelette-spinach-and-cheese.jpeg';
 const aerial = '../assets/Products/american-omelette-plated-aerial.jpeg';
 // E.g. of folding method result
 const halved = '../assets/Products/american-omelette-plated-halved.jpeg';
-const split = '../assets/Products/american-omelette-plated-split.jpeg';
 const side = '../assets/Products/american-omelette-plated-side.jpeg';
-const moreCooked = '../assets/Products/american-omelette-plated-more-cooked.jpeg';
 const moreCookedZoomed = '../assets/Products/american-omelette-plated-more-cooked-zoomed.jpeg';
 const moreCookedSide = '../assets/Products/american-omelette-plated-more-cooked-side.jpeg';
 
@@ -78,7 +76,7 @@ module.exports = {
         { step: 'If you have successfully flipped it then the rest of this will be a piece of cake. Put it right back over the heat and add the tomatoes and ham to one half of the egg.', type: FLIPPING_METHOD },
         { step: 'Let the other side of the egg cook a few minutes.', type: FLIPPING_METHOD },
         { step: 'Fold over the side that doesn\'t have the tomatoes. If the egg could use more time you can carefully flip the egg over again using your spatula this time.', type: FLIPPING_METHOD, img: aerial },
-        { step: 'Slowly check the bottom of the egg to see if it is a nice golden brown, add the spinach and cheese before folding the egg.', type: FOLDING_METHOD, img: [side, split, halved, moreCooked, moreCookedSide] },
+        { step: 'Slowly check the bottom of the egg to see if it is a nice golden brown, add the spinach and cheese before folding the egg.', type: FOLDING_METHOD, img: [side, halved, moreCookedSide] },
         { step: 'Enjoy this beautiful piece of art.', type: SECTIONS.MAIN },
     ]
 }
