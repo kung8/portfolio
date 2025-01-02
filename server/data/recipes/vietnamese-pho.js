@@ -6,15 +6,9 @@ const cinnamon = '../assets/Products/pho-cinnamon.jpeg';
 const noodles = '../assets/Products/pho-noodles.jpeg';
 const plated1 = '../assets/Products/pho-plated-1.jpeg';
 const plated2 = '../assets/Products/pho-plated-2.jpeg';
-const plated3 = '../assets/Products/pho-plated-3.jpeg';
 const plated4 = '../assets/Products/pho-plated-4.jpeg';
 const plated5 = '../assets/Products/pho-plated-5.jpeg';
 const plated6 = '../assets/Products/pho-plated-6.jpeg';
-const plated7 = '../assets/Products/pho-plated-7.jpeg';
-const plated8 = '../assets/Products/pho-plated-8.jpeg';
-const plated9 = '../assets/Products/pho-plated-9.jpeg';
-const plated10 = '../assets/Products/pho-plated-10.jpeg';
-const plated11 = '../assets/Products/pho-plated-11.jpeg';
 const sauces = '../assets/Products/pho-sauces.jpeg';
 const toppings = '../assets/Products/pho-toppings.jpeg';
 const veggiesPot = '../assets/Products/pho-veggies-in-pot.jpeg';
@@ -102,7 +96,7 @@ module.exports = {
         { step: 'Discard ginger, clove, cinnamon stick and onion.', type: SECTIONS.BROTH, img: broth2 },
         { step: 'Add thin beef slices 5 or so minutes before the broth is finished. Cook until cooked to desired doneness.', type: SECTIONS.BROTH, img: [beef, broth3] },
         { step: 'Prepare the noodles per package instructions.', type: SECTIONS.NOODLES, img: noodles },
-        { step: 'Divide the noodles into bowls and ladle soup over noodles.', type: SECTIONS.ASSEMBLY, img: [plated1, plated2, plated3] },
-        { step: 'Serve with any additional toppings and enjoy this simple delicious Vietnamese cuisine. Also this dish is pronounced \'fuh\'.', type: SECTIONS.SERVE, img: [toppings, plated4, plated5, plated7, plated8, plated9, plated10, plated11] },
+        { step: 'Divide the noodles into bowls and ladle soup over noodles.', type: SECTIONS.ASSEMBLY, img: [plated1, plated2] },
+        { step: 'Serve with any additional toppings and enjoy this simple delicious Vietnamese cuisine. Also this dish is pronounced \'fuh\'.', type: SECTIONS.SERVE, img: [toppings, plated4, plated5] },
     ]
 };
