@@ -1,9 +1,7 @@
-const aerial = '../assets/Products/pad-thai-aerial.jpeg';
 const boilingNoodles = '../assets/Products/pad-thai-boiling-noodles.jpeg';
 const boilingWater = '../assets/Products/pad-thai-boiling-water.jpeg';
 const butter = '../assets/Products/pad-thai-butter.jpeg';
 const chickenPan = '../assets/Products/pad-thai-chicken-in-pan.jpeg';
-const chicken = '../assets/Products/pad-thai-chicken.jpeg';
 const cookedEggs = '../assets/Products/pad-thai-cooked-eggs.jpeg';
 const noodles = '../assets/Products/pad-thai-cooked-noodles.jpeg';
 const veggiesChicken = '../assets/Products/pad-thai-cooked-veggies-and-chicken.jpeg';
@@ -11,22 +9,15 @@ const strips = '../assets/Products/pad-thai-egg-strips.jpeg';
 const eggsPan = '../assets/Products/pad-thai-eggs-in-pan.jpeg';
 const eggs = '../assets/Products/pad-thai-eggs.jpeg';
 const garlicPepper = '../assets/Products/pad-thai-garlic-and-pepper.jpeg';
-const garlic = '../assets/Products/pad-thai-garlic.jpeg';
 const mixedEggs = '../assets/Products/pad-thai-mixed-eggs.jpeg';
 const mixedNoSauce = '../assets/Products/pad-thai-mixed-with-no-sauce.jpeg';
-const mixedSauce1 = '../assets/Products/pad-thai-mixed-with-sauce-1.jpeg';
 const mixedSauce2 = '../assets/Products/pad-thai-mixed-with-sauce-2.jpeg';
-const mixedSauce3 = '../assets/Products/pad-thai-mixed-with-sauce-3.jpeg';
 const mixedSauce4 = '../assets/Products/pad-thai-mixed-with-sauce-4.jpeg';
 const mixed = '../assets/Products/pad-thai-mixed.jpeg';
 const partialChicken = '../assets/Products/pad-thai-partially-cooked-chicken.jpeg';
 const partialEggs = '../assets/Products/pad-thai-partially-cooked-eggs.jpeg';
 const peanuts = '../assets/Products/pad-thai-peanuts.jpeg';
-const peppers = '../assets/Products/pad-thai-peppers.jpeg';
-// const plated1 = '../assets/Products/pad-thai-plated-1.jpeg';
-const plated2 = '../assets/Products/pad-thai-plated-2.jpeg';
 const plated3 = '../assets/Products/pad-thai-plated-3.jpeg';
-const plated4 = '../assets/Products/pad-thai-plated-4.jpeg';
 const rinsing = '../assets/Products/pad-thai-rinsing-noodles.jpeg';
 const sauce = '../assets/Products/pad-thai-sauce.jpeg';
 
@@ -84,7 +75,6 @@ module.exports = {
         { ...PEANUT_BUTTER, amount: '6 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...UNSALTED_PEANUTS, amount: '2 c', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...LIME, amount: '1', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        // { ...GREEN_ONIONS, amount: '4', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...BEAN_SPROUTS, amount: '6 Tbsp', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...CILANTRO, amount: '1 bunch', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
@@ -101,8 +91,8 @@ module.exports = {
     ],
     directions: [
         { step: 'Melt 1 Tbsp of butter in a large cooking pan on medium-high heat.', type: CHICKEN_AND_VEGGIES, img: butter },
-        { step: 'Cook the chicken.', type: CHICKEN_AND_VEGGIES, img: [chicken, chickenPan, partialChicken] },
-        { step: 'Add garlic and bell peppers to the pan after the chicken cooks a little.', type: CHICKEN_AND_VEGGIES, img: [garlic, peppers, garlicPepper, veggiesChicken] },
+        { step: 'Cook the chicken.', type: CHICKEN_AND_VEGGIES, img: [chickenPan, partialChicken] },
+        { step: 'Add garlic and bell peppers to the pan after the chicken cooks a little.', type: CHICKEN_AND_VEGGIES, img: [garlicPepper, veggiesChicken] },
 
         { step: 'Cook rice noodles until tender (about 3 to 5 minutes) in strainer. Rinse noodles under cold water.', type: SECTIONS.NOODLES, img: [boilingWater, boilingNoodles] },
         { step: 'Rinse noodles under cold water.', type: SECTIONS.NOODLES, img: [rinsing, noodles] },
@@ -118,9 +108,9 @@ module.exports = {
 
         { step: 'In the wok, mix together noodles, chicken, and vegetables.', type: SECTIONS.MAIN, img: mixed },
         { step: 'Add eggs.', type: SECTIONS.MAIN, img: mixedNoSauce },
-        { step: 'Add sauce.', type: SECTIONS.MAIN, img: [mixedSauce1, mixedSauce3, mixedSauce4] },
+        { step: 'Add sauce.', type: SECTIONS.MAIN, img: mixedSauce4 },
 
         { step: 'Roast the peanuts in a pan and set aside to top.', type: PEANUTS, img: peanuts },
-        { step: 'Serve and garnish with peanuts, bean sprouts, cilantro, and squeeze fresh lime juice. Enjoy this majestic Thai dish!', type: SECTIONS.SERVE, img: [plated2, plated3, plated4, aerial] },
+        { step: 'Serve and garnish with peanuts, bean sprouts, cilantro, and squeeze fresh lime juice. Enjoy this majestic Thai dish!', type: SECTIONS.SERVE, img: plated3 },
     ]
 };
