@@ -12,7 +12,6 @@ module.exports = {
     cardName: 'Honey Sesame Chicken',
     name: 'Honey Sesame Chicken',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

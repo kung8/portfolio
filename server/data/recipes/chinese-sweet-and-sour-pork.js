@@ -13,7 +13,6 @@ module.exports = {
     cardName: 'Sweet and Sour Pork',
     name: 'Chinese Sweet and Sour Pork',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

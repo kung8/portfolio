@@ -16,7 +16,6 @@ module.exports = {
     cardName: 'Samosa',
     name: 'Samosa',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER],

@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Spicy Thai Basil',
     name: 'Spicy Thai Basil (Pad Krapow Gai)',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

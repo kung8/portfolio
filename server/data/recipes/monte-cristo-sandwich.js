@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Monte Cristo Sandwich',
     name: 'Monte Cristo Sandwich',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

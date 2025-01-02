@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Cherry Crostata',
     name: 'Cherry + Dark Chocolate Crostata',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

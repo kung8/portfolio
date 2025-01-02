@@ -14,7 +14,6 @@ module.exports = {
     cardName: 'Swedish Meatballs',
     name: 'Swedish Meatballs (Kottbullar)',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.MAIN_DISH],

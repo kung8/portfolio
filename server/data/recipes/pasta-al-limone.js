@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Pasta al Limone',
     name: 'Pasta al Limone',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

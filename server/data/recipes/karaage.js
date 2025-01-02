@@ -11,7 +11,6 @@ module.exports = {
     cardName: 'Karaage',
     name: 'Karaage',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.DINNER, CATEGORIES.LUNCH],

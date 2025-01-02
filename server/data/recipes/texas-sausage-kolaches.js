@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Texas Sausage Kolaches',
     name: 'Texas Sausage Kolaches',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

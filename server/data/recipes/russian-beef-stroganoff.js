@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Beef Stroganoff',
     name: 'Beef Stroganoff',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

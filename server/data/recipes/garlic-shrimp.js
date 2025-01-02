@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Garlic Shrimp',
     name: 'Garlic Shrimp',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

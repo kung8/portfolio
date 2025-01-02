@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'French Onion Soup',
     name: 'French Onion Soup Gratinee',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

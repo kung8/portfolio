@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Naan',
     name: 'Naan',
     img: '',
-    recipeCredit: '',
+    recipeCredit: 'Nick DiGiovanni',
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.APPETIZER],
@@ -34,14 +34,12 @@ module.exports = {
         { ...CILANTRO, amount: '2 sprigs', additionalDetails: 'chopped', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: '' },
+        { name: 'stove' },
     ],
     supplies: [
         { name: 'mixing bowl' },
         { name: 'dutch oven pan' },
-        { name: '' },
-        { name: '' },
-        { name: '' },
+        { name: 'cooking brush' },
     ],
     directions: [
         { step: 'In a mixing bowl, combine warm water and sugar.', type: ACTIVATE_YEAST },

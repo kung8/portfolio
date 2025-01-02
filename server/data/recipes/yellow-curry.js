@@ -27,7 +27,6 @@ module.exports = {
     cardName: 'Yellow Curry',
     name: 'Thai Yellow Curry',
     img: curry17,
-    recipeCredit: '',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

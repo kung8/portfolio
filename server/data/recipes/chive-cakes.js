@@ -15,7 +15,6 @@ module.exports = {
     cardName: 'Chive Cakes',
     name: 'Chive Cakes (Khanom Gui Chai)',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],

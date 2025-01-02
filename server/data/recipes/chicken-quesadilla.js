@@ -16,7 +16,6 @@ module.exports = {
     cardName: 'Chicken Quesadilla',
     name: 'Chicken Quesadilla',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Mango Chutney',
     name: 'Mango Chutney',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

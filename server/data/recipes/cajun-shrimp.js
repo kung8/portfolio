@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Cajun Shrimp',
     name: 'Cajun Shrimp',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

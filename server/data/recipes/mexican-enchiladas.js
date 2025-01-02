@@ -14,7 +14,6 @@ module.exports = {
     cardName: 'Mexican Enchiladas',
     name: 'Mexican Enchiladas',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

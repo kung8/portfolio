@@ -10,7 +10,6 @@ module.exports = {
     cardName: 'Shrimp Paella',
     name: 'Shrimp Paella',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

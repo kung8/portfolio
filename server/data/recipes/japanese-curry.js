@@ -11,7 +11,6 @@ module.exports = {
     cardName: 'Japanese Curry',
     name: 'Japanese Curry',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

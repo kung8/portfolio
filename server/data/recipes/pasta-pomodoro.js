@@ -14,7 +14,6 @@ module.exports = {
     cardName: 'Pasta Pomodoro',
     name: 'Pasta Pomodoro',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

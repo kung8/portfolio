@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Shrimp Scampi',
     name: 'Shrimp Scampi',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

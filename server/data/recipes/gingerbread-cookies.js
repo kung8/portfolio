@@ -36,7 +36,6 @@ module.exports = {
     cardName: 'Gingerbread Cookies',
     name: 'Gingerbread Cookies',
     img: cookies13,
-    recipeCredit: '',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

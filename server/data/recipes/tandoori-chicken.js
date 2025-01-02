@@ -14,7 +14,6 @@ module.exports = {
     cardName: 'Tandoori Chicken',
     name: 'Tandoori Chicken',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

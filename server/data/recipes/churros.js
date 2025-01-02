@@ -13,7 +13,6 @@ module.exports = {
     cardName: 'Churros',
     name: 'Churros',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],

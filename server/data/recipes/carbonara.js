@@ -14,7 +14,6 @@ module.exports = {
     cardName: 'Carbonara',
     name: 'Carbonara',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

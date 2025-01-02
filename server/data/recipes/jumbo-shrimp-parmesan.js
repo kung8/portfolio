@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Jumbo Shrimp Parmesan',
     name: 'Jumbo Shrimp Parmesan',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

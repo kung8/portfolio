@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Chicken Pot Pie',
     name: 'Chicken Pot Pie',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

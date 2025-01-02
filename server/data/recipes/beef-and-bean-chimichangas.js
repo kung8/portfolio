@@ -19,7 +19,6 @@ module.exports = {
     cardName: 'Beef + Bean Chimichangas',
     name: 'Beef and Bean Chimichangas',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

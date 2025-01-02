@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Chicken Paella',
     name: 'Chicken Paella',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

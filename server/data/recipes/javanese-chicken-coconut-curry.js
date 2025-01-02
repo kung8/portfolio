@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Chicken Coconut Curry',
     name: 'Javanese Chicken Coconut Curry',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

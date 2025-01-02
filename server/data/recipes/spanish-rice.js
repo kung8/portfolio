@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Spanish Rice',
     name: 'Spanish Rice',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

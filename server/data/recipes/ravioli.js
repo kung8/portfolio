@@ -18,7 +18,6 @@ module.exports = {
     cardName: 'Ravioli',
     name: 'Ravioli',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

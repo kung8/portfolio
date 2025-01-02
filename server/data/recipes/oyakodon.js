@@ -14,7 +14,6 @@ module.exports = {
     cardName: 'Oyakodon',
     name: 'Oyakodon',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

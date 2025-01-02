@@ -10,7 +10,6 @@ module.exports = {
     cardName: 'Gelato',
     name: 'Gelato',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],

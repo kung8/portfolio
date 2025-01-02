@@ -13,7 +13,6 @@ module.exports = {
     cardName: 'Beef Ragu',
     name: 'Beef Ragu',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

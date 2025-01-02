@@ -12,7 +12,6 @@ module.exports = {
     cardName: 'Beef Tacos',
     name: 'Beef Tacos',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

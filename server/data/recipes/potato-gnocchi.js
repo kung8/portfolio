@@ -11,7 +11,6 @@ module.exports = {
     cardName: 'Potato Gnocchi',
     name: 'Potato Gnocchi',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Béarnaise Sauce',
     name: 'Béarnaise Sauce',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

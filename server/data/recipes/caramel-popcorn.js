@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Caramel Popcorn',
     name: 'Caramel Popcorn',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],

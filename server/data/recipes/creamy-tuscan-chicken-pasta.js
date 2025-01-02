@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Creamy Tuscan Chicken Pasta',
     name: 'Creamy Tuscan Chicken Pasta',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [],
