@@ -431,6 +431,7 @@ const INGREDIENTS = {
         GREEK_YOGURT: { name: 'greek yogurt', category: INGREDIENT_CATEGORY.DAIRY },
         GRUYERE_CHEESE: { name: 'gruyere cheese', category: INGREDIENT_CATEGORY.DAIRY },
         HALF_AND_HALF: { name: 'half and half', category: INGREDIENT_CATEGORY.DAIRY },
+        HAVARTI_CHEESE: { name: 'havarti cheese', category: INGREDIENT_CATEGORY.DAIRY },
         HEAVY_CREAM: { name: 'heavy cream', category: INGREDIENT_CATEGORY.DAIRY },
         MANCHEGO_CHEESE: { name: 'manchego cheese', category: INGREDIENT_CATEGORY.DAIRY },
         MARGARINE: { name: 'margarine', category: INGREDIENT_CATEGORY.DAIRY },
