@@ -1,17 +1,13 @@
 const yeast1 = '../assets/Products/crescent-rolls-yeast-1.jpeg';
-const yeast2 = '../assets/Products/crescent-rolls-yeast-2.jpeg';
 const yeast3 = '../assets/Products/crescent-rolls-yeast-3.jpeg';
 const yeast4 = '../assets/Products/crescent-rolls-yeast-4.jpeg';
 const yeast5 = '../assets/Products/crescent-rolls-yeast-5.jpeg';
 const baked1 = '../assets/Products/crescent-rolls-baked-1.jpeg';
-const baked2 = '../assets/Products/crescent-rolls-baked-2.jpeg';
 const baked3 = '../assets/Products/crescent-rolls-baked-3.jpeg';
-const baked4 = '../assets/Products/crescent-rolls-baked-4.jpeg';
 const baked5 = '../assets/Products/crescent-rolls-baked-5.jpeg';
 const basted = '../assets/Products/crescent-rolls-basted.jpeg';
 const evaporated = '../assets/Products/crescent-rolls-evaporated-milk.jpeg';
 const flour = '../assets/Products/crescent-rolls-flour.jpeg';
-const plated1 = '../assets/Products/crescent-rolls-plated-1.jpeg';
 const plated2 = '../assets/Products/crescent-rolls-plated-2.jpeg';
 const rolled = '../assets/Products/crescent-rolls-rolled.jpeg';
 const triangleRolled = '../assets/Products/crescent-rolls-triangle-rolled.jpeg';
@@ -23,6 +19,7 @@ const sugar = '../assets/Products/crescent-rolls-sugar.jpeg';
 const dough1 = '../assets/Products/crescent-rolls-dough-1.jpeg';
 const dough2 = '../assets/Products/crescent-rolls-dough-2.jpeg';
 const balls = '../assets/Products/crescent-rolls-dough-balls.jpeg';
+
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { LUKEWARM_WATER, YEAST, WHITE_SUGAR, EVAPORATED_MILK, COLD_WATER, SALT, UNSALTED_BUTTER, EGGS, ALL_PURPOSE_FLOUR } = require('./ingredients');
 
@@ -32,7 +29,7 @@ const LIQUID_MIXTURE = 'Liquid Mixture';
 module.exports = {
     cardName: 'Crescent Rolls',
     name: 'Crescent Rolls',
-    img: plated2,
+    img: baked3,
     available: true,
     recipeCredit: 'Grandma Ward',
     category: [CATEGORIES.APPETIZER],
@@ -65,7 +62,7 @@ module.exports = {
         { name: 'silicon baking mat' },
     ],
     directions: [
-        { step: 'Combine ingredients in medium bowl.', type: YEAST_MIXTURE, img: [yeast1, yeast2, yeast3, yeast4] },
+        { step: 'Combine ingredients in medium bowl.', type: YEAST_MIXTURE, img: [yeast1, yeast3, yeast4] },
         { step: 'Let mixture sit for 3 to 5 minutes.', type: YEAST_MIXTURE, img: yeast5 },
         { step: 'Combine ingredients in mixing bowl.', type: LIQUID_MIXTURE, img: evaporated },
         { step: 'Add yeast mixture into liquid mixture. Mix.', type: LIQUID_MIXTURE },
@@ -78,7 +75,7 @@ module.exports = {
         { step: 'Separate. Roll each wedge from the outside to the center.', type: SECTIONS.MAIN, img: triangleRolled },
         { step: 'Place rolls on prepared baking sheet and let them rise.', type: SECTIONS.MAIN, img: wrapped },
         { step: 'Baste with butter.', type: SECTIONS.MAIN, img: basted },
-        { step: 'Bake for 20 minutes.', type: SECTIONS.MAIN, img: [baked1, baked2, baked3, baked4, baked5] },
-        { step: 'Eat these rolls warm.', type: SECTIONS.MAIN, img: plated1 },
+        { step: 'Bake for 20 minutes.', type: SECTIONS.MAIN, img: [baked1, baked5] },
+        { step: 'Eat these rolls warm.', type: SECTIONS.MAIN, img: plated2 },
     ]
 };
