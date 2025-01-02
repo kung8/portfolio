@@ -74,6 +74,7 @@ const GENRES = {
     RUSSIAN: 'Russian',
     POLYNESIAN: 'Polynesian',
     AUSTRIAN: 'Austrian',
+    CZECH: 'Czech',
 };
 
 const METHODS = {

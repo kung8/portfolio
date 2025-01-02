@@ -200,7 +200,7 @@ const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
 const sushi = require("./recipes/sushi");
 const swedishMeatballs = require("./recipes/swedish-meatballs");
-const sweetKolaches = require("./recipes/sweet-kolaches");
+const cherryAndCreamCheeseKolaches = require("./recipes/cherry-and-cream-cheese-kolaches");
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tandooriChicken = require("./recipes/tandoori-chicken");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
@@ -330,7 +330,7 @@ const recipes = [
     pastaAlLimone, // TODO: add
     shrimpScampi, // TODO: add
     potatoGnocchi,
-    ravioli, // TODO: add
+    ravioli,
     italianTurkeyMeatballSpinachTortelliniSoup,
     gelato,
 
@@ -354,7 +354,7 @@ const recipes = [
     poachedSalmonWithHollandaiseSauce, // TODO: add
     frenchOnionSoupGratinee, // TODO: add
     dijonChicken, // TODO: add
-    monteCristoSandwich, // TODO: add
+    monteCristoSandwich,
     cherryAndDarkChocolateCrostata, // TODO: add
 
     // GERMAN
@@ -362,7 +362,7 @@ const recipes = [
 
     // CZECH
     texasSausageKolaches, // TODO: add
-    sweetKolaches, // TODO: add
+    cherryAndCreamCheeseKolaches,
 
     // TURKISH
     bulgurPilaf, // TODO: add

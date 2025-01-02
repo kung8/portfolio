@@ -23,7 +23,7 @@ module.exports = {
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],
     yields: '2 servings',
-    prepTime: '15 m',
+    prepTime: '10 m',
     cookTime: '10 m',
     websites: [
         { label: 'Monte Cristo Sandwich', link: 'https://www.allrecipes.com/recipe/264681/madame-cristo-grilled-ham-and-cheese/' }
