@@ -1,6 +1,4 @@
 const cookedZoomed = '../assets/Products/oatmeal-raisin-cookies-cooked-zoomed.jpeg';
-// const cooked = '../assets/Products/oatmeal-raisin-cookies-cooked.jpeg';
-// const cooledContainer = '../assets/Products/oatmeal-raisin-cookies-cooled-container.jpeg';
 const cooled = '../assets/Products/oatmeal-raisin-cookies-cooled.jpeg';
 const dry = '../assets/Products/oatmeal-raisin-cookies-dry-ingredients.jpeg';
 const liquid = '../assets/Products/oatmeal-raisin-cookies-liquid-added.jpeg';
@@ -8,8 +6,8 @@ const oatmeal = '../assets/Products/oatmeal-raisin-cookies-oatmeal-added.jpeg';
 const plated = '../assets/Products/oatmeal-raisin-cookies-plated.jpeg';
 const raisin = '../assets/Products/oatmeal-raisin-cookies-raisins-added.jpeg';
 const raw = '../assets/Products/oatmeal-raisin-cookies-raw-pan.jpeg';
-const zoomed = '../assets/Products/oatmeal-raisin-cookies-zoomed.jpeg';
 const chocolate = '../assets/Products/oatmeal-raisin-cookies-with-chocolate-chip.jpeg';
+
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
@@ -71,9 +69,9 @@ module.exports = {
         { step: 'Slowly add the softened butter, eggs, and vanilla. Mix as each component is added.', type: SECTIONS.MAIN, img: liquid },
         { step: 'Mix as you slowly add the oats.', type: SECTIONS.MAIN, img: oatmeal },
         { step: 'Mix as you slowly add the raisins.', type: SECTIONS.MAIN, img: raisin },
-        { step: 'Optionally add chocolate chips.', type: SECTIONS.MAIN, img: raisin },
+        { step: 'Optionally add chocolate chips.', type: SECTIONS.MAIN },
         { step: 'Shape the dough into 1 inch balls. Place them onto a baking sheet.', type: SECTIONS.MAIN, img: raw },
-        { step: 'Bake until the cookies are golden brown (about 12 to 13 minutes).', type: SECTIONS.MAIN, img: [zoomed, chocolate] },
+        { step: 'Bake until the cookies are golden brown (about 12 to 13 minutes).', type: SECTIONS.MAIN, img: chocolate },
         { step: 'Remove the cookies from the oven. Let the cookies sit on the baking sheet for at least 2 minutes before transferring to a cooling rack.', type: SECTIONS.MAIN, img: cooled },
         { step: 'Enjoy these crispy treats.', type: SECTIONS.MAIN, img: plated },
     ]
