@@ -14,11 +14,7 @@ const mixedVeggies = '../assets/Products/chicken-tikka-masala-mixed-veggies.jpeg
 const mixed = '../assets/Products/chicken-tikka-masala-mixed.jpeg';
 const oil = '../assets/Products/chicken-tikka-masala-oil.jpeg';
 const cookedChickenZoomed = '../assets/Products/chicken-tikka-masala-partially-cooked-chicken-zoomed.jpeg';
-const cookedChicken = '../assets/Products/chicken-tikka-masala-partially-cooked-chicken.jpeg';
 const plated1 = '../assets/Products/chicken-tikka-masala-plated-1.jpeg';
-const plated2 = '../assets/Products/chicken-tikka-masala-plated-2.jpeg';
-const plated3 = '../assets/Products/chicken-tikka-masala-plated-3.jpeg';
-const plated4 = '../assets/Products/chicken-tikka-masala-plated-4.jpeg';
 const raw = '../assets/Products/chicken-tikka-masala-raw-chicken.jpeg';
 const onionPan = '../assets/Products/chicken-tikka-masala-raw-onion-in-pan.jpeg';
 const sauce = '../assets/Products/chicken-tikka-masala-sauce.jpeg';
@@ -28,8 +24,7 @@ const spices = '../assets/Products/chicken-tikka-masala-spices.jpeg';
 const sugar = '../assets/Products/chicken-tikka-masala-sugar.jpeg';
 const tomato = '../assets/Products/chicken-tikka-masala-tomato-sauce.jpeg';
 const translucent = '../assets/Products/chicken-tikka-masala-translucent-onion.jpeg';
-const zoomed1 = '../assets/Products/chicken-tikka-masala-zoomed-1.jpeg';
-const zoomed2 = '../assets/Products/chicken-tikka-masala-zoomed-2.jpeg';
+
 const { CATEGORIES, GENRES, TYPES, METHODS, SECTIONS } = require("./constants");
 const { GHEE, MEDIUM_YELLOW_ONION, GARLIC, CUMIN, SALT, GINGER, CAYENNE_PEPPER, CINNAMON, TURMERIC, TOMATO_SAUCE, HEAVY_CREAM, WHITE_SUGAR, PAPRIKA, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CURRY_POWDER, } = require('./ingredients');
 
@@ -86,9 +81,9 @@ module.exports = {
         { step: 'Bring to a simmer and cook until sauce has thickened (about 10 to 15 minutes).', type: SECTIONS.SAUCE, img: sauce },
         { step: 'Over medium heat, heat vegetable oil in a large pan.', type: SECTIONS.MAIN, img: oil },
         { step: 'Add chicken and curry powder.', type: SECTIONS.MAIN, img: [raw, curryPowder, curryChicken] },
-        { step: 'Sear chicken until lightly browned (about 3 minutes). It is fine to not be cooked all the way through.', type: SECTIONS.MAIN, img: [chickenPan, seared, cookedChicken, cookedChickenZoomed] },
-        { step: 'Transfer chicken to the sauce. Simmer until sauce is cooked through (about 30 minutes).', type: SECTIONS.MAIN, img: [chickenSauce1, zoomed1, zoomed2, mixed] },
+        { step: 'Sear chicken until lightly browned (about 3 minutes). It is fine to not be cooked all the way through.', type: SECTIONS.MAIN, img: [chickenPan, seared, cookedChickenZoomed] },
+        { step: 'Transfer chicken to the sauce. Simmer until sauce is cooked through (about 30 minutes).', type: SECTIONS.MAIN, img: [chickenSauce1, mixed] },
         { step: 'Add salt and sugar to taste.', type: SECTIONS.MAIN },
-        { step: 'Serve with rice and naan or roti.', type: SECTIONS.MAIN, img: [plated1, plated2, plated3, plated4] },
+        { step: 'Serve with rice and naan or roti.', type: SECTIONS.MAIN, img: plated1 },
     ]
 };
