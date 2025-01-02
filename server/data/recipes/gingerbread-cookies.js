@@ -7,7 +7,6 @@ const dough6 = '../assets/Products/gingerbread-men-cookies-dough-6.jpeg';
 const dough7 = '../assets/Products/gingerbread-men-cookies-dough-7.jpeg';
 const dough8 = '../assets/Products/gingerbread-men-cookies-dough-8.jpeg';
 const dough9 = '../assets/Products/gingerbread-men-cookies-dough-9.jpeg';
-const dough10 = '../assets/Products/gingerbread-men-cookies-dough-10.jpeg';
 const dough11 = '../assets/Products/gingerbread-men-cookies-dough-11.jpeg';
 
 const cookies1 = '../assets/Products/gingerbread-men-cookies-1.jpeg';
@@ -15,15 +14,10 @@ const cookies2 = '../assets/Products/gingerbread-men-cookies-2.jpeg';
 const cookies3 = '../assets/Products/gingerbread-men-cookies-3.jpeg';
 const cookies4 = '../assets/Products/gingerbread-men-cookies-4.jpeg';
 const cookies5 = '../assets/Products/gingerbread-men-cookies-5.jpeg';
-const cookies6 = '../assets/Products/gingerbread-men-cookies-6.jpeg';
 const cookies7 = '../assets/Products/gingerbread-men-cookies-7.jpeg';
 const cookies8 = '../assets/Products/gingerbread-men-cookies-8.jpeg';
-const cookies9 = '../assets/Products/gingerbread-men-cookies-9.jpeg';
-const cookies10 = '../assets/Products/gingerbread-men-cookies-10.jpeg';
 const cookies11 = '../assets/Products/gingerbread-men-cookies-11.jpeg';
-const cookies12 = '../assets/Products/gingerbread-men-cookies-12.jpeg';
 const cookies13 = '../assets/Products/gingerbread-men-cookies-13.jpeg';
-const cookies14 = '../assets/Products/gingerbread-men-cookies-14.jpeg';
 
 const frosting1 = '../assets/Products/gingerbread-men-cookies-frosting-1.jpeg';
 const frosting2 = '../assets/Products/gingerbread-men-cookies-frosting-2.jpeg';
@@ -91,7 +85,7 @@ module.exports = {
         { step: 'Cut the butter using a pastry blender until it becomes very fine.', type: GINGERBREAD_BATTER, img: dough5 },
         { step: 'Add the molasses and milk to the bowl. Mix on low for about 30 seconds.', type: GINGERBREAD_BATTER, img: [dough6, dough7, dough8] },
         { step: 'Divide the dough into two. Form them into balls.', type: GINGERBREAD_BATTER, img: dough9 },
-        { step: 'Wrap the balls with plastic wrap and refrigerate for 2 hours or overnight. This is to help the dough be less sticky.', type: GINGERBREAD_BATTER, img: [dough10, dough11] },
+        { step: 'Wrap the balls with plastic wrap and refrigerate for 2 hours or overnight. This is to help the dough be less sticky.', type: GINGERBREAD_BATTER, img: dough11 },
 
         { step: 'Preheat the oven to 350ºF.', type: BAKING },
         { step: 'Place silicon baking mats on baking sheets.', type: BAKING, img: cookies2 },
@@ -100,13 +94,13 @@ module.exports = {
         { step: 'Roll out the dough to about 1/4 inch thick.', type: BAKING, img: cookies4 },
         { step: 'Use a cookie cutter to cut out gingerbread men or whatever design you want.', type: BAKING },
         { step: 'Place these cookies on a baking sheet and refrigerate while you prepare the second dough ball.', type: BAKING, img: [cookies5] },
-        { step: 'Bake until the center is set and does not give much when lightly pressed (about 8 to 11 minutes). Avoid overbaking.', type: BAKING, img: [cookies6, cookies8] },
+        { step: 'Bake until the center is set and does not give much when lightly pressed (about 8 to 11 minutes). Avoid overbaking.', type: BAKING, img: cookies8 },
         { step: 'Transfer to a cooling rack and let cool completely before frosting.', type: BAKING, img: cookies7 },
 
         { step: 'In a mixing bowl, combine butter, milk and half of the powdered sugar. Mix until uniform.', type: FROSTING, img: [frosting1, frosting2] },
         { step: 'Add remaining powdered sugar. Mix until uniform.', type: FROSTING, img: [frosting3, frosting4] },
 
-        { step: 'Optionally frost the gingerbread men and enjoy these simple childhood treats.', type: SECTIONS.SERVE, img: [cookies9, cookies10, cookies11, cookies12, cookies14] },
+        { step: 'Optionally frost the gingerbread men and enjoy these simple childhood treats.', type: SECTIONS.SERVE, img: cookies11 },
     ],
     notes: [
         { note: 'I personally prefer this without the frosting.' }
