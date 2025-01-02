@@ -6,7 +6,6 @@ const garlic = '../assets/Products/chinese-green-bean-and-beef-garlic.jpeg';
 const greenOnionPan = '../assets/Products/chinese-green-bean-and-beef-green-onions-in-pan.jpeg';
 const greenOnionsGarlic = '../assets/Products/chinese-green-bean-and-beef-green-onions-with-garlic.jpeg';
 const greenOnions = '../assets/Products/chinese-green-bean-and-beef-green-onions.jpeg';
-const plated1 = '../assets/Products/chinese-green-bean-and-beef-plated-1.jpeg';
 const plated2 = '../assets/Products/chinese-green-bean-and-beef-plated-2.jpeg';
 const beef = '../assets/Products/chinese-green-bean-and-beef-raw-beef.jpeg';
 const sauce = '../assets/Products/chinese-green-bean-and-beef-sauce.jpeg';
@@ -80,6 +79,6 @@ module.exports = {
         { step: 'Re-add the beef and green beans to the wok.', type: SECTIONS.MAIN, img: combined },
         { step: 'Add the sauce. Cook and stir until the sauce thickens (about 1 to 2 minutes).', type: SECTIONS.MAIN, img: combinedZoomed1 },
         { step: 'Season with salt and pepper as desired.', type: SECTIONS.MAIN },
-        { step: 'Serve over rice and enjoy this Chinese stir-fry.', type: SECTIONS.MAIN, img: [plated1, plated2] },
+        { step: 'Serve over rice and enjoy this Chinese stir-fry.', type: SECTIONS.MAIN, img: plated2 },
     ]
 }
