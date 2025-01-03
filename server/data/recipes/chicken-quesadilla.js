@@ -12,7 +12,6 @@ const quesadillas11 = '../assets/Products/chicken-quesadillas-11.jpeg';
 const quesadillas12 = '../assets/Products/chicken-quesadillas-12.jpeg';
 const quesadillas13 = '../assets/Products/chicken-quesadillas-13.jpeg';
 const quesadillas14 = '../assets/Products/chicken-quesadillas-14.jpeg';
-const quesadillas15 = '../assets/Products/chicken-quesadillas-15.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { CHILI_POWDER, SALT, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL, SMALL_YELLOW_ONION, RED_BELL_PEPPERS, GREEN_BELL_PEPPERS, HOT_SAUCE, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, SALSA, GUACAMOLE, SOUR_CREAM, SHARP_CHEDDAR_CHEESE, WHEAT_TORTILLA } = require('./ingredients');
@@ -31,7 +30,7 @@ module.exports = {
     name: 'Chicken Quesadilla',
     img: quesadillas14,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.MEXICAN],
     method: [METHODS.PAN_FRY],
@@ -105,10 +104,10 @@ module.exports = {
         { step: 'Over medium-low heat, add a little butter to make the tortillas crisper.', type: COOK_QUESADILLA },
         { step: 'Place 2 quesadillas in the pan with the folded edge in the center.', type: COOK_QUESADILLA, img: quesadillas11 },
         { step: 'Press tops gently with the back of the spatula. Cheese and other content may ooze out but that\'s okay.', type: COOK_QUESADILLA },
-        { step: 'Cook until the bottom is golden and crisp (about 4 minutes).', type: COOK_QUESADILLA },
-        { step: 'Flip. Cook until the other side is golden and crisp (about 2 minutes).', type: COOK_QUESADILLA, img: quesadillas12 },
+        { step: 'Cook until the bottom is golden and crisp (about 4 minutes).', type: COOK_QUESADILLA, img: quesadillas12 },
+        { step: 'Flip. Cook until the other side is golden and crisp (about 2 minutes).', type: COOK_QUESADILLA },
 
         { step: 'Place cooked quesadilla on a cutting board. Cut the quesadillas into thirds.', type: SECTIONS.SERVE, img: quesadillas13 },
-        { step: 'Serve hot with your favorite toppings.', type: SECTIONS.SERVE, img: quesadillas15 },
+        { step: 'Serve hot with your favorite toppings.', type: SECTIONS.SERVE },
     ]
 };
