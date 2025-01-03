@@ -1,17 +1,21 @@
-// const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const guacamole1 = '../assets/Products/guacamole-1.jpeg';
+const guacamole2 = '../assets/Products/guacamole-2.jpeg';
+const guacamole3 = '../assets/Products/guacamole-3.jpeg';
+const guacamole4 = '../assets/Products/guacamole-4.jpeg';
+const guacamole5 = '../assets/Products/guacamole-5.jpeg';
+
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { AVOCADO, LIME, SALT, ROMA_TOMATO, SMALL_YELLOW_ONION, CILANTRO, GARLIC, CAYENNE_PEPPER } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Guacamole',
     name: 'Guacamole',
-    img: '',
+    img: guacamole5,
     available: true,
+    recommended: true,
     category: [CATEGORIES.DIP],
     genre: [GENRES.MEXICAN],
     method: [METHODS.MIX],
-    protein: [PROTEIN.AVOCADO], // this has a little protein (not a ton)
     type: [TYPES.DIP],
     yields: '4 servings',
     prepTime: '10 m',
@@ -33,10 +37,10 @@ module.exports = {
         { name: 'medium bowl' },
     ],
     directions: [
-        { step: 'Slice the avocados in half and remove the pit.', type: SECTIONS.MAIN },
-        { step: 'In a medium bowl, mash avocado.', type: SECTIONS.MAIN },
-        { step: 'Add the lime juice and salt. Mix.', type: SECTIONS.MAIN },
-        { step: 'Add the garlic, tomatoes, onion, and cilantro. Mix.', type: SECTIONS.MAIN },
+        { step: 'Slice the avocados in half and remove the pit.', type: SECTIONS.MAIN, img: guacamole1 },
+        { step: 'In a medium bowl, mash avocado.', type: SECTIONS.MAIN, img: guacamole2 },
+        { step: 'Add the lime juice and salt. Mix.', type: SECTIONS.MAIN, img: guacamole3 },
+        { step: 'Add the garlic, tomatoes, onion, and cilantro. Mix.', type: SECTIONS.MAIN, img: guacamole4 },
         { step: 'Add the cayenne. Mix.', type: SECTIONS.MAIN },
         { step: 'Cover and chill for 1 hour.', type: SECTIONS.MAIN },
         { step: 'Serve with your favorite chips.', type: SECTIONS.SERVE },
