@@ -326,7 +326,7 @@ const recipes = [
     basilPesto,
     beefRagu,
     bakedZiti, // TODO: add
-    creamyTuscanChickenPasta, // TODO: add
+    creamyTuscanChickenPasta,
     pastaPomodoro,
     pastaAlLimone, // TODO: add
     shrimpScampi, // TODO: add

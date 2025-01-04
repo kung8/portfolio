@@ -655,6 +655,7 @@ const INGREDIENTS = {
         MACARONI_AND_CHEESE: { name: 'macaroni and cheese', category: INGREDIENT_CATEGORY.GRAIN },
         MOCHIKO: { name: 'mochiko', category: INGREDIENT_CATEGORY.GRAIN },
         PAPPARDELLE_NOODLES: { name: 'pappardelle noodles', category: INGREDIENT_CATEGORY.GRAIN },
+        PENNE: { name: 'penne', category: INGREDIENT_CATEGORY.GRAIN },
         ROLLS: { name: 'rolls', category: INGREDIENT_CATEGORY.GRAIN },
         SHORT_GRAINED_RICE: { name: 'short-grained rice', category: INGREDIENT_CATEGORY.GRAIN },
         SOURDOUGH_BREAD: { name: 'sourdough bread', category: INGREDIENT_CATEGORY.GRAIN },
