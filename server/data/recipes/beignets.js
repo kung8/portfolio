@@ -75,8 +75,8 @@ module.exports = {
         { step: 'Once the oil has reached 360ºF, you can start deep frying.', type: DEEP_FRY },
         { step: 'In batches, fry the dough until they puff up and are golden brown (about 1 minute).', type: DEEP_FRY },
         { step: 'Transfer the beignets with a slotted spoon to the dripping station.', type: DEEP_FRY },
-        { step: 'Continue with the remaining beignets.', type: DEEP_FRY },
+        { step: 'Continue deep frying the remaining beignets.', type: DEEP_FRY },
 
-        { step: 'Serve with powdered sugar.', type: SECTIONS.SERVE },
+        { step: 'Serve right away with powdered sugar.', type: SECTIONS.SERVE },
     ]
 };
