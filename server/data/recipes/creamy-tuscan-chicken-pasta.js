@@ -23,7 +23,7 @@ module.exports = {
     method: [METHODS.SIMMER, METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PASTA],
-    yields: ' servings',
+    yields: '6 servings',
     prepTime: '10 m',
     cookTime: '20 m',
     websites: [
