@@ -118,6 +118,7 @@ const indianButterChicken = require("./recipes/indian-butter-chicken");
 const indianChickenTikkaMasala = require("./recipes/indian-chicken-tikka-masala");
 const italianLasagna = require("./recipes/italian-lasagna");
 const italianTurkeyMeatballSpinachTortelliniSoup = require("./recipes/italian-turkey-meatball-spinach-tortellini-soup");
+const jambalaya = require("./recipes/jambalaya");
 const japaneseChickenKatsu = require("./recipes/japanese-chicken-katsu");
 const japaneseCurry = require("./recipes/japanese-curry");
 const japaneseKatsudon = require("./recipes/japanese-katsudon");
@@ -134,6 +135,7 @@ const lasagna = require("./recipes/lasagna");
 const lemonBars = require("./recipes/lemon-bars");
 const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
 const lemonChickenRamen = require("./recipes/lemon-chicken-ramen");
+const lomoSaltado = require("./recipes/lomo-saltado");
 const macaroniSalad = require("./recipes/macaroni-salad");
 const malaysianBlackPepperChicken = require("./recipes/malaysian-black-pepper-chicken");
 const malaysianLemonChicken = require("./recipes/malaysian-lemon-chicken");
@@ -300,6 +302,7 @@ const recipes = [
     //////////////////////////////////////////////////////////////////////// LATIN ///////////////////////////////////////////////////////////////////////  
     // PERUVIAN
     peruvianAjiDeGallina,
+    lomoSaltado,
     peruvianChicken,
 
     // BRAZILIAN
@@ -408,6 +411,7 @@ const recipes = [
     sourdoughBread,
     hawaiianHaystacks,
     hospitalityChicken,
+    jambalaya, 
     cajunShrimp, // TODO: add
     jumboShrimpParmesan, // TODO: add
     garlicShrimp, // TODO: add

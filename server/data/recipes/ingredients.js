@@ -283,6 +283,7 @@ const INGREDIENTS = {
     },
     CONDIMENTS: {
         AIOLI_SAUCE: { name: 'aioli sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        AJI_AMARILLO_PASTE: { name: 'aji amarillo paste', category: INGREDIENT_CATEGORY.CONDIMENTS },
         APRICOT_JAM: { name: 'apricot jam', category: INGREDIENT_CATEGORY.CONDIMENTS },
         APRICOT_JELLY: { name: 'apricot jelly', category: INGREDIENT_CATEGORY.CONDIMENTS },
         ASIAN_CHILI_GARLIC_SAUCE: { name: 'Asian chili garlic sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
@@ -758,6 +759,7 @@ const INGREDIENTS = {
         WINDEX_CLEANER: { name: 'windex cleaner', category: INGREDIENT_CATEGORY.HOUSEWARES },
     },
     MEAT: {
+        ANDOUILLE_SAUSAGE: { name: 'andouille sausage', category: INGREDIENT_CATEGORY.MEAT },
         BEEF: { name: 'beef', category: INGREDIENT_CATEGORY.MEAT },
         BEEF_CHUCK_ROAST: { name: 'beef chuck roast', category: INGREDIENT_CATEGORY.MEAT },
         BEEF_ANGUS_EYE_ROUND_ROAST: { name: 'beef angus eye round roast', category: INGREDIENT_CATEGORY.MEAT },
@@ -1035,6 +1037,7 @@ const INGREDIENTS = {
         FISH_STICKS: { name: 'fish sticks', category: INGREDIENT_CATEGORY.SEAFOOD },
         FLOUNDER: { name: 'flounder', category: INGREDIENT_CATEGORY.SEAFOOD },
         IMITATION_CRAB: { name: 'imitation crab', category: INGREDIENT_CATEGORY.SEAFOOD },
+        LARGE_SHRIMP: { name: 'large shrimp', category: INGREDIENT_CATEGORY.SEAFOOD },
         LOBSTER: { name: 'lobster', category: INGREDIENT_CATEGORY.SEAFOOD },
         MAHI_MAHI: { name: 'mahi mahi', category: INGREDIENT_CATEGORY.SEAFOOD },
         MUSSELS: { name: 'mussels', category: INGREDIENT_CATEGORY.SEAFOOD },
@@ -1258,6 +1261,7 @@ const INGREDIENTS = {
         BASIL: { name: 'basil', category: INGREDIENT_CATEGORY.SPICES },
         BAY_LEAVES: { name: 'bay leaves', category: INGREDIENT_CATEGORY.SPICES },
         BLACK_PEPPER: { name: 'black pepper', category: INGREDIENT_CATEGORY.SPICES },
+        CAJUN_SEASONING: { name: 'cajun seasoning', category: INGREDIENT_CATEGORY.SPICES },
         CAROM_SEEDS: { name: 'carom seeds', category: INGREDIENT_CATEGORY.SPICES },
         CARDAMOM: { name: 'cardamom', category: INGREDIENT_CATEGORY.SPICES },
         CARDAMOM_PODS: { name: 'cardamom pods', category: INGREDIENT_CATEGORY.SPICES },
