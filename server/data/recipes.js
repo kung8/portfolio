@@ -17,6 +17,7 @@ const beefAndBeanChimichangas = require("./recipes/beef-and-bean-chimichangas");
 const beefRagu = require("./recipes/beef-ragu");
 const beefStroganoff = require("./recipes/beef-stroganoff");
 const beefTacos = require("./recipes/beef-tacos");
+const beignets = require("./recipes/beignets");
 const bibimbap = require("./recipes/bibimbap");
 const bigMac = require("./recipes/big-mac");
 const biscoffCookiePie = require("./recipes/biscoff-cookie-pie");
@@ -355,6 +356,7 @@ const recipes = [
     russianBeefStroganoff, // TODO: add (and determine if this is better than beefStroganoff)
 
     // FRENCH
+    beignets,
     greenBeanAlmondine,
     chickenFrancese, // TODO: add
     bearnaiseSauce, // TODO: add
