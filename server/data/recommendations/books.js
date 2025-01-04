@@ -25,6 +25,44 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: IN_PROGRESS,
+            title: "Impact Players",
+            author: ["Liz Wiseman"],
+            source: ["Company Gifted Book"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Anne of Green Gables",
+            author: ["Lucy Maud Montgomery"],
+            source: ["Referenced in A Tree Grows in Brooklyn"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
             date: '12/26/2024',
             title: "The Emperor's Soul",
             author: ["Brandon Sanderson"],
@@ -3141,7 +3179,7 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: NO_DATE,
+            date: IN_PROGRESS,
             title: "A Tree Grows in Brooklyn",
             author: ["Betty Smith"],
             source: ["online"],
