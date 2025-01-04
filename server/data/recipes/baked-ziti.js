@@ -34,7 +34,7 @@ module.exports = {
         { ...ZITI, amount: '1 lb', additionalDetails: '', section: PASTA_SECTION },
 
         { ...ITALIAN_SAUSAGE, amount: '1 1/2 lbs', additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
-        { ...GARLIC, amount: '4 cloves', additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
+        { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', section: CASSEROLE_MIXTURE_SECTION },
         { ...CRUSHED_TOMATOES, amount: '28 oz', additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
         { ...SALT, amount: '1 tsp', additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
         { ...WHITE_SUGAR, amount: '1 1/2 tsp', additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
