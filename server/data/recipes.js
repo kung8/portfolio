@@ -77,6 +77,8 @@ const chocolateMousse = require("./recipes/chocolate-mousse");
 const churros = require("./recipes/churros");
 const cinnamonRolls = require("./recipes/cinnamon-rolls");
 const coleslaw = require("./recipes/coleslaw");
+const crabCakes = require("./recipes/crab-cakes");
+const crabRangoon = require("./recipes/crab-rangoon");
 const creamPuffs = require("./recipes/cream-puffs");
 const creamyCornCasserole = require("./recipes/creamy-corn-casserole");
 const creamyTuscanChickenPasta = require("./recipes/creamy-tuscan-chicken-pasta");
@@ -278,6 +280,7 @@ const recipes = [
     cabbageStirFry,
     chineseBao,
     potstickers,
+    crabRangoon, // TODO: add
 
 
     // SINGAPOREAN
@@ -408,6 +411,7 @@ const recipes = [
     cajunShrimp, // TODO: add
     jumboShrimpParmesan, // TODO: add
     garlicShrimp, // TODO: add
+    crabCakes, // TODO: add
     garlicChickenWithHerbs,
     bakedChicken,
     bakedLemonChicken,
