@@ -491,7 +491,7 @@ const recipes = [
     creamPuffs,
     eclair,
     cremeBrulee,
-    caramelPopcorn, // TODO: add
+    caramelPopcorn,
     popcornBalls,
     chocolateMousse,
     caramelApples,
