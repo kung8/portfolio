@@ -453,7 +453,7 @@ const recipes = [
     biscuitsAndGravy,
     breakfastBurrito, // TODO: add
     breakfastSandwich,
-    blt, // TODO: add
+    blt,
     scrambledEggs,
     hardBoiledEggs,
     americanOmelette,
