@@ -317,7 +317,7 @@ const recipes = [
     cafeRioBowl,
     beefTacos,
     tacoInABag,
-    mexicanChickenBake, // TODO: add
+    mexicanChickenBake, // TODO: find recipe
     guacamole,
 
     ////////////////////////////////////////////////////////////////////// EUROPEAN //////////////////////////////////////////////////////////////////////  
@@ -329,13 +329,13 @@ const recipes = [
     chickenCordonBleu,
     porkMilanese, // TODO: add
     chickenAlfredo,
-    chickenParmesan, // TODO: add
+    chickenParmesan, // TODO: find recipe
     basilPesto,
     beefRagu,
     bakedZiti,
     creamyTuscanChickenPasta,
     pastaPomodoro,
-    pastaAlLimone, // TODO: add
+    pastaAlLimone,
     shrimpScampi, // TODO: add
     potatoGnocchi,
     ravioli,
@@ -434,7 +434,7 @@ const recipes = [
     //////////////////////////////////////////////////////////////////////// SNACK/APPETIZERS ///////////////////////////////////////////////////////////////////////
     pigsInABlanket,
     chickenStuffedCrescentRolls,
-    southwestSalad, // TODO: add
+    southwestSalad, // TODO: find recipe
     cheeseballs,
     garlicBreadsticks,
     fancyLunchables,

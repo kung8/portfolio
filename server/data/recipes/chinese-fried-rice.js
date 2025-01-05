@@ -4,7 +4,7 @@ const { JASMINE_RICE, COLD_WATER, GREEN_ONIONS, CARROTS, FROZEN_CORN, FROZEN_PEA
 
 const RICE_SECTION = 'Rice';
 const VEGGIES_SECTION = 'Veggies';
-const EGG_SECTION = 'Egg';
+const EGGS_SECTION = 'Eggs';
 const FRIED_RICE_SECTION = 'Fried Rice';
 const SAUCE_SECTION = 'Sauce';
 
@@ -41,8 +41,8 @@ module.exports = {
         { ...FROZEN_CORN, amount: '2 oz', additionalDetails: '', section: VEGGIES_SECTION },
         { ...FROZEN_PEAS, amount: '2 oz', additionalDetails: '', section: VEGGIES_SECTION },
         { ...COLD_WATER, amount: '1/3 c', additionalDetails: '', section: VEGGIES_SECTION },
-        { ...EGGS, amount: '4', additionalDetails: '', section: EGG_SECTION },
-        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: EGG_SECTION },
+        { ...EGGS, amount: '4', additionalDetails: '', section: EGGS_SECTION },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: EGGS_SECTION },
         { ...GREEN_ONIONS, amount: '2', additionalDetails: 'diced green parts only', section: FRIED_RICE_SECTION },
         { ...VEGETABLE_OIL, amount: '2 Tbsp', additionalDetails: '', section: FRIED_RICE_SECTION },
 
