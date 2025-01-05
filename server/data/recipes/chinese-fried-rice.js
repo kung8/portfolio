@@ -1,36 +1,96 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { } = require('./ingredients');
+const { JASMINE_RICE, COLD_WATER, GREEN_ONIONS, CARROTS, FROZEN_CORN, FROZEN_PEAS, EGGS, SALT, VEGETABLE_OIL, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, WHITE_SUGAR, CHICKEN_BOUILLON } = require('./ingredients');
+
+const RICE_SECTION = 'Rice';
+const VEGGIES_SECTION = 'Veggies';
+const EGG_SECTION = 'Egg';
+const FRIED_RICE_SECTION = 'Fried Rice';
+const SAUCE_SECTION = 'Sauce';
+
+const COOK_RICE = 'Cook Rice';
+const PREP_VEGGIES = 'Prep Veggies';
+const PREP_SAUCE = 'Prep Sauce';
+const FLUFF_RICE = 'Fluff Rice';
+const COOK_EGGS = 'Cook Eggs';
+const STIR_FRY = 'Stir Fry';
 
 module.exports = {
     wip: true,
     cardName: 'Chinese Fried Rice',
     name: 'Chinese Fried Rice',
     img: '',
-    available: false,
+    available: true,
     recommended: false,
-    category: [],
-    genre: [],
-    method: [],
-    protein: [],
-    type: [],
-    yields: ' servings',
-    prepTime: 'm',
-    cookTime: 'm',
+    category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
+    genre: [GENRES.CHINESE],
+    method: [METHODS.STIR_FRY],
+    protein: [PROTEIN.EGG],
+    type: [TYPES.RICE],
+    yields: '4 servings',
+    prepTime: '5 m',
+    cookTime: '20 m',
     websites: [
         { label: 'Egg Fried Rice', link: 'https://www.madewithlau.com/recipes/egg-fried-rice' }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...GENRES, amount: '', additionalDetails: '', section: '' },
+        { ...JASMINE_RICE, amount: '2 c', additionalDetails: 'uncooked', section: RICE_SECTION },
+        { ...COLD_WATER, amount: '2 c', additionalDetails: '', section: RICE_SECTION },
+        { ...CARROTS, amount: '2 oz', additionalDetails: 'diced', section: VEGGIES_SECTION },
+        { ...FROZEN_CORN, amount: '2 oz', additionalDetails: '', section: VEGGIES_SECTION },
+        { ...FROZEN_PEAS, amount: '2 oz', additionalDetails: '', section: VEGGIES_SECTION },
+        { ...COLD_WATER, amount: '1/3 c', additionalDetails: '', section: VEGGIES_SECTION },
+        { ...EGGS, amount: '4', additionalDetails: '', section: EGG_SECTION },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: EGG_SECTION },
+        { ...GREEN_ONIONS, amount: '2', additionalDetails: 'diced green parts only', section: FRIED_RICE_SECTION },
+        { ...VEGETABLE_OIL, amount: '2 Tbsp', additionalDetails: '', section: FRIED_RICE_SECTION },
+
+        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: SAUCE_SECTION },
+        { ...DARK_SOY_SAUCE, amount: '1 tsp', additionalDetails: '', section: SAUCE_SECTION },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SAUCE_SECTION },
+        { ...WHITE_SUGAR, amount: '1/2 tsp', additionalDetails: '', section: SAUCE_SECTION },
+        { ...CHICKEN_BOUILLON, amount: '1 tsp', additionalDetails: '', section: SAUCE_SECTION },
+        { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SAUCE_SECTION },
     ],
     appliances: [
-        { name: '' },
+        { name: 'rice cooker' },
+        { name: 'stove' },
     ],
     supplies: [
-        { name: '' },
+        { name: '2 medium bowls' },
+        { name: 'small bowl' },
+        { name: 'chopsticks' },
+        { name: 'wok' },
+        { name: 'spatula' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: 'Wash and cook the rice in a rice cooker.', type: COOK_RICE },
+
+        { step: 'In a medium bowl, combine the carrots, corn and peas.', type: PREP_VEGGIES },
+        { step: 'Fill the bowl with water and microwave for 2 minutes.', type: PREP_VEGGIES },
+        { step: 'Drain and set aside.', type: PREP_VEGGIES },
+
+        { step: 'In a small bowl, combine the "Sauce" section ingredients.', type: PREP_SAUCE },
+
+        { step: 'Leave the lid on the rice cooker after it finishes cooking for a few minutes.', type: FLUFF_RICE },
+        { step: 'Remove the lid and use chopsticks to stir and lift up the rice. This releases steam and helps prevent sticking.', type: FLUFF_RICE },
+
+        { step: 'In a medium bowl, combine the eggs and salt. Beat and set aside for a few minutes.', type: COOK_EGGS },
+        { step: 'Over high heat, heat a wok.', type: COOK_EGGS },
+        { step: 'Turn down the heat to low and add oil to a wok. Spread the oil to coat the wok.', type: COOK_EGGS },
+        { step: 'Add eggs. Lightly stir and cook for 20 to 30 seconds.', type: COOK_EGGS },
+        { step: 'Add rice on top of the eggs.', type: COOK_EGGS },
+        { step: 'Stir fry and break up any clumps (for about 2 minutes). Make sure to get to the bottom and the sides to prevent burning and sticking.', type: COOK_EGGS },
+        { step: 'Lightly press down on the rice.', type: COOK_EGGS },
+
+        { step: 'Turn up the heat to high.', type: STIR_FRY },
+        { step: 'Add the veggies. Stir fry for 2 to 3 minutes.', type: STIR_FRY },
+        { step: 'Add the sauce. Stir fry for another 2 to 3 minutes.', type: STIR_FRY },
+        { step: 'Add the oil and green onions. Stir fry for another minute.', type: STIR_FRY },
+        { step: 'Turn the heat off.', type: STIR_FRY },
+        { step: 'Taste and add any additional seasonings.', type: STIR_FRY },
+
+        { step: 'Serve warm and enjoy this simple Chinese cuisine.', type: SECTIONS.SERVE },
     ]
 };

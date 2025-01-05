@@ -275,7 +275,7 @@ const recipes = [
     chineseCashewChicken,
     chineseGreenBeanBeef,
     chineseBroccoliBeef,
-    chineseFriedRice, // TODO: add
+    chineseFriedRice,
     chineseSourChickenSoup,
     pepperSteakStirFry,
     lemonChickenOnLettuce,
