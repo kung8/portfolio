@@ -1,4 +1,17 @@
-// const example = '../assets/Products/example.jpeg';
+const tomatoes1 = '../assets/Products/vietnamese-stuffed-tomatoes-1.jpeg';
+const tomatoes2 = '../assets/Products/vietnamese-stuffed-tomatoes-2.jpeg';
+const tomatoes3 = '../assets/Products/vietnamese-stuffed-tomatoes-3.jpeg';
+const tomatoes4 = '../assets/Products/vietnamese-stuffed-tomatoes-4.jpeg';
+const tomatoes5 = '../assets/Products/vietnamese-stuffed-tomatoes-5.jpeg';
+const tomatoes6 = '../assets/Products/vietnamese-stuffed-tomatoes-6.jpeg';
+const tomatoes7 = '../assets/Products/vietnamese-stuffed-tomatoes-7.jpeg';
+const tomatoes8 = '../assets/Products/vietnamese-stuffed-tomatoes-8.jpeg';
+const tomatoes9 = '../assets/Products/vietnamese-stuffed-tomatoes-9.jpeg';
+const tomatoes10 = '../assets/Products/vietnamese-stuffed-tomatoes-10.jpeg';
+const tomatoes11 = '../assets/Products/vietnamese-stuffed-tomatoes-11.jpeg';
+const tomatoes12 = '../assets/Products/vietnamese-stuffed-tomatoes-12.jpeg';
+const tomatoes13 = '../assets/Products/vietnamese-stuffed-tomatoes-13.jpeg';
+
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { VINE_TOMATOES, CORNSTARCH, GROUND_PORK, MEDIUM_YELLOW_ONION, GARLIC, FISH_SAUCE, SALT, WHITE_SUGAR, BLACK_PEPPER, VEGETABLE_OIL, LIGHT_SOY_SAUCE, COLD_WATER, GREEN_ONIONS } = require('./ingredients');
 
@@ -6,10 +19,9 @@ const FILLING_SECTION = 'Filling';
 const TOMATOES_SECTION = 'Tomatoes';
 
 module.exports = {
-    wip: true,
     cardName: 'Stuffed Tomatoes',
     name: 'Vietnamese Stuffed Tomatoes',
-    img: '',
+    img: tomatoes13,
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -59,23 +71,23 @@ module.exports = {
         { name: 'small bowl' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Filling" ingredients.', type: FILLING_SECTION },
-        { step: 'With a spoon, cut out the tomato cores.', type: SECTIONS.SAUCE },
-        { step: 'Place the cores and skins in two separate medium bowls.', type: SECTIONS.SAUCE },
+        { step: 'In a mixing bowl, combine the "Filling" ingredients.', type: FILLING_SECTION, img: tomatoes3 },
+        { step: 'Halve the tomatoes. With a spoon, cut out the tomato cores.', type: SECTIONS.SAUCE, img: tomatoes1 },
+        { step: 'Place the cores and skins in two separate medium bowls.', type: SECTIONS.SAUCE, img: tomatoes2 },
         { step: 'In the medium bowl with the tomato cores, add the "Sauce" ingredients and combine. Set aside.', type: SECTIONS.SAUCE },
         { step: 'Sprinkle cornstarch in the middle of each tomato skin.', type: TOMATOES_SECTION },
-        { step: 'Rub the cornstarch with your fingers.', type: TOMATOES_SECTION },
-        { step: 'Tightly pack the filling into each tomato skin.', type: TOMATOES_SECTION },
+        { step: 'Rub the cornstarch with your fingers.', type: TOMATOES_SECTION, img: tomatoes4 },
+        { step: 'Tightly pack the filling into each tomato skin.', type: TOMATOES_SECTION, img: tomatoes5 },
         { step: 'Sprinkle a pinch of cornstarch on the top of each stuffed tomatoes.', type: TOMATOES_SECTION },
         { step: 'Over medium-high heat, heat up oil in a frying pan.', type: SECTIONS.MAIN },
-        { step: 'Place the stuffed tomatoes, meat-side down, in the pan. Cook until the meat has browned but not burned (about 3 to 4 minutes).', type: SECTIONS.MAIN },
-        { step: 'Flip the stuffed tomatoes. Let it cook for 2 minutes.', type: SECTIONS.MAIN },
-        { step: 'Flip the stuffed tomatoes back over.', type: SECTIONS.MAIN },
-        { step: 'Add the sauce. Make sure the meat is immersed in the sauce.', type: SECTIONS.MAIN },
+        { step: 'Place the stuffed tomatoes, meat-side down, in the pan. Cook until the meat has browned but not burned (about 3 to 4 minutes).', type: SECTIONS.MAIN, img: tomatoes6 },
+        { step: 'Flip the stuffed tomatoes. Let it cook for 2 minutes.', type: SECTIONS.MAIN, img: tomatoes7 },
+        { step: 'Flip the stuffed tomatoes back over.', type: SECTIONS.MAIN, img: tomatoes8 },
+        { step: 'Add the sauce. Make sure the meat is submerged in the sauce.', type: SECTIONS.MAIN, img: tomatoes9 },
         { step: 'Turn down the heat to medium-low heat. Let it simmer for 2 to 3 minutes.', type: SECTIONS.MAIN },
         { step: 'Take one of the stuffed tomatoes and cut into the meat to see if the meat is cooked. Continue cooking as needed.', type: SECTIONS.MAIN },
-        { step: 'In a small bowl, combine the water and cornstarch.', type: SECTIONS.MAIN },
-        { step: 'Add this thickening mixture to the sauce. Mix until it has incorporated into the sauce and the sauce has thickened.', type: SECTIONS.MAIN },
-        { step: 'Pour sauce over the stuffed tomatoes and top with green onions. Enjoy this simple Southeast Asian cuisine with some jasmine rice.', type: SECTIONS.SERVE },
+        { step: 'In a small bowl, combine the water and cornstarch.', type: SECTIONS.MAIN, img: tomatoes10 },
+        { step: 'Add this thickening mixture to the sauce. Mix until it has incorporated into the sauce and the sauce has thickened.', type: SECTIONS.MAIN, img: tomatoes11 },
+        { step: 'Pour sauce over the stuffed tomatoes and top with green onions. Enjoy this simple Southeast Asian cuisine with some jasmine rice.', type: SECTIONS.SERVE, img: tomatoes12 },
     ]
 };
