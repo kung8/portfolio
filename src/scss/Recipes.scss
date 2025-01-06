@@ -296,13 +296,21 @@
                 transform: translate(0, 8px);
                 padding-left: 2px;
                 border-radius: 4px;
+                width: 20px;
+                height: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-                .heart,
-                .wip {
-                    font-size: 20px;
+                .heart {
+                    font-size: 18px;
                     @include down($mobile) {
                         font-size: 16px;
                     }
+                }
+
+                .wip {
+                    font-size: 16px;
                 }
             }
         }
