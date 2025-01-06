@@ -311,6 +311,9 @@
 
                 .wip {
                     font-size: 16px;
+                    @include down($mobile) {
+                        font-size: 15px;
+                    }
                 }
             }
         }
