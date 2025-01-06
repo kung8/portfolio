@@ -1,4 +1,4 @@
-const cookedZoomed = '../assets/Products/oatmeal-raisin-cookies-cooked-zoomed.jpeg';
+const cookedZoomed = '../assets/Products/oatmeal-raisin-cookies-zoomed.jpeg';
 const cooled = '../assets/Products/oatmeal-raisin-cookies-cooled.jpeg';
 const dry = '../assets/Products/oatmeal-raisin-cookies-dry-ingredients.jpeg';
 const liquid = '../assets/Products/oatmeal-raisin-cookies-liquid-added.jpeg';
