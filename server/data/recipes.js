@@ -231,7 +231,7 @@ const recipes = [
     yellowCurry,
     chiveCakes,
     mangoStickyRice,
-    thaiMassamanCurry, // TODO: add
+    thaiMassamanCurry, // TODO: find recipe
 
     // INDIAN
     chickenBiryani,
@@ -240,7 +240,7 @@ const recipes = [
     tandooriChicken,
     naan,
     samosa,
-    mangoChutney, // TODO: add
+    mangoChutney,
 
     // VIETNAMESE
     vietnamesePho,
