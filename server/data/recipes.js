@@ -327,7 +327,7 @@ const recipes = [
     lasagna, // TODO: add (and determine if this is better than italianLasagna)
     pizza,
     chickenCordonBleu,
-    porkMilanese, // TODO: add
+    porkMilanese,
     chickenAlfredo,
     chickenParmesan, // TODO: find recipe
     basilPesto,
@@ -336,7 +336,7 @@ const recipes = [
     creamyTuscanChickenPasta,
     pastaPomodoro,
     pastaAlLimone,
-    shrimpScampi, // TODO: add
+    shrimpScampi,
     potatoGnocchi,
     ravioli,
     italianTurkeyMeatballSpinachTortelliniSoup,

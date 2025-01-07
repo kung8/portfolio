@@ -1,36 +1,64 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { } = require('./ingredients');
+const { ANGEL_HAIR_PASTA, UNSALTED_BUTTER, SHRIMP, GARLIC, WHITE_WINE, BLACK_PEPPER, PARMESAN_CHEESE, PARSLEY, LEMON } = require('./ingredients');
+
+const NOODLE_SECTION = 'Noodles';
+const SAUCE_SECTION = 'Sauce';
+
+const COOK_NOODLES = 'Cook Noodles';
+const COOK_SAUCE = 'Cook Sauce';
+const COMBINE = 'Combine';
 
 module.exports = {
     wip: true,
     cardName: 'Shrimp Scampi',
     name: 'Shrimp Scampi',
     img: '',
-    available: false,
+    available: true,
     recommended: false,
-    category: [],
-    genre: [],
+    category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
+    genre: [GENRES.ITALIAN],
     method: [],
-    protein: [],
-    type: [],
-    yields: ' servings',
-    prepTime: 'm',
-    cookTime: 'm',
+    protein: [PROTEIN.SHRIMP],
+    type: [TYPES.PASTA],
+    yields: '4 servings',
+    prepTime: '15 m',
+    cookTime: '15 m',
     websites: [
         { label: 'Shrimp Scampi', link: 'https://www.allrecipes.com/recipe/19508/shrimp-scampi/' }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...GENRES, amount: '', additionalDetails: '', section: '' },
+        { ...ANGEL_HAIR_PASTA, amount: '8 oz', additionalDetails: '', section: NOODLE_SECTION },
+        { ...UNSALTED_BUTTER, amount: '1/2 c', additionalDetails: '', section: SAUCE_SECTION },
+        { ...SHRIMP, amount: '1 lb', additionalDetails: 'peeled and deveined', section: SAUCE_SECTION },
+        { ...GARLIC, amount: '4 cloves', additionalDetails: '', section: SAUCE_SECTION },
+        { ...WHITE_WINE, amount: '1 c', additionalDetails: '', section: SAUCE_SECTION },
+        { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: SAUCE_SECTION },
+        { ...PARMESAN_CHEESE, amount: '3/4 c', additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
+        { ...PARSLEY, amount: '1 tablespoon', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...LEMON, amount: '1', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: '' },
+        { name: 'stove' },
     ],
     supplies: [
-        { name: '' },
+        { name: 'large pot' },
+        { name: 'mixing bowl' },
+        { name: 'large saucepan' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: 'Over medium-high heat, bring a large pot of salted water to a boil.', type: COOK_NOODLES },
+        { step: 'Add angel hair pasta and cook until al dente (about 4 to 5 minutes).', type: COOK_NOODLES },
+        { step: 'Drain. Transfer to a mixing bowl.', type: COOK_NOODLES },
+
+        { step: 'Over medium heat, melt butter in a saucepan.', type: COOK_SAUCE },
+        { step: 'Add shrimp and garlic. Cook and stir until shrimp turns pink (about 3 to 5 minutes).', type: COOK_SAUCE },
+        { step: 'Add white wine and black pepper. Bring to a boil.', type: COOK_SAUCE },
+        { step: 'Cook and stir for 30 seconds.', type: COOK_SAUCE },
+
+        { step: 'Pour the sauce over the pasta and mix.', type: COMBINE },
+
+        { step: 'Enjoy this taste of Italy topped with parsley, parmesan and lemon wedges.', type: SECTIONS.SERVE },
     ]
 };
