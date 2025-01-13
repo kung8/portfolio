@@ -19,7 +19,7 @@ const cakes18 = '../assets/Products/chive-cakes-18.jpeg';
 const cakes19 = '../assets/Products/chive-cakes-19.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
-const { TAPIOCA_STARCH, HOT_WATER, VEGETABLE_OIL, SALT, POWDERED_SUGAR, BAKING_SODA, PEANUT_OIL, DARK_SOY_SAUCE, WHITE_VINEGAR, RED_PEPPER_FLAKES, GARLIC, RICE_FLOUR, GLUTINOUS_RICE_FLOUR, GARLIC_CHIVES, LUKEWARM_WATER } = require('./ingredients');
+const { TAPIOCA_STARCH, HOT_WATER, VEGETABLE_OIL, SALT, POWDERED_SUGAR, BAKING_SODA, PEANUT_OIL, DARK_SOY_SAUCE, WHITE_VINEGAR, RED_PEPPER_FLAKES, GARLIC, RICE_FLOUR, GLUTINOUS_RICE_FLOUR, GARLIC_CHIVES, LUKEWARM_WATER, UNSALTED_PEANUTS } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
 const CHIVE_SECTION = 'Chive';
@@ -60,6 +60,7 @@ module.exports = {
         { ...POWDERED_SUGAR, amount: '7/8 c', additionalDetails: '', section: CHIVE_SECTION },
         { ...BAKING_SODA, amount: '1 Tbsp', additionalDetails: '', section: CHIVE_SECTION },
         { ...PEANUT_OIL, amount: '2/3 c', additionalDetails: '', section: CHIVE_SECTION },
+        { ...UNSALTED_PEANUTS, amount: '1/2 c', additionalDetails: 'chopped', section: CHIVE_SECTION },
 
         { ...DARK_SOY_SAUCE, amount: '3/4 c', additionalDetails: '', section: DIPPING_SAUCE_SECTION },
         { ...WHITE_VINEGAR, amount: '1/2 c', additionalDetails: '', section: DIPPING_SAUCE_SECTION },
@@ -107,5 +108,9 @@ module.exports = {
         { step: 'Pan fry until both sides are browned.', type: COOK_SECTION, img: cakes18 },
 
         { step: 'Enjoy these chive cakes with the dipping sauce.', type: SECTIONS.SERVE },
+    ], 
+    notes: [
+        { note: 'The dough was difficult to get right. I still need to work on it. I had to add a lot of rice flour to get it to a workable consistency.', },
+        { note: 'After about 10 minutes of steaming the dough never became translucent, so I need to experiment more with that.', },
     ]
 };
