@@ -1,4 +1,23 @@
-// const example = '../assets/Products/example.jpeg';
+const cakes1 = '../assets/Products/chive-cakes-1.jpeg';
+const cakes2 = '../assets/Products/chive-cakes-2.jpeg';
+const cakes3 = '../assets/Products/chive-cakes-3.jpeg';
+const cakes4 = '../assets/Products/chive-cakes-4.jpeg';
+const cakes5 = '../assets/Products/chive-cakes-5.jpeg';
+const cakes6 = '../assets/Products/chive-cakes-6.jpeg';
+const cakes7 = '../assets/Products/chive-cakes-7.jpeg';
+const cakes8 = '../assets/Products/chive-cakes-8.jpeg';
+const cakes9 = '../assets/Products/chive-cakes-9.jpeg';
+const cakes10 = '../assets/Products/chive-cakes-10.jpeg';
+const cakes11 = '../assets/Products/chive-cakes-11.jpeg';
+const cakes12 = '../assets/Products/chive-cakes-12.jpeg';
+const cakes13 = '../assets/Products/chive-cakes-13.jpeg';
+const cakes14 = '../assets/Products/chive-cakes-14.jpeg';
+const cakes15 = '../assets/Products/chive-cakes-15.jpeg';
+const cakes16 = '../assets/Products/chive-cakes-16.jpeg';
+const cakes17 = '../assets/Products/chive-cakes-17.jpeg';
+const cakes18 = '../assets/Products/chive-cakes-18.jpeg';
+const cakes19 = '../assets/Products/chive-cakes-19.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
 const { TAPIOCA_STARCH, HOT_WATER, VEGETABLE_OIL, SALT, POWDERED_SUGAR, BAKING_SODA, PEANUT_OIL, DARK_SOY_SAUCE, WHITE_VINEGAR, RED_PEPPER_FLAKES, GARLIC, RICE_FLOUR, GLUTINOUS_RICE_FLOUR, GARLIC_CHIVES, LUKEWARM_WATER } = require('./ingredients');
 
@@ -11,10 +30,9 @@ const ASSEMBLE_CHIVE_CAKES_SECTION = 'Assemble Chive Cakes';
 const COOK_SECTION = 'Cook';
 
 module.exports = {
-    wip: true,
     cardName: 'Chive Cakes',
     name: 'Chive Cakes (Khanom Gui Chai)',
-    img: '',
+    img: cakes19,
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -62,33 +80,31 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'In a stand mixer, combine the "Chive" ingredients.', type: PREP_CHIVE_FILLING },
-        { step: 'Beat on high for 2 minutes.', type: PREP_CHIVE_FILLING },
-        { step: 'Drain the chives. Set aside.', type: PREP_CHIVE_FILLING },
+        { step: 'In a mixing bowl, combine the "Chive" ingredients.', type: PREP_CHIVE_FILLING, img: [cakes6, cakes7, cakes8] },
+        { step: 'Drain the chives. Set aside.', type: PREP_CHIVE_FILLING, img: [cakes9, cakes10] },
 
         { step: 'Over low heat, combine all the "Sauce" ingredients except the red pepper flakes and the garlic in a saucepan.', type: PREP_DIPPING_SAUCE_SECTION },
         { step: 'Heat until the salt and sugar dissolves. Set aside.', type: PREP_DIPPING_SAUCE_SECTION },
         { step: 'Add red pepper flakes and garlic.', type: PREP_DIPPING_SAUCE_SECTION },
 
-        { step: 'In a stand mixer, combine the rice flours and 2/3 of the tapioca starch.', type: DOUGH_SECTION },
-        { step: 'Add the boiling water.', type: DOUGH_SECTION },
-        { step: 'Beat on high until it has a smooth consistency and is glue-like.', type: DOUGH_SECTION },
+        { step: 'In a stand mixer, combine the rice flours and 2/3 of the tapioca starch.', type: DOUGH_SECTION, img: cakes1 },
+        { step: 'Add the boiling water.', type: DOUGH_SECTION, img: cakes2 },
+        { step: 'Beat on high until it has a smooth consistency and is glue-like.', type: DOUGH_SECTION, img: cakes3 },
         { step: 'Set bowl aside to cool.', type: DOUGH_SECTION },
-        { step: 'Once it has cooled, add oil and the remaining tapioca starch. Beat on low until it is mixed.', type: DOUGH_SECTION },
-        { step: 'With the mixer, slowly add water and mix until the dough does not bounce back when lightly pressing your finger (for about 3 minutes).', type: DOUGH_SECTION },
+        { step: 'Once it has cooled, add oil and the remaining tapioca starch. Beat on low until it is mixed.', type: DOUGH_SECTION, img: cakes4 },
+        { step: 'With the mixer, slowly add water and mix until the dough does not bounce back when lightly pressing your finger (for about 3 minutes).', type: DOUGH_SECTION, img: cakes5 },
 
-        { step: 'On a clean surface, dust it with rice flour.', type: ASSEMBLE_CHIVE_CAKES_SECTION },
-        { step: 'Take a portion of dough and roll it out into a disc (1/2 inch thick, 2 3/4 inch wide).', type: ASSEMBLE_CHIVE_CAKES_SECTION },
-        { step: 'Place a heaping spoonful of chive filling in the center of the disc.', type: ASSEMBLE_CHIVE_CAKES_SECTION },
-        { step: 'Bring up the sides and seal the goodness in.', type: ASSEMBLE_CHIVE_CAKES_SECTION },
+        { step: 'On a clean surface, dust it with rice flour. I had to add about a cup of rice flour because it was still very sticky.', type: ASSEMBLE_CHIVE_CAKES_SECTION },
+        { step: 'Take a portion of dough and roll it out into a disc (1/2 inch thick, 2 3/4 inch wide).', type: ASSEMBLE_CHIVE_CAKES_SECTION, img: cakes11 },
+        { step: 'Place a heaping spoonful of chive filling in the center of the disc.', type: ASSEMBLE_CHIVE_CAKES_SECTION, img: cakes12 },
+        { step: 'Bring up the sides and seal the goodness in.', type: ASSEMBLE_CHIVE_CAKES_SECTION, img: cakes13 },
         { step: 'Repeat this for the rest of the chive cakes.', type: ASSEMBLE_CHIVE_CAKES_SECTION },
 
         { step: 'Over high heat, bring a large saucepan of water to a boil.', type: COOK_SECTION },
-        { step: 'Place the chive cakes in the steamer (leaving space between each cake).', type: COOK_SECTION },
-        { step: 'Steam until the dough is translucent (for about 5 to 7 minutes).', type: COOK_SECTION },
-        { step: 'Brush the top of each chive cake with oil.', type: COOK_SECTION },
-        { step: 'Over medium-high heat, place each of these cakes in a frying pan.', type: COOK_SECTION },
-        { step: 'Pan fry until both sides are browned.', type: COOK_SECTION },
+        { step: 'Place the chive cakes in the steamer (leaving space between each cake).', type: COOK_SECTION, img: [cakes14, cakes15] },
+        { step: 'Steam until the dough is translucent (for about 5 to 7 minutes).', type: COOK_SECTION, img: cakes16 },
+        { step: 'Over medium-high heat, heat some vegetable oil and cook cakes in batches.', type: COOK_SECTION, img: cakes17 },
+        { step: 'Pan fry until both sides are browned.', type: COOK_SECTION, img: cakes18 },
 
         { step: 'Enjoy these chive cakes with the dipping sauce.', type: SECTIONS.SERVE },
     ]
