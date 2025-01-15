@@ -30,6 +30,7 @@ const ASSEMBLE_CHIVE_CAKES_SECTION = 'Assemble Chive Cakes';
 const COOK_SECTION = 'Cook';
 
 module.exports = {
+    wip: true,
     cardName: 'Chive Cakes',
     name: 'Chive Cakes (Khanom Gui Chai)',
     img: cakes19,
@@ -112,5 +113,6 @@ module.exports = {
     notes: [
         { note: 'The dough was difficult to get right. I still need to work on it. I had to add a lot of rice flour to get it to a workable consistency.', },
         { note: 'After about 10 minutes of steaming the dough never became translucent, so I need to experiment more with that.', },
+        { note: 'I need to rework this recipe. It didn\'t taste good.' }
     ]
 };

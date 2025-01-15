@@ -85,6 +85,7 @@ const creamyCornCasserole = require("./recipes/creamy-corn-casserole");
 const creamyTuscanChickenPasta = require("./recipes/creamy-tuscan-chicken-pasta");
 const cremeBrulee = require("./recipes/creme-brulee");
 const crescentRolls = require("./recipes/crescent-rolls");
+const croissants = require("./recipes/croissants");
 const dijonChicken = require("./recipes/dijon-chicken");
 const dinnerRolls = require("./recipes/dinner-rolls");
 const eclair = require("./recipes/eclair");
@@ -364,6 +365,7 @@ const recipes = [
     frenchOnionSoupGratinee, // TODO: add
     dijonChicken, // TODO: add
     monteCristoSandwich,
+    croissants,
     cherryAndDarkChocolateCrostata, // TODO: add
 
     // GERMAN
