@@ -103,7 +103,6 @@ const gelato = require("./recipes/gelato");
 const germanSchnitzel = require("./recipes/german-schnitzel");
 const gingerbreadCookies = require("./recipes/gingerbread-cookies");
 const graveyardDessert = require("./recipes/graveyard-dessert");
-const gravy = require("./recipes/gravy");
 const greenBeanAlmondine = require("./recipes/green-bean-almondine");
 const greenBeanCasserole = require("./recipes/green-bean-casserole");
 const grilledCheeseSandwich = require("./recipes/grilled-cheese-sandwich");
@@ -385,7 +384,6 @@ const recipes = [
     hawaiianGlazedHam,
     mashPotatoes,
     kfcGravy,
-    gravy,
     stuffing,
     greenBeanCasserole,
     butteredCorn,
