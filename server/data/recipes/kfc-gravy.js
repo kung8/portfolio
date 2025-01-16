@@ -1,14 +1,19 @@
-// const example = '../assets/Products/example.jpeg';
+const gravy1 = '../assets/Products/kfc-gravy-1.jpeg';
+const gravy2 = '../assets/Products/kfc-gravy-2.jpeg';
+const gravy3 = '../assets/Products/kfc-gravy-3.jpeg';
+const gravy4 = '../assets/Products/kfc-gravy-4.jpeg';
+const gravy5 = '../assets/Products/kfc-gravy-5.jpeg';
+const gravy6 = '../assets/Products/mash-potatoes-10.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { HOT_WATER, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, ONION_POWDER, BLACK_PEPPER, SALT, CHICKEN_BOUILLON_CUBE, BEEF_BOUILLON_CUBE } = require('./ingredients');
 
 const GRAVY_SECTION = 'Gravy';
 
 module.exports = {
-    wip: true,
     cardName: 'KFC Gravy',
     name: 'KFC Gravy',
-    img: '',
+    img: gravy5,
     available: true,
     recommended: false,
     category: [CATEGORIES.SAUCE],
@@ -42,12 +47,12 @@ module.exports = {
     ],
     directions: [
         { step: 'Dissolve the bouillon cubes in the hot water.', type: GRAVY_SECTION },
-        { step: 'Over medium heat, melt butter in a saucepan.', type: GRAVY_SECTION },
-        { step: 'Stir in flour, onion powder and black pepper. Whisk.', type: GRAVY_SECTION },
-        { step: 'While stirring, add in half the broth. It should thicken and become more uniform.', type: GRAVY_SECTION },
+        { step: 'Over medium heat, melt butter in a saucepan.', type: GRAVY_SECTION, img: gravy1 },
+        { step: 'Stir in flour, onion powder and black pepper. Whisk.', type: GRAVY_SECTION, img: [gravy2, gravy3] },
+        { step: 'While stirring, add in half the broth. It should thicken and become more uniform.', type: GRAVY_SECTION, img: gravy4 },
         { step: 'Stir in the remaining broth.', type: GRAVY_SECTION },
         { step: 'Stir until it thickens to a gravy consistency (about 1 1/2 to 2 minutes).', type: GRAVY_SECTION },
         { step: 'Taste and, if needed, add salt and pepper.', type: GRAVY_SECTION },
-        { step: 'Serve this warm over whatever you want.', type: SECTIONS.SERVE },
+        { step: 'Serve this warm over whatever you want.', type: SECTIONS.SERVE, img: gravy6 },
     ]
 };
