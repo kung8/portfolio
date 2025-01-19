@@ -12,6 +12,7 @@ const carbonara11 = '../assets/Products/carbonara-11.jpeg';
 const carbonara12 = '../assets/Products/carbonara-12.jpeg';
 const carbonara13 = '../assets/Products/carbonara-13.jpeg';
 const carbonara14 = '../assets/Products/carbonara-14.jpeg';
+const carbonara15 = '../assets/Products/carbonara-15.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { GUANCIALE, EGGS, EGG_YOLKS, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO } = require('./ingredients');
@@ -83,5 +84,10 @@ module.exports = {
         { step: 'Add 1/2 cup of pasta water and stir quickly for 1 minute. The sauce should become creamy and stick to the pasta.', type: SECTIONS.ASSEMBLY, img: [carbonara10, carbonara11, carbonara12] },
 
         { step: 'Enjoy this authentic Italian dish topped with parsley, parmesan and pepper.', type: SECTIONS.SERVE, img: carbonara14 },
+    ], 
+    notes: [
+        { note: 'If the sauce is too thick, add more pasta water.' },
+        { note: 'Guanciale is a type of Italian cured meat made from pork jowl or cheeks. If you cannot find guanciale, pancetta is a good substitute.' },
+        { note: 'To reheat, heat in a double boiler. It is not recommended to reheat in the microwave because of the raw eggs.', img: carbonara15 },
     ]
 };
