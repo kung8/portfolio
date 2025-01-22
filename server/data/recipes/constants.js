@@ -76,6 +76,7 @@ const GENRES = {
     AUSTRIAN: 'Austrian',
     CZECH: 'Czech',
     CREOLE: 'Creole',
+    PORTUGUESE: 'Portuguese',
 };
 
 const METHODS = {

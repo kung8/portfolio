@@ -315,6 +315,7 @@ const INGREDIENTS = {
         MAGGI_SEASONING: { name: 'maggi seasoning', category: INGREDIENT_CATEGORY.CONDIMENTS },
         MAPLE_SYRUP: { name: 'maple syrup', category: INGREDIENT_CATEGORY.CONDIMENTS },
         MAYONNAISE: { name: 'mayonnaise', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        NANDOS_PERI_PERI_SAUCE: { name: 'nando\'s peri peri sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         NUTELLA: { name: 'nutella', category: INGREDIENT_CATEGORY.CONDIMENTS },
         OLIVES: { name: 'olives', category: INGREDIENT_CATEGORY.CONDIMENTS },
         OYSTER_SAUCE: { name: 'oyster sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },

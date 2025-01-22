@@ -94,6 +94,8 @@ const eclair = require("./recipes/eclair");
 const eggCasserole = require("./recipes/egg-casserole");
 const englishScones = require("./recipes/english-scones");
 const fancyLunchables = require("./recipes/fancy-lunchables");
+const fishAndChips = require("./recipes/fish-and-chips");
+const fishSticksWithTartarSauce = require("./recipes/fish-sticks-with-tartar-sauce");
 const frenchBaguettes = require("./recipes/french-baguettes");
 const frenchCrepe = require("./recipes/french-crepe");
 const frenchOnionSoupGratinee = require("./recipes/french-onion-soup-gratinee");
@@ -167,12 +169,14 @@ const pastaPomodoro = require("./recipes/pasta-pomodoro");
 const peachCobbler = require("./recipes/peach-cobbler");
 const peanutBrittle = require("./recipes/peanut-brittle");
 const peanutButterCookies = require("./recipes/peanut-butter-cookies");
+const pekingDuck = require("./recipes/peking-duck");
 const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
 const peppermintBark = require("./recipes/peppermint-bark");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
 const peruvianChicken = require("./recipes/peruvian-chicken");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
+const piriPiriChickenBowl = require("./recipes/piri-piri-chicken-bowl");
 const pizza = require("./recipes/pizza");
 const poachedSalmonWithHollandaiseSauce = require("./recipes/poached-salmon-with-hollandaise-sauce");
 const popcornBalls = require("./recipes/popcorn-balls");
@@ -273,6 +277,7 @@ const recipes = [
     orangeChicken,
     chineseSweetAndSourPork,
     kungPaoChicken,
+    pekingDuck, // TODO: add
     chineseGingerChicken,
     chineseCashewChicken,
     chineseGreenBeanBeef,
@@ -370,6 +375,13 @@ const recipes = [
     croissants,
     cherryAndDarkChocolateCrostata, // TODO: add
 
+    // BRITISH
+    fishAndChips, // TODO: add
+    englishScones,
+    chickenPotPie,
+    chickenPotPie1, // TODO: add
+    stickyToffeePudding,
+
     // GERMAN
     germanSchnitzel, // TODO: add
 
@@ -380,6 +392,9 @@ const recipes = [
     // TURKISH
     bulgurPilaf, // TODO: add
     ricePilaf, // TODO: add
+
+    // SOUTH AFRICAN / PORTUGUESE
+    piriPiriChickenBowl,
 
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
     marryMeChicken,
@@ -402,8 +417,6 @@ const recipes = [
     panFriedChickenThighs,
     chickenKebab,
     potRoast,
-    chickenPotPie,
-    chickenPotPie1, // TODO: add
     chickenNoodleSoup,
     broccoliCheddarSoup,
     chili,
@@ -417,6 +430,7 @@ const recipes = [
     hawaiianHaystacks,
     hospitalityChicken,
     jambalaya, 
+    fishSticksWithTartarSauce, // TODO: add
     cajunShrimp, // TODO: add
     jumboShrimpParmesan, // TODO: add
     garlicShrimp, // TODO: add
@@ -451,7 +465,6 @@ const recipes = [
     frenchToast,
     waffles,
     buttermilkSyrup,
-    englishScones,
     biscuits, // TODO: add
     biscuitsAndGravy,
     breakfastBurrito, // TODO: add
@@ -468,7 +481,6 @@ const recipes = [
     carrotCake,
     coffeeCake,
     peachCobbler,
-    stickyToffeePudding,
     pretzel,
     peanutBrittle,
     peppermintBark,
