@@ -75,6 +75,7 @@ const chineseSweetAndSourPork = require("./recipes/chinese-sweet-and-sour-pork")
 const chiveCakes = require("./recipes/chive-cakes");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateMousse = require("./recipes/chocolate-mousse");
+const chopSuey = require("./recipes/chop-suey");
 const churros = require("./recipes/churros");
 const cinnamonRolls = require("./recipes/cinnamon-rolls");
 const coffeeCake = require("./recipes/coffee-cake");
@@ -285,6 +286,7 @@ const recipes = [
     chineseBao,
     potstickers,
     crabRangoon, // TODO: add
+    chopSuey, // TODO: add
 
 
     // SINGAPOREAN
