@@ -77,6 +77,7 @@ const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateMousse = require("./recipes/chocolate-mousse");
 const churros = require("./recipes/churros");
 const cinnamonRolls = require("./recipes/cinnamon-rolls");
+const coffeeCake = require("./recipes/coffee-cake");
 const coleslaw = require("./recipes/coleslaw");
 const crabCakes = require("./recipes/crab-cakes");
 const crabRangoon = require("./recipes/crab-rangoon");
@@ -463,6 +464,7 @@ const recipes = [
     bananaBread,
     cheesecake,
     carrotCake,
+    coffeeCake,
     peachCobbler,
     stickyToffeePudding,
     pretzel,
