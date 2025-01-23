@@ -1,4 +1,26 @@
-// const cake1 = '../assets/Products/coffee-cake-1.jpeg';
+const cake1 = '../assets/Products/coffee-cake-1.jpeg';
+const cake2 = '../assets/Products/coffee-cake-2.jpeg';
+const cake3 = '../assets/Products/coffee-cake-3.jpeg';
+const cake4 = '../assets/Products/coffee-cake-4.jpeg';
+const cake5 = '../assets/Products/coffee-cake-5.jpeg';
+const cake6 = '../assets/Products/coffee-cake-6.jpeg';
+const cake7 = '../assets/Products/coffee-cake-7.jpeg';
+const cake8 = '../assets/Products/coffee-cake-8.jpeg';
+const cake9 = '../assets/Products/coffee-cake-9.jpeg';
+const cake10 = '../assets/Products/coffee-cake-10.jpeg';
+const cake11 = '../assets/Products/coffee-cake-11.jpeg';
+const cake12 = '../assets/Products/coffee-cake-12.jpeg';
+const cake13 = '../assets/Products/coffee-cake-13.jpeg';
+const cake14 = '../assets/Products/coffee-cake-14.jpeg';
+const cake15 = '../assets/Products/coffee-cake-15.jpeg';
+const cake16 = '../assets/Products/coffee-cake-16.jpeg';
+const cake17 = '../assets/Products/coffee-cake-17.jpeg';
+const cake18 = '../assets/Products/coffee-cake-18.jpeg';
+const cake19 = '../assets/Products/coffee-cake-19.jpeg';
+const cake20 = '../assets/Products/coffee-cake-20.jpeg';
+const cake21 = '../assets/Products/coffee-cake-21.jpeg';
+const cake22 = '../assets/Products/coffee-cake-22.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
 const { UNSALTED_BUTTER, CREAM_CHEESE, BROWN_SUGAR, WHITE_SUGAR, EGGS, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, BAKING_POWDER, CORNSTARCH, SALT, BUTTERMILK, CINNAMON, POWDERED_SUGAR, MILK } = require('./ingredients');
 
@@ -19,13 +41,11 @@ const MAKE_GLAZE = 'Make Glaze';
 const BAKE_CAKE = 'Bake Cake';
 
 module.exports = {
-    wip: true,
     cardName: 'Coffee Cake',
     name: 'Coffee Cake',
-    img: '',
-    recipeCredit: '',
+    img: cake22,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -78,33 +98,33 @@ module.exports = {
     directions: [
         { step: 'Preheat the oven to 350ºF.', type: MAKE_WET_BATTER },
         { step: 'Spray a baking pan with a cooking spray.', type: MAKE_WET_BATTER },
-        { step: 'In a stand mixer, cream together butter and cream cheese.', type: MAKE_WET_BATTER },
-        { step: 'Mix in white and brown sugars until combined.', type: MAKE_WET_BATTER },
-        { step: 'Beat in eggs, one at a time.', type: MAKE_WET_BATTER },
-        { step: 'Add vanilla. Mix.', type: MAKE_WET_BATTER },
+        { step: 'In a stand mixer, cream together butter and cream cheese.', type: MAKE_WET_BATTER, img: [cake1, cake2] },
+        { step: 'Mix in white and brown sugars until combined.', type: MAKE_WET_BATTER, img: [cake3, cake4] },
+        { step: 'Beat in eggs, one at a time.', type: MAKE_WET_BATTER, img: cake5 },
+        { step: 'Add vanilla. Mix.', type: MAKE_WET_BATTER, img: cake6 },
 
-        { step: 'In another mixing bowl, combine the flour, baking powder, cornstarch and salt.', type: MAKE_DRY_BATTER },
+        { step: 'In another mixing bowl, combine the flour, baking powder, cornstarch and salt.', type: MAKE_DRY_BATTER, img: cake7 },
 
         { step: 'Measure out the buttermilk.', type: COMBINE_BATTERS },
-        { step: 'Alternate adding ingredients to the wet batter: 1/3 dry, 1/2 buttermilk, 1/3 dry, 1/2 buttermilk, 1/3 dry.', type: COMBINE_BATTERS },
+        { step: 'Alternate adding ingredients to the wet batter: 1/3 dry, 1/2 buttermilk, 1/3 dry, 1/2 buttermilk, 1/3 dry.', type: COMBINE_BATTERS, img: [cake8, cake9] },
 
         { step: 'In a small bowl, combine together the cinnamon and sugar.', type: MAKE_CINNAMON_SWIRL },
 
-        { step: 'In the greased baking pan, pour half of the batter.', type: ASSEMBLE_CAKE },
-        { step: 'Sprinkle the cinnamon swirl evenly over the batter.', type: ASSEMBLE_CAKE },
-        { step: 'Add the rest of the batter and carefully spread it evenly (avoid moving the cinnamon swirl).', type: ASSEMBLE_CAKE },
+        { step: 'In the greased baking pan, pour half of the batter.', type: ASSEMBLE_CAKE, img: cake10 },
+        { step: 'Sprinkle the cinnamon swirl evenly over the batter.', type: ASSEMBLE_CAKE, img: cake11 },
+        { step: 'Add the rest of the batter and carefully spread it evenly (avoid moving the cinnamon swirl).', type: ASSEMBLE_CAKE, img: cake12 },
 
-        { step: 'In a medium bowl, melt butter in 10 second increments until melted. Let it cool completely once it has melted.', type: MAKE_STREUSEL_CRUMBLE },
-        { step: 'In a mixing bowl, combine the remaining "Streusel" ingredients (except the butter) with a fork.', type: MAKE_STREUSEL_CRUMBLE },
-        { step: 'Once the butter has cooled, add the butter and gently combine. It should be crumbly.', type: MAKE_STREUSEL_CRUMBLE },
-        { step: 'Top the cake with the streusel crumble', type: MAKE_STREUSEL_CRUMBLE },
+        { step: 'In a medium bowl, melt butter in 10 second increments until melted. Let it cool completely once it has melted.', type: MAKE_STREUSEL_CRUMBLE, img: cake13 },
+        { step: 'In a mixing bowl, combine the remaining "Streusel" ingredients (except the butter) with a fork.', type: MAKE_STREUSEL_CRUMBLE, img: [cake14, cake15] },
+        { step: 'Once the butter has cooled, add the butter and gently combine. It should be crumbly.', type: MAKE_STREUSEL_CRUMBLE, img: cake16 },
+        { step: 'Top the cake with the streusel crumble', type: MAKE_STREUSEL_CRUMBLE, img: cake17 },
 
-        { step: 'Bake until an inserted toothpick comes out clean (about 40 to 50 minutes). Avoid overbaking.', type: BAKE_CAKE },
+        { step: 'Bake until an inserted toothpick comes out clean (about 40 to 50 minutes). Avoid overbaking.', type: BAKE_CAKE, img: cake18 },
         { step: 'Let it cool before cutting and serving it.', type: BAKE_CAKE },
 
-        { step: 'In a medium bowl, whisk the powdered sugar and a little milk at a time.', type: MAKE_GLAZE },
+        { step: 'In a medium bowl, whisk the powdered sugar and a little milk at a time.', type: MAKE_GLAZE, img: cake19 },
         
-        { step: 'Drizzle the glaze over the coffee cake.', type: SECTIONS.SERVE },
+        { step: 'Drizzle the glaze over the coffee cake.', type: SECTIONS.SERVE, img: [cake20, cake21] },
         { step: 'Enjoy this delicious cake as a breakfast treat or dessert.', type: SECTIONS.SERVE },
 
         { step: 'Store in an airtight container at room temperature up to 3 days.', type: SECTIONS.STORE },
