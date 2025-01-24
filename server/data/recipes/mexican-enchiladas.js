@@ -4,6 +4,7 @@ const { GARLIC_POWDER, SALT, BONELESS_AND_SKINLESS_CHICKEN_BREAST, BLACK_PEPPER,
 
 const CHICKEN = 'Chicken';
 const ENCHILADA_SAUCE = 'Enchilada Sauce';
+const ENCHILADA_ASSEMBLY = 'Enchilada Assembly';
 
 const PREP_CHICKEN = 'Prep Chicken';
 const PREP_ENCHILADA_SAUCE = 'Prep Enchilada Sauce';
@@ -51,10 +52,10 @@ module.exports = {
         { ...CHICKEN_BROTH, amount: '2 1/4 c', additionalDetails: '', section: ENCHILADA_SAUCE },
         { ...TOMATO_PASTE, amount: '2 Tbsp', additionalDetails: '', section: ENCHILADA_SAUCE },
 
-        { ...FLOUR_TORTILLA, amount: '8', additionalDetails: '', section: '' },
-        { ...MEXICAN_BLEND_CHEESE, amount: '2 1/2 c', additionalDetails: '', section: '' },
-        { ...SALT, amount: '', additionalDetails: 'to taste', section: '' },
-        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: '' },
+        { ...FLOUR_TORTILLA, amount: '8', additionalDetails: '', section: ENCHILADA_ASSEMBLY },
+        { ...MEXICAN_BLEND_CHEESE, amount: '2 1/2 c', additionalDetails: '', section: ENCHILADA_ASSEMBLY },
+        { ...SALT, amount: '', additionalDetails: 'to taste', section: ENCHILADA_ASSEMBLY },
+        { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: ENCHILADA_ASSEMBLY },
         
         { ...LETTUCE, amount: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
         { ...SMALL_YELLOW_ONION, amount: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
