@@ -20,6 +20,7 @@ const cake19 = '../assets/Products/coffee-cake-19.jpeg';
 const cake20 = '../assets/Products/coffee-cake-20.jpeg';
 const cake21 = '../assets/Products/coffee-cake-21.jpeg';
 const cake22 = '../assets/Products/coffee-cake-22.jpeg';
+const cake23 = '../assets/Products/coffee-cake-23.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
 const { UNSALTED_BUTTER, CREAM_CHEESE, BROWN_SUGAR, WHITE_SUGAR, EGGS, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, BAKING_POWDER, CORNSTARCH, SALT, BUTTERMILK, CINNAMON, POWDERED_SUGAR, MILK } = require('./ingredients');
@@ -125,7 +126,7 @@ module.exports = {
         { step: 'In a medium bowl, whisk the powdered sugar and a little milk at a time.', type: MAKE_GLAZE, img: cake19 },
         
         { step: 'Drizzle the glaze over the coffee cake.', type: SECTIONS.SERVE, img: [cake20, cake21] },
-        { step: 'Enjoy this delicious cake as a breakfast treat or dessert.', type: SECTIONS.SERVE },
+        { step: 'Enjoy this delicious cake as a breakfast treat or dessert.', type: SECTIONS.SERVE, img: cake23 },
 
         { step: 'Store in an airtight container at room temperature up to 3 days.', type: SECTIONS.STORE },
     ],
