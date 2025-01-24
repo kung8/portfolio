@@ -78,6 +78,7 @@ const chocolateMousse = require("./recipes/chocolate-mousse");
 const chopSuey = require("./recipes/chop-suey");
 const churros = require("./recipes/churros");
 const cinnamonRolls = require("./recipes/cinnamon-rolls");
+const coconutChicken = require("./recipes/coconut-chicken");
 const coffeeCake = require("./recipes/coffee-cake");
 const coleslaw = require("./recipes/coleslaw");
 const crabCakes = require("./recipes/crab-cakes");
@@ -186,6 +187,7 @@ const potRoast = require("./recipes/pot-roast");
 const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
 const ravioli = require("./recipes/ravioli");
+const reubenSandwich = require("./recipes/reuben-sandwich");
 const riceKrispyTreats = require("./recipes/rice-krispy-treats");
 const ricePilaf = require("./recipes/rice-pilaf");
 const roastedTurkey = require("./recipes/roasted-turkey");
@@ -238,6 +240,7 @@ const recipes = [
     chiveCakes,
     mangoStickyRice,
     thaiMassamanCurry, // TODO: find recipe
+    coconutChicken, // TODO: add
 
     // INDIAN
     chickenBiryani,
@@ -469,6 +472,7 @@ const recipes = [
     biscuitsAndGravy,
     breakfastBurrito, // TODO: add
     breakfastSandwich,
+    reubenSandwich, // TODO: add
     blt,
     scrambledEggs,
     hardBoiledEggs,
