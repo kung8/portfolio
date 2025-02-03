@@ -11,6 +11,7 @@ const naan10 = '../assets/Products/naan-10.jpeg';
 const naan11 = '../assets/Products/naan-11.jpeg';
 const naan12 = '../assets/Products/naan-12.jpeg';
 const naan13 = '../assets/Products/naan-13.jpeg';
+const naan14 = '../assets/Products/naan-14.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
 const { WARM_WATER, WHITE_SUGAR, YEAST, ALL_PURPOSE_FLOUR, YOGURT, SALT, OLIVE_OIL, UNSALTED_BUTTER, CILANTRO } = require('./ingredients');
@@ -22,7 +23,7 @@ const COOK_NAAN = 'Cook Naan';
 module.exports = {
     cardName: 'Naan',
     name: 'Naan',
-    img: naan13,
+    img: naan14,
     recipeCredit: 'Nick DiGiovanni',
     available: true,
     recommended: true,
@@ -76,7 +77,7 @@ module.exports = {
         { step: 'Remove from pan and brush each cooked naan with melted butter and sprinkle salt and cilantro.', type: COOK_NAAN },
         { step: 'Repeat until all the other naan is cooked.', type: COOK_NAAN },
 
-        { step: 'Enjoy these delicious breads with your favorite curries.', type: SECTIONS.SERVE },
+        { step: 'Enjoy these delicious breads with your favorite curries.', type: SECTIONS.SERVE, img: naan13 },
     ],
     notes: [
         { note: 'Covering the pan with a lid immediately will help the naan puff up and be lighter in texture.' },
