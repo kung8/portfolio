@@ -1,4 +1,13 @@
-// const example = '../assets/Products/example.jpeg';
+const tandoori1 = '../assets/Products/tandoori-chicken-1.jpeg';
+const tandoori2 = '../assets/Products/tandoori-chicken-2.jpeg';
+const tandoori3 = '../assets/Products/tandoori-chicken-3.jpeg';
+const tandoori4 = '../assets/Products/tandoori-chicken-4.jpeg';
+const tandoori5 = '../assets/Products/tandoori-chicken-5.jpeg';
+const tandoori6 = '../assets/Products/tandoori-chicken-6.jpeg';
+const tandoori7 = '../assets/Products/tandoori-chicken-7.jpeg';
+const tandoori8 = '../assets/Products/tandoori-chicken-8.jpeg';
+const tandoori9 = '../assets/Products/tandoori-chicken-9.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { GREEK_YOGURT, GINGER_GARLIC_PASTE, GARAM_MASALA, CHILI_POWDER, BLACK_PEPPER, CORIANDER, SALT, TURMERIC, FENUGREEK_LEAVES, LEMON_JUICE, MUSTARD_OIL, CORIANDER_POWDER, BONELESS_AND_SKINLESS_CHICKEN_THIGH } = require('./ingredients');
 
@@ -10,12 +19,11 @@ const COOK_CHICKEN = 'Cook Chicken';
 const PREP_RED_CHILI_OIL = 'Prep Red Chili Oil';
 
 module.exports = {
-    wip: true,
     cardName: 'Tandoori Chicken',
     name: 'Tandoori Chicken',
-    img: '',
+    img: tandoori8,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.INDIAN],
     method: [METHODS.BAKE],
@@ -58,31 +66,35 @@ module.exports = {
         { name: 'baking sheet' },
         { name: 'wire rack' },
         { name: 'baster' },
-        { name: '' },
-        { name: '' },
-        { name: '' },
-        { name: '' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Chicken Marinade" ingredients.', type: PREP_CHICKEN },
+        { step: 'In a mixing bowl, combine the "Chicken Marinade" ingredients.', type: PREP_CHICKEN, img: tandoori1 },
         { step: 'Taste and adjust based on your spice tolerance.', type: PREP_CHICKEN },
         { step: 'Pat chicken with paper towels until dry.', type: PREP_CHICKEN },
-        { step: 'Use a knife to make deep 3 slits (4 slits for larger pieces).', type: PREP_CHICKEN },
-        { step: 'Coat the chicken with the marinade. Cover and refrigerate for at least 6 hours or overnight. ', type: PREP_CHICKEN },
-        
+        { step: 'Use a knife to make deep 3 slits (4 slits for larger pieces).', type: PREP_CHICKEN, img: tandoori2 },
+        { step: 'Coat the chicken with the marinade. Cover and refrigerate for at least 6 hours or overnight. ', type: PREP_CHICKEN, img: tandoori3 },
+
         { step: 'In a small bowl, combine the "Red Chili Oil" ingredients. Set aside.', type: PREP_RED_CHILI_OIL },
-        
+
         { step: 'Preheat the oven to 470ºF.', type: COOK_CHICKEN },
-        { step: 'Line a baking sheet with foil and place a wire rack on top.', type: COOK_CHICKEN },
+        { step: 'Line a baking sheet with foil and place a wire rack on top.', type: COOK_CHICKEN, img: tandoori4 },
         { step: 'Spray the wire rack with oil.', type: COOK_CHICKEN },
-        { step: 'Place the chicken on the rack.', type: COOK_CHICKEN },
+        { step: 'Place the chicken on the rack.', type: COOK_CHICKEN, img: tandoori5 },
         { step: 'Roast the chicken for 12 to 15 minutes.', type: COOK_CHICKEN },
-        { step: 'Baste the chicken with the red chili oil and flip the chicken over.', type: COOK_CHICKEN },
+        { step: 'Baste the chicken with the red chili oil and flip the chicken over.', type: COOK_CHICKEN, img: tandoori6 },
         { step: 'Roast for another 12 to 15 minutes.', type: COOK_CHICKEN },
-        { step: 'Broil the chicken for 2 to 3 minutes. To char the chicken a little.', type: COOK_CHICKEN },
+        { step: 'Broil the chicken for 2 to 3 minutes. To char the chicken a little.', type: COOK_CHICKEN, img: tandoori7 },
         { step: 'Check the internal temperature of the chicken is at least 165ºF.', type: COOK_CHICKEN },
         { step: 'Brush the chicken with its drippings.', type: COOK_CHICKEN },
 
-        { step: 'Enjoy this classic Indian dish topped with cilantro.', type: SECTIONS.SERVE },
+        { step: 'Enjoy this classic Indian dish topped with cilantro.', type: SECTIONS.SERVE, img: tandoori9 },
+    ],
+    notes: [
+        { note: 'The flavor profile is made up of many elements: (1) Tangy from the yogurt, (2) Spicy from the chili powder, (3) Earthy from the blend of spices including garam masala and coriander, (4) Savory from the rest of the spices, and (5) Smoky from the oven.' },
+        { note: 'For first timers it is difficult to know what to change in the marinade mixture. The end result is pretty close to whatever the marinade tastes like. If there are flavors you don\'t like, adjust the recipe to your liking based on the above.' },
+        { note: 'I ended up using a little more yogurt since there was a little bit leftover but I did not care very much for the stronger tangy taste. Yogurt does cut the spice level dramatically.' },
+        { note: 'I used chicken breast instead of chicken thigh accidentally, and it still turned out great. I was afraid it was going to be dry but it was still moist and flavorful.' },
+        { note: 'I cooked it for almost the full recommended length of time, but honestly could have shaved off a few minutes for both rounds of baking if you want to enjoy it sooner. The chicken was still moist and full of flavor. Obviously it all depends on your oven for the length of time so experiment with it - and just make sure the chicken is at a safe internal temperature.' },
+        { note: 'This dish is a versatile dish to be eaten by itself or paired with naan or basmati rice (or both).' },
     ]
 };
