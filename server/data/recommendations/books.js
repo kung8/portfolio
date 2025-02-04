@@ -3373,7 +3373,7 @@ module.exports = {
                 },
             ],
             pageCount: 496,
-            rating: NO_RATING,
+            rating: 5,
         },
         {
             date: NO_DATE,
