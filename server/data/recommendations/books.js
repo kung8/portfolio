@@ -25,7 +25,83 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: NO_DATE,
+            title: "The Golden Spoon",
+            author: ["Jessa Maxwell"],
+            source: ["Libby recommendation"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
             date: IN_PROGRESS,
+            title: "The Wrong Woman",
+            author: ["Leanne Kale Sparks"],
+            source: ["Libby recommendation"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: IN_PROGRESS,
+            title: "The Fellowship of the Ring",
+            author: ["J.R.R. Tolkien"],
+            source: ["online"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: IN_PROGRESS,
+            title: "The Love That Split the World",
+            author: ["Emily Henry"],
+            source: ["same author"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
             title: "Impact Players",
             author: ["Liz Wiseman"],
             source: ["Company Gifted Book"],
@@ -3179,19 +3255,121 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: IN_PROGRESS,
+            date: '02/03/2025',
             title: "A Tree Grows in Brooklyn",
             author: ["Betty Smith"],
             source: ["online"],
             review: [
-                ""
+                "I fell in love with Francie, Neeley, Katie and Sissy's characters. It felt like the movie \"What a Wonderful Life\" which would have taken place shortly after this story. I loved the interplay of the characters, I empathized with them as they faced the ordeals of that time--poverty and financial struggles. The candid depictions of real-world themes was refreshing. We all need to remember that this is the world we live in and can't shelter ourselves from this truth."
             ],
             quotes: [
                 {
-                    text: "",
-                    pages: [],
-                    thoughts: "",
-                    context: ""
+                    text: "To look at everything always as though you were seeing it either for the first or last time: Thus is your time on earth filled with glory.",
+                    pages: [466],
+                    thoughts: "This is a beautiful sentiment. If only we looked at the world through this lens.",
+                    context: "Their grandmother spoke about how to look at life."
+                },
+                {
+                    text: "\"People always think that happiness is a faraway thing,\" thought Francie, \"something complicated and hard to get. Yet, what little things can make it up; a place of shelter when it rains—a cup of strong hot coffee when you're blue; for a man, a cigarette for contentment; a book to read when you're alone-just to be with someone you love. Those things make happiness.\"",
+                    pages: [447],
+                    thoughts: "To boil happiness down to its core, it is in the relationships we have with others.",
+                    context: "Francie reflects on what people speak what happiness is."
+                },
+                {
+                    text: "Dear God...Only let me be something every blessed minute. And when I sleep, let me dream all the time so that not one little piece of living is ever lost.",
+                    pages: [413],
+                    thoughts: "It is so important to not waste a single moment of our lives. We should be present in every moment and cherish the time we have.",
+                    context: "Francie wants to remember her youth and the experiences she has. She wants to look back on her life and relive those moments as they were."
+                },
+                {
+                    text: "She doesn't love me as much as she loves Neeley. But she needs me more than she needs him and I guess being needed is almost as good as being loved. Maybe better.",
+                    pages: [326],
+                    thoughts: "When first reading that Katie did not love her daughter as much as her son, it was heartbreaking. But after Katie explained why she felt that way - it was because she's too similar to her. I loved Francie even more after reading this. She is a good daughter.",
+                    context: "Francie has always felt and known that her mother loves Neeley more than her. However, Francie realizes that her mother needs her more than Neeley at least at that moment."
+                },
+                {
+                    text: "I dashed it off at odd moments. It doesn't take long to write things of which you know nothing. When you write of actual things, it takes longer, because you have to live them first.",
+                    pages: [319],
+                    thoughts: "It is easier to write about things that you have experienced but it can take longer trying to articulate the details of those type of experiences.",
+                    context: "Francie has been advised by her teacher that her stories are too dreary and she needed to write about a happier subject."
+                },
+                {
+                    text: "There was a legend in the neighborhood that any three wishes made on that day, would come true. One had to be an impossible wish, another a wish that you could make come true yourself, and the third had to be a wish for when you grew up.",
+                    pages: [313],
+                    thoughts: "I think it is a cute tradition. I might consider doing this.",
+                    context: "At New Years Eve, there's a tradition to make three wishes."
+                },
+                {
+                    text: "\"If God has charge of all the world,\" said Francie, \"and the sun and the moon and the stars and all the birds and trees and flowers and all the animals and people, you'd think He'd be too busy and too important—wouldn't you—to spend so much time punishing one man—one man like Papa.\"",
+                    pages: [290],
+                    thoughts: "These are important moments in our lives. We need to question and understand the world around us. The existence of God or some divine being(s) is a question of the ages. Asking questions and seeking answers can be a lifelong endeavor. We can blindly follow religion or other beliefs to a point. There comes a time that we must learn for ourselves and make our own decisions. Our late teenage/early adult years is that time.",
+                    context: "Francie is questioning why God would punish her father."
+                },
+                {
+                    text: "It was a good thing that she got herself into this other school. It showed her that there were other worlds beside the world she had been born into and that these other worlds were not unattainable.",
+                    pages: [174],
+                    thoughts: "Exposing ourselves to different cultures, experiences, and environment opens up our minds, increases our ability to empathize with others, and helps us understand and appreciate the world around us.",
+                    context: "Francie has been seeking a new school since she was convinced it would be a much better experience than her current school."
+                },
+                {
+                    text: "They learned no compassion from their own anguish. Thus their suffering was wasted.",
+                    pages: [158],
+                    thoughts: "As we suffer, we should learn from our experiences. We should learn to be compassionate and empathetic towards others. We should learn to be better people.",
+                    context: "The students that got lice are called out and then bullied. Once they recover and come back to school, they fall victim to being the bullies."
+                },
+                {
+                    text: "They taught because no one wanted to marry them. Married women were not allowed to teach in those days, hence most of the teachers were women made neurotic by starved love instincts. These barren women spent their fury on other women's children in a twisted authoritative manner. The cruelest teachers were those who had come from homes similar to those of the poor children.",
+                    pages: [151],
+                    thoughts: "I thought it was funny the description of the type of teachers during those time. The cycle of abuse and neglect continues. It is sad to see some of the most vulnerable members of society are susceptible to this cycle.",
+                    context: "Teachers were only single women in those days. They came across as bitter and cruel to the students."
+                },
+                {
+                    text: "A person who pulls himself up from a low environment via the bootstrap route has two choices. Having risen above his environment, he can forget it; or, he can rise above it and never forget it and keep compassion and understanding in his heart for those he has left behind him in the cruel upclimb.",
+                    pages: [144],
+                    thoughts: "It is true we need to remember where we came from. The struggles of life should provide us empathy and compassion. We should be able to help others who are in similar situations. Remember our words are powerful and can be used to uplift or tear down others.",
+                    context: "The doctor are giving Neeley and Francie their vaccination shot in order to go to school. The children were all dirty from playing in the mud."
+                },
+                {
+                    text: "Katie had a fierce desire for survival which made her a fighter. Johnny had a hankering after immortality which made him a useless dreamer. And that was the great difference between these two who loved each other so well.",
+                    pages: [96],
+                    thoughts: "As I think about marriage and relationships, I am a believer that we don't necessarily have to be exact copies of each other. But I think the most important thing is alignment of our goals and values and prioritize the relationship. Katie and Johnny did not have a perfect relationship and each individually though valued the children.",
+                    context: "Katie and Johnny have two different approaches to living life and the way they look at the world."
+                },
+                {
+                    text: "Everything struggles to live. Look at that tree growing up there out of that grating. It gets no sun, and water only when it rains. It's growing out of sour earth. And it's strong because its hard struggle to live is making it strong. My children will be strong that way.",
+                    pages: [93],
+                    thoughts: "Struggles in our life shape us into the people we are. We can break or become stronger from these.",
+                    context: "Katie thinks about how to raise her child."
+                },
+                {
+                    text: "\"The child must be made to believe in heaven. A heaven, not filled with flying angels with God on a throne\"--Mary articulated her thoughts painfully, half in German and half in English--\"but a heaven which means a wondrous place that people may dream of--as of a place where desires come true. This is probably a different kind of a religion. I do not know.\"",
+                    pages: [84],
+                    thoughts: "We all need something to believe in, something to give us hope and direction in our life.",
+                    context: "Katie is nervous about how to raise her child. Her mother emphasizes the importance of teaching your child to believe."
+                },
+                {
+                    text: "\"That is what is called learning the truth. It is a good thing to learn the truth one's self. To first believe with all your heart, and then not to believe, is good too. It fattens the emotions and makes them to stretch. When as a woman life and people disappoint her, she will have had practice in disappointment and it will not come so hard. In teaching your child, do not forget that suffering is good too. It makes a person rich in character.\"",
+                    pages: [83],
+                    thoughts: "As little children we learn from others of how to see the world and understand the way things work. Then we need to learn for ourselves what we believe in. Hopefully the foundational things that we learn have prepared us to face the world and challenges that come.",
+                    context: "Katie is nervous about how to raise her child. Her mother emphasizes the importance of teaching your child to believe."
+                },
+                {
+                    text: "Mary spoke sharply. \"You do not know whether there are not ghosts on earth or angels in heaven.\" \"I know there is no Santa Claus.\" \"Yet you must teach the child that these things are so.\" \"Why? When I, myself, do not believe?\" \"Because,\" explained Mary Rommely simply, \"the child must have a valuable thing which is called imagination. The child must have a secret world in which live things that never were. It is necessary that she believe. She must start out by believing in things not of this world. Then when the world becomes too ugly for living in, the child can reach back and live in her imagination.",
+                    pages: [83],
+                    thoughts: "We need to allow our children to have an imagination and foster an environment where they can dream and create things. Without this, we are stifling their creativity and ability to think outside the box.",
+                    context: "Katie is nervous about how to raise her child. Her mother emphasizes the importance of teaching your child to believe."
+                },
+                {
+                    text: "\"The secret lies in the reading and the writing. You are able to read. Every day you must read one page from some good book to your child. Every day this must be until the child learns to read. Then she must read every day, I know this is the secret.\"...\"There are two great books. Shakespeare is a great book. I have heard tell that all the wonder of life is in that book; all that man has learned of beauty, all that he may know of wisdom and living are on those pages. It is said that these stories are plays to be acted out on the stage. I have never spoken to anyone who has seen this great thing. But I heard the lord of our land back in Austria say that some of the pages sing themselves like songs.\"...\"It is the Bible that the Protestant people read.\"",
+                    pages: [82],
+                    thoughts: "Reading and writing is so important for children. Appreciate the classics and the stories. This skill is fundamental to learning and understanding the world around us.",
+                    context: "Katie is nervous about how to raise her child. Her mother emphasizes the importance of reading to your child."
+                },
+                {
+                    text: "Mary looked around the room furtively. \"It is not fitting for a good Catholic to say so but I believe that the Protestant Bible contains more of the loveliness of the greatest story on this earth and beyond it. A much-loved Protestant friend once read some of her Bible to me and I found it as I have said.",
+                    pages: [82],
+                    thoughts: "I think it was funny that Mary was a Catholic but she appreciated the Protestant Bible. We need to all be more tolerant of other people, beliefs and religions.",
+                    context: "Katie is nervous about how to raise her child. Her mother emphasizes the importance of reading to your child."
                 },
             ],
             pageCount: 496,
@@ -3673,7 +3851,7 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: NO_DATE,
+            date: IN_PROGRESS,
             title: "The 7 1/2 Deaths of Evelyn Hardcastle",
             author: ["Stuart Turton"],
             source: ["Jami's Mutual profile"],
@@ -4186,7 +4364,7 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: NO_DATE,
+            date: IN_PROGRESS,
             title: "The Catcher in the Rye",
             author: ["J.D. Salinger"],
             source: ["online - books to read by 30"],
