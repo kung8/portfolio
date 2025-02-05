@@ -97,6 +97,7 @@ const englishScones = require("./recipes/english-scones");
 const fancyLunchables = require("./recipes/fancy-lunchables");
 const fishAndChips = require("./recipes/fish-and-chips");
 const fishSticksWithTartarSauce = require("./recipes/fish-sticks-with-tartar-sauce");
+const fiveSpiceBlend = require("./recipes/five-spice-blend");
 const frenchBaguettes = require("./recipes/french-baguettes");
 const frenchCrepe = require("./recipes/french-crepe");
 const frenchOnionSoupGratinee = require("./recipes/french-onion-soup-gratinee");
@@ -128,6 +129,7 @@ const jambalaya = require("./recipes/jambalaya");
 const japaneseChickenKatsu = require("./recipes/japanese-chicken-katsu");
 const japaneseCurry = require("./recipes/japanese-curry");
 const japaneseKatsudon = require("./recipes/japanese-katsudon");
+const japchae = require("./recipes/japchae");
 const javaneseChickenCoconutCurry = require("./recipes/javanese-chicken-coconut-curry");
 const jumboShrimpParmesan = require("./recipes/jumbo-shrimp-parmesan");
 const karaage = require("./recipes/karaage");
@@ -190,6 +192,7 @@ const ravioli = require("./recipes/ravioli");
 const reubenSandwich = require("./recipes/reuben-sandwich");
 const riceKrispyTreats = require("./recipes/rice-krispy-treats");
 const ricePilaf = require("./recipes/rice-pilaf");
+const roastedPorkBelly = require("./recipes/roasted-pork-belly");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const rosemaryLemonade = require("./recipes/rosemary-lemonade");
 const rosemaryFries = require("./recipes/rosemary-fries");
@@ -272,6 +275,7 @@ const recipes = [
     // KOREAN
     koreanBeefBulgogi,
     koreanFriedChicken,
+    japchae,
     bibimbap,
 
     // CHINESE
@@ -280,6 +284,7 @@ const recipes = [
     orangeChicken,
     chineseSweetAndSourPork,
     kungPaoChicken,
+    roastedPorkBelly,
     pekingDuck, // TODO: add
     chineseGingerChicken,
     chineseCashewChicken,
@@ -295,6 +300,7 @@ const recipes = [
     potstickers,
     crabRangoon, // TODO: add
     chopSuey, // TODO: add
+    fiveSpiceBlend,
 
 
     // SINGAPOREAN
