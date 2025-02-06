@@ -20,6 +20,7 @@ import { GROUPED_BY_ALPHABETIC, GROUPED_BY_GENRE, GROUPED_BY_OVERLAPPING_INGREDI
 import closeBtn from '../../../Assets/x.png';
 import { Legend } from './Legend';
 import { RecipeSortFilter } from './RecipeSortFilter';
+import { Greeting } from './Greeting';
 
 export const defaultSelectedFilters = {
     category: [],
@@ -301,6 +302,8 @@ export const Recipes = ({ history }) => {
                     </div>
                 ))}
             </div>
+
+            <Greeting />
 
             <div
                 id="modal-tray-overlay"
