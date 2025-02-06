@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
 import Fuse from 'fuse.js';
 import { useDebounce } from 'use-debounce';
-import { useGetData } from '../../../hooks';
+import { useGetData, useGetRecipeCategories } from '../../../hooks';
 import { convertToKebabCase } from '../../../utils';
 import { NonDashboardPage } from '../../Page';
 import { EmptyRecipeContainer } from './EmptyRecipeContainer';
@@ -21,6 +21,7 @@ import closeBtn from '../../../Assets/x.png';
 import { Legend } from './Legend';
 import { RecipeSortFilter } from './RecipeSortFilter';
 import { Greeting } from './Greeting';
+import { MenuFilter } from './MenuFilter';
 
 export const defaultSelectedFilters = {
     category: [],
@@ -39,6 +40,7 @@ export const Recipes = ({ history }) => {
     const queryClient = useQueryClient();
     const queryKey = ['getData', 'recipes', undefined];
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
+    const { data: categoryData } = useGetRecipeCategories();
 
     const getInitialSelectedFilters = () => {
         const filters = localStorage.getItem(RECIPES_FILTERS_LOCAL_STORAGE_KEY)
@@ -304,6 +306,32 @@ export const Recipes = ({ history }) => {
             </div>
 
             <Greeting />
+            <div className="menu-filters-container">
+                {categoryData?.CATEGORIES && recipes.length > 0 && (
+                    <MenuFilter
+                        label="Categories"
+                        items={categoryData?.CATEGORIES?.reduce((acc, category) => {
+                            const foundRecipe = [...recipes]?.reverse()?.find(recipe => recipe.available && !recipe.wip && recipe.img && !acc.find(r => r?.name === recipe.name) && recipe.category?.find(c => c === category))
+                            return [...acc, { ...foundRecipe, itemType: category }];
+                        }, [])}
+                        itemType="category"
+                        selectedFilters={selectedFilters}
+                        setSelectedFilters={setSelectedFilters}
+                    />
+                )}
+                {categoryData?.GENRES && recipes.length > 0 && (
+                    <MenuFilter
+                        label="Genres"
+                        items={categoryData?.GENRES?.reduce((acc, genre) => {
+                            const foundRecipe = [...recipes]?.find(recipe => recipe.available && !recipe.wip && recipe.img && !acc.find(r => r?.name === recipe.name) && recipe.genre?.find(c => c === genre))
+                            return [...acc, foundRecipe && { ...foundRecipe, itemType: genre }].filter(Boolean);
+                        }, [])}
+                        itemType="genre"
+                        selectedFilters={selectedFilters}
+                        setSelectedFilters={setSelectedFilters}
+                    />
+                )}
+            </div>
 
             <div
                 id="modal-tray-overlay"
