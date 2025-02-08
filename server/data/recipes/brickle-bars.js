@@ -1,5 +1,4 @@
 const bar1 = '../assets/Products/brickle-bars-1.jpeg';
-const bar3 = '../assets/Products/brickle-bars-3.jpeg';
 const batter1 = '../assets/Products/brickle-bars-batter-1.jpeg';
 const batter2 = '../assets/Products/brickle-bars-batter-2.jpeg';
 const batter3 = '../assets/Products/brickle-bars-batter-3.jpeg';
@@ -70,7 +69,7 @@ module.exports = {
         { step: 'Add the toffee bits.', type: SECTIONS.MAIN, img: [batter3, batter6] },
         { step: 'Scrape the batter into the baking pan.', type: SECTIONS.MAIN, img: pan1 },
         { step: 'Bake for 30 minutes.', type: SECTIONS.MAIN },
-        { step: 'Let it cool for a few minutes.', type: SECTIONS.MAIN, img: [bar1, bar3] },
+        { step: 'Let it cool for a few minutes.', type: SECTIONS.MAIN, img: bar1 },
         { step: 'Cut these into bars and enjoy!', type: SECTIONS.SERVE, img: plated6 },
     ]
 };
