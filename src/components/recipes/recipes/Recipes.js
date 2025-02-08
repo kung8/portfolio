@@ -9,19 +9,28 @@ import { EmptyRecipeContainer } from './EmptyRecipeContainer';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { LoaderContainer } from './LoaderContainer';
 import { RecipeItem } from './RecipeItem';
-import { SearchAndFilterContainer } from './SearchAndFilterContainer';
 import { TopArrow } from './TopArrow';
 import { useGroceryList } from '../hooks/use-grocery-list';
 import { useFilters } from '../hooks/use-filters';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
-import { RecipeFilterModal } from './RecipeFilterModal';
-import { handleModalClass } from '../utils/handle-modal-class';
-import { GROUPED_BY_ALPHABETIC, GROUPED_BY_GENRE, GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT, GROUPED_BY_NONE, RECIPES_FILTERS_LOCAL_STORAGE_KEY, RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, GROUPED_BY_INGREDIENTS_COUNT_ASCENDING, GROUPED_BY_INGREDIENTS_COUNT_DESCENDING } from '../constants';
+// import { RecipeFilterModal } from './RecipeFilterModal'; // TODO: delete the file once I move over the ingredients filters into the MenuFilter implementations
+import {
+    GROUPED_BY_ALPHABETIC,
+    GROUPED_BY_GENRE,
+    GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT,
+    GROUPED_BY_NONE,
+    RECIPES_FILTERS_LOCAL_STORAGE_KEY,
+    RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY,
+    GROUPED_BY_INGREDIENTS_COUNT_ASCENDING,
+    GROUPED_BY_INGREDIENTS_COUNT_DESCENDING
+} from '../constants';
 import { Legend } from './Legend';
 import { RecipeSortFilter } from './RecipeSortFilter';
 import { Greeting } from './Greeting';
 import { MenuFilter } from './MenuFilter';
 import { FilterChips } from './FilterChips';
+import { GroceryListIcon } from './GroceryListIcon';
+import { RecipeSearchBar } from './RecipeSearchBar';
 
 export const defaultSelectedFilters = {
     category: [],
@@ -180,7 +189,6 @@ export const Recipes = ({ history }) => {
 
         return () => {
             setIsLoaded(false);
-            handleCloseFilterModal();
             setShowArrow(false);
             window.removeEventListener('scroll', onScroll);
         }
@@ -202,16 +210,6 @@ export const Recipes = ({ history }) => {
         setSelectedView,
         generateUUID,
     } = useGroceryList();
-
-    // filters modal
-    const [showFiltersModal, setShowFiltersModal] = useState(false);
-    const { handleClose: handleCloseFilterModal, handleOpen: handleOpenFilterModal } = handleModalClass('.modal-tray', 'modal-tray-overlay');
-
-    const hasAnyFilters = Object.values(selectedFilters).some(filter => {
-        if (Array.isArray(filter)) return filter.length > 0;
-        // search is the only string valued filter
-        return filter;
-    })
 
     const formattedFilters = Object.entries(selectedFilters).reduce((acc, [key, values]) => {
         let newAcc = [];
@@ -247,42 +245,30 @@ export const Recipes = ({ history }) => {
         return acc.concat(newAcc);
     }, []);
 
+    const [showFilters, setShowFilters] = useState(true);
+
     return (
-        <NonDashboardPage
-            mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`}
-            onClick={() => {
-                handleCloseFilterModal();
-                setShowFiltersModal(false);
-            }}
-        >
+        <NonDashboardPage mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`}>
             <NonDashboardPage.Header title='Recipes'>
-                <SearchAndFilterContainer
-                    {...{
-                        filterOnClick: () => {
-                            if (showFiltersModal) {
-                                handleCloseFilterModal();
-                                setShowFiltersModal(false);
-                            } else {
-                                handleOpenFilterModal();
-                                setShowFiltersModal(true);
-                            }
-                            setShowFiltersModal(toggle => !toggle);
-                        },
-                        hasAnyFilters,
-                        imageOnClick: () => {
-                            if (showGroceryListModal) closeGroceryListModal();
-                            else openGroceryListModal();
-                            setShowGroceryListModal(toggle => !toggle);
-                        },
-                        search,
-                        setSearch,
+                <GroceryListIcon
+                    imageOnClick={() => {
+                        if (showGroceryListModal) closeGroceryListModal();
+                        else openGroceryListModal();
+                        setShowGroceryListModal(toggle => !toggle);
                     }}
                 />
             </NonDashboardPage.Header>
 
             <Greeting />
 
-            <div className="menu-filters-container">
+            <RecipeSearchBar
+                search={search}
+                setSearch={setSearch}
+                setShowFilters={setShowFilters}
+                showFilters={showFilters}
+            />
+
+            <div className={`menu-filters-container ${showFilters ? 'show' : ''}`}>
                 {featuredRecipes.CATEGORIES && (
                     <MenuFilter
                         label="Categories"
@@ -304,7 +290,7 @@ export const Recipes = ({ history }) => {
             </div>
 
             <FilterChips
-                formattedFilters={formattedFilters} 
+                formattedFilters={formattedFilters}
                 onClick={(filter) => {
                     if (filter.prop === 'search') {
                         setSearch('');
@@ -322,25 +308,6 @@ export const Recipes = ({ history }) => {
                 }}
             />
 
-            <div
-                id="modal-tray-overlay"
-                className="overlay"
-                onClick={handleCloseFilterModal}
-            />
-            <RecipeFilterModal
-                {...{
-                    closeFilters: handleCloseFilterModal,
-                    filteredRecipes,
-                    hasAnyFilters,
-                    resetAllFilters: () => {
-                        setSearch('');
-                        setSelectedFilters(defaultSelectedFilters)
-                    },
-                    selectedFilters,
-                    setSelectedFilters,
-                    totalAvailableRecipes: recipes.filter(item => item.available).length,
-                }}
-            />
             {isLoaded ? (
                 filteredRecipes.length ? (
                     <>

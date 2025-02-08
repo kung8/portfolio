@@ -26,22 +26,31 @@
         }
     }
 
-    .search-and-filter-container {
+    .search-and-filter-visible-toggle-container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         column-gap: 16px;
+        padding: 48px 16px 24px;
+        margin: 0 4px;
         @include down($mobile-xl) {
             width: 100%;
         }
 
-        .list-img {
-            height: 24px;
+        .filter-visible-toggle {
+            color: $primary-blue;
             cursor: pointer;
         }
     }
 
+    .list-img {
+        height: 24px;
+        cursor: pointer;
+    }
+
     .filter-chips-container {
-        padding: 24px 16px 48px;
+        padding: 16px 16px 48px;
+        margin: 0 4px;
 
         .filtered-by-label {
             margin-bottom: 16px;
@@ -93,7 +102,6 @@
         }
     }
 
-
     .greeting-container {
         background: $tan;
         padding: 32px 16px 20px;
@@ -119,29 +127,32 @@
     }
 
     .menu-filters-container {
+        display: none;
+        transition: display 0.3s ease-in-out;
+        &.show {
+            display: block;
+        }
+
         .menu-filter-container {
             margin: 0 4px;
-            padding: 48px 16px 24px;
-            &:not(:first-of-type) {
-                padding-top: 24px;
-            }
-    
+            padding: 20px 16px;
+
             .menu-type {
                 margin-bottom: 16px;
             }
-    
+
             .menu-list {
                 display: flex;
                 column-gap: 16px;
                 overflow-x: auto;
             }
-    
+
             .menu-item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 cursor: pointer;
-    
+
                 .menu-image {
                     width: 120px;
                     height: 120px;
@@ -150,20 +161,19 @@
                     opacity: 0.45;
                     background: rgba(240, 234, 214, 0.5);
                     transition: opacity 0.3s ease-in-out;
-    
+
                     &.includes-menu-item {
                         opacity: 1;
                         background: none;
                     }
                 }
-    
+
                 .menu-label {
                     font-size: 10px;
                 }
             }
         }
     }
-
 
     .recipes-grouped-container {
         display: flex;
