@@ -46,6 +46,7 @@ module.exports = {
     name: 'Vietnamese Banh Mi Sandwich',
     img: banhMi,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     protein: [PROTEIN.PORK],

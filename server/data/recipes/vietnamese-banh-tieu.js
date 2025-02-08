@@ -17,6 +17,7 @@ module.exports = {
     name: 'Vietnamese Banh Tieu',
     img: banhTieu,
     available: true,
+    recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY],

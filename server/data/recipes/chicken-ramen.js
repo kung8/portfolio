@@ -32,6 +32,7 @@ module.exports = {
     name: 'Homemade Chicken Ramen',
     img: zoomed,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.JAPANESE, GENRES.ASIAN],
     method: [METHODS.PAN_FRY, METHODS.ROAST, METHODS.SIMMER],

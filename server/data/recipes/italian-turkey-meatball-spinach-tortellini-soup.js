@@ -43,6 +43,7 @@ module.exports = {
     name: 'Turkey Meatball Spinach Tortellini Soup',
     img: ladle,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL],
