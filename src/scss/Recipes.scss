@@ -37,9 +37,16 @@
             width: 100%;
         }
 
-        .filter-visible-toggle {
-            color: $primary-blue;
+        .x-img {
+            height: 24px;
+            width: 24px;
+            transform: rotate(135deg);
+            transition: transform 0.3s ease-in-out;
             cursor: pointer;
+
+            &.rotate {
+                transform: rotate(270deg);
+            }
         }
     }
 
