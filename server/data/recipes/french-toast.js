@@ -1,4 +1,11 @@
-const frenchToast = '../assets/Products/french-toast.jpeg';
+const frenchToast1 = '../assets/Products/french-toast-1.jpeg';
+const frenchToast2 = '../assets/Products/french-toast-2.jpeg';
+const frenchToast3 = '../assets/Products/french-toast-3.jpeg';
+const frenchToast4 = '../assets/Products/french-toast-4.jpeg';
+const frenchToast5 = '../assets/Products/french-toast-5.jpeg';
+const frenchToast6 = '../assets/Products/french-toast-6.jpeg';
+const frenchToast7 = '../assets/Products/french-toast-7.jpeg';
+const frenchToast8 = '../assets/Products/french-toast-8.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
 const {
     EGGS,
@@ -12,7 +19,7 @@ const {
 module.exports = {
     cardName: 'French Toast',
     name: 'French Toast',
-    img: frenchToast,
+    img: frenchToast8,
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -27,7 +34,7 @@ module.exports = {
         { ...CINNAMON, amount: '1 tsp', additionalDetails: '', optional: false },
         { ...MILK, amount: '3/4 c', additionalDetails: '', optional: false },
         { ...BREAD, amount: '8', additionalDetails: '', optional: false },
-        { ...UNSALTED_BUTTER, amount: '8', additionalDetails: '', optional: false },
+        { ...UNSALTED_BUTTER, amount: '', additionalDetails: 'for cooking', optional: false },
     ],
     appliances: [
         { name: 'stove' },
@@ -40,10 +47,10 @@ module.exports = {
         { name: 'measuring cup' },
     ],
     directions: [
-        { step: 'Mix eggs, vanilla, cinnamon, and milk together.', type: SECTIONS.MAIN },
-        { step: 'Dredge bread in on both sides in batter one at a time right before frying.', type: SECTIONS.MAIN },
+        { step: 'Mix eggs, vanilla, cinnamon, and milk together.', type: SECTIONS.MAIN, img: [frenchToast1, frenchToast2] },
+        { step: 'Dredge bread in on both sides in batter one at a time right before frying.', type: SECTIONS.MAIN, img: [frenchToast3, frenchToast4] },
         { step: 'Heat a frying pan over medium heat and add some butter to pan.', type: SECTIONS.MAIN },
-        { step: 'Brown each side of bread (about 30 seconds on each side).', type: SECTIONS.MAIN },
-        { step: 'Serve and add fruits, syrup, and all your favorite toppings.', type: SECTIONS.MAIN },
+        { step: 'Brown each side of bread (about 30 seconds on each side).', type: SECTIONS.MAIN, img: [frenchToast5, frenchToast6] },
+        { step: 'Serve and add fruits, syrup, and all your favorite toppings.', type: SECTIONS.MAIN, img: frenchToast7 },
     ]
 };

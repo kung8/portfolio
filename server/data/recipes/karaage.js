@@ -57,7 +57,7 @@ module.exports = {
     directions: [
         { step: 'Season the chicken pieces with salt and pepper.', type: PREP_CHICKEN },
         { step: 'In a large bowl, combine the ginger and garlic.', type: PREP_CHICKEN },
-        { step: 'Add the ret of the marinade ingredients.', type: PREP_CHICKEN },
+        { step: 'Add the rest of the marinade ingredients.', type: PREP_CHICKEN },
         { step: 'Add the chicken and mix. Let it marinate for 30 minutes.', type: PREP_CHICKEN },
 
         { step: 'Over medium heat, fill a pot with 2 to 3 inches of oil.', type: PREP_DEEP_FRY },

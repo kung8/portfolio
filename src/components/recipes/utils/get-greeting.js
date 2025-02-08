@@ -17,6 +17,15 @@ const getGreetings = () => {
         'Satisfy your cravings in style!',
         'Home is wherever food is!',
         'Food for the soul, flavor for the senses!',
+        'Cooking is love made visible!',
+        'Food is the ingredient that binds us together!',
+        'Good food is good mood!',
+        'Cooking is a work of heart!',
+        'The secret ingredient is always love!',
+        'Cooking is the art of adjustment!',
+        'Cooking is the ultimate giving!',
+        'Cooking is the ultimate act of love!',
+        'Fastest way to anyone\'s heart is through their stomach!',
     ];
 
     return greetings;
