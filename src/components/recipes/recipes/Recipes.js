@@ -13,11 +13,9 @@ import { TopArrow } from './TopArrow';
 import { useGroceryList } from '../hooks/use-grocery-list';
 import { useFilters } from '../hooks/use-filters';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
-// import { RecipeFilterModal } from './RecipeFilterModal'; // TODO: delete the file once I move over the ingredients filters into the MenuFilter implementations
 import {
     GROUPED_BY_ALPHABETIC,
     GROUPED_BY_GENRE,
-    GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT,
     GROUPED_BY_NONE,
     RECIPES_FILTERS_LOCAL_STORAGE_KEY,
     RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY,
@@ -41,6 +39,7 @@ export const defaultSelectedFilters = {
     type: [],
     image: [],
     wip: [],
+    ingredients: [],
     search: '',
 };
 
@@ -52,9 +51,9 @@ export const Recipes = ({ history }) => {
     const { data: featuredRecipes = {} } = useGetFeaturedRecipes();
 
     const getInitialSelectedFilters = () => {
-        const filters = localStorage.getItem(RECIPES_FILTERS_LOCAL_STORAGE_KEY)
+        const filters = localStorage.getItem(RECIPES_FILTERS_LOCAL_STORAGE_KEY);
         if (filters) {
-            return JSON.parse(filters);
+            return { ...defaultSelectedFilters, ...JSON.parse(filters) };
         }
         return defaultSelectedFilters;
     };
@@ -115,6 +114,14 @@ export const Recipes = ({ history }) => {
 
     const [groupedBy, setGroupedBy] = useState(getInitialGroupedBy());
     const sortRecipes = (recipes) => {
+        if (selectedFilters.ingredients?.length) return Object.entries(recipes.reduce((acc, recipe, index) => {
+            const overlappingIngredientsCount = getOverlappingIngredientsCount(recipe.ingredients);
+            if (!acc[overlappingIngredientsCount]) {
+                acc[overlappingIngredientsCount] = [];
+            }
+            acc[overlappingIngredientsCount].push({ ...recipe, id: index });
+            return acc;
+        }, {})).sort((a, b) => b[0] - a[0]); // sort by descending order
         if (groupedBy === GROUPED_BY_NONE) return recipes;
         if (groupedBy === GROUPED_BY_ALPHABETIC) return recipes.sort((a, b) => a.cardName.localeCompare(b.cardName));
         if (groupedBy === GROUPED_BY_GENRE) return Object.entries(recipes.reduce((acc, recipe, index) => {
@@ -132,15 +139,6 @@ export const Recipes = ({ history }) => {
             const idB = itemsB[0].id;
             return idA - idB;
         });
-        if (groupedBy === GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT && !selectedFilters.ingredients?.length) return recipes;
-        if (groupedBy === GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT && selectedFilters.ingredients?.length) return Object.entries(recipes.reduce((acc, recipe, index) => {
-            const overlappingIngredientsCount = getOverlappingIngredientsCount(recipe.ingredients);
-            if (!acc[overlappingIngredientsCount]) {
-                acc[overlappingIngredientsCount] = [];
-            }
-            acc[overlappingIngredientsCount].push({ ...recipe, id: index });
-            return acc;
-        }, {})).sort((a, b) => b[0] - a[0]); // sort by descending order
         if (groupedBy === GROUPED_BY_INGREDIENTS_COUNT_ASCENDING) return Object.entries(recipes.reduce((acc, recipe, index) => {
             const ingredientCount = recipe.ingredients.length;
             if (!acc[ingredientCount]) {
@@ -159,7 +157,7 @@ export const Recipes = ({ history }) => {
         }, {})).sort((a, b) => b[0] - a[0]); // sort by descending order   
     }
 
-    const getOverlappingIngredientsCount = (ingredients) => selectedFilters?.ingredients?.filter((ingredient => ingredients.find(i => i.name.toLowerCase().includes(ingredient.toLowerCase())))).length
+    const getOverlappingIngredientsCount = (ingredients) => selectedFilters?.ingredients?.filter((ingredient => ingredients.find(i => i.name === ingredient))).length
 
     const filteredRecipes = search ? matchingSearchResults : recipes;
     const { filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
@@ -245,7 +243,10 @@ export const Recipes = ({ history }) => {
         return acc.concat(newAcc);
     }, []);
 
+    // filter logic
     const [showFilters, setShowFilters] = useState(true);
+    const getMenuFilterItems = (obj) => Object.entries(obj).map(([key, { img, name }]) => ({ img, itemType: key, name }));
+    const menuFilterProps = { selectedFilters, setSelectedFilters };
 
     return (
         <NonDashboardPage mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`}>
@@ -272,19 +273,25 @@ export const Recipes = ({ history }) => {
                 {featuredRecipes.CATEGORIES && (
                     <MenuFilter
                         label="Categories"
-                        items={Object.entries(featuredRecipes.CATEGORIES).map(([key, value]) => ({ ...value, itemType: key }))}
+                        items={getMenuFilterItems(featuredRecipes.CATEGORIES)}
                         itemType="category"
-                        selectedFilters={selectedFilters}
-                        setSelectedFilters={setSelectedFilters}
+                        {...menuFilterProps}
                     />
                 )}
                 {featuredRecipes.GENRES && (
                     <MenuFilter
                         label="Genres"
-                        items={Object.entries(featuredRecipes.GENRES).map(([key, value]) => ({ ...value, itemType: key }))}
+                        items={getMenuFilterItems(featuredRecipes.GENRES)}
                         itemType="genre"
-                        selectedFilters={selectedFilters}
-                        setSelectedFilters={setSelectedFilters}
+                        {...menuFilterProps}
+                    />
+                )}
+                {featuredRecipes.INGREDIENTS && (
+                    <MenuFilter
+                        label="Ingredients"
+                        items={getMenuFilterItems(featuredRecipes.INGREDIENTS)}
+                        itemType="ingredients"
+                        {...menuFilterProps}
                     />
                 )}
             </div>
@@ -312,11 +319,11 @@ export const Recipes = ({ history }) => {
                 filteredRecipes.length ? (
                     <>
                         {groupedBy === GROUPED_BY_GENRE ||
-                            (groupedBy === GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT && selectedFilters.ingredients?.length) ||
+                            !!selectedFilters.ingredients?.length ||
                             groupedBy === GROUPED_BY_INGREDIENTS_COUNT_ASCENDING ||
                             groupedBy === GROUPED_BY_INGREDIENTS_COUNT_DESCENDING ? groupedFilteredRecipes.map(([genre, recipes]) => {
                                 let genreLabel = genre;
-                                if (groupedBy === GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT) {
+                                if (!!selectedFilters.ingredients?.length) {
                                     const totalSearchIngredientsCount = selectedFilters.ingredients?.length;
                                     genreLabel = `${genre} / ${totalSearchIngredientsCount} matching ingredients`;
                                 } else if (groupedBy === GROUPED_BY_INGREDIENTS_COUNT_ASCENDING || groupedBy === GROUPED_BY_INGREDIENTS_COUNT_DESCENDING) {

@@ -25,10 +25,10 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
     }
 
     const checkSelectedImageOption = (img) => {
-        const no = selectedFilters.image.includes('No'); 
+        const no = selectedFilters.image.includes('No');
         const yes = selectedFilters.image.includes('Yes');
         const all = no && yes;
-        
+
         if (all) return true;
         if (no && !img) return true;
         if (yes && img) return true;
@@ -36,10 +36,10 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
     }
 
     const checkWIP = (wip) => {
-        const no = selectedFilters.wip.includes('No'); 
+        const no = selectedFilters.wip.includes('No');
         const yes = selectedFilters.wip.includes('Yes');
         const all = no && yes;
-        
+
         if (all) return true;
         if (no && !wip) return true;
         if (yes && wip) return true;
@@ -48,7 +48,7 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
 
     const availableFilteredRecipes = filteredRecipes.filter(item => !!item.available);
     const filteredRecipeBySelectedFilters = availableFilteredRecipes.filter(item => {
-        const { category, diet, genre, image, method, protein, type, wip } = selectedFilters;        
+        const { category, diet, genre, image, method, protein, type, wip } = selectedFilters;
         return (
             (!category.length || filterRecipeBySelectedFilters(item.category || [], category)) &&
             (!diet.length || filterRecipeBySelectedFilters(item.diet || [], diet)) &&
@@ -56,7 +56,7 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
             (!method.length || filterRecipeBySelectedFilters(item.method || [], method)) &&
             (!protein.length || filterRecipeBySelectedFilters(item.protein || [], protein)) &&
             (!type.length || filterRecipeBySelectedFilters(item.type || [], type)) &&
-            (!image.length || checkSelectedImageOption(item.img)) && 
+            (!image.length || checkSelectedImageOption(item.img)) &&
             (!wip?.length || checkWIP(item.wip))
         );
     });

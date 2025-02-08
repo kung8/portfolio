@@ -166,17 +166,35 @@
                     margin-bottom: 8px;
                     border-radius: 16px;
                     opacity: 0.45;
-                    background: rgba(240, 234, 214, 0.5);
+                    background: $grey;
                     transition: opacity 0.3s ease-in-out;
+                    &:hover {
+                        opacity: 1;
+                        background: $hover !important;
+                    }
 
                     &.includes-menu-item {
                         opacity: 1;
                         background: none;
+                        &:hover {
+                            opacity: 0.45;
+                            background: $grey !important;
+                        }
+                    }
+
+                    &.includes-menu-item-with-no-image {
+                        opacity: 1;
+                        background: $hover;
+                        &:hover {
+                            opacity: 0.45;
+                            background: $grey !important;
+                        }
                     }
                 }
 
                 .menu-label {
                     font-size: 10px;
+                    text-align: center;
                 }
             }
         }
@@ -448,8 +466,6 @@
         justify-content: center;
         margin-top: 100px;
     }
-
-    @import "./RecipeFilterContainer";
 
     .loader-container {
         width: 100%;
