@@ -5,6 +5,7 @@ const heroes = require('./data/superheroData');
 const components = require('./data/components');
 const education = require('./data/education');
 const experiences = require('./data/experiences');
+const featuredRecipes = require('./data/featured-recipes');
 const friends = require('./data/episodes/friends');
 const hymns = require('./data/hymns');
 const ingredients = require('./data/recipes/ingredients');
@@ -35,10 +36,10 @@ const convertIdToName = (id) =>
         .join(' ');
 
 module.exports = {
-    getHeroData: async (_req, res) => {
+    getHeroData: (_req, res) => {
         res.send(heroes);
     },
-    getData: async (req, res) => {
+    getData: (req, res) => {
         const { type, id } = req.query;
         if (id) {
             const name = convertIdToName(id).replace(/-/g, ' ').toLowerCase();
@@ -47,20 +48,25 @@ module.exports = {
         }
         return res.send(data[type] ?? []);
     },
-    getIngredients: async (_req, res) => {
+    getIngredients: (_req, res) => {
         res.send(ingredients);
     },
-    getIngredientCategories: async (_req, res) => {
+    getIngredientCategories: (_req, res) => {
         res.send(ingredientCategories);
     },
-    getRecipeCategories: async (_req, res) => {
-        const category = recipes.flatMap(recipe => recipe.category);
-        const diet = recipes.flatMap(recipe => recipe.diet);
-        const genre = recipes.flatMap(recipe => recipe.genre);
-        const method = recipes.flatMap(recipe => recipe.method);
-        const protein = recipes.flatMap(recipe => recipe.protein);
-        const type = recipes.flatMap(recipe => recipe.type);
+    getFeaturedRecipes: (_req, res) => {
+        res.send(featuredRecipes);
+    },
+    getRecipeCategories: (_req, res) => {
+        // get the unique values for each type of recipe categorization      
+        const category = [...new Set(recipes.flatMap(recipe => recipe.available ? recipe.category : []))].filter(Boolean);
+        const diet = [...new Set(recipes.flatMap(recipe => recipe.available ? recipe.diet : []))].filter(Boolean);
+        const genre = [...new Set(recipes.flatMap(recipe => recipe.available ? recipe.genre : []))].filter(Boolean);
+        const method = [...new Set(recipes.flatMap(recipe => recipe.available ? recipe.method : []))].filter(Boolean);
+        const protein = [...new Set(recipes.flatMap(recipe => recipe.available ? recipe.protein : []))].filter(Boolean);
+        const type = [...new Set(recipes.flatMap(recipe => recipe.available ? recipe.type : []))].filter(Boolean);
 
+        // only return the values that are included within at least one found recipe
         return res.send({
             CATEGORIES: Object.values(recipeCategories.CATEGORIES).filter(item => category.includes(item)),
             DIET: Object.values(recipeCategories.DIET).filter(item => diet.includes(item)),

@@ -27,7 +27,7 @@ module.exports = {
     name: 'Basil Pesto',
     img: plated,
     available: true,
-    category: [CATEGORIES.SAUCE],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BLEND],
     protein: [PROTEIN.PINE_NUT],

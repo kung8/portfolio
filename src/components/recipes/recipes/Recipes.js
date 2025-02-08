@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useQueryClient } from 'react-query';
 import Fuse from 'fuse.js';
 import { useDebounce } from 'use-debounce';
-import { useGetData, useGetRecipeCategories } from '../../../hooks';
+import { useGetData, useGetFeaturedRecipes } from '../../../hooks';
 import { convertToKebabCase } from '../../../utils';
 import { NonDashboardPage } from '../../Page';
 import { EmptyRecipeContainer } from './EmptyRecipeContainer';
@@ -17,11 +17,11 @@ import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { RecipeFilterModal } from './RecipeFilterModal';
 import { handleModalClass } from '../utils/handle-modal-class';
 import { GROUPED_BY_ALPHABETIC, GROUPED_BY_GENRE, GROUPED_BY_OVERLAPPING_INGREDIENTS_COUNT, GROUPED_BY_NONE, RECIPES_FILTERS_LOCAL_STORAGE_KEY, RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, GROUPED_BY_INGREDIENTS_COUNT_ASCENDING, GROUPED_BY_INGREDIENTS_COUNT_DESCENDING } from '../constants';
-import closeBtn from '../../../Assets/x.png';
 import { Legend } from './Legend';
 import { RecipeSortFilter } from './RecipeSortFilter';
 import { Greeting } from './Greeting';
 import { MenuFilter } from './MenuFilter';
+import { FilterChips } from './FilterChips';
 
 export const defaultSelectedFilters = {
     category: [],
@@ -40,7 +40,7 @@ export const Recipes = ({ history }) => {
     const queryClient = useQueryClient();
     const queryKey = ['getData', 'recipes', undefined];
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
-    const { data: categoryData } = useGetRecipeCategories();
+    const { data: featuredRecipes = {} } = useGetFeaturedRecipes();
 
     const getInitialSelectedFilters = () => {
         const filters = localStorage.getItem(RECIPES_FILTERS_LOCAL_STORAGE_KEY)
@@ -279,59 +279,48 @@ export const Recipes = ({ history }) => {
                     }}
                 />
             </NonDashboardPage.Header>
-            <div className={`filter-chips ${formattedFilters.length > 0 ? 'show' : ''}`}>
-                {formattedFilters.map((filter, index) => (
-                    <div
-                        key={index}
-                        className="chip"
-                        onClick={() => {
-                            if (filter.prop === 'search') {
-                                setSearch('');
-                                setSelectedFilters({
-                                    ...selectedFilters,
-                                    [filter.prop]: '',
-                                });
-                                return;
-                            } else {
-                                setSelectedFilters({
-                                    ...selectedFilters,
-                                    [filter.prop]: selectedFilters[filter.prop].filter(item => item !== filter.value),
-                                });
-                            }
-                        }}>
-                        <span>{filter.label}</span>
-                        <img src={closeBtn} alt="close" />
-                    </div>
-                ))}
-            </div>
 
             <Greeting />
+
             <div className="menu-filters-container">
-                {categoryData?.CATEGORIES && recipes.length > 0 && (
+                {featuredRecipes.CATEGORIES && (
                     <MenuFilter
                         label="Categories"
-                        items={categoryData?.CATEGORIES?.reduce((acc, category) => {
-                            const foundRecipe = [...recipes]?.reverse()?.find(recipe => recipe.available && !recipe.wip && recipe.img && !acc.find(r => r?.name === recipe.name) && recipe.category?.find(c => c === category))
-                            return [...acc, { ...foundRecipe, itemType: category }];
-                        }, [])}
+                        items={Object.entries(featuredRecipes.CATEGORIES).map(([key, value]) => ({ ...value, itemType: key }))}
                         itemType="category"
                         selectedFilters={selectedFilters}
                         setSelectedFilters={setSelectedFilters}
                     />
                 )}
-                {categoryData?.GENRES && recipes.length > 0 && (
+                {featuredRecipes.GENRES && (
                     <MenuFilter
                         label="Genres"
-                        items={categoryData?.GENRES?.reduce((acc, genre) => {
-                            const foundRecipe = [...recipes]?.find(recipe => recipe.available && !recipe.wip && recipe.img && !acc.find(r => r?.name === recipe.name) && recipe.genre?.find(c => c === genre))
-                            return [...acc, foundRecipe && { ...foundRecipe, itemType: genre }].filter(Boolean);
-                        }, [])}
+                        items={Object.entries(featuredRecipes.GENRES).map(([key, value]) => ({ ...value, itemType: key }))}
                         itemType="genre"
                         selectedFilters={selectedFilters}
                         setSelectedFilters={setSelectedFilters}
                     />
                 )}
             </div>
+
+            <FilterChips
+                formattedFilters={formattedFilters} 
+                onClick={(filter) => {
+                    if (filter.prop === 'search') {
+                        setSearch('');
+                        setSelectedFilters({
+                            ...selectedFilters,
+                            [filter.prop]: '',
+                        });
+                        return;
+                    } else {
+                        setSelectedFilters({
+                            ...selectedFilters,
+                            [filter.prop]: selectedFilters[filter.prop].filter(item => item !== filter.value),
+                        });
+                    }
+                }}
+            />
 
             <div
                 id="modal-tray-overlay"
