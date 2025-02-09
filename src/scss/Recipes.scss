@@ -12,10 +12,6 @@
         padding-left: 56px;
         padding-right: 56px;
         margin-bottom: 24px;
-        @include down($mobile-xl) {
-            flex-direction: column;
-            align-items: flex-start;
-        }
         @include down($mobile) {
             padding-left: 24px;
             padding-right: 24px;
@@ -26,41 +22,35 @@
         }
     }
 
-    .search-and-filter-visible-toggle-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        column-gap: 16px;
-        padding: 48px 16px 24px;
-        margin: 0 4px;
-        @include down($mobile-xl) {
-            width: 100%;
-        }
-
-        .x-img {
-            height: 24px;
-            width: 24px;
-            transform: rotate(135deg);
-            transition: transform 0.3s ease-in-out;
-            cursor: pointer;
-
-            &.rotate {
-                transform: rotate(270deg);
-            }
-        }
-    }
-
     .list-img {
         height: 24px;
         cursor: pointer;
     }
 
     .filter-chips-container {
-        padding: 16px 16px 48px;
+        padding: 48px 12px 24px;
         margin: 0 4px;
+        &.hidden-filters {
+            padding-bottom: 56px;
+        }
 
-        .filtered-by-label {
+        .filtered-by-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 16px;
+
+            .x-img {
+                height: 16px;
+                width: 16px;
+                transform: rotate(135deg);
+                transition: transform 0.3s ease-in-out;
+                cursor: pointer;
+        
+                &.rotate {
+                    transform: rotate(270deg);
+                }
+            }
         }
 
         .filter-chips {
@@ -133,6 +123,20 @@
         }
     }
 
+    .search-and-filter-visible-toggle-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 16px;
+        padding: 24px 12px;
+        margin: 0 4px;
+        transition: display 0.3s ease-in-out;
+
+        &.hide {
+            display: none;
+        }
+    }
+
     .menu-filters-container {
         display: none;
         transition: display 0.3s ease-in-out;
@@ -142,7 +146,11 @@
 
         .menu-filter-container {
             margin: 0 4px;
-            padding: 20px 16px;
+            padding: 20px 12px;
+
+            &:last-of-type {
+                padding-bottom: 56px;
+            }
 
             .menu-type {
                 margin-bottom: 16px;

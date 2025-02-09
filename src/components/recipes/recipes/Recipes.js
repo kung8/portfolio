@@ -262,10 +262,30 @@ export const Recipes = ({ history }) => {
 
             <Greeting />
 
+            <FilterChips
+                formattedFilters={formattedFilters}
+                onClick={(filter) => {
+                    if (filter.prop === 'search') {
+                        setSearch('');
+                        setSelectedFilters({
+                            ...selectedFilters,
+                            [filter.prop]: '',
+                        });
+                        return;
+                    } else {
+                        setSelectedFilters({
+                            ...selectedFilters,
+                            [filter.prop]: selectedFilters[filter.prop].filter(item => item !== filter.value),
+                        });
+                    }
+                }}
+                setShowFilters={setShowFilters}
+                showFilters={showFilters}
+            />
+
             <RecipeSearchBar
                 search={search}
                 setSearch={setSearch}
-                setShowFilters={setShowFilters}
                 showFilters={showFilters}
             />
 
@@ -295,25 +315,6 @@ export const Recipes = ({ history }) => {
                     />
                 )}
             </div>
-
-            <FilterChips
-                formattedFilters={formattedFilters}
-                onClick={(filter) => {
-                    if (filter.prop === 'search') {
-                        setSearch('');
-                        setSelectedFilters({
-                            ...selectedFilters,
-                            [filter.prop]: '',
-                        });
-                        return;
-                    } else {
-                        setSelectedFilters({
-                            ...selectedFilters,
-                            [filter.prop]: selectedFilters[filter.prop].filter(item => item !== filter.value),
-                        });
-                    }
-                }}
-            />
 
             {isLoaded ? (
                 filteredRecipes.length ? (

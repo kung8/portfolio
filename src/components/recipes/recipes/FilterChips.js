@@ -1,10 +1,18 @@
 import React from 'react';
 import closeBtn from '../../../Assets/x.png';
 
-export const FilterChips = ({ formattedFilters, onClick}) => {
+export const FilterChips = ({ formattedFilters, onClick, setShowFilters, showFilters }) => {
     return (
-        <div className="filter-chips-container">
-            <p className="filtered-by-label">Filtered By:</p>
+        <div className={`filter-chips-container ${showFilters ? '' : 'hidden-filters'}`}>
+            <div className="filtered-by-header-container">
+                <p className="filtered-by-label">Filtered By:</p>
+                <img
+                    className={`x-img ${showFilters ? 'rotate' : ''}`}
+                    onClick={() => setShowFilters(!showFilters)}
+                    src={closeBtn}
+                    alt="Show filters"
+                />
+            </div>
             <div className={`filter-chips ${formattedFilters.length > 0 ? 'show' : ''}`}>
                 {formattedFilters.map((filter, index) => (
                     <div
