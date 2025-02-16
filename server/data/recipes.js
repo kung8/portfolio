@@ -81,6 +81,7 @@ const cinnamonRolls = require("./recipes/cinnamon-rolls");
 const coconutChicken = require("./recipes/coconut-chicken");
 const coffeeCake = require("./recipes/coffee-cake");
 const coleslaw = require("./recipes/coleslaw");
+const cowboyButterChickenWings = require("./recipes/cowboy-butter-chicken-wings");
 const crabCakes = require("./recipes/crab-cakes");
 const crabRangoon = require("./recipes/crab-rangoon");
 const creamPuffs = require("./recipes/cream-puffs");
@@ -419,6 +420,7 @@ const recipes = [
     bakedBeans,
     crescentRolls,
     dinnerRolls,
+    cowboyButterChickenWings,
     bbqChickenWings,
     rosemaryFries,
     panFriedChickenThighs,
