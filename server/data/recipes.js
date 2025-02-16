@@ -139,7 +139,6 @@ const khmerRedCurry = require("./recipes/khmer-red-curry");
 const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
 const koreanFriedChicken = require("./recipes/korean-fried-chicken");
 const kungPaoChicken = require("./recipes/kung-pao-chicken");
-const lasagna = require("./recipes/lasagna");
 const lemonBars = require("./recipes/lemon-bars");
 const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
 const lemonChickenRamen = require("./recipes/lemon-chicken-ramen");
@@ -341,7 +340,6 @@ const recipes = [
     // ITALIAN
     carbonara,
     italianLasagna,
-    lasagna, // TODO: add (and determine if this is better than italianLasagna)
     pizza,
     chickenCordonBleu,
     porkMilanese,

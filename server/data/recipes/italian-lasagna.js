@@ -36,6 +36,9 @@ module.exports = {
     yields: '12 servings',
     prepTime: '15 m',
     cookTime: '3 h',
+    websites: [
+        { label: 'Lasagna', link: 'https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/' }
+    ],
     ingredients: [
         { ...ITALIAN_SAUSAGE, amount: '1 lb', additionalDetails: '', optional: false },
         { ...GROUND_BEEF, amount: '3/4 lb', additionalDetails: '', optional: false },
