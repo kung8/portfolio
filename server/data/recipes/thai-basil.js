@@ -12,7 +12,6 @@ const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./con
 const { CHICKEN_BROTH, OYSTER_SAUCE, LIGHT_SOY_SAUCE, FISH_SAUCE, WHITE_SUGAR, BROWN_SUGAR, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHALLOTS, GARLIC, THAI_CHILI_PEPPERS, BASIL_LEAVES, JASMINE_RICE } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Spicy Thai Basil',
     name: 'Spicy Thai Basil (Pad Krapow Gai)',
     img: basil8,
