@@ -20,6 +20,7 @@ const beefTacos = require("./recipes/beef-tacos");
 const beignets = require("./recipes/beignets");
 const bibimbap = require("./recipes/bibimbap");
 const bigMac = require("./recipes/big-mac");
+const birriaTacos = require("./recipes/birria-tacos");
 const biscoffCookiePie = require("./recipes/biscoff-cookie-pie");
 const biscuits = require("./recipes/biscuits");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
@@ -329,6 +330,7 @@ const recipes = [
     // MEXICAN
     mexicanCilantroLimeChicken,
     chickenQuesadilla,
+    birriaTacos,
     mexicanEnchiladas,
     beefAndBeanChimichangas,
     cafeRioBowl,
