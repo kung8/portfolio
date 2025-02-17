@@ -93,6 +93,7 @@ const crescentRolls = require("./recipes/crescent-rolls");
 const croissants = require("./recipes/croissants");
 const dijonChicken = require("./recipes/dijon-chicken");
 const dinnerRolls = require("./recipes/dinner-rolls");
+const drunkenNoodles = require("./recipes/drunken-noodles");
 const eclair = require("./recipes/eclair");
 const eggCasserole = require("./recipes/egg-casserole");
 const englishScones = require("./recipes/english-scones");
@@ -233,6 +234,7 @@ const vietnameseStuffedTomatoes = require("./recipes/vietnamese-stuffed-tomatoes
 const waffles = require("./recipes/waffles");
 const wrap = require("./recipes/wrap");
 const yellowCurry = require("./recipes/yellow-curry");
+const yorsStew = require("./recipes/yors-stew");
 
 const recipes = [
     //////////////////////////////////////////////////////////////////////// ASIAN ///////////////////////////////////////////////////////////////////////  
@@ -245,6 +247,7 @@ const recipes = [
     mangoStickyRice,
     thaiMassamanCurry, // TODO: find recipe
     coconutChicken, // TODO: add
+    drunkenNoodles, // TODO: add
 
     // INDIAN
     chickenBiryani,
@@ -272,6 +275,7 @@ const recipes = [
     lemonChickenRamen,
     chickenRamen,
     mochi,
+    yorsStew, // TODO: add
 
     // KOREAN
     koreanBeefBulgogi,
@@ -548,3 +552,21 @@ module.exports = recipes;
 // DESSERT:
 // - Brownies - https://www.loveandlemons.com/brownies-recipe/
 
+
+// Chelsey's Recipes to Add:
+// The Best Vegan Chocolate Cake (https://drive.google.com/file/d/1qokvvTSvBUNPG-emDBdWWGDC6bZJUA6Y/view?fbclid=IwY2xjawIfTthleHRuA2FlbQIxMAABHXA6K0n-MSk87IxBNd9zEPRf_2juEzIvI4wMpHOQ3YQqCpdq9ead33OwKA_aem_yOMPv648tIKxgtoZ38M-6g)
+// Best Ever Vegan Waffles (https://drive.google.com/file/d/1vWPiET0ImRdgXh2GS5B5H251y0ZIWDYZ/view?fbclid=IwY2xjawIfTtJleHRuA2FlbQIxMAABHWezhniFBcVhc_aIfe6Af1S23NPoPcpTVXrD1nA3cImdgqI29b1woKNxsg_aem_XIexmWX_dj0wt0Rh9hBhzQ)
+// Vegan Sushi with Tomato Spicy Tuna (https://drive.google.com/file/d/1Y7UFOMpM8PcEXzpmCX47gbdKStMyOJCD/view?fbclid=IwY2xjawIfTsxleHRuA2FlbQIxMAABHeRbBdgqQimVVtzmox4BNMndXLkm_oCZ6zohG4dXMwCJVFie9BH1kcm_YQ_aem_-epiQxQ39Z19Edrx2a6ycQ)
+// Samosa Burritos (https://drive.google.com/file/d/1dai60E7EZMmyI3HRXmqOTUH5cSR6UzIW/view?fbclid=IwY2xjawIfTsBleHRuA2FlbQIxMAABHWSScmlsOjIXkQPGq3aoK2tjXN8rK6-cEfTRPX6bpd3DG1rmgWKHu-YSuw_aem_q1ddvgfK4cA6VDlndKx8rQ)
+// Pici Pasta (https://drive.google.com/file/d/11PCN55VAe2hAg_9hAq1Fm9d8dL2Da9F-/view?fbclid=IwY2xjawIfTrdleHRuA2FlbQIxMAABHfXmOdry4vTwvMnKkRabiPQIiNOv0HuUB_Teh0AZvPevluR9OzdZdBDsLA_aem_wBmdVLkajaS_oARCwQaCcg)
+// Instant Pot Lentil Sloppy Joes (https://drive.google.com/file/d/1dn8ObmBBBCX2MEc7GoUvpaLQR1x0SK__/view?fbclid=IwY2xjawIfTptleHRuA2FlbQIxMAABHeRbBdgqQimVVtzmox4BNMndXLkm_oCZ6zohG4dXMwCJVFie9BH1kcm_YQ_aem_-epiQxQ39Z19Edrx2a6ycQ)
+
+// Zam's Recipes to Add:
+// Mexican Meatball Soup (https://www.mexicoinmykitchen.com/mexican-meatball-soup-recipe/?fbclid=IwY2xjawIfTotleHRuA2FlbQIxMAABHQYcxHPcv1hhY25EjsAP33ufzYdcUKwRuldIir42OU8j8QqMZ9iXbduoEg_aem_WbP6pIyotuLceI-yiIsTIw)
+
+
+// Lauren Maliwauki's Recipes to Add:
+// Chicken Tetrazzini (https://iamhomesteader.com/chicken-tetrazzini/?fbclid=IwY2xjawIfTm5leHRuA2FlbQIxMAABHfXmOdry4vTwvMnKkRabiPQIiNOv0HuUB_Teh0AZvPevluR9OzdZdBDsLA_aem_wBmdVLkajaS_oARCwQaCcg)
+
+// Butter Toffee (https://uglydesserts.com/2025/01/24/homemade-butter-toffee/)
+// Mochi (https://parade.com/food/two-ingredient-mochi)
