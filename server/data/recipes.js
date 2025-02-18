@@ -33,6 +33,7 @@ const broccoliCheddarSoup = require("./recipes/broccoli-cheddar-soup");
 const brownedButter = require("./recipes/browned-butter");
 const brownedButterChocolateChipCookies = require("./recipes/browned-butter-chocolate-chip-cookies");
 const brownies = require("./recipes/brownies");
+const brownies2 = require("./recipes/brownies-2");
 const bulgurPilaf = require("./recipes/bulgur-pilaf");
 const butteredCorn = require("./recipes/buttered-corn");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
@@ -510,6 +511,7 @@ const recipes = [
     blondie,
     brickleBars,
     brownies,
+    brownies2,
     tedLassoBiscuits,
     lemonBars,
     appleTart,
@@ -548,10 +550,6 @@ module.exports = recipes;
 
 // MEXICAN:
 // - Tortillas - 
-
-// DESSERT:
-// - Brownies - https://www.loveandlemons.com/brownies-recipe/
-
 
 // Chelsey's Recipes to Add:
 // The Best Vegan Chocolate Cake (https://drive.google.com/file/d/1qokvvTSvBUNPG-emDBdWWGDC6bZJUA6Y/view?fbclid=IwY2xjawIfTthleHRuA2FlbQIxMAABHXA6K0n-MSk87IxBNd9zEPRf_2juEzIvI4wMpHOQ3YQqCpdq9ead33OwKA_aem_yOMPv648tIKxgtoZ38M-6g)
