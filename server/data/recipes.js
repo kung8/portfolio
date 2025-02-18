@@ -248,7 +248,7 @@ const recipes = [
     mangoStickyRice,
     thaiMassamanCurry, // TODO: find recipe
     coconutChicken, // TODO: add
-    drunkenNoodles, // TODO: add
+    drunkenNoodles,
 
     // INDIAN
     chickenBiryani,

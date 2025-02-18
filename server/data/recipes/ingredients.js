@@ -1025,6 +1025,7 @@ const INGREDIENTS = {
         SWEETCORN: { name: 'sweetcorn', category: INGREDIENT_CATEGORY.PRODUCE },
         TANGERINES: { name: 'tangerines', category: INGREDIENT_CATEGORY.PRODUCE },
         TARO: { name: 'taro', category: INGREDIENT_CATEGORY.PRODUCE },
+        THAI_BASIL: { name: 'thai basil', category: INGREDIENT_CATEGORY.PRODUCE },
         THAI_CHILI_PEPPERS: { name: 'thai chili peppers', category: INGREDIENT_CATEGORY.PRODUCE },
         TOFU: { name: 'tofu', category: INGREDIENT_CATEGORY.PRODUCE },
         VINE_TOMATOES: { name: 'vine tomatoes', category: INGREDIENT_CATEGORY.PRODUCE },
