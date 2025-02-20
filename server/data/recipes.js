@@ -158,6 +158,7 @@ const mashPotatoes = require("./recipes/mash-potatoes");
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
 const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chicken");
 const mexicanEnchiladas = require("./recipes/mexican-enchiladas");
+const mexicanMeatballSoup = require("./recipes/mexican-meatball-soup");
 const mochi = require("./recipes/mochi");
 const monteCristoSandwich = require("./recipes/monte-cristo-sandwich");
 const muddyBuddies = require("./recipes/muddy-buddies");
@@ -342,6 +343,7 @@ const recipes = [
     beefTacos,
     tacoInABag,
     mexicanChickenBake, // TODO: find recipe
+    mexicanMeatballSoup,
     guacamole,
 
     ////////////////////////////////////////////////////////////////////// EUROPEAN //////////////////////////////////////////////////////////////////////  
@@ -558,10 +560,6 @@ module.exports = recipes;
 // Samosa Burritos (https://drive.google.com/file/d/1dai60E7EZMmyI3HRXmqOTUH5cSR6UzIW/view?fbclid=IwY2xjawIfTsBleHRuA2FlbQIxMAABHWSScmlsOjIXkQPGq3aoK2tjXN8rK6-cEfTRPX6bpd3DG1rmgWKHu-YSuw_aem_q1ddvgfK4cA6VDlndKx8rQ)
 // Pici Pasta (https://drive.google.com/file/d/11PCN55VAe2hAg_9hAq1Fm9d8dL2Da9F-/view?fbclid=IwY2xjawIfTrdleHRuA2FlbQIxMAABHfXmOdry4vTwvMnKkRabiPQIiNOv0HuUB_Teh0AZvPevluR9OzdZdBDsLA_aem_wBmdVLkajaS_oARCwQaCcg)
 // Instant Pot Lentil Sloppy Joes (https://drive.google.com/file/d/1dn8ObmBBBCX2MEc7GoUvpaLQR1x0SK__/view?fbclid=IwY2xjawIfTptleHRuA2FlbQIxMAABHeRbBdgqQimVVtzmox4BNMndXLkm_oCZ6zohG4dXMwCJVFie9BH1kcm_YQ_aem_-epiQxQ39Z19Edrx2a6ycQ)
-
-// Zam's Recipes to Add:
-// Mexican Meatball Soup (https://www.mexicoinmykitchen.com/mexican-meatball-soup-recipe/?fbclid=IwY2xjawIfTotleHRuA2FlbQIxMAABHQYcxHPcv1hhY25EjsAP33ufzYdcUKwRuldIir42OU8j8QqMZ9iXbduoEg_aem_WbP6pIyotuLceI-yiIsTIw)
-
 
 // Lauren Maliwauki's Recipes to Add:
 // Chicken Tetrazzini (https://iamhomesteader.com/chicken-tetrazzini/?fbclid=IwY2xjawIfTm5leHRuA2FlbQIxMAABHfXmOdry4vTwvMnKkRabiPQIiNOv0HuUB_Teh0AZvPevluR9OzdZdBDsLA_aem_wBmdVLkajaS_oARCwQaCcg)
