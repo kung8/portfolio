@@ -20,7 +20,8 @@ import {
     RECIPES_FILTERS_LOCAL_STORAGE_KEY,
     RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY,
     GROUPED_BY_INGREDIENTS_COUNT_ASCENDING,
-    GROUPED_BY_INGREDIENTS_COUNT_DESCENDING
+    GROUPED_BY_INGREDIENTS_COUNT_DESCENDING,
+    RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY,
 } from '../constants';
 import { Legend } from './Legend';
 import { RecipeSortFilter } from './RecipeSortFilter';
@@ -244,7 +245,8 @@ export const Recipes = ({ history }) => {
     }, []);
 
     // filter logic
-    const [showFilters, setShowFilters] = useState(true);
+    const getFilterDrawerOpen = () => localStorage.getItem(RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY);
+    const [showFilters, setShowFilters] = useState(getFilterDrawerOpen());
     const getMenuFilterItems = (obj) => Object.entries(obj).map(([key, { img, name }]) => ({ img, itemType: key, name }));
     const menuFilterProps = { selectedFilters, setSelectedFilters };
 
@@ -264,7 +266,7 @@ export const Recipes = ({ history }) => {
 
             <FilterChips
                 formattedFilters={formattedFilters}
-                onClick={(filter) => {
+                onChipClick={(filter) => {
                     if (filter.prop === 'search') {
                         setSearch('');
                         setSelectedFilters({
@@ -279,7 +281,11 @@ export const Recipes = ({ history }) => {
                         });
                     }
                 }}
-                setShowFilters={setShowFilters}
+                onFilterDrawerClick={() => {
+                    const newShowFilters = !showFilters;
+                    setShowFilters(newShowFilters);
+                    localStorage.setItem(RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY, newShowFilters);
+                }}
                 showFilters={showFilters}
             />
 
