@@ -31,12 +31,12 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...SWEET_SOY_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...OYSTER_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...FISH_SAUCE, amount: '1 1/2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHITE_SUGAR, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SRIRACHA_SAUCE, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SWEET_SOY_SAUCE, amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OYSTER_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...FISH_SAUCE, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SRIRACHA_SAUCE, amount: '2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: '2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...THAI_BASIL, amount: '6 - 8 leaves', additionalDetails: 'long thin strips/chiffonade', section: SECTIONS.SAUCE },
 
         { ...PEANUT_OIL, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.NOODLES },
@@ -45,7 +45,7 @@ module.exports = {
         { ...SERRANO_PEPPERS, amount: '1 - 2', additionalDetails: 'thinly sliced', section: SECTIONS.NOODLES },
         { ...LARGE_SHRIMP, amount: '6 - 8', additionalDetails: 'peeled and deveined', section: SECTIONS.NOODLES },
         { ...WHITE_ONION, amount: '1/2 medium', additionalDetails: 'sliced', section: SECTIONS.NOODLES },
-        { ...FRESH_RICE_NOODLES, amount: '4 c', additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...FRESH_RICE_NOODLES, amount: '16 oz', additionalDetails: '', section: SECTIONS.NOODLES },
         { ...THAI_BASIL, amount: '1 c', additionalDetails: 'packed', section: SECTIONS.NOODLES },
         { ...GRAPE_TOMATOES, amount: '1/2 c', additionalDetails: '', section: SECTIONS.NOODLES },
     ],
@@ -69,6 +69,7 @@ module.exports = {
     notes: [
         { note: 'Make sure the fresh rice noodles are thawed and at room temperature before cooking.', },
         { note: 'I would recommend using thicker flat noodles for this dish.', },
-        { note: 'It was difficult to prevent the noodles from breaking into tiny pieces. But handling it less and making sure it cooks enough with the sauce, can all help it from breaking.' }
+        { note: 'It was difficult to prevent the noodles from breaking into tiny pieces. But handling it less and making sure it cooks enough with the sauce, can all help it from breaking.' },
+        { note: 'When I made this dish I had not updated the sauce ingredient amounts (i.e. it is now doubled). I\'m more used to a saucier drunken noodle dish. I will remake this dish and update the images.', }
     ]
 };
