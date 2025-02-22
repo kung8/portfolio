@@ -1,4 +1,10 @@
-// const example = '../assets/Products/example.jpeg';
+const drunken1 = '../assets/Products/drunken-noodles-1.jpeg';
+const drunken2 = '../assets/Products/drunken-noodles-2.jpeg';
+const drunken3 = '../assets/Products/drunken-noodles-3.jpeg';
+const drunken4 = '../assets/Products/drunken-noodles-4.jpeg';
+const drunken5 = '../assets/Products/drunken-noodles-5.jpeg';
+const drunken6 = '../assets/Products/drunken-noodles-6.jpeg';
+const drunken7 = '../assets/Products/drunken-noodles-7.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGGS, SERRANO_PEPPERS, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATOES } = require('./ingredients');
 
@@ -6,13 +12,12 @@ const MAKE_SAUCE = 'Make Sauce';
 const COOK_NOODLES = 'Cook Noodles';
 
 module.exports = {
-    wip: true,
     cardName: 'Drunken Noodles',
     name: 'Drunken Noodles',
-    img: '',
+    img: drunken6,
     recipeCredit: 'Amanda Berg',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.THAI, GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],
@@ -52,13 +57,18 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'In a small bowl, combine the "Sauce" section ingredients.', type: MAKE_SAUCE },
+        { step: 'In a small bowl, combine the "Sauce" section ingredients.', type: MAKE_SAUCE, img: drunken1 },
         { step: 'Over high heat, add oil to a wok.', type: COOK_NOODLES },
-        { step: 'Add garlic and cook until light brown.', type: COOK_NOODLES },
-        { step: 'Add eggs and serrano peppers. Lightly scramble and cook until it is barely set (about 1 minute).', type: COOK_NOODLES },
-        { step: 'Add shrimp and onion. Cook and fold until shrimp becomes pink (about 1 minute).', type: COOK_NOODLES },
-        { step: 'Add noodles, basil, tomatoes and sauce. Stir and cook (about 3 minutes). Be sure to scrape the bottom.', type: COOK_NOODLES },
+        { step: 'Add garlic and cook until light brown.', type: COOK_NOODLES, img: drunken2 },
+        { step: 'Add eggs and serrano peppers. Lightly scramble and cook until it is barely set (about 1 minute).', type: COOK_NOODLES, img: drunken3 },
+        { step: 'Add shrimp and onion. Cook and fold until shrimp becomes pink (about 1 minute).', type: COOK_NOODLES, img: drunken4 },
+        { step: 'Add noodles, basil, tomatoes and sauce. Stir and cook (about 3 minutes). Be sure to scrape the bottom.', type: COOK_NOODLES, img: drunken5 },
         { step: 'Cook until the noodles are cooked and coated (about 1 minute).', type: COOK_NOODLES },
-        { step: 'Enjoy this dish warm!', type: SECTIONS.SERVE },
+        { step: 'Enjoy this dish warm!', type: SECTIONS.SERVE, img: drunken7 },
+    ],
+    notes: [
+        { note: 'Make sure the fresh rice noodles are thawed and at room temperature before cooking.', },
+        { note: 'I would recommend using thicker flat noodles for this dish.', },
+        { note: 'It was difficult to prevent the noodles from breaking into tiny pieces. But handling it less and making sure it cooks enough with the sauce, can all help it from breaking.' }
     ]
 };

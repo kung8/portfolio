@@ -61,9 +61,9 @@ module.exports = {
         { ...SALT, amount: '', additionalDetails: '', section: SALAD_SECTION },
         { ...BLACK_PEPPER, amount: '', additionalDetails: '', section: SALAD_SECTION },
 
+        { ...BASMATI_RICE, amount: '1.5 c', additionalDetails: '', section: RICE_SECTION },
         { ...VEGETABLE_OIL, amount: '1.5 Tbsp', additionalDetails: '', section: RICE_SECTION },
         { ...GARLIC, amount: '3', additionalDetails: 'minced', section: RICE_SECTION },
-        { ...BASMATI_RICE, amount: '1.5 c', additionalDetails: '', section: RICE_SECTION },
         { ...CHICKEN_BROTH, amount: '3 c', additionalDetails: '', section: RICE_SECTION },
         { ...CRUSHED_TOMATOES, amount: '3/4 c', additionalDetails: '', section: RICE_SECTION },
         { ...NANDOS_PERI_PERI_SAUCE, amount: '1.5 Tbsp', additionalDetails: '', section: RICE_SECTION },
