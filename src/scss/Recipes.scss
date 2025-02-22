@@ -176,26 +176,32 @@
                     opacity: 0.45;
                     background: $grey;
                     transition: opacity 0.3s ease-in-out;
-                    &:hover {
-                        opacity: 1;
-                        background: $hover !important;
+                    @include up($desktop) {
+                        &:hover {
+                            opacity: 1;
+                            background: $grey !important;
+                        }
                     }
 
                     &.includes-menu-item {
                         opacity: 1;
                         background: none;
-                        &:hover {
-                            opacity: 0.45;
-                            background: $grey !important;
+                        @include up($desktop) {
+                            &:hover {
+                                opacity: 0.45;
+                                background: $grey !important;
+                            }
                         }
                     }
 
                     &.includes-menu-item-with-no-image {
                         opacity: 1;
                         background: $hover;
-                        &:hover {
-                            opacity: 0.45;
-                            background: $grey !important;
+                        @include up($desktop) {
+                            &:hover {
+                                opacity: 0.45;
+                                background: $grey !important;
+                            }
                         }
                     }
                 }
