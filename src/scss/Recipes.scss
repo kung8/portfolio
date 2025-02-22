@@ -43,12 +43,31 @@
             .x-img {
                 height: 16px;
                 width: 16px;
-                transform: rotate(135deg);
-                transition: transform 0.3s ease-in-out;
+                transform: rotate(45deg);
+                animation: close-rotate 0.35s ease-in-out;
                 cursor: pointer;
         
                 &.rotate {
-                    transform: rotate(270deg);
+                    transform: rotate(180deg);
+                    animation: open-rotate 0.35s ease-in-out;
+                }
+
+                @keyframes open-rotate {
+                    0% {
+                        transform: rotate(45deg);
+                    }
+                    100% {
+                        transform: rotate(180deg);
+                    }
+                }
+                
+                @keyframes close-rotate {
+                    0% {
+                        transform: rotate(180deg);
+                    }
+                    100% {
+                        transform: rotate(45deg);
+                    }
                 }
             }
         }
