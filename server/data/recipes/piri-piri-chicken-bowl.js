@@ -1,4 +1,15 @@
-// const example = '../assets/Products/example.jpeg';
+const bowl1 = '../assets/Products/piri-piri-chicken-bowl-1.jpeg';
+const bowl2 = '../assets/Products/piri-piri-chicken-bowl-2.jpeg';
+const bowl3 = '../assets/Products/piri-piri-chicken-bowl-3.jpeg';
+const bowl4 = '../assets/Products/piri-piri-chicken-bowl-4.jpeg';
+const bowl5 = '../assets/Products/piri-piri-chicken-bowl-5.jpeg';
+const bowl6 = '../assets/Products/piri-piri-chicken-bowl-6.jpeg';
+const bowl7 = '../assets/Products/piri-piri-chicken-bowl-7.jpeg';
+const bowl8 = '../assets/Products/piri-piri-chicken-bowl-8.jpeg';
+const bowl9 = '../assets/Products/piri-piri-chicken-bowl-9.jpeg';
+const bowl10 = '../assets/Products/piri-piri-chicken-bowl-10.jpeg';
+const bowl11 = '../assets/Products/piri-piri-chicken-bowl-11.jpeg';
+const bowl12 = '../assets/Products/piri-piri-chicken-bowl-12.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { CHICKEN_THIGH, OLIVE_OIL, LEMON_JUICE, GARLIC, THAI_CHILI_PEPPERS, BROWN_SUGAR, OREGANO, SWEET_PAPRIKA, CAYENNE_PEPPER, SALT, CORN, BABY_ARUGULA, AVOCADO, BLACK_PEPPER, VEGETABLE_OIL, BASMATI_RICE, CHICKEN_BROTH, CRUSHED_TOMATOES, SMOKED_PAPRIKA, BAY_LEAVES, CILANTRO, NANDOS_PERI_PERI_SAUCE, MAYONNAISE, DIJON_MUSTARD, HOT_SAUCE, CHIVES } = require('./ingredients');
 
@@ -18,13 +29,11 @@ const MAKE_SAUCE = 'Make Sauce';
 const ASSEMBLE_RICE_BOWL = 'Assemble Rice Bowl';
 
 module.exports = {
-    wip: true,
     cardName: 'Piri Piri Chicken Bowl',
     name: 'Piri Piri Chicken Bowl',
-    img: '',
-    recipeCredit: '',
+    img: bowl12,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AFRICAN, GENRES.PORTUGUESE],
     method: [METHODS.GRILL],
@@ -94,28 +103,28 @@ module.exports = {
         { name: 'small bowl' },
     ],
     directions: [
-        { step: 'In a blender or food processor, combine all the "Marinade" section ingredients.', type: MAKE_MARINADE },
-        { step: 'In a mixing bowl, combine chicken and the marinade.', type: MARINATE_CHICKEN },
+        { step: 'In a blender or food processor, combine all the "Marinade" section ingredients.', type: MAKE_MARINADE, img: bowl1 },
+        { step: 'In a mixing bowl, combine chicken and the marinade.', type: MARINATE_CHICKEN, img: bowl2 },
         { step: 'Refrigerate overnight or at least 10 hours.', type: MARINATE_CHICKEN },
 
         { step: 'Wash the rice until the water is no longer murky.', type: COOK_RICE },
-        { step: 'Over low heat, heat oil in a large pot.', type: COOK_RICE},
-        { step: 'Add garlic and cook for 30 seconds.', type: COOK_RICE},
-        { step: 'Add the rest of the "Rice" section ingredient (except the cilantro). Stir and bring to a boil.', type: COOK_RICE},
-        { step: 'Over medium heat, cover with a lid and cook for 10 minutes.', type: COOK_RICE},
-        { step: 'Turn heat off and leave the pot on the stove with the lid on for another 10 minutes.', type: COOK_RICE},
+        { step: 'Over low heat, heat oil in a large pot.', type: COOK_RICE },
+        { step: 'Add garlic and cook for 30 seconds.', type: COOK_RICE, img: bowl3 },
+        { step: 'Add the rest of the "Rice" section ingredient (except the cilantro). Stir and bring to a boil.', type: COOK_RICE, img: bowl4 },
+        { step: 'Over medium heat, cover with a lid and cook for 10 minutes.', type: COOK_RICE, img: bowl6 },
+        { step: 'Turn heat off and leave the pot on the stove with the lid on for another 10 minutes.', type: COOK_RICE, img: bowl8 },
 
         { step: 'Heat a grill, grill griddle, or a grill pan on a stove.', type: GRILL_CHICKEN },
-        { step: 'Once the preferred grill method gets hot, add the chicken. Cook chicken until it reaches an internal temperature of 165ºF, flip chicken regularly (about 12 minutes).', type: GRILL_CHICKEN },
+        { step: 'Once the preferred grill method gets hot, add the chicken. Cook chicken until it reaches an internal temperature of 165ºF, flip chicken regularly (about 12 minutes).', type: GRILL_CHICKEN, img: [bowl7, bowl9] },
 
         { step: 'Brush corn with olive oil.', type: CHAR_CORN },
-        { step: 'Follow the same grilling method as the chicken, cook the corn and rotate every couple minutes until it is charred all around.', type: CHAR_CORN },
+        { step: 'Follow the same grilling method as the chicken, cook the corn and rotate every couple minutes until it is charred all around.', type: CHAR_CORN, img: bowl10 },
         { step: 'In a mixing bowl, combine together the rest of the salad ingredients.', type: ASSEMBLE_RICE_BOWL },
         { step: 'Remove the corn kernels by slicing them off with a knife. Add to the salad.', type: ASSEMBLE_RICE_BOWL },
 
-        { step: 'In a small bowl, combine all the "Sauce" section ingredients.', type: MAKE_SAUCE },
+        { step: 'In a small bowl, combine all the "Sauce" section ingredients.', type: MAKE_SAUCE, img: bowl5 },
         { step: 'Chill for 15 minutes.', type: MAKE_SAUCE },
 
-        { step: 'Plate some rice, add salad and slice up some chicken. Top with the peri peri sauce.', type: SECTIONS.SERVE },
+        { step: 'Plate some rice, add salad and slice up some chicken. Top with the peri peri sauce.', type: SECTIONS.SERVE, img: bowl11 },
     ]
 };
