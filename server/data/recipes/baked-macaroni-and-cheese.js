@@ -8,16 +8,11 @@ const macaroni = '../assets/Products/baked-macaroni-and-cheese-cooked-macaroni.j
 const cream = '../assets/Products/baked-macaroni-and-cheese-cream.jpeg';
 const crumbLayer = '../assets/Products/baked-macaroni-and-cheese-crumb-layer.jpeg';
 const crumb = '../assets/Products/baked-macaroni-and-cheese-crumb.jpeg';
-const drained = '../assets/Products/baked-macaroni-and-cheese-drained.jpeg';
-const first = '../assets/Products/baked-macaroni-and-cheese-first-cheeses.jpeg';
 const flour = '../assets/Products/baked-macaroni-and-cheese-flour.jpeg';
 const butter = '../assets/Products/baked-macaroni-and-cheese-melted-butter.jpeg';
-const mixedCheese = '../assets/Products/baked-macaroni-and-cheese-mixed-cheese.jpeg';
 const cheesesZoomed = '../assets/Products/baked-macaroni-and-cheese-mixed-cheeses-zoomed.jpeg';
 const mixedPan = '../assets/Products/baked-macaroni-and-cheese-mixed-in-pan.jpeg';
 const mixed = '../assets/Products/baked-macaroni-and-cheese-mixed.jpeg';
-const combinedSauce = '../assets/Products/baked-macaroni-and-cheese-pasta-combined-sauce.jpeg';
-const roux = '../assets/Products/baked-macaroni-and-cheese-roux.jpeg';
 const sauce = '../assets/Products/baked-macaroni-and-cheese-sauce.jpeg';
 const seasoning = '../assets/Products/baked-macaroni-and-cheese-seasoning.jpeg';
 const second = '../assets/Products/baked-macaroni-and-cheese-second-cheeses.jpeg';
@@ -77,16 +72,16 @@ module.exports = {
         { step: 'Light spray some cooking oil spray in a baking dish.', type: SECTIONS.MAIN, img: tupperware },
         { step: 'In a large pot, boil water.', type: SECTIONS.NOODLES, img: water },
         { step: 'Cook pasta until it is cooked to al dente (follow the instructions on the package).', type: SECTIONS.NOODLES, img: boiled },
-        { step: 'Drain the pasta in a colander and place in a bowl.', type: SECTIONS.NOODLES, img: drained },
+        { step: 'Drain the pasta in a colander and place in a bowl.', type: SECTIONS.NOODLES },
         { step: 'Drizzle with olive oil and mix until pasta is coated. Set aside.', type: SECTIONS.NOODLES, img: macaroni },
         { step: 'In a mixing bowl, combine shredded cheese and set aside.', type: SECTIONS.SAUCE, img: cheesesZoomed },
         { step: 'Over medium heat, melt butter in a large pot.', type: SECTIONS.SAUCE, img: butter },
-        { step: 'Whisk flour until it becomes golden (about 1 minute).', type: SECTIONS.SAUCE, img: [flour, roux, boilingRoux] },
+        { step: 'Whisk flour until it becomes golden (about 1 minute).', type: SECTIONS.SAUCE, img: [flour, boilingRoux] },
         { step: 'Add milk and heavy cream and whisk until smooth.', type: SECTIONS.SAUCE, img: cream },
         { step: 'Continue to whisk until it bubbles (for about 2 minutes)', type: SECTIONS.SAUCE },
         { step: 'Add salt and pepper.', type: SECTIONS.SAUCE, img: seasoning },
-        { step: 'Add 2 cups of the mixed cheeses and mix. Repeat with another 2 cups. Sauce should be thick.', type: SECTIONS.SAUCE, img: [first, mixedCheese, second, sauce] },
-        { step: 'Mix together the sauce and the pasta until the pasta is coated.', type: SECTIONS.ASSEMBLY, img: [combinedSauce, mixed, mixedPan] },
+        { step: 'Add 2 cups of the mixed cheeses and mix. Repeat with another 2 cups. Sauce should be thick.', type: SECTIONS.SAUCE, img: [second, sauce] },
+        { step: 'Mix together the sauce and the pasta until the pasta is coated.', type: SECTIONS.ASSEMBLY, img: [mixed, mixedPan] },
         { step: 'Pour half of the macaroni and cheese into the baking dish.', type: SECTIONS.ASSEMBLY },
         { step: 'Add the last 2 cups of cheese on top of the mac and cheese.', type: SECTIONS.ASSEMBLY, img: cheeseLayer },
         { step: 'Add the last of the mac and cheese.', type: SECTIONS.ASSEMBLY, img: topPasta },
