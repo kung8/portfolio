@@ -1,22 +1,13 @@
-const bacon = '../assets/Products/baked-beans-bacon.jpeg';
 const boiling = '../assets/Products/baked-beans-boiling.jpeg';
-const browning = '../assets/Products/baked-beans-brown-sugar-browning.jpeg';
-const brownSugar = '../assets/Products/baked-beans-brown-sugar.jpeg';
-const zoomed = '../assets/Products/baked-beans-cooked-zoomed.jpeg';
 const cooked = '../assets/Products/baked-beans-cooked.jpeg';
 const cookingBacon = '../assets/Products/baked-beans-cooking-bacon.jpeg';
 const cookingOnion = '../assets/Products/baked-beans-cooking-onion.jpeg';
 const drained = '../assets/Products/baked-beans-drained.jpeg';
-const dutchOven = '../assets/Products/baked-beans-dutch-oven.jpeg';
-const mixed = '../assets/Products/baked-beans-mixed-bacon-and-onions.jpeg';
-const onions = '../assets/Products/baked-beans-onions.jpeg';
 const label = '../assets/Products/baked-beans-raw-with-label.jpeg';
-const raw = '../assets/Products/baked-beans-raw.jpeg';
 const beanWithSauce = '../assets/Products/baked-beans-sauce-with-beans.jpeg';
 const sauce = '../assets/Products/baked-beans-sauce.jpeg';
 const seasoning = '../assets/Products/baked-beans-seasoning.jpeg';
 const soaking = '../assets/Products/baked-beans-soaking.jpeg';
-const plate1 = '../assets/Products/baked-beans-full-plate-1.jpeg';
 const plateZoomed = '../assets/Products/baked-beans-full-plate-zoomed.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { SALT, BAKING_SODA, BACON, SMALL_YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR, DRY_NAVY_BEAN } = require('./ingredients');
@@ -61,7 +52,7 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'In a large pot, add the dry beans.', type: BEANS, img: [raw, label] },
+        { step: 'In a large pot, add the dry beans.', type: BEANS, img: label },
         { step: 'Fill the pot with cold water until it is a few inches above the beans.', type: BEANS, img: soaking },
         { step: 'Cover with a lid and soak the beans for 12 hours or overnight.', type: BEANS },
         { step: 'Drain beans in a colander.', type: BEANS, img: drained },
@@ -71,14 +62,14 @@ module.exports = {
         { step: 'Reduce to a low heat and simmer for one hour. Stirring occasionally.', type: BEANS },
         { step: 'Drain the beans. Reserve about 3 cups of the bean water for later. Set aside the beans.', type: BEANS },
         { step: 'Preheat the oven to 350ºF.', type: SECTIONS.MAIN },
-        { step: 'Over medium-high heat, add the diced bacon in a dutch oven pot. Cook for a few minutes.', type: SECTIONS.MAIN, img: [bacon, cookingBacon] },
-        { step: 'Add onions. Cook until the bacon is crisp and onions are translucent.', type: SECTIONS.MAIN, img: [onions, cookingOnion, mixed] },
-        { step: 'Add the brown sugar, ketchup, syrup, apple cider vinegar and 1 1/2 cups of the bean liquid.', type: SECTIONS.MAIN, img: [brownSugar, browning, sauce] },
-        { step: 'Add the beans to the dutch oven and cover with a lid.', type: SECTIONS.MAIN, img: [beanWithSauce, dutchOven] },
+        { step: 'Over medium-high heat, add the diced bacon in a dutch oven pot. Cook for a few minutes.', type: SECTIONS.MAIN, img: cookingBacon },
+        { step: 'Add onions. Cook until the bacon is crisp and onions are translucent.', type: SECTIONS.MAIN, img: cookingOnion },
+        { step: 'Add the brown sugar, ketchup, syrup, apple cider vinegar and 1 1/2 cups of the bean liquid.', type: SECTIONS.MAIN, img: sauce },
+        { step: 'Add the beans to the dutch oven and cover with a lid.', type: SECTIONS.MAIN, img: beanWithSauce },
         { step: 'Bake for 1 hour.', type: SECTIONS.MAIN },
         { step: 'Stir. If it looks dry, add more of the reserved bean water.', type: SECTIONS.MAIN },
         { step: 'Bake for another 30 minutes.', type: SECTIONS.MAIN },
-        { step: 'Remove the lid. Bake for another 30 minutes. The beans will thicken now.', type: SECTIONS.MAIN, img: [cooked, zoomed] },
-        { step: 'Stir and serve warm.', type: SECTIONS.MAIN, img: plate1 },
+        { step: 'Remove the lid. Bake for another 30 minutes. The beans will thicken now.', type: SECTIONS.MAIN, img: cooked },
+        { step: 'Stir and serve warm.', type: SECTIONS.MAIN },
     ]
 };
