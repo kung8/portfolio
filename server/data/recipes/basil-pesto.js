@@ -27,6 +27,7 @@ module.exports = {
     name: 'Basil Pesto',
     img: plated,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BLEND],

@@ -29,7 +29,7 @@ module.exports = {
     name: 'English Scones',
     img: scones16,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.BREAKFAST, CATEGORIES.SNACK],
     genre: [GENRES.BRITISH],
     method: [METHODS.BAKE],

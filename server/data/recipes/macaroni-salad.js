@@ -18,6 +18,7 @@ module.exports = {
     name: 'Macaroni Salad',
     img: macaroni,
     available: true,
+    recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],

@@ -32,6 +32,7 @@ module.exports = {
     name: 'Waffles',
     img: zoomed,
     available: true,
+    recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.GRILL],

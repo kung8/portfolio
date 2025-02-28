@@ -26,6 +26,7 @@ module.exports = {
     name: 'Slow-Cooked Hawaiian Haystacks',
     img: hawaiian,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SLOW_COOK],

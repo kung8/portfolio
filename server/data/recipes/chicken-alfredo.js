@@ -19,6 +19,7 @@ module.exports = {
     name: 'Chicken Alfredo',
     img: alfredo,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],

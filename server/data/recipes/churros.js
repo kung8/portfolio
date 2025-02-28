@@ -18,7 +18,7 @@ module.exports = {
     name: 'Churros',
     img: churros5,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.SPANISH],
     method: [METHODS.DEEP_FRY],

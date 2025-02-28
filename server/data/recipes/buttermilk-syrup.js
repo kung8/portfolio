@@ -14,6 +14,7 @@ module.exports = {
     name: 'Buttermilk Syrup',
     img: cooked,
     available: true,
+    recommended: true,
     category: [CATEGORIES.SAUCE, CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],

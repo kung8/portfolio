@@ -13,6 +13,7 @@ module.exports = {
     name: 'Big Mac',
     img: plated7,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.GRILL],

@@ -47,7 +47,7 @@ module.exports = {
     name: 'Cherry and Cream Cheese Kolaches',
     img: kolaches26,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT, CATEGORIES.BREAKFAST],
     genre: [GENRES.CZECH],
     method: [METHODS.BAKE],

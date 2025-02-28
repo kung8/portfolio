@@ -20,6 +20,7 @@ module.exports = {
     name: 'Chicken Noodle Soup',
     img: chickenNoodle,
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
