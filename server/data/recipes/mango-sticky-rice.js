@@ -10,12 +10,12 @@ const mango9 = '../assets/Products/mango-sticky-rice-9.jpeg';
 const mango10 = '../assets/Products/mango-sticky-rice-10.jpeg';
 const mango11 = '../assets/Products/mango-sticky-rice-11.jpeg';
 const mango12 = '../assets/Products/mango-sticky-rice-12.jpeg';
-const mango13 = '../assets/Products/mango-sticky-rice-13.jpeg';
+// const mango13 = '../assets/Products/mango-sticky-rice-13.jpeg';
 const mango14 = '../assets/Products/mango-sticky-rice-14.jpeg';
-const mango15 = '../assets/Products/mango-sticky-rice-15.jpeg';
+// const mango15 = '../assets/Products/mango-sticky-rice-15.jpeg';
 const mango16 = '../assets/Products/mango-sticky-rice-16.jpeg';
 const mango17 = '../assets/Products/mango-sticky-rice-17.jpeg';
-const mango18 = '../assets/Products/mango-sticky-rice-18.jpeg';
+// const mango18 = '../assets/Products/mango-sticky-rice-18.jpeg';
 const mango19 = '../assets/Products/mango-sticky-rice-19.jpeg';
 const mango20 = '../assets/Products/mango-sticky-rice-20.jpeg';
 
@@ -77,11 +77,11 @@ module.exports = {
         { step: 'In a mixing bowl, transfer the steamed rice from the cheesecloth.', type: STEAM_RICE, img: mango9 },
         { step: 'Over medium heat, add coconut milk to a saucepan. Stir it often to prevent burning and curdling.', type: STICKY_RICE, img: mango10 },
         { step: 'Stir in sugar and salt until it dissolves. Set aside.', type: STICKY_RICE, img: mango11 },
-        { step: 'Mix the coconut milk mixture to the rice in the mixing bowl.', type: STICKY_RICE, img: [mango12, mango13] },
+        { step: 'Mix the coconut milk mixture to the rice in the mixing bowl.', type: STICKY_RICE, img: mango12 },
         { step: 'Cover and let the rice soak in the milk (at least 5 minutes).', type: STICKY_RICE, img: mango14 },
-        { step: 'Over medium-high heat, combine coconut cream and sugar in a saucepan.', type: COCONUT_CREAM_SAUCE, img: [mango15, mango16] },
+        { step: 'Over medium-high heat, combine coconut cream and sugar in a saucepan.', type: COCONUT_CREAM_SAUCE, img: mango16 },
         { step: 'Bring to a boil. Reduce to low and let simmer.', type: COCONUT_CREAM_SAUCE, img: mango17 },
         { step: 'Once it starts to thicken it is ready.', type: COCONUT_CREAM_SAUCE },
-        { step: 'Serve the sweetened sticky rice topped with mangoes, sauce and sesame seeds. You are going to be in heaven!', type: SECTIONS.SERVE, img: [mango18, mango20] },
+        { step: 'Serve the sweetened sticky rice topped with mangoes, sauce and sesame seeds. You are going to be in heaven!', type: SECTIONS.SERVE, img: mango20 },
     ]
 };
