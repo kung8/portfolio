@@ -1,16 +1,13 @@
-const chopped = '../assets/Products/chinese-green-bean-and-beef-chopped-green-beans.jpeg';
 const combinedZoomed1 = '../assets/Products/chinese-green-bean-and-beef-cooked-combined-zoomed-1.jpeg';
 const combinedZoomed2 = '../assets/Products/chinese-green-bean-and-beef-cooked-combined-zoomed-2.jpeg';
 const combined = '../assets/Products/chinese-green-bean-and-beef-cooked-combined.jpeg';
-const garlic = '../assets/Products/chinese-green-bean-and-beef-garlic.jpeg';
 const greenOnionPan = '../assets/Products/chinese-green-bean-and-beef-green-onions-in-pan.jpeg';
 const greenOnionsGarlic = '../assets/Products/chinese-green-bean-and-beef-green-onions-with-garlic.jpeg';
-const greenOnions = '../assets/Products/chinese-green-bean-and-beef-green-onions.jpeg';
 const plated2 = '../assets/Products/chinese-green-bean-and-beef-plated-2.jpeg';
 const beef = '../assets/Products/chinese-green-bean-and-beef-raw-beef.jpeg';
 const sauce = '../assets/Products/chinese-green-bean-and-beef-sauce.jpeg';
 const sautedBeans = '../assets/Products/chinese-green-bean-and-beef-sauted-green-beans.jpeg';
-const whole = '../assets/Products/chinese-green-bean-and-beef-whole-beans.jpeg';
+
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 const {
     GREEN_BEANS,
@@ -69,13 +66,13 @@ module.exports = {
     directions: [
         { step: 'In a bowl, combine broth, sauces, vinegar, and red pepper flakes. Set aside.', type: SECTIONS.SAUCE, img: sauce },
         { step: 'Over medium-high heat, heat 1 Tbsp of oil in a wok.', type: SECTIONS.MAIN },
-        { step: 'Add green beans and cook for 4 minutes. Remove beans and set aside.', type: SECTIONS.MAIN, img: [whole, chopped, sautedBeans] },
+        { step: 'Add green beans and cook for 4 minutes. Remove beans and set aside.', type: SECTIONS.MAIN, img: sautedBeans },
         { step: 'Add 1 Tbsp of oil to the wok.', type: SECTIONS.MAIN },
         { step: 'Add beef and cook for one minute. Do not stir.', type: SECTIONS.MAIN, img: beef },
         { step: 'Stir beef and cook for 3 to 4. Remove beef and set aside.', type: SECTIONS.MAIN },
         { step: 'Add 1 Tbsp of oil to the wok.', type: SECTIONS.MAIN },
-        { step: 'Add green onions. Cook for 1 minute.', type: SECTIONS.MAIN, img: [greenOnions, greenOnionPan] },
-        { step: 'Add garlic and ginger. Cook for 30 seconds.', type: SECTIONS.MAIN, img: [garlic, greenOnionsGarlic] },
+        { step: 'Add green onions. Cook for 1 minute.', type: SECTIONS.MAIN, img: greenOnionPan },
+        { step: 'Add garlic and ginger. Cook for 30 seconds.', type: SECTIONS.MAIN, img: greenOnionsGarlic },
         { step: 'Re-add the beef and green beans to the wok.', type: SECTIONS.MAIN, img: combined },
         { step: 'Add the sauce. Cook and stir until the sauce thickens (about 1 to 2 minutes).', type: SECTIONS.MAIN, img: combinedZoomed1 },
         { step: 'Season with salt and pepper as desired.', type: SECTIONS.MAIN },
