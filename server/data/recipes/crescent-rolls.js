@@ -1,4 +1,3 @@
-const yeast1 = '../assets/Products/crescent-rolls-yeast-1.jpeg';
 const yeast3 = '../assets/Products/crescent-rolls-yeast-3.jpeg';
 const yeast4 = '../assets/Products/crescent-rolls-yeast-4.jpeg';
 const yeast5 = '../assets/Products/crescent-rolls-yeast-5.jpeg';
@@ -15,7 +14,6 @@ const triangle = '../assets/Products/crescent-rolls-triangle.jpeg';
 const wrapped = '../assets/Products/crescent-rolls-wrapped.jpeg';
 const butter = '../assets/Products/crescent-rolls-butter.jpeg';
 const salt = '../assets/Products/crescent-rolls-salt.jpeg';
-const sugar = '../assets/Products/crescent-rolls-sugar.jpeg';
 const dough1 = '../assets/Products/crescent-rolls-dough-1.jpeg';
 const dough2 = '../assets/Products/crescent-rolls-dough-2.jpeg';
 const balls = '../assets/Products/crescent-rolls-dough-balls.jpeg';
@@ -62,13 +60,13 @@ module.exports = {
         { name: 'silicon baking mat' },
     ],
     directions: [
-        { step: 'Combine ingredients in medium bowl.', type: YEAST_MIXTURE, img: [yeast1, yeast3, yeast4] },
+        { step: 'Combine ingredients in medium bowl.', type: YEAST_MIXTURE, img: [yeast3, yeast4] },
         { step: 'Let mixture sit for 3 to 5 minutes.', type: YEAST_MIXTURE, img: yeast5 },
         { step: 'Combine ingredients in mixing bowl.', type: LIQUID_MIXTURE, img: evaporated },
         { step: 'Add yeast mixture into liquid mixture. Mix.', type: LIQUID_MIXTURE },
         { step: 'Preheat the oven to 325ºF.', type: SECTIONS.MAIN },
         { step: 'Place silicon baking mat on baking sheet.', type: SECTIONS.MAIN },
-        { step: 'Add main ingredients to the mixing bowl and combine.', type: SECTIONS.MAIN, img: [butter, sugar, salt, flour, dough1, dough2] },
+        { step: 'Add main ingredients to the mixing bowl and combine.', type: SECTIONS.MAIN, img: [butter, salt, flour, dough1, dough2] },
         { step: 'Split the dough into four equal parts.', type: SECTIONS.MAIN, img: balls },
         { step: 'Roll out dough into large circles (like pizza dough shape).', type: SECTIONS.MAIN, img: rolled },
         { step: 'Cut the dough into eighths (or more depending on the desired size).', type: SECTIONS.MAIN, img: triangle },
