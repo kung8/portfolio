@@ -3,17 +3,12 @@ const batter1 = '../assets/Products/brickle-bars-batter-1.jpeg';
 const batter2 = '../assets/Products/brickle-bars-batter-2.jpeg';
 const batter3 = '../assets/Products/brickle-bars-batter-3.jpeg';
 const batter6 = '../assets/Products/brickle-bars-batter-6.jpeg';
-const butter1 = '../assets/Products/brickle-bars-butter-1.jpeg';
 const butter2 = '../assets/Products/brickle-bars-butter-2.jpeg';
-const dry1 = '../assets/Products/brickle-bars-dry-1.jpeg';
 const dry2 = '../assets/Products/brickle-bars-dry-2.jpeg';
 const pan1 = '../assets/Products/brickle-bars-pan-1.jpeg';
-const wet1 = '../assets/Products/brickle-bars-wet-1.jpeg';
 const wet2 = '../assets/Products/brickle-bars-wet-2.jpeg';
 const wet3 = '../assets/Products/brickle-bars-wet-3.jpeg';
 const wet4 = '../assets/Products/brickle-bars-wet-4.jpeg';
-const wet5 = '../assets/Products/brickle-bars-wet-5.jpeg';
-const wet6 = '../assets/Products/brickle-bars-wet-6.jpeg';
 const wet7 = '../assets/Products/brickle-bars-wet-7.jpeg';
 const plated4 = '../assets/Products/brickle-bars-plated-4.jpeg';
 const plated6 = '../assets/Products/brickle-bars-plated-6.jpeg';
@@ -61,10 +56,10 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', type: PREPARATION },
-        { step: 'Grease a baking pan with a butter.', type: PREPARATION, img: [butter1, butter2] },
-        { step: 'In a medium bowl, combine together the dry ingredients.', type: DRY_INGREDIENTS, img: [dry1, dry2] },
-        { step: 'In a separate mixing bowl, combine together butter and the sugars.', type: WET_INGREDIENTS, img: [wet1, wet2, wet3] },
-        { step: 'Add eggs and vanilla. Mix.', type: WET_INGREDIENTS, img: [wet4, wet5, wet6, wet7] },
+        { step: 'Grease a baking pan with a butter.', type: PREPARATION, img: butter2 },
+        { step: 'In a medium bowl, combine together the dry ingredients.', type: DRY_INGREDIENTS, img: dry2 },
+        { step: 'In a separate mixing bowl, combine together butter and the sugars.', type: WET_INGREDIENTS, img: [wet2, wet3] },
+        { step: 'Add eggs and vanilla. Mix.', type: WET_INGREDIENTS, img: [wet4, wet7] },
         { step: 'Combine together the dry and wet ingredients.', type: SECTIONS.MAIN, img: [batter1, batter2] },
         { step: 'Add the toffee bits.', type: SECTIONS.MAIN, img: [batter3, batter6] },
         { step: 'Scrape the batter into the baking pan.', type: SECTIONS.MAIN, img: pan1 },
