@@ -10,7 +10,6 @@ const foldedWhites = '../assets/Products/chocolate-mousse-folded-whites.jpeg';
 const foldedYolk = '../assets/Products/chocolate-mousse-folded-yolk.jpeg';
 const foldedYolk2 = '../assets/Products/chocolate-mousse-folded-yolk-2.jpeg';
 const melted = '../assets/Products/chocolate-mousse-melted-chocolate.jpeg';
-const melting = '../assets/Products/chocolate-mousse-melting-chocolate.jpeg';
 const mixedChocolate = '../assets/Products/chocolate-mousse-mixed-chocolate.jpeg';
 const mousse = '../assets/Products/chocolate-mousse-mixed-mousse.jpeg';
 const plated = '../assets/Products/chocolate-mousse-plated.jpeg';
@@ -75,7 +74,7 @@ module.exports = {
     directions: [
         { step: 'Break up dark cooking chocolate bar into pieces and place in a microwavable bowl.', type: CHOCOLATE, img: pieces },
         { step: 'Add butter into the chocolate bar.', type: CHOCOLATE },
-        { step: 'Microwave the chocolate for 30 second interval and stir in between. Continue this until the chocolate and butter have completely melted and become uniform. Set aside.', type: CHOCOLATE, img: [melted, melting] },
+        { step: 'Microwave the chocolate for 30 second interval and stir in between. Continue this until the chocolate and butter have completely melted and become uniform. Set aside.', type: CHOCOLATE, img: melted },
         { step: 'While the eggs are cold, separate the egg whites and yolk. Place the yolks in one bowl and whites in another.', type: SECTIONS.MAIN, img: [whites, yolks] },
         { step: 'Whisk the yolks until combined.', type: SECTIONS.MAIN, img: yolksMixed },
         { step: 'Beat the heavy cream and sugar in a mixing bowl until stiff peaks form. I did not have a mixer so I used the old-fashion manual whisk and arm muscles to mix this together. You will want a mixer if you do not want tired arms.', type: SECTIONS.MAIN, img: [cream, peaks] },
