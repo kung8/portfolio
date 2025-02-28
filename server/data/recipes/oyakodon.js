@@ -73,7 +73,7 @@ module.exports = {
         { step: 'Add the seasoning mixture to just cover the onions. If not, add more seasoning or use a smaller pan.', type: COOK_OYAKODON, img: oyakodon4 },
         { step: 'Turn on stove to medium heat and bring to a simmer.', type: COOK_OYAKODON },
         { step: 'Add the chicken evenly on top of the onions. Bring to a simmer.', type: COOK_OYAKODON, img: oyakodon5 },
-        { step: 'Lower to medium-low heat. Cook until chicken is no longer pink and onions are tender (for about 5 minutes). Flip the chicken about halfway through.', type: COOK_OYAKODON, img: [oyakodon6, oyakodon7] },
+        { step: 'Lower to medium-low heat. Cook until chicken is no longer pink and onions are tender (for about 5 minutes). Flip the chicken about halfway through.', type: COOK_OYAKODON, img: oyakodon7 },
         { step: 'Increase to medium heat.', type: COOK_OYAKODON },
         { step: 'While there are small bubbles around the edges, pour 2/3 of the eggs (ideally more whites) to the chicken-onion mixture in a circular pattern (avoid pouring in the edges).', type: COOK_OYAKODON },
         { step: 'If the eggs are moving to the edges, gather the eggs toward the center. Lower the heat if the eggs are crisping.', type: COOK_OYAKODON },

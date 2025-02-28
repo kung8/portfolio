@@ -1,14 +1,10 @@
 const boilingNoodles = '../assets/Products/pad-thai-boiling-noodles.jpeg';
-const boilingWater = '../assets/Products/pad-thai-boiling-water.jpeg';
 const butter = '../assets/Products/pad-thai-butter.jpeg';
 const chickenPan = '../assets/Products/pad-thai-chicken-in-pan.jpeg';
 const cookedEggs = '../assets/Products/pad-thai-cooked-eggs.jpeg';
 const noodles = '../assets/Products/pad-thai-cooked-noodles.jpeg';
 const veggiesChicken = '../assets/Products/pad-thai-cooked-veggies-and-chicken.jpeg';
 const strips = '../assets/Products/pad-thai-egg-strips.jpeg';
-const eggsPan = '../assets/Products/pad-thai-eggs-in-pan.jpeg';
-const eggs = '../assets/Products/pad-thai-eggs.jpeg';
-const garlicPepper = '../assets/Products/pad-thai-garlic-and-pepper.jpeg';
 const mixedEggs = '../assets/Products/pad-thai-mixed-eggs.jpeg';
 const mixedNoSauce = '../assets/Products/pad-thai-mixed-with-no-sauce.jpeg';
 const mixedSauce2 = '../assets/Products/pad-thai-mixed-with-sauce-2.jpeg';
@@ -92,17 +88,17 @@ module.exports = {
     directions: [
         { step: 'Melt 1 Tbsp of butter in a large cooking pan on medium-high heat.', type: CHICKEN_AND_VEGGIES, img: butter },
         { step: 'Cook the chicken.', type: CHICKEN_AND_VEGGIES, img: [chickenPan, partialChicken] },
-        { step: 'Add garlic and bell peppers to the pan after the chicken cooks a little.', type: CHICKEN_AND_VEGGIES, img: [garlicPepper, veggiesChicken] },
+        { step: 'Add garlic and bell peppers to the pan after the chicken cooks a little.', type: CHICKEN_AND_VEGGIES, img: veggiesChicken },
 
-        { step: 'Cook rice noodles until tender (about 3 to 5 minutes) in strainer. Rinse noodles under cold water.', type: SECTIONS.NOODLES, img: [boilingWater, boilingNoodles] },
+        { step: 'Cook rice noodles until tender (about 3 to 5 minutes) in strainer. Rinse noodles under cold water.', type: SECTIONS.NOODLES, img: boilingNoodles },
         { step: 'Rinse noodles under cold water.', type: SECTIONS.NOODLES, img: [rinsing, noodles] },
 
         { step: 'In a medium bowl, mix together the sauce ingredients.', type: SECTIONS.SAUCE, img: sauce },
         { step: 'Set aside sauce.', type: SECTIONS.SAUCE },
 
         { step: 'Over medium-high heat, add a little butter to the wok.', type: SECTIONS.EGGS },
-        { step: 'In a medium bowl, beat eggs.', type: SECTIONS.EGGS, img: [eggs, mixedEggs] },
-        { step: 'Pour eggs in wok and cook. Spread the eggs and lift up the edges.', type: SECTIONS.EGGS, img: [eggsPan, partialEggs] },
+        { step: 'In a medium bowl, beat eggs.', type: SECTIONS.EGGS, img: mixedEggs },
+        { step: 'Pour eggs in wok and cook. Spread the eggs and lift up the edges.', type: SECTIONS.EGGS, img: partialEggs },
         { step: 'Flip and cook for 30 seconds before turning off heat. Continue to let eggs cook with the residual heat.', type: SECTIONS.EGGS, img: cookedEggs },
         { step: 'Remove the eggs from wok and cut eggs into thin strips.', type: SECTIONS.EGGS, img: strips },
 

@@ -7,7 +7,6 @@ const muddy6 = '../assets/Products/muddy-buddies-6.jpeg';
 const muddy7 = '../assets/Products/muddy-buddies-7.jpeg';
 const muddy8 = '../assets/Products/muddy-buddies-8.jpeg';
 const muddy9 = '../assets/Products/muddy-buddies-9.jpeg';
-const muddy10 = '../assets/Products/muddy-buddies-10.jpeg';
 const muddy11 = '../assets/Products/muddy-buddies-11.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { SEMI_SWEET_CHOCOLATE_CHIPS, PEANUT_BUTTER, CHEX_CEREAL, POWDERED_SUGAR } = require('./ingredients');
@@ -53,7 +52,7 @@ module.exports = {
         { step: 'Let the mixture come to room temperature.', type: SECTIONS.MAIN },
         { step: 'Add 1 cup of powdered sugar and mix.', type: SECTIONS.MAIN, img: [muddy7, muddy8] },
         { step: 'Chill in the fridge again for 15 minutes.', type: SECTIONS.MAIN },
-        { step: 'Add 1/4 cup of powdered sugar and mix. Repeat with the remaining powdered sugar.', type: SECTIONS.MAIN, img: [muddy9, muddy10, muddy11] },
+        { step: 'Add 1/4 cup of powdered sugar and mix. Repeat with the remaining powdered sugar.', type: SECTIONS.MAIN, img: muddy9 },
         { step: 'Enjoy these sweet goodies while watching a movie or reading a book.', type: SECTIONS.SERVE },
         { step: 'Store at room temperature in an airtight container.', type: SECTIONS.STORE },
     ]

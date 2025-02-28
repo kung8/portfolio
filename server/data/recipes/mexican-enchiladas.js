@@ -1,6 +1,5 @@
 const enchiladas1 = '../assets/Products/mexican-enchiladas-1.jpeg';
 const enchiladas2 = '../assets/Products/mexican-enchiladas-2.jpeg';
-const enchiladas3 = '../assets/Products/mexican-enchiladas-3.jpeg';
 const enchiladas4 = '../assets/Products/mexican-enchiladas-4.jpeg';
 const enchiladas5 = '../assets/Products/mexican-enchiladas-5.jpeg';
 const enchiladas6 = '../assets/Products/mexican-enchiladas-6.jpeg';
@@ -99,7 +98,7 @@ module.exports = {
         // 25 minutes cook, 5 minutes prep
         { step: 'Season both sides of the chicken with salt, pepper and garlic powder.', type: PREP_CHICKEN, img: enchiladas1 },
         { step: 'Over medium-high heat, heat olive oil in a frying pan.', type: PREP_CHICKEN },
-        { step: 'Add chicken to pan and sear each side (about 3 to 4 minutes per side).', type: PREP_CHICKEN, img: [enchiladas2, enchiladas3, enchiladas4] },
+        { step: 'Add chicken to pan and sear each side (about 3 to 4 minutes per side).', type: PREP_CHICKEN, img: [enchiladas2, enchiladas4] },
         { step: 'Add onions, bay leaf and broth.', type: PREP_CHICKEN, img: enchiladas5 },
         { step: 'Cover and reduce to medium-low heat. Poach the chicken until it reaches 165ºF (about 8 to 10 minutes).', type: PREP_CHICKEN, img: [enchiladas6, enchiladas12] },
         { step: 'Remove pan from heat.', type: PREP_CHICKEN },

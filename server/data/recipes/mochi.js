@@ -1,10 +1,8 @@
-const mochi1 = '../assets/Products/mochi-1.jpeg';
 const mochi2 = '../assets/Products/mochi-2.jpeg';
 const mochi3 = '../assets/Products/mochi-3.jpeg';
 const mochi4 = '../assets/Products/mochi-4.jpeg';
 const mochi5 = '../assets/Products/mochi-5.jpeg';
 const mochi6 = '../assets/Products/mochi-6.jpeg';
-const mochi7 = '../assets/Products/mochi-7.jpeg';
 const mochi8 = '../assets/Products/mochi-8.jpeg';
 const mochi9 = '../assets/Products/mochi-9.jpeg';
 
@@ -51,13 +49,13 @@ module.exports = {
     directions: [
         { step: 'Preheat the oven to 350ºF.', type: MOCHI },
         { step: 'Grease the baking pan.', type: MOCHI },
-        { step: 'In a mixing bowl, combine the "Mochi" ingredients.', type: MOCHI, img: [mochi1, mochi2, mochi3] },
+        { step: 'In a mixing bowl, combine the "Mochi" ingredients.', type: MOCHI, img: [mochi2, mochi3] },
         { step: 'Pour mochi batter into the baking pan.', type: MOCHI, img: mochi4 },
         { step: 'Tightly cover the pan with aluminum foil.', type: MOCHI, img: mochi5 },
         { step: 'Bake until the mochi is cooked through (about 45 to 55 minutes).', type: MOCHI, img: mochi6 },
         { step: 'Let mochi completely cool before dusting.', type: MOCHI },
         { step: 'Dust the mochi with potato starch to prevent sticking.', type: DUSTING },
         { step: 'Cut the mochi into rectangles. Add more starch if needed.', type: DUSTING },
-        { step: 'Enjoy these light delicious treats.', type: SECTIONS.SERVE, img: [mochi7, mochi9] },
+        { step: 'Enjoy these light delicious treats.', type: SECTIONS.SERVE, img: mochi9 },
     ]
 };

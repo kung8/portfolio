@@ -4,7 +4,6 @@ const cookies3 = '../assets/Products/peanut-butter-cookies-3.jpeg';
 const cookies4 = '../assets/Products/peanut-butter-cookies-4.jpeg';
 const cookies5 = '../assets/Products/peanut-butter-cookies-5.jpeg';
 const cookies6 = '../assets/Products/peanut-butter-cookies-6.jpeg';
-const cookies7 = '../assets/Products/peanut-butter-cookies-7.jpeg';
 const cookies8 = '../assets/Products/peanut-butter-cookies-8.jpeg';
 const cookies9 = '../assets/Products/peanut-butter-cookies-9.jpeg';
 const cookies10 = '../assets/Products/peanut-butter-cookies-10.jpeg';
@@ -58,7 +57,7 @@ module.exports = {
         { step: 'Mix in salt.', type: SECTIONS.MAIN, img: cookies3 },
         { step: 'Mix in egg and vanilla.', type: SECTIONS.MAIN, img: cookies4 },
         { step: 'Mix in peanut butter.', type: SECTIONS.MAIN, img: [cookies5, cookies6] },
-        { step: 'Mix in flour and baking powder.', type: SECTIONS.MAIN, img: [cookies7, cookies8, cookies9] },
+        { step: 'Mix in flour and baking powder.', type: SECTIONS.MAIN, img: [cookies8, cookies9] },
         { step: 'Place the silicon baking mat on the baking sheet.', type: SECTIONS.MAIN },
         { step: 'Form one inch dough balls and place on the mats.', type: SECTIONS.MAIN, img: cookies10 },
         { step: 'Flatten the cookies with a fork to form a crisscross pattern.', type: SECTIONS.MAIN, img: [cookies11, cookies12] },
