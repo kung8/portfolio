@@ -1,22 +1,17 @@
 const bowl = '../assets/Products/turkey-meatball-spinach-tortellini-soup-bowl.jpeg';
-const addedMeatballs = '../assets/Products/turkey-meatball-spinach-tortellini-soup-added-meatballs.jpeg';
 const boilingBroth = '../assets/Products/turkey-meatball-spinach-tortellini-soup-boiling-broth.jpeg';
 const boilingTortellini = '../assets/Products/turkey-meatball-spinach-tortellini-soup-boiling-tortellini.jpeg';
 const breading = '../assets/Products/turkey-meatball-spinach-tortellini-soup-breading.jpeg';
-const broth = '../assets/Products/turkey-meatball-spinach-tortellini-soup-broth.jpeg';
 const butter = '../assets/Products/turkey-meatball-spinach-tortellini-soup-butter.jpeg';
 const cookedMeatballs = '../assets/Products/turkey-meatball-spinach-tortellini-soup-cooked-meatballs.jpeg';
 const turkey = '../assets/Products/turkey-meatball-spinach-tortellini-soup-ground-turkey.jpeg';
 const meatballs = '../assets/Products/turkey-meatball-spinach-tortellini-soup-meatballs.jpeg';
 const melted = '../assets/Products/turkey-meatball-spinach-tortellini-soup-melted-butter.jpeg';
 const mixedBreading = '../assets/Products/turkey-meatball-spinach-tortellini-soup-mixed-breading.jpeg';
-const veggies = '../assets/Products/turkey-meatball-spinach-tortellini-soup-raw-veggies.jpeg';
 const softened = '../assets/Products/turkey-meatball-spinach-tortellini-soup-softened-veggies.jpeg';
 const spinach = '../assets/Products/turkey-meatball-spinach-tortellini-soup-spinach.jpeg';
-const steamed = '../assets/Products/turkey-meatball-spinach-tortellini-soup-steamed.jpeg';
-const tortellini = '../assets/Products/turkey-meatball-spinach-tortellini-soup-tortellini.jpeg';
-const veggiesInPot = '../assets/Products/turkey-meatball-spinach-tortellini-soup-veggies-in-pot.jpeg';
 const ladle = '../assets/Products/turkey-meatball-spinach-tortellini-soup-zoomed-ladle.jpeg';
+
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 const {
     GROUND_TURKEY,
@@ -82,12 +77,12 @@ module.exports = {
         { step: 'Combine the ground turkey, breadcrumbs, parmesan cheese, parsley, egg, garlic, and salt in a large bowl.', type: MEATBALLS, img: [breading, mixedBreading, turkey] },
         { step: 'Make small meatballs (about 1 Tbsp each).', type: MEATBALLS, img: meatballs },
         { step: 'Melt butter in a large pot over medium heat.', type: SECTIONS.MAIN, img: [butter, melted] },
-        { step: 'Once melted, add the celery, onion, carrot, and garlic. Cover and reduce heat to low. Cook until vegetables begin to soften (about 8 to 10 minutes).', type: SECTIONS.MAIN, img: [veggies, veggiesInPot, steamed, softened] },
-        { step: 'Remove lid. Add the chicken broth and increase heat to medium-high. Bring to a boil.', type: SECTIONS.MAIN, img: [broth, boilingBroth] },
+        { step: 'Once melted, add the celery, onion, carrot, and garlic. Cover and reduce heat to low. Cook until vegetables begin to soften (about 8 to 10 minutes).', type: SECTIONS.MAIN, img: softened },
+        { step: 'Remove lid. Add the chicken broth and increase heat to medium-high. Bring to a boil.', type: SECTIONS.MAIN, img: boilingBroth },
         { step: 'Add black pepper to taste.', type: SECTIONS.MAIN },
-        { step: 'Reduce heat to medium and drop in the meatballs. Cook for about 4 minutes.', type: SECTIONS.MAIN, img: [addedMeatballs, cookedMeatballs] },
-        { step: 'Add tortellini and simmer until cooked (about 7 minutes).', type: SECTIONS.MAIN, img: [tortellini, boilingTortellini] },
-        { step: 'Once cooked, add the baby spinach and stir to combine.', type: SECTIONS.MAIN, img: [spinach] },
+        { step: 'Reduce heat to medium and drop in the meatballs. Cook for about 4 minutes.', type: SECTIONS.MAIN, img: cookedMeatballs },
+        { step: 'Add tortellini and simmer until cooked (about 7 minutes).', type: SECTIONS.MAIN, img: boilingTortellini },
+        { step: 'Once cooked, add the baby spinach and stir to combine.', type: SECTIONS.MAIN, img: spinach },
         { step: 'Serve warm.', type: SECTIONS.SERVE, img: [bowl] },
     ]
 }
