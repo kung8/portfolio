@@ -141,6 +141,7 @@ const karaage = require("./recipes/karaage");
 const keyLimePie = require("./recipes/key-lime-pie");
 const kfcGravy = require("./recipes/kfc-gravy");
 const khmerRedCurry = require("./recipes/khmer-red-curry");
+const koloMee = require("./recipes/kolo-mee");
 const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
 const koreanFriedChicken = require("./recipes/korean-fried-chicken");
 const kungPaoChicken = require("./recipes/kung-pao-chicken");
@@ -156,6 +157,7 @@ const mangoChutney = require("./recipes/mango-chutney");
 const mangoStickyRice = require("./recipes/mango-sticky-rice");
 const marryMeChicken = require("./recipes/marry-me-chicken");
 const mashPotatoes = require("./recipes/mash-potatoes");
+const meatballSub = require("./recipes/meatball-sub");
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
 const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chicken");
 const mexicanEnchiladas = require("./recipes/mexican-enchiladas");
@@ -229,6 +231,7 @@ const texasSausageKolaches = require("./recipes/texas-sausage-kolaches");
 const thaiBasil = require("./recipes/thai-basil");
 const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
 const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
+const udonNoodleSoup = require("./recipes/udon-noodle-soup");
 const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich");
 const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
 const vietnameseFreshSpringRolls = require("./recipes/vietnamese-fresh-spring-rolls");
@@ -277,6 +280,7 @@ const recipes = [
     oyakodon,
     lemonChickenRamen,
     chickenRamen,
+    udonNoodleSoup, // TODO: add
     mochi,
     yorsStew, // TODO: add
 
@@ -316,6 +320,7 @@ const recipes = [
 
     // MALAYSIAN
     malaysianSatay,
+    koloMee, // TODO: add
     malaysianLemonChicken,
     malaysianBlackPepperChicken,
 
@@ -444,6 +449,7 @@ const recipes = [
     macaroniSalad,
     bakedBreadedChicken,
     phillyCheesesteak,
+    meatballSub, // TODO: add
     frenchBaguettes,
     sourdoughStarter,
     sourdoughBread,
@@ -565,3 +571,4 @@ module.exports = recipes;
 
 // Butter Toffee (https://uglydesserts.com/2025/01/24/homemade-butter-toffee/)
 // Mochi (https://parade.com/food/two-ingredient-mochi)
+
