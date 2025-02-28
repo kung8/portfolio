@@ -1,7 +1,4 @@
-const cilantroAvocadoDressing = '../assets/Products/cafe-rio-bowl-bowled-with-cilantro-avocado-dressing.jpeg';
-const southwestDressing = '../assets/Products/cafe-rio-bowl-bowled-with-southwest-dressing.jpeg';
 const bowled = '../assets/Products/cafe-rio-bowl-bowled.jpeg';
-const cookedBeef = '../assets/Products/cafe-rio-bowl-cooked-beef.jpeg';
 const cookedFajita = '../assets/Products/cafe-rio-bowl-cooked-fajitas.jpeg';
 const cookingBeef = '../assets/Products/cafe-rio-bowl-cooking-beef.jpeg';
 const fajitas = '../assets/Products/cafe-rio-bowl-fajitas.jpeg';
@@ -10,12 +7,8 @@ const marinade = '../assets/Products/cafe-rio-bowl-marinade.jpeg';
 const marinatedBeef = '../assets/Products/cafe-rio-bowl-marinated-beef.jpeg';
 const tortilla = '../assets/Products/cafe-rio-bowl-tortilla-in-bowl.jpeg';
 const warmingTortilla = '../assets/Products/cafe-rio-bowl-warming-tortilla.jpeg';
-const blended = '../assets/Products/cafe-rio-bowl-cilantro-ranch-dressing-blended.jpeg';
 const dressing = '../assets/Products/cafe-rio-bowl-cilantro-ranch-dressing-in-bowl.jpeg';
-const minced = '../assets/Products/cafe-rio-bowl-cilantro-ranch-dressing-minced-veggies.jpeg';
 const pre = '../assets/Products/cafe-rio-bowl-cilantro-ranch-dressing-pre-blended-ingredients.jpeg';
-const veggies = '../assets/Products/cafe-rio-bowl-cilantro-ranch-dressing-veggies-in-blender.jpeg';
-const cilantroRanchDressing = '../assets/Products/cafe-rio-bowl-bowled-with-cilantro-ranch-dressing.jpeg';
 const cilantroRanchDressingZoomed = '../assets/Products/cafe-rio-bowl-bowled-with-cilantro-ranch-dressing-zoomed.jpeg';
 
 const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS } = require("./constants");
@@ -109,14 +102,14 @@ module.exports = {
         { step: 'Add the steak to the marinade.', type: SECTIONS.MEAT, img: marinatedBeef },
         { step: 'Marinate for 20 minutes.', type: SECTIONS.MEAT },
         { step: 'Preheat a grill (or griddle).', type: SECTIONS.MEAT },
-        { step: 'Add steak to the grill using tongs and cook until the preferred doneness.', type: SECTIONS.MEAT, img: [cookingBeef, grilled, cookedBeef] },
+        { step: 'Add steak to the grill using tongs and cook until the preferred doneness.', type: SECTIONS.MEAT, img: [cookingBeef, grilled] },
         { step: 'Top the steak with parsley.', type: SECTIONS.MEAT },
-        { step: 'Blend together the cilantro ranch dressing ingredients.', type: CILANTRO_RANCH_DRESSING, img: [minced, veggies, pre, blended, dressing] },
+        { step: 'Blend together the cilantro ranch dressing ingredients.', type: CILANTRO_RANCH_DRESSING, img: [pre, dressing] },
         { step: 'Serve and mix in your homemade Cafe Rio bowl.', type: CILANTRO_RANCH_DRESSING },
         { step: 'After the steak is cooked and remove from the grill, optionally cook the fajitas on the grill. Use any of the residual sauce leftover from the steak on the grill.', type: SECTIONS.MAIN, img: [fajitas, cookedFajita] },
         { step: 'Warm the beans in a saucepan.', type: SECTIONS.MAIN },
         { step: 'Warm the tortillas on the grill.', type: SECTIONS.MAIN, img: warmingTortilla },
-        { step: 'Assemble the salad bowls with the warmed tortilla, cooked rice, warmed beans, cooked steak, salad kit, and all the other desired toppings.', type: SECTIONS.MAIN, img: [tortilla, bowled, cilantroRanchDressing, cilantroAvocadoDressing, southwestDressing] },
+        { step: 'Assemble the salad bowls with the warmed tortilla, cooked rice, warmed beans, cooked steak, salad kit, and all the other desired toppings.', type: SECTIONS.MAIN, img: [tortilla, bowled] },
     ],
     notes: [
         { note: 'I sometimes forget items in fridge or pantry when I am ready to make the salad. I recommend making a list of items beforehand, so you can reference at the time of assembly and not miss your favorite ingredients.' }
