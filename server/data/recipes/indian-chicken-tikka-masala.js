@@ -1,25 +1,16 @@
-const chickenPan = '../assets/Products/chicken-tikka-masala-chicken-in-pan.jpeg';
 const chickenSauce1 = '../assets/Products/chicken-tikka-masala-chicken-in-sauce-1.jpeg';
 const chickenSauce2 = '../assets/Products/chicken-tikka-masala-chicken-in-sauce-2.jpeg';
 const cream = '../assets/Products/chicken-tikka-masala-cream.jpeg';
 const curryChicken = '../assets/Products/chicken-tikka-masala-curry-chicken.jpeg';
-const curryPowder = '../assets/Products/chicken-tikka-masala-curry-powder.jpeg';
-const garlic = '../assets/Products/chicken-tikka-masala-garlic.jpeg';
 const ghee = '../assets/Products/chicken-tikka-masala-ghee.jpeg';
 const mixedSpicesVeggies = '../assets/Products/chicken-tikka-masala-mixed-spices-and-veggies.jpeg';
-const mixedSpices = '../assets/Products/chicken-tikka-masala-mixed-spices.jpeg';
 const sugarAdded = '../assets/Products/chicken-tikka-masala-mixed-sugar-added.jpeg';
-const mixedSugar = '../assets/Products/chicken-tikka-masala-mixed-sugar.jpeg';
 const mixedVeggies = '../assets/Products/chicken-tikka-masala-mixed-veggies.jpeg';
 const mixed = '../assets/Products/chicken-tikka-masala-mixed.jpeg';
 const oil = '../assets/Products/chicken-tikka-masala-oil.jpeg';
 const cookedChickenZoomed = '../assets/Products/chicken-tikka-masala-partially-cooked-chicken-zoomed.jpeg';
 const plated1 = '../assets/Products/chicken-tikka-masala-plated-1.jpeg';
-const raw = '../assets/Products/chicken-tikka-masala-raw-chicken.jpeg';
-const onionPan = '../assets/Products/chicken-tikka-masala-raw-onion-in-pan.jpeg';
 const sauce = '../assets/Products/chicken-tikka-masala-sauce.jpeg';
-const seared = '../assets/Products/chicken-tikka-masala-seared-chicken.jpeg';
-const spicesAdded = '../assets/Products/chicken-tikka-masala-spices-added.jpeg';
 const spices = '../assets/Products/chicken-tikka-masala-spices.jpeg';
 const sugar = '../assets/Products/chicken-tikka-masala-sugar.jpeg';
 const tomato = '../assets/Products/chicken-tikka-masala-tomato-sauce.jpeg';
@@ -72,16 +63,16 @@ module.exports = {
     ],
     directions: [
         { step: 'Over medium heat, heat ghee in a large pot.', type: SECTIONS.SAUCE, img: ghee },
-        { step: 'Add onions. Cook and stir until it becomes translucent (about 5 minutes).', type: SECTIONS.SAUCE, img: [onionPan, translucent] },
-        { step: 'Add garlic. Cook and stir until fragrant (about 1 minute).', type: SECTIONS.SAUCE, img: [garlic, mixedVeggies] },
-        { step: 'Add cumin, salt, ginger, cayenne pepper, cinnamon, and turmeric. Cook and stir until fragrant (about 2 minutes).', type: SECTIONS.SAUCE, img: [spices, mixedSpices, spicesAdded, mixedSpicesVeggies] },
+        { step: 'Add onions. Cook and stir until it becomes translucent (about 5 minutes).', type: SECTIONS.SAUCE, img: translucent },
+        { step: 'Add garlic. Cook and stir until fragrant (about 1 minute).', type: SECTIONS.SAUCE, img: mixedVeggies },
+        { step: 'Add cumin, salt, ginger, cayenne pepper, cinnamon, and turmeric. Cook and stir until fragrant (about 2 minutes).', type: SECTIONS.SAUCE, img: [spices, mixedSpicesVeggies] },
         { step: 'Add tomato sauce. Bring to a boil and reduce to low heat.', type: SECTIONS.SAUCE, img: tomato },
         { step: 'Simmer sauce for 10 minutes.', type: SECTIONS.SAUCE },
-        { step: 'Add cream, sugar and paprika.', type: SECTIONS.SAUCE, img: [sugar, mixedSugar, sugarAdded, cream] },
+        { step: 'Add cream, sugar and paprika.', type: SECTIONS.SAUCE, img: [sugar, sugarAdded, cream] },
         { step: 'Bring to a simmer and cook until sauce has thickened (about 10 to 15 minutes).', type: SECTIONS.SAUCE, img: sauce },
         { step: 'Over medium heat, heat vegetable oil in a large pan.', type: SECTIONS.MAIN, img: oil },
-        { step: 'Add chicken and curry powder.', type: SECTIONS.MAIN, img: [raw, curryPowder, curryChicken] },
-        { step: 'Sear chicken until lightly browned (about 3 minutes). It is fine to not be cooked all the way through.', type: SECTIONS.MAIN, img: [chickenPan, seared, cookedChickenZoomed] },
+        { step: 'Add chicken and curry powder.', type: SECTIONS.MAIN, img: curryChicken },
+        { step: 'Sear chicken until lightly browned (about 3 minutes). It is fine to not be cooked all the way through.', type: SECTIONS.MAIN, img: cookedChickenZoomed },
         { step: 'Transfer chicken to the sauce. Simmer until sauce is cooked through (about 30 minutes).', type: SECTIONS.MAIN, img: [chickenSauce1, mixed] },
         { step: 'Add salt and sugar to taste.', type: SECTIONS.MAIN },
         { step: 'Serve with rice and naan or roti.', type: SECTIONS.MAIN, img: plated1 },
