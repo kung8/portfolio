@@ -1,20 +1,34 @@
-// const roast1 = '../assets/Products/roasted-pork-belly-1.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, TYPES } = require('./constants');
+const roast1 = '../assets/Products/roasted-pork-belly-1.jpeg';
+const roast2 = '../assets/Products/roasted-pork-belly-2.jpeg';
+const roast3 = '../assets/Products/roasted-pork-belly-3.jpeg';
+const roast4 = '../assets/Products/roasted-pork-belly-4.jpeg';
+const roast5 = '../assets/Products/roasted-pork-belly-5.jpeg';
+const roast6 = '../assets/Products/roasted-pork-belly-6.jpeg';
+const roast7 = '../assets/Products/roasted-pork-belly-7.jpeg';
+const roast8 = '../assets/Products/roasted-pork-belly-8.jpeg';
+const roast9 = '../assets/Products/roasted-pork-belly-9.jpeg';
+const roast10 = '../assets/Products/roasted-pork-belly-10.jpeg';
+const roast11 = '../assets/Products/roasted-pork-belly-11.jpeg';
+const roast12 = '../assets/Products/roasted-pork-belly-12.jpeg';
+const roast13 = '../assets/Products/roasted-pork-belly-13.jpeg';
+const roast14 = '../assets/Products/roasted-pork-belly-14.jpeg';
+const roast15 = '../assets/Products/roasted-pork-belly-15.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { PORK_BELLY, SALT, EGG_WHITES, HOISIN_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, WHITE_SUGAR, WHITE_PEPPER, WHITE_VINEGAR } = require('./ingredients');
 
 const PORK_BELLY_SECTION = 'Pork Belly';
-const SPICES_SECTION = 'Spices';
+const RUB_SECTION = 'Spices';
 
 const PREP_PORK_BELLY = 'Prep Pork Belly';
 const COOK_PORK_BELLY = 'Cook Pork Belly';
 
 module.exports = {
-    wip: true,
     cardName: 'Roasted Pork Belly',
     name: 'Roasted Pork Belly',
-    img: '',
+    img: roast14,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.AIR_FRY],
@@ -29,17 +43,20 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...PORK_BELLY, amount: '3 lbs', additionalDetails: 'skin on', section: PORK_BELLY_SECTION },
-        { ...HOISIN_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: PORK_BELLY_SECTION },
-        { ...SHAOXING_WINE, amount: '1/2 Tbsp', additionalDetails: '', section: PORK_BELLY_SECTION },
+
+        { ...HOISIN_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: RUB_SECTION },
+        { ...SHAOXING_WINE, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
+        { ...SALT, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
+        { ...WHITE_PEPPER, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
+        { name: '5-Spice', amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION, link: { id: 'five-spice-blend', url: 'recipes/five-spice-blend' } },
+        { ...WHITE_SUGAR, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
+
         { ...SALT, amount: '1 c', additionalDetails: '', section: PORK_BELLY_SECTION },
         { ...EGG_WHITES, amount: '1', additionalDetails: '', section: PORK_BELLY_SECTION },
+
         { ...WHITE_VINEGAR, amount: '1 Tbsp', additionalDetails: '', section: PORK_BELLY_SECTION },
         { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', section: PORK_BELLY_SECTION },
 
-        { ...SALT, amount: '1/2 Tbsp', additionalDetails: '', section: SPICES_SECTION },
-        { ...WHITE_PEPPER, amount: '1/2 Tbsp', additionalDetails: '', section: SPICES_SECTION },
-        { name: '5-Spice', amount: '1/2 Tbsp', additionalDetails: '', section: SPICES_SECTION, link: { id: 'five-spice-blend', url: 'recipes/five-spice-blend' } },
-        { ...WHITE_SUGAR, amount: '1/2 Tbsp', additionalDetails: '', section: SPICES_SECTION },
     ],
     appliances: [
         { name: 'air fryer' },
@@ -53,20 +70,20 @@ module.exports = {
     ],
     directions: [
         { step: 'Pat the pork belly dry with paper towels.', type: PREP_PORK_BELLY },
-        { step: 'Poke holes on the pork skin (not the meat) using a fork or knife.', type: PREP_PORK_BELLY },
-        { step: 'Score the meat in a criss cross pattern (1 inch apart, 1/4 inch deep).', type: PREP_PORK_BELLY },
-        { step: 'In a small bowl, combine hoisin sauce and shaoxing wine.', type: PREP_PORK_BELLY },
-        { step: 'Brush the meat side with the sauce mixture.', type: PREP_PORK_BELLY },
-        { step: 'In a small bowl, combine all the "Spice" section ingredients.', type: PREP_PORK_BELLY },
-        { step: 'Cover the pork in aluminum foil except the skin.', type: PREP_PORK_BELLY },
-        { step: 'In a small bowl, combine egg whites and salt until it becomes a paste.', type: PREP_PORK_BELLY },
+        { step: 'Poke holes on the pork skin (not the meat) using a fork or knife.', type: PREP_PORK_BELLY, img: roast2 },
+        { step: 'Score the meat in a criss cross pattern (1 inch apart, 1/4 inch deep).', type: PREP_PORK_BELLY, img: roast3 },
+        { step: 'In a small bowl, combine the "Rub" section ingredients.', type: PREP_PORK_BELLY, img: roast1 },
+        { step: 'Brush the meat side with the rub mixture.', type: PREP_PORK_BELLY, img: [roast4, roast5] },
+        { step: 'Cover the pork in aluminum foil except the skin.', type: PREP_PORK_BELLY, img: roast6 },
+        { step: 'In a small bowl, combine egg whites and salt until it becomes a paste.', type: PREP_PORK_BELLY, img: [roast7, roast8] },
         { step: 'Brush the skin with vinegar.', type: PREP_PORK_BELLY },
-        { step: 'Cover with the salt mixture and rub into the pork.', type: PREP_PORK_BELLY },
-        { step: 'Air fry at 250ºF until the salt has dried (about 30 minutes).', type: COOK_PORK_BELLY },
-        { step: 'Remove the salt and pat dry with a paper towel.', type: COOK_PORK_BELLY },
+        { step: 'Cover with the salt mixture and rub into the pork.', type: PREP_PORK_BELLY, img: [roast9, roast10] },
+        { step: 'Air fry at 250ºF until the salt has dried (about 30 minutes).', type: COOK_PORK_BELLY, img: roast11 },
+        { step: 'Remove the salt and pat dry with a paper towel.', type: COOK_PORK_BELLY, img: roast12 },
         { step: 'Brush the skin with oil.', type: COOK_PORK_BELLY },
-        { step: 'Air fry at 400ºF until the skin is golden and crispy (about 30 to 40 minutes). Check the pork at 20 minutes and then every 5 minutes after that. Cover the areas that are beginning to burn with tin foil.', type: COOK_PORK_BELLY },
+        { step: 'Air fry at 400ºF until the skin is golden and crispy (about 30 to 40 minutes). Check the pork at 20 minutes and then every 5 minutes after that. Cover the areas that are beginning to burn with tin foil.', type: COOK_PORK_BELLY, img: roast13 },
         { step: 'Let it rest for about 10 minutes before carving.', type: COOK_PORK_BELLY },
+        { step: 'Serve and enjoy! It will be salty so best eaten with rice.', type: SECTIONS.SERVE, img: roast15 },
     ],
     notes: [
         { note: 'Rubbing the skin with salt helps draw moisture from the pork skin and helps it crisp up better.' },
