@@ -9,7 +9,6 @@ const meatball8 = '../assets/Products/swedish-meatball-8.jpeg';
 const meatball9 = '../assets/Products/swedish-meatball-9.jpeg';
 const meatball10 = '../assets/Products/swedish-meatball-10.jpeg';
 const meatball11 = '../assets/Products/swedish-meatball-11.jpeg';
-const meatball12 = '../assets/Products/swedish-meatball-12.jpeg';
 const meatball13 = '../assets/Products/swedish-meatball-13.jpeg';
 const meatball14 = '../assets/Products/swedish-meatball-14.jpeg';
 const meatball15 = '../assets/Products/swedish-meatball-15.jpeg';
@@ -89,7 +88,7 @@ module.exports = {
         { step: 'Lightly stir the breadcrumb mixture into the meat mixture.', type: SWEDISH_MEATBALLS, img: [meatball9, meatball10] },
         { step: 'Form the meatballs into about 2 inch balls.', type: SWEDISH_MEATBALLS, img: meatball11 },
         { step: 'Over medium heat, melt butter in a pan.', type: PAN_FRY_MEATBALLS },
-        { step: 'Add the meatballs to the pan.', type: PAN_FRY_MEATBALLS, img: [meatball12, meatball13] },
+        { step: 'Add the meatballs to the pan.', type: PAN_FRY_MEATBALLS, img: meatball13 },
         { step: 'Cook while turning often until browned (about 5 minutes). The inside of the meatballs should still be pink.', type: PAN_FRY_MEATBALLS },
         { step: 'Transfer meatballs to a baking dish.', type: BAKING },
         { step: 'Add chicken broth and cover with aluminum foil.', type: BAKING, img: [meatball15, meatball14] },

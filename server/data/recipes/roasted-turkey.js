@@ -1,15 +1,11 @@
 const plated1 = '../assets/Products/roasted-turkey-plated-1.jpeg';
-const plated2 = '../assets/Products/roasted-turkey-plated-2.jpeg';
 const breastDown1 = '../assets/Products/roasted-turkey-breast-side-down-1.jpeg';
-const breastDown2 = '../assets/Products/roasted-turkey-breast-side-down-2.jpeg';
 const breastDown3  = '../assets/Products/roasted-turkey-breast-side-down-3.jpeg';
 const butter = '../assets/Products/roasted-turkey-butter.jpeg';
 const butterball = '../assets/Products/roasted-turkey-butterball.jpeg';
 const cavity1 = '../assets/Products/roasted-turkey-cavity-1.jpeg';
-const cavity2 = '../assets/Products/roasted-turkey-cavity-2.jpeg';
 const cooked = '../assets/Products/roasted-turkey-cooked.jpeg';
 const dry1 = '../assets/Products/roasted-turkey-dry-1.jpeg';
-const dry2 = '../assets/Products/roasted-turkey-dry-2.jpeg';
 const ingredients = '../assets/Products/roasted-turkey-ingredients.jpeg';
 const partial1 = '../assets/Products/roasted-turkey-partially-cooked-1.jpeg';
 const partial2 = '../assets/Products/roasted-turkey-partially-cooked-2.jpeg';
@@ -17,7 +13,6 @@ const partial3 = '../assets/Products/roasted-turkey-partially-cooked-3.jpeg';
 const rub1 = '../assets/Products/roasted-turkey-rub-1.jpeg';
 const rub2 = '../assets/Products/roasted-turkey-rub-2.jpeg';
 const rub3 = '../assets/Products/roasted-turkey-rub-3.jpeg';
-const rub4 = '../assets/Products/roasted-turkey-rub-4.jpeg';
 const rub5 = '../assets/Products/roasted-turkey-rub-5.jpeg';
 
 const turkeyCookingTable = '../assets/Products/cooking-turkey-estimates.png';
@@ -87,22 +82,22 @@ module.exports = {
         { step: 'Divide the rub in half. Place half in the fridge.', type: HERB_BUTTER_RUB },
 
         { step: 'Preheat oven to 425ºF and set oven rack to the lowest level.', type: PREPARING_TURKEY },
-        { step: 'Bring turkey to room temperature, clean, and pat dry.', type: PREPARING_TURKEY, img: [dry1, dry2] },
+        { step: 'Bring turkey to room temperature, clean, and pat dry.', type: PREPARING_TURKEY, img: dry1 },
         { step: 'Loosen the skin of the turkey by gently sliding your fingers between the skin and the meat.', type: PREPARING_TURKEY },
         { step: 'Using your hands, rub half the softened herb butter on the turkey and in between the loosened skin. Then generously season with salt and pepper.', type: PREPARING_TURKEY, img: rub5 },
-        { step: 'Place turkey breast-side down and drizzle with part of the oil.', type: PREPARING_TURKEY, img: [breastDown1, breastDown2, rub2] },
+        { step: 'Place turkey breast-side down and drizzle with part of the oil.', type: PREPARING_TURKEY, img: [breastDown1, rub2] },
         
         
         { step: 'Roast uncovered for 30 min for small turkey or 45 min for large turkey.', type: COOKING_TURKEY },
         { step: 'Remove turkey from oven. Turn down the oven to 325ºF.', type: COOKING_TURKEY, img: breastDown3 },
         { step: 'Carefully flip the turkey and baste with pan juice.', type: COOKING_TURKEY },
-        { step: 'Stuff the turkey cavity with the "Cavity Filling".', type: COOKING_TURKEY, img: [cavity1, cavity2, rub3, rub4] },
+        { step: 'Stuff the turkey cavity with the "Cavity Filling".', type: COOKING_TURKEY, img: [cavity1, rub3] },
         { step: 'Use a brush to spread some more herb rub on the turkey. Save some for one more slathering.', type: COOKING_TURKEY },
         { step: 'Roast uncovered for another hour.', type: COOKING_TURKEY },
         { step: 'Use a brush to spread the remaining herb rub and roast for an additional 30 min for small turkey or 1 hr for large turkey.', type: COOKING_TURKEY, img: partial1 },
         { step: 'Cook for an additional 30 minutes to 1 hour until the turkey reaches 165ºF. If the turkey is browning too quickly, tent the turkey with some foil.', type: COOKING_TURKEY, img: partial3 },
         { step: 'Let the turkey rest for 20 - 30 min before you carve and serve. Letting it rest allows for moisture and juices to spread throughout the turkey. While the turkey was cooking the juices were evaporated, so it would be dry.', type: COOKING_TURKEY, img: partial2 },
-        { step: 'Enjoy the moist turkey slices with many other holiday favorites!', type: SECTIONS.SERVE, img: [plated1, plated2] },
+        { step: 'Enjoy the moist turkey slices with many other holiday favorites!', type: SECTIONS.SERVE, img: plated1 },
     ],
     notes: [
         { note: 'Butterball is my favorite brand of turkey.', img: butterball },

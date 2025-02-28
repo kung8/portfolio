@@ -7,13 +7,7 @@ const doughWithMixture = '../assets/Products/snickerdoodle-dough-balls-with-mixt
 const oven = '../assets/Products/snickerdoodle-baking-in-oven.jpeg';
 const pan = '../assets/Products/snickerdoodle-dough-in-pan.jpeg';
 const cooked = '../assets/Products/snickerdoodle-cooked.jpeg';
-const full = '../assets/Products/snickerdoodle-cooked-full.jpeg';
-
 const plated1 = '../assets/Products/snickerdoodle-plated-1.jpeg';
-const plated2 = '../assets/Products/snickerdoodle-plated-2.jpeg';
-const plated3 = '../assets/Products/snickerdoodle-plated-3.jpeg';
-const plated4 = '../assets/Products/snickerdoodle-plated-4.jpeg';
-const plated5 = '../assets/Products/snickerdoodle-plated-5.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const {
@@ -82,6 +76,6 @@ module.exports = {
         { step: 'Roll each ball in the cinnamon-sugar mixture.', type: SECTIONS.MAIN, img: doughWithMixture },
         { step: 'Place the coated dough balls on a baking sheet about 2-inches apart.', type: SECTIONS.MAIN, img: pan },
         { step: 'Bake for 8 to 10 minutes.', type: SECTIONS.MAIN, img: oven },
-        { step: 'Enjoy these quick, light treats in any mood and any time of the day.', type: SECTIONS.MAIN, img: [full, cooked, plated1, plated2, plated3, plated4, plated5] },
+        { step: 'Enjoy these quick, light treats in any mood and any time of the day.', type: SECTIONS.MAIN, img: cooked },
     ]
 };

@@ -14,9 +14,6 @@ const dough7 = '../assets/Products/sugar-cookies-dough-7.jpeg';
 const dough8 = '../assets/Products/sugar-cookies-dough-8.jpeg';
 const dough9 = '../assets/Products/sugar-cookies-dough-9.jpeg';
 const dough10 = '../assets/Products/sugar-cookies-dough-10.jpeg';
-const cookies1 = '../assets/Products/sugar-cookies-1.jpeg';
-const cookies2 = '../assets/Products/sugar-cookies-2.jpeg';
-const cookies3 = '../assets/Products/sugar-cookies-3.jpeg';
 const cookies4 = '../assets/Products/sugar-cookies-4.jpeg';
 const cookies5 = '../assets/Products/sugar-cookies-5.jpeg';
 const cookies6 = '../assets/Products/sugar-cookies-6.jpeg';
@@ -93,7 +90,7 @@ module.exports = {
         { step: 'Place parchment paper on top of one. Stack the second mat on top.', type: SUGAR_COOKIES, img: [dough7, dough8] },
         { step: 'Cover with plastic wrap. Refrigerate for 1 to 2 hours (up to 2 days).', type: SUGAR_COOKIES, img: [dough9, dough10] },
         { step: 'Preheat the oven to 350ºF when ready to bake.', type: SUGAR_COOKIES },
-        { step: 'Cut dough into your favorite shapes using cookie cutters.', type: SUGAR_COOKIES, img: [cookies1, cookies2, cookies3, cookies4] },
+        { step: 'Cut dough into your favorite shapes using cookie cutters.', type: SUGAR_COOKIES, img: cookies4 },
         { step: 'Re-roll the scraps and repeat until all the dough is used.', type: SUGAR_COOKIES },
         { step: 'Place the cookies on silicon baking sheet an inch apart. They do not spread very much but they will rise slightly.', type: SUGAR_COOKIES },
         { step: 'Bake until the edges are lightly browned (about 11 to 12 minutes).', type: SUGAR_COOKIES },

@@ -1,11 +1,7 @@
 const stuffing1 = '../assets/Products/stuffing-1.jpeg';
 const stuffing2 = '../assets/Products/stuffing-2.jpeg';
-const stuffing3 = '../assets/Products/stuffing-3.jpeg';
-const stuffing4 = '../assets/Products/stuffing-4.jpeg';
 const stuffing5 = '../assets/Products/stuffing-5.jpeg';
-const stuffing6 = '../assets/Products/stuffing-6.jpeg';
 const stuffing7 = '../assets/Products/stuffing-7.jpeg';
-const stuffing8 = '../assets/Products/stuffing-8.jpeg';
 const stuffing9 = '../assets/Products/stuffing-9.jpeg';
 const stuffing10 = '../assets/Products/stuffing-10.jpeg';
 const stuffing11 = '../assets/Products/stuffing-11.jpeg';
@@ -62,8 +58,8 @@ module.exports = {
         { step: 'Preheat the oven to 350ºF.', type: SECTIONS.MAIN },
         { step: 'Brush the baking pan with some cooking spray.', type: SECTIONS.MAIN, img: stuffing1 },
         { step: 'Place cubed bread in baking pan.', type: SECTIONS.MAIN, img: stuffing2 },
-        { step: 'Over medium heat, heat butter in a pan.', type: SECTIONS.MAIN, img: [stuffing3, stuffing4, stuffing5] },
-        { step: 'Once melted, stir in onion, celery, garlic, salt and black pepper.', type: SECTIONS.MAIN, img: [stuffing6, stuffing7, stuffing8] },
+        { step: 'Over medium heat, heat butter in a pan.', type: SECTIONS.MAIN, img: stuffing5 },
+        { step: 'Once melted, stir in onion, celery, garlic, salt and black pepper.', type: SECTIONS.MAIN, img: stuffing7 },
         { step: 'Cook until the veggie are soft (about 8 to 10 minutes).', type: SECTIONS.MAIN, img: stuffing9 },
         { step: 'Add in chopped fresh herbs. Mix and cook for 1 minute.', type: SECTIONS.MAIN, img: [stuffing10, stuffing11] },
         { step: 'Stir in 1 cup of stock.', type: SECTIONS.MAIN, img: stuffing12 },

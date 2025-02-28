@@ -1,5 +1,4 @@
 const basil1 = '../assets/Products/thai-basil-1.jpeg';
-const basil2 = '../assets/Products/thai-basil-2.jpeg';
 const basil3 = '../assets/Products/thai-basil-3.jpeg';
 const basil4 = '../assets/Products/thai-basil-4.jpeg';
 const basil5 = '../assets/Products/thai-basil-5.jpeg';
@@ -57,7 +56,7 @@ module.exports = {
         { step: 'In a mixing bowl, combine the "Sauce" ingredients.', type: SECTIONS.SAUCE, img: basil3 },
         { step: 'Over high heat, add oil to a pan.', type: SECTIONS.MAIN },
         { step: 'Add chicken (or preferred protein) and stir fry until the protein has lost its raw color (about 2 to 3 minutes).', type: SECTIONS.MAIN, img: [basil1, basil4] },
-        { step: 'Add the remaining ingredients except the basil. Mix and cook until the liquid begins caramelize on the bottom of the pan (about 2 or 3 minutes).', type: SECTIONS.MAIN, img: [basil2, basil5] },
+        { step: 'Add the remaining ingredients except the basil. Mix and cook until the liquid begins caramelize on the bottom of the pan (about 2 or 3 minutes).', type: SECTIONS.MAIN, img: basil5 },
         { step: 'Add 1 tablespoon of the sauce. Cook and mix until the sauce caramelizes (about 1 minutes).', type: SECTIONS.MAIN },
         { step: 'Add the rest of the sauce. Cook and mix until the sauce has deglazed the pan.', type: SECTIONS.MAIN, img: basil6 },
         { step: 'Let the sauce glaze the meat (about 1 or 2 minutes).', type: SECTIONS.MAIN },
