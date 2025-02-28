@@ -1,14 +1,17 @@
-// const example = '../assets/Products/example.jpeg';
+const blend1 = '../assets/Products/five-spices-blend-1.jpeg';
+const blend2 = '../assets/Products/five-spices-blend-2.jpeg';
+const blend3 = '../assets/Products/five-spices-blend-3.jpeg';
+const blend4 = '../assets/Products/five-spices-blend-4.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
 const { CINNAMON, STAR_ANISE, FENNEL_SEEDS, BLACK_PEPPER, GROUND_CLOVES } = require('./ingredients');
 
 const SPICES_SECTION = 'Spices';
 
 module.exports = {
-    wip: true,
     cardName: '5-Spice Blend',
     name: 'Five Spice Blend',
-    img: '',
+    img: blend2,
     available: true,
     recommended: false,
     category: [CATEGORIES.TOPPING],
@@ -32,8 +35,8 @@ module.exports = {
         { name: 'pestle and mortar' },
     ],
     directions: [
-        { step: 'In a pestle and mortar, combine the spices.', type: SECTIONS.MAIN },
-        { step: 'Store in an airtight container for 2 months.', type: SECTIONS.STORE },
+        { step: 'In a pestle and mortar, combine the spices.', type: SECTIONS.MAIN, img: [blend1, blend3] },
+        { step: 'Store in an airtight container for 2 months.', type: SECTIONS.STORE, img: blend4 },
     ],
     notes: [
         { note: 'Dry roasting the spices in a pan will accentuate the flavor.' },
