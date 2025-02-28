@@ -4,16 +4,11 @@ const cooked = '../assets/Products/black-pepper-chicken-cooked-chicken.jpeg';
 const cornstarch = '../assets/Products/black-pepper-chicken-cornstarch.jpeg';
 const marinade = '../assets/Products/black-pepper-chicken-marinade.jpeg';
 const marinaded = '../assets/Products/black-pepper-chicken-marinaded-chicken.jpeg';
-const partial = '../assets/Products/black-pepper-chicken-partial-chicken-in-pan.jpeg';
-const rice1 = '../assets/Products/black-pepper-chicken-plated-with-rice-1.jpeg';
 const rice2 = '../assets/Products/black-pepper-chicken-plated-with-rice-2.jpeg';
-const plated = '../assets/Products/black-pepper-chicken-plated.jpeg';
 const raw = '../assets/Products/black-pepper-chicken-raw-chicken-in-pan.jpeg';
-const withPeppers = '../assets/Products/black-pepper-chicken-raw-fragrant-with-peppers.jpeg';
-const fragrant = '../assets/Products/black-pepper-chicken-raw-fragrant.jpeg';
 const sauce = '../assets/Products/black-pepper-chicken-sauce.jpeg';
 const sauted = '../assets/Products/black-pepper-chicken-sauted-fragrant.jpeg';
-const cilantro = '../assets/Products/black-pepper-chicken-with-cilantro.jpeg';
+
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 const {
     CHICKEN_BREAST,
@@ -80,12 +75,12 @@ module.exports = {
         { step: 'In a mixing bowl, combine the marinade ingredients.', type: SECTIONS.MARINADE, img: marinade },
         { step: 'Add chicken. Marinate the chicken for 30 minutes.', type: SECTIONS.MARINADE, img: marinaded },
         { step: 'Over medium-high heat, heat 1 Tbsp of oil in a wok.', type: SECTIONS.MAIN },
-        { step: 'Cook the chicken in batches if needed. Cook until chicken is cooked through. Remove chicken and set aside.', type: SECTIONS.MAIN, img: [raw, partial, cooked] },
-        { step: 'Add the shallots, garlic, ginger and black pepper to the wok. Cook and stir until fragrant.', type: SECTIONS.MAIN, img: [fragrant, withPeppers, sauted] },
+        { step: 'Cook the chicken in batches if needed. Cook until chicken is cooked through. Remove chicken and set aside.', type: SECTIONS.MAIN, img: [raw, cooked] },
+        { step: 'Add the shallots, garlic, ginger and black pepper to the wok. Cook and stir until fragrant.', type: SECTIONS.MAIN, img: sauted },
         { step: 'Add the sauces and water. Mix until combined.', type: SECTIONS.MAIN, img: sauce },
         { step: 'In a small bowl, combine cornstarch and a little warm water. Mix then add to the wok.', type: SECTIONS.MAIN, img: cornstarch },
-        { step: 'Re-add the chicken and mix until combined.', type: SECTIONS.MAIN, img: [combined] },
+        { step: 'Re-add the chicken and mix until combined.', type: SECTIONS.MAIN, img: combined },
         { step: 'Add sugar as desired.', type: SECTIONS.MAIN },
-        { step: 'Serve over rice, garnish with a few sprigs of cilantro, and enjoy a small taste of Malaysian cuisine.', type: SECTIONS.MAIN, img: [plated, rice1, rice2, cilantro] },
+        { step: 'Serve over rice, garnish with a few sprigs of cilantro, and enjoy a small taste of Malaysian cuisine.', type: SECTIONS.MAIN, img: rice2 },
     ]
 };
