@@ -2,25 +2,19 @@ const rawIngredients = '../assets/Products/cheesecake-raw-cheesecake-ingredients
 const baked = '../assets/Products/cheesecake-baked-cheesecake.jpeg';
 const slice = '../assets/Products/cheesecake-slice.jpeg';
 const glaze = '../assets/Products/cheesecake-glazed-strawberries.jpeg';
-// const crustMixed = '../assets/Products/cheesecake-crust-mixed.jpeg';
 const crustRaw = '../assets/Products/cheesecake-crust-raw.jpeg';
 const crust = '../assets/Products/cheesecake-crust.jpeg';
 const fillingCombined = '../assets/Products/cheesecake-filling-combined.jpeg';
 const filling = '../assets/Products/cheesecake-filling-added.jpeg';
 const beforeCreaming = '../assets/Products/cheesecake-filling-before-creaming.jpeg';
-// const creamed = '../assets/Products/cheesecake-filling-creamed.jpeg';
 const hulled = '../assets/Products/cheesecake-hulled-strawberries.jpeg';
-// const crummies = '../assets/Products/cheesecake-in-cake-holder-with-crummies.jpeg';
 const cakeHolder = '../assets/Products/cheesecake-in-cake-holder.jpeg';
 const roastingPan = '../assets/Products/cheesecake-in-roasting-pan.jpeg';
 const coolingRack = '../assets/Products/cheesecake-on-cooling-rack.jpeg';
 const smallSlice = '../assets/Products/cheesecake-small-slice.jpeg';
 const strawberriesInPan = '../assets/Products/cheesecake-strawberries-in-pan.jpeg';
-// const toppingsInPan = '../assets/Products/cheesecake-strawberry-toppings-in-pan.jpeg';
 const wholeGlazed = '../assets/Products/cheesecake-whole-glazed-strawberry.jpeg';
-const zoomed = '../assets/Products/cheesecake-zoomed-in.jpeg';
-// const aerial = '../assets/Products/cheesecake-aerial.jpeg';
-// const zoomed = '../assets/Products/cheesecake-zoomed.jpeg';
+
 const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
 const {
     WHITE_SUGAR,
