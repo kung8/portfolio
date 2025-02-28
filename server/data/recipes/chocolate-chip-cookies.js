@@ -1,5 +1,4 @@
 const cookieDough = '../assets/Products/cookie-dough.jpeg';
-const cookies = '../assets/Products/chocolate-chip-cookies.jpeg';
 const activated = '../assets/Products/chocolate-chip-cookies-activated-baking-soda.jpeg';
 const bakingSoda = '../assets/Products/chocolate-chip-cookies-baking-soda.jpeg';
 const batter = '../assets/Products/chocolate-chip-cookies-batter-without-chocolate-chips.jpeg';
@@ -78,6 +77,6 @@ module.exports = {
         { step: 'Chill in the freezer up to 24 hours (I think 10 minutes might have been fine). This helps control the spread, deepen the flavor, created crispier edges and chewier cookies, and a more even bake.', type: SECTIONS.MAIN },
         { step: 'Bake for 10 minutes.', type: SECTIONS.MAIN },
         { step: 'Let cool for a few minutes before transferring to a cooling rack.', type: SECTIONS.MAIN },
-        { step: 'Enjoy these delicious treats with a cold glass of milk!', type: SECTIONS.MAIN, img: [cookies, plated] },
+        { step: 'Enjoy these delicious treats with a cold glass of milk!', type: SECTIONS.MAIN, img: plated },
     ]
 };
