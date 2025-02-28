@@ -1,5 +1,4 @@
 const quesadillas1 = '../assets/Products/chicken-quesadillas-1.jpeg';
-const quesadillas2 = '../assets/Products/chicken-quesadillas-2.jpeg';
 const quesadillas3 = '../assets/Products/chicken-quesadillas-3.jpeg';
 const quesadillas4 = '../assets/Products/chicken-quesadillas-4.jpeg';
 const quesadillas5 = '../assets/Products/chicken-quesadillas-5.jpeg';
@@ -79,7 +78,7 @@ module.exports = {
         { name: 'knife' },
     ],
     directions: [
-        { step: 'In a small bowl, combine spices.', type: SPICES, img: [quesadillas2, quesadillas3] },
+        { step: 'In a small bowl, combine spices.', type: SPICES, img: quesadillas3 },
 
         { step: 'In a saucepan, add the chicken breast and fill the saucepan with water just enough to cover the chicken slightly.', type: PREP_CHICKEN, img: quesadillas1 },
         { step: 'Bring to a boil.', type: PREP_CHICKEN },
