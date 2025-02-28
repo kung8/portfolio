@@ -1,6 +1,4 @@
 const angled = '../assets/Products/peppermint-bark-chilled-angled.jpeg';
-const zoomed = '../assets/Products/peppermint-bark-chilled-zoomed.jpeg';
-const chilled = '../assets/Products/peppermint-bark-chilled.jpeg';
 const crushed = '../assets/Products/peppermint-bark-crushed-peppermint.jpeg';
 const peppermint = '../assets/Products/peppermint-bark-peppermint.jpeg';
 const chocolate = '../assets/Products/peppermint-bark-chocolate-chips.jpeg';
@@ -9,9 +7,7 @@ const layeredWhite = '../assets/Products/peppermint-bark-layered-white-chocolate
 const meltedChocolate = '../assets/Products/peppermint-bark-melted-chocolate.jpeg';
 const meltedWhite = '../assets/Products/peppermint-bark-melted-white-chocolate-chip.jpeg';
 const parchment = '../assets/Products/peppermint-bark-parchment-paper.jpeg';
-const plated1 = '../assets/Products/peppermint-bark-plated-1.jpeg';
 const plated2 = '../assets/Products/peppermint-bark-plated-2.jpeg';
-const plated3 = '../assets/Products/peppermint-bark-plated-3.jpeg';
 const plated4 = '../assets/Products/peppermint-bark-plated-4.jpeg';
 const set = '../assets/Products/peppermint-bark-set-chocolate.jpeg';
 const white = '../assets/Products/peppermint-bark-white-chocolate-chips.jpeg';
@@ -60,8 +56,8 @@ module.exports = {
         { step: 'Mix in peppermint extract.', type: SECTIONS.MAIN },
         { step: 'Spread the melted white chocolate over the semisweet chocolate.', type: SECTIONS.MAIN, img: layeredWhite },
         { step: 'Sprinkle the crushed candy cane over the white chocolate.', type: SECTIONS.MAIN, img: [peppermint, crushed, layeredPeppermint] },
-        { step: 'Chill in the fridge until the chocolate is completely set (about 20 minutes).', type: SECTIONS.MAIN, img: [chilled, angled, zoomed] },
+        { step: 'Chill in the fridge until the chocolate is completely set (about 20 minutes).', type: SECTIONS.MAIN, img: angled },
         { step: 'Take the bark and let it sit at room temperature before cutting (about 20 minutes).', type: SECTIONS.MAIN },
-        { step: 'Using a sharp knife, cut through the bark and enjoy.', type: SECTIONS.MAIN, img: [plated1, plated2, plated3] },
+        { step: 'Using a sharp knife, cut through the bark and enjoy.', type: SECTIONS.MAIN, img: plated2 },
     ]
 };
