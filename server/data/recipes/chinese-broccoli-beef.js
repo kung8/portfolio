@@ -4,14 +4,11 @@ const bath = '../assets/Products/broccoli-beef-broccoli-bath.jpeg';
 const blanching = '../assets/Products/broccoli-beef-blanching-broccoli.jpeg';
 const saucey = '../assets/Products/broccoli-beef-cooked-with-lots-of-sauce.jpeg';
 const cookedZoomed = '../assets/Products/broccoli-beef-cooked-zoomed.jpeg';
-const cookingBeef = '../assets/Products/broccoli-beef-cooking-beef.jpeg';
 const garlic = '../assets/Products/broccoli-beef-garlic-ginger.jpeg';
 const marinating = '../assets/Products/broccoli-beef-marinating-beef.jpeg';
-const partialBeef = '../assets/Products/broccoli-beef-partial-cooked-beef.jpeg';
-const plated = '../assets/Products/broccoli-beef-plated.jpeg';
-const rawBroccoli = '../assets/Products/broccoli-beef-raw-broccoli.jpeg';
 const thickened = '../assets/Products/broccoli-beef-sauce-thickened.jpeg';
 const sauce = '../assets/Products/broccoli-beef-sauce.jpeg';
+
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const {
     BAKING_SODA,
@@ -80,17 +77,17 @@ module.exports = {
     directions: [
         { step: 'In a large bowl, combine the beef marinade ingredients. Let it marinate for 30 minutes.', type: BEEF_SECTION, img: marinating },
         { step: 'In a medium bowl, combine the sauce ingredients and set aside.', type: SECTIONS.SAUCE, img: sauce },
-        { step: 'In a large pot, boil water.', type: BROCCOLI_SECTION, img: rawBroccoli },
+        { step: 'In a large pot, boil water.', type: BROCCOLI_SECTION },
         { step: 'Add broccoli to the boiling water.', type: BROCCOLI_SECTION, img: blanching },
         { step: 'Transfer to ice bath after 3 or 4 minutes.', type: BROCCOLI_SECTION, img: bath },
-        { step: 'Over medium-high heat, heat up a wok and add beef.', type: SECTIONS.MAIN, img: cookingBeef },
-        { step: 'Cook beef just until cooked about 80% of the way.', type: SECTIONS.MAIN, img: partialBeef },
+        { step: 'Over medium-high heat, heat up a wok and add beef.', type: SECTIONS.MAIN },
+        { step: 'Cook beef just until cooked about 80% of the way.', type: SECTIONS.MAIN },
         { step: 'Remove beef from the wok.', type: SECTIONS.MAIN, img: eighty },
         { step: 'Add oil.', type: SECTIONS.MAIN },
         { step: 'Add the garlic and ginger. Saute.', type: SECTIONS.MAIN, img: garlic },
         { step: 'Add sauce. Cook until it thickens.', type: SECTIONS.MAIN, img: thickened },
         { step: 'Add the beef and broccoli. Combine.', type: SECTIONS.MAIN, img: addedBeef },
         { step: 'Cook until beef is cooked through.', type: SECTIONS.MAIN, img: saucey },
-        { step: 'Top with sesame seeds and serve with steamed rice.', type: SECTIONS.SERVE, img: plated },
+        { step: 'Top with sesame seeds and serve with steamed rice.', type: SECTIONS.SERVE },
     ]
 };
