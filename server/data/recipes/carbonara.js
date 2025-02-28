@@ -1,8 +1,5 @@
-const carbonara1 = '../assets/Products/carbonara-1.jpeg';
 const carbonara2 = '../assets/Products/carbonara-2.jpeg';
-const carbonara3 = '../assets/Products/carbonara-3.jpeg';
 const carbonara4 = '../assets/Products/carbonara-4.jpeg';
-const carbonara5 = '../assets/Products/carbonara-5.jpeg';
 const carbonara6 = '../assets/Products/carbonara-6.jpeg';
 const carbonara7 = '../assets/Products/carbonara-7.jpeg';
 const carbonara8 = '../assets/Products/carbonara-8.jpeg';
@@ -67,15 +64,15 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine eggs and yolk.', type: CARBONARA_SAUCE, img: [carbonara1, carbonara2] },
-        { step: 'Add parmesan and pepper. Mix.', type: CARBONARA_SAUCE, img: [carbonara3, carbonara4] },
+        { step: 'In a mixing bowl, combine eggs and yolk.', type: CARBONARA_SAUCE, img: carbonara2 },
+        { step: 'Add parmesan and pepper. Mix.', type: CARBONARA_SAUCE, img: carbonara4 },
 
         { step: 'Over medium-high heat, bring a pot of water to a boil.', type: COOK_PASTA },
         { step: 'Cook the pasta to al dente (follow the instructions on package).', type: COOK_PASTA },
         { step: 'Reserve 1 cup of pasta water to use for the sauce later. Set aside.', type: COOK_PASTA },
         { step: 'Drain pasta.', type: COOK_PASTA },
 
-        { step: 'Over medium-high heat, add the guanciale to a large pan.', type: COOK_GUANCIALE, img: [carbonara5, carbonara6] },
+        { step: 'Over medium-high heat, add the guanciale to a large pan.', type: COOK_GUANCIALE, img: carbonara6 },
         { step: 'Cook for 3 to 4 minutes.', type: COOK_GUANCIALE },
         { step: 'Add the minced garlic. Mix and cook until the guanciale becomes golden (about 1 to 2 minutes).', type: COOK_GUANCIALE, img: carbonara7 },
 
