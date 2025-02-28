@@ -12,7 +12,6 @@ const plated6 = '../assets/Products/pho-plated-6.jpeg';
 const sauces = '../assets/Products/pho-sauces.jpeg';
 const toppings = '../assets/Products/pho-toppings.jpeg';
 const veggiesPot = '../assets/Products/pho-veggies-in-pot.jpeg';
-const veggies = '../assets/Products/pho-veggies.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN } = require('./constants');
 const {
     BEAN_SPROUTS,
@@ -89,7 +88,7 @@ module.exports = {
         { name: 'medium pot' },
     ],
     directions: [
-        { step: 'Over medium heat, add onion and ginger in a large pot.', type: SECTIONS.BROTH, img: [veggies, veggiesPot] },
+        { step: 'Over medium heat, add onion and ginger in a large pot.', type: SECTIONS.BROTH, img: veggiesPot },
         { step: 'Cook and stir occasionally (about 4 minutes).', type: SECTIONS.BROTH },
         { step: 'Add the rest of the broth ingredients. Bring to a slow boil.', type: SECTIONS.BROTH, img: [cinnamon, sauces, broth1] },
         { step: 'Reduce heat and simmer for 30 minutes.', type: SECTIONS.BROTH },

@@ -1,14 +1,11 @@
 const baked1 = '../assets/Products/rosemary-fries-baked-1.jpeg';
 const baked2 = '../assets/Products/rosemary-fries-baked-2.jpeg';
-const baked3 = '../assets/Products/rosemary-fries-baked-3.jpeg';
-const plated1 = '../assets/Products/rosemary-fries-plated-1.jpeg';
 const plated2 = '../assets/Products/rosemary-fries-plated-2.jpeg';
-const potatoes = '../assets/Products/rosemary-fries-potatoes.jpeg';
 const seasoned = '../assets/Products/rosemary-fries-seasoned.jpeg';
 const seasonings1 = '../assets/Products/rosemary-fries-seasonings-1.jpeg';
 const seasonings2 = '../assets/Products/rosemary-fries-seasonings-2.jpeg';
-const tray1 = '../assets/Products/rosemary-fries-tray-1.jpeg';
 const tray2 = '../assets/Products/rosemary-fries-tray-2.jpeg';
+
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { OLIVE_OIL, ROSEMARY, GARLIC, CORNSTARCH, SALT, BLACK_PEPPER, SWEET_POTATOES } = require('./ingredients');
 
@@ -49,9 +46,9 @@ module.exports = {
         { step: 'Preheat oven to 425ºF.', type: SECTIONS.MAIN },
         { step: 'Prepare baking sheet with cooking spray.', type: SECTIONS.MAIN },
         { step: 'In a mixing bowl, combine all the herbs, spices and liquids.', type: SECTIONS.MAIN, img: [seasonings1, seasonings2] },
-        { step: 'Add the potatoes. Mix.', type: SECTIONS.MAIN, img: [potatoes, seasoned] },
-        { step: 'Arrange the fries in a single layer on baking sheet.', type: SECTIONS.MAIN, img: [tray1, tray2] },
-        { step: 'Bake until tender and lightly browned (for about 30 to 35 minutes). Turn occasionally.', type: SECTIONS.MAIN, img: [baked1, baked3] },
-        { step: 'Enjoy this delicious side!', type: SECTIONS.MAIN, img: [plated1, plated2] },
+        { step: 'Add the potatoes. Mix.', type: SECTIONS.MAIN, img: seasoned },
+        { step: 'Arrange the fries in a single layer on baking sheet.', type: SECTIONS.MAIN, img: tray2 },
+        { step: 'Bake until tender and lightly browned (for about 30 to 35 minutes). Turn occasionally.', type: SECTIONS.MAIN, img: baked1 },
+        { step: 'Enjoy this delicious side!', type: SECTIONS.MAIN, img: plated2 },
     ]
 };

@@ -1,8 +1,8 @@
-const rolls1 = '../assets/Products/fresh-spring-rolls-1.jpeg';
-const rolls2 = '../assets/Products/fresh-spring-rolls-2.jpeg';
-const rolls3 = '../assets/Products/fresh-spring-rolls-3.jpeg';
-const rolls4 = '../assets/Products/fresh-spring-rolls-4.jpeg';
-const rolls5 = '../assets/Products/fresh-spring-rolls-5.jpeg';
+// const rolls1 = '../assets/Products/fresh-spring-rolls-1.jpeg';
+// const rolls2 = '../assets/Products/fresh-spring-rolls-2.jpeg';
+// const rolls3 = '../assets/Products/fresh-spring-rolls-3.jpeg';
+// const rolls4 = '../assets/Products/fresh-spring-rolls-4.jpeg';
+// const rolls5 = '../assets/Products/fresh-spring-rolls-5.jpeg';
 const rolls6 = '../assets/Products/fresh-spring-rolls-6.jpeg';
 const rolls9 = '../assets/Products/fresh-spring-rolls-9.jpeg';
 const rolls10 = '../assets/Products/fresh-spring-rolls-10.jpeg';
@@ -104,7 +104,7 @@ module.exports = {
         { step: 'In a pie pan, fill with 1 inch of warm water.', type: SECTIONS.ASSEMBLY, img: wrap1 },
         { step: 'Place one rice wrapper in the water. Let it soak for about 10 seconds.', type: SECTIONS.ASSEMBLY, img: wrap2 },
         { step: 'Place the softened rice wrapper on a plate.', type: SECTIONS.ASSEMBLY, img: wrap3 },
-        { step: 'About 1/3 up from the bottom of the softened rice wrapper, start layering a few of your favorite fillings at that point.', type: SECTIONS.ASSEMBLY, img: [rolls1, rolls2, rolls3, rolls4, rolls5, rolls6] },
+        { step: 'About 1/3 up from the bottom of the softened rice wrapper, start layering a few of your favorite fillings at that point.', type: SECTIONS.ASSEMBLY, img: rolls6 },
         { step: 'Fold the sides of the wrapper over the filling and begin rolling the wrapper away from you (e.g. like a burrito).', type: SECTIONS.ASSEMBLY },
         { step: 'Set each of these finished rolls on a plate.', type: SECTIONS.ASSEMBLY, img: rolls10 },
         { step: 'Enjoy these freshly made Vietnamese appetizers with the peanut sauce.', type: SECTIONS.SERVE },

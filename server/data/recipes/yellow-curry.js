@@ -1,12 +1,6 @@
 const curry1 = '../assets/Products/yellow-curry-1.jpeg';
-const curry2 = '../assets/Products/yellow-curry-2.jpeg';
-const curry3 = '../assets/Products/yellow-curry-3.jpeg';
-const curry4 = '../assets/Products/yellow-curry-4.jpeg';
-const curry5 = '../assets/Products/yellow-curry-5.jpeg';
 const curry6 = '../assets/Products/yellow-curry-6.jpeg';
-const curry7 = '../assets/Products/yellow-curry-7.jpeg';
 const curry8 = '../assets/Products/yellow-curry-8.jpeg';
-const curry9 = '../assets/Products/yellow-curry-9.jpeg';
 const curry10 = '../assets/Products/yellow-curry-10.jpeg';
 const curry11 = '../assets/Products/yellow-curry-11.jpeg';
 const curry12 = '../assets/Products/yellow-curry-12.jpeg';
@@ -66,9 +60,9 @@ module.exports = {
     ],
     directions: [
         { step: 'Over medium-low heat, heat oil in a large pot.', type: MAKE_CURRY, img: curry1 },
-        { step: 'Add onion and saute until soften (about 3 to 4 minutes).', type: MAKE_CURRY, img: [curry2, curry3, curry4, curry6] },
-        { step: 'Add chicken, carrots, and potatoes. Cook for 1 to 2 minutes.', type: MAKE_CURRY, img: [curry5, curry7, curry8] },
-        { step: 'Add ginger, garlic and curry paste. Saute for 3 minutes.', type: MAKE_CURRY, img: [curry9, curry10] },
+        { step: 'Add onion and saute until soften (about 3 to 4 minutes).', type: MAKE_CURRY, img: curry6 },
+        { step: 'Add chicken, carrots, and potatoes. Cook for 1 to 2 minutes.', type: MAKE_CURRY, img: curry8 },
+        { step: 'Add ginger, garlic and curry paste. Saute for 3 minutes.', type: MAKE_CURRY, img: curry10 },
         { step: 'Add 3/4 of coconut milk.', type: MAKE_CURRY, img: curry11 },
         { step: 'Mix cornstarch into the last quarter of coconut milk. Add this to the pot.', type: MAKE_CURRY, img: [curry12, curry13] },
         { step: 'Bring to a boil.', type: MAKE_CURRY },
