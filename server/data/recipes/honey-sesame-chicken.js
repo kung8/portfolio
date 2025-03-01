@@ -45,7 +45,7 @@ module.exports = {
         { ...SESAME_OIL, amount: '1 Tbsp', additionalDetails: '', section: HONEY_SESAME_SAUCE },
         { ...CORNSTARCH, amount: '2 tsp', additionalDetails: '', section: HONEY_SESAME_SAUCE },
         { ...VEGETABLE_OIL, amount: '1 tsp', additionalDetails: '', section: HONEY_SESAME_SAUCE },
-        { ...GARLIC, amount: '1 tsp', additionalDetails: '', section: HONEY_SESAME_SAUCE },
+        { ...GARLIC, amount: '1 tsp', additionalDetails: 'minced', section: HONEY_SESAME_SAUCE },
 
         { ...SESAME_SEEDS, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...GREEN_ONIONS, amount: '2 Tbsp', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },

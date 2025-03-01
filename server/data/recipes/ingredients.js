@@ -231,6 +231,7 @@ const INGREDIENTS = {
         ENCHILADA_SOUP: { name: 'enchilada soup', category: INGREDIENT_CATEGORY.CANNED },
         EVAPORATED_MILK: { name: 'evaporated milk', category: INGREDIENT_CATEGORY.CANNED },
         FIRE_ROASTED_DICED_TOMATOES: { name: 'fire roasted diced tomatoes', category: INGREDIENT_CATEGORY.CANNED },
+        FRIED_SHALLOTS: { name: 'fried shallots', category: INGREDIENT_CATEGORY.CANNED },
         GUMBO_SOUP: { name: 'gumbo soup', category: INGREDIENT_CATEGORY.CANNED },
         INSTANT_RAMEN: { name: 'instant ramen', category: INGREDIENT_CATEGORY.CANNED },
         JAMBALAYA_SOUP: { name: 'jambalaya soup', category: INGREDIENT_CATEGORY.CANNED },
