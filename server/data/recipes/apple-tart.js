@@ -20,7 +20,7 @@ module.exports = {
     img: tart9,
     recipeCredit: 'Sam Giraud-Carrier',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],
