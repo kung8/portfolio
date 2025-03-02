@@ -3851,23 +3851,15 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: IN_PROGRESS,
+            date: '02/27/2025',
             title: "The 7 1/2 Deaths of Evelyn Hardcastle",
             author: ["Stuart Turton"],
             source: ["Jami's Mutual profile"],
             review: [
-                ""
+                "This was an interesting concept. I was reading this book when my schedule was pretty busy, so I read whenever I had a chance and energy to read. The chapters were short and a lot of context switching between a lot of different characters so it was difficult near the beginning to keep track of the characters and their details. I thought it was weird that the last 75 pages of this book were a preview of another book by the author."
             ],
-            quotes: [
-                {
-                    text: "",
-                    pages: [],
-                    thoughts: "",
-                    context: ""
-                },
-            ],
-            pageCount: 432,
-            rating: NO_RATING,
+            pageCount: 532,
+            rating: 5,
         },
         {
             date: NO_DATE,
