@@ -1,4 +1,13 @@
-// const example = '../assets/Products/example.jpeg';
+const sesame1 = '../assets/Products/honey-sesame-chicken-1.jpeg';
+const sesame2 = '../assets/Products/honey-sesame-chicken-2.jpeg';
+const sesame3 = '../assets/Products/honey-sesame-chicken-3.jpeg';
+const sesame4 = '../assets/Products/honey-sesame-chicken-4.jpeg';
+const sesame5 = '../assets/Products/honey-sesame-chicken-5.jpeg';
+const sesame6 = '../assets/Products/honey-sesame-chicken-6.jpeg';
+const sesame7 = '../assets/Products/honey-sesame-chicken-7.jpeg';
+const sesame8 = '../assets/Products/honey-sesame-chicken-8.jpeg';
+const sesame9 = '../assets/Products/honey-sesame-chicken-9.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGGS, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, CORNSTARCH, VEGETABLE_OIL, GARLIC, HONEY, LIGHT_SOY_SAUCE, KETCHUP, BROWN_SUGAR, RICE_WINE_VINEGAR, SESAME_OIL, GREEN_ONIONS, SESAME_SEEDS } = require('./ingredients');
 
@@ -8,12 +17,11 @@ const FLOUR_DREDGE = 'Flour Dredge';
 const HONEY_SESAME_SAUCE = 'Honey Sesame Sauce';
 
 module.exports = {
-    wip: true,
     cardName: 'Honey Sesame Chicken',
     name: 'Honey Sesame Chicken',
-    img: '',
+    img: sesame8,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY],
@@ -70,19 +78,19 @@ module.exports = {
         { step: 'In a shallow dish, combine the "Flour Dredge" ingredients.', type: FLOUR_DREDGE },
         { step: 'Over medium-high heat, fill a pot with 3 inches of oil.', type: DEEP_FRY },
         { step: 'Line a baking sheet with paper towels and place a wire cooling rack on top.', type: DEEP_FRY },
-        { step: 'Dip the chicken into the egg dredge and then into the flour.', type: DEEP_FRY },
-        { step: 'Place these coated chicken pieces onto a plate.', type: DEEP_FRY },
+        { step: 'Dip the chicken into the egg dredge and then into the flour.', type: DEEP_FRY, img: sesame2 },
+        { step: 'Place these coated chicken pieces onto a plate.', type: DEEP_FRY, img: sesame3 },
         { step: 'Once the oil has reached 350ºF, you can begin to deep dry the chicken.', type: DEEP_FRY },
         { step: 'Carefully add the chicken in small batches to the oil. Cook until the chicken gets crispy and golden brown (about 5 minutes).', type: DEEP_FRY },
         { step: 'Using a spider strainer, remove the cooked chicken and set them on the wire rack to drain.', type: DEEP_FRY },
         { step: 'Repeat until all the chicken is cooked.', type: DEEP_FRY },
-        { step: 'In a medium bowl, combine all the "Honey Sesame Sauce" ingredients (except the vegetable oil and garlic).', type: HONEY_SESAME_SAUCE },
+        { step: 'In a medium bowl, combine all the "Honey Sesame Sauce" ingredients (except the vegetable oil and garlic).', type: HONEY_SESAME_SAUCE, img: sesame1 },
         { step: 'Over medium-high heat, heat the oil in a saucepan.', type: HONEY_SESAME_SAUCE },
-        { step: 'Add the garlic and cook until fragrant (about 30 seconds).', type: HONEY_SESAME_SAUCE },
+        { step: 'Add the garlic and cook until fragrant (about 30 seconds).', type: HONEY_SESAME_SAUCE, img: sesame4 },
         { step: 'Add the sauce mixture and bring to a simmer.', type: HONEY_SESAME_SAUCE },
-        { step: 'Cook until it starts to thicken (about 3 to 4 minutes).', type: HONEY_SESAME_SAUCE },
-        { step: 'Add the crispy chicken and stir until everything is coated in the sauce.', type: HONEY_SESAME_SAUCE },
-        { step: 'Serve this dish with jasmine rice and top with your favorite toppings.', type: SECTIONS.SERVE },
+        { step: 'Cook until it starts to thicken (about 3 to 4 minutes).', type: HONEY_SESAME_SAUCE, img: sesame5 },
+        { step: 'Add the crispy chicken and stir until everything is coated in the sauce.', type: HONEY_SESAME_SAUCE, img: [sesame6, sesame7] },
+        { step: 'Serve this dish with jasmine rice and top with your favorite toppings.', type: SECTIONS.SERVE, img: sesame9 },
     ],
     notes: [
         { note: 'Do not try to fry too early or it will take longer to cook and will just soak oil.' },
