@@ -674,6 +674,7 @@ const INGREDIENTS = {
         SWEET_RICE: { name: 'sweet rice', category: INGREDIENT_CATEGORY.GRAIN },
         TORTILLA: { name: 'tortilla', category: INGREDIENT_CATEGORY.GRAIN },
         VERMICELLI_RICE_NOODLES: { name: 'vermicelli rice noodles', category: INGREDIENT_CATEGORY.GRAIN },
+        UDON_NOODLES: { name: 'udon noodles', category: INGREDIENT_CATEGORY.GRAIN },
         WHEAT_TORTILLA: { name: 'wheat tortilla', category: INGREDIENT_CATEGORY.GRAIN },
         WHITE_RICE: { name: 'white rice', category: INGREDIENT_CATEGORY.GRAIN },
         ZITI: { name: 'ziti', category: INGREDIENT_CATEGORY.GRAIN },

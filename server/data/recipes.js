@@ -280,7 +280,7 @@ const recipes = [
     oyakodon,
     lemonChickenRamen,
     chickenRamen,
-    udonNoodleSoup, // TODO: add
+    udonNoodleSoup,
     mochi,
     yorsStew, // TODO: add
 

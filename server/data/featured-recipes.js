@@ -242,7 +242,7 @@ const ingredients = recipes
     .flatMap(recipe => recipe.ingredients)
     .filter((ingredient, index, arr) =>
         arr.findIndex(i => i.name === ingredient.name) === index)
-    .sort((a, b) => a.name.localeCompare(b.name))
+    .sort((a, b) => a?.name?.localeCompare(b?.name))
     .reduce((acc, ingredient) => {
         acc[ingredient.name] = ingredient;
         return acc;
