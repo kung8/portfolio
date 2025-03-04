@@ -14,6 +14,8 @@ const roast13 = '../assets/Products/roasted-pork-belly-13.jpeg';
 const roast14 = '../assets/Products/roasted-pork-belly-14.jpeg';
 const roast15 = '../assets/Products/roasted-pork-belly-15.jpeg';
 
+const fiveSpicePowder = '../assets/Products/five-spices-blend-3.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
 const { PORK_BELLY, SALT, EGG_WHITES, HOISIN_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, WHITE_SUGAR, WHITE_PEPPER, WHITE_VINEGAR } = require('./ingredients');
 
@@ -48,7 +50,7 @@ module.exports = {
         { ...SHAOXING_WINE, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
         { ...SALT, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
         { ...WHITE_PEPPER, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
-        { name: '5-Spice', amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION, link: { id: 'five-spice-blend', url: 'recipes/five-spice-blend' } },
+        { name: '5-Spice', amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION, link: { id: 'five-spice-blend', url: 'recipes/five-spice-blend' }, img: fiveSpicePowder },
         { ...WHITE_SUGAR, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
 
         { ...SALT, amount: '1 c', additionalDetails: '', section: PORK_BELLY_SECTION },
