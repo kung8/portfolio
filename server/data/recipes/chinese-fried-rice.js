@@ -26,12 +26,11 @@ const COOK_EGGS = 'Cook Eggs';
 const STIR_FRY = 'Stir Fry';
 
 module.exports = {
-    wip: true,
     cardName: 'Chinese Fried Rice',
     name: 'Chinese Fried Rice',
     img: rice9,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.CHINESE],
     method: [METHODS.STIR_FRY],
