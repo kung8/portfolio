@@ -5,6 +5,7 @@ const { GARLIC, LIGHT_SOY_SAUCE, LIME_JUICE, OLIVE_OIL, CUMIN, PAPRIKA, OREGANO,
 const CREAMY_GREEN_SAUCE = 'Creamy Green Sauce';
 
 module.exports = {
+    wip: true,
     cardName: 'Peruvian Chicken',
     name: 'Peruvian Chicken',
     img: plated,
