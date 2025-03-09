@@ -572,3 +572,20 @@ module.exports = recipes;
 // Butter Toffee (https://uglydesserts.com/2025/01/24/homemade-butter-toffee/)
 // Mochi (https://parade.com/food/two-ingredient-mochi)
 
+// SOUPS
+// butternut squash - https://www.delish.com/cooking/recipe-ideas/recipes/a55386/best-roasted-butternut-squash-soup-recipe/
+// pumpkin - https://www.delish.com/cooking/recipe-ideas/a45025736/pumpkin-soup-recipe/
+// pumpkin - https://www.thepioneerwoman.com/food-cooking/recipes/a10399/pumpkin-soup/
+// french onion gnocchi - https://www.delish.com/cooking/recipe-ideas/a42710759/french-onion-gnocchi-soup-recipe/
+// chicken gnocchi - https://www.thepioneerwoman.com/food-cooking/recipes/a40772957/chicken-gnocchi-soup-recipe/
+// lemon chicken-orzo - https://www.thepioneerwoman.com/food-cooking/recipes/a39296200/lemon-chicken-orzo-soup-recipe/
+// dumpling - https://www.thepioneerwoman.com/food-cooking/recipes/a44190393/dumpling-soup-recipe/
+// beef stroganoff - https://www.thepioneerwoman.com/food-cooking/recipes/a103360/beef-stroganoff-soup/
+// chicken pot pie - https://www.thepioneerwoman.com/food-cooking/recipes/a61997037/chicken-pot-pie-soup-recipe/
+
+// DESSERTS
+// almond croissant cookie bars - https://www.thekitchn.com/almond-croissant-cookie-bars-recipe-23712681
+
+// BREADS
+// naan - https://www.thekitchn.com/naan-recipe-23711933
+// crostini - https://www.forkinthekitchen.com/balsamic-bruschetta-on-crostini/
