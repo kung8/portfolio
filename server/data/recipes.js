@@ -455,7 +455,7 @@ const recipes = [
     sourdoughBread,
     hawaiianHaystacks,
     hospitalityChicken,
-    jambalaya, 
+    jambalaya,
     fishSticksWithTartarSauce, // TODO: add
     cajunShrimp, // TODO: add
     jumboShrimpParmesan, // TODO: add
@@ -583,9 +583,17 @@ module.exports = recipes;
 // beef stroganoff - https://www.thepioneerwoman.com/food-cooking/recipes/a103360/beef-stroganoff-soup/
 // chicken pot pie - https://www.thepioneerwoman.com/food-cooking/recipes/a61997037/chicken-pot-pie-soup-recipe/
 
+// SALADS
+// lemon capellini salad - https://iwashyoudry.com/lemon-capellini-salad/ (justin)
+
 // DESSERTS
 // almond croissant cookie bars - https://www.thekitchn.com/almond-croissant-cookie-bars-recipe-23712681
+// peanut butter thumbprint cookies - https://preppykitchen.com/peanut-butter-blossoms/ (justin)
 
 // BREADS
 // naan - https://www.thekitchn.com/naan-recipe-23711933
-// crostini - https://www.forkinthekitchen.com/balsamic-bruschetta-on-crostini/
+// crostini - https://www.forkinthekitchen.com/balsamic-bruschetta-on-crostini/ (justin)
+// spicy italian flatbread - https://www.budgetbytes.com/spicy-italian-flat-bread/
+// mediterranean flatbread - https://sailorbailey.com/blog/mediterranean-flatbread/
+
+// creme brulee french toast - https://www.thekitchn.com/creme-brulee-french-toast-recipe-23711485
