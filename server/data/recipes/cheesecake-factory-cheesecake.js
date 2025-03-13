@@ -82,7 +82,7 @@ module.exports = {
     ],
     directions: [
         { step: 'Grease cake pan with cooking spray.', type: SECTIONS.CRUST, img: rawIngredients },
-        { step: 'Cover the bottom of the cake pan with the aluminum foil (to prevent it from soaking in water).', type: SECTIONS.CRUST },
+        { step: 'Cover the bottom of the cake pan with the aluminum foil on the outside (to prevent it from soaking in water).', type: SECTIONS.CRUST },
         { step: 'In the stand mixer bowl, combine graham cracker, sugar and butter until well incorporated.', type: SECTIONS.CRUST, img: crustRaw },
         { step: 'Press crust mixture into the pan\'s bottom and up the sides.', type: SECTIONS.CRUST, img: crust },
         { step: 'In the stand mixer bowl, beat cream cheese and sugar at medium speed until smooth and fluffy (about 2 to 3 minutes).', type: SECTIONS.FILLING, img: beforeCreaming },
