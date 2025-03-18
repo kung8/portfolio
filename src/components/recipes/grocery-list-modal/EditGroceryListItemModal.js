@@ -217,8 +217,6 @@ export const EditGroceryListItemModal = ({
                             updateSharedIngredients(originalItemToEdit, finalItemToEdit);
                         }
 
-
-
                         closeEditIngredientModal();
                     }}
                     handleCancel={closeEditIngredientModal}

@@ -63,8 +63,6 @@ export const GroceryListModal = ({
         });
     }
 
-
-
     // MEAL PLANNING
     const [isDeleteMealPlanModalOpen, setIsDeleteMealPlanModalOpen] = useState(false);
     const [isEditMealPlanModalOpen, setIsEditMealPlanModalOpen] = useState(false);
@@ -284,7 +282,8 @@ export const GroceryListModal = ({
                             return startMealDate === newMealStartMealDate && endMealDate === newMealEndMealDate && meal.recipeName === newMeal.recipeName;
                         });
 
-                        if (!originalStartDate && !originalEndDate && !originalDate && !hasExistingMealPlan) {
+                        // only add if (1) the meal doesn't already exist and (2) the newMeal has the required fields: recipeName and mealPlanningDateRange
+                        if (!hasExistingMealPlan && newMeal.recipeName && newMeal.mealPlanningDateRange?.[0] && newMeal.mealPlanningDateRange?.[1]) {                            
                             setMealPlan(prev => {
                                 const newMealPlan = [...prev, newMeal];
                                 updateLocalStorage({ mealPlan: newMealPlan });

@@ -88,7 +88,7 @@ export const GroceryListModalContent = ({
                         <h6 className={`${sortBy === 'date' ? 'ingredient-date' : 'ingredient-category'}`}>{category}</h6>
                         {ingredients.map((ingredient, index) => (
                             <GroceryListItem
-                                key={ingredient.id + '-' + index}
+                                key={ingredient.id + '-' + index + '-' + ingredient.name + '-' + ingredient.checked + '-' + ingredient.mealPlanningDateRange + '-' + ingredient.category + '-' + ingredient.date}
                                 {...ingredient}
                                 onInputChange={(value) => updateItem(ingredient, { name: value })}
                                 onCheckboxChange={() => updateItem(ingredient, { checked: !ingredient.checked })}
