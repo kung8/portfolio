@@ -269,11 +269,7 @@ export const GroceryListModal = ({
                     }}
 
                     // only add if the original item didn't have a mealPlanningDateRange and date and ONLY if the meal plan doesn't already have the meal (doesn't matter about the purchase date)
-                    addMealPlan={(originalItem, newMeal) => {
-                        const originalStartDate = originalItem?.mealPlanningDateRange?.[0];
-                        const originalEndDate = originalItem?.mealPlanningDateRange?.[1];
-                        const originalDate = originalItem?.date;
-
+                    addMealPlan={(newMeal) => {
                         const hasExistingMealPlan = mealPlan.find(meal => {
                             const startMealDate = meal?.mealPlanningDateRange?.[0];
                             const endMealDate = meal?.mealPlanningDateRange?.[1];

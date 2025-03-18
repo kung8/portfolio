@@ -195,7 +195,7 @@ export const EditGroceryListItemModal = ({
                         }
 
                         // add the mealPlanningDateRange if it doesn't exist
-                        addMealPlan(originalItemToEdit, {
+                        addMealPlan({
                             id: generateUUID(),
                             check: false,
                             date: finalItemToEdit.date,
