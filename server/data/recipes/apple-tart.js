@@ -7,6 +7,7 @@ const tart6 = '../assets/Products/apple-tart-6.jpeg';
 const tart7 = '../assets/Products/apple-tart-7.jpeg';
 const tart8 = '../assets/Products/apple-tart-8.jpeg';
 const tart9 = '../assets/Products/apple-tart-9.jpeg';
+const tart10 = '../assets/Products/apple-tart-10.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const { UNSALTED_BUTTER, WHITE_SUGAR, EGG_YOLKS, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, ALMOND_FLOUR, REFRIGERATED_PUFF_PASTRY, PINK_LADY_APPLES, APRICOT_JELLY } = require('./ingredients');
@@ -17,7 +18,7 @@ const BRUSH = 'Brush';
 module.exports = {
     cardName: 'Apple Tart',
     name: 'Apple Tart',
-    img: tart9,
+    img: tart10,
     recipeCredit: 'Sam Giraud-Carrier',
     available: true,
     recommended: true,
@@ -69,7 +70,7 @@ module.exports = {
         { step: 'Cook until the apples are tender but not soft and the frangipane is cooked through and is not sticky (about 20 to 30 minutes).', type: SECTIONS.BAKE },
         { step: 'Remove the tart from the oven and let cool for 10 minutes.', type: SECTIONS.BAKE, img: tart8 },
 
-        { step: 'Brush melted/heated jelly over the warm tart.', type: BRUSH },
+        { step: 'Brush melted/heated jelly over the warm tart.', type: BRUSH, img: tart9 },
 
         { step: 'Let the tart cool to room temperature and enjoy this light dessert!', type: SECTIONS.SERVE },
     ],

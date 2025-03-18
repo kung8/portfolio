@@ -4,6 +4,7 @@ const slice = '../assets/Products/cheesecake-slice.jpeg';
 const glaze = '../assets/Products/cheesecake-glazed-strawberries.jpeg';
 const crustRaw = '../assets/Products/cheesecake-crust-raw.jpeg';
 const crust = '../assets/Products/cheesecake-crust.jpeg';
+const bakedCrust = '../assets/Products/cheesecake-crust-baked.jpeg';
 const fillingCombined = '../assets/Products/cheesecake-filling-combined.jpeg';
 const filling = '../assets/Products/cheesecake-filling-added.jpeg';
 const beforeCreaming = '../assets/Products/cheesecake-filling-before-creaming.jpeg';
@@ -85,6 +86,8 @@ module.exports = {
         { step: 'Cover the bottom of the cake pan with the aluminum foil on the outside (to prevent it from soaking in water).', type: SECTIONS.CRUST },
         { step: 'In the stand mixer bowl, combine graham cracker, sugar and butter until well incorporated.', type: SECTIONS.CRUST, img: crustRaw },
         { step: 'Press crust mixture into the pan\'s bottom and up the sides.', type: SECTIONS.CRUST, img: crust },
+        { step: 'Bake the crust for 12 minutes at 325ºF.', type: SECTIONS.CRUST, img: bakedCrust },
+
         { step: 'In the stand mixer bowl, beat cream cheese and sugar at medium speed until smooth and fluffy (about 2 to 3 minutes).', type: SECTIONS.FILLING, img: beforeCreaming },
         { step: 'Add eggs one at a time and beat well.', type: SECTIONS.FILLING },
         { step: 'Add vanilla, sour cream, flour, and salt and continue to beat until all is combined.', type: SECTIONS.FILLING, img: fillingCombined },
