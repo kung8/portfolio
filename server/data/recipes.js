@@ -186,6 +186,7 @@ const peppermintBark = require("./recipes/peppermint-bark");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
 const peruvianChicken = require("./recipes/peruvian-chicken");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
+const piciPasta = require("./recipes/pici-pasta");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
 const piriPiriChickenBowl = require("./recipes/piri-piri-chicken-bowl");
 const pizza = require("./recipes/pizza");
@@ -363,6 +364,7 @@ const recipes = [
     chickenAlfredo,
     chickenParmesan, // TODO: find recipe
     basilPesto,
+    piciPasta,
     beefRagu,
     bakedZiti,
     chickenTetrazzini,
@@ -568,7 +570,6 @@ module.exports = recipes;
 // Best Ever Vegan Waffles (https://drive.google.com/file/d/1vWPiET0ImRdgXh2GS5B5H251y0ZIWDYZ/view?fbclid=IwY2xjawIfTtJleHRuA2FlbQIxMAABHWezhniFBcVhc_aIfe6Af1S23NPoPcpTVXrD1nA3cImdgqI29b1woKNxsg_aem_XIexmWX_dj0wt0Rh9hBhzQ)
 // Vegan Sushi with Tomato Spicy Tuna (https://drive.google.com/file/d/1Y7UFOMpM8PcEXzpmCX47gbdKStMyOJCD/view?fbclid=IwY2xjawIfTsxleHRuA2FlbQIxMAABHeRbBdgqQimVVtzmox4BNMndXLkm_oCZ6zohG4dXMwCJVFie9BH1kcm_YQ_aem_-epiQxQ39Z19Edrx2a6ycQ)
 // Samosa Burritos (https://drive.google.com/file/d/1dai60E7EZMmyI3HRXmqOTUH5cSR6UzIW/view?fbclid=IwY2xjawIfTsBleHRuA2FlbQIxMAABHWSScmlsOjIXkQPGq3aoK2tjXN8rK6-cEfTRPX6bpd3DG1rmgWKHu-YSuw_aem_q1ddvgfK4cA6VDlndKx8rQ)
-// Pici Pasta (https://drive.google.com/file/d/11PCN55VAe2hAg_9hAq1Fm9d8dL2Da9F-/view?fbclid=IwY2xjawIfTrdleHRuA2FlbQIxMAABHfXmOdry4vTwvMnKkRabiPQIiNOv0HuUB_Teh0AZvPevluR9OzdZdBDsLA_aem_wBmdVLkajaS_oARCwQaCcg)
 
 // Butter Toffee (https://uglydesserts.com/2025/01/24/homemade-butter-toffee/)
 // Mochi (https://parade.com/food/two-ingredient-mochi)
