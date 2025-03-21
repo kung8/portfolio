@@ -103,6 +103,7 @@ const METHODS = {
     STIR_FRY: 'Stir-Fry',
     WRAP: 'Wrap',
     FREEZE: 'Freeze',
+    PRESSURE_COOK: 'Pressure Cook',
 }
 
 const PROTEIN = {
@@ -115,6 +116,7 @@ const PROTEIN = {
     EGG: 'Egg',
     FISH: 'Fish',
     LAMB: 'Lamb',
+    LENTILS: 'Lentils',
     PEANUT: 'Peanut',
     PORK: 'Pork',
     SEAFOOD: 'Seafood',

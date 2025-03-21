@@ -360,6 +360,7 @@ const INGREDIENTS = {
             name: 'tomato soup', category: INGREDIENT_CATEGORY.CANNED, img: "https://images.unsplash.com/photo-1608949621301-dc970e104c90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2NTk1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         TORTILLA_SOUP: { name: 'tortilla soup', category: INGREDIENT_CATEGORY.CANNED },
+        VEGETABLE_BROTH: { name: 'vegetable broth', category: INGREDIENT_CATEGORY.CANNED },
         VEGETABLE_SOUP: { name: 'vegetable soup', category: INGREDIENT_CATEGORY.CANNED },
         WILD_RICE_SOUP: { name: 'wild rice soup', category: INGREDIENT_CATEGORY.CANNED },
         YELLOW_CURRY_PASTE: { name: 'yellow curry paste', category: INGREDIENT_CATEGORY.CANNED },
@@ -880,6 +881,7 @@ const INGREDIENTS = {
         BREAD_BOWLS: {
             name: 'bread bowls', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1666675707746-ec5f0e689d97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxNTgwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        BROWN_LENTILS: { name: 'brown lentils', category: INGREDIENT_CATEGORY.GRAIN },
         BROWN_RICE: {
             name: 'brown rice', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1671130295823-78f170465794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTYwMDAxfA&ixlib=rb-4.0.3&q=80&w=400"
         },

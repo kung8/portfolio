@@ -1,0 +1,70 @@
+// const example = '../assets/Products/example.jpeg';
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { OLIVE_OIL, YELLOW_ONION, BROWN_LENTILS, CARROTS, GARLIC, KETCHUP, DIJON_MUSTARD, BROWN_SUGAR, CHILI_POWDER, WORCESTERSHIRE_SAUCE, HOT_SAUCE, SALT, BBQ_SAUCE, HAMBURGER_BUNS, LETTUCE, WHITE_ONION, PICKLES, AVOCADO, VEGETABLE_BROTH } = require('./ingredients');
+
+const SAUTE = 'Saute';
+const PRESSURE_COOK = 'Pressure Cook';
+
+module.exports = {
+    wip: true,
+    cardName: 'Lentil Sloppy Joes',
+    name: 'Lentil Sloppy Joes',
+    img: '',
+    recipeCredit: 'Chelsey Hickenlooper',
+    available: true,
+    recommended: false,
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.PRESSURE_COOK],
+    protein: [PROTEIN.LENTILS],
+    type: [TYPES.BURGER],
+    yields: '5 servings',
+    prepTime: '10 m',
+    cookTime: '40 m',
+    websites: [
+        { label: 'Instant Pot Vegan Lentil Sloppy Joes', link: 'https://cozypeachkitchen.com/instant-pot-vegan-lentil-sloppy-joes/' }
+    ],
+    separated: true,
+    ingredients: [
+        { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SAUTE },
+        { ...YELLOW_ONION, amount: '1 small', additionalDetails: 'finely diced', section: SAUTE },
+        { ...CARROTS, amount: '1/2 c', additionalDetails: 'diced', section: SAUTE },
+        { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SAUTE },
+        { ...BROWN_LENTILS, amount: '1 c', additionalDetails: 'rinsed', section: SECTIONS.SAUCE },
+        { ...KETCHUP, amount: '1/4 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...DIJON_MUSTARD, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROWN_SUGAR, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CHILI_POWDER, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WORCESTERSHIRE_SAUCE, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HOT_SAUCE, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...VEGETABLE_BROTH, amount: '2 1/4 c', additionalDetails: '', section: SECTIONS.SAUCE },
+        
+        { ...BBQ_SAUCE, amount: '1/4 c', additionalDetails: '', section: SECTIONS.SERVE },
+        { ...HAMBURGER_BUNS, amount: '5', additionalDetails: '', section: SECTIONS.SERVE },
+
+        { ...LETTUCE, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...WHITE_ONION, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...PICKLES, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...AVOCADO, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+    ],
+    appliances: [
+        { name: 'Instant Pot' },
+    ],
+    supplies: [
+        { name: 'spatula' },
+    ],
+    directions: [
+        { step: 'Set the Instant Pot to the "saute" function (on "normal" heat and timer for 7 minutes).', type: SAUTE },
+        { step: 'Once Instant Pot reads "hot", add olive oil.', type: SAUTE },
+        { step: 'Add onions and carrots. Saute in pot until softened and lightly browned (for about 6 minutes).', type: SAUTE },
+        { step: 'Add garlic. Saute for 1 minute.', type: SAUTE },
+        { step: 'Deglaze with 2 teaspoons of vegetable broth.', type: SAUTE },
+        { step: 'Add the lentils and the "Sauce" section ingredients.', type: PRESSURE_COOK },
+        { step: 'Cover with the lid and set the pressure vent. Set on high pressure with a 15 minute timer. It will take about 10 minutes to pressurize.', type: PRESSURE_COOK },
+        { step: 'Once the timer goes off, allow time for the pressure to release (about 15 minutes).', type: PRESSURE_COOK },
+        { step: 'Uncover.', type: PRESSURE_COOK },
+        { step: 'Add barbecue sauce. Stir.', type: PRESSURE_COOK },
+        { step: 'Serve on toasted buns and top with your favorite toppings.', type: SECTIONS.SERVE },
+    ]
+};
