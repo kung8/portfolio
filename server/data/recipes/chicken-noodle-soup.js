@@ -3,7 +3,7 @@ const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./con
 const {
     CHICKEN_BREAST,
     OLIVE_OIL,
-    LARGE_YELLOW_ONION,
+    YELLOW_ONION,
     CARROTS,
     CELERY,
     CHICKEN_BROTH,
@@ -32,7 +32,7 @@ module.exports = {
     ingredients: [
         { ...CHICKEN_BREAST, amount: '1.5 lbs', additionalDetails: 'cubed', optional: false },
         { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', optional: false },
-        { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', optional: false },
+        { ...YELLOW_ONION, amount: '1 large', additionalDetails: 'sliced', optional: false },
         { ...CARROTS, amount: '2', additionalDetails: 'sliced', optional: false },
         { ...CELERY, amount: '2 stalks', additionalDetails: 'sliced', optional: false },
         { ...CHICKEN_BROTH, amount: '6 c', additionalDetails: '', optional: false },

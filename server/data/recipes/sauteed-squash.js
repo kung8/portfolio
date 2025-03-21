@@ -8,7 +8,7 @@ const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const {
     OLIVE_OIL,
     UNSALTED_BUTTER,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     SALT,
     BLACK_PEPPER,
     THYME,
@@ -36,7 +36,7 @@ module.exports = {
     ingredients: [
         { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: '1 medium', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...ZUCCHINI, amount: '3', additionalDetails: 'sliced into 2"', section: SECTIONS.MAIN },
         { ...SUMMER_SQUASH, amount: '1', additionalDetails: 'sliced into 2"', section: SECTIONS.MAIN },
         { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },

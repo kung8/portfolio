@@ -13,7 +13,7 @@ const plated4 = '../assets/Products/chili-plated-4.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
 const {
     GROUND_BEEF,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     JALAPENO_PEPPERS,
     GARLIC,
     CHILI_POWDER,
@@ -54,7 +54,7 @@ module.exports = {
     cookTime: '45 m',
     ingredients: [
         { ...GROUND_BEEF, amount: '2 lbs', additionalDetails: '', section: BEEF },
-        { ...MEDIUM_YELLOW_ONION, amount: '1 large', additionalDetails: 'diced', section: BEEF },
+        { ...YELLOW_ONION, amount: '1 large', additionalDetails: 'diced', section: BEEF },
         { ...JALAPENO_PEPPERS, amount: '1 - 3', additionalDetails: 'diced', section: BEEF },
         { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', section: BEEF },
         { ...CHILI_POWDER, amount: '2 1/2 Tbsp', additionalDetails: '', section: BEEF },

@@ -21,7 +21,7 @@ const enchiladas21 = '../assets/Products/mexican-enchiladas-21.jpeg';
 const enchiladas22 = '../assets/Products/mexican-enchiladas-22.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { GARLIC_POWDER, SALT, BONELESS_AND_SKINLESS_CHICKEN_BREAST, BLACK_PEPPER, OLIVE_OIL, WHITE_ONION, BAY_LEAVES, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, CHILI_POWDER, ONION_POWDER, CUMIN, OREGANO, TOMATO_PASTE, FLOUR_TORTILLA, MEXICAN_BLEND_CHEESE, LETTUCE, SMALL_YELLOW_ONION, CILANTRO, SOUR_CREAM, CHEESE } = require('./ingredients');
+const { GARLIC_POWDER, SALT, BONELESS_AND_SKINLESS_CHICKEN_BREAST, BLACK_PEPPER, OLIVE_OIL, WHITE_ONION, BAY_LEAVES, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, CHILI_POWDER, ONION_POWDER, CUMIN, OREGANO, TOMATO_PASTE, FLOUR_TORTILLA, MEXICAN_BLEND_CHEESE, LETTUCE, YELLOW_ONION, CILANTRO, SOUR_CREAM, CHEESE } = require('./ingredients');
 
 const CHICKEN = 'Chicken';
 const ENCHILADA_SAUCE = 'Enchilada Sauce';
@@ -78,7 +78,7 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: ENCHILADA_ASSEMBLY },
         
         { ...LETTUCE, amount: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
-        { ...SMALL_YELLOW_ONION, amount: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
+        { ...YELLOW_ONION, amount: 'small', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
         { ...CILANTRO, amount: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...SOUR_CREAM, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...CHEESE, amount: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },

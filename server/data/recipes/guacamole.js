@@ -5,7 +5,7 @@ const guacamole4 = '../assets/Products/guacamole-4.jpeg';
 const guacamole5 = '../assets/Products/guacamole-5.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { AVOCADO, LIME, SALT, ROMA_TOMATO, SMALL_YELLOW_ONION, CILANTRO, GARLIC, CAYENNE_PEPPER } = require('./ingredients');
+const { AVOCADO, LIME, SALT, ROMA_TOMATO, YELLOW_ONION, CILANTRO, GARLIC, CAYENNE_PEPPER } = require('./ingredients');
 
 module.exports = {
     cardName: 'Guacamole',
@@ -28,7 +28,7 @@ module.exports = {
         { ...LIME, amount: '1', additionalDetails: 'juiced', section: SECTIONS.MAIN },
         { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...ROMA_TOMATO, amount: '2', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...SMALL_YELLOW_ONION, amount: '1/2 c', additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: '1/2 c', additionalDetails: 'diced', section: SECTIONS.MAIN },
         { ...CILANTRO, amount: '3 Tbsp', additionalDetails: 'chopped', section: SECTIONS.MAIN },
         { ...GARLIC, amount: '1 clove', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...CAYENNE_PEPPER, amount: '1 pinch', additionalDetails: '', section: SECTIONS.MAIN },

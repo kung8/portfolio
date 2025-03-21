@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { BEEF_RIBS, MEDIUM_YELLOW_ONION, CARROTS, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGGS, BEEF_BROTH, SHIITAKE_MUSHROOMS, THAI_CHILI_PEPPERS, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONIONS, SESAME_SEEDS, UDON_NOODLES, WARM_WATER } = require('./ingredients');
+const { BEEF_RIBS, YELLOW_ONION, CARROTS, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGGS, BEEF_BROTH, SHIITAKE_MUSHROOMS, THAI_CHILI_PEPPERS, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONIONS, SESAME_SEEDS, UDON_NOODLES, WARM_WATER } = require('./ingredients');
 
 const BEEF_BROTH_SECTION = 'Beef Broth';
 const EGG_SECTION = 'Eggs';
@@ -36,7 +36,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...BEEF_RIBS, amount: '4 lbs', additionalDetails: '', section: BEEF_BROTH_SECTION },
-        { ...MEDIUM_YELLOW_ONION, amount: '2', additionalDetails: 'peeled and quartered', section: BEEF_BROTH_SECTION },
+        { ...YELLOW_ONION, amount: '2 medium', additionalDetails: 'peeled and quartered', section: BEEF_BROTH_SECTION },
         { ...CARROTS, amount: '1', additionalDetails: 'peeled and chunked', section: BEEF_BROTH_SECTION },
         { ...CINNAMON_STICK, amount: '1', additionalDetails: '', section: BEEF_BROTH_SECTION },
         { ...GINGER, amount: '1 - 3 inch', additionalDetails: 'whole', section: BEEF_BROTH_SECTION },

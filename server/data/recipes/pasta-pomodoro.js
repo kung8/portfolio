@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { ANGEL_HAIR_PASTA, OLIVE_OIL, SMALL_YELLOW_ONION, GARLIC, ROMA_TOMATO, BALSAMIC_VINEGAR, CHICKEN_BROTH, RED_PEPPER_FLAKES, BLACK_PEPPER, BASIL_LEAVES, PARMESAN_CHEESE } = require('./ingredients');
+const { ANGEL_HAIR_PASTA, OLIVE_OIL, YELLOW_ONION, GARLIC, ROMA_TOMATO, BALSAMIC_VINEGAR, CHICKEN_BROTH, RED_PEPPER_FLAKES, BLACK_PEPPER, BASIL_LEAVES, PARMESAN_CHEESE } = require('./ingredients');
 
 const PASTA = 'Pasta';
 const TOMATO_SAUCE = 'Tomato Sauce';
@@ -30,7 +30,7 @@ module.exports = {
     ingredients: [
         { ...ANGEL_HAIR_PASTA, amount: '16 oz', additionalDetails: '', section: PASTA },
         { ...OLIVE_OIL, amount: '1/4 c', additionalDetails: '', section: TOMATO_SAUCE },
-        { ...SMALL_YELLOW_ONION, amount: '1/2', additionalDetails: 'chopped', section: TOMATO_SAUCE },
+        { ...YELLOW_ONION, amount: '1/2 small', additionalDetails: 'chopped', section: TOMATO_SAUCE },
         { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', section: TOMATO_SAUCE },
         { ...ROMA_TOMATO, amount: '2 c', additionalDetails: 'diced', section: TOMATO_SAUCE },
         { ...BALSAMIC_VINEGAR, amount: '2 Tbsp', additionalDetails: '', section: TOMATO_SAUCE },

@@ -1372,9 +1372,6 @@ const INGREDIENTS = {
             name: 'kiwi', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1616684000067-36952fde56ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1Mjg2fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         KUMQUATS: { name: 'kumquats', category: INGREDIENT_CATEGORY.PRODUCE },
-        LARGE_YELLOW_ONION: {
-            name: 'large yellow onion', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1668076517573-fa01307d87ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU4ODcxfA&ixlib=rb-4.0.3&q=80&w=400"
-        },
         LEMON: {
             name: 'lemon', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1590502593747-42a996133562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcyMDg1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -1403,9 +1400,6 @@ const INGREDIENTS = {
         MINI_CUCUMBERS: { name: 'mini cucumbers', category: INGREDIENT_CATEGORY.PRODUCE },
         MINT_LEAVES: {
             name: 'mint leaves', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1588908933351-eeb8cd4c4521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1NTQyfA&ixlib=rb-4.0.3&q=80&w=400"
-        },
-        MEDIUM_YELLOW_ONION: {
-            name: 'medium yellow onion', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1668076517573-fa01307d87ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU4ODcxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         MUNG_BEAN_SPROUTS: {
             name: 'mung bean sprouts', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1476005484258-bd38fa5bc155?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1MTczfA&ixlib=rb-4.0.3&q=80&w=400"
@@ -1478,9 +1472,6 @@ const INGREDIENTS = {
         SHREDDED_LETTUCE: { name: 'shredded lettuce', category: INGREDIENT_CATEGORY.PRODUCE },
         SLICER_TOMATO: { name: 'slicer tomato', category: INGREDIENT_CATEGORY.PRODUCE },
         SNOW_PEAS: { name: 'snow peas', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1663844169467-ddb73a03afdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2MDc0fA&ixlib=rb-4.0.3&q=80&w=400" },
-        SMALL_YELLOW_ONION: {
-            name: 'small yellow onion', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1668076517573-fa01307d87ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU4ODcxfA&ixlib=rb-4.0.3&q=80&w=400"
-        },
         SOUTHWEST_SALAD_KITS: { name: 'southwest salad kits', category: INGREDIENT_CATEGORY.PRODUCE },
         SPINACH: {
             name: 'spinach', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1701699257548-8261a687236f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5MzY5fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -1521,6 +1512,9 @@ const INGREDIENTS = {
         },
         YELLOW_BELL_PEPPERS: {
             name: 'yellow bell peppers', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        YELLOW_ONION: {
+            name: 'yellow onion', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1668076517573-fa01307d87ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU4ODcxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         YELLOW_SQUASH: { name: 'yellow squash', category: INGREDIENT_CATEGORY.PRODUCE },
         YUKON_GOLD_POTATOES: { name: 'yukon gold potatoes', category: INGREDIENT_CATEGORY.PRODUCE },

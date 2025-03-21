@@ -7,7 +7,7 @@ const {
     GARLIC_POWDER,
     CHICKEN_THIGH,
     RED_BELL_PEPPERS,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     SALT,
     BLACK_PEPPER,
 } = require('./ingredients');
@@ -32,7 +32,7 @@ module.exports = {
         { ...GARLIC_POWDER, amount: '1', additionalDetails: '', optional: false },
         { ...CHICKEN_THIGH, amount: '2 lbs', additionalDetails: '', optional: false },
         { ...RED_BELL_PEPPERS, amount: '2', additionalDetails: '', optional: false },
-        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: '', optional: false },
+        { ...YELLOW_ONION, amount: '1 medium', additionalDetails: '', optional: false },
         { ...SALT, amount: '', additionalDetails: 'to taste', optional: false },
         { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', optional: false },
     ],

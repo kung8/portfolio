@@ -12,7 +12,7 @@ const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./con
 const {
     BEEF,
     RED_BELL_PEPPERS,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     GARLIC,
     LIGHT_SOY_SAUCE,
     WARM_WATER,
@@ -46,7 +46,7 @@ module.exports = {
         { ...VEGETABLE_OIL, amount: '2 Tbsp', additionalDetails: 'divided', section: SECTIONS.MAIN },
         { ...RED_BELL_PEPPERS, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...GREEN_BELL_PEPPERS, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: '1 medium', additionalDetails: 'sliced', section: SECTIONS.MAIN },
 
         { ...BEEF, amount: '1.5 lb', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },

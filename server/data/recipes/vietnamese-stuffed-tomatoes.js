@@ -13,7 +13,7 @@ const tomatoes12 = '../assets/Products/vietnamese-stuffed-tomatoes-12.jpeg';
 const tomatoes13 = '../assets/Products/vietnamese-stuffed-tomatoes-13.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { VINE_TOMATOES, CORNSTARCH, GROUND_PORK, MEDIUM_YELLOW_ONION, GARLIC, FISH_SAUCE, SALT, WHITE_SUGAR, BLACK_PEPPER, VEGETABLE_OIL, LIGHT_SOY_SAUCE, COLD_WATER, GREEN_ONIONS } = require('./ingredients');
+const { VINE_TOMATOES, CORNSTARCH, GROUND_PORK, YELLOW_ONION, GARLIC, FISH_SAUCE, SALT, WHITE_SUGAR, BLACK_PEPPER, VEGETABLE_OIL, LIGHT_SOY_SAUCE, COLD_WATER, GREEN_ONIONS } = require('./ingredients');
 
 const FILLING_SECTION = 'Filling';
 const TOMATOES_SECTION = 'Tomatoes';
@@ -38,7 +38,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...GROUND_PORK, amount: '1/2 lb', additionalDetails: '', section: FILLING_SECTION },
-        { ...MEDIUM_YELLOW_ONION, amount: '1/2', additionalDetails: 'diced', section: FILLING_SECTION },
+        { ...YELLOW_ONION, amount: '1/2 medium', additionalDetails: 'diced', section: FILLING_SECTION },
         { ...GARLIC, amount: '2', additionalDetails: 'minced', section: FILLING_SECTION },
         { ...FISH_SAUCE, amount: '1 tsp', additionalDetails: '', section: FILLING_SECTION },
         { ...SALT, amount: '1/4 tsp', additionalDetails: '', section: FILLING_SECTION },

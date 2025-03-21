@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { SHRIMP, OLIVE_OIL, SAFFRON_THREADS, CHICKEN_BROTH, CHORIZO, SMALL_YELLOW_ONION, GARLIC, RED_BELL_PEPPERS, SALT, PAPRIKA, CAYENNE_PEPPER, GREEN_PEAS, ARBORIO_RICE, PARSLEY, LEMON } = require('./ingredients');
+const { SHRIMP, OLIVE_OIL, SAFFRON_THREADS, CHICKEN_BROTH, CHORIZO, YELLOW_ONION, GARLIC, RED_BELL_PEPPERS, SALT, PAPRIKA, CAYENNE_PEPPER, GREEN_PEAS, ARBORIO_RICE, PARSLEY, LEMON } = require('./ingredients');
 
 const SAFFRON_BROTH = 'Saffron Broth';
 const PAELLA = 'Paella';
@@ -32,7 +32,7 @@ module.exports = {
 
         { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: PAELLA },
         { ...CHORIZO, amount: '8 oz', additionalDetails: 'thin round slices', section: PAELLA },
-        { ...SMALL_YELLOW_ONION, amount: '1/2', additionalDetails: 'diced', section: PAELLA },
+        { ...YELLOW_ONION, amount: '1/2 small', additionalDetails: 'diced', section: PAELLA },
         { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', section: PAELLA },
         { ...ARBORIO_RICE, amount: '1 1/3 c', additionalDetails: '', section: PAELLA },
         { ...GREEN_PEAS, amount: '1/2 c', additionalDetails: '', section: PAELLA },

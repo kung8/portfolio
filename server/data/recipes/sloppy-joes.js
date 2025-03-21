@@ -6,7 +6,7 @@ const veggies = '../assets/Products/sloppy-joes-raw-veggies.jpeg';
 const raw = '../assets/Products/sloppy-joes-raw.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
 const {
-    SMALL_YELLOW_ONION,
+    YELLOW_ONION,
     RED_BELL_PEPPERS,
     WORCESTERSHIRE_SAUCE,
     YELLOW_MUSTARD,
@@ -38,7 +38,7 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...SMALL_YELLOW_ONION, amount: '1', additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: '1 small', additionalDetails: 'chopped', section: SECTIONS.MAIN },
         { ...RED_BELL_PEPPERS, amount: '1/2', additionalDetails: 'chopped', section: SECTIONS.MAIN },
         { ...WORCESTERSHIRE_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...YELLOW_MUSTARD, amount: '1 1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },

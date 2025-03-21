@@ -19,7 +19,7 @@ const spiceInPot = '../assets/Products/chicken-biryani-spice-marinade-in-pot.jpe
 const workstation = '../assets/Products/chicken-biryani-workstation.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { CARDAMOM, CHICKEN_THIGH, YOGURT, COLD_WATER, VEGETABLE_OIL, GARLIC, GINGER, TURMERIC, CINNAMON, CAYENNE_PEPPER, GARAM_MASALA, CORIANDER, CUMIN, PAPRIKA, SALT, CLOVES, BAY_LEAVES, STAR_ANISE, BASMATI_RICE, CARDAMOM_PODS, MEDIUM_YELLOW_ONION, SAFFRON_THREADS, WARM_WATER, CILANTRO, GHEE } = require('./ingredients');
+const { CARDAMOM, CHICKEN_THIGH, YOGURT, COLD_WATER, VEGETABLE_OIL, GARLIC, GINGER, TURMERIC, CINNAMON, CAYENNE_PEPPER, GARAM_MASALA, CORIANDER, CUMIN, PAPRIKA, SALT, CLOVES, BAY_LEAVES, STAR_ANISE, BASMATI_RICE, CARDAMOM_PODS, YELLOW_ONION, SAFFRON_THREADS, WARM_WATER, CILANTRO, GHEE } = require('./ingredients');
 
 const CRISPY_ONION = 'Crispy Onion';
 const SAFFRON_WATER = 'Saffron Water';
@@ -67,7 +67,7 @@ module.exports = {
         { ...CARDAMOM_PODS, amount: '6', additionalDetails: '', section: SECTIONS.RICE },
         { ...BASMATI_RICE, amount: '2 1/4 c', additionalDetails: '', section: SECTIONS.RICE },
 
-        { ...MEDIUM_YELLOW_ONION, amount: '2', additionalDetails: 'sliced', section: CRISPY_ONION },
+        { ...YELLOW_ONION, amount: '2 medium', additionalDetails: 'sliced', section: CRISPY_ONION },
         { ...VEGETABLE_OIL, amount: '1 c', additionalDetails: 'for frying', section: CRISPY_ONION },
 
         { ...SAFFRON_THREADS, amount: '1 tsp', additionalDetails: '', section: SAFFRON_WATER },

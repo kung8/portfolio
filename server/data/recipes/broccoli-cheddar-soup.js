@@ -9,7 +9,7 @@ const simmering2 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-2.
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
 const {
     UNSALTED_BUTTER,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     ALL_PURPOSE_FLOUR,
     CHICKEN_BROTH,
     BROCCOLI,
@@ -43,7 +43,7 @@ module.exports = {
     ],
     ingredients: [
         { ...UNSALTED_BUTTER, amount: '1/4 c', additionalDetails: '', section: SECTIONS.SOUP },
-        { ...MEDIUM_YELLOW_ONION, amount: '1/2', additionalDetails: 'diced', section: SECTIONS.SOUP },
+        { ...YELLOW_ONION, amount: '1/2 medium', additionalDetails: 'diced', section: SECTIONS.SOUP },
         { ...ALL_PURPOSE_FLOUR, amount: '1/4 c', additionalDetails: '', section: SECTIONS.SOUP },
         { ...HALF_AND_HALF, amount: '2 c', additionalDetails: '', section: SECTIONS.SOUP },
         { ...CHICKEN_BROTH, amount: '2 c', additionalDetails: '', section: SECTIONS.SOUP },

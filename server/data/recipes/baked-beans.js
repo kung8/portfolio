@@ -10,7 +10,7 @@ const seasoning = '../assets/Products/baked-beans-seasoning.jpeg';
 const soaking = '../assets/Products/baked-beans-soaking.jpeg';
 const plateZoomed = '../assets/Products/baked-beans-full-plate-zoomed.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { SALT, BAKING_SODA, BACON, SMALL_YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR, DRY_NAVY_BEAN } = require('./ingredients');
+const { SALT, BAKING_SODA, BACON, YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR, DRY_NAVY_BEAN } = require('./ingredients');
 
 const BEANS = 'Beans';
 
@@ -36,7 +36,7 @@ module.exports = {
         { ...SALT, amount: '2 tsp', additionalDetails: '', section: BEANS },
         { ...BAKING_SODA, amount: '1/4 tsp', additionalDetails: '', section: BEANS },
         { ...BACON, amount: '8 slices', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...SMALL_YELLOW_ONION, amount: '1 c', additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: '1 c', additionalDetails: 'diced', section: SECTIONS.MAIN },
         { ...BROWN_SUGAR, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
         { ...KETCHUP, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
         { ...MAPLE_SYRUP, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },

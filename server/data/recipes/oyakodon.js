@@ -12,7 +12,7 @@ const oyakodon11 = '../assets/Products/oyakodon-11.jpeg';
 const oyakodon12 = '../assets/Products/oyakodon-12.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { SMALL_YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHAOXING_WINE, EGGS, DASHI, LIGHT_SOY_SAUCE, MIRIN, WHITE_SUGAR, SHORT_GRAINED_RICE, GREEN_ONIONS } = require('./ingredients');
+const { YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHAOXING_WINE, EGGS, DASHI, LIGHT_SOY_SAUCE, MIRIN, WHITE_SUGAR, SHORT_GRAINED_RICE, GREEN_ONIONS } = require('./ingredients');
 
 const SEASONING = 'Seasoning';
 const COOK_RICE = 'Cook Rice';
@@ -40,7 +40,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...SMALL_YELLOW_ONION, amount: '1', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: '1 small', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
         { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: '10 oz', additionalDetails: 'thin strips', section: SECTIONS.MAIN },
         { ...SHAOXING_WINE, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...EGGS, amount: '4', additionalDetails: '', section: SECTIONS.MAIN },

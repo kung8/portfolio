@@ -15,7 +15,7 @@ const curry14 = '../assets/Products/japanese-curry-14.jpeg';
 const curry15 = '../assets/Products/japanese-curry-15.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { LARGE_YELLOW_ONION, CARROTS, YUKON_GOLD_POTATOES, GINGER, GARLIC, APPLES, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BLACK_PEPPER, VEGETABLE_OIL, CHICKEN_BROTH, HONEY, LIGHT_SOY_SAUCE, KETCHUP, JAPANESE_CURRY_MIX } = require('./ingredients');
+const { YELLOW_ONION, CARROTS, YUKON_GOLD_POTATOES, GINGER, GARLIC, APPLES, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BLACK_PEPPER, VEGETABLE_OIL, CHICKEN_BROTH, HONEY, LIGHT_SOY_SAUCE, KETCHUP, JAPANESE_CURRY_MIX } = require('./ingredients');
 
 const PREP_CHICKEN = 'Prep Chicken';
 const COOK_CURRY = 'Cook Curry';
@@ -39,7 +39,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...LARGE_YELLOW_ONION, amount: '2', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: '2 large', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...CARROTS, amount: '2', additionalDetails: 'rolling wedges', section: SECTIONS.MAIN },
         { ...YUKON_GOLD_POTATOES, amount: '3', additionalDetails: 'quartered', section: SECTIONS.MAIN },
         { ...GINGER, amount: '1 tsp', additionalDetails: 'grated', section: SECTIONS.MAIN },

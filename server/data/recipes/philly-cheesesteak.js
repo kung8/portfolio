@@ -7,7 +7,7 @@ const {
     BLACK_PEPPER,
     HOAGIE_BREAD,
     BEEF_RIBEYE_STEAK,
-    LARGE_YELLOW_ONION,
+    YELLOW_ONION,
     MUSHROOMS,
     PROVOLONE_CHEESE,
 } = require('./ingredients');
@@ -31,7 +31,7 @@ module.exports = {
     ingredients: [
         { ...BEEF_RIBEYE_STEAK, amount: '2 lb', additionalDetails: 'thin strips', optional: false },
         { ...RED_BELL_PEPPERS, amount: '2', additionalDetails: 'sliced strips', optional: false },
-        { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'sliced strips', optional: false },
+        { ...YELLOW_ONION, amount: '1 large', additionalDetails: 'sliced strips', optional: false },
         { ...MUSHROOMS, amount: '1 lb', additionalDetails: 'sliced', optional: true },
         { ...PROVOLONE_CHEESE, amount: '1 lb', additionalDetails: '', optional: false },
         { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', optional: false },

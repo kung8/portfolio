@@ -2,7 +2,7 @@ const beefStroganoff = '../assets/Products/beef-stroganoff.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS } = require('./constants');
 const {
     BEEF,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     MUSHROOMS,
     GARLIC,
     UNSALTED_BUTTER,
@@ -28,7 +28,7 @@ module.exports = {
     cookTime: '45 m',
     ingredients: [
         { ...BEEF, amount: '3 lbs', additionalDetails: 'sliced', optional: false },
-        { ...MEDIUM_YELLOW_ONION, amount: '4', additionalDetails: 'sliced', optional: false },
+        { ...YELLOW_ONION, amount: '4 medium', additionalDetails: 'sliced', optional: false },
         { ...MUSHROOMS, amount: '1 lb', additionalDetails: 'sliced', optional: false },
         { ...GARLIC, amount: '2 cloves', additionalDetails: 'minced', optional: false },
         { ...UNSALTED_BUTTER, amount: '1/2 c', additionalDetails: '', optional: false },

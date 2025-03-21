@@ -12,7 +12,7 @@ const curry17 = '../assets/Products/yellow-curry-17.jpeg';
 const curry18 = '../assets/Products/yellow-curry-18.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { OLIVE_OIL, SMALL_YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_BREAST, YUKON_GOLD_POTATOES, CARROTS, YELLOW_CURRY_PASTE, GINGER, GARLIC, COCONUT_MILK, CORNSTARCH, FISH_SAUCE, LIME_JUICE, BROWN_SUGAR, CILANTRO, SRIRACHA_SAUCE } = require('./ingredients');
+const { OLIVE_OIL, YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_BREAST, YUKON_GOLD_POTATOES, CARROTS, YELLOW_CURRY_PASTE, GINGER, GARLIC, COCONUT_MILK, CORNSTARCH, FISH_SAUCE, LIME_JUICE, BROWN_SUGAR, CILANTRO, SRIRACHA_SAUCE } = require('./ingredients');
 
 const YELLOW_CURRY_SECTION = 'Yellow Curry';
 const MAKE_CURRY = 'Make Curry';
@@ -37,7 +37,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...SMALL_YELLOW_ONION, amount: '1', additionalDetails: 'chopped', section: YELLOW_CURRY_SECTION },
+        { ...YELLOW_ONION, amount: '1 small', additionalDetails: 'chopped', section: YELLOW_CURRY_SECTION },
         { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '1 lb', additionalDetails: 'cut into thin slices (2 inches long)', section: YELLOW_CURRY_SECTION },
         { ...YUKON_GOLD_POTATOES, amount: '2', additionalDetails: '1/2 inch cubes', section: YELLOW_CURRY_SECTION },
         { ...CARROTS, amount: '1', additionalDetails: 'thinly sliced', section: YELLOW_CURRY_SECTION },

@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { GROUND_BEEF, SMALL_YELLOW_ONION, GREEN_BELL_PEPPERS, CORN, CHILI_POWDER, GARLIC_SALT, CUMIN, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, FLOUR_TORTILLA, LETTUCE, ROMA_TOMATO, REFRIED_BEANS, TACO_SAUCE } = require('./ingredients');
+const { GROUND_BEEF, YELLOW_ONION, GREEN_BELL_PEPPERS, CORN, CHILI_POWDER, GARLIC_SALT, CUMIN, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, FLOUR_TORTILLA, LETTUCE, ROMA_TOMATO, REFRIED_BEANS, TACO_SAUCE } = require('./ingredients');
 
 const BEEF = 'Beef';
 const VEGGIES = 'Veggies';
@@ -36,7 +36,7 @@ module.exports = {
     ingredients: [
         { ...GROUND_BEEF, amount: '1 lb', additionalDetails: '', section: BEEF },
 
-        { ...SMALL_YELLOW_ONION, amount: '3/4 c', additionalDetails: 'chopped', section: VEGGIES },
+        { ...YELLOW_ONION, amount: '3/4 c', additionalDetails: 'chopped', section: VEGGIES },
         { ...GREEN_BELL_PEPPERS, amount: '3/4 c', additionalDetails: 'diced', section: VEGGIES },
         { ...CORN, amount: '1 1/2 c', additionalDetails: '', section: VEGGIES },
 

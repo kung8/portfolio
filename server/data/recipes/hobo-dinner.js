@@ -4,7 +4,7 @@ const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./con
 const {
     BLACK_PEPPER,
     CARROTS,
-    LARGE_YELLOW_ONION,
+    YELLOW_ONION,
     OLIVE_OIL,
     POTATOES,
     SALT,
@@ -28,7 +28,7 @@ module.exports = {
         { ...SUMMER_SAUSAGE, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...CARROTS, amount: '3', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...POTATOES, amount: '3', additionalDetails: 'chunked', section: SECTIONS.MAIN },
-        { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: '1 large', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...SALT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },

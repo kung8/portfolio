@@ -8,7 +8,7 @@ const {
     YELLOW_MUSTARD,
     SALT,
     BLACK_PEPPER,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     CELERY,
     GREEN_BELL_PEPPERS,
 } = require('./ingredients');
@@ -34,7 +34,7 @@ module.exports = {
         { ...YELLOW_MUSTARD, amount: '2 1/2 Tbsp', additionalDetails: '', optional: false },
         { ...SALT, amount: '1 1/2 tsp', additionalDetails: '', optional: false },
         { ...BLACK_PEPPER, amount: '1/2 tsp', additionalDetails: '', optional: false },
-        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'diced', optional: false },
+        { ...YELLOW_ONION, amount: '1 medium', additionalDetails: 'diced', optional: false },
         { ...CELERY, amount: '2 stalks', additionalDetails: 'sliced', optional: false },
         { ...GREEN_BELL_PEPPERS, amount: '1', additionalDetails: 'diced', optional: false },
     ],

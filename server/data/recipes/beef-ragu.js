@@ -9,7 +9,7 @@ const ragu8 = '../assets/Products/beef-ragu-8.jpeg';
 const ragu9 = '../assets/Products/beef-ragu-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { BEEF_CHUCK_ROAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CARROTS, CELERY, CRUSHED_TOMATOES, TOMATO_PASTE, BEEF_BROTH, RED_WINE, WARM_WATER, THYME, BAY_LEAVES, SMALL_YELLOW_ONION, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY } = require('./ingredients');
+const { BEEF_CHUCK_ROAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CARROTS, CELERY, CRUSHED_TOMATOES, TOMATO_PASTE, BEEF_BROTH, RED_WINE, WARM_WATER, THYME, BAY_LEAVES, YELLOW_ONION, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY } = require('./ingredients');
 
 const BEEF_SECTION = 'Beef';
 const RAGU_SECTION = 'Ragu';
@@ -43,7 +43,7 @@ module.exports = {
 
         { ...OLIVE_OIL, amount: '2 Tbsp', additionalDetails: '', section: RAGU_SECTION },
         { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: RAGU_SECTION },
-        { ...SMALL_YELLOW_ONION, amount: '1', additionalDetails: 'diced', section: RAGU_SECTION },
+        { ...YELLOW_ONION, amount: '1 small', additionalDetails: 'diced', section: RAGU_SECTION },
         { ...CARROTS, amount: '1 c', additionalDetails: 'diced', section: RAGU_SECTION },
         { ...CELERY, amount: '1 c', additionalDetails: 'diced', section: RAGU_SECTION },
         { ...CRUSHED_TOMATOES, amount: '28 oz', additionalDetails: '', section: RAGU_SECTION },

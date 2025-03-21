@@ -18,7 +18,7 @@ module.exports = {
         // { name: 'cooked chicken', amount: '2 1/2 c', additionalDetails: '', optional: false },
         // { ...UNSALTED_BUTTER, amount: '1/3 c', additionalDetails: '', optional: false },
         // { ...ALL_PURPOSE_FLOUR, amount: '1/3 c', additionalDetails: '', optional: false },
-        // { ...MEDIUM_YELLOW_ONION, amount: '1/3 c', additionalDetails: '', optional: false },
+        // { ...YELLOW_ONION, amount: '1/3 c', additionalDetails: '', optional: false },
         // { ...SALT, amount: '1/2 tsp', additionalDetails: '', optional: false },
         // { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', optional: false },
         // { ...CHICKEN_BROTH, amount: '1 3/4 c', additionalDetails: '', optional: false },

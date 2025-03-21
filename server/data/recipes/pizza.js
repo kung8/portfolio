@@ -49,7 +49,7 @@ const {
     PARMESAN_CHEESE,
     PROVOLONE_CHEESE,
     FLANK_STEAK,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     YEAST,
     PIZZA_SAUCE,
     SAUSAGE,
@@ -157,7 +157,7 @@ module.exports = {
         { ...FLANK_STEAK, amount: '6 oz', additionalDetails: 'thinly sliced', section: PHILLY_CHEESESTEAK_PIZZA },
         { ...RED_BELL_PEPPERS, amount: '1/2', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
         { ...MUSHROOMS, amount: '5', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
-        { ...MEDIUM_YELLOW_ONION, amount: '1/2', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
+        { ...YELLOW_ONION, amount: '1/2 medium', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
         { ...PROVOLONE_CHEESE, amount: '1 1/4 c', additionalDetails: 'shredded', section: PHILLY_CHEESESTEAK_PIZZA },
 
         // RANCH CHICKEN

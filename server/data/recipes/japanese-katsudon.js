@@ -18,7 +18,7 @@ const {
     WHITE_SUGAR,
     LIGHT_SOY_SAUCE,
     MIRIN,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     JASMINE_RICE,
     GREEN_ONIONS,
 } = require('./ingredients');
@@ -52,7 +52,7 @@ module.exports = {
         { ...WHITE_SUGAR, amount: '10 tsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...LIGHT_SOY_SAUCE, amount: '5 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
         { ...MIRIN, amount: '10 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MEDIUM_YELLOW_ONION, amount: '5', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: '5 medium', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
         { ...JASMINE_RICE, amount: '5 c', additionalDetails: 'steamed', section: SECTIONS.MAIN },
         { ...GREEN_ONIONS, amount: '5', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],

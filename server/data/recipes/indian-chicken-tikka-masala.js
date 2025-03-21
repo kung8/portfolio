@@ -17,7 +17,7 @@ const tomato = '../assets/Products/chicken-tikka-masala-tomato-sauce.jpeg';
 const translucent = '../assets/Products/chicken-tikka-masala-translucent-onion.jpeg';
 
 const { CATEGORIES, GENRES, TYPES, METHODS, SECTIONS } = require("./constants");
-const { GHEE, MEDIUM_YELLOW_ONION, GARLIC, CUMIN, SALT, GINGER, CAYENNE_PEPPER, CINNAMON, TURMERIC, TOMATO_SAUCE, HEAVY_CREAM, WHITE_SUGAR, PAPRIKA, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CURRY_POWDER, } = require('./ingredients');
+const { GHEE, YELLOW_ONION, GARLIC, CUMIN, SALT, GINGER, CAYENNE_PEPPER, CINNAMON, TURMERIC, TOMATO_SAUCE, HEAVY_CREAM, WHITE_SUGAR, PAPRIKA, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CURRY_POWDER, } = require('./ingredients');
 
 module.exports = {
     cardName: 'Chicken Tikka Masala',
@@ -38,7 +38,7 @@ module.exports = {
     ],
     ingredients: [
         { ...GHEE, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'diced', section: SECTIONS.SAUCE },
+        { ...YELLOW_ONION, amount: '1 medium', additionalDetails: 'diced', section: SECTIONS.SAUCE },
         { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', section: SECTIONS.SAUCE },
         { ...CUMIN, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SALT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },

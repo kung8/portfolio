@@ -13,7 +13,7 @@ const quesadillas13 = '../assets/Products/chicken-quesadillas-13.jpeg';
 const quesadillas14 = '../assets/Products/chicken-quesadillas-14.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { CHILI_POWDER, SALT, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL, SMALL_YELLOW_ONION, RED_BELL_PEPPERS, GREEN_BELL_PEPPERS, HOT_SAUCE, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, SALSA, GUACAMOLE, SOUR_CREAM, SHARP_CHEDDAR_CHEESE, WHEAT_TORTILLA } = require('./ingredients');
+const { CHILI_POWDER, SALT, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL, YELLOW_ONION, RED_BELL_PEPPERS, GREEN_BELL_PEPPERS, HOT_SAUCE, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, SALSA, GUACAMOLE, SOUR_CREAM, SHARP_CHEDDAR_CHEESE, WHEAT_TORTILLA } = require('./ingredients');
 
 const SPICES = 'Spices';
 const CHICKEN = 'Chicken';
@@ -50,7 +50,7 @@ module.exports = {
         { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '2 medium', additionalDetails: '', section: CHICKEN },
 
         { ...OLIVE_OIL, amount: '1 Tbsp', additionalDetails: '', section: VEGGIES },
-        { ...SMALL_YELLOW_ONION, amount: '1/2', additionalDetails: 'diced', section: VEGGIES },
+        { ...YELLOW_ONION, amount: '1/2 small', additionalDetails: 'diced', section: VEGGIES },
         { ...RED_BELL_PEPPERS, amount: '1', additionalDetails: 'diced', section: VEGGIES },
         { ...GREEN_BELL_PEPPERS, amount: '1', additionalDetails: 'diced', section: VEGGIES },
         { ...HOT_SAUCE, amount: '', additionalDetails: 'to taste', section: VEGGIES },

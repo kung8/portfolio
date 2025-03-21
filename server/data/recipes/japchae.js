@@ -1,6 +1,6 @@
 // const japchae1 = '../assets/Products/japchae-1.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { KOREAN_GLASS_NOODLES, EGGS, CARROTS, RED_BELL_PEPPERS, SMALL_YELLOW_ONION, GREEN_ONIONS, GARLIC, SHIITAKE_MUSHROOMS, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPERS } = require('./ingredients');
+const { KOREAN_GLASS_NOODLES, EGGS, CARROTS, RED_BELL_PEPPERS, YELLOW_ONION, GREEN_ONIONS, GARLIC, SHIITAKE_MUSHROOMS, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPERS } = require('./ingredients');
 
 const NOODLES_SECTION = 'Noodles';
 const EGG_SECTION = 'Eggs';
@@ -46,7 +46,7 @@ module.exports = {
         { ...ORANGE_BELL_PEPPERS, amount: '1/2', additionalDetails: 'thinly sliced', section: FIRST_VEGGIES_SECTION },
 
         { ...SESAME_OIL, amount: '1 Tbsp', additionalDetails: '', section: SECOND_VEGGIES_SECTION },
-        { ...SMALL_YELLOW_ONION, amount: '1', additionalDetails: 'sliced', section: SECOND_VEGGIES_SECTION },
+        { ...YELLOW_ONION, amount: '1 small', additionalDetails: 'sliced', section: SECOND_VEGGIES_SECTION },
         { ...GREEN_ONIONS, amount: '2', additionalDetails: 'chopped', section: SECOND_VEGGIES_SECTION },
         { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', section: SECOND_VEGGIES_SECTION },
         { ...SHIITAKE_MUSHROOMS, amount: '4', additionalDetails: 'sliced', section: SECOND_VEGGIES_SECTION },

@@ -11,7 +11,7 @@ const aji = '../assets/Products/aji-de-gallina.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 const {
     CHICKEN_BREAST,
-    LARGE_YELLOW_ONION,
+    YELLOW_ONION,
     VEGETABLE_OIL,
     GARLIC,
     YELLOW_BELL_PEPPERS,
@@ -52,7 +52,7 @@ module.exports = {
         { label: 'Aji de Gallina', link: 'https://www.carolinescooking.com/aji-de-gallina-peruvian-chicken-stew/' }
     ],
     ingredients: [
-        { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'diced', optional: false, section: ONION_SECTION },
+        { ...YELLOW_ONION, amount: '1 large', additionalDetails: 'diced', optional: false, section: ONION_SECTION },
         { ...SALT, amount: '1 tsp', additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
         { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
         { ...OREGANO, amount: '1/4 tsp', additionalDetails: 'to taste', optional: false, section: ONION_SECTION },

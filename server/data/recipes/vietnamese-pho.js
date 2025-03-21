@@ -26,7 +26,7 @@ const {
     DRIED_RICE_NOODLES,
     SALT,
     SRIRACHA_SAUCE,
-    LARGE_YELLOW_ONION,
+    YELLOW_ONION,
     GINGER,
     COLD_WATER,
     CORIANDER,
@@ -55,7 +55,7 @@ module.exports = {
         { label: 'Pho', link: 'https://tastesbetterfromscratch.com/pho-noodle-soup/' }
     ],
     ingredients: [
-        { ...LARGE_YELLOW_ONION, amount: '1', additionalDetails: 'quartered', section: SECTIONS.BROTH },
+        { ...YELLOW_ONION, amount: '1 large', additionalDetails: 'quartered', section: SECTIONS.BROTH },
         { ...GINGER, amount: '2 2-inch', additionalDetails: 'peeled and halved-lengthwise', section: SECTIONS.BROTH },
         { ...BEEF_BROTH, amount: '6 c', additionalDetails: '', section: SECTIONS.BROTH },
         { ...COLD_WATER, amount: '2 c', additionalDetails: '', section: SECTIONS.BROTH },

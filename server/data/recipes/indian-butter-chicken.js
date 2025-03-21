@@ -16,7 +16,7 @@ const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./con
 const {
     VEGETABLE_OIL,
     UNSALTED_BUTTER,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     GINGER,
     GARLIC,
     TOMATO_PASTE,
@@ -51,7 +51,7 @@ module.exports = {
     ingredients: [
         { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', optional: false },
         { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', optional: false },
-        { ...MEDIUM_YELLOW_ONION, amount: '1', additionalDetails: 'diced', optional: false },
+        { ...YELLOW_ONION, amount: '1 medium', additionalDetails: 'diced', optional: false },
         { ...GINGER, amount: '1 tsp', additionalDetails: 'minced', optional: false },
         { ...GARLIC, amount: '3 cloves', additionalDetails: 'minced', optional: false },
         { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '2 lbs', additionalDetails: '1/2" pieces', optional: false },

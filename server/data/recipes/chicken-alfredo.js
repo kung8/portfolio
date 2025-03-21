@@ -2,7 +2,7 @@ const alfredo = '../assets/Products/chicken-alfredo.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
 const {
     RED_BELL_PEPPERS,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     CHICKEN_BREAST,
     UNSALTED_BUTTER,
     NUTMEG,
@@ -32,7 +32,7 @@ module.exports = {
         { ...FETTUCCINE_NOODLES, amount: '12 oz', additionalDetails: '', section: SECTIONS.MAIN },
         { ...OLIVE_OIL, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...RED_BELL_PEPPERS, amount: '2', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...MEDIUM_YELLOW_ONION, amount: '1/2', additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: '1/2 medium', additionalDetails: 'diced', section: SECTIONS.MAIN },
         { ...CHICKEN_BREAST, amount: '2', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...HEAVY_CREAM, amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },

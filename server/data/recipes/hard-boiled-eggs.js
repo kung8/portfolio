@@ -7,7 +7,7 @@ const {
     OREGANO,
     BASIL,
     UNSALTED_BUTTER,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     RED_BELL_PEPPERS,
 } = require('./ingredients');
 
@@ -35,7 +35,7 @@ module.exports = {
         { ...OREGANO, amount: '', additionalDetails: 'to taste', section: EGGS_SECTION },
         { ...BASIL, amount: '', additionalDetails: 'to taste', section: EGGS_SECTION },
         { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: VEGGIES },
-        { ...MEDIUM_YELLOW_ONION, amount: '1/4', additionalDetails: 'diced', section: VEGGIES },
+        { ...YELLOW_ONION, amount: '1/4 medium', additionalDetails: 'diced', section: VEGGIES },
         { ...RED_BELL_PEPPERS, amount: '1', additionalDetails: 'diced', section: VEGGIES },
     ],
     appliances: [

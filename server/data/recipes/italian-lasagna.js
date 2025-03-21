@@ -4,7 +4,7 @@ const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./con
 const {
     ITALIAN_SAUSAGE,
     GROUND_BEEF,
-    MEDIUM_YELLOW_ONION,
+    YELLOW_ONION,
     GARLIC,
     CRUSHED_TOMATOES,
     TOMATO_PASTE,
@@ -42,7 +42,7 @@ module.exports = {
     ingredients: [
         { ...ITALIAN_SAUSAGE, amount: '1 lb', additionalDetails: '', optional: false },
         { ...GROUND_BEEF, amount: '3/4 lb', additionalDetails: '', optional: false },
-        { ...MEDIUM_YELLOW_ONION, amount: '1/2 c', additionalDetails: 'minced', optional: false },
+        { ...YELLOW_ONION, amount: '1/2 c', additionalDetails: 'minced', optional: false },
         { ...GARLIC, amount: '2 cloves', additionalDetails: 'crushed', optional: false },
         { ...CRUSHED_TOMATOES, amount: '1-28 oz can', additionalDetails: '', optional: false },
         { ...TOMATO_PASTE, amount: '', additionalDetails: '', optional: false },

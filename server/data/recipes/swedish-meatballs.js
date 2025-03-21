@@ -16,7 +16,7 @@ const meatball16 = '../assets/Products/swedish-meatball-16.jpeg';
 const meatball17 = '../assets/Products/swedish-meatball-17.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { BREADCRUMBS, HEAVY_CREAM, UNSALTED_BUTTER, SMALL_YELLOW_ONION, GROUND_BEEF, GROUND_PORK, EGGS, BROWN_SUGAR, SALT, BLACK_PEPPER, NUTMEG, ALLSPICE, GROUND_GINGER, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, BEEF_BROTH, SOUR_CREAM } = require('./ingredients');
+const { BREADCRUMBS, HEAVY_CREAM, UNSALTED_BUTTER, YELLOW_ONION, GROUND_BEEF, GROUND_PORK, EGGS, BROWN_SUGAR, SALT, BLACK_PEPPER, NUTMEG, ALLSPICE, GROUND_GINGER, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, BEEF_BROTH, SOUR_CREAM } = require('./ingredients');
 
 const PREP_OVEN = 'Prep Oven';
 const BREADCRUMB_MIXTURE = 'Breadcrumb Mixture';
@@ -47,7 +47,7 @@ module.exports = {
         { ...BREADCRUMBS, amount: '2/3 c', additionalDetails: '', section: BREADCRUMB_MIXTURE },
         { ...HEAVY_CREAM, amount: '1/2 c', additionalDetails: '', section: BREADCRUMB_MIXTURE },
         { ...UNSALTED_BUTTER, amount: '1 tsp', additionalDetails: '', section: SWEDISH_MEATBALLS },
-        { ...SMALL_YELLOW_ONION, amount: '1', additionalDetails: 'minced', section: SWEDISH_MEATBALLS },
+        { ...YELLOW_ONION, amount: '1 small', additionalDetails: 'minced', section: SWEDISH_MEATBALLS },
         { ...GROUND_BEEF, amount: '2/3 lb', additionalDetails: '', section: SWEDISH_MEATBALLS },
         { ...GROUND_PORK, amount: '1/3 lb', additionalDetails: '', section: SWEDISH_MEATBALLS },
         { ...EGGS, amount: '1', additionalDetails: '', section: SWEDISH_MEATBALLS },
