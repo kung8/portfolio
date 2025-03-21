@@ -597,3 +597,10 @@ module.exports = recipes;
 // mediterranean flatbread - https://sailorbailey.com/blog/mediterranean-flatbread/
 
 // creme brulee french toast - https://www.thekitchn.com/creme-brulee-french-toast-recipe-23711485
+
+
+// Mississippi Mud Potatoes - https://www.thekitchn.com/mississippi-mud-potatoes-recipe-23713064
+// Irish Potato Boxty - https://www.foodandwine.com/irish-potato-boxty-6422424
+// Beef and Broccoli - https://natashaskitchen.com/beef-and-broccoli/ (1.8K)
+// Beef and Broccoli - https://www.justataste.com/easy-beef-and-broccoli-recipe/ (1.2K)
+// Carrot Cake Scones - https://homeiswheretheboatis.net/2025/03/18/everybunnys-favorite-carrot-cake-scones-with-cream-cheese-glaze/
