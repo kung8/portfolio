@@ -421,6 +421,7 @@ const INGREDIENTS = {
         },
         FRY_SAUCE: { name: 'fry sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         GINGER_GARLIC_PASTE: { name: 'ginger garlic paste', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        GINGER_PUREE: { name: 'ginger puree', category: INGREDIENT_CATEGORY.CONDIMENTS },
         GOCHUJANG_SAUCE: { name: 'gochujang sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         GUACAMOLE: {
             name: 'guacamole', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1620019989549-bbb873b6612d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2OTM3fA&ixlib=rb-4.0.3&q=80&w=400"

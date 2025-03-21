@@ -201,6 +201,7 @@ const TYPES = {
     DIP: 'Dip',
     TART: 'Tart',
     SPICE: 'Spice',
+    BURRITO: 'Burrito',
 }
 
 module.exports = {
