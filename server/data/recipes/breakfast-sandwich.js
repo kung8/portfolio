@@ -21,10 +21,10 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '10 m',
     ingredients: [
-        { ...EGGS, amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COOKED_HAM, amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BISCUITS, amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHEDDAR_CHEESE, amount: '1', additionalDetails: 'slice', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COOKED_HAM, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BISCUITS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHEDDAR_CHEESE, amount: '1', unit: '', additionalDetails: 'slice', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

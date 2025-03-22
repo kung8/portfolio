@@ -22,7 +22,7 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...GENRES, amount: '', additionalDetails: '', section: '' },
+        { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
     ],
     appliances: [
         { name: '' },

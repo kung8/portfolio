@@ -19,10 +19,10 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '60 m',
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '2 sticks', additionalDetails: 'at room temperature', section: SECTIONS.MAIN },
-        { ...POWDERED_SUGAR, amount: '3/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: '2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '2 sticks', unit: '', additionalDetails: 'at room temperature', section: SECTIONS.MAIN },
+        { ...POWDERED_SUGAR, amount: '3/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

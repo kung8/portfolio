@@ -41,13 +41,13 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...WHITE_SUGAR, amount: '2 c', additionalDetails: '', section: VANILLA_SUGAR },
-        { ...VANILLA_BEAN, amount: '1', additionalDetails: 'split and scraped', section: VANILLA_SUGAR },
+        { ...WHITE_SUGAR, amount: '2 c', unit: '', additionalDetails: '', section: VANILLA_SUGAR },
+        { ...VANILLA_BEAN, amount: '1', unit: '', additionalDetails: 'split and scraped', section: VANILLA_SUGAR },
 
-        { ...HEAVY_CREAM, amount: '1 qt', additionalDetails: '', section: CREAM },
-        { ...VANILLA_BEAN, amount: '1', additionalDetails: 'split and scraped', section: CREAM },
-        { ...EGG_YOLKS, amount: '6', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HOT_WATER, amount: '2 qt', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HEAVY_CREAM, amount: '1 qt', unit: '', additionalDetails: '', section: CREAM },
+        { ...VANILLA_BEAN, amount: '1', unit: '', additionalDetails: 'split and scraped', section: CREAM },
+        { ...EGG_YOLKS, amount: '6', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HOT_WATER, amount: '2 qt', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

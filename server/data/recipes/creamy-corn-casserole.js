@@ -25,12 +25,12 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CANNED_SWEET_CORN, amount: '15 oz', additionalDetails: 'drained', section: SECTIONS.MAIN },
-        { ...CANNED_CREAMED_CORN, amount: '14.75 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CORNBREAD_MIX, amount: '8.5 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SOUR_CREAM, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '1/2 c', additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '2', additionalDetails: 'beaten', section: SECTIONS.MAIN },
+        { ...CANNED_SWEET_CORN, amount: '15 oz', unit: '', additionalDetails: 'drained', section: SECTIONS.MAIN },
+        { ...CANNED_CREAMED_CORN, amount: '14.75 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORNBREAD_MIX, amount: '8.5 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SOUR_CREAM, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '1/2 c', unit: '', additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '2', unit: '', additionalDetails: 'beaten', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

@@ -29,12 +29,12 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '8 - 10 m',
     ingredients: [
-        { ...EGGS, amount: '2', additionalDetails: '', optional: false },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', additionalDetails: '', optional: false },
-        { ...CINNAMON, amount: '1 tsp', additionalDetails: '', optional: false },
-        { ...MILK, amount: '3/4 c', additionalDetails: '', optional: false },
-        { ...BREAD, amount: '8', additionalDetails: '', optional: false },
-        { ...UNSALTED_BUTTER, amount: '', additionalDetails: 'for cooking', optional: false },
+        { ...EGGS, amount: '2', unit: '', additionalDetails: '', optional: false },
+        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', optional: false },
+        { ...CINNAMON, amount: '1 tsp', unit: '', additionalDetails: '', optional: false },
+        { ...MILK, amount: '3/4 c', unit: '', additionalDetails: '', optional: false },
+        { ...BREAD, amount: '8', unit: '', additionalDetails: '', optional: false },
+        { ...UNSALTED_BUTTER, amount: '', unit: '', additionalDetails: 'for cooking', optional: false },
     ],
     appliances: [
         { name: 'stove' },

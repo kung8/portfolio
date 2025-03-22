@@ -16,7 +16,7 @@ module.exports = {
     prepTime: 'm',
     cookTime: 'm',
     ingredients: [
-        { name: '', amount: '', additionalDetails: '', section: '' },
+        { name: '', amount: '', unit: '', additionalDetails: '', section: '' },
     ],
     appliances: [
         { name: '' },

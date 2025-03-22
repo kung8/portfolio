@@ -30,12 +30,12 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...MOCHIKO, amount: '1 3/4 c', additionalDetails: '', section: MOCHI },
-        { ...WHITE_SUGAR, amount: '1 1/4 c', additionalDetails: '', section: MOCHI },
-        { ...COLD_WATER, amount: '1 c', additionalDetails: '', section: MOCHI },
-        { ...COCONUT_MILK, amount: '3/4 c', additionalDetails: '', section: MOCHI },
-        { ...FOOD_COLORING, amount: '1 drop', additionalDetails: 'preferred color', section: MOCHI },
-        { ...POTATO_STARCH, amount: '', additionalDetails: 'for dusting', section: DUSTING },
+        { ...MOCHIKO, amount: '1 3/4 c', unit: '', additionalDetails: '', section: MOCHI },
+        { ...WHITE_SUGAR, amount: '1 1/4 c', unit: '', additionalDetails: '', section: MOCHI },
+        { ...COLD_WATER, amount: '1 c', unit: '', additionalDetails: '', section: MOCHI },
+        { ...COCONUT_MILK, amount: '3/4 c', unit: '', additionalDetails: '', section: MOCHI },
+        { ...FOOD_COLORING, amount: '1 drop', unit: '', additionalDetails: 'preferred color', section: MOCHI },
+        { ...POTATO_STARCH, amount: '', unit: '', additionalDetails: 'for dusting', section: DUSTING },
     ],
     appliances: [
         { name: 'oven' },

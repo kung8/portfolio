@@ -24,12 +24,12 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '4 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CANNED_SWEET_CORN, amount: '4 - 14.5 oz', additionalDetails: 'drained', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HEAVY_CREAM, amount: '1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HONEY, amount: '1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CANNED_SWEET_CORN, amount: '4 - 14.5 oz', unit: '', additionalDetails: 'drained', section: SECTIONS.MAIN },
+        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HEAVY_CREAM, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HONEY, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

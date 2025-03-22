@@ -29,10 +29,10 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PEANUT_BUTTER, amount: '1 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHEX_CEREAL, amount: '6 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...POWDERED_SUGAR, amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PEANUT_BUTTER, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHEX_CEREAL, amount: '6 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...POWDERED_SUGAR, amount: '1 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'fridge' },

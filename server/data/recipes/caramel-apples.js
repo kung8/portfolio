@@ -35,12 +35,12 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GRANNY_SMITH_APPLES, amount: '8', additionalDetails: '', section: APPLE },
-        { ...BROWN_SUGAR, amount: '2 c', additionalDetails: '', section: CARAMEL },
-        { ...SWEETENED_CONDENSED_MILK, amount: '14 oz', additionalDetails: '', section: CARAMEL },
-        { ...CORN_SYRUP, amount: '1 c', additionalDetails: '', section: CARAMEL },
-        { ...UNSALTED_BUTTER, amount: '1 c', additionalDetails: '', section: CARAMEL },
-        { ...VANILLA_EXTRACT, amount: '2 tsp', additionalDetails: '', section: CARAMEL },
+        { ...GRANNY_SMITH_APPLES, amount: '8', unit: '', additionalDetails: '', section: APPLE },
+        { ...BROWN_SUGAR, amount: '2 c', unit: '', additionalDetails: '', section: CARAMEL },
+        { ...SWEETENED_CONDENSED_MILK, amount: '14 oz', unit: '', additionalDetails: '', section: CARAMEL },
+        { ...CORN_SYRUP, amount: '1 c', unit: '', additionalDetails: '', section: CARAMEL },
+        { ...UNSALTED_BUTTER, amount: '1 c', unit: '', additionalDetails: '', section: CARAMEL },
+        { ...VANILLA_EXTRACT, amount: '2 tsp', unit: '', additionalDetails: '', section: CARAMEL },
     ],
     appliances: [
         { name: 'stove' },

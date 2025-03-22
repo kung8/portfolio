@@ -15,10 +15,10 @@ module.exports = {
     prepTime: '7 m',
     cookTime: '0 m',
     ingredients: [
-        { ...CHOCOLATE_PUDDING_CUPS, amount: '6', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...OREO_COOKIES, amount: 'package of', additionalDetails: 'without cream', section: SECTIONS.MAIN },
-        { ...MILANO_COOKIES, amount: 'package of', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GUMMY_WORMS, amount: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHOCOLATE_PUDDING_CUPS, amount: '6', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OREO_COOKIES, amount: 'package of', unit: '', additionalDetails: 'without cream', section: SECTIONS.MAIN },
+        { ...MILANO_COOKIES, amount: 'package of', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GUMMY_WORMS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     supplies: [
         { name: 'Clear Cups' },

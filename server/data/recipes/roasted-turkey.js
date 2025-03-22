@@ -54,18 +54,18 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...TURKEY, amount: '', additionalDetails: 'desired size', optional: false, section: TURKEY_SECTION },
+        { ...TURKEY, amount: '', unit: '', additionalDetails: 'desired size', optional: false, section: TURKEY_SECTION },
 
-        { ...UNSALTED_BUTTER, amount: '16 Tbsp', additionalDetails: 'softened', optional: false, section: HERB_BUTTER_RUB },
-        { ...THYME, amount: '2 Tbsp', additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
-        { ...GARLIC, amount: '4 cloves', additionalDetails: 'minced', optional: false, section: HERB_BUTTER_RUB },
-        { ...SALT, amount: '2 pinch', additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
-        { ...BLACK_PEPPER, amount: '2 pinch', additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
+        { ...UNSALTED_BUTTER, amount: '16 Tbsp', unit: '', additionalDetails: 'softened', optional: false, section: HERB_BUTTER_RUB },
+        { ...THYME, amount: '2 Tbsp', unit: '', additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
+        { ...GARLIC, amount: '4 cloves', unit: '', additionalDetails: 'minced', optional: false, section: HERB_BUTTER_RUB },
+        { ...SALT, amount: '2 pinch', unit: '', additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
+        { ...BLACK_PEPPER, amount: '2 pinch', unit: '', additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
 
-        { ...GARLIC, amount: '3 heads', additionalDetails: 'halved', optional: false, section: CAVITY_FILLING },
-        { ...LEMON, amount: '2', additionalDetails: 'sliced', optional: false, section: CAVITY_FILLING },
-        { ...ROSEMARY, amount: '6 sprigs', additionalDetails: '', optional: false, section: CAVITY_FILLING },
-        { ...OLIVE_OIL, amount: '1/2 c', additionalDetails: '', optional: false, section: TURKEY_SECTION },
+        { ...GARLIC, amount: '3 heads', unit: '', additionalDetails: 'halved', optional: false, section: CAVITY_FILLING },
+        { ...LEMON, amount: '2', unit: '', additionalDetails: 'sliced', optional: false, section: CAVITY_FILLING },
+        { ...ROSEMARY, amount: '6 sprigs', unit: '', additionalDetails: '', optional: false, section: CAVITY_FILLING },
+        { ...OLIVE_OIL, amount: '1/2 c', unit: '', additionalDetails: '', optional: false, section: TURKEY_SECTION },
     ],
     appliances: [
         { name: 'oven' },

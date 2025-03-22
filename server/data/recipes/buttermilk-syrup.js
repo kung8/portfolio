@@ -26,11 +26,11 @@ module.exports = {
         { label: 'Buttermilk Syrup', link: 'https://www.allrecipes.com/recipe/239478/grandmas-buttermilk-syrup/' }
     ],
     ingredients: [
-        { ...WHITE_SUGAR, amount: '1 c', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BUTTERMILK, amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...UNSALTED_BUTTER, amount: '1/2 c', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BAKING_SODA, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BUTTERMILK, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...UNSALTED_BUTTER, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BAKING_SODA, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stove' },

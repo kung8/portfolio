@@ -34,24 +34,24 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GROUND_BEEF, amount: '1 lb', additionalDetails: '', section: BEEF },
+        { ...GROUND_BEEF, amount: '1 lb', unit: '', additionalDetails: '', section: BEEF },
 
-        { ...YELLOW_ONION, amount: '3/4 c', additionalDetails: 'chopped', section: VEGGIES },
-        { ...GREEN_BELL_PEPPERS, amount: '3/4 c', additionalDetails: 'diced', section: VEGGIES },
-        { ...CORN, amount: '1 1/2 c', additionalDetails: '', section: VEGGIES },
+        { ...YELLOW_ONION, amount: '3/4 c', unit: '', additionalDetails: 'chopped', section: VEGGIES },
+        { ...GREEN_BELL_PEPPERS, amount: '3/4 c', unit: '', additionalDetails: 'diced', section: VEGGIES },
+        { ...CORN, amount: '1 1/2 c', unit: '', additionalDetails: '', section: VEGGIES },
 
-        { ...TACO_SAUCE, amount: '2 c', additionalDetails: '', section: SPICES },
-        { ...CHILI_POWDER, amount: '2 tsp', additionalDetails: '', section: SPICES },
-        { ...GARLIC_SALT, amount: '1 tsp', additionalDetails: '', section: SPICES },
-        { ...CUMIN, amount: '1 tsp', additionalDetails: '', section: SPICES },
+        { ...TACO_SAUCE, amount: '2 c', unit: '', additionalDetails: '', section: SPICES },
+        { ...CHILI_POWDER, amount: '2 tsp', unit: '', additionalDetails: '', section: SPICES },
+        { ...GARLIC_SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: SPICES },
+        { ...CUMIN, amount: '1 tsp', unit: '', additionalDetails: '', section: SPICES },
 
-        { ...FLOUR_TORTILLA, amount: '8', additionalDetails: '', section: TORTILLA_AND_OTHER },
-        { ...REFRIED_BEANS, amount: '16 oz', additionalDetails: '', section: TORTILLA_AND_OTHER },
-        { ...MONTEREY_JACK_CHEESE, amount: '16 oz', additionalDetails: 'shredded', section: TORTILLA_AND_OTHER },
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', additionalDetails: '', section: TORTILLA_AND_OTHER },
+        { ...FLOUR_TORTILLA, amount: '8', unit: '', additionalDetails: '', section: TORTILLA_AND_OTHER },
+        { ...REFRIED_BEANS, amount: '16 oz', unit: '', additionalDetails: '', section: TORTILLA_AND_OTHER },
+        { ...MONTEREY_JACK_CHEESE, amount: '16 oz', unit: '', additionalDetails: 'shredded', section: TORTILLA_AND_OTHER },
+        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: TORTILLA_AND_OTHER },
 
-        { ...LETTUCE, amount: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
-        { ...ROMA_TOMATO, amount: '1', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
+        { ...LETTUCE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
+        { ...ROMA_TOMATO, amount: '1', unit: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'oven' },

@@ -18,9 +18,9 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '5 m',
     ingredients: [
-        { ...GRAHAM_CRACKER, amount: '2', additionalDetails: '', optional: false },
-        { ...MARSHMALLOW, amount: '2', additionalDetails: '', optional: false },
-        { ...HERSHEY_CHOCOLATE_BAR, amount: '6', additionalDetails: '', optional: false },
+        { ...GRAHAM_CRACKER, amount: '2', unit: '', additionalDetails: '', optional: false },
+        { ...MARSHMALLOW, amount: '2', unit: '', additionalDetails: '', optional: false },
+        { ...HERSHEY_CHOCOLATE_BAR, amount: '6', unit: '', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'oven' },

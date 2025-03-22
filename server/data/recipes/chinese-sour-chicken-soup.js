@@ -20,9 +20,9 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '1 h',
     ingredients: [
-        { ...CHICKEN_THIGH, amount: '6 lb', additionalDetails: '', optional: false },
-        { ...KNORR_TAMARIND_SOUP_BASE, amount: '1 packet', additionalDetails: '', optional: false },
-        { ...LIME_JUICE, amount: '2 Tbsp', additionalDetails: '', optional: false },
+        { ...CHICKEN_THIGH, amount: '6 lb', unit: '', additionalDetails: '', optional: false },
+        { ...KNORR_TAMARIND_SOUP_BASE, amount: '1 packet', unit: '', additionalDetails: '', optional: false },
+        { ...LIME_JUICE, amount: '2 Tbsp', unit: '', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },

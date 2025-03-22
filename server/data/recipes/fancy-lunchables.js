@@ -15,12 +15,12 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '0 m',
     ingredients: [
-        { ...CRACKERS, amount: '12', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COOKED_HAM, amount: '5', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...CHEDDAR_CHEESE, amount: '6', additionalDetails: 'sliced or cubed', section: SECTIONS.MAIN },
-        { ...LETTUCE, amount: '2 layers', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...ROMA_TOMATO, amount: '1', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...BUTTER_PICKLE_CHIPS, amount: '6', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CRACKERS, amount: '12', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COOKED_HAM, amount: '5', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...CHEDDAR_CHEESE, amount: '6', unit: '', additionalDetails: 'sliced or cubed', section: SECTIONS.MAIN },
+        { ...LETTUCE, amount: '2 layers', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...ROMA_TOMATO, amount: '1', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...BUTTER_PICKLE_CHIPS, amount: '6', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     supplies: [
         { name: 'plate' },

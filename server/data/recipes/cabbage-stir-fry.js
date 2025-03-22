@@ -21,9 +21,9 @@ module.exports = {
     prepTime: '3 m',
     cookTime: '10 m',
     ingredients: [
-        { ...CABBAGE, amount: '1/2 head of', additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...RED_PEPPER_FLAKES, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...SESAME_OIL, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CABBAGE, amount: '1/2 head of', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...RED_PEPPER_FLAKES, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...SESAME_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

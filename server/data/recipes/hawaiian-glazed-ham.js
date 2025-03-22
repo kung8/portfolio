@@ -23,11 +23,11 @@ module.exports = {
     cookTime: '2 h',
     separated: true,
     ingredients: [
-        { ...BONE_IN_HAM, amount: '15 lb', additionalDetails: '', section: '' },
-        { ...YELLOW_MUSTARD, amount: '10 oz', additionalDetails: '', section: '' },
-        { ...BROWN_SUGAR, amount: '1/4 c', additionalDetails: '', section: '' },
-        { ...CANNED_PINEAPPLE_SLICES, amount: '2 - 20 oz', additionalDetails: '', section: '' },
-        { ...MARASCHINO_CHERRIES, amount: '10 oz', additionalDetails: 'pitted and stemless', section: '' },
+        { ...BONE_IN_HAM, amount: '15 lb', unit: '', additionalDetails: '', section: '' },
+        { ...YELLOW_MUSTARD, amount: '10 oz', unit: '', additionalDetails: '', section: '' },
+        { ...BROWN_SUGAR, amount: '1/4 c', unit: '', additionalDetails: '', section: '' },
+        { ...CANNED_PINEAPPLE_SLICES, amount: '2 - 20 oz', unit: '', additionalDetails: '', section: '' },
+        { ...MARASCHINO_CHERRIES, amount: '10 oz', unit: '', additionalDetails: 'pitted and stemless', section: '' },
     ],
     appliances: [
         { name: 'oven' },

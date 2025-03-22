@@ -14,9 +14,9 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '15 m',
     ingredients: [
-        { ...CROISSANT_DOUGH, amount: '2 can of', additionalDetails: '', optional: false },
-        { ...EGGS, amount: '2', additionalDetails: '', optional: false },
-        { ...MINI_HOT_DOG, amount: '14 oz', additionalDetails: '', optional: false },
+        { ...CROISSANT_DOUGH, amount: '2 can of', unit: '', additionalDetails: '', optional: false },
+        { ...EGGS, amount: '2', unit: '', additionalDetails: '', optional: false },
+        { ...MINI_HOT_DOG, amount: '14 oz', unit: '', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'oven' },

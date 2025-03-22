@@ -44,20 +44,20 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...PORK_BELLY, amount: '3 lbs', additionalDetails: 'skin on', section: PORK_BELLY_SECTION },
+        { ...PORK_BELLY, amount: '3 lbs', unit: '', additionalDetails: 'skin on', section: PORK_BELLY_SECTION },
 
-        { ...HOISIN_SAUCE, amount: '1 Tbsp', additionalDetails: '', section: RUB_SECTION },
-        { ...SHAOXING_WINE, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
-        { ...SALT, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
-        { ...WHITE_PEPPER, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
-        { name: '5-Spice', amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION, link: { id: 'five-spice-blend', url: 'recipes/five-spice-blend' }, img: fiveSpicePowder },
-        { ...WHITE_SUGAR, amount: '1/2 Tbsp', additionalDetails: '', section: RUB_SECTION },
+        { ...HOISIN_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION },
+        { ...SHAOXING_WINE, amount: '1/2 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION },
+        { ...SALT, amount: '1/2 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION },
+        { ...WHITE_PEPPER, amount: '1/2 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION },
+        { name: '5-Spice', amount: '1/2 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION, link: { id: 'five-spice-blend', url: 'recipes/five-spice-blend' }, img: fiveSpicePowder },
+        { ...WHITE_SUGAR, amount: '1/2 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION },
 
-        { ...SALT, amount: '1 c', additionalDetails: '', section: PORK_BELLY_SECTION },
-        { ...EGG_WHITES, amount: '1', additionalDetails: '', section: PORK_BELLY_SECTION },
+        { ...SALT, amount: '1 c', unit: '', additionalDetails: '', section: PORK_BELLY_SECTION },
+        { ...EGG_WHITES, amount: '1', unit: '', additionalDetails: '', section: PORK_BELLY_SECTION },
 
-        { ...WHITE_VINEGAR, amount: '1 Tbsp', additionalDetails: '', section: PORK_BELLY_SECTION },
-        { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', section: PORK_BELLY_SECTION },
+        { ...WHITE_VINEGAR, amount: '1 Tbsp', unit: '', additionalDetails: '', section: PORK_BELLY_SECTION },
+        { ...VEGETABLE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: PORK_BELLY_SECTION },
 
     ],
     appliances: [

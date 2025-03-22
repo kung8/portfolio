@@ -21,10 +21,10 @@ module.exports = {
     cookTime: '19 m',
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: '6 c', additionalDetails: '', section: BAGUETTES },
-        { ...COLD_WATER, amount: '2 1/4 c', additionalDetails: '', section: BAGUETTES },
-        { ...SALT, amount: '2 1/2 tsp', additionalDetails: '', section: BAGUETTES },
-        { ...YEAST, amount: '1 1/8 tsp', additionalDetails: '', section: BAGUETTES },
+        { ...ALL_PURPOSE_FLOUR, amount: '6 c', unit: '', additionalDetails: '', section: BAGUETTES },
+        { ...COLD_WATER, amount: '2 1/4 c', unit: '', additionalDetails: '', section: BAGUETTES },
+        { ...SALT, amount: '2 1/2 tsp', unit: '', additionalDetails: '', section: BAGUETTES },
+        { ...YEAST, amount: '1 1/8 tsp', unit: '', additionalDetails: '', section: BAGUETTES },
     ],
     appliances: [
         { name: 'oven' },

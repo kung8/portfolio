@@ -40,18 +40,18 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...YELLOW_ONION, amount: '1 small', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: '10 oz', additionalDetails: 'thin strips', section: SECTIONS.MAIN },
-        { ...SHAOXING_WINE, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '4', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GREEN_ONIONS, amount: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: '1 small', unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: '10 oz', unit: '', additionalDetails: 'thin strips', section: SECTIONS.MAIN },
+        { ...SHAOXING_WINE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '4', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
 
-        { ...DASHI, amount: '1/2 c', additionalDetails: '', section: SEASONING },
-        { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp', additionalDetails: '', section: SEASONING },
-        { ...MIRIN, amount: '2 Tbsp', additionalDetails: '', section: SEASONING },
-        { ...WHITE_SUGAR, amount: '2 tsp', additionalDetails: '', section: SEASONING },
+        { ...DASHI, amount: '1/2 c', unit: '', additionalDetails: '', section: SEASONING },
+        { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SEASONING },
+        { ...MIRIN, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SEASONING },
+        { ...WHITE_SUGAR, amount: '2 tsp', unit: '', additionalDetails: '', section: SEASONING },
 
-        { ...SHORT_GRAINED_RICE, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...SHORT_GRAINED_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

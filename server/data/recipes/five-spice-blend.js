@@ -25,11 +25,11 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CINNAMON, amount: '3 Tbsp', additionalDetails: '', section: SPICES_SECTION },
-        { ...STAR_ANISE, amount: '6', additionalDetails: '', section: SPICES_SECTION },
-        { ...FENNEL_SEEDS, amount: '1 1/2 tsp', additionalDetails: '', section: SPICES_SECTION },
-        { ...BLACK_PEPPER, amount: '1 1/2 tsp', additionalDetails: '', section: SPICES_SECTION },
-        { ...GROUND_CLOVES, amount: '3/4 tsp', additionalDetails: '', section: SPICES_SECTION },
+        { ...CINNAMON, amount: '3 Tbsp', unit: '', additionalDetails: '', section: SPICES_SECTION },
+        { ...STAR_ANISE, amount: '6', unit: '', additionalDetails: '', section: SPICES_SECTION },
+        { ...FENNEL_SEEDS, amount: '1 1/2 tsp', unit: '', additionalDetails: '', section: SPICES_SECTION },
+        { ...BLACK_PEPPER, amount: '1 1/2 tsp', unit: '', additionalDetails: '', section: SPICES_SECTION },
+        { ...GROUND_CLOVES, amount: '3/4 tsp', unit: '', additionalDetails: '', section: SPICES_SECTION },
     ],
     supplies: [
         { name: 'pestle and mortar' },

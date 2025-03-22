@@ -22,11 +22,11 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '25 - 40 m',
     ingredients: [
-        { ...CHICKEN_THIGH, amount: '5 lb', additionalDetails: '', optional: false },
-        { ...MCCORMICK_SEASONING_PACKET, amount: '1', additionalDetails: '', optional: false },
-        { ...SNOW_PEAS, amount: '1 lb', additionalDetails: '', optional: false },
-        { ...CARROT_CHIPS, amount: '1 lb', additionalDetails: '', optional: false },
-        { ...OLIVE_OIL, amount: '1 tsp', additionalDetails: '', optional: false },
+        { ...CHICKEN_THIGH, amount: '5 lb', unit: '', additionalDetails: '', optional: false },
+        { ...MCCORMICK_SEASONING_PACKET, amount: '1', unit: '', additionalDetails: '', optional: false },
+        { ...SNOW_PEAS, amount: '1 lb', unit: '', additionalDetails: '', optional: false },
+        { ...CARROT_CHIPS, amount: '1 lb', unit: '', additionalDetails: '', optional: false },
+        { ...OLIVE_OIL, amount: '1 tsp', unit: '', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'air fryer' },

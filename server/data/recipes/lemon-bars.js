@@ -35,18 +35,18 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: '2 1/2 c', additionalDetails: '', section: SECTIONS.CRUST },
-        { ...POWDERED_SUGAR, amount: '2/3 c', additionalDetails: '', section: SECTIONS.CRUST },
-        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.CRUST },
-        { ...UNSALTED_BUTTER, amount: '12 Tbsp', additionalDetails: 'melted', section: SECTIONS.CRUST },
+        { ...ALL_PURPOSE_FLOUR, amount: '2 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.CRUST },
+        { ...POWDERED_SUGAR, amount: '2/3 c', unit: '', additionalDetails: '', section: SECTIONS.CRUST },
+        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.CRUST },
+        { ...UNSALTED_BUTTER, amount: '12 Tbsp', unit: '', additionalDetails: 'melted', section: SECTIONS.CRUST },
 
-        { ...WHITE_SUGAR, amount: '3 c', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...LEMON_ZEST, amount: '3 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...ALL_PURPOSE_FLOUR, amount: '1/2 c', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...EGGS, amount: '8', additionalDetails: 'room temperature', section: SECTIONS.FILLING },
-        { ...LEMON_JUICE, amount: '1 c', additionalDetails: 'fresh', section: SECTIONS.FILLING },
+        { ...WHITE_SUGAR, amount: '3 c', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...LEMON_ZEST, amount: '3 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...ALL_PURPOSE_FLOUR, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...EGGS, amount: '8', unit: '', additionalDetails: 'room temperature', section: SECTIONS.FILLING },
+        { ...LEMON_JUICE, amount: '1 c', unit: '', additionalDetails: 'fresh', section: SECTIONS.FILLING },
 
-        { ...POWDERED_SUGAR, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...POWDERED_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'oven' },

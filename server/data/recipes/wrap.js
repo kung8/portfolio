@@ -22,12 +22,12 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '2 m',
     ingredients: [
-        { ...TORTILLA, amount: '1', additionalDetails: '', optional: false },
-        { ...COOKED_HAM, amount: '4', additionalDetails: 'preferred', optional: false },
-        { ...SPINACH, amount: '', additionalDetails: '', optional: false },
-        { ...CHEDDAR_CHEESE, amount: '3', additionalDetails: '', optional: false },
-        { ...ROMA_TOMATO, amount: '1/2', additionalDetails: 'sliced', optional: false },
-        { ...HONEY_MUSTARD, amount: '', additionalDetails: '', optional: false },
+        { ...TORTILLA, amount: '1', unit: '', additionalDetails: '', optional: false },
+        { ...COOKED_HAM, amount: '4', unit: '', additionalDetails: 'preferred', optional: false },
+        { ...SPINACH, amount: '', unit: '', additionalDetails: '', optional: false },
+        { ...CHEDDAR_CHEESE, amount: '3', unit: '', additionalDetails: '', optional: false },
+        { ...ROMA_TOMATO, amount: '1/2', unit: '', additionalDetails: 'sliced', optional: false },
+        { ...HONEY_MUSTARD, amount: '', unit: '', additionalDetails: '', optional: false },
     ],
     supplies: [
         { name: 'plate' },

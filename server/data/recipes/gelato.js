@@ -24,10 +24,10 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...WHOLE_MILK, amount: '3 c', additionalDetails: '', section: GELATO_SECTION },
-        { ...EGG_YOLKS, amount: '5', additionalDetails: '', section: GELATO_SECTION },
-        { ...WHITE_SUGAR, amount: '3/4 c', additionalDetails: '', section: GELATO_SECTION },
-        { ...VANILLA_BEAN, amount: '1', additionalDetails: 'split lengthwise', section: GELATO_SECTION },
+        { ...WHOLE_MILK, amount: '3 c', unit: '', additionalDetails: '', section: GELATO_SECTION },
+        { ...EGG_YOLKS, amount: '5', unit: '', additionalDetails: '', section: GELATO_SECTION },
+        { ...WHITE_SUGAR, amount: '3/4 c', unit: '', additionalDetails: '', section: GELATO_SECTION },
+        { ...VANILLA_BEAN, amount: '1', unit: '', additionalDetails: 'split lengthwise', section: GELATO_SECTION },
     ],
     appliances: [
         { name: 'stove' },

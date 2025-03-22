@@ -52,22 +52,22 @@ module.exports = {
         { label: 'Aji de Gallina', link: 'https://www.carolinescooking.com/aji-de-gallina-peruvian-chicken-stew/' }
     ],
     ingredients: [
-        { ...YELLOW_ONION, amount: '1 large', additionalDetails: 'diced', optional: false, section: ONION_SECTION },
-        { ...SALT, amount: '1 tsp', additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
-        { ...BLACK_PEPPER, amount: '1/4 tsp', additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
-        { ...OREGANO, amount: '1/4 tsp', additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
-        { ...NUTMEG, amount: '1 pinch of', additionalDetails: '', optional: true, section: ONION_SECTION },
+        { ...YELLOW_ONION, amount: '1 large', unit: '', additionalDetails: 'diced', optional: false, section: ONION_SECTION },
+        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
+        { ...BLACK_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
+        { ...OREGANO, amount: '1/4 tsp', unit: '', additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
+        { ...NUTMEG, amount: '1 pinch of', unit: '', additionalDetails: '', optional: true, section: ONION_SECTION },
         
-        { ...CHICKEN_BREAST, amount: '2', additionalDetails: '', optional: false, section: CHICKEN_SECTION },
+        { ...CHICKEN_BREAST, amount: '2', unit: '', additionalDetails: '', optional: false, section: CHICKEN_SECTION },
         
-        { ...YELLOW_BELL_PEPPERS, amount: '1 1/2', additionalDetails: '', optional: false, section: SAUCE_SECTION },
-        { ...BREAD, amount: '4', additionalDetails: '', optional: false, section: SAUCE_SECTION },
-        { ...MILK, amount: '2 c', additionalDetails: '', optional: false, section: SAUCE_SECTION },
+        { ...YELLOW_BELL_PEPPERS, amount: '1 1/2', unit: '', additionalDetails: '', optional: false, section: SAUCE_SECTION },
+        { ...BREAD, amount: '4', unit: '', additionalDetails: '', optional: false, section: SAUCE_SECTION },
+        { ...MILK, amount: '2 c', unit: '', additionalDetails: '', optional: false, section: SAUCE_SECTION },
         
-        { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '1 clove', additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { ...GARLIC, amount: '1 clove', unit: '', additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
         
-        { ...JASMINE_RICE, amount: '', additionalDetails: '', optional: false, section: SECTIONS.SERVE },
+        { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', optional: false, section: SECTIONS.SERVE },
     ],
     appliances: [
         { name: 'blender' },

@@ -16,8 +16,8 @@ module.exports = {
     cookTime: '5 m',
     separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '1 1/2 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...DRY_MILK_POWDER, amount: '1/3 c', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '1 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...DRY_MILK_POWDER, amount: '1/3 c', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

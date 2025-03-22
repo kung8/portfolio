@@ -28,9 +28,9 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BREAD, amount: '2 slices of', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '1.5 Tbsp', additionalDetails: 'divided', section: SECTIONS.MAIN },
-        { ...CHEDDAR_CHEESE, amount: '1 slices', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BREAD, amount: '2 slices of', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '1.5 Tbsp', unit: '', additionalDetails: 'divided', section: SECTIONS.MAIN },
+        { ...CHEDDAR_CHEESE, amount: '1 slices', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

@@ -23,10 +23,10 @@ module.exports = {
         { label: 'Rice Krispie Treats', link: "https://www.spendwithpennies.com/extra-chewy-rice-krispie-treats/" }
     ],
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MINI_MARSHMALLOWS, amount: '6 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RICE_KRISPIES_CEREAL, amount: '6 c', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MINI_MARSHMALLOWS, amount: '6 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...RICE_KRISPIES_CEREAL, amount: '6 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

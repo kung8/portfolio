@@ -25,11 +25,11 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BACON, amount: '4 slices', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LETTUCE, amount: '2 leaves', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ROMA_TOMATO, amount: '2 slices', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BREAD, amount: '2 slices', additionalDetails: 'toasted', section: SECTIONS.MAIN },
-        { ...MAYONNAISE, amount: '1 Tbsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BACON, amount: '4 slices', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LETTUCE, amount: '2 leaves', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ROMA_TOMATO, amount: '2 slices', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BREAD, amount: '2 slices', unit: '', additionalDetails: 'toasted', section: SECTIONS.MAIN },
+        { ...MAYONNAISE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

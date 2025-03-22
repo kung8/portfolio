@@ -25,11 +25,11 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...RED_POTATOES, amount: '2.2 lbs', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: '2 1/4 c', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '1', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 'pinch of', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...DURUM_WHEAT, amount: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...RED_POTATOES, amount: '2.2 lbs', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: '2 1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGGS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 'pinch of', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...DURUM_WHEAT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

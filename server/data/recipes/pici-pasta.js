@@ -25,9 +25,9 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...BABY_SPINACH, amount: '4.2 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: '6.5 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BABY_SPINACH, amount: '4.2 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: '6.5 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'food processor' },

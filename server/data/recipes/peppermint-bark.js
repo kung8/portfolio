@@ -32,10 +32,10 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '12 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_CHOCOLATE_CHIPS, amount: '16 oz', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PEPPERMINT_EXTRACT, amount: '1/2 tsp', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CANDY_CANES, amount: '3/4 c', additionalDetails: 'crushed', section: SECTIONS.MAIN },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '12 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_CHOCOLATE_CHIPS, amount: '16 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PEPPERMINT_EXTRACT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CANDY_CANES, amount: '3/4 c', unit: '', additionalDetails: 'crushed', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'microwave' },

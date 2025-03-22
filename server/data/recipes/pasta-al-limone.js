@@ -28,21 +28,21 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...FETTUCCINE_NOODLES, amount: '16 oz', additionalDetails: '', section: NOODLES_SECTION },
+        { ...FETTUCCINE_NOODLES, amount: '16 oz', unit: '', additionalDetails: '', section: NOODLES_SECTION },
         
-        { ...UNSALTED_BUTTER, amount: '4 Tbsp', additionalDetails: '', section: SAUCE_SECTION },
-        { ...LEMON_JUICE, amount: '2 1/2 Tbsp', additionalDetails: '', section: SAUCE_SECTION },
-        { ...LEMON_ZEST, amount: '1 1/4 tsp', additionalDetails: '', section: SAUCE_SECTION },
-        { ...HEAVY_CREAM, amount: '1 1/4 c', additionalDetails: '', section: SAUCE_SECTION },
-        { ...BLACK_PEPPER, amount: '1 tsp', additionalDetails: '', section: SAUCE_SECTION },
-        { ...SALT, amount: '', additionalDetails: 'to taste', section: SAUCE_SECTION },
-        { ...PARMIGIANO_REGGIANO, amount: '1/2 c', additionalDetails: 'grated', section: SAUCE_SECTION },
+        { ...UNSALTED_BUTTER, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
+        { ...LEMON_JUICE, amount: '2 1/2 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
+        { ...LEMON_ZEST, amount: '1 1/4 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
+        { ...HEAVY_CREAM, amount: '1 1/4 c', unit: '', additionalDetails: '', section: SAUCE_SECTION },
+        { ...BLACK_PEPPER, amount: '1 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SAUCE_SECTION },
+        { ...PARMIGIANO_REGGIANO, amount: '1/2 c', unit: '', additionalDetails: 'grated', section: SAUCE_SECTION },
         
         
-        { ...PARMIGIANO_REGGIANO, amount: '', additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
-        { ...LEMON_ZEST, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...BLACK_PEPPER, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...SALT, amount: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...PARMIGIANO_REGGIANO, amount: '', unit: '', additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
+        { ...LEMON_ZEST, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...SALT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

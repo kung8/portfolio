@@ -32,26 +32,26 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BISCOFF_COOKIES, amount: '30', additionalDetails: '', section: SECTIONS.CRUST },
-        { ...SALT, amount: 'pinch', additionalDetails: '', section: SECTIONS.CRUST },
-        { ...UNSALTED_BUTTER, amount: '6 Tbsp', additionalDetails: 'melted', section: SECTIONS.CRUST },
+        { ...BISCOFF_COOKIES, amount: '30', unit: '', additionalDetails: '', section: SECTIONS.CRUST },
+        { ...SALT, amount: 'pinch', unit: '', additionalDetails: '', section: SECTIONS.CRUST },
+        { ...UNSALTED_BUTTER, amount: '6 Tbsp', unit: '', additionalDetails: 'melted', section: SECTIONS.CRUST },
 
-        { ...WHIPPED_CREAM, amount: '3/4 c', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...VANILLA_EXTRACT, amount: 'splash of', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...WHITE_SUGAR, amount: '2 Tbsp', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CREAM_CHEESE, amount: '6 oz', additionalDetails: 'room temperature', section: SECTIONS.FILLING },
-        { ...BISCOFF_BUTTER, amount: '3/4 c', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WHIPPED_CREAM, amount: '3/4 c', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...VANILLA_EXTRACT, amount: 'splash of', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WHITE_SUGAR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CREAM_CHEESE, amount: '6 oz', unit: '', additionalDetails: 'room temperature', section: SECTIONS.FILLING },
+        { ...BISCOFF_BUTTER, amount: '3/4 c', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
 
-        { ...WHIPPED_CREAM, amount: '1/4 c', additionalDetails: '', section: CHOCOLATE_GANACHE },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '2/3 c', additionalDetails: '', section: CHOCOLATE_GANACHE },
+        { ...WHIPPED_CREAM, amount: '1/4 c', unit: '', additionalDetails: '', section: CHOCOLATE_GANACHE },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '2/3 c', unit: '', additionalDetails: '', section: CHOCOLATE_GANACHE },
 
-        { ...COOKIE_BUTTER, amount: '3 Tbsp', additionalDetails: '', section: COOKIE_BUTTER_DRIZZLE },
+        { ...COOKIE_BUTTER, amount: '3 Tbsp', unit: '', additionalDetails: '', section: COOKIE_BUTTER_DRIZZLE },
 
-        { ...WHIPPED_CREAM, amount: '1/2 c', additionalDetails: 'crushed', optional: true, section: WHIPPED_CREAM },
-        { ...VANILLA_EXTRACT, amount: 'splash of', additionalDetails: '', optional: true, section: WHIPPED_CREAM },
-        { ...WHITE_SUGAR, amount: '1 Tbsp', additionalDetails: '', optional: true, section: WHIPPED_CREAM },
+        { ...WHIPPED_CREAM, amount: '1/2 c', unit: '', additionalDetails: 'crushed', optional: true, section: WHIPPED_CREAM },
+        { ...VANILLA_EXTRACT, amount: 'splash of', unit: '', additionalDetails: '', optional: true, section: WHIPPED_CREAM },
+        { ...WHITE_SUGAR, amount: '1 Tbsp', unit: '', additionalDetails: '', optional: true, section: WHIPPED_CREAM },
 
-        { ...BISCOFF_COOKIES, amount: '', additionalDetails: 'crushed', optional: true, section: SECTIONS.TOPPINGS },
+        { ...BISCOFF_COOKIES, amount: '', unit: '', additionalDetails: 'crushed', optional: true, section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'refrigerator' },

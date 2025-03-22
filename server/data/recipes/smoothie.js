@@ -22,12 +22,12 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '2 m',
     ingredients: [
-        { ...ALMOND_MILK, amount: '2 c', additionalDetails: '', optional: false },
-        { ...BANANA, amount: '2', additionalDetails: '', optional: false },
-        { ...FROZEN_BERRIES, amount: '1 c', additionalDetails: '', optional: false },
-        { ...KALE, amount: '1/2 c', additionalDetails: '', optional: false },
-        { ...PLAIN_YOGURT, amount: '1 spoonful of', additionalDetails: '', optional: false },
-        { ...PEANUT_BUTTER, amount: '2 spoonfuls of', additionalDetails: '', optional: false },
+        { ...ALMOND_MILK, amount: '2 c', unit: '', additionalDetails: '', optional: false },
+        { ...BANANA, amount: '2', unit: '', additionalDetails: '', optional: false },
+        { ...FROZEN_BERRIES, amount: '1 c', unit: '', additionalDetails: '', optional: false },
+        { ...KALE, amount: '1/2 c', unit: '', additionalDetails: '', optional: false },
+        { ...PLAIN_YOGURT, amount: '1 spoonful of', unit: '', additionalDetails: '', optional: false },
+        { ...PEANUT_BUTTER, amount: '2 spoonfuls of', unit: '', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'blender' },

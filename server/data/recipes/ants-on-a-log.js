@@ -17,9 +17,9 @@ module.exports = {
     prepTime: '3 m',
     separated: false,
     ingredients: [
-        { ...CELERY, amount: '3 - 4 stalks', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RAISINS, amount: '', additionalDetails: 'topping', section: SECTIONS.MAIN },
-        { ...PEANUT_BUTTER, amount: '', additionalDetails: 'topping', section: SECTIONS.MAIN },
+        { ...CELERY, amount: '3 - 4 stalks', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...RAISINS, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.MAIN },
+        { ...PEANUT_BUTTER, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.MAIN },
     ],
     supplies: [
         { name: 'knife' },

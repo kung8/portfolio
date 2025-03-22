@@ -53,25 +53,25 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...VERMICELLI_RICE_NOODLES, amount: '1 package', additionalDetails: '', section: VERMICELLI_RICE_NOODLES_SECTION },
+        { ...VERMICELLI_RICE_NOODLES, amount: '1 package', unit: '', additionalDetails: '', section: VERMICELLI_RICE_NOODLES_SECTION },
 
-        { ...CARROTS, amount: '1', additionalDetails: 'peeled and thinly sliced', section: VEGETABLES_AND_HERBS_FILLING },
-        { ...CUCUMBER, amount: '1', additionalDetails: 'peeled and thinly sliced', section: VEGETABLES_AND_HERBS_FILLING },
-        { ...MINT_LEAVES, amount: '1 bunch', additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
-        { ...BASIL_LEAVES, amount: '1 bunch', additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
-        { ...CILANTRO, amount: '1 bunch', additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...CARROTS, amount: '1', unit: '', additionalDetails: 'peeled and thinly sliced', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...CUCUMBER, amount: '1', unit: '', additionalDetails: 'peeled and thinly sliced', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...MINT_LEAVES, amount: '1 bunch', unit: '', additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...BASIL_LEAVES, amount: '1 bunch', unit: '', additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...CILANTRO, amount: '1 bunch', unit: '', additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
 
-        { ...PORK, amount: '1/2 lb', additionalDetails: '', section: PORK_SECTION },
+        { ...PORK, amount: '1/2 lb', unit: '', additionalDetails: '', section: PORK_SECTION },
 
-        { ...SHRIMP, amount: '1/2 lb', additionalDetails: 'peeled and deveined', section: SHRIMP_SECTION },
-        { ...VEGETABLE_OIL, amount: '1 Tbsp', additionalDetails: '', section: SHRIMP_SECTION },
+        { ...SHRIMP, amount: '1/2 lb', unit: '', additionalDetails: 'peeled and deveined', section: SHRIMP_SECTION },
+        { ...VEGETABLE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SHRIMP_SECTION },
 
-        { ...SPRING_ROLL_RICE_WRAPPERS, amount: '1 package', additionalDetails: '', section: WRAP_SECTION },
+        { ...SPRING_ROLL_RICE_WRAPPERS, amount: '1 package', unit: '', additionalDetails: '', section: WRAP_SECTION },
 
-        { ...SWEET_CHILI_SAUCE, amount: '3/4 c', additionalDetails: '', section: PEANUT_SAUCE },
-        { ...PEANUT_BUTTER, amount: '1/3 c', additionalDetails: '', section: PEANUT_SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: '1/2 tsp', additionalDetails: '', section: PEANUT_SAUCE },
-        { ...HOISIN_SAUCE, amount: '1/2 tsp', additionalDetails: '', section: PEANUT_SAUCE },
+        { ...SWEET_CHILI_SAUCE, amount: '3/4 c', unit: '', additionalDetails: '', section: PEANUT_SAUCE },
+        { ...PEANUT_BUTTER, amount: '1/3 c', unit: '', additionalDetails: '', section: PEANUT_SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: '1/2 tsp', unit: '', additionalDetails: '', section: PEANUT_SAUCE },
+        { ...HOISIN_SAUCE, amount: '1/2 tsp', unit: '', additionalDetails: '', section: PEANUT_SAUCE },
     ],
     appliances: [
         { name: 'blender' },
