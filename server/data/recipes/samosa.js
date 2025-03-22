@@ -22,7 +22,7 @@ const samosa21 = '../assets/Products/samosa-21.jpeg';
 const samosa22 = '../assets/Products/samosa-22.jpeg';
 const samosa23 = '../assets/Products/samosa-23.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, GHEE, WARM_WATER, CAROM_SEEDS, SALT, GREEN_PEAS, GINGER, SERRANO_PEPPERS, CORIANDER, LEMON_JUICE, CUMIN, GARAM_MASALA, CHILI_POWDER, FENNEL_SEEDS, YUKON_GOLD_POTATOES, AMCHUR_POWDER } = require('./ingredients');
 
 const DOUGH = 'Dough';
@@ -52,27 +52,27 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: '2 c', unit: '', additionalDetails: '', section: DOUGH },
-        { ...CAROM_SEEDS, amount: '3/4 tsp', unit: '', additionalDetails: '', section: DOUGH },
-        { ...SALT, amount: '3/4 tsp', unit: '', additionalDetails: '', section: DOUGH },
-        { ...GHEE, amount: '1/4 c', unit: '', additionalDetails: 'melted', section: DOUGH },
-        { ...WARM_WATER, amount: '6 Tbsp', unit: '', additionalDetails: '', section: DOUGH },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: DOUGH },
+        { ...CAROM_SEEDS, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH },
+        { ...SALT, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH },
+        { ...GHEE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: 'melted', section: DOUGH },
+        { ...WARM_WATER, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: DOUGH },
 
-        { ...YUKON_GOLD_POTATOES, amount: '4 medium', unit: '', additionalDetails: 'peeled and halved', section: POTATO_FILLING },
-        { ...GHEE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: POTATO_FILLING },
-        { ...CUMIN, amount: '1/2 tsp', unit: '', additionalDetails: '', section: POTATO_FILLING },
-        { ...GINGER, amount: '1 Tbsp', unit: '', additionalDetails: 'minced', section: POTATO_FILLING },
-        { ...SERRANO_PEPPERS, amount: '1 - 2', unit: '', additionalDetails: 'chopped', section: POTATO_FILLING },
-        { ...GREEN_PEAS, amount: '1/2 c', unit: '', additionalDetails: '', section: POTATO_FILLING },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: 'or to taste', section: POTATO_FILLING },
-        { ...CORIANDER, amount: '4 Tbsp', unit: '', additionalDetails: 'chopped', section: POTATO_FILLING },
-        { ...LEMON_JUICE, amount: '1 tsp', unit: '', additionalDetails: '', section: POTATO_FILLING },
+        { ...YUKON_GOLD_POTATOES, amount: 4, unit: UNITS.MEDIUM, additionalDetails: 'peeled and halved', section: POTATO_FILLING },
+        { ...GHEE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: POTATO_FILLING },
+        { ...CUMIN, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: POTATO_FILLING },
+        { ...GINGER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'minced', section: POTATO_FILLING },
+        { ...SERRANO_PEPPERS, amount: 2, unit: '', additionalDetails: 'chopped', section: POTATO_FILLING },
+        { ...GREEN_PEAS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: POTATO_FILLING },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: 'or to taste', section: POTATO_FILLING },
+        { ...CORIANDER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: POTATO_FILLING },
+        { ...LEMON_JUICE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: POTATO_FILLING },
 
-        { ...CHILI_POWDER, amount: '3/4 tsp', unit: '', additionalDetails: '', section: SPICES },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SPICES },
-        { ...GARAM_MASALA, amount: '1 tsp', unit: '', additionalDetails: '', section: SPICES },
-        { ...AMCHUR_POWDER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SPICES },
-        { ...FENNEL_SEEDS, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SPICES },
+        { ...CHILI_POWDER, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...GARAM_MASALA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...AMCHUR_POWDER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...FENNEL_SEEDS, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
     ],
     appliances: [
         { name: 'stove' },

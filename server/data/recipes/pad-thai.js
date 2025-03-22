@@ -17,12 +17,12 @@ const plated3 = '../assets/Products/pad-thai-plated-3.jpeg';
 const rinsing = '../assets/Products/pad-thai-rinsing-noodles.jpeg';
 const sauce = '../assets/Products/pad-thai-sauce.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     GARLIC,
     CHICKEN_BREAST,
-    EGGS,
+    EGG,
     BROWN_SUGAR,
     RICE_WINE_VINEGAR,
     LIME,
@@ -57,22 +57,22 @@ module.exports = {
     cookTime: '50 m',
     separated: true,
     ingredients: [
-        { ...BROWN_RICE_NOODLES, amount: '16 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '9 cloves', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...CHICKEN_BREAST, amount: '1 lb', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '6', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RED_BELL_PEPPERS, amount: '4', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...SRIRACHA_SAUCE, amount: '3 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...FISH_SAUCE, amount: '9 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: '3 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BROWN_SUGAR, amount: '15 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...RICE_WINE_VINEGAR, amount: '6 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...PEANUT_BUTTER, amount: '6 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...UNSALTED_PEANUTS, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...LIME, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...BEAN_SPROUTS, amount: '6 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...CILANTRO, amount: '1 bunch', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...BROWN_RICE_NOODLES, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 9, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...CHICKEN_BREAST, amount: 1, unit: UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...EGG, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...RED_BELL_PEPPERS, amount: 4, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...SRIRACHA_SAUCE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...FISH_SAUCE, amount: 9, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROWN_SUGAR, amount: 15, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...RICE_WINE_VINEGAR, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...PEANUT_BUTTER, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...UNSALTED_PEANUTS, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...LIME, amount: 1, unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
+        { ...BEAN_SPROUTS, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...CILANTRO, amount: 1, unit: UNITS.BUNCH, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },
@@ -97,10 +97,10 @@ module.exports = {
         { step: 'Set aside sauce.', type: SECTIONS.SAUCE },
 
         { step: 'Over medium-high heat, add a little butter to the wok.', type: SECTIONS.EGGS },
-        { step: 'In a medium bowl, beat eggs.', type: SECTIONS.EGGS, img: mixedEggs },
-        { step: 'Pour eggs in wok and cook. Spread the eggs and lift up the edges.', type: SECTIONS.EGGS, img: partialEggs },
-        { step: 'Flip and cook for 30 seconds before turning off heat. Continue to let eggs cook with the residual heat.', type: SECTIONS.EGGS, img: cookedEggs },
-        { step: 'Remove the eggs from wok and cut eggs into thin strips.', type: SECTIONS.EGGS, img: strips },
+        { step: 'In a medium bowl, beat eggs.', type: SECTIONS.EGG, img: mixedEggs },
+        { step: 'Pour eggs in wok and cook. Spread the eggs and lift up the edges.', type: SECTIONS.EGG, img: partialEggs },
+        { step: 'Flip and cook for 30 seconds before turning off heat. Continue to let eggs cook with the residual heat.', type: SECTIONS.EGG, img: cookedEggs },
+        { step: 'Remove the eggs from wok and cut eggs into thin strips.', type: SECTIONS.EGG, img: strips },
 
         { step: 'In the wok, mix together noodles, chicken, and vegetables.', type: SECTIONS.MAIN, img: mixed },
         { step: 'Add eggs.', type: SECTIONS.MAIN, img: mixedNoSauce },

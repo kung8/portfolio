@@ -15,7 +15,7 @@ const pot = '../assets/Products/bao-steamer-over-pot.jpeg';
 // const steamer = '../assets/Products/bao-steamer.jpeg';
 const water = '../assets/Products/bao-water.jpeg';
 const withFilling = '../assets/Products/bao-with-filling.jpeg';
-const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS, UNITS } = require("./constants");
 const {
     YEAST,
     WARM_WATER,
@@ -26,7 +26,7 @@ const {
     BAKING_POWDER,
     GROUND_PORK,
     CHINESE_SAUSAGE,
-    EGGS,
+    EGG,
     MUSHROOMS,
     OYSTER_SAUCE,
     GARLIC,
@@ -47,23 +47,23 @@ module.exports = {
     cookTime: '25 m',
     separated: true,
     ingredients: [
-        { ...YEAST, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WARM_WATER, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WHITE_SUGAR, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
 
-        { ...WARM_WATER, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WHITE_SUGAR, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...BREAD_FLOUR, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...CORNSTARCH, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...VEGETABLE_OIL, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...BAKING_POWDER, amount: '2 1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BREAD_FLOUR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...CORNSTARCH, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...VEGETABLE_OIL, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BAKING_POWDER, amount: 5 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
 
-        { ...GROUND_PORK, amount: '1/2 lb', unit: '', additionalDetails: 'cooked', section: SECTIONS.FILLING },
-        { ...CHINESE_SAUSAGE, amount: '2 sticks', unit: '', additionalDetails: 'sliced', section: SECTIONS.FILLING },
-        { ...EGGS, amount: '5', unit: '', additionalDetails: 'hard-boiled', section: SECTIONS.FILLING },
-        { ...MUSHROOMS, amount: 'handful', unit: '', additionalDetails: 'minced', section: SECTIONS.FILLING },
-        { ...OYSTER_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...GARLIC, amount: '2 cloves', unit: '', additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...GROUND_PORK, amount: 1 / 2, unit: UNITS.POUND, additionalDetails: 'cooked', section: SECTIONS.FILLING },
+        { ...CHINESE_SAUSAGE, amount: 2, unit: UNITS.STICK, additionalDetails: 'sliced', section: SECTIONS.FILLING },
+        { ...EGG, amount: 5, unit: '', additionalDetails: 'hard-boiled', section: SECTIONS.FILLING },
+        { ...MUSHROOMS, amount: 1, unit: UNITS.HANDFUL, additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...OYSTER_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.FILLING },
     ],
     appliances: [
         { name: 'stove' },

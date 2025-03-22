@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { ANGEL_HAIR_PASTA, OLIVE_OIL, YELLOW_ONION, GARLIC, ROMA_TOMATO, BALSAMIC_VINEGAR, CHICKEN_BROTH, RED_PEPPER_FLAKES, BLACK_PEPPER, BASIL_LEAVES, PARMESAN_CHEESE } = require('./ingredients');
 
 const PASTA = 'Pasta';
@@ -28,17 +28,17 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ANGEL_HAIR_PASTA, amount: '16 oz', unit: '', additionalDetails: '', section: PASTA },
-        { ...OLIVE_OIL, amount: '1/4 c', unit: '', additionalDetails: '', section: TOMATO_SAUCE },
-        { ...YELLOW_ONION, amount: '1/2 small', unit: '', additionalDetails: 'chopped', section: TOMATO_SAUCE },
-        { ...GARLIC, amount: '4 cloves', unit: '', additionalDetails: 'minced', section: TOMATO_SAUCE },
-        { ...ROMA_TOMATO, amount: '2 c', unit: '', additionalDetails: 'diced', section: TOMATO_SAUCE },
-        { ...BALSAMIC_VINEGAR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: TOMATO_SAUCE },
-        { ...CHICKEN_BROTH, amount: '10.75 oz', unit: '', additionalDetails: '', section: TOMATO_SAUCE },
+        { ...ANGEL_HAIR_PASTA, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', section: PASTA },
+        { ...OLIVE_OIL, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: TOMATO_SAUCE },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.SMALL, additionalDetails: 'chopped', section: TOMATO_SAUCE },
+        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', section: TOMATO_SAUCE },
+        { ...ROMA_TOMATO, amount: 2, unit: UNITS.CUP, additionalDetails: 'diced', section: TOMATO_SAUCE },
+        { ...BALSAMIC_VINEGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: TOMATO_SAUCE },
+        { ...CHICKEN_BROTH, amount: 10.75, unit: UNITS.OUNCE, additionalDetails: '', section: TOMATO_SAUCE },
         { ...RED_PEPPER_FLAKES, amount: '', unit: '', additionalDetails: 'to taste', section: TOMATO_SAUCE },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: TOMATO_SAUCE },
-        { ...BASIL_LEAVES, amount: '2 Tbsp', unit: '', additionalDetails: 'chopped', section: TOMATO_SAUCE },
-        { ...PARMESAN_CHEESE, amount: '1/4 c', unit: '', additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
+        { ...BASIL_LEAVES, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: TOMATO_SAUCE },
+        { ...PARMESAN_CHEESE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

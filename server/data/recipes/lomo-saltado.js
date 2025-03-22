@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
 const { BEEF_SIRLOIN, LIGHT_SOY_SAUCE, GARLIC, OYSTER_SAUCE, RED_WINE_VINEGAR, AJI_AMARILLO_PASTE, CORNSTARCH, RED_ONION, ROMA_TOMATO, GREEN_ONIONS, VEGETABLE_OIL, CILANTRO, WHITE_RICE, FRENCH_FRIES } = require('./ingredients');
 
 const BEEF_SECTION = 'Beef';
@@ -30,20 +30,20 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BEEF_SIRLOIN, amount: '1 lb', unit: '', additionalDetails: 'thinly sliced', section: BEEF_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BEEF_SECTION },
-        { ...GARLIC, amount: '2 cloves', unit: '', additionalDetails: 'minced', section: BEEF_SECTION },
+        { ...BEEF_SIRLOIN, amount: 1, unit: UNITS.POUND, additionalDetails: 'thinly sliced', section: BEEF_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: BEEF_SECTION },
 
-        { ...LIGHT_SOY_SAUCE, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...OYSTER_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...RED_WINE_VINEGAR, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...AJI_AMARILLO_PASTE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...CORNSTARCH, amount: '1 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...OYSTER_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...RED_WINE_VINEGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...AJI_AMARILLO_PASTE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
 
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '', section: STIR_FRY },
-        { ...RED_ONION, amount: '1 medium', unit: '', additionalDetails: 'thinly sliced', section: STIR_FRY },
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: 'minced', section: STIR_FRY },
-        { ...ROMA_TOMATO, amount: '3', unit: '', additionalDetails: 'thinly sliced', section: STIR_FRY },
+        { ...RED_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: 'thinly sliced', section: STIR_FRY },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: STIR_FRY },
+        { ...ROMA_TOMATO, amount: 3, unit: '', additionalDetails: 'thinly sliced', section: STIR_FRY },
 
         { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },

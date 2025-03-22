@@ -10,6 +10,7 @@ const {
     ALL_PURPOSE_FLOUR,
     WARM_WATER,
 } = require('./ingredients');
+const { UNITS } = require('./constants');
 
 const CREATING_STARTER = 'Creating Starter';
 const FEEDING_STARTER = 'Feeding Starter';
@@ -26,10 +27,10 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: '3 1/2 c', unit: '', additionalDetails: 'divided', section: CREATING_STARTER },
-        { ...WARM_WATER, amount: '1 3/4 c', unit: '', additionalDetails: 'divided', section: CREATING_STARTER },
-        { ...ALL_PURPOSE_FLOUR, amount: '1/2 c', unit: '', additionalDetails: '', section: FEEDING_STARTER },
-        { ...WARM_WATER, amount: '1/4 c', unit: '', additionalDetails: '', section: FEEDING_STARTER },
+        { ...ALL_PURPOSE_FLOUR, amount: 7 / 2, unit: UNITS.CUP, additionalDetails: 'divided', section: CREATING_STARTER },
+        { ...WARM_WATER, amount: 7 / 4, unit: UNITS.CUP, additionalDetails: 'divided', section: CREATING_STARTER },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: FEEDING_STARTER },
+        { ...WARM_WATER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: FEEDING_STARTER },
     ],
     supplies: [
         { name: 'jar' },

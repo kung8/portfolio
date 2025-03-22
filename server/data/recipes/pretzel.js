@@ -11,7 +11,7 @@ const formed = '../assets/Products/pretzels-formed.jpeg';
 // const oven = '../assets/Products/pretzels-in-oven.jpeg';
 const raw = '../assets/Products/pretzels-on-baking-sheet-raw.jpeg';
 const rope = '../assets/Products/pretzels-rope.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS } = require("./constants");
 const {
     WARM_WATER,
     YEAST,
@@ -36,15 +36,15 @@ module.exports = {
     cookTime: '15 m',
     separated: true,
     ingredients: [
-        { ...WARM_WATER, amount: '1 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...YEAST, amount: '2 1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...BROWN_SUGAR, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: 'melted', section: SECTIONS.DOUGH },
-        { ...ALL_PURPOSE_FLOUR, amount: '4 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: 9 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BROWN_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.DOUGH },
+        { ...ALL_PURPOSE_FLOUR, amount: 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...COARSE_SALT, amount: '', unit: '', additionalDetails: 'sprinkling', section: SECTIONS.DOUGH },
-        { ...BAKING_SODA, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WARM_WATER, amount: '9 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_SODA, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: 9, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

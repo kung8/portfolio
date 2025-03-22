@@ -9,7 +9,7 @@ const pan = '../assets/Products/snickerdoodle-dough-in-pan.jpeg';
 const cooked = '../assets/Products/snickerdoodle-cooked.jpeg';
 const plated1 = '../assets/Products/snickerdoodle-plated-1.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
     CREAM_OF_TARTAR,
@@ -17,7 +17,7 @@ const {
     SALT,
     UNSALTED_BUTTER,
     WHITE_SUGAR,
-    EGGS,
+    EGG,
     VANILLA_EXTRACT,
     CINNAMON,
 } = require('./ingredients');
@@ -42,16 +42,16 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: '2 3/4 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...CREAM_OF_TARTAR, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...BAKING_SODA, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...UNSALTED_BUTTER, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WHITE_SUGAR, amount: '1 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WHITE_SUGAR, amount: '1/3 c', unit: '', additionalDetails: '', section: COATING },
-        { ...CINNAMON, amount: '2 Tbsp', unit: '', additionalDetails: '', section: COATING },
+        { ...ALL_PURPOSE_FLOUR, amount: 11 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...CREAM_OF_TARTAR, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BAKING_SODA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: COATING },
+        { ...CINNAMON, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: COATING },
     ],
     appliances: [
         { name: 'oven' },

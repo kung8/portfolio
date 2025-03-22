@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
 const { BEEF_CHUCK_ROAST, AVOCADO_OIL, SALT, BLACK_PEPPER, RED_ONION, GARLIC, BEEF_BROTH, TOMATO_PASTE, APPLE_CIDER_VINEGAR, CUMIN, OREGANO, CINNAMON_STICK, BAY_LEAVES, SMOKED_PAPRIKA, GINGER, CORIANDER, GUAJILLO_CHILI_PEPPERS, CHIPOTLE_PEPPERS_IN_ADOBO, FIRE_ROASTED_DICED_TOMATOES, FLOUR_TORTILLA, LIME, CILANTRO, WHITE_ONION, OAXACAN_CHEESE } = require('./ingredients');
 
 const BIRRIA_FILLING = 'Birria Filling';
@@ -28,28 +28,28 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BEEF_CHUCK_ROAST, amount: '2 - 3 lbs', unit: '', additionalDetails: 'boneless', section: BIRRIA_FILLING },
-        { ...AVOCADO_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
+        { ...BEEF_CHUCK_ROAST, amount: 3, unit: UNITS.POUND, additionalDetails: 'boneless', section: BIRRIA_FILLING },
+        { ...AVOCADO_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIRRIA_FILLING },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: BIRRIA_FILLING },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: BIRRIA_FILLING },
-        { ...GUAJILLO_CHILI_PEPPERS, amount: '4', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
+        { ...GUAJILLO_CHILI_PEPPERS, amount: 4, unit: '', additionalDetails: '', section: BIRRIA_FILLING },
         { ...CHIPOTLE_PEPPERS_IN_ADOBO, amount: '5 - 6', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
-        { ...RED_ONION, amount: '1 small', unit: '', additionalDetails: 'thinly sliced', section: BIRRIA_FILLING },
-        { ...GARLIC, amount: '8 cloves', unit: '', additionalDetails: 'smashed', section: BIRRIA_FILLING },
-        { ...BEEF_BROTH, amount: '32 oz', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
-        { ...TOMATO_PASTE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
-        { ...FIRE_ROASTED_DICED_TOMATOES, amount: '1 - 14.5 oz', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
-        { ...APPLE_CIDER_VINEGAR, amount: '1/4 c', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
-        { ...CUMIN, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
-        { ...OREGANO, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
-        { ...CINNAMON_STICK, amount: '1', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
-        { ...BAY_LEAVES, amount: '3', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
-        { ...SMOKED_PAPRIKA, amount: '1 tsp', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
-        { ...GINGER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
-        { ...CORIANDER, amount: '1 tsp', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
+        { ...RED_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'thinly sliced', section: BIRRIA_FILLING },
+        { ...GARLIC, amount: 8, unit: UNITS.CLOVE, additionalDetails: 'smashed', section: BIRRIA_FILLING },
+        { ...BEEF_BROTH, amount: 32, unit: UNITS.OUNCE, additionalDetails: '', section: BIRRIA_FILLING },
+        { ...TOMATO_PASTE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIRRIA_FILLING },
+        { ...FIRE_ROASTED_DICED_TOMATOES, amount: 14.5, unit: UNITS.OUNCE, additionalDetails: '', section: BIRRIA_FILLING },
+        { ...APPLE_CIDER_VINEGAR, amount: 1/4, unit: UNITS.CUP, additionalDetails: '', section: BIRRIA_FILLING },
+        { ...CUMIN, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIRRIA_FILLING },
+        { ...OREGANO, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIRRIA_FILLING },
+        { ...CINNAMON_STICK, amount: 1, unit: '', additionalDetails: '', section: BIRRIA_FILLING },
+        { ...BAY_LEAVES, amount: 3, unit: '', additionalDetails: '', section: BIRRIA_FILLING },
+        { ...SMOKED_PAPRIKA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BIRRIA_FILLING },
+        { ...GINGER, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: BIRRIA_FILLING },
+        { ...CORIANDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BIRRIA_FILLING },
 
         { ...FLOUR_TORTILLA, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...LIME, amount: '1', unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
+        { ...LIME, amount: 1, unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
         { ...CILANTRO, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...WHITE_ONION, amount: '', unit: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
         { ...OAXACAN_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },

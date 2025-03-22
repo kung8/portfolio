@@ -18,9 +18,9 @@ const peaks = '../assets/Products/chocolate-mousse-stiff-peaks.jpeg';
 const topped = '../assets/Products/chocolate-mousse-topped.jpeg';
 const whipped = '../assets/Products/chocolate-mousse-whipped-cream.jpeg';
 const yolkInCream = '../assets/Products/chocolate-mousse-yolk-in-cream.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const {
-    EGGS,
+    EGG,
     UNSALTED_BUTTER,
     WHITE_SUGAR,
     HEAVY_CREAM,
@@ -50,13 +50,13 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...EGGS, amount: '3', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HEAVY_CREAM, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: '3 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...DARK_COOKING_CHOCOLATE, amount: '4 oz', unit: '', additionalDetails: '', section: CHOCOLATE },
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: CHOCOLATE },
-        { ...HEAVY_CREAM, amount: '1/2 c', unit: '', additionalDetails: '', section: WHIPPED_CREAM },
-        { ...WHITE_SUGAR, amount: '3 Tbsp', unit: '', additionalDetails: '', section: WHIPPED_CREAM },
+        { ...EGG, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HEAVY_CREAM, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...DARK_COOKING_CHOCOLATE, amount: 4, unit: UNITS.OUNCE, additionalDetails: '', section: CHOCOLATE },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHOCOLATE },
+        { ...HEAVY_CREAM, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: WHIPPED_CREAM },
+        { ...WHITE_SUGAR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: WHIPPED_CREAM },
         { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '', unit: '', additionalDetails: 'finely chopped', section: SECTIONS.TOPPINGS },
         { ...RASPBERRIES, amount: '', unit: '', additionalDetails: 'washed', section: SECTIONS.TOPPINGS },
     ],

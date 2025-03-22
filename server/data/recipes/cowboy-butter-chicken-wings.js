@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { CHICKEN_WINGS, SALT, BLACK_PEPPER, UNSALTED_BUTTER, PARSLEY, CHIVES, GARLIC, DIJON_MUSTARD, LEMON_JUICE, SMOKED_PAPRIKA, CAYENNE_PEPPER } = require('./ingredients');
 
 const CHICKEN_SECTION = 'Chicken';
@@ -31,18 +31,18 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHICKEN_WINGS, amount: '2 lbs', unit: '', additionalDetails: '', section: CHICKEN_SECTION },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: CHICKEN_SECTION },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: CHICKEN_SECTION },
-        { ...UNSALTED_BUTTER, amount: '4 Tbsp', unit: '', additionalDetails: 'melted', section: COWBOY_BUTTER },
-        { ...PARSLEY, amount: '1 Tbsp', unit: '', additionalDetails: 'finely chopped', section: COWBOY_BUTTER },
-        { ...CHIVES, amount: '1 Tbsp', unit: '', additionalDetails: 'finely chopped', section: COWBOY_BUTTER },
-        { ...GARLIC, amount: '1 clove', unit: '', additionalDetails: 'minced', section: COWBOY_BUTTER },
-        { ...DIJON_MUSTARD, amount: '1 tsp', unit: '', additionalDetails: '', section: COWBOY_BUTTER },
-        { ...LEMON_JUICE, amount: '1 tsp', unit: '', additionalDetails: '', section: COWBOY_BUTTER },
-        { ...SMOKED_PAPRIKA, amount: '1 tsp', unit: '', additionalDetails: '', section: COWBOY_BUTTER },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: COWBOY_BUTTER },
-        { ...CAYENNE_PEPPER, amount: '1/8 tsp', unit: '', additionalDetails: '', section: COWBOY_BUTTER },
+        { ...CHICKEN_WINGS, amount: 2, unit: UNITS.POUND, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: COWBOY_BUTTER },
+        { ...PARSLEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'finely chopped', section: COWBOY_BUTTER },
+        { ...CHIVES, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'finely chopped', section: COWBOY_BUTTER },
+        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: COWBOY_BUTTER },
+        { ...DIJON_MUSTARD, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: COWBOY_BUTTER },
+        { ...LEMON_JUICE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: COWBOY_BUTTER },
+        { ...SMOKED_PAPRIKA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: COWBOY_BUTTER },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: COWBOY_BUTTER },
+        { ...CAYENNE_PEPPER, amount: 1 / 8, unit: UNITS.TEASPOON, additionalDetails: '', section: COWBOY_BUTTER },
     ],
     appliances: [
         { name: 'oven' },

@@ -1,6 +1,6 @@
 const pigsInABlanket = '../assets/Products/pigs-in-a-blanket.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
-const { CROISSANT_DOUGH, EGGS, MINI_HOT_DOG } = require('./ingredients');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS , UNITS } = require('./constants');
+const { CROISSANT_DOUGH, EGG, MINI_HOT_DOG } = require('./ingredients');
 
 module.exports = {
     cardName: 'Pigs In A Blanket',
@@ -14,9 +14,9 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '15 m',
     ingredients: [
-        { ...CROISSANT_DOUGH, amount: '2 can of', unit: '', additionalDetails: '', optional: false },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', optional: false },
-        { ...MINI_HOT_DOG, amount: '14 oz', unit: '', additionalDetails: '', optional: false },
+        { ...CROISSANT_DOUGH, amount: 2, unit: UNITS.CAN, additionalDetails: '', optional: false },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', optional: false },
+        { ...MINI_HOT_DOG, amount: 14, unit: UNITS.OUNCE, additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'oven' },

@@ -1,9 +1,9 @@
 const hamburger = '../assets/Products/hamburger.jpeg';
-const { CATEGORIES, SECTIONS, TYPES, GENRES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, SECTIONS, TYPES, GENRES, METHODS, PROTEIN, UNITS } = require('./constants');
 const {
     BREADCRUMBS,
     CHEDDAR_CHEESE,
-    EGGS,
+    EGG,
     GROUND_TURKEY,
     HAMBURGER_BUNS,
     YELLOW_ONION,
@@ -29,16 +29,16 @@ module.exports = {
     cookTime: '50 m',
     separated: true,
     ingredients: [
-        { ...GROUND_TURKEY, amount: '3 lbs', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GROUND_TURKEY, amount: 3, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...BREADCRUMBS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: '1/4 medium', unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...HAMBURGER_BUNS, amount: '8', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...RED_ONION, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...YELLOW_ONION, amount: 1 / 4, unit: UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...HAMBURGER_BUNS, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...RED_ONION, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...PICKLES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...ROMA_TOMATO, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...SPINACH, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...CHEDDAR_CHEESE, amount: '8', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...CHEDDAR_CHEESE, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...MUSHROOMS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

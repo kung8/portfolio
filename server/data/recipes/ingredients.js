@@ -611,8 +611,8 @@ const INGREDIENTS = {
         },
         COFFEE_CREAMER: { name: 'coffee creamer', category: INGREDIENT_CATEGORY.DAIRY },
         DOUBLE_CRUST_PIE_CRUST: { name: 'double crust pie crust', category: INGREDIENT_CATEGORY.DAIRY },
-        EGGS: {
-            name: 'eggs', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1587486913049-53fc88980cfc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY2NzE0fA&ixlib=rb-4.0.3&q=80&w=400"
+        EGG: {
+            name: 'egg', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1587486913049-53fc88980cfc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY2NzE0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         EGG_WHITES: {
             name: 'egg whites', category: INGREDIENT_CATEGORY.DAIRY, img: "https://plus.unsplash.com/premium_photo-1713463857946-dc906a2450a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MDI0fA&ixlib=rb-4.0.3&q=80&w=400"

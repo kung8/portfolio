@@ -10,8 +10,8 @@ const stuffing13 = '../assets/Products/stuffing-13.jpeg';
 const stuffing14 = '../assets/Products/stuffing-14.jpeg';
 const stuffing15 = '../assets/Products/stuffing-15.jpeg';
 const stuffing16 = '../assets/Products/stuffing-16.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { BREAD, UNSALTED_BUTTER, SWEET_ONION, CELERY, GARLIC, SALT, BLACK_PEPPER, FRESH_SAGE, FRESH_ROSEMARY, PARSLEY, CHICKEN_BROTH, EGGS } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
+const { BREAD, UNSALTED_BUTTER, SWEET_ONION, CELERY, GARLIC, SALT, BLACK_PEPPER, FRESH_SAGE, FRESH_ROSEMARY, PARSLEY, CHICKEN_BROTH, EGG } = require('./ingredients');
 
 module.exports = {
     cardName: 'Stuffing',
@@ -30,18 +30,18 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...BREAD, amount: '18 - 24 oz / 1.5 loaves stale', unit: '', additionalDetails: 'cubed', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SWEET_ONION, amount: '3 c', unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...CELERY, amount: '2 c', unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '6 cloves', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '1 tsp', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...FRESH_SAGE, amount: '3 Tbsp', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...FRESH_ROSEMARY, amount: '3 Tbsp', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...PARSLEY, amount: '3 Tbsp', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...CHICKEN_BROTH, amount: '2 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BREAD, amount: 24, unit: UNITS.OUNCE, additionalDetails: 'cubed', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SWEET_ONION, amount: 3, unit: UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...CELERY, amount: 2, unit: UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 6, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...FRESH_SAGE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...FRESH_ROSEMARY, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...PARSLEY, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...CHICKEN_BROTH, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

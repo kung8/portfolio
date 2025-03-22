@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { HEAVY_CREAM, EGGS, LEMON_ZEST, SALT, CAYENNE_PEPPER, NUTMEG, BREAD, COOKED_HAM, UNSALTED_BUTTER, SWISS_CHEESE } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { HEAVY_CREAM, EGG, LEMON_ZEST, SALT, CAYENNE_PEPPER, NUTMEG, BREAD, COOKED_HAM, UNSALTED_BUTTER, SWISS_CHEESE } = require('./ingredients');
 
 const BATTER_SECTION = 'Batter';
 const SANDWICH_SECTION = 'Sandwich';
@@ -30,18 +30,18 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...HEAVY_CREAM, amount: '1/2 c', unit: '', additionalDetails: '', section: BATTER_SECTION },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: BATTER_SECTION },
-        { ...LEMON_ZEST, amount: '1 tsp', unit: '', additionalDetails: '', section: BATTER_SECTION },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: BATTER_SECTION },
-        { ...CAYENNE_PEPPER, amount: '1 pinch', unit: '', additionalDetails: '', section: BATTER_SECTION },
-        { ...NUTMEG, amount: '1 pinch', unit: '', additionalDetails: '', section: BATTER_SECTION },
+        { ...HEAVY_CREAM, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: BATTER_SECTION },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: BATTER_SECTION },
+        { ...LEMON_ZEST, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BATTER_SECTION },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BATTER_SECTION },
+        { ...CAYENNE_PEPPER, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: BATTER_SECTION },
+        { ...NUTMEG, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: BATTER_SECTION },
 
-        { ...BREAD, amount: '4 slices', unit: '', additionalDetails: '', section: SANDWICH_SECTION },
-        { ...SWISS_CHEESE, amount: '8 slices', unit: '', additionalDetails: '', section: SANDWICH_SECTION },
-        { ...COOKED_HAM, amount: '4 oz', unit: '', additionalDetails: 'sliced', section: SANDWICH_SECTION },
-        { ...UNSALTED_BUTTER, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SANDWICH_SECTION },
-        { ...CAYENNE_PEPPER, amount: '2 pinches', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...BREAD, amount: 4, unit: UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
+        { ...SWISS_CHEESE, amount: 8, unit: UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
+        { ...COOKED_HAM, amount: 4, unit: UNITS.OUNCE, additionalDetails: 'sliced', section: SANDWICH_SECTION },
+        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SANDWICH_SECTION },
+        { ...CAYENNE_PEPPER, amount: 2, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'toaster' },

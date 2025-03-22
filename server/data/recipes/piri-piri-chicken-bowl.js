@@ -10,7 +10,7 @@ const bowl9 = '../assets/Products/piri-piri-chicken-bowl-9.jpeg';
 const bowl10 = '../assets/Products/piri-piri-chicken-bowl-10.jpeg';
 const bowl11 = '../assets/Products/piri-piri-chicken-bowl-11.jpeg';
 const bowl12 = '../assets/Products/piri-piri-chicken-bowl-12.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { CHICKEN_THIGH, OLIVE_OIL, LEMON_JUICE, GARLIC, THAI_CHILI_PEPPERS, BROWN_SUGAR, OREGANO, SWEET_PAPRIKA, CAYENNE_PEPPER, SALT, CORN, BABY_ARUGULA, AVOCADO, BLACK_PEPPER, VEGETABLE_OIL, BASMATI_RICE, CHICKEN_BROTH, CRUSHED_TOMATOES, SMOKED_PAPRIKA, BAY_LEAVES, CILANTRO, NANDOS_PERI_PERI_SAUCE, MAYONNAISE, DIJON_MUSTARD, HOT_SAUCE, CHIVES } = require('./ingredients');
 
 const CHICKEN_SECTION = 'Chicken';
@@ -50,44 +50,44 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHICKEN_THIGH, amount: '6', unit: '', additionalDetails: 'bone-in', section: CHICKEN_SECTION },
-        { ...OLIVE_OIL, amount: '2 Tbp', unit: '', additionalDetails: '', section: MARINADE_SECTION },
-        { ...LEMON_JUICE, amount: '1 to 2 Tbsp', unit: '', additionalDetails: '', section: MARINADE_SECTION },
-        { ...GARLIC, amount: '3', unit: '', additionalDetails: 'minced', section: MARINADE_SECTION },
-        { ...THAI_CHILI_PEPPERS, amount: '1', unit: '', additionalDetails: '', section: MARINADE_SECTION },
-        { ...BROWN_SUGAR, amount: '1 Tbsp', unit: '', additionalDetails: '', section: MARINADE_SECTION },
-        { ...OREGANO, amount: '1 tsp', unit: '', additionalDetails: '', section: MARINADE_SECTION },
-        { ...SWEET_PAPRIKA, amount: '1 tsp', unit: '', additionalDetails: '', section: MARINADE_SECTION },
-        { ...CAYENNE_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: MARINADE_SECTION },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: MARINADE_SECTION },
+        { ...CHICKEN_THIGH, amount: 6, unit: UNITS.PIECE, additionalDetails: 'bone-in', section: CHICKEN_SECTION },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: MARINADE_SECTION },
+        { ...LEMON_JUICE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: MARINADE_SECTION },
+        { ...GARLIC, amount: 3, unit: '', additionalDetails: 'minced', section: MARINADE_SECTION },
+        { ...THAI_CHILI_PEPPERS, amount: 1, unit: '', additionalDetails: '', section: MARINADE_SECTION },
+        { ...BROWN_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: MARINADE_SECTION },
+        { ...OREGANO, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: MARINADE_SECTION },
+        { ...SWEET_PAPRIKA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: MARINADE_SECTION },
+        { ...CAYENNE_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: MARINADE_SECTION },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: MARINADE_SECTION },
 
-        { ...CORN, amount: '2 to 3 ears of', unit: '', additionalDetails: '', section: CORN_SECTION },
+        { ...CORN, amount: 3, unit: UNITS.EAR, additionalDetails: '', section: CORN_SECTION },
         { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: CORN_SECTION },
 
         { ...BABY_ARUGULA, amount: '', unit: '', additionalDetails: '', section: SALAD_SECTION },
-        { ...AVOCADO, amount: 'ripe', unit: '', additionalDetails: 'sliced', section: SALAD_SECTION },
-        { ...LEMON_JUICE, amount: '1 to 2 Tbsp', unit: '', additionalDetails: '', section: SALAD_SECTION },
+        { ...AVOCADO, amount: 1, unit: '', additionalDetails: 'sliced', section: SALAD_SECTION },
+        { ...LEMON_JUICE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SALAD_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: '', section: SALAD_SECTION },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SALAD_SECTION },
 
-        { ...BASMATI_RICE, amount: '1.5 c', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...VEGETABLE_OIL, amount: '1.5 Tbsp', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...GARLIC, amount: '3', unit: '', additionalDetails: 'minced', section: RICE_SECTION },
-        { ...CHICKEN_BROTH, amount: '3 c', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...CRUSHED_TOMATOES, amount: '3/4 c', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...NANDOS_PERI_PERI_SAUCE, amount: '1.5 Tbsp', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...SMOKED_PAPRIKA, amount: '3/4 tsp', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...BAY_LEAVES, amount: '1.5', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...SALT, amount: '1.5 tsp', unit: '', additionalDetails: '', section: RICE_SECTION },
+        { ...BASMATI_RICE, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: RICE_SECTION },
+        { ...VEGETABLE_OIL, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: RICE_SECTION },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: RICE_SECTION },
+        { ...CHICKEN_BROTH, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: RICE_SECTION },
+        { ...CRUSHED_TOMATOES, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: RICE_SECTION },
+        { ...NANDOS_PERI_PERI_SAUCE, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: RICE_SECTION },
+        { ...SMOKED_PAPRIKA, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: RICE_SECTION },
+        { ...BAY_LEAVES, amount: 1, unit: '', additionalDetails: '', section: RICE_SECTION },
+        { ...SALT, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: RICE_SECTION },
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'chopped', section: RICE_SECTION },
 
-        { ...MAYONNAISE, amount: '1/2 c', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...GARLIC, amount: '1', unit: '', additionalDetails: 'minced', section: SAUCE_SECTION },
-        { ...DIJON_MUSTARD, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...HOT_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...LEMON_JUICE, amount: '2 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...CAYENNE_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
+        { ...MAYONNAISE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
+        { ...GARLIC, amount: 1, unit: '', additionalDetails: 'minced', section: SAUCE_SECTION },
+        { ...DIJON_MUSTARD, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...HOT_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...LEMON_JUICE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...CAYENNE_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
         { ...CHIVES, amount: '', unit: '', additionalDetails: 'diced', section: SAUCE_SECTION },
     ],
     appliances: [

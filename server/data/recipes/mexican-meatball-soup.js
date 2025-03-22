@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { VINE_TOMATOES, WHITE_ONION, GARLIC, VEGETABLE_OIL, CHICKEN_BROTH, CILANTRO, SALT, GROUND_BEEF, BREAD, MILK, EGGS, BLACK_PEPPER, GARLIC_POWDER, WHITE_RICE, ZUCCHINI } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { VINE_TOMATOES, WHITE_ONION, GARLIC, VEGETABLE_OIL, CHICKEN_BROTH, CILANTRO, SALT, GROUND_BEEF, BREAD, MILK, EGG, BLACK_PEPPER, GARLIC_POWDER, WHITE_RICE, ZUCCHINI } = require('./ingredients');
 
 const TOMATO_BROTH = 'Tomato Broth';
 const MEATBALLS = 'Meatballs';
@@ -30,23 +30,23 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...WHITE_RICE, amount: '1 c', unit: '', additionalDetails: '', section: MEATBALLS },
-        { ...GROUND_BEEF, amount: '1 lb', unit: '', additionalDetails: '', section: MEATBALLS },
-        { ...ZUCCHINI, amount: '1', unit: '', additionalDetails: 'grated', section: MEATBALLS },
-        { ...WHITE_ONION, amount: '1/4 medium', unit: '', additionalDetails: 'chopped', section: MEATBALLS },
-        { ...EGGS, amount: '1', unit: '', additionalDetails: 'beaten', section: MEATBALLS },
-        { ...GARLIC_POWDER, amount: '1/3 tsp', unit: '', additionalDetails: '', section: MEATBALLS },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: MEATBALLS },
+        { ...WHITE_RICE, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: MEATBALLS },
+        { ...GROUND_BEEF, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: MEATBALLS },
+        { ...ZUCCHINI, amount: 1, unit: '', additionalDetails: 'grated', section: MEATBALLS },
+        { ...WHITE_ONION, amount: 1 / 4, unit: UNITS.MEDIUM, additionalDetails: 'chopped', section: MEATBALLS },
+        { ...EGG, amount: 1, unit: '', additionalDetails: 'beaten', section: MEATBALLS },
+        { ...GARLIC_POWDER, amount: 1 / 3, unit: UNITS.TEASPOON, additionalDetails: '', section: MEATBALLS },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: MEATBALLS },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: MEATBALLS },
 
 
-        { ...VINE_TOMATOES, amount: '1 lb', unit: '', additionalDetails: '', section: TOMATO_BROTH },
-        { ...GARLIC, amount: '1 clove', unit: '', additionalDetails: '', section: TOMATO_BROTH },
-        { ...VEGETABLE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: TOMATO_BROTH },
-        { ...WHITE_ONION, amount: '1/4 medium', unit: '', additionalDetails: '', section: TOMATO_BROTH },
-        { ...CHICKEN_BROTH, amount: '4 c', unit: '', additionalDetails: '', section: TOMATO_BROTH },
+        { ...VINE_TOMATOES, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: TOMATO_BROTH },
+        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: '', section: TOMATO_BROTH },
+        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: TOMATO_BROTH },
+        { ...WHITE_ONION, amount: 1 / 4, unit: UNITS.MEDIUM, additionalDetails: '', section: TOMATO_BROTH },
+        { ...CHICKEN_BROTH, amount: 4, unit: UNITS.CUP, additionalDetails: '', section: TOMATO_BROTH },
 
-        { ...CILANTRO, amount: '1/2 c', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...CILANTRO, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

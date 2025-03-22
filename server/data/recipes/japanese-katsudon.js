@@ -5,13 +5,13 @@ const onion = '../assets/Products/chicken-katsudon-onion.jpeg';
 const mirin = '../assets/Products/chicken-katsudon-onion-in-mirin.jpeg';
 const layered = '../assets/Products/chicken-katsudon-layered.jpeg';
 const finished = '../assets/Products/chicken-katsudon-finished.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
 const {
     BONELESS_PORK_CHOPS,
     SALT,
     BLACK_PEPPER,
     ALL_PURPOSE_FLOUR,
-    EGGS,
+    EGG,
     PANKO_BREADCRUMBS,
     VEGETABLE_OIL,
     CHICKEN_BROTH,
@@ -41,20 +41,20 @@ module.exports = {
         { label: 'Katsudon', link: 'https://thewoksoflife.com/katsudon/' }
     ],
     ingredients: [
-        { ...BONELESS_PORK_CHOPS, amount: '10', unit: '', additionalDetails: 'pounded flat', section: SECTIONS.MAIN },
+        { ...BONELESS_PORK_CHOPS, amount: 10, unit: '', additionalDetails: 'pounded flat', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '15', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PANKO_BREADCRUMBS, amount: '5 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG, amount: 15, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PANKO_BREADCRUMBS, amount: 5, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: SECTIONS.MAIN },
-        { ...CHICKEN_BROTH, amount: '2 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: '10 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LIGHT_SOY_SAUCE, amount: '5 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MIRIN, amount: '10 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: '5 medium', unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
-        { ...JASMINE_RICE, amount: '5 c', unit: '', additionalDetails: 'steamed', section: SECTIONS.MAIN },
-        { ...GREEN_ONIONS, amount: '5', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...CHICKEN_BROTH, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 10, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LIGHT_SOY_SAUCE, amount: 5, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MIRIN, amount: 10, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 5, unit: UNITS.MEDIUM, additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
+        { ...JASMINE_RICE, amount: 5, unit: UNITS.CUP, additionalDetails: 'steamed', section: SECTIONS.MAIN },
+        { ...GREEN_ONIONS, amount: 5, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

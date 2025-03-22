@@ -11,8 +11,8 @@ const oyakodon10 = '../assets/Products/oyakodon-10.jpeg';
 const oyakodon11 = '../assets/Products/oyakodon-11.jpeg';
 const oyakodon12 = '../assets/Products/oyakodon-12.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHAOXING_WINE, EGGS, DASHI, LIGHT_SOY_SAUCE, MIRIN, WHITE_SUGAR, SHORT_GRAINED_RICE, GREEN_ONIONS } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHAOXING_WINE, EGG, DASHI, LIGHT_SOY_SAUCE, MIRIN, WHITE_SUGAR, SHORT_GRAINED_RICE, GREEN_ONIONS } = require('./ingredients');
 
 const SEASONING = 'Seasoning';
 const COOK_RICE = 'Cook Rice';
@@ -40,16 +40,16 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...YELLOW_ONION, amount: '1 small', unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: '10 oz', unit: '', additionalDetails: 'thin strips', section: SECTIONS.MAIN },
-        { ...SHAOXING_WINE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '4', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 10, unit: UNITS.OUNCE, additionalDetails: 'thin strips', section: SECTIONS.MAIN },
+        { ...SHAOXING_WINE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
 
-        { ...DASHI, amount: '1/2 c', unit: '', additionalDetails: '', section: SEASONING },
-        { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SEASONING },
-        { ...MIRIN, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SEASONING },
-        { ...WHITE_SUGAR, amount: '2 tsp', unit: '', additionalDetails: '', section: SEASONING },
+        { ...DASHI, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SEASONING },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SEASONING },
+        { ...MIRIN, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SEASONING },
+        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SEASONING },
 
         { ...SHORT_GRAINED_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],

@@ -7,7 +7,7 @@ const basil7 = '../assets/Products/thai-basil-7.jpeg';
 const basil8 = '../assets/Products/thai-basil-8.jpeg';
 const basil9 = '../assets/Products/thai-basil-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { CHICKEN_BROTH, OYSTER_SAUCE, LIGHT_SOY_SAUCE, FISH_SAUCE, WHITE_SUGAR, BROWN_SUGAR, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHALLOTS, GARLIC, THAI_CHILI_PEPPERS, BASIL_LEAVES, JASMINE_RICE } = require('./ingredients');
 
 module.exports = {
@@ -29,21 +29,21 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHICKEN_BROTH, amount: '1/3 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...OYSTER_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...FISH_SAUCE, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHITE_SUGAR, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BROWN_SUGAR, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CHICKEN_BROTH, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OYSTER_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...FISH_SAUCE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROWN_SUGAR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { ...VEGETABLE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: '1 lb', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...SHALLOTS, amount: '1/4 c', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '4 cloves', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...THAI_CHILI_PEPPERS, amount: '2 Tbsp', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...BASIL_LEAVES, amount: '1 c', unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 1, unit: UNITS.POUND, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...SHALLOTS, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...THAI_CHILI_PEPPERS, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...BASIL_LEAVES, amount: 1, unit: UNITS.CUP, additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
 
-        { ...JASMINE_RICE, amount: '2 c cooked', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
+        { ...JASMINE_RICE, amount: 2, unit: UNITS.CUP, additionalDetails: 'cooked', section: SECTIONS.SERVE },
     ],
     appliances: [
         { name: 'stove' },

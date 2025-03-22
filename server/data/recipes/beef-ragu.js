@@ -8,7 +8,7 @@ const ragu7 = '../assets/Products/beef-ragu-7.jpeg';
 const ragu8 = '../assets/Products/beef-ragu-8.jpeg';
 const ragu9 = '../assets/Products/beef-ragu-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
 const { BEEF_CHUCK_ROAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CARROTS, CELERY, CRUSHED_TOMATOES, TOMATO_PASTE, BEEF_BROTH, RED_WINE, WARM_WATER, THYME, BAY_LEAVES, YELLOW_ONION, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY } = require('./ingredients');
 
 const BEEF_SECTION = 'Beef';
@@ -36,25 +36,25 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BEEF_CHUCK_ROAST, amount: '2 1/2 lb', unit: '', additionalDetails: 'cut into 4 pieces', section: BEEF_SECTION },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: BEEF_SECTION },
+        { ...BEEF_CHUCK_ROAST, amount: 5 / 2, unit: UNITS.POUND, additionalDetails: 'cut into 4 pieces', section: BEEF_SECTION },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF_SECTION },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: BEEF_SECTION },
-        { ...OLIVE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BEEF_SECTION },
+        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
 
-        { ...OLIVE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: RAGU_SECTION },
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: 'minced', section: RAGU_SECTION },
-        { ...YELLOW_ONION, amount: '1 small', unit: '', additionalDetails: 'diced', section: RAGU_SECTION },
-        { ...CARROTS, amount: '1 c', unit: '', additionalDetails: 'diced', section: RAGU_SECTION },
-        { ...CELERY, amount: '1 c', unit: '', additionalDetails: 'diced', section: RAGU_SECTION },
-        { ...CRUSHED_TOMATOES, amount: '28 oz', unit: '', additionalDetails: '', section: RAGU_SECTION },
-        { ...TOMATO_PASTE, amount: '3 Tbsp', unit: '', additionalDetails: '', section: RAGU_SECTION },
-        { ...BEEF_BROTH, amount: '2 c', unit: '', additionalDetails: '', section: RAGU_SECTION },
-        { ...RED_WINE, amount: '1 c', unit: '', additionalDetails: '', section: RAGU_SECTION },
-        { ...WARM_WATER, amount: '1 1/2 c', unit: '', additionalDetails: '', section: RAGU_SECTION },
-        { ...THYME, amount: '3/4 tsp', unit: '', additionalDetails: '', section: RAGU_SECTION },
-        { ...BAY_LEAVES, amount: '3', unit: '', additionalDetails: '', section: RAGU_SECTION },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: RAGU_SECTION },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: RAGU_SECTION },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'diced', section: RAGU_SECTION },
+        { ...CARROTS, amount: 1, unit: UNITS.CUP, additionalDetails: 'diced', section: RAGU_SECTION },
+        { ...CELERY, amount: 1, unit: UNITS.CUP, additionalDetails: 'diced', section: RAGU_SECTION },
+        { ...CRUSHED_TOMATOES, amount: 28, unit: UNITS.OUNCE, additionalDetails: '', section: RAGU_SECTION },
+        { ...TOMATO_PASTE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: RAGU_SECTION },
+        { ...BEEF_BROTH, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: RAGU_SECTION },
+        { ...RED_WINE, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: RAGU_SECTION },
+        { ...WARM_WATER, amount: 1.5, unit: UNITS.CUP, additionalDetails: '', section: RAGU_SECTION },
+        { ...THYME, amount: 3/4, unit: UNITS.TEASPOON, additionalDetails: '', section: RAGU_SECTION },
+        { ...BAY_LEAVES, amount: 3, unit: '', additionalDetails: '', section: RAGU_SECTION },
 
-        { ...PAPPARDELLE_NOODLES, amount: '1 lb', unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...PAPPARDELLE_NOODLES, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.NOODLES },
         { ...PARMESAN_CHEESE, amount: '', unit: '', additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
         { ...PARSLEY, amount: '', unit: '', additionalDetails: 'finely chopped', section: SECTIONS.TOPPINGS },
     ],

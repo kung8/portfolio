@@ -6,7 +6,7 @@ const tetrazzini5 = '../assets/Products/chicken-tetrazzini-5.jpeg';
 const tetrazzini6 = '../assets/Products/chicken-tetrazzini-6.jpeg';
 const tetrazzini7 = '../assets/Products/chicken-tetrazzini-7.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { SPAGHETTI_NOODLES, ROTISSERIE_CHICKEN, CREAM_OF_MUSHROOM, SOUR_CREAM, CHICKEN_BROTH, UNSALTED_BUTTER, PARMESAN_CHEESE, SALT, BLACK_PEPPER, ONION_POWDER, GARLIC_POWDER, CAYENNE_PEPPER, MOZZARELLA_CHEESE, PARSLEY } = require('./ingredients');
 
 const PREP_CASSEROLE = 'Prep Casserole';
@@ -22,7 +22,7 @@ module.exports = {
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
-    protein: [PROTEIN.CHICKEN], 
+    protein: [PROTEIN.CHICKEN],
     type: [TYPES.CASSEROLE],
     yields: '8 servings',
     prepTime: '10 m',
@@ -32,20 +32,20 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...SPAGHETTI_NOODLES, amount: '15 oz', unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...ROTISSERIE_CHICKEN, amount: '3 c', unit: '', additionalDetails: 'shredded', section: SECTIONS.SAUCE },
-        { ...CREAM_OF_MUSHROOM, amount: '43 oz', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SOUR_CREAM, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...CHICKEN_BROTH, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...UNSALTED_BUTTER, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...PARMESAN_CHEESE, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...ONION_POWDER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC_POWDER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...CAYENNE_PEPPER, amount: '1/8 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...MOZZARELLA_CHEESE, amount: '2 c', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
-        { ...PARSLEY, amount: '1 Tbsp', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...SPAGHETTI_NOODLES, amount: 15, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...ROTISSERIE_CHICKEN, amount: 3, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.SAUCE },
+        { ...CREAM_OF_MUSHROOM, amount: 43, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SOUR_CREAM, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CHICKEN_BROTH, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...PARMESAN_CHEESE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...ONION_POWDER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC_POWDER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CAYENNE_PEPPER, amount: 1 / 8, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...MOZZARELLA_CHEESE, amount: 2, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
+        { ...PARSLEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

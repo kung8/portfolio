@@ -11,7 +11,7 @@ const curry16 = '../assets/Products/yellow-curry-16.jpeg';
 const curry17 = '../assets/Products/yellow-curry-17.jpeg';
 const curry18 = '../assets/Products/yellow-curry-18.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { OLIVE_OIL, YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_BREAST, YUKON_GOLD_POTATOES, CARROTS, YELLOW_CURRY_PASTE, GINGER, GARLIC, COCONUT_MILK, CORNSTARCH, FISH_SAUCE, LIME_JUICE, BROWN_SUGAR, CILANTRO, SRIRACHA_SAUCE } = require('./ingredients');
 
 const YELLOW_CURRY_SECTION = 'Yellow Curry';
@@ -36,19 +36,19 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...OLIVE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...YELLOW_ONION, amount: '1 small', unit: '', additionalDetails: 'chopped', section: YELLOW_CURRY_SECTION },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '1 lb', unit: '', additionalDetails: 'cut into thin slices (2 inches long)', section: YELLOW_CURRY_SECTION },
-        { ...YUKON_GOLD_POTATOES, amount: '2', unit: '', additionalDetails: '1/2 inch cubes', section: YELLOW_CURRY_SECTION },
-        { ...CARROTS, amount: '1', unit: '', additionalDetails: 'thinly sliced', section: YELLOW_CURRY_SECTION },
-        { ...YELLOW_CURRY_PASTE, amount: '4 Tbsp', unit: '', additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...GINGER, amount: '2 tsp', unit: '', additionalDetails: 'grated', section: YELLOW_CURRY_SECTION },
-        { ...GARLIC, amount: '2 cloves', unit: '', additionalDetails: 'minced', section: YELLOW_CURRY_SECTION },
-        { ...COCONUT_MILK, amount: '27 oz', unit: '', additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...CORNSTARCH, amount: '2 tsp', unit: '', additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...FISH_SAUCE, amount: '1 tsp', unit: '', additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...LIME_JUICE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...BROWN_SUGAR, amount: '1 1/2 Tbsp', unit: '', additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'chopped', section: YELLOW_CURRY_SECTION },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 1, unit: UNITS.POUND, additionalDetails: 'cut into thin slices (2 inches long)', section: YELLOW_CURRY_SECTION },
+        { ...YUKON_GOLD_POTATOES, amount: 2, unit: '', additionalDetails: '1/2 inch cubes', section: YELLOW_CURRY_SECTION },
+        { ...CARROTS, amount: 1, unit: '', additionalDetails: 'thinly sliced', section: YELLOW_CURRY_SECTION },
+        { ...YELLOW_CURRY_PASTE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...GINGER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: 'grated', section: YELLOW_CURRY_SECTION },
+        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: YELLOW_CURRY_SECTION },
+        { ...COCONUT_MILK, amount: 27, unit: UNITS.OUNCE, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...CORNSTARCH, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...FISH_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...LIME_JUICE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...BROWN_SUGAR, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...SRIRACHA_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],

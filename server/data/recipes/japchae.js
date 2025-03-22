@@ -1,6 +1,6 @@
 // const japchae1 = '../assets/Products/japchae-1.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { KOREAN_GLASS_NOODLES, EGGS, CARROTS, RED_BELL_PEPPERS, YELLOW_ONION, GREEN_ONIONS, GARLIC, SHIITAKE_MUSHROOMS, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPERS } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { KOREAN_GLASS_NOODLES, EGG, CARROTS, RED_BELL_PEPPERS, YELLOW_ONION, GREEN_ONIONS, GARLIC, SHIITAKE_MUSHROOMS, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPERS } = require('./ingredients');
 
 const NOODLES_SECTION = 'Noodles';
 const EGG_SECTION = 'Eggs';
@@ -35,31 +35,31 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...KOREAN_GLASS_NOODLES, amount: '8 oz', unit: '', additionalDetails: '', section: NOODLES_SECTION },
+        { ...KOREAN_GLASS_NOODLES, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: NOODLES_SECTION },
 
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: EGG_SECTION },
-        { ...SESAME_OIL, amount: '1 tsp', unit: '', additionalDetails: '', section: EGG_SECTION },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: EGG_SECTION },
+        { ...SESAME_OIL, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: EGG_SECTION },
 
-        { ...SESAME_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: FIRST_VEGGIES_SECTION },
-        { ...CARROTS, amount: '1', unit: '', additionalDetails: 'julienned', section: FIRST_VEGGIES_SECTION },
-        { ...RED_BELL_PEPPERS, amount: '1/2', unit: '', additionalDetails: 'thinly sliced', section: FIRST_VEGGIES_SECTION },
-        { ...ORANGE_BELL_PEPPERS, amount: '1/2', unit: '', additionalDetails: 'thinly sliced', section: FIRST_VEGGIES_SECTION },
+        { ...SESAME_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: FIRST_VEGGIES_SECTION },
+        { ...CARROTS, amount: 1, unit: '', additionalDetails: 'julienned', section: FIRST_VEGGIES_SECTION },
+        { ...RED_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'thinly sliced', section: FIRST_VEGGIES_SECTION },
+        { ...ORANGE_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'thinly sliced', section: FIRST_VEGGIES_SECTION },
 
-        { ...SESAME_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECOND_VEGGIES_SECTION },
-        { ...YELLOW_ONION, amount: '1 small', unit: '', additionalDetails: 'sliced', section: SECOND_VEGGIES_SECTION },
-        { ...GREEN_ONIONS, amount: '2', unit: '', additionalDetails: 'chopped', section: SECOND_VEGGIES_SECTION },
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: 'minced', section: SECOND_VEGGIES_SECTION },
-        { ...SHIITAKE_MUSHROOMS, amount: '4', unit: '', additionalDetails: 'sliced', section: SECOND_VEGGIES_SECTION },
+        { ...SESAME_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECOND_VEGGIES_SECTION },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'sliced', section: SECOND_VEGGIES_SECTION },
+        { ...GREEN_ONIONS, amount: 2, unit: '', additionalDetails: 'chopped', section: SECOND_VEGGIES_SECTION },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECOND_VEGGIES_SECTION },
+        { ...SHIITAKE_MUSHROOMS, amount: 4, unit: '', additionalDetails: 'sliced', section: SECOND_VEGGIES_SECTION },
 
-        { ...SPINACH, amount: '1 c', unit: '', additionalDetails: '', section: SECOND_VEGGIES_SECTION },
-        { ...SALT, amount: 'pinch', unit: '', additionalDetails: '', section: SECOND_VEGGIES_SECTION },
+        { ...SPINACH, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECOND_VEGGIES_SECTION },
+        { ...SALT, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: SECOND_VEGGIES_SECTION },
 
-        { ...LIGHT_SOY_SAUCE, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...SESAME_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...BROWN_SUGAR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...SESAME_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...BROWN_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
 
-        { ...SESAME_SEEDS, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...SESAME_SEEDS, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

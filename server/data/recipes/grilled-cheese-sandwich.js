@@ -5,7 +5,7 @@ const grilled4 = '../assets/Products/grilled-cheese-sandwich-4.jpeg';
 const grilled5 = '../assets/Products/grilled-cheese-sandwich-5.jpeg';
 const grilled6 = '../assets/Products/grilled-cheese-sandwich-6.jpeg';
 const grilled7 = '../assets/Products/grilled-cheese-sandwich-7.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
 const { BREAD, UNSALTED_BUTTER, CHEDDAR_CHEESE } = require('./ingredients');
 
 const GRILL_CHEESE = 'Grill Cheese';
@@ -28,9 +28,9 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BREAD, amount: '2 slices of', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '1.5 Tbsp', unit: '', additionalDetails: 'divided', section: SECTIONS.MAIN },
-        { ...CHEDDAR_CHEESE, amount: '1 slices', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BREAD, amount: 2, unit: UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },
+        { ...CHEDDAR_CHEESE, amount: 1, unit: UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

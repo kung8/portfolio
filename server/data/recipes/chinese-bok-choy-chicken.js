@@ -12,7 +12,7 @@ const plated = '../assets/Products/bok-choy-plated.jpeg';
 const sauce = '../assets/Products/bok-choy-sauce.jpeg';
 const zoomed = '../assets/Products/bok-choy-zoomed.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, METHODS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, METHODS, UNITS } = require("./constants");
 const {
     CHICKEN_BREAST,
     BABY_BOK_CHOY,
@@ -39,10 +39,10 @@ module.exports = {
     cookTime: '40 m',
     separated: true,
     ingredients: [
-        { ...CHICKEN_BREAST, amount: '2', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...BABY_BOK_CHOY, amount: '1 lb', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...BABY_BOK_CHOY, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: 'for wok', section: SECTIONS.MAIN },

@@ -10,7 +10,7 @@ const rawZoomed = '../assets/Products/pao-de-queijo-mixer-zoomed.jpeg';
 const raw = '../assets/Products/pao-de-queijo-mixer.jpeg';
 // const first = '../assets/Products/pao-de-queijo-zoomed-cheeseballs.jpeg';
 const plated = '../assets/Products/pao-de-queijo-plated.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const {
     TAPIOCA_STARCH,
     MILK,
@@ -18,7 +18,7 @@ const {
     VEGETABLE_OIL,
     PARMESAN_CHEESE,
     MOZZARELLA_CHEESE,
-    EGGS,
+    EGG,
     SALT,
 } = require('./ingredients');
 
@@ -40,14 +40,14 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...TAPIOCA_STARCH, amount: '4 c', unit: '', additionalDetails: 'plus some for thickening', section: SECTIONS.MAIN },
-        { ...MILK, amount: '1 1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WARM_WATER, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...TAPIOCA_STARCH, amount: 4, unit: UNITS.CUP, additionalDetails: 'plus some for thickening', section: SECTIONS.MAIN },
+        { ...MILK, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '6 Tbsp', section: SECTIONS.MAIN },
-        { ...PARMESAN_CHEESE, amount: '1 1/2 c', unit: '', additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { ...MOZZARELLA_CHEESE, amount: '1 c', unit: '', additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PARMESAN_CHEESE, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...MOZZARELLA_CHEESE, amount: 1, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
 const { BACON, LETTUCE, ROMA_TOMATO, BREAD, MAYONNAISE } = require('./ingredients');
 
 const COOK_BACON = 'Cook Bacon';
@@ -25,11 +25,11 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BACON, amount: '4 slices', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LETTUCE, amount: '2 leaves', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ROMA_TOMATO, amount: '2 slices', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BREAD, amount: '2 slices', unit: '', additionalDetails: 'toasted', section: SECTIONS.MAIN },
-        { ...MAYONNAISE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BACON, amount: 4, unit: UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LETTUCE, amount: 2, unit: UNITS.LEAF, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ROMA_TOMATO, amount: 2, unit: UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BREAD, amount: 2, unit: UNITS.SLICE, additionalDetails: 'toasted', section: SECTIONS.MAIN },
+        { ...MAYONNAISE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

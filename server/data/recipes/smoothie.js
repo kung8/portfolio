@@ -1,5 +1,5 @@
 const smoothie = '../assets/Products/smoothie.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
 const {
     ALMOND_MILK,
     BANANA,
@@ -22,12 +22,12 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '2 m',
     ingredients: [
-        { ...ALMOND_MILK, amount: '2 c', unit: '', additionalDetails: '', optional: false },
-        { ...BANANA, amount: '2', unit: '', additionalDetails: '', optional: false },
-        { ...FROZEN_BERRIES, amount: '1 c', unit: '', additionalDetails: '', optional: false },
-        { ...KALE, amount: '1/2 c', unit: '', additionalDetails: '', optional: false },
-        { ...PLAIN_YOGURT, amount: '1 spoonful of', unit: '', additionalDetails: '', optional: false },
-        { ...PEANUT_BUTTER, amount: '2 spoonfuls of', unit: '', additionalDetails: '', optional: false },
+        { ...ALMOND_MILK, amount: 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...BANANA, amount: 2, unit: '', additionalDetails: '', optional: false },
+        { ...FROZEN_BERRIES, amount: 1, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...KALE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...PLAIN_YOGURT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...PEANUT_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'blender' },

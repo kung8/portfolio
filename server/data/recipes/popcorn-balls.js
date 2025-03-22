@@ -7,7 +7,7 @@ const mixed = '../assets/Products/popcorn-balls-unmelted-mixed.jpeg';
 const unmeltedZoomed = '../assets/Products/popcorn-balls-unmelted-zoomed.jpeg';
 const baggiesZoomed = '../assets/Products/popcorn-ball-in-baggies-zoomed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { POPCORN, CORN_SYRUP, UNSALTED_BUTTER, COLD_WATER, POWDERED_SUGAR, MINI_MARSHMALLOWS, COOKING_SPRAY } = require('./ingredients');
 
 module.exports = {
@@ -27,12 +27,12 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...POPCORN, amount: '5 quarts', unit: '', additionalDetails: 'plain', section: SECTIONS.MAIN },
-        { ...CORN_SYRUP, amount: '3/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COLD_WATER, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...POWDERED_SUGAR, amount: '2 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MINI_MARSHMALLOWS, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...POPCORN, amount: 5, unit: UNITS.QUART, additionalDetails: 'plain', section: SECTIONS.MAIN },
+        { ...CORN_SYRUP, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COLD_WATER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...POWDERED_SUGAR, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MINI_MARSHMALLOWS, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [

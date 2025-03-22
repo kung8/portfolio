@@ -1,5 +1,5 @@
 const alfredo = '../assets/Products/chicken-alfredo.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
 const {
     RED_BELL_PEPPERS,
     YELLOW_ONION,
@@ -29,15 +29,15 @@ module.exports = {
     prepTime: '8 - 10 m',
     cookTime: '30 - 40 m',
     ingredients: [
-        { ...FETTUCCINE_NOODLES, amount: '12 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FETTUCCINE_NOODLES, amount: 12, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RED_BELL_PEPPERS, amount: '2', unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: '1/2 medium', unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...CHICKEN_BREAST, amount: '2', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...HEAVY_CREAM, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...NUTMEG, amount: '2 pinches', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PARMESAN_CHEESE, amount: '1 1/2 c', unit: '', additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...RED_BELL_PEPPERS, amount: 2, unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...HEAVY_CREAM, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...NUTMEG, amount: 2, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PARMESAN_CHEESE, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],

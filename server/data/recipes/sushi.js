@@ -1,5 +1,5 @@
 const sushi = '../assets/Products/sushi.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
 const {
     SEAWEED,
     SUSHI_RICE,
@@ -36,21 +36,22 @@ module.exports = {
     cookTime: '15 m',
     separated: true,
     ingredients: [
-        { ...SEAWEED, amount: '8 sheets', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SUSHI_RICE, amount: '4 c', unit: '', additionalDetails: 'cooled to room temperature', section: SECTIONS.RICE },
-        { ...WHITE_VINEGAR, amount: '7 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.RICE },
-        { ...WHITE_SUGAR, amount: '7 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.RICE },
-        { ...SALT, amount: '1 Tbsp + 1 tsp', unit: '', additionalDetails: '', section: SECTIONS.RICE },
-        { ...AVOCADO, amount: '2', unit: '', additionalDetails: 'sliced', section: SECTIONS.FILLING },
-        { ...CUCUMBER, amount: '1', unit: '', additionalDetails: 'sliced', section: SECTIONS.FILLING },
-        { ...IMITATION_CRAB, amount: '8 oz', unit: '', additionalDetails: 'sliced', section: SECTIONS.FILLING },
-        { ...TEMPURA_SHRIMP, amount: '8 oz', unit: '', additionalDetails: 'cooked', section: SECTIONS.FILLING },
-        { ...CREAM_CHEESE, amount: '8 oz', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...SALMON_FISH, amount: '8 oz', unit: '', additionalDetails: 'sliced', section: SECTIONS.FILLING },
-        { ...LEMON, amount: '1', unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.FILLING },
+        { ...SEAWEED, amount: 8, unit: UNITS.SHEET, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SUSHI_RICE, amount: 4, unit: UNITS.CUP, additionalDetails: 'cooled to room temperature', section: SECTIONS.RICE },
+        { ...WHITE_VINEGAR, amount: 7, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.RICE },
+        { ...WHITE_SUGAR, amount: 7, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.RICE },
+        { ...SALT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.RICE },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.RICE },
+        { ...AVOCADO, amount: 2, unit: '', additionalDetails: 'sliced', section: SECTIONS.FILLING },
+        { ...CUCUMBER, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.FILLING },
+        { ...IMITATION_CRAB, amount: 8, unit: UNITS.OUNCE, additionalDetails: 'sliced', section: SECTIONS.FILLING },
+        { ...TEMPURA_SHRIMP, amount: 8, unit: UNITS.OUNCE, additionalDetails: 'cooked', section: SECTIONS.FILLING },
+        { ...CREAM_CHEESE, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALMON_FISH, amount: 8, unit: UNITS.OUNCE, additionalDetails: 'sliced', section: SECTIONS.FILLING },
+        { ...LEMON, amount: 1, unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.FILLING },
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...WASABI, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...PONZU_SAUCE, amount: '1', unit: '', additionalDetails: 'sliced', section: SECTIONS.SAUCE },
+        { ...PONZU_SAUCE, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.SAUCE },
         { ...LIGHT_SOY_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     supplies: [

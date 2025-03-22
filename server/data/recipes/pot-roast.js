@@ -1,5 +1,5 @@
 const roast = '../assets/Products/roast.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, UNITS } = require("./constants");
 const {
     BEEF_ROAST,
     BLACK_PEPPER,
@@ -29,16 +29,16 @@ module.exports = {
         { label: 'Pot Roast', link: 'https://www.foodnetwork.com/recipes/ina-garten/pot-roast-recipe-1941651' }
     ],
     ingredients: [
-        { ...BEEF_ROAST, amount: '3 lb', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '2 sprigs', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BEEF_ROAST, amount: 3, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 2, unit: UNITS.SPRIG, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: '2 medium', unit: '', additionalDetails: 'quartered', section: SECTIONS.MAIN },
-        { ...CARROTS, amount: '8', unit: '', additionalDetails: 'cut into 2"', section: SECTIONS.MAIN },
-        { ...RED_WINE_VINEGAR, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BEEF_BROTH, amount: '3 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...FRESH_ROSEMARY, amount: '2', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...FRESH_THYME, amount: '2 sprigs', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 2, unit: UNITS.MEDIUM, additionalDetails: 'quartered', section: SECTIONS.MAIN },
+        { ...CARROTS, amount: 8, unit: '', additionalDetails: 'cut into 2"', section: SECTIONS.MAIN },
+        { ...RED_WINE_VINEGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BEEF_BROTH, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRESH_ROSEMARY, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRESH_THYME, amount: 2, unit: UNITS.SPRIG, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

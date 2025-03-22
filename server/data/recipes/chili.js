@@ -10,7 +10,7 @@ const pot6 = '../assets/Products/chili-in-pot-6.jpeg';
 const pot7 = '../assets/Products/chili-in-pot-7.jpeg';
 const plated3 = '../assets/Products/chili-plated-3.jpeg';
 const plated4 = '../assets/Products/chili-plated-4.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
 const {
     GROUND_BEEF,
     YELLOW_ONION,
@@ -53,19 +53,19 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '45 m',
     ingredients: [
-        { ...GROUND_BEEF, amount: '2 lbs', unit: '', additionalDetails: '', section: BEEF },
-        { ...YELLOW_ONION, amount: '1 large', unit: '', additionalDetails: 'diced', section: BEEF },
-        { ...JALAPENO_PEPPERS, amount: '1 - 3', unit: '', additionalDetails: 'diced', section: BEEF },
-        { ...GARLIC, amount: '4 cloves', unit: '', additionalDetails: 'minced', section: BEEF },
-        { ...CHILI_POWDER, amount: '2 1/2 Tbsp', unit: '', additionalDetails: '', section: BEEF },
-        { ...CUMIN, amount: '1 tsp', unit: '', additionalDetails: '', section: VEGGIES },
-        { ...RED_BELL_PEPPERS, amount: '1', unit: '', additionalDetails: 'diced', section: VEGGIES },
-        { ...CRUSHED_TOMATOES, amount: '14.5 oz can', unit: '', additionalDetails: '', section: VEGGIES },
-        { ...KIDNEY_BEANS, amount: '20 oz', unit: '', additionalDetails: 'drained and rinsed', section: VEGGIES },
-        { ...DICED_TOMATO, amount: '14.5 oz can', unit: '', additionalDetails: '', section: VEGGIES },
-        { ...BEEF_BROTH, amount: '3 c', unit: '', additionalDetails: '', section: VEGGIES },
-        { ...TOMATO_PASTE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: VEGGIES },
-        { ...BROWN_SUGAR, amount: '1 Tbsp', unit: '', additionalDetails: '', section: VEGGIES },
+        { ...GROUND_BEEF, amount: 2, unit: UNITS.POUND, additionalDetails: '', section: BEEF },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.LARGE, additionalDetails: 'diced', section: BEEF },
+        { ...JALAPENO_PEPPERS, amount: 3, unit: '', additionalDetails: 'diced', section: BEEF },
+        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', section: BEEF },
+        { ...CHILI_POWDER, amount: 5 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF },
+        { ...CUMIN, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: VEGGIES },
+        { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES },
+        { ...CRUSHED_TOMATOES, amount: 14.5, unit: UNITS.OUNCE, additionalDetails: '', section: VEGGIES },
+        { ...KIDNEY_BEANS, amount: 20, unit: UNITS.OUNCE, additionalDetails: 'drained and rinsed', section: VEGGIES },
+        { ...DICED_TOMATO, amount: 14.5, unit: UNITS.OUNCE, additionalDetails: '', section: VEGGIES },
+        { ...BEEF_BROTH, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: VEGGIES },
+        { ...TOMATO_PASTE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES },
+        { ...BROWN_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: VEGGIES },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: VEGGIES },
         { ...CHEDDAR_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },

@@ -1,7 +1,7 @@
 const rolls1 = '../assets/Products/dinner-rolls-1.jpeg';
 const rolls2 = '../assets/Products/dinner-rolls-2.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { YEAST, LUKEWARM_WATER, WHITE_SUGAR, VEGETABLE_OIL, EGGS, ALL_PURPOSE_FLOUR, SALT } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { YEAST, LUKEWARM_WATER, WHITE_SUGAR, VEGETABLE_OIL, EGG, ALL_PURPOSE_FLOUR, SALT } = require('./ingredients');
 
 const YEAST_MIXTURE = 'Yeast Mixture';
 const SUGAR_MIXTURE = 'Sugar Mixture';
@@ -23,14 +23,14 @@ module.exports = {
     cookTime: '15 m',
     separated: true,
     ingredients: [
-        { ...YEAST, amount: '2 Tbsp', unit: '', additionalDetails: '', section: YEAST_MIXTURE },
-        { ...LUKEWARM_WATER, amount: '1/2 c', unit: '', additionalDetails: '', section: YEAST_MIXTURE },
-        { ...WHITE_SUGAR, amount: '1/2 c', unit: '', additionalDetails: '', section: SUGAR_MIXTURE },
-        { ...VEGETABLE_OIL, amount: '1/2 c', unit: '', additionalDetails: '', section: SUGAR_MIXTURE },
-        { ...LUKEWARM_WATER, amount: '1 c', unit: '', additionalDetails: '', section: SUGAR_MIXTURE },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: EGGS_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: '4 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YEAST, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: YEAST_MIXTURE },
+        { ...LUKEWARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SUGAR_MIXTURE },
+        { ...VEGETABLE_OIL, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SUGAR_MIXTURE },
+        { ...LUKEWARM_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SUGAR_MIXTURE },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: EGGS_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 9 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

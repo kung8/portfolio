@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
 const { GROUND_BEEF, YELLOW_ONION, GREEN_BELL_PEPPERS, CORN, CHILI_POWDER, GARLIC_SALT, CUMIN, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, FLOUR_TORTILLA, LETTUCE, ROMA_TOMATO, REFRIED_BEANS, TACO_SAUCE } = require('./ingredients');
 
 const BEEF = 'Beef';
@@ -34,24 +34,24 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GROUND_BEEF, amount: '1 lb', unit: '', additionalDetails: '', section: BEEF },
+        { ...GROUND_BEEF, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: BEEF },
 
-        { ...YELLOW_ONION, amount: '3/4 c', unit: '', additionalDetails: 'chopped', section: VEGGIES },
-        { ...GREEN_BELL_PEPPERS, amount: '3/4 c', unit: '', additionalDetails: 'diced', section: VEGGIES },
-        { ...CORN, amount: '1 1/2 c', unit: '', additionalDetails: '', section: VEGGIES },
+        { ...YELLOW_ONION, amount: 3/4, unit: UNITS.CUP, additionalDetails: 'chopped', section: VEGGIES },
+        { ...GREEN_BELL_PEPPERS, amount: 3/4, unit: UNITS.CUP, additionalDetails: 'diced', section: VEGGIES },
+        { ...CORN, amount: 1.5, unit: UNITS.CUP, additionalDetails: '', section: VEGGIES },
 
-        { ...TACO_SAUCE, amount: '2 c', unit: '', additionalDetails: '', section: SPICES },
-        { ...CHILI_POWDER, amount: '2 tsp', unit: '', additionalDetails: '', section: SPICES },
-        { ...GARLIC_SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: SPICES },
-        { ...CUMIN, amount: '1 tsp', unit: '', additionalDetails: '', section: SPICES },
+        { ...TACO_SAUCE, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SPICES },
+        { ...CHILI_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...GARLIC_SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...CUMIN, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
 
-        { ...FLOUR_TORTILLA, amount: '8', unit: '', additionalDetails: '', section: TORTILLA_AND_OTHER },
-        { ...REFRIED_BEANS, amount: '16 oz', unit: '', additionalDetails: '', section: TORTILLA_AND_OTHER },
-        { ...MONTEREY_JACK_CHEESE, amount: '16 oz', unit: '', additionalDetails: 'shredded', section: TORTILLA_AND_OTHER },
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: TORTILLA_AND_OTHER },
+        { ...FLOUR_TORTILLA, amount: 8, unit: '', additionalDetails: '', section: TORTILLA_AND_OTHER },
+        { ...REFRIED_BEANS, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', section: TORTILLA_AND_OTHER },
+        { ...MONTEREY_JACK_CHEESE, amount: 16, unit: UNITS.OUNCE, additionalDetails: 'shredded', section: TORTILLA_AND_OTHER },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: TORTILLA_AND_OTHER },
 
         { ...LETTUCE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
-        { ...ROMA_TOMATO, amount: '1', unit: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
+        { ...ROMA_TOMATO, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'oven' },

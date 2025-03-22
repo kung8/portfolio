@@ -1,5 +1,5 @@
 const smores = '../assets/Products/smores.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS , UNITS } = require('./constants');
 const {
     GRAHAM_CRACKER,
     MARSHMALLOW,
@@ -18,9 +18,9 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '5 m',
     ingredients: [
-        { ...GRAHAM_CRACKER, amount: '2', unit: '', additionalDetails: '', optional: false },
-        { ...MARSHMALLOW, amount: '2', unit: '', additionalDetails: '', optional: false },
-        { ...HERSHEY_CHOCOLATE_BAR, amount: '6', unit: '', additionalDetails: '', optional: false },
+        { ...GRAHAM_CRACKER, amount: 2, unit: '', additionalDetails: '', optional: false },
+        { ...MARSHMALLOW, amount: 2, unit: '', additionalDetails: '', optional: false },
+        { ...HERSHEY_CHOCOLATE_BAR, amount: 6, unit: '', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'oven' },

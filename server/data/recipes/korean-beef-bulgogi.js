@@ -4,7 +4,7 @@ const marinade = '../assets/Products/beef-bulgogi-marinade.jpeg';
 // const ziploc = '../assets/Products/beef-bulgogi-marinating-in-ziploc.jpeg';
 const marinating = '../assets/Products/beef-bulgogi-marinating.jpeg';
 const plated = '../assets/Products/beef-bulgogi-plated.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
 const {
     BEEF,
     PEAR,
@@ -38,18 +38,18 @@ module.exports = {
     cookTime: '25 m',
     separated: true,
     ingredients: [
-        { ...BEEF, amount: '3 lbs', unit: '', additionalDetails: 'cubed', section: BEEF_SECTION },
-        { ...PEAR, amount: '1', unit: '', additionalDetails: 'finely diced', section: BEEF_SECTION },
-        { ...SESAME_OIL, amount: '4 Tbsp', unit: '', additionalDetails: '', section: BEEF_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: '1/2 c', unit: '', additionalDetails: '', section: BEEF_SECTION },
-        { ...BROWN_SUGAR, amount: '4 Tbsp', unit: '', additionalDetails: '', section: BEEF_SECTION },
-        { ...GARLIC, amount: '6 cloves', unit: '', additionalDetails: 'minced', section: BEEF_SECTION },
-        { ...GINGER, amount: '2 Tbsp', unit: '', additionalDetails: 'peeled and diced', section: BEEF_SECTION },
-        { ...GOCHUJANG_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: BEEF_SECTION },
-        { ...VEGETABLE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BEEF, amount: 3, unit: UNITS.POUND, additionalDetails: 'cubed', section: BEEF_SECTION },
+        { ...PEAR, amount: 1, unit: '', additionalDetails: 'finely diced', section: BEEF_SECTION },
+        { ...SESAME_OIL, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: BEEF_SECTION },
+        { ...BROWN_SUGAR, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...GARLIC, amount: 6, unit: UNITS.CLOVE, additionalDetails: 'minced', section: BEEF_SECTION },
+        { ...GINGER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: 'peeled and diced', section: BEEF_SECTION },
+        { ...GOCHUJANG_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...VEGETABLE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
-        { ...GREEN_ONIONS, amount: '4', unit: '', additionalDetails: 'sliced', section: SECTIONS.SERVE },
-        { ...SESAME_SEEDS, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
+        { ...GREEN_ONIONS, amount: 4, unit: '', additionalDetails: 'sliced', section: SECTIONS.SERVE },
+        { ...SESAME_SEEDS, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
         { name: 'stove' },

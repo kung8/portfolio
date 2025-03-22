@@ -1,7 +1,7 @@
 const scrambledEggs = '../assets/Products/scrambled-eggs.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, UNITS } = require('./constants');
 const {
-    EGGS,
+    EGG,
     MILK,
     SOUR_CREAM,
     GREEN_BELL_PEPPERS,
@@ -27,14 +27,14 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '12 - 15 m',
     ingredients: [
-        { ...EGGS, amount: '3', unit: '', additionalDetails: '', optional: false },
-        { ...MILK, amount: '1/4 c', unit: '', additionalDetails: '', optional: false },
-        { ...SOUR_CREAM, amount: '1 spoonful', unit: '', additionalDetails: '', optional: false },
-        { ...GREEN_BELL_PEPPERS, amount: '1/8', unit: '', additionalDetails: 'diced', optional: false },
-        { ...YELLOW_ONION, amount: '1/8 medium', unit: '', additionalDetails: 'diced', optional: false },
-        { ...ROMA_TOMATO, amount: '1/8', unit: '', additionalDetails: 'diced', optional: false },
-        { ...COOKED_HAM, amount: '1 slice', unit: '', additionalDetails: 'diced', optional: false },
-        { ...UNSALTED_BUTTER, amount: '1 tsp', unit: '', additionalDetails: '', optional: false },
+        { ...EGG, amount: 3, unit: '', additionalDetails: '', optional: false },
+        { ...MILK, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...SOUR_CREAM, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...GREEN_BELL_PEPPERS, amount: 1 / 8, unit: '', additionalDetails: 'diced', optional: false },
+        { ...YELLOW_ONION, amount: 1 / 8, unit: UNITS.MEDIUM, additionalDetails: 'diced', optional: false },
+        { ...ROMA_TOMATO, amount: 1 / 8, unit: '', additionalDetails: 'diced', optional: false },
+        { ...COOKED_HAM, amount: 1, unit: UNITS.SLICE, additionalDetails: 'diced', optional: false },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...BASIL, amount: '', unit: '', additionalDetails: 'to taste', optional: false },

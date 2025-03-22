@@ -1,7 +1,7 @@
 const breakfastSandwich = '../assets/Products/breakfast-sandwich.jpeg';
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS } = require('./constants');
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS , UNITS } = require('./constants');
 const {
-    EGGS,
+    EGG,
     COOKED_HAM,
     BISCUITS,
     CHEDDAR_CHEESE,
@@ -21,10 +21,10 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '10 m',
     ingredients: [
-        { ...EGGS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COOKED_HAM, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BISCUITS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHEDDAR_CHEESE, amount: '1', unit: '', additionalDetails: 'slice', section: SECTIONS.MAIN },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COOKED_HAM, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BISCUITS, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHEDDAR_CHEESE, amount: 1, unit: '', additionalDetails: 'slice', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

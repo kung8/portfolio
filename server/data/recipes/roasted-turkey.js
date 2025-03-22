@@ -1,6 +1,6 @@
 const plated1 = '../assets/Products/roasted-turkey-plated-1.jpeg';
 const breastDown1 = '../assets/Products/roasted-turkey-breast-side-down-1.jpeg';
-const breastDown3  = '../assets/Products/roasted-turkey-breast-side-down-3.jpeg';
+const breastDown3 = '../assets/Products/roasted-turkey-breast-side-down-3.jpeg';
 const butter = '../assets/Products/roasted-turkey-butter.jpeg';
 const butterball = '../assets/Products/roasted-turkey-butterball.jpeg';
 const cavity1 = '../assets/Products/roasted-turkey-cavity-1.jpeg';
@@ -17,7 +17,7 @@ const rub5 = '../assets/Products/roasted-turkey-rub-5.jpeg';
 
 const turkeyCookingTable = '../assets/Products/cooking-turkey-estimates.png';
 const turkeyThawingTable = '../assets/Products/thawing-turkey-estimates.png';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, UNITS } = require('./constants');
 const {
     TURKEY,
     LEMON,
@@ -56,16 +56,16 @@ module.exports = {
     ingredients: [
         { ...TURKEY, amount: '', unit: '', additionalDetails: 'desired size', optional: false, section: TURKEY_SECTION },
 
-        { ...UNSALTED_BUTTER, amount: '16 Tbsp', unit: '', additionalDetails: 'softened', optional: false, section: HERB_BUTTER_RUB },
-        { ...THYME, amount: '2 Tbsp', unit: '', additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
-        { ...GARLIC, amount: '4 cloves', unit: '', additionalDetails: 'minced', optional: false, section: HERB_BUTTER_RUB },
-        { ...SALT, amount: '2 pinch', unit: '', additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
-        { ...BLACK_PEPPER, amount: '2 pinch', unit: '', additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
+        { ...UNSALTED_BUTTER, amount: 16, unit: UNITS.TABLESPOON, additionalDetails: 'softened', optional: false, section: HERB_BUTTER_RUB },
+        { ...THYME, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
+        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', optional: false, section: HERB_BUTTER_RUB },
+        { ...SALT, amount: 2, unit: UNITS.PINCH, additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
+        { ...BLACK_PEPPER, amount: 2, unit: UNITS.PINCH, additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
 
-        { ...GARLIC, amount: '3 heads', unit: '', additionalDetails: 'halved', optional: false, section: CAVITY_FILLING },
-        { ...LEMON, amount: '2', unit: '', additionalDetails: 'sliced', optional: false, section: CAVITY_FILLING },
-        { ...ROSEMARY, amount: '6 sprigs', unit: '', additionalDetails: '', optional: false, section: CAVITY_FILLING },
-        { ...OLIVE_OIL, amount: '1/2 c', unit: '', additionalDetails: '', optional: false, section: TURKEY_SECTION },
+        { ...GARLIC, amount: 3, unit: UNITS.HEAD, additionalDetails: 'halved', optional: false, section: CAVITY_FILLING },
+        { ...LEMON, amount: 2, unit: '', additionalDetails: 'sliced', optional: false, section: CAVITY_FILLING },
+        { ...ROSEMARY, amount: 6, unit: UNITS.SPRIG, additionalDetails: '', optional: false, section: CAVITY_FILLING },
+        { ...OLIVE_OIL, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', optional: false, section: TURKEY_SECTION },
     ],
     appliances: [
         { name: 'oven' },
@@ -86,8 +86,8 @@ module.exports = {
         { step: 'Loosen the skin of the turkey by gently sliding your fingers between the skin and the meat.', type: PREPARING_TURKEY },
         { step: 'Using your hands, rub half the softened herb butter on the turkey and in between the loosened skin. Then generously season with salt and pepper.', type: PREPARING_TURKEY, img: rub5 },
         { step: 'Place turkey breast-side down and drizzle with part of the oil.', type: PREPARING_TURKEY, img: [breastDown1, rub2] },
-        
-        
+
+
         { step: 'Roast uncovered for 30 min for small turkey or 45 min for large turkey.', type: COOKING_TURKEY },
         { step: 'Remove turkey from oven. Turn down the oven to 325ºF.', type: COOKING_TURKEY, img: breastDown3 },
         { step: 'Carefully flip the turkey and baste with pan juice.', type: COOKING_TURKEY },

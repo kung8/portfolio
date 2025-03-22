@@ -1,5 +1,5 @@
 const kebabs = '../assets/Products/kebabs.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, TYPES, UNITS } = require('./constants');
 const {
     LIGHT_SOY_SAUCE,
     TERIYAKI_SAUCE,
@@ -26,13 +26,13 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '25 - 30 m',
     ingredients: [
-        { ...LIGHT_SOY_SAUCE, amount: '1/2 c', unit: '', additionalDetails: '', optional: false },
-        { ...TERIYAKI_SAUCE, amount: '1/2 c', unit: '', additionalDetails: '', optional: false },
-        { ...VEGETABLE_OIL, amount: '1/2 c', unit: '', additionalDetails: '', optional: false },
-        { ...GARLIC_POWDER, amount: '1', unit: '', additionalDetails: '', optional: false },
-        { ...CHICKEN_THIGH, amount: '2 lbs', unit: '', additionalDetails: '', optional: false },
-        { ...RED_BELL_PEPPERS, amount: '2', unit: '', additionalDetails: '', optional: false },
-        { ...YELLOW_ONION, amount: '1 medium', unit: '', additionalDetails: '', optional: false },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...TERIYAKI_SAUCE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...VEGETABLE_OIL, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...GARLIC_POWDER, amount: 1, unit: '', additionalDetails: '', optional: false },
+        { ...CHICKEN_THIGH, amount: 2, unit: UNITS.POUND, additionalDetails: '', optional: false },
+        { ...RED_BELL_PEPPERS, amount: 2, unit: '', additionalDetails: '', optional: false },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: '', optional: false },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
     ],

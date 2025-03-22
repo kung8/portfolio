@@ -6,11 +6,11 @@ const rack = '../assets/Products/mexican-cilantro-lime-chicken-raw-on-baking-rac
 const set1 = '../assets/Products/mexican-cilantro-lime-chicken-plated-set-1.jpeg';
 const set2 = '../assets/Products/mexican-cilantro-lime-chicken-plated-set-2.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const {
     CHICKEN_WINGS,
     CILANTRO,
-    LIME_JUICE,
+    LIME,
     GARLIC,
     AVOCADO_OIL,
     CHILI_POWDER,
@@ -37,15 +37,15 @@ module.exports = {
         { label: 'Cilantro Lime Chicken Wings', link: 'https://kaleforniakravings.com/easy-cilantro-lime-chicken-wings/' }
     ],
     ingredients: [
-        { ...CHICKEN_WINGS, amount: '2 lbs', unit: '', additionalDetails: '', section: SECTIONS.MEAT },
-        { ...CILANTRO, amount: '1 bunch of', unit: '', additionalDetails: 'chopped', section: SECTIONS.DRESSING },
-        { ...LIME_JUICE, amount: '5 limes', unit: '', additionalDetails: 'juiced', section: SECTIONS.DRESSING },
-        { ...GARLIC, amount: '4 cloves', unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...AVOCADO_OIL, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...CHILI_POWDER, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...BLACK_PEPPER, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...CAYENNE_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...CHICKEN_WINGS, amount: 2, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.MEAT },
+        { ...CILANTRO, amount: 1, unit: UNITS.BUNCH, additionalDetails: 'chopped', section: SECTIONS.DRESSING },
+        { ...LIME, amount: 5, unit: '', additionalDetails: 'juiced', section: SECTIONS.DRESSING },
+        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...AVOCADO_OIL, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...CHILI_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...CAYENNE_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRESSING },
     ],
     appliances: [
         { name: 'blender' },

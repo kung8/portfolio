@@ -1,5 +1,5 @@
 const ham1 = '../assets/Products/hawaiian-glazed-ham-1.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { BONE_IN_HAM, YELLOW_MUSTARD, BROWN_SUGAR, CANNED_PINEAPPLE_SLICES, MARASCHINO_CHERRIES } = require('./ingredients');
 
 const PREP_OVEN = 'Prep Oven';
@@ -23,11 +23,11 @@ module.exports = {
     cookTime: '2 h',
     separated: true,
     ingredients: [
-        { ...BONE_IN_HAM, amount: '15 lb', unit: '', additionalDetails: '', section: '' },
-        { ...YELLOW_MUSTARD, amount: '10 oz', unit: '', additionalDetails: '', section: '' },
-        { ...BROWN_SUGAR, amount: '1/4 c', unit: '', additionalDetails: '', section: '' },
-        { ...CANNED_PINEAPPLE_SLICES, amount: '2 - 20 oz', unit: '', additionalDetails: '', section: '' },
-        { ...MARASCHINO_CHERRIES, amount: '10 oz', unit: '', additionalDetails: 'pitted and stemless', section: '' },
+        { ...BONE_IN_HAM, amount: 15, unit: UNITS.POUND, additionalDetails: '', section: '' },
+        { ...YELLOW_MUSTARD, amount: 10, unit: UNITS.OUNCE, additionalDetails: '', section: '' },
+        { ...BROWN_SUGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: '' },
+        { ...CANNED_PINEAPPLE_SLICES, amount: 40, unit: UNITS.OUNCE, additionalDetails: '', section: '' },
+        { ...MARASCHINO_CHERRIES, amount: 10, unit: UNITS.OUNCE, additionalDetails: 'pitted and stemless', section: '' },
     ],
     appliances: [
         { name: 'oven' },

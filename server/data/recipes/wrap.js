@@ -1,6 +1,6 @@
 const wraps = '../assets/Products/wraps.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
-const { 
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require('./constants');
+const {
     CHEDDAR_CHEESE,
     COOKED_HAM,
     HONEY_MUSTARD,
@@ -22,11 +22,11 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '2 m',
     ingredients: [
-        { ...TORTILLA, amount: '1', unit: '', additionalDetails: '', optional: false },
-        { ...COOKED_HAM, amount: '4', unit: '', additionalDetails: 'preferred', optional: false },
+        { ...TORTILLA, amount: 1, unit: '', additionalDetails: '', optional: false },
+        { ...COOKED_HAM, amount: 4, unit: '', additionalDetails: 'preferred', optional: false },
         { ...SPINACH, amount: '', unit: '', additionalDetails: '', optional: false },
-        { ...CHEDDAR_CHEESE, amount: '3', unit: '', additionalDetails: '', optional: false },
-        { ...ROMA_TOMATO, amount: '1/2', unit: '', additionalDetails: 'sliced', optional: false },
+        { ...CHEDDAR_CHEESE, amount: 3, unit: '', additionalDetails: '', optional: false },
+        { ...ROMA_TOMATO, amount: 1 / 2, unit: '', additionalDetails: 'sliced', optional: false },
         { ...HONEY_MUSTARD, amount: '', unit: '', additionalDetails: '', optional: false },
     ],
     supplies: [

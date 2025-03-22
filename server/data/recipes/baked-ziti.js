@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
 const { ZITI, ITALIAN_SAUSAGE, GARLIC, CRUSHED_TOMATOES, SALT, RED_PEPPER_FLAKES, HEAVY_CREAM, PARMIGIANO_REGGIANO, BASIL_LEAVES, MOZZARELLA_CHEESE, WHITE_SUGAR } = require('./ingredients');
 
 const PASTA_SECTION = 'Pasta';
@@ -31,20 +31,20 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ZITI, amount: '1 lb', unit: '', additionalDetails: '', section: PASTA_SECTION },
+        { ...ZITI, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: PASTA_SECTION },
 
-        { ...ITALIAN_SAUSAGE, amount: '1 1/2 lbs', unit: '', additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
-        { ...GARLIC, amount: '4 cloves', unit: '', additionalDetails: 'minced', section: CASSEROLE_MIXTURE_SECTION },
-        { ...CRUSHED_TOMATOES, amount: '28 oz', unit: '', additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
-        { ...WHITE_SUGAR, amount: '1 1/2 tsp', unit: '', additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
-        { ...RED_PEPPER_FLAKES, amount: '1/4 tsp', unit: '', additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
-        { ...HEAVY_CREAM, amount: '1 c', unit: '', additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
-        { ...PARMIGIANO_REGGIANO, amount: '1/3 c', unit: '', additionalDetails: 'grated', section: CASSEROLE_MIXTURE_SECTION },
-        { ...BASIL_LEAVES, amount: '1/3 c', unit: '', additionalDetails: 'chopped', section: CASSEROLE_MIXTURE_SECTION },
+        { ...ITALIAN_SAUSAGE, amount: 1.5, unit: UNITS.POUND, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
+        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', section: CASSEROLE_MIXTURE_SECTION },
+        { ...CRUSHED_TOMATOES, amount: 28, unit: UNITS.OUNCE, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
+        { ...WHITE_SUGAR, amount: 1.5, unit: UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
+        { ...RED_PEPPER_FLAKES, amount: 1/4, unit: UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
+        { ...HEAVY_CREAM, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
+        { ...PARMIGIANO_REGGIANO, amount: 1/3, unit: UNITS.CUP, additionalDetails: 'grated', section: CASSEROLE_MIXTURE_SECTION },
+        { ...BASIL_LEAVES, amount: 1/3, unit: UNITS.CUP, additionalDetails: 'chopped', section: CASSEROLE_MIXTURE_SECTION },
 
-        { ...MOZZARELLA_CHEESE, amount: '2 c', unit: '', additionalDetails: 'shredded', section: LAYERING_SECTION },
-        { ...PARMIGIANO_REGGIANO, amount: '3 Tbsp', unit: '', additionalDetails: 'grated', section: LAYERING_SECTION },
+        { ...MOZZARELLA_CHEESE, amount: 2, unit: UNITS.CUP, additionalDetails: 'shredded', section: LAYERING_SECTION },
+        { ...PARMIGIANO_REGGIANO, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'grated', section: LAYERING_SECTION },
     ],
     appliances: [
         { name: 'stove' },

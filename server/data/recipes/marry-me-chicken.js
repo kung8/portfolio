@@ -18,7 +18,7 @@ const combined3 = '../assets/Products/marry-me-chicken-3.jpeg';
 const plated2 = '../assets/Products/marry-me-chicken-plated-2.jpeg';
 const plated3 = '../assets/Products/marry-me-chicken-plated-3.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CHICKEN_BROTH, HEAVY_CREAM, PARMESAN_CHEESE, OREGANO, RED_PEPPER_FLAKES, BASIL_LEAVES, SUN_DRIED_TOMATOES } = require('./ingredients');
 
 const SUN_DRIED_TOMATO_CREAM_SAUCE = 'Sun-Dried Tomato Cream Sauce';
@@ -42,18 +42,18 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '3 lb', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...SALT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...OLIVE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
 
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: 'minced', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...CHICKEN_BROTH, amount: '3/4 c', unit: '', additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...HEAVY_CREAM, amount: '1/2 c', unit: '', additionalDetails: 'room temperature', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...PARMESAN_CHEESE, amount: '1/3 c', unit: '', additionalDetails: 'shredded at room temperature', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...SUN_DRIED_TOMATOES, amount: '1 c', unit: '', additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...OREGANO, amount: '1 tsp', unit: '', additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...RED_PEPPER_FLAKES, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...CHICKEN_BROTH, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...HEAVY_CREAM, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'room temperature', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...PARMESAN_CHEESE, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: 'shredded at room temperature', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...SUN_DRIED_TOMATOES, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...OREGANO, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...RED_PEPPER_FLAKES, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
         { ...BASIL_LEAVES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
@@ -72,7 +72,7 @@ module.exports = {
         { step: 'Sear chicken until lightly golden (about 3 to 4 minutes).', type: SECTIONS.CHICKEN, img: chicken7 },
         { step: 'Flip and sear the other side (about 3 to 4 minutes).', type: SECTIONS.CHICKEN, img: chicken8 },
         { step: 'Transfer chicken to plate (chicken should not be cooked all the way through).', type: SECTIONS.CHICKEN, img: chicken9 },
-        
+
         { step: 'Reduce to medium-low heat and wait until dutch oven pot cools.', type: SUN_DRIED_TOMATO_CREAM_SAUCE },
         { step: 'Add garlic. Saute until fragrant (about 1 to 2 minutes).', type: SUN_DRIED_TOMATO_CREAM_SAUCE, img: sauce2 },
         { step: 'Add broth and deglaze the pan.', type: SUN_DRIED_TOMATO_CREAM_SAUCE, img: sauce3 },

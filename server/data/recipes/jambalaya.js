@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { OLIVE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, ANDOUILLE_SAUSAGE, YELLOW_BELL_PEPPERS, RED_BELL_PEPPERS, GREEN_BELL_PEPPERS, CELERY, JALAPENO_PEPPERS, WHITE_ONION, GARLIC, CRUSHED_TOMATOES, CHICKEN_BOUILLON, CHICKEN_BROTH, WHITE_RICE, THYME, CAYENNE_PEPPER, BAY_LEAVES, LARGE_SHRIMP, OKRA, SALT, BLACK_PEPPER, PARSLEY, GREEN_ONIONS, HOT_SAUCE, CAJUN_SEASONING } = require('./ingredients');
 
 const MEAT_SECTION = 'Meat';
@@ -33,31 +33,31 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...OLIVE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: MEAT_SECTION },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '2', unit: '', additionalDetails: 'bite sized', section: MEAT_SECTION },
-        { ...ANDOUILLE_SAUSAGE, amount: '1 lb', unit: '', additionalDetails: 'thinly sliced', section: MEAT_SECTION },
+        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: MEAT_SECTION },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: 'bite sized', section: MEAT_SECTION },
+        { ...ANDOUILLE_SAUSAGE, amount: 1, unit: UNITS.POUND, additionalDetails: 'thinly sliced', section: MEAT_SECTION },
 
-        { ...OLIVE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: VEGGIES_SECTION },
-        { ...YELLOW_BELL_PEPPERS, amount: '1', unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
-        { ...RED_BELL_PEPPERS, amount: '1', unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
-        { ...GREEN_BELL_PEPPERS, amount: '1', unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
-        { ...CELERY, amount: '2 ribs', unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
-        { ...JALAPENO_PEPPERS, amount: '1 - 2', unit: '', additionalDetails: 'chopped', section: VEGGIES_SECTION },
-        { ...WHITE_ONION, amount: '1', unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
-        { ...GARLIC, amount: '4 cloves', unit: '', additionalDetails: 'minced', section: VEGGIES_SECTION },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES_SECTION },
+        { ...YELLOW_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
+        { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
+        { ...GREEN_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
+        { ...CELERY, amount: 2, unit: UNITS.RIB, additionalDetails: 'diced', section: VEGGIES_SECTION },
+        { ...JALAPENO_PEPPERS, amount: 2, unit: '', additionalDetails: 'chopped', section: VEGGIES_SECTION },
+        { ...WHITE_ONION, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
+        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', section: VEGGIES_SECTION },
 
-        { ...CRUSHED_TOMATOES, amount: '14 oz', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...CHICKEN_BROTH, amount: '3 - 4 c', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...WHITE_RICE, amount: '1 1/2 c', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...CAJUN_SEASONING, amount: '2 Tbsp', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...THYME, amount: '1 tsp', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...CAYENNE_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: RICE_SECTION },
-        { ...BAY_LEAVES, amount: '1', unit: '', additionalDetails: '', section: RICE_SECTION },
+        { ...CRUSHED_TOMATOES, amount: 14, unit: UNITS.OUNCE, additionalDetails: '', section: RICE_SECTION },
+        { ...CHICKEN_BROTH, amount: 4, unit: UNITS.CUP, additionalDetails: '', section: RICE_SECTION },
+        { ...WHITE_RICE, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: RICE_SECTION },
+        { ...CAJUN_SEASONING, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: RICE_SECTION },
+        { ...THYME, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: RICE_SECTION },
+        { ...CAYENNE_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: RICE_SECTION },
+        { ...BAY_LEAVES, amount: 1, unit: '', additionalDetails: '', section: RICE_SECTION },
 
-        { ...LARGE_SHRIMP, amount: '1 lb', unit: '', additionalDetails: 'peeled and deveined', section: SHRIMP_SECTION },
-        { ...OKRA, amount: '1 c', unit: '', additionalDetails: 'thinly sliced', section: SHRIMP_SECTION },
-        { ...SALT, amount: '2 tsp', unit: '', additionalDetails: '', section: SHRIMP_SECTION },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SHRIMP_SECTION },
+        { ...LARGE_SHRIMP, amount: 1, unit: UNITS.POUND, additionalDetails: 'peeled and deveined', section: SHRIMP_SECTION },
+        { ...OKRA, amount: 1, unit: UNITS.CUP, additionalDetails: 'thinly sliced', section: SHRIMP_SECTION },
+        { ...SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SHRIMP_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SHRIMP_SECTION },
 
         { ...PARSLEY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
@@ -87,7 +87,7 @@ module.exports = {
         { step: 'Simmer and stir occasionally. Cook until shrimp is cooked through and pink.', type: COOK_SHRIMP },
         { step: 'Remove the bay leaf and re-add the chicken and sausage.', type: COOK_SHRIMP },
         { step: 'Taste and add salt, pepper and Cajun seasoning as needed.', type: COOK_SHRIMP },
-        
+
         { step: 'Serve warm with your favorite toppings.', type: SECTIONS.SERVE },
     ],
     notes: [

@@ -6,13 +6,13 @@ const batter = '../assets/Products/waffles-batter.jpeg';
 const dry = '../assets/Products/waffles-dry-ingredients.jpeg';
 const wet = '../assets/Products/waffles-wet-ingredients.jpeg';
 const egg = '../assets/Products/waffles-egg-whites-fluffed.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
     SALT,
     WHITE_SUGAR,
-    EGGS,
+    EGG,
     MILK,
     UNSALTED_BUTTER,
     VANILLA_EXTRACT,
@@ -44,14 +44,14 @@ module.exports = {
         { label: 'Waffles', link: 'https://www.spendwithpennies.com/fluffy-homemade-waffle-recipe/' }
     ],
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_POWDER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: 'separated', section: SECTIONS.MAIN },
-        { ...MILK, amount: '1 2/3 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '1/3 c', unit: '', additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_POWDER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG, amount: 2, unit: '', additionalDetails: 'separated', section: SECTIONS.MAIN },
+        { ...MILK, amount: 5 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...STRAWBERRIES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...BANANA, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...BLUEBERRIES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },

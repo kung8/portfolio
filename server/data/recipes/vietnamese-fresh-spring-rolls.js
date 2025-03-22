@@ -23,7 +23,7 @@ const wrap1 = '../assets/Products/fresh-spring-rolls-wrap-1.jpeg';
 const wrap2 = '../assets/Products/fresh-spring-rolls-wrap-2.jpeg';
 const wrap3 = '../assets/Products/fresh-spring-rolls-wrap-3.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { CARROTS, CUCUMBER, MINT_LEAVES, BASIL_LEAVES, CILANTRO, PORK, PEANUT_BUTTER, LIGHT_SOY_SAUCE, HOISIN_SAUCE, SWEET_CHILI_SAUCE, VERMICELLI_RICE_NOODLES, SPRING_ROLL_RICE_WRAPPERS, SHRIMP, VEGETABLE_OIL } = require('./ingredients');
 
 const VERMICELLI_RICE_NOODLES_SECTION = 'Vermicelli Rice Noodles';
@@ -53,25 +53,25 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...VERMICELLI_RICE_NOODLES, amount: '1 package', unit: '', additionalDetails: '', section: VERMICELLI_RICE_NOODLES_SECTION },
+        { ...VERMICELLI_RICE_NOODLES, amount: 1, unit: UNITS.PACKAGE, additionalDetails: '', section: VERMICELLI_RICE_NOODLES_SECTION },
 
-        { ...CARROTS, amount: '1', unit: '', additionalDetails: 'peeled and thinly sliced', section: VEGETABLES_AND_HERBS_FILLING },
-        { ...CUCUMBER, amount: '1', unit: '', additionalDetails: 'peeled and thinly sliced', section: VEGETABLES_AND_HERBS_FILLING },
-        { ...MINT_LEAVES, amount: '1 bunch', unit: '', additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
-        { ...BASIL_LEAVES, amount: '1 bunch', unit: '', additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
-        { ...CILANTRO, amount: '1 bunch', unit: '', additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...CARROTS, amount: 1, unit: '', additionalDetails: 'peeled and thinly sliced', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...CUCUMBER, amount: 1, unit: '', additionalDetails: 'peeled and thinly sliced', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...MINT_LEAVES, amount: 1, unit: UNITS.BUNCH, additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...BASIL_LEAVES, amount: 1, unit: UNITS.BUNCH, additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...CILANTRO, amount: 1, unit: UNITS.BUNCH, additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
 
-        { ...PORK, amount: '1/2 lb', unit: '', additionalDetails: '', section: PORK_SECTION },
+        { ...PORK, amount: 1 / 2, unit: UNITS.POUND, additionalDetails: '', section: PORK_SECTION },
 
-        { ...SHRIMP, amount: '1/2 lb', unit: '', additionalDetails: 'peeled and deveined', section: SHRIMP_SECTION },
-        { ...VEGETABLE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SHRIMP_SECTION },
+        { ...SHRIMP, amount: 1 / 2, unit: UNITS.POUND, additionalDetails: 'peeled and deveined', section: SHRIMP_SECTION },
+        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SHRIMP_SECTION },
 
-        { ...SPRING_ROLL_RICE_WRAPPERS, amount: '1 package', unit: '', additionalDetails: '', section: WRAP_SECTION },
+        { ...SPRING_ROLL_RICE_WRAPPERS, amount: 1, unit: UNITS.PACKAGE, additionalDetails: '', section: WRAP_SECTION },
 
-        { ...SWEET_CHILI_SAUCE, amount: '3/4 c', unit: '', additionalDetails: '', section: PEANUT_SAUCE },
-        { ...PEANUT_BUTTER, amount: '1/3 c', unit: '', additionalDetails: '', section: PEANUT_SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: '1/2 tsp', unit: '', additionalDetails: '', section: PEANUT_SAUCE },
-        { ...HOISIN_SAUCE, amount: '1/2 tsp', unit: '', additionalDetails: '', section: PEANUT_SAUCE },
+        { ...SWEET_CHILI_SAUCE, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: PEANUT_SAUCE },
+        { ...PEANUT_BUTTER, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: PEANUT_SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PEANUT_SAUCE },
+        { ...HOISIN_SAUCE, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PEANUT_SAUCE },
     ],
     appliances: [
         { name: 'blender' },

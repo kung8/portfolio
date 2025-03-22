@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, UNSALTED_BUTTER, GARLIC, SUN_DRIED_TOMATOES, ITALIAN_SEASONING, HEAVY_CREAM, MILK, PARMESAN_CHEESE, BABY_SPINACH, PENNE } = require('./ingredients');
 
 const CHICKEN_SECTION = 'Chicken';
@@ -31,22 +31,22 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '2 lb', unit: '', additionalDetails: '', section: CHICKEN_SECTION },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: CHICKEN_SECTION },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: CHICKEN_SECTION },
-        { ...OLIVE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: CHICKEN_SECTION },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: UNITS.POUND, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_SECTION },
 
-        { ...UNSALTED_BUTTER, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: 'minced', section: SAUCE_SECTION },
-        { ...SUN_DRIED_TOMATOES, amount: '1 c', unit: '', additionalDetails: 'drained', section: SAUCE_SECTION },
-        { ...ITALIAN_SEASONING, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
+        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SAUCE_SECTION },
+        { ...SUN_DRIED_TOMATOES, amount: 1, unit: UNITS.CUP, additionalDetails: 'drained', section: SAUCE_SECTION },
+        { ...ITALIAN_SEASONING, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
 
-        { ...HEAVY_CREAM, amount: '1 c', unit: '', additionalDetails: '', section: PASTA_SECTION },
-        { ...MILK, amount: '2 c', unit: '', additionalDetails: '', section: PASTA_SECTION },
-        { ...PARMESAN_CHEESE, amount: '1 c', unit: '', additionalDetails: 'grated', section: PASTA_SECTION },
-        { ...PENNE, amount: '8 oz', unit: '', additionalDetails: '', section: PASTA_SECTION },
+        { ...HEAVY_CREAM, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PASTA_SECTION },
+        { ...MILK, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: PASTA_SECTION },
+        { ...PARMESAN_CHEESE, amount: 1, unit: UNITS.CUP, additionalDetails: 'grated', section: PASTA_SECTION },
+        { ...PENNE, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: PASTA_SECTION },
 
-        { ...BABY_SPINACH, amount: '3 c', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...BABY_SPINACH, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },
@@ -70,10 +70,10 @@ module.exports = {
 
         { step: 'Add the "Pasta" section ingredients to the pot. Stir.', type: COOK_PASTA },
         { step: 'Cook until the pasta is al dente (for about 10 minutes). Stir occasionally.', type: COOK_PASTA },
-        
+
         { step: 'Add chicken and cook until the chicken is almost cooked through.', type: COMBINE },
         { step: 'Add the spinach and cook until it wilts (about 1 to 2 minutes).', type: COMBINE },
-        
+
         { step: 'Enjoy this Italian dish.', type: SECTIONS.SERVE },
     ]
 };

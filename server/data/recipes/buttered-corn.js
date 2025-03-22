@@ -3,7 +3,7 @@ const cooked = '../assets/Products/buttered-corn-cooked.jpeg';
 const corn = '../assets/Products/buttered-corn-corn.jpeg';
 const cream = '../assets/Products/buttered-corn-cream.jpeg';
 const honey = '../assets/Products/buttered-corn-honey.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { UNSALTED_BUTTER, CANNED_SWEET_CORN, SALT, BLACK_PEPPER, HEAVY_CREAM, HONEY } = require('./ingredients');
 
 module.exports = {
@@ -24,12 +24,12 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CANNED_SWEET_CORN, amount: '4 - 14.5 oz', unit: '', additionalDetails: 'drained', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HEAVY_CREAM, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HONEY, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CANNED_SWEET_CORN, amount: 58, unit: UNITS.OUNCE, additionalDetails: 'drained', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HEAVY_CREAM, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HONEY, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

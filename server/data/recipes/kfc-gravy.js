@@ -5,7 +5,7 @@ const gravy4 = '../assets/Products/kfc-gravy-4.jpeg';
 const gravy5 = '../assets/Products/kfc-gravy-5.jpeg';
 const gravy6 = '../assets/Products/mash-potatoes-10.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { HOT_WATER, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, ONION_POWDER, BLACK_PEPPER, SALT, CHICKEN_BOUILLON_CUBE, BEEF_BOUILLON_CUBE } = require('./ingredients');
 
 const GRAVY_SECTION = 'Gravy';
@@ -29,13 +29,13 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...CHICKEN_BOUILLON_CUBE, amount: '1', unit: '', additionalDetails: '', section: GRAVY_SECTION },
-        { ...BEEF_BOUILLON_CUBE, amount: '1', unit: '', additionalDetails: '', section: GRAVY_SECTION },
-        { ...HOT_WATER, amount: '2 1/4 c', unit: '', additionalDetails: '', section: GRAVY_SECTION },
-        { ...UNSALTED_BUTTER, amount: '4 Tbsp', unit: '', additionalDetails: '', section: GRAVY_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: '4 Tbsp', unit: '', additionalDetails: '', section: GRAVY_SECTION },
-        { ...ONION_POWDER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: GRAVY_SECTION },
-        { ...BLACK_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: GRAVY_SECTION },
+        { ...CHICKEN_BOUILLON_CUBE, amount: 1, unit: '', additionalDetails: '', section: GRAVY_SECTION },
+        { ...BEEF_BOUILLON_CUBE, amount: 1, unit: '', additionalDetails: '', section: GRAVY_SECTION },
+        { ...HOT_WATER, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: GRAVY_SECTION },
+        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: GRAVY_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: GRAVY_SECTION },
+        { ...ONION_POWDER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: GRAVY_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: GRAVY_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: GRAVY_SECTION },
     ],
     appliances: [

@@ -12,11 +12,15 @@ import { GROCERY_LIST_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../con
 import { categorizeRecipeType } from '../categorize-recipe-type';
 import { RecipeImageModal } from './RecipeImageModal';
 import { handleModalClass } from '../utils/handle-modal-class';
+import { convertDecimalToFraction } from '../utils/convert-decimal-to-fraction';
 
 const formatIngredientItem = (item) => {
-    const amount = item.amount ? item.amount + ' ' : '';
-    const name = item.name;
-    return amount + name;
+    const amount = item.amount ? convertDecimalToFraction(item.amount) + ' ' : '';
+    const isPlural = item.amount > 1;
+    const referencedUnit = isPlural ? item.unit?.p + ' ' : item.unit?.s + ' ';
+    const unit = item.unit ? referencedUnit : '';
+    const name = !unit && isPlural && item.name[item.name.length - 1] !== 's' ? item.name + 's' : item.name;
+    return amount + unit + name;
 }
 
 const getIngredientData = (recipeName, ingredient, id) => ({

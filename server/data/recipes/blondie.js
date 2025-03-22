@@ -7,12 +7,12 @@ const flour = '../assets/Products/blondie-flour.jpeg';
 const pan = '../assets/Products/blondie-pan.jpeg';
 const plated = '../assets/Products/blondie-plated.jpeg';
 const sugars = '../assets/Products/blondie-sugars.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     BROWN_SUGAR,
     WHITE_SUGAR,
-    EGGS,
+    EGG,
     EGG_YOLKS,
     VANILLA_EXTRACT,
     ALL_PURPOSE_FLOUR,
@@ -41,17 +41,17 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '1 c', unit: '', additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { ...BROWN_SUGAR, amount: '1 1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGG_YOLKS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: '2 1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CORNSTARCH, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_POWDER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '2/3 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...BROWN_SUGAR, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORNSTARCH, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_POWDER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

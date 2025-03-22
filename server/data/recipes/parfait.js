@@ -1,5 +1,5 @@
 const parfait = '../assets/Products/parfait.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS } = require("./constants");
 const {
     PLAIN_YOGURT,
     VANILLA_EXTRACT,
@@ -21,9 +21,9 @@ module.exports = {
     prepTime: '1 m',
     cookTime: '1 m',
     ingredients: [
-        { ...PLAIN_YOGURT, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: '1 Tbsp', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { ...HONEY, amount: '1 Tbsp', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...PLAIN_YOGURT, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...HONEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
         { ...GRANOLA, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
         { ...BERRIES, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
         { ...CASHEWS, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },

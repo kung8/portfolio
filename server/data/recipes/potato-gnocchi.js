@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
-const { RED_POTATOES, ALL_PURPOSE_FLOUR, EGGS, SALT, DURUM_WHEAT } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , UNITS } = require('./constants');
+const { RED_POTATOES, ALL_PURPOSE_FLOUR, EGG, SALT, DURUM_WHEAT } = require('./ingredients');
 
 const PREP_POTATOES = 'Prep Potatoes';
 const MAKE_DOUGH = 'Make Dough';
@@ -25,10 +25,10 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...RED_POTATOES, amount: '2.2 lbs', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: '2 1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 'pinch of', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...RED_POTATOES, amount: 2.2, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit:UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.MAIN },
         { ...DURUM_WHEAT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [

@@ -12,7 +12,7 @@ const quesadillas12 = '../assets/Products/chicken-quesadillas-12.jpeg';
 const quesadillas13 = '../assets/Products/chicken-quesadillas-13.jpeg';
 const quesadillas14 = '../assets/Products/chicken-quesadillas-14.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { CHILI_POWDER, SALT, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL, YELLOW_ONION, RED_BELL_PEPPERS, GREEN_BELL_PEPPERS, HOT_SAUCE, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, SALSA, GUACAMOLE, SOUR_CREAM, SHARP_CHEDDAR_CHEESE, WHEAT_TORTILLA } = require('./ingredients');
 
 const SPICES = 'Spices';
@@ -43,21 +43,21 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHILI_POWDER, amount: '2 tsp', unit: '', additionalDetails: '', section: SPICES },
-        { ...SALT, amount: '3/4 tsp', unit: '', additionalDetails: '', section: SPICES },
-        { ...GARLIC_POWDER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SPICES },
+        { ...CHILI_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...SALT, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...GARLIC_POWDER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
 
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '2 medium', unit: '', additionalDetails: '', section: CHICKEN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: UNITS.MEDIUM, additionalDetails: '', section: CHICKEN },
 
-        { ...OLIVE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: VEGGIES },
-        { ...YELLOW_ONION, amount: '1/2 small', unit: '', additionalDetails: 'diced', section: VEGGIES },
-        { ...RED_BELL_PEPPERS, amount: '1', unit: '', additionalDetails: 'diced', section: VEGGIES },
-        { ...GREEN_BELL_PEPPERS, amount: '1', unit: '', additionalDetails: 'diced', section: VEGGIES },
+        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.SMALL, additionalDetails: 'diced', section: VEGGIES },
+        { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES },
+        { ...GREEN_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES },
         { ...HOT_SAUCE, amount: '', unit: '', additionalDetails: 'to taste', section: VEGGIES },
 
-        { ...MONTEREY_JACK_CHEESE, amount: '1 1/4 c', unit: '', additionalDetails: '', section: QUESADILLA },
-        { ...SHARP_CHEDDAR_CHEESE, amount: '3/4 c', unit: '', additionalDetails: '', section: QUESADILLA },
-        { ...WHEAT_TORTILLA, amount: '4', unit: '', additionalDetails: '', section: QUESADILLA },
+        { ...MONTEREY_JACK_CHEESE, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: QUESADILLA },
+        { ...SHARP_CHEDDAR_CHEESE, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: QUESADILLA },
+        { ...WHEAT_TORTILLA, amount: 4, unit: '', additionalDetails: '', section: QUESADILLA },
         { ...UNSALTED_BUTTER, amount: '', unit: '', additionalDetails: 'for cooking', section: QUESADILLA },
 
         { ...SALSA, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },

@@ -5,7 +5,7 @@ const oil = '../assets/Products/baked-breaded-chicken-oil.jpeg';
 const plated = '../assets/Products/baked-breaded-chicken-plated.jpeg';
 const seasoned = '../assets/Products/baked-breaded-chicken-seasoned.jpeg';
 const full = '../assets/Products/basil-pesto-meal-plated.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
 const {
     BREADCRUMBS,
     PANKO_BREADCRUMBS,
@@ -42,19 +42,19 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BREADCRUMBS, amount: '1/2 c', unit: '', additionalDetails: '', section: BREADING },
-        { ...PANKO_BREADCRUMBS, amount: '1/2 c', unit: '', additionalDetails: '', section: BREADING },
-        { ...PARMESAN_CHEESE, amount: '2/3 c', unit: '', additionalDetails: '', section: BREADING },
-        { ...BASIL, amount: '1 tsp', unit: '', additionalDetails: '', section: BREADING },
-        { ...OREGANO, amount: '1 tsp', unit: '', additionalDetails: '', section: BREADING },
-        { ...ONION_POWDER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: BREADING },
-        { ...BLACK_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: BREADING },
-        { ...OLIVE_OIL, amount: '1/4 c', unit: '', additionalDetails: '', section: DREDGING },
-        { ...GARLIC, amount: '2 cloves', unit: '', additionalDetails: 'minced', section: DREDGING },
-        { ...PAPRIKA, amount: '1/2 tsp', unit: '', additionalDetails: '', section: DREDGING },
-        { ...CHICKEN_BREAST, amount: '6', unit: '', additionalDetails: 'halved', section: SECTIONS.MAIN },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'season', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'season', section: SECTIONS.MAIN },
+        { ...BREADCRUMBS, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: BREADING },
+        { ...PANKO_BREADCRUMBS, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: BREADING },
+        { ...PARMESAN_CHEESE, amount: 2/3, unit: UNITS.CUP, additionalDetails: '', section: BREADING },
+        { ...BASIL, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BREADING },
+        { ...OREGANO, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BREADING },
+        { ...ONION_POWDER, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: BREADING },
+        { ...BLACK_PEPPER, amount: 1/4, unit: UNITS.TEASPOON, additionalDetails: '', section: BREADING },
+        { ...OLIVE_OIL, amount: 1/4, unit: UNITS.CUP, additionalDetails: '', section: DREDGING },
+        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: DREDGING },
+        { ...PAPRIKA, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: DREDGING },
+        { ...CHICKEN_BREAST, amount: 6, unit: UNITS.PIECE, additionalDetails: 'halved', section: SECTIONS.MAIN },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

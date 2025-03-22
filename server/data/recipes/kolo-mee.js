@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { GROUND_PORK, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, OYSTER_SAUCE, SESAME_OIL, WHITE_PEPPER, VEGETABLE_OIL, CHOW_MEIN_NOODLES, BABY_BOK_CHOY, ONION_POWDER, GREEN_ONIONS, FRIED_SHALLOTS, GARLIC, THAI_CHILI_PEPPERS } = require('./ingredients');
 
 const MINCED_MEAT_SECTION = 'Minced Meat';
@@ -32,25 +32,25 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...VEGETABLE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: MINCED_MEAT_SECTION },
-        { ...GROUND_PORK, amount: '6 oz', unit: '', additionalDetails: '', section: MINCED_MEAT_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: '2 tsp', unit: '', additionalDetails: '', section: MINCED_MEAT_SECTION },
-        { ...DARK_SOY_SAUCE, amount: '1 tsp', unit: '', additionalDetails: '', section: MINCED_MEAT_SECTION },
-        { ...OYSTER_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: MINCED_MEAT_SECTION },
-        { ...SESAME_OIL, amount: '1/4 tsp', unit: '', additionalDetails: '', section: MINCED_MEAT_SECTION },
-        { ...WHITE_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: MINCED_MEAT_SECTION },
+        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
+        { ...GROUND_PORK, amount: 6, unit: UNITS.OUNCE, additionalDetails: '', section: MINCED_MEAT_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
+        { ...DARK_SOY_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
+        { ...OYSTER_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
+        { ...SESAME_OIL, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
+        { ...WHITE_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
 
-        { ...CHOW_MEIN_NOODLES, amount: '8 oz', unit: '', additionalDetails: '', section: NOODLE_SECTION },
+        { ...CHOW_MEIN_NOODLES, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: NOODLE_SECTION },
         // { ...CHAR_SIU, amount: '', unit: '', additionalDetails: '', section: NOODLE_SECTION },
-        { ...BABY_BOK_CHOY, amount: '2 stalks', unit: '', additionalDetails: '', section: BOK_CHOY_SECTION },
+        { ...BABY_BOK_CHOY, amount: 2, unit: UNITS.STALK, additionalDetails: '', section: BOK_CHOY_SECTION },
 
-        { ...LIGHT_SOY_SAUCE, amount: '1 1/2 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...OYSTER_SAUCE, amount: '1/2 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...ONION_POWDER, amount: '2 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...OYSTER_SAUCE, amount: 1 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...ONION_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
 
-        { ...GREEN_ONIONS, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...FRIED_SHALLOTS, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...GARLIC, amount: '1 Tbsp', unit: '', additionalDetails: 'browned and minced', section: SECTIONS.TOPPINGS },
+        { ...GREEN_ONIONS, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...FRIED_SHALLOTS, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...GARLIC, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'browned and minced', section: SECTIONS.TOPPINGS },
         { ...THAI_CHILI_PEPPERS, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

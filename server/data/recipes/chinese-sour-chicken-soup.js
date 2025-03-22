@@ -1,5 +1,5 @@
 const sourChicken = '../assets/Products/sour-chicken.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN , UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     KNORR_TAMARIND_SOUP_BASE,
@@ -20,9 +20,9 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '1 h',
     ingredients: [
-        { ...CHICKEN_THIGH, amount: '6 lb', unit: '', additionalDetails: '', optional: false },
-        { ...KNORR_TAMARIND_SOUP_BASE, amount: '1 packet', unit: '', additionalDetails: '', optional: false },
-        { ...LIME_JUICE, amount: '2 Tbsp', unit: '', additionalDetails: '', optional: false },
+        { ...CHICKEN_THIGH, amount: 6, unit: UNITS.POUND, additionalDetails: '', optional: false },
+        { ...KNORR_TAMARIND_SOUP_BASE, amount: 1, unit: UNITS.PACKET, additionalDetails: '', optional: false },
+        { ...LIME_JUICE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },

@@ -1,6 +1,6 @@
 const banhTieu = '../assets/Products/banh-tieu.jpeg';
 const flat = '../assets/Products/banh-tieu-flat.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, UNITS } = require('./constants');
 const {
     BREAD_FLOUR,
     WARM_WATER,
@@ -26,12 +26,12 @@ module.exports = {
     cookTime: '7 m',
     separated: true,
     ingredients: [
-        { ...BREAD_FLOUR, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WARM_WATER, amount: '2/3 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WHITE_SUGAR, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...YEAST, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...BAKING_POWDER, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BREAD_FLOUR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BAKING_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],

@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { COLD_WATER, UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGGS, WHOLE_MILK, EGG_YOLKS, HEAVY_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, CAKE_FLOUR, VANILLA_BEAN } = require('./ingredients');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { COLD_WATER, UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, WHOLE_MILK, EGG_YOLKS, HEAVY_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, CAKE_FLOUR, VANILLA_BEAN } = require('./ingredients');
 
 const PASTRY = 'Pastry';
 const CHOCOLATE_GLAZE = 'Chocolate Glaze';
@@ -24,22 +24,25 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...COLD_WATER, amount: '1 c', unit: '', additionalDetails: '', section: PASTRY },
-        { ...UNSALTED_BUTTER, amount: '1/2 c', unit: '', additionalDetails: '', section: PASTRY },
-        { ...WHITE_SUGAR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: PASTRY },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: PASTRY },
-        { ...ALL_PURPOSE_FLOUR, amount: '1 c and 2 tsp', unit: '', additionalDetails: '', section: PASTRY },
-        { ...EGGS, amount: '4', unit: '', additionalDetails: '', section: PASTRY },
-        { ...WHOLE_MILK, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...VANILLA_BEAN, amount: '1/4', unit: '', additionalDetails: 'seeds scraped', section: SECTIONS.FILLING },
-        { ...WHITE_SUGAR, amount: '1/2 c and 2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CAKE_FLOUR, amount: '5 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...SALT, amount: 'pinch', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...EGGS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...EGG_YOLKS, amount: '2', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...HEAVY_CREAM, amount: '1/4 c and 2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '4 oz', unit: '', additionalDetails: 'chopped', section: CHOCOLATE_GLAZE },
-        { ...UNSALTED_BUTTER, amount: '4 Tbsp', unit: '', additionalDetails: 'softened', section: CHOCOLATE_GLAZE },
+        { ...COLD_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PASTRY },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: PASTRY },
+        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: PASTRY },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: PASTRY },
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PASTRY },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PASTRY },
+        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: PASTRY },
+        { ...WHOLE_MILK, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...VANILLA_BEAN, amount: 1 / 4, unit: '', additionalDetails: 'seeds scraped', section: SECTIONS.FILLING },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CAKE_FLOUR, amount: 5, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALT, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...EGG_YOLKS, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...HEAVY_CREAM, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...HEAVY_CREAM, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 4, unit: UNITS.OUNCE, additionalDetails: 'chopped', section: CHOCOLATE_GLAZE },
+        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: 'softened', section: CHOCOLATE_GLAZE },
     ],
     appliances: [
         { name: 'oven' },

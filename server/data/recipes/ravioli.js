@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
-const { ALL_PURPOSE_FLOUR, DURUM_WHEAT, EGGS, RICOTTA_CHEESE, PARMIGIANO_REGGIANO, SALT, BLACK_PEPPER, UNSALTED_BUTTER, SAGE, FRESH_SAGE } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , UNITS } = require('./constants');
+const { ALL_PURPOSE_FLOUR, DURUM_WHEAT, EGG, RICOTTA_CHEESE, PARMIGIANO_REGGIANO, SALT, BLACK_PEPPER, UNSALTED_BUTTER, SAGE, FRESH_SAGE } = require('./ingredients');
 
 const PASTA_SECTIONS = 'Pasta';
 const FILLING_SECTIONS = 'Filling';
@@ -32,19 +32,19 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: '2/3 c', unit: '', additionalDetails: '', section: PASTA_SECTIONS },
-        { ...DURUM_WHEAT, amount: '2/3 c', unit: '', additionalDetails: '', section: PASTA_SECTIONS },
-        { ...EGGS, amount: '3', unit: '', additionalDetails: '', section: PASTA_SECTIONS },
+        { ...ALL_PURPOSE_FLOUR, amount: 2/3, unit: UNITS.CUP, additionalDetails: '', section: PASTA_SECTIONS },
+        { ...DURUM_WHEAT, amount: 2/3, unit: UNITS.CUP, additionalDetails: '', section: PASTA_SECTIONS },
+        { ...EGG, amount: 3, unit: '', additionalDetails: '', section: PASTA_SECTIONS },
 
-        { ...RICOTTA_CHEESE, amount: '18 oz', unit: '', additionalDetails: '', section: FILLING_SECTIONS },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: FILLING_SECTIONS },
-        { ...PARMIGIANO_REGGIANO, amount: '3 Tbsp', unit: '', additionalDetails: '', section: FILLING_SECTIONS },
-        { ...SALT, amount: '2 tsp', unit: '', additionalDetails: '', section: FILLING_SECTIONS },
-        { ...BLACK_PEPPER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: FILLING_SECTIONS },
+        { ...RICOTTA_CHEESE, amount: 18, unit: UNITS.OUNCE, additionalDetails: '', section: FILLING_SECTIONS },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: FILLING_SECTIONS },
+        { ...PARMIGIANO_REGGIANO, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: FILLING_SECTIONS },
+        { ...SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: FILLING_SECTIONS },
+        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: FILLING_SECTIONS },
 
-        { ...UNSALTED_BUTTER, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTIONS },
+        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTIONS },
         { ...FRESH_SAGE, amount: '', unit: '', additionalDetails: '', section: SAUCE_SECTIONS },
-        { ...PARMIGIANO_REGGIANO, amount: '6 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTIONS },
+        { ...PARMIGIANO_REGGIANO, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTIONS },
     ],
     appliances: [
         { name: 'refrigerator' },

@@ -19,7 +19,7 @@ const mango17 = '../assets/Products/mango-sticky-rice-17.jpeg';
 const mango19 = '../assets/Products/mango-sticky-rice-19.jpeg';
 const mango20 = '../assets/Products/mango-sticky-rice-20.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
 const { COCONUT_MILK, WHITE_SUGAR, SALT, MANGOES, SESAME_SEEDS, SWEET_RICE, COCONUT_CREAM } = require('./ingredients');
 
 const SOAK_RICE = 'Soak Rice';
@@ -45,13 +45,13 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...SWEET_RICE, amount: '2 c', unit: '', additionalDetails: '', section: STICKY_RICE },
-        { ...COCONUT_MILK, amount: '13.5 oz', unit: '', additionalDetails: 'full-fat recommended', section: STICKY_RICE },
-        { ...WHITE_SUGAR, amount: '6 Tbsp', unit: '', additionalDetails: '', section: STICKY_RICE },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: STICKY_RICE},
-        { ...COCONUT_CREAM, amount: '2/3 c', unit: '', additionalDetails: 'full-fat recommended', section: COCONUT_CREAM_SAUCE },
-        { ...WHITE_SUGAR, amount: '3 Tbsp', unit: '', additionalDetails: '', section: COCONUT_CREAM_SAUCE },
-        { ...MANGOES, amount: '2', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...SWEET_RICE, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: STICKY_RICE },
+        { ...COCONUT_MILK, amount: 13.5, unit: UNITS.OUNCE, additionalDetails: 'full-fat recommended', section: STICKY_RICE },
+        { ...WHITE_SUGAR, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: STICKY_RICE },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: STICKY_RICE },
+        { ...COCONUT_CREAM, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: 'full-fat recommended', section: COCONUT_CREAM_SAUCE },
+        { ...WHITE_SUGAR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: COCONUT_CREAM_SAUCE },
+        { ...MANGOES, amount: 2, unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

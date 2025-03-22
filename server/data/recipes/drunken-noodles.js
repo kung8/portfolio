@@ -5,8 +5,8 @@ const drunken4 = '../assets/Products/drunken-noodles-4.jpeg';
 const drunken5 = '../assets/Products/drunken-noodles-5.jpeg';
 const drunken6 = '../assets/Products/drunken-noodles-6.jpeg';
 const drunken7 = '../assets/Products/drunken-noodles-7.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGGS, SERRANO_PEPPERS, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATOES } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGG, SERRANO_PEPPERS, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATOES } = require('./ingredients');
 
 const MAKE_SAUCE = 'Make Sauce';
 const COOK_NOODLES = 'Cook Noodles';
@@ -31,23 +31,23 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...SWEET_SOY_SAUCE, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...OYSTER_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...FISH_SAUCE, amount: '3 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHITE_SUGAR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SRIRACHA_SAUCE, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...THAI_BASIL, amount: '6 - 8 leaves', unit: '', additionalDetails: 'long thin strips/chiffonade', section: SECTIONS.SAUCE },
+        { ...SWEET_SOY_SAUCE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OYSTER_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...FISH_SAUCE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SRIRACHA_SAUCE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...THAI_BASIL, amount: 8, unit: UNITS.LEAF, additionalDetails: 'long thin strips/chiffonade', section: SECTIONS.SAUCE },
 
-        { ...PEANUT_OIL, amount: '3 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...GARLIC, amount: '2 - 3', unit: '', additionalDetails: 'minced', section: SECTIONS.NOODLES },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...SERRANO_PEPPERS, amount: '1 - 2', unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.NOODLES },
-        { ...LARGE_SHRIMP, amount: '6 - 8', unit: '', additionalDetails: 'peeled and deveined', section: SECTIONS.NOODLES },
-        { ...WHITE_ONION, amount: '1/2 medium', unit: '', additionalDetails: 'sliced', section: SECTIONS.NOODLES },
-        { ...FRESH_RICE_NOODLES, amount: '16 oz', unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...THAI_BASIL, amount: '1 c', unit: '', additionalDetails: 'packed', section: SECTIONS.NOODLES },
-        { ...GRAPE_TOMATOES, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...PEANUT_OIL, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.NOODLES },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...SERRANO_PEPPERS, amount: 2, unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.NOODLES },
+        { ...LARGE_SHRIMP, amount: 8, unit: '', additionalDetails: 'peeled and deveined', section: SECTIONS.NOODLES },
+        { ...WHITE_ONION, amount: 1 / 2, unit: UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.NOODLES },
+        { ...FRESH_RICE_NOODLES, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...THAI_BASIL, amount: 1, unit: UNITS.CUP, additionalDetails: 'packed', section: SECTIONS.NOODLES },
+        { ...GRAPE_TOMATOES, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.NOODLES },
     ],
     appliances: [
         { name: 'stove' },

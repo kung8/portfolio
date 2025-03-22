@@ -27,7 +27,7 @@ const well = '../assets/Products/pizza-flour-well.jpeg';
 const wellWater = '../assets/Products/pizza-flour-well-with-water.jpeg';
 const expandedWell = '../assets/Products/pizza-flour-expanded-well-with-water.jpeg';
 const dough = '../assets/Products/pizza-dough-in-bowl.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, METHODS, UNITS } = require("./constants");
 const {
     BREAD_FLOUR,
     SALT,
@@ -94,12 +94,12 @@ module.exports = {
         { label: 'Philly Cheese Steak Pizza', link: 'https://littlespicejar.com/philly-cheese-steak-pizza/' }
     ],
     ingredients: [
-        { ...BREAD_FLOUR, amount: '4 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...SALT, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...YEAST, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...HONEY, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WARM_WATER, amount: '2 c', unit: '', additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
-        { ...OLIVE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BREAD_FLOUR, amount: 9 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...HONEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: 2, unit: UNITS.CUP, additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
 
         // BBQ CHICKEN
         { ...BBQ_SAUCE, amount: '', unit: '', additionalDetails: '', section: BBQ_CHICKEN_PIZZA },
@@ -109,19 +109,19 @@ module.exports = {
         { ...RED_BELL_PEPPERS, amount: '', unit: '', additionalDetails: 'sliced or diced', section: BBQ_CHICKEN_PIZZA },
 
         // BOBO BRAZIL- TOPPINGS
-        { ...OLIVE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BOBO_BRAZIL_PIZZA },
+        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BOBO_BRAZIL_PIZZA },
         { ...MOZZARELLA_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: BOBO_BRAZIL_PIZZA },
         { ...SAUSAGE, amount: '', unit: '', additionalDetails: '', section: BOBO_BRAZIL_PIZZA },
         { ...RED_ONION, amount: '', unit: '', additionalDetails: 'sliced or diced', section: BOBO_BRAZIL_PIZZA },
         // BOBO BRAZIL- SAUCE
-        { ...OLIVE_OIL, amount: '2 tsp', unit: '', additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
-        { ...HONEY, amount: '2 Tbsp', unit: '', additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
-        { ...RED_PEPPER_FLAKES, amount: '1/2 tsp', unit: '', additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
+        { ...HONEY, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
+        { ...RED_PEPPER_FLAKES, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BOBO_BRAZIL_SAUCE },
 
         // BUFFALO CHICKEN - SAUCE
-        { ...PIZZA_SAUCE, amount: '1/2 c', unit: '', additionalDetails: '', section: BUFFALO_CHICKEN_SAUCE },
-        { ...BUFFALO_SAUCE, amount: '1/3 c', unit: '', additionalDetails: '', section: BUFFALO_CHICKEN_SAUCE },
-        { ...RANCH_DRESSING, amount: '1/4 c', unit: '', additionalDetails: '', section: BUFFALO_CHICKEN_SAUCE },
+        { ...PIZZA_SAUCE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: BUFFALO_CHICKEN_SAUCE },
+        { ...BUFFALO_SAUCE, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: BUFFALO_CHICKEN_SAUCE },
+        { ...RANCH_DRESSING, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: BUFFALO_CHICKEN_SAUCE },
         // BUFFALO CHICKEN - TOPPINGS
         { ...MOZZARELLA_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: BUFFALO_CHICKEN_PIZZA },
         { ...CHICKEN_BREAST, amount: '', unit: '', additionalDetails: '', section: BUFFALO_CHICKEN_PIZZA },
@@ -144,21 +144,21 @@ module.exports = {
         { ...PEPPERONI, amount: '', unit: '', additionalDetails: '', section: PEPPERONI_PIZZA },
 
         // PHILLY CHEESESTEAK - SAUCE
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
-        { ...ALL_PURPOSE_FLOUR, amount: '1 Tbsp', unit: '', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
-        { ...MILK, amount: '1/2 c', unit: '', additionalDetails: 'cold', section: PHILLY_CHEESESTEAK_SAUCE },
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: 'minced', section: PHILLY_CHEESESTEAK_SAUCE },
-        { ...SALT, amount: '1/8 tsp', unit: '', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
-        { ...BLACK_PEPPER, amount: 'pinch', unit: '', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
-        { ...NUTMEG, amount: 'pinch', unit: '', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
-        { ...PARMESAN_CHEESE, amount: '1/4 c', unit: '', additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
+        { ...MILK, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'cold', section: PHILLY_CHEESESTEAK_SAUCE },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: PHILLY_CHEESESTEAK_SAUCE },
+        { ...SALT, amount: 1 / 8, unit: UNITS.TEASPOON, additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
+        { ...BLACK_PEPPER, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
+        { ...NUTMEG, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
+        { ...PARMESAN_CHEESE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: PHILLY_CHEESESTEAK_SAUCE },
         // PHILLY CHEESESTEAK - TOPPINGS
-        { ...OLIVE_OIL, amount: '2 tsp', unit: '', additionalDetails: '', section: PHILLY_CHEESESTEAK_PIZZA },
-        { ...FLANK_STEAK, amount: '6 oz', unit: '', additionalDetails: 'thinly sliced', section: PHILLY_CHEESESTEAK_PIZZA },
-        { ...RED_BELL_PEPPERS, amount: '1/2', unit: '', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
-        { ...MUSHROOMS, amount: '5', unit: '', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
-        { ...YELLOW_ONION, amount: '1/2 medium', unit: '', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
-        { ...PROVOLONE_CHEESE, amount: '1 1/4 c', unit: '', additionalDetails: 'shredded', section: PHILLY_CHEESESTEAK_PIZZA },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PHILLY_CHEESESTEAK_PIZZA },
+        { ...FLANK_STEAK, amount: 6, unit: UNITS.OUNCE, additionalDetails: 'thinly sliced', section: PHILLY_CHEESESTEAK_PIZZA },
+        { ...RED_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
+        { ...MUSHROOMS, amount: 5, unit: '', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.MEDIUM, additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
+        { ...PROVOLONE_CHEESE, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: 'shredded', section: PHILLY_CHEESESTEAK_PIZZA },
 
         // RANCH CHICKEN
         { ...RANCH_DRESSING, amount: '', unit: '', additionalDetails: '', section: RANCH_CHICKEN_PIZZA },

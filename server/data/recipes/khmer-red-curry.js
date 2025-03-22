@@ -11,7 +11,7 @@ const nonBeans3 = '../assets/Products/khmer-red-curry-non-green-beans-3.jpeg';
 const plated1 = '../assets/Products/khmer-red-curry-plated-1.jpeg';
 const veggies = '../assets/Products/khmer-red-curry-veggies.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     RED_CURRY_PASTE,
@@ -42,12 +42,12 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...CHICKEN_THIGH, amount: '5 lbs', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...RED_CURRY_PASTE, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RUSSET_POTATOES, amount: '1', unit: '', additionalDetails: 'peeled and cubed', section: SECTIONS.MAIN },
-        { ...COCONUT_MILK, amount: '13.5 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_THIGH, amount: 5, unit: UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...RED_CURRY_PASTE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...RUSSET_POTATOES, amount: 1, unit: '', additionalDetails: 'peeled and cubed', section: SECTIONS.MAIN },
+        { ...COCONUT_MILK, amount: 13.5, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...LEMONGRASS, amount: '', unit: '', additionalDetails: 'diagonally sliced', section: SECTIONS.MAIN },
-        { ...KAFFIR_LIME_LEAVES, amount: '10 - 12', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...KAFFIR_LIME_LEAVES, amount: 12, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...WARM_WATER, amount: '', unit: '', additionalDetails: 'to thin', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },

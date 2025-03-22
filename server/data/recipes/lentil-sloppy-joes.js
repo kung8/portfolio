@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { OLIVE_OIL, YELLOW_ONION, BROWN_LENTILS, CARROTS, GARLIC, KETCHUP, DIJON_MUSTARD, BROWN_SUGAR, CHILI_POWDER, WORCESTERSHIRE_SAUCE, HOT_SAUCE, SALT, BBQ_SAUCE, HAMBURGER_BUNS, LETTUCE, WHITE_ONION, PICKLES, AVOCADO, VEGETABLE_BROTH } = require('./ingredients');
 
 const SAUTE = 'Saute';
@@ -26,22 +26,22 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...OLIVE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SAUTE },
-        { ...YELLOW_ONION, amount: '1 small', unit: '', additionalDetails: 'finely diced', section: SAUTE },
-        { ...CARROTS, amount: '1/2 c', unit: '', additionalDetails: 'diced', section: SAUTE },
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: 'minced', section: SAUTE },
-        { ...BROWN_LENTILS, amount: '1 c', unit: '', additionalDetails: 'rinsed', section: SECTIONS.SAUCE },
-        { ...KETCHUP, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...DIJON_MUSTARD, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BROWN_SUGAR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...CHILI_POWDER, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WORCESTERSHIRE_SAUCE, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...HOT_SAUCE, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...VEGETABLE_BROTH, amount: '2 1/4 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        
-        { ...BBQ_SAUCE, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
-        { ...HAMBURGER_BUNS, amount: '5', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
+        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUTE },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'finely diced', section: SAUTE },
+        { ...CARROTS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'diced', section: SAUTE },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SAUTE },
+        { ...BROWN_LENTILS, amount: 1, unit: UNITS.CUP, additionalDetails: 'rinsed', section: SECTIONS.SAUCE },
+        { ...KETCHUP, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...DIJON_MUSTARD, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROWN_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CHILI_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WORCESTERSHIRE_SAUCE, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HOT_SAUCE, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...VEGETABLE_BROTH, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+
+        { ...BBQ_SAUCE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SERVE },
+        { ...HAMBURGER_BUNS, amount: 5, unit: '', additionalDetails: '', section: SECTIONS.SERVE },
 
         { ...LETTUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...WHITE_ONION, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },

@@ -12,8 +12,8 @@ const wet4 = '../assets/Products/brickle-bars-wet-4.jpeg';
 const wet7 = '../assets/Products/brickle-bars-wet-7.jpeg';
 const plated4 = '../assets/Products/brickle-bars-plated-4.jpeg';
 const plated6 = '../assets/Products/brickle-bars-plated-6.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, WHITE_SUGAR, BROWN_SUGAR, EGGS, VANILLA_EXTRACT, ENGLISH_TOFFEE_BITS } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, WHITE_SUGAR, BROWN_SUGAR, EGG, VANILLA_EXTRACT, ENGLISH_TOFFEE_BITS } = require('./ingredients');
 
 const PREPARATION = 'Preparation';
 const DRY_INGREDIENTS = 'Dry Ingredients';
@@ -34,16 +34,16 @@ module.exports = {
     cookTime: '30 m',
     separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: 'softened', section: PREPARATION },
-        { ...ALL_PURPOSE_FLOUR, amount: '1 1/2 c', unit: '', additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...BAKING_POWDER, amount: '2 tsp', unit: '', additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...UNSALTED_BUTTER, amount: '1/2 c', unit: '', additionalDetails: 'softened', section: WET_INGREDIENTS },
-        { ...WHITE_SUGAR, amount: '1 c', unit: '', additionalDetails: '', section: WET_INGREDIENTS },
-        { ...BROWN_SUGAR, amount: '1/2 c', unit: '', additionalDetails: '', section: WET_INGREDIENTS },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: WET_INGREDIENTS },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', section: WET_INGREDIENTS },
-        { ...ENGLISH_TOFFEE_BITS, amount: '8 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'softened', section: PREPARATION },
+        { ...ALL_PURPOSE_FLOUR, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: DRY_INGREDIENTS },
+        { ...BAKING_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'softened', section: WET_INGREDIENTS },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: WET_INGREDIENTS },
+        { ...BROWN_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: WET_INGREDIENTS },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: WET_INGREDIENTS },
+        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: WET_INGREDIENTS },
+        { ...ENGLISH_TOFFEE_BITS, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

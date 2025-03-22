@@ -9,7 +9,7 @@ const ice = '../assets/Products/chicken-ramen-ice-bath.jpeg';
 const noodles = '../assets/Products/chicken-ramen-noodles.jpeg';
 const rawChicken = '../assets/Products/chicken-ramen-raw-chicken.jpeg';
 const sliced = '../assets/Products/chicken-ramen-sliced.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     UNSALTED_BUTTER,
@@ -22,7 +22,7 @@ const {
     MIRIN,
     CHICKEN_BROTH,
     MUSHROOMS,
-    EGGS,
+    EGG,
     DRIED_RAMEN_NOODLES,
     GREEN_ONIONS,
 } = require('./ingredients');
@@ -46,21 +46,21 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHICKEN_BREAST, amount: '2', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to season', section: SECTIONS.CHICKEN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to season', section: SECTIONS.CHICKEN },
-        { ...SESAME_OIL, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...GINGER, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...LIGHT_SOY_SAUCE, amount: '3 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...MIRIN, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...CHICKEN_BROTH, amount: '4 c', unit: '', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...MUSHROOMS, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: SECTIONS.EGGS },
-        { ...DRIED_RAMEN_NOODLES, amount: '2 - 3 oz', unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...GREEN_ONIONS, amount: '3', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...SESAME_OIL, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...GINGER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...LIGHT_SOY_SAUCE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...MIRIN, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...CHICKEN_BROTH, amount: 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...MUSHROOMS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.EGGS },
+        { ...DRIED_RAMEN_NOODLES, amount: 3, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...GREEN_ONIONS, amount: 3, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },
@@ -89,9 +89,9 @@ module.exports = {
         { step: 'Remove the lid, turn down the heat, and let simmer for 5 minutes.', type: SECTIONS.BROTH },
         { step: 'Add mushrooms and salt to taste and cook for another 10 minutes.', type: SECTIONS.BROTH, img: broth },
         { step: 'Over medium-high heat, bring a pot of water to a boil.', type: SECTIONS.EGGS },
-        { step: 'Gently lower cold eggs into the pot and let cook for 7 to 8 minutes.', type: SECTIONS.EGGS, img: boiled },
-        { step: 'Prepare an ice water bath, and transfer the eggs into it once it is cooked. Leave in the bath for 5 minutes.', type: SECTIONS.EGGS, img: ice },
-        { step: 'Slice the eggs in half length-wise.', type: SECTIONS.EGGS, img: sliced },
+        { step: 'Gently lower cold eggs into the pot and let cook for 7 to 8 minutes.', type: SECTIONS.EGG, img: boiled },
+        { step: 'Prepare an ice water bath, and transfer the eggs into it once it is cooked. Leave in the bath for 5 minutes.', type: SECTIONS.EGG, img: ice },
+        { step: 'Slice the eggs in half length-wise.', type: SECTIONS.EGG, img: sliced },
         { step: 'After the eggs are removed from the pot, place the dried noodles in the boiling water.', type: SECTIONS.NOODLES, img: noodles },
         { step: 'Cook for 2 to 3 minutes and divide into bowls.', type: SECTIONS.NOODLES },
         { step: 'Pour broth over ramen, chicken, and eggs. Top with green onions. Enjoy this upgraded ramen!', type: SECTIONS.SERVE, img: bowl },

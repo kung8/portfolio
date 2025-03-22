@@ -14,8 +14,8 @@ const walnuts = '../assets/Products/carrot-cake-walnuts.jpeg';
 const side = '../assets/Products/carrot-cake-plated-side.jpeg';
 const zoomed = '../assets/Products/carrot-cake-plated-zoomed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { BROWN_SUGAR, CARROTS, EGGS, WHITE_SUGAR, VEGETABLE_OIL, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, CINNAMON, BAKING_SODA, SALT, BAKING_POWDER, CREAM_CHEESE, UNSALTED_BUTTER, POWDERED_SUGAR, WALNUTS } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { BROWN_SUGAR, CARROTS, EGG, WHITE_SUGAR, VEGETABLE_OIL, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, CINNAMON, BAKING_SODA, SALT, BAKING_POWDER, CREAM_CHEESE, UNSALTED_BUTTER, POWDERED_SUGAR, WALNUTS } = require('./ingredients');
 
 const CARROT_MIXTURE = 'Carrot Mixture';
 const CAKE = 'Cake';
@@ -41,23 +41,23 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CARROTS, amount: '6 c', unit: '', additionalDetails: 'freshly grated', section: CARROT_MIXTURE },
-        { ...BROWN_SUGAR, amount: '1 c', unit: '', additionalDetails: '', section: CARROT_MIXTURE },
-        { ...EGGS, amount: '4', unit: '', additionalDetails: '', section: CAKE },
-        { ...WHITE_SUGAR, amount: '1 1/2 c', unit: '', additionalDetails: '', section: CAKE },
-        { ...VEGETABLE_OIL, amount: '1 c', unit: '', additionalDetails: '', section: CAKE },
-        { ...VANILLA_EXTRACT, amount: '2 tsp', unit: '', additionalDetails: '', section: CAKE },
-        { ...ALL_PURPOSE_FLOUR, amount: '3 c', unit: '', additionalDetails: '', section: CAKE },
-        { ...CINNAMON, amount: '4 tsp', unit: '', additionalDetails: '', section: CAKE },
-        { ...BAKING_POWDER, amount: '2 tsp', unit: '', additionalDetails: '', section: CAKE },
-        { ...BAKING_SODA, amount: '2 tsp', unit: '', additionalDetails: '', section: CAKE },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: CAKE },
-        { ...WALNUTS, amount: '1 c', unit: '', additionalDetails: '', section: CAKE },
-        { ...CREAM_CHEESE, amount: '8 oz', unit: '', additionalDetails: 'softened', section: FROSTING },
-        { ...UNSALTED_BUTTER, amount: '1/4 c', unit: '', additionalDetails: 'softened', section: FROSTING },
-        { ...POWDERED_SUGAR, amount: '1 c', unit: '', additionalDetails: '', section: FROSTING },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', section: FROSTING },
-        { ...WALNUTS, amount: '1/2 c', unit: '', additionalDetails: '', section: ASSEMBLING },
+        { ...CARROTS, amount: 6, unit: UNITS.CUP, additionalDetails: 'freshly grated', section: CARROT_MIXTURE },
+        { ...BROWN_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CARROT_MIXTURE },
+        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: CAKE },
+        { ...WHITE_SUGAR, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: CAKE },
+        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CAKE },
+        { ...VANILLA_EXTRACT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CAKE },
+        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: CAKE },
+        { ...CINNAMON, amount: 4, unit: UNITS.TEASPOON, additionalDetails: '', section: CAKE },
+        { ...BAKING_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CAKE },
+        { ...BAKING_SODA, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CAKE },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: CAKE },
+        { ...WALNUTS, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CAKE },
+        { ...CREAM_CHEESE, amount: 8, unit: UNITS.OUNCE, additionalDetails: 'softened', section: FROSTING },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: 'softened', section: FROSTING },
+        { ...POWDERED_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: FROSTING },
+        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: FROSTING },
+        { ...WALNUTS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: ASSEMBLING },
     ],
     appliances: [
         { name: 'oven' },

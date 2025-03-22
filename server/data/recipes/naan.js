@@ -13,7 +13,7 @@ const naan12 = '../assets/Products/naan-12.jpeg';
 const naan13 = '../assets/Products/naan-13.jpeg';
 const naan14 = '../assets/Products/naan-14.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
 const { WARM_WATER, WHITE_SUGAR, YEAST, ALL_PURPOSE_FLOUR, YOGURT, SALT, OLIVE_OIL, UNSALTED_BUTTER, CILANTRO } = require('./ingredients');
 
 const ACTIVATE_YEAST = 'Activate Yeast';
@@ -36,15 +36,15 @@ module.exports = {
     cookTime: '15 m',
     separated: true,
     ingredients: [
-        { ...WARM_WATER, amount: '1/2 c', unit: '', additionalDetails: '', section: ACTIVATE_YEAST },
-        { ...WHITE_SUGAR, amount: '1 tsp', unit: '', additionalDetails: '', section: ACTIVATE_YEAST },
-        { ...YEAST, amount: '2 1/4 tsp', unit: '', additionalDetails: '', section: ACTIVATE_YEAST },
-        { ...ALL_PURPOSE_FLOUR, amount: '2 1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YOGURT, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: 'plus more to taste', section: SECTIONS.MAIN },
-        { ...OLIVE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '3 Tbsp', unit: '', additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { ...CILANTRO, amount: '2 sprigs', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: ACTIVATE_YEAST },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: ACTIVATE_YEAST },
+        { ...YEAST, amount: 9 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: ACTIVATE_YEAST },
+        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YOGURT, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: 'plus more to taste', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...CILANTRO, amount: 2, unit: UNITS.SPRIG, additionalDetails: 'chopped', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

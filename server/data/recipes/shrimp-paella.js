@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { SHRIMP, OLIVE_OIL, SAFFRON_THREADS, CHICKEN_BROTH, CHORIZO, YELLOW_ONION, GARLIC, RED_BELL_PEPPERS, SALT, PAPRIKA, CAYENNE_PEPPER, GREEN_PEAS, ARBORIO_RICE, PARSLEY, LEMON } = require('./ingredients');
 
 const SAFFRON_BROTH = 'Saffron Broth';
@@ -25,21 +25,21 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...SHRIMP, amount: '1 lb jumbo', unit: '', additionalDetails: 'deveined with peels', section: SAFFRON_BROTH },
-        { ...OLIVE_OIL, amount: '2 tsp', unit: '', additionalDetails: '', section: SAFFRON_BROTH },
-        { ...SAFFRON_THREADS, amount: '1 tsp', unit: '', additionalDetails: '', section: SAFFRON_BROTH },
-        { ...CHICKEN_BROTH, amount: '2 1/4 c', unit: '', additionalDetails: '', section: SAFFRON_BROTH },
+        { ...SHRIMP, amount: 1, unit: UNITS.POUND, additionalDetails: 'deveined with peels', section: SAFFRON_BROTH },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SAFFRON_BROTH },
+        { ...SAFFRON_THREADS, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SAFFRON_BROTH },
+        { ...CHICKEN_BROTH, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: SAFFRON_BROTH },
 
-        { ...OLIVE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: PAELLA },
-        { ...CHORIZO, amount: '8 oz', unit: '', additionalDetails: 'thin round slices', section: PAELLA },
-        { ...YELLOW_ONION, amount: '1/2 small', unit: '', additionalDetails: 'diced', section: PAELLA },
-        { ...GARLIC, amount: '2 cloves', unit: '', additionalDetails: 'minced', section: PAELLA },
-        { ...ARBORIO_RICE, amount: '1 1/3 c', unit: '', additionalDetails: '', section: PAELLA },
-        { ...GREEN_PEAS, amount: '1/2 c', unit: '', additionalDetails: '', section: PAELLA },
-        { ...RED_BELL_PEPPERS, amount: '1', unit: '', additionalDetails: 'thin slices', section: PAELLA },
+        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: PAELLA },
+        { ...CHORIZO, amount: 8, unit: UNITS.OUNCE, additionalDetails: 'thin round slices', section: PAELLA },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.SMALL, additionalDetails: 'diced', section: PAELLA },
+        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: PAELLA },
+        { ...ARBORIO_RICE, amount: 4 / 3, unit: UNITS.CUP, additionalDetails: '', section: PAELLA },
+        { ...GREEN_PEAS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: PAELLA },
+        { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'thin slices', section: PAELLA },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: PAELLA },
-        { ...PAPRIKA, amount: '1 tsp', unit: '', additionalDetails: '', section: PAELLA },
-        { ...CAYENNE_PEPPER, amount: '1 pinch', unit: '', additionalDetails: 'or to taste', section: PAELLA },
+        { ...PAPRIKA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: PAELLA },
+        { ...CAYENNE_PEPPER, amount: 1, unit: UNITS.PINCH, additionalDetails: 'or to taste', section: PAELLA },
 
         { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...PARSLEY, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },

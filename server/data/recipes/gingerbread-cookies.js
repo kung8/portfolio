@@ -24,7 +24,7 @@ const frosting2 = '../assets/Products/gingerbread-men-cookies-frosting-2.jpeg';
 const frosting3 = '../assets/Products/gingerbread-men-cookies-frosting-3.jpeg';
 const frosting4 = '../assets/Products/gingerbread-men-cookies-frosting-4.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BROWN_SUGAR, BAKING_SODA, CINNAMON, GROUND_GINGER, GROUND_CLOVES, SALT, UNSALTED_BUTTER, MOLASSES, MILK, POWDERED_SUGAR } = require('./ingredients');
 
 const GINGERBREAD_DRY_INGREDIENTS = 'Gingerbread Dry Ingredients';
@@ -50,21 +50,21 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: '3 c', unit: '', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
-        { ...BROWN_SUGAR, amount: '3/4 c', unit: '', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
-        { ...BAKING_SODA, amount: '3/4 tsp', unit: '', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
-        { ...CINNAMON, amount: '1 Tbsp', unit: '', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
-        { ...GROUND_GINGER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
-        { ...GROUND_CLOVES, amount: '1/2 tsp', unit: '', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...BROWN_SUGAR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...BAKING_SODA, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...CINNAMON, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...GROUND_GINGER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...GROUND_CLOVES, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: GINGERBREAD_DRY_INGREDIENTS },
 
-        { ...UNSALTED_BUTTER, amount: '12 Tbsp', unit: '', additionalDetails: 'room temperature, divided into 12 pieces', section: GINGERBREAD_BATTER },
-        { ...MOLASSES, amount: '3/4 c', unit: '', additionalDetails: '', section: GINGERBREAD_BATTER },
-        { ...MILK, amount: '2 Tbsp', unit: '', additionalDetails: '', section: GINGERBREAD_BATTER },
+        { ...UNSALTED_BUTTER, amount: 12, unit: UNITS.TABLESPOON, additionalDetails: 'room temperature, divided into 12 pieces', section: GINGERBREAD_BATTER },
+        { ...MOLASSES, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: GINGERBREAD_BATTER },
+        { ...MILK, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: GINGERBREAD_BATTER },
 
-        { ...UNSALTED_BUTTER, amount: '2 Tbsp', unit: '', additionalDetails: '', section: FROSTING },
-        { ...MILK, amount: '2 Tbsp', unit: '', additionalDetails: '', section: FROSTING },
-        { ...POWDERED_SUGAR, amount: '2 c', unit: '', additionalDetails: '', section: FROSTING },
+        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: FROSTING },
+        { ...MILK, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: FROSTING },
+        { ...POWDERED_SUGAR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: FROSTING },
     ],
     appliances: [
         { name: 'stand mixer' },

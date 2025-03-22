@@ -6,7 +6,7 @@ const melted = '../assets/Products/chicken-stuffed-crescent-rolls-melted-butter.
 const opened = '../assets/Products/chicken-stuffed-crescent-rolls-opened.jpeg';
 const wrap = '../assets/Products/chicken-stuffed-crescent-rolls-wrap.jpeg';
 const wrapped = '../assets/Products/chicken-stuffed-crescent-rolls-wrapped.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require('./constants');
 const {
     MOZZARELLA_CHEESE,
     CREAM_CHEESE,
@@ -35,18 +35,18 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '12 m',
     ingredients: [
-        { ...CRESCENT_ROLLS, amount: '1 can', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHICKEN_BREAST, amount: '1 c', unit: '', additionalDetails: 'cooked and shredded', section: SECTIONS.FILLING },
-        { ...MOZZARELLA_CHEESE, amount: '1/2 c', unit: '', additionalDetails: 'shredded', section: SECTIONS.FILLING },
-        { ...CREAM_CHEESE, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...RED_BELL_PEPPERS, amount: '1', unit: '', additionalDetails: 'diced', section: SECTIONS.FILLING },
-        { ...YELLOW_ONION, amount: '3/4 medium', unit: '', additionalDetails: 'diced', section: SECTIONS.FILLING },
-        { ...GARLIC_POWDER, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...PARSLEY, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CRESCENT_ROLLS, amount: 1, unit: UNITS.CAN, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_BREAST, amount: 1, unit: UNITS.CUP, additionalDetails: 'cooked and shredded', section: SECTIONS.FILLING },
+        { ...MOZZARELLA_CHEESE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.FILLING },
+        { ...CREAM_CHEESE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.FILLING },
+        { ...YELLOW_ONION, amount: 3 / 4, unit: UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.FILLING },
+        { ...GARLIC_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...PARSLEY, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.FILLING },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.FILLING },
         { ...CHILI_POWDER, amount: '', unit: '', additionalDetails: 'too taste', section: SECTIONS.FILLING },
-        { ...UNSALTED_BUTTER, amount: '2 Tbsp', unit: '', additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

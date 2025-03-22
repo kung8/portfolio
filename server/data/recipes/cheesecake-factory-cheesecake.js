@@ -16,12 +16,12 @@ const smallSlice = '../assets/Products/cheesecake-small-slice.jpeg';
 const strawberriesInPan = '../assets/Products/cheesecake-strawberries-in-pan.jpeg';
 const wholeGlazed = '../assets/Products/cheesecake-whole-glazed-strawberry.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, UNITS } = require("./constants");
 const {
     WHITE_SUGAR,
     UNSALTED_BUTTER,
     CREAM_CHEESE,
-    EGGS,
+    EGG,
     VANILLA_EXTRACT,
     SOUR_CREAM,
     ALL_PURPOSE_FLOUR,
@@ -53,21 +53,21 @@ module.exports = {
     ],
     ingredients: [
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.CRUST },
-        { ...GRAHAM_CRACKER, amount: '14.4 oz', unit: '', additionalDetails: 'finely crushed', section: SECTIONS.CRUST },
-        { ...WHITE_SUGAR, amount: '6 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.CRUST },
-        { ...UNSALTED_BUTTER, amount: '12 Tbsp', unit: '', additionalDetails: 'melted', section: SECTIONS.CRUST },
-        { ...CREAM_CHEESE, amount: '32 oz', unit: '', additionalDetails: 'softened', section: SECTIONS.FILLING },
-        { ...WHITE_SUGAR, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...EGGS, amount: '4', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...SOUR_CREAM, amount: '8 oz', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...ALL_PURPOSE_FLOUR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...STRAWBERRIES, amount: '1 lb', unit: '', additionalDetails: 'halved', section: SECTIONS.TOPPINGS },
-        { ...CORNSTARCH, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...WARM_WATER, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...WHITE_SUGAR, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...LEMON, amount: '1', unit: '', additionalDetails: 'juiced', section: SECTIONS.TOPPINGS },
+        { ...GRAHAM_CRACKER, amount: 14.4, unit: UNITS.OUNCE, additionalDetails: 'finely crushed', section: SECTIONS.CRUST },
+        { ...WHITE_SUGAR, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CRUST },
+        { ...UNSALTED_BUTTER, amount: 12, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.CRUST },
+        { ...CREAM_CHEESE, amount: 32, unit: UNITS.OUNCE, additionalDetails: 'softened', section: SECTIONS.FILLING },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SOUR_CREAM, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...STRAWBERRIES, amount: 1, unit: UNITS.POUND, additionalDetails: 'halved', section: SECTIONS.TOPPINGS },
+        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...WARM_WATER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...WHITE_SUGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...LEMON, amount: 1, unit: '', additionalDetails: 'juiced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'oven' },

@@ -9,7 +9,7 @@ const potatoes8 = '../assets/Products/mash-potatoes-8.jpeg';
 const potatoes9 = '../assets/Products/mash-potatoes-9.jpeg';
 const potatoes10 = '../assets/Products/mash-potatoes-10.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { YUKON_GOLD_POTATOES, GARLIC, UNSALTED_BUTTER, MILK, SALT, BLACK_PEPPER, GREEN_ONIONS, SOUR_CREAM, CHEDDAR_CHEESE, CHIVES } = require('./ingredients');
 
 module.exports = {
@@ -29,10 +29,10 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...YUKON_GOLD_POTATOES, amount: '4 lbs', unit: '', additionalDetails: 'peeled and quartered', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '1/3 c', unit: '', additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { ...MILK, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YUKON_GOLD_POTATOES, amount: 4, unit: UNITS.POUND, additionalDetails: 'peeled and quartered', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...MILK, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.TOPPINGS },

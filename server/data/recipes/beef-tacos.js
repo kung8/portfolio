@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
 const { OLIVE_OIL, GROUND_BEEF, CHILI_POWDER, CUMIN, OREGANO, GARLIC_POWDER, SALT, BLACK_PEPPER, TOMATO_PASTE, WARM_WATER, FLOUR_TORTILLA, LETTUCE, MEXICAN_BLEND_CHEESE, ROMA_TOMATO, RED_ONION } = require('./ingredients');
 
 const TACO_FILLING = 'Taco Filling';
@@ -27,17 +27,17 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...OLIVE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: TACO_FILLING },
-        { ...GROUND_BEEF, amount: '1 lb', unit: '', additionalDetails: '', section: TACO_FILLING },
-        { ...CHILI_POWDER, amount: '2 tsp', unit: '', additionalDetails: '', section: TACO_FILLING },
-        { ...CUMIN, amount: '2 tsp', unit: '', additionalDetails: '', section: TACO_FILLING },
-        { ...OREGANO, amount: '1/2 tsp', unit: '', additionalDetails: '', section: TACO_FILLING },
-        { ...GARLIC_POWDER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: TACO_FILLING },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: TACO_FILLING },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: TACO_FILLING },
-        { ...TOMATO_PASTE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: TACO_FILLING },
-        { ...WARM_WATER, amount: '1/2 c', unit: '', additionalDetails: '', section: TACO_FILLING },
-        { ...FLOUR_TORTILLA, amount: '8', unit: '', additionalDetails: '', section: TACO_SHELLS },
+        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...GROUND_BEEF, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: TACO_FILLING },
+        { ...CHILI_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...CUMIN, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...OREGANO, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...GARLIC_POWDER, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...SALT, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...BLACK_PEPPER, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...TOMATO_PASTE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...WARM_WATER, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: TACO_FILLING },
+        { ...FLOUR_TORTILLA, amount: 8, unit: '', additionalDetails: '', section: TACO_SHELLS },
         { ...LETTUCE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
         { ...MEXICAN_BLEND_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
         { ...ROMA_TOMATO, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },

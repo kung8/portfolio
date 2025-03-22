@@ -2,7 +2,7 @@ const combined = '../assets/Products/caramelized-mushroom-combined.jpeg';
 const cooked = '../assets/Products/caramelized-mushroom-cooked.jpeg';
 const cooking = '../assets/Products/caramelized-mushroom-cooking.jpeg';
 const raw = '../assets/Products/caramelized-mushroom-raw.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS } = require("./constants");
 const {
     MUSHROOMS,
     UNSALTED_BUTTER,
@@ -25,11 +25,11 @@ module.exports = {
     prepTime: '2 m',
     cookTime: '20 m',
     ingredients: [
-        { ...MUSHROOMS, amount: '8 oz', unit: '', additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...UNSALTED_BUTTER, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...BROWN_SUGAR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...BALSAMIC_VINEGAR, amount: '3 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...LIGHT_SOY_SAUCE, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...MUSHROOMS, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...BROWN_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...BALSAMIC_VINEGAR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPING },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
     ],

@@ -15,7 +15,7 @@ const vanillaMixed = '../assets/Products/creme-brulee-vanilla-sugar-mixed.jpeg';
 const vanillaUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-unmixed.jpeg';
 const sugarYolksMixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-mixed.jpeg';
 const sugarYolksUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-unmixed.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
 const { HEAVY_CREAM, VANILLA_BEAN, EGG_YOLKS, HOT_WATER, WHITE_SUGAR } = require('./ingredients');
 
 const CREAM = 'Cream';
@@ -41,13 +41,13 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...WHITE_SUGAR, amount: '2 c', unit: '', additionalDetails: '', section: VANILLA_SUGAR },
-        { ...VANILLA_BEAN, amount: '1', unit: '', additionalDetails: 'split and scraped', section: VANILLA_SUGAR },
+        { ...WHITE_SUGAR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: VANILLA_SUGAR },
+        { ...VANILLA_BEAN, amount: 1, unit: '', additionalDetails: 'split and scraped', section: VANILLA_SUGAR },
 
-        { ...HEAVY_CREAM, amount: '1 qt', unit: '', additionalDetails: '', section: CREAM },
-        { ...VANILLA_BEAN, amount: '1', unit: '', additionalDetails: 'split and scraped', section: CREAM },
-        { ...EGG_YOLKS, amount: '6', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HOT_WATER, amount: '2 qt', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HEAVY_CREAM, amount: 1, unit: UNITS.QUART, additionalDetails: '', section: CREAM },
+        { ...VANILLA_BEAN, amount: 1, unit: '', additionalDetails: 'split and scraped', section: CREAM },
+        { ...EGG_YOLKS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HOT_WATER, amount: 2, unit: UNITS.QUART, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

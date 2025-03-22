@@ -9,8 +9,8 @@ const rice8 = '../assets/Products/chinese-fried-rice-8.jpeg';
 const rice9 = '../assets/Products/chinese-fried-rice-9.jpeg';
 const rice10 = '../assets/Products/chinese-fried-rice-10.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { JASMINE_RICE, COLD_WATER, GREEN_ONIONS, CARROTS, FROZEN_CORN, FROZEN_PEAS, EGGS, SALT, VEGETABLE_OIL, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, WHITE_SUGAR, CHICKEN_BOUILLON, CHINESE_SAUSAGE } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { JASMINE_RICE, COLD_WATER, GREEN_ONIONS, CARROTS, FROZEN_CORN, FROZEN_PEAS, EGG, SALT, VEGETABLE_OIL, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, WHITE_SUGAR, CHICKEN_BOUILLON, CHINESE_SAUSAGE } = require('./ingredients');
 
 const RICE_SECTION = 'Rice';
 const VEGGIES_SECTION = 'Veggies';
@@ -44,27 +44,27 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...JASMINE_RICE, amount: '2 c', unit: '', additionalDetails: 'uncooked', section: RICE_SECTION },
-        { ...COLD_WATER, amount: '2 c', unit: '', additionalDetails: '', section: RICE_SECTION },
+        { ...JASMINE_RICE, amount: 2, unit: UNITS.CUP, additionalDetails: 'uncooked', section: RICE_SECTION },
+        { ...COLD_WATER, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: RICE_SECTION },
 
-        { ...CARROTS, amount: '2 oz', unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
-        { ...FROZEN_CORN, amount: '2 oz', unit: '', additionalDetails: '', section: VEGGIES_SECTION },
-        { ...FROZEN_PEAS, amount: '2 oz', unit: '', additionalDetails: '', section: VEGGIES_SECTION },
-        { ...COLD_WATER, amount: '1/3 c', unit: '', additionalDetails: '', section: VEGGIES_SECTION },
+        { ...CARROTS, amount: 2, unit: UNITS.OUNCE, additionalDetails: 'diced', section: VEGGIES_SECTION },
+        { ...FROZEN_CORN, amount: 2, unit: UNITS.OUNCE, additionalDetails: '', section: VEGGIES_SECTION },
+        { ...FROZEN_PEAS, amount: 2, unit: UNITS.OUNCE, additionalDetails: '', section: VEGGIES_SECTION },
+        { ...COLD_WATER, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: VEGGIES_SECTION },
 
-        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...DARK_SOY_SAUCE, amount: '1 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...WHITE_SUGAR, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...CHICKEN_BOUILLON, amount: '1 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...VEGETABLE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...DARK_SOY_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...CHICKEN_BOUILLON, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
 
-        { ...EGGS, amount: '4', unit: '', additionalDetails: '', section: EGGS_SECTION },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: EGGS_SECTION },
-        { ...CHINESE_SAUSAGE, amount: '2', unit: '', additionalDetails: '', section: EGGS_SECTION },
+        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: EGGS_SECTION },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: EGGS_SECTION },
+        { ...CHINESE_SAUSAGE, amount: 2, unit: '', additionalDetails: '', section: EGGS_SECTION },
 
-        { ...GREEN_ONIONS, amount: '2', unit: '', additionalDetails: 'diced green parts only', section: FRIED_RICE_SECTION },
-        { ...VEGETABLE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: FRIED_RICE_SECTION },
+        { ...GREEN_ONIONS, amount: 2, unit: '', additionalDetails: 'diced green parts only', section: FRIED_RICE_SECTION },
+        { ...VEGETABLE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: FRIED_RICE_SECTION },
     ],
     appliances: [
         { name: 'rice cooker' },

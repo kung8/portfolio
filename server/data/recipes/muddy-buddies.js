@@ -8,7 +8,7 @@ const muddy7 = '../assets/Products/muddy-buddies-7.jpeg';
 const muddy8 = '../assets/Products/muddy-buddies-8.jpeg';
 const muddy9 = '../assets/Products/muddy-buddies-9.jpeg';
 const muddy11 = '../assets/Products/muddy-buddies-11.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { SEMI_SWEET_CHOCOLATE_CHIPS, PEANUT_BUTTER, CHEX_CEREAL, POWDERED_SUGAR } = require('./ingredients');
 
 module.exports = {
@@ -29,10 +29,10 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PEANUT_BUTTER, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHEX_CEREAL, amount: '6 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...POWDERED_SUGAR, amount: '1 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PEANUT_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHEX_CEREAL, amount: 6, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...POWDERED_SUGAR, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'fridge' },

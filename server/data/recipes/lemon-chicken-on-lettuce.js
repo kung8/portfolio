@@ -5,7 +5,7 @@ const rice = '../assets/Products/lemon-chicken-on-lettuce-plated-with-rice.jpeg'
 const zoomed = '../assets/Products/lemon-chicken-on-lettuce-plated-zoomed.jpeg';
 const plated = '../assets/Products/lemon-chicken-on-lettuce-plated.jpeg';
 const raw = '../assets/Products/lemon-chicken-on-lettuce-raw-chicken.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
 const {
     VEGETABLE_OIL,
     CHICKEN_BREAST,
@@ -33,13 +33,13 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '15 m',
     ingredients: [
-        { ...VEGETABLE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHICKEN_BREAST, amount: '1.5 lb', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...LEMON_JUICE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WARM_WATER, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CORNSTARCH, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LETTUCE, amount: '7 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_BREAST, amount: 3 / 2, unit: UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...LEMON_JUICE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORNSTARCH, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LETTUCE, amount: 7, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],

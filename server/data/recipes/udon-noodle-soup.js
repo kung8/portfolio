@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { BEEF_RIBS, YELLOW_ONION, CARROTS, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGGS, BEEF_BROTH, SHIITAKE_MUSHROOMS, THAI_CHILI_PEPPERS, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONIONS, SESAME_SEEDS, UDON_NOODLES, WARM_WATER } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { BEEF_RIBS, YELLOW_ONION, CARROTS, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGG, BEEF_BROTH, SHIITAKE_MUSHROOMS, THAI_CHILI_PEPPERS, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONIONS, SESAME_SEEDS, UDON_NOODLES, WARM_WATER } = require('./ingredients');
 
 const BEEF_BROTH_SECTION = 'Beef Broth';
 const EGG_SECTION = 'Eggs';
@@ -35,27 +35,26 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BEEF_RIBS, amount: '4 lbs', unit: '', additionalDetails: '', section: BEEF_BROTH_SECTION },
-        { ...YELLOW_ONION, amount: '2 medium', unit: '', additionalDetails: 'peeled and quartered', section: BEEF_BROTH_SECTION },
-        { ...CARROTS, amount: '1', unit: '', additionalDetails: 'peeled and chunked', section: BEEF_BROTH_SECTION },
-        { ...CINNAMON_STICK, amount: '1', unit: '', additionalDetails: '', section: BEEF_BROTH_SECTION },
-        { ...GINGER, amount: '1 - 3 inch', unit: '', additionalDetails: 'whole', section: BEEF_BROTH_SECTION },
-        { ...WARM_WATER, amount: '1 - 3 inch', unit: '', additionalDetails: 'whole', section: BEEF_BROTH_SECTION },
+        { ...BEEF_RIBS, amount: 4, unit: UNITS.POUND, additionalDetails: '', section: BEEF_BROTH_SECTION },
+        { ...YELLOW_ONION, amount: 2, unit: UNITS.MEDIUM, additionalDetails: 'peeled and quartered', section: BEEF_BROTH_SECTION },
+        { ...CARROTS, amount: 1, unit: '', additionalDetails: 'peeled and chunked', section: BEEF_BROTH_SECTION },
+        { ...CINNAMON_STICK, amount: 1, unit: '', additionalDetails: '', section: BEEF_BROTH_SECTION },
+        { ...GINGER, amount: 3, unit: UNITS.INCH, additionalDetails: 'whole', section: BEEF_BROTH_SECTION },
 
-        { ...EGGS, amount: '4', unit: '', additionalDetails: '', section: EGG_SECTION },
-        { ...UDON_NOODLES, amount: '1/2 lb', unit: '', additionalDetails: '', section: NOODLE_SECTION },
-        { ...CARROTS, amount: '1 large', unit: '', additionalDetails: 'peeled and julienned', section: SOUP_1_SECTION },
-        { ...SHIITAKE_MUSHROOMS, amount: '3 1/2 oz', unit: '', additionalDetails: '', section: SOUP_1_SECTION },
-        { ...GINGER, amount: '1 Tbsp', unit: '', additionalDetails: 'minced', section: SOUP_1_SECTION },
-        { ...THAI_CHILI_PEPPERS, amount: '2', unit: '', additionalDetails: 'whole', section: SOUP_1_SECTION },
-        { ...MIRIN, amount: '1/4 c', unit: '', additionalDetails: '', section: SOUP_1_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SOUP_1_SECTION },
-        { ...WHITE_SUGAR, amount: '1 tsp', unit: '', additionalDetails: '', section: SOUP_1_SECTION },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: SOUP_1_SECTION },
-        { ...PORK_TENDERLOINS, amount: '1 lb', unit: '', additionalDetails: 'sliced', section: SOUP_2_SECTION },
-        { ...NAPA_CABBAGE, amount: '2 medium', unit: '', additionalDetails: '', section: SOUP_2_SECTION },
-        { ...GREEN_ONIONS, amount: '2', unit: '', additionalDetails: 'chopped', section: SOUP_2_SECTION },
-        { ...SESAME_SEEDS, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: EGG_SECTION },
+        { ...UDON_NOODLES, amount: 1 / 2, unit: UNITS.POUND, additionalDetails: '', section: NOODLE_SECTION },
+        { ...CARROTS, amount: 1, unit: UNITS.LARGE, additionalDetails: 'peeled and julienned', section: SOUP_1_SECTION },
+        { ...SHIITAKE_MUSHROOMS, amount: 7 / 2, unit: UNITS.OUNCE, additionalDetails: '', section: SOUP_1_SECTION },
+        { ...GINGER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'minced', section: SOUP_1_SECTION },
+        { ...THAI_CHILI_PEPPERS, amount: 2, unit: '', additionalDetails: 'whole', section: SOUP_1_SECTION },
+        { ...MIRIN, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SOUP_1_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SOUP_1_SECTION },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SOUP_1_SECTION },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SOUP_1_SECTION },
+        { ...PORK_TENDERLOINS, amount: 1, unit: UNITS.POUND, additionalDetails: 'sliced', section: SOUP_2_SECTION },
+        { ...NAPA_CABBAGE, amount: 2, unit: UNITS.MEDIUM, additionalDetails: '', section: SOUP_2_SECTION },
+        { ...GREEN_ONIONS, amount: 2, unit: '', additionalDetails: 'chopped', section: SOUP_2_SECTION },
+        { ...SESAME_SEEDS, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },
@@ -85,9 +84,9 @@ module.exports = {
         { step: 'Add the noodles and the remaining "Soup Part 2" section ingredients. Cook until the cabbage wilts.', type: MAKE_SOUP },
         { step: 'Remove the chili peppers.', type: MAKE_SOUP },
         { step: 'Taste and adjust as necessary.', type: MAKE_SOUP },
-        
+
         { step: 'Peel the eggs and slice in half.', type: PREP_EGGS },
-        
+
         { step: 'Ladle soup into bowls.', type: SECTIONS.SERVE },
         { step: 'Enjoy this soup dish topped with the halved eggs, green onions and sesame seed.', type: SECTIONS.SERVE },
     ]

@@ -11,7 +11,7 @@ const plated2 = '../assets/Products/peppermint-bark-plated-2.jpeg';
 const plated4 = '../assets/Products/peppermint-bark-plated-4.jpeg';
 const set = '../assets/Products/peppermint-bark-set-chocolate.jpeg';
 const white = '../assets/Products/peppermint-bark-white-chocolate-chips.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { SEMI_SWEET_CHOCOLATE_CHIPS, WHITE_CHOCOLATE_CHIPS, PEPPERMINT_EXTRACT, CANDY_CANES } = require('./ingredients');
 
 module.exports = {
@@ -32,10 +32,10 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '12 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_CHOCOLATE_CHIPS, amount: '16 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PEPPERMINT_EXTRACT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CANDY_CANES, amount: '3/4 c', unit: '', additionalDetails: 'crushed', section: SECTIONS.MAIN },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 12, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_CHOCOLATE_CHIPS, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PEPPERMINT_EXTRACT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CANDY_CANES, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: 'crushed', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'microwave' },

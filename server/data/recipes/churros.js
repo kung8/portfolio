@@ -4,8 +4,8 @@ const churros3 = '../assets/Products/churros-3.jpeg';
 const churros4 = '../assets/Products/churros-4.jpeg';
 const churros5 = '../assets/Products/churros-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { WARM_WATER, UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGGS, VANILLA_EXTRACT, VEGETABLE_OIL, CINNAMON } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { WARM_WATER, UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, VANILLA_EXTRACT, VEGETABLE_OIL, CINNAMON } = require('./ingredients');
 
 const CHURROS_SECTION = 'Churros';
 const COATING = 'Coating';
@@ -31,17 +31,17 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...WARM_WATER, amount: '1 c', unit: '', additionalDetails: '', section: CHURROS_SECTION },
-        { ...UNSALTED_BUTTER, amount: '1/4 c', unit: '', additionalDetails: 'diced cubes', section: CHURROS_SECTION },
-        { ...WHITE_SUGAR, amount: '1 Tbsp', unit: '', additionalDetails: '', section: CHURROS_SECTION },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: CHURROS_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: '1 c', unit: '', additionalDetails: '', section: CHURROS_SECTION },
-        { ...EGGS, amount: '3', unit: '', additionalDetails: '', section: CHURROS_SECTION },
-        { ...VANILLA_EXTRACT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: CHURROS_SECTION },
+        { ...WARM_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CHURROS_SECTION },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: 'diced cubes', section: CHURROS_SECTION },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHURROS_SECTION },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: CHURROS_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CHURROS_SECTION },
+        { ...EGG, amount: 3, unit: '', additionalDetails: '', section: CHURROS_SECTION },
+        { ...VANILLA_EXTRACT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CHURROS_SECTION },
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: CHURROS_SECTION },
 
-        { ...WHITE_SUGAR, amount: '1/2 c', unit: '', additionalDetails: '', section: COATING },
-        { ...CINNAMON, amount: '3/4 tsp', unit: '', additionalDetails: '', section: COATING },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: COATING },
+        { ...CINNAMON, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: COATING },
     ],
     appliances: [
         { name: 'stove' },
@@ -76,6 +76,6 @@ module.exports = {
     notes: [
         { note: 'The churros batter was pretty thick and I had to add a mixture of water and eggs to help thin out the batter so that it could come out of the piping bag more easily.' },
         { note: 'The piping tip was pretty small which made the churros come out thin like curly fries. I would recommend using a larger tip to get the traditional churros shape.' },
-        { note: 'If you want to invest in a deep fryer, I love the deep fryer that I have. It has a oil filtration system and was very easy to use.'},
+        { note: 'If you want to invest in a deep fryer, I love the deep fryer that I have. It has a oil filtration system and was very easy to use.' },
     ]
 };

@@ -2,7 +2,7 @@ const bbq = '../assets/Products/bbq-chicken-wings.jpeg';
 const raw = '../assets/Products/bbq-chicken-wings-raw.jpeg';
 const rawInPan = '../assets/Products/bbq-chicken-wings-raw-in-pan.jpeg';
 const pan = '../assets/Products/bbq-chicken-wings-in-pan.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
 const {
     CHICKEN_DRUMETTES,
     BAKING_SODA,
@@ -32,18 +32,18 @@ module.exports = {
     prepTime: '7 m',
     cookTime: '25 m',
     ingredients: [
-        { ...CHICKEN_DRUMETTES, amount: '14', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_SODA, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ROOT_BEER, amount: '300 ml', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PAPRIKA, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '4 clove', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HONEY, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...KETCHUP, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YELLOW_MUSTARD, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_DRUMETTES, amount: 14, unit: UNITS.PIECE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_SODA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ROOT_BEER, amount: 300, unit: UNITS.MILLILITER, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PAPRIKA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HONEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...KETCHUP, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YELLOW_MUSTARD, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

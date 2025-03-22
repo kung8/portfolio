@@ -16,8 +16,8 @@ const scones15 = '../assets/Products/english-scones-15.jpeg';
 const scones16 = '../assets/Products/english-scones-16.jpeg';
 const scones17 = '../assets/Products/english-scones-17.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { ALL_PURPOSE_FLOUR, SALT, BAKING_POWDER, WHITE_SUGAR, UNSALTED_BUTTER, MILK, LEMON_JUICE, VANILLA_EXTRACT, EGGS } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { ALL_PURPOSE_FLOUR, SALT, BAKING_POWDER, WHITE_SUGAR, UNSALTED_BUTTER, MILK, LEMON_JUICE, VANILLA_EXTRACT, EGG } = require('./ingredients');
 
 const PREP_BAKE = 'Prep Bake';
 const DRY_MIXTURE = 'Dry Mixture';
@@ -42,15 +42,15 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: '2 1/2 c', unit: '', additionalDetails: '', section: DRY_MIXTURE },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: DRY_MIXTURE },
-        { ...BAKING_POWDER, amount: '3 1/2 tsp', unit: '', additionalDetails: '', section: DRY_MIXTURE },
-        { ...WHITE_SUGAR, amount: '3 Tbsp', unit: '', additionalDetails: '', section: DRY_MIXTURE },
-        { ...UNSALTED_BUTTER, amount: '6 Tbsp', unit: '', additionalDetails: 'cold and cubed', section: DRY_MIXTURE },
-        { ...MILK, amount: '3/4 c', unit: '', additionalDetails: '', section: BUTTERMILK_MIXTURE },
-        { ...LEMON_JUICE, amount: '1 tsp', unit: '', additionalDetails: '', section: BUTTERMILK_MIXTURE },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', section: BUTTERMILK_MIXTURE },
-        { ...EGGS, amount: '1', unit: '', additionalDetails: 'beaten', section: EGG_WASH },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: DRY_MIXTURE },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_MIXTURE },
+        { ...BAKING_POWDER, amount: 7 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_MIXTURE },
+        { ...WHITE_SUGAR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: DRY_MIXTURE },
+        { ...UNSALTED_BUTTER, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: 'cold and cubed', section: DRY_MIXTURE },
+        { ...MILK, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: BUTTERMILK_MIXTURE },
+        { ...LEMON_JUICE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BUTTERMILK_MIXTURE },
+        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BUTTERMILK_MIXTURE },
+        { ...EGG, amount: 1, unit: '', additionalDetails: 'beaten', section: EGG_WASH },
     ],
     appliances: [
         { name: 'oven' },

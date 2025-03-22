@@ -20,7 +20,7 @@ const enchiladas20 = '../assets/Products/mexican-enchiladas-20.jpeg';
 const enchiladas21 = '../assets/Products/mexican-enchiladas-21.jpeg';
 const enchiladas22 = '../assets/Products/mexican-enchiladas-22.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { GARLIC_POWDER, SALT, BONELESS_AND_SKINLESS_CHICKEN_BREAST, BLACK_PEPPER, OLIVE_OIL, WHITE_ONION, BAY_LEAVES, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, CHILI_POWDER, ONION_POWDER, CUMIN, OREGANO, TOMATO_PASTE, FLOUR_TORTILLA, MEXICAN_BLEND_CHEESE, LETTUCE, YELLOW_ONION, CILANTRO, SOUR_CREAM, CHEESE } = require('./ingredients');
 
 const CHICKEN = 'Chicken';
@@ -52,33 +52,33 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '2 lb', unit: '', additionalDetails: '', section: CHICKEN },
-        { ...SALT, amount: '2 1/2 tsp', unit: '', additionalDetails: '', section: CHICKEN },
-        { ...GARLIC_POWDER, amount: '1 1/2 tsp', unit: '', additionalDetails: '', section: CHICKEN },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: CHICKEN },
-        { ...OLIVE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: CHICKEN },
-        { ...WHITE_ONION, amount: '1/4', unit: '', additionalDetails: 'diced', section: CHICKEN },
-        { ...BAY_LEAVES, amount: '1', unit: '', additionalDetails: '', section: CHICKEN },
-        { ...CHICKEN_BROTH, amount: '1 c', unit: '', additionalDetails: '', section: CHICKEN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: UNITS.POUND, additionalDetails: '', section: CHICKEN },
+        { ...SALT, amount: 5 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CHICKEN },
+        { ...GARLIC_POWDER, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CHICKEN },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CHICKEN },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN },
+        { ...WHITE_ONION, amount: 1 / 4, unit: '', additionalDetails: 'diced', section: CHICKEN },
+        { ...BAY_LEAVES, amount: 1, unit: '', additionalDetails: '', section: CHICKEN },
+        { ...CHICKEN_BROTH, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CHICKEN },
 
-        { ...OLIVE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: ENCHILADA_SAUCE },
-        { ...ALL_PURPOSE_FLOUR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: ENCHILADA_SAUCE },
-        { ...CHILI_POWDER, amount: '4 Tbsp', unit: '', additionalDetails: '', section: ENCHILADA_SAUCE },
-        { ...ONION_POWDER, amount: '1 tsp', unit: '', additionalDetails: '', section: ENCHILADA_SAUCE },
-        { ...GARLIC_POWDER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: ENCHILADA_SAUCE },
-        { ...SALT, amount: '1/8 tsp', unit: '', additionalDetails: '', section: ENCHILADA_SAUCE },
-        { ...CUMIN, amount: '1/4 tsp', unit: '', additionalDetails: '', section: ENCHILADA_SAUCE },
-        { ...OREGANO, amount: '1/4 tsp', unit: '', additionalDetails: '', section: ENCHILADA_SAUCE },
-        { ...CHICKEN_BROTH, amount: '2 1/4 c', unit: '', additionalDetails: '', section: ENCHILADA_SAUCE },
-        { ...TOMATO_PASTE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: ENCHILADA_SAUCE },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: ENCHILADA_SAUCE },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: ENCHILADA_SAUCE },
+        { ...CHILI_POWDER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: ENCHILADA_SAUCE },
+        { ...ONION_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: ENCHILADA_SAUCE },
+        { ...GARLIC_POWDER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: ENCHILADA_SAUCE },
+        { ...SALT, amount: 1 / 8, unit: UNITS.TEASPOON, additionalDetails: '', section: ENCHILADA_SAUCE },
+        { ...CUMIN, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: ENCHILADA_SAUCE },
+        { ...OREGANO, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: ENCHILADA_SAUCE },
+        { ...CHICKEN_BROTH, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: ENCHILADA_SAUCE },
+        { ...TOMATO_PASTE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: ENCHILADA_SAUCE },
 
-        { ...FLOUR_TORTILLA, amount: '8', unit: '', additionalDetails: '', section: ENCHILADA_ASSEMBLY },
-        { ...MEXICAN_BLEND_CHEESE, amount: '2 1/2 c', unit: '', additionalDetails: '', section: ENCHILADA_ASSEMBLY },
+        { ...FLOUR_TORTILLA, amount: 8, unit: '', additionalDetails: '', section: ENCHILADA_ASSEMBLY },
+        { ...MEXICAN_BLEND_CHEESE, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: ENCHILADA_ASSEMBLY },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: ENCHILADA_ASSEMBLY },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: ENCHILADA_ASSEMBLY },
-        
+
         { ...LETTUCE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
-        { ...YELLOW_ONION, amount: 'small', unit: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...SOUR_CREAM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
@@ -123,7 +123,7 @@ module.exports = {
         { step: 'Bake until cheese is melted and bubbly (about 20 minutes).', type: ASSEMBLE_ENCHILADAS, img: enchiladas20 },
 
         { step: 'Serve immediately with your favorite toppings.', type: SECTIONS.SERVE, img: enchiladas22 },
-    ], 
+    ],
     notes: [
         { note: 'The original recipe was a bit salty for my liking, so I reduced the amount of salt in the sauce.' }
     ]

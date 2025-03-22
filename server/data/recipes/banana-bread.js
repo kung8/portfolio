@@ -1,4 +1,4 @@
-const { CATEGORIES, SECTIONS, GENRES } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES , UNITS } = require('./constants');
 const creamedSugar = '../assets/Products/banana-bread-creamed-sugar.jpeg';
 const mixture = '../assets/Products/banana-bread-flour-mixture.jpeg';
 const mashed = '../assets/Products/banana-bread-mashed-banana.jpeg';
@@ -12,7 +12,7 @@ const {
     BANANA,
     UNSALTED_BUTTER,
     WHITE_SUGAR,
-    EGGS,
+    EGG,
     ALL_PURPOSE_FLOUR,
     BAKING_SODA,
     SALT,
@@ -37,17 +37,17 @@ module.exports = {
         { label: 'Banana Bread', link: 'https://natashaskitchen.com/banana-bread-recipe-video/' }
     ],
     ingredients: [
-        { ...BANANA, amount: '3', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '1/2 c', unit: '', additionalDetails: 'room temperature', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: '3/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: '1 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_SODA, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '1/2 c', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { ...WALNUTS, amount: '1/2 c', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { ...NUTMEG, amount: '2 tsp', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...BANANA, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1/2, unit: UNITS.CUP, additionalDetails: 'room temperature', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 3/4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 1.5, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_SODA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1/2, unit: UNITS.CUP, additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...WALNUTS, amount: 1/2, unit: UNITS.CUP, additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...NUTMEG, amount: 2, unit: UNITS.TEASPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

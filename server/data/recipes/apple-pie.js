@@ -11,7 +11,7 @@ const sauce = '../assets/Products/apple-pie-sauce.jpeg';
 const sliced = '../assets/Products/apple-pie-sliced.jpeg';
 const sugars = '../assets/Products/apple-pie-sugars.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { GRANNY_SMITH_APPLES, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHITE_SUGAR, BROWN_SUGAR, COLD_WATER, DOUBLE_CRUST_PIE_CRUST } = require('./ingredients');
 
 module.exports = {
@@ -32,13 +32,13 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...GRANNY_SMITH_APPLES, amount: '8', unit: '', additionalDetails: '', section: '' },
-        { ...UNSALTED_BUTTER, amount: '1/2 c', unit: '', additionalDetails: '', section: '' },
-        { ...ALL_PURPOSE_FLOUR, amount: '3 Tbsp', unit: '', additionalDetails: '', section: '' },
-        { ...WHITE_SUGAR, amount: '1/2 c', unit: '', additionalDetails: '', section: '' },
-        { ...BROWN_SUGAR, amount: '1/2 c', unit: '', additionalDetails: '', section: '' },
-        { ...COLD_WATER, amount: '1/4 c', unit: '', additionalDetails: '', section: '' },
-        { ...DOUBLE_CRUST_PIE_CRUST, amount: '1', unit: '', additionalDetails: 'thawed', section: '' },
+        { ...GRANNY_SMITH_APPLES, amount: 8, unit: '', additionalDetails: '', section: '' },
+        { ...UNSALTED_BUTTER, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: '' },
+        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: '' },
+        { ...WHITE_SUGAR, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: '' },
+        { ...BROWN_SUGAR, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: '' },
+        { ...COLD_WATER, amount: 1/4, unit: UNITS.CUP, additionalDetails: '', section: '' },
+        { ...DOUBLE_CRUST_PIE_CRUST, amount: 1, unit: '', additionalDetails: 'thawed', section: '' },
     ],
     appliances: [
         { name: 'stove' },

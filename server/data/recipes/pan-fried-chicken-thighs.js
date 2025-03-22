@@ -14,7 +14,7 @@ const thigh13 = '../assets/Products/pan-fried-chicken-thigh-13.jpeg';
 const thigh14 = '../assets/Products/pan-fried-chicken-thigh-14.jpeg';
 const thigh15 = '../assets/Products/pan-fried-chicken-thigh-15.jpeg';
 // const thigh16 = '../assets/Products/pan-fried-chicken-thigh-16.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { UNSALTED_BUTTER, CHICKEN_THIGH, SALT, BLACK_PEPPER, RED_WINE, GARLIC, WHIPPED_CREAM, ROSEMARY } = require('./ingredients');
 
 module.exports = {
@@ -35,14 +35,14 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...CHICKEN_THIGH, amount: '4', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...BLACK_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...RED_WINE, amount: '1/3 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: '1 clove', unit: '', additionalDetails: 'minced', section: SECTIONS.SAUCE },
-        { ...WHIPPED_CREAM, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...ROSEMARY, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CHICKEN_THIGH, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...RED_WINE, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.SAUCE },
+        { ...WHIPPED_CREAM, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...ROSEMARY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stove' },

@@ -1,5 +1,5 @@
 const chickenParm = '../assets/Products/chicken-parmesan.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
 const {} = require('./ingredients');
 
 module.exports = {

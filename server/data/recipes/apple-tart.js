@@ -9,7 +9,7 @@ const tart8 = '../assets/Products/apple-tart-8.jpeg';
 const tart9 = '../assets/Products/apple-tart-9.jpeg';
 const tart10 = '../assets/Products/apple-tart-10.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { UNSALTED_BUTTER, WHITE_SUGAR, EGG_YOLKS, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, ALMOND_FLOUR, REFRIGERATED_PUFF_PASTRY, PINK_LADY_APPLES, APRICOT_JELLY } = require('./ingredients');
 
 const FRANGIPANE = 'Frangipane';
@@ -34,16 +34,16 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '1 1/2 Tbsp', unit: '', additionalDetails: '', section: FRANGIPANE },
-        { ...WHITE_SUGAR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: FRANGIPANE },
-        { ...ALMOND_FLOUR, amount: '1/4 c', unit: '', additionalDetails: '', section: FRANGIPANE },
-        { ...EGG_YOLKS, amount: '1', unit: '', additionalDetails: '', section: FRANGIPANE },
-        { ...VANILLA_EXTRACT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: FRANGIPANE },
-        { ...ALL_PURPOSE_FLOUR, amount: '2 tsp', unit: '', additionalDetails: '', section: FRANGIPANE },
+        { ...UNSALTED_BUTTER, amount: 1.5, unit: UNITS.TABLESPOON, additionalDetails: '', section: FRANGIPANE },
+        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: FRANGIPANE },
+        { ...ALMOND_FLOUR, amount: 1/4, unit: UNITS.CUP, additionalDetails: '', section: FRANGIPANE },
+        { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: FRANGIPANE },
+        { ...VANILLA_EXTRACT, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
 
         { ...REFRIGERATED_PUFF_PASTRY, amount: '', unit: '', additionalDetails: 'chilled until ready to use', section: SECTIONS.ASSEMBLY },
-        { ...PINK_LADY_APPLES, amount: '2 to 4', unit: '', additionalDetails: 'cored, peeled and thinly sliced', section: SECTIONS.ASSEMBLY },
-        { ...APRICOT_JELLY, amount: '1/4 c', unit: '', additionalDetails: 'heated until partially melted', section: SECTIONS.ASSEMBLY },
+        { ...PINK_LADY_APPLES, amount: 4, unit: '', additionalDetails: 'cored, peeled and thinly sliced', section: SECTIONS.ASSEMBLY },
+        { ...APRICOT_JELLY, amount: 1/4, unit: UNITS.CUP, additionalDetails: 'heated until partially melted', section: SECTIONS.ASSEMBLY },
     ],
     appliances: [
         { name: 'oven' },

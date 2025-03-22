@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { ANGEL_HAIR_PASTA, UNSALTED_BUTTER, SHRIMP, GARLIC, WHITE_WINE, BLACK_PEPPER, PARMESAN_CHEESE, PARSLEY, LEMON } = require('./ingredients');
 
 const NOODLE_SECTION = 'Noodles';
@@ -29,15 +29,15 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ANGEL_HAIR_PASTA, amount: '8 oz', unit: '', additionalDetails: '', section: NOODLE_SECTION },
-        { ...UNSALTED_BUTTER, amount: '1/2 c', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...SHRIMP, amount: '1 lb', unit: '', additionalDetails: 'peeled and deveined', section: SAUCE_SECTION },
-        { ...GARLIC, amount: '4 cloves', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...WHITE_WINE, amount: '1 c', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...BLACK_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...PARMESAN_CHEESE, amount: '3/4 c', unit: '', additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
-        { ...PARSLEY, amount: '1 tablespoon', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
-        { ...LEMON, amount: '1', unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
+        { ...ANGEL_HAIR_PASTA, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: NOODLE_SECTION },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
+        { ...SHRIMP, amount: 1, unit: UNITS.POUND, additionalDetails: 'peeled and deveined', section: SAUCE_SECTION },
+        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: '', section: SAUCE_SECTION },
+        { ...WHITE_WINE, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...PARMESAN_CHEESE, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
+        { ...PARSLEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...LEMON, amount: 1, unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

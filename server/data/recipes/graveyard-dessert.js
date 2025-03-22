@@ -1,5 +1,5 @@
 const graveyardDessert = '../assets/Products/graveyard-dessert.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, UNITS } = require("./constants");
 const { CHOCOLATE_PUDDING_CUPS, GUMMY_WORMS, MILANO_COOKIES, OREO_COOKIES } = require('./ingredients');
 
 module.exports = {
@@ -15,9 +15,9 @@ module.exports = {
     prepTime: '7 m',
     cookTime: '0 m',
     ingredients: [
-        { ...CHOCOLATE_PUDDING_CUPS, amount: '6', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...OREO_COOKIES, amount: 'package of', unit: '', additionalDetails: 'without cream', section: SECTIONS.MAIN },
-        { ...MILANO_COOKIES, amount: 'package of', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHOCOLATE_PUDDING_CUPS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OREO_COOKIES, amount: 1, unit: UNITS.PACKAGE, additionalDetails: 'without cream', section: SECTIONS.MAIN },
+        { ...MILANO_COOKIES, amount: 1, unit: UNITS.PACKAGE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...GUMMY_WORMS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     supplies: [

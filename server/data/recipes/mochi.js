@@ -6,7 +6,7 @@ const mochi6 = '../assets/Products/mochi-6.jpeg';
 const mochi8 = '../assets/Products/mochi-8.jpeg';
 const mochi9 = '../assets/Products/mochi-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { WHITE_SUGAR, COLD_WATER, COCONUT_MILK, POTATO_STARCH, MOCHIKO, FOOD_COLORING } = require('./ingredients');
 
 const MOCHI = 'Mochi';
@@ -30,11 +30,11 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...MOCHIKO, amount: '1 3/4 c', unit: '', additionalDetails: '', section: MOCHI },
-        { ...WHITE_SUGAR, amount: '1 1/4 c', unit: '', additionalDetails: '', section: MOCHI },
-        { ...COLD_WATER, amount: '1 c', unit: '', additionalDetails: '', section: MOCHI },
-        { ...COCONUT_MILK, amount: '3/4 c', unit: '', additionalDetails: '', section: MOCHI },
-        { ...FOOD_COLORING, amount: '1 drop', unit: '', additionalDetails: 'preferred color', section: MOCHI },
+        { ...MOCHIKO, amount: 7 / 4, unit: UNITS.CUP, additionalDetails: '', section: MOCHI },
+        { ...WHITE_SUGAR, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: MOCHI },
+        { ...COLD_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: MOCHI },
+        { ...COCONUT_MILK, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: MOCHI },
+        { ...FOOD_COLORING, amount: 1, unit: UNITS.DROP, additionalDetails: 'preferred color', section: MOCHI },
         { ...POTATO_STARCH, amount: '', unit: '', additionalDetails: 'for dusting', section: DUSTING },
     ],
     appliances: [

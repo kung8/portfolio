@@ -8,7 +8,7 @@ const plated2 = '../assets/Products/lo-mein-plated-2.jpeg';
 const plated3 = '../assets/Products/lo-mein-plated-3.jpeg';
 const sauce = '../assets/Products/lo-mein-sauce.jpeg';
 const steamed = '../assets/Products/lo-mein-steamed-broccoli.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
 const {
     FLANK_STEAK,
     SALT,
@@ -45,28 +45,28 @@ module.exports = {
     cookTime: '10 m',
     separated: true,
     ingredients: [
-        { ...FLANK_STEAK, amount: '1/2 lb', unit: '', additionalDetails: 'sliced', section: BEEF },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: BEEF },
-        { ...WHITE_SUGAR, amount: '1/4 tsp', unit: '', additionalDetails: '', section: BEEF },
-        { ...BLACK_PEPPER, amount: '1/8 tsp', unit: '', additionalDetails: '', section: BEEF },
-        { ...SHAOXING_WINE, amount: '1/2 tsp', unit: '', additionalDetails: '', section: BEEF },
-        { ...LIGHT_SOY_SAUCE, amount: '1/2 tsp', unit: '', additionalDetails: '', section: BEEF },
-        { ...CORNSTARCH, amount: '1/2 tsp', unit: '', additionalDetails: '', section: BEEF },
+        { ...FLANK_STEAK, amount: 1 / 2, unit: UNITS.POUND, additionalDetails: 'sliced', section: BEEF },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF },
+        { ...WHITE_SUGAR, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF },
+        { ...BLACK_PEPPER, amount: 1 / 8, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF },
+        { ...SHAOXING_WINE, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF },
+        { ...CORNSTARCH, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF },
 
-        { ...SESAME_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...DARK_SOY_SAUCE, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...OYSTER_SAUCE, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHITE_SUGAR, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SHAOXING_WINE, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WARM_WATER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SESAME_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...DARK_SOY_SAUCE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OYSTER_SAUCE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SHAOXING_WINE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WARM_WATER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { ...LO_MEIN_NOODLES, amount: '1 lb', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VEGETABLE_OIL, amount: '3 Tbsp', unit: '', additionalDetails: 'divided', section: SECTIONS.MAIN },
-        { ...BROCCOLI, amount: '1/2 lb', unit: '', additionalDetails: 'cut into florets', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1/4 t', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LO_MEIN_NOODLES, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },
+        { ...BROCCOLI, amount: 1 / 2, unit: UNITS.POUND, additionalDetails: 'cut into florets', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

@@ -12,7 +12,7 @@ const simmering = '../assets/Products/indian-butter-chicken-simmering.jpeg';
 const spices = '../assets/Products/indian-butter-chicken-spices.jpeg';
 const paste = '../assets/Products/indian-butter-chicken-tomato-paste.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
 const {
     VEGETABLE_OIL,
     UNSALTED_BUTTER,
@@ -49,21 +49,21 @@ module.exports = {
     prepTime: '12 - 15 m',
     cookTime: '25 - 30 m',
     ingredients: [
-        { ...VEGETABLE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', optional: false },
-        { ...UNSALTED_BUTTER, amount: '1 Tbsp', unit: '', additionalDetails: '', optional: false },
-        { ...YELLOW_ONION, amount: '1 medium', unit: '', additionalDetails: 'diced', optional: false },
-        { ...GINGER, amount: '1 tsp', unit: '', additionalDetails: 'minced', optional: false },
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: 'minced', optional: false },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: '2 lbs', unit: '', additionalDetails: '1/2" pieces', optional: false },
-        { ...TOMATO_PASTE, amount: '4 Tbsp', unit: '', additionalDetails: '', optional: false },
-        { ...GARAM_MASALA, amount: '1 Tbsp', unit: '', additionalDetails: '', optional: false },
-        { ...CHILI_POWDER, amount: '1 tsp', unit: '', additionalDetails: '', optional: false },
-        { ...MUSTARD_SEED, amount: '1 tsp', unit: '', additionalDetails: '', optional: false },
-        { ...CUMIN, amount: '1 tsp', unit: '', additionalDetails: '', optional: false },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: 'to taste', optional: false },
-        { ...BLACK_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: 'to taste', optional: false },
-        { ...HEAVY_CREAM, amount: '1 c', unit: '', additionalDetails: '', optional: false },
-        { ...JASMINE_RICE, amount: 'cooked', unit: '', additionalDetails: '', optional: false },
+        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: 'diced', optional: false },
+        { ...GINGER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'minced', optional: false },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', optional: false },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: UNITS.POUND, additionalDetails: '1/2" pieces', optional: false },
+        { ...TOMATO_PASTE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...GARAM_MASALA, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...CHILI_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...MUSTARD_SEED, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...CUMIN, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'to taste', optional: false },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: 'to taste', optional: false },
+        { ...HEAVY_CREAM, amount: 1, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: 'cooked', optional: false },
     ],
     appliances: [
         { name: 'stove' },

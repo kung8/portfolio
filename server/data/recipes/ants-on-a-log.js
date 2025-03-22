@@ -1,6 +1,6 @@
 const side = '../assets/Products/ants-on-a-log-side.jpeg';
 const straight = '../assets/Products/ants-on-a-log-straight-on.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { CELERY, RAISINS, PEANUT_BUTTER } = require('./ingredients');
 
 module.exports = {
@@ -17,7 +17,7 @@ module.exports = {
     prepTime: '3 m',
     separated: false,
     ingredients: [
-        { ...CELERY, amount: '3 - 4 stalks', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CELERY, amount: 4, unit: UNITS.STALK, additionalDetails: '', section: SECTIONS.MAIN },
         { ...RAISINS, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.MAIN },
         { ...PEANUT_BUTTER, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.MAIN },
     ],

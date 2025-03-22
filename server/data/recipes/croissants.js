@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
-const { MILK, BROWN_SUGAR, YEAST, ALL_PURPOSE_FLOUR, SALT, UNSALTED_BUTTER, EGGS } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { MILK, BROWN_SUGAR, YEAST, ALL_PURPOSE_FLOUR, SALT, UNSALTED_BUTTER, EGG } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
 const BUTTER_SECTION = 'Butter';
@@ -33,13 +33,13 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...MILK, amount: '1 1/2 c', unit: '', additionalDetails: 'lukewarm', section: DOUGH_SECTION },
-        { ...BROWN_SUGAR, amount: '1/4 c', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...YEAST, amount: '3 1/4 tsp', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: '3 1/4 c', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...SALT, amount: '1 Tbsp', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...UNSALTED_BUTTER, amount: '1 1/2 c', unit: '', additionalDetails: '', section: BUTTER_SECTION },
-        { ...EGGS, amount: '1', unit: '', additionalDetails: '', section: EGG_WASH_SECTION },
+        { ...MILK, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: 'lukewarm', section: DOUGH_SECTION },
+        { ...BROWN_SUGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...YEAST, amount: 13 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 13 / 4, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...SALT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...UNSALTED_BUTTER, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: BUTTER_SECTION },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: EGG_WASH_SECTION },
     ],
     appliances: [
         { name: 'stand mixer' },
@@ -58,7 +58,7 @@ module.exports = {
         { step: 'Add 3 cups of flour and salt. Mix on low until smooth and soft (about 5 minutes). If it is too sticky you can add more flour about 1 tablespoon at a time until the dough is soft and slightly sticky.', type: MAKE_DOUGH },
         { step: 'Transfer the dough to a clean surface and knead for several minutes.', type: MAKE_DOUGH },
         { step: 'Place dough back in bowl and cover the bowl with plastic wrap. Chill for an hour.', type: MAKE_DOUGH },
-        
+
         { step: 'On a clean surface, place a large piece of plastic wrap.', type: PREP_BUTTER },
         { step: 'Place the chilled sticks of butter on the plastic and cover with another piece of plastic wrap.', type: PREP_BUTTER },
         { step: 'With a rolling pin, pound and roll out the butter to an 8 x 5 inch rectangle.', type: PREP_BUTTER },
@@ -75,15 +75,15 @@ module.exports = {
         { step: 'Repeat this process three more times (a total of 5 folds).', type: ADDITIONAL_FOLDS },
         { step: 'For the last fold, refrigerate for at least 8 hours.', type: ADDITIONAL_FOLDS },
 
-        { step: 'Place the silicon baking mat on the baking sheets.', type: SHAPE_CROISSANTS  },
+        { step: 'Place the silicon baking mat on the baking sheets.', type: SHAPE_CROISSANTS },
         { step: 'Cut the dough in half and roll out each dough portion into 1/4 inch thick rectangles.', type: SHAPE_CROISSANTS },
         { step: 'Cut the dough into 6 equal rectangular pieces.', type: SHAPE_CROISSANTS },
         { step: 'Cut each piece diagonally into triangles (or keep them as rectangles). If you choose to keep them as rectangular shapes, optionally place your favorite fillings inside and roll them up.', type: SHAPE_CROISSANTS },
         { step: 'Stretch the triangle from the smallest angle a little.', type: SHAPE_CROISSANTS },
         { step: 'From the opposite side, start rolling up the triangle (similar to a crescent roll). Optionally fill the triangle with a piece of chocolate or ham and cheese (or your favorite fillings).', type: SHAPE_CROISSANTS },
-        { step: 'Place finished croissants on the baking mat about 1 to 2 inches apart.', type: SHAPE_CROISSANTS  },
-        { step: 'Let the croissants rise for an hour (or cover with plastic wrap and refrigerate them up to 18 hours before baking).', type: SHAPE_CROISSANTS  },
-        
+        { step: 'Place finished croissants on the baking mat about 1 to 2 inches apart.', type: SHAPE_CROISSANTS },
+        { step: 'Let the croissants rise for an hour (or cover with plastic wrap and refrigerate them up to 18 hours before baking).', type: SHAPE_CROISSANTS },
+
         { step: 'Beat the eggs and brush the croissants with the egg wash.', type: PREP_EGG_WASH },
 
         { step: 'Preheat the oven to 400ºF.', type: BAKE_CROISSANTS },

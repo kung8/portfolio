@@ -22,8 +22,8 @@ const icing2 = '../assets/Products/sugar-cookies-icing-2.jpeg';
 const icing3 = '../assets/Products/sugar-cookies-icing-3.jpeg';
 const icing4 = '../assets/Products/sugar-cookies-icing-4.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { UNSALTED_BUTTER, WHITE_SUGAR, EGGS, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, SALT, BAKING_SODA, ALMOND_EXTRACT, SPRINKLES, CONFECTIONERS_SUGAR, MERINGUE_POWDER, ROOM_TEMPERATURE_WATER, CRYSTAL_SUGAR } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { UNSALTED_BUTTER, WHITE_SUGAR, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, SALT, BAKING_SODA, ALMOND_EXTRACT, SPRINKLES, CONFECTIONERS_SUGAR, MERINGUE_POWDER, ROOM_TEMPERATURE_WATER, CRYSTAL_SUGAR } = require('./ingredients');
 
 const DRY_INGREDIENTS = 'Dry Ingredients';
 const WET_BATTER = 'Wet Batter';
@@ -49,17 +49,17 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: '2 1/4 c', unit: '', additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...BAKING_SODA, amount: '1/2 tsp', unit: '', additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...UNSALTED_BUTTER, amount: '3/4 c', unit: '', additionalDetails: '', section: WET_BATTER },
-        { ...WHITE_SUGAR, amount: '3/4 c', unit: '', additionalDetails: '', section: WET_BATTER },
-        { ...EGGS, amount: '1', unit: '', additionalDetails: '', section: WET_BATTER },
-        { ...VANILLA_EXTRACT, amount: '2 tsp', unit: '', additionalDetails: '', section: WET_BATTER },
-        { ...ALMOND_EXTRACT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: WET_BATTER },
-        { ...CONFECTIONERS_SUGAR, amount: '4 c', unit: '', additionalDetails: '', section: ROYAL_ICING },
-        { ...MERINGUE_POWDER, amount: '3 Tbsp', unit: '', additionalDetails: '', section: ROYAL_ICING },
-        { ...ROOM_TEMPERATURE_WATER, amount: '9 - 10 Tbsp', unit: '', additionalDetails: '', section: ROYAL_ICING },
+        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: DRY_INGREDIENTS },
+        { ...BAKING_SODA, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
+        { ...UNSALTED_BUTTER, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: WET_BATTER },
+        { ...WHITE_SUGAR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: WET_BATTER },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: WET_BATTER },
+        { ...VANILLA_EXTRACT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: WET_BATTER },
+        { ...ALMOND_EXTRACT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: WET_BATTER },
+        { ...CONFECTIONERS_SUGAR, amount: 4, unit: UNITS.CUP, additionalDetails: '', section: ROYAL_ICING },
+        { ...MERINGUE_POWDER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: ROYAL_ICING },
+        { ...ROOM_TEMPERATURE_WATER, amount: 10, unit: UNITS.TABLESPOON, additionalDetails: '', section: ROYAL_ICING },
         { ...SPRINKLES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DECORATING },
         { ...CRYSTAL_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DECORATING },
     ],

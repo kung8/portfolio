@@ -4,7 +4,7 @@ const rawChicken = '../assets/Products/baked-chicken-raw-zoomed.jpeg';
 const pan = '../assets/Products/baked-chicken-cooked.jpeg';
 const plated = '../assets/Products/baked-chicken-plated.jpeg';
 const full = '../assets/Products/baked-chicken-plated-full.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
 const {
     CHICKEN_DRUMSTICKS,
     OLIVE_OIL,
@@ -30,13 +30,13 @@ module.exports = {
     prepTime: '5 m',
     cookTime: '50 m',
     ingredients: [
-        { ...CHICKEN_DRUMSTICKS, amount: '10', unit: '', additionalDetails: 'skin on', section: SECTIONS.MAIN },
-        { ...OLIVE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC_POWDER, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PAPRIKA, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CAYENNE_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_DRUMSTICKS, amount: 10, unit: UNITS.PIECE, additionalDetails: 'skin on', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PAPRIKA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CAYENNE_PEPPER, amount: 1/4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

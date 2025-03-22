@@ -23,8 +23,8 @@ const frosting4 = '../assets/Products/cinnamon-rolls-frosting-4.jpeg';
 const plated3 = '../assets/Products/cinnamon-rolls-plated-3.jpeg';
 const plated5 = '../assets/Products/cinnamon-rolls-plated-5.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { YEAST, WHITE_SUGAR, EGGS, EGG_YOLKS, UNSALTED_BUTTER, BREAD_FLOUR, SALT, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, POWDERED_SUGAR, VANILLA_EXTRACT, MILK } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { YEAST, WHITE_SUGAR, EGG, EGG_YOLKS, UNSALTED_BUTTER, BREAD_FLOUR, SALT, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, POWDERED_SUGAR, VANILLA_EXTRACT, MILK } = require('./ingredients');
 
 module.exports = {
     cardName: 'Cinnamon Rolls',
@@ -44,21 +44,21 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...MILK, amount: '3/4 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...YEAST, amount: '2 1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WHITE_SUGAR, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...EGGS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...EGG_YOLKS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...UNSALTED_BUTTER, amount: '1/4 c', unit: '', additionalDetails: 'melted', section: SECTIONS.DOUGH },
-        { ...BREAD_FLOUR, amount: '3 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...SALT, amount: '3/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...UNSALTED_BUTTER, amount: '1/4 c', unit: '', additionalDetails: 'softened', section: SECTIONS.FILLING },
-        { ...BROWN_SUGAR, amount: '2/3 c', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CINNAMON, amount: '1 1/2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CREAM_CHEESE, amount: '4 oz', unit: '', additionalDetails: 'softened', section: SECTIONS.FROSTING },
-        { ...UNSALTED_BUTTER, amount: '3 Tbsp', unit: '', additionalDetails: 'softened', section: SECTIONS.FROSTING },
-        { ...POWDERED_SUGAR, amount: '3/4 c', unit: '', additionalDetails: '', section: SECTIONS.FROSTING },
-        { ...VANILLA_EXTRACT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.FROSTING },
+        { ...MILK, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: 9 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.DOUGH },
+        { ...BREAD_FLOUR, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: 'softened', section: SECTIONS.FILLING },
+        { ...BROWN_SUGAR, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CINNAMON, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CREAM_CHEESE, amount: 4, unit: UNITS.OUNCE, additionalDetails: 'softened', section: SECTIONS.FROSTING },
+        { ...UNSALTED_BUTTER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'softened', section: SECTIONS.FROSTING },
+        { ...POWDERED_SUGAR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FROSTING },
+        { ...VANILLA_EXTRACT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FROSTING },
     ],
     appliances: [
         { name: 'microwave' },

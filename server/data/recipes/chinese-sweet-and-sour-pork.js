@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { LIGHT_SOY_SAUCE, EGGS, ALL_PURPOSE_FLOUR, CORNSTARCH, PORK_SHOULDER, GARLIC_SALT, KETCHUP, BROWN_SUGAR, WHITE_VINEGAR, SALT, COLD_WATER, RED_BELL_PEPPERS, YELLOW_BELL_PEPPERS, GREEN_BELL_PEPPERS, RED_ONION, YELLOW_ONION, PINEAPPLE, VEGETABLE_OIL } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { LIGHT_SOY_SAUCE, EGG, ALL_PURPOSE_FLOUR, CORNSTARCH, PORK_SHOULDER, GARLIC_SALT, KETCHUP, BROWN_SUGAR, WHITE_VINEGAR, SALT, COLD_WATER, RED_BELL_PEPPERS, YELLOW_BELL_PEPPERS, GREEN_BELL_PEPPERS, RED_ONION, YELLOW_ONION, PINEAPPLE, VEGETABLE_OIL } = require('./ingredients');
 
 const PORK_MARINADE = 'Pork Marinade';
 const SWEET_AND_SOUR_SAUCE = 'Sweet and Sour Sauce';
@@ -28,26 +28,26 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GARLIC_SALT, amount: '2 tsp', unit: '', additionalDetails: '', section: PORK_MARINADE },
-        { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: PORK_MARINADE },
-        { ...EGGS, amount: '1', unit: '', additionalDetails: '', section: PORK_MARINADE },
-        { ...ALL_PURPOSE_FLOUR, amount: '4 Tbsp', unit: '', additionalDetails: '', section: PORK_MARINADE },
-        { ...CORNSTARCH, amount: '6 Tbsp', unit: '', additionalDetails: '', section: PORK_MARINADE },
-        { ...PORK_SHOULDER, amount: '1.25 lb', unit: '', additionalDetails: 'cut into 1/2 inch pieces', section: PORK_MARINADE },
-        
-        { ...KETCHUP, amount: '1/2 c', unit: '', additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        { ...BROWN_SUGAR, amount: '1/2 c', unit: '', additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        { ...WHITE_VINEGAR, amount: '6 Tbsp', unit: '', additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        { ...CORNSTARCH, amount: '2 tsp', unit: '', additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        { ...COLD_WATER, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        
-        { ...RED_BELL_PEPPERS, amount: '1/4', unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
-        { ...YELLOW_BELL_PEPPERS, amount: '1/4', unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
-        { ...GREEN_BELL_PEPPERS, amount: '1/4', unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
-        { ...RED_ONION, amount: '1/2 small', unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
-        { ...YELLOW_ONION, amount: '1/2 small', unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
-        { ...PINEAPPLE, amount: '8 oz', unit: '', additionalDetails: 'chunk sized', section: FRUIT_AND_VEGGIES },
+        { ...GARLIC_SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PORK_MARINADE },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: PORK_MARINADE },
+        { ...ALL_PURPOSE_FLOUR, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
+        { ...CORNSTARCH, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
+        { ...PORK_SHOULDER, amount: 5 / 4, unit: UNITS.POUND, additionalDetails: 'cut into 1/2 inch pieces', section: PORK_MARINADE },
+
+        { ...KETCHUP, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...BROWN_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...WHITE_VINEGAR, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...CORNSTARCH, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...COLD_WATER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+
+        { ...RED_BELL_PEPPERS, amount: 1 / 4, unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
+        { ...YELLOW_BELL_PEPPERS, amount: 1 / 4, unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
+        { ...GREEN_BELL_PEPPERS, amount: 1 / 4, unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
+        { ...RED_ONION, amount: 1 / 2, unit: UNITS.SMALL, additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.SMALL, additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
+        { ...PINEAPPLE, amount: 8, unit: UNITS.OUNCE, additionalDetails: 'chunk sized', section: FRUIT_AND_VEGGIES },
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: DEEP_FRY },
     ],
     appliances: [
@@ -70,7 +70,7 @@ module.exports = {
         { step: 'Coat each piece with cornstarch and massage to ensure it is completely covered.', type: PORK_MARINADE },
 
         { step: 'In a medium bowl, combine the "Sweet and Sour Sauce" ingredients. Set aside.', type: SWEET_AND_SOUR_SAUCE },
-        
+
         { step: 'Over medium-high heat, add oil to a large pot.', type: DEEP_FRY },
         { step: 'Line a baking sheet with paper towels and place a wire rack on top.', type: DEEP_FRY },
         { step: 'Once the oil is between 300ºF and 350ºF, you can begin frying the pork in batches.', type: DEEP_FRY },
@@ -83,7 +83,7 @@ module.exports = {
         { step: 'Add the chopped peppers and onions. Cook for about 30 seconds.', type: STIR_FRY },
         { step: 'Add pineapples. Cook for about 30 seconds.', type: STIR_FRY },
         { step: 'Transfer the pineapples and veggies to a bowl. Set aside.', type: STIR_FRY },
-        
+
         { step: 'Over medium-high heat, add the sauce to the wok and bring to a boil (about 1 to 2 minutes).', type: SECTIONS.ASSEMBLY },
         { step: 'Add the pork, veggies and pineapple. Mix until everything is combined and coated with the sauce (about 1 to 2 minutes).', type: SECTIONS.ASSEMBLY },
 

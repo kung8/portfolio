@@ -11,8 +11,8 @@ const carbonara13 = '../assets/Products/carbonara-13.jpeg';
 const carbonara14 = '../assets/Products/carbonara-14.jpeg';
 const carbonara15 = '../assets/Products/carbonara-15.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { GUANCIALE, EGGS, EGG_YOLKS, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { GUANCIALE, EGG, EGG_YOLKS, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO } = require('./ingredients');
 
 const CARBONARA_SAUCE = 'Carbonara Sauce';
 const PASTA = 'Pasta';
@@ -40,16 +40,16 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
-        { ...EGG_YOLKS, amount: '2', unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
-        { ...PARMIGIANO_REGGIANO, amount: '3.5 oz', unit: '', additionalDetails: 'finely shredded', section: CARBONARA_SAUCE },
-        { ...BLACK_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
+        { ...EGG_YOLKS, amount: 2, unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
+        { ...PARMIGIANO_REGGIANO, amount: 7 / 2, unit: UNITS.OUNCE, additionalDetails: 'finely shredded', section: CARBONARA_SAUCE },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: CARBONARA_SAUCE },
 
-        { ...SPAGHETTI_NOODLES, amount: '14 oz', unit: '', additionalDetails: '', section: PASTA },
-        { ...SALT, amount: '1 Tbsp', unit: '', additionalDetails: '', section: PASTA },
+        { ...SPAGHETTI_NOODLES, amount: 14, unit: UNITS.OUNCE, additionalDetails: '', section: PASTA },
+        { ...SALT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: PASTA },
 
-        { ...GUANCIALE, amount: '6 oz', unit: '', additionalDetails: 'sliced then batons', section: GUANCIALE_SECTION },
-        { ...GARLIC, amount: '1 clove', unit: '', additionalDetails: 'minced', section: GUANCIALE_SECTION },
+        { ...GUANCIALE, amount: 6, unit: UNITS.OUNCE, additionalDetails: 'sliced then batons', section: GUANCIALE_SECTION },
+        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: GUANCIALE_SECTION },
 
         { ...PARSLEY, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...PARMIGIANO_REGGIANO, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
@@ -81,7 +81,7 @@ module.exports = {
         { step: 'Add 1/2 cup of pasta water and stir quickly for 1 minute. The sauce should become creamy and stick to the pasta.', type: SECTIONS.ASSEMBLY, img: [carbonara10, carbonara11, carbonara12] },
 
         { step: 'Enjoy this authentic Italian dish topped with parsley, parmesan and pepper.', type: SECTIONS.SERVE, img: carbonara14 },
-    ], 
+    ],
     notes: [
         { note: 'If the sauce is too thick, add more pasta water.' },
         { note: 'Guanciale is a type of Italian cured meat made from pork jowl or cheeks. If you cannot find guanciale, pancetta is a good substitute.' },

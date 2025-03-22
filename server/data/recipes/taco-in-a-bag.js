@@ -1,5 +1,5 @@
 const taco = '../assets/Products/taco-in-a-bag.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN , UNITS } = require('./constants');
 const {
     BLACK_BEANS,
     BLACK_PEPPER,
@@ -29,11 +29,11 @@ module.exports = {
     cookTime: '10 m',
     separated: true,
     ingredients: [
-        { ...GROUND_BEEF, amount: '1 lb', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...FRITOS_CHIPS, amount: '1 medium bag', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GROUND_BEEF, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRITOS_CHIPS, amount: 1, unit: UNITS.BAG, additionalDetails: '', section: SECTIONS.MAIN },
         { ...TACO_SEASONING, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_BEANS, amount: '8 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CORN, amount: '8 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_BEANS, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORN, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...ROMA_TOMATO, amount: '', unit: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },

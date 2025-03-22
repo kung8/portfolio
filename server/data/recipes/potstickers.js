@@ -6,7 +6,7 @@ const filling = '../assets/Products/potstickers-filling.jpeg';
 const raw = '../assets/Products/potstickers-raw.jpeg';
 const zoomed = '../assets/Products/potstickers-zoomed.jpeg';
 const potstickers = '../assets/Products/potstickers.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const {
     GROUND_PORK,
     GARLIC,
@@ -45,21 +45,22 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...GROUND_PORK, amount: '1 lb', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...GARLIC, amount: '4 cloves', unit: '', additionalDetails: 'minced', section: SECTIONS.FILLING },
-        { ...GREEN_ONIONS, amount: '½ c', unit: '', additionalDetails: 'finely diced', section: SECTIONS.FILLING },
-        { ...GINGER, amount: '3 Tbsp', unit: '', additionalDetails: 'minced', section: SECTIONS.FILLING },
-        { ...LIGHT_SOY_SAUCE, amount: '2 Tbsp + 1 tsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...SESAME_OIL, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CAYENNE_PEPPER, amount: '1 pinch', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CABBAGE, amount: '1 ½ c', unit: '', additionalDetails: 'finely chopped', section: SECTIONS.FILLING },
-        { ...ALL_PURPOSE_FLOUR, amount: '2 ½ c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...HOT_WATER, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...SALT, amount: '¾ tsp', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...RICE_WINE_VINEGAR, amount: '¼ c', unit: '', additionalDetails: '', section: DIPPING_SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: '¼ c', unit: '', additionalDetails: '', section: DIPPING_SAUCE },
-        { ...VEGETABLE_OIL, amount: '6 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WARM_WATER, amount: '8 Tbsp', unit: '', additionalDetails: 'for steaming', section: SECTIONS.MAIN },
+        { ...GROUND_PORK, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...GREEN_ONIONS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'finely diced', section: SECTIONS.FILLING },
+        { ...GINGER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SESAME_OIL, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CAYENNE_PEPPER, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CABBAGE, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: 'finely chopped', section: SECTIONS.FILLING },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...HOT_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...RICE_WINE_VINEGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE },
+        { ...VEGETABLE_OIL, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: 8, unit: UNITS.TABLESPOON, additionalDetails: 'for steaming', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

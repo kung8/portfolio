@@ -1,7 +1,7 @@
 const zoomed = '../assets/Products/coleslaw-zoomed.jpeg';
 const coleslaw = '../assets/Products/coleslaw.jpeg';
 const plated = '../assets/Products/coleslaw-full-plate.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { CABBAGE, CARROTS, MAYONNAISE, WHITE_SUGAR, APPLE_CIDER_VINEGAR, LEMON_JUICE, SALT, BLACK_PEPPER } = require('./ingredients');
 
 module.exports = {
@@ -20,14 +20,14 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CABBAGE, amount: '1 small', unit: '', additionalDetails: 'chopped and shredded', section: SECTIONS.MAIN },
-        { ...CARROTS, amount: '1', unit: '', additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { ...MAYONNAISE, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...WHITE_SUGAR, amount: '1/3 c', unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...APPLE_CIDER_VINEGAR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...LEMON_JUICE, amount: '1 1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: 'or to taste', section: SECTIONS.DRESSING },
-        { ...BLACK_PEPPER, amount: '1/8 tsp', unit: '', additionalDetails: 'or to taste', section: SECTIONS.DRESSING },
+        { ...CABBAGE, amount: 1, unit: UNITS.SMALL, additionalDetails: 'chopped and shredded', section: SECTIONS.MAIN },
+        { ...CARROTS, amount: 1, unit: '', additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...MAYONNAISE, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...WHITE_SUGAR, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...APPLE_CIDER_VINEGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...LEMON_JUICE, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'or to taste', section: SECTIONS.DRESSING },
+        { ...BLACK_PEPPER, amount: 1 / 8, unit: UNITS.TEASPOON, additionalDetails: 'or to taste', section: SECTIONS.DRESSING },
     ],
     supplies: [
         { name: 'mixing bowl' },

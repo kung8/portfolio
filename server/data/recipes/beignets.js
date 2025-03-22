@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { WARM_WATER, WHITE_SUGAR, YEAST, EGGS, EVAPORATED_MILK, VANILLA_EXTRACT, BREAD_FLOUR, SALT, UNSALTED_BUTTER, PEANUT_OIL, POWDERED_SUGAR } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { WARM_WATER, WHITE_SUGAR, YEAST, EGG, EVAPORATED_MILK, VANILLA_EXTRACT, BREAD_FLOUR, SALT, UNSALTED_BUTTER, PEANUT_OIL, POWDERED_SUGAR } = require('./ingredients');
 
 const YEAST_MIXTURE_SECTION = 'Yeast Mixture';
 const DOUGH_SECTION = 'Dough';
@@ -29,17 +29,17 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...WARM_WATER, amount: '1 1/2 c', unit: '', additionalDetails: '', section: YEAST_MIXTURE_SECTION },
-        { ...WHITE_SUGAR, amount: '2/3 c', unit: '', additionalDetails: '', section: YEAST_MIXTURE_SECTION },
-        { ...YEAST, amount: '2 1/4 tsp', unit: '', additionalDetails: '', section: YEAST_MIXTURE_SECTION },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: 'room temperature', section: DOUGH_SECTION },
-        { ...EVAPORATED_MILK, amount: '1 c', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...VANILLA_EXTRACT, amount: '2 1/2 tsp', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...BREAD_FLOUR, amount: '7 c', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...SALT, amount: '1 1/2 tsp', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...UNSALTED_BUTTER, amount: '5 Tbsp', unit: '', additionalDetails: 'room temperature', section: DOUGH_SECTION },
-        { ...PEANUT_OIL, amount: '4 c', unit: '', additionalDetails: '', section: DEEP_FRY },
-        { ...POWDERED_SUGAR, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...WARM_WATER, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
+        { ...WHITE_SUGAR, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
+        { ...YEAST, amount: 9 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
+        { ...EGG, amount: 2, unit: '', additionalDetails: 'room temperature', section: DOUGH_SECTION },
+        { ...EVAPORATED_MILK, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...VANILLA_EXTRACT, amount: 5 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...BREAD_FLOUR, amount: 7, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...SALT, amount: 1.5, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...UNSALTED_BUTTER, amount: 5, unit: UNITS.TABLESPOON, additionalDetails: 'room temperature', section: DOUGH_SECTION },
+        { ...PEANUT_OIL, amount: 4, unit: UNITS.CUP, additionalDetails: '', section: DEEP_FRY },
+        { ...POWDERED_SUGAR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },
@@ -66,7 +66,7 @@ module.exports = {
         { step: 'Add butter. Combine.', type: MAKE_DOUGH },
         { step: 'Add the last half of the flour and salt. Combine (about 2 minutes).', type: MAKE_DOUGH },
         { step: 'Cover the bowl with plastic wrap. Chill for 2 hours (or up to 24 hours).', type: MAKE_DOUGH },
-        
+
         { step: 'Line a baking sheet with 3 layers of paper towels and a wire rack.', type: DEEP_FRY },
         { step: 'Over medium-high heat, add 4 inches of oil in a deep pot. Bring it to 360ºF.', type: DEEP_FRY },
         { step: 'Remove the dough from the fridge.', type: DEEP_FRY },

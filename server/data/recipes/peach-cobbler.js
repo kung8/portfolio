@@ -8,7 +8,7 @@ const melted = '../assets/Products/peach-cobbler-melted-butter.jpeg'
 const milk = '../assets/Products/peach-cobbler-milk.jpeg'
 const mixed = '../assets/Products/peach-cobbler-mixed.jpeg'
 const peaches = '../assets/Products/peach-cobbler-peaches.jpeg'
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     ALL_PURPOSE_FLOUR,
@@ -34,13 +34,13 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '40 m',
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '6 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_POWDER, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MILK, amount: '3/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CANNED_PEACH, amount: '4 c', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MILK, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CANNED_PEACH, amount: 4, unit: UNITS.CUP, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...CINNAMON, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [

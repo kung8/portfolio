@@ -12,7 +12,7 @@ const tomatoes11 = '../assets/Products/vietnamese-stuffed-tomatoes-11.jpeg';
 const tomatoes12 = '../assets/Products/vietnamese-stuffed-tomatoes-12.jpeg';
 const tomatoes13 = '../assets/Products/vietnamese-stuffed-tomatoes-13.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { VINE_TOMATOES, CORNSTARCH, GROUND_PORK, YELLOW_ONION, GARLIC, FISH_SAUCE, SALT, WHITE_SUGAR, BLACK_PEPPER, VEGETABLE_OIL, LIGHT_SOY_SAUCE, COLD_WATER, GREEN_ONIONS } = require('./ingredients');
 
 const FILLING_SECTION = 'Filling';
@@ -37,27 +37,27 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GROUND_PORK, amount: '1/2 lb', unit: '', additionalDetails: '', section: FILLING_SECTION },
-        { ...YELLOW_ONION, amount: '1/2 medium', unit: '', additionalDetails: 'diced', section: FILLING_SECTION },
-        { ...GARLIC, amount: '2', unit: '', additionalDetails: 'minced', section: FILLING_SECTION },
-        { ...FISH_SAUCE, amount: '1 tsp', unit: '', additionalDetails: '', section: FILLING_SECTION },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: FILLING_SECTION },
-        { ...WHITE_SUGAR, amount: '1/4 tsp', unit: '', additionalDetails: '', section: FILLING_SECTION },
+        { ...GROUND_PORK, amount: 1 / 2, unit: UNITS.POUND, additionalDetails: '', section: FILLING_SECTION },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.MEDIUM, additionalDetails: 'diced', section: FILLING_SECTION },
+        { ...GARLIC, amount: 2, unit: '', additionalDetails: 'minced', section: FILLING_SECTION },
+        { ...FISH_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: FILLING_SECTION },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: FILLING_SECTION },
+        { ...WHITE_SUGAR, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: FILLING_SECTION },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: FILLING_SECTION },
 
-        { ...FISH_SAUCE, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHITE_SUGAR, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...COLD_WATER, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...FISH_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...COLD_WATER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { ...VINE_TOMATOES, amount: '6 medium', unit: '', additionalDetails: 'halved', section: TOMATOES_SECTION },
-        { ...CORNSTARCH, amount: '1 Tbsp', unit: '', additionalDetails: '', section: TOMATOES_SECTION },
+        { ...VINE_TOMATOES, amount: 6, unit: UNITS.MEDIUM, additionalDetails: 'halved', section: TOMATOES_SECTION },
+        { ...CORNSTARCH, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: TOMATOES_SECTION },
 
-        { ...VEGETABLE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COLD_WATER, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CORNSTARCH, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COLD_WATER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
 
-        { ...GREEN_ONIONS, amount: '2', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...GREEN_ONIONS, amount: 2, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

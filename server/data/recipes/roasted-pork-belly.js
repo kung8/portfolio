@@ -16,7 +16,7 @@ const roast15 = '../assets/Products/roasted-pork-belly-15.jpeg';
 
 const fiveSpicePowder = '../assets/Products/five-spices-blend-3.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { PORK_BELLY, SALT, EGG_WHITES, HOISIN_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, WHITE_SUGAR, WHITE_PEPPER, WHITE_VINEGAR } = require('./ingredients');
 
 const PORK_BELLY_SECTION = 'Pork Belly';
@@ -44,20 +44,20 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...PORK_BELLY, amount: '3 lbs', unit: '', additionalDetails: 'skin on', section: PORK_BELLY_SECTION },
+        { ...PORK_BELLY, amount: 3, unit: UNITS.POUND, additionalDetails: 'skin on', section: PORK_BELLY_SECTION },
 
-        { ...HOISIN_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION },
-        { ...SHAOXING_WINE, amount: '1/2 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION },
-        { ...SALT, amount: '1/2 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION },
-        { ...WHITE_PEPPER, amount: '1/2 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION },
-        { name: '5-Spice', amount: '1/2 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION, link: { id: 'five-spice-blend', url: 'recipes/five-spice-blend' }, img: fiveSpicePowder },
-        { ...WHITE_SUGAR, amount: '1/2 Tbsp', unit: '', additionalDetails: '', section: RUB_SECTION },
+        { ...HOISIN_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION },
+        { ...SHAOXING_WINE, amount: 1 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION },
+        { ...WHITE_PEPPER, amount: 1 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION },
+        { name: '5-Spice', amount: 1 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION, link: { id: 'five-spice-blend', url: 'recipes/five-spice-blend' }, img: fiveSpicePowder },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION },
 
-        { ...SALT, amount: '1 c', unit: '', additionalDetails: '', section: PORK_BELLY_SECTION },
-        { ...EGG_WHITES, amount: '1', unit: '', additionalDetails: '', section: PORK_BELLY_SECTION },
+        { ...SALT, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PORK_BELLY_SECTION },
+        { ...EGG_WHITES, amount: 1, unit: '', additionalDetails: '', section: PORK_BELLY_SECTION },
 
-        { ...WHITE_VINEGAR, amount: '1 Tbsp', unit: '', additionalDetails: '', section: PORK_BELLY_SECTION },
-        { ...VEGETABLE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: PORK_BELLY_SECTION },
+        { ...WHITE_VINEGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: PORK_BELLY_SECTION },
+        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: PORK_BELLY_SECTION },
 
     ],
     appliances: [

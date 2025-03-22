@@ -18,7 +18,7 @@ const cakes17 = '../assets/Products/chive-cakes-17.jpeg';
 const cakes18 = '../assets/Products/chive-cakes-18.jpeg';
 const cakes19 = '../assets/Products/chive-cakes-19.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
 const { TAPIOCA_STARCH, HOT_WATER, VEGETABLE_OIL, SALT, POWDERED_SUGAR, BAKING_SODA, PEANUT_OIL, DARK_SOY_SAUCE, WHITE_VINEGAR, RED_PEPPER_FLAKES, GARLIC, RICE_FLOUR, GLUTINOUS_RICE_FLOUR, GARLIC_CHIVES, LUKEWARM_WATER, UNSALTED_PEANUTS } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
@@ -49,26 +49,26 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...RICE_FLOUR, amount: '1 c', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...GLUTINOUS_RICE_FLOUR, amount: '1 tsp', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...TAPIOCA_STARCH, amount: '1 c', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...HOT_WATER, amount: '2 c', unit: '', additionalDetails: 'boiling', section: DOUGH_SECTION },
-        { ...VEGETABLE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...LUKEWARM_WATER, amount: '3 Tbsp', unit: '', additionalDetails: '', section: DOUGH_SECTION },
+        { ...RICE_FLOUR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...GLUTINOUS_RICE_FLOUR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...TAPIOCA_STARCH, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...HOT_WATER, amount: 2, unit: UNITS.CUP, additionalDetails: 'boiling', section: DOUGH_SECTION },
+        { ...VEGETABLE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...LUKEWARM_WATER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
 
-        { ...GARLIC_CHIVES, amount: '2 c', unit: '', additionalDetails: '1/2 inch slices', section: CHIVE_SECTION },
-        { ...SALT, amount: '1 Tbsp', unit: '', additionalDetails: '', section: CHIVE_SECTION },
-        { ...POWDERED_SUGAR, amount: '7/8 c', unit: '', additionalDetails: '', section: CHIVE_SECTION },
-        { ...BAKING_SODA, amount: '1 Tbsp', unit: '', additionalDetails: '', section: CHIVE_SECTION },
-        { ...PEANUT_OIL, amount: '2/3 c', unit: '', additionalDetails: '', section: CHIVE_SECTION },
-        { ...UNSALTED_PEANUTS, amount: '1/2 c', unit: '', additionalDetails: 'chopped', section: CHIVE_SECTION },
+        { ...GARLIC_CHIVES, amount: 2, unit: UNITS.CUP, additionalDetails: '1/2 inch slices', section: CHIVE_SECTION },
+        { ...SALT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHIVE_SECTION },
+        { ...POWDERED_SUGAR, amount: 7 / 8, unit: UNITS.CUP, additionalDetails: '', section: CHIVE_SECTION },
+        { ...BAKING_SODA, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHIVE_SECTION },
+        { ...PEANUT_OIL, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: CHIVE_SECTION },
+        { ...UNSALTED_PEANUTS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'chopped', section: CHIVE_SECTION },
 
-        { ...DARK_SOY_SAUCE, amount: '3/4 c', unit: '', additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...WHITE_VINEGAR, amount: '1/2 c', unit: '', additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...POWDERED_SUGAR, amount: '7/8 c', unit: '', additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...RED_PEPPER_FLAKES, amount: '2 Tbsp', unit: '', additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...GARLIC, amount: '4 cloves of', unit: '', additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...DARK_SOY_SAUCE, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...WHITE_VINEGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...POWDERED_SUGAR, amount: 7 / 8, unit: UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...RED_PEPPER_FLAKES, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
     ],
     appliances: [
         { name: 'stand mixer' },
@@ -109,7 +109,7 @@ module.exports = {
         { step: 'Pan fry until both sides are browned.', type: COOK_SECTION, img: cakes18 },
 
         { step: 'Enjoy these chive cakes with the dipping sauce.', type: SECTIONS.SERVE },
-    ], 
+    ],
     notes: [
         { note: 'The dough was difficult to get right. I still need to work on it. I had to add a lot of rice flour to get it to a workable consistency.', },
         { note: 'After about 10 minutes of steaming the dough never became translucent, so I need to experiment more with that.', },

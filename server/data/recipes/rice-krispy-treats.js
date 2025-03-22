@@ -5,7 +5,7 @@ const riceKrispy = '../assets/Products/rice-krispy-treat-rice-krispy.jpeg';
 const vanilla = '../assets/Products/rice-krispy-treat-vanilla.jpeg';
 const zoomed3 = '../assets/Products/rice-krispy-treat-zoomed-center-3.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, SECTIONS, UNITS } = require("./constants");
 const { MINI_MARSHMALLOWS, UNSALTED_BUTTER, VANILLA_EXTRACT, RICE_KRISPIES_CEREAL } = require('./ingredients');
 
 module.exports = {
@@ -23,10 +23,10 @@ module.exports = {
         { label: 'Rice Krispie Treats', link: "https://www.spendwithpennies.com/extra-chewy-rice-krispie-treats/" }
     ],
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MINI_MARSHMALLOWS, amount: '6 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RICE_KRISPIES_CEREAL, amount: '6 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MINI_MARSHMALLOWS, amount: 6, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...RICE_KRISPIES_CEREAL, amount: 6, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

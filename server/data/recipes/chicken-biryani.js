@@ -18,7 +18,7 @@ const soakingSaffron = '../assets/Products/chicken-biryani-soaking-saffron.jpeg'
 const spiceInPot = '../assets/Products/chicken-biryani-spice-marinade-in-pot.jpeg';
 const workstation = '../assets/Products/chicken-biryani-workstation.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { CARDAMOM, CHICKEN_THIGH, YOGURT, COLD_WATER, VEGETABLE_OIL, GARLIC, GINGER, TURMERIC, CINNAMON, CAYENNE_PEPPER, GARAM_MASALA, CORIANDER, CUMIN, PAPRIKA, SALT, CLOVES, BAY_LEAVES, STAR_ANISE, BASMATI_RICE, CARDAMOM_PODS, YELLOW_ONION, SAFFRON_THREADS, WARM_WATER, CILANTRO, GHEE } = require('./ingredients');
 
 const CRISPY_ONION = 'Crispy Onion';
@@ -44,37 +44,37 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHICKEN_THIGH, amount: '1.5 lb', unit: '', additionalDetails: 'halved', section: SECTIONS.CHICKEN },
-        { ...YOGURT, amount: '2/3 c', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...COLD_WATER, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...VEGETABLE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...GARLIC, amount: '6 cloves', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...GINGER, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...TURMERIC, amount: '1/8 tsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...CINNAMON, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...CAYENNE_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...CARDAMOM, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...GARAM_MASALA, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...CORIANDER, amount: '2 tsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...CUMIN, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...PAPRIKA, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...SALT, amount: '1 3/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CHICKEN_THIGH, amount: 3 / 2, unit: UNITS.POUND, additionalDetails: 'halved', section: SECTIONS.CHICKEN },
+        { ...YOGURT, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...COLD_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...VEGETABLE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...GARLIC, amount: 6, unit: UNITS.CLOVE, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...GINGER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...TURMERIC, amount: 1 / 8, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CINNAMON, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CAYENNE_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CARDAMOM, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...GARAM_MASALA, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CORIANDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CUMIN, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...PAPRIKA, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...SALT, amount: 7 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
 
-        { ...SALT, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.RICE },
-        { ...CLOVES, amount: '10', unit: '', additionalDetails: '', section: SECTIONS.RICE },
-        { ...BAY_LEAVES, amount: '5', unit: '', additionalDetails: '', section: SECTIONS.RICE },
-        { ...STAR_ANISE, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.RICE },
-        { ...CARDAMOM_PODS, amount: '6', unit: '', additionalDetails: '', section: SECTIONS.RICE },
-        { ...BASMATI_RICE, amount: '2 1/4 c', unit: '', additionalDetails: '', section: SECTIONS.RICE },
+        { ...SALT, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.RICE },
+        { ...CLOVES, amount: 10, unit: '', additionalDetails: '', section: SECTIONS.RICE },
+        { ...BAY_LEAVES, amount: 5, unit: '', additionalDetails: '', section: SECTIONS.RICE },
+        { ...STAR_ANISE, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.RICE },
+        { ...CARDAMOM_PODS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.RICE },
+        { ...BASMATI_RICE, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.RICE },
 
-        { ...YELLOW_ONION, amount: '2 medium', unit: '', additionalDetails: 'sliced', section: CRISPY_ONION },
-        { ...VEGETABLE_OIL, amount: '1 c', unit: '', additionalDetails: 'for frying', section: CRISPY_ONION },
+        { ...YELLOW_ONION, amount: 2, unit: UNITS.MEDIUM, additionalDetails: 'sliced', section: CRISPY_ONION },
+        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.CUP, additionalDetails: 'for frying', section: CRISPY_ONION },
 
-        { ...SAFFRON_THREADS, amount: '1 tsp', unit: '', additionalDetails: '', section: SAFFRON_WATER },
-        { ...WARM_WATER, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SAFFRON_WATER },
+        { ...SAFFRON_THREADS, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SAFFRON_WATER },
+        { ...WARM_WATER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAFFRON_WATER },
 
-        { ...CILANTRO, amount: '1 c', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...GHEE, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CILANTRO, amount: 1, unit: UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...GHEE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
 
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.TOPPINGS },
         { ...YOGURT, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.TOPPINGS },

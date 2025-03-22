@@ -11,8 +11,8 @@ const plated11 = '../assets/Products/cream-puffs-plated-11.jpeg';
 const sliced2 = '../assets/Products/cream-puffs-sliced-2.jpeg';
 const vanilla = '../assets/Products/cream-puffs-vanilla-pudding-mix.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { VANILLA_INSTANT_PUDDING_MIX, HEAVY_CREAM, MILK, UNSALTED_BUTTER, COLD_WATER, SALT, ALL_PURPOSE_FLOUR, EGGS, PORK_PATE } = require('./ingredients');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { VANILLA_INSTANT_PUDDING_MIX, HEAVY_CREAM, MILK, UNSALTED_BUTTER, COLD_WATER, SALT, ALL_PURPOSE_FLOUR, EGG, PORK_PATE } = require('./ingredients');
 
 const PUFF = 'Puff';
 
@@ -35,14 +35,14 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...VANILLA_INSTANT_PUDDING_MIX, amount: '2 - 3.5 oz', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...HEAVY_CREAM, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...MILK, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...UNSALTED_BUTTER, amount: '1/2 c', unit: '', additionalDetails: '', section: PUFF },
-        { ...COLD_WATER, amount: '1 c', unit: '', additionalDetails: '', section: PUFF },
-        { ...SALT, amount: '1/4 tsp', unit: '', additionalDetails: '', section: PUFF },
-        { ...ALL_PURPOSE_FLOUR, amount: '1 c', unit: '', additionalDetails: '', section: PUFF },
-        { ...EGGS, amount: '4', unit: '', additionalDetails: '', section: PUFF },
+        { ...VANILLA_INSTANT_PUDDING_MIX, amount: 7, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...HEAVY_CREAM, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...MILK, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: PUFF },
+        { ...COLD_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PUFF },
+        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: PUFF },
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PUFF },
+        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: PUFF },
     ],
     appliances: [
         { name: 'stove' },

@@ -1,13 +1,13 @@
 const plated = '../assets/Products/brownies-plated.jpeg';
 const pan = '../assets/Products/brownies-pan.jpeg';
 const zoomed = '../assets/Products/brownies-zoomed.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require("./constants");
 const {
     UNSALTED_BUTTER,
     WHITE_SUGAR,
     SALT,
     VANILLA_EXTRACT,
-    EGGS,
+    EGG,
     ALL_PURPOSE_FLOUR,
     COCOA_POWDER,
 } = require('./ingredients');
@@ -25,13 +25,13 @@ module.exports = {
     prepTime: '7 m',
     cookTime: '35 m',
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COCOA_POWDER, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: '2 1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '3/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '3 large', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: '1 1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COCOA_POWDER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG, amount: 3, unit: UNITS.LARGE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

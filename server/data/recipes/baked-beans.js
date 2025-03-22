@@ -9,7 +9,7 @@ const sauce = '../assets/Products/baked-beans-sauce.jpeg';
 const seasoning = '../assets/Products/baked-beans-seasoning.jpeg';
 const soaking = '../assets/Products/baked-beans-soaking.jpeg';
 const plateZoomed = '../assets/Products/baked-beans-full-plate-zoomed.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { SALT, BAKING_SODA, BACON, YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR, DRY_NAVY_BEAN } = require('./ingredients');
 
 const BEANS = 'Beans';
@@ -32,15 +32,15 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...DRY_NAVY_BEAN, amount: '1 lb', unit: '', additionalDetails: '', section: BEANS },
-        { ...SALT, amount: '2 tsp', unit: '', additionalDetails: '', section: BEANS },
-        { ...BAKING_SODA, amount: '1/4 tsp', unit: '', additionalDetails: '', section: BEANS },
-        { ...BACON, amount: '8 slices', unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: '1 c', unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...BROWN_SUGAR, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...KETCHUP, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MAPLE_SYRUP, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...APPLE_CIDER_VINEGAR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...DRY_NAVY_BEAN, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: BEANS },
+        { ...SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BEANS },
+        { ...BAKING_SODA, amount: 1/4, unit: UNITS.TEASPOON, additionalDetails: '', section: BEANS },
+        { ...BACON, amount: 8, unit: UNITS.SLICE, additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...BROWN_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...KETCHUP, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MAPLE_SYRUP, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...APPLE_CIDER_VINEGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

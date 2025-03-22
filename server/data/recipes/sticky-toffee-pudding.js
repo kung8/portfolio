@@ -2,8 +2,8 @@ const plated1 = '../assets/Products/sticky-toffee-pudding-plated-1.jpeg';
 const plated2 = '../assets/Products/sticky-toffee-pudding-plated-2.jpeg';
 const plated3 = '../assets/Products/sticky-toffee-pudding-plated-3.jpeg';
 const plated4 = '../assets/Products/sticky-toffee-pudding-plated-4.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
-const { HEAVY_CREAM, UNSALTED_BUTTER, BROWN_SUGAR, VANILLA_EXTRACT, DATES, COLD_WATER, BAKING_SODA, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, ALLSPICE, NUTMEG, WHITE_SUGAR, EGGS, WALNUTS } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { HEAVY_CREAM, UNSALTED_BUTTER, BROWN_SUGAR, VANILLA_EXTRACT, DATES, COLD_WATER, BAKING_SODA, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, ALLSPICE, NUTMEG, WHITE_SUGAR, EGG, WALNUTS } = require('./ingredients');
 
 const TOFFEE_SAUCE = 'Toffee Sauce';
 const PUDDING = 'Pudding';
@@ -27,24 +27,24 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '16 Tbsp', unit: '', additionalDetails: '', section: TOFFEE_SAUCE },
-        { ...BROWN_SUGAR, amount: '2 c', unit: '', additionalDetails: '', section: TOFFEE_SAUCE },
-        { ...HEAVY_CREAM, amount: '3 1/3 c', unit: '', additionalDetails: '', section: TOFFEE_SAUCE },
-        { ...VANILLA_EXTRACT, amount: '2 tsp', unit: '', additionalDetails: '', section: TOFFEE_SAUCE },
+        { ...UNSALTED_BUTTER, amount: 16, unit: UNITS.TABLESPOON, additionalDetails: '', section: TOFFEE_SAUCE },
+        { ...BROWN_SUGAR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: TOFFEE_SAUCE },
+        { ...HEAVY_CREAM, amount: 10 / 3, unit: UNITS.CUP, additionalDetails: '', section: TOFFEE_SAUCE },
+        { ...VANILLA_EXTRACT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: TOFFEE_SAUCE },
 
-        { ...DATES, amount: '6 oz', unit: '', additionalDetails: '', section: PUDDING },
-        { ...COLD_WATER, amount: '1 c', unit: '', additionalDetails: '', section: PUDDING },
-        { ...BAKING_SODA, amount: '1 tsp', unit: '', additionalDetails: '', section: PUDDING },
-        { ...ALL_PURPOSE_FLOUR, amount: '1 1/4 c', unit: '', additionalDetails: '', section: PUDDING },
-        { ...BAKING_POWDER, amount: '1 tsp', unit: '', additionalDetails: '', section: PUDDING },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: PUDDING },
-        { ...ALLSPICE, amount: '1/2 tsp', unit: '', additionalDetails: '', section: PUDDING },
-        { ...NUTMEG, amount: '1/2 tsp', unit: '', additionalDetails: '', section: PUDDING },
-        { ...UNSALTED_BUTTER, amount: '4 Tbsp', unit: '', additionalDetails: '', section: PUDDING },
-        { ...WHITE_SUGAR, amount: '3/4 c', unit: '', additionalDetails: '', section: PUDDING },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: 'room temperature', section: PUDDING },
-        { ...VANILLA_EXTRACT, amount: '1 1/2 tsp', unit: '', additionalDetails: '', section: PUDDING },
-        { ...WALNUTS, amount: '3/4 c', unit: '', additionalDetails: '', section: PUDDING },
+        { ...DATES, amount: 6, unit: UNITS.OUNCE, additionalDetails: '', section: PUDDING },
+        { ...COLD_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PUDDING },
+        { ...BAKING_SODA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: PUDDING },
+        { ...BAKING_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...ALLSPICE, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...NUTMEG, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: PUDDING },
+        { ...WHITE_SUGAR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: PUDDING },
+        { ...EGG, amount: 2, unit: '', additionalDetails: 'room temperature', section: PUDDING },
+        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...WALNUTS, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: PUDDING },
     ],
     appliances: [
         { name: 'stove' },

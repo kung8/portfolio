@@ -1,5 +1,5 @@
 const macaroni = '../assets/Products/macaroni-salad.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require('./constants');
 const {
     ELBOW_MACARONI,
     MAYONNAISE,
@@ -27,16 +27,16 @@ module.exports = {
     prepTime: '20 m',
     cookTime: '10 m',
     ingredients: [
-        { ...ELBOW_MACARONI, amount: '4 c', unit: '', additionalDetails: '', optional: false },
-        { ...MAYONNAISE, amount: '1 c', unit: '', additionalDetails: '', optional: false },
-        { ...WHITE_VINEGAR, amount: '1/4 c', unit: '', additionalDetails: '', optional: false },
-        { ...WHITE_SUGAR, amount: '2/3 c', unit: '', additionalDetails: '', optional: false },
-        { ...YELLOW_MUSTARD, amount: '2 1/2 Tbsp', unit: '', additionalDetails: '', optional: false },
-        { ...SALT, amount: '1 1/2 tsp', unit: '', additionalDetails: '', optional: false },
-        { ...BLACK_PEPPER, amount: '1/2 tsp', unit: '', additionalDetails: '', optional: false },
-        { ...YELLOW_ONION, amount: '1 medium', unit: '', additionalDetails: 'diced', optional: false },
-        { ...CELERY, amount: '2 stalks', unit: '', additionalDetails: 'sliced', optional: false },
-        { ...GREEN_BELL_PEPPERS, amount: '1', unit: '', additionalDetails: 'diced', optional: false },
+        { ...ELBOW_MACARONI, amount: 4, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...MAYONNAISE, amount: 1, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...WHITE_VINEGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...WHITE_SUGAR, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...YELLOW_MUSTARD, amount: 5 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...SALT, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: 'diced', optional: false },
+        { ...CELERY, amount: 2, unit: UNITS.STALK, additionalDetails: 'sliced', optional: false },
+        { ...GREEN_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', optional: false },
     ],
     appliances: [
         { name: 'stove' },

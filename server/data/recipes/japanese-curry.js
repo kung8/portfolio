@@ -14,7 +14,7 @@ const curry13 = '../assets/Products/japanese-curry-13.jpeg';
 const curry14 = '../assets/Products/japanese-curry-14.jpeg';
 const curry15 = '../assets/Products/japanese-curry-15.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
 const { YELLOW_ONION, CARROTS, YUKON_GOLD_POTATOES, GINGER, GARLIC, APPLES, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BLACK_PEPPER, VEGETABLE_OIL, CHICKEN_BROTH, HONEY, LIGHT_SOY_SAUCE, KETCHUP, JAPANESE_CURRY_MIX } = require('./ingredients');
 
 const PREP_CHICKEN = 'Prep Chicken';
@@ -39,20 +39,20 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...YELLOW_ONION, amount: '2 large', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...CARROTS, amount: '2', unit: '', additionalDetails: 'rolling wedges', section: SECTIONS.MAIN },
-        { ...YUKON_GOLD_POTATOES, amount: '3', unit: '', additionalDetails: 'quartered', section: SECTIONS.MAIN },
-        { ...GINGER, amount: '1 tsp', unit: '', additionalDetails: 'grated', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '2 cloves', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...APPLES, amount: '1/2', unit: '', additionalDetails: 'peeled, cored, quartered, and grated', section: SECTIONS.MAIN },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: '1 1/2 lb', unit: '', additionalDetails: 'cut diagonally into bite size', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 2, unit: UNITS.LARGE, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...CARROTS, amount: 2, unit: '', additionalDetails: 'rolling wedges', section: SECTIONS.MAIN },
+        { ...YUKON_GOLD_POTATOES, amount: 3, unit: '', additionalDetails: 'quartered', section: SECTIONS.MAIN },
+        { ...GINGER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'grated', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...APPLES, amount: 1 / 2, unit: '', additionalDetails: 'peeled, cored, quartered, and grated', section: SECTIONS.MAIN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 3 / 2, unit: UNITS.POUND, additionalDetails: 'cut diagonally into bite size', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...VEGETABLE_OIL, amount: '1 1/2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...CHICKEN_BROTH, amount: '4 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...HONEY, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...KETCHUP, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...JAPANESE_CURRY_MIX, amount: '1 package', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...VEGETABLE_OIL, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CHICKEN_BROTH, amount: 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HONEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...KETCHUP, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...JAPANESE_CURRY_MIX, amount: 1, unit: UNITS.PACKAGE, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stove' },

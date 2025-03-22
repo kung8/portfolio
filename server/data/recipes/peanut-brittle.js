@@ -12,7 +12,7 @@ const water = '../assets/Products/peanut-brittle-water.jpeg';
 const plated1 = '../assets/Products/peanut-brittle-plated-1.jpeg';
 const plated2 = '../assets/Products/peanut-brittle-plated-2.jpeg';
 const rebaked = '../assets/Products/peanut-brittle-rebaked.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { WHITE_SUGAR, CORN_SYRUP, COLD_WATER, UNSALTED_PEANUTS, UNSALTED_BUTTER, BAKING_SODA, VANILLA_EXTRACT } = require('./ingredients');
 
 module.exports = {
@@ -33,13 +33,13 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...WHITE_SUGAR, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COLD_WATER, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CORN_SYRUP, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_PEANUTS, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_SODA, amount: '1 1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: '1 1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COLD_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORN_SYRUP, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_PEANUTS, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_SODA, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

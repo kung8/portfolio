@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
 const { WHOLE_MILK, EGG_YOLKS, WHITE_SUGAR, VANILLA_BEAN } = require('./ingredients');
 
 const GELATO_SECTION = 'Gelato';
@@ -24,10 +24,10 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...WHOLE_MILK, amount: '3 c', unit: '', additionalDetails: '', section: GELATO_SECTION },
-        { ...EGG_YOLKS, amount: '5', unit: '', additionalDetails: '', section: GELATO_SECTION },
-        { ...WHITE_SUGAR, amount: '3/4 c', unit: '', additionalDetails: '', section: GELATO_SECTION },
-        { ...VANILLA_BEAN, amount: '1', unit: '', additionalDetails: 'split lengthwise', section: GELATO_SECTION },
+        { ...WHOLE_MILK, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: GELATO_SECTION },
+        { ...EGG_YOLKS, amount: 5, unit: '', additionalDetails: '', section: GELATO_SECTION },
+        { ...WHITE_SUGAR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: GELATO_SECTION },
+        { ...VANILLA_BEAN, amount: 1, unit: '', additionalDetails: 'split lengthwise', section: GELATO_SECTION },
     ],
     appliances: [
         { name: 'stove' },

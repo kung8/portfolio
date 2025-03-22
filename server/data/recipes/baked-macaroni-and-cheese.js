@@ -20,7 +20,7 @@ const topPasta = '../assets/Products/baked-macaroni-and-cheese-top-pasta-layer.j
 const tupperware = '../assets/Products/baked-macaroni-and-cheese-tupperware.jpeg';
 const plate4 = '../assets/Products/baked-macaroni-and-cheese-full-plate-4.jpeg';
 const plate5 = '../assets/Products/baked-macaroni-and-cheese-full-plate-5.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
 const { ELBOW_MACARONI, OLIVE_OIL, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHOLE_MILK, HEAVY_CREAM, CHEDDAR_CHEESE, BLACK_PEPPER, SALT, PANKO_BREADCRUMBS, PARMESAN_CHEESE, SMOKED_PAPRIKA, GRUYERE_CHEESE } = require('./ingredients');
 
 module.exports = {
@@ -41,20 +41,20 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ELBOW_MACARONI, amount: '16 oz', unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...OLIVE_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...CHEDDAR_CHEESE, amount: '4 c', unit: '', additionalDetails: 'shredded', section: SECTIONS.SAUCE },
-        { ...GRUYERE_CHEESE, amount: '2 c', unit: '', additionalDetails: 'shredded', section: SECTIONS.SAUCE },
-        { ...UNSALTED_BUTTER, amount: '6 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...ALL_PURPOSE_FLOUR, amount: '1/3 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHOLE_MILK, amount: '3 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...HEAVY_CREAM, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...ELBOW_MACARONI, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...CHEDDAR_CHEESE, amount: 4, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.SAUCE },
+        { ...GRUYERE_CHEESE, amount: 2, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.SAUCE },
+        { ...UNSALTED_BUTTER, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...ALL_PURPOSE_FLOUR, amount: 1/3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHOLE_MILK, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HEAVY_CREAM, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
-        { ...PANKO_BREADCRUMBS, amount: '1 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PARMESAN_CHEESE, amount: '1/2 c', unit: '', additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { ...SMOKED_PAPRIKA, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PANKO_BREADCRUMBS, amount: 1.5, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PARMESAN_CHEESE, amount: 1/2, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...SMOKED_PAPRIKA, amount: 1/4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

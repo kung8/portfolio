@@ -7,9 +7,9 @@ const aerial = '../assets/Products/american-omelette-plated-aerial.jpeg';
 const halved = '../assets/Products/american-omelette-plated-halved.jpeg';
 const moreCookedZoomed = '../assets/Products/american-omelette-plated-more-cooked-zoomed.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, UNITS } = require('./constants');
 const {
-    EGGS,
+    EGG,
     COLD_WATER,
     SALT,
     BLACK_PEPPER,
@@ -39,17 +39,17 @@ module.exports = {
     cookTime: '10 m',
     separated: true,
     ingredients: [
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', optional: false },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', optional: false },
         { ...COLD_WATER, amount: '', unit: '', additionalDetails: '', optional: false },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
-        { ...YELLOW_ONION, amount: '1/4 small', unit: '', additionalDetails: 'diced', optional: false },
-        { ...RED_BELL_PEPPERS, amount: '1/3', unit: '', additionalDetails: 'diced', optional: false },
-        { ...MUSHROOMS, amount: '4 or 5 slices', unit: '', additionalDetails: 'chopped', optional: true },
-        { ...ROMA_TOMATO, amount: '1/4', unit: '', additionalDetails: 'diced', optional: false },
-        { ...COOKED_HAM, amount: '1 slice', unit: '', additionalDetails: 'diced', optional: false },
+        { ...YELLOW_ONION, amount: 1/4, unit: UNITS.SMALL, additionalDetails: 'diced', optional: false },
+        { ...RED_BELL_PEPPERS, amount: 1/3, unit: '', additionalDetails: 'diced', optional: false },
+        { ...MUSHROOMS, amount: 5, unit: UNITS.SLICE, additionalDetails: 'chopped', optional: true },
+        { ...ROMA_TOMATO, amount: 1/4, unit: '', additionalDetails: 'diced', optional: false },
+        { ...COOKED_HAM, amount: 1, unit: UNITS.SLICE, additionalDetails: 'diced', optional: false },
         { ...BASIL, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
-        { ...UNSALTED_BUTTER, amount: '1/2 Tbsp', unit: '', additionalDetails: '', optional: false },
+        { ...UNSALTED_BUTTER, amount: 1/2, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },

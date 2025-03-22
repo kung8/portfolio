@@ -8,7 +8,7 @@ const pan3 = '../assets/Products/pepper-steak-stir-fry-steak-in-pan-3.jpeg';
 const pan4 = '../assets/Products/pepper-steak-stir-fry-steak-in-pan-4.jpeg';
 const veggiesPan = '../assets/Products/pepper-steak-stir-fry-veggies-in-pan.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
 const {
     BEEF,
     RED_BELL_PEPPERS,
@@ -43,22 +43,22 @@ module.exports = {
         { label: 'Pepper Steak Stir Fry', link: 'https://www.dinneratthezoo.com/pepper-steak-stir-fry/' }
     ],
     ingredients: [
-        { ...VEGETABLE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: 'divided', section: SECTIONS.MAIN },
-        { ...RED_BELL_PEPPERS, amount: '1', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...GREEN_BELL_PEPPERS, amount: '1', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: '1 medium', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },
+        { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...GREEN_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.MAIN },
 
-        { ...BEEF, amount: '1.5 lb', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...BEEF, amount: 3 / 2, unit: UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
 
-        { ...GARLIC, amount: '2 cloves', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...GINGER, amount: '1 tsp', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GINGER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'minced', section: SECTIONS.MAIN },
 
-        { ...LIGHT_SOY_SAUCE, amount: '1/4 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHITE_SUGAR, amount: '1 1/2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...CORNSTARCH, amount: '1 1/2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WARM_WATER, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CORNSTARCH, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stove' },

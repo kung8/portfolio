@@ -4,7 +4,7 @@ const guacamole3 = '../assets/Products/guacamole-3.jpeg';
 const guacamole4 = '../assets/Products/guacamole-4.jpeg';
 const guacamole5 = '../assets/Products/guacamole-5.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { AVOCADO, LIME, SALT, ROMA_TOMATO, YELLOW_ONION, CILANTRO, GARLIC, CAYENNE_PEPPER } = require('./ingredients');
 
 module.exports = {
@@ -24,14 +24,14 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...AVOCADO, amount: '3', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LIME, amount: '1', unit: '', additionalDetails: 'juiced', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ROMA_TOMATO, amount: '2', unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: '1/2 c', unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...CILANTRO, amount: '3 Tbsp', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '1 clove', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...CAYENNE_PEPPER, amount: '1 pinch', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...AVOCADO, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LIME, amount: 1, unit: '', additionalDetails: 'juiced', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ROMA_TOMATO, amount: 2, unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...CILANTRO, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...CAYENNE_PEPPER, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     supplies: [
         { name: 'medium bowl' },

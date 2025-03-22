@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES } = require('./constants');
-const { WHITE_SUGAR, ALL_PURPOSE_FLOUR, COCOA_POWDER, POWDERED_SUGAR, SEMI_SWEET_CHOCOLATE_CHIPS, SEA_SALT, EGGS, OLIVE_OIL, WARM_WATER, VANILLA_EXTRACT, CANOLA_OIL } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { WHITE_SUGAR, ALL_PURPOSE_FLOUR, COCOA_POWDER, POWDERED_SUGAR, SEMI_SWEET_CHOCOLATE_CHIPS, SEA_SALT, EGG, OLIVE_OIL, WARM_WATER, VANILLA_EXTRACT, CANOLA_OIL } = require('./ingredients');
 
 const DRY_SECTION = 'Dry';
 const WET_SECTION = 'Wet';
@@ -28,17 +28,17 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...WHITE_SUGAR, amount: '1 c', unit: '', additionalDetails: '', section: DRY_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: '3/4 c', unit: '', additionalDetails: '', section: DRY_SECTION },
-        { ...COCOA_POWDER, amount: '2/3 c', unit: '', additionalDetails: '', section: DRY_SECTION },
-        { ...POWDERED_SUGAR, amount: '1/2 c', unit: '', additionalDetails: '', section: DRY_SECTION },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '1/2 c', unit: '', additionalDetails: '', section: DRY_SECTION },
-        { ...SEA_SALT, amount: '3/4 tsp', unit: '', additionalDetails: '', section: DRY_SECTION },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
+        { ...COCOA_POWDER, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
+        { ...POWDERED_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
+        { ...SEA_SALT, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_SECTION },
 
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', section: WET_SECTION },
-        { ...CANOLA_OIL, amount: '1/2 c', unit: '', additionalDetails: '', section: WET_SECTION },
-        { ...WARM_WATER, amount: '2 Tbsp', unit: '', additionalDetails: '', section: WET_SECTION },
-        { ...VANILLA_EXTRACT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: WET_SECTION },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: WET_SECTION },
+        { ...CANOLA_OIL, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: WET_SECTION },
+        { ...WARM_WATER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: WET_SECTION },
+        { ...VANILLA_EXTRACT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: WET_SECTION },
     ],
     appliances: [
         { name: 'oven' },

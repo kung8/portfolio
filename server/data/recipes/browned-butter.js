@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, SECTIONS, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, CATEGORIES, UNITS } = require('./constants');
 const { DRY_MILK_POWDER, UNSALTED_BUTTER } = require('./ingredients');
 
 module.exports = {
@@ -16,8 +16,8 @@ module.exports = {
     cookTime: '5 m',
     separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '1 1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...DRY_MILK_POWDER, amount: '1/3 c', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...DRY_MILK_POWDER, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

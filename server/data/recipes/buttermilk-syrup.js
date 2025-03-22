@@ -1,6 +1,6 @@
 const cooked = '../assets/Products/buttermilk-syrup-cooked.jpeg';
 const raw = '../assets/Products/buttermilk-syrup-raw.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require("./constants");
 const {
     WHITE_SUGAR,
     BUTTERMILK,
@@ -26,11 +26,11 @@ module.exports = {
         { label: 'Buttermilk Syrup', link: 'https://www.allrecipes.com/recipe/239478/grandmas-buttermilk-syrup/' }
     ],
     ingredients: [
-        { ...WHITE_SUGAR, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BUTTERMILK, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...UNSALTED_BUTTER, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BAKING_SODA, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...VANILLA_EXTRACT, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BUTTERMILK, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BAKING_SODA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stove' },

@@ -1,9 +1,9 @@
 const katsu = '../assets/Products/katsu-full.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     VEGETABLE_OIL,
-    EGGS,
+    EGG,
     PANKO_BREADCRUMBS,
     ALL_PURPOSE_FLOUR,
     SALT,
@@ -31,18 +31,18 @@ module.exports = {
     cookTime: '15 - 20 m',
     separated: true,
     websites: [
-        { label: 'Chicken Katsu', link: 'https://www.justonecookbook.com/chicken-katsu/'}
+        { label: 'Chicken Katsu', link: 'https://www.justonecookbook.com/chicken-katsu/' }
     ],
     ingredients: [
-        { ...CHICKEN_BREAST, amount: '4', unit: '', additionalDetails: 'or ' + PORK_LOIN.name, section: SECTIONS.MAIN },
-        { ...VEGETABLE_OIL, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGGS, amount: '1', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PANKO_BREADCRUMBS, amount: '1 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_BREAST, amount: 4, unit: '', additionalDetails: 'or ' + PORK_LOIN.name, section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PANKO_BREADCRUMBS, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CABBAGE, amount: '1/4', unit: '', additionalDetails: 'julienne', section: SECTIONS.TOPPINGS },
-        { ...ROMA_TOMATO, amount: '2', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...CABBAGE, amount: 1 / 4, unit: '', additionalDetails: 'julienne', section: SECTIONS.TOPPINGS },
+        { ...ROMA_TOMATO, amount: 2, unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...LEMON, amount: '', unit: '', additionalDetails: 'wedges', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

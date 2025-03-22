@@ -4,7 +4,7 @@ const cooking = '../assets/Products/sloppy-joes-cooking-beef.jpeg';
 const garlic = '../assets/Products/sloppy-joes-garlic.jpeg';
 const veggies = '../assets/Products/sloppy-joes-raw-veggies.jpeg';
 const raw = '../assets/Products/sloppy-joes-raw.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const {
     YELLOW_ONION,
     RED_BELL_PEPPERS,
@@ -38,18 +38,18 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...YELLOW_ONION, amount: '1 small', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...RED_BELL_PEPPERS, amount: '1/2', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...WORCESTERSHIRE_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YELLOW_MUSTARD, amount: '1 1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BROWN_SUGAR, amount: '1 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...TOMATO_SAUCE, amount: '15 oz', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GROUND_BEEF, amount: '1 lb', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...OLIVE_OIL, amount: '1 T', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '1/4 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '3 cloves', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...HAMBURGER_BUNS, amount: '4', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...RED_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...WORCESTERSHIRE_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YELLOW_MUSTARD, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BROWN_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...TOMATO_SAUCE, amount: 15, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GROUND_BEEF, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...HAMBURGER_BUNS, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

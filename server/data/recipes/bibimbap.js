@@ -6,7 +6,7 @@ const eggs = '../assets/Products/bibimbap-eggs.jpeg';
 const marinating = '../assets/Products/bibimbap-marinating-chicken.jpeg';
 // const spinach = '../assets/Products/bibimbap-spinach.jpeg';
 const sauce = '../assets/Products/bibimbap-with-sauce.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
 const {
     GROUND_BEEF,
     LIGHT_SOY_SAUCE,
@@ -16,7 +16,7 @@ const {
     CARROTS,
     SPINACH,
     CORN,
-    EGGS,
+    EGG,
     GOCHUJANG_SAUCE,
     WHITE_SUGAR,
     WARM_WATER,
@@ -48,22 +48,22 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GROUND_BEEF, amount: '1 lb', unit: '', additionalDetails: '', section: BEEF },
-        { ...LIGHT_SOY_SAUCE, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BEEF },
-        { ...SESAME_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BEEF },
-        { ...BROWN_SUGAR, amount: '1 tsp', unit: '', additionalDetails: '', section: BEEF },
-        { ...GARLIC, amount: '1 clove', unit: '', additionalDetails: 'minced', section: BEEF },
-        { ...CARROTS, amount: '4 oz', unit: '', additionalDetails: 'matchsticks', section: VEGETABLES },
-        { ...SPINACH, amount: '8 oz', unit: '', additionalDetails: '', section: VEGETABLES },
+        { ...GROUND_BEEF, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: BEEF },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF },
+        { ...SESAME_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF },
+        { ...BROWN_SUGAR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF },
+        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: BEEF },
+        { ...CARROTS, amount: 4, unit: UNITS.OUNCE, additionalDetails: 'matchsticks', section: VEGETABLES },
+        { ...SPINACH, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: VEGETABLES },
         { ...CORN, amount: '', unit: '', additionalDetails: '', section: VEGETABLES },
-        { ...EGGS, amount: '3', unit: '', additionalDetails: '', section: EGGS_SECTION },
-        { ...GOCHUJANG_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...SESAME_OIL, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...WHITE_SUGAR, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...WARM_WATER, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...SESAME_SEEDS, amount: '1 Tbsp', unit: '', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...WHITE_VINEGAR, amount: '1 tsp', unit: '', additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...GARLIC, amount: '1 clove', unit: '', additionalDetails: 'minced', section: BIBIMBAP_SAUCE },
+        { ...EGG, amount: 3, unit: '', additionalDetails: '', section: EGGS_SECTION },
+        { ...GOCHUJANG_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...SESAME_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...WARM_WATER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...SESAME_SEEDS, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...WHITE_VINEGAR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: BIBIMBAP_SAUCE },
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [

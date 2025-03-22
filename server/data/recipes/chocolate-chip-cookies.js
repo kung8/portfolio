@@ -13,11 +13,11 @@ const vanilla = '../assets/Products/chocolate-chip-cookies-vanilla.jpeg';
 const plated = '../assets/Products/chocolate-chip-cookies-plated.jpeg';
 const zoomed = '../assets/Products/chocolate-chip-cookies-plated-zoomed.jpeg';
 
-const {CATEGORIES, SECTIONS, GENRES, METHODS, TYPES } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, UNITS } = require("./constants");
 const {
     UNSALTED_BUTTER,
     WHITE_SUGAR,
-    EGGS,
+    EGG,
     VANILLA_EXTRACT,
     BAKING_SODA,
     HOT_WATER,
@@ -41,16 +41,16 @@ module.exports = {
     prepTime: '10 m',
     cookTime: '10 m',
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: '1 c', unit: '', additionalDetails: 'softened', optional: false },
-        { ...WHITE_SUGAR, amount: '1 c', unit: '', additionalDetails: '', optional: false },
-        { ...BROWN_SUGAR, amount: '1 c', unit: '', additionalDetails: '', optional: false },
-        { ...EGGS, amount: '2', unit: '', additionalDetails: '', optional: false },
-        { ...VANILLA_EXTRACT, amount: '2 tsp', unit: '', additionalDetails: '', optional: false },
-        { ...BAKING_SODA, amount: '1 tsp', unit: '', additionalDetails: '', optional: false },
-        { ...HOT_WATER, amount: '2 tsp', unit: '', additionalDetails: '', optional: false },
-        { ...SALT, amount: '1/2 tsp', unit: '', additionalDetails: '', optional: false },
-        { ...ALL_PURPOSE_FLOUR, amount: '3 c', unit: '', additionalDetails: '', optional: false },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '2 c', unit: '', additionalDetails: '', optional: false },
+        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: 'softened', optional: false },
+        { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...BROWN_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', optional: false },
+        { ...VANILLA_EXTRACT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...BAKING_SODA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...HOT_WATER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'oven' },

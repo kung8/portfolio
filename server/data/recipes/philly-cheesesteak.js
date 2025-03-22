@@ -1,5 +1,5 @@
 const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
 const {
     OLIVE_OIL,
     RED_BELL_PEPPERS,
@@ -29,15 +29,15 @@ module.exports = {
         { label: 'Philly Cheesesteak', link: 'https://momsdish.com/easy-philly-cheesesteak' }
     ],
     ingredients: [
-        { ...BEEF_RIBEYE_STEAK, amount: '2 lb', unit: '', additionalDetails: 'thin strips', optional: false },
-        { ...RED_BELL_PEPPERS, amount: '2', unit: '', additionalDetails: 'sliced strips', optional: false },
-        { ...YELLOW_ONION, amount: '1 large', unit: '', additionalDetails: 'sliced strips', optional: false },
-        { ...MUSHROOMS, amount: '1 lb', unit: '', additionalDetails: 'sliced', optional: true },
-        { ...PROVOLONE_CHEESE, amount: '1 lb', unit: '', additionalDetails: '', optional: false },
-        { ...OLIVE_OIL, amount: '2 Tbsp', unit: '', additionalDetails: '', optional: false },
-        { ...SALT, amount: '1 Tbsp', unit: '', additionalDetails: '', optional: false },
-        { ...BLACK_PEPPER, amount: '1 tsp', unit: '', additionalDetails: '', optional: false },
-        { ...HOAGIE_BREAD, amount: '6', unit: '', additionalDetails: '', optional: false },
+        { ...BEEF_RIBEYE_STEAK, amount: 2, unit: UNITS.POUND, additionalDetails: 'thin strips', optional: false },
+        { ...RED_BELL_PEPPERS, amount: 2, unit: '', additionalDetails: 'sliced strips', optional: false },
+        { ...YELLOW_ONION, amount: 1, unit: UNITS.LARGE, additionalDetails: 'sliced strips', optional: false },
+        { ...MUSHROOMS, amount: 1, unit: UNITS.POUND, additionalDetails: 'sliced', optional: true },
+        { ...PROVOLONE_CHEESE, amount: 1, unit: UNITS.POUND, additionalDetails: '', optional: false },
+        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...SALT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...HOAGIE_BREAD, amount: 6, unit: '', additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },

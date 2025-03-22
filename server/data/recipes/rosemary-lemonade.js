@@ -5,7 +5,7 @@ const rosemary = '../assets/Products/rosemary-lemonade-rosemary.jpeg';
 const sugar = '../assets/Products/rosemary-lemonade-sugar.jpeg';
 const sweet = '../assets/Products/rosemary-lemonade-sweet-mix.jpeg';
 const water = '../assets/Products/rosemary-lemonade-water.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { COLD_WATER, FRESH_ROSEMARY, WHITE_SUGAR, HONEY, LEMON_JUICE, ICE, LEMON } = require('./ingredients');
 
 module.exports = {
@@ -25,12 +25,12 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...COLD_WATER, amount: '2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...FRESH_ROSEMARY, amount: '2 sprigs of', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HONEY, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LEMON_JUICE, amount: '1 1/4 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COLD_WATER, amount: '6 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COLD_WATER, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRESH_ROSEMARY, amount: 2, unit: UNITS.SPRIG, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HONEY, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LEMON_JUICE, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COLD_WATER, amount: 6, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...ICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
         { ...LEMON, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.SERVE },
         { ...FRESH_ROSEMARY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },

@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES } = require('./constants');
-const { PORK_CHOPS, ALL_PURPOSE_FLOUR, EGGS, PANKO_BREADCRUMBS, OLIVE_OIL, UNSALTED_BUTTER, SALT, BLACK_PEPPER, LEMON_JUICE, CUCUMBER, PARMESAN_CHEESE, ASPARAGUS, BABY_ARUGULA, BABY_KALE, RADISH, PEAS, MICROGREENS } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { PORK_CHOPS, ALL_PURPOSE_FLOUR, EGG, PANKO_BREADCRUMBS, OLIVE_OIL, UNSALTED_BUTTER, SALT, BLACK_PEPPER, LEMON_JUICE, CUCUMBER, PARMESAN_CHEESE, ASPARAGUS, BABY_ARUGULA, BABY_KALE, RADISH, PEAS, MICROGREENS } = require('./ingredients');
 
 const PORK_SECTION = 'Pork';
 const SALAD_SECTION = 'Salad';
@@ -30,20 +30,20 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...PORK_CHOPS, amount: '2 - 1 lb', unit: '', additionalDetails: 'bone-in', section: PORK_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: '1 c', unit: '', additionalDetails: '', section: PORK_SECTION },
-        { ...EGGS, amount: '3', unit: '', additionalDetails: '', section: PORK_SECTION },
-        { ...PANKO_BREADCRUMBS, amount: '2 c', unit: '', additionalDetails: '', section: PORK_SECTION },
-        { ...OLIVE_OIL, amount: '1/4 c', unit: '', additionalDetails: '', section: PORK_SECTION },
-        { ...UNSALTED_BUTTER, amount: '2 Tbsp', unit: '', additionalDetails: '', section: PORK_SECTION },
+        { ...PORK_CHOPS, amount: 2, unit: UNITS.POUND, additionalDetails: 'bone-in', section: PORK_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PORK_SECTION },
+        { ...EGG, amount: 3, unit: '', additionalDetails: '', section: PORK_SECTION },
+        { ...PANKO_BREADCRUMBS, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: PORK_SECTION },
+        { ...OLIVE_OIL, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: PORK_SECTION },
+        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: PORK_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: PORK_SECTION },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: PORK_SECTION },
 
-        { ...LEMON_JUICE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SALAD_SECTION },
-        { ...OLIVE_OIL, amount: '1/4 c', unit: '', additionalDetails: '', section: SALAD_SECTION },
-        { ...BABY_ARUGULA, amount: '2 c', unit: '', additionalDetails: '', section: SALAD_SECTION },
-        { ...BABY_KALE, amount: '2 c', unit: '', additionalDetails: '', section: SALAD_SECTION },
-        { ...PARMESAN_CHEESE, amount: '1/4 c', unit: '', additionalDetails: 'grated', section: SALAD_SECTION },
+        { ...LEMON_JUICE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SALAD_SECTION },
+        { ...OLIVE_OIL, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SALAD_SECTION },
+        { ...BABY_ARUGULA, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SALAD_SECTION },
+        { ...BABY_KALE, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SALAD_SECTION },
+        { ...PARMESAN_CHEESE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: 'grated', section: SALAD_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SALAD_SECTION },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SALAD_SECTION },
     ],

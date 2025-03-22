@@ -9,7 +9,7 @@ const raw = '../assets/Products/black-pepper-chicken-raw-chicken-in-pan.jpeg';
 const sauce = '../assets/Products/black-pepper-chicken-sauce.jpeg';
 const sauted = '../assets/Products/black-pepper-chicken-sauted-fragrant.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     SHALLOTS,
@@ -44,19 +44,19 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...SWEET_SOY_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...OYSTER_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...BLACK_PEPPER, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...CHICKEN_BREAST, amount: '5', unit: '', additionalDetails: 'cubed', section: SECTIONS.MARINADE },
-        { ...VEGETABLE_OIL, amount: '3 Tbsp', unit: '', additionalDetails: 'divided', section: SECTIONS.MAIN },
-        { ...SHALLOTS, amount: '6', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: '2 cloves', unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...GINGER, amount: '1 inch', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...OYSTER_SAUCE, amount: '2 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SWEET_SOY_SAUCE, amount: '4 Tbsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COLD_WATER, amount: '1/2 c', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CORNSTARCH, amount: '1 tsp', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SWEET_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...OYSTER_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CHICKEN_BREAST, amount: 5, unit: '', additionalDetails: 'cubed', section: SECTIONS.MARINADE },
+        { ...VEGETABLE_OIL, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },
+        { ...SHALLOTS, amount: 6, unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GINGER, amount: 1, unit: UNITS.INCH, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OYSTER_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SWEET_SOY_SAUCE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COLD_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...WHITE_SUGAR, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...CILANTRO, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },

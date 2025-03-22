@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, COLD_WATER, SALT, YEAST } = require('./ingredients');
 
 const BAGUETTES = 'Baguettes';
@@ -21,10 +21,10 @@ module.exports = {
     cookTime: '19 m',
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: '6 c', unit: '', additionalDetails: '', section: BAGUETTES },
-        { ...COLD_WATER, amount: '2 1/4 c', unit: '', additionalDetails: '', section: BAGUETTES },
-        { ...SALT, amount: '2 1/2 tsp', unit: '', additionalDetails: '', section: BAGUETTES },
-        { ...YEAST, amount: '1 1/8 tsp', unit: '', additionalDetails: '', section: BAGUETTES },
+        { ...ALL_PURPOSE_FLOUR, amount: 6, unit: UNITS.CUP, additionalDetails: '', section: BAGUETTES },
+        { ...COLD_WATER, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: BAGUETTES },
+        { ...SALT, amount: 5 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BAGUETTES },
+        { ...YEAST, amount: 9 / 8, unit: UNITS.TEASPOON, additionalDetails: '', section: BAGUETTES },
     ],
     appliances: [
         { name: 'oven' },
