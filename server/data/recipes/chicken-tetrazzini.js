@@ -18,7 +18,7 @@ module.exports = {
     img: tetrazzini7,
     recipeCredit: 'Lauren Maliwauki',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
