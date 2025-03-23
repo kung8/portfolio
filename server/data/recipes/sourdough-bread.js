@@ -9,7 +9,7 @@ const uncovered = '../assets/Products/sourdough-bread-uncovered.jpeg';
 const board = '../assets/Products/sourdough-bread-on-board.jpeg';
 const bakedScored = '../assets/Products/sourdough-bread-baked-scored.jpeg';
 
-const { METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
     SALT,
@@ -28,7 +28,7 @@ module.exports = {
     category: [CATEGORIES.APPETIZER, CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SNACK],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '50 m',
     separated: true,

@@ -11,7 +11,7 @@ const plated11 = '../assets/Products/cream-puffs-plated-11.jpeg';
 const sliced2 = '../assets/Products/cream-puffs-sliced-2.jpeg';
 const vanilla = '../assets/Products/cream-puffs-vanilla-pudding-mix.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { VANILLA_INSTANT_PUDDING_MIX, HEAVY_CREAM, MILK, UNSALTED_BUTTER, COLD_WATER, SALT, ALL_PURPOSE_FLOUR, EGG, PORK_PATE } = require('./ingredients');
 
 const PUFF = 'Puff';
@@ -27,7 +27,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.EGG],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT, TYPES.PASTRY],
-    yields: '8 puffs',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '30 m',
     websites: [

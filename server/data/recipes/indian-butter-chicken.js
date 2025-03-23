@@ -12,7 +12,7 @@ const simmering = '../assets/Products/indian-butter-chicken-simmering.jpeg';
 const spices = '../assets/Products/indian-butter-chicken-spices.jpeg';
 const paste = '../assets/Products/indian-butter-chicken-tomato-paste.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     VEGETABLE_OIL,
     UNSALTED_BUTTER,
@@ -45,7 +45,7 @@ module.exports = {
     websites: [
         { label: 'Butter Chicken', link: "https://gimmedelicious.com/easy-20-minute-butter-chicken/" }
     ],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '12 - 15 m',
     cookTime: '25 - 30 m',
     ingredients: [

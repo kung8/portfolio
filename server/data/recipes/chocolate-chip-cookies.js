@@ -13,7 +13,7 @@ const vanilla = '../assets/Products/chocolate-chip-cookies-vanilla.jpeg';
 const plated = '../assets/Products/chocolate-chip-cookies-plated.jpeg';
 const zoomed = '../assets/Products/chocolate-chip-cookies-plated-zoomed.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, UNITS, YIELD_UNITS } = require("./constants");
 const {
     UNSALTED_BUTTER,
     WHITE_SUGAR,
@@ -37,7 +37,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    yields: '3-4 dozens',
+    yields: { amount: 3, unit: YIELD_UNITS.DOZEN },
     prepTime: '10 m',
     cookTime: '10 m',
     ingredients: [

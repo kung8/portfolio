@@ -16,7 +16,7 @@ const smallSlice = '../assets/Products/cheesecake-small-slice.jpeg';
 const strawberriesInPan = '../assets/Products/cheesecake-strawberries-in-pan.jpeg';
 const wholeGlazed = '../assets/Products/cheesecake-whole-glazed-strawberry.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, UNITS, YIELD_UNITS } = require("./constants");
 const {
     WHITE_SUGAR,
     UNSALTED_BUTTER,
@@ -44,7 +44,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '45 m',
     cookTime: '2 h',
     separated: true,

@@ -1,5 +1,5 @@
 const taco = '../assets/Products/taco-in-a-bag.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
 const {
     BLACK_BEANS,
     BLACK_PEPPER,
@@ -24,7 +24,7 @@ module.exports = {
     genre: [GENRES.MEXICAN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.BEEF],
-    yields: '3 - 4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '5 - 10 m',
     cookTime: '10 m',
     separated: true,

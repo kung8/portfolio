@@ -7,7 +7,7 @@ const lid = '../assets/Products/singaporean-chicken-rice-lid.jpeg';
 const chili = '../assets/Products/singaporean-chicken-rice-chili-sauce.jpeg';
 const cooked = '../assets/Products/singaporean-chicken-rice-cooked.jpeg';
 const plated = '../assets/Products/singaporean-chicken-rice-plated.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     SESAME_OIL,
@@ -38,7 +38,7 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '40 m',
     // websites: [],

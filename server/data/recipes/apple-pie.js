@@ -11,7 +11,7 @@ const sauce = '../assets/Products/apple-pie-sauce.jpeg';
 const sliced = '../assets/Products/apple-pie-sliced.jpeg';
 const sugars = '../assets/Products/apple-pie-sugars.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { GRANNY_SMITH_APPLES, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHITE_SUGAR, BROWN_SUGAR, COLD_WATER, DOUBLE_CRUST_PIE_CRUST } = require('./ingredients');
 
 module.exports = {
@@ -24,7 +24,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE, METHODS.SIMMER],
     type: [TYPES.DESSERT, TYPES.PIE],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '70 m',
     websites: [

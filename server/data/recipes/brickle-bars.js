@@ -12,7 +12,7 @@ const wet4 = '../assets/Products/brickle-bars-wet-4.jpeg';
 const wet7 = '../assets/Products/brickle-bars-wet-7.jpeg';
 const plated4 = '../assets/Products/brickle-bars-plated-4.jpeg';
 const plated6 = '../assets/Products/brickle-bars-plated-6.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, WHITE_SUGAR, BROWN_SUGAR, EGG, VANILLA_EXTRACT, ENGLISH_TOFFEE_BITS } = require('./ingredients');
 
 const PREPARATION = 'Preparation';
@@ -29,7 +29,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.BAR],
-    yields: '24 bars',
+    yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '10 m',
     cookTime: '30 m',
     separated: true,

@@ -9,7 +9,7 @@ const sauce = '../assets/Products/baked-beans-sauce.jpeg';
 const seasoning = '../assets/Products/baked-beans-seasoning.jpeg';
 const soaking = '../assets/Products/baked-beans-soaking.jpeg';
 const plateZoomed = '../assets/Products/baked-beans-full-plate-zoomed.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { SALT, BAKING_SODA, BACON, YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR, DRY_NAVY_BEAN } = require('./ingredients');
 
 const BEANS = 'Beans';
@@ -24,7 +24,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.PORK, PROTEIN.BEAN],
     type: [TYPES.PROTEIN],
-    yields: '14 servings',
+    yields: { amount: 14, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '3 h',
     websites: [

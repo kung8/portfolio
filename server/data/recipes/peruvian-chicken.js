@@ -1,5 +1,5 @@
 const plated = '../assets/Products/peruvian-chicken-plated.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { GARLIC, LIGHT_SOY_SAUCE, LIME_JUICE, OLIVE_OIL, CUMIN, PAPRIKA, OREGANO, BLACK_PEPPER, JALAPENO_PEPPERS, CILANTRO, GREEN_ONIONS, MAYONNAISE, SALT, GREEK_YOGURT, CHICKEN_DRUMETTES } = require('./ingredients');
 
 const CREAMY_GREEN_SAUCE = 'Creamy Green Sauce';
@@ -15,7 +15,7 @@ module.exports = {
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN, TYPES.RICE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '35 m',
     websites: [

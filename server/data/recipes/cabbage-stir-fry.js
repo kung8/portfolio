@@ -1,7 +1,7 @@
 const cabbageStirFry = '../assets/Products/cabbage-stir-fry.jpeg';
 const raw = '../assets/Products/cabbage-stir-fry-raw.jpeg';
 const bowl = '../assets/Products/cabbage-stir-fry-in-bowl.jpeg';
-const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     CABBAGE,
     RED_PEPPER_FLAKES,
@@ -17,7 +17,7 @@ module.exports = {
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.VEGETABLE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '3 m',
     cookTime: '10 m',
     ingredients: [

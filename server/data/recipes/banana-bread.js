@@ -1,4 +1,4 @@
-const { CATEGORIES, SECTIONS, GENRES , UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES , UNITS, YIELD_UNITS } = require('./constants');
 const creamedSugar = '../assets/Products/banana-bread-creamed-sugar.jpeg';
 const mixture = '../assets/Products/banana-bread-flour-mixture.jpeg';
 const mashed = '../assets/Products/banana-bread-mashed-banana.jpeg';
@@ -30,7 +30,7 @@ module.exports = {
     recommended: true,
     genre: [GENRES.WESTERN, GENRES.AMERICAN],    
     type: [CATEGORIES.DESSERT],
-    yields: '1 loaf',
+    yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '55 m - 1 h',
     websites: [

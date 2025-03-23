@@ -6,7 +6,7 @@ const frenchToast5 = '../assets/Products/french-toast-5.jpeg';
 const frenchToast6 = '../assets/Products/french-toast-6.jpeg';
 const frenchToast7 = '../assets/Products/french-toast-7.jpeg';
 const frenchToast8 = '../assets/Products/french-toast-8.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     EGG,
     VANILLA_EXTRACT,
@@ -25,7 +25,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.BREAD],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '8 - 10 m',
     ingredients: [

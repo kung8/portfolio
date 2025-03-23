@@ -11,7 +11,7 @@ const dressing = '../assets/Products/cafe-rio-bowl-cilantro-ranch-dressing-in-bo
 const pre = '../assets/Products/cafe-rio-bowl-cilantro-ranch-dressing-pre-blended-ingredients.jpeg';
 const cilantroRanchDressingZoomed = '../assets/Products/cafe-rio-bowl-bowled-with-cilantro-ranch-dressing-zoomed.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     AVOCADO,
     BALSAMIC_VINEGAR,
@@ -51,7 +51,7 @@ module.exports = {
     method: [METHODS.MARINADE, METHODS.GRILL],
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.SALAD, TYPES.PROTEIN],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '15 m',
     separated: true,

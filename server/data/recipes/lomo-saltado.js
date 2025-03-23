@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
 const { BEEF_SIRLOIN, LIGHT_SOY_SAUCE, GARLIC, OYSTER_SAUCE, RED_WINE_VINEGAR, AJI_AMARILLO_PASTE, CORNSTARCH, RED_ONION, ROMA_TOMATO, GREEN_ONIONS, VEGETABLE_OIL, CILANTRO, WHITE_RICE, FRENCH_FRIES } = require('./ingredients');
 
 const BEEF_SECTION = 'Beef';
@@ -22,7 +22,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.STIR_FRY],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '10 m',
     websites: [

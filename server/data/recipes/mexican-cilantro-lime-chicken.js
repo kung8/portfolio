@@ -6,7 +6,7 @@ const rack = '../assets/Products/mexican-cilantro-lime-chicken-raw-on-baking-rac
 const set1 = '../assets/Products/mexican-cilantro-lime-chicken-plated-set-1.jpeg';
 const set2 = '../assets/Products/mexican-cilantro-lime-chicken-plated-set-2.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_WINGS,
     CILANTRO,
@@ -30,7 +30,7 @@ module.exports = {
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN, TYPES.RICE],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '40 m',
     websites: [

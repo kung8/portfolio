@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { KETCHUP, BROWN_SUGAR, PAPRIKA, GARLIC_POWDER, SALT, DIJON_MUSTARD, WORCESTERSHIRE_SAUCE, WHITE_VINEGAR, COLD_WATER, RICE_WINE_VINEGAR } = require('./ingredients');
 
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER],
     type: [TYPES.SAUCE],
-    yields: ' servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '20 m',
     websites: [

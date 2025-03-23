@@ -1,6 +1,6 @@
 const rolls1 = '../assets/Products/dinner-rolls-1.jpeg';
 const rolls2 = '../assets/Products/dinner-rolls-2.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { YEAST, LUKEWARM_WATER, WHITE_SUGAR, VEGETABLE_OIL, EGG, ALL_PURPOSE_FLOUR, SALT } = require('./ingredients');
 
 const YEAST_MIXTURE = 'Yeast Mixture';
@@ -18,7 +18,7 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
-    yields: ' servings',
+    yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '20 m',
     cookTime: '15 m',
     separated: true,

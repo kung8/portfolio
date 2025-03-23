@@ -7,7 +7,7 @@ const mixed = '../assets/Products/popcorn-balls-unmelted-mixed.jpeg';
 const unmeltedZoomed = '../assets/Products/popcorn-balls-unmelted-zoomed.jpeg';
 const baggiesZoomed = '../assets/Products/popcorn-ball-in-baggies-zoomed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { POPCORN, CORN_SYRUP, UNSALTED_BUTTER, COLD_WATER, POWDERED_SUGAR, MINI_MARSHMALLOWS, COOKING_SPRAY } = require('./ingredients');
 
 module.exports = {
@@ -19,7 +19,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.DESSERT],
-    yields: '16 - 20 servings',
+    yields: { amount: 20, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '20 m',
     websites: [

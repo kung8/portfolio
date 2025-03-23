@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { WARM_WATER, WHITE_SUGAR, YEAST, EGG, EVAPORATED_MILK, VANILLA_EXTRACT, BREAD_FLOUR, SALT, UNSALTED_BUTTER, PEANUT_OIL, POWDERED_SUGAR } = require('./ingredients');
 
 const YEAST_MIXTURE_SECTION = 'Yeast Mixture';
@@ -21,7 +21,7 @@ module.exports = {
     genre: [GENRES.FRENCH],
     method: [METHODS.DEEP_FRY],
     type: [TYPES.DESSERT],
-    yields: '3 dozens',
+    yields: { amount: 3, unit: YIELD_UNITS.DOZEN },
     prepTime: '30 m',
     cookTime: '15 m',
     websites: [

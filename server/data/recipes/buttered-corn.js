@@ -3,7 +3,7 @@ const cooked = '../assets/Products/buttered-corn-cooked.jpeg';
 const corn = '../assets/Products/buttered-corn-corn.jpeg';
 const cream = '../assets/Products/buttered-corn-cream.jpeg';
 const honey = '../assets/Products/buttered-corn-honey.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, CANNED_SWEET_CORN, SALT, BLACK_PEPPER, HEAVY_CREAM, HONEY } = require('./ingredients');
 
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     type: [TYPES.VEGETABLE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '20 m',
     websites: [

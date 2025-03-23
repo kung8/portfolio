@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { CANNED_SWEET_CORN, CANNED_CREAMED_CORN, CORNBREAD_MIX, SOUR_CREAM, UNSALTED_BUTTER, EGG } = require('./ingredients');
 
 const PREP_BAKE = 'Prep Bake';
@@ -17,7 +17,7 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.CASSEROLE],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '45 m',
     websites: [

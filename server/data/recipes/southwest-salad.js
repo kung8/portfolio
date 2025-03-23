@@ -1,5 +1,5 @@
 const salad = '../assets/Products/southwest-salad.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
 const {} = require('./ingredients');
 
 module.exports = {
@@ -12,7 +12,7 @@ module.exports = {
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SALAD, TYPES.PROTEIN],
-    yields: ' servings',
+    yields: { amount: '', unit: YIELD_UNITS.SERVING },
     prepTime: 'm',
     cookTime: 'm',
     ingredients: [

@@ -22,7 +22,7 @@ const cake21 = '../assets/Products/coffee-cake-21.jpeg';
 const cake22 = '../assets/Products/coffee-cake-22.jpeg';
 const cake23 = '../assets/Products/coffee-cake-23.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, CREAM_CHEESE, BROWN_SUGAR, WHITE_SUGAR, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, BAKING_POWDER, CORNSTARCH, SALT, BUTTERMILK, CINNAMON, POWDERED_SUGAR, MILK } = require('./ingredients');
 
 const WET_CAKE_BATTER = 'Wet Cake Batter';
@@ -51,7 +51,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.CAKE],
-    yields: '24 servings',
+    yields: { amount: 24, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '40 m',
     websites: [

@@ -10,7 +10,7 @@ const bowl9 = '../assets/Products/piri-piri-chicken-bowl-9.jpeg';
 const bowl10 = '../assets/Products/piri-piri-chicken-bowl-10.jpeg';
 const bowl11 = '../assets/Products/piri-piri-chicken-bowl-11.jpeg';
 const bowl12 = '../assets/Products/piri-piri-chicken-bowl-12.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { CHICKEN_THIGH, OLIVE_OIL, LEMON_JUICE, GARLIC, THAI_CHILI_PEPPERS, BROWN_SUGAR, OREGANO, SWEET_PAPRIKA, CAYENNE_PEPPER, SALT, CORN, BABY_ARUGULA, AVOCADO, BLACK_PEPPER, VEGETABLE_OIL, BASMATI_RICE, CHICKEN_BROTH, CRUSHED_TOMATOES, SMOKED_PAPRIKA, BAY_LEAVES, CILANTRO, NANDOS_PERI_PERI_SAUCE, MAYONNAISE, DIJON_MUSTARD, HOT_SAUCE, CHIVES } = require('./ingredients');
 
 const CHICKEN_SECTION = 'Chicken';
@@ -39,7 +39,7 @@ module.exports = {
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE, TYPES.SALAD],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '35 m',
     websites: [

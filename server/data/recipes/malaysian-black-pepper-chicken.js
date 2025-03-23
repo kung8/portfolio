@@ -9,7 +9,7 @@ const raw = '../assets/Products/black-pepper-chicken-raw-chicken-in-pan.jpeg';
 const sauce = '../assets/Products/black-pepper-chicken-sauce.jpeg';
 const sauted = '../assets/Products/black-pepper-chicken-sauted-fragrant.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     SHALLOTS,
@@ -36,7 +36,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '4 - 5 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '45 m',
     cookTime: '20 m',
     websites: [

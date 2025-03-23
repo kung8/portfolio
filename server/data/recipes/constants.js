@@ -254,6 +254,16 @@ const UNITS = {
     SHEET: { s: 'sheet', p: 'sheets' },
 };
 
+const YIELD_UNITS = {
+    SERVING: { s: 'serving', p: 'servings' },
+    LOAF: { s: 'loaf', p: 'loaves' },
+    DOZEN: { s: 'dozen', p: 'dozens' },
+    ROLL: { s: 'roll', p: 'rolls' },
+    CUP: { s: 'cup', p: 'cups' },
+    PINT: { s: 'pint', p: 'pints' },
+    QUART: { s: 'quart', p: 'quarts' },
+}
+
 module.exports = {
     CATEGORIES,
     DIET,
@@ -263,4 +273,5 @@ module.exports = {
     SECTIONS,
     TYPES,
     UNITS,
+    YIELD_UNITS,
 }

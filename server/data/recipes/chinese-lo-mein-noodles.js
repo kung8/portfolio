@@ -8,7 +8,7 @@ const plated2 = '../assets/Products/lo-mein-plated-2.jpeg';
 const plated3 = '../assets/Products/lo-mein-plated-3.jpeg';
 const sauce = '../assets/Products/lo-mein-sauce.jpeg';
 const steamed = '../assets/Products/lo-mein-steamed-broccoli.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     FLANK_STEAK,
     SALT,
@@ -40,7 +40,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.NOODLE],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '1 m',
     cookTime: '10 m',
     separated: true,

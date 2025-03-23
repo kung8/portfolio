@@ -10,7 +10,7 @@ const stuffing13 = '../assets/Products/stuffing-13.jpeg';
 const stuffing14 = '../assets/Products/stuffing-14.jpeg';
 const stuffing15 = '../assets/Products/stuffing-15.jpeg';
 const stuffing16 = '../assets/Products/stuffing-16.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
 const { BREAD, UNSALTED_BUTTER, SWEET_ONION, CELERY, GARLIC, SALT, BLACK_PEPPER, FRESH_SAGE, FRESH_ROSEMARY, PARSLEY, CHICKEN_BROTH, EGG } = require('./ingredients');
 
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.SIDE_DISH],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '45 m',
     cookTime: '50 m',
     websites: [

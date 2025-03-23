@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { OLIVE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, ANDOUILLE_SAUSAGE, YELLOW_BELL_PEPPERS, RED_BELL_PEPPERS, GREEN_BELL_PEPPERS, CELERY, JALAPENO_PEPPERS, WHITE_ONION, GARLIC, CRUSHED_TOMATOES, CHICKEN_BOUILLON, CHICKEN_BROTH, WHITE_RICE, THYME, CAYENNE_PEPPER, BAY_LEAVES, LARGE_SHRIMP, OKRA, SALT, BLACK_PEPPER, PARSLEY, GREEN_ONIONS, HOT_SAUCE, CAJUN_SEASONING } = require('./ingredients');
 
 const MEAT_SECTION = 'Meat';
@@ -25,7 +25,7 @@ module.exports = {
     method: [METHODS.SAUTE, METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN, PROTEIN.PORK, PROTEIN.SHRIMP],
     type: [TYPES.RICE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '40 m',
     websites: [

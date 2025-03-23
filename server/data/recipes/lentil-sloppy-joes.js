@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { OLIVE_OIL, YELLOW_ONION, BROWN_LENTILS, CARROTS, GARLIC, KETCHUP, DIJON_MUSTARD, BROWN_SUGAR, CHILI_POWDER, WORCESTERSHIRE_SAUCE, HOT_SAUCE, SALT, BBQ_SAUCE, HAMBURGER_BUNS, LETTUCE, WHITE_ONION, PICKLES, AVOCADO, VEGETABLE_BROTH } = require('./ingredients');
 
 const SAUTE = 'Saute';
@@ -18,7 +18,7 @@ module.exports = {
     method: [METHODS.PRESSURE_COOK],
     protein: [PROTEIN.LENTILS],
     type: [TYPES.BURGER],
-    yields: '5 servings',
+    yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '40 m',
     websites: [

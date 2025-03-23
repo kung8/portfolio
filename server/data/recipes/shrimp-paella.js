@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { SHRIMP, OLIVE_OIL, SAFFRON_THREADS, CHICKEN_BROTH, CHORIZO, YELLOW_ONION, GARLIC, RED_BELL_PEPPERS, SALT, PAPRIKA, CAYENNE_PEPPER, GREEN_PEAS, ARBORIO_RICE, PARSLEY, LEMON } = require('./ingredients');
 
 const SAFFRON_BROTH = 'Saffron Broth';
@@ -17,7 +17,7 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
     protein: [PROTEIN.SHRIMP],
     type: [TYPES.MAIN_COURSE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '55 m',
     websites: [

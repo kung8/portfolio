@@ -13,7 +13,7 @@ const naan12 = '../assets/Products/naan-12.jpeg';
 const naan13 = '../assets/Products/naan-13.jpeg';
 const naan14 = '../assets/Products/naan-14.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { WARM_WATER, WHITE_SUGAR, YEAST, ALL_PURPOSE_FLOUR, YOGURT, SALT, OLIVE_OIL, UNSALTED_BUTTER, CILANTRO } = require('./ingredients');
 
 const ACTIVATE_YEAST = 'Activate Yeast';
@@ -31,7 +31,7 @@ module.exports = {
     genre: [GENRES.INDIAN],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
-    yields: '4 naan',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '15 m',
     separated: true,

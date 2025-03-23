@@ -9,7 +9,7 @@ const marinating = '../assets/Products/broccoli-beef-marinating-beef.jpeg';
 const thickened = '../assets/Products/broccoli-beef-sauce-thickened.jpeg';
 const sauce = '../assets/Products/broccoli-beef-sauce.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     BAKING_SODA,
     BEEF,
@@ -40,7 +40,7 @@ module.exports = {
     method: [METHODS.STIR_FRY, METHODS.BLANCH],
     protein: [PROTEIN.BEEF],
     type: [TYPES.STIR_FRY],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '30 m',
     websites: [

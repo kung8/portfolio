@@ -20,7 +20,7 @@ const topPasta = '../assets/Products/baked-macaroni-and-cheese-top-pasta-layer.j
 const tupperware = '../assets/Products/baked-macaroni-and-cheese-tupperware.jpeg';
 const plate4 = '../assets/Products/baked-macaroni-and-cheese-full-plate-4.jpeg';
 const plate5 = '../assets/Products/baked-macaroni-and-cheese-full-plate-5.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
 const { ELBOW_MACARONI, OLIVE_OIL, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHOLE_MILK, HEAVY_CREAM, CHEDDAR_CHEESE, BLACK_PEPPER, SALT, PANKO_BREADCRUMBS, PARMESAN_CHEESE, SMOKED_PAPRIKA, GRUYERE_CHEESE } = require('./ingredients');
 
 module.exports = {
@@ -33,7 +33,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL, METHODS.BAKE],
     type: [TYPES.CASSEROLE, TYPES.PASTA],
-    yields: '12 servings',
+    yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '30 m',
     websites: [

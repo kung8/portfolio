@@ -6,7 +6,7 @@ const karaage5 = '../assets/Products/karaage-5.jpeg';
 const karaage6 = '../assets/Products/karaage-6.jpeg';
 const karaage7 = '../assets/Products/karaage-7.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, SALT, BLACK_PEPPER, GINGER, GARLIC, LIGHT_SOY_SAUCE, VEGETABLE_OIL, POTATO_STARCH, ALL_PURPOSE_FLOUR, LEMON, KEWPIE_MAYONNAISE, MIRIN, EGG, WARM_WATER } = require('./ingredients');
 
 const ZAKU_ZAKU_BREADCRUMBS = 'Zaku Zaku Breadcrumbs';
@@ -30,7 +30,7 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '15 m',
     websites: [

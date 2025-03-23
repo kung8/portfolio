@@ -3,7 +3,7 @@ const pizzaDough = '../assets/Products/pizza-dough.jpeg';
 const frozenDough = '../assets/Products/frozen-pizza-dough.jpeg';
 const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
 const tossing = '../assets/Products/pizza-toss.MOV';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     BREAD_FLOUR,
     SALT,
@@ -26,7 +26,7 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
-    yields: '3 servings',
+    yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: '45 m',
     cookTime: '20 m',
     ingredients: [

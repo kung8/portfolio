@@ -8,7 +8,7 @@ const raisin = '../assets/Products/oatmeal-raisin-cookies-raisins-added.jpeg';
 const raw = '../assets/Products/oatmeal-raisin-cookies-raw-pan.jpeg';
 const chocolate = '../assets/Products/oatmeal-raisin-cookies-with-chocolate-chip.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_SODA,
@@ -34,7 +34,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    yields: '4 dozens',
+    yields: { amount: 4, unit: YIELD_UNITS.DOZEN },
     prepTime: '12 m',
     cookTime: '13 m',
     websites: [

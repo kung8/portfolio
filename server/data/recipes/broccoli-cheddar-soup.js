@@ -6,7 +6,7 @@ const sauteed = '../assets/Products/broccoli-cheddar-soup-sauteed-onion.jpeg';
 const simmering1 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-1.jpeg';
 const simmering2 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-2.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     YELLOW_ONION,
@@ -34,7 +34,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SLOW_COOK],
     type: [TYPES.BREAD, TYPES.SOUP],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '25 m',
     separated: true,

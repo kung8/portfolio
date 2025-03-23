@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
 const { GROUND_BEEF, YELLOW_ONION, GREEN_BELL_PEPPERS, CORN, CHILI_POWDER, GARLIC_SALT, CUMIN, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, FLOUR_TORTILLA, LETTUCE, ROMA_TOMATO, REFRIED_BEANS, TACO_SAUCE } = require('./ingredients');
 
 const BEEF = 'Beef';
@@ -26,7 +26,7 @@ module.exports = {
     method: [METHODS.SAUTE, METHODS.BAKE],
     protein: [PROTEIN.BEEF],
     type: [TYPES.CASSEROLE],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '30 m',
     websites: [

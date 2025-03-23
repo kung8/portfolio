@@ -18,7 +18,7 @@ const soakingSaffron = '../assets/Products/chicken-biryani-soaking-saffron.jpeg'
 const spiceInPot = '../assets/Products/chicken-biryani-spice-marinade-in-pot.jpeg';
 const workstation = '../assets/Products/chicken-biryani-workstation.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { CARDAMOM, CHICKEN_THIGH, YOGURT, COLD_WATER, VEGETABLE_OIL, GARLIC, GINGER, TURMERIC, CINNAMON, CAYENNE_PEPPER, GARAM_MASALA, CORIANDER, CUMIN, PAPRIKA, SALT, CLOVES, BAY_LEAVES, STAR_ANISE, BASMATI_RICE, CARDAMOM_PODS, YELLOW_ONION, SAFFRON_THREADS, WARM_WATER, CILANTRO, GHEE } = require('./ingredients');
 
 const CRISPY_ONION = 'Crispy Onion';
@@ -36,7 +36,7 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.SAUTE, METHODS.STEAM],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: ' servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '1 hr 30 m',
     websites: [

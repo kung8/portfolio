@@ -4,7 +4,7 @@ const plated2 = '../assets/Products/crepes-plated-2.jpeg';
 const scoop = '../assets/Products/crepes-scoop-in-pan.jpeg';
 const spread = '../assets/Products/crepes-scoop-spread-in-pan.jpeg';
 const unmelted = '../assets/Products/crepes-unmelted-chocolate.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     EGG,
@@ -39,7 +39,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.DESSERT, TYPES.FINGER_FOOD],
-    yields: '4 - 5 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '5 - 8 m',
     cookTime: '15 - 20 m',
     separated: true,

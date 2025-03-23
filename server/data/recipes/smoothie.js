@@ -1,5 +1,5 @@
 const smoothie = '../assets/Products/smoothie.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     ALMOND_MILK,
     BANANA,
@@ -18,7 +18,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BLEND],
     protein: [PROTEIN.PEANUT],
-    yields: '40 oz',
+    yields: { amount: 3 / 2, unit: YIELD_UNITS.SERVING },
     prepTime: '1 m',
     cookTime: '2 m',
     ingredients: [

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { BEEF_RIBS, YELLOW_ONION, CARROTS, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGG, BEEF_BROTH, SHIITAKE_MUSHROOMS, THAI_CHILI_PEPPERS, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONIONS, SESAME_SEEDS, UDON_NOODLES, WARM_WATER } = require('./ingredients');
 
 const BEEF_BROTH_SECTION = 'Beef Broth';
@@ -27,7 +27,7 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SOUP, TYPES.NOODLE],
-    yields: ' servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '20 m',
     websites: [

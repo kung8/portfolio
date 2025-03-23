@@ -10,7 +10,7 @@ const sauce1 = '../assets/Products/chicken-cordon-bleu-sauce-1.jpeg';
 const sauce3 = '../assets/Products/chicken-cordon-bleu-sauce-3.jpeg';
 const cooked1 = '../assets/Products/chicken-cordon-bleu-cooked-1.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, TYPES , UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, TYPES , UNITS, YIELD_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     MAYONNAISE,
@@ -33,7 +33,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '30 m',
     separated: true,

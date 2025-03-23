@@ -1,5 +1,5 @@
 const sushi = '../assets/Products/sushi.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
 const {
     SEAWEED,
     SUSHI_RICE,
@@ -31,7 +31,7 @@ module.exports = {
     method: [METHODS.RAW],
     protein: [PROTEIN.FISH, PROTEIN.SEAFOOD],
     type: [TYPES.RICE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '15 m',
     separated: true,

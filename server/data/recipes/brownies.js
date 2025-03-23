@@ -1,7 +1,7 @@
 const plated = '../assets/Products/brownies-plated.jpeg';
 const pan = '../assets/Products/brownies-pan.jpeg';
 const zoomed = '../assets/Products/brownies-zoomed.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     UNSALTED_BUTTER,
     WHITE_SUGAR,
@@ -21,7 +21,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    yields: '12 servings',
+    yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: '7 m',
     cookTime: '35 m',
     ingredients: [

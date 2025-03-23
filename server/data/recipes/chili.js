@@ -10,7 +10,7 @@ const pot6 = '../assets/Products/chili-in-pot-6.jpeg';
 const pot7 = '../assets/Products/chili-in-pot-7.jpeg';
 const plated3 = '../assets/Products/chili-plated-3.jpeg';
 const plated4 = '../assets/Products/chili-plated-4.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     GROUND_BEEF,
     YELLOW_ONION,
@@ -49,7 +49,7 @@ module.exports = {
     websites: [
         { label: 'Chili', link: 'https://www.spendwithpennies.com/the-best-chili-recipe/' }
     ],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '45 m',
     ingredients: [

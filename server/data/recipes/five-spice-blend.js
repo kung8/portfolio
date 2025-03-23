@@ -3,7 +3,7 @@ const blend2 = '../assets/Products/five-spices-blend-2.jpeg';
 const blend3 = '../assets/Products/five-spices-blend-3.jpeg';
 const blend4 = '../assets/Products/five-spices-blend-4.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { CINNAMON, STAR_ANISE, FENNEL_SEEDS, BLACK_PEPPER, GROUND_CLOVES } = require('./ingredients');
 
 const SPICES_SECTION = 'Spices';
@@ -18,7 +18,7 @@ module.exports = {
     genre: [GENRES.CHINESE],
     method: [METHODS.BLEND],
     type: [TYPES.SPICE],
-    yields: '1/4 c',
+    yields: { amount: 1 / 4, unit: YIELD_UNITS.CUP },
     prepTime: '10 m',
     websites: [
         { label: '5-Spice', link: 'https://www.food.com/recipe/five-spice-powder-66216' }

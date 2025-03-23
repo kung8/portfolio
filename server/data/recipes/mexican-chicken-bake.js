@@ -1,5 +1,5 @@
 const mexicanChickenBake = '../assets/Products/mexican-chicken-bake.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
 const {} = require('./ingredients');
 
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
     genre: [GENRES.MEXICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '50 m - 1 h',
     ingredients: [

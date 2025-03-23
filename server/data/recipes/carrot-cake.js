@@ -14,7 +14,7 @@ const walnuts = '../assets/Products/carrot-cake-walnuts.jpeg';
 const side = '../assets/Products/carrot-cake-plated-side.jpeg';
 const zoomed = '../assets/Products/carrot-cake-plated-zoomed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { BROWN_SUGAR, CARROTS, EGG, WHITE_SUGAR, VEGETABLE_OIL, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, CINNAMON, BAKING_SODA, SALT, BAKING_POWDER, CREAM_CHEESE, UNSALTED_BUTTER, POWDERED_SUGAR, WALNUTS } = require('./ingredients');
 
 const CARROT_MIXTURE = 'Carrot Mixture';
@@ -32,7 +32,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT, TYPES.CAKE],
-    yields: '16 servings',
+    yields: { amount: 16, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '50 m',
     websites: [

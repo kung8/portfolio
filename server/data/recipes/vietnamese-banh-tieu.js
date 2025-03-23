@@ -1,6 +1,6 @@
 const banhTieu = '../assets/Products/banh-tieu.jpeg';
 const flat = '../assets/Products/banh-tieu-flat.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, UNITS, YIELD_UNITS } = require('./constants');
 const {
     BREAD_FLOUR,
     WARM_WATER,
@@ -21,7 +21,7 @@ module.exports = {
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY],
-    yields: '10 servings',
+    yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '7 m',
     separated: true,

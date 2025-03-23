@@ -1,5 +1,5 @@
 const hawaiian = '../assets/Products/hawaiian-haystacks-aerial.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     CHICKEN_BROTH,
@@ -32,7 +32,7 @@ module.exports = {
     method: [METHODS.SLOW_COOK],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '10 - 12 servings',
+    yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '4.5 h',
     separated: true,

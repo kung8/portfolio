@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { VINE_TOMATOES, WHITE_ONION, GARLIC, VEGETABLE_OIL, CHICKEN_BROTH, CILANTRO, SALT, GROUND_BEEF, BREAD, MILK, EGG, BLACK_PEPPER, GARLIC_POWDER, WHITE_RICE, ZUCCHINI } = require('./ingredients');
 
 const TOMATO_BROTH = 'Tomato Broth';
@@ -22,7 +22,7 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SOUP],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '30 m',
     websites: [

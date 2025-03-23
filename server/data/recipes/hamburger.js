@@ -1,5 +1,5 @@
 const hamburger = '../assets/Products/hamburger.jpeg';
-const { CATEGORIES, SECTIONS, TYPES, GENRES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, TYPES, GENRES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     BREADCRUMBS,
     CHEDDAR_CHEESE,
@@ -24,7 +24,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SANDWICH],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '50 m',
     separated: true,

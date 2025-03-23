@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { HEAVY_CREAM, EGG, LEMON_ZEST, SALT, CAYENNE_PEPPER, NUTMEG, BREAD, COOKED_HAM, UNSALTED_BUTTER, SWISS_CHEESE } = require('./ingredients');
 
 const BATTER_SECTION = 'Batter';
@@ -22,7 +22,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '10 m',
     websites: [

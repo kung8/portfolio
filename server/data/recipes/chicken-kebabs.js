@@ -1,5 +1,5 @@
 const kebabs = '../assets/Products/kebabs.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     LIGHT_SOY_SAUCE,
     TERIYAKI_SAUCE,
@@ -22,7 +22,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.FINGER_FOOD, TYPES.PROTEIN],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '25 - 30 m',
     ingredients: [

@@ -24,7 +24,7 @@ const frosting2 = '../assets/Products/gingerbread-men-cookies-frosting-2.jpeg';
 const frosting3 = '../assets/Products/gingerbread-men-cookies-frosting-3.jpeg';
 const frosting4 = '../assets/Products/gingerbread-men-cookies-frosting-4.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BROWN_SUGAR, BAKING_SODA, CINNAMON, GROUND_GINGER, GROUND_CLOVES, SALT, UNSALTED_BUTTER, MOLASSES, MILK, POWDERED_SUGAR } = require('./ingredients');
 
 const GINGERBREAD_DRY_INGREDIENTS = 'Gingerbread Dry Ingredients';
@@ -42,7 +42,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKING],
     type: [TYPES.COOKIE],
-    yields: '2 dozen',
+    yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '25 m',
     cookTime: '10 m',
     websites: [

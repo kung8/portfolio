@@ -1,5 +1,5 @@
 const katsu = '../assets/Products/katsu-full.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     VEGETABLE_OIL,
@@ -26,7 +26,7 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.RICE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '15 - 20 m',
     separated: true,

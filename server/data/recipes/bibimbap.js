@@ -6,7 +6,7 @@ const eggs = '../assets/Products/bibimbap-eggs.jpeg';
 const marinating = '../assets/Products/bibimbap-marinating-chicken.jpeg';
 // const spinach = '../assets/Products/bibimbap-spinach.jpeg';
 const sauce = '../assets/Products/bibimbap-with-sauce.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
 const {
     GROUND_BEEF,
     LIGHT_SOY_SAUCE,
@@ -40,7 +40,7 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.EGG, PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '20 m',
     websites: [

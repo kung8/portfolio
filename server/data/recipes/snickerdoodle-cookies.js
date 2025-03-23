@@ -9,7 +9,7 @@ const pan = '../assets/Products/snickerdoodle-dough-in-pan.jpeg';
 const cooked = '../assets/Products/snickerdoodle-cooked.jpeg';
 const plated1 = '../assets/Products/snickerdoodle-plated-1.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
     CREAM_OF_TARTAR,
@@ -34,7 +34,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    yields: '3 dozen',
+    yields: { amount: 3, unit: YIELD_UNITS.DOZEN },
     prepTime: '10 m',
     cookTime: '10 m',
     websites: [

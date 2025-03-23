@@ -12,7 +12,7 @@ const plated = '../assets/Products/bok-choy-plated.jpeg';
 const sauce = '../assets/Products/bok-choy-sauce.jpeg';
 const zoomed = '../assets/Products/bok-choy-zoomed.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, METHODS, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, METHODS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     CHICKEN_BREAST,
     BABY_BOK_CHOY,
@@ -34,7 +34,7 @@ module.exports = {
     method: [METHODS.BLANCH, METHODS.ROAST, METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.VEGETABLE],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '40 m',
     separated: true,

@@ -11,7 +11,7 @@ const oyakodon10 = '../assets/Products/oyakodon-10.jpeg';
 const oyakodon11 = '../assets/Products/oyakodon-11.jpeg';
 const oyakodon12 = '../assets/Products/oyakodon-12.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHAOXING_WINE, EGG, DASHI, LIGHT_SOY_SAUCE, MIRIN, WHITE_SUGAR, SHORT_GRAINED_RICE, GREEN_ONIONS } = require('./ingredients');
 
 const SEASONING = 'Seasoning';
@@ -32,7 +32,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN, PROTEIN.EGG],
     type: [TYPES.RICE],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '10 m',
     websites: [

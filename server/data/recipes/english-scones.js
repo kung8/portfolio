@@ -16,7 +16,7 @@ const scones15 = '../assets/Products/english-scones-15.jpeg';
 const scones16 = '../assets/Products/english-scones-16.jpeg';
 const scones17 = '../assets/Products/english-scones-17.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, SALT, BAKING_POWDER, WHITE_SUGAR, UNSALTED_BUTTER, MILK, LEMON_JUICE, VANILLA_EXTRACT, EGG } = require('./ingredients');
 
 const PREP_BAKE = 'Prep Bake';
@@ -34,7 +34,7 @@ module.exports = {
     genre: [GENRES.BRITISH],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '15 m',
     websites: [

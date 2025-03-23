@@ -5,7 +5,7 @@ const gravy4 = '../assets/Products/kfc-gravy-4.jpeg';
 const gravy5 = '../assets/Products/kfc-gravy-5.jpeg';
 const gravy6 = '../assets/Products/mash-potatoes-10.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { HOT_WATER, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, ONION_POWDER, BLACK_PEPPER, SALT, CHICKEN_BOUILLON_CUBE, BEEF_BOUILLON_CUBE } = require('./ingredients');
 
 const GRAVY_SECTION = 'Gravy';
@@ -21,7 +21,7 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.BEEF, PROTEIN.CHICKEN],
     type: [TYPES.SAUCE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '1 m',
     cookTime: '5 m',
     websites: [

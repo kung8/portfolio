@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, DURUM_WHEAT, EGG, RICOTTA_CHEESE, PARMIGIANO_REGGIANO, SALT, BLACK_PEPPER, UNSALTED_BUTTER, SAGE, FRESH_SAGE } = require('./ingredients');
 
 const PASTA_SECTIONS = 'Pasta';
@@ -24,7 +24,7 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     type: [TYPES.PASTA],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '45 m',
     cookTime: '15 m',
     websites: [

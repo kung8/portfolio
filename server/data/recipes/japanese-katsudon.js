@@ -5,7 +5,7 @@ const onion = '../assets/Products/chicken-katsudon-onion.jpeg';
 const mirin = '../assets/Products/chicken-katsudon-onion-in-mirin.jpeg';
 const layered = '../assets/Products/chicken-katsudon-layered.jpeg';
 const finished = '../assets/Products/chicken-katsudon-finished.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
 const {
     BONELESS_PORK_CHOPS,
     SALT,
@@ -33,7 +33,7 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.EGG, PROTEIN.PORK, PROTEIN.ALTERNATIVE],
     type: [TYPES.RICE],
-    yields: '10 servings',
+    yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '20 m',
     separated: true,

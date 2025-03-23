@@ -18,7 +18,7 @@ const peaks = '../assets/Products/chocolate-mousse-stiff-peaks.jpeg';
 const topped = '../assets/Products/chocolate-mousse-topped.jpeg';
 const whipped = '../assets/Products/chocolate-mousse-whipped-cream.jpeg';
 const yolkInCream = '../assets/Products/chocolate-mousse-yolk-in-cream.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     EGG,
     UNSALTED_BUTTER,
@@ -42,7 +42,7 @@ module.exports = {
     method: [METHODS.BLEND],
     protein: [PROTEIN.CHOCOLATE],
     type: [TYPES.DESSERT],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '0 m',
     websites: [

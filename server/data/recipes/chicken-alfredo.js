@@ -1,5 +1,5 @@
 const alfredo = '../assets/Products/chicken-alfredo.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     RED_BELL_PEPPERS,
     YELLOW_ONION,
@@ -25,7 +25,7 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.NOODLE, TYPES.PROTEIN],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '8 - 10 m',
     cookTime: '30 - 40 m',
     ingredients: [

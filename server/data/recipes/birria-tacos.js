@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
 const { BEEF_CHUCK_ROAST, AVOCADO_OIL, SALT, BLACK_PEPPER, RED_ONION, GARLIC, BEEF_BROTH, TOMATO_PASTE, APPLE_CIDER_VINEGAR, CUMIN, OREGANO, CINNAMON_STICK, BAY_LEAVES, SMOKED_PAPRIKA, GINGER, CORIANDER, GUAJILLO_CHILI_PEPPERS, CHIPOTLE_PEPPERS_IN_ADOBO, FIRE_ROASTED_DICED_TOMATOES, FLOUR_TORTILLA, LIME, CILANTRO, WHITE_ONION, OAXACAN_CHEESE } = require('./ingredients');
 
 const BIRRIA_FILLING = 'Birria Filling';
@@ -20,7 +20,7 @@ module.exports = {
     method: [METHODS.SLOW_COOK],
     protein: [PROTEIN.BEEF],
     type: [TYPES.TACO],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '8 h 10 m',
     websites: [

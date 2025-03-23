@@ -1,5 +1,5 @@
 const hospitalityChicken = '../assets/Products/hospitality-chicken.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     MCCORMICK_SEASONING_PACKET,
@@ -18,7 +18,7 @@ module.exports = {
     method: [METHODS.AIR_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE, TYPES.PROTEIN],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '25 - 40 m',
     ingredients: [

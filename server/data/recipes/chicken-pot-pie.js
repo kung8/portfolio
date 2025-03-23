@@ -1,6 +1,6 @@
 const chickenPotPie = '../assets/Products/chicken-pot-pie.jpeg';
 const slice = '../assets/Products/chicken-pot-pie-slice-zoomed.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     ALL_PURPOSE_FLOUR,
@@ -25,7 +25,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.DESSERT],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '50 m - 1 h',
     ingredients: [

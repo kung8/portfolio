@@ -18,7 +18,7 @@ const dough1 = '../assets/Products/crescent-rolls-dough-1.jpeg';
 const dough2 = '../assets/Products/crescent-rolls-dough-2.jpeg';
 const balls = '../assets/Products/crescent-rolls-dough-balls.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { LUKEWARM_WATER, YEAST, WHITE_SUGAR, EVAPORATED_MILK, COLD_WATER, SALT, UNSALTED_BUTTER, EGG, ALL_PURPOSE_FLOUR } = require('./ingredients');
 
 const YEAST_MIXTURE = 'Yeast Mixture';
@@ -34,7 +34,7 @@ module.exports = {
     genre: [GENRES.AUSTRIAN],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
-    yields: '32 rolls',
+    yields: { amount: 32, unit: YIELD_UNITS.ROLL },
     prepTime: '15 m',
     cookTime: '20 m',
     separated: true,

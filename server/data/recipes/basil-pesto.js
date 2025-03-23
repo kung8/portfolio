@@ -9,7 +9,7 @@ const parmesan = '../assets/Products/basil-pesto-parmesan.jpeg';
 const parmesanBlended = '../assets/Products/basil-pesto-parmesan-blended.jpeg';
 const pine = '../assets/Products/basil-pesto-pine-nuts.jpeg';
 const topped = '../assets/Products/basil-pesto-topped.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
 const {
     PINE_NUTS,
     LEMON_JUICE,
@@ -33,7 +33,7 @@ module.exports = {
     method: [METHODS.BLEND],
     protein: [PROTEIN.PINE_NUT],
     type: [TYPES.SAUCE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '1 m',
     cookTime: '7 m',
     websites: [

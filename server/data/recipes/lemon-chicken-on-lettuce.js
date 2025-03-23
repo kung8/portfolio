@@ -5,7 +5,7 @@ const rice = '../assets/Products/lemon-chicken-on-lettuce-plated-with-rice.jpeg'
 const zoomed = '../assets/Products/lemon-chicken-on-lettuce-plated-zoomed.jpeg';
 const plated = '../assets/Products/lemon-chicken-on-lettuce-plated.jpeg';
 const raw = '../assets/Products/lemon-chicken-on-lettuce-raw-chicken.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     VEGETABLE_OIL,
     CHICKEN_BREAST,
@@ -29,7 +29,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '15 m',
     ingredients: [

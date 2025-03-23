@@ -1,5 +1,5 @@
 const macaroni = '../assets/Products/macaroni-salad.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require('./constants');
 const {
     ELBOW_MACARONI,
     MAYONNAISE,
@@ -23,7 +23,7 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     type: [TYPES.NOODLE],
-    yields: '10 servings',
+    yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '10 m',
     ingredients: [

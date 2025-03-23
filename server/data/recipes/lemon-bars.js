@@ -14,7 +14,7 @@ const rack = '../assets/Products/lemon-bars-rack.jpeg';
 const filling = '../assets/Products/lemon-bars-raw-filling.jpeg';
 const zestMixed = '../assets/Products/lemon-bars-sugar-and-zest-mixed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, POWDERED_SUGAR, SALT, UNSALTED_BUTTER, LEMON_ZEST, WHITE_SUGAR, EGG, LEMON_JUICE } = require('./ingredients');
 
 module.exports = {
@@ -27,7 +27,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT, TYPES.BAR],
-    yields: ' servings',
+    yields: { amount: 3 / 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '20 m',
     cookTime: '55 m',
     websites: [

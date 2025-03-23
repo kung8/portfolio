@@ -19,7 +19,7 @@ const mango17 = '../assets/Products/mango-sticky-rice-17.jpeg';
 const mango19 = '../assets/Products/mango-sticky-rice-19.jpeg';
 const mango20 = '../assets/Products/mango-sticky-rice-20.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { COCONUT_MILK, WHITE_SUGAR, SALT, MANGOES, SESAME_SEEDS, SWEET_RICE, COCONUT_CREAM } = require('./ingredients');
 
 const SOAK_RICE = 'Soak Rice';
@@ -37,7 +37,7 @@ module.exports = {
     genre: [GENRES.THAI, GENRES.ASIAN],
     method: [METHODS.STEAM],
     type: [TYPES.DESSERT],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '20 m',
     websites: [

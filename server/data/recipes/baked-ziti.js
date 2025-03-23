@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
 const { ZITI, ITALIAN_SAUSAGE, GARLIC, CRUSHED_TOMATOES, SALT, RED_PEPPER_FLAKES, HEAVY_CREAM, PARMIGIANO_REGGIANO, BASIL_LEAVES, MOZZARELLA_CHEESE, WHITE_SUGAR } = require('./ingredients');
 
 const PASTA_SECTION = 'Pasta';
@@ -23,7 +23,7 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.PAN_FRY, METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PASTA],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '40 m',
     cookTime: '50 m',
     websites: [

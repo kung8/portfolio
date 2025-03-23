@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { GROUND_PORK, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, OYSTER_SAUCE, SESAME_OIL, WHITE_PEPPER, VEGETABLE_OIL, CHOW_MEIN_NOODLES, BABY_BOK_CHOY, ONION_POWDER, GREEN_ONIONS, FRIED_SHALLOTS, GARLIC, THAI_CHILI_PEPPERS } = require('./ingredients');
 
 const MINCED_MEAT_SECTION = 'Minced Meat';
@@ -24,7 +24,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.NOODLE],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '15 m',
     websites: [

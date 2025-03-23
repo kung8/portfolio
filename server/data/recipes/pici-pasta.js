@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { BABY_SPINACH, ALL_PURPOSE_FLOUR, SALT } = require('./ingredients');
 
 const PREP_DOUGH = 'Prep Dough';
@@ -17,7 +17,7 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BLEND, METHODS.BOIL],
     type: [TYPES.PASTA],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '5 m',
     websites: [

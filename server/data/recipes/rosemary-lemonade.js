@@ -5,7 +5,7 @@ const rosemary = '../assets/Products/rosemary-lemonade-rosemary.jpeg';
 const sugar = '../assets/Products/rosemary-lemonade-sugar.jpeg';
 const sweet = '../assets/Products/rosemary-lemonade-sweet-mix.jpeg';
 const water = '../assets/Products/rosemary-lemonade-water.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { COLD_WATER, FRESH_ROSEMARY, WHITE_SUGAR, HONEY, LEMON_JUICE, ICE, LEMON } = require('./ingredients');
 
 module.exports = {
@@ -17,7 +17,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.MIX],
     type: [TYPES.DRINK],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '15 m',
     websites: [

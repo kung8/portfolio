@@ -18,7 +18,7 @@ const veggies = '../assets/Products/pad-see-ew-veggies.jpeg';
 
 const THAI_CHILI_PEPPER = 'Thai Chili Pepper';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     LIGHT_SOY_SAUCE,
@@ -50,7 +50,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.NOODLE],
-    yields: '3 servings',
+    yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '30 m',
     websites: [

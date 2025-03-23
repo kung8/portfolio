@@ -15,7 +15,7 @@ const pot = '../assets/Products/bao-steamer-over-pot.jpeg';
 // const steamer = '../assets/Products/bao-steamer.jpeg';
 const water = '../assets/Products/bao-water.jpeg';
 const withFilling = '../assets/Products/bao-with-filling.jpeg';
-const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     YEAST,
     WARM_WATER,
@@ -42,7 +42,7 @@ module.exports = {
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.STEAM],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT],
-    yields: ' servings',
+    yields: { amount: 16, unit: YIELD_UNITS.SERVING },
     prepTime: '35 m',
     cookTime: '25 m',
     separated: true,

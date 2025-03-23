@@ -1,5 +1,5 @@
 const biscuits = '../assets/Products/ted-lasso-biscuits.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     POWDERED_SUGAR,
@@ -15,7 +15,7 @@ module.exports = {
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
-    yields: '15 servings',
+    yields: { amount: 15, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '60 m',
     ingredients: [

@@ -16,7 +16,7 @@ const sugar = '../assets/Products/chicken-tikka-masala-sugar.jpeg';
 const tomato = '../assets/Products/chicken-tikka-masala-tomato-sauce.jpeg';
 const translucent = '../assets/Products/chicken-tikka-masala-translucent-onion.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, METHODS, SECTIONS, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, SECTIONS, UNITS, YIELD_UNITS } = require("./constants");
 const { GHEE, YELLOW_ONION, GARLIC, CUMIN, SALT, GINGER, CAYENNE_PEPPER, CINNAMON, TURMERIC, TOMATO_SAUCE, HEAVY_CREAM, WHITE_SUGAR, PAPRIKA, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CURRY_POWDER, } = require('./ingredients');
 
 module.exports = {
@@ -29,7 +29,7 @@ module.exports = {
     genre: [GENRES.INDIAN, GENRES.ASIAN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.CURRY, TYPES.RICE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '1 hr 15 m',
     separated: true,

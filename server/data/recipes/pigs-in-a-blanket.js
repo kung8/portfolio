@@ -1,5 +1,5 @@
 const pigsInABlanket = '../assets/Products/pigs-in-a-blanket.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS , UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS , UNITS, YIELD_UNITS } = require('./constants');
 const { CROISSANT_DOUGH, EGG, MINI_HOT_DOG } = require('./ingredients');
 
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '15 m',
     ingredients: [

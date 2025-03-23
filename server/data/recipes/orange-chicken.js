@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGG, CORNSTARCH, ALL_PURPOSE_FLOUR, SALT, VEGETABLE_OIL, ORANGE_JUICE, WHITE_SUGAR, RICE_WINE_VINEGAR, LIGHT_SOY_SAUCE, GARLIC_POWDER, RED_PEPPER_FLAKES, ORANGE_ZEST, GROUND_GINGER, GREEN_ONIONS, COLD_WATER } = require('./ingredients');
 
 const ORANGE_SAUCE = 'Orange Sauce';
@@ -19,7 +19,7 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '20 m',
     websites: [

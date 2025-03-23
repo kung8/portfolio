@@ -6,7 +6,7 @@ const seasonings1 = '../assets/Products/rosemary-fries-seasonings-1.jpeg';
 const seasonings2 = '../assets/Products/rosemary-fries-seasonings-2.jpeg';
 const tray2 = '../assets/Products/rosemary-fries-tray-2.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { OLIVE_OIL, ROSEMARY, GARLIC, CORNSTARCH, SALT, BLACK_PEPPER, SWEET_POTATOES } = require('./ingredients');
 
 module.exports = {
@@ -19,7 +19,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.FINGER_FOOD],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '30 m',
     websites: [

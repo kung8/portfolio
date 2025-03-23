@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { PORK_CHOPS, ALL_PURPOSE_FLOUR, EGG, PANKO_BREADCRUMBS, OLIVE_OIL, UNSALTED_BUTTER, SALT, BLACK_PEPPER, LEMON_JUICE, CUCUMBER, PARMESAN_CHEESE, ASPARAGUS, BABY_ARUGULA, BABY_KALE, RADISH, PEAS, MICROGREENS } = require('./ingredients');
 
 const PORK_SECTION = 'Pork';
@@ -22,7 +22,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.PROTEIN],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '10 m',
     websites: [

@@ -15,7 +15,7 @@ import {
 } from '../constants';
 import { ApplyToIngredientsInPlannedMealModal } from './ApplyToIngredientsInPlannedMealModal';
 import { SettingsModal } from './SettingsModal';
-import { getStartingDay } from '../utils/get-starting-day';
+import { getStartingDay } from '../utils';
 
 export const GroceryListModal = ({
     generateUUID,

@@ -1,5 +1,5 @@
 const graveyardDessert = '../assets/Products/graveyard-dessert.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, UNITS, YIELD_UNITS } = require("./constants");
 const { CHOCOLATE_PUDDING_CUPS, GUMMY_WORMS, MILANO_COOKIES, OREO_COOKIES } = require('./ingredients');
 
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],
     type: [TYPES.DESSERT],
-    yields: '3 servings',
+    yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: '7 m',
     cookTime: '0 m',
     ingredients: [

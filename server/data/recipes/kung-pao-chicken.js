@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CORNSTARCH, LIGHT_SOY_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, DARK_SOY_SAUCE, CHICKEN_BROTH, BALSAMIC_VINEGAR, HOISIN_SAUCE, WHITE_SUGAR, CHILI_PEPPERS, GREEN_BELL_PEPPERS, RED_BELL_PEPPERS, GINGER, GARLIC, GREEN_ONIONS, UNSALTED_PEANUTS, SESAME_SEEDS } = require('./ingredients');
 
 const CHICKEN_MARINADE = 'Chicken Marinade';
@@ -18,7 +18,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SIDE_DISH, TYPES.MAIN_COURSE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '15 m',
     websites: [

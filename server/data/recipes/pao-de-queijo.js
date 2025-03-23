@@ -10,7 +10,7 @@ const rawZoomed = '../assets/Products/pao-de-queijo-mixer-zoomed.jpeg';
 const raw = '../assets/Products/pao-de-queijo-mixer.jpeg';
 // const first = '../assets/Products/pao-de-queijo-zoomed-cheeseballs.jpeg';
 const plated = '../assets/Products/pao-de-queijo-plated.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     TAPIOCA_STARCH,
     MILK,
@@ -32,7 +32,7 @@ module.exports = {
     genre: [GENRES.BRAZILIAN, GENRES.LATIN],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD, TYPES.FINGER_FOOD],
-    yields: '2 dozen',
+    yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '20 m',
     cookTime: '30 m',
     websites: [

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useCategoryName } from './use-category-name';
 import { GROCERY_LIST_LOCAL_STORAGE_KEY, MEAL_PLAN_LOCAL_STORAGE_KEY, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, GROCERY_LIST_VIEW } from '../constants';
-import { handleModalClass } from '../utils/handle-modal-class';
+import { handleModalClass } from '../utils';
 
 export const useGroceryList = () => {
     const [show, setShow] = useState(false);

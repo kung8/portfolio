@@ -9,7 +9,7 @@ const pan = '../assets/Products/biscuits-and-gravy-pan.jpeg';
 const plated = '../assets/Products/biscuits-and-gravy-plated.jpeg';
 const pork = '../assets/Products/biscuits-and-gravy-pork.jpeg';
 const zoomed = '../assets/Products/biscuits-and-gravy-zoomed.jpeg';
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
@@ -35,7 +35,7 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.BAKE],
     protein: [PROTEIN.PORK],
     type: [TYPES.BREAD],
-    yields: '8 - 10 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '15 m',
     separated: true,

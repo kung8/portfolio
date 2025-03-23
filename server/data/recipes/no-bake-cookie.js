@@ -3,7 +3,7 @@ const melted = '../assets/Products/no-bake-cookie-melted.jpeg';
 const oat = '../assets/Products/no-bake-cookie-oat.jpeg';
 const all = '../assets/Products/no-bake-cookie-all.jpeg';
 const finished = '../assets/Products/no-bake-cookie-finished.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     UNSALTED_BUTTER,
     WHITE_SUGAR,
@@ -23,7 +23,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER],
     protein: [PROTEIN.PEANUT],
-    yields: '32 servings',
+    yields: { amount: 32, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '10 m',
     ingredients: [

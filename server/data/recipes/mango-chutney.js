@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { VEGETABLE_OIL, GINGER, GARLIC, RED_CHILI, CORIANDER, CUMIN, TURMERIC, CARDAMOM, CLOVES, CINNAMON, SALT, MANGOES, WHITE_SUGAR, WHITE_VINEGAR, NIGELLA_SEED } = require('./ingredients');
 
 const VEGGIES_SECTION = 'Veggies';
@@ -21,7 +21,7 @@ module.exports = {
     genre: [GENRES.INDIAN],
     method: [METHODS.SIMMER],
     type: [TYPES.DIP],
-    yields: '2.5 pints',
+    yields: { amount: 2.5, unit: YIELD_UNITS.PINT },
     prepTime: '15 m',
     cookTime: '1 h',
     websites: [

@@ -14,7 +14,7 @@ const thigh13 = '../assets/Products/pan-fried-chicken-thigh-13.jpeg';
 const thigh14 = '../assets/Products/pan-fried-chicken-thigh-14.jpeg';
 const thigh15 = '../assets/Products/pan-fried-chicken-thigh-15.jpeg';
 // const thigh16 = '../assets/Products/pan-fried-chicken-thigh-16.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, CHICKEN_THIGH, SALT, BLACK_PEPPER, RED_WINE, GARLIC, WHIPPED_CREAM, ROSEMARY } = require('./ingredients');
 
 module.exports = {
@@ -27,7 +27,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '25 m',
     websites: [

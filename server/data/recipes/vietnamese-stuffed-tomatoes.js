@@ -12,7 +12,7 @@ const tomatoes11 = '../assets/Products/vietnamese-stuffed-tomatoes-11.jpeg';
 const tomatoes12 = '../assets/Products/vietnamese-stuffed-tomatoes-12.jpeg';
 const tomatoes13 = '../assets/Products/vietnamese-stuffed-tomatoes-13.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { VINE_TOMATOES, CORNSTARCH, GROUND_PORK, YELLOW_ONION, GARLIC, FISH_SAUCE, SALT, WHITE_SUGAR, BLACK_PEPPER, VEGETABLE_OIL, LIGHT_SOY_SAUCE, COLD_WATER, GREEN_ONIONS } = require('./ingredients');
 
 const FILLING_SECTION = 'Filling';
@@ -29,7 +29,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.PROTEIN],
-    yields: '3 servings',
+    yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '10 m',
     websites: [

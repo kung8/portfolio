@@ -3,7 +3,7 @@ const frenchBread = '../assets/Products/french-bread.jpeg';
 const porkLoafCut = '../assets/Products/pork-loaf-cut.jpeg';
 const porkLoafOpened = '../assets/Products/pork-loaf-opened.jpeg';
 const porkLoafWrapped = '../assets/Products/pork-loaf-wrapped.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     BAKING_POWDER,
     BANANA_LEAF,
@@ -51,7 +51,7 @@ module.exports = {
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],
-    yields: '10 servings',
+    yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '1 h',
     separated: true,

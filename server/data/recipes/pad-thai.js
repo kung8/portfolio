@@ -17,7 +17,7 @@ const plated3 = '../assets/Products/pad-thai-plated-3.jpeg';
 const rinsing = '../assets/Products/pad-thai-rinsing-noodles.jpeg';
 const sauce = '../assets/Products/pad-thai-sauce.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     GARLIC,
@@ -52,7 +52,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.ALTERNATIVE, PROTEIN.CHICKEN, PROTEIN.PEANUT],
     type: [TYPES.NOODLE],
-    yields: '6 serving',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '50 m',
     separated: true,

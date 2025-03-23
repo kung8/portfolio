@@ -6,7 +6,7 @@ const mochi6 = '../assets/Products/mochi-6.jpeg';
 const mochi8 = '../assets/Products/mochi-8.jpeg';
 const mochi9 = '../assets/Products/mochi-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { WHITE_SUGAR, COLD_WATER, COCONUT_MILK, POTATO_STARCH, MOCHIKO, FOOD_COLORING } = require('./ingredients');
 
 const MOCHI = 'Mochi';
@@ -22,7 +22,7 @@ module.exports = {
     genre: [GENRES.JAPANESE],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    yields: '24 pieces',
+    yields: { amount: 24, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '1 hr',
     websites: [

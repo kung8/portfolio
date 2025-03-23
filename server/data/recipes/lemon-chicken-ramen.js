@@ -9,7 +9,7 @@ const fryingSpices = '../assets/Products/lemon-chicken-ramen-frying-spices.jpeg'
 const noodles = '../assets/Products/lemon-chicken-ramen-with-noodles.jpeg';
 const broth = '../assets/Products/lemon-chicken-ramen-broth.jpeg';
 const brothChicken = '../assets/Products/lemon-chicken-ramen-broth-with-chicken.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { CHICKEN_BREAST, ALL_PURPOSE_FLOUR, OLIVE_OIL, GARLIC, SALT, BLACK_PEPPER, PAPRIKA, OREGANO, RED_PEPPER_FLAKES, CHICKEN_BROTH, LEMON, LIGHT_CREAM, FRESH_RAMEN_NOODLES, CILANTRO, GREEN_ONIONS, SESAME_SEEDS, SNOW_PEAS } = require('./ingredients');
 
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SOUP, TYPES.NOODLE],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '15 m',
     websites: [

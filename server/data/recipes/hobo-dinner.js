@@ -1,6 +1,6 @@
 const dinner = '../assets/Products/hobo-dinner.jpeg';
 const pan = '../assets/Products/hobo-dinner-pan.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
     CARROTS,
@@ -21,7 +21,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.VEGETABLE, TYPES.PROTEIN],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '40 m',
     ingredients: [

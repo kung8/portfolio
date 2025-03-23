@@ -69,6 +69,63 @@
 
         .yields {
             margin-bottom: 24px;
+            display: flex;
+            column-gap: 8px;
+
+            .yield-text {
+                display: inline-block;
+                margin-top: 6px;
+            }
+
+            .yield-amount-container {
+                display: flex;
+                flex-direction: row;
+                column-gap: 8px;
+                align-items: center;
+
+                @include down($mobile) {
+                    flex-direction: column;
+                    row-gap: 8px;
+                    align-items: flex-start;
+                }
+
+                .applied-yield-input-container {
+                    display: flex;
+                    column-gap: 5px;
+                    align-items: center;
+    
+                    .applied-yield-input {
+                        padding: 6px 8px;
+                        width: 55px;
+                    }
+                }
+
+                .dash {
+                    @include down($mobile) {
+                        display: none;
+                    }
+                }
+    
+                .quick-yield-adjustment-container {
+                    display: flex;
+                    column-gap: 8px;
+                    align-items: center;
+                    .quick-yield-adjustment {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 4px 8px;
+                        border: 1px solid $default;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        &.active {
+                            background: $primary-blue;
+                            color: $white;
+                            border: 1px solid $primary-blue;
+                        }
+                    }
+                }
+            }
         }
 
         .recipe-ingredients-label-container {
@@ -155,7 +212,7 @@
                     text-underline-offset: 4px;
                     cursor: pointer;
                 }
-                .ingredient-label-with-link, 
+                .ingredient-label-with-link,
                 .ingredient-label {
                     display: inline;
                     cursor: pointer;

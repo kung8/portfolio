@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { FETTUCCINE_NOODLES, HEAVY_CREAM, PARMIGIANO_REGGIANO, UNSALTED_BUTTER, LEMON_JUICE, LEMON_ZEST, BLACK_PEPPER, SALT } = require('./ingredients');
 
 const NOODLES_SECTION = 'Noodles';
@@ -20,7 +20,7 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     type: [TYPES.PASTA],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '15 m',
     websites: [

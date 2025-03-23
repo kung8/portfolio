@@ -6,7 +6,7 @@ const mix1 = '../assets/Products/green-bean-casserole-mix-1.jpeg';
 const mix2 = '../assets/Products/green-bean-casserole-mix-2.jpeg';
 const mix3 = '../assets/Products/green-bean-casserole-mix-3.jpeg';
 const mix4 = '../assets/Products/green-bean-casserole-mix-4.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { CANNED_GREEN_BEANS, CREAM_OF_MUSHROOM, MILK, LIGHT_SOY_SAUCE, BLACK_PEPPER, SALT, CRISPY_FRIED_ONIONS } = require('./ingredients');
 
 const CASSEROLE = 'Casserole';
@@ -20,7 +20,7 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.CASSEROLE],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '45 m',
     websites: [

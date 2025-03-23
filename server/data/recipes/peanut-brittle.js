@@ -12,7 +12,7 @@ const water = '../assets/Products/peanut-brittle-water.jpeg';
 const plated1 = '../assets/Products/peanut-brittle-plated-1.jpeg';
 const plated2 = '../assets/Products/peanut-brittle-plated-2.jpeg';
 const rebaked = '../assets/Products/peanut-brittle-rebaked.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { WHITE_SUGAR, CORN_SYRUP, COLD_WATER, UNSALTED_PEANUTS, UNSALTED_BUTTER, BAKING_SODA, VANILLA_EXTRACT } = require('./ingredients');
 
 module.exports = {
@@ -25,7 +25,7 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.FINGER_FOOD],
-    yields: '50 servings',
+    yields: { amount: 50, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '20 m',
     websites: [

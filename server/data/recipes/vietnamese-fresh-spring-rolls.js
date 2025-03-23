@@ -23,7 +23,7 @@ const wrap1 = '../assets/Products/fresh-spring-rolls-wrap-1.jpeg';
 const wrap2 = '../assets/Products/fresh-spring-rolls-wrap-2.jpeg';
 const wrap3 = '../assets/Products/fresh-spring-rolls-wrap-3.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { CARROTS, CUCUMBER, MINT_LEAVES, BASIL_LEAVES, CILANTRO, PORK, PEANUT_BUTTER, LIGHT_SOY_SAUCE, HOISIN_SAUCE, SWEET_CHILI_SAUCE, VERMICELLI_RICE_NOODLES, SPRING_ROLL_RICE_WRAPPERS, SHRIMP, VEGETABLE_OIL } = require('./ingredients');
 
 const VERMICELLI_RICE_NOODLES_SECTION = 'Vermicelli Rice Noodles';
@@ -44,7 +44,7 @@ module.exports = {
     method: [METHODS.WRAP, METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.WRAP],
-    yields: ' servings',
+    yields: { amount: 15, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '25 m',
     websites: [

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
 const { OLIVE_OIL, GROUND_BEEF, CHILI_POWDER, CUMIN, OREGANO, GARLIC_POWDER, SALT, BLACK_PEPPER, TOMATO_PASTE, WARM_WATER, FLOUR_TORTILLA, LETTUCE, MEXICAN_BLEND_CHEESE, ROMA_TOMATO, RED_ONION } = require('./ingredients');
 
 const TACO_FILLING = 'Taco Filling';
@@ -19,7 +19,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.TACO],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '10 m',
     websites: [

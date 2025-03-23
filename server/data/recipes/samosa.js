@@ -22,7 +22,7 @@ const samosa21 = '../assets/Products/samosa-21.jpeg';
 const samosa22 = '../assets/Products/samosa-22.jpeg';
 const samosa23 = '../assets/Products/samosa-23.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, GHEE, WARM_WATER, CAROM_SEEDS, SALT, GREEN_PEAS, GINGER, SERRANO_PEPPERS, CORIANDER, LEMON_JUICE, CUMIN, GARAM_MASALA, CHILI_POWDER, FENNEL_SEEDS, YUKON_GOLD_POTATOES, AMCHUR_POWDER } = require('./ingredients');
 
 const DOUGH = 'Dough';
@@ -44,7 +44,7 @@ module.exports = {
     genre: [GENRES.INDIAN],
     method: [METHODS.BAKE, METHODS.BOIL],
     type: [TYPES.VEGETABLE],
-    yields: '10 servings',
+    yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '25 m',
     websites: [

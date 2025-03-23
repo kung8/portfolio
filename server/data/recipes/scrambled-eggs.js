@@ -1,5 +1,5 @@
 const scrambledEggs = '../assets/Products/scrambled-eggs.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     EGG,
     MILK,
@@ -23,7 +23,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.EGG],
-    yields: '1 serving',
+    yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '12 - 15 m',
     ingredients: [

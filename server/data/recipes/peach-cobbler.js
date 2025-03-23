@@ -8,7 +8,7 @@ const melted = '../assets/Products/peach-cobbler-melted-butter.jpeg'
 const milk = '../assets/Products/peach-cobbler-milk.jpeg'
 const mixed = '../assets/Products/peach-cobbler-mixed.jpeg'
 const peaches = '../assets/Products/peach-cobbler-peaches.jpeg'
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     ALL_PURPOSE_FLOUR,
@@ -30,7 +30,7 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    yields: '12 servings',
+    yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '40 m',
     ingredients: [

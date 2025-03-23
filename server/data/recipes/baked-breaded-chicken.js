@@ -5,7 +5,7 @@ const oil = '../assets/Products/baked-breaded-chicken-oil.jpeg';
 const plated = '../assets/Products/baked-breaded-chicken-plated.jpeg';
 const seasoned = '../assets/Products/baked-breaded-chicken-seasoned.jpeg';
 const full = '../assets/Products/basil-pesto-meal-plated.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
 const {
     BREADCRUMBS,
     PANKO_BREADCRUMBS,
@@ -34,7 +34,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '8 m',
     cookTime: '30 m',
     websites: [

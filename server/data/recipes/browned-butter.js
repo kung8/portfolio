@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, SECTIONS, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { DRY_MILK_POWDER, UNSALTED_BUTTER } = require('./ingredients');
 
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
     category: [CATEGORIES.TOPPING],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.MELT],
-    yields: '1 1/2 c',
+    yields: { amount: 3 / 2, unit: YIELD_UNITS.CUP },
     prepTime: '1 m',
     cookTime: '5 m',
     separated: true,

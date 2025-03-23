@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { LIGHT_SOY_SAUCE, EGG, ALL_PURPOSE_FLOUR, CORNSTARCH, PORK_SHOULDER, GARLIC_SALT, KETCHUP, BROWN_SUGAR, WHITE_VINEGAR, SALT, COLD_WATER, RED_BELL_PEPPERS, YELLOW_BELL_PEPPERS, GREEN_BELL_PEPPERS, RED_ONION, YELLOW_ONION, PINEAPPLE, VEGETABLE_OIL } = require('./ingredients');
 
 const PORK_MARINADE = 'Pork Marinade';
@@ -20,7 +20,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.PROTEIN],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '25 m',
     websites: [

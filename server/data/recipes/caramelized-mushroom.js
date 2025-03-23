@@ -2,7 +2,7 @@ const combined = '../assets/Products/caramelized-mushroom-combined.jpeg';
 const cooked = '../assets/Products/caramelized-mushroom-cooked.jpeg';
 const cooking = '../assets/Products/caramelized-mushroom-cooking.jpeg';
 const raw = '../assets/Products/caramelized-mushroom-raw.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     MUSHROOMS,
     UNSALTED_BUTTER,
@@ -21,7 +21,7 @@ module.exports = {
     category: [CATEGORIES.TOPPING],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SAUTE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '2 m',
     cookTime: '20 m',
     ingredients: [

@@ -6,7 +6,7 @@ const batter = '../assets/Products/waffles-batter.jpeg';
 const dry = '../assets/Products/waffles-dry-ingredients.jpeg';
 const wet = '../assets/Products/waffles-wet-ingredients.jpeg';
 const egg = '../assets/Products/waffles-egg-whites-fluffed.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
@@ -37,7 +37,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.GRILL],
     type: [TYPES.BREAD],
-    yields: '3 servings',
+    yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: '1 m',
     cookTime: '2 m',
     websites: [

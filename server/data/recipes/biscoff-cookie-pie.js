@@ -5,7 +5,7 @@ const pie4 = '../assets/Products/biscoff-cookie-pie-4.jpeg';
 const pie5 = '../assets/Products/biscoff-cookie-pie-5.jpeg';
 const pie6 = '../assets/Products/biscoff-cookie-pie-6.jpeg';
 const pie7 = '../assets/Products/biscoff-cookie-pie-7.jpeg'; // TODO: get a photo of the plated pie
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
 const { BISCOFF_COOKIES, UNSALTED_BUTTER, BISCOFF_BUTTER, WHIPPED_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, VANILLA_EXTRACT, WHITE_SUGAR, CREAM_CHEESE, SALT, COOKIE_BUTTER } = require('./ingredients');
 
 const CHOCOLATE_GANACHE = 'Chocolate Ganache';
@@ -23,7 +23,7 @@ module.exports = {
     method: [METHODS.BAKE],
     // protein: [],
     type: [TYPES.PIE],
-    yields: '10 servings',
+    yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '0 m',
     websites: [

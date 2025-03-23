@@ -12,7 +12,7 @@ const cookies12 = '../assets/Products/peanut-butter-cookies-12.jpeg';
 const cookies13 = '../assets/Products/peanut-butter-cookies-13.jpeg';
 const cookies14 = '../assets/Products/peanut-butter-cookies-14.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, PEANUT_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGG, BAKING_POWDER, SALT } = require('./ingredients');
 
 module.exports = {
@@ -25,7 +25,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.COOKIE],
-    yields: '18 cookies',
+    yields: { amount: 3 / 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '1 m',
     cookTime: '10 m',
     websites: [

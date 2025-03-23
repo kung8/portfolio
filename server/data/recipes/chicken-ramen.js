@@ -9,7 +9,7 @@ const ice = '../assets/Products/chicken-ramen-ice-bath.jpeg';
 const noodles = '../assets/Products/chicken-ramen-noodles.jpeg';
 const rawChicken = '../assets/Products/chicken-ramen-raw-chicken.jpeg';
 const sliced = '../assets/Products/chicken-ramen-sliced.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     UNSALTED_BUTTER,
@@ -38,7 +38,7 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.ROAST, METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN, PROTEIN.EGGS],
     type: [TYPES.SOUP, TYPES.NOODLE],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '30 m',
     websites: [

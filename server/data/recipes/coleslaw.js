@@ -1,7 +1,7 @@
 const zoomed = '../assets/Products/coleslaw-zoomed.jpeg';
 const coleslaw = '../assets/Products/coleslaw.jpeg';
 const plated = '../assets/Products/coleslaw-full-plate.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { CABBAGE, CARROTS, MAYONNAISE, WHITE_SUGAR, APPLE_CIDER_VINEGAR, LEMON_JUICE, SALT, BLACK_PEPPER } = require('./ingredients');
 
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.MIX],
     type: [TYPES.SALAD],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     websites: [
         { label: 'Coleslaw', link: 'https://www.askchefdennis.com/best-cole-slaw-coleslaw/' }

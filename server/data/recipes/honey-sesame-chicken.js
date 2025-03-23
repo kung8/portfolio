@@ -8,7 +8,7 @@ const sesame7 = '../assets/Products/honey-sesame-chicken-7.jpeg';
 const sesame8 = '../assets/Products/honey-sesame-chicken-8.jpeg';
 const sesame9 = '../assets/Products/honey-sesame-chicken-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGG, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, CORNSTARCH, VEGETABLE_OIL, GARLIC, HONEY, LIGHT_SOY_SAUCE, KETCHUP, BROWN_SUGAR, RICE_WINE_VINEGAR, SESAME_OIL, GREEN_ONIONS, SESAME_SEEDS } = require('./ingredients');
 
 const DEEP_FRY = 'Deep Fry';
@@ -27,7 +27,7 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SIDE_DISH, TYPES.MAIN_COURSE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '20 m',
     websites: [

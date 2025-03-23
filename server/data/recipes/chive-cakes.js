@@ -18,7 +18,7 @@ const cakes17 = '../assets/Products/chive-cakes-17.jpeg';
 const cakes18 = '../assets/Products/chive-cakes-18.jpeg';
 const cakes19 = '../assets/Products/chive-cakes-19.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { TAPIOCA_STARCH, HOT_WATER, VEGETABLE_OIL, SALT, POWDERED_SUGAR, BAKING_SODA, PEANUT_OIL, DARK_SOY_SAUCE, WHITE_VINEGAR, RED_PEPPER_FLAKES, GARLIC, RICE_FLOUR, GLUTINOUS_RICE_FLOUR, GARLIC_CHIVES, LUKEWARM_WATER, UNSALTED_PEANUTS } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
@@ -40,7 +40,7 @@ module.exports = {
     genre: [GENRES.THAI],
     method: [METHODS.PAN_FRY],
     type: [TYPES.SIDE_DISH],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '20 m',
     websites: [

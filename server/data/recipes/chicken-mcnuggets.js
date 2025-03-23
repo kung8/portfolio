@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { CHICKEN_BREAST, BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, WHITE_SUGAR, ALL_PURPOSE_FLOUR, WHITE_PEPPER, CELERY_POWDER, CORNSTARCH, BAKING_POWDER, BAKING_SODA, EGG, COLD_WATER, ROOM_TEMPERATURE_WATER, VEGETABLE_OIL } = require('./ingredients');
 
 const FLOUR_DREDGING_STATION = 'Flour Dredging Station';
@@ -19,7 +19,7 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.FINGER_FOOD],
-    yields: '10 McNuggets',
+    yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '8 m',
     websites: [

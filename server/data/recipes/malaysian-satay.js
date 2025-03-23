@@ -1,5 +1,5 @@
 const satay = '../assets/Products/malaysian-satay.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     WHITE_SUGAR,
@@ -24,7 +24,7 @@ module.exports = {
     genre: [GENRES.MALAYSIAN, GENRES.ASIAN],
     method: [METHODS.MARINADE, METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '12 m',
     cookTime: '25 m',
     separated: true,

@@ -5,7 +5,7 @@ const riceKrispy = '../assets/Products/rice-krispy-treat-rice-krispy.jpeg';
 const vanilla = '../assets/Products/rice-krispy-treat-vanilla.jpeg';
 const zoomed3 = '../assets/Products/rice-krispy-treat-zoomed-center-3.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, SECTIONS, UNITS, YIELD_UNITS } = require("./constants");
 const { MINI_MARSHMALLOWS, UNSALTED_BUTTER, VANILLA_EXTRACT, RICE_KRISPIES_CEREAL } = require('./ingredients');
 
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
-    yields: '12 servings',
+    yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: '1 m',
     cookTime: '20 m',
     websites: [

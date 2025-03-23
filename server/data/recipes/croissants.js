@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { MILK, BROWN_SUGAR, YEAST, ALL_PURPOSE_FLOUR, SALT, UNSALTED_BUTTER, EGG } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
@@ -25,7 +25,7 @@ module.exports = {
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
-    yields: '2 dozens',
+    yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '14 h',
     cookTime: '24 m',
     websites: [

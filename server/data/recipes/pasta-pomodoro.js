@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { ANGEL_HAIR_PASTA, OLIVE_OIL, YELLOW_ONION, GARLIC, ROMA_TOMATO, BALSAMIC_VINEGAR, CHICKEN_BROTH, RED_PEPPER_FLAKES, BLACK_PEPPER, BASIL_LEAVES, PARMESAN_CHEESE } = require('./ingredients');
 
 const PASTA = 'Pasta';
@@ -20,7 +20,7 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.SIMMER],
     type: [TYPES.PASTA],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '15 m',
     websites: [

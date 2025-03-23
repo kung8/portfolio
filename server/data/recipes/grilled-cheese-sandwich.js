@@ -5,7 +5,7 @@ const grilled4 = '../assets/Products/grilled-cheese-sandwich-4.jpeg';
 const grilled5 = '../assets/Products/grilled-cheese-sandwich-5.jpeg';
 const grilled6 = '../assets/Products/grilled-cheese-sandwich-6.jpeg';
 const grilled7 = '../assets/Products/grilled-cheese-sandwich-7.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { BREAD, UNSALTED_BUTTER, CHEDDAR_CHEESE } = require('./ingredients');
 
 const GRILL_CHEESE = 'Grill Cheese';
@@ -20,7 +20,7 @@ module.exports = {
     genre: [GENRES.WESTERN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.SANDWICH],
-    yields: '1 servings',
+    yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: '1 m',
     cookTime: '5 m',
     websites: [

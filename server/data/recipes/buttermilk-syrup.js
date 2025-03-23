@@ -1,6 +1,6 @@
 const cooked = '../assets/Products/buttermilk-syrup-cooked.jpeg';
 const raw = '../assets/Products/buttermilk-syrup-raw.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     WHITE_SUGAR,
     BUTTERMILK,
@@ -19,7 +19,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     type: [TYPES.SAUCE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '5 m',
     websites: [

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { ANGEL_HAIR_PASTA, UNSALTED_BUTTER, SHRIMP, GARLIC, WHITE_WINE, BLACK_PEPPER, PARMESAN_CHEESE, PARSLEY, LEMON } = require('./ingredients');
 
 const NOODLE_SECTION = 'Noodles';
@@ -21,7 +21,7 @@ module.exports = {
     method: [],
     protein: [PROTEIN.SHRIMP],
     type: [TYPES.PASTA],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '15 m',
     websites: [

@@ -27,7 +27,7 @@ const well = '../assets/Products/pizza-flour-well.jpeg';
 const wellWater = '../assets/Products/pizza-flour-well-with-water.jpeg';
 const expandedWell = '../assets/Products/pizza-flour-expanded-well-with-water.jpeg';
 const dough = '../assets/Products/pizza-dough-in-bowl.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, METHODS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     BREAD_FLOUR,
     SALT,
@@ -86,7 +86,7 @@ module.exports = {
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
-    yields: '6 - 8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '45 m',
     cookTime: '25 m',
     separated: true,

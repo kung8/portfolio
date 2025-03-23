@@ -1,5 +1,5 @@
 const parfait = '../assets/Products/parfait.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     PLAIN_YOGURT,
     VANILLA_EXTRACT,
@@ -17,7 +17,7 @@ module.exports = {
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT, CATEGORIES.SNACK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '1 m',
     cookTime: '1 m',
     ingredients: [

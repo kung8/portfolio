@@ -8,7 +8,7 @@ const ragu7 = '../assets/Products/beef-ragu-7.jpeg';
 const ragu8 = '../assets/Products/beef-ragu-8.jpeg';
 const ragu9 = '../assets/Products/beef-ragu-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
 const { BEEF_CHUCK_ROAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CARROTS, CELERY, CRUSHED_TOMATOES, TOMATO_PASTE, BEEF_BROTH, RED_WINE, WARM_WATER, THYME, BAY_LEAVES, YELLOW_ONION, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY } = require('./ingredients');
 
 const BEEF_SECTION = 'Beef';
@@ -28,7 +28,7 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.SIMMER],
     protein: [PROTEIN.BEEF],
     type: [TYPES.PASTA],
-    yields: '5 servings',
+    yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '2 h 45 m',
     websites: [

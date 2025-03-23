@@ -1,6 +1,6 @@
 import React from 'react';
 import closeBtn from '../../../Assets/x.png';
-import { getStartingDay } from '../utils/get-starting-day';
+import { getStartingDay } from '../utils';
 
 export const SettingsModal = ({
     closeModal,

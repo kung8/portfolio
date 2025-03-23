@@ -11,7 +11,7 @@ const curry16 = '../assets/Products/yellow-curry-16.jpeg';
 const curry17 = '../assets/Products/yellow-curry-17.jpeg';
 const curry18 = '../assets/Products/yellow-curry-18.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { OLIVE_OIL, YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_BREAST, YUKON_GOLD_POTATOES, CARROTS, YELLOW_CURRY_PASTE, GINGER, GARLIC, COCONUT_MILK, CORNSTARCH, FISH_SAUCE, LIME_JUICE, BROWN_SUGAR, CILANTRO, SRIRACHA_SAUCE } = require('./ingredients');
 
 const YELLOW_CURRY_SECTION = 'Yellow Curry';
@@ -28,7 +28,7 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN, PROTEIN.ALTERNATIVE],
     type: [TYPES.CURRY],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '40 m',
     websites: [

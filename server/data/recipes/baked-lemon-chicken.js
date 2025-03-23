@@ -1,7 +1,7 @@
 const plate = '../assets/Products/baked-lemon-chicken-plate.jpeg';
 const full = '../assets/Products/baked-lemon-chicken-full-plate.jpeg';
 const pan = '../assets/Products/baked-lemon-chicken-pan.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     CHICKEN_WINGS,
     UNSALTED_BUTTER,
@@ -26,7 +26,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '5 servings',
+    yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '50 m',
     websites: [

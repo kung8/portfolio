@@ -9,7 +9,7 @@ const tart8 = '../assets/Products/apple-tart-8.jpeg';
 const tart9 = '../assets/Products/apple-tart-9.jpeg';
 const tart10 = '../assets/Products/apple-tart-10.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, WHITE_SUGAR, EGG_YOLKS, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, ALMOND_FLOUR, REFRIGERATED_PUFF_PASTRY, PINK_LADY_APPLES, APRICOT_JELLY } = require('./ingredients');
 
 const FRANGIPANE = 'Frangipane';
@@ -26,7 +26,7 @@ module.exports = {
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],
     type: [TYPES.TART],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '45 m',
     websites: [

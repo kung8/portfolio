@@ -12,7 +12,7 @@ const quesadillas12 = '../assets/Products/chicken-quesadillas-12.jpeg';
 const quesadillas13 = '../assets/Products/chicken-quesadillas-13.jpeg';
 const quesadillas14 = '../assets/Products/chicken-quesadillas-14.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { CHILI_POWDER, SALT, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL, YELLOW_ONION, RED_BELL_PEPPERS, GREEN_BELL_PEPPERS, HOT_SAUCE, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, SALSA, GUACAMOLE, SOUR_CREAM, SHARP_CHEDDAR_CHEESE, WHEAT_TORTILLA } = require('./ingredients');
 
 const SPICES = 'Spices';
@@ -35,7 +35,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.WRAP],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '20 m',
     websites: [

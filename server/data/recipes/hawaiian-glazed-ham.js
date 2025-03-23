@@ -1,5 +1,5 @@
 const ham1 = '../assets/Products/hawaiian-glazed-ham-1.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { BONE_IN_HAM, YELLOW_MUSTARD, BROWN_SUGAR, CANNED_PINEAPPLE_SLICES, MARASCHINO_CHERRIES } = require('./ingredients');
 
 const PREP_OVEN = 'Prep Oven';
@@ -18,7 +18,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.PORK],
     type: [TYPES.PROTEIN],
-    yields: '20 servings',
+    yields: { amount: 20, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '2 h',
     separated: true,

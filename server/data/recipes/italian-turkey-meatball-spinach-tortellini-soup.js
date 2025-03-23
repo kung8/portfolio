@@ -12,7 +12,7 @@ const softened = '../assets/Products/turkey-meatball-spinach-tortellini-soup-sof
 const spinach = '../assets/Products/turkey-meatball-spinach-tortellini-soup-spinach.jpeg';
 const ladle = '../assets/Products/turkey-meatball-spinach-tortellini-soup-zoomed-ladle.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     GROUND_TURKEY,
     BREADCRUMBS,
@@ -44,7 +44,7 @@ module.exports = {
     method: [METHODS.BOIL],
     protein: [PROTEIN.TURKEY],
     type: [TYPES.NOODLE, TYPES.SOUP],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '35 m',
     separated: true,

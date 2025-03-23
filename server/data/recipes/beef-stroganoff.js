@@ -1,5 +1,5 @@
 const beefStroganoff = '../assets/Products/beef-stroganoff.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS , UNITS, YIELD_UNITS } = require('./constants');
 const {
     BEEF,
     YELLOW_ONION,
@@ -23,7 +23,7 @@ module.exports = {
     genre: [GENRES.RUSSIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     type: [TYPES.NOODLE],
-    yields: '7 servings',
+    yields: { amount: 7, unit: YIELD_UNITS.SERVING },
     prepTime: '10 - 12 m',
     cookTime: '45 m',
     ingredients: [

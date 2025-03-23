@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, UNSALTED_BUTTER, GARLIC, SUN_DRIED_TOMATOES, ITALIAN_SEASONING, HEAVY_CREAM, MILK, PARMESAN_CHEESE, BABY_SPINACH, PENNE } = require('./ingredients');
 
 const CHICKEN_SECTION = 'Chicken';
@@ -23,7 +23,7 @@ module.exports = {
     method: [METHODS.SIMMER, METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PASTA],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '20 m',
     websites: [

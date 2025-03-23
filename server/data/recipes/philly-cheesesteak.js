@@ -1,5 +1,5 @@
 const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
 const {
     OLIVE_OIL,
     RED_BELL_PEPPERS,
@@ -22,7 +22,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SANDWICH],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '25 m',
     websites: [

@@ -12,7 +12,7 @@ const plated6 = '../assets/Products/pho-plated-6.jpeg';
 const sauces = '../assets/Products/pho-sauces.jpeg';
 const toppings = '../assets/Products/pho-toppings.jpeg';
 const veggiesPot = '../assets/Products/pho-veggies-in-pot.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     BEAN_SPROUTS,
     BEEF_BROTH,
@@ -47,7 +47,7 @@ module.exports = {
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     protein: [PROTEIN.BEEF],
     type: [TYPES.NOODLE, TYPES.SOUP],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '40 m',
     separated: true,

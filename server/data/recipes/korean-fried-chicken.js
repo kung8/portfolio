@@ -6,7 +6,7 @@ const drip = '../assets/Products/korean-fried-chicken-oil-drip-station.jpeg';
 const sauce = '../assets/Products/korean-fried-chicken-raw-sauce.jpeg';
 const rice = '../assets/Products/korean-fried-chicken-with-rice.jpeg';
 const chicken = '../assets/Products/korean-fried-chicken.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
@@ -44,7 +44,7 @@ module.exports = {
     method: [METHODS.MARINADE, METHODS.DEEP_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '5-6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '20 m',
     separated: true,

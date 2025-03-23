@@ -22,7 +22,7 @@ const icing2 = '../assets/Products/sugar-cookies-icing-2.jpeg';
 const icing3 = '../assets/Products/sugar-cookies-icing-3.jpeg';
 const icing4 = '../assets/Products/sugar-cookies-icing-4.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, WHITE_SUGAR, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, SALT, BAKING_SODA, ALMOND_EXTRACT, SPRINKLES, CONFECTIONERS_SUGAR, MERINGUE_POWDER, ROOM_TEMPERATURE_WATER, CRYSTAL_SUGAR } = require('./ingredients');
 
 const DRY_INGREDIENTS = 'Dry Ingredients';
@@ -40,7 +40,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.COOKIE],
-    yields: '3 to 4 dozens',
+    yields: { amount: 3, unit: YIELD_UNITS.DOZEN },
     prepTime: '2 h 30 m',
     cookTime: '12 m',
     websites: [

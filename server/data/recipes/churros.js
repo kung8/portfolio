@@ -4,7 +4,7 @@ const churros3 = '../assets/Products/churros-3.jpeg';
 const churros4 = '../assets/Products/churros-4.jpeg';
 const churros5 = '../assets/Products/churros-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { WARM_WATER, UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, VANILLA_EXTRACT, VEGETABLE_OIL, CINNAMON } = require('./ingredients');
 
 const CHURROS_SECTION = 'Churros';
@@ -23,7 +23,7 @@ module.exports = {
     genre: [GENRES.SPANISH],
     method: [METHODS.DEEP_FRY],
     type: [TYPES.DESSERT],
-    yields: '18 servings',
+    yields: { amount: 18, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '20 m',
     websites: [

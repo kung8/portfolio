@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
 const { RED_POTATOES, ALL_PURPOSE_FLOUR, EGG, SALT, DURUM_WHEAT } = require('./ingredients');
 
 const PREP_POTATOES = 'Prep Potatoes';
@@ -17,7 +17,7 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL],
     type: [TYPES.PASTA],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '40 m',
     websites: [

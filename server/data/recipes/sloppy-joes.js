@@ -4,7 +4,7 @@ const cooking = '../assets/Products/sloppy-joes-cooking-beef.jpeg';
 const garlic = '../assets/Products/sloppy-joes-garlic.jpeg';
 const veggies = '../assets/Products/sloppy-joes-raw-veggies.jpeg';
 const raw = '../assets/Products/sloppy-joes-raw.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     YELLOW_ONION,
     RED_BELL_PEPPERS,
@@ -30,7 +30,7 @@ module.exports = {
     method: [METHODS.SAUTE],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SANDWICH],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '7 m',
     cookTime: '25 m',
     websites: [

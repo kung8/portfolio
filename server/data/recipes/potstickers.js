@@ -6,7 +6,7 @@ const filling = '../assets/Products/potstickers-filling.jpeg';
 const raw = '../assets/Products/potstickers-raw.jpeg';
 const zoomed = '../assets/Products/potstickers-zoomed.jpeg';
 const potstickers = '../assets/Products/potstickers.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     GROUND_PORK,
     GARLIC,
@@ -37,7 +37,7 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.STEAM],
     protein: [PROTEIN.PORK],
     types: [TYPES.FINGER_FOOD],
-    yields: '2 dozen',
+    yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '30 m',
     cookTime: '12 m',
     websites: [

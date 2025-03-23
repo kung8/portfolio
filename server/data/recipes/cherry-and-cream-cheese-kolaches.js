@@ -25,7 +25,7 @@ const kolaches24 = '../assets/Products/kolaches-24.jpeg';
 const kolaches25 = '../assets/Products/kolaches-25.jpeg';
 const kolaches26 = '../assets/Products/kolaches-26.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { YEAST, WHITE_SUGAR, ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, EGG_YOLKS, SALT, CREAM_CHEESE, POWDERED_SUGAR, WHOLE_MILK, CHERRIES, COLD_WATER, LEMON_JUICE, LEMON_ZEST } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
@@ -52,7 +52,7 @@ module.exports = {
     genre: [GENRES.CZECH],
     method: [METHODS.BAKE],
     type: [TYPES.PASTRY],
-    yields: '12 servings',
+    yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: '50 m',
     cookTime: '20 m',
     websites: [

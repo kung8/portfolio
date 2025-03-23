@@ -1,5 +1,5 @@
 const chickenParm = '../assets/Products/chicken-parmesan.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN , UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
 const {} = require('./ingredients');
 
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
-    yields: 'servings',
+    yields: { amount: '', unit: YIELD_UNITS.SERVING },
     prepTime: 'm',
     cookTime: 'm',
     ingredients: [

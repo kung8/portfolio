@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { COLD_WATER, UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, WHOLE_MILK, EGG_YOLKS, HEAVY_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, CAKE_FLOUR, VANILLA_BEAN } = require('./ingredients');
 
 const PASTRY = 'Pastry';
@@ -16,7 +16,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.EGG],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT, TYPES.PASTRY],
-    yields: '12 servings',
+    yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '2 h',
     websites: [

@@ -1,5 +1,5 @@
 const roast = '../assets/Products/roast.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     BEEF_ROAST,
     BLACK_PEPPER,
@@ -22,7 +22,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.BEEF],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '4 h 15 m',
     websites: [

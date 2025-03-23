@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { WHITE_SUGAR, ALL_PURPOSE_FLOUR, COCOA_POWDER, POWDERED_SUGAR, SEMI_SWEET_CHOCOLATE_CHIPS, SEA_SALT, EGG, OLIVE_OIL, WARM_WATER, VANILLA_EXTRACT, CANOLA_OIL } = require('./ingredients');
 
 const DRY_SECTION = 'Dry';
@@ -20,7 +20,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.BROWNIE],
-    yields: '16 servings',
+    yields: { amount: 16, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '45 m',
     websites: [

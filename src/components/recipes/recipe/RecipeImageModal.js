@@ -3,27 +3,31 @@ import { ModalBody, ModalContent } from '../../modal/ModalContent';
 import xBtn from '../../../Assets/x.png';
 import arrow from '../../../Assets/arrow.png';
 import disabledArrow from '../../../Assets/disabled-arrow.png';
+import { useRecipeContext } from './RecipeContext';
 
-export const RecipeImageModal = ({ closeModal, name, image: initialImage, images }) => {
+export const RecipeImageModal = () => {
+    const { figures, handleCloseImageModal, item, selectedRecipeImage } = useRecipeContext();
+    const name = item?.name;
+    const images = [item?.img, ...figures.flatMap(figure => figure.img)];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
-        const index = images.indexOf(initialImage);
+        const index = images.indexOf(selectedRecipeImage);
         if (index > -1) setCurrentImageIndex(index);
-    }, [images, initialImage]);
+    }, [images, selectedRecipeImage]);
 
     return (
         <div className="recipe-image-modal-container">
             <div
                 id="recipe-image-modal-overlay"
                 className="overlay"
-                onClick={closeModal}
+                onClick={handleCloseImageModal}
             />
             <div className="recipe-image-modal">
                 <ModalContent>
                     <ModalBody>
                         <img className="recipe-image-modal-image" src={images[currentImageIndex]} alt={name} />
-                        <button className="close" onClick={closeModal}>
+                        <button className="close" onClick={handleCloseImageModal}>
                             <img src={xBtn} alt="close" />
                         </button>
                         <div className="arrows-container">

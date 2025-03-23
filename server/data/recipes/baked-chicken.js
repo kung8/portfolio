@@ -4,7 +4,7 @@ const rawChicken = '../assets/Products/baked-chicken-raw-zoomed.jpeg';
 const pan = '../assets/Products/baked-chicken-cooked.jpeg';
 const plated = '../assets/Products/baked-chicken-plated.jpeg';
 const full = '../assets/Products/baked-chicken-plated-full.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     CHICKEN_DRUMSTICKS,
     OLIVE_OIL,
@@ -26,7 +26,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '5 servings',
+    yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '50 m',
     ingredients: [

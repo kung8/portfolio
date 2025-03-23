@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { getGreeting } from '../utils/get-greeting';
+import { getGreeting } from '../utils';
 import { RECIPE_APP_USER } from '../constants';
 import { useDebounce } from 'use-debounce';
 

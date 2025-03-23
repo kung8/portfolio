@@ -1,5 +1,5 @@
 const lemonChicken = '../assets/Products/lemon-chicken.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     BONELESS_CHICKEN_THIGH,
     LIGHT_SOY_SAUCE,
@@ -24,7 +24,7 @@ module.exports = {
     method: [METHODS.DEEP_FRY, METHODS.MARINADE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '10 servings',
+    yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '10 m',
     separated: true,

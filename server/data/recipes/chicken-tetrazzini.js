@@ -6,7 +6,7 @@ const tetrazzini5 = '../assets/Products/chicken-tetrazzini-5.jpeg';
 const tetrazzini6 = '../assets/Products/chicken-tetrazzini-6.jpeg';
 const tetrazzini7 = '../assets/Products/chicken-tetrazzini-7.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { SPAGHETTI_NOODLES, ROTISSERIE_CHICKEN, CREAM_OF_MUSHROOM, SOUR_CREAM, CHICKEN_BROTH, UNSALTED_BUTTER, PARMESAN_CHEESE, SALT, BLACK_PEPPER, ONION_POWDER, GARLIC_POWDER, CAYENNE_PEPPER, MOZZARELLA_CHEESE, PARSLEY } = require('./ingredients');
 
 const PREP_CASSEROLE = 'Prep Casserole';
@@ -24,7 +24,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CASSEROLE],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '1 h',
     websites: [

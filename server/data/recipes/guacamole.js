@@ -4,7 +4,7 @@ const guacamole3 = '../assets/Products/guacamole-3.jpeg';
 const guacamole4 = '../assets/Products/guacamole-4.jpeg';
 const guacamole5 = '../assets/Products/guacamole-5.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { AVOCADO, LIME, SALT, ROMA_TOMATO, YELLOW_ONION, CILANTRO, GARLIC, CAYENNE_PEPPER } = require('./ingredients');
 
 module.exports = {
@@ -17,7 +17,7 @@ module.exports = {
     genre: [GENRES.MEXICAN],
     method: [METHODS.MIX],
     type: [TYPES.DIP],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     websites: [
         { label: 'Guacamole', link: 'https://www.allrecipes.com/recipe/14231/guacamole/' }

@@ -11,7 +11,7 @@ const carbonara13 = '../assets/Products/carbonara-13.jpeg';
 const carbonara14 = '../assets/Products/carbonara-14.jpeg';
 const carbonara15 = '../assets/Products/carbonara-15.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { GUANCIALE, EGG, EGG_YOLKS, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO } = require('./ingredients');
 
 const CARBONARA_SAUCE = 'Carbonara Sauce';
@@ -32,7 +32,7 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.PASTA],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '15 m',
     websites: [

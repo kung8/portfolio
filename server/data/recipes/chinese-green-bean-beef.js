@@ -8,7 +8,7 @@ const beef = '../assets/Products/chinese-green-bean-and-beef-raw-beef.jpeg';
 const sauce = '../assets/Products/chinese-green-bean-and-beef-sauce.jpeg';
 const sautedBeans = '../assets/Products/chinese-green-bean-and-beef-sauted-green-beans.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     GREEN_BEANS,
     BEEF_CHUCK_ROAST,
@@ -34,7 +34,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.RICE, TYPES.VEGETABLE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '20 m',
     separated: true,

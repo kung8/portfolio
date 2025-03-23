@@ -8,7 +8,7 @@ const muddy7 = '../assets/Products/muddy-buddies-7.jpeg';
 const muddy8 = '../assets/Products/muddy-buddies-8.jpeg';
 const muddy9 = '../assets/Products/muddy-buddies-9.jpeg';
 const muddy11 = '../assets/Products/muddy-buddies-11.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { SEMI_SWEET_CHOCOLATE_CHIPS, PEANUT_BUTTER, CHEX_CEREAL, POWDERED_SUGAR } = require('./ingredients');
 
 module.exports = {
@@ -21,8 +21,8 @@ module.exports = {
     method: [METHODS.MIX],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.DESSERT],
-    yields: ' servings',
-    prepTime: 'm',
+    yields: { amount: 15, unit: YIELD_UNITS.SERVING },
+    prepTime: '10 m',
     cookTime: 'm',
     websites: [
         { label: 'Muddy Buddies', link: 'https://joyfoodsunshine.com/puppy-chow-recipe/' }

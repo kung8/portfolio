@@ -4,7 +4,7 @@ const marinade = '../assets/Products/beef-bulgogi-marinade.jpeg';
 // const ziploc = '../assets/Products/beef-bulgogi-marinating-in-ziploc.jpeg';
 const marinating = '../assets/Products/beef-bulgogi-marinating.jpeg';
 const plated = '../assets/Products/beef-bulgogi-plated.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     BEEF,
     PEAR,
@@ -33,7 +33,7 @@ module.exports = {
     method: [METHODS.MARINADE, METHODS.PAN_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.RICE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '8 h',
     cookTime: '25 m',
     separated: true,

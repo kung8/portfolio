@@ -12,7 +12,7 @@ const unmixed = '../assets/Products/caramel-apples-sauce-unmixed.jpeg';
 const skewered = '../assets/Products/caramel-apples-skewered.jpeg';
 const thickened = '../assets/Products/caramel-apples-thickened-sauce.jpeg';
 const wax = '../assets/Products/caramel-apples-wax-free-apples.jpeg';
-const { GENRES, METHODS, TYPES, CATEGORIES, SECTIONS , UNITS } = require('./constants');
+const { GENRES, METHODS, TYPES, CATEGORIES, SECTIONS , UNITS, YIELD_UNITS } = require('./constants');
 const { GRANNY_SMITH_APPLES, BROWN_SUGAR, SWEETENED_CONDENSED_MILK, CORN_SYRUP, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
 
 const APPLE = 'Apple';
@@ -27,7 +27,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     type: [TYPES.DESSERT],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '30 m',
     websites: [

@@ -5,7 +5,7 @@ const drunken4 = '../assets/Products/drunken-noodles-4.jpeg';
 const drunken5 = '../assets/Products/drunken-noodles-5.jpeg';
 const drunken6 = '../assets/Products/drunken-noodles-6.jpeg';
 const drunken7 = '../assets/Products/drunken-noodles-7.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGG, SERRANO_PEPPERS, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATOES } = require('./ingredients');
 
 const MAKE_SAUCE = 'Make Sauce';
@@ -23,7 +23,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.SHRIMP],
     type: [TYPES.NOODLE],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '20 m',
     websites: [

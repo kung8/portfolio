@@ -11,7 +11,7 @@ const nonBeans3 = '../assets/Products/khmer-red-curry-non-green-beans-3.jpeg';
 const plated1 = '../assets/Products/khmer-red-curry-plated-1.jpeg';
 const veggies = '../assets/Products/khmer-red-curry-veggies.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     RED_CURRY_PASTE,
@@ -34,7 +34,7 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CURRY],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '7 m',
     cookTime: '25 m',
     websites: [

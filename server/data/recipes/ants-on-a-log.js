@@ -1,6 +1,6 @@
 const side = '../assets/Products/ants-on-a-log-side.jpeg';
 const straight = '../assets/Products/ants-on-a-log-straight-on.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { CELERY, RAISINS, PEANUT_BUTTER } = require('./ingredients');
 
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
     method: [METHODS.RAW],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.VEGETABLE, TYPES.FINGER_FOOD],
-    yields: '3 servings',
+    yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: '3 m',
     separated: false,
     ingredients: [

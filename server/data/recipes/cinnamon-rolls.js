@@ -23,7 +23,7 @@ const frosting4 = '../assets/Products/cinnamon-rolls-frosting-4.jpeg';
 const plated3 = '../assets/Products/cinnamon-rolls-plated-3.jpeg';
 const plated5 = '../assets/Products/cinnamon-rolls-plated-5.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { YEAST, WHITE_SUGAR, EGG, EGG_YOLKS, UNSALTED_BUTTER, BREAD_FLOUR, SALT, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, POWDERED_SUGAR, VANILLA_EXTRACT, MILK } = require('./ingredients');
 
 module.exports = {
@@ -36,7 +36,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    yields: '9 servings',
+    yields: { amount: 9, unit: YIELD_UNITS.SERVING },
     prepTime: '2 h',
     cookTime: '20 m',
     websites: [

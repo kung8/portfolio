@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { CHICKEN_WINGS, SALT, BLACK_PEPPER, UNSALTED_BUTTER, PARSLEY, CHIVES, GARLIC, DIJON_MUSTARD, LEMON_JUICE, SMOKED_PAPRIKA, CAYENNE_PEPPER } = require('./ingredients');
 
 const CHICKEN_SECTION = 'Chicken';
@@ -23,7 +23,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.FINGER_FOOD],
-    yields: ' servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: 'm',
     cookTime: 'm',
     websites: [

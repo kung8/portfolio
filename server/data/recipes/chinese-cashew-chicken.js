@@ -9,7 +9,7 @@ const sauce = '../assets/Products/cashew-chicken-sauce.jpeg';
 const cashews = '../assets/Products/cashew-chicken-veggies-with-cashew.jpeg';
 const veggies = '../assets/Products/cashew-chicken-veggies.jpeg';
 const withSauce = '../assets/Products/cashew-chicken-with-sauce.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     BONELESS_AND_SKINLESS_CHICKEN_BREAST,
     BROCCOLI,
@@ -41,7 +41,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.CHICKEN, PROTEIN.EDAMAME],
     type: [TYPES.RICE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '20 m',
     websites: [

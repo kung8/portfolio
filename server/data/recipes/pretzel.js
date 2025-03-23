@@ -11,7 +11,7 @@ const formed = '../assets/Products/pretzels-formed.jpeg';
 // const oven = '../assets/Products/pretzels-in-oven.jpeg';
 const raw = '../assets/Products/pretzels-on-baking-sheet-raw.jpeg';
 const rope = '../assets/Products/pretzels-rope.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     WARM_WATER,
     YEAST,
@@ -31,7 +31,7 @@ module.exports = {
     category: [CATEGORIES.DESSERT, CATEGORIES.SNACK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
-    yields: '12',
+    yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '15 m',
     separated: true,

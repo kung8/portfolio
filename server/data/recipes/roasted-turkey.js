@@ -17,7 +17,7 @@ const rub5 = '../assets/Products/roasted-turkey-rub-5.jpeg';
 
 const turkeyCookingTable = '../assets/Products/cooking-turkey-estimates.png';
 const turkeyThawingTable = '../assets/Products/thawing-turkey-estimates.png';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     TURKEY,
     LEMON,
@@ -46,7 +46,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.ROAST],
     protein: [PROTEIN.TURKEY],
-    yields: '12 servings',
+    yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '2 h 15 m - 4 h 20 m',
     websites: [

@@ -4,7 +4,7 @@ const oil = '../assets/Products/sauteed-squash-oil-in-pan.jpeg';
 const onions = '../assets/Products/sauteed-squash-onions.jpeg';
 const plated = '../assets/Products/sauteed-squash-plated.jpeg';
 const raw = '../assets/Products/sauteed-squash-raw.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     OLIVE_OIL,
     UNSALTED_BUTTER,
@@ -26,7 +26,7 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.SAUTE],
     type: [TYPES.VEGETABLE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '25 m',
     websites: [

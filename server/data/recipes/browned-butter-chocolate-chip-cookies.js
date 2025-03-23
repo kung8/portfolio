@@ -1,5 +1,5 @@
 const cookies1 = '../assets/Products/browned-butter-chocolate-chip-cookies-1.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { BROWNED_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGG, EGG_YOLKS, CAKE_FLOUR, ALL_PURPOSE_FLOUR, CORNSTARCH, BAKING_SODA, SALT, SEMI_SWEET_CHOCOLATE_CHIPS, WALNUTS, MILK_CHOCOLATE } = require('./ingredients');
 
 const BROWNED_BUTTER_SECTION = 'Browned Butter';
@@ -17,7 +17,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.COOKIE],
-    yields: '8 to 24 servings',
+    yields: { amount: 3 / 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '15 m',
     cookTime: '11 m',
     separated: true,

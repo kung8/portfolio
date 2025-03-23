@@ -11,7 +11,7 @@ const raw = '../assets/Products/bbq-pulled-pork-raw-pork.jpeg';
 const wet = '../assets/Products/bbq-pulled-pork-wet.jpeg';
 const plate1 = '../assets/Products/bbq-pulled-pork-full-plate-1.jpeg';
 const plate2 = '../assets/Products/bbq-pulled-pork-full-plate-2.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     PORK_ROAST,
     VEGETABLE_OIL,
@@ -38,7 +38,7 @@ module.exports = {
     method: [METHODS.SLOW_COOK],
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '6 h',
     ingredients: [

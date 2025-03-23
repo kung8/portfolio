@@ -1,6 +1,6 @@
 const lasagna = '../assets/Products/lasagna.jpeg';
 const pan = '../assets/Products/lasagna-pan.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     ITALIAN_SAUSAGE,
     GROUND_BEEF,
@@ -33,7 +33,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.BEEF, PROTEIN.PORK],
     type: [TYPES.NOODLE],
-    yields: '12 servings',
+    yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '3 h',
     websites: [

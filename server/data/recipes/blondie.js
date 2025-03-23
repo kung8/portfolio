@@ -7,7 +7,7 @@ const flour = '../assets/Products/blondie-flour.jpeg';
 const pan = '../assets/Products/blondie-pan.jpeg';
 const plated = '../assets/Products/blondie-plated.jpeg';
 const sugars = '../assets/Products/blondie-sugars.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     BROWN_SUGAR,
@@ -33,7 +33,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.EGG],
     type: [TYPES.DESSERT],
-    yields: '18 servings',
+    yields: { amount: 18, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '30 m',
     websites: [

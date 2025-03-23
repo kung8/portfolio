@@ -20,7 +20,7 @@ const enchiladas20 = '../assets/Products/mexican-enchiladas-20.jpeg';
 const enchiladas21 = '../assets/Products/mexican-enchiladas-21.jpeg';
 const enchiladas22 = '../assets/Products/mexican-enchiladas-22.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { GARLIC_POWDER, SALT, BONELESS_AND_SKINLESS_CHICKEN_BREAST, BLACK_PEPPER, OLIVE_OIL, WHITE_ONION, BAY_LEAVES, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, CHILI_POWDER, ONION_POWDER, CUMIN, OREGANO, TOMATO_PASTE, FLOUR_TORTILLA, MEXICAN_BLEND_CHEESE, LETTUCE, YELLOW_ONION, CILANTRO, SOUR_CREAM, CHEESE } = require('./ingredients');
 
 const CHICKEN = 'Chicken';
@@ -42,7 +42,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN, PROTEIN.ALTERNATIVE],
     type: [TYPES.CASSEROLE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '55 m',
     websites: [

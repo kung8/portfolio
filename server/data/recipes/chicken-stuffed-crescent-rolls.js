@@ -6,7 +6,7 @@ const melted = '../assets/Products/chicken-stuffed-crescent-rolls-melted-butter.
 const opened = '../assets/Products/chicken-stuffed-crescent-rolls-opened.jpeg';
 const wrap = '../assets/Products/chicken-stuffed-crescent-rolls-wrap.jpeg';
 const wrapped = '../assets/Products/chicken-stuffed-crescent-rolls-wrapped.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require('./constants');
 const {
     MOZZARELLA_CHEESE,
     CREAM_CHEESE,
@@ -31,7 +31,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.FINGER_FOOD],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '12 m',
     ingredients: [

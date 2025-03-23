@@ -8,7 +8,7 @@ const garlic = '../assets/Products/aji-de-gallina-garlic.jpeg';
 const onion = '../assets/Products/aji-de-gallina-onion.jpeg';
 const shredded = '../assets/Products/aji-de-gallina-shredded-chicken.jpeg';
 const aji = '../assets/Products/aji-de-gallina.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     YELLOW_ONION,
@@ -45,7 +45,7 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
     separated: true,
-    yields: '3 - 4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '25 - 40 m',
     websites: [

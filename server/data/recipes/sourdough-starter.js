@@ -10,7 +10,7 @@ const {
     ALL_PURPOSE_FLOUR,
     WARM_WATER,
 } = require('./ingredients');
-const { UNITS } = require('./constants');
+const { UNITS, YIELD_UNITS } = require('./constants');
 
 const CREATING_STARTER = 'Creating Starter';
 const FEEDING_STARTER = 'Feeding Starter';
@@ -20,7 +20,7 @@ module.exports = {
     name: 'Sourdough Starter',
     img: risen,
     available: true,
-    yields: 'Infinite',
+    yields: { amount: 'Infinite', unit: YIELD_UNITS.SERVING },
     prepTime: '35 m',
     websites: [
         { label: 'Sourdough Starter', link: "https://littlespoonfarm.com/sourdough-starter-recipe/" }

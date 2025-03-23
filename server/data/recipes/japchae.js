@@ -1,5 +1,5 @@
 // const japchae1 = '../assets/Products/japchae-1.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { KOREAN_GLASS_NOODLES, EGG, CARROTS, RED_BELL_PEPPERS, YELLOW_ONION, GREEN_ONIONS, GARLIC, SHIITAKE_MUSHROOMS, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPERS } = require('./ingredients');
 
 const NOODLES_SECTION = 'Noodles';
@@ -27,7 +27,7 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.SAUTE],
     protein: [PROTEIN.EGG],
     type: [TYPES.NOODLE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '20 m',
     websites: [

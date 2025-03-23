@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { COOKING_SPRAY, POPCORN, BROWN_SUGAR, CORN_SYRUP, UNSALTED_BUTTER, SALT, VANILLA_EXTRACT, BAKING_SODA } = require('./ingredients');
 
 const POPCORN_SECTION = 'Popcorn';
@@ -20,7 +20,7 @@ module.exports = {
     genre: [GENRES.WESTERN],
     method: [METHODS.BAKE, METHODS.BOIL],
     type: [TYPES.DESSERT],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '45 m',
     websites: [

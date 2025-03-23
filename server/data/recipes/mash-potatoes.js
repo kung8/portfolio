@@ -9,7 +9,7 @@ const potatoes8 = '../assets/Products/mash-potatoes-8.jpeg';
 const potatoes9 = '../assets/Products/mash-potatoes-9.jpeg';
 const potatoes10 = '../assets/Products/mash-potatoes-10.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { YUKON_GOLD_POTATOES, GARLIC, UNSALTED_BUTTER, MILK, SALT, BLACK_PEPPER, GREEN_ONIONS, SOUR_CREAM, CHEDDAR_CHEESE, CHIVES } = require('./ingredients');
 
 module.exports = {
@@ -21,7 +21,7 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BOIL, METHODS.MASH],
     type: [TYPES.SIDE_DISH],
-    yields: '10 servings',
+    yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '20 m',
     websites: [

@@ -15,7 +15,7 @@ const meatball15 = '../assets/Products/swedish-meatball-15.jpeg';
 const meatball16 = '../assets/Products/swedish-meatball-16.jpeg';
 const meatball17 = '../assets/Products/swedish-meatball-17.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { BREADCRUMBS, HEAVY_CREAM, UNSALTED_BUTTER, YELLOW_ONION, GROUND_BEEF, GROUND_PORK, EGG, BROWN_SUGAR, SALT, BLACK_PEPPER, NUTMEG, ALLSPICE, GROUND_GINGER, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, BEEF_BROTH, SOUR_CREAM } = require('./ingredients');
 
 const PREP_OVEN = 'Prep Oven';
@@ -36,7 +36,7 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.BAKE],
     protein: [PROTEIN.BEEF, PROTEIN.PORK],
     type: [TYPES.PROTEIN, TYPES.MAIN_COURSE, TYPES.SIDE_DISH],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '1 h',
     websites: [

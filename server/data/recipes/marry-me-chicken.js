@@ -18,7 +18,7 @@ const combined3 = '../assets/Products/marry-me-chicken-3.jpeg';
 const plated2 = '../assets/Products/marry-me-chicken-plated-2.jpeg';
 const plated3 = '../assets/Products/marry-me-chicken-plated-3.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CHICKEN_BROTH, HEAVY_CREAM, PARMESAN_CHEESE, OREGANO, RED_PEPPER_FLAKES, BASIL_LEAVES, SUN_DRIED_TOMATOES } = require('./ingredients');
 
 const SUN_DRIED_TOMATO_CREAM_SAUCE = 'Sun-Dried Tomato Cream Sauce';
@@ -34,7 +34,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CHICKEN],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '30 m',
     websites: [

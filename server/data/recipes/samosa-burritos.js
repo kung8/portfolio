@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { TORTILLA, CAULIFLOWER, POTATOES, RED_ONION, JALAPENO_PEPPERS, GARLIC, CUMIN, CORIANDER, GARAM_MASALA, FENNEL_SEEDS, TURMERIC, LEMON_JUICE, FROZEN_PEAS, SEA_SALT, BLACK_PEPPER, GINGER_PUREE, VEGETABLE_BROTH, GINGER, GREEK_YOGURT, MINT_LEAVES, CILANTRO, MAPLE_SYRUP, LIME_JUICE } = require('./ingredients');
 
 const VEGETABLES_SECTION = 'Vegetables';
@@ -24,7 +24,7 @@ module.exports = {
     genre: [GENRES.INDIAN],
     method: [METHODS.BAKE],
     type: [TYPES.BURRITO],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '40 m',
     websites: [

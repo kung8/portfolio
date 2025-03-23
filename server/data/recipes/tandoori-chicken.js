@@ -8,7 +8,7 @@ const tandoori7 = '../assets/Products/tandoori-chicken-7.jpeg';
 const tandoori8 = '../assets/Products/tandoori-chicken-8.jpeg';
 const tandoori9 = '../assets/Products/tandoori-chicken-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { GREEK_YOGURT, GINGER_GARLIC_PASTE, GARAM_MASALA, CHILI_POWDER, BLACK_PEPPER, CORIANDER, SALT, TURMERIC, FENUGREEK_LEAVES, LEMON_JUICE, MUSTARD_OIL, CORIANDER_POWDER, BONELESS_AND_SKINLESS_CHICKEN_THIGH } = require('./ingredients');
 
 const CHICKEN_MARINADE = 'Chicken Marinade';
@@ -29,7 +29,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '40 m',
     websites: [

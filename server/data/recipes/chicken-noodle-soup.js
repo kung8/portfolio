@@ -1,5 +1,5 @@
 const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     OLIVE_OIL,
@@ -26,7 +26,7 @@ module.exports = {
     method: [METHODS.BOIL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.NOODLE, TYPES.SOUP],
-    yields: '5 - 6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '6 - 8 m',
     cookTime: '40 - 45 m',
     ingredients: [

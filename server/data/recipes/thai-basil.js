@@ -7,7 +7,7 @@ const basil7 = '../assets/Products/thai-basil-7.jpeg';
 const basil8 = '../assets/Products/thai-basil-8.jpeg';
 const basil9 = '../assets/Products/thai-basil-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { CHICKEN_BROTH, OYSTER_SAUCE, LIGHT_SOY_SAUCE, FISH_SAUCE, WHITE_SUGAR, BROWN_SUGAR, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHALLOTS, GARLIC, THAI_CHILI_PEPPERS, BASIL_LEAVES, JASMINE_RICE } = require('./ingredients');
 
 module.exports = {
@@ -21,7 +21,7 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.MAIN_COURSE],
-    yields: '2 servings',
+    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '10 m',
     websites: [

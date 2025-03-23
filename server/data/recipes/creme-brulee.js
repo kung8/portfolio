@@ -15,7 +15,7 @@ const vanillaMixed = '../assets/Products/creme-brulee-vanilla-sugar-mixed.jpeg';
 const vanillaUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-unmixed.jpeg';
 const sugarYolksMixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-mixed.jpeg';
 const sugarYolksUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-unmixed.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
 const { HEAVY_CREAM, VANILLA_BEAN, EGG_YOLKS, HOT_WATER, WHITE_SUGAR } = require('./ingredients');
 
 const CREAM = 'Cream';
@@ -32,7 +32,7 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.BAKE],
     protein: [PROTEIN.EGG],
     type: [TYPES.DESSERT],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '1 h',
     websites: [

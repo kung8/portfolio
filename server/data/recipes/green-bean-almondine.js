@@ -5,7 +5,7 @@ const cooked = '../assets/Products/green-bean-almondine-cooked.jpeg';
 const bath = '../assets/Products/green-bean-almondine-ice-bath.jpeg';
 const ice = '../assets/Products/green-bean-almondine-ice-water.jpeg';
 const plate = '../assets/Products/green-bean-almondine-plate.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require('./constants');
 const {
     SALT,
     FRENCH_GREEN_BEAN,
@@ -27,7 +27,7 @@ module.exports = {
     genre: [GENRES.FRENCH],
     method: [METHODS.BOIL, METHODS.SAUTE],
     type: [TYPES.VEGETABLE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '15 m',
     websites: [

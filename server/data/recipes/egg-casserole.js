@@ -1,5 +1,5 @@
 const eggCasserole = '../assets/Products/egg-casserole.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     BREAD,
     CHEDDAR_CHEESE,
@@ -24,7 +24,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.EGG],
     type: [TYPES.BREAD, TYPES.CASSEROLE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '1 h',
     ingredients: [

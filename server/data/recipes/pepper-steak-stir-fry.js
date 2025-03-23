@@ -8,7 +8,7 @@ const pan3 = '../assets/Products/pepper-steak-stir-fry-steak-in-pan-3.jpeg';
 const pan4 = '../assets/Products/pepper-steak-stir-fry-steak-in-pan-4.jpeg';
 const veggiesPan = '../assets/Products/pepper-steak-stir-fry-veggies-in-pan.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     BEEF,
     RED_BELL_PEPPERS,
@@ -35,7 +35,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.RICE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '25 m',
     separated: true,

@@ -1,5 +1,5 @@
 const sourChicken = '../assets/Products/sour-chicken.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     KNORR_TAMARIND_SOUP_BASE,
@@ -16,7 +16,7 @@ module.exports = {
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE, TYPES.SOUP],
-    yields: '10 servings',
+    yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '1 h',
     ingredients: [

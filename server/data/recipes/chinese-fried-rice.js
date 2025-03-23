@@ -9,7 +9,7 @@ const rice8 = '../assets/Products/chinese-fried-rice-8.jpeg';
 const rice9 = '../assets/Products/chinese-fried-rice-9.jpeg';
 const rice10 = '../assets/Products/chinese-fried-rice-10.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { JASMINE_RICE, COLD_WATER, GREEN_ONIONS, CARROTS, FROZEN_CORN, FROZEN_PEAS, EGG, SALT, VEGETABLE_OIL, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, WHITE_SUGAR, CHICKEN_BOUILLON, CHINESE_SAUSAGE } = require('./ingredients');
 
 const RICE_SECTION = 'Rice';
@@ -36,7 +36,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.EGG],
     type: [TYPES.RICE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '20 m',
     websites: [

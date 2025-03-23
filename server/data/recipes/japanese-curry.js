@@ -14,7 +14,7 @@ const curry13 = '../assets/Products/japanese-curry-13.jpeg';
 const curry14 = '../assets/Products/japanese-curry-14.jpeg';
 const curry15 = '../assets/Products/japanese-curry-15.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { YELLOW_ONION, CARROTS, YUKON_GOLD_POTATOES, GINGER, GARLIC, APPLES, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BLACK_PEPPER, VEGETABLE_OIL, CHICKEN_BROTH, HONEY, LIGHT_SOY_SAUCE, KETCHUP, JAPANESE_CURRY_MIX } = require('./ingredients');
 
 const PREP_CHICKEN = 'Prep Chicken';
@@ -31,7 +31,7 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CURRY],
-    yields: '8 servings',
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '20 m',
     cookTime: '50 m',
     websites: [

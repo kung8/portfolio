@@ -5,7 +5,7 @@ const mixed = '../assets/Products/ginger-chicken-cooking-mixed.jpeg';
 const placed = '../assets/Products/ginger-chicken-placed-ginger.jpeg';
 const plated = '../assets/Products/ginger-chicken-plated.jpeg';
 const sauce = '../assets/Products/ginger-chicken-soy-sauce.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
 const {
     CHICKEN_THIGH,
     GINGER,
@@ -27,7 +27,7 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    yields: '4 servings',
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '20 m',
     ingredients: [

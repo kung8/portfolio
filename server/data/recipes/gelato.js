@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { WHOLE_MILK, EGG_YOLKS, WHITE_SUGAR, VANILLA_BEAN } = require('./ingredients');
 
 const GELATO_SECTION = 'Gelato';
@@ -16,7 +16,7 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.FREEZE],
     type: [TYPES.ICE_CREAM],
-    yields: ' servings',
+    yields: { amount: 1, unit: YIELD_UNITS.QUART },
     prepTime: '10 m',
     cookTime: '10 m',
     websites: [

@@ -3,7 +3,7 @@ const caramelized = '../assets/Products/caramelized-onion-caramelized-cooked.jpe
 const combined = '../assets/Products/caramelized-onion-combined.jpeg';
 const cooked = '../assets/Products/caramelized-onion-cooked.jpeg';
 const sliced = '../assets/Products/caramelized-onion-thinly-sliced.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
 const {
     RED_ONION,
     UNSALTED_BUTTER,
@@ -22,7 +22,7 @@ module.exports = {
     category: [CATEGORIES.TOPPING],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SAUTE],
-    yields: '6 servings',
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '2 m',
     cookTime: '15 m',
     ingredients: [

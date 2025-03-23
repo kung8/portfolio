@@ -1,5 +1,5 @@
 const egg = '../assets/Products/hard-boiled-egg.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const {
     EGG,
     SALT,
@@ -24,7 +24,7 @@ module.exports = {
     method: [METHODS.BOIL],
     protein: [PROTEIN.EGG],
     type: [TYPES.PROTEIN],
-    yields: '1 serving',
+    yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '10 m',
     separated: true,

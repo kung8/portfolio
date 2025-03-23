@@ -2,7 +2,7 @@ const plated1 = '../assets/Products/sticky-toffee-pudding-plated-1.jpeg';
 const plated2 = '../assets/Products/sticky-toffee-pudding-plated-2.jpeg';
 const plated3 = '../assets/Products/sticky-toffee-pudding-plated-3.jpeg';
 const plated4 = '../assets/Products/sticky-toffee-pudding-plated-4.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
 const { HEAVY_CREAM, UNSALTED_BUTTER, BROWN_SUGAR, VANILLA_EXTRACT, DATES, COLD_WATER, BAKING_SODA, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, ALLSPICE, NUTMEG, WHITE_SUGAR, EGG, WALNUTS } = require('./ingredients');
 
 const TOFFEE_SAUCE = 'Toffee Sauce';
@@ -19,7 +19,7 @@ module.exports = {
     genre: [GENRES.BRITISH],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT, TYPES.CAKE],
-    yields: ' servings',
+    yields: { amount: 15, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '1 h',
     websites: [

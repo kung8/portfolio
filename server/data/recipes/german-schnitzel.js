@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
 const { } = require('./ingredients');
 
 module.exports = {
@@ -14,7 +14,7 @@ module.exports = {
     method: [],
     protein: [],
     type: [],
-    yields: ' servings',
+    yields: { amount: '', unit: YIELD_UNITS.SERVING },
     prepTime: 'm',
     cookTime: 'm',
     websites: [

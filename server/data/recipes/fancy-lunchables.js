@@ -1,5 +1,5 @@
 const lunchables = '../assets/Products/fancy-lunchables.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS , YIELD_UNITS} = require("./constants");
 const { BUTTER_PICKLE_CHIPS, CHEDDAR_CHEESE, CRACKERS, COOKED_HAM, LETTUCE, ROMA_TOMATO } = require('./ingredients');
 
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],
     type: [TYPES.FINGER_FOOD],
-    yields: '1 servings',
+    yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '0 m',
     ingredients: [
