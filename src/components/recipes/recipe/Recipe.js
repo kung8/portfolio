@@ -11,20 +11,9 @@ import { AddToGroceryListModal } from './AddToGroceryListModal';
 import { GROCERY_LIST_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 import { categorizeRecipeType } from '../categorize-recipe-type';
 import { RecipeImageModal } from './RecipeImageModal';
-import { Yield } from './Yield';
-import { Appliances } from './Appliances';
-import { Supplies } from './Supplies';
-import { Directions } from './Directions';
-import { Notes } from './Notes';
-import { Figures } from './Figures';
-import { Websites } from './Websites';
-import { Ingredients } from './Ingredients';
 import { RecipeContext } from './RecipeContext';
-import { RecipeImage } from './RecipeImage';
 import { getIngredientData, handleModalClass } from '../utils';
-import { IngredientsHeader } from './IngredientsHeader';
-import { CookTime } from './CookTime';
-import { PrepTime } from './PrepTime';
+import { RecipeDetails } from './RecipeDetails';
 
 export const Recipe = ({ match }) => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -229,22 +218,7 @@ export const Recipe = ({ match }) => {
                     setSelectedIngredients,
                 }}
             >
-                {item && isLoaded ? (
-                    <div className="recipe-details">
-                        <RecipeImage />
-                        <PrepTime />
-                        <CookTime />
-                        <Yield />
-                        <Appliances />
-                        <Supplies />
-                        <IngredientsHeader />
-                        <Ingredients />
-                        <Directions />
-                        <Websites />
-                        <Notes />
-                        <Figures />
-                    </div>
-                ) : (
+                {item && isLoaded ? <RecipeDetails /> : (
                     <div className="loader-container">
                         <Loader />
                     </div>
@@ -298,9 +272,6 @@ export const Recipe = ({ match }) => {
                             }
                             return { ...item, checked: false, date, mealPlanningDateRange };
                         })];
-
-                        console.log('newIngredientsToAdd: ', newIngredientsToAdd);
-
 
                         Promise.all(newIngredientsToAdd).then((newGroceryList) => {
                             setGroceryList(newGroceryList.flat());
