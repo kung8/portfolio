@@ -1,4 +1,9 @@
-// const example = '../assets/Products/example.jpeg';
+const wings1 = '../assets/Products/cowboy-butter-chicken-wings-1.jpeg';
+const wings2 = '../assets/Products/cowboy-butter-chicken-wings-2.jpeg';
+const wings3 = '../assets/Products/cowboy-butter-chicken-wings-3.jpeg';
+const wings4 = '../assets/Products/cowboy-butter-chicken-wings-4.jpeg';
+const wings5 = '../assets/Products/cowboy-butter-chicken-wings-5.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { CHICKEN_WINGS, SALT, BLACK_PEPPER, UNSALTED_BUTTER, PARSLEY, CHIVES, GARLIC, DIJON_MUSTARD, LEMON_JUICE, SMOKED_PAPRIKA, CAYENNE_PEPPER } = require('./ingredients');
 
@@ -11,13 +16,11 @@ const PREP_COWBOY_BUTTER = 'Prep Cowboy Butter';
 const COAT_CHICKEN = 'Coat Chicken';
 
 module.exports = {
-    wip: true,
     cardName: 'Cowboy Butter Chicken Wings',
     name: 'Cowboy Butter Chicken Wings',
-    img: '',
-    recipeCredit: '',
+    img: wings5,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN, GENRES.WESTERN],
     method: [METHODS.BAKE],
@@ -51,17 +54,17 @@ module.exports = {
         { name: 'baking sheet' },
         { name: 'aluminum foil' },
         { name: 'wire rack' },
-        { name: '' },
+        { name: 'mixing bowl' },
     ],
     directions: [
         { step: 'Preheat the oven to 425ºF.', type: PREP_COOKING },
         { step: 'Line a baking sheet with aluminum foil and place a wire rack on top.', type: PREP_COOKING },
         { step: 'Pat the chicken dry with paper towels', type: COOK_CHICKEN },
         { step: 'Season the chicken with salt and pepper.', type: COOK_CHICKEN },
-        { step: 'Place chicken on the wire rack in a single layer.', type: COOK_CHICKEN },
-        { step: 'Bake the chicken until the skin is crispy and is cooked through (about 45 to 50 minutes).', type: COOK_CHICKEN },
-        { step: 'In a mixing bowl, combine the "Cowboy Butter" section ingredients.', type: PREP_COWBOY_BUTTER },
-        { step: 'Toss the chicken in the butter mixture.', type: COAT_CHICKEN },
+        { step: 'Place chicken on the wire rack in a single layer.', type: COOK_CHICKEN, img: wings1 },
+        { step: 'Bake the chicken until the skin is crispy and is cooked through (about 45 to 50 minutes).', type: COOK_CHICKEN, img: wings3 },
+        { step: 'In a mixing bowl, combine the "Cowboy Butter" section ingredients.', type: PREP_COWBOY_BUTTER, img: wings2 },
+        { step: 'Toss the chicken in the butter mixture.', type: COAT_CHICKEN, img: wings4 },
         { step: 'Serve these wings with your favorite dips and sides at your next tailgate, superbowl watch party, or any kind of party.', type: SECTIONS.SERVE },
     ]
 };
