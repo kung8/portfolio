@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { OLIVE_OIL, GROUND_BEEF, CHILI_POWDER, CUMIN, OREGANO, GARLIC_POWDER, SALT, BLACK_PEPPER, TOMATO_PASTE, WARM_WATER, FLOUR_TORTILLA, LETTUCE, MEXICAN_BLEND_CHEESE, ROMA_TOMATO, RED_ONION } = require('./ingredients');
 
 const TACO_FILLING = 'Taco Filling';
@@ -20,23 +20,23 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.TACO],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '10 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Beef Tacos', link: 'https://feelgoodfoodie.net/recipe/ground-beef-tacos-napa-cabbage-guacamole/' }
     ],
     separated: true,
     ingredients: [
-        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: TACO_FILLING },
-        { ...GROUND_BEEF, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: TACO_FILLING },
-        { ...CHILI_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
-        { ...CUMIN, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
-        { ...OREGANO, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
-        { ...GARLIC_POWDER, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
-        { ...SALT, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
-        { ...BLACK_PEPPER, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
-        { ...TOMATO_PASTE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: TACO_FILLING },
-        { ...WARM_WATER, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: TACO_FILLING },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: TACO_FILLING },
+        { ...CHILI_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...CUMIN, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...OREGANO, amount: 1/2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...GARLIC_POWDER, amount: 1/2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...SALT, amount: 1/2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...BLACK_PEPPER, amount: 1/2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...TOMATO_PASTE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TACO_FILLING },
+        { ...WARM_WATER, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TACO_FILLING },
         { ...FLOUR_TORTILLA, amount: 8, unit: '', additionalDetails: '', section: TACO_SHELLS },
         { ...LETTUCE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
         { ...MEXICAN_BLEND_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },

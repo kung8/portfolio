@@ -1,5 +1,5 @@
 const kebabs = '../assets/Products/kebabs.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     LIGHT_SOY_SAUCE,
     TERIYAKI_SAUCE,
@@ -23,16 +23,17 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.FINGER_FOOD, TYPES.PROTEIN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '25 - 30 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 180, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...TERIYAKI_SAUCE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...VEGETABLE_OIL, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...TERIYAKI_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...VEGETABLE_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
         { ...GARLIC_POWDER, amount: 1, unit: '', additionalDetails: '', optional: false },
-        { ...CHICKEN_THIGH, amount: 2, unit: UNITS.POUND, additionalDetails: '', optional: false },
+        { ...CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
         { ...RED_BELL_PEPPERS, amount: 2, unit: '', additionalDetails: '', optional: false },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: '', optional: false },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', optional: false },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
     ],

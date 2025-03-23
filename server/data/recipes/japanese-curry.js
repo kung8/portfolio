@@ -14,7 +14,7 @@ const curry13 = '../assets/Products/japanese-curry-13.jpeg';
 const curry14 = '../assets/Products/japanese-curry-14.jpeg';
 const curry15 = '../assets/Products/japanese-curry-15.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { YELLOW_ONION, CARROTS, YUKON_GOLD_POTATOES, GINGER, GARLIC, APPLES, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BLACK_PEPPER, VEGETABLE_OIL, CHICKEN_BROTH, HONEY, LIGHT_SOY_SAUCE, KETCHUP, JAPANESE_CURRY_MIX } = require('./ingredients');
 
 const PREP_CHICKEN = 'Prep Chicken';
@@ -32,27 +32,27 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CURRY],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '50 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Japanese Chicken Curry', link: 'https://www.justonecookbook.com/simple-chicken-curry/' }
     ],
     separated: true,
     ingredients: [
-        { ...YELLOW_ONION, amount: 2, unit: UNITS.LARGE, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 2, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...CARROTS, amount: 2, unit: '', additionalDetails: 'rolling wedges', section: SECTIONS.MAIN },
         { ...YUKON_GOLD_POTATOES, amount: 3, unit: '', additionalDetails: 'quartered', section: SECTIONS.MAIN },
-        { ...GINGER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'grated', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'grated', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...APPLES, amount: 1 / 2, unit: '', additionalDetails: 'peeled, cored, quartered, and grated', section: SECTIONS.MAIN },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 3 / 2, unit: UNITS.POUND, additionalDetails: 'cut diagonally into bite size', section: SECTIONS.MAIN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut diagonally into bite size', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...VEGETABLE_OIL, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...CHICKEN_BROTH, amount: 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...HONEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...KETCHUP, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...JAPANESE_CURRY_MIX, amount: 1, unit: UNITS.PACKAGE, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...VEGETABLE_OIL, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CHICKEN_BROTH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...KETCHUP, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...JAPANESE_CURRY_MIX, amount: 1, unit: INGREDIENT_UNITS.PACKAGE, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stove' },

@@ -12,7 +12,7 @@ const cookies12 = '../assets/Products/peanut-butter-cookies-12.jpeg';
 const cookies13 = '../assets/Products/peanut-butter-cookies-13.jpeg';
 const cookies14 = '../assets/Products/peanut-butter-cookies-14.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, PEANUT_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGG, BAKING_POWDER, SALT } = require('./ingredients');
 
 module.exports = {
@@ -26,22 +26,22 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.COOKIE],
     yields: { amount: 3 / 2, unit: YIELD_UNITS.DOZEN },
-    prepTime: '1 m',
-    cookTime: '10 m',
+    prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Peanut Butter Cookies', link: 'https://preppykitchen.com/peanut-butter-cookies-recipe/' }
     ],
     separated: false,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BROWN_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PEANUT_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BROWN_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PEANUT_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_POWDER, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_POWDER, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stand mixer' },

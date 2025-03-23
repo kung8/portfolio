@@ -9,7 +9,7 @@ const raw = '../assets/Products/black-pepper-chicken-raw-chicken-in-pan.jpeg';
 const sauce = '../assets/Products/black-pepper-chicken-sauce.jpeg';
 const sauted = '../assets/Products/black-pepper-chicken-sauted-fragrant.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     SHALLOTS,
@@ -37,26 +37,27 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '45 m',
-    cookTime: '20 m',
+    prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Ayam Black Pepper', link: "https://dapurmalaysia.com/resepi-ayam-black-pepper/" }
     ],
     separated: true,
     ingredients: [
-        { ...SWEET_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...OYSTER_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...SWEET_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...CHICKEN_BREAST, amount: 5, unit: '', additionalDetails: 'cubed', section: SECTIONS.MARINADE },
-        { ...VEGETABLE_OIL, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },
         { ...SHALLOTS, amount: 6, unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...GINGER, amount: 1, unit: UNITS.INCH, additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...OYSTER_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SWEET_SOY_SAUCE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COLD_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SWEET_SOY_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COLD_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...WHITE_SUGAR, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...CILANTRO, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },

@@ -2,7 +2,7 @@ const combined = '../assets/Products/caramelized-mushroom-combined.jpeg';
 const cooked = '../assets/Products/caramelized-mushroom-cooked.jpeg';
 const cooking = '../assets/Products/caramelized-mushroom-cooking.jpeg';
 const raw = '../assets/Products/caramelized-mushroom-raw.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     MUSHROOMS,
     UNSALTED_BUTTER,
@@ -22,14 +22,14 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SAUTE],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '2 m',
-    cookTime: '20 m',
+    prepTime: { amount: 2, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...MUSHROOMS, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...BROWN_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...BALSAMIC_VINEGAR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...MUSHROOMS, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...BALSAMIC_VINEGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPING },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
     ],

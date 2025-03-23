@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { WHITE_SUGAR, ALL_PURPOSE_FLOUR, COCOA_POWDER, POWDERED_SUGAR, SEMI_SWEET_CHOCOLATE_CHIPS, SEA_SALT, EGG, OLIVE_OIL, WARM_WATER, VANILLA_EXTRACT, CANOLA_OIL } = require('./ingredients');
 
 const DRY_SECTION = 'Dry';
@@ -21,24 +21,24 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.BROWNIE],
     yields: { amount: 16, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '45 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Brownies', link: 'https://www.loveandlemons.com/brownies-recipe/' }
     ],
     separated: true,
     ingredients: [
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
-        { ...COCOA_POWDER, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
-        { ...POWDERED_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
-        { ...SEA_SALT, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_SECTION },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
+        { ...COCOA_POWDER, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
+        { ...POWDERED_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
+        { ...SEA_SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_SECTION },
 
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: WET_SECTION },
-        { ...CANOLA_OIL, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: WET_SECTION },
-        { ...WARM_WATER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: WET_SECTION },
-        { ...VANILLA_EXTRACT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: WET_SECTION },
+        { ...CANOLA_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_SECTION },
+        { ...WARM_WATER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: WET_SECTION },
+        { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WET_SECTION },
     ],
     appliances: [
         { name: 'oven' },

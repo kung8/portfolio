@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { ANGEL_HAIR_PASTA, UNSALTED_BUTTER, SHRIMP, GARLIC, WHITE_WINE, BLACK_PEPPER, PARMESAN_CHEESE, PARSLEY, LEMON } = require('./ingredients');
 
 const NOODLE_SECTION = 'Noodles';
@@ -22,21 +22,21 @@ module.exports = {
     protein: [PROTEIN.SHRIMP],
     type: [TYPES.PASTA],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '15 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Shrimp Scampi', link: 'https://www.allrecipes.com/recipe/19508/shrimp-scampi/' }
     ],
     separated: true,
     ingredients: [
-        { ...ANGEL_HAIR_PASTA, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: NOODLE_SECTION },
-        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
-        { ...SHRIMP, amount: 1, unit: UNITS.POUND, additionalDetails: 'peeled and deveined', section: SAUCE_SECTION },
-        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: '', section: SAUCE_SECTION },
-        { ...WHITE_WINE, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...PARMESAN_CHEESE, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
-        { ...PARSLEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...ANGEL_HAIR_PASTA, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: NOODLE_SECTION },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
+        { ...SHRIMP, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled and deveined', section: SAUCE_SECTION },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SAUCE_SECTION },
+        { ...WHITE_WINE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...PARMESAN_CHEESE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
+        { ...PARSLEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...LEMON, amount: 1, unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

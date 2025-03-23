@@ -12,7 +12,7 @@ const unmixed = '../assets/Products/caramel-apples-sauce-unmixed.jpeg';
 const skewered = '../assets/Products/caramel-apples-skewered.jpeg';
 const thickened = '../assets/Products/caramel-apples-thickened-sauce.jpeg';
 const wax = '../assets/Products/caramel-apples-wax-free-apples.jpeg';
-const { GENRES, METHODS, TYPES, CATEGORIES, SECTIONS , UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, TYPES, CATEGORIES, SECTIONS , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { GRANNY_SMITH_APPLES, BROWN_SUGAR, SWEETENED_CONDENSED_MILK, CORN_SYRUP, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
 
 const APPLE = 'Apple';
@@ -28,19 +28,19 @@ module.exports = {
     method: [METHODS.BOIL],
     type: [TYPES.DESSERT],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '30 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Caramel Apples', link: 'https://www.allrecipes.com/recipe/228210/the-best-caramel-apples/' }
     ],
     separated: true,
     ingredients: [
         { ...GRANNY_SMITH_APPLES, amount: 8, unit: '', additionalDetails: '', section: APPLE },
-        { ...BROWN_SUGAR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: CARAMEL },
-        { ...SWEETENED_CONDENSED_MILK, amount: 14, unit: UNITS.OUNCE, additionalDetails: '', section: CARAMEL },
-        { ...CORN_SYRUP, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CARAMEL },
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CARAMEL },
-        { ...VANILLA_EXTRACT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CARAMEL },
+        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CARAMEL },
+        { ...SWEETENED_CONDENSED_MILK, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: CARAMEL },
+        { ...CORN_SYRUP, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CARAMEL },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CARAMEL },
+        { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CARAMEL },
     ],
     appliances: [
         { name: 'stove' },

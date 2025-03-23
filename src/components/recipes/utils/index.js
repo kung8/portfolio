@@ -1,5 +1,6 @@
 export * from './convert-decimal-to-fraction';
 export * from './format-ingredient-item';
+export * from './format-time';
 export * from './format-yield';
 export * from './get-greeting';
 export * from './get-ingredient-data';

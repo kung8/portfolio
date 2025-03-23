@@ -6,7 +6,7 @@ const eggs = '../assets/Products/bibimbap-eggs.jpeg';
 const marinating = '../assets/Products/bibimbap-marinating-chicken.jpeg';
 // const spinach = '../assets/Products/bibimbap-spinach.jpeg';
 const sauce = '../assets/Products/bibimbap-with-sauce.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     GROUND_BEEF,
     LIGHT_SOY_SAUCE,
@@ -41,29 +41,30 @@ module.exports = {
     protein: [PROTEIN.EGG, PROTEIN.CHICKEN],
     type: [TYPES.RICE],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '20 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Bibimbap', link: "https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/" }
     ],
     separated: true,
     ingredients: [
-        { ...GROUND_BEEF, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: BEEF },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF },
-        { ...SESAME_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF },
-        { ...BROWN_SUGAR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF },
-        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: BEEF },
-        { ...CARROTS, amount: 4, unit: UNITS.OUNCE, additionalDetails: 'matchsticks', section: VEGETABLES },
-        { ...SPINACH, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: VEGETABLES },
+        { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BEEF },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF },
+        { ...SESAME_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BEEF },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: BEEF },
+        { ...CARROTS, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'matchsticks', section: VEGETABLES },
+        { ...SPINACH, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: VEGETABLES },
         { ...CORN, amount: '', unit: '', additionalDetails: '', section: VEGETABLES },
         { ...EGG, amount: 3, unit: '', additionalDetails: '', section: EGGS_SECTION },
-        { ...GOCHUJANG_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...SESAME_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...WARM_WATER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...SESAME_SEEDS, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...WHITE_VINEGAR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
-        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: BIBIMBAP_SAUCE },
+        { ...GOCHUJANG_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...SESAME_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...WARM_WATER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...SESAME_SEEDS, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...WHITE_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BIBIMBAP_SAUCE },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: BIBIMBAP_SAUCE },
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
@@ -76,7 +77,7 @@ module.exports = {
         { name: 'serving bowl' },
     ],
     directions: [
-        { step: 'Mix the marinade ingredients.', type: BEEF },
+        { step: 'Mix the "Beef" section ingredients.', type: BEEF },
         { step: 'Marinate the beef for at least 30 minutes. You can replace this with pork, chicken, or any other protein alternative.', type: BEEF, img: marinating },
         { step: 'Over medium-high heat, cook the beef until browned then remove.', type: BEEF, img: cookingChicken },
         { step: 'To prepare the vegetable toppings, boil each of the vegetables separately until they soften/wilt.', type: VEGETABLES, img: cookedMatchsticks },

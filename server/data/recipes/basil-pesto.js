@@ -9,7 +9,7 @@ const parmesan = '../assets/Products/basil-pesto-parmesan.jpeg';
 const parmesanBlended = '../assets/Products/basil-pesto-parmesan-blended.jpeg';
 const pine = '../assets/Products/basil-pesto-pine-nuts.jpeg';
 const topped = '../assets/Products/basil-pesto-topped.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     PINE_NUTS,
     LEMON_JUICE,
@@ -34,22 +34,22 @@ module.exports = {
     protein: [PROTEIN.PINE_NUT],
     type: [TYPES.SAUCE],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '1 m',
-    cookTime: '7 m',
+    prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Pesto', link: "https://www.loveandlemons.com/pesto-recipe" }
     ],
     separated: true,
     ingredients: [
-        { ...PINE_NUTS, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...LEMON_JUICE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SEA_SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...PINE_NUTS, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SEA_SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BASIL_LEAVES, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...OLIVE_OIL, amount: 1/4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...PARMESAN_CHEESE, amount: 1/4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SPAGHETTI_NOODLES, amount: 8, unit: UNITS.OUNCE, additionalDetails: 'cooked', section: SECTIONS.SERVE },
+        { ...BASIL_LEAVES, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OLIVE_OIL, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...PARMESAN_CHEESE, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SPAGHETTI_NOODLES, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'cooked', section: SECTIONS.SERVE },
     ],
     appliances: [
         { name: 'stove' },

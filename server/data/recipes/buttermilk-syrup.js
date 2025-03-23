@@ -1,6 +1,6 @@
 const cooked = '../assets/Products/buttermilk-syrup-cooked.jpeg';
 const raw = '../assets/Products/buttermilk-syrup-raw.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     WHITE_SUGAR,
     BUTTERMILK,
@@ -20,17 +20,17 @@ module.exports = {
     method: [METHODS.BOIL],
     type: [TYPES.SAUCE],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '5 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Buttermilk Syrup', link: 'https://www.allrecipes.com/recipe/239478/grandmas-buttermilk-syrup/' }
     ],
     ingredients: [
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BUTTERMILK, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BAKING_SODA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BUTTERMILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BAKING_SODA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stove' },

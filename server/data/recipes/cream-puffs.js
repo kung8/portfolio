@@ -11,7 +11,7 @@ const plated11 = '../assets/Products/cream-puffs-plated-11.jpeg';
 const sliced2 = '../assets/Products/cream-puffs-sliced-2.jpeg';
 const vanilla = '../assets/Products/cream-puffs-vanilla-pudding-mix.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { VANILLA_INSTANT_PUDDING_MIX, HEAVY_CREAM, MILK, UNSALTED_BUTTER, COLD_WATER, SALT, ALL_PURPOSE_FLOUR, EGG, PORK_PATE } = require('./ingredients');
 
 const PUFF = 'Puff';
@@ -28,20 +28,20 @@ module.exports = {
     protein: [PROTEIN.EGG],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT, TYPES.PASTRY],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '30 m',
-    cookTime: '30 m',
+    prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Cream Puffs', link: 'https://www.allrecipes.com/recipe/15869/cream-puffs/' }
     ],
     separated: true,
     ingredients: [
-        { ...VANILLA_INSTANT_PUDDING_MIX, amount: 7, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...HEAVY_CREAM, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...MILK, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: PUFF },
-        { ...COLD_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PUFF },
-        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: PUFF },
-        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PUFF },
+        { ...VANILLA_INSTANT_PUDDING_MIX, amount: 7, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...HEAVY_CREAM, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUFF },
+        { ...COLD_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUFF },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PUFF },
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUFF },
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: PUFF },
     ],
     appliances: [

@@ -9,7 +9,7 @@ const potatoes8 = '../assets/Products/mash-potatoes-8.jpeg';
 const potatoes9 = '../assets/Products/mash-potatoes-9.jpeg';
 const potatoes10 = '../assets/Products/mash-potatoes-10.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { YUKON_GOLD_POTATOES, GARLIC, UNSALTED_BUTTER, MILK, SALT, BLACK_PEPPER, GREEN_ONIONS, SOUR_CREAM, CHEDDAR_CHEESE, CHIVES } = require('./ingredients');
 
 module.exports = {
@@ -22,17 +22,17 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.MASH],
     type: [TYPES.SIDE_DISH],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '20 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Mash Potatoes', link: 'https://www.spendwithpennies.com/how-to-make-mashed-potatoes/' }
     ],
     separated: true,
     ingredients: [
-        { ...YUKON_GOLD_POTATOES, amount: 4, unit: UNITS.POUND, additionalDetails: 'peeled and quartered', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { ...MILK, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YUKON_GOLD_POTATOES, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled and quartered', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.TOPPINGS },

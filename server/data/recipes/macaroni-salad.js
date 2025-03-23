@@ -1,5 +1,5 @@
 const macaroni = '../assets/Products/macaroni-salad.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     ELBOW_MACARONI,
     MAYONNAISE,
@@ -24,18 +24,18 @@ module.exports = {
     method: [METHODS.BOIL],
     type: [TYPES.NOODLE],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '10 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...ELBOW_MACARONI, amount: 4, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...MAYONNAISE, amount: 1, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...WHITE_VINEGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...WHITE_SUGAR, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...YELLOW_MUSTARD, amount: 5 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...SALT, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: 'diced', optional: false },
-        { ...CELERY, amount: 2, unit: UNITS.STALK, additionalDetails: 'sliced', optional: false },
+        { ...ELBOW_MACARONI, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...MAYONNAISE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...WHITE_VINEGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...WHITE_SUGAR, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...YELLOW_MUSTARD, amount: 5 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...SALT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', optional: false },
+        { ...CELERY, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: 'sliced', optional: false },
         { ...GREEN_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', optional: false },
     ],
     appliances: [

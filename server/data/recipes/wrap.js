@@ -1,5 +1,5 @@
 const wraps = '../assets/Products/wraps.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     CHEDDAR_CHEESE,
     COOKED_HAM,
@@ -19,8 +19,8 @@ module.exports = {
     method: [METHODS.RAW],
     type: [TYPES.WRAP],
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
-    prepTime: '1 m',
-    cookTime: '2 m',
+    prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 2, unit: TIME_UNITS.MINUTE },
     ingredients: [
         { ...TORTILLA, amount: 1, unit: '', additionalDetails: '', optional: false },
         { ...COOKED_HAM, amount: 4, unit: '', additionalDetails: 'preferred', optional: false },

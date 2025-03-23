@@ -5,7 +5,7 @@ const oil = '../assets/Products/baked-breaded-chicken-oil.jpeg';
 const plated = '../assets/Products/baked-breaded-chicken-plated.jpeg';
 const seasoned = '../assets/Products/baked-breaded-chicken-seasoned.jpeg';
 const full = '../assets/Products/basil-pesto-meal-plated.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     BREADCRUMBS,
     PANKO_BREADCRUMBS,
@@ -35,24 +35,24 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '8 m',
-    cookTime: '30 m',
+    prepTime: { amount: 8, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Baked Breaded Chicken', link: "https://www.eazypeazymealz.com/baked-breaded-chicken/" }
     ],
     separated: true,
     ingredients: [
-        { ...BREADCRUMBS, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: BREADING },
-        { ...PANKO_BREADCRUMBS, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: BREADING },
-        { ...PARMESAN_CHEESE, amount: 2/3, unit: UNITS.CUP, additionalDetails: '', section: BREADING },
-        { ...BASIL, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BREADING },
-        { ...OREGANO, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BREADING },
-        { ...ONION_POWDER, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: BREADING },
-        { ...BLACK_PEPPER, amount: 1/4, unit: UNITS.TEASPOON, additionalDetails: '', section: BREADING },
-        { ...OLIVE_OIL, amount: 1/4, unit: UNITS.CUP, additionalDetails: '', section: DREDGING },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: DREDGING },
-        { ...PAPRIKA, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: DREDGING },
-        { ...CHICKEN_BREAST, amount: 6, unit: UNITS.PIECE, additionalDetails: 'halved', section: SECTIONS.MAIN },
+        { ...BREADCRUMBS, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BREADING },
+        { ...PANKO_BREADCRUMBS, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BREADING },
+        { ...PARMESAN_CHEESE, amount: 2/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BREADING },
+        { ...BASIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BREADING },
+        { ...OREGANO, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BREADING },
+        { ...ONION_POWDER, amount: 1/2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BREADING },
+        { ...BLACK_PEPPER, amount: 1/4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BREADING },
+        { ...OLIVE_OIL, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DREDGING },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: DREDGING },
+        { ...PAPRIKA, amount: 1/2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DREDGING },
+        { ...CHICKEN_BREAST, amount: 6, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'halved', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],

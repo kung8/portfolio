@@ -22,7 +22,7 @@ const icing2 = '../assets/Products/sugar-cookies-icing-2.jpeg';
 const icing3 = '../assets/Products/sugar-cookies-icing-3.jpeg';
 const icing4 = '../assets/Products/sugar-cookies-icing-4.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, WHITE_SUGAR, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, SALT, BAKING_SODA, ALMOND_EXTRACT, SPRINKLES, CONFECTIONERS_SUGAR, MERINGUE_POWDER, ROOM_TEMPERATURE_WATER, CRYSTAL_SUGAR } = require('./ingredients');
 
 const DRY_INGREDIENTS = 'Dry Ingredients';
@@ -41,25 +41,25 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.COOKIE],
     yields: { amount: 3, unit: YIELD_UNITS.DOZEN },
-    prepTime: '2 h 30 m',
-    cookTime: '12 m',
+    prepTime: { amount: 150, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Sugar Cookies', link: 'https://sallysbakingaddiction.com/best-sugar-cookies/' },
         { label: 'Royal Icing', link: 'https://sallysbakingaddiction.com/royal-icing/' },
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...BAKING_SODA, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...UNSALTED_BUTTER, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: WET_BATTER },
-        { ...WHITE_SUGAR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: WET_BATTER },
+        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_INGREDIENTS },
+        { ...BAKING_SODA, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
+        { ...UNSALTED_BUTTER, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_BATTER },
+        { ...WHITE_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_BATTER },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: WET_BATTER },
-        { ...VANILLA_EXTRACT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: WET_BATTER },
-        { ...ALMOND_EXTRACT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: WET_BATTER },
-        { ...CONFECTIONERS_SUGAR, amount: 4, unit: UNITS.CUP, additionalDetails: '', section: ROYAL_ICING },
-        { ...MERINGUE_POWDER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: ROYAL_ICING },
-        { ...ROOM_TEMPERATURE_WATER, amount: 10, unit: UNITS.TABLESPOON, additionalDetails: '', section: ROYAL_ICING },
+        { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WET_BATTER },
+        { ...ALMOND_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WET_BATTER },
+        { ...CONFECTIONERS_SUGAR, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ROYAL_ICING },
+        { ...MERINGUE_POWDER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: ROYAL_ICING },
+        { ...ROOM_TEMPERATURE_WATER, amount: 10, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: ROYAL_ICING },
         { ...SPRINKLES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DECORATING },
         { ...CRYSTAL_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DECORATING },
     ],

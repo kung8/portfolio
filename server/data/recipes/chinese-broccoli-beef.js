@@ -9,7 +9,7 @@ const marinating = '../assets/Products/broccoli-beef-marinating-beef.jpeg';
 const thickened = '../assets/Products/broccoli-beef-sauce-thickened.jpeg';
 const sauce = '../assets/Products/broccoli-beef-sauce.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     BAKING_SODA,
     BEEF,
@@ -41,29 +41,30 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.STIR_FRY],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '30 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Broccoli Beef', link: "https://www.instagram.com/leahscohen/reel/C1a15_1OgWY/" }
     ],
     separated: true,
     ingredients: [
-        { ...BEEF, amount: 1, unit: UNITS.POUND, additionalDetails: 'sliced', section: BEEF_SECTION },
-        { ...WARM_WATER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
-        { ...SHAOXING_WINE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF_SECTION },
-        { ...CORNSTARCH, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
-        { ...BAKING_SODA, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF_SECTION },
-        { ...VEGETABLE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHITE_SUGAR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...CORNSTARCH, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SESAME_OIL, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BROCCOLI, amount: 2, unit: UNITS.HEAD, additionalDetails: 'cut into florets', section: SECTIONS.MAIN },
-        { ...GINGER, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 6, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: BEEF_SECTION },
+        { ...WARM_WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...SHAOXING_WINE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...CORNSTARCH, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...BAKING_SODA, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WARM_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CORNSTARCH, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SESAME_OIL, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROCCOLI, amount: 2, unit: INGREDIENT_UNITS.HEAD, additionalDetails: 'cut into florets', section: SECTIONS.MAIN },
+        { ...GINGER, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 6, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     appliances: [

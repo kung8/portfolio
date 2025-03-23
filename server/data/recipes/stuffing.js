@@ -10,7 +10,7 @@ const stuffing13 = '../assets/Products/stuffing-13.jpeg';
 const stuffing14 = '../assets/Products/stuffing-14.jpeg';
 const stuffing15 = '../assets/Products/stuffing-15.jpeg';
 const stuffing16 = '../assets/Products/stuffing-16.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BREAD, UNSALTED_BUTTER, SWEET_ONION, CELERY, GARLIC, SALT, BLACK_PEPPER, FRESH_SAGE, FRESH_ROSEMARY, PARSLEY, CHICKEN_BROTH, EGG } = require('./ingredients');
 
 module.exports = {
@@ -23,24 +23,24 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.SIDE_DISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '45 m',
-    cookTime: '50 m',
+    prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Stuffing', link: 'https://www.howsweeteats.com/2020/11/best-stuffing-recipe/' }
     ],
     separated: false,
     ingredients: [
-        { ...BREAD, amount: 24, unit: UNITS.OUNCE, additionalDetails: 'cubed', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SWEET_ONION, amount: 3, unit: UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...CELERY, amount: 2, unit: UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 6, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...FRESH_SAGE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...FRESH_ROSEMARY, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...PARSLEY, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...CHICKEN_BROTH, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BREAD, amount: 24, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'cubed', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SWEET_ONION, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...CELERY, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 6, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...FRESH_SAGE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...FRESH_ROSEMARY, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...PARSLEY, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...CHICKEN_BROTH, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [

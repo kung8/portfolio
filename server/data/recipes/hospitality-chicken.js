@@ -1,5 +1,5 @@
 const hospitalityChicken = '../assets/Products/hospitality-chicken.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     MCCORMICK_SEASONING_PACKET,
@@ -19,14 +19,15 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE, TYPES.PROTEIN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '25 - 40 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...CHICKEN_THIGH, amount: 5, unit: UNITS.POUND, additionalDetails: '', optional: false },
+        { ...CHICKEN_THIGH, amount: 5, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
         { ...MCCORMICK_SEASONING_PACKET, amount: 1, unit: '', additionalDetails: '', optional: false },
-        { ...SNOW_PEAS, amount: 1, unit: UNITS.POUND, additionalDetails: '', optional: false },
-        { ...CARROT_CHIPS, amount: 1, unit: UNITS.POUND, additionalDetails: '', optional: false },
-        { ...OLIVE_OIL, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...SNOW_PEAS, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
+        { ...CARROT_CHIPS, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'air fryer' },

@@ -14,7 +14,7 @@ const walnuts = '../assets/Products/carrot-cake-walnuts.jpeg';
 const side = '../assets/Products/carrot-cake-plated-side.jpeg';
 const zoomed = '../assets/Products/carrot-cake-plated-zoomed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BROWN_SUGAR, CARROTS, EGG, WHITE_SUGAR, VEGETABLE_OIL, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, CINNAMON, BAKING_SODA, SALT, BAKING_POWDER, CREAM_CHEESE, UNSALTED_BUTTER, POWDERED_SUGAR, WALNUTS } = require('./ingredients');
 
 const CARROT_MIXTURE = 'Carrot Mixture';
@@ -33,31 +33,31 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT, TYPES.CAKE],
     yields: { amount: 16, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '50 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Carrot Cake', link: "https://www.allrecipes.com/recipe/17393/best-carrot-cake-ever/" },
         { label: 'Frosting', link: "https://www.inspiredtaste.net/25753/carrot-cake-recipe/" },
     ],
     separated: true,
     ingredients: [
-        { ...CARROTS, amount: 6, unit: UNITS.CUP, additionalDetails: 'freshly grated', section: CARROT_MIXTURE },
-        { ...BROWN_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CARROT_MIXTURE },
+        { ...CARROTS, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'freshly grated', section: CARROT_MIXTURE },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CARROT_MIXTURE },
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: CAKE },
-        { ...WHITE_SUGAR, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: CAKE },
-        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CAKE },
-        { ...VANILLA_EXTRACT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CAKE },
-        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: CAKE },
-        { ...CINNAMON, amount: 4, unit: UNITS.TEASPOON, additionalDetails: '', section: CAKE },
-        { ...BAKING_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CAKE },
-        { ...BAKING_SODA, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CAKE },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: CAKE },
-        { ...WALNUTS, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CAKE },
-        { ...CREAM_CHEESE, amount: 8, unit: UNITS.OUNCE, additionalDetails: 'softened', section: FROSTING },
-        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: 'softened', section: FROSTING },
-        { ...POWDERED_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: FROSTING },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: FROSTING },
-        { ...WALNUTS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: ASSEMBLING },
+        { ...WHITE_SUGAR, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CAKE },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CAKE },
+        { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CAKE },
+        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CAKE },
+        { ...CINNAMON, amount: 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CAKE },
+        { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CAKE },
+        { ...BAKING_SODA, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CAKE },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CAKE },
+        { ...WALNUTS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CAKE },
+        { ...CREAM_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'softened', section: FROSTING },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'softened', section: FROSTING },
+        { ...POWDERED_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FROSTING },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FROSTING },
+        { ...WALNUTS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ASSEMBLING },
     ],
     appliances: [
         { name: 'oven' },

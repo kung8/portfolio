@@ -6,7 +6,7 @@ const karaage5 = '../assets/Products/karaage-5.jpeg';
 const karaage6 = '../assets/Products/karaage-6.jpeg';
 const karaage7 = '../assets/Products/karaage-7.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, SALT, BLACK_PEPPER, GINGER, GARLIC, LIGHT_SOY_SAUCE, VEGETABLE_OIL, POTATO_STARCH, ALL_PURPOSE_FLOUR, LEMON, KEWPIE_MAYONNAISE, MIRIN, EGG, WARM_WATER } = require('./ingredients');
 
 const ZAKU_ZAKU_BREADCRUMBS = 'Zaku Zaku Breadcrumbs';
@@ -31,25 +31,25 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '15 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Karaage', link: 'https://www.youtube.com/watch?feature=shared&v=COAX5gkZZ74' }
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 2, unit: UNITS.POUND, additionalDetails: 'cut into 2-inch pieces against the grain', section: SECTIONS.CHICKEN },
-        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...LIGHT_SOY_SAUCE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...MIRIN, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...GINGER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'minced with juice', section: SECTIONS.MARINADE },
-        { ...GARLIC, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'minced', section: SECTIONS.MARINADE },
-        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'to taste', section: SECTIONS.MARINADE },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2-inch pieces against the grain', section: SECTIONS.CHICKEN },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...LIGHT_SOY_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...MIRIN, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced with juice', section: SECTIONS.MARINADE },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', section: SECTIONS.MARINADE },
+        { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', section: SECTIONS.MARINADE },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
 
-        { ...POTATO_STARCH, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: ZAKU_ZAKU_BREADCRUMBS },
-        { ...WARM_WATER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: ZAKU_ZAKU_BREADCRUMBS },
+        { ...POTATO_STARCH, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ZAKU_ZAKU_BREADCRUMBS },
+        { ...WARM_WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ZAKU_ZAKU_BREADCRUMBS },
 
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: DEEP_FRY },
         { ...LEMON, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },

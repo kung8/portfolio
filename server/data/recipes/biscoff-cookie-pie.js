@@ -5,7 +5,7 @@ const pie4 = '../assets/Products/biscoff-cookie-pie-4.jpeg';
 const pie5 = '../assets/Products/biscoff-cookie-pie-5.jpeg';
 const pie6 = '../assets/Products/biscoff-cookie-pie-6.jpeg';
 const pie7 = '../assets/Products/biscoff-cookie-pie-7.jpeg'; // TODO: get a photo of the plated pie
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BISCOFF_COOKIES, UNSALTED_BUTTER, BISCOFF_BUTTER, WHIPPED_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, VANILLA_EXTRACT, WHITE_SUGAR, CREAM_CHEESE, SALT, COOKIE_BUTTER } = require('./ingredients');
 
 const CHOCOLATE_GANACHE = 'Chocolate Ganache';
@@ -24,8 +24,7 @@ module.exports = {
     // protein: [],
     type: [TYPES.PIE],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
-    prepTime: '30 m',
-    cookTime: '0 m',
+    prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Biscoff Pie', link: 'https://wildwildwhisk.com/cookie-butter-pie-pops' },
         // { label: 'Biscoff Pie', link: 'https://www.crazyforcrust.com/frozen-biscoff-pie/' }
@@ -33,23 +32,23 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...BISCOFF_COOKIES, amount: 30, unit: '', additionalDetails: '', section: SECTIONS.CRUST },
-        { ...SALT, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.CRUST },
-        { ...UNSALTED_BUTTER, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.CRUST },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.CRUST },
+        { ...UNSALTED_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.CRUST },
 
-        { ...WHIPPED_CREAM, amount: 3/4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.SPLASH, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CREAM_CHEESE, amount: 6, unit: UNITS.OUNCE, additionalDetails: 'room temperature', section: SECTIONS.FILLING },
-        { ...BISCOFF_BUTTER, amount: 3/4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WHIPPED_CREAM, amount: 3/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.SPLASH, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CREAM_CHEESE, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'room temperature', section: SECTIONS.FILLING },
+        { ...BISCOFF_BUTTER, amount: 3/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
 
-        { ...WHIPPED_CREAM, amount: 1/4, unit: UNITS.CUP, additionalDetails: '', section: CHOCOLATE_GANACHE },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 2/3, unit: UNITS.CUP, additionalDetails: '', section: CHOCOLATE_GANACHE },
+        { ...WHIPPED_CREAM, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHOCOLATE_GANACHE },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 2/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHOCOLATE_GANACHE },
 
-        { ...COOKIE_BUTTER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: COOKIE_BUTTER_DRIZZLE },
+        { ...COOKIE_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: COOKIE_BUTTER_DRIZZLE },
 
-        { ...WHIPPED_CREAM, amount: 1/2, unit: UNITS.CUP, additionalDetails: 'crushed', optional: true, section: WHIPPED_CREAM },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.SPLASH, additionalDetails: '', optional: true, section: WHIPPED_CREAM },
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: true, section: WHIPPED_CREAM },
+        { ...WHIPPED_CREAM, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed', optional: true, section: WHIPPED_CREAM },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.SPLASH, additionalDetails: '', optional: true, section: WHIPPED_CREAM },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: true, section: WHIPPED_CREAM },
 
         { ...BISCOFF_COOKIES, amount: '', unit: '', additionalDetails: 'crushed', optional: true, section: SECTIONS.TOPPINGS },
     ],

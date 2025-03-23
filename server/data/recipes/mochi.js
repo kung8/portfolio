@@ -6,7 +6,7 @@ const mochi6 = '../assets/Products/mochi-6.jpeg';
 const mochi8 = '../assets/Products/mochi-8.jpeg';
 const mochi9 = '../assets/Products/mochi-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { WHITE_SUGAR, COLD_WATER, COCONUT_MILK, POTATO_STARCH, MOCHIKO, FOOD_COLORING } = require('./ingredients');
 
 const MOCHI = 'Mochi';
@@ -23,18 +23,18 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
     yields: { amount: 24, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '1 hr',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Mochi', link: 'https://www.mochimommy.com/easy-homemade-mochi/' }
     ],
     separated: true,
     ingredients: [
-        { ...MOCHIKO, amount: 7 / 4, unit: UNITS.CUP, additionalDetails: '', section: MOCHI },
-        { ...WHITE_SUGAR, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: MOCHI },
-        { ...COLD_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: MOCHI },
-        { ...COCONUT_MILK, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: MOCHI },
-        { ...FOOD_COLORING, amount: 1, unit: UNITS.DROP, additionalDetails: 'preferred color', section: MOCHI },
+        { ...MOCHIKO, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MOCHI },
+        { ...WHITE_SUGAR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MOCHI },
+        { ...COLD_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MOCHI },
+        { ...COCONUT_MILK, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MOCHI },
+        { ...FOOD_COLORING, amount: 1, unit: INGREDIENT_UNITS.DROP, additionalDetails: 'preferred color', section: MOCHI },
         { ...POTATO_STARCH, amount: '', unit: '', additionalDetails: 'for dusting', section: DUSTING },
     ],
     appliances: [

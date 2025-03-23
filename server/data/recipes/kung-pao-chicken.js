@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CORNSTARCH, LIGHT_SOY_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, DARK_SOY_SAUCE, CHICKEN_BROTH, BALSAMIC_VINEGAR, HOISIN_SAUCE, WHITE_SUGAR, CHILI_PEPPERS, GREEN_BELL_PEPPERS, RED_BELL_PEPPERS, GINGER, GARLIC, GREEN_ONIONS, UNSALTED_PEANUTS, SESAME_SEEDS } = require('./ingredients');
 
 const CHICKEN_MARINADE = 'Chicken Marinade';
@@ -19,38 +19,39 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SIDE_DISH, TYPES.MAIN_COURSE],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '15 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Kung Pao Chicken', link: 'https://natashaskitchen.com/kung-pao-chicken/' }
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3 / 2, unit: UNITS.POUND, additionalDetails: 'cut into 1-inch pieces', section: CHICKEN_MARINADE },
-        { ...CORNSTARCH, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_MARINADE },
-        { ...LIGHT_SOY_SAUCE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_MARINADE },
-        { ...SHAOXING_WINE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_MARINADE },
-        { ...VEGETABLE_OIL, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_MARINADE },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1-inch pieces', section: CHICKEN_MARINADE },
+        { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_MARINADE },
+        { ...LIGHT_SOY_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_MARINADE },
+        { ...SHAOXING_WINE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_MARINADE },
+        { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_MARINADE },
 
-        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: KUNG_PAO_SAUCE },
-        { ...DARK_SOY_SAUCE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
-        { ...CHICKEN_BROTH, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: KUNG_PAO_SAUCE },
-        { ...BALSAMIC_VINEGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
-        { ...SHAOXING_WINE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
-        { ...HOISIN_SAUCE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
-        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: KUNG_PAO_SAUCE },
+        { ...DARK_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
+        { ...CHICKEN_BROTH, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: KUNG_PAO_SAUCE },
+        { ...BALSAMIC_VINEGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
+        { ...SHAOXING_WINE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
+        { ...HOISIN_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
 
-        { ...VEGETABLE_OIL, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: 'for frying', section: STIR_FRY },
+        { ...VEGETABLE_OIL, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'for frying', section: STIR_FRY },
         { ...CHILI_PEPPERS, amount: 6, unit: '', additionalDetails: 'roughly chopped', section: STIR_FRY },
         { ...GREEN_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'chopped', section: STIR_FRY },
         { ...RED_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'chopped', section: STIR_FRY },
-        { ...GINGER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'minced', section: STIR_FRY },
-        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', section: STIR_FRY },
+        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: STIR_FRY },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: STIR_FRY },
 
         { ...GREEN_ONIONS, amount: 6, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...UNSALTED_PEANUTS, amount: '', unit: '', additionalDetails: 'roasted', section: SECTIONS.TOPPINGS },
-        { ...SESAME_SEEDS, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...SESAME_SEEDS, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

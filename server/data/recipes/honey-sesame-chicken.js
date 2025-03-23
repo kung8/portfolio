@@ -8,7 +8,7 @@ const sesame7 = '../assets/Products/honey-sesame-chicken-7.jpeg';
 const sesame8 = '../assets/Products/honey-sesame-chicken-8.jpeg';
 const sesame9 = '../assets/Products/honey-sesame-chicken-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGG, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, CORNSTARCH, VEGETABLE_OIL, GARLIC, HONEY, LIGHT_SOY_SAUCE, KETCHUP, BROWN_SUGAR, RICE_WINE_VINEGAR, SESAME_OIL, GREEN_ONIONS, SESAME_SEEDS } = require('./ingredients');
 
 const DEEP_FRY = 'Deep Fry';
@@ -28,8 +28,8 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SIDE_DISH, TYPES.MAIN_COURSE],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '20 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Honey Sesame Chicken', link: 'https://www.dinneratthezoo.com/lighter-honey-sesame-chicken/' }
     ],
@@ -39,24 +39,24 @@ module.exports = {
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: EGG_DREDGE },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: EGG_DREDGE },
 
-        { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: FLOUR_DREDGE },
-        { ...CORNSTARCH, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: FLOUR_DREDGE },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FLOUR_DREDGE },
+        { ...CORNSTARCH, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FLOUR_DREDGE },
 
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3 / 2, unit: UNITS.POUND, additionalDetails: 'cut into 1 inch pieces', section: DEEP_FRY },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1 inch pieces', section: DEEP_FRY },
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: DEEP_FRY },
 
-        { ...HONEY, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: HONEY_SESAME_SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: HONEY_SESAME_SAUCE },
-        { ...KETCHUP, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
-        { ...BROWN_SUGAR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
-        { ...RICE_WINE_VINEGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
-        { ...SESAME_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
-        { ...CORNSTARCH, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
-        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
-        { ...GARLIC, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'minced', section: HONEY_SESAME_SAUCE },
+        { ...HONEY, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: HONEY_SESAME_SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: HONEY_SESAME_SAUCE },
+        { ...KETCHUP, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
+        { ...BROWN_SUGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
+        { ...RICE_WINE_VINEGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
+        { ...SESAME_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
+        { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: HONEY_SESAME_SAUCE },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', section: HONEY_SESAME_SAUCE },
 
-        { ...SESAME_SEEDS, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...GREEN_ONIONS, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...SESAME_SEEDS, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...GREEN_ONIONS, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

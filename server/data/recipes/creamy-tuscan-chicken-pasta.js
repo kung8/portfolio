@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, UNSALTED_BUTTER, GARLIC, SUN_DRIED_TOMATOES, ITALIAN_SEASONING, HEAVY_CREAM, MILK, PARMESAN_CHEESE, BABY_SPINACH, PENNE } = require('./ingredients');
 
 const CHICKEN_SECTION = 'Chicken';
@@ -24,29 +24,29 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PASTA],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '20 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Creamy Tuscan Chicken Pasta', link: 'https://cravinghomecooked.com/creamy-tuscan-chicken-pasta/' }
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: UNITS.POUND, additionalDetails: '', section: CHICKEN_SECTION },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SECTION },
-        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SECTION },
-        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_SECTION },
 
-        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SAUCE_SECTION },
-        { ...SUN_DRIED_TOMATOES, amount: 1, unit: UNITS.CUP, additionalDetails: 'drained', section: SAUCE_SECTION },
-        { ...ITALIAN_SEASONING, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SAUCE_SECTION },
+        { ...SUN_DRIED_TOMATOES, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'drained', section: SAUCE_SECTION },
+        { ...ITALIAN_SEASONING, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
 
-        { ...HEAVY_CREAM, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PASTA_SECTION },
-        { ...MILK, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: PASTA_SECTION },
-        { ...PARMESAN_CHEESE, amount: 1, unit: UNITS.CUP, additionalDetails: 'grated', section: PASTA_SECTION },
-        { ...PENNE, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: PASTA_SECTION },
+        { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PASTA_SECTION },
+        { ...MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PASTA_SECTION },
+        { ...PARMESAN_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: PASTA_SECTION },
+        { ...PENNE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PASTA_SECTION },
 
-        { ...BABY_SPINACH, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...BABY_SPINACH, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

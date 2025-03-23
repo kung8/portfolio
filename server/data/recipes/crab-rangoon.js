@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { } = require('./ingredients');
 
 module.exports = {
@@ -16,8 +16,8 @@ module.exports = {
     protein: [],
     type: [],
     yields: { amount: '', unit: YIELD_UNITS.SERVING },
-    prepTime: 'm',
-    cookTime: 'm',
+    prepTime: { amount: '', unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: '', unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Crab Rangoon', link: 'https://recipesown.com/crab-rangoon-bombs-recipe/?fbclid=IwY2xjawHkXj5leHRuA2FlbQIxMQABHW6MmH3u3sZrK4dRskpVDYuPDXHHzA_GVRLrcxYhFFtTUsHT3ELRnVuneg_aem_rmkFE7uWsjW5_ZB-DT6ovA' }
     ],

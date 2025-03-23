@@ -12,7 +12,7 @@ const simmering = '../assets/Products/indian-butter-chicken-simmering.jpeg';
 const spices = '../assets/Products/indian-butter-chicken-spices.jpeg';
 const paste = '../assets/Products/indian-butter-chicken-tomato-paste.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     VEGETABLE_OIL,
     UNSALTED_BUTTER,
@@ -46,23 +46,23 @@ module.exports = {
         { label: 'Butter Chicken', link: "https://gimmedelicious.com/easy-20-minute-butter-chicken/" }
     ],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '12 - 15 m',
-    cookTime: '25 - 30 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: 'diced', optional: false },
-        { ...GINGER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'minced', optional: false },
-        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', optional: false },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: UNITS.POUND, additionalDetails: '1/2" pieces', optional: false },
-        { ...TOMATO_PASTE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...GARAM_MASALA, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...CHILI_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...MUSTARD_SEED, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...CUMIN, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'to taste', optional: false },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: 'to taste', optional: false },
-        { ...HEAVY_CREAM, amount: 1, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', optional: false },
+        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', optional: false },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', optional: false },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '1/2" pieces', optional: false },
+        { ...TOMATO_PASTE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...GARAM_MASALA, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...CHILI_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...MUSTARD_SEED, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...CUMIN, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', optional: false },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', optional: false },
+        { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: 'cooked', optional: false },
     ],
     appliances: [

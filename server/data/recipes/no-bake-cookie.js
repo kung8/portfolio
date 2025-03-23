@@ -3,7 +3,7 @@ const melted = '../assets/Products/no-bake-cookie-melted.jpeg';
 const oat = '../assets/Products/no-bake-cookie-oat.jpeg';
 const all = '../assets/Products/no-bake-cookie-all.jpeg';
 const finished = '../assets/Products/no-bake-cookie-finished.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     UNSALTED_BUTTER,
     WHITE_SUGAR,
@@ -24,17 +24,17 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.PEANUT],
     yields: { amount: 32, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '10 m',
-    waitTime: '30 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 7 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COCOA_POWDER, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MILK, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PEANUT_BUTTER, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...STEEL_OATS, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COCOA_POWDER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PEANUT_BUTTER, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...STEEL_OATS, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

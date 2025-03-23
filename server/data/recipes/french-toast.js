@@ -6,7 +6,7 @@ const frenchToast5 = '../assets/Products/french-toast-5.jpeg';
 const frenchToast6 = '../assets/Products/french-toast-6.jpeg';
 const frenchToast7 = '../assets/Products/french-toast-7.jpeg';
 const frenchToast8 = '../assets/Products/french-toast-8.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     EGG,
     VANILLA_EXTRACT,
@@ -26,13 +26,13 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     type: [TYPES.BREAD],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '8 - 10 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     ingredients: [
         { ...EGG, amount: 2, unit: '', additionalDetails: '', optional: false },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...CINNAMON, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...MILK, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...CINNAMON, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...MILK, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
         { ...BREAD, amount: 8, unit: '', additionalDetails: '', optional: false },
         { ...UNSALTED_BUTTER, amount: '', unit: '', additionalDetails: 'for cooking', optional: false },
     ],

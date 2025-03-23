@@ -25,7 +25,7 @@ const kolaches24 = '../assets/Products/kolaches-24.jpeg';
 const kolaches25 = '../assets/Products/kolaches-25.jpeg';
 const kolaches26 = '../assets/Products/kolaches-26.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { YEAST, WHITE_SUGAR, ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, EGG_YOLKS, SALT, CREAM_CHEESE, POWDERED_SUGAR, WHOLE_MILK, CHERRIES, COLD_WATER, LEMON_JUICE, LEMON_ZEST } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
@@ -53,41 +53,41 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.PASTRY],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
-    prepTime: '50 m',
-    cookTime: '20 m',
-    waitTime: '2 h 15 m',
+    prepTime: { amount: 50, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 135, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Cherry and Cream Cheese Kolaches', link: 'https://www.foodandwine.com/recipes/cherry-and-cream-cheese-kolaches' }
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...WHITE_SUGAR, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...YEAST, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...WHOLE_MILK, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'melted', section: DOUGH_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...WHITE_SUGAR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...YEAST, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...WHOLE_MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: DOUGH_SECTION },
         { ...EGG_YOLKS, amount: 3, unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
 
-        { ...CHERRIES, amount: 1, unit: UNITS.POUND, additionalDetails: 'pitted and chopped', section: CHERRY_FILLING_SECTION },
-        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: CHERRY_FILLING_SECTION },
-        { ...COLD_WATER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: CHERRY_FILLING_SECTION },
-        { ...SALT, amount: 1 / 8, unit: UNITS.TEASPOON, additionalDetails: '', section: CHERRY_FILLING_SECTION },
-        { ...LEMON_JUICE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHERRY_FILLING_SECTION },
+        { ...CHERRIES, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'pitted and chopped', section: CHERRY_FILLING_SECTION },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHERRY_FILLING_SECTION },
+        { ...COLD_WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHERRY_FILLING_SECTION },
+        { ...SALT, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHERRY_FILLING_SECTION },
+        { ...LEMON_JUICE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHERRY_FILLING_SECTION },
 
-        { ...CREAM_CHEESE, amount: 8, unit: UNITS.OUNCE, additionalDetails: 'room temperature', section: CREAM_CHEESE_FILLING_SECTION },
-        { ...POWDERED_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: CREAM_CHEESE_FILLING_SECTION },
+        { ...CREAM_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'room temperature', section: CREAM_CHEESE_FILLING_SECTION },
+        { ...POWDERED_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CREAM_CHEESE_FILLING_SECTION },
         { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: CREAM_CHEESE_FILLING_SECTION },
-        { ...LEMON_ZEST, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: CREAM_CHEESE_FILLING_SECTION },
+        { ...LEMON_ZEST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CREAM_CHEESE_FILLING_SECTION },
 
-        // { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: STREUSEL_SECTION },
-        // { ...WHITE_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: STREUSEL_SECTION },
-        // { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: STREUSEL_SECTION },
-        // { ...SALT, amount: 1/8, unit: UNITS.TEASPOON, additionalDetails: '', section: STREUSEL_SECTION },
+        // { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: STREUSEL_SECTION },
+        // { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: STREUSEL_SECTION },
+        // { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: STREUSEL_SECTION },
+        // { ...SALT, amount: 1/8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: STREUSEL_SECTION },
 
         { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: EGG_WASH_SECTION },
-        { ...WHOLE_MILK, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: EGG_WASH_SECTION },
+        { ...WHOLE_MILK, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: EGG_WASH_SECTION },
     ],
     appliances: [
         { name: 'stove' },

@@ -1,5 +1,5 @@
 const plated = '../assets/Products/peruvian-chicken-plated.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { GARLIC, LIGHT_SOY_SAUCE, LIME_JUICE, OLIVE_OIL, CUMIN, PAPRIKA, OREGANO, BLACK_PEPPER, JALAPENO_PEPPERS, CILANTRO, GREEN_ONIONS, MAYONNAISE, SALT, GREEK_YOGURT, CHICKEN_DRUMETTES } = require('./ingredients');
 
 const CREAMY_GREEN_SAUCE = 'Creamy Green Sauce';
@@ -16,32 +16,33 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN, TYPES.RICE],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '35 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 8, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Peruvian Chicken', link: 'https://www.platingsandpairings.com/peruvian-grilled-chicken-creamy-green-sauce/' }
     ],
     separated: true,
     ingredients: [
-        { ...CHICKEN_DRUMETTES, amount: 2, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...GARLIC, amount: 5, unit: UNITS.CLOVE, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...LIGHT_SOY_SAUCE, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...LIME_JUICE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...CUMIN, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...PAPRIKA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...OREGANO, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CHICKEN_DRUMETTES, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...GARLIC, amount: 5, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...LIME_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CUMIN, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...PAPRIKA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...OREGANO, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...JALAPENO_PEPPERS, amount: 3, unit: '', additionalDetails: 'seeds and ribs removed, chopped', section: CREAMY_GREEN_SAUCE },
-        { ...CILANTRO, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...CILANTRO, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
         { ...GREEN_ONIONS, amount: 2, unit: '', additionalDetails: 'chopped', section: CREAMY_GREEN_SAUCE },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
-        { ...MAYONNAISE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
-        { ...GREEK_YOGURT, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
-        { ...LIME_JUICE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
-        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...MAYONNAISE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...GREEK_YOGURT, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...LIME_JUICE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
     ],
     appliances: [
         { name: 'blender' },

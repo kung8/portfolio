@@ -1,6 +1,6 @@
 const dinner = '../assets/Products/hobo-dinner.jpeg';
 const pan = '../assets/Products/hobo-dinner-pan.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
     CARROTS,
@@ -22,16 +22,16 @@ module.exports = {
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.VEGETABLE, TYPES.PROTEIN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '40 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     ingredients: [
         { ...SUMMER_SAUSAGE, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...CARROTS, amount: 3, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...POTATOES, amount: 3, unit: '', additionalDetails: 'chunked', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.LARGE, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

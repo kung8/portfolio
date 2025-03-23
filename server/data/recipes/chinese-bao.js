@@ -15,7 +15,7 @@ const pot = '../assets/Products/bao-steamer-over-pot.jpeg';
 // const steamer = '../assets/Products/bao-steamer.jpeg';
 const water = '../assets/Products/bao-water.jpeg';
 const withFilling = '../assets/Products/bao-with-filling.jpeg';
-const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     YEAST,
     WARM_WATER,
@@ -43,28 +43,28 @@ module.exports = {
     method: [METHODS.STEAM],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT],
     yields: { amount: 16, unit: YIELD_UNITS.SERVING },
-    prepTime: '35 m',
-    cookTime: '25 m',
-    waitTime: '2 h 10 m',
+    prepTime: { amount: 35, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 130, unit: TIME_UNITS.MINUTE },
     separated: true,
     ingredients: [
-        { ...YEAST, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WARM_WATER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
 
-        { ...WARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WHITE_SUGAR, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...BREAD_FLOUR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...CORNSTARCH, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...VEGETABLE_OIL, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...BAKING_POWDER, amount: 5 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BREAD_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...VEGETABLE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BAKING_POWDER, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
 
-        { ...GROUND_PORK, amount: 1 / 2, unit: UNITS.POUND, additionalDetails: 'cooked', section: SECTIONS.FILLING },
-        { ...CHINESE_SAUSAGE, amount: 2, unit: UNITS.STICK, additionalDetails: 'sliced', section: SECTIONS.FILLING },
+        { ...GROUND_PORK, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cooked', section: SECTIONS.FILLING },
+        { ...CHINESE_SAUSAGE, amount: 2, unit: INGREDIENT_UNITS.STICK, additionalDetails: 'sliced', section: SECTIONS.FILLING },
         { ...EGG, amount: 5, unit: '', additionalDetails: 'hard-boiled', section: SECTIONS.FILLING },
-        { ...MUSHROOMS, amount: 1, unit: UNITS.HANDFUL, additionalDetails: 'minced', section: SECTIONS.FILLING },
-        { ...OYSTER_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...MUSHROOMS, amount: 1, unit: INGREDIENT_UNITS.HANDFUL, additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.FILLING },
     ],
     appliances: [
         { name: 'stove' },

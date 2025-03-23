@@ -18,7 +18,7 @@ const combined3 = '../assets/Products/marry-me-chicken-3.jpeg';
 const plated2 = '../assets/Products/marry-me-chicken-plated-2.jpeg';
 const plated3 = '../assets/Products/marry-me-chicken-plated-3.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CHICKEN_BROTH, HEAVY_CREAM, PARMESAN_CHEESE, OREGANO, RED_PEPPER_FLAKES, BASIL_LEAVES, SUN_DRIED_TOMATOES } = require('./ingredients');
 
 const SUN_DRIED_TOMATO_CREAM_SAUCE = 'Sun-Dried Tomato Cream Sauce';
@@ -35,25 +35,25 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CHICKEN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '30 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Marry Me Chicken', link: 'https://40aprons.com/marry-me-chicken/' }
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...SALT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
 
-        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...CHICKEN_BROTH, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...HEAVY_CREAM, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'room temperature', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...PARMESAN_CHEESE, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: 'shredded at room temperature', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...SUN_DRIED_TOMATOES, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...OREGANO, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...RED_PEPPER_FLAKES, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...CHICKEN_BROTH, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...HEAVY_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room temperature', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...PARMESAN_CHEESE, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded at room temperature', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...SUN_DRIED_TOMATOES, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...OREGANO, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
+        { ...RED_PEPPER_FLAKES, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
         { ...BASIL_LEAVES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

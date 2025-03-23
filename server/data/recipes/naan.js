@@ -13,7 +13,7 @@ const naan12 = '../assets/Products/naan-12.jpeg';
 const naan13 = '../assets/Products/naan-13.jpeg';
 const naan14 = '../assets/Products/naan-14.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { WARM_WATER, WHITE_SUGAR, YEAST, ALL_PURPOSE_FLOUR, YOGURT, SALT, OLIVE_OIL, UNSALTED_BUTTER, CILANTRO } = require('./ingredients');
 
 const ACTIVATE_YEAST = 'Activate Yeast';
@@ -32,20 +32,20 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '30 m',
-    cookTime: '15 m',
-    waitTime: '1 h ',
+    prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     separated: true,
     ingredients: [
-        { ...WARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: ACTIVATE_YEAST },
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: ACTIVATE_YEAST },
-        { ...YEAST, amount: 9 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: ACTIVATE_YEAST },
-        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YOGURT, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: 'plus more to taste', section: SECTIONS.MAIN },
-        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { ...CILANTRO, amount: 2, unit: UNITS.SPRIG, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ACTIVATE_YEAST },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: ACTIVATE_YEAST },
+        { ...YEAST, amount: 9 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: ACTIVATE_YEAST },
+        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YOGURT, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'plus more to taste', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...CILANTRO, amount: 2, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: 'chopped', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

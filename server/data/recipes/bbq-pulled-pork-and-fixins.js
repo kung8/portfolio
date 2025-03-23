@@ -11,7 +11,7 @@ const raw = '../assets/Products/bbq-pulled-pork-raw-pork.jpeg';
 const wet = '../assets/Products/bbq-pulled-pork-wet.jpeg';
 const plate1 = '../assets/Products/bbq-pulled-pork-full-plate-1.jpeg';
 const plate2 = '../assets/Products/bbq-pulled-pork-full-plate-2.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     PORK_ROAST,
     VEGETABLE_OIL,
@@ -39,21 +39,21 @@ module.exports = {
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '30 m',
-    cookTime: '6 h',
+    prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 6, unit: TIME_UNITS.HOUR },
     ingredients: [
-        { ...PORK_ROAST, amount: 4, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...BROWN_SUGAR, amount: 1/4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CHILI_POWDER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.LARGE, additionalDetails: 'chopped', section: SECTIONS.FILLING },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'diced', section: SECTIONS.FILLING },
-        { ...THYME, amount: 1.5, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...BBQ_SAUCE, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...APPLE_CIDER_VINEGAR, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CHICKEN_BROTH, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...YELLOW_MUSTARD, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...WORCESTERSHIRE_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...PORK_ROAST, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...BROWN_SUGAR, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CHILI_POWDER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'chopped', section: SECTIONS.FILLING },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'diced', section: SECTIONS.FILLING },
+        { ...THYME, amount: 1.5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...BBQ_SAUCE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...APPLE_CIDER_VINEGAR, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CHICKEN_BROTH, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...YELLOW_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WORCESTERSHIRE_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...BRIOCHE_BUNS, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [

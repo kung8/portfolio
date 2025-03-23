@@ -14,7 +14,7 @@ const rack = '../assets/Products/lemon-bars-rack.jpeg';
 const filling = '../assets/Products/lemon-bars-raw-filling.jpeg';
 const zestMixed = '../assets/Products/lemon-bars-sugar-and-zest-mixed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, POWDERED_SUGAR, SALT, UNSALTED_BUTTER, LEMON_ZEST, WHITE_SUGAR, EGG, LEMON_JUICE } = require('./ingredients');
 
 module.exports = {
@@ -28,23 +28,23 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT, TYPES.BAR],
     yields: { amount: 3 / 2, unit: YIELD_UNITS.DOZEN },
-    prepTime: '20 m',
-    cookTime: '55 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 55, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Lemon Bars', link: "https://preppykitchen.com/lemon-bars" }
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.CRUST },
-        { ...POWDERED_SUGAR, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.CRUST },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CRUST },
-        { ...UNSALTED_BUTTER, amount: 12, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.CRUST },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CRUST },
+        { ...POWDERED_SUGAR, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CRUST },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CRUST },
+        { ...UNSALTED_BUTTER, amount: 12, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.CRUST },
 
-        { ...WHITE_SUGAR, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...LEMON_ZEST, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WHITE_SUGAR, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...LEMON_ZEST, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
         { ...EGG, amount: 8, unit: '', additionalDetails: 'room temperature', section: SECTIONS.FILLING },
-        { ...LEMON_JUICE, amount: 1, unit: UNITS.CUP, additionalDetails: 'fresh', section: SECTIONS.FILLING },
+        { ...LEMON_JUICE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'fresh', section: SECTIONS.FILLING },
 
         { ...POWDERED_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],

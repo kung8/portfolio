@@ -1,5 +1,5 @@
 const biscuits = '../assets/Products/ted-lasso-biscuits.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     POWDERED_SUGAR,
@@ -16,13 +16,13 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     yields: { amount: 15, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '60 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 60, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: 'at room temperature', section: SECTIONS.MAIN },
-        { ...POWDERED_SUGAR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'at room temperature', section: SECTIONS.MAIN },
+        { ...POWDERED_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

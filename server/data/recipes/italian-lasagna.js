@@ -1,6 +1,6 @@
 const lasagna = '../assets/Products/lasagna.jpeg';
 const pan = '../assets/Products/lasagna-pan.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     ITALIAN_SAUSAGE,
     GROUND_BEEF,
@@ -34,31 +34,31 @@ module.exports = {
     protein: [PROTEIN.BEEF, PROTEIN.PORK],
     type: [TYPES.NOODLE],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '3 h',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 3, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Lasagna', link: 'https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/' }
     ],
     ingredients: [
-        { ...ITALIAN_SAUSAGE, amount: 1, unit: UNITS.POUND, additionalDetails: '', optional: false },
-        { ...GROUND_BEEF, amount: 3 / 4, unit: UNITS.POUND, additionalDetails: '', optional: false },
-        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'minced', optional: false },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'crushed', optional: false },
-        { ...CRUSHED_TOMATOES, amount: 28, unit: UNITS.OUNCE, additionalDetails: '', optional: false },
+        { ...ITALIAN_SAUSAGE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
+        { ...GROUND_BEEF, amount: 3 / 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'minced', optional: false },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'crushed', optional: false },
+        { ...CRUSHED_TOMATOES, amount: 28, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
         { ...TOMATO_PASTE, amount: '', unit: '', additionalDetails: '', optional: false },
-        { ...TOMATO_SAUCE, amount: 13, unit: UNITS.OUNCE, additionalDetails: '', optional: false },
-        { ...WARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...BASIL, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...FENNEL_SEEDS, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...SALT, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...PARSLEY, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...LASAGNA_NOODLES, amount: 12, unit: UNITS.NOODLE, additionalDetails: '', optional: false },
-        { ...RICOTTA_CHEESE, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', optional: false },
+        { ...TOMATO_SAUCE, amount: 13, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
+        { ...WARM_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...BASIL, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...FENNEL_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...SALT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...PARSLEY, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...LASAGNA_NOODLES, amount: 12, unit: INGREDIENT_UNITS.NOODLE, additionalDetails: '', optional: false },
+        { ...RICOTTA_CHEESE, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', optional: false },
-        { ...MOZZARELLA_CHEESE, amount: 3 / 4, unit: UNITS.POUND, additionalDetails: 'sliced', optional: false },
-        { ...PARMESAN_CHEESE, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: 'grated', optional: false },
+        { ...MOZZARELLA_CHEESE, amount: 3 / 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: false },
+        { ...PARMESAN_CHEESE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', optional: false },
     ],
     appliances: [
         { name: 'stove' },

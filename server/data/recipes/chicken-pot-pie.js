@@ -1,6 +1,6 @@
 const chickenPotPie = '../assets/Products/chicken-pot-pie.jpeg';
 const slice = '../assets/Products/chicken-pot-pie-slice-zoomed.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     ALL_PURPOSE_FLOUR,
@@ -26,20 +26,20 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.DESSERT],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '50 m - 1 h',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     ingredients: [
-        { ...CHICKEN_BREAST, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: 'cooked', optional: false },
-        { ...UNSALTED_BUTTER, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...YELLOW_ONION, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...CHICKEN_BROTH, amount: 7 / 4, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...MILK, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...FROZEN_PEAS, amount: 5, unit: UNITS.OUNCE, additionalDetails: '', optional: false },
-        { ...FROZEN_CARROTS, amount: 5, unit: UNITS.OUNCE, additionalDetails: '', optional: false },
-        { ...REFRIGERATED_PIE_CRUST, amount: 15, unit: UNITS.OUNCE, additionalDetails: '', optional: false },
+        { ...CHICKEN_BREAST, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked', optional: false },
+        { ...UNSALTED_BUTTER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...YELLOW_ONION, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...CHICKEN_BROTH, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...MILK, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...FROZEN_PEAS, amount: 5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
+        { ...FROZEN_CARROTS, amount: 5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
+        { ...REFRIGERATED_PIE_CRUST, amount: 15, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },

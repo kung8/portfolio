@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { waitTime } = require('./cheesecake-factory-cheesecake');
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { OLIVE_OIL, YELLOW_ONION, BROWN_LENTILS, CARROTS, GARLIC, KETCHUP, DIJON_MUSTARD, BROWN_SUGAR, CHILI_POWDER, WORCESTERSHIRE_SAUCE, HOT_SAUCE, SALT, BBQ_SAUCE, HAMBURGER_BUNS, LETTUCE, WHITE_ONION, PICKLES, AVOCADO, VEGETABLE_BROTH } = require('./ingredients');
 
 const SAUTE = 'Saute';
@@ -20,29 +20,29 @@ module.exports = {
     protein: [PROTEIN.LENTILS],
     type: [TYPES.BURGER],
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '40 m',
-    waitTime: '25 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Instant Pot Vegan Lentil Sloppy Joes', link: 'https://cozypeachkitchen.com/instant-pot-vegan-lentil-sloppy-joes/' }
     ],
     separated: true,
     ingredients: [
-        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUTE },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'finely diced', section: SAUTE },
-        { ...CARROTS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'diced', section: SAUTE },
-        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SAUTE },
-        { ...BROWN_LENTILS, amount: 1, unit: UNITS.CUP, additionalDetails: 'rinsed', section: SECTIONS.SAUCE },
-        { ...KETCHUP, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...DIJON_MUSTARD, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BROWN_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...CHILI_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WORCESTERSHIRE_SAUCE, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...HOT_SAUCE, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...VEGETABLE_BROTH, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUTE },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'finely diced', section: SAUTE },
+        { ...CARROTS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', section: SAUTE },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SAUTE },
+        { ...BROWN_LENTILS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'rinsed', section: SECTIONS.SAUCE },
+        { ...KETCHUP, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...DIJON_MUSTARD, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CHILI_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WORCESTERSHIRE_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HOT_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...VEGETABLE_BROTH, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { ...BBQ_SAUCE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SERVE },
+        { ...BBQ_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SERVE },
         { ...HAMBURGER_BUNS, amount: 5, unit: '', additionalDetails: '', section: SECTIONS.SERVE },
 
         { ...LETTUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },

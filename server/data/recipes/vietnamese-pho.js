@@ -12,7 +12,7 @@ const plated6 = '../assets/Products/pho-plated-6.jpeg';
 const sauces = '../assets/Products/pho-sauces.jpeg';
 const toppings = '../assets/Products/pho-toppings.jpeg';
 const veggiesPot = '../assets/Products/pho-veggies-in-pot.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     BEAN_SPROUTS,
     BEEF_BROTH,
@@ -48,29 +48,29 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.NOODLE, TYPES.SOUP],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '40 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
         { label: 'Pho', link: 'https://tastesbetterfromscratch.com/pho-noodle-soup/' }
     ],
     ingredients: [
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.LARGE, additionalDetails: 'quartered', section: SECTIONS.BROTH },
-        { ...GINGER, amount: 4, unit: UNITS.INCH, additionalDetails: 'peeled, halved, and halved-lengthwise', section: SECTIONS.BROTH },
-        { ...BEEF_BROTH, amount: 6, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...COLD_WATER, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...CORIANDER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'quartered', section: SECTIONS.BROTH },
+        { ...GINGER, amount: 4, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'peeled, halved, and halved-lengthwise', section: SECTIONS.BROTH },
+        { ...BEEF_BROTH, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...COLD_WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...CORIANDER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
         { ...CLOVES, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...FISH_SAUCE, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...HOISIN_SAUCE, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...RED_CHILI_PASTE, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...FISH_SAUCE, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...HOISIN_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...RED_CHILI_PASTE, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
         { ...CINNAMON_STICK, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...BLACK_PEPPER, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...SALT, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.BROTH },
 
-        { ...DRIED_RICE_NOODLES, amount: 12, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...BEEF_TENDERLOIN, amount: 1 / 2, unit: UNITS.POUND, additionalDetails: 'thinly sliced', section: SECTIONS.BEEF },
+        { ...DRIED_RICE_NOODLES, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...BEEF_TENDERLOIN, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thinly sliced', section: SECTIONS.BEEF },
 
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },

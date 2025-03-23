@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { RED_POTATOES, ALL_PURPOSE_FLOUR, EGG, SALT, DURUM_WHEAT } = require('./ingredients');
 
 const PREP_POTATOES = 'Prep Potatoes';
@@ -18,17 +18,17 @@ module.exports = {
     method: [METHODS.BOIL],
     type: [TYPES.PASTA],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '40 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Potato Gnocchi', link: 'https://www.giallozafferano.com/recipes/Potato-gnocchi.html' }
     ],
     separated: true,
     ingredients: [
-        { ...RED_POTATOES, amount: 2.2, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit:UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...RED_POTATOES, amount: 2.2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit:INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.MAIN },
         { ...DURUM_WHEAT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [

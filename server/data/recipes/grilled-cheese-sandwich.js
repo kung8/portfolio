@@ -5,7 +5,7 @@ const grilled4 = '../assets/Products/grilled-cheese-sandwich-4.jpeg';
 const grilled5 = '../assets/Products/grilled-cheese-sandwich-5.jpeg';
 const grilled6 = '../assets/Products/grilled-cheese-sandwich-6.jpeg';
 const grilled7 = '../assets/Products/grilled-cheese-sandwich-7.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BREAD, UNSALTED_BUTTER, CHEDDAR_CHEESE } = require('./ingredients');
 
 const GRILL_CHEESE = 'Grill Cheese';
@@ -21,16 +21,16 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     type: [TYPES.SANDWICH],
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
-    prepTime: '1 m',
-    cookTime: '5 m',
+    prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Grilled Cheese Sandwich', link: 'https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/' }
     ],
     separated: true,
     ingredients: [
-        { ...BREAD, amount: 2, unit: UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },
-        { ...CHEDDAR_CHEESE, amount: 1, unit: UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BREAD, amount: 2, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },
+        { ...CHEDDAR_CHEESE, amount: 1, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

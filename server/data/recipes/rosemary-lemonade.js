@@ -5,7 +5,7 @@ const rosemary = '../assets/Products/rosemary-lemonade-rosemary.jpeg';
 const sugar = '../assets/Products/rosemary-lemonade-sugar.jpeg';
 const sweet = '../assets/Products/rosemary-lemonade-sweet-mix.jpeg';
 const water = '../assets/Products/rosemary-lemonade-water.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { COLD_WATER, FRESH_ROSEMARY, WHITE_SUGAR, HONEY, LEMON_JUICE, ICE, LEMON } = require('./ingredients');
 
 module.exports = {
@@ -18,19 +18,19 @@ module.exports = {
     method: [METHODS.MIX],
     type: [TYPES.DRINK],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '15 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Rosemary Lemonade', link: "https://www.tasteofhome.com/recipes/rosemary-lemonade/" }
     ],
     separated: true,
     ingredients: [
-        { ...COLD_WATER, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...FRESH_ROSEMARY, amount: 2, unit: UNITS.SPRIG, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HONEY, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LEMON_JUICE, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COLD_WATER, amount: 6, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COLD_WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRESH_ROSEMARY, amount: 2, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HONEY, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LEMON_JUICE, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COLD_WATER, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...ICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
         { ...LEMON, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.SERVE },
         { ...FRESH_ROSEMARY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },

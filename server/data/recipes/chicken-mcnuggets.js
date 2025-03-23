@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { CHICKEN_BREAST, BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, WHITE_SUGAR, ALL_PURPOSE_FLOUR, WHITE_PEPPER, CELERY_POWDER, CORNSTARCH, BAKING_POWDER, BAKING_SODA, EGG, COLD_WATER, ROOM_TEMPERATURE_WATER, VEGETABLE_OIL } = require('./ingredients');
 
 const FLOUR_DREDGING_STATION = 'Flour Dredging Station';
@@ -20,31 +20,31 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.FINGER_FOOD],
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
-    prepTime: '25 m',
-    cookTime: '8 m',
+    prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 8, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Chicken McNuggets', link: 'https://www.joshuaweissman.com/post/mcdonald-s-mcnuggets-but-better' }
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3 / 2, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
 
-        { ...ROOM_TEMPERATURE_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: WET_BATTER_STATION },
-        { ...CORNSTARCH, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: WET_BATTER_STATION },
+        { ...ROOM_TEMPERATURE_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_BATTER_STATION },
+        { ...CORNSTARCH, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_BATTER_STATION },
         
-        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: FLOUR_DREDGING_STATION },
-        { ...SALT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: FLOUR_DREDGING_STATION },
-        { ...WHITE_PEPPER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: FLOUR_DREDGING_STATION },
-        { ...CELERY_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: FLOUR_DREDGING_STATION },
+        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FLOUR_DREDGING_STATION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FLOUR_DREDGING_STATION },
+        { ...WHITE_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FLOUR_DREDGING_STATION },
+        { ...CELERY_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FLOUR_DREDGING_STATION },
 
-        { ...CORNSTARCH, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: TEMPURA_BATTER_STATION },
-        { ...ALL_PURPOSE_FLOUR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: TEMPURA_BATTER_STATION },
-        { ...BAKING_POWDER, amount: 5 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: TEMPURA_BATTER_STATION },
-        { ...BAKING_SODA, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: TEMPURA_BATTER_STATION },
+        { ...CORNSTARCH, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TEMPURA_BATTER_STATION },
+        { ...ALL_PURPOSE_FLOUR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TEMPURA_BATTER_STATION },
+        { ...BAKING_POWDER, amount: 5 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TEMPURA_BATTER_STATION },
+        { ...BAKING_SODA, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TEMPURA_BATTER_STATION },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: TEMPURA_BATTER_STATION },
-        { ...COLD_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: TEMPURA_BATTER_STATION },
+        { ...COLD_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TEMPURA_BATTER_STATION },
 
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: DEEP_FRY },
     ],

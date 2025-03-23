@@ -8,7 +8,7 @@ const ragu7 = '../assets/Products/beef-ragu-7.jpeg';
 const ragu8 = '../assets/Products/beef-ragu-8.jpeg';
 const ragu9 = '../assets/Products/beef-ragu-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { BEEF_CHUCK_ROAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CARROTS, CELERY, CRUSHED_TOMATOES, TOMATO_PASTE, BEEF_BROTH, RED_WINE, WARM_WATER, THYME, BAY_LEAVES, YELLOW_ONION, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY } = require('./ingredients');
 
 const BEEF_SECTION = 'Beef';
@@ -29,32 +29,32 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.PASTA],
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '2 h 45 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 165, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Beef Ragu', link: 'https://www.recipetineats.com/slow-cooked-shredded-beef-ragu-pasta/' }
     ],
     separated: true,
     ingredients: [
-        { ...BEEF_CHUCK_ROAST, amount: 5 / 2, unit: UNITS.POUND, additionalDetails: 'cut into 4 pieces', section: BEEF_SECTION },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...BEEF_CHUCK_ROAST, amount: 5 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 4 pieces', section: BEEF_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BEEF_SECTION },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: BEEF_SECTION },
-        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
 
-        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: RAGU_SECTION },
-        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: RAGU_SECTION },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'diced', section: RAGU_SECTION },
-        { ...CARROTS, amount: 1, unit: UNITS.CUP, additionalDetails: 'diced', section: RAGU_SECTION },
-        { ...CELERY, amount: 1, unit: UNITS.CUP, additionalDetails: 'diced', section: RAGU_SECTION },
-        { ...CRUSHED_TOMATOES, amount: 28, unit: UNITS.OUNCE, additionalDetails: '', section: RAGU_SECTION },
-        { ...TOMATO_PASTE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: RAGU_SECTION },
-        { ...BEEF_BROTH, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: RAGU_SECTION },
-        { ...RED_WINE, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: RAGU_SECTION },
-        { ...WARM_WATER, amount: 1.5, unit: UNITS.CUP, additionalDetails: '', section: RAGU_SECTION },
-        { ...THYME, amount: 3/4, unit: UNITS.TEASPOON, additionalDetails: '', section: RAGU_SECTION },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RAGU_SECTION },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: RAGU_SECTION },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', section: RAGU_SECTION },
+        { ...CARROTS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', section: RAGU_SECTION },
+        { ...CELERY, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', section: RAGU_SECTION },
+        { ...CRUSHED_TOMATOES, amount: 28, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: RAGU_SECTION },
+        { ...TOMATO_PASTE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RAGU_SECTION },
+        { ...BEEF_BROTH, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: RAGU_SECTION },
+        { ...RED_WINE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: RAGU_SECTION },
+        { ...WARM_WATER, amount: 1.5, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: RAGU_SECTION },
+        { ...THYME, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: RAGU_SECTION },
         { ...BAY_LEAVES, amount: 3, unit: '', additionalDetails: '', section: RAGU_SECTION },
 
-        { ...PAPPARDELLE_NOODLES, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...PAPPARDELLE_NOODLES, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.NOODLES },
         { ...PARMESAN_CHEESE, amount: '', unit: '', additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
         { ...PARSLEY, amount: '', unit: '', additionalDetails: 'finely chopped', section: SECTIONS.TOPPINGS },
     ],
@@ -88,8 +88,8 @@ module.exports = {
         { step: 'Stir the pasta and pasta water until it thickens the Ragu sauce.', type: COOK_PASTA },
 
         { step: 'Serve this immediately topped with parmesan and parsley.', type: SECTIONS.SERVE },
-    ], 
+    ],
     notes: [
-        { note: 'This ended up being too liquidy for me and the beef did not shred well after cooking for 2 1/2 hours. I ended up just cutting the beef instead of shredding it. I think adding more tomato paste would help thicken the sauce.'}
+        { note: 'This ended up being too liquidy for me and the beef did not shred well after cooking for 2 1/2 hours. I ended up just cutting the beef instead of shredding it. I think adding more tomato paste would help thicken the sauce.' }
     ]
 };

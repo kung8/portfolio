@@ -18,7 +18,7 @@ const peaks = '../assets/Products/chocolate-mousse-stiff-peaks.jpeg';
 const topped = '../assets/Products/chocolate-mousse-topped.jpeg';
 const whipped = '../assets/Products/chocolate-mousse-whipped-cream.jpeg';
 const yolkInCream = '../assets/Products/chocolate-mousse-yolk-in-cream.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     EGG,
     UNSALTED_BUTTER,
@@ -43,20 +43,19 @@ module.exports = {
     protein: [PROTEIN.CHOCOLATE],
     type: [TYPES.DESSERT],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '0 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Chocolate Mousse', link: "https://www.recipetineats.com/chocolate-mousse" }
     ],
     separated: true,
     ingredients: [
         { ...EGG, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HEAVY_CREAM, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...DARK_COOKING_CHOCOLATE, amount: 4, unit: UNITS.OUNCE, additionalDetails: '', section: CHOCOLATE },
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHOCOLATE },
-        { ...HEAVY_CREAM, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: WHIPPED_CREAM },
-        { ...WHITE_SUGAR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: WHIPPED_CREAM },
+        { ...HEAVY_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...DARK_COOKING_CHOCOLATE, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: CHOCOLATE },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHOCOLATE },
+        { ...HEAVY_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WHIPPED_CREAM },
+        { ...WHITE_SUGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: WHIPPED_CREAM },
         { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '', unit: '', additionalDetails: 'finely chopped', section: SECTIONS.TOPPINGS },
         { ...RASPBERRIES, amount: '', unit: '', additionalDetails: 'washed', section: SECTIONS.TOPPINGS },
     ],

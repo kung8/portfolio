@@ -9,7 +9,7 @@ const pan = '../assets/Products/biscuits-and-gravy-pan.jpeg';
 const plated = '../assets/Products/biscuits-and-gravy-plated.jpeg';
 const pork = '../assets/Products/biscuits-and-gravy-pork.jpeg';
 const zoomed = '../assets/Products/biscuits-and-gravy-zoomed.jpeg';
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
@@ -36,23 +36,23 @@ module.exports = {
     protein: [PROTEIN.PORK],
     type: [TYPES.BREAD],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '15 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
         { label: 'Sausage Gravy', link: 'https://www.allrecipes.com/recipe/216391/easy-sausage-gravy-and-biscuits/' }
     ],
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 11.2, unit: UNITS.CUP, additionalDetails: '', section: BISCUITS },
-        { ...BAKING_POWDER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: BISCUITS },
-        { ...BAKING_SODA, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BISCUITS },
-        { ...SALT, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: BISCUITS },
-        { ...UNSALTED_BUTTER, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: 'cut into 1/2" slices', section: BISCUITS },
+        { ...ALL_PURPOSE_FLOUR, amount: 11.2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BISCUITS },
+        { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BISCUITS },
+        { ...BAKING_SODA, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BISCUITS },
+        { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BISCUITS },
+        { ...UNSALTED_BUTTER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cut into 1/2" slices', section: BISCUITS },
         { ...UNSALTED_BUTTER, amount: '', unit: '', additionalDetails: 'melted', section: BISCUITS },
-        { ...BUTTERMILK, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: BISCUITS },
-        { ...GROUND_PORK, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: GRAVY },
-        { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: GRAVY },
-        { ...MILK, amount: 5, unit: UNITS.CUP, additionalDetails: '', section: GRAVY },
+        { ...BUTTERMILK, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BISCUITS },
+        { ...GROUND_PORK, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: GRAVY },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GRAVY },
+        { ...MILK, amount: 5, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GRAVY },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: GRAVY },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: GRAVY },
     ],

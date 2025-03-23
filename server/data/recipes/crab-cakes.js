@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { } = require('./ingredients');
 
 module.exports = {
@@ -16,8 +16,8 @@ module.exports = {
     protein: [],
     type: [],
     yields: { amount: '', unit: YIELD_UNITS.SERVING },
-    prepTime: 'm',
-    cookTime: 'm',
+    prepTime: { amount: '', unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: '', unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Crab Cakes', link: 'https://www.foodandwine.com/recipes/baltimore-style-crab-cakes' }
     ],

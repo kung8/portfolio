@@ -16,7 +16,7 @@ const vanillaUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-unmixed.jp
 const sugarYolksMixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-mixed.jpeg';
 const sugarYolksUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-unmixed.jpeg';
 const { waitTime } = require('./cheesecake-factory-cheesecake');
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { HEAVY_CREAM, VANILLA_BEAN, EGG_YOLKS, HOT_WATER, WHITE_SUGAR } = require('./ingredients');
 
 const CREAM = 'Cream';
@@ -34,22 +34,22 @@ module.exports = {
     protein: [PROTEIN.EGG],
     type: [TYPES.DESSERT],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '25 m',
-    cookTime: '1 h',
-    waitTime: '2 h',
+    prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
+    waitTime: { amount: 2, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Crème Brûlée', link: 'https://www.foodnetwork.com/recipes/alton-brown/creme-brulee-recipe-1916827' },
         { label: 'Vanilla Sugar', link: 'https://sallysbakingaddiction.com/homemade-vanilla-sugar/' }
     ],
     separated: true,
     ingredients: [
-        { ...WHITE_SUGAR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: VANILLA_SUGAR },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: VANILLA_SUGAR },
         { ...VANILLA_BEAN, amount: 1, unit: '', additionalDetails: 'split and scraped', section: VANILLA_SUGAR },
 
-        { ...HEAVY_CREAM, amount: 1, unit: UNITS.QUART, additionalDetails: '', section: CREAM },
+        { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.QUART, additionalDetails: '', section: CREAM },
         { ...VANILLA_BEAN, amount: 1, unit: '', additionalDetails: 'split and scraped', section: CREAM },
         { ...EGG_YOLKS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HOT_WATER, amount: 2, unit: UNITS.QUART, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HOT_WATER, amount: 2, unit: INGREDIENT_UNITS.QUART, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

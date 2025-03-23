@@ -11,7 +11,7 @@ const sauteed = '../assets/Products/garlic-chicken-with-herbs-sauteed-fragrant.j
 const seasoned = '../assets/Products/garlic-chicken-with-herbs-seasoned-chicken.jpeg';
 const wine = '../assets/Products/garlic-chicken-with-herbs-white-wine.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, SALT, BLACK_PEPPER, UNSALTED_BUTTER, GARLIC, CHICKEN_BROTH, FRESH_ROSEMARY, FRESH_SAGE, JASMINE_RICE, WHITE_WINE } = require('./ingredients');
 
 module.exports = {
@@ -24,22 +24,22 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '20 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Garlic Chicken', link: "https://www.tasteofhome.com/recipes/garlic-chicken-with-herbs/" }
     ],
     separated: true,
     ingredients: [
         { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...GARLIC, amount: 10, unit: UNITS.CLOVE, additionalDetails: 'halved', section: SECTIONS.MAIN },
-        { ...WHITE_WINE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...FRESH_ROSEMARY, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...FRESH_SAGE, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHICKEN_BROTH, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...GARLIC, amount: 10, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'halved', section: SECTIONS.MAIN },
+        { ...WHITE_WINE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRESH_ROSEMARY, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRESH_SAGE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_BROTH, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [

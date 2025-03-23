@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, COLD_WATER, SALT, YEAST } = require('./ingredients');
 
 const BAGUETTES = 'Baguettes';
@@ -17,15 +17,15 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
     yields: { amount: 4, unit: YIELD_UNITS.LOAF },
-    prepTime: '45 m',
-    cookTime: '19 m',
-    waitTime: '45 m',
+    prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 19, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 6, unit: UNITS.CUP, additionalDetails: '', section: BAGUETTES },
-        { ...COLD_WATER, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: BAGUETTES },
-        { ...SALT, amount: 5 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BAGUETTES },
-        { ...YEAST, amount: 9 / 8, unit: UNITS.TEASPOON, additionalDetails: '', section: BAGUETTES },
+        { ...ALL_PURPOSE_FLOUR, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BAGUETTES },
+        { ...COLD_WATER, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BAGUETTES },
+        { ...SALT, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BAGUETTES },
+        { ...YEAST, amount: 9 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BAGUETTES },
     ],
     appliances: [
         { name: 'oven' },

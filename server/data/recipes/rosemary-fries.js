@@ -6,7 +6,7 @@ const seasonings1 = '../assets/Products/rosemary-fries-seasonings-1.jpeg';
 const seasonings2 = '../assets/Products/rosemary-fries-seasonings-2.jpeg';
 const tray2 = '../assets/Products/rosemary-fries-tray-2.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { OLIVE_OIL, ROSEMARY, GARLIC, CORNSTARCH, SALT, BLACK_PEPPER, SWEET_POTATOES } = require('./ingredients');
 
 module.exports = {
@@ -20,19 +20,19 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.FINGER_FOOD],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '30 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Rosemary Sweet Potato Fries', link: 'https://www.tasteofhome.com/recipes/rosemary-sweet-potato-fries/' }
     ],
     separated: false,
     ingredients: [
-        { ...OLIVE_OIL, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ROSEMARY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: 1 / 8, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ROSEMARY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SWEET_POTATOES, amount: 3, unit: '', additionalDetails: 'or preferred potato, peeled and 1/4 inch julienned strip', section: SECTIONS.MAIN },
     ],
     appliances: [

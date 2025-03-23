@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BEEF_SIRLOIN, LIGHT_SOY_SAUCE, GARLIC, OYSTER_SAUCE, RED_WINE_VINEGAR, AJI_AMARILLO_PASTE, CORNSTARCH, RED_ONION, ROMA_TOMATO, GREEN_ONIONS, VEGETABLE_OIL, CILANTRO, WHITE_RICE, FRENCH_FRIES } = require('./ingredients');
 
 const BEEF_SECTION = 'Beef';
@@ -23,26 +23,26 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.STIR_FRY],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '10 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Lomo Saltado', link: 'https://littlespicejar.com/lomo-saltado/' }
     ],
     separated: true,
     ingredients: [
-        { ...BEEF_SIRLOIN, amount: 1, unit: UNITS.POUND, additionalDetails: 'thinly sliced', section: BEEF_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: BEEF_SECTION },
+        { ...BEEF_SIRLOIN, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thinly sliced', section: BEEF_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: BEEF_SECTION },
 
-        { ...LIGHT_SOY_SAUCE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...OYSTER_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...RED_WINE_VINEGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...AJI_AMARILLO_PASTE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...OYSTER_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...RED_WINE_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...AJI_AMARILLO_PASTE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
 
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '', section: STIR_FRY },
-        { ...RED_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: 'thinly sliced', section: STIR_FRY },
-        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: STIR_FRY },
+        { ...RED_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'thinly sliced', section: STIR_FRY },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: STIR_FRY },
         { ...ROMA_TOMATO, amount: 3, unit: '', additionalDetails: 'thinly sliced', section: STIR_FRY },
 
         { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },

@@ -3,7 +3,7 @@ const pizzaDough = '../assets/Products/pizza-dough.jpeg';
 const frozenDough = '../assets/Products/frozen-pizza-dough.jpeg';
 const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
 const tossing = '../assets/Products/pizza-toss.MOV';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     BREAD_FLOUR,
     SALT,
@@ -27,19 +27,19 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
     yields: { amount: 3, unit: YIELD_UNITS.SERVING },
-    prepTime: '45 m',
-    cookTime: '20 m',
-    waitTime: '72 h 30 m',
+    prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 72.5, unit: TIME_UNITS.HOUR },
     ingredients: [
-        { ...BREAD_FLOUR, amount: 9 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...YEAST, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...HONEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WARM_WATER, amount: 2, unit: UNITS.CUP, additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
-        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { ...PARSLEY, amount: 3, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BREAD_FLOUR, amount: 9 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...PARSLEY, amount: 3, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...MARINARA_SAUCE, amount: '', unit: '', additionalDetails: 'warmed', section: SECTIONS.MAIN },
     ],
     appliances: [

@@ -16,7 +16,7 @@ const smallSlice = '../assets/Products/cheesecake-small-slice.jpeg';
 const strawberriesInPan = '../assets/Products/cheesecake-strawberries-in-pan.jpeg';
 const wholeGlazed = '../assets/Products/cheesecake-whole-glazed-strawberry.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     WHITE_SUGAR,
     UNSALTED_BUTTER,
@@ -45,29 +45,29 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '45 m',
-    cookTime: '2 h',
-    waitTime: '5 h',
+    prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 2, unit: TIME_UNITS.HOUR },
+    waitTime: { amount: 5, unit: TIME_UNITS.HOUR },
     separated: true,
     websites: [
         { label: 'Cheesecake Factory Copycat', link: 'https://www.delish.com/cooking/recipe-ideas/a37762621/cheesecake-factory-original-cheesecake-copycat-recipe/' }
     ],
     ingredients: [
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.CRUST },
-        { ...GRAHAM_CRACKER, amount: 14.4, unit: UNITS.OUNCE, additionalDetails: 'finely crushed', section: SECTIONS.CRUST },
-        { ...WHITE_SUGAR, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CRUST },
-        { ...UNSALTED_BUTTER, amount: 12, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.CRUST },
-        { ...CREAM_CHEESE, amount: 32, unit: UNITS.OUNCE, additionalDetails: 'softened', section: SECTIONS.FILLING },
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...GRAHAM_CRACKER, amount: 14.4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'finely crushed', section: SECTIONS.CRUST },
+        { ...WHITE_SUGAR, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CRUST },
+        { ...UNSALTED_BUTTER, amount: 12, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.CRUST },
+        { ...CREAM_CHEESE, amount: 32, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'softened', section: SECTIONS.FILLING },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...SOUR_CREAM, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...STRAWBERRIES, amount: 1, unit: UNITS.POUND, additionalDetails: 'halved', section: SECTIONS.TOPPINGS },
-        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...WARM_WATER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...WHITE_SUGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SOUR_CREAM, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...STRAWBERRIES, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'halved', section: SECTIONS.TOPPINGS },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...WARM_WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...WHITE_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...LEMON, amount: 1, unit: '', additionalDetails: 'juiced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

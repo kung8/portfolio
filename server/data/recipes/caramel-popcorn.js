@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { COOKING_SPRAY, POPCORN, BROWN_SUGAR, CORN_SYRUP, UNSALTED_BUTTER, SALT, VANILLA_EXTRACT, BAKING_SODA } = require('./ingredients');
 
 const POPCORN_SECTION = 'Popcorn';
@@ -21,21 +21,21 @@ module.exports = {
     method: [METHODS.BAKE, METHODS.BOIL],
     type: [TYPES.DESSERT],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '45 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Caramel Popcorn', link: 'https://www.allrecipes.com/recipe/173309/classic-caramel-corn/' }
     ],
     separated: true,
     ingredients: [
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: POPCORN_SECTION },
-        { ...POPCORN, amount: 4, unit: UNITS.QUART, additionalDetails: 'popped', section: POPCORN_SECTION },
-        { ...BROWN_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CARAMEL_SECTION },
-        { ...CORN_SYRUP, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: CARAMEL_SECTION },
-        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: CARAMEL_SECTION },
+        { ...POPCORN, amount: 4, unit: INGREDIENT_UNITS.QUART, additionalDetails: 'popped', section: POPCORN_SECTION },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CARAMEL_SECTION },
+        { ...CORN_SYRUP, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CARAMEL_SECTION },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CARAMEL_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: '1/2 tsp', section: CARAMEL_SECTION },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: CARAMEL_SECTION },
-        { ...BAKING_SODA, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CARAMEL_SECTION },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CARAMEL_SECTION },
+        { ...BAKING_SODA, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CARAMEL_SECTION },
     ],
     appliances: [
         { name: 'oven' },

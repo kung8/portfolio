@@ -17,7 +17,7 @@ const plated3 = '../assets/Products/pad-thai-plated-3.jpeg';
 const rinsing = '../assets/Products/pad-thai-rinsing-noodles.jpeg';
 const sauce = '../assets/Products/pad-thai-sauce.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     GARLIC,
@@ -53,26 +53,26 @@ module.exports = {
     protein: [PROTEIN.ALTERNATIVE, PROTEIN.CHICKEN, PROTEIN.PEANUT],
     type: [TYPES.NOODLE],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '50 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     separated: true,
     ingredients: [
-        { ...BROWN_RICE_NOODLES, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 9, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...CHICKEN_BREAST, amount: 1, unit: UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...BROWN_RICE_NOODLES, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 9, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...CHICKEN_BREAST, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...EGG, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...RED_BELL_PEPPERS, amount: 4, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...SRIRACHA_SAUCE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...FISH_SAUCE, amount: 9, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BROWN_SUGAR, amount: 15, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...RICE_WINE_VINEGAR, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...PEANUT_BUTTER, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...UNSALTED_PEANUTS, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...SRIRACHA_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...FISH_SAUCE, amount: 9, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROWN_SUGAR, amount: 15, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...RICE_WINE_VINEGAR, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...PEANUT_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...UNSALTED_PEANUTS, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...LIME, amount: 1, unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
-        { ...BEAN_SPROUTS, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...CILANTRO, amount: 1, unit: UNITS.BUNCH, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...BEAN_SPROUTS, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...CILANTRO, amount: 1, unit: INGREDIENT_UNITS.BUNCH, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

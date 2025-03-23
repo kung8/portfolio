@@ -9,6 +9,7 @@ import { Notes } from './Notes';
 import { PrepTime } from './PrepTime';
 import { RecipeImage } from './RecipeImage';
 import { Supplies } from './Supplies';
+import { WaitTime } from './WaitTime';
 import { Websites } from './Websites';
 import { Yield } from './Yield';
 
@@ -17,6 +18,7 @@ export const RecipeDetails = () => (
         <RecipeImage />
         <PrepTime />
         <CookTime />
+        <WaitTime />
         <Yield />
         <Appliances />
         <Supplies />

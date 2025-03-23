@@ -1,5 +1,5 @@
 const beefStroganoff = '../assets/Products/beef-stroganoff.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
     BEEF,
     YELLOW_ONION,
@@ -24,20 +24,20 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     type: [TYPES.NOODLE],
     yields: { amount: 7, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 - 12 m',
-    cookTime: '45 m',
+    prepTime: { amount: 12, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...BEEF, amount: 3, unit: UNITS.POUND, additionalDetails: 'sliced', optional: false },
-        { ...YELLOW_ONION, amount: 4, unit: UNITS.MEDIUM, additionalDetails: 'sliced', optional: false },
-        { ...MUSHROOMS, amount: 1, unit: UNITS.POUND, additionalDetails: 'sliced', optional: false },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', optional: false },
-        { ...UNSALTED_BUTTER, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...BEEF_BROTH, amount: 3, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...WORCESTERSHIRE_SAUCE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...ALL_PURPOSE_FLOUR, amount: 1/2, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...SOUR_CREAM, amount: 3, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...SPAGHETTI_NOODLES, amount: 6, unit: UNITS.CUP, additionalDetails: 'cooked', optional: false },
+        { ...BEEF, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: false },
+        { ...YELLOW_ONION, amount: 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', optional: false },
+        { ...MUSHROOMS, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: false },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', optional: false },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...BEEF_BROTH, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...WORCESTERSHIRE_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...SOUR_CREAM, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...SPAGHETTI_NOODLES, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked', optional: false },
     ],
     appliances: [
         { name: 'stove' },

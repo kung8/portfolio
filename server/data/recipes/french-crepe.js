@@ -4,7 +4,7 @@ const plated2 = '../assets/Products/crepes-plated-2.jpeg';
 const scoop = '../assets/Products/crepes-scoop-in-pan.jpeg';
 const spread = '../assets/Products/crepes-scoop-spread-in-pan.jpeg';
 const unmelted = '../assets/Products/crepes-unmelted-chocolate.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     EGG,
@@ -40,17 +40,17 @@ module.exports = {
     protein: [PROTEIN.PEANUT],
     type: [TYPES.DESSERT, TYPES.FINGER_FOOD],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 - 8 m',
-    cookTime: '15 - 20 m',
+    prepTime: { amount: 8, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MILK, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...STRAWBERRIES, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...BLUEBERRIES, amount: '', unit: '', additionalDetails: 'halved', section: SECTIONS.TOPPINGS },
         { ...BANANA, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },

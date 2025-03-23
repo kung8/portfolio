@@ -1,5 +1,5 @@
 const smoothie = '../assets/Products/smoothie.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     ALMOND_MILK,
     BANANA,
@@ -19,15 +19,15 @@ module.exports = {
     method: [METHODS.BLEND],
     protein: [PROTEIN.PEANUT],
     yields: { amount: 3 / 2, unit: YIELD_UNITS.SERVING },
-    prepTime: '1 m',
-    cookTime: '2 m',
+    prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 2, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...ALMOND_MILK, amount: 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...ALMOND_MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
         { ...BANANA, amount: 2, unit: '', additionalDetails: '', optional: false },
-        { ...FROZEN_BERRIES, amount: 1, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...KALE, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...PLAIN_YOGURT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...PEANUT_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...FROZEN_BERRIES, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...KALE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...PLAIN_YOGURT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...PEANUT_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'blender' },

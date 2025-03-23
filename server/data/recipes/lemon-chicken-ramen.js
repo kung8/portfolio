@@ -9,7 +9,7 @@ const fryingSpices = '../assets/Products/lemon-chicken-ramen-frying-spices.jpeg'
 const noodles = '../assets/Products/lemon-chicken-ramen-with-noodles.jpeg';
 const broth = '../assets/Products/lemon-chicken-ramen-broth.jpeg';
 const brothChicken = '../assets/Products/lemon-chicken-ramen-broth-with-chicken.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { CHICKEN_BREAST, ALL_PURPOSE_FLOUR, OLIVE_OIL, GARLIC, SALT, BLACK_PEPPER, PAPRIKA, OREGANO, RED_PEPPER_FLAKES, CHICKEN_BROTH, LEMON, LIGHT_CREAM, FRESH_RAMEN_NOODLES, CILANTRO, GREEN_ONIONS, SESAME_SEEDS, SNOW_PEAS } = require('./ingredients');
 
 module.exports = {
@@ -24,26 +24,26 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SOUP, TYPES.NOODLE],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '15 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Lemon Chicken Ramen', link: "https://myriadrecipes.com/lemon-chicken-ramen/" }
     ],
     separated: true,
     ingredients: [
         { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
-        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.BROTH },
-        { ...PAPRIKA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...OREGANO, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...RED_PEPPER_FLAKES, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...CHICKEN_BROTH, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.BROTH },
+        { ...PAPRIKA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...OREGANO, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...RED_PEPPER_FLAKES, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...CHICKEN_BROTH, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
         { ...LEMON, amount: 1 / 2, unit: '', additionalDetails: 'juiced', section: SECTIONS.BROTH },
-        { ...LIGHT_CREAM, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...FRESH_RAMEN_NOODLES, amount: 6, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LIGHT_CREAM, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...FRESH_RAMEN_NOODLES, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'sliced diagonally', section: SECTIONS.TOPPINGS },
         { ...LEMON, amount: 1 / 2, unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },

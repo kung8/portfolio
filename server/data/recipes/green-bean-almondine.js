@@ -5,7 +5,7 @@ const cooked = '../assets/Products/green-bean-almondine-cooked.jpeg';
 const bath = '../assets/Products/green-bean-almondine-ice-bath.jpeg';
 const ice = '../assets/Products/green-bean-almondine-ice-water.jpeg';
 const plate = '../assets/Products/green-bean-almondine-plate.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     SALT,
     FRENCH_GREEN_BEAN,
@@ -28,21 +28,21 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.SAUTE],
     type: [TYPES.VEGETABLE],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '15 m',
-    waitTime: '4 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 4, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Green Bean Almondine', link: 'https://www.abeautifulplate.com/green-beans-almondine/' }
     ],
     ingredients: [
-        { ...SALT, amount: 5 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: '' },
-        { ...FRENCH_GREEN_BEAN, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: '' },
-        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: '' },
-        { ...SLICED_ALMONDS, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: '' },
+        { ...SALT, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
+        { ...FRENCH_GREEN_BEAN, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: '' },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...SLICED_ALMONDS, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
         { ...SHALLOTS, amount: 1, unit: '', additionalDetails: '', section: '' },
-        { ...LEMON_ZEST, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: '' },
-        { ...LEMON_JUICE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: '' },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: '' },
+        { ...LEMON_ZEST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
+        { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
         { ...ICE, amount: '', unit: '', additionalDetails: '', section: '' },
     ],
     appliances: [

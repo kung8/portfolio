@@ -14,7 +14,7 @@ const thigh13 = '../assets/Products/pan-fried-chicken-thigh-13.jpeg';
 const thigh14 = '../assets/Products/pan-fried-chicken-thigh-14.jpeg';
 const thigh15 = '../assets/Products/pan-fried-chicken-thigh-15.jpeg';
 // const thigh16 = '../assets/Products/pan-fried-chicken-thigh-16.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, CHICKEN_THIGH, SALT, BLACK_PEPPER, RED_WINE, GARLIC, WHIPPED_CREAM, ROSEMARY } = require('./ingredients');
 
 module.exports = {
@@ -28,21 +28,21 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '25 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Pan-Fried Chicken Thighs', link: 'https://www.tasteofhome.com/recipes/chicken-with-red-wine-cream-sauce/?srsltid=AfmBOooc4dAJPAm_QOVoYx4eAh_PoXSByNsmunXRhp1QXGKX6uPk3VH5' }
     ],
     separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...CHICKEN_THIGH, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...RED_WINE, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.SAUCE },
-        { ...WHIPPED_CREAM, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...ROSEMARY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...RED_WINE, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.SAUCE },
+        { ...WHIPPED_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...ROSEMARY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stove' },

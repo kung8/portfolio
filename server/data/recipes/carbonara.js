@@ -11,7 +11,7 @@ const carbonara13 = '../assets/Products/carbonara-13.jpeg';
 const carbonara14 = '../assets/Products/carbonara-14.jpeg';
 const carbonara15 = '../assets/Products/carbonara-15.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { GUANCIALE, EGG, EGG_YOLKS, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO } = require('./ingredients');
 
 const CARBONARA_SAUCE = 'Carbonara Sauce';
@@ -33,8 +33,8 @@ module.exports = {
     protein: [PROTEIN.PORK],
     type: [TYPES.PASTA],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '15 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Carbonara', link: 'https://www.recipetineats.com/carbonara/' }
     ],
@@ -42,14 +42,14 @@ module.exports = {
     ingredients: [
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
         { ...EGG_YOLKS, amount: 2, unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
-        { ...PARMIGIANO_REGGIANO, amount: 7 / 2, unit: UNITS.OUNCE, additionalDetails: 'finely shredded', section: CARBONARA_SAUCE },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: CARBONARA_SAUCE },
+        { ...PARMIGIANO_REGGIANO, amount: 7 / 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'finely shredded', section: CARBONARA_SAUCE },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CARBONARA_SAUCE },
 
-        { ...SPAGHETTI_NOODLES, amount: 14, unit: UNITS.OUNCE, additionalDetails: '', section: PASTA },
-        { ...SALT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: PASTA },
+        { ...SPAGHETTI_NOODLES, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PASTA },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PASTA },
 
-        { ...GUANCIALE, amount: 6, unit: UNITS.OUNCE, additionalDetails: 'sliced then batons', section: GUANCIALE_SECTION },
-        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: GUANCIALE_SECTION },
+        { ...GUANCIALE, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'sliced then batons', section: GUANCIALE_SECTION },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: GUANCIALE_SECTION },
 
         { ...PARSLEY, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...PARMIGIANO_REGGIANO, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },

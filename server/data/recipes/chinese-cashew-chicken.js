@@ -9,7 +9,7 @@ const sauce = '../assets/Products/cashew-chicken-sauce.jpeg';
 const cashews = '../assets/Products/cashew-chicken-veggies-with-cashew.jpeg';
 const veggies = '../assets/Products/cashew-chicken-veggies.jpeg';
 const withSauce = '../assets/Products/cashew-chicken-with-sauce.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     BONELESS_AND_SKINLESS_CHICKEN_BREAST,
     BROCCOLI,
@@ -42,28 +42,28 @@ module.exports = {
     protein: [PROTEIN.CHICKEN, PROTEIN.EDAMAME],
     type: [TYPES.RICE],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '20 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Cashew Chicken', link: "https://www.averiecooks.com/better-than-takeout-cashew-chicken" }
     ],
     separated: true,
     ingredients: [
-        { ...LIGHT_SOY_SAUCE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...HONEY, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...RICE_WINE_VINEGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...ASIAN_CHILI_GARLIC_SAUCE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GROUND_GINGER, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3 / 2, unit: UNITS.POUND, additionalDetails: '1 inch cubes', section: SECTIONS.CHICKEN },
-        { ...CORNSTARCH, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...SESAME_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LIGHT_SOY_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HONEY, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...RICE_WINE_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...ASIAN_CHILI_GARLIC_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GROUND_GINGER, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '1 inch cubes', section: SECTIONS.CHICKEN },
+        { ...CORNSTARCH, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...SESAME_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...BROCCOLI, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EDAMAME, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CASHEWS, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EDAMAME, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CASHEWS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...GREEN_ONIONS, amount: 4, unit: '', additionalDetails: 'chopped diagonally', section: SECTIONS.TOPPINGS },
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
     ],

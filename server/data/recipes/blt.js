@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BACON, LETTUCE, ROMA_TOMATO, BREAD, MAYONNAISE } = require('./ingredients');
 
 const COOK_BACON = 'Cook Bacon';
@@ -18,18 +18,18 @@ module.exports = {
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '10 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'B.L.T.', link: 'https://www.allrecipes.com/recipe/209578/blt/' }
     ],
     separated: true,
     ingredients: [
-        { ...BACON, amount: 4, unit: UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LETTUCE, amount: 2, unit: UNITS.LEAF, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ROMA_TOMATO, amount: 2, unit: UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BREAD, amount: 2, unit: UNITS.SLICE, additionalDetails: 'toasted', section: SECTIONS.MAIN },
-        { ...MAYONNAISE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BACON, amount: 4, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LETTUCE, amount: 2, unit: INGREDIENT_UNITS.LEAF, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ROMA_TOMATO, amount: 2, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BREAD, amount: 2, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'toasted', section: SECTIONS.MAIN },
+        { ...MAYONNAISE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

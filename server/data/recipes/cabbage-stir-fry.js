@@ -1,7 +1,7 @@
 const cabbageStirFry = '../assets/Products/cabbage-stir-fry.jpeg';
 const raw = '../assets/Products/cabbage-stir-fry-raw.jpeg';
 const bowl = '../assets/Products/cabbage-stir-fry-in-bowl.jpeg';
-const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     CABBAGE,
     RED_PEPPER_FLAKES,
@@ -18,12 +18,12 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.VEGETABLE],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '3 m',
-    cookTime: '10 m',
+    prepTime: { amount: 3, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...CABBAGE, amount: 1 / 2, unit: UNITS.HEAD, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...CABBAGE, amount: 1 / 2, unit: INGREDIENT_UNITS.HEAD, additionalDetails: 'chopped', section: SECTIONS.MAIN },
         { ...RED_PEPPER_FLAKES, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...SESAME_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SESAME_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

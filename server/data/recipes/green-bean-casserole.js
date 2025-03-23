@@ -6,7 +6,7 @@ const mix1 = '../assets/Products/green-bean-casserole-mix-1.jpeg';
 const mix2 = '../assets/Products/green-bean-casserole-mix-2.jpeg';
 const mix3 = '../assets/Products/green-bean-casserole-mix-3.jpeg';
 const mix4 = '../assets/Products/green-bean-casserole-mix-4.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { CANNED_GREEN_BEANS, CREAM_OF_MUSHROOM, MILK, LIGHT_SOY_SAUCE, BLACK_PEPPER, SALT, CRISPY_FRIED_ONIONS } = require('./ingredients');
 
 const CASSEROLE = 'Casserole';
@@ -21,21 +21,21 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.CASSEROLE],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '45 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Green Bean Casserole', link: 'https://www.spendwithpennies.com/classic-green-bean-casserole/' }
     ],
     separated: true,
     ingredients: [
-        { ...CANNED_GREEN_BEANS, amount: 58, unit: UNITS.OUNCE, additionalDetails: 'drained', section: CASSEROLE },
-        { ...CREAM_OF_MUSHROOM, amount: 10.5, unit: UNITS.OUNCE, additionalDetails: '', section: CASSEROLE },
-        { ...MILK, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: CASSEROLE },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE },
-        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE },
-        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: 'to taste', section: CASSEROLE },
-        { ...CRISPY_FRIED_ONIONS, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CASSEROLE },
-        { ...CRISPY_FRIED_ONIONS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...CANNED_GREEN_BEANS, amount: 58, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'drained', section: CASSEROLE },
+        { ...CREAM_OF_MUSHROOM, amount: 10.5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: CASSEROLE },
+        { ...MILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CASSEROLE },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', section: CASSEROLE },
+        { ...CRISPY_FRIED_ONIONS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CASSEROLE },
+        { ...CRISPY_FRIED_ONIONS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'oven' },

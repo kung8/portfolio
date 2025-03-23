@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { HEAVY_CREAM, EGG, LEMON_ZEST, SALT, CAYENNE_PEPPER, NUTMEG, BREAD, COOKED_HAM, UNSALTED_BUTTER, SWISS_CHEESE } = require('./ingredients');
 
 const BATTER_SECTION = 'Batter';
@@ -23,25 +23,25 @@ module.exports = {
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '10 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Monte Cristo Sandwich', link: 'https://www.allrecipes.com/recipe/264681/madame-cristo-grilled-ham-and-cheese/' }
     ],
     separated: true,
     ingredients: [
-        { ...HEAVY_CREAM, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: BATTER_SECTION },
+        { ...HEAVY_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BATTER_SECTION },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: BATTER_SECTION },
-        { ...LEMON_ZEST, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: BATTER_SECTION },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: BATTER_SECTION },
-        { ...CAYENNE_PEPPER, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: BATTER_SECTION },
-        { ...NUTMEG, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: BATTER_SECTION },
+        { ...LEMON_ZEST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BATTER_SECTION },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BATTER_SECTION },
+        { ...CAYENNE_PEPPER, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: BATTER_SECTION },
+        { ...NUTMEG, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: BATTER_SECTION },
 
-        { ...BREAD, amount: 4, unit: UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
-        { ...SWISS_CHEESE, amount: 8, unit: UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
-        { ...COOKED_HAM, amount: 4, unit: UNITS.OUNCE, additionalDetails: 'sliced', section: SANDWICH_SECTION },
-        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SANDWICH_SECTION },
-        { ...CAYENNE_PEPPER, amount: 2, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...BREAD, amount: 4, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
+        { ...SWISS_CHEESE, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
+        { ...COOKED_HAM, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'sliced', section: SANDWICH_SECTION },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SANDWICH_SECTION },
+        { ...CAYENNE_PEPPER, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'toaster' },

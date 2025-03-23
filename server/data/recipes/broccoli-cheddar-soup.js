@@ -6,7 +6,7 @@ const sauteed = '../assets/Products/broccoli-cheddar-soup-sauteed-onion.jpeg';
 const simmering1 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-1.jpeg';
 const simmering2 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-2.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     YELLOW_ONION,
@@ -35,22 +35,22 @@ module.exports = {
     method: [METHODS.SLOW_COOK],
     type: [TYPES.BREAD, TYPES.SOUP],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '25 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
         { label: 'Panera Broccoli Cheese Soup', link: 'https://www.the-girl-who-ate-everything.com/panera-broccoli-cheese-soup/' }
     ],
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
-        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.SOUP },
-        { ...ALL_PURPOSE_FLOUR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
-        { ...HALF_AND_HALF, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
-        { ...CHICKEN_BROTH, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
-        { ...BROCCOLI, amount: 2, unit: UNITS.HEAD, additionalDetails: 'chopped', section: SECTIONS.SOUP },
-        { ...CARROTS, amount: 1, unit: UNITS.CUP, additionalDetails: 'matchstick', section: SECTIONS.SOUP },
-        { ...NUTMEG, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SOUP },
-        { ...CHEDDAR_CHEESE, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.SOUP },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...HALF_AND_HALF, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...CHICKEN_BROTH, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...BROCCOLI, amount: 2, unit: INGREDIENT_UNITS.HEAD, additionalDetails: 'chopped', section: SECTIONS.SOUP },
+        { ...CARROTS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'matchstick', section: SECTIONS.SOUP },
+        { ...NUTMEG, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...CHEDDAR_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SOUP },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SOUP },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SOUP },
         { ...BREAD_BOWLS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },

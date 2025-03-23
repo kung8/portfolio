@@ -1,5 +1,5 @@
 const eggCasserole = '../assets/Products/egg-casserole.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     BREAD,
     CHEDDAR_CHEESE,
@@ -25,18 +25,18 @@ module.exports = {
     protein: [PROTEIN.EGG],
     type: [TYPES.BREAD, TYPES.CASSEROLE],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '1 h',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     ingredients: [
         { ...BREAD, amount: 8, unit: '', additionalDetails: 'cubed', optional: false },
-        { ...CHEDDAR_CHEESE, amount: 2, unit: UNITS.CUP, additionalDetails: 'shredded', optional: false },
-        { ...COOKED_HAM, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: 'diced', optional: false },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: 'diced', optional: false },
-        { ...RED_BELL_PEPPERS, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: 'diced', optional: false },
+        { ...CHEDDAR_CHEESE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', optional: false },
+        { ...COOKED_HAM, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', optional: false },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', optional: false },
+        { ...RED_BELL_PEPPERS, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', optional: false },
         { ...EGG, amount: 6, unit: '', additionalDetails: '', optional: false },
-        { ...MILK, amount: 3, unit: UNITS.CUP, additionalDetails: '', optional: false },
-        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...MILK, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
         { ...KETCHUP, amount: '', unit: '', additionalDetails: '(optional)', optional: false },
         { ...SALSA, amount: '', unit: '', additionalDetails: '(optional)', optional: false },
     ],

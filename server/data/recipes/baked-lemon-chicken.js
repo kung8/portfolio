@@ -1,7 +1,7 @@
 const plate = '../assets/Products/baked-lemon-chicken-plate.jpeg';
 const full = '../assets/Products/baked-lemon-chicken-full-plate.jpeg';
 const pan = '../assets/Products/baked-lemon-chicken-pan.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     CHICKEN_WINGS,
     UNSALTED_BUTTER,
@@ -27,19 +27,19 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '50 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Baked Lemon Chicken', link: 'https://www.lecremedelacrumb.com/easy-healthy-baked-lemon-chicken/' }
     ],
     ingredients: [
-        { ...CHICKEN_WINGS, amount: 10, unit: UNITS.PIECES, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHICKEN_BROTH, amount: 1/3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LEMON_JUICE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HONEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...ITALIAN_SEASONING, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_WINGS, amount: 10, unit: INGREDIENT_UNITS.PIECES, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_BROTH, amount: 1/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LEMON_JUICE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...ITALIAN_SEASONING, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...ROSEMARY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },

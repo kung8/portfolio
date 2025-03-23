@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, DURUM_WHEAT, EGG, RICOTTA_CHEESE, PARMIGIANO_REGGIANO, SALT, BLACK_PEPPER, UNSALTED_BUTTER, SAGE, FRESH_SAGE } = require('./ingredients');
 
 const PASTA_SECTIONS = 'Pasta';
@@ -25,27 +25,27 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     type: [TYPES.PASTA],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '45 m',
-    cookTime: '15 m',
-    waitTime: '30 m',
+    prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Ravioli', link: 'https://www.saturdaysinrome.com/blog/ricotta-ravioli-recipe/' }
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 2/3, unit: UNITS.CUP, additionalDetails: '', section: PASTA_SECTIONS },
-        { ...DURUM_WHEAT, amount: 2/3, unit: UNITS.CUP, additionalDetails: '', section: PASTA_SECTIONS },
+        { ...ALL_PURPOSE_FLOUR, amount: 2/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PASTA_SECTIONS },
+        { ...DURUM_WHEAT, amount: 2/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PASTA_SECTIONS },
         { ...EGG, amount: 3, unit: '', additionalDetails: '', section: PASTA_SECTIONS },
 
-        { ...RICOTTA_CHEESE, amount: 18, unit: UNITS.OUNCE, additionalDetails: '', section: FILLING_SECTIONS },
+        { ...RICOTTA_CHEESE, amount: 18, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: FILLING_SECTIONS },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: FILLING_SECTIONS },
-        { ...PARMIGIANO_REGGIANO, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: FILLING_SECTIONS },
-        { ...SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: FILLING_SECTIONS },
-        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: FILLING_SECTIONS },
+        { ...PARMIGIANO_REGGIANO, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FILLING_SECTIONS },
+        { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FILLING_SECTIONS },
+        { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FILLING_SECTIONS },
 
-        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTIONS },
+        { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTIONS },
         { ...FRESH_SAGE, amount: '', unit: '', additionalDetails: '', section: SAUCE_SECTIONS },
-        { ...PARMIGIANO_REGGIANO, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTIONS },
+        { ...PARMIGIANO_REGGIANO, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTIONS },
     ],
     appliances: [
         { name: 'refrigerator' },

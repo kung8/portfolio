@@ -7,7 +7,7 @@ const mixed = '../assets/Products/popcorn-balls-unmelted-mixed.jpeg';
 const unmeltedZoomed = '../assets/Products/popcorn-balls-unmelted-zoomed.jpeg';
 const baggiesZoomed = '../assets/Products/popcorn-ball-in-baggies-zoomed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { POPCORN, CORN_SYRUP, UNSALTED_BUTTER, COLD_WATER, POWDERED_SUGAR, MINI_MARSHMALLOWS, COOKING_SPRAY } = require('./ingredients');
 
 module.exports = {
@@ -20,19 +20,19 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     type: [TYPES.DESSERT],
     yields: { amount: 20, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '20 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Popcorn Balls', link: "https://www.allrecipes.com/recipe/20519/best-ever-popcorn-balls/" }
     ],
     separated: false,
     ingredients: [
-        { ...POPCORN, amount: 5, unit: UNITS.QUART, additionalDetails: 'plain', section: SECTIONS.MAIN },
-        { ...CORN_SYRUP, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COLD_WATER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...POWDERED_SUGAR, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MINI_MARSHMALLOWS, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...POPCORN, amount: 5, unit: INGREDIENT_UNITS.QUART, additionalDetails: 'plain', section: SECTIONS.MAIN },
+        { ...CORN_SYRUP, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COLD_WATER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...POWDERED_SUGAR, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MINI_MARSHMALLOWS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [

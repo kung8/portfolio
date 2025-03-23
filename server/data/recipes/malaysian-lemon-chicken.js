@@ -1,5 +1,5 @@
 const lemonChicken = '../assets/Products/lemon-chicken.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     BONELESS_CHICKEN_THIGH,
     LIGHT_SOY_SAUCE,
@@ -25,26 +25,26 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '10 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
         { label: 'Lemon Chicken', link: 'https://rasamalaysia.com/lemon-chicken/' }
     ],
     ingredients: [
-        { ...BONELESS_CHICKEN_THIGH, amount: 3, unit: UNITS.POUND, additionalDetails: 'cut into small pieces', section: SECTIONS.MARINADE },
-        { ...LIGHT_SOY_SAUCE, amount: 5 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...SHAOXING_WINE, amount: 5 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...CORNSTARCH, amount: 5, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...CORNSTARCH, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BONELESS_CHICKEN_THIGH, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into small pieces', section: SECTIONS.MARINADE },
+        { ...LIGHT_SOY_SAUCE, amount: 5 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...SHAOXING_WINE, amount: 5 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CORNSTARCH, amount: 5, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CORNSTARCH, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for deep-frying', section: SECTIONS.MAIN },
-        { ...LEMON_JUICE, amount: 15, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHITE_SUGAR, amount: 5, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WARM_WATER, amount: 25, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...CORNSTARCH, amount: 5, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SALT, amount: 5, unit: UNITS.PINCH, additionalDetails: 'to taste', section: SECTIONS.SAUCE },
-        { ...SESAME_SEEDS, amount: 5 / 2, unit: UNITS.TEASPOON, additionalDetails: 'topping', section: SECTIONS.TOPPINGS },
+        { ...LEMON_JUICE, amount: 15, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 5, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WARM_WATER, amount: 25, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CORNSTARCH, amount: 5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: 5, unit: INGREDIENT_UNITS.PINCH, additionalDetails: 'to taste', section: SECTIONS.SAUCE },
+        { ...SESAME_SEEDS, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'topping', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { WARM_WATER, WHITE_SUGAR, YEAST, EGG, EVAPORATED_MILK, VANILLA_EXTRACT, BREAD_FLOUR, SALT, UNSALTED_BUTTER, PEANUT_OIL, POWDERED_SUGAR } = require('./ingredients');
 
 const YEAST_MIXTURE_SECTION = 'Yeast Mixture';
@@ -22,25 +22,25 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     type: [TYPES.DESSERT],
     yields: { amount: 3, unit: YIELD_UNITS.DOZEN },
-    prepTime: '30 m',
-    cookTime: '15 m',
-    waitTime: '2 h 10 m',
+    prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 130, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Beignets', link: 'https://bakerbynature.com/new-orleans-style-beignets/' }
     ],
     separated: true,
     ingredients: [
-        { ...WARM_WATER, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
-        { ...WHITE_SUGAR, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
-        { ...YEAST, amount: 9 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
+        { ...WARM_WATER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
+        { ...WHITE_SUGAR, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
+        { ...YEAST, amount: 9 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
         { ...EGG, amount: 2, unit: '', additionalDetails: 'room temperature', section: DOUGH_SECTION },
-        { ...EVAPORATED_MILK, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...VANILLA_EXTRACT, amount: 5 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...BREAD_FLOUR, amount: 7, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...SALT, amount: 1.5, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...UNSALTED_BUTTER, amount: 5, unit: UNITS.TABLESPOON, additionalDetails: 'room temperature', section: DOUGH_SECTION },
-        { ...PEANUT_OIL, amount: 4, unit: UNITS.CUP, additionalDetails: '', section: DEEP_FRY },
-        { ...POWDERED_SUGAR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...EVAPORATED_MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...VANILLA_EXTRACT, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...BREAD_FLOUR, amount: 7, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...SALT, amount: 1.5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...UNSALTED_BUTTER, amount: 5, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'room temperature', section: DOUGH_SECTION },
+        { ...PEANUT_OIL, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DEEP_FRY },
+        { ...POWDERED_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

@@ -8,7 +8,7 @@ const beef = '../assets/Products/chinese-green-bean-and-beef-raw-beef.jpeg';
 const sauce = '../assets/Products/chinese-green-bean-and-beef-sauce.jpeg';
 const sautedBeans = '../assets/Products/chinese-green-bean-and-beef-sauted-green-beans.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     GREEN_BEANS,
     BEEF_CHUCK_ROAST,
@@ -35,23 +35,23 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.RICE, TYPES.VEGETABLE],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '20 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
         { label: 'Green Bean Beef', link: "https://todayscreativelife.com/chinese-beef-green-beans/" }
     ],
     ingredients: [
-        { ...CHICKEN_BROTH, amount: 1 / 3, unit: UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { ...OYSTER_SAUCE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { ...RICE_WINE_VINEGAR, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { ...RED_PEPPER_FLAKES, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
-        { ...VEGETABLE_OIL, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { ...BEEF_CHUCK_ROAST, amount: 1, unit: UNITS.POUND, additionalDetails: 'thin strips', optional: false, section: SECTIONS.MAIN },
-        { ...GREEN_BEANS, amount: 24, unit: UNITS.OUNCE, additionalDetails: 'cut to 2" pieces', optional: false, section: SECTIONS.MAIN },
+        { ...CHICKEN_BROTH, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
+        { ...OYSTER_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
+        { ...RICE_WINE_VINEGAR, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
+        { ...RED_PEPPER_FLAKES, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
+        { ...VEGETABLE_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { ...BEEF_CHUCK_ROAST, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thin strips', optional: false, section: SECTIONS.MAIN },
+        { ...GREEN_BEANS, amount: 24, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'cut to 2" pieces', optional: false, section: SECTIONS.MAIN },
         { ...GREEN_ONIONS, amount: 6, unit: '', additionalDetails: 'diagonally sliced', optional: false, section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
     ],

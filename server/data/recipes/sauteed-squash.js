@@ -4,7 +4,7 @@ const oil = '../assets/Products/sauteed-squash-oil-in-pan.jpeg';
 const onions = '../assets/Products/sauteed-squash-onions.jpeg';
 const plated = '../assets/Products/sauteed-squash-plated.jpeg';
 const raw = '../assets/Products/sauteed-squash-raw.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     OLIVE_OIL,
     UNSALTED_BUTTER,
@@ -27,22 +27,22 @@ module.exports = {
     method: [METHODS.SAUTE],
     type: [TYPES.VEGETABLE],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '25 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Sauteed Zucchini', link: "https://www.wellplated.com/sauteed-zucchini/" }
     ],
     separated: false,
     ingredients: [
-        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...ZUCCHINI, amount: 3, unit: '', additionalDetails: 'sliced into 2"', section: SECTIONS.MAIN },
         { ...SUMMER_SQUASH, amount: 1, unit: '', additionalDetails: 'sliced into 2"', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...THYME, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PARMESAN_CHEESE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...THYME, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PARMESAN_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

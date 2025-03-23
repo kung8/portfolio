@@ -2,7 +2,7 @@ const plated1 = '../assets/Products/sticky-toffee-pudding-plated-1.jpeg';
 const plated2 = '../assets/Products/sticky-toffee-pudding-plated-2.jpeg';
 const plated3 = '../assets/Products/sticky-toffee-pudding-plated-3.jpeg';
 const plated4 = '../assets/Products/sticky-toffee-pudding-plated-4.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { HEAVY_CREAM, UNSALTED_BUTTER, BROWN_SUGAR, VANILLA_EXTRACT, DATES, COLD_WATER, BAKING_SODA, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, ALLSPICE, NUTMEG, WHITE_SUGAR, EGG, WALNUTS } = require('./ingredients');
 
 const TOFFEE_SAUCE = 'Toffee Sauce';
@@ -20,31 +20,31 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT, TYPES.CAKE],
     yields: { amount: 15, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '1 h',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Sticky Toffee Pudding', link: 'https://vanillaqueen.com/sticky-toffee-pudding/' }
     ],
     separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 16, unit: UNITS.TABLESPOON, additionalDetails: '', section: TOFFEE_SAUCE },
-        { ...BROWN_SUGAR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: TOFFEE_SAUCE },
-        { ...HEAVY_CREAM, amount: 10 / 3, unit: UNITS.CUP, additionalDetails: '', section: TOFFEE_SAUCE },
-        { ...VANILLA_EXTRACT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: TOFFEE_SAUCE },
+        { ...UNSALTED_BUTTER, amount: 16, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TOFFEE_SAUCE },
+        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TOFFEE_SAUCE },
+        { ...HEAVY_CREAM, amount: 10 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TOFFEE_SAUCE },
+        { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TOFFEE_SAUCE },
 
-        { ...DATES, amount: 6, unit: UNITS.OUNCE, additionalDetails: '', section: PUDDING },
-        { ...COLD_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PUDDING },
-        { ...BAKING_SODA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
-        { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: PUDDING },
-        { ...BAKING_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
-        { ...ALLSPICE, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
-        { ...NUTMEG, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
-        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: PUDDING },
-        { ...WHITE_SUGAR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: PUDDING },
+        { ...DATES, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PUDDING },
+        { ...COLD_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUDDING },
+        { ...BAKING_SODA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUDDING },
+        { ...BAKING_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...ALLSPICE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...NUTMEG, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PUDDING },
+        { ...WHITE_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUDDING },
         { ...EGG, amount: 2, unit: '', additionalDetails: 'room temperature', section: PUDDING },
-        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
-        { ...WALNUTS, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: PUDDING },
+        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
+        { ...WALNUTS, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUDDING },
     ],
     appliances: [
         { name: 'stove' },

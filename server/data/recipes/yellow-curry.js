@@ -11,7 +11,7 @@ const curry16 = '../assets/Products/yellow-curry-16.jpeg';
 const curry17 = '../assets/Products/yellow-curry-17.jpeg';
 const curry18 = '../assets/Products/yellow-curry-18.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { OLIVE_OIL, YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_BREAST, YUKON_GOLD_POTATOES, CARROTS, YELLOW_CURRY_PASTE, GINGER, GARLIC, COCONUT_MILK, CORNSTARCH, FISH_SAUCE, LIME_JUICE, BROWN_SUGAR, CILANTRO, SRIRACHA_SAUCE } = require('./ingredients');
 
 const YELLOW_CURRY_SECTION = 'Yellow Curry';
@@ -29,26 +29,26 @@ module.exports = {
     protein: [PROTEIN.CHICKEN, PROTEIN.ALTERNATIVE],
     type: [TYPES.CURRY],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '40 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Yellow Curry', link: 'https://tastesbetterfromscratch.com/yellow-curry/' }
     ],
     separated: true,
     ingredients: [
-        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'chopped', section: YELLOW_CURRY_SECTION },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 1, unit: UNITS.POUND, additionalDetails: 'cut into thin slices (2 inches long)', section: YELLOW_CURRY_SECTION },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'chopped', section: YELLOW_CURRY_SECTION },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into thin slices (2 inches long)', section: YELLOW_CURRY_SECTION },
         { ...YUKON_GOLD_POTATOES, amount: 2, unit: '', additionalDetails: '1/2 inch cubes', section: YELLOW_CURRY_SECTION },
         { ...CARROTS, amount: 1, unit: '', additionalDetails: 'thinly sliced', section: YELLOW_CURRY_SECTION },
-        { ...YELLOW_CURRY_PASTE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...GINGER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: 'grated', section: YELLOW_CURRY_SECTION },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'minced', section: YELLOW_CURRY_SECTION },
-        { ...COCONUT_MILK, amount: 27, unit: UNITS.OUNCE, additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...CORNSTARCH, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...FISH_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...LIME_JUICE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
-        { ...BROWN_SUGAR, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...YELLOW_CURRY_PASTE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...GINGER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'grated', section: YELLOW_CURRY_SECTION },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: YELLOW_CURRY_SECTION },
+        { ...COCONUT_MILK, amount: 27, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...FISH_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...LIME_JUICE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
+        { ...BROWN_SUGAR, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: YELLOW_CURRY_SECTION },
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...SRIRACHA_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],

@@ -10,7 +10,7 @@ const {
     ALL_PURPOSE_FLOUR,
     WARM_WATER,
 } = require('./ingredients');
-const { UNITS, YIELD_UNITS } = require('./constants');
+const { INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 
 const CREATING_STARTER = 'Creating Starter';
 const FEEDING_STARTER = 'Feeding Starter';
@@ -21,16 +21,16 @@ module.exports = {
     img: risen,
     available: true,
     yields: { amount: 'Infinite', unit: YIELD_UNITS.SERVING },
-    prepTime: '35 m',
+    prepTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Sourdough Starter', link: "https://littlespoonfarm.com/sourdough-starter-recipe/" }
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 7 / 2, unit: UNITS.CUP, additionalDetails: 'divided', section: CREATING_STARTER },
-        { ...WARM_WATER, amount: 7 / 4, unit: UNITS.CUP, additionalDetails: 'divided', section: CREATING_STARTER },
-        { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: FEEDING_STARTER },
-        { ...WARM_WATER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: FEEDING_STARTER },
+        { ...ALL_PURPOSE_FLOUR, amount: 7 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'divided', section: CREATING_STARTER },
+        { ...WARM_WATER, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'divided', section: CREATING_STARTER },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FEEDING_STARTER },
+        { ...WARM_WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FEEDING_STARTER },
     ],
     supplies: [
         { name: 'jar' },

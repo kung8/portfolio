@@ -1,6 +1,6 @@
 const banhTieu = '../assets/Products/banh-tieu.jpeg';
 const flat = '../assets/Products/banh-tieu-flat.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
     BREAD_FLOUR,
     WARM_WATER,
@@ -22,17 +22,17 @@ module.exports = {
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '7 m',
-    waitTime: '4 h',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 7, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 4, unit: TIME_UNITS.HOUR },
     separated: true,
     ingredients: [
-        { ...BREAD_FLOUR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WARM_WATER, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...YEAST, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...BAKING_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BREAD_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WARM_WATER, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],

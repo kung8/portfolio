@@ -1,5 +1,5 @@
 const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     OLIVE_OIL,
     RED_BELL_PEPPERS,
@@ -23,20 +23,20 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.SANDWICH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '25 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Philly Cheesesteak', link: 'https://momsdish.com/easy-philly-cheesesteak' }
     ],
     ingredients: [
-        { ...BEEF_RIBEYE_STEAK, amount: 2, unit: UNITS.POUND, additionalDetails: 'thin strips', optional: false },
+        { ...BEEF_RIBEYE_STEAK, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thin strips', optional: false },
         { ...RED_BELL_PEPPERS, amount: 2, unit: '', additionalDetails: 'sliced strips', optional: false },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.LARGE, additionalDetails: 'sliced strips', optional: false },
-        { ...MUSHROOMS, amount: 1, unit: UNITS.POUND, additionalDetails: 'sliced', optional: true },
-        { ...PROVOLONE_CHEESE, amount: 1, unit: UNITS.POUND, additionalDetails: '', optional: false },
-        { ...OLIVE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...SALT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...BLACK_PEPPER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced strips', optional: false },
+        { ...MUSHROOMS, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: true },
+        { ...PROVOLONE_CHEESE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
         { ...HOAGIE_BREAD, amount: 6, unit: '', additionalDetails: '', optional: false },
     ],
     appliances: [

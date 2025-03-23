@@ -1,5 +1,5 @@
 const parfait = '../assets/Products/parfait.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     PLAIN_YOGURT,
     VANILLA_EXTRACT,
@@ -18,12 +18,12 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
-    prepTime: '1 m',
-    cookTime: '1 m',
+    prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...PLAIN_YOGURT, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { ...HONEY, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...PLAIN_YOGURT, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
         { ...GRANOLA, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
         { ...BERRIES, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
         { ...CASHEWS, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },

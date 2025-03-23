@@ -5,7 +5,7 @@ const riceKrispy = '../assets/Products/rice-krispy-treat-rice-krispy.jpeg';
 const vanilla = '../assets/Products/rice-krispy-treat-vanilla.jpeg';
 const zoomed3 = '../assets/Products/rice-krispy-treat-zoomed-center-3.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const { MINI_MARSHMALLOWS, UNSALTED_BUTTER, VANILLA_EXTRACT, RICE_KRISPIES_CEREAL } = require('./ingredients');
 
 module.exports = {
@@ -17,16 +17,16 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
-    prepTime: '1 m',
-    cookTime: '20 m',
+    prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Rice Krispie Treats', link: "https://www.spendwithpennies.com/extra-chewy-rice-krispie-treats/" }
     ],
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MINI_MARSHMALLOWS, amount: 6, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RICE_KRISPIES_CEREAL, amount: 6, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MINI_MARSHMALLOWS, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...RICE_KRISPIES_CEREAL, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

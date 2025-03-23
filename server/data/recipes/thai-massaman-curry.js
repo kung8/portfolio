@@ -1,5 +1,5 @@
 const thaiMassamanCurry = '../assets/Products/thai-massaman-curry.jpeg';
-const { CATEGORIES, GENRES, TYPES, METHODS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {} = require('./ingredients');
 
 module.exports = {
@@ -12,8 +12,8 @@ module.exports = {
     method: [METHODS.SIMMER],
     type: [TYPES.CURRY, TYPES.RICE],
     yields: { amount: '', unit: YIELD_UNITS.SERVING },
-    prepTime: 'm',
-    cookTime: 'm',
+    prepTime: { amount: '', unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: '', unit: TIME_UNITS.MINUTE },
     ingredients: [
         { name: '', amount: '', unit: '', additionalDetails: '', section: '' },
     ],

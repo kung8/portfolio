@@ -11,7 +11,7 @@ const nonBeans3 = '../assets/Products/khmer-red-curry-non-green-beans-3.jpeg';
 const plated1 = '../assets/Products/khmer-red-curry-plated-1.jpeg';
 const veggies = '../assets/Products/khmer-red-curry-veggies.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     RED_CURRY_PASTE,
@@ -35,17 +35,17 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CURRY],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '7 m',
-    cookTime: '25 m',
+    prepTime: { amount: 7, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Khmer Red Chicken Curry', link: 'https://cambodiarecipe.com/recipe/khmer-red-chicken-curry/' }
     ],
     separated: false,
     ingredients: [
-        { ...CHICKEN_THIGH, amount: 5, unit: UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...RED_CURRY_PASTE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_THIGH, amount: 5, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...RED_CURRY_PASTE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...RUSSET_POTATOES, amount: 1, unit: '', additionalDetails: 'peeled and cubed', section: SECTIONS.MAIN },
-        { ...COCONUT_MILK, amount: 13.5, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COCONUT_MILK, amount: 13.5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...LEMONGRASS, amount: '', unit: '', additionalDetails: 'diagonally sliced', section: SECTIONS.MAIN },
         { ...KAFFIR_LIME_LEAVES, amount: 12, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...WARM_WATER, amount: '', unit: '', additionalDetails: 'to thin', section: SECTIONS.MAIN },

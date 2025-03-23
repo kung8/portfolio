@@ -1,5 +1,5 @@
 const satay = '../assets/Products/malaysian-satay.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     WHITE_SUGAR,
@@ -25,23 +25,24 @@ module.exports = {
     method: [METHODS.MARINADE, METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '12 m',
-    cookTime: '25 m',
+    prepTime: { amount: 12, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 6, unit: TIME_UNITS.HOUR },
     separated: true,
     websites: [
         { label: 'Chicken Satay', link: 'https://rasamalaysia.com/recipe-chicken-satay/' }
     ],
     ingredients: [
-        { ...CHICKEN_THIGH, amount: 2, unit: UNITS.POUND, additionalDetails: 'chunks', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...LEMONGRASS, amount: 2, unit: UNITS.STALK, additionalDetails: 'diced', section: SECTIONS.MARINADE },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: 'diced', section: SECTIONS.MARINADE },
-        { ...YELLOW_ONION, amount: 6, unit: UNITS.SMALL, additionalDetails: 'diced', section: SECTIONS.MARINADE },
-        { ...TURMERIC, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...CHILI_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...CORIANDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...VEGETABLE_OIL, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'chunks', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...LEMONGRASS, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: 'diced', section: SECTIONS.MARINADE },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'diced', section: SECTIONS.MARINADE },
+        { ...YELLOW_ONION, amount: 6, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', section: SECTIONS.MARINADE },
+        { ...TURMERIC, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CHILI_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CORIANDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...VEGETABLE_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...CUCUMBER, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.SERVE },
     ],
     appliances: [

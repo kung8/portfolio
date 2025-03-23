@@ -1,5 +1,5 @@
 const smores = '../assets/Products/smores.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     GRAHAM_CRACKER,
     MARSHMALLOW,
@@ -15,8 +15,8 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
-    prepTime: '1 m',
-    cookTime: '5 m',
+    prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     ingredients: [
         { ...GRAHAM_CRACKER, amount: 2, unit: '', additionalDetails: '', optional: false },
         { ...MARSHMALLOW, amount: 2, unit: '', additionalDetails: '', optional: false },

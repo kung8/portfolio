@@ -6,7 +6,7 @@ const filling = '../assets/Products/potstickers-filling.jpeg';
 const raw = '../assets/Products/potstickers-raw.jpeg';
 const zoomed = '../assets/Products/potstickers-zoomed.jpeg';
 const potstickers = '../assets/Products/potstickers.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     GROUND_PORK,
     GARLIC,
@@ -38,30 +38,30 @@ module.exports = {
     protein: [PROTEIN.PORK],
     types: [TYPES.FINGER_FOOD],
     yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
-    prepTime: '30 m',
-    cookTime: '12 m',
-    waitTime: '1 h',
+    prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Potstickers', link: "https://www.allrecipes.com/recipe/261153/perfect-pot-stickers/" }
     ],
     separated: false,
     ingredients: [
-        { ...GROUND_PORK, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.FILLING },
-        { ...GREEN_ONIONS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'finely diced', section: SECTIONS.FILLING },
-        { ...GINGER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'minced', section: SECTIONS.FILLING },
-        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...SESAME_OIL, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CAYENNE_PEPPER, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CABBAGE, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: 'finely chopped', section: SECTIONS.FILLING },
-        { ...ALL_PURPOSE_FLOUR, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...HOT_WATER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...SALT, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...RICE_WINE_VINEGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE },
-        { ...VEGETABLE_OIL, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WARM_WATER, amount: 8, unit: UNITS.TABLESPOON, additionalDetails: 'for steaming', section: SECTIONS.MAIN },
+        { ...GROUND_PORK, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...GREEN_ONIONS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'finely diced', section: SECTIONS.FILLING },
+        { ...GINGER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SESAME_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CAYENNE_PEPPER, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CABBAGE, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'finely chopped', section: SECTIONS.FILLING },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...HOT_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...RICE_WINE_VINEGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE },
+        { ...VEGETABLE_OIL, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: 8, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'for steaming', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

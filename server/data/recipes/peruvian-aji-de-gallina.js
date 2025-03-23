@@ -8,7 +8,7 @@ const garlic = '../assets/Products/aji-de-gallina-garlic.jpeg';
 const onion = '../assets/Products/aji-de-gallina-onion.jpeg';
 const shredded = '../assets/Products/aji-de-gallina-shredded-chicken.jpeg';
 const aji = '../assets/Products/aji-de-gallina.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     YELLOW_ONION,
@@ -46,26 +46,26 @@ module.exports = {
     type: [TYPES.RICE],
     separated: true,
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '25 - 40 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Aji de Gallina', link: 'https://www.carolinescooking.com/aji-de-gallina-peruvian-chicken-stew/' }
     ],
     ingredients: [
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.LARGE, additionalDetails: 'diced', optional: false, section: ONION_SECTION },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
-        { ...OREGANO, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
-        { ...NUTMEG, amount: 1, unit: UNITS.PINCH, additionalDetails: '', optional: true, section: ONION_SECTION },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'diced', optional: false, section: ONION_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
+        { ...OREGANO, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
+        { ...NUTMEG, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', optional: true, section: ONION_SECTION },
 
         { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: '', optional: false, section: CHICKEN_SECTION },
 
         { ...YELLOW_BELL_PEPPERS, amount: 3 / 2, unit: '', additionalDetails: '', optional: false, section: SAUCE_SECTION },
         { ...BREAD, amount: 4, unit: '', additionalDetails: '', optional: false, section: SAUCE_SECTION },
-        { ...MILK, amount: 2, unit: UNITS.CUP, additionalDetails: '', optional: false, section: SAUCE_SECTION },
+        { ...MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SAUCE_SECTION },
 
-        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false, section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
 
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', optional: false, section: SECTIONS.SERVE },
     ],

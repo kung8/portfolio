@@ -5,7 +5,7 @@ const gravy4 = '../assets/Products/kfc-gravy-4.jpeg';
 const gravy5 = '../assets/Products/kfc-gravy-5.jpeg';
 const gravy6 = '../assets/Products/mash-potatoes-10.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { HOT_WATER, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, ONION_POWDER, BLACK_PEPPER, SALT, CHICKEN_BOUILLON_CUBE, BEEF_BOUILLON_CUBE } = require('./ingredients');
 
 const GRAVY_SECTION = 'Gravy';
@@ -22,8 +22,8 @@ module.exports = {
     protein: [PROTEIN.BEEF, PROTEIN.CHICKEN],
     type: [TYPES.SAUCE],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '1 m',
-    cookTime: '5 m',
+    prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'KFC Gravy', link: 'https://www.recipetineats.com/gravy/' }
     ],
@@ -31,11 +31,11 @@ module.exports = {
     ingredients: [
         { ...CHICKEN_BOUILLON_CUBE, amount: 1, unit: '', additionalDetails: '', section: GRAVY_SECTION },
         { ...BEEF_BOUILLON_CUBE, amount: 1, unit: '', additionalDetails: '', section: GRAVY_SECTION },
-        { ...HOT_WATER, amount: 9 / 4, unit: UNITS.CUP, additionalDetails: '', section: GRAVY_SECTION },
-        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: GRAVY_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: GRAVY_SECTION },
-        { ...ONION_POWDER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: GRAVY_SECTION },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: GRAVY_SECTION },
+        { ...HOT_WATER, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GRAVY_SECTION },
+        { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: GRAVY_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: GRAVY_SECTION },
+        { ...ONION_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: GRAVY_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: GRAVY_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: GRAVY_SECTION },
     ],
     appliances: [

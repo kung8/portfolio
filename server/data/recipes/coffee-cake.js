@@ -22,7 +22,7 @@ const cake21 = '../assets/Products/coffee-cake-21.jpeg';
 const cake22 = '../assets/Products/coffee-cake-22.jpeg';
 const cake23 = '../assets/Products/coffee-cake-23.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, CREAM_CHEESE, BROWN_SUGAR, WHITE_SUGAR, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, BAKING_POWDER, CORNSTARCH, SALT, BUTTERMILK, CINNAMON, POWDERED_SUGAR, MILK } = require('./ingredients');
 
 const WET_CAKE_BATTER = 'Wet Cake Batter';
@@ -52,39 +52,39 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.CAKE],
     yields: { amount: 24, unit: YIELD_UNITS.SERVING },
-    prepTime: '30 m',
-    cookTime: '40 m',
+    prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Coffee Cake', link: 'https://sugarspunrun.com/cinnamon-coffee-cake/' }
     ],
     separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: WET_CAKE_BATTER },
-        { ...CREAM_CHEESE, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: WET_CAKE_BATTER },
-        { ...BROWN_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: WET_CAKE_BATTER },
-        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: WET_CAKE_BATTER },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_CAKE_BATTER },
+        { ...CREAM_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: WET_CAKE_BATTER },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_CAKE_BATTER },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_CAKE_BATTER },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: WET_CAKE_BATTER },
-        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: WET_CAKE_BATTER },
+        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WET_CAKE_BATTER },
 
-        { ...ALL_PURPOSE_FLOUR, amount: 5 / 2, unit: UNITS.CUP, additionalDetails: '', section: DRY_CAKE_BATTER },
-        { ...BAKING_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_CAKE_BATTER },
-        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_CAKE_BATTER },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: DRY_CAKE_BATTER },
-        { ...BUTTERMILK, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: DRY_CAKE_BATTER },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_CAKE_BATTER },
+        { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_CAKE_BATTER },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_CAKE_BATTER },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_CAKE_BATTER },
+        { ...BUTTERMILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_CAKE_BATTER },
 
-        { ...WHITE_SUGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: CINNAMON_SWIRL_SECTION },
-        { ...CINNAMON, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CINNAMON_SWIRL_SECTION },
+        { ...WHITE_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CINNAMON_SWIRL_SECTION },
+        { ...CINNAMON, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CINNAMON_SWIRL_SECTION },
 
-        { ...UNSALTED_BUTTER, amount: 10, unit: UNITS.TABLESPOON, additionalDetails: 'melted but cooled', section: STREUSEL_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: 4 / 3, unit: UNITS.CUP, additionalDetails: '', section: STREUSEL_SECTION },
-        { ...BROWN_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: STREUSEL_SECTION },
-        { ...BROWN_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: STREUSEL_SECTION },
-        { ...WHITE_SUGAR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: STREUSEL_SECTION },
-        { ...CINNAMON, amount: 9 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: STREUSEL_SECTION },
-        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: STREUSEL_SECTION },
+        { ...UNSALTED_BUTTER, amount: 10, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted but cooled', section: STREUSEL_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 4 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: STREUSEL_SECTION },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: STREUSEL_SECTION },
+        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: STREUSEL_SECTION },
+        { ...WHITE_SUGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: STREUSEL_SECTION },
+        { ...CINNAMON, amount: 9 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: STREUSEL_SECTION },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: STREUSEL_SECTION },
 
-        { ...POWDERED_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: GLAZE_SECTION },
-        { ...MILK, amount: 3, unit: UNITS.TEASPOON, additionalDetails: '', section: GLAZE_SECTION },
+        { ...POWDERED_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GLAZE_SECTION },
+        { ...MILK, amount: 3, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: GLAZE_SECTION },
     ],
     appliances: [
         { name: 'oven' },

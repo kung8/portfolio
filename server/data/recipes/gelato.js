@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { WHOLE_MILK, EGG_YOLKS, WHITE_SUGAR, VANILLA_BEAN } = require('./ingredients');
 
 const GELATO_SECTION = 'Gelato';
@@ -17,16 +17,16 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.FREEZE],
     type: [TYPES.ICE_CREAM],
     yields: { amount: 1, unit: YIELD_UNITS.QUART },
-    prepTime: '10 m',
-    cookTime: '10 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Gelato', link: 'https://foodnouveau.com/how-to-make-gelato/' }
     ],
     separated: true,
     ingredients: [
-        { ...WHOLE_MILK, amount: 3, unit: UNITS.CUP, additionalDetails: '', section: GELATO_SECTION },
+        { ...WHOLE_MILK, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GELATO_SECTION },
         { ...EGG_YOLKS, amount: 5, unit: '', additionalDetails: '', section: GELATO_SECTION },
-        { ...WHITE_SUGAR, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: GELATO_SECTION },
+        { ...WHITE_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GELATO_SECTION },
         { ...VANILLA_BEAN, amount: 1, unit: '', additionalDetails: 'split lengthwise', section: GELATO_SECTION },
     ],
     appliances: [

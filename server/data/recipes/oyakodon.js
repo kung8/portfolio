@@ -11,7 +11,7 @@ const oyakodon10 = '../assets/Products/oyakodon-10.jpeg';
 const oyakodon11 = '../assets/Products/oyakodon-11.jpeg';
 const oyakodon12 = '../assets/Products/oyakodon-12.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHAOXING_WINE, EGG, DASHI, LIGHT_SOY_SAUCE, MIRIN, WHITE_SUGAR, SHORT_GRAINED_RICE, GREEN_ONIONS } = require('./ingredients');
 
 const SEASONING = 'Seasoning';
@@ -33,23 +33,23 @@ module.exports = {
     protein: [PROTEIN.CHICKEN, PROTEIN.EGG],
     type: [TYPES.RICE],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '10 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Oyakodon', link: 'https://www.justonecookbook.com/oyakodon/' }
     ],
     separated: true,
     ingredients: [
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 10, unit: UNITS.OUNCE, additionalDetails: 'thin strips', section: SECTIONS.MAIN },
-        { ...SHAOXING_WINE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'thin strips', section: SECTIONS.MAIN },
+        { ...SHAOXING_WINE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
 
-        { ...DASHI, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SEASONING },
-        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SEASONING },
-        { ...MIRIN, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SEASONING },
-        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SEASONING },
+        { ...DASHI, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SEASONING },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASONING },
+        { ...MIRIN, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASONING },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONING },
 
         { ...SHORT_GRAINED_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],

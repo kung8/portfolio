@@ -18,7 +18,7 @@ const dough1 = '../assets/Products/crescent-rolls-dough-1.jpeg';
 const dough2 = '../assets/Products/crescent-rolls-dough-2.jpeg';
 const balls = '../assets/Products/crescent-rolls-dough-balls.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { LUKEWARM_WATER, YEAST, WHITE_SUGAR, EVAPORATED_MILK, COLD_WATER, SALT, UNSALTED_BUTTER, EGG, ALL_PURPOSE_FLOUR } = require('./ingredients');
 
 const YEAST_MIXTURE = 'Yeast Mixture';
@@ -35,21 +35,21 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
     yields: { amount: 32, unit: YIELD_UNITS.ROLL },
-    prepTime: '15 m',
-    cookTime: '20 m',
-    waitTime: '1 h',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     separated: true,
     ingredients: [
-        { ...LUKEWARM_WATER, amount: 3 / 8, unit: UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE },
-        { ...YEAST, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: YEAST_MIXTURE },
-        { ...WHITE_SUGAR, amount: 7, unit: UNITS.TEASPOON, additionalDetails: '', section: YEAST_MIXTURE },
-        { ...EVAPORATED_MILK, amount: 1, unit: UNITS.CAN, additionalDetails: '', section: LIQUID_MIXTURE },
-        { ...COLD_WATER, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: LIQUID_MIXTURE },
-        { ...SALT, amount: 9 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LUKEWARM_WATER, amount: 3 / 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE },
+        { ...YEAST, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: YEAST_MIXTURE },
+        { ...WHITE_SUGAR, amount: 7, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: YEAST_MIXTURE },
+        { ...EVAPORATED_MILK, amount: 1, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', section: LIQUID_MIXTURE },
+        { ...COLD_WATER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: LIQUID_MIXTURE },
+        { ...SALT, amount: 9 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...EGG, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 8, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

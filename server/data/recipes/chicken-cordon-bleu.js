@@ -10,7 +10,7 @@ const sauce1 = '../assets/Products/chicken-cordon-bleu-sauce-1.jpeg';
 const sauce3 = '../assets/Products/chicken-cordon-bleu-sauce-3.jpeg';
 const cooked1 = '../assets/Products/chicken-cordon-bleu-cooked-1.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, TYPES , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     MAYONNAISE,
@@ -34,8 +34,8 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '30 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
         { label: 'Chicken Cordon Bleu', link: 'https://tastesbetterfromscratch.com/chicken-cordon-bleu/' }
@@ -46,10 +46,10 @@ module.exports = {
         { ...SWISS_CHEESE, amount: 8, unit: '', additionalDetails: 'halved slices', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...CORN_FLAKES_CEREAL, amount: 3, unit: UNITS.CUP, additionalDetails: 'crushed', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MAYONNAISE, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...YELLOW_MUSTARD, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CORN_FLAKES_CEREAL, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MAYONNAISE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...YELLOW_MUSTARD, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'oven' },

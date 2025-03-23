@@ -18,7 +18,7 @@ const veggies = '../assets/Products/pad-see-ew-veggies.jpeg';
 
 const THAI_CHILI_PEPPER = 'Thai Chili Pepper';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     LIGHT_SOY_SAUCE,
@@ -51,37 +51,37 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.NOODLE],
     yields: { amount: 3, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '30 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Chili Vinegar', link: "https://hot-thai-kitchen.com/chili-vinegar/" }
     ],
     separated: true,
     ingredients: [
-        { ...CHICKEN_THIGH, amount: 1 / 2, unit: UNITS.POUND, additionalDetails: 'cut into 2 inches', section: SECTIONS.CHICKEN },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...OYSTER_SAUCE, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
-        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CHICKEN_THIGH, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2 inches', section: SECTIONS.CHICKEN },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...OYSTER_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
 
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...CHINESE_BROCCOLI, amount: 5, unit: UNITS.PIECE, additionalDetails: 'leaves and stems separated', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...CHINESE_BROCCOLI, amount: 5, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'leaves and stems separated', section: SECTIONS.MAIN },
         { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...SNOW_PEAS, amount: 4, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VEGETABLE_OIL, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...FRESH_RICE_NOODLES, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...SNOW_PEAS, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...FRESH_RICE_NOODLES, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
 
-        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...DARK_SOY_SAUCE, amount: 3 / 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...OYSTER_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BROWN_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHITE_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...DARK_SOY_SAUCE, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: '', section: THAI_CHILI_PEPPER },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: THAI_CHILI_PEPPER },
         { ...THAI_CHILI_PEPPERS, amount: 3, unit: '', additionalDetails: '', section: THAI_CHILI_PEPPER },
-        { ...WHITE_VINEGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: THAI_CHILI_PEPPER },
+        { ...WHITE_VINEGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: THAI_CHILI_PEPPER },
     ],
     appliances: [
         { name: 'stove' },

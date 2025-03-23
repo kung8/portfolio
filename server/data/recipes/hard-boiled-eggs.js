@@ -1,5 +1,5 @@
 const egg = '../assets/Products/hard-boiled-egg.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     EGG,
     SALT,
@@ -25,8 +25,8 @@ module.exports = {
     protein: [PROTEIN.EGG],
     type: [TYPES.PROTEIN],
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '10 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     separated: true,
     ingredients: [
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: EGGS_SECTION },
@@ -34,8 +34,8 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: EGGS_SECTION },
         { ...OREGANO, amount: '', unit: '', additionalDetails: 'to taste', section: EGGS_SECTION },
         { ...BASIL, amount: '', unit: '', additionalDetails: 'to taste', section: EGGS_SECTION },
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES },
-        { ...YELLOW_ONION, amount: 1 / 4, unit: UNITS.MEDIUM, additionalDetails: 'diced', section: VEGGIES },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES },
+        { ...YELLOW_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: VEGGIES },
         { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES },
     ],
     appliances: [

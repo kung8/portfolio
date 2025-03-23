@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { MILK, BROWN_SUGAR, YEAST, ALL_PURPOSE_FLOUR, SALT, UNSALTED_BUTTER, EGG } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
@@ -26,20 +26,20 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
     yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
-    prepTime: '14 h',
-    cookTime: '24 m',
-    waitTime: '11 h',
+    prepTime: { amount: 14, unit: TIME_UNITS.HOUR },
+    cookTime: { amount: 24, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 11, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Croissants', link: 'https://www.jocooks.com/recipes/homemade-croissants/' }
     ],
     separated: true,
     ingredients: [
-        { ...MILK, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: 'lukewarm', section: DOUGH_SECTION },
-        { ...BROWN_SUGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...YEAST, amount: 13 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: 13 / 4, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...SALT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...UNSALTED_BUTTER, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: BUTTER_SECTION },
+        { ...MILK, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'lukewarm', section: DOUGH_SECTION },
+        { ...BROWN_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...YEAST, amount: 13 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 13 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...UNSALTED_BUTTER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BUTTER_SECTION },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: EGG_WASH_SECTION },
     ],
     appliances: [

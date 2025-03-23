@@ -5,7 +5,7 @@ const drunken4 = '../assets/Products/drunken-noodles-4.jpeg';
 const drunken5 = '../assets/Products/drunken-noodles-5.jpeg';
 const drunken6 = '../assets/Products/drunken-noodles-6.jpeg';
 const drunken7 = '../assets/Products/drunken-noodles-7.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGG, SERRANO_PEPPERS, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATOES } = require('./ingredients');
 
 const MAKE_SAUCE = 'Make Sauce';
@@ -24,30 +24,30 @@ module.exports = {
     protein: [PROTEIN.SHRIMP],
     type: [TYPES.NOODLE],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '20 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Drunken Noodles', link: 'https://www.foodnetwork.com/recipes/my-famous-drunken-noodles-3827989?fbclid=IwY2xjawIfTmlleHRuA2FlbQIxMAABHVqvQu2XwUkyb_68QE5482xWyQggrknFtByQl4kjDwlqFUsOQo0_ThKjQA_aem_eAwibywVvwmX2-nPbsMtdg' }
     ],
     separated: true,
     ingredients: [
-        { ...SWEET_SOY_SAUCE, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...OYSTER_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...FISH_SAUCE, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SRIRACHA_SAUCE, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...THAI_BASIL, amount: 8, unit: UNITS.LEAF, additionalDetails: 'long thin strips/chiffonade', section: SECTIONS.SAUCE },
+        { ...SWEET_SOY_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...FISH_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SRIRACHA_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...THAI_BASIL, amount: 8, unit: INGREDIENT_UNITS.LEAF, additionalDetails: 'long thin strips/chiffonade', section: SECTIONS.SAUCE },
 
-        { ...PEANUT_OIL, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.NOODLES },
+        { ...PEANUT_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.NOODLES },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
         { ...SERRANO_PEPPERS, amount: 2, unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.NOODLES },
         { ...LARGE_SHRIMP, amount: 8, unit: '', additionalDetails: 'peeled and deveined', section: SECTIONS.NOODLES },
-        { ...WHITE_ONION, amount: 1 / 2, unit: UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.NOODLES },
-        { ...FRESH_RICE_NOODLES, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...THAI_BASIL, amount: 1, unit: UNITS.CUP, additionalDetails: 'packed', section: SECTIONS.NOODLES },
-        { ...GRAPE_TOMATOES, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...WHITE_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.NOODLES },
+        { ...FRESH_RICE_NOODLES, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...THAI_BASIL, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'packed', section: SECTIONS.NOODLES },
+        { ...GRAPE_TOMATOES, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.NOODLES },
     ],
     appliances: [
         { name: 'stove' },

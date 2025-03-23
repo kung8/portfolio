@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { GROUND_BEEF, YELLOW_ONION, GREEN_BELL_PEPPERS, CORN, CHILI_POWDER, GARLIC_SALT, CUMIN, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, FLOUR_TORTILLA, LETTUCE, ROMA_TOMATO, REFRIED_BEANS, TACO_SAUCE } = require('./ingredients');
 
 const BEEF = 'Beef';
@@ -27,28 +27,28 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.CASSEROLE],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '30 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Beef and Bean Chimichangas', link: 'https://www.allrecipes.com/recipe/36766/beef-and-bean-chimichangas/' }
     ],
     separated: true,
     ingredients: [
-        { ...GROUND_BEEF, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: BEEF },
+        { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BEEF },
 
-        { ...YELLOW_ONION, amount: 3/4, unit: UNITS.CUP, additionalDetails: 'chopped', section: VEGGIES },
-        { ...GREEN_BELL_PEPPERS, amount: 3/4, unit: UNITS.CUP, additionalDetails: 'diced', section: VEGGIES },
-        { ...CORN, amount: 1.5, unit: UNITS.CUP, additionalDetails: '', section: VEGGIES },
+        { ...YELLOW_ONION, amount: 3/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: VEGGIES },
+        { ...GREEN_BELL_PEPPERS, amount: 3/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', section: VEGGIES },
+        { ...CORN, amount: 1.5, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: VEGGIES },
 
-        { ...TACO_SAUCE, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SPICES },
-        { ...CHILI_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
-        { ...GARLIC_SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
-        { ...CUMIN, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...TACO_SAUCE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SPICES },
+        { ...CHILI_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...GARLIC_SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...CUMIN, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
 
         { ...FLOUR_TORTILLA, amount: 8, unit: '', additionalDetails: '', section: TORTILLA_AND_OTHER },
-        { ...REFRIED_BEANS, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', section: TORTILLA_AND_OTHER },
-        { ...MONTEREY_JACK_CHEESE, amount: 16, unit: UNITS.OUNCE, additionalDetails: 'shredded', section: TORTILLA_AND_OTHER },
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: TORTILLA_AND_OTHER },
+        { ...REFRIED_BEANS, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: TORTILLA_AND_OTHER },
+        { ...MONTEREY_JACK_CHEESE, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'shredded', section: TORTILLA_AND_OTHER },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TORTILLA_AND_OTHER },
 
         { ...LETTUCE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
         { ...ROMA_TOMATO, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },

@@ -9,7 +9,7 @@ const tart8 = '../assets/Products/apple-tart-8.jpeg';
 const tart9 = '../assets/Products/apple-tart-9.jpeg';
 const tart10 = '../assets/Products/apple-tart-10.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, WHITE_SUGAR, EGG_YOLKS, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, ALMOND_FLOUR, REFRIGERATED_PUFF_PASTRY, PINK_LADY_APPLES, APRICOT_JELLY } = require('./ingredients');
 
 const FRANGIPANE = 'Frangipane';
@@ -27,23 +27,23 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.TART],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '25 m',
-    cookTime: '45 m',
+    prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Apple Tart', link: 'https://www.thespruceeats.com/french-apple-tarte-aux-pommes-recipe-1375048' }
     ],
     separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1.5, unit: UNITS.TABLESPOON, additionalDetails: '', section: FRANGIPANE },
-        { ...WHITE_SUGAR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: FRANGIPANE },
-        { ...ALMOND_FLOUR, amount: 1/4, unit: UNITS.CUP, additionalDetails: '', section: FRANGIPANE },
+        { ...UNSALTED_BUTTER, amount: 1.5, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FRANGIPANE },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FRANGIPANE },
+        { ...ALMOND_FLOUR, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FRANGIPANE },
         { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: FRANGIPANE },
-        { ...VANILLA_EXTRACT, amount: 1/2, unit: UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
+        { ...VANILLA_EXTRACT, amount: 1/2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
 
         { ...REFRIGERATED_PUFF_PASTRY, amount: '', unit: '', additionalDetails: 'chilled until ready to use', section: SECTIONS.ASSEMBLY },
         { ...PINK_LADY_APPLES, amount: 4, unit: '', additionalDetails: 'cored, peeled and thinly sliced', section: SECTIONS.ASSEMBLY },
-        { ...APRICOT_JELLY, amount: 1/4, unit: UNITS.CUP, additionalDetails: 'heated until partially melted', section: SECTIONS.ASSEMBLY },
+        { ...APRICOT_JELLY, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'heated until partially melted', section: SECTIONS.ASSEMBLY },
     ],
     appliances: [
         { name: 'oven' },

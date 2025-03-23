@@ -11,7 +11,7 @@ const plated2 = '../assets/Products/peppermint-bark-plated-2.jpeg';
 const plated4 = '../assets/Products/peppermint-bark-plated-4.jpeg';
 const set = '../assets/Products/peppermint-bark-set-chocolate.jpeg';
 const white = '../assets/Products/peppermint-bark-white-chocolate-chips.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { SEMI_SWEET_CHOCOLATE_CHIPS, WHITE_CHOCOLATE_CHIPS, PEPPERMINT_EXTRACT, CANDY_CANES } = require('./ingredients');
 
 module.exports = {
@@ -25,17 +25,17 @@ module.exports = {
     method: [METHODS.MELT, METHODS.CHILLED],
     type: [TYPES.DESSERT],
     yields: { amount: 16, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '5 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Peppermint Bark', link: "https://www.dinneratthezoo.com/peppermint-bark-recipe/" }
     ],
     separated: false,
     ingredients: [
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 12, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_CHOCOLATE_CHIPS, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PEPPERMINT_EXTRACT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CANDY_CANES, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: 'crushed', section: SECTIONS.MAIN },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_CHOCOLATE_CHIPS, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PEPPERMINT_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CANDY_CANES, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'microwave' },

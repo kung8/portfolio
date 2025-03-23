@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { VINE_TOMATOES, WHITE_ONION, GARLIC, VEGETABLE_OIL, CHICKEN_BROTH, CILANTRO, SALT, GROUND_BEEF, BREAD, MILK, EGG, BLACK_PEPPER, GARLIC_POWDER, WHITE_RICE, ZUCCHINI } = require('./ingredients');
 
 const TOMATO_BROTH = 'Tomato Broth';
@@ -23,30 +23,30 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.SOUP],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '30 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Mexican Meatball Soup', link: 'https://www.mexicoinmykitchen.com/mexican-meatball-soup-recipe/?fbclid=IwY2xjawIfTotleHRuA2FlbQIxMAABHQYcxHPcv1hhY25EjsAP33ufzYdcUKwRuldIir42OU8j8QqMZ9iXbduoEg_aem_WbP6pIyotuLceI-yiIsTIw' }
     ],
     separated: true,
     ingredients: [
-        { ...WHITE_RICE, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: MEATBALLS },
-        { ...GROUND_BEEF, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: MEATBALLS },
+        { ...WHITE_RICE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MEATBALLS },
+        { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: MEATBALLS },
         { ...ZUCCHINI, amount: 1, unit: '', additionalDetails: 'grated', section: MEATBALLS },
-        { ...WHITE_ONION, amount: 1 / 4, unit: UNITS.MEDIUM, additionalDetails: 'chopped', section: MEATBALLS },
+        { ...WHITE_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'chopped', section: MEATBALLS },
         { ...EGG, amount: 1, unit: '', additionalDetails: 'beaten', section: MEATBALLS },
-        { ...GARLIC_POWDER, amount: 1 / 3, unit: UNITS.TEASPOON, additionalDetails: '', section: MEATBALLS },
-        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: MEATBALLS },
+        { ...GARLIC_POWDER, amount: 1 / 3, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MEATBALLS },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MEATBALLS },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: MEATBALLS },
 
 
-        { ...VINE_TOMATOES, amount: 1, unit: UNITS.POUND, additionalDetails: '', section: TOMATO_BROTH },
-        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: '', section: TOMATO_BROTH },
-        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: TOMATO_BROTH },
-        { ...WHITE_ONION, amount: 1 / 4, unit: UNITS.MEDIUM, additionalDetails: '', section: TOMATO_BROTH },
-        { ...CHICKEN_BROTH, amount: 4, unit: UNITS.CUP, additionalDetails: '', section: TOMATO_BROTH },
+        { ...VINE_TOMATOES, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: TOMATO_BROTH },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: TOMATO_BROTH },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TOMATO_BROTH },
+        { ...WHITE_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', section: TOMATO_BROTH },
+        { ...CHICKEN_BROTH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TOMATO_BROTH },
 
-        { ...CILANTRO, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...CILANTRO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

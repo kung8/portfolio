@@ -4,7 +4,7 @@ const guacamole3 = '../assets/Products/guacamole-3.jpeg';
 const guacamole4 = '../assets/Products/guacamole-4.jpeg';
 const guacamole5 = '../assets/Products/guacamole-5.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { AVOCADO, LIME, SALT, ROMA_TOMATO, YELLOW_ONION, CILANTRO, GARLIC, CAYENNE_PEPPER } = require('./ingredients');
 
 module.exports = {
@@ -18,8 +18,8 @@ module.exports = {
     method: [METHODS.MIX],
     type: [TYPES.DIP],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    waitTime: '1 h',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Guacamole', link: 'https://www.allrecipes.com/recipe/14231/guacamole/' }
     ],
@@ -27,12 +27,12 @@ module.exports = {
     ingredients: [
         { ...AVOCADO, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...LIME, amount: 1, unit: '', additionalDetails: 'juiced', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...ROMA_TOMATO, amount: 2, unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...CILANTRO, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 1, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...CAYENNE_PEPPER, amount: 1, unit: UNITS.PINCH, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...CILANTRO, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...CAYENNE_PEPPER, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     supplies: [
         { name: 'medium bowl' },

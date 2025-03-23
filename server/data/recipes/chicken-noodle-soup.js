@@ -1,5 +1,5 @@
 const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     OLIVE_OIL,
@@ -27,21 +27,21 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.NOODLE, TYPES.SOUP],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '6 - 8 m',
-    cookTime: '40 - 45 m',
+    prepTime: { amount: 8, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...CHICKEN_BREAST, amount: 3 / 2, unit: UNITS.POUND, additionalDetails: 'cubed', optional: false },
-        { ...OLIVE_OIL, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.LARGE, additionalDetails: 'sliced', optional: false },
+        { ...CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cubed', optional: false },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced', optional: false },
         { ...CARROTS, amount: 2, unit: '', additionalDetails: 'sliced', optional: false },
-        { ...CELERY, amount: 2, unit: UNITS.STALK, additionalDetails: 'sliced', optional: false },
-        { ...CHICKEN_BROTH, amount: 6, unit: UNITS.CUP, additionalDetails: '', optional: false },
+        { ...CELERY, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: 'sliced', optional: false },
+        { ...CHICKEN_BROTH, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...OREGANO, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...ROSEMARY, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...THYME, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
-        { ...EGG_NOODLES, amount: 16, unit: UNITS.OUNCE, additionalDetails: '', optional: false },
+        { ...EGG_NOODLES, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
     ],
     appliances: [
         { name: 'stove' },

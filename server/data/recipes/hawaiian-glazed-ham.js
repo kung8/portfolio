@@ -1,5 +1,5 @@
 const ham1 = '../assets/Products/hawaiian-glazed-ham-1.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BONE_IN_HAM, YELLOW_MUSTARD, BROWN_SUGAR, CANNED_PINEAPPLE_SLICES, MARASCHINO_CHERRIES } = require('./ingredients');
 
 const PREP_OVEN = 'Prep Oven';
@@ -19,15 +19,15 @@ module.exports = {
     protein: [PROTEIN.PORK],
     type: [TYPES.PROTEIN],
     yields: { amount: 20, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '2 h',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 2, unit: TIME_UNITS.HOUR },
     separated: true,
     ingredients: [
-        { ...BONE_IN_HAM, amount: 15, unit: UNITS.POUND, additionalDetails: '', section: '' },
-        { ...YELLOW_MUSTARD, amount: 10, unit: UNITS.OUNCE, additionalDetails: '', section: '' },
-        { ...BROWN_SUGAR, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: '' },
-        { ...CANNED_PINEAPPLE_SLICES, amount: 40, unit: UNITS.OUNCE, additionalDetails: '', section: '' },
-        { ...MARASCHINO_CHERRIES, amount: 10, unit: UNITS.OUNCE, additionalDetails: 'pitted and stemless', section: '' },
+        { ...BONE_IN_HAM, amount: 15, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: '' },
+        { ...YELLOW_MUSTARD, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: '' },
+        { ...BROWN_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...CANNED_PINEAPPLE_SLICES, amount: 40, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: '' },
+        { ...MARASCHINO_CHERRIES, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'pitted and stemless', section: '' },
     ],
     appliances: [
         { name: 'oven' },

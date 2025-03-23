@@ -15,7 +15,7 @@ const meatball15 = '../assets/Products/swedish-meatball-15.jpeg';
 const meatball16 = '../assets/Products/swedish-meatball-16.jpeg';
 const meatball17 = '../assets/Products/swedish-meatball-17.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BREADCRUMBS, HEAVY_CREAM, UNSALTED_BUTTER, YELLOW_ONION, GROUND_BEEF, GROUND_PORK, EGG, BROWN_SUGAR, SALT, BLACK_PEPPER, NUTMEG, ALLSPICE, GROUND_GINGER, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, BEEF_BROTH, SOUR_CREAM } = require('./ingredients');
 
 const PREP_OVEN = 'Prep Oven';
@@ -37,32 +37,32 @@ module.exports = {
     protein: [PROTEIN.BEEF, PROTEIN.PORK],
     type: [TYPES.PROTEIN, TYPES.MAIN_COURSE, TYPES.SIDE_DISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: '25 m',
-    cookTime: '1 h',
+    prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Swedish Meatballs', link: 'https://www.allrecipes.com/recipe/216564/swedish-meatballs-svenska-kottbullar/' }
     ],
     separated: true,
     ingredients: [
-        { ...BREADCRUMBS, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: BREADCRUMB_MIXTURE },
-        { ...HEAVY_CREAM, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: BREADCRUMB_MIXTURE },
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
-        { ...YELLOW_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'minced', section: SWEDISH_MEATBALLS },
-        { ...GROUND_BEEF, amount: 2 / 3, unit: UNITS.POUND, additionalDetails: '', section: SWEDISH_MEATBALLS },
-        { ...GROUND_PORK, amount: 1 / 3, unit: UNITS.POUND, additionalDetails: '', section: SWEDISH_MEATBALLS },
+        { ...BREADCRUMBS, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BREADCRUMB_MIXTURE },
+        { ...HEAVY_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BREADCRUMB_MIXTURE },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'minced', section: SWEDISH_MEATBALLS },
+        { ...GROUND_BEEF, amount: 2 / 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SWEDISH_MEATBALLS },
+        { ...GROUND_PORK, amount: 1 / 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SWEDISH_MEATBALLS },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SWEDISH_MEATBALLS },
-        { ...BROWN_SUGAR, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
-        { ...NUTMEG, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
-        { ...ALLSPICE, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
-        { ...GROUND_GINGER, amount: 1 / 8, unit: UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
+        { ...NUTMEG, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
+        { ...ALLSPICE, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
+        { ...GROUND_GINGER, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
 
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: PAN_FRY_MEATBALLS },
-        { ...CHICKEN_BROTH, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: BAKING },
-        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: 'or as needed', section: '' },
-        { ...BEEF_BROTH, amount: 2, unit: UNITS.CUP, additionalDetails: 'or as needed', section: '' },
-        { ...SOUR_CREAM, amount: 8, unit: UNITS.OUNCE, additionalDetails: '', section: '' },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PAN_FRY_MEATBALLS },
+        { ...CHICKEN_BROTH, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BAKING },
+        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'or as needed', section: '' },
+        { ...BEEF_BROTH, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'or as needed', section: '' },
+        { ...SOUR_CREAM, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: '' },
     ],
     appliances: [
         { name: 'stove' },

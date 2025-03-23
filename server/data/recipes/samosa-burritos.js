@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { TORTILLA, CAULIFLOWER, POTATOES, RED_ONION, JALAPENO_PEPPERS, GARLIC, CUMIN, CORIANDER, GARAM_MASALA, FENNEL_SEEDS, TURMERIC, LEMON_JUICE, FROZEN_PEAS, SEA_SALT, BLACK_PEPPER, GINGER_PUREE, VEGETABLE_BROTH, GINGER, GREEK_YOGURT, MINT_LEAVES, CILANTRO, MAPLE_SYRUP, LIME_JUICE } = require('./ingredients');
 
 const VEGETABLES_SECTION = 'Vegetables';
@@ -25,42 +25,42 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.BURRITO],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '40 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Samosa Burritos', link: 'https://www.plantpurenation.com/blogs/recipes/samosa-burritos' }
     ],
     separated: true,
     ingredients: [
         { ...TORTILLA, amount: 8, unit: '', additionalDetails: '', section: '' },
-        { ...CAULIFLOWER, amount: 2, unit: UNITS.CUP, additionalDetails: 'chopped', section: VEGETABLES_SECTION },
-        { ...POTATOES, amount: 2, unit: UNITS.CUP, additionalDetails: 'chopped', section: VEGETABLES_SECTION },
-        { ...RED_ONION, amount: 1, unit: UNITS.SMALL, additionalDetails: 'diced', section: VEGETABLES_SECTION },
+        { ...CAULIFLOWER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: VEGETABLES_SECTION },
+        { ...POTATOES, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: VEGETABLES_SECTION },
+        { ...RED_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', section: VEGETABLES_SECTION },
         { ...JALAPENO_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGETABLES_SECTION },
-        { ...VEGETABLE_BROTH, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: VEGETABLES_SECTION },
+        { ...VEGETABLE_BROTH, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: VEGETABLES_SECTION },
 
-        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: 'minced', section: HERBS_SECTION },
-        { ...GINGER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
-        { ...CUMIN, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
-        { ...CORIANDER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
-        { ...GARAM_MASALA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
-        { ...FENNEL_SEEDS, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
-        { ...TURMERIC, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: HERBS_SECTION },
+        { ...GINGER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
+        { ...CUMIN, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
+        { ...CORIANDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
+        { ...GARAM_MASALA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
+        { ...FENNEL_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
+        { ...TURMERIC, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: HERBS_SECTION },
 
-        { ...LEMON_JUICE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: PEAS_SECTION },
-        { ...FROZEN_PEAS, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: PEAS_SECTION },
-        { ...SEA_SALT, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: PEAS_SECTION },
-        { ...BLACK_PEPPER, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PEAS_SECTION },
+        { ...LEMON_JUICE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PEAS_SECTION },
+        { ...FROZEN_PEAS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PEAS_SECTION },
+        { ...SEA_SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PEAS_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PEAS_SECTION },
 
-        { ...GREEK_YOGURT, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: CHUTNEY_SECTION },
-        { ...MINT_LEAVES, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: CHUTNEY_SECTION },
-        { ...CILANTRO, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: CHUTNEY_SECTION },
+        { ...GREEK_YOGURT, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHUTNEY_SECTION },
+        { ...MINT_LEAVES, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHUTNEY_SECTION },
+        { ...CILANTRO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHUTNEY_SECTION },
         { ...JALAPENO_PEPPERS, amount: 1, unit: '', additionalDetails: 'seeded', section: CHUTNEY_SECTION },
-        { ...GINGER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: 'grated', section: CHUTNEY_SECTION },
-        { ...GARLIC, amount: 2, unit: UNITS.CLOVE, additionalDetails: '', section: CHUTNEY_SECTION },
-        { ...MAPLE_SYRUP, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: CHUTNEY_SECTION },
-        { ...LIME_JUICE, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHUTNEY_SECTION },
-        { ...SEA_SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: CHUTNEY_SECTION },
+        { ...GINGER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'grated', section: CHUTNEY_SECTION },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: CHUTNEY_SECTION },
+        { ...MAPLE_SYRUP, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHUTNEY_SECTION },
+        { ...LIME_JUICE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHUTNEY_SECTION },
+        { ...SEA_SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHUTNEY_SECTION },
     ],
     appliances: [
         { name: 'oven' },

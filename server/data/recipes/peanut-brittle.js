@@ -12,7 +12,7 @@ const water = '../assets/Products/peanut-brittle-water.jpeg';
 const plated1 = '../assets/Products/peanut-brittle-plated-1.jpeg';
 const plated2 = '../assets/Products/peanut-brittle-plated-2.jpeg';
 const rebaked = '../assets/Products/peanut-brittle-rebaked.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { WHITE_SUGAR, CORN_SYRUP, COLD_WATER, UNSALTED_PEANUTS, UNSALTED_BUTTER, BAKING_SODA, VANILLA_EXTRACT } = require('./ingredients');
 
 module.exports = {
@@ -26,20 +26,20 @@ module.exports = {
     protein: [PROTEIN.PEANUT],
     type: [TYPES.FINGER_FOOD],
     yields: { amount: 50, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '20 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Peanut Brittle', link: "https://tastesbetterfromscratch.com/peanut-brittle/" }
     ],
     separated: false,
     ingredients: [
-        { ...WHITE_SUGAR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COLD_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CORN_SYRUP, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_PEANUTS, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_SODA, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...COLD_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CORN_SYRUP, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_PEANUTS, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_SODA, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

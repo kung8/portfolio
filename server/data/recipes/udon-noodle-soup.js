@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BEEF_RIBS, YELLOW_ONION, CARROTS, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGG, BEEF_BROTH, SHIITAKE_MUSHROOMS, THAI_CHILI_PEPPERS, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONIONS, SESAME_SEEDS, UDON_NOODLES, WARM_WATER } = require('./ingredients');
 
 const BEEF_BROTH_SECTION = 'Beef Broth';
@@ -28,34 +28,34 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.SOUP, TYPES.NOODLE],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '20 m',
-    waitTime: '3 h',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 3, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Udon Noodle Soup', link: 'https://howtofeedaloon.com/udon-noodle-soup-with-pork/' }
     ],
     separated: true,
     ingredients: [
-        { ...BEEF_RIBS, amount: 4, unit: UNITS.POUND, additionalDetails: '', section: BEEF_BROTH_SECTION },
-        { ...YELLOW_ONION, amount: 2, unit: UNITS.MEDIUM, additionalDetails: 'peeled and quartered', section: BEEF_BROTH_SECTION },
+        { ...BEEF_RIBS, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BEEF_BROTH_SECTION },
+        { ...YELLOW_ONION, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'peeled and quartered', section: BEEF_BROTH_SECTION },
         { ...CARROTS, amount: 1, unit: '', additionalDetails: 'peeled and chunked', section: BEEF_BROTH_SECTION },
         { ...CINNAMON_STICK, amount: 1, unit: '', additionalDetails: '', section: BEEF_BROTH_SECTION },
-        { ...GINGER, amount: 3, unit: UNITS.INCH, additionalDetails: 'whole', section: BEEF_BROTH_SECTION },
+        { ...GINGER, amount: 3, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'whole', section: BEEF_BROTH_SECTION },
 
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: EGG_SECTION },
-        { ...UDON_NOODLES, amount: 1 / 2, unit: UNITS.POUND, additionalDetails: '', section: NOODLE_SECTION },
-        { ...CARROTS, amount: 1, unit: UNITS.LARGE, additionalDetails: 'peeled and julienned', section: SOUP_1_SECTION },
-        { ...SHIITAKE_MUSHROOMS, amount: 7 / 2, unit: UNITS.OUNCE, additionalDetails: '', section: SOUP_1_SECTION },
-        { ...GINGER, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: 'minced', section: SOUP_1_SECTION },
+        { ...UDON_NOODLES, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: NOODLE_SECTION },
+        { ...CARROTS, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'peeled and julienned', section: SOUP_1_SECTION },
+        { ...SHIITAKE_MUSHROOMS, amount: 7 / 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SOUP_1_SECTION },
+        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: SOUP_1_SECTION },
         { ...THAI_CHILI_PEPPERS, amount: 2, unit: '', additionalDetails: 'whole', section: SOUP_1_SECTION },
-        { ...MIRIN, amount: 1 / 4, unit: UNITS.CUP, additionalDetails: '', section: SOUP_1_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SOUP_1_SECTION },
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SOUP_1_SECTION },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SOUP_1_SECTION },
-        { ...PORK_TENDERLOINS, amount: 1, unit: UNITS.POUND, additionalDetails: 'sliced', section: SOUP_2_SECTION },
-        { ...NAPA_CABBAGE, amount: 2, unit: UNITS.MEDIUM, additionalDetails: '', section: SOUP_2_SECTION },
+        { ...MIRIN, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SOUP_1_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SOUP_1_SECTION },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SOUP_1_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SOUP_1_SECTION },
+        { ...PORK_TENDERLOINS, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: SOUP_2_SECTION },
+        { ...NAPA_CABBAGE, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', section: SOUP_2_SECTION },
         { ...GREEN_ONIONS, amount: 2, unit: '', additionalDetails: 'chopped', section: SOUP_2_SECTION },
-        { ...SESAME_SEEDS, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...SESAME_SEEDS, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

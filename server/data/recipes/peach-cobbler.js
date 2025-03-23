@@ -8,7 +8,7 @@ const melted = '../assets/Products/peach-cobbler-melted-butter.jpeg'
 const milk = '../assets/Products/peach-cobbler-milk.jpeg'
 const mixed = '../assets/Products/peach-cobbler-mixed.jpeg'
 const peaches = '../assets/Products/peach-cobbler-peaches.jpeg'
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     ALL_PURPOSE_FLOUR,
@@ -31,16 +31,16 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
-    prepTime: '10 m',
-    cookTime: '40 m',
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_POWDER, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MILK, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CANNED_PEACH, amount: 4, unit: UNITS.CUP, additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MILK, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CANNED_PEACH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...CINNAMON, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [

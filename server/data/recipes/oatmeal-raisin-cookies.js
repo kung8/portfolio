@@ -8,7 +8,7 @@ const raisin = '../assets/Products/oatmeal-raisin-cookies-raisins-added.jpeg';
 const raw = '../assets/Products/oatmeal-raisin-cookies-raw-pan.jpeg';
 const chocolate = '../assets/Products/oatmeal-raisin-cookies-with-chocolate-chip.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_SODA,
@@ -35,25 +35,25 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
     yields: { amount: 4, unit: YIELD_UNITS.DOZEN },
-    prepTime: '12 m',
-    cookTime: '13 m',
+    prepTime: { amount: 12, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 13, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Oatmeal Raisin Cookies', link: "https://www.food.com/recipe/oatmeal-raisin-cookies-35813" }
     ],
     separated: false,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_SODA, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_POWDER, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BROWN_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: 'softened', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_SODA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BAKING_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'softened', section: SECTIONS.MAIN },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...STEEL_OATS, amount: 3, unit: UNITS.CUP, additionalDetails: 'non-instant', section: SECTIONS.MAIN },
-        { ...RAISINS, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...STEEL_OATS, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'non-instant', section: SECTIONS.MAIN },
+        { ...RAISINS, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

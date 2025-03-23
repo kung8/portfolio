@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { LIGHT_SOY_SAUCE, EGG, ALL_PURPOSE_FLOUR, CORNSTARCH, PORK_SHOULDER, GARLIC_SALT, KETCHUP, BROWN_SUGAR, WHITE_VINEGAR, SALT, COLD_WATER, RED_BELL_PEPPERS, YELLOW_BELL_PEPPERS, GREEN_BELL_PEPPERS, RED_ONION, YELLOW_ONION, PINEAPPLE, VEGETABLE_OIL } = require('./ingredients');
 
 const PORK_MARINADE = 'Pork Marinade';
@@ -21,33 +21,33 @@ module.exports = {
     protein: [PROTEIN.PORK],
     type: [TYPES.PROTEIN],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
-    prepTime: '20 m',
-    cookTime: '25 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Sweet and Sour Pork', link: 'https://www.madewithlau.com/recipes/sweet-sour-pork' }
     ],
     separated: true,
     ingredients: [
-        { ...GARLIC_SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: PORK_MARINADE },
-        { ...LIGHT_SOY_SAUCE, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
+        { ...GARLIC_SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PORK_MARINADE },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: PORK_MARINADE },
-        { ...ALL_PURPOSE_FLOUR, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
-        { ...CORNSTARCH, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
-        { ...PORK_SHOULDER, amount: 5 / 4, unit: UNITS.POUND, additionalDetails: 'cut into 1/2 inch pieces', section: PORK_MARINADE },
+        { ...ALL_PURPOSE_FLOUR, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
+        { ...CORNSTARCH, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
+        { ...PORK_SHOULDER, amount: 5 / 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1/2 inch pieces', section: PORK_MARINADE },
 
-        { ...KETCHUP, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        { ...BROWN_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        { ...WHITE_VINEGAR, amount: 6, unit: UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        { ...CORNSTARCH, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        { ...COLD_WATER, amount: 4, unit: UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...KETCHUP, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...BROWN_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...WHITE_VINEGAR, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...COLD_WATER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
 
         { ...RED_BELL_PEPPERS, amount: 1 / 4, unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
         { ...YELLOW_BELL_PEPPERS, amount: 1 / 4, unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
         { ...GREEN_BELL_PEPPERS, amount: 1 / 4, unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
-        { ...RED_ONION, amount: 1 / 2, unit: UNITS.SMALL, additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
-        { ...YELLOW_ONION, amount: 1 / 2, unit: UNITS.SMALL, additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
-        { ...PINEAPPLE, amount: 8, unit: UNITS.OUNCE, additionalDetails: 'chunk sized', section: FRUIT_AND_VEGGIES },
+        { ...RED_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
+        { ...PINEAPPLE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'chunk sized', section: FRUIT_AND_VEGGIES },
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: DEEP_FRY },
     ],
     appliances: [

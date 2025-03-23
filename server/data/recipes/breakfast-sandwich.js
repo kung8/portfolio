@@ -1,5 +1,5 @@
 const breakfastSandwich = '../assets/Products/breakfast-sandwich.jpeg';
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS , UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     EGG,
     COOKED_HAM,
@@ -18,8 +18,8 @@ module.exports = {
     protein: [PROTEIN.EGG, PROTEIN.PORK],
     type: [TYPES.SANDWICH],
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
-    prepTime: '5 m',
-    cookTime: '10 m',
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     ingredients: [
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...COOKED_HAM, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },

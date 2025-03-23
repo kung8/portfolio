@@ -1,5 +1,5 @@
 const katsu = '../assets/Products/katsu-full.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     VEGETABLE_OIL,
@@ -27,18 +27,18 @@ module.exports = {
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.RICE],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '15 - 20 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
         { label: 'Chicken Katsu', link: 'https://www.justonecookbook.com/chicken-katsu/' }
     ],
     ingredients: [
         { ...CHICKEN_BREAST, amount: 4, unit: '', additionalDetails: 'or ' + PORK_LOIN.name, section: SECTIONS.MAIN },
-        { ...VEGETABLE_OIL, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PANKO_BREADCRUMBS, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PANKO_BREADCRUMBS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...CABBAGE, amount: 1 / 4, unit: '', additionalDetails: 'julienne', section: SECTIONS.TOPPINGS },

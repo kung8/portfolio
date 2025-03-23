@@ -18,7 +18,7 @@ const cakes17 = '../assets/Products/chive-cakes-17.jpeg';
 const cakes18 = '../assets/Products/chive-cakes-18.jpeg';
 const cakes19 = '../assets/Products/chive-cakes-19.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { TAPIOCA_STARCH, HOT_WATER, VEGETABLE_OIL, SALT, POWDERED_SUGAR, BAKING_SODA, PEANUT_OIL, DARK_SOY_SAUCE, WHITE_VINEGAR, RED_PEPPER_FLAKES, GARLIC, RICE_FLOUR, GLUTINOUS_RICE_FLOUR, GARLIC_CHIVES, LUKEWARM_WATER, UNSALTED_PEANUTS } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
@@ -41,35 +41,35 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     type: [TYPES.SIDE_DISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '25 m',
-    cookTime: '20 m',
-    waitTime: '45 m',
+    prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Chive Cakes (ingredients)', link: 'https://www.sbs.com.au/food/recipe/chive-cakes-khanom-gui-chai/gossuf95o' },
         { label: 'Chive Cakes (cooking)', link: 'https://www.foodrepublic.com/recipes/make-this-charles-phans-famous-chive-cakes-recipe/' }
     ],
     separated: true,
     ingredients: [
-        { ...RICE_FLOUR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...GLUTINOUS_RICE_FLOUR, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...TAPIOCA_STARCH, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...HOT_WATER, amount: 2, unit: UNITS.CUP, additionalDetails: 'boiling', section: DOUGH_SECTION },
-        { ...VEGETABLE_OIL, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...LUKEWARM_WATER, amount: 3, unit: UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...RICE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...GLUTINOUS_RICE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...TAPIOCA_STARCH, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
+        { ...HOT_WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiling', section: DOUGH_SECTION },
+        { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...LUKEWARM_WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
 
-        { ...GARLIC_CHIVES, amount: 2, unit: UNITS.CUP, additionalDetails: '1/2 inch slices', section: CHIVE_SECTION },
-        { ...SALT, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHIVE_SECTION },
-        { ...POWDERED_SUGAR, amount: 7 / 8, unit: UNITS.CUP, additionalDetails: '', section: CHIVE_SECTION },
-        { ...BAKING_SODA, amount: 1, unit: UNITS.TABLESPOON, additionalDetails: '', section: CHIVE_SECTION },
-        { ...PEANUT_OIL, amount: 2 / 3, unit: UNITS.CUP, additionalDetails: '', section: CHIVE_SECTION },
-        { ...UNSALTED_PEANUTS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: 'chopped', section: CHIVE_SECTION },
+        { ...GARLIC_CHIVES, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '1/2 inch slices', section: CHIVE_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHIVE_SECTION },
+        { ...POWDERED_SUGAR, amount: 7 / 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHIVE_SECTION },
+        { ...BAKING_SODA, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHIVE_SECTION },
+        { ...PEANUT_OIL, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHIVE_SECTION },
+        { ...UNSALTED_PEANUTS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: CHIVE_SECTION },
 
-        { ...DARK_SOY_SAUCE, amount: 3 / 4, unit: UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...WHITE_VINEGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...SALT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...POWDERED_SUGAR, amount: 7 / 8, unit: UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...RED_PEPPER_FLAKES, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...GARLIC, amount: 4, unit: UNITS.CLOVE, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...DARK_SOY_SAUCE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...WHITE_VINEGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...POWDERED_SUGAR, amount: 7 / 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...RED_PEPPER_FLAKES, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
     ],
     appliances: [
         { name: 'stand mixer' },

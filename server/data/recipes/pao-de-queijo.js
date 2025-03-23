@@ -10,7 +10,7 @@ const rawZoomed = '../assets/Products/pao-de-queijo-mixer-zoomed.jpeg';
 const raw = '../assets/Products/pao-de-queijo-mixer.jpeg';
 // const first = '../assets/Products/pao-de-queijo-zoomed-cheeseballs.jpeg';
 const plated = '../assets/Products/pao-de-queijo-plated.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     TAPIOCA_STARCH,
     MILK,
@@ -33,21 +33,21 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.BREAD, TYPES.FINGER_FOOD],
     yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
-    prepTime: '20 m',
-    cookTime: '30 m',
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Brazilian Cheese Bread', link: "https://www.oliviascuisine.com/authentic-brazilian-cheese-bread/" }
     ],
     separated: false,
     ingredients: [
-        { ...TAPIOCA_STARCH, amount: 4, unit: UNITS.CUP, additionalDetails: 'plus some for thickening', section: SECTIONS.MAIN },
-        { ...MILK, amount: 5 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...TAPIOCA_STARCH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'plus some for thickening', section: SECTIONS.MAIN },
+        { ...MILK, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WARM_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '6 Tbsp', section: SECTIONS.MAIN },
-        { ...PARMESAN_CHEESE, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { ...MOZZARELLA_CHEESE, amount: 1, unit: UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...PARMESAN_CHEESE, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...MOZZARELLA_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BABY_SPINACH, ALL_PURPOSE_FLOUR, SALT } = require('./ingredients');
 
 const PREP_DOUGH = 'Prep Dough';
@@ -18,16 +18,16 @@ module.exports = {
     method: [METHODS.BLEND, METHODS.BOIL],
     type: [TYPES.PASTA],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
-    prepTime: '30 m',
-    cookTime: '5 m',
+    prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Pici Pasta', link: 'https://monmackfood.com/vibrant-green-pici-pasta-no-pasta-roller-required/' }
     ],
     separated: false,
     ingredients: [
-        { ...BABY_SPINACH, amount: 4.2, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 6.5, unit: UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 2, unit: UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BABY_SPINACH, amount: 4.2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 6.5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'food processor' },

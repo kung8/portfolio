@@ -5,7 +5,7 @@ const mixed = '../assets/Products/ginger-chicken-cooking-mixed.jpeg';
 const placed = '../assets/Products/ginger-chicken-placed-ginger.jpeg';
 const plated = '../assets/Products/ginger-chicken-plated.jpeg';
 const sauce = '../assets/Products/ginger-chicken-soy-sauce.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, UNITS, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     CHICKEN_THIGH,
     GINGER,
@@ -28,12 +28,12 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: '15 m',
-    cookTime: '20 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     ingredients: [
-        { ...CHICKEN_THIGH, amount: 3, unit: UNITS.POUND, additionalDetails: 'cut into 2 inch pieces', section: SECTIONS.MAIN },
-        { ...GINGER, amount: 3, unit: UNITS.INCH, additionalDetails: 'strips', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 3, unit: UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...CHICKEN_THIGH, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2 inch pieces', section: SECTIONS.MAIN },
+        { ...GINGER, amount: 3, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'strips', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...LIGHT_SOY_SAUCE, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },

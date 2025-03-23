@@ -1,5 +1,5 @@
 const cookies1 = '../assets/Products/browned-butter-chocolate-chip-cookies-1.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, UNITS, YIELD_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BROWNED_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGG, EGG_YOLKS, CAKE_FLOUR, ALL_PURPOSE_FLOUR, CORNSTARCH, BAKING_SODA, SALT, SEMI_SWEET_CHOCOLATE_CHIPS, WALNUTS, MILK_CHOCOLATE } = require('./ingredients');
 
 const BROWNED_BUTTER_SECTION = 'Browned Butter';
@@ -18,24 +18,24 @@ module.exports = {
     method: [METHODS.BAKE],
     type: [TYPES.COOKIE],
     yields: { amount: 3 / 2, unit: YIELD_UNITS.DOZEN },
-    prepTime: '15 m',
-    cookTime: '11 m',
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 11, unit: TIME_UNITS.MINUTE },
     separated: true,
     ingredients: [
-        { ...BROWNED_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: BROWNED_BUTTER_SECTION, link: { id: 'browned-butter', url: 'recipes/browned-butter' } },
-        { ...BROWN_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SUGARS },
-        { ...WHITE_SUGAR, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SUGARS },
-        { ...VANILLA_EXTRACT, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: SUGARS },
+        { ...BROWNED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BROWNED_BUTTER_SECTION, link: { id: 'browned-butter', url: 'recipes/browned-butter' } },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUGARS },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUGARS },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SUGARS },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: EGGS_SECTION },
         { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: EGGS_SECTION },
-        { ...CAKE_FLOUR, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: FLOURS },
-        { ...ALL_PURPOSE_FLOUR, amount: 3 / 2, unit: UNITS.CUP, additionalDetails: '', section: FLOURS },
-        { ...CORNSTARCH, amount: 1, unit: UNITS.TEASPOON, additionalDetails: '', section: FLOURS },
-        { ...BAKING_SODA, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: FLOURS },
-        { ...SALT, amount: 3 / 4, unit: UNITS.TEASPOON, additionalDetails: '', section: FLOURS },
-        { ...MILK_CHOCOLATE, amount: 8, unit: UNITS.OUNCE, additionalDetails: 'chopped', section: SECTIONS.FILLING },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...WALNUTS, amount: 2, unit: UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.FILLING },
+        { ...CAKE_FLOUR, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FLOURS },
+        { ...ALL_PURPOSE_FLOUR, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FLOURS },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FLOURS },
+        { ...BAKING_SODA, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FLOURS },
+        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FLOURS },
+        { ...MILK_CHOCOLATE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'chopped', section: SECTIONS.FILLING },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WALNUTS, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.FILLING },
     ],
     appliances: [
         { name: 'stove' },
