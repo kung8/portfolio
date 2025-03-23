@@ -24,6 +24,7 @@ module.exports = {
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '7 m',
+    waitTime: '4 h',
     separated: true,
     ingredients: [
         { ...BREAD_FLOUR, amount: 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },

@@ -37,6 +37,7 @@ module.exports = {
     yields: { amount: 32, unit: YIELD_UNITS.ROLL },
     prepTime: '15 m',
     cookTime: '20 m',
+    waitTime: '1 h',
     separated: true,
     ingredients: [
         { ...LUKEWARM_WATER, amount: 3 / 8, unit: UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE },
@@ -71,7 +72,7 @@ module.exports = {
         { step: 'Roll out dough into large circles (like pizza dough shape).', type: SECTIONS.MAIN, img: rolled },
         { step: 'Cut the dough into eighths (or more depending on the desired size).', type: SECTIONS.MAIN, img: triangle },
         { step: 'Separate. Roll each wedge from the outside to the center.', type: SECTIONS.MAIN, img: triangleRolled },
-        { step: 'Place rolls on prepared baking sheet and let them rise.', type: SECTIONS.MAIN, img: wrapped },
+        { step: 'Place rolls on prepared baking sheet and let them rise for about 1 hour.', type: SECTIONS.MAIN, img: wrapped },
         { step: 'Baste with butter.', type: SECTIONS.MAIN, img: basted },
         { step: 'Bake for 20 minutes.', type: SECTIONS.MAIN, img: [baked1, baked5] },
         { step: 'Eat these rolls warm.', type: SECTIONS.MAIN, img: plated2 },

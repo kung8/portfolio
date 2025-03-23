@@ -40,6 +40,7 @@ module.exports = {
     yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '30 m',
     cookTime: '12 m',
+    waitTime: '1 h',
     websites: [
         { label: 'Potstickers', link: "https://www.allrecipes.com/recipe/261153/perfect-pot-stickers/" }
     ],

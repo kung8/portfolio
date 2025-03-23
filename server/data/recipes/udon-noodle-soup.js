@@ -30,6 +30,7 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '15 m',
     cookTime: '20 m',
+    waitTime: '3 h',
     websites: [
         { label: 'Udon Noodle Soup', link: 'https://howtofeedaloon.com/udon-noodle-soup-with-pork/' }
     ],
@@ -61,7 +62,6 @@ module.exports = {
     ],
     supplies: [
         { name: 'large pot' },
-        { name: '' },
     ],
     directions: [
         { step: 'Over medium-high heat, combine the "" section ingredients in a large pot.', type: MAKE_BEEF_BROTH },

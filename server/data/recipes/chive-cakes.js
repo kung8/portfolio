@@ -43,6 +43,7 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '20 m',
+    waitTime: '45 m',
     websites: [
         { label: 'Chive Cakes (ingredients)', link: 'https://www.sbs.com.au/food/recipe/chive-cakes-khanom-gui-chai/gossuf95o' },
         { label: 'Chive Cakes (cooking)', link: 'https://www.foodrepublic.com/recipes/make-this-charles-phans-famous-chive-cakes-recipe/' }

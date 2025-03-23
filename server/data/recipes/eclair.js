@@ -19,6 +19,7 @@ module.exports = {
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '2 h',
+    waitTime: '30 m',
     websites: [
         { label: 'Eclair', link: 'https://www.foodandwine.com/recipes/chocolate-frosted-eclairs' }
     ],

@@ -19,6 +19,7 @@ module.exports = {
     type: [TYPES.DIP],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
+    waitTime: '1 h',
     websites: [
         { label: 'Guacamole', link: 'https://www.allrecipes.com/recipe/14231/guacamole/' }
     ],

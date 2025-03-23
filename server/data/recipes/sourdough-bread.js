@@ -31,6 +31,7 @@ module.exports = {
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '50 m',
+    waitTime: '10 h',
     separated: true,
     ingredients: [
         { ...SOURDOUGH_STARTER, amount: 1, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH, link: { id: 'sourdough-starter', url: 'recipes/sourdough-starter' } },

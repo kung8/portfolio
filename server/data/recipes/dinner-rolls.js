@@ -21,6 +21,7 @@ module.exports = {
     yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '20 m',
     cookTime: '15 m',
+    waitTime: '1 h',
     separated: true,
     ingredients: [
         { ...YEAST, amount: 2, unit: UNITS.TABLESPOON, additionalDetails: '', section: YEAST_MIXTURE },

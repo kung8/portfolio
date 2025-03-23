@@ -34,6 +34,7 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '15 m',
+    waitTime: '1 h ',
     separated: true,
     ingredients: [
         { ...WARM_WATER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: ACTIVATE_YEAST },

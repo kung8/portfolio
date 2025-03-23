@@ -39,7 +39,8 @@ module.exports = {
     type: [TYPES.DESSERT],
     yields: { amount: 3, unit: YIELD_UNITS.DOZEN },
     prepTime: '10 m',
-    cookTime: '10 m',
+    cookTime: '12 m',
+    waitTime: '30 m',
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1, unit: UNITS.CUP, additionalDetails: 'softened', optional: false },
         { ...WHITE_SUGAR, amount: 1, unit: UNITS.CUP, additionalDetails: '', optional: false },
@@ -74,7 +75,7 @@ module.exports = {
         { step: 'Mix flour one cup at a time into the batter.', type: SECTIONS.MAIN, img: [flour, batter] },
         { step: 'Add chocolate chips.', type: SECTIONS.MAIN, img: chocolateChips },
         { step: 'Take a spoonful of batter, ball it up about an inch in diameter, and place on baking sheets.', type: SECTIONS.MAIN, img: cookieDough },
-        { step: 'Chill in the freezer up to 24 hours (I think 10 minutes might have been fine). This helps control the spread, deepen the flavor, created crispier edges and chewier cookies, and a more even bake.', type: SECTIONS.MAIN },
+        { step: 'Chill in the freezer up to 24 hours (I think 30 minutes might have been fine). This helps control the spread, deepen the flavor, created crispier edges and chewier cookies, and a more even bake.', type: SECTIONS.MAIN },
         { step: 'Bake for 10 minutes.', type: SECTIONS.MAIN },
         { step: 'Let cool for a few minutes before transferring to a cooling rack.', type: SECTIONS.MAIN },
         { step: 'Enjoy these delicious treats with a cold glass of milk!', type: SECTIONS.MAIN, img: plated },

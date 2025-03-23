@@ -47,6 +47,7 @@ module.exports = {
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '45 m',
     cookTime: '2 h',
+    waitTime: '5 h',
     separated: true,
     websites: [
         { label: 'Cheesecake Factory Copycat', link: 'https://www.delish.com/cooking/recipe-ideas/a37762621/cheesecake-factory-original-cheesecake-copycat-recipe/' }

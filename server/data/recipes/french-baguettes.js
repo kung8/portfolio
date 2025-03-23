@@ -19,6 +19,7 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.LOAF },
     prepTime: '45 m',
     cookTime: '19 m',
+    waitTime: '45 m',
     separated: true,
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: 6, unit: UNITS.CUP, additionalDetails: '', section: BAGUETTES },

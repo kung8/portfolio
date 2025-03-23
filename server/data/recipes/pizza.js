@@ -89,6 +89,7 @@ module.exports = {
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: '45 m',
     cookTime: '25 m',
+    waitTime: '72 h 30 m',
     separated: true,
     websites: [
         { label: 'Philly Cheese Steak Pizza', link: 'https://littlespicejar.com/philly-cheese-steak-pizza/' }

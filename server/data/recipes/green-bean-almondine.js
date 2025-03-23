@@ -30,6 +30,7 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '15 m',
+    waitTime: '4 m',
     websites: [
         { label: 'Green Bean Almondine', link: 'https://www.abeautifulplate.com/green-beans-almondine/' }
     ],

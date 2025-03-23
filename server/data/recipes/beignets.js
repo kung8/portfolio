@@ -24,6 +24,7 @@ module.exports = {
     yields: { amount: 3, unit: YIELD_UNITS.DOZEN },
     prepTime: '30 m',
     cookTime: '15 m',
+    waitTime: '2 h 10 m',
     websites: [
         { label: 'Beignets', link: 'https://bakerbynature.com/new-orleans-style-beignets/' }
     ],

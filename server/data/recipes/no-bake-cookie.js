@@ -26,6 +26,7 @@ module.exports = {
     yields: { amount: 32, unit: YIELD_UNITS.SERVING },
     prepTime: '5 m',
     cookTime: '10 m',
+    waitTime: '30 m',
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1 / 2, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...WHITE_SUGAR, amount: 7 / 4, unit: UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },

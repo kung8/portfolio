@@ -28,6 +28,7 @@ module.exports = {
     yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '14 h',
     cookTime: '24 m',
+    waitTime: '11 h',
     websites: [
         { label: 'Croissants', link: 'https://www.jocooks.com/recipes/homemade-croissants/' }
     ],

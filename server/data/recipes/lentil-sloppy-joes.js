@@ -1,4 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
+const { waitTime } = require('./cheesecake-factory-cheesecake');
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, UNITS, YIELD_UNITS } = require('./constants');
 const { OLIVE_OIL, YELLOW_ONION, BROWN_LENTILS, CARROTS, GARLIC, KETCHUP, DIJON_MUSTARD, BROWN_SUGAR, CHILI_POWDER, WORCESTERSHIRE_SAUCE, HOT_SAUCE, SALT, BBQ_SAUCE, HAMBURGER_BUNS, LETTUCE, WHITE_ONION, PICKLES, AVOCADO, VEGETABLE_BROTH } = require('./ingredients');
 
@@ -21,6 +22,7 @@ module.exports = {
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: '10 m',
     cookTime: '40 m',
+    waitTime: '25 m',
     websites: [
         { label: 'Instant Pot Vegan Lentil Sloppy Joes', link: 'https://cozypeachkitchen.com/instant-pot-vegan-lentil-sloppy-joes/' }
     ],

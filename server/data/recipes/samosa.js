@@ -47,6 +47,7 @@ module.exports = {
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '25 m',
+    waitTime: '30 m',
     websites: [
         { label: 'Samosa', link: 'https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/' }
     ],

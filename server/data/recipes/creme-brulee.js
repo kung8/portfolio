@@ -15,6 +15,7 @@ const vanillaMixed = '../assets/Products/creme-brulee-vanilla-sugar-mixed.jpeg';
 const vanillaUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-unmixed.jpeg';
 const sugarYolksMixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-mixed.jpeg';
 const sugarYolksUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-unmixed.jpeg';
+const { waitTime } = require('./cheesecake-factory-cheesecake');
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , UNITS, YIELD_UNITS } = require('./constants');
 const { HEAVY_CREAM, VANILLA_BEAN, EGG_YOLKS, HOT_WATER, WHITE_SUGAR } = require('./ingredients');
 
@@ -35,6 +36,7 @@ module.exports = {
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '25 m',
     cookTime: '1 h',
+    waitTime: '2 h',
     websites: [
         { label: 'Crème Brûlée', link: 'https://www.foodnetwork.com/recipes/alton-brown/creme-brulee-recipe-1916827' },
         { label: 'Vanilla Sugar', link: 'https://sallysbakingaddiction.com/homemade-vanilla-sugar/' }

@@ -54,6 +54,7 @@ module.exports = {
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: '30 m',
     cookTime: '1 h',
+    waitTime: '2 h 50 m',
     separated: true,
     websites: [
         { label: 'Banh Mi Sandwich', link: 'https://www.recipetineats.com/banh-mi-vietnamese-sandwich/' },
@@ -113,7 +114,7 @@ module.exports = {
     ],
     directions: [
         { step: 'On a clean counter, pour the flour, salt, sugar, vitamin c, and yeast. Make a well in the center and pour the water.', type: SECTIONS.BREAD },
-        { step: 'With slighly oiled hands, combine and knead the mixture until it becomes a workable dough. It will still be sticky.', type: SECTIONS.BREAD },
+        { step: 'With slightly oiled hands, combine and knead the mixture until it becomes a workable dough. It will still be sticky.', type: SECTIONS.BREAD },
         { step: 'Cover the dough with an upside down bowl and wait about 20 minutes.', type: SECTIONS.BREAD },
         { step: 'Turn the oven light on or preheat the oven to 86ºF.', type: SECTIONS.BREAD },
         { step: 'Fill a baking pan with warm water and place it at the lowest level of the oven.', type: SECTIONS.BREAD },
@@ -122,7 +123,7 @@ module.exports = {
         { step: 'Flatten the dough part and roll it out to about 5 inches long rectangles.', type: SECTIONS.BREAD },
         { step: 'Place shaped dough on the baguette pan.', type: SECTIONS.BREAD },
         { step: 'Repeat the shaping process for the rest of them and place on the pan.', type: SECTIONS.BREAD },
-        { step: 'Cover the dough with a lightweight cheescloth to prevent the from drying out.', type: SECTIONS.BREAD },
+        { step: 'Cover the dough with a lightweight cheesecloth to prevent the from drying out.', type: SECTIONS.BREAD },
         { step: 'Place the baguette pans in the oven and leave for 2 1/2 hours to rise. Check after an hour to rearrange the dough and cheesecloth if needed (dough rising can shift the cheesecloth).', type: SECTIONS.BREAD },
         { step: 'Once the dough has quadrupled in size, remove the baguette pan from the oven but keep the dough covered.', type: SECTIONS.BREAD },
         { step: 'Preheat the oven to 475ºF and refill the baking pan with water. This water helps retain heat.', type: SECTIONS.BREAD },

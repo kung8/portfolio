@@ -55,6 +55,7 @@ module.exports = {
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: '50 m',
     cookTime: '20 m',
+    waitTime: '2 h 15 m',
     websites: [
         { label: 'Cherry and Cream Cheese Kolaches', link: 'https://www.foodandwine.com/recipes/cherry-and-cream-cheese-kolaches' }
     ],

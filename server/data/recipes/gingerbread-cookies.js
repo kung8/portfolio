@@ -45,6 +45,7 @@ module.exports = {
     yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: '25 m',
     cookTime: '10 m',
+    waitTime: '2 h',
     websites: [
         { label: 'Gingerbread Cookie', link: 'https://tastesbetterfromscratch.com/gingerbread-cookies/' }
     ],

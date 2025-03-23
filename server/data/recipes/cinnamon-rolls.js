@@ -39,6 +39,7 @@ module.exports = {
     yields: { amount: 9, unit: YIELD_UNITS.SERVING },
     prepTime: '2 h',
     cookTime: '20 m',
+    waitTime: '2 h 25 m',
     websites: [
         { label: 'Cinnamon Rolls', link: 'https://www.ambitiouskitchen.com/best-cinnamon-rolls/' }
     ],

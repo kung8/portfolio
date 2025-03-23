@@ -27,6 +27,7 @@ module.exports = {
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: '45 m',
     cookTime: '15 m',
+    waitTime: '30 m',
     websites: [
         { label: 'Ravioli', link: 'https://www.saturdaysinrome.com/blog/ricotta-ravioli-recipe/' }
     ],
