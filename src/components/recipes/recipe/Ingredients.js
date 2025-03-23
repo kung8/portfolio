@@ -71,7 +71,7 @@ export const Ingredients = () => {
                     <h5 className="separated-recipe-detail-label">{section}</h5>
                     {ingredients.map((ingredient, index) => {
                         const ingredientId = ingredient.id ?? generateUUID();
-                        const formattedIngredient = formatIngredientItem({ ...ingredient, amount: conversionRate * ingredient.amount });
+                        const formattedIngredient = formatIngredientItem({ ...ingredient, amount: (conversionRate || 1) * ingredient.amount });
                         return (
                             <IngredientItem
                                 key={ingredientId + '-' + index}
@@ -94,7 +94,7 @@ export const Ingredients = () => {
     ) : (
         <div className="recipe-container">
             {ingredients.map((ingredient, index) => {
-                const formattedIngredient = formatIngredientItem(ingredient);
+                const formattedIngredient = formatIngredientItem({ ...ingredient, amount: (conversionRate || 1) * ingredient.amount });
                 const ingredientId = ingredient.id ?? generateUUID();
                 return (
                     <IngredientItem
