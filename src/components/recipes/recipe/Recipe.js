@@ -23,6 +23,8 @@ import { RecipeContext } from './RecipeContext';
 import { RecipeImage } from './RecipeImage';
 import { getIngredientData, handleModalClass } from '../utils';
 import { IngredientsHeader } from './IngredientsHeader';
+import { CookTime } from './CookTime';
+import { PrepTime } from './PrepTime';
 
 export const Recipe = ({ match }) => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -230,10 +232,8 @@ export const Recipe = ({ match }) => {
                 {item && isLoaded ? (
                     <div className="recipe-details">
                         <RecipeImage />
-                        <p className="prep-time">Prep Time: {item.prepTime}</p>
-                        {item.cookTime && (
-                            <p className="cook-time">Cook Time: {item.cookTime}</p>
-                        )}
+                        <PrepTime />
+                        <CookTime />
                         <Yield />
                         <Appliances />
                         <Supplies />

@@ -67,61 +67,72 @@
             margin-bottom: 4px;
         }
 
-        .yields {
+        .inaccurate-badge {
+            color: $white;
+            font-size: 10px;
+        }
+
+        .yields-container {
             margin-bottom: 24px;
             display: flex;
-            column-gap: 8px;
+            flex-direction: column;
+            row-gap: 6px;
 
-            .yield-text {
-                display: inline-block;
-                margin-top: 6px;
-            }
-
-            .yield-amount-container {
+            .yields {
                 display: flex;
-                flex-direction: row;
                 column-gap: 8px;
-                align-items: center;
 
-                @include down($mobile) {
-                    flex-direction: column;
-                    row-gap: 8px;
-                    align-items: flex-start;
+                .yield-text {
+                    display: inline-block;
+                    margin-top: 6px;
                 }
 
-                .applied-yield-input-container {
+                .yield-amount-container {
                     display: flex;
-                    column-gap: 5px;
-                    align-items: center;
-    
-                    .applied-yield-input {
-                        padding: 6px 8px;
-                        width: 55px;
-                    }
-                }
-
-                .dash {
-                    @include down($mobile) {
-                        display: none;
-                    }
-                }
-    
-                .quick-yield-adjustment-container {
-                    display: flex;
+                    flex-direction: row;
                     column-gap: 8px;
                     align-items: center;
-                    .quick-yield-adjustment {
+
+                    @include down($mobile) {
+                        flex-direction: column;
+                        row-gap: 8px;
+                        align-items: flex-start;
+                    }
+
+                    .applied-yield-input-container {
                         display: flex;
-                        justify-content: center;
+                        column-gap: 5px;
                         align-items: center;
-                        padding: 4px 8px;
-                        border: 1px solid $default;
-                        border-radius: 4px;
-                        cursor: pointer;
-                        &.active {
-                            background: $primary-blue;
-                            color: $white;
-                            border: 1px solid $primary-blue;
+
+                        .applied-yield-input {
+                            padding: 6px 8px;
+                            width: 55px;
+                        }
+                    }
+
+                    .dash {
+                        @include down($mobile) {
+                            display: none;
+                        }
+                    }
+
+                    .quick-yield-adjustment-container {
+                        display: flex;
+                        column-gap: 8px;
+                        align-items: center;
+                        .quick-yield-adjustment {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 4px 8px;
+                            border: 1px solid $default;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            &.active {
+                                background: $primary-blue;
+                                color: $white;
+                                border: 1px solid $primary-blue;
+                            }
                         }
                     }
                 }
