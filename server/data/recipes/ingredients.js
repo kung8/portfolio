@@ -1630,6 +1630,7 @@ const INGREDIENTS = {
         HERSHEY_CHOCOLATE_BAR: {
             name: 'hershey chocolate bar', category: INGREDIENT_CATEGORY.SNACKS, img: "https://images.unsplash.com/photo-1610450949065-1f2841536c88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY5Njk1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        HERSHEYS_KISSES: { name: 'Hershey\'s kisses', category: INGREDIENT_CATEGORY.SNACKS },
         HI_CHEW: { name: 'hi-chew', category: INGREDIENT_CATEGORY.SNACKS },
         HONEY_BBY_LAYS: { name: 'honey bbq lay\'s', category: INGREDIENT_CATEGORY.SNACKS },
         HONEY_BBQ_FRITOS: { name: 'honey bbq fritos', category: INGREDIENT_CATEGORY.SNACKS },

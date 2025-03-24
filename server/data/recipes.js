@@ -180,6 +180,7 @@ const pastaPomodoro = require("./recipes/pasta-pomodoro");
 const peachCobbler = require("./recipes/peach-cobbler");
 const peanutBrittle = require("./recipes/peanut-brittle");
 const peanutButterCookies = require("./recipes/peanut-butter-cookies");
+const peanutButterThumbprintCookies = require("./recipes/peanut-butter-thumbprint-cookies");
 const pekingDuck = require("./recipes/peking-duck");
 const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
 const peppermintBark = require("./recipes/peppermint-bark");
@@ -520,6 +521,7 @@ const recipes = [
     snickerdoodle,
     chocolateChipCookies,
     peanutButterCookies,
+    peanutButterThumbprintCookies,
     oatmealRaisinCookies,
     brownedButterChocolateChipCookies,
     sugarCookies,
