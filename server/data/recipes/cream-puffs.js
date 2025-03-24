@@ -64,7 +64,7 @@ module.exports = {
         { step: 'Place spoonful of batter on a baking sheet, a few inches apart.', type: PUFF, img: doled2 },
         { step: 'Bake until golden brown (about 20 to 25 minutes). Centers will be dry.', type: PUFF },
         { step: 'Let cool.', type: PUFF, img: baked7 },
-        { step: 'Either carefully split the puffs and fill with the cream filling or pipe into the shell.', type: SECTIONS.ASSEMBLY, img: [sliced2, filled] },
+        { step: 'Either carefully split the puffs and fill with the cream filling or pipe into the shell.', type: SECTIONS.ASSEMBLE, img: [sliced2, filled] },
         { step: 'Enjoy these delicious desserts.', type: SECTIONS.SERVE, img: plated2 },
     ]
 };

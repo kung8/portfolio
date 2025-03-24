@@ -235,6 +235,7 @@ const texasSausageKolaches = require("./recipes/texas-sausage-kolaches");
 const thaiBasil = require("./recipes/thai-basil");
 const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
 const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
+const turkeyRollUps = require("./recipes/turkey-roll-ups");
 const udonNoodleSoup = require("./recipes/udon-noodle-soup");
 const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich");
 const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
@@ -488,6 +489,7 @@ const recipes = [
     cheeseballs,
     garlicBreadsticks,
     fancyLunchables,
+    turkeyRollUps,
     wrap,
     parfait,
     smoothie,
@@ -593,7 +595,6 @@ module.exports = recipes;
 
 // DESSERTS
 // almond croissant cookie bars - https://www.thekitchn.com/almond-croissant-cookie-bars-recipe-23712681
-// peanut butter thumbprint cookies - https://preppykitchen.com/peanut-butter-blossoms/ (justin)
 
 // BREADS
 // naan - https://www.thekitchn.com/naan-recipe-23711933

@@ -34,10 +34,10 @@ module.exports = {
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: BIG_MAC_SAUCE },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: BIG_MAC_SAUCE },
 
-        { ...HAMBURGER_BUNS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.ASSEMBLY },
-        { ...BEEF_PATTIES, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.ASSEMBLY },
-        { ...LETTUCE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'shredded', section: SECTIONS.ASSEMBLY },
-        { ...CHEDDAR_CHEESE, amount: 8, unit: '', additionalDetails: 'slices', section: SECTIONS.ASSEMBLY },
+        { ...HAMBURGER_BUNS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.ASSEMBLE },
+        { ...BEEF_PATTIES, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.ASSEMBLE },
+        { ...LETTUCE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'shredded', section: SECTIONS.ASSEMBLE },
+        { ...CHEDDAR_CHEESE, amount: 8, unit: '', additionalDetails: 'slices', section: SECTIONS.ASSEMBLE },
     ],
     appliances: [
         { name: 'grill/stove' },

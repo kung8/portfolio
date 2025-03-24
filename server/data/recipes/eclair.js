@@ -87,9 +87,9 @@ module.exports = {
         { step: 'Fold in cream until mixed.', type: SECTIONS.FILLING },
         { step: 'In a microwavable bowl, melt chocolate at 50% power in 30 second intervals.', type: CHOCOLATE_GLAZE },
         { step: 'Mix in softened butter.', type: CHOCOLATE_GLAZE },
-        { step: 'Carefully slice the pastry lengthwise.', type: SECTIONS.ASSEMBLY },
-        { step: 'Fill the bottom with cream.', type: SECTIONS.ASSEMBLY },
-        { step: 'Dip top in chocolate and place on top of the bottom.', type: SECTIONS.ASSEMBLY },
+        { step: 'Carefully slice the pastry lengthwise.', type: SECTIONS.ASSEMBLE },
+        { step: 'Fill the bottom with cream.', type: SECTIONS.ASSEMBLE },
+        { step: 'Dip top in chocolate and place on top of the bottom.', type: SECTIONS.ASSEMBLE },
         { step: 'Happy eating!', type: SECTIONS.SERVE },
     ]
 };

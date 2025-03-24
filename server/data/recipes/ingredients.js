@@ -412,6 +412,7 @@ const INGREDIENTS = {
         CHIPOTLE_SAUCE: { name: 'chipotle sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         COOKIE_BUTTER: { name: 'cookie butter', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CORN_SYRUP: { name: 'corn syrup', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        CRANBERRY_SAUCE: { name: 'cranberry sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         DARK_SOY_SAUCE: {
             name: 'dark soy sauce', category: INGREDIENT_CATEGORY.CONDIMENTS, imig: "https://images.unsplash.com/photo-1582581720432-de83a98176ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3MzI2fA&ixlib=rb-4.0.3&q=80&w=400"
         },

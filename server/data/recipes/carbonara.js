@@ -76,9 +76,9 @@ module.exports = {
         { step: 'Cook for 3 to 4 minutes.', type: COOK_GUANCIALE },
         { step: 'Add the minced garlic. Mix and cook until the guanciale becomes golden (about 1 to 2 minutes).', type: COOK_GUANCIALE, img: carbonara7 },
 
-        { step: 'Add pasta to the large pan. Toss to coat the pasta with the fat.', type: SECTIONS.ASSEMBLY, img: carbonara8 },
-        { step: 'Transfer the contents of the large pan into the mixing bowl.', type: SECTIONS.ASSEMBLY, img: carbonara9 },
-        { step: 'Add 1/2 cup of pasta water and stir quickly for 1 minute. The sauce should become creamy and stick to the pasta.', type: SECTIONS.ASSEMBLY, img: [carbonara10, carbonara11, carbonara12] },
+        { step: 'Add pasta to the large pan. Toss to coat the pasta with the fat.', type: SECTIONS.ASSEMBLE, img: carbonara8 },
+        { step: 'Transfer the contents of the large pan into the mixing bowl.', type: SECTIONS.ASSEMBLE, img: carbonara9 },
+        { step: 'Add 1/2 cup of pasta water and stir quickly for 1 minute. The sauce should become creamy and stick to the pasta.', type: SECTIONS.ASSEMBLE, img: [carbonara10, carbonara11, carbonara12] },
 
         { step: 'Enjoy this authentic Italian dish topped with parsley, parmesan and pepper.', type: SECTIONS.SERVE, img: carbonara14 },
     ],

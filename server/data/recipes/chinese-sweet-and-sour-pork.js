@@ -84,8 +84,8 @@ module.exports = {
         { step: 'Add pineapples. Cook for about 30 seconds.', type: STIR_FRY },
         { step: 'Transfer the pineapples and veggies to a bowl. Set aside.', type: STIR_FRY },
 
-        { step: 'Over medium-high heat, add the sauce to the wok and bring to a boil (about 1 to 2 minutes).', type: SECTIONS.ASSEMBLY },
-        { step: 'Add the pork, veggies and pineapple. Mix until everything is combined and coated with the sauce (about 1 to 2 minutes).', type: SECTIONS.ASSEMBLY },
+        { step: 'Over medium-high heat, add the sauce to the wok and bring to a boil (about 1 to 2 minutes).', type: SECTIONS.ASSEMBLE },
+        { step: 'Add the pork, veggies and pineapple. Mix until everything is combined and coated with the sauce (about 1 to 2 minutes).', type: SECTIONS.ASSEMBLE },
 
         { step: 'Enjoy this immediately with jasmine rice', type: SECTIONS.SERVE },
     ],

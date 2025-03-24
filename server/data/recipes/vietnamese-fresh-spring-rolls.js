@@ -100,13 +100,13 @@ module.exports = {
 
         { step: 'In a blender, blend the "Peanut Sauce" ingredients until smooth.', type: PEANUT_SAUCE, img: [sauce2, sauce3] },
 
-        { step: 'Gather all the "Wrap" ingredients: chopped vegetables/herbs, cooked sliced protein, and cooked rice noodles.', type: SECTIONS.ASSEMBLY },
-        { step: 'In a pie pan, fill with 1 inch of warm water.', type: SECTIONS.ASSEMBLY, img: wrap1 },
-        { step: 'Place one rice wrapper in the water. Let it soak for about 10 seconds.', type: SECTIONS.ASSEMBLY, img: wrap2 },
-        { step: 'Place the softened rice wrapper on a plate.', type: SECTIONS.ASSEMBLY, img: wrap3 },
-        { step: 'About 1/3 up from the bottom of the softened rice wrapper, start layering a few of your favorite fillings at that point.', type: SECTIONS.ASSEMBLY, img: rolls6 },
-        { step: 'Fold the sides of the wrapper over the filling and begin rolling the wrapper away from you (e.g. like a burrito).', type: SECTIONS.ASSEMBLY },
-        { step: 'Set each of these finished rolls on a plate.', type: SECTIONS.ASSEMBLY, img: rolls10 },
+        { step: 'Gather all the "Wrap" ingredients: chopped vegetables/herbs, cooked sliced protein, and cooked rice noodles.', type: SECTIONS.ASSEMBLE },
+        { step: 'In a pie pan, fill with 1 inch of warm water.', type: SECTIONS.ASSEMBLE, img: wrap1 },
+        { step: 'Place one rice wrapper in the water. Let it soak for about 10 seconds.', type: SECTIONS.ASSEMBLE, img: wrap2 },
+        { step: 'Place the softened rice wrapper on a plate.', type: SECTIONS.ASSEMBLE, img: wrap3 },
+        { step: 'About 1/3 up from the bottom of the softened rice wrapper, start layering a few of your favorite fillings at that point.', type: SECTIONS.ASSEMBLE, img: rolls6 },
+        { step: 'Fold the sides of the wrapper over the filling and begin rolling the wrapper away from you (e.g. like a burrito).', type: SECTIONS.ASSEMBLE },
+        { step: 'Set each of these finished rolls on a plate.', type: SECTIONS.ASSEMBLE, img: rolls10 },
         { step: 'Enjoy these freshly made Vietnamese appetizers with the peanut sauce.', type: SECTIONS.SERVE },
     ],
     notes: [

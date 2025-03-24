@@ -177,6 +177,7 @@ const PROTEIN = {
 }
 
 const SECTIONS = {
+    ASSEMBLE: 'Assemble',
     MAIN: 'Main',
     MARINADE: 'Marinade',
     SAUCE: 'Sauce',
@@ -198,12 +199,12 @@ const SECTIONS = {
     MEAT: 'Meat',
     EGGS: 'Eggs',
     BAKE: 'Bake',
-    ASSEMBLY: 'Assembly',
     STORE: 'Store',
     FROSTING: 'Frosting',
     ICING: 'Icing',
     DECORATING: 'Decorating',
     BEEF: 'Beef',
+    CHILL: 'Chill',
 };
 
 const TIME_UNITS = {

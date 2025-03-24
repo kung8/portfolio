@@ -41,9 +41,9 @@ module.exports = {
         { ...VANILLA_EXTRACT, amount: 1/2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
 
-        { ...REFRIGERATED_PUFF_PASTRY, amount: '', unit: '', additionalDetails: 'chilled until ready to use', section: SECTIONS.ASSEMBLY },
-        { ...PINK_LADY_APPLES, amount: 4, unit: '', additionalDetails: 'cored, peeled and thinly sliced', section: SECTIONS.ASSEMBLY },
-        { ...APRICOT_JELLY, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'heated until partially melted', section: SECTIONS.ASSEMBLY },
+        { ...REFRIGERATED_PUFF_PASTRY, amount: '', unit: '', additionalDetails: 'chilled until ready to use', section: SECTIONS.ASSEMBLE },
+        { ...PINK_LADY_APPLES, amount: 4, unit: '', additionalDetails: 'cored, peeled and thinly sliced', section: SECTIONS.ASSEMBLE },
+        { ...APRICOT_JELLY, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'heated until partially melted', section: SECTIONS.ASSEMBLE },
     ],
     appliances: [
         { name: 'oven' },
@@ -60,10 +60,10 @@ module.exports = {
         { step: 'Mix in all-purpose flour.', type: FRANGIPANE, img: tart4 },
         { step: 'Refrigerate until ready to use.', type: FRANGIPANE },
 
-        { step: 'Preheat the oven to 400ºF.', type: SECTIONS.ASSEMBLY },
-        { step: 'Place the chilled puff pastry on a baking sheet.', type: SECTIONS.ASSEMBLY },
-        { step: 'Spread the frangipane evenly on the puff pastry.', type: SECTIONS.ASSEMBLY, img: tart5 },
-        { step: 'Arrange the apple slices in overlapping rows.', type: SECTIONS.ASSEMBLY, img: tart6 },
+        { step: 'Preheat the oven to 400ºF.', type: SECTIONS.ASSEMBLE },
+        { step: 'Place the chilled puff pastry on a baking sheet.', type: SECTIONS.ASSEMBLE },
+        { step: 'Spread the frangipane evenly on the puff pastry.', type: SECTIONS.ASSEMBLE, img: tart5 },
+        { step: 'Arrange the apple slices in overlapping rows.', type: SECTIONS.ASSEMBLE, img: tart6 },
 
         { step: 'Bake until crust begins to become golden brown (about 12 to 15 minutes).', type: SECTIONS.BAKE, img: tart7 },
         { step: 'Reduce heat to 350ºF.', type: SECTIONS.BAKE },
