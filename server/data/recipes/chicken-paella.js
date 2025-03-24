@@ -20,7 +20,7 @@ module.exports = {
     websites: [
         { label: 'Chicken Paella', link: 'https://www.averiecooks.com/easy-chicken-paella/' }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
         { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
     ],

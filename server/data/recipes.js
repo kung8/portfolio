@@ -303,7 +303,7 @@ const recipes = [
     chineseSweetAndSourPork,
     kungPaoChicken,
     roastedPorkBelly,
-    pekingDuck, // TODO: add
+    pekingDuck, // TODO: find recipe 
     chineseGingerChicken,
     chineseCashewChicken,
     chineseGreenBeanBeef,
@@ -407,7 +407,7 @@ const recipes = [
     cherryAndDarkChocolateCrostata, // TODO: add
 
     // BRITISH
-    fishAndChips, // TODO: add
+    fishAndChips, // TODO: find recipe
     englishScones,
     chickenPotPie,
     chickenPotPie1, // TODO: add
@@ -463,7 +463,7 @@ const recipes = [
     hawaiianHaystacks,
     hospitalityChicken,
     jambalaya,
-    fishSticksWithTartarSauce, // TODO: add
+    fishSticksWithTartarSauce, // TODO: find recipe
     cajunShrimp, // TODO: add
     jumboShrimpParmesan, // TODO: add
     garlicShrimp, // TODO: add

@@ -1,6 +1,6 @@
 const mexicanChickenBake = '../assets/Products/mexican-chicken-bake.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const {} = require('./ingredients');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { } = require('./ingredients');
 
 module.exports = {
     cardName: 'Mexican Chicken Bake',
@@ -11,41 +11,23 @@ module.exports = {
     genre: [GENRES.MEXICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
-    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
-    cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
+    yields: { amount: '', unit: YIELD_UNITS.SERVING },
+    prepTime: { amount: '', unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: '', unit: TIME_UNITS.MINUTE },
+    websites: [
+        { label: '', link: '' }
+    ],
+    separated: true,
     ingredients: [
-        // { name: 'cooked chicken', amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
-        // { ...UNSALTED_BUTTER, amount: 1/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
-        // { ...ALL_PURPOSE_FLOUR, amount: 1/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
-        // { ...YELLOW_ONION, amount: 1/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
-        // { ...SALT, amount: 1/2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
-        // { ...BLACK_PEPPER, amount: 1/4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
-        // { ...CHICKEN_BROTH, amount: '1 3/4', unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
-        // { ...MILK, amount: 2/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
-        // { name: 'frozen peas', amount: 5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
-        // { name: 'frozen carrots', amount: 5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
-        // { name: 'refrigerated pie crust', amount: 15, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
+        { name: '', amount: '', unit: '', additionalDetails: '', section: '' },
     ],
     appliances: [
-        // { name: 'stove' },
+        { name: '' },
     ],
     supplies: [
-        // { name: 'aluminum foil' },
-        // { name: 'frying pan' },
-        // { name: 'rubber spatula' },
-        // { name: 'measuring spoons' },
-        // { name: 'measuring cups' },
-        // { name: 'pie pan' },
+        { name: '' },
     ],
     directions: [
-        // { step: 'Heat a pan over medium heat and add butter.', type: SECTIONS.MAIN },
-        // { step: 'Add flour, onion, salt, and pepper to pan and cook until bubbling.', type: SECTIONS.MAIN },
-        // { step: 'Mix milk and broth into the mixture and stir constantly until boils for 1 minute.', type: SECTIONS.MAIN },
-        // { step: 'Mix in chicken, peas, and carrots until hot.', type: SECTIONS.MAIN },
-        // { step: 'Preheat the oven to 425ºF.', type: SECTIONS.MAIN },
-        // { step: 'Roll the pie crust inside pie pan and add chicken mixture inside.', type: SECTIONS.MAIN },
-        // { step: 'Roll the remaining dough on top of the mixture and turn edges over pie pan.', type: SECTIONS.MAIN },
-        // { step: 'Bake the pie for 35 minutes or until golden brown.', type: SECTIONS.MAIN },
+        { step: '', type: '' },
     ]
 };
