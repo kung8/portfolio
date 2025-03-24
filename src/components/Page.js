@@ -8,7 +8,7 @@ const Header = ({ backRoute = '/', backText = 'Back Home', children, title, cust
                 {backText}
             </span>
             {customTitle ? customTitle : (
-                <h1 className="heading">{title}</h1>
+                <h1 className="heading" itemProp="name">{title}</h1>
             )}
         </div>
         {children}

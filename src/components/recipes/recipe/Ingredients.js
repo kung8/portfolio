@@ -41,14 +41,14 @@ const IngredientItem = ({ id, item, link }) => {
             />
             {link ? (
                 <a href={getLink()} target="_blank" rel="noopener noreferrer" className="ingredient-label-with-link">
-                    <span className="ingredient-name">{item.name}</span>
+                    <span className="ingredient-name" itemProp="recipeIngredient">{item.name}</span>
                     {item.additionalDetails && (
                         <span className="ingredient-additional-details">, {item.additionalDetails}</span>
                     )}
                 </a>
             ) : (
                 <label htmlFor={id} className="ingredient-label">
-                    <span className="ingredient-name">{item.name}</span>
+                    <span className="ingredient-name" itemProp="recipeIngredient">{item.name}</span>
                     {item.additionalDetails && (
                         <span className="ingredient-additional-details">, {item.additionalDetails}</span>
                     )}
