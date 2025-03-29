@@ -17,7 +17,7 @@ module.exports = {
     cardName: 'Samosa Burritos',
     name: 'Samosa Burritos',
     img: '',
-    recipeCredit: 'Chelsey Hickenlooper',
+    recipeFinder: 'Chelsey Hickenlooper',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER],

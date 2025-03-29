@@ -12,7 +12,7 @@ module.exports = {
     cardName: 'Sticky Toffee Pudding',
     name: 'Sticky Toffee Pudding',
     img: plated4,
-    recipeCredit: 'Steve Kenny',
+    recipeFinder: 'Steve Kenny',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

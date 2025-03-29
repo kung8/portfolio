@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Reuben Sandwich',
     name: 'Reuben Sandwich',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

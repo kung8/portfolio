@@ -10,7 +10,7 @@ const EGGS_SECTION = 'Egg';
 module.exports = {
     cardName: 'Dinner Rolls',
     name: 'Dinner Rolls',
-    recipeCredit: 'Nanette Marx',
+    recipeFinder: 'Nanette Marx',
     img: rolls2,
     available: true,
     recommended: true,

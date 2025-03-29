@@ -13,7 +13,6 @@ module.exports = {
     cardName: 'Brownies 2',
     name: 'Brownies 2',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],

@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'French Baguettes',
     name: 'French Baguettes',
     img: '',
-    recipeCredit: 'Sam Giraud-Carrier',
+    recipeFinder: 'Sam Giraud-Carrier',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER],

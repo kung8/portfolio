@@ -10,7 +10,7 @@ module.exports = {
     cardName: 'Creamy Corn Casserole',
     name: 'Creamy Corn Casserole',
     img: '',
-    recipeCredit: 'Samm Pham',
+    recipeFinder: 'Samm Pham',
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.APPETIZER],

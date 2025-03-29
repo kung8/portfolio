@@ -14,7 +14,6 @@ module.exports = {
     cardName: 'Lomo Saltado',
     name: 'Lomo Saltado',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

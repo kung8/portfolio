@@ -19,7 +19,6 @@ module.exports = {
     cardName: 'Udon Noodle Soup',
     name: 'Udon Noodle Soup',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

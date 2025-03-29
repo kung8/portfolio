@@ -12,7 +12,7 @@ module.exports = {
     cardName: 'Crockpot Birria Tacos',
     name: 'Crockpot Birria Tacos',
     img: '',
-    recipeCredit: 'Lauren Maliwauki',
+    recipeFinder: 'Lauren Maliwauki',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

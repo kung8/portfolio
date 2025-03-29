@@ -19,7 +19,7 @@ module.exports = {
     cardName: 'Japchae',
     name: 'Japchae (Korean Glass Noodles)',
     img: '',
-    recipeCredit: 'Christian Ou',
+    recipeFinder: 'Christian Ou',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

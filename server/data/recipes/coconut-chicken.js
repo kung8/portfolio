@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Coconut Chicken',
     name: 'Coconut Chicken',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

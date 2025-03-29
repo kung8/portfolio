@@ -16,7 +16,7 @@ module.exports = {
     cardName: 'Chicken Tetrazzini',
     name: 'Chicken Tetrazzini',
     img: tetrazzini7,
-    recipeCredit: 'Lauren Maliwauki',
+    recipeFinder: 'Lauren Maliwauki',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

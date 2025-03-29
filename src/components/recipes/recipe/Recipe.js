@@ -193,8 +193,8 @@ export const Recipe = ({ match }) => {
                     </div>
                 )}
             >
-                {item?.recipeCredit && (
-                    <h4 className="recipe-credit">Credit to {item.recipeCredit}</h4>
+                {item?.recipeFinder && (
+                    <h4 className="recipe-credit">Credit to {item.recipeFinder}</h4>
                 )}
             </NonDashboardPage.Header>
             <RecipeContext.Provider

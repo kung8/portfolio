@@ -17,7 +17,6 @@ module.exports = {
     cardName: 'Jambalaya',
     name: 'Jambalaya',
     img: '',
-    recipeCredit: '',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Lentil Sloppy Joes',
     name: 'Lentil Sloppy Joes',
     img: '',
-    recipeCredit: 'Chelsey Hickenlooper',
+    recipeFinder: 'Chelsey Hickenlooper',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

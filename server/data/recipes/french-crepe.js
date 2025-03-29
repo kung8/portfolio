@@ -30,7 +30,7 @@ const MELTED_CHOCOLATE = 'Melted chocolate';
 module.exports = {
     cardName: 'Crepes',
     name: 'Crepes',
-    recipeCredit: 'Sam Giraud-Carrier',
+    recipeFinder: 'Sam Giraud-Carrier',
     img: plated2,
     available: true,
     recommended: true,

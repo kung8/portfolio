@@ -14,7 +14,7 @@ module.exports = {
     cardName: 'Mexican Meatball Soup',
     name: 'Mexican Meatball Soup (Albondigas)',
     img: '',
-    recipeCredit: 'Zam Illescas',
+    recipeFinder: 'Zam Illescas',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

@@ -19,7 +19,7 @@ module.exports = {
     cardName: 'Apple Tart',
     name: 'Apple Tart',
     img: tart10,
-    recipeCredit: 'Sam Giraud-Carrier',
+    recipeFinder: 'Sam Giraud-Carrier',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

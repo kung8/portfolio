@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Fish and Chips',
     name: 'Fish and Chips',
     img: '',
-    recipeCredit: '',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
