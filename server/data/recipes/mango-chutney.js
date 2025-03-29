@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { VEGETABLE_OIL, GINGER, GARLIC, RED_CHILI, CORIANDER, CUMIN, TURMERIC, CARDAMOM, CLOVES, CINNAMON, SALT, MANGOES, WHITE_SUGAR, WHITE_VINEGAR, NIGELLA_SEED } = require('./ingredients');
+const { VEGETABLE_OIL, GINGER, GARLIC, RED_CHILI, CORIANDER, CUMIN, TURMERIC, CARDAMOM, CLOVES, CINNAMON, SALT, MANGO, WHITE_SUGAR, WHITE_VINEGAR, NIGELLA_SEED } = require('./ingredients');
 
 const VEGGIES_SECTION = 'Veggies';
 const SPICES_SECTION = 'Spices';
@@ -41,7 +41,7 @@ module.exports = {
         { ...CLOVES, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES_SECTION },
         { ...CINNAMON, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES_SECTION },
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MANGO_SECTION },
-        { ...MANGOES, amount: 5, unit: '', additionalDetails: 'peeled and diced', section: MANGO_SECTION },
+        { ...MANGO, amount: 5, unit: '', additionalDetails: 'peeled and diced', section: MANGO_SECTION },
         { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MANGO_SECTION },
         { ...WHITE_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MANGO_SECTION },
     ],

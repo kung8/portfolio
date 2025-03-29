@@ -35,7 +35,7 @@ const {
     LIGHT_SOY_SAUCE,
     PEANUT_BUTTER,
     UNSALTED_PEANUTS,
-    BEAN_SPROUTS,
+    BEAN_SPROUT,
 } = require('./ingredients');
 
 const CHICKEN_AND_VEGGIES = 'Chicken and Veggies';
@@ -71,7 +71,7 @@ module.exports = {
         { ...PEANUT_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...UNSALTED_PEANUTS, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...LIME, amount: 1, unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
-        { ...BEAN_SPROUTS, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...BEAN_SPROUT, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...CILANTRO, amount: 1, unit: INGREDIENT_UNITS.BUNCH, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

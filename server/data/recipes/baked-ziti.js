@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { ZITI, ITALIAN_SAUSAGE, GARLIC, CRUSHED_TOMATOES, SALT, RED_PEPPER_FLAKES, HEAVY_CREAM, PARMIGIANO_REGGIANO, BASIL_LEAVES, MOZZARELLA_CHEESE, WHITE_SUGAR } = require('./ingredients');
+const { ZITI, ITALIAN_SAUSAGE, GARLIC, CRUSHED_TOMATOES, SALT, RED_PEPPER_FLAKES, HEAVY_CREAM, PARMIGIANO_REGGIANO, BASIL_LEAF, MOZZARELLA_CHEESE, WHITE_SUGAR } = require('./ingredients');
 
 const PASTA_SECTION = 'Pasta';
 const CASSEROLE_MIXTURE_SECTION = 'Casserole Mixture';
@@ -41,7 +41,7 @@ module.exports = {
         { ...RED_PEPPER_FLAKES, amount: 1/4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
         { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
         { ...PARMIGIANO_REGGIANO, amount: 1/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: CASSEROLE_MIXTURE_SECTION },
-        { ...BASIL_LEAVES, amount: 1/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: CASSEROLE_MIXTURE_SECTION },
+        { ...BASIL_LEAF, amount: 1/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: CASSEROLE_MIXTURE_SECTION },
 
         { ...MOZZARELLA_CHEESE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: LAYERING_SECTION },
         { ...PARMIGIANO_REGGIANO, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'grated', section: LAYERING_SECTION },

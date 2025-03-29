@@ -24,7 +24,7 @@ const wrap2 = '../assets/Products/fresh-spring-rolls-wrap-2.jpeg';
 const wrap3 = '../assets/Products/fresh-spring-rolls-wrap-3.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { CARROT, CUCUMBER, MINT_LEAVES, BASIL_LEAVES, CILANTRO, PORK, PEANUT_BUTTER, LIGHT_SOY_SAUCE, HOISIN_SAUCE, SWEET_CHILI_SAUCE, VERMICELLI_RICE_NOODLES, SPRING_ROLL_RICE_WRAPPERS, SHRIMP, VEGETABLE_OIL } = require('./ingredients');
+const { CARROT, CUCUMBER, MINT_LEAF, BASIL_LEAF, CILANTRO, PORK, PEANUT_BUTTER, LIGHT_SOY_SAUCE, HOISIN_SAUCE, SWEET_CHILI_SAUCE, VERMICELLI_RICE_NOODLES, SPRING_ROLL_RICE_WRAPPERS, SHRIMP, VEGETABLE_OIL } = require('./ingredients');
 
 const VERMICELLI_RICE_NOODLES_SECTION = 'Vermicelli Rice Noodles';
 const WRAP_SECTION = 'Wrap';
@@ -57,8 +57,8 @@ module.exports = {
 
         { ...CARROT, amount: 1, unit: '', additionalDetails: 'peeled and thinly sliced', section: VEGETABLES_AND_HERBS_FILLING },
         { ...CUCUMBER, amount: 1, unit: '', additionalDetails: 'peeled and thinly sliced', section: VEGETABLES_AND_HERBS_FILLING },
-        { ...MINT_LEAVES, amount: 1, unit: INGREDIENT_UNITS.BUNCH, additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
-        { ...BASIL_LEAVES, amount: 1, unit: INGREDIENT_UNITS.BUNCH, additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...MINT_LEAF, amount: 1, unit: INGREDIENT_UNITS.BUNCH, additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
+        { ...BASIL_LEAF, amount: 1, unit: INGREDIENT_UNITS.BUNCH, additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
         { ...CILANTRO, amount: 1, unit: INGREDIENT_UNITS.BUNCH, additionalDetails: '', section: VEGETABLES_AND_HERBS_FILLING },
 
         { ...PORK, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: PORK_SECTION },

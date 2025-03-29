@@ -6,7 +6,7 @@ const {
     CARROT,
     YELLOW_ONION,
     OLIVE_OIL,
-    POTATOES,
+    POTATO,
     SALT,
     SUMMER_SAUSAGE,
 } = require('./ingredients');
@@ -27,7 +27,7 @@ module.exports = {
     ingredients: [
         { ...SUMMER_SAUSAGE, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...CARROT, amount: 3, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...POTATOES, amount: 3, unit: '', additionalDetails: 'chunked', section: SECTIONS.MAIN },
+        { ...POTATO, amount: 3, unit: '', additionalDetails: 'chunked', section: SECTIONS.MAIN },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },

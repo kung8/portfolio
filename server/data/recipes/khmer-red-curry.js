@@ -17,11 +17,11 @@ const {
     RED_CURRY_PASTE,
     COCONUT_MILK,
     LEMONGRASS,
-    KAFFIR_LIME_LEAVES,
+    KAFFIR_LIME_LEAF,
     WARM_WATER,
     SALT,
     BLACK_PEPPER,
-    RUSSET_POTATOES,
+    RUSSET_POTATO,
 } = require('./ingredients');
 
 module.exports = {
@@ -44,10 +44,10 @@ module.exports = {
     ingredients: [
         { ...CHICKEN_THIGH, amount: 5, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...RED_CURRY_PASTE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RUSSET_POTATOES, amount: 1, unit: '', additionalDetails: 'peeled and cubed', section: SECTIONS.MAIN },
+        { ...RUSSET_POTATO, amount: 1, unit: '', additionalDetails: 'peeled and cubed', section: SECTIONS.MAIN },
         { ...COCONUT_MILK, amount: 13.5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...LEMONGRASS, amount: '', unit: '', additionalDetails: 'diagonally sliced', section: SECTIONS.MAIN },
-        { ...KAFFIR_LIME_LEAVES, amount: 12, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...KAFFIR_LIME_LEAF, amount: 12, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...WARM_WATER, amount: '', unit: '', additionalDetails: 'to thin', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },

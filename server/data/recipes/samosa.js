@@ -23,7 +23,7 @@ const samosa22 = '../assets/Products/samosa-22.jpeg';
 const samosa23 = '../assets/Products/samosa-23.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, GHEE, WARM_WATER, CAROM_SEEDS, SALT, GREEN_PEA, GINGER, SERRANO_PEPPER, CORIANDER, LEMON_JUICE, CUMIN, GARAM_MASALA, CHILI_POWDER, FENNEL_SEEDS, YUKON_GOLD_POTATOES, AMCHUR_POWDER } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, GHEE, WARM_WATER, CAROM_SEEDS, SALT, GREEN_PEA, GINGER, SERRANO_PEPPER, CORIANDER, LEMON_JUICE, CUMIN, GARAM_MASALA, CHILI_POWDER, FENNEL_SEEDS, YUKON_GOLD_POTATO, AMCHUR_POWDER } = require('./ingredients');
 
 const DOUGH = 'Dough';
 const POTATO_FILLING = 'Potato Filling';
@@ -59,7 +59,7 @@ module.exports = {
         { ...GHEE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: DOUGH },
         { ...WARM_WATER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DOUGH },
 
-        { ...YUKON_GOLD_POTATOES, amount: 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'peeled and halved', section: POTATO_FILLING },
+        { ...YUKON_GOLD_POTATO, amount: 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'peeled and halved', section: POTATO_FILLING },
         { ...GHEE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: POTATO_FILLING },
         { ...CUMIN, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: POTATO_FILLING },
         { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: POTATO_FILLING },

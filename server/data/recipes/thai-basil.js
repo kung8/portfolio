@@ -8,7 +8,7 @@ const basil8 = '../assets/Products/thai-basil-8.jpeg';
 const basil9 = '../assets/Products/thai-basil-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { CHICKEN_BROTH, OYSTER_SAUCE, LIGHT_SOY_SAUCE, FISH_SAUCE, WHITE_SUGAR, BROWN_SUGAR, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHALLOT, GARLIC, THAI_CHILI_PEPPER, BASIL_LEAVES, JASMINE_RICE } = require('./ingredients');
+const { CHICKEN_BROTH, OYSTER_SAUCE, LIGHT_SOY_SAUCE, FISH_SAUCE, WHITE_SUGAR, BROWN_SUGAR, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHALLOT, GARLIC, THAI_CHILI_PEPPER, BASIL_LEAF, JASMINE_RICE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Spicy Thai Basil',
@@ -41,7 +41,7 @@ module.exports = {
         { ...SHALLOT, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...THAI_CHILI_PEPPER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...BASIL_LEAVES, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
+        { ...BASIL_LEAF, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
 
         { ...JASMINE_RICE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked', section: SECTIONS.SERVE },
     ],

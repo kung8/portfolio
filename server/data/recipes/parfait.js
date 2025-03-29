@@ -5,7 +5,7 @@ const {
     VANILLA_EXTRACT,
     HONEY,
     GRANOLA,
-    BERRIES,
+    BERRY,
     CASHEWS,
 } = require('./ingredients');
 
@@ -25,7 +25,7 @@ module.exports = {
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
         { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
         { ...GRANOLA, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { ...BERRIES, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...BERRY, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
         { ...CASHEWS, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     supplies: [

@@ -4,7 +4,7 @@ const {
     CHICKEN_THIGH,
     MCCORMICK_SEASONING_PACKET,
     SNOW_PEA,
-    CARROT_CHIPS,
+    CARROT_CHIP,
     OLIVE_OIL,
 } = require('./ingredients');
 
@@ -26,7 +26,7 @@ module.exports = {
         { ...CHICKEN_THIGH, amount: 5, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
         { ...MCCORMICK_SEASONING_PACKET, amount: 1, unit: '', additionalDetails: '', optional: false },
         { ...SNOW_PEA, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
-        { ...CARROT_CHIPS, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
+        { ...CARROT_CHIP, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
         { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
     ],
     appliances: [

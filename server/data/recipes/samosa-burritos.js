@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { TORTILLA, CAULIFLOWER, POTATOES, RED_ONION, JALAPENO_PEPPER, GARLIC, CUMIN, CORIANDER, GARAM_MASALA, FENNEL_SEEDS, TURMERIC, LEMON_JUICE, FROZEN_PEAS, SEA_SALT, BLACK_PEPPER, GINGER_PUREE, VEGETABLE_BROTH, GINGER, GREEK_YOGURT, MINT_LEAVES, CILANTRO, MAPLE_SYRUP, LIME_JUICE } = require('./ingredients');
+const { TORTILLA, CAULIFLOWER, POTATO, RED_ONION, JALAPENO_PEPPER, GARLIC, CUMIN, CORIANDER, GARAM_MASALA, FENNEL_SEEDS, TURMERIC, LEMON_JUICE, FROZEN_PEAS, SEA_SALT, BLACK_PEPPER, GINGER_PUREE, VEGETABLE_BROTH, GINGER, GREEK_YOGURT, MINT_LEAF, CILANTRO, MAPLE_SYRUP, LIME_JUICE } = require('./ingredients');
 
 const VEGETABLES_SECTION = 'Vegetables';
 const HERBS_SECTION = 'Herbs';
@@ -34,7 +34,7 @@ module.exports = {
     ingredients: [
         { ...TORTILLA, amount: 8, unit: '', additionalDetails: '', section: '' },
         { ...CAULIFLOWER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: VEGETABLES_SECTION },
-        { ...POTATOES, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: VEGETABLES_SECTION },
+        { ...POTATO, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: VEGETABLES_SECTION },
         { ...RED_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', section: VEGETABLES_SECTION },
         { ...JALAPENO_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: VEGETABLES_SECTION },
         { ...VEGETABLE_BROTH, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: VEGETABLES_SECTION },
@@ -53,7 +53,7 @@ module.exports = {
         { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PEAS_SECTION },
 
         { ...GREEK_YOGURT, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHUTNEY_SECTION },
-        { ...MINT_LEAVES, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHUTNEY_SECTION },
+        { ...MINT_LEAF, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHUTNEY_SECTION },
         { ...CILANTRO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHUTNEY_SECTION },
         { ...JALAPENO_PEPPER, amount: 1, unit: '', additionalDetails: 'seeded', section: CHUTNEY_SECTION },
         { ...GINGER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'grated', section: CHUTNEY_SECTION },

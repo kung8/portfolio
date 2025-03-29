@@ -10,7 +10,7 @@ const potatoes9 = '../assets/Products/mash-potatoes-9.jpeg';
 const potatoes10 = '../assets/Products/mash-potatoes-10.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { YUKON_GOLD_POTATOES, GARLIC, UNSALTED_BUTTER, MILK, SALT, BLACK_PEPPER, GREEN_ONION, SOUR_CREAM, CHEDDAR_CHEESE, CHIVE } = require('./ingredients');
+const { YUKON_GOLD_POTATO, GARLIC, UNSALTED_BUTTER, MILK, SALT, BLACK_PEPPER, GREEN_ONION, SOUR_CREAM, CHEDDAR_CHEESE, CHIVE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Mash Potatoes',
@@ -29,7 +29,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...YUKON_GOLD_POTATOES, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled and quartered', section: SECTIONS.MAIN },
+        { ...YUKON_GOLD_POTATO, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled and quartered', section: SECTIONS.MAIN },
         { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.MAIN },
         { ...MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },

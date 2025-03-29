@@ -26,7 +26,7 @@ const kolaches25 = '../assets/Products/kolaches-25.jpeg';
 const kolaches26 = '../assets/Products/kolaches-26.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { YEAST, WHITE_SUGAR, ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, EGG_YOLKS, SALT, CREAM_CHEESE, POWDERED_SUGAR, WHOLE_MILK, CHERRIES, COLD_WATER, LEMON_JUICE, LEMON_ZEST } = require('./ingredients');
+const { YEAST, WHITE_SUGAR, ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, EGG_YOLKS, SALT, CREAM_CHEESE, POWDERED_SUGAR, WHOLE_MILK, CHERRY, COLD_WATER, LEMON_JUICE, LEMON_ZEST } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
 const CHERRY_FILLING_SECTION = 'Cherry Filling';
@@ -70,7 +70,7 @@ module.exports = {
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
 
-        { ...CHERRIES, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'pitted and chopped', section: CHERRY_FILLING_SECTION },
+        { ...CHERRY, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'pitted and chopped', section: CHERRY_FILLING_SECTION },
         { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHERRY_FILLING_SECTION },
         { ...COLD_WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHERRY_FILLING_SECTION },
         { ...SALT, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHERRY_FILLING_SECTION },

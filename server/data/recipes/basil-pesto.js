@@ -16,7 +16,7 @@ const {
     GARLIC,
     SEA_SALT,
     BLACK_PEPPER,
-    BASIL_LEAVES,
+    BASIL_LEAF,
     OLIVE_OIL,
     PARMESAN_CHEESE,
     SPAGHETTI_NOODLES
@@ -46,7 +46,7 @@ module.exports = {
         { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SEA_SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...BASIL_LEAVES, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BASIL_LEAF, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...OLIVE_OIL, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...PARMESAN_CHEESE, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SPAGHETTI_NOODLES, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'cooked', section: SECTIONS.SERVE },

@@ -19,7 +19,7 @@ const plated2 = '../assets/Products/marry-me-chicken-plated-2.jpeg';
 const plated3 = '../assets/Products/marry-me-chicken-plated-3.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CHICKEN_BROTH, HEAVY_CREAM, PARMESAN_CHEESE, OREGANO, RED_PEPPER_FLAKES, BASIL_LEAVES, SUN_DRIED_TOMATOES } = require('./ingredients');
+const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CHICKEN_BROTH, HEAVY_CREAM, PARMESAN_CHEESE, OREGANO, RED_PEPPER_FLAKES, BASIL_LEAF, SUN_DRIED_TOMATOES } = require('./ingredients');
 
 const SUN_DRIED_TOMATO_CREAM_SAUCE = 'Sun-Dried Tomato Cream Sauce';
 
@@ -54,7 +54,7 @@ module.exports = {
         { ...SUN_DRIED_TOMATOES, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
         { ...OREGANO, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
         { ...RED_PEPPER_FLAKES, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { ...BASIL_LEAVES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...BASIL_LEAF, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'oven' },

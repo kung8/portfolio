@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { ANGEL_HAIR_PASTA, OLIVE_OIL, YELLOW_ONION, GARLIC, ROMA_TOMATO, BALSAMIC_VINEGAR, CHICKEN_BROTH, RED_PEPPER_FLAKES, BLACK_PEPPER, BASIL_LEAVES, PARMESAN_CHEESE } = require('./ingredients');
+const { ANGEL_HAIR_PASTA, OLIVE_OIL, YELLOW_ONION, GARLIC, ROMA_TOMATO, BALSAMIC_VINEGAR, CHICKEN_BROTH, RED_PEPPER_FLAKES, BLACK_PEPPER, BASIL_LEAF, PARMESAN_CHEESE } = require('./ingredients');
 
 const PASTA = 'Pasta';
 const TOMATO_SAUCE = 'Tomato Sauce';
@@ -37,7 +37,7 @@ module.exports = {
         { ...CHICKEN_BROTH, amount: 10.75, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: TOMATO_SAUCE },
         { ...RED_PEPPER_FLAKES, amount: '', unit: '', additionalDetails: 'to taste', section: TOMATO_SAUCE },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: TOMATO_SAUCE },
-        { ...BASIL_LEAVES, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: TOMATO_SAUCE },
+        { ...BASIL_LEAF, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: TOMATO_SAUCE },
         { ...PARMESAN_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

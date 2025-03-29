@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { VINE_TOMATOES, WHITE_ONION, GARLIC, VEGETABLE_OIL, CHICKEN_BROTH, CILANTRO, SALT, GROUND_BEEF, BREAD, MILK, EGG, BLACK_PEPPER, GARLIC_POWDER, WHITE_RICE, ZUCCHINI } = require('./ingredients');
+const { VINE_TOMATO, WHITE_ONION, GARLIC, VEGETABLE_OIL, CHICKEN_BROTH, CILANTRO, SALT, GROUND_BEEF, BREAD, MILK, EGG, BLACK_PEPPER, GARLIC_POWDER, WHITE_RICE, ZUCCHINI } = require('./ingredients');
 
 const TOMATO_BROTH = 'Tomato Broth';
 const MEATBALLS = 'Meatballs';
@@ -40,7 +40,7 @@ module.exports = {
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: MEATBALLS },
 
 
-        { ...VINE_TOMATOES, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: TOMATO_BROTH },
+        { ...VINE_TOMATO, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: TOMATO_BROTH },
         { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: TOMATO_BROTH },
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TOMATO_BROTH },
         { ...WHITE_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', section: TOMATO_BROTH },

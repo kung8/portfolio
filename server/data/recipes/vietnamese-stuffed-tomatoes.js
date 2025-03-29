@@ -13,7 +13,7 @@ const tomatoes12 = '../assets/Products/vietnamese-stuffed-tomatoes-12.jpeg';
 const tomatoes13 = '../assets/Products/vietnamese-stuffed-tomatoes-13.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { VINE_TOMATOES, CORNSTARCH, GROUND_PORK, YELLOW_ONION, GARLIC, FISH_SAUCE, SALT, WHITE_SUGAR, BLACK_PEPPER, VEGETABLE_OIL, LIGHT_SOY_SAUCE, COLD_WATER, GREEN_ONION } = require('./ingredients');
+const { VINE_TOMATO, CORNSTARCH, GROUND_PORK, YELLOW_ONION, GARLIC, FISH_SAUCE, SALT, WHITE_SUGAR, BLACK_PEPPER, VEGETABLE_OIL, LIGHT_SOY_SAUCE, COLD_WATER, GREEN_ONION } = require('./ingredients');
 
 const FILLING_SECTION = 'Filling';
 const TOMATOES_SECTION = 'Tomatoes';
@@ -50,7 +50,7 @@ module.exports = {
         { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...COLD_WATER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { ...VINE_TOMATOES, amount: 6, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'halved', section: TOMATOES_SECTION },
+        { ...VINE_TOMATO, amount: 6, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'halved', section: TOMATOES_SECTION },
         { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TOMATOES_SECTION },
 
         { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },

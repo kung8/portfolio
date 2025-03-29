@@ -20,7 +20,7 @@ const mango19 = '../assets/Products/mango-sticky-rice-19.jpeg';
 const mango20 = '../assets/Products/mango-sticky-rice-20.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { COCONUT_MILK, WHITE_SUGAR, SALT, MANGOES, SESAME_SEEDS, SWEET_RICE, COCONUT_CREAM } = require('./ingredients');
+const { COCONUT_MILK, WHITE_SUGAR, SALT, MANGO, SESAME_SEEDS, SWEET_RICE, COCONUT_CREAM } = require('./ingredients');
 
 const SOAK_RICE = 'Soak Rice';
 const STEAM_RICE = 'Steam Rice';
@@ -51,7 +51,7 @@ module.exports = {
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: STICKY_RICE },
         { ...COCONUT_CREAM, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'full-fat recommended', section: COCONUT_CREAM_SAUCE },
         { ...WHITE_SUGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: COCONUT_CREAM_SAUCE },
-        { ...MANGOES, amount: 2, unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...MANGO, amount: 2, unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

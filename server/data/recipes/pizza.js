@@ -60,7 +60,7 @@ const {
     PEPPERONI,
     MILK,
     RED_PEPPER_FLAKES,
-    BASIL_LEAVES,
+    BASIL_LEAF,
     BUFFALO_SAUCE,
 } = require('./ingredients');
 
@@ -137,7 +137,7 @@ module.exports = {
         // MARGHERITA
         { ...PIZZA_SAUCE, amount: '', unit: '', additionalDetails: '', section: MARGHERITA_PIZZA },
         { ...MOZZARELLA_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: MARGHERITA_PIZZA },
-        { ...BASIL_LEAVES, amount: '', unit: '', additionalDetails: 'sliced (or sub wth baby spinach)', section: MARGHERITA_PIZZA },
+        { ...BASIL_LEAF, amount: '', unit: '', additionalDetails: 'sliced (or sub wth baby spinach)', section: MARGHERITA_PIZZA },
 
         // PEPPERONI
         { ...PIZZA_SAUCE, amount: '', unit: '', additionalDetails: '', section: PEPPERONI_PIZZA },

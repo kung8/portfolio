@@ -14,7 +14,7 @@ const toppings = '../assets/Products/pho-toppings.jpeg';
 const veggiesPot = '../assets/Products/pho-veggies-in-pot.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
-    BEAN_SPROUTS,
+    BEAN_SPROUT,
     BEEF_BROTH,
     BEEF_TENDERLOIN,
     BLACK_PEPPER,
@@ -22,7 +22,7 @@ const {
     GREEN_ONION,
     LIME_JUICE,
     LIGHT_SOY_SAUCE,
-    MINT_LEAVES,
+    MINT_LEAF,
     DRIED_RICE_NOODLES,
     SALT,
     SRIRACHA_SAUCE,
@@ -74,8 +74,8 @@ module.exports = {
 
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...GREEN_ONION, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
-        { ...BEAN_SPROUTS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...MINT_LEAVES, amount: '', unit: '', additionalDetails: 'plucked', section: SECTIONS.TOPPINGS },
+        { ...BEAN_SPROUT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...MINT_LEAF, amount: '', unit: '', additionalDetails: 'plucked', section: SECTIONS.TOPPINGS },
         { ...LIME_JUICE, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...LIGHT_SOY_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...SRIRACHA_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },

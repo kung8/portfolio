@@ -26,7 +26,7 @@ const {
     HEAVY_CREAM,
     DARK_COOKING_CHOCOLATE,
     SEMI_SWEET_CHOCOLATE_CHIPS,
-    RASPBERRIES,
+    RASPBERRY,
 } = require('./ingredients');
 
 const CHOCOLATE = 'Chocolate';
@@ -57,7 +57,7 @@ module.exports = {
         { ...HEAVY_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WHIPPED_CREAM },
         { ...WHITE_SUGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: WHIPPED_CREAM },
         { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '', unit: '', additionalDetails: 'finely chopped', section: SECTIONS.TOPPINGS },
-        { ...RASPBERRIES, amount: '', unit: '', additionalDetails: 'washed', section: SECTIONS.TOPPINGS },
+        { ...RASPBERRY, amount: '', unit: '', additionalDetails: 'washed', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'microwave' },

@@ -6,7 +6,7 @@ const drunken5 = '../assets/Products/drunken-noodles-5.jpeg';
 const drunken6 = '../assets/Products/drunken-noodles-6.jpeg';
 const drunken7 = '../assets/Products/drunken-noodles-7.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGG, SERRANO_PEPPER, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATOES } = require('./ingredients');
+const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGG, SERRANO_PEPPER, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATO } = require('./ingredients');
 
 const MAKE_SAUCE = 'Make Sauce';
 const COOK_NOODLES = 'Cook Noodles';
@@ -36,7 +36,7 @@ module.exports = {
         { ...FISH_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SRIRACHA_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', section: SECTIONS.SAUCE },
         { ...THAI_BASIL, amount: 8, unit: INGREDIENT_UNITS.LEAF, additionalDetails: 'long thin strips/chiffonade', section: SECTIONS.SAUCE },
 
         { ...PEANUT_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.NOODLES },
@@ -47,7 +47,7 @@ module.exports = {
         { ...WHITE_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.NOODLES },
         { ...FRESH_RICE_NOODLES, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
         { ...THAI_BASIL, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'packed', section: SECTIONS.NOODLES },
-        { ...GRAPE_TOMATOES, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...GRAPE_TOMATO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.NOODLES },
     ],
     appliances: [
         { name: 'stove' },

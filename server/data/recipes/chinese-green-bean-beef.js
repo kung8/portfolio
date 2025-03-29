@@ -10,7 +10,7 @@ const sautedBeans = '../assets/Products/chinese-green-bean-and-beef-sauted-green
 
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
-    GREEN_BEANS,
+    GREEN_BEAN,
     BEEF_CHUCK_ROAST,
     SALT,
     BLACK_PEPPER,
@@ -49,7 +49,7 @@ module.exports = {
         { ...RED_PEPPER_FLAKES, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },
         { ...VEGETABLE_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { ...BEEF_CHUCK_ROAST, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thin strips', optional: false, section: SECTIONS.MAIN },
-        { ...GREEN_BEANS, amount: 24, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'cut to 2" pieces', optional: false, section: SECTIONS.MAIN },
+        { ...GREEN_BEAN, amount: 24, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'cut to 2" pieces', optional: false, section: SECTIONS.MAIN },
         { ...GREEN_ONION, amount: 6, unit: '', additionalDetails: 'diagonally sliced', optional: false, section: SECTIONS.MAIN },
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
