@@ -35,7 +35,7 @@ module.exports = {
         { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
         { ...WHITE_SUGAR, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: GARLIC_SECTION },
-        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: GARLIC_SECTION },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'chopped', section: GARLIC_SECTION },
     ],
     appliances: [
         { name: 'stove' },
@@ -64,7 +64,7 @@ module.exports = {
         { step: 'Add garlic. Stir and cook until fragrant (about 30 seconds).', type: COOK_SAUCE },
         { step: 'Add sauce. Cook until the sauce slightly thickens (about 30 seconds to 1 minute).', type: COOK_SAUCE },
         { step: 'Pour sauce over choy sum immediately.', type: COOK_SAUCE },
-        
+
         { step: 'Enjoy this dish warm!', type: SECTIONS.SERVE },
     ]
 };
