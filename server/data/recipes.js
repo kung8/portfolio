@@ -612,3 +612,8 @@ module.exports = recipes;
 // Beef and Broccoli - https://natashaskitchen.com/beef-and-broccoli/ (1.8K)
 // Beef and Broccoli - https://www.justataste.com/easy-beef-and-broccoli-recipe/ (1.2K)
 // Carrot Cake Scones - https://homeiswheretheboatis.net/2025/03/18/everybunnys-favorite-carrot-cake-scones-with-cream-cheese-glaze/
+
+
+
+// Breakfast Sausage Balls - https://www.simplyrecipes.com/breakfast-sausage-balls-recipe-11701329
+// Charlotte De Chou - https://parade.com/food/charlotte-de-chou
