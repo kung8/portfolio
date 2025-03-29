@@ -4,6 +4,7 @@ const { CHOY_SUM, OYSTER_SAUCE, LIGHT_SOY_SAUCE, WHITE_SUGAR, GARLIC, SALT, VEGE
 
 const CHOY_SUM_SECTION = 'Choy Sum';
 const SAUCE_SECTION = 'Sauce';
+const GARLIC_SECTION = 'Garlic';
 
 const COOK_CHOY_SUM = 'Cook Choy Sum';
 const COOK_SAUCE = 'Cook Sauce';
@@ -33,8 +34,8 @@ module.exports = {
         { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
         { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
         { ...WHITE_SUGAR, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: '' },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: GARLIC_SECTION },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: GARLIC_SECTION },
     ],
     appliances: [
         { name: 'stove' },
@@ -57,11 +58,13 @@ module.exports = {
         { step: 'Drain and rinse under tap water to stop the cooking process.', type: COOK_CHOY_SUM },
         { step: 'Drain and dry with paper towels.', type: COOK_CHOY_SUM },
         { step: 'Transfer to a plate.', type: COOK_CHOY_SUM },
+
         { step: 'In a small bowl, combine the "Sauce" section ingredients.', type: COOK_SAUCE },
         { step: 'Over medium heat, heat oil in a saucepan.', type: COOK_SAUCE },
         { step: 'Add garlic. Stir and cook until fragrant (about 30 seconds).', type: COOK_SAUCE },
         { step: 'Add sauce. Cook until the sauce slightly thickens (about 30 seconds to 1 minute).', type: COOK_SAUCE },
         { step: 'Pour sauce over choy sum immediately.', type: COOK_SAUCE },
+        
         { step: 'Enjoy this dish warm!', type: SECTIONS.SERVE },
     ]
 };
