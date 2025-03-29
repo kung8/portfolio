@@ -7,7 +7,7 @@ const raw = '../assets/Products/sloppy-joes-raw.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     YELLOW_ONION,
-    RED_BELL_PEPPERS,
+    RED_BELL_PEPPER,
     WORCESTERSHIRE_SAUCE,
     YELLOW_MUSTARD,
     BROWN_SUGAR,
@@ -39,7 +39,7 @@ module.exports = {
     separated: false,
     ingredients: [
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...RED_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...RED_BELL_PEPPER, amount: 1 / 2, unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
         { ...WORCESTERSHIRE_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...YELLOW_MUSTARD, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },

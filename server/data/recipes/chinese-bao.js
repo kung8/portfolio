@@ -27,7 +27,7 @@ const {
     GROUND_PORK,
     CHINESE_SAUSAGE,
     EGG,
-    MUSHROOMS,
+    MUSHROOM,
     OYSTER_SAUCE,
     GARLIC,
 } = require('./ingredients');
@@ -62,7 +62,7 @@ module.exports = {
         { ...GROUND_PORK, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cooked', section: SECTIONS.FILLING },
         { ...CHINESE_SAUSAGE, amount: 2, unit: INGREDIENT_UNITS.STICK, additionalDetails: 'sliced', section: SECTIONS.FILLING },
         { ...EGG, amount: 5, unit: '', additionalDetails: 'hard-boiled', section: SECTIONS.FILLING },
-        { ...MUSHROOMS, amount: 1, unit: INGREDIENT_UNITS.HANDFUL, additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...MUSHROOM, amount: 1, unit: INGREDIENT_UNITS.HANDFUL, additionalDetails: 'minced', section: SECTIONS.FILLING },
         { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.FILLING },
     ],

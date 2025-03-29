@@ -15,7 +15,7 @@ const curry14 = '../assets/Products/japanese-curry-14.jpeg';
 const curry15 = '../assets/Products/japanese-curry-15.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { YELLOW_ONION, CARROT, YUKON_GOLD_POTATOES, GINGER, GARLIC, APPLES, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BLACK_PEPPER, VEGETABLE_OIL, CHICKEN_BROTH, HONEY, LIGHT_SOY_SAUCE, KETCHUP, JAPANESE_CURRY_MIX } = require('./ingredients');
+const { YELLOW_ONION, CARROT, YUKON_GOLD_POTATOES, GINGER, GARLIC, APPLE, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BLACK_PEPPER, VEGETABLE_OIL, CHICKEN_BROTH, HONEY, LIGHT_SOY_SAUCE, KETCHUP, JAPANESE_CURRY_MIX } = require('./ingredients');
 
 const PREP_CHICKEN = 'Prep Chicken';
 const COOK_CURRY = 'Cook Curry';
@@ -44,7 +44,7 @@ module.exports = {
         { ...YUKON_GOLD_POTATOES, amount: 3, unit: '', additionalDetails: 'quartered', section: SECTIONS.MAIN },
         { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'grated', section: SECTIONS.MAIN },
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...APPLES, amount: 1 / 2, unit: '', additionalDetails: 'peeled, cored, quartered, and grated', section: SECTIONS.MAIN },
+        { ...APPLE, amount: 1 / 2, unit: '', additionalDetails: 'peeled, cored, quartered, and grated', section: SECTIONS.MAIN },
         { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut diagonally into bite size', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...VEGETABLE_OIL, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },

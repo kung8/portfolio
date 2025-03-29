@@ -2,13 +2,13 @@ const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     OLIVE_OIL,
-    RED_BELL_PEPPERS,
+    RED_BELL_PEPPER,
     SALT,
     BLACK_PEPPER,
     HOAGIE_BREAD,
     BEEF_RIBEYE_STEAK,
     YELLOW_ONION,
-    MUSHROOMS,
+    MUSHROOM,
     PROVOLONE_CHEESE,
 } = require('./ingredients');
 
@@ -30,9 +30,9 @@ module.exports = {
     ],
     ingredients: [
         { ...BEEF_RIBEYE_STEAK, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thin strips', optional: false },
-        { ...RED_BELL_PEPPERS, amount: 2, unit: '', additionalDetails: 'sliced strips', optional: false },
+        { ...RED_BELL_PEPPER, amount: 2, unit: '', additionalDetails: 'sliced strips', optional: false },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced strips', optional: false },
-        { ...MUSHROOMS, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: true },
+        { ...MUSHROOM, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: true },
         { ...PROVOLONE_CHEESE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },

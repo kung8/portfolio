@@ -3,7 +3,7 @@ const plated2 = '../assets/Products/sticky-toffee-pudding-plated-2.jpeg';
 const plated3 = '../assets/Products/sticky-toffee-pudding-plated-3.jpeg';
 const plated4 = '../assets/Products/sticky-toffee-pudding-plated-4.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { HEAVY_CREAM, UNSALTED_BUTTER, BROWN_SUGAR, VANILLA_EXTRACT, DATES, COLD_WATER, BAKING_SODA, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, ALLSPICE, NUTMEG, WHITE_SUGAR, EGG, WALNUTS } = require('./ingredients');
+const { HEAVY_CREAM, UNSALTED_BUTTER, BROWN_SUGAR, VANILLA_EXTRACT, DATE, COLD_WATER, BAKING_SODA, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, ALLSPICE, NUTMEG, WHITE_SUGAR, EGG, WALNUTS } = require('./ingredients');
 
 const TOFFEE_SAUCE = 'Toffee Sauce';
 const PUDDING = 'Pudding';
@@ -32,7 +32,7 @@ module.exports = {
         { ...HEAVY_CREAM, amount: 10 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TOFFEE_SAUCE },
         { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TOFFEE_SAUCE },
 
-        { ...DATES, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PUDDING },
+        { ...DATE, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PUDDING },
         { ...COLD_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUDDING },
         { ...BAKING_SODA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PUDDING },
         { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUDDING },

@@ -14,12 +14,12 @@ const {
     SALT,
     BLACK_PEPPER,
     YELLOW_ONION,
-    RED_BELL_PEPPERS,
+    RED_BELL_PEPPER,
     ROMA_TOMATO,
     COOKED_HAM,
     BASIL,
     UNSALTED_BUTTER,
-    MUSHROOMS,
+    MUSHROOM,
 } = require('./ingredients');
 
 const FLIPPING_METHOD = 'Flipping Method';
@@ -44,8 +44,8 @@ module.exports = {
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...YELLOW_ONION, amount: 1/4, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', optional: false },
-        { ...RED_BELL_PEPPERS, amount: 1/3, unit: '', additionalDetails: 'diced', optional: false },
-        { ...MUSHROOMS, amount: 5, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'chopped', optional: true },
+        { ...RED_BELL_PEPPER, amount: 1/3, unit: '', additionalDetails: 'diced', optional: false },
+        { ...MUSHROOM, amount: 5, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'chopped', optional: true },
         { ...ROMA_TOMATO, amount: 1/4, unit: '', additionalDetails: 'diced', optional: false },
         { ...COOKED_HAM, amount: 1, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'diced', optional: false },
         { ...BASIL, amount: '', unit: '', additionalDetails: 'to taste', optional: false },

@@ -20,7 +20,7 @@ const {
     MIRIN,
     YELLOW_ONION,
     JASMINE_RICE,
-    GREEN_ONIONS,
+    GREEN_ONION,
 } = require('./ingredients');
 
 module.exports = {
@@ -54,7 +54,7 @@ module.exports = {
         { ...MIRIN, amount: 10, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...YELLOW_ONION, amount: 5, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
         { ...JASMINE_RICE, amount: 5, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'steamed', section: SECTIONS.MAIN },
-        { ...GREEN_ONIONS, amount: 5, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...GREEN_ONION, amount: 5, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

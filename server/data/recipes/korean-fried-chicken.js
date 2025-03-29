@@ -24,7 +24,7 @@ const {
     SALT,
     SESAME_OIL,
     STRAWBERRY_JAM,
-    THAI_CHILI_PEPPERS,
+    THAI_CHILI_PEPPER,
     VEGETABLE_OIL,
     WARM_WATER,
     WHITE_SUGAR
@@ -88,7 +88,7 @@ module.exports = {
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SWEET_AND_SPICY_SAUCE },
         { ...GINGER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'grated', section: SWEET_AND_SPICY_SAUCE },
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEET_AND_SPICY_SAUCE },
-        { ...THAI_CHILI_PEPPERS, amount: 2, unit: '', additionalDetails: 'optional and minced', section: SWEET_AND_SPICY_SAUCE },
+        { ...THAI_CHILI_PEPPER, amount: 2, unit: '', additionalDetails: 'optional and minced', section: SWEET_AND_SPICY_SAUCE },
     ],
     appliances: [
         { name: 'stove' },

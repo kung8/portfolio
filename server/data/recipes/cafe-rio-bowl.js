@@ -34,7 +34,7 @@ const {
     MAYONNAISE,
     CILANTRO,
     GARLIC,
-    JALAPENO_PEPPERS,
+    JALAPENO_PEPPER,
     MILK,
     ROMA_TOMATO,
 } = require('./ingredients');
@@ -76,7 +76,7 @@ module.exports = {
         { ...SOUR_CREAM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CILANTRO_RANCH_DRESSING },
         { ...CILANTRO, amount: 1, unit: INGREDIENT_UNITS.BUNCH, additionalDetails: '', section: CILANTRO_RANCH_DRESSING },
         { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: CILANTRO_RANCH_DRESSING },
-        { ...JALAPENO_PEPPERS, amount: 3, unit: '', additionalDetails: '', section: CILANTRO_RANCH_DRESSING },
+        { ...JALAPENO_PEPPER, amount: 3, unit: '', additionalDetails: '', section: CILANTRO_RANCH_DRESSING },
         { ...MILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CILANTRO_RANCH_DRESSING },
 
         { ...TORTILLA, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.MAIN },

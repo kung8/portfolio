@@ -14,7 +14,7 @@ const {
     YELLOW_ONION,
     VEGETABLE_OIL,
     GARLIC,
-    YELLOW_BELL_PEPPERS,
+    YELLOW_BELL_PEPPER,
     BREAD,
     MILK,
     SALT,
@@ -60,7 +60,7 @@ module.exports = {
 
         { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: '', optional: false, section: CHICKEN_SECTION },
 
-        { ...YELLOW_BELL_PEPPERS, amount: 3 / 2, unit: '', additionalDetails: '', optional: false, section: SAUCE_SECTION },
+        { ...YELLOW_BELL_PEPPER, amount: 3 / 2, unit: '', additionalDetails: '', optional: false, section: SAUCE_SECTION },
         { ...BREAD, amount: 4, unit: '', additionalDetails: '', optional: false, section: SAUCE_SECTION },
         { ...MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SAUCE_SECTION },
 

@@ -1183,11 +1183,11 @@ const INGREDIENTS = {
     },
     PRODUCE: {
         ACORN_SQUASH: { name: 'acorn squash', category: INGREDIENT_CATEGORY.PRODUCE },
-        APPLES: {
-            name: 'apples', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1674262321087-bfcd8135fdc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MTIyfA&ixlib=rb-4.0.3&q=80&w=400"
+        APPLE: {
+            name: 'apple', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1674262321087-bfcd8135fdc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MTIyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        APRICOTS: {
-            name: 'apricots', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1627931754115-478ed65b4fef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcwNjQ4fA&ixlib=rb-4.0.3&q=80&w=400"
+        APRICOT: {
+            name: 'apricot', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1627931754115-478ed65b4fef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcwNjQ4fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         ARTICHOKE: {
             name: 'artichoke', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1560513011-72b6992677f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc0NTEyfA&ixlib=rb-4.0.3&q=80&w=400"
@@ -1205,7 +1205,7 @@ const INGREDIENTS = {
         BABY_BOK_CHOY: {
             name: 'baby bok choy', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1515192558558-17a7c4904ebc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc0NjcwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        BABY_CARROTS: {
+        BABY_CARROT: {
             name: 'baby carrots', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc0NzE0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         BABY_KALE: {
@@ -1279,24 +1279,24 @@ const INGREDIENTS = {
         CELERY: {
             name: 'celery', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1580391564590-aeca65c5e2d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3OTczfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        CHILI_PEPPERS: { name: 'chili peppers', category: INGREDIENT_CATEGORY.PRODUCE },
+        CHILI_PEPPER: { name: 'chili pepper', category: INGREDIENT_CATEGORY.PRODUCE },
         CHINESE_BROCCOLI: { name: 'Chinese broccoli', category: INGREDIENT_CATEGORY.PRODUCE },
         CHINESE_CABBAGE: { name: 'Chinese cabbage', category: INGREDIENT_CATEGORY.PRODUCE },
-        CHINESE_MUSTARD_GREENS: { name: 'Chinese mustard greens', category: INGREDIENT_CATEGORY.PRODUCE },
+        CHINESE_MUSTARD_GREEN: { name: 'Chinese mustard green', category: INGREDIENT_CATEGORY.PRODUCE },
         CHIPOTLE_SALAD_KITS: { name: 'chipotle salad kits', category: INGREDIENT_CATEGORY.PRODUCE },
-        CHIVES: { name: 'chives', category: INGREDIENT_CATEGORY.PRODUCE },
+        CHIVE: { name: 'chives', category: INGREDIENT_CATEGORY.PRODUCE },
         CHOY_SUM: { name: 'choy sum', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1515192558558-17a7c4904ebc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc0NjcwfA&ixlib=rb-4.0.3&q=80&w=400" },
         CHRYSANTHEMUM_LEAVES: { name: 'chrysanthemum leaves', category: INGREDIENT_CATEGORY.PRODUCE },
         CILANTRO: {
             name: 'cilantro', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601493700603-43461216807a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc4NzEwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        CLEMENTINES: {
-            name: 'clementines', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1482012792084-a0c3725f289f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5MjE4fA&ixlib=rb-4.0.3&q=80&w=400"
+        CLEMENTINE: {
+            name: 'clementine', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1482012792084-a0c3725f289f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5MjE4fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        COCONUTS: {
-            name: 'coconuts', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1588413335653-34b770bca7c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3ODY0fA&ixlib=rb-4.0.3&q=80&w=400"
+        COCONUT: {
+            name: 'coconut', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1588413335653-34b770bca7c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3ODY0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        COLLARD_GREENS: { name: 'collard greens', category: INGREDIENT_CATEGORY.PRODUCE },
+        COLLARD_GREEN: { name: 'collard green', category: INGREDIENT_CATEGORY.PRODUCE },
         CORIANDER: { name: 'coriander', category: INGREDIENT_CATEGORY.PRODUCE },
         CORN: {
             name: 'corn', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1634467524884-897d0af5e104?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTczMDA0fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -1308,8 +1308,8 @@ const INGREDIENTS = {
             name: 'cucumber', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1589621316382-008455b857cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5NzQyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         DAIKON: { name: 'daikon', category: INGREDIENT_CATEGORY.PRODUCE },
-        DATES: {
-            name: 'dates', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1614061811858-dde54a522f5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc4MTkyfA&ixlib=rb-4.0.3&q=80&w=400"
+        DATE: {
+            name: 'date', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1614061811858-dde54a522f5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc4MTkyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         DRAGON_FRUIT: {
             name: 'dragon fruit', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1705501720577-4fe7bba7f85b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5MTIzfA&ixlib=rb-4.0.3&q=80&w=400"
@@ -1334,30 +1334,30 @@ const INGREDIENTS = {
             name: 'garlic', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1625229466998-42ee9c597290?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4Mzk0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         GAI_CHOY: { name: 'gai choy', category: INGREDIENT_CATEGORY.PRODUCE },
-        GALA_APPLES: { name: 'gala apples', category: INGREDIENT_CATEGORY.PRODUCE },
-        GARLIC_CHIVES: { name: 'garlic chives', category: INGREDIENT_CATEGORY.PRODUCE },
+        GALA_APPLE: { name: 'gala apple', category: INGREDIENT_CATEGORY.PRODUCE },
+        GARLIC_CHIVE: { name: 'garlic chive', category: INGREDIENT_CATEGORY.PRODUCE },
         GINGER: {
             name: 'ginger', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1630623093145-f606591c2546?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY2MjYxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        GRANNY_SMITH_APPLES: {
-            name: 'granny smith apples', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1674262321087-bfcd8135fdc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MTIyfA&ixlib=rb-4.0.3&q=80&w=400"
+        GRANNY_SMITH_APPLE: {
+            name: 'granny smith apple', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1674262321087-bfcd8135fdc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MTIyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         GRAPEFRUIT: { name: 'grapefruit', category: INGREDIENT_CATEGORY.PRODUCE },
         GRAPE_TOMATOES: { name: 'grape tomatoes', category: INGREDIENT_CATEGORY.PRODUCE },
         GRAPES: { name: 'grapes', category: INGREDIENT_CATEGORY.PRODUCE },
         GREEN_BEANS: { name: 'green beans', category: INGREDIENT_CATEGORY.PRODUCE },
-        GREEN_BELL_PEPPERS: {
-            name: 'green bell peppers', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400"
+        GREEN_BELL_PEPPER: {
+            name: 'green bell pepper', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         GREEN_CABBAGE: { name: 'green cabbage', category: INGREDIENT_CATEGORY.PRODUCE },
-        GREEN_ONIONS: { name: 'green onions', category: INGREDIENT_CATEGORY.PRODUCE },
-        GREEN_PEAS: {
-            name: 'green peas', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1560705185-d0291220a442?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2MDQzfA&ixlib=rb-4.0.3&q=80&w=400"
+        GREEN_ONION: { name: 'green onion', category: INGREDIENT_CATEGORY.PRODUCE },
+        GREEN_PEA: {
+            name: 'green pea', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1560705185-d0291220a442?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2MDQzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        GUAJILLO_CHILI_PEPPERS: { name: 'guajillo chili peppers', category: INGREDIENT_CATEGORY.PRODUCE },
+        GUAJILLO_CHILI_PEPPER: { name: 'guajillo chili pepper', category: INGREDIENT_CATEGORY.PRODUCE },
         GUAVA: { name: 'guava', category: INGREDIENT_CATEGORY.PRODUCE },
         HASS_AVOCADO: { name: 'hass avocado', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601039641847-7857b994d704?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4NTE2fA&ixlib=rb-4.0.3&q=80&w=400" },
-        HONEY_CRISP_APPLES: { name: 'honey crisp apples', category: INGREDIENT_CATEGORY.PRODUCE },
+        HONEY_CRISP_APPLE: { name: 'honey crisp apple', category: INGREDIENT_CATEGORY.PRODUCE },
         HONEYDEW: { name: 'honeydew', category: INGREDIENT_CATEGORY.PRODUCE },
         HONEY_NUT_SQUASH: { name: 'honey nut squash', category: INGREDIENT_CATEGORY.PRODUCE },
         ICEBERG_LETTUCE: {
@@ -1366,16 +1366,16 @@ const INGREDIENTS = {
         IDAHO_POTATOES: {
             name: 'idaho potatoes', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1590165482129-1b8b27698780?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcyMzgwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        JALAPENO_PEPPERS: { name: 'jalapeno peppers', category: INGREDIENT_CATEGORY.PRODUCE },
+        JALAPENO_PEPPER: { name: 'jalapeno peppers', category: INGREDIENT_CATEGORY.PRODUCE },
         JICAMA: { name: 'jicama', category: INGREDIENT_CATEGORY.PRODUCE },
         KALE: {
             name: 'kale', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1624300477446-d379e923eca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTczNTQ1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         KAFFIR_LIME_LEAVES: { name: 'kaffir lime leaves', category: INGREDIENT_CATEGORY.PRODUCE },
-        KIWIS: {
+        KIWI: {
             name: 'kiwi', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1616684000067-36952fde56ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1Mjg2fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        KUMQUATS: { name: 'kumquats', category: INGREDIENT_CATEGORY.PRODUCE },
+        KUMQUAT: { name: 'kumquat', category: INGREDIENT_CATEGORY.PRODUCE },
         LEMON: {
             name: 'lemon', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1590502593747-42a996133562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcyMDg1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -1397,30 +1397,30 @@ const INGREDIENTS = {
         },
         LOTUS_ROOT: { name: 'lotus root', category: INGREDIENT_CATEGORY.PRODUCE },
         MALANGA: { name: 'malanga', category: INGREDIENT_CATEGORY.PRODUCE },
-        MANDARIN_ORANGES: { name: 'mandarin oranges', category: INGREDIENT_CATEGORY.PRODUCE },
+        MANDARIN_ORANGE: { name: 'mandarin orange', category: INGREDIENT_CATEGORY.PRODUCE },
         MANGOES: {
             name: 'mangoes', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcyMDg5fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        MINI_CUCUMBERS: { name: 'mini cucumbers', category: INGREDIENT_CATEGORY.PRODUCE },
+        MINI_CUCUMBER: { name: 'mini cucumber', category: INGREDIENT_CATEGORY.PRODUCE },
         MINT_LEAVES: {
             name: 'mint leaves', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1588908933351-eeb8cd4c4521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1NTQyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         MUNG_BEAN_SPROUTS: {
             name: 'mung bean sprouts', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1476005484258-bd38fa5bc155?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1MTczfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        MUSHROOMS: {
-            name: 'mushrooms', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1504545102780-26774c1bb073?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1Njc2fA&ixlib=rb-4.0.3&q=80&w=400"
+        MUSHROOM: {
+            name: 'mushroom', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1504545102780-26774c1bb073?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1Njc2fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         NAPA_CABBAGE: { name: 'napa cabbage', category: INGREDIENT_CATEGORY.PRODUCE },
-        NAVEL_ORANGES: { name: 'navel oranges', category: INGREDIENT_CATEGORY.PRODUCE },
-        NECTARINES: { name: 'nectarines', category: INGREDIENT_CATEGORY.PRODUCE },
+        NAVEL_ORANGE: { name: 'navel orange', category: INGREDIENT_CATEGORY.PRODUCE },
+        NECTARINE: { name: 'nectarine', category: INGREDIENT_CATEGORY.PRODUCE },
         OKRA: { name: 'okra', category: INGREDIENT_CATEGORY.PRODUCE },
         ONG_CHOY: { name: 'ong choy', category: INGREDIENT_CATEGORY.PRODUCE },
-        ORANGE_BELL_PEPPERS: {
-            name: 'orange bell peppers', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400"
+        ORANGE_BELL_PEPPER: {
+            name: 'orange bell pepper', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        ORANGES: {
-            name: 'oranges', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjMyfA&ixlib=rb-4.0.3&q=80&w=400"
+        ORANGE: {
+            name: 'orange', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjMyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         ORANGE_ZEST: { name: 'orange zest', category: INGREDIENT_CATEGORY.PRODUCE },
         PASSION_FRUIT: { name: 'passion fruit', category: INGREDIENT_CATEGORY.PRODUCE },
@@ -1430,12 +1430,12 @@ const INGREDIENTS = {
         PEAR: {
             name: 'pear', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1572929773424-93549dced6d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcyODY5fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        PERSIMMONS: { name: 'persimmons', category: INGREDIENT_CATEGORY.PRODUCE },
+        PERSIMMON: { name: 'persimmon', category: INGREDIENT_CATEGORY.PRODUCE },
         PINEAPPLE: {
             name: 'pineapple', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1724255995351-9aa5b0e7cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcyMzQxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        PINK_LADY_APPLES: { name: 'pink lady apples', category: INGREDIENT_CATEGORY.PRODUCE },
-        PLUMS: { name: 'plums', category: INGREDIENT_CATEGORY.PRODUCE },
+        PINK_LADY_APPLE: { name: 'pink lady apple', category: INGREDIENT_CATEGORY.PRODUCE },
+        PLUM: { name: 'plum', category: INGREDIENT_CATEGORY.PRODUCE },
         POTATOES: {
             name: 'potatoes', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1590165482129-1b8b27698780?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcyMzgwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -1449,8 +1449,8 @@ const INGREDIENTS = {
         RASPBERRIES: {
             name: 'raspberries', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1577069861033-55d04cec4ef5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxNjk4fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        RED_BELL_PEPPERS: {
-            name: 'red bell peppers', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400"
+        RED_BELL_PEPPER: {
+            name: 'red bell pepper', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         RED_CHILI: {
             name: 'red chili', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1583506522440-b2639ef4c1d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU3OTUxfA&ixlib=rb-4.0.3&q=80&w=400"
@@ -1466,16 +1466,16 @@ const INGREDIENTS = {
         RUSSET_POTATOES: {
             name: 'russet potatoes', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1675501344642-92d35d90fe51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcyNTQ5fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        SEEDLESS_GRAPES: { name: 'seedless grapes', category: INGREDIENT_CATEGORY.PRODUCE },
+        SEEDLESS_GRAPE: { name: 'seedless grape', category: INGREDIENT_CATEGORY.PRODUCE },
         SEEDLESS_WATERMELON: {
             name: 'seedless watermelon', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1621961048737-a9993789e1ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1ODk3fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        SERRANO_PEPPERS: { name: 'serrano peppers', category: INGREDIENT_CATEGORY.PRODUCE },
-        SHALLOTS: { name: 'shallots', category: INGREDIENT_CATEGORY.PRODUCE },
-        SHIITAKE_MUSHROOMS: { name: 'shiitake mushrooms', category: INGREDIENT_CATEGORY.PRODUCE },
+        SERRANO_PEPPER: { name: 'serrano pepper', category: INGREDIENT_CATEGORY.PRODUCE },
+        SHALLOT: { name: 'shallot', category: INGREDIENT_CATEGORY.PRODUCE },
+        SHIITAKE_MUSHROOM: { name: 'shiitake mushroom', category: INGREDIENT_CATEGORY.PRODUCE },
         SHREDDED_LETTUCE: { name: 'shredded lettuce', category: INGREDIENT_CATEGORY.PRODUCE },
         SLICER_TOMATO: { name: 'slicer tomato', category: INGREDIENT_CATEGORY.PRODUCE },
-        SNOW_PEAS: { name: 'snow peas', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1663844169467-ddb73a03afdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2MDc0fA&ixlib=rb-4.0.3&q=80&w=400" },
+        SNOW_PEA: { name: 'snow pea', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1663844169467-ddb73a03afdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2MDc0fA&ixlib=rb-4.0.3&q=80&w=400" },
         SOUTHWEST_SALAD_KITS: { name: 'southwest salad kits', category: INGREDIENT_CATEGORY.PRODUCE },
         SPINACH: {
             name: 'spinach', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1701699257548-8261a687236f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5MzY5fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -1491,12 +1491,12 @@ const INGREDIENTS = {
         SWEETCORN: {
             name: 'sweetcorn', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1634467524884-897d0af5e104?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTczMDA0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        TANGERINES: {
-            name: 'tangerines', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1605723937077-66a33776015c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5NTYxfA&ixlib=rb-4.0.3&q=80&w=400"
+        TANGERINE: {
+            name: 'tangerine', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1605723937077-66a33776015c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5NTYxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         TARO: { name: 'taro', category: INGREDIENT_CATEGORY.PRODUCE },
         THAI_BASIL: { name: 'thai basil', category: INGREDIENT_CATEGORY.PRODUCE },
-        THAI_CHILI_PEPPERS: { name: 'thai chili peppers', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1526346698789-22fd84314424?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDYwODAwfA&ixlib=rb-4.0.3&q=80&w=400" },
+        THAI_CHILI_PEPPER: { name: 'thai chili pepper', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1526346698789-22fd84314424?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDYwODAwfA&ixlib=rb-4.0.3&q=80&w=400" },
         TOFU: {
             name: 'tofu', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1664648005379-0a49b3462607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5NjUzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -1507,15 +1507,15 @@ const INGREDIENTS = {
         WATERMELON: {
             name: 'watermelon', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1ODMwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        WHITE_MUSHROOMS: {
-            name: 'white mushrooms', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1658506625039-a58a6eb4a0b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1NzgxfA&ixlib=rb-4.0.3&q=80&w=400"
+        WHITE_MUSHROOM: {
+            name: 'white mushroom', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1658506625039-a58a6eb4a0b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1NzgxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         WHITE_ONION: { name: 'white onion', category: INGREDIENT_CATEGORY.PRODUCE },
-        YAMS: {
-            name: 'yams', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1584699006710-3ad3b82fce7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1NDAwfA&ixlib=rb-4.0.3&q=80&w=400"
+        YAM: {
+            name: 'yam', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1584699006710-3ad3b82fce7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1NDAwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        YELLOW_BELL_PEPPERS: {
-            name: 'yellow bell peppers', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400"
+        YELLOW_BELL_PEPPER: {
+            name: 'yellow bell pepper', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         YELLOW_ONION: {
             name: 'yellow onion', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1668076517573-fa01307d87ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU4ODcxfA&ixlib=rb-4.0.3&q=80&w=400"

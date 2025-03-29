@@ -10,7 +10,7 @@ const {
     BLACK_PEPPER,
     YELLOW_ONION,
     CELERY,
-    GREEN_BELL_PEPPERS,
+    GREEN_BELL_PEPPER,
 } = require('./ingredients');
 
 module.exports = {
@@ -36,7 +36,7 @@ module.exports = {
         { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', optional: false },
         { ...CELERY, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: 'sliced', optional: false },
-        { ...GREEN_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', optional: false },
+        { ...GREEN_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', optional: false },
     ],
     appliances: [
         { name: 'stove' },

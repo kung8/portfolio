@@ -8,7 +8,7 @@ const {
     BASIL,
     UNSALTED_BUTTER,
     YELLOW_ONION,
-    RED_BELL_PEPPERS,
+    RED_BELL_PEPPER,
 } = require('./ingredients');
 
 const EGGS_SECTION = 'Eggs';
@@ -36,7 +36,7 @@ module.exports = {
         { ...BASIL, amount: '', unit: '', additionalDetails: 'to taste', section: EGGS_SECTION },
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES },
         { ...YELLOW_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: VEGGIES },
-        { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES },
+        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES },
     ],
     appliances: [
         { name: 'stove' },

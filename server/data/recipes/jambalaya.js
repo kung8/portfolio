@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { OLIVE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, ANDOUILLE_SAUSAGE, YELLOW_BELL_PEPPERS, RED_BELL_PEPPERS, GREEN_BELL_PEPPERS, CELERY, JALAPENO_PEPPERS, WHITE_ONION, GARLIC, CRUSHED_TOMATOES, CHICKEN_BOUILLON, CHICKEN_BROTH, WHITE_RICE, THYME, CAYENNE_PEPPER, BAY_LEAVES, LARGE_SHRIMP, OKRA, SALT, BLACK_PEPPER, PARSLEY, GREEN_ONIONS, HOT_SAUCE, CAJUN_SEASONING } = require('./ingredients');
+const { OLIVE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, ANDOUILLE_SAUSAGE, YELLOW_BELL_PEPPER, RED_BELL_PEPPER, GREEN_BELL_PEPPER, CELERY, JALAPENO_PEPPER, WHITE_ONION, GARLIC, CRUSHED_TOMATOES, CHICKEN_BOUILLON, CHICKEN_BROTH, WHITE_RICE, THYME, CAYENNE_PEPPER, BAY_LEAVES, LARGE_SHRIMP, OKRA, SALT, BLACK_PEPPER, PARSLEY, GREEN_ONION, HOT_SAUCE, CAJUN_SEASONING } = require('./ingredients');
 
 const MEAT_SECTION = 'Meat';
 const VEGGIES_SECTION = 'Veggies';
@@ -38,11 +38,11 @@ module.exports = {
         { ...ANDOUILLE_SAUSAGE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thinly sliced', section: MEAT_SECTION },
 
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES_SECTION },
-        { ...YELLOW_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
-        { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
-        { ...GREEN_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
+        { ...YELLOW_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
+        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
+        { ...GREEN_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
         { ...CELERY, amount: 2, unit: INGREDIENT_UNITS.RIB, additionalDetails: 'diced', section: VEGGIES_SECTION },
-        { ...JALAPENO_PEPPERS, amount: 2, unit: '', additionalDetails: 'chopped', section: VEGGIES_SECTION },
+        { ...JALAPENO_PEPPER, amount: 2, unit: '', additionalDetails: 'chopped', section: VEGGIES_SECTION },
         { ...WHITE_ONION, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES_SECTION },
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: VEGGIES_SECTION },
 
@@ -60,7 +60,7 @@ module.exports = {
         { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SHRIMP_SECTION },
 
         { ...PARSLEY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...GREEN_ONION, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...HOT_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

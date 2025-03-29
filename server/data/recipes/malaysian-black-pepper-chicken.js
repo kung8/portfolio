@@ -12,7 +12,7 @@ const sauted = '../assets/Products/black-pepper-chicken-sauted-fragrant.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
-    SHALLOTS,
+    SHALLOT,
     GARLIC,
     GINGER,
     BLACK_PEPPER,
@@ -50,7 +50,7 @@ module.exports = {
         { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...CHICKEN_BREAST, amount: 5, unit: '', additionalDetails: 'cubed', section: SECTIONS.MARINADE },
         { ...VEGETABLE_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },
-        { ...SHALLOTS, amount: 6, unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
+        { ...SHALLOT, amount: 6, unit: '', additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },

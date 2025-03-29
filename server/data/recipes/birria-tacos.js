@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { BEEF_CHUCK_ROAST, AVOCADO_OIL, SALT, BLACK_PEPPER, RED_ONION, GARLIC, BEEF_BROTH, TOMATO_PASTE, APPLE_CIDER_VINEGAR, CUMIN, OREGANO, CINNAMON_STICK, BAY_LEAVES, SMOKED_PAPRIKA, GINGER, CORIANDER, GUAJILLO_CHILI_PEPPERS, CHIPOTLE_PEPPERS_IN_ADOBO, FIRE_ROASTED_DICED_TOMATOES, FLOUR_TORTILLA, LIME, CILANTRO, WHITE_ONION, OAXACAN_CHEESE } = require('./ingredients');
+const { BEEF_CHUCK_ROAST, AVOCADO_OIL, SALT, BLACK_PEPPER, RED_ONION, GARLIC, BEEF_BROTH, TOMATO_PASTE, APPLE_CIDER_VINEGAR, CUMIN, OREGANO, CINNAMON_STICK, BAY_LEAVES, SMOKED_PAPRIKA, GINGER, CORIANDER, GUAJILLO_CHILI_PEPPER, CHIPOTLE_PEPPERS_IN_ADOBO, FIRE_ROASTED_DICED_TOMATOES, FLOUR_TORTILLA, LIME, CILANTRO, WHITE_ONION, OAXACAN_CHEESE } = require('./ingredients');
 
 const BIRRIA_FILLING = 'Birria Filling';
 
@@ -32,7 +32,7 @@ module.exports = {
         { ...AVOCADO_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BIRRIA_FILLING },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: BIRRIA_FILLING },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: BIRRIA_FILLING },
-        { ...GUAJILLO_CHILI_PEPPERS, amount: 4, unit: '', additionalDetails: '', section: BIRRIA_FILLING },
+        { ...GUAJILLO_CHILI_PEPPER, amount: 4, unit: '', additionalDetails: '', section: BIRRIA_FILLING },
         { ...CHIPOTLE_PEPPERS_IN_ADOBO, amount: '5 - 6', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
         { ...RED_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'thinly sliced', section: BIRRIA_FILLING },
         { ...GARLIC, amount: 8, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'smashed', section: BIRRIA_FILLING },

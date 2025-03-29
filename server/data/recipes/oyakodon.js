@@ -12,7 +12,7 @@ const oyakodon11 = '../assets/Products/oyakodon-11.jpeg';
 const oyakodon12 = '../assets/Products/oyakodon-12.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHAOXING_WINE, EGG, DASHI, LIGHT_SOY_SAUCE, MIRIN, WHITE_SUGAR, SHORT_GRAINED_RICE, GREEN_ONIONS } = require('./ingredients');
+const { YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHAOXING_WINE, EGG, DASHI, LIGHT_SOY_SAUCE, MIRIN, WHITE_SUGAR, SHORT_GRAINED_RICE, GREEN_ONION } = require('./ingredients');
 
 const SEASONING = 'Seasoning';
 const COOK_RICE = 'Cook Rice';
@@ -44,7 +44,7 @@ module.exports = {
         { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'thin strips', section: SECTIONS.MAIN },
         { ...SHAOXING_WINE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
+        { ...GREEN_ONION, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.MAIN },
 
         { ...DASHI, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SEASONING },
         { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASONING },

@@ -10,7 +10,7 @@ const noodles = '../assets/Products/lemon-chicken-ramen-with-noodles.jpeg';
 const broth = '../assets/Products/lemon-chicken-ramen-broth.jpeg';
 const brothChicken = '../assets/Products/lemon-chicken-ramen-broth-with-chicken.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { CHICKEN_BREAST, ALL_PURPOSE_FLOUR, OLIVE_OIL, GARLIC, SALT, BLACK_PEPPER, PAPRIKA, OREGANO, RED_PEPPER_FLAKES, CHICKEN_BROTH, LEMON, LIGHT_CREAM, FRESH_RAMEN_NOODLES, CILANTRO, GREEN_ONIONS, SESAME_SEEDS, SNOW_PEAS } = require('./ingredients');
+const { CHICKEN_BREAST, ALL_PURPOSE_FLOUR, OLIVE_OIL, GARLIC, SALT, BLACK_PEPPER, PAPRIKA, OREGANO, RED_PEPPER_FLAKES, CHICKEN_BROTH, LEMON, LIGHT_CREAM, FRESH_RAMEN_NOODLES, CILANTRO, GREEN_ONION, SESAME_SEEDS, SNOW_PEA } = require('./ingredients');
 
 module.exports = {
     cardName: 'Lemon Chicken Ramen',
@@ -45,9 +45,9 @@ module.exports = {
         { ...LIGHT_CREAM, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
         { ...FRESH_RAMEN_NOODLES, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
-        { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'sliced diagonally', section: SECTIONS.TOPPINGS },
+        { ...GREEN_ONION, amount: '', unit: '', additionalDetails: 'sliced diagonally', section: SECTIONS.TOPPINGS },
         { ...LEMON, amount: 1 / 2, unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
-        { ...SNOW_PEAS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...SNOW_PEA, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

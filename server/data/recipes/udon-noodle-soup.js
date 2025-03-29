@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { BEEF_RIBS, YELLOW_ONION, CARROT, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGG, BEEF_BROTH, SHIITAKE_MUSHROOMS, THAI_CHILI_PEPPERS, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONIONS, SESAME_SEEDS, UDON_NOODLES, WARM_WATER } = require('./ingredients');
+const { BEEF_RIBS, YELLOW_ONION, CARROT, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGG, BEEF_BROTH, SHIITAKE_MUSHROOM, THAI_CHILI_PEPPER, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONION, SESAME_SEEDS, UDON_NOODLES, WARM_WATER } = require('./ingredients');
 
 const BEEF_BROTH_SECTION = 'Beef Broth';
 const EGG_SECTION = 'Eggs';
@@ -45,16 +45,16 @@ module.exports = {
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: EGG_SECTION },
         { ...UDON_NOODLES, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: NOODLE_SECTION },
         { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'peeled and julienned', section: SOUP_1_SECTION },
-        { ...SHIITAKE_MUSHROOMS, amount: 7 / 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SOUP_1_SECTION },
+        { ...SHIITAKE_MUSHROOM, amount: 7 / 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SOUP_1_SECTION },
         { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: SOUP_1_SECTION },
-        { ...THAI_CHILI_PEPPERS, amount: 2, unit: '', additionalDetails: 'whole', section: SOUP_1_SECTION },
+        { ...THAI_CHILI_PEPPER, amount: 2, unit: '', additionalDetails: 'whole', section: SOUP_1_SECTION },
         { ...MIRIN, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SOUP_1_SECTION },
         { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SOUP_1_SECTION },
         { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SOUP_1_SECTION },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SOUP_1_SECTION },
         { ...PORK_TENDERLOINS, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: SOUP_2_SECTION },
         { ...NAPA_CABBAGE, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', section: SOUP_2_SECTION },
-        { ...GREEN_ONIONS, amount: 2, unit: '', additionalDetails: 'chopped', section: SOUP_2_SECTION },
+        { ...GREEN_ONION, amount: 2, unit: '', additionalDetails: 'chopped', section: SOUP_2_SECTION },
         { ...SESAME_SEEDS, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

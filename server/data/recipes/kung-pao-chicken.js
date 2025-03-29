@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CORNSTARCH, LIGHT_SOY_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, DARK_SOY_SAUCE, CHICKEN_BROTH, BALSAMIC_VINEGAR, HOISIN_SAUCE, WHITE_SUGAR, CHILI_PEPPERS, GREEN_BELL_PEPPERS, RED_BELL_PEPPERS, GINGER, GARLIC, GREEN_ONIONS, UNSALTED_PEANUTS, SESAME_SEEDS } = require('./ingredients');
+const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CORNSTARCH, LIGHT_SOY_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, DARK_SOY_SAUCE, CHICKEN_BROTH, BALSAMIC_VINEGAR, HOISIN_SAUCE, WHITE_SUGAR, CHILI_PEPPER, GREEN_BELL_PEPPER, RED_BELL_PEPPER, GINGER, GARLIC, GREEN_ONION, UNSALTED_PEANUTS, SESAME_SEEDS } = require('./ingredients');
 
 const CHICKEN_MARINADE = 'Chicken Marinade';
 const KUNG_PAO_SAUCE = 'Kung Pao Sauce';
@@ -43,13 +43,13 @@ module.exports = {
         { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: KUNG_PAO_SAUCE },
 
         { ...VEGETABLE_OIL, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'for frying', section: STIR_FRY },
-        { ...CHILI_PEPPERS, amount: 6, unit: '', additionalDetails: 'roughly chopped', section: STIR_FRY },
-        { ...GREEN_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'chopped', section: STIR_FRY },
-        { ...RED_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'chopped', section: STIR_FRY },
+        { ...CHILI_PEPPER, amount: 6, unit: '', additionalDetails: 'roughly chopped', section: STIR_FRY },
+        { ...GREEN_BELL_PEPPER, amount: 1 / 2, unit: '', additionalDetails: 'chopped', section: STIR_FRY },
+        { ...RED_BELL_PEPPER, amount: 1 / 2, unit: '', additionalDetails: 'chopped', section: STIR_FRY },
         { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: STIR_FRY },
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: STIR_FRY },
 
-        { ...GREEN_ONIONS, amount: 6, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...GREEN_ONION, amount: 6, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...UNSALTED_PEANUTS, amount: '', unit: '', additionalDetails: 'roasted', section: SECTIONS.TOPPINGS },
         { ...SESAME_SEEDS, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],

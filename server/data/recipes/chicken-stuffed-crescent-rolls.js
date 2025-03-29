@@ -10,7 +10,7 @@ const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UN
 const {
     MOZZARELLA_CHEESE,
     CREAM_CHEESE,
-    RED_BELL_PEPPERS,
+    RED_BELL_PEPPER,
     YELLOW_ONION,
     GARLIC_POWDER,
     SALT,
@@ -39,7 +39,7 @@ module.exports = {
         { ...CHICKEN_BREAST, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked and shredded', section: SECTIONS.FILLING },
         { ...MOZZARELLA_CHEESE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.FILLING },
         { ...CREAM_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.FILLING },
+        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.FILLING },
         { ...YELLOW_ONION, amount: 3 / 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.FILLING },
         { ...GARLIC_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...PARSLEY, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },

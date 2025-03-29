@@ -1,7 +1,7 @@
 const alfredo = '../assets/Products/chicken-alfredo.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
-    RED_BELL_PEPPERS,
+    RED_BELL_PEPPER,
     YELLOW_ONION,
     CHICKEN_BREAST,
     UNSALTED_BUTTER,
@@ -31,7 +31,7 @@ module.exports = {
     ingredients: [
         { ...FETTUCCINE_NOODLES, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RED_BELL_PEPPERS, amount: 2, unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...RED_BELL_PEPPER, amount: 2, unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
         { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.MAIN },
         { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...HEAVY_CREAM, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },

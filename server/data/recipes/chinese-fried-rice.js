@@ -10,7 +10,7 @@ const rice9 = '../assets/Products/chinese-fried-rice-9.jpeg';
 const rice10 = '../assets/Products/chinese-fried-rice-10.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { JASMINE_RICE, COLD_WATER, GREEN_ONIONS, CARROT, FROZEN_CORN, FROZEN_PEAS, EGG, SALT, VEGETABLE_OIL, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, WHITE_SUGAR, CHICKEN_BOUILLON, CHINESE_SAUSAGE } = require('./ingredients');
+const { JASMINE_RICE, COLD_WATER, GREEN_ONION, CARROT, FROZEN_CORN, FROZEN_PEAS, EGG, SALT, VEGETABLE_OIL, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, WHITE_SUGAR, CHICKEN_BOUILLON, CHINESE_SAUSAGE } = require('./ingredients');
 
 const RICE_SECTION = 'Rice';
 const VEGGIES_SECTION = 'Veggies';
@@ -63,7 +63,7 @@ module.exports = {
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: EGGS_SECTION },
         { ...CHINESE_SAUSAGE, amount: 2, unit: '', additionalDetails: '', section: EGGS_SECTION },
 
-        { ...GREEN_ONIONS, amount: 2, unit: '', additionalDetails: 'diced green parts only', section: FRIED_RICE_SECTION },
+        { ...GREEN_ONION, amount: 2, unit: '', additionalDetails: 'diced green parts only', section: FRIED_RICE_SECTION },
         { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FRIED_RICE_SECTION },
     ],
     appliances: [

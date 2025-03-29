@@ -11,7 +11,7 @@ const veggiesPan = '../assets/Products/pepper-steak-stir-fry-veggies-in-pan.jpeg
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     BEEF,
-    RED_BELL_PEPPERS,
+    RED_BELL_PEPPER,
     YELLOW_ONION,
     GARLIC,
     LIGHT_SOY_SAUCE,
@@ -19,7 +19,7 @@ const {
     SALT,
     BLACK_PEPPER,
     VEGETABLE_OIL,
-    GREEN_BELL_PEPPERS,
+    GREEN_BELL_PEPPER,
     GINGER,
     WHITE_SUGAR,
     CORNSTARCH,
@@ -44,8 +44,8 @@ module.exports = {
     ],
     ingredients: [
         { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },
-        { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...GREEN_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...GREEN_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.MAIN },
 
         { ...BEEF, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.MAIN },

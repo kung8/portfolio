@@ -7,7 +7,7 @@ const {
     GROUND_TURKEY,
     HAMBURGER_BUNS,
     YELLOW_ONION,
-    MUSHROOMS,
+    MUSHROOM,
     PICKLES,
     RED_ONION,
     ROMA_TOMATO,
@@ -39,7 +39,7 @@ module.exports = {
         { ...ROMA_TOMATO, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...SPINACH, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...CHEDDAR_CHEESE, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...MUSHROOMS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...MUSHROOM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'oven' },

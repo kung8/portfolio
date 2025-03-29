@@ -13,7 +13,7 @@ const skewered = '../assets/Products/caramel-apples-skewered.jpeg';
 const thickened = '../assets/Products/caramel-apples-thickened-sauce.jpeg';
 const wax = '../assets/Products/caramel-apples-wax-free-apples.jpeg';
 const { GENRES, METHODS, TYPES, CATEGORIES, SECTIONS , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { GRANNY_SMITH_APPLES, BROWN_SUGAR, SWEETENED_CONDENSED_MILK, CORN_SYRUP, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
+const { GRANNY_SMITH_APPLE, BROWN_SUGAR, SWEETENED_CONDENSED_MILK, CORN_SYRUP, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
 
 const APPLE = 'Apple';
 const CARAMEL = 'Caramel';
@@ -35,7 +35,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GRANNY_SMITH_APPLES, amount: 8, unit: '', additionalDetails: '', section: APPLE },
+        { ...GRANNY_SMITH_APPLE, amount: 8, unit: '', additionalDetails: '', section: APPLE },
         { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CARAMEL },
         { ...SWEETENED_CONDENSED_MILK, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: CARAMEL },
         { ...CORN_SYRUP, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CARAMEL },

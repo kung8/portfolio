@@ -3,7 +3,7 @@ const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UN
 const {
     BEEF,
     YELLOW_ONION,
-    MUSHROOMS,
+    MUSHROOM,
     GARLIC,
     UNSALTED_BUTTER,
     BEEF_BROTH,
@@ -29,7 +29,7 @@ module.exports = {
     ingredients: [
         { ...BEEF, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: false },
         { ...YELLOW_ONION, amount: 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', optional: false },
-        { ...MUSHROOMS, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: false },
+        { ...MUSHROOM, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: false },
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', optional: false },
         { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
         { ...BEEF_BROTH, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },

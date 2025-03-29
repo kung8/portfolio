@@ -28,7 +28,7 @@ const {
     SALAMI,
     SALT,
     SESAME_OIL,
-    THAI_CHILI_PEPPERS,
+    THAI_CHILI_PEPPER,
     TWINE,
     VEGAN_BUTTER,
     VITAMIN_C_TABLETS,
@@ -96,7 +96,7 @@ module.exports = {
         { ...MAGGI_SEASONING, amount: 5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...PROSCIUTTO, amount: 10, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...SALAMI, amount: 10, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...THAI_CHILI_PEPPERS, amount: 5, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...THAI_CHILI_PEPPER, amount: 5, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'oven' },

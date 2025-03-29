@@ -16,7 +16,7 @@ const {
     GOCHUJANG_SAUCE,
     VEGETABLE_OIL,
     JASMINE_RICE,
-    GREEN_ONIONS,
+    GREEN_ONION,
     SESAME_SEEDS,
 } = require('./ingredients');
 
@@ -49,7 +49,7 @@ module.exports = {
         { ...GOCHUJANG_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
         { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
-        { ...GREEN_ONIONS, amount: 4, unit: '', additionalDetails: 'sliced', section: SECTIONS.SERVE },
+        { ...GREEN_ONION, amount: 4, unit: '', additionalDetails: 'sliced', section: SECTIONS.SERVE },
         { ...SESAME_SEEDS, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [

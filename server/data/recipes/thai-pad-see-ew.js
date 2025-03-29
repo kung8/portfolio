@@ -28,15 +28,15 @@ const {
     EGG,
     GARLIC,
     CHINESE_BROCCOLI,
-    RED_BELL_PEPPERS,
+    RED_BELL_PEPPER,
     YELLOW_ONION,
-    SNOW_PEAS,
+    SNOW_PEA,
     FRESH_RICE_NOODLES,
     DARK_SOY_SAUCE,
     BROWN_SUGAR,
     WHITE_PEPPER,
     WHITE_VINEGAR,
-    THAI_CHILI_PEPPERS,
+    THAI_CHILI_PEPPER,
 } = require('./ingredients');
 
 module.exports = {
@@ -67,9 +67,9 @@ module.exports = {
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
         { ...CHINESE_BROCCOLI, amount: 5, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'leaves and stems separated', section: SECTIONS.MAIN },
-        { ...RED_BELL_PEPPERS, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...SNOW_PEAS, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SNOW_PEA, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...VEGETABLE_OIL, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...FRESH_RICE_NOODLES, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
 
@@ -80,7 +80,7 @@ module.exports = {
         { ...WHITE_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
         { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: THAI_CHILI_PEPPER },
-        { ...THAI_CHILI_PEPPERS, amount: 3, unit: '', additionalDetails: '', section: THAI_CHILI_PEPPER },
+        { ...THAI_CHILI_PEPPER, amount: 3, unit: '', additionalDetails: '', section: THAI_CHILI_PEPPER },
         { ...WHITE_VINEGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: THAI_CHILI_PEPPER },
     ],
     appliances: [

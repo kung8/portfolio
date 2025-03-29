@@ -4,7 +4,7 @@ const kolo3 = '../assets/Products/kolo-mee-3.jpeg';
 const kolo4 = '../assets/Products/kolo-mee-4.jpeg';
 const kolo5 = '../assets/Products/kolo-mee-5.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { GROUND_PORK, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, OYSTER_SAUCE, SESAME_OIL, WHITE_PEPPER, VEGETABLE_OIL, CHOW_MEIN_NOODLES, BABY_BOK_CHOY, ONION_POWDER, GREEN_ONIONS, FRIED_SHALLOTS, GARLIC, THAI_CHILI_PEPPERS } = require('./ingredients');
+const { GROUND_PORK, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, OYSTER_SAUCE, SESAME_OIL, WHITE_PEPPER, VEGETABLE_OIL, CHOW_MEIN_NOODLES, BABY_BOK_CHOY, ONION_POWDER, GREEN_ONION, FRIED_SHALLOTS, GARLIC, THAI_CHILI_PEPPER } = require('./ingredients');
 
 const MINCED_MEAT_SECTION = 'Minced Meat';
 const NOODLE_SECTION = 'Noodle';
@@ -51,10 +51,10 @@ module.exports = {
         { ...OYSTER_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
         { ...ONION_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
 
-        { ...GREEN_ONIONS, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...GREEN_ONION, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...FRIED_SHALLOTS, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'browned and minced', section: SECTIONS.TOPPINGS },
-        { ...THAI_CHILI_PEPPERS, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...THAI_CHILI_PEPPER, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

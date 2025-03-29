@@ -36,8 +36,8 @@ const {
     OLIVE_OIL,
     MOZZARELLA_CHEESE,
     RED_ONION,
-    MUSHROOMS,
-    RED_BELL_PEPPERS,
+    MUSHROOM,
+    RED_BELL_PEPPER,
     COOKED_HAM,
     PINEAPPLE,
     RANCH_DRESSING,
@@ -107,7 +107,7 @@ module.exports = {
         { ...MOZZARELLA_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: BBQ_CHICKEN_PIZZA },
         { ...CHICKEN_BREAST, amount: '', unit: '', additionalDetails: '', section: BBQ_CHICKEN_PIZZA },
         { ...RED_ONION, amount: '', unit: '', additionalDetails: 'sliced or diced', section: BBQ_CHICKEN_PIZZA },
-        { ...RED_BELL_PEPPERS, amount: '', unit: '', additionalDetails: 'sliced or diced', section: BBQ_CHICKEN_PIZZA },
+        { ...RED_BELL_PEPPER, amount: '', unit: '', additionalDetails: 'sliced or diced', section: BBQ_CHICKEN_PIZZA },
 
         // BOBO BRAZIL- TOPPINGS
         { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BOBO_BRAZIL_PIZZA },
@@ -156,8 +156,8 @@ module.exports = {
         // PHILLY CHEESESTEAK - TOPPINGS
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PHILLY_CHEESESTEAK_PIZZA },
         { ...FLANK_STEAK, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'thinly sliced', section: PHILLY_CHEESESTEAK_PIZZA },
-        { ...RED_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
-        { ...MUSHROOMS, amount: 5, unit: '', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
+        { ...RED_BELL_PEPPER, amount: 1 / 2, unit: '', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
+        { ...MUSHROOM, amount: 5, unit: '', additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
         { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: PHILLY_CHEESESTEAK_PIZZA },
         { ...PROVOLONE_CHEESE, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: PHILLY_CHEESESTEAK_PIZZA },
 
@@ -165,7 +165,7 @@ module.exports = {
         { ...RANCH_DRESSING, amount: '', unit: '', additionalDetails: '', section: RANCH_CHICKEN_PIZZA },
         { ...MOZZARELLA_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: RANCH_CHICKEN_PIZZA },
         { ...CHICKEN_BREAST, amount: '', unit: '', additionalDetails: '', section: RANCH_CHICKEN_PIZZA },
-        { ...RED_BELL_PEPPERS, amount: '', unit: '', additionalDetails: 'sliced or diced', section: RANCH_CHICKEN_PIZZA },
+        { ...RED_BELL_PEPPER, amount: '', unit: '', additionalDetails: 'sliced or diced', section: RANCH_CHICKEN_PIZZA },
         { ...RED_ONION, amount: '', unit: '', additionalDetails: 'sliced or diced', section: RANCH_CHICKEN_PIZZA },
         { ...BACON, amount: '', unit: '', additionalDetails: 'cooked', section: RANCH_CHICKEN_PIZZA },
 
@@ -174,9 +174,9 @@ module.exports = {
         { ...MOZZARELLA_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: SUPREME_PIZZA },
         { ...PEPPERONI, amount: '', unit: '', additionalDetails: '', section: SUPREME_PIZZA },
         { ...SAUSAGE, amount: '', unit: '', additionalDetails: '', section: SUPREME_PIZZA },
-        { ...MUSHROOMS, amount: '', unit: '', additionalDetails: '', section: SUPREME_PIZZA },
+        { ...MUSHROOM, amount: '', unit: '', additionalDetails: '', section: SUPREME_PIZZA },
         { ...OLIVES, amount: '', unit: '', additionalDetails: '', section: SUPREME_PIZZA },
-        { ...RED_BELL_PEPPERS, amount: '', unit: '', additionalDetails: 'sliced or diced', section: SUPREME_PIZZA },
+        { ...RED_BELL_PEPPER, amount: '', unit: '', additionalDetails: 'sliced or diced', section: SUPREME_PIZZA },
     ],
     appliances: [
         { name: 'oven' },

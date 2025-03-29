@@ -21,10 +21,10 @@ const {
     LIGHT_SOY_SAUCE,
     MIRIN,
     CHICKEN_BROTH,
-    MUSHROOMS,
+    MUSHROOM,
     EGG,
     DRIED_RAMEN_NOODLES,
-    GREEN_ONIONS,
+    GREEN_ONION,
 } = require('./ingredients');
 
 module.exports = {
@@ -56,11 +56,11 @@ module.exports = {
         { ...LIGHT_SOY_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BROTH },
         { ...MIRIN, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BROTH },
         { ...CHICKEN_BROTH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...MUSHROOMS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...MUSHROOM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.EGGS },
         { ...DRIED_RAMEN_NOODLES, amount: 3, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...GREEN_ONIONS, amount: 3, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
+        { ...GREEN_ONION, amount: 3, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },

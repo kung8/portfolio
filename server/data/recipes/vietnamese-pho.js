@@ -19,7 +19,7 @@ const {
     BEEF_TENDERLOIN,
     BLACK_PEPPER,
     CILANTRO,
-    GREEN_ONIONS,
+    GREEN_ONION,
     LIME_JUICE,
     LIGHT_SOY_SAUCE,
     MINT_LEAVES,
@@ -73,7 +73,7 @@ module.exports = {
         { ...BEEF_TENDERLOIN, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thinly sliced', section: SECTIONS.BEEF },
 
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
-        { ...GREEN_ONIONS, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...GREEN_ONION, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...BEAN_SPROUTS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...MINT_LEAVES, amount: '', unit: '', additionalDetails: 'plucked', section: SECTIONS.TOPPINGS },
         { ...LIME_JUICE, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },

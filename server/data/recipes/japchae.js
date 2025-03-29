@@ -1,6 +1,6 @@
 // const japchae1 = '../assets/Products/japchae-1.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { KOREAN_GLASS_NOODLES, EGG, CARROT, RED_BELL_PEPPERS, YELLOW_ONION, GREEN_ONIONS, GARLIC, SHIITAKE_MUSHROOMS, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPERS } = require('./ingredients');
+const { KOREAN_GLASS_NOODLES, EGG, CARROT, RED_BELL_PEPPER, YELLOW_ONION, GREEN_ONION, GARLIC, SHIITAKE_MUSHROOM, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPER } = require('./ingredients');
 
 const NOODLES_SECTION = 'Noodles';
 const EGG_SECTION = 'Eggs';
@@ -42,14 +42,14 @@ module.exports = {
 
         { ...SESAME_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FIRST_VEGGIES_SECTION },
         { ...CARROT, amount: 1, unit: '', additionalDetails: 'julienned', section: FIRST_VEGGIES_SECTION },
-        { ...RED_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'thinly sliced', section: FIRST_VEGGIES_SECTION },
-        { ...ORANGE_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'thinly sliced', section: FIRST_VEGGIES_SECTION },
+        { ...RED_BELL_PEPPER, amount: 1 / 2, unit: '', additionalDetails: 'thinly sliced', section: FIRST_VEGGIES_SECTION },
+        { ...ORANGE_BELL_PEPPER, amount: 1 / 2, unit: '', additionalDetails: 'thinly sliced', section: FIRST_VEGGIES_SECTION },
 
         { ...SESAME_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECOND_VEGGIES_SECTION },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'sliced', section: SECOND_VEGGIES_SECTION },
-        { ...GREEN_ONIONS, amount: 2, unit: '', additionalDetails: 'chopped', section: SECOND_VEGGIES_SECTION },
+        { ...GREEN_ONION, amount: 2, unit: '', additionalDetails: 'chopped', section: SECOND_VEGGIES_SECTION },
         { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECOND_VEGGIES_SECTION },
-        { ...SHIITAKE_MUSHROOMS, amount: 4, unit: '', additionalDetails: 'sliced', section: SECOND_VEGGIES_SECTION },
+        { ...SHIITAKE_MUSHROOM, amount: 4, unit: '', additionalDetails: 'sliced', section: SECOND_VEGGIES_SECTION },
 
         { ...SPINACH, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECOND_VEGGIES_SECTION },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECOND_VEGGIES_SECTION },

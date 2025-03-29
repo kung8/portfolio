@@ -6,7 +6,7 @@ const drunken5 = '../assets/Products/drunken-noodles-5.jpeg';
 const drunken6 = '../assets/Products/drunken-noodles-6.jpeg';
 const drunken7 = '../assets/Products/drunken-noodles-7.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGG, SERRANO_PEPPERS, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATOES } = require('./ingredients');
+const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGG, SERRANO_PEPPER, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATOES } = require('./ingredients');
 
 const MAKE_SAUCE = 'Make Sauce';
 const COOK_NOODLES = 'Cook Noodles';
@@ -42,7 +42,7 @@ module.exports = {
         { ...PEANUT_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.NOODLES },
         { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.NOODLES },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...SERRANO_PEPPERS, amount: 2, unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.NOODLES },
+        { ...SERRANO_PEPPER, amount: 2, unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.NOODLES },
         { ...LARGE_SHRIMP, amount: 8, unit: '', additionalDetails: 'peeled and deveined', section: SECTIONS.NOODLES },
         { ...WHITE_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.NOODLES },
         { ...FRESH_RICE_NOODLES, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
