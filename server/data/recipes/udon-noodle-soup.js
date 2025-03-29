@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { BEEF_RIBS, YELLOW_ONION, CARROTS, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGG, BEEF_BROTH, SHIITAKE_MUSHROOMS, THAI_CHILI_PEPPERS, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONIONS, SESAME_SEEDS, UDON_NOODLES, WARM_WATER } = require('./ingredients');
+const { BEEF_RIBS, YELLOW_ONION, CARROT, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGG, BEEF_BROTH, SHIITAKE_MUSHROOMS, THAI_CHILI_PEPPERS, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONIONS, SESAME_SEEDS, UDON_NOODLES, WARM_WATER } = require('./ingredients');
 
 const BEEF_BROTH_SECTION = 'Beef Broth';
 const EGG_SECTION = 'Eggs';
@@ -38,13 +38,13 @@ module.exports = {
     ingredients: [
         { ...BEEF_RIBS, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BEEF_BROTH_SECTION },
         { ...YELLOW_ONION, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'peeled and quartered', section: BEEF_BROTH_SECTION },
-        { ...CARROTS, amount: 1, unit: '', additionalDetails: 'peeled and chunked', section: BEEF_BROTH_SECTION },
+        { ...CARROT, amount: 1, unit: '', additionalDetails: 'peeled and chunked', section: BEEF_BROTH_SECTION },
         { ...CINNAMON_STICK, amount: 1, unit: '', additionalDetails: '', section: BEEF_BROTH_SECTION },
         { ...GINGER, amount: 3, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'whole', section: BEEF_BROTH_SECTION },
 
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: EGG_SECTION },
         { ...UDON_NOODLES, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: NOODLE_SECTION },
-        { ...CARROTS, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'peeled and julienned', section: SOUP_1_SECTION },
+        { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'peeled and julienned', section: SOUP_1_SECTION },
         { ...SHIITAKE_MUSHROOMS, amount: 7 / 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SOUP_1_SECTION },
         { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: SOUP_1_SECTION },
         { ...THAI_CHILI_PEPPERS, amount: 2, unit: '', additionalDetails: 'whole', section: SOUP_1_SECTION },

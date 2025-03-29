@@ -3,7 +3,7 @@ const pan = '../assets/Products/hobo-dinner-pan.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
-    CARROTS,
+    CARROT,
     YELLOW_ONION,
     OLIVE_OIL,
     POTATOES,
@@ -26,7 +26,7 @@ module.exports = {
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     ingredients: [
         { ...SUMMER_SAUSAGE, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...CARROTS, amount: 3, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...CARROT, amount: 3, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...POTATOES, amount: 3, unit: '', additionalDetails: 'chunked', section: SECTIONS.MAIN },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },

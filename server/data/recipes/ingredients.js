@@ -1258,8 +1258,8 @@ const INGREDIENTS = {
             name: 'cantaloupe', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1705932430293-a1d21fab094a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5MDY3fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         CAPSICUMS: { name: 'capsicums', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400" },
-        CARROTS: {
-            name: 'carrots', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc0NzE0fA&ixlib=rb-4.0.3&q=80&w=400"
+        CARROT: {
+            name: 'carrot', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc0NzE0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         CARROT_CHIPS: {
             name: 'carrot chips', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc0NzE0fA&ixlib=rb-4.0.3&q=80&w=400"

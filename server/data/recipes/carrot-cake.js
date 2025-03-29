@@ -15,7 +15,7 @@ const side = '../assets/Products/carrot-cake-plated-side.jpeg';
 const zoomed = '../assets/Products/carrot-cake-plated-zoomed.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { BROWN_SUGAR, CARROTS, EGG, WHITE_SUGAR, VEGETABLE_OIL, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, CINNAMON, BAKING_SODA, SALT, BAKING_POWDER, CREAM_CHEESE, UNSALTED_BUTTER, POWDERED_SUGAR, WALNUTS } = require('./ingredients');
+const { BROWN_SUGAR, CARROT, EGG, WHITE_SUGAR, VEGETABLE_OIL, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, CINNAMON, BAKING_SODA, SALT, BAKING_POWDER, CREAM_CHEESE, UNSALTED_BUTTER, POWDERED_SUGAR, WALNUTS } = require('./ingredients');
 
 const CARROT_MIXTURE = 'Carrot Mixture';
 const CAKE = 'Cake';
@@ -41,7 +41,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CARROTS, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'freshly grated', section: CARROT_MIXTURE },
+        { ...CARROT, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'freshly grated', section: CARROT_MIXTURE },
         { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CARROT_MIXTURE },
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: CAKE },
         { ...WHITE_SUGAR, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CAKE },

@@ -1,6 +1,6 @@
 // const japchae1 = '../assets/Products/japchae-1.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { KOREAN_GLASS_NOODLES, EGG, CARROTS, RED_BELL_PEPPERS, YELLOW_ONION, GREEN_ONIONS, GARLIC, SHIITAKE_MUSHROOMS, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPERS } = require('./ingredients');
+const { KOREAN_GLASS_NOODLES, EGG, CARROT, RED_BELL_PEPPERS, YELLOW_ONION, GREEN_ONIONS, GARLIC, SHIITAKE_MUSHROOMS, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPERS } = require('./ingredients');
 
 const NOODLES_SECTION = 'Noodles';
 const EGG_SECTION = 'Eggs';
@@ -41,7 +41,7 @@ module.exports = {
         { ...SESAME_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: EGG_SECTION },
 
         { ...SESAME_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FIRST_VEGGIES_SECTION },
-        { ...CARROTS, amount: 1, unit: '', additionalDetails: 'julienned', section: FIRST_VEGGIES_SECTION },
+        { ...CARROT, amount: 1, unit: '', additionalDetails: 'julienned', section: FIRST_VEGGIES_SECTION },
         { ...RED_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'thinly sliced', section: FIRST_VEGGIES_SECTION },
         { ...ORANGE_BELL_PEPPERS, amount: 1 / 2, unit: '', additionalDetails: 'thinly sliced', section: FIRST_VEGGIES_SECTION },
 
