@@ -43,12 +43,12 @@ module.exports = {
         { label: 'Sausage Gravy', link: 'https://www.allrecipes.com/recipe/216391/easy-sausage-gravy-and-biscuits/' }
     ],
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 11.2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BISCUITS },
+        { ...ALL_PURPOSE_FLOUR, amount: 11/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BISCUITS },
         { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BISCUITS },
         { ...BAKING_SODA, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BISCUITS },
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BISCUITS },
         { ...UNSALTED_BUTTER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cut into 1/2" slices', section: BISCUITS },
-        { ...UNSALTED_BUTTER, amount: '', unit: '', additionalDetails: 'melted', section: BISCUITS },
+        { ...UNSALTED_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: BISCUITS },
         { ...BUTTERMILK, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BISCUITS },
         { ...GROUND_PORK, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: GRAVY },
         { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GRAVY },
