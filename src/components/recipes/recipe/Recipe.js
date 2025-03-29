@@ -215,6 +215,7 @@ export const Recipe = ({ match }) => {
                     selectedRecipeImage,
                     setAppliedYieldAmount,
                     setSelectedFigure,
+                    setSelectedFigureLabel,
                     setSelectedIngredients,
                 }}
             >
