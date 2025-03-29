@@ -1,4 +1,8 @@
-// const example = '../assets/Products/example.jpeg';
+const kolo1 = '../assets/Products/kolo-mee-1.jpeg';
+const kolo2 = '../assets/Products/kolo-mee-2.jpeg';
+const kolo3 = '../assets/Products/kolo-mee-3.jpeg';
+const kolo4 = '../assets/Products/kolo-mee-4.jpeg';
+const kolo5 = '../assets/Products/kolo-mee-5.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { GROUND_PORK, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, OYSTER_SAUCE, SESAME_OIL, WHITE_PEPPER, VEGETABLE_OIL, CHOW_MEIN_NOODLES, BABY_BOK_CHOY, ONION_POWDER, GREEN_ONIONS, FRIED_SHALLOTS, GARLIC, THAI_CHILI_PEPPERS } = require('./ingredients');
 
@@ -13,12 +17,11 @@ const COOK_BOK_CHOY = 'Cook Bok Choy';
 const ASSEMBLE_DISH = 'Assemble Dish';
 
 module.exports = {
-    wip: true,
     cardName: 'Kolo Mee',
     name: 'Kolo Mee',
-    img: '',
+    img: kolo5,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.MALAYSIAN, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],
@@ -63,18 +66,18 @@ module.exports = {
     directions: [
         { step: 'Over medium-high heat, heat oil in a wok.', type: COOK_MINCED_MEAT },
         { step: 'Add the "Minced Meat" section ingredients. Stir fry until browned.', type: COOK_MINCED_MEAT },
-        { step: 'Set aside.', type: COOK_MINCED_MEAT },
+        { step: 'Set aside.', type: COOK_MINCED_MEAT, img: kolo1 },
 
         { step: 'Cook the chow mein noodles according to package instructions. As it loosens and is almost cooked, remove the noodles and place it in a cold water bath.', type: COOK_NOODLES },
         { step: 'Re-add the cooled noodles back to the boiling water until it is cooked.', type: COOK_NOODLES },
-        { step: 'Drain. Set the noodles on a plate.', type: COOK_NOODLES },
+        { step: 'Drain. Set the noodles on a plate.', type: COOK_NOODLES, img: kolo3 },
 
         { step: 'Over medium-high heat, boil a pot of water.', type: COOK_BOK_CHOY },
         { step: 'Add bok choy. Cook until tender (about 1 to 2 minutes).', type: COOK_BOK_CHOY },
-        { step: 'Drain. Set aside.', type: COOK_BOK_CHOY },
+        { step: 'Drain. Set aside.', type: COOK_BOK_CHOY, img: kolo4 },
 
         { step: 'To the plate of noodles, add the "Sauce" section ingredients. Mix.', type: ASSEMBLE_DISH },
-        { step: 'Top the dish with the minced meat, bok choy and any other preferred toppings.', type: ASSEMBLE_DISH },
+        { step: 'Top the dish with the minced meat, bok choy and any other preferred toppings.', type: ASSEMBLE_DISH, img: kolo2 },
 
         { step: 'Enjoy one of my favorite noodle dishes from where a piece of my heart is.', type: SECTIONS.SERVE },
     ],
