@@ -79,6 +79,7 @@ const chiveCakes = require("./recipes/chive-cakes");
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateMousse = require("./recipes/chocolate-mousse");
 const chopSuey = require("./recipes/chop-suey");
+const choySumWithGarlicSauce = require("./recipes/choy-sum-with-garlic-sauce");
 const churros = require("./recipes/churros");
 const cinnamonRolls = require("./recipes/cinnamon-rolls");
 const coconutChicken = require("./recipes/coconut-chicken");
@@ -312,6 +313,7 @@ const recipes = [
     chineseSourChickenSoup,
     pepperSteakStirFry,
     lemonChickenOnLettuce,
+    choySumWithGarlicSauce,
     chineseBokChoyChicken,
     cabbageStirFry,
     chineseBao,
