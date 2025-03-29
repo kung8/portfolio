@@ -16,9 +16,9 @@ const sauce = '../assets/Products/pad-see-ew-sauce.jpeg';
 const vinegar = '../assets/Products/pad-see-ew-thai-chili-vinegar.jpeg';
 const veggies = '../assets/Products/pad-see-ew-veggies.jpeg';
 
-const THAI_CHILI_PEPPER = 'Thai Chili Pepper';
+const THAI_CHILI_PEPPER_SECTION = 'Thai Chili Pepper';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     LIGHT_SOY_SAUCE,
@@ -79,9 +79,9 @@ module.exports = {
         { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...WHITE_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: THAI_CHILI_PEPPER },
-        { ...THAI_CHILI_PEPPER, amount: 3, unit: '', additionalDetails: '', section: THAI_CHILI_PEPPER },
-        { ...WHITE_VINEGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: THAI_CHILI_PEPPER },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: THAI_CHILI_PEPPER_SECTION },
+        { ...THAI_CHILI_PEPPER, amount: 3, unit: '', additionalDetails: '', section: THAI_CHILI_PEPPER_SECTION },
+        { ...WHITE_VINEGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: THAI_CHILI_PEPPER_SECTION },
     ],
     appliances: [
         { name: 'stove' },
@@ -94,9 +94,9 @@ module.exports = {
         { name: 'mortar and pestle' },
     ],
     directions: [
-        { step: 'Dry fry the Thai chili peppers and garlic.', type: THAI_CHILI_PEPPER, img: dry },
-        { step: 'In a mortar and pestle, crush the peppers and garlic until it becomes a paste.', type: THAI_CHILI_PEPPER, img: paste },
-        { step: 'Add vinegar to the paste.', type: THAI_CHILI_PEPPER, img: vinegar },
+        { step: 'Dry fry the Thai chili peppers and garlic.', type: THAI_CHILI_PEPPER_SECTION, img: dry },
+        { step: 'In a mortar and pestle, crush the peppers and garlic until it becomes a paste.', type: THAI_CHILI_PEPPER_SECTION, img: paste },
+        { step: 'Add vinegar to the paste.', type: THAI_CHILI_PEPPER_SECTION, img: vinegar },
 
         { step: 'Marinate the chicken with all of the marinade ingredients.', type: SECTIONS.MAIN, img: thigh },
         { step: 'Combine all the sauce ingredients in a medium size bowl.', type: SECTIONS.MAIN, img: sauce },
