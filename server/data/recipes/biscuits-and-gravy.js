@@ -69,7 +69,7 @@ module.exports = {
         { step: 'Preheat the oven to 475ºF.', type: BISCUITS },
         { step: 'On a clean counter, add the flour, baking powder, baking soda, and salt. And combine.', type: BISCUITS, img: dry },
         { step: 'Add cold butter to the mixture and with your hands combine, squeeze, and squish the butter into the dry ingredients. Keep doing this until the butter is the size of your pinky nail.', type: BISCUITS, img: butter },
-        { step: 'Make a well in the center of the mixture and pour in the buttermilk. Combine with your hands until everything is well mixed.', type: BISCUITS, img: buttermilk },
+        { step: 'Make a well in the center of the mixture and pour in the buttermilk. Combine with your hands until everything is well mixed. Do not overmix.', type: BISCUITS, img: buttermilk },
         { step: 'Knead the dough about 4 or 5 times until the dough is smooth.', type: BISCUITS, img: mixed },
         { step: 'Roll out the dough to a rectangle about 3/4 inch thick.', type: BISCUITS },
         { step: 'Cut into 2 1/2-inch squares.', type: BISCUITS },
