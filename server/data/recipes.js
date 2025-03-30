@@ -22,7 +22,6 @@ const bibimbap = require("./recipes/bibimbap");
 const bigMac = require("./recipes/big-mac");
 const birriaTacos = require("./recipes/birria-tacos");
 const biscoffCookiePie = require("./recipes/biscoff-cookie-pie");
-const biscuits = require("./recipes/biscuits");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
 const blondie = require("./recipes/blondie");
 const blt = require("./recipes/blt");
@@ -328,7 +327,7 @@ const recipes = [
 
     // MALAYSIAN
     malaysianSatay,
-    koloMee, // TODO: add
+    koloMee,
     malaysianLemonChicken,
     malaysianBlackPepperChicken,
 
@@ -502,7 +501,6 @@ const recipes = [
     frenchToast,
     waffles,
     buttermilkSyrup,
-    biscuits, // TODO: add
     biscuitsAndGravy,
     breakfastBurrito, // TODO: add
     breakfastSandwich,
