@@ -10,7 +10,9 @@
     "dayjs": "^1.11.13",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "fuse.js": "^7.0.0",
+    "inquirer": "^6.0.0",
     "node-sass": "^4.14.1",
     "nodemailer": "^6.4.14",
     "react": "^16.14.0",
@@ -26,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "create-recipe": "node server/create-recipe-file.js"
   },
   "eslintConfig": {
     "extends": "react-app"
