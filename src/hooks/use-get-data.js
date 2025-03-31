@@ -1,4 +1,4 @@
-import { useQuery } from 'react-query';
+import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
 const getApiCall = (type, id, option = {}) => axios.get('/api/data?type=' + type + (id ? '&id=' + id : ''), option)

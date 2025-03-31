@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useQueryClient } from 'react-query';
+import { useQueryClient } from '@tanstack/react-query';
 import Fuse from 'fuse.js';
 import { useDebounce } from 'use-debounce';
 import { useGetData, useGetFeaturedRecipes } from '../../../hooks';

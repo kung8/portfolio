@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { ModalBody, ModalContent } from '../../modal/ModalContent';
 import xBtn from '../../../Assets/x.png';
 import arrow from '../../../Assets/arrow.png';
@@ -8,7 +8,7 @@ import { useRecipeContext } from './RecipeContext';
 export const RecipeImageModal = () => {
     const { figures, handleCloseImageModal, item, selectedRecipeImage } = useRecipeContext();
     const name = item?.name;
-    const images = [item?.img, ...figures.flatMap(figure => figure.img)];
+    const images = useMemo(() => [item?.img, ...figures.flatMap(figure => figure.img)], [item?.img, figures]);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
