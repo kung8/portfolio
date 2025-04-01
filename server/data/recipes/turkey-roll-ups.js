@@ -7,6 +7,8 @@ module.exports = {
     cardName: 'Turkey Roll Ups',
     name: 'Turkey Roll Ups',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

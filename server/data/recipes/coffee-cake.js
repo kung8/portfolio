@@ -45,6 +45,8 @@ module.exports = {
     cardName: 'Coffee Cake',
     name: 'Coffee Cake',
     img: cake22,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],

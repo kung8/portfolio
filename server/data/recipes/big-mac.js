@@ -12,6 +12,8 @@ module.exports = {
     cardName: 'Big Mac',
     name: 'Big Mac',
     img: plated7,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

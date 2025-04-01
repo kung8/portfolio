@@ -17,6 +17,8 @@ module.exports = {
     cardName: 'Churros',
     name: 'Churros',
     img: churros5,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

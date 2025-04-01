@@ -6,6 +6,8 @@ module.exports = {
     cardName: 'Chicken Parmesan',
     name: 'Chicken Parmesan',
     img: chickenParm,
+    recipeAuthor: '',
+    recipeFinder: '',
     available: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],

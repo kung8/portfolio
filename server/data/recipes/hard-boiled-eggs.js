@@ -18,6 +18,8 @@ module.exports = {
     cardName: 'Hard Boiled Eggs',
     name: 'Hard Boiled Eggs',
     img: egg,
+    recipeAuthor: 'Kevin Ung',
+    recipeFinder: '',
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

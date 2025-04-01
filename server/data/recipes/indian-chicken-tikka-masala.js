@@ -23,6 +23,8 @@ module.exports = {
     cardName: 'Chicken Tikka Masala',
     name: 'Chicken Tikka Masala',
     img: chickenSauce2,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],

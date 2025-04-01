@@ -10,6 +10,8 @@ module.exports = {
     cardName: 'B.L.T.',
     name: 'B.L.T.',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

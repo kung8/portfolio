@@ -23,12 +23,15 @@ const {
 } = require('./ingredients');
 
 const BISCUITS = 'Biscuits';
+const BRUSHING = 'Brushing';
 const GRAVY = 'Gravy';
 
 module.exports = {
     cardName: 'Biscuits & Gravy',
     name: 'Southern Biscuits and Gravy',
     img: biscuits5,
+    recipeAuthor: '',
+    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST],
@@ -39,6 +42,7 @@ module.exports = {
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
         { label: 'Sausage Gravy', link: 'https://www.soulfullymade.com/best-sausage-gravy-recipe/' }
@@ -49,8 +53,9 @@ module.exports = {
         { ...BAKING_SODA, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BISCUITS },
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BISCUITS },
         { ...UNSALTED_BUTTER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cut into 1/2" slices', section: BISCUITS },
-        { ...UNSALTED_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: BISCUITS },
         { ...BUTTERMILK, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BISCUITS },
+        { ...ALL_PURPOSE_FLOUR, amount: 1.5, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'dusting or as needed', section: BISCUITS },
+        { ...UNSALTED_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: BRUSHING },
 
         { ...GROUND_PORK, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: GRAVY },
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: GRAVY },

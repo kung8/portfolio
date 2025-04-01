@@ -14,6 +14,8 @@ module.exports = {
     cardName: 'Beignets',
     name: 'Beignets',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],

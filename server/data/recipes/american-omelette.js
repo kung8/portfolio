@@ -29,6 +29,8 @@ module.exports = {
     cardName: 'American Omelette',
     name: 'American Omelette',
     img: moreCookedZoomed,
+    recipeAuthor: 'Kevin Ung',
+    recipeFinder: '',
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

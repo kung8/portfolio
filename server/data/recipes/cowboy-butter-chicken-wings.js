@@ -19,6 +19,8 @@ module.exports = {
     cardName: 'Cowboy Butter Chicken Wings',
     name: 'Cowboy Butter Chicken Wings',
     img: wings5,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],

@@ -38,6 +38,8 @@ module.exports = {
     cardName: 'Samosa',
     name: 'Samosa',
     img: samosa21,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER],

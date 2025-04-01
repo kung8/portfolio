@@ -12,6 +12,8 @@ module.exports = {
     cardName: 'Orange Chicken',
     name: 'Orange Chicken',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

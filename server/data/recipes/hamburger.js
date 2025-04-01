@@ -18,6 +18,8 @@ module.exports = {
     cardName: 'Hamburger',
     name: 'Hamburger',
     img: hamburger,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

@@ -18,6 +18,8 @@ module.exports = {
     cardName: 'Scrambled Eggs',
     name: 'Scrambled Eggs',
     img: scrambledEggs,
+    recipeAuthor: 'Kevin Ung',
+    recipeFinder: '',
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

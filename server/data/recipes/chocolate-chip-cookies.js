@@ -31,6 +31,8 @@ module.exports = {
     cardName: 'Chocolate Chip Cookies',
     name: 'Chocolate Chip Cookies',
     img: zoomed,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

@@ -36,8 +36,9 @@ const COOK_AND_COMBINE = 'Cook and Combine';
 module.exports = {
     cardName: 'Aji de Gallina',
     name: 'Peruvian Aji de Gallina',
-    recipeFinder: 'Gaby Ward',
     img: zoomed,
+    recipeAuthor: '',
+    recipeFinder: 'Gaby Ward',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.PERUVIAN, GENRES.LATIN],

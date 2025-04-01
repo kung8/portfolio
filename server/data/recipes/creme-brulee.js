@@ -27,6 +27,8 @@ module.exports = {
     cardName: 'Crème Brûlée',
     name: 'Crème Brûlée',
     img: broiled,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH],

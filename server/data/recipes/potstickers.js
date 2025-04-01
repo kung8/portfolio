@@ -31,6 +31,8 @@ module.exports = {
     cardName: 'Potstickers',
     name: 'Potstickers',
     img: potstickers,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],

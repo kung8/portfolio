@@ -29,6 +29,8 @@ module.exports = {
     cardName: 'Roasted Pork Belly',
     name: 'Roasted Pork Belly',
     img: roast14,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],

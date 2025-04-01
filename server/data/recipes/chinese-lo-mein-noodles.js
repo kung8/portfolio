@@ -33,6 +33,8 @@ module.exports = {
     cardName: 'Lo Mein Noodles',
     name: 'Lo Mein Noodles',
     img: plated2,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

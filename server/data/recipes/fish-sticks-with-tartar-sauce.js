@@ -7,6 +7,8 @@ module.exports = {
     cardName: 'Fish Sticks with Tartar Sauce',
     name: 'Fish Sticks with Tartar Sauce',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

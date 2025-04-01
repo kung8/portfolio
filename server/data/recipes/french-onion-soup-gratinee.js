@@ -8,7 +8,7 @@ module.exports = {
     name: 'French Onion Soup Gratinee',
     img: '',
     recipeAuthor: '',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER,CATEGORIES.SIDE_DISH],

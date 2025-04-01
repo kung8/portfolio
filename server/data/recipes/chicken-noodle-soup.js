@@ -19,6 +19,8 @@ module.exports = {
     cardName: 'Chicken Soup',
     name: 'Chicken Noodle Soup',
     img: chickenNoodle,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

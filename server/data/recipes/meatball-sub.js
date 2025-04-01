@@ -8,7 +8,7 @@ module.exports = {
     name: 'Meatball Sub',
     img: '',
     recipeAuthor: '',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],

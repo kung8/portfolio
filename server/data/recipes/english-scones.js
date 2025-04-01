@@ -28,6 +28,8 @@ module.exports = {
     cardName: 'English Scones',
     name: 'English Scones',
     img: scones16,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.BREAKFAST, CATEGORIES.SNACK],

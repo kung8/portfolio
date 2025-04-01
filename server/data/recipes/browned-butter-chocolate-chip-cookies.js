@@ -12,6 +12,8 @@ module.exports = {
     cardName: 'Browned Butter Cookies',
     name: 'Browned Butter Chocolate Chip Cookies',
     img: cookies1,
+    recipeAuthor: '',
+    recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

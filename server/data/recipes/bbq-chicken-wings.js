@@ -22,6 +22,8 @@ module.exports = {
     cardName: 'BBQ Chicken Wings',
     name: 'BBQ Chicken Wings',
     img: bbq,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

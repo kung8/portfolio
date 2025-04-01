@@ -11,6 +11,8 @@ module.exports = {
     cardName: 'Breakfast Sandwich',
     name: 'Breakfast Sandwich',
     img: breakfastSandwich,
+    recipeAuthor: 'Kevin Ung',
+    recipeFinder: '',
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

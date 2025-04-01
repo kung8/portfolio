@@ -8,7 +8,7 @@ module.exports = {
     name: 'Russian Beef Stroganoff',
     img: '',
     recipeAuthor: '',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],

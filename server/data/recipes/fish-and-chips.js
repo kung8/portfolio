@@ -7,6 +7,8 @@ module.exports = {
     cardName: 'Fish and Chips',
     name: 'Fish and Chips',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

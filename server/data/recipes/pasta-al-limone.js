@@ -14,6 +14,8 @@ module.exports = {
     cardName: 'Pasta al Limone',
     name: 'Pasta al Limone',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

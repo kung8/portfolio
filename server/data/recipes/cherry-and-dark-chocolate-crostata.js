@@ -8,7 +8,7 @@ module.exports = {
     name: 'Cherry + Dark Chocolate Crostata',
     img: '',
     recipeAuthor: '',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.DESSERT],

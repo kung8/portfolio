@@ -15,6 +15,8 @@ module.exports = {
     cardName: 'Pork Milanese',
     name: 'Pork Milanese',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

@@ -14,6 +14,8 @@ module.exports = {
     cardName: 'Shrimp Scampi',
     name: 'Shrimp Scampi',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

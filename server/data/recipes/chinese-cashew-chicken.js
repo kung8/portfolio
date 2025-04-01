@@ -34,6 +34,8 @@ module.exports = {
     cardName: 'Cashew Chicken',
     name: 'Chinese Cashew Chicken',
     img: plated,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

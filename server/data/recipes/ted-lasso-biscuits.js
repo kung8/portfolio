@@ -11,6 +11,8 @@ module.exports = {
     cardName: 'Lasso Biscuits',
     name: 'Ted Lasso Biscuits',
     img: biscuits,
+    recipeAuthor: '',
+    recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

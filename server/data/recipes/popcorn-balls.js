@@ -14,6 +14,8 @@ module.exports = {
     cardName: 'Popcorn Balls',
     name: 'Popcorn Balls',
     img: rackStacked,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

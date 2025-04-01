@@ -22,6 +22,8 @@ module.exports = {
     cardName: 'Lettuce Chicken',
     name: 'Lemon Chicken on Lettuce',
     img: zoomed,
+    recipeAuthor: '',
+    recipeFinder: 'Lily Lim',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

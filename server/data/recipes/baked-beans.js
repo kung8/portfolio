@@ -18,6 +18,8 @@ module.exports = {
     cardName: 'Baked Beans',
     name: 'Baked Beans',
     img: plateZoomed,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

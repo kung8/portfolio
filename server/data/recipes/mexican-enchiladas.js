@@ -35,6 +35,8 @@ module.exports = {
     cardName: 'Mexican Enchiladas',
     name: 'Mexican Enchiladas',
     img: enchiladas21,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

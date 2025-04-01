@@ -13,6 +13,8 @@ module.exports = {
     cardName: 'Rosemary Fries',
     name: 'Rosemary Fries',
     img: baked2,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH],

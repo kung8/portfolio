@@ -22,6 +22,8 @@ module.exports = {
     cardName: 'Green Bean Almondine',
     name: 'Green Bean Almondine',
     img: plate,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.FRENCH],

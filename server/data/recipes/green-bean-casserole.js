@@ -15,6 +15,8 @@ module.exports = {
     cardName: 'Green Bean Casserole',
     name: 'Green Bean Casserole',
     img: casserole4,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],

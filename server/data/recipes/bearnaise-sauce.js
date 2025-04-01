@@ -8,7 +8,7 @@ module.exports = {
     name: 'Béarnaise Sauce',
     img: '',
     recipeAuthor: '',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.SAUCE],

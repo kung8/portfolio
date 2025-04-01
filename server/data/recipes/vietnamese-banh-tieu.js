@@ -16,6 +16,8 @@ module.exports = {
     cardName: 'Banh Tieu',
     name: 'Vietnamese Banh Tieu',
     img: banhTieu,
+    recipeAuthor: '',
+    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],

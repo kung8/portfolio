@@ -16,6 +16,8 @@ module.exports = {
     cardName: 'Kebabs',
     name: 'Chicken Kebabs',
     img: kebabs,
+    recipeAuthor: '',
+    recipeFinder: '',
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.MIDDLE_EASTERN],

@@ -12,6 +12,8 @@ module.exports = {
     cardName: 'Cabbage Stir Fry',
     name: 'Cabbage Stir Fry',
     img: bowl,
+    recipeAuthor: '',
+    recipeFinder: '',
     available: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],

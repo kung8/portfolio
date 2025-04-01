@@ -23,6 +23,8 @@ module.exports = {
     cardName: 'Sourdough Bread',
     name: 'Sourdough Bread',
     img: board,
+    recipeAuthor: '',
+    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SNACK],

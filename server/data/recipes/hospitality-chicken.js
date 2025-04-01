@@ -12,6 +12,8 @@ module.exports = {
     cardName: 'Hospitality Chicken',
     name: 'Hospitality Chicken',
     img: hospitalityChicken,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.SOUTHERN],

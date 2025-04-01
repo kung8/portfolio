@@ -8,7 +8,7 @@ module.exports = {
     name: 'Crab Rangoon',
     img: '',
     recipeAuthor: '',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.APPETIZER],

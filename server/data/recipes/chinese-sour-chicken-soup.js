@@ -10,6 +10,8 @@ module.exports = {
     cardName: 'Sour Chicken Soup',
     name: 'Chinese Sour Chicken Soup',
     img: sourChicken,
+    recipeAuthor: 'Grandma',
+    recipeFinder: '',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

@@ -26,6 +26,8 @@ module.exports = {
     cardName: 'Banana Bread',
     name: 'Banana Bread',
     img: zoomed,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

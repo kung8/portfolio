@@ -37,6 +37,8 @@ module.exports = {
     cardName: 'Tortellini Soup',
     name: 'Turkey Meatball Spinach Tortellini Soup',
     img: ladle,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

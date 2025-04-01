@@ -13,6 +13,8 @@ module.exports = {
     cardName: 'Buttermilk Syrup',
     name: 'Buttermilk Syrup',
     img: cooked,
+    recipeAuthor: '',
+    recipeFinder: 'Camille Pockrus',
     available: true,
     recommended: true,
     category: [CATEGORIES.SAUCE, CATEGORIES.BREAKFAST],

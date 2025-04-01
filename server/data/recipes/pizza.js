@@ -81,6 +81,8 @@ module.exports = {
     cardName: 'Homemade Pizza',
     name: 'Homemade Pizza',
     img: zoomed,
+    recipeAuthor: '',
+    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

@@ -6,6 +6,8 @@ module.exports = {
     cardName: 'Fancy Lunchables',
     name: 'Fancy Lunchables',
     img: lunchables,
+    recipeAuthor: 'Kevin Ung',
+    recipeFinder: '',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.SNACK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

@@ -24,6 +24,8 @@ module.exports = {
     cardName: 'Japanese Curry',
     name: 'Japanese Curry',
     img: curry14,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

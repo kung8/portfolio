@@ -27,6 +27,8 @@ module.exports = {
     cardName: 'Marry Me Chicken',
     name: 'Marry Me Chicken',
     img: plated2,
+    recipeAuthor: '',
+    recipeFinder: 'Montana Hiltbrand',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

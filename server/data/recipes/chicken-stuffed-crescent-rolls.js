@@ -26,6 +26,8 @@ module.exports = {
     cardName: 'Chicken Crescent Rolls',
     name: 'Chicken Stuffed Crescent Rolls',
     img: opened,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

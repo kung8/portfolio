@@ -16,6 +16,8 @@ module.exports = {
     cardName: 'Mash Potatoes',
     name: 'Mash Potatoes',
     img: potatoes8,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],

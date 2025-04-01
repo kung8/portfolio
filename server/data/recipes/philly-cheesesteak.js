@@ -16,6 +16,8 @@ module.exports = {
     cardName: 'Philly Cheesesteak',
     name: 'Philly Cheesesteak',
     img: phillyCheesesteak,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

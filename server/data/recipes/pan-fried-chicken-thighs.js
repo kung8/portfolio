@@ -21,6 +21,8 @@ module.exports = {
     cardName: 'Pan-Fried Chicken Thighs',
     name: 'Pan-Fried Chicken Thighs',
     img: thigh15,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

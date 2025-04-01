@@ -37,6 +37,8 @@ module.exports = {
     cardName: 'Fresh Spring Rolls',
     name: 'Vietnamese Fresh Spring Rolls',
     img: rolls9,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER],

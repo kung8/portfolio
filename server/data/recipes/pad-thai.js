@@ -45,6 +45,8 @@ module.exports = {
     cardName: 'Pad Thai',
     name: 'Thai Pad Thai',
     img: mixedSauce2,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

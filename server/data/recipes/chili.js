@@ -39,6 +39,8 @@ module.exports = {
     cardName: 'Chili',
     name: 'Chili',
     img: pot5,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],

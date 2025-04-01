@@ -18,6 +18,8 @@ module.exports = {
     cardName: 'No Bake Cookies',
     name: 'No Bake Cookies',
     img: finished,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

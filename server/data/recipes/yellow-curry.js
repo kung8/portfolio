@@ -21,6 +21,8 @@ module.exports = {
     cardName: 'Yellow Curry',
     name: 'Thai Yellow Curry',
     img: curry17,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

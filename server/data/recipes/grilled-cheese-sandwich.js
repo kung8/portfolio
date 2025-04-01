@@ -14,6 +14,8 @@ module.exports = {
     cardName: 'Grilled Cheese',
     name: 'Grilled Cheese Sandwich',
     img: grilled6,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

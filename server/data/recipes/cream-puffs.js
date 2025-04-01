@@ -20,6 +20,8 @@ module.exports = {
     cardName: 'Cream Puffs',
     name: 'Cream Puffs',
     img: plated11,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

@@ -14,6 +14,8 @@ module.exports = {
     cardName: 'Caramel Popcorn',
     name: 'Caramel Popcorn',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SNACK, CATEGORIES.DESSERT],

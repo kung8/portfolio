@@ -46,6 +46,8 @@ module.exports = {
     cardName: 'Cherry Kolaches',
     name: 'Cherry and Cream Cheese Kolaches',
     img: kolaches26,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT, CATEGORIES.BREAKFAST],

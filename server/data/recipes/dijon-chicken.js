@@ -8,7 +8,7 @@ module.exports = {
     name: 'Dijon Chicken',
     img: '',
     recipeAuthor: '',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

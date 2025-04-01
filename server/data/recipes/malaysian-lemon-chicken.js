@@ -18,6 +18,8 @@ module.exports = {
     cardName: 'Lemon Chicken',
     name: 'Malaysian Lemon Chicken',
     img: lemonChicken,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MALAYSIAN, GENRES.ASIAN],

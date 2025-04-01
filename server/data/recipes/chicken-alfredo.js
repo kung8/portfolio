@@ -18,6 +18,8 @@ module.exports = {
     cardName: 'Chicken Alfredo',
     name: 'Chicken Alfredo',
     img: alfredo,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

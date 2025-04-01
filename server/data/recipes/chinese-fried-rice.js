@@ -29,6 +29,8 @@ module.exports = {
     cardName: 'Chinese Fried Rice',
     name: 'Chinese Fried Rice',
     img: rice9,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

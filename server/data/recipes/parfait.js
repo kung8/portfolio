@@ -13,6 +13,8 @@ module.exports = {
     cardName: 'Parfait',
     name: 'Parfait',
     img: parfait,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT, CATEGORIES.SNACK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

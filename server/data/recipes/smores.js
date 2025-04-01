@@ -10,6 +10,8 @@ module.exports = {
     cardName: 'S\'mores',
     name: 'S\'mores',
     img: smores,
+    recipeAuthor: 'Kevin Ung',
+    recipeFinder: '',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

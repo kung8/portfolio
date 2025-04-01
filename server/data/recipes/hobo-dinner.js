@@ -15,6 +15,8 @@ module.exports = {
     cardName: 'Hobo Dinner',
     name: 'Hobo Dinner',
     img: pan,
+    recipeAuthor: 'Kevin Ung',
+    recipeFinder: '',
     available: true,
     category: [CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

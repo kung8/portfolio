@@ -10,6 +10,8 @@ module.exports = {
     cardName: 'Buttered Corn',
     name: 'Buttered Corn',
     img: cooked,
+    recipeAuthor: '',
+    recipeFinder: 'Samantha Pham',
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH],

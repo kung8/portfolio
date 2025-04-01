@@ -6,6 +6,8 @@ module.exports = {
     cardName: 'Mexican Chicken Bake',
     name: 'Mexican Chicken Bake',
     img: mexicanChickenBake,
+    recipeAuthor: '',
+    recipeFinder: '',
     available: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN],

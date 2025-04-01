@@ -26,6 +26,8 @@ module.exports = {
     cardName: 'Carrot Cake',
     name: 'Carrot Cake',
     img: zoomed,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

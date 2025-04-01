@@ -10,6 +10,7 @@ module.exports = {
     cardName: 'Hawaiian Glazed Ham',
     name: 'Hawaiian Glazed Ham',
     img: ham1,
+    recipeAuthor: 'Hoku\'s Grammy',
     recipeFinder: 'Hoku\'s Grammy',
     available: true,
     recommended: true,

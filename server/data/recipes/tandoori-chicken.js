@@ -22,6 +22,8 @@ module.exports = {
     cardName: 'Tandoori Chicken',
     name: 'Tandoori Chicken',
     img: tandoori8,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

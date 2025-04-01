@@ -23,6 +23,8 @@ module.exports = {
     cardName: 'Brickle Bar',
     name: 'Brickle Bar',
     img: plated4,
+    recipeAuthor: '',
+    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

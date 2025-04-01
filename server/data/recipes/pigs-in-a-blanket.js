@@ -6,6 +6,8 @@ module.exports = {
     cardName: 'Pigs In A Blanket',
     name: 'Pigs In A Blanket',
     img: pigsInABlanket,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

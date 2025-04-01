@@ -17,6 +17,7 @@ const {
 module.exports = {
     cardName: 'Japanese Chicken Katsu',
     name: 'Japanese Chicken Katsu',
+    recipeAuthor: '',
     recipeFinder: 'Aldin Pope',
     img: katsu,
     available: true,

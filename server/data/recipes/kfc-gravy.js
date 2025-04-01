@@ -14,6 +14,8 @@ module.exports = {
     cardName: 'KFC Gravy',
     name: 'KFC Gravy',
     img: gravy5,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SAUCE],

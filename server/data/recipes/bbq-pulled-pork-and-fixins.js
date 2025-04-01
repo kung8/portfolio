@@ -32,6 +32,8 @@ module.exports = {
     cardName: 'BBQ Pulled Pork',
     name: 'BBQ Pulled Pork',
     img: finished,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.SOUTHERN, GENRES.BBQ, GENRES.AMERICAN],

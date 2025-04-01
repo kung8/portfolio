@@ -8,7 +8,7 @@ module.exports = {
     name: 'Poached Salmon with Hollandaise Sauce',
     img: '',
     recipeAuthor: '',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],

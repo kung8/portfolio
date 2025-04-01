@@ -19,6 +19,8 @@ module.exports = {
     cardName: 'Peanut Brittle',
     name: 'Peanut Brittle',
     img: plated2,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

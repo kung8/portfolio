@@ -20,6 +20,8 @@ module.exports = {
     cardName: 'Ginger Chicken',
     name: 'Chinese Ginger Chicken',
     img: plated,
+    recipeAuthor: 'Grandma',
+    recipeFinder: '',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],

@@ -17,6 +17,8 @@ module.exports = {
     cardName: 'Macaroni Salad',
     name: 'Macaroni Salad',
     img: macaroni,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],

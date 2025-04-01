@@ -13,6 +13,8 @@ module.exports = {
     cardName: 'Smoothie',
     name: 'Smoothie',
     img: smoothie,
+    recipeAuthor: 'Kevin Ung',
+    recipeFinder: '',
     available: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.SNACK, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

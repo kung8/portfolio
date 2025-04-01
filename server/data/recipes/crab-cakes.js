@@ -8,7 +8,7 @@ module.exports = {
     name: 'Crab Cakes',
     img: '',
     recipeAuthor: '',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.APPETIZER,CATEGORIES.SIDE_DISH],

@@ -34,6 +34,8 @@ module.exports = {
     cardName: 'Bibimbap',
     name: 'Korean Bibimbap',
     img: bowl,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.KOREAN, GENRES.ASIAN],

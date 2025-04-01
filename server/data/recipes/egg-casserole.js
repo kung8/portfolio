@@ -18,6 +18,8 @@ module.exports = {
     cardName: 'Egg Casserole',
     name: 'Egg Casserole',
     img: eggCasserole,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

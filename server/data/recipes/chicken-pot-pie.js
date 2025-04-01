@@ -19,6 +19,8 @@ module.exports = {
     cardName: 'Chicken Pot Pie',
     name: 'Chicken Pot Pie',
     img: slice,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.BRITISH, GENRES.WESTERN, GENRES.AMERICAN],

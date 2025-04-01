@@ -11,6 +11,8 @@ module.exports = {
     cardName: 'Kung Pao Chicken',
     name: 'Kung Pao Chicken',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

@@ -28,6 +28,8 @@ module.exports = {
     cardName: 'Khmer Red Curry',
     name: 'Khmer Red Curry',
     img: cooked2,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CAMBODIAN, GENRES.ASIAN],

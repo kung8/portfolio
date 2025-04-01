@@ -12,6 +12,8 @@ module.exports = {
     cardName: 'Chicken McNuggets',
     name: 'Chicken McNuggets',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

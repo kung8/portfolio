@@ -17,6 +17,8 @@ module.exports = {
     cardName: 'Stuffing',
     name: 'Stuffing',
     img: stuffing16,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

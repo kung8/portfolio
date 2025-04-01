@@ -13,6 +13,8 @@ module.exports = {
     cardName: 'Sweet and Sour Pork',
     name: 'Chinese Sweet and Sour Pork',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

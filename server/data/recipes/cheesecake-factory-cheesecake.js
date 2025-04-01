@@ -38,6 +38,8 @@ module.exports = {
     cardName: 'C.F. Cheesecake',
     name: 'Cheesecake Factory Cheesecake',
     img: smallSlice,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

@@ -18,6 +18,8 @@ module.exports = {
     cardName: 'Caramelized Onion',
     name: 'Caramelized Onion',
     img: caramelized,
+    recipeAuthor: '',
+    recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.TOPPING],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

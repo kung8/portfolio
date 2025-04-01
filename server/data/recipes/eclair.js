@@ -10,6 +10,8 @@ module.exports = {
     cardName: 'Eclair',
     name: 'Eclair',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH],

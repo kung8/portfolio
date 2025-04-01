@@ -15,6 +15,7 @@ module.exports = {
     cardName: 'PB Thumbprint Cookies',
     name: 'Peanut Butter Thumbprint Cookies',
     img: '',
+    recipeAuthor: '',
     recipeFinder: 'Justin Ung',
     available: true,
     recommended: false,

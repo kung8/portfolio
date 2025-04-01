@@ -20,6 +20,8 @@ module.exports = {
     cardName: 'Baked Lemon Chicken',
     name: 'Baked Lemon Chicken',
     img: full,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

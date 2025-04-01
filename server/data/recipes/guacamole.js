@@ -11,6 +11,8 @@ module.exports = {
     cardName: 'Guacamole',
     name: 'Guacamole',
     img: guacamole5,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DIP],

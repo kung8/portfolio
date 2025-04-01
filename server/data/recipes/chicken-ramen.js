@@ -31,6 +31,8 @@ module.exports = {
     cardName: 'Chicken Ramen',
     name: 'Homemade Chicken Ramen',
     img: zoomed,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

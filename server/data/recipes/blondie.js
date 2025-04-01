@@ -26,6 +26,8 @@ module.exports = {
     cardName: 'Blondie',
     name: 'Blondie',
     img: plated,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

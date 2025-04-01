@@ -23,6 +23,8 @@ module.exports = {
     cardName: 'Karaage',
     name: 'Karaage',
     img: karaage7,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.DINNER, CATEGORIES.LUNCH],

@@ -20,6 +20,8 @@ module.exports = {
     cardName: 'Kolo Mee',
     name: 'Kolo Mee',
     img: kolo5,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

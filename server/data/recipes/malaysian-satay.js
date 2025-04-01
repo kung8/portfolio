@@ -18,6 +18,8 @@ module.exports = {
     cardName: 'Malaysian Satay',
     name: 'Malaysian Satay',
     img: satay,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER],

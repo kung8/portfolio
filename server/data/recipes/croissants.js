@@ -19,6 +19,8 @@ module.exports = {
     cardName: 'Croissants',
     name: 'Croissants',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],

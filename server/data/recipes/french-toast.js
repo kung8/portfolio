@@ -20,6 +20,8 @@ module.exports = {
     cardName: 'French Toast',
     name: 'French Toast',
     img: frenchToast8,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

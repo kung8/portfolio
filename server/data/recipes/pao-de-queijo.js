@@ -26,6 +26,8 @@ module.exports = {
     cardName: 'Pao de Queijo',
     name: 'Pao de Queijo',
     img: zoomed,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],

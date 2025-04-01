@@ -36,6 +36,8 @@ module.exports = {
     cardName: 'Chocolate Mousse',
     name: 'Chocolate Mousse',
     img: topped,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

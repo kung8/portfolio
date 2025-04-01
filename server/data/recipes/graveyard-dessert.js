@@ -6,6 +6,8 @@ module.exports = {
     cardName: 'Graveyard Dessert',
     name: 'Graveyard Dessert',
     img: graveyardDessert,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

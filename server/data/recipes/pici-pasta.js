@@ -10,6 +10,7 @@ module.exports = {
     cardName: 'Pici Pasta',
     name: 'Pici Pasta',
     img: '',
+    recipeAuthor: '',
     recipeFinder: 'Chelsey Hickenlooper',
     available: true,
     recommended: false,

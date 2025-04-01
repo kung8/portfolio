@@ -12,6 +12,8 @@ module.exports = {
     cardName: 'Rosemary Lemonade',
     name: 'Rosemary Lemonade',
     img: zoomed,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DRINK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

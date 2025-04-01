@@ -45,6 +45,8 @@ module.exports = {
     cardName: 'Cafe Rio Bowl',
     name: 'Cafe Rio Bowl',
     img: cilantroRanchDressingZoomed,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN, GENRES.AMERICAN],

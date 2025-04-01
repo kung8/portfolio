@@ -7,6 +7,7 @@ module.exports = {
     cardName: 'Ants on a Log',
     name: 'Ants on a Log',
     img: side,
+    recipeAuthor: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

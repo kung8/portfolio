@@ -27,6 +27,8 @@ module.exports = {
     cardName: 'Lasagna',
     name: 'Italian Lasagna',
     img: lasagna,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],

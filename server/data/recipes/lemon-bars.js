@@ -21,6 +21,8 @@ module.exports = {
     cardName: 'Lemon Bars',
     name: 'Lemon Bars',
     img: plated2,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

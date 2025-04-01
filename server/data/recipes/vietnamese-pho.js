@@ -41,6 +41,8 @@ module.exports = {
     cardName: 'Vietnamese Pho',
     name: 'Vietnamese Pho',
     img: plated6,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

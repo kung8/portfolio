@@ -8,7 +8,7 @@ module.exports = {
     name: 'Key Lime Pie',
     img: '',
     recipeAuthor: '',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.DESSERT],

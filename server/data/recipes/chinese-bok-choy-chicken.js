@@ -28,6 +28,8 @@ module.exports = {
     cardName: 'Bok Choy Chicken',
     name: 'Bok Choy Chicken',
     img: zoomed,
+    recipeAuthor: '',
+    recipeFinder: '',
     available: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],

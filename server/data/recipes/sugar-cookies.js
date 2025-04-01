@@ -34,6 +34,8 @@ module.exports = {
     cardName: 'Sugar Cookies',
     name: 'Sugar Cookies',
     img: cookies6,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],

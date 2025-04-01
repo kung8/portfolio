@@ -9,6 +9,8 @@ module.exports = {
     cardName: 'Peruvian Chicken',
     name: 'Peruvian Chicken',
     img: plated,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.PERUVIAN, GENRES.LATIN],

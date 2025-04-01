@@ -29,6 +29,7 @@ module.exports = {
     name: 'Crescent Rolls',
     img: baked3,
     available: true,
+    recipeAuthor: 'Grandma Ward',
     recipeFinder: 'Grandma Ward',
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.AUSTRIAN],

@@ -16,6 +16,8 @@ module.exports = {
     cardName: 'Brownies',
     name: 'Brownies',
     img: plated,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

@@ -27,6 +27,8 @@ module.exports = {
     cardName: 'Pretzel',
     name: 'Pretzel',
     img: single,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT, CATEGORIES.SNACK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],

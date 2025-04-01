@@ -8,7 +8,7 @@ module.exports = {
     name: 'Javanese Chicken Coconut Curry',
     img: '',
     recipeAuthor: '',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],

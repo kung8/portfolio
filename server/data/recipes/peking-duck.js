@@ -7,6 +7,8 @@ module.exports = {
     cardName: 'Peking Duck',
     name: 'Peking Duck',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: '',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

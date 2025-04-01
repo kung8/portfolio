@@ -31,6 +31,8 @@ module.exports = {
     cardName: 'Mango Sticky Rice',
     name: 'Thai Mango Sticky Rice',
     img: mango19,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],

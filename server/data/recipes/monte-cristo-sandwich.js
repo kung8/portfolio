@@ -15,6 +15,8 @@ module.exports = {
     cardName: 'Monte Cristo Sandwich',
     name: 'Monte Cristo Sandwich',
     img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

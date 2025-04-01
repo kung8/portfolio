@@ -15,6 +15,8 @@ module.exports = {
     cardName: 'Muddy Buddies',
     name: 'Muddy Buddies',
     img: muddy11,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
