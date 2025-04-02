@@ -1,22 +1,30 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { GARLIC, LIGHT_SOY_SAUCE, CREAM_CHEESE, IMITATION_CRAB, GREEN_ONION, WORCESTERSHIRE_SAUCE, WHITE_SUGAR, REFRIGERATED_BISCUIT_DOUGH, UNSALTED_BUTTER, GARLIC_POWDER, SESAME_SEEDS, SWEET_CHILI_SAUCE } = require('./ingredients');
+
+const CRAB_FILLING_SECTION = 'Crab Filling';
+const BISCUITS_DOUGH_SECTION = 'Biscuits Dough';
+const BUTTER_TOPPING_SECTION = 'Butter Topping';
+
+const PREP_BAKING = 'Prep Baking';
+const PREP_CRAB_RANGOON = 'Prep Crab Rangoon';
+const COOK_CRAB_RANGOON = 'Cook Crab Rangoon';
 
 module.exports = {
     wip: true,
     cardName: 'Crab Rangoon',
     name: 'Crab Rangoon',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Wendy Balderas',
     recipeFinder: 'Kevin Ung',
-    available: false,
+    available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.CHINESE, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.SEAFOOD],
     type: [TYPES.FINGER_FOOD],
-    yields: { amount: 12, unit: YIELD_UNITS.DOZEN },
+    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
@@ -25,15 +33,44 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: CRAB_FILLING_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CRAB_FILLING_SECTION },
+        { ...CREAM_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'softened', section: CRAB_FILLING_SECTION },
+        { ...IMITATION_CRAB, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'finely chopped', section: CRAB_FILLING_SECTION },
+        { ...GREEN_ONION, amount: 2, unit: '', additionalDetails: 'finely sliced', section: CRAB_FILLING_SECTION },
+        { ...WORCESTERSHIRE_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CRAB_FILLING_SECTION },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CRAB_FILLING_SECTION },
+        { ...REFRIGERATED_BISCUIT_DOUGH, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: BISCUITS_DOUGH_SECTION },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: BUTTER_TOPPING_SECTION },
+        { ...GARLIC_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BUTTER_TOPPING_SECTION },
+        { ...SESAME_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BUTTER_TOPPING_SECTION },
+        { ...SWEET_CHILI_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SERVE },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: '' },
+        { name: 'oven' },
     ],
     supplies: [
-        { name: '' },
+        { name: 'baking sheet' },
+        { name: 'parchment paper' },
+        { name: 'mixing bowl' },
+        { name: 'spatula' },
+        { name: 'plate' },
+        { name: 'basting brush' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: 'Preheat the oven to 375ºF.', type: PREP_BAKING },
+        { step: 'Line a baking sheet with parchment paper.', type: PREP_BAKING },
+        { step: 'In a mixing bowl, combine the "Crab Filling" section ingredients.', type: PREP_CRAB_RANGOON },
+        { step: 'On a plate, place the biscuit dough and begin to flatten it.', type: PREP_CRAB_RANGOON },
+        { step: 'Add a spoonful of the crab filling into the center of the flattened dough.', type: PREP_CRAB_RANGOON },
+        { step: 'Fold and pinch the edges and form them into a ball.', type: PREP_CRAB_RANGOON },
+        { step: 'Place them on the baking sheet seam-side down.', type: PREP_CRAB_RANGOON },
+        { step: 'Add garlic powder to the melted butter.', type: PREP_CRAB_RANGOON },
+        { step: 'Brush with the melted butter mixture.', type: PREP_CRAB_RANGOON },
+        { step: 'Sprinkle with sesame seed.', type: PREP_CRAB_RANGOON },
+        { step: 'Bake until golden brown (about 12 to 15 minutes).', type: COOK_CRAB_RANGOON },
+        { step: 'Let cool for a few minutes.', type: COOK_CRAB_RANGOON },
+        { step: 'Enjoy these with your favorite sauce.', type: SECTIONS.SERVE },
     ]
 };

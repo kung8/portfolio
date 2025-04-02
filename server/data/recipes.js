@@ -257,7 +257,7 @@ const recipes = [
     chiveCakes,
     mangoStickyRice,
     thaiMassamanCurry, // TODO: find recipe
-    coconutChicken, // TODO: add
+    coconutChicken,
     drunkenNoodles,
 
     // INDIAN
@@ -317,7 +317,7 @@ const recipes = [
     cabbageStirFry,
     chineseBao,
     potstickers,
-    crabRangoon, // TODO: add
+    crabRangoon,
     chopSuey, // TODO: add
     fiveSpiceBlend,
 
