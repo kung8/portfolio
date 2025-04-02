@@ -77,6 +77,6 @@ module.exports = {
         { step: 'Enjoy this fresh tasting dish warm!', type: SECTIONS.SERVE, img: choy9 },
     ],
     notes: [
-        {note: 'I liked this dish but I think it ended up being colder than I would have liked. Next time I would stir fry it for 20 to 30 seconds after the sauce has thickened. If that works, I would consider recommending it for its freshness and simplicity.'}
+        { note: 'I liked this dish but I think it ended up being colder than I would have liked. Next time I would stir fry it for 20 to 30 seconds after the sauce has thickened. If that works, I would consider recommending it for its freshness and simplicity.' }
     ]
 };
