@@ -194,7 +194,7 @@ export const Recipe = ({ match }) => {
                 )}
             >
                 {item?.recipeFinder && (
-                    <h4 className="recipe-credit">Recipe referred by {item.recipeFinder}</h4>
+                    <h4 className="recipe-credit">Referred by {item.recipeFinder}</h4>
                 )}
             </NonDashboardPage.Header>
             <RecipeContext.Provider
