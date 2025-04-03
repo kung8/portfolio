@@ -208,6 +208,7 @@ const SECTIONS = {
     DECORATING: 'Decorating',
     BEEF: 'Beef',
     CHILL: 'Chill',
+    REHEAT: 'Reheat',
 };
 
 const TIME_UNITS = {

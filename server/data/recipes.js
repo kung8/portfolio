@@ -502,7 +502,7 @@ const recipes = [
     waffles,
     buttermilkSyrup,
     biscuitsAndGravy,
-    breakfastBurrito, // TODO: add
+    breakfastBurrito,
     breakfastSandwich,
     reubenSandwich,
     blt,
