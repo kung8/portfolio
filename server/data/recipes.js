@@ -108,6 +108,7 @@ const frenchCrepe = require("./recipes/french-crepe");
 const frenchOnionSoupGratinee = require("./recipes/french-onion-soup-gratinee");
 const frenchToast = require("./recipes/french-toast");
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
+const garlicButter = require("./recipes/garlic-butter");
 const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
 const garlicShrimp = require("./recipes/garlic-shrimp");
 const gelato = require("./recipes/gelato");
@@ -457,7 +458,8 @@ const recipes = [
     macaroniSalad,
     bakedBreadedChicken,
     phillyCheesesteak,
-    meatballSub, // TODO: add
+    meatballSub,
+    garlicButter,
     frenchBaguettes,
     sourdoughStarter,
     sourdoughBread,
