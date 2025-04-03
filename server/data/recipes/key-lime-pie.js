@@ -1,6 +1,11 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { EGG_YOLKS, SWEETENED_CONDENSED_MILK, KEY_LIME_JUICE, WHIPPED_CREAM, LIME, NINE_INCH_GRAHAM_CRACKER_PIE_CRUST } = require('./ingredients');
+
+const PIE_FILLING_SECTION = 'Pie Filling';
+const CRUST_SECTION = 'Crust';
+
+const PREP_PIE = 'Prep Pie';
 
 module.exports = {
     wip: true,
@@ -9,13 +14,13 @@ module.exports = {
     img: '',
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
-    available: false,
+    available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.EGG],
-    type: [TYPES.DESSERT,TYPES.PIE],
+    type: [TYPES.DESSERT, TYPES.PIE],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
@@ -25,15 +30,25 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
+        { ...EGG_YOLKS, amount: 5, unit: '', additionalDetails: 'beaten', section: PIE_FILLING_SECTION },
+        { ...SWEETENED_CONDENSED_MILK, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PIE_FILLING_SECTION },
+        { ...KEY_LIME_JUICE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PIE_FILLING_SECTION },
+        { ...NINE_INCH_GRAHAM_CRACKER_PIE_CRUST, amount: 1, unit: '', additionalDetails: '', section: CRUST_SECTION },
+        { ...WHIPPED_CREAM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...LIME, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: '' },
+        { name: 'oven' },
     ],
     supplies: [
-        { name: '' },
+        { name: 'mixing bowl' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: 'Preheat the oven to 375ºF.', type: PREP_PIE },
+        { step: 'In a mixing bowl, combine the "Pie Filling" section ingredients.', type: PREP_PIE },
+        { step: 'Pour the filling into the pie crust.', type: PREP_PIE },
+        { step: 'Bake until the filling is set (about 15 minutes).', type: SECTIONS.BAKE },
+        { step: 'Let it completely cool before slicing.', type: SECTIONS.BAKE },
+        { step: 'Top each slice with whipped cream and a lime slice.', type: SECTIONS.SERVE },
     ]
 };

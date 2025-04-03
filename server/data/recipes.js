@@ -537,7 +537,7 @@ const recipes = [
     appleTart,
     applePie,
     biscoffCookiePie,
-    keyLimePie, // TODO: add
+    keyLimePie,
     noBakeCookie,
     muddyBuddies,
     riceKrispyTreats,
