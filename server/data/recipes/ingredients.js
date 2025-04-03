@@ -476,6 +476,9 @@ const INGREDIENTS = {
         SALSA: {
             name: 'salsa', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1634233822146-5cd9c24fdab0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU5MTU4fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        SAUERKRAUT: {
+            name: 'sauerkraut', category: INGREDIENT_CATEGORY.CONDIMENTS
+        },
         SRIRACHA_SAUCE: {
             name: 'sriracha sauce', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1519420638722-a2a5749c32be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2NDc0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -937,6 +940,7 @@ const INGREDIENTS = {
         ROLLS: {
             name: 'rolls', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1672639601872-eeceb0c5c522?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxMTMxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        RYE_BREAD: { name: 'rye bread', category: INGREDIENT_CATEGORY.GRAIN },
         SHORT_GRAINED_RICE: { name: 'short-grained rice', category: INGREDIENT_CATEGORY.GRAIN },
         SOURDOUGH_BREAD: { name: 'sourdough bread', category: INGREDIENT_CATEGORY.GRAIN },
         SOURDOUGH_STARTER: { name: 'sourdough starter', category: INGREDIENT_CATEGORY.GRAIN },
