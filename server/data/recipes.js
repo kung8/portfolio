@@ -386,7 +386,7 @@ const recipes = [
     // SPANISH
     shrimpPaella,
     chickenPaella, // TODO: add
-    spanishRice, // TODO: add
+    spanishRice,
     churros,
 
     // SWEDISH

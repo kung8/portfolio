@@ -463,6 +463,7 @@ const INGREDIENTS = {
         PEANUT_BUTTER: {
             name: 'creamy peanut butter', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1615110250484-e8c3b151b957?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3MDgzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        PICANTE_SAUCE: { name: 'picante sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         PICKLES: {
             name: 'pickles', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://plus.unsplash.com/premium_photo-1675731118182-8a39012cdd3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3NjAxfA&ixlib=rb-4.0.3&q=80&w=400"
         },

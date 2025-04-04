@@ -1,6 +1,9 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { VEGETABLE_OIL, YELLOW_ONION, WHITE_RICE, CHICKEN_BROTH, PICANTE_SAUCE } = require('./ingredients');
+
+const RICE_SECTION = 'Rice';
+const COOK_RICE = 'Cook Rice';
 
 module.exports = {
     wip: true,
@@ -9,12 +12,11 @@ module.exports = {
     img: '',
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
-    available: false,
+    available: true,
     recommended: false,
-    category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
-    genre: [GENRES.LATIN,GENRES.SPANISH],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.LATIN, GENRES.SPANISH],
     method: [METHODS.SIMMER],
-    protein: [],
     type: [TYPES.RICE],
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
@@ -25,15 +27,25 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
+        { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RICE_SECTION },
+        { ...YELLOW_ONION, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: RICE_SECTION },
+        { ...WHITE_RICE, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'uncooked', section: RICE_SECTION },
+        { ...CHICKEN_BROTH, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: RICE_SECTION },
+        { ...PICANTE_SAUCE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: RICE_SECTION },
     ],
     appliances: [
-        { name: '' },
+        { name: 'stove' },
     ],
     supplies: [
-        { name: '' },
+        { name: 'large pot with lid' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: 'Over medium heat, heat oil to a large pot.', type: COOK_RICE },
+        { step: 'Add onion. Cook and stir until tender (about 5 minutes).', type: COOK_RICE },
+        { step: 'Add rice. Cook and stir until rice is golden brown.', type: COOK_RICE },
+        { step: 'Add chicken broth and picante sauce.', type: COOK_RICE },
+        { step: 'Turn heat to low.', type: COOK_RICE },
+        { step: 'Cover and simmer until there is no more liquid (about 15 to 20 minutes).', type: COOK_RICE },
+        { step: 'Enjoy this with your favorite toppings or main dishes.', type: SECTIONS.SERVE },
     ]
 };
