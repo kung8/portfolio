@@ -10,7 +10,6 @@ const moreCookedZoomed = '../assets/Products/american-omelette-plated-more-cooke
 const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     EGG,
-    COLD_WATER,
     SALT,
     BLACK_PEPPER,
     YELLOW_ONION,
@@ -20,6 +19,7 @@ const {
     BASIL,
     UNSALTED_BUTTER,
     MUSHROOM,
+    WATER,
 } = require('./ingredients');
 
 const FLIPPING_METHOD = 'Flipping Method';
@@ -42,7 +42,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...EGG, amount: 2, unit: '', additionalDetails: '', optional: false },
-        { ...COLD_WATER, amount: '', unit: '', additionalDetails: '', optional: false },
+        { ...WATER, amount: '', unit: '', additionalDetails: 'cold', optional: false },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
         { ...YELLOW_ONION, amount: 1/4, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', optional: false },

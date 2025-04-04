@@ -9,9 +9,9 @@ const {
     VEGETABLE_OIL,
     LEMON_JUICE,
     WHITE_SUGAR,
-    WARM_WATER,
     SALT,
     SESAME_SEEDS,
+    WATER,
 } = require('./ingredients');
 
 module.exports = {
@@ -43,7 +43,7 @@ module.exports = {
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for deep-frying', section: SECTIONS.MAIN },
         { ...LEMON_JUICE, amount: 15, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...WHITE_SUGAR, amount: 5, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WARM_WATER, amount: 25, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WATER, amount: 25, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: SECTIONS.SAUCE },
         { ...CORNSTARCH, amount: 5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SALT, amount: 5, unit: INGREDIENT_UNITS.PINCH, additionalDetails: 'to taste', section: SECTIONS.SAUCE },
         { ...SESAME_SEEDS, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'topping', section: SECTIONS.TOPPINGS },

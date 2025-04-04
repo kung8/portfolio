@@ -6,11 +6,8 @@ const water = '../assets/Products/sourdough-starter-feeding-water.jpeg';
 const mix = '../assets/Products/sourdough-starter-feeding-mix.jpeg';
 const mixed = '../assets/Products/sourdough-starter-feeding-mixed.jpeg';
 
-const {
-    ALL_PURPOSE_FLOUR,
-    WARM_WATER,
-} = require('./ingredients');
-const { INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { ALL_PURPOSE_FLOUR, WATER } = require('./ingredients');
+const { INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 
 const CREATING_STARTER = 'Creating Starter';
 const FEEDING_STARTER = 'Feeding Starter';
@@ -30,9 +27,9 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: 7 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'divided', section: CREATING_STARTER },
-        { ...WARM_WATER, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'divided', section: CREATING_STARTER },
+        { ...WATER, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm and divided', section: CREATING_STARTER },
         { ...ALL_PURPOSE_FLOUR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FEEDING_STARTER },
-        { ...WARM_WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FEEDING_STARTER },
+        { ...WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: FEEDING_STARTER },
     ],
     supplies: [
         { name: 'jar' },

@@ -26,8 +26,8 @@ const {
     STRAWBERRY_JAM,
     THAI_CHILI_PEPPER,
     VEGETABLE_OIL,
-    WARM_WATER,
-    WHITE_SUGAR
+    WHITE_SUGAR,
+    WATER
 } = require('./ingredients');
 
 const SWEET_AND_TANGY_SAUCE = 'Sweet and Tangy Sauce';
@@ -65,7 +65,7 @@ module.exports = {
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRY_RUB },
         { ...BAKING_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_RUB },
 
-        { ...WARM_WATER, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_RUB },
+        { ...WATER, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.WET_RUB },
         { ...CORNSTARCH, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_RUB },
         { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_RUB },
         { ...BAKING_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.WET_RUB },
@@ -86,7 +86,7 @@ module.exports = {
         { ...RICE_WINE_VINEGAR, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SPICY_SAUCE },
         { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SPICY_SAUCE },
         { ...KETCHUP, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SPICY_SAUCE },
-        { ...WARM_WATER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SPICY_SAUCE },
+        { ...WATER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: SWEET_AND_SPICY_SAUCE },
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SWEET_AND_SPICY_SAUCE },
         { ...GINGER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'grated', section: SWEET_AND_SPICY_SAUCE },
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEET_AND_SPICY_SAUCE },

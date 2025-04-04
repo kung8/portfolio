@@ -14,12 +14,12 @@ const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UN
 const {
     TAPIOCA_STARCH,
     MILK,
-    WARM_WATER,
     VEGETABLE_OIL,
     PARMESAN_CHEESE,
     MOZZARELLA_CHEESE,
     EGG,
     SALT,
+    WATER,
 } = require('./ingredients');
 
 module.exports = {
@@ -44,7 +44,7 @@ module.exports = {
     ingredients: [
         { ...TAPIOCA_STARCH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'plus some for thickening', section: SECTIONS.MAIN },
         { ...MILK, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WARM_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.MAIN },
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '6 Tbsp', section: SECTIONS.MAIN },
         { ...PARMESAN_CHEESE, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
         { ...MOZZARELLA_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },

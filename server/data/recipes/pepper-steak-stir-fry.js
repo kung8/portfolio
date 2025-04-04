@@ -15,7 +15,6 @@ const {
     YELLOW_ONION,
     GARLIC,
     LIGHT_SOY_SAUCE,
-    WARM_WATER,
     SALT,
     BLACK_PEPPER,
     VEGETABLE_OIL,
@@ -23,6 +22,7 @@ const {
     GINGER,
     WHITE_SUGAR,
     CORNSTARCH,
+    WATER,
 } = require('./ingredients');
 
 module.exports = {
@@ -60,7 +60,7 @@ module.exports = {
         { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...WHITE_SUGAR, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...CORNSTARCH, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WARM_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stove' },

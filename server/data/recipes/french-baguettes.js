@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, COLD_WATER, SALT, YEAST } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, SALT, YEAST, WATER } = require('./ingredients');
 
 const BAGUETTES = 'Baguettes';
 
@@ -24,7 +24,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BAGUETTES },
-        { ...COLD_WATER, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BAGUETTES },
+        { ...WATER, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: BAGUETTES },
         { ...SALT, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BAGUETTES },
         { ...YEAST, amount: 9 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BAGUETTES },
     ],

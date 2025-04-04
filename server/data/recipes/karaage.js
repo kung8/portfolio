@@ -7,7 +7,7 @@ const karaage6 = '../assets/Products/karaage-6.jpeg';
 const karaage7 = '../assets/Products/karaage-7.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, SALT, BLACK_PEPPER, GINGER, GARLIC, LIGHT_SOY_SAUCE, VEGETABLE_OIL, POTATO_STARCH, ALL_PURPOSE_FLOUR, LEMON, KEWPIE_MAYONNAISE, MIRIN, EGG, WARM_WATER } = require('./ingredients');
+const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, SALT, BLACK_PEPPER, GINGER, GARLIC, LIGHT_SOY_SAUCE, VEGETABLE_OIL, POTATO_STARCH, ALL_PURPOSE_FLOUR, LEMON, KEWPIE_MAYONNAISE, MIRIN, EGG, WATER } = require('./ingredients');
 
 const ZAKU_ZAKU_BREADCRUMBS = 'Zaku Zaku Breadcrumbs';
 
@@ -51,7 +51,7 @@ module.exports = {
         { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
 
         { ...POTATO_STARCH, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ZAKU_ZAKU_BREADCRUMBS },
-        { ...WARM_WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ZAKU_ZAKU_BREADCRUMBS },
+        { ...WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: ZAKU_ZAKU_BREADCRUMBS },
 
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: DEEP_FRY },
         { ...LEMON, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },

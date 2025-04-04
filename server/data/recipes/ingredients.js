@@ -166,9 +166,6 @@ const INGREDIENTS = {
         COFFEE: { name: 'coffee', category: INGREDIENT_CATEGORY.BEVERAGES },
         COKE: { name: 'coke', category: INGREDIENT_CATEGORY.BEVERAGES },
         COKE_ZERO: { name: 'coke zero', category: INGREDIENT_CATEGORY.BEVERAGES },
-        COLD_WATER: {
-            name: 'cold water', category: INGREDIENT_CATEGORY.BEVERAGES, img: "https://images.unsplash.com/photo-1521207418485-99c705420785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDYwNDAzfA&ixlib=rb-4.0.3&q=80&w=400"
-        },
         CRANBERRY_JUICE: { name: 'cranberry juice', category: INGREDIENT_CATEGORY.BEVERAGES },
         CRAN_RASPBERRY_JUICE: { name: 'cran raspberry juice', category: INGREDIENT_CATEGORY.BEVERAGES },
         CREAM_SODA: { name: 'cream soda', category: INGREDIENT_CATEGORY.BEVERAGES },
@@ -195,14 +192,8 @@ const INGREDIENTS = {
             name: 'hot water', category: INGREDIENT_CATEGORY.BEVERAGES, img: "https://images.unsplash.com/photo-1521207418485-99c705420785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDYwNDAzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         ICE: { name: 'ice', category: INGREDIENT_CATEGORY.BEVERAGES },
-        ICE_COLD_WATER: {
-            name: 'ice cold water', category: INGREDIENT_CATEGORY.BEVERAGES, img: "https://images.unsplash.com/photo-1521207418485-99c705420785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDYwNDAzfA&ixlib=rb-4.0.3&q=80&w=400"
-        },
         KOOLAID: { name: 'koolaid', category: INGREDIENT_CATEGORY.BEVERAGES },
         LEMON_LIME: { name: 'lemon lime', category: INGREDIENT_CATEGORY.BEVERAGES },
-        LUKEWARM_WATER: {
-            name: 'lukewarm water', category: INGREDIENT_CATEGORY.BEVERAGES, img: "https://images.unsplash.com/photo-1521207418485-99c705420785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDYwNDAzfA&ixlib=rb-4.0.3&q=80&w=400"
-        },
         MANGO_JUICE: { name: 'mango juice', category: INGREDIENT_CATEGORY.BEVERAGES },
         MATCHA_TEA: { name: 'matcha tea', category: INGREDIENT_CATEGORY.BEVERAGES },
         MILO: { name: 'milo', category: INGREDIENT_CATEGORY.BEVERAGES },
@@ -241,10 +232,7 @@ const INGREDIENTS = {
         },
         SUNKIST: { name: 'sunkist', category: INGREDIENT_CATEGORY.BEVERAGES },
         TEA: { name: 'tea', category: INGREDIENT_CATEGORY.BEVERAGES },
-        WARM_WATER: {
-            name: 'warm water', category: INGREDIENT_CATEGORY.BEVERAGES, img: "https://images.unsplash.com/photo-1521207418485-99c705420785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDYwNDAzfA&ixlib=rb-4.0.3&q=80&w=400"
-        },
-        WATER: { name: 'water', category: INGREDIENT_CATEGORY.BEVERAGES },
+        WATER: { name: 'water', category: INGREDIENT_CATEGORY.BEVERAGES, img: "https://images.unsplash.com/photo-1521207418485-99c705420785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDYwNDAzfA&ixlib=rb-4.0.3&q=80&w=400" },
         WATERMELON_JUICE: {
             name: 'watermelon juice', category: INGREDIENT_CATEGORY.BEVERAGES, img: "https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1ODMwfA&ixlib=rb-4.0.3&q=80&w=400"
         },

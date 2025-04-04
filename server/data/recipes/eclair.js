@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { COLD_WATER, UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, WHOLE_MILK, EGG_YOLKS, HEAVY_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, CAKE_FLOUR, VANILLA_BEAN } = require('./ingredients');
+const { UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, WHOLE_MILK, EGG_YOLKS, HEAVY_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, CAKE_FLOUR, VANILLA_BEAN, WATER } = require('./ingredients');
 
 const PASTRY = 'Pastry';
 const CHOCOLATE_GLAZE = 'Chocolate Glaze';
@@ -27,7 +27,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...COLD_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PASTRY },
+        { ...WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: PASTRY },
         { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PASTRY },
         { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PASTRY },
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PASTRY },

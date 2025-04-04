@@ -9,7 +9,6 @@ const {
     CRUSHED_TOMATOES,
     TOMATO_PASTE,
     TOMATO_SAUCE,
-    WARM_WATER,
     WHITE_SUGAR,
     BASIL,
     FENNEL_SEEDS,
@@ -21,6 +20,7 @@ const {
     EGG,
     MOZZARELLA_CHEESE,
     PARMESAN_CHEESE,
+    WATER,
 } = require('./ingredients');
 
 module.exports = {
@@ -49,7 +49,7 @@ module.exports = {
         { ...CRUSHED_TOMATOES, amount: 28, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
         { ...TOMATO_PASTE, amount: '', unit: '', additionalDetails: '', optional: false },
         { ...TOMATO_SAUCE, amount: 13, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
-        { ...WARM_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', optional: false },
         { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
         { ...BASIL, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
         { ...FENNEL_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },

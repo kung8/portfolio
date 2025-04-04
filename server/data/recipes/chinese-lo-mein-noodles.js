@@ -20,11 +20,11 @@ const {
     SESAME_OIL,
     DARK_SOY_SAUCE,
     OYSTER_SAUCE,
-    WARM_WATER,
     LO_MEIN_NOODLES,
     VEGETABLE_OIL,
     BROCCOLI,
     GARLIC,
+    WATER,
 } = require('./ingredients');
 
 const BEEF = 'Beef';
@@ -62,7 +62,7 @@ module.exports = {
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...WHITE_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SHAOXING_WINE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WARM_WATER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WATER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: SECTIONS.SAUCE },
 
         { ...LO_MEIN_NOODLES, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
         { ...VEGETABLE_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },

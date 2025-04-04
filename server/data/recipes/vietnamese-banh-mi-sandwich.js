@@ -17,7 +17,6 @@ const {
     GARLIC_POWDER,
     GROUND_PORK,
     HOT_WATER,
-    ICE_COLD_WATER,
     MAGGI_SEASONING,
     MAYONNAISE,
     OLIVE_OIL,
@@ -34,8 +33,8 @@ const {
     VITAMIN_C_TABLETS,
     WHITE_PEPPER,
     WHITE_SUGAR,
-    WARM_WATER,
     YEAST,
+    WATER,
 } = require('./ingredients');
 
 const PORK_LOAF = 'Pork Loaf';
@@ -63,7 +62,7 @@ module.exports = {
         { label: 'Pickled Daikon and Carrots', link: 'https://www.simplyrecipes.com/recipes/vietnamese_daikon_and_carrot_pickles/' },
     ],
     ingredients: [
-        { ...WARM_WATER, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BREAD },
+        { ...WATER, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.BREAD },
         { ...BREAD_FLOUR, amount: 8 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BREAD },
         { ...YEAST, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BREAD },
         { ...WHITE_SUGAR, amount: 5 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BREAD },
@@ -80,7 +79,7 @@ module.exports = {
         { ...FISH_SAUCE, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PORK_LOAF },
         { ...BAKING_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PORK_LOAF },
         { ...WHITE_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PORK_LOAF },
-        { ...ICE_COLD_WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PORK_LOAF },
+        { ...WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'ice cold', section: PORK_LOAF },
         { ...BANANA_LEAF, amount: 4, unit: INGREDIENT_UNITS.PIECE, additionalDetails: '', section: PORK_LOAF },
         { ...TWINE, amount: 4, unit: INGREDIENT_UNITS.PIECE, additionalDetails: '', section: PORK_LOAF },
         { ...SALT, amount: '', unit: '', additionalDetails: 'for boiling', section: PORK_LOAF },

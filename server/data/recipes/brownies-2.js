@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { WHITE_SUGAR, ALL_PURPOSE_FLOUR, COCOA_POWDER, POWDERED_SUGAR, SEMI_SWEET_CHOCOLATE_CHIPS, SEA_SALT, EGG, OLIVE_OIL, WARM_WATER, VANILLA_EXTRACT, CANOLA_OIL } = require('./ingredients');
+const { WHITE_SUGAR, ALL_PURPOSE_FLOUR, COCOA_POWDER, POWDERED_SUGAR, SEMI_SWEET_CHOCOLATE_CHIPS, SEA_SALT, EGG, VANILLA_EXTRACT, CANOLA_OIL, WATER } = require('./ingredients');
 
 const DRY_SECTION = 'Dry';
 const WET_SECTION = 'Wet';
@@ -38,7 +38,7 @@ module.exports = {
 
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: WET_SECTION },
         { ...CANOLA_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_SECTION },
-        { ...WARM_WATER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: WET_SECTION },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: WET_SECTION },
         { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WET_SECTION },
     ],
     appliances: [

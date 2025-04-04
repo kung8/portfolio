@@ -19,7 +19,7 @@ const cakes18 = '../assets/Products/chive-cakes-18.jpeg';
 const cakes19 = '../assets/Products/chive-cakes-19.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { TAPIOCA_STARCH, HOT_WATER, VEGETABLE_OIL, SALT, POWDERED_SUGAR, BAKING_SODA, PEANUT_OIL, DARK_SOY_SAUCE, WHITE_VINEGAR, RED_PEPPER_FLAKES, GARLIC, RICE_FLOUR, GLUTINOUS_RICE_FLOUR, GARLIC_CHIVE, LUKEWARM_WATER, UNSALTED_PEANUTS } = require('./ingredients');
+const { TAPIOCA_STARCH, HOT_WATER, VEGETABLE_OIL, SALT, POWDERED_SUGAR, BAKING_SODA, PEANUT_OIL, DARK_SOY_SAUCE, WHITE_VINEGAR, RED_PEPPER_FLAKES, GARLIC, RICE_FLOUR, GLUTINOUS_RICE_FLOUR, GARLIC_CHIVE, UNSALTED_PEANUTS, WATER } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
 const CHIVE_SECTION = 'Chive';
@@ -57,7 +57,7 @@ module.exports = {
         { ...TAPIOCA_STARCH, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
         { ...HOT_WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiling', section: DOUGH_SECTION },
         { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...LUKEWARM_WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: DOUGH_SECTION },
 
         { ...GARLIC_CHIVE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '1/2 inch slices', section: CHIVE_SECTION },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHIVE_SECTION },

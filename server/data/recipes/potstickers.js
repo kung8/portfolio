@@ -21,7 +21,7 @@ const {
     SALT,
     RICE_WINE_VINEGAR,
     VEGETABLE_OIL,
-    WARM_WATER,
+    WATER,
 } = require('./ingredients');
 
 const DIPPING_SAUCE = 'Dipping Sauce';
@@ -63,7 +63,7 @@ module.exports = {
         { ...RICE_WINE_VINEGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE },
         { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE },
         { ...VEGETABLE_OIL, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WARM_WATER, amount: 8, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'for steaming', section: SECTIONS.MAIN },
+        { ...WATER, amount: 8, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'for steaming', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'stove' },

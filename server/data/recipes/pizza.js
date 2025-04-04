@@ -32,7 +32,6 @@ const {
     BREAD_FLOUR,
     SALT,
     HONEY,
-    WARM_WATER,
     OLIVE_OIL,
     MOZZARELLA_CHEESE,
     RED_ONION,
@@ -62,6 +61,7 @@ const {
     RED_PEPPER_FLAKES,
     BASIL_LEAF,
     BUFFALO_SAUCE,
+    WATER,
 } = require('./ingredients');
 
 const BBQ_CHICKEN_PIZZA = 'BBQ Chicken Pizza';
@@ -101,7 +101,7 @@ module.exports = {
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...YEAST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WARM_WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
 
         // BBQ CHICKEN

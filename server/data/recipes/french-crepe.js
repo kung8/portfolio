@@ -12,7 +12,6 @@ const {
     UNSALTED_BUTTER,
     SALT,
     VANILLA_EXTRACT,
-    WARM_WATER,
     STRAWBERRY,
     BLUEBERRY,
     BANANA,
@@ -23,6 +22,7 @@ const {
     SYRUP,
     POWDERED_SUGAR,
     LEMON_JUICE,
+    WATER,
 } = require('./ingredients');
 
 const MELTED_CHOCOLATE = 'Melted chocolate';
@@ -51,7 +51,7 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WARM_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.MAIN },
         { ...STRAWBERRY, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...BLUEBERRY, amount: '', unit: '', additionalDetails: 'halved', section: SECTIONS.TOPPINGS },
         { ...BANANA, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },

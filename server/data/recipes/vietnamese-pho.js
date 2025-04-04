@@ -28,13 +28,13 @@ const {
     SRIRACHA_SAUCE,
     YELLOW_ONION,
     GINGER,
-    COLD_WATER,
     CORIANDER,
     CLOVES,
     FISH_SAUCE,
     HOISIN_SAUCE,
     RED_CHILI_PASTE,
     CINNAMON_STICK,
+    WATER,
 } = require('./ingredients');
 
 module.exports = {
@@ -60,7 +60,7 @@ module.exports = {
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'quartered', section: SECTIONS.BROTH },
         { ...GINGER, amount: 4, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'peeled, halved, and halved-lengthwise', section: SECTIONS.BROTH },
         { ...BEEF_BROTH, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
-        { ...COLD_WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: SECTIONS.BROTH },
         { ...CORIANDER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BROTH },
         { ...CLOVES, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.BROTH },
         { ...FISH_SAUCE, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BROTH },

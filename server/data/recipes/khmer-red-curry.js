@@ -18,10 +18,10 @@ const {
     COCONUT_MILK,
     LEMONGRASS,
     KAFFIR_LIME_LEAF,
-    WARM_WATER,
     SALT,
     BLACK_PEPPER,
     RUSSET_POTATO,
+    WATER,
 } = require('./ingredients');
 
 module.exports = {
@@ -50,7 +50,7 @@ module.exports = {
         { ...COCONUT_MILK, amount: 13.5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...LEMONGRASS, amount: '', unit: '', additionalDetails: 'diagonally sliced', section: SECTIONS.MAIN },
         { ...KAFFIR_LIME_LEAF, amount: 12, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WARM_WATER, amount: '', unit: '', additionalDetails: 'to thin', section: SECTIONS.MAIN },
+        { ...WATER, amount: '', unit: '', additionalDetails: 'warm', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],

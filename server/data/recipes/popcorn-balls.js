@@ -8,7 +8,7 @@ const unmeltedZoomed = '../assets/Products/popcorn-balls-unmelted-zoomed.jpeg';
 const baggiesZoomed = '../assets/Products/popcorn-ball-in-baggies-zoomed.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { POPCORN, CORN_SYRUP, UNSALTED_BUTTER, COLD_WATER, POWDERED_SUGAR, MINI_MARSHMALLOWS, COOKING_SPRAY } = require('./ingredients');
+const { POPCORN, CORN_SYRUP, UNSALTED_BUTTER, POWDERED_SUGAR, MINI_MARSHMALLOWS, COOKING_SPRAY, WATER } = require('./ingredients');
 
 module.exports = {
     cardName: 'Popcorn Balls',
@@ -32,7 +32,7 @@ module.exports = {
         { ...POPCORN, amount: 5, unit: INGREDIENT_UNITS.QUART, additionalDetails: 'plain', section: SECTIONS.MAIN },
         { ...CORN_SYRUP, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COLD_WATER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'cold', section: SECTIONS.MAIN },
         { ...POWDERED_SUGAR, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...MINI_MARSHMALLOWS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },

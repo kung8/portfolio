@@ -12,7 +12,7 @@ const sliced = '../assets/Products/apple-pie-sliced.jpeg';
 const sugars = '../assets/Products/apple-pie-sugars.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { GRANNY_SMITH_APPLE, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHITE_SUGAR, BROWN_SUGAR, COLD_WATER, DOUBLE_CRUST_PIE_CRUST } = require('./ingredients');
+const { GRANNY_SMITH_APPLE, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHITE_SUGAR, BROWN_SUGAR, DOUBLE_CRUST_PIE_CRUST, WATER } = require('./ingredients');
 
 module.exports = {
     cardName: 'Apple Pie',
@@ -39,7 +39,7 @@ module.exports = {
         { ...ALL_PURPOSE_FLOUR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: '' },
         { ...WHITE_SUGAR, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
         { ...BROWN_SUGAR, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...COLD_WATER, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...WATER, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: '' },
         { ...DOUBLE_CRUST_PIE_CRUST, amount: 1, unit: '', additionalDetails: 'thawed', section: '' },
     ],
     appliances: [

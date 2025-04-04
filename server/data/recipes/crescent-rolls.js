@@ -19,7 +19,7 @@ const dough2 = '../assets/Products/crescent-rolls-dough-2.jpeg';
 const balls = '../assets/Products/crescent-rolls-dough-balls.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { LUKEWARM_WATER, YEAST, WHITE_SUGAR, EVAPORATED_MILK, COLD_WATER, SALT, UNSALTED_BUTTER, EGG, ALL_PURPOSE_FLOUR } = require('./ingredients');
+const { YEAST, WHITE_SUGAR, EVAPORATED_MILK, SALT, UNSALTED_BUTTER, EGG, ALL_PURPOSE_FLOUR, WATER } = require('./ingredients');
 
 const YEAST_MIXTURE = 'Yeast Mixture';
 const LIQUID_MIXTURE = 'Liquid Mixture';
@@ -41,11 +41,11 @@ module.exports = {
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     separated: true,
     ingredients: [
-        { ...LUKEWARM_WATER, amount: 3 / 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE },
+        { ...WATER, amount: 3 / 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: YEAST_MIXTURE },
         { ...YEAST, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: YEAST_MIXTURE },
         { ...WHITE_SUGAR, amount: 7, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: YEAST_MIXTURE },
         { ...EVAPORATED_MILK, amount: 1, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', section: LIQUID_MIXTURE },
-        { ...COLD_WATER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: LIQUID_MIXTURE },
+        { ...WATER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: LIQUID_MIXTURE },
         { ...SALT, amount: 9 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...WHITE_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },

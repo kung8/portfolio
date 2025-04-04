@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { CHICKEN_BREAST, BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, WHITE_SUGAR, ALL_PURPOSE_FLOUR, WHITE_PEPPER, CELERY_POWDER, CORNSTARCH, BAKING_POWDER, BAKING_SODA, EGG, COLD_WATER, ROOM_TEMPERATURE_WATER, VEGETABLE_OIL } = require('./ingredients');
+const { CHICKEN_BREAST, BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, WHITE_SUGAR, ALL_PURPOSE_FLOUR, WHITE_PEPPER, CELERY_POWDER, CORNSTARCH, BAKING_POWDER, BAKING_SODA, EGG, ROOM_TEMPERATURE_WATER, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const FLOUR_DREDGING_STATION = 'Flour Dredging Station';
 const WET_BATTER_STATION = 'Wet Batter Station';
@@ -46,7 +46,7 @@ module.exports = {
         { ...BAKING_POWDER, amount: 5 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TEMPURA_BATTER_STATION },
         { ...BAKING_SODA, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TEMPURA_BATTER_STATION },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: TEMPURA_BATTER_STATION },
-        { ...COLD_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TEMPURA_BATTER_STATION },
+        { ...WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: TEMPURA_BATTER_STATION },
 
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: DEEP_FRY },
     ],

@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { LIGHT_SOY_SAUCE, EGG, ALL_PURPOSE_FLOUR, CORNSTARCH, PORK_SHOULDER, GARLIC_SALT, KETCHUP, BROWN_SUGAR, WHITE_VINEGAR, SALT, COLD_WATER, RED_BELL_PEPPER, YELLOW_BELL_PEPPER, GREEN_BELL_PEPPER, RED_ONION, YELLOW_ONION, PINEAPPLE, VEGETABLE_OIL } = require('./ingredients');
+const { LIGHT_SOY_SAUCE, EGG, ALL_PURPOSE_FLOUR, CORNSTARCH, PORK_SHOULDER, GARLIC_SALT, KETCHUP, BROWN_SUGAR, WHITE_VINEGAR, SALT, RED_BELL_PEPPER, YELLOW_BELL_PEPPER, GREEN_BELL_PEPPER, RED_ONION, YELLOW_ONION, PINEAPPLE, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const PORK_MARINADE = 'Pork Marinade';
 const SWEET_AND_SOUR_SAUCE = 'Sweet and Sour Sauce';
@@ -42,7 +42,7 @@ module.exports = {
         { ...WHITE_VINEGAR, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
         { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
-        { ...COLD_WATER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
+        { ...WATER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'cold', section: SWEET_AND_SOUR_SAUCE },
 
         { ...RED_BELL_PEPPER, amount: 1 / 4, unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },
         { ...YELLOW_BELL_PEPPER, amount: 1 / 4, unit: '', additionalDetails: 'chopped', section: FRUIT_AND_VEGGIES },

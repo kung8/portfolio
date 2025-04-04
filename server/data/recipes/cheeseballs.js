@@ -8,13 +8,13 @@ const {
     BREAD_FLOUR,
     SALT,
     HONEY,
-    WARM_WATER,
     OLIVE_OIL,
     MOZZARELLA_CHEESE,
     UNSALTED_BUTTER,
     GARLIC,
     YEAST,
     MARINARA_SAUCE,
+    WATER,
 } = require('./ingredients');
 
 module.exports = {
@@ -37,7 +37,7 @@ module.exports = {
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...YEAST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WARM_WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room-temperature', section: SECTIONS.DOUGH },
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...MOZZARELLA_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },

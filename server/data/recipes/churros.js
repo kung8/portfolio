@@ -5,7 +5,7 @@ const churros4 = '../assets/Products/churros-4.jpeg';
 const churros5 = '../assets/Products/churros-5.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { WARM_WATER, UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, VANILLA_EXTRACT, VEGETABLE_OIL, CINNAMON } = require('./ingredients');
+const { UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, VANILLA_EXTRACT, VEGETABLE_OIL, CINNAMON, WATER } = require('./ingredients');
 
 const CHURROS_SECTION = 'Churros';
 const COATING = 'Coating';
@@ -33,7 +33,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...WARM_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHURROS_SECTION },
+        { ...WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: CHURROS_SECTION },
         { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced cubes', section: CHURROS_SECTION },
         { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHURROS_SECTION },
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHURROS_SECTION },

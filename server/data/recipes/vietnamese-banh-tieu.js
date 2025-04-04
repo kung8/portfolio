@@ -3,13 +3,13 @@ const flat = '../assets/Products/banh-tieu-flat.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
     BREAD_FLOUR,
-    WARM_WATER,
     WHITE_SUGAR,
     SALT,
     YEAST,
     BAKING_POWDER,
     SESAME_SEEDS,
     VEGETABLE_OIL,
+    WATER,
 } = require('./ingredients');
 
 module.exports = {
@@ -30,7 +30,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...BREAD_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WARM_WATER, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WATER, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.DOUGH },
         { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...YEAST, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },

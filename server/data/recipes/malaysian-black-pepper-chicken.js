@@ -18,12 +18,12 @@ const {
     BLACK_PEPPER,
     OYSTER_SAUCE,
     SWEET_SOY_SAUCE,
-    COLD_WATER,
     CORNSTARCH,
     VEGETABLE_OIL,
     JASMINE_RICE,
     CILANTRO,
     WHITE_SUGAR,
+    WATER,
 } = require('./ingredients');
 
 module.exports = {
@@ -58,7 +58,7 @@ module.exports = {
         { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SWEET_SOY_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COLD_WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: SECTIONS.MAIN },
         { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...WHITE_SUGAR, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
