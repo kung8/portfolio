@@ -22,6 +22,7 @@ const {
     SESAME_SEEDS,
     WHITE_VINEGAR,
     JASMINE_RICE,
+    WATER
 } = require('./ingredients');
 
 const BEEF = 'Beef';
