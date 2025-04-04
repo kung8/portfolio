@@ -244,6 +244,7 @@ const INGREDIENTS = {
         WARM_WATER: {
             name: 'warm water', category: INGREDIENT_CATEGORY.BEVERAGES, img: "https://images.unsplash.com/photo-1521207418485-99c705420785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDYwNDAzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        WATER: { name: 'water', category: INGREDIENT_CATEGORY.BEVERAGES },
         WATERMELON_JUICE: {
             name: 'watermelon juice', category: INGREDIENT_CATEGORY.BEVERAGES, img: "https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1ODMwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
