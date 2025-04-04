@@ -52,12 +52,13 @@ const INGREDIENTS = {
             name: 'food coloring', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1543495321-12cafe49a224?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU2ODY4fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         GLUTINOUS_RICE_FLOUR: { name: 'glutinous rice flour', category: INGREDIENT_CATEGORY.BAKING },
-        NINE_INCH_GRAHAM_CRACKER_PIE_CRUST: { name: '9-inch graham cracker pie crust', category: INGREDIENT_CATEGORY.BAKING },
+        MACADAMIA_NUT: { name: 'macadamia nut', category: INGREDIENT_CATEGORY.BAKING },
         MERINGUE_POWDER: { name: 'meringue powder', category: INGREDIENT_CATEGORY.BAKING },
         MILK_CHOCOLATE: {
             name: 'milk chocolate', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1591798153699-4b0bd9d57e79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc0MjUzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         MOLASSES: { name: 'molasses', category: INGREDIENT_CATEGORY.BAKING },
+        NINE_INCH_GRAHAM_CRACKER_PIE_CRUST: { name: '9-inch graham cracker pie crust', category: INGREDIENT_CATEGORY.BAKING },
         PECANS: {
             name: 'pecans', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1515544699701-86e5f26b66d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU3MzY2fA&ixlib=rb-4.0.3&q=80&w=400"
         },

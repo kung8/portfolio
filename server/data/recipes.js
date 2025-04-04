@@ -319,7 +319,7 @@ const recipes = [
     chineseBao,
     potstickers,
     crabRangoon,
-    chopSuey, // TODO: add
+    chopSuey,
     fiveSpiceBlend,
 
 
@@ -333,7 +333,7 @@ const recipes = [
     malaysianBlackPepperChicken,
 
     // INDONESIAN
-    javaneseChickenCoconutCurry, // TODO: add (This is to pour over the Ayam Goreng dish)
+    javaneseChickenCoconutCurry, // (This is to pour over the Ayam Goreng dish)
 
     // KHMER
     khmerRedCurry,
