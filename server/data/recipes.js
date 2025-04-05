@@ -467,7 +467,7 @@ const recipes = [
     hospitalityChicken,
     jambalaya,
     fishSticksWithTartarSauce, // TODO: find recipe
-    cajunShrimp, // TODO: add
+    cajunShrimp,
     jumboShrimpParmesan, // TODO: add
     garlicShrimp, // TODO: add
     crabCakes, // TODO: add
