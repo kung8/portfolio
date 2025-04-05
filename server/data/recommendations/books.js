@@ -25,6 +25,50 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: IN_PROGRESS,
+            title: "Age of Heroes",
+            author: ["Brandon Sanderson"],
+            source: ["Alo Tuaua"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "Spook remembered Elend's words well, for he'd warned that if the people founded their new government on hatred and bloodshed, it would consume itself with fear, jealousy, and chaos.",
+                    pages: [102],
+                    thoughts: "We need to be careful about being consumed in hatred. We can create hostility and fear in our lives and in the lives of others around us if aren't careful.",
+                    context: "As Spook is observing the city of Urteau's current state to get recon information back to the team, he sees the chaos and fear that the people are living in. The government is killing anyone who has any noble blood in them."
+                },
+                {
+                    text: "'There has to be a balance, Vin,' he said. 'Somehow we'll find it. The balance between who we wish to be and who we need to be.' He sighed. 'But for now,' he said, looking to the canal, 'we have to be satisfied with who we are.'",
+                    pages: [147],
+                    thoughts: "It's interesting to think how our perspective changes based on our surrounding influences. We can compromise some things for the greater good.",
+                    context: "Elend has been contemplating who the Lord Ruler was and how the kingdom was under his reign as oppose to the fallen kingdom now."
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Listen to Your Sister",
+            author: ["Neena Viel"],
+            source: ["Online"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
             date: NO_DATE,
             title: "Jacob T. Marley",
             author: ["R. William Bennett"],
@@ -101,7 +145,7 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: IN_PROGRESS,
+            date: NO_DATE,
             title: "The Wrong Woman",
             author: ["Leanne Kale Sparks"],
             source: ["Libby recommendation"],
@@ -119,27 +163,27 @@ module.exports = {
             pageCount: 0,
             rating: NO_RATING,
         },
+        // {
+        //     date: NO_DATE,
+        //     title: "The Fellowship of the Ring",
+        //     author: ["J.R.R. Tolkien"],
+        //     source: ["online"],
+        //     review: [
+        //         ""
+        //     ],
+        //     quotes: [
+        //         {
+        //             text: "",
+        //             pages: [],
+        //             thoughts: "",
+        //             context: ""
+        //         },
+        //     ],
+        //     pageCount: 0,
+        //     rating: NO_RATING,
+        // },
         {
-            date: IN_PROGRESS,
-            title: "The Fellowship of the Ring",
-            author: ["J.R.R. Tolkien"],
-            source: ["online"],
-            review: [
-                ""
-            ],
-            quotes: [
-                {
-                    text: "",
-                    pages: [],
-                    thoughts: "",
-                    context: ""
-                },
-            ],
-            pageCount: 0,
-            rating: NO_RATING,
-        },
-        {
-            date: IN_PROGRESS,
+            date: NO_DATE,
             title: "The Love That Split the World",
             author: ["Emily Henry"],
             source: ["same author"],
@@ -2998,6 +3042,12 @@ module.exports = {
             ],
             quotes: [
                 {
+                    text: "'I wish it need not have happened in my time,' said Frodo. 'So do I,' said Gandalf, 'and so do all who live to see such times. But that is not for them to decide. All we have to decide is what to do with the time that is given us...'",
+                    pages: [94],
+                    thoughts: "We can't control what happens to us in life. We can only control how we respond to it. We can choose to be bitter or we can choose to be better.",
+                    context: "Frodo tells Gandalf that he wishes the ring had never come to him. Gandalf responds that it is not up to them to decide what happens in their lives, but rather how they respond to it."
+                },
+                {
                     text: "",
                     pages: [],
                     thoughts: "",
@@ -4413,7 +4463,7 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: IN_PROGRESS,
+            date: NO_DATE,
             title: "The Catcher in the Rye",
             author: ["J.D. Salinger"],
             source: ["online - books to read by 30"],
