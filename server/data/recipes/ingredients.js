@@ -738,6 +738,7 @@ const INGREDIENTS = {
         },
         SALAMI: { name: 'salami', category: INGREDIENT_CATEGORY.DELI },
         SAUSAGE: { name: 'sausage', category: INGREDIENT_CATEGORY.DELI },
+        SAUSAGE_LINK: { name: 'sausage link', category: INGREDIENT_CATEGORY.DELI },
         SUMMER_SAUSAGE: { name: 'summer sausage', category: INGREDIENT_CATEGORY.DELI },
     },
     FROZEN: {

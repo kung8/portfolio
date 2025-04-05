@@ -419,7 +419,7 @@ const recipes = [
     germanSchnitzel, // TODO: add
 
     // CZECH
-    texasSausageKolaches, // TODO: add
+    texasSausageKolaches,
     cherryAndCreamCheeseKolaches,
 
     // TURKISH
