@@ -403,7 +403,7 @@ const recipes = [
     bearnaiseSauce, // TODO: add
     poachedSalmonWithHollandaiseSauce, // TODO: add
     frenchOnionSoupGratinee, // TODO: add
-    dijonChicken, // TODO: add
+    dijonChicken,
     monteCristoSandwich,
     croissants,
     cherryAndDarkChocolateCrostata, // TODO: add
