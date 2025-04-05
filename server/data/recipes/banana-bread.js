@@ -2,9 +2,7 @@ const { CATEGORIES, SECTIONS, GENRES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS 
 const creamedSugar = '../assets/Products/banana-bread-creamed-sugar.jpeg';
 const mixture = '../assets/Products/banana-bread-flour-mixture.jpeg';
 const mashed = '../assets/Products/banana-bread-mashed-banana.jpeg';
-// const batter = '../assets/Products/banana-bread-batter.jpeg';
 const zoomed = '../assets/Products/banana-bread-with-chocolate-chips-side-view.jpeg';
-// const raw = '../assets/Products/banana-bread-with-chocolate-chips-raw.jpeg';
 const baked = '../assets/Products/banana-bread-with-chocolate-chips-baked.jpeg';
 const walnuts = '../assets/Products/banana-bread-with-walnuts-and-nutmeg.jpeg';
 const walnutsBatter = '../assets/Products/banana-bread-batter-with-walnuts-and-nutmeg.jpeg';
@@ -19,7 +17,6 @@ const {
     VANILLA_EXTRACT,
     SEMI_SWEET_CHOCOLATE_CHIPS,
     WALNUTS,
-    NUTMEG
 } = require('./ingredients');
 
 module.exports = {
@@ -49,7 +46,6 @@ module.exports = {
         { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'optional', section: SECTIONS.MAIN },
         { ...WALNUTS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { ...NUTMEG, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },
