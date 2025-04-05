@@ -399,7 +399,7 @@ const recipes = [
     // FRENCH
     beignets,
     greenBeanAlmondine,
-    chickenFrancese, // TODO: add
+    chickenFrancese,
     bearnaiseSauce, // TODO: add
     poachedSalmonWithHollandaiseSauce, // TODO: add
     frenchOnionSoupGratinee, // TODO: add
