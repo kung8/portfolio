@@ -26,9 +26,47 @@ module.exports = {
         // },
         {
             date: NO_DATE,
+            title: "Jacob T. Marley",
+            author: ["R. William Bennett"],
+            source: ["Hannah's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Ender's Game",
+            author: ["Orson Scott Card"],
+            source: ["Hannah's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
             title: "Undercurrents",
             author: ["Traci Hunter Abramson"],
-            source: ["Jenna from Mutual"],
+            source: ["Jenna's Mutual Profile"],
             review: [
                 ""
             ],
@@ -1085,7 +1123,7 @@ module.exports = {
             date: NO_DATE,
             title: "The Universe Has Your Back",
             author: ["Gabrielle Bernstein"],
-            source: ["Kaleia from Mutual"],
+            source: ["Kaleia's Mutual Profile"],
             review: [
                 ""
             ],
@@ -2359,7 +2397,7 @@ module.exports = {
             date: NO_DATE,
             title: "The Glass Castle",
             author: ["Jeannette Walls"],
-            source: ["Kate from Mutual"],
+            source: ["Kate's Mutual Profile"],
             review: [
                 ""
             ],
