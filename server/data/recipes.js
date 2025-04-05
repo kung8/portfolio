@@ -58,7 +58,6 @@ const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenPaella = require("./recipes/chicken-paella");
 const chickenParmesan = require("./recipes/chicken-parmesan");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
-const chickenPotPie1 = require("./recipes/chicken-pot-pie-1");
 const chickenQuesadilla = require("./recipes/chicken-quesadilla");
 const chickenRamen = require("./recipes/chicken-ramen");
 const chickenStuffedCrescentRolls = require("./recipes/chicken-stuffed-crescent-rolls");
@@ -402,7 +401,7 @@ const recipes = [
     chickenFrancese,
     bearnaiseSauce, // TODO: add
     poachedSalmonWithHollandaiseSauce, // TODO: add
-    frenchOnionSoupGratinee, // TODO: add
+    frenchOnionSoupGratinee,
     dijonChicken,
     monteCristoSandwich,
     croissants,
@@ -412,7 +411,6 @@ const recipes = [
     fishAndChips, // TODO: find recipe
     englishScones,
     chickenPotPie,
-    chickenPotPie1, // TODO: add
     stickyToffeePudding,
 
     // GERMAN
@@ -424,7 +422,7 @@ const recipes = [
 
     // TURKISH
     bulgurPilaf, // TODO: add
-    ricePilaf, // TODO: add
+    ricePilaf,
 
     // SOUTH AFRICAN / PORTUGUESE
     piriPiriChickenBowl,
@@ -468,9 +466,9 @@ const recipes = [
     jambalaya,
     fishSticksWithTartarSauce, // TODO: find recipe
     cajunShrimp,
-    jumboShrimpParmesan, // TODO: add
-    garlicShrimp, // TODO: add
-    crabCakes, // TODO: add
+    jumboShrimpParmesan,
+    garlicShrimp,
+    crabCakes,
     garlicChickenWithHerbs,
     bakedChicken,
     bakedLemonChicken,

@@ -1,6 +1,10 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { SHRIMP, OLIVE_OIL, GARLIC, SALT, BLACK_PEPPER, BREADCRUMBS, PARMESAN_CHEESE, UNSALTED_BUTTER, LEMON } = require('./ingredients');
+
+const MARINADE_SECTION = 'Marinade';
+const MARINATE_SHRIMP = 'Marinate shrimp';
+const COOK_SHRIMP = 'Cook shrimp';
 
 module.exports = {
     wip: true,
@@ -9,13 +13,13 @@ module.exports = {
     img: '',
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
-    available: false,
+    available: true,
     recommended: false,
-    category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [PROTEIN.SHRIMP],
-    type: [TYPES.PROTEIN,TYPES.MAIN_COURSE],
+    type: [TYPES.PROTEIN, TYPES.MAIN_COURSE],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
@@ -25,15 +29,37 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
+        { ...SHRIMP, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled, deveined, tail on', section: MARINADE_SECTION },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: MARINADE_SECTION },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: MARINADE_SECTION },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: MARINADE_SECTION },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: MARINADE_SECTION },
+
+        { ...BREADCRUMBS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...PARMESAN_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: '' },
+        { ...LEMON, amount: 1, unit: '', additionalDetails: 'wedged', section: '' },
     ],
     appliances: [
-        { name: '' },
+        { name: 'oven' },
     ],
     supplies: [
-        { name: '' },
+        { name: 'mixing bowl' },
+        { name: 'baking sheet' },
+        { name: 'aluminum foil' },
+        { name: 'shallow bowl' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: 'In a mixing bowl, combine the "Marinade" section ingredients (all except the shrimp).', type: MARINATE_SHRIMP },
+        { step: 'Add shrimp and toss until the shrimp is coated.', type: MARINATE_SHRIMP },
+        { step: 'Refrigerate for 1 hour.', type: MARINATE_SHRIMP },
+        { step: 'Preheat the oven to 475ºF.', type: COOK_SHRIMP },
+        { step: 'Line a baking sheet with aluminum foil.', type: COOK_SHRIMP },
+        { step: 'In a shallow bowl, combine breadcrumbs and cheese.', type: COOK_SHRIMP },
+        { step: 'Coat the shrimp in the breadcrumb mixture.', type: COOK_SHRIMP },
+        { step: 'Place the shrimp on a baking sheet in a single layer.', type: COOK_SHRIMP },
+        { step: 'Drizzle the melted butter over the shrimp.', type: COOK_SHRIMP },
+        { step: 'Bake until the shrimp is cooked (about 10 minutes).', type: COOK_SHRIMP },
+        { step: 'Serve with lemon wedges.', type: SECTIONS.SERVE },
     ]
 };
