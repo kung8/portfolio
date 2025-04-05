@@ -76,7 +76,8 @@ module.exports = {
         { step: 'Brush dough with melted butter and place back in bowl.', type: MAKE_DOUGH },
         { step: 'Cover with plastic wrap. Place in a warm place until it double in size (about 1 hour).', type: MAKE_DOUGH },
 
-        { step: 'Cut sausage in half and cut the cheese thinly to match the length of the halved sausage.', type: PREP_FILLING },
+        { step: 'Cut sausage in half and dry with a paper towel.', type: PREP_FILLING },
+        { step: 'Cut the cheese thinly to match the length of the halved sausage.', type: PREP_FILLING },
 
         { step: 'Preheat the oven to 350ºF.', type: BAKE_KOLACHES },
         { step: 'Line a baking sheet with parchment paper.', type: BAKE_KOLACHES },

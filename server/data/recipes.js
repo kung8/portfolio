@@ -416,7 +416,7 @@ const recipes = [
     stickyToffeePudding,
 
     // GERMAN
-    germanSchnitzel, // TODO: add
+    germanSchnitzel,
 
     // CZECH
     texasSausageKolaches,
