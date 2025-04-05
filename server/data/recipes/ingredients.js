@@ -1771,8 +1771,8 @@ const INGREDIENTS = {
         BASIL: {
             name: 'basil', category: INGREDIENT_CATEGORY.SPICES, img: "https://plus.unsplash.com/premium_photo-1673264299641-397fa130e4a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY5OTM5fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        BAY_LEAVES: {
-            name: 'bay leaves', category: INGREDIENT_CATEGORY.SPICES, img: "https://images.unsplash.com/photo-1634612830627-3d0623108087?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU4MjExfA&ixlib=rb-4.0.3&q=80&w=400"
+        BAY_LEAF: {
+            name: 'bay leaf', plural: 'bay leaves', category: INGREDIENT_CATEGORY.SPICES, img: "https://images.unsplash.com/photo-1634612830627-3d0623108087?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU4MjExfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         BLACK_PEPPER: {
             name: 'black pepper', category: INGREDIENT_CATEGORY.SPICES, img: "https://images.unsplash.com/photo-1506085621370-98b475435879?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTYwNDc0fA&ixlib=rb-4.0.3&q=80&w=400"

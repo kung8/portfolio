@@ -9,7 +9,7 @@ const ragu8 = '../assets/Products/beef-ragu-8.jpeg';
 const ragu9 = '../assets/Products/beef-ragu-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
-const { BEEF_CHUCK_ROAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CARROT, CELERY, CRUSHED_TOMATOES, TOMATO_PASTE, BEEF_BROTH, RED_WINE, THYME, BAY_LEAVES, YELLOW_ONION, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY, WATER } = require('./ingredients');
+const { BEEF_CHUCK_ROAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CARROT, CELERY, CRUSHED_TOMATOES, TOMATO_PASTE, BEEF_BROTH, RED_WINE, THYME, BAY_LEAF, YELLOW_ONION, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY, WATER } = require('./ingredients');
 
 const BEEF_SECTION = 'Beef';
 const RAGU_SECTION = 'Ragu';
@@ -54,7 +54,7 @@ module.exports = {
         { ...RED_WINE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: RAGU_SECTION },
         { ...WATER, amount: 1.5, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: RAGU_SECTION },
         { ...THYME, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: RAGU_SECTION },
-        { ...BAY_LEAVES, amount: 3, unit: '', additionalDetails: '', section: RAGU_SECTION },
+        { ...BAY_LEAF, amount: 3, unit: '', additionalDetails: '', section: RAGU_SECTION },
 
         { ...PAPPARDELLE_NOODLES, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.NOODLES },
         { ...PARMESAN_CHEESE, amount: '', unit: '', additionalDetails: 'grated', section: SECTIONS.TOPPINGS },

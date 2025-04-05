@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { OLIVE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, ANDOUILLE_SAUSAGE, YELLOW_BELL_PEPPER, RED_BELL_PEPPER, GREEN_BELL_PEPPER, CELERY, JALAPENO_PEPPER, WHITE_ONION, GARLIC, CRUSHED_TOMATOES, CHICKEN_BOUILLON, CHICKEN_BROTH, WHITE_RICE, THYME, CAYENNE_PEPPER, BAY_LEAVES, LARGE_SHRIMP, OKRA, SALT, BLACK_PEPPER, PARSLEY, GREEN_ONION, HOT_SAUCE, CAJUN_SEASONING } = require('./ingredients');
+const { OLIVE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, ANDOUILLE_SAUSAGE, YELLOW_BELL_PEPPER, RED_BELL_PEPPER, GREEN_BELL_PEPPER, CELERY, JALAPENO_PEPPER, WHITE_ONION, GARLIC, CRUSHED_TOMATOES, CHICKEN_BOUILLON, CHICKEN_BROTH, WHITE_RICE, THYME, CAYENNE_PEPPER, BAY_LEAF, LARGE_SHRIMP, OKRA, SALT, BLACK_PEPPER, PARSLEY, GREEN_ONION, HOT_SAUCE, CAJUN_SEASONING } = require('./ingredients');
 
 const MEAT_SECTION = 'Meat';
 const VEGGIES_SECTION = 'Veggies';
@@ -53,7 +53,7 @@ module.exports = {
         { ...CAJUN_SEASONING, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RICE_SECTION },
         { ...THYME, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: RICE_SECTION },
         { ...CAYENNE_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: RICE_SECTION },
-        { ...BAY_LEAVES, amount: 1, unit: '', additionalDetails: '', section: RICE_SECTION },
+        { ...BAY_LEAF, amount: 1, unit: '', additionalDetails: '', section: RICE_SECTION },
 
         { ...LARGE_SHRIMP, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled and deveined', section: SHRIMP_SECTION },
         { ...OKRA, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'thinly sliced', section: SHRIMP_SECTION },

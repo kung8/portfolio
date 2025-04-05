@@ -19,7 +19,7 @@ const spiceInPot = '../assets/Products/chicken-biryani-spice-marinade-in-pot.jpe
 const workstation = '../assets/Products/chicken-biryani-workstation.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { CARDAMOM, CHICKEN_THIGH, YOGURT, VEGETABLE_OIL, GARLIC, GINGER, TURMERIC, CINNAMON, CAYENNE_PEPPER, GARAM_MASALA, CORIANDER, CUMIN, PAPRIKA, SALT, CLOVES, BAY_LEAVES, STAR_ANISE, BASMATI_RICE, CARDAMOM_PODS, YELLOW_ONION, SAFFRON_THREADS, CILANTRO, GHEE, WATER } = require('./ingredients');
+const { CARDAMOM, CHICKEN_THIGH, YOGURT, VEGETABLE_OIL, GARLIC, GINGER, TURMERIC, CINNAMON, CAYENNE_PEPPER, GARAM_MASALA, CORIANDER, CUMIN, PAPRIKA, SALT, CLOVES, BAY_LEAF, STAR_ANISE, BASMATI_RICE, CARDAMOM_PODS, YELLOW_ONION, SAFFRON_THREADS, CILANTRO, GHEE, WATER } = require('./ingredients');
 
 const CRISPY_ONION = 'Crispy Onion';
 const SAFFRON_WATER = 'Saffron Water';
@@ -64,7 +64,7 @@ module.exports = {
 
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.RICE },
         { ...CLOVES, amount: 10, unit: '', additionalDetails: '', section: SECTIONS.RICE },
-        { ...BAY_LEAVES, amount: 5, unit: '', additionalDetails: '', section: SECTIONS.RICE },
+        { ...BAY_LEAF, amount: 5, unit: '', additionalDetails: '', section: SECTIONS.RICE },
         { ...STAR_ANISE, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.RICE },
         { ...CARDAMOM_PODS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.RICE },
         { ...BASMATI_RICE, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.RICE },
