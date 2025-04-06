@@ -367,7 +367,7 @@ const recipes = [
     chickenCordonBleu,
     porkMilanese,
     chickenAlfredo,
-    chickenParmesan, // TODO: find recipe
+    chickenParmesan,
     basilPesto,
     piciPasta,
     beefRagu,
