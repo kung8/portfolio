@@ -405,7 +405,7 @@ const recipes = [
     dijonChicken,
     monteCristoSandwich,
     croissants,
-    cherryAndDarkChocolateCrostata, // TODO: add
+    cherryAndDarkChocolateCrostata,
 
     // BRITISH
     fishAndChips, // TODO: find recipe
