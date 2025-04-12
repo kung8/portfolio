@@ -8,7 +8,6 @@ const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS,
 const { CREAM_CHEESE, FLOUR_TORTILLA, ROMAINE_LETTUCE, TURKEY, SWISS_CHEESE, SLICER_TOMATO, CRANBERRY_SAUCE } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Turkey Roll Ups',
     name: 'Turkey Roll Ups',
     img: roll4,
