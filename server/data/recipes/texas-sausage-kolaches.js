@@ -70,7 +70,7 @@ module.exports = {
         { step: 'In a stand mixer, combine "Yeast Mixture". Stir until dissolved.', type: PREP_YEAST_MIXTURE },
 
         { step: 'Add 2 cups of flour, sugar mixture, and eggs. Beat with a dough hook attachment until smooth.', type: MAKE_DOUGH },
-        { step: 'Slowly add remaining while mixing until dough just becomes elastic and a little firm (not dry).', type: MAKE_DOUGH },
+        { step: 'Slowly add remaining flour while mixing until dough just becomes elastic and a little firm (not dry).', type: MAKE_DOUGH },
         { step: 'Transfer dough to floured surface.', type: MAKE_DOUGH },
         { step: 'Knead until dough is smooth and very elastic (about 10 to 15 minutes).', type: MAKE_DOUGH },
         { step: 'Brush dough with melted butter and place back in bowl.', type: MAKE_DOUGH },
