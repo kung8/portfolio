@@ -1,4 +1,8 @@
-const phillyCheesesteak = '../assets/Products/philly-cheesesteak.jpeg';
+const cheesesteak1 = '../assets/Products/philly-cheesesteak-1.jpeg';
+const cheesesteak2 = '../assets/Products/philly-cheesesteak-2.jpeg';
+const cheesesteak3 = '../assets/Products/philly-cheesesteak-3.jpeg';
+const cheesesteak4 = '../assets/Products/philly-cheesesteak-4.jpeg';
+
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const {
     OLIVE_OIL,
@@ -15,7 +19,7 @@ const {
 module.exports = {
     cardName: 'Philly Cheesesteak',
     name: 'Philly Cheesesteak',
-    img: phillyCheesesteak,
+    img: cheesesteak1,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -53,8 +57,8 @@ module.exports = {
     ],
     directions: [
         { step: 'Over high heat, heat oil in pan.', type: SECTIONS.MAIN },
-        { step: 'Add onions, bell peppers and mushrooms into pan and caramelize. Saute until browned and set aside.', type: SECTIONS.MAIN },
-        { step: 'In same pan, add beef and season with salt and pepper. Cook until beef is cooked and set aside.', type: SECTIONS.MAIN },
+        { step: 'Add onions, bell peppers and mushrooms into pan and caramelize. Saute until browned and set aside.', type: SECTIONS.MAIN, img: cheesesteak2 },
+        { step: 'In same pan, add beef and season with salt and pepper. Cook until beef is cooked and set aside.', type: SECTIONS.MAIN, img: [cheesesteak3, cheesesteak4] },
         { step: 'Re-add the veggies to pan and stir.', type: SECTIONS.MAIN },
         { step: 'Layer cheese slices and melt (about a minute).', type: SECTIONS.MAIN },
         { step: 'Optionally toast the buns. Open up hoagie bread and layer with meat, cheese and vegetables to your hearts content.', type: SECTIONS.MAIN },
