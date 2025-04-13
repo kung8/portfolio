@@ -54,7 +54,7 @@ module.exports = {
     directions: [
         { step: 'Over high heat, heat oil in pan.', type: SECTIONS.MAIN },
         { step: 'Add onions, bell peppers and mushrooms into pan and caramelize. Saute until browned and set aside.', type: SECTIONS.MAIN },
-        { step: 'In same pan, add beef and season with salt and pepper. Cook until beef is cooked and Set aside.', type: SECTIONS.MAIN },
+        { step: 'In same pan, add beef and season with salt and pepper. Cook until beef is cooked and set aside.', type: SECTIONS.MAIN },
         { step: 'Re-add the veggies to pan and stir.', type: SECTIONS.MAIN },
         { step: 'Layer cheese slices and melt (about a minute).', type: SECTIONS.MAIN },
         { step: 'Optionally toast the buns. Open up hoagie bread and layer with meat, cheese and vegetables to your hearts content.', type: SECTIONS.MAIN },

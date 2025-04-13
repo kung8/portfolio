@@ -1,0 +1,63 @@
+const tart1 = '../assets/Products/pop-tarts-1.jpeg';
+const tart2 = '../assets/Products/pop-tarts-2.jpeg';
+const tart3 = '../assets/Products/pop-tarts-3.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { STRAWBERRY_JAM, POWDERED_SUGAR, MILK, REFRIGERATED_PIE_CRUST } = require('./ingredients');
+
+const POP_TARTS_SECTION = 'Pop Tarts';
+const GLAZE_SECTION = 'Glaze';
+
+const COOK_POP_TARTS = 'Cook Pop Tarts';
+const MAKE_GLAZE = 'Make Glaze';
+
+module.exports = {
+    cardName: 'Pop Tarts',
+    name: 'Pop Tarts',
+    img: tart3,
+    recipeAuthor: '',
+    recipeFinder: 'Kevin Ung',
+    available: true,
+    recommended: true,
+    category: [CATEGORIES.BREAKFAST, CATEGORIES.SNACK, CATEGORIES.DESSERT],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BAKE],
+    type: [TYPES.FINGER_FOOD, TYPES.PASTRY],
+    yields: { amount: 1, unit: YIELD_UNITS.DOZEN },
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
+    websites: [
+        { label: 'Pop Tarts', link: 'https://bakingmischief.com/what-to-do-with-leftover-pie-dough/' }
+    ],
+    separated: true,
+    ingredients: [
+        { ...REFRIGERATED_PIE_CRUST, amount: 1, unit: '', additionalDetails: '', section: POP_TARTS_SECTION },
+        { ...STRAWBERRY_JAM, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: POP_TARTS_SECTION },
+        { ...MILK, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: GLAZE_SECTION },
+        { ...POWDERED_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GLAZE_SECTION },
+    ],
+    appliances: [
+        { name: 'oven' },
+    ],
+    supplies: [
+        { name: 'baking sheet' },
+        { name: 'parchment paper' },
+    ],
+    directions: [
+        { step: 'Preheat the oven to 400ºF.', type: COOK_POP_TARTS },
+        { step: 'Line a baking sheet with parchment paper.', type: COOK_POP_TARTS },
+        { step: 'Roll out and cut pie crust dough into rectangular pieces (2 per each pop tart).', type: COOK_POP_TARTS },
+        { step: 'Place pieces on the baking sheet.', type: COOK_POP_TARTS },
+        { step: 'Add preferred jam in the center of each piece.', type: COOK_POP_TARTS, img: tart1 },
+        { step: 'Place the other rectangular piece on top.', type: COOK_POP_TARTS },
+        { step: 'Use a fork to crimp each pop tart to seal the edges.', type: COOK_POP_TARTS },
+        { step: 'Poke holes through the top to let steam to escape.', type: COOK_POP_TARTS, img: tart2 },
+        { step: 'Bake until golden (about 10 to 15 minutes).', type: COOK_POP_TARTS },
+        { step: 'In a small bowl, combine milk and powdered sugar. Mix until it forms a thick glaze.', type: MAKE_GLAZE },
+        { step: 'Optionally spread glaze and enjoy!', type: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'This is a great way to use any excess pie crust dough.' }
+    ]
+};

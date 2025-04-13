@@ -193,6 +193,7 @@ const piriPiriChickenBowl = require("./recipes/piri-piri-chicken-bowl");
 const pizza = require("./recipes/pizza");
 const poachedSalmonWithHollandaiseSauce = require("./recipes/poached-salmon-with-hollandaise-sauce");
 const popcornBalls = require("./recipes/popcorn-balls");
+const popTarts = require("./recipes/pop-tarts");
 const porkMilanese = require("./recipes/pork-milanese");
 const potatoGnocchi = require("./recipes/potato-gnocchi");
 const potRoast = require("./recipes/pot-roast");
@@ -506,6 +507,7 @@ const recipes = [
     breakfastSandwich,
     reubenSandwich,
     blt,
+    popTarts,
     scrambledEggs,
     hardBoiledEggs,
     americanOmelette,
