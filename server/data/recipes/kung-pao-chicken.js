@@ -1,4 +1,13 @@
-// const example = '../assets/Products/example.jpeg';
+const kung1 = '../assets/Products/kung-pao-chicken-1.jpeg';
+const kung2 = '../assets/Products/kung-pao-chicken-2.jpeg';
+const kung3 = '../assets/Products/kung-pao-chicken-3.jpeg';
+const kung4 = '../assets/Products/kung-pao-chicken-4.jpeg';
+const kung5 = '../assets/Products/kung-pao-chicken-5.jpeg';
+const kung6 = '../assets/Products/kung-pao-chicken-6.jpeg';
+const kung7 = '../assets/Products/kung-pao-chicken-7.jpeg';
+const kung8 = '../assets/Products/kung-pao-chicken-8.jpeg';
+const kung9 = '../assets/Products/kung-pao-chicken-9.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CORNSTARCH, LIGHT_SOY_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, DARK_SOY_SAUCE, CHICKEN_BROTH, BALSAMIC_VINEGAR, HOISIN_SAUCE, WHITE_SUGAR, CHILI_PEPPER, GREEN_BELL_PEPPER, RED_BELL_PEPPER, GINGER, GARLIC, GREEN_ONION, UNSALTED_PEANUTS, SESAME_SEEDS } = require('./ingredients');
 
@@ -7,10 +16,9 @@ const KUNG_PAO_SAUCE = 'Kung Pao Sauce';
 const STIR_FRY = 'Stir Fry';
 
 module.exports = {
-    wip: true,
     cardName: 'Kung Pao Chicken',
     name: 'Kung Pao Chicken',
-    img: '',
+    img: kung8,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -65,18 +73,18 @@ module.exports = {
     ],
     directions: [
         { step: 'In a mixing bowl, combine the "Chicken Marinade" ingredients.', type: CHICKEN_MARINADE },
-        { step: 'Let it marinade for at least 10 minutes.', type: CHICKEN_MARINADE },
+        { step: 'Let it marinade for at least 10 minutes.', type: CHICKEN_MARINADE, img: kung2 },
 
         { step: 'In a medium bowl, combine the "Kung Pao Sauce" ingredients.', type: KUNG_PAO_SAUCE },
-        { step: 'Mix until the cornstarch has dissolved and the sauce is smooth. Set aside.', type: KUNG_PAO_SAUCE },
+        { step: 'Mix until the cornstarch has dissolved and the sauce is smooth. Set aside.', type: KUNG_PAO_SAUCE, img: kung1 },
 
         { step: 'Over medium-high heat, heat 2 tablespoons of oil in a wok.', type: STIR_FRY },
-        { step: 'Add the chicken and cook until golden brown (about 80% cooked).', type: STIR_FRY },
-        { step: 'Remove the chicken and set aside.', type: STIR_FRY },
+        { step: 'Add the chicken and cook until golden brown (about 80% cooked).', type: STIR_FRY, img: kung4 },
+        { step: 'Remove the chicken and set aside.', type: STIR_FRY, img: kung6 },
         { step: 'Add the remaining oil to the wok.', type: STIR_FRY },
-        { step: 'Add the "Stir Fry" ingredients (i.e. not the chicken, sauce, or the toppings). Stir fry the veggies (for about 4 minutes).', type: STIR_FRY },
-        { step: 'Add the sauce to the wok and stir.', type: STIR_FRY },
+        { step: 'Add the "Stir Fry" section ingredients. Stir fry the veggies (for about 4 minutes).', type: STIR_FRY, img: [kung3, kung5] },
+        { step: 'Add the sauce to the wok and stir.', type: STIR_FRY, img: kung7 },
         { step: 'Once the sauce thickens, add the chicken back in and stir until everything is coated well.', type: STIR_FRY },
-        { step: 'Top this dish with your favorite toppings and serve with jasmine rice. Enjoy!', type: SECTIONS.SERVE },
+        { step: 'Top this dish with your favorite toppings and serve with jasmine rice. Enjoy!', type: SECTIONS.SERVE, img: kung9 },
     ]
 };
