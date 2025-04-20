@@ -400,6 +400,7 @@ const INGREDIENTS = {
             name: 'butter pickle chips', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://plus.unsplash.com/premium_photo-1675731118182-8a39012cdd3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3NjAxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         CAESAR_DRESSING: { name: 'caesar dressing', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        CAPER: { name: 'caper', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CHIPOTLE_SAUCE: { name: 'chipotle sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         COOKIE_BUTTER: { name: 'cookie butter', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CORN_SYRUP: { name: 'corn syrup', category: INGREDIENT_CATEGORY.CONDIMENTS },
@@ -1858,6 +1859,7 @@ const INGREDIENTS = {
         },
         SWEET_PAPRIKA: { name: 'sweet paprika', category: INGREDIENT_CATEGORY.SPICES },
         TACO_SEASONING: { name: 'taco seasoning', category: INGREDIENT_CATEGORY.SPICES },
+        TARRAGON: { name: 'tarragon', category: INGREDIENT_CATEGORY.SPICES },
         THYME: { name: 'thyme', category: INGREDIENT_CATEGORY.SPICES },
         TURMERIC: { name: 'turmeric', category: INGREDIENT_CATEGORY.SPICES },
         VANILLA_BEAN: {

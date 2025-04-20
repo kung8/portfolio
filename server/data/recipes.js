@@ -400,7 +400,7 @@ const recipes = [
     beignets,
     greenBeanAlmondine,
     chickenFrancese,
-    bearnaiseSauce, // TODO: add
+    bearnaiseSauce,
     poachedSalmonWithHollandaiseSauce, // TODO: add
     frenchOnionSoupGratinee,
     dijonChicken,
