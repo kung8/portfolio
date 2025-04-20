@@ -1,12 +1,14 @@
-// const example = '../assets/Products/example.jpeg';
+const sauce1 = '../assets/Products/bbq-sauce-1.jpeg';
+const sauce2 = '../assets/Products/bbq-sauce-2.jpeg';
+const sauce3 = '../assets/Products/bbq-sauce-3.jpeg';
+
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { KETCHUP, BROWN_SUGAR, PAPRIKA, GARLIC_POWDER, SALT, DIJON_MUSTARD, WORCESTERSHIRE_SAUCE, WHITE_VINEGAR, RICE_WINE_VINEGAR, WATER } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Homemade BBQ Sauce',
     name: 'Homemade BBQ Sauce',
-    img: '',
+    img: sauce3,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -41,7 +43,7 @@ module.exports = {
         { name: 'saucepan' },
     ],
     directions: [
-        { step: 'Combine all the ingredients in a saucepan. Whisk.', type: SECTIONS.SAUCE },
+        { step: 'Combine all the ingredients in a saucepan. Whisk.', type: SECTIONS.SAUCE, img: [sauce1, sauce2] },
         { step: 'Over medium heat, simmer for 15 to 20 minutes.', type: SECTIONS.SAUCE },
         { step: 'Transfer to a container once the sauce has thickened and cooled.', type: SECTIONS.SAUCE },
     ]

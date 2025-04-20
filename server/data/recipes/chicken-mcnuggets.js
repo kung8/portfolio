@@ -1,6 +1,12 @@
-// const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { CHICKEN_BREAST, BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, WHITE_SUGAR, ALL_PURPOSE_FLOUR, WHITE_PEPPER, CELERY_POWDER, CORNSTARCH, BAKING_POWDER, BAKING_SODA, EGG, ROOM_TEMPERATURE_WATER, VEGETABLE_OIL, WATER } = require('./ingredients');
+const mcnuggets1 = '../assets/Products/chicken-mcnuggets-1.jpeg';
+const mcnuggets2 = '../assets/Products/chicken-mcnuggets-2.jpeg';
+const mcnuggets3 = '../assets/Products/chicken-mcnuggets-3.jpeg';
+const mcnuggets4 = '../assets/Products/chicken-mcnuggets-4.jpeg';
+const mcnuggets5 = '../assets/Products/chicken-mcnuggets-5.jpeg';
+const mcnuggets6 = '../assets/Products/chicken-mcnuggets-6.jpeg';
+
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { GROUND_CHICKEN, SALT, WHITE_SUGAR, ALL_PURPOSE_FLOUR, WHITE_PEPPER, CELERY_POWDER, CORNSTARCH, BAKING_POWDER, BAKING_SODA, EGG, ROOM_TEMPERATURE_WATER, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const FLOUR_DREDGING_STATION = 'Flour Dredging Station';
 const WET_BATTER_STATION = 'Wet Batter Station';
@@ -11,7 +17,7 @@ module.exports = {
     wip: true,
     cardName: 'Chicken McNuggets',
     name: 'Chicken McNuggets',
-    img: '',
+    img: mcnuggets6,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -29,13 +35,13 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...GROUND_CHICKEN, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
 
         { ...ROOM_TEMPERATURE_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_BATTER_STATION },
         { ...CORNSTARCH, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_BATTER_STATION },
-        
+
         { ...ALL_PURPOSE_FLOUR, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FLOUR_DREDGING_STATION },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FLOUR_DREDGING_STATION },
         { ...WHITE_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FLOUR_DREDGING_STATION },
@@ -65,14 +71,14 @@ module.exports = {
     directions: [
         { step: 'Chop up the chicken breast until the chicken is grounded (or you can use ground chicken).', type: SECTIONS.CHICKEN },
         { step: 'In a mixing bowl, combine the "Chicken" section ingredients.', type: SECTIONS.CHICKEN },
-        { step: 'Form the ground chicken into McNugget shapes.', type: SECTIONS.CHICKEN },
+        { step: 'Form the ground chicken into McNugget shapes.', type: SECTIONS.CHICKEN, img: mcnuggets1 },
         { step: 'Over medium-high heat, heat up 2 to 3 inches of oil in a pot.', type: DEEP_FRY },
-        { step: 'Prepare the 3 dredging stations in shallow bowls. Set up the station in order: "Wet", "Flour", and "Tempura".', type: DEEP_FRY },
+        { step: 'Prepare the 3 dredging stations in shallow bowls. Set up the station in order: "Wet", "Flour", and "Tempura".', type: DEEP_FRY, img: [mcnuggets2, mcnuggets3, mcnuggets4] },
         { step: 'The frying oil should be between 350ºF and 375ºF before frying. This allows for the chicken to crisp up without burning before the inside is cooked through. If the oil is not hot enough, it will take longer for the chicken to cook through and would soak up more oil instead.', type: DEEP_FRY },
         { step: 'Line some paper towels on a large baking sheet and place a wire cooling rack on top.', type: DEEP_FRY },
         { step: 'Once the oil is in the correct temperature range, begin dredging the chicken McNuggets. Shake off excess flour before adding it to the tempura station.', type: DEEP_FRY },
         { step: 'Carefully place the chicken McNuggets into the oil and let batter covered fingers fall on the McNuggets to create the flakes. Avoid crowding the pot.', type: DEEP_FRY },
-        { step: 'Fry for 5 to 7 minutes.', type: DEEP_FRY },
+        { step: 'Fry for 5 to 7 minutes.', type: DEEP_FRY, img: mcnuggets5 },
         { step: 'Remove the cooked McNugget using a spider strainer.', type: DEEP_FRY },
         { step: 'Place the cooked chicken McNuggets on the prepared cooling rack to drain.', type: DEEP_FRY },
         { step: 'Enjoy these McNuggets with your favorite sauces.', type: DEEP_FRY },

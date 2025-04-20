@@ -1,4 +1,13 @@
-// const example = '../assets/Products/example.jpeg';
+const pork1 = '../assets/Products/sweet-and-sour-pork-1.jpeg';
+const pork2 = '../assets/Products/sweet-and-sour-pork-2.jpeg';
+const pork3 = '../assets/Products/sweet-and-sour-pork-3.jpeg';
+const pork4 = '../assets/Products/sweet-and-sour-pork-4.jpeg';
+const pork5 = '../assets/Products/sweet-and-sour-pork-5.jpeg';
+const pork6 = '../assets/Products/sweet-and-sour-pork-6.jpeg';
+const pork7 = '../assets/Products/sweet-and-sour-pork-7.jpeg';
+const pork8 = '../assets/Products/sweet-and-sour-pork-8.jpeg';
+const pork9 = '../assets/Products/sweet-and-sour-pork-9.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { LIGHT_SOY_SAUCE, EGG, ALL_PURPOSE_FLOUR, CORNSTARCH, PORK_SHOULDER, GARLIC_SALT, KETCHUP, BROWN_SUGAR, WHITE_VINEGAR, SALT, RED_BELL_PEPPER, YELLOW_BELL_PEPPER, GREEN_BELL_PEPPER, RED_ONION, YELLOW_ONION, PINEAPPLE, VEGETABLE_OIL, WATER } = require('./ingredients');
 
@@ -9,14 +18,13 @@ const DEEP_FRY = 'Deep Fry';
 const STIR_FRY = 'Stir Fry';
 
 module.exports = {
-    wip: true,
     cardName: 'Sweet and Sour Pork',
     name: 'Chinese Sweet and Sour Pork',
-    img: '',
+    img: pork9,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],
@@ -65,11 +73,10 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine garlic salt, soy sauce and pork. Mix for about 1 minute.', type: PORK_MARINADE },
-        { step: 'Add an egg and mix for 30 seconds.', type: PORK_MARINADE },
-        { step: 'Add flour and mix until evenly coated (about 1 to 2 minutes).', type: PORK_MARINADE },
-        { step: 'On a plate, add cornstarch.', type: PORK_MARINADE },
-        { step: 'Coat each piece with cornstarch and massage to ensure it is completely covered.', type: PORK_MARINADE },
+        { step: 'In a mixing bowl, combine garlic salt, soy sauce and pork. Mix for about 1 minute.', type: PORK_MARINADE, img: [pork1, pork2] },
+        { step: 'Add an egg and mix for 30 seconds.', type: PORK_MARINADE, img: [pork3, pork4] },
+        { step: 'Add flour and mix until evenly coated (about 1 to 2 minutes).', type: PORK_MARINADE, img: pork5 },
+        { step: 'Add cornstarch. Coat each piece and massage to ensure it is completely covered.', type: PORK_MARINADE, img: pork6 },
 
         { step: 'In a medium bowl, combine the "Sweet and Sour Sauce" ingredients. Set aside.', type: SWEET_AND_SOUR_SAUCE },
 
@@ -81,12 +88,13 @@ module.exports = {
         { step: 'Once all the pork pieces are cooked, you will raise the heat slightly until it get to 400ºF.', type: DEEP_FRY },
         { step: 'Again in batches, fry the pork for 1 to 2 minutes for this second fry.', type: DEEP_FRY },
         { step: 'Transfer back to drain on the wire rack.', type: DEEP_FRY },
+
         { step: 'Over medium-high heat, heat a little oil.', type: STIR_FRY },
-        { step: 'Add the chopped peppers and onions. Cook for about 30 seconds.', type: STIR_FRY },
+        { step: 'Add the chopped peppers and onions. Cook for about 30 seconds.', type: STIR_FRY, img: pork7 },
         { step: 'Add pineapples. Cook for about 30 seconds.', type: STIR_FRY },
         { step: 'Transfer the pineapples and veggies to a bowl. Set aside.', type: STIR_FRY },
 
-        { step: 'Over medium-high heat, add the sauce to the wok and bring to a boil (about 1 to 2 minutes).', type: SECTIONS.ASSEMBLE },
+        { step: 'Over medium-high heat, add the sauce to the wok and bring to a boil (about 1 to 2 minutes).', type: SECTIONS.ASSEMBLE, img: pork8 },
         { step: 'Add the pork, veggies and pineapple. Mix until everything is combined and coated with the sauce (about 1 to 2 minutes).', type: SECTIONS.ASSEMBLE },
 
         { step: 'Enjoy this immediately with jasmine rice', type: SECTIONS.SERVE },
