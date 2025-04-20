@@ -25,6 +25,101 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: NO_DATE,
+            title: "Shades of Magic Series",
+            author: ["V.E. Schwab"],
+            source: ["Mandi's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Villains Series",
+            author: ["V.E. Schwab"],
+            source: ["Mandi's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Cassidy Blake Series",
+            author: ["V.E. Schwab"],
+            source: ["Mandi's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Invisible Life of Addie LaRue",
+            author: ["V.E. Schwab"],
+            source: ["Mandi's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Normal People",
+            author: ["Sally Rooney"],
+            source: ["Alejandra's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
             date: IN_PROGRESS,
             title: "Age of Heroes",
             author: ["Brandon Sanderson"],
@@ -44,6 +139,18 @@ module.exports = {
                     pages: [147],
                     thoughts: "It's interesting to think how our perspective changes based on our surrounding influences. We can compromise some things for the greater good.",
                     context: "Elend has been contemplating who the Lord Ruler was and how the kingdom was under his reign as oppose to the fallen kingdom now."
+                },
+                {
+                    text: "'They nearly did,' Vin said. 'Elend, I had to realize that I could be both people-the Mistborn of the streets and the woman of the court. I had to acknowledge that the new person I'm becoming is a valid extension of who I am. But for you, it's the opposite! You have to realize that who you were is still a valid part of you. That person makes silly comments, and does things merely to provoke a reaction. But he's also lovable and kindhearted. You can't lose those things simply because you're emperor.'",
+                    pages: [228],
+                    thoughts: "Each part of us makes up who we are. We might change and grow and become different people, but we can still be the same person at the core.",
+                    context: "Vin is trying to help Elend understand that he can be both: emperor and the person he was before."
+                },
+                {
+                    text: "Belief isn't simply a thing for fair times and bright days, I think. What is belief--what is faith--if you don't continue in it after failure?",
+                    pages: [434],
+                    thoughts: "Faith isn't just for good times.",
+                    context: "Sazed recalls something that he said to Vin back in the first book."
                 },
             ],
             pageCount: 0,
