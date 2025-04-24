@@ -401,7 +401,7 @@ const recipes = [
     greenBeanAlmondine,
     chickenFrancese,
     bearnaiseSauce,
-    poachedSalmonWithHollandaiseSauce, // TODO: add
+    poachedSalmonWithHollandaiseSauce,
     frenchOnionSoupGratinee,
     dijonChicken,
     monteCristoSandwich,

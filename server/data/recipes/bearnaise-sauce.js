@@ -57,8 +57,7 @@ module.exports = {
         { name: 'strainer' },
         { name: 'bowl' },
         { name: 'mortar and pestle' },
-        { name: 'metal mixing bowl' },
-        { name: '' },
+        { name: 'wok' },
     ],
     directions: [
         { step: 'In a saucepan, combine the "Reduction" section ingredients.', type: PREP_REDUCTION },

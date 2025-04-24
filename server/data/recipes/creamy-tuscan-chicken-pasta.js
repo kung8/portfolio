@@ -13,7 +13,7 @@ const COMBINE = 'Combine';
 
 module.exports = {
     wip: true,
-    cardName: 'Creamy Tuscan Chicken Pasta',
+    cardName: 'Creamy Tuscan Chicken',
     name: 'Creamy Tuscan Chicken Pasta',
     img: '',
     recipeAuthor: '',
