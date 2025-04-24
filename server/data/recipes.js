@@ -289,7 +289,7 @@ const recipes = [
     chickenRamen,
     udonNoodleSoup,
     mochi,
-    yorsStew, // TODO: add
+    yorsStew,
 
     // KOREAN
     koreanBeefBulgogi,
@@ -409,7 +409,7 @@ const recipes = [
     cherryAndDarkChocolateCrostata,
 
     // BRITISH
-    fishAndChips, // TODO: find recipe
+    fishAndChips,
     englishScones,
     chickenPotPie,
     stickyToffeePudding,
@@ -567,9 +567,6 @@ module.exports = recipes;
 // - Gulai Ayam Padang (just the curry itself) - https://dailycookingquest.com/gulai-ayam-padang.html
 // (This is to pour over the Ayam Goreng)
 
-// ITALIAN:
-// - Focaccia Bread 
-
 // MEXICAN:
 // - Tortillas - 
 
@@ -606,14 +603,11 @@ module.exports = recipes;
 
 // creme brulee french toast - https://www.thekitchn.com/creme-brulee-french-toast-recipe-23711485
 
-
 // Mississippi Mud Potatoes - https://www.thekitchn.com/mississippi-mud-potatoes-recipe-23713064
 // Irish Potato Boxty - https://www.foodandwine.com/irish-potato-boxty-6422424
 // Beef and Broccoli - https://natashaskitchen.com/beef-and-broccoli/ (1.8K)
 // Beef and Broccoli - https://www.justataste.com/easy-beef-and-broccoli-recipe/ (1.2K)
 // Carrot Cake Scones - https://homeiswheretheboatis.net/2025/03/18/everybunnys-favorite-carrot-cake-scones-with-cream-cheese-glaze/
-
-
 
 // Breakfast Sausage Balls - https://www.simplyrecipes.com/breakfast-sausage-balls-recipe-11701329
 // Charlotte De Chou - https://parade.com/food/charlotte-de-chou

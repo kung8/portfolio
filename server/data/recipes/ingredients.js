@@ -1111,6 +1111,7 @@ const INGREDIENTS = {
         PORK_BELLY: {
             name: 'pork belly', category: INGREDIENT_CATEGORY.MEAT, img: "https://images.unsplash.com/photo-1624174782964-e541742299ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcwMjY2fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        PORK_BUTT: { name: 'pork butt', category: INGREDIENT_CATEGORY.MEAT },
         PORK_CHOPS: { name: 'pork chops', category: INGREDIENT_CATEGORY.MEAT },
         PORK_LOIN: { name: 'pork loin', category: INGREDIENT_CATEGORY.MEAT },
         PORK_RIBS: { name: 'pork ribs', category: INGREDIENT_CATEGORY.MEAT },

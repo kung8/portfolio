@@ -1,6 +1,20 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { VEGETABLE_OIL, POTATO, CARROT, SWEET_ONION, GARLIC, RED_BELL_PEPPER, CHICKEN_BOUILLON, RED_WINE, WATER, SOUR_CREAM, PAPRIKA, SALT, BLACK_PEPPER, EGG, HOT_DOG, FENNEL_SEEDS, PORK_BUTT, CORNSTARCH } = require('./ingredients');
+
+const SEARING_SECTION = 'Searing';
+const CARAMELIZED_ONION_SECTION = 'Caramelized Onion';
+const GARLIC_SECTION = 'Garlic';
+const VEGETABLE_SECTION = 'Vegetables';
+const SEASONING_SECTION = 'Seasoning';
+const CORNSTARCH_SLURRY_SECTION = 'Cornstarch Slurry';
+
+const SEAR_PORK = 'Sear Pork';
+const CARAMELIZE_ONION = 'Caramelize Onion';
+const SAUTE_VEGETABLES = 'Saute Vegetables';
+const COOK_STEW = 'Cook Stew';
+const FRY_EGG = 'Fry Egg';
+const COOK_HOTDOG = 'Cook Hotdog';
 
 module.exports = {
     wip: true,
@@ -9,12 +23,12 @@ module.exports = {
     img: '',
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
-    available: false,
+    available: true,
     recommended: false,
-    category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.JAPANESE],
     method: [METHODS.PAN_FRY],
-    protein: [PROTEIN.EGG,PROTEIN.PORK],
+    protein: [PROTEIN.EGG, PROTEIN.PORK],
     type: [TYPES.CURRY],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
@@ -25,15 +39,48 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
+        { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEARING_SECTION },
+        { ...PORK_BUTT, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'boneless, bite size cubes', section: SEARING_SECTION },
+        { ...SWEET_ONION, amount: 2, unit: '', additionalDetails: 'diced', section: CARAMELIZED_ONION_SECTION },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: GARLIC_SECTION },
+        { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'diced', section: VEGETABLE_SECTION },
+        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: VEGETABLE_SECTION },
+        { ...POTATO, amount: 5, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: VEGETABLE_SECTION },
+        { ...PAPRIKA, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASONING_SECTION },
+        { ...FENNEL_SEEDS, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONING_SECTION },
+        { ...SALT, amount: '', unit: '', additionalDetails: '', section: SEASONING_SECTION },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SEASONING_SECTION },
+        { ...RED_WINE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...CHICKEN_BOUILLON, amount: 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: CORNSTARCH_SLURRY_SECTION },
+        { ...WATER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: CORNSTARCH_SLURRY_SECTION },
+        { ...SOUR_CREAM, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...EGG, amount: 8, unit: '', additionalDetails: '', section: '' },
+        { ...HOT_DOG, amount: 4, unit: '', additionalDetails: '', section: '' },
     ],
     appliances: [
-        { name: '' },
+        { name: 'stove' },
     ],
     supplies: [
-        { name: '' },
+        { name: 'large pot' },
+        { name: 'frying pan' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: 'Over medium heat, heat oil in a large pot.', type: SEAR_PORK },
+        { step: 'Add pork. Brown on all sides. Remove pork.', type: SEAR_PORK },
+        { step: 'Add onion. Cook until caramelized (about 10 to 15 minutes).', type: CARAMELIZE_ONION },
+        { step: 'Add garlic. Cook until fragrant.', type: SAUTE_VEGETABLES },
+        { step: 'Add the "Vegetable" section ingredients. Saute for a few minutes.', type: SAUTE_VEGETABLES },
+        { step: 'Re-add the pork and the "Seasoning" section ingredients. Mix.', type: COOK_STEW },
+        { step: 'Add red wine. Deglaze the pot.', type: COOK_STEW },
+        { step: 'Add chicken bouillon and water. It should almost cover the veggies. Bring to a boil.', type: COOK_STEW },
+        { step: 'Reduce to low heat. Cover. Simmer for an hour.', type: COOK_STEW },
+        { step: 'Cook until potatoes are tender. Uncover the lid a little to let steam escape.', type: COOK_STEW },
+        { step: 'Let the stew reduce for 15 minutes. If you need to thicken it some more, you can add optionally add the cornstarch slurry.', type: COOK_STEW },
+        { step: 'In a frying pan, fry eggs one at a time. Set aside once they are done.', type: FRY_EGG },
+        { step: 'Along one side of each hot dog, cut ends to form tentacles.', type: COOK_HOTDOG },
+        { step: 'Brown the hotdogs in the frying pan.', type: COOK_HOTDOG },
+        { step: 'Serve each bowl of stew with one octopus hotdog and fried egg. Enjoy this Spy x Family inspired dish.', type: SECTIONS.SERVE },
     ]
 };
