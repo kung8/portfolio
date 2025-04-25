@@ -120,12 +120,12 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: IN_PROGRESS,
+            date: "04/23/25",
             title: "Age of Heroes",
             author: ["Brandon Sanderson"],
             source: ["Alo Tuaua"],
             review: [
-                ""
+                "Overall a really good book and the bridging of the details and stories from the first two books makes much more sense. I loved the characters especially Vin, Elend, Sazed and Spook. There was so much going on throughout the book. The characters evolved throughout the series and eventually found themselves. The world Brandon Sanderson created was an incredible one. The descriptiveness and the fact that he had me on the edge of my seat wondering how are things going to get better and end the way I hope. I guessed some things and the ending wasn't what I'd expected. Looking forward to continuing with Sanderson's other books."
             ],
             quotes: [
                 {
@@ -152,9 +152,21 @@ module.exports = {
                     thoughts: "Faith isn't just for good times.",
                     context: "Sazed recalls something that he said to Vin back in the first book."
                 },
+                {
+                    text: "'In composition, not in temperament or by birth,' Elend said, smiling. 'I'm an amalgamation of what I've needed to be. Part scholar, part rebel, part nobleman, part Mistborn, and part soldier. Sometimes I don't even know myself. I had a devil of a time getting all those pieces to work together. And just when I'm starting to get it figured out, the world up and ends on me. Ah, here we are.'",
+                    pages: [479, 480],
+                    thoughts: "We are all a combination of our experiences and the things that we have done.",
+                    context: "Elend and Yomen are discussing their leadership styles."
+                },
+                {
+                    text: "That was how things often went. Some important decisions were made in public, on a battlefield or in a conference room. But others happened quietly, unseen by others. That didn't make the decision any less important to Sazed. He would believe. Not because something had been proven to him beyond his ability to deny. But because he chose to.",
+                    pages: [510],
+                    thoughts: "I personally think that the decisions we make behind closed doors and in our hearts are even more important than in public spaces.",
+                    context: "Sazed is thinking about the decisions that he's made and reflected on their importance."
+                },
             ],
-            pageCount: 0,
-            rating: NO_RATING,
+            pageCount: 572,
+            rating: 5,
         },
         {
             date: NO_DATE,
