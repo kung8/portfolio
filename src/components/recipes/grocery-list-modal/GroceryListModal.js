@@ -269,17 +269,17 @@ export const GroceryListModal = ({
                     }}
 
                     // only add if the original item didn't have a mealPlanningDateRange and date and ONLY if the meal plan doesn't already have the meal (doesn't matter about the purchase date)
-                    addMealPlan={(newMeal) => {
+                    addMealPlan={(newMeal, originalItem) => {
                         const hasExistingMealPlan = mealPlan.find(meal => {
                             const startMealDate = meal?.mealPlanningDateRange?.[0];
                             const endMealDate = meal?.mealPlanningDateRange?.[1];
-                            const newMealStartMealDate = newMeal?.mealPlanningDateRange?.[0];
-                            const newMealEndMealDate = newMeal?.mealPlanningDateRange?.[1];                            
-                            return startMealDate === newMealStartMealDate && endMealDate === newMealEndMealDate && meal.recipeName === newMeal.recipeName;
+                            const originalStartMealDate = originalItem?.mealPlanningDateRange?.[0];
+                            const originalEndMealDate = originalItem?.mealPlanningDateRange?.[1];
+                            return startMealDate === originalStartMealDate && endMealDate === originalEndMealDate && meal.recipeName === originalItem.recipeName;
                         });
 
                         // only add if (1) the meal doesn't already exist and (2) the newMeal has the required fields: recipeName and mealPlanningDateRange
-                        if (!hasExistingMealPlan && newMeal.recipeName && newMeal.mealPlanningDateRange?.[0] && newMeal.mealPlanningDateRange?.[1]) {                            
+                        if (!hasExistingMealPlan && newMeal.recipeName && newMeal.mealPlanningDateRange?.[0] && newMeal.mealPlanningDateRange?.[1]) {
                             setMealPlan(prev => {
                                 const newMealPlan = [...prev, newMeal];
                                 updateLocalStorage({ mealPlan: newMealPlan });
@@ -334,7 +334,7 @@ export const GroceryListModal = ({
                 />
             )}
             {isSettingsModalOpen && (
-                <SettingsModal 
+                <SettingsModal
                     closeModal={closeSettingsModal}
                     handleApply={() => {
                         updateStartingDay(startingDay);

@@ -76,6 +76,12 @@ module.exports = {
             TYPES: Object.values(recipeCategories.TYPES).filter(item => type.includes(item)),
         });
     },
+    getRecipeByName: (req, res) => {
+        const { recipeName } = req.query;
+        const recipe = recipes.find(item => item.name === recipeName);
+        if (recipe) return res.send(recipe);
+        return res.sendStatus(404);
+    },
     message: async (req, res) => {
         const { name, message, email, subject } = req.body;
 

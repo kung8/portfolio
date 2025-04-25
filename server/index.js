@@ -9,6 +9,7 @@ app.use(express.static(`${__dirname}/../build`));
 app.post('/api/message', ctrl.message);
 app.get('/api/recipe/category', ctrl.getRecipeCategories);
 app.get('/api/recipe/featured', ctrl.getFeaturedRecipes);
+app.get('/api/recipe/name', ctrl.getRecipeByName);
 app.get('/api/ingredient/category', ctrl.getIngredientCategories);
 app.get('/api/ingredient', ctrl.getIngredients);
 app.get('/api/hero', ctrl.getHeroData);

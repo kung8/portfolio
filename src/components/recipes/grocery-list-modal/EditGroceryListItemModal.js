@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import { useGetIngredientCategories } from '../../../hooks';
 import { DATE_FORMAT, READABLE_SHORT_DATE } from '../constants';
+import { useRecipeType } from '../hooks/use-recipe-type';
 import { RecipeDateInput } from './RecipeDateInput';
 import { RecipeCategoryInput } from './RecipeCategoryInput';
 import { getValidDateRangeError } from './getValidDateRangeError';
@@ -47,6 +48,8 @@ export const EditGroceryListItemModal = ({
 
         return formattedDates;
     }
+
+    const { getRecipe } = useRecipeType();
 
     return (
         <div className="edit-ingredient-modal">
@@ -153,7 +156,7 @@ export const EditGroceryListItemModal = ({
                 </div>
                 <ModalFooter
                     actionLabel={'Save'}
-                    handleAction={() => {
+                    handleAction={async () => {
                         const finalItemToEdit = { ...itemToEdit };
                         if (finalItemToEdit?.mealPlanningDateRange?.[0] && !finalItemToEdit?.mealPlanningDateRange?.[1]) {
                             finalItemToEdit.mealPlanningDateRange = [finalItemToEdit.mealPlanningDateRange[0], finalItemToEdit.mealPlanningDateRange[0]];
@@ -194,6 +197,8 @@ export const EditGroceryListItemModal = ({
                             updateMealPlan(originalItemToEdit, updatedMealPlan);
                         }
 
+                        const recipe = await getRecipe(finalItemToEdit.recipeName);
+
                         // add the mealPlanningDateRange if it doesn't exist
                         addMealPlan({
                             id: generateUUID(),
@@ -201,8 +206,8 @@ export const EditGroceryListItemModal = ({
                             date: finalItemToEdit.date,
                             mealPlanningDateRange: finalItemToEdit.mealPlanningDateRange,
                             recipeName: finalItemToEdit.recipeName,
-                            type: 'Dinner' // TODO: should look up the type based on the recipeName?
-                        });
+                            type: recipe?.category?.[0] ?? 'Dinner' // TODO: should look up the type based on the recipeName?
+                        }, originalItemToEdit);
 
                         const onlyItemNameChanged = originalItemToEdit.name !== finalItemToEdit.name &&
                             originalItemToEdit.category === finalItemToEdit.category &&
