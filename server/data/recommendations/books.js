@@ -40,7 +40,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 400,
             rating: NO_RATING,
         },
         {
@@ -59,7 +59,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 400,
             rating: NO_RATING,
         },
         {
@@ -78,7 +78,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 320,
             rating: NO_RATING,
         },
         {
@@ -97,7 +97,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 448,
             rating: NO_RATING,
         },
         {
@@ -116,11 +116,11 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 273,
             rating: NO_RATING,
         },
         {
-            date: "04/23/25",
+            date: "04/23/2025",
             title: "Age of Heroes",
             author: ["Brandon Sanderson"],
             source: ["Alo Tuaua"],
@@ -184,7 +184,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 352,
             rating: NO_RATING,
         },
         {
@@ -203,7 +203,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 208,
             rating: NO_RATING,
         },
         {
@@ -222,7 +222,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 324,
             rating: NO_RATING,
         },
         {
@@ -241,7 +241,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 464,
             rating: NO_RATING,
         },
         {
@@ -260,7 +260,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 288,
             rating: NO_RATING,
         },
         {
@@ -279,28 +279,9 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 320,
             rating: NO_RATING,
         },
-        // {
-        //     date: NO_DATE,
-        //     title: "The Fellowship of the Ring",
-        //     author: ["J.R.R. Tolkien"],
-        //     source: ["online"],
-        //     review: [
-        //         ""
-        //     ],
-        //     quotes: [
-        //         {
-        //             text: "",
-        //             pages: [],
-        //             thoughts: "",
-        //             context: ""
-        //         },
-        //     ],
-        //     pageCount: 0,
-        //     rating: NO_RATING,
-        // },
         {
             date: NO_DATE,
             title: "The Love That Split the World",
@@ -317,7 +298,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 400,
             rating: NO_RATING,
         },
         {
@@ -336,7 +317,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 336,
             rating: NO_RATING,
         },
         {
@@ -355,7 +336,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 336,
             rating: NO_RATING,
         },
         {
@@ -481,13 +462,13 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 336,
             rating: NO_RATING,
         },
         {
             date: NO_DATE,
             title: "The Influence Trap",
-            author: ["Carl Lyons"],
+            author: ["David Robson"],
             source: ["online"],
             review: [
                 ""
@@ -500,7 +481,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 336,
             rating: NO_RATING,
         },
         {
@@ -519,12 +500,12 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 304,
             rating: NO_RATING,
         },
         {
             date: NO_DATE,
-            title: "Leaving With Seal",
+            title: "Living With A Seal",
             author: ["Jesse Itzler"],
             source: ["online"],
             review: [
@@ -538,7 +519,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 272,
             rating: NO_RATING,
         },
         {
@@ -557,7 +538,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 698,
             rating: NO_RATING,
         },
         {
@@ -576,7 +557,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 208,
             rating: NO_RATING,
         },
         {
@@ -595,7 +576,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 352,
             rating: NO_RATING,
         },
         {
@@ -614,7 +595,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 364,
             rating: NO_RATING,
         },
         {
@@ -633,7 +614,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 304,
             rating: NO_RATING,
         },
         {
@@ -652,7 +633,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 304,
             rating: NO_RATING,
         },
         {
@@ -671,7 +652,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 464,
             rating: NO_RATING,
         },
         {
@@ -690,7 +671,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 320,
             rating: NO_RATING,
         },
         {
@@ -709,7 +690,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 320,
             rating: NO_RATING,
         },
         {
@@ -728,7 +709,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 368,
             rating: NO_RATING,
         },
         {
@@ -747,7 +728,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 160,
             rating: NO_RATING,
         },
         {
@@ -766,7 +747,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 296,
             rating: NO_RATING,
         },
         {
@@ -785,7 +766,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 334,
             rating: NO_RATING,
         },
         {
@@ -804,7 +785,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 284,
             rating: NO_RATING,
         },
         {
@@ -823,7 +804,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 256,
             rating: NO_RATING,
         },
         {
@@ -842,7 +823,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 206,
             rating: NO_RATING,
         },
         {
@@ -861,7 +842,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 288,
             rating: NO_RATING,
         },
         {
@@ -880,7 +861,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 158,
             rating: NO_RATING,
         },
         {
@@ -899,7 +880,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 369,
             rating: NO_RATING,
         },
         {
@@ -918,7 +899,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 171,
             rating: NO_RATING,
         },
         {
@@ -937,12 +918,12 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 320,
             rating: NO_RATING,
         },
         {
             date: NO_DATE,
-            title: "The Almanak of Naval Ravikant",
+            title: "The Almanack of Naval Ravikant",
             author: ["Eric Jorgenson"],
             source: ["online"],
             review: [
@@ -956,7 +937,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 242,
             rating: NO_RATING,
         },
         {
@@ -975,7 +956,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 256,
             rating: NO_RATING,
         },
         {
@@ -994,7 +975,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 228,
             rating: NO_RATING,
         },
         {
@@ -1013,7 +994,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 192,
             rating: NO_RATING,
         },
         {
@@ -1032,7 +1013,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 288,
             rating: NO_RATING,
         },
         {
@@ -1051,7 +1032,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 137,
             rating: NO_RATING,
         },
         {
@@ -1070,7 +1051,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 208,
             rating: NO_RATING,
         },
         {
@@ -1089,7 +1070,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 288,
             rating: NO_RATING,
         },
         {
@@ -1108,7 +1089,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 304,
             rating: NO_RATING,
         },
         {
@@ -1127,7 +1108,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 352,
             rating: NO_RATING,
         },
         {
@@ -1146,7 +1127,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 368,
             rating: NO_RATING,
         },
         {
@@ -1165,7 +1146,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 139,
             rating: NO_RATING,
         },
         {
@@ -1184,7 +1165,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 232,
             rating: NO_RATING,
         },
         {
@@ -1203,7 +1184,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 192,
             rating: NO_RATING,
         },
         {
@@ -1222,7 +1203,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 208,
             rating: NO_RATING,
         },
         {
@@ -1241,7 +1222,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 320,
             rating: NO_RATING,
         },
         {
@@ -1260,7 +1241,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 144,
             rating: NO_RATING,
         },
         {
@@ -1279,7 +1260,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 272,
             rating: NO_RATING,
         },
         {
@@ -1298,7 +1279,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 200,
             rating: NO_RATING,
         },
         {
@@ -1317,7 +1298,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 446,
             rating: NO_RATING,
         },
         {
@@ -1336,7 +1317,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 335,
             rating: NO_RATING,
         },
         {
@@ -1355,7 +1336,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 299,
             rating: NO_RATING,
         },
         {
@@ -1374,7 +1355,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 302,
             rating: NO_RATING,
         },
         {
@@ -1393,7 +1374,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 240,
             rating: NO_RATING,
         },
         {
@@ -1412,7 +1393,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 312,
             rating: NO_RATING,
         },
         {
@@ -1431,7 +1412,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 304,
             rating: NO_RATING,
         },
         {
@@ -1450,7 +1431,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 292,
             rating: NO_RATING,
         },
         {
@@ -1469,7 +1450,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 119,
             rating: NO_RATING,
         },
         {
@@ -1488,7 +1469,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 300,
             rating: NO_RATING,
         },
         {
@@ -1507,7 +1488,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 47,
             rating: NO_RATING,
         },
         {
@@ -1526,7 +1507,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 112,
             rating: NO_RATING,
         },
         {
@@ -1545,7 +1526,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 315,
             rating: NO_RATING,
         },
         {
@@ -1564,7 +1545,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 312,
             rating: NO_RATING,
         },
         {
@@ -1583,26 +1564,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
-            rating: NO_RATING,
-        },
-        {
-            date: NO_DATE,
-            title: "Twilight Saga",
-            author: ["Stephenie Meyer"],
-            source: ["Top Read Books in the World"],
-            review: [
-                ""
-            ],
-            quotes: [
-                {
-                    text: "",
-                    pages: [],
-                    thoughts: "",
-                    context: ""
-                },
-            ],
-            pageCount: 0,
+            pageCount: 320,
             rating: NO_RATING,
         },
         {
@@ -1621,7 +1583,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 489,
             rating: NO_RATING,
         },
         {
@@ -1640,7 +1602,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 200,
             rating: NO_RATING,
         },
         {
@@ -1659,7 +1621,7 @@ module.exports = {
                     context: ""
                 },
             ],
-            pageCount: 0,
+            pageCount: 146,
             rating: NO_RATING,
         },
         {
