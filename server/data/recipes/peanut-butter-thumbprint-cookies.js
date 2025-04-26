@@ -1,4 +1,12 @@
-// const example = '../assets/Products/example.jpeg';
+const cookies1 = '../assets/Products/pb-thumbprint-cookies-1.jpeg';
+const cookies2 = '../assets/Products/pb-thumbprint-cookies-2.jpeg';
+const cookies3 = '../assets/Products/pb-thumbprint-cookies-3.jpeg';
+const cookies4 = '../assets/Products/pb-thumbprint-cookies-4.jpeg';
+const cookies5 = '../assets/Products/pb-thumbprint-cookies-5.jpeg';
+const cookies6 = '../assets/Products/pb-thumbprint-cookies-6.jpeg';
+const cookies7 = '../assets/Products/pb-thumbprint-cookies-7.jpeg';
+const cookies8 = '../assets/Products/pb-thumbprint-cookies-8.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { PEANUT_BUTTER, UNSALTED_BUTTER, WHITE_SUGAR, BROWN_SUGAR, SALT, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, BAKING_SODA, HERSHEYS_KISSES } = require('./ingredients');
 
@@ -11,10 +19,9 @@ const FORM_DOUGH = 'Form Dough';
 const BAKE = 'Bake';
 
 module.exports = {
-    wip: true,
     cardName: 'PB Thumbprint Cookies',
     name: 'Peanut Butter Thumbprint Cookies',
-    img: '',
+    img: cookies8,
     recipeAuthor: '',
     recipeFinder: 'Justin Ung',
     available: true,
@@ -53,14 +60,17 @@ module.exports = {
     directions: [
         { step: 'Preheat the oven to 375ºF.', type: FORM_DOUGH },
         { step: 'Place silicon baking mat on a baking sheet.', type: FORM_DOUGH },
-        { step: 'In a stand mixer, cream the "Dry Ingredients" section ingredients until combined.', type: FORM_DOUGH },
-        { step: 'Add the "Wet Ingredients" section ingredients. Beat together and scrape down.', type: FORM_DOUGH },
-        { step: 'Add the "Wet 2 Ingredients" section ingredients. Beat on low until combined.', type: FORM_DOUGH },
-        { step: 'Form 1-inch balls and place on baking sheet 2 inches apart.', type: FORM_DOUGH },
-        { step: 'Bake until cookies are puffy (for about 8 to 10 minutes).', type: BAKE },
-        { step: 'Immediately add and press kisses to the center of the cookie.', type: BAKE },
+        { step: 'In a stand mixer, cream the "Dry Ingredients" section ingredients until combined.', type: FORM_DOUGH, img: [cookies1, cookies2] },
+        { step: 'Add the "Wet Ingredients" section ingredients. Beat together and scrape down.', type: FORM_DOUGH, img: cookies3 },
+        { step: 'Add the "Wet 2 Ingredients" section ingredients. Beat on low until combined.', type: FORM_DOUGH, img: cookies4 },
+        { step: 'Form 1-inch balls and place on baking sheet 2 inches apart.', type: FORM_DOUGH, img: cookies5 },
+        { step: 'Bake until cookies are puffy (for about 8 to 10 minutes).', type: BAKE, img: cookies6 },
+        { step: 'Immediately add and press kisses to the center of the cookie.', type: BAKE, img: cookies7 },
         { step: 'Let cookies cool completely on the pan.', type: BAKE },
         { step: 'Enjoy these delicious treats.', type: SECTIONS.SERVE },
         { step: 'Store in an airtight container for up to a week.', type: SECTIONS.STORE },
+    ],
+    notes: [
+        { note: 'Do not do what I did and accidentally leave the spatula in the bowl and turn on the mixer.' },
     ]
 };
