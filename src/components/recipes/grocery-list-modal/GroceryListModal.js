@@ -296,8 +296,10 @@ export const GroceryListModal = ({
                             const newMealPlan = prev.map((meal => {
                                 const startMealDate = meal?.mealPlanningDateRange?.[0];
                                 const endMealDate = meal?.mealPlanningDateRange?.[1];
+                                const originalRecipeName = originalItem?.recipeName;
+                                const mealRecipeName = meal?.recipeName;
 
-                                if (startMealDate === originalItemStartingDate && endMealDate === originalItemEndingDate) {
+                                if (startMealDate === originalItemStartingDate && endMealDate === originalItemEndingDate && originalRecipeName === mealRecipeName) {
                                     return { ...meal, mealPlanningDateRange: newItem.mealPlanningDateRange, date: newItem.date, recipeName: newItem.recipeName };
                                 }
                                 return meal;
