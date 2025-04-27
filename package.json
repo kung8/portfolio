@@ -4,9 +4,6 @@
   "private": true,
   "dependencies": {
     "@tanstack/react-query": "^5.71.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
     "dayjs": "^1.11.13",
     "dotenv": "^8.2.0",
@@ -27,7 +24,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "create-recipe": "node server/create-recipe-file.js"
   },
