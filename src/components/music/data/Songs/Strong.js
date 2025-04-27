@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Strong = () => (
     <div className="music-card">
         <span className="capo">Capo 3</span>

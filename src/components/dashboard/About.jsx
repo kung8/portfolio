@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const About = ({ id }) => {
     return (
         <div id={id} className='about-container section-container'>

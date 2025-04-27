@@ -1,4 +1,3 @@
-import React from 'react';
 import { RecommendationContainer } from './RecommendationContainer';
 import { ReviewContainer } from './ReviewContainer';
 

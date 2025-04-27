@@ -1,4 +1,3 @@
-import React from 'react';
 import { convertNumberToTime, convertTimeToNumber } from '../../utils/time';
 
 export const ProgressBar = ({

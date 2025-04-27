@@ -1,4 +1,3 @@
-import React from 'react';
 import dayjs from 'dayjs';
 import closeBtn from '../../../Assets/close.png';
 import Calendar from 'react-calendar';

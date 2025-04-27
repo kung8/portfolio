@@ -1,5 +1,3 @@
-import React from 'react';
-
 const HomecomingQueen = () => (
     <div className="music-card">
         <span className="capo">Capo 1</span>

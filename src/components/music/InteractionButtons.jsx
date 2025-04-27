@@ -1,4 +1,3 @@
-import React from 'react';
 import playBtn from '../../Assets/play-btn.png';
 import pauseBtn from '../../Assets/pause-btn.png';
 import previousBtn from '../../Assets/previous-btn.png';

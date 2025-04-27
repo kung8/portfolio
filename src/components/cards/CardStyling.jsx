@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function CardStyling(props) {
     if (props.card) {
         return style(props.card);

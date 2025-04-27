@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const Avocado = () => (
     <div className="avocado-container">
         <div className="avocado">

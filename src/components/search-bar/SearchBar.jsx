@@ -1,4 +1,3 @@
-import React from 'react';
 import xBtn from '../../Assets/x.png';
 
 export const SearchBar = ({ 

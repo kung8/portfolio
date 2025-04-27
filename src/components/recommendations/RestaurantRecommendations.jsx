@@ -1,4 +1,3 @@
-import React from 'react';
 import { RecommendationPage, ReviewContainer } from './RecommendationPage';
 
 export const RestaurantRecommendations = ({ category, reviews }) => {

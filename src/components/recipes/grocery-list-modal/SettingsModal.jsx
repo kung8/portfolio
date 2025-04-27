@@ -1,4 +1,3 @@
-import React from 'react';
 import closeBtn from '../../../Assets/x.png';
 import { getStartingDay } from '../utils';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Watermelon } from './loaders/Watermelon';
 // import { Avocado } from './loaders/Avocado';
 

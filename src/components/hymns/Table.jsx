@@ -1,4 +1,3 @@
-import React from 'react';
 // import Spreadsheet from "react-spreadsheet";
 
 export const Table = ({ data, headings }) => {

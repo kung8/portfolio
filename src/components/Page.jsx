@@ -1,4 +1,3 @@
-import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 const Header = ({ backRoute = '/', backText = 'Back Home', children, title, customTitle, history }) => (

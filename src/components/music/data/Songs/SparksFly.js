@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SparksFly = () => (
     <div className="music-card">
         <span className="capo">Capo 7</span>

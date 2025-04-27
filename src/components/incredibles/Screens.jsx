@@ -1,4 +1,3 @@
-import React from 'react';
 import finance from '../../Assets/dollar-symbol.png';
 
 export default function Screens(props) {

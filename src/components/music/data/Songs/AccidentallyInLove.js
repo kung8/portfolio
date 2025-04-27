@@ -1,5 +1,3 @@
-import React from 'react';
-
 const AccidentallyInLove = () => (
     <div className="music-card">
         <span className="capo">Capo 9</span>

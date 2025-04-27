@@ -1,4 +1,3 @@
-import React from 'react';
 import arrow from '../../../Assets/arrow.png';
 
 export const RecipeCategoryInput = ({
