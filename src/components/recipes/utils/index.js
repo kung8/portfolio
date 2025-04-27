@@ -1,3 +1,4 @@
+export * from './categorize-recipe-type';
 export * from './convert-decimal-to-fraction';
 export * from './format-ingredient-item';
 export * from './format-time';

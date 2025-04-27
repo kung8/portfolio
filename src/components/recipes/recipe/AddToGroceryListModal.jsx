@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_SHORT_DATE } from '../constants';
 import { useGetRecipeCategories } from '../../../hooks/use-get-recipe-categories';
-import { categorizeRecipeType } from '../categorize-recipe-type';
+import { categorizeRecipeType } from '../utils';
 import { RecipeDateInput } from '../grocery-list-modal/RecipeDateInput';
 import { RecipeCategoryInput } from '../grocery-list-modal/RecipeCategoryInput';
 import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';

@@ -9,7 +9,7 @@ import { useGroceryList } from '../hooks/use-grocery-list';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
 import { GROCERY_LIST_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
-import { categorizeRecipeType } from '../categorize-recipe-type';
+import { categorizeRecipeType } from '../utils';
 import { RecipeImageModal } from './RecipeImageModal';
 import { RecipeContext } from './RecipeContext';
 import { getIngredientData, handleModalClass } from '../utils';
