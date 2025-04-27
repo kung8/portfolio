@@ -105,9 +105,8 @@ module.exports = {
         { step: 'Add garlic and bell peppers. Cook for a few minutes.', type: COOK_CHICKEN_AND_VEGGIES, img: veggiesChicken },
         { step: 'Set aside.', type: COOK_CHICKEN_AND_VEGGIES },
 
-        { step: 'Over medium-high heat, boil water in a saucepan.', type: COOK_NOODLES, img: boilingNoodles },
-        { step: 'Add rice noodles. Cook until just barely tender (about 3 to 5 minutes). Be careful not to overcook the noodles.', type: COOK_NOODLES, img: boilingNoodles },
-        { step: 'Drain in a strainer. Rinse noodles under cold water.', type: COOK_NOODLES, img: [rinsing, noodles] },
+        { step: 'Cook rice noodles until tender (about 3 to 5 minutes) in strainer.', type: COOK_NOODLES, img: boilingNoodles },
+        { step: 'Rinse noodles under cold water.', type: COOK_NOODLES, img: [rinsing, noodles] },
 
         { step: 'In a medium bowl, mix together the sauce ingredients.', type: PREP_SAUCE, img: sauce },
         { step: 'Set aside sauce.', type: PREP_SAUCE },
