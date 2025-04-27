@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import dayjs from 'dayjs';
 import { SortBy } from './SortBy';
 import { MealItem } from './MealItem';

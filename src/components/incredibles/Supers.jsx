@@ -1,4 +1,4 @@
-// import React, { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 // import { useGetData } from '../../hooks';
 
 // export default function Supers() {
@@ -94,7 +94,7 @@
 //     return mapHeroes();
 // }
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default function Supers() {

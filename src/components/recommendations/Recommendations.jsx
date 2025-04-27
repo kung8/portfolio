@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NonDashboardPage } from '../Page';
 import { useGetData } from '../../hooks';
 import { BookRecommendations } from './BookRecommendations';

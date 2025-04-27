@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Dropdown } from '../dropdown/dropdown';
 import { ModalBody, ModalContent, ModalHeader } from '../modal/ModalContent';
 import check from '../../Assets/check.png';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { LeftPanel, RightPanel } from '.';
 import { Cursor } from '../Cursor';
 

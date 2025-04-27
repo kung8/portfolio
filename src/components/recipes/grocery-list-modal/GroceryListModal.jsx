@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { DeleteGroceryListModal } from './DeleteGroceryListModal';
 import { EditGroceryListItemModal } from './EditGroceryListItemModal';
 import { DeleteMealPlanModal } from './DeleteMealPlanModal';

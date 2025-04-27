@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import closeBtn from '../../../Assets/x.png';
 import settingsBtn from '../../../Assets/settings.png';
 import { Dropdown } from '../../dropdown/dropdown';

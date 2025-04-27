@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Card from './CreatingCard';
 import cardsArr from './Cards';
 import clonedeep from 'lodash.clonedeep';

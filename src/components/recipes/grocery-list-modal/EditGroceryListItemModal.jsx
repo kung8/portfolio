@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import { useGetIngredientCategories } from '../../../hooks';
 import { DATE_FORMAT, READABLE_SHORT_DATE } from '../constants';

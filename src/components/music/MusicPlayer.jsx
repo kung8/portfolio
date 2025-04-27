@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { orderTypeMap } from './data';
 import { convertTimeToNumber } from '../../utils/time';
 import { AudioPlayer, InteractionButtons, ProgressBar, QueueModal, VolumeControls } from '.';

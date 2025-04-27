@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import deleteIcon from '../../Assets/close.png';
 import Wheel from './Wheel';
 import { times } from './time';

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RecommendationPage, RecommendationContainer, ReviewContainer } from './RecommendationPage';
 import { SearchBar } from '../search-bar/SearchBar';
 import { Filter } from '../filter/Filter';

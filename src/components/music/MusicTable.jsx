@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { lyricMap } from './data';
 import playLogo from '../../Assets/play-btn.png';
 import pauseLogo from '../../Assets/pause-btn.png';
