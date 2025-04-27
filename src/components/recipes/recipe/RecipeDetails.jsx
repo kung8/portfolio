@@ -1,4 +1,3 @@
-import React from 'react';
 import { Appliances } from './Appliances';
 import { CookTime } from './CookTime';
 import { Directions } from './Directions';

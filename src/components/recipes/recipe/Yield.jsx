@@ -1,4 +1,3 @@
-import React from 'react';
 import { formatYieldUnit } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 import { InaccurateTimeStatement } from './InaccurateTimeStatement';

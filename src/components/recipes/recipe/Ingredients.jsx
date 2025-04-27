@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { formatIngredientItem, getIngredientData } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 

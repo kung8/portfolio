@@ -1,4 +1,3 @@
-import React from 'react';
 import { useRecipeContext } from './RecipeContext';
 
 export const Supplies = () => {

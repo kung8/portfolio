@@ -1,4 +1,3 @@
-import React from 'react';
 import { useRecipeContext } from './RecipeContext';
 import { formatIngredientItem, getIngredientData } from '../utils';
 

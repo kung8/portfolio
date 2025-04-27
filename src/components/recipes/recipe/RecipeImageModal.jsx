@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { ModalBody, ModalContent } from '../../modal/ModalContent';
 import xBtn from '../../../Assets/x.png';
 import arrow from '../../../Assets/arrow.png';
