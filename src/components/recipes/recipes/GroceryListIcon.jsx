@@ -1,4 +1,3 @@
-import React from 'react';
 import list from '../../../Assets/list.png';
 
 export const GroceryListIcon = ({ imageOnClick }) => (

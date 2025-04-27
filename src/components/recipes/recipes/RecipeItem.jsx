@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const RecipeItem = ({ item, onClick }) => {
     return (
         <div className="recipe-item-container" onClick={onClick}>

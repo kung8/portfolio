@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const MenuFilter = ({ items, itemType, label, selectedFilters, setSelectedFilters }) => {
     const updateSelectedFilters = (prop, value) => {
         const filters = selectedFilters[prop];

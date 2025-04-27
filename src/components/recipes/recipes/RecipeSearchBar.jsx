@@ -1,4 +1,3 @@
-import React from 'react';
 import { SearchBar } from '../../search-bar/SearchBar';
 
 export const RecipeSearchBar = ({ search, setSearch, showFilters }) => (

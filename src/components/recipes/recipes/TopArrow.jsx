@@ -1,4 +1,3 @@
-import React from 'react';
 import top from '../../../Assets/top.png';
 
 export const TopArrow = () => (

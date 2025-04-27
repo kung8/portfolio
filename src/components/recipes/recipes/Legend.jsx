@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const Legend = () => (
     <div className="legend">
         <h4>Legend</h4>
