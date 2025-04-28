@@ -710,6 +710,7 @@ const INGREDIENTS = {
         },
         BACON_BITS: { name: 'bacon bits', category: INGREDIENT_CATEGORY.DELI },
         BOLOGNA: { name: 'bologna', category: INGREDIENT_CATEGORY.DELI },
+        BREAKFAST_SAUSAGE: { name: 'breakfast sausage', category: INGREDIENT_CATEGORY.DELI },
         CANADIAN_BACON: { name: 'canadian bacon', category: INGREDIENT_CATEGORY.DELI },
         CHICKEN_PATE: { name: 'chicken pate', category: INGREDIENT_CATEGORY.DELI },
         CHINESE_SAUSAGE: { name: 'chinese sausage', category: INGREDIENT_CATEGORY.DELI },
@@ -873,6 +874,7 @@ const INGREDIENTS = {
             name: 'bagels', category: INGREDIENT_CATEGORY.GRAIN, img: "https://images.unsplash.com/photo-1518562923427-19e694fbd8e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcwOTA3fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         BASMATI_RICE: { name: 'basmati rice', category: INGREDIENT_CATEGORY.GRAIN },
+        BISQUICK_CAKE_MIX: { name: 'bisquick cake mix', category: INGREDIENT_CATEGORY.GRAIN },
         BRIOCHE_BUNS: { name: 'brioche buns', category: INGREDIENT_CATEGORY.GRAIN },
         BREAD: {
             name: 'bread', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1675788939191-713c2abf3da6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcwODI4fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -919,6 +921,7 @@ const INGREDIENTS = {
         HOAGIE_BREAD: { name: 'hoagie bread', category: INGREDIENT_CATEGORY.GRAIN },
         HOT_DOG_BUNS: { name: 'hot dog buns', category: INGREDIENT_CATEGORY.GRAIN },
         JASMINE_RICE: { name: 'jasmine rice', category: INGREDIENT_CATEGORY.GRAIN },
+        KODIAK_CAKE_MIX: { name: 'kodiak cake mix', category: INGREDIENT_CATEGORY.GRAIN },
         KOREAN_GLASS_NOODLES: { name: 'korean glass noodles', category: INGREDIENT_CATEGORY.GRAIN },
         LASAGNA_NOODLES: { name: 'lasagna noodles', category: INGREDIENT_CATEGORY.GRAIN },
         LO_MEIN_NOODLES: { name: 'lo mein noodles', category: INGREDIENT_CATEGORY.GRAIN },

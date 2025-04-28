@@ -27,6 +27,7 @@ const blondie = require("./recipes/blondie");
 const blt = require("./recipes/blt");
 const breakfastBurrito = require("./recipes/breakfast-burrito");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
+const breakfastSausageBalls = require("./recipes/breakfast-sausage-balls");
 const brickleBars = require("./recipes/brickle-bars");
 const broccoliCheddarSoup = require("./recipes/broccoli-cheddar-soup");
 const brownedButter = require("./recipes/browned-butter");
@@ -503,6 +504,7 @@ const recipes = [
     waffles,
     buttermilkSyrup,
     biscuitsAndGravy,
+    breakfastSausageBalls,
     breakfastBurrito,
     breakfastSandwich,
     reubenSandwich,
@@ -609,5 +611,4 @@ module.exports = recipes;
 // Beef and Broccoli - https://www.justataste.com/easy-beef-and-broccoli-recipe/ (1.2K)
 // Carrot Cake Scones - https://homeiswheretheboatis.net/2025/03/18/everybunnys-favorite-carrot-cake-scones-with-cream-cheese-glaze/
 
-// Breakfast Sausage Balls - https://www.simplyrecipes.com/breakfast-sausage-balls-recipe-11701329
 // Charlotte De Chou - https://parade.com/food/charlotte-de-chou
