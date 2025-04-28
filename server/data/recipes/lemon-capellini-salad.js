@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
-const { ANGEL_HAIR_PASTA, LEMON, OLIVE_OIL, SALT, BLACK_PEPPER, DICED_TOMATO, CAPER, PARSLEY, GARLIC_SALT } = require('./ingredients');
+const { ANGEL_HAIR_PASTA, LEMON, OLIVE_OIL, BLACK_PEPPER, DICED_TOMATO, CAPER, PARSLEY, GARLIC_SALT } = require('./ingredients');
 
 const PASTA_SECTION = 'Pasta';
 const LEMON_JUICE_MIXTURE = 'Lemon Juice Mixture';
