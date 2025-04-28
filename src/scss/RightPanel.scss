@@ -1,5 +1,10 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+@forward 'Items';
+@forward 'Contact';
+
 .right-panel-container {
-    @include up($desktop) {
+    @include mixins.up(theme.$desktop) {
         width: calc(100% - 320px);
         display: flex;
         flex-direction: column;
@@ -13,7 +18,7 @@
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
     }
-    @include down($desktop) {
+    @include mixins.down(theme.$desktop) {
         width: 100%;
         overflow-y: unset;
         height: auto;
@@ -22,33 +27,33 @@
 
     .section-container {
         margin-bottom: 96px;
-        @include up($desktop) {
+        @include mixins.up(theme.$desktop) {
             width: 550px;
         }
-        @include up($mid-desktop) {
+        @include mixins.up(theme.$mid-desktop) {
             width: 700px;
         }
-        @include down($desktop) {
+        @include mixins.down(theme.$desktop) {
             width: 100%;
         }
 
         &.about-container {
             margin-top: 64px;
-            @include down($desktop) {
+            @include mixins.down(theme.$desktop) {
                 margin-top: 0;
             }
 
             .label {
                 display: none;
-                @include down($desktop) {
+                @include mixins.down(theme.$desktop) {
                     display: block;
                 }
             }
             p {
                 padding-left: 24px;
-                color: $default;
+                color: theme.$default;
                 line-height: 1.35;
-                @include down($desktop) {
+                @include mixins.down(theme.$desktop) {
                     padding-left: 0;
                     &:first-of-type {
                         margin-top: 32px;
@@ -61,7 +66,7 @@
                 }
 
                 span {
-                    color: $white;
+                    color: theme.$white;
                     font-weight: 600;
                 }
             }
@@ -74,20 +79,17 @@
         .label {
             padding-left: 24px;
             margin-bottom: 16px;
-            @include down($desktop) {
+            @include mixins.down(theme.$desktop) {
                 padding: 16px 0 16px 32px;
                 margin-bottom: 32px;
                 font-size: 14px;
                 position: sticky;
                 top: -1px;
-                background: $aqua;
+                background: theme.$aqua;
                 margin-bottom: 0;
                 width: 100vw;
                 margin-left: -32px;
             }
         }
-
-        @import 'Items';
-        @import 'Contact';
     }
 }

@@ -1,7 +1,24 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
 $turquoise: #608b91;
 $sky: #cdf0eb;
 $pearl: white;
 $silver: silver;
+
+.fade-in {
+    animation: fadein 0.1s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 .kronos {
     height: 100vh;
@@ -10,8 +27,7 @@ $silver: silver;
     display: flex;
     justify-content: center;
     align-items: center;
-    @extend .fade-in;
-    @include down($mobile-xl) {
+    @include mixins.down(theme.$mobile-xl) {
         height: unset;
         min-height: 100vh;
     }
@@ -22,11 +38,11 @@ $silver: silver;
         @media (max-width: 875px) {
             width: 750px;
         }
-        @include down($tablet) {
+        @include mixins.down(theme.$tablet) {
             width: 585px;
             height: 365px;
         }
-        @include down($mobile-xl) {
+        @include mixins.down(theme.$mobile-xl) {
             flex-direction: column;
             height: unset;
             width: 80%;
@@ -37,7 +53,7 @@ $silver: silver;
                 justify-content: center;
             }
         }
-        @include down($mobile) {
+        @include mixins.down(theme.$mobile) {
             margin-top: 75px;
             margin-bottom: 75px;
             width: 90%;
@@ -61,7 +77,7 @@ $silver: silver;
                 &::-moz-placeholder, &::placeholder {
                     color: black;
                 }
-                @include down($mobile) {
+                @include mixins.down(theme.$mobile) {
                     font-size: 28px;
                 }
             }
@@ -72,7 +88,7 @@ $silver: silver;
                 z-index: 1;
                 display: flex;
                 align-items: center;
-                @include down($mobile) {
+                @include mixins.down(theme.$mobile) {
                     font-size: 28px;
                 }
             }
@@ -105,7 +121,7 @@ $silver: silver;
                 width: 305px;
                 margin-right: auto;
                 margin-left: auto;
-                @include down($mobile) {
+                @include mixins.down(theme.$mobile) {
                     width: 250px;
                 }
                 li {
@@ -117,7 +133,7 @@ $silver: silver;
                     cursor: pointer;
                     padding: 6px 8px;
                     outline: none;  
-                    @include down($mobile) {
+                    @include mixins.down(theme.$mobile) {
                         font-size: 12px;
                     }
                     &:hover, &:focus {
@@ -128,7 +144,7 @@ $silver: silver;
                         height: 20px;
                         width: 20px;
                         margin-right: 32px;
-                        @include down($mobile-xl) {
+                        @include mixins.down(theme.$mobile-xl) {
                             margin-right: 24px;
                         }
                     }
@@ -148,7 +164,7 @@ $silver: silver;
             &.opponent-container {
                 border-right: 0.25px solid $pearl;
             }
-            @include down($mobile-xl) {
+            @include mixins.down(theme.$mobile-xl) {
                 width: 100%;
                 &.opponent-container {
                     border-right: 0;
@@ -178,7 +194,7 @@ $silver: silver;
                 text-transform: uppercase;
                 font-size: 18px;
                 letter-spacing: 1.1px;
-                @include down($mobile) {
+                @include mixins.down(theme.$mobile) {
                     font-size: 16px;
                 }
             }
@@ -186,7 +202,7 @@ $silver: silver;
                 text-transform: uppercase;
                 font-size: 12px;
                 letter-spacing: 1.2px;
-                @include down($mobile) {
+                @include mixins.down(theme.$mobile) {
                     font-size: 10px;
                 }
             }
@@ -205,7 +221,7 @@ $silver: silver;
                 .version-label {
                     text-transform: lowercase;
                 }
-                @include down($mobile) {
+                @include mixins.down(theme.$mobile) {
                     font-size: 14px;
                     margin-bottom: 4px;
                 }
@@ -217,7 +233,7 @@ $silver: silver;
                 padding-right: 16px;
                 font-size: 14px;
                 text-transform: uppercase;
-                @include down($mobile) {
+                @include mixins.down(theme.$mobile) {
                     font-size: 12px;
                     letter-spacing: 1.1px;
                     padding-left: 11px;
@@ -240,7 +256,7 @@ $silver: silver;
                 &.visible-none {
                     visibility: hidden;
                 }
-                @include down($tablet) {
+                @include mixins.down(theme.$tablet) {
                     font-size: 40px;
                 }
             }

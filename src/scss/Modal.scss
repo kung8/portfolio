@@ -1,3 +1,5 @@
+@use 'variables' as theme;
+
 .modal-content {
     display: flex;
     flex-direction: column;
@@ -12,7 +14,7 @@
     .close {
         background: none;
         border: none;
-        color: $white;
+        color: theme.$white;
         cursor: pointer;
 
         img {
@@ -39,39 +41,39 @@
         outline: none;
         border: 1.5px solid transparent;
         &.cancel-btn {
-            color: $white;
-            background: $black;
+            color: theme.$white;
+            background: theme.$black;
             cursor: pointer;
             &:hover {
-                background: $white;
-                color: $black;
-                border: 1.5px solid $default;
+                background: theme.$white;
+                color: theme.$black;
+                border: 1.5px solid theme.$default;
             }
         }
 
         &.delete-btn {
-            background: $coral;
-            color: $white;
+            background: theme.$coral;
+            color: theme.$white;
             cursor: pointer;
             &:hover {
-                background: $white;
-                color: $coral;
-                border: 1.5px solid $coral;
+                background: theme.$white;
+                color: theme.$coral;
+                border: 1.5px solid theme.$coral;
             }
         }
 
         &.action-btn {
-            background: $primary-blue;
-            color: $white;
+            background: theme.$primary-blue;
+            color: theme.$white;
             cursor: pointer;
             &:hover {
-                background: $white;
-                color: $primary-blue;
-                border: 1.5px solid $primary-blue;
+                background: theme.$white;
+                color: theme.$primary-blue;
+                border: 1.5px solid theme.$primary-blue;
             }
             &:disabled {
-                background: $default;
-                color: $black;
+                background: theme.$default;
+                color: theme.$black;
                 cursor: not-allowed;
                 border: 1.5px solid transparent;
             }

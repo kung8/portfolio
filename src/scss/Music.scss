@@ -1,3 +1,6 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
 .music {
     .music-table {
         position: relative;
@@ -16,16 +19,16 @@
                 position: sticky;
                 top: 0;
                 li {
-                    color: $default;
+                    color: theme.$default;
                 }
                 &.sticky {
-                    border-bottom: 1px solid $default;
-                    background: $hover;
+                    border-bottom: 1px solid theme.$default;
+                    background: theme.$hover;
                 }
             }
             &.row-item {
                 &:hover {
-                    background: $hover;
+                    background: theme.$hover;
                     border-radius: 4px;
                 }
             }
@@ -37,7 +40,7 @@
                 .id-number {
                     display: block;
                     &.selected-song {
-                        color: $primary-blue;
+                        color: theme.$primary-blue;
                     }
                 }
 
@@ -55,7 +58,7 @@
             .song-name {
                 width: 300px;
                 padding-left: 32px;
-                @include down($tablet) {
+                @include mixins.down(theme.$tablet) {
                     max-width: 275px;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -63,20 +66,20 @@
                 }
 
                 &.selected-song {
-                    color: $primary-blue;
+                    color: theme.$primary-blue;
                 }
             }
             .added-at {
                 width: 125px;
                 text-align: center;
-                @include down($mobile-xl) {
+                @include mixins.down(theme.$mobile-xl) {
                     display: none;
                 }
             }
             .created-at {
                 width: 100px;
                 text-align: center;
-                @include down($tablet) {
+                @include mixins.down(theme.$tablet) {
                     display: none;
                 }
             }
@@ -100,7 +103,7 @@
         position: fixed;
         bottom: 0;
         padding: 40px 32px;
-        background: $dark-aqua;
+        background: theme.$dark-aqua;
         z-index: 3;
         display: flex;
         justify-content: space-between;
@@ -108,15 +111,15 @@
         flex-wrap: wrap;
         width: 100vw;
         margin-left: -80px;
-        @include down($tablet) {
+        @include mixins.down(theme.$tablet) {
             margin-left: -56px;
             flex-direction: column;
         }
-        @include down($mobile-xl) {
+        @include mixins.down(theme.$mobile-xl) {
             flex-direction: column;
             padding: 32px 16px;
         }
-        @include down($mobile) {
+        @include mixins.down(theme.$mobile) {
             margin-left: -24px;
         }
 
@@ -124,19 +127,19 @@
             display: flex;
             flex-direction: column;
             min-width: 200px;
-            @include down($tablet) {
+            @include mixins.down(theme.$tablet) {
                 display: none;
             }
 
             .song-name {
                 font-size: 16px;
-                color: $white;
+                color: theme.$white;
                 margin-bottom: 12px;
             }
 
             .artist-name {
                 font-size: 16px;
-                color: $default;
+                color: theme.$default;
             }
         }
 
@@ -168,7 +171,7 @@
                     height: 28px;
                     width: 28px;
                     &.selected-type {
-                        color: $primary-blue;
+                        color: theme.$primary-blue;
                     }
                 }
                 .shuffle-btn {
@@ -191,7 +194,7 @@
                         position: relative;
 
                         .progress-bar-fill {
-                            background: $primary-blue;
+                            background: theme.$primary-blue;
                         }
 
                         .progress-peg {
@@ -201,24 +204,24 @@
                             height: 18px;
                             width: 18px;
                             border-radius: 50%;
-                            background: $white;
+                            background: theme.$white;
                         }
                     }
                 }
                 .progress-bar {
                     border-radius: 12px;
-                    background: $default;
+                    background: theme.$default;
                     height: 6px;
                     width: 250px;
                     margin-left: 8px;
                     margin-right: 8px;
-                    @include down($mobile-xl) {
+                    @include mixins.down(theme.$mobile-xl) {
                         width: 200px;
                     }
 
                     .progress-bar-fill {
                         border-radius: 12px;
-                        background: $white;
+                        background: theme.$white;
                         height: 100%;
                     }
                 }
@@ -230,7 +233,7 @@
             align-items: center;
             position: relative;
             cursor: pointer;
-            @include down($desktop) {
+            @include mixins.down(theme.$desktop) {
                 display: none;
             }
 
@@ -249,12 +252,12 @@
             .volume-container {
                 height: 8px;
                 width: 100px;
-                background: $default;
+                background: theme.$default;
                 border-radius: 12px;
                 position: relative;
                 &:hover {
                     .volume-bar {
-                        background: $primary-blue;
+                        background: theme.$primary-blue;
                     }
 
                     .volume-peg {
@@ -264,13 +267,13 @@
                         height: 18px;
                         width: 18px;
                         border-radius: 50%;
-                        background: $white;
+                        background: theme.$white;
                     }
                 }
 
                 .volume-bar {
                     border-radius: 12px;
-                    background: $white;
+                    background: theme.$white;
                     height: 100%;
                 }
             }
@@ -280,13 +283,13 @@
     .queue-modal,
     .lyrics-modal {
         position: absolute;
-        background: $dark-aqua;
+        background: theme.$dark-aqua;
         width: 400px;
         top: 0;
         right: -400px;
         height: 100%;
         z-index: 5;
-        border-left: solid $aqua 1px;
+        border-left: solid theme.$aqua 1px;
         display: none;
         overflow-y: hidden;
         max-height: 100vh;
@@ -300,12 +303,12 @@
             right: -400px;
             animation: slide-out 1s ease-in-out;
             transition: right 1s;
-            @include down($mobile) {
+            @include mixins.down(theme.$mobile) {
                 right: -100%;
             }
         }
 
-        @include down($mobile) {
+        @include mixins.down(theme.$mobile) {
             width: 100%;
             right: -100%;
         }
@@ -314,7 +317,7 @@
             display: flex;
             justify-content: space-between;
             padding: 24px 32px;
-            @include down($mobile) {
+            @include mixins.down(theme.$mobile) {
                 padding: 24px;
             }
 
@@ -351,16 +354,16 @@
                 padding: 12px;
                 border-radius: 4px;
                 &.selected-song {
-                    background: $hover;
+                    background: theme.$hover;
                     .song-name,
                     .song-number {
-                        color: $primary-blue;
+                        color: theme.$primary-blue;
                     }
                 }
                 &:hover {
-                    background: $hover;
+                    background: theme.$hover;
                     .song-name {
-                        color: $primary-blue;
+                        color: theme.$primary-blue;
                     }
                 }
 
@@ -376,7 +379,7 @@
                 }
 
                 .song-number {
-                    color: $white;
+                    color: theme.$white;
                     font-size: 20px;
                     min-width: 24px;
                     text-align: right;
@@ -393,7 +396,7 @@
                     }
 
                     .artist-name {
-                        color: $default;
+                        color: theme.$default;
                     }
                 }
             }
@@ -403,13 +406,13 @@
             overflow-y: scroll;
             padding: 0 32px;
             max-height: calc(100% - 100px);
-            @include down($mobile) {
+            @include mixins.down(theme.$mobile) {
                 padding: 0 24px;
             }
 
             .music-card {
                 padding-bottom: 50px;
-                border-bottom: 3px solid $white;
+                border-bottom: 3px solid theme.$white;
                 &:last-of-type {
                     border-bottom: 0;
                     padding-bottom: 0;
@@ -419,7 +422,7 @@
                     display: block;
                     font-size: 12px;
                     margin-bottom: 8px;
-                    @include down($mobile) {
+                    @include mixins.down(theme.$mobile) {
                         font-size: 10px;
                     }
                 }
@@ -434,7 +437,7 @@
                 }
                 .ind-chord {
                     font-size: 10px;
-                    @include down($mobile) {
+                    @include mixins.down(theme.$mobile) {
                         font-size: 8px;
                     }
                 }
@@ -461,13 +464,13 @@
                             transform: translateX(-100%);
                             &.long {
                                 transform: translateX(-10px);
-                                @include down($mobile) {
+                                @include mixins.down(theme.$mobile) {
                                     transform: translateX(-6px);
                                 }
                             }
                         }
                     }
-                    @include down($mobile) {
+                    @include mixins.down(theme.$mobile) {
                         font-size: 10px;
                         .p-abs {
                             font-size: 8px;
@@ -485,7 +488,7 @@
 @keyframes slide-in {
     from {
         right: -400px;
-        @include down($mobile) {
+        @include mixins.down(theme.$mobile) {
             right: -100%;
         }
     }
@@ -500,7 +503,7 @@
     }
     to {
         right: -400px;
-        @include down($mobile) {
+        @include mixins.down(theme.$mobile) {
             right: -100%;
         }
     }

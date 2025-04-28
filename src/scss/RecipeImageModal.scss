@@ -1,3 +1,5 @@
+@use 'variables' as theme;
+
 .recipe-image-modal-container {
     display: flex;
     justify-content: center;
@@ -30,7 +32,7 @@
             top: 16px;
             background: none;
             border: none;
-            color: $white;
+            color: theme.$white;
             cursor: pointer;
     
             img {

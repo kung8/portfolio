@@ -1,3 +1,6 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
 .non-dashboard-page {
     display: block;
     height: auto;
@@ -9,10 +12,10 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 
-    @include down($tablet) {
+    @include mixins.down(theme.$tablet) {
         padding: 56px 56px;
     }
-    @include down($mobile) {
+    @include mixins.down(theme.$mobile) {
         padding: 56px 24px;
     }
 

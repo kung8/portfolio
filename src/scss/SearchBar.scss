@@ -1,10 +1,13 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
 .search-bar {
     width: 200px;
     height: 40px;
     padding: 4px 16px;
-    border: 1px solid $default;
-    background: $default;
-    color: $black;
+    border: 1px solid theme.$default;
+    background: theme.$default;
+    color: theme.$black;
     font-size: 20px;
     font-weight: 600;
     outline: none;
@@ -21,20 +24,20 @@
     &.expandable:focus-within {
         width: 350px;
         transition: width 0.3s ease;
-        @include down($tablet) {
+        @include mixins.down(theme.$tablet) {
             width: 300px;
         }
-        @include down(700px) {
+        @include mixins.down(700px) {
             width: 250px;
         }
-        @include down(650px) {
+        @include mixins.down(650px) {
             width: 225px;
         }
-        @include down($mobile-xl) {
+        @include mixins.down(theme.$mobile-xl) {
             width: 100%;
         }
     }
-    @include down($mobile-xl) {
+    @include mixins.down(theme.$mobile-xl) {
         width: 100%;
     }
     input {
@@ -44,11 +47,11 @@
         padding: 0 8px;
         outline: none;
         background: transparent;
-        color: $white;
+        color: theme.$white;
         letter-spacing: 2px;
         cursor: pointer;
         &::placeholder {
-            color: $light;
+            color: theme.$light;
         }
     }
     .clear-btn {

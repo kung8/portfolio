@@ -1,6 +1,9 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
 .recipes {
     padding: 80px 0;
-    @include down($tablet) {
+    @include mixins.down(theme.$tablet) {
         padding: 56px 0;
     }
 
@@ -12,7 +15,7 @@
         padding-left: 56px;
         padding-right: 56px;
         margin-bottom: 24px;
-        @include down($mobile) {
+        @include mixins.down(theme.$mobile) {
             padding-left: 24px;
             padding-right: 24px;
         }
@@ -79,17 +82,17 @@
             &.show {
                 min-height: 35px;
                 transition: min-height 0.3s ease-in-out;
-                @include down($mobile) {
+                @include mixins.down(theme.$mobile) {
                     min-height: 27.5px;
                 }
             }
         }
 
         .chip {
-            background: $hover;
+            background: theme.$hover;
             padding: 8px 12px;
             border-radius: 4px;
-            color: $default;
+            color: theme.$default;
             display: flex;
             align-items: center;
             gap: 8px 6px;
@@ -99,18 +102,18 @@
             &:not(.non-chip) {
                 cursor: pointer;
                 &:hover {
-                    background: $default;
-                    color: $hover;
+                    background: theme.$default;
+                    color: theme.$hover;
                 }
             }
-            @include down($mobile) {
+            @include mixins.down(theme.$mobile) {
                 font-size: 10px;
             }
 
             img {
                 width: 10px;
                 height: 10px;
-                @include down($mobile) {
+                @include mixins.down(theme.$mobile) {
                     width: 8px;
                     height: 8px;
                 }
@@ -119,19 +122,19 @@
     }
 
     .greeting-container {
-        background: $tan;
+        background: theme.$tan;
         padding: 32px 16px 20px;
         border-radius: 24px 24px 0 0px;
         margin: 0 4px;
 
         .greeting-text {
-            color: $burnt;
+            color: theme.$burnt;
             margin-bottom: 6px;
             font-weight: 600;
         }
 
         .name-text {
-            color: $aqua;
+            color: theme.$aqua;
             font-size: 40px;
             border: none;
             background: none;
@@ -193,33 +196,33 @@
                     margin-bottom: 8px;
                     border-radius: 16px;
                     opacity: 0.45;
-                    background: $grey;
+                    background: theme.$grey;
                     transition: opacity 0.3s ease-in-out;
-                    @include up($desktop) {
+                    @include mixins.up(theme.$desktop) {
                         &:hover {
                             opacity: 1;
-                            background: $grey !important;
+                            background: theme.$grey !important;
                         }
                     }
 
                     &.includes-menu-item {
                         opacity: 1;
                         background: none;
-                        @include up($desktop) {
+                        @include mixins.up(theme.$desktop) {
                             &:hover {
                                 opacity: 0.45;
-                                background: $grey !important;
+                                background: theme.$grey !important;
                             }
                         }
                     }
 
                     &.includes-menu-item-with-no-image {
                         opacity: 1;
-                        background: $hover;
-                        @include up($desktop) {
+                        background: theme.$hover;
+                        @include mixins.up(theme.$desktop) {
                             &:hover {
                                 opacity: 0.45;
-                                background: $grey !important;
+                                background: theme.$grey !important;
                             }
                         }
                     }
@@ -245,7 +248,7 @@
             padding-left: 8px;
             font-size: 28px;
             font-weight: 300;
-            color: $primary-blue;
+            color: theme.$primary-blue;
             letter-spacing: 2px;
         }
     }
@@ -268,17 +271,17 @@
                 transition-duration: 0.15s;
                 border-radius: 4px;
                 .recipe-image {
-                    background: $hover;
+                    background: theme.$hover;
                 }
                 .empty-recipe-image {
-                    background: $default;
+                    background: theme.$default;
                 }
             }
 
-            @include down($tablet) {
+            @include mixins.down(theme.$tablet) {
                 width: 33.33%;
             }
-            @include down($mobile-xl) {
+            @include mixins.down(theme.$mobile-xl) {
                 width: 50%;
             }
 
@@ -289,32 +292,32 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: $black;
-                background: $aqua;
+                color: theme.$black;
+                background: theme.$aqua;
                 &.empty-recipe-image {
-                    background: $default;
+                    background: theme.$default;
                 }
 
                 & > p {
                     max-width: 90%;
                     text-align: center;
-                    color: $white;
-                    text-shadow: 1px 1px 1px $black;
+                    color: theme.$white;
+                    text-shadow: 1px 1px 1px theme.$black;
                     letter-spacing: 1.5px;
                     font-size: 18px;
-                    @include down($mid-desktop) {
+                    @include mixins.down(theme.$mid-desktop) {
                         font-size: 16px;
                     }
-                    @include down($desktop) {
+                    @include mixins.down(theme.$desktop) {
                         font-size: 14px;
                     }
-                    @include down($large-tablet) {
+                    @include mixins.down(theme.$large-tablet) {
                         font-size: 12px;
                     }
-                    @include down($mobile) {
+                    @include mixins.down(theme.$mobile) {
                         font-size: 10px;
                     }
-                    @include down($small-mobile) {
+                    @include mixins.down(theme.$small-mobile) {
                         font-size: 8px;
                     }
                 }
@@ -325,7 +328,7 @@
                 left: 50%;
                 bottom: 0;
                 transform: translate(-50%, -12px);
-                background: $black;
+                background: theme.$black;
                 opacity: 0.65;
                 width: calc(100% - 8px);
                 padding: 12px 8px;
@@ -333,46 +336,46 @@
                 justify-content: center;
 
                 .recipe-item-title {
-                    color: $white;
+                    color: theme.$white;
                     font-weight: 600;
                     text-align: center;
-                    text-shadow: 1px 1px 1px $black;
+                    text-shadow: 1px 1px 1px theme.$black;
                     letter-spacing: 1.5px;
                     display: inline-block;
                     word-wrap: unset;
                     font-size: 20px;
                     z-index: 1;
-                    @include down($xx-large) {
+                    @include mixins.down(theme.$xx-large) {
                         font-size: 18px;
                     }
-                    @include down($extra-large) {
+                    @include mixins.down(theme.$extra-large) {
                         font-size: 16px;
                     }
-                    @include down($mid-desktop) {
+                    @include mixins.down(theme.$mid-desktop) {
                         font-size: 12px;
                     }
-                    @include down($desktop) {
+                    @include mixins.down(theme.$desktop) {
                         font-size: 10px;
                     }
-                    @include down($large-tablet) {
+                    @include mixins.down(theme.$large-tablet) {
                         font-size: 8px;
                     }
-                    @include down($tablet) {
+                    @include mixins.down(theme.$tablet) {
                         font-size: 12px;
                     }
-                    @include down(700px) {
+                    @include mixins.down(700px) {
                         font-size: 10px;
                     }
-                    @include down($mobile-xl) {
+                    @include mixins.down(theme.$mobile-xl) {
                         font-size: 14px;
                     }
-                    @include down($mobile) {
+                    @include mixins.down(theme.$mobile) {
                         font-size: 10px;
                     }
-                    @include down($small-mobile) {
+                    @include mixins.down(theme.$small-mobile) {
                         font-size: 8px;
                     }
-                    @include down($extra-small) {
+                    @include mixins.down(theme.$extra-small) {
                         font-size: 6px;
                     }
                 }
@@ -383,8 +386,8 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                background: $black;
-                color: $white;
+                background: theme.$black;
+                color: theme.$white;
                 padding: 4px;
                 border-radius: 4px;
                 transform: translate(8px, 8px);
@@ -392,7 +395,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                @include down($mobile) {
+                @include mixins.down(theme.$mobile) {
                     font-size: 10px;
                 }
             }
@@ -406,7 +409,7 @@
                 .heart {
                     font-size: 22px;
                     &:before {
-                        text-shadow: 0px 0px 10px $coral;
+                        text-shadow: 0px 0px 10px theme.$coral;
                         opacity: 0.75;
                     }
                 }
@@ -421,7 +424,7 @@
                 .wip {
                     font-size: 20px;
                     &:before {
-                        text-shadow: 0px 0px 10px $darkgrey;
+                        text-shadow: 0px 0px 10px theme.$darkgrey;
                         opacity: 0.85;
                     }
                 }
@@ -432,7 +435,7 @@
     .heart {
         &:before {
             content: "\2665";
-            color: $red;
+            color: theme.$red;
         }
     }
 
@@ -517,9 +520,9 @@
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background: $hover;
+        background: theme.$hover;
         padding: 12px 16px;
-        color: $default;
+        color: theme.$default;
         border-radius: 4px;
         z-index: 1;
         cursor: pointer;
@@ -527,7 +530,7 @@
         flex-direction: column;
         align-items: center;
         &:hover {
-            box-shadow: 1px 1px 10px $hover;
+            box-shadow: 1px 1px 10px theme.$hover;
         }
 
         img {
@@ -538,7 +541,7 @@
 
         span {
             font-size: 8px;
-            color: $white;
+            color: theme.$white;
         }
     }
 

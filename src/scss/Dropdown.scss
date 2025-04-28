@@ -1,16 +1,18 @@
+@use 'variables' as theme;
+
 .dropdown-container {
     position: relative;
     max-width: 250px;
     padding: 8px;
     border-radius: 4px;
-    border: 1px solid $default;
+    border: 1px solid theme.$default;
     cursor: pointer;
 
     &.is-open {
         border-bottom: none;
         border-radius: 4px 4px 0 0;
         &.open-above {
-            border-bottom: 1px solid $default;
+            border-bottom: 1px solid theme.$default;
             border-radius: 0 0 4px 4px;
         }
     }
@@ -38,11 +40,11 @@
     .dropdown-options-container {
         position: absolute;
         left: 0;
-        background: $aqua;
+        background: theme.$aqua;
         width: 100%;
         max-width: 250px;
-        border: 1px solid $default;
-        box-shadow: 0 1px 10px $default;
+        border: 1px solid theme.$default;
+        box-shadow: 0 1px 10px theme.$default;
         z-index: 2;
 
         li {

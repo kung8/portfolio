@@ -1,3 +1,6 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
 .left-panel-container {
     width: 400px;
     display: flex;
@@ -5,7 +8,7 @@
     justify-content: space-between;
     z-index: 2;
     padding: 64px 0 64px 80px;
-    @include down($desktop) {
+    @include mixins.down(theme.$desktop) {
         margin-bottom: 96px;
         justify-content: unset;
         padding: 0;
@@ -15,7 +18,7 @@
     .name {
         margin-bottom: 24px;
         font-size: 40px;
-        @include down($desktop) {
+        @include mixins.down(theme.$desktop) {
             margin-bottom: 16px;
             font-size: 36px;
         }
@@ -24,7 +27,7 @@
     .title {
         margin-bottom: 24px;
         font-size: 18px;
-        @include down($desktop) {
+        @include mixins.down(theme.$desktop) {
             margin-bottom: 16px;
         }
     }
@@ -32,21 +35,21 @@
     .headline {
         margin-bottom: 32px;
         font-size: 16px;
-        color: $default;
+        color: theme.$default;
     }
 
     .link-container {
         list-style: none;
-        @include down($desktop) {
+        @include mixins.down(theme.$desktop) {
             display: none;
         }
 
         li {
             margin-bottom: 16px;
             cursor: pointer;
-            color: $default;
+            color: theme.$default;
             &:hover {
-                color: $primary-blue;
+                color: theme.$primary-blue;
                 transition-property: all;
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 transition-duration: 0.15s;
@@ -54,7 +57,7 @@
             }
 
             &.selected-link {
-                color: $primary-blue;
+                color: theme.$primary-blue;
                 transition-property: all;
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 transition-duration: 0.15s;
@@ -69,7 +72,7 @@
             height: 32px;
             width: 32px;
             margin-right: 16px;
-            color: $white;
+            color: theme.$white;
             cursor: pointer;
             
             &:hover {

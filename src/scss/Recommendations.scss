@@ -1,3 +1,6 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
 .recommendations {
     overflow-x: unset;
     .categories {
@@ -6,7 +9,7 @@
         overflow-x: auto;
         position: sticky;
         top: 0;
-        background: $white;
+        background: theme.$white;
         transition: margin-left 0.25s ease-in-out;
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
@@ -17,10 +20,10 @@
         &.scrolled-categories {
             width: 100vw;
             margin-left: -80px;
-            @include down($tablet) {
+            @include mixins.down(theme.$tablet) {
                 margin-left: -56px;
             }
-            @include down($mobile) {
+            @include mixins.down(theme.$mobile) {
                 margin-left: -24px;
             }
         }
@@ -28,12 +31,12 @@
         .category {
             padding: 8px 16px 4px;
             min-width: fit-content;
-            color: $light;
+            color: theme.$light;
             border-bottom: 6px solid transparent;
             cursor: pointer;
             &.selected {
-                color: $default;
-                border-bottom: 6px solid $default;
+                color: theme.$default;
+                border-bottom: 6px solid theme.$default;
             }
         }
     }
@@ -69,7 +72,7 @@
                     width: 100%;
                     row-gap: 6px;
 
-                    @include down($small-mobile) {
+                    @include mixins.down(theme.$small-mobile) {
                         flex-direction: column;
                         align-items: flex-start;
                     }
@@ -90,7 +93,7 @@
                         text-underline-offset: 2px;
                         font-weight: 400;
                         font-size: 16px;
-                        color: $primary-blue;
+                        color: theme.$primary-blue;
                     }
 
                     .review-subtitle,
@@ -105,7 +108,7 @@
 
                 .review-text {
                     font-size: 14px;
-                    color: $light;
+                    color: theme.$light;
                 }
 
                 .rating-container {
@@ -120,13 +123,13 @@
 
                     .review-in-progress {
                         font-size: 14px;
-                        color: $light;
+                        color: theme.$light;
                     }
                 }
 
                 .expand-text {
                     font-size: 12px;
-                    color: $sunshine;
+                    color: theme.$sunshine;
                     cursor: pointer;
                 }
 
@@ -140,12 +143,12 @@
 
                 .recommendation-source {
                     font-size: 12px;
-                    color: $light;
+                    color: theme.$light;
                 }
             }
 
             .expanded-review-container {
-                border: 2px double $light;
+                border: 2px double theme.$light;
                 padding: 12px;
                 margin-top: -12px;
                 border-radius: 4px;
@@ -174,12 +177,12 @@
 
                 .review-source {
                     font-size: 12px;
-                    color: $light;
+                    color: theme.$light;
                 }
 
                 .review-additional-text {
                     font-size: 12px;
-                    color: $default;
+                    color: theme.$default;
                 }
             }
         }

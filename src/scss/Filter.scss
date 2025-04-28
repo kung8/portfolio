@@ -1,3 +1,5 @@
+@use 'variables' as theme;
+
 .filter-icon {
     display: flex;
     align-items: center;
@@ -7,30 +9,30 @@
     .top-bar {
         width: 28px;
         height: 3px;
-        background: $white;
+        background: theme.$white;
         margin-bottom: 4px;
     }
     .middle-bar {
         width: 22px;
         height: 3px;
-        background: $white;
+        background: theme.$white;
         margin-bottom: 4px;
     }
     .bottom-bar {
         width: 16px;
         height: 3px;
-        background: $white;
+        background: theme.$white;
     }
     .filter-dot {
         width: 12px;
         height: 12px;
         border-radius: 100%;
-        background: $primary-blue;
+        background: theme.$primary-blue;
         position: absolute;
         right: 0;
         top: 0;
         transform: translate(50%, -50%);
-        border: 1px solid $white;
+        border: 1px solid theme.$white;
         visibility: hidden;
         transition: visibility 0.3s ease-in-out;
         &.show {

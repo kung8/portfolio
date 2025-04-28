@@ -1,6 +1,6 @@
+@forward "LeftPanel";
+@forward "RightPanel";
+
 .dashboard {
     justify-content: space-between;
-    
-    @import "LeftPanel";
-    @import "RightPanel";
 }

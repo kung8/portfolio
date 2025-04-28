@@ -1,13 +1,16 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
 .contact-container {
     padding-left: 24px;
-    @include down($desktop) {
+    @include mixins.down(theme.$desktop) {
         padding-left: 0px;
     }
 
     .message-text {
         margin-bottom: 40px;
         font-size: 14px;
-        @include down($desktop) {
+        @include mixins.down(theme.$desktop) {
             margin-bottom: 24px;
         }
     }
@@ -31,7 +34,7 @@
             span {
                 margin-bottom: 8px;
                 font-size: 14px;
-                @include down($desktop) {
+                @include mixins.down(theme.$desktop) {
                     margin-bottom: 4px;
                 }
             }
@@ -39,14 +42,14 @@
             input, textarea {
                 padding: 12px;
                 border: none;
-                border: 1px solid $default;
+                border: 1px solid theme.$default;
                 border-radius: 4px;
                 font-size: 16px;
-                background: $white;
+                background: theme.$white;
                 outline: none;
                 cursor: pointer;
-                color: $black;
-                @include down($desktop) {
+                color: theme.$black;
+                @include mixins.down(theme.$desktop) {
                     padding: 8px;
                 }
             }
@@ -55,14 +58,14 @@
                 max-width: 100%;
                 min-height: 100px;
                 min-width: 100%;
-                @include down($desktop) {
+                @include mixins.down(theme.$desktop) {
                     max-height: 85px;
                     min-height: 85px;
                 }
             }
 
             .error-message {
-                color: $sunshine;
+                color: theme.$sunshine;
                 margin-top: 8px;
                 display: block;
             }
@@ -73,7 +76,7 @@
             background-color: transparent;
             text-transform: uppercase;
             letter-spacing: 0.75px;
-            color: $white;
+            color: theme.$white;
         }
     }
 
@@ -81,7 +84,7 @@
         width: 100%;
         height: fit-content;
         // margin-bottom: 40px;
-        @include down($desktop) {
+        @include mixins.down(theme.$desktop) {
             width: 100%;
             height: auto;
         }
@@ -105,7 +108,7 @@
     //     text-shadow: 1px 1px 10px black;
     //     background: lightgreen;
     //     outline: none;
-    //     @media screen and (max-width: $tablet) {
+    //     @media screen and (max-width: theme.$tablet) {
     //         padding: 6px 15px;
     //         font-size: 14px;
     //     }

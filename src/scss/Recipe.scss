@@ -1,3 +1,6 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
 .recipe {
     overflow-y: scroll;
     position: relative;
@@ -7,16 +10,16 @@
 
         .heading {
             margin-bottom: 0;
-            @include down($mobile-xl) {
+            @include mixins.down(theme.$mobile-xl) {
                 font-size: 24px;
             }
-            @include down($mobile) {
+            @include mixins.down(theme.$mobile) {
                 font-size: 20px;
             }
-            @include down($small-mobile) {
+            @include mixins.down(theme.$small-mobile) {
                 font-size: 16px;
             }
-            @include down($extra-small) {
+            @include mixins.down(theme.$extra-small) {
                 font-size: 14px;
             }
         }
@@ -45,15 +48,15 @@
         .additional-recipe-video {
             width: 350px;
             margin-bottom: 24px;
-            @include down($mobile) {
+            @include mixins.down(theme.$mobile) {
                 width: 100%;
             }
 
             display: flex;
             justify-content: center;
             align-items: center;
-            background: $primary-blue;
-            color: $black;
+            background: theme.$primary-blue;
+            color: theme.$black;
             &.empty {
                 aspect-ratio: 1 / 1;
             }
@@ -72,7 +75,7 @@
         }
 
         .inaccurate-badge {
-            color: $white;
+            color: theme.$white;
             font-size: 10px;
         }
 
@@ -97,7 +100,7 @@
                     column-gap: 8px;
                     align-items: center;
 
-                    @include down($mobile) {
+                    @include mixins.down(theme.$mobile) {
                         flex-direction: column;
                         row-gap: 8px;
                         align-items: flex-start;
@@ -115,7 +118,7 @@
                     }
 
                     .dash {
-                        @include down($mobile) {
+                        @include mixins.down(theme.$mobile) {
                             display: none;
                         }
                     }
@@ -129,13 +132,13 @@
                             justify-content: center;
                             align-items: center;
                             padding: 4px 8px;
-                            border: 1px solid $default;
+                            border: 1px solid theme.$default;
                             border-radius: 4px;
                             cursor: pointer;
                             &.active {
-                                background: $primary-blue;
-                                color: $white;
-                                border: 1px solid $primary-blue;
+                                background: theme.$primary-blue;
+                                color: theme.$white;
+                                border: 1px solid theme.$primary-blue;
                             }
                         }
                     }
@@ -162,7 +165,7 @@
                 column-gap: 24px;
 
                 span {
-                    color: $primary-blue;
+                    color: theme.$primary-blue;
                 }
 
                 .select-all-button {
@@ -170,9 +173,9 @@
                 }
 
                 .add-to-list-button {
-                    color: $default;
+                    color: theme.$default;
                     &.active {
-                        color: $primary-blue;
+                        color: theme.$primary-blue;
                         cursor: pointer;
                     }
                 }
@@ -222,7 +225,7 @@
                     transform: translateY(2px);
                 }
                 .ingredient-label-with-link {
-                    color: $primary-blue;
+                    color: theme.$primary-blue;
                     text-underline-offset: 4px;
                     cursor: pointer;
                 }
@@ -232,7 +235,7 @@
                     cursor: pointer;
                 }
                 .ingredient-additional-details {
-                    color: $darkgrey;
+                    color: theme.$darkgrey;
                 }
             }
             .separated-recipe-detail-list {
@@ -271,7 +274,7 @@
                     margin-top: 12px;
                     width: 350px;
                     margin-bottom: 24px;
-                    @include down($mobile) {
+                    @include mixins.down(theme.$mobile) {
                         width: 100%;
                     }
                 }
@@ -279,7 +282,7 @@
         }
 
         .figure-label-anchor {
-            color: $primary-blue;
+            color: theme.$primary-blue;
             display: inline-block;
             margin-left: 4px;
         }
@@ -292,13 +295,13 @@
 
                 label {
                     margin-bottom: 6px;
-                    color: $primary-blue;
+                    color: theme.$primary-blue;
                 }
             }
         }
 
         .link-text {
-            color: $primary-blue;
+            color: theme.$primary-blue;
             text-decoration: underline;
             text-underline-offset: 4px;
         }
@@ -311,10 +314,10 @@
             padding-left: 16px;
 
             .recipe-website-item {
-                color: $primary-blue;
+                color: theme.$primary-blue;
 
                 a {
-                    color: $primary-blue;
+                    color: theme.$primary-blue;
                     text-decoration: unset;
                     text-underline-offset: 4px;
                 }
@@ -340,7 +343,7 @@
         top: 50vh;
         left: -50%;
         z-index: 5;
-        background: $dark-aqua;
+        background: theme.$dark-aqua;
         transform: translate(-50%, -50%);
         width: unquote("min(calc(100% - 16px), 600px)");
         padding: 24px 16px;
@@ -420,9 +423,9 @@
                         width: 100%;
                         padding: 8px 12px;
                         outline: none;
-                        border: 1.5px solid $default;
-                        background: $aqua;
-                        color: $white;
+                        border: 1.5px solid theme.$default;
+                        background: theme.$aqua;
+                        color: theme.$white;
                         font-size: 14px;
                         position: relative;
                         .edit-recipe-date-label-container {
@@ -435,7 +438,7 @@
                             width: 100%;
                             cursor: pointer;
                             &.is-default {
-                                color: $default;
+                                color: theme.$default;
                             }
                         }
                         .delete-date-btn {
@@ -476,24 +479,24 @@
                     outline: none;
                     border: 1.5px solid transparent;
                     &.cancel-btn {
-                        color: $white;
-                        background: $black;
+                        color: theme.$white;
+                        background: theme.$black;
                         cursor: pointer;
                         &:hover {
-                            background: $white;
-                            color: $black;
-                            border: 1.5px solid $default;
+                            background: theme.$white;
+                            color: theme.$black;
+                            border: 1.5px solid theme.$default;
                         }
                     }
 
                     &.add-btn {
-                        background: $primary-blue;
-                        color: $white;
+                        background: theme.$primary-blue;
+                        color: theme.$white;
                         cursor: pointer;
                         &:hover {
-                            background: $white;
-                            color: $primary-blue;
-                            border: 1.5px solid $primary-blue;
+                            background: theme.$white;
+                            color: theme.$primary-blue;
+                            border: 1.5px solid theme.$primary-blue;
                         }
                     }
                 }

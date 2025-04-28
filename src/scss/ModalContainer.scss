@@ -1,3 +1,5 @@
+@use 'variables' as theme;
+
 .modal-container {
     display: flex;
     justify-content: center;
@@ -5,7 +7,7 @@
     height: 100%;
 
     .modal-tray {
-        background: $aqua;
+        background: theme.$aqua;
         position: absolute;
         top: 0;
         height: 100vh;
@@ -57,7 +59,7 @@
         position: absolute;
         bottom: 0;
         padding: 16px 0;
-        background-color: $aqua;
+        background-color: theme.$aqua;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -69,10 +71,10 @@
 
         .reset-all {
             font-size: 12px;
-            color: $default;
+            color: theme.$default;
             &.has-values {
                 cursor: pointer;
-                color: $primary-blue;
+                color: theme.$primary-blue;
             }
         }
     }

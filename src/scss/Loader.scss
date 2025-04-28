@@ -1,3 +1,6 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
 .watermelon {
     position: fixed;
     left: 50%;
@@ -51,7 +54,7 @@
 .avocado-container {
   width: 100vw;
   height: 5px;
-  background: $primary-blue;
+  background: theme.$primary-blue;
   position: relative;
   top: 250px;
   .avocado {
@@ -62,7 +65,7 @@
     left: 0;
     background: #616f1a;
     border-radius: 60% 60% 45% 54% / 66% 70% 45% 50%;
-    box-shadow: 1px 1px 5px $white;
+    box-shadow: 1px 1px 5px theme.$white;
     animation: rotate 2s ease-in-out infinite;
   
     .skin {
@@ -112,7 +115,7 @@
         border-radius: 50%;
         border: 1px solid;
         transform: rotate(45deg);
-        border-color: transparent $black $black transparent;
+        border-color: transparent theme.$black theme.$black transparent;
       }
     }
     .left-arm {
@@ -124,7 +127,7 @@
       border-radius: 50%;
       border: 2px solid;
       transform: rotate(45deg);
-      border-color: transparent $white $white transparent;
+      border-color: transparent theme.$white theme.$white transparent;
     }
     .right-arm {
       position: absolute;
@@ -135,7 +138,7 @@
       border-radius: 50%;
       border: 2px solid;
       transform: rotate(45deg);
-      border-color: transparent $white $white transparent;
+      border-color: transparent theme.$white theme.$white transparent;
     }
     .left-leg {
       position: absolute;
@@ -146,7 +149,7 @@
       border-radius: 50%;
       border: 2px solid;
       transform: rotate(188deg);
-      border-color: transparent $white $white transparent;
+      border-color: transparent theme.$white theme.$white transparent;
     }
     .right-leg {
       position: absolute;
@@ -157,7 +160,7 @@
       border-radius: 50%;
       border: 2px solid;
       transform: rotate(222deg);
-      border-color: transparent $white $white transparent;
+      border-color: transparent theme.$white theme.$white transparent;
     }
   }
 }

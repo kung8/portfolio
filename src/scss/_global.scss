@@ -1,4 +1,9 @@
-*, body, html {
+@use "variables" as theme;
+@use "mixins" as mixins;
+
+*,
+body,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +12,7 @@
 }
 
 .italics {
-    font-family: $cursive;
+    font-family: theme.$cursive;
     font-style: italic;
 }
 
@@ -113,27 +118,13 @@
     }
 }
 
-.fade-in {
-    animation: fadein 0.1s ease-in-out;
-    opacity: 1;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .page {
-    background-color: $aqua;
-    color: $white;
+    background-color: theme.$aqua;
+    color: theme.$white;
     display: flex;
     justify-content: space-between;
     height: 100vh;
-    @include down($desktop) {
+    @include mixins.down(theme.$desktop) {
         padding: 80px 32px;
         flex-direction: column;
         height: auto;
@@ -145,11 +136,11 @@
 
         .back-btn {
             cursor: pointer;
-            color: $primary-blue;
+            color: theme.$primary-blue;
             margin-bottom: 8px;
             display: inline-block;
             &:hover {
-                color: $primary-blue;
+                color: theme.$primary-blue;
             }
         }
 
@@ -174,7 +165,7 @@
         pointer-events: none;
     }
 
-    @include down($desktop) {
+    @include mixins.down(theme.$desktop) {
         display: none;
     }
 }

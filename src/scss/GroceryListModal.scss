@@ -1,3 +1,6 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
 .grocery-list-modal-container {
     display: flex;
     justify-content: center;
@@ -5,7 +8,7 @@
 }
 
 .grocery-list-modal {
-    background: $aqua;
+    background: theme.$aqua;
     position: absolute;
     top: 0;
     left: -100%;
@@ -46,7 +49,7 @@
         .close {
             background: none;
             border: none;
-            color: $white;
+            color: theme.$white;
             cursor: pointer;
 
             img {
@@ -73,12 +76,12 @@
 
             .ingredient-category {
                 font-size: 12px;
-                color: $primary-blue;
+                color: theme.$primary-blue;
             }
 
             .ingredient-date {
                 font-size: 12px;
-                color: $sunshine;
+                color: theme.$sunshine;
             }
         }
 
@@ -102,7 +105,7 @@
 
                 label {
                     &.checked {
-                        color: $default;
+                        color: theme.$default;
                         text-decoration: line-through;
                         font-size: 16px;
                         width: 100%;
@@ -111,7 +114,7 @@
 
                 .recipe-name {
                     font-size: 12px;
-                    color: $default;
+                    color: theme.$default;
                     max-width: 100%;
                     overflow: hidden;
                     white-space: nowrap;
@@ -122,7 +125,7 @@
                 }
 
                 .ingredient-category {
-                    color: $primary-blue;
+                    color: theme.$primary-blue;
                 }
             }
 
@@ -142,19 +145,19 @@
                 background: none;
                 outline: none;
                 border: none;
-                color: $white;
+                color: theme.$white;
                 width: 100%;
                 font-size: 16px;
             }
 
             .recipe-category {
                 font-size: 12px;
-                color: $primary-blue;
+                color: theme.$primary-blue;
             }
 
             .recipe-date {
                 font-size: 12px;
-                color: $sunshine;
+                color: theme.$sunshine;
             }
         }
     }
@@ -181,7 +184,7 @@
 
                 .meal-plan-date {
                     font-size: 12px;
-                    color: $sunshine;
+                    color: theme.$sunshine;
                 }
             }
 
@@ -197,7 +200,7 @@
 
                     .meal-type-header {
                         font-size: 12px;
-                        color: $default;
+                        color: theme.$default;
                         margin-bottom: 4px;
                     }
                 }
@@ -245,14 +248,14 @@
                         background: transparent;
                         outline: none;
                         border: none;
-                        color: $white;
+                        color: theme.$white;
                         width: calc(100% - 24px);
                         font-size: 16px;
                     }
 
                     label {
                         &.checked {
-                            color: $default;
+                            color: theme.$default;
                             text-decoration: line-through;
                             font-size: 16px;
                             width: 100%;
@@ -262,18 +265,18 @@
 
                 .meal-item-date {
                     font-size: 12px;
-                    color: $default;
+                    color: theme.$default;
                 }
 
                 .meal-item-meal-type {
                     font-size: 12px;
-                    color: $light;
+                    color: theme.$light;
                 }
             }
 
             .add-meal-item-btn {
                 cursor: pointer;
-                color: $primary-blue;
+                color: theme.$primary-blue;
                 font-size: 12px;
             }
 
@@ -298,25 +301,25 @@
         width: 100%;
         margin-left: -24px;
         padding: 0 24px;
-        background-color: $aqua;
+        background-color: theme.$aqua;
 
         .delete-buttons-container {
             display: flex;
             align-items: center;
             column-gap: 24px;
-            @include down($mobile) {
+            @include mixins.down(theme.$mobile) {
                 column-gap: 16px;
             }
 
             span {
-                color: $default;
+                color: theme.$default;
                 font-size: 12px;
-                @include down($mobile) {
+                @include mixins.down(theme.$mobile) {
                     font-size: 10px;
                 }
 
                 &.has-values {
-                    color: $primary-blue;
+                    color: theme.$primary-blue;
                     cursor: pointer;
                 }
             }
@@ -342,8 +345,8 @@
             cursor: pointer;
             font-size: 12px;
             &:hover {
-                background: $light;
-                color: $aqua;
+                background: theme.$light;
+                color: theme.$aqua;
             }
         }
 
@@ -365,7 +368,7 @@
     left: 50%;
     z-index: 5;
     padding: 24px;
-    background: $dark-aqua;
+    background: theme.$dark-aqua;
     transform: translate(-50%, -50%);
     width: unquote("min(calc(100% - 16px), 600px)");
 
@@ -413,15 +416,15 @@
                     width: 100%;
                     padding: 8px 12px;
                     outline: none;
-                    border: 1.5px solid $default;
-                    background: $aqua;
-                    color: $white;
+                    border: 1.5px solid theme.$default;
+                    background: theme.$aqua;
+                    color: theme.$white;
                     font-size: 12px;
                     &::placeholder {
-                        color: $default;
+                        color: theme.$default;
                     }
                     &::-ms-input-placeholder {
-                        color: $default;
+                        color: theme.$default;
                     }
                 }
             }
@@ -443,7 +446,7 @@
             margin: 24px 0 32px;
 
             .section-heading {
-                color: $default;
+                color: theme.$default;
                 font-weight: 400;
                 font-size: 12px;
             }
@@ -457,14 +460,14 @@
 
             .starting-day-option {
                 list-style: none;
-                border: 1px solid $light;
+                border: 1px solid theme.$light;
                 padding: 4px 8px;
                 cursor: pointer;
                 border-radius: 8px;
-                color: $light;
+                color: theme.$light;
                 &.selected-day {
-                    color: $sunshine;
-                    border: 1px solid $sunshine;
+                    color: theme.$sunshine;
+                    border: 1px solid theme.$sunshine;
                     border-radius: 8px;
                 }
             }
@@ -505,7 +508,7 @@
                 width: 100%;
                 cursor: pointer;
                 &.is-default {
-                    color: $default;
+                    color: theme.$default;
                 }
             }
             .delete-date-btn {
@@ -523,9 +526,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border: 1.5px solid $default;
+        border: 1.5px solid theme.$default;
         padding: 6px 12px;
-        background: $aqua;
+        background: theme.$aqua;
         font-size: 12px;
         height: 33px;
         cursor: pointer;
@@ -554,8 +557,8 @@
 
         .category-selector-item {
             padding: 6px 12px;
-            background: $aqua;
-            border: 1.5px solid $default;
+            background: theme.$aqua;
+            border: 1.5px solid theme.$default;
             cursor: pointer;
             border-top: none;
             font-size: 12px;
@@ -583,14 +586,14 @@
             abbr {
                 font-size: 8px;
                 text-decoration: none;
-                color: $black;
+                color: theme.$black;
             }
         }
     }
     .react-calendar__month-view__days__day {
         padding: 8px;
         &:not(:disabled) {
-            color: $aqua;
+            color: theme.$aqua;
         }
         abbr {
             font-size: 10px;
