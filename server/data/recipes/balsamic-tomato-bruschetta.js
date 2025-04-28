@@ -1,0 +1,67 @@
+// const example = '../assets/Products/example.jpeg';
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { OLIVE_OIL, CHERRY_TOMATO, BASIL_LEAF, GARLIC, SHALLOT, BALSAMIC_VINEGAR, SALT, BLACK_PEPPER, BAGUETTE } = require('./ingredients');
+
+const BAGUETTE_SECTION = 'Baguette';
+const BRUSCHETTA_SECTION = 'Bruschetta';
+
+const BAKE_BAGUETTE = 'Bake Baguette';
+const PREP_BRUSCHETTA = 'Prep Bruschetta';
+const ASSEMBLE = 'Assemble';
+
+module.exports = {
+    wip: true,
+    cardName: 'Bruschetta',
+    name: 'Balsamic Tomato Bruschetta',
+    img: '',
+    recipeAuthor: '',
+    recipeFinder: 'Justin Ung',
+    available: true,
+    recommended: false,
+    category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
+    genre: [GENRES.ITALIAN],
+    method: [METHODS.BAKE],
+    type: [TYPES.SIDE_DISH, TYPES.FINGER_FOOD],
+    yields: { amount: 16, unit: YIELD_UNITS.SLICE },
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
+    websites: [
+        { label: 'Balsamic Tomato Bruschetta', link: 'https://www.forkinthekitchen.com/balsamic-bruschetta-on-crostini/' }
+    ],
+    separated: true,
+    ingredients: [
+        { ...BAGUETTE, amount: 1, unit: '', additionalDetails: 'sliced diagonally, 1/4 inch thick', section: BAGUETTE_SECTION },
+        { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: BAGUETTE_SECTION },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: BAGUETTE_SECTION },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: BAGUETTE_SECTION },
+
+        { ...CHERRY_TOMATO, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', section: BRUSCHETTA_SECTION },
+        { ...BASIL_LEAF, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chiffonade', section: BRUSCHETTA_SECTION },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: BRUSCHETTA_SECTION },
+        { ...SHALLOT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'finely chopped', section: BRUSCHETTA_SECTION },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BRUSCHETTA_SECTION },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: BRUSCHETTA_SECTION },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: BRUSCHETTA_SECTION },
+        { ...BALSAMIC_VINEGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BRUSCHETTA_SECTION },
+    ],
+    appliances: [
+        { name: 'oven' },
+    ],
+    supplies: [
+        { name: 'baking sheet' },
+        { name: 'medium bowl' },
+    ],
+    directions: [
+        { step: 'Preheat the oven to 375ºF.', type: BAKE_BAGUETTE },
+        { step: 'Place sliced baguette on baking sheet.', type: BAKE_BAGUETTE },
+        { step: 'Drizzle olive oil over bread (do not drench).', type: BAKE_BAGUETTE },
+        { step: 'Season with salt and pepper.', type: BAKE_BAGUETTE },
+        { step: 'Flip slices over and repeat with the other side.', type: BAKE_BAGUETTE },
+        { step: 'Bake until golden brown and crispy (about 5 to 7 minutes on each side). Be careful not to burn them.', type: BAKE_BAGUETTE },
+        { step: 'Drain the diced tomatoes as needed. Optionally add a pinch of salt.', type: PREP_BRUSCHETTA },
+        { step: 'In a medium bowl, combine the "Bruschetta" section ingredients.', type: PREP_BRUSCHETTA },
+        { step: 'Top each slice with about 2 tablespoons of the bruschetta mixture.', type: ASSEMBLE },
+        { step: 'Serve this appetizer immediately topped with more basil.', type: SECTIONS.SERVE },
+    ]
+};

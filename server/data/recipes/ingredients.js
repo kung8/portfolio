@@ -873,6 +873,7 @@ const INGREDIENTS = {
         BAGELS: {
             name: 'bagels', category: INGREDIENT_CATEGORY.GRAIN, img: "https://images.unsplash.com/photo-1518562923427-19e694fbd8e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcwOTA3fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        BAGUETTE: { name: 'baguette', category: INGREDIENT_CATEGORY.GRAIN },
         BASMATI_RICE: { name: 'basmati rice', category: INGREDIENT_CATEGORY.GRAIN },
         BISQUICK_CAKE_MIX: { name: 'bisquick cake mix', category: INGREDIENT_CATEGORY.GRAIN },
         BRIOCHE_BUNS: { name: 'brioche buns', category: INGREDIENT_CATEGORY.GRAIN },

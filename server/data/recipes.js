@@ -8,6 +8,7 @@ const bakedChicken = require("./recipes/baked-chicken");
 const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
 const bakedMacaroniAndCheese = require("./recipes/baked-macaroni-and-cheese");
 const bakedZiti = require("./recipes/baked-ziti");
+const balsamicTomatoBruschetta = require("./recipes/balsamic-tomato-bruschetta");
 const bananaBread = require("./recipes/banana-bread");
 const basilPesto = require("./recipes/basil-pesto");
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
@@ -366,6 +367,7 @@ const recipes = [
     carbonara,
     italianLasagna,
     pizza,
+    balsamicTomatoBruschetta,
     chickenCordonBleu,
     porkMilanese,
     chickenAlfredo,
@@ -599,7 +601,6 @@ module.exports = recipes;
 
 // BREADS
 // naan - https://www.thekitchn.com/naan-recipe-23711933
-// crostini - https://www.forkinthekitchen.com/balsamic-bruschetta-on-crostini/ (justin)
 // spicy italian flatbread - https://www.budgetbytes.com/spicy-italian-flat-bread/
 // mediterranean flatbread - https://sailorbailey.com/blog/mediterranean-flatbread/
 
