@@ -148,6 +148,7 @@ const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
 const koreanFriedChicken = require("./recipes/korean-fried-chicken");
 const kungPaoChicken = require("./recipes/kung-pao-chicken");
 const lemonBars = require("./recipes/lemon-bars");
+const lemonCapelliniSalad = require("./recipes/lemon-capellini-salad");
 const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
 const lemonChickenRamen = require("./recipes/lemon-chicken-ramen");
 const lentilSloppyJoes = require("./recipes/lentil-sloppy-joes");
@@ -384,6 +385,7 @@ const recipes = [
     potatoGnocchi,
     ravioli,
     italianTurkeyMeatballSpinachTortelliniSoup,
+    lemonCapelliniSalad,
     gelato,
 
     // SPANISH
@@ -592,9 +594,6 @@ module.exports = recipes;
 // dumpling - https://www.thepioneerwoman.com/food-cooking/recipes/a44190393/dumpling-soup-recipe/
 // beef stroganoff - https://www.thepioneerwoman.com/food-cooking/recipes/a103360/beef-stroganoff-soup/
 // chicken pot pie - https://www.thepioneerwoman.com/food-cooking/recipes/a61997037/chicken-pot-pie-soup-recipe/
-
-// SALADS
-// lemon capellini salad - https://iwashyoudry.com/lemon-capellini-salad/ (justin)
 
 // DESSERTS
 // almond croissant cookie bars - https://www.thekitchn.com/almond-croissant-cookie-bars-recipe-23712681
