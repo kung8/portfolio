@@ -299,6 +299,7 @@ const INGREDIENTS = {
         CHICKEN_BOUILLON_CUBE: { name: 'chicken bouillon cube', category: INGREDIENT_CATEGORY.CANNED },
         CHICKEN_BROTH: { name: 'chicken broth', category: INGREDIENT_CATEGORY.CANNED },
         CHICKEN_RICE_SOUP: { name: 'chicken rice soup', category: INGREDIENT_CATEGORY.CANNED },
+        CHICKPEA: { name: 'chickpea', category: INGREDIENT_CATEGORY.CANNED },
         CHILI: { name: 'chili', category: INGREDIENT_CATEGORY.CANNED },
         CHIPOTLE_PEPPERS_IN_ADOBO: { name: 'chipotle peppers in adobo', category: INGREDIENT_CATEGORY.CANNED },
         CLAM_CHOWDER_SOUP: { name: 'clam chowder soup', category: INGREDIENT_CATEGORY.CANNED },
@@ -876,6 +877,9 @@ const INGREDIENTS = {
         BAGUETTE: { name: 'baguette', category: INGREDIENT_CATEGORY.GRAIN },
         BASMATI_RICE: { name: 'basmati rice', category: INGREDIENT_CATEGORY.GRAIN },
         BISQUICK_CAKE_MIX: { name: 'bisquick cake mix', category: INGREDIENT_CATEGORY.GRAIN },
+        BOW_TIE_NOODLES: {
+            name: 'bow tie noodles', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1723802451266-59fecf0546d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxOTA1fA&ixlib=rb-4.0.3&q=80&w=400"
+        },
         BRIOCHE_BUNS: { name: 'brioche buns', category: INGREDIENT_CATEGORY.GRAIN },
         BREAD: {
             name: 'bread', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1675788939191-713c2abf3da6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcwODI4fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -888,9 +892,7 @@ const INGREDIENTS = {
             name: 'brown rice', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1671130295823-78f170465794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTYwMDAxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         BROWN_RICE_NOODLES: { name: 'brown rice noodles', category: INGREDIENT_CATEGORY.GRAIN },
-        BOW_TIE_NOODLES: {
-            name: 'bow tie noodles', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1723802451266-59fecf0546d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxOTA1fA&ixlib=rb-4.0.3&q=80&w=400"
-        },
+        BULGUR_WHEAT: { name: 'bulgur wheat', category: INGREDIENT_CATEGORY.GRAIN },
         CHOW_MEIN_NOODLES: {
             name: 'chow mein noodles', category: INGREDIENT_CATEGORY.GRAIN, img: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxNjMwfA&ixlib=rb-4.0.3&q=80&w=400"
         },

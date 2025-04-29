@@ -427,7 +427,7 @@ const recipes = [
     cherryAndCreamCheeseKolaches,
 
     // TURKISH
-    bulgurPilaf, // TODO: add
+    bulgurPilaf,
     ricePilaf,
 
     // SOUTH AFRICAN / PORTUGUESE
