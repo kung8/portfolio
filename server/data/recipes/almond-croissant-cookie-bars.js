@@ -24,7 +24,7 @@ module.exports = {
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT, TYPES.COOKIE, TYPES.BAR],
-    yields: { amount: 16, unit: YIELD_UNITS.SLICE },
+    yields: { amount: 16, unit: YIELD_UNITS.BAR },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 42, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 2, unit: TIME_UNITS.HOUR },
@@ -38,7 +38,7 @@ module.exports = {
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: CRUST_SECTION },
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CRUST_SECTION },
         { ...ALMOND_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CRUST_SECTION },
-        { ...SALT, amount: '', unit: 1 / 4, additionalDetails: '', section: CRUST_SECTION },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CRUST_SECTION },
         { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CRUST_SECTION },
         { ...BAKING_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CRUST_SECTION },
 
@@ -51,7 +51,7 @@ module.exports = {
         { ...ALMOND_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FRANGIPANE_SECTION },
 
         { ...SLICED_ALMONDS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ALMOND_TOPPING_SECTION },
-        
+
         { ...POWDERED_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

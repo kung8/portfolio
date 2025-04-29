@@ -268,6 +268,7 @@ const TYPES = {
 const YIELD_UNITS = {
     SERVING: { s: 'serving', p: 'servings' },
     LOAF: { s: 'loaf', p: 'loaves' },
+    BAR: { s: 'bar', p: 'bars' },
     SLICE: { s: 'slice', p: 'slices' },
     DOZEN: { s: 'dozen', p: 'dozens' },
     ROLL: { s: 'roll', p: 'rolls' },
