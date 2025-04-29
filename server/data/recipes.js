@@ -1,3 +1,4 @@
+const almondCroissantCookieBars = require("./recipes/almond-croissant-cookie-bars");
 const americanOmelette = require("./recipes/american-omelette");
 const antsOnALog = require("./recipes/ants-on-a-log");
 const applePie = require("./recipes/apple-pie");
@@ -541,6 +542,7 @@ const recipes = [
     brownies,
     brownies2,
     tedLassoBiscuits,
+    almondCroissantCookieBars,
     lemonBars,
     appleTart,
     applePie,
@@ -594,9 +596,6 @@ module.exports = recipes;
 // dumpling - https://www.thepioneerwoman.com/food-cooking/recipes/a44190393/dumpling-soup-recipe/
 // beef stroganoff - https://www.thepioneerwoman.com/food-cooking/recipes/a103360/beef-stroganoff-soup/
 // chicken pot pie - https://www.thepioneerwoman.com/food-cooking/recipes/a61997037/chicken-pot-pie-soup-recipe/
-
-// DESSERTS
-// almond croissant cookie bars - https://www.thekitchn.com/almond-croissant-cookie-bars-recipe-23712681
 
 // BREADS
 // naan - https://www.thekitchn.com/naan-recipe-23711933
