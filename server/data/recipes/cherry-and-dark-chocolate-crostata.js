@@ -17,7 +17,7 @@ const crostata16 = '../assets/Products/cherry-crostata-16.jpeg';
 const crostata17 = '../assets/Products/cherry-crostata-17.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, WHITE_SUGAR, LEMON_ZEST, BAKING_POWDER, SALT, UNSALTED_BUTTER, EGG, EGG_YOLKS, VANILLA_EXTRACT, CHERRY, LEMON_JUICE, CORNSTARCH, DARK_COOKING_CHOCOLATE } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, WHITE_SUGAR, LEMON_ZEST, BAKING_POWDER, SALT, UNSALTED_BUTTER, EGG, EGG_YOLK, VANILLA_EXTRACT, CHERRY, LEMON_JUICE, CORNSTARCH, DARK_COOKING_CHOCOLATE } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
 const FILLING_SECTION = 'Filling';
@@ -55,7 +55,7 @@ module.exports = {
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
         { ...UNSALTED_BUTTER, amount: 11, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chilled and divided', section: DOUGH_SECTION },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: DOUGH_SECTION },
+        { ...EGG_YOLK, amount: 1, unit: '', additionalDetails: '', section: DOUGH_SECTION },
         { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
 
         { ...CHERRY, amount: 10 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'pitted', section: FILLING_SECTION },

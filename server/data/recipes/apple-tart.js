@@ -10,7 +10,7 @@ const tart9 = '../assets/Products/apple-tart-9.jpeg';
 const tart10 = '../assets/Products/apple-tart-10.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { UNSALTED_BUTTER, WHITE_SUGAR, EGG_YOLKS, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, ALMOND_FLOUR, REFRIGERATED_PUFF_PASTRY, PINK_LADY_APPLE, APRICOT_JELLY } = require('./ingredients');
+const { UNSALTED_BUTTER, WHITE_SUGAR, EGG_YOLK, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, ALMOND_FLOUR, REFRIGERATED_PUFF_PASTRY, PINK_LADY_APPLE, APRICOT_JELLY } = require('./ingredients');
 
 const FRANGIPANE = 'Frangipane';
 const BRUSH = 'Brush';
@@ -38,7 +38,7 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: 1.5, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FRANGIPANE },
         { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FRANGIPANE },
         { ...ALMOND_FLOUR, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FRANGIPANE },
-        { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: FRANGIPANE },
+        { ...EGG_YOLK, amount: 1, unit: '', additionalDetails: '', section: FRANGIPANE },
         { ...VANILLA_EXTRACT, amount: 1/2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
 

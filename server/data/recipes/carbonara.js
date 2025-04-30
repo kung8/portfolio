@@ -12,7 +12,7 @@ const carbonara14 = '../assets/Products/carbonara-14.jpeg';
 const carbonara15 = '../assets/Products/carbonara-15.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { GUANCIALE, EGG, EGG_YOLKS, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO } = require('./ingredients');
+const { GUANCIALE, EGG, EGG_YOLK, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO } = require('./ingredients');
 
 const CARBONARA_SAUCE = 'Carbonara Sauce';
 const PASTA = 'Pasta';
@@ -43,7 +43,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
-        { ...EGG_YOLKS, amount: 2, unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
+        { ...EGG_YOLK, amount: 2, unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
         { ...PARMIGIANO_REGGIANO, amount: 7 / 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'finely shredded', section: CARBONARA_SAUCE },
         { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CARBONARA_SAUCE },
 

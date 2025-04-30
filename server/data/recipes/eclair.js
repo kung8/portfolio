@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, WHOLE_MILK, EGG_YOLKS, HEAVY_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, CAKE_FLOUR, VANILLA_BEAN, WATER } = require('./ingredients');
+const { UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, WHOLE_MILK, EGG_YOLK, HEAVY_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, CAKE_FLOUR, VANILLA_BEAN, WATER } = require('./ingredients');
 
 const PASTRY = 'Pastry';
 const CHOCOLATE_GLAZE = 'Chocolate Glaze';
@@ -41,7 +41,7 @@ module.exports = {
         { ...CAKE_FLOUR, amount: 5, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.FILLING },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...EGG_YOLKS, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...EGG_YOLK, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.FILLING },
         { ...HEAVY_CREAM, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
         { ...HEAVY_CREAM, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'chopped', section: CHOCOLATE_GLAZE },

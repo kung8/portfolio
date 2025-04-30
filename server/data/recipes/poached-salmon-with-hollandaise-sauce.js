@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
-const { LEMON_JUICE, OLIVE_OIL, SALT, BLACK_PEPPER, SALMON_FISH, EGG_YOLKS, WATER, UNSALTED_BUTTER, CHIVE } = require('./ingredients');
+const { LEMON_JUICE, OLIVE_OIL, SALT, BLACK_PEPPER, SALMON_FISH, EGG_YOLK, WATER, UNSALTED_BUTTER, CHIVE } = require('./ingredients');
 
 const SALMON_SECTION = 'Salmon';
 const HOLLANDAISE_SECTION = 'Hollandaise Sauce';
@@ -37,7 +37,7 @@ module.exports = {
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SALMON_SECTION },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SALMON_SECTION },
 
-        { ...EGG_YOLKS, amount: 3, unit: '', additionalDetails: '', section: HOLLANDAISE_SECTION },
+        { ...EGG_YOLK, amount: 3, unit: '', additionalDetails: '', section: HOLLANDAISE_SECTION },
         { ...WATER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'hot', section: HOLLANDAISE_SECTION },
         { ...UNSALTED_BUTTER, amount: 16, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HOLLANDAISE_SECTION },
         { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HOLLANDAISE_SECTION },

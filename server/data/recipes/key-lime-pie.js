@@ -5,7 +5,7 @@ const pie4 = '../assets/Products/key-lime-pie-4.jpeg';
 const pie5 = '../assets/Products/key-lime-pie-5.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
-const { EGG_YOLKS, SWEETENED_CONDENSED_MILK, KEY_LIME_JUICE, WHIPPED_CREAM, LIME, NINE_INCH_GRAHAM_CRACKER_PIE_CRUST } = require('./ingredients');
+const { EGG_YOLK, SWEETENED_CONDENSED_MILK, KEY_LIME_JUICE, WHIPPED_CREAM, LIME, NINE_INCH_GRAHAM_CRACKER_PIE_CRUST } = require('./ingredients');
 
 const PIE_FILLING_SECTION = 'Pie Filling';
 const CRUST_SECTION = 'Crust';
@@ -34,7 +34,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...EGG_YOLKS, amount: 5, unit: '', additionalDetails: 'beaten', section: PIE_FILLING_SECTION },
+        { ...EGG_YOLK, amount: 5, unit: '', additionalDetails: 'beaten', section: PIE_FILLING_SECTION },
         { ...SWEETENED_CONDENSED_MILK, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PIE_FILLING_SECTION },
         { ...KEY_LIME_JUICE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PIE_FILLING_SECTION },
         { ...NINE_INCH_GRAHAM_CRACKER_PIE_CRUST, amount: 1, unit: '', additionalDetails: '', section: CRUST_SECTION },

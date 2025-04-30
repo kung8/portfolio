@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
-const { SHALLOT, BLACK_PEPPER, WHITE_VINEGAR, WHITE_WINE, WATER, UNSALTED_BUTTER, EGG_YOLKS, CAYENNE_PEPPER, TARRAGON, CAPER } = require('./ingredients');
+const { SHALLOT, BLACK_PEPPER, WHITE_VINEGAR, WHITE_WINE, WATER, UNSALTED_BUTTER, EGG_YOLK, CAYENNE_PEPPER, TARRAGON, CAPER } = require('./ingredients');
 
 const REDUCTION_SECTION = 'Reduction';
 const BUTTER_SECTION = 'Butter';
@@ -43,7 +43,7 @@ module.exports = {
         { ...CAPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BUTTER_SECTION },
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'cold', section: BUTTER_SECTION },
 
-        { ...EGG_YOLKS, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: HOLLANDAISE_SAUCE_SECTION },
+        { ...EGG_YOLK, amount: 2, unit: '', additionalDetails: '', section: HOLLANDAISE_SAUCE_SECTION },
         { ...UNSALTED_BUTTER, amount: 8, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'cold and cubed', section: HOLLANDAISE_SAUCE_SECTION },
         { ...CAYENNE_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: HOLLANDAISE_SAUCE_SECTION },
         { ...CAYENNE_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: HOLLANDAISE_SAUCE_SECTION },

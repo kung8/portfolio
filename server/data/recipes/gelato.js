@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { WHOLE_MILK, EGG_YOLKS, WHITE_SUGAR, VANILLA_BEAN } = require('./ingredients');
+const { WHOLE_MILK, EGG_YOLK, WHITE_SUGAR, VANILLA_BEAN } = require('./ingredients');
 
 const GELATO_SECTION = 'Gelato';
 const FREEZING = 'Freezing';
@@ -27,7 +27,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...WHOLE_MILK, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GELATO_SECTION },
-        { ...EGG_YOLKS, amount: 5, unit: '', additionalDetails: '', section: GELATO_SECTION },
+        { ...EGG_YOLK, amount: 5, unit: '', additionalDetails: '', section: GELATO_SECTION },
         { ...WHITE_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GELATO_SECTION },
         { ...VANILLA_BEAN, amount: 1, unit: '', additionalDetails: 'split lengthwise', section: GELATO_SECTION },
     ],

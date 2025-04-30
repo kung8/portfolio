@@ -24,7 +24,7 @@ const plated3 = '../assets/Products/cinnamon-rolls-plated-3.jpeg';
 const plated5 = '../assets/Products/cinnamon-rolls-plated-5.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { YEAST, WHITE_SUGAR, EGG, EGG_YOLKS, UNSALTED_BUTTER, BREAD_FLOUR, SALT, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, POWDERED_SUGAR, VANILLA_EXTRACT, MILK } = require('./ingredients');
+const { YEAST, WHITE_SUGAR, EGG, EGG_YOLK, UNSALTED_BUTTER, BREAD_FLOUR, SALT, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, POWDERED_SUGAR, VANILLA_EXTRACT, MILK } = require('./ingredients');
 
 module.exports = {
     cardName: 'Cinnamon Rolls',
@@ -51,7 +51,7 @@ module.exports = {
         { ...YEAST, amount: 9 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...WHITE_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...EGG_YOLK, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
         { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.DOUGH },
         { ...BREAD_FLOUR, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },

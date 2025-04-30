@@ -17,7 +17,7 @@ const sugarYolksMixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolk
 const sugarYolksUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-unmixed.jpeg';
 const { waitTime } = require('./cheesecake-factory-cheesecake');
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { HEAVY_CREAM, VANILLA_BEAN, EGG_YOLKS, HOT_WATER, WHITE_SUGAR } = require('./ingredients');
+const { HEAVY_CREAM, VANILLA_BEAN, EGG_YOLK, HOT_WATER, WHITE_SUGAR } = require('./ingredients');
 
 const CREAM = 'Cream';
 const VANILLA_SUGAR = 'Vanilla Sugar';
@@ -50,7 +50,7 @@ module.exports = {
 
         { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.QUART, additionalDetails: '', section: CREAM },
         { ...VANILLA_BEAN, amount: 1, unit: '', additionalDetails: 'split and scraped', section: CREAM },
-        { ...EGG_YOLKS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...EGG_YOLK, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...HOT_WATER, amount: 2, unit: INGREDIENT_UNITS.QUART, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [

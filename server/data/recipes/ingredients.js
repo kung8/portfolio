@@ -615,8 +615,8 @@ const INGREDIENTS = {
         EGG_WHITES: {
             name: 'egg whites', category: INGREDIENT_CATEGORY.DAIRY, img: "https://plus.unsplash.com/premium_photo-1713463857946-dc906a2450a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MDI0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        EGG_YOLKS: {
-            name: 'egg yolks', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1607690424395-6660d838d818?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY3OTAzfA&ixlib=rb-4.0.3&q=80&w=400"
+        EGG_YOLK: {
+            name: 'egg yolk', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1607690424395-6660d838d818?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY3OTAzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         FETA_CHEESE: { name: 'feta cheese', category: INGREDIENT_CATEGORY.DAIRY },
         GOAT_CHEESE: { name: 'goat cheese', category: INGREDIENT_CATEGORY.DAIRY },

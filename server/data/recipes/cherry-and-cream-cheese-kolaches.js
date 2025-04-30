@@ -26,7 +26,7 @@ const kolaches25 = '../assets/Products/kolaches-25.jpeg';
 const kolaches26 = '../assets/Products/kolaches-26.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { YEAST, WHITE_SUGAR, ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, EGG_YOLKS, SALT, CREAM_CHEESE, POWDERED_SUGAR, WHOLE_MILK, CHERRY, LEMON_JUICE, LEMON_ZEST, WATER } = require('./ingredients');
+const { YEAST, WHITE_SUGAR, ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, EGG_YOLK, SALT, CREAM_CHEESE, POWDERED_SUGAR, WHOLE_MILK, CHERRY, LEMON_JUICE, LEMON_ZEST, WATER } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
 const CHERRY_FILLING_SECTION = 'Cherry Filling';
@@ -68,7 +68,7 @@ module.exports = {
         { ...YEAST, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
         { ...WHOLE_MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
         { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: DOUGH_SECTION },
-        { ...EGG_YOLKS, amount: 3, unit: '', additionalDetails: '', section: DOUGH_SECTION },
+        { ...EGG_YOLK, amount: 3, unit: '', additionalDetails: '', section: DOUGH_SECTION },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
 
@@ -80,7 +80,7 @@ module.exports = {
 
         { ...CREAM_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'room temperature', section: CREAM_CHEESE_FILLING_SECTION },
         { ...POWDERED_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CREAM_CHEESE_FILLING_SECTION },
-        { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: CREAM_CHEESE_FILLING_SECTION },
+        { ...EGG_YOLK, amount: 1, unit: '', additionalDetails: '', section: CREAM_CHEESE_FILLING_SECTION },
         { ...LEMON_ZEST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CREAM_CHEESE_FILLING_SECTION },
 
         // { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: STREUSEL_SECTION },
@@ -88,7 +88,7 @@ module.exports = {
         // { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: STREUSEL_SECTION },
         // { ...SALT, amount: 1/8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: STREUSEL_SECTION },
 
-        { ...EGG_YOLKS, amount: 1, unit: '', additionalDetails: '', section: EGG_WASH_SECTION },
+        { ...EGG_YOLK, amount: 1, unit: '', additionalDetails: '', section: EGG_WASH_SECTION },
         { ...WHOLE_MILK, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: EGG_WASH_SECTION },
     ],
     appliances: [
