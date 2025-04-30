@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { HEAVY_CREAM, EGG, LEMON_ZEST, SALT, CAYENNE_PEPPER, NUTMEG, BREAD, COOKED_HAM, UNSALTED_BUTTER, SWISS_CHEESE } = require('./ingredients');
+const { HEAVY_CREAM, EGG, LEMON_ZEST, SALT, CAYENNE_PEPPER, NUTMEG, BREAD, COOKED_HAM, UNSALTED_BUTTER, PROVOLONE_CHEESE } = require('./ingredients');
 
 const BATTER_SECTION = 'Batter';
 const SANDWICH_SECTION = 'Sandwich';
@@ -40,7 +40,7 @@ module.exports = {
         { ...NUTMEG, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: BATTER_SECTION },
 
         { ...BREAD, amount: 4, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
-        { ...SWISS_CHEESE, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
+        { ...PROVOLONE_CHEESE, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
         { ...COOKED_HAM, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'sliced', section: SANDWICH_SECTION },
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SANDWICH_SECTION },
         { ...CAYENNE_PEPPER, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.TOPPINGS },

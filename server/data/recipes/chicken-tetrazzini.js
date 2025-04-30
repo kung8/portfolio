@@ -19,7 +19,7 @@ module.exports = {
     recipeAuthor: '',
     recipeFinder: 'Lauren Maliwauki',
     available: true,
-    recommended: true,
+    recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],

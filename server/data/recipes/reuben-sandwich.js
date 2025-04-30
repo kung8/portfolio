@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
-const { THOUSAND_ISLAND_DRESSING, SWISS_CHEESE, CORNED_BEEF, UNSALTED_BUTTER, RYE_BREAD, SAUERKRAUT } = require('./ingredients');
+const { THOUSAND_ISLAND_DRESSING, PROVOLONE_CHEESE, CORNED_BEEF, UNSALTED_BUTTER, RYE_BREAD, SAUERKRAUT } = require('./ingredients');
 
 const SANDWICH_SECTION = 'Sandwich';
 const BUTTER_SECTION = 'Butter';
@@ -33,7 +33,7 @@ module.exports = {
     ingredients: [
         { ...RYE_BREAD, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
         { ...THOUSAND_ISLAND_DRESSING, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SANDWICH_SECTION },
-        { ...SWISS_CHEESE, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
+        { ...PROVOLONE_CHEESE, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
         { ...CORNED_BEEF, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
         { ...SAUERKRAUT, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SANDWICH_SECTION },
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BUTTER_SECTION },

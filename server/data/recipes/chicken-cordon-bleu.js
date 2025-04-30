@@ -19,8 +19,8 @@ const {
     BLACK_PEPPER,
     COOKED_HAM,
     CORN_FLAKES_CEREAL,
-    SWISS_CHEESE,
     BONELESS_AND_SKINLESS_CHICKEN_BREAST,
+    PROVOLONE_CHEESE,
 } = require('./ingredients');
 
 module.exports = {
@@ -45,7 +45,7 @@ module.exports = {
     ingredients: [
         { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...COOKED_HAM, amount: 8, unit: '', additionalDetails: 'halved slices', section: SECTIONS.MAIN },
-        { ...SWISS_CHEESE, amount: 8, unit: '', additionalDetails: 'halved slices', section: SECTIONS.MAIN },
+        { ...PROVOLONE_CHEESE, amount: 8, unit: '', additionalDetails: 'halved slices', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...CORN_FLAKES_CEREAL, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed', section: SECTIONS.MAIN },

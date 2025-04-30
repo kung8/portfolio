@@ -22,7 +22,7 @@ module.exports = {
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: true,
+    recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN, GENRES.WESTERN],
     method: [METHODS.BAKE],

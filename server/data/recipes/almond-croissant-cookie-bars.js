@@ -1,5 +1,15 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const bars1 = '../assets/Products/almond-croissant-cookie-bar-1.jpeg';
+const bars2 = '../assets/Products/almond-croissant-cookie-bar-2.jpeg';
+const bars3 = '../assets/Products/almond-croissant-cookie-bar-3.jpeg';
+const bars4 = '../assets/Products/almond-croissant-cookie-bar-4.jpeg';
+const bars5 = '../assets/Products/almond-croissant-cookie-bar-5.jpeg';
+const bars6 = '../assets/Products/almond-croissant-cookie-bar-6.jpeg';
+const bars7 = '../assets/Products/almond-croissant-cookie-bar-7.jpeg';
+const bars8 = '../assets/Products/almond-croissant-cookie-bar-8.jpeg';
+const bars9 = '../assets/Products/almond-croissant-cookie-bar-9.jpeg';
+const bars10 = '../assets/Products/almond-croissant-cookie-bar-10.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, BROWN_SUGAR, EGG, VANILLA_EXTRACT, ALMOND_EXTRACT, SALT, ALL_PURPOSE_FLOUR, BAKING_POWDER, WHITE_SUGAR, ALMOND_FLOUR, SLICED_ALMONDS, POWDERED_SUGAR } = require('./ingredients');
 
 const CRUST_SECTION = 'Crust';
@@ -12,14 +22,13 @@ const ASSEMBLE = 'Assemble';
 const BAKE_BARS = 'Bake Bars';
 
 module.exports = {
-    wip: true,
     cardName: 'Almond Croissant Cookie Bars',
     name: 'Almond Croissant Cookie Bars',
-    img: '',
+    img: bars10,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],
@@ -56,7 +65,6 @@ module.exports = {
     ],
     appliances: [
         { name: 'oven' },
-        { name: 'stand mixer' },
     ],
     supplies: [
         { name: 'baking sheet' },
@@ -69,22 +77,25 @@ module.exports = {
     directions: [
         { step: 'Preheat the oven to 350ºF.', type: MAKE_CRUST },
         { step: 'Line a baking sheet with two sheets of parchment paper (perpendicular of each other).', type: MAKE_CRUST },
-        { step: 'In a mixing bowl, combine all the "Crust" section ingredients except the flour and baking powder. Mix until smooth.', type: MAKE_CRUST },
-        { step: 'Add the flour and baking powder. Mix until it forms a thick batter.', type: MAKE_CRUST },
-        { step: 'Transfer the batter to the pan and spread to an even layer.', type: MAKE_CRUST },
+        { step: 'In a mixing bowl, combine all the "Crust" section ingredients except the flour and baking powder. Mix until smooth.', type: MAKE_CRUST, img: bars1 },
+        { step: 'Add the flour and baking powder. Mix until it forms a thick batter.', type: MAKE_CRUST, img: bars2 },
+        { step: 'Transfer the batter to the pan and spread to an even layer.', type: MAKE_CRUST, img: bars3 },
 
-        { step: 'In a stand mixer, combine butter, sugar and salt. Beat on medium until fluffy (about 1 to 2 minutes). Scrape down sides.', type: MAKE_FRANGIPANE },
-        { step: 'While on low speed, add vanilla and almond extracts.', type: MAKE_FRANGIPANE },
-        { step: 'Add in eggs one at a time. Wait until each are incorporated. Scrape down sides.', type: MAKE_FRANGIPANE },
-        { step: 'Add in flour until just combined. Scrape down sides and fold in flour until smooth.', type: MAKE_FRANGIPANE },
+        { step: 'In the same empty mixing bowl, combine butter, sugar and salt. Combine with a rubber spatula. Beat until fluffy (about 1 to 2 minutes). Scrape down sides.', type: MAKE_FRANGIPANE, img: bars4 },
+        { step: 'Add vanilla and almond extracts. Mix.', type: MAKE_FRANGIPANE },
+        { step: 'Add in eggs one at a time. Wait until each are incorporated. Scrape down sides.', type: MAKE_FRANGIPANE, img: bars5 },
+        { step: 'Add in flour until just combined. Scrape down sides and fold in flour until smooth.', type: MAKE_FRANGIPANE, img: bars6 },
 
-        { step: 'Spread frangipane over crust in an even layer.', type: ASSEMBLE },
-        { step: 'Sprinkle almonds over frangipane and press into frangipane.', type: ASSEMBLE },
+        { step: 'Spread frangipane over crust in an even layer.', type: ASSEMBLE, img: bars7 },
+        { step: 'Sprinkle almonds over frangipane and press into frangipane.', type: ASSEMBLE, img: bars8 },
 
-        { step: 'Bake until golden brown and the center is puffed (about 38 to 42 minutes).', type: BAKE_BARS },
+        { step: 'Bake until golden brown and the center is puffed (about 38 to 42 minutes).', type: BAKE_BARS, img: bars9 },
         { step: 'Let it completely cool (about 2 hours).', type: BAKE_BARS },
 
-        { step: 'Dust with powdered sugar.', type: SECTIONS.SERVE },
+        { step: 'Use a strainer to dust bars with powdered sugar.', type: SECTIONS.SERVE },
         { step: 'Lift parchment paper and transfer to a cutting board. Cut and enjoy these yummy bars.', type: SECTIONS.SERVE },
+    ], 
+    notes: [
+        { note: 'The original recipe tells you to use a stand mixer, but you can use a hand mixer or even a rubber spatula. You do not need to wash an additional bowl.' },
     ]
 };

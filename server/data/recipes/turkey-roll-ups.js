@@ -5,7 +5,7 @@ const roll4 = '../assets/Products/turkey-roll-up-4.jpeg';
 const roll5 = '../assets/Products/turkey-roll-up-5.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
-const { CREAM_CHEESE, FLOUR_TORTILLA, ROMAINE_LETTUCE, TURKEY, SWISS_CHEESE, SLICER_TOMATO, CRANBERRY_SAUCE } = require('./ingredients');
+const { CREAM_CHEESE, FLOUR_TORTILLA, ROMAINE_LETTUCE, TURKEY, SLICER_TOMATO, CRANBERRY_SAUCE, PROVOLONE_CHEESE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Turkey Roll Ups',
@@ -32,7 +32,7 @@ module.exports = {
         { ...FLOUR_TORTILLA, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.ASSEMBLE },
         { ...ROMAINE_LETTUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.HEAD, additionalDetails: '', section: SECTIONS.ASSEMBLE },
         { ...TURKEY, amount: 16, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.ASSEMBLE },
-        { ...SWISS_CHEESE, amount: 16, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'halved', section: SECTIONS.ASSEMBLE },
+        { ...PROVOLONE_CHEESE, amount: 16, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'halved', section: SECTIONS.ASSEMBLE },
         { ...SLICER_TOMATO, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'halved and sliced', section: SECTIONS.ASSEMBLE },
     ],
     supplies: [
@@ -48,5 +48,9 @@ module.exports = {
         { step: 'Roll the tortilla tightly.', type: SECTIONS.ASSEMBLE },
         { step: 'Wrap in plastic wrap and chill in the fridge until serving.', type: SECTIONS.CHILL },
         { step: 'Cut each into 8 equal pieces and enjoy.', type: SECTIONS.SERVE, img: roll5 },
+    ],
+    notes: [
+        { note: 'This does not keep very well, maybe two days at most. This tastes better chilled for a few hours though.' },
+        { note: 'Also the original recipe calls for swiss cheese but I think it would be better to replace with provolone.' }
     ]
 };
