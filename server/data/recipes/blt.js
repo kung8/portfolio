@@ -1,4 +1,5 @@
-// const example = '../assets/Products/example.jpeg';
+const blt1 = '../assets/Products/blt-1.jpeg';
+const blt2 = '../assets/Products/blt-2.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BACON, LETTUCE, ROMA_TOMATO, BREAD, MAYONNAISE } = require('./ingredients');
 
@@ -6,14 +7,13 @@ const COOK_BACON = 'Cook Bacon';
 const ASSEMBLE_SANDWICH = 'Assemble Sandwich';
 
 module.exports = {
-    wip: true,
     cardName: 'B.L.T.',
     name: 'B.L.T.',
-    img: '',
+    img: blt2,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN],
     method: [METHODS.PAN_FRY],
@@ -48,7 +48,7 @@ module.exports = {
         { step: 'Over medium-high heat, cook bacon in a frying pan until browned (about 10 minutes).', type: COOK_BACON },
         { step: 'Let the bacon drain on the paper towel.', type: COOK_BACON },
         { step: 'Spread the mayo on a slice of toasted bread.', type: ASSEMBLE_SANDWICH },
-        { step: 'Layer the bacon, tomatoes and lettuce on the sandwich.', type: ASSEMBLE_SANDWICH },
+        { step: 'Layer the bacon, tomatoes and lettuce on the sandwich.', type: ASSEMBLE_SANDWICH, img: blt1 },
         { step: 'Enjoy this simple sandwich.', type: SECTIONS.SERVE },
     ]
 };
