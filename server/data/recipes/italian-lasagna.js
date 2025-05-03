@@ -1,6 +1,6 @@
 const lasagna = '../assets/Products/lasagna.jpeg';
 const pan = '../assets/Products/lasagna-pan.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
     ITALIAN_SAUSAGE,
     GROUND_BEEF,
@@ -22,6 +22,22 @@ const {
     PARMESAN_CHEESE,
     WATER,
 } = require('./ingredients');
+const { separated } = require('./pad-thai');
+
+const ITALIAN_SAUSAGE_SECTION = 'Italian Sausage';
+const BEEF_AND_VEGGIES_SECTION = 'Beef and Veggies';
+const SAUCE_SECTION = 'Sauce';
+const SEASONINGS_SECTION = 'Seasonings';
+const RICOTTA_MIXTURE = 'Ricotta Mixture';
+const NOODLES_SECTION = 'Noodles';
+const CHEESE_TOPPING_SECTION = 'Cheese Topping';
+
+const COOK_SAUSAGE = 'Cook Sausage';
+const COOK_MEAT_SAUCE = 'Cook Meat Sauce';
+const COOK_NOODLES = 'Cook Noodles';
+const ASSEMBLE_LASAGNA = 'Assemble Lasagna';
+const BAKE_LASAGNA = 'Bake Lasagna';
+const PREP_RICOTTA_MIXTURE = 'Prep Ricotta Mixture';
 
 module.exports = {
     cardName: 'Lasagna',
@@ -42,25 +58,33 @@ module.exports = {
         { label: 'Lasagna', link: 'https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/' }
     ],
     ingredients: [
-        { ...ITALIAN_SAUSAGE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
-        { ...GROUND_BEEF, amount: 3 / 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
-        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'minced', optional: false },
-        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'crushed', optional: false },
-        { ...CRUSHED_TOMATOES, amount: 28, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
-        { ...TOMATO_PASTE, amount: '', unit: '', additionalDetails: '', optional: false },
-        { ...TOMATO_SAUCE, amount: 13, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
-        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', optional: false },
-        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...BASIL, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...FENNEL_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...SALT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...PARSLEY, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...LASAGNA_NOODLES, amount: 12, unit: INGREDIENT_UNITS.NOODLE, additionalDetails: '', optional: false },
-        { ...RICOTTA_CHEESE, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
-        { ...EGG, amount: 1, unit: '', additionalDetails: '', optional: false },
-        { ...MOZZARELLA_CHEESE, amount: 3 / 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: false },
-        { ...PARMESAN_CHEESE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', optional: false },
+        { ...ITALIAN_SAUSAGE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: ITALIAN_SAUSAGE_SECTION },
+
+        { ...GROUND_BEEF, amount: 3 / 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BEEF_AND_VEGGIES_SECTION },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'minced', section: BEEF_AND_VEGGIES_SECTION },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'crushed', section: BEEF_AND_VEGGIES_SECTION },
+
+        { ...CRUSHED_TOMATOES, amount: 28, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SAUCE_SECTION },
+        { ...TOMATO_SAUCE, amount: 13, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SAUCE_SECTION },
+        { ...TOMATO_PASTE, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SAUCE_SECTION },
+        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SAUCE_SECTION },
+
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASONINGS_SECTION },
+        { ...BASIL, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONINGS_SECTION },
+        { ...FENNEL_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONINGS_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONINGS_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONINGS_SECTION },
+        { ...PARSLEY, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASONINGS_SECTION },
+
+        { ...RICOTTA_CHEESE, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: RICOTTA_MIXTURE },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: RICOTTA_MIXTURE },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: RICOTTA_MIXTURE },
+        { ...PARSLEY, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RICOTTA_MIXTURE },
+
+        { ...LASAGNA_NOODLES, amount: 12, unit: '', additionalDetails: '', section: NOODLES_SECTION },
+
+        { ...MOZZARELLA_CHEESE, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'sliced', section: CHEESE_TOPPING_SECTION },
+        { ...PARMESAN_CHEESE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: CHEESE_TOPPING_SECTION },
     ],
     appliances: [
         { name: 'stove' },
@@ -78,30 +102,37 @@ module.exports = {
         { name: 'colander' },
         { name: 'mixing bowl' },
     ],
+    separated: true,
     directions: [
-        { step: 'Prep Italian sausage by peeling the casing then cut into small pieces.', type: SECTIONS.MAIN },
-        { step: 'Heat the large pan over medium-high heat and place sausage inside the pan once hot (no oil needed).', type: SECTIONS.MAIN },
-        { step: 'After the sausage cooks a little, add the ground beef, onions, and garlic and cook until browned.', type: SECTIONS.MAIN },
-        { step: 'Mix into the pan: the crushed tomatoes, tomato sauce, tomato paste and water.', type: SECTIONS.MAIN },
-        { step: 'Add the seasonings: sugar, fennel seeds, basil, 1 tsp salt, pepper, 2 Tbsp parsley.', type: SECTIONS.MAIN },
-        { step: 'Let the meat sauce simmer on low heat and cover for 1.5 hours.', type: SECTIONS.MAIN },
-        { step: 'While the meat sauce is simmering, mix together the ricotta cheese, egg, and remaining parsley and salt in a mixing bowl and set to the side.', type: SECTIONS.MAIN },
-        { step: 'About 20 minutes before the simmering stops (or depending on how many lasagna noodles you can fit inside the pot give enough time for the number of iterations about 10 minutes per batch and an initial few minutes for the water to boil), start a pot of water and lightly salt to cook the lasagna noodles until boil.', type: SECTIONS.MAIN },
-        { step: 'Add the noodles to the pot and cook for about 8 - 10 minutes (make sure the noodles are submerged).', type: SECTIONS.MAIN },
-        { step: 'Drain and rinse noodles with cold water. Repeat this process per batch if needed. Note: you may reuse the same boiling water but you may need to add some more water.', type: SECTIONS.MAIN },
-        { step: 'Preheat oven to 375ºF.', type: SECTIONS.MAIN },
-        { step: 'Once the meat sauce and noodles are ready, it\'s time to layer the lasagna in a baking pan.', type: SECTIONS.MAIN },
-        { step: 'Using a 1/2 cup measuring cup, spread 1 1/2 cup of meat sauce in baking pan.', type: SECTIONS.MAIN },
-        { step: 'Layer with 6 noodles length-wise over the meat sauce.', type: SECTIONS.MAIN },
-        { step: 'Add half of the ricotta cheese mix over the noodles.', type: SECTIONS.MAIN },
-        { step: 'Layer with a few slices of mozzarella.', type: SECTIONS.MAIN },
-        { step: 'Add again 1 1/2 cup of meat sauce.', type: SECTIONS.MAIN },
-        { step: 'Add 1/4 cup of Parmesan cheese.', type: SECTIONS.MAIN },
-        { step: 'Layer with remaining noodles, mozzarella, and Parmesan cheese (in that order).', type: SECTIONS.MAIN },
-        { step: 'Cover this with tin foil (trying not to let the cheese touch the cheese).', type: SECTIONS.MAIN },
-        { step: 'Bake for 25 minutes.', type: SECTIONS.MAIN },
-        { step: 'Remove the foil, and bake for another 25 minutes.', type: SECTIONS.MAIN },
-        { step: 'Let cool for at least 15 minutes.', type: SECTIONS.MAIN },
-        { step: 'Serve and enjoy this splash of Italian goodness.', type: SECTIONS.MAIN, img: pan },
+        { step: 'Remove the Italian sausage casing and cut the sausage into small pieces.', type: COOK_SAUSAGE },
+        { step: 'Over medium-high heat, heat a large pan.', type: COOK_SAUSAGE },
+        { step: 'Add the sausage. Cook for a few minutes.', type: COOK_SAUSAGE },
+
+        { step: 'Add the "Beef and Veggies" section ingredients. Cook until browned.', type: COOK_MEAT_SAUCE },
+        { step: 'Add the "Sauce" section ingredients.', type: COOK_MEAT_SAUCE },
+        { step: 'Add the "Seasonings" section ingredients.', type: COOK_MEAT_SAUCE },
+        { step: 'Cover. Simmer for 90 minutes.', type: COOK_MEAT_SAUCE },
+
+        { step: 'In a mixing bowl, combine together the "Ricotta Mixture" section ingredients. Set aside.', type: PREP_RICOTTA_MIXTURE },
+
+        { step: 'Over medium-high heat, bring a pot of salted water to a boil.', type: COOK_NOODLES },
+        { step: 'Add the noodles and make sure its submerged. Cook until just cooked (about 8 to 10 minutes).', type: COOK_NOODLES },
+        { step: 'Drain. Rinse noodles with cold water.', type: COOK_NOODLES },
+
+        { step: 'Preheat oven to 375ºF.', type: ASSEMBLE_LASAGNA },
+        { step: 'In a baking pan, pour 1 1/2 cup of the meat sauce.', type: ASSEMBLE_LASAGNA },
+        { step: 'Layer 6 noodles length-wise over the meat sauce.', type: ASSEMBLE_LASAGNA },
+        { step: 'Add half of the ricotta mixture evenly over the noodles.', type: ASSEMBLE_LASAGNA },
+        { step: 'Layer with a few slices of mozzarella.', type: ASSEMBLE_LASAGNA },
+        { step: 'Add 1 1/2 cup of meat sauce.', type: ASSEMBLE_LASAGNA },
+        { step: 'Add 1/4 cup of parmesan cheese.', type: ASSEMBLE_LASAGNA },
+        { step: 'Layer with remaining noodles, mozzarella, and Parmesan cheese (in that order).', type: ASSEMBLE_LASAGNA },
+        { step: 'Cover this with tin foil. Avoid letting the cheese touch the foil.', type: ASSEMBLE_LASAGNA },
+
+        { step: 'Bake for 25 minutes.', type: BAKE_LASAGNA },
+        { step: 'Remove the foil. Bake for another 25 minutes.', type: BAKE_LASAGNA },
+        { step: 'Let cool for at least 15 minutes.', type: BAKE_LASAGNA },
+
+        { step: 'Serve and enjoy this splash of Italian goodness.', type: SECTIONS.SERVE, img: pan },
     ]
 };
