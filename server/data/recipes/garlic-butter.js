@@ -1,18 +1,17 @@
-// const example = '../assets/Products/example.jpeg';
+const butter = '../assets/Products/garlic-butter.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, GARLIC, PARSLEY, CHIVE, LEMON_JUICE } = require('./ingredients');
 
 const MIX = 'Mix';
 
 module.exports = {
-    wip: true,
     cardName: 'Garlic Butter',
     name: 'Garlic Butter',
-    img: '',
+    img: butter,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.TOPPING],
     genre: [GENRES.AMERICAN],
     method: [METHODS.MIX],
