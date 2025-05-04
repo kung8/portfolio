@@ -29,7 +29,7 @@ module.exports = {
     type: [TYPES.DESSERT, TYPES.CHOCOLATE],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 6, unit: TIME_UNITS.MINUTE },
-    cookTime: { amount: 3, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 4, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 2, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Peanut Butter Cup', link: 'https://www.allrecipes.com/recipe/44715/chocolate-peanut-butter-cups/' }
