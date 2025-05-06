@@ -1,5 +1,5 @@
-@use '_variables' as theme;
-@use '_mixins' as mixins;
+@use "_variables" as theme;
+@use "_mixins" as mixins;
 
 .item-container {
     display: flex;
@@ -56,16 +56,16 @@
     }
 
     .item-image {
-        @include mixins.up(theme.$mid-desktop) {
-            width: 200px;
-            height: 200px;
-            min-width: 200px;
-        }
-        width: 175px;
-        height: 175px;
-        min-width: 175px;
         margin-right: 24px;
         border-radius: 4px;
+        width: 200px;
+        height: 200px;
+        min-width: 200px;
+        @include mixins.down(theme.$mid-desktop) {
+            width: 175px;
+            height: 175px;
+            min-width: 175px;
+        }
         @include mixins.down(theme.$desktop) {
             width: 200px;
             height: 200px;
