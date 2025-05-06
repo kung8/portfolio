@@ -580,11 +580,6 @@ module.exports = recipes;
 // MEXICAN:
 // - Tortillas - 
 
-// Chelsey's Recipes to Add:
-// The Best Vegan Chocolate Cake (https://drive.google.com/file/d/1qokvvTSvBUNPG-emDBdWWGDC6bZJUA6Y/view?fbclid=IwY2xjawIfTthleHRuA2FlbQIxMAABHXA6K0n-MSk87IxBNd9zEPRf_2juEzIvI4wMpHOQ3YQqCpdq9ead33OwKA_aem_yOMPv648tIKxgtoZ38M-6g)
-// Best Ever Vegan Waffles (https://drive.google.com/file/d/1vWPiET0ImRdgXh2GS5B5H251y0ZIWDYZ/view?fbclid=IwY2xjawIfTtJleHRuA2FlbQIxMAABHWezhniFBcVhc_aIfe6Af1S23NPoPcpTVXrD1nA3cImdgqI29b1woKNxsg_aem_XIexmWX_dj0wt0Rh9hBhzQ)
-// Vegan Sushi with Tomato Spicy Tuna (https://drive.google.com/file/d/1Y7UFOMpM8PcEXzpmCX47gbdKStMyOJCD/view?fbclid=IwY2xjawIfTsxleHRuA2FlbQIxMAABHeRbBdgqQimVVtzmox4BNMndXLkm_oCZ6zohG4dXMwCJVFie9BH1kcm_YQ_aem_-epiQxQ39Z19Edrx2a6ycQ)
-
 // Butter Toffee (https://uglydesserts.com/2025/01/24/homemade-butter-toffee/)
 // Mochi (https://parade.com/food/two-ingredient-mochi)
 
