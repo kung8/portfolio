@@ -6,6 +6,8 @@ const cup5 = '../assets/Products/peanut-butter-cup-5.jpeg';
 const cup6 = '../assets/Products/peanut-butter-cup-6.jpeg';
 const cup7 = '../assets/Products/peanut-butter-cup-7.jpeg';
 const cup8 = '../assets/Products/peanut-butter-cup-8.jpeg';
+const cup9 = '../assets/Products/peanut-butter-cup-9.jpeg';
+const cup10 = '../assets/Products/peanut-butter-cup-10.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { MILK_CHOCOLATE_CHIPS, PEANUT_BUTTER, SALT, POWDERED_SUGAR } = require('./ingredients');
@@ -18,7 +20,7 @@ const SECOND_CHILL = 'Second Chill';
 module.exports = {
     cardName: 'Peanut Butter Cup',
     name: 'Peanut Butter Cup',
-    img: cup8,
+    img: cup9,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -59,7 +61,7 @@ module.exports = {
         { step: 'Place peanut butter mixture in the center of the chocolate.', type: SECOND_CHILL, img: cup6 },
         { step: 'Melt the rest of the chocolate.', type: SECOND_CHILL },
         { step: 'Pour chocolate over the peanut butter mixture. Smooth as much as you can.', type: SECOND_CHILL, img: cup7 },
-        { step: 'Chill the chocolate until firm (about 1 hour).', type: SECOND_CHILL },
-        { step: 'Enjoy these Reese\'s Cup copycat!', type: SECTIONS.SERVE },
+        { step: 'Chill the chocolate until firm (about 1 hour).', type: SECOND_CHILL, img: cup8 },
+        { step: 'Enjoy these Reese\'s Cup copycat!', type: SECTIONS.SERVE, img: cup10 },
     ]
 };
