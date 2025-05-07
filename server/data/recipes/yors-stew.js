@@ -7,6 +7,7 @@ const CARAMELIZED_ONION_SECTION = 'Caramelized Onion';
 const GARLIC_SECTION = 'Garlic';
 const VEGETABLE_SECTION = 'Vegetables';
 const SEASONING_SECTION = 'Seasoning';
+const LIQUID_SECTION = 'Liquid';
 const CORNSTARCH_SLURRY_SECTION = 'Cornstarch Slurry';
 
 const SEAR_PORK = 'Sear Pork';
@@ -50,14 +51,14 @@ module.exports = {
         { ...FENNEL_SEEDS, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONING_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: '', section: SEASONING_SECTION },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SEASONING_SECTION },
-        { ...RED_WINE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...CHICKEN_BOUILLON, amount: 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
-        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...RED_WINE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: LIQUID_SECTION },
+        { ...CHICKEN_BOUILLON, amount: 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: LIQUID_SECTION },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: LIQUID_SECTION },
         { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: CORNSTARCH_SLURRY_SECTION },
         { ...WATER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: CORNSTARCH_SLURRY_SECTION },
-        { ...SOUR_CREAM, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...EGG, amount: 8, unit: '', additionalDetails: '', section: '' },
-        { ...HOT_DOG, amount: 4, unit: '', additionalDetails: '', section: '' },
+        { ...SOUR_CREAM, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...EGG, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...HOT_DOG, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'stove' },
