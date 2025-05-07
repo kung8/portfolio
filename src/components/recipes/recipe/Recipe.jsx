@@ -91,6 +91,11 @@ export const Recipe = ({ match }) => {
             if (ingredient.section && acc[ingredient.section]) {
                 acc[ingredient.section].push({ ...ingredient, linkId: ingredient.link?.id });
             }
+            // if there are any ingredients without a section, add them to the 'Other' section so that I can at least display them (and I will need to add a section in the recipe)
+            if (!ingredient.section && !acc['Other']) acc['Other'] = [];
+            if (!ingredient.section && acc['Other']) {
+                acc['Other'].push({ ...ingredient, linkId: ingredient.link?.id });
+            }
             return acc;
         }, {});
 
