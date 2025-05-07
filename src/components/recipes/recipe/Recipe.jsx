@@ -102,8 +102,14 @@ export const Recipe = ({ match }) => {
     const formatSeparatedIngredients = () => {
         const finalIngredients = [];
         for (const key in separatedIngredients) {
+            if (key === 'Other') continue;
             const ingredients = separatedIngredients[key];
             finalIngredients.push([key, ingredients]);
+        }
+        // add the 'Other' section at the end
+        if (separatedIngredients['Other']) {
+            const otherIngredients = separatedIngredients['Other'];
+            finalIngredients.push(['Other', otherIngredients]);
         }
         return finalIngredients;
     }
