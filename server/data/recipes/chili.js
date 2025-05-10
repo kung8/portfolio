@@ -82,12 +82,12 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'In a large pot over medium-high heat, combine beef, chili powder, onion, jalapeno, and garlic.', type: BEEF, img: [beef, fragrant, fragrantPot] },
-        { step: 'Brown the content, mix occasionally, and drain any fat.', type: BEEF, img: [pot1, pot3] },
-        { step: 'Add the cumin, bell pepper, different tomato variations, beans, broth, brown sugar, salt and pepper.', type: VEGGIES, img: [cubes, diced] },
-        { step: 'Bring to a boil.', type: VEGGIES, img: pot7 },
-        { step: 'Lower heat and cook for 45 - 60 minutes or until it has become the desired thickness.', type: VEGGIES, img: pot6 },
-        { step: 'Serve with your favorite toppings and feel free to add as much spice as you can handle or desire.', type: SECTIONS.TOPPINGS, img: [plated3, plated4] },
+        { step: 'In a large pot over medium-high heat, combine beef, chili powder, onion, jalapeno, and garlic.', section: BEEF, img: [beef, fragrant, fragrantPot] },
+        { step: 'Brown the content, mix occasionally, and drain any fat.', section: BEEF, img: [pot1, pot3] },
+        { step: 'Add the cumin, bell pepper, different tomato variations, beans, broth, brown sugar, salt and pepper.', section: VEGGIES, img: [cubes, diced] },
+        { step: 'Bring to a boil.', section: VEGGIES, img: pot7 },
+        { step: 'Lower heat and cook for 45 - 60 minutes or until it has become the desired thickness.', section: VEGGIES, img: pot6 },
+        { step: 'Serve with your favorite toppings and feel free to add as much spice as you can handle or desire.', section: SECTIONS.TOPPINGS, img: [plated3, plated4] },
     ],
     notes: [
         { note: 'With one jalapeno pepper it is very mild and a great base for those who do not like spicy food.' },

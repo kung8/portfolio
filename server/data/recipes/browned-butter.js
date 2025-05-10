@@ -29,10 +29,10 @@ module.exports = {
         { name: 'tupperware' },
     ],
     directions: [
-        { step: 'Over medium-low heat, melt butter in a saucepan.', type: SECTIONS.MAIN },
-        { step: 'Add milk powder. Cook until milk solidifies and becomes golden brown. Stirring.', type: SECTIONS.MAIN },
-        { step: 'Remove from heat and let residual heat continue to cook for 30 seconds.', type: SECTIONS.MAIN },
-        { step: 'Transfer to tupperware and set aside.', type: SECTIONS.MAIN },
-        { step: 'Use right away or store in the fridge to use later.', type: SECTIONS.STORE },
+        { step: 'Over medium-low heat, melt butter in a saucepan.', section: SECTIONS.MAIN },
+        { step: 'Add milk powder. Cook until milk solidifies and becomes golden brown. Stirring.', section: SECTIONS.MAIN },
+        { step: 'Remove from heat and let residual heat continue to cook for 30 seconds.', section: SECTIONS.MAIN },
+        { step: 'Transfer to tupperware and set aside.', section: SECTIONS.MAIN },
+        { step: 'Use right away or store in the fridge to use later.', section: SECTIONS.STORE },
     ]
 };

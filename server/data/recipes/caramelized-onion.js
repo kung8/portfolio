@@ -43,11 +43,11 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'Over medium-high heat, melt butter in a pan.', type: SECTIONS.TOPPING, img: sliced },
-        { step: 'Add the red onions and let it brown.', type: SECTIONS.TOPPING, img: buttered },
-        { step: 'Add the brown sugar, balsamic vinegar, and soy sauce when the onions begins to brown.', type: SECTIONS.TOPPING },
-        { step: 'Stir and cook for about 3 minutes.', type: SECTIONS.TOPPING },
-        { step: 'Season with salt and pepper and cook until onions are browned and soft.', type: SECTIONS.TOPPING, img: cooked },
-        { step: 'Serve as a topping for pizza, burgers, or meat.', type: SECTIONS.TOPPING, img: combined },
+        { step: 'Over medium-high heat, melt butter in a pan.', section: SECTIONS.TOPPING, img: sliced },
+        { step: 'Add the red onions and let it brown.', section: SECTIONS.TOPPING, img: buttered },
+        { step: 'Add the brown sugar, balsamic vinegar, and soy sauce when the onions begins to brown.', section: SECTIONS.TOPPING },
+        { step: 'Stir and cook for about 3 minutes.', section: SECTIONS.TOPPING },
+        { step: 'Season with salt and pepper and cook until onions are browned and soft.', section: SECTIONS.TOPPING, img: cooked },
+        { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.TOPPING, img: combined },
     ]
 };

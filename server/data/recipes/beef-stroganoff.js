@@ -51,13 +51,13 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'Heat pan over medium-high heat and add butter.', type: SECTIONS.MAIN },
-        { step: 'Cook mushroom, garlic, and onion until tender and set aside.', type: SECTIONS.MAIN },
-        { step: 'Brown beef.', type: SECTIONS.MAIN },
-        { step: 'Add 2 cup of broth, salt and worchestershire sauce until boiling.', type: SECTIONS.MAIN },
-        { step: 'Lower heat. Cover and simmer for 15 minutes.', type: SECTIONS.MAIN },
-        { step: 'Add remaining broth, flour and vegetables. Heat until boiling. Stir occasionally.', type: SECTIONS.MAIN },
-        { step: 'Add sour cream. Heat until hot and solid color.', type: SECTIONS.MAIN },
-        { step: 'Serve over noodles.', type: SECTIONS.MAIN },
+        { step: 'Heat pan over medium-high heat and add butter.', section: SECTIONS.MAIN },
+        { step: 'Cook mushroom, garlic, and onion until tender and set aside.', section: SECTIONS.MAIN },
+        { step: 'Brown beef.', section: SECTIONS.MAIN },
+        { step: 'Add 2 cup of broth, salt and worchestershire sauce until boiling.', section: SECTIONS.MAIN },
+        { step: 'Lower heat. Cover and simmer for 15 minutes.', section: SECTIONS.MAIN },
+        { step: 'Add remaining broth, flour and vegetables. Heat until boiling. Stir occasionally.', section: SECTIONS.MAIN },
+        { step: 'Add sour cream. Heat until hot and solid color.', section: SECTIONS.MAIN },
+        { step: 'Serve over noodles.', section: SECTIONS.MAIN },
     ]
 };

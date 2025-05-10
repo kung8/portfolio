@@ -40,12 +40,12 @@ module.exports = {
         { name: 'medium bowl' },
     ],
     directions: [
-        { step: 'Slice the avocados in half and remove the pit.', type: SECTIONS.MAIN, img: guacamole1 },
-        { step: 'In a medium bowl, mash avocado.', type: SECTIONS.MAIN, img: guacamole2 },
-        { step: 'Add the lime juice and salt. Mix.', type: SECTIONS.MAIN, img: guacamole3 },
-        { step: 'Add the garlic, tomatoes, onion, and cilantro. Mix.', type: SECTIONS.MAIN, img: guacamole4 },
-        { step: 'Add the cayenne. Mix.', type: SECTIONS.MAIN },
-        { step: 'Cover and chill for 1 hour.', type: SECTIONS.MAIN },
-        { step: 'Serve with your favorite chips.', type: SECTIONS.SERVE },
+        { step: 'Slice the avocados in half and remove the pit.', section: SECTIONS.MAIN, img: guacamole1 },
+        { step: 'In a medium bowl, mash avocado.', section: SECTIONS.MAIN, img: guacamole2 },
+        { step: 'Add the lime juice and salt. Mix.', section: SECTIONS.MAIN, img: guacamole3 },
+        { step: 'Add the garlic, tomatoes, onion, and cilantro. Mix.', section: SECTIONS.MAIN, img: guacamole4 },
+        { step: 'Add the cayenne. Mix.', section: SECTIONS.MAIN },
+        { step: 'Cover and chill for 1 hour.', section: SECTIONS.MAIN },
+        { step: 'Serve with your favorite chips.', section: SECTIONS.SERVE },
     ]
 };

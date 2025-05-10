@@ -67,13 +67,13 @@ module.exports = {
         { name: 'small bowl' },
     ],
     directions: [
-        { step: 'In a shallow dish, combine the breading ingredients.', type: BREADING, img: breading },
-        { step: 'In a small bowl, combine the dredging ingredients.', type: DREDGING, img: oil },
-        { step: 'Preheat the oven to 350ºF.', type: SECTIONS.MAIN },
-        { step: 'Season the chicken with salt and black pepper generously.', type: SECTIONS.MAIN, img: seasoned },
-        { step: 'Dip the chicken in the dredging bowl then dip the chicken into the breading. Make sure to cover all of it.', type: SECTIONS.MAIN },
-        { step: 'Place the breaded chicken in a baking dish.', type: SECTIONS.MAIN, img: breadedRaw },
-        { step: 'Bake for 30 to 35 minutes or until the chicken is cooked all the way through with an internal temperature of at least 165ºF.', type: SECTIONS.MAIN, img: cooked },
-        { step: 'Enjoy this chicken with your favorite grain dish.', type: SECTIONS.MAIN, img: full },
+        { step: 'In a shallow dish, combine the breading ingredients.', section: BREADING, img: breading },
+        { step: 'In a small bowl, combine the dredging ingredients.', section: DREDGING, img: oil },
+        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },
+        { step: 'Season the chicken with salt and black pepper generously.', section: SECTIONS.MAIN, img: seasoned },
+        { step: 'Dip the chicken in the dredging bowl then dip the chicken into the breading. Make sure to cover all of it.', section: SECTIONS.MAIN },
+        { step: 'Place the breaded chicken in a baking dish.', section: SECTIONS.MAIN, img: breadedRaw },
+        { step: 'Bake for 30 to 35 minutes or until the chicken is cooked all the way through with an internal temperature of at least 165ºF.', section: SECTIONS.MAIN, img: cooked },
+        { step: 'Enjoy this chicken with your favorite grain dish.', section: SECTIONS.MAIN, img: full },
     ]
 };

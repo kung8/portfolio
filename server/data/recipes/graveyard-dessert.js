@@ -25,12 +25,12 @@ module.exports = {
         { name: 'Clear Cups' },
     ],
     directions: [
-        { step: 'Fill cups with a layer of chocolate pudding.', type: SECTIONS.MAIN },
-        { step: 'Stick one or two gummy worms in the pudding.', type: SECTIONS.MAIN },
-        { step: 'Add a layer of crushed Oreo.', type: SECTIONS.MAIN },
-        { step: 'Add another layer of pudding and stick a worm through the top.', type: SECTIONS.MAIN },
-        { step: 'Break an Milano cookie in half and stick it into the pudding. This is a gravestone.', type: SECTIONS.MAIN },
-        { step: 'Sprinkle crushed Oreo around the worm and the gravestone and fill the rest of the layer.', type: SECTIONS.MAIN },
-        { step: 'Get creative and have fun! You can add chocolate, sprinkles, and other cookies and candies.', type: SECTIONS.MAIN },
+        { step: 'Fill cups with a layer of chocolate pudding.', section: SECTIONS.MAIN },
+        { step: 'Stick one or two gummy worms in the pudding.', section: SECTIONS.MAIN },
+        { step: 'Add a layer of crushed Oreo.', section: SECTIONS.MAIN },
+        { step: 'Add another layer of pudding and stick a worm through the top.', section: SECTIONS.MAIN },
+        { step: 'Break an Milano cookie in half and stick it into the pudding. This is a gravestone.', section: SECTIONS.MAIN },
+        { step: 'Sprinkle crushed Oreo around the worm and the gravestone and fill the rest of the layer.', section: SECTIONS.MAIN },
+        { step: 'Get creative and have fun! You can add chocolate, sprinkles, and other cookies and candies.', section: SECTIONS.MAIN },
     ]
 };

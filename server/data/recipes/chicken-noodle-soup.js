@@ -60,11 +60,11 @@ module.exports = {
         { name: 'spoon' },
     ],
     directions: [
-        { step: 'Prep all the vegetables and add them to the mixing bowl. Then prep the raw chicken. Or best to use separate cutting boards to avoid cross contamination.', type: SECTIONS.MAIN },
-        { step: 'In a hot pan with oil over medium-high heat, add the chicken, salt, pepper, and oregano. Cook until chicken is browned on both sides. Set aside.', type: SECTIONS.MAIN },
-        { step: 'In a large pot, add together the chicken broth, onion, carrots, celery, salt, pepper, oregano, rosemary, and thyme and cook for 8 - 10 minutes over medium-high heat.', type: SECTIONS.MAIN },
-        { step: 'Add the noodles and bring to a roaring boil (about another 6 to 8 minutes).', type: SECTIONS.MAIN },
-        { step: 'Add the chicken and let it simmer on a low-heat for about 10 minutes.', type: SECTIONS.MAIN },
-        { step: 'Serve and enjoy - I typically make this when I or somebody I know is sick, so get better if you too are sick!', type: SECTIONS.MAIN },
+        { step: 'Prep all the vegetables and add them to the mixing bowl. Then prep the raw chicken. Or best to use separate cutting boards to avoid cross contamination.', section: SECTIONS.MAIN },
+        { step: 'In a hot pan with oil over medium-high heat, add the chicken, salt, pepper, and oregano. Cook until chicken is browned on both sides. Set aside.', section: SECTIONS.MAIN },
+        { step: 'In a large pot, add together the chicken broth, onion, carrots, celery, salt, pepper, oregano, rosemary, and thyme and cook for 8 - 10 minutes over medium-high heat.', section: SECTIONS.MAIN },
+        { step: 'Add the noodles and bring to a roaring boil (about another 6 to 8 minutes).', section: SECTIONS.MAIN },
+        { step: 'Add the chicken and let it simmer on a low-heat for about 10 minutes.', section: SECTIONS.MAIN },
+        { step: 'Serve and enjoy - I typically make this when I or somebody I know is sick, so get better if you too are sick!', section: SECTIONS.MAIN },
     ]
 };

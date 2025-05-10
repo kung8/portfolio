@@ -48,13 +48,13 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'Over medium-high heat, boil water and salt in a saucepan.', type: EGGS_SECTION },
-        { step: 'Once water has boiled, carefully add the raw eggs into the saucepan.', type: EGGS_SECTION },
-        { step: 'Set a timer for 10 minutes.', type: EGGS_SECTION },
-        { step: 'Once the eggs are cooked, peel them and add the preferred seasonings.', type: EGGS_SECTION },
-        { step: 'While the eggs are cooking, heat a frying pan over medium-high heat.', type: VEGGIES },
-        { step: 'Add a little butter to the frying pan once it\'s hot.', type: VEGGIES },
-        { step: 'Brown some diced onion and peppers.', type: VEGGIES },
-        { step: 'Combine the eggs and veggies and enjoy a nutritional breakfast (or snack).', type: SECTIONS.SERVE },
+        { step: 'Over medium-high heat, boil water and salt in a saucepan.', section: EGGS_SECTION },
+        { step: 'Once water has boiled, carefully add the raw eggs into the saucepan.', section: EGGS_SECTION },
+        { step: 'Set a timer for 10 minutes.', section: EGGS_SECTION },
+        { step: 'Once the eggs are cooked, peel them and add the preferred seasonings.', section: EGGS_SECTION },
+        { step: 'While the eggs are cooking, heat a frying pan over medium-high heat.', section: VEGGIES },
+        { step: 'Add a little butter to the frying pan once it\'s hot.', section: VEGGIES },
+        { step: 'Brown some diced onion and peppers.', section: VEGGIES },
+        { step: 'Combine the eggs and veggies and enjoy a nutritional breakfast (or snack).', section: SECTIONS.SERVE },
     ]
 };

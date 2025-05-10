@@ -30,6 +30,6 @@ module.exports = {
         { name: '' },
     ],
     directions: [
-        { step: '', type: '' },
+        { step: '', section: '' },
     ]
 };

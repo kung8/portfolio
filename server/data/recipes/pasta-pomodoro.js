@@ -50,19 +50,19 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'Bring a pot of water and salt to a boil.', type: COOK_PASTA },
-        { step: 'Add pasta and cook until al dente (about 8 minutes or per package instructions).', type: COOK_PASTA },
-        { step: 'Drain and set aside.', type: COOK_PASTA },
+        { step: 'Bring a pot of water and salt to a boil.', section: COOK_PASTA },
+        { step: 'Add pasta and cook until al dente (about 8 minutes or per package instructions).', section: COOK_PASTA },
+        { step: 'Drain and set aside.', section: COOK_PASTA },
 
-        { step: 'Over high heat, add olive oil to a frying pan.', type: MAKE_SAUCE },
-        { step: 'Add onions and garlic. Saute until browned.', type: MAKE_SAUCE },
-        { step: 'Reduce to medium-high heat.', type: MAKE_SAUCE },
-        { step: 'Mix in tomatoes, vinegar and chicken broth. Simmer for about 8 minutes.', type: MAKE_SAUCE },
-        { step: 'Add spices and herb. Mix.', type: MAKE_SAUCE },
+        { step: 'Over high heat, add olive oil to a frying pan.', section: MAKE_SAUCE },
+        { step: 'Add onions and garlic. Saute until browned.', section: MAKE_SAUCE },
+        { step: 'Reduce to medium-high heat.', section: MAKE_SAUCE },
+        { step: 'Mix in tomatoes, vinegar and chicken broth. Simmer for about 8 minutes.', section: MAKE_SAUCE },
+        { step: 'Add spices and herb. Mix.', section: MAKE_SAUCE },
 
-        { step: 'Add pasta and toss.', type: ASSEMBLE_PASTA },
-        { step: 'Simmer for 5 minutes.', type: ASSEMBLE_PASTA },
+        { step: 'Add pasta and toss.', section: ASSEMBLE_PASTA },
+        { step: 'Simmer for 5 minutes.', section: ASSEMBLE_PASTA },
 
-        { step: 'Serve warm and topped with grated cheese.', type: SECTIONS.SERVE },
+        { step: 'Serve warm and topped with grated cheese.', section: SECTIONS.SERVE },
     ]
 };

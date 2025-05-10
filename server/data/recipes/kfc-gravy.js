@@ -48,13 +48,13 @@ module.exports = {
         { name: 'whisk' },
     ],
     directions: [
-        { step: 'Dissolve the bouillon cubes in the hot water.', type: GRAVY_SECTION },
-        { step: 'Over medium heat, melt butter in a saucepan.', type: GRAVY_SECTION, img: gravy1 },
-        { step: 'Stir in flour, onion powder and black pepper. Whisk.', type: GRAVY_SECTION, img: [gravy2, gravy3] },
-        { step: 'While stirring, add in half the broth. It should thicken and become more uniform.', type: GRAVY_SECTION, img: gravy4 },
-        { step: 'Stir in the remaining broth.', type: GRAVY_SECTION },
-        { step: 'Stir until it thickens to a gravy consistency (about 1 1/2 to 2 minutes).', type: GRAVY_SECTION },
-        { step: 'Taste and, if needed, add salt and pepper.', type: GRAVY_SECTION },
-        { step: 'Serve this warm over whatever you want.', type: SECTIONS.SERVE, img: gravy6 },
+        { step: 'Dissolve the bouillon cubes in the hot water.', section: GRAVY_SECTION },
+        { step: 'Over medium heat, melt butter in a saucepan.', section: GRAVY_SECTION, img: gravy1 },
+        { step: 'Stir in flour, onion powder and black pepper. Whisk.', section: GRAVY_SECTION, img: [gravy2, gravy3] },
+        { step: 'While stirring, add in half the broth. It should thicken and become more uniform.', section: GRAVY_SECTION, img: gravy4 },
+        { step: 'Stir in the remaining broth.', section: GRAVY_SECTION },
+        { step: 'Stir until it thickens to a gravy consistency (about 1 1/2 to 2 minutes).', section: GRAVY_SECTION },
+        { step: 'Taste and, if needed, add salt and pepper.', section: GRAVY_SECTION },
+        { step: 'Serve this warm over whatever you want.', section: SECTIONS.SERVE, img: gravy6 },
     ]
 };

@@ -32,11 +32,11 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        { step: 'Preheat oven to 375ºF and line baking sheet with aluminum foil.', type: SECTIONS.MAIN },
-        { step: 'Tubs of croissant dough usually make about 8 croissants. Cut each croissant dough triangle into thirds.', type: SECTIONS.MAIN },
-        { step: 'Place hot dog on one end of the croissant piece and roll until it is snugly wrapped inside its blanket.', type: SECTIONS.MAIN },
-        { step: 'Separate the egg white and the yolk. Lightly brush some of the yolk over the blanket to create a seal.', type: SECTIONS.MAIN },
-        { step: 'Bake for about 12 - 15 min or until golden brown.', type: SECTIONS.MAIN },
-        { step: 'Serve with your favorite condiment, and enjoy this easy tailgate hors d\'oeuvre!', type: SECTIONS.MAIN },
+        { step: 'Preheat oven to 375ºF and line baking sheet with aluminum foil.', section: SECTIONS.MAIN },
+        { step: 'Tubs of croissant dough usually make about 8 croissants. Cut each croissant dough triangle into thirds.', section: SECTIONS.MAIN },
+        { step: 'Place hot dog on one end of the croissant piece and roll until it is snugly wrapped inside its blanket.', section: SECTIONS.MAIN },
+        { step: 'Separate the egg white and the yolk. Lightly brush some of the yolk over the blanket to create a seal.', section: SECTIONS.MAIN },
+        { step: 'Bake for about 12 - 15 min or until golden brown.', section: SECTIONS.MAIN },
+        { step: 'Serve with your favorite condiment, and enjoy this easy tailgate hors d\'oeuvre!', section: SECTIONS.MAIN },
     ],
 };

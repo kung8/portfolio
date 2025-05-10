@@ -69,27 +69,27 @@ module.exports = {
         { name: 'cooking thermometer' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the chicken pieces and the "Marinade" section ingredients. It should be wet.', type: MARINATE_CHICKEN, img: [karaage1, karaage2] },
-        { step: 'Mix well and let it marinate for 2 hours.', type: MARINATE_CHICKEN },
+        { step: 'In a mixing bowl, combine the chicken pieces and the "Marinade" section ingredients. It should be wet.', section: MARINATE_CHICKEN, img: [karaage1, karaage2] },
+        { step: 'Mix well and let it marinate for 2 hours.', section: MARINATE_CHICKEN },
 
-        { step: 'Over medium heat, fill a pot with 2 to 3 inches of oil.', type: PREP_DEEP_FRY },
-        { step: 'Line a baking sheet with paper towels and place a wire cooling rack on top.', type: PREP_DEEP_FRY },
+        { step: 'Over medium heat, fill a pot with 2 to 3 inches of oil.', section: PREP_DEEP_FRY },
+        { step: 'Line a baking sheet with paper towels and place a wire cooling rack on top.', section: PREP_DEEP_FRY },
 
-        { step: 'In another mixing bowl, add the potato starch.', type: MAKE_ZAKU_ZAKU_BREADCRUMBS, img: karaage3 },
-        { step: 'Slowly add the warm water while mixing until it creates some fine crumbly pieces.', type: MAKE_ZAKU_ZAKU_BREADCRUMBS, img: karaage4 },
+        { step: 'In another mixing bowl, add the potato starch.', section: MAKE_ZAKU_ZAKU_BREADCRUMBS, img: karaage3 },
+        { step: 'Slowly add the warm water while mixing until it creates some fine crumbly pieces.', section: MAKE_ZAKU_ZAKU_BREADCRUMBS, img: karaage4 },
 
-        { step: 'Dip the chicken pieces in the Zaku Zaku breadcrumbs. It does not have to completely stick to the chicken.', type: DREDGE_CHICKEN, img: karaage5 },
+        { step: 'Dip the chicken pieces in the Zaku Zaku breadcrumbs. It does not have to completely stick to the chicken.', section: DREDGE_CHICKEN, img: karaage5 },
 
-        { step: 'Once the oil gets to 325ºF, you can begin the first deep fry.', type: FIRST_DEEP_FRY },
-        { step: 'Carefully place 3 to 5 pieces of chicken at a time in the oil. Avoid overcrowding the pot since it will lower the temperature of the oil and cause the chicken to soak up too much oil.', type: FIRST_DEEP_FRY },
-        { step: 'Deep fry until the chicken is light golden (about 2 to 3 minutes).', type: FIRST_DEEP_FRY },
-        { step: 'Once cooked, place chicken on the wire cooling rack to drain. Let these rest until the second deep fry.', type: FIRST_DEEP_FRY },
-        { step: 'Continue with the rest of the chicken. Use a strainer to pick out crumbs in between each batch.', type: FIRST_DEEP_FRY },
+        { step: 'Once the oil gets to 325ºF, you can begin the first deep fry.', section: FIRST_DEEP_FRY },
+        { step: 'Carefully place 3 to 5 pieces of chicken at a time in the oil. Avoid overcrowding the pot since it will lower the temperature of the oil and cause the chicken to soak up too much oil.', section: FIRST_DEEP_FRY },
+        { step: 'Deep fry until the chicken is light golden (about 2 to 3 minutes).', section: FIRST_DEEP_FRY },
+        { step: 'Once cooked, place chicken on the wire cooling rack to drain. Let these rest until the second deep fry.', section: FIRST_DEEP_FRY },
+        { step: 'Continue with the rest of the chicken. Use a strainer to pick out crumbs in between each batch.', section: FIRST_DEEP_FRY },
 
-        { step: 'Let the oil get to 360ºF, for the second deep fry.', type: SECOND_DEEP_FRY },
-        { step: 'Follow the same steps for the first deep fry but only cook for 1 to 2 minutes. It should be golden brown and crispy.', type: SECOND_DEEP_FRY, img: karaage6 },
+        { step: 'Let the oil get to 360ºF, for the second deep fry.', section: SECOND_DEEP_FRY },
+        { step: 'Follow the same steps for the first deep fry but only cook for 1 to 2 minutes. It should be golden brown and crispy.', section: SECOND_DEEP_FRY, img: karaage6 },
 
-        { step: 'Serve these delicious chicken hot with lemon wedges, Kewpie mayo and any other favorite toppings.', type: SECOND_DEEP_FRY },
+        { step: 'Serve these delicious chicken hot with lemon wedges, Kewpie mayo and any other favorite toppings.', section: SECOND_DEEP_FRY },
     ],
     notes: [
         { note: 'If the chicken is burning too quickly, either lower the heat or add a few more pieces of chicken.' },

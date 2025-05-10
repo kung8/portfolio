@@ -59,14 +59,14 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'Preheat the oven to 425ºF.', type: PREP_COOKING },
-        { step: 'Line a baking sheet with aluminum foil and place a wire rack on top.', type: PREP_COOKING },
-        { step: 'Pat the chicken dry with paper towels', type: COOK_CHICKEN },
-        { step: 'Season the chicken with salt and pepper.', type: COOK_CHICKEN },
-        { step: 'Place chicken on the wire rack in a single layer.', type: COOK_CHICKEN, img: wings1 },
-        { step: 'Bake the chicken until the skin is crispy and is cooked through (about 45 to 50 minutes).', type: COOK_CHICKEN, img: wings3 },
-        { step: 'In a mixing bowl, combine the "Cowboy Butter" section ingredients.', type: PREP_COWBOY_BUTTER, img: wings2 },
-        { step: 'Toss the chicken in the butter mixture.', type: COAT_CHICKEN, img: wings4 },
-        { step: 'Serve these wings with your favorite dips and sides at your next tailgate, superbowl watch party, or any kind of party.', type: SECTIONS.SERVE },
+        { step: 'Preheat the oven to 425ºF.', section: PREP_COOKING },
+        { step: 'Line a baking sheet with aluminum foil and place a wire rack on top.', section: PREP_COOKING },
+        { step: 'Pat the chicken dry with paper towels', section: COOK_CHICKEN },
+        { step: 'Season the chicken with salt and pepper.', section: COOK_CHICKEN },
+        { step: 'Place chicken on the wire rack in a single layer.', section: COOK_CHICKEN, img: wings1 },
+        { step: 'Bake the chicken until the skin is crispy and is cooked through (about 45 to 50 minutes).', section: COOK_CHICKEN, img: wings3 },
+        { step: 'In a mixing bowl, combine the "Cowboy Butter" section ingredients.', section: PREP_COWBOY_BUTTER, img: wings2 },
+        { step: 'Toss the chicken in the butter mixture.', section: COAT_CHICKEN, img: wings4 },
+        { step: 'Serve these wings with your favorite dips and sides at your next tailgate, superbowl watch party, or any kind of party.', section: SECTIONS.SERVE },
     ]
 };

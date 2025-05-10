@@ -61,14 +61,14 @@ module.exports = {
         { name: 'paper towels' },
     ],
     directions: [
-        { step: 'In a large bowl, marinate the chicken with the soy sauce, shaoxing wine, and cornstarch (5 Tbsp) for at least 30 minutes.', type: SECTIONS.MAIN },
-        { step: 'Mix the sugar, cornstarch (5 t), salt, water,lemon juice, and white sesame in a sauce pan. Set aside. This is the sauce.', type: SECTIONS.MAIN },
-        { step: 'In a medium bowl, mix the flour and cornstarch (1 1/4 c) for the dredging station.', type: SECTIONS.MAIN },
-        { step: 'Heat up a deep pot with vegetable oil over medium-high heat.', type: SECTIONS.MAIN },
-        { step: 'Line a baking sheet with paper towels and place a cooling rack on top.', type: SECTIONS.MAIN },
-        { step: 'Once the oil is hot, dredge the chicken in the flour mixture and shake off any excess. Then fry the chicken in the oil until golden brown (about 7 to 10 minutes).', type: SECTIONS.MAIN },
-        { step: 'Remove the chicken from the oil and place on the cooling rack.', type: SECTIONS.MAIN },
-        { step: 'Continue until all of the chicken is cooked.', type: SECTIONS.MAIN },
-        { step: 'Heat the sauce over medium heat until it thickens. Serve over the chicken with rice.', type: SECTIONS.MAIN },
+        { step: 'In a large bowl, marinate the chicken with the soy sauce, shaoxing wine, and cornstarch (5 Tbsp) for at least 30 minutes.', section: SECTIONS.MAIN },
+        { step: 'Mix the sugar, cornstarch (5 t), salt, water,lemon juice, and white sesame in a sauce pan. Set aside. This is the sauce.', section: SECTIONS.MAIN },
+        { step: 'In a medium bowl, mix the flour and cornstarch (1 1/4 c) for the dredging station.', section: SECTIONS.MAIN },
+        { step: 'Heat up a deep pot with vegetable oil over medium-high heat.', section: SECTIONS.MAIN },
+        { step: 'Line a baking sheet with paper towels and place a cooling rack on top.', section: SECTIONS.MAIN },
+        { step: 'Once the oil is hot, dredge the chicken in the flour mixture and shake off any excess. Then fry the chicken in the oil until golden brown (about 7 to 10 minutes).', section: SECTIONS.MAIN },
+        { step: 'Remove the chicken from the oil and place on the cooling rack.', section: SECTIONS.MAIN },
+        { step: 'Continue until all of the chicken is cooked.', section: SECTIONS.MAIN },
+        { step: 'Heat the sauce over medium heat until it thickens. Serve over the chicken with rice.', section: SECTIONS.MAIN },
     ]
 };

@@ -44,11 +44,11 @@ module.exports = {
         { name: 'knife' },
     ],
     directions: [
-        { step: 'Line a plate with paper towels.', type: COOK_BACON },
-        { step: 'Over medium-high heat, cook bacon in a frying pan until browned (about 10 minutes).', type: COOK_BACON },
-        { step: 'Let the bacon drain on the paper towel.', type: COOK_BACON },
-        { step: 'Spread the mayo on a slice of toasted bread.', type: ASSEMBLE_SANDWICH },
-        { step: 'Layer the bacon, tomatoes and lettuce on the sandwich.', type: ASSEMBLE_SANDWICH, img: blt1 },
-        { step: 'Enjoy this simple sandwich.', type: SECTIONS.SERVE },
+        { step: 'Line a plate with paper towels.', section: COOK_BACON },
+        { step: 'Over medium-high heat, cook bacon in a frying pan until browned (about 10 minutes).', section: COOK_BACON },
+        { step: 'Let the bacon drain on the paper towel.', section: COOK_BACON },
+        { step: 'Spread the mayo on a slice of toasted bread.', section: ASSEMBLE_SANDWICH },
+        { step: 'Layer the bacon, tomatoes and lettuce on the sandwich.', section: ASSEMBLE_SANDWICH, img: blt1 },
+        { step: 'Enjoy this simple sandwich.', section: SECTIONS.SERVE },
     ]
 };

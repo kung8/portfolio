@@ -51,14 +51,14 @@ module.exports = {
         { name: 'aluminum foil' },
     ],
     directions: [
-        { step: 'Preheat oven to 275ºF.', type: SECTIONS.MAIN },
-        { step: 'Salt and pepper the beef generously.', type: SECTIONS.MAIN },
-        { step: 'Heat the olive oil in large pan over medium-high heat.', type: SECTIONS.MAIN },
-        { step: 'Brown the onion on both sides. Then set aside in the roasting pan.', type: SECTIONS.MAIN },
-        { step: 'Brown the carrots in the same way. Then add it to the roasting pan.', type: SECTIONS.MAIN },
-        { step: 'Add a little more oil, and sear the beef on all sides.', type: SECTIONS.MAIN },
-        { step: 'Then add beef, red wine, broth, rosemary, and thyme to the roasting pan.', type: SECTIONS.MAIN },
-        { step: 'Add red wine, broth, rosemary, and thyme to the roasting pan.', type: SECTIONS.MAIN },
-        { step: 'Cover the roasting pan with aluminum foil and roast for 3 hours or until the roast is tender.', type: SECTIONS.MAIN },
+        { step: 'Preheat oven to 275ºF.', section: SECTIONS.MAIN },
+        { step: 'Salt and pepper the beef generously.', section: SECTIONS.MAIN },
+        { step: 'Heat the olive oil in large pan over medium-high heat.', section: SECTIONS.MAIN },
+        { step: 'Brown the onion on both sides. Then set aside in the roasting pan.', section: SECTIONS.MAIN },
+        { step: 'Brown the carrots in the same way. Then add it to the roasting pan.', section: SECTIONS.MAIN },
+        { step: 'Add a little more oil, and sear the beef on all sides.', section: SECTIONS.MAIN },
+        { step: 'Then add beef, red wine, broth, rosemary, and thyme to the roasting pan.', section: SECTIONS.MAIN },
+        { step: 'Add red wine, broth, rosemary, and thyme to the roasting pan.', section: SECTIONS.MAIN },
+        { step: 'Cover the roasting pan with aluminum foil and roast for 3 hours or until the roast is tender.', section: SECTIONS.MAIN },
     ]
 };

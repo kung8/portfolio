@@ -46,12 +46,12 @@ module.exports = {
         { name: 'plates' },
     ],
     directions: [
-        { step: 'Add sugar, cocoa, butter and milk into a saucepan.', type: SECTIONS.MAIN, img: butter },
-        { step: 'Over medium heat, melt down and stir frequently until it boils.', type: SECTIONS.MAIN, img: melted },
-        { step: 'Let it boils for about 60 seconds.', type: SECTIONS.MAIN },
-        { step: 'Remove from heat and add the vanilla, peanut butter and oats.', type: SECTIONS.MAIN, img: oat },
-        { step: 'Mix well.', type: SECTIONS.MAIN },
-        { step: 'Spoon and shape dough balls onto plates.', type: SECTIONS.MAIN, img: all },
-        { step: 'Let it set for 20 to 30 minutes in the refrigerator.', type: SECTIONS.MAIN },
+        { step: 'Add sugar, cocoa, butter and milk into a saucepan.', section: SECTIONS.MAIN, img: butter },
+        { step: 'Over medium heat, melt down and stir frequently until it boils.', section: SECTIONS.MAIN, img: melted },
+        { step: 'Let it boils for about 60 seconds.', section: SECTIONS.MAIN },
+        { step: 'Remove from heat and add the vanilla, peanut butter and oats.', section: SECTIONS.MAIN, img: oat },
+        { step: 'Mix well.', section: SECTIONS.MAIN },
+        { step: 'Spoon and shape dough balls onto plates.', section: SECTIONS.MAIN, img: all },
+        { step: 'Let it set for 20 to 30 minutes in the refrigerator.', section: SECTIONS.MAIN },
     ]
 };

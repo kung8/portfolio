@@ -32,11 +32,11 @@ module.exports = {
         { name: 'baking sheet' },
     ],
     directions: [
-        { step: 'Lay aluminum foil on baking sheet and turn on oven to broil.', type: SECTIONS.MAIN },
-        { step: 'Place graham cracker halves on baking sheet and place marshmallows on each half.', type: SECTIONS.MAIN },
-        { step: 'Bake inside the oven for about 3 minutes (or browned as desired).', type: SECTIONS.MAIN },
-        { step: 'Take tray out and add graham crackers with 3 pieces of chocolate.', type: SECTIONS.MAIN },
-        { step: 'Flip marshallow and bake for an additional 2 minutes.', type: SECTIONS.MAIN },
-        { step: 'Enjoy the sweet tastes of a campfire indoors.', type: SECTIONS.MAIN },
+        { step: 'Lay aluminum foil on baking sheet and turn on oven to broil.', section: SECTIONS.MAIN },
+        { step: 'Place graham cracker halves on baking sheet and place marshmallows on each half.', section: SECTIONS.MAIN },
+        { step: 'Bake inside the oven for about 3 minutes (or browned as desired).', section: SECTIONS.MAIN },
+        { step: 'Take tray out and add graham crackers with 3 pieces of chocolate.', section: SECTIONS.MAIN },
+        { step: 'Flip marshallow and bake for an additional 2 minutes.', section: SECTIONS.MAIN },
+        { step: 'Enjoy the sweet tastes of a campfire indoors.', section: SECTIONS.MAIN },
     ]
 };

@@ -57,14 +57,14 @@ module.exports = {
         { name: 'aluminum foil' },
     ],
     directions: [
-        { step: 'Cut the bread, ham, onion, and bell peppers.', type: SECTIONS.MAIN },
-        { step: 'Mix together eggs, milk, salt, and pepper in the mixing bowl.', type: SECTIONS.MAIN },
-        { step: 'Layer the base of the baking pan with the cubes of bread.', type: SECTIONS.MAIN },
-        { step: 'Pour the egg batter over the bread, add the veggies, and cheese.', type: SECTIONS.MAIN },
-        { step: 'Cover with tin foil and refrigerate for at least 8 hours (or overnight).', type: SECTIONS.MAIN },
-        { step: 'Once ready to cook, preheat oven to 350ºF.', type: SECTIONS.MAIN },
-        { step: 'Uncover casserole and bake for 40 minutes - 1 hour (or until it sets). This mostly depends on your oven.', type: SECTIONS.MAIN },
-        { step: 'Once the casserole is cooked, let cool for a few minutes.', type: SECTIONS.MAIN },
-        { step: 'Serve and enjoy this simple, hot breakfast feast.', type: SECTIONS.MAIN },
+        { step: 'Cut the bread, ham, onion, and bell peppers.', section: SECTIONS.MAIN },
+        { step: 'Mix together eggs, milk, salt, and pepper in the mixing bowl.', section: SECTIONS.MAIN },
+        { step: 'Layer the base of the baking pan with the cubes of bread.', section: SECTIONS.MAIN },
+        { step: 'Pour the egg batter over the bread, add the veggies, and cheese.', section: SECTIONS.MAIN },
+        { step: 'Cover with tin foil and refrigerate for at least 8 hours (or overnight).', section: SECTIONS.MAIN },
+        { step: 'Once ready to cook, preheat oven to 350ºF.', section: SECTIONS.MAIN },
+        { step: 'Uncover casserole and bake for 40 minutes - 1 hour (or until it sets). This mostly depends on your oven.', section: SECTIONS.MAIN },
+        { step: 'Once the casserole is cooked, let cool for a few minutes.', section: SECTIONS.MAIN },
+        { step: 'Serve and enjoy this simple, hot breakfast feast.', section: SECTIONS.MAIN },
     ]
 };

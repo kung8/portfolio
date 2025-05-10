@@ -50,17 +50,17 @@ module.exports = {
         { name: 'large saucepan' },
     ],
     directions: [
-        { step: 'Over medium-high heat, bring a large pot of salted water to a boil.', type: COOK_NOODLES },
-        { step: 'Add angel hair pasta and cook until al dente (about 4 to 5 minutes).', type: COOK_NOODLES },
-        { step: 'Drain. Transfer to a mixing bowl.', type: COOK_NOODLES },
+        { step: 'Over medium-high heat, bring a large pot of salted water to a boil.', section: COOK_NOODLES },
+        { step: 'Add angel hair pasta and cook until al dente (about 4 to 5 minutes).', section: COOK_NOODLES },
+        { step: 'Drain. Transfer to a mixing bowl.', section: COOK_NOODLES },
 
-        { step: 'Over medium heat, melt butter in a saucepan.', type: COOK_SAUCE },
-        { step: 'Add shrimp and garlic. Cook and stir until shrimp turns pink (about 3 to 5 minutes).', type: COOK_SAUCE },
-        { step: 'Add white wine and black pepper. Bring to a boil.', type: COOK_SAUCE },
-        { step: 'Cook and stir for 30 seconds.', type: COOK_SAUCE },
+        { step: 'Over medium heat, melt butter in a saucepan.', section: COOK_SAUCE },
+        { step: 'Add shrimp and garlic. Cook and stir until shrimp turns pink (about 3 to 5 minutes).', section: COOK_SAUCE },
+        { step: 'Add white wine and black pepper. Bring to a boil.', section: COOK_SAUCE },
+        { step: 'Cook and stir for 30 seconds.', section: COOK_SAUCE },
 
-        { step: 'Pour the sauce over the pasta and mix.', type: COMBINE },
+        { step: 'Pour the sauce over the pasta and mix.', section: COMBINE },
 
-        { step: 'Enjoy this taste of Italy topped with parsley, parmesan and lemon wedges.', type: SECTIONS.SERVE },
+        { step: 'Enjoy this taste of Italy topped with parsley, parmesan and lemon wedges.', section: SECTIONS.SERVE },
     ]
 };

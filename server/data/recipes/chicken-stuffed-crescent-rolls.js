@@ -59,14 +59,14 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'Preheat oven to 375ºF.', type: SECTIONS.MAIN },
-        { step: 'Combine shredded chicken, shredded cheese, cream cheese, bell peppers, onion, garlic powder, parsley, salt, pepper, and chili powder in a mixing bowl.', type: SECTIONS.MAIN, img: filling },
-        { step: 'Unroll the crescent roll triangles and lay on the baking sheet.', type: SECTIONS.MAIN, img: wrap },
-        { step: 'Place a ball of chicken filling on the wide end of the crescent roll.', type: SECTIONS.MAIN, img: fill },
-        { step: 'Roll the dough to enclose as much of the filling.', type: SECTIONS.MAIN, img: wrapped },
-        { step: 'Brush rolls with melted butter and optionally sprinkle with cheese.', type: SECTIONS.MAIN, img: melted },
-        { step: 'Bake in oven for 10 to 12 minutes, or until golden brown.', type: SECTIONS.MAIN, img: spices },
-        { step: 'Serve warm and enjoy this light appetizer.', type: SECTIONS.MAIN, img: baked },
+        { step: 'Preheat oven to 375ºF.', section: SECTIONS.MAIN },
+        { step: 'Combine shredded chicken, shredded cheese, cream cheese, bell peppers, onion, garlic powder, parsley, salt, pepper, and chili powder in a mixing bowl.', section: SECTIONS.MAIN, img: filling },
+        { step: 'Unroll the crescent roll triangles and lay on the baking sheet.', section: SECTIONS.MAIN, img: wrap },
+        { step: 'Place a ball of chicken filling on the wide end of the crescent roll.', section: SECTIONS.MAIN, img: fill },
+        { step: 'Roll the dough to enclose as much of the filling.', section: SECTIONS.MAIN, img: wrapped },
+        { step: 'Brush rolls with melted butter and optionally sprinkle with cheese.', section: SECTIONS.MAIN, img: melted },
+        { step: 'Bake in oven for 10 to 12 minutes, or until golden brown.', section: SECTIONS.MAIN, img: spices },
+        { step: 'Serve warm and enjoy this light appetizer.', section: SECTIONS.MAIN, img: baked },
     ],
     notes: [
         { note: 'Be sure to cook the dough completely.' }

@@ -43,14 +43,14 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', type: PREP_SAUSAGE_BALLS },
-        { step: 'Line a baking sheet with parchment paper.', type: PREP_SAUSAGE_BALLS },
-        { step: 'In a mixing bowl, combine together all the ingredients besides the milk.', type: PREP_SAUSAGE_BALLS },
-        { step: 'Add milk as needed. Mix until incorporated and everything is sticking together.', type: PREP_SAUSAGE_BALLS },
-        { step: 'Form 3-inch balls.', type: PREP_SAUSAGE_BALLS },
-        { step: 'Place each ball one inch apart on the baking sheet.', type: BAKE_SAUSAGE_BALLS },
-        { step: 'Bake until the bottoms are browned and cooked through (about 24 to 27 minutes).', type: BAKE_SAUSAGE_BALLS },
-        { step: 'Enjoy these sausage balls warm!', type: SECTIONS.SERVE },
-        { step: 'Air fry at 350ºF for 3 to 4 minutes.', type: SECTIONS.REHEAT },
+        { step: 'Preheat the oven to 350ºF.', section: PREP_SAUSAGE_BALLS },
+        { step: 'Line a baking sheet with parchment paper.', section: PREP_SAUSAGE_BALLS },
+        { step: 'In a mixing bowl, combine together all the ingredients besides the milk.', section: PREP_SAUSAGE_BALLS },
+        { step: 'Add milk as needed. Mix until incorporated and everything is sticking together.', section: PREP_SAUSAGE_BALLS },
+        { step: 'Form 3-inch balls.', section: PREP_SAUSAGE_BALLS },
+        { step: 'Place each ball one inch apart on the baking sheet.', section: BAKE_SAUSAGE_BALLS },
+        { step: 'Bake until the bottoms are browned and cooked through (about 24 to 27 minutes).', section: BAKE_SAUSAGE_BALLS },
+        { step: 'Enjoy these sausage balls warm!', section: SECTIONS.SERVE },
+        { step: 'Air fry at 350ºF for 3 to 4 minutes.', section: SECTIONS.REHEAT },
     ]
 };

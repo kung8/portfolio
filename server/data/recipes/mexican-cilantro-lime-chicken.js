@@ -62,13 +62,13 @@ module.exports = {
         { name: 'tongs' },
     ],
     directions: [
-        { step: 'Combine all the dressing ingredients in a blender.', type: SECTIONS.DRESSING, img: [cilantro1, dressing] },
-        { step: 'Pour 1/2 of the dressing into a ziploc bag and place the chicken wings and drum.', type: SECTIONS.MEAT, img: marinade3 },
-        { step: 'Let the chicken marinate for 4 hours.', type: SECTIONS.MEAT },
-        { step: 'Preheat the oven to 400ºF.', type: SECTIONS.MAIN },
-        { step: 'Place a wire rack on top of a baking pan.', type: SECTIONS.MAIN },
-        { step: 'Use tongs to transfer chicken to wire rack in a single layer.', type: SECTIONS.MAIN, img: rack },
-        { step: 'Bake for 30 to 35 minutes. Feel free to broil the wings for 2 to 3 minutes in addition to make it crispier.', type: SECTIONS.MAIN, img: broiled1 },
-        { step: 'Dip this chicken in the dressing and serve it with a side of salad and cilantro rice.', type: SECTIONS.SERVE, img: set2 },
+        { step: 'Combine all the dressing ingredients in a blender.', section: SECTIONS.DRESSING, img: [cilantro1, dressing] },
+        { step: 'Pour 1/2 of the dressing into a ziploc bag and place the chicken wings and drum.', section: SECTIONS.MEAT, img: marinade3 },
+        { step: 'Let the chicken marinate for 4 hours.', section: SECTIONS.MEAT },
+        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.MAIN },
+        { step: 'Place a wire rack on top of a baking pan.', section: SECTIONS.MAIN },
+        { step: 'Use tongs to transfer chicken to wire rack in a single layer.', section: SECTIONS.MAIN, img: rack },
+        { step: 'Bake for 30 to 35 minutes. Feel free to broil the wings for 2 to 3 minutes in addition to make it crispier.', section: SECTIONS.MAIN, img: broiled1 },
+        { step: 'Dip this chicken in the dressing and serve it with a side of salad and cilantro rice.', section: SECTIONS.SERVE, img: set2 },
     ]
 };

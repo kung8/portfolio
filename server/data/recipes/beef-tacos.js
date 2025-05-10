@@ -54,13 +54,13 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        { step: 'Over medium high heat, heat oil in a frying pan.', type: PREP_TACO_FILLING },
-        { step: 'Add beef and cook until browned (about 5 to 7 minutes). Drain.', type: PREP_TACO_FILLING },
-        { step: 'Reduce the heat to medium-low.', type: PREP_TACO_FILLING },
-        { step: 'Add the rest of the filling ingredients. Mix.', type: PREP_TACO_FILLING },
-        { step: 'Cook until the sauce has thickened (about 3 to 5 minutes).', type: PREP_TACO_FILLING },
-        { step: 'Place tortillas on a plate and microwave for 30 seconds. Flip. Microwave for another 30 seconds.', type: ASSEMBLE_TACOS },
-        { step: 'Fill the tortillas with the ground beef mixture and your favorite toppings.', type: ASSEMBLE_TACOS },
-        { step: 'Serve and enjoy!', type: SECTIONS.SERVE },
+        { step: 'Over medium high heat, heat oil in a frying pan.', section: PREP_TACO_FILLING },
+        { step: 'Add beef and cook until browned (about 5 to 7 minutes). Drain.', section: PREP_TACO_FILLING },
+        { step: 'Reduce the heat to medium-low.', section: PREP_TACO_FILLING },
+        { step: 'Add the rest of the filling ingredients. Mix.', section: PREP_TACO_FILLING },
+        { step: 'Cook until the sauce has thickened (about 3 to 5 minutes).', section: PREP_TACO_FILLING },
+        { step: 'Place tortillas on a plate and microwave for 30 seconds. Flip. Microwave for another 30 seconds.', section: ASSEMBLE_TACOS },
+        { step: 'Fill the tortillas with the ground beef mixture and your favorite toppings.', section: ASSEMBLE_TACOS },
+        { step: 'Serve and enjoy!', section: SECTIONS.SERVE },
     ]
 };

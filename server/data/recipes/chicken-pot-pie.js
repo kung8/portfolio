@@ -56,13 +56,13 @@ module.exports = {
         { name: 'pie pan' },
     ],
     directions: [
-        { step: 'Heat a pan over medium heat and add butter.', type: SECTIONS.MAIN },
-        { step: 'Add flour, onion, salt, and pepper to pan and cook until bubbling.', type: SECTIONS.MAIN },
-        { step: 'Mix milk and broth into the mixture and stir constantly until boils for 1 minute.', type: SECTIONS.MAIN },
-        { step: 'Mix in chicken, peas, and carrots until hot.', type: SECTIONS.MAIN },
-        { step: 'Preheat the oven to 425ºF.', type: SECTIONS.MAIN },
-        { step: 'Roll the pie crust inside pie pan and add chicken mixture inside.', type: SECTIONS.MAIN },
-        { step: 'Roll the remaining dough on top of the mixture and turn edges over pie pan.', type: SECTIONS.MAIN },
-        { step: 'Bake the pie for 35 minutes or until golden brown.', type: SECTIONS.MAIN, img: chickenPotPie },
+        { step: 'Heat a pan over medium heat and add butter.', section: SECTIONS.MAIN },
+        { step: 'Add flour, onion, salt, and pepper to pan and cook until bubbling.', section: SECTIONS.MAIN },
+        { step: 'Mix milk and broth into the mixture and stir constantly until boils for 1 minute.', section: SECTIONS.MAIN },
+        { step: 'Mix in chicken, peas, and carrots until hot.', section: SECTIONS.MAIN },
+        { step: 'Preheat the oven to 425ºF.', section: SECTIONS.MAIN },
+        { step: 'Roll the pie crust inside pie pan and add chicken mixture inside.', section: SECTIONS.MAIN },
+        { step: 'Roll the remaining dough on top of the mixture and turn edges over pie pan.', section: SECTIONS.MAIN },
+        { step: 'Bake the pie for 35 minutes or until golden brown.', section: SECTIONS.MAIN, img: chickenPotPie },
     ]
 };

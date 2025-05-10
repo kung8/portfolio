@@ -53,14 +53,14 @@ module.exports = {
         { name: 'saucepan with lid' },
     ],
     directions: [
-        { step: 'Run the rice under water until it comes out clear. Drain.', type: PREP_RICE },
-        { step: 'Over medium heat, melt butter in a saucepan.', type: COOK_RICE },
-        { step: 'Add rice. Cook and stir until golden.', type: COOK_RICE },
-        { step: 'Add "Onion Mixture" section ingredients to the pan. Cook until the onions are softened.', type: COOK_ONION },
-        { step: 'Add broth. Bring to a boil.', type: STEAM_RICE },
-        { step: 'Reduce to low heat. Cover with a lid. Cook for 15 to 18 minutes. Do not remove lid during the simmering process.', type: STEAM_RICE },
-        { step: 'Remove pot from heat and let rest for 10 minutes. Leave the lid on.', type: STEAM_RICE },
-        { step: 'Remove lid and fluff rice.', type: STEAM_RICE },
-        { step: 'Top with parsley and serve with your favorite side dishes.', type: SECTIONS.SERVE },
+        { step: 'Run the rice under water until it comes out clear. Drain.', section: PREP_RICE },
+        { step: 'Over medium heat, melt butter in a saucepan.', section: COOK_RICE },
+        { step: 'Add rice. Cook and stir until golden.', section: COOK_RICE },
+        { step: 'Add "Onion Mixture" section ingredients to the pan. Cook until the onions are softened.', section: COOK_ONION },
+        { step: 'Add broth. Bring to a boil.', section: STEAM_RICE },
+        { step: 'Reduce to low heat. Cover with a lid. Cook for 15 to 18 minutes. Do not remove lid during the simmering process.', section: STEAM_RICE },
+        { step: 'Remove pot from heat and let rest for 10 minutes. Leave the lid on.', section: STEAM_RICE },
+        { step: 'Remove lid and fluff rice.', section: STEAM_RICE },
+        { step: 'Top with parsley and serve with your favorite side dishes.', section: SECTIONS.SERVE },
     ]
 };

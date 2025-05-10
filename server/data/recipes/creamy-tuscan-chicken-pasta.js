@@ -59,23 +59,23 @@ module.exports = {
         { name: 'knife' },
     ],
     directions: [
-        { step: 'Pat chicken dry.', type: COOK_CHICKEN },
-        { step: 'Season chicken with salt and pepper.', type: COOK_CHICKEN },
-        { step: 'Over medium-high heat, heat olive oil in a dutch oven pot.', type: COOK_CHICKEN },
-        { step: 'Add chicken to pot. Cook until both sides are browned (for about 3 to 4 minutes).', type: COOK_CHICKEN },
-        { step: 'Remove the chicken from the pot and place on a cutting board.', type: COOK_CHICKEN },
-        { step: 'Cut the chicken into 1 inch pieces. Set aside.', type: COOK_CHICKEN },
+        { step: 'Pat chicken dry.', section: COOK_CHICKEN },
+        { step: 'Season chicken with salt and pepper.', section: COOK_CHICKEN },
+        { step: 'Over medium-high heat, heat olive oil in a dutch oven pot.', section: COOK_CHICKEN },
+        { step: 'Add chicken to pot. Cook until both sides are browned (for about 3 to 4 minutes).', section: COOK_CHICKEN },
+        { step: 'Remove the chicken from the pot and place on a cutting board.', section: COOK_CHICKEN },
+        { step: 'Cut the chicken into 1 inch pieces. Set aside.', section: COOK_CHICKEN },
 
-        { step: 'Over medium heat, melt butter in the dutch oven pot.', type: MAKE_SAUCE },
-        { step: 'Add the rest of the "Sauce" section ingredients.', type: MAKE_SAUCE },
-        { step: 'Saute until it becomes fragrant.', type: MAKE_SAUCE },
+        { step: 'Over medium heat, melt butter in the dutch oven pot.', section: MAKE_SAUCE },
+        { step: 'Add the rest of the "Sauce" section ingredients.', section: MAKE_SAUCE },
+        { step: 'Saute until it becomes fragrant.', section: MAKE_SAUCE },
 
-        { step: 'Add the "Pasta" section ingredients to the pot. Stir.', type: COOK_PASTA },
-        { step: 'Cook until the pasta is al dente (for about 10 minutes). Stir occasionally.', type: COOK_PASTA },
+        { step: 'Add the "Pasta" section ingredients to the pot. Stir.', section: COOK_PASTA },
+        { step: 'Cook until the pasta is al dente (for about 10 minutes). Stir occasionally.', section: COOK_PASTA },
 
-        { step: 'Add chicken and cook until the chicken is almost cooked through.', type: COMBINE },
-        { step: 'Add the spinach and cook until it wilts (about 1 to 2 minutes).', type: COMBINE },
+        { step: 'Add chicken and cook until the chicken is almost cooked through.', section: COMBINE },
+        { step: 'Add the spinach and cook until it wilts (about 1 to 2 minutes).', section: COMBINE },
 
-        { step: 'Enjoy this Italian dish.', type: SECTIONS.SERVE },
+        { step: 'Enjoy this Italian dish.', section: SECTIONS.SERVE },
     ]
 };

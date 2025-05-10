@@ -62,13 +62,13 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the chicken and baking soda. Marinate for 20 to 30 minutes.', type: MARINATE_CHICKEN },
-        { step: 'In a medium bowl, combine all the "Sauce" section ingredients.', type: MAKE_SAUCE },
-        { step: 'Over high heat, heat oil in a wok.', type: STIR_FRY },
-        { step: 'Add garlic and onion. Cook for a minute.', type: STIR_FRY },
-        { step: 'Add chicken. Cook until chicken is no longer pink (for a few minutes).', type: STIR_FRY },
-        { step: 'Add carrots, boy choy, and mushroom. Stir fry for a minute.', type: STIR_FRY },
-        { step: 'Add bean sprouts and sauce. Cook until the sauce thickens and the vegetables should be crisp.', type: STIR_FRY },
-        { step: 'Serve with rice.', type: SECTIONS.SERVE },
+        { step: 'In a mixing bowl, combine the chicken and baking soda. Marinate for 20 to 30 minutes.', section: MARINATE_CHICKEN },
+        { step: 'In a medium bowl, combine all the "Sauce" section ingredients.', section: MAKE_SAUCE },
+        { step: 'Over high heat, heat oil in a wok.', section: STIR_FRY },
+        { step: 'Add garlic and onion. Cook for a minute.', section: STIR_FRY },
+        { step: 'Add chicken. Cook until chicken is no longer pink (for a few minutes).', section: STIR_FRY },
+        { step: 'Add carrots, boy choy, and mushroom. Stir fry for a minute.', section: STIR_FRY },
+        { step: 'Add bean sprouts and sauce. Cook until the sauce thickens and the vegetables should be crisp.', section: STIR_FRY },
+        { step: 'Serve with rice.', section: SECTIONS.SERVE },
     ]
 };

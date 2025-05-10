@@ -44,13 +44,13 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'Preheat oven to 350ºF.', type: SECTIONS.MAIN },
-        { step: 'Grease and add a little cocoa powder on the baking pan.', type: SECTIONS.MAIN },
-        { step: 'Melt butter in the microwave.', type: SECTIONS.MAIN },
-        { step: 'In a mixing bowl, combine melted butter, cocoa powder, and sugar. Mix well.', type: SECTIONS.MAIN },
-        { step: 'Add salt, vanilla, and eggs and mix.', type: SECTIONS.MAIN },
-        { step: 'Mix in the flour.', type: SECTIONS.MAIN },
-        { step: 'Spread the batter into the baking pan.', type: SECTIONS.MAIN },
-        { step: 'Bake for 30 to 35 minutes or until a toothpick comes out clean.', type: SECTIONS.MAIN, img: [pan, zoomed] },
+        { step: 'Preheat oven to 350ºF.', section: SECTIONS.MAIN },
+        { step: 'Grease and add a little cocoa powder on the baking pan.', section: SECTIONS.MAIN },
+        { step: 'Melt butter in the microwave.', section: SECTIONS.MAIN },
+        { step: 'In a mixing bowl, combine melted butter, cocoa powder, and sugar. Mix well.', section: SECTIONS.MAIN },
+        { step: 'Add salt, vanilla, and eggs and mix.', section: SECTIONS.MAIN },
+        { step: 'Mix in the flour.', section: SECTIONS.MAIN },
+        { step: 'Spread the batter into the baking pan.', section: SECTIONS.MAIN },
+        { step: 'Bake for 30 to 35 minutes or until a toothpick comes out clean.', section: SECTIONS.MAIN, img: [pan, zoomed] },
     ]
 };

@@ -35,7 +35,7 @@ module.exports = {
         { name: 'medium bowl' },
     ],
     directions: [
-        { step: 'In a medium bowl, combine all the ingredients.', type: MIX },
-        { step: 'Enjoy this with your favorite bread, pasta or vegetables.', type: SECTIONS.SERVE },
+        { step: 'In a medium bowl, combine all the ingredients.', section: MIX },
+        { step: 'Enjoy this with your favorite bread, pasta or vegetables.', section: SECTIONS.SERVE },
     ]
 };

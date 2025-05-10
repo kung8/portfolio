@@ -37,12 +37,12 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'Cut up chicken using cleaver knife into about 1" thick pieces.', type: SECTIONS.MAIN },
-        { step: 'Place chicken into pot and fill with water.', type: SECTIONS.MAIN },
-        { step: 'Let the chicken boil for about 30 minutes.', type: SECTIONS.MAIN },
-        { step: 'Skim off the froth that develops on the top using a shallow spatula.', type: SECTIONS.MAIN },
-        { step: 'Ladle out about 1.5 cup of the soup for the sour mix. Pour in tamarind powder and lime juice and mix together.', type: SECTIONS.MAIN },
-        { step: 'When ready to eat, add sour mixture to the soup (as desired).', type: SECTIONS.MAIN },
-        { step: 'Serve soup over rice and enjoy this nostalgic piece of home for me.', type: SECTIONS.MAIN },
+        { step: 'Cut up chicken using cleaver knife into about 1" thick pieces.', section: SECTIONS.MAIN },
+        { step: 'Place chicken into pot and fill with water.', section: SECTIONS.MAIN },
+        { step: 'Let the chicken boil for about 30 minutes.', section: SECTIONS.MAIN },
+        { step: 'Skim off the froth that develops on the top using a shallow spatula.', section: SECTIONS.MAIN },
+        { step: 'Ladle out about 1.5 cup of the soup for the sour mix. Pour in tamarind powder and lime juice and mix together.', section: SECTIONS.MAIN },
+        { step: 'When ready to eat, add sour mixture to the soup (as desired).', section: SECTIONS.MAIN },
+        { step: 'Serve soup over rice and enjoy this nostalgic piece of home for me.', section: SECTIONS.MAIN },
     ]
 }

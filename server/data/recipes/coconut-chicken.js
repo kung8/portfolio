@@ -54,13 +54,13 @@ module.exports = {
         { name: '' },
     ],
     directions: [
-        { step: 'In a medium bowl, combine the "Chicken" section ingredients. Set aside.', type: SEASON_CHICKEN },
-        { step: 'Over medium-high heat, add oil to a large pan.', type: COOK_VEGETABLES },
-        { step: 'Add curry powder to hot oil. Cook for 1 minute.', type: COOK_VEGETABLES },
-        { step: 'Add garlic and onions. Cook for 1 minute.', type: COOK_VEGETABLES },
-        { step: 'Add chicken. Stir or lightly toss to coat chicken in curry oil.', type: COOK_CHICKEN },
-        { step: 'Reduce to medium heat and cook until chicken is no longer pink in the center and chicken juice is clear (about 7 to 10 minutes). Occasionally stir.', type: COOK_CHICKEN },
-        { step: 'Mix in the remaining ingredients. Cover and simmer, occasionally stirring, for about 30 to 40 minutes.', type: COOK_CURRY },
-        { step: 'Enjoy this dish over rice.', type: SECTIONS.SERVE },
+        { step: 'In a medium bowl, combine the "Chicken" section ingredients. Set aside.', section: SEASON_CHICKEN },
+        { step: 'Over medium-high heat, add oil to a large pan.', section: COOK_VEGETABLES },
+        { step: 'Add curry powder to hot oil. Cook for 1 minute.', section: COOK_VEGETABLES },
+        { step: 'Add garlic and onions. Cook for 1 minute.', section: COOK_VEGETABLES },
+        { step: 'Add chicken. Stir or lightly toss to coat chicken in curry oil.', section: COOK_CHICKEN },
+        { step: 'Reduce to medium heat and cook until chicken is no longer pink in the center and chicken juice is clear (about 7 to 10 minutes). Occasionally stir.', section: COOK_CHICKEN },
+        { step: 'Mix in the remaining ingredients. Cover and simmer, occasionally stirring, for about 30 to 40 minutes.', section: COOK_CURRY },
+        { step: 'Enjoy this dish over rice.', section: SECTIONS.SERVE },
     ]
 };

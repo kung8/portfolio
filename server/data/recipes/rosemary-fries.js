@@ -45,12 +45,12 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'Preheat oven to 425ºF.', type: SECTIONS.MAIN },
-        { step: 'Prepare baking sheet with cooking spray.', type: SECTIONS.MAIN },
-        { step: 'In a mixing bowl, combine all the herbs, spices and liquids.', type: SECTIONS.MAIN, img: [seasonings1, seasonings2] },
-        { step: 'Add the potatoes. Mix.', type: SECTIONS.MAIN, img: seasoned },
-        { step: 'Arrange the fries in a single layer on baking sheet.', type: SECTIONS.MAIN, img: tray2 },
-        { step: 'Bake until tender and lightly browned (for about 30 to 35 minutes). Turn occasionally.', type: SECTIONS.MAIN, img: baked1 },
-        { step: 'Enjoy this delicious side!', type: SECTIONS.MAIN, img: plated2 },
+        { step: 'Preheat oven to 425ºF.', section: SECTIONS.MAIN },
+        { step: 'Prepare baking sheet with cooking spray.', section: SECTIONS.MAIN },
+        { step: 'In a mixing bowl, combine all the herbs, spices and liquids.', section: SECTIONS.MAIN, img: [seasonings1, seasonings2] },
+        { step: 'Add the potatoes. Mix.', section: SECTIONS.MAIN, img: seasoned },
+        { step: 'Arrange the fries in a single layer on baking sheet.', section: SECTIONS.MAIN, img: tray2 },
+        { step: 'Bake until tender and lightly browned (for about 30 to 35 minutes). Turn occasionally.', section: SECTIONS.MAIN, img: baked1 },
+        { step: 'Enjoy this delicious side!', section: SECTIONS.MAIN, img: plated2 },
     ]
 };

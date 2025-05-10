@@ -45,12 +45,12 @@ module.exports = {
         { name: 'pitcher' },
     ],
     directions: [
-        { step: 'Over medium-high heat, heat 2 cups of water in a saucepan. Bring to a boil.', type: SECTIONS.MAIN, img: water },
-        { step: 'Add rosemary sprigs and cover with a lid. Reduce to low heat and simmer for 10 minutes.', type: SECTIONS.MAIN, img: rosemary },
-        { step: 'Take out the rosemary.', type: SECTIONS.MAIN, img: boiled },
-        { step: 'Add honey and sugar. Mix until dissolved.', type: SECTIONS.MAIN, img: sugar },
-        { step: 'Transfer sugar mixture to a pitcher. Place in the fridge for 15 minutes.', type: SECTIONS.MAIN, img: sweet },
-        { step: 'Add lemon juice and cold water.', type: SECTIONS.SERVE, img: pitcher },
-        { step: 'Serve with ice, lemon slices, and more rosemary.', type: SECTIONS.SERVE },
+        { step: 'Over medium-high heat, heat 2 cups of water in a saucepan. Bring to a boil.', section: SECTIONS.MAIN, img: water },
+        { step: 'Add rosemary sprigs and cover with a lid. Reduce to low heat and simmer for 10 minutes.', section: SECTIONS.MAIN, img: rosemary },
+        { step: 'Take out the rosemary.', section: SECTIONS.MAIN, img: boiled },
+        { step: 'Add honey and sugar. Mix until dissolved.', section: SECTIONS.MAIN, img: sugar },
+        { step: 'Transfer sugar mixture to a pitcher. Place in the fridge for 15 minutes.', section: SECTIONS.MAIN, img: sweet },
+        { step: 'Add lemon juice and cold water.', section: SECTIONS.SERVE, img: pitcher },
+        { step: 'Serve with ice, lemon slices, and more rosemary.', section: SECTIONS.SERVE },
     ]
 };

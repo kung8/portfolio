@@ -42,11 +42,11 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'Over medium-high heat, melt butter in a pan.', type: SECTIONS.TOPPING },
-        { step: 'Add the mushroom and let it brown.', type: SECTIONS.TOPPING, img: raw },
-        { step: 'Add the brown sugar, balsamic vinegar, and soy sauce when the mushroom begins to brown.', type: SECTIONS.TOPPING },
-        { step: 'Stir and cook for about 3 minutes.', type: SECTIONS.TOPPING, img: cooking },
-        { step: 'Season with salt and pepper and cook until mushrooms are browned and soft.', type: SECTIONS.TOPPING },
-        { step: 'Serve as a topping for pizza, burgers, or meat.', type: SECTIONS.TOPPING, img: combined },
+        { step: 'Over medium-high heat, melt butter in a pan.', section: SECTIONS.TOPPING },
+        { step: 'Add the mushroom and let it brown.', section: SECTIONS.TOPPING, img: raw },
+        { step: 'Add the brown sugar, balsamic vinegar, and soy sauce when the mushroom begins to brown.', section: SECTIONS.TOPPING },
+        { step: 'Stir and cook for about 3 minutes.', section: SECTIONS.TOPPING, img: cooking },
+        { step: 'Season with salt and pepper and cook until mushrooms are browned and soft.', section: SECTIONS.TOPPING },
+        { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.TOPPING, img: combined },
     ]
 };

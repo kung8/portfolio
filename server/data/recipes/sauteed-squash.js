@@ -54,10 +54,10 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'Over medium-low heat, heat oil, onion, and butter in a pan. Cook until lightly browned (about 10 minutes).', type: SECTIONS.MAIN, img: [oil, onions] },
-        { step: 'Increase to medium heat and add salt, black pepper, thyme, and squash and zucchini medley.', type: SECTIONS.MAIN, img: [raw] },
-        { step: 'Cook until cooked (about 10 to 15 minutes). Stirring occasionally.', type: SECTIONS.MAIN, img: [mixedPan] },
-        { step: 'Add parmesan and stir until well blended. I recommend removing the pan from heat, the residual heat should be enough to melt the cheese.', type: SECTIONS.MAIN, img: mixed },
-        { step: 'Serve this on the side of any pasta dish.', type: SECTIONS.SERVE },
+        { step: 'Over medium-low heat, heat oil, onion, and butter in a pan. Cook until lightly browned (about 10 minutes).', section: SECTIONS.MAIN, img: [oil, onions] },
+        { step: 'Increase to medium heat and add salt, black pepper, thyme, and squash and zucchini medley.', section: SECTIONS.MAIN, img: [raw] },
+        { step: 'Cook until cooked (about 10 to 15 minutes). Stirring occasionally.', section: SECTIONS.MAIN, img: [mixedPan] },
+        { step: 'Add parmesan and stir until well blended. I recommend removing the pan from heat, the residual heat should be enough to melt the cheese.', section: SECTIONS.MAIN, img: mixed },
+        { step: 'Serve this on the side of any pasta dish.', section: SECTIONS.SERVE },
     ]
 };

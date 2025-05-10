@@ -46,12 +46,12 @@ module.exports = {
         { name: 'baking pan' },
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', type: CASSEROLE },
-        { step: 'Combine all the "Casserole" ingredients in the baking dish.', type: CASSEROLE, img: [mix1, mix2, mix3] },
-        { step: 'Bake until bubbly (about 30 to 35 minutes).', type: CASSEROLE },
-        { step: 'Remove from the oven and mix.', type: CASSEROLE, img: mix4 },
-        { step: 'Top with the crispy fried onions.', type: SECTIONS.TOPPINGS, img: [casserole1, casserole2, casserole3] },
-        { step: 'Bake until golden (about 10 minutes).', type: SECTIONS.TOPPINGS },
-        { step: 'Serve this dish warm at your next holiday feast.', type: SECTIONS.SERVE },
+        { step: 'Preheat the oven to 350ºF.', section: CASSEROLE },
+        { step: 'Combine all the "Casserole" ingredients in the baking dish.', section: CASSEROLE, img: [mix1, mix2, mix3] },
+        { step: 'Bake until bubbly (about 30 to 35 minutes).', section: CASSEROLE },
+        { step: 'Remove from the oven and mix.', section: CASSEROLE, img: mix4 },
+        { step: 'Top with the crispy fried onions.', section: SECTIONS.TOPPINGS, img: [casserole1, casserole2, casserole3] },
+        { step: 'Bake until golden (about 10 minutes).', section: SECTIONS.TOPPINGS },
+        { step: 'Serve this dish warm at your next holiday feast.', section: SECTIONS.SERVE },
     ]
 };

@@ -53,14 +53,14 @@ module.exports = {
         { name: 'medium bowl' },
     ],
     directions: [
-        { step: 'Mix together the eggs, milk, sour cream, salt, pepper, and basil. Allow the seasonings some time to enrich the flavor.', type: SECTIONS.MAIN },
-        { step: 'While the seasonings are doing their thing, prep all the cutting of these ingredients (and any additional ingredients that you may want to add to your eggs). Be sure any meats are cooked or else you will need to add some additional time for those ingredients to cook.', type: SECTIONS.MAIN },
-        { step: 'Once the ingredients are prepped, heat up a pan over medium-high heat. Add just a little butter when the pan is hot.', type: SECTIONS.MAIN },
-        { step: 'Once butter has melted, add the vegetables and ham being sure they are spread around the pan to ensure proper browning.', type: SECTIONS.MAIN },
-        { step: 'Cook for about 3 - 4 minutes being sure to stir occasionally to prevent burnt pieces.', type: SECTIONS.MAIN },
-        { step: 'Now pour in the egg batter over the vegetables.', type: SECTIONS.MAIN },
-        { step: 'While still keeping it over the heat, tilt and angle the pan so the runny egg on top can spread to more parts of the pan and you can even take the spatula and lift the edges of the cooking egg and let gravity do its job to have the runny egg batter fill underneath it. Allow to cook for just a few minutes.', type: SECTIONS.MAIN },
-        { step: 'Start scrambling the eggs and continue to cook until the egg pieces are brownish-yellow (and you can cook them to your preferred egg state).', type: SECTIONS.MAIN },
-        { step: 'Serve and enjoy this nice warm start to a beautiful day!', type: SECTIONS.MAIN },
+        { step: 'Mix together the eggs, milk, sour cream, salt, pepper, and basil. Allow the seasonings some time to enrich the flavor.', section: SECTIONS.MAIN },
+        { step: 'While the seasonings are doing their thing, prep all the cutting of these ingredients (and any additional ingredients that you may want to add to your eggs). Be sure any meats are cooked or else you will need to add some additional time for those ingredients to cook.', section: SECTIONS.MAIN },
+        { step: 'Once the ingredients are prepped, heat up a pan over medium-high heat. Add just a little butter when the pan is hot.', section: SECTIONS.MAIN },
+        { step: 'Once butter has melted, add the vegetables and ham being sure they are spread around the pan to ensure proper browning.', section: SECTIONS.MAIN },
+        { step: 'Cook for about 3 - 4 minutes being sure to stir occasionally to prevent burnt pieces.', section: SECTIONS.MAIN },
+        { step: 'Now pour in the egg batter over the vegetables.', section: SECTIONS.MAIN },
+        { step: 'While still keeping it over the heat, tilt and angle the pan so the runny egg on top can spread to more parts of the pan and you can even take the spatula and lift the edges of the cooking egg and let gravity do its job to have the runny egg batter fill underneath it. Allow to cook for just a few minutes.', section: SECTIONS.MAIN },
+        { step: 'Start scrambling the eggs and continue to cook until the egg pieces are brownish-yellow (and you can cook them to your preferred egg state).', section: SECTIONS.MAIN },
+        { step: 'Serve and enjoy this nice warm start to a beautiful day!', section: SECTIONS.MAIN },
     ]
 }

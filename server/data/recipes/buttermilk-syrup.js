@@ -42,7 +42,7 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'Combine sugar, buttermilk, and butter in a saucepan. And heat over medium-high heat until it boils, about 5 minutes. Stir occasionally.', type: SECTIONS.SAUCE, img: raw },
-        { step: 'Remove from heat, and add baking soda and vanilla. And stir.', type: SECTIONS.SAUCE },
+        { step: 'Combine sugar, buttermilk, and butter in a saucepan. And heat over medium-high heat until it boils, about 5 minutes. Stir occasionally.', section: SECTIONS.SAUCE, img: raw },
+        { step: 'Remove from heat, and add baking soda and vanilla. And stir.', section: SECTIONS.SAUCE },
     ]
 };

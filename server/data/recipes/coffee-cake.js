@@ -100,38 +100,38 @@ module.exports = {
         { name: 'small bowl' },
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', type: MAKE_WET_BATTER },
-        { step: 'Spray a baking pan with a cooking spray.', type: MAKE_WET_BATTER },
-        { step: 'In a stand mixer, cream together butter and cream cheese.', type: MAKE_WET_BATTER, img: [cake1, cake2] },
-        { step: 'Mix in white and brown sugars until combined.', type: MAKE_WET_BATTER, img: [cake3, cake4] },
-        { step: 'Beat in eggs, one at a time.', type: MAKE_WET_BATTER, img: cake5 },
-        { step: 'Add vanilla. Mix.', type: MAKE_WET_BATTER, img: cake6 },
+        { step: 'Preheat the oven to 350ºF.', section: MAKE_WET_BATTER },
+        { step: 'Spray a baking pan with a cooking spray.', section: MAKE_WET_BATTER },
+        { step: 'In a stand mixer, cream together butter and cream cheese.', section: MAKE_WET_BATTER, img: [cake1, cake2] },
+        { step: 'Mix in white and brown sugars until combined.', section: MAKE_WET_BATTER, img: [cake3, cake4] },
+        { step: 'Beat in eggs, one at a time.', section: MAKE_WET_BATTER, img: cake5 },
+        { step: 'Add vanilla. Mix.', section: MAKE_WET_BATTER, img: cake6 },
 
-        { step: 'In another mixing bowl, combine the flour, baking powder, cornstarch and salt.', type: MAKE_DRY_BATTER, img: cake7 },
+        { step: 'In another mixing bowl, combine the flour, baking powder, cornstarch and salt.', section: MAKE_DRY_BATTER, img: cake7 },
 
-        { step: 'Measure out the buttermilk.', type: COMBINE_BATTERS },
-        { step: 'Alternate adding ingredients to the wet batter: 1/3 dry, 1/2 buttermilk, 1/3 dry, 1/2 buttermilk, 1/3 dry.', type: COMBINE_BATTERS, img: [cake8, cake9] },
+        { step: 'Measure out the buttermilk.', section: COMBINE_BATTERS },
+        { step: 'Alternate adding ingredients to the wet batter: 1/3 dry, 1/2 buttermilk, 1/3 dry, 1/2 buttermilk, 1/3 dry.', section: COMBINE_BATTERS, img: [cake8, cake9] },
 
-        { step: 'In a small bowl, combine together the cinnamon and sugar.', type: MAKE_CINNAMON_SWIRL },
+        { step: 'In a small bowl, combine together the cinnamon and sugar.', section: MAKE_CINNAMON_SWIRL },
 
-        { step: 'In the greased baking pan, pour half of the batter.', type: ASSEMBLE_CAKE, img: cake10 },
-        { step: 'Sprinkle the cinnamon swirl evenly over the batter.', type: ASSEMBLE_CAKE, img: cake11 },
-        { step: 'Add the rest of the batter and carefully spread it evenly (avoid moving the cinnamon swirl).', type: ASSEMBLE_CAKE, img: cake12 },
+        { step: 'In the greased baking pan, pour half of the batter.', section: ASSEMBLE_CAKE, img: cake10 },
+        { step: 'Sprinkle the cinnamon swirl evenly over the batter.', section: ASSEMBLE_CAKE, img: cake11 },
+        { step: 'Add the rest of the batter and carefully spread it evenly (avoid moving the cinnamon swirl).', section: ASSEMBLE_CAKE, img: cake12 },
 
-        { step: 'In a medium bowl, melt butter in 10 second increments until melted. Let it cool completely once it has melted.', type: MAKE_STREUSEL_CRUMBLE, img: cake13 },
-        { step: 'In a mixing bowl, combine the remaining "Streusel" ingredients (except the butter) with a fork.', type: MAKE_STREUSEL_CRUMBLE, img: [cake14, cake15] },
-        { step: 'Once the butter has cooled, add the butter and gently combine. It should be crumbly.', type: MAKE_STREUSEL_CRUMBLE, img: cake16 },
-        { step: 'Top the cake with the streusel crumble', type: MAKE_STREUSEL_CRUMBLE, img: cake17 },
+        { step: 'In a medium bowl, melt butter in 10 second increments until melted. Let it cool completely once it has melted.', section: MAKE_STREUSEL_CRUMBLE, img: cake13 },
+        { step: 'In a mixing bowl, combine the remaining "Streusel" ingredients (except the butter) with a fork.', section: MAKE_STREUSEL_CRUMBLE, img: [cake14, cake15] },
+        { step: 'Once the butter has cooled, add the butter and gently combine. It should be crumbly.', section: MAKE_STREUSEL_CRUMBLE, img: cake16 },
+        { step: 'Top the cake with the streusel crumble', section: MAKE_STREUSEL_CRUMBLE, img: cake17 },
 
-        { step: 'Bake until an inserted toothpick comes out clean (about 40 to 50 minutes). Avoid overbaking.', type: BAKE_CAKE, img: cake18 },
-        { step: 'Let it cool before cutting and serving it.', type: BAKE_CAKE },
+        { step: 'Bake until an inserted toothpick comes out clean (about 40 to 50 minutes). Avoid overbaking.', section: BAKE_CAKE, img: cake18 },
+        { step: 'Let it cool before cutting and serving it.', section: BAKE_CAKE },
 
-        { step: 'In a medium bowl, whisk the powdered sugar and a little milk at a time.', type: MAKE_GLAZE, img: cake19 },
+        { step: 'In a medium bowl, whisk the powdered sugar and a little milk at a time.', section: MAKE_GLAZE, img: cake19 },
 
-        { step: 'Drizzle the glaze over the coffee cake.', type: SECTIONS.SERVE, img: [cake20, cake21] },
-        { step: 'Enjoy this delicious cake as a breakfast treat or dessert.', type: SECTIONS.SERVE, img: cake23 },
+        { step: 'Drizzle the glaze over the coffee cake.', section: SECTIONS.SERVE, img: [cake20, cake21] },
+        { step: 'Enjoy this delicious cake as a breakfast treat or dessert.', section: SECTIONS.SERVE, img: cake23 },
 
-        { step: 'Store in an airtight container at room temperature up to 3 days.', type: SECTIONS.STORE },
+        { step: 'Store in an airtight container at room temperature up to 3 days.', section: SECTIONS.STORE },
     ],
 
     notes: [

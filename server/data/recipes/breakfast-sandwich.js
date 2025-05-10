@@ -45,12 +45,12 @@ module.exports = {
                 additionalText: '.'
             }
         },
-        { step: 'Over medium-high heat, melt a little butter in a pan.', type: SECTIONS.MAIN },
-        { step: 'Cook the egg as how you like it. I prefer for this recipe over medium or sunny side up.', type: SECTIONS.MAIN },
-        { step: 'Add salt and pepper to your egg.', type: SECTIONS.MAIN },
-        { step: 'Remove egg from pan.', type: SECTIONS.MAIN },
-        { step: 'Add the ham slice to the pan and heat each side for 30 seconds.', type: SECTIONS.MAIN },
-        { step: 'Place a slice of cheese on the ham so it melts.', type: SECTIONS.MAIN },
-        { step: 'Make a sandwich with these ingredients and enjoy this fresh breakfast sandwich.', type: SECTIONS.MAIN },
+        { step: 'Over medium-high heat, melt a little butter in a pan.', section: SECTIONS.MAIN },
+        { step: 'Cook the egg as how you like it. I prefer for this recipe over medium or sunny side up.', section: SECTIONS.MAIN },
+        { step: 'Add salt and pepper to your egg.', section: SECTIONS.MAIN },
+        { step: 'Remove egg from pan.', section: SECTIONS.MAIN },
+        { step: 'Add the ham slice to the pan and heat each side for 30 seconds.', section: SECTIONS.MAIN },
+        { step: 'Place a slice of cheese on the ham so it melts.', section: SECTIONS.MAIN },
+        { step: 'Make a sandwich with these ingredients and enjoy this fresh breakfast sandwich.', section: SECTIONS.MAIN },
     ]
 }

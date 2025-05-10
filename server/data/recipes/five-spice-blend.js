@@ -37,8 +37,8 @@ module.exports = {
         { name: 'pestle and mortar' },
     ],
     directions: [
-        { step: 'In a pestle and mortar, combine the spices.', type: SECTIONS.MAIN, img: [blend1, blend3] },
-        { step: 'Store in an airtight container for 2 months.', type: SECTIONS.STORE, img: blend4 },
+        { step: 'In a pestle and mortar, combine the spices.', section: SECTIONS.MAIN, img: [blend1, blend3] },
+        { step: 'Store in an airtight container for 2 months.', section: SECTIONS.STORE, img: blend4 },
     ],
     notes: [
         { note: 'Dry roasting the spices in a pan will accentuate the flavor.' },

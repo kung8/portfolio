@@ -35,7 +35,7 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        { step: 'Place tortilla on a plate and lay on toppings in the center of tortilla as desired.', type: SECTIONS.MAIN },
-        { step: 'Roll the edge towards the center of the tortilla and continue to completely roll wrap.', type: SECTIONS.MAIN },
+        { step: 'Place tortilla on a plate and lay on toppings in the center of tortilla as desired.', section: SECTIONS.MAIN },
+        { step: 'Roll the edge towards the center of the tortilla and continue to completely roll wrap.', section: SECTIONS.MAIN },
     ]
 }

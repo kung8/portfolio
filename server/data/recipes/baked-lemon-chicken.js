@@ -56,13 +56,13 @@ module.exports = {
         { name: 'small bowl' },
     ],
     directions: [
-        { step: 'Preheat the oven to 400ºF.', type: SECTIONS.MAIN },
-        { step: 'Over medium-high heat, melt butter.', type: SECTIONS.MAIN },
-        { step: 'Add chicken wings to the pan and cook for 2 to 3 minutes on each side until browned.', type: SECTIONS.MAIN },
-        { step: 'Transfer chicken to baking pan.', type: SECTIONS.MAIN },
-        { step: 'In a small bowl, mix together chicken broth, lemon juice, honey, garlic, italian seasoning, salt and pepper.', type: SECTIONS.MAIN },
-        { step: 'Pour the sauce over the chicken and add lemon slices.', type: SECTIONS.MAIN },
-        { step: 'Bake for 20 to 30 minutes.', type: SECTIONS.MAIN, img: pan },
-        { step: 'Serve with rice and garnish with fresh rosemary.', type: SECTIONS.SERVE, img: plate },
+        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.MAIN },
+        { step: 'Over medium-high heat, melt butter.', section: SECTIONS.MAIN },
+        { step: 'Add chicken wings to the pan and cook for 2 to 3 minutes on each side until browned.', section: SECTIONS.MAIN },
+        { step: 'Transfer chicken to baking pan.', section: SECTIONS.MAIN },
+        { step: 'In a small bowl, mix together chicken broth, lemon juice, honey, garlic, italian seasoning, salt and pepper.', section: SECTIONS.MAIN },
+        { step: 'Pour the sauce over the chicken and add lemon slices.', section: SECTIONS.MAIN },
+        { step: 'Bake for 20 to 30 minutes.', section: SECTIONS.MAIN, img: pan },
+        { step: 'Serve with rice and garnish with fresh rosemary.', section: SECTIONS.SERVE, img: plate },
     ]
 };

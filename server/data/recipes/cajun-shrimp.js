@@ -57,13 +57,13 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'In a medium bowl, combine all the "Cajun Seasoning" section ingredients.', type: PREP_CAJUN_SEASONING },
-        { step: 'Over medium heat, melt 2 tablespoons in a wok.', type: COOK_RICE },
-        { step: 'Add garlic, half of the cajun seasoning and rice. Mix.', type: COOK_RICE },
-        { step: 'Add chicken broth. Bring to a boil.', type: COOK_RICE },
-        { step: 'Cover and let simmer (about 15 minutes). Stir once or twice.', type: COOK_RICE },
-        { step: 'In a mixing bowl, combine melted butter and cajun seasoning. Add shrimp and toss until coated.', type: COOK_SHRIMP },
-        { step: 'Add shrimp to the rice. Cover and cook until the shrimp is pink and opaque (about 3 to 5 minutes).', type: COOK_SHRIMP },
-        { step: 'Serve this with parsley.', type: SECTIONS.SERVE },
+        { step: 'In a medium bowl, combine all the "Cajun Seasoning" section ingredients.', section: PREP_CAJUN_SEASONING },
+        { step: 'Over medium heat, melt 2 tablespoons in a wok.', section: COOK_RICE },
+        { step: 'Add garlic, half of the cajun seasoning and rice. Mix.', section: COOK_RICE },
+        { step: 'Add chicken broth. Bring to a boil.', section: COOK_RICE },
+        { step: 'Cover and let simmer (about 15 minutes). Stir once or twice.', section: COOK_RICE },
+        { step: 'In a mixing bowl, combine melted butter and cajun seasoning. Add shrimp and toss until coated.', section: COOK_SHRIMP },
+        { step: 'Add shrimp to the rice. Cover and cook until the shrimp is pink and opaque (about 3 to 5 minutes).', section: COOK_SHRIMP },
+        { step: 'Serve this with parsley.', section: SECTIONS.SERVE },
     ]
 };

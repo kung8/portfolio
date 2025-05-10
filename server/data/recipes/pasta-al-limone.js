@@ -53,17 +53,17 @@ module.exports = {
         { name: 'saucepan' },
     ],
     directions: [
-        { step: 'Over medium heat, add butter, lemon juice and lemon zest to a large pan. Stir occasionally.', type: COOK_SAUCE },
-        { step: 'Let the butter melt and simmer for 20 seconds.', type: COOK_SAUCE },
-        { step: 'Add the heavy cream, black pepper and salt. Mix.', type: COOK_SAUCE },
-        { step: 'Reduce to medium-low heat. Bring to a gentle simmer. Let it simmer while you cook the pasta.', type: COOK_SAUCE },
+        { step: 'Over medium heat, add butter, lemon juice and lemon zest to a large pan. Stir occasionally.', section: COOK_SAUCE },
+        { step: 'Let the butter melt and simmer for 20 seconds.', section: COOK_SAUCE },
+        { step: 'Add the heavy cream, black pepper and salt. Mix.', section: COOK_SAUCE },
+        { step: 'Reduce to medium-low heat. Bring to a gentle simmer. Let it simmer while you cook the pasta.', section: COOK_SAUCE },
 
-        { step: 'Over medium-high heat, bring a pot of salted water to a boil.', type: COOK_NOODLES },
-        { step: 'Add the pasta and cook until al dente.', type: COOK_NOODLES },
-        { step: 'Drain the pasta.', type: COOK_NOODLES },
+        { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: COOK_NOODLES },
+        { step: 'Add the pasta and cook until al dente.', section: COOK_NOODLES },
+        { step: 'Drain the pasta.', section: COOK_NOODLES },
 
-        { step: 'Reduce to low heat. Add the parmesan to the sauce and stir.', type: COMBINE },
-        { step: 'Add pasta to the sauce. Combine.', type: COMBINE },
-        { step: 'Serve immediately and garnish with more of the toppings as desired.', type: SECTIONS.SERVE },
+        { step: 'Reduce to low heat. Add the parmesan to the sauce and stir.', section: COMBINE },
+        { step: 'Add pasta to the sauce. Combine.', section: COMBINE },
+        { step: 'Serve immediately and garnish with more of the toppings as desired.', section: SECTIONS.SERVE },
     ]
 };

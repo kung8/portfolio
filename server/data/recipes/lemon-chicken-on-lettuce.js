@@ -52,13 +52,13 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'Heat a wok over medium-high heat.', type: SECTIONS.MAIN },
-        { step: 'Add vegetable oil and wait until it is hot.', type: SECTIONS.MAIN },
-        { step: 'Add chicken to the wok and let it cook without flipping (about 1 to 2 minutes).', type: SECTIONS.MAIN, img: [raw, frying] },
-        { step: 'Then flip and cook again for a few minutes.', type: SECTIONS.MAIN, img: partially },
-        { step: 'Season the chicken with salt and pepper.', type: SECTIONS.MAIN },
-        { step: 'Add soy sauce, water, lemon juice and cornstarch to the chicken.', type: SECTIONS.MAIN, img: cooked },
-        { step: 'The cornstarch should thicken the sauce slightly. Add more cornstarch to continuing thickening as preferred.', type: SECTIONS.MAIN },
-        { step: 'Serve the lemon chicken over leaves of lettuce with a side of rice.', type: SECTIONS.MAIN, img: [plated, rice] },
+        { step: 'Heat a wok over medium-high heat.', section: SECTIONS.MAIN },
+        { step: 'Add vegetable oil and wait until it is hot.', section: SECTIONS.MAIN },
+        { step: 'Add chicken to the wok and let it cook without flipping (about 1 to 2 minutes).', section: SECTIONS.MAIN, img: [raw, frying] },
+        { step: 'Then flip and cook again for a few minutes.', section: SECTIONS.MAIN, img: partially },
+        { step: 'Season the chicken with salt and pepper.', section: SECTIONS.MAIN },
+        { step: 'Add soy sauce, water, lemon juice and cornstarch to the chicken.', section: SECTIONS.MAIN, img: cooked },
+        { step: 'The cornstarch should thicken the sauce slightly. Add more cornstarch to continuing thickening as preferred.', section: SECTIONS.MAIN },
+        { step: 'Serve the lemon chicken over leaves of lettuce with a side of rice.', section: SECTIONS.MAIN, img: [plated, rice] },
     ]
 };

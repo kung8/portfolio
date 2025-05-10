@@ -48,11 +48,11 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'Preheat the oven to 375ºF.', type: PREP_PIE },
-        { step: 'In a mixing bowl, combine the "Pie Filling" section ingredients.', type: PREP_PIE, img: [pie1, pie2] },
-        { step: 'Pour the filling into the pie crust.', type: PREP_PIE, img: pie3 },
-        { step: 'Bake until the filling is set (about 15 minutes).', type: SECTIONS.BAKE, img: pie4 },
-        { step: 'Let it completely cool before slicing.', type: SECTIONS.BAKE },
-        { step: 'Top each slice with whipped cream and a lime slice.', type: SECTIONS.SERVE },
+        { step: 'Preheat the oven to 375ºF.', section: PREP_PIE },
+        { step: 'In a mixing bowl, combine the "Pie Filling" section ingredients.', section: PREP_PIE, img: [pie1, pie2] },
+        { step: 'Pour the filling into the pie crust.', section: PREP_PIE, img: pie3 },
+        { step: 'Bake until the filling is set (about 15 minutes).', section: SECTIONS.BAKE, img: pie4 },
+        { step: 'Let it completely cool before slicing.', section: SECTIONS.BAKE },
+        { step: 'Top each slice with whipped cream and a lime slice.', section: SECTIONS.SERVE },
     ]
 };

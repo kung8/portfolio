@@ -55,14 +55,14 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'Over medium-high heat, boil water and salt in a saucepan.', type: SECTIONS.MAIN },
-        { step: 'Add beans into pan and cook until they become bright green (3 to 4 minutes).', type: SECTIONS.MAIN, img: boiled },
-        { step: 'Fill a mixing bowl with ice and water.', type: SECTIONS.MAIN, img: ice },
-        { step: 'Transfer green beans into ice water and let chill for 3 to 4 minutes.', type: SECTIONS.MAIN, img: bath },
-        { step: 'Drain.', type: SECTIONS.MAIN },
-        { step: 'Brown butter in pan.', type: SECTIONS.MAIN },
-        { step: 'Add almonds and shallots to pan and cook for 2 minutes.', type: SECTIONS.MAIN, img: almond },
-        { step: 'Add green beans back into the pan and cook for a few minutes.', type: SECTIONS.MAIN, img: cooked },
-        { step: 'Serve warm.', type: SECTIONS.MAIN, img: fullPlate },
+        { step: 'Over medium-high heat, boil water and salt in a saucepan.', section: SECTIONS.MAIN },
+        { step: 'Add beans into pan and cook until they become bright green (3 to 4 minutes).', section: SECTIONS.MAIN, img: boiled },
+        { step: 'Fill a mixing bowl with ice and water.', section: SECTIONS.MAIN, img: ice },
+        { step: 'Transfer green beans into ice water and let chill for 3 to 4 minutes.', section: SECTIONS.MAIN, img: bath },
+        { step: 'Drain.', section: SECTIONS.MAIN },
+        { step: 'Brown butter in pan.', section: SECTIONS.MAIN },
+        { step: 'Add almonds and shallots to pan and cook for 2 minutes.', section: SECTIONS.MAIN, img: almond },
+        { step: 'Add green beans back into the pan and cook for a few minutes.', section: SECTIONS.MAIN, img: cooked },
+        { step: 'Serve warm.', section: SECTIONS.MAIN, img: fullPlate },
     ]
 };

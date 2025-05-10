@@ -35,13 +35,13 @@ module.exports = {
         { name: 'electric/standing mixer' },
     ],
     directions: [
-        { step: 'Place butter in mixing bowl and beat until fluffy (about 3 to 5 minutes).', type: SECTIONS.MAIN },
-        { step: 'Gradually add powdered sugar while butter is mixing.', type: SECTIONS.MAIN },
-        { step: 'Add flour and salt to the bowl and continue mixing on low speed.', type: SECTIONS.MAIN },
-        { step: 'Pour batter into the baking pan and refrigerate for about 30 minutes.', type: SECTIONS.MAIN },
-        { step: 'Slice into rectangles.', type: SECTIONS.MAIN },
-        { step: 'Preheat the oven to 300ºF whenever ready to bake.', type: SECTIONS.MAIN },
-        { step: 'Bake until the biscuits are golden brown (about 45 to 60 minutes).', type: SECTIONS.MAIN },
-        { step: 'Enjoy these biscuits while you watch or re-watch the Ted Lasso television show. Cheers!', type: SECTIONS.MAIN },
+        { step: 'Place butter in mixing bowl and beat until fluffy (about 3 to 5 minutes).', section: SECTIONS.MAIN },
+        { step: 'Gradually add powdered sugar while butter is mixing.', section: SECTIONS.MAIN },
+        { step: 'Add flour and salt to the bowl and continue mixing on low speed.', section: SECTIONS.MAIN },
+        { step: 'Pour batter into the baking pan and refrigerate for about 30 minutes.', section: SECTIONS.MAIN },
+        { step: 'Slice into rectangles.', section: SECTIONS.MAIN },
+        { step: 'Preheat the oven to 300ºF whenever ready to bake.', section: SECTIONS.MAIN },
+        { step: 'Bake until the biscuits are golden brown (about 45 to 60 minutes).', section: SECTIONS.MAIN },
+        { step: 'Enjoy these biscuits while you watch or re-watch the Ted Lasso television show. Cheers!', section: SECTIONS.MAIN },
     ]
 };

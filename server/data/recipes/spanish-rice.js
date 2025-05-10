@@ -40,12 +40,12 @@ module.exports = {
         { name: 'large pot with lid' },
     ],
     directions: [
-        { step: 'Over medium heat, heat oil to a large pot.', type: COOK_RICE },
-        { step: 'Add onion. Cook and stir until tender (about 5 minutes).', type: COOK_RICE },
-        { step: 'Add rice. Cook and stir until rice is golden brown.', type: COOK_RICE },
-        { step: 'Add chicken broth and picante sauce.', type: COOK_RICE },
-        { step: 'Turn heat to low.', type: COOK_RICE },
-        { step: 'Cover and simmer until there is no more liquid (about 15 to 20 minutes).', type: COOK_RICE },
-        { step: 'Enjoy this with your favorite toppings or main dishes.', type: SECTIONS.SERVE },
+        { step: 'Over medium heat, heat oil to a large pot.', section: COOK_RICE },
+        { step: 'Add onion. Cook and stir until tender (about 5 minutes).', section: COOK_RICE },
+        { step: 'Add rice. Cook and stir until rice is golden brown.', section: COOK_RICE },
+        { step: 'Add chicken broth and picante sauce.', section: COOK_RICE },
+        { step: 'Turn heat to low.', section: COOK_RICE },
+        { step: 'Cover and simmer until there is no more liquid (about 15 to 20 minutes).', section: COOK_RICE },
+        { step: 'Enjoy this with your favorite toppings or main dishes.', section: SECTIONS.SERVE },
     ]
 };

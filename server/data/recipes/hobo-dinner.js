@@ -43,11 +43,11 @@ module.exports = {
         { name: 'aluminum foil' },
     ],
     directions: [
-        { step: 'Preheat the oven to 400ºF.', type: SECTIONS.MAIN },
-        { step: 'Add your preferred sliced veggies and proteins into the baking pan. I love summer sausage with these simple hearty veggies.', type: SECTIONS.MAIN },
-        { step: 'Drizzle a light amount of olive oil. If you choose to use other proteins, note that the amount of oil may need to be adjusted.', type: SECTIONS.MAIN },
-        { step: 'Cover with aluminum foil.', type: SECTIONS.MAIN },
-        { step: 'Bake for 40 minutes, or until the selected protein is cooked.', type: SECTIONS.MAIN, img: dinner },
+        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.MAIN },
+        { step: 'Add your preferred sliced veggies and proteins into the baking pan. I love summer sausage with these simple hearty veggies.', section: SECTIONS.MAIN },
+        { step: 'Drizzle a light amount of olive oil. If you choose to use other proteins, note that the amount of oil may need to be adjusted.', section: SECTIONS.MAIN },
+        { step: 'Cover with aluminum foil.', section: SECTIONS.MAIN },
+        { step: 'Bake for 40 minutes, or until the selected protein is cooked.', section: SECTIONS.MAIN, img: dinner },
     ],
     notes: [
         { note: 'This was a favorite tradition of mine when camping. Simply wrapping whatever food in layers of tin foil and cooking over a campfire. And while it cooked, telling stories and enjoying the outdoors.' },

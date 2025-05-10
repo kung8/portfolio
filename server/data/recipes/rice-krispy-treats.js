@@ -38,12 +38,12 @@ module.exports = {
         { name: 'serving plate or bowl' },
     ],
     directions: [
-        { step: 'Over low heat, melt butter and marshmallows in a saucepan. Stir to prevent it from burning and help it be consistent. My suggestion is to mix until the marshmallows are coated with the butter.', type: SECTIONS.MAIN, img: [marshmallows, completely] },
-        { step: 'If you want to make one of the variations with chocolate, melt chocolate chip after marshmallows are melted and stir.', type: SECTIONS.MAIN },
-        { step: 'Remove the saucepan from heat and mix in vanilla (optional depending on how sweet the chocolate chips is).', type: SECTIONS.MAIN, img: vanilla },
-        { step: 'Stir while adding in the Rice Krispies cereal. Mix until the cereal is evenly coated.', type: SECTIONS.MAIN, img: riceKrispy },
-        { step: 'Press into a greased 9x13 pan. But do not press them too hard if you want the treats to be a little softer.', type: SECTIONS.MAIN, img: pan },
-        { step: 'Let cool and enjoy.', type: SECTIONS.MAIN },
+        { step: 'Over low heat, melt butter and marshmallows in a saucepan. Stir to prevent it from burning and help it be consistent. My suggestion is to mix until the marshmallows are coated with the butter.', section: SECTIONS.MAIN, img: [marshmallows, completely] },
+        { step: 'If you want to make one of the variations with chocolate, melt chocolate chip after marshmallows are melted and stir.', section: SECTIONS.MAIN },
+        { step: 'Remove the saucepan from heat and mix in vanilla (optional depending on how sweet the chocolate chips is).', section: SECTIONS.MAIN, img: vanilla },
+        { step: 'Stir while adding in the Rice Krispies cereal. Mix until the cereal is evenly coated.', section: SECTIONS.MAIN, img: riceKrispy },
+        { step: 'Press into a greased 9x13 pan. But do not press them too hard if you want the treats to be a little softer.', section: SECTIONS.MAIN, img: pan },
+        { step: 'Let cool and enjoy.', section: SECTIONS.MAIN },
     ],
     notes: [
         { note: "Be generous on marshmallows. The more marshmallows, the chewier the treats will be. Make sure it is completely melted to adhere well and are soft." },

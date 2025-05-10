@@ -52,11 +52,11 @@ module.exports = {
         { name: '' },
     ],
     directions: [
-        { step: 'Over medium-high heat, bring a pot of salted water to a boil.', type: COOK_PASTA },
-        { step: 'Add the pasta. Cook until al dente (just a few minutes).', type: COOK_PASTA },
-        { step: 'Drain. Rinse in cold water.', type: COOK_PASTA },
-        { step: 'In a mixing bowl, combine "Lemon Juice Mixture" section ingredients.', type: ASSEMBLE_SALAD },
-        { step: 'Add the pasta and the rest of the ingredients. Toss.', type: ASSEMBLE_SALAD },
-        { step: 'Serve this immediately or cover and chill until ready to eat.', type: SECTIONS.SERVE },
+        { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: COOK_PASTA },
+        { step: 'Add the pasta. Cook until al dente (just a few minutes).', section: COOK_PASTA },
+        { step: 'Drain. Rinse in cold water.', section: COOK_PASTA },
+        { step: 'In a mixing bowl, combine "Lemon Juice Mixture" section ingredients.', section: ASSEMBLE_SALAD },
+        { step: 'Add the pasta and the rest of the ingredients. Toss.', section: ASSEMBLE_SALAD },
+        { step: 'Serve this immediately or cover and chill until ready to eat.', section: SECTIONS.SERVE },
     ]
 };

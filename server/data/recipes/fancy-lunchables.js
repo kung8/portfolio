@@ -27,7 +27,7 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        { step: 'Assemble together these delicious cracker sandwiches with your favorite toppings.', type: SECTIONS.MAIN },
-        { step: 'Go back to simpler times and enjoy these fancy lunchables.', type: SECTIONS.MAIN },
+        { step: 'Assemble together these delicious cracker sandwiches with your favorite toppings.', section: SECTIONS.MAIN },
+        { step: 'Go back to simpler times and enjoy these fancy lunchables.', section: SECTIONS.MAIN },
     ]
 };

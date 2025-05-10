@@ -119,20 +119,20 @@ export const Recipe = ({ match }) => {
     const formatSeparatedDirections = () => {
         let figureCount = 1;
         const separatedDirections = item.directions.reduce((acc, direction) => {
-            if (direction.type && !acc[direction.type]) acc[direction.type] = [];
-            if (direction.type && acc[direction.type]) {
+            if (direction.section && !acc[direction.section]) acc[direction.section] = [];
+            if (direction.section && acc[direction.section]) {
                 const newDirection = { ...direction };
                 if (direction.video || direction.img) {
                     newDirection.figure = figureCount;
                     figureCount += 1;
                 }
 
-                acc[direction.type].push(newDirection);
+                acc[direction.section].push(newDirection);
             }
 
             // if there are any directions without a type, add them to the 'Other' type so that I can at least display them (and I will need to add a section in the recipe)
-            if (!direction.type && !acc['Other']) acc['Other'] = [];
-            if (!direction.type && acc['Other']) {
+            if (!direction.section && !acc['Other']) acc['Other'] = [];
+            if (!direction.section && acc['Other']) {
                 const newDirection = { ...direction };
                 if (direction.video || direction.img) {
                     newDirection.figure = figureCount;

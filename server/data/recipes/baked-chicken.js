@@ -49,13 +49,13 @@ module.exports = {
         { name: 'small bowl' },
     ],
     directions: [
-        { step: 'Preheat the oven to 400ºF.', type: SECTIONS.MAIN },
-        { step: 'Place the chicken in the baking pan in a single layer.', type: SECTIONS.MAIN },
-        { step: 'Mix the dry seasoning together.', type: SECTIONS.MAIN, img: spices },
-        { step: 'Then add the oil.', type: SECTIONS.MAIN, img: oil },
-        { step: 'Once all is mixed, use the basting brush to coat the top of the chicken.', type: SECTIONS.MAIN, img: rawChicken },
-        { step: 'Bake the chicken for 40 - 50 minutes, or until the internal temperature reaches 165ºF.', type: SECTIONS.MAIN, img: pan },
-        { step: 'Move them out of the pan so the oils does not gelatinize.', type: SECTIONS.MAIN, img: plated },
-        { step: 'Serve with rice and your favorite veggies.', type: SECTIONS.SERVE, img: full },
+        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.MAIN },
+        { step: 'Place the chicken in the baking pan in a single layer.', section: SECTIONS.MAIN },
+        { step: 'Mix the dry seasoning together.', section: SECTIONS.MAIN, img: spices },
+        { step: 'Then add the oil.', section: SECTIONS.MAIN, img: oil },
+        { step: 'Once all is mixed, use the basting brush to coat the top of the chicken.', section: SECTIONS.MAIN, img: rawChicken },
+        { step: 'Bake the chicken for 40 - 50 minutes, or until the internal temperature reaches 165ºF.', section: SECTIONS.MAIN, img: pan },
+        { step: 'Move them out of the pan so the oils does not gelatinize.', section: SECTIONS.MAIN, img: plated },
+        { step: 'Serve with rice and your favorite veggies.', section: SECTIONS.SERVE, img: full },
     ]
 };

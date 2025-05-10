@@ -36,13 +36,13 @@ module.exports = {
         { name: 'medium bowl' },
     ],
     directions: [
-        { step: 'Chop and shred the cabbage.', type: SECTIONS.MAIN },
-        { step: 'Place the shredded cabbage in a mixing bowl.', type: SECTIONS.MAIN },
-        { step: 'Shred the carrots and add to the mixing bowl.', type: SECTIONS.MAIN },
-        { step: 'Mix together cabbage and carrots.', type: SECTIONS.MAIN },
-        { step: 'In a medium bowl, combine together the dressing ingredients.', type: SECTIONS.DRESSING },
-        { step: 'Pour the dressing over the vegetable mixture.', type: SECTIONS.ASSEMBLE, img: zoomed },
-        { step: 'Place the coleslaw in the fridge for at least a day. Mix the coleslaw several times while it is in the fridge.', type: SECTIONS.ASSEMBLE },
-        { step: 'Serve this cold and enjoy.', type: SECTIONS.SERVE, img: plated },
+        { step: 'Chop and shred the cabbage.', section: SECTIONS.MAIN },
+        { step: 'Place the shredded cabbage in a mixing bowl.', section: SECTIONS.MAIN },
+        { step: 'Shred the carrots and add to the mixing bowl.', section: SECTIONS.MAIN },
+        { step: 'Mix together cabbage and carrots.', section: SECTIONS.MAIN },
+        { step: 'In a medium bowl, combine together the dressing ingredients.', section: SECTIONS.DRESSING },
+        { step: 'Pour the dressing over the vegetable mixture.', section: SECTIONS.ASSEMBLE, img: zoomed },
+        { step: 'Place the coleslaw in the fridge for at least a day. Mix the coleslaw several times while it is in the fridge.', section: SECTIONS.ASSEMBLE },
+        { step: 'Serve this cold and enjoy.', section: SECTIONS.SERVE, img: plated },
     ]
 };

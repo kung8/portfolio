@@ -48,11 +48,11 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the sauce ingredients.', type: BIG_MAC_SAUCE, img: [sauce2, sauce4] },
-        { step: 'Place sauce in fridge to chill until ready to assemble the burgers.', type: BIG_MAC_SAUCE },
-        { step: 'Cook the patties on a grill/skillet/pan to your preferred doneness.', type: SECTIONS.MAIN, img: [beef3] },
-        { step: 'Assemble the burgers.', type: SECTIONS.MAIN, img: plated6 },
-        { step: 'You might not ever need to go to McDonald\'s ever again unless you are missing their fries, nuggets or McFlurries.', type: SECTIONS.MAIN },
+        { step: 'In a mixing bowl, combine the sauce ingredients.', section: BIG_MAC_SAUCE, img: [sauce2, sauce4] },
+        { step: 'Place sauce in fridge to chill until ready to assemble the burgers.', section: BIG_MAC_SAUCE },
+        { step: 'Cook the patties on a grill/skillet/pan to your preferred doneness.', section: SECTIONS.MAIN, img: [beef3] },
+        { step: 'Assemble the burgers.', section: SECTIONS.MAIN, img: plated6 },
+        { step: 'You might not ever need to go to McDonald\'s ever again unless you are missing their fries, nuggets or McFlurries.', section: SECTIONS.MAIN },
     ],
     notes: [
         { note: 'The burgers will shrink a bit when cooked so either get bigger patties or smaller buns.' },

@@ -78,11 +78,11 @@ module.exports = {
         { name: 'measuring spoons' },
     ],
     directions: [
-        { step: 'Add oil and butter to a large cooking pan on medium-high heat.', type: SECTIONS.MAIN, img: oils },
-        { step: 'Add the diced onion and cook until light brown.', type: SECTIONS.MAIN, img: [onion, browned] },
+        { step: 'Add oil and butter to a large cooking pan on medium-high heat.', section: SECTIONS.MAIN, img: oils },
+        { step: 'Add the diced onion and cook until light brown.', section: SECTIONS.MAIN, img: [onion, browned] },
         { step: 'Add the ginger and garlic to the pan and cook until aromatic (about 30 seconds).', img: [fragrant, fragrantAdded] },
         { step: 'Add the chicken, spices, and tomato paste to the pan. Cook until the chicken is browned (about 5 to 6 minutes).', img: [spices, paste, browning] },
-        { step: 'Add the heavy cream and let simmer for 8 to 10 minutes.', type: SECTIONS.MAIN, img: [cream, creamAdded, simmering] },
-        { step: 'Serve with rice (and naan or roti is optional and delicious).', type: SECTIONS.MAIN, img: plated3 },
+        { step: 'Add the heavy cream and let simmer for 8 to 10 minutes.', section: SECTIONS.MAIN, img: [cream, creamAdded, simmering] },
+        { step: 'Serve with rice (and naan or roti is optional and delicious).', section: SECTIONS.MAIN, img: plated3 },
     ]
 };

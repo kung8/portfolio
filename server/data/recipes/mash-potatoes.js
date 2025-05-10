@@ -51,14 +51,14 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'Place quartered potatoes, salt, and garlic in a pot of cold water.', type: SECTIONS.MAIN, img: potatoes1 },
-        { step: 'Bring pot to a boil.', type: SECTIONS.MAIN },
-        { step: 'Cook uncovered until tender (about 15 minutes)', type: SECTIONS.MAIN, img: potatoes2 },
-        { step: 'Drain. Transfer to a mixing bowl.', type: SECTIONS.MAIN, img: [potatoes4, potatoes5] },
-        { step: 'In large pot, heat milk until warm.', type: SECTIONS.MAIN, img: potatoes3 },
-        { step: 'Add melted butter to the potatoes and mash.', type: SECTIONS.MAIN, img: [potatoes6, potatoes7] },
-        { step: 'Pour warm milk into the potatoes a little at a time while mashing.', type: SECTIONS.MAIN },
-        { step: 'Season with salt and pepper until desired taste.', type: SECTIONS.MAIN },
-        { step: 'Serve hot as a side dish. Top mashed potatoes with gravy and your favorite toppings.', type: SECTIONS.SERVE, img: [potatoes9, potatoes10] },
+        { step: 'Place quartered potatoes, salt, and garlic in a pot of cold water.', section: SECTIONS.MAIN, img: potatoes1 },
+        { step: 'Bring pot to a boil.', section: SECTIONS.MAIN },
+        { step: 'Cook uncovered until tender (about 15 minutes)', section: SECTIONS.MAIN, img: potatoes2 },
+        { step: 'Drain. Transfer to a mixing bowl.', section: SECTIONS.MAIN, img: [potatoes4, potatoes5] },
+        { step: 'In large pot, heat milk until warm.', section: SECTIONS.MAIN, img: potatoes3 },
+        { step: 'Add melted butter to the potatoes and mash.', section: SECTIONS.MAIN, img: [potatoes6, potatoes7] },
+        { step: 'Pour warm milk into the potatoes a little at a time while mashing.', section: SECTIONS.MAIN },
+        { step: 'Season with salt and pepper until desired taste.', section: SECTIONS.MAIN },
+        { step: 'Serve hot as a side dish. Top mashed potatoes with gravy and your favorite toppings.', section: SECTIONS.SERVE, img: [potatoes9, potatoes10] },
     ]
 };

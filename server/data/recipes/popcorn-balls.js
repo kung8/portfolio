@@ -46,14 +46,14 @@ module.exports = {
         { name: 'plastic wrap or sandwich ziploc bag' },
     ],
     directions: [
-        { step: 'Remove any unpopped kernels so you don\'t break your teeth.', type: SECTIONS.MAIN, img: popped },
+        { step: 'Remove any unpopped kernels so you don\'t break your teeth.', section: SECTIONS.MAIN, img: popped },
         { step: 'Prepare a baking sheet and line with parchment paper before beginning to cook.' },
-        { step: 'Over medium heat, mix together corn syrup, butter, water, powdered sugar and marshmallows in a large pot.', type: SECTIONS.MAIN, img: [unmeltedZoomed, mixed] },
-        { step: 'Stir and continue to let the mixture melt.', type: SECTIONS.MAIN, img: moreMelted },
-        { step: 'Slowly pour mixture over popcorn and mix until the popcorn is evenly coated.', type: SECTIONS.MAIN, img: pouredZoomed },
-        { step: 'Quickly grease hands with cooking spray and form the popcorn into balls.', type: SECTIONS.MAIN },
-        { step: 'Place popcorn balls on the prepared baking sheet.', type: SECTIONS.MAIN, img: rackZoomed },
-        { step: 'Wrap each ball in plastic wrap or in individual sandwich ziploc bags and keep at room temperature.', type: SECTIONS.MAIN, img: baggiesZoomed },
-        { step: 'Enjoy these sweet treats while you watch a show or movie!', type: SECTIONS.MAIN },
+        { step: 'Over medium heat, mix together corn syrup, butter, water, powdered sugar and marshmallows in a large pot.', section: SECTIONS.MAIN, img: [unmeltedZoomed, mixed] },
+        { step: 'Stir and continue to let the mixture melt.', section: SECTIONS.MAIN, img: moreMelted },
+        { step: 'Slowly pour mixture over popcorn and mix until the popcorn is evenly coated.', section: SECTIONS.MAIN, img: pouredZoomed },
+        { step: 'Quickly grease hands with cooking spray and form the popcorn into balls.', section: SECTIONS.MAIN },
+        { step: 'Place popcorn balls on the prepared baking sheet.', section: SECTIONS.MAIN, img: rackZoomed },
+        { step: 'Wrap each ball in plastic wrap or in individual sandwich ziploc bags and keep at room temperature.', section: SECTIONS.MAIN, img: baggiesZoomed },
+        { step: 'Enjoy these sweet treats while you watch a show or movie!', section: SECTIONS.MAIN },
     ]
 };

@@ -67,10 +67,10 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'Combine the marinade sauce ingredients either in a bowl or ziploc bag.', type: BEEF_SECTION, img: marinade },
-        { step: 'Add the beef to the sauce and let it marinate overnight.', type: BEEF_SECTION, img: marinating },
-        { step: 'Heat frying pan over medium heat and add 1 Tbsp vegetable and cook beef in batches.', type: SECTIONS.MAIN, img: cooking },
-        { step: 'Flip beef over and cook. Repeat for additional batch.', type: SECTIONS.MAIN },
-        { step: 'Serve over rice and top with green onion and sesame seeds.', type: SECTIONS.SERVE, img: bowl },
+        { step: 'Combine the marinade sauce ingredients either in a bowl or ziploc bag.', section: BEEF_SECTION, img: marinade },
+        { step: 'Add the beef to the sauce and let it marinate overnight.', section: BEEF_SECTION, img: marinating },
+        { step: 'Heat frying pan over medium heat and add 1 Tbsp vegetable and cook beef in batches.', section: SECTIONS.MAIN, img: cooking },
+        { step: 'Flip beef over and cook. Repeat for additional batch.', section: SECTIONS.MAIN },
+        { step: 'Serve over rice and top with green onion and sesame seeds.', section: SECTIONS.SERVE, img: bowl },
     ]
 };

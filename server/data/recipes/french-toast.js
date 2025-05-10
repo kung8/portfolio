@@ -49,10 +49,10 @@ module.exports = {
         { name: 'measuring cup' },
     ],
     directions: [
-        { step: 'Mix eggs, vanilla, cinnamon, and milk together.', type: SECTIONS.MAIN, img: [frenchToast1, frenchToast2] },
-        { step: 'Dredge bread in on both sides in batter one at a time right before frying.', type: SECTIONS.MAIN, img: [frenchToast3, frenchToast4] },
-        { step: 'Heat a frying pan over medium heat and add some butter to pan.', type: SECTIONS.MAIN },
-        { step: 'Brown each side of bread (about 30 seconds on each side).', type: SECTIONS.MAIN, img: [frenchToast5, frenchToast6] },
-        { step: 'Serve and add fruits, syrup, and all your favorite toppings.', type: SECTIONS.MAIN, img: frenchToast7 },
+        { step: 'Mix eggs, vanilla, cinnamon, and milk together.', section: SECTIONS.MAIN, img: [frenchToast1, frenchToast2] },
+        { step: 'Dredge bread in on both sides in batter one at a time right before frying.', section: SECTIONS.MAIN, img: [frenchToast3, frenchToast4] },
+        { step: 'Heat a frying pan over medium heat and add some butter to pan.', section: SECTIONS.MAIN },
+        { step: 'Brown each side of bread (about 30 seconds on each side).', section: SECTIONS.MAIN, img: [frenchToast5, frenchToast6] },
+        { step: 'Serve and add fruits, syrup, and all your favorite toppings.', section: SECTIONS.MAIN, img: frenchToast7 },
     ]
 };

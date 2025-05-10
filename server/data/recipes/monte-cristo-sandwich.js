@@ -53,14 +53,14 @@ module.exports = {
         { name: 'bowl' },
     ],
     directions: [
-        { step: 'In a bowl, combine the "Batter" ingredients until the batter is thin and runny.', type: PREP_BATTER },
-        { step: 'Toast bread and place each slice on a plate.', type: ASSEMBLE_SANDWICH },
-        { step: 'Divide the cheese and ham between the two sandwiches. Assemble the sandwiches.', type: ASSEMBLE_SANDWICH },
-        { step: 'Dip the sandwiches into the batter and flip. Repeat until the sandwiches are coated.', type: COAT_SANDWICH },
-        { step: 'Place coated sandwiches back on the plate.', type: COAT_SANDWICH },
-        { step: 'Over medium heat, melt butter in a frying pan.', type: COOK_SANDWICH },
-        { step: 'Add sandwich.', type: COOK_SANDWICH },
-        { step: 'Cook until each side is browned and the cheese has melted (about 4 minutes per side).', type: COOK_SANDWICH },
-        { step: 'Serve this sandwich warm optionally topped with more cheese.', type: SECTIONS.SERVE },
+        { step: 'In a bowl, combine the "Batter" ingredients until the batter is thin and runny.', section: PREP_BATTER },
+        { step: 'Toast bread and place each slice on a plate.', section: ASSEMBLE_SANDWICH },
+        { step: 'Divide the cheese and ham between the two sandwiches. Assemble the sandwiches.', section: ASSEMBLE_SANDWICH },
+        { step: 'Dip the sandwiches into the batter and flip. Repeat until the sandwiches are coated.', section: COAT_SANDWICH },
+        { step: 'Place coated sandwiches back on the plate.', section: COAT_SANDWICH },
+        { step: 'Over medium heat, melt butter in a frying pan.', section: COOK_SANDWICH },
+        { step: 'Add sandwich.', section: COOK_SANDWICH },
+        { step: 'Cook until each side is browned and the cheese has melted (about 4 minutes per side).', section: COOK_SANDWICH },
+        { step: 'Serve this sandwich warm optionally topped with more cheese.', section: SECTIONS.SERVE },
     ]
 };

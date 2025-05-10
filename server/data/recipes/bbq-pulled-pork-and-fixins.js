@@ -66,14 +66,14 @@ module.exports = {
         { name: '2 forks' },
     ],
     directions: [
-        { step: 'Line a slow cooker with a liner to make cleaning quick.', type: SECTIONS.FILLING, img: liner },
-        { step: 'Pour the vegetable oil into the slow cooker.', type: SECTIONS.FILLING },
-        { step: 'Place roast in the slow cooker and massage the pork with the dry ingredient.', type: SECTIONS.FILLING, img: [garlic, raw, dry, mixed, dryWithPork] },
-        { step: 'Pour the wet ingredients into the slow cooker.', type: SECTIONS.FILLING, img: wet },
-        { step: 'Cover and cook on high for 5 - 6 hours (or on low for 10 - 12 hours).', type: SECTIONS.FILLING, img: covered },
-        { step: 'Shred the pork with two forks.', type: SECTIONS.FILLING, img: [beforePulled, pulled] },
-        { step: 'Return shredded pork to soak in more of the sauce.', type: SECTIONS.FILLING },
-        { step: 'Fill the brioche buns with pulled pork.', type: SECTIONS.MAIN },
-        { step: 'Serve with coleslaw, baked beans, homemade macaroni and cheese, and any other favorite fixins\'.', type: SECTIONS.MAIN, img: [plate1, plate2] },
+        { step: 'Line a slow cooker with a liner to make cleaning quick.', section: SECTIONS.FILLING, img: liner },
+        { step: 'Pour the vegetable oil into the slow cooker.', section: SECTIONS.FILLING },
+        { step: 'Place roast in the slow cooker and massage the pork with the dry ingredient.', section: SECTIONS.FILLING, img: [garlic, raw, dry, mixed, dryWithPork] },
+        { step: 'Pour the wet ingredients into the slow cooker.', section: SECTIONS.FILLING, img: wet },
+        { step: 'Cover and cook on high for 5 - 6 hours (or on low for 10 - 12 hours).', section: SECTIONS.FILLING, img: covered },
+        { step: 'Shred the pork with two forks.', section: SECTIONS.FILLING, img: [beforePulled, pulled] },
+        { step: 'Return shredded pork to soak in more of the sauce.', section: SECTIONS.FILLING },
+        { step: 'Fill the brioche buns with pulled pork.', section: SECTIONS.MAIN },
+        { step: 'Serve with coleslaw, baked beans, homemade macaroni and cheese, and any other favorite fixins\'.', section: SECTIONS.MAIN, img: [plate1, plate2] },
     ]
 };

@@ -26,9 +26,9 @@ module.exports = {
         { name: 'knife' },
     ],
     directions: [
-        { step: 'Cut and clean the celery stalks.', type: SECTIONS.MAIN },
-        { step: 'Smear some peanut butter in each cut celery.', type: SECTIONS.MAIN },
-        { step: 'Top with as many raisins on the peanut butter.', type: SECTIONS.MAIN },
-        { step: 'Enjoy this healthy, nutritious snacks. The only bugs that I would be willing to eat on a regular basis.', type: SECTIONS.MAIN, img: straight },
+        { step: 'Cut and clean the celery stalks.', section: SECTIONS.MAIN },
+        { step: 'Smear some peanut butter in each cut celery.', section: SECTIONS.MAIN },
+        { step: 'Top with as many raisins on the peanut butter.', section: SECTIONS.MAIN },
+        { step: 'Enjoy this healthy, nutritious snacks. The only bugs that I would be willing to eat on a regular basis.', section: SECTIONS.MAIN, img: straight },
     ]
 };

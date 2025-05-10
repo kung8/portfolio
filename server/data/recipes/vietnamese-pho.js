@@ -90,14 +90,14 @@ module.exports = {
         { name: 'medium pot' },
     ],
     directions: [
-        { step: 'Over medium heat, add onion and ginger in a large pot.', type: SECTIONS.BROTH, img: veggiesPot },
-        { step: 'Cook and stir occasionally (about 4 minutes).', type: SECTIONS.BROTH },
-        { step: 'Add the rest of the broth ingredients. Bring to a slow boil.', type: SECTIONS.BROTH, img: [cinnamon, sauces, broth1] },
-        { step: 'Reduce heat and simmer for 30 minutes.', type: SECTIONS.BROTH },
-        { step: 'Discard ginger, clove, cinnamon stick and onion.', type: SECTIONS.BROTH, img: broth2 },
-        { step: 'Add thin beef slices 5 or so minutes before the broth is finished. Cook until cooked to desired doneness.', type: SECTIONS.BROTH, img: [beef, broth3] },
-        { step: 'Prepare the noodles per package instructions.', type: SECTIONS.NOODLES, img: noodles },
-        { step: 'Divide the noodles into bowls and ladle soup over noodles.', type: SECTIONS.ASSEMBLE, img: [plated1, plated2] },
-        { step: 'Serve with any additional toppings and enjoy this simple delicious Vietnamese cuisine. Also this dish is pronounced \'fuh\'.', type: SECTIONS.SERVE, img: [toppings, plated4, plated5] },
+        { step: 'Over medium heat, add onion and ginger in a large pot.', section: SECTIONS.BROTH, img: veggiesPot },
+        { step: 'Cook and stir occasionally (about 4 minutes).', section: SECTIONS.BROTH },
+        { step: 'Add the rest of the broth ingredients. Bring to a slow boil.', section: SECTIONS.BROTH, img: [cinnamon, sauces, broth1] },
+        { step: 'Reduce heat and simmer for 30 minutes.', section: SECTIONS.BROTH },
+        { step: 'Discard ginger, clove, cinnamon stick and onion.', section: SECTIONS.BROTH, img: broth2 },
+        { step: 'Add thin beef slices 5 or so minutes before the broth is finished. Cook until cooked to desired doneness.', section: SECTIONS.BROTH, img: [beef, broth3] },
+        { step: 'Prepare the noodles per package instructions.', section: SECTIONS.NOODLES, img: noodles },
+        { step: 'Divide the noodles into bowls and ladle soup over noodles.', section: SECTIONS.ASSEMBLE, img: [plated1, plated2] },
+        { step: 'Serve with any additional toppings and enjoy this simple delicious Vietnamese cuisine. Also this dish is pronounced \'fuh\'.', section: SECTIONS.SERVE, img: [toppings, plated4, plated5] },
     ]
 };

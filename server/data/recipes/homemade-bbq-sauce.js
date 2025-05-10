@@ -43,8 +43,8 @@ module.exports = {
         { name: 'saucepan' },
     ],
     directions: [
-        { step: 'Combine all the ingredients in a saucepan. Whisk.', type: SECTIONS.SAUCE, img: [sauce1, sauce2] },
-        { step: 'Over medium heat, simmer for 15 to 20 minutes.', type: SECTIONS.SAUCE },
-        { step: 'Transfer to a container once the sauce has thickened and cooled.', type: SECTIONS.SAUCE },
+        { step: 'Combine all the ingredients in a saucepan. Whisk.', section: SECTIONS.SAUCE, img: [sauce1, sauce2] },
+        { step: 'Over medium heat, simmer for 15 to 20 minutes.', section: SECTIONS.SAUCE },
+        { step: 'Transfer to a container once the sauce has thickened and cooled.', section: SECTIONS.SAUCE },
     ]
 };

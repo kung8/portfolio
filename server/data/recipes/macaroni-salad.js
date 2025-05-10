@@ -50,12 +50,12 @@ module.exports = {
         { name: 'strainer' },
     ],
     directions: [
-        { step: 'Over a high heat boil water and salt in a large pot.', type: SECTIONS.MAIN },
-        { step: 'Once the water boils, add the pasta and cook for about 8 - 10 minutes or until tender.', type: SECTIONS.MAIN },
-        { step: 'Rinse the pasta under cold water and drain in colander.', type: SECTIONS.MAIN },
-        { step: 'In the mixing bowl, combine the mayo, vinegar, sugar, mustard, salt, and pepper until well mixed.', type: SECTIONS.MAIN },
-        { step: 'Then combine the onions, celery, green pepper, and pasta.', type: SECTIONS.MAIN },
-        { step: 'Best to refrigerate at least 4 hours (or even overnight).', type: SECTIONS.MAIN },
-        { step: 'Enjoy this sweet, creamy, fresh appetizer while you relax with some relaxing Hawaiian music.', type: SECTIONS.MAIN },
+        { step: 'Over a high heat boil water and salt in a large pot.', section: SECTIONS.MAIN },
+        { step: 'Once the water boils, add the pasta and cook for about 8 - 10 minutes or until tender.', section: SECTIONS.MAIN },
+        { step: 'Rinse the pasta under cold water and drain in colander.', section: SECTIONS.MAIN },
+        { step: 'In the mixing bowl, combine the mayo, vinegar, sugar, mustard, salt, and pepper until well mixed.', section: SECTIONS.MAIN },
+        { step: 'Then combine the onions, celery, green pepper, and pasta.', section: SECTIONS.MAIN },
+        { step: 'Best to refrigerate at least 4 hours (or even overnight).', section: SECTIONS.MAIN },
+        { step: 'Enjoy this sweet, creamy, fresh appetizer while you relax with some relaxing Hawaiian music.', section: SECTIONS.MAIN },
     ]
 };

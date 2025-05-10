@@ -66,23 +66,23 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine eggs and yolk.', type: CARBONARA_SAUCE, img: carbonara2 },
-        { step: 'Add parmesan and pepper. Mix.', type: CARBONARA_SAUCE, img: carbonara4 },
+        { step: 'In a mixing bowl, combine eggs and yolk.', section: CARBONARA_SAUCE, img: carbonara2 },
+        { step: 'Add parmesan and pepper. Mix.', section: CARBONARA_SAUCE, img: carbonara4 },
 
-        { step: 'Over medium-high heat, bring a pot of water to a boil.', type: COOK_PASTA },
-        { step: 'Cook the pasta to al dente (follow the instructions on package).', type: COOK_PASTA },
-        { step: 'Reserve 1 cup of pasta water to use for the sauce later. Set aside.', type: COOK_PASTA },
-        { step: 'Drain pasta.', type: COOK_PASTA },
+        { step: 'Over medium-high heat, bring a pot of water to a boil.', section: COOK_PASTA },
+        { step: 'Cook the pasta to al dente (follow the instructions on package).', section: COOK_PASTA },
+        { step: 'Reserve 1 cup of pasta water to use for the sauce later. Set aside.', section: COOK_PASTA },
+        { step: 'Drain pasta.', section: COOK_PASTA },
 
-        { step: 'Over medium-high heat, add the guanciale to a large pan.', type: COOK_GUANCIALE, img: carbonara6 },
-        { step: 'Cook for 3 to 4 minutes.', type: COOK_GUANCIALE },
-        { step: 'Add the minced garlic. Mix and cook until the guanciale becomes golden (about 1 to 2 minutes).', type: COOK_GUANCIALE, img: carbonara7 },
+        { step: 'Over medium-high heat, add the guanciale to a large pan.', section: COOK_GUANCIALE, img: carbonara6 },
+        { step: 'Cook for 3 to 4 minutes.', section: COOK_GUANCIALE },
+        { step: 'Add the minced garlic. Mix and cook until the guanciale becomes golden (about 1 to 2 minutes).', section: COOK_GUANCIALE, img: carbonara7 },
 
-        { step: 'Add pasta to the large pan. Toss to coat the pasta with the fat.', type: SECTIONS.ASSEMBLE, img: carbonara8 },
-        { step: 'Transfer the contents of the large pan into the mixing bowl.', type: SECTIONS.ASSEMBLE, img: carbonara9 },
-        { step: 'Add 1/2 cup of pasta water and stir quickly for 1 minute. The sauce should become creamy and stick to the pasta.', type: SECTIONS.ASSEMBLE, img: [carbonara10, carbonara11, carbonara12] },
+        { step: 'Add pasta to the large pan. Toss to coat the pasta with the fat.', section: SECTIONS.ASSEMBLE, img: carbonara8 },
+        { step: 'Transfer the contents of the large pan into the mixing bowl.', section: SECTIONS.ASSEMBLE, img: carbonara9 },
+        { step: 'Add 1/2 cup of pasta water and stir quickly for 1 minute. The sauce should become creamy and stick to the pasta.', section: SECTIONS.ASSEMBLE, img: [carbonara10, carbonara11, carbonara12] },
 
-        { step: 'Enjoy this authentic Italian dish topped with parsley, parmesan and pepper.', type: SECTIONS.SERVE, img: carbonara14 },
+        { step: 'Enjoy this authentic Italian dish topped with parsley, parmesan and pepper.', section: SECTIONS.SERVE, img: carbonara14 },
     ],
     notes: [
         { note: 'If the sauce is too thick, add more pasta water.' },

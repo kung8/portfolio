@@ -56,10 +56,10 @@ module.exports = {
         { name: 'serving spoons' },
     ],
     directions: [
-        { step: 'Heat up a pan over medium-high heat, and once it is hot add in the ground beef.', type: SECTIONS.MAIN },
-        { step: 'Follow the directions of the taco seasoning, typically it is adding water and the taco seasoning to the browned ground beef.', type: SECTIONS.MAIN },
-        { step: 'While the meat is cooking, you can heat up the black beans and corn in a pot with some salt over medium-high heat.', type: SECTIONS.MAIN },
-        { step: 'Once the meat is cooked and the corn and beans are hot, serve over bowls of frito chips (you could also do actual small bags of fritos, however I think that a large bag is more economical).', type: SECTIONS.MAIN },
-        { step: 'Layer your taco in a bag (or bowl) with whatever SECTIONS.toppings you want and enjoy this simple, fun party in a bag.', type: SECTIONS.MAIN },
+        { step: 'Heat up a pan over medium-high heat, and once it is hot add in the ground beef.', section: SECTIONS.MAIN },
+        { step: 'Follow the directions of the taco seasoning, typically it is adding water and the taco seasoning to the browned ground beef.', section: SECTIONS.MAIN },
+        { step: 'While the meat is cooking, you can heat up the black beans and corn in a pot with some salt over medium-high heat.', section: SECTIONS.MAIN },
+        { step: 'Once the meat is cooked and the corn and beans are hot, serve over bowls of frito chips (you could also do actual small bags of fritos, however I think that a large bag is more economical).', section: SECTIONS.MAIN },
+        { step: 'Layer your taco in a bag (or bowl) with whatever SECTIONS.toppings you want and enjoy this simple, fun party in a bag.', section: SECTIONS.MAIN },
     ]
 };

@@ -60,20 +60,20 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Beef" section ingredients.', type: MARINATE_BEEF },
-        { step: 'Let it marinate for 5 to 7 minutes.', type: MARINATE_BEEF },
+        { step: 'In a mixing bowl, combine the "Beef" section ingredients.', section: MARINATE_BEEF },
+        { step: 'Let it marinate for 5 to 7 minutes.', section: MARINATE_BEEF },
 
-        { step: 'In a small bowl, combine the "Sauce" section ingredients. Stir and set aside.', type: PREP_SAUCE },
+        { step: 'In a small bowl, combine the "Sauce" section ingredients. Stir and set aside.', section: PREP_SAUCE },
 
-        { step: 'Over medium-high heat, add 1 tablespoon of oil to a wok.', type: STIR_FRY },
-        { step: 'Add the beef. Sear both sides of the beef (about 1 to 2 minutes). Cook in batches if needed and add more between batches as needed.', type: STIR_FRY },
-        { step: 'Remove beef from pan. Set aside.', type: STIR_FRY },
-        { step: 'Add onions. Sauté for 1 minute.', type: STIR_FRY },
-        { step: 'Add garlic and tomatoes. Sauté for 1 minute.', type: STIR_FRY },
-        { step: 'Re-add the beef.', type: STIR_FRY },
-        { step: 'If you want the french fries in the sauce, add the french fries now. Or leave out if you want it to be crispy.', type: STIR_FRY },
-        { step: 'Add the sauce and combine until everything is coated.', type: STIR_FRY },
+        { step: 'Over medium-high heat, add 1 tablespoon of oil to a wok.', section: STIR_FRY },
+        { step: 'Add the beef. Sear both sides of the beef (about 1 to 2 minutes). Cook in batches if needed and add more between batches as needed.', section: STIR_FRY },
+        { step: 'Remove beef from pan. Set aside.', section: STIR_FRY },
+        { step: 'Add onions. Sauté for 1 minute.', section: STIR_FRY },
+        { step: 'Add garlic and tomatoes. Sauté for 1 minute.', section: STIR_FRY },
+        { step: 'Re-add the beef.', section: STIR_FRY },
+        { step: 'If you want the french fries in the sauce, add the french fries now. Or leave out if you want it to be crispy.', section: STIR_FRY },
+        { step: 'Add the sauce and combine until everything is coated.', section: STIR_FRY },
 
-        { step: 'Serve this delicious dish with rice and crispy french fries. Top with green onions and cilantro.', type: SECTIONS.SERVE },
+        { step: 'Serve this delicious dish with rice and crispy french fries. Top with green onions and cilantro.', section: SECTIONS.SERVE },
     ]
 };

@@ -46,11 +46,11 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', type: PREP_BAKE },
-        { step: 'Lightly grease a casserole dish.', type: PREP_BAKE },
-        { step: 'In a mixing bowl, combine all the ingredients.', type: PREP_BATTER, img: [casserole1, casserole2] },
-        { step: 'Pour batter into the casserole dish.', type: PREP_BATTER, img: casserole3 },
-        { step: 'Bake until the top is golden brown and a toothpick comes out clean (about 45 minutes).', type: BAKE, img: casserole4 },
-        { step: 'Enjoy this simple casserole and crowd pleaser.', type: SECTIONS.SERVE },
+        { step: 'Preheat the oven to 350ºF.', section: PREP_BAKE },
+        { step: 'Lightly grease a casserole dish.', section: PREP_BAKE },
+        { step: 'In a mixing bowl, combine all the ingredients.', section: PREP_BATTER, img: [casserole1, casserole2] },
+        { step: 'Pour batter into the casserole dish.', section: PREP_BATTER, img: casserole3 },
+        { step: 'Bake until the top is golden brown and a toothpick comes out clean (about 45 minutes).', section: BAKE, img: casserole4 },
+        { step: 'Enjoy this simple casserole and crowd pleaser.', section: SECTIONS.SERVE },
     ]
 };

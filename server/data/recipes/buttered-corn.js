@@ -40,11 +40,11 @@ module.exports = {
         { name: 'saucepan' },
     ],
     directions: [
-        { step: 'Over medium heat, melt butter in a saucepan.', type: SECTIONS.MAIN, img: butter },
-        { step: 'Add corn, salt and pepper. Cook for 5 to 10 minutes. Stirring occasionally.', type: SECTIONS.MAIN, img: corn },
-        { step: 'Add heavy cream. Reduce heat.', type: SECTIONS.MAIN, img: cream },
-        { step: 'Cook until sauce has reduced slightly (about 5 minutes).', type: SECTIONS.MAIN },
-        { step: 'Add honey. Cook for 2 minutes.', type: SECTIONS.MAIN, img: honey },
-        { step: 'Serve warm and enjoy this sweet appetizer.', type: SECTIONS.MAIN },
+        { step: 'Over medium heat, melt butter in a saucepan.', section: SECTIONS.MAIN, img: butter },
+        { step: 'Add corn, salt and pepper. Cook for 5 to 10 minutes. Stirring occasionally.', section: SECTIONS.MAIN, img: corn },
+        { step: 'Add heavy cream. Reduce heat.', section: SECTIONS.MAIN, img: cream },
+        { step: 'Cook until sauce has reduced slightly (about 5 minutes).', section: SECTIONS.MAIN },
+        { step: 'Add honey. Cook for 2 minutes.', section: SECTIONS.MAIN, img: honey },
+        { step: 'Serve warm and enjoy this sweet appetizer.', section: SECTIONS.MAIN },
     ]
 };

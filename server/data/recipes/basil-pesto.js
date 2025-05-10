@@ -60,10 +60,10 @@ module.exports = {
         { name: 'blender' },
     ],
     directions: [
-        { step: 'In a blender, combine pine nuts, lemon juice, garlic, sea salt, and black pepper until blended.', type: SECTIONS.SAUCE, img: [pine, pineBlended] },
-        { step: 'Add basil and oil. Blend.', type: SECTIONS.SAUCE, img: [fresh, basil, basilBlended] },
-        { step: 'Add cheese. Blend.', type: SECTIONS.SAUCE },
-        { step: 'For more smoother pesto, add more oil.', type: SECTIONS.SAUCE, img: [parmesan, parmesanBlended, bowl] },
-        { step: 'Top noodles and mix together.', type: SECTIONS.SERVE, img: [topped, mixed] },
+        { step: 'In a blender, combine pine nuts, lemon juice, garlic, sea salt, and black pepper until blended.', section: SECTIONS.SAUCE, img: [pine, pineBlended] },
+        { step: 'Add basil and oil. Blend.', section: SECTIONS.SAUCE, img: [fresh, basil, basilBlended] },
+        { step: 'Add cheese. Blend.', section: SECTIONS.SAUCE },
+        { step: 'For more smoother pesto, add more oil.', section: SECTIONS.SAUCE, img: [parmesan, parmesanBlended, bowl] },
+        { step: 'Top noodles and mix together.', section: SECTIONS.SERVE, img: [topped, mixed] },
     ]
 };

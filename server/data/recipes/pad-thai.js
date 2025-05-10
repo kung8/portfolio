@@ -100,31 +100,31 @@ module.exports = {
         { name: 'measuring spoons' },
     ],
     directions: [
-        { step: 'Over medium-high heat, melt butter in a wok.', type: COOK_CHICKEN_AND_VEGGIES, img: butter },
-        { step: 'Add chicken. Brown the chicken for a few minutes.', type: COOK_CHICKEN_AND_VEGGIES, img: [chickenPan, partialChicken] },
-        { step: 'Add garlic and bell peppers. Cook for a few minutes.', type: COOK_CHICKEN_AND_VEGGIES, img: veggiesChicken },
-        { step: 'Set aside.', type: COOK_CHICKEN_AND_VEGGIES },
+        { step: 'Over medium-high heat, melt butter in a wok.', section: COOK_CHICKEN_AND_VEGGIES, img: butter },
+        { step: 'Add chicken. Brown the chicken for a few minutes.', section: COOK_CHICKEN_AND_VEGGIES, img: [chickenPan, partialChicken] },
+        { step: 'Add garlic and bell peppers. Cook for a few minutes.', section: COOK_CHICKEN_AND_VEGGIES, img: veggiesChicken },
+        { step: 'Set aside.', section: COOK_CHICKEN_AND_VEGGIES },
 
-        { step: 'Over medium-high heat, boil water in a saucepan.', type: COOK_NOODLES, img: boilingNoodles },
-        { step: 'Add rice noodles. Cook until just barely tender (about 3 to 5 minutes). Be careful not to overcook the noodles.', type: COOK_NOODLES, img: boilingNoodles },
-        { step: 'Drain in a strainer. Rinse noodles under cold water.', type: COOK_NOODLES, img: [rinsing, noodles] },
+        { step: 'Over medium-high heat, boil water in a saucepan.', section: COOK_NOODLES, img: boilingNoodles },
+        { step: 'Add rice noodles. Cook until just barely tender (about 3 to 5 minutes). Be careful not to overcook the noodles.', section: COOK_NOODLES, img: boilingNoodles },
+        { step: 'Drain in a strainer. Rinse noodles under cold water.', section: COOK_NOODLES, img: [rinsing, noodles] },
 
-        { step: 'In a medium bowl, mix together the sauce ingredients.', type: PREP_SAUCE, img: sauce },
-        { step: 'Set aside sauce.', type: PREP_SAUCE },
+        { step: 'In a medium bowl, mix together the sauce ingredients.', section: PREP_SAUCE, img: sauce },
+        { step: 'Set aside sauce.', section: PREP_SAUCE },
 
-        { step: 'Over medium-high heat, add a little butter to the wok.', type: COOK_EGGS },
-        { step: 'In a medium bowl, beat eggs.', type: COOK_EGGS, img: mixedEggs },
-        { step: 'Pour eggs in wok and cook. Spread the eggs and lift up the edges.', type: COOK_EGGS, img: partialEggs },
-        { step: 'Flip and cook for 30 seconds before turning off heat. Continue to let eggs cook with the residual heat.', type: COOK_EGGS, img: cookedEggs },
-        { step: 'Remove the eggs from wok and cut eggs into thin strips.', type: COOK_EGGS, img: strips },
+        { step: 'Over medium-high heat, add a little butter to the wok.', section: COOK_EGGS },
+        { step: 'In a medium bowl, beat eggs.', section: COOK_EGGS, img: mixedEggs },
+        { step: 'Pour eggs in wok and cook. Spread the eggs and lift up the edges.', section: COOK_EGGS, img: partialEggs },
+        { step: 'Flip and cook for 30 seconds before turning off heat. Continue to let eggs cook with the residual heat.', section: COOK_EGGS, img: cookedEggs },
+        { step: 'Remove the eggs from wok and cut eggs into thin strips.', section: COOK_EGGS, img: strips },
 
-        { step: 'In the wok, mix together noodles, chicken, and vegetables.', type: ASSEMBLE, img: mixed },
-        { step: 'Add eggs. Carefully mix.', type: ASSEMBLE, img: mixedNoSauce },
-        { step: 'Add sauce. Mix together.', type: ASSEMBLE, img: mixedSauce4 },
+        { step: 'In the wok, mix together noodles, chicken, and vegetables.', section: ASSEMBLE, img: mixed },
+        { step: 'Add eggs. Carefully mix.', section: ASSEMBLE, img: mixedNoSauce },
+        { step: 'Add sauce. Mix together.', section: ASSEMBLE, img: mixedSauce4 },
 
-        { step: 'Roast the peanuts in a pan.', type: ROAST_PEANUTS, img: peanuts },
-        { step: 'Set aside.', type: ROAST_PEANUTS, img: peanuts },
+        { step: 'Roast the peanuts in a pan.', section: ROAST_PEANUTS, img: peanuts },
+        { step: 'Set aside.', section: ROAST_PEANUTS, img: peanuts },
 
-        { step: 'Serve and garnish with peanuts, bean sprouts, cilantro, and squeeze fresh lime juice. Enjoy this majestic Thai dish!', type: SECTIONS.SERVE, img: plated3 },
+        { step: 'Serve and garnish with peanuts, bean sprouts, cilantro, and squeeze fresh lime juice. Enjoy this majestic Thai dish!', section: SECTIONS.SERVE, img: plated3 },
     ]
 };
