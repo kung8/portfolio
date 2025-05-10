@@ -2,6 +2,7 @@
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { TORTILLA, CAULIFLOWER, POTATO, RED_ONION, JALAPENO_PEPPER, GARLIC, CUMIN, CORIANDER, GARAM_MASALA, FENNEL_SEEDS, TURMERIC, LEMON_JUICE, FROZEN_PEAS, SEA_SALT, BLACK_PEPPER, GINGER_PUREE, VEGETABLE_BROTH, GINGER, GREEK_YOGURT, MINT_LEAF, CILANTRO, MAPLE_SYRUP, LIME_JUICE } = require('./ingredients');
 
+const TORTILLA_SECTION = 'Tortilla';
 const VEGETABLES_SECTION = 'Vegetables';
 const HERBS_SECTION = 'Herbs';
 const PEAS_SECTION = 'Peas';
@@ -33,7 +34,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...TORTILLA, amount: 8, unit: '', additionalDetails: '', section: '' },
+        { ...TORTILLA, amount: 8, unit: '', additionalDetails: '', section: TORTILLA_SECTION },
         { ...CAULIFLOWER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: VEGETABLES_SECTION },
         { ...POTATO, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: VEGETABLES_SECTION },
         { ...RED_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', section: VEGETABLES_SECTION },

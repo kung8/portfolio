@@ -5,6 +5,8 @@ const { UNSALTED_BUTTER, RED_ONION, SWEET_ONION, SALT, CHICKEN_BROTH, BEEF_BROTH
 const CARAMELIZED_ONIONS_SECTION = 'Caramelized Onions';
 const HERB_BUNDLE = 'Herb Bundle';
 const BROTH_SECTION = 'Broth';
+const SEASONING_SECTION = 'Seasoning';
+const BAKED_SECTION = 'Baked';
 
 const CARAMELIZE_ONIONS = 'Caramelize Onions';
 const BUNDLE_HERBS = 'Bundle Herbs';
@@ -50,13 +52,13 @@ module.exports = {
         { ...WORCESTERSHIRE_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BROTH_SECTION },
 
 
-        { ...BALSAMIC_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: '' },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: '' },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: '' },
-        { ...FRENCH_BREAD, amount: 4, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: '' },
-        { ...GRUYERE_CHEESE, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'room-temperature', section: '' },
-        { ...ASIAGO_CHEESE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room-temperature', section: '' },
-        { ...PAPRIKA, amount: 4, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: '' },
+        { ...BALSAMIC_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASONING_SECTION },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SEASONING_SECTION },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SEASONING_SECTION },
+        { ...FRENCH_BREAD, amount: 4, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: BAKED_SECTION },
+        { ...GRUYERE_CHEESE, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'room-temperature', section: BAKED_SECTION },
+        { ...ASIAGO_CHEESE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room-temperature', section: BAKED_SECTION },
+        { ...PAPRIKA, amount: 4, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: BAKED_SECTION },
     ],
     appliances: [
         { name: 'stove' },

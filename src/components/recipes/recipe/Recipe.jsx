@@ -129,14 +129,33 @@ export const Recipe = ({ match }) => {
 
                 acc[direction.type].push(newDirection);
             }
+
+            // if there are any directions without a type, add them to the 'Other' type so that I can at least display them (and I will need to add a section in the recipe)
+            if (!direction.type && !acc['Other']) acc['Other'] = [];
+            if (!direction.type && acc['Other']) {
+                const newDirection = { ...direction };
+                if (direction.video || direction.img) {
+                    newDirection.figure = figureCount;
+                    figureCount += 1;
+                }
+
+                acc['Other'].push(newDirection);
+            }
             return acc;
         }, {});
 
         const finalDirections = [];
 
         for (const key in separatedDirections) {
+            if (key === 'Other') continue;
             const directions = separatedDirections[key];
             finalDirections.push([key, directions]);
+        }
+
+        // add the 'Other' section at the end
+        if (separatedDirections['Other']) {
+            const otherIngredients = separatedDirections['Other'];
+            finalDirections.push(['Other', otherIngredients]);
         }
 
         return finalDirections;

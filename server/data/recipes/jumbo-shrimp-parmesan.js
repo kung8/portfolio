@@ -3,6 +3,9 @@ const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS,
 const { SHRIMP, OLIVE_OIL, GARLIC, SALT, BLACK_PEPPER, BREADCRUMBS, PARMESAN_CHEESE, UNSALTED_BUTTER, LEMON } = require('./ingredients');
 
 const MARINADE_SECTION = 'Marinade';
+const DREDGING_STATION = 'Dredging Station';
+const BAKING_SECTION = 'Baking';
+
 const MARINATE_SHRIMP = 'Marinate shrimp';
 const COOK_SHRIMP = 'Cook shrimp';
 
@@ -35,10 +38,10 @@ module.exports = {
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: MARINADE_SECTION },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: MARINADE_SECTION },
 
-        { ...BREADCRUMBS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...PARMESAN_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: '' },
-        { ...LEMON, amount: 1, unit: '', additionalDetails: 'wedged', section: '' },
+        { ...BREADCRUMBS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DREDGING_STATION },
+        { ...PARMESAN_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DREDGING_STATION },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BAKING_SECTION },
+        { ...LEMON, amount: 1, unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         { name: 'oven' },

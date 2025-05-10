@@ -15,7 +15,7 @@ const meatball15 = '../assets/Products/swedish-meatball-15.jpeg';
 const meatball16 = '../assets/Products/swedish-meatball-16.jpeg';
 const meatball17 = '../assets/Products/swedish-meatball-17.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { BREADCRUMBS, HEAVY_CREAM, UNSALTED_BUTTER, YELLOW_ONION, GROUND_BEEF, GROUND_PORK, EGG, BROWN_SUGAR, SALT, BLACK_PEPPER, NUTMEG, ALLSPICE, GROUND_GINGER, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, BEEF_BROTH, SOUR_CREAM } = require('./ingredients');
 
 const PREP_OVEN = 'Prep Oven';
@@ -24,6 +24,8 @@ const SWEDISH_MEATBALLS = 'Swedish Meatballs';
 const PAN_FRY_MEATBALLS = 'Pan Fry Meatballs';
 const BAKING = 'Baking';
 const GRAVY_SECTION = 'Gravy Section';
+
+const MAKE_GRAVY = 'Make Gravy';
 
 module.exports = {
     cardName: 'Swedish Meatballs',
@@ -62,9 +64,9 @@ module.exports = {
 
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PAN_FRY_MEATBALLS },
         { ...CHICKEN_BROTH, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BAKING },
-        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'or as needed', section: '' },
-        { ...BEEF_BROTH, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'or as needed', section: '' },
-        { ...SOUR_CREAM, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: '' },
+        { ...ALL_PURPOSE_FLOUR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'or as needed', section: GRAVY_SECTION },
+        { ...BEEF_BROTH, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'or as needed', section: GRAVY_SECTION },
+        { ...SOUR_CREAM, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: GRAVY_SECTION },
     ],
     appliances: [
         { name: 'stove' },
@@ -96,11 +98,12 @@ module.exports = {
         { step: 'Add chicken broth and cover with aluminum foil.', type: BAKING, img: [meatball15, meatball14] },
         { step: 'Bake until meatballs are tender (about 40 minutes).', type: BAKING, img: meatball16 },
         { step: 'Transfer meatballs to a serving dish.', type: BAKING },
-        { step: 'Pour drippings from the baking dish into a saucepan.', type: GRAVY_SECTION },
-        { step: 'Over medium heat, whisk in flour.', type: GRAVY_SECTION },
-        { step: 'Add beef broth and whisk. Add more beef broth until there is about 2 1/2 cups of gravy.', type: GRAVY_SECTION },
-        { step: 'Let the gravy simmer while stirring constantly until it has thickened (about 5 minutes).', type: GRAVY_SECTION },
-        { step: 'Right before serving, stir in sour cream, salt and pepper.', type: GRAVY_SECTION },
+        
+        { step: 'Pour drippings from the baking dish into a saucepan.', type: MAKE_GRAVY },
+        { step: 'Over medium heat, whisk in flour.', type: MAKE_GRAVY },
+        { step: 'Add beef broth and whisk. Add more beef broth until there is about 2 1/2 cups of gravy.', type: MAKE_GRAVY },
+        { step: 'Let the gravy simmer while stirring constantly until it has thickened (about 5 minutes).', type: MAKE_GRAVY },
+        { step: 'Right before serving, stir in sour cream, salt and pepper.', type: MAKE_GRAVY },
         { step: 'Serve the gravy sauce over the meatballs and enjoy!', type: SECTIONS.SERVE },
     ]
 };

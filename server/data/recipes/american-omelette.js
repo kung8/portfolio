@@ -7,7 +7,7 @@ const aerial = '../assets/Products/american-omelette-plated-aerial.jpeg';
 const halved = '../assets/Products/american-omelette-plated-halved.jpeg';
 const moreCookedZoomed = '../assets/Products/american-omelette-plated-more-cooked-zoomed.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
     EGG,
     SALT,
@@ -25,6 +25,10 @@ const {
 const FLIPPING_METHOD = 'Flipping Method';
 const FOLDING_METHOD = 'Folding Method';
 
+const OMELETTE_SECTION = 'Omelette';
+const FILLING_SECTION = 'Filling';
+const BUTTER_SECTION = 'Butter';
+
 module.exports = {
     cardName: 'American Omelette',
     name: 'American Omelette',
@@ -41,17 +45,17 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     separated: true,
     ingredients: [
-        { ...EGG, amount: 2, unit: '', additionalDetails: '', optional: false },
-        { ...WATER, amount: '', unit: '', additionalDetails: 'cold', optional: false },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
-        { ...YELLOW_ONION, amount: 1/4, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', optional: false },
-        { ...RED_BELL_PEPPER, amount: 1/3, unit: '', additionalDetails: 'diced', optional: false },
-        { ...MUSHROOM, amount: 5, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'chopped', optional: true },
-        { ...ROMA_TOMATO, amount: 1/4, unit: '', additionalDetails: 'diced', optional: false },
-        { ...COOKED_HAM, amount: 1, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'diced', optional: false },
-        { ...BASIL, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
-        { ...UNSALTED_BUTTER, amount: 1/2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', optional: false, section: OMELETTE_SECTION },
+        { ...WATER, amount: '', unit: '', additionalDetails: 'cold', optional: false, section: OMELETTE_SECTION },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false, section: OMELETTE_SECTION },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false, section: OMELETTE_SECTION },
+        { ...YELLOW_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', optional: false, section: FILLING_SECTION },
+        { ...RED_BELL_PEPPER, amount: 1 / 3, unit: '', additionalDetails: 'diced', optional: false, section: FILLING_SECTION },
+        { ...MUSHROOM, amount: 5, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'chopped', optional: false, section: FILLING_SECTION },
+        { ...ROMA_TOMATO, amount: 1 / 4, unit: '', additionalDetails: 'diced', optional: false, section: FILLING_SECTION },
+        { ...COOKED_HAM, amount: 1, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'diced', optional: false, section: FILLING_SECTION },
+        { ...BASIL, amount: '', unit: '', additionalDetails: 'to taste', optional: false, section: FILLING_SECTION },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false, section: BUTTER_SECTION },
     ],
     appliances: [
         { name: 'stove' },

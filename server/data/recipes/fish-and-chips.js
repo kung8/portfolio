@@ -10,6 +10,7 @@ const { COD_FISH, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, GARLIC_POWDER, PAPRIKA,
 
 const FISH_SECTION = 'Fish';
 const BEER_BATTER_SECTION = 'Beer Batter';
+const FRYING_SECTION = 'Frying';
 
 const PREP_FISH = 'Prep Fish';
 const DEEP_FRY = 'Deep Fry';
@@ -45,7 +46,7 @@ module.exports = {
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BEER_BATTER_SECTION },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: BEER_BATTER_SECTION },
         { ...BEER, amount: 4 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BEER_BATTER_SECTION },
-        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: '' },
+        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: FRYING_SECTION },
     ],
     appliances: [
         { name: 'deep fryer or stove' },

@@ -9,7 +9,7 @@ const ice = '../assets/Products/chicken-ramen-ice-bath.jpeg';
 const noodles = '../assets/Products/chicken-ramen-noodles.jpeg';
 const rawChicken = '../assets/Products/chicken-ramen-raw-chicken.jpeg';
 const sliced = '../assets/Products/chicken-ramen-sliced.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
     CHICKEN_BREAST,
     UNSALTED_BUTTER,
@@ -26,6 +26,8 @@ const {
     DRIED_RAMEN_NOODLES,
     GREEN_ONION,
 } = require('./ingredients');
+
+const EGG_SECTION = 'Eggs';
 
 module.exports = {
     cardName: 'Chicken Ramen',
@@ -90,10 +92,10 @@ module.exports = {
         { step: 'Add chicken broth and cover. Cook until it boils.', type: SECTIONS.BROTH },
         { step: 'Remove the lid, turn down the heat, and let simmer for 5 minutes.', type: SECTIONS.BROTH },
         { step: 'Add mushrooms and salt to taste and cook for another 10 minutes.', type: SECTIONS.BROTH, img: broth },
-        { step: 'Over medium-high heat, bring a pot of water to a boil.', type: SECTIONS.EGGS },
-        { step: 'Gently lower cold eggs into the pot and let cook for 7 to 8 minutes.', type: SECTIONS.EGG, img: boiled },
-        { step: 'Prepare an ice water bath, and transfer the eggs into it once it is cooked. Leave in the bath for 5 minutes.', type: SECTIONS.EGG, img: ice },
-        { step: 'Slice the eggs in half length-wise.', type: SECTIONS.EGG, img: sliced },
+        { step: 'Over medium-high heat, bring a pot of water to a boil.', type: EGG_SECTION },
+        { step: 'Gently lower cold eggs into the pot and let cook for 7 to 8 minutes.', type: EGG_SECTION, img: boiled },
+        { step: 'Prepare an ice water bath, and transfer the eggs into it once it is cooked. Leave in the bath for 5 minutes.', type: EGG_SECTION, img: ice },
+        { step: 'Slice the eggs in half length-wise.', type: EGG_SECTION, img: sliced },
         { step: 'After the eggs are removed from the pot, place the dried noodles in the boiling water.', type: SECTIONS.NOODLES, img: noodles },
         { step: 'Cook for 2 to 3 minutes and divide into bowls.', type: SECTIONS.NOODLES },
         { step: 'Pour broth over ramen, chicken, and eggs. Top with green onions. Enjoy this upgraded ramen!', type: SECTIONS.SERVE, img: bowl },

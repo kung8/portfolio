@@ -17,6 +17,7 @@ const curry15 = '../assets/Products/japanese-curry-15.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { YELLOW_ONION, CARROT, YUKON_GOLD_POTATO, GINGER, GARLIC, APPLE, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BLACK_PEPPER, VEGETABLE_OIL, CHICKEN_BROTH, HONEY, LIGHT_SOY_SAUCE, KETCHUP, JAPANESE_CURRY_MIX } = require('./ingredients');
 
+const PREP_VEGGIES = 'Prep Veggies';
 const PREP_CHICKEN = 'Prep Chicken';
 const COOK_CURRY = 'Cook Curry';
 
@@ -66,7 +67,7 @@ module.exports = {
         { name: 'ladle' },
     ],
     directions: [
-        { step: 'Prep the vegetables, chicken and aromatics.', type: SECTIONS.PREP, img: curry2 },
+        { step: 'Prep the vegetables, chicken and aromatics.', type: PREP_VEGGIES, img: curry2 },
         { step: 'Season the sliced chicken with black pepper.', type: PREP_CHICKEN, img: curry1 },
         { step: 'Over medium heat, add vegetable oil to a large pot.', type: COOK_CURRY },
         { step: 'Add onions. Saute and stir occasionally until translucent, golden and tender (about 5 minutes). Caramelizing the onions adds flavor.', type: COOK_CURRY, img: curry3 },

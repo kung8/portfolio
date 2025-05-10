@@ -3,6 +3,9 @@ const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS,
 const { MAYONNAISE, EGG, DIJON_MUSTARD, WORCESTERSHIRE_SAUCE, HOT_SAUCE, CRAB, SALTINES, VEGETABLE_OIL, LEMON } = require('./ingredients');
 
 const SAUCE_SECTION = 'Sauce';
+const MARINADE_SECTION = 'Marinade';
+const FRYING_SECTION = 'Frying';
+
 const MARINATE_CRAB = 'Marinate Crab';
 const COOK_CRAB_CAKES = 'Cook Crab Cakes';
 
@@ -34,9 +37,9 @@ module.exports = {
         { ...DIJON_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
         { ...WORCESTERSHIRE_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
         { ...HOT_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...CRAB, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: '' },
-        { ...SALTINES, amount: 20, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'crushed', section: '' },
-        { ...VEGETABLE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...CRAB, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: MARINADE_SECTION },
+        { ...SALTINES, amount: 20, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'crushed', section: MARINADE_SECTION },
+        { ...VEGETABLE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FRYING_SECTION },
         { ...LEMON, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
