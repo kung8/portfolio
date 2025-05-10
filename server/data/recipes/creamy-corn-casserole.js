@@ -1,15 +1,20 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const casserole1 = '../assets/Products/corn-casserole-1.jpeg';
+const casserole2 = '../assets/Products/corn-casserole-2.jpeg';
+const casserole3 = '../assets/Products/corn-casserole-3.jpeg';
+const casserole4 = '../assets/Products/corn-casserole-4.jpeg';
+const casserole5 = '../assets/Products/corn-casserole-5.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { CANNED_SWEET_CORN, CANNED_CREAMED_CORN, CORNBREAD_MIX, SOUR_CREAM, UNSALTED_BUTTER, EGG } = require('./ingredients');
 
 const PREP_BAKE = 'Prep Bake';
 const PREP_BATTER = 'Prep Batter';
+const BAKE = 'Bake';
 
 module.exports = {
-    wip: true,
     cardName: 'Creamy Corn Casserole',
     name: 'Creamy Corn Casserole',
-    img: '',
+    img: casserole5,
     recipeAuthor: '',
     recipeFinder: 'Samantha Pham',
     available: true,
@@ -43,9 +48,9 @@ module.exports = {
     directions: [
         { step: 'Preheat the oven to 350ºF.', type: PREP_BAKE },
         { step: 'Lightly grease a casserole dish.', type: PREP_BAKE },
-        { step: 'In a mixing bowl, combine all the ingredients.', type: PREP_BATTER },
-        { step: 'Pour batter into the casserole dish.', type: PREP_BATTER },
-        { step: 'Bake until the top is golden brown and a toothpick comes out clean (about 45 minutes).', type: '' },
-        { step: 'Enjoy this simple casserole and crowd pleaser.', type: '' },
+        { step: 'In a mixing bowl, combine all the ingredients.', type: PREP_BATTER, img: [casserole1, casserole2] },
+        { step: 'Pour batter into the casserole dish.', type: PREP_BATTER, img: casserole3 },
+        { step: 'Bake until the top is golden brown and a toothpick comes out clean (about 45 minutes).', type: BAKE, img: casserole4 },
+        { step: 'Enjoy this simple casserole and crowd pleaser.', type: SECTIONS.SERVE },
     ]
 };
