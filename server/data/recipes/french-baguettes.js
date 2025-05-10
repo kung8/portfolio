@@ -1,5 +1,9 @@
-// const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const baguette1 = '../assets/Products/french-baguette-1.jpeg';
+const baguette2 = '../assets/Products/french-baguette-2.jpeg';
+const baguette3 = '../assets/Products/french-baguette-3.jpeg';
+const baguette4 = '../assets/Products/french-baguette-4.jpeg';
+
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, SALT, YEAST, WATER } = require('./ingredients');
 
 const BAGUETTES = 'Baguettes';
@@ -37,10 +41,10 @@ module.exports = {
         { name: 'baguette pan' },
     ],
     directions: [
-        { step: 'In a stand mixer, combine flour and water.', type: SECTIONS.DOUGH },
-        { step: 'Let it rest for 10 minutes.', type: SECTIONS.DOUGH },
-        { step: 'Mix in salt and yeast.', type: SECTIONS.DOUGH },
-        { step: 'Knead until the dough is nice, smooth and elastic (about 10 minutes on low speed).', type: SECTIONS.DOUGH },
+        { step: 'In a stand mixer, combine flour and water.', type: SECTIONS.DOUGH, img: baguette1 },
+        { step: 'Let it rest for 10 minutes.', type: SECTIONS.DOUGH, img: baguette2 },
+        { step: 'Mix in salt and yeast.', type: SECTIONS.DOUGH, img: baguette3 },
+        { step: 'Knead until the dough is nice, smooth and elastic.', type: SECTIONS.DOUGH, img: baguette4 },
         { step: 'Cover and let it raise for 20 minutes.', type: SECTIONS.DOUGH },
         { step: 'Lightly stretch one side of the dough and fold it on itself.', type: SECTIONS.DOUGH },
         { step: 'Repeat the fold two more times every 20 minutes.', type: SECTIONS.DOUGH },
@@ -56,5 +60,8 @@ module.exports = {
         { step: 'Lower the temperature to 475ºF and bake until browned (about 19 minutes).', type: SECTIONS.BAKE },
         { step: 'Let it cool.', type: SECTIONS.BAKE },
         { step: 'Enjoy these authentic French baguette with your favorite toppings or by itself.', type: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'The original recipe suggests to use the stand mixer to knead the dough. However the dough was pretty tough so to avoid breaking your stand mixer I\'d recommend kneading it by hand.' }
     ]
 };
