@@ -2,6 +2,11 @@ const baguette1 = '../assets/Products/french-baguette-1.jpeg';
 const baguette2 = '../assets/Products/french-baguette-2.jpeg';
 const baguette3 = '../assets/Products/french-baguette-3.jpeg';
 const baguette4 = '../assets/Products/french-baguette-4.jpeg';
+const baguette5 = '../assets/Products/french-baguette-5.jpeg';
+const baguette6 = '../assets/Products/french-baguette-6.jpeg';
+const baguette7 = '../assets/Products/french-baguette-7.jpeg';
+const baguette8 = '../assets/Products/french-baguette-8.jpeg';
+const baguette9 = '../assets/Products/french-baguette-9.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, SALT, YEAST, WATER } = require('./ingredients');
@@ -9,10 +14,9 @@ const { ALL_PURPOSE_FLOUR, SALT, YEAST, WATER } = require('./ingredients');
 const BAGUETTES = 'Baguettes';
 
 module.exports = {
-    wip: true,
     cardName: 'French Baguettes',
     name: 'French Baguettes',
-    img: '',
+    img: baguette9,
     recipeAuthor: '',
     recipeFinder: 'Sam Giraud-Carrier',
     available: true,
@@ -50,13 +54,13 @@ module.exports = {
         { step: 'Repeat the fold two more times every 20 minutes.', section: SECTIONS.DOUGH },
         { step: 'Cover and let the dough double or triple in size.', section: SECTIONS.DOUGH },
         { step: 'Cut the dough into four parts while trying to not lose too much air.', section: SECTIONS.DOUGH },
-        { step: 'Lightly stretch them lengthwise and roll to become baguette shape.', section: SECTIONS.DOUGH },
+        { step: 'Lightly stretch them lengthwise and roll to become baguette shape.', section: SECTIONS.DOUGH, img: baguette5 },
         { step: 'Cover and let the dough rise for at least 45 minutes.', section: SECTIONS.DOUGH },
-        { step: 'Place a pan of water on one of the lower oven racks.', section: SECTIONS.BAKE },
+        { step: 'Place a pan of water on one of the lower oven racks.', section: SECTIONS.BAKE, img: baguette7 },
         { step: 'Preheat the oven to as hot as your oven can get.', section: SECTIONS.BAKE },
-        { step: 'Place the dough on a baguette pan.', section: SECTIONS.BAKE },
+        { step: 'Place the dough on a baguette pan.', section: SECTIONS.BAKE, img: baguette6 },
         { step: 'Add 1 more cup of water to the baking pan.', section: SECTIONS.BAKE },
-        { step: 'Immediately add the baguette pan in the oven.', section: SECTIONS.BAKE },
+        { step: 'Immediately add the baguette pan in the oven.', section: SECTIONS.BAKE, img: baguette8 },
         { step: 'Lower the temperature to 475ºF and bake until browned (about 19 minutes).', section: SECTIONS.BAKE },
         { step: 'Let it cool.', section: SECTIONS.BAKE },
         { step: 'Enjoy these authentic French baguette with your favorite toppings or by itself.', section: SECTIONS.SERVE },
