@@ -1,4 +1,7 @@
-// const example = '../assets/Products/example.jpeg';
+const bruschetta1 = '../assets/Products/bruschetta-1.jpeg';
+const bruschetta2 = '../assets/Products/bruschetta-2.jpeg';
+const bruschetta3 = '../assets/Products/bruschetta-3.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { OLIVE_OIL, CHERRY_TOMATO, BASIL_LEAF, GARLIC, SHALLOT, BALSAMIC_VINEGAR, SALT, BLACK_PEPPER, BAGUETTE } = require('./ingredients');
 
@@ -54,13 +57,13 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 375ºF.', section: BAKE_BAGUETTE },
-        { step: 'Place sliced baguette on baking sheet.', section: BAKE_BAGUETTE },
+        { step: 'Place sliced baguette on baking sheet.', section: BAKE_BAGUETTE, img: bruschetta2 },
         { step: 'Drizzle olive oil over bread (do not drench).', section: BAKE_BAGUETTE },
         { step: 'Season with salt and pepper.', section: BAKE_BAGUETTE },
         { step: 'Flip slices over and repeat with the other side.', section: BAKE_BAGUETTE },
         { step: 'Bake until golden brown and crispy (about 5 to 7 minutes on each side). Be careful not to burn them.', section: BAKE_BAGUETTE },
-        { step: 'Drain the diced tomatoes as needed. Optionally add a pinch of salt.', section: PREP_BRUSCHETTA },
-        { step: 'In a medium bowl, combine the "Bruschetta" section ingredients.', section: PREP_BRUSCHETTA },
+        { step: 'Drain the diced tomatoes as needed. Optionally add a pinch of salt.', section: PREP_BRUSCHETTA, img: bruschetta1 },
+        { step: 'In a medium bowl, combine the "Bruschetta" section ingredients.', section: PREP_BRUSCHETTA, img: bruschetta3 },
         { step: 'Top each slice with about 2 tablespoons of the bruschetta mixture.', section: ASSEMBLE },
         { step: 'Serve this appetizer immediately topped with more basil.', section: SECTIONS.SERVE },
     ]

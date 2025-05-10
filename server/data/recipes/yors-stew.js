@@ -1,4 +1,13 @@
-// const example = '../assets/Products/example.jpeg';
+const stew1 = '../assets/Products/yors-stew-1.jpeg';
+const stew2 = '../assets/Products/yors-stew-2.jpeg';
+const stew3 = '../assets/Products/yors-stew-3.jpeg';
+const stew4 = '../assets/Products/yors-stew-4.jpeg';
+const stew5 = '../assets/Products/yors-stew-5.jpeg';
+const stew6 = '../assets/Products/yors-stew-6.jpeg';
+const stew7 = '../assets/Products/yors-stew-7.jpeg';
+const stew8 = '../assets/Products/yors-stew-8.jpeg';
+const stew9 = '../assets/Products/yors-stew-9.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { VEGETABLE_OIL, POTATO, CARROT, SWEET_ONION, GARLIC, RED_BELL_PEPPER, CHICKEN_BOUILLON, RED_WINE, WATER, SOUR_CREAM, PAPRIKA, SALT, BLACK_PEPPER, EGG, HOT_DOG, FENNEL_SEEDS, PORK_BUTT, CORNSTARCH } = require('./ingredients');
 
@@ -69,13 +78,13 @@ module.exports = {
     ],
     directions: [
         { step: 'Over medium heat, heat oil in a large pot.', section: SEAR_PORK },
-        { step: 'Add pork. Brown on all sides. Remove pork.', section: SEAR_PORK },
-        { step: 'Add onion. Cook until caramelized (about 10 to 15 minutes).', section: CARAMELIZE_ONION },
+        { step: 'Add pork. Brown on all sides. Set aside pork.', section: SEAR_PORK, img: [stew1, stew2] },
+        { step: 'Add onion. Cook until caramelized (about 10 to 15 minutes).', section: CARAMELIZE_ONION, img: stew3 },
         { step: 'Add garlic. Cook until fragrant.', section: SAUTE_VEGETABLES },
-        { step: 'Add the "Vegetable" section ingredients. Saute for a few minutes.', section: SAUTE_VEGETABLES },
-        { step: 'Re-add the pork and the "Seasoning" section ingredients. Mix.', section: COOK_STEW },
+        { step: 'Add the "Vegetable" section ingredients. Saute for a few minutes.', section: SAUTE_VEGETABLES, img: stew4 },
+        { step: 'Re-add the pork and the "Seasoning" section ingredients. Mix.', section: COOK_STEW, img: [stew5, stew6] },
         { step: 'Add red wine. Deglaze the pot.', section: COOK_STEW },
-        { step: 'Add chicken bouillon and water. It should almost cover the veggies. Bring to a boil.', section: COOK_STEW },
+        { step: 'Add chicken bouillon and water. It should almost cover the veggies. Bring to a boil.', section: COOK_STEW, img: stew7 },
         { step: 'Reduce to low heat. Cover. Simmer for an hour.', section: COOK_STEW },
         { step: 'Cook until potatoes are tender. Uncover the lid a little to let steam escape.', section: COOK_STEW },
         { step: 'Let the stew reduce for 15 minutes. If you need to thicken it some more, you can add optionally add the cornstarch slurry.', section: COOK_STEW },
