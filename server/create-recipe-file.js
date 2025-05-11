@@ -214,7 +214,6 @@ const createPrompt = async () => {
             }
         },
     ]).then(async (answers) => {
-        console.log('hit the answers: ', answers);
         const template = fs.readFileSync(templateFilePath, 'utf8');
         const matchingCategories = convertValuesToKeys(CATEGORIES, answers.categories, 'CATEGORIES.');
         const matchingGenres = convertValuesToKeys(GENRES, answers.genres, 'GENRES.');

@@ -194,6 +194,7 @@ const peruvianChicken = require("./recipes/peruvian-chicken");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
 const piciPasta = require("./recipes/pici-pasta");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
+const pineappleUpsideDownCake = require("./recipes/pineapple-upside-down-cake");
 const piriPiriChickenBowl = require("./recipes/piri-piri-chicken-bowl");
 const pizza = require("./recipes/pizza");
 const poachedSalmonWithHollandaiseSauce = require("./recipes/poached-salmon-with-hollandaise-sauce");
@@ -205,6 +206,7 @@ const potRoast = require("./recipes/pot-roast");
 const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
 const ravioli = require("./recipes/ravioli");
+const redLobsterCheddarBayBiscuits = require("./recipes/red-lobster-cheddar-bay-biscuits");
 const reubenSandwich = require("./recipes/reuben-sandwich");
 const riceKrispyTreats = require("./recipes/rice-krispy-treats");
 const ricePilaf = require("./recipes/rice-pilaf");
@@ -473,6 +475,7 @@ const recipes = [
     hospitalityChicken,
     jambalaya,
     fishSticksWithTartarSauce, // TODO: find recipe
+    redLobsterCheddarBayBiscuits,
     cajunShrimp,
     jumboShrimpParmesan,
     garlicShrimp,
@@ -527,6 +530,7 @@ const recipes = [
     carrotCake,
     coffeeCake,
     peachCobbler,
+    pineappleUpsideDownCake,
     pretzel,
     peanutBrittle,
     peppermintBark,

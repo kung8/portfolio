@@ -114,6 +114,7 @@ const INGREDIENTS = {
         YEAST: {
             name: 'yeast', category: INGREDIENT_CATEGORY.BAKING, img: "https://plus.unsplash.com/premium_photo-1723489310801-ee4e5a53f68b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU3Mjg0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        YELLOW_CAKE_MIX: { name: 'yellow cake mix', category: INGREDIENT_CATEGORY.BAKING },
     },
     BEAUTY: {
         BATH_BOMB: { name: 'bath bomb', category: INGREDIENT_CATEGORY.BEAUTY },
