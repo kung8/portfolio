@@ -30,7 +30,7 @@ module.exports = {
     wip: true,
     cardName: 'Yor\'s Stew',
     name: 'Yor\'s Stew',
-    img: '',
+    img: stew9,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -90,7 +90,10 @@ module.exports = {
         { step: 'Let the stew reduce for 15 minutes. If you need to thicken it some more, you can add optionally add the cornstarch slurry.', section: COOK_STEW },
         { step: 'In a frying pan, fry eggs one at a time. Set aside once they are done.', section: FRY_EGG },
         { step: 'Along one side of each hot dog, cut ends to form tentacles.', section: COOK_HOTDOG },
-        { step: 'Brown the hotdogs in the frying pan.', section: COOK_HOTDOG },
+        { step: 'Brown the hotdogs in the frying pan.', section: COOK_HOTDOG, img: stew8 },
         { step: 'Serve each bowl of stew with one octopus hotdog and fried egg. Enjoy this Spy x Family inspired dish.', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'I think there are some potential improvements that I will try next time. The flavor was not as good as I expected. I definitely burnt it a little, when I let it simmer. I did not use the sour cream this time but do not think it would make too much of a difference. The sauce was dried out and I tried to return the sauce by reboiling the sauce on the side and re-added to the stew to avoid over softening.' }
     ]
 };
