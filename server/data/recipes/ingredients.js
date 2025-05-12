@@ -58,6 +58,7 @@ const INGREDIENTS = {
             name: 'milk chocolate', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1591798153699-4b0bd9d57e79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc0MjUzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         MILK_CHOCOLATE_CHIPS: { name: 'milk chocolate chips', category: INGREDIENT_CATEGORY.BAKING },
+        MINI_CHOCOLATE_CHIPS: { name: 'mini chocolate chips', category: INGREDIENT_CATEGORY.BAKING },
         MOLASSES: { name: 'molasses', category: INGREDIENT_CATEGORY.BAKING },
         NINE_INCH_GRAHAM_CRACKER_PIE_CRUST: { name: '9-inch graham cracker pie crust', category: INGREDIENT_CATEGORY.BAKING },
         PECANS: {
@@ -1594,6 +1595,7 @@ const INGREDIENTS = {
         CHILI_CHEESE_FRITOS: { name: 'chili cheese fritos', category: INGREDIENT_CATEGORY.SNACKS },
         CHIP_AHOY_COOKIES: { name: 'chip ahoy cookies', category: INGREDIENT_CATEGORY.SNACKS },
         CHOCOLATE_COVERED_PRETZELS: { name: 'chocolate covered pretzels', category: INGREDIENT_CATEGORY.SNACKS },
+        CHOCOLATE_INSTANT_PUDDING_MIX: { name: 'chocolate instant pudding mix', category: INGREDIENT_CATEGORY.SNACKS },
         CHOCOLATE_PUDDING_CUPS: { name: 'chocolate pudding cups', category: INGREDIENT_CATEGORY.SNACKS },
         CLARK: { name: 'clark', category: INGREDIENT_CATEGORY.SNACKS },
         CLUB_CRACKERS: { name: 'club crackers', category: INGREDIENT_CATEGORY.SNACKS },

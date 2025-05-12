@@ -171,6 +171,7 @@ const mochi = require("./recipes/mochi");
 const monteCristoSandwich = require("./recipes/monte-cristo-sandwich");
 const muddyBuddies = require("./recipes/muddy-buddies");
 const naan = require("./recipes/naan");
+const noBakeCannoliDelight = require("./recipes/no-bake-cannoli-delight");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const orangeChicken = require("./recipes/orange-chicken");
@@ -390,6 +391,7 @@ const recipes = [
     ravioli,
     italianTurkeyMeatballSpinachTortelliniSoup,
     lemonCapelliniSalad,
+    noBakeCannoliDelight,
     gelato,
 
     // SPANISH
