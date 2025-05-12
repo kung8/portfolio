@@ -405,6 +405,7 @@ const INGREDIENTS = {
         },
         CAESAR_DRESSING: { name: 'caesar dressing', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CAPER: { name: 'caper', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        CHILI_OIL: { name: 'chili oil', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CHIPOTLE_SAUCE: { name: 'chipotle sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         COOKIE_BUTTER: { name: 'cookie butter', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CORN_SYRUP: { name: 'corn syrup', category: INGREDIENT_CATEGORY.CONDIMENTS },
@@ -447,6 +448,7 @@ const INGREDIENTS = {
         MAYONNAISE: {
             name: 'mayonnaise', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://plus.unsplash.com/premium_photo-1664391870099-a7d4976fd8e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2OTkwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        MISO_PASTE: { name: 'miso paste', category: INGREDIENT_CATEGORY.CONDIMENTS },
         NANDOS_PERI_PERI_SAUCE: { name: 'nando\'s peri peri sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         NUTELLA: {
             name: 'nutella', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1607124316018-25beec6d0ab3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3MDkwfA&ixlib=rb-4.0.3&q=80&w=400"
@@ -935,6 +937,7 @@ const INGREDIENTS = {
             name: 'macaroni and cheese', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1725635594774-e9d718ee4f12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY3MzIzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         MOCHIKO: { name: 'mochiko', category: INGREDIENT_CATEGORY.GRAIN },
+        ORZO: { name: 'orzo', category: INGREDIENT_CATEGORY.GRAIN },
         PAPPARDELLE_NOODLES: { name: 'pappardelle noodles', category: INGREDIENT_CATEGORY.GRAIN },
         PENNE: {
             name: 'penne', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1705337959675-b36665191fb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY3MjkzfA&ixlib=rb-4.0.3&q=80&w=400"
@@ -1319,6 +1322,7 @@ const INGREDIENTS = {
         DATE: {
             name: 'date', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1614061811858-dde54a522f5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc4MTkyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        DILL: { name: 'dill', category: INGREDIENT_CATEGORY.PRODUCE },
         DRAGON_FRUIT: {
             name: 'dragon fruit', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1705501720577-4fe7bba7f85b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5MTIzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -1386,6 +1390,7 @@ const INGREDIENTS = {
             name: 'kiwi', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1616684000067-36952fde56ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1Mjg2fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         KUMQUAT: { name: 'kumquat', category: INGREDIENT_CATEGORY.PRODUCE },
+        LEEK: { name: 'leek', category: INGREDIENT_CATEGORY.PRODUCE },
         LEMON: {
             name: 'lemon', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1590502593747-42a996133562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcyMDg1fA&ixlib=rb-4.0.3&q=80&w=400"
         },

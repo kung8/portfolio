@@ -22,7 +22,7 @@ module.exports = {
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
-    method: [METHODS.SIMMER],
+    method: [METHODS.ROAST, METHODS.SIMMER],
     type: [TYPES.SOUP],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },

@@ -99,6 +99,7 @@ const croissants = require("./recipes/croissants");
 const dijonChicken = require("./recipes/dijon-chicken");
 const dinnerRolls = require("./recipes/dinner-rolls");
 const drunkenNoodles = require("./recipes/drunken-noodles");
+const dumplingSoup = require("./recipes/dumpling-soup");
 const eclair = require("./recipes/eclair");
 const eggCasserole = require("./recipes/egg-casserole");
 const englishScones = require("./recipes/english-scones");
@@ -152,6 +153,7 @@ const kungPaoChicken = require("./recipes/kung-pao-chicken");
 const lemonBars = require("./recipes/lemon-bars");
 const lemonCapelliniSalad = require("./recipes/lemon-capellini-salad");
 const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
+const lemonChickenOrzoSoup = require("./recipes/lemon-chicken-orzo-soup");
 const lemonChickenRamen = require("./recipes/lemon-chicken-ramen");
 const lentilSloppyJoes = require("./recipes/lentil-sloppy-joes");
 const lomoSaltado = require("./recipes/lomo-saltado");
@@ -326,6 +328,7 @@ const recipes = [
     chineseBokChoyChicken,
     cabbageStirFry,
     chineseBao,
+    dumplingSoup,
     potstickers,
     crabRangoon,
     chopSuey,
@@ -391,6 +394,7 @@ const recipes = [
     potatoGnocchi,
     ravioli,
     italianTurkeyMeatballSpinachTortelliniSoup,
+    lemonChickenOrzoSoup,
     lemonCapelliniSalad,
     noBakeCannoliDelight,
     gelato,
@@ -593,8 +597,6 @@ module.exports = recipes;
 // pumpkin - https://www.thepioneerwoman.com/food-cooking/recipes/a10399/pumpkin-soup/
 // french onion gnocchi - https://www.delish.com/cooking/recipe-ideas/a42710759/french-onion-gnocchi-soup-recipe/
 // chicken gnocchi - https://www.thepioneerwoman.com/food-cooking/recipes/a40772957/chicken-gnocchi-soup-recipe/
-// lemon chicken-orzo - https://www.thepioneerwoman.com/food-cooking/recipes/a39296200/lemon-chicken-orzo-soup-recipe/
-// dumpling - https://www.thepioneerwoman.com/food-cooking/recipes/a44190393/dumpling-soup-recipe/
 // beef stroganoff - https://www.thepioneerwoman.com/food-cooking/recipes/a103360/beef-stroganoff-soup/
 // chicken pot pie - https://www.thepioneerwoman.com/food-cooking/recipes/a61997037/chicken-pot-pie-soup-recipe/
 
