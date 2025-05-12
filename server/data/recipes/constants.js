@@ -56,6 +56,7 @@ const GENRES = {
     HAWAIIAN: 'Hawaiian',
     INDIAN: 'Indian',
     INDONESIAN: 'Indonesian',
+    IRISH: 'Irish',
     ITALIAN: 'Italian',
     JAPANESE: 'Japanese',
     KOREAN: 'Korean',

@@ -77,6 +77,7 @@ const INGREDIENTS = {
         POWDERED_SUGAR: {
             name: 'powdered sugar', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1581268497089-7a975fb491a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU5NjQyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        PUMPKIN_SEEDS: { name: 'pumpkin seeds', category: INGREDIENT_CATEGORY.BAKING },
         RICE_FLOUR: { name: 'rice flour', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU0MDcwfA&ixlib=rb-4.0.3&q=80&w=400" },
         SEMI_SWEET_CHOCOLATE_CHIPS: {
             name: 'semi-sweet chocolate chips', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1585502866757-30ae9e509e31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc0MjA5fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -345,6 +346,7 @@ const INGREDIENTS = {
         POTATO_SOUP: { name: 'potato soup', category: INGREDIENT_CATEGORY.CANNED },
         PIZZA_SAUCE: { name: 'pizza sauce', category: INGREDIENT_CATEGORY.CANNED },
         PROGRESSO: { name: 'progresso', category: INGREDIENT_CATEGORY.CANNED },
+        PUMPKIN_PUREE: { name: 'pumpkin puree', category: INGREDIENT_CATEGORY.CANNED },
         RED_CURRY_PASTE: { name: 'red curry paste', category: INGREDIENT_CATEGORY.CANNED },
         REFRIED_BEANS: { name: 'refried beans', category: INGREDIENT_CATEGORY.CANNED },
         SPLIT_PEA_SOUP: { name: 'split pea soup', category: INGREDIENT_CATEGORY.CANNED },

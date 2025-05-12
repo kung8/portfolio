@@ -133,6 +133,7 @@ const honeySesameChicken = require("./recipes/honey-sesame-chicken");
 const hospitalityChicken = require("./recipes/hospitality-chicken");
 const indianButterChicken = require("./recipes/indian-butter-chicken");
 const indianChickenTikkaMasala = require("./recipes/indian-chicken-tikka-masala");
+const irishPotatoBoxty = require("./recipes/irish-potato-boxty");
 const italianLasagna = require("./recipes/italian-lasagna");
 const italianTurkeyMeatballSpinachTortelliniSoup = require("./recipes/italian-turkey-meatball-spinach-tortellini-soup");
 const jambalaya = require("./recipes/jambalaya");
@@ -209,6 +210,7 @@ const potatoGnocchi = require("./recipes/potato-gnocchi");
 const potRoast = require("./recipes/pot-roast");
 const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
+const pumpkinSoup = require("./recipes/pumpkin-soup");
 const ravioli = require("./recipes/ravioli");
 const redLobsterCheddarBayBiscuits = require("./recipes/red-lobster-cheddar-bay-biscuits");
 const reubenSandwich = require("./recipes/reuben-sandwich");
@@ -428,6 +430,7 @@ const recipes = [
     fishAndChips,
     englishScones,
     chickenPotPie,
+    irishPotatoBoxty,
     stickyToffeePudding,
 
     // GERMAN
@@ -469,6 +472,7 @@ const recipes = [
     chickenNoodleSoup,
     broccoliCheddarSoup,
     butternutSquashSoup,
+    pumpkinSoup,
     chili,
     sauteedSquash,
     macaroniSalad,
@@ -593,7 +597,6 @@ module.exports = recipes;
 // Mochi (https://parade.com/food/two-ingredient-mochi)
 
 // SOUPS
-// pumpkin - https://www.delish.com/cooking/recipe-ideas/a45025736/pumpkin-soup-recipe/
 // pumpkin - https://www.thepioneerwoman.com/food-cooking/recipes/a10399/pumpkin-soup/
 // french onion gnocchi - https://www.delish.com/cooking/recipe-ideas/a42710759/french-onion-gnocchi-soup-recipe/
 // chicken gnocchi - https://www.thepioneerwoman.com/food-cooking/recipes/a40772957/chicken-gnocchi-soup-recipe/
@@ -608,7 +611,6 @@ module.exports = recipes;
 // creme brulee french toast - https://www.thekitchn.com/creme-brulee-french-toast-recipe-23711485
 
 // Mississippi Mud Potatoes - https://www.thekitchn.com/mississippi-mud-potatoes-recipe-23713064
-// Irish Potato Boxty - https://www.foodandwine.com/irish-potato-boxty-6422424
 // Beef and Broccoli - https://natashaskitchen.com/beef-and-broccoli/ (1.8K)
 // Beef and Broccoli - https://www.justataste.com/easy-beef-and-broccoli-recipe/ (1.2K)
 // Carrot Cake Scones - https://homeiswheretheboatis.net/2025/03/18/everybunnys-favorite-carrot-cake-scones-with-cream-cheese-glaze/
