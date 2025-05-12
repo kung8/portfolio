@@ -1497,7 +1497,7 @@ const INGREDIENTS = {
         },
         SUMMER_SQUASH: { name: 'summer squash', category: INGREDIENT_CATEGORY.PRODUCE },
         SWEET_ONION: { name: 'sweet onion', category: INGREDIENT_CATEGORY.PRODUCE },
-        SWEET_POTATOESSWEET_POTATO: { name: 'sweet potato', plural: 'sweet potatoes', category: INGREDIENT_CATEGORY.PRODUCE },
+        SWEET_POTATO: { name: 'sweet potato', plural: 'sweet potatoes', category: INGREDIENT_CATEGORY.PRODUCE },
         SWEETCORN: {
             name: 'sweetcorn', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1634467524884-897d0af5e104?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTczMDA0fA&ixlib=rb-4.0.3&q=80&w=400"
         },

@@ -39,6 +39,7 @@ const brownies2 = require("./recipes/brownies-2");
 const bulgurPilaf = require("./recipes/bulgur-pilaf");
 const butteredCorn = require("./recipes/buttered-corn");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
+const butternutSquashSoup = require("./recipes/butternut-squash-soup");
 const cabbageStirFry = require("./recipes/cabbage-stir-fry");
 const cafeRioBowl = require("./recipes/cafe-rio-bowl");
 const cajunShrimp = require("./recipes/cajun-shrimp");
@@ -463,6 +464,7 @@ const recipes = [
     potRoast,
     chickenNoodleSoup,
     broccoliCheddarSoup,
+    butternutSquashSoup,
     chili,
     sauteedSquash,
     macaroniSalad,
@@ -583,14 +585,10 @@ module.exports = recipes;
 // - Gulai Ayam Padang (just the curry itself) - https://dailycookingquest.com/gulai-ayam-padang.html
 // (This is to pour over the Ayam Goreng)
 
-// MEXICAN:
-// - Tortillas - 
-
 // Butter Toffee (https://uglydesserts.com/2025/01/24/homemade-butter-toffee/)
 // Mochi (https://parade.com/food/two-ingredient-mochi)
 
 // SOUPS
-// butternut squash - https://www.delish.com/cooking/recipe-ideas/recipes/a55386/best-roasted-butternut-squash-soup-recipe/
 // pumpkin - https://www.delish.com/cooking/recipe-ideas/a45025736/pumpkin-soup-recipe/
 // pumpkin - https://www.thepioneerwoman.com/food-cooking/recipes/a10399/pumpkin-soup/
 // french onion gnocchi - https://www.delish.com/cooking/recipe-ideas/a42710759/french-onion-gnocchi-soup-recipe/
