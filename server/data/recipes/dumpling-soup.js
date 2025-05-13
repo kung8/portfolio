@@ -1,4 +1,12 @@
-// const example = '../assets/Products/example.jpeg';
+const dumpling1 = '../assets/Products/dumpling-soup-1.jpeg';
+const dumpling2 = '../assets/Products/dumpling-soup-2.jpeg';
+const dumpling3 = '../assets/Products/dumpling-soup-3.jpeg';
+const dumpling4 = '../assets/Products/dumpling-soup-4.jpeg';
+const dumpling5 = '../assets/Products/dumpling-soup-5.jpeg';
+const dumpling6 = '../assets/Products/dumpling-soup-6.jpeg';
+const dumpling7 = '../assets/Products/dumpling-soup-7.jpeg';
+const dumpling8 = '../assets/Products/dumpling-soup-8.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { VEGETABLE_OIL, SESAME_OIL, CARROT, GREEN_ONION, GARLIC, GROUND_GINGER, CHICKEN_BROTH, DUMPLINGS, BABY_SPINACH, LIGHT_SOY_SAUCE, SRIRACHA_SAUCE, MISO_PASTE, CHILI_OIL } = require('./ingredients');
 
@@ -9,18 +17,16 @@ const SOUP_SECTION = 'Soup';
 const MAKE_SOUP = 'Make Soup';
 
 module.exports = {
-    wip: true,
     cardName: 'Dumpling Soup',
     name: 'Dumpling Soup',
-    img: '',
+    img: dumpling7,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN],
     method: [METHODS.SIMMER],
-    protein: [],
     type: [TYPES.SOUP],
     yields: { amount: 2, unit: YIELD_UNITS.QUART },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
@@ -56,21 +62,23 @@ module.exports = {
     supplies: [
         { name: 'large pot' },
         { name: 'small bowl' },
-        { name: '' },
     ],
     directions: [
         { step: 'Over medium heat, heat oils in a large pot.', section: MAKE_SOUP },
-        { step: 'Add all the "Veggies" section ingredients except the green parts of the green onions (This will be added later as a topping).', section: MAKE_SOUP },
+        { step: 'Add all the "Veggies" section ingredients except the green parts of the green onions (This will be added later as a topping).', section: MAKE_SOUP, img: dumpling1 },
         { step: 'Cook and stir until softened (about 2 to 3 minutes).', section: MAKE_SOUP },
 
-        { step: 'In a small bowl, combine the "Miso Paste Mixture" section ingredients.', section: MAKE_SOUP },
-        { step: 'Add the miso paste mixture and the broth to the pot. Bring to a boil.', section: MAKE_SOUP },
+        { step: 'In a small bowl, combine the "Miso Paste Mixture" section ingredients.', section: MAKE_SOUP, img: dumpling2 },
+        { step: 'Add the miso paste mixture and the broth to the pot. Bring to a boil.', section: MAKE_SOUP, img: dumpling3 },
 
-        { step: 'Add dumpling. Bring to a simmer. Cook until dumplings are heated through (about 3 to 5 minutes).', section: MAKE_SOUP },
+        { step: 'Add dumpling. Bring to a simmer. Cook until dumplings are heated through (about 3 to 5 minutes).', section: MAKE_SOUP, img: dumpling4 },
 
-        { step: 'Add spinach. Cook until it wilts (about 1 to 2 minutes).', section: MAKE_SOUP },
+        { step: 'Add spinach. Cook until it wilts (about 1 to 2 minutes).', section: MAKE_SOUP, img: dumpling5 },
 
-        { step: 'Add soy sauce and the green parts of the green onions.', section: MAKE_SOUP },
-        { step: 'Serve hot topped with your preferred condiments.', section: SECTIONS.SERVE },
+        { step: 'Add soy sauce and the green parts of the green onions.', section: MAKE_SOUP, img: dumpling6 },
+        { step: 'Serve hot topped with your preferred condiments.', section: SECTIONS.SERVE, img: dumpling8 },
+    ],
+    notes: [
+        { note: 'Chili oil makes it so good!' },
     ]
 };
