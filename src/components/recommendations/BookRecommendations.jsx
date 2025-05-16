@@ -127,7 +127,6 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
         if (showFilter) {
             rootId.style.overflowY = 'hidden';
             rootId.style.height = '100vh';
-            // rootId.style.height = isMobile ? 'calc(100vh - 108px)' : '100vh';
             html.style.overflowY = 'hidden';
         } else {
             rootId.style.overflowY = 'unset';
