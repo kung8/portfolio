@@ -37,9 +37,9 @@
         display: block;
     }
 
-    @media only screen and (hover: none) and (pointer: coarse) {
-        height: calc(100vh - 108px);
-    }
+    // @media only screen and (hover: none) and (pointer: coarse) {
+    //     height: calc(100vh - 108px);
+    // }
 }
 
 @keyframes in {
