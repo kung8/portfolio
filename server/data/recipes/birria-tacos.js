@@ -1,9 +1,11 @@
-// const example = '../assets/Products/example.jpeg';
+const tacos1 = '../assets/Products/birria-tacos-1.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BEEF_CHUCK_ROAST, AVOCADO_OIL, SALT, BLACK_PEPPER, RED_ONION, GARLIC, BEEF_BROTH, TOMATO_PASTE, APPLE_CIDER_VINEGAR, CUMIN, OREGANO, CINNAMON_STICK, BAY_LEAF, SMOKED_PAPRIKA, GINGER, CORIANDER, GUAJILLO_CHILI_PEPPER, CHIPOTLE_PEPPERS_IN_ADOBO, FIRE_ROASTED_DICED_TOMATOES, FLOUR_TORTILLA, LIME, CILANTRO, WHITE_ONION, OAXACAN_CHEESE } = require('./ingredients');
 
+const BEEF_SECTION = 'Beef';
 const BIRRIA_FILLING = 'Birria Filling';
 
+const COOK_BEEF = 'Cook Beef';
 const MAKE_BIRRIA_FILLING = 'Make Birria Filling';
 const ASSEMBLE_TACOS = 'Assemble Tacos';
 
@@ -29,15 +31,16 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BEEF_CHUCK_ROAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'boneless', section: BIRRIA_FILLING },
-        { ...AVOCADO_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BIRRIA_FILLING },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: BIRRIA_FILLING },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: BIRRIA_FILLING },
+        { ...AVOCADO_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
+        { ...BEEF_CHUCK_ROAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'boneless', section: BEEF_SECTION },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: BEEF_SECTION },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: BEEF_SECTION },
+        
         { ...GUAJILLO_CHILI_PEPPER, amount: 4, unit: '', additionalDetails: '', section: BIRRIA_FILLING },
         { ...CHIPOTLE_PEPPERS_IN_ADOBO, amount: '5 - 6', unit: '', additionalDetails: '', section: BIRRIA_FILLING },
         { ...RED_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'thinly sliced', section: BIRRIA_FILLING },
         { ...GARLIC, amount: 8, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'smashed', section: BIRRIA_FILLING },
-        { ...BEEF_BROTH, amount: 32, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: BIRRIA_FILLING },
+        { ...BEEF_BROTH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BIRRIA_FILLING },
         { ...TOMATO_PASTE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BIRRIA_FILLING },
         { ...FIRE_ROASTED_DICED_TOMATOES, amount: 14.5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: BIRRIA_FILLING },
         { ...APPLE_CIDER_VINEGAR, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BIRRIA_FILLING },
@@ -64,10 +67,11 @@ module.exports = {
         { name: 'pan' },
     ],
     directions: [
-        { step: 'Over high heat, add avocado oil to a pan.', section: MAKE_BIRRIA_FILLING },
-        { step: 'Generously season beef with salt and pepper.', section: MAKE_BIRRIA_FILLING },
-        { step: 'Sear both sides of the beef (about 5 - 6 minutes per side).', section: MAKE_BIRRIA_FILLING },
-        { step: 'Add beef and the rest of the ingredients to the crockpot.', section: MAKE_BIRRIA_FILLING },
+        { step: 'Over high heat, add avocado oil to a pan.', section: COOK_BEEF },
+        { step: 'Generously season beef with salt and pepper.', section: COOK_BEEF },
+        { step: 'Sear both sides of the beef (about 5 - 6 minutes per side).', section: COOK_BEEF },
+
+        { step: 'Transfer beef and the "Birria Filling" section ingredients to the crockpot.', section: MAKE_BIRRIA_FILLING, img: [tacos1] },
         { step: 'Cover and cook on low for 8 hours.', section: MAKE_BIRRIA_FILLING },
         { step: 'Transfer beef to a mixing bowl and shred with 2 forks.', section: MAKE_BIRRIA_FILLING },
         { step: 'Remove bay leaves and cinnamon stick from crockpot.', section: MAKE_BIRRIA_FILLING },
@@ -80,8 +84,7 @@ module.exports = {
         { step: 'On one half of the tortilla, add filling and fold.', section: ASSEMBLE_TACOS },
         { step: 'Over medium heat, pan fry (2 to 3 minutes).', section: ASSEMBLE_TACOS },
         { step: 'Flip and pan fry (2 to 3 minutes).', section: ASSEMBLE_TACOS },
-        { step: 'Add a ladleful of sauce to the tortilla.', section: ASSEMBLE_TACOS },
-
-        { step: 'Enjoy these simple tacos.', section: SECTIONS.SERVE },
+        
+        { step: 'Enjoy these simple tacos topped with your favorite toppings and a ladleful of sauce.', section: SECTIONS.SERVE },
     ]
 };
