@@ -26,6 +26,139 @@ module.exports = {
         // },
         {
             date: NO_DATE,
+            title: "His Majesty's Dragon",
+            author: ["Naomi Novik"],
+            source: ["Online"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Name of the Wind",
+            author: ["Patrick Rothfuss"],
+            source: ["Online"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Stormlight Archive Series",
+            author: ["Brandon Sanderson"],
+            source: ["Alo Tuaua"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Wheel of Time Series",
+            author: ["Robert Jordan"],
+            source: ["Online"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Circe",
+            author: ["Madeline Miller"],
+            source: ["Online"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "A Song of Ice and Fire Series",
+            author: ["George R.R. Martin"],
+            source: ["Online"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Tattoos on the Heart",
+            author: ["Gregory Boyle"],
+            source: ["Amy's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
             title: "Shades of Magic Series",
             author: ["V.E. Schwab"],
             source: ["Mandi's Mutual Profile"],
@@ -379,6 +512,12 @@ module.exports = {
                 ""
             ],
             quotes: [
+                {
+                    text: "If only Loran or Kieran or Matteo were here to watch my back. Someone I could trust. I'm a sheep wearing wolves' clothing in a pack of wolves.",
+                    pages: [153],
+                    thoughts: "Sometimes we feel alone even if we are surrounded by people. I thought this was a beautiful way to express that feeling.",
+                    context: "Darrow is feeling alone as he is undercover in the Golds."
+                },
                 {
                     text: "",
                     pages: [],
