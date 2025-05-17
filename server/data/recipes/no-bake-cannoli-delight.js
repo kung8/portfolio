@@ -11,8 +11,8 @@ const cannoli10 = '../assets/Products/no-bake-cannoli-delight-10.jpeg';
 const cannoli11 = '../assets/Products/no-bake-cannoli-delight-11.jpeg';
 const cannoli12 = '../assets/Products/no-bake-cannoli-delight-12.jpeg';
 const cannoli13 = '../assets/Products/no-bake-cannoli-delight-13.jpeg';
-// const cannoli14 = '../assets/Products/no-bake-cannoli-delight-14.jpeg';
-// const cannoli15 = '../assets/Products/no-bake-cannoli-delight-15.jpeg';
+const cannoli14 = '../assets/Products/no-bake-cannoli-delight-14.jpeg';
+const cannoli15 = '../assets/Products/no-bake-cannoli-delight-15.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { CREAM_CHEESE, CHOCOLATE_INSTANT_PUDDING_MIX, MILK, GRAHAM_CRACKER, WHITE_SUGAR, SALT, UNSALTED_BUTTER, HEAVY_CREAM, POWDERED_SUGAR, RICOTTA_CHEESE, ORANGE_ZEST, VANILLA_EXTRACT, MINI_CHOCOLATE_CHIPS } = require('./ingredients');
@@ -30,14 +30,13 @@ const ASSEMBLE = 'Assemble';
 const CUT = 'Cut';
 
 module.exports = {
-    wip: true,
     cardName: 'Cannoli Delight',
     name: 'No Bake Cannoli Delight',
-    img: '',
+    img: cannoli15,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.ITALIAN],
     method: [METHODS.MIX, METHODS.CHILLED],
@@ -51,8 +50,8 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHOCOLATE_INSTANT_PUDDING_MIX, amount: 3.9, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PUDDING_MIXTURE_SECTION },
-        { ...MILK, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUDDING_MIXTURE_SECTION },
+        { ...CHOCOLATE_INSTANT_PUDDING_MIX, amount: 5.9, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PUDDING_MIXTURE_SECTION },
+        { ...MILK, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUDDING_MIXTURE_SECTION },
 
         { ...GRAHAM_CRACKER, amount: 6.5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: GRAHAM_CRACKER_CRUST_SECTION },
         { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: GRAHAM_CRACKER_CRUST_SECTION },
@@ -108,10 +107,13 @@ module.exports = {
         { step: 'Evenly layer the whipped cream.', section: ASSEMBLE, img: cannoli13 },
         { step: 'Cover and chill for at least 4 hours (or overnight).', section: ASSEMBLE },
 
-        { step: 'Sprinkle the remaining chocolate chips on top.', section: CUT },
+        { step: 'Sprinkle the remaining chocolate chips on top.', section: CUT, img: cannoli14 },
         { step: 'Carefully transfer the parchment paper slab over to a cutting board.', section: CUT },
         { step: 'Cut--wiping the knife between cuts.', section: CUT },
 
         { step: 'Enjoy this layered dessert', section: SECTIONS.SERVE },
+    ], 
+    notes: [
+        { note: 'The original recipe calls for just 3.9 ounces of chocolate pudding mix. It was really tight and I had to spread it out into a really thin layer. I increased the amount of pudding mix and milk in the recipe to accommodate for a thicker layer.'}
     ]
 };
