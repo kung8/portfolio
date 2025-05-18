@@ -13,7 +13,7 @@ const plated1 = '../assets/Products/peanut-brittle-plated-1.jpeg';
 const plated2 = '../assets/Products/peanut-brittle-plated-2.jpeg';
 const rebaked = '../assets/Products/peanut-brittle-rebaked.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
-const { WHITE_SUGAR, CORN_SYRUP, UNSALTED_PEANUTS, UNSALTED_BUTTER, BAKING_SODA, VANILLA_EXTRACT, WATER } = require('./ingredients');
+const { WHITE_SUGAR, CORN_SYRUP, UNSALTED_PEANUT, UNSALTED_BUTTER, BAKING_SODA, VANILLA_EXTRACT, WATER } = require('./ingredients');
 
 module.exports = {
     cardName: 'Peanut Brittle',
@@ -38,7 +38,7 @@ module.exports = {
         { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: SECTIONS.MAIN },
         { ...CORN_SYRUP, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_PEANUTS, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_PEANUT, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...BAKING_SODA, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...VANILLA_EXTRACT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },

@@ -111,6 +111,7 @@ const frenchBaguettes = require("./recipes/french-baguettes");
 const frenchCrepe = require("./recipes/french-crepe");
 const frenchOnionSoupGratinee = require("./recipes/french-onion-soup-gratinee");
 const frenchToast = require("./recipes/french-toast");
+const frozenMudPie = require("./recipes/frozen-mud-pie");
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const garlicButter = require("./recipes/garlic-butter");
 const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
@@ -565,6 +566,7 @@ const recipes = [
     appleTart,
     applePie,
     biscoffCookiePie,
+    frozenMudPie,
     keyLimePie,
     noBakeCookie,
     muddyBuddies,

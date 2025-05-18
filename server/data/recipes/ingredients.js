@@ -52,6 +52,7 @@ const INGREDIENTS = {
             name: 'food coloring', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1543495321-12cafe49a224?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU2ODY4fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         GLUTINOUS_RICE_FLOUR: { name: 'glutinous rice flour', category: INGREDIENT_CATEGORY.BAKING },
+        HOT_FUDGE_SAUCE: { name: 'hot fudge sauce', category: INGREDIENT_CATEGORY.BAKING },
         MACADAMIA_NUT: { name: 'macadamia nut', category: INGREDIENT_CATEGORY.BAKING },
         MERINGUE_POWDER: { name: 'meringue powder', category: INGREDIENT_CATEGORY.BAKING },
         MILK_CHOCOLATE: {
@@ -89,7 +90,7 @@ const INGREDIENTS = {
             name: 'sliced almonds', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1706467583443-21c3091d37b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY3MTExfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         SPRINKLES: {
-            name: 'sprinkles', category: INGREDIENT_CATEGORY.BAKING, imig: "https://images.unsplash.com/photo-1516746924755-babd21844370?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU3MTAxfA&ixlib=rb-4.0.3&q=80&w=400"
+            name: 'sprinkles', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1516746924755-babd21844370?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU3MTAxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         SWEETENED_CONDENSED_MILK: {
             name: 'sweetened condensed milk', category: INGREDIENT_CATEGORY.BAKING, img: "https://plus.unsplash.com/premium_photo-1666174848373-eda251e3acb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDUzMTA2fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -98,8 +99,8 @@ const INGREDIENTS = {
             name: 'sweet chocolate', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1614088685112-0a760b71a3c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU0MDg2fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         TAPIOCA_STARCH: { name: 'tapioca starch', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU0MDcwfA&ixlib=rb-4.0.3&q=80&w=400" },
-        UNSALTED_PEANUTS: {
-            name: 'unsalted peanuts', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1549978113-29eb25c8177f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3NzE2fA&ixlib=rb-4.0.3&q=80&w=400"
+        UNSALTED_PEANUT: {
+            name: 'unsalted peanut', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1549978113-29eb25c8177f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3NzE2fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         VANILLA_EXTRACT: {
             name: 'vanilla extract', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1594054528740-6efcc2d13dd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU3ODg2fA&ixlib=rb-4.0.3&q=80&w=400"
