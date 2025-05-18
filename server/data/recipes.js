@@ -616,3 +616,9 @@ module.exports = recipes;
 // Carrot Cake Scones - https://homeiswheretheboatis.net/2025/03/18/everybunnys-favorite-carrot-cake-scones-with-cream-cheese-glaze/
 
 // Charlotte De Chou - https://parade.com/food/charlotte-de-chou
+// ice cream cake - https://lilluna.com/cookies-and-cream-ice-cream-cake/
+// dirty p's garlic-ginger chicken thighs - https://www.foodnetwork.com/recipes/guy-fieri/dirty-ps-garlic-ginger-chicken-thighs-recipe-2118432
+// oven baked salmon - https://www.foodnetwork.com/recipes/oven-baked-salmon-recipe-1911951
+// blueberry bagels - https://hungryhappens.net/easy-4-ingredient-blueberry-bagels-no-yeast/
+// beef ramen - https://recipesfiber.com/ground-beef-ramen-skillet/
+// cream cheese stuffed blackberry french toast - https://recipesfiber.com/cream-cheese-stuffed-blackberry-compote-french-toast/
