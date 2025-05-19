@@ -3,6 +3,9 @@ const path = require('path');
 const inquirer = require('inquirer');
 const { CATEGORIES, GENRES, METHODS, PROTEIN, TYPES, YIELD_UNITS, TIME_UNITS } = require('./data/recipes/constants');
 
+const templateFilePath = path.join(__dirname, '..', 'server', 'data', 'recipes', 'template.js');
+const recipesFilePath = path.join(__dirname, '..', 'server', 'data', 'recipes.js');
+
 const convertValuesToKeys = (obj, selectedValues, objPrefix) => {
     const selectedOptions = Object.entries(obj);
     return selectedValues.map(option => objPrefix + selectedOptions.find(([_, value]) => value === option)[0]);
@@ -13,8 +16,11 @@ const convertUnitToKey = (obj, selectedUnit, objPrefix) => {
     return objPrefix + selectedOptions.find(option => option[1].s === selectedUnit)[0];
 }
 
+const convertKebabToCamelCase = (str) => {
+    return str.replace(/-./g, (match) => match.charAt(1).toUpperCase());
+}
+
 const createPrompt = async () => {
-    const templateFilePath = path.join(__dirname, '..', 'server', 'data', 'recipes', 'template.js');
     if (!fs.existsSync(templateFilePath)) {
         console.log(`Template file ${templateFilePath} does not exist.`);
         return;
@@ -213,6 +219,18 @@ const createPrompt = async () => {
                 return true;
             }
         },
+        {
+            type: 'confirm',
+            name: 'available',
+            message: 'Is the recipe available?',
+            default: true,
+            validate: (available) => {
+                if (available !== 'y' && available !== 'n') {
+                    return 'Please enter y or n.';
+                }
+                return true;
+            }
+        },
     ]).then(async (answers) => {
         const template = fs.readFileSync(templateFilePath, 'utf8');
         const matchingCategories = convertValuesToKeys(CATEGORIES, answers.categories, 'CATEGORIES.');
@@ -246,9 +264,25 @@ const createPrompt = async () => {
             .replace(/{{label}}/g, answers.label)
             .replace(/{{link}}/g, answers.link)
             .replace(/'{{separated}}'/g, answers.separated)
+            .replace(/'{{available}}'/g, answers.available)
 
+        // create the new recipe file
         fs.writeFileSync(filePath, customizedTemplate, 'utf8');
-        console.log(`File ${answers.fileName}.js has been created.`);
+
+        // update the recipes.js file to import the new recipe file
+        const recipesFileContent = fs.readFileSync(recipesFilePath, 'utf8');
+        const newImport = `const ${convertKebabToCamelCase(answers.fileName)} = require('./recipes/${answers.fileName}.js');\n`;
+        const endOfImportsIndex = recipesFileContent.indexOf('// END OF IMPORTS');
+        const updatedRecipesFileContent = recipesFileContent.slice(0, endOfImportsIndex) + newImport + recipesFileContent.slice(endOfImportsIndex);
+        fs.writeFileSync(recipesFilePath, updatedRecipesFileContent, 'utf8');
+
+        // alphabetically sort the imports in the recipes.js file
+        const endOfImportsIndex2 = updatedRecipesFileContent.indexOf('// END OF IMPORTS');
+        const importsSection = updatedRecipesFileContent.slice(0, endOfImportsIndex2);
+        const sortedImports = importsSection.split('\n').sort().filter(line => !!line).join('\n') + '\n\n';
+        const updatedRecipesFileContent2 = sortedImports + updatedRecipesFileContent.slice(endOfImportsIndex2);
+        fs.writeFileSync(recipesFilePath, updatedRecipesFileContent2, 'utf8');
+        console.log(`File ${answers.fileName}.js has been created and added to the imports in recipes.js.`);
     })
 }
 

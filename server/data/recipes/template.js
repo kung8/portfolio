@@ -9,7 +9,7 @@ module.exports = {
     img: '',
     recipeAuthor: '{{recipeAuthor}}',
     recipeFinder: '{{recipeFinder}}',
-    available: false,
+    available: '{{available}}',
     recommended: false,
     category: '{{category}}',
     genre: '{{genre}}',

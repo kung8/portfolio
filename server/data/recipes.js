@@ -8,6 +8,7 @@ const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
 const bakedChicken = require("./recipes/baked-chicken");
 const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
 const bakedMacaroniAndCheese = require("./recipes/baked-macaroni-and-cheese");
+const bakedRitzBites = require('./recipes/baked-ritz-bites.js');
 const bakedZiti = require("./recipes/baked-ziti");
 const balsamicTomatoBruschetta = require("./recipes/balsamic-tomato-bruschetta");
 const bananaBread = require("./recipes/banana-bread");
@@ -51,6 +52,7 @@ const carbonara = require("./recipes/carbonara");
 const carrotCake = require("./recipes/carrot-cake");
 const cheeseballs = require("./recipes/cheeseballs");
 const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
+const cherryAndCreamCheeseKolaches = require("./recipes/cherry-and-cream-cheese-kolaches");
 const cherryAndDarkChocolateCrostata = require("./recipes/cherry-and-dark-chocolate-crostata");
 const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenBiryani = require("./recipes/chicken-biryani");
@@ -71,10 +73,10 @@ const chineseBao = require("./recipes/chinese-bao");
 const chineseBokChoyChicken = require("./recipes/chinese-bok-choy-chicken");
 const chineseBroccoliBeef = require("./recipes/chinese-broccoli-beef");
 const chineseCashewChicken = require("./recipes/chinese-cashew-chicken");
+const chineseFriedRice = require("./recipes/chinese-fried-rice");
 const chineseGingerChicken = require("./recipes/chinese-ginger-chicken");
 const chineseGreenBeanBeef = require("./recipes/chinese-green-bean-beef");
 const chineseLoMeinNoodles = require("./recipes/chinese-lo-mein-noodles");
-const chineseFriedRice = require("./recipes/chinese-fried-rice");
 const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
 const chineseSweetAndSourPork = require("./recipes/chinese-sweet-and-sour-pork");
 const chiveCakes = require("./recipes/chive-cakes");
@@ -204,11 +206,11 @@ const pineappleUpsideDownCake = require("./recipes/pineapple-upside-down-cake");
 const piriPiriChickenBowl = require("./recipes/piri-piri-chicken-bowl");
 const pizza = require("./recipes/pizza");
 const poachedSalmonWithHollandaiseSauce = require("./recipes/poached-salmon-with-hollandaise-sauce");
-const popcornBalls = require("./recipes/popcorn-balls");
 const popTarts = require("./recipes/pop-tarts");
+const popcornBalls = require("./recipes/popcorn-balls");
 const porkMilanese = require("./recipes/pork-milanese");
-const potatoGnocchi = require("./recipes/potato-gnocchi");
 const potRoast = require("./recipes/pot-roast");
+const potatoGnocchi = require("./recipes/potato-gnocchi");
 const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
 const pumpkinSoup = require("./recipes/pumpkin-soup");
@@ -219,8 +221,8 @@ const riceKrispyTreats = require("./recipes/rice-krispy-treats");
 const ricePilaf = require("./recipes/rice-pilaf");
 const roastedPorkBelly = require("./recipes/roasted-pork-belly");
 const roastedTurkey = require("./recipes/roasted-turkey");
-const rosemaryLemonade = require("./recipes/rosemary-lemonade");
 const rosemaryFries = require("./recipes/rosemary-fries");
+const rosemaryLemonade = require("./recipes/rosemary-lemonade");
 const russianBeefStroganoff = require("./recipes/russian-beef-stroganoff");
 const samosa = require("./recipes/samosa");
 const samosaBurritos = require("./recipes/samosa-burritos");
@@ -242,7 +244,6 @@ const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
 const sushi = require("./recipes/sushi");
 const swedishMeatballs = require("./recipes/swedish-meatballs");
-const cherryAndCreamCheeseKolaches = require("./recipes/cherry-and-cream-cheese-kolaches");
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tandooriChicken = require("./recipes/tandoori-chicken");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
@@ -261,6 +262,8 @@ const waffles = require("./recipes/waffles");
 const wrap = require("./recipes/wrap");
 const yellowCurry = require("./recipes/yellow-curry");
 const yorsStew = require("./recipes/yors-stew");
+
+// END OF IMPORTS
 
 const recipes = [
     //////////////////////////////////////////////////////////////////////// ASIAN ///////////////////////////////////////////////////////////////////////  
@@ -514,6 +517,7 @@ const recipes = [
     cheeseballs,
     garlicBreadsticks,
     fancyLunchables,
+    bakedRitzBites,
     turkeyRollUps,
     wrap,
     parfait,

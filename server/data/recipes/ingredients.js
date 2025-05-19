@@ -1833,6 +1833,7 @@ const INGREDIENTS = {
             name: 'curry powder', category: INGREDIENT_CATEGORY.SPICES, img: "https://images.unsplash.com/photo-1615485500834-bc10199bc727?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU4NTQxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         DASHI: { name: 'dashi', category: INGREDIENT_CATEGORY.SPICES },
+        EVERYTHING_BAGEL_SEASONING: { name: 'everything bagel seasoning', category: INGREDIENT_CATEGORY.SPICES },
         FENNEL_SEEDS: {
             name: 'fennel seeds', category: INGREDIENT_CATEGORY.SPICES, img: "https://images.unsplash.com/photo-1587493053604-f943541023aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU4NjE5fA&ixlib=rb-4.0.3&q=80&w=400"
         },
