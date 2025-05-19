@@ -587,6 +587,7 @@ const INGREDIENTS = {
         ALMOND_MILK: {
             name: 'almond milk', category: INGREDIENT_CATEGORY.DAIRY, img: "https://plus.unsplash.com/premium_photo-1693118931226-54167a9c6c12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY3MDMwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        AMERICAN_CHEESE: { name: 'american cheese', category: INGREDIENT_CATEGORY.DAIRY },
         ASIAGO_CHEESE: { name: 'asiago cheese', category: INGREDIENT_CATEGORY.DAIRY },
         BISCUITS: {
             name: 'biscuits', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1522237825450-a0c44eecddb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTgxMDM2fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -750,6 +751,7 @@ const INGREDIENTS = {
         SALAMI: { name: 'salami', category: INGREDIENT_CATEGORY.DELI },
         SAUSAGE: { name: 'sausage', category: INGREDIENT_CATEGORY.DELI },
         SAUSAGE_LINK: { name: 'sausage link', category: INGREDIENT_CATEGORY.DELI },
+        SAUSAGE_PATTY: { name: 'sausage patty', category: INGREDIENT_CATEGORY.DELI },
         SUMMER_SAUSAGE: { name: 'summer sausage', category: INGREDIENT_CATEGORY.DELI },
     },
     FROZEN: {

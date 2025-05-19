@@ -226,6 +226,7 @@ const rosemaryLemonade = require("./recipes/rosemary-lemonade");
 const russianBeefStroganoff = require("./recipes/russian-beef-stroganoff");
 const samosa = require("./recipes/samosa");
 const samosaBurritos = require("./recipes/samosa-burritos");
+const sausageMcGriddle = require('./recipes/sausage-mcgriddle.js');
 const sauteedSquash = require("./recipes/sauteed-squash");
 const scrambledEggs = require("./recipes/scrambled-eggs");
 const shrimpPaella = require("./recipes/shrimp-paella");
@@ -533,6 +534,7 @@ const recipes = [
     breakfastSausageBalls,
     breakfastBurrito,
     breakfastSandwich,
+    sausageMcGriddle,
     reubenSandwich,
     blt,
     popTarts,
