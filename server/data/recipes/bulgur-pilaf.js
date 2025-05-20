@@ -50,7 +50,7 @@ module.exports = {
         { ...CUMIN, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BULGUR_PILAF_SECTION },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BULGUR_PILAF_SECTION },
         { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BULGUR_PILAF_SECTION },
-        { ...CHICKPEA, amount: 1, unit: '', additionalDetails: 'rinsed and drained', section: BULGUR_PILAF_SECTION },
+        { ...CHICKPEA, amount: 15, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'rinsed and drained', section: BULGUR_PILAF_SECTION },
         { ...CHICKEN_BROTH, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BULGUR_PILAF_SECTION },
 
         { ...PARSLEY, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'finely chopped', section: SECTIONS.TOPPINGS },
@@ -79,7 +79,7 @@ module.exports = {
         { step: 'Bake until golden brown (about 18 minutes).', section: COOK_CHICKEN },
         { step: 'Transfer to serving plates.', section: COOK_CHICKEN },
 
-        { step: 'Over medium heat, heat oil in a l5targe pot.', section: COOK_BULGUR_PILAF },
+        { step: 'Over medium heat, heat oil in a large pot.', section: COOK_BULGUR_PILAF },
         { step: 'Add onions. Cook until softened and translucent (about 5 to 7 minutes).', section: COOK_BULGUR_PILAF },
         { step: 'Add tomato paste, tomatoes, and green bell peppers. Cook until fragrant (about 2 to 3 minutes).', section: COOK_BULGUR_PILAF },
         { step: 'Add bulgur wheat, cumin, salt and pepper. Mix until the bulgur wheat is coated in tomato paste (about 2 to 3 minutes).', section: COOK_BULGUR_PILAF },
@@ -88,6 +88,6 @@ module.exports = {
         { step: 'Let the bulgur wheat absorb the broth (about 10 minutes).', section: COOK_BULGUR_PILAF },
         { step: 'Fluff with a fork.', section: COOK_BULGUR_PILAF },
 
-        { step: 'Serve the bulgur pilaf with the chicken topped with ', section: SECTIONS.SERVE },
+        { step: 'Serve the bulgur pilaf with the chicken topped with parsley.', section: SECTIONS.SERVE },
     ]
 };
