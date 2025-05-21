@@ -51,6 +51,7 @@ const caramelizedOnion = require("./recipes/caramelized-onion");
 const carbonara = require("./recipes/carbonara");
 const carrotCake = require("./recipes/carrot-cake");
 const cheeseballs = require("./recipes/cheeseballs");
+const cheeseburgerSpringRolls = require('./recipes/cheeseburger-spring-rolls.js');
 const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
 const cherryAndCreamCheeseKolaches = require("./recipes/cherry-and-cream-cheese-kolaches");
 const cherryAndDarkChocolateCrostata = require("./recipes/cherry-and-dark-chocolate-crostata");
@@ -519,6 +520,7 @@ const recipes = [
     southwestSalad, // TODO: find recipe
     cheeseballs,
     garlicBreadsticks,
+    cheeseburgerSpringRolls,
     fancyLunchables,
     bakedRitzBites,
     turkeyRollUps,

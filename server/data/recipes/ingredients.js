@@ -464,6 +464,9 @@ const INGREDIENTS = {
             name: 'creamy peanut butter', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1615110250484-e8c3b151b957?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3MDgzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         PICANTE_SAUCE: { name: 'picante sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        PICKLE_JUICE: {
+            name: 'pickle juice', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1634467524884-897d0af5e104?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTczMDA0fA&ixlib=rb-4.0.3&q=80&w=400"
+        },
         PICKLES: {
             name: 'pickles', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://plus.unsplash.com/premium_photo-1675731118182-8a39012cdd3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3NjAxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -958,6 +961,7 @@ const INGREDIENTS = {
         SPAGHETTI_NOODLES: {
             name: 'spaghetti noodles', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1705409892694-39677f828078?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY3MzY3fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        SPRING_ROLL_WRAPPER: { name: 'spring roll wrapper', category: INGREDIENT_CATEGORY.GRAIN },
         SPRING_ROLL_RICE_WRAPPERS: { name: 'spring roll rice wrappers', category: INGREDIENT_CATEGORY.GRAIN },
         SUSHI_RICE: {
             name: 'sushi rice', category: INGREDIENT_CATEGORY.GRAIN, img: "https://images.unsplash.com/photo-1613758235256-43a7bdc21d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU5OTI4fA&ixlib=rb-4.0.3&q=80&w=400"
