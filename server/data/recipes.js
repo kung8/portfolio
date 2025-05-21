@@ -138,6 +138,7 @@ const honeySesameChicken = require("./recipes/honey-sesame-chicken");
 const hospitalityChicken = require("./recipes/hospitality-chicken");
 const indianButterChicken = require("./recipes/indian-butter-chicken");
 const indianChickenTikkaMasala = require("./recipes/indian-chicken-tikka-masala");
+const indianDosa = require('./recipes/indian-dosa.js');
 const irishPotatoBoxty = require("./recipes/irish-potato-boxty");
 const italianLasagna = require("./recipes/italian-lasagna");
 const italianTurkeyMeatballSpinachTortelliniSoup = require("./recipes/italian-turkey-meatball-spinach-tortellini-soup");
@@ -277,7 +278,7 @@ const recipes = [
     yellowCurry,
     chiveCakes,
     mangoStickyRice,
-    thaiMassamanCurry, // TODO: find recipe
+    thaiMassamanCurry, // TODO: finish adding recipe
     coconutChicken,
     drunkenNoodles,
 
@@ -287,6 +288,7 @@ const recipes = [
     indianChickenTikkaMasala,
     tandooriChicken,
     naan,
+    indianDosa, // TODO: finish adding recipe
     samosa,
     samosaBurritos,
     mangoChutney,
@@ -635,10 +637,7 @@ module.exports = recipes;
 // beef ramen - https://recipesfiber.com/ground-beef-ramen-skillet/
 // cream cheese stuffed blackberry french toast - https://recipesfiber.com/cream-cheese-stuffed-blackberry-compote-french-toast/
 // apple pie cake mix - https://www.allrecipes.com/recipe/244777/apple-pie-cake-mix-cake/
-// cheeseburger spring rolls - https://dishedbykate.com/cheeseburger-spring-rolls/
 // spring rolls - https://www.recipetineats.com/spring-rolls/
-// dosa - https://www.indianhealthyrecipes.com/dosa-recipe-dosa-batter/
-// massaman curry - https://www.favfamilyrecipes.com/chicken-massaman-curry/
 // thai sesame cashew chicken - https://www.halfbakedharvest.com/sesame-cashew-chicken/
 // mozzarella sticks - https://www.food.com/recipe/mozzarella-sticks-30977
 // sausage balls - https://www.food.com/recipe/sausage-balls-46078
