@@ -125,6 +125,7 @@ const graveyardDessert = require("./recipes/graveyard-dessert");
 const greenBeanAlmondine = require("./recipes/green-bean-almondine");
 const greenBeanCasserole = require("./recipes/green-bean-casserole");
 const grilledCheeseSandwich = require("./recipes/grilled-cheese-sandwich");
+const groundBeefRamen = require('./recipes/ground-beef-ramen.js');
 const guacamole = require("./recipes/guacamole");
 const hamburger = require("./recipes/hamburger");
 const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
@@ -305,6 +306,7 @@ const recipes = [
     oyakodon,
     lemonChickenRamen,
     chickenRamen,
+    groundBeefRamen,
     udonNoodleSoup,
     mochi,
     yorsStew,
