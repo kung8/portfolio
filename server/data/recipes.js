@@ -630,3 +630,15 @@ module.exports = recipes;
 // blueberry bagels - https://hungryhappens.net/easy-4-ingredient-blueberry-bagels-no-yeast/
 // beef ramen - https://recipesfiber.com/ground-beef-ramen-skillet/
 // cream cheese stuffed blackberry french toast - https://recipesfiber.com/cream-cheese-stuffed-blackberry-compote-french-toast/
+// apple pie cake mix - https://www.allrecipes.com/recipe/244777/apple-pie-cake-mix-cake/
+// cheeseburger spring rolls - https://dishedbykate.com/cheeseburger-spring-rolls/
+// spring rolls - https://www.recipetineats.com/spring-rolls/
+// dosa - https://www.indianhealthyrecipes.com/dosa-recipe-dosa-batter/
+// massaman curry - https://www.favfamilyrecipes.com/chicken-massaman-curry/
+// thai sesame cashew chicken - https://www.halfbakedharvest.com/sesame-cashew-chicken/
+// mozzarella sticks - https://www.food.com/recipe/mozzarella-sticks-30977
+// sausage balls - https://www.food.com/recipe/sausage-balls-46078
+// buffalo chicken cheese balls - https://www.food.com/recipe/buffalo-chicken-cheese-balls-with-blue-cheese-dip-352425
+// apple dumplings - https://www.allrecipes.com/recipe/18980/apple-dumplings-i/
+// apple turnovers - https://www.allrecipes.com/recipe/59124/apple-turnovers/
+// deconstructed apple crisp - https://zestfulkitchen.com/deconstructed-apple-crisp/
