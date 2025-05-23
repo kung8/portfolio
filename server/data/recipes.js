@@ -647,3 +647,4 @@ module.exports = recipes;
 // apple dumplings - https://www.allrecipes.com/recipe/18980/apple-dumplings-i/
 // apple turnovers - https://www.allrecipes.com/recipe/59124/apple-turnovers/
 // deconstructed apple crisp - https://zestfulkitchen.com/deconstructed-apple-crisp/
+// Indonesian ayam goreng - https://www.taste.com.au/recipes/indonesian-fried-chicken/f24fe781-bbc9-4a12-b270-f53abb2ce6e7
