@@ -483,6 +483,7 @@ const INGREDIENTS = {
         SAUERKRAUT: {
             name: 'sauerkraut', category: INGREDIENT_CATEGORY.CONDIMENTS
         },
+        SHRIMP_PASTE: { name: 'shrimp paste', category: INGREDIENT_CATEGORY.CONDIMENTS },
         SRIRACHA_SAUCE: {
             name: 'sriracha sauce', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1519420638722-a2a5749c32be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2NDc0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -1403,6 +1404,7 @@ const INGREDIENTS = {
         LEMON: {
             name: 'lemon', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1590502593747-42a996133562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcyMDg1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        LEMON_BASIL: { name: 'lemon basil', category: INGREDIENT_CATEGORY.PRODUCE },
         LEMONGRASS: { name: 'lemongrass', category: INGREDIENT_CATEGORY.PRODUCE },
         LEMON_JUICE: {
             name: 'lemon juice', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1590502593747-42a996133562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcyMDg1fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -1835,6 +1837,7 @@ const INGREDIENTS = {
         CUMIN: {
             name: 'cumin', category: INGREDIENT_CATEGORY.SPICES, img: "https://plus.unsplash.com/premium_photo-1723867311354-e170658fd619?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU3MTQyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        CURRY_LEAF: { name: 'curry leaf', plural: 'curry leaves', category: INGREDIENT_CATEGORY.SPICES },
         CURRY_POWDER: {
             name: 'curry powder', category: INGREDIENT_CATEGORY.SPICES, img: "https://images.unsplash.com/photo-1615485500834-bc10199bc727?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU4NTQxfA&ixlib=rb-4.0.3&q=80&w=400"
         },

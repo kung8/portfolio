@@ -139,6 +139,7 @@ const hospitalityChicken = require("./recipes/hospitality-chicken");
 const indianButterChicken = require("./recipes/indian-butter-chicken");
 const indianChickenTikkaMasala = require("./recipes/indian-chicken-tikka-masala");
 const indianDosa = require('./recipes/indian-dosa.js');
+const indonesianAyamPenyet = require('./recipes/indonesian-ayam-penyet.js');
 const irishPotatoBoxty = require("./recipes/irish-potato-boxty");
 const italianLasagna = require("./recipes/italian-lasagna");
 const italianTurkeyMeatballSpinachTortelliniSoup = require("./recipes/italian-turkey-meatball-spinach-tortellini-soup");
@@ -357,7 +358,8 @@ const recipes = [
     malaysianBlackPepperChicken,
 
     // INDONESIAN
-    javaneseChickenCoconutCurry, // (This is to pour over the Ayam Goreng dish)
+    javaneseChickenCoconutCurry,
+    indonesianAyamPenyet,
 
     // KHMER
     khmerRedCurry,
