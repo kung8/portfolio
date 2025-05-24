@@ -364,9 +364,9 @@ const recipes = [
     chineseGingerChicken,
     chineseCashewChicken,
     chineseGreenBeanBeef,
-    broccoliBeef,
-    broccoliBeef2,
-    chineseBroccoliBeef,
+    broccoliBeef, // use this one?
+    broccoliBeef2, // use this one?
+    chineseBroccoliBeef, // TODO: eventually replace with one of the other broccoli beef recipes
     chineseFriedRice,
     chineseSourChickenSoup,
     pepperSteakStirFry,
@@ -461,8 +461,8 @@ const recipes = [
     swedishMeatballs,
 
     // RUSSIAN
-    beefStroganoff,
-    russianBeefStroganoff,
+    beefStroganoff, // TODO: maybe replace with russianBeefStroganoff?
+    russianBeefStroganoff, // use this one instead?
     beefStroganoffSoup,
 
     // FRENCH
