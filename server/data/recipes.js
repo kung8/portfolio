@@ -59,10 +59,11 @@ const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenBiryani = require("./recipes/chicken-biryani");
 const chickenCordonBleu = require("./recipes/chicken-cordon-bleu");
 const chickenFrancese = require("./recipes/chicken-francese");
+const chickenGnocchi = require("./recipes/chicken-gnocchi"); // TODO: finish adding recipe
 const chickenKebab = require("./recipes/chicken-kebabs");
 const chickenMcNuggets = require("./recipes/chicken-mcnuggets");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
-const chickenPaella = require("./recipes/chicken-paella"); // TODO: add
+const chickenPaella = require("./recipes/chicken-paella"); // TODO: finish adding recipe
 const chickenParmesan = require("./recipes/chicken-parmesan");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
 const chickenQuesadilla = require("./recipes/chicken-quesadilla");
@@ -608,8 +609,6 @@ module.exports = recipes;
 // RECIPES TO ADD
 // SOUPS
 // pumpkin - https://www.thepioneerwoman.com/food-cooking/recipes/a10399/pumpkin-soup/
-// french onion gnocchi - https://www.delish.com/cooking/recipe-ideas/a42710759/french-onion-gnocchi-soup-recipe/
-// chicken gnocchi - https://www.thepioneerwoman.com/food-cooking/recipes/a40772957/chicken-gnocchi-soup-recipe/
 // beef stroganoff - https://www.thepioneerwoman.com/food-cooking/recipes/a103360/beef-stroganoff-soup/
 // chicken pot pie - https://www.thepioneerwoman.com/food-cooking/recipes/a61997037/chicken-pot-pie-soup-recipe/
 
