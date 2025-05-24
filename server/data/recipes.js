@@ -103,6 +103,7 @@ const dijonChicken = require("./recipes/dijon-chicken");
 const dinnerRolls = require("./recipes/dinner-rolls");
 const drunkenNoodles = require("./recipes/drunken-noodles");
 const dumplingSoup = require("./recipes/dumpling-soup");
+const easyMochi = require('./recipes/easy-mochi.js');
 const eclair = require("./recipes/eclair");
 const eggCasserole = require("./recipes/egg-casserole");
 const englishScones = require("./recipes/english-scones");
@@ -312,6 +313,7 @@ const recipes = [
     chickenRamen,
     groundBeefRamen,
     udonNoodleSoup,
+    easyMochi,
     mochi,
     yorsStew,
 
@@ -605,13 +607,6 @@ module.exports = recipes;
 
 
 // RECIPES TO ADD
-// INDONESIAN:
-// - Gulai Ayam Padang (just the curry itself) - https://dailycookingquest.com/gulai-ayam-padang.html
-// (This is to pour over the Ayam Goreng)
-
-// Butter Toffee (https://uglydesserts.com/2025/01/24/homemade-butter-toffee/)
-// Mochi (https://parade.com/food/two-ingredient-mochi)
-
 // SOUPS
 // pumpkin - https://www.thepioneerwoman.com/food-cooking/recipes/a10399/pumpkin-soup/
 // french onion gnocchi - https://www.delish.com/cooking/recipe-ideas/a42710759/french-onion-gnocchi-soup-recipe/
