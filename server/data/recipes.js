@@ -631,7 +631,6 @@ module.exports = recipes;
 // dirty p's garlic-ginger chicken thighs - https://www.foodnetwork.com/recipes/guy-fieri/dirty-ps-garlic-ginger-chicken-thighs-recipe-2118432
 // oven baked salmon - https://www.foodnetwork.com/recipes/oven-baked-salmon-recipe-1911951
 // blueberry bagels - https://hungryhappens.net/easy-4-ingredient-blueberry-bagels-no-yeast/
-// beef ramen - https://recipesfiber.com/ground-beef-ramen-skillet/
 // cream cheese stuffed blackberry french toast - https://recipesfiber.com/cream-cheese-stuffed-blackberry-compote-french-toast/
 // apple pie cake mix - https://www.allrecipes.com/recipe/244777/apple-pie-cake-mix-cake/
 // spring rolls - https://www.recipetineats.com/spring-rolls/
@@ -643,3 +642,4 @@ module.exports = recipes;
 // apple turnovers - https://www.allrecipes.com/recipe/59124/apple-turnovers/
 // deconstructed apple crisp - https://zestfulkitchen.com/deconstructed-apple-crisp/
 // Indonesian ayam goreng - https://www.taste.com.au/recipes/indonesian-fried-chicken/f24fe781-bbc9-4a12-b270-f53abb2ce6e7
+// Fajitas - https://littlespicejar.com/the-best-steak-fajitas/

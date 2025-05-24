@@ -25,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "create-recipe": "node server/create-recipe-file.js"
+    "create-recipe": "node server/create-recipe-file.js",
+    "create-simplified-recipe": "node server/create-simplified-recipe-file.js"
   },
   "eslintConfig": {
     "extends": "react-app"
