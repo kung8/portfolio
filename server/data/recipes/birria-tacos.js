@@ -29,7 +29,7 @@ module.exports = {
     recipeAuthor: '',
     recipeFinder: 'Lauren Maliwauki',
     available: true,
-    recommended: true,
+    recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.MEXICAN],
     method: [METHODS.SLOW_COOK],

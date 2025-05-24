@@ -1,4 +1,12 @@
-// const example = '../assets/Products/example.jpeg';
+const pilaf1 = '../assets/Products/bulgur-pilaf-1.jpeg';
+const pilaf2 = '../assets/Products/bulgur-pilaf-2.jpeg';
+const pilaf3 = '../assets/Products/bulgur-pilaf-3.jpeg';
+const pilaf4 = '../assets/Products/bulgur-pilaf-4.jpeg';
+const pilaf5 = '../assets/Products/bulgur-pilaf-5.jpeg';
+const pilaf6 = '../assets/Products/bulgur-pilaf-6.jpeg';
+const pilaf7 = '../assets/Products/bulgur-pilaf-7.jpeg';
+const pilaf8 = '../assets/Products/bulgur-pilaf-8.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { OLIVE_OIL, YELLOW_ONION, TOMATO_PASTE, VINE_TOMATO, GREEN_BELL_PEPPER, CUMIN, SALT, BLACK_PEPPER, CHICKEN_BROTH, PARSLEY, OREGANO, BULGUR_WHEAT, CHICKPEA, BROWN_SUGAR, PAPRIKA, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST } = require('./ingredients');
 
@@ -9,14 +17,13 @@ const COOK_CHICKEN = 'Cook Chicken';
 const COOK_BULGUR_PILAF = 'Cook Bulgur Pilaf';
 
 module.exports = {
-    wip: true,
     cardName: 'Bulgur Pilaf',
     name: 'Bulgur Pilaf',
-    img: '',
+    img: pilaf8,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.LEBANESE, GENRES.MEDITERRANEAN, GENRES.MIDDLE_EASTERN],
     method: [METHODS.PAN_FRY],
@@ -75,16 +82,16 @@ module.exports = {
         { step: 'Line a baking sheet with aluminum foil.', section: COOK_CHICKEN },
         { step: 'Place chicken on baking sheet. Drizzle half of the olive oil and rub into the chicken.', section: COOK_CHICKEN },
         { step: 'Sprinkle with half of the seasoning.', section: COOK_CHICKEN },
-        { step: 'Flip chicken. Repeat with the rest of the olive oil and seasoning.', section: COOK_CHICKEN },
-        { step: 'Bake until golden brown (about 18 minutes).', section: COOK_CHICKEN },
+        { step: 'Flip chicken. Repeat with the rest of the olive oil and seasoning.', section: COOK_CHICKEN, img: pilaf1 },
+        { step: 'Bake until golden brown (about 18 minutes).', section: COOK_CHICKEN, img: pilaf2 },
         { step: 'Transfer to serving plates.', section: COOK_CHICKEN },
 
         { step: 'Over medium heat, heat oil in a large pot.', section: COOK_BULGUR_PILAF },
-        { step: 'Add onions. Cook until softened and translucent (about 5 to 7 minutes).', section: COOK_BULGUR_PILAF },
-        { step: 'Add tomato paste, tomatoes, and green bell peppers. Cook until fragrant (about 2 to 3 minutes).', section: COOK_BULGUR_PILAF },
-        { step: 'Add bulgur wheat, cumin, salt and pepper. Mix until the bulgur wheat is coated in tomato paste (about 2 to 3 minutes).', section: COOK_BULGUR_PILAF },
-        { step: 'Add chickpeas and chicken broth. Mix.', section: COOK_BULGUR_PILAF },
-        { step: 'Remove from heat and cover with a lid.', section: COOK_BULGUR_PILAF },
+        { step: 'Add onions. Cook until softened and translucent (about 5 to 7 minutes).', section: COOK_BULGUR_PILAF, img: pilaf3 },
+        { step: 'Add tomato paste, tomatoes, and green bell peppers. Cook until fragrant (about 2 to 3 minutes).', section: COOK_BULGUR_PILAF, img: pilaf4 },
+        { step: 'Add bulgur wheat, cumin, salt and pepper. Mix until the bulgur wheat is coated in tomato paste (about 2 to 3 minutes).', section: COOK_BULGUR_PILAF, img: pilaf5 },
+        { step: 'Add chickpeas and chicken broth. Mix.', section: COOK_BULGUR_PILAF, img: pilaf6 },
+        { step: 'Remove from heat and cover with a lid.', section: COOK_BULGUR_PILAF, img: pilaf7 },
         { step: 'Let the bulgur wheat absorb the broth (about 10 minutes).', section: COOK_BULGUR_PILAF },
         { step: 'Fluff with a fork.', section: COOK_BULGUR_PILAF },
 
