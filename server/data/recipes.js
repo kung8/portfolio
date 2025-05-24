@@ -62,7 +62,7 @@ const chickenFrancese = require("./recipes/chicken-francese");
 const chickenKebab = require("./recipes/chicken-kebabs");
 const chickenMcNuggets = require("./recipes/chicken-mcnuggets");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
-const chickenPaella = require("./recipes/chicken-paella");
+const chickenPaella = require("./recipes/chicken-paella"); // TODO: add
 const chickenParmesan = require("./recipes/chicken-parmesan");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
 const chickenQuesadilla = require("./recipes/chicken-quesadilla");
@@ -109,7 +109,7 @@ const eggCasserole = require("./recipes/egg-casserole");
 const englishScones = require("./recipes/english-scones");
 const fancyLunchables = require("./recipes/fancy-lunchables");
 const fishAndChips = require("./recipes/fish-and-chips");
-const fishSticksWithTartarSauce = require("./recipes/fish-sticks-with-tartar-sauce");
+const fishSticksWithTartarSauce = require("./recipes/fish-sticks-with-tartar-sauce"); // TODO: find recipe
 const fiveSpiceBlend = require("./recipes/five-spice-blend");
 const frenchBaguettes = require("./recipes/french-baguettes");
 const frenchCrepe = require("./recipes/french-crepe");
@@ -139,7 +139,7 @@ const honeySesameChicken = require("./recipes/honey-sesame-chicken");
 const hospitalityChicken = require("./recipes/hospitality-chicken");
 const indianButterChicken = require("./recipes/indian-butter-chicken");
 const indianChickenTikkaMasala = require("./recipes/indian-chicken-tikka-masala");
-const indianDosa = require('./recipes/indian-dosa.js');
+const indianDosa = require('./recipes/indian-dosa.js'); // TODO: finish adding recipe
 const indonesianAyamPenyet = require('./recipes/indonesian-ayam-penyet.js');
 const irishPotatoBoxty = require("./recipes/irish-potato-boxty");
 const italianLasagna = require("./recipes/italian-lasagna");
@@ -175,7 +175,7 @@ const mangoStickyRice = require("./recipes/mango-sticky-rice");
 const marryMeChicken = require("./recipes/marry-me-chicken");
 const mashPotatoes = require("./recipes/mash-potatoes");
 const meatballSub = require("./recipes/meatball-sub");
-const mexicanChickenBake = require("./recipes/mexican-chicken-bake");
+const mexicanChickenBake = require("./recipes/mexican-chicken-bake"); // TODO: find recipe
 const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chicken");
 const mexicanEnchiladas = require("./recipes/mexican-enchiladas");
 const mexicanMeatballSoup = require("./recipes/mexican-meatball-soup");
@@ -199,7 +199,7 @@ const peanutBrittle = require("./recipes/peanut-brittle");
 const peanutButterCookies = require("./recipes/peanut-butter-cookies");
 const peanutButterCup = require("./recipes/peanut-butter-cup");
 const peanutButterThumbprintCookies = require("./recipes/peanut-butter-thumbprint-cookies");
-const pekingDuck = require("./recipes/peking-duck");
+const pekingDuck = require("./recipes/peking-duck"); // TODO: find recipe 
 const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
 const peppermintBark = require("./recipes/peppermint-bark");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
@@ -228,7 +228,7 @@ const roastedPorkBelly = require("./recipes/roasted-pork-belly");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const rosemaryFries = require("./recipes/rosemary-fries");
 const rosemaryLemonade = require("./recipes/rosemary-lemonade");
-const russianBeefStroganoff = require("./recipes/russian-beef-stroganoff");
+const russianBeefStroganoff = require("./recipes/russian-beef-stroganoff"); // TODO: add (and determine if this is better than beefStroganoff)
 const samosa = require("./recipes/samosa");
 const samosaBurritos = require("./recipes/samosa-burritos");
 const sausageMcGriddle = require('./recipes/sausage-mcgriddle.js');
@@ -243,7 +243,7 @@ const smores = require("./recipes/smores");
 const snickerdoodle = require("./recipes/snickerdoodle-cookies");
 const sourdoughBread = require("./recipes/sourdough-bread");
 const sourdoughStarter = require("./recipes/sourdough-starter");
-const southwestSalad = require("./recipes/southwest-salad");
+const southwestSalad = require("./recipes/southwest-salad"); // TODO: find recipe
 const spanishRice = require("./recipes/spanish-rice");
 const stickyToffeePudding = require("./recipes/sticky-toffee-pudding");
 const stuffing = require("./recipes/stuffing");
@@ -255,7 +255,7 @@ const tandooriChicken = require("./recipes/tandoori-chicken");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
 const texasSausageKolaches = require("./recipes/texas-sausage-kolaches");
 const thaiBasil = require("./recipes/thai-basil");
-const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
+const thaiMassamanCurry = require("./recipes/thai-massaman-curry"); // TODO: finish adding recipe
 const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
 const turkeyRollUps = require("./recipes/turkey-roll-ups");
 const udonNoodleSoup = require("./recipes/udon-noodle-soup");
@@ -280,7 +280,7 @@ const recipes = [
     yellowCurry,
     chiveCakes,
     mangoStickyRice,
-    thaiMassamanCurry, // TODO: finish adding recipe
+    thaiMassamanCurry,
     coconutChicken,
     drunkenNoodles,
 
@@ -290,7 +290,7 @@ const recipes = [
     indianChickenTikkaMasala,
     tandooriChicken,
     naan,
-    indianDosa, // TODO: finish adding recipe
+    indianDosa,
     samosa,
     samosaBurritos,
     mangoChutney,
@@ -330,7 +330,7 @@ const recipes = [
     chineseSweetAndSourPork,
     kungPaoChicken,
     roastedPorkBelly,
-    pekingDuck, // TODO: find recipe 
+    pekingDuck,
     chineseGingerChicken,
     chineseCashewChicken,
     chineseGreenBeanBeef,
@@ -384,7 +384,7 @@ const recipes = [
     cafeRioBowl,
     beefTacos,
     tacoInABag,
-    mexicanChickenBake, // TODO: find recipe
+    mexicanChickenBake,
     mexicanMeatballSoup,
     guacamole,
 
@@ -417,7 +417,7 @@ const recipes = [
 
     // SPANISH
     shrimpPaella,
-    chickenPaella, // TODO: add
+    chickenPaella,
     spanishRice,
     churros,
 
@@ -426,7 +426,7 @@ const recipes = [
 
     // RUSSIAN
     beefStroganoff,
-    russianBeefStroganoff, // TODO: add (and determine if this is better than beefStroganoff)
+    russianBeefStroganoff,
 
     // FRENCH
     beignets,
@@ -500,7 +500,7 @@ const recipes = [
     hawaiianHaystacks,
     hospitalityChicken,
     jambalaya,
-    fishSticksWithTartarSauce, // TODO: find recipe
+    fishSticksWithTartarSauce,
     redLobsterCheddarBayBiscuits,
     cajunShrimp,
     jumboShrimpParmesan,
@@ -523,7 +523,7 @@ const recipes = [
     //////////////////////////////////////////////////////////////////////// SNACK/APPETIZERS ///////////////////////////////////////////////////////////////////////
     pigsInABlanket,
     chickenStuffedCrescentRolls,
-    southwestSalad, // TODO: find recipe
+    southwestSalad,
     cheeseballs,
     garlicBreadsticks,
     cheeseburgerSpringRolls,
@@ -604,7 +604,6 @@ const recipes = [
 ]
 
 module.exports = recipes;
-
 
 // RECIPES TO ADD
 // SOUPS

@@ -3,7 +3,7 @@ const path = require('path');
 const inquirer = require('inquirer');
 const { CATEGORIES, GENRES, METHODS, PROTEIN, TYPES } = require('./data/recipes/constants');
 
-const simplifiedTemplateFilePath = path.join(__dirname, '..', 'server', 'data', 'recipes', 'simplified-template.js');
+const initializedTemplateFilePath = path.join(__dirname, '..', 'server', 'data', 'recipes', 'initialized-template.js');
 const recipesFilePath = path.join(__dirname, '..', 'server', 'data', 'recipes.js');
 
 const convertValuesToKeys = (obj, selectedValues, objPrefix) => {
@@ -16,8 +16,8 @@ const convertKebabToCamelCase = (str) => {
 };
 
 const createPrompt = async () => {
-    if (!fs.existsSync(simplifiedTemplateFilePath)) {
-        console.log(`Template file ${simplifiedTemplateFilePath} does not exist.`);
+    if (!fs.existsSync(initializedTemplateFilePath)) {
+        console.log(`Template file ${initializedTemplateFilePath} does not exist.`);
         return;
     }
 
@@ -117,7 +117,7 @@ const createPrompt = async () => {
             message: 'Enter website link:',
         }
     ]).then(async (answers) => {
-        const template = fs.readFileSync(simplifiedTemplateFilePath, 'utf8');
+        const template = fs.readFileSync(initializedTemplateFilePath, 'utf8');
         const matchingCategories = convertValuesToKeys(CATEGORIES, answers.categories, 'CATEGORIES.');
         const matchingGenres = convertValuesToKeys(GENRES, answers.genres, 'GENRES.');
         const matchingMethods = convertValuesToKeys(METHODS, answers.methods, 'METHODS.');
@@ -140,7 +140,7 @@ const createPrompt = async () => {
 
         // update the recipes.js file to import the new recipe file
         const recipesFileContent = fs.readFileSync(recipesFilePath, 'utf8');
-        const newImport = `const ${convertKebabToCamelCase(answers.fileName)} = require('./recipes/${answers.fileName}.js');\n`;
+        const newImport = `const ${convertKebabToCamelCase(answers.fileName)} = require('./recipes/${answers.fileName}.js'); // TODO: add recipe \n`;
         const endOfImportsIndex = recipesFileContent.indexOf('// END OF IMPORTS');
         const updatedRecipesFileContent = recipesFileContent.slice(0, endOfImportsIndex) + newImport + recipesFileContent.slice(endOfImportsIndex);
         fs.writeFileSync(recipesFilePath, updatedRecipesFileContent, 'utf8');

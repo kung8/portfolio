@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { } = require('./ingredients');
 
 module.exports = {
@@ -13,13 +13,13 @@ module.exports = {
     recommended: false,
     category: '{{category}}',
     genre: '{{genre}}',
-    method: s,
+    method: '{{method}}',
     protein: '{{protein}}',
     type: '{{type}}',
-    yields: { amount: '', unit: '{{yieldUnit}}' },
-    prepTime: { amount: '{{prepTime}}', unit: '{{prepTimeUnit}}' },
-    cookTime: { amount: '{{cookTime}}', unit: '{{cookTimeUnit}}' },
-    waitTime: { amount: '{{waitTime}}', unit: '{{waitTimeUnit}}' },
+    yields: { amount: '', unit: '' },
+    prepTime: { amount: '', unit: '' },
+    cookTime: { amount: '', unit: '' },
+    waitTime: { amount: '', unit: '' },
     websites: [
         { label: '{{label}}', link: '{{link}}' }
     ],
