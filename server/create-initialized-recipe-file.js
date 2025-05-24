@@ -140,7 +140,7 @@ const createPrompt = async () => {
 
         // update the recipes.js file to import the new recipe file
         const recipesFileContent = fs.readFileSync(recipesFilePath, 'utf8');
-        const newImport = `const ${convertKebabToCamelCase(answers.fileName)} = require('./recipes/${answers.fileName}.js'); // TODO: add recipe \n`;
+        const newImport = `const ${convertKebabToCamelCase(answers.fileName)} = require('./recipes/${answers.fileName}.js'); // TODO: finish adding recipe\n`;
         const endOfImportsIndex = recipesFileContent.indexOf('// END OF IMPORTS');
         const updatedRecipesFileContent = recipesFileContent.slice(0, endOfImportsIndex) + newImport + recipesFileContent.slice(endOfImportsIndex);
         fs.writeFileSync(recipesFilePath, updatedRecipesFileContent, 'utf8');
