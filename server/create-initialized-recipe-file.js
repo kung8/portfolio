@@ -106,11 +106,11 @@ const createPrompt = async () => {
                 return true;
             }
         },
-        {
-            type: 'input',
-            name: 'label',
-            message: 'Enter any websites displayed label:',
-        },
+        // {
+        //     type: 'input',
+        //     name: 'label',
+        //     message: 'Enter any websites displayed label:',
+        // },
         {
             type: 'input',
             name: 'link',
@@ -132,7 +132,7 @@ const createPrompt = async () => {
             .replace(/'{{method}}'/g, '[' + matchingMethods + ']')
             .replace(/'{{protein}}'/g, '[' + matchingProtein + ']')
             .replace(/'{{type}}'/g, '[' + matchingTypes + ']')
-            .replace(/{{label}}/g, answers.label)
+            .replace(/{{label}}/g, answers.name ? answers.name : answers.cardName)
             .replace(/{{link}}/g, answers.link)
 
         // create the new recipe file

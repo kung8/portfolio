@@ -1,8 +1,11 @@
 const almondCroissantCookieBars = require("./recipes/almond-croissant-cookie-bars");
 const americanOmelette = require("./recipes/american-omelette");
 const antsOnALog = require("./recipes/ants-on-a-log");
+const appleDumpCake = require('./recipes/apple-dump-cake.js'); // TODO: finish adding recipe
+const appleDumplings = require('./recipes/apple-dumplings.js'); // TODO: finish adding recipe
 const applePie = require("./recipes/apple-pie");
 const appleTart = require("./recipes/apple-tart");
+const appleTurnovers = require('./recipes/apple-turnovers.js'); // TODO: finish adding recipe
 const bakedBeans = require("./recipes/baked-beans");
 const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
 const bakedChicken = require("./recipes/baked-chicken");
@@ -19,6 +22,7 @@ const bearnaiseSauce = require("./recipes/bearnaise-sauce");
 const beefAndBeanChimichangas = require("./recipes/beef-and-bean-chimichangas");
 const beefRagu = require("./recipes/beef-ragu");
 const beefStroganoff = require("./recipes/beef-stroganoff");
+const beefStroganoffSoup = require('./recipes/beef-stroganoff-soup.js'); // TODO: finish adding recipe
 const beefTacos = require("./recipes/beef-tacos");
 const beignets = require("./recipes/beignets");
 const bibimbap = require("./recipes/bibimbap");
@@ -28,15 +32,19 @@ const biscoffCookiePie = require("./recipes/biscoff-cookie-pie");
 const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
 const blondie = require("./recipes/blondie");
 const blt = require("./recipes/blt");
+const blueberryBagels = require('./recipes/blueberry-bagels.js'); // TODO: finish adding recipe
 const breakfastBurrito = require("./recipes/breakfast-burrito");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
 const breakfastSausageBalls = require("./recipes/breakfast-sausage-balls");
 const brickleBars = require("./recipes/brickle-bars");
+const broccoliBeef = require('./recipes/broccoli-beef.js'); // TODO: finish adding recipe
+const broccoliBeef2 = require('./recipes/broccoli-beef-2.js'); // TODO: finish adding recipe
 const broccoliCheddarSoup = require("./recipes/broccoli-cheddar-soup");
 const brownedButter = require("./recipes/browned-butter");
 const brownedButterChocolateChipCookies = require("./recipes/browned-butter-chocolate-chip-cookies");
 const brownies = require("./recipes/brownies");
 const brownies2 = require("./recipes/brownies-2");
+const buffaloChickenCheeseBalls = require('./recipes/buffalo-chicken-cheese-balls.js'); // TODO: finish adding recipe
 const bulgurPilaf = require("./recipes/bulgur-pilaf");
 const butteredCorn = require("./recipes/buttered-corn");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
@@ -50,6 +58,7 @@ const caramelizedMushroom = require("./recipes/caramelized-mushroom");
 const caramelizedOnion = require("./recipes/caramelized-onion");
 const carbonara = require("./recipes/carbonara");
 const carrotCake = require("./recipes/carrot-cake");
+const carrotCakeScones = require('./recipes/carrot-cake-scones.js'); // TODO: finish adding recipe
 const cheeseballs = require("./recipes/cheeseballs");
 const cheeseburgerSpringRolls = require('./recipes/cheeseburger-spring-rolls.js');
 const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
@@ -59,13 +68,14 @@ const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenBiryani = require("./recipes/chicken-biryani");
 const chickenCordonBleu = require("./recipes/chicken-cordon-bleu");
 const chickenFrancese = require("./recipes/chicken-francese");
-const chickenGnocchi = require("./recipes/chicken-gnocchi"); // TODO: finish adding recipe
+const chickenGnocchiSoup = require("./recipes/chicken-gnocchi-soup.js"); // TODO: finish adding recipe
 const chickenKebab = require("./recipes/chicken-kebabs");
 const chickenMcNuggets = require("./recipes/chicken-mcnuggets");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenPaella = require("./recipes/chicken-paella"); // TODO: finish adding recipe
 const chickenParmesan = require("./recipes/chicken-parmesan");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
+const chickenPotPieSoup = require('./recipes/chicken-pot-pie-soup.js'); // TODO: finish adding recipe
 const chickenQuesadilla = require("./recipes/chicken-quesadilla");
 const chickenRamen = require("./recipes/chicken-ramen");
 const chickenStuffedCrescentRolls = require("./recipes/chicken-stuffed-crescent-rolls");
@@ -94,20 +104,25 @@ const coleslaw = require("./recipes/coleslaw");
 const cowboyButterChickenWings = require("./recipes/cowboy-butter-chicken-wings");
 const crabCakes = require("./recipes/crab-cakes");
 const crabRangoon = require("./recipes/crab-rangoon");
+const creamCheeseStuffedBlackberryFrenchToast = require('./recipes/cream-cheese-stuffed-blackberry-french-toast.js'); // TODO: finish adding recipe
 const creamPuffs = require("./recipes/cream-puffs");
 const creamyCornCasserole = require("./recipes/creamy-corn-casserole");
 const creamyTuscanChickenPasta = require("./recipes/creamy-tuscan-chicken-pasta");
 const cremeBrulee = require("./recipes/creme-brulee");
+const cremeBruleeFrenchToast = require('./recipes/creme-brulee-french-toast.js'); // TODO: finish adding recipe
 const crescentRolls = require("./recipes/crescent-rolls");
 const croissants = require("./recipes/croissants");
+const deconstructedAppleCrisp = require('./recipes/deconstructed-apple-crisp.js'); // TODO: finish adding recipe
 const dijonChicken = require("./recipes/dijon-chicken");
 const dinnerRolls = require("./recipes/dinner-rolls");
+const dirtyPsGarlicGingerChickenThighs = require('./recipes/dirty-ps-garlic-ginger-chicken-thighs.js'); // TODO: finish adding recipe
 const drunkenNoodles = require("./recipes/drunken-noodles");
 const dumplingSoup = require("./recipes/dumpling-soup");
 const easyMochi = require('./recipes/easy-mochi.js');
 const eclair = require("./recipes/eclair");
 const eggCasserole = require("./recipes/egg-casserole");
 const englishScones = require("./recipes/english-scones");
+const fajitas = require('./recipes/fajitas.js'); // TODO: finish adding recipe
 const fancyLunchables = require("./recipes/fancy-lunchables");
 const fishAndChips = require("./recipes/fish-and-chips");
 const fishSticksWithTartarSauce = require("./recipes/fish-sticks-with-tartar-sauce"); // TODO: find recipe
@@ -138,9 +153,11 @@ const hoboDinner = require("./recipes/hobo-dinner");
 const homemadeBBQSauce = require("./recipes/homemade-bbq-sauce");
 const honeySesameChicken = require("./recipes/honey-sesame-chicken");
 const hospitalityChicken = require("./recipes/hospitality-chicken");
+const iceCreamCake = require('./recipes/ice-cream-cake.js'); // TODO: finish adding recipe
 const indianButterChicken = require("./recipes/indian-butter-chicken");
 const indianChickenTikkaMasala = require("./recipes/indian-chicken-tikka-masala");
 const indianDosa = require('./recipes/indian-dosa.js'); // TODO: finish adding recipe
+const indonesianAyamGoreng = require('./recipes/indonesian-ayam-goreng.js'); // TODO: finish adding recipe
 const indonesianAyamPenyet = require('./recipes/indonesian-ayam-penyet.js');
 const irishPotatoBoxty = require("./recipes/irish-potato-boxty");
 const italianLasagna = require("./recipes/italian-lasagna");
@@ -176,18 +193,23 @@ const mangoStickyRice = require("./recipes/mango-sticky-rice");
 const marryMeChicken = require("./recipes/marry-me-chicken");
 const mashPotatoes = require("./recipes/mash-potatoes");
 const meatballSub = require("./recipes/meatball-sub");
+const mediterraneanFlatbread = require('./recipes/mediterranean-flatbread.js'); // TODO: finish adding recipe
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake"); // TODO: find recipe
 const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chicken");
 const mexicanEnchiladas = require("./recipes/mexican-enchiladas");
 const mexicanMeatballSoup = require("./recipes/mexican-meatball-soup");
+const mississippiMudPotatoes = require('./recipes/mississippi-mud-potatoes.js'); // TODO: finish adding recipe
 const mochi = require("./recipes/mochi");
 const monteCristoSandwich = require("./recipes/monte-cristo-sandwich");
+const mozzarellaSticks = require('./recipes/mozzarella-sticks.js'); // TODO: finish adding recipe
 const muddyBuddies = require("./recipes/muddy-buddies");
 const naan = require("./recipes/naan");
+const naan2 = require('./recipes/naan-2.js'); // TODO: finish adding recipe
 const noBakeCannoliDelight = require("./recipes/no-bake-cannoli-delight");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const orangeChicken = require("./recipes/orange-chicken");
+const ovenBakedSalmon = require('./recipes/oven-baked-salmon.js'); // TODO: finish adding recipe
 const oyakodon = require("./recipes/oyakodon");
 const padThai = require("./recipes/pad-thai");
 const panFriedChickenThighs = require("./recipes/pan-fried-chicken-thighs");
@@ -220,6 +242,7 @@ const potatoGnocchi = require("./recipes/potato-gnocchi");
 const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
 const pumpkinSoup = require("./recipes/pumpkin-soup");
+const pumpkinSoup2 = require('./recipes/pumpkin-soup-2.js'); // TODO: finish adding recipe
 const ravioli = require("./recipes/ravioli");
 const redLobsterCheddarBayBiscuits = require("./recipes/red-lobster-cheddar-bay-biscuits");
 const reubenSandwich = require("./recipes/reuben-sandwich");
@@ -232,6 +255,7 @@ const rosemaryLemonade = require("./recipes/rosemary-lemonade");
 const russianBeefStroganoff = require("./recipes/russian-beef-stroganoff"); // TODO: add (and determine if this is better than beefStroganoff)
 const samosa = require("./recipes/samosa");
 const samosaBurritos = require("./recipes/samosa-burritos");
+const sausageBalls = require('./recipes/sausage-balls.js'); // TODO: finish adding recipe
 const sausageMcGriddle = require('./recipes/sausage-mcgriddle.js');
 const sauteedSquash = require("./recipes/sauteed-squash");
 const scrambledEggs = require("./recipes/scrambled-eggs");
@@ -246,6 +270,8 @@ const sourdoughBread = require("./recipes/sourdough-bread");
 const sourdoughStarter = require("./recipes/sourdough-starter");
 const southwestSalad = require("./recipes/southwest-salad"); // TODO: find recipe
 const spanishRice = require("./recipes/spanish-rice");
+const spicyItalianFlatbread = require('./recipes/spicy-italian-flatbread.js'); // TODO: finish adding recipe
+const springRolls = require('./recipes/spring-rolls.js'); // TODO: finish adding recipe
 const stickyToffeePudding = require("./recipes/sticky-toffee-pudding");
 const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
@@ -256,6 +282,7 @@ const tandooriChicken = require("./recipes/tandoori-chicken");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
 const texasSausageKolaches = require("./recipes/texas-sausage-kolaches");
 const thaiBasil = require("./recipes/thai-basil");
+const thaiBasilSesameCashewChicken = require('./recipes/thai-basil-sesame-cashew-chicken.js'); // TODO: finish adding recipe
 const thaiMassamanCurry = require("./recipes/thai-massaman-curry"); // TODO: finish adding recipe
 const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
 const turkeyRollUps = require("./recipes/turkey-roll-ups");
@@ -278,6 +305,7 @@ const recipes = [
     padThai,
     thaiPadSeeEw,
     thaiBasil,
+    thaiBasilSesameCashewChicken,
     yellowCurry,
     chiveCakes,
     mangoStickyRice,
@@ -291,6 +319,7 @@ const recipes = [
     indianChickenTikkaMasala,
     tandooriChicken,
     naan,
+    naan2,
     indianDosa,
     samosa,
     samosaBurritos,
@@ -335,6 +364,8 @@ const recipes = [
     chineseGingerChicken,
     chineseCashewChicken,
     chineseGreenBeanBeef,
+    broccoliBeef,
+    broccoliBeef2,
     chineseBroccoliBeef,
     chineseFriedRice,
     chineseSourChickenSoup,
@@ -345,11 +376,11 @@ const recipes = [
     cabbageStirFry,
     chineseBao,
     dumplingSoup,
+    springRolls,
     potstickers,
     crabRangoon,
     chopSuey,
     fiveSpiceBlend,
-
 
     // SINGAPOREAN
     singaporeanChickenRice,
@@ -363,6 +394,7 @@ const recipes = [
     // INDONESIAN
     javaneseChickenCoconutCurry,
     indonesianAyamPenyet,
+    indonesianAyamGoreng,
 
     // KHMER
     khmerRedCurry,
@@ -384,6 +416,7 @@ const recipes = [
     beefAndBeanChimichangas,
     cafeRioBowl,
     beefTacos,
+    fajitas,
     tacoInABag,
     mexicanChickenBake,
     mexicanMeatballSoup,
@@ -394,6 +427,7 @@ const recipes = [
     carbonara,
     italianLasagna,
     pizza,
+    spicyItalianFlatbread,
     balsamicTomatoBruschetta,
     chickenCordonBleu,
     porkMilanese,
@@ -412,6 +446,7 @@ const recipes = [
     ravioli,
     italianTurkeyMeatballSpinachTortelliniSoup,
     lemonChickenOrzoSoup,
+    chickenGnocchiSoup,
     lemonCapelliniSalad,
     noBakeCannoliDelight,
     gelato,
@@ -428,6 +463,7 @@ const recipes = [
     // RUSSIAN
     beefStroganoff,
     russianBeefStroganoff,
+    beefStroganoffSoup,
 
     // FRENCH
     beignets,
@@ -438,6 +474,7 @@ const recipes = [
     frenchOnionSoupGratinee,
     dijonChicken,
     monteCristoSandwich,
+    cremeBruleeFrenchToast,
     croissants,
     cherryAndDarkChocolateCrostata,
 
@@ -445,6 +482,7 @@ const recipes = [
     fishAndChips,
     englishScones,
     chickenPotPie,
+    chickenPotPieSoup,
     irishPotatoBoxty,
     stickyToffeePudding,
 
@@ -459,6 +497,9 @@ const recipes = [
     bulgurPilaf,
     ricePilaf,
 
+    // GREEK
+    mediterraneanFlatbread,
+
     // SOUTH AFRICAN / PORTUGUESE
     piriPiriChickenBowl,
 
@@ -470,6 +511,7 @@ const recipes = [
     kfcGravy,
     stuffing,
     greenBeanCasserole,
+    ovenBakedSalmon,
     butteredCorn,
     bbqPulledPorkAndFixins,
     bakedMacaroniAndCheese,
@@ -480,6 +522,7 @@ const recipes = [
     dinnerRolls,
     cowboyButterChickenWings,
     bbqChickenWings,
+    dirtyPsGarlicGingerChickenThighs,
     rosemaryFries,
     panFriedChickenThighs,
     chickenKebab,
@@ -488,8 +531,10 @@ const recipes = [
     broccoliCheddarSoup,
     butternutSquashSoup,
     pumpkinSoup,
+    pumpkinSoup2,
     chili,
     sauteedSquash,
+    mississippiMudPotatoes,
     macaroniSalad,
     bakedBreadedChicken,
     phillyCheesesteak,
@@ -517,6 +562,7 @@ const recipes = [
     bigMac,
     hamburger,
     grilledCheeseSandwich,
+    reubenSandwich,
     caramelizedMushroom,
     caramelizedOnion,
     homemadeBBQSauce,
@@ -528,6 +574,9 @@ const recipes = [
     cheeseballs,
     garlicBreadsticks,
     cheeseburgerSpringRolls,
+    buffaloChickenCheeseBalls,
+    mozzarellaSticks,
+    sausageBalls,
     fancyLunchables,
     bakedRitzBites,
     turkeyRollUps,
@@ -539,6 +588,7 @@ const recipes = [
     //////////////////////////////////////////////////////////////////////// BREAKFAST ///////////////////////////////////////////////////////////////////////
     frenchCrepe,
     frenchToast,
+    creamCheeseStuffedBlackberryFrenchToast,
     waffles,
     buttermilkSyrup,
     biscuitsAndGravy,
@@ -546,7 +596,7 @@ const recipes = [
     breakfastBurrito,
     breakfastSandwich,
     sausageMcGriddle,
-    reubenSandwich,
+    blueberryBagels,
     blt,
     popTarts,
     scrambledEggs,
@@ -556,10 +606,13 @@ const recipes = [
 
     //////////////////////////////////////////////////////////////////////// DESSERT ///////////////////////////////////////////////////////////////////////
     bananaBread,
+    iceCreamCake,
     cheesecake,
     carrotCake,
+    carrotCakeScones,
     coffeeCake,
     peachCobbler,
+    appleDumpCake,
     pineappleUpsideDownCake,
     pretzel,
     peanutBrittle,
@@ -581,7 +634,10 @@ const recipes = [
     almondCroissantCookieBars,
     lemonBars,
     appleTart,
+    appleDumplings,
+    appleTurnovers,
     applePie,
+    deconstructedAppleCrisp,
     biscoffCookiePie,
     frozenMudPie,
     keyLimePie,
@@ -605,39 +661,3 @@ const recipes = [
 ]
 
 module.exports = recipes;
-
-// RECIPES TO ADD
-// SOUPS
-// pumpkin - https://www.thepioneerwoman.com/food-cooking/recipes/a10399/pumpkin-soup/
-// beef stroganoff - https://www.thepioneerwoman.com/food-cooking/recipes/a103360/beef-stroganoff-soup/
-// chicken pot pie - https://www.thepioneerwoman.com/food-cooking/recipes/a61997037/chicken-pot-pie-soup-recipe/
-
-// BREADS
-// naan - https://www.thekitchn.com/naan-recipe-23711933
-// spicy italian flatbread - https://www.budgetbytes.com/spicy-italian-flat-bread/
-// mediterranean flatbread - https://sailorbailey.com/blog/mediterranean-flatbread/
-
-// creme brulee french toast - https://www.thekitchn.com/creme-brulee-french-toast-recipe-23711485
-
-// Mississippi Mud Potatoes - https://www.thekitchn.com/mississippi-mud-potatoes-recipe-23713064
-// Beef and Broccoli - https://natashaskitchen.com/beef-and-broccoli/ (1.8K)
-// Beef and Broccoli - https://www.justataste.com/easy-beef-and-broccoli-recipe/ (1.2K)
-// Carrot Cake Scones - https://homeiswheretheboatis.net/2025/03/18/everybunnys-favorite-carrot-cake-scones-with-cream-cheese-glaze/
-
-// Charlotte De Chou - https://parade.com/food/charlotte-de-chou
-// ice cream cake - https://lilluna.com/cookies-and-cream-ice-cream-cake/
-// dirty p's garlic-ginger chicken thighs - https://www.foodnetwork.com/recipes/guy-fieri/dirty-ps-garlic-ginger-chicken-thighs-recipe-2118432
-// oven baked salmon - https://www.foodnetwork.com/recipes/oven-baked-salmon-recipe-1911951
-// blueberry bagels - https://hungryhappens.net/easy-4-ingredient-blueberry-bagels-no-yeast/
-// cream cheese stuffed blackberry french toast - https://recipesfiber.com/cream-cheese-stuffed-blackberry-compote-french-toast/
-// apple pie cake mix - https://www.allrecipes.com/recipe/244777/apple-pie-cake-mix-cake/
-// spring rolls - https://www.recipetineats.com/spring-rolls/
-// thai sesame cashew chicken - https://www.halfbakedharvest.com/sesame-cashew-chicken/
-// mozzarella sticks - https://www.food.com/recipe/mozzarella-sticks-30977
-// sausage balls - https://www.food.com/recipe/sausage-balls-46078
-// buffalo chicken cheese balls - https://www.food.com/recipe/buffalo-chicken-cheese-balls-with-blue-cheese-dip-352425
-// apple dumplings - https://www.allrecipes.com/recipe/18980/apple-dumplings-i/
-// apple turnovers - https://www.allrecipes.com/recipe/59124/apple-turnovers/
-// deconstructed apple crisp - https://zestfulkitchen.com/deconstructed-apple-crisp/
-// Indonesian ayam goreng - https://www.taste.com.au/recipes/indonesian-fried-chicken/f24fe781-bbc9-4a12-b270-f53abb2ce6e7
-// Fajitas - https://littlespicejar.com/the-best-steak-fajitas/
