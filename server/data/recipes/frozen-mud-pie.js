@@ -20,14 +20,13 @@ const ADD_HOT_FUDGE = 'Add Hot Fudge';
 const ADD_TOPPINGS = 'Add Toppings';
 
 module.exports = {
-    wip: true,
     cardName: 'Frozen Mud Pie',
     name: 'Frozen Mud Pie',
-    img: '',
+    img: pie8,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.FREEZE],
@@ -67,7 +66,7 @@ module.exports = {
         { step: 'Drizzle the hot fudge in any desired pattern.', section: ADD_HOT_FUDGE, img: pie6 },
         { step: 'Freeze for 30 minutes.', section: ADD_HOT_FUDGE },
 
-        { step: 'Top pie with your favorite toppings.', section: ADD_TOPPINGS },
+        { step: 'Top pie with your favorite toppings.', section: ADD_TOPPINGS, img: pie7 },
         { step: 'Freeze for at least 2 hours or overnight.', section: ADD_TOPPINGS },
 
         { step: 'Serve this topped with any other favorite toppings.', section: SECTIONS.SERVE },
