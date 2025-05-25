@@ -1051,6 +1051,12 @@ module.exports = {
                     context: "Darrow is feeling alone as he is undercover in the Golds."
                 },
                 {
+                    text: "You do not follow me because I am the strongest. Pax is. You do not follow me because I am the brightest. Mustang is. You follow me because you do not know where you are going. I do.",
+                    pages: [303],
+                    thoughts: "I loved Darrow's example about leadership. He could have just punished Tactus for his attempt to rape, but he allows him to whip him too. We as a team need to be accountable for our actions.",
+                    context: "Darrow is talking to his people especially Tactus about why they follow him."
+                },
+                {
                     text: "",
                     pages: [],
                     thoughts: "",
