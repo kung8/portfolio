@@ -1,5 +1,5 @@
-const banhTieu = '../assets/Products/banh-tieu.jpeg';
-const flat = '../assets/Products/banh-tieu-flat.jpeg';
+const tieu1 = '../assets/Products/banh-tieu-1.jpeg';
+const tieu2 = '../assets/Products/banh-tieu-2.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
     BREAD_FLOUR,
@@ -15,7 +15,7 @@ const {
 module.exports = {
     cardName: 'Banh Tieu',
     name: 'Vietnamese Banh Tieu',
-    img: banhTieu,
+    img: tieu2,
     recipeAuthor: '',
     recipeFinder: 'Justin Ung',
     available: true,
@@ -66,6 +66,6 @@ module.exports = {
         { step: 'Once the oil is hot, add the dough and it will float. Use the tongs to push down the dough.', section: SECTIONS.MAIN },
         { step: 'The dough should start to puff up, then flip.', section: SECTIONS.MAIN },
         { step: 'Fry until golden brown. The frying process doesn\'t take too long so keep an eye on it.', section: SECTIONS.MAIN },
-        { step: 'Place fried bread on the cooling rack to drain the excess oil.', section: SECTIONS.MAIN, img: flat },
+        { step: 'Place fried bread on the cooling rack to drain the excess oil.', section: SECTIONS.MAIN, img: tieu1 },
     ]
 };
