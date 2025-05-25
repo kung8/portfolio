@@ -15,6 +15,7 @@ const bakedRitzBites = require('./recipes/baked-ritz-bites.js');
 const bakedZiti = require("./recipes/baked-ziti");
 const balsamicTomatoBruschetta = require("./recipes/balsamic-tomato-bruschetta");
 const bananaBread = require("./recipes/banana-bread");
+const bangBangShrimp = require('./recipes/bang-bang-shrimp.js');
 const basilPesto = require("./recipes/basil-pesto");
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
@@ -51,6 +52,7 @@ const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const butternutSquashSoup = require("./recipes/butternut-squash-soup");
 const cabbageStirFry = require("./recipes/cabbage-stir-fry");
 const cafeRioBowl = require("./recipes/cafe-rio-bowl");
+const cajunGarlicButterShrimp = require('./recipes/cajun-garlic-butter-shrimp.js');
 const cajunShrimp = require("./recipes/cajun-shrimp");
 const caramelApples = require("./recipes/caramel-apples")
 const caramelPopcorn = require("./recipes/caramel-popcorn");
@@ -135,6 +137,7 @@ const frozenMudPie = require("./recipes/frozen-mud-pie");
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const garlicButter = require("./recipes/garlic-butter");
 const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
+const garlicParmesanShrimp = require('./recipes/garlic-parmesan-shrimp.js');
 const garlicShrimp = require("./recipes/garlic-shrimp");
 const gelato = require("./recipes/gelato");
 const germanSchnitzel = require("./recipes/german-schnitzel");
@@ -549,7 +552,10 @@ const recipes = [
     fishSticksWithTartarSauce,
     redLobsterCheddarBayBiscuits,
     cajunShrimp,
+    cajunGarlicButterShrimp,
     jumboShrimpParmesan,
+    bangBangShrimp,
+    garlicParmesanShrimp,
     garlicShrimp,
     crabCakes,
     garlicChickenWithHerbs,
