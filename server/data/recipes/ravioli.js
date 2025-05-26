@@ -1,4 +1,18 @@
-// const example = '../assets/Products/example.jpeg';
+const ravioli1 = '../assets/Products/ravioli-1.jpeg';
+const ravioli2 = '../assets/Products/ravioli-2.jpeg';
+const ravioli3 = '../assets/Products/ravioli-3.jpeg';
+// const ravioli4 = '../assets/Products/ravioli-4.jpeg';
+// const ravioli5 = '../assets/Products/ravioli-5.jpeg';
+// const ravioli6 = '../assets/Products/ravioli-6.jpeg';
+// const ravioli7 = '../assets/Products/ravioli-7.jpeg';
+// const ravioli8 = '../assets/Products/ravioli-8.jpeg';
+// const ravioli9 = '../assets/Products/ravioli-9.jpeg';
+// const ravioli10 = '../assets/Products/ravioli-10.jpeg';
+// const ravioli11 = '../assets/Products/ravioli-11.jpeg';
+// const ravioli12 = '../assets/Products/ravioli-12.jpeg';
+// const ravioli13 = '../assets/Products/ravioli-13.jpeg';
+// const ravioli14 = '../assets/Products/ravioli-14.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, DURUM_WHEAT, EGG, RICOTTA_CHEESE, PARMIGIANO_REGGIANO, SALT, BLACK_PEPPER, UNSALTED_BUTTER, SAGE, FRESH_SAGE } = require('./ingredients');
 
@@ -65,9 +79,9 @@ module.exports = {
         { step: 'In a mixing bowl, combine the flour and wheat.', section: PREP_DOUGH },
         { step: 'Pour the flour mixture on a clean surface.', section: PREP_DOUGH },
         { step: 'Make a well in the center.', section: PREP_DOUGH },
-        { step: 'Crack the eggs in the center. Beat the eggs.', section: PREP_DOUGH },
-        { step: 'Gradually mix the flour mixture into the eggs.', section: PREP_DOUGH },
-        { step: 'Knead until the dough is combined (about 5 to 6 minutes).', section: PREP_DOUGH },
+        { step: 'Crack the eggs in the center. Beat the eggs.', section: PREP_DOUGH, img: ravioli1 },
+        { step: 'Gradually mix the flour mixture into the eggs.', section: PREP_DOUGH, img: ravioli2 },
+        { step: 'Knead until the dough is combined (about 5 to 6 minutes).', section: PREP_DOUGH, img: ravioli3 },
         { step: 'Cover the dough in plastic wrap. Let it chill in the fridge for 30 minutes.', section: PREP_DOUGH },
         { step: 'In a mixing bowl, combine the "Filling" ingredients.', section: PREP_FILLING },
         { step: 'Roll out the dough into long, thin sheets either with a rolling pin or with a pasta attachment/machine.', section: PREP_PASTA },
