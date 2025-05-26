@@ -221,6 +221,7 @@ const SECTIONS = {
     SALAD: 'Salad',
     DIP: 'Dip',
     WRAPPER: 'Wrapper',
+    FROZEN: 'Frozen',
     
     MARINATE_CHICKEN: 'Marinate Chicken',
     MARINATE_BEEF: 'Marinate Beef',
