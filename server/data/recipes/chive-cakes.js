@@ -83,9 +83,9 @@ module.exports = {
         { step: 'In a mixing bowl, combine the "Chive" ingredients.', section: SECTIONS.PREP_FILLING, img: [cakes6, cakes7, cakes8] },
         { step: 'Drain the chives. Set aside.', section: SECTIONS.PREP_FILLING, img: [cakes9, cakes10] },
 
-        { step: 'Over low heat, combine all the "Sauce" ingredients except the red pepper flakes and the garlic in a saucepan.', section: PREP_DIP },
-        { step: 'Heat until the salt and sugar dissolves. Set aside.', section: PREP_DIP },
-        { step: 'Add red pepper flakes and garlic.', section: PREP_DIP },
+        { step: 'Over low heat, combine all the "Sauce" ingredients except the red pepper flakes and the garlic in a saucepan.', section: SECTIONS.PREP_DIP },
+        { step: 'Heat until the salt and sugar dissolves. Set aside.', section: SECTIONS.PREP_DIP },
+        { step: 'Add red pepper flakes and garlic.', section: SECTIONS.PREP_DIP },
 
         { step: 'In a stand mixer, combine the rice flours and 2/3 of the tapioca starch.', section: SECTIONS.MAKE_DOUGH, img: cakes1 },
         { step: 'Add the boiling water.', section: SECTIONS.MAKE_DOUGH, img: cakes2 },

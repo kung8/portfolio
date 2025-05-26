@@ -15,7 +15,6 @@ const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS,
 const { GUANCIALE, EGG, EGG_YOLK, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO } = require('./ingredients');
 
 const GUANCIALE_SECTION = 'Guanciale';
-
 const COOK_GUANCIALE = 'Cook Guanciale';
 
 module.exports = {
@@ -63,8 +62,8 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine eggs and yolk.', section: PREP_SAUCE, img: carbonara2 },
-        { step: 'Add parmesan and pepper. Mix.', section: PREP_SAUCE, img: carbonara4 },
+        { step: 'In a mixing bowl, combine eggs and yolk.', section: SECTIONS.PREP_SAUCE, img: carbonara2 },
+        { step: 'Add parmesan and pepper. Mix.', section: SECTIONS.PREP_SAUCE, img: carbonara4 },
 
         { step: 'Over medium-high heat, bring a pot of water to a boil.', section: SECTIONS.COOK_PASTA },
         { step: 'Cook the pasta to al dente (follow the instructions on package).', section: SECTIONS.COOK_PASTA },
