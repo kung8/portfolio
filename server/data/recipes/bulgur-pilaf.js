@@ -10,10 +10,7 @@ const pilaf8 = '../assets/Products/bulgur-pilaf-8.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { OLIVE_OIL, YELLOW_ONION, TOMATO_PASTE, VINE_TOMATO, GREEN_BELL_PEPPER, CUMIN, SALT, BLACK_PEPPER, CHICKEN_BROTH, PARSLEY, OREGANO, BULGUR_WHEAT, CHICKPEA, BROWN_SUGAR, PAPRIKA, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST } = require('./ingredients');
 
-const CHICKEN_SECTION = 'Chicken';
-const CHICKEN_SEASONING_SECTION = 'Chicken Seasoning';
 const BULGUR_PILAF_SECTION = 'Bulgur Pilaf';
-const COOK_CHICKEN = 'Cook Chicken';
 const COOK_BULGUR_PILAF = 'Cook Bulgur Pilaf';
 
 module.exports = {
@@ -39,14 +36,14 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 6, unit: '', additionalDetails: '', section: CHICKEN_SECTION },
-        { ...OLIVE_OIL, amount: 3, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SECTION },
-        { ...BROWN_SUGAR, amount: 9 / 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_SEASONING_SECTION },
-        { ...PAPRIKA, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SEASONING_SECTION },
-        { ...OREGANO, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SEASONING_SECTION },
-        { ...GARLIC_POWDER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SEASONING_SECTION },
-        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SEASONING_SECTION },
-        { ...BLACK_PEPPER, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SEASONING_SECTION },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...OLIVE_OIL, amount: 3, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...BROWN_SUGAR, amount: 9 / 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...PAPRIKA, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...OREGANO, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...GARLIC_POWDER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...BLACK_PEPPER, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
 
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BULGUR_PILAF_SECTION },
         { ...YELLOW_ONION, amount: 1, unit: '', additionalDetails: 'finely chopped', section: BULGUR_PILAF_SECTION },
@@ -75,16 +72,16 @@ module.exports = {
         { name: 'large pot' },
     ],
     directions: [
-        { step: 'Preheat the oven to 425ºF.', section: COOK_CHICKEN },
-        { step: 'Place chicken breast between two pieces of plastic wrap.', section: COOK_CHICKEN },
-        { step: 'Pound chicken with a meat mallet.', section: COOK_CHICKEN },
-        { step: 'In a medium bowl, combine together the "Chicken Seasoning" section ingredients.', section: COOK_CHICKEN },
-        { step: 'Line a baking sheet with aluminum foil.', section: COOK_CHICKEN },
-        { step: 'Place chicken on baking sheet. Drizzle half of the olive oil and rub into the chicken.', section: COOK_CHICKEN },
-        { step: 'Sprinkle with half of the seasoning.', section: COOK_CHICKEN },
-        { step: 'Flip chicken. Repeat with the rest of the olive oil and seasoning.', section: COOK_CHICKEN, img: pilaf1 },
-        { step: 'Bake until golden brown (about 18 minutes).', section: COOK_CHICKEN, img: pilaf2 },
-        { step: 'Transfer to serving plates.', section: COOK_CHICKEN },
+        { step: 'Preheat the oven to 425ºF.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Place chicken breast between two pieces of plastic wrap.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Pound chicken with a meat mallet.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'In a medium bowl, combine together the "Seasonings" section ingredients.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Line a baking sheet with aluminum foil.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Place chicken on baking sheet. Drizzle half of the olive oil and rub into the chicken.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Sprinkle with half of the seasoning.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Flip chicken. Repeat with the rest of the olive oil and seasoning.', section: SECTIONS.COOK_CHICKEN, img: pilaf1 },
+        { step: 'Bake until golden brown (about 18 minutes).', section: SECTIONS.COOK_CHICKEN, img: pilaf2 },
+        { step: 'Transfer to serving plates.', section: SECTIONS.COOK_CHICKEN },
 
         { step: 'Over medium heat, heat oil in a large pot.', section: COOK_BULGUR_PILAF },
         { step: 'Add onions. Cook until softened and translucent (about 5 to 7 minutes).', section: COOK_BULGUR_PILAF, img: pilaf3 },

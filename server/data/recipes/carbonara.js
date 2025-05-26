@@ -14,11 +14,8 @@ const carbonara15 = '../assets/Products/carbonara-15.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { GUANCIALE, EGG, EGG_YOLK, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO } = require('./ingredients');
 
-const CARBONARA_SAUCE = 'Carbonara Sauce';
-const PASTA = 'Pasta';
 const GUANCIALE_SECTION = 'Guanciale';
 
-const COOK_PASTA = 'Cook Pasta';
 const COOK_GUANCIALE = 'Cook Guanciale';
 
 module.exports = {
@@ -42,13 +39,13 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
-        { ...EGG_YOLK, amount: 2, unit: '', additionalDetails: '', section: CARBONARA_SAUCE },
-        { ...PARMIGIANO_REGGIANO, amount: 7 / 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'finely shredded', section: CARBONARA_SAUCE },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CARBONARA_SAUCE },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...EGG_YOLK, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...PARMIGIANO_REGGIANO, amount: 7 / 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'finely shredded', section: SECTIONS.SAUCE },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { ...SPAGHETTI_NOODLES, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PASTA },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PASTA },
+        { ...SPAGHETTI_NOODLES, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.PASTA },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.PASTA },
 
         { ...GUANCIALE, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'sliced then batons', section: GUANCIALE_SECTION },
         { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: GUANCIALE_SECTION },
@@ -66,13 +63,13 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine eggs and yolk.', section: CARBONARA_SAUCE, img: carbonara2 },
-        { step: 'Add parmesan and pepper. Mix.', section: CARBONARA_SAUCE, img: carbonara4 },
+        { step: 'In a mixing bowl, combine eggs and yolk.', section: PREP_SAUCE, img: carbonara2 },
+        { step: 'Add parmesan and pepper. Mix.', section: PREP_SAUCE, img: carbonara4 },
 
-        { step: 'Over medium-high heat, bring a pot of water to a boil.', section: COOK_PASTA },
-        { step: 'Cook the pasta to al dente (follow the instructions on package).', section: COOK_PASTA },
-        { step: 'Reserve 1 cup of pasta water to use for the sauce later. Set aside.', section: COOK_PASTA },
-        { step: 'Drain pasta.', section: COOK_PASTA },
+        { step: 'Over medium-high heat, bring a pot of water to a boil.', section: SECTIONS.COOK_PASTA },
+        { step: 'Cook the pasta to al dente (follow the instructions on package).', section: SECTIONS.COOK_PASTA },
+        { step: 'Reserve 1 cup of pasta water to use for the sauce later. Set aside.', section: SECTIONS.COOK_PASTA },
+        { step: 'Drain pasta.', section: SECTIONS.COOK_PASTA },
 
         { step: 'Over medium-high heat, add the guanciale to a large pan.', section: COOK_GUANCIALE, img: carbonara6 },
         { step: 'Cook for 3 to 4 minutes.', section: COOK_GUANCIALE },

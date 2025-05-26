@@ -26,7 +26,6 @@ const FLIPPING_METHOD = 'Flipping Method';
 const FOLDING_METHOD = 'Folding Method';
 
 const OMELETTE_SECTION = 'Omelette';
-const FILLING_SECTION = 'Filling';
 const BUTTER_SECTION = 'Butter';
 
 module.exports = {
@@ -49,12 +48,12 @@ module.exports = {
         { ...WATER, amount: '', unit: '', additionalDetails: 'cold', optional: false, section: OMELETTE_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', optional: false, section: OMELETTE_SECTION },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false, section: OMELETTE_SECTION },
-        { ...YELLOW_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', optional: false, section: FILLING_SECTION },
-        { ...RED_BELL_PEPPER, amount: 1 / 3, unit: '', additionalDetails: 'diced', optional: false, section: FILLING_SECTION },
-        { ...MUSHROOM, amount: 5, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'chopped', optional: false, section: FILLING_SECTION },
-        { ...ROMA_TOMATO, amount: 1 / 4, unit: '', additionalDetails: 'diced', optional: false, section: FILLING_SECTION },
-        { ...COOKED_HAM, amount: 1, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'diced', optional: false, section: FILLING_SECTION },
-        { ...BASIL, amount: '', unit: '', additionalDetails: 'to taste', optional: false, section: FILLING_SECTION },
+        { ...YELLOW_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', optional: false, section: SECTIONS.FILLING },
+        { ...RED_BELL_PEPPER, amount: 1 / 3, unit: '', additionalDetails: 'diced', optional: false, section: SECTIONS.FILLING },
+        { ...MUSHROOM, amount: 5, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'chopped', optional: false, section: SECTIONS.FILLING },
+        { ...ROMA_TOMATO, amount: 1 / 4, unit: '', additionalDetails: 'diced', optional: false, section: SECTIONS.FILLING },
+        { ...COOKED_HAM, amount: 1, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'diced', optional: false, section: SECTIONS.FILLING },
+        { ...BASIL, amount: '', unit: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.FILLING },
         { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false, section: BUTTER_SECTION },
     ],
     appliances: [

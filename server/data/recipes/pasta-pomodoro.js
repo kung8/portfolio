@@ -2,11 +2,6 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { ANGEL_HAIR_PASTA, OLIVE_OIL, YELLOW_ONION, GARLIC, ROMA_TOMATO, BALSAMIC_VINEGAR, CHICKEN_BROTH, RED_PEPPER_FLAKES, BLACK_PEPPER, BASIL_LEAF, PARMESAN_CHEESE } = require('./ingredients');
 
-const PASTA = 'Pasta';
-const TOMATO_SAUCE = 'Tomato Sauce';
-
-const COOK_PASTA = 'Cook Pasta';
-const MAKE_SAUCE = 'Make Sauce';
 const ASSEMBLE_PASTA = 'Assemble Pasta';
 
 module.exports = {
@@ -30,16 +25,16 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ANGEL_HAIR_PASTA, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PASTA },
-        { ...OLIVE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TOMATO_SAUCE },
-        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'chopped', section: TOMATO_SAUCE },
-        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: TOMATO_SAUCE },
-        { ...ROMA_TOMATO, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', section: TOMATO_SAUCE },
-        { ...BALSAMIC_VINEGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TOMATO_SAUCE },
-        { ...CHICKEN_BROTH, amount: 10.75, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: TOMATO_SAUCE },
-        { ...RED_PEPPER_FLAKES, amount: '', unit: '', additionalDetails: 'to taste', section: TOMATO_SAUCE },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: TOMATO_SAUCE },
-        { ...BASIL_LEAF, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: TOMATO_SAUCE },
+        { ...ANGEL_HAIR_PASTA, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.PASTA },
+        { ...OLIVE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'chopped', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.SAUCE },
+        { ...ROMA_TOMATO, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.SAUCE },
+        { ...BALSAMIC_VINEGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CHICKEN_BROTH, amount: 10.75, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...RED_PEPPER_FLAKES, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
+        { ...BASIL_LEAF, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.SAUCE },
         { ...PARMESAN_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
@@ -50,15 +45,15 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'Bring a pot of water and salt to a boil.', section: COOK_PASTA },
-        { step: 'Add pasta and cook until al dente (about 8 minutes or per package instructions).', section: COOK_PASTA },
-        { step: 'Drain and set aside.', section: COOK_PASTA },
+        { step: 'Bring a pot of water and salt to a boil.', section: SECTIONS.COOK_PASTA },
+        { step: 'Add pasta and cook until al dente (about 8 minutes or per package instructions).', section: SECTIONS.COOK_PASTA },
+        { step: 'Drain and set aside.', section: SECTIONS.COOK_PASTA },
 
-        { step: 'Over high heat, add olive oil to a frying pan.', section: MAKE_SAUCE },
-        { step: 'Add onions and garlic. Saute until browned.', section: MAKE_SAUCE },
-        { step: 'Reduce to medium-high heat.', section: MAKE_SAUCE },
-        { step: 'Mix in tomatoes, vinegar and chicken broth. Simmer for about 8 minutes.', section: MAKE_SAUCE },
-        { step: 'Add spices and herb. Mix.', section: MAKE_SAUCE },
+        { step: 'Over high heat, add olive oil to a frying pan.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Add onions and garlic. Saute until browned.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Reduce to medium-high heat.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Mix in tomatoes, vinegar and chicken broth. Simmer for about 8 minutes.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Add spices and herb. Mix.', section: SECTIONS.COOK_SAUCE },
 
         { step: 'Add pasta and toss.', section: ASSEMBLE_PASTA },
         { step: 'Simmer for 5 minutes.', section: ASSEMBLE_PASTA },

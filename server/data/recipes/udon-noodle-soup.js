@@ -2,16 +2,8 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BEEF_RIBS, YELLOW_ONION, CARROT, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGG, BEEF_BROTH, SHIITAKE_MUSHROOM, THAI_CHILI_PEPPER, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONION, SESAME_SEEDS, UDON_NOODLES } = require('./ingredients');
 
-const BEEF_BROTH_SECTION = 'Beef Broth';
-const EGG_SECTION = 'Eggs';
-const NOODLE_SECTION = 'Noodles';
 const SOUP_1_SECTION = 'Soup Part 1';
 const SOUP_2_SECTION = 'Soup Part 2';
-
-const MAKE_BEEF_BROTH = 'Make Beef Broth';
-const COOK_EGGS = 'Cook Eggs';
-const COOK_NOODLES = 'Cook Noodles';
-const MAKE_SOUP = 'Make Soup';
 const PREP_EGGS = 'Prep Eggs';
 
 module.exports = {
@@ -37,14 +29,14 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BEEF_RIBS, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BEEF_BROTH_SECTION },
-        { ...YELLOW_ONION, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'peeled and quartered', section: BEEF_BROTH_SECTION },
-        { ...CARROT, amount: 1, unit: '', additionalDetails: 'peeled and chunked', section: BEEF_BROTH_SECTION },
-        { ...CINNAMON_STICK, amount: 1, unit: '', additionalDetails: '', section: BEEF_BROTH_SECTION },
-        { ...GINGER, amount: 3, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'whole', section: BEEF_BROTH_SECTION },
+        { ...BEEF_RIBS, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...YELLOW_ONION, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'peeled and quartered', section: SECTIONS.BROTH },
+        { ...CARROT, amount: 1, unit: '', additionalDetails: 'peeled and chunked', section: SECTIONS.BROTH },
+        { ...CINNAMON_STICK, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.BROTH },
+        { ...GINGER, amount: 3, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'whole', section: SECTIONS.BROTH },
 
-        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: EGG_SECTION },
-        { ...UDON_NOODLES, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: NOODLE_SECTION },
+        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.EGGS },
+        { ...UDON_NOODLES, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.NOODLES },
         { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'peeled and julienned', section: SOUP_1_SECTION },
         { ...SHIITAKE_MUSHROOM, amount: 7 / 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SOUP_1_SECTION },
         { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: SOUP_1_SECTION },
@@ -65,26 +57,26 @@ module.exports = {
         { name: 'large pot' },
     ],
     directions: [
-        { step: 'Over medium-high heat, combine the "" section ingredients in a large pot.', section: MAKE_BEEF_BROTH },
-        { step: 'Lower heat and let simmer for 3 hours, stirring occasionally. Add more water to keep ingredients covered.', section: MAKE_BEEF_BROTH },
-        { step: 'Let the broth cool and remove the bones (reserve the bones and meat for other use).', section: MAKE_BEEF_BROTH },
-        { step: 'Strain the broth and chill overnight (or at least 3 hours). Remove any congealed fat from the surface.', section: MAKE_BEEF_BROTH },
+        { step: 'Over medium-high heat, combine the "" section ingredients in a large pot.', section: SECTIONS.MAKE_BROTH },
+        { step: 'Lower heat and let simmer for 3 hours, stirring occasionally. Add more water to keep ingredients covered.', section: SECTIONS.MAKE_BROTH },
+        { step: 'Let the broth cool and remove the bones (reserve the bones and meat for other use).', section: SECTIONS.MAKE_BROTH },
+        { step: 'Strain the broth and chill overnight (or at least 3 hours). Remove any congealed fat from the surface.', section: SECTIONS.MAKE_BROTH },
 
-        { step: 'Over medium-high heat, fill a saucepan with enough water to cover eggs and bring to a boil.', section: COOK_EGGS },
-        { step: 'Gently lower eggs into boiling water. Boil for 8 minutes.', section: COOK_EGGS },
-        { step: 'Remove eggs with a slotted spoon and place eggs in cool water.', section: COOK_EGGS },
+        { step: 'Over medium-high heat, fill a saucepan with enough water to cover eggs and bring to a boil.', section: SECTIONS.COOK_EGGS },
+        { step: 'Gently lower eggs into boiling water. Boil for 8 minutes.', section: SECTIONS.COOK_EGGS },
+        { step: 'Remove eggs with a slotted spoon and place eggs in cool water.', section: SECTIONS.COOK_EGGS },
 
-        { step: 'Over high heat, bring a pot of water to a boil.', section: COOK_NOODLES },
-        { step: 'For fresh udon, boil for about 1 minute. For dry udon, boil until tender (about 5 to 7 minutes).', section: COOK_NOODLES },
-        { step: 'Drain. Rinse with cool water.', section: COOK_NOODLES },
+        { step: 'Over high heat, bring a pot of water to a boil.', section: SECTIONS.COOK_NOODLES },
+        { step: 'For fresh udon, boil for about 1 minute. For dry udon, boil until tender (about 5 to 7 minutes).', section: SECTIONS.COOK_NOODLES },
+        { step: 'Drain. Rinse with cool water.', section: SECTIONS.COOK_NOODLES },
 
-        { step: 'Over medium-low heat, bring a large pot of the beef broth to a simmer.', section: MAKE_SOUP },
-        { step: 'Increase the heat to high, add all the "Soup Part 1" section ingredients (except the pork). Bring to a boil.', section: MAKE_SOUP },
-        { step: 'Lower the heat to medium, simmer for 5 minutes.', section: MAKE_SOUP },
-        { step: 'Add pork. Cook for a couple of minutes.', section: MAKE_SOUP },
-        { step: 'Add the noodles and the remaining "Soup Part 2" section ingredients. Cook until the cabbage wilts.', section: MAKE_SOUP },
-        { step: 'Remove the chili peppers.', section: MAKE_SOUP },
-        { step: 'Taste and adjust as necessary.', section: MAKE_SOUP },
+        { step: 'Over medium-low heat, bring a large pot of the beef broth to a simmer.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Increase the heat to high, add all the "Soup Part 1" section ingredients (except the pork). Bring to a boil.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Lower the heat to medium, simmer for 5 minutes.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Add pork. Cook for a couple of minutes.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Add the noodles and the remaining "Soup Part 2" section ingredients. Cook until the cabbage wilts.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Remove the chili peppers.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Taste and adjust as necessary.', section: SECTIONS.MAKE_SOUP },
 
         { step: 'Peel the eggs and slice in half.', section: PREP_EGGS },
 

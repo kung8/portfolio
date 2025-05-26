@@ -18,13 +18,9 @@ const { MILK, WHITE_SUGAR, UNSALTED_BUTTER, SALT, WATER, YEAST, ALL_PURPOSE_FLOU
 
 const SUGAR_MIXTURE_SECTION = 'Sugar Mixture';
 const YEAST_MIXTURE_SECTION = 'Yeast Mixture';
-const DOUGH_SECTION = 'Dough';
-const FILLING_SECTION = 'Filling';
 
 const PREP_SUGAR_MIXTURE = 'Prep Sugar Mixture';
 const PREP_YEAST_MIXTURE = 'Prep Yeast Mixture';
-const MAKE_DOUGH = 'Make Dough';
-const PREP_FILLING = 'Prep Filling';
 const BAKE_KOLACHES = 'Bake Kolaches';
 
 module.exports = {
@@ -57,12 +53,12 @@ module.exports = {
         { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
         { ...YEAST, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
 
-        { ...ALL_PURPOSE_FLOUR, amount: 9 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: DOUGH_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 9 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
 
-        { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...SAUSAGE_LINK, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: FILLING_SECTION },
-        { ...CHEDDAR_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: FILLING_SECTION },
+        { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SAUSAGE_LINK, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CHEDDAR_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
     ],
     appliances: [
         { name: 'stove' },
@@ -82,14 +78,14 @@ module.exports = {
 
         { step: 'In a stand mixer, combine "Yeast Mixture". Stir until dissolved.', section: PREP_YEAST_MIXTURE, img: kolaches3 },
 
-        { step: 'Add 2 cups of flour, sugar mixture, and eggs. Beat with a dough hook attachment until smooth.', section: MAKE_DOUGH, img: [kolaches4, kolaches5] },
-        { step: 'Slowly add remaining flour while mixing until dough just becomes elastic and a little firm (not dry).', section: MAKE_DOUGH, img: [kolaches6, kolaches7] },
-        { step: 'Transfer dough to floured surface.', section: MAKE_DOUGH },
-        { step: 'Knead until dough is smooth and very elastic (about 10 to 15 minutes).', section: MAKE_DOUGH },
-        { step: 'Cover with plastic wrap. Place in a warm place until it double in size (about 1 hour).', section: MAKE_DOUGH },
+        { step: 'Add 2 cups of flour, sugar mixture, and eggs. Beat with a dough hook attachment until smooth.', section: SECTIONS.MAKE_DOUGH, img: [kolaches4, kolaches5] },
+        { step: 'Slowly add remaining flour while mixing until dough just becomes elastic and a little firm (not dry).', section: SECTIONS.MAKE_DOUGH, img: [kolaches6, kolaches7] },
+        { step: 'Transfer dough to floured surface.', section: SECTIONS.MAKE_DOUGH },
+        { step: 'Knead until dough is smooth and very elastic (about 10 to 15 minutes).', section: SECTIONS.MAKE_DOUGH },
+        { step: 'Cover with plastic wrap. Place in a warm place until it double in size (about 1 hour).', section: SECTIONS.MAKE_DOUGH },
 
-        { step: 'Cut sausage in half and dry with a paper towel.', section: PREP_FILLING },
-        { step: 'Cut the cheese thinly to match the length of the halved sausage.', section: PREP_FILLING, img: kolaches8 },
+        { step: 'Cut sausage in half and dry with a paper towel.', section: SECTIONS.PREP_FILLING },
+        { step: 'Cut the cheese thinly to match the length of the halved sausage.', section: SECTIONS.PREP_FILLING, img: kolaches8 },
 
         { step: 'Preheat the oven to 350ºF.', section: BAKE_KOLACHES },
         { step: 'Line a baking sheet with parchment paper.', section: BAKE_KOLACHES },

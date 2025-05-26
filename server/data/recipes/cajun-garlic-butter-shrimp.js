@@ -2,12 +2,8 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { LIGHT_SOY_SAUCE, BROWN_SUGAR, OLIVE_OIL, YELLOW_MUSTARD, CAJUN_SEASONING, GARLIC, UNSALTED_BUTTER, SHRIMP, SALT, BLACK_PEPPER, GREEN_ONION } = require('./ingredients');
 
-const SAUCE_SECTION = 'Sauce';
 const SHRIMP_SECTION = 'Shrimp';
 const COOK_SECTION = 'Cook';
-
-const COOK_SAUCE = 'Cook Sauce';
-const COOK_SHRIMP = 'Cook Shrimp';
 
 module.exports = {
     wip: true,
@@ -32,16 +28,16 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
-        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...YELLOW_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...CAJUN_SEASONING, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SAUCE_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...YELLOW_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CAJUN_SEASONING, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.SAUCE },
 
-        { ...SHRIMP, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled and deveined', section: SHRIMP_SECTION },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SHRIMP_SECTION },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SHRIMP_SECTION },
+        { ...SHRIMP, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled and deveined', section: SECTIONS.SHRIMP },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SHRIMP },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SHRIMP },
 
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: COOK_SECTION },
         { ...GREEN_ONION, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
@@ -55,13 +51,13 @@ module.exports = {
         { name: '' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Sauce" section ingredients.', section: COOK_SAUCE },
-        { step: 'Over medium-high heat, heat a pan.', section: COOK_SAUCE },
-        { step: 'Add butter and sauce. Cook until the butter has melted (about 2 minutes).', section: COOK_SAUCE },
+        { step: 'In a mixing bowl, combine the "Sauce" section ingredients.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Over medium-high heat, heat a pan.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Add butter and sauce. Cook until the butter has melted (about 2 minutes).', section: SECTIONS.COOK_SAUCE },
 
-        { step: 'Pat shrimp dry with a paper towel.', section: COOK_SHRIMP },
-        { step: 'Add shrimp. Coat.', section: COOK_SHRIMP },
-        { step: 'Cook until shrimp is opaque and cooked (about 4 to 5 minutes).', section: COOK_SHRIMP },
+        { step: 'Pat shrimp dry with a paper towel.', section: SECTIONS.COOK_SHRIMP },
+        { step: 'Add shrimp. Coat.', section: SECTIONS.COOK_SHRIMP },
+        { step: 'Cook until shrimp is opaque and cooked (about 4 to 5 minutes).', section: SECTIONS.COOK_SHRIMP },
 
         { step: 'Serve with green onions.', section: SECTIONS.SERVE },
     ]

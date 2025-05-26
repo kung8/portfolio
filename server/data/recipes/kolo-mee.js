@@ -7,12 +7,9 @@ const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS,
 const { GROUND_PORK, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, OYSTER_SAUCE, SESAME_OIL, WHITE_PEPPER, VEGETABLE_OIL, CHOW_MEIN_NOODLES, BABY_BOK_CHOY, ONION_POWDER, GREEN_ONION, FRIED_SHALLOTS, GARLIC, THAI_CHILI_PEPPER } = require('./ingredients');
 
 const MINCED_MEAT_SECTION = 'Minced Meat';
-const NOODLE_SECTION = 'Noodle';
 const BOK_CHOY_SECTION = 'Bok Choy';
-const SAUCE_SECTION = 'Sauce';
 
 const COOK_MINCED_MEAT = 'Cook Minced Meat';
-const COOK_NOODLES = 'Cook Noodles';
 const COOK_BOK_CHOY = 'Cook Bok Choy';
 const ASSEMBLE_DISH = 'Assemble Dish';
 
@@ -45,13 +42,13 @@ module.exports = {
         { ...SESAME_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
         { ...WHITE_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
 
-        { ...CHOW_MEIN_NOODLES, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: NOODLE_SECTION },
-        // { ...CHAR_SIU, amount: '', unit: '', additionalDetails: '', section: NOODLE_SECTION },
+        { ...CHOW_MEIN_NOODLES, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLE },
+        // { ...CHAR_SIU, amount: '', unit: '', additionalDetails: '', section: SECTIONS.NOODLE },
         { ...BABY_BOK_CHOY, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: '', section: BOK_CHOY_SECTION },
 
-        { ...LIGHT_SOY_SAUCE, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...OYSTER_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...ONION_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OYSTER_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...ONION_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
         { ...GREEN_ONION, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...FRIED_SHALLOTS, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
@@ -70,9 +67,9 @@ module.exports = {
         { step: 'Add the "Minced Meat" section ingredients. Stir fry until browned.', section: COOK_MINCED_MEAT },
         { step: 'Set aside.', section: COOK_MINCED_MEAT, img: kolo1 },
 
-        { step: 'Cook the chow mein noodles according to package instructions. As it loosens and is almost cooked, remove the noodles and place it in a cold water bath.', section: COOK_NOODLES },
-        { step: 'Re-add the cooled noodles back to the boiling water until it is cooked.', section: COOK_NOODLES },
-        { step: 'Drain. Set the noodles on a plate.', section: COOK_NOODLES, img: kolo3 },
+        { step: 'Cook the chow mein noodles according to package instructions. As it loosens and is almost cooked, remove the noodles and place it in a cold water bath.', section: SECTIONS.COOK_NOODLES },
+        { step: 'Re-add the cooled noodles back to the boiling water until it is cooked.', section: SECTIONS.COOK_NOODLES },
+        { step: 'Drain. Set the noodles on a plate.', section: SECTIONS.COOK_NOODLES, img: kolo3 },
 
         { step: 'Over medium-high heat, boil a pot of water.', section: COOK_BOK_CHOY },
         { step: 'Add bok choy. Cook until tender (about 1 to 2 minutes).', section: COOK_BOK_CHOY },

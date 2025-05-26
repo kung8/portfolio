@@ -42,15 +42,10 @@ const {
 
 const ITALIAN_SAUSAGE_SECTION = 'Italian Sausage';
 const BEEF_AND_VEGGIES_SECTION = 'Beef and Veggies';
-const SAUCE_SECTION = 'Sauce';
-const SEASONINGS_SECTION = 'Seasonings';
 const RICOTTA_MIXTURE = 'Ricotta Mixture';
-const NOODLES_SECTION = 'Noodles';
 const CHEESE_TOPPING_SECTION = 'Cheese Topping';
 
 const COOK_SAUSAGE = 'Cook Sausage';
-const COOK_MEAT_SAUCE = 'Cook Meat Sauce';
-const COOK_NOODLES = 'Cook Noodles';
 const ASSEMBLE_LASAGNA = 'Assemble Lasagna';
 const BAKE_LASAGNA = 'Bake Lasagna';
 const PREP_RICOTTA_MIXTURE = 'Prep Ricotta Mixture';
@@ -81,24 +76,24 @@ module.exports = {
         { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'minced', section: BEEF_AND_VEGGIES_SECTION },
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'crushed', section: BEEF_AND_VEGGIES_SECTION },
 
-        { ...CRUSHED_TOMATOES, amount: 28, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SAUCE_SECTION },
-        { ...TOMATO_SAUCE, amount: 13, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SAUCE_SECTION },
-        { ...TOMATO_PASTE, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SAUCE_SECTION },
-        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SAUCE_SECTION },
+        { ...CRUSHED_TOMATOES, amount: 28, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...TOMATO_SAUCE, amount: 13, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...TOMATO_PASTE, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.SAUCE },
 
-        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASONINGS_SECTION },
-        { ...BASIL, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONINGS_SECTION },
-        { ...FENNEL_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONINGS_SECTION },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONINGS_SECTION },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONINGS_SECTION },
-        { ...PARSLEY, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASONINGS_SECTION },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...BASIL, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...FENNEL_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...PARSLEY, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
 
         { ...RICOTTA_CHEESE, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: RICOTTA_MIXTURE },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: RICOTTA_MIXTURE },
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: RICOTTA_MIXTURE },
         { ...PARSLEY, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RICOTTA_MIXTURE },
 
-        { ...LASAGNA_NOODLES, amount: 12, unit: '', additionalDetails: '', section: NOODLES_SECTION },
+        { ...LASAGNA_NOODLES, amount: 12, unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
 
         { ...MOZZARELLA_CHEESE, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'sliced', section: CHEESE_TOPPING_SECTION },
         { ...PARMESAN_CHEESE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: CHEESE_TOPPING_SECTION },
@@ -125,16 +120,16 @@ module.exports = {
         { step: 'Over medium-high heat, heat a large pan.', section: COOK_SAUSAGE },
         { step: 'Add the sausage. Cook for a few minutes.', section: COOK_SAUSAGE, img: [lasagna2, lasagna3] },
 
-        { step: 'Add the "Beef and Veggies" section ingredients. Cook until browned.', section: COOK_MEAT_SAUCE, img: lasagna4 },
-        { step: 'Add the "Sauce" section ingredients.', section: COOK_MEAT_SAUCE, img: lasagna5 },
-        { step: 'Add the "Seasonings" section ingredients.', section: COOK_MEAT_SAUCE, img: lasagna6 },
-        { step: 'Cover. Simmer for 90 minutes.', section: COOK_MEAT_SAUCE },
+        { step: 'Add the "Beef and Veggies" section ingredients. Cook until browned.', section: SECTIONS.SAUCE, img: lasagna4 },
+        { step: 'Add the "Sauce" section ingredients.', section: SECTIONS.SAUCE, img: lasagna5 },
+        { step: 'Add the "Seasonings" section ingredients.', section: SECTIONS.SAUCE, img: lasagna6 },
+        { step: 'Cover. Simmer for 90 minutes.', section: SECTIONS.SAUCE },
 
         { step: 'In a mixing bowl, combine together the "Ricotta Mixture" section ingredients. Set aside.', section: PREP_RICOTTA_MIXTURE, img: lasagna7 },
 
-        { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: COOK_NOODLES },
-        { step: 'Add the noodles and make sure its submerged. Cook until just cooked (about 8 to 10 minutes).', section: COOK_NOODLES, img: lasagna8 },
-        { step: 'Drain. Rinse noodles with cold water.', section: COOK_NOODLES },
+        { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: SECTIONS.COOK_NOODLES },
+        { step: 'Add the noodles and make sure its submerged. Cook until just cooked (about 8 to 10 minutes).', section: SECTIONS.COOK_NOODLES, img: lasagna8 },
+        { step: 'Drain. Rinse noodles with cold water.', section: SECTIONS.COOK_NOODLES },
 
         { step: 'Preheat oven to 375ºF.', section: ASSEMBLE_LASAGNA },
         { step: 'In a baking pan, pour 1 1/2 cup of the meat sauce.', section: ASSEMBLE_LASAGNA, img: lasagna9 },

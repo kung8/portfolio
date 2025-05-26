@@ -25,12 +25,10 @@ const samosa23 = '../assets/Products/samosa-23.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, GHEE, CAROM_SEEDS, SALT, GREEN_PEA, GINGER, SERRANO_PEPPER, CORIANDER, LEMON_JUICE, CUMIN, GARAM_MASALA, CHILI_POWDER, FENNEL_SEEDS, YUKON_GOLD_POTATO, AMCHUR_POWDER, WATER } = require('./ingredients');
 
-const DOUGH = 'Dough';
 const POTATO_FILLING = 'Potato Filling';
 const SPICES = 'Spices';
 
 const PREP_POTATOES = 'Prep Potatoes';
-const PREP_DOUGH = 'Prep Dough';
 const MAKE_SAMOSA = 'Make Samosa';
 const BAKE_SAMOSA = 'Bake Samosa';
 
@@ -55,11 +53,11 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH },
-        { ...CAROM_SEEDS, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH },
-        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH },
-        { ...GHEE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: DOUGH },
-        { ...WATER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: DOUGH },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...CAROM_SEEDS, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...GHEE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.DOUGH },
+        { ...WATER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: SECTIONS.DOUGH },
 
         { ...YUKON_GOLD_POTATO, amount: 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'peeled and halved', section: POTATO_FILLING },
         { ...GHEE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: POTATO_FILLING },
@@ -95,11 +93,11 @@ module.exports = {
         { step: 'Crumble the potatoes (not mash).', section: PREP_POTATOES, img: samosa7 },
         { step: 'Set aside.', section: PREP_POTATOES },
 
-        { step: 'In a mixing bowl, combine all the "Dough" ingredients except the water.', section: PREP_DOUGH, img: samosa1 },
-        { step: 'Squish the flour with your hands to incorporate the oil (for about 3 to 4 minutes). It should resemble breadcrumbs.', section: PREP_DOUGH, img: samosa2 },
-        { step: 'Push your palm down on the flour and if it holds it is ready.', section: PREP_DOUGH, img: samosa3 },
-        { step: 'Slowly mix in water. It should be slightly stiff but still adjustable.', section: PREP_DOUGH, img: samosa4 },
-        { step: 'Cover and let it rise for 30 minutes.', section: PREP_DOUGH },
+        { step: 'In a mixing bowl, combine all the "Dough" ingredients except the water.', section: SECTIONS.PREP_DOUGH, img: samosa1 },
+        { step: 'Squish the flour with your hands to incorporate the oil (for about 3 to 4 minutes). It should resemble breadcrumbs.', section: SECTIONS.PREP_DOUGH, img: samosa2 },
+        { step: 'Push your palm down on the flour and if it holds it is ready.', section: SECTIONS.PREP_DOUGH, img: samosa3 },
+        { step: 'Slowly mix in water. It should be slightly stiff but still adjustable.', section: SECTIONS.PREP_DOUGH, img: samosa4 },
+        { step: 'Cover and let it rise for 30 minutes.', section: SECTIONS.PREP_DOUGH },
 
         { step: 'Over medium-high heat, heat ghee in a pan.', section: POTATO_FILLING },
         { step: 'Add cumin. Cook until it sizzles.', section: POTATO_FILLING, img: samosa8 },

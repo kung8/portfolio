@@ -15,7 +15,6 @@ const tomatoes13 = '../assets/Products/vietnamese-stuffed-tomatoes-13.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { VINE_TOMATO, CORNSTARCH, GROUND_PORK, YELLOW_ONION, GARLIC, FISH_SAUCE, SALT, WHITE_SUGAR, BLACK_PEPPER, VEGETABLE_OIL, LIGHT_SOY_SAUCE, GREEN_ONION, WATER } = require('./ingredients');
 
-const FILLING_SECTION = 'Filling';
 const TOMATOES_SECTION = 'Tomatoes';
 
 module.exports = {
@@ -39,13 +38,13 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GROUND_PORK, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: FILLING_SECTION },
-        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: FILLING_SECTION },
-        { ...GARLIC, amount: 2, unit: '', additionalDetails: 'minced', section: FILLING_SECTION },
-        { ...FISH_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FILLING_SECTION },
-        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FILLING_SECTION },
-        { ...WHITE_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FILLING_SECTION },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: FILLING_SECTION },
+        { ...GROUND_PORK, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.FILLING },
+        { ...GARLIC, amount: 2, unit: '', additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...FISH_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WHITE_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.FILLING },
 
         { ...FISH_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
@@ -73,7 +72,7 @@ module.exports = {
         { name: 'small bowl' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Filling" ingredients.', section: FILLING_SECTION, img: tomatoes3 },
+        { step: 'In a mixing bowl, combine the "Filling" ingredients.', section: SECTIONS.FILLING, img: tomatoes3 },
         { step: 'Halve the tomatoes. With a spoon, cut out the tomato cores.', section: SECTIONS.SAUCE, img: tomatoes1 },
         { step: 'Place the cores and skins in two separate medium bowls.', section: SECTIONS.SAUCE, img: tomatoes2 },
         { step: 'In the medium bowl with the tomato cores, add the "Sauce" ingredients and combine. Set aside.', section: SECTIONS.SAUCE },

@@ -12,13 +12,10 @@ const bars10 = '../assets/Products/almond-croissant-cookie-bar-10.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { UNSALTED_BUTTER, BROWN_SUGAR, EGG, VANILLA_EXTRACT, ALMOND_EXTRACT, SALT, ALL_PURPOSE_FLOUR, BAKING_POWDER, WHITE_SUGAR, ALMOND_FLOUR, SLICED_ALMONDS, POWDERED_SUGAR } = require('./ingredients');
 
-const CRUST_SECTION = 'Crust';
 const FRANGIPANE_SECTION = 'Frangipane';
 const ALMOND_TOPPING_SECTION = 'Almond';
 
-const MAKE_CRUST = 'Make Crust';
 const MAKE_FRANGIPANE = 'Make Frangipane';
-const ASSEMBLE = 'Assemble';
 const BAKE_BARS = 'Bake Bars';
 
 module.exports = {
@@ -42,14 +39,14 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 8, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted and cooled', section: CRUST_SECTION },
-        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CRUST_SECTION },
-        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: CRUST_SECTION },
-        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CRUST_SECTION },
-        { ...ALMOND_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CRUST_SECTION },
-        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CRUST_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CRUST_SECTION },
-        { ...BAKING_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CRUST_SECTION },
+        { ...UNSALTED_BUTTER, amount: 8, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted and cooled', section: SECTIONS.CRUST },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CRUST },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.CRUST },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CRUST },
+        { ...ALMOND_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CRUST },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CRUST },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CRUST },
+        { ...BAKING_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CRUST },
 
         { ...UNSALTED_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'room temperature', section: FRANGIPANE_SECTION },
         { ...WHITE_SUGAR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FRANGIPANE_SECTION },
@@ -75,19 +72,19 @@ module.exports = {
         { name: 'knife' },
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: MAKE_CRUST },
-        { step: 'Line a baking sheet with two sheets of parchment paper (perpendicular of each other).', section: MAKE_CRUST },
-        { step: 'In a mixing bowl, combine all the "Crust" section ingredients except the flour and baking powder. Mix until smooth.', section: MAKE_CRUST, img: bars1 },
-        { step: 'Add the flour and baking powder. Mix until it forms a thick batter.', section: MAKE_CRUST, img: bars2 },
-        { step: 'Transfer the batter to the pan and spread to an even layer.', section: MAKE_CRUST, img: bars3 },
+        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAKE_CRUST },
+        { step: 'Line a baking sheet with two sheets of parchment paper (perpendicular of each other).', section: SECTIONS.MAKE_CRUST },
+        { step: `In a mixing bowl, combine all the "${SECTIONS.CRUST}" section ingredients except the flour and baking powder. Mix until smooth.`, section: SECTIONS.MAKE_CRUST, img: bars1 },
+        { step: 'Add the flour and baking powder. Mix until it forms a thick batter.', section: SECTIONS.MAKE_CRUST, img: bars2 },
+        { step: 'Transfer the batter to the pan and spread to an even layer.', section: SECTIONS.MAKE_CRUST, img: bars3 },
 
         { step: 'In the same empty mixing bowl, combine butter, sugar and salt. Combine with a rubber spatula. Beat until fluffy (about 1 to 2 minutes). Scrape down sides.', section: MAKE_FRANGIPANE, img: bars4 },
         { step: 'Add vanilla and almond extracts. Mix.', section: MAKE_FRANGIPANE },
         { step: 'Add in eggs one at a time. Wait until each are incorporated. Scrape down sides.', section: MAKE_FRANGIPANE, img: bars5 },
         { step: 'Add in flour until just combined. Scrape down sides and fold in flour until smooth.', section: MAKE_FRANGIPANE, img: bars6 },
 
-        { step: 'Spread frangipane over crust in an even layer.', section: ASSEMBLE, img: bars7 },
-        { step: 'Sprinkle almonds over frangipane and press into frangipane.', section: ASSEMBLE, img: bars8 },
+        { step: 'Spread frangipane over crust in an even layer.', section: SECTIONS.ASSEMBLE, img: bars7 },
+        { step: 'Sprinkle almonds over frangipane and press into frangipane.', section: SECTIONS.ASSEMBLE, img: bars8 },
 
         { step: 'Bake until golden brown and the center is puffed (about 38 to 42 minutes).', section: BAKE_BARS, img: bars9 },
         { step: 'Let it completely cool (about 2 hours).', section: BAKE_BARS },

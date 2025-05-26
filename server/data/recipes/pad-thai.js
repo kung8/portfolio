@@ -38,14 +38,8 @@ const {
 } = require('./ingredients');
 
 const CHICKEN_AND_VEGGIES_SECTION = 'Chicken and Veggies';
-const EGG_SECTION = 'Eggs';
-const NOODLES_SECTION = 'Noodles';
-const SAUCE_SECTION = 'Sauce';
 
 const COOK_CHICKEN_AND_VEGGIES = 'Cook Chicken and Veggies';
-const COOK_NOODLES = 'Cook Noodles';
-const PREP_SAUCE = 'Prep Sauce';
-const COOK_EGGS = 'Cook Eggs';
 const ASSEMBLE = 'Assemble';
 const ROAST_PEANUTS = 'Roast Peanuts';
 
@@ -72,16 +66,16 @@ module.exports = {
         { ...GARLIC, amount: 9, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: CHICKEN_AND_VEGGIES_SECTION },
         { ...RED_BELL_PEPPER, amount: 4, unit: '', additionalDetails: 'sliced', section: CHICKEN_AND_VEGGIES_SECTION },
 
-        { ...BROWN_RICE_NOODLES, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: NOODLES_SECTION },
+        { ...BROWN_RICE_NOODLES, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
 
-        { ...EGG, amount: 6, unit: '', additionalDetails: '', section: EGG_SECTION },
+        { ...EGG, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.EGGS },
 
-        { ...SRIRACHA_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...FISH_SAUCE, amount: 9, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...BROWN_SUGAR, amount: 15, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...RICE_WINE_VINEGAR, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...PEANUT_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...SRIRACHA_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...FISH_SAUCE, amount: 9, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROWN_SUGAR, amount: 15, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...RICE_WINE_VINEGAR, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...PEANUT_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
         { ...UNSALTED_PEANUT, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...LIME, amount: 1, unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
@@ -105,18 +99,18 @@ module.exports = {
         { step: 'Add garlic and bell peppers. Cook for a few minutes.', section: COOK_CHICKEN_AND_VEGGIES, img: veggiesChicken },
         { step: 'Set aside.', section: COOK_CHICKEN_AND_VEGGIES },
 
-        { step: 'Over medium-high heat, boil water in a saucepan.', section: COOK_NOODLES, img: boilingNoodles },
-        { step: 'Add rice noodles. Cook until just barely tender (about 3 to 5 minutes). Be careful not to overcook the noodles.', section: COOK_NOODLES, img: boilingNoodles },
-        { step: 'Drain in a strainer. Rinse noodles under cold water.', section: COOK_NOODLES, img: [rinsing, noodles] },
+        { step: 'Over medium-high heat, boil water in a saucepan.', section: SECTIONS.COOK_NOODLES, img: boilingNoodles },
+        { step: 'Add rice noodles. Cook until just barely tender (about 3 to 5 minutes). Be careful not to overcook the noodles.', section: SECTIONS.COOK_NOODLES, img: boilingNoodles },
+        { step: 'Drain in a strainer. Rinse noodles under cold water.', section: SECTIONS.COOK_NOODLES, img: [rinsing, noodles] },
 
-        { step: 'In a medium bowl, mix together the sauce ingredients.', section: PREP_SAUCE, img: sauce },
-        { step: 'Set aside sauce.', section: PREP_SAUCE },
+        { step: 'In a medium bowl, mix together the sauce ingredients.', section: SECTIONS.PREP_SAUCE, img: sauce },
+        { step: 'Set aside sauce.', section: SECTIONS.PREP_SAUCE },
 
-        { step: 'Over medium-high heat, add a little butter to the wok.', section: COOK_EGGS },
-        { step: 'In a medium bowl, beat eggs.', section: COOK_EGGS, img: mixedEggs },
-        { step: 'Pour eggs in wok and cook. Spread the eggs and lift up the edges.', section: COOK_EGGS, img: partialEggs },
-        { step: 'Flip and cook for 30 seconds before turning off heat. Continue to let eggs cook with the residual heat.', section: COOK_EGGS, img: cookedEggs },
-        { step: 'Remove the eggs from wok and cut eggs into thin strips.', section: COOK_EGGS, img: strips },
+        { step: 'Over medium-high heat, add a little butter to the wok.', section: SECTIONS.COOK_EGGS },
+        { step: 'In a medium bowl, beat eggs.', section: SECTIONS.COOK_EGGS, img: mixedEggs },
+        { step: 'Pour eggs in wok and cook. Spread the eggs and lift up the edges.', section: SECTIONS.COOK_EGGS, img: partialEggs },
+        { step: 'Flip and cook for 30 seconds before turning off heat. Continue to let eggs cook with the residual heat.', section: SECTIONS.COOK_EGGS, img: cookedEggs },
+        { step: 'Remove the eggs from wok and cut eggs into thin strips.', section: SECTIONS.COOK_EGGS, img: strips },
 
         { step: 'In the wok, mix together noodles, chicken, and vegetables.', section: ASSEMBLE, img: mixed },
         { step: 'Add eggs. Carefully mix.', section: ASSEMBLE, img: mixedNoSauce },

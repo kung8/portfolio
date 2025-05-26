@@ -2,14 +2,9 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { GROUND_BEEF, RED_ONION, PICKLES, CHEDDAR_CHEESE, DIJON_MUSTARD, FISH_SAUCE, SALT, BLACK_PEPPER, SPRING_ROLL_RICE_WRAPPERS, SPRING_ROLL_WRAPPER, OLIVE_OIL, GREEK_YOGURT, KETCHUP, GARLIC, PICKLE_JUICE, SMOKED_PAPRIKA, COOKING_SPRAY } = require('./ingredients');
 
-const SPRING_ROLL_FILLING_SECTION = 'Spring Roll Filling';
 const SPRING_ROLL_SECTION = 'Spring Roll';
-const DIPPING_SAUCE_SECTION = 'Dipping Sauce';
 
-const PREP_FILLING = 'Prep Filling';
-const PREP_DIPPING_SAUCE = 'Prep Dipping Sauce';
 const PREP_SPRING_ROLLS = 'Prep Spring Rolls';
-const ASSEMBLE = 'Assemble';
 const COOK_SPRING_ROLLS = 'Cook Spring Rolls';
 
 module.exports = {
@@ -35,22 +30,22 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SPRING_ROLL_FILLING_SECTION },
-        { ...RED_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: SPRING_ROLL_FILLING_SECTION },
-        { ...PICKLES, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: SPRING_ROLL_FILLING_SECTION },
-        { ...CHEDDAR_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SPRING_ROLL_FILLING_SECTION },
-        { ...DIJON_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SPRING_ROLL_FILLING_SECTION },
-        { ...FISH_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPRING_ROLL_FILLING_SECTION },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPRING_ROLL_FILLING_SECTION },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPRING_ROLL_FILLING_SECTION },
+        { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...RED_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.FILLING },
+        { ...PICKLES, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.FILLING },
+        { ...CHEDDAR_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.FILLING },
+        { ...DIJON_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...FISH_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
 
-        { ...GREEK_YOGURT, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...DIJON_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...KETCHUP, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...PICKLES, amount: 3, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...PICKLE_JUICE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...SMOKED_PAPRIKA, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...GREEK_YOGURT, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DIP },
+        { ...DIJON_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DIP },
+        { ...KETCHUP, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DIP },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SECTIONS.DIP },
+        { ...PICKLES, amount: 3, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.DIP },
+        { ...PICKLE_JUICE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DIP },
+        { ...SMOKED_PAPRIKA, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DIP },
 
         { ...SPRING_ROLL_WRAPPER, amount: 12, unit: INGREDIENT_UNITS.PIECE, additionalDetails: '', section: SPRING_ROLL_SECTION },
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: SPRING_ROLL_SECTION },
@@ -65,9 +60,9 @@ module.exports = {
         { name: 'basting brush' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Spring Roll Filling" section ingredients. Mix until the seasoning is incorporated through the beef.', section: PREP_FILLING },
+        { step: 'In a mixing bowl, combine the "Filling" section ingredients. Mix until the seasoning is incorporated through the beef.', section: SECTIONS.PREP_FILLING },
 
-        { step: 'In a medium bowl, combine the "Dipping Sauce" section ingredients. Set aside.', section: PREP_DIPPING_SAUCE },
+        { step: 'In a medium bowl, combine the "Dip" section ingredients. Set aside.', section: SECTIONS.PREP_DIP },
 
         { step: 'On a clean surface or cutting board, place the spring roll wrapper with a corner facing you.', section: PREP_SPRING_ROLLS },
         { step: 'Place a large tablespoon of the filling 1 inch from the corner nearest you.', section: PREP_SPRING_ROLLS },

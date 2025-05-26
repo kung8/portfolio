@@ -2,11 +2,9 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { ZITI, ITALIAN_SAUSAGE, GARLIC, CRUSHED_TOMATOES, SALT, RED_PEPPER_FLAKES, HEAVY_CREAM, PARMIGIANO_REGGIANO, BASIL_LEAF, MOZZARELLA_CHEESE, WHITE_SUGAR } = require('./ingredients');
 
-const PASTA_SECTION = 'Pasta';
 const CASSEROLE_MIXTURE_SECTION = 'Casserole Mixture';
 const LAYERING_SECTION = 'Layering';
 
-const COOK_PASTA = 'Cook Pasta';
 const COOK_CASSEROLE_MIXTURE = 'Cook Casserole Mixture';
 const LAYER_CASSEROLE = 'Layer Casserole';
 const BAKE = 'Bake';
@@ -33,7 +31,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ZITI, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: PASTA_SECTION },
+        { ...ZITI, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.PASTA },
 
         { ...ITALIAN_SAUSAGE, amount: 1.5, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: CASSEROLE_MIXTURE_SECTION },
@@ -60,9 +58,9 @@ module.exports = {
         { name: 'wooden spoon' },
     ],
     directions: [
-        { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: COOK_PASTA },
-        { step: 'Add ziti and cook until it is al dente (about 7 minutes).', section: COOK_PASTA },
-        { step: 'Drain. Add back to pot and set aside.', section: COOK_PASTA },
+        { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: SECTIONS.COOK_PASTA },
+        { step: 'Add ziti and cook until it is al dente (about 7 minutes).', section: SECTIONS.COOK_PASTA },
+        { step: 'Drain. Add back to pot and set aside.', section: SECTIONS.COOK_PASTA },
 
         { step: 'Preheat the oven to 425ºF and set oven rack to the center.', section: COOK_CASSEROLE_MIXTURE },
         { step: 'Over medium-high heat, heat a large pan.', section: COOK_CASSEROLE_MIXTURE },

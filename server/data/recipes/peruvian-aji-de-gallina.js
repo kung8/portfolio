@@ -25,12 +25,8 @@ const {
 } = require('./ingredients');
 
 const ONION_SECTION = 'Onion Mixture';
-const CHICKEN_SECTION = 'Chicken';
-const SAUCE_SECTION = 'Sauce';
 
 const PREP_ONION = 'Prep Onion';
-const COOK_CHICKEN = 'Cook Chicken';
-const PREP_SAUCE = 'Prep Sauce';
 const COOK_AND_COMBINE = 'Cook and Combine';
 
 module.exports = {
@@ -59,11 +55,11 @@ module.exports = {
         { ...OREGANO, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
         { ...NUTMEG, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', optional: true, section: ONION_SECTION },
 
-        { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: '', optional: false, section: CHICKEN_SECTION },
+        { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: '', optional: false, section: SECTIONS.CHICKEN },
 
-        { ...YELLOW_BELL_PEPPER, amount: 3 / 2, unit: '', additionalDetails: '', optional: false, section: SAUCE_SECTION },
-        { ...BREAD, amount: 4, unit: '', additionalDetails: '', optional: false, section: SAUCE_SECTION },
-        { ...MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SAUCE_SECTION },
+        { ...YELLOW_BELL_PEPPER, amount: 3 / 2, unit: '', additionalDetails: '', optional: false, section: SECTIONS.SAUCE_SECTION },
+        { ...BREAD, amount: 4, unit: '', additionalDetails: '', optional: false, section: SECTIONS.SAUCE_SECTION },
+        { ...MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.SAUCE_SECTION },
 
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false, section: SECTIONS.MAIN },
         { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
@@ -87,9 +83,9 @@ module.exports = {
     ],
     directions: [
         { step: 'In a small bowl, combine the "Onion Mixture" section ingredients.', section: PREP_ONION },
-        { step: 'Boil the chicken breasts in a pot of water.', section: COOK_CHICKEN, img: boiling },
-        { step: 'Once the chicken is cooked, shred the chicken on a cutting board. Place the shredded chicken in a large mixing bowl. Keep some of the chicken broth in the pot.', section: COOK_CHICKEN, img: shredded },
-        { step: 'Add the "Sauce" section ingredients to a blender and blend together.', section: PREP_SAUCE, img: [blender, breadInBlender, blended] },
+        { step: 'Boil the chicken breasts in a pot of water.', section: SECTIONS.COOK_CHICKEN, img: boiling },
+        { step: 'Once the chicken is cooked, shred the chicken on a cutting board. Place the shredded chicken in a large mixing bowl. Keep some of the chicken broth in the pot.', section: SECTIONS.COOK_CHICKEN, img: shredded },
+        { step: 'Add the "Sauce" section ingredients to a blender and blend together.', section: SECTIONS.PREP_SAUCE, img: [blender, breadInBlender, blended] },
         { step: 'Over medium-high heat, heat oil in pan. brown the garlic.', section: COOK_AND_COMBINE, img: garlic },
         { step: 'Add the garlic. Cook until the garlic is fragrant and is light brown.', section: COOK_AND_COMBINE, img: garlic },
         { step: 'Add the onions to the pan. Cook until the onions are browned.', section: COOK_AND_COMBINE, img: onion },

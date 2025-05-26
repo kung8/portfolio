@@ -9,7 +9,6 @@ const PEAS_SECTION = 'Peas';
 const CHUTNEY_SECTION = 'Chutney';
 
 const PREP_TORTILLA = 'Prep Tortilla';
-const PREP_FILLING = 'Prep Filling';
 const ASSEMBLE_AND_COOK = 'Assemble and Cook';
 const PREP_CHUTNEY = 'Prep Chutney';
 
@@ -82,15 +81,15 @@ module.exports = {
         { step: 'Preheat the oven to 350ºF.', section: PREP_TORTILLA },
         { step: 'Wrap the tortilla in a damp kitchen towel. Place in a baking dish and cover with foil.', section: PREP_TORTILLA },
         { step: 'Heat until they are warmed through (about 15 to 20 minutes).', section: PREP_TORTILLA },
-        { step: 'Over medium-high heat, bring a pot of water to a boil.', section: PREP_FILLING },
-        { step: 'Add potatoes and cauliflower. Boil until tender.', section: PREP_FILLING },
-        { step: 'Drain. Set aside.', section: PREP_FILLING },
-        { step: 'Over medium-high heat, add onions and jalapeno to a large pan.', section: PREP_FILLING },
-        { step: 'Saute and deglaze with a little vegetable broth as needed.', section: PREP_FILLING },
-        { step: 'Once onions are tender, add the "Herbs" section ingredients.', section: PREP_FILLING },
-        { step: 'Turn down to medium-low heat and simmer for 5 minutes.', section: PREP_FILLING },
-        { step: 'Add potatoes, cauliflower and all the "Peas" section ingredients. Mix and slightly mash the potatoes and cauliflower.', section: PREP_FILLING },
-        { step: 'Turn up to medium heat and cook for 8 to 10 minutes.', section: PREP_FILLING },
+        { step: 'Over medium-high heat, bring a pot of water to a boil.', section: SECTIONS.PREP_FILLING },
+        { step: 'Add potatoes and cauliflower. Boil until tender.', section: SECTIONS.PREP_FILLING },
+        { step: 'Drain. Set aside.', section: SECTIONS.PREP_FILLING },
+        { step: 'Over medium-high heat, add onions and jalapeno to a large pan.', section: SECTIONS.PREP_FILLING },
+        { step: 'Saute and deglaze with a little vegetable broth as needed.', section: SECTIONS.PREP_FILLING },
+        { step: 'Once onions are tender, add the "Herbs" section ingredients.', section: SECTIONS.PREP_FILLING },
+        { step: 'Turn down to medium-low heat and simmer for 5 minutes.', section: SECTIONS.PREP_FILLING },
+        { step: 'Add potatoes, cauliflower and all the "Peas" section ingredients. Mix and slightly mash the potatoes and cauliflower.', section: SECTIONS.PREP_FILLING },
+        { step: 'Turn up to medium heat and cook for 8 to 10 minutes.', section: SECTIONS.PREP_FILLING },
         { step: 'Turn oven to 400ºF (make sure to remove the tortillas from the oven).', section: ASSEMBLE_AND_COOK },
         { step: 'Line a baking sheet with parchment paper.', section: ASSEMBLE_AND_COOK },
         { step: 'Fill the tortilla with about 1/2 to 3/4 cup of filling (avoid overfilling).', section: ASSEMBLE_AND_COOK },

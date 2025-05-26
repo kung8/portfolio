@@ -1,13 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { BEEF_SIRLOIN, LIGHT_SOY_SAUCE, GARLIC, OYSTER_SAUCE, RED_WINE_VINEGAR, AJI_AMARILLO_PASTE, CORNSTARCH, RED_ONION, ROMA_TOMATO, GREEN_ONION, VEGETABLE_OIL, CILANTRO, WHITE_RICE, FRENCH_FRIES } = require('./ingredients');
-
-const BEEF_SECTION = 'Beef';
-const SAUCE_SECTION = 'Sauce';
-
-const MARINATE_BEEF = 'Marinate Beef';
-const PREP_SAUCE = 'Prep Sauce';
-const STIR_FRY = 'Stir Fry';
 
 module.exports = {
     wip: true,
@@ -31,20 +24,20 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BEEF_SIRLOIN, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thinly sliced', section: BEEF_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
-        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: BEEF_SECTION },
+        { ...BEEF_SIRLOIN, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thinly sliced', section: SECTIONS.BEEF },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BEEF },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.BEEF },
 
-        { ...LIGHT_SOY_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...OYSTER_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...RED_WINE_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...AJI_AMARILLO_PASTE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OYSTER_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...RED_WINE_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...AJI_AMARILLO_PASTE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '', section: STIR_FRY },
-        { ...RED_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'thinly sliced', section: STIR_FRY },
-        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: STIR_FRY },
-        { ...ROMA_TOMATO, amount: 3, unit: '', additionalDetails: 'thinly sliced', section: STIR_FRY },
+        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.STIR_FRY },
+        { ...RED_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'thinly sliced', section: SECTIONS.STIR_FRY },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.STIR_FRY },
+        { ...ROMA_TOMATO, amount: 3, unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.STIR_FRY },
 
         { ...GREEN_ONION, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
@@ -60,19 +53,19 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Beef" section ingredients.', section: MARINATE_BEEF },
-        { step: 'Let it marinate for 5 to 7 minutes.', section: MARINATE_BEEF },
+        { step: 'In a mixing bowl, combine the "Beef" section ingredients.', section: SECTIONS.MARINATE_BEEF },
+        { step: 'Let it marinate for 5 to 7 minutes.', section: SECTIONS.MARINATE_BEEF },
 
-        { step: 'In a small bowl, combine the "Sauce" section ingredients. Stir and set aside.', section: PREP_SAUCE },
+        { step: 'In a small bowl, combine the "Sauce" section ingredients. Stir and set aside.', section: SECTIONS.PREP_SAUCE },
 
-        { step: 'Over medium-high heat, add 1 tablespoon of oil to a wok.', section: STIR_FRY },
-        { step: 'Add the beef. Sear both sides of the beef (about 1 to 2 minutes). Cook in batches if needed and add more between batches as needed.', section: STIR_FRY },
-        { step: 'Remove beef from pan. Set aside.', section: STIR_FRY },
-        { step: 'Add onions. Sauté for 1 minute.', section: STIR_FRY },
-        { step: 'Add garlic and tomatoes. Sauté for 1 minute.', section: STIR_FRY },
-        { step: 'Re-add the beef.', section: STIR_FRY },
-        { step: 'If you want the french fries in the sauce, add the french fries now. Or leave out if you want it to be crispy.', section: STIR_FRY },
-        { step: 'Add the sauce and combine until everything is coated.', section: STIR_FRY },
+        { step: 'Over medium-high heat, add 1 tablespoon of oil to a wok.', section: SECTIONS.STIR_FRY },
+        { step: 'Add the beef. Sear both sides of the beef (about 1 to 2 minutes). Cook in batches if needed and add more between batches as needed.', section: SECTIONS.STIR_FRY },
+        { step: 'Remove beef from pan. Set aside.', section: SECTIONS.STIR_FRY },
+        { step: 'Add onions. Sauté for 1 minute.', section: SECTIONS.STIR_FRY },
+        { step: 'Add garlic and tomatoes. Sauté for 1 minute.', section: SECTIONS.STIR_FRY },
+        { step: 'Re-add the beef.', section: SECTIONS.STIR_FRY },
+        { step: 'If you want the french fries in the sauce, add the french fries now. Or leave out if you want it to be crispy.', section: SECTIONS.STIR_FRY },
+        { step: 'Add the sauce and combine until everything is coated.', section: SECTIONS.STIR_FRY },
 
         { step: 'Serve this delicious dish with rice and crispy french fries. Top with green onions and cilantro.', section: SECTIONS.SERVE },
     ]

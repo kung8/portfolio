@@ -2,7 +2,6 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { BABY_SPINACH, ALL_PURPOSE_FLOUR, SALT } = require('./ingredients');
 
-const PREP_DOUGH = 'Prep Dough';
 const COOK_DOUGH = 'Cook Dough';
 
 module.exports = {
@@ -38,12 +37,12 @@ module.exports = {
         { name: 'large pot' },
     ],
     directions: [
-        { step: 'Add all ingredients to a food processor.', section: PREP_DOUGH },
-        { step: 'Blend until it forms a vibrant green, smooth dough.', section: PREP_DOUGH },
-        { step: 'Transfer to a clean working station.', section: PREP_DOUGH },
-        { step: 'Pinch a teaspoon worth of dough.', section: PREP_DOUGH },
-        { step: 'Roll it out to long skinny shapes.', section: PREP_DOUGH },
-        { step: 'Repeat for the rest of the dough.', section: PREP_DOUGH },
+        { step: 'Add all ingredients to a food processor.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Blend until it forms a vibrant green, smooth dough.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Transfer to a clean working station.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Pinch a teaspoon worth of dough.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Roll it out to long skinny shapes.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Repeat for the rest of the dough.', section: SECTIONS.PREP_DOUGH },
         { step: 'Bring a pot of salted water to a boil.', section: COOK_DOUGH },
         { step: 'Drop dough into water.', section: COOK_DOUGH },
         { step: 'Cook until the dough floats to the top (about 30 seconds to 1 minute).', section: COOK_DOUGH },

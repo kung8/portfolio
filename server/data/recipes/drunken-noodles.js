@@ -8,9 +8,6 @@ const drunken7 = '../assets/Products/drunken-noodles-7.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGG, SERRANO_PEPPER, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATO } = require('./ingredients');
 
-const MAKE_SAUCE = 'Make Sauce';
-const COOK_NOODLES = 'Cook Noodles';
-
 module.exports = {
     cardName: 'Drunken Noodles',
     name: 'Drunken Noodles',
@@ -58,13 +55,13 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'In a small bowl, combine the "Sauce" section ingredients.', section: MAKE_SAUCE, img: drunken1 },
-        { step: 'Over high heat, add oil to a wok.', section: COOK_NOODLES },
-        { step: 'Add garlic and cook until light brown.', section: COOK_NOODLES, img: drunken2 },
-        { step: 'Add eggs and serrano peppers. Lightly scramble and cook until it is barely set (about 1 minute).', section: COOK_NOODLES, img: drunken3 },
-        { step: 'Add shrimp and onion. Cook and fold until shrimp becomes pink (about 1 minute).', section: COOK_NOODLES, img: drunken4 },
-        { step: 'Add noodles, basil, tomatoes and sauce. Stir and cook (about 3 minutes). Be sure to scrape the bottom.', section: COOK_NOODLES, img: drunken5 },
-        { step: 'Cook until the noodles are cooked and coated (about 1 minute).', section: COOK_NOODLES },
+        { step: 'In a small bowl, combine the "Sauce" section ingredients.', section: SECTIONS.COOK_SAUCE, img: drunken1 },
+        { step: 'Over high heat, add oil to a wok.', section: SECTIONS.COOK_NOODLES },
+        { step: 'Add garlic and cook until light brown.', section: SECTIONS.COOK_NOODLES, img: drunken2 },
+        { step: 'Add eggs and serrano peppers. Lightly scramble and cook until it is barely set (about 1 minute).', section: SECTIONS.COOK_NOODLES, img: drunken3 },
+        { step: 'Add shrimp and onion. Cook and fold until shrimp becomes pink (about 1 minute).', section: SECTIONS.COOK_NOODLES, img: drunken4 },
+        { step: 'Add noodles, basil, tomatoes and sauce. Stir and cook (about 3 minutes). Be sure to scrape the bottom.', section: SECTIONS.COOK_NOODLES, img: drunken5 },
+        { step: 'Cook until the noodles are cooked and coated (about 1 minute).', section: SECTIONS.COOK_NOODLES },
         { step: 'Enjoy this dish warm!', section: SECTIONS.SERVE, img: drunken7 },
     ],
     notes: [

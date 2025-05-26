@@ -13,7 +13,6 @@ const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UN
 const { MILK_CHOCOLATE_CHIPS, PEANUT_BUTTER, SALT, POWDERED_SUGAR } = require('./ingredients');
 
 const CHOCOLATE_SECTION = 'Chocolate';
-const FILLING_SECTION = 'Filling';
 const FIRST_CHILL = 'First Chill';
 const SECOND_CHILL = 'Second Chill';
 
@@ -39,9 +38,9 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...MILK_CHOCOLATE_CHIPS, amount: 23, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: CHOCOLATE_SECTION },
-        { ...PEANUT_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FILLING_SECTION },
-        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FILLING_SECTION },
-        { ...POWDERED_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FILLING_SECTION },
+        { ...PEANUT_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...POWDERED_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
     ],
     appliances: [
         { name: 'refrigerator' },

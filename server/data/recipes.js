@@ -236,6 +236,7 @@ const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
 const pineappleUpsideDownCake = require("./recipes/pineapple-upside-down-cake");
 const piriPiriChickenBowl = require("./recipes/piri-piri-chicken-bowl");
 const pizza = require("./recipes/pizza");
+const pizzaEggRolls = require('./recipes/pizza-egg-rolls.js');
 const poachedSalmonWithHollandaiseSauce = require("./recipes/poached-salmon-with-hollandaise-sauce");
 const popTarts = require("./recipes/pop-tarts");
 const popcornBalls = require("./recipes/popcorn-balls");
@@ -580,6 +581,7 @@ const recipes = [
     cheeseballs,
     garlicBreadsticks,
     cheeseburgerSpringRolls,
+    pizzaEggRolls,
     buffaloChickenCheeseBalls,
     mozzarellaSticks,
     sausageBalls,

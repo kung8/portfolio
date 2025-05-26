@@ -19,12 +19,7 @@ const crostata17 = '../assets/Products/cherry-crostata-17.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, WHITE_SUGAR, LEMON_ZEST, BAKING_POWDER, SALT, UNSALTED_BUTTER, EGG, EGG_YOLK, VANILLA_EXTRACT, CHERRY, LEMON_JUICE, CORNSTARCH, DARK_COOKING_CHOCOLATE } = require('./ingredients');
 
-const DOUGH_SECTION = 'Dough';
-const FILLING_SECTION = 'Filling';
 const ASSEMBLY_SECTION = 'Assembly';
-
-const MAKE_DOUGH = 'Make Dough';
-const MAKE_FILLING = 'Make Filling';
 const ASSEMBLE_CROSTATA = 'Assemble Crostata';
 
 module.exports = {
@@ -48,22 +43,22 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...LEMON_ZEST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...BAKING_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...UNSALTED_BUTTER, amount: 11, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chilled and divided', section: DOUGH_SECTION },
-        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...EGG_YOLK, amount: 1, unit: '', additionalDetails: '', section: DOUGH_SECTION },
-        { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...LEMON_ZEST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...BAKING_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...UNSALTED_BUTTER, amount: 11, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chilled and divided', section: SECTIONS.DOUGH },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...EGG_YOLK, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
 
-        { ...CHERRY, amount: 10 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'pitted', section: FILLING_SECTION },
-        { ...LEMON_JUICE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FILLING_SECTION },
-        { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FILLING_SECTION },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: FILLING_SECTION },
-        { ...WHITE_SUGAR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FILLING_SECTION },
-        
+        { ...CHERRY, amount: 10 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'pitted', section: SECTIONS.FILLING },
+        { ...LEMON_JUICE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WHITE_SUGAR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+
         { ...DARK_COOKING_CHOCOLATE, amount: 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'chopped', section: ASSEMBLY_SECTION },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: ASSEMBLY_SECTION },
     ],
@@ -78,14 +73,14 @@ module.exports = {
         { name: 'dough knife' },
     ],
     directions: [
-        { step: 'In a stand mixer, combine the flour, sugar, lemon zest, baking powder and salt.', section: MAKE_DOUGH, img: crostata1 },
-        { step: 'Add butter. Mix until it looks like wet sand.', section: MAKE_DOUGH, img: [crostata2, crostata3] },
-        { step: 'Add egg, yolk and vanilla. Mix. It will be crumbly but hold together.', section: MAKE_DOUGH, img: [crostata4, crostata5] },
-        { step: 'Transfer to a clean surface and flatten dough to a disc.', section: MAKE_DOUGH, img: [crostata6, crostata7] },
-        { step: 'Move to a plate and wrap. Chill for 1 hour.', section: MAKE_DOUGH, img: crostata8 },
+        { step: 'In a stand mixer, combine the flour, sugar, lemon zest, baking powder and salt.', section: SECTIONS.MAKE_DOUGH, img: crostata1 },
+        { step: 'Add butter. Mix until it looks like wet sand.', section: SECTIONS.MAKE_DOUGH, img: [crostata2, crostata3] },
+        { step: 'Add egg, yolk and vanilla. Mix. It will be crumbly but hold together.', section: SECTIONS.MAKE_DOUGH, img: [crostata4, crostata5] },
+        { step: 'Transfer to a clean surface and flatten dough to a disc.', section: SECTIONS.MAKE_DOUGH, img: [crostata6, crostata7] },
+        { step: 'Move to a plate and wrap. Chill for 1 hour.', section: SECTIONS.MAKE_DOUGH, img: crostata8 },
 
-        { step: 'Over medium heat, add cherries, lemon juice, cornstarch, salt and sugar to a saucepan. Stir occasionally and cook until burst (about 6 to 8 minutes).', section: MAKE_FILLING, img: [crostata9, crostata10] },
-        { step: 'Let cool for at least 15 minutes.', section: MAKE_FILLING },
+        { step: 'Over medium heat, add cherries, lemon juice, cornstarch, salt and sugar to a saucepan. Stir occasionally and cook until burst (about 6 to 8 minutes).', section: SECTIONS.PREP_FILLING, img: [crostata9, crostata10] },
+        { step: 'Let cool for at least 15 minutes.', section: SECTIONS.PREP_FILLING },
 
         { step: 'Position the oven rack in the center. Preheat the oven to 350ºF.', section: ASSEMBLE_CROSTATA },
         { step: 'Roll out dough to 1/4" thick.', section: ASSEMBLE_CROSTATA, img: crostata11 },

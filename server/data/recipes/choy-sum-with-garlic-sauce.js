@@ -11,11 +11,9 @@ const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UN
 const { CHOY_SUM, OYSTER_SAUCE, LIGHT_SOY_SAUCE, WHITE_SUGAR, GARLIC, SALT, VEGETABLE_OIL } = require('./ingredients');
 
 const CHOY_SUM_SECTION = 'Choy Sum';
-const SAUCE_SECTION = 'Sauce';
 const GARLIC_SECTION = 'Garlic';
 
 const COOK_CHOY_SUM = 'Cook Choy Sum';
-const COOK_SAUCE = 'Cook Sauce';
 
 module.exports = {
     cardName: 'Choy Sum',
@@ -40,9 +38,9 @@ module.exports = {
         { ...CHOY_SUM, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: CHOY_SUM_SECTION },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: CHOY_SUM_SECTION },
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHOY_SUM_SECTION },
-        { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
-        { ...WHITE_SUGAR, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SAUCE_SECTION },
+        { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: GARLIC_SECTION },
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'chopped', section: GARLIC_SECTION },
     ],
@@ -68,11 +66,11 @@ module.exports = {
         { step: 'Drain and dry with paper towels.', section: COOK_CHOY_SUM, img: choy4 },
         { step: 'Transfer to a plate.', section: COOK_CHOY_SUM },
 
-        { step: 'In a small bowl, combine the "Sauce" section ingredients.', section: COOK_SAUCE },
-        { step: 'Over medium heat, heat oil in a saucepan.', section: COOK_SAUCE },
-        { step: 'Add garlic. Stir and cook until fragrant (about 30 seconds).', section: COOK_SAUCE, img: choy5 },
-        { step: 'Add sauce. Cook until the sauce slightly thickens (about 30 seconds to 1 minute).', section: COOK_SAUCE, img: choy6 },
-        { step: 'Pour sauce over choy sum immediately.', section: COOK_SAUCE, img: choy7 },
+        { step: 'In a small bowl, combine the "Sauce" section ingredients.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Over medium heat, heat oil in a saucepan.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Add garlic. Stir and cook until fragrant (about 30 seconds).', section: SECTIONS.COOK_SAUCE, img: choy5 },
+        { step: 'Add sauce. Cook until the sauce slightly thickens (about 30 seconds to 1 minute).', section: SECTIONS.COOK_SAUCE, img: choy6 },
+        { step: 'Pour sauce over choy sum immediately.', section: SECTIONS.COOK_SAUCE, img: choy7 },
 
         { step: 'Enjoy this fresh tasting dish warm!', section: SECTIONS.SERVE, img: choy9 },
     ],

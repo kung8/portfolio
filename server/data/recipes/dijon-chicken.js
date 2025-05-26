@@ -2,11 +2,6 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { CHICKEN_THIGH, SALT, BLACK_PEPPER, OLIVE_OIL, UNSALTED_BUTTER, DIJON_MUSTARD, YELLOW_ONION, WHITE_WINE, CHICKEN_BROTH, HEAVY_CREAM, BAY_LEAF, FRESH_THYME } = require('./ingredients');
 
-const CHICKEN_SECTION = 'Chicken';
-const SAUCE_SECTION = 'Sauce';
-
-const COOK_CHICKEN = 'Cook Chicken';
-const COOK_SAUCE = 'Cook Sauce';
 const BAKE_DIJON_CHICKEN = 'Bake Dijon Chicken';
 
 module.exports = {
@@ -32,20 +27,20 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHICKEN_THIGH, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: CHICKEN_SECTION },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SECTION },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_SECTION },
-        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_SECTION },
-        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_SECTION },
-        { ...DIJON_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...CHICKEN_THIGH, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...DIJON_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
 
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', section: SAUCE_SECTION },
-        { ...DIJON_MUSTARD, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
-        { ...WHITE_WINE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
-        { ...CHICKEN_BROTH, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
-        { ...HEAVY_CREAM, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUCE_SECTION },
-        { ...BAY_LEAF, amount: 1, unit: '', additionalDetails: '', section: SAUCE_SECTION },
-        { ...FRESH_THYME, amount: 5, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: '', section: SAUCE_SECTION },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...DIJON_MUSTARD, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_WINE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CHICKEN_BROTH, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HEAVY_CREAM, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BAY_LEAF, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...FRESH_THYME, amount: 5, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stove' },
@@ -55,19 +50,19 @@ module.exports = {
         { name: 'dutch oven pot' },
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: COOK_CHICKEN },
-        { step: 'Season both sides of the chicken with salt and pepper.', section: COOK_CHICKEN },
-        { step: 'Over medium-high heat, heat oil and butter in a dutch oven pot.', section: COOK_CHICKEN },
-        { step: 'Add chicken thigh, skin-side down. Cook until skin is golden (about 3 to 4 minutes).', section: COOK_CHICKEN },
-        { step: 'Flip chicken. Brush top with mustard and cook until bottom is golden (about 3 to 4 minutes).', section: COOK_CHICKEN },
-        { step: 'Transfer chicken to a plate.', section: COOK_CHICKEN },
+        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Season both sides of the chicken with salt and pepper.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Over medium-high heat, heat oil and butter in a dutch oven pot.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Add chicken thigh, skin-side down. Cook until skin is golden (about 3 to 4 minutes).', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Flip chicken. Brush top with mustard and cook until bottom is golden (about 3 to 4 minutes).', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Transfer chicken to a plate.', section: SECTIONS.COOK_CHICKEN },
 
-        { step: 'Lower to medium heat.', section: COOK_SAUCE },
-        { step: 'Add onion and mustard. Cook until onions are translucent and coated (about 4 to 5 minutes).', section: COOK_SAUCE },
-        { step: 'Add wine. Deglaze the pan.', section: COOK_SAUCE },
-        { step: 'Increase to medium-high heat. Bring to a boil.', section: COOK_SAUCE },
-        { step: 'Let simmer until no longer smells of alcohol (about 3 minutes).', section: COOK_SAUCE },
-        { step: 'Add the rest of the "Sauce" section ingredients. Stir.', section: COOK_SAUCE },
+        { step: 'Lower to medium heat.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Add onion and mustard. Cook until onions are translucent and coated (about 4 to 5 minutes).', section: SECTIONS.COOK_SAUCE },
+        { step: 'Add wine. Deglaze the pan.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Increase to medium-high heat. Bring to a boil.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Let simmer until no longer smells of alcohol (about 3 minutes).', section: SECTIONS.COOK_SAUCE },
+        { step: 'Add the rest of the "Sauce" section ingredients. Stir.', section: SECTIONS.COOK_SAUCE },
         
         { step: 'Add chicken, skin-side up, to the pan.', section: BAKE_DIJON_CHICKEN },
         { step: 'Bake until chicken is no longer pink and it reaches an internal temperature of 165ºF (about 15 to 20 minutes).', section: BAKE_DIJON_CHICKEN },

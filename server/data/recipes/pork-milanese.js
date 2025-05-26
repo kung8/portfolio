@@ -1,14 +1,8 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { PORK_CHOPS, ALL_PURPOSE_FLOUR, EGG, PANKO_BREADCRUMBS, OLIVE_OIL, UNSALTED_BUTTER, SALT, BLACK_PEPPER, LEMON_JUICE, CUCUMBER, PARMESAN_CHEESE, ASPARAGUS, BABY_ARUGULA, BABY_KALE, RADISH, PEAS, MICROGREENS } = require('./ingredients');
 
-const PORK_SECTION = 'Pork';
-const SALAD_SECTION = 'Salad';
-
-const PREP_PORK = 'Prep Pork';
 const DREDGE_PORK = 'Dredge Pork';
-const COOK_PORK = 'Cook Pork';
-const PREP_SALAD = 'Prep Salad';
 
 module.exports = {
     wip: true,
@@ -32,22 +26,22 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...PORK_CHOPS, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'bone-in', section: PORK_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PORK_SECTION },
-        { ...EGG, amount: 3, unit: '', additionalDetails: '', section: PORK_SECTION },
-        { ...PANKO_BREADCRUMBS, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PORK_SECTION },
-        { ...OLIVE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PORK_SECTION },
-        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PORK_SECTION },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: PORK_SECTION },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: PORK_SECTION },
+        { ...PORK_CHOPS, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'bone-in', section: SECTIONS.PORK },
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.PORK },
+        { ...EGG, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.PORK },
+        { ...PANKO_BREADCRUMBS, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.PORK },
+        { ...OLIVE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.PORK },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.PORK },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.PORK },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.PORK },
 
-        { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SALAD_SECTION },
-        { ...OLIVE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SALAD_SECTION },
-        { ...BABY_ARUGULA, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SALAD_SECTION },
-        { ...BABY_KALE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SALAD_SECTION },
-        { ...PARMESAN_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: SALAD_SECTION },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SALAD_SECTION },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SALAD_SECTION },
+        { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SALAD },
+        { ...OLIVE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SALAD },
+        { ...BABY_ARUGULA, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SALAD },
+        { ...BABY_KALE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SALAD },
+        { ...PARMESAN_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: SECTIONS.SALAD },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SALAD },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SALAD },
     ],
     appliances: [
         { name: 'stove' },
@@ -64,22 +58,22 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'Place pork chop between two pieces of plastic wrap.', section: PREP_PORK },
-        { step: 'Pound the meat with a meat tenderizer until it is between 1/4 inch and 1/2 inch thick.', section: PREP_PORK },
-        { step: 'Season both sides of the pork chop with salt and pepper.', section: PREP_PORK },
+        { step: 'Place pork chop between two pieces of plastic wrap.', section: SECTIONS.PREP_PORK },
+        { step: 'Pound the meat with a meat tenderizer until it is between 1/4 inch and 1/2 inch thick.', section: SECTIONS.PREP_PORK },
+        { step: 'Season both sides of the pork chop with salt and pepper.', section: SECTIONS.PREP_PORK },
         { step: 'Line a baking sheet with paper towels and place a wire rack on top.', section: DREDGE_PORK },
         { step: 'Set up the dredging station bowls: (1) flour, (2) whisked eggs, and (3) panko breadcrumb.', section: DREDGE_PORK },
         { step: 'Dredge the pork on both sides in flour and shake excess off.', section: DREDGE_PORK },
         { step: 'Dredge in egg wash.', section: DREDGE_PORK },
         { step: 'Dredge in panko breadcrumbs.', section: DREDGE_PORK },
         { step: 'Place the breaded pork chops on a plate.', section: DREDGE_PORK },
-        { step: 'Over medium heat, add oil to a frying pan.', section: COOK_PORK },
-        { step: 'Add breaded pork. ', section: COOK_PORK },
-        { step: 'Cook until the pork is light golden brown (about 3 to 4 minutes).', section: COOK_PORK },
-        { step: 'Flip. Add 1 tablespoon of butter to the pan.', section: COOK_PORK },
-        { step: 'Cook the other side until it is light golden brown (about 3 to 4 minutes).', section: COOK_PORK },
-        { step: 'Let it drain on the wire rack.', section: COOK_PORK },
-        { step: 'In a mixing bowl, combine the "Salad" section ingredients.', section: PREP_SALAD },
+        { step: 'Over medium heat, add oil to a frying pan.', section: SECTIONS.COOK_PORK },
+        { step: 'Add breaded pork. ', section: SECTIONS.COOK_PORK },
+        { step: 'Cook until the pork is light golden brown (about 3 to 4 minutes).', section: SECTIONS.COOK_PORK },
+        { step: 'Flip. Add 1 tablespoon of butter to the pan.', section: SECTIONS.COOK_PORK },
+        { step: 'Cook the other side until it is light golden brown (about 3 to 4 minutes).', section: SECTIONS.COOK_PORK },
+        { step: 'Let it drain on the wire rack.', section: SECTIONS.COOK_PORK },
+        { step: 'In a mixing bowl, combine the "Salad" section ingredients.', section: SECTIONS.PREP_SALAD },
         { step: 'Plate the pork chop and top with the salad.', section: SECTIONS.SERVE },
     ]
 };

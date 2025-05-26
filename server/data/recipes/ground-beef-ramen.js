@@ -8,12 +8,9 @@ const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS,
 const { GROUND_BEEF, INSTANT_RAMEN, FROZEN_PEAS, FROZEN_CARROTS, LIGHT_SOY_SAUCE, HOISIN_SAUCE, GARLIC, VEGETABLE_OIL, GREEN_ONION, RED_PEPPER_FLAKES } = require('./ingredients');
 
 const BEEF_AND_GARLIC_SECTION = 'Beef and Garlic';
-const SAUCES_SECTION = 'Sauces';
 const FROZEN_SECTION = 'Frozen';
-const NOODLES_SECTION = 'Noodles';
 
 const SAUTE_ADDITIONS = 'Sauté Additions';
-const COOK_NOODLES = 'Cook Noodles';
 const ASSEMBLE = 'Assemble';
 
 module.exports = {
@@ -41,12 +38,12 @@ module.exports = {
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF_AND_GARLIC_SECTION },
         { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BEEF_AND_GARLIC_SECTION },
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: BEEF_AND_GARLIC_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUCES_SECTION },
-        { ...HOISIN_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SAUCES_SECTION },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HOISIN_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...FROZEN_PEAS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FROZEN_SECTION },
         { ...FROZEN_CARROTS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FROZEN_SECTION },
 
-        { ...INSTANT_RAMEN, amount: 3, unit: INGREDIENT_UNITS.PACKET, additionalDetails: '', section: NOODLES_SECTION },
+        { ...INSTANT_RAMEN, amount: 3, unit: INGREDIENT_UNITS.PACKET, additionalDetails: '', section: SECTIONS.NOODLES },
 
         { ...RED_PEPPER_FLAKES, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...GREEN_ONION, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
@@ -67,9 +64,9 @@ module.exports = {
         { step: 'Add "Frozen" section ingredients. Cook until heated through (about 2 to 3 minutes).', section: SAUTE_ADDITIONS, img: ramen3 },
         { step: 'Remove from heat. Set aside until noodles are cooked.', section: SAUTE_ADDITIONS },
 
-        { step: 'Oven high heat, bring a pot of water to a boil.', section: COOK_NOODLES },
-        { step: 'Add ramen noodles. Cook until just tender (about 3 minutes).', section: COOK_NOODLES },
-        { step: 'Drain. Set aside.', section: COOK_NOODLES },
+        { step: 'Oven high heat, bring a pot of water to a boil.', section: SECTIONS.COOK_NOODLES },
+        { step: 'Add ramen noodles. Cook until just tender (about 3 minutes).', section: SECTIONS.COOK_NOODLES },
+        { step: 'Drain. Set aside.', section: SECTIONS.COOK_NOODLES },
 
         { step: 'Add noodles to the large pan. Mix well.', section: ASSEMBLE, img: ramen4 },
         { step: 'Optionally add red pepper flakes. Mix.', section: ASSEMBLE },
