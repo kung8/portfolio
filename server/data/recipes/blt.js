@@ -4,7 +4,6 @@ const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS
 const { BACON, LETTUCE, ROMA_TOMATO, BREAD, MAYONNAISE } = require('./ingredients');
 
 const COOK_BACON = 'Cook Bacon';
-const ASSEMBLE_SANDWICH = 'Assemble Sandwich';
 
 module.exports = {
     cardName: 'B.L.T.',
@@ -47,8 +46,8 @@ module.exports = {
         { step: 'Line a plate with paper towels.', section: COOK_BACON },
         { step: 'Over medium-high heat, cook bacon in a frying pan until browned (about 10 minutes).', section: COOK_BACON },
         { step: 'Let the bacon drain on the paper towel.', section: COOK_BACON },
-        { step: 'Spread the mayo on a slice of toasted bread.', section: ASSEMBLE_SANDWICH },
-        { step: 'Layer the bacon, tomatoes and lettuce on the sandwich.', section: ASSEMBLE_SANDWICH, img: blt1 },
+        { step: 'Spread the mayo on a slice of toasted bread.', section: SECTIONS.ASSEMBLE },
+        { step: 'Layer the bacon, tomatoes and lettuce on the sandwich.', section: SECTIONS.ASSEMBLE, img: blt1 },
         { step: 'Enjoy this simple sandwich.', section: SECTIONS.SERVE },
     ]
 };

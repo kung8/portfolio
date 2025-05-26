@@ -16,10 +16,8 @@ const { KOREAN_GLASS_NOODLES, EGG, CARROT, RED_BELL_PEPPER, YELLOW_ONION, GREEN_
 
 const FIRST_VEGGIES_SECTION = 'First Veggies';
 const SECOND_VEGGIES_SECTION = 'Second Veggies';
-
 const COOK_FIRST_VEGGIES = 'Cook First Veggies';
 const COOK_SECOND_VEGGIES = 'Cook Second Veggies';
-const ASSEMBLE = 'Assemble';
 
 module.exports = {
     cardName: 'Japchae',
@@ -100,9 +98,9 @@ module.exports = {
         { step: 'Saute the onion, mushrooms, garlic, and green onions until softened.', section: COOK_SECOND_VEGGIES, img: japchae6 },
         { step: 'Add spinach and salt. Cook until spinach wilts. Set aside.', section: COOK_SECOND_VEGGIES, img: japchae7 },
 
-        { step: 'Over medium-high heat, combine the "Sauce" section ingredients.', section: ASSEMBLE, img: japchae8 },
-        { step: 'Once the sugar dissolves, add noodles. Toss to coat noodles in the sauce.', section: ASSEMBLE, img: japchae9 },
-        { step: 'Add vegetables back in and combine until mixed.', section: ASSEMBLE, img: japchae10 },
+        { step: `Over medium-high heat, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.ASSEMBLE, img: japchae8 },
+        { step: 'Once the sugar dissolves, add noodles. Toss to coat noodles in the sauce.', section: SECTIONS.ASSEMBLE, img: japchae9 },
+        { step: 'Add vegetables back in and combine until mixed.', section: SECTIONS.ASSEMBLE, img: japchae10 },
 
         { step: 'Serve topped with eggs and sesame seed.', section: SECTIONS.SERVE, img: japchae11 },
     ],

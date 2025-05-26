@@ -65,7 +65,7 @@ module.exports = {
         { step: 'Peel the remaining potatoes.', section: PREP_POTATO_BATTER },
         { step: 'Grate the potatoes.', section: PREP_POTATO_BATTER },
         { step: 'Wrap the potatoes in a kitchen towel and squeeze.', section: PREP_POTATO_BATTER },
-        { step: 'Add grated potatoes and the "Flour Mixture" section ingredients to the bowl.', section: PREP_POTATO_BATTER },
+        { step: `Add grated potatoes and the "${FLOUR_MIXTURE_SECTION}" section ingredients to the bowl.`, section: PREP_POTATO_BATTER },
         
         { step: 'Form patties with about 1/3 cup worth of batter.', section: FRY_PATTIES },
         { step: 'Over medium heat, heat butter in a large skillet.', section: FRY_PATTIES },

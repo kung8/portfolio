@@ -14,7 +14,6 @@ const { VEGETABLE_OIL, POTATO, CARROT, SWEET_ONION, GARLIC, RED_BELL_PEPPER, CHI
 const SEARING_SECTION = 'Searing';
 const CARAMELIZED_ONION_SECTION = 'Caramelized Onion';
 const GARLIC_SECTION = 'Garlic';
-const VEGETABLE_SECTION = 'Vegetables';
 const SEASONING_SECTION = 'Seasoning';
 const LIQUID_SECTION = 'Liquid';
 const CORNSTARCH_SLURRY_SECTION = 'Cornstarch Slurry';
@@ -53,9 +52,9 @@ module.exports = {
         { ...PORK_BUTT, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'boneless, bite size cubes', section: SEARING_SECTION },
         { ...SWEET_ONION, amount: 2, unit: '', additionalDetails: 'diced', section: CARAMELIZED_ONION_SECTION },
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: GARLIC_SECTION },
-        { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'diced', section: VEGETABLE_SECTION },
-        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: VEGETABLE_SECTION },
-        { ...POTATO, amount: 5, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: VEGETABLE_SECTION },
+        { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'diced', section: SECTIONS.VEGGIES },
+        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.VEGGIES },
+        { ...POTATO, amount: 5, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.VEGGIES },
         { ...PAPRIKA, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASONING_SECTION },
         { ...FENNEL_SEEDS, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONING_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: '', section: SEASONING_SECTION },
@@ -81,8 +80,8 @@ module.exports = {
         { step: 'Add pork. Brown on all sides. Set aside pork.', section: SEAR_PORK, img: [stew1, stew2] },
         { step: 'Add onion. Cook until caramelized (about 10 to 15 minutes).', section: CARAMELIZE_ONION, img: stew3 },
         { step: 'Add garlic. Cook until fragrant.', section: SAUTE_VEGETABLES },
-        { step: 'Add the "Vegetable" section ingredients. Saute for a few minutes.', section: SAUTE_VEGETABLES, img: stew4 },
-        { step: 'Re-add the pork and the "Seasoning" section ingredients. Mix.', section: COOK_STEW, img: [stew5, stew6] },
+        { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Saute for a few minutes.`, section: SAUTE_VEGETABLES, img: stew4 },
+        { step: `Re-add the pork and the "${SECTIONS.SEASONINGS}" section ingredients. Mix.`, section: COOK_STEW, img: [stew5, stew6] },
         { step: 'Add red wine. Deglaze the pot.', section: COOK_STEW },
         { step: 'Add chicken bouillon and water. It should almost cover the veggies. Bring to a boil.', section: COOK_STEW, img: stew7 },
         { step: 'Reduce to low heat. Cover. Simmer for an hour.', section: COOK_STEW },

@@ -49,7 +49,7 @@ module.exports = {
         { name: 'large pan' },
     ],
     directions: [
-        { step: 'In a medium bowl, combine the "Sauce" section ingredients.', section: MARINATE_CRAB },
+        { step: `In a medium bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: MARINATE_CRAB },
         { step: 'In a mixing bowl, toss the crab together with the crushed saltines.', section: MARINATE_CRAB },
         { step: 'Fold in mayo mixture and stir. Cover and refrigerate for 1 hour.', section: MARINATE_CRAB },
         { step: 'Form 1 1/2 inch thick patties (about 1/3 cup).', section: COOK_CRAB_CAKES },

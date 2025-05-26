@@ -73,7 +73,7 @@ module.exports = {
         { step: 'Flip. Add 1 tablespoon of butter to the pan.', section: SECTIONS.COOK_PORK },
         { step: 'Cook the other side until it is light golden brown (about 3 to 4 minutes).', section: SECTIONS.COOK_PORK },
         { step: 'Let it drain on the wire rack.', section: SECTIONS.COOK_PORK },
-        { step: 'In a mixing bowl, combine the "Salad" section ingredients.', section: SECTIONS.PREP_SALAD },
+        { step: `In a mixing bowl, combine the "${SECTIONS.SALAD}" section ingredients.`, section: SECTIONS.PREP_SALAD },
         { step: 'Plate the pork chop and top with the salad.', section: SECTIONS.SERVE },
     ]
 };

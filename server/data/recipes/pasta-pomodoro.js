@@ -2,8 +2,6 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { ANGEL_HAIR_PASTA, OLIVE_OIL, YELLOW_ONION, GARLIC, ROMA_TOMATO, BALSAMIC_VINEGAR, CHICKEN_BROTH, RED_PEPPER_FLAKES, BLACK_PEPPER, BASIL_LEAF, PARMESAN_CHEESE } = require('./ingredients');
 
-const ASSEMBLE_PASTA = 'Assemble Pasta';
-
 module.exports = {
     wip: true,
     cardName: 'Pasta Pomodoro',
@@ -55,8 +53,8 @@ module.exports = {
         { step: 'Mix in tomatoes, vinegar and chicken broth. Simmer for about 8 minutes.', section: SECTIONS.COOK_SAUCE },
         { step: 'Add spices and herb. Mix.', section: SECTIONS.COOK_SAUCE },
 
-        { step: 'Add pasta and toss.', section: ASSEMBLE_PASTA },
-        { step: 'Simmer for 5 minutes.', section: ASSEMBLE_PASTA },
+        { step: 'Add pasta and toss.', section: SECTIONS.ASSEMBLE },
+        { step: 'Simmer for 5 minutes.', section: SECTIONS.ASSEMBLE },
 
         { step: 'Serve warm and topped with grated cheese.', section: SECTIONS.SERVE },
     ]

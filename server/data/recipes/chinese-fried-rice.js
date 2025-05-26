@@ -76,7 +76,7 @@ module.exports = {
         { step: 'Fill the bowl with water and microwave for 2 minutes.', section: SECTIONS.PREP_VEGGIES },
         { step: 'Drain and set aside.', section: SECTIONS.PREP_VEGGIES, img: rice3 },
 
-        { step: 'In a small bowl, combine the "Sauce" section ingredients.', section: SECTIONS.PREP_SAUCE, img: rice1 },
+        { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE, img: rice1 },
 
         { step: 'Leave the lid on the rice cooker after it finishes cooking for a few minutes.', section: FLUFF_RICE },
         { step: 'Remove the lid and use chopsticks to stir and lift up the rice. This releases steam and helps prevent sticking.', section: FLUFF_RICE },

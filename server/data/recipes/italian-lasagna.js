@@ -46,8 +46,6 @@ const RICOTTA_MIXTURE = 'Ricotta Mixture';
 const CHEESE_TOPPING_SECTION = 'Cheese Topping';
 
 const COOK_SAUSAGE = 'Cook Sausage';
-const ASSEMBLE_LASAGNA = 'Assemble Lasagna';
-const BAKE_LASAGNA = 'Bake Lasagna';
 const PREP_RICOTTA_MIXTURE = 'Prep Ricotta Mixture';
 
 module.exports = {
@@ -120,31 +118,31 @@ module.exports = {
         { step: 'Over medium-high heat, heat a large pan.', section: COOK_SAUSAGE },
         { step: 'Add the sausage. Cook for a few minutes.', section: COOK_SAUSAGE, img: [lasagna2, lasagna3] },
 
-        { step: 'Add the "Beef and Veggies" section ingredients. Cook until browned.', section: SECTIONS.SAUCE, img: lasagna4 },
-        { step: 'Add the "Sauce" section ingredients.', section: SECTIONS.SAUCE, img: lasagna5 },
-        { step: 'Add the "Seasonings" section ingredients.', section: SECTIONS.SAUCE, img: lasagna6 },
+        { step: `Add the "${BEEF_AND_VEGGIES_SECTION}" section ingredients. Cook until browned.`, section: SECTIONS.SAUCE, img: lasagna4 },
+        { step: `Add the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.SAUCE, img: lasagna5 },
+        { step: `Add the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.SAUCE, img: lasagna6 },
         { step: 'Cover. Simmer for 90 minutes.', section: SECTIONS.SAUCE },
 
-        { step: 'In a mixing bowl, combine together the "Ricotta Mixture" section ingredients. Set aside.', section: PREP_RICOTTA_MIXTURE, img: lasagna7 },
+        { step: `In a mixing bowl, combine together the "${RICOTTA_MIXTURE}" section ingredients. Set aside.`, section: PREP_RICOTTA_MIXTURE, img: lasagna7 },
 
         { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: SECTIONS.COOK_NOODLES },
         { step: 'Add the noodles and make sure its submerged. Cook until just cooked (about 8 to 10 minutes).', section: SECTIONS.COOK_NOODLES, img: lasagna8 },
         { step: 'Drain. Rinse noodles with cold water.', section: SECTIONS.COOK_NOODLES },
 
-        { step: 'Preheat oven to 375ºF.', section: ASSEMBLE_LASAGNA },
-        { step: 'In a baking pan, pour 1 1/2 cup of the meat sauce.', section: ASSEMBLE_LASAGNA, img: lasagna9 },
-        { step: 'Layer 6 noodles length-wise over the meat sauce, overlapping a little.', section: ASSEMBLE_LASAGNA, img: lasagna10 },
-        { step: 'Add half of the ricotta mixture evenly over the noodles.', section: ASSEMBLE_LASAGNA, img: lasagna11 },
-        { step: 'Layer with a few slices of mozzarella.', section: ASSEMBLE_LASAGNA, img: lasagna12 },
-        { step: 'Add 1 1/2 cup of meat sauce.', section: ASSEMBLE_LASAGNA, img: lasagna13 },
-        { step: 'Add the last half of the ricotta cheese.', section: ASSEMBLE_LASAGNA },
-        { step: 'Add 1/4 cup of parmesan cheese.', section: ASSEMBLE_LASAGNA, img: lasagna14 },
-        { step: 'Layer with remaining noodles, mozzarella, and Parmesan cheese.', section: ASSEMBLE_LASAGNA, img: [lasagna15, lasagna16] },
-        { step: 'Cover this with tin foil. Avoid letting the cheese touch the foil.', section: ASSEMBLE_LASAGNA },
+        { step: 'Preheat oven to 375ºF.', section: SECTIONS.ASSEMBLE },
+        { step: 'In a baking pan, pour 1 1/2 cup of the meat sauce.', section: SECTIONS.ASSEMBLE, img: lasagna9 },
+        { step: 'Layer 6 noodles length-wise over the meat sauce, overlapping a little.', section: SECTIONS.ASSEMBLE, img: lasagna10 },
+        { step: 'Add half of the ricotta mixture evenly over the noodles.', section: SECTIONS.ASSEMBLE, img: lasagna11 },
+        { step: 'Layer with a few slices of mozzarella.', section: SECTIONS.ASSEMBLE, img: lasagna12 },
+        { step: 'Add 1 1/2 cup of meat sauce.', section: SECTIONS.ASSEMBLE, img: lasagna13 },
+        { step: 'Add the last half of the ricotta cheese.', section: SECTIONS.ASSEMBLE },
+        { step: 'Add 1/4 cup of parmesan cheese.', section: SECTIONS.ASSEMBLE, img: lasagna14 },
+        { step: 'Layer with remaining noodles, mozzarella, and Parmesan cheese.', section: SECTIONS.ASSEMBLE, img: [lasagna15, lasagna16] },
+        { step: 'Cover this with tin foil. Avoid letting the cheese touch the foil.', section: SECTIONS.ASSEMBLE },
 
-        { step: 'Bake for 25 minutes.', section: BAKE_LASAGNA },
-        { step: 'Remove the foil. Bake for another 25 minutes.', section: BAKE_LASAGNA },
-        { step: 'Let cool for at least 15 minutes.', section: BAKE_LASAGNA },
+        { step: 'Bake for 25 minutes.', section: SECTIONS.BAKE },
+        { step: 'Remove the foil. Bake for another 25 minutes.', section: SECTIONS.BAKE },
+        { step: 'Let cool for at least 15 minutes.', section: SECTIONS.BAKE },
 
         { step: 'Serve and enjoy this splash of Italian goodness.', section: SECTIONS.SERVE },
     ]

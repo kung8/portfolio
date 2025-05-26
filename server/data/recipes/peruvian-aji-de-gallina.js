@@ -25,7 +25,6 @@ const {
 } = require('./ingredients');
 
 const ONION_SECTION = 'Onion Mixture';
-
 const PREP_ONION = 'Prep Onion';
 const COOK_AND_COMBINE = 'Cook and Combine';
 
@@ -82,10 +81,10 @@ module.exports = {
         { name: 'spoon' },
     ],
     directions: [
-        { step: 'In a small bowl, combine the "Onion Mixture" section ingredients.', section: PREP_ONION },
+        { step: `In a small bowl, combine the "${ONION_SECTION}" section ingredients.`, section: PREP_ONION },
         { step: 'Boil the chicken breasts in a pot of water.', section: SECTIONS.COOK_CHICKEN, img: boiling },
         { step: 'Once the chicken is cooked, shred the chicken on a cutting board. Place the shredded chicken in a large mixing bowl. Keep some of the chicken broth in the pot.', section: SECTIONS.COOK_CHICKEN, img: shredded },
-        { step: 'Add the "Sauce" section ingredients to a blender and blend together.', section: SECTIONS.PREP_SAUCE, img: [blender, breadInBlender, blended] },
+        { step: `Add the "${SECTIONS.SAUCE}" section ingredients to a blender and blend together.`, section: SECTIONS.PREP_SAUCE, img: [blender, breadInBlender, blended] },
         { step: 'Over medium-high heat, heat oil in pan. brown the garlic.', section: COOK_AND_COMBINE, img: garlic },
         { step: 'Add the garlic. Cook until the garlic is fragrant and is light brown.', section: COOK_AND_COMBINE, img: garlic },
         { step: 'Add the onions to the pan. Cook until the onions are browned.', section: COOK_AND_COMBINE, img: onion },

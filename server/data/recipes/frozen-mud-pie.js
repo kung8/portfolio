@@ -10,8 +10,6 @@ const pie8 = '../assets/Products/frozen-mud-pie-8.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { OREO_COOKIES, UNSALTED_BUTTER, CHOCOLATE_ICE_CREAM, WHIPPED_CREAM, UNSALTED_PEANUT, HOT_FUDGE_SAUCE } = require('./ingredients');
 
-const CRUST_SECTION = 'Crust';
-const ICE_CREAM_FILLING_SECTION = 'Ice Cream Filling';
 const HOT_FUDGE_SECTION = 'Hot Fudge';
 
 const MAKE_CRUST = 'Make Crust';
@@ -40,9 +38,9 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...OREO_COOKIES, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed cookies', section: CRUST_SECTION },
-        { ...UNSALTED_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: CRUST_SECTION },
-        { ...CHOCOLATE_ICE_CREAM, amount: 1, unit: INGREDIENT_UNITS.QUART, additionalDetails: 'softened', section: ICE_CREAM_FILLING_SECTION },
+        { ...OREO_COOKIES, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed cookies', section: SECTIONS.CRUST },
+        { ...UNSALTED_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.CRUST },
+        { ...CHOCOLATE_ICE_CREAM, amount: 1, unit: INGREDIENT_UNITS.QUART, additionalDetails: 'softened', section: SECTIONS.FILLING },
         { ...HOT_FUDGE_SAUCE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: HOT_FUDGE_SECTION },
         { ...OREO_COOKIES, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed cookies', section: SECTIONS.TOPPINGS },
         { ...WHIPPED_CREAM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
@@ -56,7 +54,7 @@ module.exports = {
         { name: 'pie pan' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Crust" section ingredients.', section: MAKE_CRUST, img: [pie1, pie2, pie3] },
+        { step: `In a mixing bowl, combine the "${SECTIONS.CRUST}" section ingredients.`, section: MAKE_CRUST, img: [pie1, pie2, pie3] },
         { step: 'Pour the mixture into a pie pan.', section: MAKE_CRUST, img: pie4 },
         { step: 'Freeze until set (about 15 minutes).', section: MAKE_CRUST },
 
@@ -70,7 +68,7 @@ module.exports = {
         { step: 'Freeze for at least 2 hours or overnight.', section: ADD_TOPPINGS },
 
         { step: 'Serve this topped with any other favorite toppings.', section: SECTIONS.SERVE },
-    ], 
+    ],
     notes: [
         { note: 'I ended up having issues with drizzling the hot fudge. I ended up pouring it and then using a wooden skewer to drag the chocolate in a random pattern.' }
     ]

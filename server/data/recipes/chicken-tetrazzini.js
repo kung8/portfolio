@@ -61,7 +61,7 @@ module.exports = {
     directions: [
         { step: 'Cook spaghetti noodles al dente.', section: PREP_CASSEROLE },
         { step: 'Preheat the oven to 325ºF.', section: PREP_CASSEROLE },
-        { step: 'In a mixing bowl, combine all the "Sauce" section ingredients.', section: PREP_CASSEROLE, img: tetrazzini1 },
+        { step: `In a mixing bowl, combine all the "${SECTIONS.SAUCE}" section ingredients.`, section: PREP_CASSEROLE, img: tetrazzini1 },
         { step: 'Add noodles and toss.', section: PREP_CASSEROLE, img: [tetrazzini2, tetrazzini3] },
         { step: 'In a casserole dish, transfer noodle mixture.', section: PREP_CASSEROLE, img: tetrazzini4 },
         { step: 'Top with shredded cheese.', section: PREP_CASSEROLE, img: tetrazzini5 },

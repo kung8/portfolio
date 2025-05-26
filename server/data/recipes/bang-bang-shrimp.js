@@ -53,11 +53,11 @@ module.exports = {
         { name: 'paper towels' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Seasoning" section ingredients.', section: SECTIONS.PREP_SHRIMP },
+        { step: `In a mixing bowl, combine the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SHRIMP },
         { step: 'Pat shrimp dry with a paper towel.', section: SECTIONS.PREP_SHRIMP },
         { step: 'Add shrimp to bowl. Coat shrimp.', section: SECTIONS.PREP_SHRIMP },
 
-        { step: 'In another mixing bowl, combine the "Sauce" section ingredients.', section: SECTIONS.PREP_SAUCE },
+        { step: `In another mixing bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
         
         { step: 'Heat oil to 350ºF.', section: SECTIONS.DEEP_FRY },
         { step: 'Lined a plate with paper towel', section: SECTIONS.DEEP_FRY },

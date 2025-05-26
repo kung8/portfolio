@@ -60,10 +60,10 @@ module.exports = {
         { step: 'Cut the chicken into 1 inch pieces. Set aside.', section: SECTIONS.COOK_CHICKEN },
 
         { step: 'Over medium heat, melt butter in the dutch oven pot.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Add the rest of the "Sauce" section ingredients.', section: SECTIONS.COOK_SAUCE },
+        { step: `Add the rest of the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
         { step: 'Saute until it becomes fragrant.', section: SECTIONS.COOK_SAUCE },
 
-        { step: 'Add the "Pasta" section ingredients to the pot. Stir.', section: SECTIONS.COOK_PASTA },
+        { step: `Add the "${SECTIONS.PASTA}" section ingredients to the pot. Stir.`, section: SECTIONS.COOK_PASTA },
         { step: 'Cook until the pasta is al dente (for about 10 minutes). Stir occasionally.', section: SECTIONS.COOK_PASTA },
 
         { step: 'Add chicken and cook until the chicken is almost cooked through.', section: COMBINE },

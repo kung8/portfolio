@@ -60,9 +60,9 @@ module.exports = {
         { name: 'basting brush' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Filling" section ingredients. Mix until the seasoning is incorporated through the beef.', section: SECTIONS.PREP_FILLING },
+        { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients. Mix until the seasoning is incorporated through the beef.`, section: SECTIONS.PREP_FILLING },
 
-        { step: 'In a medium bowl, combine the "Dip" section ingredients. Set aside.', section: SECTIONS.PREP_DIP },
+        { step: `In a medium bowl, combine the "${SECTIONS.DIP}" section ingredients. Set aside.`, section: SECTIONS.PREP_DIP },
 
         { step: 'On a clean surface or cutting board, place the spring roll wrapper with a corner facing you.', section: PREP_SPRING_ROLLS },
         { step: 'Place a large tablespoon of the filling 1 inch from the corner nearest you.', section: PREP_SPRING_ROLLS },

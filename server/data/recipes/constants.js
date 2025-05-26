@@ -220,13 +220,17 @@ const SECTIONS = {
     CURRY: 'Curry',
     SALAD: 'Salad',
     DIP: 'Dip',
+    WRAPPER: 'Wrapper',
     
     MARINATE_CHICKEN: 'Marinate Chicken',
     MARINATE_BEEF: 'Marinate Beef',
     MARINATE_PORK: 'Marinate Pork',
+    MARINATE_SHRIMP: 'Marinate Shrimp',
 
     PREP_DOUGH: 'Prep Dough',
+    PREP_RICE: 'Prep Rice',
     PREP_PASTA: 'Prep Pasta',
+    PREP_BATTER: 'Prep Batter',
     PREP_FILLING: 'Prep Filling',
     PREP_MARINADE: 'Prep Marinade',
     PREP_SAUCE: 'Prep Sauce',
@@ -234,9 +238,11 @@ const SECTIONS = {
     PREP_BEEF: 'Prep Beef',
     PREP_CHICKEN: 'Prep Chicken',
     PREP_SHRIMP: 'Prep Shrimp',
+    PREP_FISH: 'Prep Fish',
     PREP_VEGGIES: 'Prep Veggies',
     PREP_SALAD: 'Prep Salad',
     PREP_DIP: 'Prep Dip',
+    PREP_SEASONINGS: 'Prep Seasonings',
     SEASON: 'Season',
 
     MAKE_DOUGH: 'Make Dough',
@@ -256,6 +262,8 @@ const SECTIONS = {
     COOK_FISH: 'Cook Fish',
     COOK_SHRIMP: 'Cook Shrimp',
     COOK_CURRY: 'Cook Curry',
+    COOK_MEAT: 'Cook Meat',
+    COOK_FILLING: 'Cook Filling',
 
     STIR_FRY: 'Stir Fry',
     DEEP_FRY: 'Deep Fry',
@@ -268,6 +276,8 @@ const SECTIONS = {
     MICROWAVE: 'Microwave',
     BLEND: 'Blend',
     MIX: 'Mix',
+    SIMMER: 'Simmer',
+    SAUTE: 'Saute',
 };
 
 const TIME_UNITS = {

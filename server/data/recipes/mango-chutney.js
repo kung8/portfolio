@@ -1,12 +1,8 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { VEGETABLE_OIL, GINGER, GARLIC, RED_CHILI, CORIANDER, CUMIN, TURMERIC, CARDAMOM, CLOVES, CINNAMON, SALT, MANGO, WHITE_SUGAR, WHITE_VINEGAR, NIGELLA_SEED } = require('./ingredients');
 
-const VEGGIES_SECTION = 'Veggies';
-const SPICES_SECTION = 'Spices';
 const MANGO_SECTION = 'Mango';
-
-const COOK_VEGGIES = 'Cook Veggies';
 const COOK_SPICES = 'Cook Spices';
 const COOK_MANGO = 'Cook Mango';
 
@@ -31,17 +27,17 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES_SECTION },
-        { ...GINGER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: VEGGIES_SECTION },
-        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: VEGGIES_SECTION },
-        { ...RED_CHILI, amount: 1, unit: '', additionalDetails: '', section: VEGGIES_SECTION },
-        { ...NIGELLA_SEED, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES_SECTION },
-        { ...CORIANDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES_SECTION },
-        { ...CUMIN, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES_SECTION },
-        { ...TURMERIC, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES_SECTION },
-        { ...CARDAMOM, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES_SECTION },
-        { ...CLOVES, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES_SECTION },
-        { ...CINNAMON, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES_SECTION },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...GINGER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...RED_CHILI, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...NIGELLA_SEED, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...CORIANDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...CUMIN, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...TURMERIC, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...CARDAMOM, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...CLOVES, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...CINNAMON, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MANGO_SECTION },
         { ...MANGO, amount: 5, unit: '', additionalDetails: 'peeled and diced', section: MANGO_SECTION },
         { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MANGO_SECTION },
@@ -55,10 +51,10 @@ module.exports = {
         { name: 'potato masher' },
     ],
     directions: [
-        { step: 'Over medium-high heat, heat oil in a large pot.', section: COOK_VEGGIES },
-        { step: 'Add the "Veggies" section ingredients. Saute for 1 minute.', section: COOK_VEGGIES },
-        { step: 'Add the "Spices" section ingredients. Saute for 1 minute.', section: COOK_SPICES },
-        { step: 'Add the "Mango" section ingredients. Stir and bring to a boil.', section: COOK_MANGO },
+        { step: 'Over medium-high heat, heat oil in a large pot.', section: SECTIONS.COOK_VEGGIES },
+        { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Saute for 1 minute.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Add the "${SECTIONS.SEASONINGS}" section ingredients. Saute for 1 minute.`, section: COOK_SPICES },
+        { step: `Add the "${MANGO_SECTION}" section ingredients. Stir and bring to a boil.`, section: COOK_MANGO },
         { step: 'Reduce to medium-low heat.', section: COOK_MANGO },
         { step: 'Let it simmer for 1 hour.', section: COOK_MANGO },
         { step: 'Remove from heat and let it cool.', section: COOK_MANGO },

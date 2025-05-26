@@ -21,12 +21,7 @@ const cakes19 = '../assets/Products/chive-cakes-19.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { TAPIOCA_STARCH, HOT_WATER, VEGETABLE_OIL, SALT, POWDERED_SUGAR, BAKING_SODA, PEANUT_OIL, DARK_SOY_SAUCE, WHITE_VINEGAR, RED_PEPPER_FLAKES, GARLIC, RICE_FLOUR, GLUTINOUS_RICE_FLOUR, GARLIC_CHIVE, UNSALTED_PEANUT, WATER } = require('./ingredients');
 
-const DOUGH_SECTION = 'Dough';
 const CHIVE_SECTION = 'Chive';
-const DIPPING_SAUCE_SECTION = 'Dipping Sauce';
-const PREP_DIPPING_SAUCE_SECTION = 'Prep Dipping Sauce';
-const PREP_CHIVE_FILLING = 'Prep Chive Filling';
-const ASSEMBLE_CHIVE_CAKES_SECTION = 'Assemble Chive Cakes';
 const COOK_SECTION = 'Cook';
 
 module.exports = {
@@ -52,12 +47,12 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...RICE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...GLUTINOUS_RICE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...TAPIOCA_STARCH, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...HOT_WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiling', section: DOUGH_SECTION },
-        { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: DOUGH_SECTION },
+        { ...RICE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...GLUTINOUS_RICE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...TAPIOCA_STARCH, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...HOT_WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiling', section: SECTIONS.DOUGH },
+        { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: SECTIONS.DOUGH },
 
         { ...GARLIC_CHIVE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '1/2 inch slices', section: CHIVE_SECTION },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHIVE_SECTION },
@@ -66,12 +61,12 @@ module.exports = {
         { ...PEANUT_OIL, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHIVE_SECTION },
         { ...UNSALTED_PEANUT, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: CHIVE_SECTION },
 
-        { ...DARK_SOY_SAUCE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...WHITE_VINEGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...POWDERED_SUGAR, amount: 7 / 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...RED_PEPPER_FLAKES, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
-        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: DIPPING_SAUCE_SECTION },
+        { ...DARK_SOY_SAUCE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_VINEGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...POWDERED_SUGAR, amount: 7 / 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...RED_PEPPER_FLAKES, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'stand mixer' },
@@ -85,25 +80,25 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Chive" ingredients.', section: PREP_CHIVE_FILLING, img: [cakes6, cakes7, cakes8] },
-        { step: 'Drain the chives. Set aside.', section: PREP_CHIVE_FILLING, img: [cakes9, cakes10] },
+        { step: 'In a mixing bowl, combine the "Chive" ingredients.', section: SECTIONS.PREP_FILLING, img: [cakes6, cakes7, cakes8] },
+        { step: 'Drain the chives. Set aside.', section: SECTIONS.PREP_FILLING, img: [cakes9, cakes10] },
 
-        { step: 'Over low heat, combine all the "Sauce" ingredients except the red pepper flakes and the garlic in a saucepan.', section: PREP_DIPPING_SAUCE_SECTION },
-        { step: 'Heat until the salt and sugar dissolves. Set aside.', section: PREP_DIPPING_SAUCE_SECTION },
-        { step: 'Add red pepper flakes and garlic.', section: PREP_DIPPING_SAUCE_SECTION },
+        { step: 'Over low heat, combine all the "Sauce" ingredients except the red pepper flakes and the garlic in a saucepan.', section: PREP_DIP },
+        { step: 'Heat until the salt and sugar dissolves. Set aside.', section: PREP_DIP },
+        { step: 'Add red pepper flakes and garlic.', section: PREP_DIP },
 
-        { step: 'In a stand mixer, combine the rice flours and 2/3 of the tapioca starch.', section: DOUGH_SECTION, img: cakes1 },
-        { step: 'Add the boiling water.', section: DOUGH_SECTION, img: cakes2 },
-        { step: 'Beat on high until it has a smooth consistency and is glue-like.', section: DOUGH_SECTION, img: cakes3 },
-        { step: 'Set bowl aside to cool.', section: DOUGH_SECTION },
-        { step: 'Once it has cooled, add oil and the remaining tapioca starch. Beat on low until it is mixed.', section: DOUGH_SECTION, img: cakes4 },
-        { step: 'With the mixer, slowly add water and mix until the dough does not bounce back when lightly pressing your finger (for about 3 minutes).', section: DOUGH_SECTION, img: cakes5 },
+        { step: 'In a stand mixer, combine the rice flours and 2/3 of the tapioca starch.', section: SECTIONS.MAKE_DOUGH, img: cakes1 },
+        { step: 'Add the boiling water.', section: SECTIONS.MAKE_DOUGH, img: cakes2 },
+        { step: 'Beat on high until it has a smooth consistency and is glue-like.', section: SECTIONS.MAKE_DOUGH, img: cakes3 },
+        { step: 'Set bowl aside to cool.', section: SECTIONS.MAKE_DOUGH },
+        { step: 'Once it has cooled, add oil and the remaining tapioca starch. Beat on low until it is mixed.', section: SECTIONS.MAKE_DOUGH, img: cakes4 },
+        { step: 'With the mixer, slowly add water and mix until the dough does not bounce back when lightly pressing your finger (for about 3 minutes).', section: SECTIONS.MAKE_DOUGH, img: cakes5 },
 
-        { step: 'On a clean surface, dust it with rice flour. I had to add about a cup of rice flour because it was still very sticky.', section: ASSEMBLE_CHIVE_CAKES_SECTION },
-        { step: 'Take a portion of dough and roll it out into a disc (1/2 inch thick, 2 3/4 inch wide).', section: ASSEMBLE_CHIVE_CAKES_SECTION, img: cakes11 },
-        { step: 'Place a heaping spoonful of chive filling in the center of the disc.', section: ASSEMBLE_CHIVE_CAKES_SECTION, img: cakes12 },
-        { step: 'Bring up the sides and seal the goodness in.', section: ASSEMBLE_CHIVE_CAKES_SECTION, img: cakes13 },
-        { step: 'Repeat this for the rest of the chive cakes.', section: ASSEMBLE_CHIVE_CAKES_SECTION },
+        { step: 'On a clean surface, dust it with rice flour. I had to add about a cup of rice flour because it was still very sticky.', section: SECTIONS.ASSEMBLE },
+        { step: 'Take a portion of dough and roll it out into a disc (1/2 inch thick, 2 3/4 inch wide).', section: SECTIONS.ASSEMBLE, img: cakes11 },
+        { step: 'Place a heaping spoonful of chive filling in the center of the disc.', section: SECTIONS.ASSEMBLE, img: cakes12 },
+        { step: 'Bring up the sides and seal the goodness in.', section: SECTIONS.ASSEMBLE, img: cakes13 },
+        { step: 'Repeat this for the rest of the chive cakes.', section: SECTIONS.ASSEMBLE },
 
         { step: 'Over high heat, bring a large saucepan of water to a boil.', section: COOK_SECTION },
         { step: 'Place the chive cakes in the steamer (leaving space between each cake).', section: COOK_SECTION, img: [cakes14, cakes15] },

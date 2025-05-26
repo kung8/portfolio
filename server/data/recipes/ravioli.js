@@ -16,7 +16,6 @@ const ravioli3 = '../assets/Products/ravioli-3.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, DURUM_WHEAT, EGG, RICOTTA_CHEESE, PARMIGIANO_REGGIANO, SALT, BLACK_PEPPER, UNSALTED_BUTTER, SAGE, FRESH_SAGE } = require('./ingredients');
 
-const ASSEMBLE_RAVIOLI = 'Assemble Ravioli';
 const COOK_RAVIOLI = 'Cook Ravioli';
 
 module.exports = {
@@ -78,14 +77,14 @@ module.exports = {
         { step: 'In a mixing bowl, combine the "Filling" ingredients.', section: SECTIONS.PREP_FILLING },
         { step: 'Roll out the dough into long, thin sheets either with a rolling pin or with a pasta attachment/machine.', section: SECTIONS.PREP_PASTA },
         { step: 'Cut the pasta sheet in half. Now you have the top and bottom layer.', section: SECTIONS.PREP_PASTA },
-        { step: 'Evenly add a tablespoon of the filling to the pasta sheet with a gap between each spoonful.', section: ASSEMBLE_RAVIOLI },
-        { step: 'Once a row of ravioli is filled, cut the row.', section: ASSEMBLE_RAVIOLI },
-        { step: 'Lightly wet the edges of dough with water.', section: ASSEMBLE_RAVIOLI },
-        { step: 'Cover the row of ravioli with a sheet of pasta.', section: ASSEMBLE_RAVIOLI },
-        { step: 'Press to seal the ravioli pieces. Remove any air between the layers.', section: ASSEMBLE_RAVIOLI },
-        { step: 'Cut the ravioli into the squares.', section: ASSEMBLE_RAVIOLI },
-        { step: 'Set on a lightly floured baking sheet.', section: ASSEMBLE_RAVIOLI },
-        { step: 'Repeat until all of the ravioli is assembled.', section: ASSEMBLE_RAVIOLI },
+        { step: 'Evenly add a tablespoon of the filling to the pasta sheet with a gap between each spoonful.', section: SECTIONS.ASSEMBLE },
+        { step: 'Once a row of ravioli is filled, cut the row.', section: SECTIONS.ASSEMBLE },
+        { step: 'Lightly wet the edges of dough with water.', section: SECTIONS.ASSEMBLE },
+        { step: 'Cover the row of ravioli with a sheet of pasta.', section: SECTIONS.ASSEMBLE },
+        { step: 'Press to seal the ravioli pieces. Remove any air between the layers.', section: SECTIONS.ASSEMBLE },
+        { step: 'Cut the ravioli into the squares.', section: SECTIONS.ASSEMBLE },
+        { step: 'Set on a lightly floured baking sheet.', section: SECTIONS.ASSEMBLE },
+        { step: 'Repeat until all of the ravioli is assembled.', section: SECTIONS.ASSEMBLE },
         { step: 'Over medium-high heat, bring a saucepan of salted water to a boil.', section: COOK_RAVIOLI },
         { step: 'Cook the ravioli (about about 3 to 4 minutes).', section: COOK_RAVIOLI },
         { step: 'Drain and set aside.', section: COOK_RAVIOLI },

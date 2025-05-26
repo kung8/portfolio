@@ -58,7 +58,7 @@ module.exports = {
     directions: [
         { step: 'Preheat the oven to 450ºF.', section: PREP_BATTER },
         { step: 'Line a baking sheet with aluminum foil.', section: PREP_BATTER },
-        { step: 'In a mixing bowl, combine the "First Mix" section ingredients.', section: PREP_BATTER },
+        { step: `In a mixing bowl, combine the "${FIRST_MIX_SECTION}" section ingredients.`, section: PREP_BATTER },
         { step: 'Mix until flaky and small balls form.', section: PREP_BATTER },
         { step: 'Slowly add milk while stirring.', section: PREP_BATTER },
         { step: 'Slowly add cheese.', section: PREP_BATTER },

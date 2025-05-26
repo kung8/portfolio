@@ -46,7 +46,7 @@ module.exports = {
         { name: '' },
     ],
     directions: [
-        { step: 'In a medium bowl, combine the "Chicken" section ingredients. Set aside.', section: SECTIONS.SEASON },
+        { step: `In a medium bowl, combine the "${SECTIONS.CHICKEN}" section ingredients. Set aside.`, section: SECTIONS.SEASON },
         { step: 'Over medium-high heat, add oil to a large pan.', section: SECTIONS.COOK_VEGGIES },
         { step: 'Add curry powder to hot oil. Cook for 1 minute.', section: SECTIONS.COOK_VEGGIES },
         { step: 'Add garlic and onions. Cook for 1 minute.', section: SECTIONS.COOK_VEGGIES },

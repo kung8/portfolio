@@ -2,12 +2,8 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { VINE_TOMATO, WHITE_ONION, GARLIC, VEGETABLE_OIL, CHICKEN_BROTH, CILANTRO, SALT, GROUND_BEEF, BREAD, MILK, EGG, BLACK_PEPPER, GARLIC_POWDER, WHITE_RICE, ZUCCHINI } = require('./ingredients');
 
-const TOMATO_BROTH = 'Tomato Broth';
 const MEATBALLS = 'Meatballs';
-
 const PREP_MEATBALLS = 'Prep Meatballs';
-const PREP_SOUP = 'Prep Soup';
-const ASSEMBLE = 'Assemble';
 
 module.exports = {
     wip: true,
@@ -40,12 +36,11 @@ module.exports = {
         { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MEATBALLS },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: MEATBALLS },
 
-
-        { ...VINE_TOMATO, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: TOMATO_BROTH },
-        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: TOMATO_BROTH },
-        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TOMATO_BROTH },
-        { ...WHITE_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', section: TOMATO_BROTH },
-        { ...CHICKEN_BROTH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TOMATO_BROTH },
+        { ...VINE_TOMATO, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...WHITE_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...CHICKEN_BROTH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
 
         { ...CILANTRO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
@@ -68,17 +63,17 @@ module.exports = {
         { step: 'Drain the rice and mix into the meat.', section: PREP_MEATBALLS },
         { step: 'Form 1.5 inch meatballs (about 24).', section: PREP_MEATBALLS },
 
-        { step: 'Over medium-high heat, bring a pot of water to a boil.', section: PREP_SOUP },
-        { step: 'Carefully add tomatoes to the boiling water and let it cook for 5 minutes.', section: PREP_SOUP },
-        { step: 'Remove the tomatoes from the water and peel.', section: PREP_SOUP },
-        { step: 'Blend the peeled tomatoes and garlic until smooth.', section: PREP_SOUP },
-        { step: 'Over medium-low heat, heat oil in a large pot.', section: PREP_SOUP },
-        { step: 'Add onions and cook until soft (not browned)', section: PREP_SOUP },
-        { step: 'Add the tomato puree and bring to a boil. Cook for about 3 minutes.', section: PREP_SOUP },
-        { step: 'Add broth and bring to a simmer.', section: PREP_SOUP },
+        { step: 'Over medium-high heat, bring a pot of water to a boil.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Carefully add tomatoes to the boiling water and let it cook for 5 minutes.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Remove the tomatoes from the water and peel.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Blend the peeled tomatoes and garlic until smooth.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Over medium-low heat, heat oil in a large pot.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Add onions and cook until soft (not browned)', section: SECTIONS.MAKE_SOUP },
+        { step: 'Add the tomato puree and bring to a boil. Cook for about 3 minutes.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Add broth and bring to a simmer.', section: SECTIONS.MAKE_SOUP },
 
-        { step: 'Add meatballs gently into simmering broth. Cover with lid.', section: ASSEMBLE },
-        { step: 'Simmer for about 30 to 45 minutes.', section: ASSEMBLE },
+        { step: 'Add meatballs gently into simmering broth. Cover with lid.', section: SECTIONS.ASSEMBLE },
+        { step: 'Simmer for about 30 to 45 minutes.', section: SECTIONS.ASSEMBLE },
 
         { step: 'Serve in deep bowls. Traditionally it is served with rice or beans and warm corn tortillas.', section: SECTIONS.SERVE },
     ]

@@ -11,8 +11,6 @@ const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, SALT, BLACK_PEPPER, GINGER, GARLIC,
 
 const ZAKU_ZAKU_BREADCRUMBS = 'Zaku Zaku Breadcrumbs';
 
-const DEEP_FRY = 'Deep Fry';
-const MARINATE_CHICKEN = 'Marinate Chicken';
 const MAKE_ZAKU_ZAKU_BREADCRUMBS = 'Make Zaku Zaku Breadcrumbs';
 const PREP_DEEP_FRY = 'Prep Deep Fry';
 const DREDGE_CHICKEN = 'Dredge Chicken';
@@ -53,7 +51,7 @@ module.exports = {
         { ...POTATO_STARCH, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ZAKU_ZAKU_BREADCRUMBS },
         { ...WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: ZAKU_ZAKU_BREADCRUMBS },
 
-        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: DEEP_FRY },
+        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: SECTIONS.DEEP_FRY },
         { ...LEMON, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...KEWPIE_MAYONNAISE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
@@ -69,8 +67,8 @@ module.exports = {
         { name: 'cooking thermometer' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the chicken pieces and the "Marinade" section ingredients. It should be wet.', section: MARINATE_CHICKEN, img: [karaage1, karaage2] },
-        { step: 'Mix well and let it marinate for 2 hours.', section: MARINATE_CHICKEN },
+        { step: `In a mixing bowl, combine the chicken pieces and the "${SECTIONS.MARINADE}" section ingredients. It should be wet.`, section: SECTIONS.MARINATE_CHICKEN, img: [karaage1, karaage2] },
+        { step: 'Mix well and let it marinate for 2 hours.', section: SECTIONS.MARINATE_CHICKEN },
 
         { step: 'Over medium heat, fill a pot with 2 to 3 inches of oil.', section: PREP_DEEP_FRY },
         { step: 'Line a baking sheet with paper towels and place a wire cooling rack on top.', section: PREP_DEEP_FRY },
@@ -89,7 +87,7 @@ module.exports = {
         { step: 'Let the oil get to 360ºF, for the second deep fry.', section: SECOND_DEEP_FRY },
         { step: 'Follow the same steps for the first deep fry but only cook for 1 to 2 minutes. It should be golden brown and crispy.', section: SECOND_DEEP_FRY, img: karaage6 },
 
-        { step: 'Serve these delicious chicken hot with lemon wedges, Kewpie mayo and any other favorite toppings.', section: SECOND_DEEP_FRY },
+        { step: 'Serve these delicious chicken hot with lemon wedges, Kewpie mayo and any other favorite toppings.', section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'If the chicken is burning too quickly, either lower the heat or add a few more pieces of chicken.' },

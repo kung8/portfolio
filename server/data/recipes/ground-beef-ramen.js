@@ -9,9 +9,7 @@ const { GROUND_BEEF, INSTANT_RAMEN, FROZEN_PEAS, FROZEN_CARROTS, LIGHT_SOY_SAUCE
 
 const BEEF_AND_GARLIC_SECTION = 'Beef and Garlic';
 const FROZEN_SECTION = 'Frozen';
-
 const SAUTE_ADDITIONS = 'Sauté Additions';
-const ASSEMBLE = 'Assemble';
 
 module.exports = {
     cardName: 'Ground Beef Ramen',
@@ -60,17 +58,17 @@ module.exports = {
         { step: 'Add ground beef. Brown and break apart (about 5 to 7 minutes).', section: SAUTE_ADDITIONS },
         { step: 'Drain.', section: SAUTE_ADDITIONS },
         { step: 'Add garlic. Cook until fragrant (about 30 seconds).', section: SAUTE_ADDITIONS, img: ramen1 },
-        { step: 'Add "Sauces" section ingredients. Mix until meat is coated.', section: SAUTE_ADDITIONS, img: ramen2 },
-        { step: 'Add "Frozen" section ingredients. Cook until heated through (about 2 to 3 minutes).', section: SAUTE_ADDITIONS, img: ramen3 },
+        { step: `Add "${SECTIONS.SAUCE}" section ingredients. Mix until meat is coated.`, section: SAUTE_ADDITIONS, img: ramen2 },
+        { step: `Add "${FROZEN_SECTION}" section ingredients. Cook until heated through (about 2 to 3 minutes).`, section: SAUTE_ADDITIONS, img: ramen3 },
         { step: 'Remove from heat. Set aside until noodles are cooked.', section: SAUTE_ADDITIONS },
 
         { step: 'Oven high heat, bring a pot of water to a boil.', section: SECTIONS.COOK_NOODLES },
         { step: 'Add ramen noodles. Cook until just tender (about 3 minutes).', section: SECTIONS.COOK_NOODLES },
         { step: 'Drain. Set aside.', section: SECTIONS.COOK_NOODLES },
 
-        { step: 'Add noodles to the large pan. Mix well.', section: ASSEMBLE, img: ramen4 },
-        { step: 'Optionally add red pepper flakes. Mix.', section: ASSEMBLE },
-        { step: 'Remove from heat. Add green onions. Mix.', section: ASSEMBLE },
+        { step: 'Add noodles to the large pan. Mix well.', section: SECTIONS.ASSEMBLE, img: ramen4 },
+        { step: 'Optionally add red pepper flakes. Mix.', section: SECTIONS.ASSEMBLE },
+        { step: 'Remove from heat. Add green onions. Mix.', section: SECTIONS.ASSEMBLE },
 
         { step: 'Enjoy this easy college student ramen upgrade.', section: SECTIONS.SERVE },
     ]

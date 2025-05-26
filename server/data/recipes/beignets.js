@@ -58,7 +58,7 @@ module.exports = {
         { name: 'slotted spoon' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine together the "Yeast Mixture" section ingredients.', section: MAKE_YEAST_MIXTURE },
+        { step: `In a mixing bowl, combine together the "${YEAST_MIXTURE_SECTION}" section ingredients.`, section: MAKE_YEAST_MIXTURE },
         { step: 'Set aside and let the mixture bubble (about 10 minutes).', section: MAKE_YEAST_MIXTURE },
 
         { step: 'In a stand mixer, beat the eggs.', section: MAKE_DOUGH },

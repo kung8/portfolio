@@ -2,12 +2,6 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { SHRIMP, OLIVE_OIL, SALT, GARLIC_POWDER, GARLIC, PARMIGIANO_REGGIANO, LEMON_PEPPER } = require('./ingredients');
 
-const SHRIMP_SECTION = 'Shrimp';
-const SEASONING_SECTION = 'Seasoning';
-
-const PREP_SHRIMP = 'Prep Shrimp';
-const COOK_SHRIMP = 'Cook Shrimp';
-
 module.exports = {
     wip: true,
     cardName: 'Garlic Parmesan Shrimp',
@@ -31,14 +25,14 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASONING_SECTION },
-        { ...LEMON_PEPPER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONING_SECTION },
-        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONING_SECTION },
-        { ...GARLIC_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SEASONING_SECTION },
-        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', section: SEASONING_SECTION },
-        { ...PARMIGIANO_REGGIANO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SEASONING_SECTION },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...LEMON_PEPPER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...GARLIC_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', section: SECTIONS.SEASONINGS },
+        { ...PARMIGIANO_REGGIANO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.SEASONINGS },
         
-        { ...SHRIMP, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'thawed, shelled and deveined', section: SHRIMP_SECTION },
+        { ...SHRIMP, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'thawed, shelled and deveined', section: SECTIONS.SHRIMP },
     ],
     appliances: [
         { name: 'air fryer' },
@@ -47,11 +41,11 @@ module.exports = {
         { name: 'mixing bowl' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine all "Seasoning" section ingredients.', section: PREP_SHRIMP },
-        { step: 'Pat shrimp dry with a paper towel.', section: PREP_SHRIMP },
-        { step: 'Add shrimp to the bowl. Coat the shrimp.', section: PREP_SHRIMP },
-        { step: 'In an air fryer, place shrimp in a single layer.', section: COOK_SHRIMP },
-        { step: 'Cook at 360ºF for 10 minutes (flipping about halfway).', section: COOK_SHRIMP },
+        { step: `In a mixing bowl, combine all "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SHRIMP },
+        { step: 'Pat shrimp dry with a paper towel.', section: SECTIONS.PREP_SHRIMP },
+        { step: 'Add shrimp to the bowl. Coat the shrimp.', section: SECTIONS.PREP_SHRIMP },
+        { step: 'In an air fryer, place shrimp in a single layer.', section: SECTIONS.COOK_SHRIMP },
+        { step: 'Cook at 360ºF for 10 minutes (flipping about halfway).', section: SECTIONS.COOK_SHRIMP },
         { step: 'Enjoy this with cocktail sauce or in a pasta or salad.', section: SECTIONS.SERVE },
     ]
 };

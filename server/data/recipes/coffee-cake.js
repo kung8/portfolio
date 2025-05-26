@@ -35,11 +35,8 @@ const MAKE_WET_BATTER = 'Make Wet Batter';
 const MAKE_DRY_BATTER = 'Make Dry Batter';
 const COMBINE_BATTERS = 'Combine Batters';
 const MAKE_CINNAMON_SWIRL = 'Make Cinnamon Swirl';
-const ASSEMBLE_CAKE = 'Assemble Cake';
-
 const MAKE_STREUSEL_CRUMBLE = 'Make Streusel Crumble';
 const MAKE_GLAZE = 'Make Glaze';
-const BAKE_CAKE = 'Bake Cake';
 
 module.exports = {
     cardName: 'Coffee Cake',
@@ -114,17 +111,17 @@ module.exports = {
 
         { step: 'In a small bowl, combine together the cinnamon and sugar.', section: MAKE_CINNAMON_SWIRL },
 
-        { step: 'In the greased baking pan, pour half of the batter.', section: ASSEMBLE_CAKE, img: cake10 },
-        { step: 'Sprinkle the cinnamon swirl evenly over the batter.', section: ASSEMBLE_CAKE, img: cake11 },
-        { step: 'Add the rest of the batter and carefully spread it evenly (avoid moving the cinnamon swirl).', section: ASSEMBLE_CAKE, img: cake12 },
+        { step: 'In the greased baking pan, pour half of the batter.', section: SECTIONS.ASSEMBLE, img: cake10 },
+        { step: 'Sprinkle the cinnamon swirl evenly over the batter.', section: SECTIONS.ASSEMBLE, img: cake11 },
+        { step: 'Add the rest of the batter and carefully spread it evenly (avoid moving the cinnamon swirl).', section: SECTIONS.ASSEMBLE, img: cake12 },
 
         { step: 'In a medium bowl, melt butter in 10 second increments until melted. Let it cool completely once it has melted.', section: MAKE_STREUSEL_CRUMBLE, img: cake13 },
         { step: 'In a mixing bowl, combine the remaining "Streusel" ingredients (except the butter) with a fork.', section: MAKE_STREUSEL_CRUMBLE, img: [cake14, cake15] },
         { step: 'Once the butter has cooled, add the butter and gently combine. It should be crumbly.', section: MAKE_STREUSEL_CRUMBLE, img: cake16 },
         { step: 'Top the cake with the streusel crumble', section: MAKE_STREUSEL_CRUMBLE, img: cake17 },
 
-        { step: 'Bake until an inserted toothpick comes out clean (about 40 to 50 minutes). Avoid overbaking.', section: BAKE_CAKE, img: cake18 },
-        { step: 'Let it cool before cutting and serving it.', section: BAKE_CAKE },
+        { step: 'Bake until an inserted toothpick comes out clean (about 40 to 50 minutes). Avoid overbaking.', section: SECTIONS.BAKE, img: cake18 },
+        { step: 'Let it cool before cutting and serving it.', section: SECTIONS.BAKE },
 
         { step: 'In a medium bowl, whisk the powdered sugar and a little milk at a time.', section: MAKE_GLAZE, img: cake19 },
 

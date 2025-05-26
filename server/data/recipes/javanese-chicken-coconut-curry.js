@@ -2,11 +2,7 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { MACADAMIA_NUT, CORIANDER, SHALLOT, GARLIC, RED_CHILI, WATER, CHICKEN, LEMONGRASS, KAFFIR_LIME_LEAF, CINNAMON_STICK, COCONUT_MILK, FRIED_SHALLOTS, JASMINE_RICE, LIME, GINGER, BROWN_SUGAR, VEGETABLE_OIL } = require('./ingredients');
 
-const SEASON_SECTION = 'Season';
 const SHALLOT_MIXTURE_SECTION = 'Shallot Mixture';
-const CURRY_SECTION = 'Curry';
-
-const COOK_CURRY = 'Cook Curry';
 
 module.exports = {
     wip: true,
@@ -31,8 +27,8 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...MACADAMIA_NUT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASON_SECTION },
-        { ...CORIANDER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEASON_SECTION },
+        { ...MACADAMIA_NUT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...CORIANDER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
 
         { ...SHALLOT, amount: 5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'chopped', section: SHALLOT_MIXTURE_SECTION },
         { ...GINGER, amount: 2, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'peeled and chopped', section: SHALLOT_MIXTURE_SECTION },
@@ -41,12 +37,12 @@ module.exports = {
         { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SHALLOT_MIXTURE_SECTION },
         { ...WATER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SHALLOT_MIXTURE_SECTION },
 
-        { ...VEGETABLE_OIL, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CURRY_SECTION },
-        { ...CHICKEN, amount: 2.5, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: CURRY_SECTION },
-        { ...LEMONGRASS, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: '', section: CURRY_SECTION },
-        { ...KAFFIR_LIME_LEAF, amount: 5, unit: INGREDIENT_UNITS.LEAF, additionalDetails: '', section: CURRY_SECTION },
-        { ...CINNAMON_STICK, amount: 1, unit: '', additionalDetails: '', section: CURRY_SECTION },
-        { ...COCONUT_MILK, amount: 18, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: CURRY_SECTION },
+        { ...VEGETABLE_OIL, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CURRY },
+        { ...CHICKEN, amount: 2.5, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.CURRY },
+        { ...LEMONGRASS, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: '', section: SECTIONS.CURRY },
+        { ...KAFFIR_LIME_LEAF, amount: 5, unit: INGREDIENT_UNITS.LEAF, additionalDetails: '', section: SECTIONS.CURRY },
+        { ...CINNAMON_STICK, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.CURRY },
+        { ...COCONUT_MILK, amount: 18, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.CURRY },
 
         { ...FRIED_SHALLOTS, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
         { ...RED_CHILI, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
@@ -63,18 +59,18 @@ module.exports = {
         { name: 'mortar and pestle' },
     ],
     directions: [
-        { step: 'Over medium-high heat, heat a dutch oven pot.', section: COOK_CURRY },
-        { step: 'Add macadamia nut and coriander seed. Stir and cook until fragrant (about 2 minutes).', section: COOK_CURRY },
-        { step: 'Pound in a mortar and pestle.', section: COOK_CURRY },
-        { step: 'Blend together the "Shallot Mixture" section ingredients until chopped.', section: COOK_CURRY },
-        { step: 'Over medium-high heat, heat oil in a dutch oven pot.', section: COOK_CURRY },
-        { step: 'Cook the chicken in batches until browned (about 8 minutes).', section: COOK_CURRY },
-        { step: 'Transfer chicken to plate.', section: COOK_CURRY },
-        { step: 'Over medium-low heat, add shallot mixture, lemongrass, kaffir lime, and cinnamon. Stir until fragrant (about 5 minutes).', section: COOK_CURRY },
-        { step: 'Add chicken. Toss to coat.', section: COOK_CURRY },
-        { step: 'Reduce to low heat. Add coconut milk and cover.', section: COOK_CURRY },
-        { step: 'Stir occasionally and cook until chicken is tender (about 30 minutes).', section: COOK_CURRY },
-        { step: 'Uncover. Simmer until sauce thickens (about 5 minutes).', section: COOK_CURRY },
+        { step: 'Over medium-high heat, heat a dutch oven pot.', section: SECTIONS.COOK_CURRY },
+        { step: 'Add macadamia nut and coriander seed. Stir and cook until fragrant (about 2 minutes).', section: SECTIONS.COOK_CURRY },
+        { step: 'Pound in a mortar and pestle.', section: SECTIONS.COOK_CURRY },
+        { step: `Blend together the "${SHALLOT_MIXTURE_SECTION}" section ingredients until chopped.`, section: SECTIONS.COOK_CURRY },
+        { step: 'Over medium-high heat, heat oil in a dutch oven pot.', section: SECTIONS.COOK_CURRY },
+        { step: 'Cook the chicken in batches until browned (about 8 minutes).', section: SECTIONS.COOK_CURRY },
+        { step: 'Transfer chicken to plate.', section: SECTIONS.COOK_CURRY },
+        { step: 'Over medium-low heat, add shallot mixture, lemongrass, kaffir lime, and cinnamon. Stir until fragrant (about 5 minutes).', section: SECTIONS.COOK_CURRY },
+        { step: 'Add chicken. Toss to coat.', section: SECTIONS.COOK_CURRY },
+        { step: 'Reduce to low heat. Add coconut milk and cover.', section: SECTIONS.COOK_CURRY },
+        { step: 'Stir occasionally and cook until chicken is tender (about 30 minutes).', section: SECTIONS.COOK_CURRY },
+        { step: 'Uncover. Simmer until sauce thickens (about 5 minutes).', section: SECTIONS.COOK_CURRY },
         { step: 'Enjoy this over turmeric rice and topped with your favorite toppings.', section: SECTIONS.SERVE },
     ]
 };

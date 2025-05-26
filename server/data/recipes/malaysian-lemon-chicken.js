@@ -15,7 +15,6 @@ const {
 } = require('./ingredients');
 
 const DREDGING_STATION_SECTION = 'Dredging Station';
-const DEEP_FRYING_SECTION = 'Deep Frying';
 
 module.exports = {
     cardName: 'Lemon Chicken',
@@ -51,7 +50,7 @@ module.exports = {
         { ...CORNSTARCH, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DREDGING_STATION_SECTION },
         { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DREDGING_STATION_SECTION },
 
-        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for deep-frying', section: DEEP_FRYING_SECTION },
+        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for deep-frying', section: SECTIONS.DEEP_FRY },
 
         { ...SESAME_SEEDS, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'topping', section: SECTIONS.TOPPINGS },
     ],
@@ -68,9 +67,9 @@ module.exports = {
         { name: 'paper towels' },
     ],
     directions: [
-        { step: 'In a large bowl, combine the "Marinade" section ingredients. Let it marinate for at least 30 minutes.', section: SECTIONS.MAIN },
-        { step: 'In a sauce pan, combine the "Sauce" section ingredients. Set aside.', section: SECTIONS.MAIN },
-        { step: 'In a medium bowl, mix the "Dredging Station" section ingredients.', section: SECTIONS.MAIN },
+        { step: `In a large bowl, combine the "${SECTIONS.MARINADE}" section ingredients. Let it marinate for at least 30 minutes.`, section: SECTIONS.MAIN },
+        { step: `In a sauce pan, combine the "${SECTIONS.SAUCE}" section ingredients. Set aside.`, section: SECTIONS.MAIN },
+        { step: `In a medium bowl, mix the "${DREDGING_STATION_SECTION}" section ingredients.`, section: SECTIONS.MAIN },
         { step: 'Heat up a deep pot with vegetable oil over medium-high heat.', section: SECTIONS.MAIN },
         { step: 'Line a baking sheet with paper towels and place a cooling rack on top.', section: SECTIONS.MAIN },
         { step: 'Once the oil is hot, dredge the chicken in the flour mixture and shake off any excess. Then fry the chicken in the oil until golden brown (about 7 to 10 minutes).', section: SECTIONS.MAIN },

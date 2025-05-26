@@ -6,7 +6,6 @@ const {
     GARLIC,
     TURMERIC,
     VEGETABLE_OIL,
-    CUCUMBER,
     COCONUT_MILK,
     LIGHT_SOY_SAUCE,
     CURRY_POWDER,
@@ -19,13 +18,6 @@ const {
     ASIAN_CHILI_GARLIC_SAUCE,
     WATER,
 } = require('./ingredients');
-
-const SATAY_SECTION = 'Satay';
-const PEANUT_SAUCE_SECTION = 'Peanut Sauce';
-
-const MARINATE_CHICKEN = 'Marinate Chicken';
-const COOK_SATAY = 'Cook Satay';
-const MAKE_PEANUT_SAUCE = 'Make Peanut Sauce';
 
 module.exports = {
     wip: true,
@@ -50,26 +42,26 @@ module.exports = {
         { label: 'Chicken Satay', link: 'https://damndelicious.net/2019/06/07/chicken-satay-with-peanut-sauce/' }
     ],
     ingredients: [
-        { ...CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1-inch pieces', section: SATAY_SECTION },
-        { ...COCONUT_MILK, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SATAY_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SATAY_SECTION },
-        { ...CURRY_POWDER, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SATAY_SECTION },
-        { ...TURMERIC, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SATAY_SECTION },
-        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SATAY_SECTION },
-        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SATAY_SECTION },
-        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SATAY_SECTION },
-        { ...FISH_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SATAY_SECTION },
-        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SATAY_SECTION },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SATAY_SECTION },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SATAY_SECTION },
+        { ...CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1-inch pieces', section: SECTIONS.MARINADE },
+        { ...COCONUT_MILK, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...CURRY_POWDER, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...TURMERIC, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...FISH_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MARINADE },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MARINADE },
 
-        { ...PEANUT_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PEANUT_SAUCE_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PEANUT_SAUCE_SECTION },
-        { ...LIME_JUICE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PEANUT_SAUCE_SECTION },
-        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PEANUT_SAUCE_SECTION },
-        { ...ASIAN_CHILI_GARLIC_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PEANUT_SAUCE_SECTION },
-        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PEANUT_SAUCE_SECTION },
-        { ...WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PEANUT_SAUCE_SECTION },
+        { ...PEANUT_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIME_JUICE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...ASIAN_CHILI_GARLIC_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
         { name: 'blender' },
@@ -83,20 +75,20 @@ module.exports = {
         { name: 'small bowl' },
     ],
     directions: [
-        { step: 'In a ziploc bag, combine the "Marinade" section ingredients except the chicken. Mix.', section: MARINATE_CHICKEN },
-        { step: 'Add the chicken pieces. Mix well.', section: MARINATE_CHICKEN },
-        { step: 'Marinate for at least 2 hours (or overnight).', section: MARINATE_CHICKEN },
+        { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients except the chicken. Mix.`, section: SECTIONS.MARINATE_CHICKEN },
+        { step: 'Add the chicken pieces. Mix well.', section: SECTIONS.MARINATE_CHICKEN },
+        { step: 'Marinate for at least 2 hours (or overnight).', section: SECTIONS.MARINATE_CHICKEN },
 
-        { step: 'Preheat the oven to 450ºF.', section: COOK_SATAY },
-        { step: 'Line a baking sheet with foil.', section: COOK_SATAY },
-        { step: 'Thread the chicken on skewers.', section: COOK_SATAY },
-        { step: 'Brush with oil.', section: COOK_SATAY },
-        { step: 'Season with salt and pepper.', section: COOK_SATAY },
-        { step: 'Place prepped skewers onto baking sheet.', section: COOK_SATAY },
-        { step: 'Bake the satay until cooked through (about 12 to 15 minutes).', section: COOK_SATAY },
+        { step: 'Preheat the oven to 450ºF.', section: SECTIONS.BAKE },
+        { step: 'Line a baking sheet with foil.', section: SECTIONS.BAKE },
+        { step: 'Thread the chicken on skewers.', section: SECTIONS.BAKE },
+        { step: 'Brush with oil.', section: SECTIONS.BAKE },
+        { step: 'Season with salt and pepper.', section: SECTIONS.BAKE },
+        { step: 'Place prepped skewers onto baking sheet.', section: SECTIONS.BAKE },
+        { step: 'Bake the satay until cooked through (about 12 to 15 minutes).', section: SECTIONS.BAKE },
 
-        { step: 'In a medium bowl, combine the "Peanut Sauce" section ingredients.', section: MAKE_PEANUT_SAUCE },
-        { step: 'Add up to 3 tablespoons of water depending on thickness preference.', section: MAKE_PEANUT_SAUCE },
+        { step: `In a medium bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
+        { step: 'Add up to 3 tablespoons of water depending on thickness preference.', section: SECTIONS.PREP_SAUCE },
 
         { step: 'Enjoy this delicious satay with peanut sauce.', section: SECTIONS.SERVE },
     ],

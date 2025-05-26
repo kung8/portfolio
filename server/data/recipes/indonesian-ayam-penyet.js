@@ -64,7 +64,7 @@ module.exports = {
         { name: 'pan' },
     ],
     directions: [
-        { step: 'In a mortar, combine the "Ginger Paste" section ingredients. Pound into a paste.', section: MAKE_GINGER_PASTE },
+        { step: `In a mortar, combine the "${GINGER_PASTE_SECTION}" section ingredients. Pound into a paste.`, section: MAKE_GINGER_PASTE },
         { step: 'In a pot, combine the ginger paste, chicken, water and curry leaves.', section: BOIL_CHICKEN },
         { step: 'Over high heat, bring the water to a boil.', section: BOIL_CHICKEN },
         { step: 'Reduce heat. Let simmer until cooked through (about 20 minutes).', section: BOIL_CHICKEN },

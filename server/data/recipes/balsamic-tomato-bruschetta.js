@@ -9,10 +9,8 @@ const { OLIVE_OIL, CHERRY_TOMATO, BASIL_LEAF, GARLIC, SHALLOT, BALSAMIC_VINEGAR,
 
 const BAGUETTE_SECTION = 'Baguette';
 const BRUSCHETTA_SECTION = 'Bruschetta';
-
 const BAKE_BAGUETTE = 'Bake Baguette';
 const PREP_BRUSCHETTA = 'Prep Bruschetta';
-const ASSEMBLE = 'Assemble';
 
 module.exports = {
     cardName: 'Bruschetta',
@@ -64,8 +62,8 @@ module.exports = {
         { step: 'Flip slices over and repeat with the other side.', section: BAKE_BAGUETTE },
         { step: 'Bake until golden brown and crispy (about 5 to 7 minutes on each side). Be careful not to burn them.', section: BAKE_BAGUETTE },
         { step: 'Drain the diced tomatoes as needed. Optionally add a pinch of salt.', section: PREP_BRUSCHETTA, img: bruschetta1 },
-        { step: 'In a medium bowl, combine the "Bruschetta" section ingredients.', section: PREP_BRUSCHETTA, img: bruschetta3 },
-        { step: 'Top each slice with about 2 tablespoons of the bruschetta mixture.', section: ASSEMBLE, img: bruschetta5 },
+        { step: `In a medium bowl, combine the "${BRUSCHETTA_SECTION}" section ingredients.`, section: PREP_BRUSCHETTA, img: bruschetta3 },
+        { step: 'Top each slice with about 2 tablespoons of the bruschetta mixture.', section: SECTIONS.ASSEMBLE, img: bruschetta5 },
         { step: 'Serve this appetizer immediately topped with more basil.', section: SECTIONS.SERVE },
     ]
 };

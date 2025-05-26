@@ -2,7 +2,6 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { LIGHT_SOY_SAUCE, BROWN_SUGAR, OLIVE_OIL, YELLOW_MUSTARD, CAJUN_SEASONING, GARLIC, UNSALTED_BUTTER, SHRIMP, SALT, BLACK_PEPPER, GREEN_ONION } = require('./ingredients');
 
-const SHRIMP_SECTION = 'Shrimp';
 const COOK_SECTION = 'Cook';
 
 module.exports = {
@@ -51,7 +50,7 @@ module.exports = {
         { name: '' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Sauce" section ingredients.', section: SECTIONS.COOK_SAUCE },
+        { step: `In a mixing bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
         { step: 'Over medium-high heat, heat a pan.', section: SECTIONS.COOK_SAUCE },
         { step: 'Add butter and sauce. Cook until the butter has melted (about 2 minutes).', section: SECTIONS.COOK_SAUCE },
 

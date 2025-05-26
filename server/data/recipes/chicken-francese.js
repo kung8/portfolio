@@ -4,8 +4,6 @@ const { ALL_PURPOSE_FLOUR, EGG, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL,
 
 const CORNSTARCH_MIXTURE_SECTION = 'Cornstarch Mixture';
 
-const BAKE_CHICKEN = 'Bake Chicken';
-
 module.exports = {
     wip: true,
     cardName: 'Chicken Francese',
@@ -65,12 +63,12 @@ module.exports = {
         { step: 'Add chicken and saute until almost cooked through (about 4 minutes per side).', section: SECTIONS.COOK_CHICKEN },
         { step: 'Transfer to the plate.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Preheat oven to 300ºF.', section: SECTIONS.PREP_SAUCE },
-        { step: 'Over medium-low heat, combine the "Sauce" section ingredients.', section: SECTIONS.PREP_SAUCE },
+        { step: `Over medium-low heat, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
         { step: 'Cook until butter melts, stirring occasionally.', section: SECTIONS.PREP_SAUCE },
         { step: 'In a small bowl, combine cornstarch and water.', section: SECTIONS.PREP_SAUCE },
         { step: 'Add cornstarch mixture to the saucepan. Cook until slightly thickens (about 2 to 3 minutes).', section: SECTIONS.PREP_SAUCE },
-        { step: 'Add chicken and sauce to the baking dish.', section: BAKE_CHICKEN },
-        { step: 'Bake until the chicken is no longer pink and juices are clear (about 10 to 15 minutes).', section: BAKE_CHICKEN },
+        { step: 'Add chicken and sauce to the baking dish.', section: SECTIONS.BAKE },
+        { step: 'Bake until the chicken is no longer pink and juices are clear (about 10 to 15 minutes).', section: SECTIONS.BAKE },
         { step: 'Enjoy this dish.', section: SECTIONS.SERVE },
     ]
 };

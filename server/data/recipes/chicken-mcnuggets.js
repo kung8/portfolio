@@ -11,7 +11,6 @@ const { GROUND_CHICKEN, SALT, WHITE_SUGAR, ALL_PURPOSE_FLOUR, WHITE_PEPPER, CELE
 const FLOUR_DREDGING_STATION = 'Flour Dredging Station';
 const WET_BATTER_STATION = 'Wet Batter Station';
 const TEMPURA_BATTER_STATION = 'Tempura Batter Station';
-const DEEP_FRY = 'Deep Fry';
 
 module.exports = {
     wip: true,
@@ -54,7 +53,7 @@ module.exports = {
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: TEMPURA_BATTER_STATION },
         { ...WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: TEMPURA_BATTER_STATION },
 
-        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: DEEP_FRY },
+        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: SECTIONS.DEEP_FRY },
     ],
     appliances: [
         { name: 'stove' },
@@ -70,17 +69,17 @@ module.exports = {
     ],
     directions: [
         { step: 'Chop up the chicken breast until the chicken is grounded (or you can use ground chicken).', section: SECTIONS.CHICKEN },
-        { step: 'In a mixing bowl, combine the "Chicken" section ingredients.', section: SECTIONS.CHICKEN },
+        { step: `In a mixing bowl, combine the "${SECTIONS.CHICKEN}" section ingredients.`, section: SECTIONS.CHICKEN },
         { step: 'Form the ground chicken into McNugget shapes.', section: SECTIONS.CHICKEN, img: mcnuggets1 },
-        { step: 'Over medium-high heat, heat up 2 to 3 inches of oil in a pot.', section: DEEP_FRY },
-        { step: 'Prepare the 3 dredging stations in shallow bowls. Set up the station in order: "Wet", "Flour", and "Tempura".', section: DEEP_FRY, img: [mcnuggets2, mcnuggets3, mcnuggets4] },
-        { step: 'The frying oil should be between 350ºF and 375ºF before frying. This allows for the chicken to crisp up without burning before the inside is cooked through. If the oil is not hot enough, it will take longer for the chicken to cook through and would soak up more oil instead.', section: DEEP_FRY },
-        { step: 'Line some paper towels on a large baking sheet and place a wire cooling rack on top.', section: DEEP_FRY },
-        { step: 'Once the oil is in the correct temperature range, begin dredging the chicken McNuggets. Shake off excess flour before adding it to the tempura station.', section: DEEP_FRY },
-        { step: 'Carefully place the chicken McNuggets into the oil and let batter covered fingers fall on the McNuggets to create the flakes. Avoid crowding the pot.', section: DEEP_FRY },
-        { step: 'Fry for 5 to 7 minutes.', section: DEEP_FRY, img: mcnuggets5 },
-        { step: 'Remove the cooked McNugget using a spider strainer.', section: DEEP_FRY },
-        { step: 'Place the cooked chicken McNuggets on the prepared cooling rack to drain.', section: DEEP_FRY },
-        { step: 'Enjoy these McNuggets with your favorite sauces.', section: DEEP_FRY },
+        { step: 'Over medium-high heat, heat up 2 to 3 inches of oil in a pot.', section: SECTIONS.DEEP_FRY },
+        { step: 'Prepare the 3 dredging stations in shallow bowls. Set up the station in order: "Wet", "Flour", and "Tempura".', section: SECTIONS.DEEP_FRY, img: [mcnuggets2, mcnuggets3, mcnuggets4] },
+        { step: 'The frying oil should be between 350ºF and 375ºF before frying. This allows for the chicken to crisp up without burning before the inside is cooked through. If the oil is not hot enough, it will take longer for the chicken to cook through and would soak up more oil instead.', section: SECTIONS.DEEP_FRY },
+        { step: 'Line some paper towels on a large baking sheet and place a wire cooling rack on top.', section: SECTIONS.DEEP_FRY },
+        { step: 'Once the oil is in the correct temperature range, begin dredging the chicken McNuggets. Shake off excess flour before adding it to the tempura station.', section: SECTIONS.DEEP_FRY },
+        { step: 'Carefully place the chicken McNuggets into the oil and let batter covered fingers fall on the McNuggets to create the flakes. Avoid crowding the pot.', section: SECTIONS.DEEP_FRY },
+        { step: 'Fry for 5 to 7 minutes.', section: SECTIONS.DEEP_FRY, img: mcnuggets5 },
+        { step: 'Remove the cooked McNugget using a spider strainer.', section: SECTIONS.DEEP_FRY },
+        { step: 'Place the cooked chicken McNuggets on the prepared cooling rack to drain.', section: SECTIONS.DEEP_FRY },
+        { step: 'Enjoy these McNuggets with your favorite sauces.', section: SECTIONS.SERVE },
     ]
 };

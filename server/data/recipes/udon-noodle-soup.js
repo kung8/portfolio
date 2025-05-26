@@ -57,7 +57,7 @@ module.exports = {
         { name: 'large pot' },
     ],
     directions: [
-        { step: 'Over medium-high heat, combine the "" section ingredients in a large pot.', section: SECTIONS.MAKE_BROTH },
+        { step: `Over medium-high heat, combine the "${SECTIONS.BROTH}" section ingredients in a large pot.`, section: SECTIONS.MAKE_BROTH },
         { step: 'Lower heat and let simmer for 3 hours, stirring occasionally. Add more water to keep ingredients covered.', section: SECTIONS.MAKE_BROTH },
         { step: 'Let the broth cool and remove the bones (reserve the bones and meat for other use).', section: SECTIONS.MAKE_BROTH },
         { step: 'Strain the broth and chill overnight (or at least 3 hours). Remove any congealed fat from the surface.', section: SECTIONS.MAKE_BROTH },
@@ -71,10 +71,10 @@ module.exports = {
         { step: 'Drain. Rinse with cool water.', section: SECTIONS.COOK_NOODLES },
 
         { step: 'Over medium-low heat, bring a large pot of the beef broth to a simmer.', section: SECTIONS.MAKE_SOUP },
-        { step: 'Increase the heat to high, add all the "Soup Part 1" section ingredients (except the pork). Bring to a boil.', section: SECTIONS.MAKE_SOUP },
+        { step: `Increase the heat to high, add all the "${SOUP_1_SECTION}" section ingredients (except the pork). Bring to a boil.`, section: SECTIONS.MAKE_SOUP },
         { step: 'Lower the heat to medium, simmer for 5 minutes.', section: SECTIONS.MAKE_SOUP },
         { step: 'Add pork. Cook for a couple of minutes.', section: SECTIONS.MAKE_SOUP },
-        { step: 'Add the noodles and the remaining "Soup Part 2" section ingredients. Cook until the cabbage wilts.', section: SECTIONS.MAKE_SOUP },
+        { step: `Add the noodles and the remaining "${SOUP_2_SECTION}" section ingredients. Cook until the cabbage wilts.`, section: SECTIONS.MAKE_SOUP },
         { step: 'Remove the chili peppers.', section: SECTIONS.MAKE_SOUP },
         { step: 'Taste and adjust as necessary.', section: SECTIONS.MAKE_SOUP },
 

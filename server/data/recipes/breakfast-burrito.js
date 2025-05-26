@@ -6,8 +6,6 @@ const AVOCADO_TOMATO_SALSA_SECTION = 'Avocado Tomato Salsa';
 const BURRITO_SECTION = 'Burrito Section';
 
 const PREPARE_SALSA = 'Prepare Salsa';
-const COOK_FILLING = 'Cook Filling';
-const ASSEMBLE_BURRITO = 'Assemble Burrito';
 const COOK_BURRITO = 'Cook Burrito';
 
 module.exports = {
@@ -60,17 +58,17 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        { step: 'In a medium bowl, combine the "Avocado-Tomato Salsa" section ingredients.', section: PREPARE_SALSA },
-        { step: 'In a medium bowl, combine eggs, paprika and salt. Set aside.', section: COOK_FILLING },
-        { step: 'Over medium-high heat, heat a large pan.', section: COOK_FILLING },
-        { step: 'Add sausage. Cook and stir frequently until browned (about 4 to 5 minutes).', section: COOK_FILLING },
-        { step: 'Transfer the sausage with a slotted spoon. Use the drippings for the eggs.', section: COOK_FILLING },
-        { step: 'Bring to low heat, add the eggs. Scramble and cook until just cooked through.', section: COOK_FILLING },
-        { step: 'Transfer cooked eggs to plate.', section: COOK_FILLING },
-        { step: 'Wipe pan clean.', section: COOK_FILLING },
-        { step: 'Fill each tortilla with 1/4 cup salsa. There will be a little leftover for topping.', section: ASSEMBLE_BURRITO },
-        { step: 'Add 1/4 of the sausage, eggs and cheese to each tortilla.', section: ASSEMBLE_BURRITO },
-        { step: 'Fold the sides and roll the burrito, tucking in the edges as you roll.', section: ASSEMBLE_BURRITO },
+        { step: `In a medium bowl, combine the "${AVOCADO_TOMATO_SALSA_SECTION}" section ingredients.`, section: PREPARE_SALSA },
+        { step: 'In a medium bowl, combine eggs, paprika and salt. Set aside.', section: SECTIONS.COOK_FILLING },
+        { step: 'Over medium-high heat, heat a large pan.', section: SECTIONS.COOK_FILLING },
+        { step: 'Add sausage. Cook and stir frequently until browned (about 4 to 5 minutes).', section: SECTIONS.COOK_FILLING },
+        { step: 'Transfer the sausage with a slotted spoon. Use the drippings for the eggs.', section: SECTIONS.COOK_FILLING },
+        { step: 'Bring to low heat, add the eggs. Scramble and cook until just cooked through.', section: SECTIONS.COOK_FILLING },
+        { step: 'Transfer cooked eggs to plate.', section: SECTIONS.COOK_FILLING },
+        { step: 'Wipe pan clean.', section: SECTIONS.COOK_FILLING },
+        { step: 'Fill each tortilla with 1/4 cup salsa. There will be a little leftover for topping.', section: SECTIONS.ASSEMBLE },
+        { step: 'Add 1/4 of the sausage, eggs and cheese to each tortilla.', section: SECTIONS.ASSEMBLE },
+        { step: 'Fold the sides and roll the burrito, tucking in the edges as you roll.', section: SECTIONS.ASSEMBLE },
         { step: 'Over medium heat, heat oil in the pan.', section: COOK_BURRITO },
         { step: 'Add burritos seam side down. Cover with a lid.', section: COOK_BURRITO },
         { step: 'Cook until the bottom is golden brown (about 3 minutes).', section: COOK_BURRITO },

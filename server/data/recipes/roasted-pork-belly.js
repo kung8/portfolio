@@ -76,7 +76,7 @@ module.exports = {
         { step: 'Pat the pork belly dry with paper towels.', section: PREP_PORK_BELLY },
         { step: 'Poke holes on the pork skin (not the meat) using a fork or knife.', section: PREP_PORK_BELLY, img: roast2 },
         { step: 'Score the meat in a criss cross pattern (1 inch apart, 1/4 inch deep).', section: PREP_PORK_BELLY, img: roast3 },
-        { step: 'In a small bowl, combine the "Rub" section ingredients.', section: PREP_PORK_BELLY, img: roast1 },
+        { step: `In a small bowl, combine the "${RUB_SECTION}" section ingredients.`, section: PREP_PORK_BELLY, img: roast1 },
         { step: 'Brush the meat side with the rub mixture.', section: PREP_PORK_BELLY, img: [roast4, roast5] },
         { step: 'Cover the pork in aluminum foil except the skin.', section: PREP_PORK_BELLY, img: roast6 },
         { step: 'In a small bowl, combine egg whites and salt until it becomes a paste.', section: PREP_PORK_BELLY, img: [roast7, roast8] },

@@ -60,7 +60,7 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'In a saucepan, combine the "Reduction" section ingredients.', section: PREP_REDUCTION },
+        { step: `In a saucepan, combine the "${REDUCTION_SECTION}" section ingredients.`, section: PREP_REDUCTION },
         { step: 'Over medium-high heat, bring to a simmer. Stir.', section: PREP_REDUCTION },
         { step: 'Reduce to medium-low heat. Continue to gently simmer until it reduces to about 3 tablespoon of liquid (about 20 to 30 minutes).', section: PREP_REDUCTION },
         { step: 'Remove from heat.', section: PREP_REDUCTION },

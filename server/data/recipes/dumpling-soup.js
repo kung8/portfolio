@@ -10,11 +10,7 @@ const dumpling8 = '../assets/Products/dumpling-soup-8.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { VEGETABLE_OIL, SESAME_OIL, CARROT, GREEN_ONION, GARLIC, GROUND_GINGER, CHICKEN_BROTH, DUMPLINGS, BABY_SPINACH, LIGHT_SOY_SAUCE, SRIRACHA_SAUCE, MISO_PASTE, CHILI_OIL } = require('./ingredients');
 
-const VEGGIES_SECTION = 'Veggies';
 const MISO_PASTE_MIXTURE = 'Miso Paste Mixture';
-const SOUP_SECTION = 'Soup';
-
-const MAKE_SOUP = 'Make Soup';
 
 module.exports = {
     cardName: 'Dumpling Soup',
@@ -37,20 +33,20 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES_SECTION },
-        { ...SESAME_OIL, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: VEGGIES_SECTION },
-        { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: VEGGIES_SECTION },
-        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: VEGGIES_SECTION },
-        { ...GROUND_GINGER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: VEGGIES_SECTION },
-        { ...GREEN_ONION, amount: 5, unit: '', additionalDetails: 'thinly sliced, separate the whites and greens', section: VEGGIES_SECTION },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...SESAME_OIL, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.VEGGIES },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.VEGGIES },
+        { ...GROUND_GINGER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...GREEN_ONION, amount: 5, unit: '', additionalDetails: 'thinly sliced, separate the whites and greens', section: SECTIONS.VEGGIES },
 
         { ...MISO_PASTE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MISO_PASTE_MIXTURE },
         { ...CHICKEN_BROTH, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MISO_PASTE_MIXTURE },
 
-        { ...CHICKEN_BROTH, amount: 11 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SOUP_SECTION },
-        { ...DUMPLINGS, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SOUP_SECTION },
-        { ...BABY_SPINACH, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SOUP_SECTION },
-        { ...LIGHT_SOY_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SOUP_SECTION },
+        { ...CHICKEN_BROTH, amount: 11 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...DUMPLINGS, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...BABY_SPINACH, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...LIGHT_SOY_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SOUP },
 
         { ...SRIRACHA_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...CHILI_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
@@ -64,18 +60,18 @@ module.exports = {
         { name: 'small bowl' },
     ],
     directions: [
-        { step: 'Over medium heat, heat oils in a large pot.', section: MAKE_SOUP },
-        { step: 'Add all the "Veggies" section ingredients except the green parts of the green onions (This will be added later as a topping).', section: MAKE_SOUP, img: dumpling1 },
-        { step: 'Cook and stir until softened (about 2 to 3 minutes).', section: MAKE_SOUP },
+        { step: 'Over medium heat, heat oils in a large pot.', section: SECTIONS.MAKE_SOUP },
+        { step: `Add all the "${SECTIONS.VEGGIES}" section ingredients except the green parts of the green onions (This will be added later as a topping).`, section: SECTIONS.MAKE_SOUP, img: dumpling1 },
+        { step: 'Cook and stir until softened (about 2 to 3 minutes).', section: SECTIONS.MAKE_SOUP },
 
-        { step: 'In a small bowl, combine the "Miso Paste Mixture" section ingredients.', section: MAKE_SOUP, img: dumpling2 },
-        { step: 'Add the miso paste mixture and the broth to the pot. Bring to a boil.', section: MAKE_SOUP, img: dumpling3 },
+        { step: `In a small bowl, combine the "${MISO_PASTE_MIXTURE}" section ingredients.`, section: SECTIONS.MAKE_SOUP, img: dumpling2 },
+        { step: 'Add the miso paste mixture and the broth to the pot. Bring to a boil.', section: SECTIONS.MAKE_SOUP, img: dumpling3 },
 
-        { step: 'Add dumpling. Bring to a simmer. Cook until dumplings are heated through (about 3 to 5 minutes).', section: MAKE_SOUP, img: dumpling4 },
+        { step: 'Add dumpling. Bring to a simmer. Cook until dumplings are heated through (about 3 to 5 minutes).', section: SECTIONS.MAKE_SOUP, img: dumpling4 },
 
-        { step: 'Add spinach. Cook until it wilts (about 1 to 2 minutes).', section: MAKE_SOUP, img: dumpling5 },
+        { step: 'Add spinach. Cook until it wilts (about 1 to 2 minutes).', section: SECTIONS.MAKE_SOUP, img: dumpling5 },
 
-        { step: 'Add soy sauce and the green parts of the green onions.', section: MAKE_SOUP, img: dumpling6 },
+        { step: 'Add soy sauce and the green parts of the green onions.', section: SECTIONS.MAKE_SOUP, img: dumpling6 },
         { step: 'Serve hot topped with your preferred condiments.', section: SECTIONS.SERVE, img: dumpling8 },
     ],
     notes: [

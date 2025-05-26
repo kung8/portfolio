@@ -12,7 +12,6 @@ const { CHOY_SUM, OYSTER_SAUCE, LIGHT_SOY_SAUCE, WHITE_SUGAR, GARLIC, SALT, VEGE
 
 const CHOY_SUM_SECTION = 'Choy Sum';
 const GARLIC_SECTION = 'Garlic';
-
 const COOK_CHOY_SUM = 'Cook Choy Sum';
 
 module.exports = {
@@ -66,7 +65,7 @@ module.exports = {
         { step: 'Drain and dry with paper towels.', section: COOK_CHOY_SUM, img: choy4 },
         { step: 'Transfer to a plate.', section: COOK_CHOY_SUM },
 
-        { step: 'In a small bowl, combine the "Sauce" section ingredients.', section: SECTIONS.COOK_SAUCE },
+        { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
         { step: 'Over medium heat, heat oil in a saucepan.', section: SECTIONS.COOK_SAUCE },
         { step: 'Add garlic. Stir and cook until fragrant (about 30 seconds).', section: SECTIONS.COOK_SAUCE, img: choy5 },
         { step: 'Add sauce. Cook until the sauce slightly thickens (about 30 seconds to 1 minute).', section: SECTIONS.COOK_SAUCE, img: choy6 },

@@ -40,7 +40,6 @@ const {
 const CHICKEN_AND_VEGGIES_SECTION = 'Chicken and Veggies';
 
 const COOK_CHICKEN_AND_VEGGIES = 'Cook Chicken and Veggies';
-const ASSEMBLE = 'Assemble';
 const ROAST_PEANUTS = 'Roast Peanuts';
 
 module.exports = {
@@ -112,9 +111,9 @@ module.exports = {
         { step: 'Flip and cook for 30 seconds before turning off heat. Continue to let eggs cook with the residual heat.', section: SECTIONS.COOK_EGGS, img: cookedEggs },
         { step: 'Remove the eggs from wok and cut eggs into thin strips.', section: SECTIONS.COOK_EGGS, img: strips },
 
-        { step: 'In the wok, mix together noodles, chicken, and vegetables.', section: ASSEMBLE, img: mixed },
-        { step: 'Add eggs. Carefully mix.', section: ASSEMBLE, img: mixedNoSauce },
-        { step: 'Add sauce. Mix together.', section: ASSEMBLE, img: mixedSauce4 },
+        { step: 'In the wok, mix together noodles, chicken, and vegetables.', section: SECTIONS.ASSEMBLE, img: mixed },
+        { step: 'Add eggs. Carefully mix.', section: SECTIONS.ASSEMBLE, img: mixedNoSauce },
+        { step: 'Add sauce. Mix together.', section: SECTIONS.ASSEMBLE, img: mixedSauce4 },
 
         { step: 'Roast the peanuts in a pan.', section: ROAST_PEANUTS, img: peanuts },
         { step: 'Set aside.', section: ROAST_PEANUTS, img: peanuts },

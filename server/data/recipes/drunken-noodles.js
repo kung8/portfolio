@@ -55,7 +55,7 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'In a small bowl, combine the "Sauce" section ingredients.', section: SECTIONS.COOK_SAUCE, img: drunken1 },
+        { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE, img: drunken1 },
         { step: 'Over high heat, add oil to a wok.', section: SECTIONS.COOK_NOODLES },
         { step: 'Add garlic and cook until light brown.', section: SECTIONS.COOK_NOODLES, img: drunken2 },
         { step: 'Add eggs and serrano peppers. Lightly scramble and cook until it is barely set (about 1 minute).', section: SECTIONS.COOK_NOODLES, img: drunken3 },

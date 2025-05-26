@@ -3,7 +3,6 @@ const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UN
 const { ANGEL_HAIR_PASTA, LEMON, OLIVE_OIL, BLACK_PEPPER, DICED_TOMATO, CAPER, PARSLEY, GARLIC_SALT } = require('./ingredients');
 
 const LEMON_JUICE_MIXTURE = 'Lemon Juice Mixture';
-const ASSEMBLE_SALAD = 'Assemble Salad';
 
 module.exports = {
     wip: true,
@@ -51,8 +50,8 @@ module.exports = {
         { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: SECTIONS.COOK_PASTA },
         { step: 'Add the pasta. Cook until al dente (just a few minutes).', section: SECTIONS.COOK_PASTA },
         { step: 'Drain. Rinse in cold water.', section: SECTIONS.COOK_PASTA },
-        { step: 'In a mixing bowl, combine "Lemon Juice Mixture" section ingredients.', section: ASSEMBLE_SALAD },
-        { step: 'Add the pasta and the rest of the ingredients. Toss.', section: ASSEMBLE_SALAD },
+        { step: `In a mixing bowl, combine "${LEMON_JUICE_MIXTURE}" section ingredients.`, section: SECTIONS.PREP_SALAD },
+        { step: 'Add the pasta and the rest of the ingredients. Toss.', section: SECTIONS.PREP_SALAD },
         { step: 'Serve this immediately or cover and chill until ready to eat.', section: SECTIONS.SERVE },
     ]
 };

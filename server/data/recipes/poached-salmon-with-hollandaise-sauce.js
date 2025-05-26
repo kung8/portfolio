@@ -2,12 +2,6 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { LEMON_JUICE, OLIVE_OIL, SALT, BLACK_PEPPER, SALMON_FISH, EGG_YOLK, WATER, UNSALTED_BUTTER, CHIVE } = require('./ingredients');
 
-const SALMON_SECTION = 'Salmon';
-const HOLLANDAISE_SECTION = 'Hollandaise Sauce';
-
-const COOK_SALMON = 'Cook Salmon';
-const COOK_HOLLANDAISE = 'Cook Hollandaise Sauce';
-
 module.exports = {
     wip: true,
     cardName: 'Poached Salmon',
@@ -31,18 +25,18 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...SALMON_FISH, amount: 2, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'skinless, boneless', section: SALMON_SECTION },
-        { ...LEMON_JUICE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SALMON_SECTION },
-        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SALMON_SECTION },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SALMON_SECTION },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SALMON_SECTION },
+        { ...SALMON_FISH, amount: 2, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'skinless, boneless', section: SECTIONS.FISH },
+        { ...LEMON_JUICE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FISH },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FISH },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.FISH },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.FISH },
 
-        { ...EGG_YOLK, amount: 3, unit: '', additionalDetails: '', section: HOLLANDAISE_SECTION },
-        { ...WATER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'hot', section: HOLLANDAISE_SECTION },
-        { ...UNSALTED_BUTTER, amount: 16, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HOLLANDAISE_SECTION },
-        { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HOLLANDAISE_SECTION },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: HOLLANDAISE_SECTION },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: HOLLANDAISE_SECTION },
+        { ...EGG_YOLK, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WATER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'hot', section: SECTIONS.SAUCE },
+        { ...UNSALTED_BUTTER, amount: 16, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
         { ...CHIVE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
@@ -54,18 +48,18 @@ module.exports = {
         { name: 'metal bowl' },
     ],
     directions: [
-        { step: 'In a medium saucepan, add the "Salmon" section ingredients.', section: COOK_SALMON },
-        { step: 'Add enough water to just cover the salmon.', section: COOK_SALMON },
-        { step: 'Over medium-high heat, heat the salmon until the water is hot and steaming (not simmering). Lower the temperature as needed.', section: COOK_SALMON },
-        { step: 'Poach until the salmon is opaque and is firm (internal temperature of 140ºF).', section: COOK_SALMON },
-        { step: 'Over high heat, bring a few inches of water in another saucepan to a boil.', section: COOK_HOLLANDAISE },
-        { step: 'Turn down to medium-high heat and let water come to a gentle boil.', section: COOK_HOLLANDAISE },
-        { step: 'In a metal bowl, add egg yolks and 1 tablespoon of the boiling water.', section: COOK_HOLLANDAISE },
-        { step: 'Place the bowl over the saucepan (it shouldn\'t touch the water).', section: COOK_HOLLANDAISE },
-        { step: 'Whisk until the yolk thickens, becomes a light opaque yellow and doubles in size. (You might need to remove the bowl occasionally too prevent it from becoming scrambled eggs).', section: COOK_HOLLANDAISE },
-        { step: 'Add in the butter, one at a time, until it melts and incorporates with the sauce.', section: COOK_HOLLANDAISE },
-        { step: 'Once all incorporated, remove from heat.', section: COOK_HOLLANDAISE },
-        { step: 'Add in lemon juice, salt and pepper.', section: COOK_HOLLANDAISE },
+        { step: `In a medium saucepan, add the "${SECTIONS.FISH}" section ingredients.`, section: SECTIONS.COOK_FISH },
+        { step: 'Add enough water to just cover the salmon.', section: SECTIONS.COOK_FISH },
+        { step: 'Over medium-high heat, heat the salmon until the water is hot and steaming (not simmering). Lower the temperature as needed.', section: SECTIONS.COOK_FISH },
+        { step: 'Poach until the salmon is opaque and is firm (internal temperature of 140ºF).', section: SECTIONS.COOK_FISH },
+        { step: 'Over high heat, bring a few inches of water in another saucepan to a boil.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Turn down to medium-high heat and let water come to a gentle boil.', section: SECTIONS.COOK_SAUCE },
+        { step: 'In a metal bowl, add egg yolks and 1 tablespoon of the boiling water.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Place the bowl over the saucepan (it shouldn\'t touch the water).', section: SECTIONS.COOK_SAUCE },
+        { step: 'Whisk until the yolk thickens, becomes a light opaque yellow and doubles in size. (You might need to remove the bowl occasionally too prevent it from becoming scrambled eggs).', section: SECTIONS.COOK_SAUCE },
+        { step: 'Add in the butter, one at a time, until it melts and incorporates with the sauce.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Once all incorporated, remove from heat.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Add in lemon juice, salt and pepper.', section: SECTIONS.COOK_SAUCE },
         { step: 'Drain the salmon. Serve with sauce and top with chives.', section: SECTIONS.SERVE },
     ]
 };

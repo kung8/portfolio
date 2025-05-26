@@ -53,10 +53,10 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Beef" section ingredients.', section: SECTIONS.MARINATE_BEEF },
+        { step: `In a mixing bowl, combine the "${SECTIONS.BEEF}" section ingredients.`, section: SECTIONS.MARINATE_BEEF },
         { step: 'Let it marinate for 5 to 7 minutes.', section: SECTIONS.MARINATE_BEEF },
 
-        { step: 'In a small bowl, combine the "Sauce" section ingredients. Stir and set aside.', section: SECTIONS.PREP_SAUCE },
+        { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients. Stir and set aside.`, section: SECTIONS.PREP_SAUCE },
 
         { step: 'Over medium-high heat, add 1 tablespoon of oil to a wok.', section: SECTIONS.STIR_FRY },
         { step: 'Add the beef. Sear both sides of the beef (about 1 to 2 minutes). Cook in batches if needed and add more between batches as needed.', section: SECTIONS.STIR_FRY },

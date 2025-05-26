@@ -55,7 +55,7 @@ module.exports = {
     ],
     directions: [
         { step: 'In a mixing bowl, combine the chicken and baking soda. Marinate for 20 to 30 minutes.', section: SECTIONS.MARINATE_CHICKEN },
-        { step: 'In a medium bowl, combine all the "Sauce" section ingredients.', section: SECTIONS.COOK_SAUCE },
+        { step: `In a medium bowl, combine all the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
         { step: 'Over high heat, heat oil in a wok.', section: SECTIONS.STIR_FRY },
         { step: 'Add garlic and onion. Cook for a minute.', section: SECTIONS.STIR_FRY },
         { step: 'Add chicken. Cook until chicken is no longer pink (for a few minutes).', section: SECTIONS.STIR_FRY },

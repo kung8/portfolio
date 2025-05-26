@@ -2,9 +2,7 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { MOZZARELLA_CHEESE, ITALIAN_SAUSAGE, PEPPERONI, GREEN_BELL_PEPPER, RED_BELL_PEPPER, YELLOW_ONION, PIZZA_SAUCE, SPRING_ROLL_WRAPPER, VEGETABLE_OIL } = require('./ingredients');
 
-const FRYING_SECTION = 'Frying';
 const PREP_SPRING_ROLLS = 'Prep Spring Rolls';
-const DEEP_FRY_ROLLS = 'Deep Fry Rolls';
 
 module.exports = {
     wip: true,
@@ -36,8 +34,8 @@ module.exports = {
         { ...RED_BELL_PEPPER, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.FILLING },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.FILLING },
         { ...PIZZA_SAUCE, amount: 28, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...SPRING_ROLL_WRAPPER, amount: 32, unit: INGREDIENT_UNITS.PIECE, additionalDetails: '', section: '' },
-        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '', section: FRYING_SECTION },
+        { ...SPRING_ROLL_WRAPPER, amount: 32, unit: INGREDIENT_UNITS.PIECE, additionalDetails: '', section: SECTIONS.WRAPPER },
+        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DEEP_FRY },
         { ...PIZZA_SAUCE, amount: '', unit: '', additionalDetails: 'warmed', section: SECTIONS.SERVE },
     ],
     appliances: [
@@ -52,7 +50,7 @@ module.exports = {
         { name: 'paper towels' },
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Filling" section ingredients.', section: SECTIONS.PREP_FILLING },
+        { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING },
 
         { step: 'On a clean surface or cutting board, place the spring roll wrapper with a corner facing you.', section: PREP_SPRING_ROLLS },
         { step: 'Place a 1/4 cup of the filling 1 inch from the corner nearest you.', section: PREP_SPRING_ROLLS },
@@ -63,10 +61,10 @@ module.exports = {
         { step: 'Press to seal.', section: PREP_SPRING_ROLLS },
 
 
-        { step: 'Place 2 layers of paper towels on top of a baking sheet and then place the cooling rack on top of the paper towels.', section: DEEP_FRY_ROLLS },
-        { step: 'Heat 1 to 2 inches of oil to 375ºF.', section: DEEP_FRY_ROLLS },
-        { step: 'Deep fry pizza egg rolls until golden brown (about 1 to 2 minutes each side).', section: DEEP_FRY_ROLLS },
-        { step: 'Place on cooling rack to drain.', section: DEEP_FRY_ROLLS },
+        { step: 'Place 2 layers of paper towels on top of a baking sheet and then place the cooling rack on top of the paper towels.', section: SECTIONS.DEEP_FRY },
+        { step: 'Heat 1 to 2 inches of oil to 375ºF.', section: SECTIONS.DEEP_FRY },
+        { step: 'Deep fry pizza egg rolls until golden brown (about 1 to 2 minutes each side).', section: SECTIONS.DEEP_FRY },
+        { step: 'Place on cooling rack to drain.', section: SECTIONS.DEEP_FRY },
 
         { step: 'Serve these warm with pizza sauce.', section: SECTIONS.SERVE },
     ]

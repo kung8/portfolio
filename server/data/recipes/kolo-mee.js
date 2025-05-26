@@ -8,10 +8,8 @@ const { GROUND_PORK, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, OYSTER_SAUCE, SESAME_OIL, 
 
 const MINCED_MEAT_SECTION = 'Minced Meat';
 const BOK_CHOY_SECTION = 'Bok Choy';
-
 const COOK_MINCED_MEAT = 'Cook Minced Meat';
 const COOK_BOK_CHOY = 'Cook Bok Choy';
-const ASSEMBLE_DISH = 'Assemble Dish';
 
 module.exports = {
     cardName: 'Kolo Mee',
@@ -64,7 +62,7 @@ module.exports = {
     ],
     directions: [
         { step: 'Over medium-high heat, heat oil in a wok.', section: COOK_MINCED_MEAT },
-        { step: 'Add the "Minced Meat" section ingredients. Stir fry until browned.', section: COOK_MINCED_MEAT },
+        { step: `Add the "${MINCED_MEAT_SECTION}" section ingredients. Stir fry until browned.`, section: COOK_MINCED_MEAT },
         { step: 'Set aside.', section: COOK_MINCED_MEAT, img: kolo1 },
 
         { step: 'Cook the chow mein noodles according to package instructions. As it loosens and is almost cooked, remove the noodles and place it in a cold water bath.', section: SECTIONS.COOK_NOODLES },
@@ -75,8 +73,8 @@ module.exports = {
         { step: 'Add bok choy. Cook until tender (about 1 to 2 minutes).', section: COOK_BOK_CHOY },
         { step: 'Drain. Set aside.', section: COOK_BOK_CHOY, img: kolo4 },
 
-        { step: 'To the plate of noodles, add the "Sauce" section ingredients. Mix.', section: ASSEMBLE_DISH },
-        { step: 'Top the dish with the minced meat, bok choy and any other preferred toppings.', section: ASSEMBLE_DISH, img: kolo2 },
+        { step: `To the plate of noodles, add the "${SECTIONS.SAUCE}" section ingredients. Mix.`, section: SECTIONS.ASSEMBLE },
+        { step: 'Top the dish with the minced meat, bok choy and any other preferred toppings.', section: SECTIONS.ASSEMBLE, img: kolo2 },
 
         { step: 'Enjoy one of my favorite noodle dishes from where a piece of my heart is.', section: SECTIONS.SERVE },
     ],

@@ -75,7 +75,7 @@ module.exports = {
         { step: 'Preheat the oven to 425ºF.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Place chicken breast between two pieces of plastic wrap.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Pound chicken with a meat mallet.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'In a medium bowl, combine together the "Seasonings" section ingredients.', section: SECTIONS.COOK_CHICKEN },
+        { step: `In a medium bowl, combine together the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.COOK_CHICKEN },
         { step: 'Line a baking sheet with aluminum foil.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Place chicken on baking sheet. Drizzle half of the olive oil and rub into the chicken.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Sprinkle with half of the seasoning.', section: SECTIONS.COOK_CHICKEN },

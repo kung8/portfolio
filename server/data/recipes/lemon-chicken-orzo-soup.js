@@ -63,9 +63,9 @@ module.exports = {
     ],
     directions: [
         { step: 'Over medium heat, heat oil in a large pot.', section: COOK_VEGGIES },
-        { step: 'Add the "Veggies" section ingredients. Cook until leeks soften (about 5 minutes).', section: COOK_VEGGIES },
+        { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Cook until leeks soften (about 5 minutes).`, section: COOK_VEGGIES },
 
-        { step: 'Add all the "Simmer" section ingredients except the lemon juice. Bring to a simmer.', section: SIMMER },
+        { step: `Add all the "${SECTIONS.SIMMER}" section ingredients except the lemon juice. Bring to a simmer.`, section: SIMMER },
         { step: 'Cook until the chicken is cooked through and tender (about 20 to 25 minutes).', section: SIMMER },
 
         { step: 'Transfer the chicken to a cutting board. Let it cool slightly.', section: CUT_CHICKEN },

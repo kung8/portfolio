@@ -39,7 +39,6 @@ const MAKE_CHERRY_FILLING = 'Make Cherry Filling';
 const MAKE_CREAM_CHEESE_FILLING = 'Make Cream Cheese Filling';
 const FORM_BALLS = 'Form Balls';
 const MAKE_EGG_WASH = 'Make Egg Wash';
-const ASSEMBLE_KOLACHES = 'Assemble Kolaches';
 const BAKE_KOLACHES = 'Bake Kolaches';
 
 module.exports = {
@@ -138,14 +137,14 @@ module.exports = {
         { step: 'In a small bowl, whisk together the "Egg Wash" ingredients.', section: MAKE_EGG_WASH, img: [kolaches15, kolaches16] },
         { step: 'Set aside.', section: MAKE_EGG_WASH },
 
-        { step: 'Preheat the oven to 375ºF.', section: ASSEMBLE_KOLACHES },
-        { step: 'Make a 2-inch well in the center of each kolaches with your fingertips (or with a spoon).', section: ASSEMBLE_KOLACHES },
-        { step: 'Brush the sides and outer edge with the egg wash.', section: ASSEMBLE_KOLACHES, img: kolaches21 },
-        { step: 'Spread 1 tablespoon of the cream cheese filling in each kolaches.', section: ASSEMBLE_KOLACHES, img: kolaches22 },
-        { step: 'Make a smaller well in the center of the cream cheese filling.', section: ASSEMBLE_KOLACHES },
-        { step: 'Add a spoonful of the cherry filling.', section: ASSEMBLE_KOLACHES, img: [kolaches23, kolaches24] },
+        { step: 'Preheat the oven to 375ºF.', section: SECTIONS.ASSEMBLE },
+        { step: 'Make a 2-inch well in the center of each kolaches with your fingertips (or with a spoon).', section: SECTIONS.ASSEMBLE },
+        { step: 'Brush the sides and outer edge with the egg wash.', section: SECTIONS.ASSEMBLE, img: kolaches21 },
+        { step: 'Spread 1 tablespoon of the cream cheese filling in each kolaches.', section: SECTIONS.ASSEMBLE, img: kolaches22 },
+        { step: 'Make a smaller well in the center of the cream cheese filling.', section: SECTIONS.ASSEMBLE },
+        { step: 'Add a spoonful of the cherry filling.', section: SECTIONS.ASSEMBLE, img: [kolaches23, kolaches24] },
 
-        { step: 'Bake until it is light golden brown (about 20 minutes).', section: BAKE_KOLACHES, img: kolaches25 },
+        { step: 'Bake until it is light golden brown (about 20 minutes).', section: SECTIONS.BAKE, img: kolaches25 },
         { step: 'Enjoy these sweet delicacies warm.', section: SECTIONS.SERVE },
     ]
 };

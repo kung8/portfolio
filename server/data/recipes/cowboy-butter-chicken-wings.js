@@ -7,8 +7,7 @@ const wings5 = '../assets/Products/cowboy-butter-chicken-wings-5.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { CHICKEN_WINGS, SALT, BLACK_PEPPER, UNSALTED_BUTTER, PARSLEY, CHIVE, GARLIC, DIJON_MUSTARD, LEMON_JUICE, SMOKED_PAPRIKA, CAYENNE_PEPPER } = require('./ingredients');
 
-const COWBOY_BUTTER = 'Cowboy Butter';
-
+const COWBOY_BUTTER = 'Cowboy Butter'
 const PREP_COOKING = 'Prep Cooking';
 const PREP_COWBOY_BUTTER = 'Prep Cowboy Butter';
 const COAT_CHICKEN = 'Coat Chicken';
@@ -63,7 +62,7 @@ module.exports = {
         { step: 'Season the chicken with salt and pepper.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Place chicken on the wire rack in a single layer.', section: SECTIONS.COOK_CHICKEN, img: wings1 },
         { step: 'Bake the chicken until the skin is crispy and is cooked through (about 45 to 50 minutes).', section: SECTIONS.COOK_CHICKEN, img: wings3 },
-        { step: 'In a mixing bowl, combine the "Cowboy Butter" section ingredients.', section: PREP_COWBOY_BUTTER, img: wings2 },
+        { step: `In a mixing bowl, combine the "${COWBOY_BUTTER}" section ingredients.`, section: PREP_COWBOY_BUTTER, img: wings2 },
         { step: 'Toss the chicken in the butter mixture.', section: COAT_CHICKEN, img: wings4 },
         { step: 'Serve these wings with your favorite dips and sides at your next tailgate, superbowl watch party, or any kind of party.', section: SECTIONS.SERVE },
     ]

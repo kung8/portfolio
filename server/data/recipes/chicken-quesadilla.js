@@ -15,13 +15,7 @@ const quesadillas14 = '../assets/Products/chicken-quesadillas-14.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
 const { CHILI_POWDER, SALT, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL, YELLOW_ONION, RED_BELL_PEPPER, GREEN_BELL_PEPPER, HOT_SAUCE, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, SALSA, GUACAMOLE, SOUR_CREAM, SHARP_CHEDDAR_CHEESE, WHEAT_TORTILLA } = require('./ingredients');
 
-const SPICES = 'Spices';
-const CHICKEN = 'Chicken';
-const VEGGIES = 'Veggies';
 const QUESADILLA = 'Quesadilla';
-const PREP_CHICKEN = 'Prep Chicken';
-const PREP_VEGGIES = 'Prep Veggies';
-const ASSEMBLE_QUESADILLA = 'Assemble Quesadilla';
 const COOK_QUESADILLA = 'Cook Quesadilla';
 
 module.exports = {
@@ -45,17 +39,17 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHILI_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
-        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
-        { ...GARLIC_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...CHILI_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...GARLIC_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
 
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', section: CHICKEN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', section: SECTIONS.CHICKEN },
 
-        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES },
-        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', section: VEGGIES },
-        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES },
-        { ...GREEN_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES },
-        { ...HOT_SAUCE, amount: '', unit: '', additionalDetails: 'to taste', section: VEGGIES },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced', section: SECTIONS.VEGGIES },
+        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.VEGGIES },
+        { ...GREEN_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.VEGGIES },
+        { ...HOT_SAUCE, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.VEGGIES },
 
         { ...MONTEREY_JACK_CHEESE, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: QUESADILLA },
         { ...SHARP_CHEDDAR_CHEESE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: QUESADILLA },
@@ -80,26 +74,26 @@ module.exports = {
         { name: 'knife' },
     ],
     directions: [
-        { step: 'In a small bowl, combine spices.', section: SPICES, img: quesadillas3 },
+        { step: 'In a small bowl, combine spices.', section: SECTIONS.PREP_SEASONINGS, img: quesadillas3 },
 
-        { step: 'In a saucepan, add the chicken breast and fill the saucepan with water just enough to cover the chicken slightly.', section: PREP_CHICKEN, img: quesadillas1 },
-        { step: 'Bring to a boil.', section: PREP_CHICKEN },
-        { step: 'Reduce to a medium-low heat. Cook until chicken reaches 165ºF.', section: PREP_CHICKEN },
-        { step: 'Place the chicken on a cutting board and let it cool.', section: PREP_CHICKEN },
-        { step: 'Cut the chicken into small 1/2 inch slices.', section: PREP_CHICKEN, img: quesadillas6 },
-        { step: 'Place the cut up chicken into a mixing bowl.', section: PREP_CHICKEN },
-        { step: 'Mix in half of the spice mixture into the chicken. Coating it.', section: PREP_CHICKEN },
+        { step: 'In a saucepan, add the chicken breast and fill the saucepan with water just enough to cover the chicken slightly.', section: SECTIONS.PREP_CHICKEN, img: quesadillas1 },
+        { step: 'Bring to a boil.', section: SECTIONS.PREP_CHICKEN },
+        { step: 'Reduce to a medium-low heat. Cook until chicken reaches 165ºF.', section: SECTIONS.PREP_CHICKEN },
+        { step: 'Place the chicken on a cutting board and let it cool.', section: SECTIONS.PREP_CHICKEN },
+        { step: 'Cut the chicken into small 1/2 inch slices.', section: SECTIONS.PREP_CHICKEN, img: quesadillas6 },
+        { step: 'Place the cut up chicken into a mixing bowl.', section: SECTIONS.PREP_CHICKEN },
+        { step: 'Mix in half of the spice mixture into the chicken. Coating it.', section: SECTIONS.PREP_CHICKEN },
 
-        { step: 'Over medium heat, heat oil in a frying pan.', section: PREP_VEGGIES },
-        { step: 'Add veggies and remaining spice mixture.', section: PREP_VEGGIES, img: quesadillas4 },
-        { step: 'Saute the veggies (about 6 to 8 minutes). Onions should be browned and translucent. Peppers should be crisp but tender.', section: PREP_VEGGIES, img: quesadillas5 },
-        { step: 'Optionally add hot sauce. Mix.', section: PREP_VEGGIES },
-        { step: 'Transfer veggies to the bowl of chicken. Mix.', section: PREP_VEGGIES, img: quesadillas7 },
+        { step: 'Over medium heat, heat oil in a frying pan.', section: SECTIONS.PREP_VEGGIES },
+        { step: 'Add veggies and remaining spice mixture.', section: SECTIONS.PREP_VEGGIES, img: quesadillas4 },
+        { step: 'Saute the veggies (about 6 to 8 minutes). Onions should be browned and translucent. Peppers should be crisp but tender.', section: SECTIONS.PREP_VEGGIES, img: quesadillas5 },
+        { step: 'Optionally add hot sauce. Mix.', section: SECTIONS.PREP_VEGGIES },
+        { step: 'Transfer veggies to the bowl of chicken. Mix.', section: SECTIONS.PREP_VEGGIES, img: quesadillas7 },
 
-        { step: 'Place tortilla on a plate. On one half of each, top them with 1/8 of both cheeses and 1/4 of the chicken-veggies mixture.', section: ASSEMBLE_QUESADILLA, img: quesadillas8 },
-        { step: 'Top with 1/8 of both cheeses (should be the last of the cheeses).', section: ASSEMBLE_QUESADILLA, img: quesadillas9 },
-        { step: 'Fold to seal the goodness. Gently press to create a slight crease.', section: ASSEMBLE_QUESADILLA, img: quesadillas10 },
-        { step: 'Repeat filling with the remaining tortillas.', section: ASSEMBLE_QUESADILLA },
+        { step: 'Place tortilla on a plate. On one half of each, top them with 1/8 of both cheeses and 1/4 of the chicken-veggies mixture.', section: SECTIONS.ASSEMBLE, img: quesadillas8 },
+        { step: 'Top with 1/8 of both cheeses (should be the last of the cheeses).', section: SECTIONS.ASSEMBLE, img: quesadillas9 },
+        { step: 'Fold to seal the goodness. Gently press to create a slight crease.', section: SECTIONS.ASSEMBLE, img: quesadillas10 },
+        { step: 'Repeat filling with the remaining tortillas.', section: SECTIONS.ASSEMBLE },
 
         { step: 'Wipe off the frying pan with paper towel.', section: COOK_QUESADILLA },
         { step: 'Over medium-low heat, add a little butter to make the tortillas crisper.', section: COOK_QUESADILLA },

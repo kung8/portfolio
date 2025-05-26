@@ -4,9 +4,6 @@ const { UNSALTED_BUTTER, CARROT, YELLOW_ONION, GARLIC, GINGER, SALT, BLACK_PEPPE
 
 const OTHER_VEGGIES_SECTION = 'Other Veggies';
 const SQUASH_SECTION = 'Squash';
-const SOUP_SECTION = 'Soup';
-
-const MAKE_SOUP = 'Make Soup';
 
 module.exports = {
     wip: true,
@@ -41,10 +38,10 @@ module.exports = {
 
         { ...BUTTERNUT_SQUASH, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'peeled and 1/2" cubes', section: SQUASH_SECTION },
 
-        { ...TOMATO_PASTE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SOUP_SECTION },
-        { ...SMOKED_PAPRIKA, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SOUP_SECTION },
-        { ...PUMPKIN_PUREE, amount: 15, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SOUP_SECTION },
-        { ...VEGETABLE_BROTH, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SOUP_SECTION },
+        { ...TOMATO_PASTE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...SMOKED_PAPRIKA, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...PUMPKIN_PUREE, amount: 15, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...VEGETABLE_BROTH, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
 
         { ...SOUR_CREAM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...PUMPKIN_SEEDS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
@@ -57,17 +54,17 @@ module.exports = {
         { name: 'large pot' },
     ],
     directions: [
-        { step: 'Over medium heat, melt butter in a large pot.', section: MAKE_SOUP },
-        { step: 'Add the rest of the "Other Veggies" section ingredients.', section: MAKE_SOUP },
-        { step: 'Cover. Cook, stir occasionally, until veggies are tender (about 5 to 6 minutes).', section: MAKE_SOUP },
-        { step: 'Add squash. Cover and cook until barely tender (about 4 to 5 minutes). Stir occasionally.', section: MAKE_SOUP },
-        { step: 'Add tomato paste and paprika. Cook until the sauce becomes red (about 1 to 2 minutes).', section: MAKE_SOUP },
-        { step: 'Add pumpkin puree and broth.', section: MAKE_SOUP },
-        { step: 'Increase to high heat. Partially cover pot with lid. Bring to a boil.', section: MAKE_SOUP },
-        { step: 'Reduce to medium-low. Simmer until squash is tender (about 15 minutes). Stir occasionally.', section: MAKE_SOUP },
-        { step: 'Remove from heat.', section: MAKE_SOUP },
-        { step: 'Carefully blend the soup in batches. Adding additional broth if the soup is too thick.', section: MAKE_SOUP },
-        { step: 'Taste and add salt and pepper as needed.', section: MAKE_SOUP },
+        { step: 'Over medium heat, melt butter in a large pot.', section: SECTIONS.MAKE_SOUP },
+        { step: `Add the rest of the "${OTHER_VEGGIES_SECTION}" section ingredients.`, section: SECTIONS.MAKE_SOUP },
+        { step: 'Cover. Cook, stir occasionally, until veggies are tender (about 5 to 6 minutes).', section: SECTIONS.MAKE_SOUP },
+        { step: 'Add squash. Cover and cook until barely tender (about 4 to 5 minutes). Stir occasionally.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Add tomato paste and paprika. Cook until the sauce becomes red (about 1 to 2 minutes).', section: SECTIONS.MAKE_SOUP },
+        { step: 'Add pumpkin puree and broth.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Increase to high heat. Partially cover pot with lid. Bring to a boil.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Reduce to medium-low. Simmer until squash is tender (about 15 minutes). Stir occasionally.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Remove from heat.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Carefully blend the soup in batches. Adding additional broth if the soup is too thick.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Taste and add salt and pepper as needed.', section: SECTIONS.MAKE_SOUP },
         { step: 'Serve with sour cream and pumpkin seeds.', section: SECTIONS.SERVE },
     ]
 };

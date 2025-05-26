@@ -18,10 +18,8 @@ const { MILK, WHITE_SUGAR, UNSALTED_BUTTER, SALT, WATER, YEAST, ALL_PURPOSE_FLOU
 
 const SUGAR_MIXTURE_SECTION = 'Sugar Mixture';
 const YEAST_MIXTURE_SECTION = 'Yeast Mixture';
-
 const PREP_SUGAR_MIXTURE = 'Prep Sugar Mixture';
 const PREP_YEAST_MIXTURE = 'Prep Yeast Mixture';
-const BAKE_KOLACHES = 'Bake Kolaches';
 
 module.exports = {
     cardName: 'Texas Sausage Kolaches',
@@ -73,7 +71,7 @@ module.exports = {
     ],
     directions: [
         { step: 'Over medium heat, heat milk in a saucepan until it bubbles. Remove from heat.', section: PREP_SUGAR_MIXTURE },
-        { step: 'Add the remaining "Sugar Mixture" section ingredients. Stir until sugar is dissolved.', section: PREP_SUGAR_MIXTURE, img: kolaches1 },
+        { step: `Add the remaining "${SUGAR_MIXTURE_SECTION}" section ingredients. Stir until sugar is dissolved.`, section: PREP_SUGAR_MIXTURE, img: kolaches1 },
         { step: 'Let the sugar mixture come to room temperature (about 10 minutes).', section: PREP_SUGAR_MIXTURE, img: kolaches2 },
 
         { step: 'In a stand mixer, combine "Yeast Mixture". Stir until dissolved.', section: PREP_YEAST_MIXTURE, img: kolaches3 },
@@ -87,14 +85,14 @@ module.exports = {
         { step: 'Cut sausage in half and dry with a paper towel.', section: SECTIONS.PREP_FILLING },
         { step: 'Cut the cheese thinly to match the length of the halved sausage.', section: SECTIONS.PREP_FILLING, img: kolaches8 },
 
-        { step: 'Preheat the oven to 350ºF.', section: BAKE_KOLACHES },
-        { step: 'Line a baking sheet with parchment paper.', section: BAKE_KOLACHES },
-        { step: 'Roll out the dough and cut into 20 pieces.', section: BAKE_KOLACHES },
-        { step: 'Flatten into discs and fill each with sausage and cheese.', section: BAKE_KOLACHES, img: [kolaches9, kolaches10] },
-        { step: 'Fold dough around filling and pinch edges.', section: BAKE_KOLACHES },
-        { step: 'Place kolaches on the baking sheet with the seam-side down.', section: BAKE_KOLACHES, img: kolaches11 },
-        { step: 'Brush tops with melted butter.', section: BAKE_KOLACHES, img: kolaches12 },
-        { step: 'Bake until golden brown (about 12 to 15 minutes).', section: BAKE_KOLACHES, img: kolaches13 },
+        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.BAKE },
+        { step: 'Line a baking sheet with parchment paper.', section: SECTIONS.BAKE },
+        { step: 'Roll out the dough and cut into 20 pieces.', section: SECTIONS.BAKE },
+        { step: 'Flatten into discs and fill each with sausage and cheese.', section: SECTIONS.BAKE, img: [kolaches9, kolaches10] },
+        { step: 'Fold dough around filling and pinch edges.', section: SECTIONS.BAKE },
+        { step: 'Place kolaches on the baking sheet with the seam-side down.', section: SECTIONS.BAKE, img: kolaches11 },
+        { step: 'Brush tops with melted butter.', section: SECTIONS.BAKE, img: kolaches12 },
+        { step: 'Bake until golden brown (about 12 to 15 minutes).', section: SECTIONS.BAKE, img: kolaches13 },
         { step: 'Enjoy these delicious balls of goodness.', section: SECTIONS.SERVE },
     ]
 };

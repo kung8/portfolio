@@ -2,8 +2,6 @@
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { CHICKEN_THIGH, SALT, BLACK_PEPPER, OLIVE_OIL, UNSALTED_BUTTER, DIJON_MUSTARD, YELLOW_ONION, WHITE_WINE, CHICKEN_BROTH, HEAVY_CREAM, BAY_LEAF, FRESH_THYME } = require('./ingredients');
 
-const BAKE_DIJON_CHICKEN = 'Bake Dijon Chicken';
-
 module.exports = {
     wip: true,
     cardName: 'Dijon Chicken',
@@ -62,10 +60,10 @@ module.exports = {
         { step: 'Add wine. Deglaze the pan.', section: SECTIONS.COOK_SAUCE },
         { step: 'Increase to medium-high heat. Bring to a boil.', section: SECTIONS.COOK_SAUCE },
         { step: 'Let simmer until no longer smells of alcohol (about 3 minutes).', section: SECTIONS.COOK_SAUCE },
-        { step: 'Add the rest of the "Sauce" section ingredients. Stir.', section: SECTIONS.COOK_SAUCE },
+        { step: `Add the rest of the "${SECTIONS.SAUCE}" section ingredients. Stir.`, section: SECTIONS.COOK_SAUCE },
         
-        { step: 'Add chicken, skin-side up, to the pan.', section: BAKE_DIJON_CHICKEN },
-        { step: 'Bake until chicken is no longer pink and it reaches an internal temperature of 165ºF (about 15 to 20 minutes).', section: BAKE_DIJON_CHICKEN },
+        { step: 'Add chicken, skin-side up, to the pan.', section: SECTIONS.BAKE },
+        { step: 'Bake until chicken is no longer pink and it reaches an internal temperature of 165ºF (about 15 to 20 minutes).', section: SECTIONS.BAKE },
         { step: 'Enjoy this dish over noodles or rice.', section: SECTIONS.SERVE },
     ]
 };
