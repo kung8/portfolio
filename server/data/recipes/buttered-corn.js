@@ -11,7 +11,7 @@ module.exports = {
     name: 'Buttered Corn',
     img: cooked,
     recipeAuthor: '',
-    recipeFinder: 'Samantha Pham',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH],
