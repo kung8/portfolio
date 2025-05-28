@@ -25,6 +25,25 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: IN_PROGRESS,
+            title: "Tress of the Emerald Sea",
+            author: ["Brandon Sanderson"],
+            source: ["Somebody's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
             date: NO_DATE,
             title: "The English and Their History",
             author: ["Robert Tombs"],
