@@ -315,7 +315,7 @@ const INGREDIENTS = {
         CREAM_OF_MUSHROOM: { name: 'cream of mushroom', category: INGREDIENT_CATEGORY.CANNED },
         CRISPY_FRIED_ONIONS: { name: 'crispy fried onions', category: INGREDIENT_CATEGORY.CANNED },
         CRUSHED_TOMATOES: { name: 'crushed tomatoes', category: INGREDIENT_CATEGORY.CANNED },
-        DICED_TOMATO: { name: 'diced tomato', category: INGREDIENT_CATEGORY.CANNED },
+        DICED_TOMATO: { name: 'diced tomato', plural: 'diced tomatoes', category: INGREDIENT_CATEGORY.CANNED },
         DRY_BEAN: { name: 'dry bean', category: INGREDIENT_CATEGORY.CANNED },
         DRY_NAVY_BEAN: { name: 'dry navy bean', category: INGREDIENT_CATEGORY.CANNED },
         DUMPLING_SOUP: { name: 'dumpling soup', category: INGREDIENT_CATEGORY.CANNED },
@@ -1486,7 +1486,7 @@ const INGREDIENTS = {
         },
         RED_POTATO: { name: 'red potato', plural: 'red potatoes', category: INGREDIENT_CATEGORY.PRODUCE },
         ROMA_TOMATO: {
-            name: 'roma tomato', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1675366298841-4451b04055fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU5MzU4fA&ixlib=rb-4.0.3&q=80&w=400"
+            name: 'roma tomato', plural: 'roma tomatoes', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1675366298841-4451b04055fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU5MzU4fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         ROMAINE_LETTUCE: { name: 'romaine lettuce', category: INGREDIENT_CATEGORY.PRODUCE },
         RUSSET_POTATO: {
@@ -1500,7 +1500,7 @@ const INGREDIENTS = {
         SHALLOT: { name: 'shallot', category: INGREDIENT_CATEGORY.PRODUCE },
         SHIITAKE_MUSHROOM: { name: 'shiitake mushroom', category: INGREDIENT_CATEGORY.PRODUCE },
         SHREDDED_LETTUCE: { name: 'shredded lettuce', category: INGREDIENT_CATEGORY.PRODUCE },
-        SLICER_TOMATO: { name: 'slicer tomato', category: INGREDIENT_CATEGORY.PRODUCE },
+        SLICER_TOMATO: { name: 'slicer tomato', plural: 'slicer tomatoes', category: INGREDIENT_CATEGORY.PRODUCE },
         SNOW_PEA: { name: 'snow pea', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1663844169467-ddb73a03afdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2MDc0fA&ixlib=rb-4.0.3&q=80&w=400" },
         SOUTHWEST_SALAD_KITS: { name: 'southwest salad kits', category: INGREDIENT_CATEGORY.PRODUCE },
         SPINACH: {

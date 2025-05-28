@@ -1036,12 +1036,12 @@ module.exports = {
             rating: 4.75,
         },
         {
-            date: NO_DATE,
+            date: '05/27/2025',
             title: "Red Rising",
             author: ["Pierce Brown"],
-            source: ["Gabby the school counselor from the airplane"],
+            source: ["Gabby the school counselor from the airplane", "Alo Tuaua", "Samm Pham"],
             review: [
-                ""
+                "I was really tired every time that I read the first half of the book, but it started to get really good around 30% of the book. It reminded me a lot of the Hunger Games series. I enjoyed the conflicts and the strategy that Darrow and his team had to face and employ. The ties to Greek and Roman Mythology were interesting. It didn't go into too much depth of these myths, but there are a lot of names and references to them and their culture. The characters were interesting. I loved the last half of the book and couldn't put it down. I am looking forward to reading the rest of the series."
             ],
             quotes: [
                 {
@@ -1057,14 +1057,20 @@ module.exports = {
                     context: "Darrow is talking to his people especially Tactus about why they follow him."
                 },
                 {
-                    text: "",
-                    pages: [],
-                    thoughts: "",
-                    context: ""
+                    text: "I am the spark that will set the worlds afire. I am the hammer that cracks the chains.",
+                    pages: [380],
+                    thoughts: "He believes he has started inspiring the people who have become his friends and fellow rebels. I think it really can take a single spark to create a change. It might not be much but it requires the right spark and person to start. And maybe it also takes the right person to be the first to follow that leader.",
+                    context: "Darrow is speaking with Augustine about his future and how he will continue to lead the people whom he has freed during this game."
+                },
+                {
+                    text: "Words are a weapon stronger than he knows. And songs are even greater. The words wake the mind. The melody wakes the heart.",
+                    pages: [381],
+                    thoughts: "During this whole game Darrow recalled the words and song of his late wife Eo. This is the hope that he held on to. Mustang helped him recall this song as she too sang the same song. Words and lyrics/music are all powerful.",
+                    context: "Darrow is speaking with Augustine about his future internship. He thinks it's funny that he hasn't even said hello to his children, but bolted to talk to Darrow."
                 },
             ],
             pageCount: 416,
-            rating: NO_RATING,
+            rating: 5,
         },
         {
             date: NO_DATE,
