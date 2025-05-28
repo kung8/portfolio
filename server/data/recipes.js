@@ -289,6 +289,7 @@ const thaiBasil = require("./recipes/thai-basil");
 const thaiBasilSesameCashewChicken = require('./recipes/thai-basil-sesame-cashew-chicken.js'); // TODO: finish adding recipe
 const thaiMassamanCurry = require("./recipes/thai-massaman-curry"); // TODO: finish adding recipe
 const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
+const thaiPeanutSalad = require('./recipes/thai-peanut-salad.js'); // TODO: finish adding recipe
 const turkeyRollUps = require("./recipes/turkey-roll-ups");
 const udonNoodleSoup = require("./recipes/udon-noodle-soup");
 const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich");
@@ -316,6 +317,7 @@ const recipes = [
     thaiMassamanCurry,
     coconutChicken,
     drunkenNoodles,
+    thaiPeanutSalad,
 
     // INDIAN
     chickenBiryani,
