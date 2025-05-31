@@ -58,6 +58,12 @@ module.exports = {
                     context: "Tress is thinking about how to get off the island and how she needs to execute her plan well."
                 },
                 {
+                    text: "More twisted than a librarian's love life (trust me, they're a strange bunch)...",
+                    pages: [67],
+                    thoughts: "That's a funny description of librarian. My love life matches a librarians...",
+                    context: "Brandon Sanderson describes the vines that sprouted from the spores."
+                },
+                {
                     text: "",
                     pages: [],
                     thoughts: "",
