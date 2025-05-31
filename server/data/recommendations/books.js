@@ -34,6 +34,30 @@ module.exports = {
             ],
             quotes: [
                 {
+                    text: "The perfect set of gloves is invaluable. And Charlie was like a good set of gloves. The longer she spent with him, the more right their time together felt.",
+                    pages: [17],
+                    thoughts: "I think it's sweet to think relationships can be a right fit. I need to remember that as I continue to date and find the right person for me.",
+                    context: "Tress has come to know Charlie, the son of the duke."
+                },
+                {
+                    text: "Tress searched for the perfect thing to say. There were any number of lines that would have capitalized on that moment. She could have said, \"Charlie, could you hold this for me while I walk around the grounds?\" then offered her hand back to him. She could have said, \"Help, I can't breathe. Staring at you has taken my breath away.\" She could even have said something completely insane, such as \"I like you.\" Instead she said, \"Huuhhh. Hands are warm.\" She followed it with a laugh that she choked on halfway through, exactly mimicking-by pure chance-the call of an elephant seal.",
+                    pages: [18],
+                    thoughts: "Tress's mind is like mine. I'm constantly  trying to think the perfect thing to say when \"flirting\" with a girl.",
+                    context: "Tress is trying to think up what to say to Charlie."
+                },
+                {
+                    text: "She felt less like a mere human being, and more like a human who was merely being.",
+                    pages: [34],
+                    thoughts: "We can feel stuck in our lives and feel victimized by our circumstances. But we can also choose to be happy. We might need to take steps to change our circumstances.",
+                    context: "Tress has lost her job cleaning windows, still unable to see Charlie, and is trapped on this island."
+                },
+                {
+                    text: "But a terrible idea executed brilliantly has to be better than a brilliant idea executed terribly.",
+                    pages: [41],
+                    thoughts: "Plans are great, but if we don't execute them well, they won't be effective. We need to be able to adapt and change our plans as needed.",
+                    context: "Tress is thinking about how to get off the island and how she needs to execute her plan well."
+                },
+                {
                     text: "",
                     pages: [],
                     thoughts: "",
