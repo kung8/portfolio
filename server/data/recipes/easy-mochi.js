@@ -1,4 +1,11 @@
-// const example = '../assets/Products/example.jpeg';
+const mochi1 = '../assets/Products/easy-mochi-1.jpeg';
+const mochi2 = '../assets/Products/easy-mochi-2.jpeg';
+const mochi3 = '../assets/Products/easy-mochi-3.jpeg';
+const mochi4 = '../assets/Products/easy-mochi-4.jpeg';
+const mochi5 = '../assets/Products/easy-mochi-5.jpeg';
+const mochi6 = '../assets/Products/easy-mochi-6.jpeg';
+const mochi7 = '../assets/Products/easy-mochi-7.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { ICE_CREAM, MOCHIKO, CORNSTARCH } = require('./ingredients');
 
@@ -10,14 +17,13 @@ const HEAT_MOCHIKO = 'Heat Mochiko';
 const FORM_MOCHI = 'Form Mochi';
 
 module.exports = {
-    wip: true,
     cardName: 'Easy Mochi',
     name: 'Easy Mochi',
-    img: '',
+    img: mochi7,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.SNACK, CATEGORIES.DESSERT],
     genre: [GENRES.JAPANESE],
     method: [METHODS.MELT, METHODS.MICROWAVE, METHODS.KNEAD],
@@ -44,11 +50,11 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'In a glass mixing bowl, let ice cream completely melt at room temperature (about 1 hour).', section: MELT_ICE_CREAM },
-        { step: 'Add mochiko.', section: HEAT_MOCHIKO },
-        { step: 'Cover the bowl with plastic wrap. Poke a few small holes in the plastic wrap.', section: HEAT_MOCHIKO },
-        { step: 'Microwave for 1 minute. Uncover and mix.', section: HEAT_MOCHIKO },
-        { step: 'Recover. Microwave for 90 seconds.', section: HEAT_MOCHIKO },
+        { step: 'In a glass mixing bowl, let ice cream completely melt at room temperature (about 1 hour).', section: MELT_ICE_CREAM, img: mochi1 },
+        { step: 'Add mochiko.', section: HEAT_MOCHIKO, img: [mochi2, mochi3] },
+        { step: 'Cover the bowl with plastic wrap. Poke a few small holes in the plastic wrap.', section: HEAT_MOCHIKO, img: mochi4 },
+        { step: 'Microwave for 1 minute. Uncover and mix.', section: HEAT_MOCHIKO, img: mochi5 },
+        { step: 'Recover. Microwave for 90 seconds.', section: HEAT_MOCHIKO, img: mochi6 },
         { step: 'Let cool for a minute.', section: HEAT_MOCHIKO },
         { step: 'Use a spatula to knead and fold the mochi. Knead until solid but still pliable.', section: FORM_MOCHI },
         { step: 'Dust with cornstarch if still sticky.', section: FORM_MOCHI },
