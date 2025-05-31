@@ -15,7 +15,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.CHICKEN],
-    type: [TYPES.SIDE_DISH,TYPES.FINGER_FOOD],
+    type: [TYPES.SIDE_DISH, TYPES.FINGER_FOOD],
     yields: { amount: '', unit: '' },
     prepTime: { amount: '', unit: '' },
     cookTime: { amount: '', unit: '' },
@@ -35,5 +35,19 @@ module.exports = {
     ],
     directions: [
         { step: '', section: '' },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

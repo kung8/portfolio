@@ -1,7 +1,7 @@
 const plate = '../assets/Products/baked-lemon-chicken-plate.jpeg';
 const full = '../assets/Products/baked-lemon-chicken-full-plate.jpeg';
 const pan = '../assets/Products/baked-lemon-chicken-pan.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
     CHICKEN_WINGS,
     UNSALTED_BUTTER,
@@ -37,7 +37,7 @@ module.exports = {
     ingredients: [
         { ...CHICKEN_WINGS, amount: 10, unit: INGREDIENT_UNITS.PIECES, additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHICKEN_BROTH, amount: 1/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHICKEN_BROTH, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...LEMON_JUICE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
@@ -64,5 +64,19 @@ module.exports = {
         { step: 'Pour the sauce over the chicken and add lemon slices.', section: SECTIONS.MAIN },
         { step: 'Bake for 20 to 30 minutes.', section: SECTIONS.MAIN, img: pan },
         { step: 'Serve with rice and garnish with fresh rosemary.', section: SECTIONS.SERVE, img: plate },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover loosely with foil and bake at 350ºF until it reaches an internal temperature of 165ºF (about 15 to 20 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

@@ -7,7 +7,7 @@ const cookies6 = '../assets/Products/pb-thumbprint-cookies-6.jpeg';
 const cookies7 = '../assets/Products/pb-thumbprint-cookies-7.jpeg';
 const cookies8 = '../assets/Products/pb-thumbprint-cookies-8.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { PEANUT_BUTTER, UNSALTED_BUTTER, WHITE_SUGAR, BROWN_SUGAR, SALT, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, BAKING_SODA, HERSHEYS_KISSES } = require('./ingredients');
 
 const DRY_INGREDIENTS = 'Dry Ingredients';
@@ -68,5 +68,24 @@ module.exports = {
     ],
     notes: [
         { note: 'Do not do what I did and accidentally leave the spatula in the bowl and turn on the mixer.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 7, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

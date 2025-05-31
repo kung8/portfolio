@@ -1,5 +1,5 @@
 const cookies1 = '../assets/Products/browned-butter-chocolate-chip-cookies-1.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER } = require('./constants');
 const { BROWNED_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGG, EGG_YOLK, CAKE_FLOUR, ALL_PURPOSE_FLOUR, CORNSTARCH, BAKING_SODA, SALT, SEMI_SWEET_CHOCOLATE_CHIPS, WALNUTS, MILK_CHOCOLATE } = require('./ingredients');
 
 const BROWNED_BUTTER_SECTION = 'Browned Butter';
@@ -61,5 +61,14 @@ module.exports = {
         { step: 'Bake until golden brown (about 8 to 11 minutes).', section: SECTIONS.MAIN },
         { step: 'Let the cookies cool on a cooling rack (about 10 minutes).', section: SECTIONS.MAIN },
         { step: 'Enjoy these warm, fluffy, gooey treats.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 7, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, SECTIONS, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { DRY_MILK_POWDER, UNSALTED_BUTTER } = require('./ingredients');
 
 module.exports = {
@@ -34,5 +34,19 @@ module.exports = {
         { step: 'Remove from heat and let residual heat continue to cook for 30 seconds.', section: SECTIONS.MAIN },
         { step: 'Transfer to tupperware and set aside.', section: SECTIONS.MAIN },
         { step: 'Use right away or store in the fridge to use later.', section: SECTIONS.STORE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

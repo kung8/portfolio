@@ -12,7 +12,7 @@ const cookies12 = '../assets/Products/peanut-butter-cookies-12.jpeg';
 const cookies13 = '../assets/Products/peanut-butter-cookies-13.jpeg';
 const cookies14 = '../assets/Products/peanut-butter-cookies-14.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, PEANUT_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGG, BAKING_POWDER, SALT } = require('./ingredients');
 
 module.exports = {
@@ -66,5 +66,19 @@ module.exports = {
         { step: 'Bake for 10 minutes.', section: SECTIONS.MAIN, img: cookies14 },
         { step: 'Let cookies completely cool before transferring. They will continue to set while on the baking sheet.', section: SECTIONS.MAIN },
         { step: 'Enjoy these light, delicious cookies.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 7, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

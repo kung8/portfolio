@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { WHITE_SUGAR, ALL_PURPOSE_FLOUR, COCOA_POWDER, POWDERED_SUGAR, SEMI_SWEET_CHOCOLATE_CHIPS, SEA_SALT, EGG, VANILLA_EXTRACT, CANOLA_OIL, WATER } = require('./ingredients');
 
 const DRY_SECTION = 'Dry';
@@ -56,5 +56,14 @@ module.exports = {
         { step: 'Bake until an inserted toothpick comes out clean (about 40 to 48 minutes).', section: SECTIONS.BAKE },
         { step: 'Let it completely cool (about 2 hours). It will be gooey in the middle and will continue to set.', section: SECTIONS.SERVE },
         { step: 'Slice and enjoy!', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

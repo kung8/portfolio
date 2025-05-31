@@ -1,5 +1,5 @@
 const wraps = '../assets/Products/wraps.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const {
     CHEDDAR_CHEESE,
     COOKED_HAM,
@@ -37,5 +37,14 @@ module.exports = {
     directions: [
         { step: 'Place tortilla on a plate and lay on toppings in the center of tortilla as desired.', section: SECTIONS.MAIN },
         { step: 'Roll the edge towards the center of the tortilla and continue to completely roll wrap.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 1, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: false,
 }

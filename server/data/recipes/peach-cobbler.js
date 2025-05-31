@@ -8,7 +8,7 @@ const melted = '../assets/Products/peach-cobbler-melted-butter.jpeg'
 const milk = '../assets/Products/peach-cobbler-milk.jpeg'
 const mixed = '../assets/Products/peach-cobbler-mixed.jpeg'
 const peaches = '../assets/Products/peach-cobbler-peaches.jpeg'
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     ALL_PURPOSE_FLOUR,
@@ -64,5 +64,19 @@ module.exports = {
         { step: 'Generously drizzle cinnamon on top.', section: SECTIONS.MAIN, img: cinnamon },
         { step: 'Bake for 35 to 40 minutes.', section: SECTIONS.MAIN, img: baked },
         { step: 'Serve warm with ice cream.', section: SECTIONS.SERVE, img: pan },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Let it come to room temperature. Cover with foil and bake at 350ºF until heated through (about 20 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

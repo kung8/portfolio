@@ -1,7 +1,7 @@
 const plated = '../assets/Products/brownies-plated.jpeg';
 const pan = '../assets/Products/brownies-pan.jpeg';
 const zoomed = '../assets/Products/brownies-zoomed.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
     UNSALTED_BUTTER,
     WHITE_SUGAR,
@@ -52,5 +52,14 @@ module.exports = {
         { step: 'Mix in the flour.', section: SECTIONS.MAIN },
         { step: 'Spread the batter into the baking pan.', section: SECTIONS.MAIN },
         { step: 'Bake for 30 to 35 minutes or until a toothpick comes out clean.', section: SECTIONS.MAIN, img: [pan, zoomed] },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

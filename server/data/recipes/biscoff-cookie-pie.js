@@ -5,7 +5,7 @@ const pie4 = '../assets/Products/biscoff-cookie-pie-4.jpeg';
 const pie5 = '../assets/Products/biscoff-cookie-pie-5.jpeg';
 const pie6 = '../assets/Products/biscoff-cookie-pie-6.jpeg';
 const pie7 = '../assets/Products/biscoff-cookie-pie-7.jpeg'; // TODO: get a photo of the plated pie
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { BISCOFF_COOKIES, UNSALTED_BUTTER, BISCOFF_BUTTER, WHIPPED_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, VANILLA_EXTRACT, WHITE_SUGAR, CREAM_CHEESE, SALT, COOKIE_BUTTER } = require('./ingredients');
 
 const CHOCOLATE_GANACHE = 'Chocolate Ganache';
@@ -37,18 +37,18 @@ module.exports = {
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.CRUST },
         { ...UNSALTED_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.CRUST },
 
-        { ...WHIPPED_CREAM, amount: 3/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...WHIPPED_CREAM, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.SPLASH, additionalDetails: '', section: SECTIONS.FILLING },
         { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...CREAM_CHEESE, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'room temperature', section: SECTIONS.FILLING },
-        { ...BISCOFF_BUTTER, amount: 3/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...BISCOFF_BUTTER, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
 
-        { ...WHIPPED_CREAM, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHOCOLATE_GANACHE },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 2/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHOCOLATE_GANACHE },
+        { ...WHIPPED_CREAM, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHOCOLATE_GANACHE },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHOCOLATE_GANACHE },
 
         { ...COOKIE_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: COOKIE_BUTTER_DRIZZLE },
 
-        { ...WHIPPED_CREAM, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed', optional: true, section: WHIPPED_CREAM },
+        { ...WHIPPED_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed', optional: true, section: WHIPPED_CREAM },
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.SPLASH, additionalDetails: '', optional: true, section: WHIPPED_CREAM },
         { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: true, section: WHIPPED_CREAM },
 
@@ -94,5 +94,20 @@ module.exports = {
         { step: 'Freeze for at least 8 hours and keep frozen until ready to serve.', section: WHIPPED_CREAM_SECTION },
 
         { step: 'Enjoy this sweet dessert!', section: SECTIONS.SERVE, img: pie7 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Thaw it enough to cut through the crust.',
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

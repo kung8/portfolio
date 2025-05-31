@@ -38,5 +38,8 @@ module.exports = {
         { step: 'Take tray out and add graham crackers with 3 pieces of chocolate.', section: SECTIONS.MAIN },
         { step: 'Flip marshallow and bake for an additional 2 minutes.', section: SECTIONS.MAIN },
         { step: 'Enjoy the sweet tastes of a campfire indoors.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: null,
+    reheat: null,
+    mealPrep: false,
 };

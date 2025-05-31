@@ -7,7 +7,7 @@ const flour = '../assets/Products/blondie-flour.jpeg';
 const pan = '../assets/Products/blondie-pan.jpeg';
 const plated = '../assets/Products/blondie-plated.jpeg';
 const sugars = '../assets/Products/blondie-sugars.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
 const {
     UNSALTED_BUTTER,
     BROWN_SUGAR,
@@ -78,5 +78,14 @@ module.exports = {
     ],
     notes: [
         { note: 'The melted butter and the extra yolk are what give these blondies their chewy texture.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 1, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
 const { } = require('./ingredients');
 
 module.exports = {
@@ -35,5 +35,19 @@ module.exports = {
     ],
     directions: [
         { step: '', section: '' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 1, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.ITS_OWN_CONTAINER,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Wrap in foil and bake at 350ºF until heated through and crust is crispy (about 10 to 15 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

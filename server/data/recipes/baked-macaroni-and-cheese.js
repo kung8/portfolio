@@ -20,7 +20,7 @@ const topPasta = '../assets/Products/baked-macaroni-and-cheese-top-pasta-layer.j
 const tupperware = '../assets/Products/baked-macaroni-and-cheese-tupperware.jpeg';
 const plate4 = '../assets/Products/baked-macaroni-and-cheese-full-plate-4.jpeg';
 const plate5 = '../assets/Products/baked-macaroni-and-cheese-full-plate-5.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { ELBOW_MACARONI, OLIVE_OIL, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHOLE_MILK, HEAVY_CREAM, CHEDDAR_CHEESE, BLACK_PEPPER, SALT, PANKO_BREADCRUMBS, PARMESAN_CHEESE, SMOKED_PAPRIKA, GRUYERE_CHEESE } = require('./ingredients');
 
 module.exports = {
@@ -48,15 +48,15 @@ module.exports = {
         { ...CHEDDAR_CHEESE, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.SAUCE },
         { ...GRUYERE_CHEESE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.SAUCE },
         { ...UNSALTED_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...ALL_PURPOSE_FLOUR, amount: 1/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...WHOLE_MILK, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
         { ...PANKO_BREADCRUMBS, amount: 1.5, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PARMESAN_CHEESE, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { ...SMOKED_PAPRIKA, amount: 1/4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...PARMESAN_CHEESE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
+        { ...SMOKED_PAPRIKA, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         { name: 'oven' },
@@ -91,5 +91,19 @@ module.exports = {
         { step: 'Sprinkle this mixture over the mac and cheese.', section: SECTIONS.ASSEMBLE, img: crumbLayer },
         { step: 'Bake until bubbly and golden brown (about 30 minutes).', section: SECTIONS.ASSEMBLE, img: [baked3, baked4] },
         { step: 'Serve this warm and enjoy this comfort food.', section: SECTIONS.SERVE, img: plate5 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Add a little milk or cheese sauce. Cover in foil and bake at 350ºF until heated through (about 20 minutes). Remove foil and broil until the crust is crispy (about 5 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

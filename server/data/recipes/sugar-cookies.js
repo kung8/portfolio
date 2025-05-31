@@ -22,7 +22,7 @@ const icing2 = '../assets/Products/sugar-cookies-icing-2.jpeg';
 const icing3 = '../assets/Products/sugar-cookies-icing-3.jpeg';
 const icing4 = '../assets/Products/sugar-cookies-icing-4.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { UNSALTED_BUTTER, WHITE_SUGAR, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, SALT, BAKING_SODA, ALMOND_EXTRACT, SPRINKLES, CONFECTIONERS_SUGAR, MERINGUE_POWDER, ROOM_TEMPERATURE_WATER, CRYSTAL_SUGAR } = require('./ingredients');
 
 const DRY_INGREDIENTS = 'Dry Ingredients';
@@ -104,5 +104,14 @@ module.exports = {
         { step: 'Use a knife to spread some icing on top of the cookies.', section: SECTIONS.DECORATING },
         { step: 'Add sprinkles and/or crystal sugars.', section: SECTIONS.DECORATING },
         { step: 'Let the decorated cookies cool for 2 hours.', section: SECTIONS.DECORATING },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 1, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

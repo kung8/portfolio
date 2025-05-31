@@ -14,7 +14,7 @@ const walnuts = '../assets/Products/carrot-cake-walnuts.jpeg';
 const side = '../assets/Products/carrot-cake-plated-side.jpeg';
 const zoomed = '../assets/Products/carrot-cake-plated-zoomed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { BROWN_SUGAR, CARROT, EGG, WHITE_SUGAR, VEGETABLE_OIL, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, CINNAMON, BAKING_SODA, SALT, BAKING_POWDER, CREAM_CHEESE, UNSALTED_BUTTER, POWDERED_SUGAR, WALNUTS } = require('./ingredients');
 
 const CARROT_MIXTURE = 'Carrot Mixture';
@@ -88,5 +88,14 @@ module.exports = {
         { step: 'Spread the frosting on one layer of the cake and place the other layer on top.', section: ASSEMBLING, img: two },
         { step: 'Frost the top layer and sprinkle it with walnut, as desired.', section: ASSEMBLING, img: three },
         { step: 'Slice up the cake and enjoy this tasty rabbit food (just kidding don\'t feed this to rabbits).', section: SECTIONS.SERVE, img: side },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 1, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

@@ -9,7 +9,7 @@ const pan = '../assets/Products/snickerdoodle-dough-in-pan.jpeg';
 const cooked = '../assets/Products/snickerdoodle-cooked.jpeg';
 const plated1 = '../assets/Products/snickerdoodle-plated-1.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
     CREAM_OF_TARTAR,
@@ -79,5 +79,19 @@ module.exports = {
         { step: 'Place the coated dough balls on a baking sheet about 2-inches apart.', section: SECTIONS.MAIN, img: pan },
         { step: 'Bake for 8 to 10 minutes.', section: SECTIONS.MAIN, img: oven },
         { step: 'Enjoy these quick, light treats in any mood and any time of the day.', section: SECTIONS.MAIN, img: cooked },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

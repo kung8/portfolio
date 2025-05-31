@@ -9,7 +9,7 @@ const tart8 = '../assets/Products/apple-tart-8.jpeg';
 const tart9 = '../assets/Products/apple-tart-9.jpeg';
 const tart10 = '../assets/Products/apple-tart-10.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { UNSALTED_BUTTER, WHITE_SUGAR, EGG_YOLK, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, ALMOND_FLOUR, REFRIGERATED_PUFF_PASTRY, PINK_LADY_APPLE, APRICOT_JELLY } = require('./ingredients');
 
 const FRANGIPANE = 'Frangipane';
@@ -37,14 +37,14 @@ module.exports = {
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1.5, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FRANGIPANE },
         { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FRANGIPANE },
-        { ...ALMOND_FLOUR, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FRANGIPANE },
+        { ...ALMOND_FLOUR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FRANGIPANE },
         { ...EGG_YOLK, amount: 1, unit: '', additionalDetails: '', section: FRANGIPANE },
-        { ...VANILLA_EXTRACT, amount: 1/2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
+        { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
 
         { ...REFRIGERATED_PUFF_PASTRY, amount: '', unit: '', additionalDetails: 'chilled until ready to use', section: SECTIONS.ASSEMBLE },
         { ...PINK_LADY_APPLE, amount: 4, unit: '', additionalDetails: 'cored, peeled and thinly sliced', section: SECTIONS.ASSEMBLE },
-        { ...APRICOT_JELLY, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'heated until partially melted', section: SECTIONS.ASSEMBLE },
+        { ...APRICOT_JELLY, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'heated until partially melted', section: SECTIONS.ASSEMBLE },
     ],
     appliances: [
         { name: 'oven' },
@@ -78,5 +78,19 @@ module.exports = {
     notes: [
         { note: 'The tart will need to be refrigerated if not eaten within a few hours because of the egg and dairy.', },
         { note: 'The original recipe recommends using a stand mixer though it only makes a small amount that is difficult for the stand mixer to get to (so unless you are making a larger amount you may as well mix this either by hand or with a hand mixer).', },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Wrap in foil and bake at 350ºF until heated through and crust is crispy (about 5 to 10 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

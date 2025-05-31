@@ -5,7 +5,7 @@ const riceKrispy = '../assets/Products/rice-krispy-treat-rice-krispy.jpeg';
 const vanilla = '../assets/Products/rice-krispy-treat-vanilla.jpeg';
 const zoomed3 = '../assets/Products/rice-krispy-treat-zoomed-center-3.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const { MINI_MARSHMALLOWS, UNSALTED_BUTTER, VANILLA_EXTRACT, RICE_KRISPIES_CEREAL } = require('./ingredients');
 
 module.exports = {
@@ -52,5 +52,14 @@ module.exports = {
         { note: "If you want a thicker treat, use a smaller baking pan." },
         { note: "Use real butter and some vanilla for the best flavor." },
         { note: "Variations of this recipe include (1) Lemon, (2) Turtle (chocolate, caramel, and pecans), (3) Peanut Butter (chocolate and peanut butter), (4) Pineapple Coconut (pineapple and coconut), (5) Chocolate Oreo (crushed Oreo), and (6) Dulce de Leche (milk and white chocolate)." },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

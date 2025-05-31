@@ -7,7 +7,7 @@ const aerial = '../assets/Products/american-omelette-plated-aerial.jpeg';
 const halved = '../assets/Products/american-omelette-plated-halved.jpeg';
 const moreCookedZoomed = '../assets/Products/american-omelette-plated-more-cooked-zoomed.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS, REHEAT_DURATION_UNIT } = require('./constants');
 const {
     EGG,
     SALT,
@@ -81,5 +81,23 @@ module.exports = {
         { step: 'Fold over the side that doesn\'t have the tomatoes. If the egg could use more time you can carefully flip the egg over again using your spatula this time.', section: FLIPPING_METHOD, img: aerial },
         { step: 'Slowly check the bottom of the egg to see if it is a nice golden brown, add the spinach and cheese before folding the egg.', section: FOLDING_METHOD, img: halved },
         { step: 'Enjoy this beautiful piece of art.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Cover with a damp paper towel and microwave for 30 seconds bursts until heated through.',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Wrap in foil and bake at 350ºF until heated through (about 10 to 12 minutes).',
+        },
+    ],
+    mealPrep: false,
 }

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { ZITI, ITALIAN_SAUSAGE, GARLIC, CRUSHED_TOMATOES, SALT, RED_PEPPER_FLAKES, HEAVY_CREAM, PARMIGIANO_REGGIANO, BASIL_LEAF, MOZZARELLA_CHEESE, WHITE_SUGAR } = require('./ingredients');
 
 const CASSEROLE_MIXTURE_SECTION = 'Casserole Mixture';
@@ -38,10 +38,10 @@ module.exports = {
         { ...CRUSHED_TOMATOES, amount: 28, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
         { ...WHITE_SUGAR, amount: 1.5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
-        { ...RED_PEPPER_FLAKES, amount: 1/4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
+        { ...RED_PEPPER_FLAKES, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
         { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CASSEROLE_MIXTURE_SECTION },
-        { ...PARMIGIANO_REGGIANO, amount: 1/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: CASSEROLE_MIXTURE_SECTION },
-        { ...BASIL_LEAF, amount: 1/3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: CASSEROLE_MIXTURE_SECTION },
+        { ...PARMIGIANO_REGGIANO, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: CASSEROLE_MIXTURE_SECTION },
+        { ...BASIL_LEAF, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: CASSEROLE_MIXTURE_SECTION },
 
         { ...MOZZARELLA_CHEESE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: LAYERING_SECTION },
         { ...PARMIGIANO_REGGIANO, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'grated', section: LAYERING_SECTION },
@@ -81,5 +81,29 @@ module.exports = {
         { step: 'Bake until the cheese has melted and browned (for about 15 to 20 minutes).', section: BAKE },
 
         { step: 'Serve with more basil.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Thaw in the fridge overnight before reheating, or add 15 to 20 minutes to the baking time if reheating from frozen.',
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover with foil and bake at 350ºF until heated through (about 20 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Cover with a microwave-safe lid and heat on high until heated through (about 3 to 5 minutes).',
+        },
+    ],
+    mealPrep: false,
 };

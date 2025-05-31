@@ -4,7 +4,7 @@ const roll3 = '../assets/Products/turkey-roll-up-3.jpeg';
 const roll4 = '../assets/Products/turkey-roll-up-4.jpeg';
 const roll5 = '../assets/Products/turkey-roll-up-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { CREAM_CHEESE, FLOUR_TORTILLA, ROMAINE_LETTUCE, TURKEY, SLICER_TOMATO, CRANBERRY_SAUCE, PROVOLONE_CHEESE } = require('./ingredients');
 
 module.exports = {
@@ -52,5 +52,14 @@ module.exports = {
     notes: [
         { note: 'This does not keep very well, maybe two days at most. This tastes better chilled for a few hours though.' },
         { note: 'Also the original recipe calls for swiss cheese but I think it would be better to replace with provolone.' }
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 1, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: false,
 };

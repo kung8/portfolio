@@ -11,7 +11,7 @@ const sauce = '../assets/Products/apple-pie-sauce.jpeg';
 const sliced = '../assets/Products/apple-pie-sliced.jpeg';
 const sugars = '../assets/Products/apple-pie-sugars.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { GRANNY_SMITH_APPLE, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHITE_SUGAR, BROWN_SUGAR, DOUBLE_CRUST_PIE_CRUST, WATER } = require('./ingredients');
 
 module.exports = {
@@ -35,11 +35,11 @@ module.exports = {
     separated: false,
     ingredients: [
         { ...GRANNY_SMITH_APPLE, amount: 8, unit: '', additionalDetails: '', section: '' },
-        { ...UNSALTED_BUTTER, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
         { ...ALL_PURPOSE_FLOUR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: '' },
-        { ...WHITE_SUGAR, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...BROWN_SUGAR, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...WATER, amount: 1/4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: '' },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...BROWN_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: '' },
         { ...DOUBLE_CRUST_PIE_CRUST, amount: 1, unit: '', additionalDetails: 'thawed', section: '' },
     ],
     appliances: [
@@ -72,5 +72,26 @@ module.exports = {
     ],
     notes: [
         { note: 'Slicing this pie is easier when it is cooled but it may come out crumbly but it\'s still good.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.ITS_OWN_CONTAINER,
+            instruction: 'Make sure to cover the pie with foil or plastic wrap to prevent it from drying out.',
+        },
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.ITS_OWN_CONTAINER,
+            instruction: 'Make sure to cover the pie with foil or plastic wrap to prevent it from drying out.',
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 350ºF until heated through and crust is golden brown (about 15 to 20 minutes). Cool slightly before serving.',
+        },
+    ],
+    mealPrep: true,
 };

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { } = require('./ingredients');
 
 module.exports = {
@@ -11,11 +11,11 @@ module.exports = {
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
-    category: [CATEGORIES.BREAKFAST,CATEGORIES.DESSERT],
+    category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     protein: [],
-    type: [TYPES.DESSERT,TYPES.PIE],
+    type: [TYPES.DESSERT, TYPES.PIE],
     yields: { amount: '', unit: '' },
     prepTime: { amount: '', unit: '' },
     cookTime: { amount: '', unit: '' },
@@ -35,5 +35,19 @@ module.exports = {
     ],
     directions: [
         { step: '', section: '' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 350ºF until heated through and crust is golden brown (about 10 to 15 minutes). Let rest for a few minutes before serving.',
+        },
+    ],
+    mealPrep: true,
 };

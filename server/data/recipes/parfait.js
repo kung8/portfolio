@@ -1,5 +1,5 @@
 const parfait = '../assets/Products/parfait.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
     PLAIN_YOGURT,
     VANILLA_EXTRACT,
@@ -39,5 +39,14 @@ module.exports = {
         { step: 'Mix in vanilla and honey.', section: SECTIONS.MAIN },
         { step: 'Cover with preferred toppings such as granola, fruits, and nuts.', section: SECTIONS.MAIN },
         { step: 'Enjoy a light breakfast / snack.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

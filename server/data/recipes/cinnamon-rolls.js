@@ -23,7 +23,7 @@ const frosting4 = '../assets/Products/cinnamon-rolls-frosting-4.jpeg';
 const plated3 = '../assets/Products/cinnamon-rolls-plated-3.jpeg';
 const plated5 = '../assets/Products/cinnamon-rolls-plated-5.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { YEAST, WHITE_SUGAR, EGG, EGG_YOLK, UNSALTED_BUTTER, BREAD_FLOUR, SALT, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, POWDERED_SUGAR, VANILLA_EXTRACT, MILK } = require('./ingredients');
 
 module.exports = {
@@ -97,5 +97,28 @@ module.exports = {
         { step: 'Let the rolls cooled for 5 to 10 minutes.', section: SECTIONS.BAKE },
         { step: 'In a mixing bowl, combine frosting ingredients.', section: SECTIONS.FROSTING, img: [frosting1, frosting2, frosting3, frosting4] },
         { step: 'Spread frosting over cinnamon rolls and enjoy warm!', section: SECTIONS.SERVE, img: plated5 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 7, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Add a little bit of water and microwave for 20 to 30 seconds until heated through.',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover with foil and bake at 350ºF until heated through (about 15 to 20 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

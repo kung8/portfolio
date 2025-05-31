@@ -1,6 +1,6 @@
 const side = '../assets/Products/ants-on-a-log-side.jpeg';
 const straight = '../assets/Products/ants-on-a-log-straight-on.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { CELERY, RAISINS, PEANUT_BUTTER } = require('./ingredients');
 
 module.exports = {
@@ -30,5 +30,14 @@ module.exports = {
         { step: 'Smear some peanut butter in each cut celery.', section: SECTIONS.MAIN },
         { step: 'Top with as many raisins on the peanut butter.', section: SECTIONS.MAIN },
         { step: 'Enjoy this healthy, nutritious snacks. The only bugs that I would be willing to eat on a regular basis.', section: SECTIONS.MAIN, img: straight },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

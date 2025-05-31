@@ -1,4 +1,4 @@
-const { CATEGORIES, SECTIONS, GENRES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const creamedSugar = '../assets/Products/banana-bread-creamed-sugar.jpeg';
 const mixture = '../assets/Products/banana-bread-flour-mixture.jpeg';
 const mashed = '../assets/Products/banana-bread-mashed-banana.jpeg';
@@ -68,5 +68,19 @@ module.exports = {
         { step: 'Pour the batter into the bread pan.', section: SECTIONS.MAIN, img: walnuts },
         { step: 'Bake for 55 to 60 minutes, or until a toothpick inserted into the center comes out clean.', section: SECTIONS.MAIN },
         { step: 'Let bread rest for 10 minutes before serving.', section: SECTIONS.MAIN, img: baked },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 7, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

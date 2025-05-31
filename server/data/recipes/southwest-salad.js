@@ -28,5 +28,19 @@ module.exports = {
     ],
     directions: [
         { step: '', section: '' },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

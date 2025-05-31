@@ -16,7 +16,7 @@ const smallSlice = '../assets/Products/cheesecake-small-slice.jpeg';
 const strawberriesInPan = '../assets/Products/cheesecake-strawberries-in-pan.jpeg';
 const wholeGlazed = '../assets/Products/cheesecake-whole-glazed-strawberry.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
     WHITE_SUGAR,
     UNSALTED_BUTTER,
@@ -108,5 +108,14 @@ module.exports = {
         { step: 'Transfer to bowl. Let cool and cover with plastic wrap.', section: SECTIONS.TOPPINGS, img: glaze },
         { step: 'Place in fridge to cool until ready to serve.', section: SECTIONS.TOPPINGS, img: cakeHolder },
         { step: 'Enjoy this decadent, rich "Cheesecake Factory" imitation by topping each slice with the glazed strawberries and whipped cream.', section: SECTIONS.SERVE, img: slice },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

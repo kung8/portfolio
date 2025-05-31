@@ -9,7 +9,7 @@ const bars8 = '../assets/Products/almond-croissant-cookie-bar-8.jpeg';
 const bars9 = '../assets/Products/almond-croissant-cookie-bar-9.jpeg';
 const bars10 = '../assets/Products/almond-croissant-cookie-bar-10.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { UNSALTED_BUTTER, BROWN_SUGAR, EGG, VANILLA_EXTRACT, ALMOND_EXTRACT, SALT, ALL_PURPOSE_FLOUR, BAKING_POWDER, WHITE_SUGAR, ALMOND_FLOUR, SLICED_ALMONDS, POWDERED_SUGAR } = require('./ingredients');
 
 const FRANGIPANE_SECTION = 'Frangipane';
@@ -94,5 +94,20 @@ module.exports = {
     ],
     notes: [
         { note: 'The original recipe tells you to use a stand mixer, but you can use a hand mixer or even a rubber spatula. You do not need to wash an additional bowl.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instructions: 'Thaw at room temperature',
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

@@ -12,7 +12,7 @@ const wet4 = '../assets/Products/brickle-bars-wet-4.jpeg';
 const wet7 = '../assets/Products/brickle-bars-wet-7.jpeg';
 const plated4 = '../assets/Products/brickle-bars-plated-4.jpeg';
 const plated6 = '../assets/Products/brickle-bars-plated-6.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, WHITE_SUGAR, BROWN_SUGAR, EGG, VANILLA_EXTRACT, ENGLISH_TOFFEE_BITS } = require('./ingredients');
 
 const PREPARATION = 'Preparation';
@@ -68,5 +68,19 @@ module.exports = {
         { step: 'Bake for 30 minutes.', section: SECTIONS.MAIN },
         { step: 'Let it cool for a few minutes.', section: SECTIONS.MAIN, img: bar1 },
         { step: 'Cut these into bars and enjoy!', section: SECTIONS.SERVE, img: plated6 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

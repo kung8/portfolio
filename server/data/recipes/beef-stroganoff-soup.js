@@ -11,7 +11,7 @@ module.exports = {
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
-    category: [CATEGORIES.LUNCH,CATEGORIES.DINNER,CATEGORIES.SIDE_DISH],
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.RUSSIAN],
     method: [METHODS.SIMMER],
     protein: [PROTEIN.BEEF],
@@ -35,5 +35,19 @@ module.exports = {
     ],
     directions: [
         { step: '', section: '' },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

@@ -4,7 +4,7 @@ const bruschetta3 = '../assets/Products/bruschetta-3.jpeg';
 const bruschetta4 = '../assets/Products/bruschetta-4.jpeg';
 const bruschetta5 = '../assets/Products/bruschetta-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { OLIVE_OIL, CHERRY_TOMATO, BASIL_LEAF, GARLIC, SHALLOT, BALSAMIC_VINEGAR, SALT, BLACK_PEPPER, BAGUETTE } = require('./ingredients');
 
 const BAGUETTE_SECTION = 'Baguette';
@@ -65,5 +65,15 @@ module.exports = {
         { step: `In a medium bowl, combine the "${BRUSCHETTA_SECTION}" section ingredients.`, section: PREP_BRUSCHETTA, img: bruschetta3 },
         { step: 'Top each slice with about 2 tablespoons of the bruschetta mixture.', section: SECTIONS.ASSEMBLE, img: bruschetta5 },
         { step: 'Serve this appetizer immediately topped with more basil.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store the bruschetta mixture separately from the baked baguettes. The baguettes will become soggy if stored together.',
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

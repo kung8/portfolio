@@ -31,7 +31,7 @@ const DIET = {
     KETO: 'Keto',
     PALEO: 'Paleo',
     WHOLE_30: 'Whole30',
-}
+};
 
 // whenever adding a new item within the category, make sure to add it to the featuredRecipes.js file
 const GENRES = {
@@ -160,7 +160,7 @@ const METHODS = {
     WRAP: 'Wrap',
     FREEZE: 'Freeze',
     PRESSURE_COOK: 'Pressure Cook',
-}
+};
 
 const PROTEIN = {
     ALTERNATIVE: 'Alternative',
@@ -180,7 +180,22 @@ const PROTEIN = {
     TURKEY: 'Turkey',
     PINE_NUT: 'Pine Nut',
     SHRIMP: 'Shrimp',
-}
+};
+
+const REHEAT_METHODS = {
+    AIR_FRY: 'Air Fry',
+    BAKE: 'Bake',
+    DEEP_FRY: 'Deep Fry',
+    GRILL: 'Grill',
+    MICROWAVE: 'Microwave',
+    PAN_FRY: 'Pan Fry',
+    ROAST: 'Roast',
+    SAUTE: 'Saute',
+    SLOW_COOK: 'Slow Cook',
+    STEAM: 'Steam',
+    STIR_FRY: 'Stir-Fry',
+    PRESSURE_COOK: 'Pressure Cook',
+};
 
 const SECTIONS = {
     ASSEMBLE: 'Assemble',
@@ -222,7 +237,7 @@ const SECTIONS = {
     DIP: 'Dip',
     WRAPPER: 'Wrapper',
     FROZEN: 'Frozen',
-    
+
     MARINATE_CHICKEN: 'Marinate Chicken',
     MARINATE_BEEF: 'Marinate Beef',
     MARINATE_PORK: 'Marinate Pork',
@@ -250,7 +265,7 @@ const SECTIONS = {
     MAKE_BROTH: 'Make Broth',
     MAKE_SOUP: 'Make Soup',
     MAKE_CRUST: 'Make Crust',
-    
+
     COOK_PASTA: 'Cook Pasta',
     COOK_SAUCE: 'Cook Sauce',
     COOK_RICE: 'Cook Rice',
@@ -281,11 +296,31 @@ const SECTIONS = {
     SAUTE: 'Saute',
 };
 
+const STORAGE_CONTAINER = {
+    AIRTIGHT: 'airtight container',
+    ITS_OWN_CONTAINER: 'its own container',
+};
+
+const STORAGE_DURATION_UNIT = {
+    HOUR: { s: 'hour', p: 'hours' },
+    DAY: { s: 'day', p: 'days' },
+    WEEK: { s: 'week', p: 'weeks' },
+    MONTH: { s: 'month', p: 'months' },
+    YEAR: { s: 'year', p: 'years' },
+};
+
+const STORAGE_LOCATION = {
+    FRIDGE: 'fridge',
+    FREEZER: 'freezer',
+    ROOM_TEMPERATURE: 'room temperature',
+    COOL_DRY_PLACE: 'cool dry place',
+};
+
 const TIME_UNITS = {
     SECOND: { s: 's', p: 's' },
     MINUTE: { s: 'm', p: 'm' },
     HOUR: { s: 'h', p: 'h' },
-}
+};
 
 const TYPES = {
     NOODLE: 'Noodle',
@@ -333,7 +368,7 @@ const TYPES = {
     TART: 'Tart',
     SPICE: 'Spice',
     BURRITO: 'Burrito',
-}
+};
 
 const YIELD_UNITS = {
     SERVING: { s: 'serving', p: 'servings' },
@@ -345,7 +380,7 @@ const YIELD_UNITS = {
     CUP: { s: 'cup', p: 'cups' },
     PINT: { s: 'pint', p: 'pints' },
     QUART: { s: 'quart', p: 'quarts' },
-}
+};
 
 module.exports = {
     CATEGORIES,
@@ -354,8 +389,36 @@ module.exports = {
     INGREDIENT_UNITS,
     METHODS,
     PROTEIN,
+    REHEAT_METHODS,
     SECTIONS,
+    STORAGE_CONTAINER,
+    STORAGE_DURATION_UNIT,
+    STORAGE_LOCATION,
     TIME_UNITS,
     TYPES,
     YIELD_UNITS,
 }
+
+// store: [
+//     {
+//         duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+//         location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+//         container: STORAGE_CONTAINER.AIRTIGHT,
+//     },
+//     {
+//         duration: { amount: 7, unit: STORAGE_DURATION_UNIT.DAY },
+//         location: STORAGE_LOCATION.FRIDGE,
+//         container: STORAGE_CONTAINER.AIRTIGHT,
+//     },
+// ],
+// reheat: [
+//     {
+//         method: REHEAT_METHODS.MICROWAVE,
+//         instruction: 'Add a little bit of water and microwave for 20 to 30 seconds until heated through.',
+//     },
+//     {
+//         method: REHEAT_METHODS.BAKE,
+//         instruction: 'Cover with foil and bake at 350ºF until heated through (about 15 to 20 minutes).',
+//     },
+// ],
+// mealPrep: true,

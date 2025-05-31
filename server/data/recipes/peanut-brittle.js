@@ -65,5 +65,10 @@ module.exports = {
         { step: 'Break apart and share with those you love.', section: SECTIONS.MAIN, img: plated1 },
         { step: 'Store in an airtight container at room temperature. Do not refrigerate.', section: SECTIONS.MAIN },
         { step: 'If the peanut brittle is not hard enough there are two solutions that I found: (1) you can bake it in the oven at 300ºF until the edges are brown. Be careful not to burn it and make sure the pan is large enough or else it will spill over. or (2) you can remix the dessert into a pot and reheat until the temperature is 300ºF. Make sure to stir constantly to ensure that it does not burn.', section: SECTIONS.MAIN, img: rebaked },
-    ]
+    ],
+    store: [
+        { note: '' }
+    ],
+    reheat: null,
+    mealPrep: false,
 };

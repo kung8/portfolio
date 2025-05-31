@@ -47,5 +47,8 @@ module.exports = {
         { step: 'Sprinkle everything bagel seasoning over each.', section: PREP_CRACKER_BITES },
         { step: 'Bake until the cheese has melted (about 5 to 10 minutes).', section: BAKE_CRACKER_BITES },
         { step: 'Enjoy this delicious quick snack.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: null,
+    reheat: null,
+    mealPrep: false,
 };

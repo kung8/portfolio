@@ -9,12 +9,14 @@ const sauce = '../assets/Products/baked-beans-sauce.jpeg';
 const seasoning = '../assets/Products/baked-beans-seasoning.jpeg';
 const soaking = '../assets/Products/baked-beans-soaking.jpeg';
 const plateZoomed = '../assets/Products/baked-beans-full-plate-zoomed.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { wip } = require('./apple-dump-cake');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { SALT, BAKING_SODA, BACON, YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR, DRY_NAVY_BEAN } = require('./ingredients');
 
 const BEANS = 'Beans';
 
 module.exports = {
+    wip: true,
     cardName: 'Baked Beans',
     name: 'Baked Beans',
     img: plateZoomed,
@@ -36,7 +38,7 @@ module.exports = {
     ingredients: [
         { ...DRY_NAVY_BEAN, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BEANS },
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BEANS },
-        { ...BAKING_SODA, amount: 1/4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BEANS },
+        { ...BAKING_SODA, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BEANS },
         { ...BACON, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'diced', section: SECTIONS.MAIN },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'diced', section: SECTIONS.MAIN },
         { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
@@ -73,5 +75,28 @@ module.exports = {
         { step: 'Bake for another 30 minutes.', section: SECTIONS.MAIN },
         { step: 'Remove the lid. Bake for another 30 minutes. The beans will thicken now.', section: SECTIONS.MAIN, img: cooked },
         { step: 'Stir and serve warm.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 6, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover with foil and bake at 350ºF until hot and bubbly (about 30 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave in 30 seconds intervals, stirring in between, until hot.',
+        },
+    ],
+    mealPrep: true,
 };

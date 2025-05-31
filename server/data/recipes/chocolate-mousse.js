@@ -18,7 +18,7 @@ const peaks = '../assets/Products/chocolate-mousse-stiff-peaks.jpeg';
 const topped = '../assets/Products/chocolate-mousse-topped.jpeg';
 const whipped = '../assets/Products/chocolate-mousse-whipped-cream.jpeg';
 const yolkInCream = '../assets/Products/chocolate-mousse-yolk-in-cream.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const {
     EGG,
     UNSALTED_BUTTER,
@@ -89,5 +89,14 @@ module.exports = {
         { step: 'Combine heavy cream and sugar in a bowl.', section: WHIPPED_CREAM },
         { step: 'Whisk together until stiff peaks form. Set aside to top the mousse.', section: WHIPPED_CREAM, whipped },
         { step: 'Top the mousse with whipped cream, chopped chocolate shavings, raspberries, and sprig of mint. I used 100% cocoa dark chocolate so it was really bitter. You can use whatever preferred ratio and subsidize the amount of sweetness with the toppings.', section: SECTIONS.SERVE, img: [shaved, raspberries, plated] },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

@@ -9,7 +9,7 @@ const cup8 = '../assets/Products/peanut-butter-cup-8.jpeg';
 const cup9 = '../assets/Products/peanut-butter-cup-9.jpeg';
 const cup10 = '../assets/Products/peanut-butter-cup-10.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
 const { MILK_CHOCOLATE_CHIPS, PEANUT_BUTTER, SALT, POWDERED_SUGAR } = require('./ingredients');
 
 const CHOCOLATE_SECTION = 'Chocolate';
@@ -62,5 +62,15 @@ module.exports = {
         { step: 'Pour chocolate over the peanut butter mixture. Smooth as much as you can.', section: SECOND_CHILL, img: cup7 },
         { step: 'Chill the chocolate until firm (about 1 hour).', section: SECOND_CHILL, img: cup8 },
         { step: 'Enjoy these Reese\'s Cup copycat!', section: SECTIONS.SERVE, img: cup10 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Take out of the fridge and let it sit at room temperature for 10 minutes before serving. This will help soften the chocolate and peanut butter.',
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

@@ -13,7 +13,7 @@ const vanilla = '../assets/Products/chocolate-chip-cookies-vanilla.jpeg';
 const plated = '../assets/Products/chocolate-chip-cookies-plated.jpeg';
 const zoomed = '../assets/Products/chocolate-chip-cookies-plated-zoomed.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER } = require("./constants");
 const {
     UNSALTED_BUTTER,
     WHITE_SUGAR,
@@ -81,5 +81,19 @@ module.exports = {
         { step: 'Bake for 10 minutes.', section: SECTIONS.MAIN },
         { step: 'Let cool for a few minutes before transferring to a cooling rack.', section: SECTIONS.MAIN },
         { step: 'Enjoy these delicious treats with a cold glass of milk!', section: SECTIONS.MAIN, img: plated },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };
