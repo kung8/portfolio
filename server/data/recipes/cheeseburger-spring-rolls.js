@@ -65,7 +65,6 @@ module.exports = {
         { name: 'medium bowl' },
         { name: 'mixing bowl' },
         { name: 'cutting board' },
-        { name: 'basting brush' },
     ],
     directions: [
         { step: `In a medium bowl, combine the "${SECTIONS.DIP}" section ingredients. Set aside.`, section: SECTIONS.PREP_DIP, img: roll1 },
