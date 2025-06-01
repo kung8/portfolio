@@ -1,6 +1,6 @@
 const tieu1 = '../assets/Products/banh-tieu-1.jpeg';
 const tieu2 = '../assets/Products/banh-tieu-2.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     BREAD_FLOUR,
     WHITE_SUGAR,
@@ -67,5 +67,19 @@ module.exports = {
         { step: 'The dough should start to puff up, then flip.', section: SECTIONS.MAIN },
         { step: 'Fry until golden brown. The frying process doesn\'t take too long so keep an eye on it.', section: SECTIONS.MAIN },
         { step: 'Place fried bread on the cooling rack to drain the excess oil.', section: SECTIONS.MAIN, img: tieu1 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 350ºF until warmed through (about 8 to 10 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

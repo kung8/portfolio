@@ -6,7 +6,7 @@ const batter = '../assets/Products/waffles-batter.jpeg';
 const dry = '../assets/Products/waffles-dry-ingredients.jpeg';
 const wet = '../assets/Products/waffles-wet-ingredients.jpeg';
 const egg = '../assets/Products/waffles-egg-whites-fluffed.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
@@ -90,5 +90,19 @@ module.exports = {
         { note: 'If you want to make buttermilk waffles, use buttermilk in place of milk and use 1 1/2 tsp baking powder instead and 1/2 tsp baking soda.' },
         { note: 'Do not overmix the batter. It is okay if there are a few lumps.' },
         { note: 'Fill the waffle iron until it is almost full--it will spill out a little bit.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 300ºF until heated through (about 10 minutes).',
+        },
+    ],
+    mealPrep: true,
 }

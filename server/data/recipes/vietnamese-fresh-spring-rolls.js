@@ -23,7 +23,7 @@ const wrap1 = '../assets/Products/fresh-spring-rolls-wrap-1.jpeg';
 const wrap2 = '../assets/Products/fresh-spring-rolls-wrap-2.jpeg';
 const wrap3 = '../assets/Products/fresh-spring-rolls-wrap-3.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { CARROT, CUCUMBER, MINT_LEAF, BASIL_LEAF, CILANTRO, PORK, PEANUT_BUTTER, LIGHT_SOY_SAUCE, HOISIN_SAUCE, SWEET_CHILI_SAUCE, VERMICELLI_RICE_NOODLES, SPRING_ROLL_RICE_WRAPPERS, SHRIMP, VEGETABLE_OIL } = require('./ingredients');
 
 const VERMICELLI_RICE_NOODLES_SECTION = 'Vermicelli Rice Noodles';
@@ -114,5 +114,14 @@ module.exports = {
     notes: [
         { note: 'Soaking the wrappers in warm water for too long will make them too soft and can tear more easily.' },
         { note: 'The wrappers will continue to soften as you add ingredients.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

@@ -10,7 +10,7 @@ const pot6 = '../assets/Products/chili-in-pot-6.jpeg';
 const pot7 = '../assets/Products/chili-in-pot-7.jpeg';
 const plated3 = '../assets/Products/chili-plated-3.jpeg';
 const plated4 = '../assets/Products/chili-plated-4.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
     GROUND_BEEF,
     YELLOW_ONION,
@@ -92,5 +92,23 @@ module.exports = {
     notes: [
         { note: 'With one jalapeno pepper it is very mild and a great base for those who do not like spicy food.' },
         { note: 'I prefer a thicker chili, so I added more tomato paste (total of 6 oz) and let it simmer longer.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'For reheating smaller portions. Microwave until heated through (about 4 to 5 minutes). Stirring occasionally.',
+        },
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'For reheating larger amounts. Over low heat, reheat in a pot until heated through (about 10 to 20 minutes). Stirring occasionally.',
+        },
+    ],
+    mealPrep: true,
 };

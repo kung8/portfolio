@@ -3,7 +3,7 @@ const frenchBread = '../assets/Products/french-bread.jpeg';
 const porkLoafCut = '../assets/Products/pork-loaf-cut.jpeg';
 const porkLoafOpened = '../assets/Products/pork-loaf-opened.jpeg';
 const porkLoafWrapped = '../assets/Products/pork-loaf-wrapped.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const {
     BAKING_POWDER,
     BANANA_LEAF,
@@ -163,4 +163,14 @@ module.exports = {
         { note: 'My favorite place to get Banh Mi Sandwiches is called D.C. Banh Mi in Falls Church, VA. Get their #1 Combination Sandwich, and you won\'t regret it!' }
     ],
     tags: ['vietnamese', 'sandwich', 'banh mi', 'pork', 'pickled vegetables', 'french bread'],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store ingredients separately.'
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

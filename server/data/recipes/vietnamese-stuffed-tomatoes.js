@@ -12,7 +12,7 @@ const tomatoes11 = '../assets/Products/vietnamese-stuffed-tomatoes-11.jpeg';
 const tomatoes12 = '../assets/Products/vietnamese-stuffed-tomatoes-12.jpeg';
 const tomatoes13 = '../assets/Products/vietnamese-stuffed-tomatoes-13.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { VINE_TOMATO, CORNSTARCH, GROUND_PORK, YELLOW_ONION, GARLIC, FISH_SAUCE, SALT, WHITE_SUGAR, BLACK_PEPPER, VEGETABLE_OIL, LIGHT_SOY_SAUCE, GREEN_ONION, WATER } = require('./ingredients');
 
 const TOMATOES_SECTION = 'Tomatoes';
@@ -90,5 +90,19 @@ module.exports = {
         { step: 'In a small bowl, combine the water and cornstarch.', section: SECTIONS.MAIN, img: tomatoes10 },
         { step: 'Add this thickening mixture to the sauce. Mix until it has incorporated into the sauce and the sauce has thickened.', section: SECTIONS.MAIN, img: tomatoes11 },
         { step: 'Pour sauce over the stuffed tomatoes and top with green onions. Enjoy this simple Southeast Asian cuisine with some jasmine rice.', section: SECTIONS.SERVE, img: tomatoes12 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover with foil and bake at 350ºF until heated through (about 5 to 10 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

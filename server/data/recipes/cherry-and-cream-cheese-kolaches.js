@@ -25,7 +25,7 @@ const kolaches24 = '../assets/Products/kolaches-24.jpeg';
 const kolaches25 = '../assets/Products/kolaches-25.jpeg';
 const kolaches26 = '../assets/Products/kolaches-26.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { YEAST, WHITE_SUGAR, ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, EGG_YOLK, SALT, CREAM_CHEESE, POWDERED_SUGAR, WHOLE_MILK, CHERRY, LEMON_JUICE, LEMON_ZEST, WATER } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
@@ -146,5 +146,14 @@ module.exports = {
 
         { step: 'Bake until it is light golden brown (about 20 minutes).', section: SECTIONS.BAKE, img: kolaches25 },
         { step: 'Enjoy these sweet delicacies warm.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

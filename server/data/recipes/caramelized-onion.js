@@ -3,7 +3,7 @@ const caramelized = '../assets/Products/caramelized-onion-caramelized-cooked.jpe
 const combined = '../assets/Products/caramelized-onion-combined.jpeg';
 const cooked = '../assets/Products/caramelized-onion-cooked.jpeg';
 const sliced = '../assets/Products/caramelized-onion-thinly-sliced.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
     RED_ONION,
     UNSALTED_BUTTER,
@@ -49,5 +49,23 @@ module.exports = {
         { step: 'Stir and cook for about 3 minutes.', section: SECTIONS.TOPPING },
         { step: 'Season with salt and pepper and cook until onions are browned and soft.', section: SECTIONS.TOPPING, img: cooked },
         { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.TOPPING, img: combined },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over low heat, reheat in a pan until warmed through.',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave for 30 second intervals. Stir between intervals.',
+        },
+    ],
+    mealPrep: true,
 };

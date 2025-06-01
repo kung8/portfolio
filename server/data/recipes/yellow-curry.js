@@ -11,7 +11,7 @@ const curry16 = '../assets/Products/yellow-curry-16.jpeg';
 const curry17 = '../assets/Products/yellow-curry-17.jpeg';
 const curry18 = '../assets/Products/yellow-curry-18.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { OLIVE_OIL, YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_BREAST, YUKON_GOLD_POTATO, CARROT, YELLOW_CURRY_PASTE, GINGER, GARLIC, COCONUT_MILK, CORNSTARCH, FISH_SAUCE, LIME_JUICE, BROWN_SUGAR, CILANTRO, SRIRACHA_SAUCE } = require('./ingredients');
 
 const YELLOW_CURRY_SECTION = 'Yellow Curry';
@@ -74,5 +74,20 @@ module.exports = {
     ],
     notes: [
         { note: 'If you decide to double or triple this amount, you do not need to double or triple the yellow curry paste depending on your spice tolerance. I would suggest for a more mild spice level use 1.5 times for doubled and 2 times for tripled.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store rice and curry separately.'
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave until heated through (about 3 to 5 minutes). Stirring occasionally.',
+        },
+    ],
+    mealPrep: true,
 };

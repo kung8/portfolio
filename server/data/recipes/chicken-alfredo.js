@@ -1,5 +1,5 @@
 const alfredo = '../assets/Products/chicken-alfredo.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     RED_BELL_PEPPER,
     YELLOW_ONION,
@@ -69,5 +69,19 @@ module.exports = {
         { step: 'Mix together heavy cream and nutmeg before pouring into the pan and cook until it simmers, then for another 2 minutes.', section: SECTIONS.MAIN },
         { step: 'Set to a low heat and slowly mix in the parmesan, chicken, veggies, pasta, a little starchy noodle water, salt and pepper.', section: SECTIONS.MAIN },
         { step: 'Serve and enjoy the nostalgic creamy, delicious chicken alfredo!', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Add a tablespoon or two of milk. Over medium-low heat, reheat in a saucepan and stir frequently. Bring to a simmer and simmer until heated through (about a few minutes).',
+        },
+    ],
+    mealPrep: true,
 };
