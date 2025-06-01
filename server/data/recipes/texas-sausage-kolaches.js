@@ -13,7 +13,7 @@ const kolaches12 = '../assets/Products/texas-sausage-kolaches-12.jpeg';
 const kolaches13 = '../assets/Products/texas-sausage-kolaches-13.jpeg';
 const kolaches14 = '../assets/Products/texas-sausage-kolaches-14.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { MILK, WHITE_SUGAR, UNSALTED_BUTTER, SALT, WATER, YEAST, ALL_PURPOSE_FLOUR, EGG, CHEDDAR_CHEESE, SAUSAGE_LINK } = require('./ingredients');
 
 const SUGAR_MIXTURE_SECTION = 'Sugar Mixture';
@@ -94,5 +94,23 @@ module.exports = {
         { step: 'Brush tops with melted butter.', section: SECTIONS.BAKE, img: kolaches12 },
         { step: 'Bake until golden brown (about 12 to 15 minutes).', section: SECTIONS.BAKE, img: kolaches13 },
         { step: 'Enjoy these delicious balls of goodness.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 7, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover with foil and bake at 350ºF until heated through (about 10 to 15 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave in 5 to 10 second intervals until heated through (about 10 to 15 seconds per kolaches).',
+        },
+    ],
+    mealPrep: true,
 };

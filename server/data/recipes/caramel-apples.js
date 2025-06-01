@@ -12,7 +12,7 @@ const unmixed = '../assets/Products/caramel-apples-sauce-unmixed.jpeg';
 const skewered = '../assets/Products/caramel-apples-skewered.jpeg';
 const thickened = '../assets/Products/caramel-apples-thickened-sauce.jpeg';
 const wax = '../assets/Products/caramel-apples-wax-free-apples.jpeg';
-const { GENRES, METHODS, TYPES, CATEGORIES, SECTIONS , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, TYPES, CATEGORIES, SECTIONS , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { GRANNY_SMITH_APPLE, BROWN_SUGAR, SWEETENED_CONDENSED_MILK, CORN_SYRUP, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
 
 const APPLE = 'Apple';
@@ -71,5 +71,14 @@ module.exports = {
         { step: 'Add vanilla and mix.', section: CARAMEL },
         { step: 'Quickly dip apples in caramel and top each with your favorite toppings.', section: SECTIONS.MAIN },
         { step: 'Place each apple on the parchment paper and let them set for 1 hour.', section: SECTIONS.MAIN, img: [oreo2, peanut1, peanut2, peanut3] },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

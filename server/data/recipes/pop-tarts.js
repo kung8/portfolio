@@ -2,7 +2,7 @@ const tart1 = '../assets/Products/pop-tarts-1.jpeg';
 const tart2 = '../assets/Products/pop-tarts-2.jpeg';
 const tart3 = '../assets/Products/pop-tarts-3.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { STRAWBERRY_JAM, POWDERED_SUGAR, MILK, REFRIGERATED_PIE_CRUST } = require('./ingredients');
 
 const POP_TARTS_SECTION = 'Pop Tarts';
@@ -59,5 +59,24 @@ module.exports = {
     ],
     notes: [
         { note: 'This is a great way to use any excess pie crust dough.' }
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 350ºF until heated through (about 10 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

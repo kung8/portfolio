@@ -7,7 +7,7 @@ const mix = '../assets/Products/sourdough-starter-feeding-mix.jpeg';
 const mixed = '../assets/Products/sourdough-starter-feeding-mixed.jpeg';
 
 const { ALL_PURPOSE_FLOUR, WATER } = require('./ingredients');
-const { INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 
 const CREATING_STARTER = 'Creating Starter';
 const FEEDING_STARTER = 'Feeding Starter';
@@ -47,5 +47,14 @@ module.exports = {
         { step: 'When you are feeding the starter, take it out of the fridge and remove 1/2 cup of starter. To make room for the new amount of ingredients. This removed portion can be used to make a new starter if you want.', section: FEEDING_STARTER },
         { step: 'Mix in flour and warm water and leave it in a warm area for the next 24 hours. Bubbling means it is alive and is eating the new.', section: FEEDING_STARTER, img: [flour, water, mix, mixed] },
         { step: 'Refrigerate the starter after it has grown.', section: FEEDING_STARTER, img: zoomed },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: '', unit: STORAGE_DURATION_UNIT.INFINITE },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 }; 

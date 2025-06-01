@@ -15,7 +15,7 @@ const meatball15 = '../assets/Products/swedish-meatball-15.jpeg';
 const meatball16 = '../assets/Products/swedish-meatball-16.jpeg';
 const meatball17 = '../assets/Products/swedish-meatball-17.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { BREADCRUMBS, HEAVY_CREAM, UNSALTED_BUTTER, YELLOW_ONION, GROUND_BEEF, GROUND_PORK, EGG, BROWN_SUGAR, SALT, BLACK_PEPPER, NUTMEG, ALLSPICE, GROUND_GINGER, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, BEEF_BROTH, SOUR_CREAM } = require('./ingredients');
 
 const PREP_OVEN = 'Prep Oven';
@@ -98,12 +98,26 @@ module.exports = {
         { step: 'Add chicken broth and cover with aluminum foil.', section: BAKING, img: [meatball15, meatball14] },
         { step: 'Bake until meatballs are tender (about 40 minutes).', section: BAKING, img: meatball16 },
         { step: 'Transfer meatballs to a serving dish.', section: BAKING },
-        
+
         { step: 'Pour drippings from the baking dish into a saucepan.', section: MAKE_GRAVY },
         { step: 'Over medium heat, whisk in flour.', section: MAKE_GRAVY },
         { step: 'Add beef broth and whisk. Add more beef broth until there is about 2 1/2 cups of gravy.', section: MAKE_GRAVY },
         { step: 'Let the gravy simmer while stirring constantly until it has thickened (about 5 minutes).', section: MAKE_GRAVY },
         { step: 'Right before serving, stir in sour cream, salt and pepper.', section: MAKE_GRAVY },
         { step: 'Serve the gravy sauce over the meatballs and enjoy!', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.STIR_FRY,
+            instruction: 'Over medium-low heat, reheat in a saucepan until heated through (about 5 to 10 minutes). Stir frequently.',
+        },
+    ],
+    mealPrep: true,
 };
