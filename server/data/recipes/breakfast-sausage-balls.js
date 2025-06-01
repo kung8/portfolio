@@ -1,7 +1,7 @@
 const balls1 = '../assets/Products/breakfast-sausage-balls-1.jpeg';
 const balls2 = '../assets/Products/breakfast-sausage-balls-2.jpeg';
 const balls3 = '../assets/Products/breakfast-sausage-balls-3.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { CHEDDAR_CHEESE, MILK, KODIAK_CAKE_MIX, BREAKFAST_SAUSAGE } = require('./ingredients');
 
 const SAUSAGE_BALL_SECTION = 'Sausage Balls';
@@ -57,5 +57,19 @@ module.exports = {
     notes: [
         { note: 'I ended up needing about 1 cup of milk to get the mixture to stick together.' },
         { note: 'I grated the cheese to a slightly larger size than I normally do so it would melt better and will not stick as much too itself.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 1, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'In an air fryer, reheat at 350ºF until heated through (about 3 to 4 minutes). Flip halfway through.',
+        },
+    ],
+    mealPrep: true,
 };

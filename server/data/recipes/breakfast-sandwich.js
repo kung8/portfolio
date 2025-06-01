@@ -1,5 +1,5 @@
 const breakfastSandwich = '../assets/Products/breakfast-sandwich.jpeg';
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     EGG,
     COOKED_HAM,
@@ -52,5 +52,23 @@ module.exports = {
         { step: 'Add the ham slice to the pan and heat each side for 30 seconds.', section: SECTIONS.MAIN },
         { step: 'Place a slice of cheese on the ham so it melts.', section: SECTIONS.MAIN },
         { step: 'Make a sandwich with these ingredients and enjoy this fresh breakfast sandwich.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'For crispy biscuit with a soft inside, wrap the sandwich in foil and bake at 350°F until heated through (about 8 to 10 minutes). Remove foil and bake until biscuit is crisp (about 4 to 6 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'For a soft biscuit, wrap the sandwich in paper towel and microwave until heated through (about 30 to 60 seconds).',
+        },
+    ],
+    mealPrep: true,
 }

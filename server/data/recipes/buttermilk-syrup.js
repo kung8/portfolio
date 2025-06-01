@@ -1,6 +1,6 @@
 const cooked = '../assets/Products/buttermilk-syrup-cooked.jpeg';
 const raw = '../assets/Products/buttermilk-syrup-raw.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
     WHITE_SUGAR,
     BUTTERMILK,
@@ -44,5 +44,19 @@ module.exports = {
     directions: [
         { step: 'Combine sugar, buttermilk, and butter in a saucepan. And heat over medium-high heat until it boils, about 5 minutes. Stir occasionally.', section: SECTIONS.SAUCE, img: raw },
         { step: 'Remove from heat, and add baking soda and vanilla. And stir.', section: SECTIONS.SAUCE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave in 15 second intervals until heated through. Stir in between intervals to ensure even heating.',
+        },
+    ],
+    mealPrep: true,
 };

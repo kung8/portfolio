@@ -6,7 +6,7 @@ const sauteed = '../assets/Products/broccoli-cheddar-soup-sauteed-onion.jpeg';
 const simmering1 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-1.jpeg';
 const simmering2 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-2.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     UNSALTED_BUTTER,
     YELLOW_ONION,
@@ -79,5 +79,19 @@ module.exports = {
         { step: 'Add salt, pepper, and nutmeg as desired.', section: SECTIONS.SOUP },
         { step: 'Optionally blend the soup if you would like a smoother texture.', section: SECTIONS.SOUP },
         { step: 'Eat this in bread bowls or just serve with bread. Top with cheese and your favorite toppings.', section: SECTIONS.SERVE, img: [simmering1, bowl2] },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over medium-low heat, reheat in a saucepan until heated through (about 5 to 10 minutes). Stir frequently.',
+        },
+    ],
+    mealPrep: true,
 };

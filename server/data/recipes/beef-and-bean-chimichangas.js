@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { GROUND_BEEF, YELLOW_ONION, GREEN_BELL_PEPPER, CORN, CHILI_POWDER, GARLIC_SALT, CUMIN, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, FLOUR_TORTILLA, LETTUCE, ROMA_TOMATO, REFRIED_BEANS, TACO_SAUCE } = require('./ingredients');
 
 const TORTILLA_AND_OTHER = 'Tortilla and Other';
@@ -66,5 +66,29 @@ module.exports = {
         { step: 'Brush the top with melted butter.', section: SECTIONS.ASSEMBLE },
         { step: 'Bake until golden brown (about 30 to 35 minutes).', section: SECTIONS.BAKE },
         { step: 'Enjoy this simple mexican dish topped with your favorite toppings.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'When reheating from frozen, add about 20 minutes to the baking time. Air fry'
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'In an air fryer, add chimichangas in a single layer with a little oil and reheat at 350ºF until heated through (about 8 to 10 minutes from fridge and 10 to 12 minutes from frozen). Flip halfway through.',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Brush with a little oil or butter. Bake at 400ºF until heated through (about 10 to 15 minutes from fridge and 28 to 30 minutes from frozen). Flip halfway through.',
+        },
+    ],
+    mealPrep: true,
 };

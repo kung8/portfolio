@@ -8,7 +8,7 @@ const ragu7 = '../assets/Products/beef-ragu-7.jpeg';
 const ragu8 = '../assets/Products/beef-ragu-8.jpeg';
 const ragu9 = '../assets/Products/beef-ragu-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { BEEF_CHUCK_ROAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CARROT, CELERY, CRUSHED_TOMATOES, TOMATO_PASTE, BEEF_BROTH, RED_WINE, THYME, BAY_LEAF, YELLOW_ONION, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY, WATER } = require('./ingredients');
 
 const RAGU_SECTION = 'Ragu';
@@ -90,5 +90,23 @@ module.exports = {
     ],
     notes: [
         { note: 'This ended up being too liquidy for me and the beef did not shred well after cooking for 2 1/2 hours. I ended up just cutting the beef instead of shredding it. I think adding more tomato paste would help thicken the sauce.' }
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover with foil and bake at 350ºF until heated through (about 15 to 20 minutes). If needed, add a few drops of sauce or water to prevent it from drying out.',
+        },
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over medium-low heat, add a little olive oil to a pan. Add the ragu and cook until heated through (about 10 to 15 minutes). Stir occasionally.',
+        },
+    ],
+    mealPrep: false,
 };

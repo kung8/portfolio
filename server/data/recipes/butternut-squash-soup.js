@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { BUTTERNUT_SQUASH, SWEET_POTATO, OLIVE_OIL, SALT, BLACK_PEPPER, UNSALTED_BUTTER, YELLOW_ONION, CELERY, CARROT, THYME, CHICKEN_BROTH, HEAVY_CREAM } = require('./ingredients');
 
 const SQUASH_SECTION = 'Squash';
@@ -71,5 +71,23 @@ module.exports = {
         { step: 'Carefully transfer to a blender in batches. Blend until creamy.', section: SECTIONS.MAKE_SOUP },
 
         { step: 'Serve warm and enjoy this Fall season favorite!', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Cover with a microwave-safe lid or wrap. Heat in 1-minute intervals until warmed through. Stir in between intervals to ensure even heating.',
+        },
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over medium-low heat, reheat in a saucepan until heated through (about 5 to 10 minutes). Stir frequently.',
+        },
+    ],
+    mealPrep: true,
 };

@@ -8,7 +8,7 @@ const biscuits2 = '../assets/Products/biscuits-and-gravy-2.jpeg';
 const biscuits3 = '../assets/Products/biscuits-and-gravy-3.jpeg';
 const biscuits4 = '../assets/Products/biscuits-and-gravy-4.jpeg';
 const biscuits5 = '../assets/Products/biscuits-and-gravy-5.jpeg';
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
@@ -106,4 +106,31 @@ module.exports = {
     notes: [
         { note: 'Feel free to replace the ground pork with ground turkey.' },
     ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Keep the biscuits and gravy separate.',
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover the biscuits with foil and bake at 350ºF until warmed through (about 8 to 10 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Wrap the biscuits in a paper towel and microwave until warmed through in 20 to 30 second bursts.',
+        },
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over low heat, reheat the gravy in a saucepan until warmed through. Stir frequently to prevent burning.',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave the gravy in 30 second bursts until warmed through. Stir in between to prevent burning.',
+        },
+    ],
+    mealPrep: true,
 };

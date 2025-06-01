@@ -1,6 +1,6 @@
 const blt1 = '../assets/Products/blt-1.jpeg';
 const blt2 = '../assets/Products/blt-2.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
 const { BACON, LETTUCE, ROMA_TOMATO, BREAD, MAYONNAISE } = require('./ingredients');
 
 const COOK_BACON = 'Cook Bacon';
@@ -49,5 +49,24 @@ module.exports = {
         { step: 'Spread the mayo on a slice of toasted bread.', section: SECTIONS.ASSEMBLE },
         { step: 'Layer the bacon, tomatoes and lettuce on the sandwich.', section: SECTIONS.ASSEMBLE, img: blt1 },
         { step: 'Enjoy this simple sandwich.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instructions: 'Store the ingredients separately.',
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Since you will keep the ingredients separate, you can just follow the recipe again.',
+        },
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'If the bacon was cooked, you can air fry it at 350ºF until heated through and crispy (about 2 to 4 minutes).',
+        },
+    ],
+    mealPrep: false,
 };

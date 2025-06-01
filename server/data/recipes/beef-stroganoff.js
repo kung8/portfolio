@@ -1,5 +1,5 @@
 const beefStroganoff = '../assets/Products/beef-stroganoff.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const {
     BEEF,
     YELLOW_ONION,
@@ -59,5 +59,27 @@ module.exports = {
         { step: 'Add remaining broth, flour and vegetables. Heat until boiling. Stir occasionally.', section: SECTIONS.MAIN },
         { step: 'Add sour cream. Heat until hot and solid color.', section: SECTIONS.MAIN },
         { step: 'Serve over noodles.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over medium heat, reheat in a pan until reheated through. Stir occasionally.',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover with foil and bake at 350ºF until heated through (about 15 to 20 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Cover with microwave-safe lid or plastic wrap. Microwave at 50% power until heated through (about 2 to 3 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

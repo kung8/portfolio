@@ -7,7 +7,7 @@ const pilaf6 = '../assets/Products/bulgur-pilaf-6.jpeg';
 const pilaf7 = '../assets/Products/bulgur-pilaf-7.jpeg';
 const pilaf8 = '../assets/Products/bulgur-pilaf-8.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { OLIVE_OIL, YELLOW_ONION, TOMATO_PASTE, VINE_TOMATO, GREEN_BELL_PEPPER, CUMIN, SALT, BLACK_PEPPER, CHICKEN_BROTH, PARSLEY, OREGANO, BULGUR_WHEAT, CHICKPEA, BROWN_SUGAR, PAPRIKA, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST } = require('./ingredients');
 
 const BULGUR_PILAF_SECTION = 'Bulgur Pilaf';
@@ -93,5 +93,19 @@ module.exports = {
         { step: 'Fluff with a fork.', section: COOK_BULGUR_PILAF },
 
         { step: 'Serve the bulgur pilaf with the chicken topped with parsley.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave in a microwave-safe bowl until heated through (about 2 to 3 minutes). Stir halfway through.',
+        },
+    ],
+    mealPrep: true,
 };

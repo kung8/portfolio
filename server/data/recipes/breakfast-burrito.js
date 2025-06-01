@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { AVOCADO, SHALLOT, GARLIC, JALAPENO_PEPPER, LIME_JUICE, SALT, CUMIN, CILANTRO, EGG, PAPRIKA, CHORIZO, MONTEREY_JACK_CHEESE, TORTILLA, VEGETABLE_OIL, VINE_TOMATO } = require('./ingredients');
 
 const AVOCADO_TOMATO_SALSA_SECTION = 'Avocado Tomato Salsa';
@@ -75,5 +75,23 @@ module.exports = {
         { step: 'Flip and continue cooking until bottom is golden brown (a few minutes).', section: COOK_BURRITO },
         { step: 'Enjoy this warm', section: SECTIONS.SERVE },
         { step: 'Wrap in foil and warm them at 350ºF for 15 minutes. They won\'t be as crispy but are still good.', section: SECTIONS.REHEAT },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry at 330ºF until heated through and the tortilla is golden brown (about 10 to 15 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Wrap in foil and bake at 350ºF until heated through and the tortilla is crispy (about 20 to 30 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

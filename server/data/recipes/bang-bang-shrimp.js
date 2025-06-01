@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { SHRIMP, EGG_WHITES, CORNSTARCH, SALT, WHITE_PEPPER, VEGETABLE_OIL, GREEN_ONION, MAYONNAISE, SWEET_CHILI_SAUCE, SRIRACHA_SAUCE, HONEY } = require('./ingredients');
 
 const COAT_SHRIMP = 'Coat Shrimp';
@@ -31,16 +31,16 @@ module.exports = {
         { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
         { ...WHITE_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
-        
+
         { ...SHRIMP, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled and deveined', section: SECTIONS.SHRIMP },
-        
+
         { ...MAYONNAISE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SWEET_CHILI_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SRIRACHA_SAUCE, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
         { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
         { ...VEGETABLE_OIL, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DEEP_FRY },
-        
+
         { ...GREEN_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
@@ -58,7 +58,7 @@ module.exports = {
         { step: 'Add shrimp to bowl. Coat shrimp.', section: SECTIONS.PREP_SHRIMP },
 
         { step: `In another mixing bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
-        
+
         { step: 'Heat oil to 350ºF.', section: SECTIONS.DEEP_FRY },
         { step: 'Lined a plate with paper towel', section: SECTIONS.DEEP_FRY },
         { step: 'Add shrimp. Cook until golden brown (2 to 3 minutes).', section: SECTIONS.DEEP_FRY },
@@ -67,5 +67,19 @@ module.exports = {
         { step: 'Toss the fried shrimp in the sauce.', section: COAT_SHRIMP },
 
         { step: 'Serve this hot topped with green onions.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 350ºF until heated through (about 5 to 10 minutes).',
+        },
+    ],
+    mealPrep: false,
 };

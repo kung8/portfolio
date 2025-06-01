@@ -12,7 +12,7 @@ const tacos11 = '../assets/Products/birria-tacos-11.jpeg';
 const tacos12 = '../assets/Products/birria-tacos-12.jpeg';
 const tacos13 = '../assets/Products/birria-tacos-13.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT } = require('./constants');
 const { BEEF_CHUCK_ROAST, AVOCADO_OIL, SALT, BLACK_PEPPER, RED_ONION, GARLIC, BEEF_BROTH, TOMATO_PASTE, APPLE_CIDER_VINEGAR, CUMIN, OREGANO, CINNAMON_STICK, BAY_LEAF, SMOKED_PAPRIKA, GINGER, CORIANDER, GUAJILLO_CHILI_PEPPER, CHIPOTLE_PEPPERS_IN_ADOBO, FIRE_ROASTED_DICED_TOMATOES, FLOUR_TORTILLA, LIME, CILANTRO, WHITE_ONION, OAXACAN_CHEESE } = require('./ingredients');
 
 module.exports = {
@@ -94,5 +94,20 @@ module.exports = {
     ],
     notes: [
         { note: 'I think it came out too salty, because of the extra beef bouillon cubes I innocently added (I added a couple more).' }
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store the sauce, beef, toppings and tortillas separately.',
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over medium-low heat, reheat the birria in a pan until heated through (about 5 to 10 minutes). Assemble/cook the tacos as you normally would.',
+        },
+    ],
+    mealPrep: true,
 };

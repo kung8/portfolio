@@ -6,7 +6,7 @@ const eggs = '../assets/Products/bibimbap-eggs.jpeg';
 const marinating = '../assets/Products/bibimbap-marinating-chicken.jpeg';
 // const spinach = '../assets/Products/bibimbap-spinach.jpeg';
 const sauce = '../assets/Products/bibimbap-with-sauce.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     GROUND_BEEF,
     LIGHT_SOY_SAUCE,
@@ -85,5 +85,19 @@ module.exports = {
         { step: 'In a serving bowl, scoop some rice and top the rice with the beef, veggies, and eggs.', section: SECTIONS.SERVE, img: bowl },
         { step: 'Top with the sauce.', section: SECTIONS.SERVE, img: sauce },
         { step: 'Mix the toppings in the bowl when you ready to eat.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Reheat in the microwave until warmed (about 40 to 60 seconds).',
+        },
+    ],
+    mealPrep: false,
 };

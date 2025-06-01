@@ -2,7 +2,7 @@ const bbq = '../assets/Products/bbq-chicken-wings.jpeg';
 const raw = '../assets/Products/bbq-chicken-wings-raw.jpeg';
 const rawInPan = '../assets/Products/bbq-chicken-wings-raw-in-pan.jpeg';
 const pan = '../assets/Products/bbq-chicken-wings-in-pan.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
     CHICKEN_DRUMETTES,
     BAKING_SODA,
@@ -66,5 +66,23 @@ module.exports = {
         { step: 'Drain some of the residual liquid.', section: SECTIONS.MAIN },
         { step: 'Add the honey, ketchup and mustard in the pan. Stir.', section: SECTIONS.MAIN, img: pan },
         { step: 'Enjoy this light appetizer. Feel free to add some spice if you like a kick.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover with foil and bake at 350ºF until heated through (about 10 to 20 minutes). Flip halfway through. Remove foil for the last 5 minutes for crispy wings.',
+        },
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry at 350ºF until heated through (about 5 tto 7 minutes). Flip halfway through.',
+        },
+    ],
+    mealPrep: true,
 };

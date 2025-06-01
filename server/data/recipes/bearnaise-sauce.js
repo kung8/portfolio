@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { SHALLOT, BLACK_PEPPER, WHITE_VINEGAR, WHITE_WINE, WATER, UNSALTED_BUTTER, EGG_YOLK, CAYENNE_PEPPER, TARRAGON, CAPER } = require('./ingredients');
 
 const REDUCTION_SECTION = 'Reduction';
@@ -79,5 +79,19 @@ module.exports = {
         { step: 'Remove from heat. Taste and add salt and cayenne pepper as needed.', section: PREP_HOLLANDAISE_SAUCE },
         
         { step: 'Serve this sauce over your favorite protein and roasted vegetables.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.DOUBLE_BOIL,
+            instruction: 'In a double boiler, gently reheat the sauce over low heat, stirring constantly until warmed through. Be careful not to let it boil or overcook it -- the sauce may separate.',
+        },
+    ],
+    mealPrep: false,
 };

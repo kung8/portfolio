@@ -3,7 +3,7 @@ const cooked = '../assets/Products/buttered-corn-cooked.jpeg';
 const corn = '../assets/Products/buttered-corn-corn.jpeg';
 const cream = '../assets/Products/buttered-corn-cream.jpeg';
 const honey = '../assets/Products/buttered-corn-honey.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { UNSALTED_BUTTER, CANNED_SWEET_CORN, SALT, BLACK_PEPPER, HEAVY_CREAM, HONEY } = require('./ingredients');
 
 module.exports = {
@@ -46,5 +46,19 @@ module.exports = {
         { step: 'Cook until sauce has reduced slightly (about 5 minutes).', section: SECTIONS.MAIN },
         { step: 'Add honey. Cook for 2 minutes.', section: SECTIONS.MAIN, img: honey },
         { step: 'Serve warm and enjoy this sweet appetizer.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Cover with a microwave-safe lid or wrap. Heat in 30-second intervals until warmed through. Stir in between intervals to ensure even heating.',
+        },
+    ],
+    mealPrep: true,
 };
