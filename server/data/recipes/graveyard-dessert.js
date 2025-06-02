@@ -1,5 +1,5 @@
 const graveyardDessert = '../assets/Products/graveyard-dessert.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const { CHOCOLATE_PUDDING_CUPS, GUMMY_WORMS, MILANO_COOKIES, OREO_COOKIES } = require('./ingredients');
 
 module.exports = {
@@ -32,5 +32,14 @@ module.exports = {
         { step: 'Break an Milano cookie in half and stick it into the pudding. This is a gravestone.', section: SECTIONS.MAIN },
         { step: 'Sprinkle crushed Oreo around the worm and the gravestone and fill the rest of the layer.', section: SECTIONS.MAIN },
         { step: 'Get creative and have fun! You can add chocolate, sprinkles, and other cookies and candies.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

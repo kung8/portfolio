@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, WHOLE_MILK, EGG_YOLK, HEAVY_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, CAKE_FLOUR, VANILLA_BEAN, WATER } = require('./ingredients');
 
 const PASTRY = 'Pastry';
@@ -93,5 +93,14 @@ module.exports = {
         { step: 'Fill the bottom with cream.', section: SECTIONS.ASSEMBLE },
         { step: 'Dip top in chocolate and place on top of the bottom.', section: SECTIONS.ASSEMBLE },
         { step: 'Happy eating!', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: false,
 };

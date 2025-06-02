@@ -2,7 +2,7 @@ const sauce1 = '../assets/Products/bbq-sauce-1.jpeg';
 const sauce2 = '../assets/Products/bbq-sauce-2.jpeg';
 const sauce3 = '../assets/Products/bbq-sauce-3.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { KETCHUP, BROWN_SUGAR, PAPRIKA, GARLIC_POWDER, SALT, DIJON_MUSTARD, WORCESTERSHIRE_SAUCE, WHITE_VINEGAR, RICE_WINE_VINEGAR, WATER } = require('./ingredients');
 
 module.exports = {
@@ -46,5 +46,14 @@ module.exports = {
         { step: 'Combine all the ingredients in a saucepan. Whisk.', section: SECTIONS.SAUCE, img: [sauce1, sauce2] },
         { step: 'Over medium heat, simmer for 15 to 20 minutes.', section: SECTIONS.SAUCE },
         { step: 'Transfer to a container once the sauce has thickened and cooled.', section: SECTIONS.SAUCE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

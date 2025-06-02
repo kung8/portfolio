@@ -24,7 +24,7 @@ const frosting2 = '../assets/Products/gingerbread-men-cookies-frosting-2.jpeg';
 const frosting3 = '../assets/Products/gingerbread-men-cookies-frosting-3.jpeg';
 const frosting4 = '../assets/Products/gingerbread-men-cookies-frosting-4.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BROWN_SUGAR, BAKING_SODA, CINNAMON, GROUND_GINGER, GROUND_CLOVES, SALT, UNSALTED_BUTTER, MOLASSES, MILK, POWDERED_SUGAR } = require('./ingredients');
 
 const GINGERBREAD_DRY_INGREDIENTS = 'Gingerbread Dry Ingredients';
@@ -106,5 +106,14 @@ module.exports = {
     ],
     notes: [
         { note: 'I personally prefer this without the frosting.' }
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

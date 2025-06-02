@@ -1,6 +1,6 @@
 const rolls1 = '../assets/Products/dinner-rolls-1.jpeg';
 const rolls2 = '../assets/Products/dinner-rolls-2.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { YEAST, WATER, WHITE_SUGAR, VEGETABLE_OIL, EGG, ALL_PURPOSE_FLOUR, SALT } = require('./ingredients');
 
 const YEAST_MIXTURE = 'Yeast Mixture';
@@ -59,5 +59,33 @@ module.exports = {
         { step: 'Bake for until golden brown (about 12 to 15 minutes).', section: SECTIONS.DOUGH },
         { step: 'Let cool for a few minutes.', section: SECTIONS.DOUGH },
         { step: 'Enjoy these delicious homemade rolls with any meal and on any occasion.', section: SECTIONS.DOUGH },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'From frozen. Wrap in foil and bake at 350ºF until heated through (about 7 to 10 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'From fridge or room temperature. Wrap in damp paper towel, microwave in 20 to 30 second intervals until warm through.',
+        },
+    ],
+    mealPrep: true,
 };

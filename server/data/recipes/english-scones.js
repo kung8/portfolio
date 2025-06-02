@@ -16,7 +16,7 @@ const scones15 = '../assets/Products/english-scones-15.jpeg';
 const scones16 = '../assets/Products/english-scones-16.jpeg';
 const scones17 = '../assets/Products/english-scones-17.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, SALT, BAKING_POWDER, WHITE_SUGAR, UNSALTED_BUTTER, MILK, LEMON_JUICE, VANILLA_EXTRACT, EGG } = require('./ingredients');
 
 const PREP_BAKE = 'Prep Bake';
@@ -83,5 +83,23 @@ module.exports = {
         { step: 'Brush the scones with the egg wash.', section: SECTIONS.MAIN, img: scones13 },
         { step: 'Bake until the top is golden (about 10 to 15 minutes).', section: SECTIONS.MAIN, img: scones14 },
         { step: 'Serve warm with jam or favorite toppings.', section: SECTIONS.MAIN, img: [scones15, scones17] },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 350ºF until heated through (about 5 to 10 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry at 390ºF until heated through (about 3 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

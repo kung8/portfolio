@@ -77,5 +77,5 @@ module.exports = {
         },
     ],
     reheat: null,
-    mealPrep: true,
+    mealPrep: false,
 };

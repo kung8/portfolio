@@ -6,7 +6,7 @@ const mochi5 = '../assets/Products/easy-mochi-5.jpeg';
 const mochi6 = '../assets/Products/easy-mochi-6.jpeg';
 const mochi7 = '../assets/Products/easy-mochi-7.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER } = require('./constants');
 const { ICE_CREAM, MOCHIKO, CORNSTARCH } = require('./ingredients');
 
 const MOCHI_SECTION = 'Mochi';
@@ -60,5 +60,14 @@ module.exports = {
         { step: 'Dust with cornstarch if still sticky.', section: FORM_MOCHI },
         { step: 'Cut mochi to your desired size and shape.', section: FORM_MOCHI },
         { step: 'Enjoy this easy mochi dish!', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };
