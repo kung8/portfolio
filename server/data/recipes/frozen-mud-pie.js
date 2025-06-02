@@ -7,7 +7,7 @@ const pie6 = '../assets/Products/frozen-mud-pie-6.jpeg';
 const pie7 = '../assets/Products/frozen-mud-pie-7.jpeg';
 const pie8 = '../assets/Products/frozen-mud-pie-8.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
 const { OREO_COOKIES, UNSALTED_BUTTER, CHOCOLATE_ICE_CREAM, WHIPPED_CREAM, UNSALTED_PEANUT, HOT_FUDGE_SAUCE } = require('./ingredients');
 
 const HOT_FUDGE_SECTION = 'Hot Fudge';
@@ -71,5 +71,14 @@ module.exports = {
     ],
     notes: [
         { note: 'I ended up having issues with drizzling the hot fudge. I ended up pouring it and then using a wooden skewer to drag the chocolate in a random pattern.' }
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 1, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

@@ -186,15 +186,16 @@ const REHEAT_METHODS = {
     AIR_FRY: 'Air Fry',
     BAKE: 'Bake',
     DEEP_FRY: 'Deep Fry',
+    DOUBLE_BOIL: 'Double Boil',
     GRILL: 'Grill',
     MICROWAVE: 'Microwave',
     PAN_FRY: 'Pan Fry',
+    PRESSURE_COOK: 'Pressure Cook',
     ROAST: 'Roast',
     SAUTE: 'Saute',
     SLOW_COOK: 'Slow Cook',
     STEAM: 'Steam',
     STIR_FRY: 'Stir-Fry',
-    PRESSURE_COOK: 'Pressure Cook',
 };
 
 const SECTIONS = {
@@ -302,6 +303,7 @@ const STORAGE_CONTAINER = {
 };
 
 const STORAGE_DURATION_UNIT = {
+    INFINITE: { s: 'infinite', p: 'infinite' },
     HOUR: { s: 'hour', p: 'hours' },
     DAY: { s: 'day', p: 'days' },
     WEEK: { s: 'week', p: 'weeks' },

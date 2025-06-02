@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { FETTUCCINE_NOODLES, HEAVY_CREAM, PARMIGIANO_REGGIANO, UNSALTED_BUTTER, LEMON_JUICE, LEMON_ZEST, BLACK_PEPPER, SALT } = require('./ingredients');
 
 const COMBINE = 'Combine';
@@ -60,5 +60,19 @@ module.exports = {
         { step: 'Reduce to low heat. Add the parmesan to the sauce and stir.', section: COMBINE },
         { step: 'Add pasta to the sauce. Combine.', section: COMBINE },
         { step: 'Serve immediately and garnish with more of the toppings as desired.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over low heat, add a splash of olive oil and reheat the pasta until heated through (about a few minutes).',
+        },
+    ],
+    mealPrep: true,
 };

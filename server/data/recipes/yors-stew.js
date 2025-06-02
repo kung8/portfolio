@@ -32,7 +32,7 @@ module.exports = {
     img: stew9,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.JAPANESE],
@@ -94,5 +94,19 @@ module.exports = {
     ],
     notes: [
         { note: 'I think there are some potential improvements that I will try next time. The flavor was not as good as I expected. I definitely burnt it a little, when I let it simmer. I did not use the sour cream this time but do not think it would make too much of a difference. The sauce was dried out and I tried to return the sauce by reboiling the sauce on the side and re-added to the stew to avoid over softening.' }
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

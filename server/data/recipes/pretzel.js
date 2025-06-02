@@ -11,7 +11,7 @@ const formed = '../assets/Products/pretzels-formed.jpeg';
 // const oven = '../assets/Products/pretzels-in-oven.jpeg';
 const raw = '../assets/Products/pretzels-on-baking-sheet-raw.jpeg';
 const rope = '../assets/Products/pretzels-rope.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER } = require("./constants");
 const {
     YEAST,
     SALT,
@@ -78,5 +78,14 @@ module.exports = {
         { step: 'Remove each pretzel with a slotted spatula and let the excess water drain.', section: SECTIONS.MAIN, img: drained },
         { step: 'Place on the baking sheet and sprinkle coarse salt as desired.', section: SECTIONS.MAIN, img: raw },
         { step: 'Bake for 12 to 15 minutes, or until they are golden brown.', section: SECTIONS.MAIN, img: pretzels },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

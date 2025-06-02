@@ -14,7 +14,7 @@ const rack = '../assets/Products/lemon-bars-rack.jpeg';
 const filling = '../assets/Products/lemon-bars-raw-filling.jpeg';
 const zestMixed = '../assets/Products/lemon-bars-sugar-and-zest-mixed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { ALL_PURPOSE_FLOUR, POWDERED_SUGAR, SALT, UNSALTED_BUTTER, LEMON_ZEST, WHITE_SUGAR, EGG, LEMON_JUICE } = require('./ingredients');
 
 module.exports = {
@@ -75,5 +75,14 @@ module.exports = {
         { step: 'Top with powdered sugar.', section: SECTIONS.MAIN, img: [rack, baked] },
         { step: 'Wet a sharp knife between cuts.', section: SECTIONS.MAIN },
         { step: 'Enjoy these sweet and tart treats.', section: SECTIONS.TOPPINGS, img: plated1 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 7, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

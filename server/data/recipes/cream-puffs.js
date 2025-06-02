@@ -11,7 +11,7 @@ const plated11 = '../assets/Products/cream-puffs-plated-11.jpeg';
 const sliced2 = '../assets/Products/cream-puffs-sliced-2.jpeg';
 const vanilla = '../assets/Products/cream-puffs-vanilla-pudding-mix.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { VANILLA_INSTANT_PUDDING_MIX, HEAVY_CREAM, MILK, UNSALTED_BUTTER, SALT, ALL_PURPOSE_FLOUR, EGG, WATER } = require('./ingredients');
 
 const PUFF = 'Puff';
@@ -68,5 +68,14 @@ module.exports = {
         { step: 'Let cool.', section: PUFF, img: baked7 },
         { step: 'Either carefully split the puffs and fill with the cream filling or pipe into the shell.', section: SECTIONS.ASSEMBLE, img: [sliced2, filled] },
         { step: 'Enjoy these delicious desserts.', section: SECTIONS.SERVE, img: plated2 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

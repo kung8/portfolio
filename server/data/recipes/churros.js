@@ -4,7 +4,7 @@ const churros3 = '../assets/Products/churros-3.jpeg';
 const churros4 = '../assets/Products/churros-4.jpeg';
 const churros5 = '../assets/Products/churros-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, VANILLA_EXTRACT, VEGETABLE_OIL, CINNAMON, WATER } = require('./ingredients');
 
 const CHURROS_SECTION = 'Churros';
@@ -79,5 +79,14 @@ module.exports = {
         { note: 'The churros batter was pretty thick and I had to add a mixture of water and eggs to help thin out the batter so that it could come out of the piping bag more easily.' },
         { note: 'The piping tip was pretty small which made the churros come out thin like curly fries. I would recommend using a larger tip to get the traditional churros shape.' },
         { note: 'If you want to invest in a deep fryer, I love the deep fryer that I have. It has a oil filtration system and was very easy to use.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 1, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: false,
 };

@@ -300,7 +300,6 @@ const vietnameseStuffedTomatoes = require("./recipes/vietnamese-stuffed-tomatoes
 const waffles = require("./recipes/waffles");
 const wrap = require("./recipes/wrap");
 const yellowCurry = require("./recipes/yellow-curry");
-const yorsStew = require("./recipes/yors-stew");
 
 // END OF IMPORTS
 
@@ -351,7 +350,6 @@ const recipes = [
     udonNoodleSoup,
     easyMochi,
     mochi,
-    yorsStew,
 
     // KOREAN
     koreanBeefBulgogi,

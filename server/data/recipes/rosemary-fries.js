@@ -6,7 +6,7 @@ const seasonings1 = '../assets/Products/rosemary-fries-seasonings-1.jpeg';
 const seasonings2 = '../assets/Products/rosemary-fries-seasonings-2.jpeg';
 const tray2 = '../assets/Products/rosemary-fries-tray-2.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { OLIVE_OIL, ROSEMARY, GARLIC, CORNSTARCH, SALT, BLACK_PEPPER, SWEET_POTATO } = require('./ingredients');
 
 module.exports = {
@@ -52,5 +52,23 @@ module.exports = {
         { step: 'Arrange the fries in a single layer on baking sheet.', section: SECTIONS.MAIN, img: tray2 },
         { step: 'Bake until tender and lightly browned (for about 30 to 35 minutes). Turn occasionally.', section: SECTIONS.MAIN, img: baked1 },
         { step: 'Enjoy this delicious side!', section: SECTIONS.MAIN, img: plated2 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry at 350ºF until heated through and crispy (about 3 to 5 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 400ºF until heated through and crispy (about 10 to 15 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

@@ -10,7 +10,7 @@ const rawZoomed = '../assets/Products/pao-de-queijo-mixer-zoomed.jpeg';
 const raw = '../assets/Products/pao-de-queijo-mixer.jpeg';
 // const first = '../assets/Products/pao-de-queijo-zoomed-cheeseballs.jpeg';
 const plated = '../assets/Products/pao-de-queijo-plated.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     TAPIOCA_STARCH,
     MILK,
@@ -73,5 +73,29 @@ module.exports = {
         { step: 'Place on a baking sheet about 2 inches apart. They do not expand very much.', section: SECTIONS.DOUGH, img: pan },
         { step: 'Bake until the cheeseballs are a golden brown (about 15 to 25 minutes).', section: SECTIONS.DOUGH, img: cooked },
         { step: 'Serve these warm.', section: SECTIONS.DOUGH, img: plated },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 1, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 7, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'From frozen, bake at 400ºF until golden and puffy (about 25 to 30 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

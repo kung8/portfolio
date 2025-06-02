@@ -3,7 +3,7 @@ const blend2 = '../assets/Products/five-spices-blend-2.jpeg';
 const blend3 = '../assets/Products/five-spices-blend-3.jpeg';
 const blend4 = '../assets/Products/five-spices-blend-4.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, STORAGE_LOCATION } = require('./constants');
 const { CINNAMON, STAR_ANISE, FENNEL_SEEDS, BLACK_PEPPER, GROUND_CLOVES } = require('./ingredients');
 
 const SPICES_SECTION = 'Spices';
@@ -42,5 +42,14 @@ module.exports = {
     ],
     notes: [
         { note: 'Dry roasting the spices in a pan will accentuate the flavor.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 6, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };
