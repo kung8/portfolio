@@ -22,7 +22,7 @@ const samosa21 = '../assets/Products/samosa-21.jpeg';
 const samosa22 = '../assets/Products/samosa-22.jpeg';
 const samosa23 = '../assets/Products/samosa-23.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, GHEE, CAROM_SEEDS, SALT, GREEN_PEA, GINGER, SERRANO_PEPPER, CORIANDER, LEMON_JUICE, CUMIN, GARAM_MASALA, CHILI_POWDER, FENNEL_SEEDS, YUKON_GOLD_POTATO, AMCHUR_POWDER, WATER } = require('./ingredients');
 
 const POTATO_FILLING = 'Potato Filling';
@@ -133,5 +133,23 @@ module.exports = {
     ],
     notes: [
         { note: 'You can bake, deep fry or air fry the samosas. Traditionally they are deep fried.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry at 350ºF until golden brown (about 6 to 8 minutes). Check them about every 2 minutes.',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 350ºF until warmed through and crispy (about 10 to 15 minutes).',
+        },
+    ],
+    mealPrep: false,
 };

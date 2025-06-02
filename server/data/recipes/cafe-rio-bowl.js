@@ -11,7 +11,7 @@ const dressing = '../assets/Products/cafe-rio-bowl-cilantro-ranch-dressing-in-bo
 const pre = '../assets/Products/cafe-rio-bowl-cilantro-ranch-dressing-pre-blended-ingredients.jpeg';
 const cilantroRanchDressingZoomed = '../assets/Products/cafe-rio-bowl-bowled-with-cilantro-ranch-dressing-zoomed.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
     AVOCADO,
     BALSAMIC_VINEGAR,
@@ -116,5 +116,24 @@ module.exports = {
     ],
     notes: [
         { note: 'I sometimes forget items in fridge or pantry when I am ready to make the salad. I recommend making a list of items beforehand, so you can reference at the time of assembly and not miss your favorite ingredients.' }
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store the ingredients separately. The dressing can last 2 weeks in the fridge.',
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry the steak at 350ºF until heated through (about 2 to 5 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Place the steak on a wire rack inside a baking sheet. Bake at 250ºF until reaches 110ºF. Then over high heat, sear the steak until browned on both sides (about 1 minute per side).',
+        },
+    ],
+    mealPrep: true,
 };

@@ -15,7 +15,7 @@ const pot = '../assets/Products/bao-steamer-over-pot.jpeg';
 // const steamer = '../assets/Products/bao-steamer.jpeg';
 const water = '../assets/Products/bao-water.jpeg';
 const withFilling = '../assets/Products/bao-with-filling.jpeg';
-const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require("./constants");
 const {
     YEAST,
     WHITE_SUGAR,
@@ -107,4 +107,18 @@ module.exports = {
         { step: 'Once the baos cooked, let them cool for a little bit before serving.', section: SECTIONS.MAIN, img: zoomed },
         { step: 'Enjoy these delicious Chinese filled goodness. In China and other Asian countries, these could be eaten for breakfast too.', section: SECTIONS.MAIN, img: container },
     ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Cover with a damp paper towel and microwave until heated through (about 30 to 60 seconds).',
+        },
+    ],
+    mealPrep: true,
 };

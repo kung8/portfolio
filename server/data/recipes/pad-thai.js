@@ -17,7 +17,7 @@ const plated3 = '../assets/Products/pad-thai-plated-3.jpeg';
 const rinsing = '../assets/Products/pad-thai-rinsing-noodles.jpeg';
 const sauce = '../assets/Products/pad-thai-sauce.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const {
     UNSALTED_BUTTER,
     GARLIC,
@@ -119,5 +119,23 @@ module.exports = {
         { step: 'Set aside.', section: ROAST_PEANUTS, img: peanuts },
 
         { step: 'Serve and garnish with peanuts, bean sprouts, cilantro, and squeeze fresh lime juice. Enjoy this majestic Thai dish!', section: SECTIONS.SERVE, img: plated3 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Add a little water. Cover with a microwave-safe lid and microwave on medium power. Start with 1 minute and then microwave in 30-second intervals until heated through.',
+        },
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Add a little oil. Over medium heat, stir-fry until heated through (about 5 to 10 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

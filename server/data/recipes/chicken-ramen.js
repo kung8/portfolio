@@ -9,7 +9,7 @@ const ice = '../assets/Products/chicken-ramen-ice-bath.jpeg';
 const noodles = '../assets/Products/chicken-ramen-noodles.jpeg';
 const rawChicken = '../assets/Products/chicken-ramen-raw-chicken.jpeg';
 const sliced = '../assets/Products/chicken-ramen-sliced.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
 const {
     CHICKEN_BREAST,
     UNSALTED_BUTTER,
@@ -99,5 +99,20 @@ module.exports = {
         { step: 'After the eggs are removed from the pot, place the dried noodles in the boiling water.', section: SECTIONS.NOODLES, img: noodles },
         { step: 'Cook for 2 to 3 minutes and divide into bowls.', section: SECTIONS.NOODLES },
         { step: 'Pour broth over ramen, chicken, and eggs. Top with green onions. Enjoy this upgraded ramen!', section: SECTIONS.SERVE, img: bowl },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store broth, noodles and toppings separately.',
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Add a little water to the noodles. Over medium heat, reheat broth in a pot until heated through. Add noodles until heated through.',
+        },
+    ],
+    mealPrep: true,
 };

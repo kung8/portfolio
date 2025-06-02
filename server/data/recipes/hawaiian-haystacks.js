@@ -1,5 +1,5 @@
 const hawaiian = '../assets/Products/hawaiian-haystacks-aerial.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
 const {
     CHICKEN_BREAST,
     CHICKEN_BROTH,
@@ -84,5 +84,19 @@ module.exports = {
         { step: 'Carefully return the diced/shredded chicken into the slow cooker.', section: SECTIONS.MAIN },
         { step: 'Continue to cook for another 30 minutes on medium, so the cream cheese melts and stir every so often.', section: SECTIONS.MAIN },
         { step: 'Serve over rice and top with your favorite toppings--mine is Chow Mein Noodles.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave the gravy and rice separately. Add a little water to the rice and microwave until heated through (about 1 to 2 minutes). Microwave the gravy for about 1 to 2 minute. Assemble the haystacks with the toppings.',
+        },
+    ],
+    mealPrep: true,
 };

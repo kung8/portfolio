@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { WHOLE_MILK, EGG_YOLK, WHITE_SUGAR, VANILLA_BEAN } = require('./ingredients');
 
 const GELATO_SECTION = 'Gelato';
@@ -53,5 +53,14 @@ module.exports = {
         { step: 'Follow the ice cream maker directions. It should be soft and not icy.', section: FREEZING },
         { step: 'Take out the gelato 15 to 20 minutes before serving so it can soften at room temperature.', section: SECTIONS.SERVE },
         { step: 'Enjoy this sweet soft scoop of heaven!', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };

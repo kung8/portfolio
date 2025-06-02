@@ -8,7 +8,7 @@ const roll7 = '../assets/Products/cheeseburger-egg-rolls-7.jpeg';
 const roll8 = '../assets/Products/cheeseburger-egg-rolls-8.jpeg';
 const roll9 = '../assets/Products/cheeseburger-egg-rolls-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { GROUND_BEEF, RED_ONION, PICKLES, CHEDDAR_CHEESE, DIJON_MUSTARD, FISH_SAUCE, SALT, BLACK_PEPPER, SPRING_ROLL_RICE_WRAPPERS, SPRING_ROLL_WRAPPER, OLIVE_OIL, GREEK_YOGURT, KETCHUP, GARLIC, PICKLE_JUICE, SMOKED_PAPRIKA, COOKING_SPRAY } = require('./ingredients');
 
 const SPRING_ROLL_SECTION = 'Spring Roll';
@@ -88,5 +88,19 @@ module.exports = {
         { note: 'I personally did not like the notes of the greek yogurt in the dipping sauce. So I would not use this sauce again.' },
         { note: 'Instead of a sauce I think if you replace the cheddar and use mozzarella instead I think it would taste more like a cheesesteak then you might not need a sauce. Just make sure there is enough cheese in each.' },
         { note: 'The original recipe suggests cooking it for 20 minutes, but next time I am going to try for 15 minutes.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry at 350ºF until crispy (about 5 minutes).',
+        },
+    ],
+    mealPrep: false,
 };

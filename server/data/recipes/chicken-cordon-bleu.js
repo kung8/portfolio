@@ -10,7 +10,7 @@ const sauce1 = '../assets/Products/chicken-cordon-bleu-sauce-1.jpeg';
 const sauce3 = '../assets/Products/chicken-cordon-bleu-sauce-3.jpeg';
 const cooked1 = '../assets/Products/chicken-cordon-bleu-cooked-1.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
 const {
     UNSALTED_BUTTER,
     MAYONNAISE,
@@ -81,5 +81,19 @@ module.exports = {
     ],
     notes: [
         'You can choose to freeze the chicken cordon bleu up to 3 months. Thaw in the refrigerator overnight before baking.'
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Place on a wire rack in a baking sheet. Bake at 350ºF until heat through (about 10 to 15 minutes).',
+        },
+    ],
+    mealPrep: false,
 };

@@ -4,7 +4,7 @@ const ramen3 = '../assets/Products/ground-beef-ramen-3.jpeg';
 const ramen4 = '../assets/Products/ground-beef-ramen-4.jpeg';
 const ramen5 = '../assets/Products/ground-beef-ramen-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
 const { GROUND_BEEF, INSTANT_RAMEN, FROZEN_PEAS, FROZEN_CARROTS, LIGHT_SOY_SAUCE, HOISIN_SAUCE, GARLIC, VEGETABLE_OIL, GREEN_ONION, RED_PEPPER_FLAKES } = require('./ingredients');
 
 const BEEF_AND_GARLIC_SECTION = 'Beef and Garlic';
@@ -71,5 +71,23 @@ module.exports = {
         { step: 'Remove from heat. Add green onions. Mix.', section: SECTIONS.ASSEMBLE },
 
         { step: 'Enjoy this easy college student ramen upgrade.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Add a little water. Over medium-low heat, reheat in a pot until heated through (about 3 minutes). Stir frequently.',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Add a little water and cover. Microwave for 1 to 2 minutes (stirring halfway). Then microwave in 30 second intervals until heated through.',
+        },
+    ],
+    mealPrep: true,
 };

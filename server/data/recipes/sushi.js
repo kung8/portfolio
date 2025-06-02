@@ -73,5 +73,8 @@ module.exports = {
         { step: 'Continue rolling up the sushi roll, and pulling back the mat as needed.', section: SECTIONS.MAIN },
         { step: 'Place the finished sushi rolls on a plate and repeat these steps until all the sushi rolls are completed.', section: SECTIONS.MAIN },
         { step: 'Enjoy this American-adapted Japanese dish with some delicious, spicy wasabi. This type of sushi is called a California Roll.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: null,
+    reheat: null,
+    mealPrep: false,
 };

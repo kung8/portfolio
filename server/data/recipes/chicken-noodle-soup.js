@@ -1,5 +1,5 @@
 const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     CHICKEN_BREAST,
     OLIVE_OIL,
@@ -66,5 +66,23 @@ module.exports = {
         { step: 'Add the noodles and bring to a roaring boil (about another 6 to 8 minutes).', section: SECTIONS.MAIN },
         { step: 'Add the chicken and let it simmer on a low-heat for about 10 minutes.', section: SECTIONS.MAIN },
         { step: 'Serve and enjoy - I typically make this when I or somebody I know is sick, so get better if you too are sick!', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave in 1-minute intervals until heated through. Stirring in between each interval.',
+        },
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over medium heat, heat in a pot until heated through. Stirring occasionally.',
+        },
+    ],
+    mealPrep: true,
 };

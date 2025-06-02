@@ -12,7 +12,7 @@ const quesadillas12 = '../assets/Products/chicken-quesadillas-12.jpeg';
 const quesadillas13 = '../assets/Products/chicken-quesadillas-13.jpeg';
 const quesadillas14 = '../assets/Products/chicken-quesadillas-14.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { CHILI_POWDER, SALT, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL, YELLOW_ONION, RED_BELL_PEPPER, GREEN_BELL_PEPPER, HOT_SAUCE, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, SALSA, GUACAMOLE, SOUR_CREAM, SHARP_CHEDDAR_CHEESE, WHEAT_TORTILLA } = require('./ingredients');
 
 const QUESADILLA = 'Quesadilla';
@@ -104,5 +104,23 @@ module.exports = {
 
         { step: 'Place cooked quesadilla on a cutting board. Cut the quesadillas into thirds.', section: SECTIONS.SERVE, img: quesadillas13 },
         { step: 'Serve hot with your favorite toppings.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over medium heat, heat a little oil and place the quesadilla in the pan. Cook until golden brown and crispy (about 2 to 3 minutes per side).',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 350ºF until cheese is melted and tortilla is crispy (about 5 to 8 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

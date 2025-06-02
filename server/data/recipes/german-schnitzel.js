@@ -4,7 +4,7 @@ const schnitzel3 = '../assets/Products/german-schnitzel-3.jpeg';
 const schnitzel4 = '../assets/Products/german-schnitzel-4.jpeg';
 const schnitzel5 = '../assets/Products/german-schnitzel-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { BONELESS_PORK_CHOPS, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, EGG, BREADCRUMBS, VEGETABLE_OIL, LEMON, PARSLEY } = require('./ingredients');
 
 const PORK_CHOPS_SECTION = 'Pork Chops';
@@ -72,5 +72,23 @@ module.exports = {
         { step: 'Fry the schnitzel until golden brown (about 2 to 3 minutes each side).', section: FRY_PORK_CHOPS, img: schnitzel3 },
         { step: 'Transfer to the wire rack to drain excess oil.', section: FRY_PORK_CHOPS, img: schnitzel4 },
         { step: 'Top with lemon slices and parsley. Optionally serve with fries.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Place schnitzel on a wire rack over a baking sheet. Bake at 350ºF until heated through (about 10 to 15 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry schnitzel at 350ºF until heated through (about 2 to 4 minutes). Air fry at 390ºF until crispy (about 1 minute).',
+        },
+    ],
+    mealPrep: true,
 };

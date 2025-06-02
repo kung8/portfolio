@@ -16,7 +16,7 @@ const roast15 = '../assets/Products/roasted-pork-belly-15.jpeg';
 
 const fiveSpicePowder = '../assets/Products/five-spices-blend-3.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { PORK_BELLY, SALT, EGG_WHITES, HOISIN_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, WHITE_SUGAR, WHITE_PEPPER, WHITE_VINEGAR } = require('./ingredients');
 
 const PORK_BELLY_SECTION = 'Pork Belly';
@@ -92,5 +92,23 @@ module.exports = {
     notes: [
         { note: 'Rubbing the skin with salt helps draw moisture from the pork skin and helps it crisp up better.' },
         { note: 'Letting the pork rest after cooking will help the juices redistribute and make the meat more tender.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry at 400ºF with the skin side up until crispy (about 10 to 15 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Add a little water, cover with foil and bake at 400ºF until warmed through (about 15 minutes). Remove the foil and broil to crisp the skin (about 1 to 2 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

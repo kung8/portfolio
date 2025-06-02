@@ -17,7 +17,7 @@ const rub5 = '../assets/Products/roasted-turkey-rub-5.jpeg';
 
 const turkeyCookingTable = '../assets/Products/cooking-turkey-estimates.png';
 const turkeyThawingTable = '../assets/Products/thawing-turkey-estimates.png';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     TURKEY,
     LEMON,
@@ -108,5 +108,23 @@ module.exports = {
         { note: 'Typically you need to cook a turkey for about 13 - 15 min per pound.', img: turkeyCookingTable },
         { note: 'Plan for about 1 lb of turkey per person (or 1.5 lb per person if you want leftovers).' },
         { note: 'Avoid opening the oven door too often. It will cause the oven to lose heat and the turkey will take longer to cook.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Add a splash of broth. Cover with a microwave-safe lid and microwave on low power in 1-minute intervals until warmed through.',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Add a little broth. Cover with foil and bake at 300ºF until warmed through (about 10 to 12 minutes per pound).',
+        },
+    ],
+    mealPrep: true,
 };

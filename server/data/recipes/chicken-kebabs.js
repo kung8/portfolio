@@ -1,5 +1,5 @@
 const kebabs = '../assets/Products/kebabs.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     LIGHT_SOY_SAUCE,
     TERIYAKI_SAUCE,
@@ -59,5 +59,19 @@ module.exports = {
         { step: 'Thread the skewers with chicken and veggies leaving enough space between to allow the pieces to get cooked thoroughly.', section: SECTIONS.MAIN },
         { step: 'Place the finished skewers on the baking sheet with space in between each other.', section: SECTIONS.MAIN },
         { step: 'Once the oven is 450ºF, cook the kebabs for 15 to 25 minutes (cook time will depend on the size of meat).', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Wrap in foil and bake at 350ºF until heated through (about 30 minutes).',
+        },
+    ],
+    mealPrep: false,
 };

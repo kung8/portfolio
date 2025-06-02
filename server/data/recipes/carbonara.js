@@ -11,7 +11,7 @@ const carbonara13 = '../assets/Products/carbonara-13.jpeg';
 const carbonara14 = '../assets/Products/carbonara-14.jpeg';
 const carbonara15 = '../assets/Products/carbonara-15.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { GUANCIALE, EGG, EGG_YOLK, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO } = require('./ingredients');
 
 const GUANCIALE_SECTION = 'Guanciale';
@@ -83,6 +83,19 @@ module.exports = {
     notes: [
         { note: 'If the sauce is too thick, add more pasta water.' },
         { note: 'Guanciale is a type of Italian cured meat made from pork jowl or cheeks. If you cannot find guanciale, pancetta is a good substitute.' },
-        { note: 'To reheat, heat in a double boiler. It is not recommended to reheat in the microwave because of the raw eggs.', img: carbonara15 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 5, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.DOUBLE_BOIL,
+            instruction: 'Reheat in a double boiler until heated through (about 5 to 10 minutes). Do not reheat in the microwave because of the raw eggs.',
+        },
+    ],
+    mealPrep: true,
 };

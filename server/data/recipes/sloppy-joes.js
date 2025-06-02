@@ -4,7 +4,7 @@ const cooking = '../assets/Products/sloppy-joes-cooking-beef.jpeg';
 const garlic = '../assets/Products/sloppy-joes-garlic.jpeg';
 const veggies = '../assets/Products/sloppy-joes-raw-veggies.jpeg';
 const raw = '../assets/Products/sloppy-joes-raw.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     YELLOW_ONION,
     RED_BELL_PEPPER,
@@ -74,5 +74,20 @@ module.exports = {
         { step: 'Add water to thin if desired.', section: SECTIONS.MAIN },
         { step: 'Toast hamburger buns in another pan with some butter.', section: SECTIONS.MAIN },
         { step: 'Enjoy these sweet sloppy joes. Feel free to add some heat with chili powder.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store sloppy joe and buns separately. Buns can be stored at room temperature.',
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over low heat, reheat the sloppy joe in a pan until heated through (about 15 to 20 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

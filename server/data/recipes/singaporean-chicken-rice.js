@@ -7,7 +7,7 @@ const lid = '../assets/Products/singaporean-chicken-rice-lid.jpeg';
 const chili = '../assets/Products/singaporean-chicken-rice-chili-sauce.jpeg';
 const cooked = '../assets/Products/singaporean-chicken-rice-cooked.jpeg';
 const plated = '../assets/Products/singaporean-chicken-rice-plated.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     CHICKEN_THIGH,
     SESAME_OIL,
@@ -83,5 +83,20 @@ module.exports = {
         { step: 'Cut the chicken into slices. If the chicken is still pink/raw, I recommend placing the sliced chicken in a pan filled with a layer of water and cover with a lid. Cook the chicken for 5 or so minutes over medium-high heat.', section: SECTIONS.RICE },
         { step: 'Mix together garlic, ginger, sriracha, chicken stock, lime juice, and sugar in a bowl.', section: CHILI_SAUCE, img: chili },
         { step: 'Serve this dish with cucumbers and tomatoes. Top with chili sauce.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store the chicken, rice, and chili sauce separately.',
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave the chicken and rice separately. Add a little water to rice. Microwave rice until heated through (about 3 to 4 minutes). Cover the chicken with a damp paper towel and microwave until heated through (about 2 to 3 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

@@ -18,7 +18,7 @@ const soakingSaffron = '../assets/Products/chicken-biryani-soaking-saffron.jpeg'
 const spiceInPot = '../assets/Products/chicken-biryani-spice-marinade-in-pot.jpeg';
 const workstation = '../assets/Products/chicken-biryani-workstation.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { CARDAMOM, CHICKEN_THIGH, YOGURT, VEGETABLE_OIL, GARLIC, GINGER, TURMERIC, CINNAMON, CAYENNE_PEPPER, GARAM_MASALA, CORIANDER, CUMIN, PAPRIKA, SALT, CLOVES, BAY_LEAF, STAR_ANISE, BASMATI_RICE, CARDAMOM_PODS, YELLOW_ONION, SAFFRON_THREADS, CILANTRO, GHEE, WATER } = require('./ingredients');
 
 const CRISPY_ONION = 'Crispy Onion';
@@ -117,5 +117,19 @@ module.exports = {
         { step: 'Once you see steam, turn down the heat to low and cook for 25 minutes.', section: SECTIONS.MAIN },
         { step: 'Remove from heat and let it rest for 10 minutes with the lid on.', section: SECTIONS.MAIN },
         { step: 'Serve this authentic chicken rice dish with cilantro, yogurt, and sauteed onions.', section: SECTIONS.SERVE, img: zoomed },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Add a little water. Microwave until heated through (about 2-3 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

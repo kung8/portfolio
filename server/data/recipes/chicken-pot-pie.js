@@ -8,7 +8,7 @@ const pie7 = '../assets/Products/chicken-pot-pie-7.jpeg';
 const pie8 = '../assets/Products/chicken-pot-pie-8.jpeg';
 const pie9 = '../assets/Products/chicken-pot-pie-9.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const {
     UNSALTED_BUTTER,
     ALL_PURPOSE_FLOUR,
@@ -83,5 +83,23 @@ module.exports = {
         { step: 'Poke holes through the top to allow for steam to be released.', section: SECTIONS.ASSEMBLE, img: pie7 },
         { step: 'Bake the pie until golden brown (about 30 to 35 minutes).', section: SECTIONS.MAIN },
         { step: 'Enjoy this comfort food in the comforts of your own home.', section: SECTIONS.MAIN, img: pie9 },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover with foil and bake at 350ºF until heated through (about 15 to 20 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Cover with foil and air fry at 400ºF until heated through (about 3 to 5 minutes).',
+        },
+    ],
+    mealPrep: true,
 };
