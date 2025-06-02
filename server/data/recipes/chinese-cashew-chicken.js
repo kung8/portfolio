@@ -9,7 +9,7 @@ const sauce = '../assets/Products/cashew-chicken-sauce.jpeg';
 const cashews = '../assets/Products/cashew-chicken-veggies-with-cashew.jpeg';
 const veggies = '../assets/Products/cashew-chicken-veggies.jpeg';
 const withSauce = '../assets/Products/cashew-chicken-with-sauce.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
 const {
     BONELESS_AND_SKINLESS_CHICKEN_BREAST,
     BROCCOLI,
@@ -89,5 +89,23 @@ module.exports = {
         { step: 'Add the sauce and mix until well coated. Cook for a minute or two.', section: SECTIONS.MAIN, img: withSauce },
         { step: 'Turn off the stove and remove from heat.', section: SECTIONS.MAIN, img: cooked },
         { step: 'Top this dish with green onions and sesame seeds and serve wth steamed rice.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Add a little water. Cover with a microwave-safe lid. Microwave in 30-second intervals until heated through.',
+        },
+        {
+            method: REHEAT_METHODS.STIR_FRY,
+            instruction: 'Add a little water to a wok. Bring to a simmer. Add the cashew chicken and stir-fry until heated through (about 3 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

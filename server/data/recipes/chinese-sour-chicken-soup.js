@@ -1,5 +1,5 @@
 const sourChicken = '../assets/Products/sour-chicken.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     CHICKEN_THIGH,
     KNORR_TAMARIND_SOUP_BASE,
@@ -44,5 +44,20 @@ module.exports = {
         { step: 'Ladle out about 1.5 cup of the soup for the sour mix. Pour in tamarind powder and lime juice and mix together.', section: SECTIONS.MAIN },
         { step: 'When ready to eat, add sour mixture to the soup (as desired).', section: SECTIONS.MAIN },
         { step: 'Serve soup over rice and enjoy this nostalgic piece of home for me.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store soup and rice separately.'
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave the soup and rice separately. Add a little water to the rice and microwave rice until heated through (about 2 to 3 minutes). Microwave the soup until heated through (about 3 to 4 minutes).',
+        },
+    ],
+    mealPrep: true,
 }

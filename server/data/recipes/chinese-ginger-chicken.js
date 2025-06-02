@@ -5,7 +5,7 @@ const mixed = '../assets/Products/ginger-chicken-cooking-mixed.jpeg';
 const placed = '../assets/Products/ginger-chicken-placed-ginger.jpeg';
 const plated = '../assets/Products/ginger-chicken-plated.jpeg';
 const sauce = '../assets/Products/ginger-chicken-soy-sauce.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require("./constants");
 const {
     CHICKEN_THIGH,
     GINGER,
@@ -61,5 +61,23 @@ module.exports = {
         { step: 'After it has browned, add the soy sauce to give it a nice sauce and a little cornstarch to thicken the sauce.', section: SECTIONS.MAIN, img: sauce },
         { step: 'Transfer the cooked chicken into a clean bowl. And cook the second batch.', section: SECTIONS.MAIN, img: placed },
         { step: 'Eat one of my favorite childhood dishes with steamed rice and any other side dishes.', section: SECTIONS.MAIN, img: gingerChicken },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.STIR_FRY,
+            instruction: 'Add a splash of water. Stir fry until heated through (about 8 to 10 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Add a splash of water. Microwave until heated through (about 2 to 3 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

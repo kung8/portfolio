@@ -9,7 +9,7 @@ const rice8 = '../assets/Products/chinese-fried-rice-8.jpeg';
 const rice9 = '../assets/Products/chinese-fried-rice-9.jpeg';
 const rice10 = '../assets/Products/chinese-fried-rice-10.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
 const { JASMINE_RICE, GREEN_ONION, CARROT, FROZEN_CORN, FROZEN_PEAS, EGG, SALT, VEGETABLE_OIL, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, WHITE_SUGAR, CHICKEN_BOUILLON, CHINESE_SAUSAGE, WATER } = require('./ingredients');
 
 const FRIED_RICE_SECTION = 'Fried Rice';
@@ -98,5 +98,23 @@ module.exports = {
         { step: 'Taste and add any additional seasonings.', section: SECTIONS.STIR_FRY },
 
         { step: 'Serve warm and enjoy this simple Chinese cuisine.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Add a little water. Cover with a microwave-safe lid. Microwave in 45-second intervals until heated through.',
+        },
+        {
+            method: REHEAT_METHODS.STIR_FRY,
+            instruction: 'Over medium-high heat, add a little oil to a wok. Add the fried rice and stir-fry until it crisps up (about 3 to 4 minutes). Add a little water. Cover with a lid and cook until heated through (about 2 to 3 minutes).',
+        },
+    ],
+    mealPrep: true,
 };

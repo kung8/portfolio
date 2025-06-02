@@ -8,7 +8,7 @@ const pork7 = '../assets/Products/sweet-and-sour-pork-7.jpeg';
 const pork8 = '../assets/Products/sweet-and-sour-pork-8.jpeg';
 const pork9 = '../assets/Products/sweet-and-sour-pork-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { LIGHT_SOY_SAUCE, EGG, ALL_PURPOSE_FLOUR, CORNSTARCH, PORK_SHOULDER, GARLIC_SALT, KETCHUP, BROWN_SUGAR, WHITE_VINEGAR, SALT, RED_BELL_PEPPER, YELLOW_BELL_PEPPER, GREEN_BELL_PEPPER, RED_ONION, YELLOW_ONION, PINEAPPLE, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const PORK_MARINADE = 'Pork Marinade';
@@ -102,5 +102,19 @@ module.exports = {
     notes: [
         { note: 'Do not try to fry too early or it will take longer to cook and will just soak oil.' },
         { note: 'Avoid overcrowding the pork by working in batches.' }
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.STIR_FRY,
+            instruction: 'Over medium-high heat, add a little oil to a wok. Add the sweet and sour pork and stir-fry until heated through (about 5 to 7 minutes).',
+        },
+    ],
+    mealPrep: false,
 };
