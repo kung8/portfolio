@@ -1,5 +1,13 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const parmesan1 = '../assets/Products/chicken-parmesan-1.jpeg';
+const parmesan2 = '../assets/Products/chicken-parmesan-2.jpeg';
+const parmesan3 = '../assets/Products/chicken-parmesan-3.jpeg';
+const parmesan4 = '../assets/Products/chicken-parmesan-4.jpeg';
+const parmesan5 = '../assets/Products/chicken-parmesan-5.jpeg';
+const parmesan6 = '../assets/Products/chicken-parmesan-6.jpeg';
+const parmesan7 = '../assets/Products/chicken-parmesan-7.jpeg';
+const parmesan8 = '../assets/Products/chicken-parmesan-8.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, BLACK_PEPPER, EGG, PANKO_BREADCRUMBS, PARMESAN_CHEESE, ALL_PURPOSE_FLOUR, OLIVE_OIL, TOMATO_SAUCE, MOZZARELLA_CHEESE, BASIL_LEAF, PROVOLONE_CHEESE, SALT } = require('./ingredients');
 
 const CHICKEN_SECTION = 'Chicken';
@@ -12,14 +20,13 @@ const FRY_CHICKEN = 'Fry Chicken';
 const BAKE_CHICKEN = 'Bake Chicken';
 
 module.exports = {
-    wip: true,
     cardName: 'Chicken Parmesan',
     name: 'Chicken Parmesan',
-    img: '',
+    img: parmesan8,
     recipeAuthor: 'John Mitzewich',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE, METHODS.DEEP_FRY],
@@ -65,17 +72,40 @@ module.exports = {
         { step: 'Preheat the oven to 450ºF.', section: PREP_CHICKEN },
         { step: 'Place the halved chicken breast in a large ziploc bag and on a solid, level surface.', section: PREP_CHICKEN },
         { step: 'Pound the chicken with the smooth side of a meat mallet until it is 1/2 inch thick.', section: PREP_CHICKEN },
-        { step: 'Generously season the chicken with salt and pepper.', section: PREP_CHICKEN },
+        { step: 'Generously season the chicken with salt and pepper.', section: PREP_CHICKEN, img: parmesan1 },
         { step: 'Sprinkle flour over the chicken using a strainer.', section: PREP_CHICKEN },
         { step: 'Set up two bowls for the dredging station: (1) egg and (2) panko breadcrumbs and parmesan.', section: PREP_CHICKEN },
-        { step: 'Dip the chicken into the egg dredge then into the breadcrumb mixture. Make sure to get both sides.', section: PREP_CHICKEN },
+        { step: 'Dip the chicken into the egg dredge then into the breadcrumb mixture. Make sure to get both sides.', section: PREP_CHICKEN, img: parmesan2 },
         { step: 'Allow the chicken to rest for 10 to 15 minutes. This helps the breading adhere to the chicken.', section: PREP_CHICKEN },
         { step: 'Over medium-high heat, heat 1/2 inch olive oil in a large pan.', section: FRY_CHICKEN },
-        { step: 'Add the chicken to the hot oil. Cook until golden (about 2 minutes per side). It won\'t be fully cooked, that\'s okay since it\'ll be finished cooking in the oven.', section: FRY_CHICKEN },
+        { step: 'Add the chicken to the hot oil. Cook until golden (about 2 minutes per side). It won\'t be fully cooked, that\'s okay since it\'ll be finished cooking in the oven.', section: FRY_CHICKEN, img: parmesan3 },
+        { step: 'Line a baking sheet with foil and place a wire rack on top.', section: FRY_CHICKEN },
+        { step: 'Transfer the chicken to the wire rack to drain.', section: FRY_CHICKEN, img: parmesan4 },
         { step: 'Transfer chicken to a baking pan.', section: FRY_CHICKEN },
-        { step: 'Top each breast with tomato sauce, mozzarella, basil and provolone.', section: BAKE_CHICKEN },
-        { step: 'Sprinkle parmesan and drizzle olive oil.', section: BAKE_CHICKEN },
-        { step: 'Bake until the cheese is browned and bubbly and chicken is cooked through (about 15 to 20 minutes).', section: BAKE_CHICKEN },
+        { step: 'Top each breast with tomato sauce, mozzarella, basil and provolone.', section: BAKE_CHICKEN, img: parmesan5 },
+        { step: 'Sprinkle parmesan and drizzle olive oil.', section: BAKE_CHICKEN, img: parmesan6 },
+        { step: 'Bake until the cheese is browned and bubbly and chicken is cooked through (about 15 to 20 minutes).', section: BAKE_CHICKEN, img: parmesan7 },
         { step: 'Enjoy this with pasta or vegetables.', section: SECTIONS.SERVE },
-    ]
+    ],
+    notes: [
+        { note: 'This jumped to one of my favorite recipes. This came out perfect and hope you enjoy it as much as I did.'}
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Place chicken parm on a wire rack on a baking sheet. Bake at 350ºF until heated through and crispy (about 10 to 15 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry at 400ºF until heated through and crispy (about 8 to 10 minutes).',
+        },
+    ],
+    mealPrep: true,
 };
