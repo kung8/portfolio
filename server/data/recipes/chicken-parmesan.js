@@ -66,6 +66,8 @@ module.exports = {
         { name: 'strainer' },
         { name: 'small bowls' },
         { name: 'large pan' },
+        { name: 'baking sheet' },
+        { name: 'wire rack' },
         { name: 'baking pan' },
     ],
     directions: [
