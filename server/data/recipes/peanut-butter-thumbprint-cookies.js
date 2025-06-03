@@ -64,7 +64,6 @@ module.exports = {
         { step: 'Immediately add and press kisses to the center of the cookie.', section: SECTIONS.BAKE, img: cookies7 },
         { step: 'Let cookies cool completely on the pan.', section: SECTIONS.BAKE },
         { step: 'Enjoy these delicious treats.', section: SECTIONS.SERVE },
-        { step: 'Store in an airtight container for up to a week.', section: SECTIONS.STORE },
     ],
     notes: [
         { note: 'Do not do what I did and accidentally leave the spatula in the bowl and turn on the mixer.' },

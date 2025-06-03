@@ -127,8 +127,6 @@ module.exports = {
 
         { step: 'Drizzle the glaze over the coffee cake.', section: SECTIONS.SERVE, img: [cake20, cake21] },
         { step: 'Enjoy this delicious cake as a breakfast treat or dessert.', section: SECTIONS.SERVE, img: cake23 },
-
-        { step: 'Store in an airtight container at room temperature up to 3 days.', section: SECTIONS.STORE },
     ],
 
     notes: [

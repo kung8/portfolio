@@ -55,7 +55,6 @@ module.exports = {
         { step: 'Chill in the fridge again for 15 minutes.', section: SECTIONS.MAIN },
         { step: 'Add 1/4 cup of powdered sugar and mix. Repeat with the remaining powdered sugar.', section: SECTIONS.MAIN, img: muddy9 },
         { step: 'Enjoy these sweet goodies while watching a movie or reading a book.', section: SECTIONS.SERVE },
-        { step: 'Store at room temperature in an airtight container.', section: SECTIONS.STORE },
     ],
     store: [
         {

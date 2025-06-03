@@ -64,7 +64,6 @@ module.exports = {
         { step: 'Lay aluminum foil on a large flat surface and lightly grease with the cooking spray.', section: MAKE_CARAMEL_POPCORN },
         { step: 'Transfer the popcorn to the foil. Let it cool.', section: MAKE_CARAMEL_POPCORN },
         { step: 'Break it up and enjoy this sweet treat throughout the year.', section: SECTIONS.SERVE },
-        { step: 'Store in a airtight container.', section: SECTIONS.STORE },
     ],
     store: [
         {

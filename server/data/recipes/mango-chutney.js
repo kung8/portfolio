@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { VEGETABLE_OIL, GINGER, GARLIC, RED_CHILI, CORIANDER, CUMIN, TURMERIC, CARDAMOM, CLOVES, CINNAMON, SALT, MANGO, WHITE_SUGAR, WHITE_VINEGAR, NIGELLA_SEED } = require('./ingredients');
 
 const MANGO_SECTION = 'Mango';
@@ -60,6 +60,19 @@ module.exports = {
         { step: 'Remove from heat and let it cool.', section: COOK_MANGO },
         { step: 'Optionally mash using a potato masher.', section: COOK_MANGO },
         { step: 'Enjoy this with samosas, grilled meats, sandwiches, wraps and whatever you want.', section: SECTIONS.SERVE },
-        { step: 'You can store the chutney in a sealed jar for up to 2 months in the fridge or several months in the freezer.', section: SECTIONS.STORE },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.MONTH },
+            location: STORAGE_LOCATION.FREEZER,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: null,
+    mealPrep: true,
 };
