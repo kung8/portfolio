@@ -1,5 +1,5 @@
 const taco = '../assets/Products/taco-in-a-bag.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     BLACK_BEANS,
     BLACK_PEPPER,
@@ -61,5 +61,20 @@ module.exports = {
         { step: 'While the meat is cooking, you can heat up the black beans and corn in a pot with some salt over medium-high heat.', section: SECTIONS.MAIN },
         { step: 'Once the meat is cooked and the corn and beans are hot, serve over bowls of frito chips (you could also do actual small bags of fritos, however I think that a large bag is more economical).', section: SECTIONS.MAIN },
         { step: 'Layer your taco in a bag (or bowl) with whatever SECTIONS.toppings you want and enjoy this simple, fun party in a bag.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store ingredients separately.'
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Add a little water. Microwave in 30 second intervals until heated through. Stir in between intervals.',
+        },
+    ],
+    mealPrep: true,
 };

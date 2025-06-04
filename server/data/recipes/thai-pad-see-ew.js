@@ -18,7 +18,7 @@ const veggies = '../assets/Products/pad-see-ew-veggies.jpeg';
 
 const THAI_CHILI_PEPPER_SECTION = 'Thai Chili Pepper';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const {
     CHICKEN_THIGH,
     LIGHT_SOY_SAUCE,
@@ -115,5 +115,19 @@ module.exports = {
         { step: 'Re-add chicken. Cook the chicken the remainder of the way.', section: SECTIONS.MAIN },
         { step: 'Re-add the veggies and eggs. Toss everything together.', section: SECTIONS.MAIN, img: mixed },
         { step: 'Optionally top with the chili vinegar sauce.', section: SECTIONS.MAIN, img: plated },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.STIR_FRY,
+            instruction: 'Add a little oil to a wok. Over medium-high heat, heat the noodles and break up the clumps. Add a splash of water. Cook until heated through.',
+        },
+    ],
+    mealPrep: true,
 };

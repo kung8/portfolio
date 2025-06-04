@@ -8,7 +8,7 @@ const tandoori7 = '../assets/Products/tandoori-chicken-7.jpeg';
 const tandoori8 = '../assets/Products/tandoori-chicken-8.jpeg';
 const tandoori9 = '../assets/Products/tandoori-chicken-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { GREEK_YOGURT, GINGER_GARLIC_PASTE, GARAM_MASALA, CHILI_POWDER, BLACK_PEPPER, CORIANDER, SALT, TURMERIC, FENUGREEK_LEAVES, LEMON_JUICE, MUSTARD_OIL, CORIANDER_POWDER, BONELESS_AND_SKINLESS_CHICKEN_THIGH } = require('./ingredients');
 
 const RED_CHILI_OIL = 'Red Chili Oil';
@@ -95,5 +95,23 @@ module.exports = {
         { note: 'I used chicken breast instead of chicken thigh accidentally, and it still turned out great. I was afraid it was going to be dry but it was still moist and flavorful.' },
         { note: 'I cooked it for almost the full recommended length of time, but honestly could have shaved off a few minutes for both rounds of baking if you want to enjoy it sooner. The chicken was still moist and full of flavor. Obviously it all depends on your oven for the length of time so experiment with it - and just make sure the chicken is at a safe internal temperature.' },
         { note: 'This dish is a versatile dish to be eaten by itself or paired with naan or basmati rice (or both).' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Add a little water. Cover with foil. Bake at 350ºF until heated through. Remove foil and bake for a few minutes to crisp up the skin.',
+        },
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry at 380ºF for 3 to 4 minutes.',
+        },
+    ],
+    mealPrep: true,
 };

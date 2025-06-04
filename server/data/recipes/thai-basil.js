@@ -7,7 +7,7 @@ const basil7 = '../assets/Products/thai-basil-7.jpeg';
 const basil8 = '../assets/Products/thai-basil-8.jpeg';
 const basil9 = '../assets/Products/thai-basil-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { CHICKEN_BROTH, OYSTER_SAUCE, LIGHT_SOY_SAUCE, FISH_SAUCE, WHITE_SUGAR, BROWN_SUGAR, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHALLOT, GARLIC, THAI_CHILI_PEPPER, BASIL_LEAF, JASMINE_RICE } = require('./ingredients');
 
 module.exports = {
@@ -67,5 +67,19 @@ module.exports = {
     ],
     notes: [
         { note: 'The spice of the Thai chilies can be adjusted per your spice level preference. If you make multiple batches, it does not necessarily need to be multiplied too.' },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 7, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.STIR_FRY,
+            instruction: 'Over medium-high heat, add a little oil and noodles to a wok. Stir fry until heated through. Break up any clumps.',
+        },
+    ],
+    mealPrep: true,
 };

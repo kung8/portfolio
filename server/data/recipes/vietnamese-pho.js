@@ -12,7 +12,7 @@ const plated6 = '../assets/Products/pho-plated-6.jpeg';
 const sauces = '../assets/Products/pho-sauces.jpeg';
 const toppings = '../assets/Products/pho-toppings.jpeg';
 const veggiesPot = '../assets/Products/pho-veggies-in-pot.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     BEAN_SPROUT,
     BEEF_BROTH,
@@ -99,5 +99,24 @@ module.exports = {
         { step: 'Prepare the noodles per package instructions.', section: SECTIONS.NOODLES, img: noodles },
         { step: 'Divide the noodles into bowls and ladle soup over noodles.', section: SECTIONS.ASSEMBLE, img: [plated1, plated2] },
         { step: 'Serve with any additional toppings and enjoy this simple delicious Vietnamese cuisine. Also this dish is pronounced \'fuh\'.', section: SECTIONS.SERVE, img: [toppings, plated4, plated5] },
-    ]
+    ],
+    store: [
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store the broth separately. I\'d recommend cooking the noodles fresh each time you want to eat this dish.',
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'For smaller portions, microwave the broth until hot (about 3 to 4 minutes). Cook the noodles per package instructions and add to the bowl. Add the beef slices and any toppings you want. Enjoy!',
+        },
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'For larger portions, over medium heat, reheat the broth until hot (about 7 to 10 minutes). Cook the noodles per package instructions and add to the bowl. Add the beef slices and any toppings you want. Enjoy!',
+        },
+    ],
+    mealPrep: true,
 };
