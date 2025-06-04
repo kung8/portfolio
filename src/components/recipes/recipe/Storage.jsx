@@ -23,7 +23,7 @@ export const Storage = () => {
     if (!storage || !storage.length) return null;
     return (
         <>
-            <h4 className="recipe-detail-label storage-label">Storage:</h4>
+            <h4 className="recipe-detail-label storage-label">Storage Options:</h4>
             <ul className="recipe-storage">
                 {storage.map(({ duration, location, container, instruction }, i) => (
                     <li key={i}>

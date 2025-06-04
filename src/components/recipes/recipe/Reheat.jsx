@@ -7,7 +7,7 @@ export const Reheat = () => {
     if (!reheat || !reheat.length) return null;
     return (
         <>
-            <h4 className="recipe-detail-label reheat-label">Reheat Instructions:</h4>
+            <h4 className="recipe-detail-label reheat-label">Reheat Options:</h4>
             <ul className="recipe-reheat">
                 {reheat.map(({ method, instruction }, i) => (
                     <li key={i}>
