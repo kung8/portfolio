@@ -41,11 +41,18 @@ export const MealPlanningModalContent = ({
     const getWeeks = () => {
         // gets 12 weeks out
         const weeks = [];
-        const closestSunday = dayjs().startOf('week').add(dayMap[startingDay], 'day').format(DATE_FORMAT);
+        const closestDay = dayjs().startOf('week').add(dayMap[startingDay], 'day').format(DATE_FORMAT);
+
+        // check to see if we are missing any weeks (i.e. today until the upcoming week's starting day).
+        const today = dayjs().startOf('day');
+        const startDate = dayjs().startOf('week').add(dayMap[startingDay], 'day');
+        const excludesToday = today.isBefore(startDate);
+        const actualStartDay = excludesToday ? dayjs(closestDay).subtract(1, 'week') : dayjs(closestDay);
+
         for (let i = 0; i < 13; i++) {
             weeks.push([
-                dayjs(closestSunday).add(i, 'week').format(DATE_FORMAT),
-                dayjs(closestSunday).add(i, 'week').add(6, 'day').format(DATE_FORMAT)
+                dayjs(actualStartDay).add(i, 'week').format(DATE_FORMAT),
+                dayjs(actualStartDay).add(i, 'week').add(6, 'day').format(DATE_FORMAT)
             ]);
         }
         return weeks;
@@ -65,6 +72,8 @@ export const MealPlanningModalContent = ({
     }
 
     const dates = sortBy === 'daily' ? getDays() : sortBy === 'weekly' ? getWeeks() : getMonths();
+
+    console.log('dates: ', dates);
 
     const createRange = (start, end) => {
         let range = [];
