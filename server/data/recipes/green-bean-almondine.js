@@ -64,5 +64,19 @@ module.exports = {
         { step: 'Add almonds and shallots to pan and cook for 2 minutes.', section: SECTIONS.MAIN, img: almond },
         { step: 'Add green beans back into the pan and cook for a few minutes.', section: SECTIONS.MAIN, img: cooked },
         { step: 'Serve warm.', section: SECTIONS.MAIN, img: fullPlate },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

@@ -47,5 +47,19 @@ module.exports = {
         { step: 'Turn heat to low.', section: COOK_RICE },
         { step: 'Cover and simmer until there is no more liquid (about 15 to 20 minutes).', section: COOK_RICE },
         { step: 'Enjoy this with your favorite toppings or main dishes.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

@@ -63,5 +63,19 @@ module.exports = {
         { step: 'Deep fry the fish until they are golden brown (about 3 to 4 minutes).', section: SECTIONS.DEEP_FRY, img: chips4 },
         { step: 'Transfer the fish to the wire rack to drip.', section: SECTIONS.DEEP_FRY, img: chips5 },
         { step: 'Enjoy the fish with your favorite type of fries.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

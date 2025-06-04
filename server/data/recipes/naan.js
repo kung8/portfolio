@@ -88,5 +88,19 @@ module.exports = {
         { note: 'Be careful over charring the naan, but the texture of the naan was soft and on point.' },
         { note: 'The larger recommended naan size might fix the issue of charring actually since it would be quicker to add and remove one at a time instead of three or four 😛.' },
         { note: 'Even after it was charred a bit, it was still delicious.' },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

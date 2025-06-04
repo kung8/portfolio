@@ -76,5 +76,19 @@ module.exports = {
         { step: 'Remove the chicken from the oil and place on the cooling rack.', section: SECTIONS.MAIN },
         { step: 'Continue until all of the chicken is cooked.', section: SECTIONS.MAIN },
         { step: 'Heat the sauce over medium heat until it thickens. Serve over the chicken with rice.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

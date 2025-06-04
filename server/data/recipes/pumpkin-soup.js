@@ -66,5 +66,19 @@ module.exports = {
         { step: 'Carefully blend the soup in batches. Adding additional broth if the soup is too thick.', section: SECTIONS.MAKE_SOUP },
         { step: 'Taste and add salt and pepper as needed.', section: SECTIONS.MAKE_SOUP },
         { step: 'Serve with sour cream and pumpkin seeds.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

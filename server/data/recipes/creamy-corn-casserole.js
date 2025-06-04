@@ -52,5 +52,19 @@ module.exports = {
         { step: 'Pour batter into the casserole dish.', section: PREP_BATTER, img: casserole3 },
         { step: 'Bake until the top is golden brown and a toothpick comes out clean (about 45 minutes).', section: BAKE, img: casserole4 },
         { step: 'Enjoy this simple casserole and crowd pleaser.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

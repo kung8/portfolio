@@ -110,7 +110,7 @@ module.exports = {
     ],
     reheat: [
         {
-            method: REHEAT_METHODS.PAN_FRY,
+            method: REHEAT_METHODS.SIMMER,
             instruction: 'Add a little water to the noodles. Over medium heat, reheat broth in a pot until heated through. Add noodles until heated through.',
         },
     ],

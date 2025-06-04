@@ -92,5 +92,19 @@ module.exports = {
         { step: 'Add the beef and broccoli. Combine.', section: SECTIONS.MAIN, img: addedBeef },
         { step: 'Cook until beef is cooked through.', section: SECTIONS.MAIN, img: saucey },
         { step: 'Top with sesame seeds and serve with steamed rice.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

@@ -72,5 +72,19 @@ module.exports = {
         { step: 'Stir occasionally and cook until chicken is tender (about 30 minutes).', section: SECTIONS.COOK_CURRY },
         { step: 'Uncover. Simmer until sauce thickens (about 5 minutes).', section: SECTIONS.COOK_CURRY },
         { step: 'Enjoy this over turmeric rice and topped with your favorite toppings.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

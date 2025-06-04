@@ -67,5 +67,19 @@ module.exports = {
         { step: 'Add sandwich.', section: COOK_SANDWICH },
         { step: 'Cook until each side is browned and the cheese has melted (about 4 minutes per side).', section: COOK_SANDWICH, img: sandwich5 },
         { step: 'Serve this sandwich warm optionally topped with more cheese.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

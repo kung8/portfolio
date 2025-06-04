@@ -118,5 +118,19 @@ module.exports = {
         { step: 'Chill for 15 minutes.', section: SECTIONS.COOK_SAUCE },
 
         { step: 'Plate some rice, add salad and slice up some chicken. Top with the peri peri sauce.', section: SECTIONS.SERVE, img: bowl11 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

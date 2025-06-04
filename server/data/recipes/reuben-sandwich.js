@@ -54,5 +54,19 @@ module.exports = {
         { step: 'Place sandwich in pan (butter side down). Butter the bread top. Warm until golden brown (about 5 minutes).', section: COOK_SANDWICH },
         { step: 'Flip and cook until the golden brown (about 5 minutes).', section: COOK_SANDWICH },
         { step: 'Enjoy this sandwich hot.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

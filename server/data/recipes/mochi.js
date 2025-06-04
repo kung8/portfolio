@@ -59,5 +59,19 @@ module.exports = {
         { step: 'Dust the mochi with potato starch to prevent sticking.', section: DUSTING },
         { step: 'Cut the mochi into rectangles. Add more starch if needed.', section: DUSTING },
         { step: 'Enjoy these light delicious treats.', section: SECTIONS.SERVE, img: mochi9 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

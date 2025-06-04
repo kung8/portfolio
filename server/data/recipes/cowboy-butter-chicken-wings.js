@@ -65,5 +65,19 @@ module.exports = {
         { step: `In a mixing bowl, combine the "${COWBOY_BUTTER}" section ingredients.`, section: PREP_COWBOY_BUTTER, img: wings2 },
         { step: 'Toss the chicken in the butter mixture.', section: COAT_CHICKEN, img: wings4 },
         { step: 'Serve these wings with your favorite dips and sides at your next tailgate, superbowl watch party, or any kind of party.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

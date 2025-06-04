@@ -225,5 +225,19 @@ module.exports = {
     ],
     notes: [
         { note: "If you need to slice the beef into thin slices, you can place the beef in the freezer for 20 to 30 minutes to make it easier to slice." },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

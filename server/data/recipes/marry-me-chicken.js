@@ -91,5 +91,19 @@ module.exports = {
         { step: 'Carefully remove pot from oven and spoon sauce over chicken.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: combined3 },
         { step: 'Let chicken rest for 5 minutes (residual heat will cook the chicken, wait until it is at least 165ºF).', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
         { step: 'Serve with your favorite sides and be sure to ladle sauce over the chicken.', section: SECTIONS.SERVE, img: plated3 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

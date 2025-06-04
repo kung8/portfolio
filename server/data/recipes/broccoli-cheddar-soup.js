@@ -89,7 +89,7 @@ module.exports = {
     ],
     reheat: [
         {
-            method: REHEAT_METHODS.PAN_FRY,
+            method: REHEAT_METHODS.SIMMER,
             instruction: 'Over medium-low heat, reheat in a saucepan until heated through (about 5 to 10 minutes). Stir frequently.',
         },
     ],

@@ -69,5 +69,19 @@ module.exports = {
         { note: 'I would recommend using thicker flat noodles for this dish.', },
         { note: 'It was difficult to prevent the noodles from breaking into tiny pieces. But handling it less and making sure it cooks enough with the sauce, can all help it from breaking.' },
         { note: 'When I made this dish I had not updated the sauce ingredient amounts (i.e. it is now doubled). I\'m more used to a saucier drunken noodle dish. I will remake this dish and update the images.', }
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

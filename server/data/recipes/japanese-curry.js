@@ -84,5 +84,19 @@ module.exports = {
         { step: 'Continue this process with the remaining cubes. It should be about 1 cube per person (so 8 in total for this recipe).', section: COOK_CURRY },
         { step: 'Over medium-low heat, simmer uncovered while stirring often until the curry becomes thick (about 5 to 10 minutes). Thin curry out with water if needed. When stirring, be sure to scrape the bottom to prevent burning.', section: COOK_CURRY, img: curry13 },
         { step: 'Enjoy this curry over Japanese rice.', section: SECTIONS.SERVE, img: curry15 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

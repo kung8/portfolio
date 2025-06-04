@@ -61,5 +61,19 @@ module.exports = {
         { step: 'Chill in the fridge until the chocolate is completely set (about 20 minutes).', section: SECTIONS.MAIN, img: angled },
         { step: 'Take the bark and let it sit at room temperature before cutting (about 20 minutes).', section: SECTIONS.MAIN },
         { step: 'Using a sharp knife, cut through the bark and enjoy.', section: SECTIONS.MAIN, img: plated2 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

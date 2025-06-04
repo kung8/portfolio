@@ -54,5 +54,19 @@ module.exports = {
         { step: 'Increase the oven to 400ºF and remove the foil.', section: BAKE_HAM },
         { step: 'Baste the ham with its juices regularly and bake until it browns (for about 20 to 45 minutes).', section: BAKE_HAM },
         { step: 'Enjoy this delicious while it is still warm.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

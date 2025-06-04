@@ -114,7 +114,7 @@ module.exports = {
             instruction: 'For smaller portions, microwave the broth until hot (about 3 to 4 minutes). Cook the noodles per package instructions and add to the bowl. Add the beef slices and any toppings you want. Enjoy!',
         },
         {
-            method: REHEAT_METHODS.PAN_FRY,
+            method: REHEAT_METHODS.SIMMER,
             instruction: 'For larger portions, over medium heat, reheat the broth until hot (about 7 to 10 minutes). Cook the noodles per package instructions and add to the bowl. Add the beef slices and any toppings you want. Enjoy!',
         },
     ],

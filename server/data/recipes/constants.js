@@ -193,6 +193,7 @@ const REHEAT_METHODS = {
     PRESSURE_COOK: 'Pressure Cook',
     ROAST: 'Roast',
     SAUTE: 'Saute',
+    SIMMER: 'Simmer',
     SLOW_COOK: 'Slow Cook',
     STEAM: 'Steam',
     STIR_FRY: 'Stir-Fry',

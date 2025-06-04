@@ -67,5 +67,19 @@ module.exports = {
         { step: 'Bake for 30 minutes.', section: SECTIONS.MAIN },
         { step: 'Tent the pan with aluminum foil and cook until the chicken is cooked through (about 15 minutes).', section: SECTIONS.MAIN },
         { step: 'Serve the chicken with the creamy green sauce.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

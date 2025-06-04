@@ -69,5 +69,19 @@ module.exports = {
         { step: 'Bake for 45 minutes.', section: COOK_CASSEROLE },
         { step: 'Remove foil and bake until cheese is hot and bubbly (about 10 to 15 minutes).', section: COOK_CASSEROLE, img: tetrazzini6 },
         { step: 'Serve with parsley.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

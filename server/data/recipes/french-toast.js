@@ -54,5 +54,19 @@ module.exports = {
         { step: 'Heat a frying pan over medium heat and add some butter to pan.', section: SECTIONS.MAIN },
         { step: 'Brown each side of bread (about 30 seconds on each side).', section: SECTIONS.MAIN, img: [frenchToast5, frenchToast6] },
         { step: 'Serve and add fruits, syrup, and all your favorite toppings.', section: SECTIONS.MAIN, img: frenchToast7 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

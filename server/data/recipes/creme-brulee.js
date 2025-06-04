@@ -92,5 +92,19 @@ module.exports = {
         { step: 'Broil until the sugar is light gold (about 3 to 5 minutes).', section: BURNING_SUGAR },
 
         { step: 'Let the crème brûlée cool for at least 5 minutes before serving.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

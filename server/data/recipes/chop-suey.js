@@ -62,5 +62,19 @@ module.exports = {
         { step: 'Add carrots, boy choy, and mushroom. Stir fry for a minute.', section: SECTIONS.STIR_FRY },
         { step: 'Add bean sprouts and sauce. Cook until the sauce thickens and the vegetables should be crisp.', section: SECTIONS.STIR_FRY },
         { step: 'Serve with rice.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

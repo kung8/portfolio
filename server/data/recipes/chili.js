@@ -106,7 +106,7 @@ module.exports = {
             instruction: 'For reheating smaller portions. Microwave until heated through (about 4 to 5 minutes). Stirring occasionally.',
         },
         {
-            method: REHEAT_METHODS.PAN_FRY,
+            method: REHEAT_METHODS.SIMMER,
             instruction: 'For reheating larger amounts. Over low heat, reheat in a pot until heated through (about 10 to 20 minutes). Stirring occasionally.',
         },
     ],

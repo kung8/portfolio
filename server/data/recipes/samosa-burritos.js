@@ -94,5 +94,19 @@ module.exports = {
         { step: `While the burritos are baking, add all the "${SECTIONS.SAUCE}" section ingredients to a blender.`, section: SECTIONS.PREP_SAUCE },
         { step: 'Blend until smooth and creamy.', section: SECTIONS.PREP_SAUCE },
         { step: 'Pair these with your favorite condiments.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

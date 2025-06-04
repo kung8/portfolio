@@ -77,5 +77,19 @@ module.exports = {
         { step: 'Add the chopped up chicken and combine.', section: SECTIONS.MAIN, img: chicken },
         { step: 'Add soy sauce and stir for a minute. Turn off the heat for the wok.', section: SECTIONS.MAIN, img: sauce },
         { step: 'Serve this with some sesame seeds and rice.', section: SECTIONS.MAIN, img: plated },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

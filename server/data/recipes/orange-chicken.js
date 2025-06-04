@@ -102,5 +102,19 @@ module.exports = {
     notes: [
         { note: 'Do not try to fry too early or it will take longer to cook and will just soak oil.' },
         { note: 'Avoid overcrowding the chicken by working in batches.' }
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

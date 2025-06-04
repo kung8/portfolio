@@ -56,5 +56,19 @@ module.exports = {
         { step: 'Add a little butter to the frying pan once it\'s hot.', section: VEGGIES },
         { step: 'Brown some diced onion and peppers.', section: VEGGIES },
         { step: 'Combine the eggs and veggies and enjoy a nutritional breakfast (or snack).', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

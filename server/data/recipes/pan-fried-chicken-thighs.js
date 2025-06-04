@@ -68,5 +68,19 @@ module.exports = {
         { step: 'Cook until slightly thickened (about 1 to 2 minutes).', section: SECTIONS.SAUCE, img: thigh12 },
         { step: 'Re-add the chicken to the pan. Ladle the sauce over the chicken.', section: SECTIONS.SAUCE, img: thigh13 },
         { step: 'Top the chicken with the creamy sauce and serve with your favorite sides.', section: SECTIONS.SERVE, img: thigh14 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

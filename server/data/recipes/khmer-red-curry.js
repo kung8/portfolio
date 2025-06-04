@@ -75,5 +75,19 @@ module.exports = {
         { note: 'You can really add any structural veggies. I did not like some of the textures of the eggplant when reheated.' },
         { note: 'Green beans does not add much to the taste besides some color and adds crunch as long as you do not overcook it. Make sure to add a little later in the cooking process.' },
         { note: '1/4 cup of the red curry paste is a great spice level (don\'t add any more even if you double or triple the amount).' },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

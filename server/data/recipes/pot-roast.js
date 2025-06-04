@@ -60,5 +60,19 @@ module.exports = {
         { step: 'Then add beef, red wine, broth, rosemary, and thyme to the roasting pan.', section: SECTIONS.MAIN },
         { step: 'Add red wine, broth, rosemary, and thyme to the roasting pan.', section: SECTIONS.MAIN },
         { step: 'Cover the roasting pan with aluminum foil and roast for 3 hours or until the roast is tender.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

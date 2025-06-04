@@ -90,5 +90,19 @@ module.exports = {
         { step: 'Add the sauce and stir until noodles are evenly coated (about 1 minute).', section: SECTIONS.MAIN },
         { step: 'Add the garlic, beef and broccoli and continue to cook until everything is combined (about 1 minutes). I like to add these in one at a time and mix.', section: SECTIONS.MAIN, img: pan },
         { step: 'Serve and enjoy this delicious Chinese dish!', section: SECTIONS.MAIN, img: [plated1, plated3] },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

@@ -56,5 +56,19 @@ module.exports = {
         { step: 'Stir until it thickens to a gravy consistency (about 1 1/2 to 2 minutes).', section: GRAVY_SECTION },
         { step: 'Taste and, if needed, add salt and pepper.', section: GRAVY_SECTION },
         { step: 'Serve this warm over whatever you want.', section: SECTIONS.SERVE, img: gravy6 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

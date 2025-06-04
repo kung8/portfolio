@@ -133,7 +133,7 @@ module.exports = {
             instruction: 'Add a little water. Cover with a microwave-safe lid and microwave on medium power. Start with 1 minute and then microwave in 30-second intervals until heated through.',
         },
         {
-            method: REHEAT_METHODS.PAN_FRY,
+            method: REHEAT_METHODS.STIR_FRY,
             instruction: 'Add a little oil. Over medium heat, stir-fry until heated through (about 5 to 10 minutes).',
         },
     ],

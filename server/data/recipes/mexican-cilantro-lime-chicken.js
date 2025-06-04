@@ -70,5 +70,19 @@ module.exports = {
         { step: 'Use tongs to transfer chicken to wire rack in a single layer.', section: SECTIONS.MAIN, img: rack },
         { step: 'Bake for 30 to 35 minutes. Feel free to broil the wings for 2 to 3 minutes in addition to make it crispier.', section: SECTIONS.MAIN, img: broiled1 },
         { step: 'Dip this chicken in the dressing and serve it with a side of salad and cilantro rice.', section: SECTIONS.SERVE, img: set2 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

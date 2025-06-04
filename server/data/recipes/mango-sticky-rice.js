@@ -79,5 +79,19 @@ module.exports = {
     notes: [
         { note: 'A 13.5 oz can of coconut milk produces the exact amount of milk and cream for one batch.' },
         { note: 'Make sure the water does not touch the basket. If it does, the rice will boil instead of steam.' },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

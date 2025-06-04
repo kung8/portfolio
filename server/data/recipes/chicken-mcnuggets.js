@@ -81,5 +81,19 @@ module.exports = {
         { step: 'Remove the cooked McNugget using a spider strainer.', section: SECTIONS.DEEP_FRY },
         { step: 'Place the cooked chicken McNuggets on the prepared cooling rack to drain.', section: SECTIONS.DEEP_FRY },
         { step: 'Enjoy these McNuggets with your favorite sauces.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

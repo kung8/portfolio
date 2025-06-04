@@ -82,5 +82,19 @@ module.exports = {
         { step: 'Add the sauce to the wok and stir.', section: SECTIONS.STIR_FRY, img: kung7 },
         { step: 'Once the sauce thickens, add the chicken back in and stir until everything is coated well.', section: SECTIONS.STIR_FRY },
         { step: 'Top this dish with your favorite toppings and serve with jasmine rice. Enjoy!', section: SECTIONS.SERVE, img: kung9 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

@@ -85,5 +85,19 @@ module.exports = {
         { step: 'Re-add the chicken and mix until combined.', section: SECTIONS.MAIN, img: combined },
         { step: 'Add sugar as desired.', section: SECTIONS.MAIN },
         { step: 'Serve over rice, garnish with a few sprigs of cilantro, and enjoy a small taste of Malaysian cuisine.', section: SECTIONS.MAIN, img: rice2 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

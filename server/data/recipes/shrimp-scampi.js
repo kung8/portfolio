@@ -57,5 +57,19 @@ module.exports = {
         { step: 'Pour the sauce over the pasta and mix.', section: COMBINE },
 
         { step: 'Enjoy this taste of Italy topped with parsley, parmesan and lemon wedges.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

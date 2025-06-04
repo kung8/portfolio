@@ -66,5 +66,19 @@ module.exports = {
         { step: 'Uncover casserole and bake for 40 minutes - 1 hour (or until it sets). This mostly depends on your oven.', section: SECTIONS.MAIN },
         { step: 'Once the casserole is cooked, let cool for a few minutes.', section: SECTIONS.MAIN },
         { step: 'Serve and enjoy this simple, hot breakfast feast.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

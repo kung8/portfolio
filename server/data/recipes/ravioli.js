@@ -16,6 +16,7 @@ const { ALL_PURPOSE_FLOUR, DURUM_WHEAT, EGG, RICOTTA_CHEESE, PARMIGIANO_REGGIANO
 const COOK_RAVIOLI = 'Cook Ravioli';
 
 module.exports = {
+    wip: true,
     cardName: 'Ravioli',
     name: 'Ravioli',
     img: ravioli11,
@@ -92,5 +93,19 @@ module.exports = {
     notes: [
         { note: 'The original filling was way too much so I cut it down in half. I think if you were to double the ravioli dough you can still make do with this updated normal batch.' },
         { note: 'Do not chill as long as I did. It ended up drying out the dough since I left it overnight.'}
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

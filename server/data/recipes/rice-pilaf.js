@@ -57,5 +57,19 @@ module.exports = {
         { step: 'Remove pot from heat and let rest for 10 minutes. Leave the lid on.', section: STEAM_RICE },
         { step: 'Remove lid and fluff rice.', section: STEAM_RICE },
         { step: 'Top with parsley and serve with your favorite side dishes.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

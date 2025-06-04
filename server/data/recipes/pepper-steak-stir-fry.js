@@ -80,5 +80,19 @@ module.exports = {
         { step: 'In a small bowl, mix together the soy sauce, sugar, cornstarch, and water.', section: SECTIONS.MAIN },
         { step: 'Pour the sauce mixture into the wok and bring to a simmer. Cook until sauce thickens (about 2 to 3 minutes).', section: SECTIONS.MAIN, img: mixed7 },
         { step: 'Serve with rice and enjoy this simple home cooked meal.', section: SECTIONS.MAIN, img: plated3 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

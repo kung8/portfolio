@@ -91,5 +91,19 @@ module.exports = {
         { step: 'Add the sauce and chicken to the pan.', section: COOK_AND_COMBINE, img: reAdded },
         { step: 'Continue to mix this mixture and let cook a few more minutes until well blended. At this point if you want to thin the sauce you can add a little chicken broth or milk, depending on your preference.', section: COOK_AND_COMBINE },
         { step: 'Serve with rice and enjoy the taste of my favorite Peruvian dish!', section: SECTIONS.SERVE, img: aji },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

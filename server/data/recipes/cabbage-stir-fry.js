@@ -51,7 +51,7 @@ module.exports = {
             instruction: 'Microwave in 30-second intervals until heated through (about 1 to 2 minutes).',
         },
         {
-            method: REHEAT_METHODS.PAN_FRY,
+            method: REHEAT_METHODS.STIR_FRY,
             instruction: 'Add a splash of water. Stir fry until heated through (about 1 to 3 minutes).',
         },
     ],

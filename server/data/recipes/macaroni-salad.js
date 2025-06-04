@@ -57,5 +57,19 @@ module.exports = {
         { step: 'Then combine the onions, celery, green pepper, and pasta.', section: SECTIONS.MAIN },
         { step: 'Best to refrigerate at least 4 hours (or even overnight).', section: SECTIONS.MAIN },
         { step: 'Enjoy this sweet, creamy, fresh appetizer while you relax with some relaxing Hawaiian music.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

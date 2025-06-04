@@ -96,5 +96,19 @@ module.exports = {
         { step: 'Add oil and cook until bottom is golden brown (about 2 minutes).', section: SECTIONS.MAIN },
         { step: 'Remove and set somewhere to keep warm.', section: SECTIONS.MAIN, img: zoomed },
         { step: 'Serve with dipping sauce.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

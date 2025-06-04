@@ -59,5 +59,19 @@ module.exports = {
         { step: 'Cook until cooked (about 10 to 15 minutes). Stirring occasionally.', section: SECTIONS.MAIN, img: [mixedPan] },
         { step: 'Add parmesan and stir until well blended. I recommend removing the pan from heat, the residual heat should be enough to melt the cheese.', section: SECTIONS.MAIN, img: mixed },
         { step: 'Serve this on the side of any pasta dish.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

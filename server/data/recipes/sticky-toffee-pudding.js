@@ -2,7 +2,7 @@ const plated1 = '../assets/Products/sticky-toffee-pudding-plated-1.jpeg';
 const plated2 = '../assets/Products/sticky-toffee-pudding-plated-2.jpeg';
 const plated3 = '../assets/Products/sticky-toffee-pudding-plated-3.jpeg';
 const plated4 = '../assets/Products/sticky-toffee-pudding-plated-4.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { HEAVY_CREAM, UNSALTED_BUTTER, BROWN_SUGAR, VANILLA_EXTRACT, DATE, BAKING_SODA, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, ALLSPICE, NUTMEG, WHITE_SUGAR, EGG, WALNUTS, WATER } = require('./ingredients');
 
 const TOFFEE_SAUCE = 'Toffee Sauce';
@@ -89,4 +89,18 @@ module.exports = {
     notes: [
         { note: 'You can make the cake ahead of time. Cover and reheat it when you are ready to serve by covering it with foil and then warming it for 15 minutes at 300ºF.', }
     ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

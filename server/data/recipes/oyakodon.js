@@ -82,5 +82,19 @@ module.exports = {
         { step: 'Once the eggs begins to set, pour the remaining egg to the center and around the edges.', section: COOK_OYAKODON, img: [oyakodon8, oyakodon12] },
         { step: 'Add the green onions to the top. Cook over medium-low heat until eggs are cooked to desired doneness.', section: COOK_OYAKODON, img: oyakodon10 },
         { step: 'Serve this over rice with the sauce. Enjoy the simple taste of Japanese cuisine.', section: SECTIONS.SERVE, img: oyakodon11 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

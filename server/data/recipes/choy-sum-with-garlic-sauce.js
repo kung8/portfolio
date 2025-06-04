@@ -75,5 +75,19 @@ module.exports = {
     ],
     notes: [
         { note: 'I liked this dish but I think it ended up being colder than I would have liked. Next time I would stir fry it for 20 to 30 seconds after the sauce has thickened. If that works, I would consider recommending it for its freshness and simplicity.' }
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

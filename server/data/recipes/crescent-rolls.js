@@ -77,5 +77,19 @@ module.exports = {
         { step: 'Baste with butter.', section: SECTIONS.MAIN, img: basted },
         { step: 'Bake for 20 minutes.', section: SECTIONS.MAIN, img: [baked1, baked5] },
         { step: 'Eat these rolls warm.', section: SECTIONS.MAIN, img: plated2 },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

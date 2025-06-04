@@ -60,5 +60,19 @@ module.exports = {
 
         { step: 'Assemble the McGriddle sandwich: pancake, patty with cheese, egg, pancake.', section: SECTIONS.ASSEMBLE },
         { step: 'Enjoy this homemade McGriddle topped with a little syrup optionally.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

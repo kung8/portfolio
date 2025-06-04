@@ -53,5 +53,19 @@ module.exports = {
         { step: 'Top with the crispy fried onions.', section: SECTIONS.TOPPINGS, img: [casserole1, casserole2, casserole3] },
         { step: 'Bake until golden (about 10 minutes).', section: SECTIONS.TOPPINGS },
         { step: 'Serve this dish warm at your next holiday feast.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

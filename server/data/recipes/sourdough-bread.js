@@ -63,5 +63,19 @@ module.exports = {
         { step: 'Bake for 25 minutes with the lid on.', section: BAKING },
         { step: 'Remove the lid and bake for an additional 20 minutes.', section: BAKING, img: uncovered },
         { step: 'Remove from oven and let cool.', section: BAKING, img: bakedScored },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

@@ -60,5 +60,19 @@ module.exports = {
         { step: 'Drizzle the melted butter over the shrimp.', section: SECTIONS.COOK_SHRIMP },
         { step: 'Bake until the shrimp is cooked (about 10 minutes).', section: SECTIONS.COOK_SHRIMP },
         { step: 'Serve with lemon wedges.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

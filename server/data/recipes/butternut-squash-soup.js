@@ -85,7 +85,7 @@ module.exports = {
             instruction: 'Cover with a microwave-safe lid or wrap. Heat in 1-minute intervals until warmed through. Stir in between intervals to ensure even heating.',
         },
         {
-            method: REHEAT_METHODS.PAN_FRY,
+            method: REHEAT_METHODS.SIMMER,
             instruction: 'Over medium-low heat, reheat in a saucepan until heated through (about 5 to 10 minutes). Stir frequently.',
         },
     ],

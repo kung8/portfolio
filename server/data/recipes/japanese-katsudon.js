@@ -88,5 +88,19 @@ module.exports = {
         { step: 'Place the sliced katsudon on top of the onions.', section: SECTIONS.MAIN, img: layered },
         { step: 'Drizzle some egg over the katsudon and cook until the egg is set.', section: SECTIONS.MAIN, img: finished },
         { step: 'Serve over rice and garnish with green onions.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

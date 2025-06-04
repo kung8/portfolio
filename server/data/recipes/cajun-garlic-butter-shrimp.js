@@ -59,5 +59,19 @@ module.exports = {
         { step: 'Cook until shrimp is opaque and cooked (about 4 to 5 minutes).', section: SECTIONS.COOK_SHRIMP },
 
         { step: 'Serve with green onions.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

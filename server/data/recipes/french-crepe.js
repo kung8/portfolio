@@ -82,5 +82,19 @@ module.exports = {
         { step: 'Add your favorite toppings, fold them however you like, and enjoy this ingenious, light French dish: sweet, savory or a combination of both! Best eaten fresh!', section: SECTIONS.SERVE, img: plated1 },
         { step: 'Mix together some semisweet chocolate chips, milk, and sugar in a microwavable bowl. Heat in the microwave for 30 second intervals and mix.', section: MELTED_CHOCOLATE, img: unmelted },
         { step: 'Heat this closer to when you are about to use it.', section: MELTED_CHOCOLATE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

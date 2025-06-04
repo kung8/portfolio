@@ -7,6 +7,8 @@ import { IngredientsHeader } from './IngredientsHeader';
 import { Notes } from './Notes';
 import { PrepTime } from './PrepTime';
 import { RecipeImage } from './RecipeImage';
+import { Reheat } from './Reheat';
+import { Storage } from './Storage';
 import { Supplies } from './Supplies';
 import { WaitTime } from './WaitTime';
 import { Websites } from './Websites';
@@ -24,6 +26,8 @@ export const RecipeDetails = () => (
         <IngredientsHeader />
         <Ingredients />
         <Directions />
+        <Storage />
+        <Reheat />
         <Websites />
         <Notes />
         <Figures />

@@ -3,7 +3,7 @@ const cheesesteak2 = '../assets/Products/philly-cheesesteak-2.jpeg';
 const cheesesteak3 = '../assets/Products/philly-cheesesteak-3.jpeg';
 const cheesesteak4 = '../assets/Products/philly-cheesesteak-4.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
     OLIVE_OIL,
     RED_BELL_PEPPER,
@@ -64,4 +64,18 @@ module.exports = {
         { step: 'Optionally toast the buns. Open up hoagie bread and layer with meat, cheese and vegetables to your hearts content.', section: SECTIONS.MAIN },
         { step: 'Enjoy the taste of freedom!', section: SECTIONS.MAIN },
     ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

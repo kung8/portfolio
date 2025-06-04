@@ -8,7 +8,7 @@ export const Websites = () => {
 
     return (
         <>
-            <h4 className="recipe-detail-label">Website References:</h4>
+            <h4 className="recipe-detail-label website-label">Website References:</h4>
             <ul className="recipe-websites-list">
                 {websites?.map(({ label, link }, i) => (
                     <li key={i} className="recipe-website-item">

@@ -1,5 +1,5 @@
-@use 'variables' as theme;
-@use 'mixins' as mixins;
+@use "variables" as theme;
+@use "mixins" as mixins;
 
 .recipe {
     overflow-y: scroll;
@@ -260,15 +260,20 @@
             }
         }
 
-        .notes-label {
+        .notes-label, .storage-label, .reheat-label, .website-label {
             margin-top: 32px;
         }
 
-        .recipe-notes {
+        .recipe-notes, .recipe-storage, .recipe-reheat {
             padding-left: 16px;
             li {
                 margin-bottom: 8px;
                 line-height: 1.35;
+
+                .method-type {
+                    color: theme.$primary-blue;
+                    font-weight: bold;
+                }
 
                 .note-image {
                     margin-top: 12px;

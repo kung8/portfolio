@@ -112,5 +112,19 @@ module.exports = {
     ], 
     notes: [
         { note: 'The original recipe calls for just 3.9 ounces of chocolate pudding mix. It was really tight and I had to spread it out into a really thin layer. I increased the amount of pudding mix and milk in the recipe to accommodate for a thicker layer.'}
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

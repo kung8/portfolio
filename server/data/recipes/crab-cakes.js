@@ -56,5 +56,19 @@ module.exports = {
         { step: 'Over medium-high heat, heat oil in a large pan.', section: COOK_CRAB_CAKES },
         { step: 'Add crab cakes. Cook until golden and cooked through (about 3 minutes per side).', section: COOK_CRAB_CAKES },
         { step: 'Serve with lemon wedges. You no longer need to wait for a fancy party invitation to enjoy these hors d\'oeuvres.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

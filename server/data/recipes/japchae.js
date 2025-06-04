@@ -107,5 +107,19 @@ module.exports = {
     notes: [
         { note: 'Feel free to add or replace veggies with your favorites and you can even add whatever protein you like.' },
         { note: 'I enjoyed the simplicity of this dish, but I would add an additional protein next time to make it more filling.' },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

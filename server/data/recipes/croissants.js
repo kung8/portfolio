@@ -94,5 +94,19 @@ module.exports = {
         { step: 'Turn heat down to 375ºF and bake until golden brown for another 8 to 12 minutes.', section: BAKE_CROISSANTS },
 
         { step: 'Enjoy these warm delicious flaky pastries.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

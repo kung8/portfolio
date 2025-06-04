@@ -54,5 +54,19 @@ module.exports = {
         { step: 'Reduce to medium heat and cook until chicken is no longer pink in the center and chicken juice is clear (about 7 to 10 minutes). Occasionally stir.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Mix in the remaining ingredients. Cover and simmer, occasionally stirring, for about 30 to 40 minutes.', section: SECTIONS.COOK_CURRY },
         { step: 'Enjoy this dish over rice.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

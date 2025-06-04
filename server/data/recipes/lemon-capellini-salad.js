@@ -53,5 +53,19 @@ module.exports = {
         { step: `In a mixing bowl, combine "${LEMON_JUICE_MIXTURE}" section ingredients.`, section: SECTIONS.PREP_SALAD },
         { step: 'Add the pasta and the rest of the ingredients. Toss.', section: SECTIONS.PREP_SALAD },
         { step: 'Serve this immediately or cover and chill until ready to eat.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

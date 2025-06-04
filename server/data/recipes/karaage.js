@@ -92,5 +92,19 @@ module.exports = {
     notes: [
         { note: 'If the chicken is burning too quickly, either lower the heat or add a few more pieces of chicken.' },
         { note: 'A few mistakes that I made in the previous version of the recipe: (1) cut with the grain making it stringy when eating and (2) overcooked it attempting to get it a darker golden brown (there is residual heat).' },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

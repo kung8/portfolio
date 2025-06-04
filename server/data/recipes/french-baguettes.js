@@ -67,5 +67,19 @@ module.exports = {
     ],
     notes: [
         { note: 'The original recipe suggests to use the stand mixer to knead the dough. However the dough was pretty tough so to avoid breaking your stand mixer I\'d recommend kneading it by hand.' }
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

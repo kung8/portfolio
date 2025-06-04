@@ -58,5 +58,19 @@ module.exports = {
         { step: 'Place patties on baking sheet and bake for 30 minutes.', section: SECTIONS.MAIN },
         { step: 'Broil for 5 minutes.', section: SECTIONS.MAIN },
         { step: 'Serve on hamburger bun with preferred toppings and condiments (and fries or preferred side optional).', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

@@ -80,7 +80,7 @@ module.exports = {
             instruction: 'Microwave in 1-minute intervals until heated through. Stirring in between each interval.',
         },
         {
-            method: REHEAT_METHODS.PAN_FRY,
+            method: REHEAT_METHODS.SIMMER,
             instruction: 'Over medium heat, heat in a pot until heated through. Stirring occasionally.',
         },
     ],

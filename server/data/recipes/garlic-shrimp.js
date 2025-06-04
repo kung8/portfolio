@@ -56,5 +56,19 @@ module.exports = {
         { step: 'Transfer shrimp to a mixing bowl with a slotted spoon.', section: COOK_SHRIMP },
         { step: 'Cook butter sauce for about 2 minutes. If it is too thick, add water 1 teaspoon at a time.', section: COOK_SHRIMP },
         { step: 'Enjoy this dish with rice or noodles. Top with the sauce and parsley.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

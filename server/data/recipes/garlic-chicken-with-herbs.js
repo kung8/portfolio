@@ -63,5 +63,19 @@ module.exports = {
         { step: 'Reduce heat to low. Cover and simmer (about 10 to 12 minutes).', section: SECTIONS.MAIN, img: covered2 },
         { step: 'Cook until the internal temperature of the chicken is at least 165ºF.', section: SECTIONS.MAIN, img: zoomed },
         { step: 'Spoon juices over chicken and rice.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

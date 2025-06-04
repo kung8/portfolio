@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { RED_POTATO, ALL_PURPOSE_FLOUR, EGG, SALT, DURUM_WHEAT } = require('./ingredients');
 
 const PREP_POTATOES = 'Prep Potatoes';
@@ -28,7 +28,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...RED_POTATO, amount: 2.2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit:INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.MAIN },
         { ...DURUM_WHEAT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
@@ -64,4 +64,18 @@ module.exports = {
         { step: 'Once the gnocchi float to the surface, strain out these cooked gnocchi and place them on a plate.', section: COOK_GNOCCHI },
         { step: 'Use these gnocchi as part of dishes.', section: SECTIONS.SERVE },
     ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

@@ -60,5 +60,19 @@ module.exports = {
         { step: 'Add soy sauce, water, lemon juice and cornstarch to the chicken.', section: SECTIONS.MAIN, img: cooked },
         { step: 'The cornstarch should thicken the sauce slightly. Add more cornstarch to continuing thickening as preferred.', section: SECTIONS.MAIN },
         { step: 'Serve the lemon chicken over leaves of lettuce with a side of rice.', section: SECTIONS.MAIN, img: [plated, rice] },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

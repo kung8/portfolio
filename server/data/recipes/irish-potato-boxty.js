@@ -71,5 +71,19 @@ module.exports = {
         { step: 'Over medium heat, heat butter in a large skillet.', section: FRY_PATTIES },
         { step: 'Cook half the patties. Occasionally flipping. Cook until golden (about 8 minutes per batch).', section: FRY_PATTIES },
         { step: 'Serve with sour cream.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

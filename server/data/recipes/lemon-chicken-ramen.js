@@ -74,5 +74,19 @@ module.exports = {
         { step: 'Add the noodles into the broth and cook for 2 to 3 minutes.', section: SECTIONS.MAIN, img: noodles },
         { step: 'Slice up the chicken to be topped on the ramen.', section: SECTIONS.MAIN },
         { step: 'Divide the noodles into two bowls, pour over broth and top the bowls with the chicken, lemon slice, vegetables and sesame seeds.', section: SECTIONS.SERVE, img: bowled },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

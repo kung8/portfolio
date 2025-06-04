@@ -82,5 +82,19 @@ module.exports = {
 
         { step: 'Ladle soup into bowls.', section: SECTIONS.SERVE },
         { step: 'Enjoy this soup dish topped with the halved eggs, green onions and sesame seed.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

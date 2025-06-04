@@ -76,5 +76,19 @@ module.exports = {
         { step: 'Simmer for about 30 to 45 minutes.', section: SECTIONS.ASSEMBLE },
 
         { step: 'Serve in deep bowls. Traditionally it is served with rice or beans and warm corn tortillas.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

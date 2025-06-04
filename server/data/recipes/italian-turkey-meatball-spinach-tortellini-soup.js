@@ -12,7 +12,7 @@ const softened = '../assets/Products/turkey-meatball-spinach-tortellini-soup-sof
 const spinach = '../assets/Products/turkey-meatball-spinach-tortellini-soup-spinach.jpeg';
 const ladle = '../assets/Products/turkey-meatball-spinach-tortellini-soup-zoomed-ladle.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
     GROUND_TURKEY,
     BREADCRUMBS,
@@ -86,5 +86,19 @@ module.exports = {
         { step: 'Add tortellini and simmer until cooked (about 7 minutes).', section: SECTIONS.MAIN, img: boilingTortellini },
         { step: 'Once cooked, add the baby spinach and stir to combine.', section: SECTIONS.MAIN, img: spinach },
         { step: 'Serve warm.', section: SECTIONS.SERVE, img: [bowl] },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 }

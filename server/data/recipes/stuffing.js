@@ -72,5 +72,19 @@ module.exports = {
         { step: 'Pour egg mixture over the cubed bread and fold until combined.', section: SECTIONS.MAIN },
         { step: 'Bake until the internal temperature is 160ºF (about 45 to 50 minutes). If getting browned and it isn\'t finished yet, you can cover it with foil in a tent shape.', section: SECTIONS.MAIN, img: stuffing15 },
         { step: 'Serve warm on the side of your holiday feast or on any occasion.', section: SECTIONS.MAIN },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

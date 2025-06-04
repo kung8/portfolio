@@ -59,5 +59,19 @@ module.exports = {
         { step: 'In a mixing bowl, combine melted butter and cajun seasoning. Add shrimp and toss until coated.', section: SECTIONS.COOK_SHRIMP },
         { step: 'Add shrimp to the rice. Cover and cook until the shrimp is pink and opaque (about 3 to 5 minutes).', section: SECTIONS.COOK_SHRIMP },
         { step: 'Serve this with parsley.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

@@ -1,5 +1,5 @@
 const pigsInABlanket = '../assets/Products/pigs-in-a-blanket.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const { CROISSANT_DOUGH, EGG, MINI_HOT_DOG } = require('./ingredients');
 
 module.exports = {
@@ -39,4 +39,18 @@ module.exports = {
         { step: 'Bake for about 12 - 15 min or until golden brown.', section: SECTIONS.MAIN },
         { step: 'Serve with your favorite condiment, and enjoy this easy tailgate hors d\'oeuvre!', section: SECTIONS.MAIN },
     ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

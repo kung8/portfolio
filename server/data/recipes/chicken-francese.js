@@ -70,5 +70,19 @@ module.exports = {
         { step: 'Add chicken and sauce to the baking dish.', section: SECTIONS.BAKE },
         { step: 'Bake until the chicken is no longer pink and juices are clear (about 10 to 15 minutes).', section: SECTIONS.BAKE },
         { step: 'Enjoy this dish.', section: SECTIONS.SERVE },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };

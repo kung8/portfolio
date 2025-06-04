@@ -72,5 +72,19 @@ module.exports = {
         { step: 'Heat frying pan over medium heat and add 1 Tbsp vegetable and cook beef in batches.', section: SECTIONS.MAIN, img: cooking },
         { step: 'Flip beef over and cook. Repeat for additional batch.', section: SECTIONS.MAIN },
         { step: 'Serve over rice and top with green onion and sesame seeds.', section: SECTIONS.SERVE, img: bowl },
-    ]
+    ],
+    store: [
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
+    ],
+    reheat: [
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
+    ],
+    mealPrep: false,
 };
