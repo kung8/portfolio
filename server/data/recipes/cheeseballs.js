@@ -3,7 +3,7 @@ const pizzaDough = '../assets/Products/pizza-dough.jpeg';
 const frozenDough = '../assets/Products/frozen-pizza-dough.jpeg';
 const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
 const tossing = '../assets/Products/pizza-toss.MOV';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
     BREAD_FLOUR,
     SALT,
@@ -71,18 +71,18 @@ module.exports = {
         { step: 'Cut the dough into about 2 to 2-1/2 inch squares and fill the center with shredded cheese.', section: SECTIONS.MAIN },
         { step: 'Enclose the cheese by folding in the edges and press the dough to seal in the cheesy goodness.', section: SECTIONS.MAIN },
         { step: 'Shape the cheese filled dough into a ball and brush the outside with melted butter. Optionally sprinkle minced garlic. Then place the cheeseballs on the baking sheet', section: SECTIONS.MAIN },
-        { step: 'Bake the cheeseball for 20 to 25 minutes or until a nice golden brown.', section: SECTIONS.MAIN },
-        { step: 'Enjoy the cheesballs warm with warm pizza sauce.', section: SECTIONS.MAIN },
+        { step: 'Bake the cheeseballs for 20 to 25 minutes or until a nice golden brown.', section: SECTIONS.MAIN },
+        { step: 'Enjoy the cheeseballs warm with warm pizza sauce.', section: SECTIONS.MAIN },
     ],
     notes: [
         { note: 'The focaccia bread recipe which was used for the pizza was the same dough that we used for this cheeseballs recipe. Freeze the remainder of the dough to make future breadsticks, cheese balls, or pizza.' }
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -90,5 +90,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };
