@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { PANCAKE_MIX, EGG, SAUSAGE_PATTY, AMERICAN_CHEESE } = require('./ingredients');
 
 const MCGRIDDLE_PANCAKE_SECTION = 'McGriddle Pancake';
@@ -62,17 +62,21 @@ module.exports = {
         { step: 'Enjoy this homemade McGriddle topped with a little syrup optionally.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'For a softer bun, wrap in a damp paper towel and microwave until heated through (about 80 to 90 seconds).',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'For a crispier bun, bake at 350ºF until heated through (about 10 to 15 minutes).',
+        },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

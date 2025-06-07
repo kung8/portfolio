@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { MOZZARELLA_CHEESE, ITALIAN_SAUSAGE, PEPPERONI, GREEN_BELL_PEPPER, RED_BELL_PEPPER, YELLOW_ONION, PIZZA_SAUCE, SPRING_ROLL_WRAPPER, VEGETABLE_OIL } = require('./ingredients');
 
 const PREP_SPRING_ROLLS = 'Prep Spring Rolls';
@@ -69,17 +69,18 @@ module.exports = {
         { step: 'Serve these warm with pizza sauce.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 4, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Let the pizza egg rolls cool completely before storing. If there is more than one layer, place a paper towel between the layers.',
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over medium heat, reheat them in a pan until heated through. Turn them occasionally.',
+        },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

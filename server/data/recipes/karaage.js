@@ -6,7 +6,7 @@ const karaage5 = '../assets/Products/karaage-5.jpeg';
 const karaage6 = '../assets/Products/karaage-6.jpeg';
 const karaage7 = '../assets/Products/karaage-7.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, SALT, BLACK_PEPPER, GINGER, GARLIC, LIGHT_SOY_SAUCE, VEGETABLE_OIL, POTATO_STARCH, ALL_PURPOSE_FLOUR, LEMON, KEWPIE_MAYONNAISE, MIRIN, EGG, WATER } = require('./ingredients');
 
 const ZAKU_ZAKU_BREADCRUMBS = 'Zaku Zaku Breadcrumbs';
@@ -94,17 +94,21 @@ module.exports = {
         { note: 'A few mistakes that I made in the previous version of the recipe: (1) cut with the grain making it stringy when eating and (2) overcooked it attempting to get it a darker golden brown (there is residual heat).' },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry at 400ºF until heated through (about 5 to 6 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Place karaage on a wire rack on a baking sheet. Bake at 400ºF for 10 minutes. Then bake at 425ºF until the chicken has an internal temperature of at least 165ºF.',
+        },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

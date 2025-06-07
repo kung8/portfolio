@@ -5,7 +5,7 @@ const mcnuggets4 = '../assets/Products/chicken-mcnuggets-4.jpeg';
 const mcnuggets5 = '../assets/Products/chicken-mcnuggets-5.jpeg';
 const mcnuggets6 = '../assets/Products/chicken-mcnuggets-6.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { GROUND_CHICKEN, SALT, WHITE_SUGAR, ALL_PURPOSE_FLOUR, WHITE_PEPPER, CELERY_POWDER, CORNSTARCH, BAKING_POWDER, BAKING_SODA, EGG, ROOM_TEMPERATURE_WATER, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const FLOUR_DREDGING_STATION = 'Flour Dredging Station';

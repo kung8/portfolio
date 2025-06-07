@@ -8,7 +8,7 @@ const stew7 = '../assets/Products/yors-stew-7.jpeg';
 const stew8 = '../assets/Products/yors-stew-8.jpeg';
 const stew9 = '../assets/Products/yors-stew-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { VEGETABLE_OIL, POTATO, CARROT, SWEET_ONION, GARLIC, RED_BELL_PEPPER, CHICKEN_BOUILLON, RED_WINE, WATER, SOUR_CREAM, PAPRIKA, SALT, BLACK_PEPPER, EGG, HOT_DOG, FENNEL_SEEDS, PORK_BUTT, CORNSTARCH } = require('./ingredients');
 
 const SEARING_SECTION = 'Searing';

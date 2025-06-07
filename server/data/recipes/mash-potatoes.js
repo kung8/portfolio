@@ -9,7 +9,7 @@ const potatoes8 = '../assets/Products/mash-potatoes-8.jpeg';
 const potatoes9 = '../assets/Products/mash-potatoes-9.jpeg';
 const potatoes10 = '../assets/Products/mash-potatoes-10.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { YUKON_GOLD_POTATO, GARLIC, UNSALTED_BUTTER, MILK, SALT, BLACK_PEPPER, GREEN_ONION, SOUR_CREAM, CHEDDAR_CHEESE, CHIVE } = require('./ingredients');
 
 module.exports = {
@@ -62,11 +62,11 @@ module.exports = {
         { step: 'Serve hot as a side dish. Top mashed potatoes with gravy and your favorite toppings.', section: SECTIONS.SERVE, img: [potatoes9, potatoes10] },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -74,5 +74,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

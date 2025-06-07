@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { MAYONNAISE, EGG, DIJON_MUSTARD, WORCESTERSHIRE_SAUCE, HOT_SAUCE, CRAB, SALTINES, VEGETABLE_OIL, LEMON } = require('./ingredients');
 
 const FRYING_SECTION = 'Frying';
@@ -57,18 +57,7 @@ module.exports = {
         { step: 'Add crab cakes. Cook until golden and cooked through (about 3 minutes per side).', section: COOK_CRAB_CAKES },
         { step: 'Serve with lemon wedges. You no longer need to wait for a fancy party invitation to enjoy these hors d\'oeuvres.', section: SECTIONS.SERVE },
     ],
-    store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
-    ],
-    reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
-    ],
+    store: null,
+    reheat: null,
     mealPrep: false,
 };

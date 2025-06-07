@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { UNSALTED_BUTTER, RED_ONION, SWEET_ONION, SALT, CHICKEN_BROTH, BEEF_BROTH, RED_WINE, WORCESTERSHIRE_SAUCE, PARSLEY, FRESH_THYME, BAY_LEAF, BALSAMIC_VINEGAR, BLACK_PEPPER, FRENCH_BREAD, GRUYERE_CHEESE, ASIAGO_CHEESE, PAPRIKA } = require('./ingredients');
 
 const CARAMELIZED_ONIONS_SECTION = 'Caramelized Onions';
@@ -89,11 +89,11 @@ module.exports = {
         { step: 'Enjoy this on a brisk Autumn day.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -101,5 +101,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };
