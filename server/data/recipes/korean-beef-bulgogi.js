@@ -4,7 +4,7 @@ const marinade = '../assets/Products/beef-bulgogi-marinade.jpeg';
 // const ziploc = '../assets/Products/beef-bulgogi-marinating-in-ziploc.jpeg';
 const marinating = '../assets/Products/beef-bulgogi-marinating.jpeg';
 const plated = '../assets/Products/beef-bulgogi-plated.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     BEEF,
     PEAR,
@@ -74,11 +74,11 @@ module.exports = {
         { step: 'Serve over rice and top with green onion and sesame seeds.', section: SECTIONS.SERVE, img: bowl },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -86,5 +86,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

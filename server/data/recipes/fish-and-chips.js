@@ -5,7 +5,7 @@ const chips4 = '../assets/Products/fish-and-chips-4.jpeg';
 const chips5 = '../assets/Products/fish-and-chips-5.jpeg';
 const chips6 = '../assets/Products/fish-and-chips-6.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { COD_FISH, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, GARLIC_POWDER, PAPRIKA, EGG, BEER, VEGETABLE_OIL } = require('./ingredients');
 
 const BEER_BATTER_SECTION = 'Beer Batter';
@@ -65,11 +65,11 @@ module.exports = {
         { step: 'Enjoy the fish with your favorite type of fries.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -77,5 +77,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

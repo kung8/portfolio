@@ -1,5 +1,5 @@
 const egg = '../assets/Products/hard-boiled-egg.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const {
     EGG,
     SALT,
@@ -57,18 +57,7 @@ module.exports = {
         { step: 'Brown some diced onion and peppers.', section: VEGGIES },
         { step: 'Combine the eggs and veggies and enjoy a nutritional breakfast (or snack).', section: SECTIONS.SERVE },
     ],
-    store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
-    ],
-    reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
-    ],
+    store: null,
+    reheat: null,
     mealPrep: false,
 };

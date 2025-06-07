@@ -8,7 +8,7 @@ const kung7 = '../assets/Products/kung-pao-chicken-7.jpeg';
 const kung8 = '../assets/Products/kung-pao-chicken-8.jpeg';
 const kung9 = '../assets/Products/kung-pao-chicken-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CORNSTARCH, LIGHT_SOY_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, DARK_SOY_SAUCE, CHICKEN_BROTH, BALSAMIC_VINEGAR, HOISIN_SAUCE, WHITE_SUGAR, CHILI_PEPPER, GREEN_BELL_PEPPER, RED_BELL_PEPPER, GINGER, GARLIC, GREEN_ONION, UNSALTED_PEANUT, SESAME_SEEDS } = require('./ingredients');
 
 module.exports = {
@@ -84,11 +84,11 @@ module.exports = {
         { step: 'Top this dish with your favorite toppings and serve with jasmine rice. Enjoy!', section: SECTIONS.SERVE, img: kung9 },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -96,5 +96,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

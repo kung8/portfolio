@@ -1,10 +1,9 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { BEEF_RIBS, YELLOW_ONION, CARROT, CINNAMON_STICK, GINGER, PORK_TENDERLOINS, EGG, BEEF_BROTH, SHIITAKE_MUSHROOM, THAI_CHILI_PEPPER, MIRIN, LIGHT_SOY_SAUCE, WHITE_SUGAR, SALT, NAPA_CABBAGE, GREEN_ONION, SESAME_SEEDS, UDON_NOODLES } = require('./ingredients');
 
 const SOUP_1_SECTION = 'Soup Part 1';
 const SOUP_2_SECTION = 'Soup Part 2';
-const PREP_EGGS = 'Prep Eggs';
 
 module.exports = {
     wip: true,
@@ -78,17 +77,18 @@ module.exports = {
         { step: 'Remove the chili peppers.', section: SECTIONS.MAKE_SOUP },
         { step: 'Taste and adjust as necessary.', section: SECTIONS.MAKE_SOUP },
 
-        { step: 'Peel the eggs and slice in half.', section: PREP_EGGS },
+        { step: 'Peel the eggs and slice in half.', section: SECTIONS.PREP_EGGS },
 
         { step: 'Ladle soup into bowls.', section: SECTIONS.SERVE },
         { step: 'Enjoy this soup dish topped with the halved eggs, green onions and sesame seed.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store the ingredients separately.'
+        },
     ],
     reheat: [
         // {
@@ -96,5 +96,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };
