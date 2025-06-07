@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { ANGEL_HAIR_PASTA, UNSALTED_BUTTER, SHRIMP, GARLIC, WHITE_WINE, BLACK_PEPPER, PARMESAN_CHEESE, PARSLEY, LEMON } = require('./ingredients');
 
 const COMBINE = 'Combine';
@@ -59,17 +59,21 @@ module.exports = {
         { step: 'Enjoy this taste of Italy topped with parsley, parmesan and lemon wedges.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.STIR_FRY,
+            instruction: 'Over low heat, add a little oil to a wok. Add shrimp scampi with the shrimp in a single layer. Stir-fry until heated through (about 2 to 3 minutes). Add a little water if the sauce is too dry.',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Cover with a damp paper towel. Microwave on low in 30-second intervals until heated through. Stir between intervals and add a little water if the sauce is too dry.',
+        },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { UNSALTED_BUTTER, YELLOW_ONION, GARLIC, SALT, BLACK_PEPPER, WHITE_RICE, CHICKEN_BROTH, PARSLEY } = require('./ingredients');
 
 const ONION_MIXTURE_SECTION = 'Onion Mixture';
@@ -59,17 +59,25 @@ module.exports = {
         { step: 'Top with parsley and serve with your favorite side dishes.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Add a tablespoon of water. Cover with a damp paper towel. Microwave in 30-second intervals until heated through. Stir in between intervals.',
+        },
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over low heat, add a splash of water and rice pilaf to a pan. Cover with a lid and reheat until heated through (about 5 to 10 minutes). Stir occasionally to prevent sticking and burning.',
+        },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Add a splash of water. Make sure the rice pilaf is in an even layer in baking dish. Cover with foil and bake at 300ºF until heated through (about 20 minutes).',
+        }
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

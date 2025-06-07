@@ -10,7 +10,7 @@ const stuffing13 = '../assets/Products/stuffing-13.jpeg';
 const stuffing14 = '../assets/Products/stuffing-14.jpeg';
 const stuffing15 = '../assets/Products/stuffing-15.jpeg';
 const stuffing16 = '../assets/Products/stuffing-16.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, STORAGE_LOCATION, REHEAT_METHODS } = require('./constants');
 const { BREAD, UNSALTED_BUTTER, SWEET_ONION, CELERY, GARLIC, SALT, BLACK_PEPPER, FRESH_SAGE, FRESH_ROSEMARY, PARSLEY, CHICKEN_BROTH, EGG } = require('./ingredients');
 
 module.exports = {
@@ -74,17 +74,17 @@ module.exports = {
         { step: 'Serve warm on the side of your holiday feast or on any occasion.', section: SECTIONS.MAIN },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Add a splash of broth. Cover with foil and bake at 350ºF until heated through (about 20 minutes). Then uncover and bake until the top is crispy (about 15 to 20 minutes).',
+        },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };
