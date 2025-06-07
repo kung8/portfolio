@@ -1,5 +1,5 @@
 const roast = '../assets/Products/roast.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
     BEEF_ROAST,
     BLACK_PEPPER,
@@ -28,7 +28,7 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 255, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pot Roast', link: 'https://www.foodnetwork.com/recipes/ina-garten/pot-roast-recipe-1941651' }
+        { label: 'Pot Roast', link: 'https://www.foodnetwork.com/recipes/ree-drummond/perfect-pot-roast-recipe-2118771' }
     ],
     ingredients: [
         { ...BEEF_ROAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
@@ -62,17 +62,17 @@ module.exports = {
         { step: 'Cover the roasting pan with aluminum foil and roast for 3 hours or until the roast is tender.', section: SECTIONS.MAIN },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cover with foil and bake at 300ºF until heated through.',
+        },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };
