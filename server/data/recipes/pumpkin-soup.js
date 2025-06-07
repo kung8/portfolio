@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { UNSALTED_BUTTER, CARROT, YELLOW_ONION, GARLIC, GINGER, SALT, BLACK_PEPPER, BUTTERNUT_SQUASH, TOMATO_PASTE, SMOKED_PAPRIKA, VEGETABLE_BROTH, SOUR_CREAM, PUMPKIN_PUREE, PUMPKIN_SEEDS } = require('./ingredients');
 
 const OTHER_VEGGIES_SECTION = 'Other Veggies';
@@ -68,11 +68,11 @@ module.exports = {
         { step: 'Serve with sour cream and pumpkin seeds.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -80,5 +80,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

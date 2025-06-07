@@ -11,7 +11,7 @@ const plated2 = '../assets/Products/peppermint-bark-plated-2.jpeg';
 const plated4 = '../assets/Products/peppermint-bark-plated-4.jpeg';
 const set = '../assets/Products/peppermint-bark-set-chocolate.jpeg';
 const white = '../assets/Products/peppermint-bark-white-chocolate-chips.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { SEMI_SWEET_CHOCOLATE_CHIPS, WHITE_CHOCOLATE_CHIPS, PEPPERMINT_EXTRACT, CANDY_CANES } = require('./ingredients');
 
 module.exports = {
@@ -63,17 +63,17 @@ module.exports = {
         { step: 'Using a sharp knife, cut through the bark and enjoy.', section: SECTIONS.MAIN, img: plated2 },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.WEEK },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
-    reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
-    ],
-    mealPrep: false,
+    reheat: null,
+    mealPrep: true,
 };

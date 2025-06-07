@@ -8,7 +8,7 @@ const sesame7 = '../assets/Products/honey-sesame-chicken-7.jpeg';
 const sesame8 = '../assets/Products/honey-sesame-chicken-8.jpeg';
 const sesame9 = '../assets/Products/honey-sesame-chicken-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGG, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, CORNSTARCH, VEGETABLE_OIL, GARLIC, HONEY, LIGHT_SOY_SAUCE, KETCHUP, BROWN_SUGAR, RICE_WINE_VINEGAR, SESAME_OIL, GREEN_ONION, SESAME_SEEDS } = require('./ingredients');
 
 const DEEP_FRY = 'Deep Fry';
@@ -99,11 +99,11 @@ module.exports = {
         { note: 'Avoid overcrowding the chicken by working in batches.' }
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -111,5 +111,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

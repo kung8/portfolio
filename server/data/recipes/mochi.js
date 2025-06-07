@@ -6,7 +6,7 @@ const mochi6 = '../assets/Products/mochi-6.jpeg';
 const mochi8 = '../assets/Products/mochi-8.jpeg';
 const mochi9 = '../assets/Products/mochi-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { WHITE_SUGAR, COCONUT_MILK, POTATO_STARCH, MOCHIKO, FOOD_COLORING, WATER } = require('./ingredients');
 
 const MOCHI = 'Mochi';
@@ -61,11 +61,11 @@ module.exports = {
         { step: 'Enjoy these light delicious treats.', section: SECTIONS.SERVE, img: mochi9 },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {

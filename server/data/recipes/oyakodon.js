@@ -11,7 +11,7 @@ const oyakodon10 = '../assets/Products/oyakodon-10.jpeg';
 const oyakodon11 = '../assets/Products/oyakodon-11.jpeg';
 const oyakodon12 = '../assets/Products/oyakodon-12.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHAOXING_WINE, EGG, DASHI, LIGHT_SOY_SAUCE, MIRIN, WHITE_SUGAR, SHORT_GRAINED_RICE, GREEN_ONION } = require('./ingredients');
 
 const SEASONING = 'Seasoning';
@@ -84,11 +84,11 @@ module.exports = {
         { step: 'Serve this over rice with the sauce. Enjoy the simple taste of Japanese cuisine.', section: SECTIONS.SERVE, img: oyakodon11 },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {

@@ -7,7 +7,7 @@ const dumpling6 = '../assets/Products/dumpling-soup-6.jpeg';
 const dumpling7 = '../assets/Products/dumpling-soup-7.jpeg';
 const dumpling8 = '../assets/Products/dumpling-soup-8.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { VEGETABLE_OIL, SESAME_OIL, CARROT, GREEN_ONION, GARLIC, GROUND_GINGER, CHICKEN_BROTH, DUMPLINGS, BABY_SPINACH, LIGHT_SOY_SAUCE, SRIRACHA_SAUCE, MISO_PASTE, CHILI_OIL } = require('./ingredients');
 
 const MISO_PASTE_MIXTURE = 'Miso Paste Mixture';
@@ -78,11 +78,11 @@ module.exports = {
         { note: 'Chili oil makes it so good!' },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -90,5 +90,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

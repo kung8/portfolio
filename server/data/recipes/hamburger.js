@@ -1,5 +1,5 @@
 const hamburger = '../assets/Products/hamburger.jpeg';
-const { CATEGORIES, SECTIONS, TYPES, GENRES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, TYPES, GENRES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const {
     BREADCRUMBS,
     CHEDDAR_CHEESE,
@@ -60,11 +60,12 @@ module.exports = {
         { step: 'Serve on hamburger bun with preferred toppings and condiments (and fries or preferred side optional).', section: SECTIONS.MAIN },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store ingredients separately. Store buns at room temperature.',
+        },
     ],
     reheat: [
         // {
@@ -72,5 +73,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

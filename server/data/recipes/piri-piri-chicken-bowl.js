@@ -10,7 +10,7 @@ const bowl9 = '../assets/Products/piri-piri-chicken-bowl-9.jpeg';
 const bowl10 = '../assets/Products/piri-piri-chicken-bowl-10.jpeg';
 const bowl11 = '../assets/Products/piri-piri-chicken-bowl-11.jpeg';
 const bowl12 = '../assets/Products/piri-piri-chicken-bowl-12.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { CHICKEN_THIGH, OLIVE_OIL, LEMON_JUICE, GARLIC, THAI_CHILI_PEPPER, BROWN_SUGAR, OREGANO, SWEET_PAPRIKA, CAYENNE_PEPPER, SALT, CORN, BABY_ARUGULA, AVOCADO, BLACK_PEPPER, VEGETABLE_OIL, BASMATI_RICE, CHICKEN_BROTH, CRUSHED_TOMATOES, SMOKED_PAPRIKA, BAY_LEAF, CILANTRO, NANDOS_PERI_PERI_SAUCE, MAYONNAISE, DIJON_MUSTARD, HOT_SAUCE, CHIVE } = require('./ingredients');
 
 const CORN_SECTION = 'Corn';
@@ -120,11 +120,12 @@ module.exports = {
         { step: 'Plate some rice, add salad and slice up some chicken. Top with the peri peri sauce.', section: SECTIONS.SERVE, img: bowl11 },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store the ingredients separately.'
+        },
     ],
     reheat: [
         // {
@@ -132,5 +133,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

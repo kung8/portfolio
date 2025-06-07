@@ -7,7 +7,7 @@ const orange6 = '../assets/Products/orange-chicken-6.jpeg';
 const orange7 = '../assets/Products/orange-chicken-7.jpeg';
 const orange8 = '../assets/Products/orange-chicken-8.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGG, CORNSTARCH, ALL_PURPOSE_FLOUR, SALT, VEGETABLE_OIL, ORANGE_JUICE, WHITE_SUGAR, RICE_WINE_VINEGAR, LIGHT_SOY_SAUCE, GARLIC_POWDER, RED_PEPPER_FLAKES, ORANGE_ZEST, GROUND_GINGER, GREEN_ONION, WATER } = require('./ingredients');
 
 const ORANGE_SAUCE = 'Orange Sauce';
@@ -104,11 +104,11 @@ module.exports = {
         { note: 'Avoid overcrowding the chicken by working in batches.' }
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -116,5 +116,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

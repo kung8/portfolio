@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { MACADAMIA_NUT, CORIANDER, SHALLOT, GARLIC, RED_CHILI, WATER, CHICKEN, LEMONGRASS, KAFFIR_LIME_LEAF, CINNAMON_STICK, COCONUT_MILK, FRIED_SHALLOTS, JASMINE_RICE, LIME, GINGER, BROWN_SUGAR, VEGETABLE_OIL } = require('./ingredients');
 
 const SHALLOT_MIXTURE_SECTION = 'Shallot Mixture';
@@ -74,11 +74,11 @@ module.exports = {
         { step: 'Enjoy this over turmeric rice and topped with your favorite toppings.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -86,5 +86,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

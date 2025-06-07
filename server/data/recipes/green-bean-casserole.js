@@ -6,7 +6,7 @@ const mix1 = '../assets/Products/green-bean-casserole-mix-1.jpeg';
 const mix2 = '../assets/Products/green-bean-casserole-mix-2.jpeg';
 const mix3 = '../assets/Products/green-bean-casserole-mix-3.jpeg';
 const mix4 = '../assets/Products/green-bean-casserole-mix-4.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { CANNED_GREEN_BEANS, CREAM_OF_MUSHROOM, MILK, LIGHT_SOY_SAUCE, BLACK_PEPPER, SALT, CRISPY_FRIED_ONIONS } = require('./ingredients');
 
 const CASSEROLE = 'Casserole';
@@ -55,11 +55,11 @@ module.exports = {
         { step: 'Serve this dish warm at your next holiday feast.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -67,5 +67,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

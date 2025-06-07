@@ -4,7 +4,7 @@ const casserole3 = '../assets/Products/corn-casserole-3.jpeg';
 const casserole4 = '../assets/Products/corn-casserole-4.jpeg';
 const casserole5 = '../assets/Products/corn-casserole-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { CANNED_SWEET_CORN, CANNED_CREAMED_CORN, CORNBREAD_MIX, SOUR_CREAM, UNSALTED_BUTTER, EGG } = require('./ingredients');
 
 const PREP_BAKE = 'Prep Bake';
@@ -54,11 +54,11 @@ module.exports = {
         { step: 'Enjoy this simple casserole and crowd pleaser.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -66,5 +66,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

@@ -5,7 +5,7 @@ const onion = '../assets/Products/chicken-katsudon-onion.jpeg';
 const mirin = '../assets/Products/chicken-katsudon-onion-in-mirin.jpeg';
 const layered = '../assets/Products/chicken-katsudon-layered.jpeg';
 const finished = '../assets/Products/chicken-katsudon-finished.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     BONELESS_PORK_CHOPS,
     SALT,
@@ -90,11 +90,11 @@ module.exports = {
         { step: 'Serve over rice and garnish with green onions.', section: SECTIONS.MAIN },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {

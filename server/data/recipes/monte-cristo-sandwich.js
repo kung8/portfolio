@@ -5,7 +5,7 @@ const sandwich4 = '../assets/Products/monte-cristo-sandwich-4.jpeg';
 const sandwich5 = '../assets/Products/monte-cristo-sandwich-5.jpeg';
 const sandwich6 = '../assets/Products/monte-cristo-sandwich-6.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { HEAVY_CREAM, EGG, LEMON_ZEST, SALT, CAYENNE_PEPPER, NUTMEG, BREAD, COOKED_HAM, UNSALTED_BUTTER, PROVOLONE_CHEESE } = require('./ingredients');
 
 const BATTER_SECTION = 'Batter';
@@ -69,11 +69,11 @@ module.exports = {
         { step: 'Serve this sandwich warm optionally topped with more cheese.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {

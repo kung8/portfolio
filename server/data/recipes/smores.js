@@ -1,5 +1,5 @@
 const smores = '../assets/Products/smores.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, METHODS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
     GRAHAM_CRACKER,
     MARSHMALLOW,
@@ -36,7 +36,7 @@ module.exports = {
         { step: 'Place graham cracker halves on baking sheet and place marshmallows on each half.', section: SECTIONS.MAIN },
         { step: 'Bake inside the oven for about 3 minutes (or browned as desired).', section: SECTIONS.MAIN },
         { step: 'Take tray out and add graham crackers with 3 pieces of chocolate.', section: SECTIONS.MAIN },
-        { step: 'Flip marshallow and bake for an additional 2 minutes.', section: SECTIONS.MAIN },
+        { step: 'Flip marshmallow and bake for an additional 2 minutes.', section: SECTIONS.MAIN },
         { step: 'Enjoy the sweet tastes of a campfire indoors.', section: SECTIONS.MAIN },
     ],
     store: null,

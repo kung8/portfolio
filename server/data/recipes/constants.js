@@ -301,6 +301,7 @@ const SECTIONS = {
 const STORAGE_CONTAINER = {
     AIRTIGHT: 'airtight container',
     ITS_OWN_CONTAINER: 'its own container',
+    PAPER_BAG: 'paper bag',
 };
 
 const STORAGE_DURATION_UNIT = {

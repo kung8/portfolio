@@ -4,7 +4,7 @@ const wings3 = '../assets/Products/cowboy-butter-chicken-wings-3.jpeg';
 const wings4 = '../assets/Products/cowboy-butter-chicken-wings-4.jpeg';
 const wings5 = '../assets/Products/cowboy-butter-chicken-wings-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { CHICKEN_WINGS, SALT, BLACK_PEPPER, UNSALTED_BUTTER, PARSLEY, CHIVE, GARLIC, DIJON_MUSTARD, LEMON_JUICE, SMOKED_PAPRIKA, CAYENNE_PEPPER } = require('./ingredients');
 
 const COWBOY_BUTTER = 'Cowboy Butter'
@@ -67,11 +67,11 @@ module.exports = {
         { step: 'Serve these wings with your favorite dips and sides at your next tailgate, superbowl watch party, or any kind of party.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -79,5 +79,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

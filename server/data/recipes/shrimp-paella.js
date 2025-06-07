@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { SHRIMP, OLIVE_OIL, SAFFRON_THREADS, CHICKEN_BROTH, CHORIZO, YELLOW_ONION, GARLIC, RED_BELL_PEPPER, SALT, PAPRIKA, CAYENNE_PEPPER, GREEN_PEA, ARBORIO_RICE, PARSLEY, LEMON } = require('./ingredients');
 
 const SAFFRON_BROTH = 'Saffron Broth';
@@ -86,11 +86,11 @@ module.exports = {
         { step: 'Serve this dish warm', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -98,5 +98,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

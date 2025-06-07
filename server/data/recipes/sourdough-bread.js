@@ -9,7 +9,7 @@ const uncovered = '../assets/Products/sourdough-bread-uncovered.jpeg';
 const board = '../assets/Products/sourdough-bread-on-board.jpeg';
 const bakedScored = '../assets/Products/sourdough-bread-baked-scored.jpeg';
 
-const { METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
     SALT,
@@ -65,17 +65,13 @@ module.exports = {
         { step: 'Remove from oven and let cool.', section: BAKING, img: bakedScored },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.ROOM_TEMPERATURE,
+            container: STORAGE_CONTAINER.PAPER_BAG,
+            instruction: 'Allow it to breathe by not sealing it in an airtight container.',
+        },
     ],
-    reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
-    ],
-    mealPrep: false,
+    reheat: null,
+    mealPrep: true,
 };

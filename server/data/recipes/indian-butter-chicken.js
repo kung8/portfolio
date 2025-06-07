@@ -12,7 +12,7 @@ const simmering = '../assets/Products/indian-butter-chicken-simmering.jpeg';
 const spices = '../assets/Products/indian-butter-chicken-spices.jpeg';
 const paste = '../assets/Products/indian-butter-chicken-tomato-paste.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const {
     VEGETABLE_OIL,
     UNSALTED_BUTTER,
@@ -86,11 +86,11 @@ module.exports = {
         { step: 'Serve with rice (and naan or roti is optional and delicious).', section: SECTIONS.MAIN, img: plated3 },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -98,5 +98,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

@@ -11,7 +11,7 @@ const japchae10 = '../assets/Products/japchae-10.jpeg';
 const japchae11 = '../assets/Products/japchae-11.jpeg';
 const japchae12 = '../assets/Products/japchae-12.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { KOREAN_GLASS_NOODLES, EGG, CARROT, RED_BELL_PEPPER, YELLOW_ONION, GREEN_ONION, GARLIC, SHIITAKE_MUSHROOM, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPER } = require('./ingredients');
 
 const FIRST_VEGGIES_SECTION = 'First Veggies';
@@ -109,11 +109,11 @@ module.exports = {
         { note: 'I enjoyed the simplicity of this dish, but I would add an additional protein next time to make it more filling.' },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -121,5 +121,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

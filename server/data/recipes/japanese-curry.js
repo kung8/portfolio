@@ -14,7 +14,7 @@ const curry13 = '../assets/Products/japanese-curry-13.jpeg';
 const curry14 = '../assets/Products/japanese-curry-14.jpeg';
 const curry15 = '../assets/Products/japanese-curry-15.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { YELLOW_ONION, CARROT, YUKON_GOLD_POTATO, GINGER, GARLIC, APPLE, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BLACK_PEPPER, VEGETABLE_OIL, CHICKEN_BROTH, HONEY, LIGHT_SOY_SAUCE, KETCHUP, JAPANESE_CURRY_MIX } = require('./ingredients');
 
 const PREP_VEGGIES = 'Prep Veggies';
@@ -86,11 +86,11 @@ module.exports = {
         { step: 'Enjoy this curry over Japanese rice.', section: SECTIONS.SERVE, img: curry15 },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -98,5 +98,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

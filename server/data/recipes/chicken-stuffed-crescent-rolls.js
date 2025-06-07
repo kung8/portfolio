@@ -6,7 +6,7 @@ const melted = '../assets/Products/chicken-stuffed-crescent-rolls-melted-butter.
 const opened = '../assets/Products/chicken-stuffed-crescent-rolls-opened.jpeg';
 const wrap = '../assets/Products/chicken-stuffed-crescent-rolls-wrap.jpeg';
 const wrapped = '../assets/Products/chicken-stuffed-crescent-rolls-wrapped.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const {
     MOZZARELLA_CHEESE,
     CREAM_CHEESE,
@@ -72,11 +72,11 @@ module.exports = {
         { note: 'Be sure to cook the dough completely.' }
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -84,5 +84,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

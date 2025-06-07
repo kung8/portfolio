@@ -3,7 +3,7 @@ const cheesesteak2 = '../assets/Products/philly-cheesesteak-2.jpeg';
 const cheesesteak3 = '../assets/Products/philly-cheesesteak-3.jpeg';
 const cheesesteak4 = '../assets/Products/philly-cheesesteak-4.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const {
     OLIVE_OIL,
     RED_BELL_PEPPER,
@@ -65,11 +65,12 @@ module.exports = {
         { step: 'Enjoy the taste of freedom!', section: SECTIONS.MAIN },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store the ingredients separately. Bread can be stored at room temperature.',
+        },
     ],
     reheat: [
         // {
@@ -77,5 +78,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

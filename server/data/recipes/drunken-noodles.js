@@ -5,7 +5,7 @@ const drunken4 = '../assets/Products/drunken-noodles-4.jpeg';
 const drunken5 = '../assets/Products/drunken-noodles-5.jpeg';
 const drunken6 = '../assets/Products/drunken-noodles-6.jpeg';
 const drunken7 = '../assets/Products/drunken-noodles-7.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGG, SERRANO_PEPPER, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATO } = require('./ingredients');
 
 module.exports = {
@@ -71,11 +71,11 @@ module.exports = {
         { note: 'When I made this dish I had not updated the sauce ingredient amounts (i.e. it is now doubled). I\'m more used to a saucier drunken noodle dish. I will remake this dish and update the images.', }
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
         // {
@@ -83,5 +83,5 @@ module.exports = {
         //     instruction: '',
         // },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };
