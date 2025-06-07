@@ -7,7 +7,7 @@ const sub6 = '../assets/Products/meatball-sub-6.jpeg';
 const sub7 = '../assets/Products/meatball-sub-7.jpeg';
 const sub8 = '../assets/Products/meatball-sub-8.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { TOMATO_SAUCE, HOAGIE_BREAD, MOZZARELLA_CHEESE, GROUND_BEEF, EGG, BREADCRUMBS, ITALIAN_SEASONING, ONION_POWDER, SALT, BLACK_PEPPER } = require('./ingredients');
 const { DAIRY } = require('./ingredient-categories');
 
@@ -81,17 +81,18 @@ module.exports = {
         { note: 'The original recipe says to broil for 3 minutes, but it burned the bread pretty badly. I recommend starting it at 2 minutes.' },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store ingredients separately.'
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Cook per original recipe.',
+        },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

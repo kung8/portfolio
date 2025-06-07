@@ -16,7 +16,7 @@ const vanillaUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-unmixed.jp
 const sugarYolksMixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-mixed.jpeg';
 const sugarYolksUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-unmixed.jpeg';
 const { waitTime } = require('./cheesecake-factory-cheesecake');
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { HEAVY_CREAM, VANILLA_BEAN, EGG_YOLK, HOT_WATER, WHITE_SUGAR } = require('./ingredients');
 
 const CREAM = 'Cream';
@@ -69,7 +69,6 @@ module.exports = {
         { step: 'Scrape the seeds with a knife and place on top of the sugar.', section: VANILLA_SUGAR, img: vanillaUnmixed },
         { step: 'Use another spoon or knife to scrape off the residual seeds from the knife. Repeat as needed.', section: VANILLA_SUGAR },
         { step: 'Mix and submerge the empty pods in the sugar.', section: VANILLA_SUGAR, img: vanillaMixed },
-        { step: 'Keep this at room temperature for up to 2 weeks (for best flavor).', section: VANILLA_SUGAR },
 
         { step: 'Preheat the oven to 325ºF.', section: SECTIONS.MAIN },
         { step: 'Over medium-high heat, add heavy cream and scraped vanilla beans to a saucepan.', section: SECTIONS.MAIN, img: [beanSaucepan, cream] },
@@ -94,17 +93,18 @@ module.exports = {
         { step: 'Let the crème brûlée cool for at least 5 minutes before serving.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instruction: 'Store the sugar topping separately from the crème brûlée. The sugar topping can be stored in an airtight container at room temperature for up to 2 weeks.',
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.BROIL,
+            instruction: 'Broil for 3 to 5 minutes until the sugar is light gold.',
+        },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };

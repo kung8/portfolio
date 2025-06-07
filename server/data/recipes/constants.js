@@ -185,6 +185,7 @@ const PROTEIN = {
 const REHEAT_METHODS = {
     AIR_FRY: 'Air Fry',
     BAKE: 'Bake',
+    BROIL: 'Broil',
     DEEP_FRY: 'Deep Fry',
     DOUBLE_BOIL: 'Double Boil',
     GRILL: 'Grill',
@@ -261,6 +262,7 @@ const SECTIONS = {
     PREP_SALAD: 'Prep Salad',
     PREP_DIP: 'Prep Dip',
     PREP_SEASONINGS: 'Prep Seasonings',
+    PREP_EGGS: 'Prep Eggs',
     SEASON: 'Season',
 
     MAKE_DOUGH: 'Make Dough',

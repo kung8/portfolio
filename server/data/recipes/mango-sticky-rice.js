@@ -7,7 +7,7 @@ const mango6 = '../assets/Products/mango-sticky-rice-6.jpeg';
 const mango7 = '../assets/Products/mango-sticky-rice-7.jpeg';
 const mango8 = '../assets/Products/mango-sticky-rice-8.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const { COCONUT_MILK, SALT, MANGO, SWEET_RICE, BROWN_SUGAR } = require('./ingredients');
 
 const MAKE_STICKY_RICE = 'Make Sticky Rice';
@@ -81,17 +81,17 @@ module.exports = {
         { note: 'Make sure the water does not touch the basket. If it does, the rice will boil instead of steam.' },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave the sticky rice in 15-second intervals until warm.',
+        },
     ],
-    mealPrep: false,
+    mealPrep: true,
 };
