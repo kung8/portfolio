@@ -1,12 +1,15 @@
-// const example = '../assets/Products/example.jpeg';
+const suey1 = '../assets/Products/chop-suey-1.jpeg';
+const suey2 = '../assets/Products/chop-suey-2.jpeg';
+const suey3 = '../assets/Products/chop-suey-3.jpeg';
+const suey4 = '../assets/Products/chop-suey-4.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, BAKING_SODA, VEGETABLE_OIL, GARLIC, WHITE_ONION, CARROT, BABY_BOK_CHOY, MUSHROOM, BEAN_SPROUT, CORNSTARCH, LIGHT_SOY_SAUCE, OYSTER_SAUCE, SHAOXING_WINE, SESAME_OIL, WHITE_PEPPER, WATER } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Chop Suey',
     name: 'Chop Suey',
-    img: '',
+    img: suey4,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -58,8 +61,8 @@ module.exports = {
         { step: `In a medium bowl, combine all the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
         { step: 'Over high heat, heat oil in a wok.', section: SECTIONS.STIR_FRY },
         { step: 'Add garlic and onion. Cook for a minute.', section: SECTIONS.STIR_FRY },
-        { step: 'Add chicken. Cook until chicken is no longer pink (for a few minutes).', section: SECTIONS.STIR_FRY },
-        { step: 'Add carrots, boy choy, and mushroom. Stir fry for a minute.', section: SECTIONS.STIR_FRY },
+        { step: 'Add chicken. Cook until chicken is no longer pink (for a few minutes).', section: SECTIONS.STIR_FRY, img: [suey1, suey2] },
+        { step: 'Add carrots, boy choy, and mushroom. Stir fry for a minute.', section: SECTIONS.STIR_FRY, img: suey3 },
         { step: 'Add bean sprouts and sauce. Cook until the sauce thickens and the vegetables should be crisp.', section: SECTIONS.STIR_FRY },
         { step: 'Serve with rice.', section: SECTIONS.SERVE },
     ],
