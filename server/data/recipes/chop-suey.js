@@ -43,7 +43,7 @@ module.exports = {
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: SECTIONS.STIR_FRY },
         { ...WHITE_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'sliced', section: SECTIONS.STIR_FRY },
         { ...CARROT, amount: 3, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.STIR_FRY },
-        { ...BABY_BOK_CHOY, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.STIR_FRY },
+        { ...BABY_BOK_CHOY, amount: 3, unit: '', additionalDetails: 'chopped', section: SECTIONS.STIR_FRY },
         { ...MUSHROOM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'sliced', section: SECTIONS.STIR_FRY },
         { ...BEAN_SPROUT, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.STIR_FRY },
 
