@@ -141,9 +141,9 @@ const projects = [
             'Redux Persist',
             'React Router Dom',
         ],
-        url: 'http://159.65.98.93:5432/#/',
-        domain: true,
-        hosted: true,
+        url: null,
+        domain: false,
+        hosted: false,
         show: true,
     },
     {
@@ -165,9 +165,8 @@ const projects = [
             'Twilio',
         ],
         url: 'http://159.65.98.93:8586/#/',
-        // url: 'https://aladonerecipes.com',
         domain: false,
-        hosted: false,
+        hosted: true,
         show: true,
     },
     {
