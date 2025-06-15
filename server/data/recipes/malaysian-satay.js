@@ -1,4 +1,7 @@
-const satay = '../assets/Products/malaysian-satay.jpeg';
+const satay1 = '../assets/Products/malaysian-satay-1.jpeg';
+const satay2 = '../assets/Products/malaysian-satay-2.jpeg';
+const satay3 = '../assets/Products/malaysian-satay-3.jpeg';
+
 const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const {
     CHICKEN_THIGH,
@@ -23,7 +26,7 @@ module.exports = {
     wip: true,
     cardName: 'Malaysian Satay',
     name: 'Malaysian Satay',
-    img: satay,
+    img: satay3,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -77,7 +80,7 @@ module.exports = {
     directions: [
         { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients except the chicken. Mix.`, section: SECTIONS.MARINATE_CHICKEN },
         { step: 'Add the chicken pieces. Mix well.', section: SECTIONS.MARINATE_CHICKEN },
-        { step: 'Marinate for at least 2 hours (or overnight).', section: SECTIONS.MARINATE_CHICKEN },
+        { step: 'Marinate for at least 2 hours (or overnight).', section: SECTIONS.MARINATE_CHICKEN, img: satay1 },
 
         { step: 'Preheat the oven to 450ºF.', section: SECTIONS.BAKE },
         { step: 'Line a baking sheet with foil.', section: SECTIONS.BAKE },
@@ -85,7 +88,7 @@ module.exports = {
         { step: 'Brush with oil.', section: SECTIONS.BAKE },
         { step: 'Season with salt and pepper.', section: SECTIONS.BAKE },
         { step: 'Place prepped skewers onto baking sheet.', section: SECTIONS.BAKE },
-        { step: 'Bake the satay until cooked through (about 12 to 15 minutes).', section: SECTIONS.BAKE },
+        { step: 'Bake the satay until cooked through (about 12 to 15 minutes).', section: SECTIONS.BAKE, img: satay2 },
 
         { step: `In a medium bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
         { step: 'Add up to 3 tablespoons of water depending on thickness preference.', section: SECTIONS.PREP_SAUCE },
