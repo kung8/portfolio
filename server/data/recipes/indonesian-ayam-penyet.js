@@ -1,5 +1,10 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const penyet1 = '../assets/Products/ayam-penyet-1.jpeg';
+const penyet2 = '../assets/Products/ayam-penyet-2.jpeg';
+const penyet3 = '../assets/Products/ayam-penyet-3.jpeg';
+const penyet4 = '../assets/Products/ayam-penyet-4.jpeg';
+const penyet5 = '../assets/Products/ayam-penyet-5.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { GARLIC, SHALLOT, GINGER, CORIANDER_POWDER, SALT, CHICKEN_THIGH, WATER, VEGETABLE_OIL, CURRY_LEAF, ROMA_TOMATO, RED_CHILI, KEY_LIME_JUICE, WHITE_SUGAR, SHRIMP_PASTE, LEMON_BASIL } = require('./ingredients');
 
 const GINGER_PASTE_SECTION = 'Ginger Paste';
@@ -12,10 +17,9 @@ const FRY_CHICKEN = 'Fry Chicken';
 const MAKE_SAMBAL = 'Make Sambal';
 
 module.exports = {
-    wip: true,
     cardName: 'Ayam Penyet',
     name: 'Indonesian Ayam Penyet',
-    img: '',
+    img: penyet5,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -64,10 +68,10 @@ module.exports = {
         { name: 'pan' },
     ],
     directions: [
-        { step: `In a mortar, combine the "${GINGER_PASTE_SECTION}" section ingredients. Pound into a paste.`, section: MAKE_GINGER_PASTE },
+        { step: `In a mortar, combine the "${GINGER_PASTE_SECTION}" section ingredients. Pound into a paste.`, section: MAKE_GINGER_PASTE, img: [penyet1, penyet2] },
         { step: 'In a pot, combine the ginger paste, chicken, water and curry leaves.', section: BOIL_CHICKEN },
-        { step: 'Over high heat, bring the water to a boil.', section: BOIL_CHICKEN },
-        { step: 'Reduce heat. Let simmer until cooked through (about 20 minutes).', section: BOIL_CHICKEN },
+        { step: 'Over high heat, bring the water to a boil.', section: BOIL_CHICKEN, img: penyet3 },
+        { step: 'Reduce heat. Let simmer until cooked through (about 20 minutes).', section: BOIL_CHICKEN, img: penyet4 },
         { step: 'Over medium-high heat, heat oil in a pan.', section: FRY_CHICKEN },
         { step: 'Add the boiled chicken to the pan. Fry until golden brown (about 5 to 10 minutes).', section: FRY_CHICKEN },
 
@@ -79,6 +83,10 @@ module.exports = {
         { step: 'Set aside.', section: MAKE_SAMBAL },
 
         { step: 'Serve and enjoy this with a side of sambal or top with "Javanese Chicken Coconut Curry".', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'It wasn\'t quite like what I had in Singapore, but it was still delicious. I would recommend deep frying it and actually dredging the chicken in panko breadcrumbs after it has been boiled. I will try this next time.' },
+        { note: 'If you want to eat my favorite Ayam Penyet in the world, go to "Riverside Indonesian BBQ" in the Kopitiam food court at Plaza Singapura.' }
     ],
     store: [
         {
