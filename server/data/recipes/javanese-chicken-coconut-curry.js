@@ -1,4 +1,10 @@
-// const example = '../assets/Products/example.jpeg';
+const curry1 = '../assets/Products/javanese-coconut-curry-1.jpeg';
+const curry2 = '../assets/Products/javanese-coconut-curry-2.jpeg';
+const curry3 = '../assets/Products/javanese-coconut-curry-3.jpeg';
+const curry4 = '../assets/Products/javanese-coconut-curry-4.jpeg';
+const curry5 = '../assets/Products/javanese-coconut-curry-5.jpeg';
+const curry6 = '../assets/Products/javanese-coconut-curry-6.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { MACADAMIA_NUT, CORIANDER, SHALLOT, GARLIC, RED_CHILI, WATER, CHICKEN, LEMONGRASS, KAFFIR_LIME_LEAF, CINNAMON_STICK, COCONUT_MILK, FRIED_SHALLOTS, JASMINE_RICE, LIME, GINGER, BROWN_SUGAR, VEGETABLE_OIL } = require('./ingredients');
 
@@ -8,7 +14,7 @@ module.exports = {
     wip: true,
     cardName: 'Chicken Coconut Curry',
     name: 'Javanese Chicken Coconut Curry',
-    img: '',
+    img: curry6,
     recipeAuthor: 'Katrina Woodman',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -60,18 +66,21 @@ module.exports = {
     ],
     directions: [
         { step: 'Over medium-high heat, heat a dutch oven pot.', section: SECTIONS.COOK_CURRY },
-        { step: 'Add macadamia nut and coriander seed. Stir and cook until fragrant (about 2 minutes).', section: SECTIONS.COOK_CURRY },
-        { step: 'Pound in a mortar and pestle.', section: SECTIONS.COOK_CURRY },
-        { step: `Blend together the "${SHALLOT_MIXTURE_SECTION}" section ingredients until chopped.`, section: SECTIONS.COOK_CURRY },
+        { step: 'Add macadamia nut and coriander seed. Stir and cook until fragrant (about 2 minutes).', section: SECTIONS.COOK_CURRY, img: curry1 },
+        { step: 'Pound in a mortar and pestle.', section: SECTIONS.COOK_CURRY, img: [curry2, curry3] },
+        { step: `Blend together the "${SHALLOT_MIXTURE_SECTION}" section ingredients until chopped.`, section: SECTIONS.COOK_CURRY, img: curry4 },
         { step: 'Over medium-high heat, heat oil in a dutch oven pot.', section: SECTIONS.COOK_CURRY },
         { step: 'Cook the chicken in batches until browned (about 8 minutes).', section: SECTIONS.COOK_CURRY },
         { step: 'Transfer chicken to plate.', section: SECTIONS.COOK_CURRY },
-        { step: 'Over medium-low heat, add shallot mixture, lemongrass, kaffir lime, and cinnamon. Stir until fragrant (about 5 minutes).', section: SECTIONS.COOK_CURRY },
+        { step: 'Over medium-low heat, add shallot mixture, lemongrass, kaffir lime, and cinnamon. Stir until fragrant (about 5 minutes).', section: SECTIONS.COOK_CURRY, img: curry5 },
         { step: 'Add chicken. Toss to coat.', section: SECTIONS.COOK_CURRY },
         { step: 'Reduce to low heat. Add coconut milk and cover.', section: SECTIONS.COOK_CURRY },
         { step: 'Stir occasionally and cook until chicken is tender (about 30 minutes).', section: SECTIONS.COOK_CURRY },
         { step: 'Uncover. Simmer until sauce thickens (about 5 minutes).', section: SECTIONS.COOK_CURRY },
         { step: 'Enjoy this over turmeric rice and topped with your favorite toppings.', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'I ended up not adding chicken to this since I was going to pair it with another chicken recipe.' }
     ],
     store: [
         {
