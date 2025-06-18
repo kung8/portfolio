@@ -1641,6 +1641,7 @@ const INGREDIENTS = {
         FUDGE_STRIPES_COOKIES: { name: 'fudge stripes cookies', category: INGREDIENT_CATEGORY.SNACKS },
         FUNYONS: { name: 'funyons', category: INGREDIENT_CATEGORY.SNACKS },
         GARDEN_SALSA_SUN_CHIPS: { name: 'garden salsa sun chips', category: INGREDIENT_CATEGORY.SNACKS },
+        GLUTEN_FREE_OREO: { name: 'gluten free oreo', category: INGREDIENT_CATEGORY.SNACKS },
         GOLDFISH_CRACKERS: { name: 'goldfish crackers', category: INGREDIENT_CATEGORY.SNACKS },
         GRANDMAS_CHOCOLATE_CHIP_COOKIES: { name: 'grandma\'s chocolate chip cookies', category: INGREDIENT_CATEGORY.SNACKS },
         GRANDMAS_OATMEAL_RAISINS_COOKIES: { name: 'grandma\'s oatmeal raisins cookies', category: INGREDIENT_CATEGORY.SNACKS },
