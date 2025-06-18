@@ -48,9 +48,9 @@ module.exports = {
 
         { ...COOKIE_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: COOKIE_BUTTER_DRIZZLE },
 
-        { ...WHIPPED_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed', optional: true, section: WHIPPED_CREAM },
-        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.SPLASH, additionalDetails: '', optional: true, section: WHIPPED_CREAM },
-        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: true, section: WHIPPED_CREAM },
+        { ...WHIPPED_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed', optional: true, section: WHIPPED_CREAM_SECTION },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.SPLASH, additionalDetails: '', optional: true, section: WHIPPED_CREAM_SECTION },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: true, section: WHIPPED_CREAM_SECTION },
 
         { ...BISCOFF_COOKIES, amount: '', unit: '', additionalDetails: 'crushed', optional: true, section: SECTIONS.TOPPINGS },
     ],

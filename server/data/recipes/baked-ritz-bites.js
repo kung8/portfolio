@@ -1,15 +1,16 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const bites1 = '../assets/Products/baked-ritz-bites-1.jpeg';
+const bites2 = '../assets/Products/baked-ritz-bites-2.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { RITZ_CRACKERS, HAVARTI_CHEESE, BUTTER_PICKLE_CHIPS, EVERYTHING_BAGEL_SEASONING } = require('./ingredients');
 
 const PREP_CRACKER_BITES = 'Prep Cracker Bites';
 const BAKE_CRACKER_BITES = 'Bake Cracker Bites';
 
 module.exports = {
-    wip: true,
     cardName: 'Baked Ritz Bites',
     name: 'Baked Ritz Bites',
-    img: '',
+    img: bites2,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -44,7 +45,7 @@ module.exports = {
         { step: 'Line a baking sheet with aluminum foil.', section: PREP_CRACKER_BITES },
         { step: 'Lay out ritz crackers on baking sheet in a single row.', section: PREP_CRACKER_BITES },
         { step: 'Layer each cracker with a pickle and cheese.', section: PREP_CRACKER_BITES },
-        { step: 'Sprinkle everything bagel seasoning over each.', section: PREP_CRACKER_BITES },
+        { step: 'Sprinkle everything bagel seasoning over each.', section: PREP_CRACKER_BITES, img: bites1 },
         { step: 'Bake until the cheese has melted (about 5 to 10 minutes).', section: BAKE_CRACKER_BITES },
         { step: 'Enjoy this delicious quick snack.', section: SECTIONS.SERVE },
     ],
