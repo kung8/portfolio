@@ -25,6 +25,44 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: NO_DATE,
+            title: "To Marry Is Madness",
+            author: ["Ashtyn Newbold"],
+            source: ["Ashtyn Newbold"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Charming Artemis",
+            author: ["Sarah M. Eden"],
+            source: ["Debra's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
             date: IN_PROGRESS,
             title: "Tress of the Emerald Sea",
             author: ["Brandon Sanderson"],
@@ -62,6 +100,30 @@ module.exports = {
                     pages: [67],
                     thoughts: "That's a funny description of librarian. My love life matches a librarians...",
                     context: "Brandon Sanderson describes the vines that sprouted from the spores."
+                },
+                {
+                    text: "It might seem that the person who can feel for others is doomed in life. Isn't one person's pain enough? Why must a person like Tress feel for two, or more? Yet I've found that the people who are the happiest are the ones who learn best how to feel. It takes practice, you know. Effort. And those who (late in life) have been feeling for two, three, or a thousand different people...well, turns out they've had a leg up on everyone else all along. Empathy is an emotional loss leader. It pays for itself eventually.",
+                    pages: [85],
+                    thoughts: "Great insight into empathy. I think those that understand empathy are the best leaders and friends and pretty much everything.",
+                    context: "Tress was alone on a ship and was thinking how scared Charlie must be."
+                },
+                {
+                    text: "Salay also had an instinct for what people were feeling, and she'd noted Tress's dedication to her scrubbing. A woman who did such a simple duty with exactness...well, in Salay's experience that sort of thing scaled upward. Same way you would be more likely to lend your best flute to someone who treated their own battered one with respect.",
+                    pages: [133, 134],
+                    thoughts: "One we don't always know the impact of our actions. We should always give 100% effort to everything that we do.",
+                    context: "Tress worked really hard and was noticed by Salay, the helmswoman of the ship."
+                },
+                {
+                    text: "'And because we couldn't see the troubles,' Huck agreed. 'Maybe we didn't want to see them. When you're young, there's always someone else to deal with the problems.'",
+                    pages: [263],
+                    thoughts: "While you are young, you have problems, but typically your parents or guardians deal with them. As you grow up, you have to learn to deal with your own problems.",
+                    context: "Tress is talking about her childhood."
+                },
+                {
+                    text: "In that moment, Tress felt like something Fort had cooked. Grimy, crusty, and barely able to fulfull its intended purpose. She shrank down before the weight of Salay's hope.",
+                    pages: [332],
+                    thoughts: "I thought it was a beautiful description of how Tress felt. I think we can all relate to feeling like we are not enough and might not meet expectations of others or even ourselves.",
+                    context: "Tress is feeling the weight of Salay's hope that she can save the crew."
                 },
                 {
                     text: "",
