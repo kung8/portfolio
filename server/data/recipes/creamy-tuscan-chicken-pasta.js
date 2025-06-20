@@ -81,7 +81,7 @@ module.exports = {
         { step: 'Enjoy this Italian dish warm.', section: SECTIONS.SERVE, img: pasta10 },
     ],
     notes: [
-        { note: 'This dish was really good but a little dry which caused it to stick to the pot. I have increased the liquids ratio 3:2 from the original recipe.' },
+        { note: 'This dish was really good but a little dry which caused it to stick to the pot. I have increased the liquids ratio 3:2 from the original recipe. If you have the time I think the "Marry Me Chicken" recipe was overall better, but for a quicker meal this turned out well.' },
     ],
     store: [
         {
