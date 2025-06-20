@@ -1,14 +1,23 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const pasta1 = '../assets/Products/creamy-tuscan-chicken-pasta-1.jpeg';
+const pasta2 = '../assets/Products/creamy-tuscan-chicken-pasta-2.jpeg';
+const pasta3 = '../assets/Products/creamy-tuscan-chicken-pasta-3.jpeg';
+const pasta4 = '../assets/Products/creamy-tuscan-chicken-pasta-4.jpeg';
+const pasta5 = '../assets/Products/creamy-tuscan-chicken-pasta-5.jpeg';
+const pasta6 = '../assets/Products/creamy-tuscan-chicken-pasta-6.jpeg';
+const pasta7 = '../assets/Products/creamy-tuscan-chicken-pasta-7.jpeg';
+const pasta8 = '../assets/Products/creamy-tuscan-chicken-pasta-8.jpeg';
+const pasta9 = '../assets/Products/creamy-tuscan-chicken-pasta-9.jpeg';
+const pasta10 = '../assets/Products/creamy-tuscan-chicken-pasta-10.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, UNSALTED_BUTTER, GARLIC, SUN_DRIED_TOMATOES, ITALIAN_SEASONING, HEAVY_CREAM, MILK, PARMESAN_CHEESE, BABY_SPINACH, PENNE } = require('./ingredients');
 
 const COMBINE = 'Combine';
 
 module.exports = {
-    wip: true,
     cardName: 'Creamy Tuscan Chicken',
     name: 'Creamy Tuscan Chicken Pasta',
-    img: '',
+    img: pasta9,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -33,11 +42,11 @@ module.exports = {
 
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.SAUCE },
-        { ...SUN_DRIED_TOMATOES, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'drained', section: SECTIONS.SAUCE },
+        { ...SUN_DRIED_TOMATOES, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'drained', section: SECTIONS.SAUCE },
         { ...ITALIAN_SEASONING, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
-        { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.PASTA },
-        { ...MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.PASTA },
+        { ...HEAVY_CREAM, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.PASTA },
+        { ...MILK, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.PASTA },
         { ...PARMESAN_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: SECTIONS.PASTA },
         { ...PENNE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.PASTA },
 
@@ -53,23 +62,26 @@ module.exports = {
     ],
     directions: [
         { step: 'Pat chicken dry.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Season chicken with salt and pepper.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Season chicken with salt and pepper.', section: SECTIONS.COOK_CHICKEN, img: pasta1 },
         { step: 'Over medium-high heat, heat olive oil in a dutch oven pot.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Add chicken to pot. Cook until both sides are browned (for about 3 to 4 minutes).', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Add chicken to pot. Cook until both sides are browned (for about 3 to 4 minutes).', section: SECTIONS.COOK_CHICKEN, img: pasta2 },
         { step: 'Remove the chicken from the pot and place on a cutting board.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Cut the chicken into 1 inch pieces. Set aside.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Cut the chicken into 1 inch pieces. Set aside.', section: SECTIONS.COOK_CHICKEN, img: pasta3 },
 
         { step: 'Over medium heat, melt butter in the dutch oven pot.', section: SECTIONS.COOK_SAUCE },
-        { step: `Add the rest of the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Add the rest of the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE, img: pasta4 },
         { step: 'Saute until it becomes fragrant.', section: SECTIONS.COOK_SAUCE },
 
-        { step: `Add the "${SECTIONS.PASTA}" section ingredients to the pot. Stir.`, section: SECTIONS.COOK_PASTA },
-        { step: 'Cook until the pasta is al dente (for about 10 minutes). Stir occasionally.', section: SECTIONS.COOK_PASTA },
+        { step: `Add the "${SECTIONS.PASTA}" section ingredients to the pot. Stir.`, section: SECTIONS.COOK_PASTA, img: pasta5 },
+        { step: 'Cook until the pasta is al dente (for about 10 minutes). Stir occasionally.', section: SECTIONS.COOK_PASTA, img: pasta6 },
 
-        { step: 'Add chicken and cook until the chicken is almost cooked through.', section: COMBINE },
-        { step: 'Add the spinach and cook until it wilts (about 1 to 2 minutes).', section: COMBINE },
+        { step: 'Add chicken and cook until the chicken is almost cooked through.', section: COMBINE, img: pasta7 },
+        { step: 'Add the spinach and cook until it wilts (about 1 to 2 minutes).', section: COMBINE, img: pasta8 },
 
-        { step: 'Enjoy this Italian dish.', section: SECTIONS.SERVE },
+        { step: 'Enjoy this Italian dish warm.', section: SECTIONS.SERVE, img: pasta10 },
+    ],
+    notes: [
+        { note: 'This dish was really good but a little dry which caused it to stick to the pot. I have increased the liquids ratio 3:2 from the original recipe.' },
     ],
     store: [
         {
