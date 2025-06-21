@@ -10,7 +10,7 @@ const bowl9 = '../assets/Products/piri-piri-chicken-bowl-9.jpeg';
 const bowl10 = '../assets/Products/piri-piri-chicken-bowl-10.jpeg';
 const bowl11 = '../assets/Products/piri-piri-chicken-bowl-11.jpeg';
 const bowl12 = '../assets/Products/piri-piri-chicken-bowl-12.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { CHICKEN_THIGH, OLIVE_OIL, LEMON_JUICE, GARLIC, THAI_CHILI_PEPPER, BROWN_SUGAR, OREGANO, SWEET_PAPRIKA, CAYENNE_PEPPER, SALT, CORN, BABY_ARUGULA, AVOCADO, BLACK_PEPPER, VEGETABLE_OIL, BASMATI_RICE, CHICKEN_BROTH, CRUSHED_TOMATOES, SMOKED_PAPRIKA, BAY_LEAF, CILANTRO, NANDOS_PERI_PERI_SAUCE, MAYONNAISE, DIJON_MUSTARD, HOT_SAUCE, CHIVE } = require('./ingredients');
 
 const CORN_SECTION = 'Corn';
@@ -45,7 +45,7 @@ module.exports = {
         { ...CHICKEN_THIGH, amount: 6, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'bone-in', section: SECTIONS.CHICKEN },
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...GARLIC, amount: 3, unit: '', additionalDetails: 'minced', section: SECTIONS.MARINADE },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MARINADE },
         { ...THAI_CHILI_PEPPER, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MARINADE },
         { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...OREGANO, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
@@ -74,7 +74,7 @@ module.exports = {
         { ...CILANTRO, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.RICE },
 
         { ...MAYONNAISE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: 1, unit: '', additionalDetails: 'minced', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.SAUCE },
         { ...DIJON_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...HOT_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },

@@ -82,7 +82,7 @@ module.exports = {
         { step: 'Pour hot cream over the chocolate chip mixture.', section: PREP_CHOCOLATE_FUDGE },
         { step: 'Let it melt (about 2 to 3 minutes).', section: PREP_CHOCOLATE_FUDGE },
         { step: 'Whisk until smooth.', section: PREP_CHOCOLATE_FUDGE },
-        { step: 'Set aside at room temperature.', section: PREP_CHOCOLATE_FUDGE },
+        { step: 'Let it completely cool to room temperature.', section: PREP_CHOCOLATE_FUDGE },
 
         { step: 'Spread an even layer of chocolate ice cream into the pan (you can decide the ratio of chocolate to vanilla).', section: PREP_ICE_CREAM_CAKE },
         { step: 'Freeze for 30 minutes. Take out the vanilla ice cream while the chocolate layer freezes.', section: PREP_ICE_CREAM_CAKE },
@@ -99,6 +99,9 @@ module.exports = {
         { step: 'Freeze overnight.', section: FREEZE_ICE_CREAM_CAKE },
 
         { step: 'Take cake out 10 minutes before slicing to soften it a little.', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'Ensure the fudge completely cools down before layering on the chocolate ice cream layer. It will melt the ice cream which causes the layer of fudge and cookie crumble to sink into the ice cream layer.' }
     ],
     store: [
         {
