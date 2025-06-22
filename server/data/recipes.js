@@ -95,6 +95,7 @@ const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
 const chineseSweetAndSourPork = require("./recipes/chinese-sweet-and-sour-pork");
 const chiveCakes = require("./recipes/chive-cakes");
 const chocolateButtercreamFrosting = require('./recipes/chocolate-buttercream-frosting');
+const chocolateCake = require('./recipes/chocolate-cake.js');
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateMousse = require("./recipes/chocolate-mousse");
 const chopSuey = require("./recipes/chop-suey");
@@ -620,6 +621,7 @@ const recipes = [
     carrotCake,
     carrotCakeScones,
     coffeeCake,
+    chocolateCake,
     chocolateButtercreamFrosting,
     peachCobbler,
     appleDumpCake,

@@ -6,6 +6,7 @@ const {
     BISCUITS,
     CHEDDAR_CHEESE,
 } = require('./ingredients');
+const biscuits = require('./biscuits-and-gravy');
 
 module.exports = {
     cardName: 'Breakfast Sandwich',
@@ -38,10 +39,10 @@ module.exports = {
     directions: [
         {
             step: 'Make fresh biscuits either from a pre-made dough or from scratch. Try out this ',
-            type: SECTIONS.MAIN,
+            section: SECTIONS.MAIN,
             link: {
                 text: 'biscuit recipe',
-                link: 'https://kevinung8.com/#/recipes/southern-biscuits-and-gravy',
+                link: `https://kevinung8.com/#/recipes/${biscuits.name}`,
                 additionalText: '.'
             }
         },

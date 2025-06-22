@@ -387,6 +387,7 @@ const YIELD_UNITS = {
     CUP: { s: 'cup', p: 'cups' },
     PINT: { s: 'pint', p: 'pints' },
     QUART: { s: 'quart', p: 'quarts' },
+    TABLESPOON: { s: 'tablespoon', p: 'tablespoons' },
 };
 
 module.exports = {

@@ -16,6 +16,7 @@ const VANILLA_SECTION = 'Vanilla';
 const CREAMING = 'Creaming';
 const PREP_POWDERED_SUGAR = 'Prep Powdered Sugar';
 const COMBINE_SUGAR = 'Combine Sugar';
+const COMBINE_VANILLA = 'Combine Vanilla';
 
 module.exports = {
     cardName: 'Buttercream Frosting',
@@ -29,7 +30,7 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.MIX],
     type: [TYPES.DESSERT],
-    yields: { amount: 72, unit: YIELD_UNITS.SERVING },
+    yields: { amount: 72, unit: YIELD_UNITS.TABLESPOON },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },

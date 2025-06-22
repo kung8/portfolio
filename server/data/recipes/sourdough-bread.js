@@ -16,6 +16,7 @@ const {
     SOURDOUGH_STARTER,
     WATER,
 } = require('./ingredients');
+const starter = require('./sourdough-starter');
 
 const BAKING = 'Baking';
 
@@ -36,7 +37,7 @@ module.exports = {
     waitTime: { amount: 10, unit: TIME_UNITS.HOUR },
     separated: true,
     ingredients: [
-        { ...SOURDOUGH_STARTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH, link: { id: 'sourdough-starter', url: 'recipes/sourdough-starter' } },
+        { ...SOURDOUGH_STARTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH, link: { id: starter.name, url: `recipes/${starter.name}` } },
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.DOUGH },
         { ...SALT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
