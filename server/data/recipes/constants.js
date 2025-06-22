@@ -198,6 +198,7 @@ const REHEAT_METHODS = {
     SLOW_COOK: 'Slow Cook',
     STEAM: 'Steam',
     STIR_FRY: 'Stir-Fry',
+    THAW: 'Thaw',
 };
 
 const SECTIONS = {
