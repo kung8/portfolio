@@ -1,4 +1,16 @@
-// const example = '../assets/Products/example.jpeg';
+const cake1 = '../assets/Products/ice-cream-cake-1.jpeg';
+const cake2 = '../assets/Products/ice-cream-cake-2.jpeg';
+const cake3 = '../assets/Products/ice-cream-cake-3.jpeg';
+const cake4 = '../assets/Products/ice-cream-cake-4.jpeg';
+const cake5 = '../assets/Products/ice-cream-cake-5.jpeg';
+const cake6 = '../assets/Products/ice-cream-cake-6.jpeg';
+const cake7 = '../assets/Products/ice-cream-cake-7.jpeg';
+const cake8 = '../assets/Products/ice-cream-cake-8.jpeg';
+const cake9 = '../assets/Products/ice-cream-cake-9.jpeg';
+const cake10 = '../assets/Products/ice-cream-cake-10.jpeg';
+const cake11 = '../assets/Products/ice-cream-cake-11.jpeg';
+const cake12 = '../assets/Products/ice-cream-cake-12.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { UNSALTED_BUTTER, SEMI_SWEET_CHOCOLATE_CHIPS, CORN_SYRUP, VANILLA_EXTRACT, SALT, HEAVY_CREAM, VANILLA_ICE_CREAM, CHOCOLATE_ICE_CREAM, SPRINKLES, WHIPPED_CREAM, GLUTEN_FREE_OREO } = require('./ingredients');
 
@@ -14,14 +26,13 @@ const DECORATE_ICE_CREAM_CAKE = 'Decorate Ice Cream Cake';
 const FREEZE_ICE_CREAM_CAKE = 'Freeze Ice Cream Cake';
 
 module.exports = {
-    wip: true,
     cardName: 'Ice Cream Cake',
     name: 'Ice Cream Cake',
-    img: '',
+    img: cake12,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.FREEZE],
@@ -72,36 +83,36 @@ module.exports = {
         { step: 'Line a baking sheet with a silicon baking mat.', section: PREP_COOKIE_CRUMBLE },
         { step: `In a small bowl, combine the "${COOKIE_CRUMBLE_SECTION}" section ingredients.`, section: PREP_COOKIE_CRUMBLE },
         { step: 'Spread the cookie crumble onto the baking sheet.', section: PREP_COOKIE_CRUMBLE },
-        { step: 'Bake for 8 to 10 minutes.', section: PREP_COOKIE_CRUMBLE },
+        { step: 'Bake for 8 to 10 minutes.', section: PREP_COOKIE_CRUMBLE, img: cake2 },
         { step: 'Let cool completely until room temperature.', section: PREP_COOKIE_CRUMBLE },
         { step: 'Break up any of the large clumps into smaller ones.', section: PREP_COOKIE_CRUMBLE },
         { step: 'Set aside.', section: PREP_COOKIE_CRUMBLE },
 
-        { step: `In a mixing bowl, combine all the "${CHOCOLATE_FUDGE_SECTION}" section ingredients except the heavy cream.`, section: PREP_CHOCOLATE_FUDGE },
+        { step: `In a mixing bowl, combine all the "${CHOCOLATE_FUDGE_SECTION}" section ingredients except the heavy cream.`, section: PREP_CHOCOLATE_FUDGE, img: cake3 },
         { step: 'In a microwavable bowl, microwave the whipping cream until just starting to boil (about 45 seconds to 1 minute).', section: PREP_CHOCOLATE_FUDGE },
-        { step: 'Pour hot cream over the chocolate chip mixture.', section: PREP_CHOCOLATE_FUDGE },
+        { step: 'Pour hot cream over the chocolate chip mixture.', section: PREP_CHOCOLATE_FUDGE, img: cake4 },
         { step: 'Let it melt (about 2 to 3 minutes).', section: PREP_CHOCOLATE_FUDGE },
-        { step: 'Whisk until smooth.', section: PREP_CHOCOLATE_FUDGE },
+        { step: 'Whisk until smooth.', section: PREP_CHOCOLATE_FUDGE, img: cake5 },
         { step: 'Let it completely cool to room temperature.', section: PREP_CHOCOLATE_FUDGE },
 
-        { step: 'Spread an even layer of chocolate ice cream into the pan (you can decide the ratio of chocolate to vanilla).', section: PREP_ICE_CREAM_CAKE },
+        { step: 'Spread an even layer of chocolate ice cream into the pan (you can decide the ratio of chocolate to vanilla).', section: PREP_ICE_CREAM_CAKE, img: cake1 },
         { step: 'Freeze for 30 minutes. Take out the vanilla ice cream while the chocolate layer freezes.', section: PREP_ICE_CREAM_CAKE },
-        { step: 'Take out cake pan from freezer.', section: PREP_ICE_CREAM_CAKE },
-        { step: 'Spread an even layer of chocolate fudge.', section: PREP_ICE_CREAM_CAKE },
-        { step: 'Sprinkle the cookie crumble in an even layer.', section: PREP_ICE_CREAM_CAKE },
+        { step: 'Take out cake pan from freezer.', section: PREP_ICE_CREAM_CAKE, img: cake6 },
+        { step: 'Spread an even layer of chocolate fudge.', section: PREP_ICE_CREAM_CAKE, img: cake7 },
+        { step: 'Sprinkle the cookie crumble in an even layer.', section: PREP_ICE_CREAM_CAKE, img: cake8 },
         { step: 'Freeze for 10 minutes.', section: PREP_ICE_CREAM_CAKE },
         { step: 'Take out cake pan from freezer.', section: PREP_ICE_CREAM_CAKE },
-        { step: 'Spread an even layer of vanilla ice cream.', section: PREP_ICE_CREAM_CAKE },
-        { step: 'Freeze until firm (about 2 to 3 hours).', section: PREP_ICE_CREAM_CAKE },
+        { step: 'Spread an even layer of vanilla ice cream.', section: PREP_ICE_CREAM_CAKE, img: cake9 },
+        { step: 'Freeze until firm (about 2 to 3 hours).', section: PREP_ICE_CREAM_CAKE, img: cake10 },
 
-        { step: 'Decorate the cake as desired.', section: DECORATE_ICE_CREAM_CAKE },
+        { step: 'Decorate the cake as desired.', section: DECORATE_ICE_CREAM_CAKE, img: cake11 },
 
         { step: 'Freeze overnight.', section: FREEZE_ICE_CREAM_CAKE },
 
         { step: 'Take cake out 10 minutes before slicing to soften it a little.', section: SECTIONS.SERVE },
     ],
     notes: [
-        { note: 'Ensure the fudge completely cools down before layering on the chocolate ice cream layer. It will melt the ice cream which causes the layer of fudge and cookie crumble to sink into the ice cream layer.' }
+        { note: 'Ensure the fudge completely cools down before layering on the chocolate ice cream layer. It will melt the ice cream which causes the layer of fudge and cookie crumble to sink into the ice cream layer. Add a little more time to the freezing process for the fudge and cookie crumble layer if you did not wait until it was completely cooled down (about 5 to 10 minutes). But I would caution to not allow this to happen all together and just be patient with the cooling of the fudge.' }
     ],
     store: [
         {

@@ -6,6 +6,7 @@ const cake5 = '../assets/Products/chocolate-cake-5.jpeg';
 const cake6 = '../assets/Products/chocolate-cake-6.jpeg';
 const cake7 = '../assets/Products/chocolate-cake-7.jpeg';
 const cake8 = '../assets/Products/chocolate-cake-8.jpeg';
+const cake9 = '../assets/Products/chocolate-cake-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, WHITE_SUGAR, COCOA_POWDER, BAKING_POWDER, BAKING_SODA, SALT, MILK, VEGETABLE_OIL, EGG, VANILLA_EXTRACT, WATER, UNSALTED_BUTTER } = require('./ingredients');
@@ -29,11 +30,11 @@ const DECORATE_CAKE = 'Decorate Cake';
 module.exports = {
     cardName: 'Chocolate Cake',
     name: 'Chocolate Cake',
-    img: cake8,
+    img: cake9,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -92,11 +93,14 @@ module.exports = {
         { step: 'Remove the cake from the pan. Allow it to completely cool before decorating.', section: COOL_CAKE },
 
         {
-            step: 'Decorate with whatever frosting, icing and other toppings. Try out this ', section: DECORATE_CAKE, link: {
+            step: 'Decorate with whatever frosting, icing and other toppings. Try out this ',
+            section: DECORATE_CAKE,
+            link: {
                 text: 'Chocolate Buttercream Frosting',
                 link: `https://kevinung8.com/#/recipes/${frosting.name}`,
                 additionalText: '.',
-            }
+            },
+            img: cake8,
         },
         { step: 'Enjoy this very moist cake.', section: SECTIONS.SERVE },
     ],
