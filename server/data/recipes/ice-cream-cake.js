@@ -10,6 +10,7 @@ const cake9 = '../assets/Products/ice-cream-cake-9.jpeg';
 const cake10 = '../assets/Products/ice-cream-cake-10.jpeg';
 const cake11 = '../assets/Products/ice-cream-cake-11.jpeg';
 const cake12 = '../assets/Products/ice-cream-cake-12.jpeg';
+const cake13 = '../assets/Products/ice-cream-cake-13.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { UNSALTED_BUTTER, SEMI_SWEET_CHOCOLATE_CHIPS, CORN_SYRUP, VANILLA_EXTRACT, SALT, HEAVY_CREAM, VANILLA_ICE_CREAM, CHOCOLATE_ICE_CREAM, SPRINKLES, WHIPPED_CREAM, GLUTEN_FREE_OREO } = require('./ingredients');
@@ -109,7 +110,7 @@ module.exports = {
 
         { step: 'Freeze overnight.', section: FREEZE_ICE_CREAM_CAKE },
 
-        { step: 'Take cake out 10 minutes before slicing to soften it a little.', section: SECTIONS.SERVE },
+        { step: 'Take cake out 10 minutes before slicing to soften it a little.', section: SECTIONS.SERVE, img: cake13 },
     ],
     notes: [
         { note: 'Ensure the fudge completely cools down before layering on the chocolate ice cream layer. It will melt the ice cream which causes the layer of fudge and cookie crumble to sink into the ice cream layer. Add a little more time to the freezing process for the fudge and cookie crumble layer if you did not wait until it was completely cooled down (about 5 to 10 minutes). But I would caution to not allow this to happen all together and just be patient with the cooling of the fudge.' }
