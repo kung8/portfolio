@@ -35,6 +35,7 @@ const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
 const blondie = require("./recipes/blondie");
 const blt = require("./recipes/blt");
 const blueberryBagels = require('./recipes/blueberry-bagels.js'); // TODO: finish adding recipe
+const blueberryFrenchToastCasserole = require('./recipes/blueberry-french-toast-casserole.js'); // TODO: finish adding recipe
 const breakfastBurrito = require("./recipes/breakfast-burrito");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
 const breakfastSausageBalls = require("./recipes/breakfast-sausage-balls");
@@ -67,6 +68,7 @@ const cheeseburgerSpringRolls = require('./recipes/cheeseburger-spring-rolls.js'
 const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
 const cherryAndCreamCheeseKolaches = require("./recipes/cherry-and-cream-cheese-kolaches");
 const cherryAndDarkChocolateCrostata = require("./recipes/cherry-and-dark-chocolate-crostata");
+const chewyChocolateChipCookies = require('./recipes/chewy-chocolate-chip-cookies.js'); // TODO: finish adding recipe
 const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenBiryani = require("./recipes/chicken-biryani");
 const chickenCordonBleu = require("./recipes/chicken-cordon-bleu");
@@ -188,7 +190,9 @@ const lemonCapelliniSalad = require("./recipes/lemon-capellini-salad");
 const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
 const lemonChickenOrzoSoup = require("./recipes/lemon-chicken-orzo-soup");
 const lemonChickenRamen = require("./recipes/lemon-chicken-ramen");
+const lemonFreezeBars = require('./recipes/lemon-freeze-bars.js'); // TODO: finish adding recipe
 const lentilSloppyJoes = require("./recipes/lentil-sloppy-joes");
+const loadedChickenCasserole = require('./recipes/loaded-chicken-casserole.js'); // TODO: finish adding recipe
 const lomoSaltado = require("./recipes/lomo-saltado");
 const macaroniSalad = require("./recipes/macaroni-salad");
 const malaysianBlackPepperChicken = require("./recipes/malaysian-black-pepper-chicken");
@@ -223,11 +227,13 @@ const paoDeQueijo = require("./recipes/pao-de-queijo");
 const parfait = require("./recipes/parfait");
 const pastaAlLimone = require("./recipes/pasta-al-limone");
 const pastaPomodoro = require("./recipes/pasta-pomodoro");
+const pastaSalad = require('./recipes/pasta-salad.js'); // TODO: finish adding recipe
 const peachCobbler = require("./recipes/peach-cobbler");
 const peanutBrittle = require("./recipes/peanut-brittle");
 const peanutButterCookies = require("./recipes/peanut-butter-cookies");
 const peanutButterCup = require("./recipes/peanut-butter-cup");
 const peanutButterThumbprintCookies = require("./recipes/peanut-butter-thumbprint-cookies");
+const peanutNoodlesStirFry = require('./recipes/peanut-noodles-stir-fry.js'); // TODO: finish adding recipe
 const pekingDuck = require("./recipes/peking-duck"); // TODO: find recipe 
 const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
 const peppermintBark = require("./recipes/peppermint-bark");
@@ -282,6 +288,7 @@ const spicyItalianFlatbread = require('./recipes/spicy-italian-flatbread.js'); /
 const springRolls = require('./recipes/spring-rolls.js'); // TODO: finish adding recipe
 const steak = require('./recipes/steak.js');
 const stickyToffeePudding = require("./recipes/sticky-toffee-pudding");
+const stuffedPepperCasserole = require('./recipes/stuffed-pepper-casserole.js'); // TODO: finish adding recipe
 const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
 const sushi = require("./recipes/sushi");
@@ -322,6 +329,7 @@ const recipes = [
     coconutChicken,
     drunkenNoodles,
     thaiPeanutSalad,
+    peanutNoodlesStirFry,
 
     // INDIAN
     chickenBiryani,
@@ -484,6 +492,7 @@ const recipes = [
     dijonChicken,
     monteCristoSandwich,
     cremeBruleeFrenchToast,
+    blueberryFrenchToastCasserole,
     croissants,
     cherryAndDarkChocolateCrostata,
 
@@ -520,6 +529,8 @@ const recipes = [
     kfcGravy,
     stuffing,
     greenBeanCasserole,
+    loadedChickenCasserole,
+    stuffedPepperCasserole,
     ovenBakedSalmon,
     steak,
     butteredCorn,
@@ -546,6 +557,7 @@ const recipes = [
     roastedAsparagus,
     sauteedSquash,
     mississippiMudPotatoes,
+    pastaSalad,
     macaroniSalad,
     bakedBreadedChicken,
     phillyCheesesteak,
@@ -638,6 +650,7 @@ const recipes = [
     peanutButterCup,
     snickerdoodle,
     chocolateChipCookies,
+    chewyChocolateChipCookies,
     peanutButterCookies,
     peanutButterThumbprintCookies,
     oatmealRaisinCookies,
@@ -651,6 +664,7 @@ const recipes = [
     tedLassoBiscuits,
     almondCroissantCookieBars,
     lemonBars,
+    lemonFreezeBars,
     appleTart,
     appleDumplings,
     appleTurnovers,
