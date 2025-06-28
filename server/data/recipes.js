@@ -254,6 +254,7 @@ const redLobsterCheddarBayBiscuits = require("./recipes/red-lobster-cheddar-bay-
 const reubenSandwich = require("./recipes/reuben-sandwich");
 const riceKrispyTreats = require("./recipes/rice-krispy-treats");
 const ricePilaf = require("./recipes/rice-pilaf");
+const roastedAsparagus = require('./recipes/roasted-asparagus.js');
 const roastedPorkBelly = require("./recipes/roasted-pork-belly");
 const roastedTurkey = require("./recipes/roasted-turkey");
 const rosemaryFries = require("./recipes/rosemary-fries");
@@ -539,6 +540,7 @@ const recipes = [
     pumpkinSoup,
     pumpkinSoup2,
     chili,
+    roastedAsparagus,
     sauteedSquash,
     mississippiMudPotatoes,
     macaroniSalad,
