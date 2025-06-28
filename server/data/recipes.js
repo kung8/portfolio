@@ -119,6 +119,7 @@ const cremeBrulee = require("./recipes/creme-brulee");
 const cremeBruleeFrenchToast = require('./recipes/creme-brulee-french-toast.js'); // TODO: finish adding recipe
 const crescentRolls = require("./recipes/crescent-rolls");
 const croissants = require("./recipes/croissants");
+const curryPuff = require('./recipes/curry-puff.js'); // TODO: finish adding recipe
 const deconstructedAppleCrisp = require('./recipes/deconstructed-apple-crisp.js'); // TODO: finish adding recipe
 const dijonChicken = require("./recipes/dijon-chicken");
 const dinnerRolls = require("./recipes/dinner-rolls");
@@ -407,6 +408,7 @@ const recipes = [
     koloMee,
     malaysianLemonChicken,
     malaysianBlackPepperChicken,
+    curryPuff,
 
     // INDONESIAN
     javaneseChickenCoconutCurry,
