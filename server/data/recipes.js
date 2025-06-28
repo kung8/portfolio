@@ -279,6 +279,7 @@ const southwestSalad = require("./recipes/southwest-salad"); // TODO: find recip
 const spanishRice = require("./recipes/spanish-rice");
 const spicyItalianFlatbread = require('./recipes/spicy-italian-flatbread.js'); // TODO: finish adding recipe
 const springRolls = require('./recipes/spring-rolls.js'); // TODO: finish adding recipe
+const steak = require('./recipes/steak.js');
 const stickyToffeePudding = require("./recipes/sticky-toffee-pudding");
 const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
@@ -519,6 +520,7 @@ const recipes = [
     stuffing,
     greenBeanCasserole,
     ovenBakedSalmon,
+    steak,
     butteredCorn,
     bbqPulledPorkAndFixins,
     bakedMacaroniAndCheese,
