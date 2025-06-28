@@ -299,6 +299,8 @@ const SECTIONS = {
     MIX: 'Mix',
     SIMMER: 'Simmer',
     SAUTE: 'Saute',
+    COOL: 'Cool',
+    CHILL: 'Chill',
 };
 
 const STORAGE_CONTAINER = {

@@ -17,6 +17,7 @@ const balsamicTomatoBruschetta = require("./recipes/balsamic-tomato-bruschetta")
 const bananaBread = require("./recipes/banana-bread");
 const bangBangShrimp = require('./recipes/bang-bang-shrimp.js');
 const basilPesto = require("./recipes/basil-pesto");
+const basqueCheesecake = require('./recipes/basque-cheesecake.js');
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const bearnaiseSauce = require("./recipes/bearnaise-sauce");
@@ -622,6 +623,7 @@ const recipes = [
     bananaBread,
     iceCreamCake,
     cheesecake,
+    basqueCheesecake,
     carrotCake,
     carrotCakeScones,
     coffeeCake,
