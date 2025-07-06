@@ -158,6 +158,7 @@ const guacamole = require("./recipes/guacamole");
 const hamburger = require("./recipes/hamburger");
 const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
 const hawaiianGlazedHam = require("./recipes/hawaiian-glazed-ham");
+const hawaiianGrilledPineapple = require('./recipes/hawaiian-grilled-pineapple.js');
 const hawaiianHaystacks = require("./recipes/hawaiian-haystacks");
 const hawaiianTeriyakiChicken = require('./recipes/hawaiian-teriyaki-chicken.js');
 const hoboDinner = require("./recipes/hobo-dinner");
@@ -530,6 +531,7 @@ const recipes = [
     roastedTurkey,
     hawaiianGlazedHam,
     hawaiianTeriyakiChicken,
+    hawaiianGrilledPineapple,
     mashPotatoes,
     kfcGravy,
     stuffing,

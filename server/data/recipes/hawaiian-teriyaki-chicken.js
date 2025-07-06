@@ -14,7 +14,7 @@ module.exports = {
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
-    genre: [GENRES.AMERICAN],
+    genre: [GENRES.AMERICAN, GENRES.HAWAIIAN],
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN, TYPES.MAIN_COURSE],
