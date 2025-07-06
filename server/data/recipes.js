@@ -36,6 +36,7 @@ const blondie = require("./recipes/blondie");
 const blt = require("./recipes/blt");
 const blueberryBagels = require('./recipes/blueberry-bagels.js'); // TODO: finish adding recipe
 const blueberryFrenchToastCasserole = require('./recipes/blueberry-french-toast-casserole.js'); // TODO: finish adding recipe
+const bostonCreamHawaiianRollDonuts = require('./recipes/boston-cream-hawaiian-roll-donuts.js');
 const breakfastBurrito = require("./recipes/breakfast-burrito");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
 const breakfastSausageBalls = require("./recipes/breakfast-sausage-balls");
@@ -646,6 +647,7 @@ const recipes = [
     peachCobbler,
     appleDumpCake,
     pineappleUpsideDownCake,
+    bostonCreamHawaiianRollDonuts,
     pretzel,
     peanutBrittle,
     peppermintBark,

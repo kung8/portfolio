@@ -711,6 +711,9 @@ const INGREDIENTS = {
         WHIPPED_CREAM: {
             name: 'whipped cream', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1583130879758-db8ac95a9b68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTgxMjcwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        WHIPPED_TOPPING: {
+            name: 'whipped topping', category: INGREDIENT_CATEGORY.DAIRY
+        },
         WHOLE_MILK: {
             name: 'whole milk', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1550583724-b2692b85b150?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY3NjUwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
