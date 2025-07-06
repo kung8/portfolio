@@ -26,6 +26,1108 @@ module.exports = {
         // },
         {
             date: NO_DATE,
+            title: "The Priory of the Orange Tree",
+            author: ["Samantha Shannon"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Circe",
+            author: ["Madeline Miller"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "An Ember in the Ashes",
+            author: ["Sabaa Tahir"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "A Torch Against the Night",
+            author: ["Sabaa Tahir"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "A Reaper at the Gates",
+            author: ["Sabaa Tahir"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "A Sky Beyond the Storm",
+            author: ["Sabaa Tahir"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Kaikeyi",
+            author: ["Vaishnavi Patel"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Piranesi",
+            author: ["Susanna Clarke"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Assassin's Apprentice",
+            author: ["Robin Hobb"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Royal Assassin",
+            author: ["Robin Hobb"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Three-Body Problem",
+            author: ["Liú Cíxīn"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Beasts of Extraordinary Circumstance",
+            author: ["Ruth Emmie Lang"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Shorefall",
+            author: ["Robert Jackson Bennett"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Shadow and Betrayal",
+            author: ["Daniel Abraham"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "This Savage Song",
+            author: ["Victoria Schwab"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Our Dark Duet",
+            author: ["Victoria Schwab"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Legends & Lattes",
+            author: ["Travis Baldree"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Black Prism",
+            author: ["Brent Weeks"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Yolk",
+            author: ["Mary H.K. Choi"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Every Heart a Doorway",
+            author: ["Seanan McGuire"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "A Tale for the Time Being",
+            author: ["Ruth Ozeki"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Girl in Translation",
+            author: ["Jean Kwok"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Song of Achilles",
+            author: ["Madeline Miller"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Spinning Silver",
+            author: ["Naomi Novik"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Botany for Gardeners",
+            author: ["Brian Capon"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Weaver and the Witch Queen",
+            author: ["Genevieve Gornichec"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Collected Regrets of Clover",
+            author: ["Mikki Brammer"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Yumi and the Nightmare Painter",
+            author: ["Brandon Sanderson"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Lies of Locke Lamora",
+            author: ["Scott Lynch"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Spear Cuts Through Water",
+            author: ["Simon Jimenez"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Illuminae: The Illuminae Files #1",
+            author: ["Kaufman", "Jay Kristoff"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Anxious People",
+            author: ["Fredrik Backman"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Wolf and the Woodsman",
+            author: ["Ava Reid"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Beautiful Ones",
+            author: ["Silvia Moreno-Garcia"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Beartown",
+            author: ["Fredrik Backman"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "All the Ugly and Wonderful Things",
+            author: ["Bryn Greenwood"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Overstory",
+            author: ["Richard Powers"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Cosmos",
+            author: ["Carl Sagan"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "24 Hours in Ancient Egypt",
+            author: ["Donald P. Ryan"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "How to be a Victorian",
+            author: ["Ruth Goodman"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Medieval Woman",
+            author: ["Ann Baer"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Hunger of the Gods",
+            author: ["John Gwynne"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Shadow of the Gods",
+            author: ["John Gwynne"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Burning God",
+            author: ["R.F. Kuang"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Dragon Republic",
+            author: ["R.F. Kuang"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Poppy War",
+            author: ["R.F. Kuang"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Rhythm of War",
+            author: ["Brandon Sanderson"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Oathbringer",
+            author: ["Brandon Sanderson"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Words of Radiance",
+            author: ["Brandon Sanderson"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Way of Kings",
+            author: ["Brandon Sanderson"],
+            source: ["Samantha Pham's Bookshelf"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Feed",
+            author: ["Mira Grant"],
+            source: ["Hailey's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Woman They Could Not Silence",
+            author: ["Kate Moore"],
+            source: ["Kristi Newsome"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Book of Longings",
+            author: ["Sue Monk Kidd"],
+            source: ["Kristi Newsome"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "A Monster Calls",
+            author: ["Patrick Ness"],
+            source: ["Kristi Newsome"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Salt to the Sea",
+            author: ["Ruta Sepetys"],
+            source: ["Kristi Newsome"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Stiff: The Curious Lives of Human Cadavers",
+            author: ["Mary Roach"],
+            source: ["Kristi Newsome"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Name of the Wind",
+            author: ["Patrick Rothfuss"],
+            source: ["Kristi Newsome"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "My Name is Asher Lev",
+            author: ["Chaim Potok"],
+            source: ["Kristi Newsome"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
             title: "The History of the Amercian Bookstore: The Bookshop",
             author: ["Evan Friss"],
             source: ["Lexi's Mutual Profile"],
@@ -272,19 +1374,31 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: NO_DATE,
+            date: "07/04/2025",
             title: "To Marry Is Madness",
             author: ["Ashtyn Newbold"],
             source: ["Ashtyn Newbold"],
             review: [
-                ""
+                "I loved this book! I have not read a lot of regency romance, but this was a great introduction to it. I loved how the story came together and I was not able to guess the ending. Newbold did such an amazing job with captivating my attention and leaving me wanting to read more to find out what happens next."
             ],
             quotes: [
                 {
-                    text: "",
-                    pages: [],
-                    thoughts: "",
-                    context: ""
+                    text: "Any man was at least five times more attractive than usual while riding a horse...",
+                    pages: [36],
+                    thoughts: "I thought this line was hilarious. I got to find a horse.",
+                    context: "Charity Oakley is starting to notice Sidney Delamar."
+                },
+                {
+                    text: "I wish marriage was a more reasonable option for you.",
+                    pages: [58],
+                    thoughts: "I think it's a funny line. But for reals it's not easy to find a suitable partner to marry.",
+                    context: "Mrs. Jones is talking to Charity Oakley about her concerns about Charity's loneliness."
+                },
+                {
+                    text: "He hadn't just saved my life by giving me more years to live. He had saved it by making those years worth living.",
+                    pages: [173],
+                    thoughts: "Such a sweet sentiment. The impact that people have on our lives is so important and you might never know how much you mean to someone else.",
+                    context: "Charity Oakley is reflecting on Sidney Delamar's impact on her life."
                 },
             ],
             pageCount: 0,
@@ -310,12 +1424,12 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: IN_PROGRESS,
+            date: "06/28/2025",
             title: "Tress of the Emerald Sea",
             author: ["Brandon Sanderson"],
             source: ["Somebody's Mutual Profile"],
             review: [
-                ""
+                "This book was written in a different voice/style than other Brandon Sanderson books I've read. I did still enjoy it. I loved the worlds that he built in this book and I'm always a fan of his character development. This standalone book was probably one of the easier Sanderson reads."
             ],
             quotes: [
                 {
@@ -372,15 +1486,9 @@ module.exports = {
                     thoughts: "I thought it was a beautiful description of how Tress felt. I think we can all relate to feeling like we are not enough and might not meet expectations of others or even ourselves.",
                     context: "Tress is feeling the weight of Salay's hope that she can save the crew."
                 },
-                {
-                    text: "",
-                    pages: [],
-                    thoughts: "",
-                    context: ""
-                },
             ],
-            pageCount: 0,
-            rating: NO_RATING,
+            pageCount: 384,
+            rating: 5,
         },
         {
             date: NO_DATE,
