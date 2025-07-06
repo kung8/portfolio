@@ -1,0 +1,72 @@
+// const example = '../assets/Products/example.jpeg';
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, LIGHT_SOY_SAUCE, BROWN_SUGAR, PINEAPPLE_JUICE, GARLIC, GINGER, GREEN_ONION } = require('./ingredients');
+
+const GRILL_CHICKEN = 'Grill Chicken';
+
+module.exports = {
+    wip: true,
+    cardName: 'Hawaiian Teriyaki Chicken',
+    name: 'Hawaiian Teriyaki Chicken',
+    img: '',
+    recipeAuthor: 'Erica Walker',
+    recipeFinder: 'Kevin Ung',
+    available: true,
+    recommended: false,
+    category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.GRILL],
+    protein: [PROTEIN.CHICKEN],
+    type: [TYPES.PROTEIN, TYPES.MAIN_COURSE],
+    yields: { amount: 5, unit: YIELD_UNITS.SERVING },
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 4, unit: TIME_UNITS.HOUR },
+    websites: [
+        { label: 'Hawaiian Grilled Teriyaki Chicken', link: 'https://www.favfamilyrecipes.com/grilled-hawaiian-teriyaki-chicken/' }
+    ],
+    separated: true,
+    ingredients: [
+        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'pounded to an even thickness', section: SECTIONS.CHICKEN },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...PINEAPPLE_JUICE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MARINADE },
+        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: SECTIONS.MARINADE },
+        { ...GREEN_ONION, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+    ],
+    appliances: [
+        { name: 'grill' },
+    ],
+    supplies: [
+        { name: 'ziploc bag' },
+        { name: 'saucepan' },
+        { name: 'aluminum foil' },
+        { name: 'baking pan' },
+    ],
+    directions: [
+        { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients. Mix until the sugar dissolves.`, section: SECTIONS.MARINATE_CHICKEN },
+        { step: 'Add chicken to the marinade. Massage the marinade into the chicken until chicken is completely covered.', section: SECTIONS.MARINATE_CHICKEN },
+        { step: 'Let it marinate (at least 4 hours or overnight).', section: SECTIONS.MARINATE_CHICKEN },
+        { step: 'Set the chicken on a plate and pour marinade into a saucepan.', section: GRILL_CHICKEN },
+        { step: 'Bring the marinade to a simmer (about 5 to 10 minutes).', section: GRILL_CHICKEN },
+        { step: 'Pour some hot marinade over the chicken.', section: GRILL_CHICKEN },
+        { step: 'Grill the chicken until it reaches an internal temperature of 165ºF.', section: GRILL_CHICKEN },
+        { step: 'Cover in foil and let it rest for 5 to 10 minutes.', section: GRILL_CHICKEN },
+        { step: 'Enjoy the chicken thighs whole or sliced.', section: SECTIONS.SERVE },
+    ],
+    store: [
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
+    ],
+    reheat: [
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 350ºF until heated through (for 10 to 15 minutes).',
+        },
+    ],
+    mealPrep: true,
+};
