@@ -5,13 +5,15 @@ const drunken4 = '../assets/Products/drunken-noodles-4.jpeg';
 const drunken5 = '../assets/Products/drunken-noodles-5.jpeg';
 const drunken6 = '../assets/Products/drunken-noodles-6.jpeg';
 const drunken7 = '../assets/Products/drunken-noodles-7.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const drunken8 = '../assets/Products/drunken-noodles-8.jpeg';
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { SWEET_SOY_SAUCE, OYSTER_SAUCE, FISH_SAUCE, WHITE_SUGAR, SRIRACHA_SAUCE, GARLIC, THAI_BASIL, PEANUT_OIL, EGG, SERRANO_PEPPER, LARGE_SHRIMP, WHITE_ONION, FRESH_RICE_NOODLES, GRAPE_TOMATO } = require('./ingredients');
 
 module.exports = {
+    wip: true,
     cardName: 'Drunken Noodles',
     name: 'Drunken Noodles',
-    img: drunken6,
+    img: drunken8,
     recipeAuthor: '',
     recipeFinder: 'Amanda Berg',
     available: true,
@@ -61,13 +63,14 @@ module.exports = {
         { step: 'Add eggs and serrano peppers. Lightly scramble and cook until it is barely set (about 1 minute).', section: SECTIONS.COOK_NOODLES, img: drunken3 },
         { step: 'Add shrimp and onion. Cook and fold until shrimp becomes pink (about 1 minute).', section: SECTIONS.COOK_NOODLES, img: drunken4 },
         { step: 'Add noodles, basil, tomatoes and sauce. Stir and cook (about 3 minutes). Be sure to scrape the bottom.', section: SECTIONS.COOK_NOODLES, img: drunken5 },
-        { step: 'Cook until the noodles are cooked and coated (about 1 minute).', section: SECTIONS.COOK_NOODLES },
+        { step: 'Cook until the noodles are cooked and coated (about 1 minute).', section: SECTIONS.COOK_NOODLES, img: drunken6 },
         { step: 'Enjoy this dish warm!', section: SECTIONS.SERVE, img: drunken7 },
     ],
     notes: [
-        { note: 'Make sure the fresh rice noodles are thawed and at room temperature before cooking.', },
-        { note: 'I would recommend using thicker flat noodles for this dish.', },
-        { note: 'It was difficult to prevent the noodles from breaking into tiny pieces. But handling it less and making sure it cooks enough with the sauce, can all help it from breaking.' },
+        { note: 'Make sure the fresh rice noodles are thawed and at room temperature before cooking.' },
+        { note: 'I would recommend using thicker flat noodles for this dish.' },
+        { note: 'The trick is to cook each serving individually. This prevents the noodles from breaking.' },
+        // { note: 'It was difficult to prevent the noodles from breaking into tiny pieces. But handling it less and making sure it cooks enough with the sauce, can all help it from breaking.' },
         { note: 'When I made this dish I had not updated the sauce ingredient amounts (i.e. it is now doubled). I\'m more used to a saucier drunken noodle dish. I will remake this dish and update the images.', }
     ],
     store: [
