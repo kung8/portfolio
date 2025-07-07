@@ -73,6 +73,7 @@ const chewyChocolateChipCookies = require('./recipes/chewy-chocolate-chip-cookie
 const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenBiryani = require("./recipes/chicken-biryani");
 const chickenCordonBleu = require("./recipes/chicken-cordon-bleu");
+const chickenCurry = require('./recipes/chicken-curry.js');
 const chickenFrancese = require("./recipes/chicken-francese");
 const chickenGnocchiSoup = require("./recipes/chicken-gnocchi-soup.js"); // TODO: finish adding recipe
 const chickenKebab = require("./recipes/chicken-kebabs");
@@ -353,6 +354,7 @@ const recipes = [
     vietnameseStuffedTomatoes,
     vietnameseFreshSpringRolls,
     vietnameseBanhTieu,
+    chickenCurry,
 
     // JAPANESE
     sushi,
