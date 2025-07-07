@@ -7,7 +7,6 @@ const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, CURRY_POWDER, SALT, YELLOW_ONION, G
 const POTATO_SECTION = 'Potato';
 
 module.exports = {
-    wip: true,
     cardName: 'Chicken Curry',
     name: 'Chicken Curry',
     img: curry2,
@@ -38,7 +37,7 @@ module.exports = {
         { ...YUKON_GOLD_POTATO, amount: 1, unit: '', additionalDetails: 'peeled and cut into bite size', section: POTATO_SECTION },
         
         { ...COCONUT_MILK, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.CURRY },
-        
+
         { ...GREEN_BELL_PEPPER, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.VEGGIES },
         { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.VEGGIES },
     ],
