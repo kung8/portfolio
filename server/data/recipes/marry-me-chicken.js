@@ -1,22 +1,22 @@
-const chicken1 = '../assets/Products/marry-me-chicken-chicken-1.jpeg';
-const chicken3 = '../assets/Products/marry-me-chicken-chicken-3.jpeg';
-const chicken5 = '../assets/Products/marry-me-chicken-chicken-5.jpeg';
-const chicken6 = '../assets/Products/marry-me-chicken-chicken-6.jpeg';
-const chicken7 = '../assets/Products/marry-me-chicken-chicken-7.jpeg';
-const chicken8 = '../assets/Products/marry-me-chicken-chicken-8.jpeg';
-const chicken9 = '../assets/Products/marry-me-chicken-chicken-9.jpeg';
-const sauce2 = '../assets/Products/marry-me-chicken-sauce-2.jpeg';
-const sauce3 = '../assets/Products/marry-me-chicken-sauce-3.jpeg';
-const sauce5 = '../assets/Products/marry-me-chicken-sauce-5.jpeg';
-const sauce6 = '../assets/Products/marry-me-chicken-sauce-6.jpeg';
-const sauce8 = '../assets/Products/marry-me-chicken-sauce-8.jpeg';
-const sauce11 = '../assets/Products/marry-me-chicken-sauce-11.jpeg';
-const sauce12 = '../assets/Products/marry-me-chicken-sauce-12.jpeg';
-const combined1 = '../assets/Products/marry-me-chicken-1.jpeg';
-const combined2 = '../assets/Products/marry-me-chicken-2.jpeg';
-const combined3 = '../assets/Products/marry-me-chicken-3.jpeg';
-const plated2 = '../assets/Products/marry-me-chicken-plated-2.jpeg';
-const plated3 = '../assets/Products/marry-me-chicken-plated-3.jpeg';
+const chicken1 = '../assets/Products/marry-me-chicken-1.jpeg';
+const chicken2 = '../assets/Products/marry-me-chicken-2.jpeg';
+const chicken3 = '../assets/Products/marry-me-chicken-3.jpeg';
+const chicken4 = '../assets/Products/marry-me-chicken-4.jpeg';
+const chicken5 = '../assets/Products/marry-me-chicken-5.jpeg';
+const chicken6 = '../assets/Products/marry-me-chicken-6.jpeg';
+const chicken7 = '../assets/Products/marry-me-chicken-7.jpeg';
+const chicken8 = '../assets/Products/marry-me-chicken-8.jpeg';
+const chicken9 = '../assets/Products/marry-me-chicken-9.jpeg';
+const chicken10 = '../assets/Products/marry-me-chicken-10.jpeg';
+const chicken11 = '../assets/Products/marry-me-chicken-11.jpeg';
+const chicken12 = '../assets/Products/marry-me-chicken-12.jpeg';
+const chicken13 = '../assets/Products/marry-me-chicken-13.jpeg';
+const chicken14 = '../assets/Products/marry-me-chicken-14.jpeg';
+const chicken15 = '../assets/Products/marry-me-chicken-15.jpeg';
+const chicken16 = '../assets/Products/marry-me-chicken-16.jpeg';
+const chicken17 = '../assets/Products/marry-me-chicken-17.jpeg';
+const chicken18 = '../assets/Products/marry-me-chicken-18.jpeg';
+const chicken19 = '../assets/Products/marry-me-chicken-19.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CHICKEN_BROTH, HEAVY_CREAM, PARMESAN_CHEESE, OREGANO, RED_PEPPER_FLAKES, BASIL_LEAF, SUN_DRIED_TOMATOES } = require('./ingredients');
@@ -26,7 +26,7 @@ const SUN_DRIED_TOMATO_CREAM_SAUCE = 'Sun-Dried Tomato Cream Sauce';
 module.exports = {
     cardName: 'Marry Me Chicken',
     name: 'Marry Me Chicken',
-    img: plated2,
+    img: chicken19,
     recipeAuthor: '',
     recipeFinder: 'Montana Hiltbrand',
     available: true,
@@ -68,29 +68,29 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 375ºF. Arrange the rack so the dutch oven pot will be cooked in the center of the oven.', section: SECTIONS.CHICKEN, img: chicken1 },
-        { step: 'Prepare chicken by removing any fat and pat dry.', section: SECTIONS.CHICKEN, img: chicken3 },
-        { step: 'Season with salt and pepper generously on both sides.', section: SECTIONS.CHICKEN, img: chicken6 },
-        { step: 'Over medium-high heat, add olive oil and spread until covered.', section: SECTIONS.CHICKEN, img: chicken5 },
-        { step: 'Sear chicken until lightly golden (about 3 to 4 minutes).', section: SECTIONS.CHICKEN, img: chicken7 },
-        { step: 'Flip and sear the other side (about 3 to 4 minutes).', section: SECTIONS.CHICKEN, img: chicken8 },
-        { step: 'Transfer chicken to plate (chicken should not be cooked all the way through).', section: SECTIONS.CHICKEN, img: chicken9 },
+        { step: 'Prepare chicken by removing any fat and pat dry.', section: SECTIONS.CHICKEN, img: chicken2 },
+        { step: 'Season with salt and pepper generously on both sides.', section: SECTIONS.CHICKEN, img: chicken3 },
+        { step: 'Over medium-high heat, add olive oil and spread until covered.', section: SECTIONS.CHICKEN, img: chicken4 },
+        { step: 'Sear chicken until lightly golden (about 3 to 4 minutes).', section: SECTIONS.CHICKEN, img: chicken5 },
+        { step: 'Flip and sear the other side (about 3 to 4 minutes).', section: SECTIONS.CHICKEN, img: chicken6 },
+        { step: 'Transfer chicken to plate (chicken should not be cooked all the way through).', section: SECTIONS.CHICKEN, img: chicken7 },
 
         { step: 'Reduce to medium-low heat and wait until dutch oven pot cools.', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { step: 'Add garlic. Saute until fragrant (about 1 to 2 minutes).', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: sauce2 },
-        { step: 'Add broth and deglaze the pan.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: sauce3 },
+        { step: 'Add garlic. Saute until fragrant (about 1 to 2 minutes).', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: chicken8 },
+        { step: 'Add broth and deglaze the pan.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: chicken9 },
         { step: 'Remove pan from heat.', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { step: 'Add cream and mix.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: sauce5 },
-        { step: 'Add cheese and stir until the cheese melts.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: sauce6 },
-        { step: 'Move pot back to burner and stir for a minute (while the pot returns to heat).', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: sauce8 },
-        { step: 'Add sun-dried tomatoes, oregano and red pepper flakes. Stir.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: sauce11 },
+        { step: 'Add cream and mix.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: chicken10 },
+        { step: 'Add cheese and stir until the cheese melts.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: chicken11 },
+        { step: 'Move pot back to burner and stir for a minute (while the pot returns to heat).', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: chicken12 },
+        { step: 'Add sun-dried tomatoes, oregano and red pepper flakes. Stir.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: chicken13 },
         { step: 'Taste sauce and adjust with seasoning as needed.', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { step: 'Simmer over medium-low heat and stir occasionally.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: sauce12 },
-        { step: 'Once simmering, add chicken and flip several times until the chicken is coated.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: combined1 },
-        { step: 'Transfer the pot to the oven.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: combined2 },
+        { step: 'Simmer over medium-low heat and stir occasionally.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: chicken14 },
+        { step: 'Once simmering, add chicken and flip several times until the chicken is coated.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: chicken15 },
+        { step: 'Transfer the pot to the oven.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: chicken16 },
         { step: 'Bake until the chicken reaches 160ºF (about 12 to 15 minutes).', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { step: 'Carefully remove pot from oven and spoon sauce over chicken.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: combined3 },
+        { step: 'Carefully remove pot from oven and spoon sauce over chicken.', section: SUN_DRIED_TOMATO_CREAM_SAUCE, img: chicken17 },
         { step: 'Let chicken rest for 5 minutes (residual heat will cook the chicken, wait until it is at least 165ºF).', section: SUN_DRIED_TOMATO_CREAM_SAUCE },
-        { step: 'Serve with your favorite sides and be sure to ladle sauce over the chicken.', section: SECTIONS.SERVE, img: plated3 },
+        { step: 'Serve with your favorite sides and be sure to ladle sauce over the chicken.', section: SECTIONS.SERVE, img: chicken18 },
     ],
     store: [
         {
@@ -100,10 +100,10 @@ module.exports = {
         },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave until heated through (about 3 to 4 minutes).',
+        },
     ],
     mealPrep: true,
 };
