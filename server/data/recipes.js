@@ -299,6 +299,7 @@ const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
 const sushi = require("./recipes/sushi");
 const swedishMeatballs = require("./recipes/swedish-meatballs");
+const sweetAndSavoryBeefRibs = require('./recipes/sweet-and-savory-beef-ribs.js');
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tandooriChicken = require("./recipes/tandoori-chicken");
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
@@ -354,6 +355,7 @@ const recipes = [
     vietnameseBanhMiSandwich,
     vietnameseStuffedTomatoes,
     chickenCurry,
+    sweetAndSavoryBeefRibs,
     vietnameseFreshSpringRolls,
     peanutChickenSpringRollBowl,
     vietnameseBanhTieu,
