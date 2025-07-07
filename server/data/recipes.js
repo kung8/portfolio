@@ -238,6 +238,7 @@ const peanutBrittle = require("./recipes/peanut-brittle");
 const peanutButterCookies = require("./recipes/peanut-butter-cookies");
 const peanutButterCup = require("./recipes/peanut-butter-cup");
 const peanutButterThumbprintCookies = require("./recipes/peanut-butter-thumbprint-cookies");
+const peanutChickenSpringRollBowl = require('./recipes/peanut-chicken-spring-roll-bowl.js');
 const peanutNoodlesStirFry = require('./recipes/peanut-noodles-stir-fry.js'); // TODO: finish adding recipe
 const pekingDuck = require("./recipes/peking-duck"); // TODO: find recipe 
 const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
@@ -352,9 +353,10 @@ const recipes = [
     vietnamesePho,
     vietnameseBanhMiSandwich,
     vietnameseStuffedTomatoes,
-    vietnameseFreshSpringRolls,
-    vietnameseBanhTieu,
     chickenCurry,
+    vietnameseFreshSpringRolls,
+    peanutChickenSpringRollBowl,
+    vietnameseBanhTieu,
 
     // JAPANESE
     sushi,

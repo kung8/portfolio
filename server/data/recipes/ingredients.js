@@ -1481,6 +1481,9 @@ const INGREDIENTS = {
         RED_BELL_PEPPER: {
             name: 'red bell pepper', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        RED_CABBAGE: {
+            name: 'red cabbage', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1591193144634-a2bf060fdb36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2Mjg5fA&ixlib=rb-4.0.3&q=80&w=400"
+        },
         RED_CHILI: {
             name: 'red chili', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1583506522440-b2639ef4c1d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU3OTUxfA&ixlib=rb-4.0.3&q=80&w=400"
         },

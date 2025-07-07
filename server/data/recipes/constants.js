@@ -264,6 +264,7 @@ const SECTIONS = {
     PREP_DIP: 'Prep Dip',
     PREP_SEASONINGS: 'Prep Seasonings',
     PREP_EGGS: 'Prep Eggs',
+    PREP_DRESSING: 'Prep Dressing',
     SEASON: 'Season',
 
     MAKE_DOUGH: 'Make Dough',
