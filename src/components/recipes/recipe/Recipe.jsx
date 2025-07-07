@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
+import Fuse from 'fuse.js';
+import { Redirect } from 'react-router-dom';
 import { getAsyncData, useGetData } from '../../../hooks';
 import { Loader } from '../../Loader';
 import { NonDashboardPage } from '../../Page';
@@ -15,11 +17,18 @@ import { RecipeContext } from './RecipeContext';
 import { getIngredientData, handleModalClass } from '../utils';
 import { RecipeDetails } from './RecipeDetails';
 
+const convertIdToName = (id) =>
+    id.split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+
 export const Recipe = ({ match }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [selectedIngredients, setSelectedIngredients] = useState([]);
     const { id } = match.params;
-    const { data: recipe = [] } = useGetData('recipes', id);
+    const { data: recipe = [], isFetched: recipeIsFetched } = useGetData('recipes', id);
+    const { data: recipes = [] } = useGetData('recipes');
+
     const item = recipe[0];
     const [selectedFigure, setSelectedFigure] = useState(null);
     const [selectedFigureLabel, setSelectedFigureLabel] = useState(null);
@@ -199,6 +208,31 @@ export const Recipe = ({ match }) => {
     const openRecipeImageModal = (image) => {
         handleOpenImageModal();
         setSelectedRecipeImage(image);
+    }
+
+    if (recipeIsFetched && recipe.length === 0) {
+        const fuse = new Fuse(recipes, {
+            keys: [
+                'name',
+            ],
+            threshold: 0.3,
+            shouldSort: true,
+            includeScore: true,
+            // threshold value
+            // closer to 1 => the more broad 
+            // Closer to 0 => the more exact
+        });
+
+        const closestRecipe = fuse.search(convertIdToName(id)).sort((a, b) => a.score > b.score ? -1 : 1).flatMap(recipe => recipe.item).filter(recipe => recipe.available);
+
+        if (closestRecipe.length > 0) {
+            const closestRecipeId = closestRecipe[0].name;
+            const formattedClosestRecipeId = closestRecipeId.replace(/ /g, '-').toLowerCase();
+            return <Redirect to={`/recipes/${formattedClosestRecipeId}`} />
+        }
+
+
+        return <Redirect to='/recipes/' />
     }
 
     return (
