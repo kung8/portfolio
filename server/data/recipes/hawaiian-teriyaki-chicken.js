@@ -1,18 +1,22 @@
-// const example = '../assets/Products/example.jpeg';
+const teriyaki1 = '../assets/Products/teriyaki-chicken-1.jpeg';
+const teriyaki2 = '../assets/Products/teriyaki-chicken-2.jpeg';
+const teriyaki3 = '../assets/Products/teriyaki-chicken-3.jpeg';
+const teriyaki4 = '../assets/Products/teriyaki-chicken-4.jpeg';
+const teriyaki5 = '../assets/Products/teriyaki-chicken-5.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, LIGHT_SOY_SAUCE, BROWN_SUGAR, PINEAPPLE_JUICE, GARLIC, GINGER, GREEN_ONION } = require('./ingredients');
 
 const GRILL_CHICKEN = 'Grill Chicken';
 
 module.exports = {
-    wip: true,
     cardName: 'Hawaiian Teriyaki Chicken',
     name: 'Hawaiian Teriyaki Chicken',
-    img: '',
+    img: teriyaki5,
     recipeAuthor: 'Erica Walker',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.HAWAIIAN],
     method: [METHODS.GRILL],
@@ -45,12 +49,12 @@ module.exports = {
         { name: 'baking pan' },
     ],
     directions: [
-        { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients. Mix until the sugar dissolves.`, section: SECTIONS.MARINATE_CHICKEN },
-        { step: 'Add chicken to the marinade. Massage the marinade into the chicken until chicken is completely covered.', section: SECTIONS.MARINATE_CHICKEN },
+        { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients. Mix until the sugar dissolves.`, section: SECTIONS.MARINATE_CHICKEN, img: teriyaki1 },
+        { step: 'Add chicken to the marinade. Massage the marinade into the chicken until chicken is completely covered.', section: SECTIONS.MARINATE_CHICKEN, img: teriyaki2 },
         { step: 'Let it marinate (at least 4 hours or overnight).', section: SECTIONS.MARINATE_CHICKEN },
         { step: 'Set the chicken on a plate and pour marinade into a saucepan.', section: GRILL_CHICKEN },
         { step: 'Bring the marinade to a simmer (about 5 to 10 minutes).', section: GRILL_CHICKEN },
-        { step: 'Pour some hot marinade over the chicken.', section: GRILL_CHICKEN },
+        { step: 'Pour some hot marinade over the chicken.', section: GRILL_CHICKEN, img: [teriyaki3, teriyaki4] },
         { step: 'Grill the chicken until it reaches an internal temperature of 165ºF.', section: GRILL_CHICKEN },
         { step: 'Cover in foil and let it rest for 5 to 10 minutes.', section: GRILL_CHICKEN },
         { step: 'Enjoy the chicken thighs whole or sliced.', section: SECTIONS.SERVE },
