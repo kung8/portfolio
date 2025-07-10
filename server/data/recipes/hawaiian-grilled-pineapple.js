@@ -10,7 +10,6 @@ const GRILL_SECTION = 'Grill';
 const GRILL_PINEAPPLE = 'Grill Pineapple';
 
 module.exports = {
-    wip: true,
     cardName: 'Hawaiian Grilled Pineapple',
     name: 'Hawaiian Grilled Pineapple',
     img: pineapple2,
