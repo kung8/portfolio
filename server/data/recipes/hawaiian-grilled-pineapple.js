@@ -1,4 +1,6 @@
-// const example = '../assets/Products/example.jpeg';
+const pineapple1 = '../assets/Products/hawaiian-grilled-pineapple-1.jpeg';
+const pineapple2 = '../assets/Products/hawaiian-grilled-pineapple-2.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { PINEAPPLE, BROWN_SUGAR, HONEY, WATER, SALT, VEGETABLE_OIL } = require('./ingredients');
 
@@ -11,11 +13,11 @@ module.exports = {
     wip: true,
     cardName: 'Hawaiian Grilled Pineapple',
     name: 'Hawaiian Grilled Pineapple',
-    img: '',
+    img: pineapple2,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH, CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN, GENRES.HAWAIIAN],
     method: [METHODS.GRILL],
@@ -47,7 +49,7 @@ module.exports = {
     directions: [
         { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.PREP_MARINADE },
         { step: 'Add pineapple slices. Seal and shake until pineapple is completely coated.', section: SECTIONS.PREP_MARINADE },
-        { step: 'Let it marinate for 15 minutes at room temperature.', section: SECTIONS.PREP_MARINADE },
+        { step: 'Let it marinate for 15 minutes at room temperature.', section: SECTIONS.PREP_MARINADE, img: pineapple1 },
         { step: 'Add a little oil.', section: GRILL_PINEAPPLE },
         { step: 'Grill slices until heated through (about 2 to 3 minutes).', section: GRILL_PINEAPPLE },
         { step: 'Flip and grill for 2 to 3 minutes.', section: GRILL_PINEAPPLE },
