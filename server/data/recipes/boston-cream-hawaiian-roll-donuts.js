@@ -15,7 +15,7 @@ const GLAZE_ROLLS = 'Glaze Rolls';
 module.exports = {
     wip: true,
     cardName: 'Boston Cream Donuts',
-    name: '"Boston Cream Hawaiian Rolls" Donuts',
+    name: 'Boston Cream Hawaiian Rolls Donuts',
     img: '',
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
