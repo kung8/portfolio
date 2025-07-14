@@ -1,9 +1,10 @@
-const cooking = '../assets/Products/beef-bulgogi-cooking.jpeg';
-const bowl = '../assets/Products/beef-bulgogi-in-bowl.jpeg';
-const marinade = '../assets/Products/beef-bulgogi-marinade.jpeg';
-// const ziploc = '../assets/Products/beef-bulgogi-marinating-in-ziploc.jpeg';
-const marinating = '../assets/Products/beef-bulgogi-marinating.jpeg';
-const plated = '../assets/Products/beef-bulgogi-plated.jpeg';
+const bulgogi1 = '../assets/Products/beef-bulgogi-1.jpeg';
+const bulgogi2 = '../assets/Products/beef-bulgogi-2.jpeg';
+const bulgogi3 = '../assets/Products/beef-bulgogi-3.jpeg';
+const bulgogi4 = '../assets/Products/beef-bulgogi-4.jpeg';
+const bulgogi5 = '../assets/Products/beef-bulgogi-5.jpeg';
+const bulgogi6 = '../assets/Products/beef-bulgogi-6.jpeg';
+
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     BEEF,
@@ -25,7 +26,7 @@ const BEEF_SECTION = 'Beef';
 module.exports = {
     cardName: 'Korean Beef Bulgogi',
     name: 'Korean Beef Bulgogi',
-    img: plated,
+    img: bulgogi5,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -67,11 +68,11 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'Combine the marinade sauce ingredients either in a bowl or ziploc bag.', section: BEEF_SECTION, img: marinade },
-        { step: 'Add the beef to the sauce and let it marinate overnight.', section: BEEF_SECTION, img: marinating },
-        { step: 'Heat frying pan over medium heat and add 1 Tbsp vegetable and cook beef in batches.', section: SECTIONS.MAIN, img: cooking },
+        { step: 'Combine the marinade sauce ingredients either in a bowl or ziploc bag.', section: BEEF_SECTION, img: bulgogi1 },
+        { step: 'Add the beef to the sauce and let it marinate overnight.', section: BEEF_SECTION, img: bulgogi2 },
+        { step: 'Heat frying pan over medium heat and add 1 Tbsp vegetable and cook beef in batches.', section: SECTIONS.MAIN, img: bulgogi3 },
         { step: 'Flip beef over and cook. Repeat for additional batch.', section: SECTIONS.MAIN },
-        { step: 'Serve over rice and top with green onion and sesame seeds.', section: SECTIONS.SERVE, img: bowl },
+        { step: 'Serve over rice and top with green onion and sesame seeds.', section: SECTIONS.SERVE, img: bulgogi4 },
     ],
     store: [
         {
@@ -85,6 +86,9 @@ module.exports = {
         //     method: REHEAT_METHODS.BAKE,
         //     instruction: '',
         // },
+    ],
+    notes: [
+        { note: 'Traditionally bulgogi beef uses thinly sliced ribeye or top sirloin (against the grain), but you can really use any beef cuts.', img: bulgogi6 },
     ],
     mealPrep: true,
 };
