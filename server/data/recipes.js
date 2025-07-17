@@ -70,6 +70,7 @@ const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
 const cherryAndCreamCheeseKolaches = require("./recipes/cherry-and-cream-cheese-kolaches");
 const cherryAndDarkChocolateCrostata = require("./recipes/cherry-and-dark-chocolate-crostata");
 const chewyChocolateChipCookies = require('./recipes/chewy-chocolate-chip-cookies.js'); // TODO: finish adding recipe
+const chickenAdobo = require('./recipes/chicken-adobo.js'); // TODO: finish adding recipe
 const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenBiryani = require("./recipes/chicken-biryani");
 const chickenCordonBleu = require("./recipes/chicken-cordon-bleu");
@@ -270,8 +271,10 @@ const ricePilaf = require("./recipes/rice-pilaf");
 const roastedAsparagus = require('./recipes/roasted-asparagus.js');
 const roastedPorkBelly = require("./recipes/roasted-pork-belly");
 const roastedTurkey = require("./recipes/roasted-turkey");
+const roastedVegetables = require('./recipes/roasted-vegetables.js'); // TODO: finish adding recipe
 const rosemaryFries = require("./recipes/rosemary-fries");
 const rosemaryLemonade = require("./recipes/rosemary-lemonade");
+const roti = require('./recipes/roti.js'); // TODO: finish adding recipe
 const russianBeefStroganoff = require("./recipes/russian-beef-stroganoff"); // TODO: add (and determine if this is better than beefStroganoff)
 const samosa = require("./recipes/samosa");
 const samosaBurritos = require("./recipes/samosa-burritos");
@@ -345,6 +348,7 @@ const recipes = [
     tandooriChicken,
     naan,
     naan2,
+    roti,
     indianDosa,
     samosa,
     samosaBurritos,
@@ -426,6 +430,9 @@ const recipes = [
 
     // KHMER
     khmerRedCurry,
+
+    // FILIPINO
+    chickenAdobo,
 
     //////////////////////////////////////////////////////////////////////// LATIN ///////////////////////////////////////////////////////////////////////  
     // PERUVIAN
@@ -569,6 +576,7 @@ const recipes = [
     chili,
     roastedAsparagus,
     sauteedSquash,
+    roastedVegetables,
     mississippiMudPotatoes,
     pastaSalad,
     macaroniSalad,
