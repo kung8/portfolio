@@ -444,6 +444,7 @@ const INGREDIENTS = {
         LIGHT_SOY_SAUCE: {
             name: 'light soy sauce', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1582581720432-de83a98176ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3MzI2fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        LIQUID_SMOKE: { name: 'liquid smoke', category: INGREDIENT_CATEGORY.CONDIMENTS },
         MAGGI_SEASONING: { name: 'maggi seasoning', category: INGREDIENT_CATEGORY.CONDIMENTS },
         MAPLE_SYRUP: {
             name: 'maple syrup', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1552314971-d2feb3513949?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3NDgxfA&ixlib=rb-4.0.3&q=80&w=400"

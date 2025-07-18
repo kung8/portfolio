@@ -183,6 +183,7 @@ const japaneseKatsudon = require("./recipes/japanese-katsudon");
 const japchae = require("./recipes/japchae");
 const javaneseChickenCoconutCurry = require("./recipes/javanese-chicken-coconut-curry");
 const jumboShrimpParmesan = require("./recipes/jumbo-shrimp-parmesan");
+const kaluaPig = require('./recipes/kalua-pig.js'); // TODO: finish adding recipe
 const karaage = require("./recipes/karaage");
 const keyLimePie = require("./recipes/key-lime-pie");
 const kfcGravy = require("./recipes/kfc-gravy");
@@ -542,6 +543,7 @@ const recipes = [
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
     marryMeChicken,
     roastedTurkey,
+    kaluaPig,
     hawaiianGlazedHam,
     hawaiianTeriyakiChicken,
     hawaiianGrilledPineapple,
