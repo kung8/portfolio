@@ -12,10 +12,13 @@
     position: absolute;
     top: 0;
     left: -100%;
-    height: calc(100vh - 108px);
     width: unquote("min(85vw, 450px)");
     z-index: 3;
-    padding: 24px;
+    padding: 24px;    
+    height: 100vh;
+    @media (hover: none) and (pointer: coarse) {
+        height: calc(100vh - 108px);
+    }
     &.opened {
         left: 0;
         animation: in 0.75s ease-in-out;
@@ -115,6 +118,7 @@
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
+
                     span {
                         display: inline-block;
                     }
@@ -163,9 +167,12 @@
         flex-direction: column;
         row-gap: 16px;
         margin-top: 16px;
-        max-height: calc(100vh - 108px);
         overflow-y: auto;
         scrollbar-width: none;
+        max-height: 100vh;
+        @media (hover: none) and (pointer: coarse) {
+            max-height: calc(100vh - 108px);
+        }
 
         .meal-plan-container {
             display: flex;
@@ -209,6 +216,7 @@
                     padding-left: 16px;
                 }
             }
+
             .meals-container {
                 display: flex;
                 flex-direction: column;
@@ -303,6 +311,7 @@
             display: flex;
             align-items: center;
             column-gap: 24px;
+
             @include mixins.down(theme.$mobile) {
                 column-gap: 16px;
             }
@@ -310,6 +319,7 @@
             span {
                 color: theme.$default;
                 font-size: 12px;
+
                 @include mixins.down(theme.$mobile) {
                     font-size: 10px;
                 }
@@ -325,6 +335,7 @@
     .dropdown-container {
         padding: 4px 8px;
         min-width: 80px;
+
         .dropdown-options-container {
             &.open-above {
                 top: -62px;
@@ -340,6 +351,7 @@
             padding: 8px;
             cursor: pointer;
             font-size: 12px;
+
             &:hover {
                 background: theme.$light;
                 color: theme.$aqua;
@@ -356,8 +368,8 @@
 .delete-grocery-item-modal,
 .edit-ingredient-modal,
 .delete-meal-plan-modal,
-.edit-meal-plan-modal, 
-.apply-to-ingredients-in-planned-meal-modal, 
+.edit-meal-plan-modal,
+.apply-to-ingredients-in-planned-meal-modal,
 .settings-modal {
     position: absolute;
     top: 50vh;
@@ -381,6 +393,7 @@
         top: 0;
         transform: translate(-50%, 40%);
         padding: 24px 16px;
+
         .modal-content {
             justify-content: space-between;
             height: 100%;
@@ -391,6 +404,7 @@
                 flex-direction: column;
                 row-gap: 16px;
             }
+
             .modal-body {
                 display: flex;
                 flex-direction: column;
@@ -400,11 +414,12 @@
                     display: flex;
                     column-gap: 12px;
                     position: relative;
-                    & > div {
+
+                    &>div {
                         width: 50%;
                         position: unset;
                     }
-                } 
+                }
 
                 .edit-ingredient-input,
                 .edit-recipe-name-input,
@@ -416,9 +431,11 @@
                     background: theme.$aqua;
                     color: theme.$white;
                     font-size: 12px;
+
                     &::placeholder {
                         color: theme.$default;
                     }
+
                     &::-ms-input-placeholder {
                         color: theme.$default;
                     }
@@ -461,6 +478,7 @@
                 cursor: pointer;
                 border-radius: 8px;
                 color: theme.$light;
+
                 &.selected-day {
                     color: theme.$sunshine;
                     border: 1px solid theme.$sunshine;
@@ -480,10 +498,12 @@
             justify-content: space-between;
             width: 100%;
             column-gap: 16px;
+
             h3 {
                 font-size: 16px;
                 font-weight: 400;
             }
+
             img {
                 width: 19px;
                 height: 19px;
@@ -494,19 +514,23 @@
 
         .edit-recipe-date-input {
             position: relative;
+
             .edit-recipe-date-label-container {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
             }
+
             .edit-recipe-date-label {
                 display: inline-block;
                 width: 100%;
                 cursor: pointer;
+
                 &.is-default {
                     color: theme.$default;
                 }
             }
+
             .delete-date-btn {
                 height: 12px;
                 cursor: pointer;
@@ -533,6 +557,7 @@
             height: 10px;
             width: 14px;
             transition: transform 0.3s ease;
+
             &.is-open {
                 transform: rotate(180deg);
             }
@@ -569,16 +594,20 @@
     left: 0;
     top: 100%;
     z-index: 1;
+
     .react-calendar__navigation {
         height: 24px;
         margin-bottom: 0;
+
         button {
             font-size: 12px;
         }
     }
+
     .react-calendar__viewContainer {
         .react-calendar__month-view__weekdays__weekday {
             padding: 4px 8px;
+
             abbr {
                 font-size: 8px;
                 text-decoration: none;
@@ -586,11 +615,14 @@
             }
         }
     }
+
     .react-calendar__month-view__days__day {
         padding: 8px;
+
         &:not(:disabled) {
             color: theme.$aqua;
         }
+
         abbr {
             font-size: 10px;
         }

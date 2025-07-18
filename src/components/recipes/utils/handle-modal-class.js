@@ -8,7 +8,13 @@ export const handleModalClass = (trayClass, overlayId) => {
     const handleOpen = () => {
         if (tray) tray.classList.add('opened');
         if (rootId) rootId.style.overflowY = 'hidden';
-        if (rootId) rootId.style.height = 'calc(100vh - 108px)';
+        if (rootId) {
+            if (isMobile) {
+                rootId.style.height = 'calc(100vh - 108px)';
+            } else {
+                rootId.style.height = '100vh';
+            }
+        }
         if (html) html.style.overflowY = 'hidden';
         if (overlay) overlay.classList.add('opened');
     }

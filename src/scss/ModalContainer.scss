@@ -10,11 +10,15 @@
         background: theme.$aqua;
         position: absolute;
         top: 0;
-        height: calc(100vh - 108px);
         width: unquote("min(95vw, 300px)");
         z-index: 3;
         left: -100%;
         padding: 24px;
+        height: 100vh;
+        @media (hover: none) and (pointer: coarse) {
+            height: calc(100vh - 108px);
+        }
+
         &.opened {
             left: 0;
             animation: in 0.75s ease-in-out;
@@ -68,6 +72,7 @@
         .reset-all {
             font-size: 12px;
             color: theme.$default;
+
             &.has-values {
                 cursor: pointer;
                 color: theme.$primary-blue;
