@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { SHRIMP, OLIVE_OIL, SAFFRON_THREADS, CHICKEN_BROTH, CHORIZO, YELLOW_ONION, GARLIC, RED_BELL_PEPPER, SALT, PAPRIKA, CAYENNE_PEPPER, GREEN_PEA, ARBORIO_RICE, PARSLEY, LEMON } = require('./ingredients');
 
 const SAFFRON_BROTH = 'Saffron Broth';
@@ -38,24 +38,25 @@ module.exports = {
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: PAELLA },
         { ...ARBORIO_RICE, amount: 4 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PAELLA },
         { ...GREEN_PEA, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PAELLA },
-        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'thin slices', section: PAELLA },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: PAELLA },
-        { ...PAPRIKA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PAELLA },
-        { ...CAYENNE_PEPPER, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: 'or to taste', section: PAELLA },
+        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'thinly sliced', section: PAELLA },
+
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },
+        { ...PAPRIKA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
+        { ...CAYENNE_PEPPER, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: 'or to taste', section: SECTIONS.SEASONINGS },
 
         { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...PARSLEY, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...LEMON, amount: '', unit: '', additionalDetails: 'sliced wedges', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: '' },
+        { name: 'stove' },
+        { name: 'oven' },
     ],
     supplies: [
         { name: 'saucepan' },
         { name: 'strainer' },
         { name: 'bowl' },
         { name: 'dutch oven pan' },
-        { name: '' },
     ],
     directions: [
         { step: 'Peel the shrimp. Set aside the shell for the broth.', section: SAFFRON_BROTH },
@@ -75,12 +76,12 @@ module.exports = {
         { step: 'Add garlic. Cook and stir until fragrant (about 1 minute).', section: PAELLA },
         { step: 'Add rice. Stir to coat rice.', section: PAELLA },
         { step: 'Add peas. Mix.', section: PAELLA },
-        { step: 'Pat rice down so it is even. The rice would not be cooked at this point.', section: PAELLA },
+        { step: 'Pat rice down so it is in an even layer. The rice would not be cooked at this point.', section: PAELLA },
         { step: 'Arrange shrimp in a single layer over the rice.', section: PAELLA },
         { step: 'Place peppers in between and around the shrimp.', section: PAELLA },
         { step: 'Season with the seasonings.', section: PAELLA },
         { step: 'Turn heat to high. Let rice cook some more.', section: PAELLA },
-        { step: 'Once the rice sizzles, pour the saffron broth over the shrimp and shake the pan to spread the broth.', section: PAELLA },
+        { step: 'Once the rice sizzles, pour the saffron broth over the shrimp and shake the pan to spread the broth (do not mix).', section: PAELLA },
         { step: 'Bake until the rice is almost tender and still wet (about 20 minutes).', section: PAELLA },
         { step: 'Over medium-high heat, let the rice become tender, liquid has been absorbed, and bottom part of the rice has crusted and caramelized (about 3 to 5 minutes).', section: PAELLA },
         { step: 'Serve this dish warm', section: SECTIONS.SERVE },

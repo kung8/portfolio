@@ -22,11 +22,15 @@ const {
     WATER,
 } = require('./ingredients');
 
+const STARCH_SECTION = 'Starch';
+const LIQUID_SECTION = 'Liquid';
+const CHEESES_SECTION = 'Cheeses';
+
 module.exports = {
     cardName: 'Pao de Queijo',
     name: 'Pao de Queijo',
     img: zoomed,
-    recipeAuthor: '',
+    recipeAuthor: 'Olivia Mesquita',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
@@ -42,14 +46,16 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...TAPIOCA_STARCH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'plus some for thickening', section: SECTIONS.MAIN },
-        { ...MILK, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.MAIN },
-        { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '6 Tbsp', section: SECTIONS.MAIN },
-        { ...PARMESAN_CHEESE, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { ...MOZZARELLA_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...TAPIOCA_STARCH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'plus some for thickening', section: STARCH_SECTION },
+
+        { ...MILK, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: LIQUID_SECTION },
+        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: LIQUID_SECTION },
+        { ...VEGETABLE_OIL, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: LIQUID_SECTION },
+        { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: LIQUID_SECTION },
+
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.EGGS },
+        { ...PARMESAN_CHEESE, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: CHEESES_SECTION },
+        { ...MOZZARELLA_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: CHEESES_SECTION },
     ],
     appliances: [
         { name: 'oven' },
@@ -60,18 +66,18 @@ module.exports = {
         { name: 'baking sheet' },
     ],
     directions: [
-        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.MAIN },
-        { step: 'In a stand mixer bowl, combine tapioca flour and cornstarch.', section: SECTIONS.DOUGH, img: flour },
-        { step: 'Over medium-high heat, combine milk, water, oil and salt in a saucepan.', section: SECTIONS.DOUGH, img: milk },
-        { step: 'Bring to a boil.', section: SECTIONS.DOUGH, img: boiling },
-        { step: 'Pour the boiled milk into the stand mixer bowl.', section: SECTIONS.DOUGH, img: raw },
-        { step: 'Turn on the mixer slowly and mix until the dough is white and sticky.', section: SECTIONS.DOUGH },
-        { step: 'Slowly add eggs, one at a time, until it is mixed.', section: SECTIONS.DOUGH },
-        { step: 'Slowly add the cheeses until it is well mixed.', section: SECTIONS.DOUGH, img: rawZoomed },
-        { step: 'The dough will most likely be sticky, so I added about another cup of cornstarch to thicken the batter. Slowly add the cornstarch.', section: SECTIONS.DOUGH, img: batter },
-        { step: 'Shape the dough into 1.5 inch balls.', section: SECTIONS.DOUGH, img: balls },
-        { step: 'Place on a baking sheet about 2 inches apart. They do not expand very much.', section: SECTIONS.DOUGH, img: pan },
-        { step: 'Bake until the cheeseballs are a golden brown (about 15 to 25 minutes).', section: SECTIONS.DOUGH, img: cooked },
+        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.PREP_DOUGH },
+        { step: 'In a stand mixer bowl, combine tapioca flour.', section: SECTIONS.PREP_DOUGH, img: flour },
+        { step: 'Over medium-high heat, combine milk, water, oil and salt in a saucepan.', section: SECTIONS.PREP_DOUGH, img: milk },
+        { step: 'Bring to a boil.', section: SECTIONS.PREP_DOUGH, img: boiling },
+        { step: 'Pour the boiled milk into the stand mixer bowl.', section: SECTIONS.PREP_DOUGH, img: raw },
+        { step: 'Turn on the mixer slowly and mix until the dough is white and sticky.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Slowly add eggs, one at a time, until it is mixed.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Slowly add the cheeses until it is well mixed.', section: SECTIONS.PREP_DOUGH, img: rawZoomed },
+        { step: 'The dough will most likely be sticky, so I added about another cup of tapioca starch to thicken the batter. Slowly add the cornstarch.', section: SECTIONS.PREP_DOUGH, img: batter },
+        { step: 'Shape the dough into 1.5 inch balls.', section: SECTIONS.PREP_DOUGH, img: balls },
+        { step: 'Place on a baking sheet about 2 inches apart. They do not expand very much.', section: SECTIONS.PREP_DOUGH, img: pan },
+        { step: 'Bake until the cheeseballs are a golden brown (about 15 to 25 minutes).', section: SECTIONS.BAKE, img: cooked },
         { step: 'Serve these warm.', section: SECTIONS.DOUGH, img: plated },
     ],
     store: [

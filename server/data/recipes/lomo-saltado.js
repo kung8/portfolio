@@ -65,13 +65,13 @@ module.exports = {
 
         { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients. Stir and set aside.`, section: SECTIONS.PREP_SAUCE },
 
-        { step: 'Over medium-high heat, add 1 tablespoon of oil to a wok.', section: SECTIONS.STIR_FRY },
+        { step: 'Over medium-high heat, add oil to a wok.', section: SECTIONS.STIR_FRY },
         { step: 'Add the beef. Sear both sides of the beef (about 1 to 2 minutes). Cook in batches if needed and add more between batches as needed. If you want more browned beef, you may not want to pour in the marinade with it.', section: SECTIONS.STIR_FRY, img: saltado2 },
         { step: 'Remove beef from pan. Set aside.', section: SECTIONS.STIR_FRY },
         { step: 'Add onions. Sauté for 1 minute.', section: SECTIONS.STIR_FRY, img: saltado3 },
         { step: 'Add garlic and tomatoes. Sauté for 1 minute.', section: SECTIONS.STIR_FRY, img: saltado4 },
         { step: 'Re-add the beef.', section: SECTIONS.STIR_FRY, img: saltado6 },
-        { step: 'If you want the french fries in the sauce, add the french fries now. Or leave out if you want it to be crispy.', section: SECTIONS.STIR_FRY, img: saltado5 },
+        { step: 'If you prefer less crispy fries, add fries now. For crispy fries, top later.', section: SECTIONS.STIR_FRY, img: saltado5 },
         { step: 'Add the sauce and combine until everything is coated.', section: SECTIONS.STIR_FRY, img: saltado7 },
 
         { step: 'Serve this delicious dish with rice and crispy french fries. Top with green onions and cilantro.', section: SECTIONS.SERVE },
