@@ -19,7 +19,7 @@
 
 .overlay {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 108px);
     background: theme.$overlay;
     backdrop-filter: blur(16px);
     position: absolute;

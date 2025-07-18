@@ -10,7 +10,7 @@
         background: theme.$aqua;
         position: absolute;
         top: 0;
-        height: 100vh;
+        height: calc(100vh - 108px);
         width: unquote("min(95vw, 300px)");
         z-index: 3;
         left: -100%;
