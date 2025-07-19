@@ -1,4 +1,4 @@
-// const example = '../assets/Products/example.jpeg';
+// const example1 = '../assets/Products/example-1.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { WHOLE_MILK, EGG_YOLK, WHITE_SUGAR, VANILLA_BEAN } = require('./ingredients');
 

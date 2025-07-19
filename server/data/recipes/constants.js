@@ -302,6 +302,7 @@ const SECTIONS = {
     SAUTE: 'Saute',
     COOL: 'Cool',
     CHILL: 'Chill',
+    FREEZE: 'Freeze',
 };
 
 const STORAGE_CONTAINER = {

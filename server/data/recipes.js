@@ -103,6 +103,7 @@ const chiveCakes = require("./recipes/chive-cakes");
 const chocolateButtercreamFrosting = require('./recipes/chocolate-buttercream-frosting');
 const chocolateCake = require('./recipes/chocolate-cake.js');
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
+const chocolateGelato = require('./recipes/chocolate-gelato.js');
 const chocolateMousse = require("./recipes/chocolate-mousse");
 const chopSuey = require("./recipes/chop-suey");
 const choySumWithGarlicSauce = require("./recipes/choy-sum-with-garlic-sauce");
@@ -485,6 +486,7 @@ const recipes = [
     chickenGnocchiSoup,
     lemonCapelliniSalad,
     noBakeCannoliDelight,
+    chocolateGelato,
     gelato,
 
     // SPANISH
