@@ -1,4 +1,16 @@
-// const example = '../assets/Products/example.jpeg';
+const paella1 = '../assets/Products/shrimp-paella-1.jpeg';
+const paella2 = '../assets/Products/shrimp-paella-2.jpeg';
+const paella3 = '../assets/Products/shrimp-paella-3.jpeg';
+const paella4 = '../assets/Products/shrimp-paella-4.jpeg';
+const paella5 = '../assets/Products/shrimp-paella-5.jpeg';
+const paella6 = '../assets/Products/shrimp-paella-6.jpeg';
+const paella7 = '../assets/Products/shrimp-paella-7.jpeg';
+const paella8 = '../assets/Products/shrimp-paella-8.jpeg';
+const paella9 = '../assets/Products/shrimp-paella-9.jpeg';
+const paella10 = '../assets/Products/shrimp-paella-10.jpeg';
+const paella11 = '../assets/Products/shrimp-paella-11.jpeg';
+const paella12 = '../assets/Products/shrimp-paella-12.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { SHRIMP, OLIVE_OIL, SAFFRON_THREADS, CHICKEN_BROTH, CHORIZO, YELLOW_ONION, GARLIC, RED_BELL_PEPPER, SALT, PAPRIKA, CAYENNE_PEPPER, GREEN_PEA, ARBORIO_RICE, PARSLEY, LEMON } = require('./ingredients');
 
@@ -6,14 +18,13 @@ const SAFFRON_BROTH = 'Saffron Broth';
 const PAELLA = 'Paella';
 
 module.exports = {
-    wip: true,
     cardName: 'Shrimp Paella',
     name: 'Shrimp Paella',
-    img: '',
+    img: paella10,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.SPANISH],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
@@ -60,31 +71,31 @@ module.exports = {
     ],
     directions: [
         { step: 'Peel the shrimp. Set aside the shell for the broth.', section: SAFFRON_BROTH },
-        { step: 'Over medium heat, add shrimp shells and olive oil to a saucepan.', section: SAFFRON_BROTH },
-        { step: 'Cook until the shells are pink and fragrant (about 1 to 2 minutes).', section: SAFFRON_BROTH },
+        { step: 'Over medium heat, add shrimp shells and olive oil to a saucepan.', section: SAFFRON_BROTH, img: paella1 },
+        { step: 'Cook until the shells are pink and fragrant (about 1 to 2 minutes).', section: SAFFRON_BROTH, img: paella2 },
         { step: 'Add saffron and stir.', section: SAFFRON_BROTH },
-        { step: 'Add chicken broth. Bring to a simmer.', section: SAFFRON_BROTH },
-        { step: 'Cook until the broth is rusty brown and fragrant (about 20 minutes).', section: SAFFRON_BROTH },
-        { step: 'Strain the broth over a bowl. Discard the shells and saffron.', section: SAFFRON_BROTH },
+        { step: 'Add chicken broth. Bring to a simmer.', section: SAFFRON_BROTH, img: paella3 },
+        { step: 'Cook until the broth is rusty brown and fragrant (about 20 minutes).', section: SAFFRON_BROTH, img: paella4 },
+        { step: 'Strain the broth over a bowl. Discard the shells and saffron.', section: SAFFRON_BROTH, img: paella5 },
         { step: 'Pour saffron broth back into a saucepan and set it on low heat.', section: SAFFRON_BROTH },
 
         { step: 'Preheat the oven to 425ºF.', section: PAELLA },
         { step: 'Over medium heat, heat olive oil in a dutch oven pan.', section: PAELLA },
-        { step: 'Add chorizo. Cook until browned (about 2 minutes per side).', section: PAELLA },
+        { step: 'Add chorizo. Cook until browned (about 2 minutes per side).', section: PAELLA, img: paella6 },
         { step: 'Add onion. Cook and stir until onion is soft and translucent (about 3 minutes).', section: PAELLA },
         { step: 'Lower to medium-low heat.', section: PAELLA },
-        { step: 'Add garlic. Cook and stir until fragrant (about 1 minute).', section: PAELLA },
+        { step: 'Add garlic. Cook and stir until fragrant (about 1 minute).', section: PAELLA, img: paella7 },
         { step: 'Add rice. Stir to coat rice.', section: PAELLA },
         { step: 'Add peas. Mix.', section: PAELLA },
         { step: 'Pat rice down so it is in an even layer. The rice would not be cooked at this point.', section: PAELLA },
         { step: 'Arrange shrimp in a single layer over the rice.', section: PAELLA },
-        { step: 'Place peppers in between and around the shrimp.', section: PAELLA },
+        { step: 'Place peppers in between and around the shrimp.', section: PAELLA, img: paella8 },
         { step: 'Season with the seasonings.', section: PAELLA },
-        { step: 'Turn heat to high. Let rice cook some more.', section: PAELLA },
+        { step: 'Turn heat to high. Let rice cook some more.', section: PAELLA, img: paella9 },
         { step: 'Once the rice sizzles, pour the saffron broth over the shrimp and shake the pan to spread the broth (do not mix).', section: PAELLA },
         { step: 'Bake until the rice is almost tender and still wet (about 20 minutes).', section: PAELLA },
         { step: 'Over medium-high heat, let the rice become tender, liquid has been absorbed, and bottom part of the rice has crusted and caramelized (about 3 to 5 minutes).', section: PAELLA },
-        { step: 'Serve this dish warm', section: SECTIONS.SERVE },
+        { step: 'Serve this dish warm', section: SECTIONS.SERVE, img: [paella11, paella12] },
     ],
     store: [
         {
@@ -94,10 +105,10 @@ module.exports = {
         },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 350ºF until heated through (about 8 minutes).',
+        },
     ],
     mealPrep: true,
 };
