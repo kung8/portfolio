@@ -68,7 +68,7 @@ export const GroceryListItem = ({
                     </p>
                 )}
                 {recipeYield && (
-                    <p className="recipe-yield">
+                    <p className={`recipe-yield ${sortBy === 'date' ? 'recipe-yield-date' : 'recipe-yield-category'}`}>
                         <span>Yields</span>
                         <span className="recipe-yield-text">{recipeYield}</span>
                     </p>

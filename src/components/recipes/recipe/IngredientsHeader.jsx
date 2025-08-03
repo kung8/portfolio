@@ -34,7 +34,7 @@ export const IngredientsHeader = () => {
                             const selectedIngredientId = selectedIngredient.id;
                             const foundIngredient = localIngredients.find((ingredient) => ingredient.id === selectedIngredientId);
                             if (!foundIngredient) return selectedIngredient;
-                            const ingredientName = formatIngredientItem({ ...foundIngredient, amount: conversionRate * foundIngredient.amount });
+                            const ingredientName = formatIngredientItem({ ...foundIngredient, amount: conversionRate * foundIngredient.amount }, true);
                             return { ...selectedIngredient, name: ingredientName };
                         });
                         setSelectedIngredients(newSelectedIngredients);
