@@ -4,8 +4,8 @@ const mixture = '../assets/Products/banana-bread-flour-mixture.jpeg';
 const mashed = '../assets/Products/banana-bread-mashed-banana.jpeg';
 const zoomed = '../assets/Products/banana-bread-with-chocolate-chips-side-view.jpeg';
 const baked = '../assets/Products/banana-bread-with-chocolate-chips-baked.jpeg';
-const walnuts = '../assets/Products/banana-bread-with-walnuts-and-nutmeg.jpeg';
-const walnutsBatter = '../assets/Products/banana-bread-batter-with-walnuts-and-nutmeg.jpeg';
+const walnuts = '../assets/Products/banana-bread-with-walnuts.jpeg';
+const walnutsBatter = '../assets/Products/banana-bread-batter-with-walnuts.jpeg';
 const {
     BANANA,
     UNSALTED_BUTTER,
@@ -64,7 +64,7 @@ module.exports = {
         { step: 'Add the butter and sugar and eggs to the bananas.', section: SECTIONS.MAIN },
         { step: 'In the large bowl, combine flour, baking soda, and salt. Then add to the batter.', section: SECTIONS.MAIN, img: mixture },
         { step: 'Add vanilla to the batter.', section: SECTIONS.MAIN },
-        { step: 'Add chocolate chips, nutmeg and walnuts to the batter. Feel free to experiment with your favorite ingredients.', section: SECTIONS.MAIN, img: walnutsBatter },
+        { step: 'Add chocolate chips and walnuts to the batter. Feel free to experiment with your favorite ingredients.', section: SECTIONS.MAIN, img: walnutsBatter },
         { step: 'Pour the batter into the bread pan.', section: SECTIONS.MAIN, img: walnuts },
         { step: 'Bake for 55 to 60 minutes, or until a toothpick inserted into the center comes out clean.', section: SECTIONS.MAIN },
         { step: 'Let bread rest for 10 minutes before serving.', section: SECTIONS.MAIN, img: baked },
