@@ -65,7 +65,12 @@ export const GroceryListItem = ({
                     <p className="recipe-name">
                         <span>Needed for</span>
                         <span className="recipe-name-text">"{recipeName}"</span>
-                        {recipeYield && <span className="recipe-yield-text">({recipeYield})</span>}
+                    </p>
+                )}
+                {recipeYield && (
+                    <p className="recipe-yield">
+                        <span>Yields</span>
+                        <span className="recipe-yield-text">{recipeYield}</span>
                     </p>
                 )}
                 {sortBy === 'date' && category && <p className="recipe-category"><span>{category}</span></p>}
