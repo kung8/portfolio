@@ -46,7 +46,7 @@ module.exports = {
         { ...CUCUMBER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'thin strips', section: BOWL_SECTION },
 
         { ...BONELESS_CHICKEN_BREAST, amount: 1, unit: '', additionalDetails: 'cut in half lengthwise', section: SECTIONS.CHICKEN },
-        { ...OLIVE_OIL, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
 
