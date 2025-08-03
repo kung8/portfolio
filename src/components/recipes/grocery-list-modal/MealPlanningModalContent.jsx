@@ -73,8 +73,6 @@ export const MealPlanningModalContent = ({
 
     const dates = sortBy === 'daily' ? getDays() : sortBy === 'weekly' ? getWeeks() : getMonths();
 
-    console.log('dates: ', dates);
-
     const createRange = (start, end) => {
         let range = [];
         for (let i = start; i <= end; i.add(1, 'day')) {

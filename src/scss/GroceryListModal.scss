@@ -14,15 +14,18 @@
     left: -100%;
     width: unquote("min(85vw, 450px)");
     z-index: 3;
-    padding: 24px;    
+    padding: 24px;
     height: 100vh;
+
     @media (hover: none) and (pointer: coarse) {
         height: calc(100vh - 108px);
     }
+
     &.opened {
         left: 0;
         animation: in 0.75s ease-in-out;
     }
+
     &.closed {
         left: -100%;
         animation: out 0.75s ease-in-out;
@@ -122,6 +125,11 @@
                     span {
                         display: inline-block;
                     }
+
+                    .recipe-name-text,
+                    .recipe-yield-text {
+                        margin-left: 4px;
+                    }
                 }
 
                 .ingredient-category {
@@ -170,6 +178,7 @@
         overflow-y: auto;
         scrollbar-width: none;
         max-height: 100vh;
+
         @media (hover: none) and (pointer: coarse) {
             max-height: calc(100vh - 108px);
         }

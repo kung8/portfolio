@@ -50,8 +50,6 @@ export const Hymns = ({ history }) => {
     //     return song;
     // });
 
-    console.log(formattedData);
-
     return (
         <div className='music page'>
             <div className="heading-container">

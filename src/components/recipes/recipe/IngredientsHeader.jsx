@@ -40,7 +40,7 @@ export const IngredientsHeader = () => {
                         setSelectedIngredients(newSelectedIngredients);
 
                         // Open Add to Grocery List Modal
-                        handleAddToGroceryListModalOpen()
+                        handleAddToGroceryListModalOpen();
                     }}
                 >
                     Add to List

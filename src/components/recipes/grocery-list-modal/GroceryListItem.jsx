@@ -14,6 +14,7 @@ export const GroceryListItem = ({
     onEmptyInputChange,
     onInputChange,
     recipeName,
+    recipeYield,
     sortBy,
 }) => {
     const [inputValue, setInputValue] = useState(name);
@@ -60,7 +61,13 @@ export const GroceryListItem = ({
                         <img onClick={openEditModal} src={edit} alt="edit" className="edit-icon" />
                     </div>
                 )}
-                {recipeName && <p className="recipe-name"><span>Needed for</span> "{recipeName}"</p>}
+                {recipeName && (
+                    <p className="recipe-name">
+                        <span>Needed for</span>
+                        <span className="recipe-name-text">"{recipeName}"</span>
+                        {recipeYield && <span className="recipe-yield-text">({recipeYield})</span>}
+                    </p>
+                )}
                 {sortBy === 'date' && category && <p className="recipe-category"><span>{category}</span></p>}
                 {sortBy === 'category' && date && <p className="recipe-date"><span>Needed on {dayjs(date).format(READABLE_SHORT_DATE)}</span></p>}
             </div>

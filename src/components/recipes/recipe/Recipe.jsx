@@ -11,7 +11,7 @@ import { useGroceryList } from '../hooks/use-grocery-list';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
 import { GROCERY_LIST_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
-import { categorizeRecipeType } from '../utils';
+import { categorizeRecipeType, formatYield } from '../utils';
 import { RecipeImageModal } from './RecipeImageModal';
 import { RecipeContext } from './RecipeContext';
 import { getIngredientData, handleModalClass } from '../utils';
@@ -330,12 +330,13 @@ export const Recipe = ({ match }) => {
                         setSelectedView(GROCERY_LIST_VIEW);
 
                         // Adds to Grocery List
-                        const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async item => {
-                            if (item.linkId) {
-                                const response = await getAsyncData('recipes', item.linkId);
+                        const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async ingredientItem => {
+                            if (ingredientItem.linkId) {
+                                const response = await getAsyncData('recipes', ingredientItem.linkId);
                                 return response?.data?.[0]?.ingredients?.map((ingredient) => getIngredientData(response.data[0].name, ingredient, ingredient.id ?? generateUUID()));
                             }
-                            return { ...item, checked: false, date, mealPlanningDateRange };
+                            
+                            return { ...ingredientItem, checked: false, date, mealPlanningDateRange, recipeYield: item?.yields?.unit ? formatYield({ amount: appliedYieldAmount, unit: item?.yields?.unit }) : undefined };
                         })];
 
                         Promise.all(newIngredientsToAdd).then((newGroceryList) => {
