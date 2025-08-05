@@ -20,7 +20,7 @@ module.exports = {
     recipeAuthor: 'Maxine Sharf',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.VIETNAMESE],
     method: [METHODS.BOIL, METHODS.MIX, METHODS.PAN_FRY],
@@ -86,6 +86,9 @@ module.exports = {
         { step: 'Cut it into bite size pieces.', section: SECTIONS.COOK_CHICKEN, img: [bowl5, bowl6] },
 
         { step: 'Enjoy these bowls with chicken and your favorite toppings.', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'Overall this dish was good, but I prefer the fresh spring roll recipe.' }
     ],
     store: [
         {
