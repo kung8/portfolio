@@ -1,4 +1,12 @@
-// const example = '../assets/Products/example.jpeg';
+const bowl1 = '../assets/Products/spring-roll-bowl-1.jpeg';
+const bowl2 = '../assets/Products/spring-roll-bowl-2.jpeg';
+const bowl3 = '../assets/Products/spring-roll-bowl-3.jpeg';
+const bowl4 = '../assets/Products/spring-roll-bowl-4.jpeg';
+const bowl5 = '../assets/Products/spring-roll-bowl-5.jpeg';
+const bowl6 = '../assets/Products/spring-roll-bowl-6.jpeg';
+const bowl7 = '../assets/Products/spring-roll-bowl-7.jpeg';
+const bowl8 = '../assets/Products/spring-roll-bowl-8.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { PEANUT_BUTTER, MAPLE_SYRUP, WHITE_VINEGAR, LIGHT_SOY_SAUCE, SRIRACHA_SAUCE, WATER, VERMICELLI_RICE_NOODLES, OLIVE_OIL, ROMAINE_LETTUCE, RED_BELL_PEPPER, CARROT, CUCUMBER, BASIL_LEAF, UNSALTED_PEANUT, RED_CABBAGE, BONELESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, LIME } = require('./ingredients');
 
@@ -6,10 +14,9 @@ const BOWL_SECTION = 'Bowl';
 const PREP_BOWLS = 'Prep Bowls';
 
 module.exports = {
-    wip: true,
     cardName: 'Spring Roll Bowl',
     name: 'Peanut Chicken Spring Roll Bowl',
-    img: '',
+    img: bowl8,
     recipeAuthor: 'Maxine Sharf',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -63,20 +70,20 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: `In a medium bowl, combine the "${SECTIONS.DRESSING}" section ingredients. If the dressing is too thick, add more water as needed.`, section: SECTIONS.PREP_DRESSING },
+        { step: `In a medium bowl, combine the "${SECTIONS.DRESSING}" section ingredients. If the dressing is too thick, add more water as needed.`, section: SECTIONS.PREP_DRESSING, img: bowl1 },
 
         { step: 'Cook the noodles per package directions.', section: PREP_BOWLS },
         { step: 'Rinse in cool water.', section: PREP_BOWLS },
-        { step: 'Toss in oil.', section: PREP_BOWLS },
+        { step: 'Toss in oil.', section: PREP_BOWLS, img: bowl7 },
         { step: 'Divide between bowls.', section: PREP_BOWLS },
-        { step: `Add "${BOWL_SECTION}" section ingredients to the bowls. Mix.`, section: PREP_BOWLS },
+        { step: `Add "${BOWL_SECTION}" section ingredients to the bowls. Mix.`, section: PREP_BOWLS, img: bowl2 },
 
         { step: 'With a meat mallet, pound the chicken to 1/2-inch thick.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Season both sides with salt and pepper.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Season both sides with salt and pepper.', section: SECTIONS.COOK_CHICKEN, img: bowl3 },
         { step: 'Over medium heat, heat olive oil in a frying pan.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Add chicken. Sear both sides of the chicken (about 5 to 6 minutes per side). Cook until it gets an internal temperature of 165ºF.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Add chicken. Sear both sides of the chicken (about 5 to 6 minutes per side). Cook until it gets an internal temperature of 165ºF.', section: SECTIONS.COOK_CHICKEN, img: bowl4 },
         { step: 'Let it rest (about 5 minutes).', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Cut it into bite size pieces.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Cut it into bite size pieces.', section: SECTIONS.COOK_CHICKEN, img: [bowl5, bowl6] },
 
         { step: 'Enjoy these bowls with chicken and your favorite toppings.', section: SECTIONS.SERVE },
     ],
