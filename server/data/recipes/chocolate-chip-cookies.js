@@ -77,7 +77,7 @@ module.exports = {
         { step: 'Mix flour one cup at a time into the batter.', section: SECTIONS.MAIN, img: [flour, batter] },
         { step: 'Add chocolate chips.', section: SECTIONS.MAIN, img: chocolateChips },
         { step: 'Take a spoonful of batter, ball it up about an inch in diameter, and place on baking sheets.', section: SECTIONS.MAIN, img: cookieDough },
-        { step: 'Chill in the freezer up to 24 hours (I think 30 minutes might have been fine). This helps control the spread, deepen the flavor, created crispier edges and chewier cookies, and a more even bake.', section: SECTIONS.MAIN },
+        { step: 'Place the baking sheets in the freezer. Chill up to 24 hours (I think 10 minutes might have been fine). This helps control the spread, deepen the flavor, created crispier edges and chewier cookies, and a more even bake.', section: SECTIONS.MAIN },
         { step: 'Bake for 10 minutes.', section: SECTIONS.MAIN },
         { step: 'Let cool for a few minutes before transferring to a cooling rack.', section: SECTIONS.MAIN },
         { step: 'Enjoy these delicious treats with a cold glass of milk!', section: SECTIONS.MAIN, img: plated },
