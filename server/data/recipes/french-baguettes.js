@@ -20,7 +20,7 @@ module.exports = {
     recipeAuthor: '',
     recipeFinder: 'Sam Giraud-Carrier',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],

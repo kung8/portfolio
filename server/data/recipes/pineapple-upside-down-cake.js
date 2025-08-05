@@ -14,7 +14,7 @@ const FLIP_CAKE = 'Flip Cake';
 
 module.exports = {
     wip: true,
-    cardName: 'Pineapple Upside Down Cake',
+    cardName: 'Pineapple Cake',
     name: 'Pineapple Upside Down Cake',
     img: '',
     recipeAuthor: '',
