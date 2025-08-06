@@ -8,7 +8,7 @@ module.exports = {
     name: 'Brigadeiro',
     img: '',
     recipeAuthor: '',
-    recipeFinder: 'Kevin Ung',
+    recipeFinder: 'Sarah Miller',
     available: false,
     recommended: false,
     category: [CATEGORIES.DESSERT],

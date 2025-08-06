@@ -8,7 +8,7 @@ module.exports = {
     name: 'Brazilian Lemonade',
     img: '',
     recipeAuthor: '',
-    recipeFinder: 'Kevin Ung',
+    recipeFinder: 'Montana Hiltbrand',
     available: false,
     recommended: false,
     category: [CATEGORIES.DRINK],
