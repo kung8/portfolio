@@ -27,6 +27,7 @@ const beefStroganoff = require("./recipes/beef-stroganoff");
 const beefStroganoffSoup = require('./recipes/beef-stroganoff-soup.js'); // TODO: finish adding recipe
 const beefTacos = require("./recipes/beef-tacos");
 const beignets = require("./recipes/beignets");
+const beijinhoDeCoco = require('./recipes/beijinho-de-coco.js'); // TODO: finish adding recipe
 const bibimbap = require("./recipes/bibimbap");
 const bigMac = require("./recipes/big-mac");
 const birriaTacos = require("./recipes/birria-tacos");
@@ -37,10 +38,13 @@ const blt = require("./recipes/blt");
 const blueberryBagels = require('./recipes/blueberry-bagels.js'); // TODO: finish adding recipe
 const blueberryFrenchToastCasserole = require('./recipes/blueberry-french-toast-casserole.js'); // TODO: finish adding recipe
 const bostonCreamHawaiianRollDonuts = require('./recipes/boston-cream-hawaiian-roll-donuts.js');
+const brazilianBlackBeans = require('./recipes/brazilian-black-beans.js'); // TODO: finish adding recipe
+const brazilianLemonade = require('./recipes/brazilian-lemonade.js'); // TODO: finish adding recipe
 const breakfastBurrito = require("./recipes/breakfast-burrito");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
 const breakfastSausageBalls = require("./recipes/breakfast-sausage-balls");
 const brickleBars = require("./recipes/brickle-bars");
+const brigadeiro = require('./recipes/brigadeiro.js'); // TODO: finish adding recipe
 const broccoliBeef = require('./recipes/broccoli-beef.js'); // TODO: finish adding recipe
 const broccoliBeef2 = require('./recipes/broccoli-beef-2.js'); // TODO: finish adding recipe
 const broccoliCheddarSoup = require("./recipes/broccoli-cheddar-soup");
@@ -445,6 +449,10 @@ const recipes = [
 
     // BRAZILIAN
     paoDeQueijo,
+    brigadeiro,
+    beijinhoDeCoco,
+    brazilianBlackBeans,
+    brazilianLemonade,
 
     // MEXICAN
     mexicanCilantroLimeChicken,
