@@ -153,6 +153,7 @@ const gelato = require("./recipes/gelato");
 const germanSchnitzel = require("./recipes/german-schnitzel");
 const gingerbreadCookies = require("./recipes/gingerbread-cookies");
 const graveyardDessert = require("./recipes/graveyard-dessert");
+const greekGyros = require('./recipes/greek-gyros.js');
 const greenBeanAlmondine = require("./recipes/green-bean-almondine");
 const greenBeanCasserole = require("./recipes/green-bean-casserole");
 const grilledCheeseSandwich = require("./recipes/grilled-cheese-sandwich");
@@ -537,6 +538,7 @@ const recipes = [
     ricePilaf,
 
     // GREEK
+    greekGyros,
     mediterraneanFlatbread,
 
     // SOUTH AFRICAN / PORTUGUESE

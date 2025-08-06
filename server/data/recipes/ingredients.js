@@ -955,6 +955,9 @@ const INGREDIENTS = {
         PENNE: {
             name: 'penne', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1705337959675-b36665191fb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY3MjkzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        PITA_BREAD: {
+            name: 'pita bread', category: INGREDIENT_CATEGORY.GRAIN,
+        },
         ROLLS: {
             name: 'rolls', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1672639601872-eeceb0c5c522?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxMTMxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
