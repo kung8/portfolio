@@ -1869,6 +1869,7 @@ const INGREDIENTS = {
             name: 'kosher salt', category: INGREDIENT_CATEGORY.SPICES, img: "https://plus.unsplash.com/premium_photo-1672349888046-361807de476f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU5NDk5fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         LEMON_PEPPER: { name: 'lemon pepper', category: INGREDIENT_CATEGORY.SPICES },
+        MASSAMAN_CURRY_PASTE: { name: 'massaman curry paste', category: INGREDIENT_CATEGORY.SPICES },
         MCCORMICK_SEASONING_PACKET: { name: 'McCormick seasoning packet', category: INGREDIENT_CATEGORY.SPICES },
         MUSTARD_SEED: { name: 'mustard seed', category: INGREDIENT_CATEGORY.SPICES },
         NIGELLA_SEED: { name: 'nigella seed', category: INGREDIENT_CATEGORY.SPICES },
