@@ -7,8 +7,8 @@ const SECOND_VEGETABLES_SECTION = 'Second Vegetables';
 
 module.exports = {
     wip: true,
-    cardName: 'Peanut Noodles Stir-Fry',
-    name: 'Peanut Noodles Stir-Fry',
+    cardName: 'Peanut Noodles Stir Fry',
+    name: 'Peanut Noodles Stir Fry',
     img: '',
     recipeAuthor: 'Kyrie Patterson',
     recipeFinder: 'Kevin Ung',
@@ -24,7 +24,7 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Peanut Noodles Stir-Fry', link: 'https://farmerxfoodie.com/easy-peanut-noodles-stir-fry/' }
+        { label: 'Peanut Noodles Stir Fry', link: 'https://farmerxfoodie.com/easy-peanut-noodles-stir-fry/' }
     ],
     separated: true,
     ingredients: [
