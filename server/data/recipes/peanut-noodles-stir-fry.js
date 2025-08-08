@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { PEANUT_BUTTER, LIGHT_SOY_SAUCE, SESAME_OIL, HONEY, WATER, VEGETABLE_OIL, GROUND_BEEF, GREEN_ONION, CARROT, NAPA_CABBAGE, BEAN_SPROUT, SHIITAKE_MUSHROOM } = require('./ingredients');
+const { PEANUT_BUTTER, LIGHT_SOY_SAUCE, SESAME_OIL, HONEY, WATER, VEGETABLE_OIL, GROUND_BEEF, GREEN_ONION, CARROT, NAPA_CABBAGE, BEAN_SPROUT, SHIITAKE_MUSHROOM, CHINESE_SLICED_NOODLES } = require('./ingredients');
 
 const FIRST_VEGETABLES_SECTION = 'First Vegetables';
 const SECOND_VEGETABLES_SECTION = 'Second Vegetables';
@@ -28,7 +28,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...GENRES, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...CHINESE_SLICED_NOODLES, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
 
         { ...PEANUT_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...LIGHT_SOY_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },

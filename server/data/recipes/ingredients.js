@@ -911,6 +911,9 @@ const INGREDIENTS = {
         },
         BROWN_RICE_NOODLES: { name: 'brown rice noodles', category: INGREDIENT_CATEGORY.GRAIN },
         BULGUR_WHEAT: { name: 'bulgur wheat', category: INGREDIENT_CATEGORY.GRAIN },
+        CHINESE_SLICED_NOODLES: {
+            name: 'chinese sliced noodles', category: INGREDIENT_CATEGORY.GRAIN
+        },
         CHOW_MEIN_NOODLES: {
             name: 'chow mein noodles', category: INGREDIENT_CATEGORY.GRAIN, img: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxNjMwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
