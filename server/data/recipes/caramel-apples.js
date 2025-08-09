@@ -22,7 +22,7 @@ module.exports = {
     cardName: 'Caramel Apples',
     name: 'Caramel Apples',
     img: oreo1,
-    recipeAuthor: '',
+    recipeAuthor: 'onlyxception',
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],

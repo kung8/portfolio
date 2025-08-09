@@ -16,7 +16,7 @@ module.exports = {
     cardName: 'Bruschetta',
     name: 'Balsamic Tomato Bruschetta',
     img: bruschetta4,
-    recipeAuthor: '',
+    recipeAuthor: 'Becca Mills',
     recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,

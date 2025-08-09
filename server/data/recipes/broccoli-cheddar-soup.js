@@ -29,7 +29,7 @@ module.exports = {
     cardName: 'Broccoli Cheddar Soup',
     name: 'Broccoli Cheddar Soup',
     img: simmering2,
-    recipeAuthor: '',
+    recipeAuthor: 'Christy Denney',
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

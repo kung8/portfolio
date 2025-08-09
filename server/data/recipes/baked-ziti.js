@@ -14,7 +14,7 @@ module.exports = {
     cardName: 'Baked Ziti',
     name: 'Baked Ziti',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Jennifer Segal',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

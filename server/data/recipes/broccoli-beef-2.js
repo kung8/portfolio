@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Broccoli Beef 2',
     name: 'Broccoli Beef 2',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Kelly Senyei',
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

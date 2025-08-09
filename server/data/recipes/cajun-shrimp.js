@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Cajun Shrimp',
     name: 'Cajun Shrimp',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Tiffany',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

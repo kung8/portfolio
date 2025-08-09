@@ -33,7 +33,7 @@ module.exports = {
     cardName: 'Chicken Ramen',
     name: 'Homemade Chicken Ramen',
     img: zoomed,
-    recipeAuthor: '',
+    recipeAuthor: 'Laura',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Basque Cheesecake',
     name: 'Basque Cheesecake',
     img: cheesecake2,
-    recipeAuthor: '',
+    recipeAuthor: 'Tavel Bristol-Joseph',
     recipeFinder: 'Sam Giraud-Carrier',
     available: true,
     recommended: true,

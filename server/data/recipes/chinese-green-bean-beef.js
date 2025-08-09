@@ -28,7 +28,7 @@ module.exports = {
     cardName: 'Green Bean Beef',
     name: 'Green Bean Beef',
     img: combinedZoomed2,
-    recipeAuthor: '',
+    recipeAuthor: 'Kim',
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

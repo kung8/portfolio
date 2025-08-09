@@ -22,7 +22,7 @@ module.exports = {
     cardName: 'Almond Croissant Cookie Bars',
     name: 'Almond Croissant Cookie Bars',
     img: bars10,
-    recipeAuthor: '',
+    recipeAuthor: 'Kelli Foster',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

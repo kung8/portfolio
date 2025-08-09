@@ -13,7 +13,7 @@ module.exports = {
     cardName: 'Beef Tacos',
     name: 'Beef Tacos',
     img: tacos4,
-    recipeAuthor: '',
+    recipeAuthor: 'Yumna Jawad',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

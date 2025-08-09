@@ -28,7 +28,7 @@ module.exports = {
     cardName: 'Baked Breaded Chicken',
     name: 'Baked Breaded Chicken',
     img: plated,
-    recipeAuthor: '',
+    recipeAuthor: 'Rachael',
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

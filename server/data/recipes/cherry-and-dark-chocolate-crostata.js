@@ -25,7 +25,7 @@ module.exports = {
     cardName: 'Cherry Crostata',
     name: 'Cherry and Dark Chocolate Crostata',
     img: crostata17,
-    recipeAuthor: '',
+    recipeAuthor: 'Stefano Secchi',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

@@ -14,7 +14,7 @@ module.exports = {
     cardName: 'Caramel Popcorn',
     name: 'Caramel Popcorn',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: "Argo, Karo, and Fleischmann's",
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

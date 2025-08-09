@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Chicken Paella',
     name: 'Chicken Paella',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Averie Sunshine',
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

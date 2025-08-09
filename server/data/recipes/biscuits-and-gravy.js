@@ -30,7 +30,7 @@ module.exports = {
     cardName: 'Biscuits & Gravy',
     name: 'Southern Biscuits and Gravy',
     img: biscuits5,
-    recipeAuthor: '',
+    recipeAuthor: 'Nikki Lee',
     recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,

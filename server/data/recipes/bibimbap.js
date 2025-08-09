@@ -29,7 +29,7 @@ module.exports = {
     cardName: 'Bibimbap',
     name: 'Korean Bibimbap',
     img: bowl,
-    recipeAuthor: '',
+    recipeAuthor: 'Sue',
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

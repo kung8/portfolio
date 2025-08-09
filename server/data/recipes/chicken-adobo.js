@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Filipino Chicken Adobo',
     name: 'Filipino Chicken Adobo',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Kris Longwell',
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

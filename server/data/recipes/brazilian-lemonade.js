@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Brazilian Lemonade',
     name: 'Brazilian Lemonade',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Amy Nash',
     recipeFinder: 'Montana Hiltbrand',
     available: false,
     recommended: false,

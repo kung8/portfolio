@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'French Toast Casserole',
     name: 'Blueberry French Toast Casserole',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Shay',
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

@@ -10,7 +10,7 @@ module.exports = {
     cardName: 'Buttered Corn',
     name: 'Buttered Corn',
     img: cooked,
-    recipeAuthor: '',
+    recipeAuthor: 'Nichole',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

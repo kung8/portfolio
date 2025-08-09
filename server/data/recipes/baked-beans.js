@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'Baked Beans',
     name: 'Baked Beans',
     img: plateZoomed,
-    recipeAuthor: '',
+    recipeAuthor: 'Kelsey',
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],

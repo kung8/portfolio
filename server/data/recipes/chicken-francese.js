@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'Chicken Francese',
     name: 'Chicken Francese',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Elaina',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

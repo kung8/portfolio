@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Carrot Cake Scones',
     name: 'Carrot Cake Scones',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Pam and Nancy',
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

@@ -16,7 +16,7 @@ module.exports = {
     cardName: 'Biscoff Cookie Pie',
     name: 'Biscoff Cookie Pie',
     img: pie6,
-    recipeAuthor: '',
+    recipeAuthor: 'Trang Doan',
     recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,

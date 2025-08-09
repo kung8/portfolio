@@ -12,7 +12,7 @@ module.exports = {
     cardName: 'Breakfast Sausage Balls',
     name: 'Breakfast Sausage Balls',
     img: balls3,
-    recipeAuthor: '',
+    recipeAuthor: 'Meghan Splawn',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

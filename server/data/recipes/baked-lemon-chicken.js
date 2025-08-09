@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'Baked Lemon Chicken',
     name: 'Baked Lemon Chicken',
     img: full,
-    recipeAuthor: '',
+    recipeAuthor: 'Tiffany',
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

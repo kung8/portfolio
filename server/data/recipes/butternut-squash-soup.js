@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Butternut Squash Soup',
     name: 'Butternut Squash Soup',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Lindsay Funston',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

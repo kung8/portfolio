@@ -16,7 +16,7 @@ module.exports = {
     cardName: 'Bang Bang Shrimp',
     name: 'Bang Bang Shrimp',
     img: shrimp8,
-    recipeAuthor: '',
+    recipeAuthor: 'Rachel Farnsworth',
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

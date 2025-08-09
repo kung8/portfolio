@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Buffalo Chicken Cheese Balls',
     name: 'Buffalo Chicken Cheese Balls',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Scoutie',
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

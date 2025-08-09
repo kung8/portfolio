@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Apple Dumplings',
     name: 'Apple Dumplings',
     img: '',
-    recipeAuthor: '',
+    recipeAuthor: 'Allrecipes Member',
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
