@@ -1,4 +1,5 @@
 import { Appliances } from './Appliances';
+import { CookMode } from './CookMode';
 import { CookTime } from './CookTime';
 import { Directions } from './Directions';
 import { Figures } from './Figures';
@@ -16,6 +17,7 @@ import { Yield } from './Yield';
 
 export const RecipeDetails = () => (
     <div className="recipe-details">
+        <CookMode />
         <RecipeImage />
         <PrepTime />
         <CookTime />

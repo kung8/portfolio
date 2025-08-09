@@ -1,0 +1,46 @@
+@use "variables" as theme;
+
+$TOGGLE_HEIGHT: 24px;
+$TOGGLE_WIDTH: 44px;
+$SLIDER_HEIGHT: 20px;
+$SLIDER_WIDTH: 20px;
+$SLIDER_VERTICAL: 2px;
+$SLIDER_HORIZONTAL: 2px;
+$TRANSITION_DURATION: 0.4s;
+
+.switch-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .switch {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: $TOGGLE_HEIGHT;
+        width: $TOGGLE_WIDTH;
+        border-radius: $TOGGLE_HEIGHT;
+        background-color: theme.$darkgrey;
+        cursor: pointer;
+        transition: background-color $TRANSITION_DURATION;
+
+        &.enabled {
+            background-color: theme.$secondary-blue;
+        }
+
+        .slider {
+            position: absolute;
+            height: $SLIDER_HEIGHT;
+            width: $SLIDER_WIDTH;
+            left: $SLIDER_HORIZONTAL;
+            bottom: $SLIDER_VERTICAL;
+            background-color: theme.$white;
+            border-radius: 50%;
+            transition: transform $TRANSITION_DURATION;
+
+            &.active {
+                transform: translateX($SLIDER_WIDTH);
+            }
+        }
+    }
+}

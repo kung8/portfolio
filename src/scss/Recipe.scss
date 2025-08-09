@@ -10,15 +10,19 @@
 
         .heading {
             margin-bottom: 0;
+
             @include mixins.down(theme.$mobile-xl) {
                 font-size: 24px;
             }
+
             @include mixins.down(theme.$mobile) {
                 font-size: 20px;
             }
+
             @include mixins.down(theme.$small-mobile) {
                 font-size: 16px;
             }
+
             @include mixins.down(theme.$extra-small) {
                 font-size: 14px;
             }
@@ -43,11 +47,16 @@
     }
 
     .recipe-details {
+        .cook-mode {
+            margin-bottom: 40px;
+        }
+
         .recipe-image,
         .additional-recipe-image,
         .additional-recipe-video {
             width: 350px;
             margin-bottom: 24px;
+
             @include mixins.down(theme.$mobile) {
                 width: 100%;
             }
@@ -57,6 +66,7 @@
             align-items: center;
             background: theme.$primary-blue;
             color: theme.$black;
+
             &.empty {
                 aspect-ratio: 1 / 1;
             }
@@ -127,6 +137,7 @@
                         display: flex;
                         column-gap: 8px;
                         align-items: center;
+
                         .quick-yield-adjustment {
                             display: flex;
                             justify-content: center;
@@ -135,6 +146,7 @@
                             border: 1px solid theme.$default;
                             border-radius: 4px;
                             cursor: pointer;
+
                             &.active {
                                 background: theme.$primary-blue;
                                 color: theme.$white;
@@ -174,6 +186,7 @@
 
                 .add-to-list-button {
                     color: theme.$default;
+
                     &.active {
                         color: theme.$primary-blue;
                         cursor: pointer;
@@ -190,13 +203,16 @@
         .recipe-detail-list {
             margin-bottom: 40px;
             list-style: none;
+
             &.numbered {
                 list-style-type: decimal;
                 padding-left: 24px;
+
                 li {
                     margin-bottom: 8px;
                 }
             }
+
             li {
                 margin-bottom: 4px;
                 line-height: 1.35;
@@ -206,53 +222,65 @@
         .recipe-container,
         .separated-recipe-container {
             margin-bottom: 48px;
+
             .separated-recipe-detail-label {
                 margin-bottom: 8px;
                 text-decoration: underline;
                 text-underline-offset: 4px;
             }
+
             .sectioned-recipe-container {
                 margin-bottom: 24px;
             }
+
             .checkbox-ingredient-container {
                 display: flex;
                 align-items: flex-start;
                 margin-bottom: 6px;
+
                 .checkbox-ingredient {
                     margin-right: 6px;
                     min-height: 16px;
                     min-width: 16px;
                     transform: translateY(2px);
                 }
+
                 .ingredient-label-with-link {
                     color: theme.$primary-blue;
                     text-underline-offset: 4px;
                     cursor: pointer;
                 }
+
                 .ingredient-label-with-link,
                 .ingredient-label {
                     display: inline;
                     cursor: pointer;
                 }
+
                 .ingredient-additional-details {
                     color: theme.$darkgrey;
                 }
             }
+
             .separated-recipe-detail-list {
                 margin-bottom: 24px;
                 padding-left: 16px;
+
                 &.numbered {
                     list-style-type: decimal;
                     padding-left: 24px;
                     margin-bottom: 0;
+
                     li {
                         margin-bottom: 8px;
                     }
                 }
+
                 li {
                     margin-bottom: 4px;
                 }
             }
+
             &:last-of-type {
                 .separated-recipe-detail-list {
                     margin-bottom: 40px;
@@ -260,12 +288,18 @@
             }
         }
 
-        .notes-label, .storage-label, .reheat-label, .website-label {
+        .notes-label,
+        .storage-label,
+        .reheat-label,
+        .website-label {
             margin-top: 32px;
         }
 
-        .recipe-notes, .recipe-storage, .recipe-reheat {
+        .recipe-notes,
+        .recipe-storage,
+        .recipe-reheat {
             padding-left: 16px;
+
             li {
                 margin-bottom: 8px;
                 line-height: 1.35;
@@ -279,6 +313,7 @@
                     margin-top: 12px;
                     width: 350px;
                     margin-bottom: 24px;
+
                     @include mixins.down(theme.$mobile) {
                         width: 100%;
                     }
@@ -294,6 +329,7 @@
 
         .figures-container {
             margin-top: 40px;
+
             .figure-container {
                 display: flex;
                 flex-direction: column;
@@ -335,6 +371,7 @@
         display: flex;
         justify-content: center;
         margin-top: 200px;
+
         .watermelon {
             transform: unset;
             position: relative;
@@ -352,10 +389,12 @@
         transform: translate(-50%, -50%);
         width: unquote("min(calc(100% - 16px), 600px)");
         padding: 24px 16px;
+
         &.opened {
             left: 50%;
             animation: slide-up 0.75s ease-in-out;
         }
+
         &.closed {
             left: -50%;
             animation: slide-down 0.75s ease-in-out;
@@ -365,6 +404,7 @@
             0% {
                 left: -50%;
             }
+
             100% {
                 left: 50%;
             }
@@ -374,6 +414,7 @@
             0% {
                 left: 50%;
             }
+
             100% {
                 left: -50%;
                 display: none;
@@ -392,10 +433,12 @@
                 justify-content: space-between;
                 width: 100%;
                 column-gap: 16px;
+
                 h3 {
                     font-size: 16px;
                     font-weight: 400;
                 }
+
                 img {
                     width: 19px;
                     height: 19px;
@@ -418,7 +461,8 @@
                         display: flex;
                         column-gap: 12px;
                         position: relative;
-                        & > div {
+
+                        &>div {
                             width: 50%;
                             position: unset;
                         }
@@ -433,19 +477,23 @@
                         color: theme.$white;
                         font-size: 14px;
                         position: relative;
+
                         .edit-recipe-date-label-container {
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
                         }
+
                         .edit-recipe-date-label {
                             display: inline-block;
                             width: 100%;
                             cursor: pointer;
+
                             &.is-default {
                                 color: theme.$default;
                             }
                         }
+
                         .delete-date-btn {
                             height: 12px;
                             cursor: pointer;
@@ -483,10 +531,12 @@
                     border-radius: 16px;
                     outline: none;
                     border: 1.5px solid transparent;
+
                     &.cancel-btn {
                         color: theme.$white;
                         background: theme.$black;
                         cursor: pointer;
+
                         &:hover {
                             background: theme.$white;
                             color: theme.$black;
@@ -498,6 +548,7 @@
                         background: theme.$primary-blue;
                         color: theme.$white;
                         cursor: pointer;
+
                         &:hover {
                             background: theme.$white;
                             color: theme.$primary-blue;

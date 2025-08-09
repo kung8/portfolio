@@ -104,6 +104,9 @@ html {
         &.success {
             background: #9fffba;
         }
+        &.info {
+            background: #d1e7ff;
+        }
         .Toastify__toast-body {
             display: flex;
             justify-content: center;
