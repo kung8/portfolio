@@ -1374,9 +1374,10 @@ const INGREDIENTS = {
         GRANNY_SMITH_APPLE: {
             name: 'granny smith apple', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://plus.unsplash.com/premium_photo-1674262321087-bfcd8135fdc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MTIyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        GRAPEFRUIT: { name: 'grapefruit', category: INGREDIENT_CATEGORY.PRODUCE },
-        GRAPE_TOMATO: { name: 'grape tomato', plural: 'grape tomatoes', category: INGREDIENT_CATEGORY.PRODUCE },
         GRAPE: { name: 'grape', category: INGREDIENT_CATEGORY.PRODUCE },
+        GRAPEFRUIT: { name: 'grapefruit', category: INGREDIENT_CATEGORY.PRODUCE },
+        GRAPE_LEAF: { name: 'grape leaf', plural: 'grape leaves', category: INGREDIENT_CATEGORY.PRODUCE },
+        GRAPE_TOMATO: { name: 'grape tomato', plural: 'grape tomatoes', category: INGREDIENT_CATEGORY.PRODUCE },
         GREEN_BEAN: { name: 'green bean', category: INGREDIENT_CATEGORY.PRODUCE },
         GREEN_BELL_PEPPER: {
             name: 'green bell pepper', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4MjkxfA&ixlib=rb-4.0.3&q=80&w=400"

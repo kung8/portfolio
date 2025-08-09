@@ -56,6 +56,7 @@ const GENRES = {
     HAWAIIAN: 'Hawaiian',
     INDIAN: 'Indian',
     INDONESIAN: 'Indonesian',
+    IRANIAN: 'Iranian',
     IRISH: 'Irish',
     ITALIAN: 'Italian',
     JAPANESE: 'Japanese',
@@ -68,6 +69,7 @@ const GENRES = {
     MIDDLE_EASTERN: 'Middle Eastern',
     MONGOLIAN: 'Mongolian',
     MOROCCAN: 'Moroccan',
+    PERSIAN: 'Persian',
     PERUVIAN: 'Peruvian',
     POLYNESIAN: 'Polynesian',
     PORTUGUESE: 'Portuguese',
@@ -303,6 +305,7 @@ const SECTIONS = {
     COOL: 'Cool',
     CHILL: 'Chill',
     FREEZE: 'Freeze',
+    WRAP: 'Wrap',
 };
 
 const STORAGE_CONTAINER = {

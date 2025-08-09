@@ -132,6 +132,7 @@ const deconstructedAppleCrisp = require('./recipes/deconstructed-apple-crisp.js'
 const dijonChicken = require("./recipes/dijon-chicken");
 const dinnerRolls = require("./recipes/dinner-rolls");
 const dirtyPsGarlicGingerChickenThighs = require('./recipes/dirty-ps-garlic-ginger-chicken-thighs.js'); // TODO: finish adding recipe
+const dolmeh = require('./recipes/dolmeh.js');
 const drunkenNoodles = require("./recipes/drunken-noodles");
 const dumplingSoup = require("./recipes/dumpling-soup");
 const easyMochi = require('./recipes/easy-mochi.js');
@@ -544,6 +545,9 @@ const recipes = [
     // TURKISH
     bulgurPilaf,
     ricePilaf,
+
+    // PERSIAN / IRANIAN
+    dolmeh,
 
     // GREEK
     greekGyros,
