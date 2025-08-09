@@ -255,6 +255,7 @@ const peppermintBark = require("./recipes/peppermint-bark");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
 const peruvianChicken = require("./recipes/peruvian-chicken");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
+const pho = require('./recipes/pho.js'); // TODO: finish adding recipe
 const piciPasta = require("./recipes/pici-pasta");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
 const pineappleUpsideDownCake = require("./recipes/pineapple-upside-down-cake");
@@ -326,6 +327,7 @@ const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich"
 const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
 const vietnameseFreshSpringRolls = require("./recipes/vietnamese-fresh-spring-rolls");
 const vietnamesePho = require("./recipes/vietnamese-pho");
+const vietnameseShakingBeef = require('./recipes/vietnamese-shaking-beef.js'); // TODO: finish adding recipe
 const vietnameseStuffedTomatoes = require("./recipes/vietnamese-stuffed-tomatoes");
 const waffles = require("./recipes/waffles");
 const wrap = require("./recipes/wrap");
@@ -364,10 +366,12 @@ const recipes = [
 
     // VIETNAMESE
     vietnamesePho,
+    pho,
     vietnameseBanhMiSandwich,
     vietnameseStuffedTomatoes,
     chickenCurry,
     sweetAndSavoryRibs,
+    vietnameseShakingBeef,
     vietnameseFreshSpringRolls,
     peanutChickenSpringRollBowl,
     vietnameseBanhTieu,
