@@ -21,7 +21,7 @@ module.exports = {
     name: 'Chinese Ginger Chicken',
     img: plated,
     recipeAuthor: 'Grandma',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],

@@ -11,7 +11,7 @@ module.exports = {
     name: 'Chinese Sour Chicken Soup',
     img: sourChicken,
     recipeAuthor: 'Grandma',
-    recipeFinder: '',
+    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
