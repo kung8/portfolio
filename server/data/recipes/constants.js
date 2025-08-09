@@ -133,6 +133,7 @@ const INGREDIENT_UNITS = {
     EACH: { s: 'each', p: 'each' },
     EAR: { s: 'ear', p: 'ears' },
     SHEET: { s: 'sheet', p: 'sheets' },
+    DOLLOP: { s: 'dollop', p: 'dollops' },
 };
 
 const METHODS = {
