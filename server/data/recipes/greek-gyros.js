@@ -1,4 +1,4 @@
-// const example = '../assets/Products/example.jpeg';
+const gryo1 = '../assets/Products/gyro-1.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, GARLIC, WHITE_VINEGAR, LEMON_JUICE, OLIVE_OIL, GREEK_YOGURT, OREGANO, SALT, BLACK_PEPPER, CUCUMBER, ROMA_TOMATO, RED_ONION, PARSLEY, PITA_BREAD } = require('./ingredients');
 
@@ -72,7 +72,7 @@ module.exports = {
     ],
     directions: [
         { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.MARINATE_CHICKEN },
-        { step: 'Add the chicken. Massage.', section: SECTIONS.MARINATE_CHICKEN },
+        { step: 'Add the chicken. Massage.', section: SECTIONS.MARINATE_CHICKEN, img: gryo1 },
         { step: 'Marinate overnight (or at least 3 hours).', section: SECTIONS.MARINATE_CHICKEN },
 
         { step: 'Cut the cucumber in half lengthwise.', section: PREP_TZATZIKI_SAUCE },
