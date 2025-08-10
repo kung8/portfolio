@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { GRAPE_LEAF, OLIVE_OIL, YELLOW_ONION, GARLIC, GROUND_BEEF, BASMATI_RICE, CHICKPEA, SALT, BLACK_PEPPER, TARRAGON, PARSLEY, CILANTRO, GREEN_ONION, DILL, WATER, LEMON, WHITE_SUGAR } = require('./ingredients');
+const { GRAPE_LEAF, OLIVE_OIL, YELLOW_ONION, GARLIC, GROUND_BEEF, BASMATI_RICE, CHICKPEA, SALT, BLACK_PEPPER, TARRAGON, PARSLEY, CILANTRO, GREEN_ONION, DILL, WATER, WHITE_SUGAR, LEMON_JUICE } = require('./ingredients');
 
 const DOLMEH_SECTION = 'Dolmeh';
 const LEMON_SUGAR_MIX = 'Lemon Sugar Mix';
@@ -48,7 +48,7 @@ module.exports = {
         { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DOLMEH_SECTION },
 
         { ...WATER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'hot', section: LEMON_SUGAR_MIX },
-        { ...LEMON, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: LEMON_SUGAR_MIX },
+        { ...LEMON_JUICE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: LEMON_SUGAR_MIX },
         { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: LEMON_SUGAR_MIX },
     ],
     appliances: [
