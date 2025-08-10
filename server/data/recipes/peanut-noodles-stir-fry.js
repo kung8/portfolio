@@ -1,4 +1,13 @@
-// const example = '../assets/Products/example.jpeg';
+const stirFry1 = '../assets/Products/peanut-noodles-stir-fry-1.jpeg';
+const stirFry2 = '../assets/Products/peanut-noodles-stir-fry-2.jpeg';
+const stirFry3 = '../assets/Products/peanut-noodles-stir-fry-3.jpeg';
+const stirFry4 = '../assets/Products/peanut-noodles-stir-fry-4.jpeg';
+const stirFry5 = '../assets/Products/peanut-noodles-stir-fry-5.jpeg';
+const stirFry6 = '../assets/Products/peanut-noodles-stir-fry-6.jpeg';
+const stirFry7 = '../assets/Products/peanut-noodles-stir-fry-7.jpeg';
+const stirFry8 = '../assets/Products/peanut-noodles-stir-fry-8.jpeg';
+const stirFry9 = '../assets/Products/peanut-noodles-stir-fry-9.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { PEANUT_BUTTER, LIGHT_SOY_SAUCE, SESAME_OIL, HONEY, WATER, VEGETABLE_OIL, GROUND_BEEF, GREEN_ONION, CARROT, NAPA_CABBAGE, BEAN_SPROUT, SHIITAKE_MUSHROOM, CHINESE_SLICED_NOODLES } = require('./ingredients');
 
@@ -6,10 +15,9 @@ const FIRST_VEGETABLES_SECTION = 'First Vegetables';
 const SECOND_VEGETABLES_SECTION = 'Second Vegetables';
 
 module.exports = {
-    wip: true,
     cardName: 'Peanut Noodles Stir Fry',
     name: 'Peanut Noodles Stir Fry',
-    img: '',
+    img: stirFry9,
     recipeAuthor: 'Kyrie Patterson',
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -54,16 +62,16 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'Cook the noodles per the package instructions.', section: SECTIONS.COOK_NOODLES },
-        { step: 'Drain. Set aside.', section: SECTIONS.COOK_NOODLES },
+        { step: 'Cook the noodles per the package instructions.', section: SECTIONS.COOK_NOODLES, img: stirFry2 },
+        { step: 'Drain. Set aside.', section: SECTIONS.COOK_NOODLES, img: stirFry3 },
 
-        { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients. Whisk until it is smooth, pourable and thick.`, section: SECTIONS.PREP_SAUCE },
+        { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients. Whisk until it is smooth, pourable and thick.`, section: SECTIONS.PREP_SAUCE, img: stirFry1 },
 
         { step: 'Over medium-high heat, heat oil in a wok.', section: SECTIONS.STIR_FRY },
-        { step: 'Add beef. Cook until browned and cooked through.', section: SECTIONS.STIR_FRY },
-        { step: `Add "${FIRST_VEGETABLES_SECTION}" section ingredients. Cook until vegetables are tender and crisp (about 5 minutes).`, section: SECTIONS.STIR_FRY },
-        { step: `Add "${SECOND_VEGETABLES_SECTION}" section ingredients. Cook (about 2 minutes).`, section: SECTIONS.STIR_FRY },
-        { step: 'Add cooked noodles and sauce. Toss until everything is covered.', section: SECTIONS.STIR_FRY },
+        { step: 'Add beef. Cook until browned and cooked through.', section: SECTIONS.STIR_FRY, img: stirFry4 },
+        { step: `Add "${FIRST_VEGETABLES_SECTION}" section ingredients. Cook until vegetables are tender and crisp (about 5 minutes).`, section: SECTIONS.STIR_FRY, img: [stirFry5, stirFry6] },
+        { step: `Add "${SECOND_VEGETABLES_SECTION}" section ingredients. Cook (about 2 minutes).`, section: SECTIONS.STIR_FRY, img: stirFry7 },
+        { step: 'Add cooked noodles and sauce. Toss until everything is covered.', section: SECTIONS.STIR_FRY, img: stirFry8 },
 
         { step: 'Enjoy this Asian dish with your favorite toppings.', section: SECTIONS.SERVE },
     ],
