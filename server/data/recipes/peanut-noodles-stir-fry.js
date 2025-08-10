@@ -75,6 +75,9 @@ module.exports = {
 
         { step: 'Enjoy this Asian dish with your favorite toppings.', section: SECTIONS.SERVE },
     ],
+    notes: [
+        { note: 'The noodles I used was cooked too long, so it was a little mushy. I would cook in smaller batches instead.'}
+    ],
     store: [
         {
             duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
