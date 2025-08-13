@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Garlic Ginger Chicken',
     name: "Dirty P's Garlic Ginger Chicken Thighs",
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

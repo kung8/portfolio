@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Steak',
     name: 'Steak',
     img: steak1,
-    recipeAuthor: 'Darci Billmire',
+    recipeAuthors: ['Darci Billmire'],
     recipeFinder: 'Darci Billmire',
     available: true,
     recommended: true,

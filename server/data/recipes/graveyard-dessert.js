@@ -6,7 +6,7 @@ module.exports = {
     cardName: 'Graveyard Dessert',
     name: 'Graveyard Dessert',
     img: graveyardDessert,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],

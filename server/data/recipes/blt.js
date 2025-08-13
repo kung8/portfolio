@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'B.L.T.',
     name: 'B.L.T.',
     img: blt2,
-    recipeAuthor: 'Mottsbela',
+    recipeAuthors: ['Mottsbela'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

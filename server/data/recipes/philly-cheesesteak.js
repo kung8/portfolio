@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'Philly Cheesesteak',
     name: 'Philly Cheesesteak',
     img: cheesesteak1,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

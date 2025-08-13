@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Brazilian Black Beans',
     name: 'Brazilian Black Beans',
     img: '',
-    recipeAuthor: 'Sara Wells',
+    recipeAuthors: ['Sara Wells'],
     recipeFinder: 'Montana Hiltbrand',
     available: false,
     recommended: false,

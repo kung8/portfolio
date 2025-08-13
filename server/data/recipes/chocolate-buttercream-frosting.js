@@ -22,7 +22,7 @@ module.exports = {
     cardName: 'Buttercream Frosting',
     name: 'Chocolate Buttercream Frosting',
     img: frosting7,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

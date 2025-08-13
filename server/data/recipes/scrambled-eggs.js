@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Scrambled Eggs',
     name: 'Scrambled Eggs',
     img: scrambledEggs,
-    recipeAuthor: 'Kevin Ung',
+    recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,
     category: [CATEGORIES.BREAKFAST],

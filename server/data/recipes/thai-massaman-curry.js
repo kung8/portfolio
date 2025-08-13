@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'Massaman Curry',
     name: 'Thai Massaman Curry',
     img: '',
-    recipeAuthor: 'Erica Walker',
+    recipeAuthors: ['Erica Walker'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

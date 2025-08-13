@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Poached Salmon',
     name: 'Poached Salmon with Hollandaise Sauce',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

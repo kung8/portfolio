@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Choy Sum',
     name: 'Choy Sum with Garlic Sauce',
     img: choy8,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

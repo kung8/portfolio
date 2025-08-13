@@ -21,7 +21,7 @@ module.exports = {
     cardName: 'Carbonara',
     name: 'Carbonara',
     img: carbonara13,
-    recipeAuthor: 'Nagi Maehashi',
+    recipeAuthors: ['Nagi Maehashi'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

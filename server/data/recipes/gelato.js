@@ -10,7 +10,7 @@ module.exports = {
     cardName: 'Gelato',
     name: 'Gelato',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

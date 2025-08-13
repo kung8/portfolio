@@ -28,7 +28,7 @@ module.exports = {
     cardName: 'Chicken Biryani',
     name: 'Chicken Biryani',
     img: clean,
-    recipeAuthor: 'Nagi Maehashi',
+    recipeAuthors: ['Nagi Maehashi'],
     recipeFinder: 'Jon Browne',
     available: true,
     recommended: true,

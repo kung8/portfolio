@@ -27,7 +27,7 @@ module.exports = {
     cardName: 'Korean Beef Bulgogi',
     name: 'Korean Beef Bulgogi',
     img: bulgogi5,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

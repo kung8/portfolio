@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Baked Ritz Bites',
     name: 'Baked Ritz Bites',
     img: bites2,
-    recipeAuthor: 'Natalie Mason',
+    recipeAuthors: ['Natalie Mason'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

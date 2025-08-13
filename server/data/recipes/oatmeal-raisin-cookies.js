@@ -28,7 +28,7 @@ module.exports = {
     cardName: 'Oatmeal Raisin Cookies',
     name: 'Oatmeal Raisin Cookies',
     img: cookedZoomed,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

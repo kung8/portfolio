@@ -21,7 +21,7 @@ module.exports = {
     cardName: 'Garlic Breadsticks',
     name: 'Garlic Breadsticks',
     img: garlicBread,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],

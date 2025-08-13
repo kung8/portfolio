@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Blackberry French Toast',
     name: 'Cream Cheese Stuffed Blackberry French Toast',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

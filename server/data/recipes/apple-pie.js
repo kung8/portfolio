@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Apple Pie',
     name: 'Apple Pie',
     img: baked,
-    recipeAuthor: 'Moshasmama',
+    recipeAuthors: ['Moshasmama'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

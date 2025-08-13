@@ -26,7 +26,7 @@ module.exports = {
     cardName: 'Macaroni Salad',
     name: 'Macaroni Salad',
     img: salad5,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

@@ -40,7 +40,7 @@ module.exports = {
     cardName: 'Roast Turkey',
     name: 'Garlic Herb Butter Roast Turkey',
     img: cooked,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

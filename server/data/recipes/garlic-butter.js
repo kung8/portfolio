@@ -8,7 +8,7 @@ module.exports = {
     cardName: 'Garlic Butter',
     name: 'Garlic Butter',
     img: butter,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

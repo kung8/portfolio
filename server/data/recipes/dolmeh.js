@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'Dolmeh',
     name: 'Dolmeh',
     img: dolmeh5,
-    recipeAuthor: "Shadi HasanzadeNemati",
+    recipeAuthors: ['Shadi Hasanzadenemati'],
     recipeFinder: "Kasra Kamravani's Mom",
     available: true,
     recommended: false,

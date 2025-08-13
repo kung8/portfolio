@@ -31,7 +31,7 @@ module.exports = {
     cardName: 'Singaporean Chicken Rice',
     name: 'Singaporean Chicken Rice',
     img: plated,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

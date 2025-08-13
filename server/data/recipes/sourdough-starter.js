@@ -16,7 +16,7 @@ module.exports = {
     cardName: 'Sourdough Starter',
     name: 'Sourdough Starter',
     img: risen,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
     yields: { amount: 'Infinite', unit: YIELD_UNITS.SERVING },

@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Beef Ragu',
     name: 'Beef Ragu',
     img: ragu9,
-    recipeAuthor: 'Nagi Maehashi',
+    recipeAuthors: ['Nagi Maehashi'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

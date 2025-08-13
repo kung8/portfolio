@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'Béarnaise Sauce',
     name: 'Béarnaise Sauce',
     img: '',
-    recipeAuthor: 'John Mitzewich',
+    recipeAuthors: ['John Mitzewich'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

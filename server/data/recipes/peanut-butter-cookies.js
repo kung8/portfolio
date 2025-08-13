@@ -19,7 +19,7 @@ module.exports = {
     cardName: 'Peanut Butter Cookies',
     name: 'Peanut Butter Cookies',
     img: cookies13,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

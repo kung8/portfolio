@@ -27,7 +27,7 @@ module.exports = {
     cardName: 'Chicken Cordon Bleu',
     name: 'Chicken Cordon Bleu',
     img: zoomed,
-    recipeAuthor: 'Lauren Allen',
+    recipeAuthors: ['Lauren Allen'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

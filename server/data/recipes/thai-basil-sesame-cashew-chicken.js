@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Sesame Cashew Chicken',
     name: 'Thai Basil Sesame Cashew Chicken',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: ['Tieghan Gerard'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

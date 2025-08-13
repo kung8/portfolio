@@ -35,7 +35,7 @@ module.exports = {
     cardName: 'Indian Butter Chicken',
     name: 'Indian Butter Chicken',
     img: cooked3,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

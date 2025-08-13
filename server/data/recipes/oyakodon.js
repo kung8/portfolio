@@ -25,7 +25,7 @@ module.exports = {
     cardName: 'Oyakodon',
     name: 'Oyakodon',
     img: oyakodon9,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

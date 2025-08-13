@@ -17,7 +17,7 @@ module.exports = {
     cardName: 'Bulgur Pilaf',
     name: 'Bulgur Pilaf',
     img: pilaf8,
-    recipeAuthor: 'Yumna Jawad and Nagi Maehashi',
+    recipeAuthors: ['Yumna Jawad and Nagi Maehashi'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

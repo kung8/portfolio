@@ -17,7 +17,7 @@ module.exports = {
     cardName: 'Spring Roll Bowl',
     name: 'Peanut Chicken Spring Roll Bowl',
     img: bowl8,
-    recipeAuthor: 'Maxine Sharf',
+    recipeAuthors: ['Maxine Sharf'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

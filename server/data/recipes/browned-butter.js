@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Browned Butter',
     name: 'Browned Butter',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.TOPPING],

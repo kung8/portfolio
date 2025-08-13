@@ -28,7 +28,7 @@ module.exports = {
     cardName: 'English Scones',
     name: 'English Scones',
     img: scones16,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

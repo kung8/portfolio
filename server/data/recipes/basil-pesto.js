@@ -26,7 +26,7 @@ module.exports = {
     cardName: 'Basil Pesto',
     name: 'Basil Pesto',
     img: plated,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

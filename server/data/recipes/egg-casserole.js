@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Egg Casserole',
     name: 'Egg Casserole',
     img: eggCasserole,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.BREAKFAST],

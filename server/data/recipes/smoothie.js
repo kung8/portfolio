@@ -13,7 +13,7 @@ module.exports = {
     cardName: 'Smoothie',
     name: 'Smoothie',
     img: smoothie,
-    recipeAuthor: 'Kevin Ung',
+    recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.SNACK, CATEGORIES.DINNER],

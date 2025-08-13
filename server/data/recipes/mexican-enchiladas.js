@@ -27,7 +27,7 @@ module.exports = {
     cardName: 'Mexican Enchiladas',
     name: 'Mexican Enchiladas',
     img: enchiladas21,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

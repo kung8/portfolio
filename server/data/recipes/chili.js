@@ -39,7 +39,7 @@ module.exports = {
     cardName: 'Chili',
     name: 'Chili',
     img: pot5,
-    recipeAuthor: 'Holly Nilsson',
+    recipeAuthors: ['Holly Nilsson'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

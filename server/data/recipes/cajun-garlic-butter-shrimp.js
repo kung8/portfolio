@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'Cajun Garlic Butter Shrimp',
     name: 'Cajun Garlic Butter Shrimp',
     img: '',
-    recipeAuthor: 'Alyssa Rivers',
+    recipeAuthors: ['Alyssa Rivers'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

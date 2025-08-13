@@ -10,7 +10,7 @@ module.exports = {
     cardName: 'Chicken Curry',
     name: 'Chicken Curry',
     img: curry2,
-    recipeAuthor: 'Delia Delector',
+    recipeAuthors: ['Delia Delector'],
     recipeFinder: 'Delia Delector',
     available: true,
     recommended: true,

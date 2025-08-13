@@ -37,7 +37,7 @@ module.exports = {
     cardName: 'Korean Fried Chicken',
     name: 'Korean Fried Chicken',
     img: chicken,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,

@@ -17,7 +17,7 @@ module.exports = {
     cardName: 'Caramelized Mushroom',
     name: 'Caramelized Mushroom',
     img: cooked,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.TOPPING],

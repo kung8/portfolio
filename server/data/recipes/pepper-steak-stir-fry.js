@@ -29,7 +29,7 @@ module.exports = {
     cardName: 'Pepper Steak Stir Fry',
     name: 'Pepper Steak Stir Fry',
     img: mixed6,
-    recipeAuthor: 'Kevin Ung',
+    recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

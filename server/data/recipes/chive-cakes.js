@@ -18,7 +18,7 @@ const cakes17 = '../assets/Products/chive-cakes-17.jpeg';
 const cakes18 = '../assets/Products/chive-cakes-18.jpeg';
 const cakes19 = '../assets/Products/chive-cakes-19.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { TAPIOCA_STARCH, HOT_WATER, VEGETABLE_OIL, SALT, POWDERED_SUGAR, BAKING_SODA, PEANUT_OIL, DARK_SOY_SAUCE, WHITE_VINEGAR, RED_PEPPER_FLAKES, GARLIC, RICE_FLOUR, GLUTINOUS_RICE_FLOUR, GARLIC_CHIVE, UNSALTED_PEANUT, WATER } = require('./ingredients');
 
 const CHIVE_SECTION = 'Chive';
@@ -29,7 +29,7 @@ module.exports = {
     cardName: 'Chive Cakes',
     name: 'Chive Cakes (Khanom Gui Chai)',
     img: cakes19,
-    recipeAuthor: '',
+    recipeAuthors: ['Charles Phan, Sareen Rojanametin, Jean Thamthanakorn'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

@@ -13,7 +13,7 @@ module.exports = {
     cardName: 'Wraps',
     name: 'Wraps',
     img: wraps,
-    recipeAuthor: 'Kevin Ung',
+    recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

@@ -14,7 +14,7 @@ module.exports = {
     cardName: 'Irish Potato Boxty',
     name: 'Irish Potato Boxty',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

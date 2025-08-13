@@ -13,7 +13,7 @@ module.exports = {
     cardName: 'Breakfast Burrito',
     name: 'Breakfast Burrito',
     img: '',
-    recipeAuthor: 'Jennifer Segal',
+    recipeAuthors: ['Jennifer Segal'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

@@ -13,7 +13,7 @@ module.exports = {
     cardName: 'Hawaiian Teriyaki Chicken',
     name: 'Hawaiian Teriyaki Chicken',
     img: teriyaki5,
-    recipeAuthor: 'Erica Walker',
+    recipeAuthors: ['Erica Walker'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

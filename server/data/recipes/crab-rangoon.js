@@ -14,7 +14,7 @@ module.exports = {
     cardName: 'Crab Rangoon',
     name: 'Crab Rangoon',
     img: '',
-    recipeAuthor: 'Wendy Balderas',
+    recipeAuthors: ['Wendy Balderas'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

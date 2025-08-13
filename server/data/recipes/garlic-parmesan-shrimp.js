@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Garlic Parmesan Shrimp',
     name: 'Garlic Parmesan Shrimp',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

@@ -28,7 +28,7 @@ module.exports = {
     cardName: 'Snickerdoodles',
     name: 'Snickerdoodle Cookies',
     img: plated1,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

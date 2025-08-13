@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'Pork Milanese',
     name: 'Pork Milanese',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

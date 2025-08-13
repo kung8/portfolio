@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Ayam Goreng',
     name: 'Indonesian Ayam Goreng',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

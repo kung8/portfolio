@@ -21,7 +21,7 @@ module.exports = {
     cardName: 'Meatball Sub',
     name: 'Meatball Sub',
     img: sub8,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

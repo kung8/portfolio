@@ -21,7 +21,7 @@ module.exports = {
     cardName: 'Frozen Mud Pie',
     name: 'Frozen Mud Pie',
     img: pie8,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

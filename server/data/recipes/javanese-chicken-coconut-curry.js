@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'Chicken Coconut Curry',
     name: 'Javanese Chicken Coconut Curry',
     img: curry6,
-    recipeAuthor: 'Katrina Woodman',
+    recipeAuthors: ['Katrina Woodman'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

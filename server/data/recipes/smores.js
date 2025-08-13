@@ -10,7 +10,7 @@ module.exports = {
     cardName: 'S\'mores',
     name: 'S\'mores',
     img: smores,
-    recipeAuthor: 'Kevin Ung',
+    recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,
     category: [CATEGORIES.DESSERT],

@@ -24,7 +24,7 @@ module.exports = {
     cardName: 'Naan',
     name: 'Naan',
     img: naan14,
-    recipeAuthor: 'Nick DiGiovanni',
+    recipeAuthors: ['Nick DiGiovanni'],
     recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,

@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Caramelized Onion',
     name: 'Caramelized Onion',
     img: caramelized,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.TOPPING],

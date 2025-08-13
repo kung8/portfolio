@@ -14,7 +14,7 @@ module.exports = {
     cardName: 'Popcorn Balls',
     name: 'Popcorn Balls',
     img: rackStacked,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],

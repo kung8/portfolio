@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Beef Stroganoff',
     name: 'Russian Beef Stroganoff',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

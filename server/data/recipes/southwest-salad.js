@@ -6,7 +6,7 @@ module.exports = {
     cardName: 'Southwest Salad',
     name: 'Southwest Salad',
     img: salad,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: '',
     available: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

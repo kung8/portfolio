@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'Ground Beef Ramen',
     name: 'Ground Beef Ramen',
     img: ramen5,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

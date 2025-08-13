@@ -21,7 +21,7 @@ module.exports = {
     cardName: 'Piri Piri Chicken Bowl',
     name: 'Piri Piri Chicken Bowl',
     img: bowl12,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

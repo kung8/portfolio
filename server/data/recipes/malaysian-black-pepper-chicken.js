@@ -30,7 +30,7 @@ module.exports = {
     cardName: 'Black Pepper Chicken',
     name: 'Malaysian Black Pepper Chicken',
     img: zoomed,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Marco Crosland',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

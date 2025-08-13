@@ -21,7 +21,7 @@ module.exports = {
     cardName: 'Yellow Curry',
     name: 'Thai Yellow Curry',
     img: curry17,
-    recipeAuthor: '',
+    recipeAuthors: ['Lauren Allen'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

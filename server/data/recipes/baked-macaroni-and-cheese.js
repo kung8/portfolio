@@ -27,7 +27,7 @@ module.exports = {
     cardName: 'Baked Mac and Cheese',
     name: 'Baked Macaroni and Cheese',
     img: plate4,
-    recipeAuthor: 'Trish',
+    recipeAuthors: ['Trish'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

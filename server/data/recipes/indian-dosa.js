@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Indian Dosa',
     name: 'Indian Dosa',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

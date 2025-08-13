@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Apple Turnovers',
     name: 'Apple Turnovers',
     img: '',
-    recipeAuthor: "Maureen O'Leary",
+    recipeAuthors: ["Maureen O'Leary"],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

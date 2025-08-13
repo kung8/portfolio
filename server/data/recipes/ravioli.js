@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'Ravioli',
     name: 'Ravioli',
     img: ravioli11,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

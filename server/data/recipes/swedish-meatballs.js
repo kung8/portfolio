@@ -31,7 +31,7 @@ module.exports = {
     cardName: 'Swedish Meatballs',
     name: 'Swedish Meatballs (Kottbullar)',
     img: meatball17,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Rice Pilaf',
     name: 'Rice Pilaf',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

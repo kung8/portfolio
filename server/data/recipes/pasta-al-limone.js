@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'Pasta al Limone',
     name: 'Pasta al Limone',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

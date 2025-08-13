@@ -10,7 +10,7 @@ module.exports = {
     cardName: 'Eclair',
     name: 'Eclair',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],

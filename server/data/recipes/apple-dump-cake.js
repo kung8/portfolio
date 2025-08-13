@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Apple Dump Cake',
     name: 'Apple Dump Cake',
     img: '',
-    recipeAuthor: 'Marya Marta Krause',
+    recipeAuthors: ['Marya Marta Krause'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

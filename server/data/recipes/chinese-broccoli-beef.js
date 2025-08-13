@@ -34,7 +34,7 @@ module.exports = {
     cardName: 'Broccoli Beef',
     name: 'Chinese Broccoli Beef',
     img: cookedZoomed,
-    recipeAuthor: 'Leahs Cohen',
+    recipeAuthors: ['Leahs Cohen'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

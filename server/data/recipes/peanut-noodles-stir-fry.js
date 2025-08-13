@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Peanut Noodles Stir Fry',
     name: 'Peanut Noodles Stir Fry',
     img: stirFry9,
-    recipeAuthor: 'Kyrie Patterson',
+    recipeAuthors: ['Kyrie Patterson'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

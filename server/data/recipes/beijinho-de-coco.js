@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Beijinjo De Coco',
     name: 'Beijinjo De Coco',
     img: '',
-    recipeAuthor: 'Aline Shaw',
+    recipeAuthors: ['Aline Shaw'],
     recipeFinder: 'Sarah Miller',
     available: false,
     recommended: false,

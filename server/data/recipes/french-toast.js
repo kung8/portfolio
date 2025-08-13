@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'French Toast',
     name: 'French Toast',
     img: frenchToast8,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.BREAKFAST],

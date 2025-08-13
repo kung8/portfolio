@@ -22,7 +22,7 @@ module.exports = {
     cardName: 'Lettuce Chicken',
     name: 'Lemon Chicken on Lettuce',
     img: zoomed,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Lily Lim',
     available: true,
     recommended: true,

@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Greek Gyros',
     name: 'Greek Gyros',
     img: gryo8,
-    recipeAuthor: 'Nagi Maehashi',
+    recipeAuthors: ['Nagi Maehashi'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

@@ -12,7 +12,7 @@ module.exports = {
     cardName: 'Cabbage Stir Fry',
     name: 'Cabbage Stir Fry',
     img: bowl,
-    recipeAuthor: 'Kevin Ung',
+    recipeAuthors: ['Kevin Ung'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],

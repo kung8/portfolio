@@ -13,7 +13,7 @@ module.exports = {
     cardName: 'Hawaiian Grilled Pineapple',
     name: 'Hawaiian Grilled Pineapple',
     img: pineapple2,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

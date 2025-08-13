@@ -10,7 +10,7 @@ module.exports = {
     cardName: 'Spanish Rice',
     name: 'Spanish Rice',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

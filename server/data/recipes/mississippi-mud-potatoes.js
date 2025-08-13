@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Mississippi Mud Potatoes',
     name: 'Mississippi Mud Potatoes',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

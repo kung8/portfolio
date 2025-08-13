@@ -17,7 +17,7 @@ module.exports = {
     cardName: 'Pot Roast',
     name: 'Pot Roast',
     img: roast,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

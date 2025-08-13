@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Hamburger',
     name: 'Hamburger',
     img: hamburger,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

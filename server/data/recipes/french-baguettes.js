@@ -17,7 +17,7 @@ module.exports = {
     cardName: 'French Baguettes',
     name: 'French Baguettes',
     img: baguette9,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Sam Giraud-Carrier',
     available: true,
     recommended: true,

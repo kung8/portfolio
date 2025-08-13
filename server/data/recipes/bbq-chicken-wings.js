@@ -22,7 +22,7 @@ module.exports = {
     cardName: 'BBQ Chicken Wings',
     name: 'BBQ Chicken Wings',
     img: bbq,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER],

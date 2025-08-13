@@ -27,7 +27,7 @@ module.exports = {
     cardName: 'Japanese Pork Katsudon',
     name: 'Japanese Pork Katsudon',
     img: katsudon,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

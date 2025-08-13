@@ -23,7 +23,7 @@ module.exports = {
     cardName: 'Chicken Parmesan',
     name: 'Chicken Parmesan',
     img: parmesan8,
-    recipeAuthor: 'John Mitzewich',
+    recipeAuthors: ['John Mitzewich'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

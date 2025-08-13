@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'Cheddar Bay Biscuits',
     name: 'Red Lobster Cheddar Bay Biscuits',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
     recommended: false,

@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Beef Stroganoff Soup',
     name: 'Beef Stroganoff Soup',
     img: '',
-    recipeAuthor: 'Erica Kastner',
+    recipeAuthors: ['Erica Kastner'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

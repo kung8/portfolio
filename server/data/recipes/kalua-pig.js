@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Kalua Pig',
     name: 'Kalua Pig',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Andrew Luke',
     available: true,
     recommended: false,

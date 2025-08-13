@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Dijon Chicken',
     name: 'Dijon Chicken',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

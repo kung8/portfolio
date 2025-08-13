@@ -30,7 +30,7 @@ module.exports = {
     cardName: 'Pao de Queijo',
     name: 'Pao de Queijo',
     img: zoomed,
-    recipeAuthor: 'Olivia Mesquita',
+    recipeAuthors: ['Olivia Mesquita'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

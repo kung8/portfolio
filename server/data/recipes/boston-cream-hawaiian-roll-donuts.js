@@ -28,7 +28,7 @@ module.exports = {
     cardName: 'Boston Cream Donuts',
     name: 'Boston Cream Hawaiian Rolls Donuts',
     img: donut12,
-    recipeAuthor: 'Nicole McLaughlin',
+    recipeAuthors: ['Nicole McLaughlin'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

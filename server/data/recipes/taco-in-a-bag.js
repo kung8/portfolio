@@ -19,7 +19,7 @@ module.exports = {
     cardName: 'Taco in a Bag',
     name: 'Taco in a Bag',
     img: taco,
-    recipeAuthor: 'Kevin Ung',
+    recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

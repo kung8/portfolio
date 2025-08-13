@@ -23,7 +23,7 @@ module.exports = {
     cardName: 'Banana Bread',
     name: 'Banana Bread',
     img: zoomed,
-    recipeAuthor: 'Natasha Kravchuk',
+    recipeAuthors: ['Natasha Kravchuk'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

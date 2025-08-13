@@ -12,7 +12,7 @@ module.exports = {
     cardName: 'Rice Krispy Treats',
     name: 'Rice Krispy Treats',
     img: zoomed3,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],

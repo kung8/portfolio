@@ -16,7 +16,7 @@ module.exports = {
     cardName: 'Mochi',
     name: 'Japanese Mochi',
     img: mochi8,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

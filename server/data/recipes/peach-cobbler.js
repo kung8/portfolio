@@ -24,7 +24,7 @@ module.exports = {
     cardName: 'Peach Cobbler',
     name: 'Peach Cobbler',
     img: slice,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

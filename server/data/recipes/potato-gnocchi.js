@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Potato Gnocchi',
     name: 'Potato Gnocchi',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Roasted Vegetables',
     name: 'Roasted Vegetables',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

@@ -21,7 +21,7 @@ module.exports = {
     cardName: 'Sweet and Sour Pork',
     name: 'Chinese Sweet and Sour Pork',
     img: pork9,
-    recipeAuthor: 'Chef Lau',
+    recipeAuthors: ['Chef Lau'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

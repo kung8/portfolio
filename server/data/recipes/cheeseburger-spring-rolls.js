@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'Cheeseburger Spring Rolls',
     name: 'Cheeseburger Spring Rolls',
     img: roll9,
-    recipeAuthor: 'Kate Phillips',
+    recipeAuthors: ['Kate Phillips'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

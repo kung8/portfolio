@@ -36,7 +36,7 @@ module.exports = {
     cardName: 'Bao',
     name: 'Chinese Bao',
     img: cooked,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

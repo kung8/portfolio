@@ -23,11 +23,10 @@ const {
 } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Malaysian Satay',
     name: 'Malaysian Satay',
     img: satay3,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

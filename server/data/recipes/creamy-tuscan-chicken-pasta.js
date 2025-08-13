@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Creamy Tuscan Chicken',
     name: 'Creamy Tuscan Chicken Pasta',
     img: pasta9,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

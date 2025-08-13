@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { COOKING_SPRAY, POPCORN, BROWN_SUGAR, CORN_SYRUP, UNSALTED_BUTTER, SALT, VANILLA_EXTRACT, BAKING_SODA } = require('./ingredients');
 
 const POPCORN_SECTION = 'Popcorn';
@@ -14,7 +14,7 @@ module.exports = {
     cardName: 'Caramel Popcorn',
     name: 'Caramel Popcorn',
     img: '',
-    recipeAuthor: "Argo, Karo, and Fleischmann's",
+    recipeAuthors: ['Argo', 'Karo', 'Fleischmann\'s'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

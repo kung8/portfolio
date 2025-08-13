@@ -22,7 +22,7 @@ module.exports = {
     cardName: 'Chicken Quesadilla',
     name: 'Chicken Quesadilla',
     img: quesadillas14,
-    recipeAuthor: 'Erin Clarke',
+    recipeAuthors: ['Erin Clarke'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

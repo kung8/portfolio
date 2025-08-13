@@ -30,7 +30,7 @@ module.exports = {
     cardName: 'Yor\'s Stew',
     name: 'Yor\'s Stew',
     img: stew9,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

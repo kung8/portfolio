@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Sausage McGriddle',
     name: 'Sausage McGriddle',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

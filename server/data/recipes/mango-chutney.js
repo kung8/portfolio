@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Mango Chutney',
     name: 'Mango Chutney',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'Peanut Butter Cup',
     name: 'Peanut Butter Cup',
     img: cup9,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

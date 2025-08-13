@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Mozzarella Sticks',
     name: 'Mozzarella Sticks',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

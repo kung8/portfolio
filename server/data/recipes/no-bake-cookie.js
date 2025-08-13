@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'No Bake Cookies',
     name: 'No Bake Cookies',
     img: finished,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],

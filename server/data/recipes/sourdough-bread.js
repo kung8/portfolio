@@ -24,7 +24,7 @@ module.exports = {
     cardName: 'Sourdough Bread',
     name: 'Sourdough Bread',
     img: board,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,

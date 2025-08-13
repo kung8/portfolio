@@ -43,7 +43,7 @@ module.exports = {
     cardName: 'Pad See Ew',
     name: 'Thai Pad See Ew',
     img: platedZoomed,
-    recipeAuthor: '',
+    recipeAuthors: ['Pailin Chongchinant'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

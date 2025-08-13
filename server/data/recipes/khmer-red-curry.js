@@ -28,7 +28,7 @@ module.exports = {
     cardName: 'Khmer Red Curry',
     name: 'Khmer Red Curry',
     img: cooked2,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

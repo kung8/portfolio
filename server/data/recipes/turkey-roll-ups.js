@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Turkey Roll Ups',
     name: 'Turkey Roll Ups',
     img: roll4,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

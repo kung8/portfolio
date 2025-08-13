@@ -22,7 +22,7 @@ module.exports = {
     cardName: 'Chocolate Gelato',
     name: 'Chocolate Gelato',
     img: gelato2,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
     recommended: false,

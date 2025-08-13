@@ -12,7 +12,7 @@ module.exports = {
     cardName: 'Breakfast Sandwich',
     name: 'Breakfast Sandwich',
     img: breakfastSandwich,
-    recipeAuthor: 'Kevin Ung',
+    recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,
     category: [CATEGORIES.BREAKFAST],

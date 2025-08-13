@@ -27,7 +27,7 @@ module.exports = {
     cardName: 'Chicken Pot Pie',
     name: 'Chicken Pot Pie',
     img: pie8,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

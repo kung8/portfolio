@@ -30,7 +30,7 @@ module.exports = {
     cardName: 'Cannoli Delight',
     name: 'No Bake Cannoli Delight',
     img: cannoli15,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

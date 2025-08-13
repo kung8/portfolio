@@ -32,7 +32,7 @@ module.exports = {
     cardName: 'BBQ Pulled Pork',
     name: 'BBQ Pulled Pork',
     img: finished,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

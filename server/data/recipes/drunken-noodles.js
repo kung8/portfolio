@@ -14,7 +14,7 @@ module.exports = {
     cardName: 'Drunken Noodles',
     name: 'Drunken Noodles',
     img: drunken8,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Amanda Berg',
     available: true,
     recommended: true,

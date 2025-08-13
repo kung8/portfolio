@@ -21,7 +21,7 @@ module.exports = {
     cardName: 'Cheeseballs',
     name: 'Cheeseballs',
     img: cheeseballs,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],

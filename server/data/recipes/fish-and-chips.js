@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'Fish and Chips',
     name: 'Fish and Chips',
     img: chips6,
-    recipeAuthor: 'Shawn',
+    recipeAuthors: ['Shawn'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

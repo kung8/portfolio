@@ -19,7 +19,7 @@ module.exports = {
     cardName: 'Orange Chicken',
     name: 'Orange Chicken',
     img: orange8,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

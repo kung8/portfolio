@@ -12,7 +12,7 @@ module.exports = {
     cardName: 'Rosemary Lemonade',
     name: 'Rosemary Lemonade',
     img: zoomed,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DRINK],

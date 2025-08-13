@@ -25,7 +25,7 @@ module.exports = {
     cardName: 'Hawaiian Haystacks',
     name: 'Slow-Cooked Hawaiian Haystacks',
     img: hawaiian,
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

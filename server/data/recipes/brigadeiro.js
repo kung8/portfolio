@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'Brigadeiro',
     name: 'Brigadeiro',
     img: '',
-    recipeAuthor: 'Camila Hurst',
+    recipeAuthors: ['Camila Hurst'],
     recipeFinder: 'Sarah Miller',
     available: true,
     recommended: false,

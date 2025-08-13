@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Chewy Chocolate Chip Cookies',
     name: 'Chewy Chocolate Chip Cookies',
     img: '',
-    recipeAuthor: 'Amy',
+    recipeAuthors: ['Amy'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

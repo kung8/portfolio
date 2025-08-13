@@ -7,7 +7,7 @@ module.exports = {
     cardName: '{{cardName}}',
     name: '{{name}}',
     img: '',
-    recipeAuthor: '{{recipeAuthor}}',
+    recipeAuthors: ['{{recipeAuthor}}'],
     recipeFinder: '{{recipeFinder}}',
     available: '{{available}}',
     recommended: false,

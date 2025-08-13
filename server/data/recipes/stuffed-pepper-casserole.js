@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Stuffed Pepper Casserole',
     name: 'Stuffed Pepper Casserole',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

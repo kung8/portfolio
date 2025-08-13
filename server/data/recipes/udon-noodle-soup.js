@@ -10,7 +10,7 @@ module.exports = {
     cardName: 'Udon Noodle Soup',
     name: 'Udon Noodle Soup',
     img: '',
-    recipeAuthor: '',
+    recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Blueberry Bagels',
     name: 'Blueberry Bagels',
     img: '',
-    recipeAuthor: 'Stella Drivas',
+    recipeAuthors: ['Stella Drivas'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

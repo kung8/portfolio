@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Hard Boiled Eggs',
     name: 'Hard Boiled Eggs',
     img: egg,
-    recipeAuthor: 'Kevin Ung',
+    recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,
     category: [CATEGORIES.BREAKFAST],

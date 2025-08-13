@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Chicken Gnocchi Soup',
     name: 'Chicken Gnocchi Soup',
     img: '',
-    recipeAuthor: 'Sloane Layton',
+    recipeAuthors: ['Sloane Layton'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

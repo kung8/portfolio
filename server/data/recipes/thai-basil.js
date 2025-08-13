@@ -14,7 +14,7 @@ module.exports = {
     cardName: 'Spicy Thai Basil',
     name: 'Spicy Thai Basil (Pad Krapow Gai)',
     img: basil8,
-    recipeAuthor: '',
+    recipeAuthors: ['John Mitzewich'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
