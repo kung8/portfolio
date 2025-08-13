@@ -15,7 +15,6 @@ const TZATZIKI_SAUCE_SECTION = 'Tzatziki Sauce';
 const PREP_TZATZIKI_SAUCE = 'Prep Tzatziki Sauce';
 
 module.exports = {
-    wip: true,
     cardName: 'Greek Gyros',
     name: 'Greek Gyros',
     img: gryo8,
