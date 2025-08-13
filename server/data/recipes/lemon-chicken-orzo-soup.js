@@ -17,7 +17,7 @@ module.exports = {
     cardName: 'Lemon Chicken Orzo Soup',
     name: 'Lemon Chicken Orzo Soup',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Ree Drummond'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

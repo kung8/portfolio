@@ -52,7 +52,7 @@ module.exports = {
     cardName: 'Lasagna',
     name: 'Italian Lasagna',
     img: lasagna17,
-    recipeAuthors: [''],
+    recipeAuthors: ['John Chandler'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

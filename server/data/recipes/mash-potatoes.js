@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Mash Potatoes',
     name: 'Mash Potatoes',
     img: potatoes6,
-    recipeAuthors: [''],
+    recipeAuthors: ['Holly Nilsson'],
     recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],

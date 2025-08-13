@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Deconstructed Apple Crisp',
     name: 'Deconstructed Apple Crisp',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Lauren Grant'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

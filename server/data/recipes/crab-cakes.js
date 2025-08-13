@@ -12,7 +12,7 @@ module.exports = {
     cardName: 'Crab Cakes',
     name: 'Crab Cakes',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Andrew Zimmern'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

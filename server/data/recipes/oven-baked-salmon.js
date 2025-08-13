@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Oven Baked Salmon',
     name: 'Oven Baked Salmon',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Kathleen Daelemans'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

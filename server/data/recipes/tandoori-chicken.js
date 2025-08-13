@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Tandoori Chicken',
     name: 'Tandoori Chicken',
     img: tandoori8,
-    recipeAuthors: [''],
+    recipeAuthors: ['Swasthi'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

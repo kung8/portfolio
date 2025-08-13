@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Creme Brulee French Toast',
     name: 'Creme Brulee French Toast',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Patty Catalano'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

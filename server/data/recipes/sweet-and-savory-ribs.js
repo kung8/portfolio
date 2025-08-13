@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'Sweet and Savory Ribs',
     name: 'Sweet and Savory Ribs',
     img: ribs9,
-    recipeAuthors: [''],
+    recipeAuthors: ['Stephvnietea'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

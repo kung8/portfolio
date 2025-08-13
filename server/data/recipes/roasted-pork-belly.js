@@ -29,7 +29,7 @@ module.exports = {
     cardName: 'Roasted Pork Belly',
     name: 'Roasted Pork Belly',
     img: roast14,
-    recipeAuthors: [''],
+    recipeAuthors: ['Chris Joe'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

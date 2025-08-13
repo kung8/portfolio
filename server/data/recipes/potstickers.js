@@ -31,7 +31,7 @@ module.exports = {
     cardName: 'Potstickers',
     name: 'Potstickers',
     img: potstickers,
-    recipeAuthors: [''],
+    recipeAuthors: ['John Mitzewich'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER],

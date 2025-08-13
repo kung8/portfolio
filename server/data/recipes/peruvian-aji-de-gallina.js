@@ -32,7 +32,7 @@ module.exports = {
     cardName: 'Aji de Gallina',
     name: 'Peruvian Aji de Gallina',
     img: zoomed,
-    recipeAuthors: [''],
+    recipeAuthors: ['Caroline'],
     recipeFinder: 'Gaby Ward',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

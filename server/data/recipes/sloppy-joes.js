@@ -24,7 +24,7 @@ module.exports = {
     cardName: 'Sloppy Joes',
     name: 'Sloppy Joes',
     img: cooked,
-    recipeAuthors: [''],
+    recipeAuthors: ['Natasha Kravchuk'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

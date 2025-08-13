@@ -16,7 +16,7 @@ module.exports = {
     cardName: 'Mango Sticky Rice',
     name: 'Thai Mango Sticky Rice',
     img: mango8,
-    recipeAuthors: [''],
+    recipeAuthors: ['David Tanis'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

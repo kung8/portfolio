@@ -17,7 +17,7 @@ module.exports = {
     cardName: 'Stuffing',
     name: 'Stuffing',
     img: stuffing16,
-    recipeAuthors: [''],
+    recipeAuthors: ['Jessica'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],

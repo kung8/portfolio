@@ -8,7 +8,7 @@ module.exports = {
     cardName: 'Coleslaw',
     name: 'Coleslaw',
     img: coleslaw,
-    recipeAuthors: [''],
+    recipeAuthors: ['Dennis Littley'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],

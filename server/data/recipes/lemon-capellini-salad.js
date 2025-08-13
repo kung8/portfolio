@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'Lemon Capellini Salad',
     name: 'Lemon Capellini Salad',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Shawn'],
     recipeFinder: 'Justin Ung',
     available: true,
     recommended: false,

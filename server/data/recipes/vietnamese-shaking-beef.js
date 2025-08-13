@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Shaking Beef',
     name: 'Vietnamese Shaking Beef',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Matthew Johnson'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

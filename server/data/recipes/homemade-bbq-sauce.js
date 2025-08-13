@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'Homemade BBQ Sauce',
     name: 'Homemade BBQ Sauce',
     img: sauce3,
-    recipeAuthors: [''],
+    recipeAuthors: ['Joshua Weissman'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

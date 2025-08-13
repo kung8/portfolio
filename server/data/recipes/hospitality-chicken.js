@@ -12,7 +12,7 @@ module.exports = {
     cardName: 'Hospitality Chicken',
     name: 'Hospitality Chicken',
     img: hospitalityChicken,
-    recipeAuthors: [''],
+    recipeAuthors: ['Kevin Ung'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

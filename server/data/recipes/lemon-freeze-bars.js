@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Lemon Freeze Bars',
     name: 'Lemon Freeze Bars',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Patty Catalano'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

@@ -26,7 +26,7 @@ module.exports = {
     cardName: 'Malaysian Satay',
     name: 'Malaysian Satay',
     img: satay3,
-    recipeAuthors: [''],
+    recipeAuthors: ['Chungah Ree'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

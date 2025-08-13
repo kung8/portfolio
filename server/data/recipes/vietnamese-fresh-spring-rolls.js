@@ -37,7 +37,7 @@ module.exports = {
     cardName: 'Fresh Spring Rolls',
     name: 'Vietnamese Fresh Spring Rolls',
     img: rolls9,
-    recipeAuthors: [''],
+    recipeAuthors: ['Lauren Allen', 'Todd Porter', 'Diane Porter'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

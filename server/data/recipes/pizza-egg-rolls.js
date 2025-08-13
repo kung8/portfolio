@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'Pizza Egg Rolls',
     name: 'Pizza Egg Rolls',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Suzanne S. Wiley'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

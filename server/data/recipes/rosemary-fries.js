@@ -13,7 +13,7 @@ module.exports = {
     cardName: 'Rosemary Fries',
     name: 'Rosemary Fries',
     img: baked2,
-    recipeAuthors: [''],
+    recipeAuthors: ['Jackie Gregston'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

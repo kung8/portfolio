@@ -44,7 +44,7 @@ module.exports = {
     cardName: 'Banh Mi Sandwich',
     name: 'Vietnamese Banh Mi Sandwich',
     img: banhMi,
-    recipeAuthors: [''],
+    recipeAuthors: ['Nagi Maehashi', 'Elise Bauer'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

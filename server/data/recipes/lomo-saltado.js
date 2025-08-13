@@ -14,7 +14,7 @@ module.exports = {
     cardName: 'Lomo Saltado',
     name: 'Lomo Saltado',
     img: saltado8,
-    recipeAuthors: [''],
+    recipeAuthors: ['Marzia'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

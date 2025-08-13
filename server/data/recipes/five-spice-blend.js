@@ -12,7 +12,7 @@ module.exports = {
     cardName: '5-Spice Blend',
     name: 'Five Spice Blend',
     img: blend2,
-    recipeAuthors: [''],
+    recipeAuthors: ['SilentCricket'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

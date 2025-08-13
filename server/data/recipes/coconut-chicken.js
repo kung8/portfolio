@@ -12,7 +12,7 @@ module.exports = {
     cardName: 'Coconut Chicken',
     name: 'Coconut Chicken',
     img: curry6,
-    recipeAuthors: [''],
+    recipeAuthors: ['Roma'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

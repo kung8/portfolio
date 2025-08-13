@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Peppermint Bark',
     name: 'Peppermint Bark',
     img: plated4,
-    recipeAuthors: [''],
+    recipeAuthors: ['Sara Welch'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

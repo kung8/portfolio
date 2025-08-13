@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'French Onion Soup',
     name: 'French Onion Soup Gratinee',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Jersey Tomato'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

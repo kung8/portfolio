@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'Pop Tarts',
     name: 'Pop Tarts',
     img: tart3,
-    recipeAuthors: [''],
+    recipeAuthors: ['Tracy'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

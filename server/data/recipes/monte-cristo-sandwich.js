@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'Monte Cristo Sandwich',
     name: 'Monte Cristo Sandwich',
     img: sandwich6,
-    recipeAuthors: [''],
+    recipeAuthors: ['John Mitzewich'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

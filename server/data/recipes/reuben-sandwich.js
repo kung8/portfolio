@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Reuben Sandwich',
     name: 'Reuben Sandwich',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Colette G.'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

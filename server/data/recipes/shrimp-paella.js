@@ -21,7 +21,7 @@ module.exports = {
     cardName: 'Shrimp Paella',
     name: 'Shrimp Paella',
     img: paella10,
-    recipeAuthors: [''],
+    recipeAuthors: ['John Mitzewich'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

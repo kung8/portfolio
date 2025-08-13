@@ -21,7 +21,7 @@ module.exports = {
     cardName: 'Sauteed Squash',
     name: 'Sauteed Squash',
     img: plated,
-    recipeAuthors: [''],
+    recipeAuthors: ['Erin Clarke'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

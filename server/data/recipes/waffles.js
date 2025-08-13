@@ -31,7 +31,7 @@ module.exports = {
     cardName: 'Waffles',
     name: 'Waffles',
     img: zoomed,
-    recipeAuthors: [''],
+    recipeAuthors: ['Holly Nilsson'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

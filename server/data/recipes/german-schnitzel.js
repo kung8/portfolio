@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'German Schnitzel',
     name: 'German Schnitzel',
     img: schnitzel5,
-    recipeAuthors: [''],
+    recipeAuthors: ['Kimberly Killebrew'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

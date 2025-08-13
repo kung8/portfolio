@@ -8,7 +8,7 @@ module.exports = {
     cardName: 'Lentil Sloppy Joes',
     name: 'Lentil Sloppy Joes',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Cassidy Reeser'],
     recipeFinder: 'Chelsey Hickenlooper',
     available: true,
     recommended: false,

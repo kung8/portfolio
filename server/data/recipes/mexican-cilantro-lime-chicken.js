@@ -23,7 +23,7 @@ module.exports = {
     cardName: 'Cilantro Lime Chicken',
     name: 'Mexican Cilantro Lime Chicken',
     img: set1,
-    recipeAuthors: [''],
+    recipeAuthors: ['Caitlin'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

@@ -27,7 +27,7 @@ module.exports = {
     cardName: 'Marry Me Chicken',
     name: 'Marry Me Chicken',
     img: chicken19,
-    recipeAuthors: [''],
+    recipeAuthors: ['Cheryl Malik'],
     recipeFinder: 'Montana Hiltbrand',
     available: true,
     recommended: true,

@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Pasta Pomodoro',
     name: 'Pasta Pomodoro',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Dinah'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

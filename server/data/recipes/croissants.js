@@ -19,7 +19,7 @@ module.exports = {
     cardName: 'Croissants',
     name: 'Croissants',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Joanna Cismaru'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

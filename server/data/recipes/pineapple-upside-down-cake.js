@@ -17,7 +17,7 @@ module.exports = {
     cardName: 'Pineapple Cake',
     name: 'Pineapple Upside Down Cake',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Angela Ritchie'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

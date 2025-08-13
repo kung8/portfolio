@@ -18,7 +18,7 @@ module.exports = {
     cardName: 'Garlic Chicken w/ Herbs',
     name: 'Garlic Chicken with Herbs',
     img: plated,
-    recipeAuthors: [''],
+    recipeAuthors: ['Jan Valdez'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],

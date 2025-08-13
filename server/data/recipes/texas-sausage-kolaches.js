@@ -25,7 +25,7 @@ module.exports = {
     cardName: 'Texas Sausage Kolaches',
     name: 'Texas Sausage Kolaches',
     img: kolaches14,
-    recipeAuthors: [''],
+    recipeAuthors: ['Krissi Abott'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

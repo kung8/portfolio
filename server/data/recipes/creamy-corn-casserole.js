@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'Creamy Corn Casserole',
     name: 'Creamy Corn Casserole',
     img: casserole5,
-    recipeAuthors: [''],
+    recipeAuthors: ['Ruth Phillips'],
     recipeFinder: 'Samantha Pham',
     available: true,
     recommended: false,

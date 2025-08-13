@@ -22,7 +22,7 @@ const {
 module.exports = {
     cardName: 'Sushi',
     name: 'Sushi',
-    recipeAuthors: [''],
+    recipeAuthors: ['Aldin Pope'],
     recipeFinder: 'Aldin Pope',
     img: sushi,
     available: true,

@@ -23,7 +23,7 @@ module.exports = {
     cardName: 'Chicken Tikka Masala',
     name: 'Chicken Tikka Masala',
     img: chickenSauce2,
-    recipeAuthors: [''],
+    recipeAuthors: ['Chris Bellers'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

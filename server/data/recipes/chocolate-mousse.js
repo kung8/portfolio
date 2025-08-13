@@ -39,7 +39,7 @@ module.exports = {
     cardName: 'Chocolate Mousse',
     name: 'Chocolate Mousse',
     img: mousse21,
-    recipeAuthors: [''],
+    recipeAuthors: ['Nagi Maehashi'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],

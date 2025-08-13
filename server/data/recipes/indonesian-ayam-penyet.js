@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'Ayam Penyet',
     name: 'Indonesian Ayam Penyet',
     img: penyet5,
-    recipeAuthors: [''],
+    recipeAuthors: ['deravi'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

@@ -21,7 +21,7 @@ module.exports = {
     cardName: 'Stuffed Tomatoes',
     name: 'Vietnamese Stuffed Tomatoes',
     img: tomatoes13,
-    recipeAuthors: [''],
+    recipeAuthors: ['Scruff', 'Steph'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

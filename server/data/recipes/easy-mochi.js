@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'Easy Mochi',
     name: 'Easy Mochi',
     img: mochi7,
-    recipeAuthors: [''],
+    recipeAuthors: ['Kat Lieu'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

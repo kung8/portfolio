@@ -30,7 +30,7 @@ module.exports = {
     cardName: 'Cinnamon Rolls',
     name: 'Cinnamon Rolls',
     img: plated3,
-    recipeAuthors: [''],
+    recipeAuthors: ['Monique'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Pumpkin Soup 2',
     name: 'Pumpkin Soup 2',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Ree Drummond'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

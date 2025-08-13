@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'Kolo Mee',
     name: 'Kolo Mee',
     img: kolo5,
-    recipeAuthors: [''],
+    recipeAuthors: ['KP Kwan'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

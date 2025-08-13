@@ -10,7 +10,7 @@ module.exports = {
     cardName: 'Jumbo Shrimp Parmesan',
     name: 'Jumbo Shrimp Parmesan',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Marie C'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

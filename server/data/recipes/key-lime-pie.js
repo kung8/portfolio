@@ -13,7 +13,7 @@ module.exports = {
     cardName: 'Key Lime Pie',
     name: 'Key Lime Pie',
     img: pie5,
-    recipeAuthors: [''],
+    recipeAuthors: ['Dinner2'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

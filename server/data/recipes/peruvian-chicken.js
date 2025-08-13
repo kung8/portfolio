@@ -17,7 +17,7 @@ module.exports = {
     cardName: 'Peruvian Chicken',
     name: 'Peruvian Chicken',
     img: chicken9,
-    recipeAuthors: [''],
+    recipeAuthors: ['Erin Lynch'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

@@ -10,7 +10,7 @@ module.exports = {
     cardName: 'Roasted Asparagus',
     name: 'Roasted Asparagus',
     img: asparagus4,
-    recipeAuthors: [''],
+    recipeAuthors: ['Kathryne Taylor'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

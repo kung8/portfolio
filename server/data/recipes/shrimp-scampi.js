@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'Shrimp Scampi',
     name: 'Shrimp Scampi',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Rncoggins'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,

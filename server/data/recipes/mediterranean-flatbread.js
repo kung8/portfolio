@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Mediterranean Flatbread',
     name: 'Mediterranean Flatbread',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Bailey'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

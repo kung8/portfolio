@@ -27,7 +27,7 @@ const DREDGING_STATION_SECTION = 'Dredging Station';
 module.exports = {
     cardName: 'Japanese Chicken Katsu',
     name: 'Japanese Chicken Katsu',
-    recipeAuthors: [''],
+    recipeAuthors: ['Namiko Hirasawa Chen'],
     recipeFinder: 'Aldin Pope',
     img: katsu8,
     available: true,

@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Spring Rolls',
     name: 'Spring Rolls',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Nagi Maehashi'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,

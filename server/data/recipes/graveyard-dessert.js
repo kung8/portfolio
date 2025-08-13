@@ -6,7 +6,7 @@ module.exports = {
     cardName: 'Graveyard Dessert',
     name: 'Graveyard Dessert',
     img: graveyardDessert,
-    recipeAuthors: [''],
+    recipeAuthors: ['Kevin Ung'],
     recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
@@ -22,7 +22,7 @@ module.exports = {
         { ...GUMMY_WORMS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     supplies: [
-        { name: 'Clear Cups' },
+        { name: 'clear cups' },
     ],
     directions: [
         { step: 'Fill cups with a layer of chocolate pudding.', section: SECTIONS.MAIN },

@@ -20,7 +20,7 @@ module.exports = {
     cardName: 'Honey Sesame Chicken',
     name: 'Honey Sesame Chicken',
     img: sesame8,
-    recipeAuthors: [''],
+    recipeAuthors: ['Sara Welch'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,

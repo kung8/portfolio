@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Thai Peanut Salad',
     name: 'Thai Peanut Salad',
     img: '',
-    recipeAuthors: [''],
+    recipeAuthors: ['Jennifer Segal'],
     recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
