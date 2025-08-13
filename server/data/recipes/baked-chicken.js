@@ -12,14 +12,15 @@ const {
     BLACK_PEPPER,
     GARLIC_POWDER,
     PAPRIKA,
-    CAYENNE_PEPPER
+    CAYENNE_PEPPER,
+    ONION_POWDER
 } = require('./ingredients');
 
 module.exports = {
     cardName: 'Baked Chicken',
     name: 'Baked Chicken',
     img: pan,
-    recipeAuthors: [''],
+    recipeAuthors: ['Vered DeLeeuw'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
@@ -31,12 +32,16 @@ module.exports = {
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
+    websites: [
+        { label: 'Baked Chicken', link: 'https://healthyrecipesblogs.com/baked-drumsticks/' },
+    ],
     ingredients: [
         { ...CHICKEN_DRUMSTICKS, amount: 10, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'skin on', section: SECTIONS.MAIN },
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...GARLIC_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ONION_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...PAPRIKA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...CAYENNE_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
