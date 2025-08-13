@@ -1,17 +1,26 @@
-const plated = '../assets/Products/peruvian-chicken-plated.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const chicken1 = '../assets/Products/peruvian-chicken-1.jpeg';
+const chicken2 = '../assets/Products/peruvian-chicken-2.jpeg';
+const chicken3 = '../assets/Products/peruvian-chicken-3.jpeg';
+const chicken4 = '../assets/Products/peruvian-chicken-4.jpeg';
+const chicken5 = '../assets/Products/peruvian-chicken-5.jpeg';
+const chicken6 = '../assets/Products/peruvian-chicken-6.jpeg';
+const chicken7 = '../assets/Products/peruvian-chicken-7.jpeg';
+const chicken8 = '../assets/Products/peruvian-chicken-8.jpeg';
+const chicken9 = '../assets/Products/peruvian-chicken-9.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { GARLIC, LIGHT_SOY_SAUCE, LIME_JUICE, OLIVE_OIL, CUMIN, PAPRIKA, OREGANO, BLACK_PEPPER, JALAPENO_PEPPER, CILANTRO, GREEN_ONION, MAYONNAISE, SALT, GREEK_YOGURT, CHICKEN_DRUMETTES } = require('./ingredients');
 
 const CREAMY_GREEN_SAUCE = 'Creamy Green Sauce';
 
 module.exports = {
-    wip: true,
     cardName: 'Peruvian Chicken',
     name: 'Peruvian Chicken',
-    img: plated,
+    img: chicken9,
     recipeAuthor: '',
     recipeFinder: 'Kevin Ung',
     available: true,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.PERUVIAN, GENRES.LATIN],
     method: [METHODS.GRILL],
@@ -35,7 +44,7 @@ module.exports = {
         { ...PAPRIKA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...OREGANO, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...JALAPENO_PEPPER, amount: 3, unit: '', additionalDetails: 'seeds and ribs removed, chopped', section: CREAMY_GREEN_SAUCE },
+        { ...JALAPENO_PEPPER, amount: 3, unit: '', additionalDetails: 'seeded and ribs removed, chopped', section: CREAMY_GREEN_SAUCE },
         { ...CILANTRO, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
         { ...GREEN_ONION, amount: 2, unit: '', additionalDetails: 'chopped', section: CREAMY_GREEN_SAUCE },
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
@@ -56,17 +65,16 @@ module.exports = {
         { name: 'aluminum foil' },
     ],
     directions: [
-        { step: 'Combine marinade ingredients in a blender.', section: SECTIONS.MARINADE },
-        { step: 'In a mixing bowl or ziploc bag, marinade the chicken for at least 8 hours (up to 24 hours).', section: SECTIONS.MARINADE },
-        { step: 'In a blender, add all the sauce ingredients except the oil.', section: CREAMY_GREEN_SAUCE },
-        { step: 'Blend and slowly add the olive oil.', section: CREAMY_GREEN_SAUCE },
-        { step: 'Transfer to a container and refrigerate.', section: CREAMY_GREEN_SAUCE },
+        { step: 'Combine marinade ingredients in a blender.', section: SECTIONS.MARINADE, img: chicken1 },
+        { step: 'In a mixing bowl or ziploc bag, marinade the chicken for at least 8 hours (up to 24 hours).', section: SECTIONS.MARINADE, img: chicken2 },
+        { step: `In a blender, add all the "${CREAMY_GREEN_SAUCE}" section ingredients. Blend.`, section: CREAMY_GREEN_SAUCE, img: chicken3 },
+        { step: 'Transfer to a container and refrigerate.', section: CREAMY_GREEN_SAUCE, img: chicken4 },
         { step: 'Preheat the oven to 500ºF.', section: SECTIONS.MAIN },
-        { step: 'Place the chicken in a baking pan.', section: SECTIONS.MAIN },
+        { step: 'Place the chicken in a baking pan.', section: SECTIONS.MAIN, img: chicken5 },
         { step: 'Add 1 cup of water to the pan.', section: SECTIONS.MAIN },
-        { step: 'Bake for 30 minutes.', section: SECTIONS.MAIN },
-        { step: 'Tent the pan with aluminum foil and cook until the chicken is cooked through (about 15 minutes).', section: SECTIONS.MAIN },
-        { step: 'Serve the chicken with the creamy green sauce.', section: SECTIONS.SERVE },
+        { step: 'Bake for 30 minutes.', section: SECTIONS.MAIN, img: chicken6 },
+        { step: 'Tent the pan with aluminum foil and cook until the chicken is cooked through (about 15 minutes).', section: SECTIONS.MAIN, img: chicken7 },
+        { step: 'Serve the chicken with the creamy green sauce.', section: SECTIONS.SERVE, img: chicken8 },
     ],
     store: [
         {

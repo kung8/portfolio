@@ -1,4 +1,12 @@
 const gryo1 = '../assets/Products/gyro-1.jpeg';
+const gryo2 = '../assets/Products/gyro-2.jpeg';
+const gryo3 = '../assets/Products/gyro-3.jpeg';
+const gryo4 = '../assets/Products/gyro-4.jpeg';
+const gryo5 = '../assets/Products/gyro-5.jpeg';
+const gryo6 = '../assets/Products/gyro-6.jpeg';
+const gryo7 = '../assets/Products/gyro-7.jpeg';
+const gryo8 = '../assets/Products/gyro-8.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, GARLIC, WHITE_VINEGAR, LEMON_JUICE, OLIVE_OIL, GREEK_YOGURT, OREGANO, SALT, BLACK_PEPPER, CUCUMBER, ROMA_TOMATO, RED_ONION, PARSLEY, PITA_BREAD } = require('./ingredients');
 
@@ -10,11 +18,11 @@ module.exports = {
     wip: true,
     cardName: 'Greek Gyros',
     name: 'Greek Gyros',
-    img: '',
-    recipeAuthor: '',
+    img: gryo8,
+    recipeAuthor: 'Nagi Maehashi',
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.GREEK, GENRES.MEDITERRANEAN],
     method: [METHODS.PAN_FRY],
@@ -63,7 +71,7 @@ module.exports = {
     supplies: [
         { name: 'ziploc bag' },
         { name: 'box grater' },
-        { name: 'paper towels' },
+        { name: 'cheesecloth' },
         { name: '2 mixing bowls' },
         { name: 'frying pan' },
         { name: 'aluminum foil' },
@@ -76,26 +84,26 @@ module.exports = {
         { step: 'Marinate overnight (or at least 3 hours).', section: SECTIONS.MARINATE_CHICKEN },
 
         { step: 'Cut the cucumber in half lengthwise.', section: PREP_TZATZIKI_SAUCE },
-        { step: 'Scrape the seeds out.', section: PREP_TZATZIKI_SAUCE },
+        { step: 'Scrape the seeds out.', section: PREP_TZATZIKI_SAUCE, img: gryo2 },
         { step: 'Grate the cucumber.', section: PREP_TZATZIKI_SAUCE },
-        { step: 'Wrap the grated cucumber in paper towels.', section: PREP_TZATZIKI_SAUCE },
-        { step: 'Squeeze to remove liquid.', section: PREP_TZATZIKI_SAUCE },
-        { step: `In a mixing bowl, combine the "${TZATZIKI_SAUCE_SECTION}" section ingredients (including the grated cucumber).`, section: PREP_TZATZIKI_SAUCE },
+        { step: 'Wrap the grated cucumber in cheesecloth.', section: PREP_TZATZIKI_SAUCE, img: gryo3 },
+        { step: 'Squeeze to remove liquid.', section: PREP_TZATZIKI_SAUCE, img: gryo4 },
+        { step: `In a mixing bowl, combine the "${TZATZIKI_SAUCE_SECTION}" section ingredients (including the grated cucumber).`, section: PREP_TZATZIKI_SAUCE, img: gryo5 },
         { step: 'Let it sit for at least 20 minutes.', section: PREP_TZATZIKI_SAUCE },
 
         { step: `In a mixing bowl, combine the "${SECTIONS.SALAD}" section ingredients.`, section: SECTIONS.PREP_SALAD },
 
         { step: 'Over medium-high heat, heat oil in a frying pan.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Add chicken. Cook until golden brown and cooked through (about 2 to 3 minutes per side).', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Add chicken. Cook until golden brown and cooked through (about 2 to 3 minutes per side).', section: SECTIONS.COOK_CHICKEN, img: gryo6 },
         { step: 'Transfer the chicken to a plate.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Cover loosely with foil and let rest for at least 5 minutes.', section: SECTIONS.COOK_CHICKEN },
 
         { step: 'Wrap pita bread in damp towel. Microwave in 15-seconds intervals.', section: SECTIONS.ASSEMBLE },
         { step: 'Place pita bread on parchment paper.', section: SECTIONS.ASSEMBLE },
         { step: 'Add salad in the middle.', section: SECTIONS.ASSEMBLE },
-        { step: 'Top with chicken and tzatziki sauce.', section: SECTIONS.ASSEMBLE },
+        { step: 'Top with chicken and tzatziki sauce.', section: SECTIONS.ASSEMBLE, img: gryo7 },
         { step: 'Enclose the filling by wrapping the pita bread and the parchment paper.', section: SECTIONS.ASSEMBLE },
-        
+
         { step: 'Serve and enjoy!', section: SECTIONS.SERVE },
     ],
     store: [
