@@ -1,4 +1,10 @@
-// const example = '../assets/Products/example.jpeg';
+const chimichangas1 = '../assets/Products/beef-and-bean-chimichangas-1.jpeg';
+const chimichangas2 = '../assets/Products/beef-and-bean-chimichangas-2.jpeg';
+const chimichangas3 = '../assets/Products/beef-and-bean-chimichangas-3.jpeg';
+const chimichangas4 = '../assets/Products/beef-and-bean-chimichangas-4.jpeg';
+const chimichangas5 = '../assets/Products/beef-and-bean-chimichangas-5.jpeg';
+const chimichangas6 = '../assets/Products/beef-and-bean-chimichangas-6.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { GROUND_BEEF, YELLOW_ONION, GREEN_BELL_PEPPER, CORN, CHILI_POWDER, GARLIC_SALT, CUMIN, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, FLOUR_TORTILLA, LETTUCE, ROMA_TOMATO, REFRIED_BEANS, TACO_SAUCE } = require('./ingredients');
 
@@ -7,14 +13,13 @@ const PREP_OVEN = 'Prep Oven';
 const ADD_SPICES = 'Add Spices';
 
 module.exports = {
-    wip: true,
     cardName: 'Beef + Bean Chimichangas',
     name: 'Beef and Bean Chimichangas',
-    img: '',
+    img: chimichangas6,
     recipeAuthors: ['Nicole'],
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.MEXICAN],
     method: [METHODS.SAUTE, METHODS.BAKE],
@@ -57,15 +62,19 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: PREP_OVEN },
-        { step: 'Over medium-high heat, brown beef in a frying pan.', section: SECTIONS.COOK_BEEF },
+        { step: 'Over medium-high heat, brown beef in a frying pan.', section: SECTIONS.COOK_BEEF, img: chimichangas1 },
         { step: 'Drain the excess grease.', section: SECTIONS.COOK_BEEF },
-        { step: 'Add the "Veggies" ingredients. Mix and cook until tender (about 5 minutes).', section: SECTIONS.COOK_VEGGIES },
+        { step: 'Add the "Veggies" ingredients. Mix and cook until tender (about 5 minutes).', section: SECTIONS.COOK_VEGGIES, img: chimichangas2 },
         { step: 'Add "Seasoning" ingredients and mix. Cook until everything is heated through.', section: ADD_SPICES },
-        { step: 'On each tortilla, add a thin layer of beans, beef mixture, and cheese.', section: SECTIONS.ASSEMBLE },
+        { step: 'On each tortilla, add a thin layer of beans, beef mixture, and cheese.', section: SECTIONS.ASSEMBLE, img: chimichangas3 },
         { step: 'Roll tortillas. Place them with the seam-side down in a baking dish.', section: SECTIONS.ASSEMBLE },
-        { step: 'Brush the top with melted butter.', section: SECTIONS.ASSEMBLE },
-        { step: 'Bake until golden brown (about 30 to 35 minutes).', section: SECTIONS.BAKE },
+        { step: 'Brush the top with melted butter.', section: SECTIONS.ASSEMBLE, img: chimichangas4 },
+        { step: 'Bake until golden brown (about 30 to 35 minutes).', section: SECTIONS.BAKE, img: chimichangas5 },
         { step: 'Enjoy this simple mexican dish topped with your favorite toppings.', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'I accidentally forgot to add the taco sauce inside the chimichangas while cooking, but it still turned out great! I added it as a topping instead. The chimichangas without the taco sauce on the inside was not dried out after cooking but I would recommend trying it so the filling soaks up the sauce.' },
+        { note: 'I doubled the amount of beef just to add more protein into my diet (i.e the amount of beef the original recipe calls for is still used in this recipe).'}
     ],
     store: [
         {
