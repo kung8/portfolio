@@ -2,7 +2,7 @@ const satay1 = '../assets/Products/malaysian-satay-1.jpeg';
 const satay2 = '../assets/Products/malaysian-satay-2.jpeg';
 const satay3 = '../assets/Products/malaysian-satay-3.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     CHICKEN_THIGH,
     SALT,
@@ -22,6 +22,8 @@ const {
     WATER,
 } = require('./ingredients');
 
+const BAKE_PREP_SECTION = 'Bake Prep';
+
 module.exports = {
     cardName: 'Malaysian Satay',
     name: 'Malaysian Satay',
@@ -40,7 +42,6 @@ module.exports = {
     waitTime: { amount: 6, unit: TIME_UNITS.HOUR },
     separated: true,
     websites: [
-        // { label: 'Chicken Satay', link: 'https://rasamalaysia.com/recipe-chicken-satay/' }
         { label: 'Chicken Satay', link: 'https://damndelicious.net/2019/06/07/chicken-satay-with-peanut-sauce/' }
     ],
     ingredients: [
@@ -53,9 +54,6 @@ module.exports = {
         { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...FISH_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MARINADE },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MARINADE },
 
         { ...PEANUT_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
@@ -64,6 +62,10 @@ module.exports = {
         { ...ASIAN_CHILI_GARLIC_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BAKE_PREP_SECTION },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: BAKE_PREP_SECTION },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: BAKE_PREP_SECTION },
     ],
     appliances: [
         { name: 'blender' },
@@ -96,6 +98,7 @@ module.exports = {
     ],
     notes: [
         { note: 'Be careful the turmeric may stain your baking sheet so the aluminum foil is recommended.' },
+        { note: 'Make sure to use a baking sheet with a rim since there will be used cooking oils that will remain.' },
     ],
     store: [
         {
