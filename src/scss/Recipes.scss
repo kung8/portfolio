@@ -262,7 +262,7 @@
             cursor: pointer;
             z-index: 1;
             position: relative;
-            width: 25%;
+            width: 16.66%;
             padding: 4px;
             &:hover {
                 opacity: 0.7;
@@ -278,6 +278,12 @@
                 }
             }
 
+            @include mixins.down(theme.$extra-large) {
+                width: 20%;
+            }
+            @include mixins.down(theme.$desktop) {
+                width: 25%;
+            }
             @include mixins.down(theme.$tablet) {
                 width: 33.33%;
             }
@@ -304,22 +310,7 @@
                     color: theme.$white;
                     text-shadow: 1px 1px 1px theme.$black;
                     letter-spacing: 1.5px;
-                    font-size: 18px;
-                    @include mixins.down(theme.$mid-desktop) {
-                        font-size: 16px;
-                    }
-                    @include mixins.down(theme.$desktop) {
-                        font-size: 14px;
-                    }
-                    @include mixins.down(theme.$large-tablet) {
-                        font-size: 12px;
-                    }
-                    @include mixins.down(theme.$mobile) {
-                        font-size: 10px;
-                    }
-                    @include mixins.down(theme.$small-mobile) {
-                        font-size: 8px;
-                    }
+                    font-size: 12px;
                 }
             }
 
@@ -343,41 +334,8 @@
                     letter-spacing: 1.5px;
                     display: inline-block;
                     word-wrap: unset;
-                    font-size: 20px;
+                    font-size: 10px;
                     z-index: 1;
-                    @include mixins.down(theme.$xx-large) {
-                        font-size: 18px;
-                    }
-                    @include mixins.down(theme.$extra-large) {
-                        font-size: 16px;
-                    }
-                    @include mixins.down(theme.$mid-desktop) {
-                        font-size: 12px;
-                    }
-                    @include mixins.down(theme.$desktop) {
-                        font-size: 10px;
-                    }
-                    @include mixins.down(theme.$large-tablet) {
-                        font-size: 8px;
-                    }
-                    @include mixins.down(theme.$tablet) {
-                        font-size: 12px;
-                    }
-                    @include mixins.down(700px) {
-                        font-size: 10px;
-                    }
-                    @include mixins.down(theme.$mobile-xl) {
-                        font-size: 14px;
-                    }
-                    @include mixins.down(theme.$mobile) {
-                        font-size: 10px;
-                    }
-                    @include mixins.down(theme.$small-mobile) {
-                        font-size: 8px;
-                    }
-                    @include mixins.down(theme.$extra-small) {
-                        font-size: 6px;
-                    }
                 }
             }
 
