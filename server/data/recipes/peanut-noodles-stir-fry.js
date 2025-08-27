@@ -20,7 +20,7 @@ module.exports = {
     img: stirFry9,
     recipeAuthors: ['Kyrie Patterson'],
     recipeFinder: 'Kevin Ung',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.THAI],
