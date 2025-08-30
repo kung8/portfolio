@@ -1,6 +1,7 @@
 const almondCroissantCookieBars = require("./recipes/almond-croissant-cookie-bars");
 const americanOmelette = require("./recipes/american-omelette");
 const antsOnALog = require("./recipes/ants-on-a-log");
+const appleCiderHawaiianRollDonuts = require('./recipes/apple-cider-hawaiian-roll-donuts.js'); // TODO: finish adding recipe
 const appleDumpCake = require('./recipes/apple-dump-cake.js'); // TODO: finish adding recipe
 const appleDumplings = require('./recipes/apple-dumplings.js'); // TODO: finish adding recipe
 const applePie = require("./recipes/apple-pie");
@@ -331,6 +332,7 @@ const vietnameseStuffedTomatoes = require("./recipes/vietnamese-stuffed-tomatoes
 const waffles = require("./recipes/waffles");
 const wrap = require("./recipes/wrap");
 const yellowCurry = require("./recipes/yellow-curry");
+const yuleLog = require('./recipes/yule-log.js'); // TODO: finish adding recipe
 
 // END OF IMPORTS
 
@@ -682,9 +684,11 @@ const recipes = [
     coffeeCake,
     chocolateCake,
     chocolateButtercreamFrosting,
+    yuleLog,
     peachCobbler,
     appleDumpCake,
     pineappleUpsideDownCake,
+    appleCiderHawaiianRollDonuts,
     bostonCreamHawaiianRollDonuts,
     pretzel,
     peanutBrittle,
