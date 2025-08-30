@@ -33,7 +33,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: 'halved', section: SECTIONS.CHICKEN },
         { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
