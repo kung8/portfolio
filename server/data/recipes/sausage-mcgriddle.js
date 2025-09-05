@@ -1,5 +1,12 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const mcgriddle1 = '../assets/Products/mcgriddle-1.jpeg';
+const mcgriddle2 = '../assets/Products/mcgriddle-2.jpeg';
+const mcgriddle3 = '../assets/Products/mcgriddle-3.jpeg';
+const mcgriddle4 = '../assets/Products/mcgriddle-4.jpeg';
+const mcgriddle5 = '../assets/Products/mcgriddle-5.jpeg';
+const mcgriddle6 = '../assets/Products/mcgriddle-6.jpeg';
+const mcgriddle7 = '../assets/Products/mcgriddle-7.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { PANCAKE_MIX, EGG, SAUSAGE_PATTY, AMERICAN_CHEESE } = require('./ingredients');
 
 const MCGRIDDLE_PANCAKE_SECTION = 'McGriddle Pancake';
@@ -7,14 +14,13 @@ const COOK_PANCAKE = 'Cook Pancake';
 const HEAT_SAUSAGE = 'Heat Sausage';
 
 module.exports = {
-    wip: true,
     cardName: 'Sausage McGriddle',
     name: 'Sausage McGriddle',
-    img: '',
+    img: mcgriddle6,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
@@ -44,22 +50,25 @@ module.exports = {
         { step: 'In a mixing bowl, prepare the pancake batter according to the box\'s instruction.', section: COOK_PANCAKE },
         { step: 'Place mason jar lid rings upside down on the griddle.', section: COOK_PANCAKE },
         { step: 'Turn on the griddle to 375ºF.', section: COOK_PANCAKE },
-        { step: 'Write an "M" in the center of each ring. Let it cook for 30 seconds.', section: COOK_PANCAKE },
-        { step: 'Fill each ring with the batter. Let it cook for 1 to 2 minutes.', section: COOK_PANCAKE },
+        { step: 'Write an "M" in the center of each ring. Let it cook for 30 seconds.', section: COOK_PANCAKE, img: mcgriddle1 },
+        { step: 'Fill each ring with the batter. Let it cook for 1 to 2 minutes.', section: COOK_PANCAKE, img: mcgriddle2 },
         { step: 'Flip with spatula. Cook for 1 to 2 minutes.', section: COOK_PANCAKE },
         { step: 'Pop out the pancake and set aside.', section: COOK_PANCAKE },
 
         { step: 'In a medium bowl, whisk the eggs.', section: SECTIONS.COOK_EGGS },
         { step: 'Place the mason jar lid rings upside down on the griddle.', section: SECTIONS.COOK_EGGS },
-        { step: 'Fill each ring with the egg batter. Let it cook for 2 to 3 minutes.', section: SECTIONS.COOK_EGGS },
-        { step: 'Flip with spatula. Cook for 2 to 3 minutes.', section: SECTIONS.COOK_EGGS },
+        { step: 'Fill each ring with the egg batter. Let it cook for 2 to 3 minutes.', section: SECTIONS.COOK_EGGS, img: mcgriddle3 },
+        { step: 'Flip with spatula. Cook for 2 to 3 minutes.', section: SECTIONS.COOK_EGGS, img: mcgriddle4 },
         { step: 'Pop out the eggs and set aside.', section: SECTIONS.COOK_EGGS },
 
-        { step: 'Place sausage patties on griddle. Cook until each side is hot and cooked.', section: HEAT_SAUSAGE },
+        { step: 'Place sausage patties on griddle. Cook until each side is hot and cooked.', section: HEAT_SAUSAGE, img: mcgriddle5 },
         { step: 'Add cheese slice on each patty.', section: HEAT_SAUSAGE },
 
-        { step: 'Assemble the McGriddle sandwich: pancake, patty with cheese, egg, pancake.', section: SECTIONS.ASSEMBLE },
+        { step: 'Assemble the McGriddle sandwich: pancake, patty with cheese, egg, pancake.', section: SECTIONS.ASSEMBLE, img: mcgriddle7 },
         { step: 'Enjoy this homemade McGriddle topped with a little syrup optionally.', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'I enjoyed these homemade McGriddles but I thing the amount of work cooking the batter and the eggs within the cookie cutter/mason jar lids and popping them out wasn\'t worth it. I think you can still get the same experience and taste if you cook without those.' },
     ],
     store: [
         {
