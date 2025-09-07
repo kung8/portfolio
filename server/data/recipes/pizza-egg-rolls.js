@@ -1,18 +1,28 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const rolls1 = '../assets/Products/pizza-egg-rolls-1.jpeg';
+const rolls2 = '../assets/Products/pizza-egg-rolls-2.jpeg';
+const rolls3 = '../assets/Products/pizza-egg-rolls-3.jpeg';
+const rolls4 = '../assets/Products/pizza-egg-rolls-4.jpeg';
+const rolls5 = '../assets/Products/pizza-egg-rolls-5.jpeg';
+const rolls6 = '../assets/Products/pizza-egg-rolls-6.jpeg';
+const rolls7 = '../assets/Products/pizza-egg-rolls-7.jpeg';
+const rolls8 = '../assets/Products/pizza-egg-rolls-8.jpeg';
+const rolls9 = '../assets/Products/pizza-egg-rolls-9.jpeg';
+const rolls10 = '../assets/Products/pizza-egg-rolls-10.jpeg';
+const rolls11 = '../assets/Products/pizza-egg-rolls-11.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { MOZZARELLA_CHEESE, ITALIAN_SAUSAGE, PEPPERONI, GREEN_BELL_PEPPER, RED_BELL_PEPPER, YELLOW_ONION, PIZZA_SAUCE, SPRING_ROLL_WRAPPER, VEGETABLE_OIL } = require('./ingredients');
 
 const PREP_SPRING_ROLLS = 'Prep Spring Rolls';
 
 module.exports = {
-    wip: true,
     cardName: 'Pizza Egg Rolls',
     name: 'Pizza Egg Rolls',
-    img: '',
+    img: rolls11,
     recipeAuthors: ['Suzanne S. Wiley'],
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
     genre: [GENRES.AMERICAN],
     method: [METHODS.DEEP_FRY],
@@ -40,7 +50,6 @@ module.exports = {
     ],
     appliances: [
         { name: 'deep fryer or stove' },
-
     ],
     supplies: [
         { name: 'mixing bowl' },
@@ -50,23 +59,22 @@ module.exports = {
         { name: 'paper towels' },
     ],
     directions: [
-        { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING },
+        { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING, img: rolls1 },
 
         { step: 'On a clean surface or cutting board, place the spring roll wrapper with a corner facing you.', section: PREP_SPRING_ROLLS },
-        { step: 'Place a 1/4 cup of the filling 1 inch from the corner nearest you.', section: PREP_SPRING_ROLLS },
-        { step: 'Carefully roll the spring roll wrapper until it reaches the middle.', section: PREP_SPRING_ROLLS },
-        { step: 'Fold over the sides.', section: PREP_SPRING_ROLLS },
+        { step: 'Place a 1/4 cup of the filling 1 inch from the corner nearest you.', section: PREP_SPRING_ROLLS, img: rolls2 },
+        { step: 'Carefully roll the spring roll wrapper until it reaches the middle.', section: PREP_SPRING_ROLLS, img: rolls3 },
+        { step: 'Fold over the sides.', section: PREP_SPRING_ROLLS, img: rolls4 },
         { step: 'Brush the exposed wrapper with water.', section: PREP_SPRING_ROLLS },
         { step: 'Finish rolling the spring roll.', section: PREP_SPRING_ROLLS },
-        { step: 'Press to seal.', section: PREP_SPRING_ROLLS },
-
+        { step: 'Press to seal.', section: PREP_SPRING_ROLLS, img: [rolls5, rolls6] },
 
         { step: 'Place 2 layers of paper towels on top of a baking sheet and then place the cooling rack on top of the paper towels.', section: SECTIONS.DEEP_FRY },
         { step: 'Heat 1 to 2 inches of oil to 375ºF.', section: SECTIONS.DEEP_FRY },
-        { step: 'Deep fry pizza egg rolls until golden brown (about 1 to 2 minutes each side).', section: SECTIONS.DEEP_FRY },
-        { step: 'Place on cooling rack to drain.', section: SECTIONS.DEEP_FRY },
+        { step: 'Deep fry pizza egg rolls until golden brown (about 1 to 2 minutes each side).', section: SECTIONS.DEEP_FRY, img: [rolls7, rolls8] },
+        { step: 'Place on cooling rack to drain.', section: SECTIONS.DEEP_FRY, img: rolls9 },
 
-        { step: 'Serve these warm with pizza sauce.', section: SECTIONS.SERVE },
+        { step: 'Serve these warm with pizza sauce.', section: SECTIONS.SERVE, img: rolls10 },
     ],
     store: [
         {
