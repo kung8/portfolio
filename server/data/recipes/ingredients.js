@@ -940,6 +940,7 @@ const INGREDIENTS = {
             name: 'fresh ramen noodles', category: INGREDIENT_CATEGORY.GRAIN, img: "https://images.unsplash.com/photo-1628919311414-1ee37e9ed8ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxMTkyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         FRESH_RICE_NOODLES: { name: 'fresh rice noodles', category: INGREDIENT_CATEGORY.GRAIN },
+        GNOCCHI: { name: 'gnocchi', category: INGREDIENT_CATEGORY.GRAIN },
         HAMBURGER_BUNS: { name: 'hamburger buns', category: INGREDIENT_CATEGORY.GRAIN },
         HAWAIIAN_ROLLS: { name: 'hawaiian rolls', category: INGREDIENT_CATEGORY.GRAIN },
         HOAGIE_BREAD: { name: 'hoagie bread', category: INGREDIENT_CATEGORY.GRAIN },
@@ -987,6 +988,7 @@ const INGREDIENTS = {
         WHITE_RICE: {
             name: 'white rice', category: INGREDIENT_CATEGORY.GRAIN, img: "https://images.unsplash.com/photo-1586201375761-83865001e31c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU5ODE4fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        WONTON_WRAPPER: { name: 'wonton wrapper', category: INGREDIENT_CATEGORY.GRAIN },
         ZITI: { name: 'ziti', category: INGREDIENT_CATEGORY.GRAIN },
     },
     HEALTH: {
@@ -1863,6 +1865,7 @@ const INGREDIENTS = {
         },
         FENUGREEK_LEAVES: { name: 'fenugreek leaves', category: INGREDIENT_CATEGORY.SPICES },
         GARAM_MASALA: { name: 'garam masala', category: INGREDIENT_CATEGORY.SPICES },
+        GARLIC_AND_HERB: { name: 'garlic and herb', category: INGREDIENT_CATEGORY.SPICES },
         GARLIC_POWDER: { name: 'garlic powder', category: INGREDIENT_CATEGORY.SPICES },
         GARLIC_SALT: { name: 'garlic salt', category: INGREDIENT_CATEGORY.SPICES },
         GROUND_GINGER: { name: 'ground ginger', category: INGREDIENT_CATEGORY.SPICES },

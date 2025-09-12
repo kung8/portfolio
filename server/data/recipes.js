@@ -165,6 +165,7 @@ const greenBeanCasserole = require("./recipes/green-bean-casserole");
 const grilledCheeseSandwich = require("./recipes/grilled-cheese-sandwich");
 const groundBeefRamen = require('./recipes/ground-beef-ramen.js');
 const guacamole = require("./recipes/guacamole");
+const gyoza = require('./recipes/gyoza.js');
 const hamburger = require("./recipes/hamburger");
 const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
 const hawaiianGlazedHam = require("./recipes/hawaiian-glazed-ham");
@@ -216,6 +217,7 @@ const malaysianSatay = require("./recipes/malaysian-satay");
 const mangoChutney = require("./recipes/mango-chutney");
 const mangoStickyRice = require("./recipes/mango-sticky-rice");
 const marryMeChicken = require("./recipes/marry-me-chicken");
+const marryMeChickenAndGnocchiSoup = require('./recipes/marry-me-chicken-and-gnocchi-soup.js');
 const mashPotatoes = require("./recipes/mash-potatoes");
 const meatballSub = require("./recipes/meatball-sub");
 const mediterraneanFlatbread = require('./recipes/mediterranean-flatbread.js'); // TODO: finish adding recipe
@@ -381,6 +383,7 @@ const recipes = [
     japaneseChickenKatsu,
     japaneseKatsudon,
     karaage,
+    gyoza,
     japaneseCurry,
     oyakodon,
     lemonChickenRamen,
@@ -495,6 +498,7 @@ const recipes = [
     shrimpScampi,
     potatoGnocchi,
     ravioli,
+    marryMeChickenAndGnocchiSoup,
     italianTurkeyMeatballSpinachTortelliniSoup,
     lemonChickenOrzoSoup,
     chickenGnocchiSoup,
