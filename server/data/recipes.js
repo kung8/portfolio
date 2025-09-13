@@ -153,6 +153,7 @@ const frenchToast = require("./recipes/french-toast");
 const frozenMudPie = require("./recipes/frozen-mud-pie");
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const garlicButter = require("./recipes/garlic-butter");
+const garlicButterRiceWithKale = require('./recipes/garlic-butter-rice-with-kale.js');
 const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
 const garlicParmesanShrimp = require('./recipes/garlic-parmesan-shrimp.js');
 const garlicShrimp = require("./recipes/garlic-shrimp");
@@ -588,8 +589,9 @@ const recipes = [
     bakedBeans,
     crescentRolls,
     dinnerRolls,
-    cowboyButterChickenWings,
+    garlicButterRiceWithKale,
     bakedChickenBreast,
+    cowboyButterChickenWings,
     bbqChickenWings,
     dirtyPsGarlicGingerChickenThighs,
     rosemaryFries,
