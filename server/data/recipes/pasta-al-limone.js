@@ -1,18 +1,27 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const limone1 = '../assets/Products/pasta-al-limone-1.jpeg';
+const limone2 = '../assets/Products/pasta-al-limone-2.jpeg';
+const limone3 = '../assets/Products/pasta-al-limone-3.jpeg';
+const limone4 = '../assets/Products/pasta-al-limone-4.jpeg';
+const limone5 = '../assets/Products/pasta-al-limone-5.jpeg';
+const limone6 = '../assets/Products/pasta-al-limone-6.jpeg';
+const limone7 = '../assets/Products/pasta-al-limone-7.jpeg';
+const limone8 = '../assets/Products/pasta-al-limone-8.jpeg';
+const limone9 = '../assets/Products/pasta-al-limone-9.jpeg';
+const limone10 = '../assets/Products/pasta-al-limone-10.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { FETTUCCINE_NOODLES, HEAVY_CREAM, PARMIGIANO_REGGIANO, UNSALTED_BUTTER, LEMON_JUICE, LEMON_ZEST, BLACK_PEPPER, SALT } = require('./ingredients');
 
 const COMBINE = 'Combine';
 
 module.exports = {
-    wip: true,
     cardName: 'Pasta al Limone',
     name: 'Pasta al Limone',
-    img: '',
+    img: limone10,
     recipeAuthors: ['Grace Vallo'],
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],
@@ -34,7 +43,7 @@ module.exports = {
         { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
         { ...PARMIGIANO_REGGIANO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: SECTIONS.SAUCE },
-        
+
         { ...PARMIGIANO_REGGIANO, amount: '', unit: '', additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
         { ...LEMON_ZEST, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
@@ -48,18 +57,18 @@ module.exports = {
         { name: 'saucepan' },
     ],
     directions: [
-        { step: 'Over medium heat, add butter, lemon juice and lemon zest to a large pan. Stir occasionally.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Let the butter melt and simmer for 20 seconds.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Add the heavy cream, black pepper and salt. Mix.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Over medium heat, add butter, lemon juice and lemon zest to a large pan. Stir occasionally.', section: SECTIONS.COOK_SAUCE, img: limone1 },
+        { step: 'Let the butter melt and simmer for 20 seconds.', section: SECTIONS.COOK_SAUCE, img: limone2 },
+        { step: 'Add the heavy cream, black pepper and salt. Mix.', section: SECTIONS.COOK_SAUCE, img: limone3 },
         { step: 'Reduce to medium-low heat. Bring to a gentle simmer. Let it simmer while you cook the pasta.', section: SECTIONS.COOK_SAUCE },
 
         { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: SECTIONS.COOK_NOODLES },
-        { step: 'Add the pasta and cook until al dente.', section: SECTIONS.COOK_NOODLES },
+        { step: 'Add the pasta and cook until al dente.', section: SECTIONS.COOK_NOODLES, img: limone5 },
         { step: 'Drain the pasta.', section: SECTIONS.COOK_NOODLES },
 
-        { step: 'Reduce to low heat. Add the parmesan to the sauce and stir.', section: COMBINE },
-        { step: 'Add pasta to the sauce. Combine.', section: COMBINE },
-        { step: 'Serve immediately and garnish with more of the toppings as desired.', section: SECTIONS.SERVE },
+        { step: 'Reduce to low heat. Add the parmesan to the sauce and stir.', section: COMBINE, img: limone4 },
+        { step: 'Add pasta to the sauce. Combine.', section: COMBINE, img: [limone6, limone7] },
+        { step: 'Serve immediately and garnish with more of the toppings as desired. Enjoy the fresh bright flavors of this dish.', section: SECTIONS.SERVE, img: [limone8, limone9] },
     ],
     store: [
         {

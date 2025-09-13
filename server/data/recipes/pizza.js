@@ -1,4 +1,5 @@
-const pizza = '../assets/Products/pizza-2.jpeg';
+const pizza2 = '../assets/Products/pizza-2.jpeg';
+const pizza3 = '../assets/Products/pizza-3.jpeg';
 const pizzaDough = '../assets/Products/pizza-dough.jpeg';
 const oil = '../assets/Products/pizza-oil-bowl.jpeg';
 const oilDough = '../assets/Products/pizza-oil-dough-ball.jpeg';
@@ -220,7 +221,7 @@ module.exports = {
         { step: 'Add the other ingredients evenly across the pizza and follow the baking steps below.', section: PHILLY_CHEESESTEAK_PIZZA, img: topped },
         { step: 'Place the shaped dough on the pan and add your favorite toppings.', section: SECTIONS.MAIN },
         { step: 'Bake the pizza for 20 to 25 minutes or until a nice golden brown.', section: SECTIONS.MAIN },
-        { step: 'Enjoy these slices of heaven with friends and family.', section: SECTIONS.MAIN, img: [pizzaSpread, pizza, cooked, phillyCooked, zoomed1] },
+        { step: 'Enjoy these slices of heaven with friends and family.', section: SECTIONS.MAIN, img: [pizzaSpread, pizza2, cooked, phillyCooked, zoomed1, pizza3] },
         { step: 'If you have any leftover dough that you aren\'t ready to use, you can freeze it and make pizzas, breadsticks, or cheeseballs.', section: SECTIONS.MAIN, img: frozenDough },
     ],
     notes: [
