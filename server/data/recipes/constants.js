@@ -399,6 +399,7 @@ const YIELD_UNITS = {
     QUART: { s: 'quart', p: 'quarts' },
     TABLESPOON: { s: 'tablespoon', p: 'tablespoons' },
     STICK: { s: 'stick', p: 'sticks' },
+    BALL: { s: 'ball', p: 'balls' },
 };
 
 module.exports = {

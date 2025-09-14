@@ -895,7 +895,7 @@ const INGREDIENTS = {
         },
         BAGUETTE: { name: 'baguette', category: INGREDIENT_CATEGORY.GRAIN },
         BASMATI_RICE: { name: 'basmati rice', category: INGREDIENT_CATEGORY.GRAIN },
-        BISQUICK_CAKE_MIX: { name: 'bisquick cake mix', category: INGREDIENT_CATEGORY.GRAIN },
+        BISQUICK_BAKING_MIX: { name: 'bisquick baking mix', category: INGREDIENT_CATEGORY.GRAIN },
         BOW_TIE_NOODLES: {
             name: 'bow tie noodles', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1723802451266-59fecf0546d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxOTA1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
