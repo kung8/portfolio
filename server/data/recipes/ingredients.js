@@ -1546,6 +1546,7 @@ const INGREDIENTS = {
             name: 'vine tomato', plural: 'vine tomatoes', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1524593166156-312f362cada0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU5MjkyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         WATER_SPINACH: { name: 'water spinach', category: INGREDIENT_CATEGORY.PRODUCE },
+        WATERCRESS: { name: 'watercress', category: INGREDIENT_CATEGORY.PRODUCE },
         WATERMELON: {
             name: 'watermelon', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1ODMwfA&ixlib=rb-4.0.3&q=80&w=400"
         },

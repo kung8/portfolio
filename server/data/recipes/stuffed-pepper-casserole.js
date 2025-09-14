@@ -47,7 +47,6 @@ module.exports = {
     supplies: [
         { name: 'frying pan' },
         { name: 'baking pan' },
-        { name: '' },
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: COOK_INGREDIENTS },
