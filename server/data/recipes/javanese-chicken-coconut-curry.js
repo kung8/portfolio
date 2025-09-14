@@ -11,7 +11,6 @@ const { MACADAMIA_NUT, CORIANDER, SHALLOT, GARLIC, RED_CHILI, WATER, CHICKEN, LE
 const SHALLOT_MIXTURE_SECTION = 'Shallot Mixture';
 
 module.exports = {
-    wip: true,
     cardName: 'Chicken Coconut Curry',
     name: 'Javanese Chicken Coconut Curry',
     img: curry6,

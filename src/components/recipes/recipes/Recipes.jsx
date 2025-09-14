@@ -89,6 +89,7 @@ export const Recipes = ({ history }) => {
     const [showArrow, setShowArrow] = useState(false);
 
     const { data: recipes = [] } = useGetData('recipes');
+    // console.log('recipes: ', recipes.filter(r => r.available && r.wip));
 
     const fuse = new Fuse(recipes, {
         keys: [

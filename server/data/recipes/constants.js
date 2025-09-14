@@ -206,6 +206,7 @@ const REHEAT_METHODS = {
 
 const SECTIONS = {
     ASSEMBLE: 'Assemble',
+    ASSEMBLY: 'Assembly',
     MAIN: 'Main',
     MARINADE: 'Marinade',
     SAUCE: 'Sauce',
