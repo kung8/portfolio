@@ -246,6 +246,7 @@ const SECTIONS = {
     WRAPPER: 'Wrapper',
     FROZEN: 'Frozen',
     LIQUIDS: 'Liquids',
+    CASSEROLE: 'Casserole',
 
     MARINATE_CHICKEN: 'Marinate Chicken',
     MARINATE_BEEF: 'Marinate Beef',
@@ -291,6 +292,7 @@ const SECTIONS = {
     COOK_CURRY: 'Cook Curry',
     COOK_MEAT: 'Cook Meat',
     COOK_FILLING: 'Cook Filling',
+    COOK_CASSEROLE: 'Cook Casserole',
 
     STIR_FRY: 'Stir Fry',
     DEEP_FRY: 'Deep Fry',
@@ -309,6 +311,8 @@ const SECTIONS = {
     CHILL: 'Chill',
     FREEZE: 'Freeze',
     WRAP: 'Wrap',
+    BROIL: 'Broil',
+    PREHEAT_OVEN: 'Preheat Oven',
 };
 
 const STORAGE_CONTAINER = {
