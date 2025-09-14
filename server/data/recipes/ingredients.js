@@ -941,6 +941,7 @@ const INGREDIENTS = {
             name: 'fresh ramen noodles', category: INGREDIENT_CATEGORY.GRAIN, img: "https://images.unsplash.com/photo-1628919311414-1ee37e9ed8ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxMTkyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         FRESH_RICE_NOODLES: { name: 'fresh rice noodles', category: INGREDIENT_CATEGORY.GRAIN },
+        FUSILLI_PASTA: { name: 'fusilli pasta', category: INGREDIENT_CATEGORY.GRAIN },
         GNOCCHI: { name: 'gnocchi', category: INGREDIENT_CATEGORY.GRAIN },
         HAMBURGER_BUNS: { name: 'hamburger buns', category: INGREDIENT_CATEGORY.GRAIN },
         HAWAIIAN_ROLLS: { name: 'hawaiian rolls', category: INGREDIENT_CATEGORY.GRAIN },
