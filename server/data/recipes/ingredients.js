@@ -701,6 +701,7 @@ const INGREDIENTS = {
         SOUR_CREAM: {
             name: 'sour cream', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1633893215271-f7e1fca081ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTgxMzk3fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        STRING_CHEESE: { name: 'string cheese', category: INGREDIENT_CATEGORY.DAIRY },
         SWISS_CHEESE: { name: 'swiss cheese', category: INGREDIENT_CATEGORY.DAIRY },
         TWO_PERCENT_MILK: {
             name: '2% milk', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1550583724-b2692b85b150?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY3NjUwfA&ixlib=rb-4.0.3&q=80&w=400"

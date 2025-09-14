@@ -1,6 +1,10 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { ALL_PURPOSE_FLOUR, BREADCRUMBS, EGG, MILK, VEGETABLE_OIL, PIZZA_SAUCE, STRING_CHEESE } = require('./ingredients');
+
+const EGG_DREDGE_STATION = 'Egg Dredge Station';
+const FLOUR_DREDGE_STATION = 'Flour Dredge Station';
+const BREADCRUMB_DREDGE_STATION = 'Breadcrumb Dredge Station';
 
 module.exports = {
     wip: true,
@@ -9,32 +13,56 @@ module.exports = {
     img: '',
     recipeAuthors: ['Karen'],
     recipeFinder: 'Kevin Ung',
-    available: false,
+    available: true,
     recommended: false,
-    category: [CATEGORIES.APPETIZER,CATEGORIES.SIDE_DISH],
+    category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
-    protein: [],
-    type: [TYPES.SIDE_DISH,TYPES.FINGER_FOOD],
-    yields: { amount: '', unit: '' },
-    prepTime: { amount: '', unit: '' },
-    cookTime: { amount: '', unit: '' },
-    waitTime: { amount: '', unit: '' },
+    type: [TYPES.SIDE_DISH, TYPES.FINGER_FOOD],
+    yields: { amount: 12, unit: YIELD_UNITS.STICK },
+    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 24, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Mozzarella Sticks', link: 'https://www.food.com/recipe/mozzarella-sticks-30977' }
     ],
     separated: true,
     ingredients: [
-        { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FLOUR_DREDGE_STATION },
+
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: EGG_DREDGE_STATION },
+        { ...MILK, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: EGG_DREDGE_STATION },
+
+        { ...BREADCRUMBS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BREADCRUMB_DREDGE_STATION },
+
+        { ...STRING_CHEESE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut in half', section: SECTIONS.ASSEMBLY },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DEEP_FRY },
+        { ...PIZZA_SAUCE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: '' },
+        { name: 'stove' },
     ],
     supplies: [
-        { name: '' },
+        { name: '3 shallow bowls' },
+        { name: 'baking sheet' },
+        { name: 'paper towels' },
+        { name: 'wire rack' },
+        { name: 'frying pan' },
     ],
     directions: [
-        { step: '', section: '' },
+        { step: 'Set flour in a shallow bowl.', section: SECTIONS.ASSEMBLE },
+        { step: `In a shallow bowl, whisk the "${EGG_DREDGE_STATION}" section ingredients together.`, section: SECTIONS.ASSEMBLE },
+        { step: 'Set breadcrumb in a shallow bowl.', section: SECTIONS.ASSEMBLE },
+        { step: 'Dip each piece of cheese in the three dredging station: flour, egg mixture and breadcrumb.', section: SECTIONS.ASSEMBLE },
+        { step: 'Dip in egg mixture and breadcrumbs again.', section: SECTIONS.ASSEMBLE },
+
+        { step: 'Freeze for 6 to 24 hours.', section: SECTIONS.FREEZE },
+
+        { step: 'Heat oil in a frying pan.', section: SECTIONS.DEEP_FRY },
+        { step: 'Place 2 layers of paper towels on top of a baking sheet and then place the cooling rack on top of the paper towels.', section: SECTIONS.DEEP_FRY },
+        { step: 'Deep fry until golden before cheese leaks (about 1 minute per side).', section: SECTIONS.DEEP_FRY },
+        { step: 'Place cooked mozzarella sticks on draining station.', section: SECTIONS.DEEP_FRY },
+        { step: 'Enjoy these fresh with warmed pizza sauce.', section: SECTIONS.SERVE },
     ],
     store: [
         // {
