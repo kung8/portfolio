@@ -29,9 +29,9 @@ module.exports = {
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SOUP],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: { amount: '', unit: '' },
-    cookTime: { amount: '', unit: '' },
-    waitTime: { amount: '', unit: '' },
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Chicken Gnocchi Soup', link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a40772957/chicken-gnocchi-soup-recipe/' }
     ],
