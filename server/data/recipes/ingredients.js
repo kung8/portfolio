@@ -964,6 +964,7 @@ const INGREDIENTS = {
         PITA_BREAD: {
             name: 'pita bread', category: INGREDIENT_CATEGORY.GRAIN,
         },
+        ROLLED_OATS: { name: 'rolled oats', category: INGREDIENT_CATEGORY.GRAIN },
         ROLLS: {
             name: 'rolls', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1672639601872-eeceb0c5c522?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxMTMxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -1888,6 +1889,7 @@ const INGREDIENTS = {
         OREGANO: { name: 'oregano', category: INGREDIENT_CATEGORY.SPICES },
         PAPRIKA: { name: 'paprika', category: INGREDIENT_CATEGORY.SPICES },
         PARSLEY: { name: 'parsley', category: INGREDIENT_CATEGORY.SPICES },
+        PEPITAS: { name: 'pepitas', category: INGREDIENT_CATEGORY.SPICES },
         RANCH_DIP_DRESSING: { name: 'ranch dip dressing', category: INGREDIENT_CATEGORY.SPICES },
         RED_PEPPER_FLAKES: { name: 'red pepper flakes', category: INGREDIENT_CATEGORY.SPICES },
         RED_CHILI_PASTE: { name: 'red chili paste', category: INGREDIENT_CATEGORY.SPICES },
