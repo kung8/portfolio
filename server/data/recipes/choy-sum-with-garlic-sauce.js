@@ -19,6 +19,7 @@ module.exports = {
     name: 'Choy Sum with Garlic Sauce',
     img: choy8,
     recipeAuthors: ['Maggie Zhu'],
+    available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.CHINESE, GENRES.ASIAN],

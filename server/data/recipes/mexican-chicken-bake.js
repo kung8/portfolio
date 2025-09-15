@@ -3,6 +3,7 @@ const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS,
 const { } = require('./ingredients');
 
 module.exports = {
+    wip: true,
     cardName: 'Mexican Chicken Bake',
     name: 'Mexican Chicken Bake',
     img: mexicanChickenBake,

@@ -89,7 +89,11 @@ export const Recipes = ({ history }) => {
     const [showArrow, setShowArrow] = useState(false);
 
     const { data: recipes = [] } = useGetData('recipes');
+    // TODO: only shown recipes that are still work in progress
     // console.log('recipes: ', recipes.filter(r => r.available && r.wip));
+    
+    // TODO: only hidden recipes
+    // console.log('recipes: ', recipes.filter(r => !r.available));
 
     const fuse = new Fuse(recipes, {
         keys: [

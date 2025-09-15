@@ -3,6 +3,7 @@ const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS,
 const { } = require('./ingredients');
 
 module.exports = {
+    wip: true,
     cardName: 'Southwest Salad',
     name: 'Southwest Salad',
     img: salad,
