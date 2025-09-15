@@ -75,7 +75,6 @@ const cheeseburgerSpringRolls = require('./recipes/cheeseburger-spring-rolls.js'
 const cheesecake = require("./recipes/cheesecake-factory-cheesecake");
 const cherryAndCreamCheeseKolaches = require("./recipes/cherry-and-cream-cheese-kolaches");
 const cherryAndDarkChocolateCrostata = require("./recipes/cherry-and-dark-chocolate-crostata");
-const chewyChocolateChipCookies = require('./recipes/chewy-chocolate-chip-cookies.js'); // TODO: finish adding recipe
 const chickenAdobo = require('./recipes/chicken-adobo.js'); // TODO: finish adding recipe
 const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenBiryani = require("./recipes/chicken-biryani");
@@ -704,7 +703,6 @@ const recipes = [
     peanutButterCup,
     snickerdoodle,
     chocolateChipCookies,
-    chewyChocolateChipCookies,
     peanutButterCookies,
     peanutButterThumbprintCookies,
     oatmealRaisinCookies,

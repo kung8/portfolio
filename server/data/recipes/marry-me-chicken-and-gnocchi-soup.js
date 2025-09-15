@@ -10,7 +10,7 @@ const HERB_SECTION = 'Herb';
 
 module.exports = {
     wip: true,
-    cardName: 'Chicken Gnocchi Soup',
+    cardName: 'Chicken + Gnocchi Soup',
     name: 'Marry Me Chicken and Gnocchi Soup',
     img: '',
     recipeAuthors: ['Carman Wilken'],
