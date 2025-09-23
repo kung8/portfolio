@@ -6,6 +6,7 @@ const gyoza5 = '../assets/Products/gyoza-5.jpeg';
 const gyoza6 = '../assets/Products/gyoza-6.jpeg';
 const gyoza7 = '../assets/Products/gyoza-7.jpeg';
 const gyoza8 = '../assets/Products/gyoza-8.jpeg';
+const gyoza9 = '../assets/Products/gyoza-9.jpeg';
 
 const { img } = require('./choy-sum-with-garlic-sauce');
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
@@ -64,7 +65,7 @@ module.exports = {
         { step: 'Pan fry gyozas until golden brown (about 3 minutes).', section: COOK_GYOZAS, img: [gyoza4, gyoza5] },
         { step: 'Add water. Cover with a lid.', section: COOK_GYOZAS, img: gyoza6 },
         { step: 'Steam for about 3 to 4 minutes.', section: COOK_GYOZAS, img: gyoza7 },
-        { step: 'Serve with your favorite sauce.', section: SECTIONS.SERVE },
+        { step: 'Serve with your favorite sauce.', section: SECTIONS.SERVE, img: gyoza9 },
     ],
     store: [
         {

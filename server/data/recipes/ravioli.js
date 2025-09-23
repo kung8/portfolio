@@ -22,7 +22,7 @@ module.exports = {
     img: ravioli11,
     recipeAuthors: ['Beppe Castro'],
     recipeFinder: 'Kevin Ung',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
