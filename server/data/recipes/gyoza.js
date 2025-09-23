@@ -67,17 +67,17 @@ module.exports = {
         { step: 'Serve with your favorite sauce.', section: SECTIONS.SERVE },
     ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Over medium-low heat, add oil to a pan. Pan fry gyozas. Add a splash of water and cover with a lid. Cook until heated through. Pan fry again until the bottoms are crispy.',
+        },
     ],
     mealPrep: true,
 };
