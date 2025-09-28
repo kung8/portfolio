@@ -10,7 +10,7 @@ module.exports = {
     img: '',
     recipeAuthors: ['Cassidy Reeser'],
     recipeFinder: 'Chelsey Hickenlooper',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],

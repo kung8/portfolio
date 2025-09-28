@@ -1915,7 +1915,7 @@ const INGREDIENTS = {
         STAR_ANISE: {
             name: 'star anise', category: INGREDIENT_CATEGORY.SPICES, img: "https://images.unsplash.com/photo-1554345795-1243a276630e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTgwNDMzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        SWEET_PAPRIKA: { name: 'sweet paprika', category: INGREDIENT_CATEGORY.SPICES },
+        PAPRIKA: { name: 'paprika', category: INGREDIENT_CATEGORY.SPICES },
         TACO_SEASONING: { name: 'taco seasoning', category: INGREDIENT_CATEGORY.SPICES },
         TARRAGON: { name: 'tarragon', category: INGREDIENT_CATEGORY.SPICES },
         THYME: { name: 'thyme', category: INGREDIENT_CATEGORY.SPICES },

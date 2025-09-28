@@ -14,7 +14,7 @@ module.exports = {
     img: '',
     recipeAuthors: [''],
     recipeFinder: 'Chelsey Hickenlooper',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.INDIAN],
