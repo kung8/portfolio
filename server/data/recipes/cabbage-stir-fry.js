@@ -1,6 +1,6 @@
-const cabbageStirFry = '../assets/Products/cabbage-stir-fry.jpeg';
-const raw = '../assets/Products/cabbage-stir-fry-raw.jpeg';
-const bowl = '../assets/Products/cabbage-stir-fry-in-bowl.jpeg';
+const cabbage1 = '../assets/Products/cabbage-stir-fry-1.jpeg';
+const cabbage2 = '../assets/Products/cabbage-stir-fry-2.jpeg';
+
 const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
     CABBAGE,
@@ -11,10 +11,11 @@ const {
 module.exports = {
     cardName: 'Cabbage Stir Fry',
     name: 'Cabbage Stir Fry',
-    img: bowl,
+    img: cabbage2,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: 'Kevin Ung',
     available: true,
+    recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     protein: [PROTEIN.CHICKEN],
@@ -34,9 +35,9 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'Over medium-high heat, in a frying pan add cabbage.', section: SECTIONS.MAIN, img: raw },
+        { step: 'Over medium-high heat, in a frying pan add cabbage.', section: SECTIONS.MAIN },
         { step: 'Top with oil and toss or mix until oil has coated cabbage.', section: SECTIONS.MAIN },
-        { step: 'Add red pepper flakes as desired. Stir.', section: SECTIONS.MAIN, img: cabbageStirFry },
+        { step: 'Add red pepper flakes as desired. Stir.', section: SECTIONS.MAIN, img: cabbage1 },
     ],
     store: [
         {

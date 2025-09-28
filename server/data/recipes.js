@@ -235,6 +235,7 @@ const naan = require("./recipes/naan");
 const naan2 = require('./recipes/naan-2.js'); // TODO: finish adding recipe
 const noBakeCannoliDelight = require("./recipes/no-bake-cannoli-delight");
 const noBakeCookie = require("./recipes/no-bake-cookie");
+const noBakePumpkinPie = require('./recipes/no-bake-pumpkin-pie.js');
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const orangeChicken = require("./recipes/orange-chicken");
 const ovenBakedSalmon = require('./recipes/oven-baked-salmon.js'); // TODO: finish adding recipe
@@ -721,6 +722,7 @@ const recipes = [
     appleDumplings,
     appleTurnovers,
     applePie,
+    noBakePumpkinPie,
     deconstructedAppleCrisp,
     biscoffCookiePie,
     frozenMudPie,

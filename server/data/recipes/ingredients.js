@@ -98,6 +98,9 @@ const INGREDIENTS = {
         SWEET_CHOCOLATE: {
             name: 'sweet chocolate', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1614088685112-0a760b71a3c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU0MDg2fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        SEMI_SWEET_CHOCOLATE_BAR: {
+            name: 'semi-sweet chocolate bar', category: INGREDIENT_CATEGORY.BAKING
+        },
         TAPIOCA_STARCH: { name: 'tapioca starch', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU0MDcwfA&ixlib=rb-4.0.3&q=80&w=400" },
         UNSALTED_PEANUT: {
             name: 'unsalted peanut', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1549978113-29eb25c8177f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3NzE2fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -1890,6 +1893,7 @@ const INGREDIENTS = {
         PAPRIKA: { name: 'paprika', category: INGREDIENT_CATEGORY.SPICES },
         PARSLEY: { name: 'parsley', category: INGREDIENT_CATEGORY.SPICES },
         PEPITAS: { name: 'pepitas', category: INGREDIENT_CATEGORY.SPICES },
+        PUMPKIN_PIE_SPICE: { name: 'pumpkin pie spice', category: INGREDIENT_CATEGORY.SPICES },
         RANCH_DIP_DRESSING: { name: 'ranch dip dressing', category: INGREDIENT_CATEGORY.SPICES },
         RED_PEPPER_FLAKES: { name: 'red pepper flakes', category: INGREDIENT_CATEGORY.SPICES },
         RED_CHILI_PASTE: { name: 'red chili paste', category: INGREDIENT_CATEGORY.SPICES },

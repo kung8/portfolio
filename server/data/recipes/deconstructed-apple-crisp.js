@@ -77,7 +77,7 @@ module.exports = {
         { step: 'Set aside.', section: PREP_APPLE_FILLING },
 
         { step: 'Line a baking sheet with aluminum foil.', section: COOK_OAT_TOPPING },
-        { step: `In a blender, combine the "${OAT_TOPPING_SECTION_PART_1}" section ingredients. BLend until the oats are partially chopped.`, section: COOK_OAT_TOPPING },
+        { step: `In a blender, combine the "${OAT_TOPPING_SECTION_PART_1}" section ingredients. Blend until the oats are partially chopped.`, section: COOK_OAT_TOPPING },
         { step: `Add "${OAT_TOPPING_SECTION_PART_2}" section ingredients.`, section: COOK_OAT_TOPPING },
         { step: 'Pulse until clumps form (about 30 seconds). Scrape down sides as needed.', section: COOK_OAT_TOPPING },
         { step: `Add the "${OAT_TOPPING_SECTION_PART_3}" section ingredients. Pulse until combined.`, section: COOK_OAT_TOPPING },
