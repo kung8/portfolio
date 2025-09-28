@@ -12,7 +12,7 @@ module.exports = {
     img: '',
     recipeAuthors: ['Kris Longwell'],
     recipeFinder: 'Kevin Ung',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.JAPANESE, GENRES.ASIAN],

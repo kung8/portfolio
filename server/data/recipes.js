@@ -295,6 +295,7 @@ const sausageBalls = require('./recipes/sausage-balls.js'); // TODO: finish addi
 const sausageMcGriddle = require('./recipes/sausage-mcgriddle.js');
 const sauteedSquash = require("./recipes/sauteed-squash");
 const scrambledEggs = require("./recipes/scrambled-eggs");
+const sesameBalls = require('./recipes/sesame-balls.js'); // TODO: finish adding recipe
 const shrimpPaella = require("./recipes/shrimp-paella");
 const shrimpScampi = require("./recipes/shrimp-scampi");
 const singaporeanChickenRice = require("./recipes/singaporean-chicken-rice");
@@ -379,6 +380,7 @@ const recipes = [
     vietnameseFreshSpringRolls,
     peanutChickenSpringRollBowl,
     vietnameseBanhTieu,
+    sesameBalls,
 
     // JAPANESE
     sushi,
@@ -747,3 +749,7 @@ const recipes = [
 ]
 
 module.exports = recipes;
+
+// Charbroiled salmon, topped with a choice of creamy dill sauce
+// or fresh pineapple salsa, served with rice pilaf,
+// and sautéed vegetables. (32)
