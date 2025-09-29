@@ -380,7 +380,6 @@ const recipes = [
     vietnameseFreshSpringRolls,
     peanutChickenSpringRollBowl,
     vietnameseBanhTieu,
-    sesameBalls,
 
     // JAPANESE
     sushi,
@@ -425,6 +424,7 @@ const recipes = [
     chineseBokChoyChicken,
     cabbageStirFry,
     chineseBao,
+    sesameBalls,
     dumplingSoup,
     springRolls,
     potstickers,
