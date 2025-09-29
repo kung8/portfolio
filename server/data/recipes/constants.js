@@ -247,6 +247,7 @@ const SECTIONS = {
     FROZEN: 'Frozen',
     LIQUIDS: 'Liquids',
     CASSEROLE: 'Casserole',
+    COATING_STATION: 'Coating Station',
 
     MARINATE_CHICKEN: 'Marinate Chicken',
     MARINATE_BEEF: 'Marinate Beef',
@@ -271,6 +272,8 @@ const SECTIONS = {
     PREP_SEASONINGS: 'Prep Seasonings',
     PREP_EGGS: 'Prep Eggs',
     PREP_DRESSING: 'Prep Dressing',
+    PREP_TOPPINGS: 'Prep Toppings',
+    PREP_DIPPING_STATIONS: 'Prep Dipping Stations',
     SEASON: 'Season',
 
     MAKE_DOUGH: 'Make Dough',

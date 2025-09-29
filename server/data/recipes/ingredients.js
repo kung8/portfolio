@@ -351,6 +351,7 @@ const INGREDIENTS = {
         PIZZA_SAUCE: { name: 'pizza sauce', category: INGREDIENT_CATEGORY.CANNED },
         PROGRESSO: { name: 'progresso', category: INGREDIENT_CATEGORY.CANNED },
         PUMPKIN_PUREE: { name: 'pumpkin puree', category: INGREDIENT_CATEGORY.CANNED },
+        RED_BEAN_PASTE: { name: 'red bean paste', category: INGREDIENT_CATEGORY.CANNED },
         RED_CURRY_PASTE: { name: 'red curry paste', category: INGREDIENT_CATEGORY.CANNED },
         REFRIED_BEANS: { name: 'refried beans', category: INGREDIENT_CATEGORY.CANNED },
         SPLIT_PEA_SOUP: { name: 'split pea soup', category: INGREDIENT_CATEGORY.CANNED },
