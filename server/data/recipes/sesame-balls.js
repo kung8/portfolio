@@ -6,8 +6,8 @@ const FORM_BALLS = 'Form Balls';
 
 module.exports = {
     wip: true,
-    cardName: 'Banh Cam',
-    name: 'Banh Cam',
+    cardName: 'Sesame Balls',
+    name: 'Sesame Balls (Bánh Cam)',
     img: '',
     recipeAuthors: ['Megan'],
     recipeFinder: 'Kevin Ung',
@@ -23,7 +23,7 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Sesame Balls (Banh Cam)', link: 'https://takestwoeggs.com/sesame-balls-with-red-bean-paste/' }
+        { label: 'Sesame Balls', link: 'https://takestwoeggs.com/sesame-balls-with-red-bean-paste/' }
     ],
     separated: true,
     ingredients: [

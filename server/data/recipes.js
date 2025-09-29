@@ -7,7 +7,6 @@ const appleDumplings = require('./recipes/apple-dumplings.js'); // TODO: finish 
 const applePie = require("./recipes/apple-pie");
 const appleTart = require("./recipes/apple-tart");
 const appleTurnovers = require('./recipes/apple-turnovers.js'); // TODO: finish adding recipe
-const banhCam = require('./recipes/banh-cam.js');
 const bakedBeans = require("./recipes/baked-beans");
 const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
 const bakedChicken = require("./recipes/baked-chicken");
@@ -296,6 +295,7 @@ const sausageBalls = require('./recipes/sausage-balls.js'); // TODO: finish addi
 const sausageMcGriddle = require('./recipes/sausage-mcgriddle.js');
 const sauteedSquash = require("./recipes/sauteed-squash");
 const scrambledEggs = require("./recipes/scrambled-eggs");
+const sesameBalls = require('./recipes/sesame-balls.js');
 const shrimpPaella = require("./recipes/shrimp-paella");
 const shrimpScampi = require("./recipes/shrimp-scampi");
 const singaporeanChickenRice = require("./recipes/singaporean-chicken-rice");
@@ -380,7 +380,7 @@ const recipes = [
     vietnameseFreshSpringRolls,
     peanutChickenSpringRollBowl,
     vietnameseBanhTieu,
-    banhCam,
+    sesameBalls,
 
     // JAPANESE
     sushi,
