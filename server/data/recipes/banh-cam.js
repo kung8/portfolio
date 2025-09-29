@@ -74,7 +74,7 @@ module.exports = {
         { step: 'Gently roll the ball in your hands to press the sesame seeds into the dough.', section: SECTIONS.DIP },
 
         { step: 'Heat enough oil to cover the height of about 3 sesame ball since they will expand and grow.', section: SECTIONS.DEEP_FRY },
-        { step: 'Line paper towels on a baking sheet and place the wire rack on top.', section: '' },
+        { step: 'Line paper towels on a baking sheet and place the wire rack on top.', section: SECTIONS.DEEP_FRY },
         { step: 'Once the oil gets to 290ºF to 300ºF, carefully add a few sesame balls (up to 5 at a time).', section: SECTIONS.DEEP_FRY },
         { step: 'Fry for 5 minutes. Flip. Fry another 5 minutes. They should float to the top.', section: SECTIONS.DEEP_FRY },
         { step: 'Increase the heat to 350ºF.', section: SECTIONS.DEEP_FRY },
