@@ -18,6 +18,7 @@ const bakedZiti = require("./recipes/baked-ziti");
 const balsamicTomatoBruschetta = require("./recipes/balsamic-tomato-bruschetta");
 const bananaBread = require("./recipes/banana-bread");
 const bangBangShrimp = require('./recipes/bang-bang-shrimp.js');
+const banhCam = require('./recipes/banh-cam.js'); // TODO: finish adding recipe
 const basilPesto = require("./recipes/basil-pesto");
 const basqueCheesecake = require('./recipes/basque-cheesecake.js');
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
@@ -320,6 +321,7 @@ const swedishMeatballs = require("./recipes/swedish-meatballs");
 const sweetAndSavoryRibs = require('./recipes/sweet-and-savory-ribs.js');
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tandooriChicken = require("./recipes/tandoori-chicken");
+const tangYuan = require('./recipes/tang-yuan.js'); // TODO: finish adding recipe
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
 const texasSausageKolaches = require("./recipes/texas-sausage-kolaches");
 const thaiBasil = require("./recipes/thai-basil");
@@ -381,6 +383,7 @@ const recipes = [
     vietnameseFreshSpringRolls,
     peanutChickenSpringRollBowl,
     vietnameseBanhTieu,
+    banhCam,
 
     // JAPANESE
     sushi,
@@ -432,6 +435,7 @@ const recipes = [
     crabRangoon,
     chopSuey,
     fiveSpiceBlend,
+    tangYuan,
 
     // SINGAPOREAN
     singaporeanChickenRice,
