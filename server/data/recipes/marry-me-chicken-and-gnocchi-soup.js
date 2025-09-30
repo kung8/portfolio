@@ -1,4 +1,17 @@
-// const example = '../assets/Products/example.jpeg';
+const soup1 = '../assets/Products/marry-me-chicken-and-gnocci-soup-1.jpeg';
+const soup2 = '../assets/Products/marry-me-chicken-and-gnocci-soup-2.jpeg';
+const soup3 = '../assets/Products/marry-me-chicken-and-gnocci-soup-3.jpeg';
+const soup4 = '../assets/Products/marry-me-chicken-and-gnocci-soup-4.jpeg';
+const soup5 = '../assets/Products/marry-me-chicken-and-gnocci-soup-5.jpeg';
+const soup6 = '../assets/Products/marry-me-chicken-and-gnocci-soup-6.jpeg';
+const soup7 = '../assets/Products/marry-me-chicken-and-gnocci-soup-7.jpeg';
+const soup8 = '../assets/Products/marry-me-chicken-and-gnocci-soup-8.jpeg';
+const soup9 = '../assets/Products/marry-me-chicken-and-gnocci-soup-9.jpeg';
+const soup10 = '../assets/Products/marry-me-chicken-and-gnocci-soup-10.jpeg';
+const soup11 = '../assets/Products/marry-me-chicken-and-gnocci-soup-11.jpeg';
+const soup12 = '../assets/Products/marry-me-chicken-and-gnocci-soup-12.jpeg';
+const soup13 = '../assets/Products/marry-me-chicken-and-gnocci-soup-13.jpeg';
+
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { UNSALTED_BUTTER, SUN_DRIED_TOMATOES, YELLOW_ONION, CARROT, CELERY, SALT, BLACK_PEPPER, ITALIAN_SEASONING, RED_PEPPER_FLAKES, TOMATO_PASTE, GARLIC, HEAVY_CREAM, ROTISSERIE_CHICKEN, CREAM_CHEESE, PARMESAN_CHEESE, BABY_SPINACH, BASIL, GARLIC_AND_HERB, GNOCCHI, CHICKEN_BOUILLON_CUBE, WATER } = require('./ingredients');
 
@@ -9,14 +22,13 @@ const CHEESE_SECTION = 'Cheese';
 const HERB_SECTION = 'Herb';
 
 module.exports = {
-    wip: true,
     cardName: 'Chicken + Gnocchi Soup',
     name: 'Marry Me Chicken and Gnocchi Soup',
-    img: '',
+    img: soup12,
     recipeAuthors: ['Carman Wilken'],
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.SIMMER],
@@ -64,19 +76,22 @@ module.exports = {
         { name: 'large pot' },
     ],
     directions: [
-        { step: `Over medium heat, heat "${OIL_SECTION}" section ingredients in a large pot.`, section: SECTIONS.MAKE_SOUP },
-        { step: `Add "${SECTIONS.VEGGIES}" section ingredients. Cook for 5 minutes.`, section: SECTIONS.MAKE_SOUP },
-        { step: 'Add sun-dried tomatoes.', section: SECTIONS.MAKE_SOUP },
-        { step: 'Make a well, add tomato paste. Cook for 3 minutes.', section: SECTIONS.MAKE_SOUP },
-        { step: 'Add garlic. Cook for 1 minute.', section: SECTIONS.MAKE_SOUP },
-        { step: `Add "${SECTIONS.LIQUIDS}" section ingredients. Bring to a boil.`, section: SECTIONS.MAKE_SOUP },
-        { step: 'Add gnocchi and chicken. Boil until gnocchi float (about 3 to 4 minutes).', section: SECTIONS.MAKE_SOUP },
+        { step: `Over medium heat, heat "${OIL_SECTION}" section ingredients in a large pot.`, section: SECTIONS.MAKE_SOUP, img: soup1 },
+        { step: `Add "${SECTIONS.VEGGIES}" section ingredients. Cook for 5 minutes.`, section: SECTIONS.MAKE_SOUP, img: soup2 },
+        { step: 'Add sun-dried tomatoes.', section: SECTIONS.MAKE_SOUP, img: [soup3, soup4] },
+        { step: 'Make a well, add tomato paste. Cook for 3 minutes. Mix.', section: SECTIONS.MAKE_SOUP, img: [soup5, soup6] },
+        { step: 'Add garlic. Cook for 1 minute.', section: SECTIONS.MAKE_SOUP, img: soup7 },
+        { step: `Add "${SECTIONS.LIQUIDS}" section ingredients. Bring to a boil.`, section: SECTIONS.MAKE_SOUP, img: soup8 },
+        { step: 'Add gnocchi and chicken. Boil until gnocchi float (about 3 to 4 minutes).', section: SECTIONS.MAKE_SOUP, img: soup9 },
         { step: 'Turn off heat.', section: SECTIONS.MAKE_SOUP },
         { step: 'Add cream cheese. Stir until melted.', section: SECTIONS.MAKE_SOUP },
-        { step: 'Add parmesan.', section: SECTIONS.MAKE_SOUP },
-        { step: 'Add spinach and basil. Stir.', section: SECTIONS.MAKE_SOUP },
+        { step: 'Add parmesan.', section: SECTIONS.MAKE_SOUP, img: soup10 },
+        { step: 'Add spinach and basil. Stir.', section: SECTIONS.MAKE_SOUP, img: soup11 },
         { step: 'Let it thicken (about 5 to 10 minutes).', section: SECTIONS.MAKE_SOUP },
-        { step: 'Enjoy this great year round soup!', section: SECTIONS.SERVE },
+        { step: 'Enjoy this great year round soup!', section: SECTIONS.SERVE, img: soup13 },
+    ],
+    notes: [
+        { note: 'This definitely had a good flavor but it was not enough to liquid ratio. Next time I would double the liquid ingredients and need to make sure to include more of the sundried tomatoes.' },
     ],
     store: [
         {
