@@ -329,6 +329,7 @@ const thaiBasilSesameCashewChicken = require('./recipes/thai-basil-sesame-cashew
 const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
 const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
 const thaiPeanutSalad = require('./recipes/thai-peanut-salad.js'); // TODO: finish adding recipe
+const tunaOnigiri = require('./recipes/tuna-onigiri.js');
 const turkeyRollUps = require("./recipes/turkey-roll-ups");
 const udonNoodleSoup = require("./recipes/udon-noodle-soup");
 const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich");
@@ -387,6 +388,7 @@ const recipes = [
 
     // JAPANESE
     sushi,
+    tunaOnigiri,
     japaneseChickenKatsu,
     japaneseKatsudon,
     karaage,

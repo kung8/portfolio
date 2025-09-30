@@ -1,0 +1,83 @@
+// const example = '../assets/Products/example.jpeg';
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { SEAWEED, SESAME_SEEDS, SHORT_GRAINED_RICE, SALT, CANNED_TUNA, KEWPIE_MAYONNAISE, WATER } = require('./ingredients');
+
+const TUNA_MAYO = 'Tuna Mayo';
+const PREP_TUNA_MAYO = 'Prep Tuna Mayo';
+
+module.exports = {
+    wip: true,
+    cardName: 'Tuna Onigiri',
+    name: 'Tuna Onigiri',
+    img: '',
+    recipeAuthors: ['Christie Lai'],
+    recipeFinder: 'Samantha Pham',
+    available: true,
+    recommended: false,
+    category: [CATEGORIES.LUNCH, CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
+    genre: [GENRES.ASIAN, GENRES.JAPANESE],
+    method: [METHODS.WRAP],
+    protein: [PROTEIN.FISH],
+    type: [TYPES.RICE, TYPES.WRAP],
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
+    websites: [
+        { label: 'Tuna Onigiri', link: 'https://christieathome.com/blog/japanese-tuna-onigiri/' }
+    ],
+    separated: true,
+    ingredients: [
+        { ...SHORT_GRAINED_RICE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked', section: SECTIONS.RICE },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.RICE },
+
+
+        { ...CANNED_TUNA, amount: 5.29, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: TUNA_MAYO },
+        { ...KEWPIE_MAYONNAISE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TUNA_MAYO },
+
+        { ...SEAWEED, amount: 2, unit: INGREDIENT_UNITS.SHEET, additionalDetails: 'halved', section: SECTIONS.ASSEMBLY },
+
+        { ...WATER, amount: '', unit: '', additionalDetails: 'for dipping', section: SECTIONS.ASSEMBLY },
+
+        { ...SESAME_SEEDS, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+    ],
+    supplies: [
+        { name: 'mixing bowl' },
+        { name: 'can opener' },
+        { name: 'fork' },
+        { name: '2 small bowls' },
+    ],
+    directions: [
+        { step: 'In a mixing bowl, add hot cooked rice and salt.', section: SECTIONS.PREP_RICE },
+        { step: 'Cover. Set aside.', section: SECTIONS.PREP_RICE },
+
+        { step: 'Open the can of tuna.', section: PREP_TUNA_MAYO },
+        { step: 'Press the tuna down with a fork and drain.', section: PREP_TUNA_MAYO },
+        { step: 'Transfer tuna to a small bowl.', section: PREP_TUNA_MAYO },
+        { step: 'Add mayo. Stir and set aside.', section: PREP_TUNA_MAYO },
+
+        { step: 'Prep a small bowl of water.', section: SECTIONS.ASSEMBLE },
+        { step: 'Dip hands in water.', section: SECTIONS.ASSEMBLE },
+        { step: 'Scoop 1/2 cup of cooked rice and form a ball.', section: SECTIONS.ASSEMBLE },
+        { step: 'Flatten into 1/2 inch thick discs.', section: SECTIONS.ASSEMBLE },
+        { step: 'With your thumb, push the center down and place 2 tablespoon of tuna mayo.', section: SECTIONS.ASSEMBLE },
+        { step: 'Fold the rice around the filling.', section: SECTIONS.ASSEMBLE },
+        { step: 'Pack into a ball and shape it into a triangle.', section: SECTIONS.ASSEMBLE },
+        { step: 'Wrap the base of the rice ball with the seaweed.', section: SECTIONS.ASSEMBLE },
+
+        { step: 'Enjoy this easy rice balls with sesame seeds.', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: '2/3 cup of uncooked rice yields about 2 cups of cooked rice.' },
+        { note: 'Wet hands as you handle the rice as needed.' }
+    ],
+    store: [
+        {
+            duration: { amount: 2, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+            instructions: 'Store individually wrapped in plastic wrap in an airtight container. Note that the seaweed will become soggy and the fish might not taste fresh.',
+        },
+    ],
+    mealPrep: false,
+};
