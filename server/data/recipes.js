@@ -105,6 +105,7 @@ const chineseLoMeinNoodles = require("./recipes/chinese-lo-mein-noodles");
 const chineseSourChickenSoup = require("./recipes/chinese-sour-chicken-soup");
 const chineseSweetAndSourPork = require("./recipes/chinese-sweet-and-sour-pork");
 const chiveCakes = require("./recipes/chive-cakes");
+const chocoTaco = require('./recipes/choco-taco.js');
 const chocolateButtercreamFrosting = require('./recipes/chocolate-buttercream-frosting');
 const chocolateCake = require('./recipes/chocolate-cake.js');
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
@@ -686,6 +687,7 @@ const recipes = [
 
     //////////////////////////////////////////////////////////////////////// DESSERT ///////////////////////////////////////////////////////////////////////
     bananaBread,
+    chocoTaco,
     iceCreamCake,
     cheesecake,
     basqueCheesecake,

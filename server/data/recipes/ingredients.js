@@ -1805,6 +1805,7 @@ const INGREDIENTS = {
         VEGGIE_STRAWS: { name: 'veggie straws', category: INGREDIENT_CATEGORY.SNACKS },
         WAFER_COOKIES: { name: 'wafer cookies', category: INGREDIENT_CATEGORY.SNACKS },
         WAFERS: { name: 'wafers', category: INGREDIENT_CATEGORY.SNACKS },
+        WAFFLE_CONE: { name: 'waffle cone', category: INGREDIENT_CATEGORY.SNACKS },
         WARHEADS: { name: 'warheads', category: INGREDIENT_CATEGORY.SNACKS },
         WASA_CRACKERS: { name: 'wasa crackers', category: INGREDIENT_CATEGORY.SNACKS },
         WATER_CRACKERS: { name: 'water crackers', category: INGREDIENT_CATEGORY.SNACKS },
