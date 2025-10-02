@@ -32,7 +32,7 @@ module.exports = {
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.RICE },
 
 
-        { ...CANNED_TUNA, amount: 5.29, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: TUNA_MAYO },
+        { ...CANNED_TUNA, amount: 5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: TUNA_MAYO },
         { ...KEWPIE_MAYONNAISE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TUNA_MAYO },
 
         { ...SEAWEED, amount: 2, unit: INGREDIENT_UNITS.SHEET, additionalDetails: 'halved', section: SECTIONS.ASSEMBLY },
