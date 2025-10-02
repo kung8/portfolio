@@ -63,7 +63,7 @@ export const GroceryListItem = ({
                 )}
                 {recipeName && (
                     <p className="recipe-name">
-                        <span>Needed for</span>
+                        <span className="needed-for">Needed for</span>
                         <span className="recipe-name-text">"{recipeName}"</span>
                     </p>
                 )}

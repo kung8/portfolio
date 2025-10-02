@@ -118,24 +118,27 @@
                     font-size: 12px;
                     color: theme.$default;
                     max-width: 100%;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
+                    display: flex;
+                    column-gap: 4px;
 
-                    span {
-                        display: inline-block;
+                    .needed-for {
+                        min-width: 76px;
                     }
 
                     .recipe-name-text {
-                        margin-left: 4px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
                     }
                 }
 
                 .recipe-yield {
                     font-size: 12px;
+
                     &.recipe-yield-date {
                         color: theme.$sunshine;
                     }
+
                     &.recipe-yield-category {
                         color: theme.$primary-blue;
                     }
