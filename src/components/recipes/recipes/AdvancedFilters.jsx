@@ -57,8 +57,10 @@ const AdvancedFiltersModal = ({ closeModal, featuredRecipes, filterMapping, menu
     const disabledPrimaryButton = 
         isEqual(finalSelectedFilters.ingredients, localSelectedFilters.ingredients) && 
         isEqual(finalSelectedFilters.recommended, localSelectedFilters.recommended) && 
-        isEqual(finalSelectedFilters.wip, localSelectedFilters.wip);
+        isEqual(finalSelectedFilters.wip, localSelectedFilters.wip) && 
+        isEqual(finalSelectedFilters.available, localSelectedFilters.available);
 
+    const availableOptions = filterMapping.find(filterOption => filterOption.type === 'available')?.filterOptions || [];
     const recommendedOptions = filterMapping.find(filterOption => filterOption.type === 'recommended')?.filterOptions || [];
     const wipOptions = filterMapping.find(filterOption => filterOption.type === 'wip')?.filterOptions || [];
 
@@ -125,13 +127,26 @@ const AdvancedFiltersModal = ({ closeModal, featuredRecipes, filterMapping, menu
                                     ))}
                                 </div>
                             </section>
-                            <section className="wip-recipes-section">
+                            <section className="wip-recipes-filter-section">
                                 <h4 className="filter-section-title">Still In Progress Recipes</h4>
                                 <div className="filter-chips">
                                     {wipOptions.map((option) => (
                                         <div key={option} className="chip" onClick={() => updateSelectedFilters('wip', option)}>
                                             <span>{option}</span>
                                             {localSelectedFilters.wip.includes(option) && (
+                                                <img src={closeBtn} alt="close" />
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            </section>
+                            <section className="available-recipes-filter-section">
+                                <h4 className="filter-section-title">Available Recipes</h4>
+                                <div className="filter-chips">
+                                    {availableOptions.map((option) => (
+                                        <div key={option} className="chip" onClick={() => updateSelectedFilters('available', option)}>
+                                            <span>{option}</span>
+                                            {localSelectedFilters.available.includes(option) && (
                                                 <img src={closeBtn} alt="close" />
                                             )}
                                         </div>

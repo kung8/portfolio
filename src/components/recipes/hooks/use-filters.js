@@ -19,10 +19,22 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
         // { heading: 'Has Image', type: 'image', filterOptions: ['Yes', 'No'] },
         { heading: 'Still WIP', type: 'wip', filterOptions: ['Yes', 'No'] },
         { heading: 'Recommended', type: 'recommended', filterOptions: ['Yes', 'No'] },
-    ];    
+        { heading: 'Available', type: 'available', filterOptions: ['Yes', 'No'] },
+    ];
 
     const filterRecipeBySelectedFilters = (compared, filter) => {
         return compared.some(value => filter.find(v => v === value))
+    }
+
+    const checkAvailable = (available) => {
+        const no = selectedFilters.available.includes('No');
+        const yes = selectedFilters.available.includes('Yes');
+        const all = no && yes;
+
+        if (all) return true;
+        if (no && !available) return true;
+        if (yes && available) return true;
+        return false;
     }
 
     const checkRecommended = (recommended) => {
@@ -59,8 +71,9 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
     }
 
     const availableFilteredRecipes = filteredRecipes.filter(item => !!item.available);
-    const filteredRecipeBySelectedFilters = availableFilteredRecipes.filter(item => {
-        const { category, diet, genre, image, method, protein, recommended, type, wip } = selectedFilters;
+    const { available, category, diet, genre, image, method, protein, recommended, type, wip } = selectedFilters;
+    const recipesToLookUp = process.env.NODE_ENV === 'development' && available.includes('No') ? filteredRecipes : availableFilteredRecipes;
+    const filteredRecipeBySelectedFilters = recipesToLookUp.filter(item => {
         return (
             (!category.length || filterRecipeBySelectedFilters(item.category || [], category)) &&
             (!diet.length || filterRecipeBySelectedFilters(item.diet || [], diet)) &&
@@ -70,12 +83,12 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
             (!type.length || filterRecipeBySelectedFilters(item.type || [], type)) &&
             (!image.length || checkSelectedImageOption(item.img)) &&
             (!wip?.length || checkWIP(item.wip)) &&
-            (!recommended?.length || checkRecommended(item.recommended))
+            (!recommended?.length || checkRecommended(item.recommended)) &&
+            (!available?.length || checkAvailable(item.available))
         );
     });
 
     return {
-        availableFilteredRecipes,
         filterMapping,
         filteredRecipeBySelectedFilters,
     }

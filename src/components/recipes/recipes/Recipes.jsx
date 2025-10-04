@@ -34,6 +34,7 @@ import { AdvancedFilters } from './AdvancedFilters';
 import { getMenuFilterItems } from '../utils/get-menu-filter-items';
 
 export const defaultSelectedFilters = {
+    available: [],
     category: [],
     diet: [],
     genre: [],
@@ -77,6 +78,7 @@ export const Recipes = ({ history }) => {
         setSelectedFiltersInLocalStorage(selectedFilters);
         // eslint-disable-next-line
     }, [
+        selectedFilters.available,
         selectedFilters.category,
         selectedFilters.diet,
         selectedFilters.genre,
@@ -93,11 +95,6 @@ export const Recipes = ({ history }) => {
     const [showArrow, setShowArrow] = useState(false);
 
     const { data: recipes = [] } = useGetData('recipes');
-    // TODO: only shown recipes that are still work in progress
-    // console.log('recipes: ', recipes.filter(r => r.available && r.wip));
-
-    // TODO: only hidden recipes
-    // console.log('recipes: ', recipes.filter(r => !r.available));
 
     const fuse = new Fuse(recipes, {
         keys: [
@@ -171,7 +168,7 @@ export const Recipes = ({ history }) => {
 
     const filteredRecipes = search ? matchingSearchResults : recipes;
     const { filterMapping, filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
-    const groupedFilteredRecipes = sortRecipes(filteredRecipeBySelectedFilters);
+    const groupedFilteredRecipes = sortRecipes(filteredRecipeBySelectedFilters);    
 
     const onScroll = () => {
         const scrollHeight = window.scrollY;
@@ -225,6 +222,10 @@ export const Recipes = ({ history }) => {
             case 'image':
                 if (values.includes('Yes')) newAcc = [...newAcc, { prop: key, value: 'Yes', label: 'Has Image' }];
                 if (values.includes('No')) newAcc = [...newAcc, { prop: key, value: 'No', label: 'No Image' }];
+                break;
+            case 'available':
+                if (values.includes('Yes')) newAcc = [...newAcc, { prop: key, value: 'Yes', label: 'Available' }];
+                if (values.includes('No')) newAcc = [...newAcc, { prop: key, value: 'No', label: 'Not Available' }];
                 break;
             case 'wip':
                 if (values.includes('Yes')) newAcc = [...newAcc, { prop: key, value: 'Yes', label: 'WIP' }];
