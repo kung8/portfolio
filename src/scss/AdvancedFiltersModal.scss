@@ -16,7 +16,7 @@
         display: none;
         background: theme.$aqua;
         padding: 16px 16px 24px;
-        height: 85vh;
+        height: 75vh;
 
         &.opened {
             display: block;
@@ -51,13 +51,17 @@
             justify-content: space-between;
         }
 
+        .top-container {
+            height: calc(100% - 56px);
+        }
+
         .modal-body {
             margin-top: 16px;
+            overflow-y: auto;
+            height: calc(100% - 40px);
         }
 
         .ingredients-filter-section {
-            margin-bottom: 32px;
-
             .search-and-filter-visible-toggle-container {
                 margin: 0;
                 padding: 0 0 16px;
@@ -69,7 +73,7 @@
 
                 .ingredients-list {
                     overflow-y: auto;
-                    max-height: 500px;
+                    max-height: 400px;
                     position: absolute;
                     width: 100%;
                     background: theme.$aqua;
@@ -78,10 +82,18 @@
                         list-style: none;
                         padding: 8px;
                         cursor: pointer;
-                        border-bottom: 2px solid theme.$darkgrey;
+                        border-bottom: 1px solid theme.$default;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
 
                         &.included {
-                            background: theme.$light;
+                            background: theme.$sunshine;
+                        }
+
+                        img {
+                            width: 10px;
+                            height: 10px;
                         }
                     }
                 }
@@ -91,7 +103,7 @@
 
         .favorited-recipes-filter-section,
         .wip-recipes-filter-section {
-            margin-bottom: 32px;
+            margin-bottom: 8px;
         }
 
         .filter-section-title {

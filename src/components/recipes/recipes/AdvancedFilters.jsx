@@ -84,21 +84,27 @@ const AdvancedFiltersModal = ({ closeModal, featuredRecipes, filterMapping, menu
                                 <IngredientSearchBar search={searchTerm} setSearch={setSearchTerm} />
                                 <div className="ingredients-list-container">
                                     <ul className="ingredients-list">
-                                        {filteredIngredients.map((ingredient, index) => (
-                                            <li
-                                                key={index}
-                                                tabIndex={0}
-                                                className={`ingredient ${localSelectedFilters.ingredients.includes(ingredient.itemType) ? 'included' : ''}`}
-                                                onClick={() => updateSelectedFilters('ingredients', ingredient.itemType)}
-                                                onKeyDown={(e) => {
-                                                    if (e.key === 'Enter') {
-                                                        updateSelectedFilters('ingredients', ingredient.itemType)
-                                                    }
-                                                }}
-                                            >
-                                                {ingredient.name}
-                                            </li>
-                                        ))}
+                                        {filteredIngredients.map((ingredient, index) => {
+                                            const includesIngredient = localSelectedFilters.ingredients.includes(ingredient.itemType);
+                                            return (
+                                                <li
+                                                    key={index}
+                                                    tabIndex={0}
+                                                    className={`ingredient ${includesIngredient ? 'included' : ''}`}
+                                                    onClick={() => updateSelectedFilters('ingredients', ingredient.itemType)}
+                                                    onKeyDown={(e) => {
+                                                        if (e.key === 'Enter') {
+                                                            updateSelectedFilters('ingredients', ingredient.itemType)
+                                                        }
+                                                    }}
+                                                >
+                                                    <span>{ingredient.name}</span>
+                                                    {includesIngredient && (
+                                                        <img src={closeBtn} alt="close" />
+                                                    )}
+                                                </li>
+                                            )
+                                        })}
                                     </ul>
                                     {localSelectedFilters.ingredients.length > 0 ? (
                                         <div className="filter-chips">
