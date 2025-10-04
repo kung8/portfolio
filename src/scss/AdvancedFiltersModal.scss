@@ -1,0 +1,163 @@
+@use 'variables' as theme;
+@use 'mixins' as mixins;
+
+.advanced-filters-modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .advanced-filters-modal {
+        position: absolute;
+        top: 50vh;
+        left: 50%;
+        z-index: 5;
+        transform: translate(-50%, calc(-50% - 32px));
+        width: unquote("min(calc(100% - 16px), 600px)");
+        display: none;
+        background: theme.$aqua;
+        padding: 16px 16px 24px;
+        height: 85vh;
+
+        &.opened {
+            display: block;
+        }
+
+        &.closed {
+            display: none;
+        }
+
+        .menu-filter-container {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .close {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            background: none;
+            border: none;
+            color: theme.$white;
+            cursor: pointer;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .modal-content {
+            height: 100%;
+            justify-content: space-between;
+        }
+
+        .modal-body {
+            margin-top: 16px;
+        }
+
+        .ingredients-filter-section {
+            margin-bottom: 32px;
+
+            .search-and-filter-visible-toggle-container {
+                margin: 0;
+                padding: 0 0 16px;
+            }
+
+            .ingredients-list-container {
+                position: relative;
+                width: 100%;
+
+                .ingredients-list {
+                    overflow-y: auto;
+                    max-height: 500px;
+                    position: absolute;
+                    width: 100%;
+                    background: theme.$aqua;
+
+                    .ingredient {
+                        list-style: none;
+                        padding: 8px;
+                        cursor: pointer;
+                        border-bottom: 2px solid theme.$darkgrey;
+
+                        &.included {
+                            background: theme.$light;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .favorited-recipes-filter-section {
+            margin-bottom: 32px;
+        }
+
+        .filter-section-title {
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        .filter-chips {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+
+            &.show {
+                min-height: 35px;
+                transition: min-height 0.3s ease-in-out;
+
+                @include mixins.down(theme.$mobile) {
+                    min-height: 27.5px;
+                }
+            }
+        }
+
+        .chip {
+            background: theme.$hover;
+            padding: 8px 12px;
+            border-radius: 4px;
+            color: theme.$default;
+            display: flex;
+            align-items: center;
+            gap: 8px 6px;
+
+            &.non-chip {
+                width: fit-content;
+            }
+
+            &:not(.non-chip) {
+                cursor: pointer;
+
+                &:hover {
+                    background: theme.$default;
+                    color: theme.$hover;
+                }
+            }
+
+            @include mixins.down(theme.$mobile) {
+                font-size: 10px;
+            }
+
+            img {
+                width: 10px;
+                height: 10px;
+
+                @include mixins.down(theme.$mobile) {
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 4;
+    }
+}

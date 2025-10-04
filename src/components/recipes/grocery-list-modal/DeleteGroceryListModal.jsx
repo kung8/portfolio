@@ -1,4 +1,4 @@
-import closeBtn from '../../../Assets/x.png';
+import { ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
 
 export const DeleteGroceryListModal = ({
     closeDeleteIngredientModal,
@@ -25,16 +25,19 @@ export const DeleteGroceryListModal = ({
 
     return (
         <div className="delete-grocery-item-modal">
-            <div className="modal-content">
-                <div className="modal-header">
-                    <h3>{deleteTitle}</h3>
-                    <img src={closeBtn} alt="close" onClick={closeDeleteIngredientModal} />
-                </div>
-                <div className="modal-footer">
-                    <button className="cancel-btn" onClick={closeDeleteIngredientModal}>No</button>
-                    <button className="delete-btn" onClick={handleDelete}>Yes</button>
-                </div>
-            </div>
+            <ModalContent>
+                <ModalHeader 
+                    handleClose={closeDeleteIngredientModal}
+                    title={deleteTitle}
+                />
+                <ModalFooter 
+                    actionLabel='Yes'
+                    cancelLabel='No'
+                    disabled={false}
+                    handleAction={handleDelete}
+                    handleCancel={closeDeleteIngredientModal}
+                />
+            </ModalContent>
         </div>
     )
 }

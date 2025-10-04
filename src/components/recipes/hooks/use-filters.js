@@ -17,11 +17,23 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
         // { heading: 'Proteins', type: 'protein', filterOptions: protein },
         // { heading: 'Type', type: 'type', filterOptions: types },
         // { heading: 'Has Image', type: 'image', filterOptions: ['Yes', 'No'] },
-        // { heading: 'Still WIP', type: 'wip', filterOptions: ['Yes', 'No'] },
-    ];
+        { heading: 'Still WIP', type: 'wip', filterOptions: ['Yes', 'No'] },
+        { heading: 'Recommended', type: 'recommended', filterOptions: ['Yes', 'No'] },
+    ];    
 
     const filterRecipeBySelectedFilters = (compared, filter) => {
         return compared.some(value => filter.find(v => v === value))
+    }
+
+    const checkRecommended = (recommended) => {
+        const no = selectedFilters.recommended.includes('No');
+        const yes = selectedFilters.recommended.includes('Yes');
+        const all = no && yes;
+
+        if (all) return true;
+        if (no && !recommended) return true;
+        if (yes && recommended) return true;
+        return false;
     }
 
     const checkSelectedImageOption = (img) => {
@@ -48,7 +60,7 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
 
     const availableFilteredRecipes = filteredRecipes.filter(item => !!item.available);
     const filteredRecipeBySelectedFilters = availableFilteredRecipes.filter(item => {
-        const { category, diet, genre, image, method, protein, type, wip } = selectedFilters;
+        const { category, diet, genre, image, method, protein, recommended, type, wip } = selectedFilters;
         return (
             (!category.length || filterRecipeBySelectedFilters(item.category || [], category)) &&
             (!diet.length || filterRecipeBySelectedFilters(item.diet || [], diet)) &&
@@ -57,7 +69,8 @@ export const useFilters = ({ filteredRecipes, selectedFilters }) => {
             (!protein.length || filterRecipeBySelectedFilters(item.protein || [], protein)) &&
             (!type.length || filterRecipeBySelectedFilters(item.type || [], type)) &&
             (!image.length || checkSelectedImageOption(item.img)) &&
-            (!wip?.length || checkWIP(item.wip))
+            (!wip?.length || checkWIP(item.wip)) &&
+            (!recommended?.length || checkRecommended(item.recommended))
         );
     });
 

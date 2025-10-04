@@ -3,6 +3,7 @@
 
 .recipes {
     padding: 80px 0;
+
     @include mixins.down(theme.$tablet) {
         padding: 56px 0;
     }
@@ -15,6 +16,7 @@
         padding-left: 56px;
         padding-right: 56px;
         margin-bottom: 24px;
+
         @include mixins.down(theme.$mobile) {
             padding-left: 24px;
             padding-right: 24px;
@@ -33,6 +35,7 @@
     .filter-chips-container {
         padding: 48px 12px 24px;
         margin: 0 4px;
+
         &.hidden-filters {
             padding-bottom: 56px;
         }
@@ -49,7 +52,7 @@
                 transform: rotate(45deg);
                 animation: close-rotate 0.35s ease-in-out;
                 cursor: pointer;
-        
+
                 &.rotate {
                     transform: rotate(180deg);
                     animation: open-rotate 0.35s ease-in-out;
@@ -59,15 +62,17 @@
                     0% {
                         transform: rotate(45deg);
                     }
+
                     100% {
                         transform: rotate(180deg);
                     }
                 }
-                
+
                 @keyframes close-rotate {
                     0% {
                         transform: rotate(180deg);
                     }
+
                     100% {
                         transform: rotate(45deg);
                     }
@@ -79,9 +84,11 @@
             display: flex;
             gap: 8px;
             flex-wrap: wrap;
+
             &.show {
                 min-height: 35px;
                 transition: min-height 0.3s ease-in-out;
+
                 @include mixins.down(theme.$mobile) {
                     min-height: 27.5px;
                 }
@@ -96,16 +103,20 @@
             display: flex;
             align-items: center;
             gap: 8px 6px;
+
             &.non-chip {
                 width: fit-content;
             }
+
             &:not(.non-chip) {
                 cursor: pointer;
+
                 &:hover {
                     background: theme.$default;
                     color: theme.$hover;
                 }
             }
+
             @include mixins.down(theme.$mobile) {
                 font-size: 10px;
             }
@@ -113,6 +124,7 @@
             img {
                 width: 10px;
                 height: 10px;
+
                 @include mixins.down(theme.$mobile) {
                     width: 8px;
                     height: 8px;
@@ -139,6 +151,7 @@
             border: none;
             background: none;
             cursor: pointer;
+
             &:focus-visible {
                 outline: none;
             }
@@ -162,6 +175,7 @@
     .menu-filters-container {
         display: none;
         transition: display 0.3s ease-in-out;
+
         &.show {
             display: block;
         }
@@ -169,10 +183,6 @@
         .menu-filter-container {
             margin: 0 4px;
             padding: 10px 12px;
-
-            &:last-of-type {
-                padding-bottom: 56px;
-            }
 
             .menu-type {
                 margin-bottom: 16px;
@@ -198,6 +208,7 @@
                     opacity: 0.45;
                     background: theme.$grey;
                     transition: opacity 0.3s ease-in-out;
+
                     @include mixins.up(theme.$desktop) {
                         &:hover {
                             opacity: 1;
@@ -208,6 +219,7 @@
                     &.includes-menu-item {
                         opacity: 1;
                         background: none;
+
                         @include mixins.up(theme.$desktop) {
                             &:hover {
                                 opacity: 0.45;
@@ -219,6 +231,7 @@
                     &.includes-menu-item-with-no-image {
                         opacity: 1;
                         background: theme.$hover;
+
                         @include mixins.up(theme.$desktop) {
                             &:hover {
                                 opacity: 0.45;
@@ -234,12 +247,28 @@
                 }
             }
         }
+
+        .advanced-filters-container {
+            display: block;
+            margin: 16px 4px 0;
+            padding: 10px 12px;
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 56px;
+
+            .advanced-filters-label {
+                color: theme.$primary-blue;
+                cursor: pointer;
+                font-size: 14px;
+            }
+        }
     }
 
     .recipes-grouped-container {
         display: flex;
         flex-direction: column;
         row-gap: 6px;
+
         &:not(:last-of-type) {
             margin-bottom: 40px;
         }
@@ -257,6 +286,7 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 4px;
+
         .recipe-item-container {
             aspect-ratio: 1/1;
             cursor: pointer;
@@ -264,15 +294,18 @@
             position: relative;
             width: 16.66%;
             padding: 4px;
+
             &:hover {
                 opacity: 0.7;
                 transition-property: all;
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 transition-duration: 0.15s;
                 border-radius: 4px;
+
                 .recipe-image {
                     background: theme.$hover;
                 }
+
                 .empty-recipe-image {
                     background: theme.$default;
                 }
@@ -281,12 +314,15 @@
             @include mixins.down(theme.$extra-large) {
                 width: 20%;
             }
+
             @include mixins.down(theme.$desktop) {
                 width: 25%;
             }
+
             @include mixins.down(theme.$tablet) {
                 width: 33.33%;
             }
+
             @include mixins.down(theme.$mobile-xl) {
                 width: 50%;
             }
@@ -300,6 +336,7 @@
                 align-items: center;
                 color: theme.$black;
                 background: theme.$aqua;
+
                 &.empty-recipe-image {
                     background: theme.$default;
                 }
@@ -353,6 +390,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
                 @include mixins.down(theme.$mobile) {
                     font-size: 10px;
                 }
@@ -366,6 +404,7 @@
 
                 .heart {
                     font-size: 22px;
+
                     &:before {
                         text-shadow: 0px 0px 10px theme.$coral;
                         opacity: 0.75;
@@ -381,6 +420,7 @@
 
                 .wip {
                     font-size: 20px;
+
                     &:before {
                         text-shadow: 0px 0px 10px theme.$darkgrey;
                         opacity: 0.85;
@@ -441,11 +481,14 @@
                 .dropdown-options-container {
                     left: -1px;
                     min-width: 260px;
+
                     li {
                         padding: 4px 8px;
+
                         &:first-of-type {
                             padding-top: 8px;
                         }
+
                         &:last-of-type {
                             padding-bottom: 8px;
                         }
@@ -466,6 +509,7 @@
         display: flex;
         justify-content: center;
         margin-top: 100px;
+
         .watermelon {
             transform: unset;
             position: relative;
@@ -487,6 +531,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         &:hover {
             box-shadow: 1px 1px 10px theme.$hover;
         }
@@ -507,8 +552,10 @@
         .modal-tray {
             .modal-content {
                 height: 100%;
+
                 .modal-body {
                     height: 100vh;
+
                     @media (hover: none) and (pointer: coarse) {
                         height: calc(100vh - 108px);
                     }

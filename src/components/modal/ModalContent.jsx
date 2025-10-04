@@ -19,12 +19,13 @@ export const ModalBody = ({ children }) =>
 
 export const ModalFooter = ({
     actionLabel,
+    cancelLabel = 'Cancel',
     disabled,
     handleAction,
     handleCancel,
 }) => (
     <div className="modal-footer">
-        <button className="cancel-btn" onClick={handleCancel}>Cancel</button>
+        <button className="cancel-btn" onClick={handleCancel}>{cancelLabel}</button>
         <button
             className="action-btn"
             disabled={disabled}

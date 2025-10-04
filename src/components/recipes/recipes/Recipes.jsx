@@ -30,6 +30,8 @@ import { MenuFilter } from './MenuFilter';
 import { FilterChips } from './FilterChips';
 import { GroceryListIcon } from './GroceryListIcon';
 import { RecipeSearchBar } from './RecipeSearchBar';
+import { AdvancedFilters } from './AdvancedFilters';
+import { getMenuFilterItems } from '../utils/get-menu-filter-items';
 
 export const defaultSelectedFilters = {
     category: [],
@@ -42,6 +44,7 @@ export const defaultSelectedFilters = {
     wip: [],
     ingredients: [],
     search: '',
+    recommended: [],
 };
 
 export const Recipes = ({ history }) => {
@@ -84,6 +87,7 @@ export const Recipes = ({ history }) => {
         selectedFilters.search,
         selectedFilters.wip,
         selectedFilters.ingredients,
+        selectedFilters.recommended,
     ])
 
     const [showArrow, setShowArrow] = useState(false);
@@ -91,7 +95,7 @@ export const Recipes = ({ history }) => {
     const { data: recipes = [] } = useGetData('recipes');
     // TODO: only shown recipes that are still work in progress
     // console.log('recipes: ', recipes.filter(r => r.available && r.wip));
-    
+
     // TODO: only hidden recipes
     // console.log('recipes: ', recipes.filter(r => !r.available));
 
@@ -166,7 +170,7 @@ export const Recipes = ({ history }) => {
     const getOverlappingIngredientsCount = (ingredients) => selectedFilters?.ingredients?.filter((ingredient => ingredients.find(i => i.name === ingredient))).length
 
     const filteredRecipes = search ? matchingSearchResults : recipes;
-    const { filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
+    const { filterMapping, filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
     const groupedFilteredRecipes = sortRecipes(filteredRecipeBySelectedFilters);
 
     const onScroll = () => {
@@ -226,6 +230,10 @@ export const Recipes = ({ history }) => {
                 if (values.includes('Yes')) newAcc = [...newAcc, { prop: key, value: 'Yes', label: 'WIP' }];
                 if (values.includes('No')) newAcc = [...newAcc, { prop: key, value: 'No', label: 'Successfully Created' }];
                 break;
+            case 'recommended':
+                if (values.includes('Yes')) newAcc = [...newAcc, { prop: key, value: 'Yes', label: 'Recommended' }];
+                if (values.includes('No')) newAcc = [...newAcc, { prop: key, value: 'No', label: 'Still Perfecting It' }];
+                break;
             case 'search':
                 // values is a string
                 if (values) {
@@ -255,7 +263,6 @@ export const Recipes = ({ history }) => {
         setShowFilters(value === 'yes' ? true : false);
     }
     const [showFilters, setShowFilters] = useState();
-    const getMenuFilterItems = (obj) => Object.entries(obj).map(([key, { img, name }]) => ({ img, itemType: key, name }));
     const menuFilterProps = { selectedFilters, setSelectedFilters };
 
     useEffect(() => {
@@ -325,14 +332,11 @@ export const Recipes = ({ history }) => {
                         {...menuFilterProps}
                     />
                 )}
-                {featuredRecipes.INGREDIENTS && (
-                    <MenuFilter
-                        label="Ingredients"
-                        items={getMenuFilterItems(featuredRecipes.INGREDIENTS)}
-                        itemType="ingredients"
-                        {...menuFilterProps}
-                    />
-                )}
+                <AdvancedFilters
+                    featuredRecipes={featuredRecipes}
+                    filterMapping={filterMapping}
+                    menuFilterProps={menuFilterProps}
+                />
             </div>
 
             {isLoaded ? (
