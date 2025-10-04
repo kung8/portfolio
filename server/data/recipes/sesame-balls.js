@@ -1,29 +1,34 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { GLUTINOUS_RICE_FLOUR, WHITE_SUGAR, SALT, WATER, SESAME_SEEDS, VEGETABLE_OIL, RED_BEAN_PASTE } = require('./ingredients');
+const { GLUTINOUS_RICE_FLOUR, WHITE_SUGAR, SALT, WATER, SESAME_SEEDS, VEGETABLE_OIL, RED_BEAN_PASTE, SPLIT_MUNG_BEAN, VANILLA_EXTRACT, SHREDDED_COCONUT } = require('./ingredients');
 
+const MUNG_BEAN_FILLING = 'Mung Bean Filling';
+const RED_BEAN_FILLING = 'Red Bean Filling';
+const PREP_MUNG_BEAN_FILLING = 'Prep Mung Bean Filling';
+const FORM_FILLING_INTO_BALLS = 'Form Filling into Balls';
 const FORM_BALLS = 'Form Balls';
 
 module.exports = {
     wip: true,
     cardName: 'Sesame Balls',
-    name: 'Sesame Balls',
+    name: 'Sesame Balls (Jian Dui or Banh Cam)',
     img: '',
-    recipeAuthors: ['Megan'],
+    recipeAuthors: ['Megan', 'Jeannette'],
     recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
-    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    genre: [GENRES.ASIAN, GENRES.CHINESE, GENRES.VIETNAMESE],
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.BEAN],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT],
     yields: { amount: 10, unit: YIELD_UNITS.BALL },
-    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
-    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
-    waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
+    prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Sesame Balls', link: 'https://takestwoeggs.com/sesame-balls-with-red-bean-paste/' }
+        { label: 'Sesame Balls (Jian Dui)', link: 'https://takestwoeggs.com/sesame-balls-with-red-bean-paste/' },
+        { label: 'Banh Cam', link: 'https://www.wokandkin.com/banh-cam/' }
     ],
     separated: true,
     ingredients: [
@@ -32,7 +37,16 @@ module.exports = {
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...WATER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiling', section: SECTIONS.DOUGH },
 
-        { ...RED_BEAN_PASTE, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chilled', section: SECTIONS.FILLING },
+        { ...RED_BEAN_PASTE, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chilled', section: RED_BEAN_FILLING },
+
+        { ...SPLIT_MUNG_BEAN, amount: 5.3, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: MUNG_BEAN_FILLING },
+        { ...WATER, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'for boiling', section: MUNG_BEAN_FILLING },
+        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'for mixture', section: MUNG_BEAN_FILLING },
+        { ...WHITE_SUGAR, amount: 9.5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MUNG_BEAN_FILLING },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MUNG_BEAN_FILLING },
+        { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MUNG_BEAN_FILLING },
+        { ...SHREDDED_COCONUT, amount: 7, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MUNG_BEAN_FILLING },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: MUNG_BEAN_FILLING },
 
         { ...SESAME_SEEDS, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.COATING_STATION },
         { ...WATER, amount: '', unit: '', additionalDetails: '', section: SECTIONS.COATING_STATION },
@@ -43,9 +57,16 @@ module.exports = {
         { name: 'deep fryer or stove' },
     ],
     supplies: [
+        // dough
         { name: 'mixing bowl' },
         { name: 'plastic wrap' },
+        // mung bean filling
+        { name: 'colander' },
+        { name: 'pot' },
+        { name: 'large bowl' },
+        // dipping stations
         { name: '2 small bowls' },
+        // frying
         { name: 'large pot' },
         { name: 'slotted spoon' },
         { name: 'spider strainer' },
@@ -60,7 +81,18 @@ module.exports = {
         { step: 'On a flat surface, knead until it forms into a ball.', section: SECTIONS.PREP_DOUGH },
         { step: 'Place back in the mixing bowl and cover with plastic wrap. Let it rest for 30 minutes.', section: SECTIONS.PREP_DOUGH },
 
-        { step: 'Form equal sized balls.', section: SECTIONS.PREP_FILLING },
+        { step: 'In a colander, rinse the mung beans in cool water until the water runs clear.', section: PREP_MUNG_BEAN_FILLING },
+        { step: 'Transfer to a pot. Add the water for boiling.', section: PREP_MUNG_BEAN_FILLING },
+        { step: 'Over medium-high heat, bring the water to a boil.', section: PREP_MUNG_BEAN_FILLING },
+        { step: 'Cover and simmer over low-medium heat until water has evaporated (about 15 minutes).', section: PREP_MUNG_BEAN_FILLING },
+        { step: 'Decrease to low heat. Add the water for mixture.', section: PREP_MUNG_BEAN_FILLING },
+        { step: 'Mix until it becomes a lumpy paste.', section: PREP_MUNG_BEAN_FILLING },
+        { step: `Add the remaining "${MUNG_BEAN_FILLING}" section ingredients except the oil. Stir.`, section: PREP_MUNG_BEAN_FILLING },
+        { step: 'Add oil. Mix.', section: PREP_MUNG_BEAN_FILLING },
+        { step: 'Increase to medium-low heat. Cook until the paste is smooth (about 5 to 10 minutes). Stir constantly.', section: PREP_MUNG_BEAN_FILLING },
+        { step: 'In a large bowl, transfer mung bean filling and cover with plastic wrap. Let cool.', section: PREP_MUNG_BEAN_FILLING },
+
+        { step: 'When ready, form equal sized balls with either of the preferred fillings.', section: FORM_FILLING_INTO_BALLS },
 
         { step: 'Prepare two bowls: water and sesame seeds.', section: SECTIONS.PREP_DIPPING_STATIONS },
 

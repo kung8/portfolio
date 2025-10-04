@@ -18,7 +18,6 @@ const bakedZiti = require("./recipes/baked-ziti");
 const balsamicTomatoBruschetta = require("./recipes/balsamic-tomato-bruschetta");
 const bananaBread = require("./recipes/banana-bread");
 const bangBangShrimp = require('./recipes/bang-bang-shrimp.js');
-const banhCam = require('./recipes/banh-cam.js'); // TODO: finish adding recipe
 const basilPesto = require("./recipes/basil-pesto");
 const basqueCheesecake = require('./recipes/basque-cheesecake.js');
 const bbqChickenWings = require("./recipes/bbq-chicken-wings");
@@ -384,7 +383,7 @@ const recipes = [
     vietnameseFreshSpringRolls,
     peanutChickenSpringRollBowl,
     vietnameseBanhTieu,
-    banhCam,
+    sesameBalls,
 
     // JAPANESE
     sushi,
@@ -430,7 +429,6 @@ const recipes = [
     chineseBokChoyChicken,
     cabbageStirFry,
     chineseBao,
-    sesameBalls,
     dumplingSoup,
     springRolls,
     potstickers,

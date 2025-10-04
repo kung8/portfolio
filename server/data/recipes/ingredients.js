@@ -354,6 +354,7 @@ const INGREDIENTS = {
         RED_BEAN_PASTE: { name: 'red bean paste', category: INGREDIENT_CATEGORY.CANNED },
         RED_CURRY_PASTE: { name: 'red curry paste', category: INGREDIENT_CATEGORY.CANNED },
         REFRIED_BEANS: { name: 'refried beans', category: INGREDIENT_CATEGORY.CANNED },
+        SPLIT_MUNG_BEAN: { name: 'split mung bean', category: INGREDIENT_CATEGORY.CANNED },
         SPLIT_PEA_SOUP: { name: 'split pea soup', category: INGREDIENT_CATEGORY.CANNED },
         SUN_DRIED_TOMATOES: { name: 'sun dried tomatoes', category: INGREDIENT_CATEGORY.CANNED },
         TOMATO_PASTE: { name: 'tomato paste', category: INGREDIENT_CATEGORY.CANNED },
