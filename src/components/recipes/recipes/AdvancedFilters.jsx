@@ -54,10 +54,10 @@ const AdvancedFiltersModal = ({ closeModal, featuredRecipes, filterMapping, menu
     }
 
     // Disable primary button if no changes were made
-    const disabledPrimaryButton = 
-        isEqual(finalSelectedFilters.ingredients, localSelectedFilters.ingredients) && 
-        isEqual(finalSelectedFilters.recommended, localSelectedFilters.recommended) && 
-        isEqual(finalSelectedFilters.wip, localSelectedFilters.wip) && 
+    const disabledPrimaryButton =
+        isEqual(finalSelectedFilters.ingredients, localSelectedFilters.ingredients) &&
+        isEqual(finalSelectedFilters.recommended, localSelectedFilters.recommended) &&
+        isEqual(finalSelectedFilters.wip, localSelectedFilters.wip) &&
         isEqual(finalSelectedFilters.available, localSelectedFilters.available);
 
     const availableOptions = filterMapping.find(filterOption => filterOption.type === 'available')?.filterOptions || [];
@@ -140,19 +140,21 @@ const AdvancedFiltersModal = ({ closeModal, featuredRecipes, filterMapping, menu
                                     ))}
                                 </div>
                             </section>
-                            <section className="available-recipes-filter-section">
-                                <h4 className="filter-section-title">Available Recipes</h4>
-                                <div className="filter-chips">
-                                    {availableOptions.map((option) => (
-                                        <div key={option} className="chip" onClick={() => updateSelectedFilters('available', option)}>
-                                            <span>{option}</span>
-                                            {localSelectedFilters.available.includes(option) && (
-                                                <img src={closeBtn} alt="close" />
-                                            )}
-                                        </div>
-                                    ))}
-                                </div>
-                            </section>
+                            {process.env.NODE_ENV === 'development' && (
+                                <section className="available-recipes-filter-section">
+                                    <h4 className="filter-section-title">Available Recipes</h4>
+                                    <div className="filter-chips">
+                                        {availableOptions.map((option) => (
+                                            <div key={option} className="chip" onClick={() => updateSelectedFilters('available', option)}>
+                                                <span>{option}</span>
+                                                {localSelectedFilters.available.includes(option) && (
+                                                    <img src={closeBtn} alt="close" />
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </section>
+                            )}
                         </ModalBody>
                     </div>
                     <ModalFooter
