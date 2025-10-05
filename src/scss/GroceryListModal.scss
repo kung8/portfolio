@@ -493,6 +493,8 @@
 
         .modal-body {
             margin: 24px 0 32px;
+            overflow-y: auto;
+            max-height: 400px;
 
             .section-heading {
                 color: theme.$default;
