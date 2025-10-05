@@ -69,14 +69,14 @@ export const GroceryListItem = ({
                     </p>
                 )}
                 {recipeYield && (
-                    <p className={`recipe-yield ${sortBy === 'date' ? 'recipe-yield-date' : 'recipe-yield-category'}`}>
+                    <p className={`recipe-yield ${sortBy === 'date' ? 'recipe-yield-date' : sortBy === 'vendor' ? 'recipe-yield-vendor' : 'recipe-yield-category'}`}>
                         <span>Yields</span>
                         <span className="recipe-yield-text">{recipeYield}</span>
                     </p>
                 )}
-                {sortBy === 'date' && category && <p className="recipe-category"><span>{category}</span></p>}
-                {sortBy === 'category' && date && <p className="recipe-date"><span>Needed on {dayjs(date).format(READABLE_SHORT_DATE)}</span></p>}
-                {vendor && (<p className="recipe-vendor"><span>Buy at {vendor}</span></p>)}
+                {sortBy !== 'category' && category && <p className="recipe-category"><span>{category}</span></p>}
+                {sortBy !== 'date' && date && <p className="recipe-date"><span>Needed on {dayjs(date).format(READABLE_SHORT_DATE)}</span></p>}
+                {sortBy !== 'vendor' && vendor && (<p className="recipe-vendor"><span>Buy at {vendor}</span></p>)}
             </div>
         </div>
     )

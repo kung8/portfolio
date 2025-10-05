@@ -143,6 +143,10 @@
                         color: theme.$primary-blue;
                     }
 
+                    &.recipe-yield-vendor {
+                        color: theme.$coral;
+                    }
+
                     .recipe-yield-text {
                         display: inline-block;
                         margin-left: 4px;

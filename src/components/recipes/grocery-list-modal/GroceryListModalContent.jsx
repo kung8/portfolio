@@ -33,6 +33,7 @@ export const GroceryListModalContent = ({
                 if (a[0] > b[0]) return 1;
                 return 0;
             });
+        if (sortBy === 'category') return displayedIngredientsListByCategory();
 
         // Group ingredients by date
         const displayedIngredientsListByDate = () => {
@@ -58,7 +59,28 @@ export const GroceryListModalContent = ({
                     return [dayjs(date).format(READABLE_SHORT_DATE), ingredients];
                 });
         }
-        return sortBy === 'category' ? displayedIngredientsListByCategory() : displayedIngredientsListByDate();
+        if (sortBy === 'date') return displayedIngredientsListByDate();
+
+        // Group ingredients by vendor
+        const displayedIngredientsListByVendor = () => {
+            return Object.entries((groceryList || [])
+                .reduce((group, ingredient) => {
+                    const vendor = ingredient.vendor || 'No Specified Vendor';
+                    if (!group[vendor]) group[vendor] = [];
+                    group[vendor].push(ingredient);
+                    return group;
+                }, {}))
+                .sort((a, b) => {
+                    if (a[0] === 'No Specified Vendor') return 1;
+                    if (a[0] < b[0]) return -1;
+                    if (a[0] > b[0]) return 1;
+                    return 0;
+                });
+        }
+        if (sortBy === 'vendor') return displayedIngredientsListByVendor();
+
+        // default to category
+        return displayedIngredientsListByCategory();
         // eslint-disable-next-line
     }, [groceryList.map(item => item.date + item.mealPlanningDateRange + item.category + item.checked + item.vendor).join(','), sortBy]);
 
@@ -106,7 +128,15 @@ export const GroceryListModalContent = ({
                     <span onClick={groceryList.filter(item => item.checked).length > 0 ? () => openDeleteModal('checked') : undefined} className={groceryList.filter(item => item.checked).length > 0 ? 'has-values' : ''}>Delete Checked</span>
                     <span onClick={groceryList.length > 0 ? () => openDeleteModal('all') : undefined} className={groceryList.length > 0 ? 'has-values' : ''}>Delete All</span>
                 </div>
-                <SortBy options={[{ id: 'category', label: 'Category' }, { id: 'date', label: 'Date' }]} setSortBy={setSortBy} sortBy={sortBy} />
+                <SortBy
+                    options={[
+                        { id: 'category', label: 'Category' },
+                        { id: 'date', label: 'Date' },
+                        { id: 'vendor', label: 'Vendor' },
+                    ]}
+                    setSortBy={setSortBy}
+                    sortBy={sortBy}
+                />
             </div>
         </>
     )
