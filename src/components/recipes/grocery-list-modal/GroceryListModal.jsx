@@ -167,10 +167,13 @@ export const GroceryListModal = ({
         setIsSettingsModalOpen(false);
     }
     const updateStartingDay = (day) => {
+        setStartingDay(day);
         localStorage.setItem(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, day);
     }
-
-
+    const updateVendorOptions = (newVendorOptions) => {
+        setVendorOptions(newVendorOptions);
+        localStorage.setItem('vendorOptions', JSON.stringify(newVendorOptions));
+    }
 
     return (
         <>
@@ -262,7 +265,7 @@ export const GroceryListModal = ({
                             !!item.recipeName && // don't update the ones that don't have a recipe name
                             originalItemStartingDate === item?.mealPlanningDateRange?.[0] &&
                             originalItemEndingDate === item?.mealPlanningDateRange?.[1] &&
-                            originalItem.name !== item.name && 
+                            originalItem.name !== item.name &&
                             originalItem.vendor === item.vendor
                         );
                         if (hasExistingGroceryListItem) {
@@ -342,12 +345,11 @@ export const GroceryListModal = ({
             {isSettingsModalOpen && (
                 <SettingsModal
                     closeModal={closeSettingsModal}
-                    handleApply={() => {
-                        updateStartingDay(startingDay);
+                    handleApply={(newStartingDay, newVendorOptions) => {
+                        updateStartingDay(newStartingDay);
+                        updateVendorOptions(newVendorOptions);
                         closeSettingsModal();
                     }}
-                    setStartingDay={setStartingDay}
-                    setVendorOptions={setVendorOptions}
                     startingDay={startingDay}
                     vendorOptions={vendorOptions}
                 />

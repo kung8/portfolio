@@ -1,8 +1,7 @@
-import { useDebouncedCallback } from 'use-debounce';
-import closeBtn from '../../../Assets/x.png';
-import { getStartingDay, getVendorOptions } from '../utils';
 import { useEffect, useState } from 'react';
 import { isEqual } from 'lodash';
+import { useDebouncedCallback } from 'use-debounce';
+import closeBtn from '../../../Assets/x.png';
 
 const VendorOptionItem = ({ originalOption, removeVendorOption, updateVendorOption }) => {
     const [option, setOption] = useState(originalOption);
@@ -31,43 +30,52 @@ const VendorOptionItem = ({ originalOption, removeVendorOption, updateVendorOpti
     )
 }
 
+const days = [
+    { label: 'Sun', value: 'sunday' },
+    { label: 'Mon', value: 'monday' },
+    { label: 'Tue', value: 'tuesday' },
+    { label: 'Wed', value: 'wednesday' },
+    { label: 'Thu', value: 'thursday' },
+    { label: 'Fri', value: 'friday' },
+    { label: 'Sat', value: 'saturday' }
+];
+
 export const SettingsModal = ({
     closeModal,
     handleApply,
-    setStartingDay,
-    setVendorOptions,
     startingDay,
     vendorOptions,
 }) => {
-    const days = [
-        { label: 'Sun', value: 'sunday' },
-        { label: 'Mon', value: 'monday' },
-        { label: 'Tue', value: 'tuesday' },
-        { label: 'Wed', value: 'wednesday' },
-        { label: 'Thu', value: 'thursday' },
-        { label: 'Fri', value: 'friday' },
-        { label: 'Sat', value: 'saturday' }
-    ];
+    const [localStartingDay, setLocalStartingDay] = useState(startingDay);
+    const [localVendorOptions, setLocalVendorOptions] = useState(vendorOptions);
 
     const addVendorOption = () => {
-        setVendorOptions([...vendorOptions, '']);
+        setLocalVendorOptions([...localVendorOptions, '']);
     }
 
     const removeVendorOption = (index) => {
-        const newOptions = [...vendorOptions];
+        const newOptions = [...localVendorOptions];
         newOptions.splice(index, 1);
-        setVendorOptions(newOptions);
+        setLocalVendorOptions(newOptions);
     }
 
     const updateVendorOptions = (index, value) => {
-        const newOptions = [...vendorOptions];
+        const newOptions = [...localVendorOptions];
         newOptions[index] = value;
-        setVendorOptions(newOptions);
+        setLocalVendorOptions(newOptions);
     }
 
-    const startingDayUnchanged = startingDay === getStartingDay();
-    const vendorOptionsUnchanged = isEqual(vendorOptions, getVendorOptions());
+    const startingDayUnchanged = startingDay === localStartingDay;
+    const vendorOptionsUnchanged = isEqual(vendorOptions, localVendorOptions);
     const allVendorOptionsFilled = vendorOptions.every(option => !!option);
+
+    useEffect(() => {
+        setLocalStartingDay(startingDay);
+    }, [startingDay]);
+
+    useEffect(() => {
+        setLocalVendorOptions(vendorOptions);
+    }, [vendorOptions]);
 
     return (
         <div className="settings-modal">
@@ -82,8 +90,8 @@ export const SettingsModal = ({
                         {days.map(({ label, value }) => (
                             <li
                                 key={value}
-                                className={`starting-day-option ${value === startingDay ? 'selected-day' : ''}`}
-                                onClick={() => setStartingDay(value)}
+                                className={`starting-day-option ${value === localStartingDay ? 'selected-day' : ''}`}
+                                onClick={() => setLocalStartingDay(value)}
                             >
                                 {label}
                             </li>
@@ -91,7 +99,7 @@ export const SettingsModal = ({
                     </ul>
                     <h4 className="section-heading">Vendors</h4>
                     <ul className="vendor-options">
-                        {vendorOptions.map((option, index) => (
+                        {localVendorOptions.map((option, index) => (
                             <VendorOptionItem
                                 key={index}
                                 originalOption={option}
@@ -108,7 +116,7 @@ export const SettingsModal = ({
                     <button className="cancel-btn" onClick={closeModal}>Cancel</button>
                     <button
                         className="action-btn"
-                        onClick={handleApply}
+                        onClick={() => handleApply(localStartingDay, localVendorOptions)}
                         disabled={startingDayUnchanged && (vendorOptionsUnchanged || !allVendorOptionsFilled)}>Apply</button>
                 </div>
             </div>
