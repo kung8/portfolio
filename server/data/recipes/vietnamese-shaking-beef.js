@@ -5,6 +5,7 @@ const shakingBeef4 = '../assets/Products/shaking-beef-4.jpeg';
 const shakingBeef5 = '../assets/Products/shaking-beef-5.jpeg';
 const shakingBeef6 = '../assets/Products/shaking-beef-6.jpeg';
 const shakingBeef7 = '../assets/Products/shaking-beef-7.jpeg';
+const shakingBeef8 = '../assets/Products/shaking-beef-8.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const { BEEF_RIBEYE_STEAK, GARLIC, BROWN_SUGAR, LIGHT_SOY_SAUCE, FISH_SAUCE, BLACK_PEPPER, WHITE_SUGAR, WHITE_VINEGAR, WATER, RED_ONION, ROMA_TOMATO, WHITE_RICE, VEGETABLE_OIL, OYSTER_SAUCE, BABY_ARUGULA } = require('./ingredients');
@@ -19,7 +20,7 @@ const PLATE_UP_VEGETABLES = 'Plate Up Vegetables';
 module.exports = {
     cardName: 'Shaking Beef',
     name: 'Vietnamese Shaking Beef (Bo Luc Lac)',
-    img: shakingBeef6,
+    img: shakingBeef7,
     recipeAuthors: ['Matthew Johnson'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -77,10 +78,10 @@ module.exports = {
         { step: 'Over high heat, add oil to a wok. Tilt to spread the oil so it coats the wok.', section: SECTIONS.COOK_BEEF },
         { step: 'Add beef in batches. Sear until all sides are charred and medium rare (about 3 to 5 minutes).', section: SECTIONS.COOK_BEEF, img: shakingBeef4 },
         { step: 'Remove beef. Continue with as many batches as needed.', section: SECTIONS.COOK_BEEF },
-        { step: 'Arrange beef on top of the bed of arugula and tomatoes.', section: SECTIONS.ASSEMBLE },
+        { step: 'Arrange beef on top of the bed of arugula and tomatoes.', section: SECTIONS.ASSEMBLE, img: shakingBeef5 },
         { step: 'Optionally cook the red onion sauce over medium heat for 1 to 2 minutes (by itself or with the beef).', section: SECTIONS.ASSEMBLE },
-        { step: 'Top with the red onion sauce.', section: SECTIONS.ASSEMBLE, img: shakingBeef5 },
-        { step: 'Enjoy this Vietnamese dish with rice!', section: SECTIONS.SERVE, img: shakingBeef7 },
+        { step: 'Top with the red onion sauce.', section: SECTIONS.ASSEMBLE, img: shakingBeef6 },
+        { step: 'Enjoy this Vietnamese dish with rice!', section: SECTIONS.SERVE, img: shakingBeef8 },
     ],
     notes: [
         { note: 'The original recipe calls for watercress, but it had too strong of a peppery flavor and it overpowered the dish. Baby arugula is a great substitute that still gives a peppery flavor but is more mild. Plus baby arugula is easier to find.' },
