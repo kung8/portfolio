@@ -60,7 +60,7 @@ export const GroceryListModalContent = ({
         }
         return sortBy === 'category' ? displayedIngredientsListByCategory() : displayedIngredientsListByDate();
         // eslint-disable-next-line
-    }, [groceryList.map(item => item.date + item.mealPlanningDateRange + item.category + item.checked).join(','), sortBy]);
+    }, [groceryList.map(item => item.date + item.mealPlanningDateRange + item.category + item.checked + item.vendor).join(','), sortBy]);
 
     const removeItem = (id) => {
         const newGroceryList = [...groceryList].filter(ingredient => ingredient.id !== id);

@@ -310,7 +310,7 @@ export const Recipe = ({ match }) => {
                 <AddToGroceryListModal
                     closeModal={handleAddToGroceryListModalClose}
                     initialType={categorizeRecipeType(item?.category?.[0])}
-                    onAdd={async (date, type, mealPlanningDateRange) => {
+                    onAdd={async (date, type, mealPlanningDateRange, vendor) => {
                         // Adds if it doesn't already exist inside the meal plan
                         const hasMealPlanItem = mealPlan.find(meal =>
                             meal?.recipeName === item.name &&
@@ -335,8 +335,15 @@ export const Recipe = ({ match }) => {
                                 const response = await getAsyncData('recipes', ingredientItem.linkId);
                                 return response?.data?.[0]?.ingredients?.map((ingredient) => getIngredientData(response.data[0].name, ingredient, ingredient.id ?? generateUUID()));
                             }
-                            
-                            return { ...ingredientItem, checked: false, date, mealPlanningDateRange, recipeYield: item?.yields?.unit ? formatYield({ amount: appliedYieldAmount, unit: item?.yields?.unit }) : undefined };
+
+                            return {
+                                ...ingredientItem,
+                                checked: false,
+                                date,
+                                mealPlanningDateRange,
+                                recipeYield: item?.yields?.unit ? formatYield({ amount: appliedYieldAmount, unit: item?.yields?.unit }) : undefined,
+                                vendor: vendor || '',
+                            };
                         })];
 
                         Promise.all(newIngredientsToAdd).then((newGroceryList) => {

@@ -16,6 +16,7 @@ export const GroceryListItem = ({
     recipeName,
     recipeYield,
     sortBy,
+    vendor
 }) => {
     const [inputValue, setInputValue] = useState(name);
     const [debouncedValue] = useDebounce(inputValue, 1000);
@@ -75,6 +76,7 @@ export const GroceryListItem = ({
                 )}
                 {sortBy === 'date' && category && <p className="recipe-category"><span>{category}</span></p>}
                 {sortBy === 'category' && date && <p className="recipe-date"><span>Needed on {dayjs(date).format(READABLE_SHORT_DATE)}</span></p>}
+                {vendor && (<p className="recipe-vendor"><span>Buy at {vendor}</span></p>)}
             </div>
         </div>
     )

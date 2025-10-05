@@ -6,4 +6,5 @@ export * from './format-yield';
 export * from './get-greeting';
 export * from './get-ingredient-data';
 export * from './get-starting-day';
+export * from './get-vendor-options';
 export * from './handle-modal-class';

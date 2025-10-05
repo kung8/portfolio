@@ -1,23 +1,23 @@
 import arrow from '../../../Assets/arrow.png';
 
-export const RecipeCategoryInput = ({
+export const RecipeDropdownInput = ({
     isDropdownOpen,
     handleDropdownSelection,
     handleDropdownToggle,
     label,
     options,
 }) => (
-    <div className="category-dropdown-container">
-        <li className="selected-category category-selector-item" onClick={handleDropdownToggle}>
+    <div className="recipe-dropdown-container">
+        <li className="selected-item dropdown-list-item" onClick={handleDropdownToggle}>
             <span>{label}</span>
             <img src={arrow} alt="arrow" className={`chevron-arrow ${isDropdownOpen ? 'is-open' : ''}`} />
         </li>
-        <ul className={`category-selector ${isDropdownOpen ? 'is-open' : ''}`}>
+        <ul className={`unordered-list-selector ${isDropdownOpen ? 'is-open' : ''}`}>
             {options.map((option) => (
                 <li
                     key={option}
                     value={option}
-                    className="category-selector-item"
+                    className="dropdown-list-item"
                     onClick={(event) => handleDropdownSelection(option, event)}
                 >
                     {option}

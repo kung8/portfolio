@@ -184,6 +184,11 @@
                 font-size: 12px;
                 color: theme.$sunshine;
             }
+
+            .recipe-vendor {
+                font-size: 12px;
+                color: theme.$coral;
+            }
         }
     }
 
@@ -407,7 +412,7 @@
     width: unquote("min(calc(100% - 16px), 600px)");
 
     &.edit-ingredient-modal {
-        height: 360px;
+        height: 415px;
     }
 
     &.edit-meal-plan-modal {
@@ -512,6 +517,50 @@
                 }
             }
         }
+
+        .vendor-options {
+            display: flex;
+            column-gap: 24px;
+            row-gap: 8px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .vendor-option {
+                list-style: none;
+                width: calc(50% - 12px);
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+
+                .vendor-name-input {
+                    width: 100%;
+                    padding: 8px 12px;
+                    font-size: 14px;
+                }
+
+                .remove-vendor-btn {
+                    height: 10px;
+                    width: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .add-vendor-btn-container {
+            display: flex;
+            justify-content: center;
+
+            .add-vendor-btn {
+                background: theme.$sunshine;
+                border: none;
+                cursor: pointer;
+                padding: 6px 12px;
+                border-radius: 16px;
+                color: theme.$white;
+                font-size: 12px;
+                width: fit-content;
+            }
+        }
     }
 
     .modal-content {
@@ -565,10 +614,10 @@
     }
 }
 
-.category-dropdown-container {
+.recipe-dropdown-container {
     position: relative;
 
-    .selected-category {
+    .selected-item {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -590,7 +639,7 @@
         }
     }
 
-    .category-selector {
+    .unordered-list-selector {
         display: none;
         position: absolute;
         max-height: 150px;
@@ -602,7 +651,7 @@
             z-index: 1;
         }
 
-        .category-selector-item {
+        .dropdown-list-item {
             padding: 6px 12px;
             background: theme.$aqua;
             border: 1.5px solid theme.$default;

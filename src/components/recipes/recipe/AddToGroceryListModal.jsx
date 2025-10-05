@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_SHORT_DATE } from '../constants';
 import { useGetRecipeCategories } from '../../../hooks/use-get-recipe-categories';
-import { categorizeRecipeType } from '../utils';
+import { categorizeRecipeType, getVendorOptions } from '../utils';
 import { RecipeDateInput } from '../grocery-list-modal/RecipeDateInput';
-import { RecipeCategoryInput } from '../grocery-list-modal/RecipeCategoryInput';
+import { RecipeDropdownInput } from '../grocery-list-modal/RecipeDropdownInput';
 import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
 import { getValidDateRangeError } from '../grocery-list-modal/getValidDateRangeError';
 
@@ -26,6 +26,10 @@ export const AddToGroceryListModal = ({
 
     const { data: categoryData } = useGetRecipeCategories();
     const categories = categoryData?.CATEGORIES ?? [];
+
+    const [vendor, setVendor] = useState('');
+    const [isVendorDropdownOpen, setIsVendorDropdownOpen] = useState(false);
+    const vendorOptions = getVendorOptions();
 
     useEffect(() => {
         if (initialType) {
@@ -49,7 +53,7 @@ export const AddToGroceryListModal = ({
                         title="Add to Grocery List"
                     />
                     <ModalBody>
-                        <RecipeCategoryInput
+                        <RecipeDropdownInput
                             isDropdownOpen={isTypeDropdownOpen}
                             handleDropdownToggle={() => setIsTypeDropdownOpen(!isTypeDropdownOpen)}
                             handleDropdownSelection={(option, e) => {
@@ -138,11 +142,22 @@ export const AddToGroceryListModal = ({
                                 }
                             />
                         </div>
+                        <RecipeDropdownInput
+                            isDropdownOpen={isVendorDropdownOpen}
+                            handleDropdownToggle={() => setIsVendorDropdownOpen(!isVendorDropdownOpen)}
+                            handleDropdownSelection={(option, e) => {
+                                e.stopPropagation();
+                                setVendor(option);
+                                setIsVendorDropdownOpen(false);
+                            }}
+                            label={vendor || 'Vendor (Optional)'}
+                            options={vendorOptions}
+                        />
                     </ModalBody>
                 </div>
                 <ModalFooter
                     actionLabel="Add"
-                    disabled={!(date || mealPlanningDateRange.length > 0) || !type}
+                    disabled={!(date || mealPlanningDateRange.length > 0 || vendor) || !type}
                     handleAction={() => {
                         const finalMealPlanningDateRange = [mealPlanningDateRange[0], mealPlanningDateRange[1]];
                         if (finalMealPlanningDateRange[0] && !finalMealPlanningDateRange[1]) {
@@ -151,7 +166,7 @@ export const AddToGroceryListModal = ({
                             finalMealPlanningDateRange[0] = finalMealPlanningDateRange[1];
                         }
 
-                        onAdd(date, type, finalMealPlanningDateRange);
+                        onAdd(date, type, finalMealPlanningDateRange, vendor);
                         closeModal();
                     }}
                     handleCancel={closeModal}

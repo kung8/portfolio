@@ -4,9 +4,10 @@ import { useGetIngredientCategories } from '../../../hooks';
 import { DATE_FORMAT, READABLE_SHORT_DATE } from '../constants';
 import { useRecipeType } from '../hooks/use-recipe-type';
 import { RecipeDateInput } from './RecipeDateInput';
-import { RecipeCategoryInput } from './RecipeCategoryInput';
+import { RecipeDropdownInput } from './RecipeDropdownInput';
 import { getValidDateRangeError } from './getValidDateRangeError';
 import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
+import { getVendorOptions } from '../utils';
 
 export const EditGroceryListItemModal = ({
     generateUUID,
@@ -29,8 +30,13 @@ export const EditGroceryListItemModal = ({
     const [isEndMealPlanningCalendarOpen, setIsEndMealPlanningCalendarOpen] = useState(false);
     const [mealPlanningDateRange, setMealPlanningDateRange] = useState(originalItemToEdit?.mealPlanningDateRange ?? []);
 
+    const [vendor, setVendor] = useState(itemToEdit?.vendor || '');
+    const [isVendorDropdownOpen, setIsVendorDropdownOpen] = useState(false);
+    const vendorOptions = getVendorOptions();
+
     useEffect(() => {
         setDate(itemToEdit.date);
+        setVendor(itemToEdit.vendor || '');
     }, [itemToEdit]);
 
     const { data: categories = [] } = useGetIngredientCategories();
@@ -51,6 +57,9 @@ export const EditGroceryListItemModal = ({
 
     const { getRecipe } = useRecipeType();
 
+    console.log({ itemToEdit });
+    
+
     return (
         <div className="edit-ingredient-modal">
             <ModalContent>
@@ -61,7 +70,7 @@ export const EditGroceryListItemModal = ({
                     />
                     <ModalBody>
                         <input className="edit-ingredient-input" placeholder="Ingredient Name" value={itemToEdit?.name} onChange={(e) => setItemToEdit({ ...itemToEdit, name: e.target.value })} />
-                        <RecipeCategoryInput
+                        <RecipeDropdownInput
                             isDropdownOpen={isCategoryDropdownOpen}
                             handleDropdownToggle={() => setIsCategoryDropdownOpen(!isCategoryDropdownOpen)}
                             handleDropdownSelection={(option, event) => {
@@ -152,6 +161,17 @@ export const EditGroceryListItemModal = ({
                                     'Ending range...'}
                             />
                         </div>
+                        <RecipeDropdownInput
+                            isDropdownOpen={isVendorDropdownOpen}
+                            handleDropdownToggle={() => setIsVendorDropdownOpen(!isVendorDropdownOpen)}
+                            handleDropdownSelection={(option, e) => {
+                                e.stopPropagation();
+                                setItemToEdit(prev => ({ ...prev, vendor: option }));
+                                setIsVendorDropdownOpen(false);
+                            }}
+                            label={vendor || 'Vendor (Optional)'}
+                            options={vendorOptions}
+                        />
                     </ModalBody>
                 </div>
                 <ModalFooter
@@ -226,6 +246,7 @@ export const EditGroceryListItemModal = ({
                     }}
                     handleCancel={closeEditIngredientModal}
                     disabled={(
+                        originalItemToEdit.vendor === itemToEdit.vendor &&
                         originalItemToEdit.name === itemToEdit.name &&
                         originalItemToEdit.category === itemToEdit.category &&
                         originalItemToEdit.recipeName === itemToEdit.recipeName &&
