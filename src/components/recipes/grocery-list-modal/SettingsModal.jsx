@@ -67,7 +67,7 @@ export const SettingsModal = ({
 
     const startingDayUnchanged = startingDay === localStartingDay;
     const vendorOptionsUnchanged = isEqual(vendorOptions, localVendorOptions);
-    const allVendorOptionsFilled = vendorOptions.every(option => !!option);
+    const allVendorOptionsFilled = localVendorOptions.every(option => !!option);
 
     useEffect(() => {
         setLocalStartingDay(startingDay);
