@@ -131,6 +131,7 @@ export const GroceryListModal = ({
         const originalItemEndingDate = ogItem?.mealPlanningDateRange?.[1];
         const originalDate = ogItem?.date;
         const originalRecipeName = ogItem?.recipeName;
+        const originalVendor = ogItem?.vendor;
 
         setGroceryList(prev => {
             const newGroceryList = prev.map((item) => {
@@ -139,9 +140,10 @@ export const GroceryListModal = ({
                     !!item?.recipeName && // don't update the ones that don't have a recipe name
                     originalItemStartingDate === item?.mealPlanningDateRange?.[0] &&
                     originalItemEndingDate === item?.mealPlanningDateRange?.[1] &&
-                    originalDate === item?.date;
+                    originalDate === item?.date &&
+                    originalVendor === item?.vendor;
                 if (matches) {
-                    return { ...item, mealPlanningDateRange: newItemValue?.mealPlanningDateRange, date: newItemValue?.date, recipeName: newItemValue?.recipeName };
+                    return { ...item, mealPlanningDateRange: newItemValue?.mealPlanningDateRange, date: newItemValue?.date, recipeName: newItemValue?.recipeName, vendor: newItemValue?.vendor };
                 }
                 return item;
             });
@@ -254,13 +256,14 @@ export const GroceryListModal = ({
                         const originalItemStartingDate = originalItem?.mealPlanningDateRange?.[0];
                         const originalItemEndingDate = originalItem?.mealPlanningDateRange?.[1];
 
-                        // check to see if there are any additional ingredients for the same recipe name, date, and mealPlanningDateRange
+                        // check to see if there are any additional ingredients for the same recipe name, date, mealPlanningDateRange and vendor (if applicable)
                         const hasExistingGroceryListItem = groceryList.find(item =>
                             originalItem.recipeName === item.recipeName &&
                             !!item.recipeName && // don't update the ones that don't have a recipe name
                             originalItemStartingDate === item?.mealPlanningDateRange?.[0] &&
                             originalItemEndingDate === item?.mealPlanningDateRange?.[1] &&
-                            originalItem.name !== item.name
+                            originalItem.name !== item.name && 
+                            originalItem.vendor === item.vendor
                         );
                         if (hasExistingGroceryListItem) {
                             setIsApplyToIngredientsInPlannedMealModalOpen(true);
