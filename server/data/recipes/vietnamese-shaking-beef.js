@@ -78,13 +78,17 @@ module.exports = {
         { step: 'Add beef in batches. Sear until all sides are charred and medium rare (about 3 to 5 minutes).', section: SECTIONS.COOK_BEEF, img: shakingBeef4 },
         { step: 'Remove beef. Continue with as many batches as needed.', section: SECTIONS.COOK_BEEF },
         { step: 'Arrange beef on top of the bed of arugula and tomatoes.', section: SECTIONS.ASSEMBLE },
-        { step: 'Optionally cook the red onion sauce over medium heat for 1 to 2 minutes.', section: SECTIONS.ASSEMBLE },
+        { step: 'Optionally cook the red onion sauce over medium heat for 1 to 2 minutes (by itself or with the beef).', section: SECTIONS.ASSEMBLE },
         { step: 'Top with the red onion sauce.', section: SECTIONS.ASSEMBLE, img: shakingBeef5 },
         { step: 'Enjoy this Vietnamese dish with rice!', section: SECTIONS.SERVE, img: shakingBeef7 },
     ],
     notes: [
         { note: 'The original recipe calls for watercress, but it had too strong of a peppery flavor and it overpowered the dish. Baby arugula is a great substitute that still gives a peppery flavor but is more mild. Plus baby arugula is easier to find.' },
         { note: 'The red onion sauce was not cooked in the original recipe. I found that the raw onion flavor was too strong and harsh. I am planning on cooking the sauce slightly to mellow out the flavor and makes it more palatable.' },
+        { note: 'Marinating the beef at room temperature instead of in the fridge allows the beef to cook more evenly and get a better sear.' },
+        { note: 'Make sure to sear the beef in batches. Overcrowding the wok will cause the beef to steam instead of sear.' },
+        { note: 'Let the beef rest for a few minutes before eating so the juices can redistribute.' },
+        { note: 'You can add the red onion sauce to the beef while it is still in the wok to add more flavor and to slightly cook the sauce.' },
     ],
     store: [
         {
