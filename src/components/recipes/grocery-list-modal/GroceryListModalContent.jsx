@@ -107,7 +107,7 @@ export const GroceryListModalContent = ({
                 <EmptyGroceryListItem generateUUID={generateUUID} setGroceryList={setGroceryList} updateLocalStorage={updateLocalStorage} />
                 {displayedList.map(([category, ingredients], index) => (
                     <div key={category + '-' + index} className="category-ingredient-container">
-                        <h6 className={`${sortBy === 'date' ? 'ingredient-date' : 'ingredient-category'}`}>{category}</h6>
+                        <h6 className={`${sortBy === 'date' ? 'ingredient-date' : sortBy === 'vendor' ? 'ingredient-vendor' : 'ingredient-category'}`}>{category}</h6>
                         {ingredients.map((ingredient, index) => (
                             <GroceryListItem
                                 key={ingredient.id + '-' + index + '-' + ingredient.name + '-' + ingredient.checked + '-' + ingredient.mealPlanningDateRange + '-' + ingredient.category + '-' + ingredient.date}
