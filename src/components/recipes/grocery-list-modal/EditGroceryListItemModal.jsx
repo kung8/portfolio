@@ -57,9 +57,6 @@ export const EditGroceryListItemModal = ({
 
     const { getRecipe } = useRecipeType();
 
-    console.log({ itemToEdit });
-    
-
     return (
         <div className="edit-ingredient-modal">
             <ModalContent>
