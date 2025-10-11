@@ -19,13 +19,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    
-    // Unused variables and imports detection
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "exactOptionalPropertyTypes": false,
-    
-    // Additional helpful settings
     "noImplicitReturns": true,
     "noImplicitThis": false,
     "noImplicitAny": false
