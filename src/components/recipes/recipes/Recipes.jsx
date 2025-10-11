@@ -350,7 +350,7 @@ export const Recipes = ({ history }) => {
                             groupedBy === GROUPED_BY_INGREDIENTS_COUNT_ASCENDING ||
                             groupedBy === GROUPED_BY_INGREDIENTS_COUNT_DESCENDING ? groupedFilteredRecipes.map(([genre, recipes]) => {
                                 let genreLabel = genre;
-                                if (!!selectedFilters.ingredients?.length) {
+                                if (selectedFilters.ingredients?.length) {
                                     const totalSearchIngredientsCount = selectedFilters.ingredients?.length;
                                     genreLabel = `${genre} / ${totalSearchIngredientsCount} matching ingredients`;
                                 } else if (groupedBy === GROUPED_BY_INGREDIENTS_COUNT_ASCENDING || groupedBy === GROUPED_BY_INGREDIENTS_COUNT_DESCENDING) {
