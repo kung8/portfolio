@@ -1,11 +1,11 @@
 const smores = '../assets/Products/smores.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, YIELD_UNITS, TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TIME_UNITS, YIELD_UNITS } = require('./constants');
 const {
-    BAKING_SHEET, 
-    GRAHAM_CRACKER,
-    MARSHMALLOW,
-    HERSHEY_CHOCOLATE_BAR,
     ALUMINUM_FOIL,
+    BAKING_SHEET,
+    GRAHAM_CRACKER,
+    HERSHEY_CHOCOLATE_BAR,
+    MARSHMALLOW,
     OVEN,
 } = require('./ingredients');
 

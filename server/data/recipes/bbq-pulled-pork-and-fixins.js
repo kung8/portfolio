@@ -13,22 +13,22 @@ const plate1 = '../assets/Products/bbq-pulled-pork-full-plate-1.jpeg';
 const plate2 = '../assets/Products/bbq-pulled-pork-full-plate-2.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
-    PORK_ROAST,
-    VEGETABLE_OIL,
-    BBQ_SAUCE,
     APPLE_CIDER_VINEGAR,
-    CHICKEN_BROTH,
-    BROWN_SUGAR,
-    YELLOW_MUSTARD,
-    WORCESTERSHIRE_SAUCE,
-    CHILI_POWDER,
-    YELLOW_ONION,
-    GARLIC,
-    THYME,
+    BBQ_SAUCE,
     BRIOCHE_BUNS,
-    SLOW_COOKER_LINER,
+    BROWN_SUGAR,
+    CHICKEN_BROTH,
+    CHILI_POWDER,
     FORK,
+    GARLIC,
+    PORK_ROAST,
     SLOW_COOKER,
+    SLOW_COOKER_LINER,
+    THYME,
+    VEGETABLE_OIL,
+    WORCESTERSHIRE_SAUCE,
+    YELLOW_MUSTARD,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 module.exports = {

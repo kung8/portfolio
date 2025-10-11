@@ -15,16 +15,16 @@ const zoomed = '../assets/Products/chocolate-chip-cookies-plated-zoomed.jpeg';
 
 const { CATEGORIES, SECTIONS, GENRES, METHODS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER } = require("./constants");
 const {
-    UNSALTED_BUTTER,
-    WHITE_SUGAR,
-    EGG,
-    VANILLA_EXTRACT,
+    ALL_PURPOSE_FLOUR,
     BAKING_SODA,
+    BROWN_SUGAR,
+    EGG,
     HOT_WATER,
     SALT,
-    ALL_PURPOSE_FLOUR,
     SEMI_SWEET_CHOCOLATE_CHIPS,
-    BROWN_SUGAR,
+    UNSALTED_BUTTER,
+    VANILLA_EXTRACT,
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 module.exports = {

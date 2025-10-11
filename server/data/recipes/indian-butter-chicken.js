@@ -12,29 +12,29 @@ const simmering = '../assets/Products/indian-butter-chicken-simmering.jpeg';
 const spices = '../assets/Products/indian-butter-chicken-spices.jpeg';
 const paste = '../assets/Products/indian-butter-chicken-tomato-paste.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    VEGETABLE_OIL,
-    UNSALTED_BUTTER,
-    YELLOW_ONION,
-    GINGER,
-    GARLIC,
-    TOMATO_PASTE,
-    CHILI_POWDER,
-    MUSTARD_SEED,
-    GARAM_MASALA,
-    CUMIN,
-    SALT,
     BLACK_PEPPER,
+    BONELESS_AND_SKINLESS_CHICKEN_BREAST,
+    CHILI_POWDER,
+    CUMIN,
+    FRYING_PAN,
+    GARAM_MASALA,
+    GARLIC,
+    GINGER,
     HEAVY_CREAM,
     JASMINE_RICE,
-    BONELESS_AND_SKINLESS_CHICKEN_BREAST,
-    STOVE,
-    FRYING_PAN,
-    MEDIUM_BOWL,
-    SPATULA,
     MEASURING_SPOONS,
+    MEDIUM_BOWL,
     MIXING_BOWL,
+    MUSTARD_SEED,
+    SALT,
+    SPATULA,
+    STOVE,
+    TOMATO_PASTE,
+    UNSALTED_BUTTER,
+    VEGETABLE_OIL,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 module.exports = {

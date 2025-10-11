@@ -3,17 +3,17 @@ const pan = '../assets/Products/brownies-pan.jpeg';
 const zoomed = '../assets/Products/brownies-zoomed.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
-    MIXING_BOWL,
-    UNSALTED_BUTTER,
-    WHITE_SUGAR,
-    SALT,
-    VANILLA_EXTRACT,
-    EGG,
     ALL_PURPOSE_FLOUR,
-    COCOA_POWDER,
-    OVEN,
     BAKING_PAN,
+    COCOA_POWDER,
+    EGG,
+    MIXING_BOWL,
+    OVEN,
+    SALT,
     SPATULA,
+    UNSALTED_BUTTER,
+    VANILLA_EXTRACT,
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 module.exports = {

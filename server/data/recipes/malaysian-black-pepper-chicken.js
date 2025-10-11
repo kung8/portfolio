@@ -9,26 +9,26 @@ const raw = '../assets/Products/black-pepper-chicken-raw-chicken-in-pan.jpeg';
 const sauce = '../assets/Products/black-pepper-chicken-sauce.jpeg';
 const sauted = '../assets/Products/black-pepper-chicken-sauted-fragrant.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    MIXING_BOWL,
+    BLACK_PEPPER,
     CHICKEN_BREAST,
-    SHALLOT,
+    CILANTRO,
+    CORNSTARCH,
     GARLIC,
     GINGER,
-    BLACK_PEPPER,
-    OYSTER_SAUCE,
-    SWEET_SOY_SAUCE,
-    CORNSTARCH,
-    VEGETABLE_OIL,
     JASMINE_RICE,
-    CILANTRO,
-    WHITE_SUGAR,
-    WATER,
-    STOVE,
-    WOK,
-    SPATULA,
     MEDIUM_BOWL,
+    MIXING_BOWL,
+    OYSTER_SAUCE,
+    SHALLOT,
+    SPATULA,
+    STOVE,
+    SWEET_SOY_SAUCE,
+    VEGETABLE_OIL,
+    WATER,
+    WHITE_SUGAR,
+    WOK,
 } = require('./ingredients');
 
 module.exports = {

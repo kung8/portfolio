@@ -5,8 +5,8 @@ const potatoes4 = '../assets/Products/mash-potatoes-4.jpeg';
 const potatoes5 = '../assets/Products/mash-potatoes-5.jpeg';
 const potatoes6 = '../assets/Products/mash-potatoes-6.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { YUKON_GOLD_POTATO, UNSALTED_BUTTER, MILK, SALT, BLACK_PEPPER, SOUR_CREAM, STOVE, LARGE_POT, COLANDER, MASHER } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BLACK_PEPPER, COLANDER, LARGE_POT, MASHER, MILK, SALT, SOUR_CREAM, STOVE, UNSALTED_BUTTER, YUKON_GOLD_POTATO } = require('./ingredients');
 
 const POTATOES_SECTION = 'Potatoes';
 const LIQUIDS_SECTION = 'Liquids';

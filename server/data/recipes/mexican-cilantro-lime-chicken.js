@@ -6,23 +6,23 @@ const rack = '../assets/Products/mexican-cilantro-lime-chicken-raw-on-baking-rac
 const set1 = '../assets/Products/mexican-cilantro-lime-chicken-plated-set-1.jpeg';
 const set2 = '../assets/Products/mexican-cilantro-lime-chicken-plated-set-2.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    BAKING_SHEET,
-    CHICKEN_WINGS,
-    CILANTRO,
-    LIME,
-    GARLIC,
     AVOCADO_OIL,
-    CHILI_POWDER,
-    SALT,
+    BAKING_SHEET,
     BLACK_PEPPER,
-    CAYENNE_PEPPER,
-    ZIPLOC_BAG,
-    COOLING_RACK,
-    TONGS,
     BLENDER,
+    CAYENNE_PEPPER,
+    CHICKEN_WINGS,
+    CHILI_POWDER,
+    CILANTRO,
+    COOLING_RACK,
+    GARLIC,
+    LIME,
     OVEN,
+    SALT,
+    TONGS,
+    ZIPLOC_BAG,
 } = require('./ingredients');
 
 module.exports = {

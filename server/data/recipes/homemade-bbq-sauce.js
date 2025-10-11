@@ -2,8 +2,8 @@ const sauce1 = '../assets/Products/bbq-sauce-1.jpeg';
 const sauce2 = '../assets/Products/bbq-sauce-2.jpeg';
 const sauce3 = '../assets/Products/bbq-sauce-3.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { KETCHUP, BROWN_SUGAR, PAPRIKA, GARLIC_POWDER, SALT, DIJON_MUSTARD, WORCESTERSHIRE_SAUCE, WHITE_VINEGAR, RICE_WINE_VINEGAR, WATER, STOVE, SAUCEPAN } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BROWN_SUGAR, DIJON_MUSTARD, GARLIC_POWDER, KETCHUP, PAPRIKA, RICE_WINE_VINEGAR, SALT, SAUCEPAN, STOVE, WATER, WHITE_VINEGAR, WORCESTERSHIRE_SAUCE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Homemade BBQ Sauce',

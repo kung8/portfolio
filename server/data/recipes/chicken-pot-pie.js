@@ -8,24 +8,24 @@ const pie7 = '../assets/Products/chicken-pot-pie-7.jpeg';
 const pie8 = '../assets/Products/chicken-pot-pie-8.jpeg';
 const pie9 = '../assets/Products/chicken-pot-pie-9.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    UNSALTED_BUTTER,
     ALL_PURPOSE_FLOUR,
-    YELLOW_ONION,
-    SALT,
     BLACK_PEPPER,
-    CHICKEN_BROTH,
-    MILK,
-    FROZEN_PEAS,
-    FROZEN_CARROTS,
     CHICKEN_BREAST,
-    REFRIGERATED_PIE_CRUST,
-    STOVE,
-    OVEN,
-    LARGE_POT,
+    CHICKEN_BROTH,
+    FROZEN_CARROTS,
+    FROZEN_PEAS,
     LARGE_PAN,
+    LARGE_POT,
+    MILK,
+    OVEN,
     PIE_PAN,
+    REFRIGERATED_PIE_CRUST,
+    SALT,
+    STOVE,
+    UNSALTED_BUTTER,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 module.exports = {

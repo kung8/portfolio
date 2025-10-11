@@ -8,24 +8,24 @@ const raisin = '../assets/Products/oatmeal-raisin-cookies-raisins-added.jpeg';
 const raw = '../assets/Products/oatmeal-raisin-cookies-raw-pan.jpeg';
 const chocolate = '../assets/Products/oatmeal-raisin-cookies-with-chocolate-chip.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    MIXING_BOWL,
     ALL_PURPOSE_FLOUR,
-    BAKING_SODA,
     BAKING_POWDER,
-    SALT,
-    WHITE_SUGAR,
+    BAKING_SODA,
     BROWN_SUGAR,
-    UNSALTED_BUTTER,
     EGG,
-    VANILLA_EXTRACT,
-    STEEL_OATS,
-    RAISINS,
-    SEMI_SWEET_CHOCOLATE_CHIPS,
+    MIXING_BOWL,
     OVEN,
-    SPATULA,
+    RAISINS,
+    SALT,
+    SEMI_SWEET_CHOCOLATE_CHIPS,
     SILICON_BAKING_MAT,
+    SPATULA,
+    STEEL_OATS,
+    UNSALTED_BUTTER,
+    VANILLA_EXTRACT,
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 module.exports = {

@@ -4,8 +4,8 @@ const bruschetta3 = '../assets/Products/bruschetta-3.jpeg';
 const bruschetta4 = '../assets/Products/bruschetta-4.jpeg';
 const bruschetta5 = '../assets/Products/bruschetta-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BAKING_SHEET, OLIVE_OIL, CHERRY_TOMATO, BASIL_LEAF, GARLIC, SHALLOT, BALSAMIC_VINEGAR, SALT, BLACK_PEPPER, BAGUETTE, MEDIUM_BOWL, OVEN } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BAGUETTE, BAKING_SHEET, BALSAMIC_VINEGAR, BASIL_LEAF, BLACK_PEPPER, CHERRY_TOMATO, GARLIC, MEDIUM_BOWL, OLIVE_OIL, OVEN, SALT, SHALLOT } = require('./ingredients');
 
 const BAGUETTE_SECTION = 'Baguette';
 const BRUSCHETTA_SECTION = 'Bruschetta';

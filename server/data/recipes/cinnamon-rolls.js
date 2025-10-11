@@ -23,8 +23,8 @@ const frosting4 = '../assets/Products/cinnamon-rolls-frosting-4.jpeg';
 const plated3 = '../assets/Products/cinnamon-rolls-plated-3.jpeg';
 const plated5 = '../assets/Products/cinnamon-rolls-plated-5.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { YEAST, WHITE_SUGAR, EGG, EGG_YOLK, UNSALTED_BUTTER, BREAD_FLOUR, SALT, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, POWDERED_SUGAR, VANILLA_EXTRACT, MILK } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BREAD_FLOUR, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, EGG, EGG_YOLK, MILK, POWDERED_SUGAR, SALT, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR, YEAST } = require('./ingredients');
 
 module.exports = {
     cardName: 'Cinnamon Rolls',

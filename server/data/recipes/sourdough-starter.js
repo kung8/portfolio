@@ -7,7 +7,7 @@ const mix = '../assets/Products/sourdough-starter-feeding-mix.jpeg';
 const mixed = '../assets/Products/sourdough-starter-feeding-mixed.jpeg';
 
 const { ALL_PURPOSE_FLOUR, WATER } = require('./ingredients');
-const { INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { INGREDIENT_UNITS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
 
 const CREATING_STARTER = 'Creating Starter';
 const FEEDING_STARTER = 'Feeding Starter';

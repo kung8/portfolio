@@ -5,8 +5,8 @@ const grilled4 = '../assets/Products/grilled-cheese-sandwich-4.jpeg';
 const grilled5 = '../assets/Products/grilled-cheese-sandwich-5.jpeg';
 const grilled6 = '../assets/Products/grilled-cheese-sandwich-6.jpeg';
 const grilled7 = '../assets/Products/grilled-cheese-sandwich-7.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT } = require('./constants');
-const { BREAD, UNSALTED_BUTTER, CHEDDAR_CHEESE, STOVE, FRYING_PAN } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BREAD, CHEDDAR_CHEESE, FRYING_PAN, STOVE, UNSALTED_BUTTER } = require('./ingredients');
 
 const GRILL_CHEESE = 'Grill Cheese';
 

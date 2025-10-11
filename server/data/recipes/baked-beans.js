@@ -10,8 +10,8 @@ const seasoning = '../assets/Products/baked-beans-seasoning.jpeg';
 const soaking = '../assets/Products/baked-beans-soaking.jpeg';
 const plateZoomed = '../assets/Products/baked-beans-full-plate-zoomed.jpeg';
 const { wip } = require('./apple-dump-cake');
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { SALT, BAKING_SODA, BACON, YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR, DRY_NAVY_BEAN, LARGE_POT, DUTCH_OVEN_POT, SPATULA, STOVE, OVEN } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { APPLE_CIDER_VINEGAR, BACON, BAKING_SODA, BROWN_SUGAR, DRY_NAVY_BEAN, DUTCH_OVEN_POT, KETCHUP, LARGE_POT, MAPLE_SYRUP, OVEN, SALT, SPATULA, STOVE, YELLOW_ONION } = require('./ingredients');
 
 const BEANS = 'Beans';
 

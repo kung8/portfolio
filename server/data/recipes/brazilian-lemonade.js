@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
-const { LIME, WATER, WHITE_SUGAR, SWEETENED_CONDENSED_MILK, ICE, BLENDER, PITCHER } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BLENDER, ICE, LIME, PITCHER, SWEETENED_CONDENSED_MILK, WATER, WHITE_SUGAR } = require('./ingredients');
 
 const BLENDED_SECTION = 'Blended';
 const SWEETENER_SECTION = 'Sweetener';

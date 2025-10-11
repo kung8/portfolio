@@ -6,8 +6,8 @@ const mcgriddle5 = '../assets/Products/mcgriddle-5.jpeg';
 const mcgriddle6 = '../assets/Products/mcgriddle-6.jpeg';
 const mcgriddle7 = '../assets/Products/mcgriddle-7.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { MIXING_BOWL, PANCAKE_MIX, EGG, SAUSAGE_PATTY, AMERICAN_CHEESE, SPATULA, GRIDDLE, FRYING_PAN, MASON_JAR_LID } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { AMERICAN_CHEESE, EGG, FRYING_PAN, GRIDDLE, MASON_JAR_LID, MIXING_BOWL, PANCAKE_MIX, SAUSAGE_PATTY, SPATULA } = require('./ingredients');
 
 const MCGRIDDLE_PANCAKE_SECTION = 'McGriddle Pancake';
 const COOK_PANCAKE = 'Cook Pancake';

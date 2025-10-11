@@ -7,16 +7,16 @@ const plated = '../assets/Products/lemon-chicken-on-lettuce-plated.jpeg';
 const raw = '../assets/Products/lemon-chicken-on-lettuce-raw-chicken.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
-    VEGETABLE_OIL,
-    CHICKEN_BREAST,
-    LEMON_JUICE,
-    LIGHT_SOY_SAUCE,
-    CORNSTARCH,
-    LETTUCE,
-    SALT,
     BLACK_PEPPER,
-    WATER,
+    CHICKEN_BREAST,
+    CORNSTARCH,
+    LEMON_JUICE,
+    LETTUCE,
+    LIGHT_SOY_SAUCE,
+    SALT,
     STOVE,
+    VEGETABLE_OIL,
+    WATER,
     WOK,
 } = require('./ingredients');
 

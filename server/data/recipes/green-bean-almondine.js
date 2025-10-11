@@ -5,20 +5,20 @@ const cooked = '../assets/Products/green-bean-almondine-cooked.jpeg';
 const bath = '../assets/Products/green-bean-almondine-ice-bath.jpeg';
 const ice = '../assets/Products/green-bean-almondine-ice-water.jpeg';
 const plate = '../assets/Products/green-bean-almondine-plate.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    BLACK_PEPPER,
+    FRENCH_GREEN_BEAN,
+    ICE,
+    LEMON_JUICE,
+    LEMON_ZEST,
     MIXING_BOWL,
     SALT,
-    FRENCH_GREEN_BEAN,
-    UNSALTED_BUTTER,
-    SLICED_ALMONDS,
-    SHALLOT,
-    LEMON_ZEST,
-    LEMON_JUICE,
-    BLACK_PEPPER,
-    ICE,
-    STOVE,
     SAUCEPAN,
+    SHALLOT,
+    SLICED_ALMONDS,
+    STOVE,
+    UNSALTED_BUTTER,
 } = require('./ingredients');
 
 module.exports = {

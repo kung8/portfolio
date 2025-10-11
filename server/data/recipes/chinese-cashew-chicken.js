@@ -9,29 +9,29 @@ const sauce = '../assets/Products/cashew-chicken-sauce.jpeg';
 const cashews = '../assets/Products/cashew-chicken-veggies-with-cashew.jpeg';
 const veggies = '../assets/Products/cashew-chicken-veggies.jpeg';
 const withSauce = '../assets/Products/cashew-chicken-with-sauce.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    ASIAN_CHILI_GARLIC_SAUCE,
+    BLACK_PEPPER,
     BONELESS_AND_SKINLESS_CHICKEN_BREAST,
     BROCCOLI,
     CASHEWS,
     CORNSTARCH,
     EDAMAME,
-    GROUND_GINGER,
     GREEN_ONION,
+    GROUND_GINGER,
     HONEY,
+    LARGE_BOWL,
+    LIGHT_SOY_SAUCE,
+    MEDIUM_BOWL,
     OLIVE_OIL,
     RED_BELL_PEPPER,
     RICE_WINE_VINEGAR,
     SALT,
     SESAME_OIL,
     SESAME_SEEDS,
-    ASIAN_CHILI_GARLIC_SAUCE,
-    LIGHT_SOY_SAUCE,
-    BLACK_PEPPER,
     STOVE,
-    MEDIUM_BOWL,
     WOK,
-    LARGE_BOWL,
 } = require('./ingredients');
 
 module.exports = {

@@ -1,6 +1,6 @@
 const lunchables = '../assets/Products/fancy-lunchables.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT } = require("./constants");
-const { BUTTER_PICKLE_CHIPS, CHEDDAR_CHEESE, CRACKERS, COOKED_HAM, LETTUCE, ROMA_TOMATO } = require('./ingredients');
+const { BUTTER_PICKLE_CHIPS, CHEDDAR_CHEESE, COOKED_HAM, CRACKERS, LETTUCE, ROMA_TOMATO } = require('./ingredients');
 
 module.exports = {
     cardName: 'Fancy Lunchables',

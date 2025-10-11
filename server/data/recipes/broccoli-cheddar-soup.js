@@ -6,26 +6,26 @@ const sauteed = '../assets/Products/broccoli-cheddar-soup-sauteed-onion.jpeg';
 const simmering1 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-1.jpeg';
 const simmering2 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-2.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    ALL_PURPOSE_FLOUR,
+    BACON_BITS,
+    BLACK_PEPPER,
+    BREAD_BOWLS,
+    BROCCOLI,
+    CARROT,
+    CHEDDAR_CHEESE,
+    CHICKEN_BROTH,
+    GREEN_ONION,
+    HALF_AND_HALF,
+    NUTMEG,
+    SALT,
+    SAUCEPAN,
+    SOUR_CREAM,
+    SPATULA,
+    STOVE,
     UNSALTED_BUTTER,
     YELLOW_ONION,
-    ALL_PURPOSE_FLOUR,
-    CHICKEN_BROTH,
-    BROCCOLI,
-    NUTMEG,
-    CHEDDAR_CHEESE,
-    SALT,
-    BLACK_PEPPER,
-    SOUR_CREAM,
-    GREEN_ONION,
-    BACON_BITS,
-    HALF_AND_HALF,
-    CARROT,
-    BREAD_BOWLS,
-    STOVE,
-    SAUCEPAN,
-    SPATULA,
 } = require('./ingredients');
 
 module.exports = {

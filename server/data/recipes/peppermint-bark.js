@@ -11,8 +11,8 @@ const plated2 = '../assets/Products/peppermint-bark-plated-2.jpeg';
 const plated4 = '../assets/Products/peppermint-bark-plated-4.jpeg';
 const set = '../assets/Products/peppermint-bark-set-chocolate.jpeg';
 const white = '../assets/Products/peppermint-bark-white-chocolate-chips.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BAKING_SHEET, SEMI_SWEET_CHOCOLATE_CHIPS, WHITE_CHOCOLATE_CHIPS, PEPPERMINT_EXTRACT, CANDY_CANES, MICROWAVE, MEDIUM_BOWL, PARCHMENT_PAPER, SPATULA, KNIFE } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BAKING_SHEET, CANDY_CANES, KNIFE, MEDIUM_BOWL, MICROWAVE, PARCHMENT_PAPER, PEPPERMINT_EXTRACT, SEMI_SWEET_CHOCOLATE_CHIPS, SPATULA, WHITE_CHOCOLATE_CHIPS } = require('./ingredients');
 
 module.exports = {
     cardName: 'Peppermint Bark',

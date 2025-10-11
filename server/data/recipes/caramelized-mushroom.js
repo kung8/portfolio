@@ -4,15 +4,15 @@ const cooking = '../assets/Products/caramelized-mushroom-cooking.jpeg';
 const raw = '../assets/Products/caramelized-mushroom-raw.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
-    MUSHROOM,
-    UNSALTED_BUTTER,
-    BROWN_SUGAR,
-    LIGHT_SOY_SAUCE,
-    SALT,
-    BLACK_PEPPER,
     BALSAMIC_VINEGAR,
-    STOVE,
+    BLACK_PEPPER,
+    BROWN_SUGAR,
     FRYING_PAN,
+    LIGHT_SOY_SAUCE,
+    MUSHROOM,
+    SALT,
+    STOVE,
+    UNSALTED_BUTTER,
 } = require('./ingredients');
 
 module.exports = {

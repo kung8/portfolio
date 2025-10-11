@@ -20,15 +20,15 @@ const mousse19 = '../assets/Products/chocolate-mousse-19.jpeg';
 const mousse20 = '../assets/Products/chocolate-mousse-20.jpeg';
 const mousse21 = '../assets/Products/chocolate-mousse-21.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    DARK_COOKING_CHOCOLATE,
     EGG,
+    HEAVY_CREAM,
+    RASPBERRY,
+    SEMI_SWEET_CHOCOLATE_CHIPS,
     UNSALTED_BUTTER,
     WHITE_SUGAR,
-    HEAVY_CREAM,
-    DARK_COOKING_CHOCOLATE,
-    SEMI_SWEET_CHOCOLATE_CHIPS,
-    RASPBERRY,
 } = require('./ingredients');
 
 const CHOCOLATE = 'Chocolate';

@@ -4,21 +4,21 @@ const rawInPan = '../assets/Products/bbq-chicken-wings-raw-in-pan.jpeg';
 const pan = '../assets/Products/bbq-chicken-wings-in-pan.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
-    CHICKEN_DRUMETTES,
     BAKING_SODA,
-    ROOT_BEER,
-    UNSALTED_BUTTER,
-    SALT,
-    PAPRIKA,
     BLACK_PEPPER,
+    CHICKEN_DRUMETTES,
     GARLIC,
-    LIGHT_SOY_SAUCE,
     HONEY,
     KETCHUP,
-    YELLOW_MUSTARD,
     LARGE_BOWL,
     LARGE_PAN,
+    LIGHT_SOY_SAUCE,
+    PAPRIKA,
+    ROOT_BEER,
+    SALT,
     STOVE,
+    UNSALTED_BUTTER,
+    YELLOW_MUSTARD,
 } = require('./ingredients');
 
 module.exports = {

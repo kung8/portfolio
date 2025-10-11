@@ -5,8 +5,8 @@ const rosemary = '../assets/Products/rosemary-lemonade-rosemary.jpeg';
 const sugar = '../assets/Products/rosemary-lemonade-sugar.jpeg';
 const sweet = '../assets/Products/rosemary-lemonade-sweet-mix.jpeg';
 const water = '../assets/Products/rosemary-lemonade-water.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { FRESH_ROSEMARY, WHITE_SUGAR, HONEY, LEMON_JUICE, ICE, LEMON, WATER } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { FRESH_ROSEMARY, HONEY, ICE, LEMON, LEMON_JUICE, WATER, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
     cardName: 'Rosemary Lemonade',

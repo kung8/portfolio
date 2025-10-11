@@ -7,8 +7,8 @@ const mixed = '../assets/Products/popcorn-balls-unmelted-mixed.jpeg';
 const unmeltedZoomed = '../assets/Products/popcorn-balls-unmelted-zoomed.jpeg';
 const baggiesZoomed = '../assets/Products/popcorn-ball-in-baggies-zoomed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { POPCORN, CORN_SYRUP, UNSALTED_BUTTER, POWDERED_SUGAR, MINI_MARSHMALLOWS, COOKING_SPRAY, WATER } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { COOKING_SPRAY, CORN_SYRUP, MINI_MARSHMALLOWS, POPCORN, POWDERED_SUGAR, UNSALTED_BUTTER, WATER } = require('./ingredients');
 
 module.exports = {
     cardName: 'Popcorn Balls',

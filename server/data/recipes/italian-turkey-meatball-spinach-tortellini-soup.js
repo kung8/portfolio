@@ -12,26 +12,26 @@ const softened = '../assets/Products/turkey-meatball-spinach-tortellini-soup-sof
 const spinach = '../assets/Products/turkey-meatball-spinach-tortellini-soup-spinach.jpeg';
 const ladle = '../assets/Products/turkey-meatball-spinach-tortellini-soup-zoomed-ladle.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    GROUND_TURKEY,
+    BABY_SPINACH,
+    BLACK_PEPPER,
     BREADCRUMBS,
-    PARMESAN_CHEESE,
-    PARSLEY,
+    CARROT,
+    CELERY,
+    CHICKEN_BROTH,
     EGG,
     GARLIC,
-    SALT,
-    UNSALTED_BUTTER,
-    CELERY,
-    YELLOW_ONION,
-    CARROT,
-    CHICKEN_BROTH,
-    BLACK_PEPPER,
-    SPINACH_CHEESE_TORTELLINI,
-    BABY_SPINACH,
-    STOVE,
+    GROUND_TURKEY,
     LARGE_BOWL,
     LARGE_POT,
+    PARMESAN_CHEESE,
+    PARSLEY,
+    SALT,
+    SPINACH_CHEESE_TORTELLINI,
+    STOVE,
+    UNSALTED_BUTTER,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 const MEATBALLS = 'Meatballs';

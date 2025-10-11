@@ -1,14 +1,14 @@
 const dinner = '../assets/Products/hobo-dinner.jpeg';
 const pan = '../assets/Products/hobo-dinner-pan.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
     CARROT,
-    YELLOW_ONION,
     OLIVE_OIL,
     POTATO,
     SALT,
     SUMMER_SAUSAGE,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 module.exports = {

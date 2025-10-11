@@ -17,7 +17,7 @@ const tomato = '../assets/Products/chicken-tikka-masala-tomato-sauce.jpeg';
 const translucent = '../assets/Products/chicken-tikka-masala-translucent-onion.jpeg';
 
 const { CATEGORIES, GENRES, TYPES, METHODS, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
-const { GHEE, YELLOW_ONION, GARLIC, CUMIN, SALT, GINGER, CAYENNE_PEPPER, CINNAMON, TURMERIC, TOMATO_SAUCE, HEAVY_CREAM, WHITE_SUGAR, PAPRIKA, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CURRY_POWDER, STOVE, LARGE_POT, LARGE_PAN, } = require('./ingredients');
+const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CAYENNE_PEPPER, CINNAMON, CUMIN, CURRY_POWDER, GARLIC, GHEE, GINGER, HEAVY_CREAM, LARGE_PAN, LARGE_POT, PAPRIKA, SALT, STOVE, TOMATO_SAUCE, TURMERIC, VEGETABLE_OIL, WHITE_SUGAR, YELLOW_ONION } = require('./ingredients');
 
 module.exports = {
     cardName: 'Chicken Tikka Masala',

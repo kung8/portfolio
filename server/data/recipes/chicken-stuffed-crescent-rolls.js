@@ -6,24 +6,24 @@ const melted = '../assets/Products/chicken-stuffed-crescent-rolls-melted-butter.
 const opened = '../assets/Products/chicken-stuffed-crescent-rolls-opened.jpeg';
 const wrap = '../assets/Products/chicken-stuffed-crescent-rolls-wrap.jpeg';
 const wrapped = '../assets/Products/chicken-stuffed-crescent-rolls-wrapped.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_SHEET,
+    BLACK_PEPPER,
+    CHICKEN_BREAST,
+    CHILI_POWDER,
+    CREAM_CHEESE,
+    CRESCENT_ROLLS,
+    GARLIC_POWDER,
     MIXING_BOWL,
     MOZZARELLA_CHEESE,
-    CREAM_CHEESE,
-    RED_BELL_PEPPER,
-    YELLOW_ONION,
-    GARLIC_POWDER,
-    SALT,
-    BLACK_PEPPER,
-    CHILI_POWDER,
-    UNSALTED_BUTTER,
-    CRESCENT_ROLLS,
-    CHICKEN_BREAST,
-    PARSLEY,
-    SILICON_BAKING_MAT,
     OVEN,
+    PARSLEY,
+    RED_BELL_PEPPER,
+    SALT,
+    SILICON_BAKING_MAT,
+    UNSALTED_BUTTER,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 module.exports = {

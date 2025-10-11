@@ -7,24 +7,24 @@ const flour = '../assets/Products/blondie-flour.jpeg';
 const pan = '../assets/Products/blondie-pan.jpeg';
 const plated = '../assets/Products/blondie-plated.jpeg';
 const sugars = '../assets/Products/blondie-sugars.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    MIXING_BOWL,
-    UNSALTED_BUTTER,
+    ALL_PURPOSE_FLOUR,
+    BAKING_PAN,
+    BAKING_POWDER,
     BROWN_SUGAR,
-    WHITE_SUGAR,
+    CORNSTARCH,
     EGG,
     EGG_YOLK,
-    VANILLA_EXTRACT,
-    ALL_PURPOSE_FLOUR,
-    CORNSTARCH,
-    BAKING_POWDER,
+    MEDIUM_BOWL,
+    MIXING_BOWL,
+    OVEN,
     SALT,
     SEMI_SWEET_CHOCOLATE_CHIPS,
     SPATULA,
-    BAKING_PAN,
-    MEDIUM_BOWL,
-    OVEN,
+    UNSALTED_BUTTER,
+    VANILLA_EXTRACT,
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 module.exports = {

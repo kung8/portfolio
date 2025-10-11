@@ -14,8 +14,8 @@ const thigh13 = '../assets/Products/pan-fried-chicken-thigh-13.jpeg';
 const thigh14 = '../assets/Products/pan-fried-chicken-thigh-14.jpeg';
 const thigh15 = '../assets/Products/pan-fried-chicken-thigh-15.jpeg';
 // const thigh16 = '../assets/Products/pan-fried-chicken-thigh-16.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { UNSALTED_BUTTER, CHICKEN_THIGH, SALT, BLACK_PEPPER, RED_WINE, GARLIC, WHIPPED_CREAM, ROSEMARY } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BLACK_PEPPER, CHICKEN_THIGH, GARLIC, RED_WINE, ROSEMARY, SALT, UNSALTED_BUTTER, WHIPPED_CREAM } = require('./ingredients');
 
 module.exports = {
     cardName: 'Pan-Fried Chicken Thighs',

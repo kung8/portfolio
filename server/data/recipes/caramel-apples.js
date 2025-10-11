@@ -12,8 +12,8 @@ const unmixed = '../assets/Products/caramel-apples-sauce-unmixed.jpeg';
 const skewered = '../assets/Products/caramel-apples-skewered.jpeg';
 const thickened = '../assets/Products/caramel-apples-thickened-sauce.jpeg';
 const wax = '../assets/Products/caramel-apples-wax-free-apples.jpeg';
-const { GENRES, METHODS, TYPES, CATEGORIES, SECTIONS , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BAKING_SHEET, GRANNY_SMITH_APPLE, BROWN_SUGAR, SWEETENED_CONDENSED_MILK, CORN_SYRUP, UNSALTED_BUTTER, VANILLA_EXTRACT, STOVE, PARCHMENT_PAPER, BAMBOO_SKEWERS, COOKING_THERMOMETER, SPIDER_STRAINER, TALL_NARROW_POT } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BAKING_SHEET, BAMBOO_SKEWERS, BROWN_SUGAR, COOKING_THERMOMETER, CORN_SYRUP, GRANNY_SMITH_APPLE, PARCHMENT_PAPER, SPIDER_STRAINER, STOVE, SWEETENED_CONDENSED_MILK, TALL_NARROW_POT, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
 
 const APPLE = 'Apple';
 const CARAMEL = 'Caramel';

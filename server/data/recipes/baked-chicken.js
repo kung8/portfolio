@@ -6,18 +6,18 @@ const plated = '../assets/Products/baked-chicken-plated.jpeg';
 const full = '../assets/Products/baked-chicken-plated-full.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
-    CHICKEN_DRUMSTICKS,
-    OLIVE_OIL,
-    SALT,
-    BLACK_PEPPER,
-    GARLIC_POWDER,
-    PAPRIKA,
-    CAYENNE_PEPPER,
-    ONION_POWDER,
     BAKING_PAN,
     BASTING_BRUSH,
+    BLACK_PEPPER,
+    CAYENNE_PEPPER,
+    CHICKEN_DRUMSTICKS,
+    GARLIC_POWDER,
+    OLIVE_OIL,
+    ONION_POWDER,
+    OVEN,
+    PAPRIKA,
+    SALT,
     SMALL_BOWL,
-    OVEN
 } = require('./ingredients');
 
 module.exports = {

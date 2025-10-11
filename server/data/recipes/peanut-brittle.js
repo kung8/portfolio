@@ -12,8 +12,8 @@ const water = '../assets/Products/peanut-brittle-water.jpeg';
 const plated1 = '../assets/Products/peanut-brittle-plated-1.jpeg';
 const plated2 = '../assets/Products/peanut-brittle-plated-2.jpeg';
 const rebaked = '../assets/Products/peanut-brittle-rebaked.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BAKING_SHEET, WHITE_SUGAR, CORN_SYRUP, UNSALTED_PEANUT, UNSALTED_BUTTER, BAKING_SODA, VANILLA_EXTRACT, WATER, STOVE, PARCHMENT_PAPER, SAUCEPAN, COOKING_THERMOMETER } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BAKING_SHEET, BAKING_SODA, COOKING_THERMOMETER, CORN_SYRUP, PARCHMENT_PAPER, SAUCEPAN, STOVE, UNSALTED_BUTTER, UNSALTED_PEANUT, VANILLA_EXTRACT, WATER, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
     cardName: 'Peanut Brittle',

@@ -4,8 +4,8 @@ const roll3 = '../assets/Products/turkey-roll-up-3.jpeg';
 const roll4 = '../assets/Products/turkey-roll-up-4.jpeg';
 const roll5 = '../assets/Products/turkey-roll-up-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { CREAM_CHEESE, FLOUR_TORTILLA, ROMAINE_LETTUCE, TURKEY, SLICER_TOMATO, CRANBERRY_SAUCE, PROVOLONE_CHEESE } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CRANBERRY_SAUCE, CREAM_CHEESE, FLOUR_TORTILLA, PROVOLONE_CHEESE, ROMAINE_LETTUCE, SLICER_TOMATO, TURKEY } = require('./ingredients');
 
 module.exports = {
     cardName: 'Turkey Roll Ups',

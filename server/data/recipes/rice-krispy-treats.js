@@ -6,7 +6,7 @@ const vanilla = '../assets/Products/rice-krispy-treat-vanilla.jpeg';
 const zoomed3 = '../assets/Products/rice-krispy-treat-zoomed-center-3.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
-const { MINI_MARSHMALLOWS, UNSALTED_BUTTER, VANILLA_EXTRACT, RICE_KRISPIES_CEREAL } = require('./ingredients');
+const { MINI_MARSHMALLOWS, RICE_KRISPIES_CEREAL, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
 
 module.exports = {
     cardName: 'Rice Krispy Treats',

@@ -6,8 +6,8 @@ const mix1 = '../assets/Products/green-bean-casserole-mix-1.jpeg';
 const mix2 = '../assets/Products/green-bean-casserole-mix-2.jpeg';
 const mix3 = '../assets/Products/green-bean-casserole-mix-3.jpeg';
 const mix4 = '../assets/Products/green-bean-casserole-mix-4.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { CANNED_GREEN_BEANS, CREAM_OF_MUSHROOM, MILK, LIGHT_SOY_SAUCE, BLACK_PEPPER, SALT, CRISPY_FRIED_ONIONS } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BLACK_PEPPER, CANNED_GREEN_BEANS, CREAM_OF_MUSHROOM, CRISPY_FRIED_ONIONS, LIGHT_SOY_SAUCE, MILK, SALT } = require('./ingredients');
 
 const CASSEROLE = 'Casserole';
 

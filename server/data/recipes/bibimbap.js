@@ -6,28 +6,28 @@ const eggs = '../assets/Products/bibimbap-eggs.jpeg';
 const marinating = '../assets/Products/bibimbap-marinating-chicken.jpeg';
 // const spinach = '../assets/Products/bibimbap-spinach.jpeg';
 const sauce = '../assets/Products/bibimbap-with-sauce.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    GROUND_BEEF,
-    LIGHT_SOY_SAUCE,
-    SESAME_OIL,
     BROWN_SUGAR,
-    GARLIC,
     CARROT,
-    SPINACH,
     CORN,
     EGG,
-    GOCHUJANG_SAUCE,
-    WHITE_SUGAR,
-    SESAME_SEEDS,
-    WHITE_VINEGAR,
-    JASMINE_RICE,
-    WATER,
-    POT,
     FRYING_PAN,
+    GARLIC,
+    GOCHUJANG_SAUCE,
+    GROUND_BEEF,
+    JASMINE_RICE,
+    LIGHT_SOY_SAUCE,
     MEDIUM_BOWL,
+    POT,
     SERVING_BOWL,
-    STOVE
+    SESAME_OIL,
+    SESAME_SEEDS,
+    SPINACH,
+    STOVE,
+    WATER,
+    WHITE_SUGAR,
+    WHITE_VINEGAR,
 } = require('./ingredients');
 
 module.exports = {

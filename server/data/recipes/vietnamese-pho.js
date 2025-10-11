@@ -12,29 +12,29 @@ const plated6 = '../assets/Products/pho-plated-6.jpeg';
 const sauces = '../assets/Products/pho-sauces.jpeg';
 const toppings = '../assets/Products/pho-toppings.jpeg';
 const veggiesPot = '../assets/Products/pho-veggies-in-pot.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BEAN_SPROUT,
     BEEF_BROTH,
     BEEF_TENDERLOIN,
     BLACK_PEPPER,
     CILANTRO,
-    GREEN_ONION,
-    LIME_JUICE,
-    LIGHT_SOY_SAUCE,
-    MINT_LEAF,
+    CINNAMON_STICK,
+    CLOVES,
+    CORIANDER,
     DRIED_RICE_NOODLES,
+    FISH_SAUCE,
+    GINGER,
+    GREEN_ONION,
+    HOISIN_SAUCE,
+    LIGHT_SOY_SAUCE,
+    LIME_JUICE,
+    MINT_LEAF,
+    RED_CHILI_PASTE,
     SALT,
     SRIRACHA_SAUCE,
-    YELLOW_ONION,
-    GINGER,
-    CORIANDER,
-    CLOVES,
-    FISH_SAUCE,
-    HOISIN_SAUCE,
-    RED_CHILI_PASTE,
-    CINNAMON_STICK,
     WATER,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 module.exports = {

@@ -5,24 +5,24 @@ const oil = '../assets/Products/baked-breaded-chicken-oil.jpeg';
 const plated = '../assets/Products/baked-breaded-chicken-plated.jpeg';
 const seasoned = '../assets/Products/baked-breaded-chicken-seasoned.jpeg';
 const full = '../assets/Products/basil-pesto-meal-plated.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    BREADCRUMBS,
-    PANKO_BREADCRUMBS,
-    PARMESAN_CHEESE,
-    BASIL,
-    OREGANO,
-    ONION_POWDER,
-    BLACK_PEPPER,
-    OLIVE_OIL,
-    GARLIC,
-    PAPRIKA,
-    CHICKEN_BREAST,
-    SALT,
     BAKING_PAN,
-    OVEN,
+    BASIL,
+    BLACK_PEPPER,
+    BREADCRUMBS,
+    CHICKEN_BREAST,
+    GARLIC,
     MIXING_BOWL,
-    SMALL_BOWL
+    OLIVE_OIL,
+    ONION_POWDER,
+    OREGANO,
+    OVEN,
+    PANKO_BREADCRUMBS,
+    PAPRIKA,
+    PARMESAN_CHEESE,
+    SALT,
+    SMALL_BOWL,
 } = require('./ingredients');
 
 const BREADING = 'Breading';

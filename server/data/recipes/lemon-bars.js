@@ -14,8 +14,8 @@ const rack = '../assets/Products/lemon-bars-rack.jpeg';
 const filling = '../assets/Products/lemon-bars-raw-filling.jpeg';
 const zestMixed = '../assets/Products/lemon-bars-sugar-and-zest-mixed.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { MIXING_BOWL, ALL_PURPOSE_FLOUR, POWDERED_SUGAR, SALT, UNSALTED_BUTTER, LEMON_ZEST, WHITE_SUGAR, EGG, LEMON_JUICE, OVEN, BAKING_PAN, PARCHMENT_PAPER } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALL_PURPOSE_FLOUR, BAKING_PAN, EGG, LEMON_JUICE, LEMON_ZEST, MIXING_BOWL, OVEN, PARCHMENT_PAPER, POWDERED_SUGAR, SALT, UNSALTED_BUTTER, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
     cardName: 'Lemon Bars',

@@ -5,8 +5,8 @@ const breast4 = '../assets/Products/baked-chicken-breast-4.jpeg';
 const breast5 = '../assets/Products/baked-chicken-breast-5.jpeg';
 const breast6 = '../assets/Products/baked-chicken-breast-6.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { CHICKEN_BREAST, OLIVE_OIL, BROWN_SUGAR, PAPRIKA, OREGANO, GARLIC_POWDER, SALT, BLACK_PEPPER, MEAT_MALLET, PAPER_TOWELS, BAKING_PAN, OVEN } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BAKING_PAN, BLACK_PEPPER, BROWN_SUGAR, CHICKEN_BREAST, GARLIC_POWDER, MEAT_MALLET, OLIVE_OIL, OREGANO, OVEN, PAPER_TOWELS, PAPRIKA, SALT } = require('./ingredients');
 
 module.exports = {
     cardName: 'Baked Chicken Breast',

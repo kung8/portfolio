@@ -1,22 +1,22 @@
 const sushi = '../assets/Products/sushi.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    SEAWEED,
-    SUSHI_RICE,
-    WHITE_VINEGAR,
-    WHITE_SUGAR,
-    SALT,
     AVOCADO,
+    CREAM_CHEESE,
     CUCUMBER,
     IMITATION_CRAB,
-    TEMPURA_SHRIMP,
-    CREAM_CHEESE,
-    SALMON_FISH,
     LEMON,
-    SESAME_SEEDS,
-    WASABI,
-    PONZU_SAUCE,
     LIGHT_SOY_SAUCE,
+    PONZU_SAUCE,
+    SALMON_FISH,
+    SALT,
+    SEAWEED,
+    SESAME_SEEDS,
+    SUSHI_RICE,
+    TEMPURA_SHRIMP,
+    WASABI,
+    WHITE_SUGAR,
+    WHITE_VINEGAR,
 } = require('./ingredients');
 
 module.exports = {

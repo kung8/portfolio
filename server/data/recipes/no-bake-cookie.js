@@ -5,16 +5,16 @@ const all = '../assets/Products/no-bake-cookie-all.jpeg';
 const finished = '../assets/Products/no-bake-cookie-finished.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
-    UNSALTED_BUTTER,
-    WHITE_SUGAR,
-    MILK,
-    VANILLA_EXTRACT,
-    STEEL_OATS,
-    PEANUT_BUTTER,
     COCOA_POWDER,
-    STOVE,
-    SAUCEPAN,
+    MILK,
+    PEANUT_BUTTER,
     PLATE,
+    SAUCEPAN,
+    STEEL_OATS,
+    STOVE,
+    UNSALTED_BUTTER,
+    VANILLA_EXTRACT,
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 module.exports = {

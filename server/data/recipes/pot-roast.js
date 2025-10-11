@@ -1,16 +1,16 @@
 const roast = '../assets/Products/roast.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
+    BEEF_BROTH,
     BEEF_ROAST,
     BLACK_PEPPER,
-    SALT,
-    OLIVE_OIL,
-    YELLOW_ONION,
     CARROT,
-    RED_WINE_VINEGAR,
-    BEEF_BROTH,
     FRESH_ROSEMARY,
     FRESH_THYME,
+    OLIVE_OIL,
+    RED_WINE_VINEGAR,
+    SALT,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 module.exports = {

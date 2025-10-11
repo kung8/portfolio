@@ -1,8 +1,8 @@
 const balls1 = '../assets/Products/breakfast-sausage-balls-1.jpeg';
 const balls2 = '../assets/Products/breakfast-sausage-balls-2.jpeg';
 const balls3 = '../assets/Products/breakfast-sausage-balls-3.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { MIXING_BOWL, BAKING_SHEET, CHEDDAR_CHEESE, MILK, KODIAK_CAKE_MIX, BREAKFAST_SAUSAGE, OVEN, PARCHMENT_PAPER } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BAKING_SHEET, BREAKFAST_SAUSAGE, CHEDDAR_CHEESE, KODIAK_CAKE_MIX, MILK, MIXING_BOWL, OVEN, PARCHMENT_PAPER } = require('./ingredients');
 
 const SAUSAGE_BALL_SECTION = 'Sausage Balls';
 const PREP_SAUSAGE_BALLS = 'Prep Sausage Balls';

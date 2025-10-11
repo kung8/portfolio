@@ -1,8 +1,8 @@
 const pineapple1 = '../assets/Products/hawaiian-grilled-pineapple-1.jpeg';
 const pineapple2 = '../assets/Products/hawaiian-grilled-pineapple-2.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { PINEAPPLE, BROWN_SUGAR, HONEY, WATER, SALT, VEGETABLE_OIL } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BROWN_SUGAR, HONEY, PINEAPPLE, SALT, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const PINEAPPLE_SECTION = 'Pineapple';
 const GRILL_SECTION = 'Grill';

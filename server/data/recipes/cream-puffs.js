@@ -11,8 +11,8 @@ const plated11 = '../assets/Products/cream-puffs-plated-11.jpeg';
 const sliced2 = '../assets/Products/cream-puffs-sliced-2.jpeg';
 const vanilla = '../assets/Products/cream-puffs-vanilla-pudding-mix.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BAKING_SHEET, VANILLA_INSTANT_PUDDING_MIX, HEAVY_CREAM, MILK, UNSALTED_BUTTER, SALT, ALL_PURPOSE_FLOUR, EGG, WATER, STOVE, OVEN, LARGE_POT, MIXING_BOWL } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALL_PURPOSE_FLOUR, BAKING_SHEET, EGG, HEAVY_CREAM, LARGE_POT, MILK, MIXING_BOWL, OVEN, SALT, STOVE, UNSALTED_BUTTER, VANILLA_INSTANT_PUDDING_MIX, WATER } = require('./ingredients');
 
 const PUFF = 'Puff';
 

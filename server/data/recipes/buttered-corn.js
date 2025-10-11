@@ -3,8 +3,8 @@ const cooked = '../assets/Products/buttered-corn-cooked.jpeg';
 const corn = '../assets/Products/buttered-corn-corn.jpeg';
 const cream = '../assets/Products/buttered-corn-cream.jpeg';
 const honey = '../assets/Products/buttered-corn-honey.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { UNSALTED_BUTTER, CANNED_SWEET_CORN, SALT, BLACK_PEPPER, HEAVY_CREAM, HONEY, STOVE, SAUCEPAN } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BLACK_PEPPER, CANNED_SWEET_CORN, HEAVY_CREAM, HONEY, SALT, SAUCEPAN, STOVE, UNSALTED_BUTTER } = require('./ingredients');
 
 module.exports = {
     cardName: 'Buttered Corn',

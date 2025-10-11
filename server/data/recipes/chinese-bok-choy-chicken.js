@@ -14,20 +14,20 @@ const zoomed = '../assets/Products/bok-choy-zoomed.jpeg';
 
 const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
-    CHICKEN_BREAST,
     BABY_BOK_CHOY,
-    LIGHT_SOY_SAUCE,
-    SALT,
     BLACK_PEPPER,
+    CHICKEN_BREAST,
+    COLANDER,
+    DUTCH_OVEN_POT,
+    LIGHT_SOY_SAUCE,
     OLIVE_OIL,
-    SESAME_SEEDS,
-    UNSALTED_BUTTER,
-    STOVE,
     OVEN,
     POT,
-    COLANDER,
+    SALT,
+    SESAME_SEEDS,
+    STOVE,
+    UNSALTED_BUTTER,
     WOK,
-    DUTCH_OVEN_POT,
 } = require('./ingredients');
 
 module.exports = {

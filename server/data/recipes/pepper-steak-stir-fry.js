@@ -11,18 +11,18 @@ const veggiesPan = '../assets/Products/pepper-steak-stir-fry-veggies-in-pan.jpeg
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
     BEEF,
-    RED_BELL_PEPPER,
-    YELLOW_ONION,
-    GARLIC,
-    LIGHT_SOY_SAUCE,
-    SALT,
     BLACK_PEPPER,
-    VEGETABLE_OIL,
-    GREEN_BELL_PEPPER,
-    GINGER,
-    WHITE_SUGAR,
     CORNSTARCH,
+    GARLIC,
+    GINGER,
+    GREEN_BELL_PEPPER,
+    LIGHT_SOY_SAUCE,
+    RED_BELL_PEPPER,
+    SALT,
+    VEGETABLE_OIL,
     WATER,
+    WHITE_SUGAR,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 module.exports = {

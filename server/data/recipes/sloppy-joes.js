@@ -4,20 +4,20 @@ const cooking = '../assets/Products/sloppy-joes-cooking-beef.jpeg';
 const garlic = '../assets/Products/sloppy-joes-garlic.jpeg';
 const veggies = '../assets/Products/sloppy-joes-raw-veggies.jpeg';
 const raw = '../assets/Products/sloppy-joes-raw.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    YELLOW_ONION,
+    BLACK_PEPPER,
+    BROWN_SUGAR,
+    GARLIC,
+    GROUND_BEEF,
+    HAMBURGER_BUNS,
+    OLIVE_OIL,
     RED_BELL_PEPPER,
+    SALT,
+    TOMATO_SAUCE,
     WORCESTERSHIRE_SAUCE,
     YELLOW_MUSTARD,
-    BROWN_SUGAR,
-    TOMATO_SAUCE,
-    GROUND_BEEF,
-    OLIVE_OIL,
-    SALT,
-    BLACK_PEPPER,
-    GARLIC,
-    HAMBURGER_BUNS,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 module.exports = {

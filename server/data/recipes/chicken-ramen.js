@@ -9,32 +9,32 @@ const ice = '../assets/Products/chicken-ramen-ice-bath.jpeg';
 const noodles = '../assets/Products/chicken-ramen-noodles.jpeg';
 const rawChicken = '../assets/Products/chicken-ramen-raw-chicken.jpeg';
 const sliced = '../assets/Products/chicken-ramen-sliced.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    CHICKEN_BREAST,
-    UNSALTED_BUTTER,
+    ALUMINUM_FOIL,
     BLACK_PEPPER,
-    SALT,
-    SESAME_OIL,
-    GINGER,
+    CHICKEN_BREAST,
+    CHICKEN_BROTH,
+    CUTTING_BOARD,
+    DRIED_RAMEN_NOODLES,
+    DUTCH_OVEN_POT,
+    EGG,
     GARLIC,
+    GINGER,
+    GREEN_ONION,
+    LARGE_POT,
     LIGHT_SOY_SAUCE,
     MIRIN,
-    CHICKEN_BROTH,
     MUSHROOM,
-    EGG,
-    DRIED_RAMEN_NOODLES,
-    GREEN_ONION,
-    STOVE,
     OVEN,
-    ALUMINUM_FOIL,
-    CUTTING_BOARD,
-    SPIDER_STRAINER,
     POT,
+    SALT,
     SAUCEPAN,
-    DUTCH_OVEN_POT,
-    LARGE_POT,
     SERVING_BOWL,
+    SESAME_OIL,
+    SPIDER_STRAINER,
+    STOVE,
+    UNSALTED_BUTTER,
 } = require('./ingredients');
 
 const EGG_SECTION = 'Eggs';

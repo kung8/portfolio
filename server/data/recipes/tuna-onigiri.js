@@ -4,8 +4,8 @@ const onigiri3 = '../assets/Products/tuna-onigiri-3.jpeg';
 const onigiri4 = '../assets/Products/tuna-onigiri-4.jpeg';
 const onigiri5 = '../assets/Products/tuna-onigiri-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { MIXING_BOWL, SEAWEED, SESAME_SEEDS, SHORT_GRAINED_RICE, SALT, CANNED_TUNA, KEWPIE_MAYONNAISE, WATER, CAN_OPENER, FORK, SMALL_BOWL } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CANNED_TUNA, CAN_OPENER, FORK, KEWPIE_MAYONNAISE, MIXING_BOWL, SALT, SEAWEED, SESAME_SEEDS, SHORT_GRAINED_RICE, SMALL_BOWL, WATER } = require('./ingredients');
 
 const TUNA_MAYO = 'Tuna Mayo';
 const PREP_TUNA_MAYO = 'Prep Tuna Mayo';

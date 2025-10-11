@@ -7,8 +7,8 @@ const choy6 = '../assets/Products/choy-sum-with-garlic-sauce-6.jpeg';
 const choy7 = '../assets/Products/choy-sum-with-garlic-sauce-7.jpeg';
 const choy8 = '../assets/Products/choy-sum-with-garlic-sauce-8.jpeg';
 const choy9 = '../assets/Products/choy-sum-with-garlic-sauce-9.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { MIXING_BOWL, CHOY_SUM, OYSTER_SAUCE, LIGHT_SOY_SAUCE, WHITE_SUGAR, GARLIC, SALT, VEGETABLE_OIL, STOVE, LARGE_POT, PAPER_TOWELS, SMALL_BOWL, SAUCEPAN, COLANDER } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CHOY_SUM, COLANDER, GARLIC, LARGE_POT, LIGHT_SOY_SAUCE, MIXING_BOWL, OYSTER_SAUCE, PAPER_TOWELS, SALT, SAUCEPAN, SMALL_BOWL, STOVE, VEGETABLE_OIL, WHITE_SUGAR } = require('./ingredients');
 
 const CHOY_SUM_SECTION = 'Choy Sum';
 const GARLIC_SECTION = 'Garlic';

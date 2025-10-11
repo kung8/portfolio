@@ -1,12 +1,12 @@
 const parfait = '../assets/Products/parfait.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
-    PLAIN_YOGURT,
-    VANILLA_EXTRACT,
-    HONEY,
-    GRANOLA,
     BERRY,
     CASHEWS,
+    GRANOLA,
+    HONEY,
+    PLAIN_YOGURT,
+    VANILLA_EXTRACT,
 } = require('./ingredients');
 
 module.exports = {

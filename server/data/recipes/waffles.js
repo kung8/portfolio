@@ -6,30 +6,30 @@ const batter = '../assets/Products/waffles-batter.jpeg';
 const dry = '../assets/Products/waffles-dry-ingredients.jpeg';
 const wet = '../assets/Products/waffles-wet-ingredients.jpeg';
 const egg = '../assets/Products/waffles-egg-whites-fluffed.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    MIXING_BOWL,
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
-    SALT,
-    WHITE_SUGAR,
-    EGG,
-    MILK,
-    UNSALTED_BUTTER,
-    VANILLA_EXTRACT,
-    STRAWBERRY,
     BANANA,
     BLUEBERRY,
-    RASPBERRY,
-    PEANUT_BUTTER,
-    SYRUP,
-    SWEET_CHOCOLATE,
-    NUTELLA,
-    POWDERED_SUGAR,
+    EGG,
     MEDIUM_BOWL,
-    SMALL_BOWL,
-    WAFFLE_MAKER,
+    MILK,
     MIXER,
+    MIXING_BOWL,
+    NUTELLA,
+    PEANUT_BUTTER,
+    POWDERED_SUGAR,
+    RASPBERRY,
+    SALT,
+    SMALL_BOWL,
+    STRAWBERRY,
+    SWEET_CHOCOLATE,
+    SYRUP,
+    UNSALTED_BUTTER,
+    VANILLA_EXTRACT,
+    WAFFLE_MAKER,
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 module.exports = {

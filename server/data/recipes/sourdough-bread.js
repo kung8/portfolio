@@ -9,16 +9,16 @@ const uncovered = '../assets/Products/sourdough-bread-uncovered.jpeg';
 const board = '../assets/Products/sourdough-bread-on-board.jpeg';
 const bakedScored = '../assets/Products/sourdough-bread-baked-scored.jpeg';
 
-const { METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
+const { CATEGORIES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    MIXING_BOWL,
     ALL_PURPOSE_FLOUR,
+    CHEESECLOTH,
+    DUTCH_OVEN_POT,
+    MIXING_BOWL,
+    OVEN,
     SALT,
     SOURDOUGH_STARTER,
     WATER,
-    CHEESECLOTH,
-    DUTCH_OVEN_POT,
-    OVEN,
 } = require('./ingredients');
 const starter = require('./sourdough-starter');
 

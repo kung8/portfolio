@@ -4,20 +4,20 @@ const oil = '../assets/Products/sauteed-squash-oil-in-pan.jpeg';
 const onions = '../assets/Products/sauteed-squash-onions.jpeg';
 const plated = '../assets/Products/sauteed-squash-plated.jpeg';
 const raw = '../assets/Products/sauteed-squash-raw.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    OLIVE_OIL,
-    UNSALTED_BUTTER,
-    YELLOW_ONION,
-    SALT,
     BLACK_PEPPER,
-    THYME,
-    PARMESAN_CHEESE,
-    ZUCCHINI,
-    SUMMER_SQUASH,
     FRYING_PAN,
+    OLIVE_OIL,
+    PARMESAN_CHEESE,
+    SALT,
     SPATULA,
     STOVE,
+    SUMMER_SQUASH,
+    THYME,
+    UNSALTED_BUTTER,
+    YELLOW_ONION,
+    ZUCCHINI,
 } = require('./ingredients');
 
 module.exports = {

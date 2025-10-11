@@ -7,8 +7,8 @@ const mango6 = '../assets/Products/mango-sticky-rice-6.jpeg';
 const mango7 = '../assets/Products/mango-sticky-rice-7.jpeg';
 const mango8 = '../assets/Products/mango-sticky-rice-8.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { MIXING_BOWL, COCONUT_MILK, SALT, MANGO, SWEET_RICE, BROWN_SUGAR, STOVE, MEDIUM_BOWL, CHEESECLOTH, LARGE_POT, SAUCEPAN, STEAMER } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BROWN_SUGAR, CHEESECLOTH, COCONUT_MILK, LARGE_POT, MANGO, MEDIUM_BOWL, MIXING_BOWL, SALT, SAUCEPAN, STEAMER, STOVE, SWEET_RICE } = require('./ingredients');
 
 const MAKE_STICKY_RICE = 'Make Sticky Rice';
 

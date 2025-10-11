@@ -11,20 +11,20 @@ const nonBeans3 = '../assets/Products/khmer-red-curry-non-green-beans-3.jpeg';
 const plated1 = '../assets/Products/khmer-red-curry-plated-1.jpeg';
 const veggies = '../assets/Products/khmer-red-curry-veggies.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    CHICKEN_THIGH,
-    RED_CURRY_PASTE,
-    COCONUT_MILK,
-    LEMONGRASS,
-    KAFFIR_LIME_LEAF,
-    SALT,
     BLACK_PEPPER,
+    CHICKEN_THIGH,
+    COCONUT_MILK,
+    KAFFIR_LIME_LEAF,
+    LEMONGRASS,
+    RED_CURRY_PASTE,
     RUSSET_POTATO,
-    WATER,
-    STOVE,
-    WOK,
+    SALT,
     SPATULA,
+    STOVE,
+    WATER,
+    WOK,
 } = require('./ingredients');
 
 module.exports = {

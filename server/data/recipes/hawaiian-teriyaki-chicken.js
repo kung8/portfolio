@@ -4,8 +4,8 @@ const teriyaki3 = '../assets/Products/teriyaki-chicken-3.jpeg';
 const teriyaki4 = '../assets/Products/teriyaki-chicken-4.jpeg';
 const teriyaki5 = '../assets/Products/teriyaki-chicken-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, LIGHT_SOY_SAUCE, BROWN_SUGAR, PINEAPPLE_JUICE, GARLIC, GINGER, GREEN_ONION } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, BROWN_SUGAR, GARLIC, GINGER, GREEN_ONION, LIGHT_SOY_SAUCE, PINEAPPLE_JUICE } = require('./ingredients');
 
 const GRILL_CHICKEN = 'Grill Chicken';
 

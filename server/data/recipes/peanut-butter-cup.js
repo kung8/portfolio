@@ -9,8 +9,8 @@ const cup8 = '../assets/Products/peanut-butter-cup-8.jpeg';
 const cup9 = '../assets/Products/peanut-butter-cup-9.jpeg';
 const cup10 = '../assets/Products/peanut-butter-cup-10.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
-const { MIXING_BOWL, MILK_CHOCOLATE_CHIPS, PEANUT_BUTTER, SALT, POWDERED_SUGAR, REFRIGERATOR, MUFFIN_TIN, CUPCAKE_LINER } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CUPCAKE_LINER, MILK_CHOCOLATE_CHIPS, MIXING_BOWL, MUFFIN_TIN, PEANUT_BUTTER, POWDERED_SUGAR, REFRIGERATOR, SALT } = require('./ingredients');
 
 const CHOCOLATE_SECTION = 'Chocolate';
 const FIRST_CHILL = 'First Chill';

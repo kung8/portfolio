@@ -2,31 +2,31 @@ const satay1 = '../assets/Products/malaysian-satay-1.jpeg';
 const satay2 = '../assets/Products/malaysian-satay-2.jpeg';
 const satay3 = '../assets/Products/malaysian-satay-3.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
 const {
+    ALUMINUM_FOIL,
+    ASIAN_CHILI_GARLIC_SAUCE,
     BAKING_SHEET,
+    BAMBOO_SKEWERS,
+    BLACK_PEPPER,
+    BLENDER,
+    BROWN_SUGAR,
     CHICKEN_THIGH,
-    SALT,
+    COCONUT_MILK,
+    CURRY_POWDER,
+    FISH_SAUCE,
     GARLIC,
+    GINGER,
+    LIGHT_SOY_SAUCE,
+    LIME_JUICE,
+    OVEN,
+    PEANUT_BUTTER,
+    SALT,
+    SMALL_BOWL,
     TURMERIC,
     VEGETABLE_OIL,
-    COCONUT_MILK,
-    LIGHT_SOY_SAUCE,
-    CURRY_POWDER,
-    GINGER,
-    BROWN_SUGAR,
-    FISH_SAUCE,
-    BLACK_PEPPER,
-    PEANUT_BUTTER,
-    LIME_JUICE,
-    ASIAN_CHILI_GARLIC_SAUCE,
     WATER,
-    BLENDER,
-    OVEN,
     ZIPLOC_BAG,
-    BAMBOO_SKEWERS,
-    ALUMINUM_FOIL,
-    SMALL_BOWL,
 } = require('./ingredients');
 
 const BAKE_PREP_SECTION = 'Bake Prep';

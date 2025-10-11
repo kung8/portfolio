@@ -3,13 +3,15 @@ const frenchBread = '../assets/Products/french-bread.jpeg';
 const porkLoafCut = '../assets/Products/pork-loaf-cut.jpeg';
 const porkLoafOpened = '../assets/Products/pork-loaf-opened.jpeg';
 const porkLoafWrapped = '../assets/Products/pork-loaf-wrapped.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    MIXING_BOWL,
+    BAGUETTE_PAN,
+    BAKING_PAN,
     BAKING_POWDER,
     BANANA_LEAF,
     BREAD_FLOUR,
     CARROT,
+    CHEESECLOTH,
     CILANTRO,
     CUCUMBER,
     DAIKON,
@@ -18,32 +20,30 @@ const {
     GARLIC_POWDER,
     GROUND_PORK,
     HOT_WATER,
+    LARGE_BOWL,
     MAGGI_SEASONING,
     MAYONNAISE,
+    MIXING_BOWL,
     OLIVE_OIL,
+    OVEN,
+    PAPER_TOWELS,
     PORK_PATE,
     POTATO_STARCH,
     PROSCIUTTO,
     RICE_WINE_VINEGAR,
     SALAMI,
     SALT,
+    SCORING_KNIFE,
     SESAME_OIL,
+    SMALL_BOWL,
     THAI_CHILI_PEPPER,
     TWINE,
     VEGAN_BUTTER,
     VITAMIN_C_TABLETS,
+    WATER,
     WHITE_PEPPER,
     WHITE_SUGAR,
     YEAST,
-    WATER,
-    OVEN,
-    BAKING_PAN,
-    PAPER_TOWELS,
-    SMALL_BOWL,
-    LARGE_BOWL,
-    CHEESECLOTH,
-    BAGUETTE_PAN,
-    SCORING_KNIFE,
 } = require('./ingredients');
 
 const PORK_LOAF = 'Pork Loaf';

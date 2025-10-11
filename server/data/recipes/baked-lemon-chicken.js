@@ -3,21 +3,21 @@ const full = '../assets/Products/baked-lemon-chicken-full-plate.jpeg';
 const pan = '../assets/Products/baked-lemon-chicken-pan.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
-    CHICKEN_WINGS,
-    UNSALTED_BUTTER,
-    CHICKEN_BROTH,
-    LEMON_JUICE,
-    HONEY,
-    GARLIC,
-    ITALIAN_SEASONING,
-    SALT,
-    BLACK_PEPPER,
-    ROSEMARY,
-    LEMON,
     BAKING_PAN,
+    BLACK_PEPPER,
+    CHICKEN_BROTH,
+    CHICKEN_WINGS,
     FRYING_PAN,
+    GARLIC,
+    HONEY,
+    ITALIAN_SEASONING,
+    LEMON,
+    LEMON_JUICE,
+    OVEN,
+    ROSEMARY,
+    SALT,
     SMALL_BOWL,
-    OVEN
+    UNSALTED_BUTTER,
 } = require('./ingredients');
 
 module.exports = {

@@ -10,20 +10,20 @@ const rawZoomed = '../assets/Products/pao-de-queijo-mixer-zoomed.jpeg';
 const raw = '../assets/Products/pao-de-queijo-mixer.jpeg';
 // const first = '../assets/Products/pao-de-queijo-zoomed-cheeseballs.jpeg';
 const plated = '../assets/Products/pao-de-queijo-plated.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_SHEET,
-    TAPIOCA_STARCH,
-    MILK,
-    VEGETABLE_OIL,
-    PARMESAN_CHEESE,
-    MOZZARELLA_CHEESE,
     EGG,
-    SALT,
-    WATER,
+    MILK,
+    MOZZARELLA_CHEESE,
     OVEN,
-    STAND_MIXER,
+    PARMESAN_CHEESE,
+    SALT,
     SPATULA,
+    STAND_MIXER,
+    TAPIOCA_STARCH,
+    VEGETABLE_OIL,
+    WATER,
 } = require('./ingredients');
 
 const STARCH_SECTION = 'Starch';

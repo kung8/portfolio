@@ -7,26 +7,26 @@ const aerial = '../assets/Products/american-omelette-plated-aerial.jpeg';
 const halved = '../assets/Products/american-omelette-plated-halved.jpeg';
 const moreCookedZoomed = '../assets/Products/american-omelette-plated-more-cooked-zoomed.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS, REHEAT_DURATION_UNIT } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_DURATION_UNIT, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
 const {
-    EGG,
-    SALT,
+    BASIL,
     BLACK_PEPPER,
-    YELLOW_ONION,
+    COOKED_HAM,
+    CUTTING_BOARD,
+    EGG,
+    FORK,
+    FRYING_PAN,
+    KNIFE,
+    MUSHROOM,
     RED_BELL_PEPPER,
     ROMA_TOMATO,
-    COOKED_HAM,
-    BASIL,
-    UNSALTED_BUTTER,
-    MUSHROOM,
-    WATER,
-    CUTTING_BOARD,
-    KNIFE,
+    SALT,
     SMALL_BOWL,
-    FORK,
     SPATULA,
     STOVE,
-    FRYING_PAN,
+    UNSALTED_BUTTER,
+    WATER,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 const FLIPPING_METHOD = 'Flipping Method';

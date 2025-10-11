@@ -5,29 +5,29 @@ const onion = '../assets/Products/chicken-katsudon-onion.jpeg';
 const mirin = '../assets/Products/chicken-katsudon-onion-in-mirin.jpeg';
 const layered = '../assets/Products/chicken-katsudon-layered.jpeg';
 const finished = '../assets/Products/chicken-katsudon-finished.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    BAKING_SHEET,
-    BONELESS_PORK_CHOPS,
-    SALT,
-    BLACK_PEPPER,
     ALL_PURPOSE_FLOUR,
-    EGG,
-    PANKO_BREADCRUMBS,
-    VEGETABLE_OIL,
+    BAKING_SHEET,
+    BLACK_PEPPER,
+    BONELESS_PORK_CHOPS,
     CHICKEN_BROTH,
-    WHITE_SUGAR,
-    LIGHT_SOY_SAUCE,
-    MIRIN,
-    YELLOW_ONION,
-    JASMINE_RICE,
-    GREEN_ONION,
-    STOVE,
     COOLING_RACK,
-    PAPER_TOWELS,
-    MEDIUM_BOWL,
+    EGG,
     FRYING_PAN,
+    GREEN_ONION,
+    JASMINE_RICE,
     LARGE_POT,
+    LIGHT_SOY_SAUCE,
+    MEDIUM_BOWL,
+    MIRIN,
+    PANKO_BREADCRUMBS,
+    PAPER_TOWELS,
+    SALT,
+    STOVE,
+    VEGETABLE_OIL,
+    WHITE_SUGAR,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 module.exports = {

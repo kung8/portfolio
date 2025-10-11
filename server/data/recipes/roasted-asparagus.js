@@ -3,8 +3,8 @@ const asparagus2 = '../assets/Products/roasted-asparagus-2.jpeg';
 const asparagus3 = '../assets/Products/roasted-asparagus-3.jpeg';
 const asparagus4 = '../assets/Products/roasted-asparagus-4.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BAKING_SHEET, ASPARAGUS, OLIVE_OIL, SALT, BLACK_PEPPER, PARMESAN_CHEESE, LEMON_JUICE, RED_PEPPER_FLAKES, UNSALTED_BUTTER, ALUMINUM_FOIL, OVEN } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALUMINUM_FOIL, ASPARAGUS, BAKING_SHEET, BLACK_PEPPER, LEMON_JUICE, OLIVE_OIL, OVEN, PARMESAN_CHEESE, RED_PEPPER_FLAKES, SALT, UNSALTED_BUTTER } = require('./ingredients');
 
 module.exports = {
     cardName: 'Roasted Asparagus',

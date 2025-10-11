@@ -8,8 +8,8 @@ const muddy7 = '../assets/Products/muddy-buddies-7.jpeg';
 const muddy8 = '../assets/Products/muddy-buddies-8.jpeg';
 const muddy9 = '../assets/Products/muddy-buddies-9.jpeg';
 const muddy11 = '../assets/Products/muddy-buddies-11.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
-const { MIXING_BOWL, SEMI_SWEET_CHOCOLATE_CHIPS, PEANUT_BUTTER, CHEX_CEREAL, POWDERED_SUGAR, SAUCEPAN, REFRIGERATOR, MICROWAVE, STOVE } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CHEX_CEREAL, MICROWAVE, MIXING_BOWL, PEANUT_BUTTER, POWDERED_SUGAR, REFRIGERATOR, SAUCEPAN, SEMI_SWEET_CHOCOLATE_CHIPS, STOVE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Muddy Buddies',

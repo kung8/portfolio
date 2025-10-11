@@ -5,27 +5,27 @@ const bulgogi4 = '../assets/Products/beef-bulgogi-4.jpeg';
 const bulgogi5 = '../assets/Products/beef-bulgogi-5.jpeg';
 const bulgogi6 = '../assets/Products/beef-bulgogi-6.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BEEF,
-    PEAR,
-    SESAME_OIL,
-    LIGHT_SOY_SAUCE,
     BROWN_SUGAR,
+    CUTTING_BOARD,
+    FRYING_PAN,
     GARLIC,
     GINGER,
     GOCHUJANG_SAUCE,
-    VEGETABLE_OIL,
-    JASMINE_RICE,
     GREEN_ONION,
+    JASMINE_RICE,
+    KNIFE,
+    LIGHT_SOY_SAUCE,
+    MEASURING_SPOONS,
+    PEAR,
+    PEELER,
+    SESAME_OIL,
     SESAME_SEEDS,
     STOVE,
+    VEGETABLE_OIL,
     ZIPLOC_BAG,
-    PEELER,
-    CUTTING_BOARD,
-    KNIFE,
-    MEASURING_SPOONS,
-    FRYING_PAN,
 } = require('./ingredients');
 
 const BEEF_SECTION = 'Beef';

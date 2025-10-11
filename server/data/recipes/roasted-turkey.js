@@ -17,17 +17,17 @@ const rub5 = '../assets/Products/roasted-turkey-rub-5.jpeg';
 
 const turkeyCookingTable = '../assets/Products/cooking-turkey-estimates.png';
 const turkeyThawingTable = '../assets/Products/thawing-turkey-estimates.png';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
 const {
-    TURKEY,
-    LEMON,
+    BLACK_PEPPER,
     GARLIC,
+    LEMON,
     OLIVE_OIL,
-    UNSALTED_BUTTER,
-    THYME,
     ROSEMARY,
     SALT,
-    BLACK_PEPPER,
+    THYME,
+    TURKEY,
+    UNSALTED_BUTTER,
 } = require('./ingredients');
 
 const TURKEY_SECTION = 'Turkey';

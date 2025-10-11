@@ -8,18 +8,18 @@ const frenchToast7 = '../assets/Products/french-toast-7.jpeg';
 const frenchToast8 = '../assets/Products/french-toast-8.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
-    EGG,
-    VANILLA_EXTRACT,
-    CINNAMON,
-    MILK,
     BREAD,
-    UNSALTED_BUTTER,
-    STOVE,
-    MEDIUM_BOWL,
-    RUBBER_SPATULA,
+    CINNAMON,
+    EGG,
     FRYING_PAN,
     MEASURING_CUPS,
     MEASURING_SPOONS,
+    MEDIUM_BOWL,
+    MILK,
+    RUBBER_SPATULA,
+    STOVE,
+    UNSALTED_BUTTER,
+    VANILLA_EXTRACT,
 } = require('./ingredients');
 
 module.exports = {

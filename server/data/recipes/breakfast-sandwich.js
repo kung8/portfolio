@@ -1,13 +1,13 @@
 const breakfastSandwich = '../assets/Products/breakfast-sandwich.jpeg';
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    EGG,
-    COOKED_HAM,
     BISCUITS,
     CHEDDAR_CHEESE,
-    STOVE,
+    COOKED_HAM,
+    EGG,
     FRYING_PAN,
     SPATULA,
+    STOVE,
 } = require('./ingredients');
 const biscuits = require('./biscuits-and-gravy');
 

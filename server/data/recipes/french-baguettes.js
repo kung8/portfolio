@@ -8,8 +8,8 @@ const baguette7 = '../assets/Products/french-baguette-7.jpeg';
 const baguette8 = '../assets/Products/french-baguette-8.jpeg';
 const baguette9 = '../assets/Products/french-baguette-9.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { ALL_PURPOSE_FLOUR, SALT, YEAST, WATER } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALL_PURPOSE_FLOUR, SALT, WATER, YEAST } = require('./ingredients');
 
 const BAGUETTES = 'Baguettes';
 

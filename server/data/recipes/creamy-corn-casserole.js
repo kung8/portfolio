@@ -4,8 +4,8 @@ const casserole3 = '../assets/Products/corn-casserole-3.jpeg';
 const casserole4 = '../assets/Products/corn-casserole-4.jpeg';
 const casserole5 = '../assets/Products/corn-casserole-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { MIXING_BOWL, CANNED_SWEET_CORN, CANNED_CREAMED_CORN, CORNBREAD_MIX, SOUR_CREAM, UNSALTED_BUTTER, EGG, CASSEROLE_DISH, OVEN } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CANNED_CREAMED_CORN, CANNED_SWEET_CORN, CASSEROLE_DISH, CORNBREAD_MIX, EGG, MIXING_BOWL, OVEN, SOUR_CREAM, UNSALTED_BUTTER } = require('./ingredients');
 
 const PREP_BAKE = 'Prep Bake';
 const PREP_BATTER = 'Prep Batter';

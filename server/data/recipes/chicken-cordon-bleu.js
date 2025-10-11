@@ -10,17 +10,17 @@ const sauce1 = '../assets/Products/chicken-cordon-bleu-sauce-1.jpeg';
 const sauce3 = '../assets/Products/chicken-cordon-bleu-sauce-3.jpeg';
 const cooked1 = '../assets/Products/chicken-cordon-bleu-cooked-1.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, METHODS, PROTEIN, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    UNSALTED_BUTTER,
-    MAYONNAISE,
-    YELLOW_MUSTARD,
-    SALT,
     BLACK_PEPPER,
+    BONELESS_AND_SKINLESS_CHICKEN_BREAST,
     COOKED_HAM,
     CORN_FLAKES_CEREAL,
-    BONELESS_AND_SKINLESS_CHICKEN_BREAST,
+    MAYONNAISE,
     PROVOLONE_CHEESE,
+    SALT,
+    UNSALTED_BUTTER,
+    YELLOW_MUSTARD,
 } = require('./ingredients');
 
 module.exports = {

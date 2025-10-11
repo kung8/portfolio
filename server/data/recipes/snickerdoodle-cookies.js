@@ -9,24 +9,24 @@ const pan = '../assets/Products/snickerdoodle-dough-in-pan.jpeg';
 const cooked = '../assets/Products/snickerdoodle-cooked.jpeg';
 const plated1 = '../assets/Products/snickerdoodle-plated-1.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    MIXING_BOWL,
-    BAKING_SHEET, 
     ALL_PURPOSE_FLOUR,
-    CREAM_OF_TARTAR,
+    BAKING_SHEET,
     BAKING_SODA,
-    SALT,
-    UNSALTED_BUTTER,
-    WHITE_SUGAR,
-    EGG,
-    VANILLA_EXTRACT,
     CINNAMON,
+    CREAM_OF_TARTAR,
+    EGG,
+    MIXING_BOWL,
+    OVEN,
+    PLATE,
+    SALT,
+    SILICON_BAKING_MAT,
     SMALL_BOWL,
     SPATULA,
-    PLATE,
-    SILICON_BAKING_MAT,
-    OVEN,
+    UNSALTED_BUTTER,
+    VANILLA_EXTRACT,
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 const COATING = 'Coating';

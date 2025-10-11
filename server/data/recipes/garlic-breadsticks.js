@@ -5,21 +5,21 @@ const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
 const tossing = '../assets/Products/pizza-toss.MOV';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
-    BAKING_SHEET, 
+    BAKING_SHEET,
     BREAD_FLOUR,
-    SALT,
-    HONEY,
     GARLIC,
-    UNSALTED_BUTTER,
-    PARSLEY,
-    OLIVE_OIL,
-    YEAST,
+    HONEY,
     MARINARA_SAUCE,
-    WATER,
-    OVEN,
     MIXING_BOWL,
-    ROLLING_PIN,
+    OLIVE_OIL,
+    OVEN,
+    PARSLEY,
     PLASTIC_WRAP,
+    ROLLING_PIN,
+    SALT,
+    UNSALTED_BUTTER,
+    WATER,
+    YEAST,
 } = require('./ingredients');
 
 module.exports = {

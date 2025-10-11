@@ -8,10 +8,11 @@ const rice = '../assets/Products/korean-fried-chicken-with-rice.jpeg';
 const chicken = '../assets/Products/korean-fried-chicken.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
-    BAKING_SHEET,
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
+    BAKING_SHEET,
     CHICKEN_THIGH,
+    COOLING_RACK,
     CORNSTARCH,
     GARLIC,
     GINGER,
@@ -19,22 +20,21 @@ const {
     HOISIN_SAUCE,
     HONEY,
     KETCHUP,
+    LARGE_BOWL,
+    LARGE_POT,
     LIGHT_SOY_SAUCE,
+    MEDIUM_BOWL,
     MIRIN,
+    PAPER_TOWELS,
     RICE_WINE_VINEGAR,
     SALT,
     SESAME_OIL,
+    STOVE,
     STRAWBERRY_JAM,
     THAI_CHILI_PEPPER,
     VEGETABLE_OIL,
-    WHITE_SUGAR,
     WATER,
-    STOVE,
-    LARGE_BOWL,
-    MEDIUM_BOWL,
-    LARGE_POT,
-    COOLING_RACK,
-    PAPER_TOWELS
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 const SWEET_AND_TANGY_SAUCE = 'Sweet and Tangy Sauce';

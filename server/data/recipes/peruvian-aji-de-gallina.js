@@ -8,31 +8,31 @@ const garlic = '../assets/Products/aji-de-gallina-garlic.jpeg';
 const onion = '../assets/Products/aji-de-gallina-onion.jpeg';
 const shredded = '../assets/Products/aji-de-gallina-shredded-chicken.jpeg';
 const aji = '../assets/Products/aji-de-gallina.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    MIXING_BOWL,
-    CHICKEN_BREAST,
-    YELLOW_ONION,
-    VEGETABLE_OIL,
-    GARLIC,
-    YELLOW_BELL_PEPPER,
-    BREAD,
-    MILK,
-    SALT,
     BLACK_PEPPER,
-    OREGANO,
-    NUTMEG,
-    JASMINE_RICE,
     BLENDER,
-    STOVE,
+    BREAD,
+    CHICKEN_BREAST,
+    CUTTING_BOARD,
+    GARLIC,
+    JASMINE_RICE,
+    KNIFE,
     LARGE_PAN,
     LARGE_POT,
     MEASURING_CUPS,
     MEASURING_SPOONS,
-    CUTTING_BOARD,
-    KNIFE,
+    MILK,
+    MIXING_BOWL,
+    NUTMEG,
+    OREGANO,
+    SALT,
     SMALL_BOWL,
     SPOON,
+    STOVE,
+    VEGETABLE_OIL,
+    YELLOW_BELL_PEPPER,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 const ONION_SECTION = 'Onion Mixture';

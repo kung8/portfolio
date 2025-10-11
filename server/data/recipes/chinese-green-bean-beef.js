@@ -8,23 +8,23 @@ const beef = '../assets/Products/chinese-green-bean-and-beef-raw-beef.jpeg';
 const sauce = '../assets/Products/chinese-green-bean-and-beef-sauce.jpeg';
 const sautedBeans = '../assets/Products/chinese-green-bean-and-beef-sauted-green-beans.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    GREEN_BEAN,
     BEEF_CHUCK_ROAST,
-    SALT,
     BLACK_PEPPER,
-    GARLIC,
-    LIGHT_SOY_SAUCE,
-    GREEN_ONION,
     CHICKEN_BROTH,
+    GARLIC,
+    GREEN_BEAN,
+    GREEN_ONION,
+    LIGHT_SOY_SAUCE,
     OYSTER_SAUCE,
-    RICE_WINE_VINEGAR,
     RED_PEPPER_FLAKES,
-    VEGETABLE_OIL,
-    STOVE,
+    RICE_WINE_VINEGAR,
+    SALT,
     SMALL_BOWL,
     SPATULA,
+    STOVE,
+    VEGETABLE_OIL,
     WOK,
 } = require('./ingredients');
 

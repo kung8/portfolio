@@ -13,20 +13,20 @@ const raw = '../assets/Products/pretzels-on-baking-sheet-raw.jpeg';
 const rope = '../assets/Products/pretzels-rope.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER } = require("./constants");
 const {
-    YEAST,
-    SALT,
-    BROWN_SUGAR,
-    UNSALTED_BUTTER,
     ALL_PURPOSE_FLOUR,
-    COARSE_SALT,
-    BAKING_SODA,
-    WATER,
-    STOVE,
-    OVEN,
-    STAND_MIXER,
-    SLOTTED_SPOON,
-    SILICON_BAKING_MAT,
     BAKING_SHEET,
+    BAKING_SODA,
+    BROWN_SUGAR,
+    COARSE_SALT,
+    OVEN,
+    SALT,
+    SILICON_BAKING_MAT,
+    SLOTTED_SPOON,
+    STAND_MIXER,
+    STOVE,
+    UNSALTED_BUTTER,
+    WATER,
+    YEAST,
 } = require('./ingredients');
 
 module.exports = {

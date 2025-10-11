@@ -1,22 +1,22 @@
 const tieu1 = '../assets/Products/banh-tieu-1.jpeg';
 const tieu2 = '../assets/Products/banh-tieu-2.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
 const {
+    BAKING_POWDER,
     BAKING_SHEET,
     BREAD_FLOUR,
-    WHITE_SUGAR,
+    COOLING_RACK,
+    LARGE_BOWL,
+    PAPER_TOWELS,
+    POT,
     SALT,
-    YEAST,
-    BAKING_POWDER,
     SESAME_SEEDS,
+    STOVE,
+    TONGS,
     VEGETABLE_OIL,
     WATER,
-    STOVE,
-    LARGE_BOWL,
-    POT,
-    TONGS,
-    PAPER_TOWELS,
-    COOLING_RACK,
+    WHITE_SUGAR,
+    YEAST,
 } = require('./ingredients');
 
 module.exports = {

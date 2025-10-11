@@ -1,4 +1,4 @@
-const { CATEGORIES, SECTIONS, GENRES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
 const creamedSugar = '../assets/Products/banana-bread-creamed-sugar.jpeg';
 const mixture = '../assets/Products/banana-bread-flour-mixture.jpeg';
 const mashed = '../assets/Products/banana-bread-mashed-banana.jpeg';
@@ -7,22 +7,22 @@ const baked = '../assets/Products/banana-bread-with-chocolate-chips-baked.jpeg';
 const walnuts = '../assets/Products/banana-bread-with-walnuts.jpeg';
 const walnutsBatter = '../assets/Products/banana-bread-batter-with-walnuts.jpeg';
 const {
-    BANANA,
-    UNSALTED_BUTTER,
-    WHITE_SUGAR,
-    EGG,
     ALL_PURPOSE_FLOUR,
     BAKING_SODA,
-    SALT,
-    VANILLA_EXTRACT,
-    SEMI_SWEET_CHOCOLATE_CHIPS,
-    WALNUTS,
-    MIXING_BOWL,
-    LARGE_BOWL,
-    RUBBER_SPATULA,
+    BANANA,
     BREAD_PAN,
-    TOOTHPICK,
+    EGG,
+    LARGE_BOWL,
+    MIXING_BOWL,
     OVEN,
+    RUBBER_SPATULA,
+    SALT,
+    SEMI_SWEET_CHOCOLATE_CHIPS,
+    TOOTHPICK,
+    UNSALTED_BUTTER,
+    VANILLA_EXTRACT,
+    WALNUTS,
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 module.exports = {

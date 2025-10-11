@@ -12,8 +12,8 @@ const wet4 = '../assets/Products/brickle-bars-wet-4.jpeg';
 const wet7 = '../assets/Products/brickle-bars-wet-7.jpeg';
 const plated4 = '../assets/Products/brickle-bars-plated-4.jpeg';
 const plated6 = '../assets/Products/brickle-bars-plated-6.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { MIXING_BOWL, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, WHITE_SUGAR, BROWN_SUGAR, EGG, VANILLA_EXTRACT, ENGLISH_TOFFEE_BITS, OVEN, BAKING_PAN, MEDIUM_BOWL, SPATULA } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALL_PURPOSE_FLOUR, BAKING_PAN, BAKING_POWDER, BROWN_SUGAR, EGG, ENGLISH_TOFFEE_BITS, MEDIUM_BOWL, MIXING_BOWL, OVEN, SALT, SPATULA, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
 const PREPARATION = 'Preparation';
 const DRY_INGREDIENTS = 'Dry Ingredients';

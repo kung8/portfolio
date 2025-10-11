@@ -6,19 +6,19 @@ const tossing = '../assets/Products/pizza-toss.MOV';
 const { BAKING_SHEET, CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
     BREAD_FLOUR,
-    SALT,
-    HONEY,
-    OLIVE_OIL,
-    MOZZARELLA_CHEESE,
-    UNSALTED_BUTTER,
     GARLIC,
-    YEAST,
-    MARINARA_SAUCE,
-    WATER,
-    OVEN,
+    HONEY,
     LARGE_BOWL,
-    ROLLING_PIN,
+    MARINARA_SAUCE,
+    MOZZARELLA_CHEESE,
+    OLIVE_OIL,
+    OVEN,
     PLASTIC_WRAP,
+    ROLLING_PIN,
+    SALT,
+    UNSALTED_BUTTER,
+    WATER,
+    YEAST,
 } = require('./ingredients');
 
 module.exports = {

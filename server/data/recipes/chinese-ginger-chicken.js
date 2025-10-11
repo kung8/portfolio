@@ -7,17 +7,17 @@ const plated = '../assets/Products/ginger-chicken-plated.jpeg';
 const sauce = '../assets/Products/ginger-chicken-soy-sauce.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require("./constants");
 const {
+    BLACK_PEPPER,
     CHICKEN_THIGH,
-    GINGER,
+    CORNSTARCH,
     GARLIC,
+    GINGER,
+    LARGE_BOWL,
     LIGHT_SOY_SAUCE,
     SALT,
-    BLACK_PEPPER,
-    CORNSTARCH,
+    SPATULA,
     STOVE,
     WOK,
-    SPATULA,
-    LARGE_BOWL,
 } = require('./ingredients');
 
 module.exports = {

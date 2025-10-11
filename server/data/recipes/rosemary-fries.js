@@ -6,8 +6,8 @@ const seasonings1 = '../assets/Products/rosemary-fries-seasonings-1.jpeg';
 const seasonings2 = '../assets/Products/rosemary-fries-seasonings-2.jpeg';
 const tray2 = '../assets/Products/rosemary-fries-tray-2.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { MIXING_BOWL, OLIVE_OIL, ROSEMARY, GARLIC, CORNSTARCH, SALT, BLACK_PEPPER, SWEET_POTATO, BAKING_SHEET, OVEN } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { BAKING_SHEET, BLACK_PEPPER, CORNSTARCH, GARLIC, MIXING_BOWL, OLIVE_OIL, OVEN, ROSEMARY, SALT, SWEET_POTATO } = require('./ingredients');
 
 module.exports = {
     cardName: 'Rosemary Fries',

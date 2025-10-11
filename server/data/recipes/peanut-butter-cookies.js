@@ -12,8 +12,8 @@ const cookies12 = '../assets/Products/peanut-butter-cookies-12.jpeg';
 const cookies13 = '../assets/Products/peanut-butter-cookies-13.jpeg';
 const cookies14 = '../assets/Products/peanut-butter-cookies-14.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BAKING_SHEET, ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, PEANUT_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGG, BAKING_POWDER, SALT, SILICON_BAKING_MAT, STAND_MIXER, OVEN } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SHEET, BROWN_SUGAR, EGG, OVEN, PEANUT_BUTTER, SALT, SILICON_BAKING_MAT, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
     cardName: 'Peanut Butter Cookies',

@@ -7,22 +7,22 @@ const lid = '../assets/Products/singaporean-chicken-rice-lid.jpeg';
 const chili = '../assets/Products/singaporean-chicken-rice-chili-sauce.jpeg';
 const cooked = '../assets/Products/singaporean-chicken-rice-cooked.jpeg';
 const plated = '../assets/Products/singaporean-chicken-rice-plated.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    CHICKEN_BROTH,
     CHICKEN_THIGH,
-    SESAME_OIL,
-    SALT,
-    JASMINE_RICE,
+    CUCUMBER,
     GARLIC,
     GINGER,
     GREEN_ONION,
-    CHICKEN_BROTH,
-    TURMERIC,
-    SRIRACHA_SAUCE,
+    JASMINE_RICE,
     LIME_JUICE,
-    WHITE_SUGAR,
-    CUCUMBER,
     ROMA_TOMATO,
+    SALT,
+    SESAME_OIL,
+    SRIRACHA_SAUCE,
+    TURMERIC,
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 const CHILI_SAUCE = 'Chili Sauce';

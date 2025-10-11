@@ -8,20 +8,20 @@ const melted = '../assets/Products/peach-cobbler-melted-butter.jpeg'
 const milk = '../assets/Products/peach-cobbler-milk.jpeg'
 const mixed = '../assets/Products/peach-cobbler-mixed.jpeg'
 const peaches = '../assets/Products/peach-cobbler-peaches.jpeg'
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    MIXING_BOWL,
-    UNSALTED_BUTTER,
     ALL_PURPOSE_FLOUR,
-    WHITE_SUGAR,
-    BAKING_POWDER,
-    SALT,
-    MILK,
-    CINNAMON,
-    CANNED_PEACH,
     BAKING_PAN,
-    RUBBER_SPATULA,
+    BAKING_POWDER,
+    CANNED_PEACH,
+    CINNAMON,
+    MILK,
+    MIXING_BOWL,
     OVEN,
+    RUBBER_SPATULA,
+    SALT,
+    UNSALTED_BUTTER,
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 module.exports = {

@@ -9,7 +9,7 @@ const marinating = '../assets/Products/broccoli-beef-marinating-beef.jpeg';
 const thickened = '../assets/Products/broccoli-beef-sauce-thickened.jpeg';
 const sauce = '../assets/Products/broccoli-beef-sauce.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_SODA,
     BEEF,
@@ -17,17 +17,17 @@ const {
     CORNSTARCH,
     GARLIC,
     GINGER,
+    LARGE_BOWL,
+    LARGE_POT,
     LIGHT_SOY_SAUCE,
     SALT,
     SESAME_OIL,
-    SHAOXING_WINE,
     SESAME_SEEDS,
-    VEGETABLE_OIL,
-    WHITE_SUGAR,
-    WATER,
+    SHAOXING_WINE,
     STOVE,
-    LARGE_POT,
-    LARGE_BOWL,
+    VEGETABLE_OIL,
+    WATER,
+    WHITE_SUGAR,
     WOK,
 } = require('./ingredients');
 

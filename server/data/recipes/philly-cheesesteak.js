@@ -3,23 +3,23 @@ const cheesesteak2 = '../assets/Products/philly-cheesesteak-2.jpeg';
 const cheesesteak3 = '../assets/Products/philly-cheesesteak-3.jpeg';
 const cheesesteak4 = '../assets/Products/philly-cheesesteak-4.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    BEEF_RIBEYE_STEAK,
+    BLACK_PEPPER,
+    CUTTING_BOARD,
+    FRYING_PAN,
+    HOAGIE_BREAD,
+    KNIFE,
+    MEDIUM_BOWL,
+    MUSHROOM,
     OLIVE_OIL,
+    PLATE,
+    PROVOLONE_CHEESE,
     RED_BELL_PEPPER,
     SALT,
-    BLACK_PEPPER,
-    HOAGIE_BREAD,
-    BEEF_RIBEYE_STEAK,
-    YELLOW_ONION,
-    MUSHROOM,
-    PROVOLONE_CHEESE,
     STOVE,
-    CUTTING_BOARD,
-    KNIFE,
-    PLATE,
-    FRYING_PAN,
-    MEDIUM_BOWL,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 module.exports = {

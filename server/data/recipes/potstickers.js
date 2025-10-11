@@ -6,24 +6,24 @@ const filling = '../assets/Products/potstickers-filling.jpeg';
 const raw = '../assets/Products/potstickers-raw.jpeg';
 const zoomed = '../assets/Products/potstickers-zoomed.jpeg';
 const potstickers = '../assets/Products/potstickers.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    GROUND_PORK,
-    GARLIC,
-    GREEN_ONION,
-    GINGER,
-    LIGHT_SOY_SAUCE,
-    SESAME_OIL,
-    CAYENNE_PEPPER,
-    CABBAGE,
     ALL_PURPOSE_FLOUR,
+    CABBAGE,
+    CAYENNE_PEPPER,
+    FRYING_PAN,
+    GARLIC,
+    GINGER,
+    GREEN_ONION,
+    GROUND_PORK,
     HOT_WATER,
-    SALT,
+    LIGHT_SOY_SAUCE,
     RICE_WINE_VINEGAR,
+    SALT,
+    SESAME_OIL,
+    STOVE,
     VEGETABLE_OIL,
     WATER,
-    STOVE,
-    FRYING_PAN,
 } = require('./ingredients');
 
 const DIPPING_SAUCE = 'Dipping Sauce';

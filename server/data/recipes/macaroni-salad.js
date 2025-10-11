@@ -6,23 +6,23 @@ const salad5 = '../assets/Products/macaroni-salad-5.jpeg';
 const salad6 = '../assets/Products/macaroni-salad-6.jpeg';
 // const salad7 = '../assets/Products/macaroni-salad-7.jpeg';
 
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    ELBOW_MACARONI,
-    MAYONNAISE,
-    WHITE_VINEGAR,
-    WHITE_SUGAR,
-    YELLOW_MUSTARD,
-    SALT,
     BLACK_PEPPER,
-    YELLOW_ONION,
     CELERY,
+    ELBOW_MACARONI,
     GREEN_BELL_PEPPER,
-    STOVE,
     LARGE_POT,
-    RUBBER_SPATULA,
-    STRAINER,
+    MAYONNAISE,
     MIXING_BOWL,
+    RUBBER_SPATULA,
+    SALT,
+    STOVE,
+    STRAINER,
+    WHITE_SUGAR,
+    WHITE_VINEGAR,
+    YELLOW_MUSTARD,
+    YELLOW_ONION,
 } = require('./ingredients');
 
 const MAYO_MIXTURE = 'Mayo Mixture';

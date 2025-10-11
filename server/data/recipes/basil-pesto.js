@@ -9,19 +9,19 @@ const parmesan = '../assets/Products/basil-pesto-parmesan.jpeg';
 const parmesanBlended = '../assets/Products/basil-pesto-parmesan-blended.jpeg';
 const pine = '../assets/Products/basil-pesto-pine-nuts.jpeg';
 const topped = '../assets/Products/basil-pesto-topped.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    PINE_NUTS,
-    LEMON_JUICE,
-    GARLIC,
-    SEA_SALT,
-    BLACK_PEPPER,
     BASIL_LEAF,
+    BLACK_PEPPER,
+    BLENDER,
+    GARLIC,
+    LEMON_JUICE,
     OLIVE_OIL,
     PARMESAN_CHEESE,
+    PINE_NUTS,
+    SEA_SALT,
     SPAGHETTI_NOODLES,
-    BLENDER,
-    STOVE
+    STOVE,
 } = require('./ingredients');
 
 module.exports = {

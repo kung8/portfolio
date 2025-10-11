@@ -6,8 +6,8 @@ const mochi5 = '../assets/Products/easy-mochi-5.jpeg';
 const mochi6 = '../assets/Products/easy-mochi-6.jpeg';
 const mochi7 = '../assets/Products/easy-mochi-7.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER } = require('./constants');
-const { ICE_CREAM, MOCHIKO, CORNSTARCH } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CORNSTARCH, ICE_CREAM, MOCHIKO } = require('./ingredients');
 
 const MOCHI_SECTION = 'Mochi';
 const DUSTING_SECTION = 'Dusting';

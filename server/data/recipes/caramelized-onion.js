@@ -5,15 +5,15 @@ const cooked = '../assets/Products/caramelized-onion-cooked.jpeg';
 const sliced = '../assets/Products/caramelized-onion-thinly-sliced.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
-    RED_ONION,
-    UNSALTED_BUTTER,
-    BROWN_SUGAR,
-    LIGHT_SOY_SAUCE,
-    SALT,
-    BLACK_PEPPER,
     BALSAMIC_VINEGAR,
-    STOVE,
+    BLACK_PEPPER,
+    BROWN_SUGAR,
     FRYING_PAN,
+    LIGHT_SOY_SAUCE,
+    RED_ONION,
+    SALT,
+    STOVE,
+    UNSALTED_BUTTER,
 } = require('./ingredients');
 
 module.exports = {

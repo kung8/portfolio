@@ -4,10 +4,10 @@ const cabbage2 = '../assets/Products/cabbage-stir-fry-2.jpeg';
 const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
     CABBAGE,
+    FRYING_PAN,
     RED_PEPPER_FLAKES,
     SESAME_OIL,
     STOVE,
-    FRYING_PAN,
 } = require('./ingredients');
 
 module.exports = {
