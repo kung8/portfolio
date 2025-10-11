@@ -70,7 +70,6 @@ module.exports = {
         { step: 'Turn on a hood fan.', section: HEAT_PASTE },
         { step: 'Add curry paste. Cook and stir (about 2 to 3 minutes).', section: HEAT_PASTE },
 
-        { step: 'Add half the coconut milk. Stir.', section: HEAT_LIQUIDS },
         { step: `Add the "${LIQUIDS_SECTION}" section ingredients. Bring to a boil.`, section: HEAT_LIQUIDS },
 
         { step: 'Add the onion and chicken.', section: SECTIONS.COOK_CHICKEN },
