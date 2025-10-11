@@ -8,7 +8,7 @@ const biscuits2 = '../assets/Products/biscuits-and-gravy-2.jpeg';
 const biscuits3 = '../assets/Products/biscuits-and-gravy-3.jpeg';
 const biscuits4 = '../assets/Products/biscuits-and-gravy-4.jpeg';
 const biscuits5 = '../assets/Products/biscuits-and-gravy-5.jpeg';
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require("./constants");
+const { BAKING_SHEET, MIXING_BOWL, CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
@@ -20,6 +20,13 @@ const {
     MILK,
     BLACK_PEPPER,
     GARLIC_POWDER,
+    PLATE,
+    DOUGH_KNIFE,
+    PARCHMENT_PAPER,
+    SAUCEPAN,
+    SPATULA,
+    STOVE,
+    OVEN,
 } = require('./ingredients');
 
 const BISCUITS = 'Biscuits';
@@ -66,18 +73,17 @@ module.exports = {
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', section: GRAVY },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
+        OVEN,
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'clean counter' },
-        { name: 'dough knife' },
-        { name: 'plate' },
-        { name: 'baking sheet' },
-        { name: 'parchment paper' },
-        { name: 'sauce pan' },
-        { name: 'spatula' },
+        MIXING_BOWL,
+        DOUGH_KNIFE,
+        PLATE,
+        BAKING_SHEET,
+        PARCHMENT_PAPER,
+        SAUCEPAN,
+        SPATULA,
     ],
     directions: [
         { step: 'Preheat the oven to 475ºF.', section: BISCUITS },

@@ -1,6 +1,7 @@
 const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    MIXING_BOWL,
     CHICKEN_BREAST,
     OLIVE_OIL,
     YELLOW_ONION,
@@ -13,6 +14,15 @@ const {
     ROSEMARY,
     THYME,
     EGG_NOODLES,
+    LARGE_PAN,
+    LARGE_POT,
+    MEASURING_CUPS,
+    MEASURING_SPOONS,
+    CUTTING_BOARD,
+    KNIFE,
+    SMALL_BOWL,
+    SPOON,
+    STOVE,
 } = require('./ingredients');
 
 module.exports = {
@@ -46,18 +56,18 @@ module.exports = {
         { ...EGG_NOODLES, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pan' },
-        { name: 'large pot' },
-        { name: 'measuring cups' },
-        { name: 'measuring spoons' },
-        { name: 'cutting boards' },
-        { name: 'knives' },
-        { name: 'mixing bowl' },
-        { name: 'small bowl' },
-        { name: 'spoon' },
+        LARGE_PAN,
+        LARGE_POT,
+        MEASURING_CUPS,
+        MEASURING_SPOONS,
+        CUTTING_BOARD,
+        KNIFE,
+        MIXING_BOWL,
+        SMALL_BOWL,
+        SPOON,
     ],
     directions: [
         { step: 'Prep all the vegetables and add them to the mixing bowl. Then prep the raw chicken. Or best to use separate cutting boards to avoid cross contamination.', section: SECTIONS.MAIN },

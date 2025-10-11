@@ -12,7 +12,7 @@ const seasoned = '../assets/Products/garlic-chicken-with-herbs-seasoned-chicken.
 const wine = '../assets/Products/garlic-chicken-with-herbs-white-wine.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, SALT, BLACK_PEPPER, UNSALTED_BUTTER, GARLIC, CHICKEN_BROTH, FRESH_ROSEMARY, FRESH_SAGE, JASMINE_RICE, WHITE_WINE } = require('./ingredients');
+const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, SALT, BLACK_PEPPER, UNSALTED_BUTTER, GARLIC, CHICKEN_BROTH, FRESH_ROSEMARY, FRESH_SAGE, JASMINE_RICE, WHITE_WINE, STOVE, LARGE_PAN } = require('./ingredients');
 
 module.exports = {
     cardName: 'Garlic Chicken w/ Herbs',
@@ -45,10 +45,10 @@ module.exports = {
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pan' },
+        LARGE_PAN,
     ],
     directions: [
         { step: 'Season chicken with salt and pepper.', section: SECTIONS.CHICKEN, img: seasoned },

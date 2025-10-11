@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { PORK_BUTT, SALT, GARLIC, LIQUID_SMOKE } = require('./ingredients');
+const { PORK_BUTT, SALT, GARLIC, LIQUID_SMOKE, STOVE, SLOW_COOKER, FRYING_PAN, FORK } = require('./ingredients');
 
 module.exports = {
     wip: true,
@@ -28,12 +28,12 @@ module.exports = {
         { ...GARLIC, amount: 12, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: '', section: SECTIONS.PORK },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'slow cooker' },
+        STOVE,
+        SLOW_COOKER,
     ],
     supplies: [
-        { name: 'pan' },
-        { name: 'fork' },
+        FRYING_PAN,
+        FORK,
     ],
     directions: [
         { step: 'Over high heat, sear all sides of a roast until browned in a pan.', section: SECTIONS.PREP_PORK },

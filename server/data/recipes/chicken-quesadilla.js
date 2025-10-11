@@ -13,7 +13,7 @@ const quesadillas13 = '../assets/Products/chicken-quesadillas-13.jpeg';
 const quesadillas14 = '../assets/Products/chicken-quesadillas-14.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { CHILI_POWDER, SALT, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL, YELLOW_ONION, RED_BELL_PEPPER, GREEN_BELL_PEPPER, HOT_SAUCE, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, SALSA, GUACAMOLE, SOUR_CREAM, SHARP_CHEDDAR_CHEESE, WHEAT_TORTILLA } = require('./ingredients');
+const { MIXING_BOWL, CHILI_POWDER, SALT, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL, YELLOW_ONION, RED_BELL_PEPPER, GREEN_BELL_PEPPER, HOT_SAUCE, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, SALSA, GUACAMOLE, SOUR_CREAM, SHARP_CHEDDAR_CHEESE, WHEAT_TORTILLA, STOVE, SAUCEPAN, CUTTING_BOARD, SMALL_BOWL, FRYING_PAN, PLATE, PAPER_TOWELS, KNIFE } = require('./ingredients');
 
 const QUESADILLA = 'Quesadilla';
 const COOK_QUESADILLA = 'Cook Quesadilla';
@@ -61,17 +61,17 @@ module.exports = {
         { ...SOUR_CREAM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'cutting board' },
-        { name: 'mixing bowl' },
-        { name: 'small bowl' },
-        { name: 'frying pan' },
-        { name: 'plates' },
-        { name: 'paper towel' },
-        { name: 'knife' },
+        SAUCEPAN,
+        CUTTING_BOARD,
+        MIXING_BOWL,
+        SMALL_BOWL,
+        FRYING_PAN,
+        PLATE,
+        PAPER_TOWELS,
+        KNIFE,
     ],
     directions: [
         { step: 'In a small bowl, combine spices.', section: SECTIONS.PREP_SEASONINGS, img: quesadillas3 },

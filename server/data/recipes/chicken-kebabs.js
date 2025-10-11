@@ -1,6 +1,7 @@
 const kebabs = '../assets/Products/kebabs.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    BAKING_SHEET,
     LIGHT_SOY_SAUCE,
     TERIYAKI_SAUCE,
     VEGETABLE_OIL,
@@ -10,6 +11,12 @@ const {
     YELLOW_ONION,
     SALT,
     BLACK_PEPPER,
+    CUTTING_BOARD,
+    KNIFE,
+    ZIPLOC_BAG,
+    BAMBOO_SKEWERS,
+    ALUMINUM_FOIL,
+    OVEN,
 } = require('./ingredients');
 
 module.exports = {
@@ -40,19 +47,19 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN
     ],
     supplies: [
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: 'ziploc bag' },
-        { name: 'bamboo skewer' },
-        { name: 'baking sheet' },
-        { name: 'aluminum foil' },
+        CUTTING_BOARD,
+        KNIFE,
+        { ...ZIPLOC_BAG, additionalDetails: 'gallon-size' },
+        BAMBOO_SKEWERS,
+        BAKING_SHEET,
+        ALUMINUM_FOIL,
     ],
     directions: [
         { step: 'Make the marinade in a ziploc bag: adding soy sauce, sprite, oil, and garlic powder.', section: SECTIONS.MAIN },
-        { step: 'Cut the chicken into 1-inch pieces and marinate for 1 to 3 hours.', section: SECTIONS.MAIN },
+        { step: 'Cut the chicken into 1 inch pieces and marinate for 1 to 3 hours.', section: SECTIONS.MAIN },
         { step: 'Cut the veggies into large pieces.', section: SECTIONS.MAIN },
         { step: 'Preheat oven to 450ºF (whenever you are ready to actually cook).', section: SECTIONS.MAIN },
         { step: 'Place aluminum foil on the baking sheet.', section: SECTIONS.MAIN },

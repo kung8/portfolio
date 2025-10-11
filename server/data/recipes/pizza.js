@@ -30,6 +30,7 @@ const expandedWell = '../assets/Products/pizza-flour-expanded-well-with-water.jp
 const dough = '../assets/Products/pizza-dough-in-bowl.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
+    BAKING_SHEET,
     BREAD_FLOUR,
     SALT,
     HONEY,
@@ -63,6 +64,10 @@ const {
     BASIL_LEAF,
     BUFFALO_SAUCE,
     WATER,
+    OVEN,
+    LARGE_BOWL,
+    ROLLING_PIN,
+    PLASTIC_WRAP,
 } = require('./ingredients');
 
 const BBQ_CHICKEN_PIZZA = 'BBQ Chicken Pizza';
@@ -182,14 +187,13 @@ module.exports = {
         { ...RED_BELL_PEPPER, amount: '', unit: '', additionalDetails: 'sliced or diced', section: SUPREME_PIZZA },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'clean counter' },
-        { name: 'large bowl' },
-        { name: 'rolling pin' },
-        { name: 'plastic wrap or cooking towel' },
-        { name: 'baking sheet' },
+        LARGE_BOWL,
+        ROLLING_PIN,
+        PLASTIC_WRAP,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'On a clean counter, combine flour, salt, and yeast by hand. We are making focaccia bread.', section: SECTIONS.DOUGH },

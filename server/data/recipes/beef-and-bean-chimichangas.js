@@ -6,7 +6,7 @@ const chimichangas5 = '../assets/Products/beef-and-bean-chimichangas-5.jpeg';
 const chimichangas6 = '../assets/Products/beef-and-bean-chimichangas-6.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { GROUND_BEEF, YELLOW_ONION, GREEN_BELL_PEPPER, CORN, CHILI_POWDER, GARLIC_SALT, CUMIN, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, FLOUR_TORTILLA, LETTUCE, ROMA_TOMATO, REFRIED_BEANS, TACO_SAUCE } = require('./ingredients');
+const { GROUND_BEEF, YELLOW_ONION, GREEN_BELL_PEPPER, CORN, CHILI_POWDER, GARLIC_SALT, CUMIN, MONTEREY_JACK_CHEESE, UNSALTED_BUTTER, FLOUR_TORTILLA, LETTUCE, ROMA_TOMATO, REFRIED_BEANS, TACO_SAUCE, FRYING_PAN, BAKING_PAN, OVEN, STOVE } = require('./ingredients');
 
 const TORTILLA_AND_OTHER = 'Tortilla and Other';
 const PREP_OVEN = 'Prep Oven';
@@ -53,12 +53,12 @@ module.exports = {
         { ...ROMA_TOMATO, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
+        OVEN,
+        STOVE,
     ],
     supplies: [
-        { name: 'frying pan' },
-        { name: 'baking dish' },
+        FRYING_PAN,
+        BAKING_PAN,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: PREP_OVEN },
@@ -67,7 +67,7 @@ module.exports = {
         { step: 'Add the "Veggies" ingredients. Mix and cook until tender (about 5 minutes).', section: SECTIONS.COOK_VEGGIES, img: chimichangas2 },
         { step: 'Add "Seasoning" ingredients and mix. Cook until everything is heated through.', section: ADD_SPICES },
         { step: 'On each tortilla, add a thin layer of beans, beef mixture, and cheese.', section: SECTIONS.ASSEMBLE, img: chimichangas3 },
-        { step: 'Roll tortillas. Place them with the seam-side down in a baking dish.', section: SECTIONS.ASSEMBLE },
+        { step: 'Roll tortillas. Place them with the seam-side down in a baking pan.', section: SECTIONS.ASSEMBLE },
         { step: 'Brush the top with melted butter.', section: SECTIONS.ASSEMBLE, img: chimichangas4 },
         { step: 'Bake until golden brown (about 30 to 35 minutes).', section: SECTIONS.BAKE, img: chimichangas5 },
         { step: 'Enjoy this simple mexican dish topped with your favorite toppings.', section: SECTIONS.SERVE },

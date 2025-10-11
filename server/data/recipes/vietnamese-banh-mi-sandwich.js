@@ -5,6 +5,7 @@ const porkLoafOpened = '../assets/Products/pork-loaf-opened.jpeg';
 const porkLoafWrapped = '../assets/Products/pork-loaf-wrapped.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const {
+    MIXING_BOWL,
     BAKING_POWDER,
     BANANA_LEAF,
     BREAD_FLOUR,
@@ -35,6 +36,14 @@ const {
     WHITE_SUGAR,
     YEAST,
     WATER,
+    OVEN,
+    BAKING_PAN,
+    PAPER_TOWELS,
+    SMALL_BOWL,
+    LARGE_BOWL,
+    CHEESECLOTH,
+    BAGUETTE_PAN,
+    SCORING_KNIFE,
 } = require('./ingredients');
 
 const PORK_LOAF = 'Pork Loaf';
@@ -100,18 +109,17 @@ module.exports = {
         { ...THAI_CHILI_PEPPER, amount: 5, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'clean counter' },
-        { name: 'baking pan' },
-        { name: '2 baguette pans' },
-        { name: '2 lightweight cheesecloth' },
-        { name: 'scoring knife' },
-        { name: 'paper towel' },
-        { name: 'mixing bowl' },
-        { name: 'small bowl' },
-        { name: 'large bowl' },
+        BAKING_PAN,
+        { ...BAGUETTE_PAN, amount: 2 },
+        { ...CHEESECLOTH, amount: 2 },
+        SCORING_KNIFE,
+        PAPER_TOWELS,
+        MIXING_BOWL,
+        SMALL_BOWL,
+        LARGE_BOWL,
     ],
     directions: [
         { step: 'On a clean counter, pour the flour, salt, sugar, vitamin c, and yeast. Make a well in the center and pour the water.', section: SECTIONS.BREAD },

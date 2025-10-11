@@ -14,7 +14,6 @@ module.exports = {
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
-    protein: [],
     type: [TYPES.DESSERT],
     yields: { amount: '', unit: '' },
     prepTime: { amount: '', unit: '' },

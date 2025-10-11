@@ -11,7 +11,7 @@ const soaking = '../assets/Products/baked-beans-soaking.jpeg';
 const plateZoomed = '../assets/Products/baked-beans-full-plate-zoomed.jpeg';
 const { wip } = require('./apple-dump-cake');
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { SALT, BAKING_SODA, BACON, YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR, DRY_NAVY_BEAN } = require('./ingredients');
+const { SALT, BAKING_SODA, BACON, YELLOW_ONION, BROWN_SUGAR, KETCHUP, MAPLE_SYRUP, APPLE_CIDER_VINEGAR, DRY_NAVY_BEAN, LARGE_POT, DUTCH_OVEN_POT, SPATULA, STOVE, OVEN } = require('./ingredients');
 
 const BEANS = 'Beans';
 
@@ -47,13 +47,13 @@ module.exports = {
         { ...APPLE_CIDER_VINEGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'dutch oven pot' },
-        { name: 'spatula' },
+        LARGE_POT,
+        DUTCH_OVEN_POT,
+        SPATULA,
     ],
     directions: [
         { step: 'In a large pot, add the dry beans.', section: BEANS, img: label },

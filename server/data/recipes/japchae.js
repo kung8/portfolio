@@ -11,8 +11,8 @@ const japchae10 = '../assets/Products/japchae-10.jpeg';
 const japchae11 = '../assets/Products/japchae-11.jpeg';
 const japchae12 = '../assets/Products/japchae-12.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { KOREAN_GLASS_NOODLES, EGG, CARROT, RED_BELL_PEPPER, YELLOW_ONION, GREEN_ONION, GARLIC, SHIITAKE_MUSHROOM, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPER } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, KOREAN_GLASS_NOODLES, EGG, CARROT, RED_BELL_PEPPER, YELLOW_ONION, GREEN_ONION, GARLIC, SHIITAKE_MUSHROOM, SPINACH, LIGHT_SOY_SAUCE, SESAME_OIL, BROWN_SUGAR, BLACK_PEPPER, SESAME_SEEDS, SALT, ORANGE_BELL_PEPPER, STOVE, LARGE_POT, COLANDER, KITCHEN_SCISSORS, SMALL_BOWL, FRYING_PAN } = require('./ingredients');
 
 const FIRST_VEGGIES_SECTION = 'First Veggies';
 const SECOND_VEGGIES_SECTION = 'Second Veggies';
@@ -67,16 +67,15 @@ module.exports = {
         { ...SESAME_SEEDS, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'pot' },
-        { name: 'colander' },
-        { name: 'cooking scissors' },
-        { name: 'small bowl' },
-        { name: 'frying pan' },
-        { name: 'mixing bowl' },
-        { name: '' },
+        LARGE_POT,
+        COLANDER,
+        KITCHEN_SCISSORS,
+        SMALL_BOWL,
+        FRYING_PAN,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Boil water in a pot and cook glass noodles as instructed from the packaging.', section: SECTIONS.COOK_NOODLES, img: japchae1 },

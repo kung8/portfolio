@@ -4,7 +4,7 @@ const corn = '../assets/Products/buttered-corn-corn.jpeg';
 const cream = '../assets/Products/buttered-corn-cream.jpeg';
 const honey = '../assets/Products/buttered-corn-honey.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { UNSALTED_BUTTER, CANNED_SWEET_CORN, SALT, BLACK_PEPPER, HEAVY_CREAM, HONEY } = require('./ingredients');
+const { UNSALTED_BUTTER, CANNED_SWEET_CORN, SALT, BLACK_PEPPER, HEAVY_CREAM, HONEY, STOVE, SAUCEPAN } = require('./ingredients');
 
 module.exports = {
     cardName: 'Buttered Corn',
@@ -34,10 +34,10 @@ module.exports = {
         { ...HONEY, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'saucepan' },
+        SAUCEPAN,
     ],
     directions: [
         { step: 'Over medium heat, melt butter in a saucepan.', section: SECTIONS.MAIN, img: butter },

@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { GENRES, METHODS, SECTIONS, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { DRY_MILK_POWDER, UNSALTED_BUTTER } = require('./ingredients');
+const { DRY_MILK_POWDER, UNSALTED_BUTTER, SAUCEPAN, TUPPERWARE, STOVE } = require('./ingredients');
 
 module.exports = {
     wip: true,
@@ -22,11 +22,11 @@ module.exports = {
         { ...DRY_MILK_POWDER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'tupperware' },
+        SAUCEPAN,
+        TUPPERWARE,
     ],
     directions: [
         { step: 'Over medium-low heat, melt butter in a saucepan.', section: SECTIONS.MAIN },

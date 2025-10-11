@@ -11,10 +11,14 @@ const bakedScored = '../assets/Products/sourdough-bread-baked-scored.jpeg';
 
 const { METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
 const {
+    MIXING_BOWL,
     ALL_PURPOSE_FLOUR,
     SALT,
     SOURDOUGH_STARTER,
     WATER,
+    CHEESECLOTH,
+    DUTCH_OVEN_POT,
+    OVEN,
 } = require('./ingredients');
 const starter = require('./sourdough-starter');
 
@@ -43,12 +47,12 @@ module.exports = {
         { ...SALT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'towel or cheesecloth' },
-        { name: 'dutch oven pot' },
+        MIXING_BOWL,
+        { ...CHEESECLOTH, additionalDetails: 'towel' },
+        DUTCH_OVEN_POT,
     ],
     directions: [
         { step: 'In a mixing bowl, blend together starter and water.', section: SECTIONS.DOUGH },

@@ -3,7 +3,7 @@ const tart2 = '../assets/Products/pop-tarts-2.jpeg';
 const tart3 = '../assets/Products/pop-tarts-3.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { STRAWBERRY_JAM, POWDERED_SUGAR, MILK, REFRIGERATED_PIE_CRUST } = require('./ingredients');
+const { BAKING_SHEET, STRAWBERRY_JAM, POWDERED_SUGAR, MILK, REFRIGERATED_PIE_CRUST, OVEN, PARCHMENT_PAPER } = require('./ingredients');
 
 const POP_TARTS_SECTION = 'Pop Tarts';
 const GLAZE_SECTION = 'Glaze';
@@ -38,11 +38,11 @@ module.exports = {
         { ...POWDERED_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GLAZE_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'parchment paper' },
+        BAKING_SHEET,
+        PARCHMENT_PAPER,
     ],
     directions: [
         { step: 'Preheat the oven to 400ºF.', section: COOK_POP_TARTS },

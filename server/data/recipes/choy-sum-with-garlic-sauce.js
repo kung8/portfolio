@@ -7,8 +7,8 @@ const choy6 = '../assets/Products/choy-sum-with-garlic-sauce-6.jpeg';
 const choy7 = '../assets/Products/choy-sum-with-garlic-sauce-7.jpeg';
 const choy8 = '../assets/Products/choy-sum-with-garlic-sauce-8.jpeg';
 const choy9 = '../assets/Products/choy-sum-with-garlic-sauce-9.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { CHOY_SUM, OYSTER_SAUCE, LIGHT_SOY_SAUCE, WHITE_SUGAR, GARLIC, SALT, VEGETABLE_OIL } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, CHOY_SUM, OYSTER_SAUCE, LIGHT_SOY_SAUCE, WHITE_SUGAR, GARLIC, SALT, VEGETABLE_OIL, STOVE, LARGE_POT, PAPER_TOWELS, SMALL_BOWL, SAUCEPAN, COLANDER } = require('./ingredients');
 
 const CHOY_SUM_SECTION = 'Choy Sum';
 const GARLIC_SECTION = 'Garlic';
@@ -43,15 +43,15 @@ module.exports = {
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'chopped', section: GARLIC_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'large pot' },
-        { name: 'colander' },
-        { name: 'paper towels' },
-        { name: 'small bowl' },
-        { name: 'saucepan' },
+        MIXING_BOWL,
+        LARGE_POT,
+        COLANDER,
+        PAPER_TOWELS,
+        SMALL_BOWL,
+        SAUCEPAN,
     ],
     directions: [
         { step: 'In a mixing bowl, soak the choy sum in water for a few minutes.', section: COOK_CHOY_SUM, img: choy1 },

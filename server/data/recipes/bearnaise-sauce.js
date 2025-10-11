@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { SHALLOT, BLACK_PEPPER, WHITE_VINEGAR, WHITE_WINE, WATER, UNSALTED_BUTTER, EGG_YOLK, CAYENNE_PEPPER, TARRAGON, CAPER } = require('./ingredients');
+const { SHALLOT, BLACK_PEPPER, WHITE_VINEGAR, WHITE_WINE, WATER, UNSALTED_BUTTER, EGG_YOLK, CAYENNE_PEPPER, TARRAGON, CAPER, SAUCEPAN, STRAINER, BOWL, MORTAR_AND_PESTLE, WOK, STOVE } = require('./ingredients');
 
 const REDUCTION_SECTION = 'Reduction';
 const BUTTER_SECTION = 'Butter';
@@ -50,14 +50,14 @@ module.exports = {
         { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: HOLLANDAISE_SAUCE_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'strainer' },
-        { name: 'bowl' },
-        { name: 'mortar and pestle' },
-        { name: 'wok' },
+        SAUCEPAN,
+        STRAINER,
+        BOWL,
+        MORTAR_AND_PESTLE,
+        WOK
     ],
     directions: [
         { step: `In a saucepan, combine the "${REDUCTION_SECTION}" section ingredients.`, section: PREP_REDUCTION },

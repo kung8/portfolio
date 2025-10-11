@@ -5,7 +5,7 @@ const churros4 = '../assets/Products/churros-4.jpeg';
 const churros5 = '../assets/Products/churros-5.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, VANILLA_EXTRACT, VEGETABLE_OIL, CINNAMON, WATER } = require('./ingredients');
+const { BAKING_SHEET, MIXING_BOWL, UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, VANILLA_EXTRACT, VEGETABLE_OIL, CINNAMON, WATER, STOVE, POT, TONGS, PAPER_TOWELS, PIPING_BAG, SAUCEPAN, COOLING_RACK, KITCHEN_SCISSORS, SMALL_BOWL } = require('./ingredients');
 
 const CHURROS_SECTION = 'Churros';
 const COATING = 'Coating';
@@ -46,22 +46,22 @@ module.exports = {
         { ...CINNAMON, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: COATING },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'shallow dish' },
-        { name: 'saucepan' },
-        { name: 'mixing bowl' },
-        { name: 'pot' },
-        { name: 'piping bag with tip' },
-        { name: 'cooking scissors' },
-        { name: 'tongs' },
-        { name: 'baking sheet' },
-        { name: 'paper towels' },
-        { name: 'wire cooling rack' },
+        SMALL_BOWL,
+        SAUCEPAN,
+        MIXING_BOWL,
+        POT,
+        {...PIPING_BAG, additionalDetails: 'with tips'},
+        KITCHEN_SCISSORS,
+        TONGS,
+        BAKING_SHEET,
+        PAPER_TOWELS,
+        COOLING_RACK,
     ],
     directions: [
-        { step: 'In a shallow dish, combine the "Coating" ingredients.', section: MAKE_COATING },
+        { step: 'In a small bowl, combine the "Coating" ingredients.', section: MAKE_COATING },
         { step: 'Over medium-high heat, add butter, water, sugar and salt to a saucepan. Mix and bring to a boil.', section: MAKE_DOUGH, img: churros1 },
         { step: 'Reduce heat to medium-low heat. Add flour and mix until there are no lumps.', section: MAKE_DOUGH },
         { step: 'Transfer to a mixing bowl and let it cool for 5 minutes.', section: MAKE_DOUGH },

@@ -14,7 +14,6 @@ module.exports = {
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.ASIAN,GENRES.INDIAN],
     method: [METHODS.PAN_FRY],
-    protein: [],
     type: [TYPES.BREAD],
     yields: { amount: '', unit: '' },
     prepTime: { amount: '', unit: '' },

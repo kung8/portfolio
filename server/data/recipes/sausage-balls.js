@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { SAUSAGE, CHEDDAR_CHEESE, BISQUICK_BAKING_MIX } = require('./ingredients');
+const { MIXING_BOWL, SAUSAGE, CHEDDAR_CHEESE, BISQUICK_BAKING_MIX, BAKING_PAN, OVEN } = require('./ingredients');
 
 module.exports = {
     wip: true,
@@ -30,11 +30,11 @@ module.exports = {
         { ...BISQUICK_BAKING_MIX, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'baking dish' },
+        MIXING_BOWL,
+        BAKING_PAN,
     ],
     directions: [
         { step: 'Allow the cheese and sausage to get to room temperature.', section: '' },

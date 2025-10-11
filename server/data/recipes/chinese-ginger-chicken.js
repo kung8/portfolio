@@ -14,6 +14,10 @@ const {
     SALT,
     BLACK_PEPPER,
     CORNSTARCH,
+    STOVE,
+    WOK,
+    SPATULA,
+    LARGE_BOWL,
 } = require('./ingredients');
 
 module.exports = {
@@ -42,12 +46,12 @@ module.exports = {
         { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to thicken', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'wok' },
-        { name: 'spatula' },
-        { name: '2 large bowls' },
+        WOK,
+        SPATULA,
+        { ...LARGE_BOWL, amount: 2 },
     ],
     directions: [
         { step: 'Peel the ginger and cut the ginger into long, thin strips. Do not worry they will cook down.', section: SECTIONS.MAIN, img: ginger },

@@ -5,7 +5,7 @@ const penyet4 = '../assets/Products/ayam-penyet-4.jpeg';
 const penyet5 = '../assets/Products/ayam-penyet-5.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { GARLIC, SHALLOT, GINGER, CORIANDER_POWDER, SALT, CHICKEN_THIGH, WATER, VEGETABLE_OIL, CURRY_LEAF, ROMA_TOMATO, RED_CHILI, KEY_LIME_JUICE, WHITE_SUGAR, SHRIMP_PASTE, LEMON_BASIL } = require('./ingredients');
+const { GARLIC, SHALLOT, GINGER, CORIANDER_POWDER, SALT, CHICKEN_THIGH, WATER, VEGETABLE_OIL, CURRY_LEAF, ROMA_TOMATO, RED_CHILI, KEY_LIME_JUICE, WHITE_SUGAR, SHRIMP_PASTE, LEMON_BASIL, STOVE, MORTAR_AND_PESTLE, LARGE_POT, FRYING_PAN } = require('./ingredients');
 
 const GINGER_PASTE_SECTION = 'Ginger Paste';
 const SAMBAL_SECTION = 'Sambal';
@@ -60,12 +60,12 @@ module.exports = {
         { ...LEMON_BASIL, amount: 1, unit: INGREDIENT_UNITS.BUNCH, additionalDetails: '', section: SAMBAL_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mortar and pestle' },
-        { name: 'pot' },
-        { name: 'pan' },
+        MORTAR_AND_PESTLE,
+        LARGE_POT,
+        FRYING_PAN,
     ],
     directions: [
         { step: `In a mortar, combine the "${GINGER_PASTE_SECTION}" section ingredients. Pound into a paste.`, section: MAKE_GINGER_PASTE, img: [penyet1, penyet2] },

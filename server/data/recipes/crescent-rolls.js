@@ -18,8 +18,8 @@ const dough1 = '../assets/Products/crescent-rolls-dough-1.jpeg';
 const dough2 = '../assets/Products/crescent-rolls-dough-2.jpeg';
 const balls = '../assets/Products/crescent-rolls-dough-balls.jpeg';
 
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { YEAST, WHITE_SUGAR, EVAPORATED_MILK, SALT, UNSALTED_BUTTER, EGG, ALL_PURPOSE_FLOUR, WATER } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { BAKING_SHEET, MIXING_BOWL, YEAST, WHITE_SUGAR, EVAPORATED_MILK, SALT, UNSALTED_BUTTER, EGG, ALL_PURPOSE_FLOUR, WATER, MEDIUM_BOWL, SILICON_BAKING_MAT, OVEN } = require('./ingredients');
 
 const YEAST_MIXTURE = 'Yeast Mixture';
 const LIQUID_MIXTURE = 'Liquid Mixture';
@@ -53,13 +53,13 @@ module.exports = {
         { ...ALL_PURPOSE_FLOUR, amount: 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'mixing bowl' },
-        { name: 'baking sheet' },
-        { name: 'silicon baking mat' },
+        MEDIUM_BOWL,
+        MIXING_BOWL,
+        BAKING_SHEET,
+        SILICON_BAKING_MAT,
     ],
     directions: [
         { step: 'Combine ingredients in medium bowl.', section: YEAST_MIXTURE, img: [yeast3, yeast4] },

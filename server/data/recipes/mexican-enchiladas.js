@@ -20,8 +20,8 @@ const enchiladas20 = '../assets/Products/mexican-enchiladas-20.jpeg';
 const enchiladas21 = '../assets/Products/mexican-enchiladas-21.jpeg';
 const enchiladas22 = '../assets/Products/mexican-enchiladas-22.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { GARLIC_POWDER, SALT, BONELESS_AND_SKINLESS_CHICKEN_BREAST, BLACK_PEPPER, OLIVE_OIL, WHITE_ONION, BAY_LEAF, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, CHILI_POWDER, ONION_POWDER, CUMIN, OREGANO, TOMATO_PASTE, FLOUR_TORTILLA, MEXICAN_BLEND_CHEESE, LETTUCE, YELLOW_ONION, CILANTRO, SOUR_CREAM, CHEESE } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, GARLIC_POWDER, SALT, BONELESS_AND_SKINLESS_CHICKEN_BREAST, BLACK_PEPPER, OLIVE_OIL, WHITE_ONION, BAY_LEAF, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, CHILI_POWDER, ONION_POWDER, CUMIN, OREGANO, TOMATO_PASTE, FLOUR_TORTILLA, MEXICAN_BLEND_CHEESE, LETTUCE, YELLOW_ONION, CILANTRO, SOUR_CREAM, CHEESE, STOVE, OVEN, FRYING_PAN, FORK, BAKING_PAN, SAUCEPAN } = require('./ingredients');
 
 module.exports = {
     cardName: 'Mexican Enchiladas',
@@ -78,15 +78,15 @@ module.exports = {
         { ...CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'frying pan' },
-        { name: 'mixing bowl' },
-        { name: 'forks' },
-        { name: 'small pot' },
-        { name: 'baking dish' },
+        FRYING_PAN,
+        MIXING_BOWL,
+        FORK,
+        SAUCEPAN,
+        BAKING_PAN,
     ],
     directions: [
         // 25 minutes cook, 5 minutes prep

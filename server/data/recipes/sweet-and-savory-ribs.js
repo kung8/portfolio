@@ -9,7 +9,7 @@ const ribs8 = '../assets/Products/sweet-and-savory-ribs-8.jpeg';
 const ribs9 = '../assets/Products/sweet-and-savory-ribs-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BEEF_RIBS, GREEN_ONION, CILANTRO, GARLIC, ORANGE_JUICE, FISH_SAUCE, OYSTER_SAUCE, HONEY, CHICKEN_BOUILLON, GARLIC_POWDER, ONION_POWDER, BLACK_PEPPER, RED_PEPPER_FLAKES } = require('./ingredients');
+const { MIXING_BOWL, BEEF_RIBS, GREEN_ONION, CILANTRO, GARLIC, ORANGE_JUICE, FISH_SAUCE, OYSTER_SAUCE, HONEY, CHICKEN_BOUILLON, GARLIC_POWDER, ONION_POWDER, BLACK_PEPPER, RED_PEPPER_FLAKES, OVEN, ALUMINUM_FOIL, BAKING_PAN } = require('./ingredients');
 
 const RIBS_SECTIONS = 'Ribs';
 
@@ -54,12 +54,12 @@ module.exports = {
         { ...RED_PEPPER_FLAKES, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MARINADE },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'aluminum foil' },
-        { name: 'baking dish' },
+        MIXING_BOWL,
+        ALUMINUM_FOIL,
+        BAKING_PAN,
     ],
     directions: [
         { step: 'Clean ribs and cut into individual ribs.', section: PREP_RIBS, img: ribs1 },

@@ -11,7 +11,7 @@ const ravioli10 = '../assets/Products/ravioli-10.jpeg';
 const ravioli11 = '../assets/Products/ravioli-11.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { ALL_PURPOSE_FLOUR, DURUM_WHEAT, EGG, RICOTTA_CHEESE, PARMIGIANO_REGGIANO, SALT, BLACK_PEPPER, UNSALTED_BUTTER, SAGE, FRESH_SAGE } = require('./ingredients');
+const { BAKING_SHEET, ALL_PURPOSE_FLOUR, DURUM_WHEAT, EGG, RICOTTA_CHEESE, PARMIGIANO_REGGIANO, SALT, BLACK_PEPPER, UNSALTED_BUTTER, SAGE, FRESH_SAGE, MIXING_BOWL, PLASTIC_WRAP, ROLLING_PIN, MEASURING_SPOONS, FRYING_PAN, REFRIGERATOR, STOVE } = require('./ingredients');
 
 const COOK_RAVIOLI = 'Cook Ravioli';
 
@@ -52,16 +52,16 @@ module.exports = {
         { ...PARMIGIANO_REGGIANO, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
-        { name: 'refrigerator' },
-        { name: 'stove' },
+        REFRIGERATOR,
+        STOVE,
     ],
     supplies: [
-        { name: '2 mixing bowls' },
-        { name: 'plastic wrap' },
-        { name: 'rolling pin' },
-        { name: 'tablespoon' },
-        { name: 'baking sheet' },
-        { name: 'frying pan' },
+        {...MIXING_BOWL, amount: 2 },
+        PLASTIC_WRAP,
+        ROLLING_PIN,
+        MEASURING_SPOONS,
+        BAKING_SHEET,
+        FRYING_PAN,
     ],
     directions: [
         { step: 'In a mixing bowl, combine the flour and wheat.', section: SECTIONS.PREP_DOUGH },

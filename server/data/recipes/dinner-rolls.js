@@ -1,7 +1,7 @@
 const rolls1 = '../assets/Products/dinner-rolls-1.jpeg';
 const rolls2 = '../assets/Products/dinner-rolls-2.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { YEAST, WATER, WHITE_SUGAR, VEGETABLE_OIL, EGG, ALL_PURPOSE_FLOUR, SALT } = require('./ingredients');
+const { MIXING_BOWL, BAKING_SHEET, YEAST, WATER, WHITE_SUGAR, VEGETABLE_OIL, EGG, ALL_PURPOSE_FLOUR, SALT, SPATULA, SILICON_BAKING_MAT, OVEN } = require('./ingredients');
 
 const YEAST_MIXTURE = 'Yeast Mixture';
 const SUGAR_MIXTURE = 'Sugar Mixture';
@@ -35,13 +35,13 @@ module.exports = {
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'spatula' },
-        { name: 'silicon baking mat' },
-        { name: 'baking sheet' },
+        MIXING_BOWL,
+        SPATULA,
+        SILICON_BAKING_MAT,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'In a small bowl, combine the "Yeast Mixture" ingredients.', section: YEAST_MIXTURE },

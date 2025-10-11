@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { VINE_TOMATO, WHITE_ONION, GARLIC, VEGETABLE_OIL, CHICKEN_BROTH, CILANTRO, SALT, GROUND_BEEF, BREAD, MILK, EGG, BLACK_PEPPER, GARLIC_POWDER, WHITE_RICE, ZUCCHINI } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, VINE_TOMATO, WHITE_ONION, GARLIC, VEGETABLE_OIL, CHICKEN_BROTH, CILANTRO, SALT, GROUND_BEEF, BREAD, MILK, EGG, BLACK_PEPPER, GARLIC_POWDER, WHITE_RICE, ZUCCHINI, STOVE, BLENDER, MEDIUM_BOWL, SMALL_BOWL, LARGE_POT } = require('./ingredients');
 
 const MEATBALLS = 'Meatballs';
 const PREP_MEATBALLS = 'Prep Meatballs';
@@ -45,14 +45,14 @@ module.exports = {
         { ...CILANTRO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'blender' },
+        STOVE,
+        BLENDER,
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'mixing bowl' },
-        { name: 'small bowl' },
-        { name: 'large pot' },
+        MEDIUM_BOWL,
+        MIXING_BOWL,
+        SMALL_BOWL,
+        LARGE_POT,
     ],
     directions: [
         { step: 'Boil water.', section: PREP_MEATBALLS },

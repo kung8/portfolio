@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, WHOLE_MILK, EGG_YOLK, HEAVY_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, CAKE_FLOUR, VANILLA_BEAN, WATER } = require('./ingredients');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { MIXING_BOWL, BAKING_SHEET, UNSALTED_BUTTER, WHITE_SUGAR, SALT, ALL_PURPOSE_FLOUR, EGG, WHOLE_MILK, EGG_YOLK, HEAVY_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, CAKE_FLOUR, VANILLA_BEAN, WATER, OVEN, STOVE, MICROWAVE, SAUCEPAN, PARCHMENT_PAPER, COOLING_RACK, MEDIUM_BOWL, PIPING_BAG } = require('./ingredients');
 
 const PASTRY = 'Pastry';
 const CHOCOLATE_GLAZE = 'Chocolate Glaze';
@@ -48,18 +48,18 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'softened', section: CHOCOLATE_GLAZE },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
-        { name: 'microwave' },
+        OVEN,
+        STOVE,
+        MICROWAVE,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'mixing bowl' },
-        { name: 'pastry bag with 1-inch round tip' },
-        { name: 'microwavable bowl' },
-        { name: 'parchment paper' },
-        { name: 'baking sheet' },
-        { name: 'cooling rack' },
+        SAUCEPAN,
+        MIXING_BOWL,
+        { ...PIPING_BAG, additionalDetails: '1 inch round tip' },
+        MEDIUM_BOWL,
+        PARCHMENT_PAPER,
+        BAKING_SHEET,
+        COOLING_RACK,
     ],
     directions: [
         { step: 'Preheat the oven to 400ºF.', section: PASTRY },

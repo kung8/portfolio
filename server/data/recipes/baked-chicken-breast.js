@@ -6,7 +6,7 @@ const breast5 = '../assets/Products/baked-chicken-breast-5.jpeg';
 const breast6 = '../assets/Products/baked-chicken-breast-6.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { CHICKEN_BREAST, OLIVE_OIL, BROWN_SUGAR, PAPRIKA, OREGANO, GARLIC_POWDER, SALT, BLACK_PEPPER } = require('./ingredients');
+const { CHICKEN_BREAST, OLIVE_OIL, BROWN_SUGAR, PAPRIKA, OREGANO, GARLIC_POWDER, SALT, BLACK_PEPPER, MEAT_MALLET, PAPER_TOWELS, BAKING_PAN, OVEN } = require('./ingredients');
 
 module.exports = {
     cardName: 'Baked Chicken Breast',
@@ -40,12 +40,12 @@ module.exports = {
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN
     ],
     supplies: [
-        { name: 'meat mallet' },
-        { name: 'paper towels' },
-        { name: 'baking pan' },
+        MEAT_MALLET,
+        PAPER_TOWELS,
+        BAKING_PAN,
     ],
     directions: [
         { step: 'Preheat the oven to 425ºF.', section: SECTIONS.COOK_CHICKEN },

@@ -14,7 +14,6 @@ module.exports = {
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
-    protein: [],
     type: [TYPES.VEGETABLE],
     yields: { amount: '', unit: '' },
     prepTime: { amount: '', unit: '' },

@@ -25,6 +25,10 @@ const {
     VEGETABLE_OIL,
     WHITE_SUGAR,
     WATER,
+    STOVE,
+    LARGE_POT,
+    LARGE_BOWL,
+    WOK,
 } = require('./ingredients');
 
 const BEEF_SECTION = 'Beef';
@@ -70,12 +74,12 @@ module.exports = {
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'wok' },
-        { name: 'large pot' },
-        { name: '2 large bowls' },
+        WOK,
+        LARGE_POT,
+        { ...LARGE_BOWL, amount: 2 },
     ],
     directions: [
         { step: 'In a large bowl, combine the beef marinade ingredients. Let it marinate for 30 minutes.', section: BEEF_SECTION, img: marinating },

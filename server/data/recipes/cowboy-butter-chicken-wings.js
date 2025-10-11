@@ -4,8 +4,8 @@ const wings3 = '../assets/Products/cowboy-butter-chicken-wings-3.jpeg';
 const wings4 = '../assets/Products/cowboy-butter-chicken-wings-4.jpeg';
 const wings5 = '../assets/Products/cowboy-butter-chicken-wings-5.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { CHICKEN_WINGS, SALT, BLACK_PEPPER, UNSALTED_BUTTER, PARSLEY, CHIVE, GARLIC, DIJON_MUSTARD, LEMON_JUICE, SMOKED_PAPRIKA, CAYENNE_PEPPER } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, BAKING_SHEET, CHICKEN_WINGS, SALT, BLACK_PEPPER, UNSALTED_BUTTER, PARSLEY, CHIVE, GARLIC, DIJON_MUSTARD, LEMON_JUICE, SMOKED_PAPRIKA, CAYENNE_PEPPER, ALUMINUM_FOIL, COOLING_RACK, OVEN } = require('./ingredients');
 
 const COWBOY_BUTTER = 'Cowboy Butter'
 const PREP_COOKING = 'Prep Cooking';
@@ -47,13 +47,13 @@ module.exports = {
         { ...CAYENNE_PEPPER, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: COWBOY_BUTTER },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'aluminum foil' },
-        { name: 'wire rack' },
-        { name: 'mixing bowl' },
+        BAKING_SHEET,
+        ALUMINUM_FOIL,
+        COOLING_RACK,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Preheat the oven to 425ºF.', section: PREP_COOKING },

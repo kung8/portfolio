@@ -1,11 +1,15 @@
 const biscuits = '../assets/Products/ted-lasso-biscuits.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const {
+    MIXING_BOWL,
     UNSALTED_BUTTER,
     POWDERED_SUGAR,
     ALL_PURPOSE_FLOUR,
     SALT,
     VANILLA_EXTRACT,
+    OVEN,
+    BAKING_PAN,
+    STAND_MIXER,
 } = require('./ingredients');
 
 module.exports = {
@@ -32,12 +36,12 @@ module.exports = {
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'baking pan' },
-        { name: 'electric/standing mixer' },
+        MIXING_BOWL,
+        BAKING_PAN,
     ],
     directions: [
         { step: 'Place butter in mixing bowl and beat until fluffy (about 3 to 5 minutes).', section: SECTIONS.MAIN },

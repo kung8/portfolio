@@ -1,18 +1,74 @@
 import { useRecipeContext } from './RecipeContext';
 
-export const Supplies = () => {
-    const { item } = useRecipeContext();
-    const supplies = item.supplies;
+const SupplyItem = ({ supply }) => {
+    const { selectedSupplies, setSelectedSupplies } = useRecipeContext();
+    const checked = !!selectedSupplies.find(s => s.id === supply.id);
 
+    const handleCheckboxChange = () => {
+        const included = selectedSupplies.find(i => i.id === supply.id);
+        if (included) {
+            // removes the supply if it's already included
+            const newSelectedSupplies = selectedSupplies.filter(s => s.id !== supply.id);
+            setSelectedSupplies(newSelectedSupplies);
+        } else {
+            // adds the supply if it's not included
+            setSelectedSupplies([...selectedSupplies, supply]);
+        }
+    }
+
+    return (
+        <li className="checkbox-supply-container">
+            <input
+                type="checkbox"
+                id={supply.id}
+                checked={checked}
+                className="checkbox-supply"
+                onChange={handleCheckboxChange}
+            />
+            <label htmlFor={supply.id}>{supply.name}</label>
+        </li>
+    )
+}
+
+export const Supplies = () => {
+    const { handleAddSuppliesToGroceryListModalOpen, selectedSupplies, setSelectedSupplies, supplies } = useRecipeContext();
     if (!supplies || !supplies.length) return null;
     return (
         <>
-            <h4 className="recipe-detail-label">Supplies:</h4>
+            <div className="recipe-ingredients-label-container">
+                <h4 className="recipe-detail-label">Supplies:</h4>
+                <div className="grocery-list-button-container">
+                    <span
+                        className="select-all-button"
+                        onClick={() => {
+                            if (selectedSupplies.length === supplies.length) {
+                                setSelectedSupplies([]);
+                            } else {
+                                const newSelectedSupplies = supplies.map((supply) => supply);
+                                setSelectedSupplies(newSelectedSupplies);
+                            }
+                        }}
+                    >
+                        {supplies.length > 0 && selectedSupplies.length === supplies.length ? 'Deselect All' : 'Select All'}
+                    </span>
+                    <span
+                        className={`add-to-list-button ${selectedSupplies.length > 0 ? 'active' : ''}`}
+                        onClick={async () => {
+                            // update the selectedSupplies
+                            const newSelectedSupplies = selectedSupplies.map((supply) => supply);
+                            setSelectedSupplies(newSelectedSupplies);
+
+                            // Open Add Supplies to Grocery List Modal
+                            handleAddSuppliesToGroceryListModalOpen();
+                        }}
+                    >
+                        Add to List
+                    </span>
+                </div>
+            </div>
             <ul className="recipe-detail-list">
                 {supplies.map((supply, index) => (
-                    <li key={supply.name + '-' + index}>
-                        {supply.name}
-                    </li>
+                    <SupplyItem key={supply.name + '-' + index} supply={supply} />
                 ))}
             </ul>
         </>

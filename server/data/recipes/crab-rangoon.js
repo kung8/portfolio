@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { GARLIC, LIGHT_SOY_SAUCE, CREAM_CHEESE, IMITATION_CRAB, GREEN_ONION, WORCESTERSHIRE_SAUCE, WHITE_SUGAR, REFRIGERATED_BISCUIT_DOUGH, UNSALTED_BUTTER, GARLIC_POWDER, SESAME_SEEDS, SWEET_CHILI_SAUCE } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, BAKING_SHEET, GARLIC, LIGHT_SOY_SAUCE, CREAM_CHEESE, IMITATION_CRAB, GREEN_ONION, WORCESTERSHIRE_SAUCE, WHITE_SUGAR, REFRIGERATED_BISCUIT_DOUGH, UNSALTED_BUTTER, GARLIC_POWDER, SESAME_SEEDS, SWEET_CHILI_SAUCE, PARCHMENT_PAPER, SPATULA, PLATE, BASTING_BRUSH, OVEN } = require('./ingredients');
 
 const BISCUITS_DOUGH_SECTION = 'Biscuits Dough';
 const BUTTER_TOPPING_SECTION = 'Butter Topping';
@@ -47,15 +47,15 @@ module.exports = {
         { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'parchment paper' },
-        { name: 'mixing bowl' },
-        { name: 'spatula' },
-        { name: 'plate' },
-        { name: 'basting brush' },
+        BAKING_SHEET,
+        PARCHMENT_PAPER,
+        MIXING_BOWL,
+        SPATULA,
+        PLATE,
+        BASTING_BRUSH,
     ],
     directions: [
         { step: 'Preheat the oven to 375ºF.', section: PREP_BAKING },

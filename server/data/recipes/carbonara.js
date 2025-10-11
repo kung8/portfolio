@@ -12,7 +12,7 @@ const carbonara14 = '../assets/Products/carbonara-14.jpeg';
 const carbonara15 = '../assets/Products/carbonara-15.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { GUANCIALE, EGG, EGG_YOLK, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO } = require('./ingredients');
+const { MIXING_BOWL, GUANCIALE, EGG, EGG_YOLK, BLACK_PEPPER, SALT, SPAGHETTI_NOODLES, GARLIC, PARSLEY, PARMIGIANO_REGGIANO, STOVE, LARGE_POT, LARGE_PAN, SPATULA } = require('./ingredients');
 
 const GUANCIALE_SECTION = 'Guanciale';
 const COOK_GUANCIALE = 'Cook Guanciale';
@@ -53,13 +53,13 @@ module.exports = {
         { ...PARMIGIANO_REGGIANO, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'large pot' },
-        { name: 'large pan' },
-        { name: 'spatula' },
+        MIXING_BOWL,
+        LARGE_POT,
+        LARGE_PAN,
+        SPATULA,
     ],
     directions: [
         { step: 'In a mixing bowl, combine eggs and yolk.', section: SECTIONS.PREP_SAUCE, img: carbonara2 },

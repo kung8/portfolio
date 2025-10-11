@@ -11,7 +11,7 @@ const stuffing14 = '../assets/Products/stuffing-14.jpeg';
 const stuffing15 = '../assets/Products/stuffing-15.jpeg';
 const stuffing16 = '../assets/Products/stuffing-16.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, STORAGE_LOCATION, REHEAT_METHODS } = require('./constants');
-const { BREAD, UNSALTED_BUTTER, SWEET_ONION, CELERY, GARLIC, SALT, BLACK_PEPPER, FRESH_SAGE, FRESH_ROSEMARY, PARSLEY, CHICKEN_BROTH, EGG } = require('./ingredients');
+const { BREAD, UNSALTED_BUTTER, SWEET_ONION, CELERY, GARLIC, SALT, BLACK_PEPPER, FRESH_SAGE, FRESH_ROSEMARY, PARSLEY, CHICKEN_BROTH, EGG, STOVE, WHISK, SMALL_BOWL, OVEN, BAKING_PAN, COOKING_SPRAY, FRYING_PAN } = require('./ingredients');
 
 module.exports = {
     cardName: 'Stuffing',
@@ -46,15 +46,15 @@ module.exports = {
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
+        OVEN,
+        STOVE,
     ],
     supplies: [
-        { name: '9 x 13 baking pan' },
-        { name: 'cooking spray' },
-        { name: 'frying pan' },
-        { name: 'whisk' },
-        { name: 'small bowl' }
+        { ...BAKING_PAN, additionalDetails: '9 x 13' },
+        COOKING_SPRAY,
+        FRYING_PAN,
+        WHISK,
+        SMALL_BOWL
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },

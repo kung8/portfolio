@@ -1,6 +1,6 @@
 const pigsInABlanket = '../assets/Products/pigs-in-a-blanket.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { CROISSANT_DOUGH, EGG, MINI_HOT_DOG } = require('./ingredients');
+const { BAKING_SHEET, CROISSANT_DOUGH, EGG, MINI_HOT_DOG, ALUMINUM_FOIL, CUTTING_BOARD, KNIFE, BASTING_BRUSH, OVEN, PLATE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Pigs In A Blanket',
@@ -21,15 +21,15 @@ module.exports = {
         { ...MINI_HOT_DOG, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'aluminum foil' },
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: 'basting brush' },
-        { name: 'plate' },
+        BAKING_SHEET,
+        ALUMINUM_FOIL,
+        CUTTING_BOARD,
+        KNIFE,
+        BASTING_BRUSH,
+        PLATE,
     ],
     directions: [
         { step: 'Preheat oven to 375ºF and line baking sheet with aluminum foil.', section: SECTIONS.MAIN },

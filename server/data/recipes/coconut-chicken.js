@@ -6,7 +6,7 @@ const curry5 = '../assets/Products/coconut-chicken-curry-5.jpeg';
 const curry6 = '../assets/Products/coconut-chicken-curry-6.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, VEGETABLE_OIL, CURRY_POWDER, YELLOW_ONION, GARLIC, DICED_TOMATO, TOMATO_SAUCE, WHITE_SUGAR, COCONUT_MILK } = require('./ingredients');
+const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, VEGETABLE_OIL, CURRY_POWDER, YELLOW_ONION, GARLIC, DICED_TOMATO, TOMATO_SAUCE, WHITE_SUGAR, COCONUT_MILK, STOVE, MEDIUM_BOWL, LARGE_PAN } = require('./ingredients');
 
 module.exports = {
     cardName: 'Coconut Chicken',
@@ -43,11 +43,11 @@ module.exports = {
         { ...WHITE_SUGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CURRY },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'large pan' },
+        MEDIUM_BOWL,
+        LARGE_PAN,
     ],
     directions: [
         { step: `In a medium bowl, combine the "${SECTIONS.CHICKEN}" section ingredients. Set aside.`, section: SECTIONS.SEASON },

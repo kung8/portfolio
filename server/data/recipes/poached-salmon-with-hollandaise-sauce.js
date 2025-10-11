@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { LEMON_JUICE, OLIVE_OIL, SALT, BLACK_PEPPER, SALMON_FISH, EGG_YOLK, WATER, UNSALTED_BUTTER, CHIVE } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { LEMON_JUICE, OLIVE_OIL, SALT, BLACK_PEPPER, SALMON_FISH, EGG_YOLK, WATER, UNSALTED_BUTTER, CHIVE, STOVE, SAUCEPAN, MIXING_BOWL, MEDIUM_SAUCEPAN } = require('./ingredients');
 
 module.exports = {
     wip: true,
@@ -40,12 +40,12 @@ module.exports = {
         { ...CHIVE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'medium saucepan' },
-        { name: 'saucepan' },
-        { name: 'metal bowl' },
+        MEDIUM_SAUCEPAN,
+        SAUCEPAN,
+        { ...MIXING_BOWL, additionalDetails: 'metal' },
     ],
     directions: [
         { step: `In a medium saucepan, add the "${SECTIONS.FISH}" section ingredients.`, section: SECTIONS.COOK_FISH },

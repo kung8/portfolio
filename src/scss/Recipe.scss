@@ -219,6 +219,19 @@
             }
         }
 
+        .checkbox-supply-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 6px;
+
+            .checkbox-supply {
+                margin-right: 6px;
+                min-height: 16px;
+                min-width: 16px;
+                transform: translateY(2px);
+            }
+        }
+
         .recipe-container,
         .separated-recipe-container {
             margin-bottom: 48px;
@@ -380,7 +393,8 @@
         }
     }
 
-    .add-to-grocery-list-modal {
+    .add-ingredients-to-grocery-list-modal,
+    .add-supplies-to-grocery-list-modal {
         position: absolute;
         top: 50vh;
         left: -50%;

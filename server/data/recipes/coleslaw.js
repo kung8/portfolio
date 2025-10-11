@@ -1,8 +1,8 @@
 const zoomed = '../assets/Products/coleslaw-zoomed.jpeg';
 const coleslaw = '../assets/Products/coleslaw.jpeg';
 const plated = '../assets/Products/coleslaw-full-plate.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { CABBAGE, CARROT, MAYONNAISE, WHITE_SUGAR, APPLE_CIDER_VINEGAR, LEMON_JUICE, SALT, BLACK_PEPPER } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { MIXING_BOWL, CABBAGE, CARROT, MAYONNAISE, WHITE_SUGAR, APPLE_CIDER_VINEGAR, LEMON_JUICE, SALT, BLACK_PEPPER, MEDIUM_BOWL } = require('./ingredients');
 
 module.exports = {
     cardName: 'Coleslaw',
@@ -32,8 +32,8 @@ module.exports = {
         { ...BLACK_PEPPER, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'or to taste', section: SECTIONS.DRESSING },
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'medium bowl' },
+        MIXING_BOWL,
+        MEDIUM_BOWL,
     ],
     directions: [
         { step: 'Chop and shred the cabbage.', section: SECTIONS.MAIN },

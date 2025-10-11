@@ -10,7 +10,7 @@ const cup9 = '../assets/Products/peanut-butter-cup-9.jpeg';
 const cup10 = '../assets/Products/peanut-butter-cup-10.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
-const { MILK_CHOCOLATE_CHIPS, PEANUT_BUTTER, SALT, POWDERED_SUGAR } = require('./ingredients');
+const { MIXING_BOWL, MILK_CHOCOLATE_CHIPS, PEANUT_BUTTER, SALT, POWDERED_SUGAR, REFRIGERATOR, MUFFIN_TIN, CUPCAKE_LINER } = require('./ingredients');
 
 const CHOCOLATE_SECTION = 'Chocolate';
 const FIRST_CHILL = 'First Chill';
@@ -43,12 +43,12 @@ module.exports = {
         { ...POWDERED_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
     ],
     appliances: [
-        { name: 'refrigerator' },
+        REFRIGERATOR,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'muffin tin' },
-        { name: 'cupcake liners' },
+        MIXING_BOWL,
+        MUFFIN_TIN,
+        CUPCAKE_LINER,
     ],
     directions: [
         { step: 'Fill the muffin tin with cupcake liners.', section: FIRST_CHILL },

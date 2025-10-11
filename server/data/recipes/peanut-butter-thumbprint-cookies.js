@@ -8,7 +8,7 @@ const cookies7 = '../assets/Products/pb-thumbprint-cookies-7.jpeg';
 const cookies8 = '../assets/Products/pb-thumbprint-cookies-8.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { PEANUT_BUTTER, UNSALTED_BUTTER, WHITE_SUGAR, BROWN_SUGAR, SALT, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, BAKING_SODA, HERSHEYS_KISSES } = require('./ingredients');
+const { BAKING_SHEET, PEANUT_BUTTER, UNSALTED_BUTTER, WHITE_SUGAR, BROWN_SUGAR, SALT, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, BAKING_SODA, HERSHEYS_KISSES, OVEN, STAND_MIXER, SILICON_BAKING_MAT } = require('./ingredients');
 
 const DRY_INGREDIENTS = 'Dry Ingredients';
 const WET_INGREDIENTS = 'Wet Ingredients';
@@ -46,12 +46,12 @@ module.exports = {
         { ...HERSHEYS_KISSES, amount: 36, unit: '', additionalDetails: 'unwrapped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stand mixer' },
+        OVEN,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'silicon baking mat' },
+        BAKING_SHEET,
+        SILICON_BAKING_MAT,
     ],
     directions: [
         { step: 'Preheat the oven to 375ºF.', section: SECTIONS.MAKE_DOUGH },
@@ -59,7 +59,7 @@ module.exports = {
         { step: `In a stand mixer, cream the "${DRY_INGREDIENTS}" section ingredients until combined.`, section: SECTIONS.MAKE_DOUGH, img: [cookies1, cookies2] },
         { step: `Add the "${WET_INGREDIENTS}" section ingredients. Beat together and scrape down.`, section: SECTIONS.MAKE_DOUGH, img: cookies3 },
         { step: `Add the "${DRY_2_INGREDIENTS}" section ingredients. Beat on low until combined.`, section: SECTIONS.MAKE_DOUGH, img: cookies4 },
-        { step: 'Form 1-inch balls and place on baking sheet 2 inches apart.', section: SECTIONS.MAKE_DOUGH, img: cookies5 },
+        { step: 'Form 1 inch balls and place on baking sheet 2 inches apart.', section: SECTIONS.MAKE_DOUGH, img: cookies5 },
         { step: 'Bake until cookies are puffy (for about 8 to 10 minutes).', section: SECTIONS.BAKE, img: cookies6 },
         { step: 'Immediately add and press kisses to the center of the cookie.', section: SECTIONS.BAKE, img: cookies7 },
         { step: 'Let cookies cool completely on the pan.', section: SECTIONS.BAKE },

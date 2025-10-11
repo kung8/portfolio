@@ -78,7 +78,7 @@ module.exports = {
         { step: 'Divide between bowls.', section: PREP_BOWLS },
         { step: `Add "${BOWL_SECTION}" section ingredients to the bowls. Mix.`, section: PREP_BOWLS, img: bowl2 },
 
-        { step: 'With a meat mallet, pound the chicken to 1/2-inch thick.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'With a meat mallet, pound the chicken to 1/2 inch thick.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Season both sides with salt and pepper.', section: SECTIONS.COOK_CHICKEN, img: bowl3 },
         { step: 'Over medium heat, heat olive oil in a frying pan.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Add chicken. Sear both sides of the chicken (about 5 to 6 minutes per side). Cook until it gets an internal temperature of 165ºF.', section: SECTIONS.COOK_CHICKEN, img: bowl4 },

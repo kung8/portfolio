@@ -23,7 +23,7 @@ const samosa22 = '../assets/Products/samosa-22.jpeg';
 const samosa23 = '../assets/Products/samosa-23.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, GHEE, CAROM_SEEDS, SALT, GREEN_PEA, GINGER, SERRANO_PEPPER, CORIANDER, LEMON_JUICE, CUMIN, GARAM_MASALA, CHILI_POWDER, FENNEL_SEEDS, YUKON_GOLD_POTATO, AMCHUR_POWDER, WATER } = require('./ingredients');
+const { MIXING_BOWL, ALL_PURPOSE_FLOUR, GHEE, CAROM_SEEDS, SALT, GREEN_PEA, GINGER, SERRANO_PEPPER, CORIANDER, LEMON_JUICE, CUMIN, GARAM_MASALA, CHILI_POWDER, FENNEL_SEEDS, YUKON_GOLD_POTATO, AMCHUR_POWDER, WATER, FRYING_PAN, DOUGH_KNIFE, BAKING_PAN, LARGE_POT, STOVE, OVEN } = require('./ingredients');
 
 const POTATO_FILLING = 'Potato Filling';
 const SPICES = 'Spices';
@@ -76,15 +76,15 @@ module.exports = {
         { ...FENNEL_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'mixing bowl' },
-        { name: 'pan' },
-        { name: 'dough knife' },
-        { name: 'baking pan' },
+        LARGE_POT,
+        MIXING_BOWL,
+        FRYING_PAN,
+        DOUGH_KNIFE,
+        BAKING_PAN,
     ],
     directions: [
         { step: 'Over medium-high heat, boil a pot of water.', section: PREP_POTATOES },

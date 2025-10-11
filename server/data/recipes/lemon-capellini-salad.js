@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { ANGEL_HAIR_PASTA, LEMON, OLIVE_OIL, BLACK_PEPPER, DICED_TOMATO, CAPER, PARSLEY, GARLIC_SALT } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, ANGEL_HAIR_PASTA, LEMON, OLIVE_OIL, BLACK_PEPPER, DICED_TOMATO, CAPER, PARSLEY, GARLIC_SALT, STOVE, LARGE_POT } = require('./ingredients');
 
 const LEMON_JUICE_MIXTURE = 'Lemon Juice Mixture';
 
@@ -16,7 +16,6 @@ module.exports = {
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.MIX],
-    protein: [],
     type: [TYPES.NOODLE, TYPES.SALAD],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
@@ -39,12 +38,11 @@ module.exports = {
         { ...PARSLEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'finely chopped', section: SECTIONS.SALAD },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'mixing bowl' },
-        { name: '' },
+        LARGE_POT,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: SECTIONS.COOK_PASTA },

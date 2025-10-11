@@ -9,7 +9,7 @@ const muddy8 = '../assets/Products/muddy-buddies-8.jpeg';
 const muddy9 = '../assets/Products/muddy-buddies-9.jpeg';
 const muddy11 = '../assets/Products/muddy-buddies-11.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
-const { SEMI_SWEET_CHOCOLATE_CHIPS, PEANUT_BUTTER, CHEX_CEREAL, POWDERED_SUGAR } = require('./ingredients');
+const { MIXING_BOWL, SEMI_SWEET_CHOCOLATE_CHIPS, PEANUT_BUTTER, CHEX_CEREAL, POWDERED_SUGAR, SAUCEPAN, REFRIGERATOR, MICROWAVE, STOVE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Muddy Buddies',
@@ -36,12 +36,12 @@ module.exports = {
         { ...POWDERED_SUGAR, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'fridge' },
-        { name: 'microwave or stove' },
+        REFRIGERATOR,
+        { ...STOVE, additionalDetails: 'or microwave' },
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'microwavable bowl or saucepan' },
+        MIXING_BOWL,
+        { ...SAUCEPAN, additionalDetails: 'or microwavable bowl' },
     ],
     directions: [
         { step: 'Either over the stove or in a microwavable bowl, melt the peanut butter and chocolate chips.', section: SECTIONS.MAIN, img: [muddy1, muddy2] },

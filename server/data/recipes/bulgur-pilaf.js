@@ -8,7 +8,7 @@ const pilaf7 = '../assets/Products/bulgur-pilaf-7.jpeg';
 const pilaf8 = '../assets/Products/bulgur-pilaf-8.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { OLIVE_OIL, YELLOW_ONION, TOMATO_PASTE, VINE_TOMATO, GREEN_BELL_PEPPER, CUMIN, SALT, BLACK_PEPPER, CHICKEN_BROTH, PARSLEY, OREGANO, BULGUR_WHEAT, CHICKPEA, BROWN_SUGAR, PAPRIKA, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST } = require('./ingredients');
+const { BAKING_SHEET, OLIVE_OIL, YELLOW_ONION, TOMATO_PASTE, VINE_TOMATO, GREEN_BELL_PEPPER, CUMIN, SALT, BLACK_PEPPER, CHICKEN_BROTH, PARSLEY, OREGANO, BULGUR_WHEAT, CHICKPEA, BROWN_SUGAR, PAPRIKA, GARLIC_POWDER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OVEN, STOVE, PLASTIC_WRAP, MEAT_MALLET, MEDIUM_BOWL, ALUMINUM_FOIL, LARGE_POT } = require('./ingredients');
 
 const BULGUR_PILAF_SECTION = 'Bulgur Pilaf';
 const COOK_BULGUR_PILAF = 'Cook Bulgur Pilaf';
@@ -60,16 +60,16 @@ module.exports = {
         { ...PARSLEY, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'finely chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
+        OVEN,
+        STOVE,
     ],
     supplies: [
-        { name: 'plastic wrap' },
-        { name: 'meat mallet' },
-        { name: 'medium bowl' },
-        { name: 'baking sheet' },
-        { name: 'aluminum foil' },
-        { name: 'large pot' },
+        PLASTIC_WRAP,
+        MEAT_MALLET,
+        MEDIUM_BOWL,
+        BAKING_SHEET,
+        ALUMINUM_FOIL,
+        LARGE_POT,
     ],
     directions: [
         { step: 'Preheat the oven to 425ºF.', section: SECTIONS.COOK_CHICKEN },

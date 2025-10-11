@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { POTATO, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, MILK, EGG, UNSALTED_BUTTER, SOUR_CREAM } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, POTATO, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, MILK, EGG, UNSALTED_BUTTER, SOUR_CREAM, STOVE, COLANDER, GRATER, FRYING_PAN, MEDIUM_SAUCEPAN } = require('./ingredients');
 
 const POTATO_SECTION = 'Potato';
 const FLOUR_MIXTURE_SECTION = 'Flour Mixture';
@@ -21,7 +21,6 @@ module.exports = {
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.IRISH],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
-    protein: [],
     type: [TYPES.SIDE_DISH, TYPES.FINGER_FOOD],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
@@ -46,14 +45,14 @@ module.exports = {
         { ...SOUR_CREAM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'medium saucepan' },
-        { name: 'colander' },
-        { name: 'mixing bowl' },
-        { name: 'box grater' },
-        { name: 'frying pan' },
+        MEDIUM_SAUCEPAN,
+        COLANDER,
+        MIXING_BOWL,
+        GRATER,
+        FRYING_PAN,
     ],
     directions: [
         { step: 'Peel half the potatoes.', section: BOIL_POTATOES },
@@ -66,7 +65,7 @@ module.exports = {
         { step: 'Grate the potatoes.', section: PREP_POTATO_BATTER },
         { step: 'Wrap the potatoes in a kitchen towel and squeeze.', section: PREP_POTATO_BATTER },
         { step: `Add grated potatoes and the "${FLOUR_MIXTURE_SECTION}" section ingredients to the bowl.`, section: PREP_POTATO_BATTER },
-        
+
         { step: 'Form patties with about 1/3 cup worth of batter.', section: FRY_PATTIES },
         { step: 'Over medium heat, heat butter in a large skillet.', section: FRY_PATTIES },
         { step: 'Cook half the patties. Occasionally flipping. Cook until golden (about 8 minutes per batch).', section: FRY_PATTIES },

@@ -12,6 +12,9 @@ const {
     STEEL_OATS,
     PEANUT_BUTTER,
     COCOA_POWDER,
+    STOVE,
+    SAUCEPAN,
+    PLATE,
 } = require('./ingredients');
 
 module.exports = {
@@ -39,11 +42,11 @@ module.exports = {
         { ...STEEL_OATS, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'plates' },
+        SAUCEPAN,
+        PLATE,
     ],
     directions: [
         { step: 'Add sugar, cocoa, butter and milk into a saucepan.', section: SECTIONS.MAIN, img: butter },

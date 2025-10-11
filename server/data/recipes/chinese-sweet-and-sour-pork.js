@@ -9,7 +9,7 @@ const pork8 = '../assets/Products/sweet-and-sour-pork-8.jpeg';
 const pork9 = '../assets/Products/sweet-and-sour-pork-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { LIGHT_SOY_SAUCE, EGG, ALL_PURPOSE_FLOUR, CORNSTARCH, PORK_SHOULDER, GARLIC_SALT, KETCHUP, BROWN_SUGAR, WHITE_VINEGAR, SALT, RED_BELL_PEPPER, YELLOW_BELL_PEPPER, GREEN_BELL_PEPPER, RED_ONION, YELLOW_ONION, PINEAPPLE, VEGETABLE_OIL, WATER } = require('./ingredients');
+const { MIXING_BOWL, LIGHT_SOY_SAUCE, EGG, ALL_PURPOSE_FLOUR, CORNSTARCH, PORK_SHOULDER, GARLIC_SALT, KETCHUP, BROWN_SUGAR, WHITE_VINEGAR, SALT, RED_BELL_PEPPER, YELLOW_BELL_PEPPER, GREEN_BELL_PEPPER, RED_ONION, YELLOW_ONION, PINEAPPLE, VEGETABLE_OIL, WATER, STOVE, LARGE_POT, COOLING_RACK, PAPER_TOWELS, BAKING_PAN, SPIDER_STRAINER, WOK } = require('./ingredients');
 
 const PORK_MARINADE = 'Pork Marinade';
 const SWEET_AND_SOUR_SAUCE = 'Sweet and Sour Sauce';
@@ -61,16 +61,16 @@ module.exports = {
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: DEEP_FRY },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'large pot' },
-        { name: 'wire rack' },
-        { name: 'paper towel' },
-        { name: 'baking pan' },
-        { name: 'spider strainer' },
-        { name: 'wok' },
+        MIXING_BOWL,
+        LARGE_POT,
+        COOLING_RACK,
+        PAPER_TOWELS,
+        BAKING_PAN,
+        SPIDER_STRAINER,
+        WOK,
     ],
     directions: [
         { step: 'In a mixing bowl, combine garlic salt, soy sauce and pork. Mix for about 1 minute.', section: PORK_MARINADE, img: [pork1, pork2] },

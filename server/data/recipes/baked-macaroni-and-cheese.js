@@ -21,7 +21,7 @@ const tupperware = '../assets/Products/baked-macaroni-and-cheese-tupperware.jpeg
 const plate4 = '../assets/Products/baked-macaroni-and-cheese-full-plate-4.jpeg';
 const plate5 = '../assets/Products/baked-macaroni-and-cheese-full-plate-5.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { ELBOW_MACARONI, OLIVE_OIL, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHOLE_MILK, HEAVY_CREAM, CHEDDAR_CHEESE, BLACK_PEPPER, SALT, PANKO_BREADCRUMBS, PARMESAN_CHEESE, SMOKED_PAPRIKA, GRUYERE_CHEESE } = require('./ingredients');
+const { ELBOW_MACARONI, OLIVE_OIL, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, WHOLE_MILK, HEAVY_CREAM, CHEDDAR_CHEESE, BLACK_PEPPER, SALT, PANKO_BREADCRUMBS, PARMESAN_CHEESE, SMOKED_PAPRIKA, GRUYERE_CHEESE, COOKING_SPRAY, LARGE_POT, COLANDER, MIXING_BOWL, SMALL_BOWL, OVEN, STOVE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Baked Mac and Cheese',
@@ -59,15 +59,15 @@ module.exports = {
         { ...SMOKED_PAPRIKA, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
+        OVEN,
+        STOVE,
     ],
     supplies: [
-        { name: 'cooking oil spray' },
-        { name: 'large pot' },
-        { name: 'colander' },
-        { name: '2 mixing bowl' },
-        { name: 'small bowl' },
+        COOKING_SPRAY,
+        LARGE_POT,
+        COLANDER,
+        { ...MIXING_BOWL, amount: 2 },
+        SMALL_BOWL,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },

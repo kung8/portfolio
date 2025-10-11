@@ -2,7 +2,7 @@ const bites1 = '../assets/Products/baked-ritz-bites-1.jpeg';
 const bites2 = '../assets/Products/baked-ritz-bites-2.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { RITZ_CRACKERS, HAVARTI_CHEESE, BUTTER_PICKLE_CHIPS, EVERYTHING_BAGEL_SEASONING } = require('./ingredients');
+const { BAKING_SHEET, RITZ_CRACKERS, HAVARTI_CHEESE, BUTTER_PICKLE_CHIPS, EVERYTHING_BAGEL_SEASONING, ALUMINUM_FOIL, OVEN } = require('./ingredients');
 
 const PREP_CRACKER_BITES = 'Prep Cracker Bites';
 const BAKE_CRACKER_BITES = 'Bake Cracker Bites';
@@ -34,11 +34,11 @@ module.exports = {
         { ...EVERYTHING_BAGEL_SEASONING, amount: '', unit: '', additionalDetails: 'to taste', section: '' },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'aluminum foil' },
+        BAKING_SHEET,
+        ALUMINUM_FOIL,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: PREP_CRACKER_BITES },

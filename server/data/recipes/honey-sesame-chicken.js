@@ -8,8 +8,8 @@ const sesame7 = '../assets/Products/honey-sesame-chicken-7.jpeg';
 const sesame8 = '../assets/Products/honey-sesame-chicken-8.jpeg';
 const sesame9 = '../assets/Products/honey-sesame-chicken-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGG, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, CORNSTARCH, VEGETABLE_OIL, GARLIC, HONEY, LIGHT_SOY_SAUCE, KETCHUP, BROWN_SUGAR, RICE_WINE_VINEGAR, SESAME_OIL, GREEN_ONION, SESAME_SEEDS } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { BAKING_SHEET, BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGG, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, CORNSTARCH, VEGETABLE_OIL, GARLIC, HONEY, LIGHT_SOY_SAUCE, KETCHUP, BROWN_SUGAR, RICE_WINE_VINEGAR, SESAME_OIL, GREEN_ONION, SESAME_SEEDS, STOVE, MEDIUM_BOWL, PLATE, COOLING_RACK, PAPER_TOWELS, COOKING_THERMOMETER, SPIDER_STRAINER, SAUCEPAN, TALL_NARROW_POT } = require('./ingredients');
 
 const DEEP_FRY = 'Deep Fry';
 const EGG_DREDGE = 'Egg Dredge';
@@ -61,23 +61,22 @@ module.exports = {
         { ...GREEN_ONION, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'shallow dish' },
-        { name: 'plate' },
-        { name: 'narrow pot' },
-        { name: 'wire rack' },
-        { name: 'baking sheet' },
-        { name: 'paper towels' },
-        { name: 'cooking thermometer' },
-        { name: 'spider strainer' },
-        { name: 'saucepan' },
+        { ...MEDIUM_BOWL, amount: 2 },
+        PLATE,
+        TALL_NARROW_POT,
+        COOLING_RACK,
+        BAKING_SHEET,
+        PAPER_TOWELS,
+        COOKING_THERMOMETER,
+        SPIDER_STRAINER,
+        SAUCEPAN,
     ],
     directions: [
         { step: 'In a medium bowl, combine the "Egg Dredge" ingredients.', section: EGG_DREDGE },
-        { step: 'In a shallow dish, combine the "Flour Dredge" ingredients.', section: FLOUR_DREDGE },
+        { step: 'In another medium bowl, combine the "Flour Dredge" ingredients.', section: FLOUR_DREDGE },
         { step: 'Over medium-high heat, fill a pot with 3 inches of oil.', section: DEEP_FRY },
         { step: 'Line a baking sheet with paper towels and place a wire cooling rack on top.', section: DEEP_FRY },
         { step: 'Dip the chicken into the egg dredge and then into the flour.', section: DEEP_FRY, img: sesame2 },

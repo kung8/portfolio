@@ -11,6 +11,7 @@ import { getValidDateRangeError } from '../grocery-list-modal/getValidDateRangeE
 export const AddToGroceryListModal = ({
     closeModal,
     initialType,
+    modalClassName,
     onAdd,
 }) => {
     const [type, setType] = useState(initialType);
@@ -45,7 +46,7 @@ export const AddToGroceryListModal = ({
     }, [categoryData]);
 
     return (
-        <div className="add-to-grocery-list-modal">
+        <div className={modalClassName}>
             <ModalContent>
                 <div className="top-container">
                     <ModalHeader
@@ -166,7 +167,12 @@ export const AddToGroceryListModal = ({
                             finalMealPlanningDateRange[0] = finalMealPlanningDateRange[1];
                         }
 
-                        onAdd(date, type, finalMealPlanningDateRange, vendor);
+                        onAdd({
+                            date,
+                            type,
+                            mealPlanningDateRange: finalMealPlanningDateRange,
+                            vendor
+                        });
                         closeModal();
                     }}
                     handleCancel={closeModal}

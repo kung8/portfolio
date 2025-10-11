@@ -11,8 +11,8 @@ const oyakodon10 = '../assets/Products/oyakodon-10.jpeg';
 const oyakodon11 = '../assets/Products/oyakodon-11.jpeg';
 const oyakodon12 = '../assets/Products/oyakodon-12.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHAOXING_WINE, EGG, DASHI, LIGHT_SOY_SAUCE, MIRIN, WHITE_SUGAR, SHORT_GRAINED_RICE, GREEN_ONION } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, YELLOW_ONION, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SHAOXING_WINE, EGG, DASHI, LIGHT_SOY_SAUCE, MIRIN, WHITE_SUGAR, SHORT_GRAINED_RICE, GREEN_ONION, STOVE, RICE_COOKER, MEDIUM_BOWL, CHOPSTICKS, FRYING_PAN } = require('./ingredients');
 
 const SEASONING = 'Seasoning';
 const COOK_RICE = 'Cook Rice';
@@ -56,14 +56,14 @@ module.exports = {
         { ...SHORT_GRAINED_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'rice cooker' },
+        STOVE,
+        RICE_COOKER,
     ],
     supplies: [
-        { name: '2 medium bowls' },
-        { name: 'mixing bowl' },
-        { name: 'chopsticks' },
-        { name: 'frying pan' },
+        { ...MEDIUM_BOWL, amount: 2 },
+        MIXING_BOWL,
+        CHOPSTICKS,
+        FRYING_PAN,
     ],
     directions: [
         { step: 'Cook enough rice for the number of servings needed. One rice cooker cups will yield one serving.', section: COOK_RICE },

@@ -1,11 +1,17 @@
 const hospitalityChicken = '../assets/Products/hospitality-chicken.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     CHICKEN_THIGH,
     MCCORMICK_SEASONING_PACKET,
     SNOW_PEA,
     CARROT_CHIP,
     OLIVE_OIL,
+    AIR_FRYER,
+    STOVE,
+    FRYING_PAN,
+    SPATULA,
+    LARGE_POT,
+    STEAMER,
 } = require('./ingredients');
 
 module.exports = {
@@ -32,13 +38,14 @@ module.exports = {
         { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
     ],
     appliances: [
-        { name: 'air fryer' },
-        { name: 'stove' },
+        AIR_FRYER,
+        STOVE,
     ],
     supplies: [
-        { name: 'pot with steamer' },
-        { name: 'frying pan' },
-        { name: 'spatula' },
+        STEAMER,
+        LARGE_POT,
+        FRYING_PAN,
+        SPATULA,
     ],
     directions: [
         { step: 'Pat dry the chicken, then marinade chicken with seasoning packet and let it sit for at least 30 minutes', section: SECTIONS.MAIN },

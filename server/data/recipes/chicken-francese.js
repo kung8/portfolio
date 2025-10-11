@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { ALL_PURPOSE_FLOUR, EGG, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL, CHICKEN_BROTH, WHITE_WINE, UNSALTED_BUTTER, LEMON, PARSLEY, SALT, BLACK_PEPPER, WATER, CORNSTARCH } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, EGG, BONELESS_AND_SKINLESS_CHICKEN_BREAST, OLIVE_OIL, CHICKEN_BROTH, WHITE_WINE, UNSALTED_BUTTER, LEMON, PARSLEY, SALT, BLACK_PEPPER, WATER, CORNSTARCH, STOVE, OVEN, SMALL_BOWL, LARGE_PAN, PLATE, PAPER_TOWELS, SAUCEPAN, BAKING_PAN } = require('./ingredients');
 
 const CORNSTARCH_MIXTURE_SECTION = 'Cornstarch Mixture';
 
@@ -42,16 +42,16 @@ module.exports = {
         { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CORNSTARCH_MIXTURE_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'small bowls' },
-        { name: 'large pan' },
-        { name: 'plate' },
-        { name: 'paper towels' },
-        { name: 'saucepan' },
-        { name: 'baking dish' },
+        { ...SMALL_BOWL, amount: 2 },
+        LARGE_PAN,
+        PLATE,
+        PAPER_TOWELS,
+        SAUCEPAN,
+        BAKING_PAN,
     ],
     directions: [
         { step: 'Prepare dredging stations: (1) flour and (2) eggs.', section: SECTIONS.COOK_CHICKEN },

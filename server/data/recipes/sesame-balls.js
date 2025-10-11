@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { GLUTINOUS_RICE_FLOUR, WHITE_SUGAR, SALT, WATER, SESAME_SEEDS, VEGETABLE_OIL, RED_BEAN_PASTE, SPLIT_MUNG_BEAN, VANILLA_EXTRACT, SHREDDED_COCONUT } = require('./ingredients');
+const { MIXING_BOWL, BAKING_SHEET, GLUTINOUS_RICE_FLOUR, WHITE_SUGAR, SALT, WATER, SESAME_SEEDS, VEGETABLE_OIL, RED_BEAN_PASTE, SPLIT_MUNG_BEAN, VANILLA_EXTRACT, SHREDDED_COCONUT, DEEP_FRYER_OR_STOVE, PLASTIC_WRAP, COLANDER, LARGE_POT, LARGE_BOWL, SMALL_BOWL, SLOTTED_SPOON, SPIDER_STRAINER, COOLING_RACK, PAPER_TOWELS } = require('./ingredients');
 
 const MUNG_BEAN_FILLING = 'Mung Bean Filling';
 const RED_BEAN_FILLING = 'Red Bean Filling';
@@ -54,25 +54,25 @@ module.exports = {
         { ...VEGETABLE_OIL, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DEEP_FRY },
     ],
     appliances: [
-        { name: 'deep fryer or stove' },
+        DEEP_FRYER_OR_STOVE,
     ],
     supplies: [
         // dough
-        { name: 'mixing bowl' },
-        { name: 'plastic wrap' },
+        MIXING_BOWL,
+        PLASTIC_WRAP,
         // mung bean filling
-        { name: 'colander' },
-        { name: 'pot' },
-        { name: 'large bowl' },
+        COLANDER,
+        LARGE_POT,
+        LARGE_BOWL,
         // dipping stations
-        { name: '2 small bowls' },
+        { ...SMALL_BOWL, amount: 2 },
         // frying
-        { name: 'large pot' },
-        { name: 'slotted spoon' },
-        { name: 'spider strainer' },
-        { name: 'wire rack' },
-        { name: 'paper towels' },
-        { name: 'baking sheet' },
+        LARGE_POT,
+        SLOTTED_SPOON,
+        SPIDER_STRAINER,
+        COOLING_RACK,
+        PAPER_TOWELS,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'In a mixing bowl, combine the rice flour, sugar and salt.', section: SECTIONS.PREP_DOUGH },

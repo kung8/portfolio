@@ -13,7 +13,7 @@ const tomatoes12 = '../assets/Products/vietnamese-stuffed-tomatoes-12.jpeg';
 const tomatoes13 = '../assets/Products/vietnamese-stuffed-tomatoes-13.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { VINE_TOMATO, CORNSTARCH, GROUND_PORK, YELLOW_ONION, GARLIC, FISH_SAUCE, SALT, WHITE_SUGAR, BLACK_PEPPER, VEGETABLE_OIL, LIGHT_SOY_SAUCE, GREEN_ONION, WATER } = require('./ingredients');
+const { MIXING_BOWL, VINE_TOMATO, CORNSTARCH, GROUND_PORK, YELLOW_ONION, GARLIC, FISH_SAUCE, SALT, WHITE_SUGAR, BLACK_PEPPER, VEGETABLE_OIL, LIGHT_SOY_SAUCE, GREEN_ONION, WATER, STOVE, SPOON, MEDIUM_BOWL, FRYING_PAN, SMALL_BOWL, KNIFE } = require('./ingredients');
 
 const TOMATOES_SECTION = 'Tomatoes';
 
@@ -61,15 +61,15 @@ module.exports = {
         { ...GREEN_ONION, amount: 2, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'spoon' },
-        { name: '2 medium bowls' },
-        { name: 'frying pan' },
-        { name: 'knife' },
-        { name: 'small bowl' },
+        MIXING_BOWL,
+        SPOON,
+        { ...MEDIUM_BOWL, amount: 2 },
+        FRYING_PAN,
+        KNIFE,
+        SMALL_BOWL,
     ],
     directions: [
         { step: 'In a mixing bowl, combine the "Filling" ingredients.', section: SECTIONS.FILLING, img: tomatoes3 },

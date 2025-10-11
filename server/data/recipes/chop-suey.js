@@ -4,7 +4,7 @@ const suey3 = '../assets/Products/chop-suey-3.jpeg';
 const suey4 = '../assets/Products/chop-suey-4.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, BAKING_SODA, VEGETABLE_OIL, GARLIC, WHITE_ONION, CARROT, BABY_BOK_CHOY, MUSHROOM, BEAN_SPROUT, CORNSTARCH, LIGHT_SOY_SAUCE, OYSTER_SAUCE, SHAOXING_WINE, SESAME_OIL, WHITE_PEPPER, WATER } = require('./ingredients');
+const { MIXING_BOWL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, BAKING_SODA, VEGETABLE_OIL, GARLIC, WHITE_ONION, CARROT, BABY_BOK_CHOY, MUSHROOM, BEAN_SPROUT, CORNSTARCH, LIGHT_SOY_SAUCE, OYSTER_SAUCE, SHAOXING_WINE, SESAME_OIL, WHITE_PEPPER, WATER, STOVE, MEDIUM_BOWL, WOK } = require('./ingredients');
 
 module.exports = {
     cardName: 'Chop Suey',
@@ -49,12 +49,12 @@ module.exports = {
 
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'medium bowl' },
-        { name: 'wok' },
+        MIXING_BOWL,
+        MEDIUM_BOWL,
+        WOK,
     ],
     directions: [
         { step: 'In a mixing bowl, combine the chicken and baking soda. Marinate for 20 to 30 minutes.', section: SECTIONS.MARINATE_CHICKEN },

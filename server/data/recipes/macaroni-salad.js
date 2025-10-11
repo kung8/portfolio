@@ -18,6 +18,11 @@ const {
     YELLOW_ONION,
     CELERY,
     GREEN_BELL_PEPPER,
+    STOVE,
+    LARGE_POT,
+    RUBBER_SPATULA,
+    STRAINER,
+    MIXING_BOWL,
 } = require('./ingredients');
 
 const MAYO_MIXTURE = 'Mayo Mixture';
@@ -53,13 +58,13 @@ module.exports = {
         { ...GREEN_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.VEGGIES },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'pot' },
-        { name: 'large mixing bowl' },
-        { name: 'rubber spatula' },
-        { name: 'strainer' },
+        LARGE_POT,
+        MIXING_BOWL,
+        RUBBER_SPATULA,
+        STRAINER,
     ],
     directions: [
         { step: 'Over high heat, boil water and salt in a large pot.', section: SECTIONS.COOK_PASTA },

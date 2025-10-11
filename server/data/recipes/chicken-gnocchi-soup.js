@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { OLIVE_OIL, YELLOW_ONION, CARROT, CELERY, GARLIC, ALL_PURPOSE_FLOUR, CHICKEN_BROTH, BONELESS_AND_SKINLESS_CHICKEN_THIGH, THYME, SALT, BLACK_PEPPER, GNOCCHI, BABY_SPINACH, HALF_AND_HALF } = require('./ingredients');
+const { OLIVE_OIL, YELLOW_ONION, CARROT, CELERY, GARLIC, ALL_PURPOSE_FLOUR, CHICKEN_BROTH, BONELESS_AND_SKINLESS_CHICKEN_THIGH, THYME, SALT, BLACK_PEPPER, GNOCCHI, BABY_SPINACH, HALF_AND_HALF, STOVE, DUTCH_OVEN_POT } = require('./ingredients');
 
 const GARLIC_SECTION = 'Garlic';
 const FLOUR_SECTION = 'Flour';
@@ -54,10 +54,10 @@ module.exports = {
         { ...HALF_AND_HALF, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SPINACH_AND_CREAM_SECTIONS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'dutch oven pot' },
+        DUTCH_OVEN_POT,
     ],
     directions: [
         { step: 'Over medium heat, heat oil in a dutch oven pot.', section: SECTIONS.COOK_VEGGIES },

@@ -13,7 +13,11 @@ const {
     GARLIC_POWDER,
     PAPRIKA,
     CAYENNE_PEPPER,
-    ONION_POWDER
+    ONION_POWDER,
+    BAKING_PAN,
+    BASTING_BRUSH,
+    SMALL_BOWL,
+    OVEN
 } = require('./ingredients');
 
 module.exports = {
@@ -46,12 +50,12 @@ module.exports = {
         { ...CAYENNE_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking pan' },
-        { name: 'basting brush' },
-        { name: 'small bowl' },
+        BAKING_PAN,
+        BASTING_BRUSH,
+        SMALL_BOWL,
     ],
     directions: [
         { step: 'Preheat the oven to 400ºF.', section: SECTIONS.MAIN },

@@ -7,8 +7,8 @@ const sub6 = '../assets/Products/meatball-sub-6.jpeg';
 const sub7 = '../assets/Products/meatball-sub-7.jpeg';
 const sub8 = '../assets/Products/meatball-sub-8.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { TOMATO_SAUCE, HOAGIE_BREAD, MOZZARELLA_CHEESE, GROUND_BEEF, EGG, BREADCRUMBS, ITALIAN_SEASONING, ONION_POWDER, SALT, BLACK_PEPPER } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, BAKING_SHEET, TOMATO_SAUCE, HOAGIE_BREAD, MOZZARELLA_CHEESE, GROUND_BEEF, EGG, BREADCRUMBS, ITALIAN_SEASONING, ONION_POWDER, SALT, BLACK_PEPPER, OVEN, STOVE, PARCHMENT_PAPER, SAUCEPAN, BAKING_PAN } = require('./ingredients');
 const { DAIRY } = require('./ingredient-categories');
 
 const GARLIC_BUTTER = { name: 'garlic butter', category: DAIRY };
@@ -53,15 +53,15 @@ module.exports = {
         { ...MOZZARELLA_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUB_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
+        OVEN,
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'baking sheet' },
-        { name: 'parchment paper' },
-        { name: 'saucepan' },
-        { name: 'baking pan' },
+        MIXING_BOWL,
+        BAKING_SHEET,
+        PARCHMENT_PAPER,
+        SAUCEPAN,
+        BAKING_PAN,
     ],
     directions: [
         { step: 'Preheat oven to 350ºF.', section: PREP_MEATBALLS },

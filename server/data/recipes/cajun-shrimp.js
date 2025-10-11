@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { PAPRIKA, SALT, GARLIC_POWDER, BLACK_PEPPER, ONION_POWDER, OREGANO, CAYENNE_PEPPER, RED_PEPPER_FLAKES, WHITE_RICE, CHICKEN_BROTH, SHRIMP, UNSALTED_BUTTER, GARLIC, PARSLEY } = require('./ingredients');
+const { MIXING_BOWL, PAPRIKA, SALT, GARLIC_POWDER, BLACK_PEPPER, ONION_POWDER, OREGANO, CAYENNE_PEPPER, RED_PEPPER_FLAKES, WHITE_RICE, CHICKEN_BROTH, SHRIMP, UNSALTED_BUTTER, GARLIC, PARSLEY, STOVE, MEDIUM_BOWL, WOK } = require('./ingredients');
 
 module.exports = {
     wip: true,
@@ -43,12 +43,12 @@ module.exports = {
         { ...PARSLEY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'wok' },
-        { name: 'mixing bowl' },
+        MEDIUM_BOWL,
+        WOK,
+        MIXING_BOWL,
     ],
     directions: [
         { step: `In a medium bowl, combine all the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SEASONINGS },

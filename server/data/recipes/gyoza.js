@@ -10,7 +10,7 @@ const gyoza9 = '../assets/Products/gyoza-9.jpeg';
 
 const { img } = require('./choy-sum-with-garlic-sauce');
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { GROUND_PORK, GREEN_ONION, CABBAGE, GARLIC, SESAME_OIL, LIGHT_SOY_SAUCE, SALT, BLACK_PEPPER, VEGETABLE_OIL, WATER, WONTON_WRAPPER } = require('./ingredients');
+const { GROUND_PORK, GREEN_ONION, CABBAGE, GARLIC, SESAME_OIL, LIGHT_SOY_SAUCE, SALT, BLACK_PEPPER, VEGETABLE_OIL, WATER, WONTON_WRAPPER, STOVE, FRYING_PAN, PLATE } = require('./ingredients');
 
 const WRAPPER_SECTION = 'Wrapper';
 const COOK_GYOZAS = 'Cook Gyozas';
@@ -50,11 +50,11 @@ module.exports = {
         { ...WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'pan' },
-        { name: 'plate' },
+        FRYING_PAN,
+        PLATE,
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.ASSEMBLE, img: gyoza1 },

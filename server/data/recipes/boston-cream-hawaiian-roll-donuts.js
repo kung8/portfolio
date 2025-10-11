@@ -12,7 +12,7 @@ const donut11 = '../assets/Products/boston-cream-hawaiian-rolls-donuts-11.jpeg';
 const donut12 = '../assets/Products/boston-cream-hawaiian-rolls-donuts-12.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { HAWAIIAN_ROLLS, UNSALTED_BUTTER, VANILLA_INSTANT_PUDDING_MIX, MILK, VANILLA_EXTRACT, SALT, SEMI_SWEET_CHOCOLATE_CHIPS, WHIPPED_TOPPING } = require('./ingredients');
+const { BAKING_SHEET, MIXING_BOWL, HAWAIIAN_ROLLS, UNSALTED_BUTTER, VANILLA_INSTANT_PUDDING_MIX, MILK, VANILLA_EXTRACT, SALT, SEMI_SWEET_CHOCOLATE_CHIPS, WHIPPED_TOPPING, OVEN, MICROWAVE, BASTING_BRUSH, SPATULA, MEDIUM_BOWL, PIPING_BAG, SILICON_BAKING_MAT } = require('./ingredients');
 
 const ROLLS_SECTION = 'Rolls';
 const PUDDING_MIX_SECTION = 'Pudding Mix';
@@ -59,18 +59,17 @@ module.exports = {
         { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GLAZE_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'microwave' },
+        OVEN,
+        MICROWAVE,
     ],
     supplies: [
-        { name: 'silicon baking mat' },
-        { name: 'baking sheet' },
-        { name: 'basting brush' },
-        { name: 'mixing bowl' },
-        { name: 'piping bag' },
-        { name: 'medium bowl' },
-        { name: 'spatula' },
-        { name: '' },
+        SILICON_BAKING_MAT,
+        BAKING_SHEET,
+        BASTING_BRUSH,
+        MIXING_BOWL,
+        PIPING_BAG,
+        MEDIUM_BOWL,
+        SPATULA
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: PREP_ROLLS },

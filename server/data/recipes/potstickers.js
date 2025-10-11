@@ -22,6 +22,8 @@ const {
     RICE_WINE_VINEGAR,
     VEGETABLE_OIL,
     WATER,
+    STOVE,
+    FRYING_PAN,
 } = require('./ingredients');
 
 const DIPPING_SAUCE = 'Dipping Sauce';
@@ -66,10 +68,10 @@ module.exports = {
         { ...WATER, amount: 8, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'for steaming', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'pan' },
+        FRYING_PAN,
     ],
     directions: [
         { step: 'Mix together all the ingredients for the filling in a mixing bowl.', section: SECTIONS.FILLING, img: filling },

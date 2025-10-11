@@ -25,8 +25,8 @@ const kolaches24 = '../assets/Products/kolaches-24.jpeg';
 const kolaches25 = '../assets/Products/kolaches-25.jpeg';
 const kolaches26 = '../assets/Products/kolaches-26.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { YEAST, WHITE_SUGAR, ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, EGG_YOLK, SALT, CREAM_CHEESE, POWDERED_SUGAR, WHOLE_MILK, CHERRY, LEMON_JUICE, LEMON_ZEST, WATER } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { MIXING_BOWL, BAKING_SHEET, YEAST, WHITE_SUGAR, ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, EGG_YOLK, SALT, CREAM_CHEESE, POWDERED_SUGAR, WHOLE_MILK, CHERRY, LEMON_JUICE, LEMON_ZEST, WATER, STOVE, OVEN, STAND_MIXER, BOWL, SMALL_BOWL, PLASTIC_WRAP, SAUCEPAN, SILICON_BAKING_MAT, BASTING_BRUSH } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
 const CHERRY_FILLING_SECTION = 'Cherry Filling';
@@ -91,19 +91,19 @@ module.exports = {
         { ...WHOLE_MILK, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: EGG_WASH_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
-        { name: 'stand mixer or electric mixer' },
+        STOVE,
+        OVEN,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: 'microwavable bowl' },
-        { name: 'mixing bowl' },
-        { name: '2 small bowls' },
-        { name: 'plastic wrap' },
-        { name: 'saucepan' },
-        { name: 'baking sheet' },
-        { name: 'silicon baking mat' },
-        { name: 'cooking brush' },
+        BOWL,
+        MIXING_BOWL,
+        { ...SMALL_BOWL, amount: 2 },
+        PLASTIC_WRAP,
+        SAUCEPAN,
+        BAKING_SHEET,
+        SILICON_BAKING_MAT,
+        BASTING_BRUSH,
     ],
     directions: [
         { step: 'In a mixing bowl, combine 1 cup of flour, sugar and yeast.', section: MAKE_DOUGH },
@@ -138,7 +138,7 @@ module.exports = {
         { step: 'Set aside.', section: MAKE_EGG_WASH },
 
         { step: 'Preheat the oven to 375ºF.', section: SECTIONS.ASSEMBLE },
-        { step: 'Make a 2-inch well in the center of each kolaches with your fingertips (or with a spoon).', section: SECTIONS.ASSEMBLE },
+        { step: 'Make a 2 inch well in the center of each kolaches with your fingertips (or with a spoon).', section: SECTIONS.ASSEMBLE },
         { step: 'Brush the sides and outer edge with the egg wash.', section: SECTIONS.ASSEMBLE, img: kolaches21 },
         { step: 'Spread 1 tablespoon of the cream cheese filling in each kolaches.', section: SECTIONS.ASSEMBLE, img: kolaches22 },
         { step: 'Make a smaller well in the center of the cream cheese filling.', section: SECTIONS.ASSEMBLE },

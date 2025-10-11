@@ -9,6 +9,9 @@ const {
     UNSALTED_BUTTER,
     YELLOW_ONION,
     RED_BELL_PEPPER,
+    STOVE,
+    FRYING_PAN,
+    SAUCEPAN,
 } = require('./ingredients');
 
 const EGGS_SECTION = 'Eggs';
@@ -41,11 +44,11 @@ module.exports = {
         { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'diced', section: VEGGIES },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'frying pan' },
+        SAUCEPAN,
+        FRYING_PAN,
     ],
     directions: [
         { step: 'Over medium-high heat, boil water and salt in a saucepan.', section: EGGS_SECTION },

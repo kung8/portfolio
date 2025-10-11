@@ -1,6 +1,7 @@
 const eggCasserole = '../assets/Products/egg-casserole.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
+    MIXING_BOWL,
     BREAD,
     CHEDDAR_CHEESE,
     COOKED_HAM,
@@ -12,6 +13,15 @@ const {
     BLACK_PEPPER,
     KETCHUP,
     SALSA,
+    BAKING_PAN,
+    CUTTING_BOARD,
+    KNIFE,
+    FORK,
+    MEASURING_SPOONS,
+    MEASURING_CUPS,
+    OVEN,
+    REFRIGERATOR,
+    ALUMINUM_FOIL,
 } = require('./ingredients');
 
 module.exports = {
@@ -43,18 +53,18 @@ module.exports = {
         { ...SALSA, amount: '', unit: '', additionalDetails: '(optional)', optional: false },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
+        REFRIGERATOR,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'baking pan' },
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: 'fork' },
-        { name: 'measuring cups' },
-        { name: 'measuring spoons' },
-        { name: 'refrigerator' },
-        { name: 'aluminum foil' },
+        MIXING_BOWL,
+        BAKING_PAN,
+        CUTTING_BOARD,
+        KNIFE,
+        FORK,
+        MEASURING_CUPS,
+        MEASURING_SPOONS,
+        ALUMINUM_FOIL,
     ],
     directions: [
         { step: 'Cut the bread, ham, onion, and bell peppers.', section: SECTIONS.MAIN },

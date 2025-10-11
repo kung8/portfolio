@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { LIGHT_SOY_SAUCE, BROWN_SUGAR, OLIVE_OIL, YELLOW_MUSTARD, CAJUN_SEASONING, GARLIC, UNSALTED_BUTTER, SHRIMP, SALT, BLACK_PEPPER, GREEN_ONION } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, LIGHT_SOY_SAUCE, BROWN_SUGAR, OLIVE_OIL, YELLOW_MUSTARD, CAJUN_SEASONING, GARLIC, UNSALTED_BUTTER, SHRIMP, SALT, BLACK_PEPPER, GREEN_ONION, STOVE, FRYING_PAN } = require('./ingredients');
 
 const COOK_SECTION = 'Cook';
 
@@ -42,12 +42,11 @@ module.exports = {
         { ...GREEN_ONION, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'pan' },
-        { name: '' },
+        MIXING_BOWL,
+        FRYING_PAN,
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },

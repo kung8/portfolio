@@ -15,9 +15,8 @@ const vanillaMixed = '../assets/Products/creme-brulee-vanilla-sugar-mixed.jpeg';
 const vanillaUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-unmixed.jpeg';
 const sugarYolksMixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-mixed.jpeg';
 const sugarYolksUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-unmixed.jpeg';
-const { waitTime } = require('./cheesecake-factory-cheesecake');
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { HEAVY_CREAM, VANILLA_BEAN, EGG_YOLK, HOT_WATER, WHITE_SUGAR } = require('./ingredients');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { HEAVY_CREAM, VANILLA_BEAN, EGG_YOLK, HOT_WATER, WHITE_SUGAR, STOVE, OVEN, SAUCEPAN, RAMEKIN, BAKING_PAN, MEDIUM_BOWL } = require('./ingredients');
 
 const CREAM = 'Cream';
 const VANILLA_SUGAR = 'Vanilla Sugar';
@@ -54,14 +53,14 @@ module.exports = {
         { ...HOT_WATER, amount: 2, unit: INGREDIENT_UNITS.QUART, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: '2 medium bowls' },
-        { name: 'saucepan' },
-        { name: '6 ramekins' },
-        { name: 'baking pan' },
+        { ...MEDIUM_BOWL, amount: 2 },
+        SAUCEPAN,
+        { ...RAMEKIN, amount: 6 },
+        BAKING_PAN,
     ],
     directions: [
         { step: 'Place sugar in a medium bowl.', section: VANILLA_SUGAR, img: sugar },

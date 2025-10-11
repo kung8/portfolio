@@ -7,8 +7,8 @@ const dumpling6 = '../assets/Products/dumpling-soup-6.jpeg';
 const dumpling7 = '../assets/Products/dumpling-soup-7.jpeg';
 const dumpling8 = '../assets/Products/dumpling-soup-8.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { VEGETABLE_OIL, SESAME_OIL, CARROT, GREEN_ONION, GARLIC, GROUND_GINGER, CHICKEN_BROTH, DUMPLINGS, BABY_SPINACH, LIGHT_SOY_SAUCE, SRIRACHA_SAUCE, MISO_PASTE, CHILI_OIL } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { VEGETABLE_OIL, SESAME_OIL, CARROT, GREEN_ONION, GARLIC, GROUND_GINGER, CHICKEN_BROTH, DUMPLINGS, BABY_SPINACH, LIGHT_SOY_SAUCE, SRIRACHA_SAUCE, MISO_PASTE, CHILI_OIL, STOVE, LARGE_POT, SMALL_BOWL } = require('./ingredients');
 
 const MISO_PASTE_MIXTURE = 'Miso Paste Mixture';
 
@@ -53,11 +53,11 @@ module.exports = {
         { ...LIGHT_SOY_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'small bowl' },
+        LARGE_POT,
+        SMALL_BOWL,
     ],
     directions: [
         { step: 'Over medium heat, heat oils in a large pot.', section: SECTIONS.MAKE_SOUP },

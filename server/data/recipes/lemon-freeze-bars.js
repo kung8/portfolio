@@ -14,7 +14,6 @@ module.exports = {
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.FREEZE],
-    protein: [],
     type: [TYPES.DESSERT, TYPES.BAR],
     yields: { amount: '', unit: '' },
     prepTime: { amount: '', unit: '' },

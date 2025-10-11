@@ -9,7 +9,7 @@ const chicken8 = '../assets/Products/peruvian-chicken-8.jpeg';
 const chicken9 = '../assets/Products/peruvian-chicken-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { GARLIC, LIGHT_SOY_SAUCE, LIME_JUICE, OLIVE_OIL, CUMIN, PAPRIKA, OREGANO, BLACK_PEPPER, JALAPENO_PEPPER, CILANTRO, GREEN_ONION, MAYONNAISE, SALT, GREEK_YOGURT, CHICKEN_DRUMETTES } = require('./ingredients');
+const { MIXING_BOWL, GARLIC, LIGHT_SOY_SAUCE, LIME_JUICE, OLIVE_OIL, CUMIN, PAPRIKA, OREGANO, BLACK_PEPPER, JALAPENO_PEPPER, CILANTRO, GREEN_ONION, MAYONNAISE, SALT, GREEK_YOGURT, CHICKEN_DRUMETTES, BAKING_PAN, ALUMINUM_FOIL, BLENDER, OVEN } = require('./ingredients');
 
 const CREAMY_GREEN_SAUCE = 'Creamy Green Sauce';
 
@@ -56,13 +56,13 @@ module.exports = {
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CREAMY_GREEN_SAUCE },
     ],
     appliances: [
-        { name: 'blender' },
-        { name: 'oven' },
+        BLENDER,
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'baking pan' },
-        { name: 'aluminum foil' },
+        MIXING_BOWL,
+        BAKING_PAN,
+        ALUMINUM_FOIL,
     ],
     directions: [
         { step: 'Combine marinade ingredients in a blender.', section: SECTIONS.MARINADE, img: chicken1 },

@@ -10,7 +10,7 @@ const tart9 = '../assets/Products/apple-tart-9.jpeg';
 const tart10 = '../assets/Products/apple-tart-10.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { UNSALTED_BUTTER, WHITE_SUGAR, EGG_YOLK, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, ALMOND_FLOUR, REFRIGERATED_PUFF_PASTRY, PINK_LADY_APPLE, APRICOT_JELLY } = require('./ingredients');
+const { BAKING_SHEET, MIXING_BOWL, UNSALTED_BUTTER, WHITE_SUGAR, EGG_YOLK, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, ALMOND_FLOUR, REFRIGERATED_PUFF_PASTRY, PINK_LADY_APPLE, APRICOT_JELLY, BASTING_BRUSH, OVEN } = require('./ingredients');
 
 const FRANGIPANE = 'Frangipane';
 const BRUSH = 'Brush';
@@ -47,12 +47,12 @@ module.exports = {
         { ...APRICOT_JELLY, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'heated until partially melted', section: SECTIONS.ASSEMBLE },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'baking sheet' },
-        { name: 'brush' },
+        MIXING_BOWL,
+        BAKING_SHEET,
+        BASTING_BRUSH,
     ],
     directions: [
         { step: 'In a mixing bowl, cream together butter and sugar.', section: FRANGIPANE, img: tart1 },

@@ -13,7 +13,7 @@ const plated1 = '../assets/Products/peanut-brittle-plated-1.jpeg';
 const plated2 = '../assets/Products/peanut-brittle-plated-2.jpeg';
 const rebaked = '../assets/Products/peanut-brittle-rebaked.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { WHITE_SUGAR, CORN_SYRUP, UNSALTED_PEANUT, UNSALTED_BUTTER, BAKING_SODA, VANILLA_EXTRACT, WATER } = require('./ingredients');
+const { BAKING_SHEET, WHITE_SUGAR, CORN_SYRUP, UNSALTED_PEANUT, UNSALTED_BUTTER, BAKING_SODA, VANILLA_EXTRACT, WATER, STOVE, PARCHMENT_PAPER, SAUCEPAN, COOKING_THERMOMETER } = require('./ingredients');
 
 module.exports = {
     cardName: 'Peanut Brittle',
@@ -44,13 +44,13 @@ module.exports = {
         { ...VANILLA_EXTRACT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'parchment paper' },
-        { name: 'saucepan' },
-        { name: 'food thermometer' },
+        BAKING_SHEET,
+        PARCHMENT_PAPER,
+        SAUCEPAN,
+        COOKING_THERMOMETER,
     ],
     directions: [
         { step: 'Place parchment paper on a baking sheet.', section: SECTIONS.MAIN },

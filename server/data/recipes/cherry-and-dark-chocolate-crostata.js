@@ -17,9 +17,7 @@ const crostata16 = '../assets/Products/cherry-crostata-16.jpeg';
 const crostata17 = '../assets/Products/cherry-crostata-17.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { ALL_PURPOSE_FLOUR, WHITE_SUGAR, LEMON_ZEST, BAKING_POWDER, SALT, UNSALTED_BUTTER, EGG, EGG_YOLK, VANILLA_EXTRACT, CHERRY, LEMON_JUICE, CORNSTARCH, DARK_COOKING_CHOCOLATE } = require('./ingredients');
-
-const ASSEMBLY_SECTION = 'Assembly';
+const { ALL_PURPOSE_FLOUR, WHITE_SUGAR, LEMON_ZEST, BAKING_POWDER, SALT, UNSALTED_BUTTER, EGG, EGG_YOLK, VANILLA_EXTRACT, CHERRY, LEMON_JUICE, CORNSTARCH, DARK_COOKING_CHOCOLATE, STAND_MIXER, STOVE, OVEN, SAUCEPAN, PIE_PAN, DOUGH_KNIFE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Cherry Crostata',
@@ -58,18 +56,18 @@ module.exports = {
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.FILLING },
         { ...WHITE_SUGAR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
 
-        { ...DARK_COOKING_CHOCOLATE, amount: 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'chopped', section: SECTIONS.ASSEMBLE },
-        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.ASSEMBLE },
+        { ...DARK_COOKING_CHOCOLATE, amount: 2, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'chopped', section: SECTIONS.ASSEMBLY },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.ASSEMBLY },
     ],
     appliances: [
-        { name: 'stand mixer' },
-        { name: 'stove' },
-        { name: 'oven' },
+        STAND_MIXER,
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'pie dish' },
-        { name: 'dough knife' },
+        SAUCEPAN,
+        PIE_PAN,
+        DOUGH_KNIFE
     ],
     directions: [
         { step: 'In a stand mixer, combine the flour, sugar, lemon zest, baking powder and salt.', section: SECTIONS.MAKE_DOUGH, img: crostata1 },

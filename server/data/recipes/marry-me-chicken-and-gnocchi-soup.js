@@ -13,7 +13,7 @@ const soup12 = '../assets/Products/marry-me-chicken-and-gnocci-soup-12.jpeg';
 const soup13 = '../assets/Products/marry-me-chicken-and-gnocci-soup-13.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { UNSALTED_BUTTER, SUN_DRIED_TOMATOES, YELLOW_ONION, CARROT, CELERY, SALT, BLACK_PEPPER, ITALIAN_SEASONING, RED_PEPPER_FLAKES, TOMATO_PASTE, GARLIC, HEAVY_CREAM, ROTISSERIE_CHICKEN, CREAM_CHEESE, PARMESAN_CHEESE, BABY_SPINACH, BASIL, GARLIC_AND_HERB, GNOCCHI, CHICKEN_BOUILLON_CUBE, WATER } = require('./ingredients');
+const { UNSALTED_BUTTER, SUN_DRIED_TOMATOES, YELLOW_ONION, CARROT, CELERY, SALT, BLACK_PEPPER, ITALIAN_SEASONING, RED_PEPPER_FLAKES, TOMATO_PASTE, GARLIC, HEAVY_CREAM, ROTISSERIE_CHICKEN, CREAM_CHEESE, PARMESAN_CHEESE, BABY_SPINACH, BASIL, GARLIC_AND_HERB, GNOCCHI, CHICKEN_BOUILLON_CUBE, WATER, STOVE, LARGE_POT } = require('./ingredients');
 
 const OIL_SECTION = 'Oil';
 const SUN_DRIED_TOMATOES_SECTION = 'Sun-Dried Tomatoes';
@@ -70,10 +70,10 @@ module.exports = {
         { ...BASIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: HERB_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
+        LARGE_POT,
     ],
     directions: [
         { step: `Over medium heat, heat "${OIL_SECTION}" section ingredients in a large pot.`, section: SECTIONS.MAKE_SOUP, img: soup1 },

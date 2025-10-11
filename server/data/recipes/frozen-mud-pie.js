@@ -8,7 +8,7 @@ const pie7 = '../assets/Products/frozen-mud-pie-7.jpeg';
 const pie8 = '../assets/Products/frozen-mud-pie-8.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
-const { OREO_COOKIES, UNSALTED_BUTTER, CHOCOLATE_ICE_CREAM, WHIPPED_CREAM, UNSALTED_PEANUT, HOT_FUDGE_SAUCE } = require('./ingredients');
+const { MIXING_BOWL, OREO_COOKIES, UNSALTED_BUTTER, CHOCOLATE_ICE_CREAM, WHIPPED_CREAM, UNSALTED_PEANUT, HOT_FUDGE_SAUCE, PIE_PAN, FREEZER } = require('./ingredients');
 
 const HOT_FUDGE_SECTION = 'Hot Fudge';
 
@@ -47,11 +47,11 @@ module.exports = {
         { ...UNSALTED_PEANUT, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'freezer' },
+        FREEZER,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'pie pan' },
+        MIXING_BOWL,
+        PIE_PAN,
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.CRUST}" section ingredients.`, section: MAKE_CRUST, img: [pie1, pie2, pie3] },

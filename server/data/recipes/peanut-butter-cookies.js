@@ -13,7 +13,7 @@ const cookies13 = '../assets/Products/peanut-butter-cookies-13.jpeg';
 const cookies14 = '../assets/Products/peanut-butter-cookies-14.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, PEANUT_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGG, BAKING_POWDER, SALT } = require('./ingredients');
+const { BAKING_SHEET, ALL_PURPOSE_FLOUR, UNSALTED_BUTTER, PEANUT_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGG, BAKING_POWDER, SALT, SILICON_BAKING_MAT, STAND_MIXER, OVEN } = require('./ingredients');
 
 module.exports = {
     cardName: 'Peanut Butter Cookies',
@@ -33,7 +33,7 @@ module.exports = {
     websites: [
         { label: 'Peanut Butter Cookies', link: 'https://preppykitchen.com/peanut-butter-cookies-recipe/' }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...BROWN_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
@@ -46,12 +46,12 @@ module.exports = {
         { ...BAKING_POWDER, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stand mixer' },
-        { name: 'oven' },
+        STAND_MIXER,
+        OVEN,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'silicon baking mat' },
+        BAKING_SHEET,
+        SILICON_BAKING_MAT,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },

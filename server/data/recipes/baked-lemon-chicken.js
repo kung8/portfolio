@@ -13,7 +13,11 @@ const {
     SALT,
     BLACK_PEPPER,
     ROSEMARY,
-    LEMON
+    LEMON,
+    BAKING_PAN,
+    FRYING_PAN,
+    SMALL_BOWL,
+    OVEN
 } = require('./ingredients');
 
 module.exports = {
@@ -48,12 +52,12 @@ module.exports = {
         { ...LEMON, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN
     ],
     supplies: [
-        { name: 'baking pan' },
-        { name: 'frying pan' },
-        { name: 'small bowl' },
+        BAKING_PAN,
+        FRYING_PAN,
+        SMALL_BOWL,
     ],
     directions: [
         { step: 'Preheat the oven to 400ºF.', section: SECTIONS.MAIN },

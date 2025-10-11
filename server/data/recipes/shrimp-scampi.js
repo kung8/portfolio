@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { ANGEL_HAIR_PASTA, UNSALTED_BUTTER, SHRIMP, GARLIC, WHITE_WINE, BLACK_PEPPER, PARMESAN_CHEESE, PARSLEY, LEMON } = require('./ingredients');
+const { MIXING_BOWL, ANGEL_HAIR_PASTA, UNSALTED_BUTTER, SHRIMP, GARLIC, WHITE_WINE, BLACK_PEPPER, PARMESAN_CHEESE, PARSLEY, LEMON, STOVE, LARGE_POT, SAUCEPAN } = require('./ingredients');
 
 const COMBINE = 'Combine';
 
@@ -37,12 +37,12 @@ module.exports = {
         { ...LEMON, amount: 1, unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'mixing bowl' },
-        { name: 'large saucepan' },
+        LARGE_POT,
+        MIXING_BOWL,
+        SAUCEPAN,
     ],
     directions: [
         { step: 'Over medium-high heat, bring a large pot of salted water to a boil.', section: SECTIONS.COOK_NOODLES },

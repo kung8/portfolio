@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { KALE, OLIVE_OIL, SALT, BLACK_PEPPER, UNSALTED_BUTTER, GARLIC, WHITE_RICE, CHICKEN_BROTH, SLICED_ALMONDS } = require('./ingredients');
+const { MIXING_BOWL, KALE, OLIVE_OIL, SALT, BLACK_PEPPER, UNSALTED_BUTTER, GARLIC, WHITE_RICE, CHICKEN_BROTH, SLICED_ALMONDS, STOVE, LARGE_POT } = require('./ingredients');
 
 const KALE_SECTION = 'Kale';
 const GARLIC_BUTTER_RICE_SECTION = 'Garlic Butter Rice';
@@ -17,7 +17,6 @@ module.exports = {
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
-    protein: [],
     type: [TYPES.RICE],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
@@ -44,13 +43,11 @@ module.exports = {
         { ...SLICED_ALMONDS, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'large pot' },
-        { name: '' },
-        { name: '' },
+        MIXING_BOWL,
+        LARGE_POT,
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${KALE_SECTION}" section ingredients. Let it marinate.`, section: '' },

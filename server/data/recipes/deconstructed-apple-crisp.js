@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { LEMON_JUICE, CORNSTARCH, HONEY_CRISP_APPLE, GRANNY_SMITH_APPLE, BROWN_SUGAR, MAPLE_SYRUP, CINNAMON, NUTMEG, CARDAMOM, SALT, ALL_PURPOSE_FLOUR, WHITE_SUGAR, UNSALTED_BUTTER, VANILLA_EXTRACT, VANILLA_ICE_CREAM, PEPITAS, ROLLED_OATS } = require('./ingredients');
+const { BAKING_SHEET, LEMON_JUICE, CORNSTARCH, HONEY_CRISP_APPLE, GRANNY_SMITH_APPLE, BROWN_SUGAR, MAPLE_SYRUP, CINNAMON, NUTMEG, CARDAMOM, SALT, ALL_PURPOSE_FLOUR, WHITE_SUGAR, UNSALTED_BUTTER, VANILLA_EXTRACT, VANILLA_ICE_CREAM, PEPITAS, ROLLED_OATS, OVEN, BLENDER, BAKING_PAN, ALUMINUM_FOIL } = require('./ingredients');
 
 const APPLE_FILLING_SECTION = 'Apple Filling';
 const OAT_TOPPING_SECTION_PART_1 = 'Oat Topping Part 1';
@@ -60,13 +60,13 @@ module.exports = {
         { ...VANILLA_ICE_CREAM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'blender' },
+        OVEN,
+        BLENDER,
     ],
     supplies: [
-        { name: 'baking dish' },
-        { name: 'aluminum foil' },
-        { name: 'baking sheet' },
+        BAKING_PAN,
+        ALUMINUM_FOIL,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'Set oven racks to the lowest and the middle positions.', section: PREP_APPLE_FILLING },

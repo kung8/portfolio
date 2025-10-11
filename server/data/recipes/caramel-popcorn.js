@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { COOKING_SPRAY, POPCORN, BROWN_SUGAR, CORN_SYRUP, UNSALTED_BUTTER, SALT, VANILLA_EXTRACT, BAKING_SODA } = require('./ingredients');
+const { COOKING_SPRAY, POPCORN, BROWN_SUGAR, CORN_SYRUP, UNSALTED_BUTTER, SALT, VANILLA_EXTRACT, BAKING_SODA, OVEN, STOVE, CASSEROLE_DISH, SAUCEPAN, ALUMINUM_FOIL } = require('./ingredients');
 
 const POPCORN_SECTION = 'Popcorn';
 const CARAMEL_SECTION = 'Caramel';
@@ -40,13 +40,13 @@ module.exports = {
         { ...BAKING_SODA, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CARAMEL_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
+        OVEN,
+        STOVE,
     ],
     supplies: [
-        { name: 'casserole dish' },
-        { name: 'large saucepan' },
-        { name: 'aluminum foil' },
+        CASSEROLE_DISH,
+        SAUCEPAN,
+        ALUMINUM_FOIL,
     ],
     directions: [
         { step: 'Preheat the oven to 250ºF.', section: WARM_POPCORN },

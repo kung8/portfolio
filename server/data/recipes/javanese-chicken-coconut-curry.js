@@ -6,7 +6,7 @@ const curry5 = '../assets/Products/javanese-coconut-curry-5.jpeg';
 const curry6 = '../assets/Products/javanese-coconut-curry-6.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { MACADAMIA_NUT, CORIANDER, SHALLOT, GARLIC, RED_CHILI, WATER, CHICKEN, LEMONGRASS, KAFFIR_LIME_LEAF, CINNAMON_STICK, COCONUT_MILK, FRIED_SHALLOTS, JASMINE_RICE, LIME, GINGER, BROWN_SUGAR, VEGETABLE_OIL } = require('./ingredients');
+const { MACADAMIA_NUT, CORIANDER, SHALLOT, GARLIC, RED_CHILI, WATER, CHICKEN, LEMONGRASS, KAFFIR_LIME_LEAF, CINNAMON_STICK, COCONUT_MILK, FRIED_SHALLOTS, JASMINE_RICE, LIME, GINGER, BROWN_SUGAR, VEGETABLE_OIL, STOVE, BLENDER, DUTCH_OVEN_POT, MORTAR_AND_PESTLE } = require('./ingredients');
 
 const SHALLOT_MIXTURE_SECTION = 'Shallot Mixture';
 
@@ -56,12 +56,12 @@ module.exports = {
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'blender' },
+        STOVE,
+        BLENDER,
     ],
     supplies: [
-        { name: 'dutch oven pot' },
-        { name: 'mortar and pestle' },
+        DUTCH_OVEN_POT,
+        MORTAR_AND_PESTLE,
     ],
     directions: [
         { step: 'Over medium-high heat, heat a dutch oven pot.', section: SECTIONS.COOK_CURRY },

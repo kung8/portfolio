@@ -6,7 +6,7 @@ const mcnuggets5 = '../assets/Products/chicken-mcnuggets-5.jpeg';
 const mcnuggets6 = '../assets/Products/chicken-mcnuggets-6.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { GROUND_CHICKEN, SALT, WHITE_SUGAR, ALL_PURPOSE_FLOUR, WHITE_PEPPER, CELERY_POWDER, CORNSTARCH, BAKING_POWDER, BAKING_SODA, EGG, ROOM_TEMPERATURE_WATER, VEGETABLE_OIL, WATER } = require('./ingredients');
+const { MIXING_BOWL, BAKING_SHEET, GROUND_CHICKEN, SALT, WHITE_SUGAR, ALL_PURPOSE_FLOUR, WHITE_PEPPER, CELERY_POWDER, CORNSTARCH, BAKING_POWDER, BAKING_SODA, EGG, ROOM_TEMPERATURE_WATER, VEGETABLE_OIL, WATER, STOVE, POT, COOLING_RACK, PAPER_TOWELS, SPIDER_STRAINER, SMALL_BOWL } = require('./ingredients');
 
 const FLOUR_DREDGING_STATION = 'Flour Dredging Station';
 const WET_BATTER_STATION = 'Wet Batter Station';
@@ -56,23 +56,23 @@ module.exports = {
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: SECTIONS.DEEP_FRY },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: '3 shallow bowls' },
-        { name: 'pot' },
-        { name: 'wire cooling rack' },
-        { name: 'baking sheet' },
-        { name: 'paper towels' },
-        { name: 'spider strainer' },
+        MIXING_BOWL,
+        {...SMALL_BOWL, amount: 3 },
+        POT,
+        COOLING_RACK,
+        BAKING_SHEET,
+        PAPER_TOWELS,
+        SPIDER_STRAINER,
     ],
     directions: [
         { step: 'Chop up the chicken breast until the chicken is grounded (or you can use ground chicken).', section: SECTIONS.CHICKEN },
         { step: `In a mixing bowl, combine the "${SECTIONS.CHICKEN}" section ingredients.`, section: SECTIONS.CHICKEN },
         { step: 'Form the ground chicken into McNugget shapes.', section: SECTIONS.CHICKEN, img: mcnuggets1 },
         { step: 'Over medium-high heat, heat up 2 to 3 inches of oil in a pot.', section: SECTIONS.DEEP_FRY },
-        { step: 'Prepare the 3 dredging stations in shallow bowls. Set up the station in order: "Wet", "Flour", and "Tempura".', section: SECTIONS.DEEP_FRY, img: [mcnuggets2, mcnuggets3, mcnuggets4] },
+        { step: 'Prepare the 3 dredging stations in small bowls. Set up the station in order: "Wet", "Flour", and "Tempura".', section: SECTIONS.DEEP_FRY, img: [mcnuggets2, mcnuggets3, mcnuggets4] },
         { step: 'The frying oil should be between 350ºF and 375ºF before frying. This allows for the chicken to crisp up without burning before the inside is cooked through. If the oil is not hot enough, it will take longer for the chicken to cook through and would soak up more oil instead.', section: SECTIONS.DEEP_FRY },
         { step: 'Line some paper towels on a large baking sheet and place a wire cooling rack on top.', section: SECTIONS.DEEP_FRY },
         { step: 'Once the oil is in the correct temperature range, begin dredging the chicken McNuggets. Shake off excess flour before adding it to the tempura station.', section: SECTIONS.DEEP_FRY },

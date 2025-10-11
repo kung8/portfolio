@@ -8,7 +8,7 @@ const parmesan7 = '../assets/Products/chicken-parmesan-7.jpeg';
 const parmesan8 = '../assets/Products/chicken-parmesan-8.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, BLACK_PEPPER, EGG, PANKO_BREADCRUMBS, PARMESAN_CHEESE, ALL_PURPOSE_FLOUR, OLIVE_OIL, TOMATO_SAUCE, MOZZARELLA_CHEESE, BASIL_LEAF, PROVOLONE_CHEESE, SALT } = require('./ingredients');
+const { BAKING_SHEET, BONELESS_AND_SKINLESS_CHICKEN_BREAST, BLACK_PEPPER, EGG, PANKO_BREADCRUMBS, PARMESAN_CHEESE, ALL_PURPOSE_FLOUR, OLIVE_OIL, TOMATO_SAUCE, MOZZARELLA_CHEESE, BASIL_LEAF, PROVOLONE_CHEESE, SALT, OVEN, STOVE, ZIPLOC_BAG, MEAT_MALLET, STRAINER, SMALL_BOWL, LARGE_PAN, COOLING_RACK, BAKING_PAN } = require('./ingredients');
 
 const CHICKEN_SECTION = 'Chicken';
 const DREDGING_SECTION = 'Dredging';
@@ -57,18 +57,18 @@ module.exports = {
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BAKE_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
+        OVEN,
+        STOVE,
     ],
     supplies: [
-        { name: 'ziploc bag' },
-        { name: 'meat mallet' },
-        { name: 'strainer' },
-        { name: 'small bowls' },
-        { name: 'large pan' },
-        { name: 'baking sheet' },
-        { name: 'wire rack' },
-        { name: 'baking pan' },
+        { ...ZIPLOC_BAG, additionalDetails: 'gallon-size' },
+        MEAT_MALLET,
+        STRAINER,
+        { ...SMALL_BOWL, amount: 2 },
+        LARGE_PAN,
+        BAKING_SHEET,
+        COOLING_RACK,
+        BAKING_PAN,
     ],
     directions: [
         { step: 'Preheat the oven to 450ºF.', section: PREP_CHICKEN },
@@ -90,7 +90,7 @@ module.exports = {
         { step: 'Enjoy this with pasta or vegetables.', section: SECTIONS.SERVE },
     ],
     notes: [
-        { note: 'This jumped to one of my favorite recipes. This came out perfect and hope you enjoy it as much as I did.'}
+        { note: 'This jumped to one of my favorite recipes. This came out perfect and hope you enjoy it as much as I did.' }
     ],
     store: [
         {

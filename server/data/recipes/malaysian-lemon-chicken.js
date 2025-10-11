@@ -1,6 +1,7 @@
 const lemonChicken = '../assets/Products/lemon-chicken.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
 const {
+    BAKING_SHEET, 
     BONELESS_CHICKEN_THIGH,
     LIGHT_SOY_SAUCE,
     SHAOXING_WINE,
@@ -12,6 +13,13 @@ const {
     SALT,
     SESAME_SEEDS,
     WATER,
+    STOVE,
+    TALL_NARROW_POT,
+    LARGE_BOWL,
+    SAUCEPAN,
+    MEDIUM_BOWL,
+    COOLING_RACK,
+    PAPER_TOWELS,
 } = require('./ingredients');
 
 const DREDGING_STATION_SECTION = 'Dredging Station';
@@ -55,16 +63,16 @@ module.exports = {
         { ...SESAME_SEEDS, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'topping', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'deep pot' },
-        { name: 'large bowl' },
-        { name: 'sauce pan' },
-        { name: 'medium bowl' },
-        { name: 'baking sheet' },
-        { name: 'cooling rack' },
-        { name: 'paper towels' },
+        TALL_NARROW_POT,
+        LARGE_BOWL,
+        SAUCEPAN,
+        MEDIUM_BOWL,
+        BAKING_SHEET,
+        COOLING_RACK,
+        PAPER_TOWELS,
     ],
     directions: [
         { step: `In a large bowl, combine the "${SECTIONS.MARINADE}" section ingredients. Let it marinate for at least 30 minutes.`, section: SECTIONS.MAIN },

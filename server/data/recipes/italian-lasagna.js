@@ -17,8 +17,9 @@ const lasagna15 = '../assets/Products/lasagna-15.jpeg';
 const lasagna16 = '../assets/Products/lasagna-16.jpeg';
 const lasagna17 = '../assets/Products/lasagna-17.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    MIXING_BOWL,
     ITALIAN_SAUSAGE,
     GROUND_BEEF,
     YELLOW_ONION,
@@ -38,6 +39,17 @@ const {
     MOZZARELLA_CHEESE,
     PARMESAN_CHEESE,
     WATER,
+    STOVE,
+    OVEN,
+    SPATULA,
+    POT,
+    CUTTING_BOARD,
+    KNIFE,
+    COLANDER,
+    LARGE_PAN,
+    BAKING_PAN,
+    MEASURING_CUPS,
+    MEASURING_SPOONS,
 } = require('./ingredients');
 
 const ITALIAN_SAUSAGE_SECTION = 'Italian Sausage';
@@ -97,20 +109,20 @@ module.exports = {
         { ...PARMESAN_CHEESE, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: CHEESE_TOPPING_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'large pan' },
-        { name: 'spatula' },
-        { name: 'pot' },
-        { name: 'baking pan' },
-        { name: 'measuring cups' },
-        { name: 'measuring spoons' },
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: 'colander' },
-        { name: 'mixing bowl' },
+        LARGE_PAN,
+        SPATULA,
+        POT,
+        BAKING_PAN,
+        MEASURING_CUPS,
+        MEASURING_SPOONS,
+        CUTTING_BOARD,
+        KNIFE,
+        COLANDER,
+        MIXING_BOWL,
     ],
     separated: true,
     directions: [

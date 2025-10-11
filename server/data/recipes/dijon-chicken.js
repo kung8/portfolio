@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { CHICKEN_THIGH, SALT, BLACK_PEPPER, OLIVE_OIL, UNSALTED_BUTTER, DIJON_MUSTARD, YELLOW_ONION, WHITE_WINE, CHICKEN_BROTH, HEAVY_CREAM, BAY_LEAF, FRESH_THYME } = require('./ingredients');
+const { CHICKEN_THIGH, SALT, BLACK_PEPPER, OLIVE_OIL, UNSALTED_BUTTER, DIJON_MUSTARD, YELLOW_ONION, WHITE_WINE, CHICKEN_BROTH, HEAVY_CREAM, BAY_LEAF, FRESH_THYME, STOVE, OVEN, DUTCH_OVEN_POT } = require('./ingredients');
 
 module.exports = {
     wip: true,
@@ -41,11 +41,11 @@ module.exports = {
         { ...FRESH_THYME, amount: 5, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'dutch oven pot' },
+        DUTCH_OVEN_POT,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.COOK_CHICKEN },

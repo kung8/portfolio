@@ -10,7 +10,7 @@ const bars9 = '../assets/Products/almond-croissant-cookie-bar-9.jpeg';
 const bars10 = '../assets/Products/almond-croissant-cookie-bar-10.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { UNSALTED_BUTTER, BROWN_SUGAR, EGG, VANILLA_EXTRACT, ALMOND_EXTRACT, SALT, ALL_PURPOSE_FLOUR, BAKING_POWDER, WHITE_SUGAR, ALMOND_FLOUR, SLICED_ALMONDS, POWDERED_SUGAR } = require('./ingredients');
+const { BAKING_SHEET, MIXING_BOWL, UNSALTED_BUTTER, BROWN_SUGAR, EGG, VANILLA_EXTRACT, ALMOND_EXTRACT, SALT, ALL_PURPOSE_FLOUR, BAKING_POWDER, WHITE_SUGAR, ALMOND_FLOUR, SLICED_ALMONDS, POWDERED_SUGAR, PARCHMENT_PAPER, CUTTING_BOARD, KNIFE, RUBBER_SPATULA, OVEN } = require('./ingredients');
 
 const FRANGIPANE_SECTION = 'Frangipane';
 const ALMOND_TOPPING_SECTION = 'Almond';
@@ -61,15 +61,15 @@ module.exports = {
         { ...POWDERED_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'parchment paper' },
-        { name: 'mixing bowl' },
-        { name: 'rubber spatula' },
-        { name: 'cutting board' },
-        { name: 'knife' },
+        BAKING_SHEET,
+        PARCHMENT_PAPER,
+        MIXING_BOWL,
+        RUBBER_SPATULA,
+        CUTTING_BOARD,
+        KNIFE,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAKE_CRUST },

@@ -5,7 +5,7 @@ const pie4 = '../assets/Products/key-lime-pie-4.jpeg';
 const pie5 = '../assets/Products/key-lime-pie-5.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { EGG_YOLK, SWEETENED_CONDENSED_MILK, KEY_LIME_JUICE, WHIPPED_CREAM, LIME, NINE_INCH_GRAHAM_CRACKER_PIE_CRUST } = require('./ingredients');
+const { MIXING_BOWL, EGG_YOLK, SWEETENED_CONDENSED_MILK, KEY_LIME_JUICE, WHIPPED_CREAM, LIME, GRAHAM_CRACKER_PIE_CRUST, OVEN } = require('./ingredients');
 
 const PREP_PIE = 'Prep Pie';
 
@@ -34,15 +34,15 @@ module.exports = {
         { ...EGG_YOLK, amount: 5, unit: '', additionalDetails: 'beaten', section: SECTIONS.FILLING },
         { ...SWEETENED_CONDENSED_MILK, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
         { ...KEY_LIME_JUICE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...NINE_INCH_GRAHAM_CRACKER_PIE_CRUST, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.CRUST },
+        { ...GRAHAM_CRACKER_PIE_CRUST, amount: 1, unit: '', additionalDetails: '9 inch', section: SECTIONS.CRUST },
         { ...WHIPPED_CREAM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...LIME, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Preheat the oven to 375ºF.', section: PREP_PIE },

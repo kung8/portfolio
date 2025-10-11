@@ -21,6 +21,12 @@ const {
     COARSE_SALT,
     BAKING_SODA,
     WATER,
+    STOVE,
+    OVEN,
+    STAND_MIXER,
+    SLOTTED_SPOON,
+    SILICON_BAKING_MAT,
+    BAKING_SHEET,
 } = require('./ingredients');
 
 module.exports = {
@@ -50,14 +56,14 @@ module.exports = {
         { ...WATER, amount: 9, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
+        { ...STAND_MIXER, additionalDetails: 'or hand mixer' },
     ],
     supplies: [
-        { name: 'stand mixer (or hand mixer)' },
-        { name: 'slotted spatula' },
-        { name: 'silicon mats' },
-        { name: 'baking sheets' },
+        SLOTTED_SPOON,
+        SILICON_BAKING_MAT,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'In a stand mixer bowl, whisk yeast and warm water.', section: SECTIONS.DOUGH, img: yeast },

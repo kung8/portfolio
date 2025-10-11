@@ -17,7 +17,7 @@ const scones16 = '../assets/Products/english-scones-16.jpeg';
 const scones17 = '../assets/Products/english-scones-17.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, SALT, BAKING_POWDER, WHITE_SUGAR, UNSALTED_BUTTER, MILK, LEMON_JUICE, VANILLA_EXTRACT, EGG } = require('./ingredients');
+const { BAKING_SHEET, MIXING_BOWL, ALL_PURPOSE_FLOUR, SALT, BAKING_POWDER, WHITE_SUGAR, UNSALTED_BUTTER, MILK, LEMON_JUICE, VANILLA_EXTRACT, EGG, SILICON_BAKING_MAT, FORK, BASTING_BRUSH, OVEN } = require('./ingredients');
 
 const PREP_BAKE = 'Prep Bake';
 const DRY_MIXTURE = 'Dry Mixture';
@@ -55,14 +55,14 @@ module.exports = {
         { ...EGG, amount: 1, unit: '', additionalDetails: 'beaten', section: EGG_WASH },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'silicon baking mat' },
-        { name: 'mixing bowl' },
-        { name: 'fork' },
-        { name: 'brush' },
+        BAKING_SHEET,
+        SILICON_BAKING_MAT,
+        MIXING_BOWL,
+        FORK,
+        BASTING_BRUSH,
     ],
     directions: [
         { step: 'Preheat oven to 400ºF.', section: PREP_BAKE },
@@ -78,7 +78,7 @@ module.exports = {
         { step: 'Sprinkle the dough with flour.', section: SECTIONS.MAIN },
         { step: 'Fold the dough a few times until smooth (do not overwork).', section: SECTIONS.MAIN },
         { step: 'Flatten the dough into a disc about 1.5 inches in thickness.', section: SECTIONS.MAIN },
-        { step: 'Cut the dough into 2-inch biscuits using a biscuit cutter. And continue to use the scraps to form additional biscuits. You should be able to get 6 to 8.', section: SECTIONS.MAIN, img: [scones11, scones12] },
+        { step: 'Cut the dough into 2 inch biscuits using a biscuit cutter. And continue to use the scraps to form additional biscuits. You should be able to get 6 to 8.', section: SECTIONS.MAIN, img: [scones11, scones12] },
         { step: 'Place the scones on the hot baking sheet.', section: SECTIONS.MAIN },
         { step: 'Brush the scones with the egg wash.', section: SECTIONS.MAIN, img: scones13 },
         { step: 'Bake until the top is golden (about 10 to 15 minutes).', section: SECTIONS.MAIN, img: scones14 },

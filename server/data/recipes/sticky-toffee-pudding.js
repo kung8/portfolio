@@ -1,7 +1,7 @@
 const pudding1 = '../assets/Products/sticky-toffee-pudding-1.jpeg';
 const pudding2 = '../assets/Products/sticky-toffee-pudding-2.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { HEAVY_CREAM, UNSALTED_BUTTER, BROWN_SUGAR, VANILLA_EXTRACT, DATE, BAKING_SODA, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, ALLSPICE, NUTMEG, WHITE_SUGAR, EGG, WALNUTS, WATER } = require('./ingredients');
+const { MIXING_BOWL, HEAVY_CREAM, UNSALTED_BUTTER, BROWN_SUGAR, VANILLA_EXTRACT, DATE, BAKING_SODA, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, ALLSPICE, NUTMEG, WHITE_SUGAR, EGG, WALNUTS, WATER, STOVE, OVEN, STAND_MIXER, CHOPSTICKS, BAKING_PAN, SAUCEPAN } = require('./ingredients');
 
 const TOFFEE_SAUCE = 'Toffee Sauce';
 const PUDDING = 'Pudding';
@@ -46,15 +46,15 @@ module.exports = {
         { ...WALNUTS, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUDDING },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
-        { name: 'stand mixer' },
+        STOVE,
+        OVEN,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: 'baking pan' },
-        { name: '2 medium saucepan' },
-        { name: 'mixing bowl' },
-        { name: 'chopstick' },
+        BAKING_PAN,
+        { ...SAUCEPAN, amount: 2, additionalDetails: 'medium' },
+        MIXING_BOWL,
+        CHOPSTICKS,
     ],
     directions: [
         { step: 'Over medium-high heat, add butter and brown sugar in a medium saucepan.', section: TOFFEE_SAUCE },

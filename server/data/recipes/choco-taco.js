@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { VANILLA_ICE_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, UNSALTED_PEANUT, WAFFLE_CONE } = require('./ingredients');
+const { MIXING_BOWL, VANILLA_ICE_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, UNSALTED_PEANUT, WAFFLE_CONE, STOVE, MICROWAVE, FREEZER, PAPER_TOWELS, SAUCEPAN } = require('./ingredients');
 
 const TACO_SHELL = 'Taco Shell';
 
@@ -37,14 +37,14 @@ module.exports = {
         { ...UNSALTED_PEANUT, amount: '', unit: '', additionalDetails: 'crushed', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'microwave' },
-        { name: 'stove' },
-        { name: 'freezer' },
+        MICROWAVE,
+        STOVE,
+        FREEZER,
     ],
     supplies: [
-        { name: 'paper towels' },
-        { name: 'saucepan' },
-        { name: 'mixing bowl' },
+        PAPER_TOWELS,
+        SAUCEPAN,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Dampen 2 to 3 paper towels with warm water. Wring excess water.', section: PREP_TACO_SHELL },

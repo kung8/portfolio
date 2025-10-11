@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { PORK_CHOPS, ALL_PURPOSE_FLOUR, EGG, PANKO_BREADCRUMBS, OLIVE_OIL, UNSALTED_BUTTER, SALT, BLACK_PEPPER, LEMON_JUICE, CUCUMBER, PARMESAN_CHEESE, ASPARAGUS, BABY_ARUGULA, BABY_KALE, RADISH, PEAS, MICROGREENS } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, BAKING_SHEET, PORK_CHOPS, ALL_PURPOSE_FLOUR, EGG, PANKO_BREADCRUMBS, OLIVE_OIL, UNSALTED_BUTTER, SALT, BLACK_PEPPER, LEMON_JUICE, PARMESAN_CHEESE, BABY_ARUGULA, BABY_KALE, STOVE, CUTTING_BOARD, PLASTIC_WRAP, MEAT_MALLET, PAPER_TOWELS, COOLING_RACK, PLATE, SMALL_BOWL } = require('./ingredients');
 
 const DREDGE_PORK = 'Dredge Pork';
 
@@ -44,18 +44,18 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SALAD },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'cutting board' },
-        { name: 'plastic wrap' },
-        { name: 'meat tenderizer' },
-        { name: 'paper towels' },
-        { name: 'baking sheet' },
-        { name: 'wire rack' },
-        { name: '3 shallow bowls' },
-        { name: 'plate' },
-        { name: 'mixing bowl' },
+        CUTTING_BOARD,
+        PLASTIC_WRAP,
+        MEAT_MALLET,
+        PAPER_TOWELS,
+        BAKING_SHEET,
+        COOLING_RACK,
+        { ...SMALL_BOWL, amount: 3 },
+        PLATE,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Place pork chop between two pieces of plastic wrap.', section: SECTIONS.PREP_PORK },

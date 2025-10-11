@@ -9,7 +9,7 @@ const tandoori8 = '../assets/Products/tandoori-chicken-8.jpeg';
 const tandoori9 = '../assets/Products/tandoori-chicken-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { GREEK_YOGURT, GINGER_GARLIC_PASTE, GARAM_MASALA, CHILI_POWDER, BLACK_PEPPER, CORIANDER, SALT, TURMERIC, FENUGREEK_LEAVES, LEMON_JUICE, MUSTARD_OIL, CORIANDER_POWDER, BONELESS_AND_SKINLESS_CHICKEN_THIGH } = require('./ingredients');
+const { MIXING_BOWL, BAKING_SHEET, GREEK_YOGURT, GINGER_GARLIC_PASTE, GARAM_MASALA, CHILI_POWDER, BLACK_PEPPER, CORIANDER, SALT, TURMERIC, FENUGREEK_LEAVES, LEMON_JUICE, MUSTARD_OIL, CORIANDER_POWDER, BONELESS_AND_SKINLESS_CHICKEN_THIGH, REFRIGERATOR, OVEN, PAPER_TOWELS, KNIFE, ALUMINUM_FOIL, SMALL_BOWL, COOLING_RACK, BASTER } = require('./ingredients');
 
 const RED_CHILI_OIL = 'Red Chili Oil';
 const PREP_RED_CHILI_OIL = 'Prep Red Chili Oil';
@@ -53,18 +53,18 @@ module.exports = {
         { ...MUSTARD_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RED_CHILI_OIL },
     ],
     appliances: [
-        { name: 'refrigerator' },
-        { name: 'oven' },
+        REFRIGERATOR,
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'paper towel' },
-        { name: 'knife' },
-        { name: 'foil' },
-        { name: 'small bowl' },
-        { name: 'baking sheet' },
-        { name: 'wire rack' },
-        { name: 'baster' },
+        MIXING_BOWL,
+        PAPER_TOWELS,
+        KNIFE,
+        ALUMINUM_FOIL,
+        SMALL_BOWL,
+        BAKING_SHEET,
+        COOLING_RACK,
+        BASTER,
     ],
     directions: [
         { step: 'In a mixing bowl, combine the "Marinade" ingredients.', section: SECTIONS.PREP_CHICKEN, img: tandoori1 },

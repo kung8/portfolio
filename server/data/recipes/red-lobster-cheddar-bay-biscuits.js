@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BAKING_POWDER, UNSALTED_BUTTER, MILK, SALT, GARLIC_POWDER, CHEDDAR_CHEESE, PARSLEY } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, BAKING_SHEET, ALL_PURPOSE_FLOUR, BAKING_POWDER, UNSALTED_BUTTER, MILK, SALT, GARLIC_POWDER, CHEDDAR_CHEESE, PARSLEY, ALUMINUM_FOIL, BASTING_BRUSH, OVEN } = require('./ingredients');
 
 const FIRST_MIX_SECTION = 'First Mix';
 const SECOND_MIX_SECTION = 'Second Mix';
@@ -47,13 +47,13 @@ module.exports = {
         { ...PARSLEY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'aluminum foil' },
-        { name: 'baking sheet' },
-        { name: 'mixing bowl' },
-        { name: 'basting brush' },
+        ALUMINUM_FOIL,
+        BAKING_SHEET,
+        MIXING_BOWL,
+        BASTING_BRUSH,
     ],
     directions: [
         { step: 'Preheat the oven to 450ºF.', section: PREP_BATTER },

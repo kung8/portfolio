@@ -7,6 +7,9 @@ const {
     UNSALTED_BUTTER,
     BAKING_SODA,
     VANILLA_EXTRACT,
+    STOVE,
+    SAUCEPAN,
+    SPATULA,
 } = require('./ingredients');
 
 module.exports = {
@@ -35,11 +38,11 @@ module.exports = {
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'spatula' },
+        SAUCEPAN,
+        SPATULA,
     ],
     directions: [
         { step: 'Combine sugar, buttermilk, and butter in a saucepan. And heat over medium-high heat until it boils, about 5 minutes. Stir occasionally.', section: SECTIONS.SAUCE, img: raw },

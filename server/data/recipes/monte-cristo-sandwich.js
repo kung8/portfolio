@@ -6,7 +6,7 @@ const sandwich5 = '../assets/Products/monte-cristo-sandwich-5.jpeg';
 const sandwich6 = '../assets/Products/monte-cristo-sandwich-6.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { HEAVY_CREAM, EGG, LEMON_ZEST, SALT, CAYENNE_PEPPER, NUTMEG, BREAD, COOKED_HAM, UNSALTED_BUTTER, PROVOLONE_CHEESE } = require('./ingredients');
+const { HEAVY_CREAM, EGG, LEMON_ZEST, SALT, CAYENNE_PEPPER, NUTMEG, BREAD, COOKED_HAM, UNSALTED_BUTTER, PROVOLONE_CHEESE, STOVE, BOWL, TOASTER } = require('./ingredients');
 
 const BATTER_SECTION = 'Batter';
 const SANDWICH_SECTION = 'Sandwich';
@@ -51,11 +51,11 @@ module.exports = {
         { ...CAYENNE_PEPPER, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'toaster' },
-        { name: 'stove' },
+        TOASTER,
+        STOVE,
     ],
     supplies: [
-        { name: 'bowl' },
+        BOWL,
     ],
     directions: [
         { step: 'In a bowl, combine the "Batter" ingredients until the batter is thin and runny.', section: PREP_BATTER, img: sandwich1 },

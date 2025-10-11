@@ -10,7 +10,7 @@ const pasta9 = '../assets/Products/creamy-tuscan-chicken-pasta-9.jpeg';
 const pasta10 = '../assets/Products/creamy-tuscan-chicken-pasta-10.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, UNSALTED_BUTTER, GARLIC, SUN_DRIED_TOMATOES, ITALIAN_SEASONING, HEAVY_CREAM, MILK, PARMESAN_CHEESE, BABY_SPINACH, PENNE } = require('./ingredients');
+const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, UNSALTED_BUTTER, GARLIC, SUN_DRIED_TOMATOES, ITALIAN_SEASONING, HEAVY_CREAM, MILK, PARMESAN_CHEESE, BABY_SPINACH, PENNE, STOVE, DUTCH_OVEN_POT, CUTTING_BOARD, KNIFE } = require('./ingredients');
 
 const COMBINE = 'Combine';
 
@@ -53,12 +53,12 @@ module.exports = {
         { ...BABY_SPINACH, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'dutch oven' },
-        { name: 'cutting board' },
-        { name: 'knife' },
+        DUTCH_OVEN_POT,
+        CUTTING_BOARD,
+        KNIFE,
     ],
     directions: [
         { step: 'Pat chicken dry.', section: SECTIONS.COOK_CHICKEN },

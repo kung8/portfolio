@@ -14,7 +14,6 @@ module.exports = {
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.ASIAN,GENRES.CHINESE],
     method: [METHODS.BOIL],
-    protein: [],
     type: [TYPES.SOUP,TYPES.DESSERT],
     yields: { amount: '', unit: '' },
     prepTime: { amount: '', unit: '' },

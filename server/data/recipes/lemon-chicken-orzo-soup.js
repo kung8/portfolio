@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { OLIVE_OIL, CARROT, CELERY, SALT, THYME, LEMON, BAY_LEAF, CHICKEN_BREAST, CHICKEN_BROTH, LEEK, ORZO, DILL, WATER } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { OLIVE_OIL, CARROT, CELERY, SALT, THYME, LEMON, BAY_LEAF, CHICKEN_BREAST, CHICKEN_BROTH, LEEK, ORZO, DILL, WATER, STOVE, LARGE_POT, CUTTING_BOARD, KNIFE } = require('./ingredients');
 
 const VEGGIES_SECTION = 'Veggies';
 const SIMMER_SECTION = 'Simmer';
@@ -53,13 +53,12 @@ module.exports = {
         { ...DILL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: '' },
+        LARGE_POT,
+        CUTTING_BOARD,
+        KNIFE,
     ],
     directions: [
         { step: 'Over medium heat, heat oil in a large pot.', section: COOK_VEGGIES },

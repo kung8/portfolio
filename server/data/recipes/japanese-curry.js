@@ -15,7 +15,7 @@ const curry14 = '../assets/Products/japanese-curry-14.jpeg';
 const curry15 = '../assets/Products/japanese-curry-15.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { YELLOW_ONION, CARROT, YUKON_GOLD_POTATO, GINGER, GARLIC, APPLE, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BLACK_PEPPER, VEGETABLE_OIL, CHICKEN_BROTH, HONEY, LIGHT_SOY_SAUCE, KETCHUP, JAPANESE_CURRY_MIX } = require('./ingredients');
+const { YELLOW_ONION, CARROT, YUKON_GOLD_POTATO, GINGER, GARLIC, APPLE, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BLACK_PEPPER, VEGETABLE_OIL, CHICKEN_BROTH, HONEY, LIGHT_SOY_SAUCE, KETCHUP, JAPANESE_CURRY_MIX, STOVE, LARGE_POT, LADLE, STRAINER, BAMBOO_SKEWERS } = require('./ingredients');
 
 const PREP_VEGGIES = 'Prep Veggies';
 const PREP_CHICKEN = 'Prep Chicken';
@@ -58,13 +58,13 @@ module.exports = {
         { ...JAPANESE_CURRY_MIX, amount: 1, unit: INGREDIENT_UNITS.PACKAGE, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'fine-mesh strainer' },
-        { name: 'skewer' },
-        { name: 'ladle' },
+        LARGE_POT,
+        STRAINER,
+        BAMBOO_SKEWERS,
+        LADLE,
     ],
     directions: [
         { step: 'Prep the vegetables, chicken and aromatics.', section: PREP_VEGGIES, img: curry2 },

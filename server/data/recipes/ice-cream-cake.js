@@ -14,7 +14,7 @@ const cake13 = '../assets/Products/ice-cream-cake-13.jpeg';
 const cake14 = '../assets/Products/ice-cream-cake-14.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { UNSALTED_BUTTER, SEMI_SWEET_CHOCOLATE_CHIPS, CORN_SYRUP, VANILLA_EXTRACT, SALT, HEAVY_CREAM, VANILLA_ICE_CREAM, CHOCOLATE_ICE_CREAM, SPRINKLES, WHIPPED_CREAM, GLUTEN_FREE_OREO } = require('./ingredients');
+const { MIXING_BOWL, BAKING_SHEET, UNSALTED_BUTTER, SEMI_SWEET_CHOCOLATE_CHIPS, CORN_SYRUP, VANILLA_EXTRACT, SALT, HEAVY_CREAM, VANILLA_ICE_CREAM, CHOCOLATE_ICE_CREAM, SPRINKLES, WHIPPED_CREAM, GLUTEN_FREE_OREO, OVEN, FREEZER, SILICON_BAKING_MAT, SMALL_BOWL, SPRINGFORM_PAN, SPATULA } = require('./ingredients');
 
 const COOKIE_CRUMBLE_SECTION = 'Cookie Crumble';
 const CHOCOLATE_FUDGE_SECTION = 'Chocolate Fudge';
@@ -66,17 +66,17 @@ module.exports = {
         { ...SPRINKLES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'freezer' },
+        OVEN,
+        FREEZER,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'silicon baking mat' },
-        { name: 'small bowl' },
-        { name: 'mixing bowl' },
-        { name: 'small microwavable bowl' },
-        { name: '8-inch springform pan' },
-        { name: 'spatula' },
+        BAKING_SHEET,
+        SILICON_BAKING_MAT,
+        SMALL_BOWL,
+        MIXING_BOWL,
+        { ...SMALL_BOWL, additionalDetails: 'microwavable' },
+        { ...SPRINGFORM_PAN, additionalDetails: '8 inch' },
+        SPATULA,
     ],
     directions: [
         { step: 'Take out the chocolate ice cream so it can soften for about 20 minutes while you make the cookie crumble.', section: SOFTEN_ICE_CREAM },

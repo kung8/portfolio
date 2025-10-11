@@ -14,6 +14,12 @@ const {
     MILK,
     BREAD,
     UNSALTED_BUTTER,
+    STOVE,
+    MEDIUM_BOWL,
+    RUBBER_SPATULA,
+    FRYING_PAN,
+    MEASURING_CUPS,
+    MEASURING_SPOONS,
 } = require('./ingredients');
 
 module.exports = {
@@ -39,14 +45,14 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: '', unit: '', additionalDetails: 'for cooking', optional: false },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'frying pan' },
-        { name: 'rubber spatula' },
-        { name: 'measuring spoon' },
-        { name: 'measuring cup' },
+        MEDIUM_BOWL,
+        FRYING_PAN,
+        RUBBER_SPATULA,
+        MEASURING_SPOONS,
+        MEASURING_CUPS,
     ],
     directions: [
         { step: 'Mix eggs, vanilla, cinnamon, and milk together.', section: SECTIONS.MAIN, img: [frenchToast1, frenchToast2] },

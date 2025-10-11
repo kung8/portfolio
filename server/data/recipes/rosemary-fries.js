@@ -7,7 +7,7 @@ const seasonings2 = '../assets/Products/rosemary-fries-seasonings-2.jpeg';
 const tray2 = '../assets/Products/rosemary-fries-tray-2.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { OLIVE_OIL, ROSEMARY, GARLIC, CORNSTARCH, SALT, BLACK_PEPPER, SWEET_POTATO } = require('./ingredients');
+const { MIXING_BOWL, OLIVE_OIL, ROSEMARY, GARLIC, CORNSTARCH, SALT, BLACK_PEPPER, SWEET_POTATO, BAKING_SHEET, OVEN } = require('./ingredients');
 
 module.exports = {
     cardName: 'Rosemary Fries',
@@ -38,11 +38,11 @@ module.exports = {
         { ...SWEET_POTATO, amount: 3, unit: '', additionalDetails: 'or preferred potato, peeled and 1/4 inch julienned strip', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: '2 baking sheets' },
-        { name: 'mixing bowl' },
+        { ...BAKING_SHEET, amount: 2 },
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Preheat oven to 425ºF.', section: SECTIONS.MAIN },

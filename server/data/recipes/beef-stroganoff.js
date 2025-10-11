@@ -12,6 +12,11 @@ const {
     ALL_PURPOSE_FLOUR,
     SOUR_CREAM,
     SPAGHETTI_NOODLES,
+    CUTTING_BOARD,
+    KNIFE,
+    FRYING_PAN,
+    SPATULA,
+    STOVE,
 } = require('./ingredients');
 
 module.exports = {
@@ -42,13 +47,13 @@ module.exports = {
         { ...SPAGHETTI_NOODLES, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked', optional: false },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: 'frying pan' },
-        { name: 'spatula' },
+        CUTTING_BOARD,
+        KNIFE,
+        FRYING_PAN,
+        SPATULA,
     ],
     directions: [
         { step: 'Heat pan over medium-high heat and add butter.', section: SECTIONS.MAIN },

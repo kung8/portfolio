@@ -6,7 +6,7 @@ const gravy5 = '../assets/Products/kfc-gravy-5.jpeg';
 const gravy6 = '../assets/Products/mash-potatoes-10.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { HOT_WATER, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, ONION_POWDER, BLACK_PEPPER, SALT, CHICKEN_BOUILLON_CUBE, BEEF_BOUILLON_CUBE } = require('./ingredients');
+const { HOT_WATER, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, ONION_POWDER, BLACK_PEPPER, SALT, CHICKEN_BOUILLON_CUBE, BEEF_BOUILLON_CUBE, STOVE, SAUCEPAN, WHISK } = require('./ingredients');
 
 const GRAVY_SECTION = 'Gravy';
 
@@ -41,11 +41,11 @@ module.exports = {
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: GRAVY_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'whisk' },
+        SAUCEPAN,
+        WHISK,
     ],
     directions: [
         { step: 'Dissolve the bouillon cubes in the hot water.', section: GRAVY_SECTION },

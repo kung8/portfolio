@@ -2,6 +2,7 @@ const tieu1 = '../assets/Products/banh-tieu-1.jpeg';
 const tieu2 = '../assets/Products/banh-tieu-2.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    BAKING_SHEET,
     BREAD_FLOUR,
     WHITE_SUGAR,
     SALT,
@@ -10,6 +11,12 @@ const {
     SESAME_SEEDS,
     VEGETABLE_OIL,
     WATER,
+    STOVE,
+    LARGE_BOWL,
+    POT,
+    TONGS,
+    PAPER_TOWELS,
+    COOLING_RACK,
 } = require('./ingredients');
 
 module.exports = {
@@ -42,15 +49,15 @@ module.exports = {
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large bowl' },
-        { name: 'pot' },
-        { name: 'tongs' },
-        { name: 'paper towels' },
-        { name: 'cooling rack' },
-        { name: 'baking sheet' },
+        LARGE_BOWL,
+        POT,
+        TONGS,
+        PAPER_TOWELS,
+        COOLING_RACK,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'Heat about a third of the water in the microwave for about 20 seconds until the water is warm.', section: SECTIONS.DOUGH },

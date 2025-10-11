@@ -6,6 +6,8 @@ const {
     CABBAGE,
     RED_PEPPER_FLAKES,
     SESAME_OIL,
+    STOVE,
+    FRYING_PAN,
 } = require('./ingredients');
 
 module.exports = {
@@ -29,10 +31,10 @@ module.exports = {
         { ...SESAME_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'frying pan' },
+        FRYING_PAN
     ],
     directions: [
         { step: 'Over medium-high heat, in a frying pan add cabbage.', section: SECTIONS.MAIN },

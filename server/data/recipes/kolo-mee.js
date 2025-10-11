@@ -3,8 +3,8 @@ const kolo2 = '../assets/Products/kolo-mee-2.jpeg';
 const kolo3 = '../assets/Products/kolo-mee-3.jpeg';
 const kolo4 = '../assets/Products/kolo-mee-4.jpeg';
 const kolo5 = '../assets/Products/kolo-mee-5.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { GROUND_PORK, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, OYSTER_SAUCE, SESAME_OIL, WHITE_PEPPER, VEGETABLE_OIL, CHOW_MEIN_NOODLES, BABY_BOK_CHOY, ONION_POWDER, GREEN_ONION, FRIED_SHALLOTS, GARLIC, THAI_CHILI_PEPPER } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { GROUND_PORK, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, OYSTER_SAUCE, SESAME_OIL, WHITE_PEPPER, VEGETABLE_OIL, CHOW_MEIN_NOODLES, BABY_BOK_CHOY, ONION_POWDER, GREEN_ONION, FRIED_SHALLOTS, GARLIC, THAI_CHILI_PEPPER, STOVE, WOK, LARGE_POT } = require('./ingredients');
 
 const MINCED_MEAT_SECTION = 'Minced Meat';
 const BOK_CHOY_SECTION = 'Bok Choy';
@@ -54,11 +54,11 @@ module.exports = {
         { ...THAI_CHILI_PEPPER, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'wok' },
-        { name: 'pot' },
+        WOK,
+        LARGE_POT,
     ],
     directions: [
         { step: 'Over medium-high heat, heat oil in a wok.', section: COOK_MINCED_MEAT },

@@ -23,6 +23,9 @@ const {
     HALF_AND_HALF,
     CARROT,
     BREAD_BOWLS,
+    STOVE,
+    SAUCEPAN,
+    SPATULA,
 } = require('./ingredients');
 
 module.exports = {
@@ -62,11 +65,11 @@ module.exports = {
         { ...BACON_BITS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large saucepan' },
-        { name: 'spatula' },
+        { ...SAUCEPAN, additionalDetails: 'large' },
+        SPATULA,
     ],
     directions: [
         { step: 'Over medium heat, melt butter.', section: SECTIONS.SOUP },

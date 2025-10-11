@@ -17,7 +17,6 @@ module.exports = {
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.SIMMER],
-    protein: [],
     type: [TYPES.SOUP],
     yields: { amount: 2, unit: YIELD_UNITS.QUART },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },

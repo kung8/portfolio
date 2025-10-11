@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { THOUSAND_ISLAND_DRESSING, PROVOLONE_CHEESE, CORNED_BEEF, UNSALTED_BUTTER, RYE_BREAD, SAUERKRAUT } = require('./ingredients');
+const { THOUSAND_ISLAND_DRESSING, PROVOLONE_CHEESE, CORNED_BEEF, UNSALTED_BUTTER, RYE_BREAD, SAUERKRAUT, STOVE, KNIFE, PLATE, CUTTING_BOARD, LARGE_PAN } = require('./ingredients');
 
 const SANDWICH_SECTION = 'Sandwich';
 const BUTTER_SECTION = 'Butter';
@@ -37,13 +37,13 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BUTTER_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pan' },
-        { name: 'knife' },
-        { name: 'plate' },
-        { name: 'cutting board' },
+        LARGE_PAN,
+        KNIFE,
+        PLATE,
+        CUTTING_BOARD,
     ],
     directions: [
         { step: 'Over medium heat, heat a pan.', section: SECTIONS.ASSEMBLE },

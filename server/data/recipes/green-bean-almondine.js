@@ -5,8 +5,9 @@ const cooked = '../assets/Products/green-bean-almondine-cooked.jpeg';
 const bath = '../assets/Products/green-bean-almondine-ice-bath.jpeg';
 const ice = '../assets/Products/green-bean-almondine-ice-water.jpeg';
 const plate = '../assets/Products/green-bean-almondine-plate.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    MIXING_BOWL,
     SALT,
     FRENCH_GREEN_BEAN,
     UNSALTED_BUTTER,
@@ -16,6 +17,8 @@ const {
     LEMON_JUICE,
     BLACK_PEPPER,
     ICE,
+    STOVE,
+    SAUCEPAN,
 } = require('./ingredients');
 
 module.exports = {
@@ -48,11 +51,11 @@ module.exports = {
         { ...ICE, amount: '', unit: '', additionalDetails: '', section: '' },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'mixing bowl' },
+        SAUCEPAN,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Over medium-high heat, boil water and salt in a saucepan.', section: SECTIONS.MAIN },

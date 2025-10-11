@@ -17,7 +17,7 @@ const tomato = '../assets/Products/chicken-tikka-masala-tomato-sauce.jpeg';
 const translucent = '../assets/Products/chicken-tikka-masala-translucent-onion.jpeg';
 
 const { CATEGORIES, GENRES, TYPES, METHODS, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
-const { GHEE, YELLOW_ONION, GARLIC, CUMIN, SALT, GINGER, CAYENNE_PEPPER, CINNAMON, TURMERIC, TOMATO_SAUCE, HEAVY_CREAM, WHITE_SUGAR, PAPRIKA, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CURRY_POWDER, } = require('./ingredients');
+const { GHEE, YELLOW_ONION, GARLIC, CUMIN, SALT, GINGER, CAYENNE_PEPPER, CINNAMON, TURMERIC, TOMATO_SAUCE, HEAVY_CREAM, WHITE_SUGAR, PAPRIKA, VEGETABLE_OIL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CURRY_POWDER, STOVE, LARGE_POT, LARGE_PAN, } = require('./ingredients');
 
 module.exports = {
     cardName: 'Chicken Tikka Masala',
@@ -57,11 +57,11 @@ module.exports = {
         { ...CURRY_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'large pan' },
+        LARGE_POT,
+        LARGE_PAN,
     ],
     directions: [
         { step: 'Over medium heat, heat ghee in a large pot.', section: SECTIONS.SAUCE, img: ghee },

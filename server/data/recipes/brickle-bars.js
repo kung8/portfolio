@@ -13,7 +13,7 @@ const wet7 = '../assets/Products/brickle-bars-wet-7.jpeg';
 const plated4 = '../assets/Products/brickle-bars-plated-4.jpeg';
 const plated6 = '../assets/Products/brickle-bars-plated-6.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, WHITE_SUGAR, BROWN_SUGAR, EGG, VANILLA_EXTRACT, ENGLISH_TOFFEE_BITS } = require('./ingredients');
+const { MIXING_BOWL, UNSALTED_BUTTER, ALL_PURPOSE_FLOUR, BAKING_POWDER, SALT, WHITE_SUGAR, BROWN_SUGAR, EGG, VANILLA_EXTRACT, ENGLISH_TOFFEE_BITS, OVEN, BAKING_PAN, MEDIUM_BOWL, SPATULA } = require('./ingredients');
 
 const PREPARATION = 'Preparation';
 const DRY_INGREDIENTS = 'Dry Ingredients';
@@ -48,13 +48,13 @@ module.exports = {
         { ...ENGLISH_TOFFEE_BITS, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking pan' },
-        { name: 'medium bowl' },
-        { name: 'mixing bowl' },
-        { name: 'spatula' },
+        BAKING_PAN,
+        MEDIUM_BOWL,
+        MIXING_BOWL,
+        SPATULA,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: PREPARATION },

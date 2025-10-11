@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { CHERRY_TOMATO, CHICKPEA, BABY_ARUGULA, CUCUMBER, BASIL_LEAF, PARSLEY, MINT_LEAF, PINE_NUTS, OLIVE_OIL, LEMON_JUICE, DIJON_MUSTARD, GARLIC, ITALIAN_SEASONING, RED_PEPPER_FLAKES, SALT, FETA_CHEESE, BLACK_PEPPER, FUSILLI_PASTA } = require('./ingredients');
+const { MIXING_BOWL, CHERRY_TOMATO, CHICKPEA, BABY_ARUGULA, CUCUMBER, BASIL_LEAF, PARSLEY, MINT_LEAF, PINE_NUTS, OLIVE_OIL, LEMON_JUICE, DIJON_MUSTARD, GARLIC, ITALIAN_SEASONING, RED_PEPPER_FLAKES, SALT, FETA_CHEESE, BLACK_PEPPER, FUSILLI_PASTA, STOVE, LARGE_POT, SMALL_BOWL } = require('./ingredients');
 
 module.exports = {
     wip: true,
@@ -49,12 +49,12 @@ module.exports = {
         { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'small bowl' },
-        { name: 'mixing bowl' },
+        LARGE_POT,
+        SMALL_BOWL,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Over medium-high heat, bring a large pot of salted water to a boil.', section: SECTIONS.COOK_PASTA },

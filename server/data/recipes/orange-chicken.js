@@ -7,8 +7,8 @@ const orange6 = '../assets/Products/orange-chicken-6.jpeg';
 const orange7 = '../assets/Products/orange-chicken-7.jpeg';
 const orange8 = '../assets/Products/orange-chicken-8.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGG, CORNSTARCH, ALL_PURPOSE_FLOUR, SALT, VEGETABLE_OIL, ORANGE_JUICE, WHITE_SUGAR, RICE_WINE_VINEGAR, LIGHT_SOY_SAUCE, GARLIC_POWDER, RED_PEPPER_FLAKES, ORANGE_ZEST, GROUND_GINGER, GREEN_ONION, WATER } = require('./ingredients');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { BAKING_SHEET, BONELESS_AND_SKINLESS_CHICKEN_BREAST, EGG, CORNSTARCH, ALL_PURPOSE_FLOUR, SALT, VEGETABLE_OIL, ORANGE_JUICE, WHITE_SUGAR, RICE_WINE_VINEGAR, LIGHT_SOY_SAUCE, GARLIC_POWDER, RED_PEPPER_FLAKES, ORANGE_ZEST, GROUND_GINGER, GREEN_ONION, WATER, STOVE, SMALL_BOWL, PLATE, PAPER_TOWELS, LARGE_POT, COOKING_THERMOMETER, SAUCEPAN, COOLING_RACK, MEDIUM_BOWL } = require('./ingredients');
 
 const ORANGE_SAUCE = 'Orange Sauce';
 const FLOUR_DREDGE = 'Flour Dredge';
@@ -60,18 +60,19 @@ module.exports = {
         { ...ORANGE_ZEST, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'medium sauce pan' },
-        { name: 'small bowl' },
-        { name: '2 shallow dishes' },
-        { name: 'plate' },
-        { name: 'wire cooling rack' },
-        { name: 'baking sheet' },
-        { name: 'paper towels' },
-        { name: 'pot' },
-        { name: 'cooking thermometer' },
+        SAUCEPAN,
+        { ...SMALL_BOWL, additionalDetails: 'for cornstarch paste' },
+        { ...MEDIUM_BOWL, additionalDetails: 'for flour dredge' },
+        { ...SMALL_BOWL, additionalDetails: 'for egg dredge' },
+        PLATE,
+        COOLING_RACK,
+        BAKING_SHEET,
+        PAPER_TOWELS,
+        LARGE_POT,
+        COOKING_THERMOMETER,
     ],
     directions: [
         { step: 'Over medium heat, combine all the "Sauce" ingredients except the orange zest, cornstarch and water in a medium saucepan.', section: ORANGE_SAUCE, img: orange1 },

@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BREADCRUMBS, EGG, MILK, VEGETABLE_OIL, PIZZA_SAUCE, STRING_CHEESE } = require('./ingredients');
+const { BAKING_SHEET, ALL_PURPOSE_FLOUR, BREADCRUMBS, EGG, MILK, VEGETABLE_OIL, PIZZA_SAUCE, STRING_CHEESE, STOVE, SHALLOW_BOWL, PAPER_TOWELS, COOLING_RACK, FRYING_PAN } = require('./ingredients');
 
 const EGG_DREDGE_STATION = 'Egg Dredge Station';
 const FLOUR_DREDGE_STATION = 'Flour Dredge Station';
@@ -40,14 +40,14 @@ module.exports = {
         { ...PIZZA_SAUCE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: '3 shallow bowls' },
-        { name: 'baking sheet' },
-        { name: 'paper towels' },
-        { name: 'wire rack' },
-        { name: 'frying pan' },
+        { ...SHALLOW_BOWL, amount: 3 },
+        BAKING_SHEET,
+        PAPER_TOWELS,
+        COOLING_RACK,
+        FRYING_PAN,
     ],
     directions: [
         { step: 'Set flour in a shallow bowl.', section: SECTIONS.ASSEMBLE },

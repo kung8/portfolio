@@ -8,7 +8,7 @@ const gryo7 = '../assets/Products/gyro-7.jpeg';
 const gryo8 = '../assets/Products/gyro-8.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, GARLIC, WHITE_VINEGAR, LEMON_JUICE, OLIVE_OIL, GREEK_YOGURT, OREGANO, SALT, BLACK_PEPPER, CUCUMBER, ROMA_TOMATO, RED_ONION, PARSLEY, PITA_BREAD } = require('./ingredients');
+const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, GARLIC, WHITE_VINEGAR, LEMON_JUICE, OLIVE_OIL, GREEK_YOGURT, OREGANO, SALT, BLACK_PEPPER, CUCUMBER, ROMA_TOMATO, RED_ONION, PARSLEY, PITA_BREAD, STOVE, ZIPLOC_BAG, BOX_GRATER, CHEESECLOTH, MIXING_BOWL, FRYING_PAN, ALUMINUM_FOIL, PARCHMENT_PAPER } = require('./ingredients');
 
 const TZATZIKI_SAUCE_SECTION = 'Tzatziki Sauce';
 
@@ -65,17 +65,16 @@ module.exports = {
         { ...PITA_BREAD, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'ziploc bag' },
-        { name: 'box grater' },
-        { name: 'cheesecloth' },
-        { name: '2 mixing bowls' },
-        { name: 'frying pan' },
-        { name: 'aluminum foil' },
-        { name: 'parchment paper' },
-        { name: '' },
+        { ...ZIPLOC_BAG, additionalDetails: 'gallon-size' },
+        BOX_GRATER,
+        CHEESECLOTH,
+        { ...MIXING_BOWL, amount: 2 },
+        FRYING_PAN,
+        ALUMINUM_FOIL,
+        PARCHMENT_PAPER,
     ],
     directions: [
         { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.MARINATE_CHICKEN },

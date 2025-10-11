@@ -29,6 +29,12 @@ const {
     HEAVY_CREAM,
     JASMINE_RICE,
     BONELESS_AND_SKINLESS_CHICKEN_BREAST,
+    STOVE,
+    FRYING_PAN,
+    MEDIUM_BOWL,
+    SPATULA,
+    MEASURING_SPOONS,
+    MIXING_BOWL,
 } = require('./ingredients');
 
 module.exports = {
@@ -68,14 +74,14 @@ module.exports = {
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: 'cooked', optional: false },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'frying pan' },
-        { name: 'large mixing bowl' },
-        { name: 'medium bowl' },
-        { name: 'spatula' },
-        { name: 'measuring spoons' },
+        FRYING_PAN,
+        MIXING_BOWL,
+        MEDIUM_BOWL,
+        SPATULA,
+        MEASURING_SPOONS,
     ],
     directions: [
         { step: 'Add oil and butter to a large cooking pan on medium-high heat.', section: SECTIONS.MAIN, img: oils },

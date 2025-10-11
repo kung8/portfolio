@@ -2,7 +2,7 @@ const cheesecake1 = '../assets/Products/basque-cheesecake-1.jpeg';
 const cheesecake2 = '../assets/Products/basque-cheesecake-2.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { CREAM_CHEESE, HEAVY_CREAM, WHITE_SUGAR, ALL_PURPOSE_FLOUR, EGG, EGG_YOLK, VANILLA_EXTRACT } = require('./ingredients');
+const { MIXING_BOWL, CREAM_CHEESE, HEAVY_CREAM, WHITE_SUGAR, ALL_PURPOSE_FLOUR, EGG, EGG_YOLK, VANILLA_EXTRACT, OVEN, STAND_MIXER, PARCHMENT_PAPER, COOLING_RACK, SPRINGFORM_PAN } = require('./ingredients');
 
 const CREAM_CHEESE_MIXTURE = 'Cream Cheese Mixture';
 const FLOUR_MIXTURE = 'Flour Mixture';
@@ -44,14 +44,14 @@ module.exports = {
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: VANILLA_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stand mixer' },
+        OVEN,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: '10-inch springform pan' },
-        { name: 'parchment paper' },
-        { name: 'mixing bowl' },
-        { name: 'wire rack' },
+        { ...SPRINGFORM_PAN, additionalDetails: '10 inch' },
+        PARCHMENT_PAPER,
+        MIXING_BOWL,
+        COOLING_RACK
     ],
     directions: [
         { step: 'Preheat oven to 450ºF.', section: PREP_BAKE },

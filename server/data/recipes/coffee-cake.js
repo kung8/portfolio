@@ -23,7 +23,7 @@ const cake22 = '../assets/Products/coffee-cake-22.jpeg';
 const cake23 = '../assets/Products/coffee-cake-23.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { UNSALTED_BUTTER, CREAM_CHEESE, BROWN_SUGAR, WHITE_SUGAR, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, BAKING_POWDER, CORNSTARCH, SALT, BUTTERMILK, CINNAMON, POWDERED_SUGAR, MILK } = require('./ingredients');
+const { MIXING_BOWL, UNSALTED_BUTTER, CREAM_CHEESE, BROWN_SUGAR, WHITE_SUGAR, EGG, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, BAKING_POWDER, CORNSTARCH, SALT, BUTTERMILK, CINNAMON, POWDERED_SUGAR, MILK, OVEN, STAND_MIXER, COOKING_SPRAY, MEDIUM_BOWL, SMALL_BOWL, BAKING_PAN } = require('./ingredients');
 
 const WET_CAKE_BATTER = 'Wet Cake Batter';
 const DRY_CAKE_BATTER = 'Dry Cake Batter';
@@ -86,15 +86,15 @@ module.exports = {
         { ...MILK, amount: 3, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: GLAZE_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stand mixer' },
+        OVEN,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: 'baking pan' },
-        { name: 'cooking spray' },
-        { name: 'mixing bowl' },
-        { name: 'medium bowls' },
-        { name: 'small bowl' },
+        BAKING_PAN,
+        COOKING_SPRAY,
+        MIXING_BOWL,
+        MEDIUM_BOWL,
+        SMALL_BOWL,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: MAKE_WET_BATTER },

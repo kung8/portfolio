@@ -10,6 +10,7 @@ const chocolate = '../assets/Products/oatmeal-raisin-cookies-with-chocolate-chip
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
 const {
+    MIXING_BOWL,
     ALL_PURPOSE_FLOUR,
     BAKING_SODA,
     BAKING_POWDER,
@@ -22,6 +23,9 @@ const {
     STEEL_OATS,
     RAISINS,
     SEMI_SWEET_CHOCOLATE_CHIPS,
+    OVEN,
+    SPATULA,
+    SILICON_BAKING_MAT,
 } = require('./ingredients');
 
 module.exports = {
@@ -58,12 +62,12 @@ module.exports = {
         { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'spatula' },
-        { name: 'silicon mat' },
+        MIXING_BOWL,
+        SPATULA,
+        SILICON_BAKING_MAT,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },

@@ -22,6 +22,10 @@ const {
     RICE_WINE_VINEGAR,
     RED_PEPPER_FLAKES,
     VEGETABLE_OIL,
+    STOVE,
+    SMALL_BOWL,
+    SPATULA,
+    WOK,
 } = require('./ingredients');
 
 module.exports = {
@@ -58,12 +62,12 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', optional: false, section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'wok' },
-        { name: 'spatula' },
-        { name: 'small bowl' },
+        WOK,
+        SPATULA,
+        SMALL_BOWL,
     ],
     directions: [
         { step: 'In a bowl, combine broth, sauces, vinegar, and red pepper flakes. Set aside.', section: SECTIONS.SAUCE, img: sauce },

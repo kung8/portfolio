@@ -8,7 +8,7 @@ const brigadeiro7 = '../assets/Products/brigadeiro-7.jpeg';
 const brigadeiro8 = '../assets/Products/brigadeiro-8.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { SWEETENED_CONDENSED_MILK, UNSALTED_BUTTER, SPRINKLES, SEMI_SWEET_CHOCOLATE_CHIPS } = require('./ingredients');
+const { SWEETENED_CONDENSED_MILK, UNSALTED_BUTTER, SPRINKLES, SEMI_SWEET_CHOCOLATE_CHIPS, STOVE, REFRIGERATOR, SAUCEPAN, SPATULA, BOWL } = require('./ingredients');
 
 const BRIGADEIRO_SECTION = 'Brigadeiro';
 
@@ -40,13 +40,13 @@ module.exports = {
         { ...SPRINKLES, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.ASSEMBLE },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'refrigerator' },
+        STOVE,
+        REFRIGERATOR,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'spatula' },
-        { name: 'bowls' },
+        SAUCEPAN,
+        SPATULA,
+        { ...BOWL, additionalDetails: 'for toppings' },
     ],
     directions: [
         { step: `In a saucepan, combine "${BRIGADEIRO_SECTION}" section ingredients.`, section: SECTIONS.PREP_DOUGH, img: brigadeiro1 },

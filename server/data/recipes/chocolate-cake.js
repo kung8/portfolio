@@ -9,7 +9,7 @@ const cake8 = '../assets/Products/chocolate-cake-8.jpeg';
 const cake9 = '../assets/Products/chocolate-cake-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, WHITE_SUGAR, COCOA_POWDER, BAKING_POWDER, BAKING_SODA, SALT, MILK, VEGETABLE_OIL, EGG, VANILLA_EXTRACT, WATER, UNSALTED_BUTTER } = require('./ingredients');
+const { BAKING_SHEET, ALL_PURPOSE_FLOUR, WHITE_SUGAR, COCOA_POWDER, BAKING_POWDER, BAKING_SODA, SALT, MILK, VEGETABLE_OIL, EGG, VANILLA_EXTRACT, WATER, UNSALTED_BUTTER, COOKING_SPRAY, CAKE_PAN, OVEN, STAND_MIXER } = require('./ingredients');
 const frosting = require('./chocolate-buttercream-frosting');
 
 const CAKE_PAN_SECTION = 'Cake Pan';
@@ -69,13 +69,13 @@ module.exports = {
         { ...CHOCOLATE_BUTTERCREAM_FROSTING, amount: frosting.yields.amount, unit: frosting.yields.unit, additionalDetails: '', section: SECTIONS.DECORATING, link: { id: frosting.name, url: `recipes/${frosting.name}` } },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stand mixer' },
+        OVEN,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: '2 - 9 inch cake pans' },
-        { name: 'cooking spray' },
-        { name: 'baking sheet' },
+        { ...CAKE_PAN, amount: 2, additionalDetails: '9 inch' },
+        COOKING_SPRAY,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: PREP_CAKE_PAN },

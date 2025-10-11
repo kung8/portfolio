@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { MILK, BROWN_SUGAR, YEAST, ALL_PURPOSE_FLOUR, SALT, UNSALTED_BUTTER, EGG } = require('./ingredients');
+const { BAKING_SHEET, MILK, BROWN_SUGAR, YEAST, ALL_PURPOSE_FLOUR, SALT, UNSALTED_BUTTER, EGG, ROLLING_PIN, PLASTIC_WRAP, DOUGH_KNIFE, SILICON_BAKING_MAT, STAND_MIXER, OVEN } = require('./ingredients');
 
 const DOUGH_SECTION = 'Dough';
 const BUTTER_SECTION = 'Butter';
@@ -45,15 +45,15 @@ module.exports = {
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: EGG_WASH_SECTION },
     ],
     appliances: [
-        { name: 'stand mixer' },
-        { name: 'oven' },
+        STAND_MIXER,
+        OVEN,
     ],
     supplies: [
-        { name: 'rolling pin' },
-        { name: 'plastic wrap' },
-        { name: 'dough knife' },
-        { name: 'baking sheet' },
-        { name: 'silicon baking mat' },
+        ROLLING_PIN,
+        PLASTIC_WRAP,
+        DOUGH_KNIFE,
+        BAKING_SHEET,
+        SILICON_BAKING_MAT,
     ],
     directions: [
         { step: 'In a stand mixer, combine warm milk, brown sugar and yeast.', section: MAKE_DOUGH },

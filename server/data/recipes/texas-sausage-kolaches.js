@@ -14,7 +14,7 @@ const kolaches13 = '../assets/Products/texas-sausage-kolaches-13.jpeg';
 const kolaches14 = '../assets/Products/texas-sausage-kolaches-14.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { MILK, WHITE_SUGAR, UNSALTED_BUTTER, SALT, WATER, YEAST, ALL_PURPOSE_FLOUR, EGG, CHEDDAR_CHEESE, SAUSAGE_LINK } = require('./ingredients');
+const { BAKING_SHEET, MILK, WHITE_SUGAR, UNSALTED_BUTTER, SALT, WATER, YEAST, ALL_PURPOSE_FLOUR, EGG, CHEDDAR_CHEESE, SAUSAGE_LINK, STOVE, STAND_MIXER, OVEN, SAUCEPAN, DOUGH_KNIFE, PARCHMENT_PAPER } = require('./ingredients');
 
 const SUGAR_MIXTURE_SECTION = 'Sugar Mixture';
 const YEAST_MIXTURE_SECTION = 'Yeast Mixture';
@@ -59,15 +59,15 @@ module.exports = {
         { ...CHEDDAR_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'stand mixer' },
-        { name: 'oven' },
+        STOVE,
+        STAND_MIXER,
+        OVEN,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'dough knife' },
-        { name: 'baking sheet' },
-        { name: 'parchment paper' },
+        SAUCEPAN,
+        DOUGH_KNIFE,
+        BAKING_SHEET,
+        PARCHMENT_PAPER,
     ],
     directions: [
         { step: 'Over medium heat, heat milk in a saucepan until it bubbles. Remove from heat.', section: PREP_SUGAR_MIXTURE },

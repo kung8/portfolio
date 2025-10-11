@@ -1,6 +1,6 @@
 const cookies1 = '../assets/Products/browned-butter-chocolate-chip-cookies-1.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER } = require('./constants');
-const { BROWNED_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGG, EGG_YOLK, CAKE_FLOUR, ALL_PURPOSE_FLOUR, CORNSTARCH, BAKING_SODA, SALT, SEMI_SWEET_CHOCOLATE_CHIPS, WALNUTS, MILK_CHOCOLATE } = require('./ingredients');
+const { MIXING_BOWL, BROWNED_BUTTER, BROWN_SUGAR, WHITE_SUGAR, VANILLA_EXTRACT, EGG, EGG_YOLK, CAKE_FLOUR, ALL_PURPOSE_FLOUR, CORNSTARCH, BAKING_SODA, SALT, SEMI_SWEET_CHOCOLATE_CHIPS, WALNUTS, MILK_CHOCOLATE, STOVE, OVEN, SAUCEPAN, SILICON_BAKING_MAT, BAKING_SHEET, COOLING_RACK } = require('./ingredients');
 
 const BROWNED_BUTTER_SECTION = 'Browned Butter';
 const SUGARS = 'Sugars';
@@ -40,15 +40,15 @@ module.exports = {
         { ...WALNUTS, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.FILLING },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'mixing bowl' },
-        { name: 'silicon baking mats' },
-        { name: 'baking sheets' },
-        { name: 'cooling rack' },
+        SAUCEPAN,
+        MIXING_BOWL,
+        SILICON_BAKING_MAT,
+        BAKING_SHEET,
+        COOLING_RACK,
     ],
     directions: [
         { step: 'Preheat the oven to 415ºF.', section: SECTIONS.MAIN },

@@ -11,8 +11,8 @@ const plated2 = '../assets/Products/peppermint-bark-plated-2.jpeg';
 const plated4 = '../assets/Products/peppermint-bark-plated-4.jpeg';
 const set = '../assets/Products/peppermint-bark-set-chocolate.jpeg';
 const white = '../assets/Products/peppermint-bark-white-chocolate-chips.jpeg';
-const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { SEMI_SWEET_CHOCOLATE_CHIPS, WHITE_CHOCOLATE_CHIPS, PEPPERMINT_EXTRACT, CANDY_CANES } = require('./ingredients');
+const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { BAKING_SHEET, SEMI_SWEET_CHOCOLATE_CHIPS, WHITE_CHOCOLATE_CHIPS, PEPPERMINT_EXTRACT, CANDY_CANES, MICROWAVE, MEDIUM_BOWL, PARCHMENT_PAPER, SPATULA, KNIFE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Peppermint Bark',
@@ -40,14 +40,14 @@ module.exports = {
         { ...CANDY_CANES, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'microwave' },
+        MICROWAVE,
     ],
     supplies: [
-        { name: '2 microwaveable bowls' },
-        { name: 'parchment paper' },
-        { name: 'baking sheet' },
-        { name: 'spatula' },
-        { name: 'knife' },
+        { ...MEDIUM_BOWL, amount: 2, additionalDetails: 'microwavable' },
+        PARCHMENT_PAPER,
+        BAKING_SHEET,
+        SPATULA,
+        KNIFE,
     ],
     directions: [
         { step: 'Place some parchment paper on a baking sheet.', section: SECTIONS.MAIN, img: parchment },

@@ -15,7 +15,7 @@ const cannoli14 = '../assets/Products/no-bake-cannoli-delight-14.jpeg';
 const cannoli15 = '../assets/Products/no-bake-cannoli-delight-15.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { CREAM_CHEESE, CHOCOLATE_INSTANT_PUDDING_MIX, MILK, GRAHAM_CRACKER, WHITE_SUGAR, SALT, UNSALTED_BUTTER, HEAVY_CREAM, POWDERED_SUGAR, RICOTTA_CHEESE, ORANGE_ZEST, VANILLA_EXTRACT, MINI_CHOCOLATE_CHIPS } = require('./ingredients');
+const { MIXING_BOWL, CREAM_CHEESE, CHOCOLATE_INSTANT_PUDDING_MIX, MILK, GRAHAM_CRACKER, WHITE_SUGAR, SALT, UNSALTED_BUTTER, HEAVY_CREAM, POWDERED_SUGAR, RICOTTA_CHEESE, ORANGE_ZEST, VANILLA_EXTRACT, MINI_CHOCOLATE_CHIPS, STAND_MIXER, BAKING_PAN, PARCHMENT_PAPER, MEDIUM_BOWL, WHISK, SPATULA, CUTTING_BOARD, KNIFE } = require('./ingredients');
 
 const PUDDING_MIXTURE_SECTION = 'Pudding Mixture';
 const WHIPPED_CREAM_SECTION = 'Whipped Cream';
@@ -68,17 +68,17 @@ module.exports = {
         { ...MINI_CHOCOLATE_CHIPS, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stand mixer' },
+        STAND_MIXER,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'baking pan' },
-        { name: 'parchment paper' },
-        { name: 'medium bowl' },
-        { name: 'whisk' },
-        { name: 'spatula' },
-        { name: 'cutting board' },
-        { name: 'knife' },
+        MIXING_BOWL,
+        BAKING_PAN,
+        PARCHMENT_PAPER,
+        MEDIUM_BOWL,
+        WHISK,
+        SPATULA,
+        CUTTING_BOARD,
+        KNIFE,
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${PUDDING_MIXTURE_SECTION}" section ingredients. Mix until it begins to thicken (about 2 minutes).`, section: PREP_PUDDING_MIXTURE, img: [cannoli5, cannoli6] },
@@ -109,7 +109,7 @@ module.exports = {
         { step: 'Cut--wiping the knife between cuts.', section: CUT },
 
         { step: 'Enjoy this layered dessert', section: SECTIONS.SERVE },
-    ], 
+    ],
     notes: [
         { note: 'The original recipe calls for just 3.9 ounces of chocolate pudding mix. It was really tight and I had to spread it out into a really thin layer. I increased the amount of pudding mix and milk in the recipe to accommodate for a thicker layer.'}
     ],

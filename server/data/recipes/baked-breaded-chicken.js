@@ -18,7 +18,11 @@ const {
     GARLIC,
     PAPRIKA,
     CHICKEN_BREAST,
-    SALT
+    SALT,
+    BAKING_PAN,
+    OVEN,
+    MIXING_BOWL,
+    SMALL_BOWL
 } = require('./ingredients');
 
 const BREADING = 'Breading';
@@ -51,6 +55,7 @@ module.exports = {
         { ...OREGANO, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BREADING },
         { ...ONION_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BREADING },
         { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BREADING },
+
         { ...OLIVE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DREDGING },
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: DREDGING },
         { ...PAPRIKA, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DREDGING },
@@ -59,15 +64,15 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN
     ],
     supplies: [
-        { name: 'baking pan' },
-        { name: 'shallow dish' },
-        { name: 'small bowl' },
+        BAKING_PAN,
+        MIXING_BOWL,
+        SMALL_BOWL,
     ],
     directions: [
-        { step: 'In a shallow dish, combine the breading ingredients.', section: BREADING, img: breading },
+        { step: 'In a mixing bowl, combine the breading ingredients.', section: BREADING, img: breading },
         { step: 'In a small bowl, combine the dredging ingredients.', section: DREDGING, img: oil },
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },
         { step: 'Season the chicken with salt and black pepper generously.', section: SECTIONS.MAIN, img: seasoned },

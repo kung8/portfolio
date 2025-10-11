@@ -5,7 +5,7 @@ const bulgogi4 = '../assets/Products/beef-bulgogi-4.jpeg';
 const bulgogi5 = '../assets/Products/beef-bulgogi-5.jpeg';
 const bulgogi6 = '../assets/Products/beef-bulgogi-6.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     BEEF,
     PEAR,
@@ -19,6 +19,13 @@ const {
     JASMINE_RICE,
     GREEN_ONION,
     SESAME_SEEDS,
+    STOVE,
+    ZIPLOC_BAG,
+    PEELER,
+    CUTTING_BOARD,
+    KNIFE,
+    MEASURING_SPOONS,
+    FRYING_PAN,
 } = require('./ingredients');
 
 const BEEF_SECTION = 'Beef';
@@ -56,16 +63,15 @@ module.exports = {
         { ...SESAME_SEEDS, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'ziploc' },
-        { name: 'peeler' },
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: 'measuring spoons' },
-        { name: 'stove' },
-        { name: 'frying pan' },
+        { ...ZIPLOC_BAG, additionalDetails: 'gallon-size' },
+        PEELER,
+        CUTTING_BOARD,
+        KNIFE,
+        MEASURING_SPOONS,
+        FRYING_PAN,
     ],
     directions: [
         { step: 'Combine the marinade sauce ingredients either in a bowl or ziploc bag.', section: BEEF_SECTION, img: bulgogi1 },

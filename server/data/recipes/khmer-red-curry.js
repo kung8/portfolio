@@ -22,6 +22,9 @@ const {
     BLACK_PEPPER,
     RUSSET_POTATO,
     WATER,
+    STOVE,
+    WOK,
+    SPATULA,
 } = require('./ingredients');
 
 module.exports = {
@@ -55,11 +58,11 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'wok or pot' },
-        { name: 'spatula' },
+        WOK,
+        SPATULA,
     ],
     directions: [
         { step: 'Over medium-high heat, add red curry paste and coconut milk in a pan.', section: SECTIONS.MAIN, img: milk },

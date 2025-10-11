@@ -9,8 +9,8 @@ const fryingSpices = '../assets/Products/lemon-chicken-ramen-frying-spices.jpeg'
 const noodles = '../assets/Products/lemon-chicken-ramen-with-noodles.jpeg';
 const broth = '../assets/Products/lemon-chicken-ramen-broth.jpeg';
 const brothChicken = '../assets/Products/lemon-chicken-ramen-broth-with-chicken.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { CHICKEN_BREAST, ALL_PURPOSE_FLOUR, OLIVE_OIL, GARLIC, SALT, BLACK_PEPPER, PAPRIKA, OREGANO, RED_PEPPER_FLAKES, CHICKEN_BROTH, LEMON, LIGHT_CREAM, FRESH_RAMEN_NOODLES, CILANTRO, GREEN_ONION, SESAME_SEEDS, SNOW_PEA } = require('./ingredients');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CHICKEN_BREAST, ALL_PURPOSE_FLOUR, OLIVE_OIL, GARLIC, SALT, BLACK_PEPPER, PAPRIKA, OREGANO, RED_PEPPER_FLAKES, CHICKEN_BROTH, LEMON, LIGHT_CREAM, FRESH_RAMEN_NOODLES, CILANTRO, GREEN_ONION, SESAME_SEEDS, SNOW_PEA, STOVE, LARGE_POT, CUTTING_BOARD, KNIFE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Lemon Chicken Ramen',
@@ -53,12 +53,12 @@ module.exports = {
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'cutting board' },
-        { name: 'knife' },
+        LARGE_POT,
+        CUTTING_BOARD,
+        KNIFE,
     ],
     directions: [
         { step: 'Mix together flour, salt and black pepper.', section: SECTIONS.CHICKEN, img: flour },

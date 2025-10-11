@@ -5,6 +5,9 @@ const {
     COOKED_HAM,
     BISCUITS,
     CHEDDAR_CHEESE,
+    STOVE,
+    FRYING_PAN,
+    SPATULA,
 } = require('./ingredients');
 const biscuits = require('./biscuits-and-gravy');
 
@@ -30,11 +33,11 @@ module.exports = {
         { ...CHEDDAR_CHEESE, amount: 1, unit: '', additionalDetails: 'slice', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'frying pan' },
-        { name: 'spatula' },
+        FRYING_PAN,
+        SPATULA,
     ],
     directions: [
         {

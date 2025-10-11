@@ -18,7 +18,6 @@ module.exports = {
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MIDDLE_EASTERN],
     method: [METHODS.SIMMER],
-    protein: [],
     type: [TYPES.RICE],
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },

@@ -24,8 +24,8 @@ const frosting2 = '../assets/Products/gingerbread-men-cookies-frosting-2.jpeg';
 const frosting3 = '../assets/Products/gingerbread-men-cookies-frosting-3.jpeg';
 const frosting4 = '../assets/Products/gingerbread-men-cookies-frosting-4.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BROWN_SUGAR, BAKING_SODA, CINNAMON, GROUND_GINGER, GROUND_CLOVES, SALT, UNSALTED_BUTTER, MOLASSES, MILK, POWDERED_SUGAR } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
+const { MIXING_BOWL, ALL_PURPOSE_FLOUR, BROWN_SUGAR, BAKING_SODA, CINNAMON, GROUND_GINGER, GROUND_CLOVES, SALT, UNSALTED_BUTTER, MOLASSES, MILK, POWDERED_SUGAR, STAND_MIXER, OVEN, COOLING_RACK, ROLLING_PIN, SILICON_BAKING_MAT, BAKING_SHEET, PASTRY_BLENDER_ATTACHMENT } = require('./ingredients');
 
 const GINGERBREAD_DRY_INGREDIENTS = 'Gingerbread Dry Ingredients';
 const GINGERBREAD_BATTER = 'Gingerbread Batter';
@@ -70,16 +70,16 @@ module.exports = {
         { ...POWDERED_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FROSTING },
     ],
     appliances: [
-        { name: 'stand mixer' },
-        { name: 'oven' },
+        STAND_MIXER,
+        OVEN,
     ],
     supplies: [
-        { name: 'pastry blender/attachment' },
-        { name: '2 baking sheets' },
-        { name: '2 silicon baking mat' },
-        { name: 'rolling pin' },
-        { name: 'cooling rack' },
-        { name: 'mixing bowl' },
+        PASTRY_BLENDER_ATTACHMENT,
+        { ...BAKING_SHEET, amount: 2 },
+        { ...SILICON_BAKING_MAT, amount: 2 },
+        ROLLING_PIN,
+        COOLING_RACK,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'In a stand mixer, combine all the the "Gingerbread Dry Ingredients".', section: GINGERBREAD_DRY_INGREDIENTS, img: [dough1, dough2] },

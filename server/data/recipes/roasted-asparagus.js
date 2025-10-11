@@ -4,7 +4,7 @@ const asparagus3 = '../assets/Products/roasted-asparagus-3.jpeg';
 const asparagus4 = '../assets/Products/roasted-asparagus-4.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { ASPARAGUS, OLIVE_OIL, SALT, BLACK_PEPPER, PARMESAN_CHEESE, LEMON_JUICE, RED_PEPPER_FLAKES, UNSALTED_BUTTER } = require('./ingredients');
+const { BAKING_SHEET, ASPARAGUS, OLIVE_OIL, SALT, BLACK_PEPPER, PARMESAN_CHEESE, LEMON_JUICE, RED_PEPPER_FLAKES, UNSALTED_BUTTER, ALUMINUM_FOIL, OVEN } = require('./ingredients');
 
 module.exports = {
     cardName: 'Roasted Asparagus',
@@ -38,11 +38,11 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'aluminum foil' },
+        BAKING_SHEET,
+        ALUMINUM_FOIL,
     ],
     directions: [
         { step: 'Preheat the oven to 425ºF.', section: SECTIONS.BAKE },

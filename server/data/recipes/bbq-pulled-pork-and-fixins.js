@@ -26,6 +26,9 @@ const {
     GARLIC,
     THYME,
     BRIOCHE_BUNS,
+    SLOW_COOKER_LINER,
+    FORK,
+    SLOW_COOKER,
 } = require('./ingredients');
 
 module.exports = {
@@ -59,11 +62,11 @@ module.exports = {
         { ...BRIOCHE_BUNS, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'slow cooker' },
+        SLOW_COOKER,
     ],
     supplies: [
-        { name: 'slow cooker liner' },
-        { name: '2 forks' },
+        SLOW_COOKER_LINER,
+        { ...FORK, amount: 2 },
     ],
     directions: [
         { step: 'Line a slow cooker with a liner to make cleaning quick.', section: SECTIONS.FILLING, img: liner },

@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { SHRIMP, OLIVE_OIL, SALT, GARLIC_POWDER, GARLIC, PARMIGIANO_REGGIANO, LEMON_PEPPER } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, SHRIMP, OLIVE_OIL, SALT, GARLIC_POWDER, GARLIC, PARMIGIANO_REGGIANO, LEMON_PEPPER, AIR_FRYER } = require('./ingredients');
 
 module.exports = {
     wip: true,
@@ -31,14 +31,14 @@ module.exports = {
         { ...GARLIC_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
         { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', section: SECTIONS.SEASONINGS },
         { ...PARMIGIANO_REGGIANO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.SEASONINGS },
-        
+
         { ...SHRIMP, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'thawed, shelled and deveined', section: SECTIONS.SHRIMP },
     ],
     appliances: [
-        { name: 'air fryer' },
+        AIR_FRYER,
     ],
     supplies: [
-        { name: 'mixing bowl' },
+        MIXING_BOWL,
     ],
     directions: [
         { step: `In a mixing bowl, combine all "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SHRIMP },

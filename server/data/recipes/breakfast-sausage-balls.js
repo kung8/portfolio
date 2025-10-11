@@ -2,7 +2,7 @@ const balls1 = '../assets/Products/breakfast-sausage-balls-1.jpeg';
 const balls2 = '../assets/Products/breakfast-sausage-balls-2.jpeg';
 const balls3 = '../assets/Products/breakfast-sausage-balls-3.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { CHEDDAR_CHEESE, MILK, KODIAK_CAKE_MIX, BREAKFAST_SAUSAGE } = require('./ingredients');
+const { MIXING_BOWL, BAKING_SHEET, CHEDDAR_CHEESE, MILK, KODIAK_CAKE_MIX, BREAKFAST_SAUSAGE, OVEN, PARCHMENT_PAPER } = require('./ingredients');
 
 const SAUSAGE_BALL_SECTION = 'Sausage Balls';
 const PREP_SAUSAGE_BALLS = 'Prep Sausage Balls';
@@ -36,19 +36,19 @@ module.exports = {
         { ...MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'or as needed', section: SAUSAGE_BALL_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'parchment paper' },
-        { name: 'mixing bowl' },
+        BAKING_SHEET,
+        PARCHMENT_PAPER,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: PREP_SAUSAGE_BALLS },
         { step: 'Line a baking sheet with parchment paper.', section: PREP_SAUSAGE_BALLS },
         { step: 'In a mixing bowl, combine together all the ingredients besides the milk.', section: PREP_SAUSAGE_BALLS },
         { step: 'Add milk 1/4 cup at a time. Mix until incorporated and everything is sticking together.', section: PREP_SAUSAGE_BALLS },
-        { step: 'Form 3-inch balls.', section: PREP_SAUSAGE_BALLS },
+        { step: 'Form 3 inch balls.', section: PREP_SAUSAGE_BALLS },
         { step: 'Place each ball one inch apart on the baking sheet.', section: BAKE_SAUSAGE_BALLS, img: balls1 },
         { step: 'Bake until the bottoms are browned and cooked through (about 24 to 27 minutes).', section: BAKE_SAUSAGE_BALLS, img: balls2 },
         { step: 'Enjoy these sausage balls warm!', section: SECTIONS.SERVE },

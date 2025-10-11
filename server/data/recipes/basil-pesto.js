@@ -19,7 +19,9 @@ const {
     BASIL_LEAF,
     OLIVE_OIL,
     PARMESAN_CHEESE,
-    SPAGHETTI_NOODLES
+    SPAGHETTI_NOODLES,
+    BLENDER,
+    STOVE
 } = require('./ingredients');
 
 module.exports = {
@@ -54,10 +56,8 @@ module.exports = {
         { ...SPAGHETTI_NOODLES, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'cooked', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
-    ],
-    supplies: [
-        { name: 'blender' },
+        STOVE,
+        BLENDER,
     ],
     directions: [
         { step: 'In a blender, combine pine nuts, lemon juice, garlic, sea salt, and black pepper until blended.', section: SECTIONS.SAUCE, img: [pine, pineBlended] },

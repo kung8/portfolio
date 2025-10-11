@@ -9,7 +9,7 @@ const ragu8 = '../assets/Products/beef-ragu-8.jpeg';
 const ragu9 = '../assets/Products/beef-ragu-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BEEF_CHUCK_ROAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CARROT, CELERY, CRUSHED_TOMATOES, TOMATO_PASTE, BEEF_BROTH, RED_WINE, THYME, BAY_LEAF, YELLOW_ONION, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY, WATER } = require('./ingredients');
+const { BEEF_CHUCK_ROAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CARROT, CELERY, CRUSHED_TOMATOES, TOMATO_PASTE, BEEF_BROTH, RED_WINE, THYME, BAY_LEAF, YELLOW_ONION, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY, WATER, PAPER_TOWELS, LARGE_POT, TONGS, CUTTING_BOARD, FORK, STOVE } = require('./ingredients');
 
 const RAGU_SECTION = 'Ragu';
 const COOK_RAGU = 'Cook Ragu';
@@ -58,14 +58,14 @@ module.exports = {
         { ...PARSLEY, amount: '', unit: '', additionalDetails: 'finely chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'paper towels' },
-        { name: 'large pot' },
-        { name: 'tongs' },
-        { name: 'cutting board' },
-        { name: 'forks' },
+        PAPER_TOWELS,
+        LARGE_POT,
+        TONGS,
+        CUTTING_BOARD,
+        FORK
     ],
     directions: [
         { step: 'Pat beef dry with paper towels and season salt and pepper.', section: SECTIONS.COOK_BEEF },

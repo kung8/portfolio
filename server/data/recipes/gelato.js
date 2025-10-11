@@ -1,6 +1,6 @@
 // const example1 = '../assets/Products/example-1.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { WHOLE_MILK, EGG_YOLK, WHITE_SUGAR, VANILLA_BEAN } = require('./ingredients');
+const { WHOLE_MILK, EGG_YOLK, WHITE_SUGAR, VANILLA_BEAN, STOVE, STAND_MIXER, SAUCEPAN, WOODEN_SPOON } = require('./ingredients');
 
 const GELATO_SECTION = 'Gelato';
 const FREEZING = 'Freezing';
@@ -32,13 +32,13 @@ module.exports = {
         { ...VANILLA_BEAN, amount: 1, unit: '', additionalDetails: 'split lengthwise', section: GELATO_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'stand mixer' },
+        STOVE,
+        STAND_MIXER,
         { name: 'ice cream maker' },
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'wooden spoon' },
+        SAUCEPAN,
+        WOODEN_SPOON,
     ],
     directions: [
         { step: 'Over medium heat, warm milk in a saucepan. Once it starts to bubble around the edges, remove the saucepan from heat.', section: GELATO_SECTION },

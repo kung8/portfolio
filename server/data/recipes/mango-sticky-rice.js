@@ -7,8 +7,8 @@ const mango6 = '../assets/Products/mango-sticky-rice-6.jpeg';
 const mango7 = '../assets/Products/mango-sticky-rice-7.jpeg';
 const mango8 = '../assets/Products/mango-sticky-rice-8.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { COCONUT_MILK, SALT, MANGO, SWEET_RICE, BROWN_SUGAR } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, COCONUT_MILK, SALT, MANGO, SWEET_RICE, BROWN_SUGAR, STOVE, MEDIUM_BOWL, CHEESECLOTH, LARGE_POT, SAUCEPAN, STEAMER } = require('./ingredients');
 
 const MAKE_STICKY_RICE = 'Make Sticky Rice';
 
@@ -36,18 +36,18 @@ module.exports = {
         { ...COCONUT_MILK, amount: 13.5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...BROWN_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...MANGO, amount: 2, unit: '', additionalDetails: 'peeled and 1/2-inch sliced', section: SECTIONS.SERVE },
+        { ...MANGO, amount: 2, unit: '', additionalDetails: 'peeled and 1/2 inch sliced', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'steamer basket' },
-        { name: 'cheesecloth' },
-        { name: 'pot' },
-        { name: 'saucepan' },
-        { name: 'mixing bowl' },
+        MEDIUM_BOWL,
+        STEAMER,
+        CHEESECLOTH,
+        LARGE_POT,
+        SAUCEPAN,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'In a medium bowl, add rice.', section: SECTIONS.PREP_RICE },

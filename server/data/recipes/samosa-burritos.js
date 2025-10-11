@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { TORTILLA, CAULIFLOWER, POTATO, RED_ONION, JALAPENO_PEPPER, GARLIC, CUMIN, CORIANDER, GARAM_MASALA, FENNEL_SEEDS, TURMERIC, LEMON_JUICE, FROZEN_PEAS, SEA_SALT, BLACK_PEPPER, GINGER_PUREE, VEGETABLE_BROTH, GINGER, GREEK_YOGURT, MINT_LEAF, CILANTRO, MAPLE_SYRUP, LIME_JUICE } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { BAKING_SHEET, TORTILLA, CAULIFLOWER, POTATO, RED_ONION, JALAPENO_PEPPER, GARLIC, CUMIN, CORIANDER, GARAM_MASALA, FENNEL_SEEDS, TURMERIC, LEMON_JUICE, FROZEN_PEAS, SEA_SALT, BLACK_PEPPER, GINGER_PUREE, VEGETABLE_BROTH, GINGER, GREEK_YOGURT, MINT_LEAF, CILANTRO, MAPLE_SYRUP, LIME_JUICE, OVEN, STOVE, BLENDER, BAKING_PAN, ALUMINUM_FOIL, LARGE_POT, LARGE_PAN, PARCHMENT_PAPER, KITCHEN_TOWEL } = require('./ingredients');
 
 const TORTILLA_SECTION = 'Tortilla';
 const PEAS_SECTION = 'Peas';
@@ -59,18 +59,18 @@ module.exports = {
         { ...SEA_SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
-        { name: 'blender' },
+        OVEN,
+        STOVE,
+        BLENDER,
     ],
     supplies: [
-        { name: 'damp kitchen towel' },
-        { name: 'baking dish' },
-        { name: 'aluminum foil' },
-        { name: 'large pot' },
-        { name: 'large pan' },
-        { name: 'baking sheet' },
-        { name: 'parchment paper' },
+        { ...KITCHEN_TOWEL, additionalDetails: 'damp' },
+        BAKING_PAN,
+        ALUMINUM_FOIL,
+        LARGE_POT,
+        LARGE_PAN,
+        BAKING_SHEET,
+        PARCHMENT_PAPER,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: PREP_TORTILLA },

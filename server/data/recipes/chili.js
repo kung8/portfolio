@@ -30,6 +30,9 @@ const {
     CHEDDAR_CHEESE,
     GREEN_ONION,
     SALTINES,
+    STOVE,
+    LARGE_POT,
+    SPATULA,
 } = require('./ingredients');
 
 const BEEF = 'Beef';
@@ -75,11 +78,11 @@ module.exports = {
         { ...SALTINES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'spatula' },
+        LARGE_POT,
+        SPATULA,
     ],
     directions: [
         { step: 'In a large pot over medium-high heat, combine beef, chili powder, onion, jalapeno, and garlic.', section: BEEF, img: [beef, fragrant, fragrantPot] },

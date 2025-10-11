@@ -5,7 +5,7 @@ const ramen4 = '../assets/Products/ground-beef-ramen-4.jpeg';
 const ramen5 = '../assets/Products/ground-beef-ramen-5.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
-const { GROUND_BEEF, INSTANT_RAMEN, FROZEN_PEAS, FROZEN_CARROTS, LIGHT_SOY_SAUCE, HOISIN_SAUCE, GARLIC, VEGETABLE_OIL, GREEN_ONION, RED_PEPPER_FLAKES } = require('./ingredients');
+const { GROUND_BEEF, INSTANT_RAMEN, FROZEN_PEAS, FROZEN_CARROTS, LIGHT_SOY_SAUCE, HOISIN_SAUCE, GARLIC, VEGETABLE_OIL, GREEN_ONION, RED_PEPPER_FLAKES, STOVE, LARGE_PAN, LARGE_POT } = require('./ingredients');
 
 const BEEF_AND_GARLIC_SECTION = 'Beef and Garlic';
 const FROZEN_SECTION = 'Frozen';
@@ -47,11 +47,11 @@ module.exports = {
         { ...GREEN_ONION, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pan' },
-        { name: 'pot' },
+        LARGE_PAN,
+        LARGE_POT,
     ],
     directions: [
         { step: 'Over medium heat, heat oil in a large pan.', section: SAUTE_ADDITIONS },

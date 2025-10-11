@@ -6,8 +6,9 @@ const rack = '../assets/Products/mexican-cilantro-lime-chicken-raw-on-baking-rac
 const set1 = '../assets/Products/mexican-cilantro-lime-chicken-plated-set-1.jpeg';
 const set2 = '../assets/Products/mexican-cilantro-lime-chicken-plated-set-2.jpeg';
 
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    BAKING_SHEET,
     CHICKEN_WINGS,
     CILANTRO,
     LIME,
@@ -17,6 +18,11 @@ const {
     SALT,
     BLACK_PEPPER,
     CAYENNE_PEPPER,
+    ZIPLOC_BAG,
+    COOLING_RACK,
+    TONGS,
+    BLENDER,
+    OVEN,
 } = require('./ingredients');
 
 module.exports = {
@@ -52,14 +58,14 @@ module.exports = {
         { ...CAYENNE_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRESSING },
     ],
     appliances: [
-        { name: 'blender' },
-        { name: 'oven' },
+        BLENDER,
+        OVEN,
     ],
     supplies: [
-        { name: 'ziploc' },
-        { name: 'wire rack' },
-        { name: 'baking sheet' },
-        { name: 'tongs' },
+        { ...ZIPLOC_BAG, additionalDetails: 'gallon-size' },
+        COOLING_RACK,
+        BAKING_SHEET,
+        TONGS,
     ],
     directions: [
         { step: 'Combine all the dressing ingredients in a blender.', section: SECTIONS.DRESSING, img: [cilantro1, dressing] },

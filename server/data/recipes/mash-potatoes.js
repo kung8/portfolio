@@ -6,7 +6,7 @@ const potatoes5 = '../assets/Products/mash-potatoes-5.jpeg';
 const potatoes6 = '../assets/Products/mash-potatoes-6.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { YUKON_GOLD_POTATO, UNSALTED_BUTTER, MILK, SALT, BLACK_PEPPER, SOUR_CREAM } = require('./ingredients');
+const { YUKON_GOLD_POTATO, UNSALTED_BUTTER, MILK, SALT, BLACK_PEPPER, SOUR_CREAM, STOVE, LARGE_POT, COLANDER, MASHER } = require('./ingredients');
 
 const POTATOES_SECTION = 'Potatoes';
 const LIQUIDS_SECTION = 'Liquids';
@@ -42,12 +42,12 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'colander' },
-        { name: 'masher' },
+        LARGE_POT,
+        COLANDER,
+        MASHER,
     ],
     directions: [
         { step: 'Over high heat, bring a large pot of water to a boil.', section: BOIL_POTATOES, },

@@ -35,6 +35,13 @@ const {
     PEANUT_BUTTER,
     UNSALTED_PEANUT,
     BEAN_SPROUT,
+    STOVE,
+    FRYING_PAN,
+    STRAINER,
+    MEDIUM_BOWL,
+    SPATULA,
+    MEASURING_SPOONS,
+    MIXING_BOWL,
 } = require('./ingredients');
 
 const CHICKEN_AND_VEGGIES_SECTION = 'Chicken and Veggies';
@@ -82,15 +89,15 @@ module.exports = {
         { ...CILANTRO, amount: 1, unit: INGREDIENT_UNITS.BUNCH, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'frying pan' },
-        { name: 'large mixing bowl' },
-        { name: 'strainer' },
-        { name: 'medium bowl' },
-        { name: 'spatula' },
-        { name: 'measuring spoons' },
+        FRYING_PAN,
+        MIXING_BOWL,
+        STRAINER,
+        MEDIUM_BOWL,
+        SPATULA,
+        MEASURING_SPOONS,
     ],
     directions: [
         { step: 'Over medium-high heat, melt butter in a wok.', section: COOK_CHICKEN_AND_VEGGIES, img: butter },

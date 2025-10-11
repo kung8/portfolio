@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { VEGETABLE_OIL, GARLIC, GROUND_PORK, CARROT, CABBAGE, CORNSTARCH, OYSTER_SAUCE, LIGHT_SOY_SAUCE, SPRING_ROLL_WRAPPER, WATER, APPLE_CIDER_VINEGAR, BROWN_SUGAR, KETCHUP } = require('./ingredients');
+const { BAKING_SHEET, VEGETABLE_OIL, GARLIC, GROUND_PORK, CARROT, CABBAGE, CORNSTARCH, OYSTER_SAUCE, LIGHT_SOY_SAUCE, SPRING_ROLL_WRAPPER, WATER, APPLE_CIDER_VINEGAR, BROWN_SUGAR, KETCHUP, STOVE, WOK, COOLING_RACK, PAPER_TOWELS, SAUCEPAN } = require('./ingredients');
 
 const SWEET_AND_SOUR_SAUCE_SECTION = 'Sweet and Sour Sauce';
 
@@ -48,14 +48,14 @@ module.exports = {
         { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'wok' },
-        { name: 'baking sheet' },
-        { name: 'wire rack' },
-        { name: 'paper towels' },
-        { name: 'saucepan' },
+        WOK,
+        BAKING_SHEET,
+        COOLING_RACK,
+        PAPER_TOWELS,
+        SAUCEPAN,
     ],
     directions: [
         { step: 'Over high heat, heat oil in a wok.', section: SECTIONS.COOK_FILLING },

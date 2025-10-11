@@ -9,6 +9,7 @@ const plated = '../assets/Products/blondie-plated.jpeg';
 const sugars = '../assets/Products/blondie-sugars.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT } = require('./constants');
 const {
+    MIXING_BOWL,
     UNSALTED_BUTTER,
     BROWN_SUGAR,
     WHITE_SUGAR,
@@ -20,6 +21,10 @@ const {
     BAKING_POWDER,
     SALT,
     SEMI_SWEET_CHOCOLATE_CHIPS,
+    SPATULA,
+    BAKING_PAN,
+    MEDIUM_BOWL,
+    OVEN,
 } = require('./ingredients');
 
 module.exports = {
@@ -56,13 +61,13 @@ module.exports = {
         { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'spatula' },
-        { name: 'baking pan' },
-        { name: 'medium bowl' },
+        MIXING_BOWL,
+        SPATULA,
+        BAKING_PAN,
+        MEDIUM_BOWL,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },

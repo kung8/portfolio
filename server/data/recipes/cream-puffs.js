@@ -12,7 +12,7 @@ const sliced2 = '../assets/Products/cream-puffs-sliced-2.jpeg';
 const vanilla = '../assets/Products/cream-puffs-vanilla-pudding-mix.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { VANILLA_INSTANT_PUDDING_MIX, HEAVY_CREAM, MILK, UNSALTED_BUTTER, SALT, ALL_PURPOSE_FLOUR, EGG, WATER } = require('./ingredients');
+const { BAKING_SHEET, VANILLA_INSTANT_PUDDING_MIX, HEAVY_CREAM, MILK, UNSALTED_BUTTER, SALT, ALL_PURPOSE_FLOUR, EGG, WATER, STOVE, OVEN, LARGE_POT, MIXING_BOWL } = require('./ingredients');
 
 const PUFF = 'Puff';
 
@@ -47,13 +47,13 @@ module.exports = {
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: PUFF },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: '2 mixing bowls' },
-        { name: 'large pot' },
-        { name: 'baking sheet' },
+        { ...MIXING_BOWL, amount: 2 },
+        LARGE_POT,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'In a mixing bowl, combine together the filling ingredients.', section: SECTIONS.FILLING, img: [vanilla, filling3] },

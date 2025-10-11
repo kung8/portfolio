@@ -32,6 +32,14 @@ const {
     COOKING_SPRAY,
     GRAHAM_CRACKER,
     WATER,
+    OVEN,
+    STAND_MIXER,
+    SPRINGFORM_PAN,
+    ROASTING_PAN,
+    ALUMINUM_FOIL,
+    REFRIGERATOR,
+    SAUCEPAN,
+    PLASTIC_WRAP,
 } = require('./ingredients');
 
 module.exports = {
@@ -73,16 +81,16 @@ module.exports = {
         { ...LEMON, amount: 1, unit: '', additionalDetails: 'juiced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
+        STAND_MIXER,
+        REFRIGERATOR,
     ],
     supplies: [
-        { name: 'stand mixer and bowl' },
-        { name: 'cake spring form pan' },
-        { name: 'roasting pan' },
-        { name: 'aluminum foil' },
-        { name: 'refrigerator' },
-        { name: 'sauce pan' },
-        { name: 'plastic wrap' },
+        SPRINGFORM_PAN,
+        ROASTING_PAN,
+        ALUMINUM_FOIL,
+        SAUCEPAN,
+        PLASTIC_WRAP,
     ],
     directions: [
         { step: 'Grease cake pan with cooking spray.', section: SECTIONS.CRUST, img: rawIngredients },

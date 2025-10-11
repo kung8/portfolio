@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { OLIVE_OIL, SHRIMP, SALT, GARLIC, RED_PEPPER_FLAKES, LEMON_JUICE, UNSALTED_BUTTER, PARSLEY, WATER } = require('./ingredients');
+const { OLIVE_OIL, SHRIMP, SALT, GARLIC, RED_PEPPER_FLAKES, LEMON_JUICE, UNSALTED_BUTTER, PARSLEY, WATER, STOVE, OVEN, WOK, SLOTTED_SPOON } = require('./ingredients');
 
 const COOK_SHRIMP = 'Cook shrimp';
 
@@ -38,12 +38,12 @@ module.exports = {
         { ...WATER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'as needed', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'wok' },
-        { name: 'slotted spoon' },
+        WOK,
+        SLOTTED_SPOON,
     ],
     directions: [
         { step: 'Over high heat, heat oil in a wok until it begins to smoke.', section: COOK_SHRIMP },

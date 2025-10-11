@@ -2,7 +2,7 @@ const curry1 = '../assets/Products/chicken-curry-1.jpeg';
 const curry2 = '../assets/Products/chicken-curry-2.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, CURRY_POWDER, SALT, YELLOW_ONION, GARLIC, GINGER, COCONUT_MILK, GREEN_BELL_PEPPER, RED_BELL_PEPPER, YUKON_GOLD_POTATO, BAY_LEAF, THAI_CHILI_PEPPER } = require('./ingredients');
+const { MIXING_BOWL, BONELESS_AND_SKINLESS_CHICKEN_THIGH, CURRY_POWDER, SALT, YELLOW_ONION, GARLIC, GINGER, COCONUT_MILK, GREEN_BELL_PEPPER, RED_BELL_PEPPER, YUKON_GOLD_POTATO, BAY_LEAF, THAI_CHILI_PEPPER, WOK, STOVE } = require('./ingredients');
 
 const POTATO_SECTION = 'Potato';
 
@@ -25,7 +25,7 @@ module.exports = {
     waitTime: { amount: 8, unit: TIME_UNITS.HOUR },
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2-inch pieces', section: SECTIONS.MARINADE },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2 inch pieces', section: SECTIONS.MARINADE },
         { ...CURRY_POWDER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...THAI_CHILI_PEPPER, amount: 1, unit: '', additionalDetails: 'to taste', section: SECTIONS.MARINADE },
         { ...BAY_LEAF, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MARINADE },
@@ -35,18 +35,18 @@ module.exports = {
         { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
 
         { ...YUKON_GOLD_POTATO, amount: 1, unit: '', additionalDetails: 'peeled and cut into bite size', section: POTATO_SECTION },
-        
+
         { ...COCONUT_MILK, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.CURRY },
 
         { ...GREEN_BELL_PEPPER, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.VEGGIES },
         { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.VEGGIES },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'wok' },
+        MIXING_BOWL,
+        WOK,
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.PREP_MARINADE },

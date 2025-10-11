@@ -16,6 +16,8 @@ const {
     SALT,
     BLACK_PEPPER,
     WATER,
+    STOVE,
+    WOK,
 } = require('./ingredients');
 
 module.exports = {
@@ -46,10 +48,10 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'wok' },
+        WOK,
     ],
     directions: [
         { step: 'Heat a wok over medium-high heat.', section: SECTIONS.MAIN },

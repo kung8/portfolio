@@ -25,6 +25,11 @@ const {
     BROCCOLI,
     GARLIC,
     WATER,
+    STOVE,
+    MEDIUM_BOWL,
+    LARGE_POT,
+    LARGE_BOWL,
+    WOK,
 } = require('./ingredients');
 
 const BEEF = 'Beef';
@@ -71,13 +76,13 @@ module.exports = {
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'wok' },
-        { name: 'large pot' },
-        { name: 'large bowl' },
+        MEDIUM_BOWL,
+        WOK,
+        LARGE_POT,
+        LARGE_BOWL,
     ],
     directions: [
         { step: 'Combine beef, salt, sugar, pepper, shaoxing wine, light soy sauce, and cornstarch in a large bowl. Mix with hands until beef is well-coated. Let it marinate for at least 30 minutes.', section: BEEF, img: marinated },

@@ -10,7 +10,7 @@ const rice9 = '../assets/Products/chinese-fried-rice-9.jpeg';
 const rice10 = '../assets/Products/chinese-fried-rice-10.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
-const { JASMINE_RICE, GREEN_ONION, CARROT, FROZEN_CORN, FROZEN_PEAS, EGG, SALT, VEGETABLE_OIL, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, WHITE_SUGAR, CHICKEN_BOUILLON, CHINESE_SAUSAGE, WATER } = require('./ingredients');
+const { JASMINE_RICE, GREEN_ONION, CARROT, FROZEN_CORN, FROZEN_PEAS, EGG, SALT, VEGETABLE_OIL, LIGHT_SOY_SAUCE, DARK_SOY_SAUCE, WHITE_SUGAR, CHICKEN_BOUILLON, CHINESE_SAUSAGE, WATER, RICE_COOKER, STOVE, MEDIUM_BOWL, SMALL_BOWL, SPATULA, CHOPSTICKS, WOK } = require('./ingredients');
 
 const FRIED_RICE_SECTION = 'Fried Rice';
 const FLUFF_RICE = 'Fluff Rice';
@@ -59,15 +59,15 @@ module.exports = {
         { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FRIED_RICE_SECTION },
     ],
     appliances: [
-        { name: 'rice cooker' },
-        { name: 'stove' },
+        RICE_COOKER,
+        STOVE,
     ],
     supplies: [
-        { name: '2 medium bowls' },
-        { name: 'small bowl' },
-        { name: 'chopsticks' },
-        { name: 'wok' },
-        { name: 'spatula' },
+        {...MEDIUM_BOWL, amount: 2 },
+        SMALL_BOWL,
+        CHOPSTICKS,
+        WOK,
+        SPATULA,
     ],
     directions: [
         { step: 'Wash and cook the rice in a rice cooker.', section: SECTIONS.COOK_RICE },

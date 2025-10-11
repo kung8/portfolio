@@ -6,8 +6,8 @@ const mochi6 = '../assets/Products/mochi-6.jpeg';
 const mochi8 = '../assets/Products/mochi-8.jpeg';
 const mochi9 = '../assets/Products/mochi-9.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { WHITE_SUGAR, COCONUT_MILK, POTATO_STARCH, MOCHIKO, FOOD_COLORING, WATER } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, WHITE_SUGAR, COCONUT_MILK, POTATO_STARCH, MOCHIKO, FOOD_COLORING, WATER, BAKING_PAN, ALUMINUM_FOIL, KNIFE, OVEN } = require('./ingredients');
 
 const MOCHI = 'Mochi';
 const DUSTING = 'Dusting';
@@ -40,13 +40,13 @@ module.exports = {
         { ...POTATO_STARCH, amount: '', unit: '', additionalDetails: 'for dusting', section: DUSTING },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'glass baking pan' },
-        { name: 'aluminum foil' },
-        { name: 'knife' },
+        MIXING_BOWL,
+        BAKING_PAN,
+        ALUMINUM_FOIL, 
+        KNIFE,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: MOCHI },

@@ -8,7 +8,7 @@ const shakingBeef7 = '../assets/Products/shaking-beef-7.jpeg';
 const shakingBeef8 = '../assets/Products/shaking-beef-8.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BEEF_RIBEYE_STEAK, GARLIC, BROWN_SUGAR, LIGHT_SOY_SAUCE, FISH_SAUCE, BLACK_PEPPER, WHITE_SUGAR, WHITE_VINEGAR, WATER, RED_ONION, ROMA_TOMATO, WHITE_RICE, VEGETABLE_OIL, OYSTER_SAUCE, BABY_ARUGULA } = require('./ingredients');
+const { MIXING_BOWL, BEEF_RIBEYE_STEAK, GARLIC, BROWN_SUGAR, LIGHT_SOY_SAUCE, FISH_SAUCE, BLACK_PEPPER, WHITE_SUGAR, WHITE_VINEGAR, WATER, RED_ONION, ROMA_TOMATO, WHITE_RICE, VEGETABLE_OIL, OYSTER_SAUCE, BABY_ARUGULA, STOVE, SMALL_BOWL, WOK, SERVING_PLATE } = require('./ingredients');
 
 const RED_ONION_SAUCE = 'Red Onion Sauce';
 const OIL_SECTION = 'Oil for Cooking';
@@ -60,13 +60,13 @@ module.exports = {
         { ...WHITE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'small bowl' },
-        { name: 'serving plate' },
-        { name: 'wok' },
+        MIXING_BOWL,
+        SMALL_BOWL,
+        SERVING_PLATE,
+        WOK,
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.MARINATE_BEEF },

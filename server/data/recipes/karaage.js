@@ -6,8 +6,8 @@ const karaage5 = '../assets/Products/karaage-5.jpeg';
 const karaage6 = '../assets/Products/karaage-6.jpeg';
 const karaage7 = '../assets/Products/karaage-7.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, SALT, BLACK_PEPPER, GINGER, GARLIC, LIGHT_SOY_SAUCE, VEGETABLE_OIL, POTATO_STARCH, ALL_PURPOSE_FLOUR, LEMON, KEWPIE_MAYONNAISE, MIRIN, EGG, WATER } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { BAKING_SHEET, BONELESS_AND_SKINLESS_CHICKEN_THIGH, SALT, BLACK_PEPPER, GINGER, GARLIC, LIGHT_SOY_SAUCE, VEGETABLE_OIL, POTATO_STARCH, ALL_PURPOSE_FLOUR, LEMON, KEWPIE_MAYONNAISE, MIRIN, EGG, WATER, STOVE, MIXING_BOWL, PAPER_TOWELS, LARGE_POT, COOKING_THERMOMETER, COOLING_RACK } = require('./ingredients');
 
 const ZAKU_ZAKU_BREADCRUMBS = 'Zaku Zaku Breadcrumbs';
 
@@ -38,7 +38,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2-inch pieces against the grain', section: SECTIONS.CHICKEN },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2 inch pieces against the grain', section: SECTIONS.CHICKEN },
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...LIGHT_SOY_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...MIRIN, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
@@ -56,15 +56,15 @@ module.exports = {
         { ...KEWPIE_MAYONNAISE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: '2 mixing bowls' },
-        { name: 'wire cooling rack' },
-        { name: 'baking sheet' },
-        { name: 'paper towels' },
-        { name: 'pot' },
-        { name: 'cooking thermometer' },
+        { ...MIXING_BOWL, amount: 2 },
+        COOLING_RACK,
+        BAKING_SHEET,
+        PAPER_TOWELS,
+        LARGE_POT,
+        COOKING_THERMOMETER,
     ],
     directions: [
         { step: `In a mixing bowl, combine the chicken pieces and the "${SECTIONS.MARINADE}" section ingredients. It should be wet.`, section: SECTIONS.MARINATE_CHICKEN, img: [karaage1, karaage2] },

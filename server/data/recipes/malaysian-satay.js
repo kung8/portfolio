@@ -4,6 +4,7 @@ const satay3 = '../assets/Products/malaysian-satay-3.jpeg';
 
 const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    BAKING_SHEET,
     CHICKEN_THIGH,
     SALT,
     GARLIC,
@@ -20,6 +21,12 @@ const {
     LIME_JUICE,
     ASIAN_CHILI_GARLIC_SAUCE,
     WATER,
+    BLENDER,
+    OVEN,
+    ZIPLOC_BAG,
+    BAMBOO_SKEWERS,
+    ALUMINUM_FOIL,
+    SMALL_BOWL,
 } = require('./ingredients');
 
 const BAKE_PREP_SECTION = 'Bake Prep';
@@ -45,7 +52,7 @@ module.exports = {
         { label: 'Chicken Satay', link: 'https://damndelicious.net/2019/06/07/chicken-satay-with-peanut-sauce/' }
     ],
     ingredients: [
-        { ...CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1-inch pieces', section: SECTIONS.MARINADE },
+        { ...CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1 inch pieces', section: SECTIONS.MARINADE },
         { ...COCONUT_MILK, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...CURRY_POWDER, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },
@@ -68,15 +75,15 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: BAKE_PREP_SECTION },
     ],
     appliances: [
-        { name: 'blender' },
-        { name: 'oven' },
+        BLENDER,
+        OVEN,
     ],
     supplies: [
-        { name: 'ziploc bag' },
-        { name: 'bamboo skewer' },
-        { name: 'baking sheet' },
-        { name: 'aluminum foil' },
-        { name: 'small bowl' },
+        { ...ZIPLOC_BAG, additionalDetails: 'gallon-size' },
+        BAMBOO_SKEWERS,
+        BAKING_SHEET,
+        ALUMINUM_FOIL,
+        SMALL_BOWL,
     ],
     directions: [
         { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients except the chicken. Mix.`, section: SECTIONS.MARINATE_CHICKEN },

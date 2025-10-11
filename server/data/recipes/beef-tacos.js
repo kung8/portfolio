@@ -5,7 +5,7 @@ const tacos4 = '../assets/Products/beef-tacos-4.jpeg';
 const tacos5 = '../assets/Products/beef-tacos-5.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { OLIVE_OIL, GROUND_BEEF, CHILI_POWDER, CUMIN, OREGANO, GARLIC_POWDER, SALT, BLACK_PEPPER, TOMATO_PASTE, FLOUR_TORTILLA, LETTUCE, MEXICAN_BLEND_CHEESE, ROMA_TOMATO, RED_ONION, WATER } = require('./ingredients');
+const { OLIVE_OIL, GROUND_BEEF, CHILI_POWDER, CUMIN, OREGANO, GARLIC_POWDER, SALT, BLACK_PEPPER, TOMATO_PASTE, FLOUR_TORTILLA, LETTUCE, MEXICAN_BLEND_CHEESE, ROMA_TOMATO, RED_ONION, WATER, FRYING_PAN, PLATE, MICROWAVE, STOVE } = require('./ingredients');
 
 const TACO_SHELLS = 'Taco Shells';
 
@@ -47,12 +47,12 @@ module.exports = {
         { ...RED_ONION, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'microwave' },
+        STOVE,  
+        MICROWAVE,
     ],
     supplies: [
-        { name: 'frying pan' },
-        { name: 'plate' },
+        FRYING_PAN,
+        PLATE,
     ],
     directions: [
         { step: 'Over medium-high heat, heat oil in a frying pan.', section: SECTIONS.PREP_FILLING },

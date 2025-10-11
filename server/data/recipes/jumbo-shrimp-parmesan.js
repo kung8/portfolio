@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { SHRIMP, OLIVE_OIL, GARLIC, SALT, BLACK_PEPPER, BREADCRUMBS, PARMESAN_CHEESE, UNSALTED_BUTTER, LEMON } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, BAKING_SHEET, SHRIMP, OLIVE_OIL, GARLIC, SALT, BLACK_PEPPER, BREADCRUMBS, PARMESAN_CHEESE, UNSALTED_BUTTER, LEMON, OVEN, ALUMINUM_FOIL, SMALL_BOWL } = require('./ingredients');
 
 const DREDGING_STATION = 'Dredging Station';
 const BAKING_SECTION = 'Baking';
@@ -40,13 +40,13 @@ module.exports = {
         { ...LEMON, amount: 1, unit: '', additionalDetails: 'wedged', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'baking sheet' },
-        { name: 'aluminum foil' },
-        { name: 'shallow bowl' },
+        MIXING_BOWL,
+        BAKING_SHEET,
+        ALUMINUM_FOIL,
+        SMALL_BOWL,
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.MARINADE}" section ingredients (all except the shrimp).`, section: SECTIONS.MARINATE_SHRIMP },
@@ -54,7 +54,7 @@ module.exports = {
         { step: 'Refrigerate for 1 hour.', section: SECTIONS.MARINATE_SHRIMP },
         { step: 'Preheat the oven to 475ºF.', section: SECTIONS.COOK_SHRIMP },
         { step: 'Line a baking sheet with aluminum foil.', section: SECTIONS.COOK_SHRIMP },
-        { step: 'In a shallow bowl, combine breadcrumbs and cheese.', section: SECTIONS.COOK_SHRIMP },
+        { step: `In a small bowl, combine "${DREDGING_STATION}" section ingredients.`, section: SECTIONS.COOK_SHRIMP },
         { step: 'Coat the shrimp in the breadcrumb mixture.', section: SECTIONS.COOK_SHRIMP },
         { step: 'Place the shrimp on a baking sheet in a single layer.', section: SECTIONS.COOK_SHRIMP },
         { step: 'Drizzle the melted butter over the shrimp.', section: SECTIONS.COOK_SHRIMP },

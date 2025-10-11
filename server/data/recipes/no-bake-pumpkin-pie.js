@@ -6,7 +6,7 @@ const pie5 = '../assets/Products/no-bake-pumpkin-pie-5.jpeg';
 const pie6 = '../assets/Products/no-bake-pumpkin-pie-6.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { WHITE_SUGAR, VANILLA_INSTANT_PUDDING_MIX, MILK, PUMPKIN_PUREE, CREAM_CHEESE, VANILLA_EXTRACT, WHIPPED_TOPPING, NINE_INCH_GRAHAM_CRACKER_PIE_CRUST, PUMPKIN_PIE_SPICE, SEMI_SWEET_CHOCOLATE_BAR } = require('./ingredients');
+const { WHITE_SUGAR, VANILLA_INSTANT_PUDDING_MIX, MILK, PUMPKIN_PUREE, CREAM_CHEESE, VANILLA_EXTRACT, WHIPPED_TOPPING, GRAHAM_CRACKER_PIE_CRUST, PUMPKIN_PIE_SPICE, SEMI_SWEET_CHOCOLATE_BAR } = require('./ingredients');
 
 const PUMPKIN_PUREE_FILLING_SECTION = 'Pumpkin Puree Filling';
 const CREAM_CHEESE_LAYER_SECTION = 'Cream Cheese Layer';
@@ -35,7 +35,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...NINE_INCH_GRAHAM_CRACKER_PIE_CRUST, amount: 1, unit: '', additionalDetails: '10 inch', section: '' },
+        { ...GRAHAM_CRACKER_PIE_CRUST, amount: 1, unit: '', additionalDetails: '10 inch', section: '' },
 
         { ...VANILLA_INSTANT_PUDDING_MIX, amount: 3.4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PUMPKIN_PUREE_FILLING_SECTION },
         { ...MILK, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUMPKIN_PUREE_FILLING_SECTION },

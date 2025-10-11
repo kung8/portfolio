@@ -6,7 +6,7 @@ const pie5 = '../assets/Products/biscoff-cookie-pie-5.jpeg';
 const pie6 = '../assets/Products/biscoff-cookie-pie-6.jpeg';
 const pie7 = '../assets/Products/biscoff-cookie-pie-7.jpeg'; // TODO: get a photo of the plated pie
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BISCOFF_COOKIES, UNSALTED_BUTTER, BISCOFF_BUTTER, WHIPPED_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, VANILLA_EXTRACT, WHITE_SUGAR, CREAM_CHEESE, SALT, COOKIE_BUTTER } = require('./ingredients');
+const { MIXING_BOWL, BISCOFF_COOKIES, UNSALTED_BUTTER, BISCOFF_BUTTER, WHIPPED_CREAM, SEMI_SWEET_CHOCOLATE_CHIPS, VANILLA_EXTRACT, WHITE_SUGAR, CREAM_CHEESE, SALT, COOKIE_BUTTER, REFRIGERATOR, STAND_MIXER, ZIPLOC_BAG, ROLLING_PIN, PIE_PAN } = require('./ingredients');
 
 const CHOCOLATE_GANACHE = 'Chocolate Ganache';
 const COOKIE_BUTTER_DRIZZLE = 'Cookie Butter Drizzle';
@@ -55,20 +55,20 @@ module.exports = {
         { ...BISCOFF_COOKIES, amount: '', unit: '', additionalDetails: 'crushed', optional: true, section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'refrigerator' },
-        { name: 'stand mixer' },
+        REFRIGERATOR,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: 'gallon-size ziploc bag' },
-        { name: 'rolling pin' },
-        { name: 'pie pan' },
-        { name: 'mixing bowl' },
+        { ...ZIPLOC_BAG, additionalDetails: 'gallon-size' },
+        ROLLING_PIN,
+        PIE_PAN,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Place Biscoff cookies in a gallon size ziploc bag.', section: SECTIONS.CRUST },
         { step: 'Crush the cookies with a rolling pin.', section: SECTIONS.CRUST },
         { step: 'Combine the cookie crumbs with melted butter and salt.', section: SECTIONS.CRUST, img: pie1 },
-        { step: 'Press the mixture into a 9-inch pie pan.', section: SECTIONS.CRUST, img: pie2 },
+        { step: 'Press the mixture into a 9 inch pie pan.', section: SECTIONS.CRUST, img: pie2 },
         { step: 'Bake the crust for 10 minutes at 375ºF optionally to make the pie crust crispy.', section: SECTIONS.CRUST },
         { step: 'Chill in the freezer.', section: SECTIONS.CRUST },
 

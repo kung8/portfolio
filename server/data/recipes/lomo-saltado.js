@@ -8,7 +8,7 @@ const saltado7 = '../assets/Products/lomo-saltado-7.jpeg';
 const saltado8 = '../assets/Products/lomo-saltado-8.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BEEF_SIRLOIN, LIGHT_SOY_SAUCE, GARLIC, OYSTER_SAUCE, RED_WINE_VINEGAR, AJI_AMARILLO_PASTE, CORNSTARCH, RED_ONION, ROMA_TOMATO, GREEN_ONION, VEGETABLE_OIL, CILANTRO, WHITE_RICE, FRENCH_FRIES } = require('./ingredients');
+const { MIXING_BOWL, BEEF_SIRLOIN, LIGHT_SOY_SAUCE, GARLIC, OYSTER_SAUCE, RED_WINE_VINEGAR, AJI_AMARILLO_PASTE, CORNSTARCH, RED_ONION, ROMA_TOMATO, GREEN_ONION, VEGETABLE_OIL, CILANTRO, WHITE_RICE, FRENCH_FRIES, STOVE, SMALL_BOWL, WOK } = require('./ingredients');
 
 module.exports = {
     cardName: 'Lomo Saltado',
@@ -52,12 +52,12 @@ module.exports = {
         { ...FRENCH_FRIES, amount: '', unit: '', additionalDetails: 'cooked', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'small bowl' },
-        { name: 'wok' },
+        MIXING_BOWL,
+        SMALL_BOWL,
+        WOK,
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.BEEF}" section ingredients.`, section: SECTIONS.MARINATE_BEEF, img: saltado1 },

@@ -3,6 +3,7 @@ const pan = '../assets/Products/brownies-pan.jpeg';
 const zoomed = '../assets/Products/brownies-zoomed.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
+    MIXING_BOWL,
     UNSALTED_BUTTER,
     WHITE_SUGAR,
     SALT,
@@ -10,6 +11,9 @@ const {
     EGG,
     ALL_PURPOSE_FLOUR,
     COCOA_POWDER,
+    OVEN,
+    BAKING_PAN,
+    SPATULA,
 } = require('./ingredients');
 
 module.exports = {
@@ -36,12 +40,12 @@ module.exports = {
         { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'baking pan' },
-        { name: 'spatula' },
+        MIXING_BOWL,
+        BAKING_PAN,
+        SPATULA,
     ],
     directions: [
         { step: 'Preheat oven to 350ºF.', section: SECTIONS.MAIN },

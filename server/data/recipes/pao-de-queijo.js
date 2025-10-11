@@ -12,6 +12,7 @@ const raw = '../assets/Products/pao-de-queijo-mixer.jpeg';
 const plated = '../assets/Products/pao-de-queijo-plated.jpeg';
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    BAKING_SHEET,
     TAPIOCA_STARCH,
     MILK,
     VEGETABLE_OIL,
@@ -20,6 +21,9 @@ const {
     EGG,
     SALT,
     WATER,
+    OVEN,
+    STAND_MIXER,
+    SPATULA,
 } = require('./ingredients');
 
 const STARCH_SECTION = 'Starch';
@@ -58,12 +62,12 @@ module.exports = {
         { ...MOZZARELLA_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: CHEESES_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stand mixer' },
+        OVEN,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: 'spatula' },
-        { name: 'baking sheet' },
+        SPATULA,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'Preheat the oven to 400ºF.', section: SECTIONS.PREP_DOUGH },

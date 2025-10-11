@@ -15,6 +15,9 @@ const {
     PARMESAN_CHEESE,
     ZUCCHINI,
     SUMMER_SQUASH,
+    FRYING_PAN,
+    SPATULA,
+    STOVE,
 } = require('./ingredients');
 
 module.exports = {
@@ -47,11 +50,11 @@ module.exports = {
         { ...PARMESAN_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'pan' },
-        { name: 'spatula' },
+        FRYING_PAN,
+        SPATULA,
     ],
     directions: [
         { step: 'Over medium-low heat, heat oil, onion, and butter in a pan. Cook until lightly browned (about 10 minutes).', section: SECTIONS.MAIN, img: [oil, onions] },

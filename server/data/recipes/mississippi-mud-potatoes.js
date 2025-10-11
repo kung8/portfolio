@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BACON, YUKON_GOLD_POTATO, CHEDDAR_CHEESE, GARLIC, DIJON_MUSTARD, SALT, BLACK_PEPPER, CHIVE, SOUR_CREAM } = require('./ingredients');
+const { BACON, YUKON_GOLD_POTATO, CHEDDAR_CHEESE, GARLIC, DIJON_MUSTARD, SALT, BLACK_PEPPER, CHIVE, SOUR_CREAM, OVEN, STOVE, FRYING_PAN, SLOTTED_SPOON, BAKING_PAN } = require('./ingredients');
 
 const COOK_BACON = 'Cook Bacon';
 
@@ -40,13 +40,13 @@ module.exports = {
         { ...CHIVE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
+        OVEN,
+        STOVE,
     ],
     supplies: [
-        { name: 'frying pan' },
-        { name: 'slotted spoon' },
-        { name: 'baking dish' },
+        FRYING_PAN,
+        SLOTTED_SPOON,
+        BAKING_PAN,
     ],
     directions: [
         { step: 'Preheat the oven to 400ºF.', section: SECTIONS.PREHEAT_OVEN },

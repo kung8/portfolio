@@ -13,7 +13,7 @@ const tacos12 = '../assets/Products/birria-tacos-12.jpeg';
 const tacos13 = '../assets/Products/birria-tacos-13.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT } = require('./constants');
-const { BEEF_CHUCK_ROAST, AVOCADO_OIL, SALT, BLACK_PEPPER, RED_ONION, GARLIC, BEEF_BROTH, TOMATO_PASTE, APPLE_CIDER_VINEGAR, CUMIN, OREGANO, CINNAMON_STICK, BAY_LEAF, SMOKED_PAPRIKA, GINGER, CORIANDER, GUAJILLO_CHILI_PEPPER, CHIPOTLE_PEPPERS_IN_ADOBO, FIRE_ROASTED_DICED_TOMATOES, FLOUR_TORTILLA, LIME, CILANTRO, WHITE_ONION, OAXACAN_CHEESE } = require('./ingredients');
+const { BEEF_CHUCK_ROAST, AVOCADO_OIL, SALT, BLACK_PEPPER, RED_ONION, GARLIC, BEEF_BROTH, TOMATO_PASTE, APPLE_CIDER_VINEGAR, CUMIN, OREGANO, CINNAMON_STICK, BAY_LEAF, SMOKED_PAPRIKA, GINGER, CORIANDER, GUAJILLO_CHILI_PEPPER, CHIPOTLE_PEPPERS_IN_ADOBO, FIRE_ROASTED_DICED_TOMATOES, FLOUR_TORTILLA, LIME, CILANTRO, WHITE_ONION, OAXACAN_CHEESE, SLOW_COOKER, BLENDER, STOVE, FRYING_PAN } = require('./ingredients');
 
 module.exports = {
     cardName: 'Crockpot Birria Tacos',
@@ -64,12 +64,12 @@ module.exports = {
         { ...OAXACAN_CHEESE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'crockpot' },
-        { name: 'blender/immersion blender' },
-        { name: 'stove' },
+        SLOW_COOKER,
+        BLENDER,
+        STOVE,
     ],
     supplies: [
-        { name: 'pan' },
+        FRYING_PAN,
     ],
     directions: [
         { step: 'Over high heat, add avocado oil to a pan.', section: SECTIONS.COOK_BEEF },

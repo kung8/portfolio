@@ -5,7 +5,7 @@ const schnitzel4 = '../assets/Products/german-schnitzel-4.jpeg';
 const schnitzel5 = '../assets/Products/german-schnitzel-5.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BONELESS_PORK_CHOPS, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, EGG, BREADCRUMBS, VEGETABLE_OIL, LEMON, PARSLEY } = require('./ingredients');
+const { BAKING_SHEET, BONELESS_PORK_CHOPS, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, EGG, BREADCRUMBS, VEGETABLE_OIL, LEMON, PARSLEY, STOVE, MEAT_MALLET, PLASTIC_WRAP, FRYING_PAN, PAPER_TOWELS, COOLING_RACK, SMALL_BOWL } = require('./ingredients');
 
 const PORK_CHOPS_SECTION = 'Pork Chops';
 const FLOUR_MIXTURE_SECTION = 'Flour Mixture';
@@ -50,16 +50,16 @@ module.exports = {
         { ...PARSLEY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'meat mallet' },
-        { name: 'plastic wrap' },
-        { name: 'pan' },
-        { name: '3 small bowls' },
-        { name: 'paper towels' },
-        { name: 'baking sheet' },
-        { name: 'wire rack' },
+        MEAT_MALLET,
+        PLASTIC_WRAP,
+        FRYING_PAN,
+        { ...SMALL_BOWL, amount: 3 },
+        PAPER_TOWELS,
+        BAKING_SHEET,
+        COOLING_RACK,
     ],
     directions: [
         { step: 'Place pork chops between two pieces of plastic wrap.', section: PREP_PORK_CHOPS },

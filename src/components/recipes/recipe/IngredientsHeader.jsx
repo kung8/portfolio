@@ -2,7 +2,7 @@ import { useRecipeContext } from './RecipeContext';
 import { formatIngredientItem, getIngredientData } from '../utils';
 
 export const IngredientsHeader = () => {
-    const { conversionRate, formattedIngredients, handleAddToGroceryListModalOpen, item, localIngredients, selectedIngredients, setSelectedIngredients } = useRecipeContext();
+    const { conversionRate, formattedIngredients, handleAddIngredientsToGroceryListModalOpen, item, localIngredients, selectedIngredients, setSelectedIngredients } = useRecipeContext();
     const separated = item.separated;
     return (
         <div className="recipe-ingredients-label-container">
@@ -39,8 +39,8 @@ export const IngredientsHeader = () => {
                         });
                         setSelectedIngredients(newSelectedIngredients);
 
-                        // Open Add to Grocery List Modal
-                        handleAddToGroceryListModalOpen();
+                        // Open Add Ingredients to Grocery List Modal
+                        handleAddIngredientsToGroceryListModalOpen();
                     }}
                 >
                     Add to List

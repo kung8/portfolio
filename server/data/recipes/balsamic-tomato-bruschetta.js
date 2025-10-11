@@ -5,7 +5,7 @@ const bruschetta4 = '../assets/Products/bruschetta-4.jpeg';
 const bruschetta5 = '../assets/Products/bruschetta-5.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { OLIVE_OIL, CHERRY_TOMATO, BASIL_LEAF, GARLIC, SHALLOT, BALSAMIC_VINEGAR, SALT, BLACK_PEPPER, BAGUETTE } = require('./ingredients');
+const { BAKING_SHEET, OLIVE_OIL, CHERRY_TOMATO, BASIL_LEAF, GARLIC, SHALLOT, BALSAMIC_VINEGAR, SALT, BLACK_PEPPER, BAGUETTE, MEDIUM_BOWL, OVEN } = require('./ingredients');
 
 const BAGUETTE_SECTION = 'Baguette';
 const BRUSCHETTA_SECTION = 'Bruschetta';
@@ -48,11 +48,11 @@ module.exports = {
         { ...BALSAMIC_VINEGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BRUSCHETTA_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'medium bowl' },
+        BAKING_SHEET,
+        MEDIUM_BOWL,
     ],
     directions: [
         { step: 'Preheat the oven to 375ºF.', section: BAKE_BAGUETTE },

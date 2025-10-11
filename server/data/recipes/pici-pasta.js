@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { BABY_SPINACH, ALL_PURPOSE_FLOUR, SALT } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { BABY_SPINACH, ALL_PURPOSE_FLOUR, SALT, FOOD_PROCESSOR, STOVE, LARGE_POT } = require('./ingredients');
 
 const COOK_DOUGH = 'Cook Dough';
 
@@ -30,11 +30,11 @@ module.exports = {
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'food processor' },
-        { name: 'stove' },
+        FOOD_PROCESSOR,
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
+        LARGE_POT,
     ],
     directions: [
         { step: 'Add all ingredients to a food processor.', section: SECTIONS.PREP_DOUGH },

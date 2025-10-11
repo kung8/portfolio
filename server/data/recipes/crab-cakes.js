@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { MAYONNAISE, EGG, DIJON_MUSTARD, WORCESTERSHIRE_SAUCE, HOT_SAUCE, CRAB, SALTINES, VEGETABLE_OIL, LEMON } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, MAYONNAISE, EGG, DIJON_MUSTARD, WORCESTERSHIRE_SAUCE, HOT_SAUCE, CRAB, SALTINES, VEGETABLE_OIL, LEMON, STOVE, MEDIUM_BOWL, LARGE_PAN } = require('./ingredients');
 
 const FRYING_SECTION = 'Frying';
 
@@ -41,12 +41,12 @@ module.exports = {
         { ...LEMON, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'mixing bowl' },
-        { name: 'large pan' },
+        MEDIUM_BOWL,
+        MIXING_BOWL,
+        LARGE_PAN,
     ],
     directions: [
         { step: `In a medium bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: MARINATE_CRAB },

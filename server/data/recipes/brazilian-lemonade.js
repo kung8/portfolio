@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require('./constants');
-const { LIME, WATER, WHITE_SUGAR, SWEETENED_CONDENSED_MILK, ICE } = require('./ingredients');
+const { LIME, WATER, WHITE_SUGAR, SWEETENED_CONDENSED_MILK, ICE, BLENDER, PITCHER } = require('./ingredients');
 
 const BLENDED_SECTION = 'Blended';
 const SWEETENER_SECTION = 'Sweetener';
@@ -37,10 +37,10 @@ module.exports = {
         { ...ICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'blender' },
+        BLENDER,
     ],
     supplies: [
-        { name: 'pitcher' },
+        PITCHER,
     ],
     directions: [
         { step: 'Wash limes thoroughly.', section: PREP_LIMES },

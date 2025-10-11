@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { WHITE_SUGAR, YEAST, EGG, EVAPORATED_MILK, VANILLA_EXTRACT, BREAD_FLOUR, SALT, UNSALTED_BUTTER, PEANUT_OIL, POWDERED_SUGAR, WATER } = require('./ingredients');
+const { BAKING_SHEET, MIXING_BOWL, WHITE_SUGAR, YEAST, EGG, EVAPORATED_MILK, VANILLA_EXTRACT, BREAD_FLOUR, SALT, UNSALTED_BUTTER, PEANUT_OIL, POWDERED_SUGAR, WATER, PLASTIC_WRAP, PAPER_TOWELS, COOKING_THERMOMETER, COOLING_RACK, SLOTTED_SPOON, STAND_MIXER, STOVE, TALL_NARROW_POT } = require('./ingredients');
 
 const YEAST_MIXTURE_SECTION = 'Yeast Mixture';
 const DOUGH_SECTION = 'Dough';
@@ -44,18 +44,18 @@ module.exports = {
         { ...POWDERED_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'stand mixer' },
+        STOVE,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'plastic wrap' },
-        { name: 'baking sheet' },
-        { name: 'paper towels' },
-        { name: 'narrow, deep pot' },
-        { name: 'cooking thermometer' },
-        { name: 'wire rack' },
-        { name: 'slotted spoon' },
+        MIXING_BOWL,
+        PLASTIC_WRAP,
+        BAKING_SHEET,
+        PAPER_TOWELS,
+        TALL_NARROW_POT,
+        COOKING_THERMOMETER,
+        COOLING_RACK,
+        SLOTTED_SPOON,
     ],
     directions: [
         { step: `In a mixing bowl, combine together the "${YEAST_MIXTURE_SECTION}" section ingredients.`, section: MAKE_YEAST_MIXTURE },

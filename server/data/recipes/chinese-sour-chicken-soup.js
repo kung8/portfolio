@@ -4,6 +4,12 @@ const {
     CHICKEN_THIGH,
     KNORR_TAMARIND_SOUP_BASE,
     LIME_JUICE,
+    STOVE,
+    LARGE_POT,
+    SMALL_BOWL,
+    SPATULA,
+    CUTTING_BOARD,
+    CLEAVER,
 } = require('./ingredients');
 
 module.exports = {
@@ -27,14 +33,14 @@ module.exports = {
         { ...LIME_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'cutting board' },
-        { name: 'cleaver' },
-        { name: 'large pot' },
-        { name: 'small bowl' },
-        { name: 'spatula' },
+        CUTTING_BOARD,
+        CLEAVER,
+        LARGE_POT,
+        SMALL_BOWL,
+        SPATULA,
     ],
     directions: [
         { step: 'Cut up chicken using cleaver knife into about 1" thick pieces.', section: SECTIONS.MAIN },

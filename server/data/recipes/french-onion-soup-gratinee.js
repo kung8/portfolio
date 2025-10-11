@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { UNSALTED_BUTTER, RED_ONION, SWEET_ONION, SALT, CHICKEN_BROTH, BEEF_BROTH, RED_WINE, WORCESTERSHIRE_SAUCE, PARSLEY, FRESH_THYME, BAY_LEAF, BALSAMIC_VINEGAR, BLACK_PEPPER, FRENCH_BREAD, GRUYERE_CHEESE, ASIAGO_CHEESE, PAPRIKA } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { BAKING_SHEET, UNSALTED_BUTTER, RED_ONION, SWEET_ONION, SALT, CHICKEN_BROTH, BEEF_BROTH, RED_WINE, WORCESTERSHIRE_SAUCE, PARSLEY, FRESH_THYME, BAY_LEAF, BALSAMIC_VINEGAR, BLACK_PEPPER, FRENCH_BREAD, GRUYERE_CHEESE, ASIAGO_CHEESE, PAPRIKA, STOVE, OVEN, LARGE_POT, TWINE } = require('./ingredients');
 
 const CARAMELIZED_ONIONS_SECTION = 'Caramelized Onions';
 const HERB_BUNDLE = 'Herb Bundle';
@@ -22,7 +22,6 @@ module.exports = {
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE, METHODS.SIMMER],
-    protein: [],
     type: [TYPES.SOUP, TYPES.BREAD],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
@@ -57,14 +56,13 @@ module.exports = {
         { ...PAPRIKA, amount: 4, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: BAKED_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'kitchen twine' },
-        { name: 'baking sheet' },
-        { name: '' },
+        LARGE_POT,
+        TWINE,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'Over medium-high heat, melt butter in a large pot.', section: CARAMELIZE_ONIONS },

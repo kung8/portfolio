@@ -12,7 +12,7 @@ const softened = '../assets/Products/turkey-meatball-spinach-tortellini-soup-sof
 const spinach = '../assets/Products/turkey-meatball-spinach-tortellini-soup-spinach.jpeg';
 const ladle = '../assets/Products/turkey-meatball-spinach-tortellini-soup-zoomed-ladle.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     GROUND_TURKEY,
     BREADCRUMBS,
@@ -29,6 +29,9 @@ const {
     BLACK_PEPPER,
     SPINACH_CHEESE_TORTELLINI,
     BABY_SPINACH,
+    STOVE,
+    LARGE_BOWL,
+    LARGE_POT,
 } = require('./ingredients');
 
 const MEATBALLS = 'Meatballs';
@@ -69,11 +72,11 @@ module.exports = {
         { ...BABY_SPINACH, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large bowl' },
-        { name: 'large pot' },
+        LARGE_BOWL,
+        LARGE_POT,
     ],
     directions: [
         { step: 'Combine the ground turkey, breadcrumbs, parmesan cheese, parsley, egg, garlic, and salt in a large bowl.', section: MEATBALLS, img: [breading, mixedBreading, turkey] },

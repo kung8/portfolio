@@ -6,7 +6,7 @@ const grilled5 = '../assets/Products/grilled-cheese-sandwich-5.jpeg';
 const grilled6 = '../assets/Products/grilled-cheese-sandwich-6.jpeg';
 const grilled7 = '../assets/Products/grilled-cheese-sandwich-7.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT } = require('./constants');
-const { BREAD, UNSALTED_BUTTER, CHEDDAR_CHEESE } = require('./ingredients');
+const { BREAD, UNSALTED_BUTTER, CHEDDAR_CHEESE, STOVE, FRYING_PAN } = require('./ingredients');
 
 const GRILL_CHEESE = 'Grill Cheese';
 
@@ -35,10 +35,10 @@ module.exports = {
         { ...CHEDDAR_CHEESE, amount: 1, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'frying pan' },
+        FRYING_PAN,
     ],
     directions: [
         { step: 'Over medium heat, preheat a frying pan.', section: GRILL_CHEESE },

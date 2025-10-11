@@ -8,8 +8,9 @@ const garlic = '../assets/Products/aji-de-gallina-garlic.jpeg';
 const onion = '../assets/Products/aji-de-gallina-onion.jpeg';
 const shredded = '../assets/Products/aji-de-gallina-shredded-chicken.jpeg';
 const aji = '../assets/Products/aji-de-gallina.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    MIXING_BOWL,
     CHICKEN_BREAST,
     YELLOW_ONION,
     VEGETABLE_OIL,
@@ -22,6 +23,16 @@ const {
     OREGANO,
     NUTMEG,
     JASMINE_RICE,
+    BLENDER,
+    STOVE,
+    LARGE_PAN,
+    LARGE_POT,
+    MEASURING_CUPS,
+    MEASURING_SPOONS,
+    CUTTING_BOARD,
+    KNIFE,
+    SMALL_BOWL,
+    SPOON,
 } = require('./ingredients');
 
 const ONION_SECTION = 'Onion Mixture';
@@ -66,19 +77,19 @@ module.exports = {
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', optional: false, section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'blender' },
-        { name: 'stove' },
+        BLENDER,
+        STOVE,
     ],
     supplies: [
-        { name: 'large pan' },
-        { name: 'large pot' },
-        { name: 'measuring cups' },
-        { name: 'measuring spoons' },
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: 'mixing bowl' },
-        { name: 'small bowl' },
-        { name: 'spoon' },
+        LARGE_PAN,
+        LARGE_POT,
+        MEASURING_CUPS,
+        MEASURING_SPOONS,
+        CUTTING_BOARD,
+        KNIFE,
+        MIXING_BOWL,
+        SMALL_BOWL,
+        SPOON,
     ],
     directions: [
         { step: `In a small bowl, combine the "${ONION_SECTION}" section ingredients.`, section: PREP_ONION },

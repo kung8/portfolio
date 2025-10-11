@@ -10,6 +10,7 @@ const mixed = '../assets/Products/peach-cobbler-mixed.jpeg'
 const peaches = '../assets/Products/peach-cobbler-peaches.jpeg'
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    MIXING_BOWL,
     UNSALTED_BUTTER,
     ALL_PURPOSE_FLOUR,
     WHITE_SUGAR,
@@ -18,6 +19,9 @@ const {
     MILK,
     CINNAMON,
     CANNED_PEACH,
+    BAKING_PAN,
+    RUBBER_SPATULA,
+    OVEN,
 } = require('./ingredients');
 
 module.exports = {
@@ -46,12 +50,12 @@ module.exports = {
         { ...CINNAMON, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking pan' },
-        { name: 'mixing bowl' },
-        { name: 'rubber spatula' },
+        BAKING_PAN,
+        MIXING_BOWL,
+        RUBBER_SPATULA,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },

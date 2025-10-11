@@ -15,7 +15,7 @@ const side = '../assets/Products/carrot-cake-plated-side.jpeg';
 const zoomed = '../assets/Products/carrot-cake-plated-zoomed.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BROWN_SUGAR, CARROT, EGG, WHITE_SUGAR, VEGETABLE_OIL, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, CINNAMON, BAKING_SODA, SALT, BAKING_POWDER, CREAM_CHEESE, UNSALTED_BUTTER, POWDERED_SUGAR, WALNUTS } = require('./ingredients');
+const { BROWN_SUGAR, CARROT, EGG, WHITE_SUGAR, VEGETABLE_OIL, VANILLA_EXTRACT, ALL_PURPOSE_FLOUR, CINNAMON, BAKING_SODA, SALT, BAKING_POWDER, CREAM_CHEESE, UNSALTED_BUTTER, POWDERED_SUGAR, WALNUTS, OVEN, MEDIUM_BOWL, MIXING_BOWL, CAKE_PAN, STAND_MIXER } = require('./ingredients');
 
 const CARROT_MIXTURE = 'Carrot Mixture';
 const CAKE = 'Cake';
@@ -62,13 +62,13 @@ module.exports = {
         { ...WALNUTS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ASSEMBLING },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: '1 medium bowl' },
-        { name: '2 mixing bowls' },
-        { name: '2 10-inch cake pans' },
-        { name: 'mixer' },
+        MEDIUM_BOWL,
+        { ...MIXING_BOWL, amount: 2, unit: '' },
+        { ...CAKE_PAN, amount: 2, additionalDetails: '10 inch' },
     ],
     directions: [
         { step: 'In a medium bowl, mix together the grated carrots and brown sugar.', section: CARROT_MIXTURE, img: brownSugar },

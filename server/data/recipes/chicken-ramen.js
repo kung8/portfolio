@@ -25,6 +25,16 @@ const {
     EGG,
     DRIED_RAMEN_NOODLES,
     GREEN_ONION,
+    STOVE,
+    OVEN,
+    ALUMINUM_FOIL,
+    CUTTING_BOARD,
+    SPIDER_STRAINER,
+    POT,
+    SAUCEPAN,
+    DUTCH_OVEN_POT,
+    LARGE_POT,
+    SERVING_BOWL,
 } = require('./ingredients');
 
 const EGG_SECTION = 'Eggs';
@@ -67,17 +77,17 @@ module.exports = {
         { ...GREEN_ONION, amount: 3, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'oven-safe pot/pan' },
-        { name: 'large pot' },
-        { name: 'small pot' },
-        { name: 'spider strainer' },
-        { name: 'cutting board' },
-        { name: 'tin-foil' },
-        { name: 'bowls' },
+        DUTCH_OVEN_POT,
+        LARGE_POT,
+        SAUCEPAN,
+        SPIDER_STRAINER,
+        CUTTING_BOARD,
+        ALUMINUM_FOIL,
+        SERVING_BOWL,
     ],
     directions: [
         { step: 'Preheat the oven to 375ºF.', section: SECTIONS.CHICKEN },

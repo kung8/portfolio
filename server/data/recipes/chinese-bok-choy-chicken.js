@@ -22,6 +22,12 @@ const {
     OLIVE_OIL,
     SESAME_SEEDS,
     UNSALTED_BUTTER,
+    STOVE,
+    OVEN,
+    POT,
+    COLANDER,
+    WOK,
+    DUTCH_OVEN_POT,
 } = require('./ingredients');
 
 module.exports = {
@@ -51,14 +57,14 @@ module.exports = {
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'pot' },
-        { name: 'wok' },
-        { name: 'oven-safe pot/pan' },
-        { name: 'colander' },
+        POT,
+        WOK,
+        DUTCH_OVEN_POT,
+        COLANDER,
     ],
     directions: [
         { step: 'Preheat the oven to 375ºF.', section: SECTIONS.CHICKEN },

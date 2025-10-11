@@ -21,6 +21,11 @@ const {
     FROZEN_CARROTS,
     CHICKEN_BREAST,
     REFRIGERATED_PIE_CRUST,
+    STOVE,
+    OVEN,
+    LARGE_POT,
+    LARGE_PAN,
+    PIE_PAN,
 } = require('./ingredients');
 
 module.exports = {
@@ -41,7 +46,7 @@ module.exports = {
     separated: true,
     ingredients: [
         { ...CHICKEN_BREAST, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiled and cut into 1/2 inch pieces', optional: false, section: SECTIONS.CHICKEN },
-        
+
         { ...UNSALTED_BUTTER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.FILLING },
         { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.FILLING },
         { ...YELLOW_ONION, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.FILLING },
@@ -57,20 +62,20 @@ module.exports = {
         { ...REFRIGERATED_PIE_CRUST, amount: 15, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false, section: SECTIONS.CRUST },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'large pan' },
-        { name: 'pie pan / baking pan' },
+        LARGE_POT,
+        LARGE_PAN,
+        { ...PIE_PAN, additionalDetails: 'or baking pan' },
     ],
     directions: [
         { step: 'Over medium-high heat, boil water in a large pot.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Add chicken breast. Boil until chicken is cooked through (about 15 minutes).', section: SECTIONS.COOK_CHICKEN, img: pie1 },
         { step: 'Transfer chicken carefully to a cutting board. Cut into 1/2 inch pieces.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Set aside.', section: SECTIONS.COOK_CHICKEN },
-        
+
         { step: 'Over medium heat, add butter to a large pan.', section: SECTIONS.COOK_FILLING },
         { step: 'Add flour, onion, salt, and pepper. Cook until bubbling.', section: SECTIONS.COOK_FILLING, img: pie2 },
         { step: 'Add milk and broth. Stir constantly until boils for 1 minute.', section: SECTIONS.COOK_FILLING, img: pie3 },

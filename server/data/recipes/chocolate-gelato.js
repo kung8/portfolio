@@ -2,7 +2,7 @@ const gelato1 = '../assets/Products/gelato-1.jpeg';
 const gelato2 = '../assets/Products/gelato-2.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { WHOLE_MILK, HEAVY_CREAM, VANILLA_BEAN, EGG_YOLK, WHITE_SUGAR, COCOA_POWDER, SALT, DARK_COOKING_CHOCOLATE } = require('./ingredients');
+const { MIXING_BOWL, WHOLE_MILK, HEAVY_CREAM, VANILLA_BEAN, EGG_YOLK, WHITE_SUGAR, COCOA_POWDER, SALT, DARK_COOKING_CHOCOLATE, SAUCEPAN, ICE_CREAM_MAKER } = require('./ingredients');
 
 const MILK_MIXTURE_SECTION = 'Milk Mixture';
 const SUGAR_EGGS_MIXTURE_SECTION = 'Sugar & Eggs Mixture';
@@ -29,7 +29,6 @@ module.exports = {
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.ITALIAN],
     method: [METHODS.FREEZE],
-    protein: [],
     type: [TYPES.DESSERT],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
@@ -52,11 +51,11 @@ module.exports = {
         { ...DARK_COOKING_CHOCOLATE, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'chopped', section: CHOCOLATE_MIXTURE_SECTION },
     ],
     appliances: [
-        { name: 'ice cream machine' },
+        ICE_CREAM_MAKER,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'mixing bowl' },
+        SAUCEPAN,
+        MIXING_BOWL,
     ],
     directions: [
         { step: `In a saucepan, combine "${MILK_MIXTURE_SECTION}" section ingredients.`, section: HEAT_MILK_SECTION },

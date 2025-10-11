@@ -11,6 +11,8 @@ const plated1 = '../assets/Products/snickerdoodle-plated-1.jpeg';
 
 const { GENRES, METHODS, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT } = require('./constants');
 const {
+    MIXING_BOWL,
+    BAKING_SHEET, 
     ALL_PURPOSE_FLOUR,
     CREAM_OF_TARTAR,
     BAKING_SODA,
@@ -20,6 +22,11 @@ const {
     EGG,
     VANILLA_EXTRACT,
     CINNAMON,
+    SMALL_BOWL,
+    SPATULA,
+    PLATE,
+    SILICON_BAKING_MAT,
+    OVEN,
 } = require('./ingredients');
 
 const COATING = 'Coating';
@@ -56,15 +63,15 @@ module.exports = {
         { ...CINNAMON, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: COATING },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'small bowl' },
-        { name: 'mixing bowl' },
-        { name: 'spatula' },
-        { name: 'plate' },
-        { name: 'baking sheet' },
-        { name: 'silicon baking mat' },
+        SMALL_BOWL,
+        MIXING_BOWL,
+        SPATULA,
+        PLATE,
+        BAKING_SHEET,
+        SILICON_BAKING_MAT,
     ],
     directions: [
         { step: 'In a small bowl, combine the sugar and cinnamon together.', section: COATING, img: mixture },
@@ -74,7 +81,7 @@ module.exports = {
         { step: 'Cream together the sugar with the butter.', section: SECTIONS.MAIN, img: creamed },
         { step: 'Combine vanilla and eggs to the creamed butter mixture.', section: SECTIONS.MAIN },
         { step: 'Add the dry ingredients one at a time to the wet batter and mix well. I recommend adding the flour last.', section: SECTIONS.MAIN, img: flour },
-        { step: 'Create 1-inch dough balls and place them on a plate to be rolled in the cinnamon-sugar mixture in the next step. I recommend this to keep your hands clean of the cinnamon-sugar.', section: SECTIONS.MAIN, img: ball },
+        { step: 'Create 1 inch dough balls and place them on a plate to be rolled in the cinnamon-sugar mixture in the next step. I recommend this to keep your hands clean of the cinnamon-sugar.', section: SECTIONS.MAIN, img: ball },
         { step: 'Roll each ball in the cinnamon-sugar mixture.', section: SECTIONS.MAIN, img: doughWithMixture },
         { step: 'Place the coated dough balls on a baking sheet about 2-inches apart.', section: SECTIONS.MAIN, img: pan },
         { step: 'Bake for 8 to 10 minutes.', section: SECTIONS.MAIN, img: oven },

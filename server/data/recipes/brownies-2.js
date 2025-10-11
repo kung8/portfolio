@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { WHITE_SUGAR, ALL_PURPOSE_FLOUR, COCOA_POWDER, POWDERED_SUGAR, SEMI_SWEET_CHOCOLATE_CHIPS, SEA_SALT, EGG, VANILLA_EXTRACT, CANOLA_OIL, WATER } = require('./ingredients');
+const { WHITE_SUGAR, ALL_PURPOSE_FLOUR, COCOA_POWDER, POWDERED_SUGAR, SEMI_SWEET_CHOCOLATE_CHIPS, SEA_SALT, EGG, VANILLA_EXTRACT, CANOLA_OIL, WATER, OVEN, BAKING_PAN, COOKING_SPRAY, PARCHMENT_PAPER } = require('./ingredients');
 
 const DRY_SECTION = 'Dry';
 const WET_SECTION = 'Wet';
@@ -39,12 +39,12 @@ module.exports = {
         { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WET_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: '8 x 8 baking pan' },
-        { name: 'cooking spray' },
-        { name: 'parchment paper' },
+        {...BAKING_PAN, additionalDetails: '8 x 8 inch' },
+        COOKING_SPRAY,
+        PARCHMENT_PAPER
     ],
     directions: [
         { step: 'Preheat the oven to 325ºF.', section: SECTIONS.PREP_BATTER },

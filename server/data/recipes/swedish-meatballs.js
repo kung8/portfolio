@@ -16,7 +16,7 @@ const meatball16 = '../assets/Products/swedish-meatball-16.jpeg';
 const meatball17 = '../assets/Products/swedish-meatball-17.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BREADCRUMBS, HEAVY_CREAM, UNSALTED_BUTTER, YELLOW_ONION, GROUND_BEEF, GROUND_PORK, EGG, BROWN_SUGAR, SALT, BLACK_PEPPER, NUTMEG, ALLSPICE, GROUND_GINGER, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, BEEF_BROTH, SOUR_CREAM } = require('./ingredients');
+const { MIXING_BOWL, BREADCRUMBS, HEAVY_CREAM, UNSALTED_BUTTER, YELLOW_ONION, GROUND_BEEF, GROUND_PORK, EGG, BROWN_SUGAR, SALT, BLACK_PEPPER, NUTMEG, ALLSPICE, GROUND_GINGER, CHICKEN_BROTH, ALL_PURPOSE_FLOUR, BEEF_BROTH, SOUR_CREAM, STOVE, OVEN, SMALL_BOWL, FRYING_PAN, ALUMINUM_FOIL, SERVING_PLATE, SAUCEPAN, BAKING_PAN } = require('./ingredients');
 
 const PREP_OVEN = 'Prep Oven';
 const BREADCRUMB_MIXTURE = 'Breadcrumb Mixture';
@@ -69,17 +69,17 @@ module.exports = {
         { ...SOUR_CREAM, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: GRAVY_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'small bowl' },
-        { name: 'frying pan' },
-        { name: 'mixing bowl' },
-        { name: 'baking dish' },
-        { name: 'aluminum foil' },
-        { name: 'serving dish' },
-        { name: 'saucepan' },
+        SMALL_BOWL,
+        FRYING_PAN,
+        MIXING_BOWL,
+        BAKING_PAN,
+        ALUMINUM_FOIL,
+        SERVING_PLATE,
+        SAUCEPAN,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: PREP_OVEN },

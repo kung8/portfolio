@@ -13,7 +13,7 @@ const skewered = '../assets/Products/caramel-apples-skewered.jpeg';
 const thickened = '../assets/Products/caramel-apples-thickened-sauce.jpeg';
 const wax = '../assets/Products/caramel-apples-wax-free-apples.jpeg';
 const { GENRES, METHODS, TYPES, CATEGORIES, SECTIONS , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { GRANNY_SMITH_APPLE, BROWN_SUGAR, SWEETENED_CONDENSED_MILK, CORN_SYRUP, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
+const { BAKING_SHEET, GRANNY_SMITH_APPLE, BROWN_SUGAR, SWEETENED_CONDENSED_MILK, CORN_SYRUP, UNSALTED_BUTTER, VANILLA_EXTRACT, STOVE, PARCHMENT_PAPER, BAMBOO_SKEWERS, COOKING_THERMOMETER, SPIDER_STRAINER, TALL_NARROW_POT } = require('./ingredients');
 
 const APPLE = 'Apple';
 const CARAMEL = 'Caramel';
@@ -45,15 +45,15 @@ module.exports = {
         { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CARAMEL },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'tall, narrow saucepan' },
-        { name: 'baking sheet' },
-        { name: 'parchment paper' },
-        { name: 'bamboo skewers' },
-        { name: 'candy thermometer' },
-        { name: 'spider strainer' },
+        TALL_NARROW_POT,
+        BAKING_SHEET,
+        PARCHMENT_PAPER,
+        BAMBOO_SKEWERS,
+        COOKING_THERMOMETER,
+        SPIDER_STRAINER,
     ],
     directions: [
         { step: 'Over medium-high heat, bring a saucepan of water to a boil.', section: APPLE, img: boiling },

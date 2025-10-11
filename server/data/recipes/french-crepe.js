@@ -6,6 +6,7 @@ const spread = '../assets/Products/crepes-scoop-spread-in-pan.jpeg';
 const unmelted = '../assets/Products/crepes-unmelted-chocolate.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
+    MIXING_BOWL,
     ALL_PURPOSE_FLOUR,
     EGG,
     MILK,
@@ -23,6 +24,11 @@ const {
     POWDERED_SUGAR,
     LEMON_JUICE,
     WATER,
+    STOVE,
+    WHISK,
+    FRYING_PAN,
+    MEASURING_CUPS,
+    MEASURING_SPOONS,
 } = require('./ingredients');
 
 const MELTED_CHOCOLATE = 'Melted chocolate';
@@ -64,14 +70,14 @@ module.exports = {
         { ...LEMON_JUICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'curvy frying pan' },
-        { name: 'whisk' },
-        { name: 'measuring spoon' },
-        { name: 'measuring cups' },
+        MIXING_BOWL,
+        { ...FRYING_PAN, additionalDetails: 'curved rim' },
+        WHISK,
+        MEASURING_SPOONS,
+        MEASURING_CUPS,
     ],
     directions: [
         { step: 'In a mixing bowl, mix together the flour, eggs, milk, salt, vanilla, and water, and butter.', section: SECTIONS.MAIN, img: batter },

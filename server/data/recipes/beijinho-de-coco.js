@@ -14,7 +14,6 @@ module.exports = {
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.BRAZILIAN],
     method: [METHODS.PAN_FRY],
-    protein: [],
     type: [TYPES.FINGER_FOOD,TYPES.DESSERT],
     yields: { amount: '', unit: '' },
     prepTime: { amount: '', unit: '' },

@@ -1,9 +1,12 @@
 const smores = '../assets/Products/smores.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, METHODS, YIELD_UNITS, TIME_UNITS } = require('./constants');
 const {
+    BAKING_SHEET, 
     GRAHAM_CRACKER,
     MARSHMALLOW,
     HERSHEY_CHOCOLATE_BAR,
+    ALUMINUM_FOIL,
+    OVEN,
 } = require('./ingredients');
 
 module.exports = {
@@ -25,11 +28,11 @@ module.exports = {
         { ...HERSHEY_CHOCOLATE_BAR, amount: 6, unit: '', additionalDetails: '', optional: false },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'aluminum foil' },
-        { name: 'baking sheet' },
+        ALUMINUM_FOIL,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'Lay aluminum foil on baking sheet and turn on oven to broil.', section: SECTIONS.MAIN },

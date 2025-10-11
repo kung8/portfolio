@@ -20,6 +20,13 @@ const {
     UNSALTED_BUTTER,
     MUSHROOM,
     WATER,
+    CUTTING_BOARD,
+    KNIFE,
+    SMALL_BOWL,
+    FORK,
+    SPATULA,
+    STOVE,
+    FRYING_PAN,
 } = require('./ingredients');
 
 const FLIPPING_METHOD = 'Flipping Method';
@@ -57,14 +64,15 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false, section: BUTTER_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'curvy frying pan' },
-        { name: 'cutting board and knife' },
-        { name: 'small bowl' },
-        { name: 'fork' },
-        { name: 'spatula' },
+        { ...FRYING_PAN, additionalDetails: 'curved rim' },
+        CUTTING_BOARD,
+        KNIFE,
+        SMALL_BOWL,
+        FORK,
+        SPATULA,
     ],
     directions: [
         { step: 'Prep the vegetables and ham (I use deli lunch meat) and set aside on cutting board.', section: SECTIONS.MAIN },

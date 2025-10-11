@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BUTTERNUT_SQUASH, SWEET_POTATO, OLIVE_OIL, SALT, BLACK_PEPPER, UNSALTED_BUTTER, YELLOW_ONION, CELERY, CARROT, THYME, CHICKEN_BROTH, HEAVY_CREAM } = require('./ingredients');
+const { MIXING_BOWL, BAKING_SHEET, BUTTERNUT_SQUASH, SWEET_POTATO, OLIVE_OIL, SALT, BLACK_PEPPER, UNSALTED_BUTTER, YELLOW_ONION, CELERY, CARROT, THYME, CHICKEN_BROTH, HEAVY_CREAM, OVEN, STOVE, BLENDER, LARGE_POT } = require('./ingredients');
 
 const SQUASH_SECTION = 'Squash';
 const ROAST_SQUASH = 'Roast Squash';
@@ -47,14 +47,14 @@ module.exports = {
         { ...HEAVY_CREAM, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
-        { name: 'blender' },
+        OVEN,
+        STOVE,
+        BLENDER,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'baking sheet' },
-        { name: 'large pot' },
+        MIXING_BOWL,
+        BAKING_SHEET,
+        LARGE_POT,
     ],
     directions: [
         { step: 'Preheat the oven to 400ºF.', section: ROAST_SQUASH },

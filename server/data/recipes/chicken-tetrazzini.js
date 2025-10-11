@@ -6,8 +6,8 @@ const tetrazzini5 = '../assets/Products/chicken-tetrazzini-5.jpeg';
 const tetrazzini6 = '../assets/Products/chicken-tetrazzini-6.jpeg';
 const tetrazzini7 = '../assets/Products/chicken-tetrazzini-7.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { SPAGHETTI_NOODLES, ROTISSERIE_CHICKEN, CREAM_OF_MUSHROOM, SOUR_CREAM, CHICKEN_BROTH, UNSALTED_BUTTER, PARMESAN_CHEESE, SALT, BLACK_PEPPER, ONION_POWDER, GARLIC_POWDER, CAYENNE_PEPPER, MOZZARELLA_CHEESE, PARSLEY } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { MIXING_BOWL, SPAGHETTI_NOODLES, ROTISSERIE_CHICKEN, CREAM_OF_MUSHROOM, SOUR_CREAM, CHICKEN_BROTH, UNSALTED_BUTTER, PARMESAN_CHEESE, SALT, BLACK_PEPPER, ONION_POWDER, GARLIC_POWDER, CAYENNE_PEPPER, MOZZARELLA_CHEESE, PARSLEY, STOVE, OVEN, LARGE_POT, CASSEROLE_DISH, ALUMINUM_FOIL } = require('./ingredients');
 
 const PREP_CASSEROLE = 'Prep Casserole';
 const COOK_CASSEROLE = 'Cook Casserole';
@@ -49,14 +49,14 @@ module.exports = {
         { ...PARSLEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'mixing bowl' },
-        { name: 'casserole dish' },
-        { name: 'aluminum foil' },
+        LARGE_POT,
+        MIXING_BOWL,
+        CASSEROLE_DISH,
+        ALUMINUM_FOIL,
     ],
     directions: [
         { step: 'Cook spaghetti noodles al dente.', section: PREP_CASSEROLE },

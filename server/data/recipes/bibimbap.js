@@ -22,7 +22,12 @@ const {
     SESAME_SEEDS,
     WHITE_VINEGAR,
     JASMINE_RICE,
-    WATER
+    WATER,
+    POT,
+    FRYING_PAN,
+    MEDIUM_BOWL,
+    SERVING_BOWL,
+    STOVE
 } = require('./ingredients');
 
 module.exports = {
@@ -65,13 +70,13 @@ module.exports = {
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,  
     ],
     supplies: [
-        { name: 'pot' },
-        { name: 'pan' },
-        { name: 'medium bowl' },
-        { name: 'serving bowl' },
+        POT,
+        FRYING_PAN,
+        MEDIUM_BOWL,
+        SERVING_BOWL,
     ],
     directions: [
         { step: `Mix the "${SECTIONS.BEEF}" section ingredients.`, section: SECTIONS.MARINATE_BEEF },

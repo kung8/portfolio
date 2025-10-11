@@ -1,6 +1,7 @@
 const alfredo = '../assets/Products/chicken-alfredo.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    MIXING_BOWL,
     RED_BELL_PEPPER,
     YELLOW_ONION,
     CHICKEN_BREAST,
@@ -12,6 +13,14 @@ const {
     OLIVE_OIL,
     HEAVY_CREAM,
     PARMESAN_CHEESE,
+    STOVE,
+    LARGE_POT,
+    LARGE_PAN,
+    CUTTING_BOARD,
+    KNIFE,
+    COLANDER,
+    SMALL_BOWL,
+    MEDIUM_BOWL,
 } = require('./ingredients');
 
 module.exports = {
@@ -44,16 +53,17 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'large pan' },
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: 'mixing bowl' },
-        { name: 'small and medium bowls' },
-        { name: 'colander/strainer' },
+        LARGE_POT,
+        LARGE_PAN,
+        CUTTING_BOARD,
+        KNIFE,
+        MIXING_BOWL,
+        SMALL_BOWL,
+        MEDIUM_BOWL,
+        COLANDER,
     ],
     directions: [
         { step: 'Prep the vegetables and set in a small bowl. Then cut the chicken into 1/4" slices and season with salt and pepper.', section: SECTIONS.MAIN },

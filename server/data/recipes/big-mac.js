@@ -4,7 +4,7 @@ const sauce4 = '../assets/Products/big-mac-sauce-4.jpeg';
 const plated6 = '../assets/Products/big-mac-plated-6.jpeg';
 const plated7 = '../assets/Products/big-mac-plated-7.jpeg';
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { MAYONNAISE, KETCHUP, YELLOW_MUSTARD, PICKLES, YELLOW_ONION, PAPRIKA, ONION_POWDER, SALT, BLACK_PEPPER, HAMBURGER_BUNS, BEEF_PATTIES, LETTUCE, CHEDDAR_CHEESE } = require('./ingredients');
+const { MIXING_BOWL, MAYONNAISE, KETCHUP, YELLOW_MUSTARD, PICKLES, YELLOW_ONION, PAPRIKA, ONION_POWDER, SALT, BLACK_PEPPER, HAMBURGER_BUNS, BEEF_PATTIES, LETTUCE, CHEDDAR_CHEESE, GRILL, GRILL_OR_STOVE } = require('./ingredients');
 
 const BIG_MAC_SAUCE = 'Big Mac Sauce';
 
@@ -42,10 +42,10 @@ module.exports = {
         { ...CHEDDAR_CHEESE, amount: 8, unit: '', additionalDetails: 'slices', section: SECTIONS.ASSEMBLE },
     ],
     appliances: [
-        { name: 'grill/stove' },
+        GRILL_OR_STOVE
     ],
     supplies: [
-        { name: 'mixing bowl' },
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'In a mixing bowl, combine the sauce ingredients.', section: BIG_MAC_SAUCE, img: [sauce2, sauce4] },

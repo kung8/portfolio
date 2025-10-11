@@ -8,6 +8,7 @@ const wet = '../assets/Products/waffles-wet-ingredients.jpeg';
 const egg = '../assets/Products/waffles-egg-whites-fluffed.jpeg';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    MIXING_BOWL,
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
     SALT,
@@ -25,6 +26,10 @@ const {
     SWEET_CHOCOLATE,
     NUTELLA,
     POWDERED_SUGAR,
+    MEDIUM_BOWL,
+    SMALL_BOWL,
+    WAFFLE_MAKER,
+    MIXER,
 } = require('./ingredients');
 
 module.exports = {
@@ -65,13 +70,13 @@ module.exports = {
         { ...POWDERED_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'waffle iron' },
-        { name: 'mixer' },
+        WAFFLE_MAKER,
+        MIXER,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'medium bowl' },
-        { name: 'small bowl' },
+        MIXING_BOWL,
+        MEDIUM_BOWL,
+        SMALL_BOWL,
     ],
     directions: [
         { step: 'Preheat the waffle iron.', section: SECTIONS.MAIN },

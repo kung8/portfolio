@@ -7,7 +7,7 @@ const mcgriddle6 = '../assets/Products/mcgriddle-6.jpeg';
 const mcgriddle7 = '../assets/Products/mcgriddle-7.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { PANCAKE_MIX, EGG, SAUSAGE_PATTY, AMERICAN_CHEESE } = require('./ingredients');
+const { MIXING_BOWL, PANCAKE_MIX, EGG, SAUSAGE_PATTY, AMERICAN_CHEESE, SPATULA, GRIDDLE, FRYING_PAN, MASON_JAR_LID } = require('./ingredients');
 
 const MCGRIDDLE_PANCAKE_SECTION = 'McGriddle Pancake';
 const COOK_PANCAKE = 'Cook Pancake';
@@ -38,13 +38,13 @@ module.exports = {
         { ...AMERICAN_CHEESE, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.FILLING },
     ],
     appliances: [
-        { name: 'griddle or stove' },
+        { ...GRIDDLE, additionalDetails: 'or stove' },
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'pan if using a stove' },
-        { name: 'metal mason jar lid rings' },
-        { name: 'spatula' },
+        MIXING_BOWL,
+        FRYING_PAN,
+        MASON_JAR_LID,
+        SPATULA,
     ],
     directions: [
         { step: 'In a mixing bowl, prepare the pancake batter according to the box\'s instruction.', section: COOK_PANCAKE },

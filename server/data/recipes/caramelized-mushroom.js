@@ -11,6 +11,8 @@ const {
     SALT,
     BLACK_PEPPER,
     BALSAMIC_VINEGAR,
+    STOVE,
+    FRYING_PAN,
 } = require('./ingredients');
 
 module.exports = {
@@ -36,10 +38,10 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'frying pan' },
+        FRYING_PAN
     ],
     directions: [
         { step: 'Over medium-high heat, melt butter in a pan.', section: SECTIONS.TOPPING },

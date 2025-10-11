@@ -7,6 +7,7 @@ const layered = '../assets/Products/chicken-katsudon-layered.jpeg';
 const finished = '../assets/Products/chicken-katsudon-finished.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    BAKING_SHEET,
     BONELESS_PORK_CHOPS,
     SALT,
     BLACK_PEPPER,
@@ -21,6 +22,12 @@ const {
     YELLOW_ONION,
     JASMINE_RICE,
     GREEN_ONION,
+    STOVE,
+    COOLING_RACK,
+    PAPER_TOWELS,
+    MEDIUM_BOWL,
+    FRYING_PAN,
+    LARGE_POT,
 } = require('./ingredients');
 
 module.exports = {
@@ -59,15 +66,15 @@ module.exports = {
         { ...GREEN_ONION, amount: 5, unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'deep pot' },
-        { name: 'cooling rack' },
-        { name: 'paper towels' },
-        { name: 'baking sheet' },
-        { name: '5 medium bowls' },
-        { name: 'pan' },
+        LARGE_POT,
+        COOLING_RACK,
+        PAPER_TOWELS,
+        BAKING_SHEET,
+        { ...MEDIUM_BOWL, amount: 5 },
+        FRYING_PAN,
     ],
     directions: [
         { step: 'Set up 3 bowls for the dredging stations. One with flour, one with 5 beaten eggs, and one with panko.', section: SECTIONS.MAIN },

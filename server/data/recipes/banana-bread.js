@@ -17,6 +17,12 @@ const {
     VANILLA_EXTRACT,
     SEMI_SWEET_CHOCOLATE_CHIPS,
     WALNUTS,
+    MIXING_BOWL,
+    LARGE_BOWL,
+    RUBBER_SPATULA,
+    BREAD_PAN,
+    TOOTHPICK,
+    OVEN,
 } = require('./ingredients');
 
 module.exports = {
@@ -48,14 +54,14 @@ module.exports = {
         { ...WALNUTS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'optional', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'large bowl' },
-        { name: 'rubber spatula' },
-        { name: 'bread pan' },
-        { name: 'toothpick' },
+        MIXING_BOWL,
+        LARGE_BOWL,
+        RUBBER_SPATULA,
+        BREAD_PAN,
+        TOOTHPICK,
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },

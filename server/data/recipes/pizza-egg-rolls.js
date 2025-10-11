@@ -11,7 +11,7 @@ const rolls10 = '../assets/Products/pizza-egg-rolls-10.jpeg';
 const rolls11 = '../assets/Products/pizza-egg-rolls-11.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { MOZZARELLA_CHEESE, ITALIAN_SAUSAGE, PEPPERONI, GREEN_BELL_PEPPER, RED_BELL_PEPPER, YELLOW_ONION, PIZZA_SAUCE, SPRING_ROLL_WRAPPER, VEGETABLE_OIL } = require('./ingredients');
+const { MIXING_BOWL, BAKING_SHEET, MOZZARELLA_CHEESE, ITALIAN_SAUSAGE, PEPPERONI, GREEN_BELL_PEPPER, RED_BELL_PEPPER, YELLOW_ONION, PIZZA_SAUCE, SPRING_ROLL_WRAPPER, VEGETABLE_OIL, DEEP_FRYER_OR_STOVE, TALL_NARROW_POT, COOLING_RACK, PAPER_TOWELS } = require('./ingredients');
 
 const PREP_SPRING_ROLLS = 'Prep Spring Rolls';
 
@@ -49,14 +49,14 @@ module.exports = {
         { ...PIZZA_SAUCE, amount: '', unit: '', additionalDetails: 'warmed', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'deep fryer or stove' },
+        DEEP_FRYER_OR_STOVE
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'deep fryer or tall narrow pot' },
-        { name: 'baking sheet' },
-        { name: 'cooling rack' },
-        { name: 'paper towels' },
+        MIXING_BOWL,
+        TALL_NARROW_POT,
+        BAKING_SHEET,
+        COOLING_RACK,
+        PAPER_TOWELS,
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING, img: rolls1 },

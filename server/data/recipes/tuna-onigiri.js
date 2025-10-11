@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { SEAWEED, SESAME_SEEDS, SHORT_GRAINED_RICE, SALT, CANNED_TUNA, KEWPIE_MAYONNAISE, WATER } = require('./ingredients');
+const { MIXING_BOWL, SEAWEED, SESAME_SEEDS, SHORT_GRAINED_RICE, SALT, CANNED_TUNA, KEWPIE_MAYONNAISE, WATER, CAN_OPENER, FORK, SMALL_BOWL } = require('./ingredients');
 
 const TUNA_MAYO = 'Tuna Mayo';
 const PREP_TUNA_MAYO = 'Prep Tuna Mayo';
@@ -42,10 +42,10 @@ module.exports = {
         { ...SESAME_SEEDS, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'can opener' },
-        { name: 'fork' },
-        { name: '2 small bowls' },
+        MIXING_BOWL,
+        CAN_OPENER,
+        FORK,
+        { ...SMALL_BOWL, amount: 2 },
     ],
     directions: [
         { step: 'In a mixing bowl, add hot cooked rice and salt.', section: SECTIONS.PREP_RICE },

@@ -9,7 +9,7 @@ const kung8 = '../assets/Products/kung-pao-chicken-8.jpeg';
 const kung9 = '../assets/Products/kung-pao-chicken-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CORNSTARCH, LIGHT_SOY_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, DARK_SOY_SAUCE, CHICKEN_BROTH, BALSAMIC_VINEGAR, HOISIN_SAUCE, WHITE_SUGAR, CHILI_PEPPER, GREEN_BELL_PEPPER, RED_BELL_PEPPER, GINGER, GARLIC, GREEN_ONION, UNSALTED_PEANUT, SESAME_SEEDS } = require('./ingredients');
+const { MIXING_BOWL, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CORNSTARCH, LIGHT_SOY_SAUCE, SHAOXING_WINE, VEGETABLE_OIL, DARK_SOY_SAUCE, CHICKEN_BROTH, BALSAMIC_VINEGAR, HOISIN_SAUCE, WHITE_SUGAR, CHILI_PEPPER, GREEN_BELL_PEPPER, RED_BELL_PEPPER, GINGER, GARLIC, GREEN_ONION, UNSALTED_PEANUT, SESAME_SEEDS, STOVE, MEDIUM_BOWL, WOK } = require('./ingredients');
 
 module.exports = {
     cardName: 'Kung Pao Chicken',
@@ -33,7 +33,7 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1-inch pieces', section: SECTIONS.MARINADE },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1 inch pieces', section: SECTIONS.MARINADE },
         { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...LIGHT_SOY_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...SHAOXING_WINE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
@@ -60,12 +60,12 @@ module.exports = {
         { ...SESAME_SEEDS, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'medium bowl' },
-        { name: 'wok' },
+        MIXING_BOWL,
+        MEDIUM_BOWL,
+        WOK,
     ],
     directions: [
         { step: 'In a mixing bowl, combine the "Chicken Marinade" ingredients.', section: SECTIONS.PREP_CHICKEN },

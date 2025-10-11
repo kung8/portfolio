@@ -5,8 +5,8 @@ const chips4 = '../assets/Products/fish-and-chips-4.jpeg';
 const chips5 = '../assets/Products/fish-and-chips-5.jpeg';
 const chips6 = '../assets/Products/fish-and-chips-6.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
-const { COD_FISH, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, GARLIC_POWDER, PAPRIKA, EGG, BEER, VEGETABLE_OIL } = require('./ingredients');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { MIXING_BOWL, COD_FISH, SALT, BLACK_PEPPER, ALL_PURPOSE_FLOUR, GARLIC_POWDER, PAPRIKA, EGG, BEER, VEGETABLE_OIL, TALL_NARROW_POT, DEEP_FRYER_OR_STOVE } = require('./ingredients');
 
 const BEER_BATTER_SECTION = 'Beer Batter';
 const FRYING_SECTION = 'Frying';
@@ -45,12 +45,11 @@ module.exports = {
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: 'for frying', section: FRYING_SECTION },
     ],
     appliances: [
-        { name: 'deep fryer or stove' },
+        DEEP_FRYER_OR_STOVE
     ],
     supplies: [
-        { name: 'mixing bowl' },
-        { name: 'deep pot' },
-        { name: '' },
+        MIXING_BOWL,
+        TALL_NARROW_POT,
     ],
     directions: [
         { step: 'Heat about 2 to 3 inches of oil in a deep fryer or in a pot. Bring it to 375ºF.', section: SECTIONS.PREP_FISH },

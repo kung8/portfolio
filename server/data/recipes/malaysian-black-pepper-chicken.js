@@ -9,8 +9,9 @@ const raw = '../assets/Products/black-pepper-chicken-raw-chicken-in-pan.jpeg';
 const sauce = '../assets/Products/black-pepper-chicken-sauce.jpeg';
 const sauted = '../assets/Products/black-pepper-chicken-sauted-fragrant.jpeg';
 
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const {
+    MIXING_BOWL,
     CHICKEN_BREAST,
     SHALLOT,
     GARLIC,
@@ -24,6 +25,10 @@ const {
     CILANTRO,
     WHITE_SUGAR,
     WATER,
+    STOVE,
+    WOK,
+    SPATULA,
+    MEDIUM_BOWL,
 } = require('./ingredients');
 
 module.exports = {
@@ -65,13 +70,13 @@ module.exports = {
         { ...CILANTRO, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'wok' },
-        { name: 'spatula' },
-        { name: 'mixing bowl' },
-        { name: 'medium bowl' },
+        WOK,
+        SPATULA,
+        MIXING_BOWL,
+        MEDIUM_BOWL,
     ],
     directions: [
         { step: 'Cut the chicken into 1" cubes.', section: SECTIONS.MARINADE },

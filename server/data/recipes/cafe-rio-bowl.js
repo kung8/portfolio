@@ -37,6 +37,11 @@ const {
     JALAPENO_PEPPER,
     MILK,
     ROMA_TOMATO,
+    GRILL_OR_STOVE,
+    SAUCEPAN,
+    ZIPLOC_BAG,
+    TONGS,
+    SPATULA,
 } = require('./ingredients');
 
 const CILANTRO_RANCH_DRESSING = 'Cilantro Ranch Dressing';
@@ -91,14 +96,13 @@ module.exports = {
         { ...ROMA_TOMATO, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'grill (or griddle)' },
-        { name: 'saucepan' },
+        GRILL_OR_STOVE,
     ],
     supplies: [
-        { name: 'ziploc bag' },
-        { name: 'tongs' },
-        { name: 'saucepan' },
-        { name: 'spatula' },
+        { ...ZIPLOC_BAG, additionalDetails: 'gallon-size' },
+        TONGS,
+        SAUCEPAN,
+        SPATULA,
     ],
     directions: [
         { step: 'In a ziploc bag or mixing bowl, mix together all the marinade ingredients except the steak and parsley.', section: SECTIONS.MEAT, img: marinade },

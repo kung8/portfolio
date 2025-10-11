@@ -8,6 +8,7 @@ const rice = '../assets/Products/korean-fried-chicken-with-rice.jpeg';
 const chicken = '../assets/Products/korean-fried-chicken.jpeg';
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
+    BAKING_SHEET,
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
     CHICKEN_THIGH,
@@ -27,7 +28,13 @@ const {
     THAI_CHILI_PEPPER,
     VEGETABLE_OIL,
     WHITE_SUGAR,
-    WATER
+    WATER,
+    STOVE,
+    LARGE_BOWL,
+    MEDIUM_BOWL,
+    LARGE_POT,
+    COOLING_RACK,
+    PAPER_TOWELS
 } = require('./ingredients');
 
 const SWEET_AND_TANGY_SAUCE = 'Sweet and Tangy Sauce';
@@ -93,16 +100,16 @@ module.exports = {
         { ...THAI_CHILI_PEPPER, amount: 2, unit: '', additionalDetails: 'optional and minced', section: SWEET_AND_SPICY_SAUCE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large bowl' },
-        { name: 'medium bowl' },
-        { name: 'large bowl for wet rub' },
-        { name: 'pot' },
-        { name: 'baking sheet' },
-        { name: 'cooling rack' },
-        { name: 'paper towels' },
+        LARGE_BOWL,
+        MEDIUM_BOWL,
+        { ...LARGE_BOWL, additionalDetails: 'for wet rub' },
+        LARGE_POT,
+        BAKING_SHEET,
+        COOLING_RACK,
+        PAPER_TOWELS,
     ],
     directions: [
         { step: 'In a large bowl, combine the chicken thighs with the garlic, ginger, sea salt, and mirin.', section: SECTIONS.MARINADE, img: marinating },

@@ -9,7 +9,7 @@ const roll8 = '../assets/Products/cheeseburger-egg-rolls-8.jpeg';
 const roll9 = '../assets/Products/cheeseburger-egg-rolls-9.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { GROUND_BEEF, RED_ONION, PICKLES, CHEDDAR_CHEESE, DIJON_MUSTARD, FISH_SAUCE, SALT, BLACK_PEPPER, SPRING_ROLL_RICE_WRAPPERS, SPRING_ROLL_WRAPPER, OLIVE_OIL, GREEK_YOGURT, KETCHUP, GARLIC, PICKLE_JUICE, SMOKED_PAPRIKA, COOKING_SPRAY } = require('./ingredients');
+const { MIXING_BOWL, GROUND_BEEF, RED_ONION, PICKLES, CHEDDAR_CHEESE, DIJON_MUSTARD, FISH_SAUCE, SALT, BLACK_PEPPER, SPRING_ROLL_RICE_WRAPPERS, SPRING_ROLL_WRAPPER, OLIVE_OIL, GREEK_YOGURT, KETCHUP, GARLIC, PICKLE_JUICE, SMOKED_PAPRIKA, COOKING_SPRAY, AIR_FRYER, MEDIUM_BOWL, CUTTING_BOARD } = require('./ingredients');
 
 const SPRING_ROLL_SECTION = 'Spring Roll';
 
@@ -59,12 +59,12 @@ module.exports = {
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: SPRING_ROLL_SECTION },
     ],
     appliances: [
-        { name: 'air fryer' },
+        AIR_FRYER,
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'mixing bowl' },
-        { name: 'cutting board' },
+        MEDIUM_BOWL,
+        MIXING_BOWL,
+        CUTTING_BOARD
     ],
     directions: [
         { step: `In a medium bowl, combine the "${SECTIONS.DIP}" section ingredients. Set aside.`, section: SECTIONS.PREP_DIP, img: roll1 },

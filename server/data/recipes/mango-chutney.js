@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
-const { VEGETABLE_OIL, GINGER, GARLIC, RED_CHILI, CORIANDER, CUMIN, TURMERIC, CARDAMOM, CLOVES, CINNAMON, SALT, MANGO, WHITE_SUGAR, WHITE_VINEGAR, NIGELLA_SEED } = require('./ingredients');
+const { VEGETABLE_OIL, GINGER, GARLIC, RED_CHILI, CORIANDER, CUMIN, TURMERIC, CARDAMOM, CLOVES, CINNAMON, SALT, MANGO, WHITE_SUGAR, WHITE_VINEGAR, NIGELLA_SEED, STOVE, LARGE_POT, MASHER } = require('./ingredients');
 
 const MANGO_SECTION = 'Mango';
 const COOK_SPICES = 'Cook Spices';
@@ -44,11 +44,11 @@ module.exports = {
         { ...WHITE_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MANGO_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'potato masher' },
+        LARGE_POT,
+        MASHER,
     ],
     directions: [
         { step: 'Over medium-high heat, heat oil in a large pot.', section: SECTIONS.COOK_VEGGIES },

@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { AVOCADO, SHALLOT, GARLIC, JALAPENO_PEPPER, LIME_JUICE, SALT, CUMIN, CILANTRO, EGG, PAPRIKA, CHORIZO, MONTEREY_JACK_CHEESE, TORTILLA, VEGETABLE_OIL, VINE_TOMATO } = require('./ingredients');
+const { AVOCADO, SHALLOT, GARLIC, JALAPENO_PEPPER, LIME_JUICE, SALT, CUMIN, CILANTRO, EGG, PAPRIKA, CHORIZO, MONTEREY_JACK_CHEESE, TORTILLA, VEGETABLE_OIL, VINE_TOMATO, STOVE, MEDIUM_BOWL, LARGE_PAN, SLOTTED_SPOON, PLATE } = require('./ingredients');
 
 const AVOCADO_TOMATO_SALSA_SECTION = 'Avocado Tomato Salsa';
 const BURRITO_SECTION = 'Burrito Section';
@@ -45,17 +45,17 @@ module.exports = {
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BURRITO_SECTION },
         { ...CHORIZO, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BURRITO_SECTION },
         { ...MONTEREY_JACK_CHEESE, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: BURRITO_SECTION },
-        { ...TORTILLA, amount: 4, unit: '', additionalDetails: '10-inch size', section: BURRITO_SECTION },
+        { ...TORTILLA, amount: 4, unit: '', additionalDetails: '10 inch size', section: BURRITO_SECTION },
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BURRITO_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'medium bowls' },
-        { name: 'large pan with lid' },
-        { name: 'slotted spoon' },
-        { name: 'plate' },
+        MEDIUM_BOWL,
+        {...LARGE_PAN, additionalDetails: 'with lid' },
+        SLOTTED_SPOON,
+        PLATE,
     ],
     directions: [
         { step: `In a medium bowl, combine the "${AVOCADO_TOMATO_SALSA_SECTION}" section ingredients.`, section: PREPARE_SALSA },

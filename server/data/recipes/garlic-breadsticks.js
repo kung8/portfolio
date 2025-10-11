@@ -5,6 +5,7 @@ const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
 const tossing = '../assets/Products/pizza-toss.MOV';
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
 const {
+    BAKING_SHEET, 
     BREAD_FLOUR,
     SALT,
     HONEY,
@@ -15,6 +16,10 @@ const {
     YEAST,
     MARINARA_SAUCE,
     WATER,
+    OVEN,
+    MIXING_BOWL,
+    ROLLING_PIN,
+    PLASTIC_WRAP,
 } = require('./ingredients');
 
 module.exports = {
@@ -45,14 +50,13 @@ module.exports = {
         { ...MARINARA_SAUCE, amount: '', unit: '', additionalDetails: 'warmed', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'clean counter' },
-        { name: 'large bowl' },
-        { name: 'rolling pin' },
-        { name: 'plastic wrap or cooking towel' },
-        { name: 'baking sheet' },
+        MIXING_BOWL,
+        ROLLING_PIN,
+        PLASTIC_WRAP,
+        BAKING_SHEET,
     ],
     directions: [
         { step: 'On a clean counter, combine flour, salt, and yeast by hand. We are making focaccia bread.', section: SECTIONS.DOUGH },
@@ -63,7 +67,7 @@ module.exports = {
         { step: 'When you are ready to make the garlic bread, preheat the oven too 450ºF.', section: SECTIONS.DOUGH },
         { step: 'Grease a baking sheet with 1 Tablespoon olive oil.', section: SECTIONS.DOUGH },
         { step: 'This is the fun part where you will work the dough. Again on a clean counter sprinkle some flour (and you may need to add some more later so keep that flour handy).', section: SECTIONS.DOUGH },
-        { step: 'Cut a portion of the dough (about a 4-inch ball). Freeze the remainder in the freezer. Note that the dough will rise slightly more as it returns to room temperature.', section: SECTIONS.DOUGH, img: frozenDough },
+        { step: 'Cut a portion of the dough (about a 4 inch ball). Freeze the remainder in the freezer. Note that the dough will rise slightly more as it returns to room temperature.', section: SECTIONS.DOUGH, img: frozenDough },
         { step: 'Place the dough ball on the floured counter. And begin kneading and pulling and stretching the dough. Continue until the dough has become less sticky. Add more flour conservatively. If you have added too much flour, you can add more water but try to avoid doing that.', section: SECTIONS.DOUGH, img: pizzaDough },
         { step: 'Tossing the dough helps form the crust and gives the dough texture and flavor. Flatten the dough using a rolling pin until it\'s about 8 inches wide and you will place your closed fists beneath it (at about 10-and-2 steering wheel position). The tricky part is to avoid tearing the dough by making it too thin and accidentally ripping the dough with your fingers. So tuck those fingers in and use just your knuckles.', section: SECTIONS.DOUGH },
         { step: 'Pull your fists apart to pull the dough edges and try to get all around. Then with a quick flick of the wrists throw the dough directly up in the air and catch the dough with your closed fists.', section: SECTIONS.DOUGH, video: tossing },

@@ -8,7 +8,7 @@ const shrimp7 = '../assets/Products/bang-bang-shrimp-7.jpeg';
 const shrimp8 = '../assets/Products/bang-bang-shrimp-8.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { SHRIMP, EGG_WHITES, CORNSTARCH, SALT, WHITE_PEPPER, VEGETABLE_OIL, GREEN_ONION, MAYONNAISE, SWEET_CHILI_SAUCE, SRIRACHA_SAUCE, HONEY, SESAME_SEEDS } = require('./ingredients');
+const { BAKING_SHEET, SHRIMP, EGG_WHITES, CORNSTARCH, SALT, WHITE_PEPPER, VEGETABLE_OIL, GREEN_ONION, MAYONNAISE, SWEET_CHILI_SAUCE, SRIRACHA_SAUCE, HONEY, SESAME_SEEDS, MIXING_BOWL, COOLING_RACK, PAPER_TOWELS, DEEP_FRYER, DEEP_FRYER_OR_STOVE, TALL_NARROW_POT } = require('./ingredients');
 
 const COAT_SHRIMP = 'Coat Shrimp';
 
@@ -52,14 +52,14 @@ module.exports = {
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'deep fryer or stove' },
+        DEEP_FRYER_OR_STOVE,
     ],
     supplies: [
-        { name: '2 mixing bowls' },
-        { name: 'deep fryer or tall narrow pot' },
-        { name: 'baking sheet' },
-        { name: 'cooling rack' },
-        { name: 'paper towels' },
+        { ...MIXING_BOWL, amount: 2 },
+        TALL_NARROW_POT,
+        BAKING_SHEET,
+        COOLING_RACK,
+        PAPER_TOWELS,
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SHRIMP, img: shrimp2 },

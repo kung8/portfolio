@@ -9,7 +9,7 @@ const sauce = '../assets/Products/cashew-chicken-sauce.jpeg';
 const cashews = '../assets/Products/cashew-chicken-veggies-with-cashew.jpeg';
 const veggies = '../assets/Products/cashew-chicken-veggies.jpeg';
 const withSauce = '../assets/Products/cashew-chicken-with-sauce.jpeg';
-const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
+const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
 const {
     BONELESS_AND_SKINLESS_CHICKEN_BREAST,
     BROCCOLI,
@@ -28,6 +28,10 @@ const {
     ASIAN_CHILI_GARLIC_SAUCE,
     LIGHT_SOY_SAUCE,
     BLACK_PEPPER,
+    STOVE,
+    MEDIUM_BOWL,
+    WOK,
+    LARGE_BOWL,
 } = require('./ingredients');
 
 module.exports = {
@@ -70,12 +74,12 @@ module.exports = {
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'wok' },
-        { name: 'medium bowl' },
-        { name: '2 large bowls' },
+        WOK,
+        MEDIUM_BOWL,
+        { ...LARGE_BOWL, amount: 2 },
     ],
     directions: [
         { step: 'In a medium bowl, combine the sauce ingredients. Mix well.', section: SECTIONS.SAUCE, img: sauce },

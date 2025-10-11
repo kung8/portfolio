@@ -19,7 +19,7 @@ const chicken18 = '../assets/Products/marry-me-chicken-18.jpeg';
 const chicken19 = '../assets/Products/marry-me-chicken-19.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CHICKEN_BROTH, HEAVY_CREAM, PARMESAN_CHEESE, OREGANO, RED_PEPPER_FLAKES, BASIL_LEAF, SUN_DRIED_TOMATOES } = require('./ingredients');
+const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, SALT, BLACK_PEPPER, OLIVE_OIL, GARLIC, CHICKEN_BROTH, HEAVY_CREAM, PARMESAN_CHEESE, OREGANO, RED_PEPPER_FLAKES, BASIL_LEAF, SUN_DRIED_TOMATOES, OVEN, STOVE, DUTCH_OVEN_POT, TONGS } = require('./ingredients');
 
 const SUN_DRIED_TOMATO_CREAM_SAUCE = 'Sun-Dried Tomato Cream Sauce';
 
@@ -59,12 +59,12 @@ module.exports = {
         { ...BASIL_LEAF, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
+        OVEN,
+        STOVE,
     ],
     supplies: [
-        { name: 'dutch oven pot' },
-        { name: 'tongs' },
+        DUTCH_OVEN_POT,
+        TONGS,
     ],
     directions: [
         { step: 'Preheat the oven to 375ºF. Arrange the rack so the dutch oven pot will be cooked in the center of the oven.', section: SECTIONS.CHICKEN, img: chicken1 },

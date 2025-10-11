@@ -14,7 +14,6 @@ module.exports = {
     category: [CATEGORIES.APPETIZER,CATEGORIES.SIDE_DISH],
     genre: [GENRES.INDIAN],
     method: [METHODS.BAKE],
-    protein: [],
     type: [TYPES.BREAD],
     yields: { amount: '', unit: '' },
     prepTime: { amount: '', unit: '' },

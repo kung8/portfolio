@@ -14,6 +14,12 @@ const {
     YELLOW_ONION,
     MUSHROOM,
     PROVOLONE_CHEESE,
+    STOVE,
+    CUTTING_BOARD,
+    KNIFE,
+    PLATE,
+    FRYING_PAN,
+    MEDIUM_BOWL,
 } = require('./ingredients');
 
 module.exports = {
@@ -46,14 +52,14 @@ module.exports = {
         { ...HOAGIE_BREAD, amount: 6, unit: '', additionalDetails: '', optional: false },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'pan' },
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: 'medium bowl' },
-        { name: 'plate' },
+        FRYING_PAN,
+        CUTTING_BOARD,
+        KNIFE,
+        MEDIUM_BOWL,
+        PLATE,
     ],
     directions: [
         { step: 'Over high heat, heat oil in pan.', section: SECTIONS.MAIN },

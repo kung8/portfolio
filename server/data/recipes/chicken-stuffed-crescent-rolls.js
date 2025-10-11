@@ -6,8 +6,10 @@ const melted = '../assets/Products/chicken-stuffed-crescent-rolls-melted-butter.
 const opened = '../assets/Products/chicken-stuffed-crescent-rolls-opened.jpeg';
 const wrap = '../assets/Products/chicken-stuffed-crescent-rolls-wrap.jpeg';
 const wrapped = '../assets/Products/chicken-stuffed-crescent-rolls-wrapped.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS  } = require('./constants');
+const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
+    BAKING_SHEET,
+    MIXING_BOWL,
     MOZZARELLA_CHEESE,
     CREAM_CHEESE,
     RED_BELL_PEPPER,
@@ -20,6 +22,8 @@ const {
     CRESCENT_ROLLS,
     CHICKEN_BREAST,
     PARSLEY,
+    SILICON_BAKING_MAT,
+    OVEN,
 } = require('./ingredients');
 
 module.exports = {
@@ -51,12 +55,12 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking sheet' },
-        { name: 'silicon baking mat' },
-        { name: 'mixing bowl' },
+        BAKING_SHEET,
+        SILICON_BAKING_MAT,
+        MIXING_BOWL,
     ],
     directions: [
         { step: 'Preheat oven to 375ºF.', section: SECTIONS.MAIN },

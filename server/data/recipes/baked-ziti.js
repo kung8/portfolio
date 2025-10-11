@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { ZITI, ITALIAN_SAUSAGE, GARLIC, CRUSHED_TOMATOES, SALT, RED_PEPPER_FLAKES, HEAVY_CREAM, PARMIGIANO_REGGIANO, BASIL_LEAF, MOZZARELLA_CHEESE, WHITE_SUGAR } = require('./ingredients');
+const { ZITI, ITALIAN_SAUSAGE, GARLIC, CRUSHED_TOMATOES, SALT, RED_PEPPER_FLAKES, HEAVY_CREAM, PARMIGIANO_REGGIANO, BASIL_LEAF, MOZZARELLA_CHEESE, WHITE_SUGAR, LARGE_POT, CASSEROLE_DISH, COLANDER, LARGE_PAN, WOODEN_SPOON, STOVE, OVEN } = require('./ingredients');
 
 const CASSEROLE_MIXTURE_SECTION = 'Casserole Mixture';
 const LAYERING_SECTION = 'Layering';
@@ -47,15 +47,15 @@ module.exports = {
         { ...PARMIGIANO_REGGIANO, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'grated', section: LAYERING_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: '9 x 13 inch casserole dish' },
-        { name: 'colander' },
-        { name: 'large pan' },
-        { name: 'wooden spoon' },
+        LARGE_POT,
+        { ...CASSEROLE_DISH, additionalDetails: '9 x 13 inch' },
+        COLANDER,
+        LARGE_PAN,
+        WOODEN_SPOON,
     ],
     directions: [
         { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: SECTIONS.COOK_PASTA },

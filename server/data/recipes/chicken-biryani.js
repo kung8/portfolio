@@ -19,7 +19,7 @@ const spiceInPot = '../assets/Products/chicken-biryani-spice-marinade-in-pot.jpe
 const workstation = '../assets/Products/chicken-biryani-workstation.jpeg';
 
 const { GENRES, METHODS, PROTEIN, SECTIONS, TYPES, CATEGORIES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
-const { CARDAMOM, CHICKEN_THIGH, YOGURT, VEGETABLE_OIL, GARLIC, GINGER, TURMERIC, CINNAMON, CAYENNE_PEPPER, GARAM_MASALA, CORIANDER, CUMIN, PAPRIKA, SALT, CLOVES, BAY_LEAF, STAR_ANISE, BASMATI_RICE, CARDAMOM_PODS, YELLOW_ONION, SAFFRON_THREADS, CILANTRO, GHEE, WATER } = require('./ingredients');
+const { CARDAMOM, CHICKEN_THIGH, YOGURT, VEGETABLE_OIL, GARLIC, GINGER, TURMERIC, CINNAMON, CAYENNE_PEPPER, GARAM_MASALA, CORIANDER, CUMIN, PAPRIKA, SALT, CLOVES, BAY_LEAF, STAR_ANISE, BASMATI_RICE, CARDAMOM_PODS, YELLOW_ONION, SAFFRON_THREADS, CILANTRO, GHEE, WATER, STOVE, LARGE_POT, POT, SMALL_BOWL, PLATE, PAPER_TOWELS, SAUCEPAN } = require('./ingredients');
 
 const CRISPY_ONION = 'Crispy Onion';
 const SAFFRON_WATER = 'Saffron Water';
@@ -82,15 +82,15 @@ module.exports = {
         { ...YOGURT, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'pot' },
-        { name: 'small bowl' },
-        { name: 'plate' },
-        { name: 'paper towels' },
-        { name: 'sauce pan' },
+        LARGE_POT,
+        POT,
+        SMALL_BOWL,
+        PLATE,
+        PAPER_TOWELS,
+        SAUCEPAN,
     ],
     directions: [
         { step: 'In a large pot, mix the marinade ingredients.', section: SECTIONS.CHICKEN, img: [spiceInPot, marinade] },

@@ -1,7 +1,7 @@
 const blt1 = '../assets/Products/blt-1.jpeg';
 const blt2 = '../assets/Products/blt-2.jpeg';
 const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require('./constants');
-const { BACON, LETTUCE, ROMA_TOMATO, BREAD, MAYONNAISE } = require('./ingredients');
+const { BACON, LETTUCE, ROMA_TOMATO, BREAD, MAYONNAISE, STOVE, TOASTER, PLATE, PAPER_TOWELS, FRYING_PAN, KNIFE } = require('./ingredients');
 
 const COOK_BACON = 'Cook Bacon';
 
@@ -33,14 +33,14 @@ module.exports = {
         { ...MAYONNAISE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'toaster' },
+        STOVE,
+        TOASTER,
     ],
     supplies: [
-        { name: 'plate' },
-        { name: 'paper towels' },
-        { name: 'frying pan' },
-        { name: 'knife' },
+        PLATE,
+        PAPER_TOWELS,
+        FRYING_PAN,
+        KNIFE,
     ],
     directions: [
         { step: 'Line a plate with paper towels.', section: COOK_BACON },

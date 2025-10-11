@@ -17,6 +17,7 @@ const water = '../assets/Products/bao-water.jpeg';
 const withFilling = '../assets/Products/bao-with-filling.jpeg';
 const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require("./constants");
 const {
+    MIXING_BOWL,
     YEAST,
     WHITE_SUGAR,
     BREAD_FLOUR,
@@ -30,6 +31,12 @@ const {
     OYSTER_SAUCE,
     GARLIC,
     WATER,
+    STOVE,
+    SMALL_BOWL,
+    SAUCEPAN,
+    FRYING_PAN,
+    STEAMER,
+    LARGE_POT,
 } = require('./ingredients');
 
 module.exports = {
@@ -69,15 +76,15 @@ module.exports = {
         { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.FILLING },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'small bowl' },
-        { name: 'mixing bowl' },
-        { name: 'small pot' },
-        { name: 'small pan' },
-        { name: 'steamer' },
-        { name: 'large pot' },
+        SMALL_BOWL,
+        MIXING_BOWL,
+        SAUCEPAN,
+        FRYING_PAN,
+        STEAMER,
+        LARGE_POT,
     ],
     directions: [
         { step: 'In a small bowl, mix together yeast, the 1/4 c warm water, and the 1 Tbsp sugar. Set aside for 10 minutes.', section: SECTIONS.DOUGH },

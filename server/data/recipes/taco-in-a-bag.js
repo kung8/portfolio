@@ -1,5 +1,5 @@
 const taco = '../assets/Products/taco-in-a-bag.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN , INGREDIENT_UNITS, YIELD_UNITS , TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { CATEGORIES, GENRES, SECTIONS, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
 const {
     BLACK_BEANS,
     BLACK_PEPPER,
@@ -13,6 +13,14 @@ const {
     FRITOS_CHIPS,
     TACO_SEASONING,
     ROMA_TOMATO,
+    STOVE,
+    POT,
+    SPATULA,
+    CUTTING_BOARD,
+    KNIFE,
+    SMALL_BOWL,
+    SERVING_SPOON,
+    FRYING_PAN,
 } = require('./ingredients');
 
 module.exports = {
@@ -45,15 +53,16 @@ module.exports = {
         { ...LETTUCE, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'pan' },
-        { name: 'pot' },
-        { name: 'spatula' },
-        { name: 'cutting board and knife' },
-        { name: 'small bowls for SECTIONS.toppings' },
-        { name: 'serving spoons' },
+        FRYING_PAN,
+        POT,
+        SPATULA,
+        CUTTING_BOARD,
+        KNIFE,
+        { ...SMALL_BOWL, additionalDetails: 'toppings' },
+        SERVING_SPOON,
     ],
     directions: [
         { step: 'Heat up a pan over medium-high heat, and once it is hot add in the ground beef.', section: SECTIONS.MAIN },
