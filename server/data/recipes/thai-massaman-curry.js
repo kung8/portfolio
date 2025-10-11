@@ -1,4 +1,13 @@
-// const thaiMassamanCurry = '../assets/Products/thai-massaman-curry.jpeg';
+const curry1 = '../assets/Products/massaman-curry-1.jpeg';
+const curry2 = '../assets/Products/massaman-curry-2.jpeg';
+const curry3 = '../assets/Products/massaman-curry-3.jpeg';
+const curry4 = '../assets/Products/massaman-curry-4.jpeg';
+const curry5 = '../assets/Products/massaman-curry-5.jpeg';
+const curry6 = '../assets/Products/massaman-curry-6.jpeg';
+const curry7 = '../assets/Products/massaman-curry-7.jpeg';
+const curry8 = '../assets/Products/massaman-curry-8.jpeg';
+const curry9 = '../assets/Products/massaman-curry-9.jpeg';
+
 const { CATEGORIES, GENRES, TYPES, METHODS, YIELD_UNITS, TIME_UNITS, INGREDIENT_UNITS, SECTIONS, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, STORAGE_LOCATION, REHEAT_METHODS } = require("./constants");
 const { BROWN_SUGAR, CARROT, CHICKEN_BREAST, CILANTRO, COCONUT_MILK, FISH_SAUCE, GINGER, JASMINE_RICE, LIME_JUICE, MASSAMAN_CURRY_PASTE, PEANUT_BUTTER, RED_PEPPER_FLAKES, SRIRACHA_SAUCE, UNSALTED_PEANUT, VEGETABLE_OIL, WORCESTERSHIRE_SAUCE, YELLOW_ONION, YUKON_GOLD_POTATO } = require('./ingredients');
 
@@ -14,7 +23,7 @@ module.exports = {
     wip: true,
     cardName: 'Massaman Curry',
     name: 'Thai Massaman Curry',
-    img: '',
+    img: curry9,
     recipeAuthors: ['Erica Walker'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -68,19 +77,22 @@ module.exports = {
     directions: [
         { step: 'Over medium heat, heat oil in pot.', section: HEAT_PASTE },
         { step: 'Turn on a hood fan.', section: HEAT_PASTE },
-        { step: 'Add curry paste. Cook and stir (about 2 to 3 minutes).', section: HEAT_PASTE },
+        { step: 'Add curry paste. Cook and stir (about 2 to 3 minutes).', section: HEAT_PASTE, img: curry1 },
 
-        { step: `Add the "${LIQUIDS_SECTION}" section ingredients. Bring to a boil.`, section: HEAT_LIQUIDS },
+        { step: `Add the "${LIQUIDS_SECTION}" section ingredients. Bring to a boil.`, section: HEAT_LIQUIDS, img: [curry2, curry3, curry4, curry5] },
 
-        { step: 'Add the onion and chicken.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Add the onion and chicken.', section: SECTIONS.COOK_CHICKEN, img: curry6 },
         { step: 'Reduce to a simmer.', section: SECTIONS.COOK_CHICKEN },
         { step: 'Cook until the chicken is white and cooked through (about 5 minutes).', section: SECTIONS.COOK_CHICKEN },
         { step: 'Add the other half of the coconut milk. Bring to a boil.', section: SECTIONS.COOK_CHICKEN },
 
-        { step: `Add the "${POTATOES_AND_CARROTS_SECTION}" section ingredients.`, section: COOK_POTATOES_AND_CARROTS },
-        { step: 'Cover with a lid. Simmer until the center of the potatoes are softened.', section: COOK_POTATOES_AND_CARROTS },
+        { step: `Add the "${POTATOES_AND_CARROTS_SECTION}" section ingredients.`, section: COOK_POTATOES_AND_CARROTS, img: curry7 },
+        { step: 'Cover with a lid. Simmer until the center of the potatoes are softened.', section: COOK_POTATOES_AND_CARROTS, img: curry8 },
 
         { step: 'Serve over rice. Enjoy this delicious taste of Thailand.', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'Do not worry there will be enough liquid in this curry dish. The solid ingredients will cook down and will release some water.' },
     ],
     store: [
         {
