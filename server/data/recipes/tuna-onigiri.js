@@ -1,26 +1,30 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const onigiri1 = '../assets/Products/tuna-onigiri-1.jpeg';
+const onigiri2 = '../assets/Products/tuna-onigiri-2.jpeg';
+const onigiri3 = '../assets/Products/tuna-onigiri-3.jpeg';
+const onigiri4 = '../assets/Products/tuna-onigiri-4.jpeg';
+const onigiri5 = '../assets/Products/tuna-onigiri-5.jpeg';
+
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, TYPES, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require('./constants');
 const { MIXING_BOWL, SEAWEED, SESAME_SEEDS, SHORT_GRAINED_RICE, SALT, CANNED_TUNA, KEWPIE_MAYONNAISE, WATER, CAN_OPENER, FORK, SMALL_BOWL } = require('./ingredients');
 
 const TUNA_MAYO = 'Tuna Mayo';
 const PREP_TUNA_MAYO = 'Prep Tuna Mayo';
 
 module.exports = {
-    wip: true,
     cardName: 'Tuna Onigiri',
     name: 'Tuna Onigiri',
-    img: '',
+    img: onigiri5,
     recipeAuthors: ['Christie Lai'],
     recipeFinder: 'Samantha Pham',
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
     genre: [GENRES.ASIAN, GENRES.JAPANESE],
     method: [METHODS.WRAP],
     protein: [PROTEIN.FISH],
     type: [TYPES.RICE, TYPES.WRAP],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
@@ -30,7 +34,6 @@ module.exports = {
     ingredients: [
         { ...SHORT_GRAINED_RICE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked', section: SECTIONS.RICE },
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.RICE },
-
 
         { ...CANNED_TUNA, amount: 5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: TUNA_MAYO },
         { ...KEWPIE_MAYONNAISE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TUNA_MAYO },
@@ -54,15 +57,15 @@ module.exports = {
         { step: 'Open the can of tuna.', section: PREP_TUNA_MAYO },
         { step: 'Press the tuna down with a fork and drain.', section: PREP_TUNA_MAYO },
         { step: 'Transfer tuna to a small bowl.', section: PREP_TUNA_MAYO },
-        { step: 'Add mayo. Stir and set aside.', section: PREP_TUNA_MAYO },
+        { step: 'Add mayo. Stir and set aside.', section: PREP_TUNA_MAYO, img: onigiri1 },
 
         { step: 'Prep a small bowl of water.', section: SECTIONS.ASSEMBLE },
         { step: 'Dip hands in water.', section: SECTIONS.ASSEMBLE },
-        { step: 'Scoop 1/2 cup of cooked rice and form a ball.', section: SECTIONS.ASSEMBLE },
+        { step: 'Scoop 1/2 cup of cooked rice and form a ball.', section: SECTIONS.ASSEMBLE, img: onigiri2 },
         { step: 'Flatten into 1/2 inch thick discs.', section: SECTIONS.ASSEMBLE },
-        { step: 'With your thumb, push the center down and place 2 tablespoon of tuna mayo.', section: SECTIONS.ASSEMBLE },
+        { step: 'With your thumb, push the center down and place 2 tablespoon of tuna mayo.', section: SECTIONS.ASSEMBLE, img: onigiri3 },
         { step: 'Fold the rice around the filling.', section: SECTIONS.ASSEMBLE },
-        { step: 'Pack into a ball and shape it into a triangle.', section: SECTIONS.ASSEMBLE },
+        { step: 'Pack into a ball and shape it into a triangle.', section: SECTIONS.ASSEMBLE, img: onigiri4 },
         { step: 'Wrap the base of the rice ball with the seaweed.', section: SECTIONS.ASSEMBLE },
 
         { step: 'Enjoy this easy rice balls with sesame seeds.', section: SECTIONS.SERVE },
