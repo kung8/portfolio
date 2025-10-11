@@ -1,21 +1,22 @@
 import { useEffect, useMemo, useState } from 'react';
+
 import { useQueryClient } from '@tanstack/react-query';
 import Fuse from 'fuse.js';
 import { Redirect } from 'react-router-dom';
+
+import list from '../../../Assets/list.png';
 import { getAsyncData, useGetData } from '../../../hooks';
 import { Loader } from '../../Loader';
 import { NonDashboardPage } from '../../Page';
-import list from '../../../Assets/list.png';
+import { GROCERY_LIST_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
+import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { useGroceryList } from '../hooks/use-grocery-list';
-import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
+import { categorizeRecipeType, formatYield, getIngredientData, handleModalClass } from '../utils';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
-import { GROCERY_LIST_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
-import { categorizeRecipeType, formatYield } from '../utils';
-import { RecipeImageModal } from './RecipeImageModal';
 import { RecipeContext } from './RecipeContext';
-import { getIngredientData, handleModalClass } from '../utils';
 import { RecipeDetails } from './RecipeDetails';
+import { RecipeImageModal } from './RecipeImageModal';
 
 const convertIdToName = (id) =>
     id.split('-')
@@ -34,18 +35,6 @@ export const Recipe = ({ match }) => {
     const [selectedFigure, setSelectedFigure] = useState(null);
     const [selectedFigureLabel, setSelectedFigureLabel] = useState(null);
     const [supplies, setSupplies] = useState(item?.supplies || []);
-
-    useEffect(() => {
-        const newSupplies = (item?.supplies || []).map(supply => {
-            // if it's missing an id, generate one
-            if (supply.id) return supply;
-            return {
-                ...supply,
-                id: generateUUID(),
-            }
-        });
-        setSupplies(newSupplies);
-    }, [item?.supplies]);
 
     const queryClient = useQueryClient();
     const queryKey = ['getData', 'recipes', id];
@@ -77,6 +66,17 @@ export const Recipe = ({ match }) => {
         generateUUID,
     } = useGroceryList();
 
+    useEffect(() => {
+        const newSupplies = (item?.supplies || []).map(supply => {
+            // if it's missing an id, generate one
+            if (supply.id) return supply;
+            return {
+                ...supply,
+                id: generateUUID(),
+            }
+        });
+        setSupplies(newSupplies);
+    }, [generateUUID, item?.supplies]);
 
     // memoized ingredients
     const localIngredients = useMemo(() => {

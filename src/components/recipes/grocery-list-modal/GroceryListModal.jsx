@@ -1,17 +1,18 @@
 import { useEffect, useState } from 'react';
+
 import { DeleteGroceryListModal } from './DeleteGroceryListModal';
-import { EditGroceryListItemModal } from './EditGroceryListItemModal';
 import { DeleteMealPlanModal } from './DeleteMealPlanModal';
+import { EditGroceryListItemModal } from './EditGroceryListItemModal';
 import { EditMealPlanModal } from './EditMealPlanModal';
-import { GroceryListModalHeader } from './GroceryListModalHeader';
 import { GroceryListModalContent } from './GroceryListModalContent';
+import { GroceryListModalHeader } from './GroceryListModalHeader';
 import { MealPlanningModalContent } from './MealPlanningModalContent';
 import {
     GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY,
-    MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY,
     GROCERY_LIST_VIEW,
     MEAL_PLANNING_VIEW,
-    STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY,
+    MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY,
+    STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY
 } from '../constants';
 import { ApplyToIngredientsInPlannedMealModal } from './ApplyToIngredientsInPlannedMealModal';
 import { SettingsModal } from './SettingsModal';

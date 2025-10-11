@@ -1,7 +1,8 @@
 import { useState } from 'react';
+
 import highestVolumeBtn from '../../Assets/highest-volume-btn.png';
-import mediumVolumeBtn from '../../Assets/medium-volume-btn.png';
 import lowestVolumeBtn from '../../Assets/lowest-volume-btn.png';
+import mediumVolumeBtn from '../../Assets/medium-volume-btn.png';
 import mutedVolumeBtn from '../../Assets/muted-volume-btn.png';
 
 export const VolumeControls = () => {

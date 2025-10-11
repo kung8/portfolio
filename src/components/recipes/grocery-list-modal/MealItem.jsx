@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import edit from '../../../Assets/edit.png';
 
 export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChange, onInputChange, showDate, showType }) => {

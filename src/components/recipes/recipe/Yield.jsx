@@ -1,6 +1,6 @@
 import { formatYieldUnit } from '../utils';
-import { useRecipeContext } from './RecipeContext';
 import { InaccurateTimeStatement } from './InaccurateTimeStatement';
+import { useRecipeContext } from './RecipeContext';
 
 const QuickYieldAdjustment = ({ isActive, value }) => {
     const { item, setAppliedYieldAmount } = useRecipeContext();

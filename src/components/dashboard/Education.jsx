@@ -1,5 +1,5 @@
-import { Items } from '.';
 import { useGetData } from '../../hooks';
+import { Items } from '.';
 
 export const Education = ({ id }) => {
     const { data: education } = useGetData('education');

@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Items } from '.';
+
 import { useGetData } from '../../hooks';
+import { Items } from '.';
 
 export const Components = ({ id }) => {
     const [showMore, setShowMore] = useState(false);

@@ -1,9 +1,12 @@
 import { useState } from 'react';
+
 import axios from 'axios';
 import { Slide, ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 import japan from '../../Assets/me.jpeg';
 import { validator } from "../../utils/validator";
+
+import 'react-toastify/dist/ReactToastify.css';
 
 // const id = '1jMAfdIYWomKJf6khY9Eq-3pVWVmoXH82';
 // const open = `https://drive.google.com/file/d/${id}/view?usp=sharing`;

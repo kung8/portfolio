@@ -1,8 +1,10 @@
 import { useMemo } from 'react';
+
 import dayjs from 'dayjs';
-import { SortBy } from './SortBy';
-import { MealItem } from './MealItem';
+
 import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_SHORT_DATE, READABLE_SHORT_DATE_WITH_DAY_OF_WEEK, READABLE_SHORT_DATE_WITH_YEAR } from '../constants';
+import { MealItem } from './MealItem';
+import { SortBy } from './SortBy';
 
 export const MealPlanningModalContent = ({
     generateUUID,

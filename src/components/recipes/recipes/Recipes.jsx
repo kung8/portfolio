@@ -1,27 +1,29 @@
 import { useEffect, useState } from 'react';
+
 import { useQueryClient } from '@tanstack/react-query';
 import Fuse from 'fuse.js';
 import { useDebounce } from 'use-debounce';
+
 import { useGetData, useGetFeaturedRecipes } from '../../../hooks';
 import { convertToKebabCase } from '../../../utils';
 import { NonDashboardPage } from '../../Page';
-import { EmptyRecipeContainer } from './EmptyRecipeContainer';
+import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
+import { useFilters } from '../hooks/use-filters';
+import { useGroceryList } from '../hooks/use-grocery-list';
+import { EmptyRecipeContainer } from './EmptyRecipeContainer';
 import { LoaderContainer } from './LoaderContainer';
 import { RecipeItem } from './RecipeItem';
 import { TopArrow } from './TopArrow';
-import { useGroceryList } from '../hooks/use-grocery-list';
-import { useFilters } from '../hooks/use-filters';
-import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import {
     GROUPED_BY_ALPHABETIC,
     GROUPED_BY_GENRE,
-    GROUPED_BY_NONE,
-    RECIPES_FILTERS_LOCAL_STORAGE_KEY,
-    RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY,
     GROUPED_BY_INGREDIENTS_COUNT_ASCENDING,
     GROUPED_BY_INGREDIENTS_COUNT_DESCENDING,
+    GROUPED_BY_NONE,
+    RECIPES_FILTERS_LOCAL_STORAGE_KEY,
     RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY,
+    RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY
 } from '../constants';
 import { Legend } from './Legend';
 import { RecipeSortFilter } from './RecipeSortFilter';

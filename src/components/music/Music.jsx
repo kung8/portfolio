@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { useGetData } from '../../hooks';
 import { Cursor } from '../Cursor';
 import { NonDashboardPage } from '../Page';

@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { SwitchToggle } from "../../switch-toggle/SwitchToggle";
+
 import { toast } from 'react-toastify';
+
+import { SwitchToggle } from "../../switch-toggle/SwitchToggle";
 
 export const CookMode = () => {
     const [wakeLock, setWakeLock] = useState(null);

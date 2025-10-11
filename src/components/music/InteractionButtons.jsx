@@ -1,15 +1,14 @@
-import playBtn from '../../Assets/play-btn.png';
-import pauseBtn from '../../Assets/pause-btn.png';
-import previousBtn from '../../Assets/previous-btn.png';
 import nextBtn from '../../Assets/next-btn.png';
-
-import shuffleBtn from '../../Assets/shuffle-btn.png';
+import pauseBtn from '../../Assets/pause-btn.png';
+import playBtn from '../../Assets/play-btn.png';
+import previousBtn from '../../Assets/previous-btn.png';
 import repeatBtn from '../../Assets/repeat-btn.png';
-import selectedShuffleBtn from '../../Assets/selected-shuffle-btn.png';
 import selectedRepeatBtn from '../../Assets/selected-repeat-btn.png';
+import selectedShuffleBtn from '../../Assets/selected-shuffle-btn.png';
+import shuffleBtn from '../../Assets/shuffle-btn.png';
+import { useGetData } from '../../hooks';
 import { randomize } from '../../utils/randomize';
 import { orderTypeMap } from './data';
-import { useGetData } from '../../hooks';
 
 
 export const InteractionButtons = ({

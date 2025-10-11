@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+
 import closeBtn from '../../Assets/x.png';
 
 export const LyricsModal = ({

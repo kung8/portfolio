@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
-import { orderTypeMap } from './data';
-import { convertTimeToNumber } from '../../utils/time';
-import { AudioPlayer, InteractionButtons, ProgressBar, QueueModal, VolumeControls } from '.';
+
 import queueBtn from '../../Assets/queue-btn.png';
 import { useGetData } from '../../hooks';
+import { convertTimeToNumber } from '../../utils/time';
+import { AudioPlayer, InteractionButtons, ProgressBar, QueueModal, VolumeControls } from '.';
+import { orderTypeMap } from './data';
 
 const formatSongName = (name) => name.toLowerCase().replaceAll(' ', '-');
 

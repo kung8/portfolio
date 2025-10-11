@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import closeBtn from '../../../Assets/x.png';
+
 import settingsBtn from '../../../Assets/settings.png';
+import closeBtn from '../../../Assets/x.png';
 import { Dropdown } from '../../dropdown/dropdown';
 import { GROCERY_LIST_VIEW, MEAL_PLANNING_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 

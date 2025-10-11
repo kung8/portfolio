@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
+
 import dayjs from 'dayjs';
+
+import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
 import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_SHORT_DATE } from '../constants';
+import { getValidDateRangeError } from './getValidDateRangeError';
 import { RecipeDateInput } from './RecipeDateInput';
 import { RecipeDropdownInput } from './RecipeDropdownInput';
-import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
-import { getValidDateRangeError } from './getValidDateRangeError';
 
 export const EditMealPlanModal = ({
     generateUUID,

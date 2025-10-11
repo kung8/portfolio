@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
+
 import dayjs from 'dayjs';
+
 import { useGetIngredientCategories } from '../../../hooks';
+import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
 import { DATE_FORMAT, READABLE_SHORT_DATE } from '../constants';
 import { useRecipeType } from '../hooks/use-recipe-type';
+import { getVendorOptions } from '../utils';
+import { getValidDateRangeError } from './getValidDateRangeError';
 import { RecipeDateInput } from './RecipeDateInput';
 import { RecipeDropdownInput } from './RecipeDropdownInput';
-import { getValidDateRangeError } from './getValidDateRangeError';
-import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
-import { getVendorOptions } from '../utils';
 
 export const EditGroceryListItemModal = ({
     generateUUID,

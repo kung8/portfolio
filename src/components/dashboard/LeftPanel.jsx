@@ -1,8 +1,8 @@
-import { links } from '.';
 import githubLogo from '../../Assets/github.png';
-import linkedInLogo from '../../Assets/linkedin.png';
 import gmailLogo from '../../Assets/gmail.png';
+import linkedInLogo from '../../Assets/linkedin.png';
 import messageLogo from '../../Assets/messages.png';
+import { links } from '.';
 
 export const LeftPanel = ({ selected, setSelected }) => {
     const handleScroll = (num) => {

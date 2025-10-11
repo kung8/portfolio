@@ -1,5 +1,5 @@
-import { useRecipeContext } from './RecipeContext';
 import { formatIngredientItem, getIngredientData } from '../utils';
+import { useRecipeContext } from './RecipeContext';
 
 export const IngredientsHeader = () => {
     const { conversionRate, formattedIngredients, handleAddIngredientsToGroceryListModalOpen, item, localIngredients, selectedIngredients, setSelectedIngredients } = useRecipeContext();

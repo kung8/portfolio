@@ -1,4 +1,4 @@
-import { About, Experiences, Projects, Products, Components, Education, Contact } from '..';
+import {  About, Components, Contact, Education, Experiences, Products, Projects } from '..';
 
 export const links = [
     {

@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ModalBody, ModalContent } from '../../modal/ModalContent';
-import xBtn from '../../../Assets/x.png';
+
 import arrow from '../../../Assets/arrow.png';
 import disabledArrow from '../../../Assets/disabled-arrow.png';
+import xBtn from '../../../Assets/x.png';
+import { ModalBody, ModalContent } from '../../modal/ModalContent';
 import { useRecipeContext } from './RecipeContext';
 
 export const RecipeImageModal = () => {

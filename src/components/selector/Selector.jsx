@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import deleteIcon from '../../Assets/close.png';
-import Wheel from './Wheel';
-import { times } from './time';
+
 import { Slide, ToastContainer, toast } from 'react-toastify';
+
+import deleteIcon from '../../Assets/close.png';
 import { NonDashboardPage } from "../Page";
+import { times } from './time';
+import Wheel from './Wheel';
 
 const convertStringToObject = (str) => str.split('&').reduce((acc, item) => {
     const index = item.indexOf('=');

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+
 import { links } from '.';
 
 export const RightPanel = ({ setSelected }) => {

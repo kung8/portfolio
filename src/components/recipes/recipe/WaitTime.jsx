@@ -1,5 +1,5 @@
-import { useRecipeContext } from './RecipeContext';
 import { formatTime } from '../utils';
+import { useRecipeContext } from './RecipeContext';
 
 export const WaitTime = () => {
     const { item } = useRecipeContext();

@@ -1,6 +1,8 @@
 import dayjs from 'dayjs';
-import closeBtn from '../../../Assets/close.png';
 import Calendar from 'react-calendar';
+
+import closeBtn from '../../../Assets/close.png';
+
 import 'react-calendar/dist/Calendar.css';
 
 export const RecipeDateInput = ({

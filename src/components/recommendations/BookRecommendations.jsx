@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
-import { RecommendationPage, RecommendationContainer, ReviewContainer } from './RecommendationPage';
-import { SearchBar } from '../search-bar/SearchBar';
+
 import { Filter } from '../filter/Filter';
+import { SearchBar } from '../search-bar/SearchBar';
 import { BookFilterContainer } from './BookFilterContainer';
+import {  RecommendationContainer, RecommendationPage, ReviewContainer } from './RecommendationPage';
 
 const bookFilterOptions = {
     rating: {
@@ -122,7 +123,6 @@ export const BookRecommendations = ({ category, reviews, recommendations }) => {
     useEffect(() => {
         const rootId = document.getElementById('root');
         const html = document.querySelector('html');
-        const isMobile = window.screen.width < 768;
 
         if (showFilter) {
             rootId.style.overflowY = 'hidden';

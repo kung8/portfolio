@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import { useCategoryName } from '../hooks/use-category-name';
 
 export const EmptyGroceryListItem = ({ generateUUID, setGroceryList, updateLocalStorage }) => {

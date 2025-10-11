@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { lyricMap } from './data';
-import playLogo from '../../Assets/play-btn.png';
-import pauseLogo from '../../Assets/pause-btn.png';
+
 import documentLogo from '../../Assets/document.png';
-import { LyricsModal } from './LyricsModal';
+import pauseLogo from '../../Assets/pause-btn.png';
+import playLogo from '../../Assets/play-btn.png';
 import { useGetData } from '../../hooks';
+import { lyricMap } from './data';
+import { LyricsModal } from './LyricsModal';
 
 const MusicItem = ({ song, index, selectedSong, setSelectedSong, isPlaying, setIsPlaying, handleOverlay, setSelectedLyric }) => {
     const [hover, setHover] = useState(false);

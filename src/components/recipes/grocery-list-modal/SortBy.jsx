@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import { Dropdown } from '../../dropdown/dropdown';
 
 export const SortBy = ({ options, setSortBy, sortBy }) => {

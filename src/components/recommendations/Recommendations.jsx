@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { NonDashboardPage } from '../Page';
+
 import { useGetData } from '../../hooks';
+import { NonDashboardPage } from '../Page';
 import { BookRecommendations } from './BookRecommendations';
 import { RestaurantRecommendations } from './RestaurantRecommendations';
 

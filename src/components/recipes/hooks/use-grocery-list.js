@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
-import { useCategoryName } from './use-category-name';
-import { GROCERY_LIST_LOCAL_STORAGE_KEY, MEAL_PLAN_LOCAL_STORAGE_KEY, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, GROCERY_LIST_VIEW } from '../constants';
+import { useCallback, useEffect, useState } from 'react';
+
+import { GROCERY_LIST_LOCAL_STORAGE_KEY, GROCERY_LIST_VIEW, MEAL_PLAN_LOCAL_STORAGE_KEY, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 import { handleModalClass } from '../utils';
+import { useCategoryName } from './use-category-name';
 
 export const useGroceryList = () => {
     const [show, setShow] = useState(false);
@@ -10,9 +11,9 @@ export const useGroceryList = () => {
     const [groceryList, setGroceryList] = useState([]);
     const { getCategoryName } = useCategoryName();
 
-    const generateUUID = () => {
+    const generateUUID = useCallback(() => {
         return Math.random().toString(36).substring(2) + (new Date()).getTime().toString(36);
-    }
+    }, [])
 
     const getGroceryListFromLocalStorage = () => {
         let changed = false;

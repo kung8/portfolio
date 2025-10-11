@@ -1,9 +1,11 @@
 import { useMemo } from 'react';
+
 import dayjs from 'dayjs';
+
+import { READABLE_SHORT_DATE } from '../constants';
 import { EmptyGroceryListItem } from './EmptyGroceryListItem';
 import { GroceryListItem } from './GroceryListItem';
 import { SortBy } from './SortBy';
-import { READABLE_SHORT_DATE } from '../constants';
 
 export const GroceryListModalContent = ({
     generateUUID,

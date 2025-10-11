@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import { Dropdown } from '../../dropdown/dropdown';
 import { GROUPED_BY_OPTIONS } from '../constants';
 

@@ -1,7 +1,9 @@
 import { useState } from 'react';
-import Card from './CreatingCard';
+
+import { clonedeep } from 'lodash';
+
 import cardsArr from './Cards';
-import clonedeep from 'lodash.clonedeep';
+import Card from './CreatingCard';
 
 function CardsDisplay() {
     const [cards, updateCards] = useState(cardsArr);
@@ -19,7 +21,7 @@ function CardsDisplay() {
 
     const backToTop = async () => {
         window.scrollTo({
-            top: 0, 
+            top: 0,
             left: 0,
             behavior: 'smooth'
         });

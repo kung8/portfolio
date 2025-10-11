@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
-import { getGreeting } from '../utils';
-import { RECIPE_APP_USER } from '../constants';
+
 import { useDebounce } from 'use-debounce';
+
+import { RECIPE_APP_USER } from '../constants';
+import { getGreeting } from '../utils';
 
 
 export const Greeting = () => {

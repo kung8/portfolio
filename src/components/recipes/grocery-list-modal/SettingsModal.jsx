@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
+
 import { isEqual } from 'lodash';
 import { useDebouncedCallback } from 'use-debounce';
+
 import closeBtn from '../../../Assets/x.png';
 
 const VendorOptionItem = ({ originalOption, removeVendorOption, updateVendorOption }) => {

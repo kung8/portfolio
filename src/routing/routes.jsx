@@ -1,10 +1,9 @@
-import { Route, Switch } from 'react-router-dom';
+import {  Route, Switch } from 'react-router-dom';
 
 import { Dashboard } from '../components/dashboard';
-// import { Hymns } from '../components/hymns';
+import Kronos from '../components/incredibles/Kronos';
 import { Music } from '../components/music';
 import { Recipe, Recipes } from '../components/recipes';
-import Kronos from '../components/incredibles/Kronos';
 import { Recommendations } from '../components/recommendations/Recommendations';
 import Selector from '../components/selector/Selector';
 

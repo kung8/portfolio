@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { LeftPanel, RightPanel } from '.';
+
 import { Cursor } from '../Cursor';
+import { LeftPanel, RightPanel } from '.';
 
 export const Dashboard = () => {
     const [selected, setSelected] = useState(0);

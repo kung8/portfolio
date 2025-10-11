@@ -1,7 +1,8 @@
 import { useState } from 'react';
+
+import check from '../../Assets/check.png';
 import { Dropdown } from '../dropdown/dropdown';
 import { ModalBody, ModalContent, ModalHeader } from '../modal/ModalContent';
-import check from '../../Assets/check.png';
 
 const FilterDropdown = ({
     category,

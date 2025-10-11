@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import closeBtn from '../../Assets/x.png';
-import playLogo from '../../Assets/play-btn.png';
+
 import pauseLogo from '../../Assets/pause-btn.png';
+import playLogo from '../../Assets/play-btn.png';
+import closeBtn from '../../Assets/x.png';
 
 const SongItem = ({
     song,

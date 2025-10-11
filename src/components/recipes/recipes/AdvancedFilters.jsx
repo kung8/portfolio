@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
+
+import Fuse from 'fuse.js';
+import { isEqual } from 'lodash';
+
+import closeBtn from '../../../Assets/x.png';
 import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
+import { SearchBar } from '../../search-bar/SearchBar';
 import { handleModalClass } from '../utils';
 import { getMenuFilterItems } from '../utils/get-menu-filter-items';
-import Fuse from 'fuse.js';
-import { SearchBar } from '../../search-bar/SearchBar';
-import closeBtn from '../../../Assets/x.png';
-import { isEqual } from 'lodash';
 
 const IngredientSearchBar = ({ search, setSearch }) => (
     <div className="search-and-filter-visible-toggle-container">
