@@ -95,6 +95,7 @@ module.exports = {
     ],
     notes: [
         { note: 'Do not worry there will be enough liquid in this curry dish. The solid ingredients will cook down and will release some water.' },
+        { note: 'I have not been able to perfect the taste and flavor. I did not feel the fusion of ingredients specifically the peanut-based ingredients.' }
     ],
     store: [
         {
