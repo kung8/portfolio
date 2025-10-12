@@ -1,6 +1,6 @@
 const tieu1 = '../assets/Products/banh-tieu-1.jpeg';
 const tieu2 = '../assets/Products/banh-tieu-2.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_POWDER,
     BAKING_SHEET,
@@ -30,6 +30,7 @@ module.exports = {
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY],
+    type: [TYPES.DESSERT],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 7, unit: TIME_UNITS.MINUTE },

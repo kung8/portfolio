@@ -1,5 +1,5 @@
 const parfait = '../assets/Products/parfait.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, TYPES } = require("./constants");
 const {
     BERRY,
     CASHEWS,
@@ -19,6 +19,7 @@ module.exports = {
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT, CATEGORIES.SNACK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],
+    type: [TYPES.DESSERT],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.MINUTE },

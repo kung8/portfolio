@@ -11,7 +11,7 @@ const sauteed = '../assets/Products/garlic-chicken-with-herbs-sauteed-fragrant.j
 const seasoned = '../assets/Products/garlic-chicken-with-herbs-seasoned-chicken.jpeg';
 const wine = '../assets/Products/garlic-chicken-with-herbs-white-wine.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_THIGH, CHICKEN_BROTH, FRESH_ROSEMARY, FRESH_SAGE, GARLIC, JASMINE_RICE, LARGE_PAN, SALT, STOVE, UNSALTED_BUTTER, WHITE_WINE } = require('./ingredients');
 
 module.exports = {
@@ -24,6 +24,7 @@ module.exports = {
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
+    type: [TYPES.MAIN_COURSE],
     protein: [PROTEIN.CHICKEN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },

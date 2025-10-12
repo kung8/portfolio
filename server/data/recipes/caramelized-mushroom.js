@@ -2,7 +2,7 @@ const combined = '../assets/Products/caramelized-mushroom-combined.jpeg';
 const cooked = '../assets/Products/caramelized-mushroom-cooked.jpeg';
 const cooking = '../assets/Products/caramelized-mushroom-cooking.jpeg';
 const raw = '../assets/Products/caramelized-mushroom-raw.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS, TYPES } = require("./constants");
 const {
     BALSAMIC_VINEGAR,
     BLACK_PEPPER,
@@ -25,6 +25,7 @@ module.exports = {
     category: [CATEGORIES.TOPPING],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SAUTE],
+    type: [TYPES.VEGETABLE],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 2, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

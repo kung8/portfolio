@@ -2,7 +2,7 @@ const satay1 = '../assets/Products/malaysian-satay-1.jpeg';
 const satay2 = '../assets/Products/malaysian-satay-2.jpeg';
 const satay3 = '../assets/Products/malaysian-satay-3.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALUMINUM_FOIL,
     ASIAN_CHILI_GARLIC_SAUCE,
@@ -42,6 +42,7 @@ module.exports = {
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.MALAYSIAN, GENRES.ASIAN],
     method: [METHODS.MARINADE, METHODS.BAKE],
+    type: [TYPES.FINGER_FOOD],
     protein: [PROTEIN.CHICKEN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 12, unit: TIME_UNITS.MINUTE },
@@ -114,11 +115,11 @@ module.exports = {
             container: STORAGE_CONTAINER.AIRTIGHT,
         },
     ],
-    reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
-    ],
+    // reheat: [
+    //     // {
+    //     //     method: REHEAT_METHODS.BAKE,
+    //     //     instruction: '',
+    //     // },
+    // ],
     mealPrep: true,
 };

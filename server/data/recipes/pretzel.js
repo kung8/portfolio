@@ -11,7 +11,7 @@ const formed = '../assets/Products/pretzels-formed.jpeg';
 // const oven = '../assets/Products/pretzels-in-oven.jpeg';
 const raw = '../assets/Products/pretzels-on-baking-sheet-raw.jpeg';
 const rope = '../assets/Products/pretzels-rope.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER } = require("./constants");
+const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, TYPES } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_SHEET,
@@ -39,6 +39,7 @@ module.exports = {
     category: [CATEGORIES.DESSERT, CATEGORIES.SNACK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
+    type: [TYPES.FINGER_FOOD],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

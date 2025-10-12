@@ -28,7 +28,7 @@ const well = '../assets/Products/pizza-flour-well.jpeg';
 const wellWater = '../assets/Products/pizza-flour-well-with-water.jpeg';
 const expandedWell = '../assets/Products/pizza-flour-expanded-well-with-water.jpeg';
 const dough = '../assets/Products/pizza-dough-in-bowl.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, TYPES } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BACON,
@@ -94,6 +94,7 @@ module.exports = {
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
+    type: [TYPES.PIZZA],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },

@@ -22,6 +22,7 @@ module.exports = {
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
+    type: [TYPES.BISCUIT, TYPES.DESSERT],
     yields: { amount: 15, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 60, unit: TIME_UNITS.MINUTE },

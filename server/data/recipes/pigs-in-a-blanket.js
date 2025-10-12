@@ -12,6 +12,7 @@ module.exports = {
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
+    type: [TYPES.FINGER_FOOD],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

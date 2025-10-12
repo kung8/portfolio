@@ -3,7 +3,7 @@ const melted = '../assets/Products/no-bake-cookie-melted.jpeg';
 const oat = '../assets/Products/no-bake-cookie-oat.jpeg';
 const all = '../assets/Products/no-bake-cookie-all.jpeg';
 const finished = '../assets/Products/no-bake-cookie-finished.jpeg';
-const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, TYPES } = require("./constants");
 const {
     COCOA_POWDER,
     MILK,
@@ -27,6 +27,7 @@ module.exports = {
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER],
+    type: [TYPES.COOKIE],
     protein: [PROTEIN.PEANUT],
     yields: { amount: 32, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },

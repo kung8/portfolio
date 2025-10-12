@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { DRY_MILK_POWDER, SAUCEPAN, STOVE, TUPPERWARE, UNSALTED_BUTTER } = require('./ingredients');
 
 module.exports = {
@@ -13,6 +13,7 @@ module.exports = {
     category: [CATEGORIES.TOPPING],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.MELT],
+    type: [TYPES.SAUCE],
     yields: { amount: 3 / 2, unit: YIELD_UNITS.CUP },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },

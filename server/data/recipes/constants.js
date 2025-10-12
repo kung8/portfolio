@@ -145,6 +145,7 @@ const METHODS = {
     CHILLED: 'Chilled',
     DEEP_FRY: 'Deep Fry',
     GRILL: 'Grill',
+    FERMENT: 'Ferment',
     KNEAD: 'Knead',
     MARINADE: 'Marinade',
     MASH: 'Mash',

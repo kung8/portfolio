@@ -19,6 +19,7 @@ module.exports = {
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.SNACK, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BLEND],
+    type: [TYPES.SMOOTHIE],
     protein: [PROTEIN.PEANUT],
     yields: { amount: 3 / 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },

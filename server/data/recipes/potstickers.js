@@ -39,6 +39,7 @@ module.exports = {
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.PAN_FRY, METHODS.STEAM],
+    type: [TYPES.FINGER_FOOD],
     protein: [PROTEIN.PORK],
     types: [TYPES.FINGER_FOOD],
     yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
