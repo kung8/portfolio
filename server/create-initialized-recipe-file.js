@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
-const { CATEGORIES, GENRES, METHODS, PROTEIN, TYPES } = require('./data/recipes/constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, TYPES, DIET, ALLERGIES } = require('./data/recipes/constants');
 
 const initializedTemplateFilePath = path.join(__dirname, '..', 'server', 'data', 'recipes', 'initialized-template.js');
 const recipesFilePath = path.join(__dirname, '..', 'server', 'data', 'recipes.js');
@@ -118,7 +118,9 @@ const createPrompt = async () => {
         }
     ]).then(async (answers) => {
         const template = fs.readFileSync(initializedTemplateFilePath, 'utf8');
+        const matchingAllergies = convertValuesToKeys(ALLERGIES, answers.allergies, 'ALLERGIES.');
         const matchingCategories = convertValuesToKeys(CATEGORIES, answers.categories, 'CATEGORIES.');
+        const matchingDiet = convertValuesToKeys(DIET, answers.diet, 'DIET.');
         const matchingGenres = convertValuesToKeys(GENRES, answers.genres, 'GENRES.');
         const matchingMethods = convertValuesToKeys(METHODS, answers.methods, 'METHODS.');
         const matchingProtein = convertValuesToKeys(PROTEIN, answers.protein, 'PROTEIN.');
@@ -127,7 +129,9 @@ const createPrompt = async () => {
         let customizedTemplate = template
             .replace(/{{cardName}}/g, answers.cardName)
             .replace(/{{name}}/g, answers.name ? answers.name : answers.cardName)
+            .replace(/{{allergies}}/g, '[' + matchingAllergies + ']')
             .replace(/'{{category}}'/g, '[' + matchingCategories + ']')
+            .replace(/{{diet}}/g, '[' + matchingDiet + ']')
             .replace(/'{{genre}}'/g, '[' + matchingGenres + ']')
             .replace(/'{{method}}'/g, '[' + matchingMethods + ']')
             .replace(/'{{protein}}'/g, '[' + matchingProtein + ']')

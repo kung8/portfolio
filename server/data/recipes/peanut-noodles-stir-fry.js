@@ -8,7 +8,7 @@ const stirFry7 = '../assets/Products/peanut-noodles-stir-fry-7.jpeg';
 const stirFry8 = '../assets/Products/peanut-noodles-stir-fry-8.jpeg';
 const stirFry9 = '../assets/Products/peanut-noodles-stir-fry-9.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BEAN_SPROUT, CARROT, CHINESE_SLICED_NOODLES, GREEN_ONION, GROUND_BEEF, HONEY, LIGHT_SOY_SAUCE, NAPA_CABBAGE, PEANUT_BUTTER, SESAME_OIL, SHIITAKE_MUSHROOM, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const FIRST_VEGETABLES_SECTION = 'First Vegetables';
@@ -27,6 +27,8 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.NOODLE, TYPES.STIR_FRY],
+    allergies: [ALLERGIES.PEANUT, ALLERGIES.SESAME],
+    diet: [DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

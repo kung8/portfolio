@@ -4,7 +4,7 @@ const schnitzel3 = '../assets/Products/german-schnitzel-3.jpeg';
 const schnitzel4 = '../assets/Products/german-schnitzel-4.jpeg';
 const schnitzel5 = '../assets/Products/german-schnitzel-5.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BLACK_PEPPER, BONELESS_PORK_CHOPS, BREADCRUMBS, COOLING_RACK, EGG, FRYING_PAN, LEMON, MEAT_MALLET, PAPER_TOWELS, PARSLEY, PLASTIC_WRAP, SALT, SMALL_BOWL, STOVE, VEGETABLE_OIL } = require('./ingredients');
 
 const PORK_CHOPS_SECTION = 'Pork Chops';
@@ -29,6 +29,8 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.PROTEIN, TYPES.MAIN_COURSE],
+    allergies: [ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
+    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },

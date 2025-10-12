@@ -7,7 +7,7 @@ const basil7 = '../assets/Products/thai-basil-7.jpeg';
 const basil8 = '../assets/Products/thai-basil-8.jpeg';
 const basil9 = '../assets/Products/thai-basil-9.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BASIL_LEAF, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BROWN_SUGAR, CHICKEN_BROTH, FISH_SAUCE, GARLIC, JASMINE_RICE, LIGHT_SOY_SAUCE, MIXING_BOWL, OYSTER_SAUCE, SHALLOT, STOVE, THAI_CHILI_PEPPER, VEGETABLE_OIL, WHITE_SUGAR, WOK } = require('./ingredients');
 
 module.exports = {
@@ -23,6 +23,8 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.MAIN_COURSE],
+    allergies: [ALLERGIES.FISH],
+    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

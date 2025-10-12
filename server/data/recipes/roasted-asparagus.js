@@ -3,7 +3,7 @@ const asparagus2 = '../assets/Products/roasted-asparagus-2.jpeg';
 const asparagus3 = '../assets/Products/roasted-asparagus-3.jpeg';
 const asparagus4 = '../assets/Products/roasted-asparagus-4.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, ASPARAGUS, BAKING_SHEET, BLACK_PEPPER, LEMON_JUICE, OLIVE_OIL, OVEN, PARMESAN_CHEESE, RED_PEPPER_FLAKES, SALT, UNSALTED_BUTTER } = require('./ingredients');
 
 module.exports = {
@@ -18,6 +18,8 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.VEGETABLE],
+    allergies: [ALLERGIES.DAIRY],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },

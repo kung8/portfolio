@@ -3,7 +3,7 @@ const frenchBread = '../assets/Products/french-bread.jpeg';
 const porkLoafCut = '../assets/Products/pork-loaf-cut.jpeg';
 const porkLoafOpened = '../assets/Products/pork-loaf-opened.jpeg';
 const porkLoafWrapped = '../assets/Products/pork-loaf-wrapped.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAGUETTE_PAN,
     BAKING_PAN,
@@ -61,6 +61,8 @@ module.exports = {
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],
+    allergies: [ALLERGIES.FISH, ALLERGIES.GLUTEN, ALLERGIES.SESAME, ALLERGIES.WHEAT],
+    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },

@@ -2,7 +2,7 @@ const tart1 = '../assets/Products/pop-tarts-1.jpeg';
 const tart2 = '../assets/Products/pop-tarts-2.jpeg';
 const tart3 = '../assets/Products/pop-tarts-3.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, MILK, OVEN, PARCHMENT_PAPER, POWDERED_SUGAR, REFRIGERATED_PIE_CRUST, STRAWBERRY_JAM } = require('./ingredients');
 
 const POP_TARTS_SECTION = 'Pop Tarts';
@@ -23,6 +23,8 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.FINGER_FOOD, TYPES.PASTRY],
+    allergies: [ALLERGIES.DAIRY],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 1, unit: YIELD_UNITS.DOZEN },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

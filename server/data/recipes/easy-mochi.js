@@ -6,7 +6,7 @@ const mochi5 = '../assets/Products/easy-mochi-5.jpeg';
 const mochi6 = '../assets/Products/easy-mochi-6.jpeg';
 const mochi7 = '../assets/Products/easy-mochi-7.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CORNSTARCH, ICE_CREAM, MOCHIKO } = require('./ingredients');
 
 const MOCHI_SECTION = 'Mochi';
@@ -28,6 +28,8 @@ module.exports = {
     genre: [GENRES.JAPANESE],
     method: [METHODS.MELT, METHODS.MICROWAVE, METHODS.KNEAD],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT],
+    allergies: [],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 3, unit: TIME_UNITS.MINUTE },

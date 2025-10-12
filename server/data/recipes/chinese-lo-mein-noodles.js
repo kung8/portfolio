@@ -8,7 +8,7 @@ const plated2 = '../assets/Products/lo-mein-plated-2.jpeg';
 const plated3 = '../assets/Products/lo-mein-plated-3.jpeg';
 const sauce = '../assets/Products/lo-mein-sauce.jpeg';
 const steamed = '../assets/Products/lo-mein-steamed-broccoli.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
+const { ALLERGIES, CATEGORIES, DIET, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
 const {
     BLACK_PEPPER,
     BROCCOLI,
@@ -47,6 +47,8 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.NOODLE],
+    allergies: [ALLERGIES.SESAME],
+    diet: [DIET.DAIRY_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

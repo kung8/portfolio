@@ -5,7 +5,7 @@ const pie4 = '../assets/Products/no-bake-pumpkin-pie-4.jpeg';
 const pie5 = '../assets/Products/no-bake-pumpkin-pie-5.jpeg';
 const pie6 = '../assets/Products/no-bake-pumpkin-pie-6.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CREAM_CHEESE, GRAHAM_CRACKER_PIE_CRUST, MILK, PUMPKIN_PIE_SPICE, PUMPKIN_PUREE, SEMI_SWEET_CHOCOLATE_BAR, VANILLA_EXTRACT, VANILLA_INSTANT_PUDDING_MIX, WHIPPED_TOPPING, WHITE_SUGAR } = require('./ingredients');
 
 const PUMPKIN_PUREE_FILLING_SECTION = 'Pumpkin Puree Filling';
@@ -26,6 +26,8 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.CHILLED],
     type: [TYPES.DESSERT],
+    allergies: [ALLERGIES.DAIRY],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },

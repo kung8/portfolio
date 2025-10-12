@@ -7,7 +7,7 @@ const dumpling6 = '../assets/Products/dumpling-soup-6.jpeg';
 const dumpling7 = '../assets/Products/dumpling-soup-7.jpeg';
 const dumpling8 = '../assets/Products/dumpling-soup-8.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BABY_SPINACH, CARROT, CHICKEN_BROTH, CHILI_OIL, DUMPLINGS, GARLIC, GREEN_ONION, GROUND_GINGER, LARGE_POT, LIGHT_SOY_SAUCE, MISO_PASTE, SESAME_OIL, SMALL_BOWL, SRIRACHA_SAUCE, STOVE, VEGETABLE_OIL } = require('./ingredients');
 
 const MISO_PASTE_MIXTURE = 'Miso Paste Mixture';
@@ -24,6 +24,8 @@ module.exports = {
     genre: [GENRES.ASIAN],
     method: [METHODS.SIMMER],
     type: [TYPES.SOUP],
+    allergies: [ALLERGIES.SESAME],
+    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 2, unit: YIELD_UNITS.QUART },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },

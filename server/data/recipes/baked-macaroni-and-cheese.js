@@ -20,7 +20,7 @@ const topPasta = '../assets/Products/baked-macaroni-and-cheese-top-pasta-layer.j
 const tupperware = '../assets/Products/baked-macaroni-and-cheese-tupperware.jpeg';
 const plate4 = '../assets/Products/baked-macaroni-and-cheese-full-plate-4.jpeg';
 const plate5 = '../assets/Products/baked-macaroni-and-cheese-full-plate-5.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BLACK_PEPPER, CHEDDAR_CHEESE, COLANDER, COOKING_SPRAY, ELBOW_MACARONI, GRUYERE_CHEESE, HEAVY_CREAM, LARGE_POT, MIXING_BOWL, OLIVE_OIL, OVEN, PANKO_BREADCRUMBS, PARMESAN_CHEESE, SALT, SMALL_BOWL, SMOKED_PAPRIKA, STOVE, UNSALTED_BUTTER, WHOLE_MILK } = require('./ingredients');
 
 module.exports = {
@@ -35,6 +35,8 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL, METHODS.BAKE],
     type: [TYPES.CASSEROLE, TYPES.PASTA],
+    allergies: [ALLERGIES.DAIRY, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
+    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

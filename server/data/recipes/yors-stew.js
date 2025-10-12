@@ -8,7 +8,7 @@ const stew7 = '../assets/Products/yors-stew-7.jpeg';
 const stew8 = '../assets/Products/yors-stew-8.jpeg';
 const stew9 = '../assets/Products/yors-stew-9.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CARROT, CHICKEN_BOUILLON, CORNSTARCH, EGG, FENNEL_SEEDS, GARLIC, HOT_DOG, PAPRIKA, PORK_BUTT, POTATO, RED_BELL_PEPPER, RED_WINE, SALT, SOUR_CREAM, SWEET_ONION, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const SEARING_SECTION = 'Searing';
@@ -39,6 +39,8 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.EGG, PROTEIN.PORK],
     type: [TYPES.CURRY],
+    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 2, unit: TIME_UNITS.HOUR },

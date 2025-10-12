@@ -11,7 +11,7 @@ const raw = '../assets/Products/bbq-pulled-pork-raw-pork.jpeg';
 const wet = '../assets/Products/bbq-pulled-pork-wet.jpeg';
 const plate1 = '../assets/Products/bbq-pulled-pork-full-plate-1.jpeg';
 const plate2 = '../assets/Products/bbq-pulled-pork-full-plate-2.jpeg';
-const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
+const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, DIET } = require("./constants");
 const {
     APPLE_CIDER_VINEGAR,
     BBQ_SAUCE,
@@ -43,6 +43,8 @@ module.exports = {
     method: [METHODS.SLOW_COOK],
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],
+    allergies: [],
+    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 6, unit: TIME_UNITS.HOUR },

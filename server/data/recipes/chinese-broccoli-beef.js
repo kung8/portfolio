@@ -9,7 +9,7 @@ const marinating = '../assets/Products/broccoli-beef-marinating-beef.jpeg';
 const thickened = '../assets/Products/broccoli-beef-sauce-thickened.jpeg';
 const sauce = '../assets/Products/broccoli-beef-sauce.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_SODA,
     BEEF,
@@ -46,6 +46,8 @@ module.exports = {
     method: [METHODS.STIR_FRY, METHODS.BLANCH],
     protein: [PROTEIN.BEEF],
     type: [TYPES.STIR_FRY],
+    allergies: [ALLERGIES.SESAME],
+    diet: [DIET.DAIRY_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

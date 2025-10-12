@@ -7,7 +7,7 @@ const mix = '../assets/Products/sourdough-starter-feeding-mix.jpeg';
 const mixed = '../assets/Products/sourdough-starter-feeding-mixed.jpeg';
 
 const { ALL_PURPOSE_FLOUR, WATER } = require('./ingredients');
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 
 const CREATING_STARTER = 'Creating Starter';
 const FEEDING_STARTER = 'Feeding Starter';
@@ -23,6 +23,8 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.FERMENT],
     type: [TYPES.BREAD],
+    allergies: [ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
+    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 'Infinite', unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     websites: [

@@ -1,7 +1,0 @@
-{
-  "watch": ["server/data/recipes/*.js"],
-  "exec": "node sort-imports.js sort",
-  "ext": "js",
-  "ignore": ["node_modules/"],
-  "delay": "1000"
-}

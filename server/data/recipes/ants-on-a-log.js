@@ -1,6 +1,6 @@
 const side = '../assets/Products/ants-on-a-log-side.jpeg';
 const straight = '../assets/Products/ants-on-a-log-straight-on.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CELERY, KNIFE, PEANUT_BUTTER, RAISINS } = require('./ingredients');
 
 module.exports = {
@@ -14,6 +14,8 @@ module.exports = {
     method: [METHODS.RAW],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.VEGETABLE, TYPES.FINGER_FOOD],
+    allergies: [ALLERGIES.PEANUT],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 3, unit: TIME_UNITS.MINUTE },
     separated: false,

@@ -10,7 +10,7 @@ const pot6 = '../assets/Products/chili-in-pot-6.jpeg';
 const pot7 = '../assets/Products/chili-in-pot-7.jpeg';
 const plated3 = '../assets/Products/chili-plated-3.jpeg';
 const plated4 = '../assets/Products/chili-plated-4.jpeg';
-const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BEEF_BROTH,
     BLACK_PEPPER,
@@ -50,6 +50,8 @@ module.exports = {
     method: [METHODS.BOIL],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SOUP],
+    allergies: [],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     separated: true,
     websites: [
         { label: 'Chili', link: 'https://www.spendwithpennies.com/the-best-chili-recipe/' }

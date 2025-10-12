@@ -16,7 +16,7 @@ const roast15 = '../assets/Products/roasted-pork-belly-15.jpeg';
 
 const fiveSpicePowder = '../assets/Products/five-spices-blend-3.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { EGG_WHITES, HOISIN_SAUCE, PORK_BELLY, SALT, SHAOXING_WINE, VEGETABLE_OIL, WHITE_PEPPER, WHITE_SUGAR, WHITE_VINEGAR } = require('./ingredients');
 
 const PORK_BELLY_SECTION = 'Pork Belly';
@@ -38,6 +38,8 @@ module.exports = {
     method: [METHODS.AIR_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.PROTEIN],
+    allergies: [],
+    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },

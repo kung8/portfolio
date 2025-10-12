@@ -7,7 +7,7 @@ const choy6 = '../assets/Products/choy-sum-with-garlic-sauce-6.jpeg';
 const choy7 = '../assets/Products/choy-sum-with-garlic-sauce-7.jpeg';
 const choy8 = '../assets/Products/choy-sum-with-garlic-sauce-8.jpeg';
 const choy9 = '../assets/Products/choy-sum-with-garlic-sauce-9.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CHOY_SUM, COLANDER, GARLIC, LARGE_POT, LIGHT_SOY_SAUCE, MIXING_BOWL, OYSTER_SAUCE, PAPER_TOWELS, SALT, SAUCEPAN, SMALL_BOWL, STOVE, VEGETABLE_OIL, WHITE_SUGAR } = require('./ingredients');
 
 const CHOY_SUM_SECTION = 'Choy Sum';
@@ -25,6 +25,8 @@ module.exports = {
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],
     type: [TYPES.VEGETABLE],
+    allergies: [],
+    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

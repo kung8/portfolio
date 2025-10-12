@@ -4,7 +4,7 @@ const casserole3 = '../assets/Products/corn-casserole-3.jpeg';
 const casserole4 = '../assets/Products/corn-casserole-4.jpeg';
 const casserole5 = '../assets/Products/corn-casserole-5.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CANNED_CREAMED_CORN, CANNED_SWEET_CORN, CASSEROLE_DISH, CORNBREAD_MIX, EGG, MIXING_BOWL, OVEN, SOUR_CREAM, UNSALTED_BUTTER } = require('./ingredients');
 
 const PREP_BAKE = 'Prep Bake';
@@ -23,6 +23,8 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.CASSEROLE],
+    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG],
+    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },

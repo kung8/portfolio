@@ -1,7 +1,7 @@
 const balls1 = '../assets/Products/breakfast-sausage-balls-1.jpeg';
 const balls2 = '../assets/Products/breakfast-sausage-balls-2.jpeg';
 const balls3 = '../assets/Products/breakfast-sausage-balls-3.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BREAKFAST_SAUSAGE, CHEDDAR_CHEESE, KODIAK_CAKE_MIX, MILK, MIXING_BOWL, OVEN, PARCHMENT_PAPER } = require('./ingredients');
 
 const SAUSAGE_BALL_SECTION = 'Sausage Balls';
@@ -21,6 +21,8 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.PORK],
     type: [TYPES.PROTEIN, TYPES.MAIN_COURSE, TYPES.FINGER_FOOD],
+    allergies: [ALLERGIES.DAIRY],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 27, unit: TIME_UNITS.MINUTE },

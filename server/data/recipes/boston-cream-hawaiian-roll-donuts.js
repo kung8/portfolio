@@ -11,7 +11,7 @@ const donut10 = '../assets/Products/boston-cream-hawaiian-rolls-donuts-10.jpeg';
 const donut11 = '../assets/Products/boston-cream-hawaiian-rolls-donuts-11.jpeg';
 const donut12 = '../assets/Products/boston-cream-hawaiian-rolls-donuts-12.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BASTING_BRUSH, HAWAIIAN_ROLLS, MEDIUM_BOWL, MICROWAVE, MILK, MIXING_BOWL, OVEN, PIPING_BAG, SALT, SEMI_SWEET_CHOCOLATE_CHIPS, SILICON_BAKING_MAT, SPATULA, UNSALTED_BUTTER, VANILLA_EXTRACT, VANILLA_INSTANT_PUDDING_MIX, WHIPPED_TOPPING } = require('./ingredients');
 
 const ROLLS_SECTION = 'Rolls';
@@ -36,6 +36,8 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
+    allergies: [ALLERGIES.DAIRY],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 1, unit: YIELD_UNITS.DOZEN },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

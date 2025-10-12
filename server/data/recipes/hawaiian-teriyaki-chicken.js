@@ -4,7 +4,7 @@ const teriyaki3 = '../assets/Products/teriyaki-chicken-3.jpeg';
 const teriyaki4 = '../assets/Products/teriyaki-chicken-4.jpeg';
 const teriyaki5 = '../assets/Products/teriyaki-chicken-5.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, BROWN_SUGAR, GARLIC, GINGER, GREEN_ONION, LIGHT_SOY_SAUCE, PINEAPPLE_JUICE } = require('./ingredients');
 
 const GRILL_CHICKEN = 'Grill Chicken';
@@ -22,6 +22,8 @@ module.exports = {
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN, TYPES.MAIN_COURSE],
+    allergies: [],
+    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

@@ -5,7 +5,7 @@ const breast4 = '../assets/Products/baked-chicken-breast-4.jpeg';
 const breast5 = '../assets/Products/baked-chicken-breast-5.jpeg';
 const breast6 = '../assets/Products/baked-chicken-breast-6.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BLACK_PEPPER, BROWN_SUGAR, CHICKEN_BREAST, GARLIC_POWDER, MEAT_MALLET, OLIVE_OIL, OREGANO, OVEN, PAPER_TOWELS, PAPRIKA, SALT } = require('./ingredients');
 
 module.exports = {
@@ -21,6 +21,8 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN],
+    allergies: [],
+    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 18, unit: TIME_UNITS.MINUTE },

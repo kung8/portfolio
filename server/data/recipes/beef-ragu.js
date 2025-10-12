@@ -8,7 +8,7 @@ const ragu7 = '../assets/Products/beef-ragu-7.jpeg';
 const ragu8 = '../assets/Products/beef-ragu-8.jpeg';
 const ragu9 = '../assets/Products/beef-ragu-9.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAY_LEAF, BEEF_BROTH, BEEF_CHUCK_ROAST, BLACK_PEPPER, CARROT, CELERY, CRUSHED_TOMATOES, CUTTING_BOARD, FORK, GARLIC, LARGE_POT, OLIVE_OIL, PAPER_TOWELS, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY, RED_WINE, SALT, STOVE, THYME, TOMATO_PASTE, TONGS, WATER, YELLOW_ONION } = require('./ingredients');
 
 const RAGU_SECTION = 'Ragu';
@@ -27,6 +27,8 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.SIMMER],
     protein: [PROTEIN.BEEF],
     type: [TYPES.PASTA],
+    allergies: [],
+    diet: [DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 165, unit: TIME_UNITS.MINUTE },

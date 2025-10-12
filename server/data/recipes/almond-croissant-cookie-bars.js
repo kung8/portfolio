@@ -9,7 +9,7 @@ const bars8 = '../assets/Products/almond-croissant-cookie-bar-8.jpeg';
 const bars9 = '../assets/Products/almond-croissant-cookie-bar-9.jpeg';
 const bars10 = '../assets/Products/almond-croissant-cookie-bar-10.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, ALMOND_EXTRACT, ALMOND_FLOUR, BAKING_POWDER, BAKING_SHEET, BROWN_SUGAR, CUTTING_BOARD, EGG, KNIFE, MIXING_BOWL, OVEN, PARCHMENT_PAPER, POWDERED_SUGAR, RUBBER_SPATULA, SALT, SLICED_ALMONDS, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
 const FRANGIPANE_SECTION = 'Frangipane';
@@ -30,6 +30,8 @@ module.exports = {
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT, TYPES.COOKIE, TYPES.BAR],
+    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
+    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 16, unit: YIELD_UNITS.BAR },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 42, unit: TIME_UNITS.MINUTE },

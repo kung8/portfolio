@@ -20,7 +20,7 @@ const mousse19 = '../assets/Products/chocolate-mousse-19.jpeg';
 const mousse20 = '../assets/Products/chocolate-mousse-20.jpeg';
 const mousse21 = '../assets/Products/chocolate-mousse-21.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     DARK_COOKING_CHOCOLATE,
     EGG,
@@ -47,6 +47,8 @@ module.exports = {
     method: [METHODS.BLEND],
     protein: [PROTEIN.CHOCOLATE],
     type: [TYPES.DESSERT],
+    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [

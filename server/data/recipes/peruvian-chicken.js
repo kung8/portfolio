@@ -8,7 +8,7 @@ const chicken7 = '../assets/Products/peruvian-chicken-7.jpeg';
 const chicken8 = '../assets/Products/peruvian-chicken-8.jpeg';
 const chicken9 = '../assets/Products/peruvian-chicken-9.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, BAKING_PAN, BLACK_PEPPER, BLENDER, CHICKEN_DRUMETTES, CILANTRO, CUMIN, GARLIC, GREEK_YOGURT, GREEN_ONION, JALAPENO_PEPPER, LIGHT_SOY_SAUCE, LIME_JUICE, MAYONNAISE, MIXING_BOWL, OLIVE_OIL, OREGANO, OVEN, PAPRIKA, SALT } = require('./ingredients');
 
 const CREAMY_GREEN_SAUCE = 'Creamy Green Sauce';
@@ -26,6 +26,8 @@ module.exports = {
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN, TYPES.RICE],
+    allergies: [ALLERGIES.DAIRY],
+    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },

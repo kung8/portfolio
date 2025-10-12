@@ -1,7 +1,7 @@
 const pineapple1 = '../assets/Products/hawaiian-grilled-pineapple-1.jpeg';
 const pineapple2 = '../assets/Products/hawaiian-grilled-pineapple-2.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BROWN_SUGAR, HONEY, PINEAPPLE, SALT, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const PINEAPPLE_SECTION = 'Pineapple';
@@ -21,6 +21,8 @@ module.exports = {
     genre: [GENRES.AMERICAN, GENRES.HAWAIIAN],
     method: [METHODS.GRILL],
     type: [TYPES.FRUIT, TYPES.SIDE_DISH, TYPES.FINGER_FOOD, TYPES.DESSERT],
+    allergies: [],
+    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 6, unit: TIME_UNITS.MINUTE },

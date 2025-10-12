@@ -4,7 +4,7 @@ const onigiri3 = '../assets/Products/tuna-onigiri-3.jpeg';
 const onigiri4 = '../assets/Products/tuna-onigiri-4.jpeg';
 const onigiri5 = '../assets/Products/tuna-onigiri-5.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CANNED_TUNA, CAN_OPENER, FORK, KEWPIE_MAYONNAISE, MIXING_BOWL, SALT, SEAWEED, SESAME_SEEDS, SHORT_GRAINED_RICE, SMALL_BOWL, WATER } = require('./ingredients');
 
 const TUNA_MAYO = 'Tuna Mayo';
@@ -23,6 +23,8 @@ module.exports = {
     method: [METHODS.WRAP],
     protein: [PROTEIN.FISH],
     type: [TYPES.RICE, TYPES.WRAP],
+    allergies: [ALLERGIES.SESAME],
+    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PESCATARIAN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },

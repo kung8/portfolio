@@ -3,7 +3,7 @@ const sauce2 = '../assets/Products/big-mac-sauce-2.jpeg';
 const sauce4 = '../assets/Products/big-mac-sauce-4.jpeg';
 const plated6 = '../assets/Products/big-mac-plated-6.jpeg';
 const plated7 = '../assets/Products/big-mac-plated-7.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BEEF_PATTIES, BLACK_PEPPER, CHEDDAR_CHEESE, GRILL, GRILL_OR_STOVE, HAMBURGER_BUNS, KETCHUP, LETTUCE, MAYONNAISE, MIXING_BOWL, ONION_POWDER, PAPRIKA, PICKLES, SALT, YELLOW_MUSTARD, YELLOW_ONION } = require('./ingredients');
 
 const BIG_MAC_SAUCE = 'Big Mac Sauce';
@@ -21,6 +21,8 @@ module.exports = {
     method: [METHODS.GRILL],
     protein: [PROTEIN.BEEF],
     type: [TYPES.BURGER],
+    allergies: [],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

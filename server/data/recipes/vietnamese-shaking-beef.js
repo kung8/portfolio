@@ -7,7 +7,7 @@ const shakingBeef6 = '../assets/Products/shaking-beef-6.jpeg';
 const shakingBeef7 = '../assets/Products/shaking-beef-7.jpeg';
 const shakingBeef8 = '../assets/Products/shaking-beef-8.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BABY_ARUGULA, BEEF_RIBEYE_STEAK, BLACK_PEPPER, BROWN_SUGAR, FISH_SAUCE, GARLIC, LIGHT_SOY_SAUCE, MIXING_BOWL, OYSTER_SAUCE, RED_ONION, ROMA_TOMATO, SERVING_PLATE, SMALL_BOWL, STOVE, VEGETABLE_OIL, WATER, WHITE_RICE, WHITE_SUGAR, WHITE_VINEGAR, WOK } = require('./ingredients');
 
 const RED_ONION_SAUCE = 'Red Onion Sauce';
@@ -30,6 +30,8 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.PROTEIN, TYPES.MAIN_COURSE],
+    allergies: [ALLERGIES.FISH],
+    diet: [DIET.DAIRY_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

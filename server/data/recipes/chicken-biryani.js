@@ -18,7 +18,7 @@ const soakingSaffron = '../assets/Products/chicken-biryani-soaking-saffron.jpeg'
 const spiceInPot = '../assets/Products/chicken-biryani-spice-marinade-in-pot.jpeg';
 const workstation = '../assets/Products/chicken-biryani-workstation.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BASMATI_RICE, BAY_LEAF, CARDAMOM, CARDAMOM_PODS, CAYENNE_PEPPER, CHICKEN_THIGH, CILANTRO, CINNAMON, CLOVES, CORIANDER, CUMIN, GARAM_MASALA, GARLIC, GHEE, GINGER, LARGE_POT, PAPER_TOWELS, PAPRIKA, PLATE, POT, SAFFRON_THREADS, SALT, SAUCEPAN, SMALL_BOWL, STAR_ANISE, STOVE, TURMERIC, VEGETABLE_OIL, WATER, YELLOW_ONION, YOGURT } = require('./ingredients');
 
 const CRISPY_ONION = 'Crispy Onion';
@@ -37,6 +37,8 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.SAUTE, METHODS.STEAM],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
+    allergies: [ALLERGIES.DAIRY],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 90, unit: TIME_UNITS.MINUTE },

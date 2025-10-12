@@ -4,7 +4,7 @@ const pie3 = '../assets/Products/key-lime-pie-3.jpeg';
 const pie4 = '../assets/Products/key-lime-pie-4.jpeg';
 const pie5 = '../assets/Products/key-lime-pie-5.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { EGG_YOLK, GRAHAM_CRACKER_PIE_CRUST, KEY_LIME_JUICE, LIME, MIXING_BOWL, OVEN, SWEETENED_CONDENSED_MILK, WHIPPED_CREAM } = require('./ingredients');
 
 const PREP_PIE = 'Prep Pie';
@@ -22,6 +22,8 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.EGG],
     type: [TYPES.DESSERT, TYPES.PIE],
+    allergies: [ALLERGIES.EGG],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

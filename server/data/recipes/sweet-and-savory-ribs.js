@@ -8,7 +8,7 @@ const ribs7 = '../assets/Products/sweet-and-savory-ribs-7.jpeg';
 const ribs8 = '../assets/Products/sweet-and-savory-ribs-8.jpeg';
 const ribs9 = '../assets/Products/sweet-and-savory-ribs-9.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, BAKING_PAN, BEEF_RIBS, BLACK_PEPPER, CHICKEN_BOUILLON, CILANTRO, FISH_SAUCE, GARLIC, GARLIC_POWDER, GREEN_ONION, HONEY, MIXING_BOWL, ONION_POWDER, ORANGE_JUICE, OVEN, OYSTER_SAUCE, RED_PEPPER_FLAKES } = require('./ingredients');
 
 const RIBS_SECTIONS = 'Ribs';
@@ -29,6 +29,8 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.BEEF],
     type: [TYPES.PROTEIN],
+    allergies: [ALLERGIES.FISH],
+    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 75, unit: TIME_UNITS.MINUTE },

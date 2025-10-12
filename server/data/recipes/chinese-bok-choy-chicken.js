@@ -12,7 +12,7 @@ const plated = '../assets/Products/bok-choy-plated.jpeg';
 const sauce = '../assets/Products/bok-choy-sauce.jpeg';
 const zoomed = '../assets/Products/bok-choy-zoomed.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER } = require("./constants");
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BABY_BOK_CHOY,
     BLACK_PEPPER,
@@ -42,6 +42,8 @@ module.exports = {
     method: [METHODS.BLANCH, METHODS.ROAST, METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.VEGETABLE],
+    allergies: [ALLERGIES.DAIRY, ALLERGIES.SESAME],
+    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
-const { CATEGORIES, GENRES, METHODS, PROTEIN, TYPES, YIELD_UNITS, TIME_UNITS } = require('./data/recipes/constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, TYPES, YIELD_UNITS, TIME_UNITS, DIET, ALLERGIES } = require('./data/recipes/constants');
 
 const templateFilePath = path.join(__dirname, '..', 'server', 'data', 'recipes', 'template.js');
 const recipesFilePath = path.join(__dirname, '..', 'server', 'data', 'recipes.js');
@@ -122,6 +122,18 @@ const createPrompt = async () => {
             }
         },
         {
+            type: 'checkbox',
+            name: 'types',
+            message: 'Select recipe diets:',
+            choices: Object.values(DIET),
+        },
+        {
+            type: 'checkbox',
+            name: 'types',
+            message: 'Select recipe allergies:',
+            choices: Object.values(ALLERGIES),
+        },
+        {
             type: 'input',
             name: 'yields',
             message: 'How much does it yield?',
@@ -238,6 +250,8 @@ const createPrompt = async () => {
         const matchingMethods = convertValuesToKeys(METHODS, answers.methods, 'METHODS.');
         const matchingProtein = convertValuesToKeys(PROTEIN, answers.protein, 'PROTEIN.');
         const matchingTypes = convertValuesToKeys(TYPES, answers.types, 'TYPES.');
+        const matchingAllergies = convertValuesToKeys(ALLERGIES, answers.allergies, 'ALLERGIES.');
+        const matchingDiet = convertValuesToKeys(DIET, answers.diet, 'DIET.');
         const matchingYieldUnit = convertUnitToKey(YIELD_UNITS, answers.yieldUnit, 'YIELD_UNITS.');
         const matchingPrepTimeUnit = convertUnitToKey(TIME_UNITS, answers.prepTimeUnit, 'TIME_UNITS.');
         const matchingCookTimeUnit = convertUnitToKey(TIME_UNITS, answers.cookTimeUnit, 'TIME_UNITS.');
@@ -253,6 +267,8 @@ const createPrompt = async () => {
             .replace(/'{{method}}'/g, '[' + matchingMethods + ']')
             .replace(/'{{protein}}'/g, '[' + matchingProtein + ']')
             .replace(/'{{type}}'/g, '[' + matchingTypes + ']')
+            .replace(/'{{diet}}'/g, '[' + matchingDiet + ']')
+            .replace(/'{{allergies}}'/g, '[' + matchingAllergies + ']')
             .replace(/'{{yields}}'/g, answers.yields)
             .replace(/'{{yieldUnit}}'/g, matchingYieldUnit)
             .replace(/'{{prepTime}}'/g, answers.prepTime)

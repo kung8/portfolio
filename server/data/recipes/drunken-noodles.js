@@ -6,7 +6,7 @@ const drunken5 = '../assets/Products/drunken-noodles-5.jpeg';
 const drunken6 = '../assets/Products/drunken-noodles-6.jpeg';
 const drunken7 = '../assets/Products/drunken-noodles-7.jpeg';
 const drunken8 = '../assets/Products/drunken-noodles-8.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { EGG, FISH_SAUCE, FRESH_RICE_NOODLES, GARLIC, GRAPE_TOMATO, LARGE_SHRIMP, OYSTER_SAUCE, PEANUT_OIL, SERRANO_PEPPER, SMALL_BOWL, SRIRACHA_SAUCE, STOVE, SWEET_SOY_SAUCE, THAI_BASIL, WHITE_ONION, WHITE_SUGAR, WOK } = require('./ingredients');
 
 module.exports = {
@@ -23,6 +23,8 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.SHRIMP],
     type: [TYPES.NOODLE],
+    allergies: [ALLERGIES.EGG, ALLERGIES.FISH],
+    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.PESCATARIAN],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

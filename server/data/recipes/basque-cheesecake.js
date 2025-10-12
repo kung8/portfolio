@@ -1,7 +1,7 @@
 const cheesecake1 = '../assets/Products/basque-cheesecake-1.jpeg';
 const cheesecake2 = '../assets/Products/basque-cheesecake-2.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, COOLING_RACK, CREAM_CHEESE, EGG, EGG_YOLK, HEAVY_CREAM, MIXING_BOWL, OVEN, PARCHMENT_PAPER, SPRINGFORM_PAN, STAND_MIXER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
 const CREAM_CHEESE_MIXTURE = 'Cream Cheese Mixture';
@@ -26,6 +26,8 @@ module.exports = {
     genre: [GENRES.SPANISH],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT, TYPES.CAKE],
+    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
+    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

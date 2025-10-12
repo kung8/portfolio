@@ -31,6 +31,19 @@ const DIET = {
     KETO: 'Keto',
     PALEO: 'Paleo',
     WHOLE_30: 'Whole30',
+    HALAL: 'Halal',
+    KOSHER: 'Kosher',
+    NO_PORK: 'No Pork',
+    NO_BEEF: 'No Beef',
+    NO_LAMB: 'No Lamb',
+    PESCATARIAN: 'Pescatarian',
+    RAW_FOOD: 'Raw Food',
+    MEDITERRANEAN_DIET: 'Mediterranean Diet',
+    DASH_DIET: 'Dash Diet',
+    FLEXITARIAN: 'Flexitarian',
+    NO_SHELLFISH: 'No Shellfish',
+    NO_RED_MEAT: 'No Red Meat',
+    PLANT_BASED: 'Plant Based',
 };
 
 // whenever adding a new item within the category, make sure to add it to the featuredRecipes.js file
@@ -395,6 +408,19 @@ const TYPES = {
     BURRITO: 'Burrito',
 };
 
+const ALLERGIES = {
+    DAIRY: 'Dairy',
+    EGG: 'Egg',
+    FISH: 'Fish',
+    GLUTEN: 'Gluten',
+    PEANUT: 'Peanut',
+    SESAME: 'Sesame',
+    SHELLFISH: 'Shellfish',
+    SOY: 'Soy',
+    TREE_NUT: 'Tree Nut',
+    WHEAT: 'Wheat',
+};
+
 const YIELD_UNITS = {
     SERVING: { s: 'serving', p: 'servings' },
     LOAF: { s: 'loaf', p: 'loaves' },
@@ -411,6 +437,7 @@ const YIELD_UNITS = {
 };
 
 module.exports = {
+    ALLERGIES,
     CATEGORIES,
     DIET,
     GENRES,

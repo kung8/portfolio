@@ -10,7 +10,7 @@ const bowl9 = '../assets/Products/piri-piri-chicken-bowl-9.jpeg';
 const bowl10 = '../assets/Products/piri-piri-chicken-bowl-10.jpeg';
 const bowl11 = '../assets/Products/piri-piri-chicken-bowl-11.jpeg';
 const bowl12 = '../assets/Products/piri-piri-chicken-bowl-12.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { AVOCADO, BABY_ARUGULA, BASMATI_RICE, BAY_LEAF, BLACK_PEPPER, BROWN_SUGAR, CAYENNE_PEPPER, CHICKEN_BROTH, CHICKEN_THIGH, CHIVE, CILANTRO, CORN, CRUSHED_TOMATOES, DIJON_MUSTARD, GARLIC, HOT_SAUCE, LEMON_JUICE, MAYONNAISE, NANDOS_PERI_PERI_SAUCE, OLIVE_OIL, OREGANO, PAPRIKA: PAPRIKA, SALT, SMOKED_PAPRIKA, THAI_CHILI_PEPPER, VEGETABLE_OIL } = require('./ingredients');
 
 const CORN_SECTION = 'Corn';
@@ -30,6 +30,8 @@ module.exports = {
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE, TYPES.SALAD],
+    allergies: [],
+    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },

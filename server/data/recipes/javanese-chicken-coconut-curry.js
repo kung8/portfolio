@@ -5,7 +5,7 @@ const curry4 = '../assets/Products/javanese-coconut-curry-4.jpeg';
 const curry5 = '../assets/Products/javanese-coconut-curry-5.jpeg';
 const curry6 = '../assets/Products/javanese-coconut-curry-6.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLENDER, BROWN_SUGAR, CHICKEN, CINNAMON_STICK, COCONUT_MILK, CORIANDER, DUTCH_OVEN_POT, FRIED_SHALLOTS, GARLIC, GINGER, JASMINE_RICE, KAFFIR_LIME_LEAF, LEMONGRASS, LIME, MACADAMIA_NUT, MORTAR_AND_PESTLE, RED_CHILI, SHALLOT, STOVE, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const SHALLOT_MIXTURE_SECTION = 'Shallot Mixture';
@@ -23,6 +23,8 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CURRY],
+    allergies: [],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 70, unit: TIME_UNITS.MINUTE },

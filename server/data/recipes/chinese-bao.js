@@ -15,7 +15,7 @@ const pot = '../assets/Products/bao-steamer-over-pot.jpeg';
 // const steamer = '../assets/Products/bao-steamer.jpeg';
 const water = '../assets/Products/bao-water.jpeg';
 const withFilling = '../assets/Products/bao-with-filling.jpeg';
-const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require("./constants");
+const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS, ALLERGIES, DIET } = require("./constants");
 const {
     BAKING_POWDER,
     BREAD_FLOUR,
@@ -51,6 +51,8 @@ module.exports = {
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.STEAM],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT],
+    allergies: [ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
+    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 16, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },

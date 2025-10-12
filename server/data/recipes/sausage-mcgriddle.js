@@ -6,7 +6,7 @@ const mcgriddle5 = '../assets/Products/mcgriddle-5.jpeg';
 const mcgriddle6 = '../assets/Products/mcgriddle-6.jpeg';
 const mcgriddle7 = '../assets/Products/mcgriddle-7.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { AMERICAN_CHEESE, EGG, FRYING_PAN, GRIDDLE, MASON_JAR_LID, MIXING_BOWL, PANCAKE_MIX, SAUSAGE_PATTY, SPATULA } = require('./ingredients');
 
 const MCGRIDDLE_PANCAKE_SECTION = 'McGriddle Pancake';
@@ -26,6 +26,8 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.EGG, PROTEIN.PORK],
     type: [TYPES.SANDWICH],
+    allergies: [ALLERGIES.EGG],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 18, unit: TIME_UNITS.MINUTE },

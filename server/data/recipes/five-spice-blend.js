@@ -3,7 +3,7 @@ const blend2 = '../assets/Products/five-spices-blend-2.jpeg';
 const blend3 = '../assets/Products/five-spices-blend-3.jpeg';
 const blend4 = '../assets/Products/five-spices-blend-4.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CINNAMON, FENNEL_SEEDS, GROUND_CLOVES, STAR_ANISE } = require('./ingredients');
 
 const SPICES_SECTION = 'Spices';
@@ -20,6 +20,8 @@ module.exports = {
     genre: [GENRES.CHINESE],
     method: [METHODS.BLEND],
     type: [TYPES.SPICE],
+    allergies: [],
+    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 1 / 4, unit: YIELD_UNITS.CUP },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [

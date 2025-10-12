@@ -5,7 +5,7 @@ const potatoes4 = '../assets/Products/mash-potatoes-4.jpeg';
 const potatoes5 = '../assets/Products/mash-potatoes-5.jpeg';
 const potatoes6 = '../assets/Products/mash-potatoes-6.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, COLANDER, LARGE_POT, MASHER, MILK, SALT, SOUR_CREAM, STOVE, UNSALTED_BUTTER, YUKON_GOLD_POTATO } = require('./ingredients');
 
 const POTATOES_SECTION = 'Potatoes';
@@ -25,6 +25,8 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BOIL, METHODS.MASH],
     type: [TYPES.SIDE_DISH],
+    allergies: [ALLERGIES.DAIRY],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

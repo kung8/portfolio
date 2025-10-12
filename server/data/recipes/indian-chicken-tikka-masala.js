@@ -16,7 +16,7 @@ const sugar = '../assets/Products/chicken-tikka-masala-sugar.jpeg';
 const tomato = '../assets/Products/chicken-tikka-masala-tomato-sauce.jpeg';
 const translucent = '../assets/Products/chicken-tikka-masala-translucent-onion.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, METHODS, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS } = require("./constants");
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CAYENNE_PEPPER, CINNAMON, CUMIN, CURRY_POWDER, GARLIC, GHEE, GINGER, HEAVY_CREAM, LARGE_PAN, LARGE_POT, PAPRIKA, SALT, STOVE, TOMATO_SAUCE, TURMERIC, VEGETABLE_OIL, WHITE_SUGAR, YELLOW_ONION } = require('./ingredients');
 
 module.exports = {
@@ -31,6 +31,8 @@ module.exports = {
     genre: [GENRES.INDIAN, GENRES.ASIAN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.CURRY, TYPES.RICE],
+    allergies: [ALLERGIES.DAIRY],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 75, unit: TIME_UNITS.MINUTE },

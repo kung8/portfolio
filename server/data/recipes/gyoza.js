@@ -9,7 +9,7 @@ const gyoza8 = '../assets/Products/gyoza-8.jpeg';
 const gyoza9 = '../assets/Products/gyoza-9.jpeg';
 
 const { img } = require('./choy-sum-with-garlic-sauce');
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CABBAGE, FRYING_PAN, GARLIC, GREEN_ONION, GROUND_PORK, LIGHT_SOY_SAUCE, PLATE, SALT, SESAME_OIL, STOVE, VEGETABLE_OIL, WATER, WONTON_WRAPPER } = require('./ingredients');
 
 const WRAPPER_SECTION = 'Wrapper';
@@ -28,6 +28,8 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.SIDE_DISH, TYPES.FINGER_FOOD],
+    allergies: [ALLERGIES.SESAME],
+    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 52, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

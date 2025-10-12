@@ -1,7 +1,7 @@
 const cabbage1 = '../assets/Products/cabbage-stir-fry-1.jpeg';
 const cabbage2 = '../assets/Products/cabbage-stir-fry-2.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_DURATION_UNIT, STORAGE_CONTAINER, REHEAT_METHODS, ALLERGIES, DIET } = require("./constants");
 const {
     CABBAGE,
     FRYING_PAN,
@@ -22,6 +22,8 @@ module.exports = {
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.VEGETABLE],
+    allergies: [ALLERGIES.SESAME],
+    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 3, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

@@ -5,7 +5,7 @@ const bulgogi4 = '../assets/Products/beef-bulgogi-4.jpeg';
 const bulgogi5 = '../assets/Products/beef-bulgogi-5.jpeg';
 const bulgogi6 = '../assets/Products/beef-bulgogi-6.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BEEF,
     BROWN_SUGAR,
@@ -43,6 +43,8 @@ module.exports = {
     method: [METHODS.MARINADE, METHODS.PAN_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.RICE],
+    allergies: [ALLERGIES.SESAME],
+    diet: [DIET.DAIRY_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },

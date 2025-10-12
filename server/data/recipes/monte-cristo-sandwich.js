@@ -5,7 +5,7 @@ const sandwich4 = '../assets/Products/monte-cristo-sandwich-4.jpeg';
 const sandwich5 = '../assets/Products/monte-cristo-sandwich-5.jpeg';
 const sandwich6 = '../assets/Products/monte-cristo-sandwich-6.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BOWL, BREAD, CAYENNE_PEPPER, COOKED_HAM, EGG, HEAVY_CREAM, LEMON_ZEST, NUTMEG, PROVOLONE_CHEESE, SALT, STOVE, TOASTER, UNSALTED_BUTTER } = require('./ingredients');
 
 const BATTER_SECTION = 'Batter';
@@ -29,6 +29,8 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.SANDWICH],
+    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
+    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

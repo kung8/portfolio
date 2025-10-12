@@ -4,7 +4,7 @@ const dolmeh3 = '../assets/Products/dolmeh-3.jpeg';
 const dolmeh4 = '../assets/Products/dolmeh-4.jpeg';
 const dolmeh5 = '../assets/Products/dolmeh-5.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BASMATI_RICE, BLACK_PEPPER, CHICKPEA, CILANTRO, DILL, FRYING_PAN, GARLIC, GRAPE_LEAF, GREEN_ONION, GROUND_BEEF, LARGE_POT, LEMON_JUICE, OLIVE_OIL, PARSLEY, PLATE, SALT, STOVE, TARRAGON, WATER, WHITE_SUGAR, YELLOW_ONION } = require('./ingredients');
 
 const DOLMEH_SECTION = 'Dolmeh';
@@ -24,6 +24,8 @@ module.exports = {
     method: [METHODS.SAUTE, METHODS.SIMMER],
     protein: [PROTEIN.BEEF],
     type: [TYPES.MAIN_COURSE, TYPES.SIDE_DISH],
+    allergies: [],
+    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 55, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 80, unit: TIME_UNITS.MINUTE },

@@ -9,7 +9,7 @@ const pasta8 = '../assets/Products/creamy-tuscan-chicken-pasta-8.jpeg';
 const pasta9 = '../assets/Products/creamy-tuscan-chicken-pasta-9.jpeg';
 const pasta10 = '../assets/Products/creamy-tuscan-chicken-pasta-10.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BABY_SPINACH, BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CUTTING_BOARD, DUTCH_OVEN_POT, GARLIC, HEAVY_CREAM, ITALIAN_SEASONING, KNIFE, MILK, OLIVE_OIL, PARMESAN_CHEESE, PENNE, SALT, STOVE, SUN_DRIED_TOMATOES, UNSALTED_BUTTER } = require('./ingredients');
 
 const COMBINE = 'Combine';
@@ -27,6 +27,8 @@ module.exports = {
     method: [METHODS.SIMMER, METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PASTA],
+    allergies: [ALLERGIES.DAIRY],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
