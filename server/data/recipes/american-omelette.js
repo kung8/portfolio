@@ -1,11 +1,11 @@
-const butter = '../assets/Products/american-omelette-melting-butter.jpeg';
-const interior = '../assets/Products/american-omelette-raw-interior.jpeg';
-const spinach = '../assets/Products/american-omelette-spinach-and-cheese.jpeg';
+const omelette1 = '../assets/Products/american-omelette-1.jpeg';
+const omelette2 = '../assets/Products/american-omelette-2.jpeg';
+const omelette3 = '../assets/Products/american-omelette-3.jpeg';
 // E.g. of flipping method result
-const aerial = '../assets/Products/american-omelette-plated-aerial.jpeg';
+const omelette4 = '../assets/Products/american-omelette-4.jpeg';
 // E.g. of folding method result
-const halved = '../assets/Products/american-omelette-plated-halved.jpeg';
-const moreCookedZoomed = '../assets/Products/american-omelette-plated-more-cooked-zoomed.jpeg';
+const omelette5 = '../assets/Products/american-omelette-5.jpeg';
+const omelette6 = '../assets/Products/american-omelette-6.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -38,7 +38,7 @@ const BUTTER_SECTION = 'Butter';
 module.exports = {
     cardName: 'American Omelette',
     name: 'American Omelette',
-    img: moreCookedZoomed,
+    img: omelette6,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -80,8 +80,8 @@ module.exports = {
     directions: [
         { step: 'Prep the vegetables and ham (I use deli lunch meat) and set aside on cutting board.', section: SECTIONS.MAIN },
         { step: 'In a bowl, mix together the eggs, water (no more than 1 Tbsp), salt, pepper, and basil.', section: SECTIONS.MAIN },
-        { step: 'Heat up the pan on a medium-high heat. Add the butter. Then add the peppers, mushrooms and onion.', section: SECTIONS.MAIN, img: butter },
-        { step: 'Once the onions have browned a little, turn down to medium heat, and add the egg batter.', section: SECTIONS.MAIN, img: [interior, spinach] },
+        { step: 'Heat up the pan on a medium-high heat. Add the butter. Then add the peppers, mushrooms and onion.', section: SECTIONS.MAIN, img: omelette1 },
+        { step: 'Once the onions have browned a little, turn down to medium heat, and add the egg batter.', section: SECTIONS.MAIN, img: [omelette2, omelette3] },
         { step: 'While still keeping it over the heat, tilt and angle the pan so the runny egg on top can spread to more parts of the pan and you can even take the spatula and lift the edges of the cooking egg and let gravity do its job to have the runny egg batter fill underneath it (try to keep it a circle).', section: SECTIONS.MAIN },
         { step: 'Follow either the flipping method or the folding method directions whichever you prefer. The folding method is much easier and quicker, but will definitely have a more gooey center.', section: SECTIONS.MAIN },
         { step: 'Once the egg has mostly cooked and you are able to slide the spatula around the egg, bring the heat back up to the medium-high heat.', section: FLIPPING_METHOD },
@@ -89,8 +89,8 @@ module.exports = {
         { step: 'I recommend doing this next step over the sink: flipping time (I think it is the hardest part of this whole process). You are going to flip the egg in the air about the height of the diameter of the egg. Angle the pan about 45 degrees downward, and quickly catapult it up in the air with a quick thrust downward, causing it to flip. The tricky part is make sure you catch it.', section: FLIPPING_METHOD },
         { step: 'If you have successfully flipped it then the rest of this will be a piece of cake. Put it right back over the heat and add the tomatoes and ham to one half of the egg.', section: FLIPPING_METHOD },
         { step: 'Let the other side of the egg cook a few minutes.', section: FLIPPING_METHOD },
-        { step: 'Fold over the side that doesn\'t have the tomatoes. If the egg could use more time you can carefully flip the egg over again using your spatula this time.', section: FLIPPING_METHOD, img: aerial },
-        { step: 'Slowly check the bottom of the egg to see if it is a nice golden brown, add the spinach and cheese before folding the egg.', section: FOLDING_METHOD, img: halved },
+        { step: 'Fold over the side that doesn\'t have the tomatoes. If the egg could use more time you can carefully flip the egg over again using your spatula this time.', section: FLIPPING_METHOD, img: omelette4 },
+        { step: 'Slowly check the bottom of the egg to see if it is a nice golden brown, add the spinach and cheese before folding the egg.', section: FOLDING_METHOD, img: omelette5 },
         { step: 'Enjoy this beautiful piece of art.', section: SECTIONS.MAIN },
     ],
     store: [
