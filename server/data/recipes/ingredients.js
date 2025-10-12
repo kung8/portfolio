@@ -609,6 +609,7 @@ const INGREDIENTS = {
         MORTAR_AND_PESTLE: { name: 'mortar and pestle', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         MUFFIN_TIN: { name: 'muffin tin', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         MUG: { name: 'mug', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
+        ONIGIRI_MOLD: { name: 'onigiri mold', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         OVEN_MITT: { name: 'oven mitt', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         PARCHMENT_PAPER: { name: 'parchment paper', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         PASTRY_BLENDER_ATTACHMENT: { name: 'pastry blender attachment', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
@@ -1982,7 +1983,6 @@ const INGREDIENTS = {
         STAR_ANISE: {
             name: 'star anise', category: INGREDIENT_CATEGORY.SPICES, img: "https://images.unsplash.com/photo-1554345795-1243a276630e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTgwNDMzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        PAPRIKA: { name: 'paprika', category: INGREDIENT_CATEGORY.SPICES },
         TACO_SEASONING: { name: 'taco seasoning', category: INGREDIENT_CATEGORY.SPICES },
         TARRAGON: { name: 'tarragon', category: INGREDIENT_CATEGORY.SPICES },
         THYME: { name: 'thyme', category: INGREDIENT_CATEGORY.SPICES },

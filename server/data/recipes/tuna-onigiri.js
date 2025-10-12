@@ -3,17 +3,23 @@ const onigiri2 = '../assets/Products/tuna-onigiri-2.jpeg';
 const onigiri3 = '../assets/Products/tuna-onigiri-3.jpeg';
 const onigiri4 = '../assets/Products/tuna-onigiri-4.jpeg';
 const onigiri5 = '../assets/Products/tuna-onigiri-5.jpeg';
+const onigiri6 = '../assets/Products/tuna-onigiri-6.jpeg';
+const onigiri7 = '../assets/Products/tuna-onigiri-7.jpeg';
+const onigiri8 = '../assets/Products/tuna-onigiri-8.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { CANNED_TUNA, CAN_OPENER, FORK, KEWPIE_MAYONNAISE, MIXING_BOWL, SALT, SEAWEED, SESAME_SEEDS, SHORT_GRAINED_RICE, SMALL_BOWL, WATER } = require('./ingredients');
+const { CANNED_TUNA, CAN_OPENER, FORK, KEWPIE_MAYONNAISE, MIXING_BOWL, ONIGIRI_MOLD, SALT, SEAWEED, SESAME_SEEDS, SHORT_GRAINED_RICE, SMALL_BOWL, WATER } = require('./ingredients');
 
 const TUNA_MAYO = 'Tuna Mayo';
 const PREP_TUNA_MAYO = 'Prep Tuna Mayo';
 
+const ASSEMBLE_WITHOUT_MOLD = 'Assemble Without Mold';
+const ASSEMBLE_WITH_MOLD = 'Assemble With Mold';
+
 module.exports = {
     cardName: 'Tuna Onigiri',
     name: 'Tuna Onigiri',
-    img: onigiri5,
+    img: onigiri6,
     recipeAuthors: ['Christie Lai'],
     recipeFinder: 'Samantha Pham',
     available: true,
@@ -51,6 +57,7 @@ module.exports = {
         CAN_OPENER,
         FORK,
         { ...SMALL_BOWL, amount: 2 },
+        { ...ONIGIRI_MOLD, additionalDetails: 'preferred type' },
     ],
     directions: [
         { step: 'In a mixing bowl, add hot cooked rice and salt.', section: SECTIONS.PREP_RICE },
@@ -61,14 +68,22 @@ module.exports = {
         { step: 'Transfer tuna to a small bowl.', section: PREP_TUNA_MAYO },
         { step: 'Add mayo. Stir and set aside.', section: PREP_TUNA_MAYO, img: onigiri1 },
 
-        { step: 'Prep a small bowl of water.', section: SECTIONS.ASSEMBLE },
-        { step: 'Dip hands in water.', section: SECTIONS.ASSEMBLE },
-        { step: 'Scoop 1/2 cup of cooked rice and form a ball.', section: SECTIONS.ASSEMBLE, img: onigiri2 },
-        { step: 'Flatten into 1/2 inch thick discs.', section: SECTIONS.ASSEMBLE },
-        { step: 'With your thumb, push the center down and place 2 tablespoon of tuna mayo.', section: SECTIONS.ASSEMBLE, img: onigiri3 },
-        { step: 'Fold the rice around the filling.', section: SECTIONS.ASSEMBLE },
-        { step: 'Pack into a ball and shape it into a triangle.', section: SECTIONS.ASSEMBLE, img: onigiri4 },
-        { step: 'Wrap the base of the rice ball with the seaweed.', section: SECTIONS.ASSEMBLE },
+        { step: 'Prep a small bowl of water.', section: ASSEMBLE_WITHOUT_MOLD },
+        { step: 'Dip hands in water.', section: ASSEMBLE_WITHOUT_MOLD },
+        { step: 'Scoop 1/2 cup of cooked rice and form a ball.', section: ASSEMBLE_WITHOUT_MOLD, img: onigiri2 },
+        { step: 'Flatten into 1/2 inch thick discs.', section: ASSEMBLE_WITHOUT_MOLD },
+        { step: 'With your thumb, push the center down and place 2 tablespoon of tuna mayo.', section: ASSEMBLE_WITHOUT_MOLD, img: onigiri3 },
+        { step: 'Fold the rice around the filling.', section: ASSEMBLE_WITHOUT_MOLD },
+        { step: 'Pack into a ball and shape it into a triangle.', section: ASSEMBLE_WITHOUT_MOLD, img: onigiri4 },
+        { step: 'Wrap the base of the rice ball with the seaweed.', section: ASSEMBLE_WITHOUT_MOLD, img: onigiri5 },
+
+        { step: 'Place the seaweed partially in the mold so that the rice when laid on top will be equally distributed.', section: ASSEMBLE_WITH_MOLD },
+        { step: 'Fill the mold about halfway.', section: ASSEMBLE_WITH_MOLD },
+        { step: 'Add tuna in the center of the rice.', section: ASSEMBLE_WITH_MOLD },
+        { step: 'Cover the tuna with rice and push the mold lid to secure the rice ball into desired shape.', section: ASSEMBLE_WITH_MOLD },
+        { step: 'Carefully remove the rice ball from the mold.', section: ASSEMBLE_WITH_MOLD },
+
+        { step: 'Optionally brush each rice ball with teriyaki sauce and pan fry until golden brown on both sides.', section: SECTIONS.PAN_FRY, img: [onigiri7, onigiri8] },
 
         { step: 'Enjoy this easy rice balls with sesame seeds.', section: SECTIONS.SERVE },
     ],
