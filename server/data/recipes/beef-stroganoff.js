@@ -1,4 +1,4 @@
-const beefStroganoff = '../assets/Products/beef-stroganoff.jpeg';
+const stroganoff1 = '../assets/Products/beef-stroganoff-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
@@ -22,7 +22,7 @@ const {
 module.exports = {
     cardName: 'Beef Stroganoff',
     name: 'Beef Stroganoff',
-    img: beefStroganoff,
+    img: stroganoff1,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
