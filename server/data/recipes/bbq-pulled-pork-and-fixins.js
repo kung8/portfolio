@@ -1,16 +1,9 @@
-const garlic = '../assets/Products/bbq-pulled-pork-garlic.jpeg';
-const beforePulled = '../assets/Products/bbq-pulled-pork-finished-before-pulled.jpeg';
-const finished = '../assets/Products/bbq-pulled-pork-finished.jpeg';
-const pulled = '../assets/Products/bbq-pulled-pork-pulled.jpeg';
-const covered = '../assets/Products/bbq-pulled-pork-covered.jpeg';
-const dryWithPork = '../assets/Products/bbq-pulled-pork-dry-mixed-with-pork.jpeg';
-const mixed = '../assets/Products/bbq-pulled-pork-dry-mixed.jpeg';
-const dry = '../assets/Products/bbq-pulled-pork-dry.jpeg';
-const liner = '../assets/Products/bbq-pulled-pork-liner.jpeg';
-const raw = '../assets/Products/bbq-pulled-pork-raw-pork.jpeg';
-const wet = '../assets/Products/bbq-pulled-pork-wet.jpeg';
-const plate1 = '../assets/Products/bbq-pulled-pork-full-plate-1.jpeg';
-const plate2 = '../assets/Products/bbq-pulled-pork-full-plate-2.jpeg';
+const pork1 = '../assets/Products/bbq-pulled-pork-1.jpeg';
+const pork2 = '../assets/Products/bbq-pulled-pork-2.jpeg';
+const pork3 = '../assets/Products/bbq-pulled-pork-3.jpeg';
+const pork4 = '../assets/Products/bbq-pulled-pork-4.jpeg';
+const pork5 = '../assets/Products/bbq-pulled-pork-5.jpeg';
+
 const { CATEGORIES, GENRES, SECTIONS, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, REHEAT_METHODS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, DIET } = require("./constants");
 const {
     APPLE_CIDER_VINEGAR,
@@ -34,7 +27,7 @@ const {
 module.exports = {
     cardName: 'BBQ Pulled Pork',
     name: 'BBQ Pulled Pork',
-    img: finished,
+    img: pork5,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -71,15 +64,15 @@ module.exports = {
         { ...FORK, amount: 2 },
     ],
     directions: [
-        { step: 'Line a slow cooker with a liner to make cleaning quick.', section: SECTIONS.FILLING, img: liner },
+        { step: 'Line a slow cooker with a liner to make cleaning quick.', section: SECTIONS.FILLING },
         { step: 'Pour the vegetable oil into the slow cooker.', section: SECTIONS.FILLING },
-        { step: 'Place roast in the slow cooker and massage the pork with the dry ingredient.', section: SECTIONS.FILLING, img: [garlic, raw, dry, mixed, dryWithPork] },
-        { step: 'Pour the wet ingredients into the slow cooker.', section: SECTIONS.FILLING, img: wet },
-        { step: 'Cover and cook on high for 5 - 6 hours (or on low for 10 - 12 hours).', section: SECTIONS.FILLING, img: covered },
-        { step: 'Shred the pork with two forks.', section: SECTIONS.FILLING, img: [beforePulled, pulled] },
+        { step: 'Place roast in the slow cooker and massage the pork with the dry ingredient.', section: SECTIONS.FILLING, img: pork1 },
+        { step: 'Pour the wet ingredients into the slow cooker.', section: SECTIONS.FILLING },
+        { step: 'Cover and cook on high for 5 - 6 hours (or on low for 10 - 12 hours).', section: SECTIONS.FILLING, img: pork2 },
+        { step: 'Shred the pork with two forks.', section: SECTIONS.FILLING, img: [pork3, pork4] },
         { step: 'Return shredded pork to soak in more of the sauce.', section: SECTIONS.FILLING },
         { step: 'Fill the brioche buns with pulled pork.', section: SECTIONS.MAIN },
-        { step: 'Serve with coleslaw, baked beans, homemade macaroni and cheese, and any other favorite fixins\'.', section: SECTIONS.MAIN, img: [plate1, plate2] },
+        { step: 'Serve with coleslaw, baked beans, homemade macaroni and cheese, and any other favorite fixins\'.', section: SECTIONS.MAIN },
     ],
     store: [
         {
