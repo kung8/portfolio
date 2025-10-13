@@ -1,10 +1,11 @@
-const cooked = '../assets/Products/baked-breaded-chicken-cooked.jpeg';
-const breadedRaw = '../assets/Products/baked-breaded-chicken-breaded-raw.jpeg';
-const breading = '../assets/Products/baked-breaded-chicken-breading.jpeg';
-const oil = '../assets/Products/baked-breaded-chicken-oil.jpeg';
-const plated = '../assets/Products/baked-breaded-chicken-plated.jpeg';
-const seasoned = '../assets/Products/baked-breaded-chicken-seasoned.jpeg';
-const full = '../assets/Products/basil-pesto-meal-plated.jpeg';
+const chicken1 = '../assets/Products/baked-breaded-chicken-1.jpeg';
+const chicken2 = '../assets/Products/baked-breaded-chicken-2.jpeg';
+const chicken3 = '../assets/Products/baked-breaded-chicken-3.jpeg';
+const chicken4 = '../assets/Products/baked-breaded-chicken-4.jpeg';
+const chicken5 = '../assets/Products/baked-breaded-chicken-5.jpeg';
+const chicken6 = '../assets/Products/baked-breaded-chicken-6.jpeg';
+const pesto11 = '../assets/Products/basil-pesto-11.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_PAN,
@@ -31,7 +32,7 @@ const DREDGING = 'Dredging';
 module.exports = {
     cardName: 'Baked Breaded Chicken',
     name: 'Baked Breaded Chicken',
-    img: plated,
+    img: chicken6,
     recipeAuthors: ['Rachael'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -74,14 +75,14 @@ module.exports = {
         SMALL_BOWL,
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the breading ingredients.', section: BREADING, img: breading },
-        { step: 'In a small bowl, combine the dredging ingredients.', section: DREDGING, img: oil },
+        { step: 'In a mixing bowl, combine the breading ingredients.', section: BREADING, img: chicken1 },
+        { step: 'In a small bowl, combine the dredging ingredients.', section: DREDGING, img: chicken2 },
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },
-        { step: 'Season the chicken with salt and black pepper generously.', section: SECTIONS.MAIN, img: seasoned },
+        { step: 'Season the chicken with salt and black pepper generously.', section: SECTIONS.MAIN, img: chicken3 },
         { step: 'Dip the chicken in the dredging bowl then dip the chicken into the breading. Make sure to cover all of it.', section: SECTIONS.MAIN },
-        { step: 'Place the breaded chicken in a baking dish.', section: SECTIONS.MAIN, img: breadedRaw },
-        { step: 'Bake for 30 to 35 minutes or until the chicken is cooked all the way through with an internal temperature of at least 165ºF.', section: SECTIONS.MAIN, img: cooked },
-        { step: 'Enjoy this chicken with your favorite grain dish.', section: SECTIONS.MAIN, img: full },
+        { step: 'Place the breaded chicken in a baking dish.', section: SECTIONS.MAIN, img: chicken4 },
+        { step: 'Bake for 30 to 35 minutes or until the chicken is cooked all the way through with an internal temperature of at least 165ºF.', section: SECTIONS.MAIN, img: chicken5 },
+        { step: 'Enjoy this chicken with your favorite grain dish.', section: SECTIONS.MAIN, img: pesto11 },
     ],
     store: [
         {

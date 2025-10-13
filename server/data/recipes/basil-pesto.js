@@ -1,14 +1,15 @@
-const basilBlended = '../assets/Products/basil-pesto-basil-blended.jpeg';
-const basil = '../assets/Products/basil-pesto-basil-in-blender.jpeg';
-const pineBlended = '../assets/Products/basil-pesto-blended-pine-nuts.jpeg';
-const fresh = '../assets/Products/basil-pesto-fresh-basil.jpeg';
-const bowl = '../assets/Products/basil-pesto-in-bowl.jpeg';
-const plated = '../assets/Products/basil-pesto-meal-plated.jpeg';
-const mixed = '../assets/Products/basil-pesto-mixed.jpeg';
-const parmesan = '../assets/Products/basil-pesto-parmesan.jpeg';
-const parmesanBlended = '../assets/Products/basil-pesto-parmesan-blended.jpeg';
-const pine = '../assets/Products/basil-pesto-pine-nuts.jpeg';
-const topped = '../assets/Products/basil-pesto-topped.jpeg';
+const pesto1 = '../assets/Products/basil-pesto-1.jpeg';
+const pesto2 = '../assets/Products/basil-pesto-2.jpeg';
+const pesto3 = '../assets/Products/basil-pesto-3.jpeg';
+const pesto4 = '../assets/Products/basil-pesto-4.jpeg';
+const pesto5 = '../assets/Products/basil-pesto-5.jpeg';
+const pesto6 = '../assets/Products/basil-pesto-6.jpeg';
+const pesto7 = '../assets/Products/basil-pesto-7.jpeg';
+const pesto8 = '../assets/Products/basil-pesto-8.jpeg';
+const pesto9 = '../assets/Products/basil-pesto-9.jpeg';
+const pesto10 = '../assets/Products/basil-pesto-10.jpeg';
+const pesto11 = '../assets/Products/basil-pesto-11.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BASIL_LEAF,
@@ -27,7 +28,7 @@ const {
 module.exports = {
     cardName: 'Basil Pesto',
     name: 'Basil Pesto',
-    img: plated,
+    img: pesto11,
     recipeAuthors: ['Jeanine', 'Jack'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -62,11 +63,11 @@ module.exports = {
         BLENDER,
     ],
     directions: [
-        { step: 'In a blender, combine pine nuts, lemon juice, garlic, sea salt, and black pepper until blended.', section: SECTIONS.SAUCE, img: [pine, pineBlended] },
-        { step: 'Add basil and oil. Blend.', section: SECTIONS.SAUCE, img: [fresh, basil, basilBlended] },
+        { step: 'In a blender, combine pine nuts, lemon juice, garlic, sea salt, and black pepper until blended.', section: SECTIONS.SAUCE, img: [pesto1, pesto2] },
+        { step: 'Add basil and oil. Blend.', section: SECTIONS.SAUCE, img: [pesto3, pesto4, pesto5] },
         { step: 'Add cheese. Blend.', section: SECTIONS.SAUCE },
-        { step: 'For more smoother pesto, add more oil.', section: SECTIONS.SAUCE, img: [parmesan, parmesanBlended, bowl] },
-        { step: 'Top noodles and mix together.', section: SECTIONS.SERVE, img: [topped, mixed] },
+        { step: 'For more smoother pesto, add more oil.', section: SECTIONS.SAUCE, img: [pesto6, pesto7, pesto8] },
+        { step: 'Top noodles and mix together.', section: SECTIONS.SERVE, img: [pesto9, pesto10] },
     ],
     store: [
         {
