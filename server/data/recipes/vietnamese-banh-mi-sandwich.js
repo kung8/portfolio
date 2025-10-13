@@ -1,8 +1,9 @@
-const banhMi = '../assets/Products/banh-mi-sandwich.jpeg';
-const frenchBread = '../assets/Products/french-bread.jpeg';
-const porkLoafCut = '../assets/Products/pork-loaf-cut.jpeg';
-const porkLoafOpened = '../assets/Products/pork-loaf-opened.jpeg';
-const porkLoafWrapped = '../assets/Products/pork-loaf-wrapped.jpeg';
+const sandwich1 = '../assets/Products/banh-mi-sandwich-1.jpeg';
+const sandwich2 = '../assets/Products/banh-mi-sandwich-2.jpeg';
+const sandwich3 = '../assets/Products/banh-mi-sandwich-3.jpeg';
+const sandwich4 = '../assets/Products/banh-mi-sandwich-4.jpeg';
+const sandwich5 = '../assets/Products/banh-mi-sandwich-5.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAGUETTE_PAN,
@@ -52,7 +53,7 @@ const PICKLED_VEGETABLES = 'Pickled Vegetables';
 module.exports = {
     cardName: 'Banh Mi Sandwich',
     name: 'Vietnamese Banh Mi Sandwich',
-    img: banhMi,
+    img: sandwich5,
     recipeAuthors: ['Nagi Maehashi', 'Elise Bauer'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -143,7 +144,7 @@ module.exports = {
         { step: 'Brush the loaves with melted butter and place the pan inside the oven.', section: SECTIONS.BREAD },
         { step: 'Bake for 17 minutes or until golden brown. Avoid opening the oven doors while baking.', section: SECTIONS.BREAD },
         { step: 'Flip the loaves and bake for another 4 minutes or until golden brown.', section: SECTIONS.BREAD },
-        { step: 'Remove bread from the oven and let cool for a few minutes.', section: SECTIONS.BREAD, img: frenchBread },
+        { step: 'Remove bread from the oven and let cool for a few minutes.', section: SECTIONS.BREAD, img: sandwich1 },
         { step: 'Cut open the loaves and fill them with your favorite toppings. Best enjoyed warm and same day.', section: SECTIONS.BREAD },
         { step: 'To reheat, place in an air fryer at about 375ºF for about 2 to 3 minutes.', section: SECTIONS.BREAD },
         { step: 'In a large bowl, dissolve salt and sugar in hot water. Then add rice vinegar.', section: PICKLED_VEGETABLES },
@@ -153,14 +154,14 @@ module.exports = {
         { step: 'In a mixing bowl, add ground pork and mix by hand until meat starts falling a part.', section: PORK_LOAF },
         { step: 'Add the seasoning and continue mixing until meat becomes a lighter color long strands (about 10 minutes).', section: PORK_LOAF },
         { step: 'Split the pork in half. Knead and thump the mixture to help get rid of air bubbles.', section: PORK_LOAF },
-        { step: 'Double up the banana leaves then place the pork in the center.', section: PORK_LOAF, img: porkLoafOpened },
-        { step: 'Roll the banana leaves around the pork and tuck in the ends. Make sure there is no exposed pork through the leaves.', section: PORK_LOAF, img: porkLoafWrapped },
+        { step: 'Double up the banana leaves then place the pork in the center.', section: PORK_LOAF, img: sandwich2 },
+        { step: 'Roll the banana leaves around the pork and tuck in the ends. Make sure there is no exposed pork through the leaves.', section: PORK_LOAF, img: sandwich3 },
         { step: 'Tie up the roll with 2 pieces of twine.', section: PORK_LOAF },
         { step: 'Repeat these steps for the second half.', section: PORK_LOAF },
         { step: 'Fill a large pot with water, enough to submerge the rolls over high heat, and sea salt.', section: PORK_LOAF },
         { step: 'Place the rolls in the pot and cover. Cooking for about 45 minutes.', section: PORK_LOAF },
         { step: 'Remove the rolls and let cool.', section: PORK_LOAF },
-        { step: 'Once you are ready to make the sandwiches, remove the banana leaves, slice and add them to the sandwiches.', section: PORK_LOAF, img: porkLoafCut },
+        { step: 'Once you are ready to make the sandwiches, remove the banana leaves, slice and add them to the sandwiches.', section: PORK_LOAF, img: sandwich4 },
         { step: 'Preheat the oven to 350°F about 15 to 20 minutes before you want to assemble the sandwich.', section: SECTIONS.MAIN },
         { step: 'Cut open the roll and spread a light layer of mayo on one side and pate on the other. Add the desired meats.', section: SECTIONS.MAIN },
         { step: 'Warm the rolls in the oven for just a few minutes or until golden brown.', section: SECTIONS.MAIN },
