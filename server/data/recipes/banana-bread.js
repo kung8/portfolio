@@ -1,11 +1,13 @@
+const bread1 = '../assets/Products/banana-bread-1.jpeg';
+const bread2 = '../assets/Products/banana-bread-2.jpeg';
+const bread3 = '../assets/Products/banana-bread-3.jpeg';
+const bread4 = '../assets/Products/banana-bread-4.jpeg';
+const bread5 = '../assets/Products/banana-bread-5.jpeg';
+const bread6 = '../assets/Products/banana-bread-6.jpeg';
+const bread7 = '../assets/Products/banana-bread-7.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
-const creamedSugar = '../assets/Products/banana-bread-creamed-sugar.jpeg';
-const mixture = '../assets/Products/banana-bread-flour-mixture.jpeg';
-const mashed = '../assets/Products/banana-bread-mashed-banana.jpeg';
-const zoomed = '../assets/Products/banana-bread-with-chocolate-chips-side-view.jpeg';
-const baked = '../assets/Products/banana-bread-with-chocolate-chips-baked.jpeg';
-const walnuts = '../assets/Products/banana-bread-with-walnuts.jpeg';
-const walnutsBatter = '../assets/Products/banana-bread-batter-with-walnuts.jpeg';
+
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_SODA,
@@ -28,7 +30,7 @@ const {
 module.exports = {
     cardName: 'Banana Bread',
     name: 'Banana Bread',
-    img: zoomed,
+    img: bread7,
     recipeAuthors: ['Natasha Kravchuk'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -67,15 +69,15 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },
-        { step: 'In large bowl, cream together the softened butter and sugar.', section: SECTIONS.MAIN, img: creamedSugar },
-        { step: 'In mixing bowl, mash bananas until its consistency is smooth.', section: SECTIONS.MAIN, img: mashed },
+        { step: 'In large bowl, cream together the softened butter and sugar.', section: SECTIONS.MAIN, img: bread1 },
+        { step: 'In mixing bowl, mash bananas until its consistency is smooth.', section: SECTIONS.MAIN, img: bread2 },
         { step: 'Add the butter and sugar and eggs to the bananas.', section: SECTIONS.MAIN },
-        { step: 'In the large bowl, combine flour, baking soda, and salt. Then add to the batter.', section: SECTIONS.MAIN, img: mixture },
+        { step: 'In the large bowl, combine flour, baking soda, and salt. Then add to the batter.', section: SECTIONS.MAIN, img: bread3 },
         { step: 'Add vanilla to the batter.', section: SECTIONS.MAIN },
-        { step: 'Add chocolate chips and walnuts to the batter. Feel free to experiment with your favorite ingredients.', section: SECTIONS.MAIN, img: walnutsBatter },
-        { step: 'Pour the batter into the bread pan.', section: SECTIONS.MAIN, img: walnuts },
+        { step: 'Add chocolate chips and walnuts to the batter. Feel free to experiment with your favorite ingredients.', section: SECTIONS.MAIN, img: bread4 },
+        { step: 'Pour the batter into the bread pan.', section: SECTIONS.MAIN, img: bread5 },
         { step: 'Bake for 55 to 60 minutes, or until a toothpick inserted into the center comes out clean.', section: SECTIONS.MAIN },
-        { step: 'Let bread rest for 10 minutes before serving.', section: SECTIONS.MAIN, img: baked },
+        { step: 'Let bread rest for 10 minutes before serving.', section: SECTIONS.MAIN, img: bread6 },
     ],
     store: [
         {
