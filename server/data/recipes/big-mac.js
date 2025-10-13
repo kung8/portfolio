@@ -1,17 +1,18 @@
-const beef3 = '../assets/Products/big-mac-3.jpeg';
-const sauce2 = '../assets/Products/big-mac-sauce-2.jpeg';
-const sauce4 = '../assets/Products/big-mac-sauce-4.jpeg';
-const plated6 = '../assets/Products/big-mac-plated-6.jpeg';
-const plated7 = '../assets/Products/big-mac-plated-7.jpeg';
+const mac1 = '../assets/Products/big-mac-1.jpeg';
+const mac2 = '../assets/Products/big-mac-2.jpeg';
+const mac3 = '../assets/Products/big-mac-3.jpeg';
+const mac4 = '../assets/Products/big-mac-4.jpeg';
+const mac5 = '../assets/Products/big-mac-5.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BEEF_PATTIES, BLACK_PEPPER, CHEDDAR_CHEESE, GRILL, GRILL_OR_STOVE, HAMBURGER_BUNS, KETCHUP, LETTUCE, MAYONNAISE, MIXING_BOWL, ONION_POWDER, PAPRIKA, PICKLES, SALT, YELLOW_MUSTARD, YELLOW_ONION } = require('./ingredients');
+const { BEEF_PATTIES, BLACK_PEPPER, CHEDDAR_CHEESE, GRILL_OR_STOVE, HAMBURGER_BUNS, KETCHUP, LETTUCE, MAYONNAISE, MIXING_BOWL, ONION_POWDER, PAPRIKA, PICKLES, SALT, YELLOW_MUSTARD, YELLOW_ONION } = require('./ingredients');
 
 const BIG_MAC_SAUCE = 'Big Mac Sauce';
 
 module.exports = {
     cardName: 'Big Mac',
     name: 'Big Mac',
-    img: plated7,
+    img: mac5,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -50,10 +51,10 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the sauce ingredients.', section: BIG_MAC_SAUCE, img: [sauce2, sauce4] },
+        { step: 'In a mixing bowl, combine the sauce ingredients.', section: BIG_MAC_SAUCE, img: [mac1, mac2] },
         { step: 'Place sauce in fridge to chill until ready to assemble the burgers.', section: BIG_MAC_SAUCE },
-        { step: 'Cook the patties on a grill/skillet/pan to your preferred doneness.', section: SECTIONS.MAIN, img: [beef3] },
-        { step: 'Assemble the burgers.', section: SECTIONS.MAIN, img: plated6 },
+        { step: 'Cook the patties on a grill/skillet/pan to your preferred doneness.', section: SECTIONS.MAIN, img: [mac3] },
+        { step: 'Assemble the burgers.', section: SECTIONS.MAIN, img: mac4 },
         { step: 'You might not ever need to go to McDonald\'s ever again unless you are missing their fries, nuggets or McFlurries.', section: SECTIONS.MAIN },
     ],
     notes: [
