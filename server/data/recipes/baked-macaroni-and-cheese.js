@@ -1,32 +1,33 @@
-const baked3 = '../assets/Products/baked-macaroni-and-cheese-baked-3.jpeg';
-const baked4 = '../assets/Products/baked-macaroni-and-cheese-baked-4.jpeg';
-const boiled = '../assets/Products/baked-macaroni-and-cheese-boiled-macaroni.jpeg';
-const boilingRoux = '../assets/Products/baked-macaroni-and-cheese-boiling-roux.jpeg';
-const water = '../assets/Products/baked-macaroni-and-cheese-boiling-water.jpeg';
-const cheeseLayer = '../assets/Products/baked-macaroni-and-cheese-cheese-layer.jpeg';
-const macaroni = '../assets/Products/baked-macaroni-and-cheese-cooked-macaroni.jpeg';
-const cream = '../assets/Products/baked-macaroni-and-cheese-cream.jpeg';
-const crumbLayer = '../assets/Products/baked-macaroni-and-cheese-crumb-layer.jpeg';
-const crumb = '../assets/Products/baked-macaroni-and-cheese-crumb.jpeg';
-const flour = '../assets/Products/baked-macaroni-and-cheese-flour.jpeg';
-const butter = '../assets/Products/baked-macaroni-and-cheese-melted-butter.jpeg';
-const cheesesZoomed = '../assets/Products/baked-macaroni-and-cheese-mixed-cheeses-zoomed.jpeg';
-const mixedPan = '../assets/Products/baked-macaroni-and-cheese-mixed-in-pan.jpeg';
-const mixed = '../assets/Products/baked-macaroni-and-cheese-mixed.jpeg';
-const sauce = '../assets/Products/baked-macaroni-and-cheese-sauce.jpeg';
-const seasoning = '../assets/Products/baked-macaroni-and-cheese-seasoning.jpeg';
-const second = '../assets/Products/baked-macaroni-and-cheese-second-cheeses.jpeg';
-const topPasta = '../assets/Products/baked-macaroni-and-cheese-top-pasta-layer.jpeg';
-const tupperware = '../assets/Products/baked-macaroni-and-cheese-tupperware.jpeg';
-const plate4 = '../assets/Products/baked-macaroni-and-cheese-full-plate-4.jpeg';
-const plate5 = '../assets/Products/baked-macaroni-and-cheese-full-plate-5.jpeg';
+const cheese1 = '../assets/Products/baked-macaroni-and-cheese-1.jpeg';
+const cheese2 = '../assets/Products/baked-macaroni-and-cheese-2.jpeg';
+const cheese3 = '../assets/Products/baked-macaroni-and-cheese-3.jpeg';
+const cheese4 = '../assets/Products/baked-macaroni-and-cheese-4.jpeg';
+const cheese5 = '../assets/Products/baked-macaroni-and-cheese-5.jpeg';
+const cheese6 = '../assets/Products/baked-macaroni-and-cheese-6.jpeg';
+const cheese7 = '../assets/Products/baked-macaroni-and-cheese-7.jpeg';
+const cheese8 = '../assets/Products/baked-macaroni-and-cheese-8.jpeg';
+const cheese9 = '../assets/Products/baked-macaroni-and-cheese-9.jpeg';
+const cheese10 = '../assets/Products/baked-macaroni-and-cheese-10.jpeg';
+const cheese11 = '../assets/Products/baked-macaroni-and-cheese-11.jpeg';
+const cheese12 = '../assets/Products/baked-macaroni-and-cheese-12.jpeg';
+const cheese13 = '../assets/Products/baked-macaroni-and-cheese-13.jpeg';
+const cheese14 = '../assets/Products/baked-macaroni-and-cheese-14.jpeg';
+const cheese15 = '../assets/Products/baked-macaroni-and-cheese-15.jpeg';
+const cheese16 = '../assets/Products/baked-macaroni-and-cheese-16.jpeg';
+const cheese17 = '../assets/Products/baked-macaroni-and-cheese-17.jpeg';
+const cheese18 = '../assets/Products/baked-macaroni-and-cheese-18.jpeg';
+const cheese19 = '../assets/Products/baked-macaroni-and-cheese-19.jpeg';
+const cheese20 = '../assets/Products/baked-macaroni-and-cheese-20.jpeg';
+const cheese21 = '../assets/Products/baked-macaroni-and-cheese-21.jpeg';
+const cheese22 = '../assets/Products/baked-macaroni-and-cheese-22.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BLACK_PEPPER, CHEDDAR_CHEESE, COLANDER, COOKING_SPRAY, ELBOW_MACARONI, GRUYERE_CHEESE, HEAVY_CREAM, LARGE_POT, MIXING_BOWL, OLIVE_OIL, OVEN, PANKO_BREADCRUMBS, PARMESAN_CHEESE, SALT, SMALL_BOWL, SMOKED_PAPRIKA, STOVE, UNSALTED_BUTTER, WHOLE_MILK } = require('./ingredients');
 
 module.exports = {
     cardName: 'Baked Mac and Cheese',
     name: 'Baked Macaroni and Cheese',
-    img: plate4,
+    img: cheese22,
     recipeAuthors: ['Trish'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -73,26 +74,26 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },
-        { step: 'Light spray some cooking oil spray in a baking dish.', section: SECTIONS.MAIN, img: tupperware },
-        { step: 'In a large pot, boil water.', section: SECTIONS.NOODLES, img: water },
-        { step: 'Cook pasta until it is cooked to al dente (follow the instructions on the package).', section: SECTIONS.NOODLES, img: boiled },
+        { step: 'Light spray some cooking oil spray in a baking dish.', section: SECTIONS.MAIN, img: cheese1 },
+        { step: 'In a large pot, boil water.', section: SECTIONS.NOODLES, img: cheese2 },
+        { step: 'Cook pasta until it is cooked to al dente (follow the instructions on the package).', section: SECTIONS.NOODLES, img: cheese3 },
         { step: 'Drain the pasta in a colander and place in a bowl.', section: SECTIONS.NOODLES },
-        { step: 'Drizzle with olive oil and mix until pasta is coated. Set aside.', section: SECTIONS.NOODLES, img: macaroni },
-        { step: 'In a mixing bowl, combine shredded cheese and set aside.', section: SECTIONS.SAUCE, img: cheesesZoomed },
-        { step: 'Over medium heat, melt butter in a large pot.', section: SECTIONS.SAUCE, img: butter },
-        { step: 'Whisk flour until it becomes golden (about 1 minute).', section: SECTIONS.SAUCE, img: [flour, boilingRoux] },
-        { step: 'Add milk and heavy cream and whisk until smooth.', section: SECTIONS.SAUCE, img: cream },
+        { step: 'Drizzle with olive oil and mix until pasta is coated. Set aside.', section: SECTIONS.NOODLES, img: cheese4 },
+        { step: 'In a mixing bowl, combine shredded cheese and set aside.', section: SECTIONS.SAUCE, img: cheese5 },
+        { step: 'Over medium heat, melt butter in a large pot.', section: SECTIONS.SAUCE, img: cheese6 },
+        { step: 'Whisk flour until it becomes golden (about 1 minute).', section: SECTIONS.SAUCE, img: [cheese7, cheese8] },
+        { step: 'Add milk and heavy cream and whisk until smooth.', section: SECTIONS.SAUCE, img: cheese9 },
         { step: 'Continue to whisk until it bubbles (for about 2 minutes)', section: SECTIONS.SAUCE },
-        { step: 'Add salt and pepper.', section: SECTIONS.SAUCE, img: seasoning },
-        { step: 'Add 2 cups of the mixed cheeses and mix. Repeat with another 2 cups. Sauce should be thick.', section: SECTIONS.SAUCE, img: [second, sauce] },
-        { step: 'Mix together the sauce and the pasta until the pasta is coated.', section: SECTIONS.ASSEMBLE, img: [mixed, mixedPan] },
+        { step: 'Add salt and pepper.', section: SECTIONS.SAUCE, img: cheese10 },
+        { step: 'Add 2 cups of the mixed cheeses and mix. Repeat with another 2 cups. Sauce should be thick.', section: SECTIONS.SAUCE, img: [cheese11, cheese12] },
+        { step: 'Mix together the sauce and the pasta until the pasta is coated.', section: SECTIONS.ASSEMBLE, img: [cheese13, cheese14] },
         { step: 'Pour half of the macaroni and cheese into the baking dish.', section: SECTIONS.ASSEMBLE },
-        { step: 'Add the last 2 cups of cheese on top of the mac and cheese.', section: SECTIONS.ASSEMBLE, img: cheeseLayer },
-        { step: 'Add the last of the mac and cheese.', section: SECTIONS.ASSEMBLE, img: topPasta },
-        { step: 'In a small bowl, combine together panko breadcrumbs, parmesan cheese, paprika and melted butter.', section: SECTIONS.ASSEMBLE, img: crumb },
-        { step: 'Sprinkle this mixture over the mac and cheese.', section: SECTIONS.ASSEMBLE, img: crumbLayer },
-        { step: 'Bake until bubbly and golden brown (about 30 minutes).', section: SECTIONS.ASSEMBLE, img: [baked3, baked4] },
-        { step: 'Serve this warm and enjoy this comfort food.', section: SECTIONS.SERVE, img: plate5 },
+        { step: 'Add the last 2 cups of cheese on top of the mac and cheese.', section: SECTIONS.ASSEMBLE, img: cheese15 },
+        { step: 'Add the last of the mac and cheese.', section: SECTIONS.ASSEMBLE, img: cheese16 },
+        { step: 'In a small bowl, combine together panko breadcrumbs, parmesan cheese, paprika and melted butter.', section: SECTIONS.ASSEMBLE, img: cheese17 },
+        { step: 'Sprinkle this mixture over the mac and cheese.', section: SECTIONS.ASSEMBLE, img: cheese18 },
+        { step: 'Bake until bubbly and golden brown (about 30 minutes).', section: SECTIONS.ASSEMBLE, img: [cheese19, cheese20] },
+        { step: 'Serve this warm and enjoy this comfort food.', section: SECTIONS.SERVE, img: cheese21 },
     ],
     store: [
         {
