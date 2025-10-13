@@ -1,7 +1,8 @@
-const bbq = '../assets/Products/bbq-chicken-wings.jpeg';
-const raw = '../assets/Products/bbq-chicken-wings-raw.jpeg';
-const rawInPan = '../assets/Products/bbq-chicken-wings-raw-in-pan.jpeg';
-const pan = '../assets/Products/bbq-chicken-wings-in-pan.jpeg';
+const wings1 = '../assets/Products/bbq-chicken-wings-1.jpeg';
+const wings2 = '../assets/Products/bbq-chicken-wings-2.jpeg';
+const wings3 = '../assets/Products/bbq-chicken-wings-3.jpeg';
+const wings4 = '../assets/Products/bbq-chicken-wings-4.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BAKING_SODA,
@@ -24,7 +25,7 @@ const {
 module.exports = {
     cardName: 'BBQ Chicken Wings',
     name: 'BBQ Chicken Wings',
-    img: bbq,
+    img: wings4,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -60,16 +61,16 @@ module.exports = {
         { ...LARGE_PAN, additionalDetails: 'with lid' },
     ],
     directions: [
-        { step: 'Marinate chicken in baking soda and water.', section: SECTIONS.MARINADE, img: raw },
+        { step: 'Marinate chicken in baking soda and water.', section: SECTIONS.MARINADE, img: wings1 },
         { step: 'Let it rest for 15 minutes', section: SECTIONS.MARINADE },
-        { step: 'Put in pan in a concentric circle and combine root beer, butter, salt, paprika, black pepper, garlic and soy sauce.', section: SECTIONS.MAIN, img: rawInPan },
+        { step: 'Put in pan in a concentric circle and combine root beer, butter, salt, paprika, black pepper, garlic and soy sauce.', section: SECTIONS.MAIN, img: wings2 },
         { step: 'Cover with a lid and cook for 5 minutes.', section: SECTIONS.MAIN },
         { step: 'Uncover and skim off the froth.', section: SECTIONS.MAIN },
         { step: 'Re-cover the pan and continue cooking for 10 minutes.', section: SECTIONS.MAIN },
         { step: 'Uncover and stir.', section: SECTIONS.MAIN },
         { step: 'Re-cover the pan and continue cooking for 5 minutes.', section: SECTIONS.MAIN },
         { step: 'Drain some of the residual liquid.', section: SECTIONS.MAIN },
-        { step: 'Add the honey, ketchup and mustard in the pan. Stir.', section: SECTIONS.MAIN, img: pan },
+        { step: 'Add the honey, ketchup and mustard in the pan. Stir.', section: SECTIONS.MAIN, img: wings3 },
         { step: 'Enjoy this light appetizer. Feel free to add some spice if you like a kick.', section: SECTIONS.SERVE },
     ],
     store: [
