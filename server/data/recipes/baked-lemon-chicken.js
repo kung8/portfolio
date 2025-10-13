@@ -1,6 +1,6 @@
-const plate = '../assets/Products/baked-lemon-chicken-plate.jpeg';
-const full = '../assets/Products/baked-lemon-chicken-full-plate.jpeg';
-const pan = '../assets/Products/baked-lemon-chicken-pan.jpeg';
+const chicken1 = '../assets/Products/baked-lemon-chicken-1.jpeg';
+const chicken2 = '../assets/Products/baked-lemon-chicken-2.jpeg';
+const chicken3 = '../assets/Products/baked-lemon-chicken-3.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BAKING_PAN,
@@ -23,7 +23,7 @@ const {
 module.exports = {
     cardName: 'Baked Lemon Chicken',
     name: 'Baked Lemon Chicken',
-    img: full,
+    img: chicken3,
     recipeAuthors: ['Tiffany'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -68,8 +68,8 @@ module.exports = {
         { step: 'Transfer chicken to baking pan.', section: SECTIONS.MAIN },
         { step: 'In a small bowl, mix together chicken broth, lemon juice, honey, garlic, italian seasoning, salt and pepper.', section: SECTIONS.MAIN },
         { step: 'Pour the sauce over the chicken and add lemon slices.', section: SECTIONS.MAIN },
-        { step: 'Bake for 20 to 30 minutes.', section: SECTIONS.MAIN, img: pan },
-        { step: 'Serve with rice and garnish with fresh rosemary.', section: SECTIONS.SERVE, img: plate },
+        { step: 'Bake for 20 to 30 minutes.', section: SECTIONS.MAIN, img: chicken1 },
+        { step: 'Serve with rice and garnish with fresh rosemary.', section: SECTIONS.SERVE, img: chicken2 },
     ],
     store: [
         {
