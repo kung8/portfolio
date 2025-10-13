@@ -9,7 +9,7 @@ const appleTart = require("./recipes/apple-tart");
 const appleTurnovers = require('./recipes/apple-turnovers.js'); // TODO: finish adding recipe
 const bakedBeans = require("./recipes/baked-beans");
 const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
-const bakedChicken = require("./recipes/baked-chicken");
+const bakedChickenDrumsticks = require("./recipes/baked-chicken-drumsticks");
 const bakedChickenBreast = require('./recipes/baked-chicken-breast.js');
 const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
 const bakedMacaroniAndCheese = require("./recipes/baked-macaroni-and-cheese");
@@ -637,7 +637,7 @@ const recipes = [
     garlicShrimp,
     crabCakes,
     garlicChickenWithHerbs,
-    bakedChicken,
+    bakedChickenDrumsticks,
     bakedLemonChicken,
     sloppyJoes,
     lentilSloppyJoes,

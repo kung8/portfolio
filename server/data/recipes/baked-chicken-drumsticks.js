@@ -1,9 +1,10 @@
-const spices = '../assets/Products/baked-chicken-spices.jpeg';
-const oil = '../assets/Products/baked-chicken-oil.jpeg';
-const rawChicken = '../assets/Products/baked-chicken-raw-zoomed.jpeg';
-const pan = '../assets/Products/baked-chicken-cooked.jpeg';
-const plated = '../assets/Products/baked-chicken-plated.jpeg';
-const full = '../assets/Products/baked-chicken-plated-full.jpeg';
+const drumstick1 = '../assets/Products/baked-chicken-drumstick-1.jpeg';
+const drumstick2 = '../assets/Products/baked-chicken-drumstick-2.jpeg';
+const drumstick3 = '../assets/Products/baked-chicken-drumstick-3.jpeg';
+const drumstick4 = '../assets/Products/baked-chicken-drumstick-4.jpeg';
+const drumstick5 = '../assets/Products/baked-chicken-drumstick-5.jpeg';
+const drumstick6 = '../assets/Products/baked-chicken-drumstick-6.jpeg';
+
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BAKING_PAN,
@@ -21,9 +22,9 @@ const {
 } = require('./ingredients');
 
 module.exports = {
-    cardName: 'Baked Chicken',
-    name: 'Baked Chicken',
-    img: pan,
+    cardName: 'Baked Chicken Drumsticks',
+    name: 'Baked Chicken Drumsticks',
+    img: drumstick4,
     recipeAuthors: ['Vered DeLeeuw'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -62,12 +63,12 @@ module.exports = {
     directions: [
         { step: 'Preheat the oven to 400ºF.', section: SECTIONS.MAIN },
         { step: 'Place the chicken in the baking pan in a single layer.', section: SECTIONS.MAIN },
-        { step: 'Mix the dry seasoning together.', section: SECTIONS.MAIN, img: spices },
-        { step: 'Then add the oil.', section: SECTIONS.MAIN, img: oil },
-        { step: 'Once all is mixed, use the basting brush to coat the top of the chicken.', section: SECTIONS.MAIN, img: rawChicken },
-        { step: 'Bake the chicken for 40 - 50 minutes, or until the internal temperature reaches 165ºF.', section: SECTIONS.MAIN, img: pan },
-        { step: 'Move them out of the pan so the oils does not gelatinize.', section: SECTIONS.MAIN, img: plated },
-        { step: 'Serve with rice and your favorite veggies.', section: SECTIONS.SERVE, img: full },
+        { step: 'Mix the dry seasoning together.', section: SECTIONS.MAIN, img: drumstick1 },
+        { step: 'Then add the oil.', section: SECTIONS.MAIN, img: drumstick2 },
+        { step: 'Once all is mixed, use the basting brush to coat the top of the chicken.', section: SECTIONS.MAIN, img: drumstick3 },
+        { step: 'Bake the chicken for 40 - 50 minutes, or until the internal temperature reaches 165ºF.', section: SECTIONS.MAIN, img: drumstick4 },
+        { step: 'Move them out of the pan so the oils does not gelatinize.', section: SECTIONS.MAIN, img: drumstick5 },
+        { step: 'Serve with rice and your favorite veggies.', section: SECTIONS.SERVE, img: drumstick6 },
     ],
     store: [
         {
