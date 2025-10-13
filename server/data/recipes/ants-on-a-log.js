@@ -1,12 +1,12 @@
-const side = '../assets/Products/ants-on-a-log-side.jpeg';
-const straight = '../assets/Products/ants-on-a-log-straight-on.jpeg';
+const log1 = '../assets/Products/ants-on-a-log-1.jpeg';
+const log2 = '../assets/Products/ants-on-a-log-2.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CELERY, KNIFE, PEANUT_BUTTER, RAISINS } = require('./ingredients');
 
 module.exports = {
     cardName: 'Ants on a Log',
     name: 'Ants on a Log',
-    img: side,
+    img: log2,
     recipeAuthors: ['Kevin Ung'],
     available: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
@@ -31,7 +31,7 @@ module.exports = {
         { step: 'Cut and clean the celery stalks.', section: SECTIONS.MAIN },
         { step: 'Smear some peanut butter in each cut celery.', section: SECTIONS.MAIN },
         { step: 'Top with as many raisins on the peanut butter.', section: SECTIONS.MAIN },
-        { step: 'Enjoy this healthy, nutritious snacks. The only bugs that I would be willing to eat on a regular basis.', section: SECTIONS.MAIN, img: straight },
+        { step: 'Enjoy this healthy, nutritious snacks. The only bugs that I would be willing to eat on a regular basis.', section: SECTIONS.MAIN, img: log1 },
     ],
     store: [
         {
