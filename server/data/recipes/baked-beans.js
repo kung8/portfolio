@@ -1,15 +1,14 @@
-const boiling = '../assets/Products/baked-beans-boiling.jpeg';
-const cooked = '../assets/Products/baked-beans-cooked.jpeg';
-const cookingBacon = '../assets/Products/baked-beans-cooking-bacon.jpeg';
-const cookingOnion = '../assets/Products/baked-beans-cooking-onion.jpeg';
-const drained = '../assets/Products/baked-beans-drained.jpeg';
-const label = '../assets/Products/baked-beans-raw-with-label.jpeg';
-const beanWithSauce = '../assets/Products/baked-beans-sauce-with-beans.jpeg';
-const sauce = '../assets/Products/baked-beans-sauce.jpeg';
-const seasoning = '../assets/Products/baked-beans-seasoning.jpeg';
-const soaking = '../assets/Products/baked-beans-soaking.jpeg';
-const plateZoomed = '../assets/Products/baked-beans-full-plate-zoomed.jpeg';
-const { wip } = require('./apple-dump-cake');
+const beans1 = '../assets/Products/baked-beans-1.jpeg';
+const beans2 = '../assets/Products/baked-beans-2.jpeg';
+const beans3 = '../assets/Products/baked-beans-3.jpeg';
+const beans4 = '../assets/Products/baked-beans-4.jpeg';
+const beans5 = '../assets/Products/baked-beans-5.jpeg';
+const beans6 = '../assets/Products/baked-beans-6.jpeg';
+const beans7 = '../assets/Products/baked-beans-7.jpeg';
+const beans8 = '../assets/Products/baked-beans-8.jpeg';
+const beans9 = '../assets/Products/baked-beans-9.jpeg';
+const beans10 = '../assets/Products/baked-beans-10.jpeg';
+const beans11 = '../assets/Products/baked-beans-11.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { APPLE_CIDER_VINEGAR, BACON, BAKING_SODA, BROWN_SUGAR, DRY_NAVY_BEAN, DUTCH_OVEN_POT, KETCHUP, LARGE_POT, MAPLE_SYRUP, OVEN, SALT, SPATULA, STOVE, YELLOW_ONION } = require('./ingredients');
 
@@ -19,7 +18,7 @@ module.exports = {
     wip: true,
     cardName: 'Baked Beans',
     name: 'Baked Beans',
-    img: plateZoomed,
+    img: beans11,
     recipeAuthors: ['Kelsey'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -58,24 +57,24 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'In a large pot, add the dry beans.', section: BEANS, img: label },
-        { step: 'Fill the pot with cold water until it is a few inches above the beans.', section: BEANS, img: soaking },
+        { step: 'In a large pot, add the dry beans.', section: BEANS, img: beans1 },
+        { step: 'Fill the pot with cold water until it is a few inches above the beans.', section: BEANS, img: beans2 },
         { step: 'Cover with a lid and soak the beans for 12 hours or overnight.', section: BEANS },
-        { step: 'Drain beans in a colander.', section: BEANS, img: drained },
-        { step: 'Again fill the pot with water until there\'s 2 inches above the beans.', section: BEANS, img: boiling },
-        { step: 'Add salt and baking soda and mix.', section: BEANS, img: seasoning },
+        { step: 'Drain beans in a colander.', section: BEANS, img: beans3 },
+        { step: 'Again fill the pot with water until there\'s 2 inches above the beans.', section: BEANS, img: beans4 },
+        { step: 'Add salt and baking soda and mix.', section: BEANS, img: beans5 },
         { step: 'Over medium-high heat, bring the pot of beans to a boil.', section: BEANS },
         { step: 'Reduce to a low heat and simmer for one hour. Stirring occasionally.', section: BEANS },
         { step: 'Drain the beans. Reserve about 3 cups of the bean water for later. Set aside the beans.', section: BEANS },
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },
-        { step: 'Over medium-high heat, add the diced bacon in a dutch oven pot. Cook for a few minutes.', section: SECTIONS.MAIN, img: cookingBacon },
-        { step: 'Add onions. Cook until the bacon is crisp and onions are translucent.', section: SECTIONS.MAIN, img: cookingOnion },
-        { step: 'Add the brown sugar, ketchup, syrup, apple cider vinegar and 1 1/2 cups of the bean liquid.', section: SECTIONS.MAIN, img: sauce },
-        { step: 'Add the beans to the dutch oven and cover with a lid.', section: SECTIONS.MAIN, img: beanWithSauce },
+        { step: 'Over medium-high heat, add the diced bacon in a dutch oven pot. Cook for a few minutes.', section: SECTIONS.MAIN, img: beans6 },
+        { step: 'Add onions. Cook until the bacon is crisp and onions are translucent.', section: SECTIONS.MAIN, img: beans7 },
+        { step: 'Add the brown sugar, ketchup, syrup, apple cider vinegar and 1 1/2 cups of the bean liquid.', section: SECTIONS.MAIN, img: beans8 },
+        { step: 'Add the beans to the dutch oven and cover with a lid.', section: SECTIONS.MAIN, img: beans9 },
         { step: 'Bake for 1 hour.', section: SECTIONS.MAIN },
         { step: 'Stir. If it looks dry, add more of the reserved bean water.', section: SECTIONS.MAIN },
         { step: 'Bake for another 30 minutes.', section: SECTIONS.MAIN },
-        { step: 'Remove the lid. Bake for another 30 minutes. The beans will thicken now.', section: SECTIONS.MAIN, img: cooked },
+        { step: 'Remove the lid. Bake for another 30 minutes. The beans will thicken now.', section: SECTIONS.MAIN, img: beans10 },
         { step: 'Stir and serve warm.', section: SECTIONS.MAIN },
     ],
     store: [
