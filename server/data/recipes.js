@@ -759,3 +759,126 @@ module.exports = recipes;
 // Charbroiled salmon, topped with a choice of creamy dill sauce
 // or fresh pineapple salsa, served with rice pilaf,
 // and sautéed vegetables. (32)
+
+// TODO: update the images for the following recipes:
+// - biscuits-and-gravy
+// - black-pepper-chicken
+// - blondie
+// - bok-choy
+// - breakfast-burrito (add a number)
+// - breakfast-sandwich
+// - brickle-bar
+// - briskets
+// - broccoli-beef
+// - broccoli-cheddar-soup
+// - brownies
+// - buttered-corn
+// - buttermilk-syrup
+// - cafe-rio-bowl
+// - calzone (add a number)
+// - caramel-apples
+// - caramelized-mushroom
+// - caramelized-onion
+// - carbonara (lower the numbers)
+// - carrot-cake
+// - cashew-chicken
+// - cheeseballs (add a number)
+// - cheesecake
+// - chicken-alfredo (add a number)
+// - chicken-biryani
+// - chicken-cordon-bleu
+// - chicken-katsudon
+// - chicken-noodle-soup (add a number)
+// - chicken-quesadilla (lower the number)
+// - chicken-ramen
+// - chicken-salad (add a number)
+// - chicken-stuffed-crescent-rolls
+// - chicken-tikka-masala
+// - chili
+// - chinese-green-bean-and-beef 
+// - chocolate-chip-cookies
+// - cinnamon-rolls
+// - coleslaw
+// - cooking-turkey-estimates (conform it to the other files)
+// - cream-puffs
+// - creme-brulee
+// - crepes
+// - crescent-rolls
+// - egg-casserole (add a number)
+// - fresh-spring-rolls
+// - frozen-pizza-dough (conform it to the other files)
+// - full-set (conform it to the other files)
+// - garlic-bread (add a number)
+// - garlic-butter (conform it to the other files)
+// - garlic-chicken-with-herbs
+// - ginger-chicken
+// - gingerbread-men
+// - graveyard-dessert
+// - green-bean-almondine
+// - green-bean-casserole
+// - hamburger (add a number)
+// - hawaiian-haystacks
+// - hobo-dinner
+// - hospitality-chicken
+// - indian-butter-chicken
+// - katsudon (conform it to the other files)
+// - kebabs (add a number)
+// - khmer-red-curry
+// - korean-fried-chicken
+// - lemon-bars
+// - lemon-chicken-on-lettuce
+// - lemon-chicken-ramen
+// - lo-mein
+// - macaroni-salad (add a number)
+// - mexican-chicken-bake (add a number)
+// - mexican-cilantro-lime-chicken
+// - mochi (lower the number)
+// - no-bake-cookies
+// - oatmeal-raisin-cookies
+// - pad-see-ew
+// - pad-thai
+// - pancakes (add a number)
+// - pao-de-queijo
+// - parfait (add a number)
+// - peach-cobbler
+// - peanut-brittle
+// - pepper-steak-stir-fry
+// - peppermint-bark
+// - philly-cheeseteak-pizza
+// - pho
+// - pigs-in-a-blanket (add a number)
+// - pizza / pizza-dough (add a number)
+// - popcorn-balls
+// - potstickers
+// - pretzels
+// - refrigerated-pizza-dough (conform it to the other files)
+// - rice-krispie-treats
+// - roast (add a number)
+// - roasted-turkey
+// - rosemary-fries
+// - rosemary-lemonade
+// - sauteed-squash
+// - scrambled-eggs (add a number)
+// - singaporean-chicken-rice
+// - sloppy-joes
+// - smoothie (add a number)
+// - smores (add a number)
+// - snickerdoodles
+// - sour-chicken (add a number)
+// - sourdough-bread
+// - sourdough-starter
+// - southwest-salad (add a number)
+// - spaghetti (add a number)
+// - stuffing (lower the number)
+// - sugar-cookies
+// - sushi (add a number)
+// - taco-in-a-bag (add a number)
+// - ted-lasso-biscuits
+// - thai-basil (lower the number)
+// - thai-massaman-curry (conform it to the other files)
+// - thawing-turkey-estimates (conform it to the other files)
+// - turkey-meatball-spinach-tortellini-soup
+// - turkey-size-cooking-table (conform it to the other files)
+// - waffles
+// - wraps (add a number)
+// - yellow-curry (lower the number)
