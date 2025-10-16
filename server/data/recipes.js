@@ -787,7 +787,6 @@ module.exports = recipes;
 // - chicken-stuffed-crescent-rolls
 // - chicken-tikka-masala
 // - chili
-// - chinese-green-bean-and-beef 
 // - chocolate-chip-cookies
 // - cinnamon-rolls
 // - cream-puffs
