@@ -761,8 +761,6 @@ module.exports = recipes;
 // and sautéed vegetables. (32)
 
 // TODO: update the images for the following recipes:
-// - blondie
-// - bok-choy
 // - breakfast-burrito (add a number)
 // - breakfast-sandwich
 // - brickle-bar
