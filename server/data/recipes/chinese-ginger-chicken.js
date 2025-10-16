@@ -1,10 +1,11 @@
-const gingerChicken = '../assets/Products/ginger-chicken.jpeg';
-const raw = '../assets/Products/ginger-chicken-raw.jpeg';
-const ginger = '../assets/Products/ginger-chicken-ginger.jpeg';
-const mixed = '../assets/Products/ginger-chicken-cooking-mixed.jpeg';
-const placed = '../assets/Products/ginger-chicken-placed-ginger.jpeg';
-const plated = '../assets/Products/ginger-chicken-plated.jpeg';
-const sauce = '../assets/Products/ginger-chicken-soy-sauce.jpeg';
+const ginger1 = '../assets/Products/ginger-chicken-1.jpeg';
+const ginger2 = '../assets/Products/ginger-chicken-2.jpeg';
+const ginger3 = '../assets/Products/ginger-chicken-3.jpeg';
+const ginger4 = '../assets/Products/ginger-chicken-4.jpeg';
+const ginger5 = '../assets/Products/ginger-chicken-5.jpeg';
+const ginger6 = '../assets/Products/ginger-chicken-6.jpeg';
+const ginger7 = '../assets/Products/ginger-chicken-7.jpeg';
+
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BLACK_PEPPER,
@@ -23,7 +24,7 @@ const {
 module.exports = {
     cardName: 'Ginger Chicken',
     name: 'Chinese Ginger Chicken',
-    img: plated,
+    img: ginger7,
     recipeAuthors: ['Grandma'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -56,17 +57,17 @@ module.exports = {
         { ...LARGE_BOWL, amount: 2 },
     ],
     directions: [
-        { step: 'Peel the ginger and cut the ginger into long, thin strips. Do not worry they will cook down.', section: SECTIONS.MAIN, img: ginger },
+        { step: 'Peel the ginger and cut the ginger into long, thin strips. Do not worry they will cook down.', section: SECTIONS.MAIN, img: ginger1 },
         { step: 'Place wok on stove over medium-high heat. Work in batches as needed.', section: SECTIONS.MAIN },
         { step: 'Add half of the minced garlic. Cook until fragrant (about 30 seconds).', section: SECTIONS.MAIN },
-        { step: 'Add half the chicken. Make sure it\'s in a single layer.', section: SECTIONS.MAIN, img: raw },
+        { step: 'Add half the chicken. Make sure it\'s in a single layer.', section: SECTIONS.MAIN, img: ginger2 },
         { step: 'Add salt and pepper as desired. If you are using low-sodium soy sauce, you can be a little more generous with the salt.', section: SECTIONS.MAIN },
         { step: 'Do not mix or stir too frequently. We want it to brown and smoke a little (about 3 to 5 minutes).', section: SECTIONS.MAIN },
         { step: 'Once the chicken begins to brown, flip the chicken and continue cooking until it begins to brown on that side.', section: SECTIONS.MAIN },
-        { step: 'Add half of the ginger. Place it either to the side or towards the bottom of the wok, so it can cook better (and crisp up if you prefer it crispier).', section: SECTIONS.MAIN, img: mixed },
-        { step: 'After it has browned, add the soy sauce to give it a nice sauce and a little cornstarch to thicken the sauce.', section: SECTIONS.MAIN, img: sauce },
-        { step: 'Transfer the cooked chicken into a clean bowl. And cook the second batch.', section: SECTIONS.MAIN, img: placed },
-        { step: 'Eat one of my favorite childhood dishes with steamed rice and any other side dishes.', section: SECTIONS.MAIN, img: gingerChicken },
+        { step: 'Add half of the ginger. Place it either to the side or towards the bottom of the wok, so it can cook better (and crisp up if you prefer it crispier).', section: SECTIONS.MAIN, img: ginger3 },
+        { step: 'After it has browned, add the soy sauce to give it a nice sauce and a little cornstarch to thicken the sauce.', section: SECTIONS.MAIN, img: ginger4 },
+        { step: 'Transfer the cooked chicken into a clean bowl. And cook the second batch.', section: SECTIONS.MAIN, img: ginger5 },
+        { step: 'Eat one of my favorite childhood dishes with steamed rice and any other side dishes.', section: SECTIONS.MAIN, img: ginger6 },
     ],
     store: [
         {

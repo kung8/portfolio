@@ -1,5 +1,5 @@
 const eden = '../assets/Products/eden.jpeg';
-const games = '../assets/Products/full-set.png';
+const games = '../assets/Products/ninja-collision-full-set.png';
 const recommendations = '../assets/Products/recommendations.png';
 
 const { cloneDeep } = require('lodash');

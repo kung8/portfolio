@@ -1,5 +1,5 @@
-const gelato1 = '../assets/Products/gelato-1.jpeg';
-const gelato2 = '../assets/Products/gelato-2.jpeg';
+const gelato1 = '../assets/Products/chocolate-gelato-1.jpeg';
+const gelato2 = '../assets/Products/chocolate-gelato-2.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { COCOA_POWDER, DARK_COOKING_CHOCOLATE, EGG_YOLK, HEAVY_CREAM, ICE_CREAM_MAKER, MIXING_BOWL, SALT, SAUCEPAN, VANILLA_BEAN, WHITE_SUGAR, WHOLE_MILK } = require('./ingredients');

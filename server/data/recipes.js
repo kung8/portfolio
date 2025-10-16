@@ -784,7 +784,6 @@ module.exports = recipes;
 // - chicken-katsudon
 // - chicken-noodle-soup (add a number)
 // - chicken-quesadilla (lower the number)
-// - chicken-salad (add a number)
 // - chicken-stuffed-crescent-rolls
 // - chicken-tikka-masala
 // - chili
@@ -800,16 +799,12 @@ module.exports = recipes;
 // - egg-casserole (add a number)
 // - fresh-spring-rolls
 // - frozen-pizza-dough (conform it to the other files)
-// - full-set (conform it to the other files)
 // - garlic-bread (add a number)
 // - garlic-butter (conform it to the other files)
 // - garlic-chicken-with-herbs
-// - ginger-chicken
 // - gingerbread-men
-// - graveyard-dessert
 // - green-bean-almondine
 // - green-bean-casserole
-// - hamburger (add a number)
 // - hawaiian-haystacks
 // - hospitality-chicken
 // - indian-butter-chicken

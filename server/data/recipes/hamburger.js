@@ -1,4 +1,4 @@
-const hamburger = '../assets/Products/hamburger.jpeg';
+const hamburger1 = '../assets/Products/hamburger-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BREADCRUMBS,
@@ -17,7 +17,7 @@ const {
 module.exports = {
     cardName: 'Hamburger',
     name: 'Hamburger',
-    img: hamburger,
+    img: hamburger1,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,

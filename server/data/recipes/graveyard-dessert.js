@@ -1,11 +1,11 @@
-const graveyardDessert = '../assets/Products/graveyard-dessert.jpeg';
+const graveyardDessert1 = '../assets/Products/graveyard-dessert-1.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const { CHOCOLATE_PUDDING_CUPS, GUMMY_WORMS, MILANO_COOKIES, OREO_COOKIES } = require('./ingredients');
 
 module.exports = {
     cardName: 'Graveyard Dessert',
     name: 'Graveyard Dessert',
-    img: graveyardDessert,
+    img: graveyardDessert1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: 'Kevin Ung',
     available: true,
