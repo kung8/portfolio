@@ -1,13 +1,13 @@
-const zoomed = '../assets/Products/black-pepper-chicken-combined-in-pan-zoomed.jpeg';
-const combined = '../assets/Products/black-pepper-chicken-combined-in-pan.jpeg';
-const cooked = '../assets/Products/black-pepper-chicken-cooked-chicken.jpeg';
-const cornstarch = '../assets/Products/black-pepper-chicken-cornstarch.jpeg';
-const marinade = '../assets/Products/black-pepper-chicken-marinade.jpeg';
-const marinaded = '../assets/Products/black-pepper-chicken-marinaded-chicken.jpeg';
-const rice2 = '../assets/Products/black-pepper-chicken-plated-with-rice-2.jpeg';
-const raw = '../assets/Products/black-pepper-chicken-raw-chicken-in-pan.jpeg';
-const sauce = '../assets/Products/black-pepper-chicken-sauce.jpeg';
-const sauted = '../assets/Products/black-pepper-chicken-sauted-fragrant.jpeg';
+const pepper1 = '../assets/Products/black-pepper-chicken-1.jpeg';
+const pepper2 = '../assets/Products/black-pepper-chicken-2.jpeg';
+const pepper3 = '../assets/Products/black-pepper-chicken-3.jpeg';
+const pepper4 = '../assets/Products/black-pepper-chicken-4.jpeg';
+const pepper5 = '../assets/Products/black-pepper-chicken-5.jpeg';
+const pepper6 = '../assets/Products/black-pepper-chicken-6.jpeg';
+const pepper7 = '../assets/Products/black-pepper-chicken-7.jpeg';
+const pepper8 = '../assets/Products/black-pepper-chicken-8.jpeg';
+const pepper9 = '../assets/Products/black-pepper-chicken-9.jpeg';
+const pepper10 = '../assets/Products/black-pepper-chicken-10.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -34,7 +34,7 @@ const {
 module.exports = {
     cardName: 'Black Pepper Chicken',
     name: 'Malaysian Black Pepper Chicken',
-    img: zoomed,
+    img: pepper10,
     recipeAuthors: [''],
     recipeFinder: 'Marco Crosland',
     available: true,
@@ -82,16 +82,16 @@ module.exports = {
     ],
     directions: [
         { step: 'Cut the chicken into 1" cubes.', section: SECTIONS.MARINADE },
-        { step: 'In a mixing bowl, combine the marinade ingredients.', section: SECTIONS.MARINADE, img: marinade },
-        { step: 'Add chicken. Marinate the chicken for 30 minutes.', section: SECTIONS.MARINADE, img: marinaded },
+        { step: 'In a mixing bowl, combine the marinade ingredients.', section: SECTIONS.MARINADE, img: pepper1 },
+        { step: 'Add chicken. Marinate the chicken for 30 minutes.', section: SECTIONS.MARINADE, img: pepper2 },
         { step: 'Over medium-high heat, heat 1 Tbsp of oil in a wok.', section: SECTIONS.MAIN },
-        { step: 'Cook the chicken in batches if needed. Cook until chicken is cooked through. Remove chicken and set aside.', section: SECTIONS.MAIN, img: [raw, cooked] },
-        { step: 'Add the shallots, garlic, ginger and black pepper to the wok. Cook and stir until fragrant.', section: SECTIONS.MAIN, img: sauted },
-        { step: 'Add the sauces and water. Mix until combined.', section: SECTIONS.MAIN, img: sauce },
-        { step: 'In a small bowl, combine cornstarch and a little warm water. Mix then add to the wok.', section: SECTIONS.MAIN, img: cornstarch },
-        { step: 'Re-add the chicken and mix until combined.', section: SECTIONS.MAIN, img: combined },
+        { step: 'Cook the chicken in batches if needed. Cook until chicken is cooked through. Remove chicken and set aside.', section: SECTIONS.MAIN, img: [pepper3, pepper4] },
+        { step: 'Add the shallots, garlic, ginger and black pepper to the wok. Cook and stir until fragrant.', section: SECTIONS.MAIN, img: pepper5 },
+        { step: 'Add the sauces and water. Mix until combined.', section: SECTIONS.MAIN, img: pepper6 },
+        { step: 'In a small bowl, combine cornstarch and a little warm water. Mix then add to the wok.', section: SECTIONS.MAIN, img: pepper7 },
+        { step: 'Re-add the chicken and mix until combined.', section: SECTIONS.MAIN, img: pepper8 },
         { step: 'Add sugar as desired.', section: SECTIONS.MAIN },
-        { step: 'Serve over rice, garnish with a few sprigs of cilantro, and enjoy a small taste of Malaysian cuisine.', section: SECTIONS.MAIN, img: rice2 },
+        { step: 'Serve over rice, garnish with a few sprigs of cilantro, and enjoy a small taste of Malaysian cuisine.', section: SECTIONS.MAIN, img: pepper9 },
     ],
     store: [
         {
