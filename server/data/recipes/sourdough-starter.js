@@ -1,10 +1,10 @@
-const base = '../assets/Products/sourdough-starter-base.jpeg';
-const risen = '../assets/Products/sourdough-starter-risen.jpeg';
-const zoomed = '../assets/Products/sourdough-starter-risen-zoomed.jpeg';
-const flour = '../assets/Products/sourdough-starter-feeding-flour.jpeg';
-const water = '../assets/Products/sourdough-starter-feeding-water.jpeg';
-const mix = '../assets/Products/sourdough-starter-feeding-mix.jpeg';
-const mixed = '../assets/Products/sourdough-starter-feeding-mixed.jpeg';
+const starter1 = '../assets/Products/sourdough-starter-1.jpeg';
+const starter2 = '../assets/Products/sourdough-starter-2.jpeg';
+const starter3 = '../assets/Products/sourdough-starter-3.jpeg';
+const starter4 = '../assets/Products/sourdough-starter-4.jpeg';
+const starter5 = '../assets/Products/sourdough-starter-5.jpeg';
+const starter6 = '../assets/Products/sourdough-starter-6.jpeg';
+const starter7 = '../assets/Products/sourdough-starter-7.jpeg';
 
 const { ALL_PURPOSE_FLOUR, WATER } = require('./ingredients');
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
@@ -15,7 +15,7 @@ const FEEDING_STARTER = 'Feeding Starter';
 module.exports = {
     cardName: 'Sourdough Starter',
     name: 'Sourdough Starter',
-    img: risen,
+    img: starter7,
     recipeAuthors: ['Amy Duska'],
     recipeFinder: 'Justin Ung',
     available: true,
@@ -48,11 +48,11 @@ module.exports = {
         { step: 'Day 2, stir the mixture to give it some air.', section: CREATING_STARTER },
         { step: 'Day 3, discard 1/2 cup of the starter mixture and feed it flour and warm water (refer to the "Feeding Starter" ingredients for amounts).', section: CREATING_STARTER },
         { step: 'Continue to discard 1/2 cup of the starter mixture and feed the starter mixture for the next 4 days around the same time.', section: CREATING_STARTER },
-        { step: 'The starter should be ready to use in your recipes.', section: CREATING_STARTER, img: base },
+        { step: 'The starter should be ready to use in your recipes.', section: CREATING_STARTER, img: starter1 },
         { step: 'Once you have created the starter, you just need to feed it at least once a week. When it\'s not being fed you will refrigerate it.', section: FEEDING_STARTER },
         { step: 'When you are feeding the starter, take it out of the fridge and remove 1/2 cup of starter. To make room for the new amount of ingredients. This removed portion can be used to make a new starter if you want.', section: FEEDING_STARTER },
-        { step: 'Mix in flour and warm water and leave it in a warm area for the next 24 hours. Bubbling means it is alive and is eating the new.', section: FEEDING_STARTER, img: [flour, water, mix, mixed] },
-        { step: 'Refrigerate the starter after it has grown.', section: FEEDING_STARTER, img: zoomed },
+        { step: 'Mix in flour and warm water and leave it in a warm area for the next 24 hours. Bubbling means it is alive and is eating the new.', section: FEEDING_STARTER, img: [starter2, starter3, starter4, starter5] },
+        { step: 'Refrigerate the starter after it has grown.', section: FEEDING_STARTER, img: starter6 },
     ],
     store: [
         {

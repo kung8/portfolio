@@ -96,6 +96,7 @@ module.exports = {
             method: REHEAT_METHODS.DOUBLE_BOIL,
             instruction: 'Reheat in a double boiler until heated through (about 5 to 10 minutes). Do not reheat in the microwave because of the raw eggs.',
             img: carbonara10,
+            // TODO: add image logic for reheat
         },
     ],
     mealPrep: true,
