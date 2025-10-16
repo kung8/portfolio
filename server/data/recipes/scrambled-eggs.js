@@ -1,4 +1,4 @@
-const scrambledEggs = '../assets/Products/scrambled-eggs.jpeg';
+const scrambledEggs1 = '../assets/Products/scrambled-eggs-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BASIL,
@@ -17,7 +17,7 @@ const {
 module.exports = {
     cardName: 'Scrambled Eggs',
     name: 'Scrambled Eggs',
-    img: scrambledEggs,
+    img: scrambledEggs1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,

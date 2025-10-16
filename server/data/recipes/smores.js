@@ -1,4 +1,4 @@
-const smores = '../assets/Products/smores.jpeg';
+const smores1 = '../assets/Products/smores-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALUMINUM_FOIL,
@@ -12,7 +12,7 @@ const {
 module.exports = {
     cardName: 'S\'mores',
     name: 'S\'mores',
-    img: smores,
+    img: smores1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,

@@ -1,5 +1,5 @@
-const dinner = '../assets/Products/hobo-dinner.jpeg';
-const pan = '../assets/Products/hobo-dinner-pan.jpeg';
+const dinner1 = '../assets/Products/hobo-dinner-1.jpeg';
+const dinner2 = '../assets/Products/hobo-dinner-2.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
@@ -14,7 +14,7 @@ const {
 module.exports = {
     cardName: 'Hobo Dinner',
     name: 'Hobo Dinner',
-    img: pan,
+    img: dinner1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,
@@ -49,7 +49,7 @@ module.exports = {
         { step: 'Add your preferred sliced veggies and proteins into the baking pan. I love summer sausage with these simple hearty veggies.', section: SECTIONS.MAIN },
         { step: 'Drizzle a light amount of olive oil. If you choose to use other proteins, note that the amount of oil may need to be adjusted.', section: SECTIONS.MAIN },
         { step: 'Cover with aluminum foil.', section: SECTIONS.MAIN },
-        { step: 'Bake for 40 minutes, or until the selected protein is cooked.', section: SECTIONS.MAIN, img: dinner },
+        { step: 'Bake for 40 minutes, or until the selected protein is cooked.', section: SECTIONS.MAIN, img: dinner2 },
     ],
     notes: [
         { note: 'This was a favorite tradition of mine when camping. Simply wrapping whatever food in layers of tin foil and cooking over a campfire. And while it cooked, telling stories and enjoying the outdoors.' },

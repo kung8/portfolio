@@ -1,4 +1,4 @@
-const smoothie = '../assets/Products/smoothie.jpeg';
+const smoothie1 = '../assets/Products/smoothie-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALMOND_MILK,
@@ -12,7 +12,7 @@ const {
 module.exports = {
     cardName: 'Smoothie',
     name: 'Smoothie',
-    img: smoothie,
+    img: smoothie1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,

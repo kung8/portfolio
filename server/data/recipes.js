@@ -811,7 +811,6 @@ module.exports = recipes;
 // - green-bean-casserole
 // - hamburger (add a number)
 // - hawaiian-haystacks
-// - hobo-dinner
 // - hospitality-chicken
 // - indian-butter-chicken
 // - katsudon (conform it to the other files)
@@ -843,21 +842,13 @@ module.exports = recipes;
 // - pretzels
 // - refrigerated-pizza-dough (conform it to the other files)
 // - rice-krispie-treats
-// - roast (add a number)
 // - roasted-turkey
 // - rosemary-fries
 // - rosemary-lemonade
 // - sauteed-squash
-// - scrambled-eggs (add a number)
 // - singaporean-chicken-rice
 // - sloppy-joes
-// - smoothie (add a number)
-// - smores (add a number)
 // - snickerdoodles
-// - sourdough-bread
-// - sourdough-starter
-// - southwest-salad (add a number)
-// - spaghetti (add a number)
 // - stuffing (lower the number)
 // - sugar-cookies
 // - sushi (add a number)

@@ -1,13 +1,11 @@
-const ball = '../assets/Products/sourdough-bread-ball.jpeg';
-const covered = '../assets/Products/sourdough-bread-covered.jpeg';
-const preheating = '../assets/Products/sourdough-bread-dutch-oven-preheating.jpeg';
-const inPan = '../assets/Products/sourdough-bread-in-pan.jpeg';
-const mixed = '../assets/Products/sourdough-bread-mixed.jpeg';
-const risen = '../assets/Products/sourdough-bread-risen.jpeg';
-const scored = '../assets/Products/sourdough-bread-scored.jpeg';
-const uncovered = '../assets/Products/sourdough-bread-uncovered.jpeg';
-const board = '../assets/Products/sourdough-bread-on-board.jpeg';
-const bakedScored = '../assets/Products/sourdough-bread-baked-scored.jpeg';
+const bread1 = '../assets/Products/sourdough-bread-1.jpeg';
+const bread2 = '../assets/Products/sourdough-bread-2.jpeg';
+const bread3 = '../assets/Products/sourdough-bread-3.jpeg';
+const bread4 = '../assets/Products/sourdough-bread-4.jpeg';
+const bread5 = '../assets/Products/sourdough-bread-5.jpeg';
+const bread6 = '../assets/Products/sourdough-bread-6.jpeg';
+const bread7 = '../assets/Products/sourdough-bread-7.jpeg';
+const bread8 = '../assets/Products/sourdough-bread-8.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -27,7 +25,7 @@ const BAKING = 'Baking';
 module.exports = {
     cardName: 'Sourdough Bread',
     name: 'Sourdough Bread',
-    img: board,
+    img: bread8,
     recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
@@ -59,18 +57,18 @@ module.exports = {
     ],
     directions: [
         { step: 'In a mixing bowl, blend together starter and water.', section: SECTIONS.DOUGH },
-        { step: 'Mix in salt and flour.', section: SECTIONS.DOUGH, img: mixed },
+        { step: 'Mix in salt and flour.', section: SECTIONS.DOUGH, img: bread1 },
         { step: 'Knead the dough a little bit and add some more flour as needed to make it less sticky.', section: SECTIONS.DOUGH },
         { step: 'Let the mixture rest for 30 to 45 minutes.', section: SECTIONS.DOUGH },
         { step: 'Fill a bowl or cup with water and have it nearby. Wet the tips of your fingers as needed when you do the coil fold.', section: SECTIONS.DOUGH },
-        { step: 'Lift the dough and fold it over the dangling part (at the top). Rotate the bowl 180 degrees and repeat the lift and fold. Then turn it 90 degrees and repeat the lift and fold. And then 180 degrees and repeat the lift and fold. This is called the coil fold which helps strengthen the dough and develop gluten. Do the coil fold on the sides opposite for balance.', section: SECTIONS.DOUGH, img: ball },
-        { step: 'Cover the bowl and let the dough rest for 5 to 10 hours. It should double in size.', section: SECTIONS.DOUGH, img: [covered, risen] },
-        { step: 'When you\'re ready to bake, place a dutch oven pot with a lid on the center rack and set the oven temperature to 450ºF.', section: BAKING, img: preheating },
-        { step: 'Score the dough with whatever preferred design.', section: BAKING, img: scored },
-        { step: 'Once the oven has reached 450ºF, take out the dutch oven pot and place the dough ball in the pot and return the pot with the lid to the oven.', section: BAKING, img: [inPan, preheating] },
+        { step: 'Lift the dough and fold it over the dangling part (at the top). Rotate the bowl 180 degrees and repeat the lift and fold. Then turn it 90 degrees and repeat the lift and fold. And then 180 degrees and repeat the lift and fold. This is called the coil fold which helps strengthen the dough and develop gluten. Do the coil fold on the sides opposite for balance.', section: SECTIONS.DOUGH, img: bread2 },
+        { step: 'Cover the bowl and let the dough rest for 5 to 10 hours. It should double in size.', section: SECTIONS.DOUGH, img: [bread3, bread4] },
+        { step: 'When you\'re ready to bake, place a dutch oven pot with a lid on the center rack and set the oven temperature to 450ºF.', section: BAKING },
+        { step: 'Score the dough with whatever preferred design.', section: BAKING, img: bread5 },
+        { step: 'Once the oven has reached 450ºF, take out the dutch oven pot and place the dough ball in the pot and return the pot with the lid to the oven.', section: BAKING, img: bread6 },
         { step: 'Bake for 25 minutes with the lid on.', section: BAKING },
-        { step: 'Remove the lid and bake for an additional 20 minutes.', section: BAKING, img: uncovered },
-        { step: 'Remove from oven and let cool.', section: BAKING, img: bakedScored },
+        { step: 'Remove the lid and bake for an additional 20 minutes.', section: BAKING },
+        { step: 'Remove from oven and let cool.', section: BAKING, img: bread7 },
     ],
     store: [
         {

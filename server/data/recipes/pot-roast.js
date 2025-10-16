@@ -1,4 +1,4 @@
-const roast = '../assets/Products/roast.jpeg';
+const roast1 = '../assets/Products/pot-roast-1.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BEEF_BROTH,
@@ -16,7 +16,7 @@ const {
 module.exports = {
     cardName: 'Pot Roast',
     name: 'Pot Roast',
-    img: roast,
+    img: roast1,
     recipeAuthors: ['Ree Drummond'],
     recipeFinder: 'Kevin Ung',
     available: true,
