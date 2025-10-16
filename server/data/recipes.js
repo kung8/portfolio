@@ -790,7 +790,6 @@ module.exports = recipes;
 // - chinese-green-bean-and-beef 
 // - chocolate-chip-cookies
 // - cinnamon-rolls
-// - coleslaw
 // - cream-puffs
 // - creme-brulee
 // - crepes

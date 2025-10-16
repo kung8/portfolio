@@ -1,12 +1,12 @@
-const combinedZoomed1 = '../assets/Products/chinese-green-bean-and-beef-cooked-combined-zoomed-1.jpeg';
-const combinedZoomed2 = '../assets/Products/chinese-green-bean-and-beef-cooked-combined-zoomed-2.jpeg';
-const combined = '../assets/Products/chinese-green-bean-and-beef-cooked-combined.jpeg';
-const greenOnionPan = '../assets/Products/chinese-green-bean-and-beef-green-onions-in-pan.jpeg';
-const greenOnionsGarlic = '../assets/Products/chinese-green-bean-and-beef-green-onions-with-garlic.jpeg';
-const plated2 = '../assets/Products/chinese-green-bean-and-beef-plated-2.jpeg';
-const beef = '../assets/Products/chinese-green-bean-and-beef-raw-beef.jpeg';
-const sauce = '../assets/Products/chinese-green-bean-and-beef-sauce.jpeg';
-const sautedBeans = '../assets/Products/chinese-green-bean-and-beef-sauted-green-beans.jpeg';
+const bean1 = '../assets/Products/chinese-green-bean-beef-1.jpeg';
+const bean2 = '../assets/Products/chinese-green-bean-beef-2.jpeg';
+const bean3 = '../assets/Products/chinese-green-bean-beef-3.jpeg';
+const bean4 = '../assets/Products/chinese-green-bean-beef-4.jpeg';
+const bean5 = '../assets/Products/chinese-green-bean-beef-5.jpeg';
+const bean6 = '../assets/Products/chinese-green-bean-beef-6.jpeg';
+const bean7 = '../assets/Products/chinese-green-bean-beef-7.jpeg';
+const bean8 = '../assets/Products/chinese-green-bean-beef-8.jpeg';
+const bean9 = '../assets/Products/chinese-green-bean-beef-9.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -31,7 +31,7 @@ const {
 module.exports = {
     cardName: 'Green Bean Beef',
     name: 'Green Bean Beef',
-    img: combinedZoomed2,
+    img: bean9,
     recipeAuthors: ['Kim'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -72,19 +72,19 @@ module.exports = {
         SMALL_BOWL,
     ],
     directions: [
-        { step: 'In a bowl, combine broth, sauces, vinegar, and red pepper flakes. Set aside.', section: SECTIONS.SAUCE, img: sauce },
+        { step: 'In a bowl, combine broth, sauces, vinegar, and red pepper flakes. Set aside.', section: SECTIONS.SAUCE, img: bean1 },
         { step: 'Over medium-high heat, heat 1 Tbsp of oil in a wok.', section: SECTIONS.MAIN },
-        { step: 'Add green beans and cook for 4 minutes. Remove beans and set aside.', section: SECTIONS.MAIN, img: sautedBeans },
+        { step: 'Add green beans and cook for 4 minutes. Remove beans and set aside.', section: SECTIONS.MAIN, img: bean2 },
         { step: 'Add 1 Tbsp of oil to the wok.', section: SECTIONS.MAIN },
-        { step: 'Add beef and cook for one minute. Do not stir.', section: SECTIONS.MAIN, img: beef },
+        { step: 'Add beef and cook for one minute. Do not stir.', section: SECTIONS.MAIN, img: bean3 },
         { step: 'Stir beef and cook for 3 to 4. Remove beef and set aside.', section: SECTIONS.MAIN },
         { step: 'Add 1 Tbsp of oil to the wok.', section: SECTIONS.MAIN },
-        { step: 'Add green onions. Cook for 1 minute.', section: SECTIONS.MAIN, img: greenOnionPan },
-        { step: 'Add garlic and ginger. Cook for 30 seconds.', section: SECTIONS.MAIN, img: greenOnionsGarlic },
-        { step: 'Re-add the beef and green beans to the wok.', section: SECTIONS.MAIN, img: combined },
-        { step: 'Add the sauce. Cook and stir until the sauce thickens (about 1 to 2 minutes).', section: SECTIONS.MAIN, img: combinedZoomed1 },
+        { step: 'Add green onions. Cook for 1 minute.', section: SECTIONS.MAIN, img: bean4 },
+        { step: 'Add garlic and ginger. Cook for 30 seconds.', section: SECTIONS.MAIN, img: bean5 },
+        { step: 'Re-add the beef and green beans to the wok.', section: SECTIONS.MAIN, img: bean6 },
+        { step: 'Add the sauce. Cook and stir until the sauce thickens (about 1 to 2 minutes).', section: SECTIONS.MAIN, img: bean7 },
         { step: 'Season with salt and pepper as desired.', section: SECTIONS.MAIN },
-        { step: 'Serve over rice and enjoy this Chinese stir-fry.', section: SECTIONS.MAIN, img: plated2 },
+        { step: 'Serve over rice and enjoy this Chinese stir-fry.', section: SECTIONS.MAIN, img: bean8 },
     ],
     store: [
         {
