@@ -1,4 +1,4 @@
-const taco = '../assets/Products/taco-in-a-bag.jpeg';
+const taco1 = '../assets/Products/taco-in-a-bag-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_BEANS,
@@ -26,7 +26,7 @@ const {
 module.exports = {
     cardName: 'Taco in a Bag',
     name: 'Taco in a Bag',
-    img: taco,
+    img: taco1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,

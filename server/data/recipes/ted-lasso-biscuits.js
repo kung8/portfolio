@@ -1,4 +1,4 @@
-const biscuits = '../assets/Products/ted-lasso-biscuits.jpeg';
+const biscuits1 = '../assets/Products/ted-lasso-biscuits-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
@@ -15,7 +15,7 @@ const {
 module.exports = {
     cardName: 'Lasso Biscuits',
     name: 'Ted Lasso Biscuits',
-    img: biscuits,
+    img: biscuits1,
     recipeAuthors: ['Laurel Randolph'],
     recipeFinder: 'Justin Ung',
     available: true,

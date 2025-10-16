@@ -284,7 +284,7 @@ const riceKrispyTreats = require("./recipes/rice-krispy-treats");
 const ricePilaf = require("./recipes/rice-pilaf");
 const roastedAsparagus = require('./recipes/roasted-asparagus.js');
 const roastedPorkBelly = require("./recipes/roasted-pork-belly");
-const roastedTurkey = require("./recipes/roasted-turkey");
+const roastTurkey = require("./recipes/roast-turkey");
 const roastedVegetables = require('./recipes/roasted-vegetables.js'); // TODO: finish adding recipe
 const rosemaryFries = require("./recipes/rosemary-fries");
 const rosemaryLemonade = require("./recipes/rosemary-lemonade");
@@ -575,7 +575,7 @@ const recipes = [
 
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
     marryMeChicken,
-    roastedTurkey,
+    roastTurkey,
     kaluaPig,
     hawaiianGlazedHam,
     hawaiianTeriyakiChicken,
@@ -791,7 +791,6 @@ module.exports = recipes;
 // - chocolate-chip-cookies
 // - cinnamon-rolls
 // - coleslaw
-// - cooking-turkey-estimates (conform it to the other files)
 // - cream-puffs
 // - creme-brulee
 // - crepes
@@ -837,7 +836,6 @@ module.exports = recipes;
 // - pretzels
 // - refrigerated-pizza-dough (conform it to the other files)
 // - rice-krispie-treats
-// - roasted-turkey
 // - rosemary-fries
 // - rosemary-lemonade
 // - sauteed-squash
@@ -847,11 +845,8 @@ module.exports = recipes;
 // - stuffing (lower the number)
 // - sugar-cookies
 // - sushi (add a number)
-// - taco-in-a-bag (add a number)
-// - ted-lasso-biscuits
 // - thai-basil (lower the number)
 // - thai-massaman-curry (conform it to the other files)
-// - thawing-turkey-estimates (conform it to the other files)
 // - turkey-meatball-spinach-tortellini-soup
 // - turkey-size-cooking-table (conform it to the other files)
 // - waffles
