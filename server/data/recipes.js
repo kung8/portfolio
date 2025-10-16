@@ -771,7 +771,6 @@ module.exports = recipes;
 // - buttered-corn
 // - buttermilk-syrup
 // - cafe-rio-bowl
-// - calzone (add a number)
 // - caramel-apples
 // - caramelized-mushroom
 // - caramelized-onion
