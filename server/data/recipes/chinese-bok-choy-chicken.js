@@ -1,4 +1,4 @@
-const chicken1 = '../assets/Products/chicken-ramen-cooking-chicken.jpeg';
+const chicken1 = '../assets/Products/chicken-ramen-1.jpeg';
 
 const bokChoy1 = '../assets/Products/bok-choy-1.jpeg';
 const bokChoy2 = '../assets/Products/bok-choy-2.jpeg';

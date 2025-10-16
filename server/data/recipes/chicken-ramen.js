@@ -1,14 +1,13 @@
-const boiled = '../assets/Products/chicken-ramen-boiled-eggs.jpeg';
-const bowl = '../assets/Products/chicken-ramen-bowl.jpeg';
-const zoomed = '../assets/Products/chicken-ramen-bowl-zoomed.jpeg';
-const broth = '../assets/Products/chicken-ramen-broth.jpeg';
-const butter = '../assets/Products/chicken-ramen-butter.jpeg';
-const cookingChicken = '../assets/Products/chicken-ramen-cooking-chicken.jpeg';
-const cookingGarlic = '../assets/Products/chicken-ramen-garlic-ginger.jpeg';
-const ice = '../assets/Products/chicken-ramen-ice-bath.jpeg';
-const noodles = '../assets/Products/chicken-ramen-noodles.jpeg';
-const rawChicken = '../assets/Products/chicken-ramen-raw-chicken.jpeg';
-const sliced = '../assets/Products/chicken-ramen-sliced.jpeg';
+const ramen1 = '../assets/Products/chicken-ramen-1.jpeg';
+const ramen2 = '../assets/Products/chicken-ramen-2.jpeg';
+const ramen3 = '../assets/Products/chicken-ramen-3.jpeg';
+const ramen4 = '../assets/Products/chicken-ramen-4.jpeg';
+const ramen5 = '../assets/Products/chicken-ramen-5.jpeg';
+const ramen6 = '../assets/Products/chicken-ramen-6.jpeg';
+const ramen7 = '../assets/Products/chicken-ramen-7.jpeg';
+const ramen8 = '../assets/Products/chicken-ramen-8.jpeg';
+const ramen9 = '../assets/Products/chicken-ramen-9.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALUMINUM_FOIL,
@@ -27,7 +26,6 @@ const {
     MIRIN,
     MUSHROOM,
     OVEN,
-    POT,
     SALT,
     SAUCEPAN,
     SERVING_BOWL,
@@ -42,7 +40,7 @@ const EGG_SECTION = 'Eggs';
 module.exports = {
     cardName: 'Chicken Ramen',
     name: 'Homemade Chicken Ramen',
-    img: zoomed,
+    img: ramen9,
     recipeAuthors: ['Laura'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -93,24 +91,24 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 375ºF.', section: SECTIONS.CHICKEN },
-        { step: 'Generously season the chicken breast with salt and pepper.', section: SECTIONS.CHICKEN, img: rawChicken },
-        { step: 'Over medium heat, melt butter in an oven-safe pan or pot.', section: SECTIONS.CHICKEN, img: butter },
-        { step: 'Add the chicken and cook until each side is golden brown (about 4 to 6 minutes each side)', section: SECTIONS.CHICKEN, img: cookingChicken },
+        { step: 'Generously season the chicken breast with salt and pepper.', section: SECTIONS.CHICKEN },
+        { step: 'Over medium heat, melt butter in an oven-safe pan or pot.', section: SECTIONS.CHICKEN },
+        { step: 'Add the chicken and cook until each side is golden brown (about 4 to 6 minutes each side)', section: SECTIONS.CHICKEN, img: ramen1 },
         { step: 'Place the pot with chicken in the oven and roast until the chicken is cooked all the way through (about 15 to 25 minutes, depending on the chicken thickness and the oven).', section: SECTIONS.CHICKEN },
         { step: 'Remove from the oven and transfer the chicken to a cutting board. Cut the chicken into slices and cover with tin-foil to keep warm.', section: SECTIONS.CHICKEN },
         { step: 'Over medium heat, heat oil in a large pot.', section: SECTIONS.BROTH },
-        { step: 'Add garlic and ginger and cook until softened (about a few minutes).', section: SECTIONS.BROTH, img: cookingGarlic },
+        { step: 'Add garlic and ginger and cook until softened (about a few minutes).', section: SECTIONS.BROTH, img: ramen2 },
         { step: 'Add soy sauce and mirin and stir until combined (about a minute).', section: SECTIONS.BROTH },
         { step: 'Add chicken broth and cover. Cook until it boils.', section: SECTIONS.BROTH },
         { step: 'Remove the lid, turn down the heat, and let simmer for 5 minutes.', section: SECTIONS.BROTH },
-        { step: 'Add mushrooms and salt to taste and cook for another 10 minutes.', section: SECTIONS.BROTH, img: broth },
+        { step: 'Add mushrooms and salt to taste and cook for another 10 minutes.', section: SECTIONS.BROTH, img: ramen3 },
         { step: 'Over medium-high heat, bring a pot of water to a boil.', section: EGG_SECTION },
-        { step: 'Gently lower cold eggs into the pot and let cook for 7 to 8 minutes.', section: EGG_SECTION, img: boiled },
-        { step: 'Prepare an ice water bath, and transfer the eggs into it once it is cooked. Leave in the bath for 5 minutes.', section: EGG_SECTION, img: ice },
-        { step: 'Slice the eggs in half length-wise.', section: EGG_SECTION, img: sliced },
-        { step: 'After the eggs are removed from the pot, place the dried noodles in the boiling water.', section: SECTIONS.NOODLES, img: noodles },
+        { step: 'Gently lower cold eggs into the pot and let cook for 7 to 8 minutes.', section: EGG_SECTION, img: ramen4 },
+        { step: 'Prepare an ice water bath, and transfer the eggs into it once it is cooked. Leave in the bath for 5 minutes.', section: EGG_SECTION, img: ramen5 },
+        { step: 'Slice the eggs in half length-wise.', section: EGG_SECTION, img: ramen6 },
+        { step: 'After the eggs are removed from the pot, place the dried noodles in the boiling water.', section: SECTIONS.NOODLES, img: ramen7 },
         { step: 'Cook for 2 to 3 minutes and divide into bowls.', section: SECTIONS.NOODLES },
-        { step: 'Pour broth over ramen, chicken, and eggs. Top with green onions. Enjoy this upgraded ramen!', section: SECTIONS.SERVE, img: bowl },
+        { step: 'Pour broth over ramen, chicken, and eggs. Top with green onions. Enjoy this upgraded ramen!', section: SECTIONS.SERVE, img: ramen8 },
     ],
     store: [
         {
