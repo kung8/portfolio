@@ -1,4 +1,5 @@
-// const example = '../assets/Products/example.jpeg';
+const eclair1 = '../assets/Products/eclair-1.jpeg';
+const eclair2 = '../assets/Products/eclair-2.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, CAKE_FLOUR, COOLING_RACK, EGG, EGG_YOLK, HEAVY_CREAM, MEDIUM_BOWL, MICROWAVE, MIXING_BOWL, OVEN, PARCHMENT_PAPER, PIPING_BAG, SALT, SAUCEPAN, SEMI_SWEET_CHOCOLATE_CHIPS, STOVE, UNSALTED_BUTTER, VANILLA_BEAN, WATER, WHITE_SUGAR, WHOLE_MILK } = require('./ingredients');
 
@@ -9,10 +10,11 @@ module.exports = {
     wip: true,
     cardName: 'Eclair',
     name: 'Eclair',
-    img: '',
+    img: eclair2,
     recipeAuthors: ['Joanne Chang'],
     recipeFinder: 'Kevin Ung',
     available: true,
+    recommended: false,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],
@@ -75,7 +77,7 @@ module.exports = {
         { step: 'Transfer dough to pastry bag.', section: PASTRY },
         { step: 'Pipe 12 5-inch logs onto baking sheet.', section: PASTRY },
         { step: 'Bake for 10 minutes.', section: PASTRY },
-        { step: 'Lower heat to 325ºF and bake until golden brown (about another 30 minutes).', section: PASTRY },
+        { step: 'Lower heat to 325ºF and bake until golden brown (about another 30 minutes).', section: PASTRY, img: eclair1 },
         { step: 'Transfer to a cooling rack and let cool.', section: PASTRY },
         { step: 'Over medium heat, bring a saucepan of milk, vanilla bean and seeds to a boil.', section: SECTIONS.FILLING },
         { step: 'While the milk mixture is boiling, combine sugar, cake flour and salt in a mixing bowl.', section: SECTIONS.FILLING },

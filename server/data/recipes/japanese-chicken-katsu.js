@@ -6,6 +6,7 @@ const katsu5 = '../assets/Products/katsu-5.jpeg';
 const katsu6 = '../assets/Products/katsu-6.jpeg';
 const katsu7 = '../assets/Products/katsu-7.jpeg';
 const katsu8 = '../assets/Products/katsu-8.jpeg';
+const katsu9 = '../assets/Products/katsu-9.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -42,7 +43,7 @@ module.exports = {
     name: 'Japanese Chicken Katsu',
     recipeAuthors: ['Namiko Hirasawa Chen'],
     recipeFinder: 'Aldin Pope',
-    img: katsu8,
+    img: katsu9,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -101,7 +102,7 @@ module.exports = {
         { step: 'Place the chicken breast in the hot oil, and cook for 3 - 4 minutes per side.', section: SECTIONS.MAIN, img: katsu6 },
         { step: 'Place the finished chicken breast on a cooling rack lined with about 2 paper towel layers', section: SECTIONS.MAIN, img: katsu7 },
         { step: 'Repeat this for each chicken breast.', section: SECTIONS.MAIN },
-        { step: 'Serve with rice and optionally with tomato, cabbage, and lemon slices (squeezed over chicken, or cabbage, or both) and enjoy this Japanese goodness!', section: SECTIONS.MAIN },
+        { step: 'Serve with rice and optionally with tomato, cabbage, and lemon slices (squeezed over chicken, or cabbage, or both) and enjoy this Japanese goodness!', section: SECTIONS.MAIN, img: katsu8 },
     ],
     store: [
         {
