@@ -1,4 +1,4 @@
-const parfait = '../assets/Products/parfait.jpeg';
+const parfait1 = '../assets/Products/parfait-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BERRY,
@@ -12,7 +12,7 @@ const {
 module.exports = {
     cardName: 'Parfait',
     name: 'Parfait',
-    img: parfait,
+    img: parfait1,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,

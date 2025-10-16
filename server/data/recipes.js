@@ -774,7 +774,6 @@ module.exports = recipes;
 // - caramel-apples
 // - caramelized-mushroom
 // - caramelized-onion
-// - carbonara (lower the numbers)
 // - carrot-cake
 // - cashew-chicken
 // - cheeseballs (add a number)
@@ -831,16 +830,13 @@ module.exports = recipes;
 // - oatmeal-raisin-cookies
 // - pad-see-ew
 // - pad-thai
-// - pancakes (add a number)
 // - pao-de-queijo
-// - parfait (add a number)
 // - peach-cobbler
 // - peanut-brittle
 // - pepper-steak-stir-fry
 // - peppermint-bark
 // - philly-cheeseteak-pizza
 // - pho
-// - pigs-in-a-blanket (add a number)
 // - pizza / pizza-dough (add a number)
 // - popcorn-balls
 // - potstickers
@@ -873,5 +869,4 @@ module.exports = recipes;
 // - turkey-meatball-spinach-tortellini-soup
 // - turkey-size-cooking-table (conform it to the other files)
 // - waffles
-// - wraps (add a number)
 // - yellow-curry (lower the number)

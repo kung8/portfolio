@@ -1,4 +1,4 @@
-const wraps = '../assets/Products/wraps.jpeg';
+const wrap1 = '../assets/Products/wrap-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     CHEDDAR_CHEESE,
@@ -12,7 +12,7 @@ const {
 module.exports = {
     cardName: 'Wraps',
     name: 'Wraps',
-    img: wraps,
+    img: wrap1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,

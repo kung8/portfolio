@@ -1,11 +1,11 @@
-const pigsInABlanket = '../assets/Products/pigs-in-a-blanket.jpeg';
+const blanket1 = '../assets/Products/pigs-in-a-blanket-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, BAKING_SHEET, BASTING_BRUSH, CROISSANT_DOUGH, CUTTING_BOARD, EGG, KNIFE, MINI_HOT_DOG, OVEN, PLATE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Pigs In A Blanket',
     name: 'Pigs In A Blanket',
-    img: pigsInABlanket,
+    img: blanket1,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
