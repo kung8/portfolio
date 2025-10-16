@@ -4,7 +4,6 @@ const salad3 = '../assets/Products/macaroni-salad-3.jpeg';
 const salad4 = '../assets/Products/macaroni-salad-4.jpeg';
 const salad5 = '../assets/Products/macaroni-salad-5.jpeg';
 const salad6 = '../assets/Products/macaroni-salad-6.jpeg';
-// const salad7 = '../assets/Products/macaroni-salad-7.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {

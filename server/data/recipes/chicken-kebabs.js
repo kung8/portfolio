@@ -1,4 +1,4 @@
-const kebabs = '../assets/Products/kebabs.jpeg';
+const kebabs1 = '../assets/Products/chicken-kebabs-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALUMINUM_FOIL,
@@ -22,7 +22,7 @@ const {
 module.exports = {
     cardName: 'Kebabs',
     name: 'Chicken Kebabs',
-    img: kebabs,
+    img: kebabs1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: 'Kevin Ung',
     available: true,

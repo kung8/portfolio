@@ -1,13 +1,13 @@
-const zoomed = '../assets/Products/coleslaw-zoomed.jpeg';
-const coleslaw = '../assets/Products/coleslaw.jpeg';
-const plated = '../assets/Products/coleslaw-full-plate.jpeg';
+const coleslaw1 = '../assets/Products/coleslaw-1.jpeg';
+const coleslaw2 = '../assets/Products/coleslaw-2.jpeg';
+const coleslaw3 = '../assets/Products/coleslaw-3.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { APPLE_CIDER_VINEGAR, BLACK_PEPPER, CABBAGE, CARROT, LEMON_JUICE, MAYONNAISE, MEDIUM_BOWL, MIXING_BOWL, SALT, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
     cardName: 'Coleslaw',
     name: 'Coleslaw',
-    img: coleslaw,
+    img: coleslaw3,
     recipeAuthors: ['Dennis Littley'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -43,9 +43,9 @@ module.exports = {
         { step: 'Shred the carrots and add to the mixing bowl.', section: SECTIONS.MAIN },
         { step: 'Mix together cabbage and carrots.', section: SECTIONS.MAIN },
         { step: 'In a medium bowl, combine together the dressing ingredients.', section: SECTIONS.DRESSING },
-        { step: 'Pour the dressing over the vegetable mixture.', section: SECTIONS.ASSEMBLE, img: zoomed },
+        { step: 'Pour the dressing over the vegetable mixture.', section: SECTIONS.ASSEMBLE, img: coleslaw1 },
         { step: 'Place the coleslaw in the fridge for at least a day. Mix the coleslaw several times while it is in the fridge.', section: SECTIONS.ASSEMBLE },
-        { step: 'Serve this cold and enjoy.', section: SECTIONS.SERVE, img: plated },
+        { step: 'Serve this cold and enjoy.', section: SECTIONS.SERVE, img: coleslaw2 },
     ],
     store: [
         {

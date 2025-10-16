@@ -1,4 +1,4 @@
-const eggCasserole = '../assets/Products/egg-casserole.jpeg';
+const casserole1 = '../assets/Products/egg-casserole-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     ALUMINUM_FOIL,
@@ -27,7 +27,7 @@ const {
 module.exports = {
     cardName: 'Egg Casserole',
     name: 'Egg Casserole',
-    img: eggCasserole,
+    img: casserole1,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,

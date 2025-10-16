@@ -795,7 +795,6 @@ module.exports = recipes;
 // - creme-brulee
 // - crepes
 // - crescent-rolls
-// - egg-casserole (add a number)
 // - fresh-spring-rolls
 // - frozen-pizza-dough (conform it to the other files)
 // - garlic-bread (add a number)
@@ -808,15 +807,11 @@ module.exports = recipes;
 // - hospitality-chicken
 // - indian-butter-chicken
 // - katsudon (conform it to the other files)
-// - kebabs (add a number)
 // - khmer-red-curry
 // - korean-fried-chicken
 // - lemon-bars
-// - lemon-chicken-on-lettuce
 // - lemon-chicken-ramen
 // - lo-mein
-// - macaroni-salad (add a number)
-// - mexican-chicken-bake (add a number)
 // - mexican-cilantro-lime-chicken
 // - mochi (lower the number)
 // - no-bake-cookies
