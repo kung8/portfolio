@@ -1,17 +1,19 @@
-const butter = '../assets/Products/biscuits-and-gravy-butter.jpeg';
-const buttermilk = '../assets/Products/biscuits-and-gravy-buttermilk.jpeg';
-const dry = '../assets/Products/biscuits-and-gravy-dry.jpeg';
-const meat = '../assets/Products/biscuits-and-gravy-flour-meat.jpeg';
-const mixed = '../assets/Products/biscuits-and-gravy-mixed.jpeg';
 const biscuits1 = '../assets/Products/biscuits-and-gravy-1.jpeg';
 const biscuits2 = '../assets/Products/biscuits-and-gravy-2.jpeg';
 const biscuits3 = '../assets/Products/biscuits-and-gravy-3.jpeg';
 const biscuits4 = '../assets/Products/biscuits-and-gravy-4.jpeg';
 const biscuits5 = '../assets/Products/biscuits-and-gravy-5.jpeg';
-const { BAKING_SHEET, MIXING_BOWL, CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS, ALLERGIES, DIET } = require("./constants");
+const biscuits6 = '../assets/Products/biscuits-and-gravy-6.jpeg';
+const biscuits7 = '../assets/Products/biscuits-and-gravy-7.jpeg';
+const biscuits8 = '../assets/Products/biscuits-and-gravy-8.jpeg';
+const biscuits9 = '../assets/Products/biscuits-and-gravy-9.jpeg';
+const biscuits10 = '../assets/Products/biscuits-and-gravy-10.jpeg';
+
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS, ALLERGIES, DIET } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
+    BAKING_SHEET, MIXING_BOWL,
     BAKING_SODA,
     BLACK_PEPPER,
     BUTTERMILK,
@@ -36,7 +38,7 @@ const GRAVY = 'Gravy';
 module.exports = {
     cardName: 'Biscuits & Gravy',
     name: 'Southern Biscuits and Gravy',
-    img: biscuits5,
+    img: biscuits10,
     recipeAuthors: ['Nikki Lee'],
     recipeFinder: 'Justin Ung',
     available: true,
@@ -89,25 +91,25 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 475ºF.', section: BISCUITS },
-        { step: 'In a mixing bowl, add the flour, baking powder, baking soda, and salt. And combine.', section: BISCUITS, img: dry },
-        { step: 'Add cold butter pieces to the mixture. Use your hands to coat the butter with the flour mixture then squeeze and squish the butter until they are the size of a pea.', section: BISCUITS, img: butter },
-        { step: 'Make a well in the center of the mixture and pour in the buttermilk slowly. Combine with your hands until everything is well mixed. Do not overmix. It will look like it is too wet but that is okay. We are adding some flour later to help thicken and make it less sticky.', section: BISCUITS, img: buttermilk },
+        { step: 'In a mixing bowl, add the flour, baking powder, baking soda, and salt. And combine.', section: BISCUITS, img: biscuits1 },
+        { step: 'Add cold butter pieces to the mixture. Use your hands to coat the butter with the flour mixture then squeeze and squish the butter until they are the size of a pea.', section: BISCUITS, img: biscuits2 },
+        { step: 'Make a well in the center of the mixture and pour in the buttermilk slowly. Combine with your hands until everything is well mixed. Do not overmix. It will look like it is too wet but that is okay. We are adding some flour later to help thicken and make it less sticky.', section: BISCUITS, img: biscuits3 },
         { step: 'On a clean counter, add about 3/4 cup of flour and keep about another 1/2 cup to 3/4 cup of flour in reserve.', section: BISCUITS },
         { step: 'Dump the dough onto the flour.', section: BISCUITS },
-        { step: 'Knead the dough about 4 or 5 times until the dough is smooth. Avoid squishing the pea size butter chunks as much as possible. Add some of the reserved flour as needed.', section: BISCUITS, img: mixed },
+        { step: 'Knead the dough about 4 or 5 times until the dough is smooth. Avoid squishing the pea size butter chunks as much as possible. Add some of the reserved flour as needed.', section: BISCUITS, img: biscuits4 },
         { step: 'Cut the dough into equal sized pieces and roll into discs. With about 2 inch in diameter discs, I got a little less than two dozen.', section: BISCUITS },
         { step: 'Place the balls on a plate and place in the freezer for about 15 to 20 minutes. This will help the butter harden and make the biscuits flaky as the butter pockets melt.', section: BISCUITS, img: biscuits5 },
         { step: 'Line a baking sheet with parchment paper. This will help the bottom of the biscuits from burning. Alternatively, you can place another baking pan underneath.', section: BISCUITS },
         { step: 'Place biscuits on the parchment paper about an inch apart.', section: BISCUITS },
-        { step: 'Brush the biscuit tops with melted butter.', section: BISCUITS, img: biscuits1 },
+        { step: 'Brush the biscuit tops with melted butter.', section: BISCUITS },
         { step: 'Place the biscuits in the oven and bake until golden brown (about 14 minutes). Rotate the pan about halfway through the baking process (about 7 minutes in). When rotating the pan, you can check the bottom of the biscuits to see if they are browning too quickly.', section: BISCUITS },
-        { step: 'Remove the pan from the oven and let cool for a few minutes.', section: BISCUITS, img: biscuits2 },
+        { step: 'Remove the pan from the oven and let cool for a few minutes.', section: BISCUITS, img: biscuits6 },
         { step: 'Eat these biscuits warm, by themselves or covered with gravy.', section: BISCUITS },
 
-        { step: 'In a sauce pan over medium-heat, add ground pork and break into smaller pieces using the spatula. Cook until browned.', section: GRAVY, img: biscuits3 },
+        { step: 'In a sauce pan over medium-heat, add ground pork and break into smaller pieces using the spatula. Cook until browned.', section: GRAVY, img: biscuits7 },
         { step: 'Add butter. Stir until melted.', section: GRAVY },
-        { step: 'Add flour, garlic powder and black pepper. Stir until pork is coated and flour is fully cooked (about 2 minutes).', section: GRAVY, img: meat },
-        { step: 'Slowly add 3 cups of milk and stir until the gravy thickens (about 3 to 5 minutes).', section: GRAVY, img: biscuits4 },
+        { step: 'Add flour, garlic powder and black pepper. Stir until pork is coated and flour is fully cooked (about 2 minutes).', section: GRAVY, img: biscuits8 },
+        { step: 'Slowly add 3 cups of milk and stir until the gravy thickens (about 3 to 5 minutes).', section: GRAVY, img: biscuits9 },
         { step: 'If the gravy is too thick, add the last 1/2 cup of milk and mix.', section: GRAVY },
         { step: 'Serve over warm biscuits.', section: GRAVY },
     ],

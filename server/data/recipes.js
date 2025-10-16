@@ -761,7 +761,6 @@ module.exports = recipes;
 // and sautéed vegetables. (32)
 
 // TODO: update the images for the following recipes:
-// - biscuits-and-gravy
 // - black-pepper-chicken
 // - blondie
 // - bok-choy
