@@ -786,7 +786,6 @@ module.exports = recipes;
 // - chicken-katsudon
 // - chicken-noodle-soup (add a number)
 // - chicken-quesadilla (lower the number)
-// - chicken-ramen
 // - chicken-salad (add a number)
 // - chicken-stuffed-crescent-rolls
 // - chicken-tikka-masala
@@ -860,7 +859,6 @@ module.exports = recipes;
 // - smoothie (add a number)
 // - smores (add a number)
 // - snickerdoodles
-// - sour-chicken (add a number)
 // - sourdough-bread
 // - sourdough-starter
 // - southwest-salad (add a number)

@@ -1,4 +1,4 @@
-const sourChicken = '../assets/Products/sour-chicken.jpeg';
+const soup1 = '../assets/Products/sour-chicken-soup-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
@@ -15,7 +15,7 @@ const {
 module.exports = {
     cardName: 'Sour Chicken Soup',
     name: 'Chinese Sour Chicken Soup',
-    img: sourChicken,
+    img: soup1,
     recipeAuthors: ['Grandma'],
     recipeFinder: 'Kevin Ung',
     available: true,
