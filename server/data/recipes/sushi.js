@@ -1,4 +1,4 @@
-const sushi = '../assets/Products/sushi.jpeg';
+const sushi1 = '../assets/Products/sushi-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     AVOCADO,
@@ -24,7 +24,7 @@ module.exports = {
     name: 'Sushi',
     recipeAuthors: ['Aldin Pope'],
     recipeFinder: 'Aldin Pope',
-    img: sushi,
+    img: sushi1,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],

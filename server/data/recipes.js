@@ -837,7 +837,6 @@ module.exports = recipes;
 // - snickerdoodles
 // - stuffing (lower the number)
 // - sugar-cookies
-// - sushi (add a number)
 // - thai-basil (lower the number)
 // - thai-massaman-curry (conform it to the other files)
 // - turkey-meatball-spinach-tortellini-soup
