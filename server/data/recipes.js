@@ -839,5 +839,3 @@ module.exports = recipes;
 // - sugar-cookies
 // - thai-basil (lower the number)
 // - turkey-meatball-spinach-tortellini-soup
-// - waffles
-// - yellow-curry (lower the number)

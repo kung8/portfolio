@@ -1,11 +1,11 @@
-const aesthetic = '../assets/Products/waffles-aesthetic.jpeg';
-const iron = '../assets/Products/waffles-iron.jpeg';
-// const plated = '../assets/Products/waffles-plated.jpeg';
-const zoomed = '../assets/Products/waffles-zoomed.jpeg';
-const batter = '../assets/Products/waffles-batter.jpeg';
-const dry = '../assets/Products/waffles-dry-ingredients.jpeg';
-const wet = '../assets/Products/waffles-wet-ingredients.jpeg';
-const egg = '../assets/Products/waffles-egg-whites-fluffed.jpeg';
+const waffles1 = '../assets/Products/waffles-1.jpeg';
+const waffles2 = '../assets/Products/waffles-2.jpeg';
+const waffles3 = '../assets/Products/waffles-3.jpeg';
+const waffles4 = '../assets/Products/waffles-4.jpeg';
+const waffles5 = '../assets/Products/waffles-5.jpeg';
+const waffles6 = '../assets/Products/waffles-6.jpeg';
+const waffles7 = '../assets/Products/waffles-7.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
@@ -35,7 +35,7 @@ const {
 module.exports = {
     cardName: 'Waffles',
     name: 'Waffles',
-    img: zoomed,
+    img: waffles7,
     recipeAuthors: ['Holly Nilsson'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -82,15 +82,15 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the waffle iron.', section: SECTIONS.MAIN },
-        { step: 'Whisk together flour, baking powder, salt and sugar in a mixing bowl.', section: SECTIONS.MAIN, img: dry },
-        { step: 'In a large bowl, mix together milk, butter, and vanilla.', section: SECTIONS.MAIN, img: wet },
-        { step: 'In a small bowl, beat egg whites with a mixer or with a fork.', section: SECTIONS.MAIN, img: egg },
+        { step: 'Whisk together flour, baking powder, salt and sugar in a mixing bowl.', section: SECTIONS.MAIN, img: waffles1 },
+        { step: 'In a large bowl, mix together milk, butter, and vanilla.', section: SECTIONS.MAIN, img: waffles2 },
+        { step: 'In a small bowl, beat egg whites with a mixer or with a fork.', section: SECTIONS.MAIN, img: waffles3 },
         { step: 'Add egg yolk to dry ingredients.', section: SECTIONS.MAIN },
         { step: 'Combine the wet and dry ingredients.', section: SECTIONS.MAIN },
-        { step: 'Fold egg whites into the the combined ingredients.', section: SECTIONS.MAIN, img: batter },
-        { step: 'Once the waffle iron is heated, use a cooking spray on the waffle iron then fill between 3/4 way to almost full.', section: SECTIONS.MAIN, img: iron },
+        { step: 'Fold egg whites into the the combined ingredients.', section: SECTIONS.MAIN, img: waffles4 },
+        { step: 'Once the waffle iron is heated, use a cooking spray on the waffle iron then fill between 3/4 way to almost full.', section: SECTIONS.MAIN, img: waffles5 },
         { step: 'Cook for 3 to 5 minutes, or until golden brown.', section: SECTIONS.MAIN },
-        { step: 'Eat these warm topped with your favorite toppings.', section: SECTIONS.SERVE, img: aesthetic },
+        { step: 'Eat these warm topped with your favorite toppings.', section: SECTIONS.SERVE, img: waffles6 },
     ],
     notes: [
         { note: 'To keep waffles warm, place them in an oven at 225ºF.' },
