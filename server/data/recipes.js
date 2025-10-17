@@ -837,5 +837,3 @@ module.exports = recipes;
 // - snickerdoodles
 // - stuffing (lower the number)
 // - sugar-cookies
-// - thai-basil (lower the number)
-// - turkey-meatball-spinach-tortellini-soup

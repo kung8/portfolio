@@ -1,11 +1,11 @@
 const basil1 = '../assets/Products/thai-basil-1.jpeg';
+const basil2 = '../assets/Products/thai-basil-2.jpeg';
 const basil3 = '../assets/Products/thai-basil-3.jpeg';
 const basil4 = '../assets/Products/thai-basil-4.jpeg';
 const basil5 = '../assets/Products/thai-basil-5.jpeg';
 const basil6 = '../assets/Products/thai-basil-6.jpeg';
 const basil7 = '../assets/Products/thai-basil-7.jpeg';
 const basil8 = '../assets/Products/thai-basil-8.jpeg';
-const basil9 = '../assets/Products/thai-basil-9.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BASIL_LEAF, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BROWN_SUGAR, CHICKEN_BROTH, FISH_SAUCE, GARLIC, JASMINE_RICE, LIGHT_SOY_SAUCE, MIXING_BOWL, OYSTER_SAUCE, SHALLOT, STOVE, THAI_CHILI_PEPPER, VEGETABLE_OIL, WHITE_SUGAR, WOK } = require('./ingredients');
@@ -57,15 +57,15 @@ module.exports = {
         WOK,
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Sauce" ingredients.', section: SECTIONS.SAUCE, img: basil3 },
+        { step: 'In a mixing bowl, combine the "Sauce" ingredients.', section: SECTIONS.SAUCE, img: basil1 },
         { step: 'Over high heat, add oil to a wok.', section: SECTIONS.MAIN },
-        { step: 'Add chicken (or preferred protein) and stir fry until the protein has lost its raw color (about 2 to 3 minutes).', section: SECTIONS.MAIN, img: [basil1, basil4] },
-        { step: 'Add the remaining ingredients except the basil. Mix and cook until the liquid begins caramelize on the bottom of the wok (about 2 or 3 minutes).', section: SECTIONS.MAIN, img: basil5 },
+        { step: 'Add chicken (or preferred protein) and stir fry until the protein has lost its raw color (about 2 to 3 minutes).', section: SECTIONS.MAIN, img: [basil2, basil3] },
+        { step: 'Add the remaining ingredients except the basil. Mix and cook until the liquid begins caramelize on the bottom of the wok (about 2 or 3 minutes).', section: SECTIONS.MAIN, img: basil4 },
         { step: 'Add 1 tablespoon of the sauce. Cook and mix until the sauce caramelizes (about 1 minutes).', section: SECTIONS.MAIN },
-        { step: 'Add the rest of the sauce. Cook and mix until the sauce has deglazed the wok.', section: SECTIONS.MAIN, img: basil6 },
+        { step: 'Add the rest of the sauce. Cook and mix until the sauce has deglazed the wok.', section: SECTIONS.MAIN, img: basil5 },
         { step: 'Let the sauce glaze the meat (about 1 or 2 minutes).', section: SECTIONS.MAIN },
-        { step: 'Remove from heat and add in the basil. Mix and let it wilt (about 20 seconds).', section: SECTIONS.MAIN, img: basil7 },
-        { step: 'Enjoy this easy thai dish with rice.', section: SECTIONS.SERVE, img: basil9 },
+        { step: 'Remove from heat and add in the basil. Mix and let it wilt (about 20 seconds).', section: SECTIONS.MAIN, img: basil6 },
+        { step: 'Enjoy this easy thai dish with rice.', section: SECTIONS.SERVE, img: basil7 },
     ],
     notes: [
         { note: 'The spice of the Thai chilies can be adjusted per your spice level preference. If you make multiple batches, it does not necessarily need to be multiplied too.' },
