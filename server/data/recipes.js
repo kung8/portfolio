@@ -836,4 +836,3 @@ module.exports = recipes;
 // - sloppy-joes
 // - snickerdoodles
 // - stuffing (lower the number)
-// - sugar-cookies
