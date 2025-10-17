@@ -832,4 +832,3 @@ module.exports = recipes;
 // - rosemary-fries
 // - rosemary-lemonade
 // - sauteed-squash
-// - singaporean-chicken-rice
