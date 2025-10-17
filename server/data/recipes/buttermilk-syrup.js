@@ -1,5 +1,6 @@
-const cooked = '../assets/Products/buttermilk-syrup-cooked.jpeg';
-const raw = '../assets/Products/buttermilk-syrup-raw.jpeg';
+const syrup1 = '../assets/Products/buttermilk-syrup-1.jpeg';
+const syrup2 = '../assets/Products/buttermilk-syrup-2.jpeg';
+
 const { CATEGORIES, SECTIONS, GENRES, TYPES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS, ALLERGIES, DIET } = require("./constants");
 const {
     BAKING_SODA,
@@ -15,7 +16,7 @@ const {
 module.exports = {
     cardName: 'Buttermilk Syrup',
     name: 'Buttermilk Syrup',
-    img: cooked,
+    img: syrup2,
     recipeAuthors: ['Katie Madrian'],
     recipeFinder: 'Camille Pockrus',
     available: true,
@@ -47,7 +48,7 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Combine sugar, buttermilk, and butter in a saucepan. And heat over medium-high heat until it boils, about 5 minutes. Stir occasionally.', section: SECTIONS.SAUCE, img: raw },
+        { step: 'Combine sugar, buttermilk, and butter in a saucepan. And heat over medium-high heat until it boils, about 5 minutes. Stir occasionally.', section: SECTIONS.SAUCE, img: syrup1 },
         { step: 'Remove from heat, and add baking soda and vanilla. And stir.', section: SECTIONS.SAUCE },
     ],
     store: [

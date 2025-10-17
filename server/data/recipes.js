@@ -769,7 +769,6 @@ module.exports = recipes;
 // - broccoli-cheddar-soup
 // - brownies
 // - buttered-corn
-// - buttermilk-syrup
 // - cafe-rio-bowl
 // - caramel-apples
 // - caramelized-mushroom
@@ -831,4 +830,3 @@ module.exports = recipes;
 // - rice-krispie-treats
 // - rosemary-fries
 // - rosemary-lemonade
-// - sauteed-squash

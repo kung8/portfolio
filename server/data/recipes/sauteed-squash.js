@@ -1,9 +1,7 @@
-const mixedPan = '../assets/Products/sauteed-squash-mixed-in-pan.jpeg';
-const mixed = '../assets/Products/sauteed-squash-mixed.jpeg';
-const oil = '../assets/Products/sauteed-squash-oil-in-pan.jpeg';
-const onions = '../assets/Products/sauteed-squash-onions.jpeg';
-const plated = '../assets/Products/sauteed-squash-plated.jpeg';
-const raw = '../assets/Products/sauteed-squash-raw.jpeg';
+const squash1 = '../assets/Products/sauteed-squash-1.jpeg';
+const squash2 = '../assets/Products/sauteed-squash-2.jpeg';
+const squash3 = '../assets/Products/sauteed-squash-3.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
@@ -23,7 +21,7 @@ const {
 module.exports = {
     cardName: 'Sauteed Squash',
     name: 'Sauteed Squash',
-    img: plated,
+    img: squash3,
     recipeAuthors: ['Erin Clarke'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -59,10 +57,10 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Over medium-low heat, heat oil, onion, and butter in a pan. Cook until lightly browned (about 10 minutes).', section: SECTIONS.MAIN, img: [oil, onions] },
-        { step: 'Increase to medium heat and add salt, black pepper, thyme, and squash and zucchini medley.', section: SECTIONS.MAIN, img: [raw] },
-        { step: 'Cook until cooked (about 10 to 15 minutes). Stirring occasionally.', section: SECTIONS.MAIN, img: [mixedPan] },
-        { step: 'Add parmesan and stir until well blended. I recommend removing the pan from heat, the residual heat should be enough to melt the cheese.', section: SECTIONS.MAIN, img: mixed },
+        { step: 'Over medium-low heat, heat oil, onion, and butter in a pan. Cook until lightly browned (about 10 minutes).', section: SECTIONS.MAIN, img: squash1 },
+        { step: 'Increase to medium heat and add salt, black pepper, thyme, and squash and zucchini medley.', section: SECTIONS.MAIN },
+        { step: 'Cook until cooked (about 10 to 15 minutes). Stirring occasionally.', section: SECTIONS.MAIN },
+        { step: 'Add parmesan and stir until well blended. I recommend removing the pan from heat, the residual heat should be enough to melt the cheese.', section: SECTIONS.MAIN, img: squash2 },
         { step: 'Serve this on the side of any pasta dish.', section: SECTIONS.SERVE },
     ],
     store: [
