@@ -838,8 +838,6 @@ module.exports = recipes;
 // - stuffing (lower the number)
 // - sugar-cookies
 // - thai-basil (lower the number)
-// - thai-massaman-curry (conform it to the other files)
 // - turkey-meatball-spinach-tortellini-soup
-// - turkey-size-cooking-table (conform it to the other files)
 // - waffles
 // - yellow-curry (lower the number)
