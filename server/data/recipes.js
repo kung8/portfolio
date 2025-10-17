@@ -768,7 +768,6 @@ module.exports = recipes;
 // - broccoli-beef
 // - broccoli-cheddar-soup
 // - brownies
-// - buttered-corn
 // - cafe-rio-bowl
 // - caramel-apples
 // - caramelized-mushroom

@@ -1,15 +1,12 @@
-const butter = '../assets/Products/buttered-corn-butter.jpeg';
-const cooked = '../assets/Products/buttered-corn-cooked.jpeg';
-const corn = '../assets/Products/buttered-corn-corn.jpeg';
-const cream = '../assets/Products/buttered-corn-cream.jpeg';
-const honey = '../assets/Products/buttered-corn-honey.jpeg';
+const corn1 = '../assets/Products/buttered-corn-1.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CANNED_SWEET_CORN, HEAVY_CREAM, HONEY, SALT, SAUCEPAN, STOVE, UNSALTED_BUTTER } = require('./ingredients');
 
 module.exports = {
     cardName: 'Buttered Corn',
     name: 'Buttered Corn',
-    img: cooked,
+    img: corn1,
     recipeAuthors: ['Nichole'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -42,11 +39,11 @@ module.exports = {
         SAUCEPAN,
     ],
     directions: [
-        { step: 'Over medium heat, melt butter in a saucepan.', section: SECTIONS.MAIN, img: butter },
-        { step: 'Add corn, salt and pepper. Cook for 5 to 10 minutes. Stirring occasionally.', section: SECTIONS.MAIN, img: corn },
-        { step: 'Add heavy cream. Reduce heat.', section: SECTIONS.MAIN, img: cream },
+        { step: 'Over medium heat, melt butter in a saucepan.', section: SECTIONS.MAIN },
+        { step: 'Add corn, salt and pepper. Cook for 5 to 10 minutes. Stirring occasionally.', section: SECTIONS.MAIN },
+        { step: 'Add heavy cream. Reduce heat.', section: SECTIONS.MAIN },
         { step: 'Cook until sauce has reduced slightly (about 5 minutes).', section: SECTIONS.MAIN },
-        { step: 'Add honey. Cook for 2 minutes.', section: SECTIONS.MAIN, img: honey },
+        { step: 'Add honey. Cook for 2 minutes.', section: SECTIONS.MAIN },
         { step: 'Serve warm and enjoy this sweet appetizer.', section: SECTIONS.MAIN },
     ],
     store: [
