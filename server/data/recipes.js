@@ -834,5 +834,3 @@ module.exports = recipes;
 // - sauteed-squash
 // - singaporean-chicken-rice
 // - sloppy-joes
-// - snickerdoodles
-// - stuffing (lower the number)
