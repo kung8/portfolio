@@ -833,4 +833,3 @@ module.exports = recipes;
 // - rosemary-lemonade
 // - sauteed-squash
 // - singaporean-chicken-rice
-// - sloppy-joes

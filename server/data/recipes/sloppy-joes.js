@@ -1,9 +1,7 @@
-const beef = '../assets/Products/sloppy-joes-beef.jpeg';
-const cooked = '../assets/Products/sloppy-joes-cooked.jpeg';
-const cooking = '../assets/Products/sloppy-joes-cooking-beef.jpeg';
-const garlic = '../assets/Products/sloppy-joes-garlic.jpeg';
-const veggies = '../assets/Products/sloppy-joes-raw-veggies.jpeg';
-const raw = '../assets/Products/sloppy-joes-raw.jpeg';
+const sloppy1 = '../assets/Products/sloppy-joes-1.jpeg';
+const sloppy2 = '../assets/Products/sloppy-joes-2.jpeg';
+const sloppy3 = '../assets/Products/sloppy-joes-3.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
@@ -23,7 +21,7 @@ const {
 module.exports = {
     cardName: 'Sloppy Joes',
     name: 'Sloppy Joes',
-    img: cooked,
+    img: sloppy3,
     recipeAuthors: ['Natasha Kravchuk'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -64,12 +62,12 @@ module.exports = {
         { name: 'small pan' },
     ],
     directions: [
-        { step: 'Chop up the onions and bell peppers.', section: SECTIONS.MAIN, img: veggies },
-        { step: 'Mince the garlic.', section: SECTIONS.MAIN, img: garlic },
-        { step: 'In a bowl, combine the worcestershire sauce, mustard, brown sugar, and tomato sauce.', section: SECTIONS.MAIN, img: raw },
+        { step: 'Chop up the onions and bell peppers.', section: SECTIONS.MAIN },
+        { step: 'Mince the garlic.', section: SECTIONS.MAIN },
+        { step: 'In a bowl, combine the worcestershire sauce, mustard, brown sugar, and tomato sauce.', section: SECTIONS.MAIN },
         { step: 'Over medium heat, heat a pan with olive oil.', section: SECTIONS.MAIN },
-        { step: 'Add the ground beef to the pan and saute and break up the beef chunks (about 5 minutes).', section: SECTIONS.MAIN, img: beef },
-        { step: 'Season with salt and pepper and add the onions and peppers to the pan.', section: SECTIONS.MAIN, img: cooking },
+        { step: 'Add the ground beef to the pan and saute and break up the beef chunks (about 5 minutes).', section: SECTIONS.MAIN, img: sloppy1 },
+        { step: 'Season with salt and pepper and add the onions and peppers to the pan.', section: SECTIONS.MAIN, img: sloppy2 },
         { step: 'Add garlic to the pan.', section: SECTIONS.MAIN },
         { step: 'Add the tomato sauce mixture to the pan and bring to a boil.', section: SECTIONS.MAIN },
         { step: 'Reduce to a low heat and let simmer for about 10 to 15 minutes.', section: SECTIONS.MAIN },
