@@ -1,8 +1,9 @@
 const garlicBread = '../assets/Products/garlic-bread.jpeg';
-const pizzaDough = '../assets/Products/pizza-dough.jpeg';
-const frozenDough = '../assets/Products/frozen-pizza-dough.jpeg';
-const refrigeratedDough = '../assets/Products/refrigerated-pizza-dough.jpeg';
-const tossing = '../assets/Products/pizza-toss.MOV';
+const pizza5 = '../assets/Products/pizza-5.jpeg';
+const pizza6 = '../assets/Products/pizza-6.jpeg';
+const pizza8 = '../assets/Products/pizza-8.MOV';
+const pizza25 = '../assets/Products/pizza-25.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BAKING_SHEET,
@@ -65,14 +66,14 @@ module.exports = {
         { step: 'Form a well in the center of the mixture and slowly add water and honey.', section: SECTIONS.DOUGH },
         { step: 'Continue to work the liquid into the entire mixture until the dough becomes only a little sticky.', section: SECTIONS.DOUGH },
         { step: 'Coat the inside of a large bowl with some oil.', section: SECTIONS.DOUGH },
-        { step: 'Place the dough inside that oiled bowl and cover with plastic wrap or a cooking towel and refrigerate between 48 to 72 hours. This allows the dough to rise and adds flavor.', section: SECTIONS.DOUGH, img: refrigeratedDough },
+        { step: 'Place the dough inside that oiled bowl and cover with plastic wrap or a cooking towel and refrigerate between 48 to 72 hours. This allows the dough to rise and adds flavor.', section: SECTIONS.DOUGH, img: pizza6 },
         { step: 'When you are ready to make the garlic bread, preheat the oven too 450ºF.', section: SECTIONS.DOUGH },
         { step: 'Grease a baking sheet with 1 Tablespoon olive oil.', section: SECTIONS.DOUGH },
         { step: 'This is the fun part where you will work the dough. Again on a clean counter sprinkle some flour (and you may need to add some more later so keep that flour handy).', section: SECTIONS.DOUGH },
-        { step: 'Cut a portion of the dough (about a 4 inch ball). Freeze the remainder in the freezer. Note that the dough will rise slightly more as it returns to room temperature.', section: SECTIONS.DOUGH, img: frozenDough },
-        { step: 'Place the dough ball on the floured counter. And begin kneading and pulling and stretching the dough. Continue until the dough has become less sticky. Add more flour conservatively. If you have added too much flour, you can add more water but try to avoid doing that.', section: SECTIONS.DOUGH, img: pizzaDough },
+        { step: 'Cut a portion of the dough (about a 4 inch ball). Freeze the remainder in the freezer. Note that the dough will rise slightly more as it returns to room temperature.', section: SECTIONS.DOUGH, img: pizza25 },
+        { step: 'Place the dough ball on the floured counter. And begin kneading and pulling and stretching the dough. Continue until the dough has become less sticky. Add more flour conservatively. If you have added too much flour, you can add more water but try to avoid doing that.', section: SECTIONS.DOUGH, img: pizza5 },
         { step: 'Tossing the dough helps form the crust and gives the dough texture and flavor. Flatten the dough using a rolling pin until it\'s about 8 inches wide and you will place your closed fists beneath it (at about 10-and-2 steering wheel position). The tricky part is to avoid tearing the dough by making it too thin and accidentally ripping the dough with your fingers. So tuck those fingers in and use just your knuckles.', section: SECTIONS.DOUGH },
-        { step: 'Pull your fists apart to pull the dough edges and try to get all around. Then with a quick flick of the wrists throw the dough directly up in the air and catch the dough with your closed fists.', section: SECTIONS.DOUGH, video: tossing },
+        { step: 'Pull your fists apart to pull the dough edges and try to get all around. Then with a quick flick of the wrists throw the dough directly up in the air and catch the dough with your closed fists.', section: SECTIONS.DOUGH, video: pizza8 },
         { step: 'Keep doing this until you are satisfied with the dough size and thickness.', section: SECTIONS.DOUGH },
         { step: 'Brush the dough with a generous amount of melted butter and sprinkle with minced garlic and parsley.', section: SECTIONS.MAIN },
         { step: 'Place the breadsticks on the baking sheet.', section: SECTIONS.MAIN },

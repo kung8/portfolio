@@ -770,9 +770,7 @@ module.exports = recipes;
 // - caramelized-onion
 // - carrot-cake
 // - cashew-chicken
-// - cheeseballs (add a number)
 // - cheesecake
-// - chicken-alfredo (add a number)
 // - chicken-biryani
 // - chicken-cordon-bleu
 // - chicken-katsudon
@@ -788,7 +786,6 @@ module.exports = recipes;
 // - crepes
 // - crescent-rolls
 // - fresh-spring-rolls
-// - garlic-bread (add a number)
 // - garlic-butter (conform it to the other files)
 // - garlic-chicken-with-herbs
 // - gingerbread-men
