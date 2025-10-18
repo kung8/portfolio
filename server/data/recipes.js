@@ -792,7 +792,6 @@ module.exports = recipes;
 // - crepes
 // - crescent-rolls
 // - fresh-spring-rolls
-// - frozen-pizza-dough (conform it to the other files)
 // - garlic-bread (add a number)
 // - garlic-butter (conform it to the other files)
 // - garlic-chicken-with-herbs
@@ -821,8 +820,6 @@ module.exports = recipes;
 // - peppermint-bark
 // - philly-cheeseteak-pizza
 // - pho
-// - pizza / pizza-dough (add a number)
 // - popcorn-balls
 // - potstickers
 // - pretzels
-// - refrigerated-pizza-dough (conform it to the other files)
