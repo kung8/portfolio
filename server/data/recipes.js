@@ -828,4 +828,3 @@ module.exports = recipes;
 // - refrigerated-pizza-dough (conform it to the other files)
 // - rice-krispie-treats
 // - rosemary-fries
-// - rosemary-lemonade

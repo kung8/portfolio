@@ -1,17 +1,18 @@
-const boiled = '../assets/Products/rosemary-lemonade-boiled.jpeg';
-const zoomed = '../assets/Products/rosemary-lemonade-pitcher-zoomed.jpeg';
-const pitcher = '../assets/Products/rosemary-lemonade-pitcher.jpeg';
-const rosemary = '../assets/Products/rosemary-lemonade-rosemary.jpeg';
-const sugar = '../assets/Products/rosemary-lemonade-sugar.jpeg';
-const sweet = '../assets/Products/rosemary-lemonade-sweet-mix.jpeg';
-const water = '../assets/Products/rosemary-lemonade-water.jpeg';
+const lemonade1 = '../assets/Products/rosemary-lemonade-1.jpeg';
+const lemonade2 = '../assets/Products/rosemary-lemonade-2.jpeg';
+const lemonade3 = '../assets/Products/rosemary-lemonade-3.jpeg';
+const lemonade4 = '../assets/Products/rosemary-lemonade-4.jpeg';
+const lemonade5 = '../assets/Products/rosemary-lemonade-5.jpeg';
+const lemonade6 = '../assets/Products/rosemary-lemonade-6.jpeg';
+const lemonade7 = '../assets/Products/rosemary-lemonade-7.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { FRESH_ROSEMARY, HONEY, ICE, LEMON, LEMON_JUICE, WATER, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
     cardName: 'Rosemary Lemonade',
     name: 'Rosemary Lemonade',
-    img: zoomed,
+    img: lemonade7,
     recipeAuthors: ['Dixie Graham'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -47,12 +48,12 @@ module.exports = {
         { name: 'pitcher' },
     ],
     directions: [
-        { step: 'Over medium-high heat, heat 2 cups of water in a saucepan. Bring to a boil.', section: SECTIONS.MAIN, img: water },
-        { step: 'Add rosemary sprigs and cover with a lid. Reduce to low heat and simmer for 10 minutes.', section: SECTIONS.MAIN, img: rosemary },
-        { step: 'Take out the rosemary.', section: SECTIONS.MAIN, img: boiled },
-        { step: 'Add honey and sugar. Mix until dissolved.', section: SECTIONS.MAIN, img: sugar },
-        { step: 'Transfer sugar mixture to a pitcher. Place in the fridge for 15 minutes.', section: SECTIONS.MAIN, img: sweet },
-        { step: 'Add lemon juice and cold water.', section: SECTIONS.SERVE, img: pitcher },
+        { step: 'Over medium-high heat, heat 2 cups of water in a saucepan. Bring to a boil.', section: SECTIONS.MAIN, img: lemonade1 },
+        { step: 'Add rosemary sprigs and cover with a lid. Reduce to low heat and simmer for 10 minutes.', section: SECTIONS.MAIN, img: lemonade2 },
+        { step: 'Take out the rosemary.', section: SECTIONS.MAIN, img: lemonade3 },
+        { step: 'Add honey and sugar. Mix until dissolved.', section: SECTIONS.MAIN, img: lemonade4 },
+        { step: 'Transfer sugar mixture to a pitcher. Place in the fridge for 15 minutes.', section: SECTIONS.MAIN, img: lemonade5 },
+        { step: 'Add lemon juice and cold water.', section: SECTIONS.SERVE, img: lemonade6 },
         { step: 'Serve with ice, lemon slices, and more rosemary.', section: SECTIONS.SERVE },
     ],
     store: [
