@@ -1,10 +1,11 @@
-const baked1 = '../assets/Products/rosemary-fries-baked-1.jpeg';
-const baked2 = '../assets/Products/rosemary-fries-baked-2.jpeg';
-const plated2 = '../assets/Products/rosemary-fries-plated-2.jpeg';
-const seasoned = '../assets/Products/rosemary-fries-seasoned.jpeg';
-const seasonings1 = '../assets/Products/rosemary-fries-seasonings-1.jpeg';
-const seasonings2 = '../assets/Products/rosemary-fries-seasonings-2.jpeg';
-const tray2 = '../assets/Products/rosemary-fries-tray-2.jpeg';
+const fries1 = '../assets/Products/rosemary-fries-1.jpeg';
+const fries2 = '../assets/Products/rosemary-fries-2.jpeg';
+const fries3 = '../assets/Products/rosemary-fries-3.jpeg';
+const fries4 = '../assets/Products/rosemary-fries-4.jpeg';
+const fries5 = '../assets/Products/rosemary-fries-5.jpeg';
+const fries6 = '../assets/Products/rosemary-fries-6.jpeg';
+const fries7 = '../assets/Products/rosemary-fries-7.jpeg';
+
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BLACK_PEPPER, CORNSTARCH, GARLIC, MIXING_BOWL, OLIVE_OIL, OVEN, ROSEMARY, SALT, SWEET_POTATO } = require('./ingredients');
@@ -12,7 +13,7 @@ const { BAKING_SHEET, BLACK_PEPPER, CORNSTARCH, GARLIC, MIXING_BOWL, OLIVE_OIL, 
 module.exports = {
     cardName: 'Rosemary Fries',
     name: 'Rosemary Fries',
-    img: baked2,
+    img: fries7,
     recipeAuthors: ['Jackie Gregston'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -49,11 +50,11 @@ module.exports = {
     directions: [
         { step: 'Preheat oven to 425ºF.', section: SECTIONS.MAIN },
         { step: 'Prepare baking sheet with cooking spray.', section: SECTIONS.MAIN },
-        { step: 'In a mixing bowl, combine all the herbs, spices and liquids.', section: SECTIONS.MAIN, img: [seasonings1, seasonings2] },
-        { step: 'Add the potatoes. Mix.', section: SECTIONS.MAIN, img: seasoned },
-        { step: 'Arrange the fries in a single layer on baking sheet.', section: SECTIONS.MAIN, img: tray2 },
-        { step: 'Bake until tender and lightly browned (for about 30 to 35 minutes). Turn occasionally.', section: SECTIONS.MAIN, img: baked1 },
-        { step: 'Enjoy this delicious side!', section: SECTIONS.MAIN, img: plated2 },
+        { step: 'In a mixing bowl, combine all the herbs, spices and liquids.', section: SECTIONS.MAIN, img: [fries1, fries2] },
+        { step: 'Add the potatoes. Mix.', section: SECTIONS.MAIN, img: fries3 },
+        { step: 'Arrange the fries in a single layer on baking sheet.', section: SECTIONS.MAIN, img: fries4 },
+        { step: 'Bake until tender and lightly browned (for about 30 to 35 minutes). Turn occasionally.', section: SECTIONS.MAIN, img: fries5 },
+        { step: 'Enjoy this delicious side!', section: SECTIONS.MAIN, img: fries6 },
     ],
     store: [
         {
