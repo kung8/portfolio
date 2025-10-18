@@ -826,4 +826,3 @@ module.exports = recipes;
 // - potstickers
 // - pretzels
 // - refrigerated-pizza-dough (conform it to the other files)
-// - rice-krispie-treats
