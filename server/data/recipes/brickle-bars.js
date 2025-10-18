@@ -1,17 +1,17 @@
-const bar1 = '../assets/Products/brickle-bars-1.jpeg';
-const batter1 = '../assets/Products/brickle-bars-batter-1.jpeg';
-const batter2 = '../assets/Products/brickle-bars-batter-2.jpeg';
-const batter3 = '../assets/Products/brickle-bars-batter-3.jpeg';
-const batter6 = '../assets/Products/brickle-bars-batter-6.jpeg';
-const butter2 = '../assets/Products/brickle-bars-butter-2.jpeg';
-const dry2 = '../assets/Products/brickle-bars-dry-2.jpeg';
-const pan1 = '../assets/Products/brickle-bars-pan-1.jpeg';
-const wet2 = '../assets/Products/brickle-bars-wet-2.jpeg';
-const wet3 = '../assets/Products/brickle-bars-wet-3.jpeg';
-const wet4 = '../assets/Products/brickle-bars-wet-4.jpeg';
-const wet7 = '../assets/Products/brickle-bars-wet-7.jpeg';
-const plated4 = '../assets/Products/brickle-bars-plated-4.jpeg';
-const plated6 = '../assets/Products/brickle-bars-plated-6.jpeg';
+const bars1 = '../assets/Products/brickle-bars-1.jpeg';
+const bars2 = '../assets/Products/brickle-bars-2.jpeg';
+const bars3 = '../assets/Products/brickle-bars-3.jpeg';
+const bars4 = '../assets/Products/brickle-bars-4.jpeg';
+const bars5 = '../assets/Products/brickle-bars-5.jpeg';
+const bars6 = '../assets/Products/brickle-bars-6.jpeg';
+const bars7 = '../assets/Products/brickle-bars-7.jpeg';
+const bars8 = '../assets/Products/brickle-bars-8.jpeg';
+const bars9 = '../assets/Products/brickle-bars-9.jpeg';
+const bars10 = '../assets/Products/brickle-bars-10.jpeg';
+const bars11 = '../assets/Products/brickle-bars-11.jpeg';
+const bars12 = '../assets/Products/brickle-bars-12.jpeg';
+const bars13 = '../assets/Products/brickle-bars-13.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_PAN, BAKING_POWDER, BROWN_SUGAR, EGG, ENGLISH_TOFFEE_BITS, MEDIUM_BOWL, MIXING_BOWL, OVEN, SALT, SPATULA, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
@@ -22,7 +22,7 @@ const WET_INGREDIENTS = 'Wet Ingredients';
 module.exports = {
     cardName: 'Brickle Bar',
     name: 'Brickle Bar',
-    img: plated4,
+    img: bars13,
     recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
@@ -60,16 +60,16 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: PREPARATION },
-        { step: 'Grease a baking pan with a butter.', section: PREPARATION, img: butter2 },
-        { step: 'In a medium bowl, combine together the dry ingredients.', section: DRY_INGREDIENTS, img: dry2 },
-        { step: 'In a separate mixing bowl, combine together butter and the sugars.', section: WET_INGREDIENTS, img: [wet2, wet3] },
-        { step: 'Add eggs and vanilla. Mix.', section: WET_INGREDIENTS, img: [wet4, wet7] },
-        { step: 'Combine together the dry and wet ingredients.', section: SECTIONS.MAIN, img: [batter1, batter2] },
-        { step: 'Add the toffee bits.', section: SECTIONS.MAIN, img: [batter3, batter6] },
-        { step: 'Scrape the batter into the baking pan.', section: SECTIONS.MAIN, img: pan1 },
+        { step: 'Grease a baking pan with a butter.', section: PREPARATION, img: bars1 },
+        { step: 'In a medium bowl, combine together the dry ingredients.', section: DRY_INGREDIENTS, img: bars2 },
+        { step: 'In a separate mixing bowl, combine together butter and the sugars.', section: WET_INGREDIENTS, img: [bars3, bars4] },
+        { step: 'Add eggs and vanilla. Mix.', section: WET_INGREDIENTS, img: [bars5, bars6] },
+        { step: 'Combine together the dry and wet ingredients.', section: SECTIONS.MAIN, img: [bars7, bars8] },
+        { step: 'Add the toffee bits.', section: SECTIONS.MAIN, img: [bars9, bars10] },
+        { step: 'Scrape the batter into the baking pan.', section: SECTIONS.MAIN, img: bars11 },
         { step: 'Bake for 30 minutes.', section: SECTIONS.MAIN },
-        { step: 'Let it cool for a few minutes.', section: SECTIONS.MAIN, img: bar1 },
-        { step: 'Cut these into bars and enjoy!', section: SECTIONS.SERVE, img: plated6 },
+        { step: 'Let it cool for a few minutes.', section: SECTIONS.MAIN, img: bars12 },
+        { step: 'Cut these into bars and enjoy!', section: SECTIONS.SERVE },
     ],
     store: [
         {

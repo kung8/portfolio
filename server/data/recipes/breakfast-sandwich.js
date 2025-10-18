@@ -1,4 +1,4 @@
-const breakfastSandwich = '../assets/Products/breakfast-sandwich.jpeg';
+const sandwich1 = '../assets/Products/breakfast-sandwich-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BISCUITS,
@@ -9,12 +9,12 @@ const {
     SPATULA,
     STOVE,
 } = require('./ingredients');
-const biscuits = require('./biscuits-and-gravy');
+const biscuitsRecipe = require('./biscuits-and-gravy');
 
 module.exports = {
     cardName: 'Breakfast Sandwich',
     name: 'Breakfast Sandwich',
-    img: breakfastSandwich,
+    img: sandwich1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,
@@ -47,7 +47,7 @@ module.exports = {
             section: SECTIONS.MAIN,
             link: {
                 text: 'biscuit recipe',
-                link: `https://kevinung8.com/#/recipes/${biscuits.name}`,
+                link: `https://kevinung8.com/#/recipes/${biscuitsRecipe.name}`,
                 additionalText: '.'
             }
         },
