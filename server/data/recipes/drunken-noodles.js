@@ -7,10 +7,11 @@ const drunken6 = '../assets/Products/drunken-noodles-6.jpeg';
 const drunken7 = '../assets/Products/drunken-noodles-7.jpeg';
 const drunken8 = '../assets/Products/drunken-noodles-8.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { EGG, FISH_SAUCE, FRESH_RICE_NOODLES, GARLIC, GRAPE_TOMATO, LARGE_SHRIMP, OYSTER_SAUCE, PEANUT_OIL, SERRANO_PEPPER, SMALL_BOWL, SRIRACHA_SAUCE, STOVE, SWEET_SOY_SAUCE, THAI_BASIL, WHITE_ONION, WHITE_SUGAR, WOK } = require('./ingredients');
+const { CHICKEN_BREAST, FISH_SAUCE, FRESH_RICE_NOODLES, GARLIC, GREEN_BELL_PEPPER, OYSTER_SAUCE, PEANUT_OIL, RED_BELL_PEPPER, SMALL_BOWL, SRIRACHA_SAUCE, STOVE, SWEET_SOY_SAUCE, THAI_BASIL, THAI_CHILI_PEPPER, WHITE_ONION, WHITE_SUGAR, WOK } = require('./ingredients');
+
+const COOK_AROMATICS = 'Cook Aromatics';
 
 module.exports = {
-    wip: true,
     cardName: 'Drunken Noodles',
     name: 'Drunken Noodles',
     img: drunken8,
@@ -25,7 +26,7 @@ module.exports = {
     type: [TYPES.NOODLE],
     allergies: [ALLERGIES.EGG, ALLERGIES.FISH],
     diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.PESCATARIAN],
-    yields: { amount: 2, unit: YIELD_UNITS.SERVING },
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
@@ -33,23 +34,23 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...SWEET_SOY_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...FISH_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...SRIRACHA_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', section: SECTIONS.SAUCE },
-        { ...THAI_BASIL, amount: 8, unit: INGREDIENT_UNITS.LEAF, additionalDetails: 'long thin strips/chiffonade', section: SECTIONS.SAUCE },
+        { ...SWEET_SOY_SAUCE, amount: 8, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...OYSTER_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...FISH_SAUCE, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WHITE_SUGAR, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SRIRACHA_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', section: SECTIONS.SAUCE },
+        { ...THAI_BASIL, amount: 16, unit: INGREDIENT_UNITS.LEAF, additionalDetails: 'long thin strips/chiffonade', section: SECTIONS.SAUCE },
 
         { ...PEANUT_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.NOODLES },
         { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.NOODLES },
-        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.NOODLES },
-        { ...SERRANO_PEPPER, amount: 2, unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.NOODLES },
-        { ...LARGE_SHRIMP, amount: 8, unit: '', additionalDetails: 'peeled and deveined', section: SECTIONS.NOODLES },
+        { ...THAI_CHILI_PEPPER, amount: 3, unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.NOODLES },
+        { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.NOODLES },
+        { ...GREEN_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.NOODLES },
         { ...WHITE_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.NOODLES },
-        { ...FRESH_RICE_NOODLES, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...CHICKEN_BREAST, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.NOODLES },
+        { ...FRESH_RICE_NOODLES, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.NOODLES },
         { ...THAI_BASIL, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'packed', section: SECTIONS.NOODLES },
-        { ...GRAPE_TOMATO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.NOODLES },
     ],
     appliances: [
         STOVE,
@@ -59,20 +60,28 @@ module.exports = {
         WOK,
     ],
     directions: [
-        { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE, img: drunken1 },
-        { step: 'Over high heat, add oil to a wok.', section: SECTIONS.COOK_NOODLES },
-        { step: 'Add garlic and cook until light brown.', section: SECTIONS.COOK_NOODLES, img: drunken2 },
-        { step: 'Add eggs and serrano peppers. Lightly scramble and cook until it is barely set (about 1 minute).', section: SECTIONS.COOK_NOODLES, img: drunken3 },
-        { step: 'Add shrimp and onion. Cook and fold until shrimp becomes pink (about 1 minute).', section: SECTIONS.COOK_NOODLES, img: drunken4 },
-        { step: 'Add noodles, basil, tomatoes and sauce. Stir and cook (about 3 minutes). Be sure to scrape the bottom.', section: SECTIONS.COOK_NOODLES, img: drunken5 },
-        { step: 'Cook until the noodles are cooked and coated (about 1 minute).', section: SECTIONS.COOK_NOODLES, img: drunken6 },
-        { step: 'Enjoy this dish warm!', section: SECTIONS.SERVE, img: drunken7 },
+        { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE, img: drunken1 },
+
+        { step: 'Over high heat, add oil to a wok.', section: COOK_AROMATICS },
+        { step: 'Add garlic and cook until light brown.', section: COOK_AROMATICS },
+        { step: 'Add thai chili peppers.', section: COOK_AROMATICS, img: drunken2 },
+
+        { step: 'Add chicken. Cook until chicken becomes white (about 5 to 6 minutes). Avoid browning.', section: SECTIONS.COOK_CHICKEN, img: drunken3 },
+        { step: 'Transfer chicken to a bowl.', section: SECTIONS.COOK_CHICKEN },
+
+        { step: 'Add bell peppers and onions (or preferred vegetables). Cook until softened (about 4 to 5 minutes).', section: SECTIONS.COOK_VEGGIES, img: drunken4 },
+        { step: 'Transfer the vegetables to the bowl with the chicken.', section: SECTIONS.COOK_VEGGIES },
+
+        { step: 'Cook noodles one serving at a time. This makes it much easier to cook. Add portioned noodles and sauce. Mix until covered.', section: SECTIONS.COOK_NOODLES, img: [drunken5, drunken6] },
+
+        { step: 'Add chicken and vegetables. Stir and cook until well integrated.', section: SECTIONS.ASSEMBLE, img: drunken7 },
+        { step: 'Add Thai basil. Stir until wilted.', section: SECTIONS.ASSEMBLE },
+        { step: 'Enjoy this dish warm!', section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Make sure the fresh rice noodles are thawed and at room temperature before cooking.' },
         { note: 'I would recommend using thicker flat noodles for this dish.' },
         { note: 'The trick is to cook each serving individually. This prevents the noodles from breaking.' },
-        // { note: 'It was difficult to prevent the noodles from breaking into tiny pieces. But handling it less and making sure it cooks enough with the sauce, can all help it from breaking.' },
         { note: 'When I made this dish I had not updated the sauce ingredient amounts (i.e. it is now doubled). I\'m more used to a saucier drunken noodle dish. I will remake this dish and update the images.', }
     ],
     store: [
@@ -83,10 +92,14 @@ module.exports = {
         },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.PAN_FRY,
+            instruction: 'Add a splash of water. Heat on medium, stirring frequently, until heated through.',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave in 30 second intervals, stirring in between, until heated through.',
+        },
     ],
     mealPrep: true,
 };
