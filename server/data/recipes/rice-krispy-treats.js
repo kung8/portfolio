@@ -1,9 +1,9 @@
-const completely = '../assets/Products/rice-krispy-treat-completely-melted-marshmallows.jpeg';
-const pan = '../assets/Products/rice-krispy-treat-in-pan.jpeg';
-const marshmallows = '../assets/Products/rice-krispy-treat-marshmallows.jpeg';
-const riceKrispy = '../assets/Products/rice-krispy-treat-rice-krispy.jpeg';
-const vanilla = '../assets/Products/rice-krispy-treat-vanilla.jpeg';
-const zoomed3 = '../assets/Products/rice-krispy-treat-zoomed-center-3.jpeg';
+const treat1 = '../assets/Products/rice-krispy-treat-1.jpeg';
+const treat2 = '../assets/Products/rice-krispy-treat-2.jpeg';
+const treat3 = '../assets/Products/rice-krispy-treat-3.jpeg';
+const treat4 = '../assets/Products/rice-krispy-treat-4.jpeg';
+const treat5 = '../assets/Products/rice-krispy-treat-5.jpeg';
+const treat6 = '../assets/Products/rice-krispy-treat-6.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const { MINI_MARSHMALLOWS, RICE_KRISPIES_CEREAL, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
@@ -11,7 +11,7 @@ const { MINI_MARSHMALLOWS, RICE_KRISPIES_CEREAL, UNSALTED_BUTTER, VANILLA_EXTRAC
 module.exports = {
     cardName: 'Rice Krispy Treats',
     name: 'Rice Krispy Treats',
-    img: zoomed3,
+    img: treat6,
     recipeAuthors: ['Holly Nilsson'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -41,11 +41,11 @@ module.exports = {
         { name: 'serving plate or bowl' },
     ],
     directions: [
-        { step: 'Over low heat, melt butter and marshmallows in a saucepan. Stir to prevent it from burning and help it be consistent. My suggestion is to mix until the marshmallows are coated with the butter.', section: SECTIONS.MAIN, img: [marshmallows, completely] },
+        { step: 'Over low heat, melt butter and marshmallows in a saucepan. Stir to prevent it from burning and help it be consistent. My suggestion is to mix until the marshmallows are coated with the butter.', section: SECTIONS.MAIN, img: [treat1, treat2] },
         { step: 'If you want to make one of the variations with chocolate, melt chocolate chip after marshmallows are melted and stir.', section: SECTIONS.MAIN },
-        { step: 'Remove the saucepan from heat and mix in vanilla (optional depending on how sweet the chocolate chips is).', section: SECTIONS.MAIN, img: vanilla },
-        { step: 'Stir while adding in the Rice Krispies cereal. Mix until the cereal is evenly coated.', section: SECTIONS.MAIN, img: riceKrispy },
-        { step: 'Press into a greased 9x13 pan. But do not press them too hard if you want the treats to be a little softer.', section: SECTIONS.MAIN, img: pan },
+        { step: 'Remove the saucepan from heat and mix in vanilla (optional depending on how sweet the chocolate chips is).', section: SECTIONS.MAIN, img: treat3 },
+        { step: 'Stir while adding in the Rice Krispies cereal. Mix until the cereal is evenly coated.', section: SECTIONS.MAIN, img: treat4 },
+        { step: 'Press into a greased 9x13 pan. But do not press them too hard if you want the treats to be a little softer.', section: SECTIONS.MAIN, img: treat5 },
         { step: 'Let cool and enjoy.', section: SECTIONS.MAIN },
     ],
     notes: [
