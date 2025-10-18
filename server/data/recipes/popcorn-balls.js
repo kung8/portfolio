@@ -1,11 +1,11 @@
-const pouredZoomed = '../assets/Products/popcorn-balls-melted-poured-over-popcorn-zoomed.jpeg';
-const moreMelted = '../assets/Products/popcorn-balls-more-melted.jpeg';
-const rackStacked = '../assets/Products/popcorn-balls-on-rack-stacked.jpeg';
-const popped = '../assets/Products/popcorn-balls-popped-corn.jpeg';
-const rackZoomed = '../assets/Products/popcorn-balls-rack-zoomed.jpeg';
-const mixed = '../assets/Products/popcorn-balls-unmelted-mixed.jpeg';
-const unmeltedZoomed = '../assets/Products/popcorn-balls-unmelted-zoomed.jpeg';
-const baggiesZoomed = '../assets/Products/popcorn-ball-in-baggies-zoomed.jpeg';
+const balls1 = '../assets/Products/popcorn-balls-1.jpeg';
+const balls2 = '../assets/Products/popcorn-balls-2.jpeg';
+const balls3 = '../assets/Products/popcorn-balls-3.jpeg';
+const balls4 = '../assets/Products/popcorn-balls-4.jpeg';
+const balls5 = '../assets/Products/popcorn-balls-5.jpeg';
+const balls6 = '../assets/Products/popcorn-balls-6.jpeg';
+const balls7 = '../assets/Products/popcorn-balls-7.jpeg';
+const balls8 = '../assets/Products/popcorn-balls-8.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { COOKING_SPRAY, CORN_SYRUP, MINI_MARSHMALLOWS, POPCORN, POWDERED_SUGAR, UNSALTED_BUTTER, WATER } = require('./ingredients');
@@ -13,7 +13,7 @@ const { COOKING_SPRAY, CORN_SYRUP, MINI_MARSHMALLOWS, POPCORN, POWDERED_SUGAR, U
 module.exports = {
     cardName: 'Popcorn Balls',
     name: 'Popcorn Balls',
-    img: rackStacked,
+    img: balls7,
     recipeAuthors: ['Kelli'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -48,14 +48,14 @@ module.exports = {
         { name: 'plastic wrap or sandwich ziploc bag' },
     ],
     directions: [
-        { step: 'Remove any unpopped kernels so you don\'t break your teeth.', section: SECTIONS.MAIN, img: popped },
+        { step: 'Remove any unpopped kernels so you don\'t break your teeth.', section: SECTIONS.MAIN, img: balls1 },
         { step: 'Prepare a baking sheet and line with parchment paper before beginning to cook.' },
-        { step: 'Over medium heat, mix together corn syrup, butter, water, powdered sugar and marshmallows in a large pot.', section: SECTIONS.MAIN, img: [unmeltedZoomed, mixed] },
-        { step: 'Stir and continue to let the mixture melt.', section: SECTIONS.MAIN, img: moreMelted },
-        { step: 'Slowly pour mixture over popcorn and mix until the popcorn is evenly coated.', section: SECTIONS.MAIN, img: pouredZoomed },
+        { step: 'Over medium heat, mix together corn syrup, butter, water, powdered sugar and marshmallows in a large pot.', section: SECTIONS.MAIN, img: [balls2, balls3] },
+        { step: 'Stir and continue to let the mixture melt.', section: SECTIONS.MAIN, img: balls4 },
+        { step: 'Slowly pour mixture over popcorn and mix until the popcorn is evenly coated.', section: SECTIONS.MAIN, img: balls5 },
         { step: 'Quickly grease hands with cooking spray and form the popcorn into balls.', section: SECTIONS.MAIN },
-        { step: 'Place popcorn balls on the prepared baking sheet.', section: SECTIONS.MAIN, img: rackZoomed },
-        { step: 'Wrap each ball in plastic wrap or in individual sandwich ziploc bags and keep at room temperature.', section: SECTIONS.MAIN, img: baggiesZoomed },
+        { step: 'Place popcorn balls on the prepared baking sheet.', section: SECTIONS.MAIN, img: balls6 },
+        { step: 'Wrap each ball in plastic wrap or in individual sandwich ziploc bags and keep at room temperature.', section: SECTIONS.MAIN, img: balls8 },
         { step: 'Enjoy these sweet treats while you watch a show or movie!', section: SECTIONS.MAIN },
     ],
     store: [

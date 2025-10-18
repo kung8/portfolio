@@ -816,5 +816,4 @@ module.exports = recipes;
 // - peppermint-bark
 // - philly-cheeseteak-pizza
 // - pho
-// - popcorn-balls
 // - potstickers
