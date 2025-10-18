@@ -1,4 +1,4 @@
-const alfredo = '../assets/Products/chicken-alfredo.jpeg';
+const alfredo1 = '../assets/Products/chicken-alfredo-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
@@ -26,7 +26,7 @@ const {
 module.exports = {
     cardName: 'Chicken Alfredo',
     name: 'Chicken Alfredo',
-    img: alfredo,
+    img: alfredo1,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
