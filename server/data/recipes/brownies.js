@@ -1,6 +1,7 @@
-const plated = '../assets/Products/brownies-plated.jpeg';
-const pan = '../assets/Products/brownies-pan.jpeg';
-const zoomed = '../assets/Products/brownies-zoomed.jpeg';
+const brownies1 = '../assets/Products/brownies-1.jpeg';
+const brownies2 = '../assets/Products/brownies-2.jpeg';
+const brownies3 = '../assets/Products/brownies-3.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
@@ -19,7 +20,7 @@ const {
 module.exports = {
     cardName: 'Brownies',
     name: 'Brownies',
-    img: plated,
+    img: brownies3,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -57,7 +58,7 @@ module.exports = {
         { step: 'Add salt, vanilla, and eggs and mix.', section: SECTIONS.MAIN },
         { step: 'Mix in the flour.', section: SECTIONS.MAIN },
         { step: 'Spread the batter into the baking pan.', section: SECTIONS.MAIN },
-        { step: 'Bake for 30 to 35 minutes or until a toothpick comes out clean.', section: SECTIONS.MAIN, img: [pan, zoomed] },
+        { step: 'Bake for 30 to 35 minutes or until a toothpick comes out clean.', section: SECTIONS.MAIN, img: [brownies1, brownies2] },
     ],
     store: [
         {
