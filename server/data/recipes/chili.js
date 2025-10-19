@@ -1,15 +1,10 @@
-const beef = '../assets/Products/chili-beef.jpeg';
-const cubes = '../assets/Products/chili-cubes.jpeg';
-const diced = '../assets/Products/chili-diced-tomatoes.jpeg';
-const fragrantPot = '../assets/Products/chili-fragrant-in-pot.jpeg';
-const fragrant = '../assets/Products/chili-fragrant.jpeg';
-const pot1 = '../assets/Products/chili-in-pot-1.jpeg';
-const pot3 = '../assets/Products/chili-in-pot-3.jpeg';
-const pot5 = '../assets/Products/chili-in-pot-5.jpeg';
-const pot6 = '../assets/Products/chili-in-pot-6.jpeg';
-const pot7 = '../assets/Products/chili-in-pot-7.jpeg';
-const plated3 = '../assets/Products/chili-plated-3.jpeg';
-const plated4 = '../assets/Products/chili-plated-4.jpeg';
+const chili1 = '../assets/Products/chili-1.jpeg';
+const chili2 = '../assets/Products/chili-2.jpeg';
+const chili3 = '../assets/Products/chili-3.jpeg';
+const chili4 = '../assets/Products/chili-4.jpeg';
+const chili5 = '../assets/Products/chili-5.jpeg';
+const chili6 = '../assets/Products/chili-6.jpeg';
+
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BEEF_BROTH,
@@ -41,7 +36,7 @@ const VEGGIES = 'Veggies';
 module.exports = {
     cardName: 'Chili',
     name: 'Chili',
-    img: pot5,
+    img: chili4,
     recipeAuthors: ['Holly Nilsson'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -87,12 +82,12 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'In a large pot over medium-high heat, combine beef, chili powder, onion, jalapeno, and garlic.', section: BEEF, img: [beef, fragrant, fragrantPot] },
-        { step: 'Brown the content, mix occasionally, and drain any fat.', section: BEEF, img: [pot1, pot3] },
-        { step: 'Add the cumin, bell pepper, different tomato variations, beans, broth, brown sugar, salt and pepper.', section: VEGGIES, img: [cubes, diced] },
-        { step: 'Bring to a boil.', section: VEGGIES, img: pot7 },
-        { step: 'Lower heat and cook for 45 - 60 minutes or until it has become the desired thickness.', section: VEGGIES, img: pot6 },
-        { step: 'Serve with your favorite toppings and feel free to add as much spice as you can handle or desire.', section: SECTIONS.TOPPINGS, img: [plated3, plated4] },
+        { step: 'In a large pot over medium-high heat, combine beef, chili powder, onion, jalapeno, and garlic.', section: BEEF, img: chili1 },
+        { step: 'Brown the content, mix occasionally, and drain any fat.', section: BEEF, img: chili2 },
+        { step: 'Add the cumin, bell pepper, different tomato variations, beans, broth, brown sugar, salt and pepper.', section: VEGGIES, img: chili3 },
+        { step: 'Bring to a boil.', section: VEGGIES },
+        { step: 'Lower heat and cook for 45 - 60 minutes or until it has become the desired thickness.', section: VEGGIES },
+        { step: 'Serve with your favorite toppings and feel free to add as much spice as you can handle or desire.', section: SECTIONS.TOPPINGS, img: [chili5, chili6] },
     ],
     notes: [
         { note: 'With one jalapeno pepper it is very mild and a great base for those who do not like spicy food.' },
