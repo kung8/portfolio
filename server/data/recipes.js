@@ -802,7 +802,6 @@ module.exports = recipes;
 // - oatmeal-raisin-cookies
 // - pad-see-ew
 // - pad-thai
-// - pao-de-queijo
 // - peach-cobbler
 // - peanut-brittle
 // - pepper-steak-stir-fry

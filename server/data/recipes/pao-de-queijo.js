@@ -1,15 +1,16 @@
-const batter = '../assets/Products/pao-de-queijo-batter.jpeg';
-const boiling = '../assets/Products/pao-de-queijo-boiling-milk-mixture.jpeg';
-const cooked = '../assets/Products/pao-de-queijo-cooked-cheeseballs.jpeg';
-const zoomed = '../assets/Products/pao-de-queijo-cooked-zoomed.jpeg';
-const pan = '../assets/Products/pao-de-queijo-dough-balls-in-pan.jpeg';
-const balls = '../assets/Products/pao-de-queijo-dough-balls.jpeg';
-const flour = '../assets/Products/pao-de-queijo-flour.jpeg';
-const milk = '../assets/Products/pao-de-queijo-milk-mixture.jpeg';
-const rawZoomed = '../assets/Products/pao-de-queijo-mixer-zoomed.jpeg';
-const raw = '../assets/Products/pao-de-queijo-mixer.jpeg';
-// const first = '../assets/Products/pao-de-queijo-zoomed-cheeseballs.jpeg';
-const plated = '../assets/Products/pao-de-queijo-plated.jpeg';
+const cheeseball1 = '../assets/Products/pao-de-queijo-1.jpeg';
+const cheeseball2 = '../assets/Products/pao-de-queijo-2.jpeg';
+const cheeseball3 = '../assets/Products/pao-de-queijo-3.jpeg';
+const cheeseball4 = '../assets/Products/pao-de-queijo-4.jpeg';
+const cheeseball5 = '../assets/Products/pao-de-queijo-5.jpeg';
+const cheeseball6 = '../assets/Products/pao-de-queijo-6.jpeg';
+const cheeseball7 = '../assets/Products/pao-de-queijo-7.jpeg';
+const cheeseball8 = '../assets/Products/pao-de-queijo-8.jpeg';
+const cheeseball9 = '../assets/Products/pao-de-queijo-9.jpeg';
+const cheeseball10 = '../assets/Products/pao-de-queijo-10.jpeg';
+const cheeseball11 = '../assets/Products/pao-de-queijo-11.jpeg';
+const cheeseball12 = '../assets/Products/pao-de-queijo-12.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_SHEET,
@@ -33,7 +34,7 @@ const CHEESES_SECTION = 'Cheeses';
 module.exports = {
     cardName: 'Pao de Queijo',
     name: 'Pao de Queijo',
-    img: zoomed,
+    img: cheeseball10,
     recipeAuthors: ['Olivia Mesquita'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -73,18 +74,18 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 400ºF.', section: SECTIONS.PREP_DOUGH },
-        { step: 'In a stand mixer bowl, combine tapioca flour.', section: SECTIONS.PREP_DOUGH, img: flour },
-        { step: 'Over medium-high heat, combine milk, water, oil and salt in a saucepan.', section: SECTIONS.PREP_DOUGH, img: milk },
-        { step: 'Bring to a boil.', section: SECTIONS.PREP_DOUGH, img: boiling },
-        { step: 'Pour the boiled milk into the stand mixer bowl.', section: SECTIONS.PREP_DOUGH, img: raw },
+        { step: 'In a stand mixer bowl, combine tapioca flour.', section: SECTIONS.PREP_DOUGH, img: cheeseball1 },
+        { step: 'Over medium-high heat, combine milk, water, oil and salt in a saucepan.', section: SECTIONS.PREP_DOUGH, img: cheeseball2 },
+        { step: 'Bring to a boil.', section: SECTIONS.PREP_DOUGH, img: cheeseball3 },
+        { step: 'Pour the boiled milk into the stand mixer bowl.', section: SECTIONS.PREP_DOUGH, img: cheeseball4 },
         { step: 'Turn on the mixer slowly and mix until the dough is white and sticky.', section: SECTIONS.PREP_DOUGH },
         { step: 'Slowly add eggs, one at a time, until it is mixed.', section: SECTIONS.PREP_DOUGH },
-        { step: 'Slowly add the cheeses until it is well mixed.', section: SECTIONS.PREP_DOUGH, img: rawZoomed },
-        { step: 'The dough will most likely be sticky, so I added about another cup of tapioca starch to thicken the batter. Slowly add the cornstarch.', section: SECTIONS.PREP_DOUGH, img: batter },
-        { step: 'Shape the dough into 1.5 inch balls.', section: SECTIONS.PREP_DOUGH, img: balls },
-        { step: 'Place on a baking sheet about 2 inches apart. They do not expand very much.', section: SECTIONS.PREP_DOUGH, img: pan },
-        { step: 'Bake until the cheeseballs are a golden brown (about 15 to 25 minutes).', section: SECTIONS.BAKE, img: cooked },
-        { step: 'Serve these warm.', section: SECTIONS.DOUGH, img: plated },
+        { step: 'Slowly add the cheeses until it is well mixed.', section: SECTIONS.PREP_DOUGH, img: cheeseball5 },
+        { step: 'The dough will most likely be sticky, so I added about another cup of tapioca starch to thicken the batter. Slowly add the cornstarch.', section: SECTIONS.PREP_DOUGH, img: cheeseball6 },
+        { step: 'Shape the dough into 1.5 inch balls.', section: SECTIONS.PREP_DOUGH, img: cheeseball7 },
+        { step: 'Place on a baking sheet about 2 inches apart. They do not expand very much.', section: SECTIONS.PREP_DOUGH, img: cheeseball8 },
+        { step: 'Bake until the cheeseballs are a golden brown (about 15 to 25 minutes).', section: SECTIONS.BAKE, img: [cheeseball9, cheeseball12] },
+        { step: 'Serve these warm.', section: SECTIONS.DOUGH, img: cheeseball11 },
     ],
     store: [
         {
