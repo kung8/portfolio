@@ -1,20 +1,10 @@
-const chickenSauce1 = '../assets/Products/chicken-tikka-masala-chicken-in-sauce-1.jpeg';
-const chickenSauce2 = '../assets/Products/chicken-tikka-masala-chicken-in-sauce-2.jpeg';
-const cream = '../assets/Products/chicken-tikka-masala-cream.jpeg';
-const curryChicken = '../assets/Products/chicken-tikka-masala-curry-chicken.jpeg';
-const ghee = '../assets/Products/chicken-tikka-masala-ghee.jpeg';
-const mixedSpicesVeggies = '../assets/Products/chicken-tikka-masala-mixed-spices-and-veggies.jpeg';
-const sugarAdded = '../assets/Products/chicken-tikka-masala-mixed-sugar-added.jpeg';
-const mixedVeggies = '../assets/Products/chicken-tikka-masala-mixed-veggies.jpeg';
-const mixed = '../assets/Products/chicken-tikka-masala-mixed.jpeg';
-const oil = '../assets/Products/chicken-tikka-masala-oil.jpeg';
-const cookedChickenZoomed = '../assets/Products/chicken-tikka-masala-partially-cooked-chicken-zoomed.jpeg';
-const plated1 = '../assets/Products/chicken-tikka-masala-plated-1.jpeg';
-const sauce = '../assets/Products/chicken-tikka-masala-sauce.jpeg';
-const spices = '../assets/Products/chicken-tikka-masala-spices.jpeg';
-const sugar = '../assets/Products/chicken-tikka-masala-sugar.jpeg';
-const tomato = '../assets/Products/chicken-tikka-masala-tomato-sauce.jpeg';
-const translucent = '../assets/Products/chicken-tikka-masala-translucent-onion.jpeg';
+const curry1 = '../assets/Products/indian-chicken-tikka-masala-1.jpeg';
+const curry2 = '../assets/Products/indian-chicken-tikka-masala-2.jpeg';
+const curry3 = '../assets/Products/indian-chicken-tikka-masala-3.jpeg';
+const curry4 = '../assets/Products/indian-chicken-tikka-masala-4.jpeg';
+const curry5 = '../assets/Products/indian-chicken-tikka-masala-5.jpeg';
+const curry6 = '../assets/Products/indian-chicken-tikka-masala-6.jpeg';
+const curry7 = '../assets/Products/indian-chicken-tikka-masala-7.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CAYENNE_PEPPER, CINNAMON, CUMIN, CURRY_POWDER, GARLIC, GHEE, GINGER, HEAVY_CREAM, LARGE_PAN, LARGE_POT, PAPRIKA, SALT, STOVE, TOMATO_SAUCE, TURMERIC, VEGETABLE_OIL, WHITE_SUGAR, YELLOW_ONION } = require('./ingredients');
@@ -22,7 +12,7 @@ const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CAYENNE_PEPPER, CINNAMON, CUMIN, C
 module.exports = {
     cardName: 'Chicken Tikka Masala',
     name: 'Chicken Tikka Masala',
-    img: chickenSauce2,
+    img: curry6,
     recipeAuthors: ['Chris Bellers'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -66,20 +56,20 @@ module.exports = {
         LARGE_PAN,
     ],
     directions: [
-        { step: 'Over medium heat, heat ghee in a large pot.', section: SECTIONS.SAUCE, img: ghee },
-        { step: 'Add onions. Cook and stir until it becomes translucent (about 5 minutes).', section: SECTIONS.SAUCE, img: translucent },
-        { step: 'Add garlic. Cook and stir until fragrant (about 1 minute).', section: SECTIONS.SAUCE, img: mixedVeggies },
-        { step: 'Add cumin, salt, ginger, cayenne pepper, cinnamon, and turmeric. Cook and stir until fragrant (about 2 minutes).', section: SECTIONS.SAUCE, img: [spices, mixedSpicesVeggies] },
-        { step: 'Add tomato sauce. Bring to a boil and reduce to low heat.', section: SECTIONS.SAUCE, img: tomato },
+        { step: 'Over medium heat, heat ghee in a large pot.', section: SECTIONS.SAUCE },
+        { step: 'Add onions. Cook and stir until it becomes translucent (about 5 minutes).', section: SECTIONS.SAUCE },
+        { step: 'Add garlic. Cook and stir until fragrant (about 1 minute).', section: SECTIONS.SAUCE },
+        { step: 'Add cumin, salt, ginger, cayenne pepper, cinnamon, and turmeric. Cook and stir until fragrant (about 2 minutes).', section: SECTIONS.SAUCE },
+        { step: 'Add tomato sauce. Bring to a boil and reduce to low heat.', section: SECTIONS.SAUCE, img: curry1 },
         { step: 'Simmer sauce for 10 minutes.', section: SECTIONS.SAUCE },
-        { step: 'Add cream, sugar and paprika.', section: SECTIONS.SAUCE, img: [sugar, sugarAdded, cream] },
-        { step: 'Bring to a simmer and cook until sauce has thickened (about 10 to 15 minutes).', section: SECTIONS.SAUCE, img: sauce },
-        { step: 'Over medium heat, heat vegetable oil in a large pan.', section: SECTIONS.MAIN, img: oil },
-        { step: 'Add chicken and curry powder.', section: SECTIONS.MAIN, img: curryChicken },
-        { step: 'Sear chicken until lightly browned (about 3 minutes). It is fine to not be cooked all the way through.', section: SECTIONS.MAIN, img: cookedChickenZoomed },
-        { step: 'Transfer chicken to the sauce. Simmer until sauce is cooked through (about 30 minutes).', section: SECTIONS.MAIN, img: [chickenSauce1, mixed] },
+        { step: 'Add cream, sugar and paprika.', section: SECTIONS.SAUCE, img: curry2 },
+        { step: 'Bring to a simmer and cook until sauce has thickened (about 10 to 15 minutes).', section: SECTIONS.SAUCE, img: curry3 },
+        { step: 'Over medium heat, heat vegetable oil in a large pan.', section: SECTIONS.MAIN },
+        { step: 'Add chicken and curry powder.', section: SECTIONS.MAIN },
+        { step: 'Sear chicken until lightly browned (about 3 minutes). It is fine to not be cooked all the way through.', section: SECTIONS.MAIN, img: curry4 },
+        { step: 'Transfer chicken to the sauce. Simmer until sauce is cooked through (about 30 minutes).', section: SECTIONS.MAIN, img: curry5 },
         { step: 'Add salt and sugar to taste.', section: SECTIONS.MAIN },
-        { step: 'Serve with rice and naan or roti.', section: SECTIONS.MAIN, img: plated1 },
+        { step: 'Serve with rice and naan or roti.', section: SECTIONS.MAIN, img: curry7 },
     ],
     store: [
         // {
