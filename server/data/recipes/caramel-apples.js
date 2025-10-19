@@ -1,17 +1,15 @@
-const degree = '../assets/Products/caramel-apples-248.jpeg';
-const boiling = '../assets/Products/caramel-apples-boiling-water.jpeg';
-const dipped = '../assets/Products/caramel-apples-dipped-apple.jpeg';
-const oreo1 = '../assets/Products/caramel-apples-oreo-topped-1.jpeg';
-const oreo2 = '../assets/Products/caramel-apples-oreo-topped-2.jpeg';
-const peanut1 = '../assets/Products/caramel-apples-peanut-topped-1.jpeg';
-const peanut2 = '../assets/Products/caramel-apples-peanut-topped-2.jpeg';
-const peanut3 = '../assets/Products/caramel-apples-peanut-topped-3.jpeg';
-const melting = '../assets/Products/caramel-apples-sauce-melting.jpeg';
-const mixed = '../assets/Products/caramel-apples-sauce-mixed.jpeg';
-const unmixed = '../assets/Products/caramel-apples-sauce-unmixed.jpeg';
-const skewered = '../assets/Products/caramel-apples-skewered.jpeg';
-const thickened = '../assets/Products/caramel-apples-thickened-sauce.jpeg';
-const wax = '../assets/Products/caramel-apples-wax-free-apples.jpeg';
+const apples1 = '../assets/Products/caramel-apples-1.jpeg';
+const apples2 = '../assets/Products/caramel-apples-2.jpeg';
+const apples3 = '../assets/Products/caramel-apples-3.jpeg';
+const apples4 = '../assets/Products/caramel-apples-4.jpeg';
+const apples5 = '../assets/Products/caramel-apples-5.jpeg';
+const apples6 = '../assets/Products/caramel-apples-6.jpeg';
+const apples7 = '../assets/Products/caramel-apples-7.jpeg';
+const apples8 = '../assets/Products/caramel-apples-8.jpeg';
+const apples9 = '../assets/Products/caramel-apples-9.jpeg';
+const apples10 = '../assets/Products/caramel-apples-10.jpeg';
+const apples11 = '../assets/Products/caramel-apples-11.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BAMBOO_SKEWERS, BROWN_SUGAR, COOKING_THERMOMETER, CORN_SYRUP, GRANNY_SMITH_APPLE, PARCHMENT_PAPER, SPIDER_STRAINER, STOVE, SWEETENED_CONDENSED_MILK, TALL_NARROW_POT, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
 
@@ -21,7 +19,7 @@ const CARAMEL = 'Caramel';
 module.exports = {
     cardName: 'Caramel Apples',
     name: 'Caramel Apples',
-    img: oreo1,
+    img: apples11,
     recipeAuthors: ['onlyxception'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -58,21 +56,21 @@ module.exports = {
         SPIDER_STRAINER,
     ],
     directions: [
-        { step: 'Over medium-high heat, bring a saucepan of water to a boil.', section: APPLE, img: boiling },
-        { step: 'Dip the apples one at a time in the boiling water for a few seconds. I used a spider strainer.', section: APPLE, img: dipped },
+        { step: 'Over medium-high heat, bring a saucepan of water to a boil.', section: APPLE, img: apples1 },
+        { step: 'Dip the apples one at a time in the boiling water for a few seconds. I used a spider strainer.', section: APPLE, img: apples2 },
         { step: 'Dry with a paper towel to remove the wax from the peel.', section: APPLE },
-        { step: 'Set aside and cool for 30 minutes.', section: APPLE, img: wax },
-        { step: 'Insert skewers carefully through the apple from the bottom.', section: APPLE, img: skewered },
+        { step: 'Set aside and cool for 30 minutes.', section: APPLE, img: apples3 },
+        { step: 'Insert skewers carefully through the apple from the bottom.', section: APPLE, img: apples4 },
         { step: 'Line baking sheet with parchment paper.', section: APPLE },
         { step: 'Clip the candy thermometer in the saucepan.', section: CARAMEL },
-        { step: 'Over medium-high heat, combine the brown sugar, milk, syrup and butter in a saucepan.', section: CARAMEL, img: unmixed },
-        { step: 'Bring to a boil, stirring constantly.', section: CARAMEL, img: [melting, mixed] },
+        { step: 'Over medium-high heat, combine the brown sugar, milk, syrup and butter in a saucepan.', section: CARAMEL, img: apples5 },
+        { step: 'Bring to a boil, stirring constantly.', section: CARAMEL, img: [apples6, apples7] },
         { step: 'Reduce to medium heat.', section: CARAMEL },
-        { step: 'Continue to stir the caramel and cook until caramel reaches 248ºF (about 25 to 30 minutes). The stirring helps prevent the sugars from burning and to help the water evaporate.', section: CARAMEL, img: [degree, thickened] },
+        { step: 'Continue to stir the caramel and cook until caramel reaches 248ºF (about 25 to 30 minutes). The stirring helps prevent the sugars from burning and to help the water evaporate.', section: CARAMEL, img: [apples8, apples9] },
         { step: 'Remove from heat.', section: CARAMEL },
         { step: 'Add vanilla and mix.', section: CARAMEL },
         { step: 'Quickly dip apples in caramel and top each with your favorite toppings.', section: SECTIONS.MAIN },
-        { step: 'Place each apple on the parchment paper and let them set for 1 hour.', section: SECTIONS.MAIN, img: [oreo2, peanut1, peanut2, peanut3] },
+        { step: 'Place each apple on the parchment paper and let them set for 1 hour.', section: SECTIONS.MAIN, img: apples10 },
     ],
     store: [
         {
