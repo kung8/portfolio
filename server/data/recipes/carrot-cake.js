@@ -1,18 +1,18 @@
-const two = '../assets/Products/carrot-cake-baked-two-layers.jpeg';
-const three = '../assets/Products/carrot-cake-baked-three-layers.jpeg';
-const bakedZoomed = '../assets/Products/carrot-cake-baked-zoomed.jpeg';
-const batter = '../assets/Products/carrot-cake-batter.jpeg';
-const brownSugar = '../assets/Products/carrot-cake-brown-sugar.jpeg';
-const carrotBatter = '../assets/Products/carrot-cake-carrot-batter.jpeg';
-const creamed = '../assets/Products/carrot-cake-creamed.jpeg';
-const eggs = '../assets/Products/carrot-cake-eggs.jpeg';
-const flour = '../assets/Products/carrot-cake-flour.jpeg';
-const nonFlour = '../assets/Products/carrot-cake-non-flour-dry-ingredients.jpeg';
-const pans = '../assets/Products/carrot-cake-pans.jpeg';
-const topping = '../assets/Products/carrot-cake-topping.jpeg';
-const walnuts = '../assets/Products/carrot-cake-walnuts.jpeg';
-const side = '../assets/Products/carrot-cake-plated-side.jpeg';
-const zoomed = '../assets/Products/carrot-cake-plated-zoomed.jpeg';
+const cake1 = '../assets/Products/carrot-cake-1.jpeg';
+const cake2 = '../assets/Products/carrot-cake-2.jpeg';
+const cake3 = '../assets/Products/carrot-cake-3.jpeg';
+const cake4 = '../assets/Products/carrot-cake-4.jpeg';
+const cake5 = '../assets/Products/carrot-cake-5.jpeg';
+const cake6 = '../assets/Products/carrot-cake-6.jpeg';
+const cake7 = '../assets/Products/carrot-cake-7.jpeg';
+const cake8 = '../assets/Products/carrot-cake-8.jpeg';
+const cake9 = '../assets/Products/carrot-cake-9.jpeg';
+const cake10 = '../assets/Products/carrot-cake-10.jpeg';
+const cake11 = '../assets/Products/carrot-cake-11.jpeg';
+const cake12 = '../assets/Products/carrot-cake-12.jpeg';
+const cake13 = '../assets/Products/carrot-cake-13.jpeg';
+const cake14 = '../assets/Products/carrot-cake-14.jpeg';
+const cake15 = '../assets/Products/carrot-cake-15.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SODA, BROWN_SUGAR, CAKE_PAN, CARROT, CINNAMON, CREAM_CHEESE, EGG, MEDIUM_BOWL, MIXING_BOWL, OVEN, POWDERED_SUGAR, SALT, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, VEGETABLE_OIL, WALNUTS, WHITE_SUGAR } = require('./ingredients');
@@ -25,7 +25,7 @@ const ASSEMBLING = 'Assembling';
 module.exports = {
     cardName: 'Carrot Cake',
     name: 'Carrot Cake',
-    img: zoomed,
+    img: cake15,
     recipeAuthors: ['Nan and Joanne Gallagher'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -73,23 +73,23 @@ module.exports = {
         { ...CAKE_PAN, amount: 2, additionalDetails: '10 inch' },
     ],
     directions: [
-        { step: 'In a medium bowl, mix together the grated carrots and brown sugar.', section: CARROT_MIXTURE, img: brownSugar },
+        { step: 'In a medium bowl, mix together the grated carrots and brown sugar.', section: CARROT_MIXTURE, img: cake1 },
         { step: 'Set aside for 1 hour.', section: CARROT_MIXTURE },
         { step: 'Preheat the oven to 350ºF.', section: CAKE },
         { step: 'Grease and flour the cake pans.', section: CAKE },
-        { step: 'In a mixing bowl, beat eggs until light and fluffy.', section: CAKE, img: eggs },
+        { step: 'In a mixing bowl, beat eggs until light and fluffy.', section: CAKE, img: cake2 },
         { step: 'Slowly beat in sugar, oil and vanilla.', section: CAKE },
-        { step: 'Mix in cinnamon, baking soda, salt and flour one at a time.', section: CAKE, img: [nonFlour, flour, batter] },
-        { step: 'Mix in the carrot mixture and walnuts.', section: CAKE, img: [carrotBatter, walnuts] },
-        { step: 'Carefully pour the batter into the pans.', section: CAKE, img: [pans] },
-        { step: 'Bake until a toothpick comes out clean (about 45 to 50 minutes).', section: CAKE, img: bakedZoomed },
+        { step: 'Mix in cinnamon, baking soda, salt and flour one at a time.', section: CAKE, img: [cake3, cake4, cake5] },
+        { step: 'Mix in the carrot mixture and walnuts.', section: CAKE, img: [cake6, cake7] },
+        { step: 'Carefully pour the batter into the pans.', section: CAKE, img: cake8 },
+        { step: 'Bake until a toothpick comes out clean (about 45 to 50 minutes).', section: CAKE, img: cake9 },
         { step: 'Cool for 10 minutes before taking the cake out of the pan.', section: CAKE },
         { step: 'Cool completely before assembling and decorating the cake.', section: CAKE },
-        { step: 'In a mixing bowl, combine together the softened cream cheese and butter.', section: FROSTING, img: creamed },
-        { step: 'Add powdered sugar and vanilla and mix until well incorporated.', section: FROSTING, img: topping },
-        { step: 'Spread the frosting on one layer of the cake and place the other layer on top.', section: ASSEMBLING, img: two },
-        { step: 'Frost the top layer and sprinkle it with walnut, as desired.', section: ASSEMBLING, img: three },
-        { step: 'Slice up the cake and enjoy this tasty rabbit food (just kidding don\'t feed this to rabbits).', section: SECTIONS.SERVE, img: side },
+        { step: 'In a mixing bowl, combine together the softened cream cheese and butter.', section: FROSTING, img: cake10 },
+        { step: 'Add powdered sugar and vanilla and mix until well incorporated.', section: FROSTING, img: cake11 },
+        { step: 'Spread the frosting on one layer of the cake and place the other layer on top.', section: ASSEMBLING, img: cake12 },
+        { step: 'Frost the top layer and sprinkle it with walnut, as desired.', section: ASSEMBLING, img: cake13 },
+        { step: 'Slice up the cake and enjoy this tasty rabbit food (just kidding don\'t feed this to rabbits).', section: SECTIONS.SERVE, img: cake14 },
     ],
     store: [
         {
