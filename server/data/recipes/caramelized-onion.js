@@ -1,8 +1,9 @@
-const buttered = '../assets/Products/caramelized-onion-buttered-onion.jpeg';
-const caramelized = '../assets/Products/caramelized-onion-caramelized-cooked.jpeg';
-const combined = '../assets/Products/caramelized-onion-combined.jpeg';
-const cooked = '../assets/Products/caramelized-onion-cooked.jpeg';
-const sliced = '../assets/Products/caramelized-onion-thinly-sliced.jpeg';
+const onion1 = '../assets/Products/caramelized-onion-1.jpeg';
+const onion2 = '../assets/Products/caramelized-onion-2.jpeg';
+const onion3 = '../assets/Products/caramelized-onion-3.jpeg';
+const onion4 = '../assets/Products/caramelized-onion-4.jpeg';
+const onion5 = '../assets/Products/caramelized-onion-5.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BALSAMIC_VINEGAR,
@@ -19,7 +20,7 @@ const {
 module.exports = {
     cardName: 'Caramelized Onion',
     name: 'Caramelized Onion',
-    img: caramelized,
+    img: onion5,
     recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
@@ -48,12 +49,12 @@ module.exports = {
         FRYING_PAN
     ],
     directions: [
-        { step: 'Over medium-high heat, melt butter in a pan.', section: SECTIONS.TOPPING, img: sliced },
-        { step: 'Add the red onions and let it brown.', section: SECTIONS.TOPPING, img: buttered },
+        { step: 'Over medium-high heat, melt butter in a pan.', section: SECTIONS.TOPPING, img: onion1 },
+        { step: 'Add the red onions and let it brown.', section: SECTIONS.TOPPING, img: onion2 },
         { step: 'Add the brown sugar, balsamic vinegar, and soy sauce when the onions begins to brown.', section: SECTIONS.TOPPING },
         { step: 'Stir and cook for about 3 minutes.', section: SECTIONS.TOPPING },
-        { step: 'Season with salt and pepper and cook until onions are browned and soft.', section: SECTIONS.TOPPING, img: cooked },
-        { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.TOPPING, img: combined },
+        { step: 'Season with salt and pepper and cook until onions are browned and soft.', section: SECTIONS.TOPPING, img: onion3 },
+        { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.TOPPING, img: onion4 },
     ],
     store: [
         {

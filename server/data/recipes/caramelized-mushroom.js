@@ -1,7 +1,8 @@
-const combined = '../assets/Products/caramelized-mushroom-combined.jpeg';
-const cooked = '../assets/Products/caramelized-mushroom-cooked.jpeg';
-const cooking = '../assets/Products/caramelized-mushroom-cooking.jpeg';
-const raw = '../assets/Products/caramelized-mushroom-raw.jpeg';
+const mushroom1 = '../assets/Products/caramelized-mushroom-1.jpeg';
+const mushroom2 = '../assets/Products/caramelized-mushroom-2.jpeg';
+const mushroom3 = '../assets/Products/caramelized-mushroom-3.jpeg';
+const mushroom4 = '../assets/Products/caramelized-mushroom-4.jpeg';
+
 const { CATEGORIES, SECTIONS, GENRES, METHODS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS, TYPES, ALLERGIES, DIET } = require("./constants");
 const {
     BALSAMIC_VINEGAR,
@@ -18,7 +19,7 @@ const {
 module.exports = {
     cardName: 'Caramelized Mushroom',
     name: 'Caramelized Mushroom',
-    img: cooked,
+    img: mushroom4,
     recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,
@@ -48,11 +49,11 @@ module.exports = {
     ],
     directions: [
         { step: 'Over medium-high heat, melt butter in a pan.', section: SECTIONS.TOPPING },
-        { step: 'Add the mushroom and let it brown.', section: SECTIONS.TOPPING, img: raw },
+        { step: 'Add the mushroom and let it brown.', section: SECTIONS.TOPPING, img: mushroom1 },
         { step: 'Add the brown sugar, balsamic vinegar, and soy sauce when the mushroom begins to brown.', section: SECTIONS.TOPPING },
-        { step: 'Stir and cook for about 3 minutes.', section: SECTIONS.TOPPING, img: cooking },
+        { step: 'Stir and cook for about 3 minutes.', section: SECTIONS.TOPPING, img: mushroom2 },
         { step: 'Season with salt and pepper and cook until mushrooms are browned and soft.', section: SECTIONS.TOPPING },
-        { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.TOPPING, img: combined },
+        { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.TOPPING, img: mushroom3 },
     ],
     store: [
         {
