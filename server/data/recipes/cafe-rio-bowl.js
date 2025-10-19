@@ -1,15 +1,15 @@
-const bowled = '../assets/Products/cafe-rio-bowl-bowled.jpeg';
-const cookedFajita = '../assets/Products/cafe-rio-bowl-cooked-fajitas.jpeg';
-const cookingBeef = '../assets/Products/cafe-rio-bowl-cooking-beef.jpeg';
-const fajitas = '../assets/Products/cafe-rio-bowl-fajitas.jpeg';
-const grilled = '../assets/Products/cafe-rio-bowl-grilled-beef.jpeg';
-const marinade = '../assets/Products/cafe-rio-bowl-marinade.jpeg';
-const marinatedBeef = '../assets/Products/cafe-rio-bowl-marinated-beef.jpeg';
-const tortilla = '../assets/Products/cafe-rio-bowl-tortilla-in-bowl.jpeg';
-const warmingTortilla = '../assets/Products/cafe-rio-bowl-warming-tortilla.jpeg';
-const dressing = '../assets/Products/cafe-rio-bowl-cilantro-ranch-dressing-in-bowl.jpeg';
-const pre = '../assets/Products/cafe-rio-bowl-cilantro-ranch-dressing-pre-blended-ingredients.jpeg';
-const cilantroRanchDressingZoomed = '../assets/Products/cafe-rio-bowl-bowled-with-cilantro-ranch-dressing-zoomed.jpeg';
+const bowl1 = '../assets/Products/cafe-rio-bowl-1.jpeg';
+const bowl2 = '../assets/Products/cafe-rio-bowl-2.jpeg';
+const bowl3 = '../assets/Products/cafe-rio-bowl-3.jpeg';
+const bowl4 = '../assets/Products/cafe-rio-bowl-4.jpeg';
+const bowl5 = '../assets/Products/cafe-rio-bowl-5.jpeg';
+const bowl6 = '../assets/Products/cafe-rio-bowl-6.jpeg';
+const bowl7 = '../assets/Products/cafe-rio-bowl-7.jpeg';
+const bowl8 = '../assets/Products/cafe-rio-bowl-8.jpeg';
+const bowl9 = '../assets/Products/cafe-rio-bowl-9.jpeg';
+const bowl10 = '../assets/Products/cafe-rio-bowl-10.jpeg';
+const bowl11 = '../assets/Products/cafe-rio-bowl-11.jpeg';
+const bowl12 = '../assets/Products/cafe-rio-bowl-12.jpeg';
 
 const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS, ALLERGIES, DIET } = require("./constants");
 const {
@@ -49,7 +49,7 @@ const CILANTRO_RANCH_DRESSING = 'Cilantro Ranch Dressing';
 module.exports = {
     cardName: 'Cafe Rio Bowl',
     name: 'Cafe Rio Bowl',
-    img: cilantroRanchDressingZoomed,
+    img: bowl12,
     recipeAuthors: ['Kristyn Merkley'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -107,18 +107,18 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'In a ziploc bag or mixing bowl, mix together all the marinade ingredients except the steak and parsley.', section: SECTIONS.MEAT, img: marinade },
-        { step: 'Add the steak to the marinade.', section: SECTIONS.MEAT, img: marinatedBeef },
+        { step: 'In a ziploc bag or mixing bowl, mix together all the marinade ingredients except the steak and parsley.', section: SECTIONS.MEAT, img: bowl1 },
+        { step: 'Add the steak to the marinade.', section: SECTIONS.MEAT, img: bowl2 },
         { step: 'Marinate for 20 minutes.', section: SECTIONS.MEAT },
         { step: 'Preheat a grill (or griddle).', section: SECTIONS.MEAT },
-        { step: 'Add steak to the grill using tongs and cook until the preferred doneness.', section: SECTIONS.MEAT, img: [cookingBeef, grilled] },
+        { step: 'Add steak to the grill using tongs and cook until the preferred doneness.', section: SECTIONS.MEAT, img: [bowl3, bowl4] },
         { step: 'Top the steak with parsley.', section: SECTIONS.MEAT },
-        { step: 'Blend together the cilantro ranch dressing ingredients.', section: CILANTRO_RANCH_DRESSING, img: [pre, dressing] },
+        { step: 'Blend together the cilantro ranch dressing ingredients.', section: CILANTRO_RANCH_DRESSING, img: [bowl5, bowl6] },
         { step: 'Serve and mix in your homemade Cafe Rio bowl.', section: CILANTRO_RANCH_DRESSING },
-        { step: 'After the steak is cooked and remove from the grill, optionally cook the fajitas on the grill. Use any of the residual sauce leftover from the steak on the grill.', section: SECTIONS.MAIN, img: [fajitas, cookedFajita] },
+        { step: 'After the steak is cooked and remove from the grill, optionally cook the fajitas on the grill. Use any of the residual sauce leftover from the steak on the grill.', section: SECTIONS.MAIN, img: [bowl7, bowl8] },
         { step: 'Warm the beans in a saucepan.', section: SECTIONS.MAIN },
-        { step: 'Warm the tortillas on the grill.', section: SECTIONS.MAIN, img: warmingTortilla },
-        { step: 'Assemble the salad bowls with the warmed tortilla, cooked rice, warmed beans, cooked steak, salad kit, and all the other desired toppings.', section: SECTIONS.MAIN, img: [tortilla, bowled] },
+        { step: 'Warm the tortillas on the grill.', section: SECTIONS.MAIN, img: bowl9 },
+        { step: 'Assemble the salad bowls with the warmed tortilla, cooked rice, warmed beans, cooked steak, salad kit, and all the other desired toppings.', section: SECTIONS.MAIN, img: [bowl10, bowl11] },
     ],
     notes: [
         { note: 'I sometimes forget items in fridge or pantry when I am ready to make the salad. I recommend making a list of items beforehand, so you can reference at the time of assembly and not miss your favorite ingredients.' }
