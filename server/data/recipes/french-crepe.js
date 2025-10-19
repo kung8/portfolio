@@ -4,6 +4,7 @@ const plated2 = '../assets/Products/crepes-plated-2.jpeg';
 const scoop = '../assets/Products/crepes-scoop-in-pan.jpeg';
 const spread = '../assets/Products/crepes-scoop-spread-in-pan.jpeg';
 const unmelted = '../assets/Products/crepes-unmelted-chocolate.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,

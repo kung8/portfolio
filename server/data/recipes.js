@@ -761,8 +761,6 @@ module.exports = recipes;
 // and sautéed vegetables. (32)
 
 // TODO: update the images for the following recipes:
-// - chicken-katsudon
-// - chicken-noodle-soup (add a number)
 // - chicken-quesadilla (lower the number)
 // - chicken-stuffed-crescent-rolls
 // - chicken-tikka-masala
@@ -781,7 +779,6 @@ module.exports = recipes;
 // - hawaiian-haystacks
 // - hospitality-chicken
 // - indian-butter-chicken
-// - katsudon (conform it to the other files)
 // - khmer-red-curry
 // - korean-fried-chicken
 // - lemon-bars

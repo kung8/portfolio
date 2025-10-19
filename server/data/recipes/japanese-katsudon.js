@@ -1,10 +1,11 @@
-const katsudon = '../assets/Products/katsudon.jpeg';
-const drying = '../assets/Products/chicken-katsudon-drying.jpeg';
-const strip = '../assets/Products/chicken-katsudon-strips.jpeg';
-const onion = '../assets/Products/chicken-katsudon-onion.jpeg';
-const mirin = '../assets/Products/chicken-katsudon-onion-in-mirin.jpeg';
-const layered = '../assets/Products/chicken-katsudon-layered.jpeg';
-const finished = '../assets/Products/chicken-katsudon-finished.jpeg';
+const katsudon1 = '../assets/Products/chicken-katsudon-1.jpeg';
+const katsudon2 = '../assets/Products/chicken-katsudon-2.jpeg';
+const katsudon3 = '../assets/Products/chicken-katsudon-3.jpeg';
+const katsudon4 = '../assets/Products/chicken-katsudon-4.jpeg';
+const katsudon5 = '../assets/Products/chicken-katsudon-5.jpeg';
+const katsudon6 = '../assets/Products/chicken-katsudon-6.jpeg';
+const katsudon7 = '../assets/Products/chicken-katsudon-7.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
@@ -33,7 +34,7 @@ const {
 module.exports = {
     cardName: 'Japanese Pork Katsudon',
     name: 'Japanese Pork Katsudon',
-    img: katsudon,
+    img: katsudon7,
     recipeAuthors: ['Sarah Leung'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -86,16 +87,16 @@ module.exports = {
         { step: 'Be careful as the oil is very hot by this point, so be sure to wear oven mitts to help protect your hands from getting burned.', section: SECTIONS.MAIN },
         { step: 'Place the pork chop in the hot oil, and cook for 5 - 6 minutes per side. Then flip.', section: SECTIONS.MAIN },
         { step: 'Line a baking sheet with paper towels and place a cooling rack on top.', section: SECTIONS.MAIN },
-        { step: 'Place the pork chops on the cooling rack to drain any excess oil.', section: SECTIONS.MAIN, img: drying },
+        { step: 'Place the pork chops on the cooling rack to drain any excess oil.', section: SECTIONS.MAIN, img: katsudon1 },
         { step: 'While the pork is resting, make the egg mixture and the sauce.', section: SECTIONS.MAIN },
         { step: 'In one bowl, combine the broth, sugar, soy sauce, and mirin. In another bowl, beat 10 eggs.', section: SECTIONS.MAIN },
         { step: 'For the next steps cook in batches to avoid overcrowding the pan.', section: SECTIONS.MAIN },
         { step: 'Over medium heat, add a tablespoon of oil to a pan', section: SECTIONS.MAIN },
-        { step: 'Add the onions and cook until they are slightly caramelized. Split the onions evenly between the batches.', section: SECTIONS.MAIN, img: onion },
-        { step: 'Add the portioned broth mixture over the onions.', section: SECTIONS.MAIN, img: mirin },
-        { step: 'Slice the katsudon into strips.', section: SECTIONS.MAIN, img: strip },
-        { step: 'Place the sliced katsudon on top of the onions.', section: SECTIONS.MAIN, img: layered },
-        { step: 'Drizzle some egg over the katsudon and cook until the egg is set.', section: SECTIONS.MAIN, img: finished },
+        { step: 'Add the onions and cook until they are slightly caramelized. Split the onions evenly between the batches.', section: SECTIONS.MAIN, img: katsudon2 },
+        { step: 'Add the portioned broth mixture over the onions.', section: SECTIONS.MAIN, img: katsudon3 },
+        { step: 'Slice the katsudon into strips.', section: SECTIONS.MAIN, img: katsudon4 },
+        { step: 'Place the sliced katsudon on top of the onions.', section: SECTIONS.MAIN, img: katsudon5 },
+        { step: 'Drizzle some egg over the katsudon and cook until the egg is set.', section: SECTIONS.MAIN, img: katsudon6 },
         { step: 'Serve over rice and garnish with green onions.', section: SECTIONS.MAIN },
     ],
     store: [

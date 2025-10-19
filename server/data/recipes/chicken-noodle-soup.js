@@ -1,4 +1,4 @@
-const chickenNoodle = '../assets/Products/chicken-noodle-soup.jpeg';
+const soup1 = '../assets/Products/chicken-noodle-soup-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
@@ -28,7 +28,7 @@ const {
 module.exports = {
     cardName: 'Chicken Soup',
     name: 'Chicken Noodle Soup',
-    img: chickenNoodle,
+    img: soup1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: 'Kevin Ung',
     available: true,
