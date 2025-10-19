@@ -1,20 +1,20 @@
-const rawIngredients = '../assets/Products/cheesecake-raw-cheesecake-ingredients.jpeg';
-const baked = '../assets/Products/cheesecake-baked-cheesecake.jpeg';
-const slice = '../assets/Products/cheesecake-slice.jpeg';
-const glaze = '../assets/Products/cheesecake-glazed-strawberries.jpeg';
-const crustRaw = '../assets/Products/cheesecake-crust-raw.jpeg';
-const crust = '../assets/Products/cheesecake-crust.jpeg';
-const bakedCrust = '../assets/Products/cheesecake-crust-baked.jpeg';
-const fillingCombined = '../assets/Products/cheesecake-filling-combined.jpeg';
-const filling = '../assets/Products/cheesecake-filling-added.jpeg';
-const beforeCreaming = '../assets/Products/cheesecake-filling-before-creaming.jpeg';
-const hulled = '../assets/Products/cheesecake-hulled-strawberries.jpeg';
-const cakeHolder = '../assets/Products/cheesecake-in-cake-holder.jpeg';
-const roastingPan = '../assets/Products/cheesecake-in-roasting-pan.jpeg';
-const coolingRack = '../assets/Products/cheesecake-on-cooling-rack.jpeg';
-const smallSlice = '../assets/Products/cheesecake-small-slice.jpeg';
-const strawberriesInPan = '../assets/Products/cheesecake-strawberries-in-pan.jpeg';
-const wholeGlazed = '../assets/Products/cheesecake-whole-glazed-strawberry.jpeg';
+const cheesecake1 = '../assets/Products/cheesecake-factory-cheesecake-1.jpeg';
+const cheesecake2 = '../assets/Products/cheesecake-factory-cheesecake-2.jpeg';
+const cheesecake3 = '../assets/Products/cheesecake-factory-cheesecake-3.jpeg';
+const cheesecake4 = '../assets/Products/cheesecake-factory-cheesecake-4.jpeg';
+const cheesecake5 = '../assets/Products/cheesecake-factory-cheesecake-5.jpeg';
+const cheesecake6 = '../assets/Products/cheesecake-factory-cheesecake-6.jpeg';
+const cheesecake7 = '../assets/Products/cheesecake-factory-cheesecake-7.jpeg';
+const cheesecake8 = '../assets/Products/cheesecake-factory-cheesecake-8.jpeg';
+const cheesecake9 = '../assets/Products/cheesecake-factory-cheesecake-9.jpeg';
+const cheesecake10 = '../assets/Products/cheesecake-factory-cheesecake-10.jpeg';
+const cheesecake11 = '../assets/Products/cheesecake-factory-cheesecake-11.jpeg';
+const cheesecake12 = '../assets/Products/cheesecake-factory-cheesecake-12.jpeg';
+const cheesecake13 = '../assets/Products/cheesecake-factory-cheesecake-13.jpeg';
+const cheesecake14 = '../assets/Products/cheesecake-factory-cheesecake-14.jpeg';
+const cheesecake15 = '../assets/Products/cheesecake-factory-cheesecake-15.jpeg';
+const cheesecake16 = '../assets/Products/cheesecake-factory-cheesecake-16.jpeg';
+const cheesecake17 = '../assets/Products/cheesecake-factory-cheesecake-17.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
@@ -45,7 +45,7 @@ const {
 module.exports = {
     cardName: 'C.F. Cheesecake',
     name: 'Cheesecake Factory Cheesecake',
-    img: smallSlice,
+    img: cheesecake17,
     recipeAuthors: ['Justin Sullivan'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -62,7 +62,7 @@ module.exports = {
     waitTime: { amount: 5, unit: TIME_UNITS.HOUR },
     separated: true,
     websites: [
-        { label: 'Cheesecake Factory Copycat', link: 'https://www.delish.com/cooking/recipe-ideas/a37762621/cheesecake-factory-original-cheesecake-copycat-recipe/' }
+        { label: 'Cheesecake Factory Copycat', link: 'https://www.delish.com/cooking/recipe-ideas/a37762621/cheesecake-factory-cheesecake-1ipe/' }
     ],
     ingredients: [
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.CRUST },
@@ -95,29 +95,29 @@ module.exports = {
         PLASTIC_WRAP,
     ],
     directions: [
-        { step: 'Grease cake pan with cooking spray.', section: SECTIONS.CRUST, img: rawIngredients },
+        { step: 'Grease cake pan with cooking spray.', section: SECTIONS.CRUST, img: cheesecake1 },
         { step: 'Cover the bottom of the cake pan with the aluminum foil on the outside (to prevent it from soaking in water).', section: SECTIONS.CRUST },
-        { step: 'In the stand mixer bowl, combine graham cracker, sugar and butter until well incorporated.', section: SECTIONS.CRUST, img: crustRaw },
-        { step: 'Press crust mixture into the pan\'s bottom and up the sides.', section: SECTIONS.CRUST, img: crust },
-        { step: 'Bake the crust for 12 minutes at 325ºF.', section: SECTIONS.CRUST, img: bakedCrust },
+        { step: 'In the stand mixer bowl, combine graham cracker, sugar and butter until well incorporated.', section: SECTIONS.CRUST, img: cheesecake2 },
+        { step: 'Press crust mixture into the pan\'s bottom and up the sides.', section: SECTIONS.CRUST, img: cheesecake3 },
+        { step: 'Bake the crust for 12 minutes at 325ºF.', section: SECTIONS.CRUST, img: cheesecake4 },
 
-        { step: 'In the stand mixer bowl, beat cream cheese and sugar at medium speed until smooth and fluffy (about 2 to 3 minutes).', section: SECTIONS.FILLING, img: beforeCreaming },
+        { step: 'In the stand mixer bowl, beat cream cheese and sugar at medium speed until smooth and fluffy (about 2 to 3 minutes).', section: SECTIONS.FILLING, img: cheesecake5 },
         { step: 'Add eggs one at a time and beat well.', section: SECTIONS.FILLING },
-        { step: 'Add vanilla, sour cream, flour, and salt and continue to beat until all is combined.', section: SECTIONS.FILLING, img: fillingCombined },
+        { step: 'Add vanilla, sour cream, flour, and salt and continue to beat until all is combined.', section: SECTIONS.FILLING, img: cheesecake6 },
         { step: 'Preheat oven to 325ºF.', section: SECTIONS.MAIN },
-        { step: 'Pour filling into the crust.', section: SECTIONS.MAIN, img: filling },
-        { step: 'Place the cake pan in the roasting pan and fill the roasting pan with water (about halfway up the cake pan).', section: SECTIONS.MAIN, img: roastingPan },
+        { step: 'Pour filling into the crust.', section: SECTIONS.MAIN, img: cheesecake7 },
+        { step: 'Place the cake pan in the roasting pan and fill the roasting pan with water (about halfway up the cake pan).', section: SECTIONS.MAIN, img: cheesecake8 },
         { step: 'Place the roasting pan carefully in the oven and bake until just slightly jiggly, or until the center registers 145ºF (about 1 hour 30 minutes)', section: SECTIONS.MAIN },
         // { step: 'Turn oven off, leave door open, and let cool for 1 hour.', section: SECTIONS.MAIN, img: bath },
-        { step: 'Remove from the oven, transfer to a cooling rack and carefully remove the tin foil.', section: SECTIONS.MAIN, img: coolingRack },
-        { step: 'Move cheesecake into the fridge and chill for about 5 hours to overnight.', section: SECTIONS.MAIN, img: baked },
+        { step: 'Remove from the oven, transfer to a cooling rack and carefully remove the tin foil.', section: SECTIONS.MAIN, img: cheesecake9 },
+        { step: 'Move cheesecake into the fridge and chill for about 5 hours to overnight.', section: SECTIONS.MAIN, img: cheesecake10 },
         { step: 'In a small bowl, whisk cornstarch and water until combined.', section: SECTIONS.TOPPINGS },
-        { step: 'In a saucepan, add strawberries, sugar, lemon juice, and cornstarch mixture.', section: SECTIONS.TOPPINGS, img: hulled },
-        { step: 'Bring mixture to a simmer over medium heat.', section: SECTIONS.TOPPINGS, img: strawberriesInPan },
-        { step: 'Cook until the sauce thickens to a syrupy texture and strawberries are coated.', section: SECTIONS.TOPPINGS, img: wholeGlazed },
-        { step: 'Transfer to bowl. Let cool and cover with plastic wrap.', section: SECTIONS.TOPPINGS, img: glaze },
-        { step: 'Place in fridge to cool until ready to serve.', section: SECTIONS.TOPPINGS, img: cakeHolder },
-        { step: 'Enjoy this decadent, rich "Cheesecake Factory" imitation by topping each slice with the glazed strawberries and whipped cream.', section: SECTIONS.SERVE, img: slice },
+        { step: 'In a saucepan, add strawberries, sugar, lemon juice, and cornstarch mixture.', section: SECTIONS.TOPPINGS, img: cheesecake11 },
+        { step: 'Bring mixture to a simmer over medium heat.', section: SECTIONS.TOPPINGS, img: cheesecake12 },
+        { step: 'Cook until the sauce thickens to a syrupy texture and strawberries are coated.', section: SECTIONS.TOPPINGS, img: cheesecake13 },
+        { step: 'Transfer to bowl. Let cool and cover with plastic wrap.', section: SECTIONS.TOPPINGS, img: cheesecake14 },
+        { step: 'Place in fridge to cool until ready to serve.', section: SECTIONS.TOPPINGS, img: cheesecake15 },
+        { step: 'Enjoy this decadent, rich "Cheesecake Factory" imitation by topping each slice with the glazed strawberries and whipped cream.', section: SECTIONS.SERVE, img: cheesecake16 },
     ],
     store: [
         {

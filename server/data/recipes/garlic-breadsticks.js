@@ -1,4 +1,4 @@
-const garlicBread = '../assets/Products/garlic-bread.jpeg';
+const breadsticks1 = '../assets/Products/garlic-breadsticks-1.jpeg';
 const pizza5 = '../assets/Products/pizza-5.jpeg';
 const pizza6 = '../assets/Products/pizza-6.jpeg';
 const pizza8 = '../assets/Products/pizza-8.MOV';
@@ -26,7 +26,7 @@ const {
 module.exports = {
     cardName: 'Garlic Breadsticks',
     name: 'Garlic Breadsticks',
-    img: garlicBread,
+    img: breadsticks1,
     recipeAuthors: [''],
     recipeFinder: 'Justin Ung',
     available: true,

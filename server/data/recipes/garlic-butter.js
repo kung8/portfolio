@@ -1,13 +1,11 @@
-const butter = '../assets/Products/garlic-butter.jpeg';
+const butter1 = '../assets/Products/garlic-butter-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CHIVE, GARLIC, LEMON_JUICE, PARSLEY, UNSALTED_BUTTER } = require('./ingredients');
-
-const MIX = 'Mix';
 
 module.exports = {
     cardName: 'Garlic Butter',
     name: 'Garlic Butter',
-    img: butter,
+    img: butter1,
     recipeAuthors: ['Holly Nilsson'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -37,7 +35,7 @@ module.exports = {
         { name: 'medium bowl' },
     ],
     directions: [
-        { step: 'In a medium bowl, combine all the ingredients.', section: MIX },
+        { step: 'In a medium bowl, combine all the ingredients.', section: SECTIONS.MIX },
         { step: 'Enjoy this with your favorite bread, pasta or vegetables.', section: SECTIONS.SERVE },
     ],
     store: [

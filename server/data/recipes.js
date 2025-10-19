@@ -761,8 +761,6 @@ module.exports = recipes;
 // and sautéed vegetables. (32)
 
 // TODO: update the images for the following recipes:
-// - cheesecake
-// - chicken-biryani
 // - chicken-cordon-bleu
 // - chicken-katsudon
 // - chicken-noodle-soup (add a number)
@@ -777,7 +775,6 @@ module.exports = recipes;
 // - crepes
 // - crescent-rolls
 // - fresh-spring-rolls
-// - garlic-butter (conform it to the other files)
 // - garlic-chicken-with-herbs
 // - gingerbread-men
 // - green-bean-almondine
