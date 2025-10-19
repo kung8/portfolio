@@ -1,10 +1,10 @@
-const bowl2 = '../assets/Products/broccoli-cheddar-soup-bread-bowl-2.jpeg';
-const broccoli = '../assets/Products/broccoli-cheddar-soup-broccoli.jpeg';
-const zoomed = '../assets/Products/broccoli-cheddar-soup-combined-zoomed.jpeg';
-const half = '../assets/Products/broccoli-cheddar-soup-half-and-half.jpeg';
-const sauteed = '../assets/Products/broccoli-cheddar-soup-sauteed-onion.jpeg';
-const simmering1 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-1.jpeg';
-const simmering2 = '../assets/Products/broccoli-cheddar-soup-simmering-zoomed-2.jpeg';
+const soup1 = '../assets/Products/broccoli-cheddar-soup-1.jpeg';
+const soup2 = '../assets/Products/broccoli-cheddar-soup-2.jpeg';
+const soup3 = '../assets/Products/broccoli-cheddar-soup-3.jpeg';
+const soup4 = '../assets/Products/broccoli-cheddar-soup-4.jpeg';
+const soup5 = '../assets/Products/broccoli-cheddar-soup-5.jpeg';
+const soup6 = '../assets/Products/broccoli-cheddar-soup-6.jpeg';
+const soup7 = '../assets/Products/broccoli-cheddar-soup-7.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -31,7 +31,7 @@ const {
 module.exports = {
     cardName: 'Broccoli Cheddar Soup',
     name: 'Broccoli Cheddar Soup',
-    img: simmering2,
+    img: soup6,
     recipeAuthors: ['Christy Denney'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -75,15 +75,15 @@ module.exports = {
     ],
     directions: [
         { step: 'Over medium heat, melt butter.', section: SECTIONS.SOUP },
-        { step: 'Sauté onions in butter until soft.', section: SECTIONS.SOUP, img: sauteed },
+        { step: 'Sauté onions in butter until soft.', section: SECTIONS.SOUP, img: soup1 },
         { step: 'Sprinkle flour over mixture.', section: SECTIONS.SOUP },
         { step: 'Stir for 1 to 2 minutes.', section: SECTIONS.SOUP },
-        { step: 'Stir in half and half and broth.', section: SECTIONS.SOUP, img: half },
+        { step: 'Stir in half and half and broth.', section: SECTIONS.SOUP, img: soup2 },
         { step: 'Bring to a boil and reduce to a low heat.', section: SECTIONS.SOUP },
-        { step: 'Add broccoli and carrots and cook for 20 to 25 minutes.', section: SECTIONS.SOUP, img: [broccoli, zoomed] },
+        { step: 'Add broccoli and carrots and cook for 20 to 25 minutes.', section: SECTIONS.SOUP, img: [soup3, soup4] },
         { step: 'Add salt, pepper, and nutmeg as desired.', section: SECTIONS.SOUP },
         { step: 'Optionally blend the soup if you would like a smoother texture.', section: SECTIONS.SOUP },
-        { step: 'Eat this in bread bowls or just serve with bread. Top with cheese and your favorite toppings.', section: SECTIONS.SERVE, img: [simmering1, bowl2] },
+        { step: 'Eat this in bread bowls or just serve with bread. Top with cheese and your favorite toppings.', section: SECTIONS.SERVE, img: [soup5, soup7] },
     ],
     store: [
         {
