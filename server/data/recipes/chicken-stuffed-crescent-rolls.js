@@ -1,11 +1,11 @@
-const spices = '../assets/Products/chicken-stuffed-crescent-rolls-baked-with-spices.jpeg';
-const baked = '../assets/Products/chicken-stuffed-crescent-rolls-baked.jpeg';
-const fill = '../assets/Products/chicken-stuffed-crescent-rolls-fill-on-wrap.jpeg';
-const filling = '../assets/Products/chicken-stuffed-crescent-rolls-filling.jpeg';
-const melted = '../assets/Products/chicken-stuffed-crescent-rolls-melted-butter.jpeg';
-const opened = '../assets/Products/chicken-stuffed-crescent-rolls-opened.jpeg';
-const wrap = '../assets/Products/chicken-stuffed-crescent-rolls-wrap.jpeg';
-const wrapped = '../assets/Products/chicken-stuffed-crescent-rolls-wrapped.jpeg';
+const rolls1 = '../assets/Products/chicken-stuffed-crescent-rolls-1.jpeg';
+const rolls2 = '../assets/Products/chicken-stuffed-crescent-rolls-2.jpeg';
+const rolls3 = '../assets/Products/chicken-stuffed-crescent-rolls-3.jpeg';
+const rolls4 = '../assets/Products/chicken-stuffed-crescent-rolls-4.jpeg';
+const rolls5 = '../assets/Products/chicken-stuffed-crescent-rolls-5.jpeg';
+const rolls6 = '../assets/Products/chicken-stuffed-crescent-rolls-6.jpeg';
+const rolls7 = '../assets/Products/chicken-stuffed-crescent-rolls-7.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_SHEET,
@@ -29,7 +29,7 @@ const {
 module.exports = {
     cardName: 'Chicken Crescent Rolls',
     name: 'Chicken Stuffed Crescent Rolls',
-    img: opened,
+    img: rolls7,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -66,13 +66,13 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat oven to 375ºF.', section: SECTIONS.MAIN },
-        { step: 'Combine shredded chicken, shredded cheese, cream cheese, bell peppers, onion, garlic powder, parsley, salt, pepper, and chili powder in a mixing bowl.', section: SECTIONS.MAIN, img: filling },
-        { step: 'Unroll the crescent roll triangles and lay on the baking sheet.', section: SECTIONS.MAIN, img: wrap },
-        { step: 'Place a ball of chicken filling on the wide end of the crescent roll.', section: SECTIONS.MAIN, img: fill },
-        { step: 'Roll the dough to enclose as much of the filling.', section: SECTIONS.MAIN, img: wrapped },
-        { step: 'Brush rolls with melted butter and optionally sprinkle with cheese.', section: SECTIONS.MAIN, img: melted },
-        { step: 'Bake in oven for 10 to 12 minutes, or until golden brown.', section: SECTIONS.MAIN, img: spices },
-        { step: 'Serve warm and enjoy this light appetizer.', section: SECTIONS.MAIN, img: baked },
+        { step: 'Combine shredded chicken, shredded cheese, cream cheese, bell peppers, onion, garlic powder, parsley, salt, pepper, and chili powder in a mixing bowl.', section: SECTIONS.MAIN, img: rolls1 },
+        { step: 'Unroll the crescent roll triangles and lay on the baking sheet.', section: SECTIONS.MAIN, img: rolls2 },
+        { step: 'Place a ball of chicken filling on the wide end of the crescent roll.', section: SECTIONS.MAIN, img: rolls3 },
+        { step: 'Roll the dough to enclose as much of the filling.', section: SECTIONS.MAIN },
+        { step: 'Brush rolls with melted butter and optionally sprinkle with cheese.', section: SECTIONS.MAIN, img: rolls4 },
+        { step: 'Bake in oven for 10 to 12 minutes, or until golden brown.', section: SECTIONS.MAIN, img: rolls5 },
+        { step: 'Serve warm and enjoy this light appetizer.', section: SECTIONS.MAIN, img: rolls6 },
     ],
     notes: [
         { note: 'Be sure to cook the dough completely.' }

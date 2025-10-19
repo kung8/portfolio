@@ -761,7 +761,6 @@ module.exports = recipes;
 // and sautéed vegetables. (32)
 
 // TODO: update the images for the following recipes:
-// - chicken-stuffed-crescent-rolls
 // - chicken-tikka-masala
 // - chili
 // - chocolate-chip-cookies
