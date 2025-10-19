@@ -1,14 +1,15 @@
-const eighty = '../assets/Products/cashew-chicken-80.jpeg';
-const oneHundred = '../assets/Products/cashew-chicken-100.jpeg';
-const raw = '../assets/Products/cashew-chicken-coated-raw-chicken.jpeg';
-const cooked = '../assets/Products/cashew-chicken-cooked.jpeg';
-const cooking = '../assets/Products/cashew-chicken-cooking-chicken.jpeg';
-const oils = '../assets/Products/cashew-chicken-oils.jpeg';
-const plated = '../assets/Products/cashew-chicken-plated.jpeg';
-const sauce = '../assets/Products/cashew-chicken-sauce.jpeg';
-const cashews = '../assets/Products/cashew-chicken-veggies-with-cashew.jpeg';
-const veggies = '../assets/Products/cashew-chicken-veggies.jpeg';
-const withSauce = '../assets/Products/cashew-chicken-with-sauce.jpeg';
+const chicken1 = '../assets/Products/cashew-chicken-1.jpeg';
+const chicken2 = '../assets/Products/cashew-chicken-2.jpeg';
+const chicken3 = '../assets/Products/cashew-chicken-3.jpeg';
+const chicken4 = '../assets/Products/cashew-chicken-4.jpeg';
+const chicken5 = '../assets/Products/cashew-chicken-5.jpeg';
+const chicken6 = '../assets/Products/cashew-chicken-6.jpeg';
+const chicken7 = '../assets/Products/cashew-chicken-7.jpeg';
+const chicken8 = '../assets/Products/cashew-chicken-8.jpeg';
+const chicken9 = '../assets/Products/cashew-chicken-9.jpeg';
+const chicken10 = '../assets/Products/cashew-chicken-10.jpeg';
+const chicken11 = '../assets/Products/cashew-chicken-11.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ASIAN_CHILI_GARLIC_SAUCE,
@@ -37,7 +38,7 @@ const {
 module.exports = {
     cardName: 'Cashew Chicken',
     name: 'Chinese Cashew Chicken',
-    img: plated,
+    img: chicken11,
     recipeAuthors: ['Averie Sunshine'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -84,16 +85,16 @@ module.exports = {
         { ...LARGE_BOWL, amount: 2 },
     ],
     directions: [
-        { step: 'In a medium bowl, combine the sauce ingredients. Mix well.', section: SECTIONS.SAUCE, img: sauce },
-        { step: 'In a large bowl, combine diced chicken, salt, pepper and cornstarch. Mix well until chicken is well coated.', section: SECTIONS.CHICKEN, img: raw },
-        { step: 'Over medium-high heat, add the combination of oils in a wok.', section: SECTIONS.CHICKEN, img: oils },
-        { step: 'Add the chicken and cook until the chicken is about 80% cooked through (about 3 to 4 minutes on each side).', section: SECTIONS.CHICKEN, img: cooking },
-        { step: 'Remove chicken from the wok and transfer to a clean large bowl.', section: SECTIONS.CHICKEN, img: eighty },
-        { step: 'Add the broccoli, bell peppers, frozen edamame, and garlic to the wok. Cook until the vegetables are tender (about 3 to 4 minutes).', section: SECTIONS.MAIN, img: veggies },
-        { step: 'Add the cashews. Stir until mixed.', section: SECTIONS.MAIN, img: cashews },
-        { step: 'Re-add the chicken. Stir until mixed and chicken is cooked through.', section: SECTIONS.MAIN, img: oneHundred },
-        { step: 'Add the sauce and mix until well coated. Cook for a minute or two.', section: SECTIONS.MAIN, img: withSauce },
-        { step: 'Turn off the stove and remove from heat.', section: SECTIONS.MAIN, img: cooked },
+        { step: 'In a medium bowl, combine the sauce ingredients. Mix well.', section: SECTIONS.SAUCE, img: chicken1 },
+        { step: 'In a large bowl, combine diced chicken, salt, pepper and cornstarch. Mix well until chicken is well coated.', section: SECTIONS.CHICKEN, img: chicken2 },
+        { step: 'Over medium-high heat, add the combination of oils in a wok.', section: SECTIONS.CHICKEN, img: chicken3 },
+        { step: 'Add the chicken and cook until the chicken is about 80% cooked through (about 3 to 4 minutes on each side).', section: SECTIONS.CHICKEN, img: chicken4 },
+        { step: 'Remove chicken from the wok and transfer to a clean large bowl.', section: SECTIONS.CHICKEN, img: chicken5 },
+        { step: 'Add the broccoli, bell peppers, frozen edamame, and garlic to the wok. Cook until the vegetables are tender (about 3 to 4 minutes).', section: SECTIONS.MAIN, img: chicken6 },
+        { step: 'Add the cashews. Stir until mixed.', section: SECTIONS.MAIN, img: chicken7 },
+        { step: 'Re-add the chicken. Stir until mixed and chicken is cooked through.', section: SECTIONS.MAIN, img: chicken8 },
+        { step: 'Add the sauce and mix until well coated. Cook for a minute or two.', section: SECTIONS.MAIN, img: chicken9 },
+        { step: 'Turn off the stove and remove from heat.', section: SECTIONS.MAIN, img: chicken10 },
         { step: 'Top this dish with green onions and sesame seeds and serve wth steamed rice.', section: SECTIONS.SERVE },
     ],
     store: [
