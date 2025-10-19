@@ -761,7 +761,6 @@ module.exports = recipes;
 // and sautéed vegetables. (32)
 
 // TODO: update the images for the following recipes:
-// - broccoli-beef
 // - broccoli-cheddar-soup
 // - brownies
 // - cafe-rio-bowl
@@ -811,6 +810,5 @@ module.exports = recipes;
 // - peanut-brittle
 // - pepper-steak-stir-fry
 // - peppermint-bark
-// - philly-cheeseteak-pizza
 // - pho
 // - potstickers

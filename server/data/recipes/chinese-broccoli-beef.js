@@ -1,13 +1,13 @@
-const eighty = '../assets/Products/broccoli-beef-80-percent.jpeg';
-const addedBeef = '../assets/Products/broccoli-beef-added-beef-and-broccoli.jpeg';
-const bath = '../assets/Products/broccoli-beef-broccoli-bath.jpeg';
-const blanching = '../assets/Products/broccoli-beef-blanching-broccoli.jpeg';
-const saucey = '../assets/Products/broccoli-beef-cooked-with-lots-of-sauce.jpeg';
-const cookedZoomed = '../assets/Products/broccoli-beef-cooked-zoomed.jpeg';
-const garlic = '../assets/Products/broccoli-beef-garlic-ginger.jpeg';
-const marinating = '../assets/Products/broccoli-beef-marinating-beef.jpeg';
-const thickened = '../assets/Products/broccoli-beef-sauce-thickened.jpeg';
-const sauce = '../assets/Products/broccoli-beef-sauce.jpeg';
+const broccoli1 = '../assets/Products/broccoli-beef-1.jpeg';
+const broccoli2 = '../assets/Products/broccoli-beef-2.jpeg';
+const broccoli3 = '../assets/Products/broccoli-beef-3.jpeg';
+const broccoli4 = '../assets/Products/broccoli-beef-4.jpeg';
+const broccoli5 = '../assets/Products/broccoli-beef-5.jpeg';
+const broccoli6 = '../assets/Products/broccoli-beef-6.jpeg';
+const broccoli7 = '../assets/Products/broccoli-beef-7.jpeg';
+const broccoli8 = '../assets/Products/broccoli-beef-8.jpeg';
+const broccoli9 = '../assets/Products/broccoli-beef-9.jpeg';
+const broccoli10 = '../assets/Products/broccoli-beef-10.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -37,7 +37,7 @@ const BROCCOLI_SECTION = 'Broccoli';
 module.exports = {
     cardName: 'Broccoli Beef',
     name: 'Chinese Broccoli Beef',
-    img: cookedZoomed,
+    img: broccoli10,
     recipeAuthors: ['Leahs Cohen'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -84,19 +84,19 @@ module.exports = {
         { ...LARGE_BOWL, amount: 2 },
     ],
     directions: [
-        { step: 'In a large bowl, combine the beef marinade ingredients. Let it marinate for 30 minutes.', section: BEEF_SECTION, img: marinating },
-        { step: 'In a medium bowl, combine the sauce ingredients and set aside.', section: SECTIONS.SAUCE, img: sauce },
+        { step: 'In a large bowl, combine the beef marinade ingredients. Let it marinate for 30 minutes.', section: BEEF_SECTION, img: broccoli1 },
+        { step: 'In a medium bowl, combine the sauce ingredients and set aside.', section: SECTIONS.SAUCE, img: broccoli2 },
         { step: 'In a large pot, boil water.', section: BROCCOLI_SECTION },
-        { step: 'Add broccoli to the boiling water.', section: BROCCOLI_SECTION, img: blanching },
-        { step: 'Transfer to ice bath after 3 or 4 minutes.', section: BROCCOLI_SECTION, img: bath },
+        { step: 'Add broccoli to the boiling water.', section: BROCCOLI_SECTION, img: broccoli3 },
+        { step: 'Transfer to ice bath after 3 or 4 minutes.', section: BROCCOLI_SECTION, img: broccoli4 },
         { step: 'Over medium-high heat, heat up a wok and add beef.', section: SECTIONS.MAIN },
         { step: 'Cook beef just until cooked about 80% of the way.', section: SECTIONS.MAIN },
-        { step: 'Remove beef from the wok.', section: SECTIONS.MAIN, img: eighty },
+        { step: 'Remove beef from the wok.', section: SECTIONS.MAIN, img: broccoli5 },
         { step: 'Add oil.', section: SECTIONS.MAIN },
-        { step: 'Add the garlic and ginger. Saute.', section: SECTIONS.MAIN, img: garlic },
-        { step: 'Add sauce. Cook until it thickens.', section: SECTIONS.MAIN, img: thickened },
-        { step: 'Add the beef and broccoli. Combine.', section: SECTIONS.MAIN, img: addedBeef },
-        { step: 'Cook until beef is cooked through.', section: SECTIONS.MAIN, img: saucey },
+        { step: 'Add the garlic and ginger. Saute.', section: SECTIONS.MAIN, img: broccoli6 },
+        { step: 'Add sauce. Cook until it thickens.', section: SECTIONS.MAIN, img: broccoli7 },
+        { step: 'Add the beef and broccoli. Combine.', section: SECTIONS.MAIN, img: broccoli8 },
+        { step: 'Cook until beef is cooked through.', section: SECTIONS.MAIN, img: broccoli9 },
         { step: 'Top with sesame seeds and serve with steamed rice.', section: SECTIONS.SERVE },
     ],
     store: [
