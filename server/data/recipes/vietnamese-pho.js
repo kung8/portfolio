@@ -1,17 +1,8 @@
-const beef = '../assets/Products/pho-beef.jpeg';
-const broth1 = '../assets/Products/pho-broth-1.jpeg';
-const broth2 = '../assets/Products/pho-broth-2.jpeg';
-const broth3 = '../assets/Products/pho-broth-3.jpeg';
-const cinnamon = '../assets/Products/pho-cinnamon.jpeg';
-const noodles = '../assets/Products/pho-noodles.jpeg';
-const plated1 = '../assets/Products/pho-plated-1.jpeg';
-const plated2 = '../assets/Products/pho-plated-2.jpeg';
-const plated4 = '../assets/Products/pho-plated-4.jpeg';
-const plated5 = '../assets/Products/pho-plated-5.jpeg';
-const plated6 = '../assets/Products/pho-plated-6.jpeg';
-const sauces = '../assets/Products/pho-sauces.jpeg';
-const toppings = '../assets/Products/pho-toppings.jpeg';
-const veggiesPot = '../assets/Products/pho-veggies-in-pot.jpeg';
+const pho1 = '../assets/Products/pho-1.jpeg';
+const pho2 = '../assets/Products/pho-2.jpeg';
+const pho3 = '../assets/Products/pho-3.jpeg';
+const pho4 = '../assets/Products/pho-4.jpeg';
+const pho5 = '../assets/Products/pho-5.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -41,7 +32,7 @@ const {
 module.exports = {
     cardName: 'Vietnamese Pho',
     name: 'Vietnamese Pho',
-    img: plated6,
+    img: pho5,
     recipeAuthors: ['Lauren Allen'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -93,15 +84,15 @@ module.exports = {
         { name: 'medium pot' },
     ],
     directions: [
-        { step: 'Over medium heat, add onion and ginger in a large pot.', section: SECTIONS.BROTH, img: veggiesPot },
+        { step: 'Over medium heat, add onion and ginger in a large pot.', section: SECTIONS.BROTH },
         { step: 'Cook and stir occasionally (about 4 minutes).', section: SECTIONS.BROTH },
-        { step: 'Add the rest of the broth ingredients. Bring to a slow boil.', section: SECTIONS.BROTH, img: [cinnamon, sauces, broth1] },
+        { step: 'Add the rest of the broth ingredients. Bring to a slow boil.', section: SECTIONS.BROTH, img: pho1 },
         { step: 'Reduce heat and simmer for 30 minutes.', section: SECTIONS.BROTH },
-        { step: 'Discard ginger, clove, cinnamon stick and onion.', section: SECTIONS.BROTH, img: broth2 },
-        { step: 'Add thin beef slices 5 or so minutes before the broth is finished. Cook until cooked to desired doneness.', section: SECTIONS.BROTH, img: [beef, broth3] },
-        { step: 'Prepare the noodles per package instructions.', section: SECTIONS.NOODLES, img: noodles },
-        { step: 'Divide the noodles into bowls and ladle soup over noodles.', section: SECTIONS.ASSEMBLE, img: [plated1, plated2] },
-        { step: 'Serve with any additional toppings and enjoy this simple delicious Vietnamese cuisine. Also this dish is pronounced \'fuh\'.', section: SECTIONS.SERVE, img: [toppings, plated4, plated5] },
+        { step: 'Discard ginger, clove, cinnamon stick and onion.', section: SECTIONS.BROTH, img: pho2 },
+        { step: 'Add thin beef slices 5 or so minutes before the broth is finished. Cook until cooked to desired doneness.', section: SECTIONS.BROTH, img: [pho3, pho4] },
+        { step: 'Prepare the noodles per package instructions.', section: SECTIONS.NOODLES },
+        { step: 'Divide the noodles into bowls and ladle soup over noodles.', section: SECTIONS.ASSEMBLE },
+        { step: 'Serve with any additional toppings and enjoy this simple delicious Vietnamese cuisine. Also this dish is pronounced \'fuh\'.', section: SECTIONS.SERVE },
     ],
     store: [
         {
