@@ -1,10 +1,8 @@
-const fullPlate = '../assets/Products/chicken-cordon-bleu-plated.jpeg';
-const almond = '../assets/Products/green-bean-almondine-almond-and-onion.jpeg';
-const boiled = '../assets/Products/green-bean-almondine-boiled.jpeg';
-const cooked = '../assets/Products/green-bean-almondine-cooked.jpeg';
-const bath = '../assets/Products/green-bean-almondine-ice-bath.jpeg';
-const ice = '../assets/Products/green-bean-almondine-ice-water.jpeg';
-const plate = '../assets/Products/green-bean-almondine-plate.jpeg';
+const bean1 = '../assets/Products/green-bean-almondine-1.jpeg';
+const bean2 = '../assets/Products/green-bean-almondine-2.jpeg';
+const bean3 = '../assets/Products/green-bean-almondine-3.jpeg';
+const bean4 = '../assets/Products/green-bean-almondine-4.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
@@ -24,7 +22,7 @@ const {
 module.exports = {
     cardName: 'Green Bean Almondine',
     name: 'Green Bean Almondine',
-    img: plate,
+    img: bean4,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -61,14 +59,14 @@ module.exports = {
     ],
     directions: [
         { step: 'Over medium-high heat, boil water and salt in a saucepan.', section: SECTIONS.MAIN },
-        { step: 'Add beans into pan and cook until they become bright green (3 to 4 minutes).', section: SECTIONS.MAIN, img: boiled },
-        { step: 'Fill a mixing bowl with ice and water.', section: SECTIONS.MAIN, img: ice },
-        { step: 'Transfer green beans into ice water and let chill for 3 to 4 minutes.', section: SECTIONS.MAIN, img: bath },
+        { step: 'Add beans into pan and cook until they become bright green (3 to 4 minutes).', section: SECTIONS.MAIN, img: bean1 },
+        { step: 'Fill a mixing bowl with ice and water.', section: SECTIONS.MAIN },
+        { step: 'Transfer green beans into ice water and let chill for 3 to 4 minutes.', section: SECTIONS.MAIN, img: bean2 },
         { step: 'Drain.', section: SECTIONS.MAIN },
         { step: 'Brown butter in pan.', section: SECTIONS.MAIN },
-        { step: 'Add almonds and shallots to pan and cook for 2 minutes.', section: SECTIONS.MAIN, img: almond },
-        { step: 'Add green beans back into the pan and cook for a few minutes.', section: SECTIONS.MAIN, img: cooked },
-        { step: 'Serve warm.', section: SECTIONS.MAIN, img: fullPlate },
+        { step: 'Add almonds and shallots to pan and cook for 2 minutes.', section: SECTIONS.MAIN },
+        { step: 'Add green beans back into the pan and cook for a few minutes.', section: SECTIONS.MAIN, img: bean3 },
+        { step: 'Serve warm.', section: SECTIONS.MAIN },
     ],
     store: [
         {
