@@ -1,12 +1,6 @@
-const cookedZoomed = '../assets/Products/oatmeal-raisin-cookies-zoomed.jpeg';
-const cooled = '../assets/Products/oatmeal-raisin-cookies-cooled.jpeg';
-const dry = '../assets/Products/oatmeal-raisin-cookies-dry-ingredients.jpeg';
-const liquid = '../assets/Products/oatmeal-raisin-cookies-liquid-added.jpeg';
-const oatmeal = '../assets/Products/oatmeal-raisin-cookies-oatmeal-added.jpeg';
-const plated = '../assets/Products/oatmeal-raisin-cookies-plated.jpeg';
-const raisin = '../assets/Products/oatmeal-raisin-cookies-raisins-added.jpeg';
-const raw = '../assets/Products/oatmeal-raisin-cookies-raw-pan.jpeg';
-const chocolate = '../assets/Products/oatmeal-raisin-cookies-with-chocolate-chip.jpeg';
+const raisin = '../assets/Products/oatmeal-raisin-cookies-1.jpeg';
+const raw = '../assets/Products/oatmeal-raisin-cookies-2.jpeg';
+const cooled = '../assets/Products/oatmeal-raisin-cookies-3.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -31,7 +25,7 @@ const {
 module.exports = {
     cardName: 'Oatmeal Raisin Cookies',
     name: 'Oatmeal Raisin Cookies',
-    img: cookedZoomed,
+    img: cooled,
     recipeAuthors: ['Bev I Am'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -73,15 +67,15 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },
-        { step: 'In a mixing bowl, add flour, baking soda, baking powder, salt, and sugars until well combined.', section: SECTIONS.MAIN, img: dry },
-        { step: 'Slowly add the softened butter, eggs, and vanilla. Mix as each component is added.', section: SECTIONS.MAIN, img: liquid },
-        { step: 'Mix as you slowly add the oats.', section: SECTIONS.MAIN, img: oatmeal },
+        { step: 'In a mixing bowl, add flour, baking soda, baking powder, salt, and sugars until well combined.', section: SECTIONS.MAIN },
+        { step: 'Slowly add the softened butter, eggs, and vanilla. Mix as each component is added.', section: SECTIONS.MAIN },
+        { step: 'Mix as you slowly add the oats.', section: SECTIONS.MAIN },
         { step: 'Mix as you slowly add the raisins.', section: SECTIONS.MAIN, img: raisin },
         { step: 'Optionally add chocolate chips.', section: SECTIONS.MAIN },
         { step: 'Shape the dough into 1 inch balls. Place them onto a baking sheet.', section: SECTIONS.MAIN, img: raw },
-        { step: 'Bake until the cookies are golden brown (about 12 to 13 minutes).', section: SECTIONS.MAIN, img: chocolate },
-        { step: 'Remove the cookies from the oven. Let the cookies sit on the baking sheet for at least 2 minutes before transferring to a cooling rack.', section: SECTIONS.MAIN, img: cooled },
-        { step: 'Enjoy these crispy treats.', section: SECTIONS.MAIN, img: plated },
+        { step: 'Bake until the cookies are golden brown (about 12 to 13 minutes).', section: SECTIONS.MAIN },
+        { step: 'Remove the cookies from the oven. Let the cookies sit on the baking sheet for at least 2 minutes before transferring to a cooling rack.', section: SECTIONS.MAIN },
+        { step: 'Enjoy these crispy treats.', section: SECTIONS.MAIN },
     ],
     store: [
         {
