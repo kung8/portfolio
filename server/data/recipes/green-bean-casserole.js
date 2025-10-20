@@ -1,11 +1,7 @@
 const casserole1 = '../assets/Products/green-bean-casserole-1.jpeg';
 const casserole2 = '../assets/Products/green-bean-casserole-2.jpeg';
 const casserole3 = '../assets/Products/green-bean-casserole-3.jpeg';
-const casserole4 = '../assets/Products/green-bean-casserole-4.jpeg';
-const mix1 = '../assets/Products/green-bean-casserole-mix-1.jpeg';
-const mix2 = '../assets/Products/green-bean-casserole-mix-2.jpeg';
-const mix3 = '../assets/Products/green-bean-casserole-mix-3.jpeg';
-const mix4 = '../assets/Products/green-bean-casserole-mix-4.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CANNED_GREEN_BEANS, CREAM_OF_MUSHROOM, CRISPY_FRIED_ONIONS, LIGHT_SOY_SAUCE, MILK, SALT } = require('./ingredients');
 
@@ -14,7 +10,7 @@ const CASSEROLE = 'Casserole';
 module.exports = {
     cardName: 'Green Bean Casserole',
     name: 'Green Bean Casserole',
-    img: casserole4,
+    img: casserole3,
     recipeAuthors: ['Holly Nilsson'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -49,10 +45,10 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: CASSEROLE },
-        { step: 'Combine all the "Casserole" ingredients in the baking dish.', section: CASSEROLE, img: [mix1, mix2, mix3] },
+        { step: `In a baking pan, combine all the "${CASSEROLE}" section ingredients.`, section: CASSEROLE, img: [casserole1, casserole2] },
         { step: 'Bake until bubbly (about 30 to 35 minutes).', section: CASSEROLE },
-        { step: 'Remove from the oven and mix.', section: CASSEROLE, img: mix4 },
-        { step: 'Top with the crispy fried onions.', section: SECTIONS.TOPPINGS, img: [casserole1, casserole2, casserole3] },
+        { step: 'Remove from the oven and mix.', section: CASSEROLE },
+        { step: 'Top with the crispy fried onions.', section: SECTIONS.TOPPINGS },
         { step: 'Bake until golden (about 10 minutes).', section: SECTIONS.TOPPINGS },
         { step: 'Serve this dish warm at your next holiday feast.', section: SECTIONS.SERVE },
     ],
