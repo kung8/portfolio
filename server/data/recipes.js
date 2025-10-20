@@ -764,7 +764,6 @@ module.exports = recipes;
 // - korean-fried-chicken
 // - lemon-chicken-ramen
 // - lo-mein
-// - mexican-cilantro-lime-chicken
 // - mochi (lower the number)
 // - no-bake-cookies
 // - oatmeal-raisin-cookies
