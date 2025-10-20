@@ -761,8 +761,6 @@ module.exports = recipes;
 // and sautéed vegetables. (32)
 
 // TODO: update the images for the following recipes:
-// - hospitality-chicken
-// - indian-butter-chicken
 // - khmer-red-curry
 // - korean-fried-chicken
 // - lemon-bars

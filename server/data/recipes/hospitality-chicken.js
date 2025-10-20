@@ -1,4 +1,5 @@
-const hospitalityChicken = '../assets/Products/hospitality-chicken.jpeg';
+const hospitality1 = '../assets/Products/hospitality-chicken-1.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     AIR_FRYER,
@@ -17,7 +18,7 @@ const {
 module.exports = {
     cardName: 'Hospitality Chicken',
     name: 'Hospitality Chicken',
-    img: hospitalityChicken,
+    img: hospitality1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: 'Kevin Ung',
     available: true,

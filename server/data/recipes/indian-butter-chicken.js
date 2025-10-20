@@ -1,16 +1,9 @@
-const browned = '../assets/Products/indian-butter-chicken-browned-onions.jpeg';
-const browning = '../assets/Products/indian-butter-chicken-browning-chicken.jpeg';
-const cooked3 = '../assets/Products/indian-butter-chicken-cooked-3.jpeg';
-const creamAdded = '../assets/Products/indian-butter-chicken-cream-added.jpeg';
-const cream = '../assets/Products/indian-butter-chicken-cream.jpeg';
-const fragrantAdded = '../assets/Products/indian-butter-chicken-fragrant-added.jpeg';
-const fragrant = '../assets/Products/indian-butter-chicken-fragrant.jpeg';
-const oils = '../assets/Products/indian-butter-chicken-oils.jpeg';
-const onion = '../assets/Products/indian-butter-chicken-onion.jpeg';
-const plated3 = '../assets/Products/indian-butter-chicken-plated-3.jpeg';
-const simmering = '../assets/Products/indian-butter-chicken-simmering.jpeg';
-const spices = '../assets/Products/indian-butter-chicken-spices.jpeg';
-const paste = '../assets/Products/indian-butter-chicken-tomato-paste.jpeg';
+const curry1 = '../assets/Products/indian-butter-chicken-1.jpeg';
+const curry2 = '../assets/Products/indian-butter-chicken-2.jpeg';
+const curry3 = '../assets/Products/indian-butter-chicken-3.jpeg';
+const curry4 = '../assets/Products/indian-butter-chicken-4.jpeg';
+const curry5 = '../assets/Products/indian-butter-chicken-5.jpeg';
+const curry6 = '../assets/Products/indian-butter-chicken-6.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -40,7 +33,7 @@ const {
 module.exports = {
     cardName: 'Indian Butter Chicken',
     name: 'Indian Butter Chicken',
-    img: cooked3,
+    img: curry5,
     recipeAuthors: ['Layla Atik'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -86,12 +79,12 @@ module.exports = {
         MEASURING_SPOONS,
     ],
     directions: [
-        { step: 'Add oil and butter to a large cooking pan on medium-high heat.', section: SECTIONS.MAIN, img: oils },
-        { step: 'Add the diced onion and cook until light brown.', section: SECTIONS.MAIN, img: [onion, browned] },
-        { step: 'Add the ginger and garlic to the pan and cook until aromatic (about 30 seconds).', img: [fragrant, fragrantAdded] },
-        { step: 'Add the chicken, spices, and tomato paste to the pan. Cook until the chicken is browned (about 5 to 6 minutes).', img: [spices, paste, browning] },
-        { step: 'Add the heavy cream and let simmer for 8 to 10 minutes.', section: SECTIONS.MAIN, img: [cream, creamAdded, simmering] },
-        { step: 'Serve with rice (and naan or roti is optional and delicious).', section: SECTIONS.MAIN, img: plated3 },
+        { step: 'Add oil and butter to a large cooking pan on medium-high heat.', section: SECTIONS.MAIN },
+        { step: 'Add the diced onion and cook until light brown.', section: SECTIONS.MAIN },
+        { step: 'Add the ginger and garlic to the pan and cook until aromatic (about 30 seconds).' },
+        { step: 'Add the chicken, spices, and tomato paste to the pan. Cook until the chicken is browned (about 5 to 6 minutes).', img: [curry1, curry2] },
+        { step: 'Add the heavy cream and let simmer for 8 to 10 minutes.', section: SECTIONS.MAIN, img: [curry3, curry4] },
+        { step: 'Serve with rice (and naan or roti is optional and delicious).', section: SECTIONS.MAIN, img: curry6 },
     ],
     store: [
         {
