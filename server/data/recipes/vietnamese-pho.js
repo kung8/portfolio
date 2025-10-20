@@ -12,6 +12,7 @@ const plated6 = '../assets/Products/pho-plated-6.jpeg';
 const sauces = '../assets/Products/pho-sauces.jpeg';
 const toppings = '../assets/Products/pho-toppings.jpeg';
 const veggiesPot = '../assets/Products/pho-veggies-in-pot.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BEAN_SPROUT,

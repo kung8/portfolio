@@ -1,8 +1,8 @@
-const butter = '../assets/Products/no-bake-cookie-butter.jpeg';
-const melted = '../assets/Products/no-bake-cookie-melted.jpeg';
-const oat = '../assets/Products/no-bake-cookie-oat.jpeg';
-const all = '../assets/Products/no-bake-cookie-all.jpeg';
-const finished = '../assets/Products/no-bake-cookie-finished.jpeg';
+const cookie1 = '../assets/Products/no-bake-cookie-1.jpeg';
+const cookie2 = '../assets/Products/no-bake-cookie-2.jpeg';
+const cookie3 = '../assets/Products/no-bake-cookie-3.jpeg';
+const cookie4 = '../assets/Products/no-bake-cookie-4.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     COCOA_POWDER,
@@ -20,7 +20,7 @@ const {
 module.exports = {
     cardName: 'No Bake Cookies',
     name: 'No Bake Cookies',
-    img: finished,
+    img: cookie4,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -52,12 +52,12 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: 'Add sugar, cocoa, butter and milk into a saucepan.', section: SECTIONS.MAIN, img: butter },
-        { step: 'Over medium heat, melt down and stir frequently until it boils.', section: SECTIONS.MAIN, img: melted },
+        { step: 'Add sugar, cocoa, butter and milk into a saucepan.', section: SECTIONS.MAIN, img: cookie1 },
+        { step: 'Over medium heat, melt down and stir frequently until it boils.', section: SECTIONS.MAIN, img: cookie2 },
         { step: 'Let it boils for about 60 seconds.', section: SECTIONS.MAIN },
-        { step: 'Remove from heat and add the vanilla, peanut butter and oats.', section: SECTIONS.MAIN, img: oat },
+        { step: 'Remove from heat and add the vanilla, peanut butter and oats.', section: SECTIONS.MAIN, img: cookie3 },
         { step: 'Mix well.', section: SECTIONS.MAIN },
-        { step: 'Spoon and shape dough balls onto plates.', section: SECTIONS.MAIN, img: all },
+        { step: 'Spoon and shape dough balls onto plates.', section: SECTIONS.MAIN },
         { step: 'Let it set for 20 to 30 minutes in the refrigerator.', section: SECTIONS.MAIN },
     ],
     store: [

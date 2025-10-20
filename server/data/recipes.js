@@ -762,7 +762,6 @@ module.exports = recipes;
 
 // TODO: update the images for the following recipes:
 // - lo-mein
-// - no-bake-cookies
 // - pad-see-ew
 // - pad-thai
 // - peach-cobbler
