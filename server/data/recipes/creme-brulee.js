@@ -1,20 +1,11 @@
-const boiling = '../assets/Products/creme-brulee-boiling-cream.jpeg';
-const broiled = '../assets/Products/creme-brulee-broiled.jpeg';
-const covered = '../assets/Products/creme-brulee-covered.jpeg';
-const cream = '../assets/Products/creme-brulee-cream.jpeg';
-const yolksMixed = '../assets/Products/creme-brulee-egg-yolks-mixed.jpeg';
-const yolksUnmixed = '../assets/Products/creme-brulee-egg-yolks-unmixed.jpeg';
-const inRamekins = '../assets/Products/creme-brulee-in-ramekins.jpeg';
-const ramekins = '../assets/Products/creme-brulee-ramekins.jpeg';
-const setZoomed = '../assets/Products/creme-brulee-set-zoomed.jpeg';
-const set = '../assets/Products/creme-brulee-set.jpeg';
-const sugar = '../assets/Products/creme-brulee-sugar.jpeg';
-const beanSaucepan = '../assets/Products/creme-brulee-vanilla-bean-in-saucepan.jpeg';
-const bean = '../assets/Products/creme-brulee-vanilla-bean.jpeg';
-const vanillaMixed = '../assets/Products/creme-brulee-vanilla-sugar-mixed.jpeg';
-const vanillaUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-unmixed.jpeg';
-const sugarYolksMixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-mixed.jpeg';
-const sugarYolksUnmixed = '../assets/Products/creme-brulee-vanilla-sugar-with-yolks-unmixed.jpeg';
+const brulee1 = '../assets/Products/creme-brulee-1.jpeg';
+const brulee2 = '../assets/Products/creme-brulee-2.jpeg';
+const brulee3 = '../assets/Products/creme-brulee-3.jpeg';
+const brulee4 = '../assets/Products/creme-brulee-4.jpeg';
+const brulee5 = '../assets/Products/creme-brulee-5.jpeg';
+const brulee6 = '../assets/Products/creme-brulee-6.jpeg';
+const brulee7 = '../assets/Products/creme-brulee-7.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, EGG_YOLK, HEAVY_CREAM, HOT_WATER, MEDIUM_BOWL, OVEN, RAMEKIN, SAUCEPAN, STOVE, VANILLA_BEAN, WHITE_SUGAR } = require('./ingredients');
 
@@ -25,7 +16,7 @@ const BURNING_SUGAR = 'Burning Sugar';
 module.exports = {
     cardName: 'Crème Brûlée',
     name: 'Crème Brûlée',
-    img: broiled,
+    img: brulee7,
     recipeAuthors: ['Alton Brown', 'Sally McKenney'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -65,24 +56,24 @@ module.exports = {
         BAKING_PAN,
     ],
     directions: [
-        { step: 'Place sugar in a medium bowl.', section: VANILLA_SUGAR, img: sugar },
-        { step: 'Carefully slice the vanilla bean in half lengthwise.', section: VANILLA_SUGAR, img: bean },
-        { step: 'Scrape the seeds with a knife and place on top of the sugar.', section: VANILLA_SUGAR, img: vanillaUnmixed },
+        { step: 'Place sugar in a medium bowl.', section: VANILLA_SUGAR },
+        { step: 'Carefully slice the vanilla bean in half lengthwise.', section: VANILLA_SUGAR },
+        { step: 'Scrape the seeds with a knife and place on top of the sugar.', section: VANILLA_SUGAR },
         { step: 'Use another spoon or knife to scrape off the residual seeds from the knife. Repeat as needed.', section: VANILLA_SUGAR },
-        { step: 'Mix and submerge the empty pods in the sugar.', section: VANILLA_SUGAR, img: vanillaMixed },
+        { step: 'Mix and submerge the empty pods in the sugar.', section: VANILLA_SUGAR, img: brulee1 },
 
         { step: 'Preheat the oven to 325ºF.', section: SECTIONS.MAIN },
-        { step: 'Over medium-high heat, add heavy cream and scraped vanilla beans to a saucepan.', section: SECTIONS.MAIN, img: [beanSaucepan, cream] },
-        { step: 'Bring to a boil.', section: SECTIONS.MAIN, img: boiling },
+        { step: 'Over medium-high heat, add heavy cream and scraped vanilla beans to a saucepan.', section: SECTIONS.MAIN, img: [brulee2, brulee3] },
+        { step: 'Bring to a boil.', section: SECTIONS.MAIN },
         { step: 'Remove from heat.', section: SECTIONS.MAIN },
-        { step: 'Cover and let it set for 15 minutes.', section: SECTIONS.MAIN, img: covered },
+        { step: 'Cover and let it set for 15 minutes.', section: SECTIONS.MAIN },
         { step: 'Remove the vanilla bean and save to use later.', section: SECTIONS.MAIN },
-        { step: 'In a medium bowl, combine the 1/2 cup vanilla sugar and egg yolks. It should be a lighter color.', section: SECTIONS.MAIN, img: [yolksUnmixed, yolksMixed, sugarYolksUnmixed, sugarYolksMixed] },
+        { step: 'In a medium bowl, combine the 1/2 cup vanilla sugar and egg yolks. It should be a lighter color.', section: SECTIONS.MAIN, img: brulee4 },
         { step: 'Slowly add in the cream while stirring.', section: SECTIONS.MAIN },
-        { step: 'Pour the batter into the ramekins.', section: SECTIONS.MAIN, img: [ramekins, inRamekins] },
+        { step: 'Pour the batter into the ramekins.', section: SECTIONS.MAIN, img: brulee5 },
         { step: 'Place the ramekins inside a tall enough baking pan (or a roasting pan).', section: SECTIONS.MAIN },
         { step: 'Fill the pan with hot water until the water comes to halfway up the sides of the ramekins.', section: SECTIONS.MAIN },
-        { step: 'Bake until the crème brûlée are set--center will be jiggly (about 60 minutes). I added an additional 15 to 30 minutes on 300ºF.', section: SECTIONS.MAIN, img: [set, setZoomed] },
+        { step: 'Bake until the crème brûlée are set--center will be jiggly (about 60 minutes). I added an additional 15 to 30 minutes on 300ºF.', section: SECTIONS.MAIN, img: brulee6 },
         { step: 'Remove the ramekins from the pan and chill for at least 2 hours (and up to 3 days).', section: SECTIONS.MAIN },
 
         { step: 'Let the crème brûlée sit outside of the fridge for at least 30 minutes prior to browning the sugar on top.', section: BURNING_SUGAR },
