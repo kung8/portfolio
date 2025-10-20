@@ -761,8 +761,6 @@ module.exports = recipes;
 // and sautéed vegetables. (32)
 
 // TODO: update the images for the following recipes:
-// - garlic-chicken-with-herbs
-// - gingerbread-men
 // - green-bean-almondine
 // - green-bean-casserole
 // - hawaiian-haystacks

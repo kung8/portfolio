@@ -1,28 +1,13 @@
-const dough1 = '../assets/Products/gingerbread-men-cookies-dough-1.jpeg';
-const dough2 = '../assets/Products/gingerbread-men-cookies-dough-2.jpeg';
-const dough3 = '../assets/Products/gingerbread-men-cookies-dough-3.jpeg';
-const dough4 = '../assets/Products/gingerbread-men-cookies-dough-4.jpeg';
-const dough5 = '../assets/Products/gingerbread-men-cookies-dough-5.jpeg';
-const dough6 = '../assets/Products/gingerbread-men-cookies-dough-6.jpeg';
-const dough7 = '../assets/Products/gingerbread-men-cookies-dough-7.jpeg';
-const dough8 = '../assets/Products/gingerbread-men-cookies-dough-8.jpeg';
-const dough9 = '../assets/Products/gingerbread-men-cookies-dough-9.jpeg';
-const dough11 = '../assets/Products/gingerbread-men-cookies-dough-11.jpeg';
-
-const cookies1 = '../assets/Products/gingerbread-men-cookies-1.jpeg';
-const cookies2 = '../assets/Products/gingerbread-men-cookies-2.jpeg';
-const cookies3 = '../assets/Products/gingerbread-men-cookies-3.jpeg';
-const cookies4 = '../assets/Products/gingerbread-men-cookies-4.jpeg';
-const cookies5 = '../assets/Products/gingerbread-men-cookies-5.jpeg';
-const cookies7 = '../assets/Products/gingerbread-men-cookies-7.jpeg';
-const cookies8 = '../assets/Products/gingerbread-men-cookies-8.jpeg';
-const cookies11 = '../assets/Products/gingerbread-men-cookies-11.jpeg';
-const cookies13 = '../assets/Products/gingerbread-men-cookies-13.jpeg';
-
-const frosting1 = '../assets/Products/gingerbread-men-cookies-frosting-1.jpeg';
-const frosting2 = '../assets/Products/gingerbread-men-cookies-frosting-2.jpeg';
-const frosting3 = '../assets/Products/gingerbread-men-cookies-frosting-3.jpeg';
-const frosting4 = '../assets/Products/gingerbread-men-cookies-frosting-4.jpeg';
+const cookies1 = '../assets/Products/gingerbread-cookies-1.jpeg';
+const cookies2 = '../assets/Products/gingerbread-cookies-2.jpeg';
+const cookies3 = '../assets/Products/gingerbread-cookies-3.jpeg';
+const cookies4 = '../assets/Products/gingerbread-cookies-4.jpeg';
+const cookies5 = '../assets/Products/gingerbread-cookies-5.jpeg';
+const cookies6 = '../assets/Products/gingerbread-cookies-6.jpeg';
+const cookies7 = '../assets/Products/gingerbread-cookies-7.jpeg';
+const cookies8 = '../assets/Products/gingerbread-cookies-8.jpeg';
+const cookies9 = '../assets/Products/gingerbread-cookies-9.jpeg';
+const cookies10 = '../assets/Products/gingerbread-cookies-10.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BAKING_SODA, BROWN_SUGAR, CINNAMON, COOLING_RACK, GROUND_CLOVES, GROUND_GINGER, MILK, MIXING_BOWL, MOLASSES, OVEN, PASTRY_BLENDER_ATTACHMENT, POWDERED_SUGAR, ROLLING_PIN, SALT, SILICON_BAKING_MAT, STAND_MIXER, UNSALTED_BUTTER } = require('./ingredients');
@@ -35,7 +20,7 @@ const FROSTING = 'Frosting';
 module.exports = {
     cardName: 'Gingerbread Cookies',
     name: 'Gingerbread Cookies',
-    img: cookies13,
+    img: cookies8,
     recipeAuthors: ['Lauren Allen'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -84,27 +69,27 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'In a stand mixer, combine all the the "Gingerbread Dry Ingredients".', section: GINGERBREAD_DRY_INGREDIENTS, img: [dough1, dough2] },
-        { step: 'Add the divided butter to the dry ingredients.', section: GINGERBREAD_BATTER, img: [dough3, dough4] },
-        { step: 'Cut the butter using a pastry blender until it becomes very fine.', section: GINGERBREAD_BATTER, img: dough5 },
-        { step: 'Add the molasses and milk to the bowl. Mix on low for about 30 seconds.', section: GINGERBREAD_BATTER, img: [dough6, dough7, dough8] },
-        { step: 'Divide the dough into two. Form them into balls.', section: GINGERBREAD_BATTER, img: dough9 },
-        { step: 'Wrap the balls with plastic wrap and refrigerate for 2 hours or overnight. This is to help the dough be less sticky.', section: GINGERBREAD_BATTER, img: dough11 },
+        { step: 'In a stand mixer, combine all the the "Gingerbread Dry Ingredients".', section: GINGERBREAD_DRY_INGREDIENTS },
+        { step: 'Add the divided butter to the dry ingredients.', section: GINGERBREAD_BATTER, img: cookies1 },
+        { step: 'Cut the butter using a pastry blender until it becomes very fine.', section: GINGERBREAD_BATTER, img: cookies2 },
+        { step: 'Add the molasses and milk to the bowl. Mix on low for about 30 seconds.', section: GINGERBREAD_BATTER, img: cookies3 },
+        { step: 'Divide the dough into two. Form them into balls.', section: GINGERBREAD_BATTER, img: cookies4 },
+        { step: 'Wrap the balls with plastic wrap and refrigerate for 2 hours or overnight. This is to help the dough be less sticky.', section: GINGERBREAD_BATTER, img: cookies5 },
 
         { step: 'Preheat the oven to 350ºF.', section: BAKING },
-        { step: 'Place silicon baking mats on baking sheets.', section: BAKING, img: cookies2 },
-        { step: 'Flour a clean surface and place one ball of dough on top.', section: BAKING, img: cookies1 },
-        { step: 'Lightly flatten the dough so there is more surface area for the flour. Lightly top the dough and rolling pin with flour.', section: BAKING, img: cookies3 },
-        { step: 'Roll out the dough to about 1/4 inch thick.', section: BAKING, img: cookies4 },
+        { step: 'Place silicon baking mats on baking sheets.', section: BAKING },
+        { step: 'Flour a clean surface and place one ball of dough on top.', section: BAKING },
+        { step: 'Lightly flatten the dough so there is more surface area for the flour. Lightly top the dough and rolling pin with flour.', section: BAKING },
+        { step: 'Roll out the dough to about 1/4 inch thick.', section: BAKING, img: cookies6 },
         { step: 'Use a cookie cutter to cut out gingerbread men or whatever design you want.', section: BAKING },
-        { step: 'Place these cookies on a baking sheet and refrigerate while you prepare the second dough ball.', section: BAKING, img: [cookies5] },
-        { step: 'Bake until the center is set and does not give much when lightly pressed (about 8 to 11 minutes). Avoid overbaking.', section: BAKING, img: cookies8 },
-        { step: 'Transfer to a cooling rack and let cool completely before frosting.', section: BAKING, img: cookies7 },
+        { step: 'Place these cookies on a baking sheet and refrigerate while you prepare the second dough ball.', section: BAKING },
+        { step: 'Bake until the center is set and does not give much when lightly pressed (about 8 to 11 minutes). Avoid overbaking.', section: BAKING },
+        { step: 'Transfer to a cooling rack and let cool completely before frosting.', section: BAKING },
 
-        { step: 'In a mixing bowl, combine butter, milk and half of the powdered sugar. Mix until uniform.', section: FROSTING, img: [frosting1, frosting2] },
-        { step: 'Add remaining powdered sugar. Mix until uniform.', section: FROSTING, img: [frosting3, frosting4] },
+        { step: 'In a mixing bowl, combine butter, milk and half of the powdered sugar. Mix until uniform.', section: FROSTING, img: cookies9 },
+        { step: 'Add remaining powdered sugar. Mix until uniform.', section: FROSTING, img: cookies10 },
 
-        { step: 'Optionally frost the gingerbread men and enjoy these simple childhood treats.', section: SECTIONS.SERVE, img: cookies11 },
+        { step: 'Optionally frost the gingerbread men and enjoy these simple childhood treats.', section: SECTIONS.SERVE, img: cookies7 },
     ],
     notes: [
         { note: 'I personally prefer this without the frosting.' }
