@@ -1,4 +1,5 @@
-const hawaiian = '../assets/Products/hawaiian-haystacks-aerial.jpeg';
+const hawaiian1 = '../assets/Products/hawaiian-haystacks-1.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BASIL,
@@ -24,7 +25,7 @@ const {
 module.exports = {
     cardName: 'Hawaiian Haystacks',
     name: 'Slow-Cooked Hawaiian Haystacks',
-    img: hawaiian,
+    img: hawaiian1,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
