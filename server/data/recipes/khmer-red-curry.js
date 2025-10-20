@@ -1,15 +1,8 @@
-const cooked2 = '../assets/Products/khmer-red-curry-cooked-2.jpeg';
-const bagged = '../assets/Products/khmer-red-curry-bagged.jpeg';
-const chicken = '../assets/Products/khmer-red-curry-chicken.jpeg';
-const mixed1 = '../assets/Products/khmer-red-curry-coconut-milk-mixed-1.jpeg';
-const mixed2 = '../assets/Products/khmer-red-curry-coconut-milk-mixed-2.jpeg';
-const milk = '../assets/Products/khmer-red-curry-coconut-milk.jpeg';
-const beans2 = '../assets/Products/khmer-red-curry-green-beans-2.jpeg';
-const kaffir = '../assets/Products/khmer-red-curry-kaffir-leaves.jpeg';
-const lemongrass = '../assets/Products/khmer-red-curry-lemongrass.jpeg';
-const nonBeans3 = '../assets/Products/khmer-red-curry-non-green-beans-3.jpeg';
-const plated1 = '../assets/Products/khmer-red-curry-plated-1.jpeg';
-const veggies = '../assets/Products/khmer-red-curry-veggies.jpeg';
+const curry1 = '../assets/Products/khmer-red-curry-1.jpeg';
+const curry2 = '../assets/Products/khmer-red-curry-2.jpeg';
+const curry3 = '../assets/Products/khmer-red-curry-3.jpeg';
+const curry4 = '../assets/Products/khmer-red-curry-4.jpeg';
+const curry5 = '../assets/Products/khmer-red-curry-5.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -30,7 +23,7 @@ const {
 module.exports = {
     cardName: 'Khmer Red Curry',
     name: 'Khmer Red Curry',
-    img: cooked2,
+    img: curry4,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -67,14 +60,14 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Over medium-high heat, add red curry paste and coconut milk in a pan.', section: SECTIONS.MAIN, img: milk },
-        { step: 'Cook and stir until it is well combined.', section: SECTIONS.MAIN, img: [mixed1, mixed2] },
-        { step: 'Place the lemongrass and kaffir lime leaves in a spice bag.', section: SECTIONS.MAIN, img: [lemongrass, kaffir, bagged] },
-        { step: 'Add the chicken, potatoes, and spice bag.', section: SECTIONS.MAIN, img: [chicken, veggies, nonBeans3] },
+        { step: 'Over medium-high heat, add red curry paste and coconut milk in a pan.', section: SECTIONS.MAIN, img: curry1 },
+        { step: 'Cook and stir until it is well combined.', section: SECTIONS.MAIN, img: curry2 },
+        { step: 'Place the lemongrass and kaffir lime leaves in a spice bag.', section: SECTIONS.MAIN, img: curry3 },
+        { step: 'Add the chicken, potatoes, and spice bag.', section: SECTIONS.MAIN },
         { step: 'Cook for about 10.', section: SECTIONS.MAIN },
-        { step: 'Turn down the heat and let it simmer for 10 to 15 minutes. Cook until the chicken is completely cooked through and the potatoes are softened but not mushy.', section: SECTIONS.MAIN, img: beans2 },
+        { step: 'Turn down the heat and let it simmer for 10 to 15 minutes. Cook until the chicken is completely cooked through and the potatoes are softened but not mushy.', section: SECTIONS.MAIN },
         { step: 'Add water or more coconut milk to help thin the curry as desired and cut the spice level.', section: SECTIONS.MAIN },
-        { step: 'Serve this delicious Cambodian spicy curry with vermicelli noodles or baked bread.', section: SECTIONS.MAIN, img: plated1 },
+        { step: 'Serve this delicious Cambodian spicy curry with vermicelli noodles or baked bread.', section: SECTIONS.MAIN, img: curry5 },
     ],
     notes: [
         { note: 'You can really add any structural veggies. I did not like some of the textures of the eggplant when reheated.' },

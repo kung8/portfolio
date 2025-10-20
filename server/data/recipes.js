@@ -761,9 +761,7 @@ module.exports = recipes;
 // and sautéed vegetables. (32)
 
 // TODO: update the images for the following recipes:
-// - khmer-red-curry
 // - korean-fried-chicken
-// - lemon-bars
 // - lemon-chicken-ramen
 // - lo-mein
 // - mexican-cilantro-lime-chicken
