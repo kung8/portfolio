@@ -761,7 +761,6 @@ module.exports = recipes;
 // and sautéed vegetables. (32)
 
 // TODO: update the images for the following recipes:
-// - lemon-chicken-ramen
 // - lo-mein
 // - mochi (lower the number)
 // - no-bake-cookies

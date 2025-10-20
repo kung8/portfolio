@@ -1,21 +1,18 @@
-const bowled = '../assets/Products/lemon-chicken-ramen-bowled.jpeg';
-const zoomed = '../assets/Products/lemon-chicken-ramen-bowled-zoomed.jpeg';
-const flour = '../assets/Products/lemon-chicken-ramen-flour.jpeg';
-const floured = '../assets/Products/lemon-chicken-ramen-floured-chicken.jpeg';
-const fryingChicken = '../assets/Products/lemon-chicken-ramen-frying-chicken.jpeg';
-const garlic = '../assets/Products/lemon-chicken-ramen-garlic.jpeg';
-const spices = '../assets/Products/lemon-chicken-ramen-spices.jpeg';
-const fryingSpices = '../assets/Products/lemon-chicken-ramen-frying-spices.jpeg';
-const noodles = '../assets/Products/lemon-chicken-ramen-with-noodles.jpeg';
-const broth = '../assets/Products/lemon-chicken-ramen-broth.jpeg';
-const brothChicken = '../assets/Products/lemon-chicken-ramen-broth-with-chicken.jpeg';
+const ramen1 = '../assets/Products/lemon-chicken-ramen-1.jpeg';
+const ramen2 = '../assets/Products/lemon-chicken-ramen-2.jpeg';
+const ramen3 = '../assets/Products/lemon-chicken-ramen-3.jpeg';
+const ramen4 = '../assets/Products/lemon-chicken-ramen-4.jpeg';
+const ramen5 = '../assets/Products/lemon-chicken-ramen-5.jpeg';
+const ramen6 = '../assets/Products/lemon-chicken-ramen-6.jpeg';
+const ramen7 = '../assets/Products/lemon-chicken-ramen-7.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BLACK_PEPPER, CHICKEN_BREAST, CHICKEN_BROTH, CILANTRO, CUTTING_BOARD, FRESH_RAMEN_NOODLES, GARLIC, GREEN_ONION, KNIFE, LARGE_POT, LEMON, LIGHT_CREAM, OLIVE_OIL, OREGANO, PAPRIKA, RED_PEPPER_FLAKES, SALT, SESAME_SEEDS, SNOW_PEA, STOVE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Lemon Chicken Ramen',
     name: 'Lemon Chicken Ramen',
-    img: zoomed,
+    img: ramen7,
     recipeAuthors: ['Emily Roz'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -63,19 +60,19 @@ module.exports = {
         KNIFE,
     ],
     directions: [
-        { step: 'Mix together flour, salt and black pepper.', section: SECTIONS.CHICKEN, img: flour },
-        { step: 'Coat the chicken in the flour mixture.', section: SECTIONS.CHICKEN, img: floured },
+        { step: 'Mix together flour, salt and black pepper.', section: SECTIONS.CHICKEN },
+        { step: 'Coat the chicken in the flour mixture.', section: SECTIONS.CHICKEN, img: ramen1 },
         { step: 'Over medium heat, heat up olive oil in a large pot.', section: SECTIONS.CHICKEN },
-        { step: 'Add chicken breast to pot and cook until each side is golden brown (about 3 minutes each side).', section: SECTIONS.CHICKEN, img: fryingChicken },
+        { step: 'Add chicken breast to pot and cook until each side is golden brown (about 3 minutes each side).', section: SECTIONS.CHICKEN, img: ramen2 },
         { step: 'Transfer chicken to a cutting board and set aside. It will be cut later.', section: SECTIONS.CHICKEN },
-        { step: 'Over medium heat, add garlic, paprika, oregano, and red pepper flakes to the large pot (could be the one that was used for the chicken).', section: SECTIONS.BROTH, img: [garlic, spices] },
-        { step: 'Stir and cook until fragrant (about 1 minute).', section: SECTIONS.BROTH, img: fryingSpices },
-        { step: 'Stir in chicken broth, lemon juice and light cream.', section: SECTIONS.BROTH, img: broth },
-        { step: 'Place the chicken in the broth and cover the pot. Cook for 5 to 10 minutes.', section: SECTIONS.MAIN, img: brothChicken },
+        { step: 'Over medium heat, add garlic, paprika, oregano, and red pepper flakes to the large pot (could be the one that was used for the chicken).', section: SECTIONS.BROTH },
+        { step: 'Stir and cook until fragrant (about 1 minute).', section: SECTIONS.BROTH, img: ramen3 },
+        { step: 'Stir in chicken broth, lemon juice and light cream.', section: SECTIONS.BROTH, img: ramen4 },
+        { step: 'Place the chicken in the broth and cover the pot. Cook for 5 to 10 minutes.', section: SECTIONS.MAIN, img: ramen5 },
         { step: 'Transfer the chicken back to the cutting board.', section: SECTIONS.MAIN },
-        { step: 'Add the noodles into the broth and cook for 2 to 3 minutes.', section: SECTIONS.MAIN, img: noodles },
+        { step: 'Add the noodles into the broth and cook for 2 to 3 minutes.', section: SECTIONS.MAIN, img: ramen6 },
         { step: 'Slice up the chicken to be topped on the ramen.', section: SECTIONS.MAIN },
-        { step: 'Divide the noodles into two bowls, pour over broth and top the bowls with the chicken, lemon slice, vegetables and sesame seeds.', section: SECTIONS.SERVE, img: bowled },
+        { step: 'Divide the noodles into two bowls, pour over broth and top the bowls with the chicken, lemon slice, vegetables and sesame seeds.', section: SECTIONS.SERVE },
     ],
     store: [
         {
