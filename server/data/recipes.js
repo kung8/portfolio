@@ -762,7 +762,6 @@ module.exports = recipes;
 
 // TODO: update the images for the following recipes:
 // - lo-mein
-// - mochi (lower the number)
 // - no-bake-cookies
 // - oatmeal-raisin-cookies
 // - pad-see-ew

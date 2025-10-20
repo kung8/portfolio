@@ -1,10 +1,9 @@
+const mochi1 = '../assets/Products/mochi-1.jpeg';
 const mochi2 = '../assets/Products/mochi-2.jpeg';
 const mochi3 = '../assets/Products/mochi-3.jpeg';
 const mochi4 = '../assets/Products/mochi-4.jpeg';
 const mochi5 = '../assets/Products/mochi-5.jpeg';
 const mochi6 = '../assets/Products/mochi-6.jpeg';
-const mochi8 = '../assets/Products/mochi-8.jpeg';
-const mochi9 = '../assets/Products/mochi-9.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, BAKING_PAN, COCONUT_MILK, FOOD_COLORING, KNIFE, MIXING_BOWL, MOCHIKO, OVEN, POTATO_STARCH, WATER, WHITE_SUGAR } = require('./ingredients');
@@ -15,7 +14,7 @@ const DUSTING = 'Dusting';
 module.exports = {
     cardName: 'Mochi',
     name: 'Japanese Mochi',
-    img: mochi8,
+    img: mochi6,
     recipeAuthors: ['Mochi Mommy'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -53,14 +52,14 @@ module.exports = {
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: MOCHI },
         { step: 'Grease the baking pan.', section: MOCHI },
-        { step: 'In a mixing bowl, combine the "Mochi" ingredients.', section: MOCHI, img: [mochi2, mochi3] },
-        { step: 'Pour mochi batter into the baking pan.', section: MOCHI, img: mochi4 },
-        { step: 'Tightly cover the pan with aluminum foil.', section: MOCHI, img: mochi5 },
-        { step: 'Bake until the mochi is cooked through (about 45 to 55 minutes).', section: MOCHI, img: mochi6 },
+        { step: 'In a mixing bowl, combine the "Mochi" ingredients.', section: MOCHI, img: [mochi1, mochi2] },
+        { step: 'Pour mochi batter into the baking pan.', section: MOCHI, img: mochi3 },
+        { step: 'Tightly cover the pan with aluminum foil.', section: MOCHI, img: mochi4 },
+        { step: 'Bake until the mochi is cooked through (about 45 to 55 minutes).', section: MOCHI, img: mochi5 },
         { step: 'Let mochi completely cool before dusting.', section: MOCHI },
         { step: 'Dust the mochi with potato starch to prevent sticking.', section: DUSTING },
         { step: 'Cut the mochi into rectangles. Add more starch if needed.', section: DUSTING },
-        { step: 'Enjoy these light delicious treats.', section: SECTIONS.SERVE, img: mochi9 },
+        { step: 'Enjoy these light delicious treats.', section: SECTIONS.SERVE },
     ],
     store: [
         {
