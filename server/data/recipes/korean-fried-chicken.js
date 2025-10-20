@@ -1,11 +1,12 @@
-const marinating = '../assets/Products/korean-fried-chicken-marinating.jpeg';
-const dredging = '../assets/Products/korean-fried-chicken-dredging-station.jpeg';
-const oil = '../assets/Products/korean-fried-chicken-frying-in-oil.jpeg';
-const fullSet = '../assets/Products/korean-fried-chicken-full-set.jpeg';
-const drip = '../assets/Products/korean-fried-chicken-oil-drip-station.jpeg';
-const sauce = '../assets/Products/korean-fried-chicken-raw-sauce.jpeg';
-const rice = '../assets/Products/korean-fried-chicken-with-rice.jpeg';
-const chicken = '../assets/Products/korean-fried-chicken.jpeg';
+const chicken1 = '../assets/Products/korean-fried-chicken-1.jpeg';
+const chicken2 = '../assets/Products/korean-fried-chicken-2.jpeg';
+const chicken3 = '../assets/Products/korean-fried-chicken-3.jpeg';
+const chicken4 = '../assets/Products/korean-fried-chicken-4.jpeg';
+const chicken5 = '../assets/Products/korean-fried-chicken-5.jpeg';
+const chicken6 = '../assets/Products/korean-fried-chicken-6.jpeg';
+const chicken7 = '../assets/Products/korean-fried-chicken-7.jpeg';
+const chicken8 = '../assets/Products/korean-fried-chicken-8.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
@@ -43,7 +44,7 @@ const SWEET_AND_SPICY_SAUCE = 'Sweet and Spicy Sauce';
 module.exports = {
     cardName: 'Korean Fried Chicken',
     name: 'Korean Fried Chicken',
-    img: chicken,
+    img: chicken8,
     recipeAuthors: ['Hyosun'],
     recipeFinder: 'Justin Ung',
     available: true,
@@ -114,7 +115,7 @@ module.exports = {
         PAPER_TOWELS,
     ],
     directions: [
-        { step: 'In a large bowl, combine the chicken thighs with the garlic, ginger, sea salt, and mirin.', section: SECTIONS.MARINADE, img: marinating },
+        { step: 'In a large bowl, combine the chicken thighs with the garlic, ginger, sea salt, and mirin.', section: SECTIONS.MARINADE, img: chicken1 },
         { step: 'Let it marinate for at least 1 hour.', section: SECTIONS.MARINADE },
 
         { step: 'In a medium bowl, mix the dry rub ingredients together then coat each chicken thigh.', section: SECTIONS.DRY_RUB },
@@ -122,21 +123,21 @@ module.exports = {
         { step: 'In a large bowl, mix water, the 1 1/4 cup cornstarch, flour and baking powder.', section: SECTIONS.WET_RUB },
         { step: 'Fill a medium bowl with the 2 cups of cornstarch.', section: SECTIONS.WET_RUB },
         { step: 'Before you dip the chicken into the wet batter get the frying oil ready.', section: SECTIONS.WET_RUB },
-        { step: 'Dip the chicken into the wet batter and then into the cornstarch station, then fry.', section: SECTIONS.WET_RUB, img: dredging },
+        { step: 'Dip the chicken into the wet batter and then into the cornstarch station, then fry.', section: SECTIONS.WET_RUB, img: chicken2 },
 
         { step: 'Place 2 layers of paper towels on top of a baking sheet and then place the cooling rack on top of the paper towels. Note the stacking order matters because placing the paper towels on top of the cooling rack creates steam beneath the fried chicken making it soggy and not crispy.', section: SECTIONS.MAIN },
         { step: 'Over medium heat, heat a pot of about 2 inches of oil.', section: SECTIONS.MAIN },
-        { step: 'Once the oil is hot, about 345ºF, add the chicken into the oil and fry for 3 - 4 minutes. Cook in batches and avoid crowding the pot.', section: SECTIONS.MAIN, img: oil },
-        { step: 'Place the fried chicken on the cooling rack.', section: SECTIONS.MAIN, img: drip },
+        { step: 'Once the oil is hot, about 345ºF, add the chicken into the oil and fry for 3 - 4 minutes. Cook in batches and avoid crowding the pot.', section: SECTIONS.MAIN, img: chicken3 },
+        { step: 'Place the fried chicken on the cooling rack.', section: SECTIONS.MAIN, img: chicken4 },
         { step: 'Continue cooking the rest of the chicken in batches.', section: SECTIONS.MAIN },
         { step: 'Increase the heat to medium-high, about 375ºF, and repeat the second fry. Chicken should be golden brown and crunchy.', section: SECTIONS.MAIN },
-        { step: 'Enjoy by itself or coat with the hot sauce.', section: SECTIONS.SERVE, img: fullSet },
+        { step: 'Enjoy by itself or coat with the hot sauce.', section: SECTIONS.SERVE, img: chicken5 },
 
-        { step: 'In a sauce pan over medium-high heat, add all the ingredients for the respective sauce and bring to a boil.', section: SECTIONS.SAUCE, img: sauce },
+        { step: 'In a sauce pan over medium-high heat, add all the ingredients for the respective sauce and bring to a boil.', section: SECTIONS.SAUCE, img: chicken6 },
         { step: 'Once it boils, reduce the heat and cook for another 2 - 3 minutes.', section: SECTIONS.SAUCE },
         { step: 'If the sauce is too thick, add a teaspoon of water at a time to thin it out.', section: SECTIONS.SAUCE },
 
-        { step: 'While sauce is hot, drizzle onto the chicken and serve with rice.', section: SECTIONS.SERVE, img: rice },
+        { step: 'While sauce is hot, drizzle onto the chicken and serve with rice.', section: SECTIONS.SERVE, img: chicken7 },
     ],
     notes: [
         { note: 'Be sure the oil is hot enough or else the chicken/batter will just soak in the oil and will not get browned.' }
