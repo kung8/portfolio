@@ -1,15 +1,11 @@
-const baked7 = '../assets/Products/cream-puffs-baked-7.jpeg';
-const butter = '../assets/Products/cream-puffs-butter.jpeg';
-const doled2 = '../assets/Products/cream-puffs-doled-2.jpeg';
-const filled = '../assets/Products/cream-puffs-filled.jpeg';
-const filling3 = '../assets/Products/cream-puffs-filling-3.jpeg';
-const ball = '../assets/Products/cream-puffs-flour-ball.jpeg';
-const flour = '../assets/Products/cream-puffs-flour.jpeg';
-const batter = '../assets/Products/cream-puffs-pastry-batter.jpeg';
-const plated2 = '../assets/Products/cream-puffs-plated-2.jpeg';
-const plated11 = '../assets/Products/cream-puffs-plated-11.jpeg';
-const sliced2 = '../assets/Products/cream-puffs-sliced-2.jpeg';
-const vanilla = '../assets/Products/cream-puffs-vanilla-pudding-mix.jpeg';
+const puffs1 = '../assets/Products/cream-puffs-1.jpeg';
+const puffs2 = '../assets/Products/cream-puffs-2.jpeg';
+const puffs3 = '../assets/Products/cream-puffs-3.jpeg';
+const puffs4 = '../assets/Products/cream-puffs-4.jpeg';
+const puffs5 = '../assets/Products/cream-puffs-5.jpeg';
+const puffs6 = '../assets/Products/cream-puffs-6.jpeg';
+const puffs7 = '../assets/Products/cream-puffs-7.jpeg';
+const puffs8 = '../assets/Products/cream-puffs-8.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, EGG, HEAVY_CREAM, LARGE_POT, MILK, MIXING_BOWL, OVEN, SALT, STOVE, UNSALTED_BUTTER, VANILLA_INSTANT_PUDDING_MIX, WATER } = require('./ingredients');
@@ -19,7 +15,7 @@ const PUFF = 'Puff';
 module.exports = {
     cardName: 'Cream Puffs',
     name: 'Cream Puffs',
-    img: plated11,
+    img: puffs8,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -58,18 +54,20 @@ module.exports = {
         BAKING_SHEET,
     ],
     directions: [
-        { step: 'In a mixing bowl, combine together the filling ingredients.', section: SECTIONS.FILLING, img: [vanilla, filling3] },
+        { step: `In a mixing bowl, combine together the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.FILLING, img: puffs1 },
         { step: 'Cover and chill until it sets.', section: SECTIONS.FILLING },
+
         { step: 'Preheat the over to 425ºF.', section: PUFF },
-        { step: 'Over medium-high heat, bring a large pot of water and butter to a boil.', section: PUFF, img: butter },
-        { step: 'Add in flour and salt. Mix until it becomes a ball.', section: PUFF, img: [flour, ball] },
+        { step: 'Over medium-high heat, bring a large pot of water and butter to a boil.', section: PUFF },
+        { step: 'Add in flour and salt. Mix until it becomes a ball.', section: PUFF, img: puffs2 },
         { step: 'Transfer to a mixing bowl.', section: PUFF },
-        { step: 'Beat eggs in one at a time.', section: PUFF, img: batter },
-        { step: 'Place spoonful of batter on a baking sheet, a few inches apart.', section: PUFF, img: doled2 },
+        { step: 'Beat eggs in one at a time.', section: PUFF, img: puffs3 },
+        { step: 'Place spoonful of batter on a baking sheet, a few inches apart.', section: PUFF, img: puffs4 },
         { step: 'Bake until golden brown (about 20 to 25 minutes). Centers will be dry.', section: PUFF },
-        { step: 'Let cool.', section: PUFF, img: baked7 },
-        { step: 'Either carefully split the puffs and fill with the cream filling or pipe into the shell.', section: SECTIONS.ASSEMBLE, img: [sliced2, filled] },
-        { step: 'Enjoy these delicious desserts.', section: SECTIONS.SERVE, img: plated2 },
+        { step: 'Let cool.', section: PUFF, img: puffs5 },
+
+        { step: 'Either carefully split the puffs and fill with the cream filling or pipe into the shell.', section: SECTIONS.ASSEMBLE, img: [puffs6, puffs7] },
+        { step: 'Enjoy these delicious desserts.', section: SECTIONS.SERVE },
     ],
     store: [
         {
