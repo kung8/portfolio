@@ -1,27 +1,16 @@
-const cooked3 = '../assets/Products/cinnamon-rolls-cooked-3.jpeg';
-const dough1 = '../assets/Products/cinnamon-rolls-dough-1.jpeg';
-const dough2 = '../assets/Products/cinnamon-rolls-dough-2.jpeg';
-const dough3 = '../assets/Products/cinnamon-rolls-dough-3.jpeg';
-const dough4 = '../assets/Products/cinnamon-rolls-dough-4.jpeg';
-const dough5 = '../assets/Products/cinnamon-rolls-dough-5.jpeg';
-const dough7 = '../assets/Products/cinnamon-rolls-dough-7.jpeg';
-const dough8 = '../assets/Products/cinnamon-rolls-dough-8.jpeg';
-const dough9 = '../assets/Products/cinnamon-rolls-dough-9.jpeg';
-const dough10 = '../assets/Products/cinnamon-rolls-dough-10.jpeg';
-const filling3 = '../assets/Products/cinnamon-rolls-filling-3.jpeg';
-const filling4 = '../assets/Products/cinnamon-rolls-filling-4.jpeg';
-const filling5 = '../assets/Products/cinnamon-rolls-filling-5.jpeg';
-const filling6 = '../assets/Products/cinnamon-rolls-filling-6.jpeg';
-const filling7 = '../assets/Products/cinnamon-rolls-filling-7.jpeg';
-const filling9 = '../assets/Products/cinnamon-rolls-filling-9.jpeg';
-const filling10 = '../assets/Products/cinnamon-rolls-filling-10.jpeg';
-const filling11 = '../assets/Products/cinnamon-rolls-filling-11.jpeg';
-const frosting1 = '../assets/Products/cinnamon-rolls-frosting-1.jpeg';
-const frosting2 = '../assets/Products/cinnamon-rolls-frosting-2.jpeg';
-const frosting3 = '../assets/Products/cinnamon-rolls-frosting-3.jpeg';
-const frosting4 = '../assets/Products/cinnamon-rolls-frosting-4.jpeg';
-const plated3 = '../assets/Products/cinnamon-rolls-plated-3.jpeg';
-const plated5 = '../assets/Products/cinnamon-rolls-plated-5.jpeg';
+const rolls1 = '../assets/Products/cinnamon-rolls-1.jpeg';
+const rolls2 = '../assets/Products/cinnamon-rolls-2.jpeg';
+const rolls3 = '../assets/Products/cinnamon-rolls-3.jpeg';
+const rolls4 = '../assets/Products/cinnamon-rolls-4.jpeg';
+const rolls5 = '../assets/Products/cinnamon-rolls-5.jpeg';
+const rolls6 = '../assets/Products/cinnamon-rolls-6.jpeg';
+const rolls7 = '../assets/Products/cinnamon-rolls-7.jpeg';
+const rolls8 = '../assets/Products/cinnamon-rolls-8.jpeg';
+const rolls9 = '../assets/Products/cinnamon-rolls-9.jpeg';
+const rolls10 = '../assets/Products/cinnamon-rolls-10.jpeg';
+const rolls11 = '../assets/Products/cinnamon-rolls-11.jpeg';
+const rolls12 = '../assets/Products/cinnamon-rolls-12.jpeg';
+const rolls13 = '../assets/Products/cinnamon-rolls-13.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BREAD_FLOUR, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, EGG, EGG_YOLK, MILK, POWDERED_SUGAR, SALT, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR, YEAST } = require('./ingredients');
@@ -29,7 +18,7 @@ const { BREAD_FLOUR, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, EGG, EGG_YOLK, MILK, P
 module.exports = {
     cardName: 'Cinnamon Rolls',
     name: 'Cinnamon Rolls',
-    img: plated3,
+    img: rolls13,
     recipeAuthors: ['Monique'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -76,29 +65,29 @@ module.exports = {
         { name: 'small bowl' },
     ],
     directions: [
-        { step: 'Add milk to a microwavable bowl and microwave for 40 to 45 seconds. It should be about 110ºF (or like warm bath water).', section: SECTIONS.DOUGH, img: dough1 },
-        { step: 'Transfer milk to a bowl in a stand mixer.', section: SECTIONS.DOUGH, img: dough2 },
-        { step: 'Add yeast, egg, yolk, sugar, and melted butter. Mix.', section: SECTIONS.DOUGH, img: dough3 },
-        { step: 'Add flour and salt. Mix until it forms a dough.', section: SECTIONS.DOUGH, img: [dough4, dough5] },
+        { step: 'Add milk to a microwavable bowl and microwave for 40 to 45 seconds. It should be about 110ºF (or like warm bath water).', section: SECTIONS.DOUGH },
+        { step: 'Transfer milk to a bowl in a stand mixer.', section: SECTIONS.DOUGH },
+        { step: 'Add yeast, egg, yolk, sugar, and melted butter. Mix.', section: SECTIONS.DOUGH },
+        { step: 'Add flour and salt. Mix until it forms a dough.', section: SECTIONS.DOUGH, img: rolls1 },
         { step: 'Attach the dough hook and knead the dough on medium speed for 8 minutes. It should form a ball and be only slightly sticky. If it\'s too sticky (i.e. sticking to the bottom of the mixer), add up to 2 tablespoons of bread flour.', section: SECTIONS.DOUGH },
-        { step: 'Oil a mixing bowl, transfer dough.', section: SECTIONS.DOUGH, img: [dough7, dough8] },
-        { step: 'Cover with plastic wrap and warm towel.', section: SECTIONS.DOUGH, img: [dough9, dough10] },
+        { step: 'Oil a mixing bowl, transfer dough.', section: SECTIONS.DOUGH },
+        { step: 'Cover with plastic wrap and warm towel.', section: SECTIONS.DOUGH, img: [rolls2, rolls3] },
         { step: 'Let the dough double in size (about 1 to 1 1/2 hours).', section: SECTIONS.DOUGH },
         { step: 'Line a baking sheet with a silicon baking mat.', section: SECTIONS.DOUGH },
-        { step: 'Roll out the dough on a clean, well-floured surface to about 14x9 inches.', section: SECTIONS.DOUGH, img: filling4 },
-        { step: 'Spread softened butter on dough with a quarter inch from the border.', section: SECTIONS.FILLING, img: filling5 },
-        { step: 'In a small bowl, combine brown sugar and cinnamon.', section: SECTIONS.FILLING, img: filling3 },
-        { step: 'Sprinkle cinnamon sugar over buttered dough.', section: SECTIONS.FILLING, img: filling6 },
-        { step: 'Rub cinnamon sugar into the butter.', section: SECTIONS.FILLING, img: filling7 },
-        { step: 'Tightly roll the dough from the shorter side.', section: SECTIONS.FILLING, img: filling9 },
-        { step: 'Using a serrated knife, cut the rolls into 1 inch.', section: SECTIONS.FILLING, img: filling10 },
-        { step: 'Cover the rolls with plastic wrap and a warm towel. Let it rise again for 30 to 45 minutes.', section: SECTIONS.FILLING, img: filling11 },
+        { step: 'Roll out the dough on a clean, well-floured surface to about 14x9 inches.', section: SECTIONS.DOUGH, img: rolls4 },
+        { step: 'Spread softened butter on dough with a quarter inch from the border.', section: SECTIONS.FILLING, img: rolls5 },
+        { step: 'In a small bowl, combine brown sugar and cinnamon.', section: SECTIONS.FILLING },
+        { step: 'Sprinkle cinnamon sugar over buttered dough.', section: SECTIONS.FILLING },
+        { step: 'Rub cinnamon sugar into the butter.', section: SECTIONS.FILLING, img: rolls6 },
+        { step: 'Tightly roll the dough from the shorter side.', section: SECTIONS.FILLING, img: rolls7 },
+        { step: 'Using a serrated knife, cut the rolls into 1 inch.', section: SECTIONS.FILLING, img: rolls8 },
+        { step: 'Cover the rolls with plastic wrap and a warm towel. Let it rise again for 30 to 45 minutes.', section: SECTIONS.FILLING, img: rolls9 },
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.BAKE },
         { step: 'Remove the plastic wrap and the towel.', section: SECTIONS.BAKE },
-        { step: 'Bake until the edges are slightly golden brown (about 20 to 25 minutes). Do not bake all the way through to prevent it from being dried out in the center.', section: SECTIONS.BAKE, img: cooked3 },
+        { step: 'Bake until the edges are slightly golden brown (about 20 to 25 minutes). Do not bake all the way through to prevent it from being dried out in the center.', section: SECTIONS.BAKE, img: rolls10 },
         { step: 'Let the rolls cooled for 5 to 10 minutes.', section: SECTIONS.BAKE },
-        { step: 'In a mixing bowl, combine frosting ingredients.', section: SECTIONS.FROSTING, img: [frosting1, frosting2, frosting3, frosting4] },
-        { step: 'Spread frosting over cinnamon rolls and enjoy warm!', section: SECTIONS.SERVE, img: plated5 },
+        { step: 'In a mixing bowl, combine frosting ingredients.', section: SECTIONS.FROSTING, img: rolls11 },
+        { step: 'Spread frosting over cinnamon rolls and enjoy warm!', section: SECTIONS.SERVE, img: rolls12 },
     ],
     store: [
         {
