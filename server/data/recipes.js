@@ -759,3 +759,13 @@ module.exports = recipes;
 // Charbroiled salmon, topped with a choice of creamy dill sauce
 // or fresh pineapple salsa, served with rice pilaf,
 // and sautéed vegetables. (32)
+
+// TODO: Clean up the recipe files that don't have websites to figure out the `recipeAuthors` and `recipeFinder`
+// TODO: Add filters for diet (vegan, vegetarian, gluten-free, keto, paleo, etc.)
+// TODO: Add bulk actions logic?
+// TODO: Add picture with camera and scan text for you and interpret that into text to be used in grocery list
+// TODO: Add way to download and print recipes
+// TODO: Add way to simply the views for users to opt into (i.e. match "Just the Recipe" app)
+// TODO: Add way for Siri to add ingredients to the grocery list in my app (open chrome) (may need to create mobile app for this)
+// TODO: Add Frisee Salad with goat cheese and pine nuts, wild rice, roasted asparagus, salmon en croute recipe
+// TODO: Add Lox recipe
