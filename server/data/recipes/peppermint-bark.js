@@ -1,23 +1,15 @@
-const angled = '../assets/Products/peppermint-bark-chilled-angled.jpeg';
-const crushed = '../assets/Products/peppermint-bark-crushed-peppermint.jpeg';
-const peppermint = '../assets/Products/peppermint-bark-peppermint.jpeg';
-const chocolate = '../assets/Products/peppermint-bark-chocolate-chips.jpeg';
-const layeredPeppermint = '../assets/Products/peppermint-bark-layered-peppermint.jpeg';
-const layeredWhite = '../assets/Products/peppermint-bark-layered-white-chocolate.jpeg';
-const meltedChocolate = '../assets/Products/peppermint-bark-melted-chocolate.jpeg';
-const meltedWhite = '../assets/Products/peppermint-bark-melted-white-chocolate-chip.jpeg';
-const parchment = '../assets/Products/peppermint-bark-parchment-paper.jpeg';
-const plated2 = '../assets/Products/peppermint-bark-plated-2.jpeg';
-const plated4 = '../assets/Products/peppermint-bark-plated-4.jpeg';
-const set = '../assets/Products/peppermint-bark-set-chocolate.jpeg';
-const white = '../assets/Products/peppermint-bark-white-chocolate-chips.jpeg';
+const bark1 = '../assets/Products/peppermint-bark-1.jpeg';
+const bark2 = '../assets/Products/peppermint-bark-2.jpeg';
+const bark3 = '../assets/Products/peppermint-bark-3.jpeg';
+const bark4 = '../assets/Products/peppermint-bark-4.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, CANDY_CANES, KNIFE, MEDIUM_BOWL, MICROWAVE, PARCHMENT_PAPER, PEPPERMINT_EXTRACT, SEMI_SWEET_CHOCOLATE_CHIPS, SPATULA, WHITE_CHOCOLATE_CHIPS } = require('./ingredients');
 
 module.exports = {
     cardName: 'Peppermint Bark',
     name: 'Peppermint Bark',
-    img: plated4,
+    img: bark4,
     recipeAuthors: ['Sara Welch'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -52,17 +44,17 @@ module.exports = {
         KNIFE,
     ],
     directions: [
-        { step: 'Place some parchment paper on a baking sheet.', section: SECTIONS.MAIN, img: parchment },
-        { step: 'In a microwaveable bowl, melt the semisweet chocolate chips in 30 second intervals.', section: SECTIONS.MAIN, img: chocolate },
-        { step: 'Pour the chocolate on the parchment paper and carefully spread until it\'s a thin layer of chocolate.', section: SECTIONS.MAIN, img: meltedChocolate },
-        { step: 'Chill in the fridge to help it partially set (up to 10 minutes). Any more time past that will cause it to not stick to the melted white chocolate layer.', section: SECTIONS.MAIN, img: set },
-        { step: 'Repeat the melting process for the white chocolate chips.', section: SECTIONS.MAIN, img: [white, meltedWhite] },
+        { step: 'Place some parchment paper on a baking sheet.', section: SECTIONS.MAIN },
+        { step: 'In a microwaveable bowl, melt the semisweet chocolate chips in 30 second intervals.', section: SECTIONS.MAIN },
+        { step: 'Pour the chocolate on the parchment paper and carefully spread until it\'s a thin layer of chocolate.', section: SECTIONS.MAIN },
+        { step: 'Chill in the fridge to help it partially set (up to 10 minutes). Any more time past that will cause it to not stick to the melted white chocolate layer.', section: SECTIONS.MAIN, img: bark1 },
+        { step: 'Repeat the melting process for the white chocolate chips.', section: SECTIONS.MAIN },
         { step: 'Mix in peppermint extract.', section: SECTIONS.MAIN },
-        { step: 'Spread the melted white chocolate over the semisweet chocolate.', section: SECTIONS.MAIN, img: layeredWhite },
-        { step: 'Sprinkle the crushed candy cane over the white chocolate.', section: SECTIONS.MAIN, img: [peppermint, crushed, layeredPeppermint] },
-        { step: 'Chill in the fridge until the chocolate is completely set (about 20 minutes).', section: SECTIONS.MAIN, img: angled },
+        { step: 'Spread the melted white chocolate over the semisweet chocolate.', section: SECTIONS.MAIN, img: bark2 },
+        { step: 'Sprinkle the crushed candy cane over the white chocolate.', section: SECTIONS.MAIN },
+        { step: 'Chill in the fridge until the chocolate is completely set (about 20 minutes).', section: SECTIONS.MAIN, img: bark3 },
         { step: 'Take the bark and let it sit at room temperature before cutting (about 20 minutes).', section: SECTIONS.MAIN },
-        { step: 'Using a sharp knife, cut through the bark and enjoy.', section: SECTIONS.MAIN, img: plated2 },
+        { step: 'Using a sharp knife, cut through the bark and enjoy.', section: SECTIONS.MAIN },
     ],
     store: [
         {
