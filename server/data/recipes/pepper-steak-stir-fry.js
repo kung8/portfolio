@@ -1,12 +1,6 @@
-const cookedVeggies = '../assets/Products/pepper-steak-stir-fry-cooked-veggies.jpeg';
-const fragrantMixed2 = '../assets/Products/pepper-steak-stir-fry-fragrant-mixed-in-pan-2.jpeg';
-const mixed5 = '../assets/Products/pepper-steak-stir-fry-mixed-5.jpeg';
-const mixed6 = '../assets/Products/pepper-steak-stir-fry-mixed-6.jpeg';
-const mixed7 = '../assets/Products/pepper-steak-stir-fry-mixed-7.jpeg';
-const plated3 = '../assets/Products/pepper-steak-stir-fry-plated-3.jpeg';
-const pan3 = '../assets/Products/pepper-steak-stir-fry-steak-in-pan-3.jpeg';
-const pan4 = '../assets/Products/pepper-steak-stir-fry-steak-in-pan-4.jpeg';
-const veggiesPan = '../assets/Products/pepper-steak-stir-fry-veggies-in-pan.jpeg';
+const stirFry1 = '../assets/Products/pepper-steak-stir-fry-1.jpeg';
+const stirFry2 = '../assets/Products/pepper-steak-stir-fry-2.jpeg';
+const stirFry3 = '../assets/Products/pepper-steak-stir-fry-3.jpeg';
 
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
@@ -28,7 +22,7 @@ const {
 module.exports = {
     cardName: 'Pepper Steak Stir Fry',
     name: 'Pepper Steak Stir Fry',
-    img: mixed6,
+    img: stirFry2,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,
@@ -72,16 +66,16 @@ module.exports = {
     ],
     directions: [
         { step: 'Over medium-high heat, heat 1 Tbsp of vegetable oil in a wok.', section: SECTIONS.MAIN },
-        { step: 'Add peppers and onion. Cook until tender (about 3 to 4 minutes).', section: SECTIONS.MAIN, img: veggiesPan },
-        { step: 'Remove from wok and set aside.', section: SECTIONS.MAIN, img: cookedVeggies },
+        { step: 'Add peppers and onion. Cook until tender (about 3 to 4 minutes).', section: SECTIONS.MAIN },
+        { step: 'Remove from wok and set aside.', section: SECTIONS.MAIN },
         { step: 'Increase the heat to high. Add 1 Tbsp of vegetable oil to the wok.', section: SECTIONS.MAIN },
-        { step: 'Add the beef to the wok and salt and pepper.', section: SECTIONS.MAIN, img: pan3 },
-        { step: 'Cook until lightly browned (about 5 to 6 minutes).', section: SECTIONS.MAIN, img: pan4 },
-        { step: 'Add garlic and ginger. Cook for 30 seconds.', section: SECTIONS.MAIN, img: fragrantMixed2 },
-        { step: 'Re-add the veggies and mix.', section: SECTIONS.MAIN, img: mixed5 },
+        { step: 'Add the beef to the wok and salt and pepper.', section: SECTIONS.MAIN },
+        { step: 'Cook until lightly browned (about 5 to 6 minutes).', section: SECTIONS.MAIN },
+        { step: 'Add garlic and ginger. Cook for 30 seconds.', section: SECTIONS.MAIN, img: stirFry1 },
+        { step: 'Re-add the veggies and mix.', section: SECTIONS.MAIN },
         { step: 'In a small bowl, mix together the soy sauce, sugar, cornstarch, and water.', section: SECTIONS.MAIN },
-        { step: 'Pour the sauce mixture into the wok and bring to a simmer. Cook until sauce thickens (about 2 to 3 minutes).', section: SECTIONS.MAIN, img: mixed7 },
-        { step: 'Serve with rice and enjoy this simple home cooked meal.', section: SECTIONS.MAIN, img: plated3 },
+        { step: 'Pour the sauce mixture into the wok and bring to a simmer. Cook until sauce thickens (about 2 to 3 minutes).', section: SECTIONS.MAIN },
+        { step: 'Serve with rice and enjoy this simple home cooked meal.', section: SECTIONS.MAIN, img: stirFry3 },
     ],
     store: [
         // {
