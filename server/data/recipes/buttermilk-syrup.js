@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'Buttermilk Syrup',
     name: 'Buttermilk Syrup',
     img: syrup2,
-    recipeAuthors: ['Katie Madrian'],
-    recipeFinder: 'Camille Pockrus',
     available: true,
     recommended: true,
     category: [CATEGORIES.SAUCE, CATEGORIES.BREAKFAST],
@@ -31,7 +29,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Buttermilk Syrup', link: 'https://www.allrecipes.com/recipe/239478/grandmas-buttermilk-syrup/' }
+        { 
+            label: 'Buttermilk Syrup', 
+            link: 'https://www.allrecipes.com/recipe/239478/grandmas-buttermilk-syrup/',
+            author: ['Katie Madrian'],
+            finder: 'Camille Pockrus', 
+        }
     ],
     ingredients: [
         { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },

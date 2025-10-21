@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Kolo Mee',
     name: 'Kolo Mee',
     img: kolo5,
-    recipeAuthors: ['KP Kwan'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -30,7 +28,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Kolo Mee', link: 'https://tasteasianfood.com/kolo-mee-recipe/' }
+        { 
+            label: 'Kolo Mee', 
+            link: 'https://tasteasianfood.com/kolo-mee-recipe/',
+            author: ['KP Kwan'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Chicken Paella',
     name: 'Chicken Paella',
     img: '',
-    recipeAuthors: ['Averie Sunshine'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chicken Paella', link: 'https://www.averiecooks.com/easy-chicken-paella/' }
+        { 
+            label: 'Chicken Paella', 
+            link: 'https://www.averiecooks.com/easy-chicken-paella/',
+            author: ['Averie Sunshine'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

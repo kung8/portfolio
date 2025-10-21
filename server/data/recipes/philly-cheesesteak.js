@@ -26,8 +26,6 @@ module.exports = {
     cardName: 'Philly Cheesesteak',
     name: 'Philly Cheesesteak',
     img: cheesesteak1,
-    recipeAuthors: ['Natalya Drozhzhin'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -40,7 +38,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Philly Cheesesteak', link: 'https://momsdish.com/easy-philly-cheesesteak' }
+        { 
+            label: 'Philly Cheesesteak', 
+            link: 'https://momsdish.com/easy-philly-cheesesteak',
+            author: ['Natalya Drozhzhin'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },

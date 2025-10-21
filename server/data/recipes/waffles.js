@@ -36,8 +36,6 @@ module.exports = {
     cardName: 'Waffles',
     name: 'Waffles',
     img: waffles7,
-    recipeAuthors: ['Holly Nilsson'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -50,7 +48,12 @@ module.exports = {
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 2, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Waffles', link: 'https://www.spendwithpennies.com/fluffy-homemade-waffle-recipe/' }
+        { 
+            label: 'Waffles', 
+            link: 'https://www.spendwithpennies.com/fluffy-homemade-waffle-recipe/',
+            author: ['Holly Nilsson'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },

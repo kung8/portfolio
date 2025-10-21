@@ -28,8 +28,6 @@ module.exports = {
     cardName: 'Lemon Chicken',
     name: 'Malaysian Lemon Chicken',
     img: chicken1,
-    recipeAuthors: ['Bee Yinn Low'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MALAYSIAN, GENRES.ASIAN],
@@ -43,7 +41,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Lemon Chicken', link: 'https://rasamalaysia.com/lemon-chicken/' }
+        { 
+            label: 'Lemon Chicken', 
+            link: 'https://rasamalaysia.com/lemon-chicken/',
+            author: ['Bee Yinn Low'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...BONELESS_CHICKEN_THIGH, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into small pieces', section: SECTIONS.MARINADE },

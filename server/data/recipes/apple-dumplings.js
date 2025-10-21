@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Apple Dumplings',
     name: 'Apple Dumplings',
     img: '',
-    recipeAuthors: ['Allrecipes Member'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Apple Dumplings', link: 'https://www.allrecipes.com/recipe/18980/apple-dumplings-i/' }
+        { 
+            label: 'Apple Dumplings', 
+            link: 'https://www.allrecipes.com/recipe/18980/apple-dumplings-i/', 
+            author: ['Allrecipes Member'],
+            finder: 'Kevin Ung',
+        }
     ],
     separated: true,
     ingredients: [

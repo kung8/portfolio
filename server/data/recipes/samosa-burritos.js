@@ -12,8 +12,6 @@ module.exports = {
     cardName: 'Samosa Burritos',
     name: 'Samosa Burritos',
     img: '',
-    recipeAuthors: [''],
-    recipeFinder: 'Chelsey Hickenlooper',
     available: false,
     recommended: false,
     category: [CATEGORIES.APPETIZER],
@@ -26,7 +24,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Samosa Burritos', link: 'https://www.plantpurenation.com/blogs/recipes/samosa-burritos' }
+        { 
+            label: 'Samosa Burritos', 
+            link: 'https://www.plantpurenation.com/blogs/recipes/samosa-burritos',
+            author: [''],
+            finder: 'Chelsey Hickenlooper', 
+        }
     ],
     separated: true,
     ingredients: [

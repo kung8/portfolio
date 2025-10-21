@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Indian Dosa',
     name: 'Indian Dosa',
     img: '',
-    recipeAuthors: ['Swasthi'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 18.5, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Dosa', link: 'https://www.indianhealthyrecipes.com/dosa-recipe-dosa-batter/' }
+        { 
+            label: 'Dosa', 
+            link: 'https://www.indianhealthyrecipes.com/dosa-recipe-dosa-batter/',
+            author: ['Swasthi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

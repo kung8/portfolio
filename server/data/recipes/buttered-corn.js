@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Buttered Corn',
     name: 'Buttered Corn',
     img: corn1,
-    recipeAuthors: ['Nichole'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH],
@@ -21,7 +19,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Buttered Corn', link: 'https://thesaltymarshmallow.com/buttered-corn-recipe/' }
+        { 
+            label: 'Buttered Corn', 
+            link: 'https://thesaltymarshmallow.com/buttered-corn-recipe/',
+            author: ['Nichole'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

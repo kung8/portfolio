@@ -50,8 +50,6 @@ module.exports = {
     cardName: 'Cafe Rio Bowl',
     name: 'Cafe Rio Bowl',
     img: bowl12,
-    recipeAuthors: ['Kristyn Merkley'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN, GENRES.AMERICAN],
@@ -66,7 +64,12 @@ module.exports = {
     waitTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Cafe Rio Cilantro Ranch Dressing', link: "https://lilluna.com/cafe-rio-cilantro-ranch-dressing/" }
+        { 
+            label: 'Cafe Rio Cilantro Ranch Dressing', 
+            link: "https://lilluna.com/cafe-rio-cilantro-ranch-dressing/",
+            author: ['Kristyn Merkley'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...SKIRT_STEAK, amount: 32, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'strips', section: SECTIONS.MEAT },

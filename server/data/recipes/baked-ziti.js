@@ -14,8 +14,6 @@ module.exports = {
     cardName: 'Baked Ziti',
     name: 'Baked Ziti',
     img: '',
-    recipeAuthors: ['Jennifer Segal'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -29,7 +27,12 @@ module.exports = {
     prepTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Baked Ziti', link: 'https://www.onceuponachef.com/recipes/baked-ziti-with-sausage.html' }
+        { 
+            label: 'Baked Ziti', 
+            link: 'https://www.onceuponachef.com/recipes/baked-ziti-with-sausage.html',
+            author: ['Jennifer Segal'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

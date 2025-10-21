@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Tang Yuan',
     name: 'Tang Yuan',
     img: '',
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Tang Yuan', link: 'https://thewoksoflife.com/tang-yuan-recipe/' }
+        { 
+            label: 'Tang Yuan', 
+            link: 'https://thewoksoflife.com/tang-yuan-recipe/',
+            author: ['Judy'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

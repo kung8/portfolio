@@ -24,8 +24,6 @@ module.exports = {
     cardName: 'Baked Lemon Chicken',
     name: 'Baked Lemon Chicken',
     img: chicken3,
-    recipeAuthors: ['Tiffany'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -38,7 +36,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Baked Lemon Chicken', link: 'https://www.lecremedelacrumb.com/easy-healthy-baked-lemon-chicken/' }
+        { 
+            label: 'Baked Lemon Chicken', 
+            link: 'https://www.lecremedelacrumb.com/easy-healthy-baked-lemon-chicken/',
+            author: ['Tiffany'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...CHICKEN_WINGS, amount: 10, unit: INGREDIENT_UNITS.PIECES, additionalDetails: '', section: SECTIONS.MAIN },

@@ -27,8 +27,6 @@ module.exports = {
     cardName: 'Marry Me Chicken',
     name: 'Marry Me Chicken',
     img: chicken19,
-    recipeAuthors: ['Cheryl Malik'],
-    recipeFinder: 'Montana Hiltbrand',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -42,7 +40,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Marry Me Chicken', link: 'https://40aprons.com/marry-me-chicken/' }
+        { 
+            label: 'Marry Me Chicken', 
+            link: 'https://40aprons.com/marry-me-chicken/',
+            author: ['Cheryl Malik'],
+            finder: 'Montana Hiltbrand', 
+        }
     ],
     separated: true,
     ingredients: [

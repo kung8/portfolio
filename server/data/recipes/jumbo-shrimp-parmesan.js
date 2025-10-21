@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Jumbo Shrimp Parmesan',
     name: 'Jumbo Shrimp Parmesan',
     img: '',
-    recipeAuthors: ['Marie C'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -26,7 +24,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Jumbo Shrimp Parmesan', link: 'https://www.food.com/recipe/jumbo-shrimp-parmesan-42169' }
+        { 
+            label: 'Jumbo Shrimp Parmesan', 
+            link: 'https://www.food.com/recipe/jumbo-shrimp-parmesan-42169',
+            author: ['Marie C'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

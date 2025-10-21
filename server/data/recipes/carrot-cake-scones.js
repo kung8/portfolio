@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Carrot Cake Scones',
     name: 'Carrot Cake Scones',
     img: '',
-    recipeAuthors: ['Pam and Nancy'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Carrot Cake Scones', link: 'https://homeiswheretheboatis.net/2025/03/18/everybunnys-favorite-carrot-cake-scones-with-cream-cheese-glaze/' }
+        { 
+            label: 'Carrot Cake Scones', 
+            link: 'https://homeiswheretheboatis.net/2025/03/18/everybunnys-favorite-carrot-cake-scones-with-cream-cheese-glaze/',
+            author: ['Pam and Nancy'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

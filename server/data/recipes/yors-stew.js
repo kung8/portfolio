@@ -30,8 +30,6 @@ module.exports = {
     cardName: 'Yor\'s Stew',
     name: 'Yor\'s Stew',
     img: stew9,
-    recipeAuthors: ['Carly'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -46,7 +44,12 @@ module.exports = {
     cookTime: { amount: 2, unit: TIME_UNITS.HOUR },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Yor\'s Stew', link: 'https://glutenfreewithme.com/yors-stew-inspired-by-spy-x-family-gluten-free/#google_vignette' }
+        { 
+            label: 'Yor\'s Stew', 
+            link: 'https://glutenfreewithme.com/yors-stew-inspired-by-spy-x-family-gluten-free/#google_vignette',
+            author: ['Carly'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

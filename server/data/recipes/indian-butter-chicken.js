@@ -34,8 +34,6 @@ module.exports = {
     cardName: 'Indian Butter Chicken',
     name: 'Indian Butter Chicken',
     img: curry5,
-    recipeAuthors: ['Layla Atik'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -46,7 +44,12 @@ module.exports = {
     allergies: [ALLERGIES.DAIRY],
     diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     websites: [
-        { label: 'Butter Chicken', link: "https://gimmedelicious.com/easy-20-minute-butter-chicken/" }
+        { 
+            label: 'Butter Chicken', 
+            link: "https://gimmedelicious.com/easy-20-minute-butter-chicken/",
+            author: ['Layla Atik'],
+            finder: 'Kevin Ung', 
+        }
     ],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },

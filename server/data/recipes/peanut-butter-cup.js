@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Peanut Butter Cup',
     name: 'Peanut Butter Cup',
     img: cup9,
-    recipeAuthors: ['Shaunnsmom'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -35,7 +33,12 @@ module.exports = {
     cookTime: { amount: 4, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 2, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Peanut Butter Cup', link: 'https://www.allrecipes.com/recipe/44715/chocolate-peanut-butter-cups/' }
+        { 
+            label: 'Peanut Butter Cup', 
+            link: 'https://www.allrecipes.com/recipe/44715/chocolate-peanut-butter-cups/',
+            author: ['Shaunnsmom'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

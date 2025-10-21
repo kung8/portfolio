@@ -21,8 +21,6 @@ module.exports = {
     cardName: 'Piri Piri Chicken Bowl',
     name: 'Piri Piri Chicken Bowl',
     img: bowl12,
-    recipeAuthors: ['Arman Liew', 'Alida Ryder', 'Julia Frey Vikalinka', 'Christina Jolam'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -37,10 +35,30 @@ module.exports = {
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 10, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Piri Piri Chicken', link: 'https://thebigmansworld.com/peri-peri-chicken/' },
-        { label: 'Charred Corn and Salad', link: 'https://simply-delicious-food.com/peri-peri-chicken-salad/' },
-        { label: 'Piri Piri Rice', link: 'https://vikalinka.com/easy-peri-peri-rice/' },
-        { label: 'Piri Piri Aioli Sauce', link: 'https://weekdaypescatarian.com/spicy-aioli-sauce/' },
+        { 
+            label: 'Piri Piri Chicken', 
+            link: 'https://thebigmansworld.com/peri-peri-chicken/',
+            author: ['Arman Liew'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Charred Corn and Salad', 
+            link: 'https://simply-delicious-food.com/peri-peri-chicken-salad/',
+            author: ['Alida Ryder'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Piri Piri Rice', 
+            link: 'https://vikalinka.com/easy-peri-peri-rice/',
+            author: ['Julia Frey Vikalinka'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Piri Piri Aioli Sauce', 
+            link: 'https://weekdaypescatarian.com/spicy-aioli-sauce/',
+            author: ['Christina Jolam'],
+            finder: 'Kevin Ung', 
+        },
     ],
     separated: true,
     ingredients: [

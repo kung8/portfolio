@@ -37,8 +37,6 @@ module.exports = {
     cardName: 'Chili',
     name: 'Chili',
     img: chili4,
-    recipeAuthors: ['Holly Nilsson'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
@@ -49,7 +47,12 @@ module.exports = {
     diet: [DIET.GLUTEN_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     separated: true,
     websites: [
-        { label: 'Chili', link: 'https://www.spendwithpennies.com/the-best-chili-recipe/' }
+        { 
+            label: 'Chili', 
+            link: 'https://www.spendwithpennies.com/the-best-chili-recipe/',
+            author: ['Holly Nilsson'],
+            finder: 'Kevin Ung', 
+        }
     ],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },

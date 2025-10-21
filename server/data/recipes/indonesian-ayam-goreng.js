@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Ayam Goreng',
     name: 'Indonesian Ayam Goreng',
     img: '',
-    recipeAuthors: ['Sophia Young'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Indonesian Ayam Goreng', link: 'https://www.taste.com.au/recipes/indonesian-fried-chicken/f24fe781-bbc9-4a12-b270-f53abb2ce6e7' }
+        { 
+            label: 'Indonesian Ayam Goreng', 
+            link: 'https://www.taste.com.au/recipes/indonesian-fried-chicken/f24fe781-bbc9-4a12-b270-f53abb2ce6e7',
+            author: ['Sophia Young'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

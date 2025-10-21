@@ -6,7 +6,6 @@ const fries5 = '../assets/Products/rosemary-fries-5.jpeg';
 const fries6 = '../assets/Products/rosemary-fries-6.jpeg';
 const fries7 = '../assets/Products/rosemary-fries-7.jpeg';
 
-
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BLACK_PEPPER, CORNSTARCH, GARLIC, MIXING_BOWL, OLIVE_OIL, OVEN, ROSEMARY, SALT, SWEET_POTATO } = require('./ingredients');
 
@@ -14,8 +13,6 @@ module.exports = {
     cardName: 'Rosemary Fries',
     name: 'Rosemary Fries',
     img: fries7,
-    recipeAuthors: ['Jackie Gregston'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH],
@@ -28,7 +25,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Rosemary Sweet Potato Fries', link: 'https://www.tasteofhome.com/recipes/rosemary-sweet-potato-fries/' }
+        { 
+            label: 'Rosemary Sweet Potato Fries', 
+            link: 'https://www.tasteofhome.com/recipes/rosemary-sweet-potato-fries/',
+            author: ['Jackie Gregston'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

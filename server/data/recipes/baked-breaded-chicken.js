@@ -33,8 +33,6 @@ module.exports = {
     cardName: 'Baked Breaded Chicken',
     name: 'Baked Breaded Chicken',
     img: chicken6,
-    recipeAuthors: ['Rachael'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
@@ -47,7 +45,12 @@ module.exports = {
     prepTime: { amount: 8, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Baked Breaded Chicken', link: "https://www.eazypeazymealz.com/baked-breaded-chicken/" }
+        { 
+            label: 'Baked Breaded Chicken', 
+            link: "https://www.eazypeazymealz.com/baked-breaded-chicken/",
+            author: ['Rachael'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

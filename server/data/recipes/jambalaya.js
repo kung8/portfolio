@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Jambalaya',
     name: 'Jambalaya',
     img: '',
-    recipeAuthors: ['Ali'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -22,7 +20,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Jambalaya', link: 'https://www.gimmesomeoven.com/jambalaya-recipe/' }
+        { 
+            label: 'Jambalaya', 
+            link: 'https://www.gimmesomeoven.com/jambalaya-recipe/',
+            author: ['Ali'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

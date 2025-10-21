@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Breakfast Burrito',
     name: 'Breakfast Burrito',
     img: '',
-    recipeAuthors: ['Jennifer Segal'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -29,7 +27,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Breakfast Burrito', link: 'https://www.onceuponachef.com/recipes/breakfast-burritos.html' }
+        { 
+            label: 'Breakfast Burrito', 
+            link: 'https://www.onceuponachef.com/recipes/breakfast-burritos.html',
+            author: ['Jennifer Segal'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

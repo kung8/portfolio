@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Brigadeiro',
     name: 'Brigadeiro',
     img: brigadeiro8,
-    recipeAuthors: ['Camila Hurst'],
-    recipeFinder: 'Sarah Miller',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -31,7 +29,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 2, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Brigadeiro', link: 'https://www.piesandtacos.com/brigadeiro-recipe/' }
+        { 
+            label: 'Brigadeiro', 
+            link: 'https://www.piesandtacos.com/brigadeiro-recipe/',
+            author: ['Camila Hurst'],
+            finder: 'Sarah Miller', 
+        }
     ],
     separated: true,
     ingredients: [

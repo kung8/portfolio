@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Spanish Rice',
     name: 'Spanish Rice',
     img: '',
-    recipeAuthors: ['Angela Sims'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -25,7 +23,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Spanish Rice', link: 'https://www.allrecipes.com/recipe/33385/best-spanish-rice/' }
+        { 
+            label: 'Spanish Rice', 
+            link: 'https://www.allrecipes.com/recipe/33385/best-spanish-rice/',
+            author: ['Angela Sims'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

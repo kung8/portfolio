@@ -7,14 +7,12 @@ module.exports = {
     cardName: 'Apple Cider Donuts',
     name: 'Apple Cider Hawaiian Roll Donuts',
     img: '',
-    recipeAuthors: ['Nicole McLaughlin'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
-    type: [TYPES.FINGER_FOOD,TYPES.DESSERT],
+    type: [TYPES.FINGER_FOOD, TYPES.DESSERT],
     allergies: [],
     diet: [],
     yields: { amount: '', unit: '' },
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Apple Cider Hawaiian Roll Donuts', link: 'https://www.allrecipes.com/apple-cider-hawaiian-roll-donuts-recipe-11786958' }
+        {
+            label: 'Apple Cider Hawaiian Roll Donuts',
+            link: 'https://www.allrecipes.com/apple-cider-hawaiian-roll-donuts-recipe-11786958',
+            author: ['Nicole McLaughlin'],
+            finder: 'Kevin Ung',
+        }
     ],
     separated: true,
     ingredients: [

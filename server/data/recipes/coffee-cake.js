@@ -42,8 +42,6 @@ module.exports = {
     cardName: 'Coffee Cake',
     name: 'Coffee Cake',
     img: cake22,
-    recipeAuthors: ['Sam Merritt'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
@@ -56,7 +54,12 @@ module.exports = {
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Coffee Cake', link: 'https://sugarspunrun.com/cinnamon-coffee-cake/' }
+        { 
+            label: 'Coffee Cake', 
+            link: 'https://sugarspunrun.com/cinnamon-coffee-cake/',
+            author: ['Sam Merritt'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

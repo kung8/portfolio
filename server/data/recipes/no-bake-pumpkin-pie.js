@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'No Bake Pumpkin Pie',
     name: 'No Bake Pumpkin Pie',
     img: pie6,
-    recipeAuthors: ['Dorothy Kern'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -33,7 +31,12 @@ module.exports = {
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'No Bake Pumpkin Dessert', link: 'https://www.crazyforcrust.com/bake-pumpkin-dessert/' }
+        { 
+            label: 'No Bake Pumpkin Dessert', 
+            link: 'https://www.crazyforcrust.com/bake-pumpkin-dessert/',
+            author: ['Dorothy Kern'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

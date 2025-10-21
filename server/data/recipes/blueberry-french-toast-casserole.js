@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'French Toast Casserole',
     name: 'Blueberry French Toast Casserole',
     img: '',
-    recipeAuthors: ['Shay'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Blueberry French Toast Casserole', link: 'https://mixandmatchmama.com/2025/06/blueberry-french-toast-casserole-3/' }
+        { 
+            label: 'Blueberry French Toast Casserole', 
+            link: 'https://mixandmatchmama.com/2025/06/blueberry-french-toast-casserole-3/',
+            author: ['Shay'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

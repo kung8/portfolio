@@ -25,8 +25,6 @@ module.exports = {
     cardName: 'Chicken + Gnocchi Soup',
     name: 'Marry Me Chicken and Gnocchi Soup',
     img: soup12,
-    recipeAuthors: ['Carman Wilken'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -41,7 +39,12 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Marry Me Chicken and Gnocchi Soup', link: 'https://whatsmomcookin.com/marry-me-chicken-and-gnocchi-soup/?fbclid=IwY2xjawMrOnFleHRuA2FlbQIxMQABHqEYNkMxNOFVuKTvKl5VRevaP60dee6OI2GWMJi3TrReL-WZKvD6Y549Ybuy_aem_H9ltC9bHXxWdmsaKrSFhIA' }
+        { 
+            label: 'Marry Me Chicken and Gnocchi Soup', 
+            link: 'https://whatsmomcookin.com/marry-me-chicken-and-gnocchi-soup/?fbclid=IwY2xjawMrOnFleHRuA2FlbQIxMQABHqEYNkMxNOFVuKTvKl5VRevaP60dee6OI2GWMJi3TrReL-WZKvD6Y549Ybuy_aem_H9ltC9bHXxWdmsaKrSFhIA',
+            author: ['Carman Wilken'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

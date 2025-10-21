@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Bang Bang Shrimp',
     name: 'Bang Bang Shrimp',
     img: shrimp8,
-    recipeAuthors: ['Rachel Farnsworth'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -32,7 +30,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Bang Bang Shrimp', link: 'https://thestayathomechef.com/bang-bang-shrimp' }
+        { 
+            label: 'Bang Bang Shrimp', 
+            link: 'https://thestayathomechef.com/bang-bang-shrimp',
+            author: ['Rachel Farnsworth'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

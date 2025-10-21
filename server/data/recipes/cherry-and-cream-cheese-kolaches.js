@@ -45,8 +45,6 @@ module.exports = {
     cardName: 'Cherry Kolaches',
     name: 'Cherry and Cream Cheese Kolaches',
     img: kolaches26,
-    recipeAuthors: ['Andrea Slonecker'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT, CATEGORIES.BREAKFAST],
@@ -60,7 +58,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 135, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Cherry and Cream Cheese Kolaches', link: 'https://www.foodandwine.com/recipes/cherry-and-cream-cheese-kolaches' }
+        { 
+            label: 'Cherry and Cream Cheese Kolaches', 
+            link: 'https://www.foodandwine.com/recipes/cherry-and-cream-cheese-kolaches',
+            author: ['Andrea Slonecker'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

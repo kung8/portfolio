@@ -8,8 +8,6 @@ module.exports = {
     cardName: 'Coleslaw',
     name: 'Coleslaw',
     img: coleslaw3,
-    recipeAuthors: ['Dennis Littley'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
@@ -20,7 +18,12 @@ module.exports = {
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Coleslaw', link: 'https://www.askchefdennis.com/best-cole-slaw-coleslaw/' }
+        { 
+            label: 'Coleslaw', 
+            link: 'https://www.askchefdennis.com/best-cole-slaw-coleslaw/',
+            author: ['Dennis Littley'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

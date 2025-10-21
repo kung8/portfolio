@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Cheddar Bay Biscuits',
     name: 'Red Lobster Cheddar Bay Biscuits',
     img: '',
-    recipeAuthors: ['Jake Vigliotti'],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -30,7 +28,12 @@ module.exports = {
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Red Lobster Cheddar Bay Biscuits', link: 'https://www.mashed.com/76272/red-lobster-cheddar-bay-biscuits-recipe/' }
+        { 
+            label: 'Red Lobster Cheddar Bay Biscuits', 
+            link: 'https://www.mashed.com/76272/red-lobster-cheddar-bay-biscuits-recipe/',
+            author: ['Jake Vigliotti'],
+            finder: 'Justin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

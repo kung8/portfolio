@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Crockpot Birria Tacos',
     name: 'Crockpot Birria Tacos',
     img: tacos12,
-    recipeAuthors: ['Sharon'],
-    recipeFinder: 'Lauren Maliwauki',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -34,7 +32,12 @@ module.exports = {
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 490, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Birria Tacos', link: 'https://jawnsicooked.com/dinner/crock-pot-birria-tacos-recipe/?fbclid=IwY2xjawIfTnJleHRuA2FlbQIxMAABHXA6K0n-MSk87IxBNd9zEPRf_2juEzIvI4wMpHOQ3YQqCpdq9ead33OwKA_aem_yOMPv648tIKxgtoZ38M-6g' }
+        { 
+            label: 'Birria Tacos', 
+            link: 'https://jawnsicooked.com/dinner/crock-pot-birria-tacos-recipe/?fbclid=IwY2xjawIfTnJleHRuA2FlbQIxMAABHXA6K0n-MSk87IxBNd9zEPRf_2juEzIvI4wMpHOQ3YQqCpdq9ead33OwKA_aem_yOMPv648tIKxgtoZ38M-6g',
+            author: ['Sharon'],
+            finder: 'Lauren Maliwauki', 
+        }
     ],
     separated: true,
     ingredients: [

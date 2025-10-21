@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Apple Dump Cake',
     name: 'Apple Dump Cake',
     img: '',
-    recipeAuthors: ['Marya Marta Krause'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Apple Dump Cake', link: 'https://www.allrecipes.com/recipe/244777/apple-pie-cake-mix-cake/' }
+        {
+            label: 'Apple Dump Cake',
+            link: 'https://www.allrecipes.com/recipe/244777/apple-pie-cake-mix-cake/',
+            author: ['Marya Marta Krause'],
+            finder: 'Kevin Ung',
+        }
     ],
     separated: true,
     ingredients: [

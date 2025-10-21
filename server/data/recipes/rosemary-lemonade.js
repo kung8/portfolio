@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Rosemary Lemonade',
     name: 'Rosemary Lemonade',
     img: lemonade7,
-    recipeAuthors: ['Dixie Graham'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DRINK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -26,7 +24,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Rosemary Lemonade', link: "https://www.tasteofhome.com/recipes/rosemary-lemonade/" }
+        { 
+            label: 'Rosemary Lemonade', 
+            link: "https://www.tasteofhome.com/recipes/rosemary-lemonade/",
+            author: ['Dixie Graham'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

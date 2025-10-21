@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'Shrimp Scampi',
     name: 'Shrimp Scampi',
     img: '',
-    recipeAuthors: ['Rncoggins'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -24,7 +22,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Shrimp Scampi', link: 'https://www.allrecipes.com/recipe/19508/shrimp-scampi/' }
+        { 
+            label: 'Shrimp Scampi', 
+            link: 'https://www.allrecipes.com/recipe/19508/shrimp-scampi/',
+            author: ['Rncoggins'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

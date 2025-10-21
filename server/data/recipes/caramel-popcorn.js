@@ -14,8 +14,6 @@ module.exports = {
     cardName: 'Caramel Popcorn',
     name: 'Caramel Popcorn',
     img: '',
-    recipeAuthors: ['Argo', 'Karo', 'Fleischmann\'s'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SNACK, CATEGORIES.DESSERT],
@@ -28,7 +26,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Caramel Popcorn', link: 'https://www.allrecipes.com/recipe/173309/classic-caramel-corn/' }
+        { 
+            label: 'Caramel Popcorn', 
+            link: 'https://www.allrecipes.com/recipe/173309/classic-caramel-corn/',
+            author: ['Argo', 'Karo', 'Fleischmann\'s'],
+            finder: 'Kevin Ung',
+        }
     ],
     separated: true,
     ingredients: [

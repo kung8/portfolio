@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Chicken Tikka Masala',
     name: 'Chicken Tikka Masala',
     img: curry6,
-    recipeAuthors: ['Chris Bellers'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -28,7 +26,12 @@ module.exports = {
     cookTime: { amount: 75, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Chicken Tikka Masala', link: "https://www.allrecipes.com/recipe/228293/curry-stand-chicken-tikka-masala-sauce" }
+        { 
+            label: 'Chicken Tikka Masala', 
+            link: "https://www.allrecipes.com/recipe/228293/curry-stand-chicken-tikka-masala-sauce",
+            author: ['Chris Bellers'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...GHEE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },

@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Peppermint Bark',
     name: 'Peppermint Bark',
     img: bark4,
-    recipeAuthors: ['Sara Welch'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -24,7 +22,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Peppermint Bark', link: "https://www.dinneratthezoo.com/peppermint-bark-recipe/" }
+        { 
+            label: 'Peppermint Bark', 
+            link: "https://www.dinneratthezoo.com/peppermint-bark-recipe/",
+            author: ['Sara Welch'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

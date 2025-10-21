@@ -18,7 +18,6 @@ module.exports = {
     cardName: 'Choy Sum',
     name: 'Choy Sum with Garlic Sauce',
     img: choy8,
-    recipeAuthors: ['Maggie Zhu'],
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH],
@@ -31,7 +30,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Choy Sum with Garlic Sauce', link: 'https://omnivorescookbook.com/choy-sum-with-garlic-sauce/' }
+        { 
+            label: 'Choy Sum with Garlic Sauce', 
+            link: 'https://omnivorescookbook.com/choy-sum-with-garlic-sauce/',
+            author: ['Maggie Zhu'],
+            finder: 'Kevin Ung',
+        }
     ],
     separated: true,
     ingredients: [

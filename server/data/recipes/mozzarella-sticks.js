@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Mozzarella Sticks',
     name: 'Mozzarella Sticks',
     img: '',
-    recipeAuthors: ['Karen'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -26,7 +24,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 24, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Mozzarella Sticks', link: 'https://www.food.com/recipe/mozzarella-sticks-30977' }
+        { 
+            label: 'Mozzarella Sticks', 
+            link: 'https://www.food.com/recipe/mozzarella-sticks-30977',
+            author: ['Karen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

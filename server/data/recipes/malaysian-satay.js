@@ -35,8 +35,6 @@ module.exports = {
     cardName: 'Malaysian Satay',
     name: 'Malaysian Satay',
     img: satay3,
-    recipeAuthors: ['Chungah Ree'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER],
@@ -52,7 +50,12 @@ module.exports = {
     waitTime: { amount: 6, unit: TIME_UNITS.HOUR },
     separated: true,
     websites: [
-        { label: 'Chicken Satay', link: 'https://damndelicious.net/2019/06/07/chicken-satay-with-peanut-sauce/' }
+        { 
+            label: 'Chicken Satay', 
+            link: 'https://damndelicious.net/2019/06/07/chicken-satay-with-peanut-sauce/',
+            author: ['Chungah Ree'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1 inch pieces', section: SECTIONS.MARINADE },

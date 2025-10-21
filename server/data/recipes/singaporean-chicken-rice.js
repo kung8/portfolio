@@ -28,8 +28,6 @@ module.exports = {
     cardName: 'Singaporean Chicken Rice',
     name: 'Singaporean Chicken Rice',
     img: rice5,
-    recipeAuthors: ['Douglas Chau'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -43,7 +41,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Singaporean Chicken Rice', link: 'https://www.youtube.com/shorts/yYKQK5_80p0' }
+        { 
+            label: 'Singaporean Chicken Rice', 
+            link: 'https://www.youtube.com/shorts/yYKQK5_80p0',
+            author: ['Douglas Chau'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

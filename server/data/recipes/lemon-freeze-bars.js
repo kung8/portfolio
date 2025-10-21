@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Lemon Freeze Bars',
     name: 'Lemon Freeze Bars',
     img: '',
-    recipeAuthors: ['Patty Catalano'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Lemon Freeze Bars', link: 'https://www.thekitchn.com/lemon-freeze-bars-recipe-23731330' }
+        { 
+            label: 'Lemon Freeze Bars', 
+            link: 'https://www.thekitchn.com/lemon-freeze-bars-recipe-23731330',
+            author: ['Patty Catalano'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -29,8 +29,6 @@ module.exports = {
     cardName: 'Chive Cakes',
     name: 'Chive Cakes (Khanom Gui Chai)',
     img: cakes19,
-    recipeAuthors: ['Charles Phan, Sareen Rojanametin, Jean Thamthanakorn'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -44,8 +42,18 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chive Cakes (ingredients)', link: 'https://www.sbs.com.au/food/recipe/chive-cakes-khanom-gui-chai/gossuf95o' },
-        { label: 'Chive Cakes (cooking)', link: 'https://www.foodrepublic.com/recipes/make-this-charles-phans-famous-chive-cakes-recipe/' }
+        { 
+            label: 'Chive Cakes (ingredients)', 
+            link: 'https://www.sbs.com.au/food/recipe/chive-cakes-khanom-gui-chai/gossuf95o',
+            author: ['Sareen Rojanametin', 'Jean Thamthanakorn'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Chive Cakes (cooking)', 
+            link: 'https://www.foodrepublic.com/recipes/make-this-charles-phans-famous-chive-cakes-recipe/',
+            author: ['Charles Phan'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

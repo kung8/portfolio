@@ -28,8 +28,6 @@ module.exports = {
     cardName: 'English Scones',
     name: 'English Scones',
     img: scones16,
-    recipeAuthors: ['Julia Foerster'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.BREAKFAST, CATEGORIES.SNACK],
@@ -42,7 +40,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'English Scones', link: 'https://platedcravings.com/recipe-easy-scones-with-clotted-cream-and-jam/' }
+        { 
+            label: 'English Scones', 
+            link: 'https://platedcravings.com/recipe-easy-scones-with-clotted-cream-and-jam/',
+            author: ['Julia Foerster'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

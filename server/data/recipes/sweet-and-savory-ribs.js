@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Sweet and Savory Ribs',
     name: 'Sweet and Savory Ribs',
     img: ribs9,
-    recipeAuthors: ['Stephvnietea'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -36,7 +34,12 @@ module.exports = {
     cookTime: { amount: 75, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 8, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Sweet and Savory Beef Ribs', link: 'https://www.instagram.com/reel/DLnzlZGh9-s/' }
+        { 
+            label: 'Sweet and Savory Beef Ribs', 
+            link: 'https://www.instagram.com/reel/DLnzlZGh9-s/',
+            author: ['Stephvnietea'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Muddy Buddies',
     name: 'Muddy Buddies',
     img: muddy11,
-    recipeAuthors: ['Laura'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -28,7 +26,12 @@ module.exports = {
     yields: { amount: 15, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Muddy Buddies', link: 'https://joyfoodsunshine.com/puppy-chow-recipe/' }
+        { 
+            label: 'Muddy Buddies', 
+            link: 'https://joyfoodsunshine.com/puppy-chow-recipe/',
+            author: ['Laura'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

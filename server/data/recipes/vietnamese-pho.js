@@ -33,8 +33,6 @@ module.exports = {
     cardName: 'Vietnamese Pho',
     name: 'Vietnamese Pho',
     img: pho5,
-    recipeAuthors: ['Lauren Allen'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -48,7 +46,12 @@ module.exports = {
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Pho', link: 'https://tastesbetterfromscratch.com/pho-noodle-soup/' }
+        { 
+            label: 'Pho', 
+            link: 'https://tastesbetterfromscratch.com/pho-noodle-soup/',
+            author: ['Lauren Allen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'quartered', section: SECTIONS.BROTH },

@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'Spring Roll Bowl',
     name: 'Peanut Chicken Spring Roll Bowl',
     img: bowl8,
-    recipeAuthors: ['Maxine Sharf'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -33,7 +31,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Peanut Chicken Spring Roll Bowl', link: 'https://www.instagram.com/reel/DIZbF2vyT7D' }
+        { 
+            label: 'Peanut Chicken Spring Roll Bowl', 
+            link: 'https://www.instagram.com/reel/DIZbF2vyT7D',
+            author: ['Maxine Sharf'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

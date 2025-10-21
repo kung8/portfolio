@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Easy Mochi',
     name: 'Easy Mochi',
     img: mochi7,
-    recipeAuthors: ['Kat Lieu'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.SNACK, CATEGORIES.DESSERT],
@@ -35,7 +33,12 @@ module.exports = {
     cookTime: { amount: 3, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Mochi', link: 'https://parade.com/food/two-ingredient-mochi' }
+        { 
+            label: 'Mochi', 
+            link: 'https://parade.com/food/two-ingredient-mochi',
+            author: ['Kat Lieu'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

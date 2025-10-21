@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Guacamole',
     name: 'Guacamole',
     img: guacamole5,
-    recipeAuthors: ['Maryellen'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DIP],
@@ -25,7 +23,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Guacamole', link: 'https://www.allrecipes.com/recipe/14231/guacamole/' }
+        { 
+            label: 'Guacamole', 
+            link: 'https://www.allrecipes.com/recipe/14231/guacamole/',
+            author: ['Maryellen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

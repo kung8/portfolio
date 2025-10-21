@@ -30,8 +30,6 @@ module.exports = {
     cardName: 'Cannoli Delight',
     name: 'No Bake Cannoli Delight',
     img: cannoli15,
-    recipeAuthors: ['Patty Catalano'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -45,7 +43,12 @@ module.exports = {
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 4, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'No Bake Cannoli Delight', link: 'https://www.thekitchn.com/cannoli-delight-recipe-23718781' }
+        { 
+            label: 'No Bake Cannoli Delight', 
+            link: 'https://www.thekitchn.com/cannoli-delight-recipe-23718781',
+            author: ['Patty Catalano'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

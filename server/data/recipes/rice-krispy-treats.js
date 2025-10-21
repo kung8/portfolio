@@ -12,8 +12,6 @@ module.exports = {
     cardName: 'Rice Krispy Treats',
     name: 'Rice Krispy Treats',
     img: treats6,
-    recipeAuthors: ['Holly Nilsson'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -25,7 +23,12 @@ module.exports = {
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Rice Krispie Treats', link: "https://www.spendwithpennies.com/extra-chewy-rice-krispie-treats/" }
+        { 
+            label: 'Rice Krispie Treats', 
+            link: "https://www.spendwithpennies.com/extra-chewy-rice-krispie-treats/",
+            author: ['Holly Nilsson'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },

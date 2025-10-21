@@ -12,8 +12,6 @@ module.exports = {
     cardName: 'Coconut Chicken',
     name: 'Coconut Chicken',
     img: curry6,
-    recipeAuthors: ['Roma'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -28,7 +26,12 @@ module.exports = {
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Coconut Chicken', link: 'https://www.allrecipes.com/recipe/68532/curried-coconut-chicken/' }
+        { 
+            label: 'Coconut Chicken', 
+            link: 'https://www.allrecipes.com/recipe/68532/curried-coconut-chicken/',
+            author: ['Roma'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

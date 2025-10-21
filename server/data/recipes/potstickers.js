@@ -35,8 +35,6 @@ module.exports = {
     cardName: 'Potstickers',
     name: 'Potstickers',
     img: potstickers7,
-    recipeAuthors: ['John Mitzewich'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
@@ -51,7 +49,12 @@ module.exports = {
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Potstickers', link: "https://www.allrecipes.com/recipe/261153/perfect-pot-stickers/" }
+        { 
+            label: 'Potstickers', 
+            link: "https://www.allrecipes.com/recipe/261153/perfect-pot-stickers/",
+            author: ['John Mitzewich'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

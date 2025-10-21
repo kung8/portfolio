@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Cinnamon Rolls',
     name: 'Cinnamon Rolls',
     img: rolls13,
-    recipeAuthors: ['Monique'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -34,7 +32,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 145, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Cinnamon Rolls', link: 'https://www.ambitiouskitchen.com/best-cinnamon-rolls/' }
+        { 
+            label: 'Cinnamon Rolls', 
+            link: 'https://www.ambitiouskitchen.com/best-cinnamon-rolls/',
+            author: ['Monique'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

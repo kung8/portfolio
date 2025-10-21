@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Creme Brulee French Toast',
     name: 'Creme Brulee French Toast',
     img: '',
-    recipeAuthors: ['Patty Catalano'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.BREAKFAST,CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Creme Brulee French Toast', link: 'https://www.thekitchn.com/creme-brulee-french-toast-recipe-23711485' }
+        { 
+            label: 'Creme Brulee French Toast', 
+            link: 'https://www.thekitchn.com/creme-brulee-french-toast-recipe-23711485',
+            author: ['Patty Catalano'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -31,8 +31,6 @@ module.exports = {
     cardName: 'Ice Cream Cake',
     name: 'Ice Cream Cake',
     img: cake12,
-    recipeAuthors: ['Erin Collins'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -46,7 +44,12 @@ module.exports = {
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 4, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Ice Cream Cake', link: 'https://meaningfuleats.com/gluten-free-ice-cream-cake/' }
+        { 
+            label: 'Ice Cream Cake', 
+            link: 'https://meaningfuleats.com/gluten-free-ice-cream-cake/',
+            author: ['Erin Collins'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

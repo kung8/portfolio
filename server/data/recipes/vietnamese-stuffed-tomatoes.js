@@ -21,8 +21,6 @@ module.exports = {
     cardName: 'Stuffed Tomatoes',
     name: 'Vietnamese Stuffed Tomatoes',
     img: tomatoes13,
-    recipeAuthors: ['Scruff', 'Steph'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -36,7 +34,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Vietnamese Stuffed Tomatoes', link: 'https://scruffandsteph.com/2019/12/13/vietnamese-stuffed-tomatoes/' }
+        { 
+            label: 'Vietnamese Stuffed Tomatoes', 
+            link: 'https://scruffandsteph.com/2019/12/13/vietnamese-stuffed-tomatoes/',
+            author: ['Scruff', 'Steph'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

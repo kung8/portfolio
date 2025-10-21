@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Brownies 2',
     name: 'Brownies 2',
     img: '',
-    recipeAuthors: ['Jeanine', 'Jack'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -24,7 +22,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Brownies', link: 'https://www.loveandlemons.com/brownies-recipe/' }
+        { 
+            label: 'Brownies', 
+            link: 'https://www.loveandlemons.com/brownies-recipe/',
+            author: ['Jeanine'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

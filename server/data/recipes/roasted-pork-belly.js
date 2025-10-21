@@ -29,8 +29,6 @@ module.exports = {
     cardName: 'Roasted Pork Belly',
     name: 'Roasted Pork Belly',
     img: roast14,
-    recipeAuthors: ['Chris Joe'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
@@ -44,7 +42,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Roasted Pork Belly', link: 'https://cjeatsrecipes.com/air-fryer-crispy-pork-belly/' }
+        { 
+            label: 'Roasted Pork Belly', 
+            link: 'https://cjeatsrecipes.com/air-fryer-crispy-pork-belly/',
+            author: ['Chris Joe'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

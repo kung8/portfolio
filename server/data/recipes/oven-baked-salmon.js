@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Oven Baked Salmon',
     name: 'Oven Baked Salmon',
     img: '',
-    recipeAuthors: ['Kathleen Daelemans'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Oven Baked Salmon', link: 'https://www.foodnetwork.com/recipes/oven-baked-salmon-recipe-1911951' }
+        { 
+            label: 'Oven Baked Salmon', 
+            link: 'https://www.foodnetwork.com/recipes/oven-baked-salmon-recipe-1911951',
+            author: ['Kathleen Daelemans'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

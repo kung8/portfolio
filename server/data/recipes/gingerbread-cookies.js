@@ -21,8 +21,6 @@ module.exports = {
     cardName: 'Gingerbread Cookies',
     name: 'Gingerbread Cookies',
     img: cookies8,
-    recipeAuthors: ['Lauren Allen'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -36,7 +34,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 2, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Gingerbread Cookie', link: 'https://tastesbetterfromscratch.com/gingerbread-cookies/' }
+        { 
+            label: 'Gingerbread Cookie', 
+            link: 'https://tastesbetterfromscratch.com/gingerbread-cookies/',
+            author: ['Lauren Allen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

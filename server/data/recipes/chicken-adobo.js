@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Filipino Chicken Adobo',
     name: 'Filipino Chicken Adobo',
     img: '',
-    recipeAuthors: ['Kris Longwell'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Filipino Chicken Adobo', link: 'https://howtofeedaloon.com/filipino-chicken-adobo/' }
+        { 
+            label: 'Filipino Chicken Adobo', 
+            link: 'https://howtofeedaloon.com/filipino-chicken-adobo/',
+            author: ['Kris Longwell'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

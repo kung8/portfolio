@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Green Bean Casserole',
     name: 'Green Bean Casserole',
     img: casserole3,
-    recipeAuthors: ['Holly Nilsson'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
@@ -24,7 +22,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Green Bean Casserole', link: 'https://www.spendwithpennies.com/classic-green-bean-casserole/' }
+        { 
+            label: 'Green Bean Casserole', 
+            link: 'https://www.spendwithpennies.com/classic-green-bean-casserole/',
+            author: ['Holly Nilsson'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

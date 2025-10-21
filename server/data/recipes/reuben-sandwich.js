@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Reuben Sandwich',
     name: 'Reuben Sandwich',
     img: '',
-    recipeAuthors: ['Colette G.'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -27,7 +25,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Reuben Sandwich', link: 'https://www.allrecipes.com/recipe/47717/reuben-sandwich-ii/' }
+        { 
+            label: 'Reuben Sandwich', 
+            link: 'https://www.allrecipes.com/recipe/47717/reuben-sandwich-ii/',
+            author: ['Colette G.'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

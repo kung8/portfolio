@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Yule Log',
     name: 'Yule Log',
     img: '',
-    recipeAuthors: ['Sally McKenney'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Yule Log', link: 'https://sallysbakingaddiction.com/buche-de-noel-yule-log/' }
+        { 
+            label: 'Yule Log', 
+            link: 'https://sallysbakingaddiction.com/buche-de-noel-yule-log/',
+            author: ['Sally McKenney'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'Bulgur Pilaf',
     name: 'Bulgur Pilaf',
     img: pilaf8,
-    recipeAuthors: ['Yumna Jawad and Nagi Maehashi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -33,8 +31,18 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Bulgur Pilaf', link: 'https://feelgoodfoodie.net/recipe/bulgur-pilaf/' },
-        { label: 'Baked Chicken Breast', link: 'https://www.recipetineats.com/oven-baked-chicken-breast/#h-the-chicken-nbsp-breast-seasoning' }
+        { 
+            label: 'Bulgur Pilaf', 
+            link: 'https://feelgoodfoodie.net/recipe/bulgur-pilaf/',
+            author: ['Yumna Jawad'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Baked Chicken Breast', 
+            link: 'https://www.recipetineats.com/oven-baked-chicken-breast/#h-the-chicken-nbsp-breast-seasoning',
+            author: ['Nagi Maehashi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

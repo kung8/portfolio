@@ -14,8 +14,6 @@ module.exports = {
     cardName: 'KFC Gravy',
     name: 'KFC Gravy',
     img: gravy5,
-    recipeAuthors: ['Nagi Maehashi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SAUCE],
@@ -29,7 +27,12 @@ module.exports = {
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'KFC Gravy', link: 'https://www.recipetineats.com/gravy/' }
+        { 
+            label: 'KFC Gravy', 
+            link: 'https://www.recipetineats.com/gravy/',
+            author: ['Nagi Maehashi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

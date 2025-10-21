@@ -27,8 +27,6 @@ module.exports = {
     cardName: 'Chicken Cordon Bleu',
     name: 'Chicken Cordon Bleu',
     img: bleu11,
-    recipeAuthors: ['Lauren Allen'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.FRENCH],
@@ -42,7 +40,12 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Chicken Cordon Bleu', link: 'https://tastesbetterfromscratch.com/chicken-cordon-bleu/' }
+        { 
+            label: 'Chicken Cordon Bleu', 
+            link: 'https://tastesbetterfromscratch.com/chicken-cordon-bleu/',
+            author: ['Lauren Allen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.MAIN },

@@ -39,8 +39,6 @@ module.exports = {
     cardName: 'Biscuits & Gravy',
     name: 'Southern Biscuits and Gravy',
     img: biscuits10,
-    recipeAuthors: ['Nikki Lee'],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST],
@@ -56,7 +54,12 @@ module.exports = {
     waitTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Sausage Gravy', link: 'https://www.soulfullymade.com/best-sausage-gravy-recipe/' }
+        { 
+            label: 'Sausage Gravy', 
+            link: 'https://www.soulfullymade.com/best-sausage-gravy-recipe/',
+            author: ['Nikki Lee'],
+            finder: 'Justin Ung', 
+        }
     ],
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: 11 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BISCUITS },

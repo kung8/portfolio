@@ -8,8 +8,6 @@ module.exports = {
     cardName: 'Lentil Sloppy Joes',
     name: 'Lentil Sloppy Joes',
     img: '',
-    recipeAuthors: ['Cassidy Reeser'],
-    recipeFinder: 'Chelsey Hickenlooper',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -24,7 +22,12 @@ module.exports = {
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Instant Pot Vegan Lentil Sloppy Joes', link: 'https://cozypeachkitchen.com/instant-pot-vegan-lentil-sloppy-joes/' }
+        { 
+            label: 'Instant Pot Vegan Lentil Sloppy Joes', 
+            link: 'https://cozypeachkitchen.com/instant-pot-vegan-lentil-sloppy-joes/',
+            author: ['Cassidy Reeser'],
+            finder: 'Chelsey Hickenlooper', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -33,8 +33,6 @@ module.exports = {
     cardName: 'Bibimbap',
     name: 'Korean Bibimbap',
     img: bibimbap5,
-    recipeAuthors: ['Sue'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.KOREAN, GENRES.ASIAN],
@@ -48,7 +46,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Bibimbap', link: "https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/" }
+        { 
+            label: 'Bibimbap', 
+            link: "https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/",
+            author: ['Sue'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

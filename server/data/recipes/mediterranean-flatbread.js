@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Mediterranean Flatbread',
     name: 'Mediterranean Flatbread',
     img: '',
-    recipeAuthors: ['Bailey'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.APPETIZER,CATEGORIES.SIDE_DISH],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Mediterranean Flatbread', link: 'https://sailorbailey.com/blog/mediterranean-flatbread/' }
+        { 
+            label: 'Mediterranean Flatbread', 
+            link: 'https://sailorbailey.com/blog/mediterranean-flatbread/',
+            author: ['Bailey'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

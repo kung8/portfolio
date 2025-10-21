@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'German Schnitzel',
     name: 'German Schnitzel',
     img: schnitzel5,
-    recipeAuthors: ['Kimberly Killebrew'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -36,7 +34,12 @@ module.exports = {
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'German Schnitzel', link: 'https://www.daringgourmet.com/traditional-german-pork-schnitzel/' }
+        { 
+            label: 'German Schnitzel', 
+            link: 'https://www.daringgourmet.com/traditional-german-pork-schnitzel/',
+            author: ['Kimberly Killebrew'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

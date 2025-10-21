@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Sesame Balls',
     name: 'Sesame Balls (Jian Dui or Banh Cam)',
     img: '',
-    recipeAuthors: ['Megan', 'Jeannette'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -29,8 +27,18 @@ module.exports = {
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Sesame Balls (Jian Dui)', link: 'https://takestwoeggs.com/sesame-balls-with-red-bean-paste/' },
-        { label: 'Banh Cam', link: 'https://www.wokandkin.com/banh-cam/' }
+        { 
+            label: 'Sesame Balls (Jian Dui)', 
+            link: 'https://takestwoeggs.com/sesame-balls-with-red-bean-paste/',
+            author: ['Megan'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Banh Cam', 
+            link: 'https://www.wokandkin.com/banh-cam/',
+            author: ['Jeannette'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

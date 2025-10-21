@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Garlic Ginger Chicken',
     name: "Dirty P's Garlic Ginger Chicken Thighs",
     img: '',
-    recipeAuthors: ['Guy Fieri'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: "Dirty P's Garlic Ginger Chicken Thighs", link: 'https://www.foodnetwork.com/recipes/guy-fieri/dirty-ps-garlic-ginger-chicken-thighs-recipe-2118432' }
+        { 
+            label: "Dirty P's Garlic Ginger Chicken Thighs", 
+            link: 'https://www.foodnetwork.com/recipes/guy-fieri/dirty-ps-garlic-ginger-chicken-thighs-recipe-2118432',
+            author: ['Guy Fieri'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

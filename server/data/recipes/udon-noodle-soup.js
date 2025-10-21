@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Udon Noodle Soup',
     name: 'Udon Noodle Soup',
     img: '',
-    recipeAuthors: ['Kris Longwell'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -26,7 +24,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 3, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Udon Noodle Soup', link: 'https://howtofeedaloon.com/udon-noodle-soup-with-pork/' }
+        { 
+            label: 'Udon Noodle Soup', 
+            link: 'https://howtofeedaloon.com/udon-noodle-soup-with-pork/',
+            author: ['Kris Longwell'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

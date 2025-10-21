@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Lasso Biscuits',
     name: 'Ted Lasso Biscuits',
     img: biscuits1,
-    recipeAuthors: ['Laurel Randolph'],
-    recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -29,7 +27,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 60, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Ted Lasso', link: 'https://www.thekitchn.com/the-official-ted-lasso-biscuit-recipe-23211497' },
+        { 
+            label: 'Ted Lasso', 
+            link: 'https://www.thekitchn.com/the-official-ted-lasso-biscuit-recipe-23211497',
+            author: ['Laurel Randolph'],
+            finder: 'Justin Ung', 
+        },
     ],
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'at room temperature', section: SECTIONS.MAIN },

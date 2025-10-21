@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Curry Puff',
     name: 'Curry Puff',
     img: '',
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.APPETIZER,CATEGORIES.SIDE_DISH],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Curry Puff', link: 'https://www.lionbrand.com.au/recipes/thai-curry-puff-recipe-karipap/' }
+        { 
+            label: 'Curry Puff', 
+            link: 'https://www.lionbrand.com.au/recipes/thai-curry-puff-recipe-karipap/',
+            author: [''],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

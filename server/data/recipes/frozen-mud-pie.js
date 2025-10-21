@@ -21,8 +21,6 @@ module.exports = {
     cardName: 'Frozen Mud Pie',
     name: 'Frozen Mud Pie',
     img: pie8,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -36,7 +34,12 @@ module.exports = {
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 195, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Frozen Mud Pie', link: 'https://www.facebook.com/photo.php?fbid=122096829650877256' }
+        { 
+            label: 'Frozen Mud Pie', 
+            link: 'https://www.facebook.com/photo.php?fbid=122096829650877256',
+            author: [''],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Sausage Balls',
     name: 'Sausage Balls',
     img: '',
-    recipeAuthors: ['Fauve'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Sausage Balls', link: 'https://www.food.com/recipe/sausage-balls-46078' }
+        { 
+            label: 'Sausage Balls', 
+            link: 'https://www.food.com/recipe/sausage-balls-46078',
+            author: ['Fauve'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

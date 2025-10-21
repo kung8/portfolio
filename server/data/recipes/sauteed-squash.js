@@ -22,8 +22,6 @@ module.exports = {
     cardName: 'Sauteed Squash',
     name: 'Sauteed Squash',
     img: squash3,
-    recipeAuthors: ['Erin Clarke'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
@@ -35,7 +33,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Sauteed Zucchini', link: "https://www.wellplated.com/sauteed-zucchini/" }
+        { 
+            label: 'Sauteed Zucchini', 
+            link: "https://www.wellplated.com/sauteed-zucchini/",
+            author: ['Erin Clarke'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

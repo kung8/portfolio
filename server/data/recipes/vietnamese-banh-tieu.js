@@ -23,8 +23,6 @@ module.exports = {
     cardName: 'Banh Tieu',
     name: 'Vietnamese Banh Tieu',
     img: tieu2,
-    recipeAuthors: ['ch3rri_blossoms'],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
@@ -38,7 +36,12 @@ module.exports = {
     cookTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 4, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Banh Tieu', link: 'https://en.petitchef.com/recipes/other/hollow-breads-banh-tieu-fid-628890' },
+        { 
+            label: 'Banh Tieu', 
+            link: 'https://en.petitchef.com/recipes/other/hollow-breads-banh-tieu-fid-628890',
+            author: ['ch3rri_blossoms'],
+            finder: 'Justin Ung', 
+        },
     ],
     separated: true,
     ingredients: [

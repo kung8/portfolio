@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'Mash Potatoes',
     name: 'Mash Potatoes',
     img: potatoes6,
-    recipeAuthors: ['Holly Nilsson'],
-    recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
@@ -31,7 +29,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Mash Potatoes', link: 'https://www.spendwithpennies.com/how-to-make-mashed-potatoes/' }
+        { 
+            label: 'Mash Potatoes', 
+            link: 'https://www.spendwithpennies.com/how-to-make-mashed-potatoes/',
+            author: ['Holly Nilsson'],
+            finder: 'Justin Ung', 
+        }
     ],
     separated: true,
 

@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Rice Pilaf',
     name: 'Rice Pilaf',
     img: '',
-    recipeAuthors: ['Lauren Allen'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -26,7 +24,12 @@ module.exports = {
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Rice Pilaf', link: 'https://tastesbetterfromscratch.com/how-to-make-easy-rice-pilaf/' }
+        { 
+            label: 'Rice Pilaf', 
+            link: 'https://tastesbetterfromscratch.com/how-to-make-easy-rice-pilaf/',
+            author: ['Lauren Allen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

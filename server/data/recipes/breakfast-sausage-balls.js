@@ -12,8 +12,6 @@ module.exports = {
     cardName: 'Breakfast Sausage Balls',
     name: 'Breakfast Sausage Balls',
     img: balls3,
-    recipeAuthors: ['Meghan Splawn'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST],
@@ -28,7 +26,12 @@ module.exports = {
     cookTime: { amount: 27, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Breakfast Sausage Balls', link: 'https://www.simplyrecipes.com/breakfast-sausage-balls-recipe-11701329' }
+        { 
+            label: 'Breakfast Sausage Balls', 
+            link: 'https://www.simplyrecipes.com/breakfast-sausage-balls-recipe-11701329',
+            author: ['Meghan Splawn'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -34,8 +34,6 @@ module.exports = {
     cardName: 'Sugar Cookies',
     name: 'Sugar Cookies',
     img: cookie23,
-    recipeAuthors: ['Sally McKenney'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -48,8 +46,18 @@ module.exports = {
     prepTime: { amount: 150, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Sugar Cookies', link: 'https://sallysbakingaddiction.com/best-sugar-cookies/' },
-        { label: 'Royal Icing', link: 'https://sallysbakingaddiction.com/royal-icing/' },
+        { 
+            label: 'Sugar Cookies', 
+            link: 'https://sallysbakingaddiction.com/best-sugar-cookies/',
+            author: ['Sally McKenney'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Royal Icing', 
+            link: 'https://sallysbakingaddiction.com/royal-icing/',
+            author: ['Sally McKenney'],
+            finder: 'Kevin Ung', 
+        },
     ],
     separated: true,
     ingredients: [

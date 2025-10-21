@@ -22,8 +22,6 @@ module.exports = {
     cardName: 'Sloppy Joes',
     name: 'Sloppy Joes',
     img: sloppy3,
-    recipeAuthors: ['Natasha Kravchuk'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -36,7 +34,12 @@ module.exports = {
     prepTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Sloppy Joe', link: 'https://natashaskitchen.com/sloppy-joe-recipe/' }
+        { 
+            label: 'Sloppy Joe', 
+            link: 'https://natashaskitchen.com/sloppy-joe-recipe/',
+            author: ['Natasha Kravchuk'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

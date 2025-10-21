@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Orange Chicken',
     name: 'Orange Chicken',
     img: orange8,
-    recipeAuthors: ['Melissa Stadler'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -34,7 +32,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Orange Chicken', link: 'https://www.modernhoney.com/chinese-orange-chicken/#wprm-recipe-container-12601' }
+        { 
+            label: 'Orange Chicken', 
+            link: 'https://www.modernhoney.com/chinese-orange-chicken/#wprm-recipe-container-12601',
+            author: ['Melissa Stadler'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -25,8 +25,6 @@ module.exports = {
     cardName: 'Texas Sausage Kolaches',
     name: 'Texas Sausage Kolaches',
     img: kolaches14,
-    recipeAuthors: ['Krissi Abott'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -41,7 +39,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 70, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Texas Sausage Kolaches', link: 'https://www.allrecipes.com/recipe/268998/texas-sausage-kolaches-klobasneks/' }
+        { 
+            label: 'Texas Sausage Kolaches', 
+            link: 'https://www.allrecipes.com/recipe/268998/texas-sausage-kolaches-klobasneks/',
+            author: ['Krissi Abott'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

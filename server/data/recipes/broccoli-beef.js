@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Broccoli Beef',
     name: 'Broccoli Beef',
     img: '',
-    recipeAuthors: ['Natasha Kravchuk'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Broccoli Beef', link: 'https://natashaskitchen.com/beef-and-broccoli/' } // (1.8K)
+        { 
+            label: 'Broccoli Beef', 
+            link: 'https://natashaskitchen.com/beef-and-broccoli/',
+            author: ['Natasha Kravchuk'],
+            finder: 'Kevin Ung', 
+        } // (1.8K)
     ],
     separated: true,
     ingredients: [

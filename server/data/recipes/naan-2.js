@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Naan 2',
     name: 'Naan 2',
     img: '',
-    recipeAuthors: ['Janette Zepeda'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.APPETIZER,CATEGORIES.SIDE_DISH],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Naan 2', link: 'https://www.thekitchn.com/naan-recipe-23711933' }
+        { 
+            label: 'Naan 2', 
+            link: 'https://www.thekitchn.com/naan-recipe-23711933',
+            author: ['Janette Zepeda'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

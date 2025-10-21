@@ -38,8 +38,6 @@ module.exports = {
     cardName: 'Broccoli Beef',
     name: 'Chinese Broccoli Beef',
     img: broccoli10,
-    recipeAuthors: ['Leahs Cohen'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
@@ -53,7 +51,12 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Broccoli Beef', link: "https://www.instagram.com/leahscohen/reel/C1a15_1OgWY/" }
+        { 
+            label: 'Broccoli Beef', 
+            link: "https://www.instagram.com/leahscohen/reel/C1a15_1OgWY/",
+            author: ['Leahs Cohen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

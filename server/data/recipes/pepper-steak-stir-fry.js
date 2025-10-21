@@ -23,8 +23,6 @@ module.exports = {
     cardName: 'Pepper Steak Stir Fry',
     name: 'Pepper Steak Stir Fry',
     img: stirFry2,
-    recipeAuthors: ['Kevin Ung'],
-    recipeFinder: '',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
@@ -38,7 +36,12 @@ module.exports = {
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Pepper Steak Stir Fry', link: 'https://www.dinneratthezoo.com/pepper-steak-stir-fry/' }
+        {
+            label: 'Pepper Steak Stir Fry',
+            link: 'https://www.dinneratthezoo.com/pepper-steak-stir-fry/',
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung',
+        }
     ],
     ingredients: [
         { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'divided', section: SECTIONS.MAIN },

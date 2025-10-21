@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'Greek Gyros',
     name: 'Greek Gyros',
     img: gryo8,
-    recipeAuthors: ['Nagi Maehashi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -34,7 +32,12 @@ module.exports = {
     cookTime: { amount: 6, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 3, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Greek Gyros', link: 'https://www.recipetineats.com/greek-chicken-gyros-with-tzatziki/' }
+        { 
+            label: 'Greek Gyros', 
+            link: 'https://www.recipetineats.com/greek-chicken-gyros-with-tzatziki/',
+            author: ['Nagi Maehashi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

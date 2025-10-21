@@ -40,8 +40,6 @@ module.exports = {
     cardName: 'Roast Turkey',
     name: 'Garlic Herb Butter Roast Turkey',
     img: turkey18,
-    recipeAuthors: ['Karina Carrel'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -55,7 +53,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 260, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Roast Turkey', link: 'https://cafedelites.com/roast-turkey/' }
+        { 
+            label: 'Roast Turkey', 
+            link: 'https://cafedelites.com/roast-turkey/',
+            author: ['Karina Carrel'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

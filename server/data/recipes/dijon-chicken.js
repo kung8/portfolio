@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Dijon Chicken',
     name: 'Dijon Chicken',
     img: '',
-    recipeAuthors: ['Diana71'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Dijon Chicken', link: 'https://www.allrecipes.com/dijon-chicken-6575993' }
+        { 
+            label: 'Dijon Chicken', 
+            link: 'https://www.allrecipes.com/dijon-chicken-6575993',
+            author: ['Diana71'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

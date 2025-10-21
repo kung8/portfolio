@@ -14,8 +14,6 @@ module.exports = {
     cardName: 'Crab Rangoon',
     name: 'Crab Rangoon',
     img: '',
-    recipeAuthors: ['Wendy Balderas'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER],
@@ -30,7 +28,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Crab Rangoon', link: 'https://recipesown.com/crab-rangoon-bombs-recipe/' }
+        { 
+            label: 'Crab Rangoon', 
+            link: 'https://recipesown.com/crab-rangoon-bombs-recipe/',
+            author: ['Wendy Balderas'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

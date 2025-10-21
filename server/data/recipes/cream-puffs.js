@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Cream Puffs',
     name: 'Cream Puffs',
     img: puffs8,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -31,7 +29,12 @@ module.exports = {
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Cream Puffs', link: 'https://www.allrecipes.com/recipe/15869/cream-puffs/' }
+        { 
+            label: 'Cream Puffs', 
+            link: 'https://www.allrecipes.com/recipe/15869/cream-puffs/',
+            author: [''],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -41,8 +41,6 @@ const DREDGING_STATION_SECTION = 'Dredging Station';
 module.exports = {
     cardName: 'Japanese Chicken Katsu',
     name: 'Japanese Chicken Katsu',
-    recipeAuthors: ['Namiko Hirasawa Chen'],
-    recipeFinder: 'Aldin Pope',
     img: katsu9,
     available: true,
     recommended: true,
@@ -58,7 +56,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Chicken Katsu', link: 'https://www.justonecookbook.com/chicken-katsu/' }
+        { 
+            label: 'Chicken Katsu', 
+            link: 'https://www.justonecookbook.com/chicken-katsu/',
+            author: ['Namiko Hirasawa Chen'],
+            finder: 'Aldin Pope', 
+        }
     ],
     ingredients: [
         { ...CHICKEN_BREAST, amount: 4, unit: '', additionalDetails: 'or ' + PORK_LOIN.name, section: SECTIONS.CHICKEN },

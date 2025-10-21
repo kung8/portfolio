@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'Apple Pie',
     name: 'Apple Pie',
     img: pie12,
-    recipeAuthors: ['Moshasmama'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -32,7 +30,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 70, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Apple Pie', link: "https://www.allrecipes.com/recipe/12682/apple-pie-by-grandma-ople/" },
+        { 
+            label: 'Apple Pie', 
+            link: "https://www.allrecipes.com/recipe/12682/apple-pie-by-grandma-ople/",
+            author: ['Moshasmama'], 
+            finder: 'Kevin Ung',
+        },
     ],
     separated: false,
     ingredients: [

@@ -14,8 +14,6 @@ module.exports = {
     cardName: 'Beignets',
     name: 'Beignets',
     img: '',
-    recipeAuthors: ['Ashley Manila'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
@@ -29,7 +27,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 130, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Beignets', link: 'https://bakerbynature.com/new-orleans-style-beignets/' }
+        { 
+            label: 'Beignets', 
+            link: 'https://bakerbynature.com/new-orleans-style-beignets/',
+            author: ['Ashley Manila'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

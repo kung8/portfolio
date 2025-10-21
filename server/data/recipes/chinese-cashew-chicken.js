@@ -39,8 +39,6 @@ module.exports = {
     cardName: 'Cashew Chicken',
     name: 'Chinese Cashew Chicken',
     img: chicken11,
-    recipeAuthors: ['Averie Sunshine'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -54,7 +52,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Cashew Chicken', link: "https://www.averiecooks.com/better-than-takeout-cashew-chicken" }
+        { 
+            label: 'Cashew Chicken', 
+            link: "https://www.averiecooks.com/better-than-takeout-cashew-chicken",
+            author: ['Averie Sunshine'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

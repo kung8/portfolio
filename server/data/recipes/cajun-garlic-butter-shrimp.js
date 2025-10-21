@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'Cajun Garlic Butter Shrimp',
     name: 'Cajun Garlic Butter Shrimp',
     img: '',
-    recipeAuthors: ['Alyssa Rivers'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -25,7 +23,12 @@ module.exports = {
     cookTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Cajun Garlic Butter Shrimp', link: 'https://therecipecritic.com/cajun-garlic-butter-shrimp/' }
+        { 
+            label: 'Cajun Garlic Butter Shrimp', 
+            link: 'https://therecipecritic.com/cajun-garlic-butter-shrimp/',
+            author: ['Alyssa Rivers'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

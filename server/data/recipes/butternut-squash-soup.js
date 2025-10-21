@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Butternut Squash Soup',
     name: 'Butternut Squash Soup',
     img: '',
-    recipeAuthors: ['Lindsay Funston'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -26,7 +24,12 @@ module.exports = {
     cookTime: { amount: 55, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Butternut Squash Soup', link: 'https://www.delish.com/cooking/recipe-ideas/recipes/a55386/best-roasted-butternut-squash-soup-recipe/' }
+        { 
+            label: 'Butternut Squash Soup', 
+            link: 'https://www.delish.com/cooking/recipe-ideas/recipes/a55386/best-roasted-butternut-squash-soup-recipe/',
+            author: ['Lindsay Funston'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -35,8 +35,6 @@ module.exports = {
     cardName: 'Black Pepper Chicken',
     name: 'Malaysian Black Pepper Chicken',
     img: pepper10,
-    recipeAuthors: [''],
-    recipeFinder: 'Marco Crosland',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MALAYSIAN, GENRES.ASIAN],
@@ -50,7 +48,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Ayam Black Pepper', link: "https://dapurmalaysia.com/resepi-ayam-black-pepper/" }
+        { 
+            label: 'Ayam Black Pepper', 
+            link: "https://dapurmalaysia.com/resepi-ayam-black-pepper/",
+            author: [''],
+            finder: 'Marco Crosland', 
+        }
     ],
     separated: true,
     ingredients: [

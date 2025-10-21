@@ -31,8 +31,6 @@ module.exports = {
     cardName: 'Swedish Meatballs',
     name: 'Swedish Meatballs (Kottbullar)',
     img: meatball17,
-    recipeAuthors: ['Nom Nom Nom'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.MAIN_DISH],
@@ -46,7 +44,12 @@ module.exports = {
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Swedish Meatballs', link: 'https://www.allrecipes.com/recipe/216564/swedish-meatballs-svenska-kottbullar/' }
+        { 
+            label: 'Swedish Meatballs', 
+            link: 'https://www.allrecipes.com/recipe/216564/swedish-meatballs-svenska-kottbullar/',
+            author: ['Nom Nom Nom'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

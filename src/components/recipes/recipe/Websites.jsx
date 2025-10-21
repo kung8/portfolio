@@ -10,11 +10,19 @@ export const Websites = () => {
         <>
             <h4 className="recipe-detail-label website-label">Website References:</h4>
             <ul className="recipe-websites-list">
-                {websites?.map(({ label, link }, i) => (
+                {websites?.map(({ author, finder, label, link }, i) => (
                     <li key={i} className="recipe-website-item">
-                        <a href={link} target="_blank" rel="noopener noreferrer">
-                            {label}
-                        </a>
+                        <div className="recipe-website-link">
+                            <a href={link} target="_blank" rel="noopener noreferrer" className="recipe-link">
+                                {label}
+                            </a>{' '}
+                            {author && (
+                                <span className="recipe-author">by {author}</span>
+                            )}
+                        </div>
+                        {finder && (
+                            <span className="recipe-finder">Referred by {finder}</span>
+                        )}
                     </li>
                 ))}
             </ul>

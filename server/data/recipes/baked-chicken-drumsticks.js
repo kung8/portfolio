@@ -25,8 +25,6 @@ module.exports = {
     cardName: 'Baked Chicken Drumsticks',
     name: 'Baked Chicken Drumsticks',
     img: drumstick4,
-    recipeAuthors: ['Vered DeLeeuw'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -40,7 +38,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Baked Chicken', link: 'https://healthyrecipesblogs.com/baked-drumsticks/' },
+        { 
+            label: 'Baked Chicken', 
+            link: 'https://healthyrecipesblogs.com/baked-drumsticks/',
+            author: ['Vered DeLeeuw'],
+            finder: 'Kevin Ung', 
+        },
     ],
     ingredients: [
         { ...CHICKEN_DRUMSTICKS, amount: 10, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'skin on', section: SECTIONS.MAIN },

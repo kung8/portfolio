@@ -12,8 +12,6 @@ module.exports = {
     cardName: 'Lemon Bars',
     name: 'Lemon Bars',
     img: bars6,
-    recipeAuthors: ['John Kanell'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -26,7 +24,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 55, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Lemon Bars', link: "https://preppykitchen.com/lemon-bars" }
+        { 
+            label: 'Lemon Bars', 
+            link: "https://preppykitchen.com/lemon-bars",
+            author: ['John Kanell'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

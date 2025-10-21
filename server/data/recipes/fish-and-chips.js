@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Fish and Chips',
     name: 'Fish and Chips',
     img: chips6,
-    recipeAuthors: ['Shawn'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -31,7 +29,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Crispy Beer-Battered Fish', link: 'https://iwashyoudry.com/crispy-beer-batter-fish-recipe/' }
+        { 
+            label: 'Crispy Beer-Battered Fish', 
+            link: 'https://iwashyoudry.com/crispy-beer-batter-fish-recipe/',
+            author: ['Shawn'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

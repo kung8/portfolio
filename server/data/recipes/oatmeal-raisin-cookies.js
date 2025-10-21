@@ -26,8 +26,6 @@ module.exports = {
     cardName: 'Oatmeal Raisin Cookies',
     name: 'Oatmeal Raisin Cookies',
     img: cooled,
-    recipeAuthors: ['Bev I Am'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -40,7 +38,12 @@ module.exports = {
     prepTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 13, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Oatmeal Raisin Cookies', link: "https://www.food.com/recipe/oatmeal-raisin-cookies-35813" }
+        { 
+            label: 'Oatmeal Raisin Cookies', 
+            link: "https://www.food.com/recipe/oatmeal-raisin-cookies-35813",
+            author: ['Bev I Am'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

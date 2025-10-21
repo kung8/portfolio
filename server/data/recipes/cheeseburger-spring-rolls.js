@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Cheeseburger Spring Rolls',
     name: 'Cheeseburger Spring Rolls',
     img: roll9,
-    recipeAuthors: ['Kate Phillips'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
@@ -36,7 +34,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Cheeseburger Spring Rolls', link: 'https://dishedbykate.com/cheeseburger-spring-rolls/' }
+        { 
+            label: 'Cheeseburger Spring Rolls', 
+            link: 'https://dishedbykate.com/cheeseburger-spring-rolls/',
+            author: ['Kate Phillips'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

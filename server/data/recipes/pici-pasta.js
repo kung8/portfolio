@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'Pici Pasta',
     name: 'Pici Pasta',
     img: '',
-    recipeAuthors: ['Montana Mack'],
-    recipeFinder: 'Chelsey Hickenlooper',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pici Pasta', link: 'https://monmackfood.com/vibrant-green-pici-pasta-no-pasta-roller-required/' }
+        { 
+            label: 'Pici Pasta', 
+            link: 'https://monmackfood.com/vibrant-green-pici-pasta-no-pasta-roller-required/',
+            author: ['Montana Mack'],
+            finder: 'Chelsey Hickenlooper', 
+        }
     ],
     separated: false,
     ingredients: [

@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Ayam Penyet',
     name: 'Indonesian Ayam Penyet',
     img: penyet5,
-    recipeAuthors: ['deravi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -36,7 +34,12 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Ayam Penyet', link: 'https://www.allrecipes.com/recipe/264557/ayam-penyet-pedas-indonesian-spicy-penyet-chicken/' }
+        { 
+            label: 'Ayam Penyet', 
+            link: 'https://www.allrecipes.com/recipe/264557/ayam-penyet-pedas-indonesian-spicy-penyet-chicken/',
+            author: ['deravi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

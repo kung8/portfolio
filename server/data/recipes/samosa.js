@@ -36,8 +36,6 @@ module.exports = {
     cardName: 'Samosa',
     name: 'Samosa',
     img: samosa21,
-    recipeAuthors: ['Swasthi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER],
@@ -51,7 +49,12 @@ module.exports = {
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Samosa', link: 'https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/' }
+        { 
+            label: 'Samosa', 
+            link: 'https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/',
+            author: ['Swasthi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

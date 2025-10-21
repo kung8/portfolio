@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Baked Ritz Bites',
     name: 'Baked Ritz Bites',
     img: bites2,
-    recipeAuthors: ['Natalie Mason'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
@@ -26,7 +24,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Cheesy Ritz Pickle Bites', link: 'https://natalie-mason.com/cheesy-ritz-pickle-bites/' }
+        { 
+            label: 'Cheesy Ritz Pickle Bites', 
+            link: 'https://natalie-mason.com/cheesy-ritz-pickle-bites/',
+            author: ['Natalie Mason'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

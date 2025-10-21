@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Pumpkin Soup',
     name: 'Pumpkin Soup',
     img: '',
-    recipeAuthors: ['Anna Painter'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -25,7 +23,12 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pumpkin Soup', link: 'https://www.delish.com/cooking/recipe-ideas/a45025736/pumpkin-soup-recipe/' }
+        { 
+            label: 'Pumpkin Soup', 
+            link: 'https://www.delish.com/cooking/recipe-ideas/a45025736/pumpkin-soup-recipe/',
+            author: ['Anna Painter'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Kung Pao Chicken',
     name: 'Kung Pao Chicken',
     img: kung8,
-    recipeAuthors: ['Natasha Kravchuk'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -31,7 +29,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Kung Pao Chicken', link: 'https://natashaskitchen.com/kung-pao-chicken/' }
+        { 
+            label: 'Kung Pao Chicken', 
+            link: 'https://natashaskitchen.com/kung-pao-chicken/',
+            author: ['Natasha Kravchuk'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -12,8 +12,6 @@ module.exports = {
     cardName: '5-Spice Blend',
     name: 'Five Spice Blend',
     img: blend2,
-    recipeAuthors: ['SilentCricket'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.TOPPING],
@@ -25,7 +23,12 @@ module.exports = {
     yields: { amount: 1 / 4, unit: YIELD_UNITS.CUP },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: '5-Spice', link: 'https://www.food.com/recipe/five-spice-powder-66216' }
+        { 
+            label: '5-Spice', 
+            link: 'https://www.food.com/recipe/five-spice-powder-66216',
+            author: ['SilentCricket'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

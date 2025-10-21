@@ -35,8 +35,6 @@ module.exports = {
     cardName: 'Snickerdoodles',
     name: 'Snickerdoodle Cookies',
     img: cookie10,
-    recipeAuthors: ['Kristyn Merkley'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -49,7 +47,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Snickerdoodles', link: 'https://lilluna.com/snickerdoodles/' },
+        { 
+            label: 'Snickerdoodles', 
+            link: 'https://lilluna.com/snickerdoodles/',
+            author: ['Kristyn Merkley'],
+            finder: 'Kevin Ung', 
+        },
     ],
     separated: true,
     ingredients: [

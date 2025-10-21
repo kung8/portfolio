@@ -14,8 +14,6 @@ module.exports = {
     cardName: 'Chicken Coconut Curry',
     name: 'Javanese Chicken Coconut Curry',
     img: curry6,
-    recipeAuthors: ['Katrina Woodman'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -30,7 +28,12 @@ module.exports = {
     cookTime: { amount: 70, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Javanese Chicken Coconut Curry', link: 'https://www.taste.com.au/recipes/javanese-chicken-coconut-curry-opor-ayam/ffd7ae57-ebd8-4886-a95b-2e49d067bd19' }
+        { 
+            label: 'Javanese Chicken Coconut Curry', 
+            link: 'https://www.taste.com.au/recipes/javanese-chicken-coconut-curry-opor-ayam/ffd7ae57-ebd8-4886-a95b-2e49d067bd19',
+            author: ['Katrina Woodman'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

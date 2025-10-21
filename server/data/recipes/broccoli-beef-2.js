@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Broccoli Beef 2',
     name: 'Broccoli Beef 2',
     img: '',
-    recipeAuthors: ['Kelly Senyei'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Broccoli Beef 2', link: 'https://www.justataste.com/easy-beef-and-broccoli-recipe/' } // (1.2K)
+        { 
+            label: 'Broccoli Beef 2', 
+            link: 'https://www.justataste.com/easy-beef-and-broccoli-recipe/',
+            author: ['Kelly Senyei'],
+            finder: 'Kevin Ung', 
+        } // (1.2K)
     ],
     separated: true,
     ingredients: [

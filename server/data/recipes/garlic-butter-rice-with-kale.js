@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Garlic Butter Rice with Kale',
     name: 'Garlic Butter Rice with Kale',
     img: '',
-    recipeAuthors: ['Nagi Maehashi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -25,7 +23,12 @@ module.exports = {
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Garlic Butter Rice with Kale', link: 'https://www.recipetineats.com/garlic-butter-rice-with-kale-recipe/' }
+        { 
+            label: 'Garlic Butter Rice with Kale', 
+            link: 'https://www.recipetineats.com/garlic-butter-rice-with-kale-recipe/',
+            author: ['Nagi Maehashi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

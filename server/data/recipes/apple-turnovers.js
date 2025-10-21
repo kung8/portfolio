@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Apple Turnovers',
     name: 'Apple Turnovers',
     img: '',
-    recipeAuthors: ["Maureen O'Leary"],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Apple Turnovers', link: 'https://www.allrecipes.com/recipe/59124/apple-turnovers/' }
+        { 
+            label: 'Apple Turnovers', 
+            link: 'https://www.allrecipes.com/recipe/59124/apple-turnovers/',
+            author: ['Maureen O\'Leary'],
+            finder: 'Kevin Ung',
+        }
     ],
     separated: true,
     ingredients: [

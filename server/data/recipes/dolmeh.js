@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Dolmeh',
     name: 'Dolmeh',
     img: dolmeh5,
-    recipeAuthors: ['Shadi Hasanzadenemati'],
-    recipeFinder: "Kasra Kamravani's Mom",
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -31,7 +29,12 @@ module.exports = {
     cookTime: { amount: 80, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Dolmeh', link: 'https://www.unicornsinthekitchen.com/persian-dolmeh-recipe-video/' }
+        { 
+            label: 'Dolmeh', 
+            link: 'https://www.unicornsinthekitchen.com/persian-dolmeh-recipe-video/',
+            author: ['Shadi Hasanzadenemati'],
+            finder: 'Kasra Kamravani\'s Mom', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -23,8 +23,6 @@ module.exports = {
     cardName: 'Cherry Crostata',
     name: 'Cherry and Dark Chocolate Crostata',
     img: crostata17,
-    recipeAuthors: ['Stefano Secchi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -38,7 +36,12 @@ module.exports = {
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 90, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Cherry and Dark Chocolate Crostata', link: 'https://www.bonappetit.com/recipe/cherry-and-dark-chocolate-crostata' }
+        { 
+            label: 'Cherry and Dark Chocolate Crostata', 
+            link: 'https://www.bonappetit.com/recipe/cherry-and-dark-chocolate-crostata',
+            author: ['Stefano Secchi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

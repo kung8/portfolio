@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Chicken Quesadilla',
     name: 'Chicken Quesadilla',
     img: quesadilla11,
-    recipeAuthors: ['Erin Clarke'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -35,7 +33,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chicken Quesadilla', link: 'https://www.wellplated.com/chicken-quesadilla/' }
+        { 
+            label: 'Chicken Quesadilla', 
+            link: 'https://www.wellplated.com/chicken-quesadilla/',
+            author: ['Erin Clarke'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

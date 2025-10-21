@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Mochi',
     name: 'Japanese Mochi',
     img: mochi6,
-    recipeAuthors: ['Mochi Mommy'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -29,7 +27,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Mochi', link: 'https://www.mochimommy.com/easy-homemade-mochi/' }
+        { 
+            label: 'Mochi', 
+            link: 'https://www.mochimommy.com/easy-homemade-mochi/',
+            author: ['Mochi Mommy'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

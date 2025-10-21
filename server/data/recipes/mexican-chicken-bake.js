@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Mexican Chicken Bake',
     name: 'Mexican Chicken Bake',
     img: mexicanChickenBake,
-    recipeAuthors: [''],
-    recipeFinder: '',
     available: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN],
@@ -21,7 +19,12 @@ module.exports = {
     prepTime: { amount: '', unit: TIME_UNITS.MINUTE },
     cookTime: { amount: '', unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: '', link: '' }
+        { 
+            label: '', 
+            link: '',
+            author: [''],
+            finder: '', 
+        }
     ],
     separated: true,
     ingredients: [

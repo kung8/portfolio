@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'PB Thumbprint Cookies',
     name: 'Peanut Butter Thumbprint Cookies',
     img: cookies8,
-    recipeAuthors: ['John Kanell'],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -32,7 +30,12 @@ module.exports = {
     prepTime: { amount: '20', unit: TIME_UNITS.MINUTE },
     cookTime: { amount: '10', unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Peanut Butter Blossoms', link: 'https://preppykitchen.com/peanut-butter-blossoms/' }
+        { 
+            label: 'Peanut Butter Blossoms', 
+            link: 'https://preppykitchen.com/peanut-butter-blossoms/',
+            author: ['John Kanell'],
+            finder: 'Justin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

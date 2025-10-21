@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Potato Gnocchi',
     name: 'Potato Gnocchi',
     img: '',
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -25,7 +23,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Potato Gnocchi', link: 'https://www.giallozafferano.com/recipes/Potato-gnocchi.html' }
+        { 
+            label: 'Potato Gnocchi', 
+            link: 'https://www.giallozafferano.com/recipes/Potato-gnocchi.html',
+            author: [''],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

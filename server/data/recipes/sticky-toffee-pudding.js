@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Sticky Toffee Pudding',
     name: 'Sticky Toffee Pudding',
     img: pudding2,
-    recipeAuthors: ['Patricia Rain'],
-    recipeFinder: 'Steve Kenny',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -24,7 +22,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Sticky Toffee Pudding', link: 'https://vanillaqueen.com/sticky-toffee-pudding/' }
+        { 
+            label: 'Sticky Toffee Pudding', 
+            link: 'https://vanillaqueen.com/sticky-toffee-pudding/',
+            author: ['Patricia Rain'],
+            finder: 'Steve Kenny', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Roti',
     name: 'Roti',
     img: '',
-    recipeAuthors: ['Manali Singh'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Roti', link: 'https://www.cookwithmanali.com/roti-recipe/' }
+        { 
+            label: 'Roti', 
+            link: 'https://www.cookwithmanali.com/roti-recipe/',
+            author: ['Manali Singh'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

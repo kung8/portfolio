@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'Stuffing',
     name: 'Stuffing',
     img: stuffing12,
-    recipeAuthors: ['Jessica'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -31,7 +29,12 @@ module.exports = {
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Stuffing', link: 'https://www.howsweeteats.com/2020/11/best-stuffing-recipe/' }
+        { 
+            label: 'Stuffing', 
+            link: 'https://www.howsweeteats.com/2020/11/best-stuffing-recipe/',
+            author: ['Jessica'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

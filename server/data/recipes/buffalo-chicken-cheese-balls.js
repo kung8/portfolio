@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Buffalo Chicken Cheese Balls',
     name: 'Buffalo Chicken Cheese Balls',
     img: '',
-    recipeAuthors: ['Scoutie'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.APPETIZER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Buffalo Chicken Cheese Balls', link: 'https://www.food.com/recipe/buffalo-chicken-cheese-balls-with-blue-cheese-dip-352425' }
+        { 
+            label: 'Buffalo Chicken Cheese Balls', 
+            link: 'https://www.food.com/recipe/buffalo-chicken-cheese-balls-with-blue-cheese-dip-352425',
+            author: ['Scoutie'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

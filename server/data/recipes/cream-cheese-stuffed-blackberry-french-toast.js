@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Blackberry French Toast',
     name: 'Cream Cheese Stuffed Blackberry French Toast',
     img: '',
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.BREAKFAST,CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Cream Cheese Stuffed Blackberry French Toast', link: 'https://recipesfiber.com/cream-cheese-stuffed-blackberry-compote-french-toast/' }
+        { 
+            label: 'Cream Cheese Stuffed Blackberry French Toast', 
+            link: 'https://recipesfiber.com/cream-cheese-stuffed-blackberry-compote-french-toast/',
+            author: [''],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

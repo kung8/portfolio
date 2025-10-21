@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Honey Sesame Chicken',
     name: 'Honey Sesame Chicken',
     img: sesame8,
-    recipeAuthors: ['Sara Welch'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -35,7 +33,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Honey Sesame Chicken', link: 'https://www.dinneratthezoo.com/lighter-honey-sesame-chicken/' }
+        { 
+            label: 'Honey Sesame Chicken', 
+            link: 'https://www.dinneratthezoo.com/lighter-honey-sesame-chicken/',
+            author: ['Sara Welch'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

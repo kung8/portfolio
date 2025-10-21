@@ -25,8 +25,6 @@ module.exports = {
     cardName: 'Oyakodon',
     name: 'Oyakodon',
     img: oyakodon9,
-    recipeAuthors: ['Namiko Hirasawa Chen'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -40,7 +38,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Oyakodon', link: 'https://www.justonecookbook.com/oyakodon/' }
+        { 
+            label: 'Oyakodon', 
+            link: 'https://www.justonecookbook.com/oyakodon/',
+            author: ['Namiko Hirasawa Chen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

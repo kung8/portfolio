@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Brazilian Black Beans',
     name: 'Brazilian Black Beans',
     img: '',
-    recipeAuthors: ['Sara Wells'],
-    recipeFinder: 'Montana Hiltbrand',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER,CATEGORIES.SIDE_DISH],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Brazilian Black Beans', link: 'https://ourbestbites.com/brazilian-style-black-beans-rice/' }
+        { 
+            label: 'Brazilian Black Beans', 
+            link: 'https://ourbestbites.com/brazilian-style-black-beans-rice/',
+            author: ['Sara Wells'],
+            finder: 'Montana Hiltbrand', 
+        }
     ],
     separated: true,
     ingredients: [

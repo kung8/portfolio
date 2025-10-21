@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Roasted Asparagus',
     name: 'Roasted Asparagus',
     img: asparagus4,
-    recipeAuthors: ['Kathryne Taylor'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH],
@@ -25,7 +23,12 @@ module.exports = {
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Roasted Asparagus', link: 'https://cookieandkate.com/perfect-roasted-asparagus-recipe/' }
+        { 
+            label: 'Roasted Asparagus', 
+            link: 'https://cookieandkate.com/perfect-roasted-asparagus-recipe/',
+            author: ['Kathryne Taylor'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

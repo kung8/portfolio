@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Baked Beans',
     name: 'Baked Beans',
     img: beans11,
-    recipeAuthors: ['Kelsey'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -33,7 +31,12 @@ module.exports = {
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 3, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Baked Beans', link: 'https://dancearoundthekitchen.com/baked-beans-from-scratch/' }
+        { 
+            label: 'Baked Beans', 
+            link: 'https://dancearoundthekitchen.com/baked-beans-from-scratch/',
+            author: ['Kelsey'],
+            finder: 'Kevin Ung',
+        }
     ],
     separated: true,
     ingredients: [

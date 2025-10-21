@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Pasta Salad',
     name: 'Pasta Salad',
     img: '',
-    recipeAuthors: ['Jeanine', 'Jack'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pasta Salad', link: 'https://www.loveandlemons.com/pasta-salad/' }
+        { 
+            label: 'Pasta Salad', 
+            link: 'https://www.loveandlemons.com/pasta-salad/',
+            author: ['Jeanine'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

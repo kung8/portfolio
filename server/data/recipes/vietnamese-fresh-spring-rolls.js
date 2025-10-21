@@ -22,8 +22,6 @@ module.exports = {
     cardName: 'Fresh Spring Rolls',
     name: 'Vietnamese Fresh Spring Rolls',
     img: rolls9,
-    recipeAuthors: ['Lauren Allen', 'Todd Porter', 'Diane Porter'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER],
@@ -37,8 +35,18 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Fresh Spring Rolls', link: 'https://tastesbetterfromscratch.com/fresh-spring-rolls/' },
-        { label: 'Shrimp and Pork Filling', link: 'https://whiteonricecouple.com/vietnamese-fresh-spring-rolls/' }
+        { 
+            label: 'Fresh Spring Rolls', 
+            link: 'https://tastesbetterfromscratch.com/fresh-spring-rolls/',
+            author: ['Lauren Allen'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Shrimp and Pork Filling', 
+            link: 'https://whiteonricecouple.com/vietnamese-fresh-spring-rolls/',
+            author: ['Todd Porter', 'Diane Porter'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

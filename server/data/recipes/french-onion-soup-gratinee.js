@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'French Onion Soup',
     name: 'French Onion Soup Gratinee',
     img: '',
-    recipeAuthors: ['Jersey Tomato'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
@@ -30,7 +28,12 @@ module.exports = {
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'French Onion Soup Gratinee', link: 'https://www.allrecipes.com/recipe/91192/french-onion-soup-gratinee/' }
+        { 
+            label: 'French Onion Soup Gratinee', 
+            link: 'https://www.allrecipes.com/recipe/91192/french-onion-soup-gratinee/',
+            author: ['Jersey Tomato'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [
@@ -47,7 +50,6 @@ module.exports = {
         { ...BEEF_BROTH, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.BROTH },
         { ...RED_WINE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
         { ...WORCESTERSHIRE_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BROTH },
-
 
         { ...BALSAMIC_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },

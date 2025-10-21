@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Bruschetta',
     name: 'Balsamic Tomato Bruschetta',
     img: bruschetta4,
-    recipeAuthors: ['Becca Mills'],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
@@ -31,7 +29,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Balsamic Tomato Bruschetta', link: 'https://www.forkinthekitchen.com/balsamic-bruschetta-on-crostini/' }
+        { 
+            label: 'Balsamic Tomato Bruschetta', 
+            link: 'https://www.forkinthekitchen.com/balsamic-bruschetta-on-crostini/',
+            author: ['Becca Mills'],
+            finder: 'Justin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

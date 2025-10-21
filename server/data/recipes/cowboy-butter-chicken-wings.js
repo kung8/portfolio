@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Cowboy Butter Chicken Wings',
     name: 'Cowboy Butter Chicken Wings',
     img: wings5,
-    recipeAuthors: ['Kelli Foster'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -31,7 +29,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Cowboy Butter Chicken Wings', link: 'https://www.thekitchn.com/cowboy-butter-chicken-wings-recipe-23708102' }
+        { 
+            label: 'Cowboy Butter Chicken Wings', 
+            link: 'https://www.thekitchn.com/cowboy-butter-chicken-wings-recipe-23708102',
+            author: ['Kelli Foster'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

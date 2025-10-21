@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Caramel Apples',
     name: 'Caramel Apples',
     img: apples11,
-    recipeAuthors: ['onlyxception'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -33,7 +31,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Caramel Apples', link: 'https://www.allrecipes.com/recipe/228210/the-best-caramel-apples/' }
+        { 
+            label: 'Caramel Apples', 
+            link: 'https://www.allrecipes.com/recipe/228210/the-best-caramel-apples/',
+            author: ['onlyxception'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -46,8 +46,6 @@ module.exports = {
     cardName: 'C.F. Cheesecake',
     name: 'Cheesecake Factory Cheesecake',
     img: cheesecake17,
-    recipeAuthors: ['Justin Sullivan'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -62,7 +60,12 @@ module.exports = {
     waitTime: { amount: 5, unit: TIME_UNITS.HOUR },
     separated: true,
     websites: [
-        { label: 'Cheesecake Factory Copycat', link: 'https://www.delish.com/cooking/recipe-ideas/a37762621/cheesecake-factory-cheesecake-1ipe/' }
+        { 
+            label: 'Cheesecake Factory Copycat', 
+            link: 'https://www.delish.com/cooking/recipe-ideas/a37762621/cheesecake-factory-cheesecake-1ipe/',
+            author: ['Justin Sullivan'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.CRUST },

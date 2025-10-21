@@ -84,8 +84,6 @@ module.exports = {
     cardName: 'Homemade Pizza',
     name: 'Homemade Pizza',
     img: pizza26,
-    recipeAuthors: ['Marzia'],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -100,7 +98,12 @@ module.exports = {
     waitTime: { amount: 72.5, unit: TIME_UNITS.HOUR },
     separated: true,
     websites: [
-        { label: 'Philly Cheese Steak Pizza', link: 'https://littlespicejar.com/philly-cheese-steak-pizza/' }
+        { 
+            label: 'Philly Cheese Steak Pizza', 
+            link: 'https://littlespicejar.com/philly-cheese-steak-pizza/',
+            author: ['Marzia'],
+            finder: 'Justin Ung', 
+        }
     ],
     ingredients: [
         { ...BREAD_FLOUR, amount: 9 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },

@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'Homemade BBQ Sauce',
     name: 'Homemade BBQ Sauce',
     img: sauce3,
-    recipeAuthors: ['Joshua Weissman'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SAUCE],
@@ -23,7 +21,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'BBQ Sauce', link: 'https://www.joshuaweissman.com/post/mcdonald-s-mcnuggets-but-better' }
+        { 
+            label: 'BBQ Sauce', 
+            link: 'https://www.joshuaweissman.com/post/mcdonald-s-mcnuggets-but-better',
+            author: ['Joshua Weissman'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

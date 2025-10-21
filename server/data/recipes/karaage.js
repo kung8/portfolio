@@ -21,8 +21,6 @@ module.exports = {
     cardName: 'Karaage',
     name: 'Karaage',
     img: karaage7,
-    recipeAuthors: ['Kurashiru'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -36,7 +34,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Karaage', link: 'https://www.youtube.com/watch?feature=shared&v=COAX5gkZZ74' }
+        { 
+            label: 'Karaage', 
+            link: 'https://www.youtube.com/watch?feature=shared&v=COAX5gkZZ74',
+            author: ['Kurashiru'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

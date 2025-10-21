@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Ravioli',
     name: 'Ravioli',
     img: ravioli11,
-    recipeAuthors: ['Beppe Castro'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -35,7 +33,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Ravioli', link: 'https://www.saturdaysinrome.com/blog/ricotta-ravioli-recipe/' }
+        { 
+            label: 'Ravioli', 
+            link: 'https://www.saturdaysinrome.com/blog/ricotta-ravioli-recipe/',
+            author: ['Beppe Castro'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

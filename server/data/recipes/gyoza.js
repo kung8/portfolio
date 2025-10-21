@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Gyoza',
     name: 'Gyoza',
     img: gyoza8,
-    recipeAuthors: ['Natalya Drozhzhin'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -35,7 +33,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Gyoza', link: 'https://momsdish.com/gyoza' }
+        { 
+            label: 'Gyoza', 
+            link: 'https://momsdish.com/gyoza',
+            author: ['Natalya Drozhzhin'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

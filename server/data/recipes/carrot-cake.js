@@ -26,8 +26,6 @@ module.exports = {
     cardName: 'Carrot Cake',
     name: 'Carrot Cake',
     img: cake15,
-    recipeAuthors: ['Nan and Joanne Gallagher'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -40,8 +38,18 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Carrot Cake', link: "https://www.allrecipes.com/recipe/17393/best-carrot-cake-ever/" },
-        { label: 'Frosting', link: "https://www.inspiredtaste.net/25753/carrot-cake-recipe/" },
+        { 
+            label: 'Carrot Cake', 
+            link: "https://www.allrecipes.com/recipe/17393/best-carrot-cake-ever/",
+            author: ['Nan'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Frosting', 
+            link: "https://www.inspiredtaste.net/25753/carrot-cake-recipe/",
+            author: ['Joanne Gallagher'],
+            finder: 'Kevin Ung', 
+        },
     ],
     separated: true,
     ingredients: [

@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'Lemon Capellini Salad',
     name: 'Lemon Capellini Salad',
     img: '',
-    recipeAuthors: ['Shawn'],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH],
@@ -24,7 +22,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Lemon Capellini Salad', link: 'https://iwashyoudry.com/lemon-capellini-salad/' }
+        { 
+            label: 'Lemon Capellini Salad', 
+            link: 'https://iwashyoudry.com/lemon-capellini-salad/',
+            author: ['Shawn'],
+            finder: 'Justin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

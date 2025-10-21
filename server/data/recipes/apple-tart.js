@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Apple Tart',
     name: 'Apple Tart',
     img: tart10,
-    recipeAuthors: ['Rebecca Franklin'],
-    recipeFinder: 'Sam Giraud-Carrier',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -33,7 +31,12 @@ module.exports = {
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Apple Tart', link: 'https://www.thespruceeats.com/french-apple-tarte-aux-pommes-recipe-1375048' }
+        {
+            label: 'Apple Tart',
+            link: 'https://www.thespruceeats.com/french-apple-tarte-aux-pommes-recipe-1375048',
+            author: ['Rebecca Franklin'],
+            finder: 'Sam Giraud-Carrier',
+        }
     ],
     separated: true,
     ingredients: [

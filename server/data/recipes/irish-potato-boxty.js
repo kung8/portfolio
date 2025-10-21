@@ -14,8 +14,6 @@ module.exports = {
     cardName: 'Irish Potato Boxty',
     name: 'Irish Potato Boxty',
     img: '',
-    recipeAuthors: ['Ian Knauer'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -29,7 +27,12 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Irish Potato Boxty', link: 'https://www.foodandwine.com/irish-potato-boxty-6422424' }
+        { 
+            label: 'Irish Potato Boxty', 
+            link: 'https://www.foodandwine.com/irish-potato-boxty-6422424',
+            author: ['Ian Knauer'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

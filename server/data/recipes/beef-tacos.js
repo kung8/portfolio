@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Beef Tacos',
     name: 'Beef Tacos',
     img: tacos4,
-    recipeAuthors: ['Yumna Jawad'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -28,7 +26,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Beef Tacos', link: 'https://feelgoodfoodie.net/recipe/ground-beef-tacos-napa-cabbage-guacamole/' }
+        { 
+            label: 'Beef Tacos', 
+            link: 'https://feelgoodfoodie.net/recipe/ground-beef-tacos-napa-cabbage-guacamole/',
+            author: ['Yumna Jawad'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

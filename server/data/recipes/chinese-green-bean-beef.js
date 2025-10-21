@@ -32,8 +32,6 @@ module.exports = {
     cardName: 'Green Bean Beef',
     name: 'Green Bean Beef',
     img: bean9,
-    recipeAuthors: ['Kim'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
@@ -47,7 +45,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Green Bean Beef', link: "https://todayscreativelife.com/chinese-beef-green-beans/" }
+        { 
+            label: 'Green Bean Beef', 
+            link: "https://todayscreativelife.com/chinese-beef-green-beans/",
+            author: ['Kim'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...CHICKEN_BROTH, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.SAUCE },

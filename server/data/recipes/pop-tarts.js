@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Pop Tarts',
     name: 'Pop Tarts',
     img: tart3,
-    recipeAuthors: ['Tracy'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.SNACK, CATEGORIES.DESSERT],
@@ -30,7 +28,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pop Tarts', link: 'https://bakingmischief.com/what-to-do-with-leftover-pie-dough/' }
+        { 
+            label: 'Pop Tarts', 
+            link: 'https://bakingmischief.com/what-to-do-with-leftover-pie-dough/',
+            author: ['Tracy'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

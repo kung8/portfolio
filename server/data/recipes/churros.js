@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'Churros',
     name: 'Churros',
     img: churros5,
-    recipeAuthors: ['Jaclyn'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -31,7 +29,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Churros', link: 'https://www.cookingclassy.com/churros/' }
+        { 
+            label: 'Churros', 
+            link: 'https://www.cookingclassy.com/churros/',
+            author: ['Jaclyn'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

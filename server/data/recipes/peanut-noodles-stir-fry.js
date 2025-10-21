@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'Peanut Noodles Stir Fry',
     name: 'Peanut Noodles Stir Fry',
     img: stirFry9,
-    recipeAuthors: ['Kyrie Patterson'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -34,7 +32,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Peanut Noodles Stir Fry', link: 'https://farmerxfoodie.com/easy-peanut-noodles-stir-fry/' }
+        { 
+            label: 'Peanut Noodles Stir Fry', 
+            link: 'https://farmerxfoodie.com/easy-peanut-noodles-stir-fry/',
+            author: ['Kyrie Patterson'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

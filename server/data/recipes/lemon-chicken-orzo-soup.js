@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'Lemon Chicken Orzo Soup',
     name: 'Lemon Chicken Orzo Soup',
     img: '',
-    recipeAuthors: ['Ree Drummond'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -33,7 +31,12 @@ module.exports = {
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Lemon Chicken-Orzo Soup', link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a39296200/lemon-chicken-orzo-soup-recipe/' }
+        { 
+            label: 'Lemon Chicken-Orzo Soup', 
+            link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a39296200/lemon-chicken-orzo-soup-recipe/',
+            author: ['Ree Drummond'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

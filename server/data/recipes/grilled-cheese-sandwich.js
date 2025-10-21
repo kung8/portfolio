@@ -14,8 +14,6 @@ module.exports = {
     cardName: 'Grilled Cheese',
     name: 'Grilled Cheese Sandwich',
     img: grilled6,
-    recipeAuthors: ['Sara'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -28,7 +26,12 @@ module.exports = {
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Grilled Cheese Sandwich', link: 'https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/' }
+        { 
+            label: 'Grilled Cheese Sandwich', 
+            link: 'https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/',
+            author: ['Sara'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

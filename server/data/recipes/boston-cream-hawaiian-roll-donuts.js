@@ -28,8 +28,6 @@ module.exports = {
     cardName: 'Boston Cream Donuts',
     name: 'Boston Cream Hawaiian Rolls Donuts',
     img: donut12,
-    recipeAuthors: ['Nicole McLaughlin'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -43,7 +41,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: '"Boston Cream Hawaiian Rolls" Donuts', link: 'https://www.allrecipes.com/boston-cream-hawaiian-roll-donuts-recipe-11761347' }
+        { 
+            label: '"Boston Cream Hawaiian Rolls" Donuts', 
+            link: 'https://www.allrecipes.com/boston-cream-hawaiian-roll-donuts-recipe-11761347',
+            author: ['Nicole McLaughlin'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

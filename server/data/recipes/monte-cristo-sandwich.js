@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Monte Cristo Sandwich',
     name: 'Monte Cristo Sandwich',
     img: sandwich6,
-    recipeAuthors: ['John Mitzewich'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -35,7 +33,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Monte Cristo Sandwich', link: 'https://www.allrecipes.com/recipe/264681/madame-cristo-grilled-ham-and-cheese/' }
+        { 
+            label: 'Monte Cristo Sandwich', 
+            link: 'https://www.allrecipes.com/recipe/264681/madame-cristo-grilled-ham-and-cheese/',
+            author: ['John Mitzewich'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

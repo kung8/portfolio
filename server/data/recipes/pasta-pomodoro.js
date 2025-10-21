@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Pasta Pomodoro',
     name: 'Pasta Pomodoro',
     img: '',
-    recipeAuthors: ['Dinah'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -21,7 +19,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pasta Pomodoro', link: 'https://www.allrecipes.com/recipe/23847/pasta-pomodoro/' }
+        { 
+            label: 'Pasta Pomodoro', 
+            link: 'https://www.allrecipes.com/recipe/23847/pasta-pomodoro/',
+            author: ['Dinah'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

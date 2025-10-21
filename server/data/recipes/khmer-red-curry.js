@@ -24,8 +24,6 @@ module.exports = {
     cardName: 'Khmer Red Curry',
     name: 'Khmer Red Curry',
     img: curry4,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CAMBODIAN, GENRES.ASIAN],
@@ -38,7 +36,12 @@ module.exports = {
     prepTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Khmer Red Chicken Curry', link: 'https://cambodiarecipe.com/recipe/khmer-red-chicken-curry/' }
+        { 
+            label: 'Khmer Red Chicken Curry', 
+            link: 'https://cambodiarecipe.com/recipe/khmer-red-chicken-curry/',
+            author: [''],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

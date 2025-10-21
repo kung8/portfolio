@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Loaded Chicken Casserole',
     name: 'Loaded Chicken Casserole',
     img: '',
-    recipeAuthors: ['Tiffany'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Loaded Chicken Casserole', link: 'https://recipesfiber.com/loaded-chicken-cajun-sausage-pasta-casserole/' }
+        { 
+            label: 'Loaded Chicken Casserole', 
+            link: 'https://recipesfiber.com/loaded-chicken-cajun-sausage-pasta-casserole/',
+            author: ['Tiffany'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

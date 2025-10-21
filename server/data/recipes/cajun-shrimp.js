@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Cajun Shrimp',
     name: 'Cajun Shrimp',
     img: '',
-    recipeAuthors: ['Tiffany'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Cajun Shrimp', link: 'https://www.lecremedelacrumb.com/cajun-shrimp-and-rice-skillet/' }
+        { 
+            label: 'Cajun Shrimp', 
+            link: 'https://www.lecremedelacrumb.com/cajun-shrimp-and-rice-skillet/',
+            author: ['Tiffany'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

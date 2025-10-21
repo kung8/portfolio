@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'Spring Rolls',
     name: 'Spring Rolls',
     img: '',
-    recipeAuthors: ['Nagi Maehashi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER],
@@ -25,7 +23,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Spring Rolls', link: 'https://www.recipetineats.com/spring-rolls/' }
+        { 
+            label: 'Spring Rolls', 
+            link: 'https://www.recipetineats.com/spring-rolls/',
+            author: ['Nagi Maehashi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

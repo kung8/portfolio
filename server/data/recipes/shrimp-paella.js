@@ -21,8 +21,6 @@ module.exports = {
     cardName: 'Shrimp Paella',
     name: 'Shrimp Paella',
     img: paella10,
-    recipeAuthors: ['John Mitzewich'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -36,7 +34,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 55, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Paella', link: 'https://www.allrecipes.com/recipe/238588/quick-and-easy-paella/' }
+        { 
+            label: 'Paella', 
+            link: 'https://www.allrecipes.com/recipe/238588/quick-and-easy-paella/',
+            author: ['John Mitzewich'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

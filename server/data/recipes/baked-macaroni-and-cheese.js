@@ -28,8 +28,6 @@ module.exports = {
     cardName: 'Baked Mac and Cheese',
     name: 'Baked Macaroni and Cheese',
     img: cheese22,
-    recipeAuthors: ['Trish'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -42,7 +40,12 @@ module.exports = {
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Macaroni and Cheese', link: 'https://www.momontimeout.com/best-homemade-baked-mac-and-cheese-recipe/' }
+        { 
+            label: 'Macaroni and Cheese', 
+            link: 'https://www.momontimeout.com/best-homemade-baked-mac-and-cheese-recipe/',
+            author: ['Trish'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

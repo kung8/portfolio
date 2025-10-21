@@ -22,8 +22,6 @@ module.exports = {
     cardName: 'Chocolate Gelato',
     name: 'Chocolate Gelato',
     img: gelato2,
-    recipeAuthors: ['Emma Duckworth'],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -37,7 +35,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 8, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Chocolate Gelato', link: 'https://emmaduckworthbakes.com/chocolate-gelato-recipe/' }
+        { 
+            label: 'Chocolate Gelato', 
+            link: 'https://emmaduckworthbakes.com/chocolate-gelato-recipe/',
+            author: ['Emma Duckworth'],
+            finder: 'Justin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

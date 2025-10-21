@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'Crème Brûlée',
     name: 'Crème Brûlée',
     img: brulee7,
-    recipeAuthors: ['Alton Brown', 'Sally McKenney'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH],
@@ -32,8 +30,18 @@ module.exports = {
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     waitTime: { amount: 2, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Crème Brûlée', link: 'https://www.foodnetwork.com/recipes/alton-brown/creme-brulee-recipe-1916827' },
-        { label: 'Vanilla Sugar', link: 'https://sallysbakingaddiction.com/homemade-vanilla-sugar/' }
+        { 
+            label: 'Crème Brûlée', 
+            link: 'https://www.foodnetwork.com/recipes/alton-brown/creme-brulee-recipe-1916827',
+            author: ['Alton Brown'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Vanilla Sugar', 
+            link: 'https://sallysbakingaddiction.com/homemade-vanilla-sugar/',
+            author: ['Sally McKenney'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

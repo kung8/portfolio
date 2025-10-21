@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Fajitas',
     name: 'Fajitas',
     img: '',
-    recipeAuthors: ['Marzia'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Fajitas', link: 'https://littlespicejar.com/the-best-steak-fajitas/' }
+        { 
+            label: 'Fajitas', 
+            link: 'https://littlespicejar.com/the-best-steak-fajitas/',
+            author: ['Marzia'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

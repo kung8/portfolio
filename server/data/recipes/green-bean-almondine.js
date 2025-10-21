@@ -23,8 +23,6 @@ module.exports = {
     cardName: 'Green Bean Almondine',
     name: 'Green Bean Almondine',
     img: bean4,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.FRENCH],
@@ -37,7 +35,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 4, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Green Bean Almondine', link: 'https://www.abeautifulplate.com/green-beans-almondine/' }
+        { 
+            label: 'Green Bean Almondine', 
+            link: 'https://www.abeautifulplate.com/green-beans-almondine/',
+            author: [''],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...SALT, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },

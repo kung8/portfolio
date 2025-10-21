@@ -27,8 +27,6 @@ module.exports = {
     cardName: 'Mexican Enchiladas',
     name: 'Mexican Enchiladas',
     img: enchiladas21,
-    recipeAuthors: ['Isabel Orozco-Moore'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -42,9 +40,24 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 55, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Shredded Chicken', link: 'https://www.isabeleats.com/easy-shredded-chicken-recipe/' },
-        { label: 'Enchilada Sauce', link: 'https://www.isabeleats.com/easy-enchilada-sauce/' },
-        { label: 'Chicken Enchilada', link: 'https://www.isabeleats.com/red-chicken-enchiladas/' },
+        { 
+            label: 'Shredded Chicken', 
+            link: 'https://www.isabeleats.com/easy-shredded-chicken-recipe/',
+            author: ['Isabel Orozco-Moore'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Enchilada Sauce', 
+            link: 'https://www.isabeleats.com/easy-enchilada-sauce/',
+            author: ['Isabel Orozco-Moore'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Chicken Enchilada', 
+            link: 'https://www.isabeleats.com/red-chicken-enchiladas/',
+            author: ['Isabel Orozco-Moore'],
+            finder: 'Kevin Ung', 
+        },
     ],
     separated: true,
     ingredients: [

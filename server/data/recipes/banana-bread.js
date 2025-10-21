@@ -31,8 +31,6 @@ module.exports = {
     cardName: 'Banana Bread',
     name: 'Banana Bread',
     img: bread7,
-    recipeAuthors: ['Natasha Kravchuk'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -43,7 +41,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Banana Bread', link: 'https://natashaskitchen.com/banana-bread-recipe-video/' }
+        { 
+            label: 'Banana Bread', 
+            link: 'https://natashaskitchen.com/banana-bread-recipe-video/',
+            author: ['Natasha Kravchuk'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...BANANA, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.MAIN },

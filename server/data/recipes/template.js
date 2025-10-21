@@ -7,8 +7,6 @@ module.exports = {
     cardName: '{{cardName}}',
     name: '{{name}}',
     img: '',
-    recipeAuthors: ['{{recipeAuthor}}'],
-    recipeFinder: '{{recipeFinder}}',
     available: '{{available}}',
     recommended: false,
     category: '{{category}}',
@@ -23,7 +21,7 @@ module.exports = {
     cookTime: { amount: '{{cookTime}}', unit: '{{cookTimeUnit}}' },
     waitTime: { amount: '{{waitTime}}', unit: '{{waitTimeUnit}}' },
     websites: [
-        { label: '{{label}}', link: '{{link}}' }
+        { label: '{{label}}', link: '{{link}}', author: ['{{author}}'], finder: '{{finder}}' }
     ],
     separated: '{{separated}}',
     ingredients: [

@@ -41,8 +41,6 @@ module.exports = {
     cardName: 'Chicken Ramen',
     name: 'Homemade Chicken Ramen',
     img: ramen9,
-    recipeAuthors: ['Laura'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -56,7 +54,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Homemade Chicken Ramen', link: "https://www.forkknifeswoon.com/simple-homemade-chicken-ramen" }
+        { 
+            label: 'Homemade Chicken Ramen', 
+            link: "https://www.forkknifeswoon.com/simple-homemade-chicken-ramen",
+            author: ['Laura'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

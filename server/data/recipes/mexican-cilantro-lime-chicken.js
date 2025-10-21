@@ -28,8 +28,6 @@ module.exports = {
     cardName: 'Cilantro Lime Chicken',
     name: 'Mexican Cilantro Lime Chicken',
     img: cilantro6,
-    recipeAuthors: ['Caitlin'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -45,7 +43,12 @@ module.exports = {
     waitTime: { amount: 4, unit: TIME_UNITS.HOUR },
     separated: true,
     websites: [
-        { label: 'Cilantro Lime Chicken Wings', link: 'https://kaleforniakravings.com/easy-cilantro-lime-chicken-wings/' }
+        { 
+            label: 'Cilantro Lime Chicken Wings', 
+            link: 'https://kaleforniakravings.com/easy-cilantro-lime-chicken-wings/',
+            author: ['Caitlin'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...CHICKEN_WINGS, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MEAT },

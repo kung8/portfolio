@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Roasted Vegetables',
     name: 'Roasted Vegetables',
     img: '',
-    recipeAuthors: ['Emma Christensen'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Roasted Vegetables', link: 'https://www.thekitchn.com/how-to-roast-any-vegetable-101221' }
+        { 
+            label: 'Roasted Vegetables', 
+            link: 'https://www.thekitchn.com/how-to-roast-any-vegetable-101221',
+            author: ['Emma Christensen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

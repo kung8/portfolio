@@ -12,8 +12,6 @@ module.exports = {
     cardName: 'Crab Cakes',
     name: 'Crab Cakes',
     img: '',
-    recipeAuthors: ['Andrew Zimmern'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -28,7 +26,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Crab Cakes', link: 'https://www.foodandwine.com/recipes/baltimore-style-crab-cakes' }
+        { 
+            label: 'Crab Cakes', 
+            link: 'https://www.foodandwine.com/recipes/baltimore-style-crab-cakes',
+            author: ['Andrew Zimmern'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

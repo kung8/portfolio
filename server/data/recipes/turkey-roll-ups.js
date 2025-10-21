@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Turkey Roll Ups',
     name: 'Turkey Roll Ups',
     img: roll4,
-    recipeAuthors: ['Meggan Hill'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -25,7 +23,12 @@ module.exports = {
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Turkey Roll Up (Costco Copycat)', link: 'https://www.culinaryhill.com/turkey-rollups-with-cranberry-cream-cheese/' }
+        { 
+            label: 'Turkey Roll Up (Costco Copycat)', 
+            link: 'https://www.culinaryhill.com/turkey-rollups-with-cranberry-cream-cheese/',
+            author: ['Meggan Hill'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

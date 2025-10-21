@@ -6,8 +6,6 @@ module.exports = {
     cardName: 'Garlic Butter',
     name: 'Garlic Butter',
     img: butter1,
-    recipeAuthors: ['Holly Nilsson'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.TOPPING],
@@ -21,7 +19,12 @@ module.exports = {
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Garlic Butter', link: 'https://www.spendwithpennies.com/best-homemade-garlic-butter/' }
+        { 
+            label: 'Garlic Butter', 
+            link: 'https://www.spendwithpennies.com/best-homemade-garlic-butter/',
+            author: ['Holly Nilsson'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

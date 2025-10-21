@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Croissants',
     name: 'Croissants',
     img: '',
-    recipeAuthors: ['Joanna Cismaru'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
@@ -34,7 +32,12 @@ module.exports = {
     cookTime: { amount: 24, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 11, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Croissants', link: 'https://www.jocooks.com/recipes/homemade-croissants/' }
+        { 
+            label: 'Croissants', 
+            link: 'https://www.jocooks.com/recipes/homemade-croissants/',
+            author: ['Joanna Cismaru'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

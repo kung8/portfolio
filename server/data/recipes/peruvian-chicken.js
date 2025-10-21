@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'Peruvian Chicken',
     name: 'Peruvian Chicken',
     img: chicken9,
-    recipeAuthors: ['Erin Lynch'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -33,7 +31,12 @@ module.exports = {
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 8, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Peruvian Chicken', link: 'https://www.platingsandpairings.com/peruvian-grilled-chicken-creamy-green-sauce/' }
+        { 
+            label: 'Peruvian Chicken', 
+            link: 'https://www.platingsandpairings.com/peruvian-grilled-chicken-creamy-green-sauce/',
+            author: ['Erin Lynch'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

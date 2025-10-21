@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Spicy Italian Flatbread',
     name: 'Spicy Italian Flatbread',
     img: '',
-    recipeAuthors: ['Beth Moncel'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.APPETIZER,CATEGORIES.SIDE_DISH],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Spicy Italian Flatbread', link: 'https://www.budgetbytes.com/spicy-italian-flat-bread/' }
+        { 
+            label: 'Spicy Italian Flatbread', 
+            link: 'https://www.budgetbytes.com/spicy-italian-flat-bread/',
+            author: ['Beth Moncel'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

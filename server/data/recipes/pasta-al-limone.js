@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'Pasta al Limone',
     name: 'Pasta al Limone',
     img: limone10,
-    recipeAuthors: ['Grace Vallo'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -32,7 +30,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pasta al Limone', link: 'https://tastefullygrace.com/lemon-pasta-pasta-al-limone/' }
+        { 
+            label: 'Pasta al Limone', 
+            link: 'https://tastefullygrace.com/lemon-pasta-pasta-al-limone/',
+            author: ['Grace Vallo'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

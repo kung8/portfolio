@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Yellow Curry',
     name: 'Thai Yellow Curry',
     img: curry7,
-    recipeAuthors: ['Lauren Allen'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -31,7 +29,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Yellow Curry', link: 'https://tastesbetterfromscratch.com/yellow-curry/' }
+        { 
+            label: 'Yellow Curry', 
+            link: 'https://tastesbetterfromscratch.com/yellow-curry/',
+            author: ['Lauren Allen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

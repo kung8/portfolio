@@ -64,8 +64,6 @@ module.exports = {
     cardName: 'Lasagna',
     name: 'Italian Lasagna',
     img: lasagna17,
-    recipeAuthors: ['John Chandler'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -79,7 +77,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 3, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Lasagna', link: 'https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/' }
+        { 
+            label: 'Lasagna', 
+            link: 'https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/',
+            author: ['John Chandler'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...ITALIAN_SAUSAGE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: ITALIAN_SAUSAGE_SECTION },

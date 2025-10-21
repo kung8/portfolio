@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Pizza Egg Rolls',
     name: 'Pizza Egg Rolls',
     img: rolls11,
-    recipeAuthors: ['Suzanne S. Wiley'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
@@ -35,7 +33,12 @@ module.exports = {
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pizza Egg Rolls', link: 'https://www.tasteofhome.com/recipes/pizza-rolls/' }
+        { 
+            label: 'Pizza Egg Rolls', 
+            link: 'https://www.tasteofhome.com/recipes/pizza-rolls/',
+            author: ['Suzanne S. Wiley'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

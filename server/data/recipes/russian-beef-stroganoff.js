@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Beef Stroganoff',
     name: 'Russian Beef Stroganoff',
     img: '',
-    recipeAuthors: ['Natasha Kravchuk'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Russian Beef Stroganoff', link: 'https://natashaskitchen.com/beef-stroganoff/' }
+        { 
+            label: 'Russian Beef Stroganoff', 
+            link: 'https://natashaskitchen.com/beef-stroganoff/',
+            author: ['Natasha Kravchuk'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Tuna Onigiri',
     name: 'Tuna Onigiri',
     img: onigiri6,
-    recipeAuthors: ['Christie Lai'],
-    recipeFinder: 'Samantha Pham',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
@@ -36,7 +34,12 @@ module.exports = {
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Tuna Onigiri', link: 'https://christieathome.com/blog/japanese-tuna-onigiri/' }
+        { 
+            label: 'Tuna Onigiri', 
+            link: 'https://christieathome.com/blog/japanese-tuna-onigiri/',
+            author: ['Christie Lai'],
+            finder: 'Samantha Pham', 
+        }
     ],
     separated: true,
     ingredients: [

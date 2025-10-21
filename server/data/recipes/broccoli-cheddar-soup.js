@@ -32,8 +32,6 @@ module.exports = {
     cardName: 'Broccoli Cheddar Soup',
     name: 'Broccoli Cheddar Soup',
     img: soup6,
-    recipeAuthors: ['Christy Denney'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -46,7 +44,12 @@ module.exports = {
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Panera Broccoli Cheese Soup', link: 'https://www.the-girl-who-ate-everything.com/panera-broccoli-cheese-soup/' }
+        { 
+            label: 'Panera Broccoli Cheese Soup', 
+            link: 'https://www.the-girl-who-ate-everything.com/panera-broccoli-cheese-soup/',
+            author: ['Christy Denney'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },

@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Carbonara',
     name: 'Carbonara',
     img: carbonara9,
-    recipeAuthors: ['Nagi Maehashi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -34,7 +32,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Carbonara', link: 'https://www.recipetineats.com/carbonara/' }
+        { 
+            label: 'Carbonara', 
+            link: 'https://www.recipetineats.com/carbonara/',
+            author: ['Nagi Maehashi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

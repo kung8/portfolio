@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Chicken Pot Pie Soup',
     name: 'Chicken Pot Pie Soup',
     img: '',
-    recipeAuthors: ['Ree Drummond'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Chicken Pot Pie Soup', link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a61997037/chicken-pot-pie-soup-recipe/' }
+        { 
+            label: 'Chicken Pot Pie Soup', 
+            link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a61997037/chicken-pot-pie-soup-recipe/',
+            author: ['Ree Drummond'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

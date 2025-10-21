@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Deconstructed Apple Crisp',
     name: 'Deconstructed Apple Crisp',
     img: '',
-    recipeAuthors: ['Lauren Grant'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -31,7 +29,12 @@ module.exports = {
     cookTime: { amount: 80, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Deconstructed Apple Crisp', link: 'https://zestfulkitchen.com/deconstructed-apple-crisp/' }
+        { 
+            label: 'Deconstructed Apple Crisp', 
+            link: 'https://zestfulkitchen.com/deconstructed-apple-crisp/',
+            author: ['Lauren Grant'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

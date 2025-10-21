@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'Chicken McNuggets',
     name: 'Chicken McNuggets',
     img: mcnuggets6,
-    recipeAuthors: ['Joshua Weissman'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -32,7 +30,12 @@ module.exports = {
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 8, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chicken McNuggets', link: 'https://www.joshuaweissman.com/post/mcdonald-s-mcnuggets-but-better' }
+        { 
+            label: 'Chicken McNuggets', 
+            link: 'https://www.joshuaweissman.com/post/mcdonald-s-mcnuggets-but-better',
+            author: ['Joshua Weissman'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

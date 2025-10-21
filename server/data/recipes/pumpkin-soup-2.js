@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Pumpkin Soup 2',
     name: 'Pumpkin Soup 2',
     img: '',
-    recipeAuthors: ['Ree Drummond'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Pumpkin Soup 2', link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a10399/pumpkin-soup/' }
+        { 
+            label: 'Pumpkin Soup 2', 
+            link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a10399/pumpkin-soup/',
+            author: ['Ree Drummond'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

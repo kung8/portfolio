@@ -23,8 +23,6 @@ module.exports = {
     cardName: 'Massaman Curry',
     name: 'Thai Massaman Curry',
     img: curry9,
-    recipeAuthors: ['Erica Walker'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -38,7 +36,12 @@ module.exports = {
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chicken Massaman Curry', link: 'https://www.favfamilyrecipes.com/chicken-massaman-curry/' }
+        { 
+            label: 'Chicken Massaman Curry', 
+            link: 'https://www.favfamilyrecipes.com/chicken-massaman-curry/',
+            author: ['Erica Walker'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

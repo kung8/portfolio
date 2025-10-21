@@ -43,8 +43,6 @@ module.exports = {
     cardName: 'Aji de Gallina',
     name: 'Peruvian Aji de Gallina',
     img: gallina10,
-    recipeAuthors: ['Caroline'],
-    recipeFinder: 'Gaby Ward',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.PERUVIAN, GENRES.LATIN],
@@ -58,7 +56,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Aji de Gallina', link: 'https://www.carolinescooking.com/aji-de-gallina-peruvian-chicken-stew/' }
+        { 
+            label: 'Aji de Gallina', 
+            link: 'https://www.carolinescooking.com/aji-de-gallina-peruvian-chicken-stew/',
+            author: ['Caroline'],
+            finder: 'Gaby Ward', 
+        }
     ],
     ingredients: [
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'diced', optional: false, section: ONION_SECTION },

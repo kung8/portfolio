@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Ground Beef Ramen',
     name: 'Ground Beef Ramen',
     img: ramen5,
-    recipeAuthors: ['Erica'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -31,7 +29,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Ground Beef Ramen', link: 'https://recipesfiber.com/ground-beef-ramen-skillet/' }
+        { 
+            label: 'Ground Beef Ramen', 
+            link: 'https://recipesfiber.com/ground-beef-ramen-skillet/',
+            author: ['Erica'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

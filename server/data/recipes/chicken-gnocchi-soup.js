@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Chicken Gnocchi Soup',
     name: 'Chicken Gnocchi Soup',
     img: '',
-    recipeAuthors: ['Sloane Layton'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -35,7 +33,12 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chicken Gnocchi Soup', link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a40772957/chicken-gnocchi-soup-recipe/' }
+        { 
+            label: 'Chicken Gnocchi Soup', 
+            link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a40772957/chicken-gnocchi-soup-recipe/',
+            author: ['Sloane Layton'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -21,8 +21,6 @@ module.exports = {
     cardName: 'Shaking Beef',
     name: 'Vietnamese Shaking Beef (Bo Luc Lac)',
     img: shakingBeef7,
-    recipeAuthors: ['Matthew Johnson'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -37,7 +35,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Vietnamese Shaking Beef', link: 'https://tasty.co/recipe/vietnamese-shaking-beef' }
+        { 
+            label: 'Vietnamese Shaking Beef', 
+            link: 'https://tasty.co/recipe/vietnamese-shaking-beef',
+            author: ['Matthew Johnson'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

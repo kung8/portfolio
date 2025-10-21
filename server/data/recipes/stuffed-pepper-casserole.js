@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Stuffed Pepper Casserole',
     name: 'Stuffed Pepper Casserole',
     img: '',
-    recipeAuthors: ['Patricia'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -27,7 +25,12 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Stuffed Pepper Casserole', link: 'https://recipesfiber.com/stuffed-pepper-casserole/' }
+        { 
+            label: 'Stuffed Pepper Casserole', 
+            link: 'https://recipesfiber.com/stuffed-pepper-casserole/',
+            author: ['Patricia'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

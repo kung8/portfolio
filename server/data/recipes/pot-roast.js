@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'Pot Roast',
     name: 'Pot Roast',
     img: roast1,
-    recipeAuthors: ['Ree Drummond'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -31,7 +29,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 255, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pot Roast', link: 'https://www.foodnetwork.com/recipes/ree-drummond/perfect-pot-roast-recipe-2118771' }
+        { 
+            label: 'Pot Roast', 
+            link: 'https://www.foodnetwork.com/recipes/ree-drummond/perfect-pot-roast-recipe-2118771',
+            author: ['Ree Drummond'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...BEEF_ROAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },

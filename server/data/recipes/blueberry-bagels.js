@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Blueberry Bagels',
     name: 'Blueberry Bagels',
     img: '',
-    recipeAuthors: ['Stella Drivas'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.BREAKFAST],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Blueberry Bagels', link: 'https://hungryhappens.net/easy-4-ingredient-blueberry-bagels-no-yeast/' }
+        { 
+            label: 'Blueberry Bagels', 
+            link: 'https://hungryhappens.net/easy-4-ingredient-blueberry-bagels-no-yeast/',
+            author: ['Stella Drivas'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -22,8 +22,6 @@ module.exports = {
     cardName: 'Almond Croissant Cookie Bars',
     name: 'Almond Croissant Cookie Bars',
     img: bars10,
-    recipeAuthors: ['Kelli Foster'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -37,7 +35,12 @@ module.exports = {
     cookTime: { amount: 42, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 2, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Almond Croissant Cookie Bars', link: 'https://www.thekitchn.com/almond-croissant-cookie-bars-recipe-23712681' }
+        { 
+            label: 'Almond Croissant Cookie Bars', 
+            link: 'https://www.thekitchn.com/almond-croissant-cookie-bars-recipe-23712681',
+            author: ['Kelli Foster'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

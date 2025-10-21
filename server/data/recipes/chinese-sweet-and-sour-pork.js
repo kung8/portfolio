@@ -21,8 +21,6 @@ module.exports = {
     cardName: 'Sweet and Sour Pork',
     name: 'Chinese Sweet and Sour Pork',
     img: pork9,
-    recipeAuthors: ['Chef Lau'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -36,7 +34,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Sweet and Sour Pork', link: 'https://www.madewithlau.com/recipes/sweet-sour-pork' }
+        { 
+            label: 'Sweet and Sour Pork', 
+            link: 'https://www.madewithlau.com/recipes/sweet-sour-pork',
+            author: ['Chef Lau'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

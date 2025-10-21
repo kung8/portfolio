@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Béarnaise Sauce',
     name: 'Béarnaise Sauce',
     img: '',
-    recipeAuthors: ['John Mitzewich'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SAUCE],
@@ -30,7 +28,12 @@ module.exports = {
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Béarnaise Sauce', link: 'https://www.allrecipes.com/recipe/256569/chef-johns-bearnaise-sauce/' }
+        { 
+            label: 'Béarnaise Sauce', 
+            link: 'https://www.allrecipes.com/recipe/256569/chef-johns-bearnaise-sauce/',
+            author: ['John Mitzewich'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Lemon Chicken Ramen',
     name: 'Lemon Chicken Ramen',
     img: ramen7,
-    recipeAuthors: ['Emily Roz'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -28,7 +26,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Lemon Chicken Ramen', link: "https://myriadrecipes.com/lemon-chicken-ramen/" }
+        { 
+            label: 'Lemon Chicken Ramen', 
+            link: "https://myriadrecipes.com/lemon-chicken-ramen/",
+            author: ['Emily Roz'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

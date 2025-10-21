@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Chinese Fried Rice',
     name: 'Chinese Fried Rice',
     img: rice9,
-    recipeAuthors: ['Chef Lau'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -34,7 +32,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Egg Fried Rice', link: 'https://www.madewithlau.com/recipes/egg-fried-rice' }
+        { 
+            label: 'Egg Fried Rice', 
+            link: 'https://www.madewithlau.com/recipes/egg-fried-rice',
+            author: ['Chef Lau'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

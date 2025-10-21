@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Fish Sticks with Tartar Sauce',
     name: 'Fish Sticks with Tartar Sauce',
     img: '',
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -22,7 +20,12 @@ module.exports = {
     prepTime: { amount: '', unit: TIME_UNITS.MINUTE },
     cookTime: { amount: '', unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: '', link: '' }
+        { 
+            label: '', 
+            link: '',
+            author: [''],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

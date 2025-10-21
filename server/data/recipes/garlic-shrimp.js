@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'Garlic Shrimp',
     name: 'Garlic Shrimp',
     img: '',
-    recipeAuthors: ['John Mitzewich'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -25,7 +23,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Garlic Shrimp', link: 'https://www.allrecipes.com/recipe/220597/simple-garlic-shrimp/' }
+        { 
+            label: 'Garlic Shrimp', 
+            link: 'https://www.allrecipes.com/recipe/220597/simple-garlic-shrimp/',
+            author: ['John Mitzewich'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -45,8 +45,6 @@ module.exports = {
     cardName: 'Korean Fried Chicken',
     name: 'Korean Fried Chicken',
     img: chicken8,
-    recipeAuthors: ['Hyosun'],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -61,7 +59,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Korean Fried Chicken', link: 'https://www.koreanbapsang.com/yangnyeom-chicken-korean-fried-chicken/' }
+        { 
+            label: 'Korean Fried Chicken', 
+            link: 'https://www.koreanbapsang.com/yangnyeom-chicken-korean-fried-chicken/',
+            author: ['Hyosun'],
+            finder: 'Justin Ung', 
+        }
     ],
     ingredients: [
         { ...CHICKEN_THIGH, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2 - 2.5" pieces', section: SECTIONS.MARINADE },

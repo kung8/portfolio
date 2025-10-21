@@ -29,8 +29,6 @@ module.exports = {
     cardName: 'Basil Pesto',
     name: 'Basil Pesto',
     img: pesto11,
-    recipeAuthors: ['Jeanine', 'Jack'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -44,7 +42,12 @@ module.exports = {
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pesto', link: "https://www.loveandlemons.com/pesto-recipe" }
+        { 
+            label: 'Pesto', 
+            link: "https://www.loveandlemons.com/pesto-recipe",
+            author: ['Jeanine', 'Jack'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

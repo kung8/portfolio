@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Eclair',
     name: 'Eclair',
     img: eclair2,
-    recipeAuthors: ['Joanne Chang'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -27,7 +25,12 @@ module.exports = {
     cookTime: { amount: 2, unit: TIME_UNITS.HOUR },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Eclair', link: 'https://www.foodandwine.com/recipes/chocolate-frosted-eclairs' }
+        { 
+            label: 'Eclair', 
+            link: 'https://www.foodandwine.com/recipes/chocolate-frosted-eclairs',
+            author: ['Joanne Chang'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

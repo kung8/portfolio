@@ -35,8 +35,6 @@ module.exports = {
     cardName: 'Japanese Pork Katsudon',
     name: 'Japanese Pork Katsudon',
     img: katsudon7,
-    recipeAuthors: ['Sarah Leung'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.JAPANESE, GENRES.ASIAN],
@@ -50,7 +48,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Katsudon', link: 'https://thewoksoflife.com/katsudon/' }
+        { 
+            label: 'Katsudon', 
+            link: 'https://thewoksoflife.com/katsudon/',
+            author: ['Sarah Leung'],
+            finder: 'Kevin Ung', 
+        }
     ],
     ingredients: [
         { ...BONELESS_PORK_CHOPS, amount: 10, unit: '', additionalDetails: 'pounded flat', section: SECTIONS.MAIN },

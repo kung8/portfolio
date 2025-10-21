@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Chicken Tetrazzini',
     name: 'Chicken Tetrazzini',
     img: tetrazzini7,
-    recipeAuthors: ['Amanda Rettke'],
-    recipeFinder: 'Lauren Maliwauki',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -31,7 +29,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Chicken Tetrazzini', link: 'https://iamhomesteader.com/chicken-tetrazzini/?fbclid=IwY2xjawIfTm5leHRuA2FlbQIxMAABHfXmOdry4vTwvMnKkRabiPQIiNOv0HuUB_Teh0AZvPevluR9OzdZdBDsLA_aem_wBmdVLkajaS_oARCwQaCcg' }
+        { 
+            label: 'Chicken Tetrazzini', 
+            link: 'https://iamhomesteader.com/chicken-tetrazzini/?fbclid=IwY2xjawIfTm5leHRuA2FlbQIxMAABHfXmOdry4vTwvMnKkRabiPQIiNOv0HuUB_Teh0AZvPevluR9OzdZdBDsLA_aem_wBmdVLkajaS_oARCwQaCcg',
+            author: ['Amanda Rettke'],
+            finder: 'Lauren Maliwauki', 
+        }
     ],
     separated: true,
     ingredients: [

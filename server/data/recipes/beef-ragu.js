@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'Beef Ragu',
     name: 'Beef Ragu',
     img: ragu9,
-    recipeAuthors: ['Nagi Maehashi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -33,7 +31,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 165, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Beef Ragu', link: 'https://www.recipetineats.com/slow-cooked-shredded-beef-ragu-pasta/' }
+        { 
+            label: 'Beef Ragu', 
+            link: 'https://www.recipetineats.com/slow-cooked-shredded-beef-ragu-pasta/',
+            author: ['Nagi Maehashi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

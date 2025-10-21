@@ -21,8 +21,6 @@ module.exports = {
     cardName: 'Meatball Sub',
     name: 'Meatball Sub',
     img: sub8,
-    recipeAuthors: ['Holly Nilsson'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -37,7 +35,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Meatball Sub', link: 'https://www.spendwithpennies.com/meatball-sub/' }
+        { 
+            label: 'Meatball Sub', 
+            link: 'https://www.spendwithpennies.com/meatball-sub/',
+            author: ['Holly Nilsson'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Beef Stroganoff Soup',
     name: 'Beef Stroganoff Soup',
     img: '',
-    recipeAuthors: ['Erica Kastner'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Beef Stroganoff Soup', link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a103360/beef-stroganoff-soup/' }
+        { 
+            label: 'Beef Stroganoff Soup', 
+            link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a103360/beef-stroganoff-soup/',
+            author: ['Erica Kastner'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

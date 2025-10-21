@@ -59,12 +59,12 @@ const createPrompt = async () => {
         },
         {
             type: 'input',
-            name: 'recipeAuthor',
+            name: 'author',
             message: 'Enter recipe author (optional):',
         },
         {
             type: 'input',
-            name: 'recipeFinder',
+            name: 'finder',
             message: 'Enter recipe finder (optional):',
         },
         {
@@ -260,8 +260,8 @@ const createPrompt = async () => {
         let customizedTemplate = template
             .replace(/{{cardName}}/g, answers.cardName)
             .replace(/{{name}}/g, answers.name ? answers.name : answers.cardName)
-            .replace(/{{recipeAuthor}}/g, answers.recipeAuthor)
-            .replace(/{{recipeFinder}}/g, answers.recipeFinder)
+            .replace(/{{author}}/g, answers.author)
+            .replace(/{{finder}}/g, answers.finder)
             .replace(/'{{category}}'/g, '[' + matchingCategories + ']')
             .replace(/'{{genre}}'/g, '[' + matchingGenres + ']')
             .replace(/'{{method}}'/g, '[' + matchingMethods + ']')

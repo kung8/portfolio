@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Gelato',
     name: 'Gelato',
     img: '',
-    recipeAuthors: ['Marie Asselin'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -24,7 +22,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Gelato', link: 'https://foodnouveau.com/how-to-make-gelato/' }
+        { 
+            label: 'Gelato', 
+            link: 'https://foodnouveau.com/how-to-make-gelato/',
+            author: ['Marie Asselin'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

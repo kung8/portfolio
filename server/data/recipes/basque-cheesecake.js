@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'Basque Cheesecake',
     name: 'Basque Cheesecake',
     img: cheesecake2,
-    recipeAuthors: ['Tavel Bristol-Joseph'],
-    recipeFinder: 'Sam Giraud-Carrier',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -33,7 +31,12 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 7, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Basque Cheesecake', link: 'https://www.foodandwine.com/recipes/basque-cheesecake' }
+        { 
+            label: 'Basque Cheesecake', 
+            link: 'https://www.foodandwine.com/recipes/basque-cheesecake',
+            author: ['Tavel Bristol-Joseph'],
+            finder: 'Sam Giraud-Carrier', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -54,8 +54,6 @@ module.exports = {
     cardName: 'Banh Mi Sandwich',
     name: 'Vietnamese Banh Mi Sandwich',
     img: sandwich5,
-    recipeAuthors: ['Nagi Maehashi', 'Elise Bauer'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -70,8 +68,18 @@ module.exports = {
     waitTime: { amount: 170, unit: TIME_UNITS.MINUTE },
     separated: true,
     websites: [
-        { label: 'Banh Mi Sandwich', link: 'https://www.recipetineats.com/banh-mi-vietnamese-sandwich/' },
-        { label: 'Pickled Daikon and Carrots', link: 'https://www.simplyrecipes.com/recipes/vietnamese_daikon_and_carrot_pickles/' },
+        { 
+            label: 'Banh Mi Sandwich', 
+            link: 'https://www.recipetineats.com/banh-mi-vietnamese-sandwich/',
+            author: ['Nagi Maehashi'],
+            finder: 'Kevin Ung', 
+        },
+        { 
+            label: 'Pickled Daikon and Carrots', 
+            link: 'https://www.simplyrecipes.com/recipes/vietnamese_daikon_and_carrot_pickles/',
+            author: ['Elise Bauer'],
+            finder: 'Kevin Ung', 
+        },
     ],
     ingredients: [
         { ...WATER, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.BREAD },

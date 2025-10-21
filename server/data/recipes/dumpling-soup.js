@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Dumpling Soup',
     name: 'Dumpling Soup',
     img: dumpling7,
-    recipeAuthors: ['Leah Perez'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -31,7 +29,12 @@ module.exports = {
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Dumpling Soup', link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a44190393/dumpling-soup-recipe/' }
+        { 
+            label: 'Dumpling Soup', 
+            link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a44190393/dumpling-soup-recipe/',
+            author: ['Leah Perez'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

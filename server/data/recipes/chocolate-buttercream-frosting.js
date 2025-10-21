@@ -22,8 +22,6 @@ module.exports = {
     cardName: 'Buttercream Frosting',
     name: 'Chocolate Buttercream Frosting',
     img: frosting7,
-    recipeAuthors: ['Robyn Stone'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -37,7 +35,12 @@ module.exports = {
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chocolate Buttercream Frosting', link: 'https://addapinch.com/perfect-chocolate-buttercream-frosting-recipe' }
+        { 
+            label: 'Chocolate Buttercream Frosting', 
+            link: 'https://addapinch.com/perfect-chocolate-buttercream-frosting-recipe',
+            author: ['Robyn Stone'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

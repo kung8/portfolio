@@ -23,8 +23,6 @@ module.exports = {
     cardName: 'Chicken Parmesan',
     name: 'Chicken Parmesan',
     img: parmesan8,
-    recipeAuthors: ['John Mitzewich'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -39,7 +37,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chicken Parmesan', link: 'https://www.allrecipes.com/recipe/223042/chicken-parmesan/' }
+        { 
+            label: 'Chicken Parmesan', 
+            link: 'https://www.allrecipes.com/recipe/223042/chicken-parmesan/',
+            author: ['John Mitzewich'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

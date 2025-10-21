@@ -41,8 +41,6 @@ module.exports = {
     cardName: 'Blondie',
     name: 'Blondie',
     img: blondie9,
-    recipeAuthors: ['Sam Merritt'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -56,7 +54,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Blondies', link: "https://sugarspunrun.com/blondies-recipe/" }
+        { 
+            label: 'Blondies', 
+            link: "https://sugarspunrun.com/blondies-recipe/",
+            author: ['Sam Merritt'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

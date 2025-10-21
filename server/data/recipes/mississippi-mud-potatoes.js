@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'Mississippi Mud Potatoes',
     name: 'Mississippi Mud Potatoes',
     img: '',
-    recipeAuthors: ['Janette Zepeda'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -25,7 +23,12 @@ module.exports = {
     cookTime: { amount: 75, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Mississippi Mud Potatoes', link: 'https://www.thekitchn.com/mississippi-mud-potatoes-recipe-23713064' }
+        { 
+            label: 'Mississippi Mud Potatoes', 
+            link: 'https://www.thekitchn.com/mississippi-mud-potatoes-recipe-23713064',
+            author: ['Janette Zepeda'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

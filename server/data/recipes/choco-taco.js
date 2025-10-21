@@ -14,8 +14,6 @@ module.exports = {
     cardName: 'Choco Taco',
     name: 'Choco Taco',
     img: '',
-    recipeAuthors: ['Ashley Durand'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -29,7 +27,12 @@ module.exports = {
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Choco Taco', link: 'https://www.heinens.com/recipes/homemade-choco-tacos/' }
+        { 
+            label: 'Choco Taco', 
+            link: 'https://www.heinens.com/recipes/homemade-choco-tacos/',
+            author: ['Ashley Durand'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

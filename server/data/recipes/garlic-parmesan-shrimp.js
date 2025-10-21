@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Garlic Parmesan Shrimp',
     name: 'Garlic Parmesan Shrimp',
     img: '',
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.APPETIZER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Garlic Parmesan Shrimp', link: 'https://www.facebook.com/61554695044027/posts/air-fryer-garlic-parmesan-shrimprecipe1-bag-frozen-shrimp-thawed-shelled-and-dev/122200538708156501/' }
+        { 
+            label: 'Garlic Parmesan Shrimp', 
+            link: 'https://www.facebook.com/61554695044027/posts/air-fryer-garlic-parmesan-shrimprecipe1-bag-frozen-shrimp-thawed-shelled-and-dev/122200538708156501/',
+            author: [''],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

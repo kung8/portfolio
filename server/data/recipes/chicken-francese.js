@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'Chicken Francese',
     name: 'Chicken Francese',
     img: '',
-    recipeAuthors: ['Elaina'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -25,7 +23,12 @@ module.exports = {
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chicken Francese', link: 'https://www.allrecipes.com/recipe/16681/delicious-easy-chicken-francese/' }
+        { 
+            label: 'Chicken Francese', 
+            link: 'https://www.allrecipes.com/recipe/16681/delicious-easy-chicken-francese/',
+            author: ['Elaina'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

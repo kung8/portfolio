@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Poached Salmon',
     name: 'Poached Salmon with Hollandaise Sauce',
     img: '',
-    recipeAuthors: ['Luna'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Poached Salmon with Hollandaise Sauce', link: 'https://www.allrecipes.com/recipe/133137/poached-salmon-with-hollandaise-sauce/' }
+        { 
+            label: 'Poached Salmon with Hollandaise Sauce', 
+            link: 'https://www.allrecipes.com/recipe/133137/poached-salmon-with-hollandaise-sauce/',
+            author: ['Luna'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

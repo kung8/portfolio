@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Hawaiian Teriyaki Chicken',
     name: 'Hawaiian Teriyaki Chicken',
     img: teriyaki5,
-    recipeAuthors: ['Erica Walker'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -29,7 +27,12 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 4, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Hawaiian Grilled Teriyaki Chicken', link: 'https://www.favfamilyrecipes.com/grilled-hawaiian-teriyaki-chicken/' }
+        { 
+            label: 'Hawaiian Grilled Teriyaki Chicken', 
+            link: 'https://www.favfamilyrecipes.com/grilled-hawaiian-teriyaki-chicken/',
+            author: ['Erica Walker'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

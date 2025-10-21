@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Mango Sticky Rice',
     name: 'Thai Mango Sticky Rice',
     img: mango8,
-    recipeAuthors: ['David Tanis'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -30,7 +28,12 @@ module.exports = {
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Mango Sticky Rice', link: 'https://cooking.nytimes.com/recipes/1014806-sticky-rice-with-mango' }
+        { 
+            label: 'Mango Sticky Rice', 
+            link: 'https://cooking.nytimes.com/recipes/1014806-sticky-rice-with-mango',
+            author: ['David Tanis'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

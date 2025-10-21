@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Beijinjo De Coco',
     name: 'Beijinjo De Coco',
     img: '',
-    recipeAuthors: ['Aline Shaw'],
-    recipeFinder: 'Sarah Miller',
     available: false,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -22,7 +20,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Beijinjo De Coco', link: 'https://braziliankitchenabroad.com/beijinho-de-coco-brazilian-coconut-balls-recipe-with-condensed-milk/' }
+        { 
+            label: 'Beijinjo De Coco', 
+            link: 'https://braziliankitchenabroad.com/beijinho-de-coco-brazilian-coconut-balls-recipe-with-condensed-milk/',
+            author: ['Aline Shaw'],
+            finder: 'Sarah Miller', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -31,8 +31,6 @@ module.exports = {
     cardName: 'Chocolate Cake',
     name: 'Chocolate Cake',
     img: cake9,
-    recipeAuthors: ['Robyn Stone'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -46,7 +44,12 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chocolate Cake', link: 'https://addapinch.com/the-best-chocolate-cake-recipe-ever/' }
+        { 
+            label: 'Chocolate Cake', 
+            link: 'https://addapinch.com/the-best-chocolate-cake-recipe-ever/',
+            author: ['Robyn Stone'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

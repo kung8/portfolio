@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Biscoff Cookie Pie',
     name: 'Biscoff Cookie Pie',
     img: pie6,
-    recipeAuthors: ['Trang Doan'],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -30,8 +28,18 @@ module.exports = {
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Biscoff Pie', link: 'https://wildwildwhisk.com/cookie-butter-pie-pops' },
-        // { label: 'Biscoff Pie', link: 'https://www.crazyforcrust.com/frozen-biscoff-pie/' }
+        {
+            label: 'Biscoff Pie',
+            link: 'https://wildwildwhisk.com/cookie-butter-pie-pops',
+            author: ['Trang Doan'],
+            finder: 'Justin Ung',
+        },
+        // { 
+        //     label: 'Biscoff Pie', 
+        //     link: 'https://www.crazyforcrust.com/frozen-biscoff-pie/',
+        //     author: ['Dorothy Kern'],
+        //     finder: 'Kevin Ung', 
+        // }
     ],
     separated: true,
     ingredients: [

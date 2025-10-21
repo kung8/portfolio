@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Key Lime Pie',
     name: 'Key Lime Pie',
     img: pie5,
-    recipeAuthors: ['Dinner2'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -29,7 +27,12 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Key Lime Pie', link: 'https://www.allrecipes.com/recipe/12698/easy-key-lime-pie-i/' }
+        { 
+            label: 'Key Lime Pie', 
+            link: 'https://www.allrecipes.com/recipe/12698/easy-key-lime-pie-i/',
+            author: ['Dinner2'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

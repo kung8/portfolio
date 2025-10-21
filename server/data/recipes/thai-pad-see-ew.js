@@ -34,8 +34,6 @@ module.exports = {
     cardName: 'Pad See Ew',
     name: 'Thai Pad See Ew',
     img: noodles8,
-    recipeAuthors: ['Pailin Chongchinant'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -49,7 +47,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chili Vinegar', link: "https://hot-thai-kitchen.com/chili-vinegar/" }
+        { 
+            label: 'Chili Vinegar', 
+            link: "https://hot-thai-kitchen.com/chili-vinegar/",
+            author: ['Pailin Chongchinant'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

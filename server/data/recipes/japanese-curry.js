@@ -25,8 +25,6 @@ module.exports = {
     cardName: 'Japanese Curry',
     name: 'Japanese Curry',
     img: curry14,
-    recipeAuthors: ['Namiko Hirasawa Chen'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -40,7 +38,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Japanese Chicken Curry', link: 'https://www.justonecookbook.com/simple-chicken-curry/' }
+        { 
+            label: 'Japanese Chicken Curry', 
+            link: 'https://www.justonecookbook.com/simple-chicken-curry/',
+            author: ['Namiko Hirasawa Chen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

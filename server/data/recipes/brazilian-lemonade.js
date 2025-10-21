@@ -12,8 +12,6 @@ module.exports = {
     cardName: 'Brazilian Lemonade',
     name: 'Brazilian Lemonade',
     img: '',
-    recipeAuthors: ['Amy Nash'],
-    recipeFinder: 'Montana Hiltbrand',
     available: true,
     recommended: false,
     category: [CATEGORIES.DRINK],
@@ -27,7 +25,12 @@ module.exports = {
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Brazilian Lemonade', link: 'https://houseofnasheats.com/brazilian-lemonade-limeade/#wprm-recipe-container-15254' }
+        { 
+            label: 'Brazilian Lemonade', 
+            link: 'https://houseofnasheats.com/brazilian-lemonade-limeade/#wprm-recipe-container-15254',
+            author: ['Amy Nash'],
+            finder: 'Montana Hiltbrand', 
+        }
     ],
     separated: true,
     ingredients: [

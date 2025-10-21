@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Hawaiian Grilled Pineapple',
     name: 'Hawaiian Grilled Pineapple',
     img: pineapple2,
-    recipeAuthors: ['Jillian Wade'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH, CATEGORIES.DESSERT],
@@ -28,7 +26,12 @@ module.exports = {
     cookTime: { amount: 6, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Grilled Pineapple', link: 'https://foodfolksandfun.net/grilled-pineapple/' }
+        { 
+            label: 'Grilled Pineapple', 
+            link: 'https://foodfolksandfun.net/grilled-pineapple/',
+            author: ['Jillian Wade'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

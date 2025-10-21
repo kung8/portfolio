@@ -28,8 +28,6 @@ module.exports = {
     cardName: 'Chicken Biryani',
     name: 'Chicken Biryani',
     img: biryani19,
-    recipeAuthors: ['Nagi Maehashi'],
-    recipeFinder: 'Jon Browne',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -44,7 +42,12 @@ module.exports = {
     cookTime: { amount: 90, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Biryani', link: "https://www.recipetineats.com/biryani/" }
+        { 
+            label: 'Biryani', 
+            link: "https://www.recipetineats.com/biryani/",
+            author: ['Nagi Maehashi'],
+            finder: 'Jon Browne', 
+        }
     ],
     separated: true,
     ingredients: [

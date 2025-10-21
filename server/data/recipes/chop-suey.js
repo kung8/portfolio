@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Chop Suey',
     name: 'Chop Suey',
     img: suey4,
-    recipeAuthors: ['Megan Miller'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -26,7 +24,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chop Suey', link: 'https://www.howtocook.recipes/homemade-chop-suey-recipe/' }
+        { 
+            label: 'Chop Suey', 
+            link: 'https://www.howtocook.recipes/homemade-chop-suey-recipe/',
+            author: ['Megan Miller'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

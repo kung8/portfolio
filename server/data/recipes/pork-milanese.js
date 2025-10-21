@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'Pork Milanese',
     name: 'Pork Milanese',
     img: '',
-    recipeAuthors: ['Billy Parisi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -24,7 +22,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pork Milanese', link: 'https://www.billyparisi.com/pork-milanese-spring-kale-salad-recipe/' }
+        { 
+            label: 'Pork Milanese', 
+            link: 'https://www.billyparisi.com/pork-milanese-spring-kale-salad-recipe/',
+            author: ['Billy Parisi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -19,8 +19,6 @@ module.exports = {
     cardName: 'Peanut Butter Cookies',
     name: 'Peanut Butter Cookies',
     img: cookies13,
-    recipeAuthors: ['John Kanell'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -33,7 +31,12 @@ module.exports = {
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Peanut Butter Cookies', link: 'https://preppykitchen.com/peanut-butter-cookies-recipe/' }
+        { 
+            label: 'Peanut Butter Cookies', 
+            link: 'https://preppykitchen.com/peanut-butter-cookies-recipe/',
+            author: ['John Kanell'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

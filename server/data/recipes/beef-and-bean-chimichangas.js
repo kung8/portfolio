@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Beef + Bean Chimichangas',
     name: 'Beef and Bean Chimichangas',
     img: chimichangas6,
-    recipeAuthors: ['Nicole'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -31,7 +29,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Beef and Bean Chimichangas', link: 'https://www.allrecipes.com/recipe/36766/beef-and-bean-chimichangas/' }
+        { 
+            label: 'Beef and Bean Chimichangas', 
+            link: 'https://www.allrecipes.com/recipe/36766/beef-and-bean-chimichangas/',
+            author: ['Nicole'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

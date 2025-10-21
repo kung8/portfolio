@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Creamy Corn Casserole',
     name: 'Creamy Corn Casserole',
     img: casserole5,
-    recipeAuthors: ['Ruth Phillips'],
-    recipeFinder: 'Samantha Pham',
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.APPETIZER],
@@ -29,7 +27,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Creamy Corn Casserole', link: 'https://www.allrecipes.com/recipe/18906/awesome-and-easy-creamy-corn-casserole/' }
+        { 
+            label: 'Creamy Corn Casserole', 
+            link: 'https://www.allrecipes.com/recipe/18906/awesome-and-easy-creamy-corn-casserole/',
+            author: ['Ruth Phillips'],
+            finder: 'Samantha Pham', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Peanut Brittle',
     name: 'Peanut Brittle',
     img: brittle4,
-    recipeAuthors: ['Lauren Allen'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -24,7 +22,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Peanut Brittle', link: "https://tastesbetterfromscratch.com/peanut-brittle/" }
+        { 
+            label: 'Peanut Brittle', 
+            link: "https://tastesbetterfromscratch.com/peanut-brittle/",
+            author: ['Lauren Allen'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Peking Duck',
     name: 'Peking Duck',
     img: '',
-    recipeAuthors: [''],
-    recipeFinder: '',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -22,7 +20,12 @@ module.exports = {
     prepTime: { amount: '', unit: TIME_UNITS.MINUTE },
     cookTime: { amount: '', unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: '', link: '' }
+        { 
+            label: '', 
+            link: '',
+            author: [''],
+            finder: '', 
+        }
     ],
     separated: true,
     ingredients: [

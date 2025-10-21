@@ -21,8 +21,6 @@ module.exports = {
     cardName: 'Pan-Fried Chicken Thighs',
     name: 'Pan-Fried Chicken Thighs',
     img: thigh15,
-    recipeAuthors: ['Sarah Campbell'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -35,7 +33,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pan-Fried Chicken Thighs', link: 'https://www.tasteofhome.com/recipes/chicken-with-red-wine-cream-sauce/?srsltid=AfmBOooc4dAJPAm_QOVoYx4eAh_PoXSByNsmunXRhp1QXGKX6uPk3VH5' }
+        { 
+            label: 'Pan-Fried Chicken Thighs', 
+            link: 'https://www.tasteofhome.com/recipes/chicken-with-red-wine-cream-sauce/?srsltid=AfmBOooc4dAJPAm_QOVoYx4eAh_PoXSByNsmunXRhp1QXGKX6uPk3VH5',
+            author: ['Sarah Campbell'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

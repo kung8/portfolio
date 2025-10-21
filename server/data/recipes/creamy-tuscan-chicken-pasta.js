@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'Creamy Tuscan Chicken',
     name: 'Creamy Tuscan Chicken Pasta',
     img: pasta9,
-    recipeAuthors: ['Joanna Cismaru'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -33,7 +31,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Creamy Tuscan Chicken Pasta', link: 'https://cravinghomecooked.com/creamy-tuscan-chicken-pasta/' }
+        { 
+            label: 'Creamy Tuscan Chicken Pasta', 
+            link: 'https://cravinghomecooked.com/creamy-tuscan-chicken-pasta/',
+            author: ['Joanna Cismaru'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

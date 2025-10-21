@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Sesame Cashew Chicken',
     name: 'Thai Basil Sesame Cashew Chicken',
     img: '',
-    recipeAuthors: ['Tieghan Gerard'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Thai Basil Sesame Cashew Chicken', link: 'https://www.halfbakedharvest.com/sesame-cashew-chicken/' }
+        { 
+            label: 'Thai Basil Sesame Cashew Chicken', 
+            link: 'https://www.halfbakedharvest.com/sesame-cashew-chicken/',
+            author: ['Tieghan Gerard'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

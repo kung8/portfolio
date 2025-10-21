@@ -14,8 +14,6 @@ module.exports = {
     cardName: 'Lomo Saltado',
     name: 'Lomo Saltado',
     img: saltado8,
-    recipeAuthors: ['Marzia'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -29,7 +27,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Lomo Saltado', link: 'https://littlespicejar.com/lomo-saltado/' }
+        { 
+            label: 'Lomo Saltado', 
+            link: 'https://littlespicejar.com/lomo-saltado/',
+            author: ['Marzia'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

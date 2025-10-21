@@ -16,8 +16,6 @@ module.exports = {
     cardName: 'Sourdough Starter',
     name: 'Sourdough Starter',
     img: starter7,
-    recipeAuthors: ['Amy Duska'],
-    recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SNACK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -28,7 +26,12 @@ module.exports = {
     yields: { amount: 'Infinite', unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Sourdough Starter', link: "https://littlespoonfarm.com/sourdough-starter-recipe/" }
+        { 
+            label: 'Sourdough Starter', 
+            link: "https://littlespoonfarm.com/sourdough-starter-recipe/",
+            author: ['Amy Duska'],
+            finder: 'Justin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

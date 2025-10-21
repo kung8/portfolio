@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'Garlic Chicken w/ Herbs',
     name: 'Garlic Chicken with Herbs',
     img: chicken3,
-    recipeAuthors: ['Jan Valdez'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -23,7 +21,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Garlic Chicken', link: "https://www.tasteofhome.com/recipes/garlic-chicken-with-herbs/" }
+        { 
+            label: 'Garlic Chicken', 
+            link: "https://www.tasteofhome.com/recipes/garlic-chicken-with-herbs/",
+            author: ['Jan Valdez'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

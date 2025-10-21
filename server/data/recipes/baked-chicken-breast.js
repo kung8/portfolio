@@ -12,8 +12,6 @@ module.exports = {
     cardName: 'Baked Chicken Breast',
     name: 'Baked Chicken Breast',
     img: breast6,
-    recipeAuthors: ['Nagi Maehashi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -28,7 +26,12 @@ module.exports = {
     cookTime: { amount: 18, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Baked Chicken Breast', link: 'https://www.recipetineats.com/oven-baked-chicken-breast/#recipe' }
+        { 
+            label: 'Baked Chicken Breast', 
+            link: 'https://www.recipetineats.com/oven-baked-chicken-breast/#recipe',
+            author: ['Nagi Maehashi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

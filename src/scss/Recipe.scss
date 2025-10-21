@@ -368,12 +368,22 @@
             padding-left: 16px;
 
             .recipe-website-item {
-                color: theme.$primary-blue;
+                .recipe-website-link {
+                    margin-bottom: 4px;
 
-                a {
-                    color: theme.$primary-blue;
-                    text-decoration: unset;
-                    text-underline-offset: 4px;
+                    .recipe-link {
+                        color: theme.$primary-blue;
+                        text-decoration: unset;
+                        text-underline-offset: 4px;
+                    }
+
+                    .recipe-author {
+                        color: theme.$primary-blue;
+                    }
+                }
+
+                .recipe-finder {
+                    color: theme.$default;
                 }
             }
         }

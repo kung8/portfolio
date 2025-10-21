@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'Pineapple Cake',
     name: 'Pineapple Upside Down Cake',
     img: '',
-    recipeAuthors: ['Angela Ritchie'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -32,7 +30,12 @@ module.exports = {
     cookTime: { amount: 46, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pineapple Upside Down Cake', link: 'https://www.bettycrocker.com/recipes/easy-pineapple-upside-down-cake/c4d3321d-fad9-41cb-8f29-8d91a4279b07' }
+        { 
+            label: 'Pineapple Upside Down Cake', 
+            link: 'https://www.bettycrocker.com/recipes/easy-pineapple-upside-down-cake/c4d3321d-fad9-41cb-8f29-8d91a4279b07',
+            author: ['Angela Ritchie'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

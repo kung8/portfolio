@@ -9,8 +9,6 @@ module.exports = {
     cardName: 'B.L.T.',
     name: 'B.L.T.',
     img: blt2,
-    recipeAuthors: ['Mottsbela'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -24,7 +22,12 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'B.L.T.', link: 'https://www.allrecipes.com/recipe/209578/blt/' }
+        { 
+            label: 'B.L.T.', 
+            link: 'https://www.allrecipes.com/recipe/209578/blt/',
+            author: ['Mottsbela'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

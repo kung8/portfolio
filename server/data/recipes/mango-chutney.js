@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Mango Chutney',
     name: 'Mango Chutney',
     img: '',
-    recipeAuthors: ['Kimberly Killebrew'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: false,
     category: [CATEGORIES.SAUCE],
@@ -25,7 +23,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Mango Chutney', link: 'https://www.daringgourmet.com/indian-mango-chutney/' }
+        { 
+            label: 'Mango Chutney', 
+            link: 'https://www.daringgourmet.com/indian-mango-chutney/',
+            author: ['Kimberly Killebrew'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

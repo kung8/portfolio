@@ -39,8 +39,6 @@ module.exports = {
     cardName: 'Chocolate Mousse',
     name: 'Chocolate Mousse',
     img: mousse21,
-    recipeAuthors: ['Nagi Maehashi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -52,7 +50,12 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chocolate Mousse', link: "https://www.recipetineats.com/chocolate-mousse" }
+        { 
+            label: 'Chocolate Mousse', 
+            link: "https://www.recipetineats.com/chocolate-mousse",
+            author: ['Nagi Maehashi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

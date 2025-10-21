@@ -23,8 +23,6 @@ module.exports = {
     cardName: 'Japchae',
     name: 'Japchae (Korean Glass Noodles)',
     img: japchae12,
-    recipeAuthors: ['Christian Ou'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -38,7 +36,12 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Japchae', link: 'https://www.instagram.com/onehappybite/reel/C8ChLPupnZC/?hl=en' }
+        { 
+            label: 'Japchae', 
+            link: 'https://www.instagram.com/onehappybite/reel/C8ChLPupnZC/?hl=en',
+            author: ['Christian Ou'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

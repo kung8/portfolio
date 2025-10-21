@@ -35,8 +35,6 @@ module.exports = {
     cardName: 'Pao de Queijo',
     name: 'Pao de Queijo',
     img: cheeseball10,
-    recipeAuthors: ['Olivia Mesquita'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
@@ -49,7 +47,12 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Brazilian Cheese Bread', link: "https://www.oliviascuisine.com/authentic-brazilian-cheese-bread/" }
+        { 
+            label: 'Brazilian Cheese Bread', 
+            link: "https://www.oliviascuisine.com/authentic-brazilian-cheese-bread/",
+            author: ['Olivia Mesquita'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

@@ -14,8 +14,6 @@ module.exports = {
     cardName: 'Popcorn Balls',
     name: 'Popcorn Balls',
     img: balls7,
-    recipeAuthors: ['Kelli'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -27,7 +25,12 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Popcorn Balls', link: "https://www.allrecipes.com/recipe/20519/best-ever-popcorn-balls/" }
+        { 
+            label: 'Popcorn Balls', 
+            link: "https://www.allrecipes.com/recipe/20519/best-ever-popcorn-balls/",
+            author: ['Kelli'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: false,
     ingredients: [

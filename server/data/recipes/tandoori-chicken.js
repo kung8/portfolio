@@ -18,8 +18,6 @@ module.exports = {
     cardName: 'Tandoori Chicken',
     name: 'Tandoori Chicken',
     img: tandoori8,
-    recipeAuthors: ['Swasthi'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -34,7 +32,12 @@ module.exports = {
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 6, unit: TIME_UNITS.HOUR },
     websites: [
-        { label: 'Tandoori Chicken', link: 'https://www.indianhealthyrecipes.com/tandoori-chicken-recipe/' }
+        { 
+            label: 'Tandoori Chicken', 
+            link: 'https://www.indianhealthyrecipes.com/tandoori-chicken-recipe/',
+            author: ['Swasthi'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Thai Peanut Salad',
     name: 'Thai Peanut Salad',
     img: '',
-    recipeAuthors: ['Jennifer Segal'],
-    recipeFinder: 'Kevin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: '', unit: '' },
     waitTime: { amount: '', unit: '' },
     websites: [
-        { label: 'Thai Peanut Salad', link: 'https://www.onceuponachef.com/recipes/thai-crunch-salad-with-peanut-dressing.html' }
+        { 
+            label: 'Thai Peanut Salad', 
+            link: 'https://www.onceuponachef.com/recipes/thai-crunch-salad-with-peanut-dressing.html',
+            author: ['Jennifer Segal'],
+            finder: 'Kevin Ung', 
+        }
     ],
     separated: true,
     ingredients: [

@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Pho',
     name: 'Pho',
     img: '',
-    recipeAuthors: ['Pierce Abernathy'],
-    recipeFinder: 'Justin Ung',
     available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -23,7 +21,12 @@ module.exports = {
     cookTime: { amount: 7, unit: TIME_UNITS.HOUR },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Pho', link: 'https://tasty.co/recipe/traditional-vietnamese-beef-pho' }
+        { 
+            label: 'Pho', 
+            link: 'https://tasty.co/recipe/traditional-vietnamese-beef-pho',
+            author: ['Pierce Abernathy'],
+            finder: 'Justin Ung', 
+        }
     ],
     separated: true,
     ingredients: [
