@@ -1,20 +1,11 @@
-const broccoli = '../assets/Products/pad-see-ew-chinese-broccoli.jpeg';
-const cookedChicken = '../assets/Products/pad-see-ew-cooked-chicken.jpeg';
-const cookedEggs = '../assets/Products/pad-see-ew-cooked-eggs.jpeg';
-const dry = '../assets/Products/pad-see-ew-dry-fry.jpeg';
-const freshNoodles = '../assets/Products/pad-see-ew-fresh-noodles.jpeg';
-const mixed = '../assets/Products/pad-see-ew-mixed.jpeg';
-const noodlesWithSauce = '../assets/Products/pad-see-ew-noodles-with-sauce.jpeg';
-const leaves = '../assets/Products/pad-see-ew-pan-fried-leaves.jpeg';
-const fryVeggies = '../assets/Products/pad-see-ew-pan-fry-veggies.jpeg';
-const partialChicken = '../assets/Products/pad-see-ew-partial-chicken.jpeg';
-const paste = '../assets/Products/pad-see-ew-paste.jpeg';
-const platedZoomed = '../assets/Products/pad-see-ew-plated-zoomed.jpeg';
-const plated = '../assets/Products/pad-see-ew-plated.jpeg';
-const thigh = '../assets/Products/pad-see-ew-raw-chicken-thigh.jpeg';
-const sauce = '../assets/Products/pad-see-ew-sauce.jpeg';
-const vinegar = '../assets/Products/pad-see-ew-thai-chili-vinegar.jpeg';
-const veggies = '../assets/Products/pad-see-ew-veggies.jpeg';
+const noodles1 = '../assets/Products/pad-see-ew-1.jpeg';
+const noodles2 = '../assets/Products/pad-see-ew-2.jpeg';
+const noodles3 = '../assets/Products/pad-see-ew-3.jpeg';
+const noodles4 = '../assets/Products/pad-see-ew-4.jpeg';
+const noodles5 = '../assets/Products/pad-see-ew-5.jpeg';
+const noodles6 = '../assets/Products/pad-see-ew-6.jpeg';
+const noodles7 = '../assets/Products/pad-see-ew-7.jpeg';
+const noodles8 = '../assets/Products/pad-see-ew-8.jpeg';
 
 const THAI_CHILI_PEPPER_SECTION = 'Thai Chili Pepper';
 
@@ -42,7 +33,7 @@ const {
 module.exports = {
     cardName: 'Pad See Ew',
     name: 'Thai Pad See Ew',
-    img: platedZoomed,
+    img: noodles8,
     recipeAuthors: ['Pailin Chongchinant'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -98,25 +89,25 @@ module.exports = {
         { name: 'mortar and pestle' },
     ],
     directions: [
-        { step: 'Dry fry the Thai chili peppers and garlic.', section: THAI_CHILI_PEPPER_SECTION, img: dry },
-        { step: 'In a mortar and pestle, crush the peppers and garlic until it becomes a paste.', section: THAI_CHILI_PEPPER_SECTION, img: paste },
-        { step: 'Add vinegar to the paste.', section: THAI_CHILI_PEPPER_SECTION, img: vinegar },
+        { step: 'Dry fry the Thai chili peppers and garlic.', section: THAI_CHILI_PEPPER_SECTION, img: noodles1 },
+        { step: 'In a mortar and pestle, crush the peppers and garlic until it becomes a paste.', section: THAI_CHILI_PEPPER_SECTION, img: noodles2 },
+        { step: 'Add vinegar to the paste.', section: THAI_CHILI_PEPPER_SECTION, img: noodles3 },
 
-        { step: 'Marinate the chicken with all of the marinade ingredients.', section: SECTIONS.MAIN, img: thigh },
-        { step: 'Combine all the sauce ingredients in a medium size bowl.', section: SECTIONS.MAIN, img: sauce },
-        { step: 'Separate the chinese broccoli stems and leaves. Cut the stems about 2 inches.', section: SECTIONS.MAIN, img: broccoli },
-        { step: 'Cut the onion and bell pepper into slices and mince the garlic.', section: SECTIONS.MAIN, img: veggies },
-        { step: 'Sear chicken in a pan until it\'s about 80% cooked.', section: SECTIONS.MAIN, img: cookedChicken },
-        { step: 'Remove from the pan.', section: SECTIONS.MAIN, img: partialChicken },
-        { step: 'Add garlic, Chinese broccoli stems, sliced onion, snow peas and sliced pepper to the pan. Cook for 2 to 3 minutes.', section: SECTIONS.MAIN, img: fryVeggies },
-        { step: 'Add the Chinese broccoli leaves. Cook until the leaves wilts.', section: SECTIONS.MAIN, img: leaves },
+        { step: 'Marinate the chicken with all of the marinade ingredients.', section: SECTIONS.MAIN },
+        { step: 'Combine all the sauce ingredients in a medium size bowl.', section: SECTIONS.MAIN },
+        { step: 'Separate the chinese broccoli stems and leaves. Cut the stems about 2 inches.', section: SECTIONS.MAIN },
+        { step: 'Cut the onion and bell pepper into slices and mince the garlic.', section: SECTIONS.MAIN },
+        { step: 'Sear chicken in a pan until it\'s about 80% cooked.', section: SECTIONS.MAIN },
+        { step: 'Remove from the pan.', section: SECTIONS.MAIN, img: noodles4 },
+        { step: 'Add garlic, Chinese broccoli stems, sliced onion, snow peas and sliced pepper to the pan. Cook for 2 to 3 minutes.', section: SECTIONS.MAIN },
+        { step: 'Add the Chinese broccoli leaves. Cook until the leaves wilts.', section: SECTIONS.MAIN, img: noodles5 },
         { step: 'Remove the vegetables from the pan.', section: SECTIONS.MAIN },
-        { step: 'Add eggs to the pan. Scramble for a few seconds and let it set. Remove the eggs from the pan.', section: SECTIONS.MAIN, img: cookedEggs },
-        { step: 'Add a tablespoon of oil. Add rice noodles to the pan. Cook for a few minutes and let it char a little bit.', section: SECTIONS.MAIN, img: freshNoodles },
-        { step: 'Add sauce over noodles and cook for 3 minutes on high.', section: SECTIONS.MAIN, img: noodlesWithSauce },
+        { step: 'Add eggs to the pan. Scramble for a few seconds and let it set. Remove the eggs from the pan.', section: SECTIONS.MAIN },
+        { step: 'Add a tablespoon of oil. Add rice noodles to the pan. Cook for a few minutes and let it char a little bit.', section: SECTIONS.MAIN },
+        { step: 'Add sauce over noodles and cook for 3 minutes on high.', section: SECTIONS.MAIN, img: noodles6 },
         { step: 'Re-add chicken. Cook the chicken the remainder of the way.', section: SECTIONS.MAIN },
-        { step: 'Re-add the veggies and eggs. Toss everything together.', section: SECTIONS.MAIN, img: mixed },
-        { step: 'Optionally top with the chili vinegar sauce.', section: SECTIONS.MAIN, img: plated },
+        { step: 'Re-add the veggies and eggs. Toss everything together.', section: SECTIONS.MAIN, img: noodles7 },
+        { step: 'Optionally top with the chili vinegar sauce.', section: SECTIONS.MAIN },
     ],
     store: [
         {
