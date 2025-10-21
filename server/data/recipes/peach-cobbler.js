@@ -1,13 +1,7 @@
-const pan = '../assets/Products/peach-cobbler-pan.jpeg'
-const slice = '../assets/Products/peach-cobbler-slice.jpeg'
-const baked = '../assets/Products/peach-cobbler-baked.jpeg'
-const butter = '../assets/Products/peach-cobbler-butter.jpeg'
-const cinnamon = '../assets/Products/peach-cobbler-cinnamon.jpeg'
-const dry = '../assets/Products/peach-cobbler-dry.jpeg'
-const melted = '../assets/Products/peach-cobbler-melted-butter.jpeg'
-const milk = '../assets/Products/peach-cobbler-milk.jpeg'
-const mixed = '../assets/Products/peach-cobbler-mixed.jpeg'
-const peaches = '../assets/Products/peach-cobbler-peaches.jpeg'
+const cobbler1 = '../assets/Products/peach-cobbler-1.jpeg';
+const cobbler2 = '../assets/Products/peach-cobbler-2.jpeg';
+const cobbler3 = '../assets/Products/peach-cobbler-3.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
@@ -27,7 +21,7 @@ const {
 module.exports = {
     cardName: 'Peach Cobbler',
     name: 'Peach Cobbler',
-    img: slice,
+    img: cobbler3,
     recipeAuthors: [''],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -61,15 +55,15 @@ module.exports = {
     ],
     directions: [
         { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },
-        { step: 'Add butter into the baking pan and place pan in the oven while it preheats.', section: SECTIONS.MAIN, img: butter },
-        { step: 'Remove the pan from the oven once the butter has melted.', section: SECTIONS.MAIN, img: melted },
-        { step: 'In a mixing bowl, mix together flour, sugar, salt, and baking powder.', section: SECTIONS.MAIN, img: dry },
-        { step: 'Combine milk to the mixing bowl.', section: SECTIONS.MAIN, img: milk },
-        { step: 'Pour mixture into the baking pan and smooth to an even layer.', section: SECTIONS.MAIN, img: mixed },
-        { step: 'Add the canned peaches and its juices to the baking pan.', section: SECTIONS.MAIN, img: peaches },
-        { step: 'Generously drizzle cinnamon on top.', section: SECTIONS.MAIN, img: cinnamon },
-        { step: 'Bake for 35 to 40 minutes.', section: SECTIONS.MAIN, img: baked },
-        { step: 'Serve warm with ice cream.', section: SECTIONS.SERVE, img: pan },
+        { step: 'Add butter into the baking pan and place pan in the oven while it preheats.', section: SECTIONS.MAIN },
+        { step: 'Remove the pan from the oven once the butter has melted.', section: SECTIONS.MAIN },
+        { step: 'In a mixing bowl, mix together flour, sugar, salt, and baking powder.', section: SECTIONS.MAIN },
+        { step: 'Combine milk to the mixing bowl.', section: SECTIONS.MAIN },
+        { step: 'Pour mixture into the baking pan and smooth to an even layer.', section: SECTIONS.MAIN },
+        { step: 'Add the canned peaches and its juices to the baking pan.', section: SECTIONS.MAIN },
+        { step: 'Generously drizzle cinnamon on top.', section: SECTIONS.MAIN, img: cobbler1 },
+        { step: 'Bake for 35 to 40 minutes.', section: SECTIONS.MAIN },
+        { step: 'Serve warm with ice cream.', section: SECTIONS.SERVE, img: cobbler2 },
     ],
     store: [
         {
