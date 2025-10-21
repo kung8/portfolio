@@ -759,8 +759,3 @@ module.exports = recipes;
 // Charbroiled salmon, topped with a choice of creamy dill sauce
 // or fresh pineapple salsa, served with rice pilaf,
 // and sautéed vegetables. (32)
-
-// TODO: update the images for the following recipes:
-// - peppermint-bark
-// - pho
-// - potstickers

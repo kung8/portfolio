@@ -1,11 +1,12 @@
-const boiled = '../assets/Products/potstickers-boiled.jpeg';
-const covered = '../assets/Products/potstickers-covered.jpeg';
-const cut = '../assets/Products/potstickers-cut-dough.jpeg';
-const dough = '../assets/Products/potstickers-dough.jpeg';
-const filling = '../assets/Products/potstickers-filling.jpeg';
-const raw = '../assets/Products/potstickers-raw.jpeg';
-const zoomed = '../assets/Products/potstickers-zoomed.jpeg';
-const potstickers = '../assets/Products/potstickers.jpeg';
+const potstickers1 = '../assets/Products/potstickers-1.jpeg';
+const potstickers2 = '../assets/Products/potstickers-2.jpeg';
+const potstickers3 = '../assets/Products/potstickers-3.jpeg';
+const potstickers4 = '../assets/Products/potstickers-4.jpeg';
+const potstickers5 = '../assets/Products/potstickers-5.jpeg';
+const potstickers6 = '../assets/Products/potstickers-6.jpeg';
+const potstickers7 = '../assets/Products/potstickers-7.jpeg';
+const potstickers8 = '../assets/Products/potstickers-8.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
@@ -30,9 +31,10 @@ const DIPPING_SAUCE = 'Dipping Sauce';
 const ASSEMBLY = 'Assembly';
 
 module.exports = {
+    wip: true,
     cardName: 'Potstickers',
     name: 'Potstickers',
-    img: potstickers,
+    img: potstickers7,
     recipeAuthors: ['John Mitzewich'],
     recipeFinder: 'Kevin Ung',
     available: true,
@@ -77,29 +79,29 @@ module.exports = {
         FRYING_PAN,
     ],
     directions: [
-        { step: 'Mix together all the ingredients for the filling in a mixing bowl.', section: SECTIONS.FILLING, img: filling },
+        { step: 'Mix together all the ingredients for the filling in a mixing bowl.', section: SECTIONS.FILLING, img: potstickers1 },
         { step: 'Cover and chill for 1 hour.', section: SECTIONS.FILLING },
         { step: 'In a bowl mix together salt and flour.', section: SECTIONS.DOUGH },
         { step: 'Pour in hot water slowly.', section: SECTIONS.DOUGH },
         { step: 'Stir until dough forms.', section: SECTIONS.DOUGH },
         { step: 'Flour hands and move dough to work surface.', section: SECTIONS.DOUGH },
         { step: 'Knead until dough becomes smooth (about 3 to 5 minutes). Add up to ½ c flour as needed. ', section: SECTIONS.DOUGH },
-        { step: 'Wrap dough in plastic and let it rest for 30 minutes.', section: SECTIONS.DOUGH, img: dough },
-        { step: 'Use a 1/2 c measuring cup to cut the dough pieces.', section: SECTIONS.DOUGH, img: cut },
+        { step: 'Wrap dough in plastic and let it rest for 30 minutes.', section: SECTIONS.DOUGH, img: potstickers2 },
+        { step: 'Use a 1/2 c measuring cup to cut the dough pieces.', section: SECTIONS.DOUGH, img: potstickers3 },
         { step: 'Flatten the dough to about 3 ½ inch discs on a lightly floured surface.', section: SECTIONS.DOUGH },
         { step: 'Repeat for the rest of the dough.', section: SECTIONS.DOUGH },
         { step: 'Lightly moisten edges with wet finger.', section: ASSEMBLY },
         { step: 'Add a scoop of filling in the center of the wrapper.', section: ASSEMBLY },
         { step: 'Fold 2 sides up and pinch together.', section: ASSEMBLY },
-        { step: 'Pinch the edges to “pleat”.', section: ASSEMBLY, img: raw },
+        { step: 'Pinch the edges to “pleat”.', section: ASSEMBLY, img: potstickers4 },
         { step: 'Lightly tap the potstickers on the surface to flatten the bottom.', section: ASSEMBLY },
         { step: 'Repeat for the remaining potstickers.', section: ASSEMBLY },
         { step: 'Mix together sauce ingredients.', section: DIPPING_SAUCE },
-        { step: 'Over medium-high heat, in a pan add potstickers and water.', section: SECTIONS.MAIN, img: boiled },
-        { step: 'Cover pan with a lid. Steam (about 3 minutes).', section: SECTIONS.MAIN, img: covered },
+        { step: 'Over medium-high heat, in a pan add potstickers and water.', section: SECTIONS.MAIN, img: potstickers5 },
+        { step: 'Cover pan with a lid. Steam (about 3 minutes).', section: SECTIONS.MAIN, img: potstickers6 },
         { step: 'Uncover. Reduce heat to medium.', section: SECTIONS.MAIN },
         { step: 'Add oil and cook until bottom is golden brown (about 2 minutes).', section: SECTIONS.MAIN },
-        { step: 'Remove and set somewhere to keep warm.', section: SECTIONS.MAIN, img: zoomed },
+        { step: 'Remove and set somewhere to keep warm.', section: SECTIONS.MAIN, img: potstickers8 },
         { step: 'Serve with dipping sauce.', section: SECTIONS.MAIN },
     ],
     store: [
