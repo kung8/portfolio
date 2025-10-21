@@ -1,11 +1,11 @@
-const lunchables = '../assets/Products/fancy-lunchables.jpeg';
+const lunchables1 = '../assets/Products/fancy-lunchables-1.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const { BUTTER_PICKLE_CHIPS, CHEDDAR_CHEESE, COOKED_HAM, CRACKERS, LETTUCE, ROMA_TOMATO } = require('./ingredients');
 
 module.exports = {
     cardName: 'Fancy Lunchables',
     name: 'Fancy Lunchables',
-    img: lunchables,
+    img: lunchables1,
     recipeAuthors: ['Kevin Ung'],
     recipeFinder: '',
     available: true,

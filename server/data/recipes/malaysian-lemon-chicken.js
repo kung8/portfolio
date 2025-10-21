@@ -1,4 +1,4 @@
-const lemonChicken = '../assets/Products/lemon-chicken.jpeg';
+const chicken1 = '../assets/Products/malaysian-lemon-chicken-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
@@ -27,7 +27,7 @@ const DREDGING_STATION_SECTION = 'Dredging Station';
 module.exports = {
     cardName: 'Lemon Chicken',
     name: 'Malaysian Lemon Chicken',
-    img: lemonChicken,
+    img: chicken1,
     recipeAuthors: ['Bee Yinn Low'],
     recipeFinder: 'Kevin Ung',
     available: true,
