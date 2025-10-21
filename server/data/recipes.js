@@ -348,6 +348,7 @@ const recipes = [
     //////////////////////////////////////////////////////////////////////// ASIAN ///////////////////////////////////////////////////////////////////////  
     // THAI
     padThai,
+    drunkenNoodles,
     thaiPadSeeEw,
     thaiBasil,
     thaiBasilSesameCashewChicken,
@@ -356,7 +357,6 @@ const recipes = [
     mangoStickyRice,
     thaiMassamanCurry,
     coconutChicken,
-    drunkenNoodles,
     thaiPeanutSalad,
 
     // INDIAN

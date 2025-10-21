@@ -28,7 +28,7 @@ module.exports = {
     recipeAuthors: ['Carman Wilken'],
     recipeFinder: 'Kevin Ung',
     available: true,
-    recommended: true,
+    recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.SIMMER],
@@ -93,7 +93,7 @@ module.exports = {
         { step: 'Enjoy this great year round soup!', section: SECTIONS.SERVE, img: soup13 },
     ],
     notes: [
-        { note: 'This definitely had a good flavor but it was not enough to liquid ratio. Next time I would double the liquid ingredients and need to make sure to include more of the sundried tomatoes.' },
+        { note: 'This definitely had a good flavor. Initially I did not think there was enough liquid, but over time it released liquid and was enough.' },
     ],
     store: [
         {

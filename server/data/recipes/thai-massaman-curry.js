@@ -20,7 +20,6 @@ const HEAT_LIQUIDS = 'Heat Liquids';
 const COOK_POTATOES_AND_CARROTS = 'Cook Potatoes and Carrots';
 
 module.exports = {
-    wip: true,
     cardName: 'Massaman Curry',
     name: 'Thai Massaman Curry',
     img: curry9,
