@@ -37,8 +37,6 @@ const MELTED_CHOCOLATE = 'Melted chocolate';
 module.exports = {
     cardName: 'Crepe',
     name: 'Crepe',
-    recipeAuthors: ['Sam Giraud-Carrier'],
-    recipeFinder: 'Sam Giraud-Carrier',
     img: crepe4,
     available: true,
     recommended: true,
@@ -52,6 +50,14 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 8, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Sam Giraud-Carrier'],
+            finder: 'Sam Giraud-Carrier'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CREPE_BATTER },
@@ -61,7 +67,7 @@ module.exports = {
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CREPE_BATTER },
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CREPE_BATTER },
         { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: CREPE_BATTER },
-        
+
         { ...STRAWBERRY, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
         { ...BLUEBERRY, amount: '', unit: '', additionalDetails: 'halved', section: SECTIONS.TOPPINGS },
         { ...BANANA, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },

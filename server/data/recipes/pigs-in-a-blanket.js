@@ -6,8 +6,6 @@ module.exports = {
     cardName: 'Pigs In A Blanket',
     name: 'Pigs In A Blanket',
     img: blanket1,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -18,6 +16,14 @@ module.exports = {
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Pigs In A Blanket',
+            link: 'https://www.pillsbury.com/recipes/pigs-in-a-blanket/e8abc84e-8a0e-42d6-ae7e-23b677a161ac',
+            author: ['Pillsbury'],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
         { ...CROISSANT_DOUGH, amount: 2, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', optional: false },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', optional: false },
@@ -39,7 +45,7 @@ module.exports = {
         { step: 'Tubs of croissant dough usually make about 8 croissants. Cut each croissant dough triangle into thirds.', section: SECTIONS.MAIN },
         { step: 'Place hot dog on one end of the croissant piece and roll until it is snugly wrapped inside its blanket.', section: SECTIONS.MAIN },
         { step: 'Separate the egg white and the yolk. Lightly brush some of the yolk over the blanket to create a seal.', section: SECTIONS.MAIN },
-        { step: 'Bake for about 12 - 15 min or until golden brown.', section: SECTIONS.MAIN },
+        { step: 'Bake until golden brown (about 12 to 15 minutes).', section: SECTIONS.MAIN },
         { step: 'Serve with your favorite condiment, and enjoy this easy tailgate hors d\'oeuvre!', section: SECTIONS.MAIN },
     ],
     store: [

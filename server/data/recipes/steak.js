@@ -11,8 +11,6 @@ module.exports = {
     cardName: 'Steak',
     name: 'Steak',
     img: steak1,
-    recipeAuthors: ['Darci Billmire'],
-    recipeFinder: 'Darci Billmire',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -26,6 +24,14 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Darci Billmire'],
+            finder: 'Darci Billmire'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...BEEF_NEW_YORK_STRIP, amount: 2, unit: INGREDIENT_UNITS.PIECE, additionalDetails: '', section: SECTIONS.BEEF },

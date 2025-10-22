@@ -30,8 +30,6 @@ module.exports = {
     cardName: 'Bok Choy Chicken',
     name: 'Bok Choy Chicken',
     img: bokChoy7,
-    recipeAuthors: [''],
-    recipeFinder: '',
     available: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
@@ -43,6 +41,14 @@ module.exports = {
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },

@@ -10,8 +10,6 @@ module.exports = {
     cardName: 'Chicken Curry',
     name: 'Chicken Curry',
     img: curry2,
-    recipeAuthors: ['Delia Delector'],
-    recipeFinder: 'Delia Delector',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -25,6 +23,14 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 8, unit: TIME_UNITS.HOUR },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Delia Delector'],
+            finder: 'Delia Delector'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2 inch pieces', section: SECTIONS.MARINADE },

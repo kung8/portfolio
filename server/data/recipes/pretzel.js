@@ -31,8 +31,6 @@ module.exports = {
     cardName: 'Pretzel',
     name: 'Pretzel',
     img: pretzel10,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT, CATEGORIES.SNACK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -44,6 +42,14 @@ module.exports = {
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Soft Pretzel',
+            link: 'https://sallysbakingaddiction.com/easy-homemade-soft-pretzels/',
+            author: ['Sally McKenney'],
+            finder: 'Kevin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...WATER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.DOUGH },

@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'French Baguettes',
     name: 'French Baguettes',
     img: baguette9,
-    recipeAuthors: ['Sam Giraud-Carrier'],
-    recipeFinder: 'Sam Giraud-Carrier',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER],
@@ -31,6 +29,14 @@ module.exports = {
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 19, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 45, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Sam Giraud-Carrier'],
+            finder: 'Sam Giraud-Carrier'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BAGUETTES },

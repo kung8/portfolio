@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Smoothie',
     name: 'Smoothie',
     img: smoothie1,
-    recipeAuthors: ['Kevin Ung'],
-    recipeFinder: '',
     available: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.SNACK, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -26,6 +24,14 @@ module.exports = {
     yields: { amount: 3 / 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 2, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
         { ...ALMOND_MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
         { ...BANANA, amount: 2, unit: '', additionalDetails: '', optional: false },

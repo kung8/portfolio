@@ -27,8 +27,6 @@ module.exports = {
     cardName: 'Cheeseballs',
     name: 'Cheeseballs',
     img: cheeseballs1,
-    recipeAuthors: [''],
-    recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.ITALIAN],
@@ -40,6 +38,14 @@ module.exports = {
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 72.5, unit: TIME_UNITS.HOUR },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Justin Ung', 'Kevin Ung'],
+            finder: 'Justin Ung'
+        }
+    ],
     ingredients: [
         { ...BREAD_FLOUR, amount: 9 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },

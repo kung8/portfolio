@@ -26,8 +26,6 @@ module.exports = {
     cardName: 'BBQ Chicken Wings',
     name: 'BBQ Chicken Wings',
     img: wings4,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -39,6 +37,14 @@ module.exports = {
     yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: '',
+            link: '',
+            author: [''],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
         { ...CHICKEN_DRUMETTES, amount: 14, unit: INGREDIENT_UNITS.PIECE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...BAKING_SODA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },

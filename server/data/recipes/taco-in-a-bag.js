@@ -27,8 +27,6 @@ module.exports = {
     cardName: 'Taco in a Bag',
     name: 'Taco in a Bag',
     img: taco1,
-    recipeAuthors: ['Kevin Ung'],
-    recipeFinder: '',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN, GENRES.AMERICAN],
@@ -40,6 +38,14 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },

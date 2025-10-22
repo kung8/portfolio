@@ -25,8 +25,6 @@ module.exports = {
     cardName: 'Chocolate Chip Cookies',
     name: 'Chocolate Chip Cookies',
     img: cookies8,
-    recipeAuthors: ['Kevin Ung'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -39,6 +37,14 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'softened', optional: false },
         { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },

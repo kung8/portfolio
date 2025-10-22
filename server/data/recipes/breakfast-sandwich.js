@@ -15,8 +15,6 @@ module.exports = {
     cardName: 'Breakfast Sandwich',
     name: 'Breakfast Sandwich',
     img: sandwich1,
-    recipeAuthors: ['Kevin Ung'],
-    recipeFinder: '',
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -28,6 +26,14 @@ module.exports = {
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...COOKED_HAM, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },

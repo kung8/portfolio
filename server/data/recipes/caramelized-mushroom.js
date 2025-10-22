@@ -20,8 +20,6 @@ module.exports = {
     cardName: 'Caramelized Mushroom',
     name: 'Caramelized Mushroom',
     img: mushroom4,
-    recipeAuthors: [''],
-    recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.TOPPING],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -32,6 +30,14 @@ module.exports = {
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 2, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Justin Ung'],
+            finder: 'Justin Ung'
+        }
+    ],
     ingredients: [
         { ...MUSHROOM, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.TOPPING },
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },

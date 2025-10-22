@@ -34,8 +34,6 @@ module.exports = {
     cardName: 'Korean Beef Bulgogi',
     name: 'Korean Beef Bulgogi',
     img: bulgogi5,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -49,6 +47,14 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 8, unit: TIME_UNITS.HOUR },
+    websites: [
+        {
+            label: 'Korean Beef Bulgogi',
+            link: 'https://damndelicious.net/2019/04/21/korean-beef-bulgogi/',
+            author: ['Cindy'],
+            finder: 'Kevin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...BEEF, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cubed', section: BEEF_SECTION },
@@ -60,7 +66,7 @@ module.exports = {
         { ...GINGER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'peeled and diced', section: BEEF_SECTION },
         { ...GOCHUJANG_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BEEF_SECTION },
         { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
+        { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: 'cooked', section: SECTIONS.SERVE },
         { ...GREEN_ONION, amount: 4, unit: '', additionalDetails: 'sliced', section: SECTIONS.SERVE },
         { ...SESAME_SEEDS, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SERVE },
     ],

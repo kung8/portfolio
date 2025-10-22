@@ -769,3 +769,5 @@ module.exports = recipes;
 // TODO: Add way for Siri to add ingredients to the grocery list in my app (open chrome) (may need to create mobile app for this)
 // TODO: Add Frisee Salad with goat cheese and pine nuts, wild rice, roasted asparagus, salmon en croute recipe
 // TODO: Add Lox recipe
+
+// TODO: replace the egg-casserole recipe with this one - https://tastesbetterfromscratch.com/breakfast-casserole/

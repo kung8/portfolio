@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Wraps',
     name: 'Wraps',
     img: wrap1,
-    recipeAuthors: ['Kevin Ung'],
-    recipeFinder: '',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -25,6 +23,14 @@ module.exports = {
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 2, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
         { ...TORTILLA, amount: 1, unit: '', additionalDetails: '', optional: false },
         { ...COOKED_HAM, amount: 4, unit: '', additionalDetails: 'preferred', optional: false },

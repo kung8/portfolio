@@ -12,8 +12,6 @@ module.exports = {
     cardName: 'Browned Butter Cookies',
     name: 'Browned Butter Chocolate Chip Cookies',
     img: cookies1,
-    recipeAuthors: [''],
-    recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -24,6 +22,14 @@ module.exports = {
     yields: { amount: 3 / 2, unit: YIELD_UNITS.DOZEN },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 11, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Nick DiGiovanni'],
+            finder: 'Justin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...BROWNED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BROWNED_BUTTER_SECTION, link: { id: 'browned-butter', url: 'recipes/browned-butter' } },

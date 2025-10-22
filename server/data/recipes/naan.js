@@ -24,8 +24,6 @@ module.exports = {
     cardName: 'Naan',
     name: 'Naan',
     img: naan14,
-    recipeAuthors: ['Nick DiGiovanni'],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.APPETIZER],
@@ -38,6 +36,14 @@ module.exports = {
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Nick DiGiovanni'],
+            finder: 'Justin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: ACTIVATE_YEAST },

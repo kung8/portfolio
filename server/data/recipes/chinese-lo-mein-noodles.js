@@ -36,8 +36,6 @@ module.exports = {
     cardName: 'Lo Mein Noodles',
     name: 'Lo Mein Noodles',
     img: noodles7,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -50,6 +48,14 @@ module.exports = {
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...FLANK_STEAK, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: BEEF },

@@ -27,8 +27,6 @@ module.exports = {
     cardName: 'Chicken Alfredo',
     name: 'Chicken Alfredo',
     img: alfredo1,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -41,6 +39,14 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Chicken Fettuccine Alfredo',
+            link: 'https://www.foodnetwork.com/recipes/food-network-kitchen/chicken-fettuccine-alfredo-3364118#recipeHead',
+            author: ['Emily Saladino'],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
         { ...FETTUCCINE_NOODLES, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
         { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },

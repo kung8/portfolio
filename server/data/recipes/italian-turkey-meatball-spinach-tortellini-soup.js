@@ -38,8 +38,6 @@ module.exports = {
     cardName: 'Tortellini Soup',
     name: 'Turkey Meatball Spinach Tortellini Soup',
     img: soup11,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -52,6 +50,14 @@ module.exports = {
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Turkey Meatball Spinach Tortellini Soup',
+            link: 'https://www.skinnytaste.com/turkey-meatball-spinach-tortellini-soup/',
+            author: ['Gina Homolka'],
+            finder: 'Kevin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...GROUND_TURKEY, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false, section: MEATBALLS },

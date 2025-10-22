@@ -7,7 +7,6 @@ module.exports = {
     cardName: 'Ants on a Log',
     name: 'Ants on a Log',
     img: log2,
-    recipeAuthors: ['Kevin Ung'],
     available: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -18,6 +17,14 @@ module.exports = {
     diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 3, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     separated: false,
     ingredients: [
         { ...CELERY, amount: 4, unit: INGREDIENT_UNITS.STALK, additionalDetails: '', section: SECTIONS.MAIN },

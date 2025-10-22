@@ -32,8 +32,6 @@ module.exports = {
     cardName: 'Chicken Pot Pie',
     name: 'Chicken Pot Pie',
     img: pie8,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.BRITISH, GENRES.WESTERN, GENRES.AMERICAN],
@@ -45,6 +43,14 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
+    websites: [
+        {
+            label: 'Chicken Pot Pie',
+            link: 'https://www.pillsbury.com/recipes/classic-chicken-pot-pie/1401d418-ac0b-4b50-ad09-c6f1243fb992',
+            author: ['Pillsbury'],
+            finder: 'Kevin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...CHICKEN_BREAST, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiled and cut into 1/2 inch pieces', optional: false, section: SECTIONS.CHICKEN },
@@ -56,10 +62,10 @@ module.exports = {
         { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false, section: SECTIONS.FILLING },
 
         { ...CHICKEN_BROTH, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.LIQUIDS },
-        { ...MILK, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.LIQUIDS },
+        { ...MILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.LIQUIDS },
 
-        { ...FROZEN_PEAS, amount: 5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false, section: SECTIONS.FROZEN },
-        { ...FROZEN_CARROTS, amount: 5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false, section: SECTIONS.FROZEN },
+        { ...FROZEN_PEAS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.FROZEN },
+        { ...FROZEN_CARROTS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.FROZEN },
 
         { ...REFRIGERATED_PIE_CRUST, amount: 15, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false, section: SECTIONS.CRUST },
     ],

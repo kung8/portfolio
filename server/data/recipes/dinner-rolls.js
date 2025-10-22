@@ -10,8 +10,6 @@ const EGGS_SECTION = 'Egg';
 module.exports = {
     cardName: 'Dinner Rolls',
     name: 'Dinner Rolls',
-    recipeAuthors: ['Nanette Marx'],
-    recipeFinder: 'Nanette Marx',
     img: rolls2,
     available: true,
     recommended: true,
@@ -25,6 +23,14 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Nanette Marx'],
+            finder: 'Nanette Marx'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...YEAST, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: YEAST_MIXTURE },

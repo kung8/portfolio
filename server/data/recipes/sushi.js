@@ -22,8 +22,6 @@ const {
 module.exports = {
     cardName: 'Sushi',
     name: 'Sushi',
-    recipeAuthors: ['Aldin Pope'],
-    recipeFinder: 'Aldin Pope',
     img: sushi1,
     available: true,
     recommended: true,
@@ -37,6 +35,14 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Aldin Pope'],
+            finder: 'Aldin Pope'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...SEAWEED, amount: 8, unit: INGREDIENT_UNITS.SHEET, additionalDetails: '', section: SECTIONS.MAIN },

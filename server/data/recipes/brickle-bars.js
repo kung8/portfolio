@@ -23,8 +23,6 @@ module.exports = {
     cardName: 'Brickle Bar',
     name: 'Brickle Bar',
     img: bars13,
-    recipeAuthors: [''],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -36,6 +34,14 @@ module.exports = {
     yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Nick DiGiovanni'],
+            finder: 'Justin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'softened', section: PREPARATION },

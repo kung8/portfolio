@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Kalua Pig',
     name: 'Kalua Pig',
     img: '',
-    recipeAuthors: [''],
-    recipeFinder: 'Andrew Luke',
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -22,6 +20,14 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 740, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Andrew Luke'],
+            finder: 'Andrew Luke'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...PORK_BUTT, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'or shoulder', section: SECTIONS.PORK },

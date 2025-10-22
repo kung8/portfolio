@@ -39,8 +39,6 @@ module.exports = {
     cardName: 'American Omelette',
     name: 'American Omelette',
     img: omelette6,
-    recipeAuthors: ['Kevin Ung'],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -52,6 +50,14 @@ module.exports = {
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...EGG, amount: 2, unit: '', additionalDetails: '', optional: false, section: OMELETTE_SECTION },

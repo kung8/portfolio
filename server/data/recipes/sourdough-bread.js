@@ -26,8 +26,6 @@ module.exports = {
     cardName: 'Sourdough Bread',
     name: 'Sourdough Bread',
     img: bread8,
-    recipeAuthors: [''],
-    recipeFinder: 'Justin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SNACK],
@@ -40,6 +38,14 @@ module.exports = {
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 10, unit: TIME_UNITS.HOUR },
+    websites: [
+        {
+            label: '',
+            link: '',
+            author: [''],
+            finder: 'Justin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...SOURDOUGH_STARTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH, link: { id: starter.name, url: `recipes/${starter.name}` } },

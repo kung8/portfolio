@@ -30,8 +30,6 @@ module.exports = {
     cardName: 'Chicken Crescent Rolls',
     name: 'Chicken Stuffed Crescent Rolls',
     img: rolls7,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -42,6 +40,14 @@ module.exports = {
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: '',
+            link: '',
+            author: [''],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
         { ...CRESCENT_ROLLS, amount: 1, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', section: SECTIONS.MAIN },
         { ...CHICKEN_BREAST, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked and shredded', section: SECTIONS.FILLING },

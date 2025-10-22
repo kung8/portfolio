@@ -28,9 +28,7 @@ module.exports = {
     cardName: 'Egg Casserole',
     name: 'Egg Casserole',
     img: casserole1,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
-    available: true,
+    available: false,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -41,6 +39,14 @@ module.exports = {
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
+    websites: [
+        {
+            label: '',
+            link: '',
+            author: [''],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
         { ...BREAD, amount: 8, unit: '', additionalDetails: 'cubed', optional: false },
         { ...CHEDDAR_CHEESE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', optional: false },
@@ -94,3 +100,6 @@ module.exports = {
     ],
     mealPrep: false,
 };
+
+// TODO: replace this recipe with this one
+// https://tastesbetterfromscratch.com/breakfast-casserole/

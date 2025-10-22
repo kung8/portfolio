@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'S\'mores',
     name: 'S\'mores',
     img: smores1,
-    recipeAuthors: ['Kevin Ung'],
-    recipeFinder: '',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -25,6 +23,14 @@ module.exports = {
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
         { ...GRAHAM_CRACKER, amount: 2, unit: '', additionalDetails: '', optional: false },
         { ...MARSHMALLOW, amount: 2, unit: '', additionalDetails: '', optional: false },

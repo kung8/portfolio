@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Browned Butter',
     name: 'Browned Butter',
     img: '',
-    recipeAuthors: [''],
-    recipeFinder: 'Justin Ung',
     available: true,
     category: [CATEGORIES.TOPPING],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -19,6 +17,14 @@ module.exports = {
     yields: { amount: 3 / 2, unit: YIELD_UNITS.CUP },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Nick DiGiovanni'],
+            finder: 'Justin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },

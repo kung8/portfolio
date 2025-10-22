@@ -17,8 +17,6 @@ module.exports = {
     cardName: 'Sausage McGriddle',
     name: 'Sausage McGriddle',
     img: mcgriddle6,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -32,6 +30,14 @@ module.exports = {
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 18, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...PANCAKE_MIX, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'or enough to make about 16 3-inch pancakes', section: MCGRIDDLE_PANCAKE_SECTION },

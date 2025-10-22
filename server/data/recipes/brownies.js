@@ -21,8 +21,6 @@ module.exports = {
     cardName: 'Brownies',
     name: 'Brownies',
     img: brownies3,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -33,6 +31,14 @@ module.exports = {
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...COCOA_POWDER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
@@ -55,7 +61,7 @@ module.exports = {
         { step: 'Grease and add a little cocoa powder on the baking pan.', section: SECTIONS.MAIN },
         { step: 'Melt butter in the microwave.', section: SECTIONS.MAIN },
         { step: 'In a mixing bowl, combine melted butter, cocoa powder, and sugar. Mix well.', section: SECTIONS.MAIN },
-        { step: 'Add salt, vanilla, and eggs and mix.', section: SECTIONS.MAIN },
+        { step: 'Add salt, vanilla, and eggs. Mix.', section: SECTIONS.MAIN },
         { step: 'Mix in the flour.', section: SECTIONS.MAIN },
         { step: 'Spread the batter into the baking pan.', section: SECTIONS.MAIN },
         { step: 'Bake for 30 to 35 minutes or until a toothpick comes out clean.', section: SECTIONS.MAIN, img: [brownies1, brownies2] },

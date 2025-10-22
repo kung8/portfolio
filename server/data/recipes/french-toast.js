@@ -9,6 +9,7 @@ const frenchToast8 = '../assets/Products/french-toast-8.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BREAD,
+    BRIOCHE_BUNS,
     CINNAMON,
     EGG,
     FRYING_PAN,
@@ -26,8 +27,6 @@ module.exports = {
     cardName: 'French Toast',
     name: 'French Toast',
     img: frenchToast8,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -38,12 +37,20 @@ module.exports = {
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'French Toast',
+            link: 'https://www.loveandlemons.com/french-toast/',
+            author: ['Jeanine', 'Jack'],
+            finder: 'Kevin Ung'
+        }
+    ],
     ingredients: [
-        { ...EGG, amount: 2, unit: '', additionalDetails: '', optional: false },
+        { ...EGG, amount: 4, unit: '', additionalDetails: '', optional: false },
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...CINNAMON, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...MILK, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
-        { ...BREAD, amount: 8, unit: '', additionalDetails: '', optional: false },
+        { ...CINNAMON, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...MILK, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
+        { ...BRIOCHE_BUNS, amount: 8, unit: '', additionalDetails: '', optional: false },
         { ...UNSALTED_BUTTER, amount: '', unit: '', additionalDetails: 'for cooking', optional: false },
     ],
     appliances: [

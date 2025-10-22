@@ -20,8 +20,6 @@ module.exports = {
     name: 'Crescent Rolls',
     img: rolls9,
     available: true,
-    recipeAuthors: ['Grandma Ward'],
-    recipeFinder: 'Grandma Ward',
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.AUSTRIAN],
     method: [METHODS.BAKE],
@@ -32,6 +30,14 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Grandma Ward'],
+            finder: 'Grandma Ward'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...WATER, amount: 3 / 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: YEAST_MIXTURE },

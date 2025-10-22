@@ -7,8 +7,6 @@ module.exports = {
     cardName: 'Southwest Salad',
     name: 'Southwest Salad',
     img: salad1,
-    recipeAuthors: [''],
-    recipeFinder: '',
     available: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -20,6 +18,16 @@ module.exports = {
     yields: { amount: '', unit: YIELD_UNITS.SERVING },
     prepTime: { amount: '', unit: TIME_UNITS.MINUTE },
     cookTime: { amount: '', unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: '', unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: '',
+            link: '',
+            author: [''],
+            finder: ''
+        }
+    ],
+    separated: true,
     ingredients: [
         { name: '', amount: '', unit: '', additionalDetails: '', section: '' },
     ],

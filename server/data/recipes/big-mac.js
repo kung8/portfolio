@@ -13,8 +13,6 @@ module.exports = {
     cardName: 'Big Mac',
     name: 'Big Mac',
     img: mac5,
-    recipeAuthors: [''],
-    recipeFinder: 'Kevin Ung',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -27,9 +25,17 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Kevin Ung'],
+            finder: 'Kevin Ung'
+        }
+    ],
     separated: true,
     ingredients: [
-        { ...MAYONNAISE, amount: 1/2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BIG_MAC_SAUCE },
+        { ...MAYONNAISE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BIG_MAC_SAUCE },
         { ...KETCHUP, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BIG_MAC_SAUCE },
         { ...YELLOW_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BIG_MAC_SAUCE },
         { ...PICKLES, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'diced', section: BIG_MAC_SAUCE },

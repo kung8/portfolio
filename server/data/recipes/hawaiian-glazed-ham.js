@@ -12,8 +12,6 @@ module.exports = {
     cardName: 'Hawaiian Glazed Ham',
     name: 'Hawaiian Glazed Ham',
     img: ham1,
-    recipeAuthors: ['Hoku\'s Grammy'],
-    recipeFinder: 'Hoku\'s Grammy',
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -26,6 +24,14 @@ module.exports = {
     yields: { amount: 20, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 2, unit: TIME_UNITS.HOUR },
+    websites: [
+        {
+            label: 'Own Recipe',
+            link: null,
+            author: ['Hoku\'s Grammy'],
+            finder: 'Hoku\'s Grammy'
+        }
+    ],
     separated: true,
     ingredients: [
         { ...BONE_IN_HAM, amount: 15, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: HAM_SECTION },
