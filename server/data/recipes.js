@@ -771,3 +771,6 @@ module.exports = recipes;
 // TODO: Add Lox recipe
 
 // TODO: replace the egg-casserole recipe with this one - https://tastesbetterfromscratch.com/breakfast-casserole/
+// TODO: replace the brownies recipe
+// TODO: replace the chicken wing recipe
+// TODO: double check what other recipes can be replaced with better ones from websites
