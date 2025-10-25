@@ -8,7 +8,7 @@ import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_SHORT_DATE } from '../const
 import { getValidDateRangeError } from '../grocery-list-modal/getValidDateRangeError';
 import { RecipeDateInput } from '../grocery-list-modal/RecipeDateInput';
 import { RecipeDropdownInput } from '../grocery-list-modal/RecipeDropdownInput';
-import { categorizeRecipeType, getVendorOptions } from '../utils';
+import { categorizeRecipeType, getDefaultVendor, getVendorOptions } from '../utils';
 
 export const AddToGroceryListModal = ({
     closeModal,
@@ -30,7 +30,8 @@ export const AddToGroceryListModal = ({
     const { data: categoryData } = useGetRecipeCategories();
     const categories = categoryData?.CATEGORIES ?? [];
 
-    const [vendor, setVendor] = useState('');
+    const defaultVendor = getDefaultVendor();
+    const [vendor, setVendor] = useState(defaultVendor);
     const [isVendorDropdownOpen, setIsVendorDropdownOpen] = useState(false);
     const vendorOptions = getVendorOptions();
 

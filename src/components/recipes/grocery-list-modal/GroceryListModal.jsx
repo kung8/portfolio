@@ -16,7 +16,7 @@ import {
 } from '../constants';
 import { ApplyToIngredientsInPlannedMealModal } from './ApplyToIngredientsInPlannedMealModal';
 import { SettingsModal } from './SettingsModal';
-import { getStartingDay, getVendorOptions } from '../utils';
+import { getDefaultVendor, getStartingDay, getVendorOptions } from '../utils';
 
 export const GroceryListModal = ({
     generateUUID,
@@ -164,8 +164,13 @@ export const GroceryListModal = ({
     const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
     const [startingDay, setStartingDay] = useState(getStartingDay());
     const [vendorOptions, setVendorOptions] = useState(getVendorOptions());
+    const [defaultVendor, setDefaultVendor] = useState(getDefaultVendor());
     const closeSettingsModal = () => {
         setIsSettingsModalOpen(false);
+    }
+    const updateDefaultVendor = (vendor) => {
+        setDefaultVendor(vendor);
+        localStorage.setItem('defaultVendor', vendor);
     }
     const updateStartingDay = (day) => {
         setStartingDay(day);
@@ -346,7 +351,13 @@ export const GroceryListModal = ({
             {isSettingsModalOpen && (
                 <SettingsModal
                     closeModal={closeSettingsModal}
-                    handleApply={(newStartingDay, newVendorOptions) => {
+                    defaultVendor={defaultVendor}
+                    handleApply={({
+                        defaultVendor: newDefaultVendor,
+                        startingDay: newStartingDay,
+                        vendorOptions: newVendorOptions
+                    }) => {
+                        updateDefaultVendor(newDefaultVendor);
                         updateStartingDay(newStartingDay);
                         updateVendorOptions(newVendorOptions);
                         closeSettingsModal();

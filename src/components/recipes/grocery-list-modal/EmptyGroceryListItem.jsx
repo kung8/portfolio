@@ -1,11 +1,13 @@
 import { useState } from 'react';
 
 import { useCategoryName } from '../hooks/use-category-name';
+import { getDefaultVendor } from '../utils';
 
 export const EmptyGroceryListItem = ({ generateUUID, setGroceryList, updateLocalStorage }) => {
     const [inputValue, setInputValue] = useState('');
     const [checked, setChecked] = useState(false);
     const { getCategoryName } = useCategoryName();
+    const defaultVendor = getDefaultVendor();
 
     return (
         <div className="grocery-list-item">
@@ -19,7 +21,16 @@ export const EmptyGroceryListItem = ({ generateUUID, setGroceryList, updateLocal
                     if (e.key === 'Enter' && inputValue) {
                         const category = getCategoryName(inputValue);
                         setGroceryList(prev => {
-                            const newGroceryList = [...prev, { id: generateUUID(), name: inputValue, index: prev.length, checked, category }]
+                            const newGroceryList = [
+                                ...prev, 
+                                { 
+                                    id: generateUUID(), 
+                                    name: inputValue, 
+                                    index: prev.length, 
+                                    checked, category,
+                                    vendor: defaultVendor, 
+                                }
+                            ];
                             updateLocalStorage({ groceryList: newGroceryList });
                             return newGroceryList;
                         });

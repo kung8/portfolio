@@ -3,6 +3,7 @@ export * from './convert-decimal-to-fraction';
 export * from './format-ingredient-item';
 export * from './format-time';
 export * from './format-yield';
+export * from './get-default-vendor';
 export * from './get-greeting';
 export * from './get-ingredient-data';
 export * from './get-starting-day';

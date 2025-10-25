@@ -1,3 +1,5 @@
+import { VENDOR_OPTIONS_LOCAL_STORAGE_KEY } from "../constants";
+
 const defaultVendorOptions = [
     'Walmart',
     'Costco',
@@ -18,7 +20,7 @@ const defaultVendorOptions = [
 ];
 
 export const getVendorOptions = () => {
-    const storedVendors = localStorage.getItem('vendorOptions');
+    const storedVendors = localStorage.getItem(VENDOR_OPTIONS_LOCAL_STORAGE_KEY);
     if (storedVendors) return JSON.parse(storedVendors);
     return defaultVendorOptions;
 }

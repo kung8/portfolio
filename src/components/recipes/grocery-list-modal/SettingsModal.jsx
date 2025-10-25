@@ -4,6 +4,7 @@ import { isEqual } from 'lodash';
 import { useDebouncedCallback } from 'use-debounce';
 
 import closeBtn from '../../../Assets/x.png';
+import { Dropdown } from '../../dropdown/dropdown';
 
 const VendorOptionItem = ({ originalOption, removeVendorOption, updateVendorOption }) => {
     const [option, setOption] = useState(originalOption);
@@ -44,13 +45,18 @@ const days = [
 
 export const SettingsModal = ({
     closeModal,
+    defaultVendor,
     handleApply,
     startingDay,
     vendorOptions,
 }) => {
+    const [localDefaultVendor, setLocalDefaultVendor] = useState(defaultVendor);
     const [localStartingDay, setLocalStartingDay] = useState(startingDay);
     const [localVendorOptions, setLocalVendorOptions] = useState(vendorOptions);
 
+    const [showDefaultVendorDropdown, setShowDefaultVendorDropdown] = useState(false);
+
+    // Vendor Options Handlers
     const addVendorOption = () => {
         setLocalVendorOptions([...localVendorOptions, '']);
     }
@@ -67,9 +73,17 @@ export const SettingsModal = ({
         setLocalVendorOptions(newOptions);
     }
 
+    // Check if changes were made
+    const defaultVendorUnchanged = defaultVendor === localDefaultVendor;
     const startingDayUnchanged = startingDay === localStartingDay;
     const vendorOptionsUnchanged = isEqual(vendorOptions, localVendorOptions);
     const allVendorOptionsFilled = localVendorOptions.every(option => !!option);
+    const disableApplyBtn = defaultVendorUnchanged && startingDayUnchanged && (vendorOptionsUnchanged || !allVendorOptionsFilled);
+
+    // Sync props to local state on prop change
+    useEffect(() => {
+        setLocalDefaultVendor(defaultVendor);
+    }, [defaultVendor]);
 
     useEffect(() => {
         setLocalStartingDay(startingDay);
@@ -99,6 +113,7 @@ export const SettingsModal = ({
                             </li>
                         ))}
                     </ul>
+
                     <h4 className="section-heading">Vendors</h4>
                     <ul className="vendor-options">
                         {localVendorOptions.map((option, index) => (
@@ -113,13 +128,38 @@ export const SettingsModal = ({
                     <div className="add-vendor-btn-container">
                         <button className={"add-vendor-btn action-btn"} onClick={addVendorOption}>+ Add Vendor</button>
                     </div>
+
+                    <h4 className="section-heading">Default Vendor</h4>
+                    <Dropdown
+                        DropdownSelectorLeftContent={<span className="dropdown-label">{localDefaultVendor}</span>}
+                        dropdownOnClick={() => setShowDefaultVendorDropdown(!showDefaultVendorDropdown)}
+                        DropdownContent={localVendorOptions.map((option) => (
+                            <li
+                                key={option}
+                                onClick={() => {
+                                    setLocalDefaultVendor(option);
+                                    setShowDefaultVendorDropdown(false);
+                                }}
+                            >{option}</li>
+                        ))}
+                        openAbove
+                        optionsCount={localVendorOptions.length}
+                        show={showDefaultVendorDropdown}
+                    />
                 </div>
                 <div className="modal-footer">
                     <button className="cancel-btn" onClick={closeModal}>Cancel</button>
                     <button
                         className="action-btn"
-                        onClick={() => handleApply(localStartingDay, localVendorOptions)}
-                        disabled={startingDayUnchanged && (vendorOptionsUnchanged || !allVendorOptionsFilled)}>Apply</button>
+                        disabled={disableApplyBtn}
+                        onClick={() => handleApply({
+                            defaultVendor: localDefaultVendor,
+                            startingDay: localStartingDay,
+                            vendorOptions: localVendorOptions,
+                        })}
+                    >
+                        Apply
+                    </button>
                 </div>
             </div>
         </div>
