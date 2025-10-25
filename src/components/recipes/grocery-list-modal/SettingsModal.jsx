@@ -133,7 +133,7 @@ export const SettingsModal = ({
                     <Dropdown
                         DropdownSelectorLeftContent={<span className="dropdown-label">{localDefaultVendor}</span>}
                         dropdownOnClick={() => setShowDefaultVendorDropdown(!showDefaultVendorDropdown)}
-                        DropdownContent={localVendorOptions.map((option) => (
+                        DropdownContent={localVendorOptions.filter(option => !!option).map((option) => (
                             <li
                                 key={option}
                                 onClick={() => {
