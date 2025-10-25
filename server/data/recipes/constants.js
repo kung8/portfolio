@@ -155,6 +155,7 @@ const METHODS = {
     BOIL: 'Boil',
     BLANCH: 'Blanch',
     BLEND: 'Blend',
+    BROIL: 'Broil',
     CHILLED: 'Chilled',
     DEEP_FRY: 'Deep Fry',
     GRILL: 'Grill',
@@ -265,6 +266,7 @@ const SECTIONS = {
 
     MARINATE_CHICKEN: 'Marinate Chicken',
     MARINATE_BEEF: 'Marinate Beef',
+    MARINATE_FISH: 'Marinate Fish',
     MARINATE_PORK: 'Marinate Pork',
     MARINATE_SHRIMP: 'Marinate Shrimp',
 

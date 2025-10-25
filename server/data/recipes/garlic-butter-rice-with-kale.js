@@ -1,4 +1,11 @@
-// const example = '../assets/Products/example.jpeg';
+const kale1 = '../assets/Products/butter-rice-with-kale-1.jpeg';
+const kale2 = '../assets/Products/butter-rice-with-kale-2.jpeg';
+const kale3 = '../assets/Products/butter-rice-with-kale-3.jpeg';
+const kale4 = '../assets/Products/butter-rice-with-kale-4.jpeg';
+const kale5 = '../assets/Products/butter-rice-with-kale-5.jpeg';
+const kale6 = '../assets/Products/butter-rice-with-kale-6.jpeg';
+const kale7 = '../assets/Products/butter-rice-with-kale-7.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CHICKEN_BROTH, GARLIC, KALE, LARGE_POT, MIXING_BOWL, OLIVE_OIL, SALT, SLICED_ALMONDS, STOVE, UNSALTED_BUTTER, WHITE_RICE } = require('./ingredients');
 
@@ -7,10 +14,9 @@ const GARLIC_BUTTER_RICE_SECTION = 'Garlic Butter Rice';
 const PREP_KALE = 'Prep Kale';
 
 module.exports = {
-    wip: true,
-    cardName: 'Garlic Butter Rice with Kale',
+    cardName: 'Butter Rice with Kale',
     name: 'Garlic Butter Rice with Kale',
-    img: '',
+    img: kale6,
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -58,15 +64,15 @@ module.exports = {
     directions: [
         { step: `In a mixing bowl, combine the "${KALE_SECTION}" section ingredients. Let it marinate.`, section: PREP_KALE },
         { step: 'Over medium-high heat, melt butter in a large pot.', section: SECTIONS.COOK_RICE },
-        { step: 'Add garlic. Stir and cook until fragrant (about 1 minute).', section: SECTIONS.COOK_RICE },
-        { step: 'Add rice. Stir for 10 seconds.', section: SECTIONS.COOK_RICE },
+        { step: 'Add garlic. Stir and cook until fragrant (about 1 minute).', section: SECTIONS.COOK_RICE, img: kale1 },
+        { step: 'Add rice. Stir for 10 seconds.', section: SECTIONS.COOK_RICE, img: kale2 },
         { step: 'Add broth. Stir and cover.', section: SECTIONS.COOK_RICE },
-        { step: 'Turn heat to medium. Cook until liquid is absorbed (about 12 to 15 minutes).', section: SECTIONS.COOK_RICE },
-        { step: 'Add kale on top of the rice. Re-cover and remove from heat.', section: SECTIONS.COOK_RICE },
+        { step: 'Turn heat to medium. Cook until liquid is absorbed (about 12 to 15 minutes).', section: SECTIONS.COOK_RICE, img: kale3 },
+        { step: 'Add kale on top of the rice. Re-cover and remove from heat.', section: SECTIONS.COOK_RICE, img: kale4 },
         { step: 'Let the rice rest for 10 to 15 minutes.', section: SECTIONS.COOK_RICE },
         { step: 'Fluff rice with a fork and stir in kale.', section: SECTIONS.COOK_RICE },
-        { step: 'Stir in butter, almonds and salt and pepper as desired.', section: SECTIONS.COOK_RICE },
-        { step: 'Enjoy this with your favorite protein.', section: SECTIONS.SERVE },
+        { step: 'Stir in butter, almonds and salt and pepper as desired.', section: SECTIONS.COOK_RICE, img: kale5 },
+        { step: 'Enjoy this with your favorite protein.', section: SECTIONS.SERVE, img: kale7 },
     ],
     store: [
         {

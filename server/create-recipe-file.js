@@ -123,13 +123,13 @@ const createPrompt = async () => {
         },
         {
             type: 'checkbox',
-            name: 'types',
+            name: 'diet',
             message: 'Select recipe diets:',
             choices: Object.values(DIET),
         },
         {
             type: 'checkbox',
-            name: 'types',
+            name: 'allergies',
             message: 'Select recipe allergies:',
             choices: Object.values(ALLERGIES),
         },

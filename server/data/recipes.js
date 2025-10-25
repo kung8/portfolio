@@ -9,11 +9,12 @@ const appleTart = require("./recipes/apple-tart");
 const appleTurnovers = require('./recipes/apple-turnovers.js'); // TODO: finish adding recipe
 const bakedBeans = require("./recipes/baked-beans");
 const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
-const bakedChickenDrumsticks = require("./recipes/baked-chicken-drumsticks");
 const bakedChickenBreast = require('./recipes/baked-chicken-breast.js');
+const bakedChickenDrumsticks = require("./recipes/baked-chicken-drumsticks");
 const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
 const bakedMacaroniAndCheese = require("./recipes/baked-macaroni-and-cheese");
 const bakedRitzBites = require('./recipes/baked-ritz-bites.js');
+const broiledSalmon = require('./recipes/broiled-salmon.js');
 const bakedZiti = require("./recipes/baked-ziti");
 const balsamicTomatoBruschetta = require("./recipes/balsamic-tomato-bruschetta");
 const bananaBread = require("./recipes/banana-bread");
@@ -239,7 +240,7 @@ const noBakeCookie = require("./recipes/no-bake-cookie");
 const noBakePumpkinPie = require('./recipes/no-bake-pumpkin-pie.js');
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const orangeChicken = require("./recipes/orange-chicken");
-const ovenBakedSalmon = require('./recipes/oven-baked-salmon.js'); // TODO: finish adding recipe
+const bakedSalmon = require('./recipes/baked-salmon.js'); // TODO: finish adding recipe
 const oyakodon = require("./recipes/oyakodon");
 const padThai = require("./recipes/pad-thai");
 const panFriedChickenThighs = require("./recipes/pan-fried-chicken-thighs");
@@ -282,9 +283,9 @@ const redLobsterCheddarBayBiscuits = require("./recipes/red-lobster-cheddar-bay-
 const reubenSandwich = require("./recipes/reuben-sandwich");
 const riceKrispyTreats = require("./recipes/rice-krispy-treats");
 const ricePilaf = require("./recipes/rice-pilaf");
+const roastTurkey = require("./recipes/roast-turkey");
 const roastedAsparagus = require('./recipes/roasted-asparagus.js');
 const roastedPorkBelly = require("./recipes/roasted-pork-belly");
-const roastTurkey = require("./recipes/roast-turkey");
 const roastedVegetables = require('./recipes/roasted-vegetables.js'); // TODO: finish adding recipe
 const rosemaryFries = require("./recipes/rosemary-fries");
 const rosemaryLemonade = require("./recipes/rosemary-lemonade");
@@ -586,7 +587,8 @@ const recipes = [
     greenBeanCasserole,
     loadedChickenCasserole,
     stuffedPepperCasserole,
-    ovenBakedSalmon,
+    bakedSalmon,
+    broiledSalmon,
     steak,
     butteredCorn,
     bbqPulledPorkAndFixins,
