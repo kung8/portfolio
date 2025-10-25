@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Russian Beef Stroganoff', 
             link: 'https://natashaskitchen.com/beef-stroganoff/',
-            author: ['Natasha Kravchuk'],
+            authors: ['Natasha Kravchuk'],
             finder: 'Kevin Ung', 
         }
     ],

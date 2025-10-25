@@ -27,7 +27,7 @@ module.exports = {
         { 
             label: 'Lemon Bars', 
             link: "https://preppykitchen.com/lemon-bars",
-            author: ['John Kanell'],
+            authors: ['John Kanell'],
             finder: 'Kevin Ung', 
         }
     ],

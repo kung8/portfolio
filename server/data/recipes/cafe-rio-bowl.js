@@ -67,7 +67,7 @@ module.exports = {
         { 
             label: 'Cafe Rio Cilantro Ranch Dressing', 
             link: "https://lilluna.com/cafe-rio-cilantro-ranch-dressing/",
-            author: ['Kristyn Merkley'],
+            authors: ['Kristyn Merkley'],
             finder: 'Kevin Ung', 
         }
     ],

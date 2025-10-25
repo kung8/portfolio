@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Beef Tacos', 
             link: 'https://feelgoodfoodie.net/recipe/ground-beef-tacos-napa-cabbage-guacamole/',
-            author: ['Yumna Jawad'],
+            authors: ['Yumna Jawad'],
             finder: 'Kevin Ung', 
         }
     ],

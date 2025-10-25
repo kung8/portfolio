@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Spring Rolls', 
             link: 'https://www.recipetineats.com/spring-rolls/',
-            author: ['Nagi Maehashi'],
+            authors: ['Nagi Maehashi'],
             finder: 'Kevin Ung', 
         }
     ],

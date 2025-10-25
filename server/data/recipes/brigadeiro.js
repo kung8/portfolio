@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Brigadeiro', 
             link: 'https://www.piesandtacos.com/brigadeiro-recipe/',
-            author: ['Camila Hurst'],
+            authors: ['Camila Hurst'],
             finder: 'Sarah Miller', 
         }
     ],

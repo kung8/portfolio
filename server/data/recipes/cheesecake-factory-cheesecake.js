@@ -63,7 +63,7 @@ module.exports = {
         { 
             label: 'Cheesecake Factory Copycat', 
             link: 'https://www.delish.com/cooking/recipe-ideas/a37762621/cheesecake-factory-cheesecake-1ipe/',
-            author: ['Justin Sullivan'],
+            authors: ['Justin Sullivan'],
             finder: 'Kevin Ung', 
         }
     ],

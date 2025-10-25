@@ -47,7 +47,7 @@ module.exports = {
         { 
             label: 'Yor\'s Stew', 
             link: 'https://glutenfreewithme.com/yors-stew-inspired-by-spy-x-family-gluten-free/#google_vignette',
-            author: ['Carly'],
+            authors: ['Carly'],
             finder: 'Kevin Ung', 
         }
     ],

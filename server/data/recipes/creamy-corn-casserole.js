@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Creamy Corn Casserole', 
             link: 'https://www.allrecipes.com/recipe/18906/awesome-and-easy-creamy-corn-casserole/',
-            author: ['Ruth Phillips'],
+            authors: ['Ruth Phillips'],
             finder: 'Samantha Pham', 
         }
     ],

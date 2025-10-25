@@ -25,7 +25,7 @@ module.exports = {
         { 
             label: 'B.L.T.', 
             link: 'https://www.allrecipes.com/recipe/209578/blt/',
-            author: ['Mottsbela'],
+            authors: ['Mottsbela'],
             finder: 'Kevin Ung', 
         }
     ],

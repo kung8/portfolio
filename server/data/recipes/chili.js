@@ -50,7 +50,7 @@ module.exports = {
         { 
             label: 'Chili', 
             link: 'https://www.spendwithpennies.com/the-best-chili-recipe/',
-            author: ['Holly Nilsson'],
+            authors: ['Holly Nilsson'],
             finder: 'Kevin Ung', 
         }
     ],

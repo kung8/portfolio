@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Buttermilk Syrup', 
             link: 'https://www.allrecipes.com/recipe/239478/grandmas-buttermilk-syrup/',
-            author: ['Katie Madrian'],
+            authors: ['Katie Madrian'],
             finder: 'Camille Pockrus', 
         }
     ],

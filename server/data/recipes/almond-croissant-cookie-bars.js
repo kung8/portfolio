@@ -38,7 +38,7 @@ module.exports = {
         { 
             label: 'Almond Croissant Cookie Bars', 
             link: 'https://www.thekitchn.com/almond-croissant-cookie-bars-recipe-23712681',
-            author: ['Kelli Foster'],
+            authors: ['Kelli Foster'],
             finder: 'Kevin Ung', 
         }
     ],

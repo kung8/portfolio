@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Jambalaya', 
             link: 'https://www.gimmesomeoven.com/jambalaya-recipe/',
-            author: ['Ali'],
+            authors: ['Ali'],
             finder: 'Kevin Ung', 
         }
     ],

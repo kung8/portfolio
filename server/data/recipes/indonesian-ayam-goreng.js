@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Indonesian Ayam Goreng', 
             link: 'https://www.taste.com.au/recipes/indonesian-fried-chicken/f24fe781-bbc9-4a12-b270-f53abb2ce6e7',
-            author: ['Sophia Young'],
+            authors: ['Sophia Young'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Sausage Balls', 
             link: 'https://www.food.com/recipe/sausage-balls-46078',
-            author: ['Fauve'],
+            authors: ['Fauve'],
             finder: 'Kevin Ung', 
         }
     ],

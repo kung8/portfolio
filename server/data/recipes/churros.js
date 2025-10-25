@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Churros', 
             link: 'https://www.cookingclassy.com/churros/',
-            author: ['Jaclyn'],
+            authors: ['Jaclyn'],
             finder: 'Kevin Ung', 
         }
     ],

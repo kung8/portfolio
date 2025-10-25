@@ -45,7 +45,7 @@ module.exports = {
         { 
             label: 'Pesto', 
             link: "https://www.loveandlemons.com/pesto-recipe",
-            author: ['Jeanine', 'Jack'],
+            authors: ['Jeanine', 'Jack'],
             finder: 'Kevin Ung', 
         }
     ],

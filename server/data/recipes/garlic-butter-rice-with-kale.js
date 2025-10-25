@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Garlic Butter Rice with Kale', 
             link: 'https://www.recipetineats.com/garlic-butter-rice-with-kale-recipe/',
-            author: ['Nagi Maehashi'],
+            authors: ['Nagi Maehashi'],
             finder: 'Kevin Ung', 
         }
     ],

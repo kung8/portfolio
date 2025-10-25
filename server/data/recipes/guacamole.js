@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Guacamole', 
             link: 'https://www.allrecipes.com/recipe/14231/guacamole/',
-            author: ['Maryellen'],
+            authors: ['Maryellen'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Cajun Garlic Butter Shrimp', 
             link: 'https://therecipecritic.com/cajun-garlic-butter-shrimp/',
-            author: ['Alyssa Rivers'],
+            authors: ['Alyssa Rivers'],
             finder: 'Kevin Ung', 
         }
     ],

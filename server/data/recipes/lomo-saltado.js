@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Lomo Saltado', 
             link: 'https://littlespicejar.com/lomo-saltado/',
-            author: ['Marzia'],
+            authors: ['Marzia'],
             finder: 'Kevin Ung', 
         }
     ],

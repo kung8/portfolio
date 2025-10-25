@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Grilled Cheese Sandwich', 
             link: 'https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/',
-            author: ['Sara'],
+            authors: ['Sara'],
             finder: 'Kevin Ung', 
         }
     ],

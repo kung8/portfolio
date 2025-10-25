@@ -28,7 +28,7 @@ module.exports = {
         { 
             label: 'Rosemary Sweet Potato Fries', 
             link: 'https://www.tasteofhome.com/recipes/rosemary-sweet-potato-fries/',
-            author: ['Jackie Gregston'],
+            authors: ['Jackie Gregston'],
             finder: 'Kevin Ung', 
         }
     ],

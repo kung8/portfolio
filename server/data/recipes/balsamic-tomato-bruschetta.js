@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Balsamic Tomato Bruschetta', 
             link: 'https://www.forkinthekitchen.com/balsamic-bruschetta-on-crostini/',
-            author: ['Becca Mills'],
+            authors: ['Becca Mills'],
             finder: 'Justin Ung', 
         }
     ],

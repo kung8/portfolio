@@ -41,7 +41,7 @@ module.exports = {
         { 
             label: 'Oyakodon', 
             link: 'https://www.justonecookbook.com/oyakodon/',
-            author: ['Namiko Hirasawa Chen'],
+            authors: ['Namiko Hirasawa Chen'],
             finder: 'Kevin Ung', 
         }
     ],

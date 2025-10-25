@@ -28,7 +28,7 @@ module.exports = {
         { 
             label: 'Popcorn Balls', 
             link: "https://www.allrecipes.com/recipe/20519/best-ever-popcorn-balls/",
-            author: ['Kelli'],
+            authors: ['Kelli'],
             finder: 'Kevin Ung', 
         }
     ],

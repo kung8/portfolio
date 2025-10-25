@@ -57,7 +57,7 @@ module.exports = {
         { 
             label: 'Sausage Gravy', 
             link: 'https://www.soulfullymade.com/best-sausage-gravy-recipe/',
-            author: ['Nikki Lee'],
+            authors: ['Nikki Lee'],
             finder: 'Justin Ung', 
         }
     ],

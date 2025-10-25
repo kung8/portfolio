@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'Frozen Mud Pie', 
             link: 'https://www.facebook.com/photo.php?fbid=122096829650877256',
-            author: [''],
+            authors: [''],
             finder: 'Kevin Ung', 
         }
     ],

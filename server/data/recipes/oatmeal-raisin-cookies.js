@@ -41,7 +41,7 @@ module.exports = {
         { 
             label: 'Oatmeal Raisin Cookies', 
             link: "https://www.food.com/recipe/oatmeal-raisin-cookies-35813",
-            author: ['Bev I Am'],
+            authors: ['Bev I Am'],
             finder: 'Kevin Ung', 
         }
     ],

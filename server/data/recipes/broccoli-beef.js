@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Broccoli Beef', 
             link: 'https://natashaskitchen.com/beef-and-broccoli/',
-            author: ['Natasha Kravchuk'],
+            authors: ['Natasha Kravchuk'],
             finder: 'Kevin Ung', 
         } // (1.8K)
     ],

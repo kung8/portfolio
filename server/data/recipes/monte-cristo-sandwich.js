@@ -36,7 +36,7 @@ module.exports = {
         { 
             label: 'Monte Cristo Sandwich', 
             link: 'https://www.allrecipes.com/recipe/264681/madame-cristo-grilled-ham-and-cheese/',
-            author: ['John Mitzewich'],
+            authors: ['John Mitzewich'],
             finder: 'Kevin Ung', 
         }
     ],

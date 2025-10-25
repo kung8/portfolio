@@ -49,13 +49,13 @@ module.exports = {
         { 
             label: 'Sugar Cookies', 
             link: 'https://sallysbakingaddiction.com/best-sugar-cookies/',
-            author: ['Sally McKenney'],
+            authors: ['Sally McKenney'],
             finder: 'Kevin Ung', 
         },
         { 
             label: 'Royal Icing', 
             link: 'https://sallysbakingaddiction.com/royal-icing/',
-            author: ['Sally McKenney'],
+            authors: ['Sally McKenney'],
             finder: 'Kevin Ung', 
         },
     ],

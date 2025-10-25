@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Ted Lasso', 
             link: 'https://www.thekitchn.com/the-official-ted-lasso-biscuit-recipe-23211497',
-            author: ['Laurel Randolph'],
+            authors: ['Laurel Randolph'],
             finder: 'Justin Ung', 
         },
     ],

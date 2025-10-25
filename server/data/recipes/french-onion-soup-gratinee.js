@@ -31,7 +31,7 @@ module.exports = {
         { 
             label: 'French Onion Soup Gratinee', 
             link: 'https://www.allrecipes.com/recipe/91192/french-onion-soup-gratinee/',
-            author: ['Jersey Tomato'],
+            authors: ['Jersey Tomato'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Stuffing', 
             link: 'https://www.howsweeteats.com/2020/11/best-stuffing-recipe/',
-            author: ['Jessica'],
+            authors: ['Jessica'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Carrot Cake Scones', 
             link: 'https://homeiswheretheboatis.net/2025/03/18/everybunnys-favorite-carrot-cake-scones-with-cream-cheese-glaze/',
-            author: ['Pam and Nancy'],
+            authors: ['Pam and Nancy'],
             finder: 'Kevin Ung', 
         }
     ],

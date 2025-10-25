@@ -35,7 +35,7 @@ module.exports = {
         { 
             label: 'Carbonara', 
             link: 'https://www.recipetineats.com/carbonara/',
-            author: ['Nagi Maehashi'],
+            authors: ['Nagi Maehashi'],
             finder: 'Kevin Ung', 
         }
     ],

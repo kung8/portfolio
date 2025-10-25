@@ -39,7 +39,7 @@ module.exports = {
         { 
             label: 'Baked Lemon Chicken', 
             link: 'https://www.lecremedelacrumb.com/easy-healthy-baked-lemon-chicken/',
-            author: ['Tiffany'],
+            authors: ['Tiffany'],
             finder: 'Kevin Ung', 
         }
     ],

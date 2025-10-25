@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Lemon Freeze Bars', 
             link: 'https://www.thekitchn.com/lemon-freeze-bars-recipe-23731330',
-            author: ['Patty Catalano'],
+            authors: ['Patty Catalano'],
             finder: 'Kevin Ung', 
         }
     ],

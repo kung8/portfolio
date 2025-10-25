@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Filipino Chicken Adobo', 
             link: 'https://howtofeedaloon.com/filipino-chicken-adobo/',
-            author: ['Kris Longwell'],
+            authors: ['Kris Longwell'],
             finder: 'Kevin Ung', 
         }
     ],

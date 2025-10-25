@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Beef Stroganoff Soup', 
             link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a103360/beef-stroganoff-soup/',
-            author: ['Erica Kastner'],
+            authors: ['Erica Kastner'],
             finder: 'Kevin Ung', 
         }
     ],

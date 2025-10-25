@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Mochi', 
             link: 'https://www.mochimommy.com/easy-homemade-mochi/',
-            author: ['Mochi Mommy'],
+            authors: ['Mochi Mommy'],
             finder: 'Kevin Ung', 
         }
     ],

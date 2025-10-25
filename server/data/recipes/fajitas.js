@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Fajitas', 
             link: 'https://littlespicejar.com/the-best-steak-fajitas/',
-            author: ['Marzia'],
+            authors: ['Marzia'],
             finder: 'Kevin Ung', 
         }
     ],

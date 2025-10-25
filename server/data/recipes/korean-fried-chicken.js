@@ -62,7 +62,7 @@ module.exports = {
         { 
             label: 'Korean Fried Chicken', 
             link: 'https://www.koreanbapsang.com/yangnyeom-chicken-korean-fried-chicken/',
-            author: ['Hyosun'],
+            authors: ['Hyosun'],
             finder: 'Justin Ung', 
         }
     ],

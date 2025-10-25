@@ -34,7 +34,7 @@ module.exports = {
         { 
             label: 'Peanut Chicken Spring Roll Bowl', 
             link: 'https://www.instagram.com/reel/DIZbF2vyT7D',
-            author: ['Maxine Sharf'],
+            authors: ['Maxine Sharf'],
             finder: 'Kevin Ung', 
         }
     ],

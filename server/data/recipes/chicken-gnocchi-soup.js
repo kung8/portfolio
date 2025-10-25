@@ -36,7 +36,7 @@ module.exports = {
         { 
             label: 'Chicken Gnocchi Soup', 
             link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a40772957/chicken-gnocchi-soup-recipe/',
-            author: ['Sloane Layton'],
+            authors: ['Sloane Layton'],
             finder: 'Kevin Ung', 
         }
     ],

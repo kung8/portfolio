@@ -31,7 +31,7 @@ module.exports = {
         { 
             label: 'Mango Sticky Rice', 
             link: 'https://cooking.nytimes.com/recipes/1014806-sticky-rice-with-mango',
-            author: ['David Tanis'],
+            authors: ['David Tanis'],
             finder: 'Kevin Ung', 
         }
     ],

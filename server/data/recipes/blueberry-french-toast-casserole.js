@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Blueberry French Toast Casserole', 
             link: 'https://mixandmatchmama.com/2025/06/blueberry-french-toast-casserole-3/',
-            author: ['Shay'],
+            authors: ['Shay'],
             finder: 'Kevin Ung', 
         }
     ],

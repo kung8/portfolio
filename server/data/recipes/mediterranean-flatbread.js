@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Mediterranean Flatbread', 
             link: 'https://sailorbailey.com/blog/mediterranean-flatbread/',
-            author: ['Bailey'],
+            authors: ['Bailey'],
             finder: 'Kevin Ung', 
         }
     ],

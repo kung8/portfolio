@@ -10,7 +10,7 @@ export const Websites = () => {
         <>
             <h4 className="recipe-detail-label website-label">Website References:</h4>
             <ul className="recipe-websites-list">
-                {websites?.map(({ author, finder, label, link }, i) => (
+                {websites?.map(({ authors, finder, label, link }, i) => (
                     <li key={i} className="recipe-website-item">
                         <div className="recipe-website-link">
                             {link ? (
@@ -19,12 +19,12 @@ export const Websites = () => {
                                         {label}
                                     </a>
                                     {' '}
-                                    {author && (
-                                        <span className="recipe-author">by {author}</span>
+                                    {authors && (
+                                        <span className="recipe-author">by {authors}</span>
                                     )}
                                 </>
                             ) : (
-                                <span className="no-link-label-and-author">{label}{author && ` by ${author}`}</span>
+                                <span className="no-link-label-and-author">{label}{authors && ` by ${authors}`}</span>
                             )}
 
                         </div>

@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Deconstructed Apple Crisp', 
             link: 'https://zestfulkitchen.com/deconstructed-apple-crisp/',
-            author: ['Lauren Grant'],
+            authors: ['Lauren Grant'],
             finder: 'Kevin Ung', 
         }
     ],

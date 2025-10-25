@@ -61,7 +61,7 @@ module.exports = {
         { 
             label: 'Cherry and Cream Cheese Kolaches', 
             link: 'https://www.foodandwine.com/recipes/cherry-and-cream-cheese-kolaches',
-            author: ['Andrea Slonecker'],
+            authors: ['Andrea Slonecker'],
             finder: 'Kevin Ung', 
         }
     ],

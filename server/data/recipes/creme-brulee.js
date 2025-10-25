@@ -33,13 +33,13 @@ module.exports = {
         { 
             label: 'Crème Brûlée', 
             link: 'https://www.foodnetwork.com/recipes/alton-brown/creme-brulee-recipe-1916827',
-            author: ['Alton Brown'],
+            authors: ['Alton Brown'],
             finder: 'Kevin Ung', 
         },
         { 
             label: 'Vanilla Sugar', 
             link: 'https://sallysbakingaddiction.com/homemade-vanilla-sugar/',
-            author: ['Sally McKenney'],
+            authors: ['Sally McKenney'],
             finder: 'Kevin Ung', 
         }
     ],

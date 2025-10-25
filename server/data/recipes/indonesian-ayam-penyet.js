@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'Ayam Penyet', 
             link: 'https://www.allrecipes.com/recipe/264557/ayam-penyet-pedas-indonesian-spicy-penyet-chicken/',
-            author: ['deravi'],
+            authors: ['deravi'],
             finder: 'Kevin Ung', 
         }
     ],

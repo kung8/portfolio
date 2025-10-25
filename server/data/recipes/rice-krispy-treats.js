@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Rice Krispie Treats', 
             link: "https://www.spendwithpennies.com/extra-chewy-rice-krispie-treats/",
-            author: ['Holly Nilsson'],
+            authors: ['Holly Nilsson'],
             finder: 'Kevin Ung', 
         }
     ],

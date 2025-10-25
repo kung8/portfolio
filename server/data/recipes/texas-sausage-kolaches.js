@@ -42,7 +42,7 @@ module.exports = {
         { 
             label: 'Texas Sausage Kolaches', 
             link: 'https://www.allrecipes.com/recipe/268998/texas-sausage-kolaches-klobasneks/',
-            author: ['Krissi Abott'],
+            authors: ['Krissi Abott'],
             finder: 'Kevin Ung', 
         }
     ],

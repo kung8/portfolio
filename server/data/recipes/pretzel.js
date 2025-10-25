@@ -46,7 +46,7 @@ module.exports = {
         {
             label: 'Soft Pretzel',
             link: 'https://sallysbakingaddiction.com/easy-homemade-soft-pretzels/',
-            author: ['Sally McKenney'],
+            authors: ['Sally McKenney'],
             finder: 'Kevin Ung'
         }
     ],

@@ -27,7 +27,7 @@ module.exports = {
         { 
             label: 'Mozzarella Sticks', 
             link: 'https://www.food.com/recipe/mozzarella-sticks-30977',
-            author: ['Karen'],
+            authors: ['Karen'],
             finder: 'Kevin Ung', 
         }
     ],

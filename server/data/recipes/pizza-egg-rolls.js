@@ -36,7 +36,7 @@ module.exports = {
         { 
             label: 'Pizza Egg Rolls', 
             link: 'https://www.tasteofhome.com/recipes/pizza-rolls/',
-            author: ['Suzanne S. Wiley'],
+            authors: ['Suzanne S. Wiley'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -71,13 +71,13 @@ module.exports = {
         { 
             label: 'Banh Mi Sandwich', 
             link: 'https://www.recipetineats.com/banh-mi-vietnamese-sandwich/',
-            author: ['Nagi Maehashi'],
+            authors: ['Nagi Maehashi'],
             finder: 'Kevin Ung', 
         },
         { 
             label: 'Pickled Daikon and Carrots', 
             link: 'https://www.simplyrecipes.com/recipes/vietnamese_daikon_and_carrot_pickles/',
-            author: ['Elise Bauer'],
+            authors: ['Elise Bauer'],
             finder: 'Kevin Ung', 
         },
     ],

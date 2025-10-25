@@ -33,7 +33,7 @@ module.exports = {
         { 
             label: 'Pineapple Upside Down Cake', 
             link: 'https://www.bettycrocker.com/recipes/easy-pineapple-upside-down-cake/c4d3321d-fad9-41cb-8f29-8d91a4279b07',
-            author: ['Angela Ritchie'],
+            authors: ['Angela Ritchie'],
             finder: 'Kevin Ung', 
         }
     ],

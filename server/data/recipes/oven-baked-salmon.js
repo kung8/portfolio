@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Oven Baked Salmon', 
             link: 'https://www.foodnetwork.com/recipes/oven-baked-salmon-recipe-1911951',
-            author: ['Kathleen Daelemans'],
+            authors: ['Kathleen Daelemans'],
             finder: 'Kevin Ung', 
         }
     ],

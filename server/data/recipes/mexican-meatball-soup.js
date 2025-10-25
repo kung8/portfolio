@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Mexican Meatball Soup', 
             link: 'https://www.mexicoinmykitchen.com/mexican-meatball-soup-recipe/?fbclid=IwY2xjawIfTotleHRuA2FlbQIxMAABHQYcxHPcv1hhY25EjsAP33ufzYdcUKwRuldIir42OU8j8QqMZ9iXbduoEg_aem_WbP6pIyotuLceI-yiIsTIw',
-            author: ['Mely Martinez'],
+            authors: ['Mely Martinez'],
             finder: 'Zam Illescas', 
         }
     ],

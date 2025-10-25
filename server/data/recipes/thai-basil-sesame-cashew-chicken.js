@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Thai Basil Sesame Cashew Chicken', 
             link: 'https://www.halfbakedharvest.com/sesame-cashew-chicken/',
-            author: ['Tieghan Gerard'],
+            authors: ['Tieghan Gerard'],
             finder: 'Kevin Ung', 
         }
     ],

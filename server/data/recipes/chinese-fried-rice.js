@@ -35,7 +35,7 @@ module.exports = {
         { 
             label: 'Egg Fried Rice', 
             link: 'https://www.madewithlau.com/recipes/egg-fried-rice',
-            author: ['Chef Lau'],
+            authors: ['Chef Lau'],
             finder: 'Kevin Ung', 
         }
     ],

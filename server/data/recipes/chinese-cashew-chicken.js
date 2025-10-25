@@ -55,7 +55,7 @@ module.exports = {
         { 
             label: 'Cashew Chicken', 
             link: "https://www.averiecooks.com/better-than-takeout-cashew-chicken",
-            author: ['Averie Sunshine'],
+            authors: ['Averie Sunshine'],
             finder: 'Kevin Ung', 
         }
     ],

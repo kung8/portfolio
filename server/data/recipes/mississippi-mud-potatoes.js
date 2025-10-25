@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Mississippi Mud Potatoes', 
             link: 'https://www.thekitchn.com/mississippi-mud-potatoes-recipe-23713064',
-            author: ['Janette Zepeda'],
+            authors: ['Janette Zepeda'],
             finder: 'Kevin Ung', 
         }
     ],

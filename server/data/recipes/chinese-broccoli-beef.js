@@ -54,7 +54,7 @@ module.exports = {
         { 
             label: 'Broccoli Beef', 
             link: "https://www.instagram.com/leahscohen/reel/C1a15_1OgWY/",
-            author: ['Leahs Cohen'],
+            authors: ['Leahs Cohen'],
             finder: 'Kevin Ung', 
         }
     ],

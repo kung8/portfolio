@@ -30,13 +30,13 @@ module.exports = {
         { 
             label: 'Sesame Balls (Jian Dui)', 
             link: 'https://takestwoeggs.com/sesame-balls-with-red-bean-paste/',
-            author: ['Megan'],
+            authors: ['Megan'],
             finder: 'Kevin Ung', 
         },
         { 
             label: 'Banh Cam', 
             link: 'https://www.wokandkin.com/banh-cam/',
-            author: ['Jeannette'],
+            authors: ['Jeannette'],
             finder: 'Kevin Ung', 
         }
     ],

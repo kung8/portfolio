@@ -27,7 +27,7 @@ module.exports = {
         { 
             label: 'Butternut Squash Soup', 
             link: 'https://www.delish.com/cooking/recipe-ideas/recipes/a55386/best-roasted-butternut-squash-soup-recipe/',
-            author: ['Lindsay Funston'],
+            authors: ['Lindsay Funston'],
             finder: 'Kevin Ung', 
         }
     ],

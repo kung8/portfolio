@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Beignets', 
             link: 'https://bakerbynature.com/new-orleans-style-beignets/',
-            author: ['Ashley Manila'],
+            authors: ['Ashley Manila'],
             finder: 'Kevin Ung', 
         }
     ],

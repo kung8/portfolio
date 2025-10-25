@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Cream Puffs', 
             link: 'https://www.allrecipes.com/recipe/15869/cream-puffs/',
-            author: [''],
+            authors: [''],
             finder: 'Kevin Ung', 
         }
     ],

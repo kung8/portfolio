@@ -31,13 +31,13 @@ module.exports = {
         {
             label: 'Biscoff Pie',
             link: 'https://wildwildwhisk.com/cookie-butter-pie-pops',
-            author: ['Trang Doan'],
+            authors: ['Trang Doan'],
             finder: 'Justin Ung',
         },
         // { 
         //     label: 'Biscoff Pie', 
         //     link: 'https://www.crazyforcrust.com/frozen-biscoff-pie/',
-        //     author: ['Dorothy Kern'],
+        //     authors: ['Dorothy Kern'],
         //     finder: 'Kevin Ung', 
         // }
     ],

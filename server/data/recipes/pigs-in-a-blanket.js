@@ -20,7 +20,7 @@ module.exports = {
         {
             label: 'Pigs In A Blanket',
             link: 'https://www.pillsbury.com/recipes/pigs-in-a-blanket/e8abc84e-8a0e-42d6-ae7e-23b677a161ac',
-            author: ['Pillsbury'],
+            authors: ['Pillsbury'],
             finder: 'Kevin Ung'
         }
     ],

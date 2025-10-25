@@ -35,7 +35,7 @@ module.exports = {
         { 
             label: 'Croissants', 
             link: 'https://www.jocooks.com/recipes/homemade-croissants/',
-            author: ['Joanna Cismaru'],
+            authors: ['Joanna Cismaru'],
             finder: 'Kevin Ung', 
         }
     ],

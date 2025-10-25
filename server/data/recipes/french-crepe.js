@@ -54,7 +54,7 @@ module.exports = {
         {
             label: 'Own Recipe',
             link: null,
-            author: ['Sam Giraud-Carrier'],
+            authors: ['Sam Giraud-Carrier'],
             finder: 'Sam Giraud-Carrier'
         }
     ],

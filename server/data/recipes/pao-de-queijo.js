@@ -50,7 +50,7 @@ module.exports = {
         { 
             label: 'Brazilian Cheese Bread', 
             link: "https://www.oliviascuisine.com/authentic-brazilian-cheese-bread/",
-            author: ['Olivia Mesquita'],
+            authors: ['Olivia Mesquita'],
             finder: 'Kevin Ung', 
         }
     ],

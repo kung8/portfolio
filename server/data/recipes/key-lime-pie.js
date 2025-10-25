@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Key Lime Pie', 
             link: 'https://www.allrecipes.com/recipe/12698/easy-key-lime-pie-i/',
-            author: ['Dinner2'],
+            authors: ['Dinner2'],
             finder: 'Kevin Ung', 
         }
     ],

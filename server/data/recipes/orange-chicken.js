@@ -35,7 +35,7 @@ module.exports = {
         { 
             label: 'Orange Chicken', 
             link: 'https://www.modernhoney.com/chinese-orange-chicken/#wprm-recipe-container-12601',
-            author: ['Melissa Stadler'],
+            authors: ['Melissa Stadler'],
             finder: 'Kevin Ung', 
         }
     ],

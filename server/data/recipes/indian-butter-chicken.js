@@ -47,7 +47,7 @@ module.exports = {
         { 
             label: 'Butter Chicken', 
             link: "https://gimmedelicious.com/easy-20-minute-butter-chicken/",
-            author: ['Layla Atik'],
+            authors: ['Layla Atik'],
             finder: 'Kevin Ung', 
         }
     ],

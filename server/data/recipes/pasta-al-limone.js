@@ -33,7 +33,7 @@ module.exports = {
         { 
             label: 'Pasta al Limone', 
             link: 'https://tastefullygrace.com/lemon-pasta-pasta-al-limone/',
-            author: ['Grace Vallo'],
+            authors: ['Grace Vallo'],
             finder: 'Kevin Ung', 
         }
     ],

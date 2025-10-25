@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'Sweet and Savory Beef Ribs', 
             link: 'https://www.instagram.com/reel/DLnzlZGh9-s/',
-            author: ['Stephvnietea'],
+            authors: ['Stephvnietea'],
             finder: 'Kevin Ung', 
         }
     ],

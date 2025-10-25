@@ -28,7 +28,7 @@ module.exports = {
         {
             label: 'Own Recipe',
             link: null,
-            author: ['Darci Billmire'],
+            authors: ['Darci Billmire'],
             finder: 'Darci Billmire'
         }
     ],

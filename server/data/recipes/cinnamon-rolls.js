@@ -35,7 +35,7 @@ module.exports = {
         { 
             label: 'Cinnamon Rolls', 
             link: 'https://www.ambitiouskitchen.com/best-cinnamon-rolls/',
-            author: ['Monique'],
+            authors: ['Monique'],
             finder: 'Kevin Ung', 
         }
     ],

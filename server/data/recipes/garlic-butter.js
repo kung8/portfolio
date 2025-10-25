@@ -22,7 +22,7 @@ module.exports = {
         { 
             label: 'Garlic Butter', 
             link: 'https://www.spendwithpennies.com/best-homemade-garlic-butter/',
-            author: ['Holly Nilsson'],
+            authors: ['Holly Nilsson'],
             finder: 'Kevin Ung', 
         }
     ],

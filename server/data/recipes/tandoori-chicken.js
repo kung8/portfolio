@@ -35,7 +35,7 @@ module.exports = {
         { 
             label: 'Tandoori Chicken', 
             link: 'https://www.indianhealthyrecipes.com/tandoori-chicken-recipe/',
-            author: ['Swasthi'],
+            authors: ['Swasthi'],
             finder: 'Kevin Ung', 
         }
     ],

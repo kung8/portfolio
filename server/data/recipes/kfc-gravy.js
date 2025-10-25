@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'KFC Gravy', 
             link: 'https://www.recipetineats.com/gravy/',
-            author: ['Nagi Maehashi'],
+            authors: ['Nagi Maehashi'],
             finder: 'Kevin Ung', 
         }
     ],

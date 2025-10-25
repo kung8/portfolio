@@ -42,7 +42,7 @@ module.exports = {
         {
             label: 'Beef Stroganoff',
             link: 'https://www.spendwithpennies.com/easy-beef-stroganoff/',
-            author: ['Holly Nilsson'],
+            authors: ['Holly Nilsson'],
             finder: 'Kevin Ung'
         }
     ],

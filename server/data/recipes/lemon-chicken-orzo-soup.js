@@ -34,7 +34,7 @@ module.exports = {
         { 
             label: 'Lemon Chicken-Orzo Soup', 
             link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a39296200/lemon-chicken-orzo-soup-recipe/',
-            author: ['Ree Drummond'],
+            authors: ['Ree Drummond'],
             finder: 'Kevin Ung', 
         }
     ],

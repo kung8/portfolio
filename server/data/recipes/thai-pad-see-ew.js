@@ -50,7 +50,7 @@ module.exports = {
         { 
             label: 'Chili Vinegar', 
             link: "https://hot-thai-kitchen.com/chili-vinegar/",
-            author: ['Pailin Chongchinant'],
+            authors: ['Pailin Chongchinant'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -34,7 +34,7 @@ module.exports = {
         {
             label: 'Own Recipe',
             link: null,
-            author: ['Kevin Ung'],
+            authors: ['Kevin Ung'],
             finder: 'Kevin Ung'
         }
     ],

@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'Cheeseburger Spring Rolls', 
             link: 'https://dishedbykate.com/cheeseburger-spring-rolls/',
-            author: ['Kate Phillips'],
+            authors: ['Kate Phillips'],
             finder: 'Kevin Ung', 
         }
     ],

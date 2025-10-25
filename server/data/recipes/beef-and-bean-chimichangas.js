@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Beef and Bean Chimichangas', 
             link: 'https://www.allrecipes.com/recipe/36766/beef-and-bean-chimichangas/',
-            author: ['Nicole'],
+            authors: ['Nicole'],
             finder: 'Kevin Ung', 
         }
     ],

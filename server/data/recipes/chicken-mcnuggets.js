@@ -33,7 +33,7 @@ module.exports = {
         { 
             label: 'Chicken McNuggets', 
             link: 'https://www.joshuaweissman.com/post/mcdonald-s-mcnuggets-but-better',
-            author: ['Joshua Weissman'],
+            authors: ['Joshua Weissman'],
             finder: 'Kevin Ung', 
         }
     ],

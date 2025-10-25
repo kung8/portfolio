@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Garlic Chicken', 
             link: "https://www.tasteofhome.com/recipes/garlic-chicken-with-herbs/",
-            author: ['Jan Valdez'],
+            authors: ['Jan Valdez'],
             finder: 'Kevin Ung', 
         }
     ],

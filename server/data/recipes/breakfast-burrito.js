@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Breakfast Burrito', 
             link: 'https://www.onceuponachef.com/recipes/breakfast-burritos.html',
-            author: ['Jennifer Segal'],
+            authors: ['Jennifer Segal'],
             finder: 'Kevin Ung', 
         }
     ],

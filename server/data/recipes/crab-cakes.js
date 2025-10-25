@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Crab Cakes', 
             link: 'https://www.foodandwine.com/recipes/baltimore-style-crab-cakes',
-            author: ['Andrew Zimmern'],
+            authors: ['Andrew Zimmern'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Thai Basil Chicken', 
             link: 'https://www.allrecipes.com/recipe/257938/spicy-thai-basil-chicken-pad-krapow-gai/',
-            author: ['John Mitzewich'],
+            authors: ['John Mitzewich'],
             finder: 'Kevin Ung', 
         }
     ],

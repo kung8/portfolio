@@ -47,7 +47,7 @@ module.exports = {
         { 
             label: 'Swedish Meatballs', 
             link: 'https://www.allrecipes.com/recipe/216564/swedish-meatballs-svenska-kottbullar/',
-            author: ['Nom Nom Nom'],
+            authors: ['Nom Nom Nom'],
             finder: 'Kevin Ung', 
         }
     ],

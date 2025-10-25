@@ -31,7 +31,7 @@ module.exports = {
         { 
             label: 'Pop Tarts', 
             link: 'https://bakingmischief.com/what-to-do-with-leftover-pie-dough/',
-            author: ['Tracy'],
+            authors: ['Tracy'],
             finder: 'Kevin Ung', 
         }
     ],

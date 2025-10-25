@@ -51,7 +51,7 @@ module.exports = {
         { 
             label: 'Waffles', 
             link: 'https://www.spendwithpennies.com/fluffy-homemade-waffle-recipe/',
-            author: ['Holly Nilsson'],
+            authors: ['Holly Nilsson'],
             finder: 'Kevin Ung', 
         }
     ],

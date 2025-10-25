@@ -34,7 +34,7 @@ module.exports = {
         { 
             label: 'Caramel Apples', 
             link: 'https://www.allrecipes.com/recipe/228210/the-best-caramel-apples/',
-            author: ['onlyxception'],
+            authors: ['onlyxception'],
             finder: 'Kevin Ung', 
         }
     ],

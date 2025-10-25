@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'Paella', 
             link: 'https://www.allrecipes.com/recipe/238588/quick-and-easy-paella/',
-            author: ['John Mitzewich'],
+            authors: ['John Mitzewich'],
             finder: 'Kevin Ung', 
         }
     ],

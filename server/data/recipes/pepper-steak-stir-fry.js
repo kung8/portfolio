@@ -39,7 +39,7 @@ module.exports = {
         {
             label: 'Pepper Steak Stir Fry',
             link: 'https://www.dinneratthezoo.com/pepper-steak-stir-fry/',
-            author: ['Kevin Ung'],
+            authors: ['Kevin Ung'],
             finder: 'Kevin Ung',
         }
     ],

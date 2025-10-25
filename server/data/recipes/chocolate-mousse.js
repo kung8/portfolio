@@ -53,7 +53,7 @@ module.exports = {
         { 
             label: 'Chocolate Mousse', 
             link: "https://www.recipetineats.com/chocolate-mousse",
-            author: ['Nagi Maehashi'],
+            authors: ['Nagi Maehashi'],
             finder: 'Kevin Ung', 
         }
     ],

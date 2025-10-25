@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Spicy Italian Flatbread', 
             link: 'https://www.budgetbytes.com/spicy-italian-flat-bread/',
-            author: ['Beth Moncel'],
+            authors: ['Beth Moncel'],
             finder: 'Kevin Ung', 
         }
     ],

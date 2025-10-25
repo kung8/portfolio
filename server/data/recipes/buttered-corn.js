@@ -22,7 +22,7 @@ module.exports = {
         { 
             label: 'Buttered Corn', 
             link: 'https://thesaltymarshmallow.com/buttered-corn-recipe/',
-            author: ['Nichole'],
+            authors: ['Nichole'],
             finder: 'Kevin Ung', 
         }
     ],

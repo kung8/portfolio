@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Yule Log', 
             link: 'https://sallysbakingaddiction.com/buche-de-noel-yule-log/',
-            author: ['Sally McKenney'],
+            authors: ['Sally McKenney'],
             finder: 'Kevin Ung', 
         }
     ],

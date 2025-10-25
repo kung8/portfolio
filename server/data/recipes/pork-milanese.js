@@ -25,7 +25,7 @@ module.exports = {
         { 
             label: 'Pork Milanese', 
             link: 'https://www.billyparisi.com/pork-milanese-spring-kale-salad-recipe/',
-            author: ['Billy Parisi'],
+            authors: ['Billy Parisi'],
             finder: 'Kevin Ung', 
         }
     ],

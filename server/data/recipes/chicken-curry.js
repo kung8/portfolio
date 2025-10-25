@@ -27,7 +27,7 @@ module.exports = {
         {
             label: 'Own Recipe',
             link: null,
-            author: ['Delia Delector'],
+            authors: ['Delia Delector'],
             finder: 'Delia Delector'
         }
     ],

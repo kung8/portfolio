@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Choco Taco', 
             link: 'https://www.heinens.com/recipes/homemade-choco-tacos/',
-            author: ['Ashley Durand'],
+            authors: ['Ashley Durand'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -36,7 +36,7 @@ module.exports = {
         { 
             label: 'Chicken Quesadilla', 
             link: 'https://www.wellplated.com/chicken-quesadilla/',
-            author: ['Erin Clarke'],
+            authors: ['Erin Clarke'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Dosa', 
             link: 'https://www.indianhealthyrecipes.com/dosa-recipe-dosa-batter/',
-            author: ['Swasthi'],
+            authors: ['Swasthi'],
             finder: 'Kevin Ung', 
         }
     ],

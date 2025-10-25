@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'Karaage', 
             link: 'https://www.youtube.com/watch?feature=shared&v=COAX5gkZZ74',
-            author: ['Kurashiru'],
+            authors: ['Kurashiru'],
             finder: 'Kevin Ung', 
         }
     ],

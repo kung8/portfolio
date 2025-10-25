@@ -39,7 +39,7 @@ module.exports = {
         { 
             label: 'Japchae', 
             link: 'https://www.instagram.com/onehappybite/reel/C8ChLPupnZC/?hl=en',
-            author: ['Christian Ou'],
+            authors: ['Christian Ou'],
             finder: 'Kevin Ung', 
         }
     ],

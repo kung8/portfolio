@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Pumpkin Soup 2', 
             link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a10399/pumpkin-soup/',
-            author: ['Ree Drummond'],
+            authors: ['Ree Drummond'],
             finder: 'Kevin Ung', 
         }
     ],

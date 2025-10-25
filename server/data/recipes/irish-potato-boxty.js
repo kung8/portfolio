@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Irish Potato Boxty', 
             link: 'https://www.foodandwine.com/irish-potato-boxty-6422424',
-            author: ['Ian Knauer'],
+            authors: ['Ian Knauer'],
             finder: 'Kevin Ung', 
         }
     ],

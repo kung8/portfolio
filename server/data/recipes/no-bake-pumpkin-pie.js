@@ -34,7 +34,7 @@ module.exports = {
         { 
             label: 'No Bake Pumpkin Dessert', 
             link: 'https://www.crazyforcrust.com/bake-pumpkin-dessert/',
-            author: ['Dorothy Kern'],
+            authors: ['Dorothy Kern'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -44,7 +44,7 @@ module.exports = {
         { 
             label: 'Banana Bread', 
             link: 'https://natashaskitchen.com/banana-bread-recipe-video/',
-            author: ['Natasha Kravchuk'],
+            authors: ['Natasha Kravchuk'],
             finder: 'Kevin Ung', 
         }
     ],

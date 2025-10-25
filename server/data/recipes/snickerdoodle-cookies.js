@@ -50,7 +50,7 @@ module.exports = {
         { 
             label: 'Snickerdoodles', 
             link: 'https://lilluna.com/snickerdoodles/',
-            author: ['Kristyn Merkley'],
+            authors: ['Kristyn Merkley'],
             finder: 'Kevin Ung', 
         },
     ],

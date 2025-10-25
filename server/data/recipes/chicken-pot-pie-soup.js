@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Chicken Pot Pie Soup', 
             link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a61997037/chicken-pot-pie-soup-recipe/',
-            author: ['Ree Drummond'],
+            authors: ['Ree Drummond'],
             finder: 'Kevin Ung', 
         }
     ],

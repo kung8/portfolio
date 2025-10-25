@@ -23,7 +23,7 @@ module.exports = {
         {
             label: 'Apple Cider Hawaiian Roll Donuts',
             link: 'https://www.allrecipes.com/apple-cider-hawaiian-roll-donuts-recipe-11786958',
-            author: ['Nicole McLaughlin'],
+            authors: ['Nicole McLaughlin'],
             finder: 'Kevin Ung',
         }
     ],

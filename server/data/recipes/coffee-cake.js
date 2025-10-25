@@ -57,7 +57,7 @@ module.exports = {
         { 
             label: 'Coffee Cake', 
             link: 'https://sugarspunrun.com/cinnamon-coffee-cake/',
-            author: ['Sam Merritt'],
+            authors: ['Sam Merritt'],
             finder: 'Kevin Ung', 
         }
     ],

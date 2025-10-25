@@ -47,7 +47,7 @@ module.exports = {
         { 
             label: 'Ice Cream Cake', 
             link: 'https://meaningfuleats.com/gluten-free-ice-cream-cake/',
-            author: ['Erin Collins'],
+            authors: ['Erin Collins'],
             finder: 'Kevin Ung', 
         }
     ],

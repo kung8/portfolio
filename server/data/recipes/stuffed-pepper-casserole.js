@@ -28,7 +28,7 @@ module.exports = {
         { 
             label: 'Stuffed Pepper Casserole', 
             link: 'https://recipesfiber.com/stuffed-pepper-casserole/',
-            author: ['Patricia'],
+            authors: ['Patricia'],
             finder: 'Kevin Ung', 
         }
     ],

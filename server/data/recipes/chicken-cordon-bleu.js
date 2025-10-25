@@ -43,7 +43,7 @@ module.exports = {
         { 
             label: 'Chicken Cordon Bleu', 
             link: 'https://tastesbetterfromscratch.com/chicken-cordon-bleu/',
-            author: ['Lauren Allen'],
+            authors: ['Lauren Allen'],
             finder: 'Kevin Ung', 
         }
     ],

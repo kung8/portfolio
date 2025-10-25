@@ -33,7 +33,7 @@ module.exports = {
         { 
             label: 'Bang Bang Shrimp', 
             link: 'https://thestayathomechef.com/bang-bang-shrimp',
-            author: ['Rachel Farnsworth'],
+            authors: ['Rachel Farnsworth'],
             finder: 'Kevin Ung', 
         }
     ],

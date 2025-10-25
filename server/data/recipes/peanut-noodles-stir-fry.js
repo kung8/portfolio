@@ -35,7 +35,7 @@ module.exports = {
         { 
             label: 'Peanut Noodles Stir Fry', 
             link: 'https://farmerxfoodie.com/easy-peanut-noodles-stir-fry/',
-            author: ['Kyrie Patterson'],
+            authors: ['Kyrie Patterson'],
             finder: 'Kevin Ung', 
         }
     ],

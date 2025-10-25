@@ -53,7 +53,7 @@ module.exports = {
         { 
             label: 'Chicken Satay', 
             link: 'https://damndelicious.net/2019/06/07/chicken-satay-with-peanut-sauce/',
-            author: ['Chungah Ree'],
+            authors: ['Chungah Ree'],
             finder: 'Kevin Ung', 
         }
     ],

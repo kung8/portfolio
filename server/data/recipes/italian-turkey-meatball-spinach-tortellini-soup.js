@@ -54,7 +54,7 @@ module.exports = {
         {
             label: 'Turkey Meatball Spinach Tortellini Soup',
             link: 'https://www.skinnytaste.com/turkey-meatball-spinach-tortellini-soup/',
-            author: ['Gina Homolka'],
+            authors: ['Gina Homolka'],
             finder: 'Kevin Ung'
         }
     ],

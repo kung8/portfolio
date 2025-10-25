@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'Vietnamese Stuffed Tomatoes', 
             link: 'https://scruffandsteph.com/2019/12/13/vietnamese-stuffed-tomatoes/',
-            author: ['Scruff', 'Steph'],
+            authors: ['Scruff', 'Steph'],
             finder: 'Kevin Ung', 
         }
     ],

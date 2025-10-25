@@ -28,7 +28,7 @@ module.exports = {
         { 
             label: 'Eclair', 
             link: 'https://www.foodandwine.com/recipes/chocolate-frosted-eclairs',
-            author: ['Joanne Chang'],
+            authors: ['Joanne Chang'],
             finder: 'Kevin Ung', 
         }
     ],

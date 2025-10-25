@@ -31,7 +31,7 @@ module.exports = {
         { 
             label: 'Javanese Chicken Coconut Curry', 
             link: 'https://www.taste.com.au/recipes/javanese-chicken-coconut-curry-opor-ayam/ffd7ae57-ebd8-4886-a95b-2e49d067bd19',
-            author: ['Katrina Woodman'],
+            authors: ['Katrina Woodman'],
             finder: 'Kevin Ung', 
         }
     ],

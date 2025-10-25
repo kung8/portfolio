@@ -37,7 +37,7 @@ module.exports = {
         {
             label: 'Peach Cobbler',
             link: 'https://tastesbetterfromscratch.com/peach-cobbler/',
-            author: ['Lauren Allen'],
+            authors: ['Lauren Allen'],
             finder: 'Kevin Ung'
         }
     ],

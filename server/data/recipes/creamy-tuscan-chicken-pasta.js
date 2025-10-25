@@ -34,7 +34,7 @@ module.exports = {
         { 
             label: 'Creamy Tuscan Chicken Pasta', 
             link: 'https://cravinghomecooked.com/creamy-tuscan-chicken-pasta/',
-            author: ['Joanna Cismaru'],
+            authors: ['Joanna Cismaru'],
             finder: 'Kevin Ung', 
         }
     ],

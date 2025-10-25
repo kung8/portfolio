@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Spanish Rice', 
             link: 'https://www.allrecipes.com/recipe/33385/best-spanish-rice/',
-            author: ['Angela Sims'],
+            authors: ['Angela Sims'],
             finder: 'Kevin Ung', 
         }
     ],

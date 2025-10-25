@@ -42,7 +42,7 @@ module.exports = {
         { 
             label: 'Marry Me Chicken and Gnocchi Soup', 
             link: 'https://whatsmomcookin.com/marry-me-chicken-and-gnocchi-soup/?fbclid=IwY2xjawMrOnFleHRuA2FlbQIxMQABHqEYNkMxNOFVuKTvKl5VRevaP60dee6OI2GWMJi3TrReL-WZKvD6Y549Ybuy_aem_H9ltC9bHXxWdmsaKrSFhIA',
-            author: ['Carman Wilken'],
+            authors: ['Carman Wilken'],
             finder: 'Kevin Ung', 
         }
     ],

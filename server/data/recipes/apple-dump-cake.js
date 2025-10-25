@@ -23,7 +23,7 @@ module.exports = {
         {
             label: 'Apple Dump Cake',
             link: 'https://www.allrecipes.com/recipe/244777/apple-pie-cake-mix-cake/',
-            author: ['Marya Marta Krause'],
+            authors: ['Marya Marta Krause'],
             finder: 'Kevin Ung',
         }
     ],

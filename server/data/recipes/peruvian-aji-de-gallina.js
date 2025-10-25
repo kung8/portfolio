@@ -59,7 +59,7 @@ module.exports = {
         { 
             label: 'Aji de Gallina', 
             link: 'https://www.carolinescooking.com/aji-de-gallina-peruvian-chicken-stew/',
-            author: ['Caroline'],
+            authors: ['Caroline'],
             finder: 'Gaby Ward', 
         }
     ],

@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Poached Salmon with Hollandaise Sauce', 
             link: 'https://www.allrecipes.com/recipe/133137/poached-salmon-with-hollandaise-sauce/',
-            author: ['Luna'],
+            authors: ['Luna'],
             finder: 'Kevin Ung', 
         }
     ],

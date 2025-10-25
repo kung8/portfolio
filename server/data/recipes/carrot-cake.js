@@ -41,13 +41,13 @@ module.exports = {
         { 
             label: 'Carrot Cake', 
             link: "https://www.allrecipes.com/recipe/17393/best-carrot-cake-ever/",
-            author: ['Nan'],
+            authors: ['Nan'],
             finder: 'Kevin Ung', 
         },
         { 
             label: 'Frosting', 
             link: "https://www.inspiredtaste.net/25753/carrot-cake-recipe/",
-            author: ['Joanne Gallagher'],
+            authors: ['Joanne Gallagher'],
             finder: 'Kevin Ung', 
         },
     ],

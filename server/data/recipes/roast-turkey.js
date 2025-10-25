@@ -56,7 +56,7 @@ module.exports = {
         { 
             label: 'Roast Turkey', 
             link: 'https://cafedelites.com/roast-turkey/',
-            author: ['Karina Carrel'],
+            authors: ['Karina Carrel'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -46,7 +46,7 @@ module.exports = {
         { 
             label: 'No Bake Cannoli Delight', 
             link: 'https://www.thekitchn.com/cannoli-delight-recipe-23718781',
-            author: ['Patty Catalano'],
+            authors: ['Patty Catalano'],
             finder: 'Kevin Ung', 
         }
     ],

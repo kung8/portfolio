@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Apple Turnovers', 
             link: 'https://www.allrecipes.com/recipe/59124/apple-turnovers/',
-            author: ['Maureen O\'Leary'],
+            authors: ['Maureen O\'Leary'],
             finder: 'Kevin Ung',
         }
     ],

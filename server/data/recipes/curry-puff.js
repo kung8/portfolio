@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Curry Puff', 
             link: 'https://www.lionbrand.com.au/recipes/thai-curry-puff-recipe-karipap/',
-            author: [''],
+            authors: [''],
             finder: 'Kevin Ung', 
         }
     ],

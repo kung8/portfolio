@@ -38,7 +38,7 @@ module.exports = {
         { 
             label: 'Meatball Sub', 
             link: 'https://www.spendwithpennies.com/meatball-sub/',
-            author: ['Holly Nilsson'],
+            authors: ['Holly Nilsson'],
             finder: 'Kevin Ung', 
         }
     ],

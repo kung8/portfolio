@@ -38,7 +38,7 @@ module.exports = {
         { 
             label: 'Vietnamese Shaking Beef', 
             link: 'https://tasty.co/recipe/vietnamese-shaking-beef',
-            author: ['Matthew Johnson'],
+            authors: ['Matthew Johnson'],
             finder: 'Kevin Ung', 
         }
     ],

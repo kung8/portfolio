@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: "Dirty P's Garlic Ginger Chicken Thighs", 
             link: 'https://www.foodnetwork.com/recipes/guy-fieri/dirty-ps-garlic-ginger-chicken-thighs-recipe-2118432',
-            author: ['Guy Fieri'],
+            authors: ['Guy Fieri'],
             finder: 'Kevin Ung', 
         }
     ],

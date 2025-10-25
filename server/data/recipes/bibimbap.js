@@ -49,7 +49,7 @@ module.exports = {
         { 
             label: 'Bibimbap', 
             link: "https://mykoreankitchen.com/bibimbap-korean-mixed-rice-with-meat-and-assorted-vegetables/",
-            author: ['Sue'],
+            authors: ['Sue'],
             finder: 'Kevin Ung', 
         }
     ],

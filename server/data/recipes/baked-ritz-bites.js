@@ -27,7 +27,7 @@ module.exports = {
         { 
             label: 'Cheesy Ritz Pickle Bites', 
             link: 'https://natalie-mason.com/cheesy-ritz-pickle-bites/',
-            author: ['Natalie Mason'],
+            authors: ['Natalie Mason'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -51,7 +51,7 @@ module.exports = {
         { 
             label: 'Katsudon', 
             link: 'https://thewoksoflife.com/katsudon/',
-            author: ['Sarah Leung'],
+            authors: ['Sarah Leung'],
             finder: 'Kevin Ung', 
         }
     ],

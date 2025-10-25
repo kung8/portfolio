@@ -36,7 +36,7 @@ module.exports = {
         { 
             label: 'Pan-Fried Chicken Thighs', 
             link: 'https://www.tasteofhome.com/recipes/chicken-with-red-wine-cream-sauce/?srsltid=AfmBOooc4dAJPAm_QOVoYx4eAh_PoXSByNsmunXRhp1QXGKX6uPk3VH5',
-            author: ['Sarah Campbell'],
+            authors: ['Sarah Campbell'],
             finder: 'Kevin Ung', 
         }
     ],

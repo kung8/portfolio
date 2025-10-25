@@ -36,7 +36,7 @@ module.exports = {
         { 
             label: 'Gyoza', 
             link: 'https://momsdish.com/gyoza',
-            author: ['Natalya Drozhzhin'],
+            authors: ['Natalya Drozhzhin'],
             finder: 'Kevin Ung', 
         }
     ],

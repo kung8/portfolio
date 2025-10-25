@@ -39,7 +39,7 @@ module.exports = {
         { 
             label: 'Khmer Red Chicken Curry', 
             link: 'https://cambodiarecipe.com/recipe/khmer-red-chicken-curry/',
-            author: [''],
+            authors: [''],
             finder: 'Kevin Ung', 
         }
     ],

@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Tang Yuan', 
             link: 'https://thewoksoflife.com/tang-yuan-recipe/',
-            author: ['Judy'],
+            authors: ['Judy'],
             finder: 'Kevin Ung', 
         }
     ],

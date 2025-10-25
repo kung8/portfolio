@@ -22,7 +22,7 @@ module.exports = {
         { 
             label: 'Pasta Pomodoro', 
             link: 'https://www.allrecipes.com/recipe/23847/pasta-pomodoro/',
-            author: ['Dinah'],
+            authors: ['Dinah'],
             finder: 'Kevin Ung', 
         }
     ],

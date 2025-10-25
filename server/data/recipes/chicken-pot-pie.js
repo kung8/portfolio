@@ -47,7 +47,7 @@ module.exports = {
         {
             label: 'Chicken Pot Pie',
             link: 'https://www.pillsbury.com/recipes/classic-chicken-pot-pie/1401d418-ac0b-4b50-ad09-c6f1243fb992',
-            author: ['Pillsbury'],
+            authors: ['Pillsbury'],
             finder: 'Kevin Ung'
         }
     ],

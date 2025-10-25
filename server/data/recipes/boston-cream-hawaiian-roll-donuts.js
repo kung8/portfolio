@@ -44,7 +44,7 @@ module.exports = {
         { 
             label: '"Boston Cream Hawaiian Rolls" Donuts', 
             link: 'https://www.allrecipes.com/boston-cream-hawaiian-roll-donuts-recipe-11761347',
-            author: ['Nicole McLaughlin'],
+            authors: ['Nicole McLaughlin'],
             finder: 'Kevin Ung', 
         }
     ],

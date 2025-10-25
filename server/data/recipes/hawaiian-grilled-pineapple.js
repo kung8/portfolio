@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Grilled Pineapple', 
             link: 'https://foodfolksandfun.net/grilled-pineapple/',
-            author: ['Jillian Wade'],
+            authors: ['Jillian Wade'],
             finder: 'Kevin Ung', 
         }
     ],

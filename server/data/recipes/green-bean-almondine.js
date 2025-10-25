@@ -38,7 +38,7 @@ module.exports = {
         { 
             label: 'Green Bean Almondine', 
             link: 'https://www.abeautifulplate.com/green-beans-almondine/',
-            author: [''],
+            authors: [''],
             finder: 'Kevin Ung', 
         }
     ],

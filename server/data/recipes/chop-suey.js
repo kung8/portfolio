@@ -27,7 +27,7 @@ module.exports = {
         { 
             label: 'Chop Suey', 
             link: 'https://www.howtocook.recipes/homemade-chop-suey-recipe/',
-            author: ['Megan Miller'],
+            authors: ['Megan Miller'],
             finder: 'Kevin Ung', 
         }
     ],

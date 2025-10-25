@@ -28,7 +28,7 @@ module.exports = {
         {
             label: 'Own Recipe',
             link: null,
-            author: ['Hoku\'s Grammy'],
+            authors: ['Hoku\'s Grammy'],
             finder: 'Hoku\'s Grammy'
         }
     ],

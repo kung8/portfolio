@@ -36,7 +36,7 @@ module.exports = {
         { 
             label: 'Sauteed Zucchini', 
             link: "https://www.wellplated.com/sauteed-zucchini/",
-            author: ['Erin Clarke'],
+            authors: ['Erin Clarke'],
             finder: 'Kevin Ung', 
         }
     ],

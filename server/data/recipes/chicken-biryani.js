@@ -45,7 +45,7 @@ module.exports = {
         { 
             label: 'Biryani', 
             link: "https://www.recipetineats.com/biryani/",
-            author: ['Nagi Maehashi'],
+            authors: ['Nagi Maehashi'],
             finder: 'Jon Browne', 
         }
     ],

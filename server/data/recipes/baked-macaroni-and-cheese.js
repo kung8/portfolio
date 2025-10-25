@@ -43,7 +43,7 @@ module.exports = {
         { 
             label: 'Macaroni and Cheese', 
             link: 'https://www.momontimeout.com/best-homemade-baked-mac-and-cheese-recipe/',
-            author: ['Trish'],
+            authors: ['Trish'],
             finder: 'Kevin Ung', 
         }
     ],

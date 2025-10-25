@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Pici Pasta', 
             link: 'https://monmackfood.com/vibrant-green-pici-pasta-no-pasta-roller-required/',
-            author: ['Montana Mack'],
+            authors: ['Montana Mack'],
             finder: 'Chelsey Hickenlooper', 
         }
     ],

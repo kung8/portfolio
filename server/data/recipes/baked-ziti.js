@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Baked Ziti', 
             link: 'https://www.onceuponachef.com/recipes/baked-ziti-with-sausage.html',
-            author: ['Jennifer Segal'],
+            authors: ['Jennifer Segal'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -34,7 +34,7 @@ module.exports = {
         { 
             label: 'Beef Ragu', 
             link: 'https://www.recipetineats.com/slow-cooked-shredded-beef-ragu-pasta/',
-            author: ['Nagi Maehashi'],
+            authors: ['Nagi Maehashi'],
             finder: 'Kevin Ung', 
         }
     ],

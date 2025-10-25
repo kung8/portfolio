@@ -43,19 +43,19 @@ module.exports = {
         { 
             label: 'Shredded Chicken', 
             link: 'https://www.isabeleats.com/easy-shredded-chicken-recipe/',
-            author: ['Isabel Orozco-Moore'],
+            authors: ['Isabel Orozco-Moore'],
             finder: 'Kevin Ung', 
         },
         { 
             label: 'Enchilada Sauce', 
             link: 'https://www.isabeleats.com/easy-enchilada-sauce/',
-            author: ['Isabel Orozco-Moore'],
+            authors: ['Isabel Orozco-Moore'],
             finder: 'Kevin Ung', 
         },
         { 
             label: 'Chicken Enchilada', 
             link: 'https://www.isabeleats.com/red-chicken-enchiladas/',
-            author: ['Isabel Orozco-Moore'],
+            authors: ['Isabel Orozco-Moore'],
             finder: 'Kevin Ung', 
         },
     ],

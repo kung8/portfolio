@@ -59,7 +59,7 @@ module.exports = {
         { 
             label: 'Chicken Katsu', 
             link: 'https://www.justonecookbook.com/chicken-katsu/',
-            author: ['Namiko Hirasawa Chen'],
+            authors: ['Namiko Hirasawa Chen'],
             finder: 'Aldin Pope', 
         }
     ],

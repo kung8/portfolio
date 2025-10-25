@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'Sweet and Sour Pork', 
             link: 'https://www.madewithlau.com/recipes/sweet-sour-pork',
-            author: ['Chef Lau'],
+            authors: ['Chef Lau'],
             finder: 'Kevin Ung', 
         }
     ],

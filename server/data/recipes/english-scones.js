@@ -43,7 +43,7 @@ module.exports = {
         { 
             label: 'English Scones', 
             link: 'https://platedcravings.com/recipe-easy-scones-with-clotted-cream-and-jam/',
-            author: ['Julia Foerster'],
+            authors: ['Julia Foerster'],
             finder: 'Kevin Ung', 
         }
     ],

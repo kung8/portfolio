@@ -31,7 +31,7 @@ module.exports = {
         { 
             label: 'Béarnaise Sauce', 
             link: 'https://www.allrecipes.com/recipe/256569/chef-johns-bearnaise-sauce/',
-            author: ['John Mitzewich'],
+            authors: ['John Mitzewich'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -57,7 +57,7 @@ module.exports = {
         { 
             label: 'Homemade Chicken Ramen', 
             link: "https://www.forkknifeswoon.com/simple-homemade-chicken-ramen",
-            author: ['Laura'],
+            authors: ['Laura'],
             finder: 'Kevin Ung', 
         }
     ],

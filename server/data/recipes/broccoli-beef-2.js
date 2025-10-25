@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Broccoli Beef 2', 
             link: 'https://www.justataste.com/easy-beef-and-broccoli-recipe/',
-            author: ['Kelly Senyei'],
+            authors: ['Kelly Senyei'],
             finder: 'Kevin Ung', 
         } // (1.2K)
     ],

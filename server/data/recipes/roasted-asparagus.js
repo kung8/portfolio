@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Roasted Asparagus', 
             link: 'https://cookieandkate.com/perfect-roasted-asparagus-recipe/',
-            author: ['Kathryne Taylor'],
+            authors: ['Kathryne Taylor'],
             finder: 'Kevin Ung', 
         }
     ],

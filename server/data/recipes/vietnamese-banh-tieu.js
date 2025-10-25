@@ -39,7 +39,7 @@ module.exports = {
         { 
             label: 'Banh Tieu', 
             link: 'https://en.petitchef.com/recipes/other/hollow-breads-banh-tieu-fid-628890',
-            author: ['ch3rri_blossoms'],
+            authors: ['ch3rri_blossoms'],
             finder: 'Justin Ung', 
         },
     ],

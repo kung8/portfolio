@@ -25,7 +25,7 @@ module.exports = {
         { 
             label: 'Gelato', 
             link: 'https://foodnouveau.com/how-to-make-gelato/',
-            author: ['Marie Asselin'],
+            authors: ['Marie Asselin'],
             finder: 'Kevin Ung', 
         }
     ],

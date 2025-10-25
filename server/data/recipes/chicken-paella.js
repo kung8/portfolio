@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Chicken Paella', 
             link: 'https://www.averiecooks.com/easy-chicken-paella/',
-            author: ['Averie Sunshine'],
+            authors: ['Averie Sunshine'],
             finder: 'Kevin Ung', 
         }
     ],

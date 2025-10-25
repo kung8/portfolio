@@ -25,7 +25,7 @@ module.exports = {
         { 
             label: 'Sticky Toffee Pudding', 
             link: 'https://vanillaqueen.com/sticky-toffee-pudding/',
-            author: ['Patricia Rain'],
+            authors: ['Patricia Rain'],
             finder: 'Steve Kenny', 
         }
     ],

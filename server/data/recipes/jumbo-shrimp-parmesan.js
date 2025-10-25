@@ -27,7 +27,7 @@ module.exports = {
         { 
             label: 'Jumbo Shrimp Parmesan', 
             link: 'https://www.food.com/recipe/jumbo-shrimp-parmesan-42169',
-            author: ['Marie C'],
+            authors: ['Marie C'],
             finder: 'Kevin Ung', 
         }
     ],

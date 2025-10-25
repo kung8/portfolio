@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Dolmeh', 
             link: 'https://www.unicornsinthekitchen.com/persian-dolmeh-recipe-video/',
-            author: ['Shadi Hasanzadenemati'],
+            authors: ['Shadi Hasanzadenemati'],
             finder: 'Kasra Kamravani\'s Mom', 
         }
     ],

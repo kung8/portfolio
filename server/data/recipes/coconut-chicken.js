@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Coconut Chicken', 
             link: 'https://www.allrecipes.com/recipe/68532/curried-coconut-chicken/',
-            author: ['Roma'],
+            authors: ['Roma'],
             finder: 'Kevin Ung', 
         }
     ],

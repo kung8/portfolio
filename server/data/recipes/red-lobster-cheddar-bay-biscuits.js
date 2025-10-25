@@ -31,7 +31,7 @@ module.exports = {
         { 
             label: 'Red Lobster Cheddar Bay Biscuits', 
             link: 'https://www.mashed.com/76272/red-lobster-cheddar-bay-biscuits-recipe/',
-            author: ['Jake Vigliotti'],
+            authors: ['Jake Vigliotti'],
             finder: 'Justin Ung', 
         }
     ],

@@ -31,7 +31,7 @@ module.exports = {
         { 
             label: 'Drunken Noodles', 
             link: 'https://www.foodnetwork.com/recipes/my-famous-drunken-noodles-3827989?fbclid=IwY2xjawIfTmlleHRuA2FlbQIxMAABHVqvQu2XwUkyb_68QE5482xWyQggrknFtByQl4kjDwlqFUsOQo0_ThKjQA_aem_eAwibywVvwmX2-nPbsMtdg',
-            author: ['Jet Tila'],
+            authors: ['Jet Tila'],
             finder: 'Amanda Berg', 
         }
     ],

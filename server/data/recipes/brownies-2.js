@@ -25,7 +25,7 @@ module.exports = {
         { 
             label: 'Brownies', 
             link: 'https://www.loveandlemons.com/brownies-recipe/',
-            author: ['Jeanine'],
+            authors: ['Jeanine'],
             finder: 'Kevin Ung', 
         }
     ],

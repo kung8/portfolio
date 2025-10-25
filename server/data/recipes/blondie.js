@@ -57,7 +57,7 @@ module.exports = {
         { 
             label: 'Blondies', 
             link: "https://sugarspunrun.com/blondies-recipe/",
-            author: ['Sam Merritt'],
+            authors: ['Sam Merritt'],
             finder: 'Kevin Ung', 
         }
     ],

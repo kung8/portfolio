@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Caramel Popcorn', 
             link: 'https://www.allrecipes.com/recipe/173309/classic-caramel-corn/',
-            author: ['Argo', 'Karo', 'Fleischmann\'s'],
+            authors: ['Argo', 'Karo', 'Fleischmann\'s'],
             finder: 'Kevin Ung',
         }
     ],

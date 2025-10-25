@@ -34,7 +34,7 @@ module.exports = {
         { 
             label: 'Peanut Butter Cookies', 
             link: 'https://preppykitchen.com/peanut-butter-cookies-recipe/',
-            author: ['John Kanell'],
+            authors: ['John Kanell'],
             finder: 'Kevin Ung', 
         }
     ],

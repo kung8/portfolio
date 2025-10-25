@@ -41,7 +41,7 @@ module.exports = {
         { 
             label: 'Japanese Chicken Curry', 
             link: 'https://www.justonecookbook.com/simple-chicken-curry/',
-            author: ['Namiko Hirasawa Chen'],
+            authors: ['Namiko Hirasawa Chen'],
             finder: 'Kevin Ung', 
         }
     ],

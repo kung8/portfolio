@@ -28,7 +28,7 @@ module.exports = {
         { 
             label: 'Brazilian Lemonade', 
             link: 'https://houseofnasheats.com/brazilian-lemonade-limeade/#wprm-recipe-container-15254',
-            author: ['Amy Nash'],
+            authors: ['Amy Nash'],
             finder: 'Montana Hiltbrand', 
         }
     ],

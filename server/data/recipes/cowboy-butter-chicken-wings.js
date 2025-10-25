@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Cowboy Butter Chicken Wings', 
             link: 'https://www.thekitchn.com/cowboy-butter-chicken-wings-recipe-23708102',
-            author: ['Kelli Foster'],
+            authors: ['Kelli Foster'],
             finder: 'Kevin Ung', 
         }
     ],

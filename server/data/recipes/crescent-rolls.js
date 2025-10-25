@@ -34,7 +34,7 @@ module.exports = {
         {
             label: 'Own Recipe',
             link: null,
-            author: ['Grandma Ward'],
+            authors: ['Grandma Ward'],
             finder: 'Grandma Ward'
         }
     ],

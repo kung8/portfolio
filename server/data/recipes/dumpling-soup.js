@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Dumpling Soup', 
             link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a44190393/dumpling-soup-recipe/',
-            author: ['Leah Perez'],
+            authors: ['Leah Perez'],
             finder: 'Kevin Ung', 
         }
     ],

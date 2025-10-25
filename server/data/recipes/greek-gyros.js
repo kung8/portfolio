@@ -35,7 +35,7 @@ module.exports = {
         { 
             label: 'Greek Gyros', 
             link: 'https://www.recipetineats.com/greek-chicken-gyros-with-tzatziki/',
-            author: ['Nagi Maehashi'],
+            authors: ['Nagi Maehashi'],
             finder: 'Kevin Ung', 
         }
     ],

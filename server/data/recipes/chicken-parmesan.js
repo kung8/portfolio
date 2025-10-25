@@ -40,7 +40,7 @@ module.exports = {
         { 
             label: 'Chicken Parmesan', 
             link: 'https://www.allrecipes.com/recipe/223042/chicken-parmesan/',
-            author: ['John Mitzewich'],
+            authors: ['John Mitzewich'],
             finder: 'Kevin Ung', 
         }
     ],

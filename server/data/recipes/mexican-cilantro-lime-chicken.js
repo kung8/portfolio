@@ -46,7 +46,7 @@ module.exports = {
         { 
             label: 'Cilantro Lime Chicken Wings', 
             link: 'https://kaleforniakravings.com/easy-cilantro-lime-chicken-wings/',
-            author: ['Caitlin'],
+            authors: ['Caitlin'],
             finder: 'Kevin Ung', 
         }
     ],

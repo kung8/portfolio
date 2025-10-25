@@ -25,7 +25,7 @@ module.exports = {
         { 
             label: 'Peanut Brittle', 
             link: "https://tastesbetterfromscratch.com/peanut-brittle/",
-            author: ['Lauren Allen'],
+            authors: ['Lauren Allen'],
             finder: 'Kevin Ung', 
         }
     ],

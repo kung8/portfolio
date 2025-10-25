@@ -44,7 +44,7 @@ module.exports = {
         { 
             label: 'Lemon Chicken', 
             link: 'https://rasamalaysia.com/lemon-chicken/',
-            author: ['Bee Yinn Low'],
+            authors: ['Bee Yinn Low'],
             finder: 'Kevin Ung', 
         }
     ],

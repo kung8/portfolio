@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Roti', 
             link: 'https://www.cookwithmanali.com/roti-recipe/',
-            author: ['Manali Singh'],
+            authors: ['Manali Singh'],
             finder: 'Kevin Ung', 
         }
     ],

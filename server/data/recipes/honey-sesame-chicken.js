@@ -36,7 +36,7 @@ module.exports = {
         { 
             label: 'Honey Sesame Chicken', 
             link: 'https://www.dinneratthezoo.com/lighter-honey-sesame-chicken/',
-            author: ['Sara Welch'],
+            authors: ['Sara Welch'],
             finder: 'Kevin Ung', 
         }
     ],

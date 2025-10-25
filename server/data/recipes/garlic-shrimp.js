@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Garlic Shrimp', 
             link: 'https://www.allrecipes.com/recipe/220597/simple-garlic-shrimp/',
-            author: ['John Mitzewich'],
+            authors: ['John Mitzewich'],
             finder: 'Kevin Ung', 
         }
     ],

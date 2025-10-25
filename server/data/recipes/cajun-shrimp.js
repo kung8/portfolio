@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Cajun Shrimp', 
             link: 'https://www.lecremedelacrumb.com/cajun-shrimp-and-rice-skillet/',
-            author: ['Tiffany'],
+            authors: ['Tiffany'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -36,7 +36,7 @@ module.exports = {
         { 
             label: 'Ravioli', 
             link: 'https://www.saturdaysinrome.com/blog/ricotta-ravioli-recipe/',
-            author: ['Beppe Castro'],
+            authors: ['Beppe Castro'],
             finder: 'Kevin Ung', 
         }
     ],

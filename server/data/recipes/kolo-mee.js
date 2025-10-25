@@ -31,7 +31,7 @@ module.exports = {
         { 
             label: 'Kolo Mee', 
             link: 'https://tasteasianfood.com/kolo-mee-recipe/',
-            author: ['KP Kwan'],
+            authors: ['KP Kwan'],
             finder: 'Kevin Ung', 
         }
     ],

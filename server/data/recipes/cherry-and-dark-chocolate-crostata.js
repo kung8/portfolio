@@ -39,7 +39,7 @@ module.exports = {
         { 
             label: 'Cherry and Dark Chocolate Crostata', 
             link: 'https://www.bonappetit.com/recipe/cherry-and-dark-chocolate-crostata',
-            author: ['Stefano Secchi'],
+            authors: ['Stefano Secchi'],
             finder: 'Kevin Ung', 
         }
     ],

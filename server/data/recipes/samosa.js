@@ -52,7 +52,7 @@ module.exports = {
         { 
             label: 'Samosa', 
             link: 'https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/',
-            author: ['Swasthi'],
+            authors: ['Swasthi'],
             finder: 'Kevin Ung', 
         }
     ],

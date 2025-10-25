@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Buffalo Chicken Cheese Balls', 
             link: 'https://www.food.com/recipe/buffalo-chicken-cheese-balls-with-blue-cheese-dip-352425',
-            author: ['Scoutie'],
+            authors: ['Scoutie'],
             finder: 'Kevin Ung', 
         }
     ],

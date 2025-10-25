@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Mash Potatoes', 
             link: 'https://www.spendwithpennies.com/how-to-make-mashed-potatoes/',
-            author: ['Holly Nilsson'],
+            authors: ['Holly Nilsson'],
             finder: 'Justin Ung', 
         }
     ],

@@ -34,7 +34,7 @@ module.exports = {
         { 
             label: 'Peruvian Chicken', 
             link: 'https://www.platingsandpairings.com/peruvian-grilled-chicken-creamy-green-sauce/',
-            author: ['Erin Lynch'],
+            authors: ['Erin Lynch'],
             finder: 'Kevin Ung', 
         }
     ],

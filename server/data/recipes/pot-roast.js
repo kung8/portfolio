@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Pot Roast', 
             link: 'https://www.foodnetwork.com/recipes/ree-drummond/perfect-pot-roast-recipe-2118771',
-            author: ['Ree Drummond'],
+            authors: ['Ree Drummond'],
             finder: 'Kevin Ung', 
         }
     ],

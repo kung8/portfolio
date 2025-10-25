@@ -34,7 +34,7 @@ module.exports = {
         { 
             label: 'Basque Cheesecake', 
             link: 'https://www.foodandwine.com/recipes/basque-cheesecake',
-            author: ['Tavel Bristol-Joseph'],
+            authors: ['Tavel Bristol-Joseph'],
             finder: 'Sam Giraud-Carrier', 
         }
     ],

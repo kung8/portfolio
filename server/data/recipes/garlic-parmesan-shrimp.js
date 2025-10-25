@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Garlic Parmesan Shrimp', 
             link: 'https://www.facebook.com/61554695044027/posts/air-fryer-garlic-parmesan-shrimprecipe1-bag-frozen-shrimp-thawed-shelled-and-dev/122200538708156501/',
-            author: [''],
+            authors: [''],
             finder: 'Kevin Ung', 
         }
     ],

@@ -39,7 +39,7 @@ module.exports = {
         { 
             label: 'Chicken Massaman Curry', 
             link: 'https://www.favfamilyrecipes.com/chicken-massaman-curry/',
-            author: ['Erica Walker'],
+            authors: ['Erica Walker'],
             finder: 'Kevin Ung', 
         }
     ],

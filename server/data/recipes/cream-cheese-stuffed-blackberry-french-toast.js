@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Cream Cheese Stuffed Blackberry French Toast', 
             link: 'https://recipesfiber.com/cream-cheese-stuffed-blackberry-compote-french-toast/',
-            author: [''],
+            authors: [''],
             finder: 'Kevin Ung', 
         }
     ],

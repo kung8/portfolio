@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Crispy Beer-Battered Fish', 
             link: 'https://iwashyoudry.com/crispy-beer-batter-fish-recipe/',
-            author: ['Shawn'],
+            authors: ['Shawn'],
             finder: 'Kevin Ung', 
         }
     ],

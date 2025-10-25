@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Creme Brulee French Toast', 
             link: 'https://www.thekitchn.com/creme-brulee-french-toast-recipe-23711485',
-            author: ['Patty Catalano'],
+            authors: ['Patty Catalano'],
             finder: 'Kevin Ung', 
         }
     ],

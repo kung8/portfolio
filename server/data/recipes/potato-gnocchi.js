@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Potato Gnocchi', 
             link: 'https://www.giallozafferano.com/recipes/Potato-gnocchi.html',
-            author: [''],
+            authors: [''],
             finder: 'Kevin Ung', 
         }
     ],

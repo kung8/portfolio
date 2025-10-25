@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Chicken Tikka Masala', 
             link: "https://www.allrecipes.com/recipe/228293/curry-stand-chicken-tikka-masala-sauce",
-            author: ['Chris Bellers'],
+            authors: ['Chris Bellers'],
             finder: 'Kevin Ung', 
         }
     ],

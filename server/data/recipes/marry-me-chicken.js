@@ -43,7 +43,7 @@ module.exports = {
         { 
             label: 'Marry Me Chicken', 
             link: 'https://40aprons.com/marry-me-chicken/',
-            author: ['Cheryl Malik'],
+            authors: ['Cheryl Malik'],
             finder: 'Montana Hiltbrand', 
         }
     ],

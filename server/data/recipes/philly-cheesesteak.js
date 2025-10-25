@@ -41,7 +41,7 @@ module.exports = {
         { 
             label: 'Philly Cheesesteak', 
             link: 'https://momsdish.com/easy-philly-cheesesteak',
-            author: ['Natalya Drozhzhin'],
+            authors: ['Natalya Drozhzhin'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -27,7 +27,7 @@ module.exports = {
         { 
             label: 'Udon Noodle Soup', 
             link: 'https://howtofeedaloon.com/udon-noodle-soup-with-pork/',
-            author: ['Kris Longwell'],
+            authors: ['Kris Longwell'],
             finder: 'Kevin Ung', 
         }
     ],

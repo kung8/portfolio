@@ -25,7 +25,7 @@ module.exports = {
         { 
             label: 'Instant Pot Vegan Lentil Sloppy Joes', 
             link: 'https://cozypeachkitchen.com/instant-pot-vegan-lentil-sloppy-joes/',
-            author: ['Cassidy Reeser'],
+            authors: ['Cassidy Reeser'],
             finder: 'Chelsey Hickenlooper', 
         }
     ],

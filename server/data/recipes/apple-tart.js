@@ -34,7 +34,7 @@ module.exports = {
         {
             label: 'Apple Tart',
             link: 'https://www.thespruceeats.com/french-apple-tarte-aux-pommes-recipe-1375048',
-            author: ['Rebecca Franklin'],
+            authors: ['Rebecca Franklin'],
             finder: 'Sam Giraud-Carrier',
         }
     ],

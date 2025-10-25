@@ -41,7 +41,7 @@ module.exports = {
         {
             label: '',
             link: '',
-            author: [''],
+            authors: [''],
             finder: 'Kevin Ung'
         }
     ],

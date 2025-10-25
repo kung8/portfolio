@@ -30,7 +30,7 @@ module.exports = {
         { 
             label: 'Hawaiian Grilled Teriyaki Chicken', 
             link: 'https://www.favfamilyrecipes.com/grilled-hawaiian-teriyaki-chicken/',
-            author: ['Erica Walker'],
+            authors: ['Erica Walker'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Apple Dumplings', 
             link: 'https://www.allrecipes.com/recipe/18980/apple-dumplings-i/', 
-            author: ['Allrecipes Member'],
+            authors: ['Allrecipes Member'],
             finder: 'Kevin Ung',
         }
     ],

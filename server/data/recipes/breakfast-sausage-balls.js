@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Breakfast Sausage Balls', 
             link: 'https://www.simplyrecipes.com/breakfast-sausage-balls-recipe-11701329',
-            author: ['Meghan Splawn'],
+            authors: ['Meghan Splawn'],
             finder: 'Kevin Ung', 
         }
     ],

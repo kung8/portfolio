@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'Sloppy Joe', 
             link: 'https://natashaskitchen.com/sloppy-joe-recipe/',
-            author: ['Natasha Kravchuk'],
+            authors: ['Natasha Kravchuk'],
             finder: 'Kevin Ung', 
         }
     ],

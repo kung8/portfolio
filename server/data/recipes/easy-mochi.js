@@ -36,7 +36,7 @@ module.exports = {
         { 
             label: 'Mochi', 
             link: 'https://parade.com/food/two-ingredient-mochi',
-            author: ['Kat Lieu'],
+            authors: ['Kat Lieu'],
             finder: 'Kevin Ung', 
         }
     ],

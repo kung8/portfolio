@@ -35,7 +35,7 @@ module.exports = {
         { 
             label: 'Birria Tacos', 
             link: 'https://jawnsicooked.com/dinner/crock-pot-birria-tacos-recipe/?fbclid=IwY2xjawIfTnJleHRuA2FlbQIxMAABHXA6K0n-MSk87IxBNd9zEPRf_2juEzIvI4wMpHOQ3YQqCpdq9ead33OwKA_aem_yOMPv648tIKxgtoZ38M-6g',
-            author: ['Sharon'],
+            authors: ['Sharon'],
             finder: 'Lauren Maliwauki', 
         }
     ],

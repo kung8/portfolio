@@ -41,7 +41,7 @@ module.exports = {
         { 
             label: 'Baked Chicken', 
             link: 'https://healthyrecipesblogs.com/baked-drumsticks/',
-            author: ['Vered DeLeeuw'],
+            authors: ['Vered DeLeeuw'],
             finder: 'Kevin Ung', 
         },
     ],

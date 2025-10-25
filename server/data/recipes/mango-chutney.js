@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Mango Chutney', 
             link: 'https://www.daringgourmet.com/indian-mango-chutney/',
-            author: ['Kimberly Killebrew'],
+            authors: ['Kimberly Killebrew'],
             finder: 'Kevin Ung', 
         }
     ],

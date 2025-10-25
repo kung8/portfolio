@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'Gingerbread Cookie', 
             link: 'https://tastesbetterfromscratch.com/gingerbread-cookies/',
-            author: ['Lauren Allen'],
+            authors: ['Lauren Allen'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -52,7 +52,7 @@ module.exports = {
         { 
             label: 'Potstickers', 
             link: "https://www.allrecipes.com/recipe/261153/perfect-pot-stickers/",
-            author: ['John Mitzewich'],
+            authors: ['John Mitzewich'],
             finder: 'Kevin Ung', 
         }
     ],

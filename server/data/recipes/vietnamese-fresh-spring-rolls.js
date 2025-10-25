@@ -38,13 +38,13 @@ module.exports = {
         { 
             label: 'Fresh Spring Rolls', 
             link: 'https://tastesbetterfromscratch.com/fresh-spring-rolls/',
-            author: ['Lauren Allen'],
+            authors: ['Lauren Allen'],
             finder: 'Kevin Ung', 
         },
         { 
             label: 'Shrimp and Pork Filling', 
             link: 'https://whiteonricecouple.com/vietnamese-fresh-spring-rolls/',
-            author: ['Todd Porter', 'Diane Porter'],
+            authors: ['Todd Porter', 'Diane Porter'],
             finder: 'Kevin Ung', 
         }
     ],

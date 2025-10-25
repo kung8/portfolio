@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Yellow Curry', 
             link: 'https://tastesbetterfromscratch.com/yellow-curry/',
-            author: ['Lauren Allen'],
+            authors: ['Lauren Allen'],
             finder: 'Kevin Ung', 
         }
     ],

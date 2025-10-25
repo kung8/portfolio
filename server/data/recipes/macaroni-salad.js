@@ -45,7 +45,7 @@ module.exports = {
         {
             label: 'Macaroni Salad',
             link: 'https://www.allrecipes.com/recipe/81108/classic-macaroni-salad/',
-            author: ['Graden'],
+            authors: ['Graden'],
             finder: 'Kevin Ung'
         }
     ],

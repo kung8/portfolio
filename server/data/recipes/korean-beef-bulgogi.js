@@ -51,7 +51,7 @@ module.exports = {
         {
             label: 'Korean Beef Bulgogi',
             link: 'https://damndelicious.net/2019/04/21/korean-beef-bulgogi/',
-            author: ['Cindy'],
+            authors: ['Cindy'],
             finder: 'Kevin Ung'
         }
     ],

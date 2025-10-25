@@ -36,7 +36,7 @@ module.exports = {
         { 
             label: 'Peanut Butter Cup', 
             link: 'https://www.allrecipes.com/recipe/44715/chocolate-peanut-butter-cups/',
-            author: ['Shaunnsmom'],
+            authors: ['Shaunnsmom'],
             finder: 'Kevin Ung', 
         }
     ],

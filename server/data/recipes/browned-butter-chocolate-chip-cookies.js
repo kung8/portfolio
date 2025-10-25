@@ -26,7 +26,7 @@ module.exports = {
         {
             label: 'Own Recipe',
             link: null,
-            author: ['Nick DiGiovanni'],
+            authors: ['Nick DiGiovanni'],
             finder: 'Justin Ung'
         }
     ],

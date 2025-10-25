@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Blueberry Bagels', 
             link: 'https://hungryhappens.net/easy-4-ingredient-blueberry-bagels-no-yeast/',
-            author: ['Stella Drivas'],
+            authors: ['Stella Drivas'],
             finder: 'Kevin Ung', 
         }
     ],

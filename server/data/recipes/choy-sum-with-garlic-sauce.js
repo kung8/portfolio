@@ -33,7 +33,7 @@ module.exports = {
         { 
             label: 'Choy Sum with Garlic Sauce', 
             link: 'https://omnivorescookbook.com/choy-sum-with-garlic-sauce/',
-            author: ['Maggie Zhu'],
+            authors: ['Maggie Zhu'],
             finder: 'Kevin Ung',
         }
     ],

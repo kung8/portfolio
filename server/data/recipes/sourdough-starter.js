@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Sourdough Starter', 
             link: "https://littlespoonfarm.com/sourdough-starter-recipe/",
-            author: ['Amy Duska'],
+            authors: ['Amy Duska'],
             finder: 'Justin Ung', 
         }
     ],

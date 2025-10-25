@@ -41,7 +41,7 @@ module.exports = {
         {
             label: 'French Toast',
             link: 'https://www.loveandlemons.com/french-toast/',
-            author: ['Jeanine', 'Jack'],
+            authors: ['Jeanine', 'Jack'],
             finder: 'Kevin Ung'
         }
     ],

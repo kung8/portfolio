@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Roasted Vegetables', 
             link: 'https://www.thekitchn.com/how-to-roast-any-vegetable-101221',
-            author: ['Emma Christensen'],
+            authors: ['Emma Christensen'],
             finder: 'Kevin Ung', 
         }
     ],

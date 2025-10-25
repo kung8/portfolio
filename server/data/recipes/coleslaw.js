@@ -21,7 +21,7 @@ module.exports = {
         { 
             label: 'Coleslaw', 
             link: 'https://www.askchefdennis.com/best-cole-slaw-coleslaw/',
-            author: ['Dennis Littley'],
+            authors: ['Dennis Littley'],
             finder: 'Kevin Ung', 
         }
     ],

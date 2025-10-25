@@ -27,7 +27,7 @@ module.exports = {
         { 
             label: 'Rice Pilaf', 
             link: 'https://tastesbetterfromscratch.com/how-to-make-easy-rice-pilaf/',
-            author: ['Lauren Allen'],
+            authors: ['Lauren Allen'],
             finder: 'Kevin Ung', 
         }
     ],

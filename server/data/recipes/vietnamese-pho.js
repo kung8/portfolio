@@ -49,7 +49,7 @@ module.exports = {
         { 
             label: 'Pho', 
             link: 'https://tastesbetterfromscratch.com/pho-noodle-soup/',
-            author: ['Lauren Allen'],
+            authors: ['Lauren Allen'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Muddy Buddies', 
             link: 'https://joyfoodsunshine.com/puppy-chow-recipe/',
-            author: ['Laura'],
+            authors: ['Laura'],
             finder: 'Kevin Ung', 
         }
     ],

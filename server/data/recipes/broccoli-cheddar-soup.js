@@ -47,7 +47,7 @@ module.exports = {
         { 
             label: 'Panera Broccoli Cheese Soup', 
             link: 'https://www.the-girl-who-ate-everything.com/panera-broccoli-cheese-soup/',
-            author: ['Christy Denney'],
+            authors: ['Christy Denney'],
             finder: 'Kevin Ung', 
         }
     ],

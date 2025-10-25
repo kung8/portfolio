@@ -80,7 +80,7 @@ module.exports = {
         { 
             label: 'Lasagna', 
             link: 'https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/',
-            author: ['John Chandler'],
+            authors: ['John Chandler'],
             finder: 'Kevin Ung', 
         }
     ],

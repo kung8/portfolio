@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: '{{label}}', 
             link: '{{link}}',
-            author: ['{{author}}'],
+            authors: ['{{author}}'],
             finder: 'Kevin Ung', 
         }
     ],

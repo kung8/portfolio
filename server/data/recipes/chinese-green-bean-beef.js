@@ -48,7 +48,7 @@ module.exports = {
         { 
             label: 'Green Bean Beef', 
             link: "https://todayscreativelife.com/chinese-beef-green-beans/",
-            author: ['Kim'],
+            authors: ['Kim'],
             finder: 'Kevin Ung', 
         }
     ],

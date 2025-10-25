@@ -34,13 +34,13 @@ module.exports = {
         { 
             label: 'Bulgur Pilaf', 
             link: 'https://feelgoodfoodie.net/recipe/bulgur-pilaf/',
-            author: ['Yumna Jawad'],
+            authors: ['Yumna Jawad'],
             finder: 'Kevin Ung', 
         },
         { 
             label: 'Baked Chicken Breast', 
             link: 'https://www.recipetineats.com/oven-baked-chicken-breast/#h-the-chicken-nbsp-breast-seasoning',
-            author: ['Nagi Maehashi'],
+            authors: ['Nagi Maehashi'],
             finder: 'Kevin Ung', 
         }
     ],

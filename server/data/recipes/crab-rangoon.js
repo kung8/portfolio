@@ -31,7 +31,7 @@ module.exports = {
         { 
             label: 'Crab Rangoon', 
             link: 'https://recipesown.com/crab-rangoon-bombs-recipe/',
-            author: ['Wendy Balderas'],
+            authors: ['Wendy Balderas'],
             finder: 'Kevin Ung', 
         }
     ],

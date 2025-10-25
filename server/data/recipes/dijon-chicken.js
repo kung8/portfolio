@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Dijon Chicken', 
             link: 'https://www.allrecipes.com/dijon-chicken-6575993',
-            author: ['Diana71'],
+            authors: ['Diana71'],
             finder: 'Kevin Ung', 
         }
     ],

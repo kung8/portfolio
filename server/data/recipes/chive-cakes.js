@@ -45,13 +45,13 @@ module.exports = {
         { 
             label: 'Chive Cakes (ingredients)', 
             link: 'https://www.sbs.com.au/food/recipe/chive-cakes-khanom-gui-chai/gossuf95o',
-            author: ['Sareen Rojanametin', 'Jean Thamthanakorn'],
+            authors: ['Sareen Rojanametin', 'Jean Thamthanakorn'],
             finder: 'Kevin Ung', 
         },
         { 
             label: 'Chive Cakes (cooking)', 
             link: 'https://www.foodrepublic.com/recipes/make-this-charles-phans-famous-chive-cakes-recipe/',
-            author: ['Charles Phan'],
+            authors: ['Charles Phan'],
             finder: 'Kevin Ung', 
         }
     ],

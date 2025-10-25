@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'German Schnitzel', 
             link: 'https://www.daringgourmet.com/traditional-german-pork-schnitzel/',
-            author: ['Kimberly Killebrew'],
+            authors: ['Kimberly Killebrew'],
             finder: 'Kevin Ung', 
         }
     ],

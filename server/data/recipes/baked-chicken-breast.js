@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Baked Chicken Breast', 
             link: 'https://www.recipetineats.com/oven-baked-chicken-breast/#recipe',
-            author: ['Nagi Maehashi'],
+            authors: ['Nagi Maehashi'],
             finder: 'Kevin Ung', 
         }
     ],

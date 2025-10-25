@@ -29,7 +29,7 @@ module.exports = {
         { 
             label: 'Lemon Chicken Ramen', 
             link: "https://myriadrecipes.com/lemon-chicken-ramen/",
-            author: ['Emily Roz'],
+            authors: ['Emily Roz'],
             finder: 'Kevin Ung', 
         }
     ],

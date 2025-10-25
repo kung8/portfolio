@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Loaded Chicken Casserole', 
             link: 'https://recipesfiber.com/loaded-chicken-cajun-sausage-pasta-casserole/',
-            author: ['Tiffany'],
+            authors: ['Tiffany'],
             finder: 'Kevin Ung', 
         }
     ],

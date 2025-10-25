@@ -27,7 +27,7 @@ module.exports = {
         { 
             label: 'Rosemary Lemonade', 
             link: "https://www.tasteofhome.com/recipes/rosemary-lemonade/",
-            author: ['Dixie Graham'],
+            authors: ['Dixie Graham'],
             finder: 'Kevin Ung', 
         }
     ],

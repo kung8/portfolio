@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Chicken Francese', 
             link: 'https://www.allrecipes.com/recipe/16681/delicious-easy-chicken-francese/',
-            author: ['Elaina'],
+            authors: ['Elaina'],
             finder: 'Kevin Ung', 
         }
     ],

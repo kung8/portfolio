@@ -38,7 +38,7 @@ module.exports = {
         { 
             label: 'Chocolate Gelato', 
             link: 'https://emmaduckworthbakes.com/chocolate-gelato-recipe/',
-            author: ['Emma Duckworth'],
+            authors: ['Emma Duckworth'],
             finder: 'Justin Ung', 
         }
     ],

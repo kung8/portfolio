@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Kung Pao Chicken', 
             link: 'https://natashaskitchen.com/kung-pao-chicken/',
-            author: ['Natasha Kravchuk'],
+            authors: ['Natasha Kravchuk'],
             finder: 'Kevin Ung', 
         }
     ],

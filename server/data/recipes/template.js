@@ -21,7 +21,7 @@ module.exports = {
     cookTime: { amount: '{{cookTime}}', unit: '{{cookTimeUnit}}' },
     waitTime: { amount: '{{waitTime}}', unit: '{{waitTimeUnit}}' },
     websites: [
-        { label: '{{label}}', link: '{{link}}', author: ['{{author}}'], finder: '{{finder}}' }
+        { label: '{{label}}', link: '{{link}}', authors: ['{{author}}'], finder: '{{finder}}' }
     ],
     separated: '{{separated}}',
     ingredients: [

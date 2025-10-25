@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Pumpkin Soup', 
             link: 'https://www.delish.com/cooking/recipe-ideas/a45025736/pumpkin-soup-recipe/',
-            author: ['Anna Painter'],
+            authors: ['Anna Painter'],
             finder: 'Kevin Ung', 
         }
     ],

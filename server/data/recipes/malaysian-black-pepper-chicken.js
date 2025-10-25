@@ -51,7 +51,7 @@ module.exports = {
         { 
             label: 'Ayam Black Pepper', 
             link: "https://dapurmalaysia.com/resepi-ayam-black-pepper/",
-            author: [''],
+            authors: [''],
             finder: 'Marco Crosland', 
         }
     ],

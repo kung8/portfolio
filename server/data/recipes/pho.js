@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Pho', 
             link: 'https://tasty.co/recipe/traditional-vietnamese-beef-pho',
-            author: ['Pierce Abernathy'],
+            authors: ['Pierce Abernathy'],
             finder: 'Justin Ung', 
         }
     ],

@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Ground Beef Ramen', 
             link: 'https://recipesfiber.com/ground-beef-ramen-skillet/',
-            author: ['Erica'],
+            authors: ['Erica'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -44,7 +44,7 @@ module.exports = {
         { 
             label: 'Singaporean Chicken Rice', 
             link: 'https://www.youtube.com/shorts/yYKQK5_80p0',
-            author: ['Douglas Chau'],
+            authors: ['Douglas Chau'],
             finder: 'Kevin Ung', 
         }
     ],

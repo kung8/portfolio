@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Brazilian Black Beans', 
             link: 'https://ourbestbites.com/brazilian-style-black-beans-rice/',
-            author: ['Sara Wells'],
+            authors: ['Sara Wells'],
             finder: 'Montana Hiltbrand', 
         }
     ],

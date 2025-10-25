@@ -37,7 +37,7 @@ module.exports = {
         { 
             label: 'Tuna Onigiri', 
             link: 'https://christieathome.com/blog/japanese-tuna-onigiri/',
-            author: ['Christie Lai'],
+            authors: ['Christie Lai'],
             finder: 'Samantha Pham', 
         }
     ],

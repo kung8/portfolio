@@ -24,7 +24,7 @@ module.exports = {
         { 
             label: 'Thai Peanut Salad', 
             link: 'https://www.onceuponachef.com/recipes/thai-crunch-salad-with-peanut-dressing.html',
-            author: ['Jennifer Segal'],
+            authors: ['Jennifer Segal'],
             finder: 'Kevin Ung', 
         }
     ],

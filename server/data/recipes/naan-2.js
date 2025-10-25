@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Naan 2', 
             link: 'https://www.thekitchn.com/naan-recipe-23711933',
-            author: ['Janette Zepeda'],
+            authors: ['Janette Zepeda'],
             finder: 'Kevin Ung', 
         }
     ],

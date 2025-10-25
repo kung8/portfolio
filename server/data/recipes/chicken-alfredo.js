@@ -43,7 +43,7 @@ module.exports = {
         {
             label: 'Chicken Fettuccine Alfredo',
             link: 'https://www.foodnetwork.com/recipes/food-network-kitchen/chicken-fettuccine-alfredo-3364118#recipeHead',
-            author: ['Emily Saladino'],
+            authors: ['Emily Saladino'],
             finder: 'Kevin Ung'
         }
     ],

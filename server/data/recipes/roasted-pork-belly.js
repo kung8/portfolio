@@ -45,7 +45,7 @@ module.exports = {
         { 
             label: 'Roasted Pork Belly', 
             link: 'https://cjeatsrecipes.com/air-fryer-crispy-pork-belly/',
-            author: ['Chris Joe'],
+            authors: ['Chris Joe'],
             finder: 'Kevin Ung', 
         }
     ],

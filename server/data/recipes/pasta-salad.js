@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Pasta Salad', 
             link: 'https://www.loveandlemons.com/pasta-salad/',
-            author: ['Jeanine'],
+            authors: ['Jeanine'],
             finder: 'Kevin Ung', 
         }
     ],

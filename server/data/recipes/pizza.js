@@ -101,7 +101,7 @@ module.exports = {
         { 
             label: 'Philly Cheese Steak Pizza', 
             link: 'https://littlespicejar.com/philly-cheese-steak-pizza/',
-            author: ['Marzia'],
+            authors: ['Marzia'],
             finder: 'Justin Ung', 
         }
     ],

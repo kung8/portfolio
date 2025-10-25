@@ -48,7 +48,7 @@ module.exports = {
         { 
             label: 'Baked Breaded Chicken', 
             link: "https://www.eazypeazymealz.com/baked-breaded-chicken/",
-            author: ['Rachael'],
+            authors: ['Rachael'],
             finder: 'Kevin Ung', 
         }
     ],

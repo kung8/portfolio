@@ -25,7 +25,7 @@ module.exports = {
         { 
             label: 'Green Bean Casserole', 
             link: 'https://www.spendwithpennies.com/classic-green-bean-casserole/',
-            author: ['Holly Nilsson'],
+            authors: ['Holly Nilsson'],
             finder: 'Kevin Ung', 
         }
     ],

@@ -33,7 +33,7 @@ module.exports = {
         { 
             label: 'Peanut Butter Blossoms', 
             link: 'https://preppykitchen.com/peanut-butter-blossoms/',
-            author: ['John Kanell'],
+            authors: ['John Kanell'],
             finder: 'Justin Ung', 
         }
     ],

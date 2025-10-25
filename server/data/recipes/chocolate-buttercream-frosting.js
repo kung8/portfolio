@@ -38,7 +38,7 @@ module.exports = {
         { 
             label: 'Chocolate Buttercream Frosting', 
             link: 'https://addapinch.com/perfect-chocolate-buttercream-frosting-recipe',
-            author: ['Robyn Stone'],
+            authors: ['Robyn Stone'],
             finder: 'Kevin Ung', 
         }
     ],

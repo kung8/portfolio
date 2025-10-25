@@ -32,7 +32,7 @@ module.exports = {
         { 
             label: 'Chicken Tetrazzini', 
             link: 'https://iamhomesteader.com/chicken-tetrazzini/?fbclid=IwY2xjawIfTm5leHRuA2FlbQIxMAABHfXmOdry4vTwvMnKkRabiPQIiNOv0HuUB_Teh0AZvPevluR9OzdZdBDsLA_aem_wBmdVLkajaS_oARCwQaCcg',
-            author: ['Amanda Rettke'],
+            authors: ['Amanda Rettke'],
             finder: 'Lauren Maliwauki', 
         }
     ],

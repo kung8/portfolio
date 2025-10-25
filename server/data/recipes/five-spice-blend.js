@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: '5-Spice', 
             link: 'https://www.food.com/recipe/five-spice-powder-66216',
-            author: ['SilentCricket'],
+            authors: ['SilentCricket'],
             finder: 'Kevin Ung', 
         }
     ],

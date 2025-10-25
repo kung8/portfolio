@@ -47,7 +47,7 @@ module.exports = {
         { 
             label: 'Chocolate Cake', 
             link: 'https://addapinch.com/the-best-chocolate-cake-recipe-ever/',
-            author: ['Robyn Stone'],
+            authors: ['Robyn Stone'],
             finder: 'Kevin Ung', 
         }
     ],

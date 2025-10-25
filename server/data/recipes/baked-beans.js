@@ -34,7 +34,7 @@ module.exports = {
         { 
             label: 'Baked Beans', 
             link: 'https://dancearoundthekitchen.com/baked-beans-from-scratch/',
-            author: ['Kelsey'],
+            authors: ['Kelsey'],
             finder: 'Kevin Ung',
         }
     ],

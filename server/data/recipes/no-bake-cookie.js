@@ -38,7 +38,7 @@ module.exports = {
         {
             label: 'Chocolate Peanut Butter No Bake Cookies',
             link: 'https://sallysbakingaddiction.com/chocolate-peanut-butter-no-bake-cookies/',
-            author: ['Sally McKenney'],
+            authors: ['Sally McKenney'],
             finder: 'Kevin Ung'
         }
     ],

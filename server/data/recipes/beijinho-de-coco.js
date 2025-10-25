@@ -23,7 +23,7 @@ module.exports = {
         { 
             label: 'Beijinjo De Coco', 
             link: 'https://braziliankitchenabroad.com/beijinho-de-coco-brazilian-coconut-balls-recipe-with-condensed-milk/',
-            author: ['Aline Shaw'],
+            authors: ['Aline Shaw'],
             finder: 'Sarah Miller', 
         }
     ],

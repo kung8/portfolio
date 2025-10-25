@@ -26,7 +26,7 @@ module.exports = {
         { 
             label: 'Turkey Roll Up (Costco Copycat)', 
             link: 'https://www.culinaryhill.com/turkey-rollups-with-cranberry-cream-cheese/',
-            author: ['Meggan Hill'],
+            authors: ['Meggan Hill'],
             finder: 'Kevin Ung', 
         }
     ],

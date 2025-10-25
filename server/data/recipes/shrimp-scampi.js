@@ -25,7 +25,7 @@ module.exports = {
         { 
             label: 'Shrimp Scampi', 
             link: 'https://www.allrecipes.com/recipe/19508/shrimp-scampi/',
-            author: ['Rncoggins'],
+            authors: ['Rncoggins'],
             finder: 'Kevin Ung', 
         }
     ],

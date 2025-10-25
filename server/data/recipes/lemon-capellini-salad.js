@@ -25,7 +25,7 @@ module.exports = {
         { 
             label: 'Lemon Capellini Salad', 
             link: 'https://iwashyoudry.com/lemon-capellini-salad/',
-            author: ['Shawn'],
+            authors: ['Shawn'],
             finder: 'Justin Ung', 
         }
     ],

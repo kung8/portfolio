@@ -28,7 +28,7 @@ module.exports = {
         { 
             label: 'Reuben Sandwich', 
             link: 'https://www.allrecipes.com/recipe/47717/reuben-sandwich-ii/',
-            author: ['Colette G.'],
+            authors: ['Colette G.'],
             finder: 'Kevin Ung', 
         }
     ],

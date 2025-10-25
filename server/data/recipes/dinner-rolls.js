@@ -27,7 +27,7 @@ module.exports = {
         {
             label: 'Own Recipe',
             link: null,
-            author: ['Nanette Marx'],
+            authors: ['Nanette Marx'],
             finder: 'Nanette Marx'
         }
     ],

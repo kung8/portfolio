@@ -25,7 +25,7 @@ module.exports = {
         { 
             label: 'Peppermint Bark', 
             link: "https://www.dinneratthezoo.com/peppermint-bark-recipe/",
-            author: ['Sara Welch'],
+            authors: ['Sara Welch'],
             finder: 'Kevin Ung', 
         }
     ],

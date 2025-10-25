@@ -27,7 +27,7 @@ module.exports = {
         { 
             label: 'Samosa Burritos', 
             link: 'https://www.plantpurenation.com/blogs/recipes/samosa-burritos',
-            author: [''],
+            authors: [''],
             finder: 'Chelsey Hickenlooper', 
         }
     ],
