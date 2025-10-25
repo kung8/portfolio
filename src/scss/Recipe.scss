@@ -165,7 +165,7 @@
             flex-wrap: wrap;
             column-gap: 16px;
             row-gap: 8px;
-            margin-bottom: 4px;
+            margin-bottom: 16px;
 
             .recipe-detail-label {
                 margin-bottom: 0;
@@ -196,8 +196,8 @@
         }
 
         .recipe-detail-label {
-            margin-bottom: 4px;
-            font-size: 20px;
+            margin-bottom: 16px;
+            font-size: 28px;
         }
 
         .recipe-detail-list {
@@ -214,32 +214,44 @@
             }
 
             li {
-                margin-bottom: 4px;
+                margin-bottom: 10px;
                 line-height: 1.35;
+                font-size: 20px;
             }
         }
 
         .checkbox-supply-container {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 6px;
+            margin-bottom: 10px;
 
             .checkbox-supply {
-                margin-right: 6px;
-                min-height: 16px;
-                min-width: 16px;
-                transform: translateY(2px);
+                margin-right: 8px;
+                min-height: 20px;
+                min-width: 20px;
+                transform: translateY(4px);
+            }
+
+            label {
+                font-size: 20px;
             }
         }
 
         .recipe-container,
         .separated-recipe-container {
             margin-bottom: 48px;
+            &.direction-container {
+                margin-bottom: 32px;
+            }
 
             .separated-recipe-detail-label {
                 margin-bottom: 8px;
-                text-decoration: underline;
-                text-underline-offset: 4px;
+                font-size: 24px;
+                font-weight: normal;
+                font-style: italic;
+                &.direction-label {
+                    color: theme.$sunshine;
+                }
             }
 
             .sectioned-recipe-container {
@@ -249,12 +261,12 @@
             .checkbox-ingredient-container {
                 display: flex;
                 align-items: flex-start;
-                margin-bottom: 6px;
+                margin-bottom: 10px;
 
                 .checkbox-ingredient {
-                    margin-right: 6px;
-                    min-height: 16px;
-                    min-width: 16px;
+                    margin-right: 8px;
+                    min-height: 20px;
+                    min-width: 20px;
                     transform: translateY(2px);
                 }
 
@@ -272,6 +284,11 @@
 
                 .ingredient-additional-details {
                     color: theme.$darkgrey;
+                    font-size: 20px;
+                }
+
+                .ingredient-name {
+                    font-size: 20px;
                 }
             }
 
@@ -280,17 +297,44 @@
                 padding-left: 16px;
 
                 &.numbered {
-                    list-style-type: decimal;
-                    padding-left: 24px;
+                    padding-left: 0;
                     margin-bottom: 0;
+                    counter-reset: step-counter;
 
                     li {
-                        margin-bottom: 8px;
-                    }
-                }
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        grid-column-gap: 16px;
+                        align-items: start;
+                        text-wrap: auto;
+                        max-width: 400px;
+                        padding: 24px 8px;
+                        border-bottom: 1px solid theme.$default;
+                        counter-increment: step-counter;
+                        line-height: 150%;
+                        font-size: 20px;
 
-                li {
-                    margin-bottom: 4px;
+                        &:first-of-type {
+                            padding-top: 16px;
+                        }
+
+                        &:last-of-type {
+                            border-bottom: none;
+                        }
+
+                        &::before {
+                            content: counter(step-counter) ".";
+                            font-size: 40px;
+                            line-height: 1;
+                            grid-column: 1;
+                            align-self: start;
+                        }
+
+                        >* {
+                            grid-column: 2;
+                            margin: 0;
+                        }
+                    }
                 }
             }
 
@@ -316,10 +360,12 @@
             li {
                 margin-bottom: 8px;
                 line-height: 1.35;
+                font-size: 20px;
 
                 .method-type {
                     color: theme.$primary-blue;
                     font-weight: bold;
+                    font-size: 20px;
                 }
 
                 .note-image {
@@ -337,7 +383,6 @@
         .figure-label-anchor {
             color: theme.$primary-blue;
             display: inline-block;
-            margin-left: 4px;
         }
 
         .figures-container {
@@ -375,10 +420,12 @@
                         color: theme.$primary-blue;
                         text-decoration: unset;
                         text-underline-offset: 4px;
+                        font-size: 20px;
                     }
 
                     .recipe-author {
                         color: theme.$primary-blue;
+                        font-size: 20px;
                     }
 
                     .no-link-label-and-author {
@@ -388,6 +435,7 @@
 
                 .recipe-finder {
                     color: theme.$default;
+                    font-size: 20px;
                 }
             }
         }

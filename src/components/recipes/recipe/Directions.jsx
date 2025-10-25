@@ -22,16 +22,23 @@ export const Directions = () => {
             {separated ? (
                 <>
                     {formattedDirections.map(([section, directions]) => (
-                        <div key={section} className="separated-recipe-container">
-                            <h5 className="separated-recipe-detail-label">{section}</h5>
+                        <div key={section} className="separated-recipe-container direction-container">
+                            <h5 className="separated-recipe-detail-label direction-label">{section}</h5>
                             <ol className="separated-recipe-detail-list numbered">
                                 {directions.map(({ step, figure, link }, index) => (
                                     <li key={step + '-' + index}>
-                                        {step}
-                                        {formatLink(link)}
-                                        {figure && (
-                                            <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className="figure-label-anchor">(See figure {figure})</span>
-                                        )}
+                                        <div>
+                                            {step && (
+                                                <span>{step}</span>
+                                            )}
+                                            &nbsp;
+                                            {link && (
+                                                <span>{formatLink(link)}</span>
+                                            )}
+                                            {figure && (
+                                                <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className="figure-label-anchor">(See figure {figure})</span>
+                                            )}
+                                        </div>
                                     </li>
                                 ))}
                             </ol>
