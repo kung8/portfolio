@@ -3,10 +3,7 @@ const chicken1 = '../assets/Products/chicken-ramen-1.jpeg';
 const bokChoy1 = '../assets/Products/bok-choy-1.jpeg';
 const bokChoy2 = '../assets/Products/bok-choy-2.jpeg';
 const bokChoy3 = '../assets/Products/bok-choy-3.jpeg';
-const bokChoy4 = '../assets/Products/bok-choy-4.jpeg';
-const bokChoy5 = '../assets/Products/bok-choy-5.jpeg';
 const bokChoy6 = '../assets/Products/bok-choy-6.jpeg';
-const bokChoy7 = '../assets/Products/bok-choy-7.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
@@ -29,7 +26,7 @@ const {
 module.exports = {
     cardName: 'Bok Choy Chicken',
     name: 'Bok Choy Chicken',
-    img: bokChoy7,
+    img: bokChoy3,
     available: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
@@ -81,12 +78,12 @@ module.exports = {
         { step: 'Cut the ends of the baby bok choy so that each leaf is free and wash carefully to clean each leaf.', section: SECTIONS.MAIN, img: bokChoy1 },
         { step: 'While the chicken is roasting in the oven for the last couple of minutes, boil a pot of water over medium-high heat.', section: SECTIONS.MAIN },
         { step: 'Blanch your bok choy by placing it the boiling water for 3 to 4 minutes. This should only soften the vegetables.', section: SECTIONS.MAIN, img: bokChoy2 },
-        { step: 'Once your chicken is out of the oven and cooled a little, slice up the chicken into 1/2 inch cubes.', section: SECTIONS.MAIN, img: bokChoy3 },
+        { step: 'Once your chicken is out of the oven and cooled a little, slice up the chicken.', section: SECTIONS.MAIN },
         { step: 'Over medium-high heat, add a little oil to the wok and get it ready to transfer the drained bok choy.', section: SECTIONS.MAIN },
         { step: 'Turn off the heat for the pot. Remove the bok choy from the water and add it to the wok.', section: SECTIONS.MAIN },
         { step: 'Add salt and pepper and let the bok choy wilt a little (about 2 minutes). Stir or toss to prevent burning or sticking and help cover the leaves with a little oil.', section: SECTIONS.MAIN },
-        { step: 'Add the chopped up chicken and combine.', section: SECTIONS.MAIN, img: bokChoy4 },
-        { step: 'Add soy sauce and stir for a minute. Turn off the heat for the wok.', section: SECTIONS.MAIN, img: bokChoy5 },
+        { step: 'Add the chopped up chicken and combine.', section: SECTIONS.MAIN },
+        { step: 'Add soy sauce and stir for a minute. Turn off the heat for the wok.', section: SECTIONS.MAIN },
         { step: 'Serve this with some sesame seeds and rice.', section: SECTIONS.MAIN, img: bokChoy6 },
     ],
     store: [
