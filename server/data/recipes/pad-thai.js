@@ -56,9 +56,9 @@ module.exports = {
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
         {
-            label: 'Own Recipe',
-            link: null,
-            authors: ['Kevin Ung'],
+            label: 'Pad Thai',
+            link: 'https://tastesbetterfromscratch.com/pad-thai/',
+            authors: ['Lauren Allen'],
             finder: 'Kevin Ung'
         }
     ],

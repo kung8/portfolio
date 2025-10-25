@@ -4,6 +4,7 @@ const { BLACK_PEPPER, CHICKEN_BROTH, GARLIC, KALE, LARGE_POT, MIXING_BOWL, OLIVE
 
 const KALE_SECTION = 'Kale';
 const GARLIC_BUTTER_RICE_SECTION = 'Garlic Butter Rice';
+const PREP_KALE = 'Prep Kale';
 
 module.exports = {
     wip: true,
@@ -23,11 +24,11 @@ module.exports = {
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Garlic Butter Rice with Kale', 
+        {
+            label: 'Garlic Butter Rice with Kale',
             link: 'https://www.recipetineats.com/garlic-butter-rice-with-kale-recipe/',
             authors: ['Nagi Maehashi'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     separated: true,
@@ -55,17 +56,17 @@ module.exports = {
         LARGE_POT,
     ],
     directions: [
-        { step: `In a mixing bowl, combine the "${KALE_SECTION}" section ingredients. Let it marinate.`, section: '' },
-        { step: 'Over medium-high heat, melt butter in a large pot.', section: '' },
-        { step: 'Add garlic. Stir and cook until fragrant (about 1 minute).', section: '' },
-        { step: 'Add rice. Stir for 10 seconds.', section: '' },
-        { step: 'Add broth. Stir and cover.', section: '' },
-        { step: 'Turn heat to medium. Cook until liquid is absorbed (about 12 to 15 minutes).', section: '' },
-        { step: 'Add kale on top of the rice. Re-cover and remove from heat.', section: '' },
-        { step: 'Let the rice rest for 10 to 15 minutes.', section: '' },
-        { step: 'Fluff rice with a fork and stir in kale.', section: '' },
-        { step: 'Stir in butter, almonds and salt and pepper as desired.', section: '' },
-        { step: '', section: '' },
+        { step: `In a mixing bowl, combine the "${KALE_SECTION}" section ingredients. Let it marinate.`, section: PREP_KALE },
+        { step: 'Over medium-high heat, melt butter in a large pot.', section: SECTIONS.COOK_RICE },
+        { step: 'Add garlic. Stir and cook until fragrant (about 1 minute).', section: SECTIONS.COOK_RICE },
+        { step: 'Add rice. Stir for 10 seconds.', section: SECTIONS.COOK_RICE },
+        { step: 'Add broth. Stir and cover.', section: SECTIONS.COOK_RICE },
+        { step: 'Turn heat to medium. Cook until liquid is absorbed (about 12 to 15 minutes).', section: SECTIONS.COOK_RICE },
+        { step: 'Add kale on top of the rice. Re-cover and remove from heat.', section: SECTIONS.COOK_RICE },
+        { step: 'Let the rice rest for 10 to 15 minutes.', section: SECTIONS.COOK_RICE },
+        { step: 'Fluff rice with a fork and stir in kale.', section: SECTIONS.COOK_RICE },
+        { step: 'Stir in butter, almonds and salt and pepper as desired.', section: SECTIONS.COOK_RICE },
+        { step: 'Enjoy this with your favorite protein.', section: SECTIONS.SERVE },
     ],
     store: [
         {

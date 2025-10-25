@@ -22,16 +22,16 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Brownies', 
+        {
+            label: 'Brownies',
             link: 'https://www.loveandlemons.com/brownies-recipe/',
             authors: ['Jeanine'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     separated: true,
     ingredients: [
-        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
+        { ...WHITE_SUGAR, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
         { ...ALL_PURPOSE_FLOUR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
         { ...COCOA_POWDER, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
         { ...POWDERED_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_SECTION },
@@ -47,7 +47,7 @@ module.exports = {
         OVEN,
     ],
     supplies: [
-        {...BAKING_PAN, additionalDetails: '8 x 8 inch' },
+        { ...BAKING_PAN, additionalDetails: '8 x 8 inch' },
         COOKING_SPRAY,
         PARCHMENT_PAPER
     ],
