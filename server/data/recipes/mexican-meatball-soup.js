@@ -10,7 +10,7 @@ module.exports = {
     cardName: 'Mexican Meatball Soup',
     name: 'Mexican Meatball Soup (Albondigas)',
     img: '',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN],

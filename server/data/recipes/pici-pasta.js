@@ -9,7 +9,7 @@ module.exports = {
     cardName: 'Pici Pasta',
     name: 'Pici Pasta',
     img: '',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
