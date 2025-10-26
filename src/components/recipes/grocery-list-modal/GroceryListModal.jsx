@@ -11,12 +11,11 @@ import {
     GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY,
     GROCERY_LIST_VIEW,
     MEAL_PLANNING_VIEW,
-    MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY,
-    STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY
+    MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY
 } from '../constants';
 import { ApplyToIngredientsInPlannedMealModal } from './ApplyToIngredientsInPlannedMealModal';
 import { SettingsModal } from './SettingsModal';
-import { getDefaultVendor, getStartingDay, getVendorOptions } from '../utils';
+import { getStartingDay } from '../utils';
 
 export const GroceryListModal = ({
     generateUUID,
@@ -162,24 +161,8 @@ export const GroceryListModal = ({
 
     // SETTINGS MODAL
     const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
-    const [startingDay, setStartingDay] = useState(getStartingDay());
-    const [vendorOptions, setVendorOptions] = useState(getVendorOptions());
-    const [defaultVendor, setDefaultVendor] = useState(getDefaultVendor());
-    const closeSettingsModal = () => {
-        setIsSettingsModalOpen(false);
-    }
-    const updateDefaultVendor = (vendor) => {
-        setDefaultVendor(vendor);
-        localStorage.setItem('defaultVendor', vendor);
-    }
-    const updateStartingDay = (day) => {
-        setStartingDay(day);
-        localStorage.setItem(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, day);
-    }
-    const updateVendorOptions = (newVendorOptions) => {
-        setVendorOptions(newVendorOptions);
-        localStorage.setItem('vendorOptions', JSON.stringify(newVendorOptions));
-    }
+    const closeSettingsModal = () => setIsSettingsModalOpen(false);
+    const startingDay = getStartingDay();
 
     return (
         <>
@@ -349,22 +332,7 @@ export const GroceryListModal = ({
                 />
             )}
             {isSettingsModalOpen && (
-                <SettingsModal
-                    closeModal={closeSettingsModal}
-                    defaultVendor={defaultVendor}
-                    handleApply={({
-                        defaultVendor: newDefaultVendor,
-                        startingDay: newStartingDay,
-                        vendorOptions: newVendorOptions
-                    }) => {
-                        updateDefaultVendor(newDefaultVendor);
-                        updateStartingDay(newStartingDay);
-                        updateVendorOptions(newVendorOptions);
-                        closeSettingsModal();
-                    }}
-                    startingDay={startingDay}
-                    vendorOptions={vendorOptions}
-                />
+                <SettingsModal closeModal={closeSettingsModal} />
             )}
         </>
     )

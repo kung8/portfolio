@@ -1,11 +1,11 @@
-export const SwitchToggle = ({ enabled, label, onClick }) => (
-    <div className="switch-toggle">
+export const SwitchToggle = ({ className = '', enabled, label, onClick }) => (
+    <div className={`switch-toggle ${className}`}>
         <label
             className={`switch ${enabled ? 'enabled' : ''}`}
             onClick={onClick}
         >
             <div className={`slider ${enabled ? 'active' : ''}`} />
         </label>
-        <span>{label}</span>
+        <span className={`switch-label`}>{label}</span>
     </div>
 );

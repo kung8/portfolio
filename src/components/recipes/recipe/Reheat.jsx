@@ -1,3 +1,4 @@
+import { getRecipeFontSizeClass } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 
 export const Reheat = () => {
@@ -7,13 +8,13 @@ export const Reheat = () => {
     if (!reheat || !reheat.length) return null;
     return (
         <>
-            <h4 className="recipe-detail-label reheat-label">Reheat Options:</h4>
+            <h4 className={`recipe-detail-label ${getRecipeFontSizeClass()} reheat-label`}>Reheat Options:</h4>
             <ul className="recipe-reheat">
                 {reheat.map(({ method, instruction }, i) => (
                     <li key={i}>
-                        <p className="method-type">{method}</p>
+                        <p className={`method-type ${getRecipeFontSizeClass()}`}>{method}</p>
                         {instruction && (
-                            <p>{instruction}</p>
+                            <p className={`instruction ${getRecipeFontSizeClass()}`}>{instruction}</p>
                         )}
                     </li>
                 ))}

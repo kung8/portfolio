@@ -1,4 +1,4 @@
-import { formatTime } from '../utils';
+import { formatTime, getRecipeFontSizeClass } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 
 export const CookTime = () => {
@@ -6,7 +6,7 @@ export const CookTime = () => {
     if (!item.cookTime || !item.cookTime.amount) return null;
     return (
         <div className="cook-time">
-            <span>Cook Time: {formatTime(item.cookTime)}</span>
+            <span className={`cook-time-label ${getRecipeFontSizeClass()}`}>Cook Time: {formatTime(item.cookTime)}</span>
         </div>
     )
 }

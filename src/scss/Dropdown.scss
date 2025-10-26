@@ -11,6 +11,7 @@
     &.is-open {
         border-bottom: none;
         border-radius: 4px 4px 0 0;
+
         &.open-above {
             border-bottom: 1px solid theme.$default;
             border-radius: 0 0 4px 4px;
@@ -26,11 +27,14 @@
 
     .chevron-arrow {
         transition: transform 0.3s ease;
+
         &.is-open {
             transform: rotate(180deg);
         }
+
         &.reverse {
             transform: rotate(180deg);
+
             &.is-open {
                 transform: rotate(0deg);
             }
@@ -49,6 +53,15 @@
 
         li {
             list-style: none;
+            padding: 4px 8px;
+
+            &:first-of-type {
+                padding-top: 8px;
+            }
+
+            &:last-of-type {
+                padding-bottom: 8px;
+            }
         }
     }
 

@@ -1,3 +1,10 @@
+import {
+    getShowRecipeFigures,
+    getShowRecipeNotes,
+    getShowRecipeReheatOptions,
+    getShowRecipeStorageOptions,
+    getShowRecipeWebsiteReferences
+} from '../utils';
 import { Appliances } from './Appliances';
 import { CookMode } from './CookMode';
 import { CookTime } from './CookTime';
@@ -15,23 +22,31 @@ import { WaitTime } from './WaitTime';
 import { Websites } from './Websites';
 import { Yield } from './Yield';
 
-export const RecipeDetails = () => (
-    <div className="recipe-details">
-        <CookMode />
-        <RecipeImage />
-        <PrepTime />
-        <CookTime />
-        <WaitTime />
-        <Yield />
-        <Appliances />
-        <Supplies />
-        <IngredientsHeader />
-        <Ingredients />
-        <Directions />
-        <Storage />
-        <Reheat />
-        <Websites />
-        <Notes />
-        <Figures />
-    </div>
-);
+export const RecipeDetails = () => {
+    const showRecipeFigures = getShowRecipeFigures();
+    const showRecipeNotes = getShowRecipeNotes();
+    const showRecipeReheatOptions = getShowRecipeReheatOptions();
+    const showRecipeStorageOptions = getShowRecipeStorageOptions();
+    const showRecipeWebsiteReferences = getShowRecipeWebsiteReferences();
+
+    return (
+        <div className="recipe-details">
+            <CookMode />
+            <RecipeImage />
+            <PrepTime />
+            <CookTime />
+            <WaitTime />
+            <Yield />
+            <Appliances />
+            <Supplies />
+            <IngredientsHeader />
+            <Ingredients />
+            <Directions />
+            {showRecipeStorageOptions && <Storage />}
+            {showRecipeReheatOptions && <Reheat />}
+            {showRecipeWebsiteReferences && <Websites />}
+            {showRecipeNotes && <Notes />}
+            {showRecipeFigures && <Figures />}
+        </div>
+    )
+};

@@ -1,4 +1,4 @@
-import { formatIngredientItem, getIngredientData } from '../utils';
+import { formatIngredientItem, getIngredientData, getRecipeFontSizeClass } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 
 export const IngredientsHeader = () => {
@@ -6,10 +6,10 @@ export const IngredientsHeader = () => {
     const separated = item.separated;
     return (
         <div className="recipe-ingredients-label-container">
-            <h4 className="recipe-detail-label">Ingredients:</h4>
+            <h4 className={`recipe-detail-label ${getRecipeFontSizeClass()}`}>Ingredients:</h4>
             <div className="grocery-list-button-container">
                 <span
-                    className="select-all-button"
+                    className={`select-all-button ${getRecipeFontSizeClass()}`}
                     onClick={() => {
                         if (selectedIngredients.length === localIngredients.length) {
                             setSelectedIngredients([]);
@@ -27,7 +27,7 @@ export const IngredientsHeader = () => {
                     {localIngredients.length > 0 && selectedIngredients.length === localIngredients.length ? 'Deselect All' : 'Select All'}
                 </span>
                 <span
-                    className={`add-to-list-button ${selectedIngredients.length > 0 ? 'active' : ''}`}
+                    className={`add-to-list-button ${selectedIngredients.length > 0 ? 'active' : ''} ${getRecipeFontSizeClass()}`}
                     onClick={() => {
                         // ensure that the selectedIngredients has the converted amount
                         const newSelectedIngredients = selectedIngredients.map((selectedIngredient) => {

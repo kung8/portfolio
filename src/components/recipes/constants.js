@@ -11,6 +11,13 @@ export const RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY = 'recipesGroupedBy';
 export const RECIPE_APP_USER = 'recipeAppUser';
 export const VENDOR_OPTIONS_LOCAL_STORAGE_KEY = 'vendorOptions';
 export const DEFAULT_VENDOR_LOCAL_STORAGE_KEY = 'defaultVendor';
+export const RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY = 'recipeFontSize';
+export const SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY = 'showRecipeFigures';
+export const SHOW_RECIPE_STORAGE_OPTIONS_LOCAL_STORAGE_KEY = 'showRecipeStorageOptions';
+export const SHOW_RECIPE_REHEAT_OPTIONS_LOCAL_STORAGE_KEY = 'showRecipeReheatOptions';
+export const SHOW_RECIPE_WEBSITE_REFERENCES_LOCAL_STORAGE_KEY = 'showRecipeWebsiteReferences';
+export const SHOW_RECIPE_NOTES_LOCAL_STORAGE_KEY = 'showRecipeNotes';
+export const SHOW_RECIPE_PAGE_LAYOUT_LOCAL_STORAGE_KEY = 'showRecipePageLayout';
 
 // MODAL VIEWS
 export const GROCERY_LIST_VIEW = 'groceryList';

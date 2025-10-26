@@ -481,18 +481,6 @@
                 .dropdown-options-container {
                     left: -1px;
                     min-width: 260px;
-
-                    li {
-                        padding: 4px 8px;
-
-                        &:first-of-type {
-                            padding-top: 8px;
-                        }
-
-                        &:last-of-type {
-                            padding-bottom: 8px;
-                        }
-                    }
                 }
             }
         }

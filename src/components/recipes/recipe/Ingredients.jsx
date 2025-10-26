@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { formatIngredientItem, getIngredientData } from '../utils';
+import { formatIngredientItem, getIngredientData, getRecipeFontSizeClass } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 
 const IngredientItem = ({ id, item, link }) => {
@@ -37,21 +37,21 @@ const IngredientItem = ({ id, item, link }) => {
                 type="checkbox"
                 id={id}
                 checked={checked}
-                className="checkbox-ingredient"
+                className={`checkbox-ingredient ${getRecipeFontSizeClass()}`}
                 onChange={handleCheckboxChange}
             />
             {link ? (
                 <a href={getLink()} target="_blank" rel="noopener noreferrer" className="ingredient-label-with-link">
-                    <span className="ingredient-name" itemProp="recipeIngredient">{item.name}</span>
+                    <span className={`ingredient-name ${getRecipeFontSizeClass()}`} itemProp="recipeIngredient">{item.name}</span>
                     {item.additionalDetails && (
-                        <span className="ingredient-additional-details">, {item.additionalDetails}</span>
+                        <span className={`ingredient-additional-details ${getRecipeFontSizeClass()}`}>, {item.additionalDetails}</span>
                     )}
                 </a>
             ) : (
                 <label htmlFor={id} className="ingredient-label">
-                    <span className="ingredient-name" itemProp="recipeIngredient">{item.name}</span>
+                    <span className={`ingredient-name ${getRecipeFontSizeClass()}`} itemProp="recipeIngredient">{item.name}</span>
                     {item.additionalDetails && (
-                        <span className="ingredient-additional-details">, {item.additionalDetails}</span>
+                        <span className={`ingredient-additional-details ${getRecipeFontSizeClass()}`}>, {item.additionalDetails}</span>
                     )}
                 </label>
             )}
@@ -69,7 +69,7 @@ export const Ingredients = () => {
         <div className="separated-recipe-container">
             {formattedIngredients.map(([section, ingredients]) => (
                 <div key={section} className="sectioned-recipe-container">
-                    <h5 className="separated-recipe-detail-label">{section}</h5>
+                    <h5 className={`separated-recipe-detail-label ${getRecipeFontSizeClass()}`}>{section}</h5>
                     {ingredients.map((ingredient, index) => {
                         const ingredientId = ingredient.id ?? generateUUID();
                         const formattedIngredient = formatIngredientItem({ ...ingredient, amount: (conversionRate || 1) * ingredient.amount });

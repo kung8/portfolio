@@ -3,6 +3,7 @@ import { useState } from "react";
 import { toast } from 'react-toastify';
 
 import { SwitchToggle } from "../../switch-toggle/SwitchToggle";
+import { getRecipeFontSizeClass } from "../utils";
 
 export const CookMode = () => {
     const [wakeLock, setWakeLock] = useState(null);
@@ -28,6 +29,7 @@ export const CookMode = () => {
     return (
         <div className="cook-mode">
             <SwitchToggle
+                className={`${getRecipeFontSizeClass()}`}
                 enabled={wakeLock}
                 label='Cook Mode'
                 onClick={() => {

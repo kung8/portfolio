@@ -1,3 +1,4 @@
+import { getRecipeFontSizeClass } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 
 export const Notes = () => {
@@ -8,11 +9,11 @@ export const Notes = () => {
 
     return (
         <>
-            <h4 className="recipe-detail-label notes-label">Notes:</h4>
+            <h4 className={`recipe-detail-label ${getRecipeFontSizeClass()} notes-label`}>Notes:</h4>
             <ul className="recipe-notes">
                 {notes.map(({ note, img }, i) => (
                     <li key={i}>
-                        <p>{note}</p>
+                        <p className={`recipe-note ${getRecipeFontSizeClass()}`}>{note}</p>
                         {img && <img className="note-image" src={img} alt="note" />}
                     </li>
                 ))}

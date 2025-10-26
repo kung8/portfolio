@@ -495,11 +495,30 @@
             margin: 24px 0 32px;
             overflow-y: auto;
             max-height: 400px;
+            row-gap: 0;
+        }
 
-            .section-heading {
-                color: theme.$default;
-                font-weight: 400;
-                font-size: 12px;
+        .setting-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            margin-bottom: 40px;
+
+            .section-heading-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+
+                .section-heading {
+                    color: theme.$default;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+
+                .section-subheading {
+                    font-size: 12px;
+                    color: theme.$light;
+                }
             }
         }
 

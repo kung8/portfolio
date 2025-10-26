@@ -1,3 +1,4 @@
+import { getRecipeFontSizeClass } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 
 const SupplyItem = ({ supply }) => {
@@ -22,10 +23,10 @@ const SupplyItem = ({ supply }) => {
                 type="checkbox"
                 id={supply.id}
                 checked={checked}
-                className="checkbox-supply"
+                className={`checkbox-supply ${getRecipeFontSizeClass()}`}
                 onChange={handleCheckboxChange}
             />
-            <label htmlFor={supply.id}>{supply.name}</label>
+            <label htmlFor={supply.id} className={`checkbox-supply-label ${getRecipeFontSizeClass()}`}>{supply.name}</label>
         </li>
     )
 }
@@ -36,10 +37,10 @@ export const Supplies = () => {
     return (
         <>
             <div className="recipe-ingredients-label-container">
-                <h4 className="recipe-detail-label">Supplies:</h4>
+                <h4 className={`recipe-detail-label ${getRecipeFontSizeClass()}`}>Supplies:</h4>
                 <div className="grocery-list-button-container">
                     <span
-                        className="select-all-button"
+                        className={`select-all-button ${getRecipeFontSizeClass()}`}
                         onClick={() => {
                             if (selectedSupplies.length === supplies.length) {
                                 setSelectedSupplies([]);
@@ -52,7 +53,7 @@ export const Supplies = () => {
                         {supplies.length > 0 && selectedSupplies.length === supplies.length ? 'Deselect All' : 'Select All'}
                     </span>
                     <span
-                        className={`add-to-list-button ${selectedSupplies.length > 0 ? 'active' : ''}`}
+                        className={`add-to-list-button ${selectedSupplies.length > 0 ? 'active' : ''} ${getRecipeFontSizeClass()}`}
                         onClick={async () => {
                             // update the selectedSupplies
                             const newSelectedSupplies = selectedSupplies.map((supply) => supply);

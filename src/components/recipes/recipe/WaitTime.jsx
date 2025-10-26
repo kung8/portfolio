@@ -1,4 +1,4 @@
-import { formatTime } from '../utils';
+import { formatTime, getRecipeFontSizeClass } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 
 export const WaitTime = () => {
@@ -6,7 +6,7 @@ export const WaitTime = () => {
     if (!item.waitTime || !item.waitTime.amount) return null;
     return (
         <div className="wait-time">
-            <span>Wait Time: {formatTime(item.waitTime)}</span>
+            <span className={`wait-time-label ${getRecipeFontSizeClass()}`}>Wait Time: {formatTime(item.waitTime)}</span>
         </div>
     )
 }

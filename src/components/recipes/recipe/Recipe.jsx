@@ -12,11 +12,13 @@ import { GROCERY_LIST_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../con
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { useGroceryList } from '../hooks/use-grocery-list';
-import { categorizeRecipeType, formatYield, getIngredientData, handleModalClass } from '../utils';
+import { categorizeRecipeType, formatYield, getIngredientData, getRecipeFontSizeClass, handleModalClass } from '../utils';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
 import { RecipeContext } from './RecipeContext';
 import { RecipeDetails } from './RecipeDetails';
 import { RecipeImageModal } from './RecipeImageModal';
+import settingsBtn from '../../../Assets/settings.png';
+import { SettingsModal } from '../grocery-list-modal/SettingsModal';
 
 const convertIdToName = (id) =>
     id.split('-')
@@ -49,6 +51,10 @@ export const Recipe = ({ match }) => {
         }
     }, [item]);
     const conversionRate = appliedYieldAmount / originalYieldAmount;
+
+    // SETTINGS MODAL
+    const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
+    const closeSettingsModal = () => setIsSettingsModalOpen(false);
 
     // grocery list modal
     const {
@@ -217,6 +223,12 @@ export const Recipe = ({ match }) => {
     // add supplies to grocery list modal
     const { handleClose: handleAddSuppliesToGroceryListModalClose, handleOpen: handleAddSuppliesToGroceryListModalOpen } = handleModalClass('.add-supplies-to-grocery-list-modal', 'add-ingredients-to-grocery-list-modal-overlay');
 
+    // handle settings modal
+    const { handleClose: handleSettingsModalClose, handleOpen: handleSettingsModalOpen } = handleModalClass('.settings-modal', 'settings-modal-action-overlay');
+    const handleCloseSettingsModal = () => {
+        handleSettingsModalClose();
+        closeSettingsModal();
+    }
 
     // image modal
     const { handleClose: handleCloseImageModal, handleOpen: handleOpenImageModal } = handleModalClass('.recipe-image-modal', 'recipe-image-modal-overlay');
@@ -259,24 +271,33 @@ export const Recipe = ({ match }) => {
                 title={item?.name ?? ''}
                 customTitle={(
                     <div className="custom-heading-wrapper">
-                        <h1 className="heading">{item?.name ?? ''}</h1>
-                        <img
-                            src={list}
-                            alt="list"
-                            className="list-img"
-                            onClick={() => {
-                                if (showGroceryListModal) closeGroceryListModal();
-                                else openGroceryListModal();
-                                setShowGroceryListModal(toggle => !toggle);
-                            }}
-                        />
+                        <h1 className={`heading ${getRecipeFontSizeClass()}`}>{item?.name ?? ''}</h1>
+
+                        <div className="icons-wrapper">
+                            <img
+                                src={settingsBtn}
+                                alt="settings"
+                                className="settings-img"
+                                onClick={() => {
+                                    if (isSettingsModalOpen) handleSettingsModalClose();
+                                    else handleSettingsModalOpen();
+                                    setIsSettingsModalOpen(toggle => !toggle);
+                                }}
+                            />
+                            <img
+                                src={list}
+                                alt="list"
+                                className="list-img"
+                                onClick={() => {
+                                    if (showGroceryListModal) closeGroceryListModal();
+                                    else openGroceryListModal();
+                                    setShowGroceryListModal(toggle => !toggle);
+                                }}
+                            />
+                        </div>
                     </div>
                 )}
-            >
-                {item?.recipeFinder && (
-                    <h4 className="recipe-credit">Referred by {item.recipeFinder}</h4>
-                )}
-            </NonDashboardPage.Header>
+            />
             <RecipeContext.Provider
                 value={{
                     appliedYieldAmount,
@@ -311,6 +332,14 @@ export const Recipe = ({ match }) => {
 
                 {item && isLoaded && <EmailRecipe />}
                 <RecipeImageModal />
+                <div
+                    id="settings-modal-action-overlay"
+                    className={`overlay ${isSettingsModalOpen ? 'layered-opened' : ''}`}
+                    onClick={handleCloseSettingsModal}
+                />
+                {isSettingsModalOpen && (
+                    <SettingsModal closeModal={handleCloseSettingsModal} />
+                )}
                 <GroceryListModal
                     generateUUID={generateUUID}
                     groceryList={groceryList}
