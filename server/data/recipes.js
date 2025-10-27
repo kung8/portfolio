@@ -14,7 +14,7 @@ const bakedChickenDrumsticks = require("./recipes/baked-chicken-drumsticks");
 const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
 const bakedMacaroniAndCheese = require("./recipes/baked-macaroni-and-cheese");
 const bakedRitzBites = require('./recipes/baked-ritz-bites.js');
-const broiledSalmon = require('./recipes/broiled-salmon.js');
+const bakedSalmon = require('./recipes/baked-salmon.js');
 const bakedZiti = require("./recipes/baked-ziti");
 const balsamicTomatoBruschetta = require("./recipes/balsamic-tomato-bruschetta");
 const bananaBread = require("./recipes/banana-bread");
@@ -51,6 +51,7 @@ const brigadeiro = require('./recipes/brigadeiro.js');
 const broccoliBeef = require('./recipes/broccoli-beef.js'); // TODO: finish adding recipe
 const broccoliBeef2 = require('./recipes/broccoli-beef-2.js'); // TODO: finish adding recipe
 const broccoliCheddarSoup = require("./recipes/broccoli-cheddar-soup");
+const broiledSalmon = require('./recipes/broiled-salmon.js');
 const brownedButter = require("./recipes/browned-butter");
 const brownedButterChocolateChipCookies = require("./recipes/browned-butter-chocolate-chip-cookies");
 const brownies = require("./recipes/brownies");
@@ -159,6 +160,7 @@ const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
 const garlicParmesanShrimp = require('./recipes/garlic-parmesan-shrimp.js');
 const garlicShrimp = require("./recipes/garlic-shrimp");
 const gelato = require("./recipes/gelato");
+const germanChocolateCake = require('./recipes/german-chocolate-cake.js');
 const germanSchnitzel = require("./recipes/german-schnitzel");
 const gingerbreadCookies = require("./recipes/gingerbread-cookies");
 const graveyardDessert = require("./recipes/graveyard-dessert");
@@ -240,7 +242,6 @@ const noBakeCookie = require("./recipes/no-bake-cookie");
 const noBakePumpkinPie = require('./recipes/no-bake-pumpkin-pie.js');
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const orangeChicken = require("./recipes/orange-chicken");
-const bakedSalmon = require('./recipes/baked-salmon.js');
 const oyakodon = require("./recipes/oyakodon");
 const padThai = require("./recipes/pad-thai");
 const panFriedChickenThighs = require("./recipes/pan-fried-chicken-thighs");
@@ -700,6 +701,7 @@ const recipes = [
     carrotCake,
     carrotCakeScones,
     coffeeCake,
+    germanChocolateCake,
     chocolateCake,
     chocolateButtercreamFrosting,
     yuleLog,
