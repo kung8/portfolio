@@ -28,7 +28,7 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
         { ...KETCHUP, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...BROWN_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
@@ -48,9 +48,10 @@ module.exports = {
         SAUCEPAN,
     ],
     directions: [
-        { step: 'Combine all the ingredients in a saucepan. Whisk.', section: SECTIONS.SAUCE, img: [sauce1, sauce2] },
-        { step: 'Over medium heat, simmer for 15 to 20 minutes.', section: SECTIONS.SAUCE },
-        { step: 'Transfer to a container once the sauce has thickened and cooled.', section: SECTIONS.SAUCE },
+        { step: `In a saucepan, combine the "${SECTIONS.SAUCE}" section ingredients. Whisk.`, section: SECTIONS.PREP_SAUCE, img: [sauce1, sauce2] },
+        { step: 'Over medium heat, simmer for 15 to 20 minutes.', section: SECTIONS.SIMMER },
+        { step: 'Transfer to a container once the sauce has thickened and cooled.', section: SECTIONS.COOL },
+        { step: 'Enjoy with your favorite grilled meats or as a dipping sauce.', section: SECTIONS.SERVE },
     ],
     store: [
         {
