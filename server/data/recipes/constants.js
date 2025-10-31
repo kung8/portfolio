@@ -300,6 +300,7 @@ const SECTIONS = {
     PREP_WET_INGREDIENTS: 'Prep Wet Ingredients',
     PREP_PAN: 'Prep Pan',
     PREP_BUNS: 'Prep Buns',
+    PREP_CASSEROLE: 'Prep Casserole',
     SEASON: 'Season',
 
     MAKE_DOUGH: 'Make Dough',
