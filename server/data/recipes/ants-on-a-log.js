@@ -3,6 +3,8 @@ const log2 = '../assets/Products/ants-on-a-log-2.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CELERY, KNIFE, PEANUT_BUTTER, RAISINS } = require('./ingredients');
 
+const PREP_CELERY = 'Prep Celery';
+
 module.exports = {
     cardName: 'Ants on a Log',
     name: 'Ants on a Log',
@@ -25,20 +27,20 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...CELERY, amount: 4, unit: INGREDIENT_UNITS.STALK, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RAISINS, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.MAIN },
-        { ...PEANUT_BUTTER, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.MAIN },
+        { ...CELERY, amount: 4, unit: INGREDIENT_UNITS.STALK, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...RAISINS, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.TOPPINGS },
+        { ...PEANUT_BUTTER, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.TOPPINGS },
     ],
     supplies: [
         KNIFE,
     ],
     directions: [
-        { step: 'Cut and clean the celery stalks.', section: SECTIONS.MAIN },
-        { step: 'Smear some peanut butter in each cut celery.', section: SECTIONS.MAIN },
-        { step: 'Top with as many raisins on the peanut butter.', section: SECTIONS.MAIN },
-        { step: 'Enjoy this healthy, nutritious snacks. The only bugs that I would be willing to eat on a regular basis.', section: SECTIONS.MAIN, img: log1 },
+        { step: 'Cut and clean the celery stalks.', section: PREP_CELERY },
+        { step: 'Smear some peanut butter in each cut celery.', section: SECTIONS.ASSEMBLE },
+        { step: 'Top with as many raisins on the peanut butter.', section: SECTIONS.ASSEMBLE },
+        { step: 'Enjoy this healthy, nutritious snacks. The only bugs that I would be willing to eat on a regular basis.', section: SECTIONS.SERVE, img: log1 },
     ],
     store: [
         {

@@ -290,6 +290,7 @@ const SECTIONS = {
     PREP_DRESSING: 'Prep Dressing',
     PREP_TOPPINGS: 'Prep Toppings',
     PREP_DIPPING_STATIONS: 'Prep Dipping Stations',
+    PREP_CRUST: 'Prep Crust',
     SEASON: 'Season',
 
     MAKE_DOUGH: 'Make Dough',
