@@ -263,7 +263,6 @@ const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
 const peruvianChicken = require("./recipes/peruvian-chicken");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
 const pho = require('./recipes/pho.js'); // TODO: finish adding recipe
-const piciPasta = require("./recipes/pici-pasta");
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
 const pineappleUpsideDownCake = require("./recipes/pineapple-upside-down-cake");
 const piriPiriChickenBowl = require("./recipes/piri-piri-chicken-bowl");
@@ -293,7 +292,6 @@ const rosemaryLemonade = require("./recipes/rosemary-lemonade");
 const roti = require('./recipes/roti.js'); // TODO: finish adding recipe
 const russianBeefStroganoff = require("./recipes/russian-beef-stroganoff"); // TODO: add (and determine if this is better than beefStroganoff)
 const samosa = require("./recipes/samosa");
-const samosaBurritos = require("./recipes/samosa-burritos");
 const sausageBalls = require('./recipes/sausage-balls.js'); // TODO: finish adding recipe
 const sausageMcGriddle = require('./recipes/sausage-mcgriddle.js');
 const sauteedSquash = require("./recipes/sauteed-squash");
@@ -371,7 +369,6 @@ const recipes = [
     roti,
     indianDosa,
     samosa,
-    samosaBurritos,
     mangoChutney,
 
     // VIETNAMESE
@@ -499,7 +496,6 @@ const recipes = [
     chickenAlfredo,
     chickenParmesan,
     basilPesto,
-    piciPasta,
     beefRagu,
     bakedZiti,
     chickenTetrazzini,
