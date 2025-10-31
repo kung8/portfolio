@@ -18,6 +18,11 @@ const {
     ZUCCHINI,
 } = require('./ingredients');
 
+const CARAMELIZED_ONION_SECTION = 'Caramelized Onions';
+
+const CARAMELIZE_ONION = 'Caramelize Onion';
+const MELT_CHEESE = 'Melt Cheese';
+
 module.exports = {
     cardName: 'Sauteed Squash',
     name: 'Sauteed Squash',
@@ -33,23 +38,25 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Sauteed Zucchini', 
+        {
+            label: 'Sauteed Zucchini',
             link: "https://www.wellplated.com/sauteed-zucchini/",
             authors: ['Erin Clarke'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...ZUCCHINI, amount: 3, unit: '', additionalDetails: 'sliced into 2"', section: SECTIONS.MAIN },
-        { ...SUMMER_SQUASH, amount: 1, unit: '', additionalDetails: 'sliced into 2"', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...THYME, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CARAMELIZED_ONION_SECTION },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CARAMELIZED_ONION_SECTION },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: CARAMELIZED_ONION_SECTION },
+
+        { ...ZUCCHINI, amount: 3, unit: '', additionalDetails: 'sliced into 2"', section: SECTIONS.VEGGIES },
+        { ...SUMMER_SQUASH, amount: 1, unit: '', additionalDetails: 'sliced into 2"', section: SECTIONS.VEGGIES },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...THYME, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+
         { ...PARMESAN_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
     ],
     appliances: [
@@ -60,10 +67,15 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Over medium-low heat, heat oil, onion, and butter in a pan. Cook until lightly browned (about 10 minutes).', section: SECTIONS.MAIN, img: squash1 },
-        { step: 'Increase to medium heat and add salt, black pepper, thyme, and squash and zucchini medley.', section: SECTIONS.MAIN },
-        { step: 'Cook until cooked (about 10 to 15 minutes). Stirring occasionally.', section: SECTIONS.MAIN },
-        { step: 'Add parmesan and stir until well blended. I recommend removing the pan from heat, the residual heat should be enough to melt the cheese.', section: SECTIONS.MAIN, img: squash2 },
+        { step: `Over medium-low heat, heat "${CARAMELIZED_ONION_SECTION}" section ingredients in a pan.`, section: CARAMELIZE_ONION, img: squash1 },
+        { step: 'Cook until lightly browned (about 10 minutes).', section: CARAMELIZE_ONION, img: squash1 },
+
+        { step: 'Increase to medium heat.', section: SECTIONS.COOK_VEGGIES },
+        { step: `Add the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES },
+        { step: 'Cook until tender (about 10 to 15 minutes). Stirring occasionally.', section: SECTIONS.COOK_VEGGIES },
+
+        { step: 'Remove pan from heat. Add parmesan. Stir until blended.', section: MELT_CHEESE, img: squash2 },
+
         { step: 'Serve this on the side of any pasta dish.', section: SECTIONS.SERVE },
     ],
     store: [
