@@ -1,6 +1,6 @@
 const dinner1 = '../assets/Products/hobo-dinner-1.jpeg';
 const dinner2 = '../assets/Products/hobo-dinner-2.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
     CARROT,
@@ -10,6 +10,9 @@ const {
     SUMMER_SAUSAGE,
     YELLOW_ONION,
 } = require('./ingredients');
+
+const HOBO_DINNER = 'Hobo Dinner';
+const PREP_DISH = 'Prep Dish';
 
 module.exports = {
     cardName: 'Hobo Dinner',
@@ -34,15 +37,15 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...SUMMER_SAUSAGE, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...CARROT, amount: 3, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...POTATO, amount: 3, unit: '', additionalDetails: 'chunked', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...SUMMER_SAUSAGE, amount: 1, unit: '', additionalDetails: 'sliced', section: HOBO_DINNER },
+        { ...CARROT, amount: 3, unit: '', additionalDetails: 'sliced', section: HOBO_DINNER },
+        { ...POTATO, amount: 3, unit: '', additionalDetails: 'chunked', section: HOBO_DINNER },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced', section: HOBO_DINNER },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: HOBO_DINNER },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: HOBO_DINNER },
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HOBO_DINNER },
     ],
     appliances: [
         { name: 'oven' },
@@ -52,13 +55,16 @@ module.exports = {
         { name: 'aluminum foil' },
     ],
     directions: [
-        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.MAIN },
-        { step: 'Add your preferred sliced veggies and proteins into the baking pan. I love summer sausage with these simple hearty veggies.', section: SECTIONS.MAIN },
-        { step: 'Drizzle a light amount of olive oil. If you choose to use other proteins, note that the amount of oil may need to be adjusted.', section: SECTIONS.MAIN },
-        { step: 'Cover with aluminum foil.', section: SECTIONS.MAIN },
-        { step: 'Bake for 40 minutes, or until the selected protein is cooked.', section: SECTIONS.MAIN, img: dinner2 },
+        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: 'Add your preferred sliced veggies and proteins into the baking pan.', section: PREP_DISH },
+        { step: 'Drizzle a light amount of olive oil.', section: PREP_DISH },
+        { step: 'Cover with aluminum foil.', section: PREP_DISH },
+        { step: 'Bake for 40 minutes, or until the selected protein is cooked.', section: SECTIONS.BAKE, img: dinner2 },
+        { step: 'Enjoy this nostalgic meal around a campfire, backyard or in your home.', section: SECTIONS.SERVE },
     ],
     notes: [
+        { note: 'I love summer sausage with these simple hearty veggies.' },
+        { note: 'If you choose to use other proteins, note that the amount of oil may need to be adjusted.' },
         { note: 'This was a favorite tradition of mine when camping. Simply wrapping whatever food in layers of tin foil and cooking over a campfire. And while it cooked, telling stories and enjoying the outdoors.' },
     ],
     store: [
