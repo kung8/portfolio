@@ -267,6 +267,7 @@ const SECTIONS = {
     CASSEROLE: 'Casserole',
     COATING_STATION: 'Coating Station',
     DIPPING_SAUCE: 'Dipping Sauce',
+    HERBS: 'Herbs',
 
     MARINATE_CHICKEN: 'Marinate Chicken',
     MARINATE_BEEF: 'Marinate Beef',
@@ -298,6 +299,7 @@ const SECTIONS = {
     PREP_DRY_INGREDIENTS: 'Prep Dry Ingredients',
     PREP_WET_INGREDIENTS: 'Prep Wet Ingredients',
     PREP_PAN: 'Prep Pan',
+    PREP_BUNS: 'Prep Buns',
     SEASON: 'Season',
 
     MAKE_DOUGH: 'Make Dough',
@@ -322,6 +324,7 @@ const SECTIONS = {
     COOK_CASSEROLE: 'Cook Casserole',
     COOK_MILK: 'Cook Milk',
     COOK_POTATOES: 'Cook Potatoes',
+    COOK_HERBS: 'Cook Herbs',
 
     STIR_FRY: 'Stir Fry',
     DEEP_FRY: 'Deep Fry',
@@ -339,10 +342,12 @@ const SECTIONS = {
     COOL: 'Cool',
     FREEZE: 'Freeze',
     WRAP: 'Wrap',
+    BOIL: 'Boil',
     BROIL: 'Broil',
     PREHEAT_OVEN: 'Preheat Oven',
     TOP: 'Top',
     STEAM: 'Steam',
+    THIN: 'Thin',
 };
 
 const STORAGE_CONTAINER = {
