@@ -43,6 +43,7 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
+    separated: false,
     ingredients: [
         { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
         { ...TERIYAKI_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },

@@ -48,6 +48,7 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
+    separated: false,
     ingredients: [
         { ...CRESCENT_ROLLS, amount: 1, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', section: SECTIONS.MAIN },
         { ...CHICKEN_BREAST, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked and shredded', section: SECTIONS.FILLING },

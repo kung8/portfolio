@@ -36,6 +36,7 @@ module.exports = {
             finder: 'Camille Pockrus', 
         }
     ],
+    separated: false,
     ingredients: [
         { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...BUTTERMILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },

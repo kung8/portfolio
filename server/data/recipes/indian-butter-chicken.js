@@ -54,6 +54,7 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    separated: false,
     ingredients: [
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },

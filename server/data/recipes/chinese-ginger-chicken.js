@@ -45,6 +45,7 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
+    separated: false,
     ingredients: [
         { ...CHICKEN_THIGH, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2 inch pieces', section: SECTIONS.MAIN },
         { ...GINGER, amount: 4, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'peeled and cut into long thin strips', section: SECTIONS.MAIN },

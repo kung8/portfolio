@@ -31,6 +31,7 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
+    separated: false,
     ingredients: [
         { ...GRAHAM_CRACKER, amount: 2, unit: '', additionalDetails: '', optional: false },
         { ...MARSHMALLOW, amount: 2, unit: '', additionalDetails: '', optional: false },

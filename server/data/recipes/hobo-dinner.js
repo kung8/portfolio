@@ -34,6 +34,7 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
+    separated: false,
     ingredients: [
         { ...SUMMER_SAUSAGE, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...CARROT, amount: 3, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },

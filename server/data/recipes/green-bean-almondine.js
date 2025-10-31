@@ -42,6 +42,7 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
+    separated: false,
     ingredients: [
         { ...SALT, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
         { ...FRENCH_GREEN_BEAN, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: '' },

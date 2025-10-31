@@ -30,6 +30,7 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
+    separated: false,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...MINI_MARSHMALLOWS, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },

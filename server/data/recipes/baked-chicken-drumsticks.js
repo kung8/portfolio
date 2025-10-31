@@ -45,6 +45,7 @@ module.exports = {
             finder: 'Kevin Ung', 
         },
     ],
+    separated: false,
     ingredients: [
         { ...CHICKEN_DRUMSTICKS, amount: 10, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'skin on', section: SECTIONS.MAIN },
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },

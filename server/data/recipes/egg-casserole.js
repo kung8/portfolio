@@ -47,6 +47,7 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
+    separated: false,
     ingredients: [
         { ...BREAD, amount: 8, unit: '', additionalDetails: 'cubed', optional: false },
         { ...CHEDDAR_CHEESE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', optional: false },

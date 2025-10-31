@@ -48,6 +48,7 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
+    separated: false,
     ingredients: [
         { ...BANANA, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room temperature', section: SECTIONS.MAIN },

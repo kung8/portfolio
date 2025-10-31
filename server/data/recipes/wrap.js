@@ -31,6 +31,7 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
+    separated: false,
     ingredients: [
         { ...TORTILLA, amount: 1, unit: '', additionalDetails: '', optional: false },
         { ...COOKED_HAM, amount: 4, unit: '', additionalDetails: 'preferred', optional: false },

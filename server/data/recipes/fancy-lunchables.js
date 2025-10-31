@@ -23,6 +23,7 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
+    separated: false,
     ingredients: [
         { ...CRACKERS, amount: 12, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...COOKED_HAM, amount: 5, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },

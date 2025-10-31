@@ -46,6 +46,7 @@ module.exports = {
             finder: 'Justin Ung'
         }
     ],
+    separated: false,
     ingredients: [
         { ...BREAD_FLOUR, amount: 9 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },

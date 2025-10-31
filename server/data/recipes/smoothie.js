@@ -32,6 +32,7 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
+    separated: false,
     ingredients: [
         { ...ALMOND_MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
         { ...BANANA, amount: 2, unit: '', additionalDetails: '', optional: false },
