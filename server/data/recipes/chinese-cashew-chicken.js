@@ -19,6 +19,7 @@ const {
     CASHEWS,
     CORNSTARCH,
     EDAMAME,
+    GARLIC,
     GREEN_ONION,
     GROUND_GINGER,
     HONEY,
@@ -33,7 +34,6 @@ const {
     SESAME_SEEDS,
     STOVE,
     WOK,
-    GARLIC,
 } = require('./ingredients');
 
 const OILS_SECTION = 'Oils';
