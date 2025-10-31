@@ -15,15 +15,12 @@ export const Websites = () => {
                     <li key={i} className="recipe-website-item">
                         <div className="recipe-website-link">
                             {link ? (
-                                <>
-                                    <a href={link} target="_blank" rel="noopener noreferrer" className={`recipe-link ${getRecipeFontSizeClass()}`}>
-                                        {label}
-                                    </a>
-                                    {' '}
+                                <a href={link} target="_blank" rel="noopener noreferrer" className={`recipe-link ${getRecipeFontSizeClass()}`}>
+                                    {label}{' '}
                                     {authors && (
                                         <span className={`recipe-author ${getRecipeFontSizeClass()}`}>by {authors}</span>
                                     )}
-                                </>
+                                </a>
                             ) : (
                                 <span className={`no-link-label-and-author ${getRecipeFontSizeClass()}`}>{label}{authors && ` by ${authors}`}</span>
                             )}
