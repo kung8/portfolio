@@ -222,6 +222,7 @@ const REHEAT_METHODS = {
 const SECTIONS = {
     ASSEMBLE: 'Assemble',
     ASSEMBLY: 'Assembly',
+    AROMATICS: 'Aromatics',
     MAIN: 'Main',
     MARINADE: 'Marinade',
     SAUCE: 'Sauce',
@@ -313,6 +314,8 @@ const SECTIONS = {
     COOK_MEAT: 'Cook Meat',
     COOK_FILLING: 'Cook Filling',
     COOK_CASSEROLE: 'Cook Casserole',
+    COOK_MILK: 'Cook Milk',
+    COOK_POTATOES: 'Cook Potatoes',
 
     STIR_FRY: 'Stir Fry',
     DEEP_FRY: 'Deep Fry',
