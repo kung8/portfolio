@@ -296,6 +296,7 @@ const SECTIONS = {
     PREP_CRUST: 'Prep Crust',
     PREP_DRY_INGREDIENTS: 'Prep Dry Ingredients',
     PREP_WET_INGREDIENTS: 'Prep Wet Ingredients',
+    PREP_PAN: 'Prep Pan',
     SEASON: 'Season',
 
     MAKE_DOUGH: 'Make Dough',
@@ -339,6 +340,7 @@ const SECTIONS = {
     WRAP: 'Wrap',
     BROIL: 'Broil',
     PREHEAT_OVEN: 'Preheat Oven',
+    TOP: 'Top',
 };
 
 const STORAGE_CONTAINER = {
