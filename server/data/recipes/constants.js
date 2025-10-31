@@ -352,6 +352,7 @@ const SECTIONS = {
     THIN: 'Thin',
     BASTE: 'Baste',
     TRANSFER: 'Transfer',
+    CREAM_BUTTER: 'Cream Butter',
 };
 
 const STORAGE_CONTAINER = {

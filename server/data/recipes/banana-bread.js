@@ -8,6 +8,13 @@ const bread7 = '../assets/Products/banana-bread-7.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
 
+const BANANA_SECTION = 'Banana';
+const CREAMED_BUTTER_SECTION = 'Creamed Butter';
+const VANILLA_SECTION = 'Vanilla';
+const ADDITIONAL_INGREDIENTS = 'Additional Ingredients';
+
+const MASH_BANANA = 'Mash Banana';
+
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_SODA,
@@ -41,25 +48,30 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { 
-            label: 'Banana Bread', 
+        {
+            label: 'Banana Bread',
             link: 'https://natashaskitchen.com/banana-bread-recipe-video/',
             authors: ['Natasha Kravchuk'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...BANANA, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room temperature', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 1.5, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_SODA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { ...WALNUTS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...BANANA, amount: 3, unit: '', additionalDetails: '', section: BANANA_SECTION },
+
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room temperature', section: CREAMED_BUTTER_SECTION },
+        { ...WHITE_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CREAMED_BUTTER_SECTION },
+
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.EGGS },
+
+        { ...ALL_PURPOSE_FLOUR, amount: 1.5, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...BAKING_SODA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+
+        { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: VANILLA_SECTION },
+
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'optional', section: ADDITIONAL_INGREDIENTS },
+        { ...WALNUTS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'optional', section: ADDITIONAL_INGREDIENTS },
     ],
     appliances: [
         OVEN
@@ -72,16 +84,26 @@ module.exports = {
         TOOTHPICK,
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },
-        { step: 'In large bowl, cream together the softened butter and sugar.', section: SECTIONS.MAIN, img: bread1 },
-        { step: 'In mixing bowl, mash bananas until its consistency is smooth.', section: SECTIONS.MAIN, img: bread2 },
-        { step: 'Add the butter and sugar and eggs to the bananas.', section: SECTIONS.MAIN },
-        { step: 'In the large bowl, combine flour, baking soda, and salt. Then add to the batter.', section: SECTIONS.MAIN, img: bread3 },
-        { step: 'Add vanilla to the batter.', section: SECTIONS.MAIN },
-        { step: 'Add chocolate chips and walnuts to the batter. Feel free to experiment with your favorite ingredients.', section: SECTIONS.MAIN, img: bread4 },
-        { step: 'Pour the batter into the bread pan.', section: SECTIONS.MAIN, img: bread5 },
-        { step: 'Bake for 55 to 60 minutes, or until a toothpick inserted into the center comes out clean.', section: SECTIONS.MAIN },
-        { step: 'Let bread rest for 10 minutes before serving.', section: SECTIONS.MAIN, img: bread6 },
+        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+
+        { step: `In large bowl, cream together the "${CREAMED_BUTTER_SECTION}" section ingredients.`, section: SECTIONS.CREAM_BUTTER, img: bread1 },
+
+        { step: 'In mixing bowl, mash bananas until its consistency is smooth.', section: MASH_BANANA, img: bread2 },
+
+        { step: 'In the mixing bowl with the mashed bananas, add the creamed butter and eggs.', section: SECTIONS.PREP_BATTER },
+
+        { step: `In the large bowl, combine the "${SECTIONS.DRY_INGREDIENTS}" section ingredients. Transfer to the wet ingredients.`, section: SECTIONS.PREP_BATTER, img: bread3 },
+        { step: 'Add vanilla.', section: SECTIONS.PREP_BATTER },
+        { step: 'Optionally add chocolate chips, walnuts or your favorite ingredients.', section: SECTIONS.PREP_BATTER, img: bread4 },
+
+        { step: 'Pour the batter into the bread pan.', section: SECTIONS.PREP_PAN, img: bread5 },
+
+        { step: 'Bake until an inserted toothpick comes out clean (about 55 to 60 minutes).', section: SECTIONS.BAKE },
+
+        { step: 'Let bread rest for 10 minutes before serving.', section: SECTIONS.SERVE, img: bread6 },
+    ],
+    notes: [
+        { note: 'Feel free to experiment with your favorite ingredients.' },
     ],
     store: [
         {
