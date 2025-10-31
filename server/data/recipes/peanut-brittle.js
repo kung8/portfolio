@@ -6,6 +6,15 @@ const brittle4 = '../assets/Products/peanut-brittle-4.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BAKING_SODA, COOKING_THERMOMETER, CORN_SYRUP, PARCHMENT_PAPER, SAUCEPAN, STOVE, UNSALTED_BUTTER, UNSALTED_PEANUT, VANILLA_EXTRACT, WATER, WHITE_SUGAR } = require('./ingredients');
 
+const SUGARS_SECTION = 'Sugars';
+const PEANUTS_SECTION = 'Peanuts';
+const FOAM_SECTION = 'Foam';
+
+const COOK_SUGARS = 'Cook Sugars';
+const COOK_PEANUTS = 'Cook Peanuts';
+const CREATE_FOAM = 'Create Foam';
+const FORM_BRITTLE = 'Form Brittle';
+
 module.exports = {
     cardName: 'Peanut Brittle',
     name: 'Peanut Brittle',
@@ -22,22 +31,24 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Peanut Brittle', 
+        {
+            label: 'Peanut Brittle',
             link: "https://tastesbetterfromscratch.com/peanut-brittle/",
             authors: ['Lauren Allen'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: SECTIONS.MAIN },
-        { ...CORN_SYRUP, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_PEANUT, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_SODA, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUGARS_SECTION },
+        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: SUGARS_SECTION },
+        { ...CORN_SYRUP, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUGARS_SECTION },
+
+        { ...UNSALTED_PEANUT, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PEANUTS_SECTION },
+
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FOAM_SECTION },
+        { ...BAKING_SODA, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FOAM_SECTION },
+        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FOAM_SECTION },
     ],
     appliances: [
         STOVE,
@@ -49,24 +60,30 @@ module.exports = {
         COOKING_THERMOMETER,
     ],
     directions: [
-        { step: 'Place parchment paper on a baking sheet.', section: SECTIONS.MAIN },
-        { step: 'Over medium heat, combine together sugar and water in a saucepan.', section: SECTIONS.MAIN },
-        { step: 'Add in corn syrup. Stirring occasionally and bring to a boil.', section: SECTIONS.MAIN },
-        { step: 'Continue to cook until the temperature reading is 250ºF.', section: SECTIONS.MAIN },
-        { step: 'Add in peanuts and stir constantly.', section: SECTIONS.MAIN, img: brittle1 },
-        { step: 'Remove from heat once the temperature reading is 300ºF. This is really important to evaporate the water from the sugar so that it will harden this dessert.', section: SECTIONS.MAIN },
-        { step: 'Immediately mix in butter, baking soda and vanilla extract. It should foam and change texture.', section: SECTIONS.MAIN, img: brittle2 },
-        { step: 'Quickly and carefully pour onto the parchment paper and spread to an even layer using a spatula.', section: SECTIONS.MAIN, img: brittle3 },
-        { step: 'Let it completely cool (about 30 minutes).', section: SECTIONS.MAIN },
-        { step: 'Break apart and share with those you love.', section: SECTIONS.MAIN },
-        { step: 'Store in an airtight container at room temperature. Do not refrigerate.', section: SECTIONS.MAIN },
-        { step: 'If the peanut brittle is not hard enough there are two solutions that I found: (1) you can bake it in the oven at 300ºF until the edges are brown. Be careful not to burn it and make sure the pan is large enough or else it will spill over. or (2) you can remix the dessert into a pot and reheat until the temperature is 300ºF. Make sure to stir constantly to ensure that it does not burn.', section: SECTIONS.MAIN },
+        { step: 'Place parchment paper on a baking sheet.', section: COOK_SUGARS },
+        { step: 'Over medium heat, combine together sugar and water in a saucepan.', section: COOK_SUGARS },
+        { step: 'Add in corn syrup. Stirring occasionally and bring to a boil.', section: COOK_SUGARS },
+        { step: 'Continue to cook until the temperature reading is 250ºF.', section: COOK_SUGARS },
+
+        { step: 'Add in peanuts and stir constantly.', section: COOK_PEANUTS, img: brittle1 },
+        { step: 'Remove from heat once the temperature reading is 300ºF. This is really important to evaporate the water from the sugar so that it will harden this dessert.', section: COOK_PEANUTS },
+
+        { step: 'Immediately mix in butter, baking soda and vanilla extract. It should foam and change texture.', section: CREATE_FOAM, img: brittle2 },
+
+        { step: 'Quickly and carefully pour onto the parchment paper and spread to an even layer using a spatula.', section: FORM_BRITTLE, img: brittle3 },
+        { step: 'Let it completely cool (about 30 minutes).', section: FORM_BRITTLE },
+
+        { step: 'Break apart and share with those you love.', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'If the peanut brittle is not hard enough there are two solutions that I found: (1) you can bake it in the oven at 300ºF until the edges are brown. Be careful not to burn it and make sure the pan is large enough or else it will spill over. or (2) you can remix the dessert into a pot and reheat until the temperature is 300ºF. Make sure to stir constantly to ensure that it does not burn.' }
     ],
     store: [
         {
             duration: { amount: 6, unit: STORAGE_DURATION_UNIT.WEEK },
             location: STORAGE_LOCATION.ROOM_TEMPERATURE,
             container: STORAGE_CONTAINER.AIRTIGHT,
+            instructions: 'Store in an airtight container at room temperature. Do not refrigerate.',
         },
         {
             duration: { amount: 3, unit: STORAGE_DURATION_UNIT.MONTH },
