@@ -102,7 +102,7 @@ module.exports = {
         { step: `In a large bowl, combine the "${SECTIONS.CHICKEN}" section ingredients. Mix well until chicken is well coated.`, section: SECTIONS.CHICKEN, img: chicken2 },
         { step: 'Over medium-high heat, add the combination of oils in a wok.', section: SECTIONS.CHICKEN, img: chicken3 },
         { step: 'Add the chicken and cook until the chicken is about 80% cooked through (about 3 to 4 minutes on each side).', section: SECTIONS.CHICKEN, img: chicken4 },
-        { step: 'Remove chicken from the wok and transfer to a clean large bowl.', section: SECTIONS.CHICKEN, img: chicken5 },
+        { step: 'Transfer chicken to a large bowl.', section: SECTIONS.CHICKEN, img: chicken5 },
 
         { step: `In the wok, add the "${SECTIONS.VEGGIES}" section ingredients. Cook until the vegetables are tender (about 3 to 4 minutes).`, section: SECTIONS.MAIN, img: chicken6 },
         { step: 'Add the cashews. Stir until mixed.', section: SECTIONS.MAIN, img: chicken7 },
