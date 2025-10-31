@@ -227,6 +227,8 @@ const SECTIONS = {
     MARINADE: 'Marinade',
     SAUCE: 'Sauce',
     BROTH: 'Broth',
+    DRY_INGREDIENTS: 'Dry Ingredients',
+    WET_INGREDIENTS: 'Wet Ingredients',
     TOPPINGS: 'Toppings',
     RICE: 'Rice',
     PASTA: 'Pasta',
@@ -292,6 +294,8 @@ const SECTIONS = {
     PREP_TOPPINGS: 'Prep Toppings',
     PREP_DIPPING_STATIONS: 'Prep Dipping Stations',
     PREP_CRUST: 'Prep Crust',
+    PREP_DRY_INGREDIENTS: 'Prep Dry Ingredients',
+    PREP_WET_INGREDIENTS: 'Prep Wet Ingredients',
     SEASON: 'Season',
 
     MAKE_DOUGH: 'Make Dough',
