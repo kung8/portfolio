@@ -266,6 +266,7 @@ const SECTIONS = {
     LIQUIDS: 'Liquids',
     CASSEROLE: 'Casserole',
     COATING_STATION: 'Coating Station',
+    DIPPING_SAUCE: 'Dipping Sauce',
 
     MARINATE_CHICKEN: 'Marinate Chicken',
     MARINATE_BEEF: 'Marinate Beef',
@@ -341,6 +342,7 @@ const SECTIONS = {
     BROIL: 'Broil',
     PREHEAT_OVEN: 'Preheat Oven',
     TOP: 'Top',
+    STEAM: 'Steam',
 };
 
 const STORAGE_CONTAINER = {

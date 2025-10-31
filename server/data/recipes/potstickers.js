@@ -27,8 +27,8 @@ const {
     WATER,
 } = require('./ingredients');
 
-const DIPPING_SAUCE = 'Dipping Sauce';
-const ASSEMBLY = 'Assembly';
+const FOR_STEAMING_SECTION = 'For Steaming';
+const FOR_FRYING_SECTION = 'For Frying';
 
 module.exports = {
     wip: true,
@@ -49,14 +49,14 @@ module.exports = {
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { 
-            label: 'Potstickers', 
+        {
+            label: 'Potstickers',
             link: "https://www.allrecipes.com/recipe/261153/perfect-pot-stickers/",
             authors: ['John Mitzewich'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
         { ...GROUND_PORK, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.FILLING },
@@ -67,13 +67,16 @@ module.exports = {
         { ...SESAME_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...CAYENNE_PEPPER, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.FILLING },
         { ...CABBAGE, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'finely chopped', section: SECTIONS.FILLING },
+
         { ...ALL_PURPOSE_FLOUR, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...HOT_WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...RICE_WINE_VINEGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE },
-        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DIPPING_SAUCE },
-        { ...VEGETABLE_OIL, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WATER, amount: 8, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'for steaming', section: SECTIONS.MAIN },
+
+        { ...RICE_WINE_VINEGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DIPPING_SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DIPPING_SAUCE },
+
+        { ...WATER, amount: 8, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'for steaming', section: FOR_STEAMING_SECTION },
+        { ...VEGETABLE_OIL, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FOR_FRYING_SECTION },
     ],
     appliances: [
         STOVE,
@@ -82,30 +85,36 @@ module.exports = {
         FRYING_PAN,
     ],
     directions: [
-        { step: 'Mix together all the ingredients for the filling in a mixing bowl.', section: SECTIONS.FILLING, img: potstickers1 },
-        { step: 'Cover and chill for 1 hour.', section: SECTIONS.FILLING },
-        { step: 'In a bowl mix together salt and flour.', section: SECTIONS.DOUGH },
-        { step: 'Pour in hot water slowly.', section: SECTIONS.DOUGH },
-        { step: 'Stir until dough forms.', section: SECTIONS.DOUGH },
-        { step: 'Flour hands and move dough to work surface.', section: SECTIONS.DOUGH },
-        { step: 'Knead until dough becomes smooth (about 3 to 5 minutes). Add up to ½ c flour as needed. ', section: SECTIONS.DOUGH },
-        { step: 'Wrap dough in plastic and let it rest for 30 minutes.', section: SECTIONS.DOUGH, img: potstickers2 },
-        { step: 'Use a 1/2 c measuring cup to cut the dough pieces.', section: SECTIONS.DOUGH, img: potstickers3 },
-        { step: 'Flatten the dough to about 3 ½ inch discs on a lightly floured surface.', section: SECTIONS.DOUGH },
-        { step: 'Repeat for the rest of the dough.', section: SECTIONS.DOUGH },
-        { step: 'Lightly moisten edges with wet finger.', section: ASSEMBLY },
-        { step: 'Add a scoop of filling in the center of the wrapper.', section: ASSEMBLY },
-        { step: 'Fold 2 sides up and pinch together.', section: ASSEMBLY },
-        { step: 'Pinch the edges to “pleat”.', section: ASSEMBLY, img: potstickers4 },
-        { step: 'Lightly tap the potstickers on the surface to flatten the bottom.', section: ASSEMBLY },
-        { step: 'Repeat for the remaining potstickers.', section: ASSEMBLY },
-        { step: 'Mix together sauce ingredients.', section: DIPPING_SAUCE },
-        { step: 'Over medium-high heat, in a pan add potstickers and water.', section: SECTIONS.MAIN, img: potstickers5 },
-        { step: 'Cover pan with a lid. Steam (about 3 minutes).', section: SECTIONS.MAIN, img: potstickers6 },
-        { step: 'Uncover. Reduce heat to medium.', section: SECTIONS.MAIN },
-        { step: 'Add oil and cook until bottom is golden brown (about 2 minutes).', section: SECTIONS.MAIN },
-        { step: 'Remove and set somewhere to keep warm.', section: SECTIONS.MAIN, img: potstickers8 },
-        { step: 'Serve with dipping sauce.', section: SECTIONS.MAIN },
+        { step: 'Mix together all the ingredients for the filling in a mixing bowl.', section: SECTIONS.PREP_FILLING, img: potstickers1 },
+        { step: 'Cover and chill for 1 hour.', section: SECTIONS.PREP_FILLING },
+
+        { step: 'In a bowl mix together salt and flour.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Pour in hot water slowly.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Stir until dough forms.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Flour hands and move dough to work surface.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Knead until dough becomes smooth (about 3 to 5 minutes). Add up to ½ c flour as needed. ', section: SECTIONS.PREP_DOUGH },
+        { step: 'Wrap dough in plastic and let it rest for 30 minutes.', section: SECTIONS.PREP_DOUGH, img: potstickers2 },
+        { step: 'Use a 1/2 c measuring cup to cut the dough pieces.', section: SECTIONS.PREP_DOUGH, img: potstickers3 },
+        { step: 'Flatten the dough to about 3 ½ inch discs on a lightly floured surface.', section: SECTIONS.PREP_DOUGH },
+        { step: 'Repeat for the rest of the dough.', section: SECTIONS.PREP_DOUGH },
+
+        { step: 'Lightly moisten edges with wet finger.', section: SECTIONS.ASSEMBLE },
+        { step: 'Add a scoop of filling in the center of the wrapper.', section: SECTIONS.ASSEMBLE },
+        { step: 'Fold 2 sides up and pinch together.', section: SECTIONS.ASSEMBLE },
+        { step: 'Pinch the edges to “pleat”.', section: SECTIONS.ASSEMBLE, img: potstickers4 },
+        { step: 'Lightly tap the potstickers on the surface to flatten the bottom.', section: SECTIONS.ASSEMBLE },
+        { step: 'Repeat for the remaining potstickers.', section: SECTIONS.ASSEMBLE },
+
+        { step: 'Mix together sauce ingredients.', section: SECTIONS.PREP_SAUCE },
+
+        { step: 'Over medium-high heat, in a pan add potstickers and water.', section: SECTIONS.STEAM, img: potstickers5 },
+        { step: 'Cover pan with a lid. Steam (about 3 minutes).', section: SECTIONS.STEAM, img: potstickers6 },
+
+        { step: 'Uncover. Reduce heat to medium.', section: SECTIONS.PAN_FRY },
+        { step: 'Add oil and cook until bottom is golden brown (about 2 minutes).', section: SECTIONS.PAN_FRY },
+        { step: 'Remove and set somewhere to keep warm.', section: SECTIONS.PAN_FRY, img: potstickers8 },
+
+        { step: 'Serve with dipping sauce.', section: SECTIONS.SERVE },
     ],
     store: [
         {
