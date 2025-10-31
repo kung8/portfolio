@@ -18,6 +18,11 @@ const {
     WHITE_SUGAR,
 } = require('./ingredients');
 
+const SUGAR_MIXTURE = 'Sugar Mixture';
+const PEANUT_BUTTER_AND_OAT = 'Peanut Butter and Oat';
+
+const COOK_SUGAR_MIXTURE = 'Cook Sugar Mixture';
+
 module.exports = {
     cardName: 'No Bake Cookies',
     name: 'No Bake Cookies',
@@ -42,16 +47,17 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COCOA_POWDER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PEANUT_BUTTER, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...STEEL_OATS, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUGAR_MIXTURE },
+        { ...WHITE_SUGAR, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUGAR_MIXTURE },
+        { ...COCOA_POWDER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUGAR_MIXTURE },
+        { ...MILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUGAR_MIXTURE },
+        
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PEANUT_BUTTER_AND_OAT },
+        { ...PEANUT_BUTTER, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PEANUT_BUTTER_AND_OAT },
+        { ...STEEL_OATS, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PEANUT_BUTTER_AND_OAT },
+        { ...SALT, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PEANUT_BUTTER_AND_OAT },
     ],
     appliances: [
         STOVE,
@@ -61,14 +67,18 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: 'Add sugar, cocoa, butter and milk into a saucepan.', section: SECTIONS.MAIN, img: cookie1 },
-        { step: 'Over medium heat, melt down and stir frequently until it boils.', section: SECTIONS.MAIN, img: cookie2 },
-        { step: 'Let it boils for about 60 seconds.', section: SECTIONS.MAIN },
-        { step: 'Remove from heat. Add vanilla and peanut butter.', section: SECTIONS.MAIN },
-        { step: 'Add oats and salt.', section: SECTIONS.MAIN, img: cookie3 },
-        { step: 'Mix well.', section: SECTIONS.MAIN },
-        { step: 'Spoon and shape dough balls onto plates.', section: SECTIONS.MAIN },
-        { step: 'Let it set for 20 to 30 minutes in the refrigerator.', section: SECTIONS.MAIN },
+        { step: `In a saucepan, combine the "${SUGAR_MIXTURE}" section ingredients.`, section: COOK_SUGAR_MIXTURE, img: cookie1 },
+        { step: 'Over medium heat, melt sugar mixture. Stir frequently until it boils.', section: COOK_SUGAR_MIXTURE, img: cookie2 },
+        { step: 'Let it boils for about 1 minute.', section: COOK_SUGAR_MIXTURE },
+        { step: 'Remove from heat.', section: COOK_SUGAR_MIXTURE },
+
+        { step: `Add the "${PEANUT_BUTTER_AND_OAT}" section ingredients. Mix.`, section: SECTIONS.MIX, img: cookie3 },
+
+        { step: 'Spoon and shape dough balls onto plates.', section: SECTIONS.FORM_BALLS },
+
+        { step: 'Let it set for 20 to 30 minutes in the refrigerator.', section: SECTIONS.CHILL },
+        
+        { step: 'Enjoy!', section: SECTIONS.SERVE },
     ],
     store: [
         {

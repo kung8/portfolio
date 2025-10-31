@@ -354,6 +354,7 @@ const SECTIONS = {
     BASTE: 'Baste',
     TRANSFER: 'Transfer',
     CREAM_BUTTER: 'Cream Butter',
+    FORM_BALLS: 'Form Balls',
 };
 
 const STORAGE_CONTAINER = {
