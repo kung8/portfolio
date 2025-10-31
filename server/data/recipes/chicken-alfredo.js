@@ -47,19 +47,25 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...FETTUCCINE_NOODLES, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RED_BELL_PEPPER, amount: 2, unit: '', additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.MAIN },
-        { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...HEAVY_CREAM, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...NUTMEG, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...PARMESAN_CHEESE, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.MAIN },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...FETTUCCINE_NOODLES, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
+        { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: 'for tossing', section: SECTIONS.NOODLES },
+
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: 'cut into 1/4-inch slices', section: SECTIONS.CHICKEN },
+        
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...RED_BELL_PEPPER, amount: 2, unit: '', additionalDetails: 'diced', section: SECTIONS.VEGGIES },
+        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.VEGGIES },
+
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HEAVY_CREAM, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...NUTMEG, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.SAUCE },
+
+        { ...PARMESAN_CHEESE, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.CHEESE },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHEESE },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHEESE },
     ],
     appliances: [
         STOVE,
@@ -75,19 +81,30 @@ module.exports = {
         COLANDER,
     ],
     directions: [
-        { step: 'Prep the vegetables and set in a small bowl. Then cut the chicken into 1/4" slices and season with salt and pepper.', section: SECTIONS.MAIN },
-        { step: 'In a large pot, bring water and salt to a boil.', section: SECTIONS.MAIN },
-        { step: 'Add pasta to pot and cook until al dente (tender but center is still a little firm).', section: SECTIONS.MAIN },
-        { step: 'Drain in a colander/strainer and save some of the starchy water for later.', section: SECTIONS.MAIN },
-        { step: 'In a large mixing bowl, add the pasta and toss with a little oil.', section: SECTIONS.MAIN },
-        { step: 'In a pan over medium heat, melt 1 Tbsp of butter.', section: SECTIONS.MAIN },
-        { step: 'Once butter melts, brown chicken in a pan over medium-high heat, 2 to 3 minutes per side. Make sure that it\'s cooked through, cook chicken in batches if necessary.', section: SECTIONS.MAIN },
-        { step: 'Once chicken is cooked, place in a medium bowl.', section: SECTIONS.MAIN },
-        { step: 'Saute the vegetables with a little bit of butter in the same pan that the chicken was cooked in. Add the vegetables in with the chicken.', section: SECTIONS.MAIN },
-        { step: 'In the same pan over medium heat, melt the remaining butter.', section: SECTIONS.MAIN },
-        { step: 'Mix together heavy cream and nutmeg before pouring into the pan and cook until it simmers, then for another 2 minutes.', section: SECTIONS.MAIN },
-        { step: 'Set to a low heat and slowly mix in the parmesan, chicken, veggies, pasta, a little starchy noodle water, salt and pepper.', section: SECTIONS.MAIN },
-        { step: 'Serve and enjoy the nostalgic creamy, delicious chicken alfredo!', section: SECTIONS.MAIN },
+        { step: 'Season sliced chicken with salt and pepper.', section: SECTIONS.PREP_CHICKEN },
+
+        { step: 'In a large pot, bring water and salt to a boil.', section: SECTIONS.COOK_NOODLES },
+        { step: 'Add pasta to pot and cook until al dente (tender but center is still a little firm).', section: SECTIONS.COOK_NOODLES },
+        { step: 'Drain in a colander and save some of the starchy water for later.', section: SECTIONS.COOK_NOODLES },
+        { step: 'In a large mixing bowl, add the pasta and toss with a little oil.', section: SECTIONS.COOK_NOODLES },
+
+        { step: 'Over medium-high heat, melt butter in a pan.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Brown chicken for 2 to 3 minutes per side. Cook chicken in batches if necessary.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Transfer cooked chicken to a medium bowl.', section: SECTIONS.COOK_CHICKEN },
+
+        { step: `In the same pan, melt butter.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Saute the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Set the vegetables aside with the chicken.`, section: SECTIONS.COOK_VEGGIES },
+
+        { step: 'In the same pan, melt the butter.', section: SECTIONS.COOK_SAUCE },
+        { step: 'In a bowl, combine heavy cream and nutmeg. Add to pan.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Bring to a simmer.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Cook for another 2 minutes.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Reduce to low heat.', section: SECTIONS.COOK_SAUCE },
+
+        { step: 'Slowly mix everything together including the starchy noodle water.', section: SECTIONS.ASSEMBLE },
+
+        { step: 'Serve and enjoy the nostalgic creamy, delicious chicken alfredo!', section: SECTIONS.SERVE },
     ],
     store: [
         {

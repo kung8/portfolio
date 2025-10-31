@@ -269,6 +269,7 @@ const SECTIONS = {
     DIPPING_SAUCE: 'Dipping Sauce',
     HERBS: 'Herbs',
     OIL: 'Oil',
+    CHEESE: 'Cheese',
 
     MARINATE_CHICKEN: 'Marinate Chicken',
     MARINATE_BEEF: 'Marinate Beef',
