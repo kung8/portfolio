@@ -34,7 +34,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...PLAIN_YOGURT, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PARFAIT_SECTION },
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: PARFAIT_SECTION },

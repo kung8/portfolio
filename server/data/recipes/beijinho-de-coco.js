@@ -27,7 +27,6 @@ module.exports = {
             finder: 'Sarah Miller', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
     ],

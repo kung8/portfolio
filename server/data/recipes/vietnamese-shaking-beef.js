@@ -42,7 +42,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...BEEF_RIBEYE_STEAK, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1 inch cubes', section: SECTIONS.MARINADE },
         { ...GARLIC, amount: 10, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MARINADE },

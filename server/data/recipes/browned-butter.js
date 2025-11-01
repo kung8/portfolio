@@ -25,7 +25,6 @@ module.exports = {
             finder: 'Justin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...DRY_MILK_POWDER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'optional', section: SECTIONS.MAIN },

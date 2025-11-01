@@ -36,7 +36,6 @@ module.exports = {
             finder: 'Kasra Kamravani\'s Mom', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUTE },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'finely chopped', section: SECTIONS.SAUTE },

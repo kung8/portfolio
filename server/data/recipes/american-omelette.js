@@ -59,7 +59,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: OMELETTE_SECTION },
         { ...WATER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'cold', section: OMELETTE_SECTION },

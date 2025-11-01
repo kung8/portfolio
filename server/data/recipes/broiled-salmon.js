@@ -26,7 +26,6 @@ module.exports = {
     websites: [
         { label: 'Broiled Salmon', link: 'https://www.allrecipes.com/recipe/134137/delicious-salmon/', authors: ['campagnes'], finder: 'Kevin Ung' }
     ],
-    separated: true,
     ingredients: [
         { ...LIGHT_SOY_SAUCE, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...OLIVE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },

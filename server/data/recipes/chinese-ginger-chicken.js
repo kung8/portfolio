@@ -49,7 +49,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...GINGER, amount: 4, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'peeled and cut into long thin strips', section: GINGER_SECTION },
 

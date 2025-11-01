@@ -54,7 +54,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         },
     ],
-    separated: true,
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: 11 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...CREAM_OF_TARTAR, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },

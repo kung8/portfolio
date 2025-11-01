@@ -32,7 +32,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...RYE_BREAD, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_SECTION },
         { ...THOUSAND_ISLAND_DRESSING, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SANDWICH_SECTION },

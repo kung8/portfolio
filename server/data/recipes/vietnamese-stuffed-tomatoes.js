@@ -41,7 +41,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...GROUND_PORK, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
         { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.FILLING },

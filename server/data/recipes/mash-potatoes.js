@@ -36,8 +36,6 @@ module.exports = {
             finder: 'Justin Ung', 
         }
     ],
-    separated: true,
-
     ingredients: [
         { ...YUKON_GOLD_POTATO, amount: 2, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'peeled', section: POTATOES_SECTION },
         { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: LIQUIDS_SECTION },

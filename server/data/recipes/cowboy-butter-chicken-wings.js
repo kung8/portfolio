@@ -36,7 +36,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...CHICKEN_WINGS, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },

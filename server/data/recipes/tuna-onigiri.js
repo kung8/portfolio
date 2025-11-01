@@ -41,7 +41,6 @@ module.exports = {
             finder: 'Samantha Pham', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...SHORT_GRAINED_RICE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked', section: SECTIONS.RICE },
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.RICE },

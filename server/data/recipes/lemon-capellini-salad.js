@@ -29,7 +29,6 @@ module.exports = {
             finder: 'Justin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...ANGEL_HAIR_PASTA, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.PASTA },
 

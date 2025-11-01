@@ -27,7 +27,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...CELERY, amount: 4, unit: INGREDIENT_UNITS.STALK, additionalDetails: '', section: SECTIONS.VEGGIES },
         { ...RAISINS, amount: '', unit: '', additionalDetails: 'topping', section: SECTIONS.TOPPINGS },

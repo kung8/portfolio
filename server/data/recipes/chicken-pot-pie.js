@@ -51,7 +51,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...CHICKEN_BREAST, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiled and cut into 1/2 inch pieces', section: SECTIONS.CHICKEN },
 

@@ -44,7 +44,6 @@ module.exports = {
             finder: 'Kevin Ung',
         }
     ],
-    separated: true,
     ingredients: [
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
         { ...RED_BELL_PEPPER, amount: 2, unit: '', additionalDetails: 'sliced strips', section: SECTIONS.VEGGIES },

@@ -33,7 +33,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...BREAKFAST_SAUSAGE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SAUSAGE_BALL_SECTION },
         { ...KODIAK_CAKE_MIX, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUSAGE_BALL_SECTION },

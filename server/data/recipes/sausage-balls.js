@@ -28,7 +28,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...SAUSAGE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'bulk', section: '' },
         { ...CHEDDAR_CHEESE, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'shredded', section: '' },

@@ -33,7 +33,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...MAYONNAISE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.SAUCE },

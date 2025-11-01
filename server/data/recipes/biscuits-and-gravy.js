@@ -52,7 +52,6 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 20, unit: TIME_UNITS.MINUTE },
-    separated: true,
     websites: [
         { 
             label: 'Sausage Gravy', 

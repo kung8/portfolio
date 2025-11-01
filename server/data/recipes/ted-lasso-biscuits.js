@@ -35,7 +35,6 @@ module.exports = {
             finder: 'Justin Ung',
         },
     ],
-    separated: true,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'at room temperature', section: SECTIONS.BATTER },
         { ...POWDERED_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BATTER },

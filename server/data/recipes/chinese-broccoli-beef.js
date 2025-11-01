@@ -58,7 +58,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: BEEF_SECTION },
         { ...WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: BEEF_SECTION },

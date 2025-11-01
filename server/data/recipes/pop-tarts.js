@@ -35,7 +35,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...REFRIGERATED_PIE_CRUST, amount: 1, unit: '', additionalDetails: '', section: POP_TARTS_SECTION },
         { ...STRAWBERRY_JAM, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: POP_TARTS_SECTION },

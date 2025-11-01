@@ -41,7 +41,6 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 4, unit: TIME_UNITS.HOUR },
-    separated: true,
     websites: [
         { 
             label: 'Cilantro Lime Chicken Wings', 

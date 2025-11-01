@@ -39,7 +39,6 @@ module.exports = {
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
-    separated: true,
     websites: [
         { 
             label: 'Lemon Chicken', 

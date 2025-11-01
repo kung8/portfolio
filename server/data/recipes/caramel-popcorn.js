@@ -33,7 +33,6 @@ module.exports = {
             finder: 'Kevin Ung',
         }
     ],
-    separated: true,
     ingredients: [
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: POPCORN_SECTION },
         { ...POPCORN, amount: 4, unit: INGREDIENT_UNITS.QUART, additionalDetails: 'popped', section: POPCORN_SECTION },

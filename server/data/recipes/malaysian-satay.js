@@ -48,7 +48,6 @@ module.exports = {
     prepTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 6, unit: TIME_UNITS.HOUR },
-    separated: true,
     websites: [
         { 
             label: 'Chicken Satay', 

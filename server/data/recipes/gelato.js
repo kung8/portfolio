@@ -29,7 +29,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...WHOLE_MILK, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: GELATO_SECTION },
         { ...EGG_YOLK, amount: 5, unit: '', additionalDetails: '', section: GELATO_SECTION },

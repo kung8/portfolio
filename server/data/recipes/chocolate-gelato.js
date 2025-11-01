@@ -42,7 +42,6 @@ module.exports = {
             finder: 'Justin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...WHOLE_MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'room temperature', section: MILK_MIXTURE_SECTION },
         { ...HEAVY_CREAM, amount: 1.25, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MILK_MIXTURE_SECTION },

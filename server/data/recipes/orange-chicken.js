@@ -39,7 +39,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...ORANGE_JUICE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ORANGE_SAUCE },
         { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ORANGE_SAUCE },

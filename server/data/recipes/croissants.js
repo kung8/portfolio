@@ -39,7 +39,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...MILK, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'lukewarm', section: DOUGH_SECTION },
         { ...BROWN_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },

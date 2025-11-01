@@ -31,7 +31,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...BUTTERNUT_SQUASH, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'peeled, seeded and 1" cubes', section: SQUASH_SECTION },
         { ...SWEET_POTATO, amount: 2, unit: '', additionalDetails: 'peeled and 1" cubes', section: SQUASH_SECTION },

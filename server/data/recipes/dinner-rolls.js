@@ -31,7 +31,6 @@ module.exports = {
             finder: 'Nanette Marx'
         }
     ],
-    separated: true,
     ingredients: [
         { ...YEAST, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: YEAST_MIXTURE },
         { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: YEAST_MIXTURE },

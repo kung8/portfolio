@@ -56,7 +56,6 @@ module.exports = {
             finder: 'Kevin Ung',
         }
     ],
-    separated: true,
     ingredients: [
         { ...GROUND_PORK, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.FILLING },

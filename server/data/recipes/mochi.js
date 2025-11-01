@@ -34,7 +34,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...MOCHIKO, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MOCHI },
         { ...WHITE_SUGAR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MOCHI },

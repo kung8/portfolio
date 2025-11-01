@@ -43,7 +43,6 @@ module.exports = {
             finder: 'Aldin Pope'
         }
     ],
-    separated: true,
     ingredients: [
         { ...SEAWEED, amount: 8, unit: INGREDIENT_UNITS.SHEET, additionalDetails: '', section: SECTIONS.MAIN },
         { ...SUSHI_RICE, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooled to room temperature', section: SECTIONS.RICE },

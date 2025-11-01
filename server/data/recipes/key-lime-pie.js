@@ -34,7 +34,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...EGG_YOLK, amount: 5, unit: '', additionalDetails: 'beaten', section: SECTIONS.FILLING },
         { ...SWEETENED_CONDENSED_MILK, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },

@@ -40,7 +40,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...ICE_CREAM, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'any flavor', section: MOCHI_SECTION },
         { ...MOCHIKO, amount: 11, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: MOCHI_SECTION },

@@ -41,7 +41,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...GARLIC, amount: 5, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'peeled', section: GINGER_PASTE_SECTION },
         { ...SHALLOT, amount: 1, unit: '', additionalDetails: 'chopped', section: GINGER_PASTE_SECTION },

@@ -44,7 +44,6 @@ module.exports = {
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
-    separated: true,
     websites: [
         { 
             label: 'Pho', 

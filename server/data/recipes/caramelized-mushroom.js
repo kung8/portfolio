@@ -41,7 +41,6 @@ module.exports = {
             finder: 'Justin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CARAMELIZED_MUSHROOMS },
         { ...MUSHROOM, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: CARAMELIZED_MUSHROOMS },

@@ -35,7 +35,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
         { ...GROUND_PORK, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: MINCED_MEAT_SECTION },

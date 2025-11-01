@@ -32,7 +32,6 @@ module.exports = {
             finder: 'Montana Hiltbrand', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...LIME, amount: 4, unit: '', additionalDetails: '', section: BLENDED_SECTION },
         { ...WATER, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BLENDED_SECTION },

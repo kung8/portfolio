@@ -48,7 +48,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...CHICKEN_DRUMETTES, amount: 14, unit: INGREDIENT_UNITS.PIECE, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...BAKING_SODA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MARINADE },

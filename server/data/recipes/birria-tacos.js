@@ -39,7 +39,6 @@ module.exports = {
             finder: 'Lauren Maliwauki', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...AVOCADO_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BEEF },
         { ...BEEF_CHUCK_ROAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'boneless', section: SECTIONS.BEEF },

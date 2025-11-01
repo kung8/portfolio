@@ -40,7 +40,6 @@ module.exports = {
             finder: 'Kevin Ung',
         }
     ],
-    separated: true,
     ingredients: [
         { ...POPCORN, amount: 5, unit: INGREDIENT_UNITS.QUART, additionalDetails: 'plain', section: POPCORN_SECTION },
 

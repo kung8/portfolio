@@ -31,7 +31,6 @@ module.exports = {
             finder: 'Delia Delector'
         }
     ],
-    separated: true,
     ingredients: [
         { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2 inch pieces', section: SECTIONS.MARINADE },
         { ...CURRY_POWDER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },

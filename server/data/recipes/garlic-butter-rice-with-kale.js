@@ -37,7 +37,6 @@ module.exports = {
             finder: 'Kevin Ung',
         }
     ],
-    separated: true,
     ingredients: [
         { ...KALE, amount: 7, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'just leaves', section: KALE_SECTION },
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: KALE_SECTION },

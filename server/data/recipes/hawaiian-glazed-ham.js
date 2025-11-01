@@ -32,7 +32,6 @@ module.exports = {
             finder: 'Hoku\'s Grammy'
         }
     ],
-    separated: true,
     ingredients: [
         { ...BONE_IN_HAM, amount: 15, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: HAM_SECTION },
         { ...YELLOW_MUSTARD, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: HAM_SECTION },

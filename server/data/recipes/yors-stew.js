@@ -51,7 +51,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SEARING_SECTION },
         { ...PORK_BUTT, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'boneless, bite size cubes', section: SEARING_SECTION },

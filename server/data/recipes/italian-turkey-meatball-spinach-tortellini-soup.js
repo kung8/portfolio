@@ -58,7 +58,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...GROUND_TURKEY, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: MEATBALLS },
         { ...BREADCRUMBS, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: MEATBALLS },

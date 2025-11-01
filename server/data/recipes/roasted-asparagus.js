@@ -30,7 +30,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...ASPARAGUS, amount: 1, unit: INGREDIENT_UNITS.BUNCH, additionalDetails: '', section: SECTIONS.MAIN },
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },

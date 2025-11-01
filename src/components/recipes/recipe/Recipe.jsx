@@ -113,8 +113,8 @@ export const Recipe = ({ match }) => {
         // eslint-disable-next-line
     }, []);
 
-    const separatedIngredients = !!item?.separated && localIngredients &&
-        localIngredients.reduce((acc, ingredient) => {
+    const formattedIngredients = useMemo(() => {
+        const newFormattedIngredients = localIngredients.reduce((acc, ingredient) => {
             if (!ingredient.id) ingredient.id = generateUUID();
             if (ingredient.section && !acc[ingredient.section]) acc[ingredient.section] = [];
             if (ingredient.section && acc[ingredient.section]) {
@@ -128,26 +128,25 @@ export const Recipe = ({ match }) => {
             return acc;
         }, {});
 
-    const formatSeparatedIngredients = () => {
         const finalIngredients = [];
-        for (const key in separatedIngredients) {
+        for (const key in newFormattedIngredients) {
             if (key === 'Other') continue;
-            const ingredients = separatedIngredients[key];
+            const ingredients = newFormattedIngredients[key];
             finalIngredients.push([key, ingredients]);
         }
         // add the 'Other' section at the end
-        if (separatedIngredients['Other']) {
-            const otherIngredients = separatedIngredients['Other'];
+        if (newFormattedIngredients['Other']) {
+            const otherIngredients = newFormattedIngredients['Other'];
             finalIngredients.push(['Other', otherIngredients]);
         }
         return finalIngredients;
-    }
+    }, [generateUUID, localIngredients]);
 
-    const formattedIngredients = separatedIngredients && formatSeparatedIngredients();
+    const formattedDirections = useMemo(() => {
+        if (!item?.directions) return null;
 
-    const formatSeparatedDirections = () => {
         let figureCount = 1;
-        const separatedDirections = item.directions.reduce((acc, direction) => {
+        const newFormattedDirections = item.directions.reduce((acc, direction) => {
             if (direction.section && !acc[direction.section]) acc[direction.section] = [];
             if (direction.section && acc[direction.section]) {
                 const newDirection = { ...direction };
@@ -175,25 +174,22 @@ export const Recipe = ({ match }) => {
 
         const finalDirections = [];
 
-        for (const key in separatedDirections) {
+        for (const key in newFormattedDirections) {
             if (key === 'Other') continue;
-            const directions = separatedDirections[key];
+            const directions = newFormattedDirections[key];
             finalDirections.push([key, directions]);
         }
 
         // add the 'Other' section at the end
-        if (separatedDirections['Other']) {
-            const otherIngredients = separatedDirections['Other'];
+        if (newFormattedDirections['Other']) {
+            const otherIngredients = newFormattedDirections['Other'];
             finalDirections.push(['Other', otherIngredients]);
         }
 
         return finalDirections;
-    }
-
-    const formattedDirections = !!item?.separated && item?.directions ? formatSeparatedDirections() : null;
+    }, [item?.directions]);
 
     const figures = formattedDirections?.flat(2)?.filter(step => step.video || step.img) ?? [];
-    const nonSeparatedFigures = item?.directions?.filter(step => step.video || step.img) ?? [];
 
     useEffect(() => {
         if (selectedFigure) {
@@ -311,7 +307,6 @@ export const Recipe = ({ match }) => {
                     handleCloseImageModal,
                     item,
                     localIngredients,
-                    nonSeparatedFigures,
                     openRecipeImageModal,
                     selectedIngredients,
                     selectedRecipeImage,

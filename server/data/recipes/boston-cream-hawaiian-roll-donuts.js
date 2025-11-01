@@ -48,7 +48,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...HAWAIIAN_ROLLS, amount: 12, unit: '', additionalDetails: '', section: ROLLS_SECTION },
         { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: ROLLS_SECTION },

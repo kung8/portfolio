@@ -49,7 +49,6 @@ module.exports = {
             finder: 'Jon Browne', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...CHICKEN_THIGH, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'halved', section: SECTIONS.CHICKEN },
         { ...YOGURT, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CHICKEN },

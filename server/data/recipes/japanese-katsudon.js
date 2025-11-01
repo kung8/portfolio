@@ -46,7 +46,6 @@ module.exports = {
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
-    separated: true,
     websites: [
         { 
             label: 'Katsudon', 

@@ -55,7 +55,6 @@ module.exports = {
             finder: 'Kevin Ung',
         }
     ],
-    separated: true,
     ingredients: [
         { ...BANANA, amount: 3, unit: '', additionalDetails: '', section: BANANA_SECTION },
 

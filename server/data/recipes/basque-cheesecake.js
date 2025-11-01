@@ -38,7 +38,6 @@ module.exports = {
             finder: 'Sam Giraud-Carrier', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...CREAM_CHEESE, amount: 36, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'room temperature', section: CREAM_CHEESE_MIXTURE },
         { ...WHITE_SUGAR, amount: 5 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CREAM_CHEESE_MIXTURE },

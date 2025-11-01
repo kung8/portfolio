@@ -38,7 +38,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...OLIVE_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: VEGGIES_SECTION },
         { ...CARROT, amount: 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'thinly sliced', section: VEGGIES_SECTION },

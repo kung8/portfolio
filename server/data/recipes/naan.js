@@ -44,7 +44,6 @@ module.exports = {
             finder: 'Justin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: ACTIVATE_YEAST },
         { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: ACTIVATE_YEAST },

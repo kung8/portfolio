@@ -49,7 +49,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...PORK_BELLY, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'skin on', section: PORK_BELLY_SECTION },
 

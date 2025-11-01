@@ -32,7 +32,6 @@ module.exports = {
             finder: 'Darci Billmire'
         }
     ],
-    separated: true,
     ingredients: [
         { ...BEEF_NEW_YORK_STRIP, amount: 2, unit: INGREDIENT_UNITS.PIECE, additionalDetails: '', section: SECTIONS.BEEF },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },

@@ -40,7 +40,6 @@ module.exports = {
             finder: 'Kevin Ung',
         },
     ],
-    separated: true,
     ingredients: [
         { ...GRANNY_SMITH_APPLE, amount: 8, unit: '', additionalDetails: '', section: APPLES_SECTION },
         { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },

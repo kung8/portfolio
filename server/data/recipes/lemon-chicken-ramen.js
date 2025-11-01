@@ -33,7 +33,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: 'halved', section: SECTIONS.CHICKEN },
         { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CHICKEN },

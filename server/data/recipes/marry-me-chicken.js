@@ -47,7 +47,6 @@ module.exports = {
             finder: 'Montana Hiltbrand', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'butterflied or cut in half', section: SECTIONS.CHICKEN },
         { ...SALT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },

@@ -33,7 +33,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...PINEAPPLE, amount: 1, unit: '', additionalDetails: 'peeled and cut into 3/4 inch slices', section: PINEAPPLE_SECTION },
 

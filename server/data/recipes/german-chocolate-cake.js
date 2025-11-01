@@ -47,7 +47,6 @@ module.exports = {
     websites: [
         { label: 'German Chocolate Cake', link: 'https://tastesbetterfromscratch.com/german-chocolate-cake/', authors: ['Lauren Allen'], finder: 'Kevin Ung' }
     ],
-    separated: true,
     ingredients: [
         { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHOCOLATE_CAKE_DRY_INGREDIENTS_SECTION },
         { ...ALL_PURPOSE_FLOUR, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHOCOLATE_CAKE_DRY_INGREDIENTS_SECTION },

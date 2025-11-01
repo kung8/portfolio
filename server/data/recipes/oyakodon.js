@@ -45,7 +45,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'thinly sliced', section: SECTIONS.MAIN },
         { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'thin strips', section: SECTIONS.MAIN },

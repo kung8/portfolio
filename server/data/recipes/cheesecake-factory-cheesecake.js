@@ -58,7 +58,6 @@ module.exports = {
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 2, unit: TIME_UNITS.HOUR },
     waitTime: { amount: 5, unit: TIME_UNITS.HOUR },
-    separated: true,
     websites: [
         { 
             label: 'Cheesecake Factory Copycat', 

@@ -42,7 +42,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: MEATBALL_SECTION },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: MEATBALL_SECTION },

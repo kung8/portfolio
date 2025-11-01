@@ -60,7 +60,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         },
     ],
-    separated: true,
     ingredients: [
         { ...CHICKEN_THIGH, amount: 6, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'bone-in', section: SECTIONS.CHICKEN },
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },

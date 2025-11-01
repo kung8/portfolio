@@ -38,7 +38,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...PANCAKE_MIX, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'or enough to make about 16 3-inch pancakes', section: MCGRIDDLE_PANCAKE_SECTION },
         { ...EGG, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.FILLING },

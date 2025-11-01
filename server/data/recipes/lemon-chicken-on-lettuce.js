@@ -45,7 +45,6 @@ module.exports = {
             finder: 'Lily Lim'
         }
     ],
-    separated: true,
     ingredients: [
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.CHICKEN },

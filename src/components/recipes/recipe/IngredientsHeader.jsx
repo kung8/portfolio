@@ -3,7 +3,7 @@ import { useRecipeContext } from './RecipeContext';
 
 export const IngredientsHeader = () => {
     const { conversionRate, formattedIngredients, handleAddIngredientsToGroceryListModalOpen, item, localIngredients, selectedIngredients, setSelectedIngredients } = useRecipeContext();
-    const separated = item.separated;
+
     return (
         <div className="recipe-ingredients-label-container">
             <h4 className={`recipe-detail-label ${getRecipeFontSizeClass()}`}>Ingredients:</h4>
@@ -14,13 +14,8 @@ export const IngredientsHeader = () => {
                         if (selectedIngredients.length === localIngredients.length) {
                             setSelectedIngredients([]);
                         } else {
-                            if (separated) {
-                                const newIngredients = Object.values(formattedIngredients).flatMap((group) => group[1].map(ingredient => getIngredientData(item.name, ingredient, ingredient.id)));
-                                setSelectedIngredients(newIngredients);
-                            } else {
-                                const newIngredients = localIngredients.map((ingredient) => getIngredientData(item.name, ingredient, ingredient.id));
-                                setSelectedIngredients(newIngredients);
-                            }
+                            const newIngredients = Object.values(formattedIngredients).flatMap((group) => group[1].map(ingredient => getIngredientData(item.name, ingredient, ingredient.id)));
+                            setSelectedIngredients(newIngredients);
                         }
                     }}
                 >

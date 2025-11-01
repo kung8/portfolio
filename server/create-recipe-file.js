@@ -209,18 +209,6 @@ const createPrompt = async () => {
         },
         {
             type: 'confirm',
-            name: 'separated',
-            message: 'Is the recipe separated?',
-            default: true,
-            validate: (separated) => {
-                if (separated !== 'y' && separated !== 'n') {
-                    return 'Please enter y or n.';
-                }
-                return true;
-            }
-        },
-        {
-            type: 'confirm',
             name: 'available',
             message: 'Is the recipe available?',
             default: true,
@@ -263,7 +251,6 @@ const createPrompt = async () => {
             .replace(/'{{waitTimeUnit}}'/g, matchingWaitTimeUnit)
             .replace(/{{label}}/g, answers.label)
             .replace(/{{link}}/g, answers.link)
-            .replace(/'{{separated}}'/g, answers.separated)
             .replace(/'{{available}}'/g, answers.available)
 
         // create the new recipe file

@@ -51,7 +51,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'chopped', section: SECTIONS.VEGGIES },
         { ...CARROT, amount: 2, unit: '', additionalDetails: 'chopped', section: SECTIONS.VEGGIES },

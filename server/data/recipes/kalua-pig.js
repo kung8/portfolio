@@ -28,7 +28,6 @@ module.exports = {
             finder: 'Andrew Luke'
         }
     ],
-    separated: true,
     ingredients: [
         { ...PORK_BUTT, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'or shoulder', section: SECTIONS.PORK },
         { ...LIQUID_SMOKE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.PORK },

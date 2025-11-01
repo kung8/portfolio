@@ -31,7 +31,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...RITZ_CRACKERS, amount: 32, unit: '', additionalDetails: '', section: '' },
         { ...HAVARTI_CHEESE, amount: 6, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'cut into cracker sized squares', section: '' },

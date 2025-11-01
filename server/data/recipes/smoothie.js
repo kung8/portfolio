@@ -35,7 +35,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...BANANA, amount: 2, unit: '', additionalDetails: '', section: SMOOTHIE_SECTION },
         { ...PEANUT_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SMOOTHIE_SECTION },

@@ -29,7 +29,6 @@ module.exports = {
             finder: 'Steve Kenny', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 16, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TOFFEE_SAUCE },
         { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TOFFEE_SAUCE },

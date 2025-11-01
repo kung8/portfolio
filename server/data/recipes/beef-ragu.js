@@ -38,7 +38,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...BEEF_CHUCK_ROAST, amount: 5 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 4 pieces', section: SECTIONS.BEEF },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BEEF },

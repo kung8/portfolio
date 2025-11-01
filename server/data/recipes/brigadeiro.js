@@ -36,7 +36,6 @@ module.exports = {
             finder: 'Sarah Miller', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...SWEETENED_CONDENSED_MILK, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: BRIGADEIRO_SECTION },
         { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BRIGADEIRO_SECTION },

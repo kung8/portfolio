@@ -36,7 +36,6 @@ module.exports = {
             finder: 'Justin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...BAGUETTE, amount: 1, unit: '', additionalDetails: 'sliced diagonally, 1/4 inch thick', section: BAGUETTE_SECTION },
         { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: BAGUETTE_SECTION },

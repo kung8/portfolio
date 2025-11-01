@@ -34,7 +34,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...AVOCADO, amount: 1, unit: '', additionalDetails: 'peeled, pitted and diced', section: AVOCADO_TOMATO_SALSA_SECTION },
         { ...VINE_TOMATO, amount: 2, unit: '', additionalDetails: 'diced seeded parts', section: AVOCADO_TOMATO_SALSA_SECTION },

@@ -28,7 +28,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...SALMON_FISH, amount: 2, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'skinless, boneless', section: SECTIONS.FISH },
         { ...LEMON_JUICE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FISH },

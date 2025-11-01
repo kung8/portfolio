@@ -33,7 +33,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...TORTILLA, amount: 1, unit: '', additionalDetails: '', section: WRAP_SECTION },
         { ...COOKED_HAM, amount: 4, unit: '', additionalDetails: 'preferred', section: SECTIONS.FILLING },

@@ -34,7 +34,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...WAFFLE_CONE, amount: 12, unit: '', additionalDetails: '', section: TACO_SHELL },
         { ...VANILLA_ICE_CREAM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.FILLING },

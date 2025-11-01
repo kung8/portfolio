@@ -41,7 +41,6 @@ module.exports = {
         //     finder: 'Kevin Ung', 
         // }
     ],
-    separated: true,
     ingredients: [
         { ...BISCOFF_COOKIES, amount: 30, unit: '', additionalDetails: '', section: SECTIONS.CRUST },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.CRUST },

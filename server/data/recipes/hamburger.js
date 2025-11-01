@@ -37,7 +37,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...GROUND_TURKEY, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },

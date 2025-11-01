@@ -38,7 +38,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...PEANUT_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRESSING },
         { ...LIME, amount: 1, unit: '', additionalDetails: 'juiced', section: SECTIONS.DRESSING },

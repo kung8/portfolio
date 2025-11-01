@@ -42,7 +42,6 @@ module.exports = {
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
-    separated: true,
     websites: [
         { 
             label: 'Panera Broccoli Cheese Soup', 

@@ -54,7 +54,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...CHICKEN_THIGH, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2 inches', section: SECTIONS.CHICKEN },
         { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },

@@ -44,7 +44,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...OLIVE_OIL, amount: 3, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },

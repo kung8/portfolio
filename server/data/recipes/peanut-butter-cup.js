@@ -40,7 +40,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...MILK_CHOCOLATE_CHIPS, amount: 23, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: CHOCOLATE_SECTION },
         { ...PEANUT_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },

@@ -49,7 +49,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: EGG_BATTER },
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: EGG_BATTER },

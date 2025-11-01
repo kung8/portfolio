@@ -26,7 +26,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...CROISSANT_DOUGH, amount: 2, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', section: PIGS_IN_A_BLANKET },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: PIGS_IN_A_BLANKET },

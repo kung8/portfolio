@@ -27,7 +27,6 @@ module.exports = {
             finder: '', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
     ],

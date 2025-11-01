@@ -38,7 +38,6 @@ module.exports = {
             finder: 'Kevin Ung',
         }
     ],
-    separated: true,
     ingredients: [
         { ...CHICKEN_BOUILLON_CUBE, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.BROTH },
         { ...BEEF_BOUILLON_CUBE, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.BROTH },

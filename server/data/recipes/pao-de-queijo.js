@@ -54,7 +54,6 @@ module.exports = {
             finder: 'Kevin Ung',
         }
     ],
-    separated: true,
     ingredients: [
         { ...TAPIOCA_STARCH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'plus some for thickening', section: STARCH_SECTION },
 

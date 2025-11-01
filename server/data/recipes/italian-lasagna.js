@@ -129,7 +129,6 @@ module.exports = {
         COLANDER,
         MIXING_BOWL,
     ],
-    separated: true,
     directions: [
         { step: 'Remove the Italian sausage casing and cut the sausage into small pieces.', section: COOK_SAUSAGE, img: lasagna1 },
         { step: 'Over medium-high heat, heat a large pan.', section: COOK_SAUSAGE },

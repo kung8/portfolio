@@ -29,7 +29,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...CANNED_GREEN_BEANS, amount: 58, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'drained', section: CASSEROLE },
         { ...CREAM_OF_MUSHROOM, amount: 10.5, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: CASSEROLE },

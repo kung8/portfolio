@@ -28,7 +28,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         } // (1.8K)
     ],
-    separated: true,
     ingredients: [
         { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
     ],

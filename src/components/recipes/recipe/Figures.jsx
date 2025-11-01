@@ -22,16 +22,13 @@ const Figure = ({ index, figure }) => {
 };
 
 export const Figures = () => {
-    const { figures, item, nonSeparatedFigures } = useRecipeContext();
-    const separated = item.separated;
+    const { figures } = useRecipeContext();
 
-    return separated && figures ? (
+    if (!figures) return null;
+
+    return (
         <div className="figures-container">
             {figures.map((figure, i) => <Figure key={i} index={i} figure={figure} />)}
         </div>
-    ) : nonSeparatedFigures ? (
-        <div className="figures-container">
-            {nonSeparatedFigures.map((figure, i) => <Figure key={i} index={i} figure={figure} />)}
-        </div>
-    ) : null;
+    );
 };

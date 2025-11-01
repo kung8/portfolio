@@ -55,7 +55,6 @@ module.exports = {
             finder: 'Marco Crosland', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...SWEET_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },
         { ...OYSTER_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MARINADE },

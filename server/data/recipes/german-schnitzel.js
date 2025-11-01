@@ -41,7 +41,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...BONELESS_PORK_CHOPS, amount: 4, unit: '', additionalDetails: '', section: PORK_CHOPS_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: PORK_CHOPS_SECTION },

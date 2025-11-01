@@ -40,7 +40,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...EGG, amount: 2, unit: '', additionalDetails: 'beaten', section: EGG_DREDGE },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: EGG_DREDGE },

@@ -60,7 +60,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...TURKEY, amount: '', unit: '', additionalDetails: 'desired size', section: TURKEY_SECTION },
 

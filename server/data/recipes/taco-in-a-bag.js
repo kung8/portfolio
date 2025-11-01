@@ -46,7 +46,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
         { ...FRITOS_CHIPS, amount: 1, unit: INGREDIENT_UNITS.BAG, additionalDetails: '', section: SECTIONS.MAIN },

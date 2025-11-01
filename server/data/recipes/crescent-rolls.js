@@ -38,7 +38,6 @@ module.exports = {
             finder: 'Grandma Ward'
         }
     ],
-    separated: true,
     ingredients: [
         { ...WATER, amount: 3 / 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: YEAST_MIXTURE },
         { ...YEAST, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: YEAST_MIXTURE },

@@ -50,7 +50,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...CHOCOLATE_INSTANT_PUDDING_MIX, amount: 5.9, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PUDDING_MIXTURE_SECTION },
         { ...MILK, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUDDING_MIXTURE_SECTION },

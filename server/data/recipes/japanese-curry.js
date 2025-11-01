@@ -45,7 +45,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...YELLOW_ONION, amount: 2, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...CARROT, amount: 2, unit: '', additionalDetails: 'rolling wedges', section: SECTIONS.MAIN },

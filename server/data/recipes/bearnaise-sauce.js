@@ -35,7 +35,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...TARRAGON, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'coarsely chopped', section: REDUCTION_SECTION },
         { ...SHALLOT, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'thinly sliced', section: REDUCTION_SECTION },

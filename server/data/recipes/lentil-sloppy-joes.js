@@ -29,7 +29,6 @@ module.exports = {
             finder: 'Chelsey Hickenlooper', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUTE },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'finely diced', section: SECTIONS.SAUTE },

@@ -30,7 +30,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...CINNAMON, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SPICES_SECTION },
         { ...STAR_ANISE, amount: 6, unit: '', additionalDetails: '', section: SPICES_SECTION },

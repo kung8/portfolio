@@ -51,7 +51,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: CAKE_PAN_SECTION },
         { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.SPRINKLE, additionalDetails: '', section: CAKE_PAN_SECTION },

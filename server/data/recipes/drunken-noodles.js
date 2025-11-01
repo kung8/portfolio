@@ -35,7 +35,6 @@ module.exports = {
             finder: 'Amanda Berg', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...SWEET_SOY_SAUCE, amount: 8, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
         { ...OYSTER_SAUCE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },

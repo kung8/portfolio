@@ -66,7 +66,6 @@ module.exports = {
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
     waitTime: { amount: 170, unit: TIME_UNITS.MINUTE },
-    separated: true,
     websites: [
         { 
             label: 'Banh Mi Sandwich', 

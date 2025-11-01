@@ -30,7 +30,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...BACON, amount: 8, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'cut into 1/4 inch pieces', section: SECTIONS.CASSEROLE },
         { ...YUKON_GOLD_POTATO, amount: 5 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled and diced', section: SECTIONS.CASSEROLE },

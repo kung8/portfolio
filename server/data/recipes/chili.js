@@ -45,7 +45,6 @@ module.exports = {
     type: [TYPES.SOUP],
     allergies: [],
     diet: [DIET.GLUTEN_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
-    separated: true,
     websites: [
         { 
             label: 'Chili', 

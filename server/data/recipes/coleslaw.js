@@ -25,7 +25,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...CABBAGE, amount: 1, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'chopped and shredded', section: SECTIONS.MAIN },
         { ...CARROT, amount: 1, unit: '', additionalDetails: 'shredded', section: SECTIONS.MAIN },

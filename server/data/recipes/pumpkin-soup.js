@@ -30,7 +30,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: OTHER_VEGGIES_SECTION },
         { ...CARROT, amount: 2, unit: '', additionalDetails: 'thinly sliced', section: OTHER_VEGGIES_SECTION },

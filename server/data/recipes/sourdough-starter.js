@@ -33,7 +33,6 @@ module.exports = {
             finder: 'Justin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: 7 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'divided', section: CREATING_STARTER },
         { ...WATER, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm and divided', section: CREATING_STARTER },

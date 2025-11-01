@@ -37,7 +37,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SEMI_SWEET_CHOCOLATE_SECTION },
         { ...WHITE_CHOCOLATE_CHIPS, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: WHITE_CHOCOLATE_SECTION },

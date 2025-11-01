@@ -36,7 +36,6 @@ module.exports = {
             finder: 'Lauren Maliwauki', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...SPAGHETTI_NOODLES, amount: 15, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
         { ...ROTISSERIE_CHICKEN, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.SAUCE },

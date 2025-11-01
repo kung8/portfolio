@@ -42,7 +42,6 @@ module.exports = {
             finder: 'Justin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CARAMELIZED_ONIONS },
         { ...RED_ONION, amount: 1, unit: '', additionalDetails: 'thinly sliced', section: CARAMELIZED_ONIONS },

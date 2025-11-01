@@ -39,7 +39,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...CHICKEN_THIGH, amount: 5, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...MCCORMICK_SEASONING_PACKET, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },

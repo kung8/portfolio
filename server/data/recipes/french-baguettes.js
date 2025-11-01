@@ -37,7 +37,6 @@ module.exports = {
             finder: 'Sam Giraud-Carrier'
         }
     ],
-    separated: true,
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BAGUETTES },
         { ...WATER, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: BAGUETTES },

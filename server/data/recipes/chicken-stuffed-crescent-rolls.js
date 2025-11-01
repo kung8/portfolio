@@ -52,7 +52,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...CHICKEN_BREAST, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked and shredded', section: SECTIONS.FILLING },
         { ...MOZZARELLA_CHEESE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.FILLING },

@@ -24,7 +24,6 @@ module.exports = {
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 75, unit: TIME_UNITS.MINUTE },
-    separated: true,
     websites: [
         { 
             label: 'Chicken Tikka Masala', 

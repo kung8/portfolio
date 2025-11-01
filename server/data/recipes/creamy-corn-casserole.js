@@ -34,7 +34,6 @@ module.exports = {
             finder: 'Samantha Pham', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...CANNED_SWEET_CORN, amount: 15, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'drained', section: SECTIONS.MAIN },
         { ...CANNED_CREAMED_CORN, amount: 14.75, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },

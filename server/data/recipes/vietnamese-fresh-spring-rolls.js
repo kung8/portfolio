@@ -48,7 +48,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...VERMICELLI_RICE_NOODLES, amount: 1, unit: INGREDIENT_UNITS.PACKAGE, additionalDetails: '', section: VERMICELLI_RICE_NOODLES_SECTION },
 

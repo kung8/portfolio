@@ -27,7 +27,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...FUSILLI_PASTA, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'uncooked', section: SECTIONS.SALAD },
         { ...CHERRY_TOMATO, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'halved', section: SECTIONS.SALAD },

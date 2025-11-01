@@ -51,7 +51,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         },
     ],
-    separated: true,
     ingredients: [
         { ...CARROT, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'freshly grated', section: CARROT_MIXTURE },
         { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CARROT_MIXTURE },

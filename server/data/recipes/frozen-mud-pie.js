@@ -41,7 +41,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...OREO_COOKIES, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'crushed cookies', section: SECTIONS.CRUST },
         { ...UNSALTED_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.CRUST },

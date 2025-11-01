@@ -30,7 +30,6 @@ module.exports = {
             finder: 'Zam Illescas', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...WHITE_RICE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MEATBALLS },
         { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: MEATBALLS },

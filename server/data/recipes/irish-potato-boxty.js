@@ -34,7 +34,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...POTATO, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: POTATO_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: '', section: POTATO_SECTION },

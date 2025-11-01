@@ -41,7 +41,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...BEEF_RIBS, amount: 8, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'or pork ribs', section: RIBS_SECTIONS },
 

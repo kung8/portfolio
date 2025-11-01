@@ -51,7 +51,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...GLUTEN_FREE_OREO, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: COOKIE_CRUMBLE_SECTION },
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: COOKIE_CRUMBLE_SECTION },

@@ -58,7 +58,6 @@ module.exports = {
             finder: 'Sam Giraud-Carrier'
         }
     ],
-    separated: true,
     ingredients: [
         { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CREPE_BATTER },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: CREPE_BATTER },

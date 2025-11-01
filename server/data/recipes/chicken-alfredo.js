@@ -47,7 +47,6 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: true,
     ingredients: [
         { ...FETTUCCINE_NOODLES, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
         { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: 'for tossing', section: SECTIONS.NOODLES },

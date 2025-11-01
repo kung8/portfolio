@@ -43,7 +43,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...VEGETABLE_OIL, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PASTE_SECTION },
         { ...MASSAMAN_CURRY_PASTE, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PASTE_SECTION },

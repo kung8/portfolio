@@ -28,7 +28,6 @@ module.exports = {
             finder: 'Kevin Ung',
         }
     ],
-    separated: true,
     ingredients: [
         { ...SALMON_FISH, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'cut into 4 pieces', section: '' },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: '' },

@@ -38,7 +38,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...GRAHAM_CRACKER_PIE_CRUST, amount: 1, unit: '', additionalDetails: '10 inch', section: '' },
 

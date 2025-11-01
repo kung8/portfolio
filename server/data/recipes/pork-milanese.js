@@ -29,7 +29,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: true,
     ingredients: [
         { ...PORK_CHOPS, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'bone-in', section: SECTIONS.PORK },
         { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.PORK },
