@@ -6,7 +6,7 @@ const treats5 = '../assets/Products/rice-krispies-treats-5.jpeg';
 const treats6 = '../assets/Products/rice-krispies-treats-6.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
-const { MINI_MARSHMALLOWS, RICE_KRISPIES_CEREAL, UNSALTED_BUTTER, VANILLA_EXTRACT, STOVE, SAUCEPAN, BAKING_PAN } = require('./ingredients');
+const { BAKING_PAN, MINI_MARSHMALLOWS, RICE_KRISPIES_CEREAL, SAUCEPAN, STOVE, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
 
 const MARSHMALLOW_BUTTER = 'Marshmallow and Butter';
 const RICE_KRISPIES_TREAT = 'Rice Krispies Treat';
