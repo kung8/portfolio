@@ -20,6 +20,8 @@ const {
     UNSALTED_BUTTER,
 } = require('./ingredients');
 
+const LEMON_SLICES_SECTION = 'Lemon Slices';
+
 module.exports = {
     cardName: 'Baked Lemon Chicken',
     name: 'Baked Lemon Chicken',
@@ -36,26 +38,29 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Baked Lemon Chicken', 
+        {
+            label: 'Baked Lemon Chicken',
             link: 'https://www.lecremedelacrumb.com/easy-healthy-baked-lemon-chicken/',
             authors: ['Tiffany'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...CHICKEN_WINGS, amount: 10, unit: INGREDIENT_UNITS.PIECES, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHICKEN_BROTH, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LEMON_JUICE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...ITALIAN_SEASONING, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...ROSEMARY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LEMON, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CHICKEN_WINGS, amount: 10, unit: INGREDIENT_UNITS.PIECES, additionalDetails: '', section: SECTIONS.CHICKEN },
+
+        { ...CHICKEN_BROTH, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LEMON_JUICE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.SAUCE },
+        { ...ITALIAN_SEASONING, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
+
+        { ...LEMON, amount: '', unit: '', additionalDetails: 'sliced', section: LEMON_SLICES_SECTION },
+
+        { ...ROSEMARY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         OVEN
@@ -66,13 +71,15 @@ module.exports = {
         SMALL_BOWL,
     ],
     directions: [
-        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.MAIN },
-        { step: 'Over medium-high heat, melt butter.', section: SECTIONS.MAIN },
-        { step: 'Add chicken wings to the pan and cook for 2 to 3 minutes on each side until browned.', section: SECTIONS.MAIN },
-        { step: 'Transfer chicken to baking pan.', section: SECTIONS.MAIN },
-        { step: 'In a small bowl, mix together chicken broth, lemon juice, honey, garlic, italian seasoning, salt and pepper.', section: SECTIONS.MAIN },
-        { step: 'Pour the sauce over the chicken and add lemon slices.', section: SECTIONS.MAIN },
-        { step: 'Bake for 20 to 30 minutes.', section: SECTIONS.MAIN, img: chicken1 },
+        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.PREHEAT_OVEN },
+
+        { step: 'Over medium-high heat, melt butter.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Add chicken wings to the pan and cook for 2 to 3 minutes on each side until browned.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Transfer chicken to baking pan.', section: SECTIONS.COOK_CHICKEN },
+
+        { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
+        { step: 'Pour the sauce over the chicken and add lemon slices.', section: SECTIONS.ASSEMBLE },
+        { step: 'Bake for 20 to 30 minutes.', section: SECTIONS.BAKE, img: chicken1 },
         { step: 'Serve with rice and garnish with fresh rosemary.', section: SECTIONS.SERVE, img: chicken2 },
     ],
     store: [
