@@ -65,10 +65,11 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: PREPARATION },
-        { step: 'Grease a baking pan with a butter.', section: PREPARATION, img: bars1 },
+        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: 'Grease a baking pan with a butter.', section: SECTIONS.PREP_PAN, img: bars1 },
+
         { step: 'In a medium bowl, combine together the dry ingredients.', section: DRY_INGREDIENTS, img: bars2 },
-        { step: 'In a separate mixing bowl, combine together butter and the sugars.', section: WET_INGREDIENTS, img: [bars3, bars4] },
+        { step: 'In a separate mixing bowl, combine butter and the sugars.', section: WET_INGREDIENTS, img: [bars3, bars4] },
         { step: 'Add eggs and vanilla. Mix.', section: WET_INGREDIENTS, img: [bars5, bars6] },
         { step: 'Combine together the dry and wet ingredients.', section: SECTIONS.MAIN, img: [bars7, bars8] },
         { step: 'Add the toffee bits.', section: SECTIONS.MAIN, img: [bars9, bars10] },

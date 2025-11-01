@@ -16,7 +16,6 @@ const FRANGIPANE_SECTION = 'Frangipane';
 const ALMOND_TOPPING_SECTION = 'Almond';
 
 const MAKE_FRANGIPANE = 'Make Frangipane';
-const BAKE_BARS = 'Bake Bars';
 
 module.exports = {
     cardName: 'Almond Croissant Cookie Bars',
@@ -77,8 +76,10 @@ module.exports = {
         KNIFE,
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAKE_CRUST },
-        { step: 'Line a baking sheet with two sheets of parchment paper (perpendicular of each other).', section: SECTIONS.MAKE_CRUST },
+        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+        
+        { step: 'Line a baking sheet with two sheets of parchment paper (perpendicular of each other).', section: SECTIONS.PREP_PAN },
+
         { step: `In a mixing bowl, combine all the "${SECTIONS.CRUST}" section ingredients except the flour and baking powder. Mix until smooth.`, section: SECTIONS.MAKE_CRUST, img: bars1 },
         { step: 'Add the flour and baking powder. Mix until it forms a thick batter.', section: SECTIONS.MAKE_CRUST, img: bars2 },
         { step: 'Transfer the batter to the pan and spread to an even layer.', section: SECTIONS.MAKE_CRUST, img: bars3 },
@@ -91,8 +92,9 @@ module.exports = {
         { step: 'Spread frangipane over crust in an even layer.', section: SECTIONS.ASSEMBLE, img: bars7 },
         { step: 'Sprinkle almonds over frangipane and press into frangipane.', section: SECTIONS.ASSEMBLE, img: bars8 },
 
-        { step: 'Bake until golden brown and the center is puffed (about 38 to 42 minutes).', section: BAKE_BARS, img: bars9 },
-        { step: 'Let it completely cool (about 2 hours).', section: BAKE_BARS },
+        { step: 'Bake until golden brown and the center is puffed (about 38 to 42 minutes).', section: SECTIONS.BAKE, img: bars9 },
+
+        { step: 'Let it completely cool (about 2 hours).', section: SECTIONS.COOL },
 
         { step: 'Use a strainer to dust bars with powdered sugar.', section: SECTIONS.SERVE },
         { step: 'Lift parchment paper and transfer to a cutting board. Cut and enjoy these yummy bars.', section: SECTIONS.SERVE },
