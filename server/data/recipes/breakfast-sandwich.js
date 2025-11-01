@@ -11,6 +11,12 @@ const {
 } = require('./ingredients');
 const biscuitsRecipe = require('./biscuits-and-gravy');
 
+const BISCUITS_SECTION = 'Biscuits';
+const EGG_SECTION = 'Egg';
+
+const MAKE_BISCUITS = 'Make Biscuits';
+const COOK_EGG = 'Cook Egg';
+
 module.exports = {
     cardName: 'Breakfast Sandwich',
     name: 'Breakfast Sandwich',
@@ -34,12 +40,12 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COOKED_HAM, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BISCUITS, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHEDDAR_CHEESE, amount: 1, unit: '', additionalDetails: 'slice', section: SECTIONS.MAIN },
+        { ...BISCUITS, name: 'biscuit', amount: 1, unit: '', additionalDetails: '', section: BISCUITS_SECTION },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: EGG_SECTION },
+        { ...COOKED_HAM, amount: 1, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.SERVE },
+        { ...CHEDDAR_CHEESE, amount: 1, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
         STOVE,
@@ -51,20 +57,23 @@ module.exports = {
     directions: [
         {
             step: 'Make fresh biscuits either from a pre-made dough or from scratch. Try out this ',
-            section: SECTIONS.MAIN,
+            section: MAKE_BISCUITS,
             link: {
                 text: 'biscuit recipe',
                 link: `https://kevinung8.com/#/recipes/${biscuitsRecipe.name}`,
                 additionalText: '.'
             }
         },
-        { step: 'Over medium-high heat, melt a little butter in a pan.', section: SECTIONS.MAIN },
-        { step: 'Cook the egg as how you like it. I prefer for this recipe over medium or sunny side up.', section: SECTIONS.MAIN },
-        { step: 'Add salt and pepper to your egg.', section: SECTIONS.MAIN },
-        { step: 'Remove egg from pan.', section: SECTIONS.MAIN },
-        { step: 'Add the ham slice to the pan and heat each side for 30 seconds.', section: SECTIONS.MAIN },
-        { step: 'Place a slice of cheese on the ham so it melts.', section: SECTIONS.MAIN },
-        { step: 'Make a sandwich with these ingredients and enjoy this fresh breakfast sandwich.', section: SECTIONS.MAIN },
+        { step: 'Over medium-high heat, melt a little butter in a pan.', section: COOK_EGG },
+        { step: 'Cook the egg as how you like it. I prefer for this recipe over medium or sunny side up.', section: COOK_EGG },
+        { step: 'Add salt and pepper to your egg.', section: COOK_EGG },
+        { step: 'Remove egg from pan.', section: COOK_EGG },
+
+        { step: 'Add the ham slice to the pan and heat each side for 30 seconds.', section: SECTIONS.ASSEMBLE },
+        { step: 'Place a slice of cheese on top. Let it melt.', section: SECTIONS.ASSEMBLE },
+        { step: 'Cut biscuit. Assemble.', section: SECTIONS.ASSEMBLE },
+
+        { step: 'Enjoy this flaky breakfast sandwich and feel free to fill it with your favorite ingredients.', section: SECTIONS.SERVE },
     ],
     store: [
         {
