@@ -47,21 +47,24 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...PORK_ROAST, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...BROWN_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CHILI_POWDER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'chopped', section: SECTIONS.FILLING },
-        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'diced', section: SECTIONS.FILLING },
-        { ...THYME, amount: 1.5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...BBQ_SAUCE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...APPLE_CIDER_VINEGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...CHICKEN_BROTH, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...YELLOW_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...WORCESTERSHIRE_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...BRIOCHE_BUNS, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.PORK },
+        { ...PORK_ROAST, amount: 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.PORK },
+
+        { ...BROWN_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...CHILI_POWDER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'chopped', section: SECTIONS.DRY_INGREDIENTS },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'diced', section: SECTIONS.DRY_INGREDIENTS },
+        { ...THYME, amount: 1.5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+
+        { ...BBQ_SAUCE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...APPLE_CIDER_VINEGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...CHICKEN_BROTH, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...YELLOW_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...WORCESTERSHIRE_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+
+        { ...BRIOCHE_BUNS, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
         SLOW_COOKER,
@@ -71,15 +74,17 @@ module.exports = {
         { ...FORK, amount: 2 },
     ],
     directions: [
-        { step: 'Line a slow cooker with a liner to make cleaning quick.', section: SECTIONS.FILLING },
-        { step: 'Pour the vegetable oil into the slow cooker.', section: SECTIONS.FILLING },
-        { step: 'Place roast in the slow cooker and massage the pork with the dry ingredient.', section: SECTIONS.FILLING, img: pork1 },
-        { step: 'Pour the wet ingredients into the slow cooker.', section: SECTIONS.FILLING },
-        { step: 'Cover and cook on high for 5 - 6 hours (or on low for 10 - 12 hours).', section: SECTIONS.FILLING, img: pork2 },
-        { step: 'Shred the pork with two forks.', section: SECTIONS.FILLING, img: [pork3, pork4] },
-        { step: 'Return shredded pork to soak in more of the sauce.', section: SECTIONS.FILLING },
-        { step: 'Fill the brioche buns with pulled pork.', section: SECTIONS.MAIN },
-        { step: 'Serve with coleslaw, baked beans, homemade macaroni and cheese, and any other favorite fixins\'.', section: SECTIONS.MAIN },
+        { step: 'Line a slow cooker with a liner to make cleaning quick.', section: SECTIONS.PREP_PORK },
+        { step: 'Pour the vegetable oil into the slow cooker.', section: SECTIONS.PREP_PORK },
+        { step: `In a small bowl, combine the "${SECTIONS.DRY_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_PORK },
+        { step: 'Place roast in the slow cooker and massage the pork with the dry ingredient.', section: SECTIONS.PREP_PORK, img: pork1 },
+        { step: `Add the "${SECTIONS.WET_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_PORK },
+
+        { step: 'Cover. Cook on high for 5 - 6 hours (or on low for 10 - 12 hours).', section: SECTIONS.COOK_PORK, img: pork2 },
+        { step: 'Shred the pork with two forks.', section: SECTIONS.COOK_PORK, img: [pork3, pork4] },
+        { step: 'Return shredded pork to soak in more of the sauce.', section: SECTIONS.COOK_PORK },
+
+        { step: 'Serve on toasted brioche buns with your favorite sides.', section: SECTIONS.SERVE },
     ],
     store: [
         {
