@@ -7,6 +7,7 @@ const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_M
 const {
     BLACK_PEPPER,
     FRENCH_GREEN_BEAN,
+    GARLIC,
     ICE,
     LEMON_JUICE,
     LEMON_ZEST,
@@ -17,7 +18,6 @@ const {
     SLICED_ALMONDS,
     STOVE,
     UNSALTED_BUTTER,
-    GARLIC,
 } = require('./ingredients');
 
 const BLANCHED_GREEN_BEANS = 'Blanched Green Beans';

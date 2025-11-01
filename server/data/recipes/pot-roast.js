@@ -1,20 +1,20 @@
 const roast1 = '../assets/Products/pot-roast-1.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
+    ALUMINUM_FOIL,
     BEEF_BROTH,
     BEEF_ROAST,
     BLACK_PEPPER,
     CARROT,
     FRESH_ROSEMARY,
     FRESH_THYME,
+    LARGE_PAN,
     OLIVE_OIL,
+    OVEN,
     RED_WINE_VINEGAR,
+    ROASTING_PAN,
     SALT,
     YELLOW_ONION,
-    OVEN,
-    ROASTING_PAN,
-    ALUMINUM_FOIL,
-    LARGE_PAN,
 } = require('./ingredients');
 
 const HERBS_AND_LIQUIDS = 'Herbs and Liquids';

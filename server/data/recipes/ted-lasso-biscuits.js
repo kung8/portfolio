@@ -6,11 +6,11 @@ const {
     MIXING_BOWL,
     OVEN,
     POWDERED_SUGAR,
+    REFRIGERATOR,
     SALT,
     STAND_MIXER,
     UNSALTED_BUTTER,
     VANILLA_EXTRACT,
-    REFRIGERATOR,
 } = require('./ingredients');
 
 module.exports = {
