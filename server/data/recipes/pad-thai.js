@@ -121,7 +121,7 @@ module.exports = {
         { step: 'Roast the peanuts in a pan.', section: ROAST_PEANUTS },
         { step: 'Set aside.', section: ROAST_PEANUTS, img: noodles6 },
 
-        { step: 'Serve and garnish with peanuts, bean sprouts, cilantro, and squeeze fresh lime juice. Enjoy this majestic Thai dish!', section: SECTIONS.SERVE, img: noodles7 },
+        { step: `Serve and garnish with "${SECTIONS.TOPPINGS}" section ingredients. Enjoy this majestic Thai dish!`, section: SECTIONS.SERVE, img: noodles7 },
     ],
     store: [
         {
