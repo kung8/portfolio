@@ -87,7 +87,7 @@ module.exports = {
         { step: `Dust the pork chops with light coat of flour, then dip in beaten eggs, and coat with panko.`, section: SECTIONS.MAIN },
         { step: `Heat oil in a pot over medium heat until it gets to about 350 ºF. You can use a cooking thermometer to gauge this.`, section: SECTIONS.MAIN },
         { step: `Be careful as the oil is very hot by this point, so be sure to wear oven mitts to help protect your hands from getting burned.`, section: SECTIONS.MAIN },
-        { step: `Place the pork chop in the hot oil, and cook for 5 - 6 minutes per side. Then flip.`, section: SECTIONS.MAIN },
+        { step: `Place the pork chop in the hot oil, and cook for 5 to 6 minutes per side. Then flip.`, section: SECTIONS.MAIN },
         { step: `Line a baking sheet with paper towels and place a cooling rack on top.`, section: SECTIONS.MAIN },
         { step: `Place the pork chops on the cooling rack to drain any excess oil.`, section: SECTIONS.MAIN, img: katsudon1 },
         { step: `While the pork is resting, make the egg mixture and the sauce.`, section: SECTIONS.MAIN },

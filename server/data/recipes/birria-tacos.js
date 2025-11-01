@@ -78,7 +78,7 @@ module.exports = {
     directions: [
         { step: `Over high heat, add avocado oil to a pan.`, section: SECTIONS.COOK_BEEF },
         { step: `Generously season beef with salt and pepper.`, section: SECTIONS.COOK_BEEF },
-        { step: `Sear both sides of the beef (about 5 - 6 minutes per side).`, section: SECTIONS.COOK_BEEF, img: tacos2 },
+        { step: `Sear both sides of the beef (about 5 to 6 minutes per side).`, section: SECTIONS.COOK_BEEF, img: tacos2 },
 
         { step: `Transfer beef and the "${SECTIONS.FILLING}" section ingredients to the crockpot.`, section: SECTIONS.PREP_FILLING, img: [tacos1, tacos3] },
         { step: `Cover and cook on low for 8 hours.`, section: SECTIONS.PREP_FILLING },

@@ -129,14 +129,14 @@ module.exports = {
 
         { step: `Place 2 layers of paper towels on top of a baking sheet and then place the cooling rack on top of the paper towels. Note the stacking order matters because placing the paper towels on top of the cooling rack creates steam beneath the fried chicken making it soggy and not crispy.`, section: SECTIONS.MAIN },
         { step: `Over medium heat, heat a pot of about 2 inches of oil.`, section: SECTIONS.MAIN },
-        { step: `Once the oil is hot, about 345ºF, add the chicken into the oil and fry for 3 - 4 minutes. Cook in batches and avoid crowding the pot.`, section: SECTIONS.MAIN, img: chicken3 },
+        { step: `Once the oil is hot, about 345ºF, add the chicken into the oil and fry for 3 to 4 minutes. Cook in batches and avoid crowding the pot.`, section: SECTIONS.MAIN, img: chicken3 },
         { step: `Place the fried chicken on the cooling rack.`, section: SECTIONS.MAIN, img: chicken4 },
         { step: `Continue cooking the rest of the chicken in batches.`, section: SECTIONS.MAIN },
         { step: `Increase the heat to medium-high, about 375ºF, and repeat the second fry. Chicken should be golden brown and crunchy.`, section: SECTIONS.MAIN },
         { step: `Enjoy by itself or coat with the hot sauce.`, section: SECTIONS.SERVE, img: chicken5 },
 
         { step: `In a sauce pan over medium-high heat, add all the ingredients for the respective sauce and bring to a boil.`, section: SECTIONS.SAUCE, img: chicken6 },
-        { step: `Once it boils, reduce the heat and cook for another 2 - 3 minutes.`, section: SECTIONS.SAUCE },
+        { step: `Once it boils, reduce the heat and cook for another 2 to 3 minutes.`, section: SECTIONS.SAUCE },
         { step: `If the sauce is too thick, add a teaspoon of water at a time to thin it out.`, section: SECTIONS.SAUCE },
 
         { step: `While sauce is hot, drizzle onto the chicken and serve with rice.`, section: SECTIONS.SERVE, img: chicken7 },

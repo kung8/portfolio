@@ -132,7 +132,7 @@ module.exports = {
     reheat: [
         {
             method: REHEAT_METHODS.MICROWAVE,
-            instruction: 'Add a little water. Microwave until heated through (about 2-3 minutes).',
+            instruction: 'Add a little water. Microwave until heated through (about 2 to 3 minutes).',
         },
     ],
     mealPrep: true,

@@ -66,7 +66,7 @@ module.exports = {
         { step: `Place the basket on the pot and cover with a lid.`, section: SECTIONS.COOK_RICE, img: mango4 },
         { step: `Steam for 15 minutes.`, section: SECTIONS.COOK_RICE },
         { step: `Carefully flip the rice. Re-place the lid.`, section: SECTIONS.COOK_RICE },
-        { step: `Steam until the rice is cooked and translucent (about 10 - 20 minutes).`, section: SECTIONS.COOK_RICE },
+        { step: `Steam until the rice is cooked and translucent (about 10 to 20 minutes).`, section: SECTIONS.COOK_RICE },
         { step: `Turn off heat.`, section: SECTIONS.COOK_RICE },
         { step: `Fluff the rice with a fork.`, section: SECTIONS.COOK_RICE },
         { step: `Let rest for 5 minutes.`, section: SECTIONS.COOK_RICE, img: mango5 },

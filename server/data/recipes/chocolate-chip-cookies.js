@@ -114,7 +114,7 @@ module.exports = {
         { step: `Enjoy these delicious treats with a cold glass of milk!`, section: SECTIONS.SERVE, img: cookies7 },
     ],
     notes: [
-        { note: 'To soften butter: (1) leave in room temperature, or (2) warm in microwave for 20 - 30 seconds on 50% power (but times will vary based on the original softness of butter and microwave model).' },
+        { note: 'To soften butter: (1) leave in room temperature, or (2) warm in microwave for 20 to 30 seconds on 50% power (but times will vary based on the original softness of butter and microwave model).' },
         { note: 'Freezing the cookie dough before baking helps control the spread, deepen the flavor, create crispier edges and chewier cookies, and a more even bake.' },
     ],
     store: [

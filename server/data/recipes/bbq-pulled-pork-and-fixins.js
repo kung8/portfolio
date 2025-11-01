@@ -79,7 +79,7 @@ module.exports = {
         { step: `Place roast in the slow cooker and massage the pork with the dry ingredient.`, section: SECTIONS.PREP_PORK, img: pork1 },
         { step: `Add the "${SECTIONS.WET_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_PORK },
 
-        { step: `Cover. Cook on high for 5 - 6 hours (or on low for 10 - 12 hours).`, section: SECTIONS.COOK_PORK, img: pork2 },
+        { step: `Cover. Cook on high for 5 to 6 hours (or on low for 10 to 12 hours).`, section: SECTIONS.COOK_PORK, img: pork2 },
         { step: `Shred the pork with two forks.`, section: SECTIONS.COOK_PORK, img: [pork3, pork4] },
         { step: `Return shredded pork to soak in more of the sauce.`, section: SECTIONS.COOK_PORK },
 

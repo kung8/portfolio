@@ -88,7 +88,7 @@ module.exports = {
         { step: `Brown the content, mix occasionally, and drain any fat.`, section: BEEF, img: chili2 },
         { step: `Add the cumin, bell pepper, different tomato variations, beans, broth, brown sugar, salt and pepper.`, section: VEGGIES, img: chili3 },
         { step: `Bring to a boil.`, section: VEGGIES },
-        { step: `Lower heat and cook for 45 - 60 minutes or until it has become the desired thickness.`, section: VEGGIES },
+        { step: `Lower heat and cook for 45 to 60 minutes or until it has become the desired thickness.`, section: VEGGIES },
         { step: `Serve with your favorite toppings and feel free to add as much spice as you can handle or desire.`, section: SECTIONS.TOPPINGS, img: [chili5, chili6] },
     ],
     notes: [

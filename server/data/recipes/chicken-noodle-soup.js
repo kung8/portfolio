@@ -83,7 +83,7 @@ module.exports = {
         { step: `Brown both sides. Set aside.`, section: SECTIONS.COOK_CHICKEN },
 
         { step: `In a large pot, combine the "${SECTIONS.SOUP}" section ingredients.`, section: SECTIONS.COOK_SOUP },
-        { step: `Over medium-high heat, cook for 8 - 10 minutes.`, section: SECTIONS.COOK_SOUP },
+        { step: `Over medium-high heat, cook for 8 to 10 minutes.`, section: SECTIONS.COOK_SOUP },
 
         { step: `Add raw noodles. Bring to a boil (about 6 to 8 minutes).`, section: SECTIONS.COOK_NOODLES },
         { step: `Reduce to low heat.`, section: SECTIONS.COOK_NOODLES },

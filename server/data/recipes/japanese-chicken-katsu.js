@@ -101,7 +101,7 @@ module.exports = {
         { step: `Place the finished chicken on a plate that will be fried soon. Repeat the dredging process for each of the chicken breasts.`, section: SECTIONS.MAIN, img: katsu5 },
         { step: `Heat oil in a pot over medium heat until it gets to about 350 ºF. You can use a cooking thermometer to gauge this.`, section: SECTIONS.MAIN },
         { step: `Be careful as the oil is very hot by this point, so be sure to wear oven mitts to help protect your hands from getting burned.`, section: SECTIONS.MAIN },
-        { step: `Place the chicken breast in the hot oil, and cook for 3 - 4 minutes per side.`, section: SECTIONS.MAIN, img: katsu6 },
+        { step: `Place the chicken breast in the hot oil, and cook for 3 to 4 minutes per side.`, section: SECTIONS.MAIN, img: katsu6 },
         { step: `Place the finished chicken breast on a cooling rack lined with about 2 paper towel layers`, section: SECTIONS.MAIN, img: katsu7 },
         { step: `Repeat this for each chicken breast.`, section: SECTIONS.MAIN },
         { step: `Serve with rice and optionally with tomato, cabbage, and lemon slices (squeezed over chicken, or cabbage, or both) and enjoy this Japanese goodness!`, section: SECTIONS.MAIN, img: katsu8 },

@@ -73,7 +73,7 @@ module.exports = {
 
         { step: `With a basting brush, coat the top of the chicken.`, section: SECTIONS.BASTE, img: drumstick3 },
 
-        { step: `Bake until chicken is cooked (about 40 - 50 minutes).`, section: SECTIONS.BAKE, img: drumstick4 },
+        { step: `Bake until chicken is cooked (about 40 to 50 minutes).`, section: SECTIONS.BAKE, img: drumstick4 },
 
         { step: `Transfer out of pan to avoid the oil gelatinizing around the chicken.`, section: SECTIONS.TRANSFER, img: drumstick5 },
 
