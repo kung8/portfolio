@@ -760,7 +760,6 @@ module.exports = recipes;
 // or fresh pineapple salsa, served with rice pilaf,
 // and sautéed vegetables. (32)
 
-// TODO: Add filters for diet (vegan, vegetarian, gluten-free, keto, paleo, etc.)
 // TODO: Add bulk actions logic?
 // TODO: Add picture with camera and scan text for you and interpret that into text to be used in grocery list
 // TODO: Add way to download and print recipes
@@ -774,3 +773,6 @@ module.exports = recipes;
 // TODO: https://tastesbetterfromscratch.com/german-chocolate-cake/
 // TODO: https://www.wellmadebykiley.com/blog/cinnamon-crunch-apple-pie-cathead-biscuits
 // TODO: https://cookingwithkarli.com/crave-rockstar-cookie-recipe/?fbclid=IwY2xjawNagudleHRuA2FlbQIxMQABHqLXZW8qtuz8axoFXldWq9mzV45reZ3YqqH5-KVdq3_rwiJ27fszAEok4vpu_aem_LDtydRXK6zvnQRPyuUW4fw
+// TODO: https://www.allrecipes.com/lemon-ricotta-muffins-recipe-11826885
+// TODO: https://sweetcsdesigns.com/cabbage-and-noodles/
+// TODO: https://healthynibblesandbits.com/how-to-make-dumpling-wrappers/
