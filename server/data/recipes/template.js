@@ -21,7 +21,6 @@ module.exports = {
     websites: [
         { label: '{{label}}', link: '{{link}}', authors: ['{{author}}'], finder: '{{finder}}' }
     ],
-    separated: '{{separated}}',
     ingredients: [
         { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
     ],
