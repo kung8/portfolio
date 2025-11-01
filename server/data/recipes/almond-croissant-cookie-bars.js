@@ -75,28 +75,28 @@ module.exports = {
         KNIFE,
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         
-        { step: 'Line a baking sheet with two sheets of parchment paper (perpendicular of each other).', section: SECTIONS.PREP_PAN },
+        { step: `Line a baking sheet with two sheets of parchment paper (perpendicular of each other).`, section: SECTIONS.PREP_PAN },
 
         { step: `In a mixing bowl, combine all the "${SECTIONS.CRUST}" section ingredients except the flour and baking powder. Mix until smooth.`, section: SECTIONS.MAKE_CRUST, img: bars1 },
-        { step: 'Add the flour and baking powder. Mix until it forms a thick batter.', section: SECTIONS.MAKE_CRUST, img: bars2 },
-        { step: 'Transfer the batter to the pan and spread to an even layer.', section: SECTIONS.MAKE_CRUST, img: bars3 },
+        { step: `Add the flour and baking powder. Mix until it forms a thick batter.`, section: SECTIONS.MAKE_CRUST, img: bars2 },
+        { step: `Transfer the batter to the pan and spread to an even layer.`, section: SECTIONS.MAKE_CRUST, img: bars3 },
 
-        { step: 'In the same empty mixing bowl, combine butter, sugar and salt. Combine with a rubber spatula. Beat until fluffy (about 1 to 2 minutes). Scrape down sides.', section: MAKE_FRANGIPANE, img: bars4 },
-        { step: 'Add vanilla and almond extracts. Mix.', section: MAKE_FRANGIPANE },
-        { step: 'Add in eggs one at a time. Wait until each are incorporated. Scrape down sides.', section: MAKE_FRANGIPANE, img: bars5 },
-        { step: 'Add in flour until just combined. Scrape down sides and fold in flour until smooth.', section: MAKE_FRANGIPANE, img: bars6 },
+        { step: `In the same empty mixing bowl, combine butter, sugar and salt. Combine with a rubber spatula. Beat until fluffy (about 1 to 2 minutes). Scrape down sides.`, section: MAKE_FRANGIPANE, img: bars4 },
+        { step: `Add vanilla and almond extracts. Mix.`, section: MAKE_FRANGIPANE },
+        { step: `Add in eggs one at a time. Wait until each are incorporated. Scrape down sides.`, section: MAKE_FRANGIPANE, img: bars5 },
+        { step: `Add in flour until just combined. Scrape down sides and fold in flour until smooth.`, section: MAKE_FRANGIPANE, img: bars6 },
 
-        { step: 'Spread frangipane over crust in an even layer.', section: SECTIONS.ASSEMBLE, img: bars7 },
-        { step: 'Sprinkle almonds over frangipane and press into frangipane.', section: SECTIONS.ASSEMBLE, img: bars8 },
+        { step: `Spread frangipane over crust in an even layer.`, section: SECTIONS.ASSEMBLE, img: bars7 },
+        { step: `Sprinkle almonds over frangipane and press into frangipane.`, section: SECTIONS.ASSEMBLE, img: bars8 },
 
-        { step: 'Bake until golden brown and the center is puffed (about 38 to 42 minutes).', section: SECTIONS.BAKE, img: bars9 },
+        { step: `Bake until golden brown and the center is puffed (about 38 to 42 minutes).`, section: SECTIONS.BAKE, img: bars9 },
 
-        { step: 'Let it completely cool (about 2 hours).', section: SECTIONS.COOL },
+        { step: `Let it completely cool (about 2 hours).`, section: SECTIONS.COOL },
 
-        { step: 'Use a strainer to dust bars with powdered sugar.', section: SECTIONS.SERVE },
-        { step: 'Lift parchment paper and transfer to a cutting board. Cut and enjoy these yummy bars.', section: SECTIONS.SERVE },
+        { step: `Use a strainer to dust bars with powdered sugar.`, section: SECTIONS.SERVE },
+        { step: `Lift parchment paper and transfer to a cutting board. Cut and enjoy these yummy bars.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'The original recipe tells you to use a stand mixer, but you can use a hand mixer or even a rubber spatula. You do not need to wash an additional bowl.' },

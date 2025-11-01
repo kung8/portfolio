@@ -51,15 +51,15 @@ module.exports = {
         PARCHMENT_PAPER
     ],
     directions: [
-        { step: 'Preheat the oven to 325ºF.', section: SECTIONS.PREP_BATTER },
-        { step: 'Spray an 8 x 8 baking pan with cooking spray and line with a parchment paper.', section: SECTIONS.PREP_BATTER },
+        { step: `Preheat the oven to 325ºF.`, section: SECTIONS.PREP_BATTER },
+        { step: `Spray an 8 x 8 baking pan with cooking spray and line with a parchment paper.`, section: SECTIONS.PREP_BATTER },
         { step: `In a medium bowl, combine the "${DRY_SECTION}" section ingredients.`, section: SECTIONS.PREP_BATTER },
         { step: `In a mixing bowl, combine the "${WET_SECTION}" section ingredients.`, section: SECTIONS.PREP_BATTER },
-        { step: 'Add the dry batter to the wet batter and stir until just combined. It will be thick.', section: SECTIONS.PREP_BATTER },
-        { step: 'Use a spatula to pour and smooth the batter into the pan.', section: SECTIONS.PREP_BATTER },
-        { step: 'Bake until an inserted toothpick comes out clean (about 40 to 48 minutes).', section: SECTIONS.BAKE },
-        { step: 'Let it completely cool (about 2 hours). It will be gooey in the middle and will continue to set.', section: SECTIONS.SERVE },
-        { step: 'Slice and enjoy!', section: SECTIONS.SERVE },
+        { step: `Add the dry batter to the wet batter and stir until just combined. It will be thick.`, section: SECTIONS.PREP_BATTER },
+        { step: `Use a spatula to pour and smooth the batter into the pan.`, section: SECTIONS.PREP_BATTER },
+        { step: `Bake until an inserted toothpick comes out clean (about 40 to 48 minutes).`, section: SECTIONS.BAKE },
+        { step: `Let it completely cool (about 2 hours). It will be gooey in the middle and will continue to set.`, section: SECTIONS.SERVE },
+        { step: `Slice and enjoy!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

@@ -80,30 +80,30 @@ module.exports = {
         COLANDER,
     ],
     directions: [
-        { step: 'Season sliced chicken with salt and pepper.', section: SECTIONS.PREP_CHICKEN },
+        { step: `Season sliced chicken with salt and pepper.`, section: SECTIONS.PREP_CHICKEN },
 
-        { step: 'In a large pot, bring water and salt to a boil.', section: SECTIONS.COOK_NOODLES },
-        { step: 'Add pasta to pot and cook until al dente (tender but center is still a little firm).', section: SECTIONS.COOK_NOODLES },
-        { step: 'Drain in a colander and save some of the starchy water for later.', section: SECTIONS.COOK_NOODLES },
-        { step: 'In a large mixing bowl, add the pasta and toss with a little oil.', section: SECTIONS.COOK_NOODLES },
+        { step: `In a large pot, bring water and salt to a boil.`, section: SECTIONS.COOK_NOODLES },
+        { step: `Add pasta to pot and cook until al dente (tender but center is still a little firm).`, section: SECTIONS.COOK_NOODLES },
+        { step: `Drain in a colander and save some of the starchy water for later.`, section: SECTIONS.COOK_NOODLES },
+        { step: `In a large mixing bowl, add the pasta and toss with a little oil.`, section: SECTIONS.COOK_NOODLES },
 
-        { step: 'Over medium-high heat, melt butter in a pan.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Brown chicken for 2 to 3 minutes per side. Cook chicken in batches if necessary.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Transfer cooked chicken to a medium bowl.', section: SECTIONS.COOK_CHICKEN },
+        { step: `Over medium-high heat, melt butter in a pan.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Brown chicken for 2 to 3 minutes per side. Cook chicken in batches if necessary.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Transfer cooked chicken to a medium bowl.`, section: SECTIONS.COOK_CHICKEN },
 
         { step: `In the same pan, melt butter.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Saute the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Set the vegetables aside with the chicken.`, section: SECTIONS.COOK_VEGGIES },
 
-        { step: 'In the same pan, melt the butter.', section: SECTIONS.COOK_SAUCE },
-        { step: 'In a bowl, combine heavy cream and nutmeg. Add to pan.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Bring to a simmer.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Cook for another 2 minutes.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Reduce to low heat.', section: SECTIONS.COOK_SAUCE },
+        { step: `In the same pan, melt the butter.`, section: SECTIONS.COOK_SAUCE },
+        { step: `In a bowl, combine heavy cream and nutmeg. Add to pan.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Bring to a simmer.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Cook for another 2 minutes.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Reduce to low heat.`, section: SECTIONS.COOK_SAUCE },
 
-        { step: 'Slowly mix everything together including the starchy noodle water.', section: SECTIONS.ASSEMBLE },
+        { step: `Slowly mix everything together including the starchy noodle water.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Serve and enjoy the nostalgic creamy, delicious chicken alfredo!', section: SECTIONS.SERVE },
+        { step: `Serve and enjoy the nostalgic creamy, delicious chicken alfredo!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

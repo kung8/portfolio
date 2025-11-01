@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { waitTime } = require('./cheesecake-factory-cheesecake');
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { AVOCADO, BBQ_SAUCE, BROWN_LENTILS, BROWN_SUGAR, CARROT, CHILI_POWDER, DIJON_MUSTARD, GARLIC, HAMBURGER_BUNS, HOT_SAUCE, KETCHUP, LETTUCE, OLIVE_OIL, PICKLES, SALT, VEGETABLE_BROTH, WHITE_ONION, WORCESTERSHIRE_SAUCE, YELLOW_ONION } = require('./ingredients');
 
 module.exports = {
@@ -59,17 +59,17 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'Set the Instant Pot to the "saute" function (on "normal" heat and timer for 7 minutes).', section: SECTIONS.SAUTE },
-        { step: 'Once Instant Pot reads "hot", add olive oil.', section: SECTIONS.SAUTE },
-        { step: 'Add onions and carrots. Saute in pot until softened and lightly browned (for about 6 minutes).', section: SECTIONS.SAUTE },
-        { step: 'Add garlic. Saute for 1 minute.', section: SECTIONS.SAUTE },
-        { step: 'Deglaze with 2 teaspoons of vegetable broth.', section: SECTIONS.SAUTE },
+        { step: `Set the Instant Pot to the "saute" function (on "normal" heat and timer for 7 minutes).`, section: SECTIONS.SAUTE },
+        { step: `Once Instant Pot reads "hot", add olive oil.`, section: SECTIONS.SAUTE },
+        { step: `Add onions and carrots. Saute in pot until softened and lightly browned (for about 6 minutes).`, section: SECTIONS.SAUTE },
+        { step: `Add garlic. Saute for 1 minute.`, section: SECTIONS.SAUTE },
+        { step: `Deglaze with 2 teaspoons of vegetable broth.`, section: SECTIONS.SAUTE },
         { step: `Add the lentils and the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PRESSURE_COOK },
-        { step: 'Cover with the lid and set the pressure vent. Set on high pressure with a 15 minute timer. It will take about 10 minutes to pressurize.', section: SECTIONS.PRESSURE_COOK },
-        { step: 'Once the timer goes off, allow time for the pressure to release (about 15 minutes).', section: SECTIONS.PRESSURE_COOK },
-        { step: 'Uncover.', section: SECTIONS.PRESSURE_COOK },
-        { step: 'Add barbecue sauce. Stir.', section: SECTIONS.PRESSURE_COOK },
-        { step: 'Serve on toasted buns and top with your favorite toppings.', section: SECTIONS.SERVE },
+        { step: `Cover with the lid and set the pressure vent. Set on high pressure with a 15 minute timer. It will take about 10 minutes to pressurize.`, section: SECTIONS.PRESSURE_COOK },
+        { step: `Once the timer goes off, allow time for the pressure to release (about 15 minutes).`, section: SECTIONS.PRESSURE_COOK },
+        { step: `Uncover.`, section: SECTIONS.PRESSURE_COOK },
+        { step: `Add barbecue sauce. Stir.`, section: SECTIONS.PRESSURE_COOK },
+        { step: `Serve on toasted buns and top with your favorite toppings.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

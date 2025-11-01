@@ -59,19 +59,19 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Preheat oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         
-        { step: 'Grease and add a little cocoa powder on the baking pan.', section: SECTIONS.PREP_PAN },
+        { step: `Grease and add a little cocoa powder on the baking pan.`, section: SECTIONS.PREP_PAN },
         
-        { step: 'Melt butter in the microwave.', section: SECTIONS.PREP_BATTER },
-        { step: 'In a mixing bowl, combine melted butter, cocoa powder, and sugar. Mix well.', section: SECTIONS.PREP_BATTER },
-        { step: 'Add salt, vanilla, and eggs. Mix.', section: SECTIONS.PREP_BATTER },
-        { step: 'Mix in the flour.', section: SECTIONS.PREP_BATTER },
-        { step: 'Spread the batter into the baking pan.', section: SECTIONS.PREP_BATTER },
+        { step: `Melt butter in the microwave.`, section: SECTIONS.PREP_BATTER },
+        { step: `In a mixing bowl, combine melted butter, cocoa powder, and sugar. Mix well.`, section: SECTIONS.PREP_BATTER },
+        { step: `Add salt, vanilla, and eggs. Mix.`, section: SECTIONS.PREP_BATTER },
+        { step: `Mix in the flour.`, section: SECTIONS.PREP_BATTER },
+        { step: `Spread the batter into the baking pan.`, section: SECTIONS.PREP_BATTER },
         
-        { step: 'Bake until an inserted toothpick comes out clean (about 30 to 35 minutes).', section: SECTIONS.BAKE, img: [brownies1, brownies2] },
+        { step: `Bake until an inserted toothpick comes out clean (about 30 to 35 minutes).`, section: SECTIONS.BAKE, img: [brownies1, brownies2] },
 
-        { step: 'Enjoy these sweets!', section: SECTIONS.SERVE },
+        { step: `Enjoy these sweets!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

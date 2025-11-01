@@ -76,27 +76,27 @@ module.exports = {
         SPATULA
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: PREP_ROLLS },
-        { step: 'Line a baking sheet with a silicon baking mat.', section: PREP_ROLLS },
-        { step: 'Place rolls on a baking sheet.', section: PREP_ROLLS },
-        { step: 'Brush rolls with melted butter on all sides.', section: PREP_ROLLS, img: donut1 },
-        { step: 'Bake until lightly brown and toasted (about 5 to 7 minutes).', section: PREP_ROLLS, img: donut2 },
+        { step: `Preheat the oven to 350ºF.`, section: PREP_ROLLS },
+        { step: `Line a baking sheet with a silicon baking mat.`, section: PREP_ROLLS },
+        { step: `Place rolls on a baking sheet.`, section: PREP_ROLLS },
+        { step: `Brush rolls with melted butter on all sides.`, section: PREP_ROLLS, img: donut1 },
+        { step: `Bake until lightly brown and toasted (about 5 to 7 minutes).`, section: PREP_ROLLS, img: donut2 },
 
         { step: `In a mixing bowl, combine the "${PUDDING_MIX_SECTION}" section ingredients until thickened.`, section: SECTIONS.PREP_FILLING, img: donut3 },
-        { step: 'Fold in whipped topping.', section: SECTIONS.PREP_FILLING, img: donut4 },
-        { step: 'Chill until it sets (about 10 minutes).', section: SECTIONS.PREP_FILLING, img: donut5 },
+        { step: `Fold in whipped topping.`, section: SECTIONS.PREP_FILLING, img: donut4 },
+        { step: `Chill until it sets (about 10 minutes).`, section: SECTIONS.PREP_FILLING, img: donut5 },
 
-        { step: 'Make a small hole in each roll (do not go all the way through).', section: FILL_ROLLS, img: donut6 },
-        { step: 'Fill each hole with the filling (possibly with a piping bag or a funnel).', section: FILL_ROLLS, img: [donut7, donut10] },
+        { step: `Make a small hole in each roll (do not go all the way through).`, section: FILL_ROLLS, img: donut6 },
+        { step: `Fill each hole with the filling (possibly with a piping bag or a funnel).`, section: FILL_ROLLS, img: [donut7, donut10] },
 
-        { step: 'In a medium bowl, microwave milk until hot (about 30 to 40 seconds).', section: PREP_GLAZE },
-        { step: 'Add chocolate chips to milk. Let it melt (about 10 seconds).', section: PREP_GLAZE, img: donut8 },
-        { step: 'Stir. If needed, microwave until it completely melts (about 15 seconds).', section: PREP_GLAZE, img: donut9 },
+        { step: `In a medium bowl, microwave milk until hot (about 30 to 40 seconds).`, section: PREP_GLAZE },
+        { step: `Add chocolate chips to milk. Let it melt (about 10 seconds).`, section: PREP_GLAZE, img: donut8 },
+        { step: `Stir. If needed, microwave until it completely melts (about 15 seconds).`, section: PREP_GLAZE, img: donut9 },
 
-        { step: 'Dip the tops in the chocolate.', section: GLAZE_ROLLS },
-        { step: 'Let the chocolate harden slightly (about 20 minutes at room temperature or 5 to 10 minutes in the fridge).', section: GLAZE_ROLLS, img: donut11 },
+        { step: `Dip the tops in the chocolate.`, section: GLAZE_ROLLS },
+        { step: `Let the chocolate harden slightly (about 20 minutes at room temperature or 5 to 10 minutes in the fridge).`, section: GLAZE_ROLLS, img: donut11 },
 
-        { step: 'Enjoy these simplified donuts without having to fry anything.', section: SECTIONS.SERVE },
+        { step: `Enjoy these simplified donuts without having to fry anything.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

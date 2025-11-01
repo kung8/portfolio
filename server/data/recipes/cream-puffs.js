@@ -57,19 +57,19 @@ module.exports = {
     ],
     directions: [
         { step: `In a mixing bowl, combine together the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.FILLING, img: puffs1 },
-        { step: 'Cover and chill until it sets.', section: SECTIONS.FILLING },
+        { step: `Cover and chill until it sets.`, section: SECTIONS.FILLING },
 
-        { step: 'Preheat the over to 425ºF.', section: PUFF },
-        { step: 'Over medium-high heat, bring a large pot of water and butter to a boil.', section: PUFF },
-        { step: 'Add in flour and salt. Mix until it becomes a ball.', section: PUFF, img: puffs2 },
-        { step: 'Transfer to a mixing bowl.', section: PUFF },
-        { step: 'Beat eggs in one at a time.', section: PUFF, img: puffs3 },
-        { step: 'Place spoonful of batter on a baking sheet, a few inches apart.', section: PUFF, img: puffs4 },
-        { step: 'Bake until golden brown (about 20 to 25 minutes). Centers will be dry.', section: PUFF },
-        { step: 'Let cool.', section: PUFF, img: puffs5 },
+        { step: `Preheat the over to 425ºF.`, section: PUFF },
+        { step: `Over medium-high heat, bring a large pot of water and butter to a boil.`, section: PUFF },
+        { step: `Add in flour and salt. Mix until it becomes a ball.`, section: PUFF, img: puffs2 },
+        { step: `Transfer to a mixing bowl.`, section: PUFF },
+        { step: `Beat eggs in one at a time.`, section: PUFF, img: puffs3 },
+        { step: `Place spoonful of batter on a baking sheet, a few inches apart.`, section: PUFF, img: puffs4 },
+        { step: `Bake until golden brown (about 20 to 25 minutes). Centers will be dry.`, section: PUFF },
+        { step: `Let cool.`, section: PUFF, img: puffs5 },
 
-        { step: 'Either carefully split the puffs and fill with the cream filling or pipe into the shell.', section: SECTIONS.ASSEMBLE, img: [puffs6, puffs7] },
-        { step: 'Enjoy these delicious desserts.', section: SECTIONS.SERVE },
+        { step: `Either carefully split the puffs and fill with the cream filling or pipe into the shell.`, section: SECTIONS.ASSEMBLE, img: [puffs6, puffs7] },
+        { step: `Enjoy these delicious desserts.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

@@ -67,19 +67,19 @@ module.exports = {
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SHRIMP, img: shrimp2 },
-        { step: 'Pat shrimp dry with a paper towel.', section: SECTIONS.PREP_SHRIMP, img: shrimp1 },
-        { step: 'Add shrimp to bowl. Coat shrimp.', section: SECTIONS.PREP_SHRIMP, img: shrimp3 },
+        { step: `Pat shrimp dry with a paper towel.`, section: SECTIONS.PREP_SHRIMP, img: shrimp1 },
+        { step: `Add shrimp to bowl. Coat shrimp.`, section: SECTIONS.PREP_SHRIMP, img: shrimp3 },
 
         { step: `In another mixing bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE, img: shrimp4 },
 
-        { step: 'Heat oil to 350ºF.', section: SECTIONS.DEEP_FRY },
-        { step: 'Lined a baking sheet with paper towel and place a cooling rack.', section: SECTIONS.DEEP_FRY },
-        { step: 'Add shrimp. Cook until golden brown (2 to 3 minutes). Do not overcrowd and do not overcook.', section: SECTIONS.DEEP_FRY, img: shrimp5 },
-        { step: 'Set them on the cooling rack to drain.', section: SECTIONS.DEEP_FRY, img: shrimp6 },
+        { step: `Heat oil to 350ºF.`, section: SECTIONS.DEEP_FRY },
+        { step: `Lined a baking sheet with paper towel and place a cooling rack.`, section: SECTIONS.DEEP_FRY },
+        { step: `Add shrimp. Cook until golden brown (2 to 3 minutes). Do not overcrowd and do not overcook.`, section: SECTIONS.DEEP_FRY, img: shrimp5 },
+        { step: `Set them on the cooling rack to drain.`, section: SECTIONS.DEEP_FRY, img: shrimp6 },
 
-        { step: 'Toss the fried shrimp in the sauce.', section: COAT_SHRIMP, img: shrimp7 },
+        { step: `Toss the fried shrimp in the sauce.`, section: COAT_SHRIMP, img: shrimp7 },
 
-        { step: 'Serve this hot topped with green onions.', section: SECTIONS.SERVE },
+        { step: `Serve this hot topped with green onions.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'The original recipe says browning the shrimp frying for 2 to 3 minutes. I tried a few things like smaller batches and double frying it. The smaller batches got it a little darker but not browned. Double frying kind of dried out the shrimp. It was still delicious but dried out in the center. I would recommend either lessening the time for the first fry and then increase the heat to 375ºF for the second fry.' },

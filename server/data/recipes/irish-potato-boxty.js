@@ -59,21 +59,21 @@ module.exports = {
         FRYING_PAN,
     ],
     directions: [
-        { step: 'Peel half the potatoes.', section: BOIL_POTATOES },
-        { step: 'Cut the peeled potatoes into 1 inch pieces.', section: BOIL_POTATOES },
-        { step: 'Over medium-high heat, add the peeled potato pieces and salted water to a medium saucepan. Bring to a simmer.', section: BOIL_POTATOES },
-        { step: 'Cook the potatoes until tender (about 15 minutes).', section: BOIL_POTATOES },
-        { step: 'Drain. Transfer to a bowl.', section: BOIL_POTATOES },
+        { step: `Peel half the potatoes.`, section: BOIL_POTATOES },
+        { step: `Cut the peeled potatoes into 1 inch pieces.`, section: BOIL_POTATOES },
+        { step: `Over medium-high heat, add the peeled potato pieces and salted water to a medium saucepan. Bring to a simmer.`, section: BOIL_POTATOES },
+        { step: `Cook the potatoes until tender (about 15 minutes).`, section: BOIL_POTATOES },
+        { step: `Drain. Transfer to a bowl.`, section: BOIL_POTATOES },
 
-        { step: 'Peel the remaining potatoes.', section: PREP_POTATO_BATTER },
-        { step: 'Grate the potatoes.', section: PREP_POTATO_BATTER },
-        { step: 'Wrap the potatoes in a kitchen towel and squeeze.', section: PREP_POTATO_BATTER },
+        { step: `Peel the remaining potatoes.`, section: PREP_POTATO_BATTER },
+        { step: `Grate the potatoes.`, section: PREP_POTATO_BATTER },
+        { step: `Wrap the potatoes in a kitchen towel and squeeze.`, section: PREP_POTATO_BATTER },
         { step: `Add grated potatoes and the "${FLOUR_MIXTURE_SECTION}" section ingredients to the bowl.`, section: PREP_POTATO_BATTER },
 
-        { step: 'Form patties with about 1/3 cup worth of batter.', section: FRY_PATTIES },
-        { step: 'Over medium heat, heat butter in a large skillet.', section: FRY_PATTIES },
-        { step: 'Cook half the patties. Occasionally flipping. Cook until golden (about 8 minutes per batch).', section: FRY_PATTIES },
-        { step: 'Serve with sour cream.', section: SECTIONS.SERVE },
+        { step: `Form patties with about 1/3 cup worth of batter.`, section: FRY_PATTIES },
+        { step: `Over medium heat, heat butter in a large skillet.`, section: FRY_PATTIES },
+        { step: `Cook half the patties. Occasionally flipping. Cook until golden (about 8 minutes per batch).`, section: FRY_PATTIES },
+        { step: `Serve with sour cream.`, section: SECTIONS.SERVE },
     ],
     store: [
         // {

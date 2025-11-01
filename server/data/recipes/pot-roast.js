@@ -67,21 +67,21 @@ module.exports = {
         ALUMINUM_FOIL,
     ],
     directions: [
-        { step: 'Preheat oven to 275ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat oven to 275ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: 'Salt and pepper the beef generously.', section: SECTIONS.PREP_BEEF },
+        { step: `Salt and pepper the beef generously.`, section: SECTIONS.PREP_BEEF },
 
-        { step: 'Over medium-high heat, heat olive oil in a large pan.', section: SEAR },
+        { step: `Over medium-high heat, heat olive oil in a large pan.`, section: SEAR },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Brown on both sides. Transfer to the roasting pan.`, section: SEAR },
-        { step: 'In the same pan, add a little more oil.', section: SEAR },
-        { step: 'Sear the beef on all sides. Transfer beef to the roasting pan.', section: SEAR },
+        { step: `In the same pan, add a little more oil.`, section: SEAR },
+        { step: `Sear the beef on all sides. Transfer beef to the roasting pan.`, section: SEAR },
         
         { step: `In the roasting pan, add the "${HERBS_AND_LIQUIDS}" section ingredients.`, section: SECTIONS.PREP_PAN },
-        { step: 'Cover the roasting pan with aluminum foil.', section: SECTIONS.PREP_PAN },
+        { step: `Cover the roasting pan with aluminum foil.`, section: SECTIONS.PREP_PAN },
 
-        { step: 'Roast until tender (about 3 hours).', section: SECTIONS.BAKE },
+        { step: `Roast until tender (about 3 hours).`, section: SECTIONS.BAKE },
 
-        { step: 'Enjoy this simple roast.', section: SECTIONS.SERVE },
+        { step: `Enjoy this simple roast.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

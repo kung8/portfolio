@@ -63,33 +63,33 @@ module.exports = {
     ],
     directions: [
         { step: `In a saucepan, combine "${MILK_MIXTURE_SECTION}" section ingredients.`, section: HEAT_MILK_SECTION },
-        { step: 'Over medium heat, bring to a simmer and bubbles around the edges. Do not let it boil.', section: HEAT_MILK_SECTION },
-        { step: 'Turn off heat.', section: HEAT_MILK_SECTION },
-        { step: 'Remove the vanilla bean and scrape the seeds. Set pod and seeds aside.', section: HEAT_MILK_SECTION },
+        { step: `Over medium heat, bring to a simmer and bubbles around the edges. Do not let it boil.`, section: HEAT_MILK_SECTION },
+        { step: `Turn off heat.`, section: HEAT_MILK_SECTION },
+        { step: `Remove the vanilla bean and scrape the seeds. Set pod and seeds aside.`, section: HEAT_MILK_SECTION },
 
         { step: `In a mixing bowl, whisk the "${SUGAR_EGGS_MIXTURE_SECTION}" section ingredients until thickened.`, section: MIX_SUGAR_AND_EGGS_SECTION },
-        { step: 'Add cocoa powder. Whisk.', section: MIX_SUGAR_AND_EGGS_SECTION },
+        { step: `Add cocoa powder. Whisk.`, section: MIX_SUGAR_AND_EGGS_SECTION },
 
         { step: `While whisking the egg mixture, slowly add milk mixture.`, section: COMBINE_MIXTURES_SECTION },
-        { step: 'Transfer mixture to the saucepan.', section: COMBINE_MIXTURES_SECTION },
-        { step: 'Re-add the vanilla pod and seeds.', section: COMBINE_MIXTURES_SECTION },
+        { step: `Transfer mixture to the saucepan.`, section: COMBINE_MIXTURES_SECTION },
+        { step: `Re-add the vanilla pod and seeds.`, section: COMBINE_MIXTURES_SECTION },
 
-        { step: 'Over low heat, whisk until the custard thickens.', section: THICKEN_CUSTARD },
-        { step: 'Run through a strainer. Let cool and refrigerate.', section: THICKEN_CUSTARD },
+        { step: `Over low heat, whisk until the custard thickens.`, section: THICKEN_CUSTARD },
+        { step: `Run through a strainer. Let cool and refrigerate.`, section: THICKEN_CUSTARD },
 
         { step: `In a small bowl, combine the "${CHOCOLATE_MIXTURE_SECTION}" section ingredients.`, section: PREP_CHOCOLATE },
-        { step: 'Disard vanilla pods.', section: PREP_CHOCOLATE },
-        { step: 'Pour custard through a strainer over chocolate. Whisk until chocolate is melted.', section: PREP_CHOCOLATE },
+        { step: `Disard vanilla pods.`, section: PREP_CHOCOLATE },
+        { step: `Pour custard through a strainer over chocolate. Whisk until chocolate is melted.`, section: PREP_CHOCOLATE },
 
-        { step: 'Cover with parchment paper to prevent a film from forming. Let it touch the surface of the custard.', section: CHILL_CUSTARD },
-        { step: 'Place in the fridge until cool and thickened (at least 3 hours or overnight).', section: CHILL_CUSTARD },
+        { step: `Cover with parchment paper to prevent a film from forming. Let it touch the surface of the custard.`, section: CHILL_CUSTARD },
+        { step: `Place in the fridge until cool and thickened (at least 3 hours or overnight).`, section: CHILL_CUSTARD },
 
-        { step: 'In an ice cream maker, churn the custard until it becomes a soft-serve consistency.', section: CHURN_CUSTARD },
+        { step: `In an ice cream maker, churn the custard until it becomes a soft-serve consistency.`, section: CHURN_CUSTARD },
 
-        { step: 'Cover with parchment paper and plastic wrap. Let the paper and wrap touch the surface of the custard.', section: SECTIONS.FREEZE },
-        { step: 'Freeze until set (about 4 to 6 hours).', section: SECTIONS.FREEZE, img: gelato1 },
+        { step: `Cover with parchment paper and plastic wrap. Let the paper and wrap touch the surface of the custard.`, section: SECTIONS.FREEZE },
+        { step: `Freeze until set (about 4 to 6 hours).`, section: SECTIONS.FREEZE, img: gelato1 },
 
-        { step: 'Enjoy this delicious Italian dessert.', section: SECTIONS.SERVE },
+        { step: `Enjoy this delicious Italian dessert.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

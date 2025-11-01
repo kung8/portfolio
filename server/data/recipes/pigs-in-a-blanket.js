@@ -43,18 +43,18 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: 'Preheat oven to 375ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat oven to 375ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: 'Line baking sheet with aluminum foil.', section: SECTIONS.PREP_PAN },
+        { step: `Line baking sheet with aluminum foil.`, section: SECTIONS.PREP_PAN },
 
-        { step: 'Cut each croissant dough triangle into thirds.', section: SECTIONS.ASSEMBLE },
-        { step: 'Place hot dog on one end of the croissant piece.', section: SECTIONS.ASSEMBLE },
-        { step: 'Roll until it is snugly wrapped inside its blanket.', section: SECTIONS.ASSEMBLE },
-        { step: 'Separate the egg white and the yolk. Lightly brush some of the yolk over the blanket to create a seal.', section: SECTIONS.ASSEMBLE },
+        { step: `Cut each croissant dough triangle into thirds.`, section: SECTIONS.ASSEMBLE },
+        { step: `Place hot dog on one end of the croissant piece.`, section: SECTIONS.ASSEMBLE },
+        { step: `Roll until it is snugly wrapped inside its blanket.`, section: SECTIONS.ASSEMBLE },
+        { step: `Separate the egg white and the yolk. Lightly brush some of the yolk over the blanket to create a seal.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Bake until golden brown (about 12 to 15 minutes).', section: SECTIONS.BAKE },
+        { step: `Bake until golden brown (about 12 to 15 minutes).`, section: SECTIONS.BAKE },
 
-        { step: 'Serve with your favorite condiment, and enjoy this easy tailgate hors d\'oeuvre!', section: SECTIONS.SERVE },
+        { step: `Serve with your favorite condiment, and enjoy this easy tailgate hors d'oeuvre!`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Tubs of croissant dough usually make about 8 croissants.' },

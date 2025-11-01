@@ -84,12 +84,12 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'In a large pot over medium-high heat, combine beef, chili powder, onion, jalapeno, and garlic.', section: BEEF, img: chili1 },
-        { step: 'Brown the content, mix occasionally, and drain any fat.', section: BEEF, img: chili2 },
-        { step: 'Add the cumin, bell pepper, different tomato variations, beans, broth, brown sugar, salt and pepper.', section: VEGGIES, img: chili3 },
-        { step: 'Bring to a boil.', section: VEGGIES },
-        { step: 'Lower heat and cook for 45 - 60 minutes or until it has become the desired thickness.', section: VEGGIES },
-        { step: 'Serve with your favorite toppings and feel free to add as much spice as you can handle or desire.', section: SECTIONS.TOPPINGS, img: [chili5, chili6] },
+        { step: `In a large pot over medium-high heat, combine beef, chili powder, onion, jalapeno, and garlic.`, section: BEEF, img: chili1 },
+        { step: `Brown the content, mix occasionally, and drain any fat.`, section: BEEF, img: chili2 },
+        { step: `Add the cumin, bell pepper, different tomato variations, beans, broth, brown sugar, salt and pepper.`, section: VEGGIES, img: chili3 },
+        { step: `Bring to a boil.`, section: VEGGIES },
+        { step: `Lower heat and cook for 45 - 60 minutes or until it has become the desired thickness.`, section: VEGGIES },
+        { step: `Serve with your favorite toppings and feel free to add as much spice as you can handle or desire.`, section: SECTIONS.TOPPINGS, img: [chili5, chili6] },
     ],
     notes: [
         { note: 'With one jalapeno pepper it is very mild and a great base for those who do not like spicy food.' },

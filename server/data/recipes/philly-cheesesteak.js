@@ -2,7 +2,7 @@ const cheesesteak1 = '../assets/Products/philly-cheesesteak-1.jpeg';
 const cheesesteak2 = '../assets/Products/philly-cheesesteak-2.jpeg';
 const cheesesteak3 = '../assets/Products/philly-cheesesteak-3.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BEEF_RIBEYE_STEAK,
     BLACK_PEPPER,
@@ -68,19 +68,19 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: 'Over high heat, heat oil in pan.', section: SECTIONS.COOK_VEGGIES },
+        { step: `Over high heat, heat oil in pan.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Caramelize and saute until browned. Set aside.`, section: SECTIONS.COOK_VEGGIES, img: cheesesteak2 },
 
         { step: `In the same pan, add the "${SECTIONS.BEEF}" section ingredients`, section: SECTIONS.COOK_BEEF },
         { step: `Saute until cooked. Set aside.`, section: SECTIONS.COOK_BEEF, img: cheesesteak3 },
 
-        { step: 'Re-add the veggies. Stir.', section: SECTIONS.ASSEMBLE },
-        { step: 'Layer cheese slices on top. Let it melt (about a minute).', section: SECTIONS.ASSEMBLE },
-        { step: 'Optionally toast the buns.', section: SECTIONS.ASSEMBLE },
-        { step: 'Open up hoagie bread and fill to your heart\'s content.', section: SECTIONS.ASSEMBLE },
+        { step: `Re-add the veggies. Stir.`, section: SECTIONS.ASSEMBLE },
+        { step: `Layer cheese slices on top. Let it melt (about a minute).`, section: SECTIONS.ASSEMBLE },
+        { step: `Optionally toast the buns.`, section: SECTIONS.ASSEMBLE },
+        { step: `Open up hoagie bread and fill to your heart's content.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Enjoy the taste of freedom!', section: SECTIONS.SERVE },
+        { step: `Enjoy the taste of freedom!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

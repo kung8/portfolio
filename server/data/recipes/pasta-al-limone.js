@@ -61,18 +61,18 @@ module.exports = {
         { name: 'saucepan' },
     ],
     directions: [
-        { step: 'Over medium heat, add butter, lemon juice and lemon zest to a large pan. Stir occasionally.', section: SECTIONS.COOK_SAUCE, img: limone1 },
-        { step: 'Let the butter melt and simmer for 20 seconds.', section: SECTIONS.COOK_SAUCE, img: limone2 },
-        { step: 'Add the heavy cream, black pepper and salt. Mix.', section: SECTIONS.COOK_SAUCE, img: limone3 },
-        { step: 'Reduce to medium-low heat. Bring to a gentle simmer. Let it simmer while you cook the pasta.', section: SECTIONS.COOK_SAUCE },
+        { step: `Over medium heat, add butter, lemon juice and lemon zest to a large pan. Stir occasionally.`, section: SECTIONS.COOK_SAUCE, img: limone1 },
+        { step: `Let the butter melt and simmer for 20 seconds.`, section: SECTIONS.COOK_SAUCE, img: limone2 },
+        { step: `Add the heavy cream, black pepper and salt. Mix.`, section: SECTIONS.COOK_SAUCE, img: limone3 },
+        { step: `Reduce to medium-low heat. Bring to a gentle simmer. Let it simmer while you cook the pasta.`, section: SECTIONS.COOK_SAUCE },
 
-        { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: SECTIONS.COOK_NOODLES },
-        { step: 'Add the pasta and cook until al dente.', section: SECTIONS.COOK_NOODLES, img: limone5 },
-        { step: 'Drain the pasta.', section: SECTIONS.COOK_NOODLES },
+        { step: `Over medium-high heat, bring a pot of salted water to a boil.`, section: SECTIONS.COOK_NOODLES },
+        { step: `Add the pasta and cook until al dente.`, section: SECTIONS.COOK_NOODLES, img: limone5 },
+        { step: `Drain the pasta.`, section: SECTIONS.COOK_NOODLES },
 
-        { step: 'Reduce to low heat. Add the parmesan to the sauce and stir.', section: COMBINE, img: limone4 },
-        { step: 'Add pasta to the sauce. Combine.', section: COMBINE, img: [limone6, limone7] },
-        { step: 'Serve immediately and garnish with more of the toppings as desired. Enjoy the fresh bright flavors of this dish.', section: SECTIONS.SERVE, img: [limone8, limone9] },
+        { step: `Reduce to low heat. Add the parmesan to the sauce and stir.`, section: COMBINE, img: limone4 },
+        { step: `Add pasta to the sauce. Combine.`, section: COMBINE, img: [limone6, limone7] },
+        { step: `Serve immediately and garnish with more of the toppings as desired. Enjoy the fresh bright flavors of this dish.`, section: SECTIONS.SERVE, img: [limone8, limone9] },
     ],
     store: [
         {

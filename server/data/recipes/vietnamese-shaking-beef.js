@@ -74,18 +74,18 @@ module.exports = {
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.MARINATE_BEEF },
-        { step: 'Marinate at room temperature for 30 minutes.', section: SECTIONS.MARINATE_BEEF, img: shakingBeef1 },
+        { step: `Marinate at room temperature for 30 minutes.`, section: SECTIONS.MARINATE_BEEF, img: shakingBeef1 },
 
         { step: `In a small bowl, combine the "${RED_ONION_SAUCE}" section ingredients. Set aside.`, section: PREP_RED_ONION_SAUCE, img: shakingBeef2 },
-        { step: 'Arrange arugula and tomato slices on a serving plate.', section: PLATE_UP_VEGETABLES, img: shakingBeef3 },
+        { step: `Arrange arugula and tomato slices on a serving plate.`, section: PLATE_UP_VEGETABLES, img: shakingBeef3 },
 
-        { step: 'Over high heat, add oil to a wok. Tilt to spread the oil so it coats the wok.', section: SECTIONS.COOK_BEEF },
-        { step: 'Add beef in batches. Sear until all sides are charred and medium rare (about 3 to 5 minutes).', section: SECTIONS.COOK_BEEF, img: shakingBeef4 },
-        { step: 'Remove beef. Continue with as many batches as needed.', section: SECTIONS.COOK_BEEF },
-        { step: 'Arrange beef on top of the bed of arugula and tomatoes.', section: SECTIONS.ASSEMBLE, img: shakingBeef5 },
-        { step: 'Optionally cook the red onion sauce over medium heat for 1 to 2 minutes (by itself or with the beef).', section: SECTIONS.ASSEMBLE },
-        { step: 'Top with the red onion sauce.', section: SECTIONS.ASSEMBLE, img: shakingBeef6 },
-        { step: 'Enjoy this Vietnamese dish with rice!', section: SECTIONS.SERVE, img: shakingBeef8 },
+        { step: `Over high heat, add oil to a wok. Tilt to spread the oil so it coats the wok.`, section: SECTIONS.COOK_BEEF },
+        { step: `Add beef in batches. Sear until all sides are charred and medium rare (about 3 to 5 minutes).`, section: SECTIONS.COOK_BEEF, img: shakingBeef4 },
+        { step: `Remove beef. Continue with as many batches as needed.`, section: SECTIONS.COOK_BEEF },
+        { step: `Arrange beef on top of the bed of arugula and tomatoes.`, section: SECTIONS.ASSEMBLE, img: shakingBeef5 },
+        { step: `Optionally cook the red onion sauce over medium heat for 1 to 2 minutes (by itself or with the beef).`, section: SECTIONS.ASSEMBLE },
+        { step: `Top with the red onion sauce.`, section: SECTIONS.ASSEMBLE, img: shakingBeef6 },
+        { step: `Enjoy this Vietnamese dish with rice!`, section: SECTIONS.SERVE, img: shakingBeef8 },
     ],
     notes: [
         { note: 'The original recipe calls for watercress, but it had too strong of a peppery flavor and it overpowered the dish. Baby arugula is a great substitute that still gives a peppery flavor but is more mild. Plus baby arugula is easier to find.' },

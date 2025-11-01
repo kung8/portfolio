@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CARDAMOM, CINNAMON, CLOVES, CORIANDER, CUMIN, GARLIC, GINGER, LARGE_POT, MANGO, MASHER, NIGELLA_SEED, RED_CHILI, SALT, STOVE, TURMERIC, VEGETABLE_OIL, WHITE_SUGAR, WHITE_VINEGAR } = require('./ingredients');
 
 const MANGO_SECTION = 'Mango';
@@ -55,15 +55,15 @@ module.exports = {
         MASHER,
     ],
     directions: [
-        { step: 'Over medium-high heat, heat oil in a large pot.', section: SECTIONS.COOK_VEGGIES },
+        { step: `Over medium-high heat, heat oil in a large pot.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Saute for 1 minute.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Add the "${SECTIONS.SEASONINGS}" section ingredients. Saute for 1 minute.`, section: COOK_SPICES },
         { step: `Add the "${MANGO_SECTION}" section ingredients. Stir and bring to a boil.`, section: COOK_MANGO },
-        { step: 'Reduce to medium-low heat.', section: COOK_MANGO },
-        { step: 'Let it simmer for 1 hour.', section: COOK_MANGO },
-        { step: 'Remove from heat and let it cool.', section: COOK_MANGO },
-        { step: 'Optionally mash using a potato masher.', section: COOK_MANGO },
-        { step: 'Enjoy this with samosas, grilled meats, sandwiches, wraps and whatever you want.', section: SECTIONS.SERVE },
+        { step: `Reduce to medium-low heat.`, section: COOK_MANGO },
+        { step: `Let it simmer for 1 hour.`, section: COOK_MANGO },
+        { step: `Remove from heat and let it cool.`, section: COOK_MANGO },
+        { step: `Optionally mash using a potato masher.`, section: COOK_MANGO },
+        { step: `Enjoy this with samosas, grilled meats, sandwiches, wraps and whatever you want.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

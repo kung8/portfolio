@@ -70,24 +70,24 @@ module.exports = {
         SERVING_BOWL,
     ],
     directions: [
-        { step: 'Peel the ginger.', section: PREP_GINGER },
-        { step: 'Cut the ginger into long, thin strips. Do not worry they will cook down.', section: PREP_GINGER, img: ginger1 },
+        { step: `Peel the ginger.`, section: PREP_GINGER },
+        { step: `Cut the ginger into long, thin strips. Do not worry they will cook down.`, section: PREP_GINGER, img: ginger1 },
 
-        { step: 'Chop the chicken thighs into roughly 2 inch pieces. Place them in a large bowl.', section: SECTIONS.PREP_CHICKEN },
+        { step: `Chop the chicken thighs into roughly 2 inch pieces. Place them in a large bowl.`, section: SECTIONS.PREP_CHICKEN },
 
-        { step: 'Over medium-high heat, place wok on stove.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Add half the chicken in a single layer.', section: SECTIONS.COOK_CHICKEN, img: ginger2 },
-        { step: 'Season with salt and pepper as desired.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Let it brown without stirring (about 3 to 5 minutes).', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Flip chicken. Brown other side (about 3 to 5 minutes).', section: SECTIONS.COOK_CHICKEN },
+        { step: `Over medium-high heat, place wok on stove.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Add half the chicken in a single layer.`, section: SECTIONS.COOK_CHICKEN, img: ginger2 },
+        { step: `Season with salt and pepper as desired.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Let it brown without stirring (about 3 to 5 minutes).`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Flip chicken. Brown other side (about 3 to 5 minutes).`, section: SECTIONS.COOK_CHICKEN },
 
-        { step: 'Add half of the ginger towards the bottom of the wok. Let it crisp (about 3 to 5 minutes).', section: COOK_GINGER, img: ginger3 },
+        { step: `Add half of the ginger towards the bottom of the wok. Let it crisp (about 3 to 5 minutes).`, section: COOK_GINGER, img: ginger3 },
 
-        { step: 'Add the soy sauce and cornstarch. Cook for a few minutes.', section: SECTIONS.COOK_SAUCE, img: ginger4 },
+        { step: `Add the soy sauce and cornstarch. Cook for a few minutes.`, section: SECTIONS.COOK_SAUCE, img: ginger4 },
 
-        { step: 'Transfer the cooked chicken to a serving bowl. And cook the second batch.', section: SECTIONS.TRANSFER, img: ginger5 },
+        { step: `Transfer the cooked chicken to a serving bowl. And cook the second batch.`, section: SECTIONS.TRANSFER, img: ginger5 },
 
-        { step: 'Eat one of my favorite childhood dishes with steamed rice.', section: SECTIONS.SERVE, img: ginger6 },
+        { step: `Eat one of my favorite childhood dishes with steamed rice.`, section: SECTIONS.SERVE, img: ginger6 },
     ],
     notes: [
         { note: 'If you are using low-sodium soy sauce, you can be a little more generous with the salt.' },

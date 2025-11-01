@@ -4,7 +4,7 @@ const dolmeh3 = '../assets/Products/dolmeh-3.jpeg';
 const dolmeh4 = '../assets/Products/dolmeh-4.jpeg';
 const dolmeh5 = '../assets/Products/dolmeh-5.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BASMATI_RICE, BLACK_PEPPER, CHICKPEA, CILANTRO, DILL, FRYING_PAN, GARLIC, GRAPE_LEAF, GREEN_ONION, GROUND_BEEF, LARGE_POT, LEMON_JUICE, OLIVE_OIL, PARSLEY, PLATE, SALT, STOVE, TARRAGON, WATER, WHITE_SUGAR, YELLOW_ONION } = require('./ingredients');
 
 const DOLMEH_SECTION = 'Dolmeh';
@@ -33,7 +33,7 @@ module.exports = {
             label: 'Dolmeh', 
             link: 'https://www.unicornsinthekitchen.com/persian-dolmeh-recipe-video/',
             authors: ['Shadi Hasanzadenemati'],
-            finder: 'Kasra Kamravani\'s Mom', 
+            finder: "Kasra Kamravani's Mom", 
         }
     ],
     ingredients: [
@@ -68,27 +68,27 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: 'Over medium heat, heat oil in pan.', section: SECTIONS.PREP_FILLING },
-        { step: 'Add onion and garlic. Saute until golden brown.', section: SECTIONS.PREP_FILLING },
-        { step: 'Add beef. Brown.', section: SECTIONS.PREP_FILLING, img: dolmeh1 },
+        { step: `Over medium heat, heat oil in pan.`, section: SECTIONS.PREP_FILLING },
+        { step: `Add onion and garlic. Saute until golden brown.`, section: SECTIONS.PREP_FILLING },
+        { step: `Add beef. Brown.`, section: SECTIONS.PREP_FILLING, img: dolmeh1 },
         { step: `Add "${SECTIONS.RICE}" section ingredients.`, section: SECTIONS.PREP_FILLING },
         { step: `Add "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_FILLING },
         { step: `Add "${SECTIONS.VEGGIES}" section ingredients. Cook for a few minutes.`, section: SECTIONS.PREP_FILLING, img: dolmeh2 },
 
-        { step: 'On a clean surface, lay grape leaves flat.', section: SECTIONS.WRAP },
-        { step: 'Add 1 tablespoon of filling in the center.', section: SECTIONS.WRAP },
-        { step: 'Fold over the sides.', section: SECTIONS.WRAP },
-        { step: 'Place folded side down.', section: SECTIONS.WRAP, img: dolmeh3 },
+        { step: `On a clean surface, lay grape leaves flat.`, section: SECTIONS.WRAP },
+        { step: `Add 1 tablespoon of filling in the center.`, section: SECTIONS.WRAP },
+        { step: `Fold over the sides.`, section: SECTIONS.WRAP },
+        { step: `Place folded side down.`, section: SECTIONS.WRAP, img: dolmeh3 },
 
-        { step: 'In a pot, add oil and cover the bottom with grape leaves.', section: COOK_DOLMEH },
-        { step: 'Place stuffed dolmeh on the grape leaves tightly (folded side down). Layer until all dolmeh are in the pot.', section: COOK_DOLMEH },
-        { step: 'Press down the dolmeh with a lid or plate.', section: COOK_DOLMEH },
+        { step: `In a pot, add oil and cover the bottom with grape leaves.`, section: COOK_DOLMEH },
+        { step: `Place stuffed dolmeh on the grape leaves tightly (folded side down). Layer until all dolmeh are in the pot.`, section: COOK_DOLMEH },
+        { step: `Press down the dolmeh with a lid or plate.`, section: COOK_DOLMEH },
         { step: `In a small bowl, combine "${LEMON_SUGAR_MIX}" section ingredients. Pour into pot.`, section: COOK_DOLMEH, img: dolmeh4 },
-        { step: 'Cover with a lid. Place over medium heat.', section: COOK_DOLMEH },
-        { step: 'Once water simmers, turn heat to low.', section: COOK_DOLMEH },
-        { step: 'Cook until all the water has been absorbed and grape leaves should be cooked (about 1 hour). Dolmeh should be soft and rice is cooked completely.', section: COOK_DOLMEH },
+        { step: `Cover with a lid. Place over medium heat.`, section: COOK_DOLMEH },
+        { step: `Once water simmers, turn heat to low.`, section: COOK_DOLMEH },
+        { step: `Cook until all the water has been absorbed and grape leaves should be cooked (about 1 hour). Dolmeh should be soft and rice is cooked completely.`, section: COOK_DOLMEH },
 
-        { step: 'Enjoy this Persian dish!', section: SECTIONS.SERVE },
+        { step: `Enjoy this Persian dish!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

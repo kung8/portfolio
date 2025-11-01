@@ -51,18 +51,18 @@ module.exports = {
         BAKING_PAN,
     ],
     directions: [
-        { step: 'In a stand mixer, beat the butter until fluffy (about 3 to 5 minutes).', section: SECTIONS.PREP_BATTER },
-        { step: 'Gradually add powdered sugar while butter is mixing.', section: SECTIONS.PREP_BATTER },
-        { step: 'Add flour and salt. Mix on low.', section: SECTIONS.PREP_BATTER },
-        { step: 'Pour batter into the baking pan.', section: SECTIONS.PREP_BATTER },
-        { step: 'Refrigerate for about 30 minutes.', section: SECTIONS.PREP_BATTER },
-        { step: 'Slice into rectangles.', section: SECTIONS.PREP_BATTER },
+        { step: `In a stand mixer, beat the butter until fluffy (about 3 to 5 minutes).`, section: SECTIONS.PREP_BATTER },
+        { step: `Gradually add powdered sugar while butter is mixing.`, section: SECTIONS.PREP_BATTER },
+        { step: `Add flour and salt. Mix on low.`, section: SECTIONS.PREP_BATTER },
+        { step: `Pour batter into the baking pan.`, section: SECTIONS.PREP_BATTER },
+        { step: `Refrigerate for about 30 minutes.`, section: SECTIONS.PREP_BATTER },
+        { step: `Slice into rectangles.`, section: SECTIONS.PREP_BATTER },
 
-        { step: 'Preheat the oven to 300ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat the oven to 300ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: 'Bake until golden brown (about 45 to 60 minutes).', section: SECTIONS.BAKE },
+        { step: `Bake until golden brown (about 45 to 60 minutes).`, section: SECTIONS.BAKE },
 
-        { step: 'Enjoy these biscuits while you watch or re-watch the Ted Lasso television show. Cheers!', section: SECTIONS.SERVE },
+        { step: `Enjoy these biscuits while you watch or re-watch the Ted Lasso television show. Cheers!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

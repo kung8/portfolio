@@ -14,7 +14,7 @@ const curry13 = '../assets/Products/japanese-curry-13.jpeg';
 const curry14 = '../assets/Products/japanese-curry-14.jpeg';
 const curry15 = '../assets/Products/japanese-curry-15.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { APPLE, BAMBOO_SKEWERS, BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_THIGH, CARROT, CHICKEN_BROTH, GARLIC, GINGER, HONEY, JAPANESE_CURRY_MIX, KETCHUP, LADLE, LARGE_POT, LIGHT_SOY_SAUCE, STOVE, STRAINER, VEGETABLE_OIL, YELLOW_ONION, YUKON_GOLD_POTATO } = require('./ingredients');
 
 const PREP_VEGGIES = 'Prep Veggies';
@@ -71,23 +71,23 @@ module.exports = {
         LADLE,
     ],
     directions: [
-        { step: 'Prep the vegetables, chicken and aromatics.', section: PREP_VEGGIES, img: curry2 },
-        { step: 'Season the sliced chicken with black pepper.', section: PREP_CHICKEN, img: curry1 },
-        { step: 'Over medium heat, add vegetable oil to a large pot.', section: COOK_CURRY },
-        { step: 'Add onions. Saute and stir occasionally until translucent, golden and tender (about 5 minutes). Caramelizing the onions adds flavor.', section: COOK_CURRY, img: curry3 },
-        { step: 'Add garlic and ginger. Mix.', section: COOK_CURRY, img: curry4 },
-        { step: 'Add chicken. Cook and stir often until no longer pink. Reduce heat to medium-low temporarily if the onions are too brown.', section: COOK_CURRY, img: [curry5, curry6] },
-        { step: 'Add chicken broth.', section: COOK_CURRY, img: curry7 },
-        { step: 'Add apple, honey, soy sauce and ketchup. Mix.', section: COOK_CURRY, img: curry8 },
-        { step: 'Add carrots and potatoes.', section: COOK_CURRY, img: curry9 },
-        { step: 'Smooth out the ingredients so the broth barely covers ingredients. More liquid will be released from the meat and vegetables.', section: COOK_CURRY },
-        { step: 'Reduce heat to medium-low heat and cover with a lid. Let it simmer for 15 minutes.', section: COOK_CURRY, img: curry10 },
-        { step: 'Once boiling, skim the scum and foams off the surface using a fine-mesh strainer.', section: COOK_CURRY },
-        { step: 'Cook covered until a skewer can go through the carrots and potatoes. Turn off heat.', section: COOK_CURRY },
-        { step: 'In a ladle of broth, add 1 to 2 cubes of the Japanese curry mix. Stir within the ladle to help it dissolve then mix it into the pot.', section: COOK_CURRY, img: [curry11, curry12] },
-        { step: 'Continue this process with the remaining cubes. It should be about 1 cube per person (so 8 in total for this recipe).', section: COOK_CURRY },
-        { step: 'Over medium-low heat, simmer uncovered while stirring often until the curry becomes thick (about 5 to 10 minutes). Thin curry out with water if needed. When stirring, be sure to scrape the bottom to prevent burning.', section: COOK_CURRY, img: curry13 },
-        { step: 'Enjoy this curry over Japanese rice.', section: SECTIONS.SERVE, img: curry15 },
+        { step: `Prep the vegetables, chicken and aromatics.`, section: PREP_VEGGIES, img: curry2 },
+        { step: `Season the sliced chicken with black pepper.`, section: PREP_CHICKEN, img: curry1 },
+        { step: `Over medium heat, add vegetable oil to a large pot.`, section: COOK_CURRY },
+        { step: `Add onions. Saute and stir occasionally until translucent, golden and tender (about 5 minutes). Caramelizing the onions adds flavor.`, section: COOK_CURRY, img: curry3 },
+        { step: `Add garlic and ginger. Mix.`, section: COOK_CURRY, img: curry4 },
+        { step: `Add chicken. Cook and stir often until no longer pink. Reduce heat to medium-low temporarily if the onions are too brown.`, section: COOK_CURRY, img: [curry5, curry6] },
+        { step: `Add chicken broth.`, section: COOK_CURRY, img: curry7 },
+        { step: `Add apple, honey, soy sauce and ketchup. Mix.`, section: COOK_CURRY, img: curry8 },
+        { step: `Add carrots and potatoes.`, section: COOK_CURRY, img: curry9 },
+        { step: `Smooth out the ingredients so the broth barely covers ingredients. More liquid will be released from the meat and vegetables.`, section: COOK_CURRY },
+        { step: `Reduce heat to medium-low heat and cover with a lid. Let it simmer for 15 minutes.`, section: COOK_CURRY, img: curry10 },
+        { step: `Once boiling, skim the scum and foams off the surface using a fine-mesh strainer.`, section: COOK_CURRY },
+        { step: `Cook covered until a skewer can go through the carrots and potatoes. Turn off heat.`, section: COOK_CURRY },
+        { step: `In a ladle of broth, add 1 to 2 cubes of the Japanese curry mix. Stir within the ladle to help it dissolve then mix it into the pot.`, section: COOK_CURRY, img: [curry11, curry12] },
+        { step: `Continue this process with the remaining cubes. It should be about 1 cube per person (so 8 in total for this recipe).`, section: COOK_CURRY },
+        { step: `Over medium-low heat, simmer uncovered while stirring often until the curry becomes thick (about 5 to 10 minutes). Thin curry out with water if needed. When stirring, be sure to scrape the bottom to prevent burning.`, section: COOK_CURRY, img: curry13 },
+        { step: `Enjoy this curry over Japanese rice.`, section: SECTIONS.SERVE, img: curry15 },
     ],
     store: [
         {

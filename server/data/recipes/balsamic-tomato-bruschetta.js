@@ -4,7 +4,7 @@ const bruschetta3 = '../assets/Products/bruschetta-3.jpeg';
 const bruschetta4 = '../assets/Products/bruschetta-4.jpeg';
 const bruschetta5 = '../assets/Products/bruschetta-5.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAGUETTE, BAKING_SHEET, BALSAMIC_VINEGAR, BASIL_LEAF, BLACK_PEPPER, CHERRY_TOMATO, GARLIC, MEDIUM_BOWL, OLIVE_OIL, OVEN, SALT, SHALLOT } = require('./ingredients');
 
 const BAGUETTE_SECTION = 'Baguette';
@@ -59,16 +59,16 @@ module.exports = {
         MEDIUM_BOWL,
     ],
     directions: [
-        { step: 'Preheat the oven to 375ºF.', section: BAKE_BAGUETTE },
-        { step: 'Place sliced baguette on baking sheet.', section: BAKE_BAGUETTE, img: bruschetta2 },
-        { step: 'Drizzle olive oil over bread (do not drench).', section: BAKE_BAGUETTE },
-        { step: 'Season with salt and pepper.', section: BAKE_BAGUETTE },
-        { step: 'Flip slices over and repeat with the other side.', section: BAKE_BAGUETTE },
-        { step: 'Bake until golden brown and crispy (about 5 to 7 minutes on each side). Be careful not to burn them.', section: BAKE_BAGUETTE },
-        { step: 'Drain the diced tomatoes as needed. Optionally add a pinch of salt.', section: PREP_BRUSCHETTA, img: bruschetta1 },
+        { step: `Preheat the oven to 375ºF.`, section: BAKE_BAGUETTE },
+        { step: `Place sliced baguette on baking sheet.`, section: BAKE_BAGUETTE, img: bruschetta2 },
+        { step: `Drizzle olive oil over bread (do not drench).`, section: BAKE_BAGUETTE },
+        { step: `Season with salt and pepper.`, section: BAKE_BAGUETTE },
+        { step: `Flip slices over and repeat with the other side.`, section: BAKE_BAGUETTE },
+        { step: `Bake until golden brown and crispy (about 5 to 7 minutes on each side). Be careful not to burn them.`, section: BAKE_BAGUETTE },
+        { step: `Drain the diced tomatoes as needed. Optionally add a pinch of salt.`, section: PREP_BRUSCHETTA, img: bruschetta1 },
         { step: `In a medium bowl, combine the "${BRUSCHETTA_SECTION}" section ingredients.`, section: PREP_BRUSCHETTA, img: bruschetta3 },
-        { step: 'Top each slice with about 2 tablespoons of the bruschetta mixture.', section: SECTIONS.ASSEMBLE, img: bruschetta5 },
-        { step: 'Serve this appetizer immediately topped with more basil.', section: SECTIONS.SERVE },
+        { step: `Top each slice with about 2 tablespoons of the bruschetta mixture.`, section: SECTIONS.ASSEMBLE, img: bruschetta5 },
+        { step: `Serve this appetizer immediately topped with more basil.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

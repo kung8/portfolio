@@ -10,7 +10,7 @@ const bowl9 = '../assets/Products/piri-piri-chicken-bowl-9.jpeg';
 const bowl10 = '../assets/Products/piri-piri-chicken-bowl-10.jpeg';
 const bowl11 = '../assets/Products/piri-piri-chicken-bowl-11.jpeg';
 const bowl12 = '../assets/Products/piri-piri-chicken-bowl-12.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { AVOCADO, BABY_ARUGULA, BASMATI_RICE, BAY_LEAF, BLACK_PEPPER, BROWN_SUGAR, CAYENNE_PEPPER, CHICKEN_BROTH, CHICKEN_THIGH, CHIVE, CILANTRO, CORN, CRUSHED_TOMATOES, DIJON_MUSTARD, GARLIC, HOT_SAUCE, LEMON_JUICE, MAYONNAISE, NANDOS_PERI_PERI_SAUCE, OLIVE_OIL, OREGANO, PAPRIKA: PAPRIKA, SALT, SMOKED_PAPRIKA, THAI_CHILI_PEPPER, VEGETABLE_OIL } = require('./ingredients');
 
 const CORN_SECTION = 'Corn';
@@ -115,28 +115,28 @@ module.exports = {
     ],
     directions: [
         { step: `In a blender or food processor, combine all the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.PREP_MARINADE, img: bowl1 },
-        { step: 'In a mixing bowl, combine chicken and the marinade.', section: SECTIONS.MARINATE_CHICKEN, img: bowl2 },
-        { step: 'Refrigerate overnight or at least 10 hours.', section: SECTIONS.MARINATE_CHICKEN },
+        { step: `In a mixing bowl, combine chicken and the marinade.`, section: SECTIONS.MARINATE_CHICKEN, img: bowl2 },
+        { step: `Refrigerate overnight or at least 10 hours.`, section: SECTIONS.MARINATE_CHICKEN },
 
-        { step: 'Wash the rice until the water is no longer murky.', section: SECTIONS.COOK_RICE },
-        { step: 'Over low heat, heat oil in a large pot.', section: SECTIONS.COOK_RICE },
-        { step: 'Add garlic and cook for 30 seconds.', section: SECTIONS.COOK_RICE, img: bowl3 },
+        { step: `Wash the rice until the water is no longer murky.`, section: SECTIONS.COOK_RICE },
+        { step: `Over low heat, heat oil in a large pot.`, section: SECTIONS.COOK_RICE },
+        { step: `Add garlic and cook for 30 seconds.`, section: SECTIONS.COOK_RICE, img: bowl3 },
         { step: `Add the rest of the "${SECTIONS.RICE}" section ingredient (except the cilantro). Stir and bring to a boil.`, section: SECTIONS.COOK_RICE, img: bowl4 },
-        { step: 'Over medium heat, cover with a lid and cook for 10 minutes.', section: SECTIONS.COOK_RICE, img: bowl6 },
-        { step: 'Turn heat off and leave the pot on the stove with the lid on for another 10 minutes.', section: SECTIONS.COOK_RICE, img: bowl8 },
+        { step: `Over medium heat, cover with a lid and cook for 10 minutes.`, section: SECTIONS.COOK_RICE, img: bowl6 },
+        { step: `Turn heat off and leave the pot on the stove with the lid on for another 10 minutes.`, section: SECTIONS.COOK_RICE, img: bowl8 },
 
-        { step: 'Heat a grill, grill griddle, or a grill pan on a stove.', section: GRILL_CHICKEN },
-        { step: 'Once the preferred grill method gets hot, add the chicken. Cook chicken until it reaches an internal temperature of 165ºF, flip chicken regularly (about 12 minutes).', section: GRILL_CHICKEN, img: [bowl7, bowl9] },
+        { step: `Heat a grill, grill griddle, or a grill pan on a stove.`, section: GRILL_CHICKEN },
+        { step: `Once the preferred grill method gets hot, add the chicken. Cook chicken until it reaches an internal temperature of 165ºF, flip chicken regularly (about 12 minutes).`, section: GRILL_CHICKEN, img: [bowl7, bowl9] },
 
-        { step: 'Brush corn with olive oil.', section: CHAR_CORN },
-        { step: 'Follow the same grilling method as the chicken, cook the corn and rotate every couple minutes until it is charred all around.', section: CHAR_CORN, img: bowl10 },
-        { step: 'In a mixing bowl, combine together the rest of the salad ingredients.', section: SECTIONS.ASSEMBLE },
-        { step: 'Remove the corn kernels by slicing them off with a knife. Add to the salad.', section: SECTIONS.ASSEMBLE },
+        { step: `Brush corn with olive oil.`, section: CHAR_CORN },
+        { step: `Follow the same grilling method as the chicken, cook the corn and rotate every couple minutes until it is charred all around.`, section: CHAR_CORN, img: bowl10 },
+        { step: `In a mixing bowl, combine together the rest of the salad ingredients.`, section: SECTIONS.ASSEMBLE },
+        { step: `Remove the corn kernels by slicing them off with a knife. Add to the salad.`, section: SECTIONS.ASSEMBLE },
 
         { step: `In a small bowl, combine all the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE, img: bowl5 },
-        { step: 'Chill for 15 minutes.', section: SECTIONS.COOK_SAUCE },
+        { step: `Chill for 15 minutes.`, section: SECTIONS.COOK_SAUCE },
 
-        { step: 'Plate some rice, add salad and slice up some chicken. Top with the peri peri sauce.', section: SECTIONS.SERVE, img: bowl11 },
+        { step: `Plate some rice, add salad and slice up some chicken. Top with the peri peri sauce.`, section: SECTIONS.SERVE, img: bowl11 },
     ],
     store: [
         {

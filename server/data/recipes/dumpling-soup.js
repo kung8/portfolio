@@ -64,19 +64,19 @@ module.exports = {
         SMALL_BOWL,
     ],
     directions: [
-        { step: 'Over medium heat, heat oils in a large pot.', section: SECTIONS.MAKE_SOUP },
+        { step: `Over medium heat, heat oils in a large pot.`, section: SECTIONS.MAKE_SOUP },
         { step: `Add all the "${SECTIONS.VEGGIES}" section ingredients except the green parts of the green onions (This will be added later as a topping).`, section: SECTIONS.MAKE_SOUP, img: dumpling1 },
-        { step: 'Cook and stir until softened (about 2 to 3 minutes).', section: SECTIONS.MAKE_SOUP },
+        { step: `Cook and stir until softened (about 2 to 3 minutes).`, section: SECTIONS.MAKE_SOUP },
 
         { step: `In a small bowl, combine the "${MISO_PASTE_MIXTURE}" section ingredients.`, section: SECTIONS.MAKE_SOUP, img: dumpling2 },
-        { step: 'Add the miso paste mixture and the broth to the pot. Bring to a boil.', section: SECTIONS.MAKE_SOUP, img: dumpling3 },
+        { step: `Add the miso paste mixture and the broth to the pot. Bring to a boil.`, section: SECTIONS.MAKE_SOUP, img: dumpling3 },
 
-        { step: 'Add dumpling. Bring to a simmer. Cook until dumplings are heated through (about 3 to 5 minutes).', section: SECTIONS.MAKE_SOUP, img: dumpling4 },
+        { step: `Add dumpling. Bring to a simmer. Cook until dumplings are heated through (about 3 to 5 minutes).`, section: SECTIONS.MAKE_SOUP, img: dumpling4 },
 
-        { step: 'Add spinach. Cook until it wilts (about 1 to 2 minutes).', section: SECTIONS.MAKE_SOUP, img: dumpling5 },
+        { step: `Add spinach. Cook until it wilts (about 1 to 2 minutes).`, section: SECTIONS.MAKE_SOUP, img: dumpling5 },
 
-        { step: 'Add soy sauce and the green parts of the green onions.', section: SECTIONS.MAKE_SOUP, img: dumpling6 },
-        { step: 'Serve hot topped with your preferred condiments.', section: SECTIONS.SERVE, img: dumpling8 },
+        { step: `Add soy sauce and the green parts of the green onions.`, section: SECTIONS.MAKE_SOUP, img: dumpling6 },
+        { step: `Serve hot topped with your preferred condiments.`, section: SECTIONS.SERVE, img: dumpling8 },
     ],
     notes: [
         { note: 'Chili oil makes it so good!' },

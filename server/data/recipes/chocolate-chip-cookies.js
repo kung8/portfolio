@@ -87,31 +87,31 @@ module.exports = {
         { name: 'spoon' },
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: 'Lay aluminum foil on baking sheets.', section: SECTIONS.PREP_PAN },
+        { step: `Lay aluminum foil on baking sheets.`, section: SECTIONS.PREP_PAN },
 
-        { step: 'In a mixing bowl, cream together the softened butter, white sugar, and brown sugar.', section: SECTIONS.CREAM_BUTTER, img: cookies1 },
+        { step: `In a mixing bowl, cream together the softened butter, white sugar, and brown sugar.`, section: SECTIONS.CREAM_BUTTER, img: cookies1 },
 
-        { step: 'Beat in eggs one at a time.', section: BEAT_EGGS, img: cookies2 },
+        { step: `Beat in eggs one at a time.`, section: BEAT_EGGS, img: cookies2 },
 
-        { step: 'Mix in vanilla.', section: ADD_VANILLA, img: cookies2 },
+        { step: `Mix in vanilla.`, section: ADD_VANILLA, img: cookies2 },
 
-        { step: 'In a small bowl, combine baking soda, salt, and hot water. Dissolve.', section: DISSOLVE_BAKING_SODA, img: cookies3 },
+        { step: `In a small bowl, combine baking soda, salt, and hot water. Dissolve.`, section: DISSOLVE_BAKING_SODA, img: cookies3 },
 
-        { step: 'Mix flour one cup at a time.', section: ADD_FLOUR, img: cookies4 },
+        { step: `Mix flour one cup at a time.`, section: ADD_FLOUR, img: cookies4 },
 
-        { step: 'Add chocolate chips.', section: ADD_CHOCOLATE_CHIPS, img: cookies5 },
+        { step: `Add chocolate chips.`, section: ADD_CHOCOLATE_CHIPS, img: cookies5 },
 
-        { step: 'Take a spoonful of batter, ball it up about an inch in diameter, and place on baking sheets.', section: SECTIONS.FORM_BALLS, img: cookies6 },
+        { step: `Take a spoonful of batter, ball it up about an inch in diameter, and place on baking sheets.`, section: SECTIONS.FORM_BALLS, img: cookies6 },
 
-        { step: 'Place the baking sheets in the freezer. Chill for 10 minutes.', section: SECTIONS.CHILL },
+        { step: `Place the baking sheets in the freezer. Chill for 10 minutes.`, section: SECTIONS.CHILL },
 
-        { step: 'Bake until the edges of the cookies are golden brown and the center is soft (about 10 to 12 minutes).', section: SECTIONS.BAKE },
+        { step: `Bake until the edges of the cookies are golden brown and the center is soft (about 10 to 12 minutes).`, section: SECTIONS.BAKE },
 
-        { step: 'Cool on pan for a few minutes. Transferring to a cooling rack.', section: SECTIONS.COOL },
+        { step: `Cool on pan for a few minutes. Transferring to a cooling rack.`, section: SECTIONS.COOL },
 
-        { step: 'Enjoy these delicious treats with a cold glass of milk!', section: SECTIONS.SERVE, img: cookies7 },
+        { step: `Enjoy these delicious treats with a cold glass of milk!`, section: SECTIONS.SERVE, img: cookies7 },
     ],
     notes: [
         { note: 'To soften butter: (1) leave in room temperature, or (2) warm in microwave for 20 - 30 seconds on 50% power (but times will vary based on the original softness of butter and microwave model).' },

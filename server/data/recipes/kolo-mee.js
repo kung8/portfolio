@@ -65,22 +65,22 @@ module.exports = {
         LARGE_POT,
     ],
     directions: [
-        { step: 'Over medium-high heat, heat oil in a wok.', section: COOK_MINCED_MEAT },
+        { step: `Over medium-high heat, heat oil in a wok.`, section: COOK_MINCED_MEAT },
         { step: `Add the "${MINCED_MEAT_SECTION}" section ingredients. Stir fry until browned.`, section: COOK_MINCED_MEAT },
-        { step: 'Set aside.', section: COOK_MINCED_MEAT, img: kolo1 },
+        { step: `Set aside.`, section: COOK_MINCED_MEAT, img: kolo1 },
 
-        { step: 'Cook the chow mein noodles according to package instructions. As it loosens and is almost cooked, remove the noodles and place it in a cold water bath.', section: SECTIONS.COOK_NOODLES },
-        { step: 'Re-add the cooled noodles back to the boiling water until it is cooked.', section: SECTIONS.COOK_NOODLES },
-        { step: 'Drain. Set the noodles on a plate.', section: SECTIONS.COOK_NOODLES, img: kolo3 },
+        { step: `Cook the chow mein noodles according to package instructions. As it loosens and is almost cooked, remove the noodles and place it in a cold water bath.`, section: SECTIONS.COOK_NOODLES },
+        { step: `Re-add the cooled noodles back to the boiling water until it is cooked.`, section: SECTIONS.COOK_NOODLES },
+        { step: `Drain. Set the noodles on a plate.`, section: SECTIONS.COOK_NOODLES, img: kolo3 },
 
-        { step: 'Over medium-high heat, boil a pot of water.', section: COOK_BOK_CHOY },
-        { step: 'Add bok choy. Cook until tender (about 1 to 2 minutes).', section: COOK_BOK_CHOY },
-        { step: 'Drain. Set aside.', section: COOK_BOK_CHOY, img: kolo4 },
+        { step: `Over medium-high heat, boil a pot of water.`, section: COOK_BOK_CHOY },
+        { step: `Add bok choy. Cook until tender (about 1 to 2 minutes).`, section: COOK_BOK_CHOY },
+        { step: `Drain. Set aside.`, section: COOK_BOK_CHOY, img: kolo4 },
 
         { step: `To the plate of noodles, add the "${SECTIONS.SAUCE}" section ingredients. Mix.`, section: SECTIONS.ASSEMBLE },
-        { step: 'Top the dish with the minced meat, bok choy and any other preferred toppings.', section: SECTIONS.ASSEMBLE, img: kolo2 },
+        { step: `Top the dish with the minced meat, bok choy and any other preferred toppings.`, section: SECTIONS.ASSEMBLE, img: kolo2 },
 
-        { step: 'Enjoy one of my favorite noodle dishes from where a piece of my heart is.', section: SECTIONS.SERVE },
+        { step: `Enjoy one of my favorite noodle dishes from where a piece of my heart is.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Fresh egg noodles is preferred but you can use dried noodles.' }

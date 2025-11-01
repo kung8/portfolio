@@ -59,19 +59,19 @@ module.exports = {
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.CRUST}" section ingredients.`, section: MAKE_CRUST, img: [pie1, pie2, pie3] },
-        { step: 'Pour the mixture into a pie pan.', section: MAKE_CRUST, img: pie4 },
-        { step: 'Freeze until set (about 15 minutes).', section: MAKE_CRUST },
+        { step: `Pour the mixture into a pie pan.`, section: MAKE_CRUST, img: pie4 },
+        { step: `Freeze until set (about 15 minutes).`, section: MAKE_CRUST },
 
-        { step: 'Evenly spread the ice cream in the crust.', section: ADD_ICE_CREAM, img: pie5 },
-        { step: 'Freeze for 30 minutes.', section: ADD_ICE_CREAM },
+        { step: `Evenly spread the ice cream in the crust.`, section: ADD_ICE_CREAM, img: pie5 },
+        { step: `Freeze for 30 minutes.`, section: ADD_ICE_CREAM },
 
-        { step: 'Drizzle the hot fudge in any desired pattern.', section: ADD_HOT_FUDGE, img: pie6 },
-        { step: 'Freeze for 30 minutes.', section: ADD_HOT_FUDGE },
+        { step: `Drizzle the hot fudge in any desired pattern.`, section: ADD_HOT_FUDGE, img: pie6 },
+        { step: `Freeze for 30 minutes.`, section: ADD_HOT_FUDGE },
 
-        { step: 'Top pie with your favorite toppings.', section: ADD_TOPPINGS, img: pie7 },
-        { step: 'Freeze for at least 2 hours or overnight.', section: ADD_TOPPINGS },
+        { step: `Top pie with your favorite toppings.`, section: ADD_TOPPINGS, img: pie7 },
+        { step: `Freeze for at least 2 hours or overnight.`, section: ADD_TOPPINGS },
 
-        { step: 'Serve this topped with any other favorite toppings.', section: SECTIONS.SERVE },
+        { step: `Serve this topped with any other favorite toppings.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'I ended up having issues with drizzling the hot fudge. I ended up pouring it and then using a wooden skewer to drag the chocolate in a random pattern.' }

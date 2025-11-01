@@ -66,19 +66,19 @@ module.exports = {
         BAKING_PAN,
     ],
     directions: [
-        { step: 'Clean ribs and cut into individual ribs.', section: PREP_RIBS, img: ribs1 },
+        { step: `Clean ribs and cut into individual ribs.`, section: PREP_RIBS, img: ribs1 },
         { step: `In a mixing bowl, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: PREP_RIBS },
-        { step: 'Combine the ribs in the marinade.', section: PREP_RIBS, img: [ribs2, ribs3, ribs4] },
-        { step: 'Cover and marinate the ribs overnight.', section: PREP_RIBS },
+        { step: `Combine the ribs in the marinade.`, section: PREP_RIBS, img: [ribs2, ribs3, ribs4] },
+        { step: `Cover and marinate the ribs overnight.`, section: PREP_RIBS },
 
-        { step: 'Preheat the oven to 350ºF.', section: COOK_RIBS },
-        { step: 'Place ribs in a baking dish in a single layer.', section: COOK_RIBS, img: [ribs5, ribs6] },
-        { step: 'Tent the aluminum foil.', section: COOK_RIBS },
-        { step: 'Bake until the ribs are about 70% cooked (about 45 minutes to 1 hour depending on the rib thickness).', section: COOK_RIBS, img: ribs7 },
-        { step: 'Uncover and broil ribs on both sides (about 13 to 15 minutes per side).', section: COOK_RIBS, img: ribs8 },
-        { step: 'Remove from the oven and let it rest before serving (about 15 minutes).', section: COOK_RIBS },
+        { step: `Preheat the oven to 350ºF.`, section: COOK_RIBS },
+        { step: `Place ribs in a baking dish in a single layer.`, section: COOK_RIBS, img: [ribs5, ribs6] },
+        { step: `Tent the aluminum foil.`, section: COOK_RIBS },
+        { step: `Bake until the ribs are about 70% cooked (about 45 minutes to 1 hour depending on the rib thickness).`, section: COOK_RIBS, img: ribs7 },
+        { step: `Uncover and broil ribs on both sides (about 13 to 15 minutes per side).`, section: COOK_RIBS, img: ribs8 },
+        { step: `Remove from the oven and let it rest before serving (about 15 minutes).`, section: COOK_RIBS },
 
-        { step: 'Enjoy this Vietnamese flavor-popping ribs.', section: SECTIONS.SERVE },
+        { step: `Enjoy this Vietnamese flavor-popping ribs.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Typically this recipe is made with beef ribs, but you can also use pork ribs.' }

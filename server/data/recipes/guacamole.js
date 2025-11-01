@@ -4,7 +4,7 @@ const guacamole3 = '../assets/Products/guacamole-3.jpeg';
 const guacamole4 = '../assets/Products/guacamole-4.jpeg';
 const guacamole5 = '../assets/Products/guacamole-5.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { AVOCADO, CAYENNE_PEPPER, CILANTRO, GARLIC, LIME, ROMA_TOMATO, SALT, YELLOW_ONION } = require('./ingredients');
 
 module.exports = {
@@ -44,13 +44,13 @@ module.exports = {
         { name: 'medium bowl' },
     ],
     directions: [
-        { step: 'Slice the avocados in half and remove the pit.', section: SECTIONS.MAIN, img: guacamole1 },
-        { step: 'In a medium bowl, mash avocado.', section: SECTIONS.MAIN, img: guacamole2 },
-        { step: 'Add the lime juice and salt. Mix.', section: SECTIONS.MAIN, img: guacamole3 },
-        { step: 'Add the garlic, tomatoes, onion, and cilantro. Mix.', section: SECTIONS.MAIN, img: guacamole4 },
-        { step: 'Add the cayenne. Mix.', section: SECTIONS.MAIN },
-        { step: 'Cover and chill for 1 hour.', section: SECTIONS.MAIN },
-        { step: 'Serve with your favorite chips.', section: SECTIONS.SERVE },
+        { step: `Slice the avocados in half and remove the pit.`, section: SECTIONS.MAIN, img: guacamole1 },
+        { step: `In a medium bowl, mash avocado.`, section: SECTIONS.MAIN, img: guacamole2 },
+        { step: `Add the lime juice and salt. Mix.`, section: SECTIONS.MAIN, img: guacamole3 },
+        { step: `Add the garlic, tomatoes, onion, and cilantro. Mix.`, section: SECTIONS.MAIN, img: guacamole4 },
+        { step: `Add the cayenne. Mix.`, section: SECTIONS.MAIN },
+        { step: `Cover and chill for 1 hour.`, section: SECTIONS.MAIN },
+        { step: `Serve with your favorite chips.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

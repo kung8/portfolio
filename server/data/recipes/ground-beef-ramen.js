@@ -4,7 +4,7 @@ const ramen3 = '../assets/Products/ground-beef-ramen-3.jpeg';
 const ramen4 = '../assets/Products/ground-beef-ramen-4.jpeg';
 const ramen5 = '../assets/Products/ground-beef-ramen-5.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { FROZEN_CARROTS, FROZEN_PEAS, GARLIC, GREEN_ONION, GROUND_BEEF, HOISIN_SAUCE, INSTANT_RAMEN, LARGE_PAN, LARGE_POT, LIGHT_SOY_SAUCE, RED_PEPPER_FLAKES, STOVE, VEGETABLE_OIL } = require('./ingredients');
 
 const BEEF_AND_GARLIC_SECTION = 'Beef and Garlic';
@@ -58,23 +58,23 @@ module.exports = {
         LARGE_POT,
     ],
     directions: [
-        { step: 'Over medium heat, heat oil in a large pan.', section: SAUTE_ADDITIONS },
-        { step: 'Add ground beef. Brown and break apart (about 5 to 7 minutes).', section: SAUTE_ADDITIONS },
-        { step: 'Drain.', section: SAUTE_ADDITIONS },
-        { step: 'Add garlic. Cook until fragrant (about 30 seconds).', section: SAUTE_ADDITIONS, img: ramen1 },
+        { step: `Over medium heat, heat oil in a large pan.`, section: SAUTE_ADDITIONS },
+        { step: `Add ground beef. Brown and break apart (about 5 to 7 minutes).`, section: SAUTE_ADDITIONS },
+        { step: `Drain.`, section: SAUTE_ADDITIONS },
+        { step: `Add garlic. Cook until fragrant (about 30 seconds).`, section: SAUTE_ADDITIONS, img: ramen1 },
         { step: `Add "${SECTIONS.SAUCE}" section ingredients. Mix until meat is coated.`, section: SAUTE_ADDITIONS, img: ramen2 },
         { step: `Add "${FROZEN_SECTION}" section ingredients. Cook until heated through (about 2 to 3 minutes).`, section: SAUTE_ADDITIONS, img: ramen3 },
-        { step: 'Remove from heat. Set aside until noodles are cooked.', section: SAUTE_ADDITIONS },
+        { step: `Remove from heat. Set aside until noodles are cooked.`, section: SAUTE_ADDITIONS },
 
-        { step: 'Oven high heat, bring a pot of water to a boil.', section: SECTIONS.COOK_NOODLES },
-        { step: 'Add ramen noodles. Cook until just tender (about 3 minutes).', section: SECTIONS.COOK_NOODLES },
-        { step: 'Drain. Set aside.', section: SECTIONS.COOK_NOODLES },
+        { step: `Oven high heat, bring a pot of water to a boil.`, section: SECTIONS.COOK_NOODLES },
+        { step: `Add ramen noodles. Cook until just tender (about 3 minutes).`, section: SECTIONS.COOK_NOODLES },
+        { step: `Drain. Set aside.`, section: SECTIONS.COOK_NOODLES },
 
-        { step: 'Add noodles to the large pan. Mix well.', section: SECTIONS.ASSEMBLE, img: ramen4 },
-        { step: 'Optionally add red pepper flakes. Mix.', section: SECTIONS.ASSEMBLE },
-        { step: 'Remove from heat. Add green onions. Mix.', section: SECTIONS.ASSEMBLE },
+        { step: `Add noodles to the large pan. Mix well.`, section: SECTIONS.ASSEMBLE, img: ramen4 },
+        { step: `Optionally add red pepper flakes. Mix.`, section: SECTIONS.ASSEMBLE },
+        { step: `Remove from heat. Add green onions. Mix.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Enjoy this easy college student ramen upgrade.', section: SECTIONS.SERVE },
+        { step: `Enjoy this easy college student ramen upgrade.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

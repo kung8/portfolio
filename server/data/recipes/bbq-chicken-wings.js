@@ -72,22 +72,22 @@ module.exports = {
         { ...LARGE_PAN, additionalDetails: 'with lid' },
     ],
     directions: [
-        { step: 'In a mixing bowl, add chicken and baking soda.', section: SECTIONS.MARINATE_CHICKEN },
-        { step: 'Fill the bowl with water to cover the chicken.', section: SECTIONS.MARINATE_CHICKEN },
-        { step: 'Marinate chicken for 15 minutes.', section: SECTIONS.MARINATE_CHICKEN, img: wings1 },
+        { step: `In a mixing bowl, add chicken and baking soda.`, section: SECTIONS.MARINATE_CHICKEN },
+        { step: `Fill the bowl with water to cover the chicken.`, section: SECTIONS.MARINATE_CHICKEN },
+        { step: `Marinate chicken for 15 minutes.`, section: SECTIONS.MARINATE_CHICKEN, img: wings1 },
 
-        { step: 'Place chicken in a circle.', section: SECTIONS.COOK_CHICKEN, img: wings2 },
+        { step: `Place chicken in a circle.`, section: SECTIONS.COOK_CHICKEN, img: wings2 },
         { step: `In mixing bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_CHICKEN, img: wings2 },
-        { step: 'Cover with a lid and cook for 5 minutes.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Uncover and skim off the froth.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Re-cover the pan and continue cooking for 10 minutes.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Uncover and stir.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Re-cover the pan and continue cooking for 5 minutes.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Drain some of the residual liquid.', section: SECTIONS.COOK_CHICKEN },
+        { step: `Cover with a lid and cook for 5 minutes.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Uncover and skim off the froth.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Re-cover the pan and continue cooking for 10 minutes.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Uncover and stir.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Re-cover the pan and continue cooking for 5 minutes.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Drain some of the residual liquid.`, section: SECTIONS.COOK_CHICKEN },
 
         { step: `Add the "${CONDIMENTS_SECTION}" section ingredients. Stir.`, section: ADD_CONDIMENTS, img: wings3 },
 
-        { step: 'Enjoy this light appetizer. Feel free to add some spice if you like a kick.', section: SECTIONS.SERVE },
+        { step: `Enjoy this light appetizer. Feel free to add some spice if you like a kick.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

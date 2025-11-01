@@ -49,15 +49,15 @@ module.exports = {
         SAUCEPAN,
     ],
     directions: [
-        { step: 'Over medium heat, melt butter in a saucepan.', section: COOK_CORN },
-        { step: 'Add corn, salt and pepper. Cook for 5 to 10 minutes. Stirring occasionally.', section: COOK_CORN },
+        { step: `Over medium heat, melt butter in a saucepan.`, section: COOK_CORN },
+        { step: `Add corn, salt and pepper. Cook for 5 to 10 minutes. Stirring occasionally.`, section: COOK_CORN },
 
-        { step: 'Add heavy cream. Reduce heat.', section: COOK_CREAM },
-        { step: 'Cook until sauce has reduced slightly (about 5 minutes).', section: COOK_CREAM },
+        { step: `Add heavy cream. Reduce heat.`, section: COOK_CREAM },
+        { step: `Cook until sauce has reduced slightly (about 5 minutes).`, section: COOK_CREAM },
 
-        { step: 'Add honey. Cook for 2 minutes.', section: COOK_HONEY },
+        { step: `Add honey. Cook for 2 minutes.`, section: COOK_HONEY },
 
-        { step: 'Serve warm and enjoy this sweet appetizer.', section: SECTIONS.SERVE },
+        { step: `Serve warm and enjoy this sweet appetizer.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ANGEL_HAIR_PASTA, BLACK_PEPPER, CAPER, DICED_TOMATO, GARLIC_SALT, LARGE_POT, LEMON, MIXING_BOWL, OLIVE_OIL, PARSLEY, STOVE } = require('./ingredients');
 
 const LEMON_JUICE_MIXTURE = 'Lemon Juice Mixture';
@@ -49,12 +49,12 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'Over medium-high heat, bring a pot of salted water to a boil.', section: SECTIONS.COOK_PASTA },
-        { step: 'Add the pasta. Cook until al dente (just a few minutes).', section: SECTIONS.COOK_PASTA },
-        { step: 'Drain. Rinse in cold water.', section: SECTIONS.COOK_PASTA },
+        { step: `Over medium-high heat, bring a pot of salted water to a boil.`, section: SECTIONS.COOK_PASTA },
+        { step: `Add the pasta. Cook until al dente (just a few minutes).`, section: SECTIONS.COOK_PASTA },
+        { step: `Drain. Rinse in cold water.`, section: SECTIONS.COOK_PASTA },
         { step: `In a mixing bowl, combine "${LEMON_JUICE_MIXTURE}" section ingredients.`, section: SECTIONS.PREP_SALAD },
-        { step: 'Add the pasta and the rest of the ingredients. Toss.', section: SECTIONS.PREP_SALAD },
-        { step: 'Serve this immediately or cover and chill until ready to eat.', section: SECTIONS.SERVE },
+        { step: `Add the pasta and the rest of the ingredients. Toss.`, section: SECTIONS.PREP_SALAD },
+        { step: `Serve this immediately or cover and chill until ready to eat.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

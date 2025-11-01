@@ -73,21 +73,21 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Over medium-high heat, add red curry paste and coconut milk in a pan.', section: SECTIONS.COOK_MILK, img: curry1 },
-        { step: 'Cook and stir until it is well combined.', section: SECTIONS.COOK_MILK, img: curry2 },
+        { step: `Over medium-high heat, add red curry paste and coconut milk in a pan.`, section: SECTIONS.COOK_MILK, img: curry1 },
+        { step: `Cook and stir until it is well combined.`, section: SECTIONS.COOK_MILK, img: curry2 },
 
         { step: `Place the "${SECTIONS.AROMATICS}" section ingredients in a spice bag.`, section: PREP_SPICE_BAG, img: curry3 },
 
         { step: `Add the "${CHICKEN_AND_POTATOES_SECTION}" section ingredients and the spice bag.`, section: COOK_CHICKEN_AND_POTATOES },
-        { step: 'Cook for about 10 minutes.', section: COOK_CHICKEN_AND_POTATOES },
+        { step: `Cook for about 10 minutes.`, section: COOK_CHICKEN_AND_POTATOES },
 
-        { step: 'Turn down the heat and let it simmer for 10 to 15 minutes. Cook until the chicken is completely cooked through and the potatoes are softened but not mushy.', section: SECTIONS.SIMMER },
+        { step: `Turn down the heat and let it simmer for 10 to 15 minutes. Cook until the chicken is completely cooked through and the potatoes are softened but not mushy.`, section: SECTIONS.SIMMER },
 
-        { step: 'Add water or more coconut milk to help thin the curry as desired and cut the spice level.', section: THIN_CURRY },
+        { step: `Add water or more coconut milk to help thin the curry as desired and cut the spice level.`, section: THIN_CURRY },
 
         { step: `Optionally add "${SECTIONS.SEASONINGS}" section ingredients as desired.`, section: SECTIONS.SEASON },
 
-        { step: 'Serve this delicious Cambodian spicy curry with vermicelli noodles or baked bread.', section: SECTIONS.SERVE, img: curry5 },
+        { step: `Serve this delicious Cambodian spicy curry with vermicelli noodles or baked bread.`, section: SECTIONS.SERVE, img: curry5 },
     ],
     notes: [
         { note: 'You can really add any structural veggies. I did not like some of the textures of the eggplant when reheated.' },

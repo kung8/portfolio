@@ -46,13 +46,13 @@ module.exports = {
         { name: 'baking pan' },
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: CASSEROLE },
+        { step: `Preheat the oven to 350ºF.`, section: CASSEROLE },
         { step: `In a baking pan, combine all the "${CASSEROLE}" section ingredients.`, section: CASSEROLE, img: [casserole1, casserole2] },
-        { step: 'Bake until bubbly (about 30 to 35 minutes).', section: CASSEROLE },
-        { step: 'Remove from the oven and mix.', section: CASSEROLE },
-        { step: 'Top with the crispy fried onions.', section: SECTIONS.TOPPINGS },
-        { step: 'Bake until golden (about 10 minutes).', section: SECTIONS.TOPPINGS },
-        { step: 'Serve this dish warm at your next holiday feast.', section: SECTIONS.SERVE },
+        { step: `Bake until bubbly (about 30 to 35 minutes).`, section: CASSEROLE },
+        { step: `Remove from the oven and mix.`, section: CASSEROLE },
+        { step: `Top with the crispy fried onions.`, section: SECTIONS.TOPPINGS },
+        { step: `Bake until golden (about 10 minutes).`, section: SECTIONS.TOPPINGS },
+        { step: `Serve this dish warm at your next holiday feast.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

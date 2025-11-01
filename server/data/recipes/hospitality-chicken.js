@@ -59,15 +59,15 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Pat the chicken dry.', section: SECTIONS.MARINATE_CHICKEN },
-        { step: 'Pour seasoning packet over the chicken.', section: SECTIONS.MARINATE_CHICKEN },
-        { step: 'Marinate for at least 30 minutes.', section: SECTIONS.MARINATE_CHICKEN },
+        { step: `Pat the chicken dry.`, section: SECTIONS.MARINATE_CHICKEN },
+        { step: `Pour seasoning packet over the chicken.`, section: SECTIONS.MARINATE_CHICKEN },
+        { step: `Marinate for at least 30 minutes.`, section: SECTIONS.MARINATE_CHICKEN },
 
-        { step: 'Add chicken to air fryer. Air fry at 400ºF until cooked (about 25 to 35 minutes).', section: SECTIONS.AIR_FRY },
+        { step: `Add chicken to air fryer. Air fry at 400ºF until cooked (about 25 to 35 minutes).`, section: SECTIONS.AIR_FRY },
 
-        { step: 'Over medium-high heat, steam the peas and carrots until softened (about 8 to 12 minutes).', section: SECTIONS.STEAM },
+        { step: `Over medium-high heat, steam the peas and carrots until softened (about 8 to 12 minutes).`, section: SECTIONS.STEAM },
 
-        { step: 'Serve with rice and enjoy this simple meal that can take you back to the South.', section: SECTIONS.SERVE },
+        { step: `Serve with rice and enjoy this simple meal that can take you back to the South.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'If you like the veggies a little crispier, you can stir-fry. Stir fry over medium-high heat with a little oil for a few minutes.' }

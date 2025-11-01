@@ -66,18 +66,18 @@ module.exports = {
         { name: 'wok' },
     ],
     directions: [
-        { step: 'Cook the noodles per the package instructions.', section: SECTIONS.COOK_NOODLES, img: stirFry2 },
-        { step: 'Drain. Set aside.', section: SECTIONS.COOK_NOODLES, img: stirFry3 },
+        { step: `Cook the noodles per the package instructions.`, section: SECTIONS.COOK_NOODLES, img: stirFry2 },
+        { step: `Drain. Set aside.`, section: SECTIONS.COOK_NOODLES, img: stirFry3 },
 
         { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients. Whisk until it is smooth, pourable and thick.`, section: SECTIONS.PREP_SAUCE, img: stirFry1 },
 
-        { step: 'Over medium-high heat, heat oil in a wok.', section: SECTIONS.STIR_FRY },
-        { step: 'Add beef. Cook until browned and cooked through.', section: SECTIONS.STIR_FRY, img: stirFry4 },
+        { step: `Over medium-high heat, heat oil in a wok.`, section: SECTIONS.STIR_FRY },
+        { step: `Add beef. Cook until browned and cooked through.`, section: SECTIONS.STIR_FRY, img: stirFry4 },
         { step: `Add "${FIRST_VEGETABLES_SECTION}" section ingredients. Cook until vegetables are tender and crisp (about 5 minutes).`, section: SECTIONS.STIR_FRY, img: [stirFry5, stirFry6] },
         { step: `Add "${SECOND_VEGETABLES_SECTION}" section ingredients. Cook (about 2 minutes).`, section: SECTIONS.STIR_FRY, img: stirFry7 },
-        { step: 'Add cooked noodles and sauce. Toss until everything is covered.', section: SECTIONS.STIR_FRY, img: stirFry8 },
+        { step: `Add cooked noodles and sauce. Toss until everything is covered.`, section: SECTIONS.STIR_FRY, img: stirFry8 },
 
-        { step: 'Enjoy this Asian dish with your favorite toppings.', section: SECTIONS.SERVE },
+        { step: `Enjoy this Asian dish with your favorite toppings.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'The noodles I used was cooked too long, so it was a little mushy. I would cook in smaller batches instead.'}

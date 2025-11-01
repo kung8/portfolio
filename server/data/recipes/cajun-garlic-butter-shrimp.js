@@ -54,14 +54,14 @@ module.exports = {
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
-        { step: 'Over medium-high heat, heat a pan.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Add butter and sauce. Cook until the butter has melted (about 2 minutes).', section: SECTIONS.COOK_SAUCE },
+        { step: `Over medium-high heat, heat a pan.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Add butter and sauce. Cook until the butter has melted (about 2 minutes).`, section: SECTIONS.COOK_SAUCE },
 
-        { step: 'Pat shrimp dry with a paper towel.', section: SECTIONS.COOK_SHRIMP },
-        { step: 'Add shrimp. Coat.', section: SECTIONS.COOK_SHRIMP },
-        { step: 'Cook until shrimp is opaque and cooked (about 4 to 5 minutes).', section: SECTIONS.COOK_SHRIMP },
+        { step: `Pat shrimp dry with a paper towel.`, section: SECTIONS.COOK_SHRIMP },
+        { step: `Add shrimp. Coat.`, section: SECTIONS.COOK_SHRIMP },
+        { step: `Cook until shrimp is opaque and cooked (about 4 to 5 minutes).`, section: SECTIONS.COOK_SHRIMP },
 
-        { step: 'Serve with green onions.', section: SECTIONS.SERVE },
+        { step: `Serve with green onions.`, section: SECTIONS.SERVE },
     ],
     store: [
         // {

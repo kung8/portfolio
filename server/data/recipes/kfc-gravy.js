@@ -58,17 +58,17 @@ module.exports = {
         WHISK,
     ],
     directions: [
-        { step: 'Dissolve the bouillon cubes in the hot water.', section: PREP_BROTH },
+        { step: `Dissolve the bouillon cubes in the hot water.`, section: PREP_BROTH },
 
-        { step: 'Over medium heat, melt butter in a saucepan.', section: PREP_ROUX, img: gravy1 },
-        { step: 'Stir in flour, onion powder and black pepper. Whisk.', section: PREP_ROUX, img: [gravy2, gravy3] },
+        { step: `Over medium heat, melt butter in a saucepan.`, section: PREP_ROUX, img: gravy1 },
+        { step: `Stir in flour, onion powder and black pepper. Whisk.`, section: PREP_ROUX, img: [gravy2, gravy3] },
 
-        { step: 'While stirring, add in half the broth. It should thicken and become more uniform.', section: COOK_GRAVY, img: gravy4 },
-        { step: 'Stir in the remaining broth.', section: COOK_GRAVY },
-        { step: 'Stir until it thickens to a gravy consistency (about 1 1/2 to 2 minutes).', section: COOK_GRAVY },
-        { step: 'Taste and, if needed, add salt and pepper.', section: COOK_GRAVY },
+        { step: `While stirring, add in half the broth. It should thicken and become more uniform.`, section: COOK_GRAVY, img: gravy4 },
+        { step: `Stir in the remaining broth.`, section: COOK_GRAVY },
+        { step: `Stir until it thickens to a gravy consistency (about 1 1/2 to 2 minutes).`, section: COOK_GRAVY },
+        { step: `Taste and, if needed, add salt and pepper.`, section: COOK_GRAVY },
 
-        { step: 'Serve this warm over whatever you want.', section: SECTIONS.SERVE, img: gravy6 },
+        { step: `Serve this warm over whatever you want.`, section: SECTIONS.SERVE, img: gravy6 },
     ],
     store: [
         {

@@ -45,14 +45,14 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        { step: 'On a plate, place tortilla.', section: SECTIONS.ASSEMBLE },
-        { step: 'Lay desired toppings in the center of tortilla.', section: SECTIONS.ASSEMBLE },
+        { step: `On a plate, place tortilla.`, section: SECTIONS.ASSEMBLE },
+        { step: `Lay desired toppings in the center of tortilla.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Roll the side closest to you towards the center.', section: SECTIONS.WRAP },
-        { step: 'Fold over the left and right side.', section: SECTIONS.WRAP },
-        { step: 'Continue rolling the rest of the wrap.', section: SECTIONS.WRAP },
+        { step: `Roll the side closest to you towards the center.`, section: SECTIONS.WRAP },
+        { step: `Fold over the left and right side.`, section: SECTIONS.WRAP },
+        { step: `Continue rolling the rest of the wrap.`, section: SECTIONS.WRAP },
         
-        { step: 'Enjoy!', section: SECTIONS.SERVE },
+        { step: `Enjoy!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

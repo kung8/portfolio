@@ -1,7 +1,7 @@
 const curry1 = '../assets/Products/chicken-curry-1.jpeg';
 const curry2 = '../assets/Products/chicken-curry-2.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAY_LEAF, BONELESS_AND_SKINLESS_CHICKEN_THIGH, COCONUT_MILK, CURRY_POWDER, GARLIC, GINGER, GREEN_BELL_PEPPER, MIXING_BOWL, RED_BELL_PEPPER, SALT, STOVE, THAI_CHILI_PEPPER, WOK, YELLOW_ONION, YUKON_GOLD_POTATO } = require('./ingredients');
 
 const POTATO_SECTION = 'Potato';
@@ -57,14 +57,14 @@ module.exports = {
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.PREP_MARINADE },
-        { step: 'Cover and place it in the refrigerator. Let it marinate overnight.', section: SECTIONS.PREP_MARINADE },
-        { step: 'Over medium-high heat, heat a little oil in a wok.', section: SECTIONS.COOK_CURRY },
-        { step: 'Add marinated chicken. Stir fry (about 5 to 6 minutes). It will not be cooked through.', section: SECTIONS.COOK_CURRY },
-        { step: 'Add the potatoes. Cook (about 5 to 6 minutes).', section: SECTIONS.COOK_CURRY, img: curry1 },
-        { step: 'Add coconut milk.', section: SECTIONS.COOK_CURRY },
-        { step: 'Let it simmer and cook down to your desired level of remaining liquid (about 15 to 20 minutes).', section: SECTIONS.COOK_CURRY },
+        { step: `Cover and place it in the refrigerator. Let it marinate overnight.`, section: SECTIONS.PREP_MARINADE },
+        { step: `Over medium-high heat, heat a little oil in a wok.`, section: SECTIONS.COOK_CURRY },
+        { step: `Add marinated chicken. Stir fry (about 5 to 6 minutes). It will not be cooked through.`, section: SECTIONS.COOK_CURRY },
+        { step: `Add the potatoes. Cook (about 5 to 6 minutes).`, section: SECTIONS.COOK_CURRY, img: curry1 },
+        { step: `Add coconut milk.`, section: SECTIONS.COOK_CURRY },
+        { step: `Let it simmer and cook down to your desired level of remaining liquid (about 15 to 20 minutes).`, section: SECTIONS.COOK_CURRY },
         { step: `Add the veggies from the "${SECTIONS.VEGGIES}" section ingredients. Cook for about 3 to 4 minutes. This is meant to add some color and added near the end to prevent it from overcooking.`, section: SECTIONS.COOK_CURRY },
-        { step: 'Serve this over rice.', section: SECTIONS.SERVE },
+        { step: `Serve this over rice.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

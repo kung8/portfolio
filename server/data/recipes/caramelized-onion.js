@@ -60,14 +60,14 @@ module.exports = {
         FRYING_PAN
     ],
     directions: [
-        { step: 'Over medium-high heat, melt butter in a pan.', section: CARAMELIZE_ONIONS, img: onion1 },
-        { step: 'Add the red onions and let it brown.', section: CARAMELIZE_ONIONS, img: onion2 },
+        { step: `Over medium-high heat, melt butter in a pan.`, section: CARAMELIZE_ONIONS, img: onion1 },
+        { step: `Add the red onions and let it brown.`, section: CARAMELIZE_ONIONS, img: onion2 },
 
         { step: `When the onion begins to brown, add the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
-        { step: 'Stir. Cook for 3 minutes.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Season with salt and pepper. Cook until onions are browned and soft.', section: SECTIONS.COOK_SAUCE, img: onion3 },
+        { step: `Stir. Cook for 3 minutes.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Season with salt and pepper. Cook until onions are browned and soft.`, section: SECTIONS.COOK_SAUCE, img: onion3 },
 
-        { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.TOPPING, img: onion4 },
+        { step: `Serve as a topping for pizza, burgers, or meat.`, section: SECTIONS.TOPPING, img: onion4 },
     ],
     store: [
         {

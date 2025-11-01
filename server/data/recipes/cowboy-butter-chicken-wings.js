@@ -60,15 +60,15 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'Preheat the oven to 425ºF.', section: PREP_COOKING },
-        { step: 'Line a baking sheet with aluminum foil and place a wire rack on top.', section: PREP_COOKING },
-        { step: 'Pat the chicken dry with paper towels', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Season the chicken with salt and pepper.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Place chicken on the wire rack in a single layer.', section: SECTIONS.COOK_CHICKEN, img: wings1 },
-        { step: 'Bake the chicken until the skin is crispy and is cooked through (about 45 to 50 minutes).', section: SECTIONS.COOK_CHICKEN, img: wings3 },
+        { step: `Preheat the oven to 425ºF.`, section: PREP_COOKING },
+        { step: `Line a baking sheet with aluminum foil and place a wire rack on top.`, section: PREP_COOKING },
+        { step: `Pat the chicken dry with paper towels`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Season the chicken with salt and pepper.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Place chicken on the wire rack in a single layer.`, section: SECTIONS.COOK_CHICKEN, img: wings1 },
+        { step: `Bake the chicken until the skin is crispy and is cooked through (about 45 to 50 minutes).`, section: SECTIONS.COOK_CHICKEN, img: wings3 },
         { step: `In a mixing bowl, combine the "${COWBOY_BUTTER}" section ingredients.`, section: PREP_COWBOY_BUTTER, img: wings2 },
-        { step: 'Toss the chicken in the butter mixture.', section: COAT_CHICKEN, img: wings4 },
-        { step: 'Serve these wings with your favorite dips and sides at your next tailgate, superbowl watch party, or any kind of party.', section: SECTIONS.SERVE },
+        { step: `Toss the chicken in the butter mixture.`, section: COAT_CHICKEN, img: wings4 },
+        { step: `Serve these wings with your favorite dips and sides at your next tailgate, superbowl watch party, or any kind of party.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

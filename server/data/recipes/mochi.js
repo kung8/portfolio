@@ -5,7 +5,7 @@ const mochi4 = '../assets/Products/mochi-4.jpeg';
 const mochi5 = '../assets/Products/mochi-5.jpeg';
 const mochi6 = '../assets/Products/mochi-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, BAKING_PAN, COCONUT_MILK, FOOD_COLORING, KNIFE, MIXING_BOWL, MOCHIKO, OVEN, POTATO_STARCH, WATER, WHITE_SUGAR } = require('./ingredients');
 
 const MOCHI = 'Mochi';
@@ -52,16 +52,16 @@ module.exports = {
         KNIFE,
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: MOCHI },
-        { step: 'Grease the baking pan.', section: MOCHI },
-        { step: 'In a mixing bowl, combine the "Mochi" ingredients.', section: MOCHI, img: [mochi1, mochi2] },
-        { step: 'Pour mochi batter into the baking pan.', section: MOCHI, img: mochi3 },
-        { step: 'Tightly cover the pan with aluminum foil.', section: MOCHI, img: mochi4 },
-        { step: 'Bake until the mochi is cooked through (about 45 to 55 minutes).', section: MOCHI, img: mochi5 },
-        { step: 'Let mochi completely cool before dusting.', section: MOCHI },
-        { step: 'Dust the mochi with potato starch to prevent sticking.', section: DUSTING },
-        { step: 'Cut the mochi into rectangles. Add more starch if needed.', section: DUSTING },
-        { step: 'Enjoy these light delicious treats.', section: SECTIONS.SERVE },
+        { step: `Preheat the oven to 350ºF.`, section: MOCHI },
+        { step: `Grease the baking pan.`, section: MOCHI },
+        { step: `In a mixing bowl, combine the "Mochi" ingredients.`, section: MOCHI, img: [mochi1, mochi2] },
+        { step: `Pour mochi batter into the baking pan.`, section: MOCHI, img: mochi3 },
+        { step: `Tightly cover the pan with aluminum foil.`, section: MOCHI, img: mochi4 },
+        { step: `Bake until the mochi is cooked through (about 45 to 55 minutes).`, section: MOCHI, img: mochi5 },
+        { step: `Let mochi completely cool before dusting.`, section: MOCHI },
+        { step: `Dust the mochi with potato starch to prevent sticking.`, section: DUSTING },
+        { step: `Cut the mochi into rectangles. Add more starch if needed.`, section: DUSTING },
+        { step: `Enjoy these light delicious treats.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

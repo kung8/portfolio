@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CHEDDAR_CHEESE, DICED_TOMATO, GARLIC_POWDER, GREEN_BELL_PEPPER, GROUND_BEEF, RED_BELL_PEPPER, SALT, WHITE_RICE, YELLOW_ONION } = require('./ingredients');
 
 const REST_OF_FILLING_SECTION = 'Rest of Filling';
@@ -53,16 +53,16 @@ module.exports = {
         { name: 'baking pan' },
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: COOK_INGREDIENTS },
-        { step: 'Over medium heat, brown ground beef until no longer pink.', section: COOK_INGREDIENTS },
-        { step: 'Drain.', section: COOK_INGREDIENTS },
+        { step: `Preheat the oven to 350ºF.`, section: COOK_INGREDIENTS },
+        { step: `Over medium heat, brown ground beef until no longer pink.`, section: COOK_INGREDIENTS },
+        { step: `Drain.`, section: COOK_INGREDIENTS },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Saute until vegetables are tender (about 5 minutes).`, section: COOK_INGREDIENTS },
         { step: `Add the "${REST_OF_FILLING_SECTION}" section ingredients. Mix and let simmer for 2 to 3 minutes.`, section: COOK_INGREDIENTS },
-        { step: 'Transfer to baking pan.', section: COOK_CASSEROLE },
-        { step: 'Top with shredded cheese.', section: COOK_CASSEROLE },
-        { step: 'Bake until cheese is golden and bubbly (about 20 minutes).', section: COOK_CASSEROLE },
-        { step: 'Let it rest for a few minutes.', section: COOK_CASSEROLE },
-        { step: 'Enjoy this recipe made easier as a casserole dish!', section: SECTIONS.SERVE },
+        { step: `Transfer to baking pan.`, section: COOK_CASSEROLE },
+        { step: `Top with shredded cheese.`, section: COOK_CASSEROLE },
+        { step: `Bake until cheese is golden and bubbly (about 20 minutes).`, section: COOK_CASSEROLE },
+        { step: `Let it rest for a few minutes.`, section: COOK_CASSEROLE },
+        { step: `Enjoy this recipe made easier as a casserole dish!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

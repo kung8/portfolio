@@ -1,7 +1,7 @@
 const bites1 = '../assets/Products/baked-ritz-bites-1.jpeg';
 const bites2 = '../assets/Products/baked-ritz-bites-2.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, BAKING_SHEET, BUTTER_PICKLE_CHIPS, EVERYTHING_BAGEL_SEASONING, HAVARTI_CHEESE, OVEN, RITZ_CRACKERS } = require('./ingredients');
 
 const PREP_CRACKER_BITES = 'Prep Cracker Bites';
@@ -45,13 +45,13 @@ module.exports = {
         ALUMINUM_FOIL,
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: PREP_CRACKER_BITES },
-        { step: 'Line a baking sheet with aluminum foil.', section: PREP_CRACKER_BITES },
-        { step: 'Lay out ritz crackers on baking sheet in a single row.', section: PREP_CRACKER_BITES },
-        { step: 'Layer each cracker with a pickle and cheese.', section: PREP_CRACKER_BITES },
-        { step: 'Sprinkle everything bagel seasoning over each.', section: PREP_CRACKER_BITES, img: bites1 },
-        { step: 'Bake until the cheese has melted (about 5 to 10 minutes).', section: BAKE_CRACKER_BITES },
-        { step: 'Enjoy this delicious quick snack.', section: SECTIONS.SERVE },
+        { step: `Preheat the oven to 350ºF.`, section: PREP_CRACKER_BITES },
+        { step: `Line a baking sheet with aluminum foil.`, section: PREP_CRACKER_BITES },
+        { step: `Lay out ritz crackers on baking sheet in a single row.`, section: PREP_CRACKER_BITES },
+        { step: `Layer each cracker with a pickle and cheese.`, section: PREP_CRACKER_BITES },
+        { step: `Sprinkle everything bagel seasoning over each.`, section: PREP_CRACKER_BITES, img: bites1 },
+        { step: `Bake until the cheese has melted (about 5 to 10 minutes).`, section: BAKE_CRACKER_BITES },
+        { step: `Enjoy this delicious quick snack.`, section: SECTIONS.SERVE },
     ],
     store: null,
     reheat: null,

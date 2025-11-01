@@ -74,25 +74,25 @@ module.exports = {
         DOUGH_KNIFE
     ],
     directions: [
-        { step: 'In a stand mixer, combine the flour, sugar, lemon zest, baking powder and salt.', section: SECTIONS.MAKE_DOUGH, img: crostata1 },
-        { step: 'Add butter. Mix until it looks like wet sand.', section: SECTIONS.MAKE_DOUGH, img: [crostata2, crostata3] },
-        { step: 'Add egg, yolk and vanilla. Mix. It will be crumbly but hold together.', section: SECTIONS.MAKE_DOUGH, img: [crostata4, crostata5] },
-        { step: 'Transfer to a clean surface and flatten dough to a disc.', section: SECTIONS.MAKE_DOUGH, img: [crostata6, crostata7] },
-        { step: 'Move to a plate and wrap. Chill for 1 hour.', section: SECTIONS.MAKE_DOUGH, img: crostata8 },
+        { step: `In a stand mixer, combine the flour, sugar, lemon zest, baking powder and salt.`, section: SECTIONS.MAKE_DOUGH, img: crostata1 },
+        { step: `Add butter. Mix until it looks like wet sand.`, section: SECTIONS.MAKE_DOUGH, img: [crostata2, crostata3] },
+        { step: `Add egg, yolk and vanilla. Mix. It will be crumbly but hold together.`, section: SECTIONS.MAKE_DOUGH, img: [crostata4, crostata5] },
+        { step: `Transfer to a clean surface and flatten dough to a disc.`, section: SECTIONS.MAKE_DOUGH, img: [crostata6, crostata7] },
+        { step: `Move to a plate and wrap. Chill for 1 hour.`, section: SECTIONS.MAKE_DOUGH, img: crostata8 },
 
-        { step: 'Over medium heat, add cherries, lemon juice, cornstarch, salt and sugar to a saucepan. Stir occasionally and cook until burst (about 6 to 8 minutes).', section: SECTIONS.PREP_FILLING, img: [crostata9, crostata10] },
-        { step: 'Let cool for at least 15 minutes.', section: SECTIONS.PREP_FILLING },
+        { step: `Over medium heat, add cherries, lemon juice, cornstarch, salt and sugar to a saucepan. Stir occasionally and cook until burst (about 6 to 8 minutes).`, section: SECTIONS.PREP_FILLING, img: [crostata9, crostata10] },
+        { step: `Let cool for at least 15 minutes.`, section: SECTIONS.PREP_FILLING },
 
-        { step: 'Position the oven rack in the center. Preheat the oven to 350ºF.', section: SECTIONS.ASSEMBLE },
-        { step: 'Roll out dough to 1/4" thick.', section: SECTIONS.ASSEMBLE, img: crostata11 },
-        { step: 'Place the dough in the pie dish. Press sides. Trim any excess dough.', section: SECTIONS.ASSEMBLE, img: crostata12 },
-        { step: 'Add chocolate pieces to the pie and pour filling over that.', section: SECTIONS.ASSEMBLE, img: [crostata13, crostata14] },
-        { step: 'Re-roll the excess dough. Cut into strips to make a lattice top.', section: SECTIONS.ASSEMBLE, img: crostata15 },
-        { step: 'Brush dough with egg wash.', section: SECTIONS.ASSEMBLE, img: crostata16 },
-        { step: 'Bake until golden brown (about 20 to 25 minutes).', section: SECTIONS.ASSEMBLE },
-        { step: 'Let it cool for 15 minutes.', section: SECTIONS.ASSEMBLE },
+        { step: `Position the oven rack in the center. Preheat the oven to 350ºF.`, section: SECTIONS.ASSEMBLE },
+        { step: `Roll out dough to 1/4" thick.`, section: SECTIONS.ASSEMBLE, img: crostata11 },
+        { step: `Place the dough in the pie dish. Press sides. Trim any excess dough.`, section: SECTIONS.ASSEMBLE, img: crostata12 },
+        { step: `Add chocolate pieces to the pie and pour filling over that.`, section: SECTIONS.ASSEMBLE, img: [crostata13, crostata14] },
+        { step: `Re-roll the excess dough. Cut into strips to make a lattice top.`, section: SECTIONS.ASSEMBLE, img: crostata15 },
+        { step: `Brush dough with egg wash.`, section: SECTIONS.ASSEMBLE, img: crostata16 },
+        { step: `Bake until golden brown (about 20 to 25 minutes).`, section: SECTIONS.ASSEMBLE },
+        { step: `Let it cool for 15 minutes.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Enjoy this delicious dessert.', section: SECTIONS.SERVE },
+        { step: `Enjoy this delicious dessert.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

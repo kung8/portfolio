@@ -70,16 +70,16 @@ module.exports = {
         SMALL_BOWL,
     ],
     directions: [
-        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: 'Over medium-high heat, melt butter.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Add chicken wings to the pan and cook for 2 to 3 minutes on each side until browned.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Transfer chicken to baking pan.', section: SECTIONS.COOK_CHICKEN },
+        { step: `Over medium-high heat, melt butter.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Add chicken wings to the pan and cook for 2 to 3 minutes on each side until browned.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Transfer chicken to baking pan.`, section: SECTIONS.COOK_CHICKEN },
 
         { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
-        { step: 'Pour the sauce over the chicken and add lemon slices.', section: SECTIONS.ASSEMBLE },
-        { step: 'Bake for 20 to 30 minutes.', section: SECTIONS.BAKE, img: chicken1 },
-        { step: 'Serve with rice and garnish with fresh rosemary.', section: SECTIONS.SERVE, img: chicken2 },
+        { step: `Pour the sauce over the chicken and add lemon slices.`, section: SECTIONS.ASSEMBLE },
+        { step: `Bake for 20 to 30 minutes.`, section: SECTIONS.BAKE, img: chicken1 },
+        { step: `Serve with rice and garnish with fresh rosemary.`, section: SECTIONS.SERVE, img: chicken2 },
     ],
     store: [
         {

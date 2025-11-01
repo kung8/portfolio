@@ -34,11 +34,11 @@ module.exports = {
         { name: 'clear cups' },
     ],
     directions: [
-        { step: 'Fill cups with a layer of chocolate pudding.', section: SECTIONS.ASSEMBLE },
-        { step: 'Break a Milano cookie in half and stick it into the pudding. This is a gravestone.', section: SECTIONS.ASSEMBLE },
-        { step: 'Add a layer of crushed Oreo around the gravestone and cover the pudding layer.', section: SECTIONS.ASSEMBLE },
+        { step: `Fill cups with a layer of chocolate pudding.`, section: SECTIONS.ASSEMBLE },
+        { step: `Break a Milano cookie in half and stick it into the pudding. This is a gravestone.`, section: SECTIONS.ASSEMBLE },
+        { step: `Add a layer of crushed Oreo around the gravestone and cover the pudding layer.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Get creative and have fun! You can add chocolate, sprinkles, and other cookies and candies.', section: SECTIONS.SERVE },
+        { step: `Get creative and have fun! You can add chocolate, sprinkles, and other cookies and candies.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

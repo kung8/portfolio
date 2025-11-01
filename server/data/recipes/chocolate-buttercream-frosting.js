@@ -59,14 +59,14 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'In a mixing bowl, whisk the cocoa powder to break up the powder.', section: CREAMING, img: frosting1 },
-        { step: 'Add softened butter. Cream with a spatula.', section: CREAMING, img: [frosting2, frosting3] },
+        { step: `In a mixing bowl, whisk the cocoa powder to break up the powder.`, section: CREAMING, img: frosting1 },
+        { step: `Add softened butter. Cream with a spatula.`, section: CREAMING, img: [frosting2, frosting3] },
 
-        { step: 'In another mixing bowl, whisk the powdered sugar.', section: PREP_POWDERED_SUGAR },
+        { step: `In another mixing bowl, whisk the powdered sugar.`, section: PREP_POWDERED_SUGAR },
 
-        { step: 'In the creamed butter bowl, add 1 cup of powdered sugar at a time and 1 tablespoon of heavy cream. Combine well.', section: COMBINE_SUGAR, img: [frosting4, frosting5] },
+        { step: `In the creamed butter bowl, add 1 cup of powdered sugar at a time and 1 tablespoon of heavy cream. Combine well.`, section: COMBINE_SUGAR, img: [frosting4, frosting5] },
         { step: `Add the "${VANILLA_SECTION}" section ingredients.`, section: COMBINE_VANILLA, img: frosting6 },
-        { step: 'Use this frosting to decorate your favorite desserts.', section: SECTIONS.SERVE },
+        { step: `Use this frosting to decorate your favorite desserts.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

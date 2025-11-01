@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CHICKEN_BROTH, PICANTE_SAUCE, VEGETABLE_OIL, WHITE_RICE, YELLOW_ONION } = require('./ingredients');
 
 const RICE_SECTION = 'Rice';
@@ -44,13 +44,13 @@ module.exports = {
         { name: 'large pot with lid' },
     ],
     directions: [
-        { step: 'Over medium heat, heat oil to a large pot.', section: COOK_RICE },
-        { step: 'Add onion. Cook and stir until tender (about 5 minutes).', section: COOK_RICE },
-        { step: 'Add rice. Cook and stir until rice is golden brown.', section: COOK_RICE },
-        { step: 'Add chicken broth and picante sauce.', section: COOK_RICE },
-        { step: 'Turn heat to low.', section: COOK_RICE },
-        { step: 'Cover and simmer until there is no more liquid (about 15 to 20 minutes).', section: COOK_RICE },
-        { step: 'Enjoy this with your favorite toppings or main dishes.', section: SECTIONS.SERVE },
+        { step: `Over medium heat, heat oil to a large pot.`, section: COOK_RICE },
+        { step: `Add onion. Cook and stir until tender (about 5 minutes).`, section: COOK_RICE },
+        { step: `Add rice. Cook and stir until rice is golden brown.`, section: COOK_RICE },
+        { step: `Add chicken broth and picante sauce.`, section: COOK_RICE },
+        { step: `Turn heat to low.`, section: COOK_RICE },
+        { step: `Cover and simmer until there is no more liquid (about 15 to 20 minutes).`, section: COOK_RICE },
+        { step: `Enjoy this with your favorite toppings or main dishes.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

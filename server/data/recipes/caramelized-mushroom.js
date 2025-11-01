@@ -59,14 +59,14 @@ module.exports = {
         FRYING_PAN
     ],
     directions: [
-        { step: 'Over medium-high heat, melt butter in a pan.', section: CARAMELIZE_MUSHROOMS },
-        { step: 'Add the mushroom and let it brown.', section: CARAMELIZE_MUSHROOMS, img: mushroom1 },
+        { step: `Over medium-high heat, melt butter in a pan.`, section: CARAMELIZE_MUSHROOMS },
+        { step: `Add the mushroom and let it brown.`, section: CARAMELIZE_MUSHROOMS, img: mushroom1 },
 
         { step: `When the mushroom begins to brown, add the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
-        { step: 'Stir. Cook for 3 minutes.', section: SECTIONS.COOK_SAUCE, img: mushroom2 },
-        { step: 'Season with salt and pepper. Cook until mushrooms are browned and soft.', section: SECTIONS.COOK_SAUCE },
+        { step: `Stir. Cook for 3 minutes.`, section: SECTIONS.COOK_SAUCE, img: mushroom2 },
+        { step: `Season with salt and pepper. Cook until mushrooms are browned and soft.`, section: SECTIONS.COOK_SAUCE },
 
-        { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.SERVE, img: mushroom3 },
+        { step: `Serve as a topping for pizza, burgers, or meat.`, section: SECTIONS.SERVE, img: mushroom3 },
     ],
     store: [
         {

@@ -62,14 +62,14 @@ module.exports = {
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.ASSEMBLE, img: gyoza1 },
-        { step: 'Place a spoonful of filling in the center of each wrapper.', section: SECTIONS.ASSEMBLE, img: gyoza2 },
-        { step: 'Brush the wrapper edges with water using your finger and crimp the edges until the gyozas are sealed.', section: SECTIONS.ASSEMBLE },
-        { step: 'Place gyozas on a plate(s) and leave space between them to avoid them sticking.', section: SECTIONS.ASSEMBLE, img: gyoza3 },
-        { step: 'Over medium-high heat, add oil to a pan.', section: COOK_GYOZAS },
-        { step: 'Pan fry gyozas until golden brown (about 3 minutes).', section: COOK_GYOZAS, img: [gyoza4, gyoza5] },
-        { step: 'Add water. Cover with a lid.', section: COOK_GYOZAS, img: gyoza6 },
-        { step: 'Steam for about 3 to 4 minutes.', section: COOK_GYOZAS, img: gyoza7 },
-        { step: 'Serve with your favorite sauce.', section: SECTIONS.SERVE, img: gyoza9 },
+        { step: `Place a spoonful of filling in the center of each wrapper.`, section: SECTIONS.ASSEMBLE, img: gyoza2 },
+        { step: `Brush the wrapper edges with water using your finger and crimp the edges until the gyozas are sealed.`, section: SECTIONS.ASSEMBLE },
+        { step: `Place gyozas on a plate(s) and leave space between them to avoid them sticking.`, section: SECTIONS.ASSEMBLE, img: gyoza3 },
+        { step: `Over medium-high heat, add oil to a pan.`, section: COOK_GYOZAS },
+        { step: `Pan fry gyozas until golden brown (about 3 minutes).`, section: COOK_GYOZAS, img: [gyoza4, gyoza5] },
+        { step: `Add water. Cover with a lid.`, section: COOK_GYOZAS, img: gyoza6 },
+        { step: `Steam for about 3 to 4 minutes.`, section: COOK_GYOZAS, img: gyoza7 },
+        { step: `Serve with your favorite sauce.`, section: SECTIONS.SERVE, img: gyoza9 },
     ],
     store: [
         {

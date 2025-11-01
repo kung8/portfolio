@@ -72,20 +72,20 @@ module.exports = {
         WOK,
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the "Chicken Marinade" ingredients.', section: SECTIONS.PREP_CHICKEN },
-        { step: 'Let it marinade for at least 10 minutes.', section: SECTIONS.PREP_CHICKEN, img: kung2 },
+        { step: `In a mixing bowl, combine the "Chicken Marinade" ingredients.`, section: SECTIONS.PREP_CHICKEN },
+        { step: `Let it marinade for at least 10 minutes.`, section: SECTIONS.PREP_CHICKEN, img: kung2 },
 
-        { step: 'In a medium bowl, combine the "Kung Pao Sauce" ingredients.', section: SECTIONS.PREP_SAUCE },
-        { step: 'Mix until the cornstarch has dissolved and the sauce is smooth. Set aside.', section: SECTIONS.PREP_SAUCE, img: kung1 },
+        { step: `In a medium bowl, combine the "Kung Pao Sauce" ingredients.`, section: SECTIONS.PREP_SAUCE },
+        { step: `Mix until the cornstarch has dissolved and the sauce is smooth. Set aside.`, section: SECTIONS.PREP_SAUCE, img: kung1 },
 
-        { step: 'Over medium-high heat, heat 2 tablespoons of oil in a wok.', section: SECTIONS.STIR_FRY },
-        { step: 'Add the chicken and cook until golden brown (about 80% cooked).', section: SECTIONS.STIR_FRY, img: kung4 },
-        { step: 'Remove the chicken and set aside.', section: SECTIONS.STIR_FRY, img: kung6 },
-        { step: 'Add the remaining oil to the wok.', section: SECTIONS.STIR_FRY },
+        { step: `Over medium-high heat, heat 2 tablespoons of oil in a wok.`, section: SECTIONS.STIR_FRY },
+        { step: `Add the chicken and cook until golden brown (about 80% cooked).`, section: SECTIONS.STIR_FRY, img: kung4 },
+        { step: `Remove the chicken and set aside.`, section: SECTIONS.STIR_FRY, img: kung6 },
+        { step: `Add the remaining oil to the wok.`, section: SECTIONS.STIR_FRY },
         { step: `Add the "${SECTIONS.STIR_FRY}" section ingredients. Stir fry the veggies (for about 4 minutes).`, section: SECTIONS.STIR_FRY, img: [kung3, kung5] },
-        { step: 'Add the sauce to the wok and stir.', section: SECTIONS.STIR_FRY, img: kung7 },
-        { step: 'Once the sauce thickens, add the chicken back in and stir until everything is coated well.', section: SECTIONS.STIR_FRY },
-        { step: 'Top this dish with your favorite toppings and serve with jasmine rice. Enjoy!', section: SECTIONS.SERVE, img: kung9 },
+        { step: `Add the sauce to the wok and stir.`, section: SECTIONS.STIR_FRY, img: kung7 },
+        { step: `Once the sauce thickens, add the chicken back in and stir until everything is coated well.`, section: SECTIONS.STIR_FRY },
+        { step: `Top this dish with your favorite toppings and serve with jasmine rice. Enjoy!`, section: SECTIONS.SERVE, img: kung9 },
     ],
     store: [
         {

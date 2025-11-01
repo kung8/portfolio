@@ -90,19 +90,19 @@ module.exports = {
         SMALL_BOWL,
     ],
     directions: [
-        { step: 'Preheat the waffle iron.', section: PREHEAT_WAFFLE_IRON },
+        { step: `Preheat the waffle iron.`, section: PREHEAT_WAFFLE_IRON },
 
         { step: `In a mixing bowl, combine the "${SECTIONS.DRY_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_BATTER, img: waffles1 },
         { step: `In a large bowl, combine the "${SECTIONS.WET_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_BATTER, img: waffles2 },
-        { step: 'In a small bowl, beat egg whites with a mixer or with a fork.', section: SECTIONS.PREP_BATTER, img: waffles3 },
-        { step: 'Add egg yolk to dry ingredients.', section: SECTIONS.PREP_BATTER },
-        { step: 'Combine the wet and dry ingredients.', section: SECTIONS.PREP_BATTER },
-        { step: 'Fold egg whites into the the combined ingredients.', section: SECTIONS.PREP_BATTER, img: waffles4 },
+        { step: `In a small bowl, beat egg whites with a mixer or with a fork.`, section: SECTIONS.PREP_BATTER, img: waffles3 },
+        { step: `Add egg yolk to dry ingredients.`, section: SECTIONS.PREP_BATTER },
+        { step: `Combine the wet and dry ingredients.`, section: SECTIONS.PREP_BATTER },
+        { step: `Fold egg whites into the the combined ingredients.`, section: SECTIONS.PREP_BATTER, img: waffles4 },
 
-        { step: 'Once the waffle iron is heated, use a cooking spray on the waffle iron then fill between 3/4 way to almost full.', section: COOK_WAFFLES, img: waffles5 },
-        { step: 'Cook until golden brown (for 3 to 5 minutes).', section: COOK_WAFFLES },
+        { step: `Once the waffle iron is heated, use a cooking spray on the waffle iron then fill between 3/4 way to almost full.`, section: COOK_WAFFLES, img: waffles5 },
+        { step: `Cook until golden brown (for 3 to 5 minutes).`, section: COOK_WAFFLES },
 
-        { step: 'Eat these warm topped with your favorite toppings.', section: SECTIONS.SERVE, img: waffles6 },
+        { step: `Eat these warm topped with your favorite toppings.`, section: SECTIONS.SERVE, img: waffles6 },
     ],
     notes: [
         { note: 'To keep waffles warm, place them in an oven at 225ºF.' },

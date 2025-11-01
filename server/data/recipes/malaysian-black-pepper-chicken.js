@@ -9,7 +9,7 @@ const pepper8 = '../assets/Products/black-pepper-chicken-8.jpeg';
 const pepper9 = '../assets/Products/black-pepper-chicken-9.jpeg';
 const pepper10 = '../assets/Products/black-pepper-chicken-10.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
     CHICKEN_BREAST,
@@ -83,17 +83,17 @@ module.exports = {
         MEDIUM_BOWL,
     ],
     directions: [
-        { step: 'Cut the chicken into 1" cubes.', section: SECTIONS.MARINADE },
-        { step: 'In a mixing bowl, combine the marinade ingredients.', section: SECTIONS.MARINADE, img: pepper1 },
-        { step: 'Add chicken. Marinate the chicken for 30 minutes.', section: SECTIONS.MARINADE, img: pepper2 },
-        { step: 'Over medium-high heat, heat 1 Tbsp of oil in a wok.', section: SECTIONS.MAIN },
-        { step: 'Cook the chicken in batches if needed. Cook until chicken is cooked through. Remove chicken and set aside.', section: SECTIONS.MAIN, img: [pepper3, pepper4] },
-        { step: 'Add the shallots, garlic, ginger and black pepper to the wok. Cook and stir until fragrant.', section: SECTIONS.MAIN, img: pepper5 },
-        { step: 'Add the sauces and water. Mix until combined.', section: SECTIONS.MAIN, img: pepper6 },
-        { step: 'In a small bowl, combine cornstarch and a little warm water. Mix then add to the wok.', section: SECTIONS.MAIN, img: pepper7 },
-        { step: 'Re-add the chicken and mix until combined.', section: SECTIONS.MAIN, img: pepper8 },
-        { step: 'Add sugar as desired.', section: SECTIONS.MAIN },
-        { step: 'Serve over rice, garnish with a few sprigs of cilantro, and enjoy a small taste of Malaysian cuisine.', section: SECTIONS.MAIN, img: pepper9 },
+        { step: `Cut the chicken into 1" cubes.`, section: SECTIONS.MARINADE },
+        { step: `In a mixing bowl, combine the marinade ingredients.`, section: SECTIONS.MARINADE, img: pepper1 },
+        { step: `Add chicken. Marinate the chicken for 30 minutes.`, section: SECTIONS.MARINADE, img: pepper2 },
+        { step: `Over medium-high heat, heat 1 Tbsp of oil in a wok.`, section: SECTIONS.MAIN },
+        { step: `Cook the chicken in batches if needed. Cook until chicken is cooked through. Remove chicken and set aside.`, section: SECTIONS.MAIN, img: [pepper3, pepper4] },
+        { step: `Add the shallots, garlic, ginger and black pepper to the wok. Cook and stir until fragrant.`, section: SECTIONS.MAIN, img: pepper5 },
+        { step: `Add the sauces and water. Mix until combined.`, section: SECTIONS.MAIN, img: pepper6 },
+        { step: `In a small bowl, combine cornstarch and a little warm water. Mix then add to the wok.`, section: SECTIONS.MAIN, img: pepper7 },
+        { step: `Re-add the chicken and mix until combined.`, section: SECTIONS.MAIN, img: pepper8 },
+        { step: `Add sugar as desired.`, section: SECTIONS.MAIN },
+        { step: `Serve over rice, garnish with a few sprigs of cilantro, and enjoy a small taste of Malaysian cuisine.`, section: SECTIONS.MAIN, img: pepper9 },
     ],
     store: [
         {

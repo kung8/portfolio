@@ -4,7 +4,7 @@ const penyet3 = '../assets/Products/ayam-penyet-3.jpeg';
 const penyet4 = '../assets/Products/ayam-penyet-4.jpeg';
 const penyet5 = '../assets/Products/ayam-penyet-5.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CHICKEN_THIGH, CORIANDER_POWDER, CURRY_LEAF, FRYING_PAN, GARLIC, GINGER, KEY_LIME_JUICE, LARGE_POT, LEMON_BASIL, MORTAR_AND_PESTLE, RED_CHILI, ROMA_TOMATO, SALT, SHALLOT, SHRIMP_PASTE, STOVE, VEGETABLE_OIL, WATER, WHITE_SUGAR } = require('./ingredients');
 
 const GINGER_PASTE_SECTION = 'Ginger Paste';
@@ -73,20 +73,20 @@ module.exports = {
     ],
     directions: [
         { step: `In a mortar, combine the "${GINGER_PASTE_SECTION}" section ingredients. Pound into a paste.`, section: MAKE_GINGER_PASTE, img: [penyet1, penyet2] },
-        { step: 'In a pot, combine the ginger paste, chicken, water and curry leaves.', section: BOIL_CHICKEN },
-        { step: 'Over high heat, bring the water to a boil.', section: BOIL_CHICKEN, img: penyet3 },
-        { step: 'Reduce heat. Let simmer until cooked through (about 20 minutes).', section: BOIL_CHICKEN, img: penyet4 },
-        { step: 'Over medium-high heat, heat oil in a pan.', section: FRY_CHICKEN },
-        { step: 'Add the boiled chicken to the pan. Fry until golden brown (about 5 to 10 minutes).', section: FRY_CHICKEN },
+        { step: `In a pot, combine the ginger paste, chicken, water and curry leaves.`, section: BOIL_CHICKEN },
+        { step: `Over high heat, bring the water to a boil.`, section: BOIL_CHICKEN, img: penyet3 },
+        { step: `Reduce heat. Let simmer until cooked through (about 20 minutes).`, section: BOIL_CHICKEN, img: penyet4 },
+        { step: `Over medium-high heat, heat oil in a pan.`, section: FRY_CHICKEN },
+        { step: `Add the boiled chicken to the pan. Fry until golden brown (about 5 to 10 minutes).`, section: FRY_CHICKEN },
 
-        { step: 'Over medium heat, heat oil in pan.', section: MAKE_SAMBAL },
-        { step: 'Add shallots, tomato, and red chilies. Cook for 2 minutes.', section: MAKE_SAMBAL },
-        { step: 'Transfer to a mortar.', section: MAKE_SAMBAL },
-        { step: 'Add the rest of the sambal ingredients.', section: MAKE_SAMBAL },
-        { step: 'Pound into a paste.', section: MAKE_SAMBAL },
-        { step: 'Set aside.', section: MAKE_SAMBAL },
+        { step: `Over medium heat, heat oil in pan.`, section: MAKE_SAMBAL },
+        { step: `Add shallots, tomato, and red chilies. Cook for 2 minutes.`, section: MAKE_SAMBAL },
+        { step: `Transfer to a mortar.`, section: MAKE_SAMBAL },
+        { step: `Add the rest of the sambal ingredients.`, section: MAKE_SAMBAL },
+        { step: `Pound into a paste.`, section: MAKE_SAMBAL },
+        { step: `Set aside.`, section: MAKE_SAMBAL },
 
-        { step: 'Serve and enjoy this with a side of sambal or top with "Javanese Chicken Coconut Curry".', section: SECTIONS.SERVE },
+        { step: `Serve and enjoy this with a side of sambal or top with "Javanese Chicken Coconut Curry".`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'It wasn\'t quite like what I had in Singapore, but it was still delicious. I would recommend deep frying it and actually dredging the chicken in panko breadcrumbs after it has been boiled. I will try this next time.' },

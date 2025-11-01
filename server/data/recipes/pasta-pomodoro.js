@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ANGEL_HAIR_PASTA, BALSAMIC_VINEGAR, BASIL_LEAF, BLACK_PEPPER, CHICKEN_BROTH, GARLIC, OLIVE_OIL, PARMESAN_CHEESE, RED_PEPPER_FLAKES, ROMA_TOMATO, YELLOW_ONION } = require('./ingredients');
 
 module.exports = {
@@ -47,20 +47,20 @@ module.exports = {
         { name: 'frying pan' },
     ],
     directions: [
-        { step: 'Bring a pot of water and salt to a boil.', section: SECTIONS.COOK_PASTA },
-        { step: 'Add pasta and cook until al dente (about 8 minutes or per package instructions).', section: SECTIONS.COOK_PASTA },
-        { step: 'Drain and set aside.', section: SECTIONS.COOK_PASTA },
+        { step: `Bring a pot of water and salt to a boil.`, section: SECTIONS.COOK_PASTA },
+        { step: `Add pasta and cook until al dente (about 8 minutes or per package instructions).`, section: SECTIONS.COOK_PASTA },
+        { step: `Drain and set aside.`, section: SECTIONS.COOK_PASTA },
 
-        { step: 'Over high heat, add olive oil to a frying pan.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Add onions and garlic. Saute until browned.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Reduce to medium-high heat.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Mix in tomatoes, vinegar and chicken broth. Simmer for about 8 minutes.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Add spices and herb. Mix.', section: SECTIONS.COOK_SAUCE },
+        { step: `Over high heat, add olive oil to a frying pan.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Add onions and garlic. Saute until browned.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Reduce to medium-high heat.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Mix in tomatoes, vinegar and chicken broth. Simmer for about 8 minutes.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Add spices and herb. Mix.`, section: SECTIONS.COOK_SAUCE },
 
-        { step: 'Add pasta and toss.', section: SECTIONS.ASSEMBLE },
-        { step: 'Simmer for 5 minutes.', section: SECTIONS.ASSEMBLE },
+        { step: `Add pasta and toss.`, section: SECTIONS.ASSEMBLE },
+        { step: `Simmer for 5 minutes.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Serve warm and topped with grated cheese.', section: SECTIONS.SERVE },
+        { step: `Serve warm and topped with grated cheese.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

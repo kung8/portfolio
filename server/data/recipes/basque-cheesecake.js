@@ -58,18 +58,18 @@ module.exports = {
         COOLING_RACK
     ],
     directions: [
-        { step: 'Preheat oven to 450ºF.', section: PREP_BAKE },
-        { step: 'Line a springform pan with two intersecting parchment paper so that it hangs about 2 inches over the edge.', section: PREP_BAKE },
+        { step: `Preheat oven to 450ºF.`, section: PREP_BAKE },
+        { step: `Line a springform pan with two intersecting parchment paper so that it hangs about 2 inches over the edge.`, section: PREP_BAKE },
         { step: `In a stand mixer, combine the "${CREAM_CHEESE_MIXTURE}" section ingredients. Beat until smooth and creamy. Scrape down sides as needed.`, section: CREAM_CHEESE_SECTION },
         { step: `In a mixing bowl, whisk together "${FLOUR_MIXTURE}" section ingredients.`, section: PREP_FLOUR_MIXTURE },
         { step: `Add "${FLOUR_MIXTURE}" to the "${CREAM_CHEESE_MIXTURE}". Mix.`, section: PREP_FLOUR_MIXTURE },
         { step: `Add "${SECTIONS.EGGS}" section ingredients, one at a time. Mix.`, section: ADD_EGGS },
         { step: `Add vanilla. Mix.`, section: ADD_VANILLA },
-        { step: 'Pour into pan.', section: SECTIONS.BAKE },
-        { step: 'Bake until the top is dark brown and center is still jiggly (about 30 minutes).', section: SECTIONS.BAKE },
-        { step: 'Transfer to a wire rack. Let cool to room temperature (about 3 hours).', section: SECTIONS.COOL },
-        { step: 'Chill uncovered (at least 4 hours to 3 days).', section: SECTIONS.CHILL },
-        { step: 'Let the cheesecake come to room temperature for 30 minutes before serving.', section: SECTIONS.SERVE, img: cheesecake1 },
+        { step: `Pour into pan.`, section: SECTIONS.BAKE },
+        { step: `Bake until the top is dark brown and center is still jiggly (about 30 minutes).`, section: SECTIONS.BAKE },
+        { step: `Transfer to a wire rack. Let cool to room temperature (about 3 hours).`, section: SECTIONS.COOL },
+        { step: `Chill uncovered (at least 4 hours to 3 days).`, section: SECTIONS.CHILL },
+        { step: `Let the cheesecake come to room temperature for 30 minutes before serving.`, section: SECTIONS.SERVE, img: cheesecake1 },
     ],
     notes: [
         { note: 'This is much lighter than regular cheesecake. It has a caramelized top and is not as thick and rich as regular cheesecake. It does not take as long to cook and does not require a water bath.' }

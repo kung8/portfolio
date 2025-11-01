@@ -76,20 +76,20 @@ module.exports = {
     directions: [
         { step: `In a medium bowl, combine the "${SECTIONS.DRESSING}" section ingredients. If the dressing is too thick, add more water as needed.`, section: SECTIONS.PREP_DRESSING, img: bowl1 },
 
-        { step: 'Cook the noodles per package directions.', section: PREP_BOWLS },
-        { step: 'Rinse in cool water.', section: PREP_BOWLS },
-        { step: 'Toss in oil.', section: PREP_BOWLS, img: bowl7 },
-        { step: 'Divide between bowls.', section: PREP_BOWLS },
+        { step: `Cook the noodles per package directions.`, section: PREP_BOWLS },
+        { step: `Rinse in cool water.`, section: PREP_BOWLS },
+        { step: `Toss in oil.`, section: PREP_BOWLS, img: bowl7 },
+        { step: `Divide between bowls.`, section: PREP_BOWLS },
         { step: `Add "${BOWL_SECTION}" section ingredients to the bowls. Mix.`, section: PREP_BOWLS, img: bowl2 },
 
-        { step: 'With a meat mallet, pound the chicken to 1/2 inch thick.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Season both sides with salt and pepper.', section: SECTIONS.COOK_CHICKEN, img: bowl3 },
-        { step: 'Over medium heat, heat olive oil in a frying pan.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Add chicken. Sear both sides of the chicken (about 5 to 6 minutes per side). Cook until it gets an internal temperature of 165ºF.', section: SECTIONS.COOK_CHICKEN, img: bowl4 },
-        { step: 'Let it rest (about 5 minutes).', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Cut it into bite size pieces.', section: SECTIONS.COOK_CHICKEN, img: [bowl5, bowl6] },
+        { step: `With a meat mallet, pound the chicken to 1/2 inch thick.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Season both sides with salt and pepper.`, section: SECTIONS.COOK_CHICKEN, img: bowl3 },
+        { step: `Over medium heat, heat olive oil in a frying pan.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Add chicken. Sear both sides of the chicken (about 5 to 6 minutes per side). Cook until it gets an internal temperature of 165ºF.`, section: SECTIONS.COOK_CHICKEN, img: bowl4 },
+        { step: `Let it rest (about 5 minutes).`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Cut it into bite size pieces.`, section: SECTIONS.COOK_CHICKEN, img: [bowl5, bowl6] },
 
-        { step: 'Enjoy these bowls with chicken and your favorite toppings.', section: SECTIONS.SERVE },
+        { step: `Enjoy these bowls with chicken and your favorite toppings.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Overall this dish was good, but I prefer the fresh spring roll recipe.' }

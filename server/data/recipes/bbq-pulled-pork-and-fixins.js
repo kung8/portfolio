@@ -73,17 +73,17 @@ module.exports = {
         { ...FORK, amount: 2 },
     ],
     directions: [
-        { step: 'Line a slow cooker with a liner to make cleaning quick.', section: SECTIONS.PREP_PORK },
-        { step: 'Pour the vegetable oil into the slow cooker.', section: SECTIONS.PREP_PORK },
+        { step: `Line a slow cooker with a liner to make cleaning quick.`, section: SECTIONS.PREP_PORK },
+        { step: `Pour the vegetable oil into the slow cooker.`, section: SECTIONS.PREP_PORK },
         { step: `In a small bowl, combine the "${SECTIONS.DRY_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_PORK },
-        { step: 'Place roast in the slow cooker and massage the pork with the dry ingredient.', section: SECTIONS.PREP_PORK, img: pork1 },
+        { step: `Place roast in the slow cooker and massage the pork with the dry ingredient.`, section: SECTIONS.PREP_PORK, img: pork1 },
         { step: `Add the "${SECTIONS.WET_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_PORK },
 
-        { step: 'Cover. Cook on high for 5 - 6 hours (or on low for 10 - 12 hours).', section: SECTIONS.COOK_PORK, img: pork2 },
-        { step: 'Shred the pork with two forks.', section: SECTIONS.COOK_PORK, img: [pork3, pork4] },
-        { step: 'Return shredded pork to soak in more of the sauce.', section: SECTIONS.COOK_PORK },
+        { step: `Cover. Cook on high for 5 - 6 hours (or on low for 10 - 12 hours).`, section: SECTIONS.COOK_PORK, img: pork2 },
+        { step: `Shred the pork with two forks.`, section: SECTIONS.COOK_PORK, img: [pork3, pork4] },
+        { step: `Return shredded pork to soak in more of the sauce.`, section: SECTIONS.COOK_PORK },
 
-        { step: 'Serve on toasted brioche buns with your favorite sides.', section: SECTIONS.SERVE },
+        { step: `Serve on toasted brioche buns with your favorite sides.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

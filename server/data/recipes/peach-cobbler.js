@@ -69,21 +69,21 @@ module.exports = {
         RUBBER_SPATULA,
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: 'Add butter into the baking pan and place pan in the oven while it preheats.', section: SECTIONS.PREP_PAN },
-        { step: 'Remove the pan from the oven once the butter has melted.', section: SECTIONS.PREP_PAN },
+        { step: `Add butter into the baking pan and place pan in the oven while it preheats.`, section: SECTIONS.PREP_PAN },
+        { step: `Remove the pan from the oven once the butter has melted.`, section: SECTIONS.PREP_PAN },
 
         { step: `In a mixing bowl, combine "${SECTIONS.DRY_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_BATTER },
-        { step: 'Add milk.', section: SECTIONS.PREP_BATTER },
-        { step: 'Pour batter into the baking pan. Smooth to an even layer.', section: SECTIONS.PREP_BATTER },
+        { step: `Add milk.`, section: SECTIONS.PREP_BATTER },
+        { step: `Pour batter into the baking pan. Smooth to an even layer.`, section: SECTIONS.PREP_BATTER },
 
-        { step: 'Add canned peaches and its juices.', section: PREP_COBBLER },
-        { step: 'Generously drizzle cinnamon on top.', section: PREP_COBBLER, img: cobbler1 },
+        { step: `Add canned peaches and its juices.`, section: PREP_COBBLER },
+        { step: `Generously drizzle cinnamon on top.`, section: PREP_COBBLER, img: cobbler1 },
 
-        { step: 'Bake for 35 to 40 minutes.', section: SECTIONS.BAKE },
+        { step: `Bake for 35 to 40 minutes.`, section: SECTIONS.BAKE },
         
-        { step: 'Serve warm with ice cream.', section: SECTIONS.SERVE, img: cobbler2 },
+        { step: `Serve warm with ice cream.`, section: SECTIONS.SERVE, img: cobbler2 },
     ],
     store: [
         {

@@ -5,7 +5,7 @@ const curry4 = '../assets/Products/coconut-chicken-curry-4.jpeg';
 const curry5 = '../assets/Products/coconut-chicken-curry-5.jpeg';
 const curry6 = '../assets/Products/coconut-chicken-curry-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, COCONUT_MILK, CURRY_POWDER, DICED_TOMATO, GARLIC, LARGE_PAN, MEDIUM_BOWL, SALT, STOVE, TOMATO_SAUCE, VEGETABLE_OIL, WHITE_SUGAR, YELLOW_ONION } = require('./ingredients');
 
 module.exports = {
@@ -55,13 +55,13 @@ module.exports = {
     ],
     directions: [
         { step: `In a medium bowl, combine the "${SECTIONS.CHICKEN}" section ingredients. Set aside.`, section: SECTIONS.SEASON },
-        { step: 'Over medium-high heat, add oil to a large pan.', section: SECTIONS.COOK_VEGGIES },
-        { step: 'Add curry powder to hot oil. Cook for 1 minute.', section: SECTIONS.COOK_VEGGIES, img: curry1 },
-        { step: 'Add garlic and onions. Cook for 1 minute.', section: SECTIONS.COOK_VEGGIES, img: curry2 },
-        { step: 'Add chicken. Stir or lightly toss to coat chicken in curry oil.', section: SECTIONS.COOK_CHICKEN, img: curry3 },
-        { step: 'Reduce to medium heat and cook until chicken is no longer pink in the center and chicken juice is clear (about 7 to 10 minutes). Occasionally stir.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Mix in the remaining ingredients. Cover and simmer, occasionally stirring, for about 30 to 40 minutes.', section: SECTIONS.COOK_CURRY, img: curry4 },
-        { step: 'Enjoy this dish over rice.', section: SECTIONS.SERVE, img: curry5 },
+        { step: `Over medium-high heat, add oil to a large pan.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Add curry powder to hot oil. Cook for 1 minute.`, section: SECTIONS.COOK_VEGGIES, img: curry1 },
+        { step: `Add garlic and onions. Cook for 1 minute.`, section: SECTIONS.COOK_VEGGIES, img: curry2 },
+        { step: `Add chicken. Stir or lightly toss to coat chicken in curry oil.`, section: SECTIONS.COOK_CHICKEN, img: curry3 },
+        { step: `Reduce to medium heat and cook until chicken is no longer pink in the center and chicken juice is clear (about 7 to 10 minutes). Occasionally stir.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Mix in the remaining ingredients. Cover and simmer, occasionally stirring, for about 30 to 40 minutes.`, section: SECTIONS.COOK_CURRY, img: curry4 },
+        { step: `Enjoy this dish over rice.`, section: SECTIONS.SERVE, img: curry5 },
     ],
     store: [
         {

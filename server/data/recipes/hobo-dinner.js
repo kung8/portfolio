@@ -54,12 +54,12 @@ module.exports = {
         { name: 'aluminum foil' },
     ],
     directions: [
-        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.PREHEAT_OVEN },
-        { step: 'Add your preferred sliced veggies and proteins into the baking pan.', section: PREP_DISH },
-        { step: 'Drizzle a light amount of olive oil.', section: PREP_DISH },
-        { step: 'Cover with aluminum foil.', section: PREP_DISH },
-        { step: 'Bake for 40 minutes, or until the selected protein is cooked.', section: SECTIONS.BAKE, img: dinner2 },
-        { step: 'Enjoy this nostalgic meal around a campfire, backyard or in your home.', section: SECTIONS.SERVE },
+        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Add your preferred sliced veggies and proteins into the baking pan.`, section: PREP_DISH },
+        { step: `Drizzle a light amount of olive oil.`, section: PREP_DISH },
+        { step: `Cover with aluminum foil.`, section: PREP_DISH },
+        { step: `Bake for 40 minutes, or until the selected protein is cooked.`, section: SECTIONS.BAKE, img: dinner2 },
+        { step: `Enjoy this nostalgic meal around a campfire, backyard or in your home.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'I love summer sausage with these simple hearty veggies.' },

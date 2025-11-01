@@ -36,10 +36,10 @@ module.exports = {
         KNIFE,
     ],
     directions: [
-        { step: 'Cut and clean the celery stalks.', section: PREP_CELERY },
-        { step: 'Smear some peanut butter in each cut celery.', section: SECTIONS.ASSEMBLE },
-        { step: 'Top with as many raisins on the peanut butter.', section: SECTIONS.ASSEMBLE },
-        { step: 'Enjoy this healthy, nutritious snacks. The only bugs that I would be willing to eat on a regular basis.', section: SECTIONS.SERVE, img: log1 },
+        { step: `Cut and clean the celery stalks.`, section: PREP_CELERY },
+        { step: `Smear some peanut butter in each cut celery.`, section: SECTIONS.ASSEMBLE },
+        { step: `Top with as many raisins on the peanut butter.`, section: SECTIONS.ASSEMBLE },
+        { step: `Enjoy this healthy, nutritious snacks. The only bugs that I would be willing to eat on a regular basis.`, section: SECTIONS.SERVE, img: log1 },
     ],
     store: [
         {

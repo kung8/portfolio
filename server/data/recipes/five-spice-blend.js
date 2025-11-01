@@ -3,7 +3,7 @@ const blend2 = '../assets/Products/five-spices-blend-2.jpeg';
 const blend3 = '../assets/Products/five-spices-blend-3.jpeg';
 const blend4 = '../assets/Products/five-spices-blend-4.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CINNAMON, FENNEL_SEEDS, GROUND_CLOVES, STAR_ANISE } = require('./ingredients');
 
 const SPICES_SECTION = 'Spices';
@@ -41,7 +41,7 @@ module.exports = {
         { name: 'pestle and mortar' },
     ],
     directions: [
-        { step: 'In a pestle and mortar, combine the spices.', section: SECTIONS.MAIN, img: [blend1, blend3] },
+        { step: `In a pestle and mortar, combine the spices.`, section: SECTIONS.MAIN, img: [blend1, blend3] },
     ],
     notes: [
         { note: 'Dry roasting the spices in a pan will accentuate the flavor.' },

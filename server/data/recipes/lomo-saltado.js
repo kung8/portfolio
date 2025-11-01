@@ -7,7 +7,7 @@ const saltado6 = '../assets/Products/lomo-saltado-6.jpeg';
 const saltado7 = '../assets/Products/lomo-saltado-7.jpeg';
 const saltado8 = '../assets/Products/lomo-saltado-8.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { AJI_AMARILLO_PASTE, BEEF_SIRLOIN, CILANTRO, CORNSTARCH, FRENCH_FRIES, GARLIC, GREEN_ONION, LIGHT_SOY_SAUCE, MIXING_BOWL, OYSTER_SAUCE, RED_ONION, RED_WINE_VINEGAR, ROMA_TOMATO, SMALL_BOWL, STOVE, VEGETABLE_OIL, WHITE_RICE, WOK } = require('./ingredients');
 
 module.exports = {
@@ -65,20 +65,20 @@ module.exports = {
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.BEEF}" section ingredients.`, section: SECTIONS.MARINATE_BEEF, img: saltado1 },
-        { step: 'Let it marinate for 5 to 7 minutes.', section: SECTIONS.MARINATE_BEEF },
+        { step: `Let it marinate for 5 to 7 minutes.`, section: SECTIONS.MARINATE_BEEF },
 
         { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients. Stir and set aside.`, section: SECTIONS.PREP_SAUCE },
 
-        { step: 'Over medium-high heat, add oil to a wok.', section: SECTIONS.STIR_FRY },
-        { step: 'Add the beef. Sear both sides of the beef (about 1 to 2 minutes). Cook in batches if needed and add more between batches as needed. If you want more browned beef, you may not want to pour in the marinade with it.', section: SECTIONS.STIR_FRY, img: saltado2 },
-        { step: 'Remove beef from pan. Set aside.', section: SECTIONS.STIR_FRY },
-        { step: 'Add onions. Sauté for 1 minute.', section: SECTIONS.STIR_FRY, img: saltado3 },
-        { step: 'Add garlic and tomatoes. Sauté for 1 minute.', section: SECTIONS.STIR_FRY, img: saltado4 },
-        { step: 'Re-add the beef.', section: SECTIONS.STIR_FRY, img: saltado6 },
-        { step: 'If you prefer less crispy fries, add fries now. For crispy fries, top later.', section: SECTIONS.STIR_FRY, img: saltado5 },
-        { step: 'Add the sauce and combine until everything is coated.', section: SECTIONS.STIR_FRY, img: saltado7 },
+        { step: `Over medium-high heat, add oil to a wok.`, section: SECTIONS.STIR_FRY },
+        { step: `Add the beef. Sear both sides of the beef (about 1 to 2 minutes). Cook in batches if needed and add more between batches as needed. If you want more browned beef, you may not want to pour in the marinade with it.`, section: SECTIONS.STIR_FRY, img: saltado2 },
+        { step: `Remove beef from pan. Set aside.`, section: SECTIONS.STIR_FRY },
+        { step: `Add onions. Sauté for 1 minute.`, section: SECTIONS.STIR_FRY, img: saltado3 },
+        { step: `Add garlic and tomatoes. Sauté for 1 minute.`, section: SECTIONS.STIR_FRY, img: saltado4 },
+        { step: `Re-add the beef.`, section: SECTIONS.STIR_FRY, img: saltado6 },
+        { step: `If you prefer less crispy fries, add fries now. For crispy fries, top later.`, section: SECTIONS.STIR_FRY, img: saltado5 },
+        { step: `Add the sauce and combine until everything is coated.`, section: SECTIONS.STIR_FRY, img: saltado7 },
 
-        { step: 'Serve this delicious dish with rice and crispy french fries. Top with green onions and cilantro.', section: SECTIONS.SERVE },
+        { step: `Serve this delicious dish with rice and crispy french fries. Top with green onions and cilantro.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

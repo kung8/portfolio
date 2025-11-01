@@ -56,26 +56,26 @@ module.exports = {
         { name: 'serving plates/pan' },
     ],
     directions: [
-        { step: 'In a baking pan, add butter.', section: PREP_BAKING_PAN },
-        { step: 'Place baking pan on the center rack in the oven.', section: PREP_BAKING_PAN },
-        { step: 'Preheat the oven to 350ºF.', section: PREP_BAKING_PAN },
-        { step: 'Remove the pan once the butter has melted (about 5 to 7 minutes).', section: PREP_BAKING_PAN },
+        { step: `In a baking pan, add butter.`, section: PREP_BAKING_PAN },
+        { step: `Place baking pan on the center rack in the oven.`, section: PREP_BAKING_PAN },
+        { step: `Preheat the oven to 350ºF.`, section: PREP_BAKING_PAN },
+        { step: `Remove the pan once the butter has melted (about 5 to 7 minutes).`, section: PREP_BAKING_PAN },
 
-        { step: 'Evenly sprinkle the brown sugar over the melted butter.', section: PREP_PINEAPPLE_SUGAR_SAUCE },
-        { step: 'Arrange pineapple slices over the brown sugar.', section: PREP_PINEAPPLE_SUGAR_SAUCE },
-        { step: 'Add cherries in the center of each pineapple slice. For any extra cherries, place them around the slices.', section: PREP_PINEAPPLE_SUGAR_SAUCE },
-        { step: 'Reserve the pineapple juice to replace the water needed for the yellow cake mix.', section: PREP_PINEAPPLE_SUGAR_SAUCE },
+        { step: `Evenly sprinkle the brown sugar over the melted butter.`, section: PREP_PINEAPPLE_SUGAR_SAUCE },
+        { step: `Arrange pineapple slices over the brown sugar.`, section: PREP_PINEAPPLE_SUGAR_SAUCE },
+        { step: `Add cherries in the center of each pineapple slice. For any extra cherries, place them around the slices.`, section: PREP_PINEAPPLE_SUGAR_SAUCE },
+        { step: `Reserve the pineapple juice to replace the water needed for the yellow cake mix.`, section: PREP_PINEAPPLE_SUGAR_SAUCE },
 
-        { step: 'Make the yellow cake batter as directed from the box.', section: PREP_YELLOW_CAKE_MIX },
-        { step: 'Pour batter over the pineapples.', section: PREP_YELLOW_CAKE_MIX },
+        { step: `Make the yellow cake batter as directed from the box.`, section: PREP_YELLOW_CAKE_MIX },
+        { step: `Pour batter over the pineapples.`, section: PREP_YELLOW_CAKE_MIX },
 
-        { step: 'Bake until an inserted toothpick comes out clean (about 40 to 46 minutes).', section: BAKE_CAKE },
+        { step: `Bake until an inserted toothpick comes out clean (about 40 to 46 minutes).`, section: BAKE_CAKE },
 
-        { step: 'After taking out the cake, loosen the cake by running a knife around the edges of the pan.', section: FLIP_CAKE },
-        { step: 'Place serving plates/pan upside down over cake.', section: FLIP_CAKE },
-        { step: 'Carefully turn plates and baking pan over. Leave the pan on top to let the sauce drizzle over the cake (about 5 minutes).', section: FLIP_CAKE },
+        { step: `After taking out the cake, loosen the cake by running a knife around the edges of the pan.`, section: FLIP_CAKE },
+        { step: `Place serving plates/pan upside down over cake.`, section: FLIP_CAKE },
+        { step: `Carefully turn plates and baking pan over. Leave the pan on top to let the sauce drizzle over the cake (about 5 minutes).`, section: FLIP_CAKE },
 
-        { step: 'Let cool for 30 minutes and enjoy this simple dish!', section: SECTIONS.SERVE },
+        { step: `Let cool for 30 minutes and enjoy this simple dish!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

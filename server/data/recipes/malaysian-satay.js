@@ -92,21 +92,21 @@ module.exports = {
     ],
     directions: [
         { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients except the chicken. Mix.`, section: SECTIONS.MARINATE_CHICKEN },
-        { step: 'Add the chicken pieces. Mix well.', section: SECTIONS.MARINATE_CHICKEN },
-        { step: 'Marinate for at least 2 hours (or overnight).', section: SECTIONS.MARINATE_CHICKEN, img: satay1 },
+        { step: `Add the chicken pieces. Mix well.`, section: SECTIONS.MARINATE_CHICKEN },
+        { step: `Marinate for at least 2 hours (or overnight).`, section: SECTIONS.MARINATE_CHICKEN, img: satay1 },
 
-        { step: 'Preheat the oven to 450ºF.', section: SECTIONS.BAKE },
-        { step: 'Line a baking sheet with foil.', section: SECTIONS.BAKE },
-        { step: 'Thread the chicken on skewers.', section: SECTIONS.BAKE },
-        { step: 'Brush with oil.', section: SECTIONS.BAKE },
-        { step: 'Season with salt and pepper.', section: SECTIONS.BAKE },
-        { step: 'Place prepped skewers onto baking sheet.', section: SECTIONS.BAKE },
-        { step: 'Bake the satay until cooked through (about 12 to 15 minutes).', section: SECTIONS.BAKE, img: satay2 },
+        { step: `Preheat the oven to 450ºF.`, section: SECTIONS.BAKE },
+        { step: `Line a baking sheet with foil.`, section: SECTIONS.BAKE },
+        { step: `Thread the chicken on skewers.`, section: SECTIONS.BAKE },
+        { step: `Brush with oil.`, section: SECTIONS.BAKE },
+        { step: `Season with salt and pepper.`, section: SECTIONS.BAKE },
+        { step: `Place prepped skewers onto baking sheet.`, section: SECTIONS.BAKE },
+        { step: `Bake the satay until cooked through (about 12 to 15 minutes).`, section: SECTIONS.BAKE, img: satay2 },
 
         { step: `In a medium bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
-        { step: 'Add up to 3 tablespoons of water depending on thickness preference.', section: SECTIONS.PREP_SAUCE },
+        { step: `Add up to 3 tablespoons of water depending on thickness preference.`, section: SECTIONS.PREP_SAUCE },
 
-        { step: 'Enjoy this delicious satay with peanut sauce.', section: SECTIONS.SERVE },
+        { step: `Enjoy this delicious satay with peanut sauce.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Be careful the turmeric may stain your baking sheet so the aluminum foil is recommended.' },

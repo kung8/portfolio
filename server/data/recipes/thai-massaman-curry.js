@@ -78,21 +78,21 @@ module.exports = {
         { name: 'pot' },
     ],
     directions: [
-        { step: 'Over medium heat, heat oil in pot.', section: HEAT_PASTE },
-        { step: 'Turn on a hood fan.', section: HEAT_PASTE },
-        { step: 'Add curry paste. Cook and stir (about 2 to 3 minutes).', section: HEAT_PASTE, img: curry1 },
+        { step: `Over medium heat, heat oil in pot.`, section: HEAT_PASTE },
+        { step: `Turn on a hood fan.`, section: HEAT_PASTE },
+        { step: `Add curry paste. Cook and stir (about 2 to 3 minutes).`, section: HEAT_PASTE, img: curry1 },
 
         { step: `Add the "${LIQUIDS_SECTION}" section ingredients. Bring to a boil.`, section: HEAT_LIQUIDS, img: [curry2, curry3, curry4, curry5] },
 
-        { step: 'Add the onion and chicken.', section: SECTIONS.COOK_CHICKEN, img: curry6 },
-        { step: 'Reduce to a simmer.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Cook until the chicken is white and cooked through (about 5 minutes).', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Add the other half of the coconut milk. Bring to a boil.', section: SECTIONS.COOK_CHICKEN },
+        { step: `Add the onion and chicken.`, section: SECTIONS.COOK_CHICKEN, img: curry6 },
+        { step: `Reduce to a simmer.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Cook until the chicken is white and cooked through (about 5 minutes).`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Add the other half of the coconut milk. Bring to a boil.`, section: SECTIONS.COOK_CHICKEN },
 
         { step: `Add the "${POTATOES_AND_CARROTS_SECTION}" section ingredients.`, section: COOK_POTATOES_AND_CARROTS, img: curry7 },
-        { step: 'Cover with a lid. Simmer until the center of the potatoes are softened.', section: COOK_POTATOES_AND_CARROTS, img: curry8 },
+        { step: `Cover with a lid. Simmer until the center of the potatoes are softened.`, section: COOK_POTATOES_AND_CARROTS, img: curry8 },
 
-        { step: 'Serve over rice. Enjoy this delicious taste of Thailand.', section: SECTIONS.SERVE },
+        { step: `Serve over rice. Enjoy this delicious taste of Thailand.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Do not worry there will be enough liquid in this curry dish. The solid ingredients will cook down and will release some water.' },

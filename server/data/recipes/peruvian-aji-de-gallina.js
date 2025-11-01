@@ -97,15 +97,15 @@ module.exports = {
     ],
     directions: [
         { step: `In a small bowl, combine the "${ONION_SECTION}" section ingredients.`, section: PREP_ONION },
-        { step: 'Boil the chicken breasts in a pot of water.', section: SECTIONS.COOK_CHICKEN, img: gallina1 },
-        { step: 'Once the chicken is cooked, shred the chicken on a cutting board. Place the shredded chicken in a large mixing bowl. Keep some of the chicken broth in the pot.', section: SECTIONS.COOK_CHICKEN, img: gallina2 },
+        { step: `Boil the chicken breasts in a pot of water.`, section: SECTIONS.COOK_CHICKEN, img: gallina1 },
+        { step: `Once the chicken is cooked, shred the chicken on a cutting board. Place the shredded chicken in a large mixing bowl. Keep some of the chicken broth in the pot.`, section: SECTIONS.COOK_CHICKEN, img: gallina2 },
         { step: `Add the "${SECTIONS.SAUCE}" section ingredients to a blender and blend together.`, section: SECTIONS.PREP_SAUCE, img: [gallina3, gallina4, gallina5] },
-        { step: 'Over medium-high heat, heat oil in pan.', section: COOK_AND_COMBINE },
-        { step: 'Add the garlic. Cook until the garlic is fragrant and is light brown.', section: COOK_AND_COMBINE, img: gallina6 },
-        { step: 'Add the onions to the pan. Cook until the onions are browned.', section: COOK_AND_COMBINE, img: gallina7 },
-        { step: 'Add the sauce and chicken to the pan.', section: COOK_AND_COMBINE, img: gallina8 },
-        { step: 'Continue to mix this mixture and let cook a few more minutes until well blended. At this point if you want to thin the sauce you can add a little chicken broth or milk, depending on your preference.', section: COOK_AND_COMBINE },
-        { step: 'Serve with rice and enjoy the taste of my favorite Peruvian dish!', section: SECTIONS.SERVE, img: gallina9 },
+        { step: `Over medium-high heat, heat oil in pan.`, section: COOK_AND_COMBINE },
+        { step: `Add the garlic. Cook until the garlic is fragrant and is light brown.`, section: COOK_AND_COMBINE, img: gallina6 },
+        { step: `Add the onions to the pan. Cook until the onions are browned.`, section: COOK_AND_COMBINE, img: gallina7 },
+        { step: `Add the sauce and chicken to the pan.`, section: COOK_AND_COMBINE, img: gallina8 },
+        { step: `Continue to mix this mixture and let cook a few more minutes until well blended. At this point if you want to thin the sauce you can add a little chicken broth or milk, depending on your preference.`, section: COOK_AND_COMBINE },
+        { step: `Serve with rice and enjoy the taste of my favorite Peruvian dish!`, section: SECTIONS.SERVE, img: gallina9 },
     ],
     store: [
         {

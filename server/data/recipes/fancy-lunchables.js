@@ -37,8 +37,8 @@ module.exports = {
         { name: 'plate' },
     ],
     directions: [
-        { step: 'Assemble together these delicious cracker sandwiches with your favorite toppings.', section: SECTIONS.ASSEMBLE },
-        { step: 'Go back to simpler times and enjoy these fancy lunchables.', section: SECTIONS.SERVE },
+        { step: `Assemble together these delicious cracker sandwiches with your favorite toppings.`, section: SECTIONS.ASSEMBLE },
+        { step: `Go back to simpler times and enjoy these fancy lunchables.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

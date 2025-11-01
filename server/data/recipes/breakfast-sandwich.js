@@ -55,7 +55,7 @@ module.exports = {
     ],
     directions: [
         {
-            step: 'Make fresh biscuits either from a pre-made dough or from scratch. Try out this ',
+            step: `Make fresh biscuits either from a pre-made dough or from scratch. Try out this `,
             section: MAKE_BISCUITS,
             link: {
                 text: 'biscuit recipe',
@@ -63,16 +63,16 @@ module.exports = {
                 additionalText: '.'
             }
         },
-        { step: 'Over medium-high heat, melt a little butter in a pan.', section: COOK_EGG },
-        { step: 'Cook the egg as how you like it. I prefer for this recipe over medium or sunny side up.', section: COOK_EGG },
-        { step: 'Add salt and pepper to your egg.', section: COOK_EGG },
-        { step: 'Remove egg from pan.', section: COOK_EGG },
+        { step: `Over medium-high heat, melt a little butter in a pan.`, section: COOK_EGG },
+        { step: `Cook the egg as how you like it. I prefer for this recipe over medium or sunny side up.`, section: COOK_EGG },
+        { step: `Add salt and pepper to your egg.`, section: COOK_EGG },
+        { step: `Remove egg from pan.`, section: COOK_EGG },
 
-        { step: 'Add the ham slice to the pan and heat each side for 30 seconds.', section: SECTIONS.ASSEMBLE },
-        { step: 'Place a slice of cheese on top. Let it melt.', section: SECTIONS.ASSEMBLE },
-        { step: 'Cut biscuit. Assemble.', section: SECTIONS.ASSEMBLE },
+        { step: `Add the ham slice to the pan and heat each side for 30 seconds.`, section: SECTIONS.ASSEMBLE },
+        { step: `Place a slice of cheese on top. Let it melt.`, section: SECTIONS.ASSEMBLE },
+        { step: `Cut biscuit. Assemble.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Enjoy this flaky breakfast sandwich and feel free to fill it with your favorite ingredients.', section: SECTIONS.SERVE },
+        { step: `Enjoy this flaky breakfast sandwich and feel free to fill it with your favorite ingredients.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

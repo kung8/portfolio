@@ -61,18 +61,18 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'Over medium-high heat, bring a large pot of salted water to a boil.', section: SECTIONS.COOK_PASTA },
-        { step: 'Cook pasta to al dente.', section: SECTIONS.COOK_PASTA },
-        { step: 'Drain.', section: SECTIONS.COOK_PASTA },
-        { step: 'Toss it in a little oil.', section: SECTIONS.COOK_PASTA },
-        { step: 'Let it cool to room temperature.', section: SECTIONS.COOK_PASTA },
+        { step: `Over medium-high heat, bring a large pot of salted water to a boil.`, section: SECTIONS.COOK_PASTA },
+        { step: `Cook pasta to al dente.`, section: SECTIONS.COOK_PASTA },
+        { step: `Drain.`, section: SECTIONS.COOK_PASTA },
+        { step: `Toss it in a little oil.`, section: SECTIONS.COOK_PASTA },
+        { step: `Let it cool to room temperature.`, section: SECTIONS.COOK_PASTA },
 
         { step: `In a small bowl, combine the "${SECTIONS.DRESSING}" section ingredients.`, section: SECTIONS.PREP_DRESSING },
 
         { step: `In a mixing bowl, combine the "${SECTIONS.SALAD}" section ingredients.`, section: SECTIONS.ASSEMBLE },
-        { step: 'Pour the dressing over the salad. Toss.', section: SECTIONS.ASSEMBLE },
+        { step: `Pour the dressing over the salad. Toss.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Enjoy this simple pasta salad dish with more toppings if desired!', section: SECTIONS.SERVE },
+        { step: `Enjoy this simple pasta salad dish with more toppings if desired!`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'The dressing will have a strong flavor, but once it is combined with the pasta salad it will mellow out.', section: '' },

@@ -4,7 +4,7 @@ const mac3 = '../assets/Products/big-mac-3.jpeg';
 const mac4 = '../assets/Products/big-mac-4.jpeg';
 const mac5 = '../assets/Products/big-mac-5.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BEEF_PATTIES, BLACK_PEPPER, CHEDDAR_CHEESE, GRILL_OR_STOVE, HAMBURGER_BUNS, KETCHUP, LETTUCE, MAYONNAISE, MIXING_BOWL, ONION_POWDER, PAPRIKA, PICKLES, SALT, YELLOW_MUSTARD, YELLOW_ONION } = require('./ingredients');
 
 const BIG_MAC_SAUCE = 'Big Mac Sauce';
@@ -56,11 +56,11 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the sauce ingredients.', section: BIG_MAC_SAUCE, img: [mac1, mac2] },
-        { step: 'Place sauce in fridge to chill until ready to assemble the burgers.', section: BIG_MAC_SAUCE },
-        { step: 'Cook the patties on a grill/skillet/pan to your preferred doneness.', section: SECTIONS.MAIN, img: [mac3] },
-        { step: 'Assemble the burgers.', section: SECTIONS.MAIN, img: mac4 },
-        { step: 'You might not ever need to go to McDonald\'s ever again unless you are missing their fries, nuggets or McFlurries.', section: SECTIONS.MAIN },
+        { step: `In a mixing bowl, combine the sauce ingredients.`, section: BIG_MAC_SAUCE, img: [mac1, mac2] },
+        { step: `Place sauce in fridge to chill until ready to assemble the burgers.`, section: BIG_MAC_SAUCE },
+        { step: `Cook the patties on a grill/skillet/pan to your preferred doneness.`, section: SECTIONS.MAIN, img: [mac3] },
+        { step: `Assemble the burgers.`, section: SECTIONS.MAIN, img: mac4 },
+        { step: `You might not ever need to go to McDonald's ever again unless you are missing their fries, nuggets or McFlurries.`, section: SECTIONS.MAIN },
     ],
     notes: [
         { note: 'The burgers will shrink a bit when cooked so either get bigger patties or smaller buns.' },

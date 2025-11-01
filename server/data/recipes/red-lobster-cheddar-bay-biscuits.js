@@ -60,22 +60,22 @@ module.exports = {
         BASTING_BRUSH,
     ],
     directions: [
-        { step: 'Preheat the oven to 450ºF.', section: PREP_BATTER },
-        { step: 'Line a baking sheet with aluminum foil.', section: PREP_BATTER },
+        { step: `Preheat the oven to 450ºF.`, section: PREP_BATTER },
+        { step: `Line a baking sheet with aluminum foil.`, section: PREP_BATTER },
         { step: `In a mixing bowl, combine the "${FIRST_MIX_SECTION}" section ingredients.`, section: PREP_BATTER },
-        { step: 'Mix until flaky and small balls form.', section: PREP_BATTER },
-        { step: 'Slowly add milk while stirring.', section: PREP_BATTER },
-        { step: 'Slowly add cheese.', section: PREP_BATTER },
-        { step: 'Form 12 small balls and place them on the baking sheet.', section: PREP_BATTER },
+        { step: `Mix until flaky and small balls form.`, section: PREP_BATTER },
+        { step: `Slowly add milk while stirring.`, section: PREP_BATTER },
+        { step: `Slowly add cheese.`, section: PREP_BATTER },
+        { step: `Form 12 small balls and place them on the baking sheet.`, section: PREP_BATTER },
 
-        { step: 'Melt the butter either in the microwave or over low heat.', section: MAKE_BUTTER_WASH },
-        { step: 'Add the garlic powder. Mix.', section: MAKE_BUTTER_WASH },
-        { step: 'Brush the tops of each biscuit with the butter wash. Keep remaining butter wash for later.', section: MAKE_BUTTER_WASH },
+        { step: `Melt the butter either in the microwave or over low heat.`, section: MAKE_BUTTER_WASH },
+        { step: `Add the garlic powder. Mix.`, section: MAKE_BUTTER_WASH },
+        { step: `Brush the tops of each biscuit with the butter wash. Keep remaining butter wash for later.`, section: MAKE_BUTTER_WASH },
 
-        { step: 'Bake until a toothpick comes out clean (about 10 to 12 minutes).', section: BAKE_BISCUITS },
-        { step: 'Coat with more butter wash.', section: BAKE_BISCUITS },
+        { step: `Bake until a toothpick comes out clean (about 10 to 12 minutes).`, section: BAKE_BISCUITS },
+        { step: `Coat with more butter wash.`, section: BAKE_BISCUITS },
 
-        { step: 'Enjoy these Red Lobster copycats topped with parsley.', section: SECTIONS.SERVE },
+        { step: `Enjoy these Red Lobster copycats topped with parsley.`, section: SECTIONS.SERVE },
     ],
     store: [
         // {

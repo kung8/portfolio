@@ -45,12 +45,12 @@ module.exports = {
     ],
     directions: [
         { step: `In a baking pan, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.MARINATE_FISH },
-        { step: 'Add salmon skin side up. Let it marinate for 4 to 8 hours in the refrigerator.', section: SECTIONS.MARINATE_FISH, img: salmon1 },
-        { step: 'Turn on broiler.', section: SECTIONS.BROIL },
-        { step: 'Transfer salmon to a baking sheet (or drain the baking pan and use this).', section: SECTIONS.BROIL, img: salmon2 },
-        { step: 'Broil until salmon is light brown and flesh flakes (about 7 to 10 minutes).', section: SECTIONS.BROIL, img: salmon3 },
-        { step: 'Let salmon rest a few minutes.', section: SECTIONS.BROIL },
-        { step: 'Enjoy!', section: SECTIONS.SERVE },
+        { step: `Add salmon skin side up. Let it marinate for 4 to 8 hours in the refrigerator.`, section: SECTIONS.MARINATE_FISH, img: salmon1 },
+        { step: `Turn on broiler.`, section: SECTIONS.BROIL },
+        { step: `Transfer salmon to a baking sheet (or drain the baking pan and use this).`, section: SECTIONS.BROIL, img: salmon2 },
+        { step: `Broil until salmon is light brown and flesh flakes (about 7 to 10 minutes).`, section: SECTIONS.BROIL, img: salmon3 },
+        { step: `Let salmon rest a few minutes.`, section: SECTIONS.BROIL },
+        { step: `Enjoy!`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'I think this recipe needs more work. I think broiling it for 10 minutes is too long on the one side and it does not cook thicker pieces well. Maybe try flipping halfway through or broiling for less time on the first side.' },

@@ -53,18 +53,18 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'Preheat oven to 425ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: 'Prepare baking sheet with cooking spray.', section: SECTIONS.PREP_PAN },
+        { step: `Prepare baking sheet with cooking spray.`, section: SECTIONS.PREP_PAN },
 
-        { step: 'In a mixing bowl, combine all the herbs, spices and liquids.', section: PREP_HERBS_AND_SPICES, img: [fries1, fries2] },
+        { step: `In a mixing bowl, combine all the herbs, spices and liquids.`, section: PREP_HERBS_AND_SPICES, img: [fries1, fries2] },
 
-        { step: 'Add the potatoes. Mix.', section: PREP_POTATOES, img: fries3 },
-        { step: 'Arrange the fries in a single layer on baking sheet.', section: PREP_POTATOES, img: fries4 },
+        { step: `Add the potatoes. Mix.`, section: PREP_POTATOES, img: fries3 },
+        { step: `Arrange the fries in a single layer on baking sheet.`, section: PREP_POTATOES, img: fries4 },
 
-        { step: 'Bake until tender and lightly browned (for about 30 to 35 minutes). Turn occasionally.', section: SECTIONS.BAKE, img: fries5 },
+        { step: `Bake until tender and lightly browned (for about 30 to 35 minutes). Turn occasionally.`, section: SECTIONS.BAKE, img: fries5 },
 
-        { step: 'Enjoy this delicious side!', section: SECTIONS.SERVE, img: fries6 },
+        { step: `Enjoy this delicious side!`, section: SECTIONS.SERVE, img: fries6 },
     ],
     store: [
         {

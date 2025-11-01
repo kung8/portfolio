@@ -1,5 +1,5 @@
 const soup1 = '../assets/Products/chicken-noodle-soup-1.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
     CARROT,
@@ -76,23 +76,23 @@ module.exports = {
         LARGE_POT,
     ],
     directions: [
-        { step: 'Chop the vegetables and chicken.', section: PREP_VEGGIES_AND_CHICKEN },
+        { step: `Chop the vegetables and chicken.`, section: PREP_VEGGIES_AND_CHICKEN },
 
-        { step: 'Over medium-high heat, heat oil in a hot pan.', section: SECTIONS.COOK_CHICKEN },
+        { step: `Over medium-high heat, heat oil in a hot pan.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Add the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.COOK_CHICKEN },
-        { step: 'Brown both sides. Set aside.', section: SECTIONS.COOK_CHICKEN },
+        { step: `Brown both sides. Set aside.`, section: SECTIONS.COOK_CHICKEN },
 
         { step: `In a large pot, combine the "${SECTIONS.SOUP}" section ingredients.`, section: SECTIONS.COOK_SOUP },
-        { step: 'Over medium-high heat, cook for 8 - 10 minutes.', section: SECTIONS.COOK_SOUP },
+        { step: `Over medium-high heat, cook for 8 - 10 minutes.`, section: SECTIONS.COOK_SOUP },
 
-        { step: 'Add raw noodles. Bring to a boil (about 6 to 8 minutes).', section: SECTIONS.COOK_NOODLES },
-        { step: 'Reduce to low heat.', section: SECTIONS.COOK_NOODLES },
+        { step: `Add raw noodles. Bring to a boil (about 6 to 8 minutes).`, section: SECTIONS.COOK_NOODLES },
+        { step: `Reduce to low heat.`, section: SECTIONS.COOK_NOODLES },
         
-        { step: 'Add chicken.', section: SECTIONS.SIMMER },
-        { step: 'Let it simmer for 10 minutes.', section: SECTIONS.SIMMER },
+        { step: `Add chicken.`, section: SECTIONS.SIMMER },
+        { step: `Let it simmer for 10 minutes.`, section: SECTIONS.SIMMER },
 
 
-        { step: 'Serve and enjoy!', section: SECTIONS.SERVE },
+        { step: `Serve and enjoy!`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'I typically make this when I or somebody I know is sick, so get better if you too are sick!' }

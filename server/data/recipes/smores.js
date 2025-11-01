@@ -48,24 +48,24 @@ module.exports = {
         BAKING_SHEET,
     ],
     directions: [
-        { step: 'Lay aluminum foil on baking sheet.', section: SECTIONS.PREP_PAN },
+        { step: `Lay aluminum foil on baking sheet.`, section: SECTIONS.PREP_PAN },
 
-        { step: 'Turn oven to broil.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Turn oven to broil.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: 'Place graham cracker halves on baking sheet.', section: BROIL_FIRST_SIDE },
-        { step: 'Stack marshmallows on each cracker.', section: BROIL_FIRST_SIDE },
-        { step: 'Broil until browned (about 3 to 5 minutes).', section: BROIL_FIRST_SIDE },
-        { step: 'Take pan out.', section: BROIL_FIRST_SIDE },
+        { step: `Place graham cracker halves on baking sheet.`, section: BROIL_FIRST_SIDE },
+        { step: `Stack marshmallows on each cracker.`, section: BROIL_FIRST_SIDE },
+        { step: `Broil until browned (about 3 to 5 minutes).`, section: BROIL_FIRST_SIDE },
+        { step: `Take pan out.`, section: BROIL_FIRST_SIDE },
 
-        { step: 'Flip marshmallows.', section: BROIL_SECOND_SIDE },
-        { step: 'Lay the other graham cracker halves on pan.', section: BROIL_SECOND_SIDE },
-        { step: 'Top with chocolate.', section: BROIL_SECOND_SIDE },
-        { step: 'Broil until the other side of the marshmallow is browned (about 3 minutes).', section: BROIL_SECOND_SIDE },
-        { step: 'Take pan out.', section: BROIL_SECOND_SIDE },
+        { step: `Flip marshmallows.`, section: BROIL_SECOND_SIDE },
+        { step: `Lay the other graham cracker halves on pan.`, section: BROIL_SECOND_SIDE },
+        { step: `Top with chocolate.`, section: BROIL_SECOND_SIDE },
+        { step: `Broil until the other side of the marshmallow is browned (about 3 minutes).`, section: BROIL_SECOND_SIDE },
+        { step: `Take pan out.`, section: BROIL_SECOND_SIDE },
 
-        { step: 'Assemble the s\'more by placing the top graham cracker on the marshmallow and pressing down slightly.', section: SECTIONS.ASSEMBLE },
+        { step: `Assemble the s'more by placing the top graham cracker on the marshmallow and pressing down slightly.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Enjoy the sweet tastes of a campfire indoors.', section: SECTIONS.MAIN },
+        { step: `Enjoy the sweet tastes of a campfire indoors.`, section: SECTIONS.MAIN },
     ],
     store: null,
     reheat: null,

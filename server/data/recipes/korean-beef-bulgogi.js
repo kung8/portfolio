@@ -81,11 +81,11 @@ module.exports = {
         FRYING_PAN,
     ],
     directions: [
-        { step: 'Combine the marinade sauce ingredients either in a bowl or ziploc bag.', section: BEEF_SECTION, img: bulgogi1 },
-        { step: 'Add the beef to the sauce and let it marinate overnight.', section: BEEF_SECTION, img: bulgogi2 },
-        { step: 'Heat frying pan over medium heat and add 1 Tbsp vegetable and cook beef in batches.', section: SECTIONS.MAIN, img: bulgogi3 },
-        { step: 'Flip beef over and cook. Repeat for additional batch.', section: SECTIONS.MAIN },
-        { step: 'Serve over rice and top with green onion and sesame seeds.', section: SECTIONS.SERVE, img: bulgogi4 },
+        { step: `Combine the marinade sauce ingredients either in a bowl or ziploc bag.`, section: BEEF_SECTION, img: bulgogi1 },
+        { step: `Add the beef to the sauce and let it marinate overnight.`, section: BEEF_SECTION, img: bulgogi2 },
+        { step: `Heat frying pan over medium heat and add 1 Tbsp vegetable and cook beef in batches.`, section: SECTIONS.MAIN, img: bulgogi3 },
+        { step: `Flip beef over and cook. Repeat for additional batch.`, section: SECTIONS.MAIN },
+        { step: `Serve over rice and top with green onion and sesame seeds.`, section: SECTIONS.SERVE, img: bulgogi4 },
     ],
     notes: [
         { note: 'Traditionally bulgogi beef uses thinly sliced ribeye or top sirloin (against the grain), but you can really use any beef cuts.', img: bulgogi6 },

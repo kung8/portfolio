@@ -47,11 +47,11 @@ module.exports = {
         { name: 'spoon' },
     ],
     directions: [
-        { step: 'Fill a bowl with yogurt.', section: PREP_PARFAIT },
-        { step: 'Mix in vanilla and honey.', section: PREP_PARFAIT },
-        { step: 'Cover with preferred toppings such as granola, fruits, and nuts.', section: SECTIONS.TOP },
+        { step: `Fill a bowl with yogurt.`, section: PREP_PARFAIT },
+        { step: `Mix in vanilla and honey.`, section: PREP_PARFAIT },
+        { step: `Cover with preferred toppings such as granola, fruits, and nuts.`, section: SECTIONS.TOP },
 
-        { step: 'Enjoy a light breakfast / snack.', section: SECTIONS.SERVE },
+        { step: `Enjoy a light breakfast / snack.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

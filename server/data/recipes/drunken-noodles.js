@@ -64,21 +64,21 @@ module.exports = {
     directions: [
         { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE, img: drunken1 },
 
-        { step: 'Over high heat, add oil to a wok.', section: COOK_AROMATICS },
-        { step: 'Add garlic and cook until light brown.', section: COOK_AROMATICS },
-        { step: 'Add thai chili peppers.', section: COOK_AROMATICS, img: drunken2 },
+        { step: `Over high heat, add oil to a wok.`, section: COOK_AROMATICS },
+        { step: `Add garlic and cook until light brown.`, section: COOK_AROMATICS },
+        { step: `Add thai chili peppers.`, section: COOK_AROMATICS, img: drunken2 },
 
-        { step: 'Add chicken. Cook until chicken becomes white (about 5 to 6 minutes). Avoid browning.', section: SECTIONS.COOK_CHICKEN, img: drunken3 },
-        { step: 'Transfer chicken to a bowl.', section: SECTIONS.COOK_CHICKEN },
+        { step: `Add chicken. Cook until chicken becomes white (about 5 to 6 minutes). Avoid browning.`, section: SECTIONS.COOK_CHICKEN, img: drunken3 },
+        { step: `Transfer chicken to a bowl.`, section: SECTIONS.COOK_CHICKEN },
 
-        { step: 'Add bell peppers and onions (or preferred vegetables). Cook until softened (about 4 to 5 minutes).', section: SECTIONS.COOK_VEGGIES, img: drunken4 },
-        { step: 'Transfer the vegetables to the bowl with the chicken.', section: SECTIONS.COOK_VEGGIES },
+        { step: `Add bell peppers and onions (or preferred vegetables). Cook until softened (about 4 to 5 minutes).`, section: SECTIONS.COOK_VEGGIES, img: drunken4 },
+        { step: `Transfer the vegetables to the bowl with the chicken.`, section: SECTIONS.COOK_VEGGIES },
 
-        { step: 'Cook noodles one serving at a time. This makes it much easier to cook. Add portioned noodles and sauce. Mix until covered.', section: SECTIONS.COOK_NOODLES, img: [drunken5, drunken6] },
+        { step: `Cook noodles one serving at a time. This makes it much easier to cook. Add portioned noodles and sauce. Mix until covered.`, section: SECTIONS.COOK_NOODLES, img: [drunken5, drunken6] },
 
-        { step: 'Add chicken and vegetables. Stir and cook until well integrated.', section: SECTIONS.ASSEMBLE, img: drunken7 },
-        { step: 'Add Thai basil. Stir until wilted.', section: SECTIONS.ASSEMBLE },
-        { step: 'Enjoy this dish warm!', section: SECTIONS.SERVE },
+        { step: `Add chicken and vegetables. Stir and cook until well integrated.`, section: SECTIONS.ASSEMBLE, img: drunken7 },
+        { step: `Add Thai basil. Stir until wilted.`, section: SECTIONS.ASSEMBLE },
+        { step: `Enjoy this dish warm!`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Make sure the fresh rice noodles are thawed and at room temperature before cooking.' },

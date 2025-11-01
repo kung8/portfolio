@@ -54,19 +54,19 @@ module.exports = {
         FRYING_PAN,
     ],
     directions: [
-        { step: 'Set flour in a shallow bowl.', section: SECTIONS.ASSEMBLE },
+        { step: `Set flour in a shallow bowl.`, section: SECTIONS.ASSEMBLE },
         { step: `In a shallow bowl, whisk the "${EGG_DREDGE_STATION}" section ingredients together.`, section: SECTIONS.ASSEMBLE },
-        { step: 'Set breadcrumb in a shallow bowl.', section: SECTIONS.ASSEMBLE },
-        { step: 'Dip each piece of cheese in the three dredging station: flour, egg mixture and breadcrumb.', section: SECTIONS.ASSEMBLE },
-        { step: 'Dip in egg mixture and breadcrumbs again.', section: SECTIONS.ASSEMBLE },
+        { step: `Set breadcrumb in a shallow bowl.`, section: SECTIONS.ASSEMBLE },
+        { step: `Dip each piece of cheese in the three dredging station: flour, egg mixture and breadcrumb.`, section: SECTIONS.ASSEMBLE },
+        { step: `Dip in egg mixture and breadcrumbs again.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Freeze for 6 to 24 hours.', section: SECTIONS.FREEZE },
+        { step: `Freeze for 6 to 24 hours.`, section: SECTIONS.FREEZE },
 
-        { step: 'Heat oil in a frying pan.', section: SECTIONS.DEEP_FRY },
-        { step: 'Place 2 layers of paper towels on top of a baking sheet and then place the cooling rack on top of the paper towels.', section: SECTIONS.DEEP_FRY },
-        { step: 'Deep fry until golden before cheese leaks (about 1 minute per side).', section: SECTIONS.DEEP_FRY },
-        { step: 'Place cooked mozzarella sticks on draining station.', section: SECTIONS.DEEP_FRY },
-        { step: 'Enjoy these fresh with warmed pizza sauce.', section: SECTIONS.SERVE },
+        { step: `Heat oil in a frying pan.`, section: SECTIONS.DEEP_FRY },
+        { step: `Place 2 layers of paper towels on top of a baking sheet and then place the cooling rack on top of the paper towels.`, section: SECTIONS.DEEP_FRY },
+        { step: `Deep fry until golden before cheese leaks (about 1 minute per side).`, section: SECTIONS.DEEP_FRY },
+        { step: `Place cooked mozzarella sticks on draining station.`, section: SECTIONS.DEEP_FRY },
+        { step: `Enjoy these fresh with warmed pizza sauce.`, section: SECTIONS.SERVE },
     ],
     store: [
         // {

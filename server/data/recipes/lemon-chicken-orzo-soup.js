@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAY_LEAF, CARROT, CELERY, CHICKEN_BREAST, CHICKEN_BROTH, CUTTING_BOARD, DILL, KNIFE, LARGE_POT, LEEK, LEMON, OLIVE_OIL, ORZO, SALT, STOVE, THYME, WATER } = require('./ingredients');
 
 const VEGGIES_SECTION = 'Veggies';
@@ -65,23 +65,23 @@ module.exports = {
         KNIFE,
     ],
     directions: [
-        { step: 'Over medium heat, heat oil in a large pot.', section: COOK_VEGGIES },
+        { step: `Over medium heat, heat oil in a large pot.`, section: COOK_VEGGIES },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Cook until leeks soften (about 5 minutes).`, section: COOK_VEGGIES },
 
         { step: `Add all the "${SECTIONS.SIMMER}" section ingredients except the lemon juice. Bring to a simmer.`, section: SIMMER },
-        { step: 'Cook until the chicken is cooked through and tender (about 20 to 25 minutes).', section: SIMMER },
+        { step: `Cook until the chicken is cooked through and tender (about 20 to 25 minutes).`, section: SIMMER },
 
-        { step: 'Transfer the chicken to a cutting board. Let it cool slightly.', section: CUT_CHICKEN },
-        { step: 'Cut the chicken into bite-size pieces.', section: CUT_CHICKEN },
+        { step: `Transfer the chicken to a cutting board. Let it cool slightly.`, section: CUT_CHICKEN },
+        { step: `Cut the chicken into bite-size pieces.`, section: CUT_CHICKEN },
 
-        { step: 'Add the orzo to the soup. Simmer and cook until tender (about 8 to 10 minutes).', section: COOK_ORZO },
-        { step: 'Re-add the chicken. Cook for a few minutes.', section: COOK_ORZO },
-        { step: 'Remove the lemon zest and bay leaves.', section: COOK_ORZO },
+        { step: `Add the orzo to the soup. Simmer and cook until tender (about 8 to 10 minutes).`, section: COOK_ORZO },
+        { step: `Re-add the chicken. Cook for a few minutes.`, section: COOK_ORZO },
+        { step: `Remove the lemon zest and bay leaves.`, section: COOK_ORZO },
 
-        { step: 'Taste and adjust with salt.', section: ADD_FINISHING_TOUCHES },
-        { step: 'Add lemon juice and dill.', section: ADD_FINISHING_TOUCHES },
+        { step: `Taste and adjust with salt.`, section: ADD_FINISHING_TOUCHES },
+        { step: `Add lemon juice and dill.`, section: ADD_FINISHING_TOUCHES },
 
-        { step: 'Enjoy this simple soup dish.', section: SECTIONS.SERVE },
+        { step: `Enjoy this simple soup dish.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

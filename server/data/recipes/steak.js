@@ -48,12 +48,12 @@ module.exports = {
         { name: 'knife' },
     ],
     directions: [
-        { step: 'With a fork, poke holes on both sides of the steak.', section: SECTIONS.PREP_BEEF },
+        { step: `With a fork, poke holes on both sides of the steak.`, section: SECTIONS.PREP_BEEF },
         { step: `Season the steaks on both side with the desired amount of "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_BEEF },
-        { step: 'Grill the steak. For medium-well, grill for 4 minutes on each side. For medium-rare, grill for 3 to 3.5 minutes per side.', section: SECTIONS.GRILL },
-        { step: 'For the last minute or two, add a piece of butter and allow it to melt.', section: SECTIONS.GRILL },
-        { step: 'Let the steak rest to allow for the juices to circulate (about 5 to 10 minutes) before cutting or serving.', section: RESTING_BEEF },
-        { step: 'Enjoy this simple steak recipe however you like your steak and with whatever sides.', section: SECTIONS.SERVE, img: steak2 },
+        { step: `Grill the steak. For medium-well, grill for 4 minutes on each side. For medium-rare, grill for 3 to 3.5 minutes per side.`, section: SECTIONS.GRILL },
+        { step: `For the last minute or two, add a piece of butter and allow it to melt.`, section: SECTIONS.GRILL },
+        { step: `Let the steak rest to allow for the juices to circulate (about 5 to 10 minutes) before cutting or serving.`, section: RESTING_BEEF },
+        { step: `Enjoy this simple steak recipe however you like your steak and with whatever sides.`, section: SECTIONS.SERVE, img: steak2 },
     ],
     store: [
         {

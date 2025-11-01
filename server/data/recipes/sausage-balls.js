@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BISQUICK_BAKING_MIX, CHEDDAR_CHEESE, MIXING_BOWL, OVEN, SAUSAGE } = require('./ingredients');
 
 module.exports = {
@@ -41,14 +41,14 @@ module.exports = {
         BAKING_PAN,
     ],
     directions: [
-        { step: 'Allow the cheese and sausage to get to room temperature.', section: '' },
-        { step: 'Preheat the oven to 400ºF.', section: '' },
-        { step: 'In a mixing bowl, combine all the ingredients. It will be dry.', section: '' },
-        { step: 'Roll the sausage mixture into 1 inch balls.', section: '' },
-        { step: 'Place the balls in a baking dish an inch apart.', section: '' },
-        { step: 'Bake until golden brown (about 10 to 12 minutes).', section: '' },
-        { step: 'Drain on paper towels.', section: '' },
-        { step: 'Enjoy this simple breakfast dish.', section: '' },
+        { step: `Allow the cheese and sausage to get to room temperature.`, section: '' },
+        { step: `Preheat the oven to 400ºF.`, section: '' },
+        { step: `In a mixing bowl, combine all the ingredients. It will be dry.`, section: '' },
+        { step: `Roll the sausage mixture into 1 inch balls.`, section: '' },
+        { step: `Place the balls in a baking dish an inch apart.`, section: '' },
+        { step: `Bake until golden brown (about 10 to 12 minutes).`, section: '' },
+        { step: `Drain on paper towels.`, section: '' },
+        { step: `Enjoy this simple breakfast dish.`, section: '' },
     ],
     notes: [
         { note: 'You will not add any water or milk to this recipe.' },

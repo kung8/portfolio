@@ -77,24 +77,24 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Pat dry beef with paper towels and cut into strips.', section: SECTIONS.COOK_BEEF },
-        { step: 'Season the beef with salt and pepper.', section: SECTIONS.COOK_BEEF },
-        { step: 'Toss beef in flour. Shake off excess flour.', section: SECTIONS.COOK_BEEF },
-        { step: 'Over medium-high heat, add a little olive oil to a pan.', section: SECTIONS.COOK_BEEF },
-        { step: 'Cook beef in batches. Brown beef (about 1 minute per side). Set aside.', section: SECTIONS.COOK_BEEF },
+        { step: `Pat dry beef with paper towels and cut into strips.`, section: SECTIONS.COOK_BEEF },
+        { step: `Season the beef with salt and pepper.`, section: SECTIONS.COOK_BEEF },
+        { step: `Toss beef in flour. Shake off excess flour.`, section: SECTIONS.COOK_BEEF },
+        { step: `Over medium-high heat, add a little olive oil to a pan.`, section: SECTIONS.COOK_BEEF },
+        { step: `Cook beef in batches. Brown beef (about 1 minute per side). Set aside.`, section: SECTIONS.COOK_BEEF },
 
-        { step: 'Reduce to medium heat.', section: SECTIONS.COOK_VEGGIES },
-        { step: 'Add butter and onion to the pan. Cook until onion is softened (about 4 to 5 minutes).', section: SECTIONS.COOK_VEGGIES },
-        { step: 'Add garlic and mushroom. Cook until softened (about 4 minutes).', section: SECTIONS.COOK_VEGGIES },
-        { step: 'Add flour. Cook for 1 minute.', section: SECTIONS.COOK_VEGGIES },
+        { step: `Reduce to medium heat.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Add butter and onion to the pan. Cook until onion is softened (about 4 to 5 minutes).`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Add garlic and mushroom. Cook until softened (about 4 minutes).`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Add flour. Cook for 1 minute.`, section: SECTIONS.COOK_VEGGIES },
 
-        { step: 'Add broth, worchestershire sauce, mustard and thyme. Bring to a boil.', section: SECTIONS.COOK_SAUCE },
-        { step: 'Reduce heat to low. Simmer uncovered for 5 minutes.', section: SECTIONS.COOK_SAUCE },
+        { step: `Add broth, worchestershire sauce, mustard and thyme. Bring to a boil.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Reduce heat to low. Simmer uncovered for 5 minutes.`, section: SECTIONS.COOK_SAUCE },
 
-        { step: 'Add back beef. Cook until beef is heated through (about 2 minutes).', section: SECTIONS.ASSEMBLE },
-        { step: 'Remove from heat. Add sour cream.', section: SECTIONS.ASSEMBLE },
+        { step: `Add back beef. Cook until beef is heated through (about 2 minutes).`, section: SECTIONS.ASSEMBLE },
+        { step: `Remove from heat. Add sour cream.`, section: SECTIONS.ASSEMBLE },
 
-        { step: 'Serve over cooked noodles.', section: SECTIONS.SERVE },
+        { step: `Serve over cooked noodles.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

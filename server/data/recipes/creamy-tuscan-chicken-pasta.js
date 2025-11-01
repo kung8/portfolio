@@ -65,24 +65,24 @@ module.exports = {
         KNIFE,
     ],
     directions: [
-        { step: 'Pat chicken dry.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Season chicken with salt and pepper.', section: SECTIONS.COOK_CHICKEN, img: pasta1 },
-        { step: 'Over medium-high heat, heat olive oil in a dutch oven pot.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Add chicken to pot. Cook until both sides are browned (for about 3 to 4 minutes).', section: SECTIONS.COOK_CHICKEN, img: pasta2 },
-        { step: 'Remove the chicken from the pot and place on a cutting board.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Cut the chicken into 1 inch pieces. Set aside.', section: SECTIONS.COOK_CHICKEN, img: pasta3 },
+        { step: `Pat chicken dry.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Season chicken with salt and pepper.`, section: SECTIONS.COOK_CHICKEN, img: pasta1 },
+        { step: `Over medium-high heat, heat olive oil in a dutch oven pot.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Add chicken to pot. Cook until both sides are browned (for about 3 to 4 minutes).`, section: SECTIONS.COOK_CHICKEN, img: pasta2 },
+        { step: `Remove the chicken from the pot and place on a cutting board.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Cut the chicken into 1 inch pieces. Set aside.`, section: SECTIONS.COOK_CHICKEN, img: pasta3 },
 
-        { step: 'Over medium heat, melt butter in the dutch oven pot.', section: SECTIONS.COOK_SAUCE },
+        { step: `Over medium heat, melt butter in the dutch oven pot.`, section: SECTIONS.COOK_SAUCE },
         { step: `Add the rest of the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE, img: pasta4 },
-        { step: 'Saute until it becomes fragrant.', section: SECTIONS.COOK_SAUCE },
+        { step: `Saute until it becomes fragrant.`, section: SECTIONS.COOK_SAUCE },
 
         { step: `Add the "${SECTIONS.PASTA}" section ingredients to the pot. Stir.`, section: SECTIONS.COOK_PASTA, img: pasta5 },
-        { step: 'Cook until the pasta is al dente (for about 10 minutes). Stir occasionally.', section: SECTIONS.COOK_PASTA, img: pasta6 },
+        { step: `Cook until the pasta is al dente (for about 10 minutes). Stir occasionally.`, section: SECTIONS.COOK_PASTA, img: pasta6 },
 
-        { step: 'Add chicken and cook until the chicken is almost cooked through.', section: COMBINE, img: pasta7 },
-        { step: 'Add the spinach and cook until it wilts (about 1 to 2 minutes).', section: COMBINE, img: pasta8 },
+        { step: `Add chicken and cook until the chicken is almost cooked through.`, section: COMBINE, img: pasta7 },
+        { step: `Add the spinach and cook until it wilts (about 1 to 2 minutes).`, section: COMBINE, img: pasta8 },
 
-        { step: 'Enjoy this Italian dish warm.', section: SECTIONS.SERVE, img: pasta10 },
+        { step: `Enjoy this Italian dish warm.`, section: SECTIONS.SERVE, img: pasta10 },
     ],
     notes: [
         { note: 'This dish was really good but a little dry which caused it to stick to the pot. I have increased the liquids ratio 3:2 from the original recipe. If you have the time I think the "Marry Me Chicken" recipe was overall better, but for a quicker meal this turned out well.' },

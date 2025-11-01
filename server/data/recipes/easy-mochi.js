@@ -6,7 +6,7 @@ const mochi5 = '../assets/Products/easy-mochi-5.jpeg';
 const mochi6 = '../assets/Products/easy-mochi-6.jpeg';
 const mochi7 = '../assets/Products/easy-mochi-7.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CORNSTARCH, ICE_CREAM, MOCHIKO } = require('./ingredients');
 
 const MOCHI_SECTION = 'Mochi';
@@ -54,16 +54,16 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'In a glass mixing bowl, let ice cream completely melt at room temperature (about 1 hour).', section: MELT_ICE_CREAM, img: mochi1 },
-        { step: 'Add mochiko.', section: HEAT_MOCHIKO, img: [mochi2, mochi3] },
-        { step: 'Cover the bowl with plastic wrap. Poke a few small holes in the plastic wrap.', section: HEAT_MOCHIKO, img: mochi4 },
-        { step: 'Microwave for 1 minute. Uncover and mix.', section: HEAT_MOCHIKO, img: mochi5 },
-        { step: 'Recover. Microwave for 90 seconds.', section: HEAT_MOCHIKO, img: mochi6 },
-        { step: 'Let cool for a minute.', section: HEAT_MOCHIKO },
-        { step: 'Use a spatula to knead and fold the mochi. Knead until solid but still pliable.', section: FORM_MOCHI },
-        { step: 'Dust with cornstarch if still sticky.', section: FORM_MOCHI },
-        { step: 'Cut mochi to your desired size and shape.', section: FORM_MOCHI },
-        { step: 'Enjoy this easy mochi dish!', section: SECTIONS.SERVE },
+        { step: `In a glass mixing bowl, let ice cream completely melt at room temperature (about 1 hour).`, section: MELT_ICE_CREAM, img: mochi1 },
+        { step: `Add mochiko.`, section: HEAT_MOCHIKO, img: [mochi2, mochi3] },
+        { step: `Cover the bowl with plastic wrap. Poke a few small holes in the plastic wrap.`, section: HEAT_MOCHIKO, img: mochi4 },
+        { step: `Microwave for 1 minute. Uncover and mix.`, section: HEAT_MOCHIKO, img: mochi5 },
+        { step: `Recover. Microwave for 90 seconds.`, section: HEAT_MOCHIKO, img: mochi6 },
+        { step: `Let cool for a minute.`, section: HEAT_MOCHIKO },
+        { step: `Use a spatula to knead and fold the mochi. Knead until solid but still pliable.`, section: FORM_MOCHI },
+        { step: `Dust with cornstarch if still sticky.`, section: FORM_MOCHI },
+        { step: `Cut mochi to your desired size and shape.`, section: FORM_MOCHI },
+        { step: `Enjoy this easy mochi dish!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

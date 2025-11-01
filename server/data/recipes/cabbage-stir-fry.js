@@ -47,10 +47,10 @@ module.exports = {
         FRYING_PAN
     ],
     directions: [
-        { step: 'Over medium-high heat, in a frying pan add cabbage.', section: SECTIONS.STIR_FRY },
-        { step: 'Top with oil. Toss until oil has coated cabbage.', section: SECTIONS.STIR_FRY },
-        { step: 'Add red pepper flakes as desired. Stir.', section: SECTIONS.STIR_FRY, img: cabbage1 },
-        { step: 'Enjoy this as a side dish and serve with rice or noodles!', section: SECTIONS.SERVE },
+        { step: `Over medium-high heat, in a frying pan add cabbage.`, section: SECTIONS.STIR_FRY },
+        { step: `Top with oil. Toss until oil has coated cabbage.`, section: SECTIONS.STIR_FRY },
+        { step: `Add red pepper flakes as desired. Stir.`, section: SECTIONS.STIR_FRY, img: cabbage1 },
+        { step: `Enjoy this as a side dish and serve with rice or noodles!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

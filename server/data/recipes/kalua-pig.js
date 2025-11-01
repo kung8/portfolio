@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { FORK, FRYING_PAN, GARLIC, LIQUID_SMOKE, PORK_BUTT, SALT, SLOW_COOKER, STOVE } = require('./ingredients');
 
 module.exports = {
@@ -43,16 +43,16 @@ module.exports = {
         FORK,
     ],
     directions: [
-        { step: 'Over high heat, sear all sides of a roast until browned in a pan.', section: SECTIONS.PREP_PORK },
-        { step: 'Poke holes into the pork with a fork.', section: SECTIONS.PREP_PORK },
-        { step: 'Cut slits into the pork. Stuff the slits with cloves of garlic.', section: SECTIONS.PREP_PORK },
-        { step: 'Place roast in slow cooker.', section: SECTIONS.PREP_PORK },
-        { step: 'Pour liquid smoke over pork.', section: SECTIONS.PREP_PORK },
-        { step: 'Roast until cooked (about 8 to 12 hours).', section: SECTIONS.COOK_PORK },
-        { step: 'Remove some of the liquid. Set aside.', section: SECTIONS.COOK_PORK },
-        { step: 'Shred pork.', section: SECTIONS.COOK_PORK },
-        { step: 'Re-add the liquid.', section: SECTIONS.COOK_PORK },
-        { step: 'Enjoy this taste of Hawaii.', section: SECTIONS.SERVE },
+        { step: `Over high heat, sear all sides of a roast until browned in a pan.`, section: SECTIONS.PREP_PORK },
+        { step: `Poke holes into the pork with a fork.`, section: SECTIONS.PREP_PORK },
+        { step: `Cut slits into the pork. Stuff the slits with cloves of garlic.`, section: SECTIONS.PREP_PORK },
+        { step: `Place roast in slow cooker.`, section: SECTIONS.PREP_PORK },
+        { step: `Pour liquid smoke over pork.`, section: SECTIONS.PREP_PORK },
+        { step: `Roast until cooked (about 8 to 12 hours).`, section: SECTIONS.COOK_PORK },
+        { step: `Remove some of the liquid. Set aside.`, section: SECTIONS.COOK_PORK },
+        { step: `Shred pork.`, section: SECTIONS.COOK_PORK },
+        { step: `Re-add the liquid.`, section: SECTIONS.COOK_PORK },
+        { step: `Enjoy this taste of Hawaii.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

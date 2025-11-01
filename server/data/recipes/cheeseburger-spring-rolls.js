@@ -75,18 +75,18 @@ module.exports = {
 
         { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients. Mix until the seasoning is incorporated through the beef.`, section: SECTIONS.PREP_FILLING, img: roll2 },
 
-        { step: 'On a clean surface or cutting board, place the spring roll wrapper with a corner facing you.', section: PREP_SPRING_ROLLS },
-        { step: 'Place 2 large tablespoons of the filling 1 1/2 inches from the corner nearest you.', section: PREP_SPRING_ROLLS, img: roll3 },
-        { step: 'Carefully roll the spring roll wrapper until it reaches the middle.', section: PREP_SPRING_ROLLS, img: roll4 },
-        { step: 'Fold over the sides.', section: PREP_SPRING_ROLLS },
-        { step: 'Brush the exposed wrapper with water.', section: PREP_SPRING_ROLLS },
-        { step: 'Finish rolling the spring roll.', section: PREP_SPRING_ROLLS },
-        { step: 'Press to seal.', section: PREP_SPRING_ROLLS, img: roll5 },
+        { step: `On a clean surface or cutting board, place the spring roll wrapper with a corner facing you.`, section: PREP_SPRING_ROLLS },
+        { step: `Place 2 large tablespoons of the filling 1 1/2 inches from the corner nearest you.`, section: PREP_SPRING_ROLLS, img: roll3 },
+        { step: `Carefully roll the spring roll wrapper until it reaches the middle.`, section: PREP_SPRING_ROLLS, img: roll4 },
+        { step: `Fold over the sides.`, section: PREP_SPRING_ROLLS },
+        { step: `Brush the exposed wrapper with water.`, section: PREP_SPRING_ROLLS },
+        { step: `Finish rolling the spring roll.`, section: PREP_SPRING_ROLLS },
+        { step: `Press to seal.`, section: PREP_SPRING_ROLLS, img: roll5 },
 
-        { step: 'In an air fryer, place the rolls in a single layer and spray with oil.', section: COOK_SPRING_ROLLS },
-        { step: 'Cook at 400ºF for 15 minutes. Rotate around 7 minutes.', section: COOK_SPRING_ROLLS, img: roll6 },
+        { step: `In an air fryer, place the rolls in a single layer and spray with oil.`, section: COOK_SPRING_ROLLS },
+        { step: `Cook at 400ºF for 15 minutes. Rotate around 7 minutes.`, section: COOK_SPRING_ROLLS, img: roll6 },
 
-        { step: 'Enjoy warm with the dipping sauce.', section: SECTIONS.SERVE, img: roll8 },
+        { step: `Enjoy warm with the dipping sauce.`, section: SECTIONS.SERVE, img: roll8 },
     ],
     notes: [
         { note: 'I personally did not like the notes of the greek yogurt in the dipping sauce. So I would not use this sauce again.' },

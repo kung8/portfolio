@@ -71,20 +71,20 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'Over medium-high heat, boil water and salt in a saucepan.', section: SECTIONS.BLANCH },
-        { step: 'Add beans. Cook until bright green (about 3 to 4 minutes).', section: SECTIONS.BLANCH, img: bean1 },
-        { step: 'Fill a mixing bowl with ice and water.', section: SECTIONS.BLANCH },
-        { step: 'Transfer green beans to ice water.', section: SECTIONS.BLANCH, img: bean2 },
-        { step: 'Chill for 3 to 4 minutes.', section: SECTIONS.BLANCH },
-        { step: 'Drain.', section: SECTIONS.BLANCH },
+        { step: `Over medium-high heat, boil water and salt in a saucepan.`, section: SECTIONS.BLANCH },
+        { step: `Add beans. Cook until bright green (about 3 to 4 minutes).`, section: SECTIONS.BLANCH, img: bean1 },
+        { step: `Fill a mixing bowl with ice and water.`, section: SECTIONS.BLANCH },
+        { step: `Transfer green beans to ice water.`, section: SECTIONS.BLANCH, img: bean2 },
+        { step: `Chill for 3 to 4 minutes.`, section: SECTIONS.BLANCH },
+        { step: `Drain.`, section: SECTIONS.BLANCH },
 
-        { step: 'Brown butter in pan.', section: SECTIONS.SAUTE },
-        { step: 'Add "${}". Cook for 2 minutes.', section: SECTIONS.SAUTE },
-        { step: 'Add green beans. Cook for a few minutes.', section: SECTIONS.SAUTE, img: bean3 },
+        { step: `Brown butter in pan.`, section: SECTIONS.SAUTE },
+        { step: `Add "${SAUTEED_GREEN_BEANS}" section ingredients. Cook for 2 minutes.`, section: SECTIONS.SAUTE },
+        { step: `Add green beans. Cook for a few minutes.`, section: SECTIONS.SAUTE, img: bean3 },
 
         { step: `Add the "${TOSSED_INGREDIENTS}" section ingredients. Toss to combine.`, section: SECTIONS.SAUTE },
 
-        { step: 'Serve warm.', section: SECTIONS.SERVE },
+        { step: `Serve warm.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

@@ -67,15 +67,15 @@ module.exports = {
     ],
     directions: [
         { step: `Over medium-low heat, heat "${CARAMELIZED_ONION_SECTION}" section ingredients in a pan.`, section: CARAMELIZE_ONION, img: squash1 },
-        { step: 'Cook until lightly browned (about 10 minutes).', section: CARAMELIZE_ONION, img: squash1 },
+        { step: `Cook until lightly browned (about 10 minutes).`, section: CARAMELIZE_ONION, img: squash1 },
 
-        { step: 'Increase to medium heat.', section: SECTIONS.COOK_VEGGIES },
+        { step: `Increase to medium heat.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES },
-        { step: 'Cook until tender (about 10 to 15 minutes). Stirring occasionally.', section: SECTIONS.COOK_VEGGIES },
+        { step: `Cook until tender (about 10 to 15 minutes). Stirring occasionally.`, section: SECTIONS.COOK_VEGGIES },
 
-        { step: 'Remove pan from heat. Add parmesan. Stir until blended.', section: MELT_CHEESE, img: squash2 },
+        { step: `Remove pan from heat. Add parmesan. Stir until blended.`, section: MELT_CHEESE, img: squash2 },
 
-        { step: 'Serve this on the side of any pasta dish.', section: SECTIONS.SERVE },
+        { step: `Serve this on the side of any pasta dish.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

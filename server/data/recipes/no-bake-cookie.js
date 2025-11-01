@@ -67,17 +67,17 @@ module.exports = {
     ],
     directions: [
         { step: `In a saucepan, combine the "${SUGAR_MIXTURE}" section ingredients.`, section: COOK_SUGAR_MIXTURE, img: cookie1 },
-        { step: 'Over medium heat, melt sugar mixture. Stir frequently until it boils.', section: COOK_SUGAR_MIXTURE, img: cookie2 },
-        { step: 'Let it boils for about 1 minute.', section: COOK_SUGAR_MIXTURE },
-        { step: 'Remove from heat.', section: COOK_SUGAR_MIXTURE },
+        { step: `Over medium heat, melt sugar mixture. Stir frequently until it boils.`, section: COOK_SUGAR_MIXTURE, img: cookie2 },
+        { step: `Let it boils for about 1 minute.`, section: COOK_SUGAR_MIXTURE },
+        { step: `Remove from heat.`, section: COOK_SUGAR_MIXTURE },
 
         { step: `Add the "${PEANUT_BUTTER_AND_OAT}" section ingredients. Mix.`, section: SECTIONS.MIX, img: cookie3 },
 
-        { step: 'Spoon and shape dough balls onto plates.', section: SECTIONS.FORM_BALLS },
+        { step: `Spoon and shape dough balls onto plates.`, section: SECTIONS.FORM_BALLS },
 
-        { step: 'Let it set for 20 to 30 minutes in the refrigerator.', section: SECTIONS.CHILL },
+        { step: `Let it set for 20 to 30 minutes in the refrigerator.`, section: SECTIONS.CHILL },
         
-        { step: 'Enjoy!', section: SECTIONS.SERVE },
+        { step: `Enjoy!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

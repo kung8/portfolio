@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLENDER, ICE, LIME, PITCHER, SWEETENED_CONDENSED_MILK, WATER, WHITE_SUGAR } = require('./ingredients');
 
 const BLENDED_SECTION = 'Blended';
@@ -47,15 +47,15 @@ module.exports = {
         PITCHER,
     ],
     directions: [
-        { step: 'Wash limes thoroughly.', section: PREP_LIMES },
-        { step: 'Slice the ends off and cut them into 1/8 wedges.', section: PREP_LIMES },
+        { step: `Wash limes thoroughly.`, section: PREP_LIMES },
+        { step: `Slice the ends off and cut them into 1/8 wedges.`, section: PREP_LIMES },
 
         { step: `In a blender, combine the "${BLENDED_SECTION}" section ingredients in two batches.`, section: MAKE_LIMEADE },
-        { step: 'Strain the pulp and skin.', section: MAKE_LIMEADE },
-        { step: 'Transfer to a pitcher.', section: MAKE_LIMEADE },
-        { step: 'Add sweetened condensed milk. Mix.', section: MAKE_LIMEADE },
+        { step: `Strain the pulp and skin.`, section: MAKE_LIMEADE },
+        { step: `Transfer to a pitcher.`, section: MAKE_LIMEADE },
+        { step: `Add sweetened condensed milk. Mix.`, section: MAKE_LIMEADE },
 
-        { step: 'Serve with ice and additional lime slices. Add more sugar or sweetened condensed milk if it is bitter.', section: SECTIONS.SERVE },
+        { step: `Serve with ice and additional lime slices. Add more sugar or sweetened condensed milk if it is bitter.`, section: SECTIONS.SERVE },
     ],
     mealPrep: true,
 };

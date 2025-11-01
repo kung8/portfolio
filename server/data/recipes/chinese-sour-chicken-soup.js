@@ -1,5 +1,5 @@
 const soup1 = '../assets/Products/sour-chicken-soup-1.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     CLEAVER,
@@ -54,17 +54,17 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Cut up chicken using cleaver knife into about 1" thick pieces.', section: SECTIONS.PREP_CHICKEN },
+        { step: `Cut up chicken using cleaver knife into about 1" thick pieces.`, section: SECTIONS.PREP_CHICKEN },
 
-        { step: 'Fill a large pot with chicken and cover with water.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Bring to a boil for 15 to 20 minutes.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Skim off the froth that develops on the top using a shallow spatula.', section: SECTIONS.COOK_CHICKEN },
+        { step: `Fill a large pot with chicken and cover with water.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Bring to a boil for 15 to 20 minutes.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Skim off the froth that develops on the top using a shallow spatula.`, section: SECTIONS.COOK_CHICKEN },
 
-        { step: 'In a medium bowl, ladle about 1.5 cup of the soup for the sour mix.', section: PREP_SOUR_MIX },
-        { step: 'Add tamarind powder and lime juice. Mix.', section: PREP_SOUR_MIX },
+        { step: `In a medium bowl, ladle about 1.5 cup of the soup for the sour mix.`, section: PREP_SOUR_MIX },
+        { step: `Add tamarind powder and lime juice. Mix.`, section: PREP_SOUR_MIX },
 
-        { step: 'Serve soup over rice with as many scoops of the sour mix.', section: SECTIONS.SERVE },
-        { step: 'Enjoy this nostalgic piece of home for me.', section: SECTIONS.SERVE },
+        { step: `Serve soup over rice with as many scoops of the sour mix.`, section: SECTIONS.SERVE },
+        { step: `Enjoy this nostalgic piece of home for me.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

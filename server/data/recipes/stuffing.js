@@ -65,27 +65,27 @@ module.exports = {
         SMALL_BOWL
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: 'Brush the baking pan with some cooking spray.', section: SECTIONS.PREP_PAN, img: stuffing1 },
-        { step: 'Place cubed bread in baking pan.', section: SECTIONS.PREP_PAN, img: stuffing2 },
+        { step: `Brush the baking pan with some cooking spray.`, section: SECTIONS.PREP_PAN, img: stuffing1 },
+        { step: `Place cubed bread in baking pan.`, section: SECTIONS.PREP_PAN, img: stuffing2 },
 
-        { step: 'Over medium heat, heat butter in a pan.', section: SECTIONS.COOK_VEGGIES, img: stuffing3 },
+        { step: `Over medium heat, heat butter in a pan.`, section: SECTIONS.COOK_VEGGIES, img: stuffing3 },
         { step: `Once melted, add the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES, img: stuffing4 },
-        { step: 'Cook until the veggies are tender (about 8 to 10 minutes).', section: SECTIONS.COOK_VEGGIES, img: stuffing5 },
+        { step: `Cook until the veggies are tender (about 8 to 10 minutes).`, section: SECTIONS.COOK_VEGGIES, img: stuffing5 },
 
-        { step: 'Add in chopped fresh herbs. Mix and cook for 1 minute.', section: SECTIONS.COOK_HERBS, img: [stuffing6, stuffing7] },
+        { step: `Add in chopped fresh herbs. Mix and cook for 1 minute.`, section: SECTIONS.COOK_HERBS, img: [stuffing6, stuffing7] },
 
-        { step: 'Stir in 1 cup of stock.', section: SECTIONS.PREP_CASSEROLE, img: stuffing8 },
-        { step: 'If you like a crispier stuffing, you can scoop out some of the bread and set it aside.', section: SECTIONS.PREP_CASSEROLE },
-        { step: 'Pour mixture over the cubed bread. Mix until coated.', section: SECTIONS.PREP_CASSEROLE, img: stuffing9 },
-        { step: 'If you scooped out some bread, you can add it back in now.', section: SECTIONS.PREP_CASSEROLE },
-        { step: 'In a small bowl, combine the eggs and the remaining stock.', section: SECTIONS.PREP_CASSEROLE, img: stuffing10 },
-        { step: 'Pour egg mixture over the cubed bread and fold until combined.', section: SECTIONS.PREP_CASSEROLE },
+        { step: `Stir in 1 cup of stock.`, section: SECTIONS.PREP_CASSEROLE, img: stuffing8 },
+        { step: `If you like a crispier stuffing, you can scoop out some of the bread and set it aside.`, section: SECTIONS.PREP_CASSEROLE },
+        { step: `Pour mixture over the cubed bread. Mix until coated.`, section: SECTIONS.PREP_CASSEROLE, img: stuffing9 },
+        { step: `If you scooped out some bread, you can add it back in now.`, section: SECTIONS.PREP_CASSEROLE },
+        { step: `In a small bowl, combine the eggs and the remaining stock.`, section: SECTIONS.PREP_CASSEROLE, img: stuffing10 },
+        { step: `Pour egg mixture over the cubed bread and fold until combined.`, section: SECTIONS.PREP_CASSEROLE },
 
-        { step: 'Bake until the internal temperature is 160ºF (about 45 to 50 minutes). If getting browned and it isn\'t finished yet, you can cover it with foil in a tent shape.', section: SECTIONS.BAKE, img: stuffing11 },
+        { step: `Bake until the internal temperature is 160ºF (about 45 to 50 minutes). If getting browned and it isn't finished yet, you can cover it with foil in a tent shape.`, section: SECTIONS.BAKE, img: stuffing11 },
 
-        { step: 'Serve warm on the side of your holiday feast or on any occasion.', section: SECTIONS.SERVE },
+        { step: `Serve warm on the side of your holiday feast or on any occasion.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

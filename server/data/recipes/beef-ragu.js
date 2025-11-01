@@ -8,7 +8,7 @@ const ragu7 = '../assets/Products/beef-ragu-7.jpeg';
 const ragu8 = '../assets/Products/beef-ragu-8.jpeg';
 const ragu9 = '../assets/Products/beef-ragu-9.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAY_LEAF, BEEF_BROTH, BEEF_CHUCK_ROAST, BLACK_PEPPER, CARROT, CELERY, CRUSHED_TOMATOES, CUTTING_BOARD, FORK, GARLIC, LARGE_POT, OLIVE_OIL, PAPER_TOWELS, PAPPARDELLE_NOODLES, PARMESAN_CHEESE, PARSLEY, RED_WINE, SALT, STOVE, THYME, TOMATO_PASTE, TONGS, WATER, YELLOW_ONION } = require('./ingredients');
 
 const RAGU_SECTION = 'Ragu';
@@ -72,25 +72,25 @@ module.exports = {
         FORK
     ],
     directions: [
-        { step: 'Pat beef dry with paper towels and season salt and pepper.', section: SECTIONS.COOK_BEEF },
-        { step: 'Over high heat, add olive oil to a large pot.', section: SECTIONS.COOK_BEEF },
-        { step: 'Add beef. Sear each side until browned (about 3 to 5 minutes). Remove and set aside.', section: SECTIONS.COOK_BEEF, img: [ragu1, ragu3] },
+        { step: `Pat beef dry with paper towels and season salt and pepper.`, section: SECTIONS.COOK_BEEF },
+        { step: `Over high heat, add olive oil to a large pot.`, section: SECTIONS.COOK_BEEF },
+        { step: `Add beef. Sear each side until browned (about 3 to 5 minutes). Remove and set aside.`, section: SECTIONS.COOK_BEEF, img: [ragu1, ragu3] },
 
-        { step: 'Over medium-low heat, add olive oil to large pot.', section: COOK_RAGU },
-        { step: 'Add garlic and onion. Saute for 2 minutes.', section: COOK_RAGU, img: ragu2 },
-        { step: 'Add carrots and celery. Saute slowly for 5 minutes.', section: COOK_RAGU, img: ragu4 },
-        { step: 'Add the rest of the sauce ingredients and the beef. Bring the heat to medium-high.', section: COOK_RAGU, img: [ragu5, ragu6] },
-        { step: 'Once it begins to simmer, turn the heat down to low. Cover and let it cook until the beef is tender (about 2 hours).', section: COOK_RAGU },
-        { step: 'Carefully transfer beef to a mixing bowl to shred with forks.', section: COOK_RAGU },
-        { step: 'Re-add beef to the pot. Simmer until the sauce has reduced and thickened (about 30 minutes).', section: COOK_RAGU },
-        { step: 'Taste and add more salt and pepper if needed. If the sauce is too sour, you can add 1/2 teaspoon of sugar.', section: COOK_RAGU },
+        { step: `Over medium-low heat, add olive oil to large pot.`, section: COOK_RAGU },
+        { step: `Add garlic and onion. Saute for 2 minutes.`, section: COOK_RAGU, img: ragu2 },
+        { step: `Add carrots and celery. Saute slowly for 5 minutes.`, section: COOK_RAGU, img: ragu4 },
+        { step: `Add the rest of the sauce ingredients and the beef. Bring the heat to medium-high.`, section: COOK_RAGU, img: [ragu5, ragu6] },
+        { step: `Once it begins to simmer, turn the heat down to low. Cover and let it cook until the beef is tender (about 2 hours).`, section: COOK_RAGU },
+        { step: `Carefully transfer beef to a mixing bowl to shred with forks.`, section: COOK_RAGU },
+        { step: `Re-add beef to the pot. Simmer until the sauce has reduced and thickened (about 30 minutes).`, section: COOK_RAGU },
+        { step: `Taste and add more salt and pepper if needed. If the sauce is too sour, you can add 1/2 teaspoon of sugar.`, section: COOK_RAGU },
 
-        { step: '(After the shredded beef has been re-added) Bring a pot of water and salt to a boil.', section: SECTIONS.COOK_PASTA },
-        { step: 'Add pasta and cook until al dente (about 8 minutes or per package instructions).', section: SECTIONS.COOK_PASTA, img: ragu7 },
-        { step: 'Transfer the pasta to the sauce and add 3/4 cup of pasta water.', section: SECTIONS.COOK_PASTA, img: ragu8 },
-        { step: 'Stir the pasta and pasta water until it thickens the Ragu sauce.', section: SECTIONS.COOK_PASTA },
+        { step: `(After the shredded beef has been re-added) Bring a pot of water and salt to a boil.`, section: SECTIONS.COOK_PASTA },
+        { step: `Add pasta and cook until al dente (about 8 minutes or per package instructions).`, section: SECTIONS.COOK_PASTA, img: ragu7 },
+        { step: `Transfer the pasta to the sauce and add 3/4 cup of pasta water.`, section: SECTIONS.COOK_PASTA, img: ragu8 },
+        { step: `Stir the pasta and pasta water until it thickens the Ragu sauce.`, section: SECTIONS.COOK_PASTA },
 
-        { step: 'Serve this immediately topped with parmesan and parsley.', section: SECTIONS.SERVE },
+        { step: `Serve this immediately topped with parmesan and parsley.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'This ended up being too liquidy for me and the beef did not shred well after cooking for 2 1/2 hours. I ended up just cutting the beef instead of shredding it. I think adding more tomato paste would help thicken the sauce.' }

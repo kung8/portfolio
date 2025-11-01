@@ -61,14 +61,14 @@ module.exports = {
         WOK,
     ],
     directions: [
-        { step: 'In a mixing bowl, combine the chicken and baking soda. Marinate for 20 to 30 minutes.', section: SECTIONS.MARINATE_CHICKEN },
+        { step: `In a mixing bowl, combine the chicken and baking soda. Marinate for 20 to 30 minutes.`, section: SECTIONS.MARINATE_CHICKEN },
         { step: `In a medium bowl, combine all the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
-        { step: 'Over high heat, heat oil in a wok.', section: SECTIONS.STIR_FRY },
-        { step: 'Add garlic and onion. Cook for a minute.', section: SECTIONS.STIR_FRY },
-        { step: 'Add chicken. Cook until chicken is no longer pink (for a few minutes).', section: SECTIONS.STIR_FRY, img: [suey1, suey2] },
-        { step: 'Add carrots, boy choy, and mushroom. Stir fry for a minute.', section: SECTIONS.STIR_FRY, img: suey3 },
-        { step: 'Add bean sprouts and sauce. Cook until the sauce thickens and the vegetables should be crisp.', section: SECTIONS.STIR_FRY },
-        { step: 'Serve with rice.', section: SECTIONS.SERVE },
+        { step: `Over high heat, heat oil in a wok.`, section: SECTIONS.STIR_FRY },
+        { step: `Add garlic and onion. Cook for a minute.`, section: SECTIONS.STIR_FRY },
+        { step: `Add chicken. Cook until chicken is no longer pink (for a few minutes).`, section: SECTIONS.STIR_FRY, img: [suey1, suey2] },
+        { step: `Add carrots, boy choy, and mushroom. Stir fry for a minute.`, section: SECTIONS.STIR_FRY, img: suey3 },
+        { step: `Add bean sprouts and sauce. Cook until the sauce thickens and the vegetables should be crisp.`, section: SECTIONS.STIR_FRY },
+        { step: `Serve with rice.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

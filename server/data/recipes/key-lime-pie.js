@@ -49,12 +49,12 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'Preheat the oven to 375ºF.', section: PREP_PIE },
+        { step: `Preheat the oven to 375ºF.`, section: PREP_PIE },
         { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: PREP_PIE, img: [pie1, pie2] },
-        { step: 'Pour the filling into the pie crust.', section: PREP_PIE, img: pie3 },
-        { step: 'Bake until the filling is set (about 15 minutes).', section: SECTIONS.BAKE, img: pie4 },
-        { step: 'Let it completely cool before slicing.', section: SECTIONS.BAKE },
-        { step: 'Top each slice with whipped cream and a lime slice.', section: SECTIONS.SERVE },
+        { step: `Pour the filling into the pie crust.`, section: PREP_PIE, img: pie3 },
+        { step: `Bake until the filling is set (about 15 minutes).`, section: SECTIONS.BAKE, img: pie4 },
+        { step: `Let it completely cool before slicing.`, section: SECTIONS.BAKE },
+        { step: `Top each slice with whipped cream and a lime slice.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

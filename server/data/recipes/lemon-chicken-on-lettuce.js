@@ -65,15 +65,15 @@ module.exports = {
         WOK,
     ],
     directions: [
-        { step: 'Over medium-high heat, heat a wok.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Add oil. Wait until it is hot.', section: SECTIONS.COOK_CHICKEN },
-        { step: 'Add chicken. Cook without mixing (about 1 to 2 minutes).', section: SECTIONS.COOK_CHICKEN, img: [lettuce1, lettuce2] },
-        { step: 'Flip. Cook without mixing for a few minutes.', section: SECTIONS.COOK_CHICKEN, img: lettuce3 },
-        { step: 'Season the chicken with salt and pepper.', section: SECTIONS.COOK_CHICKEN },
+        { step: `Over medium-high heat, heat a wok.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Add oil. Wait until it is hot.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Add chicken. Cook without mixing (about 1 to 2 minutes).`, section: SECTIONS.COOK_CHICKEN, img: [lettuce1, lettuce2] },
+        { step: `Flip. Cook without mixing for a few minutes.`, section: SECTIONS.COOK_CHICKEN, img: lettuce3 },
+        { step: `Season the chicken with salt and pepper.`, section: SECTIONS.COOK_CHICKEN },
 
         { step: `Add the "${SECTIONS.SAUCE}" section ingredients. Stir until coated.`, section: SECTIONS.COOK_SAUCE },
         { step: `Cook for a few minutes. Add more cornstarch if needed.`, section: SECTIONS.COOK_SAUCE, img: lettuce4 },
-        { step: 'Serve over leaves of lettuce with a side of rice.', section: SECTIONS.SERVE, img: [lettuce5, lettuce6] },
+        { step: `Serve over leaves of lettuce with a side of rice.`, section: SECTIONS.SERVE, img: [lettuce5, lettuce6] },
     ],
     notes: [
         { note: 'The cornstarch should thicken the sauce slightly. Add more cornstarch to continuing thickening as preferred.' },

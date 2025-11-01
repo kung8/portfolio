@@ -5,7 +5,7 @@ const curry4 = '../assets/Products/javanese-coconut-curry-4.jpeg';
 const curry5 = '../assets/Products/javanese-coconut-curry-5.jpeg';
 const curry6 = '../assets/Products/javanese-coconut-curry-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLENDER, BROWN_SUGAR, CHICKEN, CINNAMON_STICK, COCONUT_MILK, CORIANDER, DUTCH_OVEN_POT, FRIED_SHALLOTS, GARLIC, GINGER, JASMINE_RICE, KAFFIR_LIME_LEAF, LEMONGRASS, LIME, MACADAMIA_NUT, MORTAR_AND_PESTLE, RED_CHILI, SHALLOT, STOVE, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const SHALLOT_MIXTURE_SECTION = 'Shallot Mixture';
@@ -68,19 +68,19 @@ module.exports = {
         MORTAR_AND_PESTLE,
     ],
     directions: [
-        { step: 'Over medium-high heat, heat a dutch oven pot.', section: SECTIONS.COOK_CURRY },
-        { step: 'Add macadamia nut and coriander seed. Stir and cook until fragrant (about 2 minutes).', section: SECTIONS.COOK_CURRY, img: curry1 },
-        { step: 'Pound in a mortar and pestle.', section: SECTIONS.COOK_CURRY, img: [curry2, curry3] },
+        { step: `Over medium-high heat, heat a dutch oven pot.`, section: SECTIONS.COOK_CURRY },
+        { step: `Add macadamia nut and coriander seed. Stir and cook until fragrant (about 2 minutes).`, section: SECTIONS.COOK_CURRY, img: curry1 },
+        { step: `Pound in a mortar and pestle.`, section: SECTIONS.COOK_CURRY, img: [curry2, curry3] },
         { step: `Blend together the "${SHALLOT_MIXTURE_SECTION}" section ingredients until chopped.`, section: SECTIONS.COOK_CURRY, img: curry4 },
-        { step: 'Over medium-high heat, heat oil in a dutch oven pot.', section: SECTIONS.COOK_CURRY },
-        { step: 'Cook the chicken in batches until browned (about 8 minutes).', section: SECTIONS.COOK_CURRY },
-        { step: 'Transfer chicken to plate.', section: SECTIONS.COOK_CURRY },
-        { step: 'Over medium-low heat, add shallot mixture, lemongrass, kaffir lime, and cinnamon. Stir until fragrant (about 5 minutes).', section: SECTIONS.COOK_CURRY, img: curry5 },
-        { step: 'Add chicken. Toss to coat.', section: SECTIONS.COOK_CURRY },
-        { step: 'Reduce to low heat. Add coconut milk and cover.', section: SECTIONS.COOK_CURRY },
-        { step: 'Stir occasionally and cook until chicken is tender (about 30 minutes).', section: SECTIONS.COOK_CURRY },
-        { step: 'Uncover. Simmer until sauce thickens (about 5 minutes).', section: SECTIONS.COOK_CURRY },
-        { step: 'Enjoy this over turmeric rice and topped with your favorite toppings.', section: SECTIONS.SERVE },
+        { step: `Over medium-high heat, heat oil in a dutch oven pot.`, section: SECTIONS.COOK_CURRY },
+        { step: `Cook the chicken in batches until browned (about 8 minutes).`, section: SECTIONS.COOK_CURRY },
+        { step: `Transfer chicken to plate.`, section: SECTIONS.COOK_CURRY },
+        { step: `Over medium-low heat, add shallot mixture, lemongrass, kaffir lime, and cinnamon. Stir until fragrant (about 5 minutes).`, section: SECTIONS.COOK_CURRY, img: curry5 },
+        { step: `Add chicken. Toss to coat.`, section: SECTIONS.COOK_CURRY },
+        { step: `Reduce to low heat. Add coconut milk and cover.`, section: SECTIONS.COOK_CURRY },
+        { step: `Stir occasionally and cook until chicken is tender (about 30 minutes).`, section: SECTIONS.COOK_CURRY },
+        { step: `Uncover. Simmer until sauce thickens (about 5 minutes).`, section: SECTIONS.COOK_CURRY },
+        { step: `Enjoy this over turmeric rice and topped with your favorite toppings.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'I ended up not adding chicken to this since I was going to pair it with another chicken recipe.' }

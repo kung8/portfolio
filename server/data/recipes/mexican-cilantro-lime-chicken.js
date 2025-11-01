@@ -5,7 +5,7 @@ const cilantro4 = '../assets/Products/mexican-cilantro-lime-chicken-4.jpeg';
 const cilantro5 = '../assets/Products/mexican-cilantro-lime-chicken-5.jpeg';
 const cilantro6 = '../assets/Products/mexican-cilantro-lime-chicken-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     AVOCADO_OIL,
     BAKING_SHEET,
@@ -71,14 +71,14 @@ module.exports = {
         TONGS,
     ],
     directions: [
-        { step: 'Combine all the dressing ingredients in a blender.', section: SECTIONS.DRESSING, img: [cilantro1, cilantro2] },
-        { step: 'Pour 1/2 of the dressing into a ziploc bag and place the chicken wings and drum.', section: SECTIONS.MEAT, img: cilantro3 },
-        { step: 'Let the chicken marinate for 4 hours.', section: SECTIONS.MEAT },
-        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.MAIN },
-        { step: 'Place a wire rack on top of a baking pan.', section: SECTIONS.MAIN },
-        { step: 'Use tongs to transfer chicken to wire rack in a single layer.', section: SECTIONS.MAIN, img: cilantro4 },
-        { step: 'Bake for 30 to 35 minutes. Feel free to broil the wings for 2 to 3 minutes in addition to make it crispier.', section: SECTIONS.MAIN, img: cilantro5 },
-        { step: 'Dip this chicken in the dressing and serve it with a side of salad and cilantro rice.', section: SECTIONS.SERVE },
+        { step: `Combine all the dressing ingredients in a blender.`, section: SECTIONS.DRESSING, img: [cilantro1, cilantro2] },
+        { step: `Pour 1/2 of the dressing into a ziploc bag and place the chicken wings and drum.`, section: SECTIONS.MEAT, img: cilantro3 },
+        { step: `Let the chicken marinate for 4 hours.`, section: SECTIONS.MEAT },
+        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.MAIN },
+        { step: `Place a wire rack on top of a baking pan.`, section: SECTIONS.MAIN },
+        { step: `Use tongs to transfer chicken to wire rack in a single layer.`, section: SECTIONS.MAIN, img: cilantro4 },
+        { step: `Bake for 30 to 35 minutes. Feel free to broil the wings for 2 to 3 minutes in addition to make it crispier.`, section: SECTIONS.MAIN, img: cilantro5 },
+        { step: `Dip this chicken in the dressing and serve it with a side of salad and cilantro rice.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

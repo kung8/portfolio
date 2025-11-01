@@ -93,16 +93,16 @@ module.exports = {
         MEASURING_SPOONS,
     ],
     directions: [
-        { step: 'Over medium-high heat, add oil and butter to a large pan.', section: COOK_ONION },
-        { step: 'Add onion. Cook until light brown.', section: COOK_ONION },
+        { step: `Over medium-high heat, add oil and butter to a large pan.`, section: COOK_ONION },
+        { step: `Add onion. Cook until light brown.`, section: COOK_ONION },
 
         { step: `Add the "${SECTIONS.AROMATICS}" section ingredients. Cook until fragrant (about 30 seconds).`, section: COOK_AROMATICS },
 
         { step: `Add the "${CHICKEN_AND_SPICES}" section ingredients. Brown chicken (about 5 to 6 minutes).`, section: SECTIONS.COOK_CHICKEN, img: [curry1, curry2] },
 
-        { step: 'Add heavy cream. Simmer for 8 to 10 minutes.', section: SECTIONS.SIMMER, img: [curry3, curry4] },
+        { step: `Add heavy cream. Simmer for 8 to 10 minutes.`, section: SECTIONS.SIMMER, img: [curry3, curry4] },
 
-        { step: 'Serve with rice (and naan or roti is optional and delicious).', section: SECTIONS.SERVE, img: curry6 },
+        { step: `Serve with rice (and naan or roti is optional and delicious).`, section: SECTIONS.SERVE, img: curry6 },
     ],
     store: [
         {

@@ -53,15 +53,15 @@ module.exports = {
         MASHER,
     ],
     directions: [
-        { step: 'Over high heat, bring a large pot of water to a boil.', section: BOIL_POTATOES, },
-        { step: 'Add potatoes to the pot. Boil until the potatoes have softened (about 25 minutes).', section: BOIL_POTATOES, img: [potatoes1, potatoes2] },
-        { step: 'Drain potatoes.', section: BOIL_POTATOES, img: potatoes3 },
-        { step: 'Re-add the potatoes to the pot.', section: BOIL_POTATOES, },
+        { step: `Over high heat, bring a large pot of water to a boil.`, section: BOIL_POTATOES, },
+        { step: `Add potatoes to the pot. Boil until the potatoes have softened (about 25 minutes).`, section: BOIL_POTATOES, img: [potatoes1, potatoes2] },
+        { step: `Drain potatoes.`, section: BOIL_POTATOES, img: potatoes3 },
+        { step: `Re-add the potatoes to the pot.`, section: BOIL_POTATOES, },
         { step: `Add "${LIQUIDS_SECTION}" section ingredients.`, section: MASH_POTATOES, },
-        { step: 'Mash potatoes until it becomes a chowder consistency.', section: MASH_POTATOES, img: potatoes4 },
+        { step: `Mash potatoes until it becomes a chowder consistency.`, section: MASH_POTATOES, img: potatoes4 },
         { step: `Season the potatoes with "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.SEASON, },
-        { step: 'Over high heat, re-add the pot. Stir until the mash potatoes becomes your preferred consistency.', section: FIRMING_POTATOES, img: potatoes5 },
-        { step: 'Serve this warm as a side or by itself.', section: SECTIONS.SERVE, },
+        { step: `Over high heat, re-add the pot. Stir until the mash potatoes becomes your preferred consistency.`, section: FIRMING_POTATOES, img: potatoes5 },
+        { step: `Serve this warm as a side or by itself.`, section: SECTIONS.SERVE, },
     ],
     store: [
         {

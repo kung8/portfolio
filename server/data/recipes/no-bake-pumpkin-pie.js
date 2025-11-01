@@ -61,16 +61,16 @@ module.exports = {
         { name: 'spatula' },
     ],
     directions: [
-        { step: 'In a mixing bowl or stand mixer, combine the pudding mix and milk. Mix.', section: CREATE_PUMPKIN_PUREE_LAYER },
+        { step: `In a mixing bowl or stand mixer, combine the pudding mix and milk. Mix.`, section: CREATE_PUMPKIN_PUREE_LAYER },
         { step: `Add the rest of the "${PUMPKIN_PUREE_FILLING_SECTION}" section ingredients. Mix until smooth.`, section: CREATE_PUMPKIN_PUREE_LAYER, img: pie1 },
-        { step: 'Pour into the pie crust.', section: CREATE_PUMPKIN_PUREE_LAYER, img: pie2 },
+        { step: `Pour into the pie crust.`, section: CREATE_PUMPKIN_PUREE_LAYER, img: pie2 },
 
-        { step: 'In the mixing bowl, beat the cream cheese.', section: CREATE_CREAM_CHEESE_LAYER, img: pie3 },
+        { step: `In the mixing bowl, beat the cream cheese.`, section: CREATE_CREAM_CHEESE_LAYER, img: pie3 },
         { step: `Add the rest of the "${CREAM_CHEESE_LAYER_SECTION}" section ingredients.`, section: CREATE_CREAM_CHEESE_LAYER, img: pie4 },
-        { step: 'Spread over the pumpkin layer.', section: CREATE_CREAM_CHEESE_LAYER, img: pie5 },
+        { step: `Spread over the pumpkin layer.`, section: CREATE_CREAM_CHEESE_LAYER, img: pie5 },
 
-        { step: 'Top with chocolate shavings.', section: SECTIONS.TOPPINGS },
-        { step: 'Chill the pie until ready to serve.', section: SECTIONS.SERVE },
+        { step: `Top with chocolate shavings.`, section: SECTIONS.TOPPINGS },
+        { step: `Chill the pie until ready to serve.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Chill the chocolate bar beforehand to make it easier to grate.' },

@@ -49,14 +49,14 @@ module.exports = {
         ALUMINUM_FOIL,
     ],
     directions: [
-        { step: 'Preheat the oven to 425ºF.', section: SECTIONS.BAKE },
-        { step: 'Line a baking sheet with foil.', section: SECTIONS.BAKE },
-        { step: 'Snap the asparagus by sharply bending the asparagus near the base. Discard these woody parts.', section: SECTIONS.BAKE },
-        { step: 'Place the asparagus on the baking sheet in a single layer.', section: SECTIONS.BAKE },
-        { step: 'Drizzle olive oil over asparagus.', section: SECTIONS.BAKE },
-        { step: 'Season with salt and pepper.', section: SECTIONS.BAKE, img: asparagus1 },
-        { step: 'Bake until asparagus is soft (about 10 to 12 minutes for thin asparagus, or 15 to 20 minutes for thick asparagus).', section: SECTIONS.BAKE, img: asparagus2 },
-        { step: 'Serve topped with your favorite toppings.', section: SECTIONS.SERVE, img: asparagus3 },
+        { step: `Preheat the oven to 425ºF.`, section: SECTIONS.BAKE },
+        { step: `Line a baking sheet with foil.`, section: SECTIONS.BAKE },
+        { step: `Snap the asparagus by sharply bending the asparagus near the base. Discard these woody parts.`, section: SECTIONS.BAKE },
+        { step: `Place the asparagus on the baking sheet in a single layer.`, section: SECTIONS.BAKE },
+        { step: `Drizzle olive oil over asparagus.`, section: SECTIONS.BAKE },
+        { step: `Season with salt and pepper.`, section: SECTIONS.BAKE, img: asparagus1 },
+        { step: `Bake until asparagus is soft (about 10 to 12 minutes for thin asparagus, or 15 to 20 minutes for thick asparagus).`, section: SECTIONS.BAKE, img: asparagus2 },
+        { step: `Serve topped with your favorite toppings.`, section: SECTIONS.SERVE, img: asparagus3 },
     ],
     store: [
         {

@@ -5,7 +5,7 @@ const salad4 = '../assets/Products/macaroni-salad-4.jpeg';
 const salad5 = '../assets/Products/macaroni-salad-5.jpeg';
 const salad6 = '../assets/Products/macaroni-salad-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
     CELERY,
@@ -73,17 +73,17 @@ module.exports = {
         STRAINER,
     ],
     directions: [
-        { step: 'Over high heat, boil water and salt in a large pot.', section: SECTIONS.COOK_PASTA },
-        { step: 'Once the water boils, add the pasta and cook until tender (about 8 to 10 minutes).', section: SECTIONS.COOK_PASTA },
-        { step: 'Rinse the pasta under cold water.', section: SECTIONS.COOK_PASTA },
-        { step: 'Drain in colander.', section: SECTIONS.COOK_PASTA, img: salad1 },
+        { step: `Over high heat, boil water and salt in a large pot.`, section: SECTIONS.COOK_PASTA },
+        { step: `Once the water boils, add the pasta and cook until tender (about 8 to 10 minutes).`, section: SECTIONS.COOK_PASTA },
+        { step: `Rinse the pasta under cold water.`, section: SECTIONS.COOK_PASTA },
+        { step: `Drain in colander.`, section: SECTIONS.COOK_PASTA, img: salad1 },
 
         { step: `In the mixing bowl, combine the "${MAYO_MIXTURE}" section ingredients.`, section: SECTIONS.ASSEMBLE, img: salad2 },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Mix until coated.`, section: SECTIONS.ASSEMBLE, img: salad3 },
-        { step: 'Add the pasta. Mix until coated.', section: SECTIONS.ASSEMBLE, img: salad4 },
-        { step: 'Cover. Chill overnight (or at least 4 hours).', section: SECTIONS.ASSEMBLE, img: salad6 },
+        { step: `Add the pasta. Mix until coated.`, section: SECTIONS.ASSEMBLE, img: salad4 },
+        { step: `Cover. Chill overnight (or at least 4 hours).`, section: SECTIONS.ASSEMBLE, img: salad6 },
 
-        { step: 'Enjoy this sweet, creamy, fresh appetizer while you relax with some relaxing Hawaiian music.', section: SECTIONS.SERVE },
+        { step: `Enjoy this sweet, creamy, fresh appetizer while you relax with some relaxing Hawaiian music.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

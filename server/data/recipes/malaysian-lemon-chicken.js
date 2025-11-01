@@ -82,12 +82,12 @@ module.exports = {
         { step: `In a large bowl, combine the "${SECTIONS.MARINADE}" section ingredients. Let it marinate for at least 30 minutes.`, section: SECTIONS.MAIN },
         { step: `In a sauce pan, combine the "${SECTIONS.SAUCE}" section ingredients. Set aside.`, section: SECTIONS.MAIN },
         { step: `In a medium bowl, mix the "${DREDGING_STATION_SECTION}" section ingredients.`, section: SECTIONS.MAIN },
-        { step: 'Heat up a deep pot with vegetable oil over medium-high heat.', section: SECTIONS.MAIN },
-        { step: 'Line a baking sheet with paper towels and place a cooling rack on top.', section: SECTIONS.MAIN },
-        { step: 'Once the oil is hot, dredge the chicken in the flour mixture and shake off any excess. Then fry the chicken in the oil until golden brown (about 7 to 10 minutes).', section: SECTIONS.MAIN },
-        { step: 'Remove the chicken from the oil and place on the cooling rack.', section: SECTIONS.MAIN },
-        { step: 'Continue until all of the chicken is cooked.', section: SECTIONS.MAIN },
-        { step: 'Heat the sauce over medium heat until it thickens. Serve over the chicken with rice.', section: SECTIONS.MAIN },
+        { step: `Heat up a deep pot with vegetable oil over medium-high heat.`, section: SECTIONS.MAIN },
+        { step: `Line a baking sheet with paper towels and place a cooling rack on top.`, section: SECTIONS.MAIN },
+        { step: `Once the oil is hot, dredge the chicken in the flour mixture and shake off any excess. Then fry the chicken in the oil until golden brown (about 7 to 10 minutes).`, section: SECTIONS.MAIN },
+        { step: `Remove the chicken from the oil and place on the cooling rack.`, section: SECTIONS.MAIN },
+        { step: `Continue until all of the chicken is cooked.`, section: SECTIONS.MAIN },
+        { step: `Heat the sauce over medium heat until it thickens. Serve over the chicken with rice.`, section: SECTIONS.MAIN },
     ],
     store: [
         {

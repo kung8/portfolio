@@ -76,18 +76,18 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'Preheat oven to 375ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat oven to 375ºF.`, section: SECTIONS.PREHEAT_OVEN },
         
         { step: `In a mixing bowl, combine the "${CHICKEN_SALAD}" section ingredients.`, section: PREP_CHICKEN_SALAD, img: rolls1 },
 
-        { step: 'Unroll the crescent roll triangles and lay on the baking sheet.', section: SECTIONS.ASSEMBLE, img: rolls2 },
-        { step: 'Place a ball of chicken filling on the wide end of the crescent roll.', section: SECTIONS.ASSEMBLE, img: rolls3 },
-        { step: 'Roll the dough to enclose as much of the filling.', section: SECTIONS.ASSEMBLE },
-        { step: 'Brush rolls with melted butter and optionally sprinkle with cheese.', section: SECTIONS.ASSEMBLE, img: rolls4 },
+        { step: `Unroll the crescent roll triangles and lay on the baking sheet.`, section: SECTIONS.ASSEMBLE, img: rolls2 },
+        { step: `Place a ball of chicken filling on the wide end of the crescent roll.`, section: SECTIONS.ASSEMBLE, img: rolls3 },
+        { step: `Roll the dough to enclose as much of the filling.`, section: SECTIONS.ASSEMBLE },
+        { step: `Brush rolls with melted butter and optionally sprinkle with cheese.`, section: SECTIONS.ASSEMBLE, img: rolls4 },
 
-        { step: 'Bake until golden brown (for 10 to 12 minutes).', section: SECTIONS.BAKE, img: rolls5 },
+        { step: `Bake until golden brown (for 10 to 12 minutes).`, section: SECTIONS.BAKE, img: rolls5 },
 
-        { step: 'Serve warm and enjoy this light appetizer.', section: SECTIONS.SERVE, img: rolls6 },
+        { step: `Serve warm and enjoy this light appetizer.`, section: SECTIONS.SERVE, img: rolls6 },
     ],
     notes: [
         { note: 'Be sure to cook the dough completely.' }

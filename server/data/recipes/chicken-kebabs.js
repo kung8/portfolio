@@ -1,5 +1,5 @@
 const kebabs1 = '../assets/Products/chicken-kebabs-1.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALUMINUM_FOIL,
     BAKING_SHEET,
@@ -71,14 +71,14 @@ module.exports = {
     ],
     directions: [
         { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingrdients.`, section: SECTIONS.MARINATE_CHICKEN },
-        { step: 'Add cut chicken. Marinate for 1 to 3 hours.', section: SECTIONS.MARINATE_CHICKEN },
+        { step: `Add cut chicken. Marinate for 1 to 3 hours.`, section: SECTIONS.MARINATE_CHICKEN },
 
-        { step: 'Preheat oven to 450ºF.', section: SECTIONS.PREHEAT_OVEN },
-        { step: 'Place aluminum foil on the baking sheet.', section: SECTIONS.PREP_PAN },
-        { step: 'Thread the skewers with chicken and veggies leaving enough space between each piece.', section: PREP_SKEWERS },
-        { step: 'Place the prepared skewers on the baking sheet with space in between each other.', section: PREP_SKEWERS },
-        { step: 'Bake until cooked through (about 15 to 25 minutes).', section: SECTIONS.BAKE },
-        { step: 'Enjoy these simple appetizers.', section: SECTIONS.SERVE },
+        { step: `Preheat oven to 450ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Place aluminum foil on the baking sheet.`, section: SECTIONS.PREP_PAN },
+        { step: `Thread the skewers with chicken and veggies leaving enough space between each piece.`, section: PREP_SKEWERS },
+        { step: `Place the prepared skewers on the baking sheet with space in between each other.`, section: PREP_SKEWERS },
+        { step: `Bake until cooked through (about 15 to 25 minutes).`, section: SECTIONS.BAKE },
+        { step: `Enjoy these simple appetizers.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Leaving space between each piece allows it to get cook evenly.' }

@@ -1,7 +1,7 @@
 const pineapple1 = '../assets/Products/hawaiian-grilled-pineapple-1.jpeg';
 const pineapple2 = '../assets/Products/hawaiian-grilled-pineapple-2.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BROWN_SUGAR, HONEY, PINEAPPLE, SALT, VEGETABLE_OIL, WATER } = require('./ingredients');
 
 const PINEAPPLE_SECTION = 'Pineapple';
@@ -51,12 +51,12 @@ module.exports = {
     ],
     directions: [
         { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.PREP_MARINADE },
-        { step: 'Add pineapple slices. Seal and shake until pineapple is completely coated.', section: SECTIONS.PREP_MARINADE },
-        { step: 'Let it marinate for 15 minutes at room temperature.', section: SECTIONS.PREP_MARINADE, img: pineapple1 },
-        { step: 'Add a little oil.', section: GRILL_PINEAPPLE },
-        { step: 'Grill slices until heated through (about 2 to 3 minutes).', section: GRILL_PINEAPPLE },
-        { step: 'Flip and grill for 2 to 3 minutes.', section: GRILL_PINEAPPLE },
-        { step: 'Enjoy these warm.', section: SECTIONS.SERVE },
+        { step: `Add pineapple slices. Seal and shake until pineapple is completely coated.`, section: SECTIONS.PREP_MARINADE },
+        { step: `Let it marinate for 15 minutes at room temperature.`, section: SECTIONS.PREP_MARINADE, img: pineapple1 },
+        { step: `Add a little oil.`, section: GRILL_PINEAPPLE },
+        { step: `Grill slices until heated through (about 2 to 3 minutes).`, section: GRILL_PINEAPPLE },
+        { step: `Flip and grill for 2 to 3 minutes.`, section: GRILL_PINEAPPLE },
+        { step: `Enjoy these warm.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

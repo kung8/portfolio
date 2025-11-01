@@ -89,14 +89,14 @@ module.exports = {
         MEASURING_CUPS,
     ],
     directions: [
-        { step: 'In a mixing bowl, mix together the flour, eggs, milk, salt, vanilla, and water, and butter.', section: SECTIONS.MAIN, img: crepe1 },
-        { step: 'Over medium-high heat, add a little butter to a curvy pan.', section: SECTIONS.MAIN },
-        { step: 'Use a 1/4-cup measuring cup and ladle some of the crepe batter into the pan. Be sure to tilt and angle the pan so that it spreads evenly and very thin in the pan.', section: SECTIONS.MAIN, img: [crepe2, crepe3] },
-        { step: 'Cook for about 2 minutes on each side. Carefully flip by loosening the edges then flip.', section: SECTIONS.MAIN },
-        { step: 'Continue this for each of the crepes. As the crepes begin to stick, add some more of the butter.', section: SECTIONS.MAIN },
-        { step: 'Add your favorite toppings, fold them however you like, and enjoy this ingenious, light French dish: sweet, savory or a combination of both! Best eaten fresh!', section: SECTIONS.SERVE },
-        { step: 'Mix together some semisweet chocolate chips, milk, and sugar in a microwavable bowl. Heat in the microwave for 30 second intervals and mix.', section: MELTED_CHOCOLATE, img: crepe5 },
-        { step: 'Heat this closer to when you are about to use it.', section: MELTED_CHOCOLATE },
+        { step: `In a mixing bowl, mix together the flour, eggs, milk, salt, vanilla, and water, and butter.`, section: SECTIONS.MAIN, img: crepe1 },
+        { step: `Over medium-high heat, add a little butter to a curvy pan.`, section: SECTIONS.MAIN },
+        { step: `Use a 1/4-cup measuring cup and ladle some of the crepe batter into the pan. Be sure to tilt and angle the pan so that it spreads evenly and very thin in the pan.`, section: SECTIONS.MAIN, img: [crepe2, crepe3] },
+        { step: `Cook for about 2 minutes on each side. Carefully flip by loosening the edges then flip.`, section: SECTIONS.MAIN },
+        { step: `Continue this for each of the crepes. As the crepes begin to stick, add some more of the butter.`, section: SECTIONS.MAIN },
+        { step: `Add your favorite toppings, fold them however you like, and enjoy this ingenious, light French dish: sweet, savory or a combination of both! Best eaten fresh!`, section: SECTIONS.SERVE },
+        { step: `Mix together some semisweet chocolate chips, milk, and sugar in a microwavable bowl. Heat in the microwave for 30 second intervals and mix.`, section: MELTED_CHOCOLATE, img: crepe5 },
+        { step: `Heat this closer to when you are about to use it.`, section: MELTED_CHOCOLATE },
     ],
     store: [
         // {

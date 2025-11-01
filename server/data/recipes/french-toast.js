@@ -70,10 +70,10 @@ module.exports = {
     ],
     directions: [
         { step: `In a medium bowl, combine the "${EGG_BATTER}" section ingredients.`, section: PREP_FRENCH_TOAST, img: [frenchToast1, frenchToast2] },
-        { step: 'Dredge bread on both sides one at a time right before pan frying.', section: PREP_FRENCH_TOAST, img: [frenchToast3, frenchToast4] },
-        { step: 'Over medium heat, heat butter in a pan.', section: COOK_FRENCH_TOAST },
-        { step: 'Brown each side of bread (about 30 seconds on each side).', section: COOK_FRENCH_TOAST, img: [frenchToast5, frenchToast6] },
-        { step: 'Serve and add fruits, syrup, and all your favorite toppings.', section: SECTIONS.SERVE, img: frenchToast7 },
+        { step: `Dredge bread on both sides one at a time right before pan frying.`, section: PREP_FRENCH_TOAST, img: [frenchToast3, frenchToast4] },
+        { step: `Over medium heat, heat butter in a pan.`, section: COOK_FRENCH_TOAST },
+        { step: `Brown each side of bread (about 30 seconds on each side).`, section: COOK_FRENCH_TOAST, img: [frenchToast5, frenchToast6] },
+        { step: `Serve and add fruits, syrup, and all your favorite toppings.`, section: SECTIONS.SERVE, img: frenchToast7 },
     ],
     store: [
         // {

@@ -7,7 +7,7 @@ const mango6 = '../assets/Products/mango-sticky-rice-6.jpeg';
 const mango7 = '../assets/Products/mango-sticky-rice-7.jpeg';
 const mango8 = '../assets/Products/mango-sticky-rice-8.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BROWN_SUGAR, CHEESECLOTH, COCONUT_MILK, LARGE_POT, MANGO, MEDIUM_BOWL, MIXING_BOWL, SALT, SAUCEPAN, STEAMER, STOVE, SWEET_RICE } = require('./ingredients');
 
 const MAKE_STICKY_RICE = 'Make Sticky Rice';
@@ -54,31 +54,31 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'In a medium bowl, add rice.', section: SECTIONS.PREP_RICE },
-        { step: 'Rinse rice in cold water until the water is clear.', section: SECTIONS.PREP_RICE },
-        { step: 'Drain.', section: SECTIONS.PREP_RICE },
-        { step: 'Cover rice with cold water. Soak for at least 2 hours.', section: SECTIONS.PREP_RICE, img: mango1 },
+        { step: `In a medium bowl, add rice.`, section: SECTIONS.PREP_RICE },
+        { step: `Rinse rice in cold water until the water is clear.`, section: SECTIONS.PREP_RICE },
+        { step: `Drain.`, section: SECTIONS.PREP_RICE },
+        { step: `Cover rice with cold water. Soak for at least 2 hours.`, section: SECTIONS.PREP_RICE, img: mango1 },
 
-        { step: 'Drain rice.', section: SECTIONS.COOK_RICE, img: mango2 },
-        { step: 'Line a steamer basket that will fit on the pot with a cheesecloth.', section: SECTIONS.COOK_RICE },
-        { step: 'Place the drained rice in the steamer basket', section: SECTIONS.COOK_RICE, img: mango3 },
-        { step: 'Bring a pot of water to a boil.', section: SECTIONS.COOK_RICE },
-        { step: 'Place the basket on the pot and cover with a lid.', section: SECTIONS.COOK_RICE, img: mango4 },
-        { step: 'Steam for 15 minutes.', section: SECTIONS.COOK_RICE },
-        { step: 'Carefully flip the rice. Re-place the lid.', section: SECTIONS.COOK_RICE },
-        { step: 'Steam until the rice is cooked and translucent (about 10 - 20 minutes).', section: SECTIONS.COOK_RICE },
-        { step: 'Turn off heat.', section: SECTIONS.COOK_RICE },
-        { step: 'Fluff the rice with a fork.', section: SECTIONS.COOK_RICE },
-        { step: 'Let rest for 5 minutes.', section: SECTIONS.COOK_RICE, img: mango5 },
+        { step: `Drain rice.`, section: SECTIONS.COOK_RICE, img: mango2 },
+        { step: `Line a steamer basket that will fit on the pot with a cheesecloth.`, section: SECTIONS.COOK_RICE },
+        { step: `Place the drained rice in the steamer basket`, section: SECTIONS.COOK_RICE, img: mango3 },
+        { step: `Bring a pot of water to a boil.`, section: SECTIONS.COOK_RICE },
+        { step: `Place the basket on the pot and cover with a lid.`, section: SECTIONS.COOK_RICE, img: mango4 },
+        { step: `Steam for 15 minutes.`, section: SECTIONS.COOK_RICE },
+        { step: `Carefully flip the rice. Re-place the lid.`, section: SECTIONS.COOK_RICE },
+        { step: `Steam until the rice is cooked and translucent (about 10 - 20 minutes).`, section: SECTIONS.COOK_RICE },
+        { step: `Turn off heat.`, section: SECTIONS.COOK_RICE },
+        { step: `Fluff the rice with a fork.`, section: SECTIONS.COOK_RICE },
+        { step: `Let rest for 5 minutes.`, section: SECTIONS.COOK_RICE, img: mango5 },
 
         { step: `In a saucepan, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
-        { step: 'Over low heat, heat until the sugar dissolves.', section: SECTIONS.COOK_SAUCE, img: mango6 },
-        { step: 'Set aside.', section: SECTIONS.COOK_SAUCE },
+        { step: `Over low heat, heat until the sugar dissolves.`, section: SECTIONS.COOK_SAUCE, img: mango6 },
+        { step: `Set aside.`, section: SECTIONS.COOK_SAUCE },
 
-        { step: 'In a mixing bowl, add cooked rice and the warm coconut sauce. Mix.', section: MAKE_STICKY_RICE, img: mango7 },
-        { step: 'Let sit for 10 minutes. This gives it enough time for it to absorb the milk mixture.', section: MAKE_STICKY_RICE },
+        { step: `In a mixing bowl, add cooked rice and the warm coconut sauce. Mix.`, section: MAKE_STICKY_RICE, img: mango7 },
+        { step: `Let sit for 10 minutes. This gives it enough time for it to absorb the milk mixture.`, section: MAKE_STICKY_RICE },
 
-        { step: 'Serve this topped with the mango slices. You are going to be in heaven!', section: SECTIONS.SERVE },
+        { step: `Serve this topped with the mango slices. You are going to be in heaven!`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'A 13.5 oz can of coconut milk produces the exact amount of milk and cream for one batch.' },

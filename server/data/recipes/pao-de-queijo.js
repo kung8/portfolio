@@ -75,22 +75,22 @@ module.exports = {
         BAKING_SHEET,
     ],
     directions: [
-        { step: 'Preheat the oven to 400ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
         
-        { step: 'In a stand mixer bowl, combine tapioca flour.', section: SECTIONS.PREP_DOUGH, img: cheeseball1 },
-        { step: 'Over medium-high heat, combine milk, water, oil and salt in a saucepan.', section: SECTIONS.PREP_DOUGH, img: cheeseball2 },
-        { step: 'Bring to a boil.', section: SECTIONS.PREP_DOUGH, img: cheeseball3 },
-        { step: 'Pour the boiled milk into the stand mixer bowl.', section: SECTIONS.PREP_DOUGH, img: cheeseball4 },
-        { step: 'Turn on the mixer slowly and mix until the dough is white and sticky.', section: SECTIONS.PREP_DOUGH },
-        { step: 'Slowly add eggs, one at a time, until it is mixed.', section: SECTIONS.PREP_DOUGH },
-        { step: 'Slowly add the cheeses until it is well mixed.', section: SECTIONS.PREP_DOUGH, img: cheeseball5 },
-        { step: 'The dough will most likely be sticky, so I added about another cup of tapioca starch to thicken the batter. Slowly add the cornstarch.', section: SECTIONS.PREP_DOUGH, img: cheeseball6 },
-        { step: 'Shape the dough into 1.5 inch balls.', section: SECTIONS.PREP_DOUGH, img: cheeseball7 },
-        { step: 'Place on a baking sheet about 2 inches apart. They do not expand very much.', section: SECTIONS.PREP_DOUGH, img: cheeseball8 },
+        { step: `In a stand mixer bowl, combine tapioca flour.`, section: SECTIONS.PREP_DOUGH, img: cheeseball1 },
+        { step: `Over medium-high heat, combine milk, water, oil and salt in a saucepan.`, section: SECTIONS.PREP_DOUGH, img: cheeseball2 },
+        { step: `Bring to a boil.`, section: SECTIONS.PREP_DOUGH, img: cheeseball3 },
+        { step: `Pour the boiled milk into the stand mixer bowl.`, section: SECTIONS.PREP_DOUGH, img: cheeseball4 },
+        { step: `Turn on the mixer slowly and mix until the dough is white and sticky.`, section: SECTIONS.PREP_DOUGH },
+        { step: `Slowly add eggs, one at a time, until it is mixed.`, section: SECTIONS.PREP_DOUGH },
+        { step: `Slowly add the cheeses until it is well mixed.`, section: SECTIONS.PREP_DOUGH, img: cheeseball5 },
+        { step: `The dough will most likely be sticky, so I added about another cup of tapioca starch to thicken the batter. Slowly add the cornstarch.`, section: SECTIONS.PREP_DOUGH, img: cheeseball6 },
+        { step: `Shape the dough into 1.5 inch balls.`, section: SECTIONS.PREP_DOUGH, img: cheeseball7 },
+        { step: `Place on a baking sheet about 2 inches apart. They do not expand very much.`, section: SECTIONS.PREP_DOUGH, img: cheeseball8 },
 
-        { step: 'Bake until the cheeseballs are a golden brown (about 15 to 25 minutes).', section: SECTIONS.BAKE, img: [cheeseball9, cheeseball12] },
+        { step: `Bake until the cheeseballs are a golden brown (about 15 to 25 minutes).`, section: SECTIONS.BAKE, img: [cheeseball9, cheeseball12] },
 
-        { step: 'Serve these warm.', section: SECTIONS.SERVE, img: cheeseball11 },
+        { step: `Serve these warm.`, section: SECTIONS.SERVE, img: cheeseball11 },
     ],
     store: [
         {

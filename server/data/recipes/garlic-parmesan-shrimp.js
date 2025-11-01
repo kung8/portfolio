@@ -46,11 +46,11 @@ module.exports = {
     ],
     directions: [
         { step: `In a mixing bowl, combine all "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SHRIMP },
-        { step: 'Pat shrimp dry with a paper towel.', section: SECTIONS.PREP_SHRIMP },
-        { step: 'Add shrimp to the bowl. Coat the shrimp.', section: SECTIONS.PREP_SHRIMP },
-        { step: 'In an air fryer, place shrimp in a single layer.', section: SECTIONS.COOK_SHRIMP },
-        { step: 'Cook at 360ºF for 10 minutes (flipping about halfway).', section: SECTIONS.COOK_SHRIMP },
-        { step: 'Enjoy this with cocktail sauce or in a pasta or salad.', section: SECTIONS.SERVE },
+        { step: `Pat shrimp dry with a paper towel.`, section: SECTIONS.PREP_SHRIMP },
+        { step: `Add shrimp to the bowl. Coat the shrimp.`, section: SECTIONS.PREP_SHRIMP },
+        { step: `In an air fryer, place shrimp in a single layer.`, section: SECTIONS.COOK_SHRIMP },
+        { step: `Cook at 360ºF for 10 minutes (flipping about halfway).`, section: SECTIONS.COOK_SHRIMP },
+        { step: `Enjoy this with cocktail sauce or in a pasta or salad.`, section: SECTIONS.SERVE },
     ],
     store: [
         // {

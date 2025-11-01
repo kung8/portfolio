@@ -82,22 +82,22 @@ module.exports = {
         BAKING_SHEET,
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: PREP_CAKE_PAN },
-        { step: 'Spray cake pans with cooking spray, small amount of butter and lightly flour.', section: PREP_CAKE_PAN, img: cake1 },
+        { step: `Preheat the oven to 350ºF.`, section: PREP_CAKE_PAN },
+        { step: `Spray cake pans with cooking spray, small amount of butter and lightly flour.`, section: PREP_CAKE_PAN, img: cake1 },
 
         { step: `In a stand mixer combine the "${DRY_INGREDIENTS}" section ingredients.`, section: PREP_CAKE_BATTER, img: cake2 },
         { step: `Add the "${WET_INGREDIENTS}" section ingredients. Combine.`, section: PREP_CAKE_BATTER, img: [cake3, cake4] },
-        { step: 'Carefully add the boiling water. Combine.', section: PREP_CAKE_BATTER, img: cake5 },
+        { step: `Carefully add the boiling water. Combine.`, section: PREP_CAKE_BATTER, img: cake5 },
 
-        { step: 'Pour batter into prepared cake pans.', section: BAKE_CAKE, img: cake6 },
-        { step: 'Place a baking sheet underneath in case the cake overflows as it cooks.', section: BAKE_CAKE },
-        { step: 'Bake until an inserted toothpick comes out clean (about 30 to 35 minutes).', section: BAKE_CAKE },
+        { step: `Pour batter into prepared cake pans.`, section: BAKE_CAKE, img: cake6 },
+        { step: `Place a baking sheet underneath in case the cake overflows as it cooks.`, section: BAKE_CAKE },
+        { step: `Bake until an inserted toothpick comes out clean (about 30 to 35 minutes).`, section: BAKE_CAKE },
 
-        { step: 'Remove the cake from the oven. Let it cool in the pan for about 10 to 15 minutes.', section: COOL_CAKE, img: cake7 },
-        { step: 'Remove the cake from the pan. Allow it to completely cool before decorating.', section: COOL_CAKE },
+        { step: `Remove the cake from the oven. Let it cool in the pan for about 10 to 15 minutes.`, section: COOL_CAKE, img: cake7 },
+        { step: `Remove the cake from the pan. Allow it to completely cool before decorating.`, section: COOL_CAKE },
 
         {
-            step: 'Decorate with whatever frosting, icing and other toppings. Try out this ',
+            step: `Decorate with whatever frosting, icing and other toppings. Try out this `,
             section: DECORATE_CAKE,
             link: {
                 text: 'Chocolate Buttercream Frosting',
@@ -106,7 +106,7 @@ module.exports = {
             },
             img: cake8,
         },
-        { step: 'Enjoy this very moist cake.', section: SECTIONS.SERVE },
+        { step: `Enjoy this very moist cake.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'The boiling water is what makes this cake so moist as it helps activate the baking soda and baking powder.' },

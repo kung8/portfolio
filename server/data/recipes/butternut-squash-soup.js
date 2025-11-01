@@ -61,20 +61,20 @@ module.exports = {
         LARGE_POT,
     ],
     directions: [
-        { step: 'Preheat the oven to 400ºF.', section: ROAST_SQUASH },
+        { step: `Preheat the oven to 400ºF.`, section: ROAST_SQUASH },
         { step: `In a mixing bowl, combine the "${SQUASH_SECTION}" section ingredients.`, section: ROAST_SQUASH },
-        { step: 'On a baking pan, lay out the squash ingredients.', section: ROAST_SQUASH },
-        { step: 'Bake until tender (about 30 to 35 minutes).', section: ROAST_SQUASH },
+        { step: `On a baking pan, lay out the squash ingredients.`, section: ROAST_SQUASH },
+        { step: `Bake until tender (about 30 to 35 minutes).`, section: ROAST_SQUASH },
 
-        { step: 'Over medium heat, heat butter and olive oil in a large pot.', section: SAUTE_VEGGIES },
+        { step: `Over medium heat, heat butter and olive oil in a large pot.`, section: SAUTE_VEGGIES },
         { step: `Add the rest of the "${SECTIONS.VEGGIES}" section ingredients. Cook until softened (about 7 to 10 minutes).`, section: SAUTE_VEGGIES },
         { step: `Add the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SAUTE_VEGGIES },
 
-        { step: 'Add the roasted squash and potatoes and chicken broth.', section: SECTIONS.MAKE_SOUP },
-        { step: 'Simmer for 10 minutes.', section: SECTIONS.MAKE_SOUP },
-        { step: 'Carefully transfer to a blender in batches. Blend until creamy.', section: SECTIONS.MAKE_SOUP },
+        { step: `Add the roasted squash and potatoes and chicken broth.`, section: SECTIONS.MAKE_SOUP },
+        { step: `Simmer for 10 minutes.`, section: SECTIONS.MAKE_SOUP },
+        { step: `Carefully transfer to a blender in batches. Blend until creamy.`, section: SECTIONS.MAKE_SOUP },
 
-        { step: 'Serve warm and enjoy this Fall season favorite!', section: SECTIONS.SERVE },
+        { step: `Serve warm and enjoy this Fall season favorite!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

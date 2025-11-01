@@ -70,21 +70,21 @@ module.exports = {
     directions: [
         { step: `In a bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
 
-        { step: 'Over medium heat, heat a pan with olive oil.', section: SECTIONS.COOK_BEEF },
-        { step: 'Add ground beef. Saute and break up the beef chunks (about 5 minutes).', section: SECTIONS.COOK_BEEF, img: sloppy1 },
+        { step: `Over medium heat, heat a pan with olive oil.`, section: SECTIONS.COOK_BEEF },
+        { step: `Add ground beef. Saute and break up the beef chunks (about 5 minutes).`, section: SECTIONS.COOK_BEEF, img: sloppy1 },
 
         { step: `In the pan, add the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES, img: sloppy2 },
 
-        { step: 'Add garlic. Cook until fragrant (about 30 seconds).', section: SECTIONS.COOK_HERBS },
+        { step: `Add garlic. Cook until fragrant (about 30 seconds).`, section: SECTIONS.COOK_HERBS },
 
-        { step: 'Add sauce mixture. Bring to a boil.', section: SECTIONS.BOIL },
+        { step: `Add sauce mixture. Bring to a boil.`, section: SECTIONS.BOIL },
 
-        { step: 'Reduce to a low heat. Simmer for about 10 to 15 minutes.', section: SECTIONS.SIMMER },
-        { step: 'Add water to thin if desired.', section: SECTIONS.THIN },
+        { step: `Reduce to a low heat. Simmer for about 10 to 15 minutes.`, section: SECTIONS.SIMMER },
+        { step: `Add water to thin if desired.`, section: SECTIONS.THIN },
 
-        { step: 'Toast hamburger buns in another pan with some butter.', section: SECTIONS.PREP_BUNS },
+        { step: `Toast hamburger buns in another pan with some butter.`, section: SECTIONS.PREP_BUNS },
 
-        { step: 'Enjoy these sweet sloppy joes. Feel free to add some heat with chili powder.', section: SECTIONS.SERVE },
+        { step: `Enjoy these sweet sloppy joes. Feel free to add some heat with chili powder.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

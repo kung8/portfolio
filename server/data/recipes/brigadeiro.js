@@ -54,17 +54,17 @@ module.exports = {
     ],
     directions: [
         { step: `In a saucepan, combine "${BRIGADEIRO_SECTION}" section ingredients.`, section: SECTIONS.PREP_DOUGH, img: brigadeiro1 },
-        { step: 'Over medium heat, bring to a boil and stir non-stop.', section: SECTIONS.PREP_DOUGH, img: brigadeiro2 },
-        { step: 'Cook until thick and the bottom is visible (about 10 minutes). Dough is ready when a spatula full falls in clumps instead of a steady stream.', section: SECTIONS.PREP_DOUGH, video: brigadeiro3 },
-        { step: 'Transfer to a bowl. Place in the fridge. Chill for 2 hours.', section: SECTIONS.PREP_DOUGH, img: brigadeiro4 },
+        { step: `Over medium heat, bring to a boil and stir non-stop.`, section: SECTIONS.PREP_DOUGH, img: brigadeiro2 },
+        { step: `Cook until thick and the bottom is visible (about 10 minutes). Dough is ready when a spatula full falls in clumps instead of a steady stream.`, section: SECTIONS.PREP_DOUGH, video: brigadeiro3 },
+        { step: `Transfer to a bowl. Place in the fridge. Chill for 2 hours.`, section: SECTIONS.PREP_DOUGH, img: brigadeiro4 },
 
-        { step: 'In various bowls, prepare sprinkles and other toppings.', section: SECTIONS.ASSEMBLE },
-        { step: 'Set out paper cups on a plate.', section: SECTIONS.ASSEMBLE, img: brigadeiro5 },
-        { step: 'Run a little butter between your hands.', section: SECTIONS.ASSEMBLE },
-        { step: 'Scoop a spoonful of the dough and roll into a ball.', section: SECTIONS.ASSEMBLE, img: brigadeiro6 },
-        { step: 'Roll balls in sprinkles and/or toppings. Shake in cupped hand to help round the ball (like when rolling a dice).', section: SECTIONS.ASSEMBLE, img: brigadeiro7 },
+        { step: `In various bowls, prepare sprinkles and other toppings.`, section: SECTIONS.ASSEMBLE },
+        { step: `Set out paper cups on a plate.`, section: SECTIONS.ASSEMBLE, img: brigadeiro5 },
+        { step: `Run a little butter between your hands.`, section: SECTIONS.ASSEMBLE },
+        { step: `Scoop a spoonful of the dough and roll into a ball.`, section: SECTIONS.ASSEMBLE, img: brigadeiro6 },
+        { step: `Roll balls in sprinkles and/or toppings. Shake in cupped hand to help round the ball (like when rolling a dice).`, section: SECTIONS.ASSEMBLE, img: brigadeiro7 },
 
-        { step: 'Enjoy these Brazilian desserts.', section: SECTIONS.SERVE },
+        { step: `Enjoy these Brazilian desserts.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'I found it easier to roll all the dough into balls then roll them in the sprinkles so the sprinkles do not stick to your hands.' }

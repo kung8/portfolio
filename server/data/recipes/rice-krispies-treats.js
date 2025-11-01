@@ -51,11 +51,11 @@ module.exports = {
     directions: [
         { step: `Over low heat, melt and stir the "${MARSHMALLOW_BUTTER}" section ingredients until mixed.`, section: MELT_MARSHMALLOW_AND_BUTTER, img: [treats1, treats2] },
 
-        { step: 'Remove from heat. Mix in vanilla.', section: SECTIONS.ASSEMBLE, img: treats3 },
-        { step: 'Stir while adding in the Rice Krispies cereal. Mix until the cereal is evenly coated.', section: SECTIONS.ASSEMBLE, img: treats4 },
-        { step: 'Lightly press into a greased baking pan.', section: SECTIONS.ASSEMBLE, img: treats5 },
+        { step: `Remove from heat. Mix in vanilla.`, section: SECTIONS.ASSEMBLE, img: treats3 },
+        { step: `Stir while adding in the Rice Krispies cereal. Mix until the cereal is evenly coated.`, section: SECTIONS.ASSEMBLE, img: treats4 },
+        { step: `Lightly press into a greased baking pan.`, section: SECTIONS.ASSEMBLE, img: treats5 },
 
-        { step: 'Let cool and enjoy.', section: SECTIONS.SERVE },
+        { step: `Let cool and enjoy.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: "Be generous on marshmallows. The more marshmallows, the chewier the treats will be. Make sure it is completely melted to adhere well and are soft." },

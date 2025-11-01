@@ -83,23 +83,23 @@ module.exports = {
         TOOTHPICK,
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
         { step: `In large bowl, cream together the "${CREAMED_BUTTER_SECTION}" section ingredients.`, section: SECTIONS.CREAM_BUTTER, img: bread1 },
 
-        { step: 'In mixing bowl, mash bananas until its consistency is smooth.', section: MASH_BANANA, img: bread2 },
+        { step: `In mixing bowl, mash bananas until its consistency is smooth.`, section: MASH_BANANA, img: bread2 },
 
-        { step: 'In the mixing bowl with the mashed bananas, add the creamed butter and eggs.', section: SECTIONS.PREP_BATTER },
+        { step: `In the mixing bowl with the mashed bananas, add the creamed butter and eggs.`, section: SECTIONS.PREP_BATTER },
 
         { step: `In the large bowl, combine the "${SECTIONS.DRY_INGREDIENTS}" section ingredients. Transfer to the wet ingredients.`, section: SECTIONS.PREP_BATTER, img: bread3 },
-        { step: 'Add vanilla.', section: SECTIONS.PREP_BATTER },
-        { step: 'Optionally add chocolate chips, walnuts or your favorite ingredients.', section: SECTIONS.PREP_BATTER, img: bread4 },
+        { step: `Add vanilla.`, section: SECTIONS.PREP_BATTER },
+        { step: `Optionally add chocolate chips, walnuts or your favorite ingredients.`, section: SECTIONS.PREP_BATTER, img: bread4 },
 
-        { step: 'Pour the batter into the bread pan.', section: SECTIONS.PREP_PAN, img: bread5 },
+        { step: `Pour the batter into the bread pan.`, section: SECTIONS.PREP_PAN, img: bread5 },
 
-        { step: 'Bake until an inserted toothpick comes out clean (about 55 to 60 minutes).', section: SECTIONS.BAKE },
+        { step: `Bake until an inserted toothpick comes out clean (about 55 to 60 minutes).`, section: SECTIONS.BAKE },
 
-        { step: 'Let bread rest for 10 minutes before serving.', section: SECTIONS.SERVE, img: bread6 },
+        { step: `Let bread rest for 10 minutes before serving.`, section: SECTIONS.SERVE, img: bread6 },
     ],
     notes: [
         { note: 'Feel free to experiment with your favorite ingredients.' },

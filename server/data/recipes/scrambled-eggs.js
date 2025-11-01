@@ -68,16 +68,16 @@ module.exports = {
     directions: [
         { step: `Mix together the "${SECTIONS.EGGS}". Let it rest for a few minutes.`, section: SECTIONS.PREP_EGGS },
 
-        { step: 'Over medium-high heat, melt a little butter in a hot pan.', section: SECTIONS.COOK_VEGGIES },
+        { step: `Over medium-high heat, melt a little butter in a hot pan.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients and ham.`, section: SECTIONS.COOK_VEGGIES },
-        { step: 'Cook and stir (about 3 to 4 minutes).', section: SECTIONS.COOK_VEGGIES },
+        { step: `Cook and stir (about 3 to 4 minutes).`, section: SECTIONS.COOK_VEGGIES },
 
-        { step: 'Pour in the egg batter over the pan fried ingredients.', section: SECTIONS.COOK_EGGS },
-        { step: 'Within 30 seconds, lift the edges and tilt the pan so the runny eggs on top will go underneath. Cook for a few minutes.', section: SECTIONS.COOK_EGGS },
+        { step: `Pour in the egg batter over the pan fried ingredients.`, section: SECTIONS.COOK_EGGS },
+        { step: `Within 30 seconds, lift the edges and tilt the pan so the runny eggs on top will go underneath. Cook for a few minutes.`, section: SECTIONS.COOK_EGGS },
 
-        { step: 'Scramble the eggs. Cook until the egg pieces are brownish-yellow.', section: SCRAMBLE_EGGS },
+        { step: `Scramble the eggs. Cook until the egg pieces are brownish-yellow.`, section: SCRAMBLE_EGGS },
 
-        { step: 'Serve and enjoy this nice warm start to a beautiful day!', section: SECTIONS.SERVE },
+        { step: `Serve and enjoy this nice warm start to a beautiful day!`, section: SECTIONS.SERVE },
     ],
     store: [
         {

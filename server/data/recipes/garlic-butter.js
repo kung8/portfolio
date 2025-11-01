@@ -40,7 +40,7 @@ module.exports = {
     ],
     directions: [
         { step: `In a medium bowl, combine the "${GARLIC_BUTTER}" section ingredients.`, section: SECTIONS.MIX },
-        { step: 'Enjoy this with your favorite bread, pasta or vegetables.', section: SECTIONS.SERVE },
+        { step: `Enjoy this with your favorite bread, pasta or vegetables.`, section: SECTIONS.SERVE },
     ],
     store: [
         {

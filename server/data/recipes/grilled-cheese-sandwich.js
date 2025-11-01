@@ -45,12 +45,12 @@ module.exports = {
         FRYING_PAN,
     ],
     directions: [
-        { step: 'Over medium heat, preheat a frying pan.', section: GRILL_CHEESE },
-        { step: 'Spread half of the butter on a slice of bread. Place on the frying pan with the butter-side down.', section: GRILL_CHEESE, img: [grilled1, grilled2] },
-        { step: 'Add slice of cheese.', section: GRILL_CHEESE, img: grilled3 },
-        { step: 'Spread the rest of the butter on another slice of bread. Place the butter-side on top.', section: GRILL_CHEESE, img: grilled4 },
-        { step: 'Cook until each side has lightly browned and the cheese has melted.', section: GRILL_CHEESE, img: grilled5 },
-        { step: 'Enjoy this simple sandwich by itself or with a bowl of tomato soup.', section: SECTIONS.SERVE, img: grilled7 },
+        { step: `Over medium heat, preheat a frying pan.`, section: GRILL_CHEESE },
+        { step: `Spread half of the butter on a slice of bread. Place on the frying pan with the butter-side down.`, section: GRILL_CHEESE, img: [grilled1, grilled2] },
+        { step: `Add slice of cheese.`, section: GRILL_CHEESE, img: grilled3 },
+        { step: `Spread the rest of the butter on another slice of bread. Place the butter-side on top.`, section: GRILL_CHEESE, img: grilled4 },
+        { step: `Cook until each side has lightly browned and the cheese has melted.`, section: GRILL_CHEESE, img: grilled5 },
+        { step: `Enjoy this simple sandwich by itself or with a bowl of tomato soup.`, section: SECTIONS.SERVE, img: grilled7 },
     ],
     store: [
         {

@@ -100,15 +100,15 @@ module.exports = {
 
         { step: `In a large bowl, combine the "${SECTIONS.CHICKEN}" section ingredients. Mix well until chicken is well coated.`, section: SECTIONS.COOK_CHICKEN, img: chicken2 },
         { step: `Over medium-high heat, add the "${SECTIONS.OIL}" section ingredients in a wok.`, section: SECTIONS.COOK_CHICKEN, img: chicken3 },
-        { step: 'Add the chicken and cook until the chicken is about 80% cooked through (about 3 to 4 minutes on each side).', section: SECTIONS.COOK_CHICKEN, img: chicken4 },
-        { step: 'Transfer chicken to a large bowl.', section: SECTIONS.COOK_CHICKEN, img: chicken5 },
+        { step: `Add the chicken and cook until the chicken is about 80% cooked through (about 3 to 4 minutes on each side).`, section: SECTIONS.COOK_CHICKEN, img: chicken4 },
+        { step: `Transfer chicken to a large bowl.`, section: SECTIONS.COOK_CHICKEN, img: chicken5 },
 
         { step: `In the wok, add the "${SECTIONS.VEGGIES}" section ingredients. Cook until the vegetables are tender (about 3 to 4 minutes).`, section: SECTIONS.COOK_VEGGIES, img: chicken6 },
 
-        { step: 'Add the cashews. Stir until mixed.', section: SECTIONS.ASSEMBLE, img: chicken7 },
-        { step: 'Re-add the chicken. Stir until mixed and chicken is cooked through.', section: SECTIONS.ASSEMBLE, img: chicken8 },
-        { step: 'Add the sauce and mix until well coated. Cook for a minute or two.', section: SECTIONS.ASSEMBLE, img: chicken9 },
-        { step: 'Turn off the stove and remove from heat.', section: SECTIONS.ASSEMBLE, img: chicken10 },
+        { step: `Add the cashews. Stir until mixed.`, section: SECTIONS.ASSEMBLE, img: chicken7 },
+        { step: `Re-add the chicken. Stir until mixed and chicken is cooked through.`, section: SECTIONS.ASSEMBLE, img: chicken8 },
+        { step: `Add the sauce and mix until well coated. Cook for a minute or two.`, section: SECTIONS.ASSEMBLE, img: chicken9 },
+        { step: `Turn off the stove and remove from heat.`, section: SECTIONS.ASSEMBLE, img: chicken10 },
 
         { step: `Top this dish with "${SECTIONS.TOPPINGS}" section ingredients and serve wth steamed rice.`, section: SECTIONS.SERVE },
     ],
