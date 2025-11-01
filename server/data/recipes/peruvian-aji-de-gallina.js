@@ -64,22 +64,22 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'diced', optional: false, section: ONION_SECTION },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
-        { ...OREGANO, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', optional: false, section: ONION_SECTION },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'diced', section: ONION_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', section: ONION_SECTION },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', section: ONION_SECTION },
+        { ...OREGANO, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', section: ONION_SECTION },
         { ...NUTMEG, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', optional: true, section: ONION_SECTION },
 
-        { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: '', optional: false, section: SECTIONS.CHICKEN },
+        { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
 
-        { ...YELLOW_BELL_PEPPER, amount: 3 / 2, unit: '', additionalDetails: '', optional: false, section: SECTIONS.SAUCE_SECTION },
-        { ...BREAD, amount: 4, unit: '', additionalDetails: '', optional: false, section: SECTIONS.SAUCE_SECTION },
-        { ...MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.SAUCE_SECTION },
+        { ...YELLOW_BELL_PEPPER, amount: 3 / 2, unit: '', additionalDetails: '', section: SECTIONS.SAUCE_SECTION },
+        { ...BREAD, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.SAUCE_SECTION },
+        { ...MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE_SECTION },
 
-        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false, section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', optional: false, section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
 
-        { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', optional: false, section: SECTIONS.SERVE },
+        { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
         BLENDER,

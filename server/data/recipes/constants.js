@@ -328,6 +328,7 @@ const SECTIONS = {
     COOK_MILK: 'Cook Milk',
     COOK_POTATOES: 'Cook Potatoes',
     COOK_HERBS: 'Cook Herbs',
+    COOK_SOUP: 'Cook Soup',
 
     STIR_FRY: 'Stir Fry',
     DEEP_FRY: 'Deep Fry',
@@ -355,6 +356,7 @@ const SECTIONS = {
     TRANSFER: 'Transfer',
     CREAM_BUTTER: 'Cream Butter',
     FORM_BALLS: 'Form Balls',
+    FORM_DOUGH: 'Form Dough',
 };
 
 const STORAGE_CONTAINER = {

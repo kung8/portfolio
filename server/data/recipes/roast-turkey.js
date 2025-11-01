@@ -62,18 +62,18 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...TURKEY, amount: '', unit: '', additionalDetails: 'desired size', optional: false, section: TURKEY_SECTION },
+        { ...TURKEY, amount: '', unit: '', additionalDetails: 'desired size', section: TURKEY_SECTION },
 
-        { ...UNSALTED_BUTTER, amount: 16, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'softened', optional: false, section: HERB_BUTTER_RUB },
-        { ...THYME, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
-        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', optional: false, section: HERB_BUTTER_RUB },
-        { ...SALT, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
-        { ...BLACK_PEPPER, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', optional: false, section: HERB_BUTTER_RUB },
+        { ...UNSALTED_BUTTER, amount: 16, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'softened', section: HERB_BUTTER_RUB },
+        { ...THYME, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HERB_BUTTER_RUB },
+        { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: HERB_BUTTER_RUB },
+        { ...SALT, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: HERB_BUTTER_RUB },
+        { ...BLACK_PEPPER, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: HERB_BUTTER_RUB },
 
-        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.HEAD, additionalDetails: 'halved', optional: false, section: CAVITY_FILLING },
-        { ...LEMON, amount: 2, unit: '', additionalDetails: 'sliced', optional: false, section: CAVITY_FILLING },
-        { ...ROSEMARY, amount: 6, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: '', optional: false, section: CAVITY_FILLING },
-        { ...OLIVE_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: TURKEY_SECTION },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.HEAD, additionalDetails: 'halved', section: CAVITY_FILLING },
+        { ...LEMON, amount: 2, unit: '', additionalDetails: 'sliced', section: CAVITY_FILLING },
+        { ...ROSEMARY, amount: 6, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: '', section: CAVITY_FILLING },
+        { ...OLIVE_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TURKEY_SECTION },
     ],
     appliances: [
         { name: 'oven' },

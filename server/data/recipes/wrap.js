@@ -9,6 +9,8 @@ const {
     TORTILLA,
 } = require('./ingredients');
 
+const WRAP_SECTION = 'Wrap';
+
 module.exports = {
     cardName: 'Wraps',
     name: 'Wraps',
@@ -31,21 +33,27 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...TORTILLA, amount: 1, unit: '', additionalDetails: '', optional: false },
-        { ...COOKED_HAM, amount: 4, unit: '', additionalDetails: 'preferred', optional: false },
-        { ...SPINACH, amount: '', unit: '', additionalDetails: '', optional: false },
-        { ...CHEDDAR_CHEESE, amount: 3, unit: '', additionalDetails: '', optional: false },
-        { ...ROMA_TOMATO, amount: 1 / 2, unit: '', additionalDetails: 'sliced', optional: false },
-        { ...HONEY_MUSTARD, amount: '', unit: '', additionalDetails: '', optional: false },
+        { ...TORTILLA, amount: 1, unit: '', additionalDetails: '', section: WRAP_SECTION },
+        { ...COOKED_HAM, amount: 4, unit: '', additionalDetails: 'preferred', section: SECTIONS.FILLING },
+        { ...SPINACH, amount: '', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CHEDDAR_CHEESE, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.FILLING },
+        { ...ROMA_TOMATO, amount: 1 / 2, unit: '', additionalDetails: 'sliced', section: SECTIONS.FILLING },
+        { ...HONEY_MUSTARD, amount: '', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
     ],
     supplies: [
         { name: 'plate' },
     ],
     directions: [
-        { step: 'Place tortilla on a plate and lay on toppings in the center of tortilla as desired.', section: SECTIONS.MAIN },
-        { step: 'Roll the edge towards the center of the tortilla and continue to completely roll wrap.', section: SECTIONS.MAIN },
+        { step: 'On a plate, place tortilla.', section: SECTIONS.ASSEMBLE },
+        { step: 'Lay desired toppings in the center of tortilla.', section: SECTIONS.ASSEMBLE },
+
+        { step: 'Roll the side closest to you towards the center.', section: SECTIONS.WRAP },
+        { step: 'Fold over the left and right side.', section: SECTIONS.WRAP },
+        { step: 'Continue rolling the rest of the wrap.', section: SECTIONS.WRAP },
+        
+        { step: 'Enjoy!', section: SECTIONS.SERVE },
     ],
     store: [
         {

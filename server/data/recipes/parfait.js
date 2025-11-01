@@ -9,6 +9,9 @@ const {
     VANILLA_EXTRACT,
 } = require('./ingredients');
 
+const PARFAIT_SECTION = 'Parfait';
+const PREP_PARFAIT = 'Prep Parfait';
+
 module.exports = {
     cardName: 'Parfait',
     name: 'Parfait',
@@ -31,24 +34,25 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...PLAIN_YOGURT, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { ...GRANOLA, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { ...BERRY, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
-        { ...CASHEWS, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.MAIN },
+        { ...PLAIN_YOGURT, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PARFAIT_SECTION },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: PARFAIT_SECTION },
+        { ...HONEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'optional', section: PARFAIT_SECTION },
+        { ...GRANOLA, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
+        { ...BERRY, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
+        { ...CASHEWS, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
     ],
     supplies: [
         { name: 'bowl' },
         { name: 'spoon' },
     ],
     directions: [
-        { step: 'Fill a bowl with yogurt.', section: SECTIONS.MAIN },
-        { step: 'Mix in vanilla and honey.', section: SECTIONS.MAIN },
-        { step: 'Cover with preferred toppings such as granola, fruits, and nuts.', section: SECTIONS.MAIN },
-        { step: 'Enjoy a light breakfast / snack.', section: SECTIONS.MAIN },
+        { step: 'Fill a bowl with yogurt.', section: PREP_PARFAIT },
+        { step: 'Mix in vanilla and honey.', section: PREP_PARFAIT },
+        { step: 'Cover with preferred toppings such as granola, fruits, and nuts.', section: SECTIONS.TOP },
+
+        { step: 'Enjoy a light breakfast / snack.', section: SECTIONS.SERVE },
     ],
     store: [
         {

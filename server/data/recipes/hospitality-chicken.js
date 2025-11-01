@@ -1,6 +1,6 @@
 const hospitality1 = '../assets/Products/hospitality-chicken-1.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     AIR_FRYER,
     CARROT_CHIP,
@@ -39,13 +39,15 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...CHICKEN_THIGH, amount: 5, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
-        { ...MCCORMICK_SEASONING_PACKET, amount: 1, unit: '', additionalDetails: '', optional: false },
-        { ...SNOW_PEA, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
-        { ...CARROT_CHIP, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', optional: false },
-        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
+        { ...CHICKEN_THIGH, amount: 5, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...MCCORMICK_SEASONING_PACKET, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
+
+        { ...SNOW_PEA, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...CARROT_CHIP, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.VEGGIES },
+        
+        { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'if stir frying', section: SECTIONS.VEGGIES },
     ],
     appliances: [
         AIR_FRYER,
@@ -58,11 +60,18 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Pat dry the chicken, then marinade chicken with seasoning packet and let it sit for at least 30 minutes', section: SECTIONS.MAIN },
-        { step: 'Add chicken to air fryer and bake at 400ºF for 25 min (or until cooked).', section: SECTIONS.MAIN },
-        { step: 'While chicken is cooking, steam the peas and carrots over a medium-high heat for about 8 - 12 min (or until softened).', section: SECTIONS.MAIN },
-        { step: 'Optional: If you like it a little crispy you can slightly grill the peas and carrots for that stir-fry taste. Heat frying pan over medium-high heat and add just a little oil. Add snow peas and carrot to pan and cook for a few minutes or until desired level of char.', section: SECTIONS.MAIN },
-        { step: 'Serve with rice and enjoy this simple meal that can take you back to the South.', section: SECTIONS.MAIN },
+        { step: 'Pat the chicken dry.', section: SECTIONS.MARINATE_CHICKEN },
+        { step: 'Pour seasoning packet over the chicken.', section: SECTIONS.MARINATE_CHICKEN },
+        { step: 'Marinate for at least 30 minutes.', section: SECTIONS.MARINATE_CHICKEN },
+
+        { step: 'Add chicken to air fryer. Air fry at 400ºF until cooked (about 25 to 35 minutes).', section: SECTIONS.AIR_FRY },
+
+        { step: 'Over medium-high heat, steam the peas and carrots until softened (about 8 to 12 minutes).', section: SECTIONS.STEAM },
+
+        { step: 'Serve with rice and enjoy this simple meal that can take you back to the South.', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'If you like the veggies a little crispier, you can stir-fry. Stir fry over medium-high heat with a little oil for a few minutes.' }
     ],
     store: [
         {

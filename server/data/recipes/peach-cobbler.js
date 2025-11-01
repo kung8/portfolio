@@ -18,6 +18,11 @@ const {
     WHITE_SUGAR,
 } = require('./ingredients');
 
+const BUTTER_SECTION = 'Butter';
+const PEACHES_SECTION = 'Peaches';
+const PREP_COBBLER = 'Prep Cobbler';
+const CINNAMON_SECTION = 'Cinnamon';
+
 module.exports = {
     cardName: 'Peach Cobbler',
     name: 'Peach Cobbler',
@@ -41,16 +46,20 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MILK, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CANNED_PEACH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...CINNAMON, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BUTTER_SECTION },
+
+        { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...WHITE_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+
+        { ...MILK, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+
+        { ...CANNED_PEACH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'sliced', section: PEACHES_SECTION },
+        
+        { ...CINNAMON, amount: '', unit: '', additionalDetails: 'to taste', section: CINNAMON_SECTION },
     ],
     appliances: [
         OVEN,
@@ -61,15 +70,20 @@ module.exports = {
         RUBBER_SPATULA,
     ],
     directions: [
-        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.MAIN },
-        { step: 'Add butter into the baking pan and place pan in the oven while it preheats.', section: SECTIONS.MAIN },
-        { step: 'Remove the pan from the oven once the butter has melted.', section: SECTIONS.MAIN },
-        { step: 'In a mixing bowl, mix together flour, sugar, salt, and baking powder.', section: SECTIONS.MAIN },
-        { step: 'Combine milk to the mixing bowl.', section: SECTIONS.MAIN },
-        { step: 'Pour mixture into the baking pan and smooth to an even layer.', section: SECTIONS.MAIN },
-        { step: 'Add the canned peaches and its juices to the baking pan.', section: SECTIONS.MAIN },
-        { step: 'Generously drizzle cinnamon on top.', section: SECTIONS.MAIN, img: cobbler1 },
-        { step: 'Bake for 35 to 40 minutes.', section: SECTIONS.MAIN },
+        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+
+        { step: 'Add butter into the baking pan and place pan in the oven while it preheats.', section: SECTIONS.PREP_PAN },
+        { step: 'Remove the pan from the oven once the butter has melted.', section: SECTIONS.PREP_PAN },
+
+        { step: `In a mixing bowl, combine "${SECTIONS.DRY_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_BATTER },
+        { step: 'Add milk.', section: SECTIONS.PREP_BATTER },
+        { step: 'Pour batter into the baking pan. Smooth to an even layer.', section: SECTIONS.PREP_BATTER },
+
+        { step: 'Add canned peaches and its juices.', section: PREP_COBBLER },
+        { step: 'Generously drizzle cinnamon on top.', section: PREP_COBBLER, img: cobbler1 },
+
+        { step: 'Bake for 35 to 40 minutes.', section: SECTIONS.BAKE },
+        
         { step: 'Serve warm with ice cream.', section: SECTIONS.SERVE, img: cobbler2 },
     ],
     store: [

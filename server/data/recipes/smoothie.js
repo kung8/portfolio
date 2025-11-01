@@ -9,6 +9,9 @@ const {
     PLAIN_YOGURT,
 } = require('./ingredients');
 
+const SMOOTHIE_SECTION = 'Smoothie';
+const PREP_SMOOTHIE = 'Prep Smoothie';
+
 module.exports = {
     cardName: 'Smoothie',
     name: 'Smoothie',
@@ -32,29 +35,31 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...ALMOND_MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
-        { ...BANANA, amount: 2, unit: '', additionalDetails: '', optional: false },
-        { ...FROZEN_BERRIES, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
-        { ...KALE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
-        { ...PLAIN_YOGURT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...PEANUT_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
+        { ...BANANA, amount: 2, unit: '', additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...PEANUT_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...PLAIN_YOGURT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...FROZEN_BERRIES, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...KALE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...ALMOND_MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SMOOTHIE_SECTION },
     ],
     appliances: [
         { name: 'blender' },
     ],
     directions: [
-        { step: 'Place bananas at the bottom on the blender.', section: SECTIONS.MAIN },
-        { step: 'Add peanut butter and yogurt.', section: SECTIONS.MAIN },
-        { step: 'Add mixed frozen fruits.', section: SECTIONS.MAIN },
-        { step: 'Add almond milk.', section: SECTIONS.MAIN },
-        { step: 'Blend until everything is well mixed.', section: SECTIONS.MAIN },
-        { step: 'Slowly add each of the preferred ingredients and feel free to swap out fruits and vegetables.', section: SECTIONS.MAIN },
-        { step: 'The thing to keep in mind is the liquid to solid food ratio. Too much liquid will leave a very liquidy smoothie while not enough liquid will make a terrible noise and can damage your blender blades.', section: SECTIONS.MAIN },
-        { step: 'When you are satisfied with what you want inside the smoothie, begin to blend. I like to start on a blend setting with a low speed. Then as it begins to blend then I increase the speed.', section: SECTIONS.MAIN },
-        { step: 'From my Jamba Juice years, if you can see a tornado inside the smoothie - it\'s perfect. I continue to follow that as I blend my smoothies.', section: SECTIONS.MAIN },
-        { step: 'Enjoy the fresh, fruity sweetness and goodness!', section: SECTIONS.MAIN },
+        { step: 'Place bananas at the bottom on the blender.', section: PREP_SMOOTHIE },
+        { step: 'Add peanut butter and yogurt.', section: PREP_SMOOTHIE },
+        { step: 'Add mixed frozen fruits.', section: PREP_SMOOTHIE },
+        { step: 'Add almond milk.', section: PREP_SMOOTHIE },
+        { step: 'Blend until everything is well mixed.', section: SECTIONS.BLEND },
+        { step: 'Pour into glasses and serve.', section: SECTIONS.SERVE },
+        { step: 'Enjoy the fresh, fruity sweetness and goodness!', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'The thing to keep in mind is the liquid to solid food ratio. Too much liquid will leave a very liquidy smoothie while not enough liquid will make a terrible noise and can damage your blender blades.' },
+        { note: 'I like to start on a blend setting with a low speed. Then as it begins to blend then I increase the speed.' },
+        { note: 'From my Jamba Juice years, if you can see a tornado inside the smoothie - it\'s perfect. I continue to follow that as I blend my smoothies.' },
     ],
     store: [
         {

@@ -10,6 +10,8 @@ const {
     STOVE,
 } = require('./ingredients');
 
+const CABBAGE_SECTION = 'Cabbage';
+
 module.exports = {
     cardName: 'Cabbage Stir Fry',
     name: 'Cabbage Stir Fry',
@@ -33,11 +35,11 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...CABBAGE, amount: 1 / 2, unit: INGREDIENT_UNITS.HEAD, additionalDetails: 'chopped', section: SECTIONS.MAIN },
-        { ...RED_PEPPER_FLAKES, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...SESAME_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CABBAGE, amount: 1 / 2, unit: INGREDIENT_UNITS.HEAD, additionalDetails: 'chopped', section: CABBAGE_SECTION },
+        { ...SESAME_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CABBAGE_SECTION },
+        { ...RED_PEPPER_FLAKES, amount: '', unit: '', additionalDetails: 'to taste', section: CABBAGE_SECTION },
     ],
     appliances: [
         STOVE,
@@ -46,9 +48,10 @@ module.exports = {
         FRYING_PAN
     ],
     directions: [
-        { step: 'Over medium-high heat, in a frying pan add cabbage.', section: SECTIONS.MAIN },
-        { step: 'Top with oil and toss or mix until oil has coated cabbage.', section: SECTIONS.MAIN },
-        { step: 'Add red pepper flakes as desired. Stir.', section: SECTIONS.MAIN, img: cabbage1 },
+        { step: 'Over medium-high heat, in a frying pan add cabbage.', section: SECTIONS.STIR_FRY },
+        { step: 'Top with oil. Toss until oil has coated cabbage.', section: SECTIONS.STIR_FRY },
+        { step: 'Add red pepper flakes as desired. Stir.', section: SECTIONS.STIR_FRY, img: cabbage1 },
+        { step: 'Enjoy this as a side dish and serve with rice or noodles!', section: SECTIONS.SERVE },
     ],
     store: [
         {

@@ -45,17 +45,19 @@ module.exports = {
             finder: 'Lily Lim'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: SECTIONS.MAIN },
-        { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...LETTUCE, amount: 7, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', section: SECTIONS.CHICKEN },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
+
+        { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: SECTIONS.SAUCE },
+        { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+
+        { ...LETTUCE, amount: 7, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
         STOVE,
@@ -64,14 +66,18 @@ module.exports = {
         WOK,
     ],
     directions: [
-        { step: 'Heat a wok over medium-high heat.', section: SECTIONS.MAIN },
-        { step: 'Add vegetable oil and wait until it is hot.', section: SECTIONS.MAIN },
-        { step: 'Add chicken to the wok and let it cook without flipping (about 1 to 2 minutes).', section: SECTIONS.MAIN, img: [lettuce1, lettuce2] },
-        { step: 'Then flip and cook again for a few minutes.', section: SECTIONS.MAIN, img: lettuce3 },
-        { step: 'Season the chicken with salt and pepper.', section: SECTIONS.MAIN },
-        { step: 'Add soy sauce, water, lemon juice and cornstarch to the chicken.', section: SECTIONS.MAIN, img: lettuce4 },
-        { step: 'The cornstarch should thicken the sauce slightly. Add more cornstarch to continuing thickening as preferred.', section: SECTIONS.MAIN },
-        { step: 'Serve the lemon chicken over leaves of lettuce with a side of rice.', section: SECTIONS.MAIN, img: [lettuce5, lettuce6] },
+        { step: 'Over medium-high heat, heat a wok.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Add oil. Wait until it is hot.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Add chicken. Cook without mixing (about 1 to 2 minutes).', section: SECTIONS.COOK_CHICKEN, img: [lettuce1, lettuce2] },
+        { step: 'Flip. Cook without mixing for a few minutes.', section: SECTIONS.COOK_CHICKEN, img: lettuce3 },
+        { step: 'Season the chicken with salt and pepper.', section: SECTIONS.COOK_CHICKEN },
+
+        { step: `Add the "${SECTIONS.SAUCE}" section ingredients. Stir until coated.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Cook for a few minutes. Add more cornstarch if needed.`, section: SECTIONS.COOK_SAUCE, img: lettuce4 },
+        { step: 'Serve over leaves of lettuce with a side of rice.', section: SECTIONS.SERVE, img: [lettuce5, lettuce6] },
+    ],
+    notes: [
+        { note: 'The cornstarch should thicken the sauce slightly. Add more cornstarch to continuing thickening as preferred.' },
     ],
     store: [
         // {

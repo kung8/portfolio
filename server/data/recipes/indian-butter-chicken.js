@@ -30,6 +30,13 @@ const {
     YELLOW_ONION,
 } = require('./ingredients');
 
+const ONION_SECTION = 'Onion';
+const CHICKEN_AND_SPICES = 'Chicken and Spices';
+const CREAM_SECTION = 'Cream Section';
+
+const COOK_ONION = 'Cook Onion';
+const COOK_AROMATICS = 'Cook Aromatics';
+
 module.exports = {
     cardName: 'Indian Butter Chicken',
     name: 'Indian Butter Chicken',
@@ -44,33 +51,37 @@ module.exports = {
     allergies: [ALLERGIES.DAIRY],
     diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     websites: [
-        { 
-            label: 'Butter Chicken', 
+        {
+            label: 'Butter Chicken',
             link: "https://gimmedelicious.com/easy-20-minute-butter-chicken/",
             authors: ['Layla Atik'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', optional: false },
-        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', optional: false },
-        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', optional: false },
-        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '1/2" pieces', optional: false },
-        { ...TOMATO_PASTE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...GARAM_MASALA, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', optional: false },
-        { ...CHILI_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...MUSTARD_SEED, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...CUMIN, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', optional: false },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', optional: false },
-        { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false },
-        { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: 'cooked', optional: false },
+        { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: ONION_SECTION },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: ONION_SECTION },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: ONION_SECTION },
+
+        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', section: SECTIONS.AROMATICS },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.AROMATICS },
+
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '1/2" pieces', section: CHICKEN_AND_SPICES },
+        { ...TOMATO_PASTE, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_AND_SPICES },
+        { ...GARAM_MASALA, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_AND_SPICES },
+        { ...CHILI_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_AND_SPICES },
+        { ...MUSTARD_SEED, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_AND_SPICES },
+        { ...CUMIN, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CHICKEN_AND_SPICES },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', section: CHICKEN_AND_SPICES },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', section: CHICKEN_AND_SPICES },
+
+        { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CREAM_SECTION },
+
+        { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: 'cooked', section: SECTIONS.SERVE },
     ],
     appliances: [
         STOVE,
@@ -83,12 +94,16 @@ module.exports = {
         MEASURING_SPOONS,
     ],
     directions: [
-        { step: 'Add oil and butter to a large cooking pan on medium-high heat.', section: SECTIONS.MAIN },
-        { step: 'Add the diced onion and cook until light brown.', section: SECTIONS.MAIN },
-        { step: 'Add the ginger and garlic to the pan and cook until aromatic (about 30 seconds).' },
-        { step: 'Add the chicken, spices, and tomato paste to the pan. Cook until the chicken is browned (about 5 to 6 minutes).', img: [curry1, curry2] },
-        { step: 'Add the heavy cream and let simmer for 8 to 10 minutes.', section: SECTIONS.MAIN, img: [curry3, curry4] },
-        { step: 'Serve with rice (and naan or roti is optional and delicious).', section: SECTIONS.MAIN, img: curry6 },
+        { step: 'Over medium-high heat, add oil and butter to a large pan.', section: COOK_ONION },
+        { step: 'Add onion. Cook until light brown.', section: COOK_ONION },
+
+        { step: `Add the "${SECTIONS.AROMATICS}" section ingredients. Cook until fragrant (about 30 seconds).`, section: COOK_AROMATICS },
+
+        { step: `Add the "${CHICKEN_AND_SPICES}" section ingredients. Brown chicken (about 5 to 6 minutes).`, section: SECTIONS.COOK_CHICKEN, img: [curry1, curry2] },
+
+        { step: 'Add heavy cream. Simmer for 8 to 10 minutes.', section: SECTIONS.SIMMER, img: [curry3, curry4] },
+
+        { step: 'Serve with rice (and naan or roti is optional and delicious).', section: SECTIONS.SERVE, img: curry6 },
     ],
     store: [
         {

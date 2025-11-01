@@ -26,9 +26,9 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...CROISSANT_DOUGH, amount: 2, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', optional: false },
-        { ...EGG, amount: 2, unit: '', additionalDetails: '', optional: false },
-        { ...MINI_HOT_DOG, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false },
+        { ...CROISSANT_DOUGH, amount: 2, unit: INGREDIENT_UNITS.CAN, additionalDetails: '' },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '' },
+        { ...MINI_HOT_DOG, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '' },
     ],
     appliances: [
         OVEN,

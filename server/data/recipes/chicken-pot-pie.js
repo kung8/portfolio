@@ -53,21 +53,21 @@ module.exports = {
     ],
     separated: true,
     ingredients: [
-        { ...CHICKEN_BREAST, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiled and cut into 1/2 inch pieces', optional: false, section: SECTIONS.CHICKEN },
+        { ...CHICKEN_BREAST, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiled and cut into 1/2 inch pieces', section: SECTIONS.CHICKEN },
 
-        { ...UNSALTED_BUTTER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.FILLING },
-        { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.FILLING },
-        { ...YELLOW_ONION, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.FILLING },
-        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false, section: SECTIONS.FILLING },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', optional: false, section: SECTIONS.FILLING },
+        { ...UNSALTED_BUTTER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...ALL_PURPOSE_FLOUR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...YELLOW_ONION, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
 
-        { ...CHICKEN_BROTH, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.LIQUIDS },
-        { ...MILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.LIQUIDS },
+        { ...CHICKEN_BROTH, amount: 7 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.LIQUIDS },
+        { ...MILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.LIQUIDS },
 
-        { ...FROZEN_PEAS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.FROZEN },
-        { ...FROZEN_CARROTS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', optional: false, section: SECTIONS.FROZEN },
+        { ...FROZEN_PEAS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FROZEN },
+        { ...FROZEN_CARROTS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FROZEN },
 
-        { ...REFRIGERATED_PIE_CRUST, amount: 15, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', optional: false, section: SECTIONS.CRUST },
+        { ...REFRIGERATED_PIE_CRUST, amount: 15, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.CRUST },
     ],
     appliances: [
         STOVE,

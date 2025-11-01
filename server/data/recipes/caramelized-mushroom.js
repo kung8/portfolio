@@ -16,6 +16,9 @@ const {
     UNSALTED_BUTTER,
 } = require('./ingredients');
 
+const CARAMELIZED_MUSHROOMS = 'Caramelized Mushrooms';
+const CARAMELIZE_MUSHROOMS = 'Caramelize Mushrooms';
+
 module.exports = {
     cardName: 'Caramelized Mushroom',
     name: 'Caramelized Mushroom',
@@ -38,15 +41,17 @@ module.exports = {
             finder: 'Justin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...MUSHROOM, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...BALSAMIC_VINEGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CARAMELIZED_MUSHROOMS },
+        { ...MUSHROOM, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: CARAMELIZED_MUSHROOMS },
+
+        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BALSAMIC_VINEGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },
     ],
     appliances: [
         STOVE,
@@ -55,12 +60,14 @@ module.exports = {
         FRYING_PAN
     ],
     directions: [
-        { step: 'Over medium-high heat, melt butter in a pan.', section: SECTIONS.TOPPING },
-        { step: 'Add the mushroom and let it brown.', section: SECTIONS.TOPPING, img: mushroom1 },
-        { step: 'Add the brown sugar, balsamic vinegar, and soy sauce when the mushroom begins to brown.', section: SECTIONS.TOPPING },
-        { step: 'Stir and cook for about 3 minutes.', section: SECTIONS.TOPPING, img: mushroom2 },
-        { step: 'Season with salt and pepper and cook until mushrooms are browned and soft.', section: SECTIONS.TOPPING },
-        { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.TOPPING, img: mushroom3 },
+        { step: 'Over medium-high heat, melt butter in a pan.', section: CARAMELIZE_MUSHROOMS },
+        { step: 'Add the mushroom and let it brown.', section: CARAMELIZE_MUSHROOMS, img: mushroom1 },
+
+        { step: `When the mushroom begins to brown, add the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
+        { step: 'Stir. Cook for 3 minutes.', section: SECTIONS.COOK_SAUCE, img: mushroom2 },
+        { step: 'Season with salt and pepper. Cook until mushrooms are browned and soft.', section: SECTIONS.COOK_SAUCE },
+
+        { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.SERVE, img: mushroom3 },
     ],
     store: [
         {

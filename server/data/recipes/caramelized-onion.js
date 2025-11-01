@@ -17,6 +17,9 @@ const {
     UNSALTED_BUTTER,
 } = require('./ingredients');
 
+const CARAMELIZED_ONIONS = 'Caramelized Onions';
+const CARAMELIZE_ONIONS = 'Caramelize Onions';
+
 module.exports = {
     cardName: 'Caramelized Onion',
     name: 'Caramelized Onion',
@@ -39,15 +42,17 @@ module.exports = {
             finder: 'Justin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...RED_ONION, amount: 1, unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.TOPPING },
-        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...BALSAMIC_VINEGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPING },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPING },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CARAMELIZED_ONIONS },
+        { ...RED_ONION, amount: 1, unit: '', additionalDetails: 'thinly sliced', section: CARAMELIZED_ONIONS },
+        
+        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BALSAMIC_VINEGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...LIGHT_SOY_SAUCE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },
     ],
     appliances: [
         STOVE,
@@ -56,11 +61,13 @@ module.exports = {
         FRYING_PAN
     ],
     directions: [
-        { step: 'Over medium-high heat, melt butter in a pan.', section: SECTIONS.TOPPING, img: onion1 },
-        { step: 'Add the red onions and let it brown.', section: SECTIONS.TOPPING, img: onion2 },
-        { step: 'Add the brown sugar, balsamic vinegar, and soy sauce when the onions begins to brown.', section: SECTIONS.TOPPING },
-        { step: 'Stir and cook for about 3 minutes.', section: SECTIONS.TOPPING },
-        { step: 'Season with salt and pepper and cook until onions are browned and soft.', section: SECTIONS.TOPPING, img: onion3 },
+        { step: 'Over medium-high heat, melt butter in a pan.', section: CARAMELIZE_ONIONS, img: onion1 },
+        { step: 'Add the red onions and let it brown.', section: CARAMELIZE_ONIONS, img: onion2 },
+
+        { step: `When the onion begins to brown, add the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
+        { step: 'Stir. Cook for 3 minutes.', section: SECTIONS.COOK_SAUCE },
+        { step: 'Season with salt and pepper. Cook until onions are browned and soft.', section: SECTIONS.COOK_SAUCE, img: onion3 },
+
         { step: 'Serve as a topping for pizza, burgers, or meat.', section: SECTIONS.TOPPING, img: onion4 },
     ],
     store: [

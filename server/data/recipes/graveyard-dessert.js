@@ -1,6 +1,8 @@
 const graveyardDessert1 = '../assets/Products/graveyard-dessert-1.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
-const { CHOCOLATE_PUDDING_CUPS, GUMMY_WORMS, MILANO_COOKIES, OREO_COOKIES } = require('./ingredients');
+const { CHOCOLATE_PUDDING_CUPS, MILANO_COOKIES, OREO_COOKIES } = require('./ingredients');
+
+const GRAVEYARD_DESSERTS = 'Graveyard Desserts';
 
 module.exports = {
     cardName: 'Graveyard Dessert',
@@ -23,24 +25,21 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...CHOCOLATE_PUDDING_CUPS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...OREO_COOKIES, amount: 1, unit: INGREDIENT_UNITS.PACKAGE, additionalDetails: 'without cream', section: SECTIONS.MAIN },
-        { ...MILANO_COOKIES, amount: 1, unit: INGREDIENT_UNITS.PACKAGE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GUMMY_WORMS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CHOCOLATE_PUDDING_CUPS, amount: 6, unit: '', additionalDetails: '', section: GRAVEYARD_DESSERTS },
+        { ...OREO_COOKIES, amount: 1, unit: INGREDIENT_UNITS.PACKAGE, additionalDetails: 'without cream', section: GRAVEYARD_DESSERTS },
+        { ...MILANO_COOKIES, amount: 1, unit: INGREDIENT_UNITS.PACKAGE, additionalDetails: '', section: GRAVEYARD_DESSERTS },
     ],
     supplies: [
         { name: 'clear cups' },
     ],
     directions: [
-        { step: 'Fill cups with a layer of chocolate pudding.', section: SECTIONS.MAIN },
-        { step: 'Stick one or two gummy worms in the pudding.', section: SECTIONS.MAIN },
-        { step: 'Add a layer of crushed Oreo.', section: SECTIONS.MAIN },
-        { step: 'Add another layer of pudding and stick a worm through the top.', section: SECTIONS.MAIN },
-        { step: 'Break an Milano cookie in half and stick it into the pudding. This is a gravestone.', section: SECTIONS.MAIN },
-        { step: 'Sprinkle crushed Oreo around the worm and the gravestone and fill the rest of the layer.', section: SECTIONS.MAIN },
-        { step: 'Get creative and have fun! You can add chocolate, sprinkles, and other cookies and candies.', section: SECTIONS.MAIN },
+        { step: 'Fill cups with a layer of chocolate pudding.', section: SECTIONS.ASSEMBLE },
+        { step: 'Break a Milano cookie in half and stick it into the pudding. This is a gravestone.', section: SECTIONS.ASSEMBLE },
+        { step: 'Add a layer of crushed Oreo around the gravestone and cover the pudding layer.', section: SECTIONS.ASSEMBLE },
+
+        { step: 'Get creative and have fun! You can add chocolate, sprinkles, and other cookies and candies.', section: SECTIONS.SERVE },
     ],
     store: [
         {

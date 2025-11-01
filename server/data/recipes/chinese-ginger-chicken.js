@@ -11,7 +11,6 @@ const {
     BLACK_PEPPER,
     CHICKEN_THIGH,
     CORNSTARCH,
-    GARLIC,
     GINGER,
     LARGE_BOWL,
     LIGHT_SOY_SAUCE,
@@ -19,7 +18,12 @@ const {
     SPATULA,
     STOVE,
     WOK,
+    SERVING_BOWL,
 } = require('./ingredients');
+
+const GINGER_SECTION = 'Ginger';
+const PREP_GINGER = 'Prep Ginger';
+const COOK_GINGER = 'Cook Ginger';
 
 module.exports = {
     cardName: 'Ginger Chicken',
@@ -45,15 +49,17 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...CHICKEN_THIGH, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2 inch pieces', section: SECTIONS.MAIN },
-        { ...GINGER, amount: 4, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'peeled and cut into long thin strips', section: SECTIONS.MAIN },
-        { ...GARLIC, amount: 6, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...LIGHT_SOY_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
-        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to thicken', section: SECTIONS.MAIN },
+        { ...GINGER, amount: 4, unit: INGREDIENT_UNITS.INCH, additionalDetails: 'peeled and cut into long thin strips', section: GINGER_SECTION },
+
+        { ...CHICKEN_THIGH, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 2 inch pieces', section: SECTIONS.CHICKEN },
+
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },
+
+        { ...LIGHT_SOY_SAUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'to taste', section: SECTIONS.SAUCE },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to thicken', section: SECTIONS.SAUCE },
     ],
     appliances: [
         STOVE,
@@ -61,20 +67,32 @@ module.exports = {
     supplies: [
         WOK,
         SPATULA,
-        { ...LARGE_BOWL, amount: 2 },
+        LARGE_BOWL,
+        SERVING_BOWL,
     ],
     directions: [
-        { step: 'Peel the ginger and cut the ginger into long, thin strips. Do not worry they will cook down.', section: SECTIONS.MAIN, img: ginger1 },
-        { step: 'Place wok on stove over medium-high heat. Work in batches as needed.', section: SECTIONS.MAIN },
-        { step: 'Add half of the minced garlic. Cook until fragrant (about 30 seconds).', section: SECTIONS.MAIN },
-        { step: 'Add half the chicken. Make sure it\'s in a single layer.', section: SECTIONS.MAIN, img: ginger2 },
-        { step: 'Add salt and pepper as desired. If you are using low-sodium soy sauce, you can be a little more generous with the salt.', section: SECTIONS.MAIN },
-        { step: 'Do not mix or stir too frequently. We want it to brown and smoke a little (about 3 to 5 minutes).', section: SECTIONS.MAIN },
-        { step: 'Once the chicken begins to brown, flip the chicken and continue cooking until it begins to brown on that side.', section: SECTIONS.MAIN },
-        { step: 'Add half of the ginger. Place it either to the side or towards the bottom of the wok, so it can cook better (and crisp up if you prefer it crispier).', section: SECTIONS.MAIN, img: ginger3 },
-        { step: 'After it has browned, add the soy sauce to give it a nice sauce and a little cornstarch to thicken the sauce.', section: SECTIONS.MAIN, img: ginger4 },
-        { step: 'Transfer the cooked chicken into a clean bowl. And cook the second batch.', section: SECTIONS.MAIN, img: ginger5 },
-        { step: 'Eat one of my favorite childhood dishes with steamed rice and any other side dishes.', section: SECTIONS.MAIN, img: ginger6 },
+        { step: 'Peel the ginger.', section: PREP_GINGER },
+        { step: 'Cut the ginger into long, thin strips. Do not worry they will cook down.', section: PREP_GINGER, img: ginger1 },
+
+        { step: 'Chop the chicken thighs into roughly 2 inch pieces. Place them in a large bowl.', section: SECTIONS.PREP_CHICKEN },
+
+        { step: 'Over medium-high heat, place wok on stove.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Add half the chicken in a single layer.', section: SECTIONS.COOK_CHICKEN, img: ginger2 },
+        { step: 'Season with salt and pepper as desired.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Let it brown without stirring (about 3 to 5 minutes).', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Flip chicken. Brown other side (about 3 to 5 minutes).', section: SECTIONS.COOK_CHICKEN },
+
+        { step: 'Add half of the ginger towards the bottom of the wok. Let it crisp (about 3 to 5 minutes).', section: COOK_GINGER, img: ginger3 },
+
+        { step: 'Add the soy sauce and cornstarch. Cook for a few minutes.', section: SECTIONS.COOK_SAUCE, img: ginger4 },
+
+        { step: 'Transfer the cooked chicken to a serving bowl. And cook the second batch.', section: SECTIONS.TRANSFER, img: ginger5 },
+
+        { step: 'Eat one of my favorite childhood dishes with steamed rice.', section: SECTIONS.SERVE, img: ginger6 },
+    ],
+    notes: [
+        { note: 'If you are using low-sodium soy sauce, you can be a little more generous with the salt.' },
+        { note: 'Chicken will not be completely cooked before ginger gets added.' }, 
     ],
     store: [
         {

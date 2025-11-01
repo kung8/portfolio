@@ -2,6 +2,8 @@ const lunchables1 = '../assets/Products/fancy-lunchables-1.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const { BUTTER_PICKLE_CHIPS, CHEDDAR_CHEESE, COOKED_HAM, CRACKERS, LETTUCE, ROMA_TOMATO } = require('./ingredients');
 
+const LUNCHABLES = 'Lunchables';
+
 module.exports = {
     cardName: 'Fancy Lunchables',
     name: 'Fancy Lunchables',
@@ -23,21 +25,21 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...CRACKERS, amount: 12, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COOKED_HAM, amount: 5, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...CHEDDAR_CHEESE, amount: 6, unit: '', additionalDetails: 'sliced or cubed', section: SECTIONS.MAIN },
-        { ...LETTUCE, amount: 2, unit: INGREDIENT_UNITS.LEAF, additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...ROMA_TOMATO, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
-        { ...BUTTER_PICKLE_CHIPS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CRACKERS, amount: 12, unit: '', additionalDetails: '', section: LUNCHABLES },
+        { ...COOKED_HAM, amount: 5, unit: '', additionalDetails: 'sliced', section: LUNCHABLES },
+        { ...CHEDDAR_CHEESE, amount: 6, unit: '', additionalDetails: 'sliced or cubed', section: LUNCHABLES },
+        { ...LETTUCE, amount: 2, unit: INGREDIENT_UNITS.LEAF, additionalDetails: 'sliced', section: LUNCHABLES },
+        { ...ROMA_TOMATO, amount: 1, unit: '', additionalDetails: 'sliced', section: LUNCHABLES },
+        { ...BUTTER_PICKLE_CHIPS, amount: 6, unit: '', additionalDetails: '', section: LUNCHABLES },
     ],
     supplies: [
         { name: 'plate' },
     ],
     directions: [
-        { step: 'Assemble together these delicious cracker sandwiches with your favorite toppings.', section: SECTIONS.MAIN },
-        { step: 'Go back to simpler times and enjoy these fancy lunchables.', section: SECTIONS.MAIN },
+        { step: 'Assemble together these delicious cracker sandwiches with your favorite toppings.', section: SECTIONS.ASSEMBLE },
+        { step: 'Go back to simpler times and enjoy these fancy lunchables.', section: SECTIONS.SERVE },
     ],
     store: [
         {
