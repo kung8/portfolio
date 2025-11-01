@@ -180,7 +180,6 @@ module.exports = {
         { note: 'If you cannot find daikon, you can use turnips.' },
         { note: 'My favorite place to get Banh Mi Sandwiches is called D.C. Banh Mi in Falls Church, VA. Get their #1 Combination Sandwich, and you won\'t regret it!' }
     ],
-    tags: ['vietnamese', 'sandwich', 'banh mi', 'pork', 'pickled vegetables', 'french bread'],
     store: [
         {
             duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },

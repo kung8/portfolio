@@ -45,6 +45,9 @@ module.exports = {
     type: [TYPES.SOUP],
     allergies: [],
     diet: [DIET.GLUTEN_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
+    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
         { 
             label: 'Chili', 
@@ -53,9 +56,6 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
-    cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     ingredients: [
         { ...GROUND_BEEF, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BEEF },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'diced', section: BEEF },

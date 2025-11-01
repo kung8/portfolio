@@ -87,6 +87,9 @@ module.exports = {
         { step: 'Flip beef over and cook. Repeat for additional batch.', section: SECTIONS.MAIN },
         { step: 'Serve over rice and top with green onion and sesame seeds.', section: SECTIONS.SERVE, img: bulgogi4 },
     ],
+    notes: [
+        { note: 'Traditionally bulgogi beef uses thinly sliced ribeye or top sirloin (against the grain), but you can really use any beef cuts.', img: bulgogi6 },
+    ],
     store: [
         {
             duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
@@ -99,9 +102,6 @@ module.exports = {
         //     method: REHEAT_METHODS.BAKE,
         //     instruction: '',
         // },
-    ],
-    notes: [
-        { note: 'Traditionally bulgogi beef uses thinly sliced ribeye or top sirloin (against the grain), but you can really use any beef cuts.', img: bulgogi6 },
     ],
     mealPrep: true,
 };

@@ -50,6 +50,9 @@ module.exports = {
     type: [TYPES.CURRY, TYPES.RICE],
     allergies: [ALLERGIES.DAIRY],
     diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
+    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         {
             label: 'Butter Chicken',
@@ -58,9 +61,6 @@ module.exports = {
             finder: 'Kevin Ung',
         }
     ],
-    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
-    prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
-    cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     ingredients: [
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: ONION_SECTION },
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: ONION_SECTION },

@@ -25,10 +25,10 @@ module.exports = {
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
+    protein: [PROTEIN.EGG],
     type: [TYPES.MAIN_COURSE],
     allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG],
     diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
-    protein: [PROTEIN.EGG],
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
@@ -93,4 +93,4 @@ module.exports = {
         },
     ],
     mealPrep: false,
-}
+};
