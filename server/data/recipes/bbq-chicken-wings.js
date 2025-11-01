@@ -13,13 +13,13 @@ const {
     KETCHUP,
     LARGE_PAN,
     LIGHT_SOY_SAUCE,
+    MIXING_BOWL,
     PAPRIKA,
     ROOT_BEER,
     SALT,
     STOVE,
     UNSALTED_BUTTER,
     YELLOW_MUSTARD,
-    MIXING_BOWL,
 } = require('./ingredients');
 
 const CONDIMENTS_SECTION = 'Condiments';
