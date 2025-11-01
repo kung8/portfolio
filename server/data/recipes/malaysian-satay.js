@@ -95,8 +95,9 @@ module.exports = {
         { step: `Add the chicken pieces. Mix well.`, section: SECTIONS.MARINATE_CHICKEN },
         { step: `Marinate for at least 2 hours (or overnight).`, section: SECTIONS.MARINATE_CHICKEN, img: satay1 },
 
-        { step: `Preheat the oven to 450ºF.`, section: SECTIONS.BAKE },
-        { step: `Line a baking sheet with foil.`, section: SECTIONS.BAKE },
+        { step: `Preheat the oven to 450ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
+        { step: `Line a baking sheet with foil.`, section: SECTIONS.PREP_PAN },
         { step: `Thread the chicken on skewers.`, section: SECTIONS.BAKE },
         { step: `Brush with oil.`, section: SECTIONS.BAKE },
         { step: `Season with salt and pepper.`, section: SECTIONS.BAKE },

@@ -25,12 +25,8 @@ const samosa23 = '../assets/Products/samosa-23.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, AMCHUR_POWDER, BAKING_PAN, CAROM_SEEDS, CHILI_POWDER, CORIANDER, CUMIN, DOUGH_KNIFE, FENNEL_SEEDS, FRYING_PAN, GARAM_MASALA, GHEE, GINGER, GREEN_PEA, LARGE_POT, LEMON_JUICE, MIXING_BOWL, OVEN, SALT, SERRANO_PEPPER, STOVE, WATER, YUKON_GOLD_POTATO } = require('./ingredients');
 
-const POTATO_FILLING = 'Potato Filling';
-const SPICES = 'Spices';
-
 const PREP_POTATOES = 'Prep Potatoes';
 const MAKE_SAMOSA = 'Make Samosa';
-const BAKE_SAMOSA = 'Bake Samosa';
 
 module.exports = {
     cardName: 'Samosa',
@@ -63,21 +59,21 @@ module.exports = {
         { ...GHEE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.DOUGH },
         { ...WATER, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: SECTIONS.DOUGH },
 
-        { ...YUKON_GOLD_POTATO, amount: 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'peeled and halved', section: POTATO_FILLING },
-        { ...GHEE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: POTATO_FILLING },
-        { ...CUMIN, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: POTATO_FILLING },
-        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: POTATO_FILLING },
-        { ...SERRANO_PEPPER, amount: 2, unit: '', additionalDetails: 'chopped', section: POTATO_FILLING },
-        { ...GREEN_PEA, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: POTATO_FILLING },
-        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'or to taste', section: POTATO_FILLING },
-        { ...CORIANDER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: POTATO_FILLING },
-        { ...LEMON_JUICE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: POTATO_FILLING },
+        { ...YUKON_GOLD_POTATO, amount: 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'peeled and halved', section: SECTIONS.FILLING },
+        { ...GHEE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...CUMIN, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...GINGER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: SECTIONS.FILLING },
+        { ...SERRANO_PEPPER, amount: 2, unit: '', additionalDetails: 'chopped', section: SECTIONS.FILLING },
+        { ...GREEN_PEA, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'or to taste', section: SECTIONS.FILLING },
+        { ...CORIANDER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.FILLING },
+        { ...LEMON_JUICE, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
 
-        { ...CHILI_POWDER, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
-        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
-        { ...GARAM_MASALA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
-        { ...AMCHUR_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
-        { ...FENNEL_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES },
+        { ...CHILI_POWDER, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SPICES },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SPICES },
+        { ...GARAM_MASALA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SPICES },
+        { ...AMCHUR_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SPICES },
+        { ...FENNEL_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SPICES },
     ],
     appliances: [
         STOVE,
@@ -103,16 +99,16 @@ module.exports = {
         { step: `Slowly mix in water. It should be slightly stiff but still adjustable.`, section: SECTIONS.PREP_DOUGH, img: samosa4 },
         { step: `Cover and let it rise for 30 minutes.`, section: SECTIONS.PREP_DOUGH },
 
-        { step: `Over medium-high heat, heat ghee in a pan.`, section: POTATO_FILLING },
-        { step: `Add cumin. Cook until it sizzles.`, section: POTATO_FILLING, img: samosa8 },
-        { step: `Add ginger and chilies. Cook until fragrant (about 30 seconds to 1 minute).`, section: POTATO_FILLING, img: samosa9 },
-        { step: `Add peas. Saute for 2 minutes.`, section: POTATO_FILLING, img: samosa10 },
-        { step: `Add the "Spices" ingredients. Saute for 30 seconds.`, section: POTATO_FILLING, img: samosa6, img: samosa11 },
-        { step: `Add potatoes. Saute for 2 to 3 minutes.`, section: POTATO_FILLING, img: samosa12 },
-        { step: `Add coriander. Set aside.`, section: POTATO_FILLING, img: samosa13 },
-        { step: `Taste and add more salt if desired.`, section: POTATO_FILLING },
-        { step: `Add lemon juice.`, section: POTATO_FILLING },
-        { step: `Divide into about 10 portions.`, section: POTATO_FILLING },
+        { step: `Over medium-high heat, heat ghee in a pan.`, section: SECTIONS.PREP_FILLING },
+        { step: `Add cumin. Cook until it sizzles.`, section: SECTIONS.PREP_FILLING, img: samosa8 },
+        { step: `Add ginger and chilies. Cook until fragrant (about 30 seconds to 1 minute).`, section: SECTIONS.PREP_FILLING, img: samosa9 },
+        { step: `Add peas. Saute for 2 minutes.`, section: SECTIONS.PREP_FILLING, img: samosa10 },
+        { step: `Add the "${SECTIONS.SPICES}" section ingredients. Saute for 30 seconds.`, section: SECTIONS.PREP_FILLING, img: [samosa6, samosa11] },
+        { step: `Add potatoes. Saute for 2 to 3 minutes.`, section: SECTIONS.PREP_FILLING, img: samosa12 },
+        { step: `Add coriander. Set aside.`, section: SECTIONS.PREP_FILLING, img: samosa13 },
+        { step: `Taste and add more salt if desired.`, section: SECTIONS.PREP_FILLING },
+        { step: `Add lemon juice.`, section: SECTIONS.PREP_FILLING },
+        { step: `Divide into about 10 portions.`, section: SECTIONS.PREP_FILLING },
 
         { step: `Knead the dough a little to smooth it.`, section: MAKE_SAMOSA, img: samosa14 },
         { step: `Divide it into 5 parts. Roll each into balls.`, section: MAKE_SAMOSA, img: samosa15 },
@@ -128,10 +124,10 @@ module.exports = {
         { step: `Push the two edges together and pinch to seal.`, section: MAKE_SAMOSA },
         { step: `Ensure the samosa is sealed and cover with a cloth.`, section: MAKE_SAMOSA },
 
-        { step: `Preheat the oven to 360ºF.`, section: BAKE_SAMOSA },
-        { step: `Place each samosa in a baking dish.`, section: BAKE_SAMOSA },
-        { step: `Generously brush the samosa with oil all over.`, section: BAKE_SAMOSA, img: samosa20 },
-        { step: `Bake for 35 to 40 minutes.`, section: BAKE_SAMOSA },
+        { step: `Preheat the oven to 360ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Place each samosa in a baking dish.`, section: SECTIONS.PREP_PAN },
+        { step: `Generously brush the samosa with oil all over.`, section: SECTIONS.PREP_PAN, img: samosa20 },
+        { step: `Bake for 35 to 40 minutes.`, section: SECTIONS.BAKE },
 
         { step: `Enjoy these delicious appetizers with your favorite chutney.`, section: SECTIONS.SERVE, img: [samosa22, samosa23] },
     ],

@@ -79,7 +79,8 @@ module.exports = {
 
         { step: `In a small bowl, combine the "Red Chili Oil" ingredients. Set aside.`, section: PREP_RED_CHILI_OIL },
 
-        { step: `Preheat the oven to 470ºF.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Preheat the oven to 470ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
         { step: `Line a baking sheet with foil and place a wire rack on top.`, section: SECTIONS.COOK_CHICKEN, img: tandoori4 },
         { step: `Spray the wire rack with oil.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Place the chicken on the rack.`, section: SECTIONS.COOK_CHICKEN, img: tandoori5 },

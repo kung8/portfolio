@@ -83,7 +83,7 @@ module.exports = {
         { step: `Over medium heat, add cherries, lemon juice, cornstarch, salt and sugar to a saucepan. Stir occasionally and cook until burst (about 6 to 8 minutes).`, section: SECTIONS.PREP_FILLING, img: [crostata9, crostata10] },
         { step: `Let cool for at least 15 minutes.`, section: SECTIONS.PREP_FILLING },
 
-        { step: `Position the oven rack in the center. Preheat the oven to 350ºF.`, section: SECTIONS.ASSEMBLE },
+        { step: `Position the oven rack in the center. Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Roll out dough to 1/4" thick.`, section: SECTIONS.ASSEMBLE, img: crostata11 },
         { step: `Place the dough in the pie dish. Press sides. Trim any excess dough.`, section: SECTIONS.ASSEMBLE, img: crostata12 },
         { step: `Add chocolate pieces to the pie and pour filling over that.`, section: SECTIONS.ASSEMBLE, img: [crostata13, crostata14] },

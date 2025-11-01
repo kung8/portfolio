@@ -3,8 +3,8 @@ const pudding2 = '../assets/Products/sticky-toffee-pudding-2.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALLSPICE, ALL_PURPOSE_FLOUR, BAKING_PAN, BAKING_POWDER, BAKING_SODA, BROWN_SUGAR, CHOPSTICKS, DATE, EGG, HEAVY_CREAM, MIXING_BOWL, NUTMEG, OVEN, SALT, SAUCEPAN, STAND_MIXER, STOVE, UNSALTED_BUTTER, VANILLA_EXTRACT, WALNUTS, WATER, WHITE_SUGAR } = require('./ingredients');
 
-const TOFFEE_SAUCE = 'Toffee Sauce';
 const PUDDING = 'Pudding';
+const MAKE_PUDDING = 'Make Pudding';
 
 module.exports = {
     cardName: 'Sticky Toffee Pudding',
@@ -30,10 +30,10 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 16, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: TOFFEE_SAUCE },
-        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TOFFEE_SAUCE },
-        { ...HEAVY_CREAM, amount: 10 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TOFFEE_SAUCE },
-        { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TOFFEE_SAUCE },
+        { ...UNSALTED_BUTTER, amount: 16, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...HEAVY_CREAM, amount: 10 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
 
         { ...DATE, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PUDDING },
         { ...WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: PUDDING },
@@ -61,31 +61,33 @@ module.exports = {
         CHOPSTICKS,
     ],
     directions: [
-        { step: `Over medium-high heat, add butter and brown sugar in a medium saucepan.`, section: TOFFEE_SAUCE },
-        { step: `Bring the butter mixture to a boil. Stirring often.`, section: TOFFEE_SAUCE },
-        { step: `Cook until the sugar completely melts and gets darker.`, section: TOFFEE_SAUCE },
-        { step: `Add cream. Mix.`, section: TOFFEE_SAUCE },
-        { step: `Lower heat. Stir constantly and simmer until it becomes thick (about 5 minutes).`, section: TOFFEE_SAUCE },
-        { step: `Add vanilla. Stir.`, section: TOFFEE_SAUCE },
-        { step: `Set aside or transfer to a heat-resistant container for later.`, section: TOFFEE_SAUCE },
+        { step: `Over medium-high heat, add butter and brown sugar in a medium saucepan.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Bring the butter mixture to a boil. Stirring often.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Cook until the sugar completely melts and gets darker.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Add cream. Mix.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Lower heat. Stir constantly and simmer until it becomes thick (about 5 minutes).`, section: SECTIONS.COOK_SAUCE },
+        { step: `Add vanilla. Stir.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Set aside or transfer to a heat-resistant container for later.`, section: SECTIONS.COOK_SAUCE },
 
-        { step: `Preheat the oven to 350ºF.`, section: PUDDING },
-        { step: `Butter a baking pan.`, section: PUDDING },
-        { step: `Over medium-high heat, add dates and water.`, section: PUDDING },
-        { step: `Bring water to a boil.`, section: PUDDING },
-        { step: `Remove from heat and add in baking soda. Set aside while keeping it warm.`, section: PUDDING },
-        { step: `In a mixing bowl, combine the flour, baking powder, salt, allspice and nutmeg.`, section: PUDDING },
-        { step: `In a stand mixer bowl, cream the butter and sugar.`, section: PUDDING },
-        { step: `Beat in one egg at a time.`, section: PUDDING },
-        { step: `Add the vanilla.`, section: PUDDING },
-        { step: `Add in half the flour mixture. Mix.`, section: PUDDING },
-        { step: `Add the date mixture. Mix.`, section: PUDDING },
-        { step: `Add the remaining flour mixture. Mix. Note: Do not over mix the batter.`, section: PUDDING },
-        { step: `Carefully pour the batter into the baking pan.`, section: PUDDING },
-        { step: `Bake for 15 minutes.`, section: PUDDING },
-        { step: `Take out the cake and poke holes on the top with a chopstick and pour 1/4 of the sauce. Let the sauce fill the holes to help the marbling.`, section: PUDDING },
-        { step: `Bake until a toothpick comes clean when inserted into the center of the cake (about 15 to 35 minutes).`, section: PUDDING },
-        { step: `Let the cake cool before serving.`, section: PUDDING },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
+        { step: `Butter a baking pan.`, section: MAKE_PUDDING },
+        { step: `Over medium-high heat, add dates and water.`, section: MAKE_PUDDING },
+        { step: `Bring water to a boil.`, section: MAKE_PUDDING },
+        { step: `Remove from heat and add in baking soda. Set aside while keeping it warm.`, section: MAKE_PUDDING },
+        { step: `In a mixing bowl, combine the flour, baking powder, salt, allspice and nutmeg.`, section: MAKE_PUDDING },
+        { step: `In a stand mixer bowl, cream the butter and sugar.`, section: MAKE_PUDDING },
+        { step: `Beat in one egg at a time.`, section: MAKE_PUDDING },
+        { step: `Add the vanilla.`, section: MAKE_PUDDING },
+        { step: `Add in half the flour mixture. Mix.`, section: MAKE_PUDDING },
+        { step: `Add the date mixture. Mix.`, section: MAKE_PUDDING },
+        { step: `Add the remaining flour mixture. Mix. Note: Do not over mix the batter.`, section: MAKE_PUDDING },
+        { step: `Carefully pour the batter into the baking pan.`, section: MAKE_PUDDING },
+        { step: `Bake for 15 minutes.`, section: MAKE_PUDDING },
+        { step: `Take out the cake and poke holes on the top with a chopstick and pour 1/4 of the sauce. Let the sauce fill the holes to help the marbling.`, section: MAKE_PUDDING },
+        { step: `Bake until a toothpick comes clean when inserted into the center of the cake (about 15 to 35 minutes).`, section: MAKE_PUDDING },
+        { step: `Let the cake cool before serving.`, section: MAKE_PUDDING },
+
         { step: `Serve the cake with warmed up sauce.`, section: SECTIONS.SERVE, img: pudding1 },
     ],
     notes: [

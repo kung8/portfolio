@@ -88,13 +88,14 @@ module.exports = {
         { step: `Add milk and broth. Stir constantly until boils for 1 minute.`, section: SECTIONS.COOK_FILLING, img: pie3 },
         { step: `Add chicken and the "${SECTIONS.FROZEN}" section ingredients. Cook until hot.`, section: SECTIONS.COOK_FILLING, img: pie4 },
 
-        { step: `Preheat the oven to 425ºF.`, section: SECTIONS.ASSEMBLE },
+        { step: `Preheat the oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
         { step: `Roll out the pie crust and place inside the pan. Be sure to get the crust up the sides too.`, section: SECTIONS.ASSEMBLE, img: pie5 },
         { step: `Pour filling inside the pie crust.`, section: SECTIONS.ASSEMBLE, img: pie6 },
         { step: `Roll the remaining dough on top of the mixture and turn edges over pie pan.`, section: SECTIONS.ASSEMBLE },
         { step: `Poke holes through the top to allow for steam to be released.`, section: SECTIONS.ASSEMBLE, img: pie7 },
-        { step: `Bake the pie until golden brown (about 30 to 35 minutes).`, section: SECTIONS.MAIN },
-        { step: `Enjoy this comfort food in the comforts of your own home.`, section: SECTIONS.MAIN, img: pie9 },
+        { step: `Bake the pie until golden brown (about 30 to 35 minutes).`, section: SECTIONS.BAKE },
+        { step: `Enjoy this comfort food in the comforts of your own home.`, section: SECTIONS.SERVE, img: pie9 },
     ],
     store: [
         {

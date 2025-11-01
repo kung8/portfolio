@@ -13,7 +13,7 @@ const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_M
 const { ALL_PURPOSE_FLOUR, ALMOND_FLOUR, APRICOT_JELLY, BAKING_SHEET, BASTING_BRUSH, EGG_YOLK, MIXING_BOWL, OVEN, PINK_LADY_APPLE, REFRIGERATED_PUFF_PASTRY, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
 const FRANGIPANE = 'Frangipane';
-const BRUSH = 'Brush';
+const MAKE_FRANGIPANE = 'Make Frangipane';
 
 module.exports = {
     cardName: 'Apple Tart',
@@ -59,13 +59,14 @@ module.exports = {
         BASTING_BRUSH,
     ],
     directions: [
-        { step: `In a mixing bowl, cream together butter and sugar.`, section: FRANGIPANE, img: tart1 },
-        { step: `Mix in almond flour.`, section: FRANGIPANE },
-        { step: `Gently mix in the egg yolks and vanilla.`, section: FRANGIPANE, img: [tart2, tart3] },
-        { step: `Mix in all-purpose flour.`, section: FRANGIPANE, img: tart4 },
-        { step: `Refrigerate until ready to use.`, section: FRANGIPANE },
+        { step: `In a mixing bowl, cream together butter and sugar.`, section: MAKE_FRANGIPANE, img: tart1 },
+        { step: `Mix in almond flour.`, section: MAKE_FRANGIPANE },
+        { step: `Gently mix in the egg yolks and vanilla.`, section: MAKE_FRANGIPANE, img: [tart2, tart3] },
+        { step: `Mix in all-purpose flour.`, section: MAKE_FRANGIPANE, img: tart4 },
+        { step: `Refrigerate until ready to use.`, section: MAKE_FRANGIPANE },
 
-        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.ASSEMBLE },
+        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
         { step: `Place the chilled puff pastry on a baking sheet.`, section: SECTIONS.ASSEMBLE },
         { step: `Spread the frangipane evenly on the puff pastry.`, section: SECTIONS.ASSEMBLE, img: tart5 },
         { step: `Arrange the apple slices in overlapping rows.`, section: SECTIONS.ASSEMBLE, img: tart6 },
@@ -73,9 +74,10 @@ module.exports = {
         { step: `Bake until crust begins to become golden brown (about 12 to 15 minutes).`, section: SECTIONS.BAKE, img: tart7 },
         { step: `Reduce heat to 350ºF.`, section: SECTIONS.BAKE },
         { step: `Cook until the apples are tender but not soft and the frangipane is cooked through and is not sticky (about 20 to 30 minutes).`, section: SECTIONS.BAKE },
-        { step: `Remove the tart from the oven and let it cool for 10 minutes.`, section: SECTIONS.BAKE, img: tart8 },
 
-        { step: `Brush melted/heated jelly over the warm tart.`, section: BRUSH, img: tart9 },
+        { step: `Remove the tart from the oven and let it cool for 10 minutes.`, section: SECTIONS.COOL, img: tart8 },
+
+        { step: `Brush melted/heated jelly over the warm tart.`, section: SECTIONS.BRUSH, img: tart9 },
 
         { step: `Let the tart cool to room temperature and enjoy this light dessert!`, section: SECTIONS.SERVE },
     ],

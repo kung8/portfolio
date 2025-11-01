@@ -59,15 +59,19 @@ module.exports = {
         MEDIUM_BOWL,
     ],
     directions: [
-        { step: `Preheat the oven to 375ºF.`, section: BAKE_BAGUETTE },
-        { step: `Place sliced baguette on baking sheet.`, section: BAKE_BAGUETTE, img: bruschetta2 },
-        { step: `Drizzle olive oil over bread (do not drench).`, section: BAKE_BAGUETTE },
-        { step: `Season with salt and pepper.`, section: BAKE_BAGUETTE },
-        { step: `Flip slices over and repeat with the other side.`, section: BAKE_BAGUETTE },
-        { step: `Bake until golden brown and crispy (about 5 to 7 minutes on each side). Be careful not to burn them.`, section: BAKE_BAGUETTE },
+        { step: `Preheat the oven to 375ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
+        { step: `Place sliced baguette on baking sheet.`, section: SECTIONS.BAKE, img: bruschetta2 },
+        { step: `Drizzle olive oil over bread (do not drench).`, section: SECTIONS.BAKE },
+        { step: `Season with salt and pepper.`, section: SECTIONS.BAKE },
+        { step: `Flip slices over and repeat with the other side.`, section: SECTIONS.BAKE },
+        { step: `Bake until golden brown and crispy (about 5 to 7 minutes on each side). Be careful not to burn them.`, section: SECTIONS.BAKE },
+
         { step: `Drain the diced tomatoes as needed. Optionally add a pinch of salt.`, section: PREP_BRUSCHETTA, img: bruschetta1 },
         { step: `In a medium bowl, combine the "${BRUSCHETTA_SECTION}" section ingredients.`, section: PREP_BRUSCHETTA, img: bruschetta3 },
+
         { step: `Top each slice with about 2 tablespoons of the bruschetta mixture.`, section: SECTIONS.ASSEMBLE, img: bruschetta5 },
+        
         { step: `Serve this appetizer immediately topped with more basil.`, section: SECTIONS.SERVE },
     ],
     store: [

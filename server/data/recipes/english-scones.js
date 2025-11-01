@@ -69,9 +69,9 @@ module.exports = {
         BASTING_BRUSH,
     ],
     directions: [
-        { step: `Preheat oven to 400ºF.`, section: PREP_BAKE },
-        { step: `Line baking sheet with a silicon baking mat.`, section: PREP_BAKE },
-        { step: `Place baking sheet in preheating oven.`, section: PREP_BAKE, img: scones1 },
+        { step: `Preheat oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Line baking sheet with a silicon baking mat.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Place baking sheet in preheating oven.`, section: SECTIONS.PREP_PAN, img: scones1 },
         { step: `Beat egg. Set aside.`, section: EGG_WASH },
         { step: `In a mixing bowl, combine all the "Dry Ingredients" except the butter.`, section: DRY_MIXTURE, img: [scones2, scones3] },
         { step: `Add the butter. Work the mixture with your hands until it looks like fine crumbs.`, section: DRY_MIXTURE, img: [scones4, scones5] },

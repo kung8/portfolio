@@ -5,10 +5,6 @@ const { BAKING_SHEET, BASTING_BRUSH, CREAM_CHEESE, GARLIC, GARLIC_POWDER, GREEN_
 const BISCUITS_DOUGH_SECTION = 'Biscuits Dough';
 const BUTTER_TOPPING_SECTION = 'Butter Topping';
 
-const PREP_BAKING = 'Prep Baking';
-const PREP_CRAB_RANGOON = 'Prep Crab Rangoon';
-const COOK_CRAB_RANGOON = 'Cook Crab Rangoon';
-
 module.exports = {
     wip: true,
     cardName: 'Crab Rangoon',
@@ -43,10 +39,13 @@ module.exports = {
         { ...GREEN_ONION, amount: 2, unit: '', additionalDetails: 'finely sliced', section: SECTIONS.FILLING },
         { ...WORCESTERSHIRE_SAUCE, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
+
         { ...REFRIGERATED_BISCUIT_DOUGH, amount: 16, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: BISCUITS_DOUGH_SECTION },
-        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: BUTTER_TOPPING_SECTION },
-        { ...GARLIC_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BUTTER_TOPPING_SECTION },
-        { ...SESAME_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BUTTER_TOPPING_SECTION },
+
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.TOPPINGS },
+        { ...GARLIC_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...SESAME_SEEDS, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        
         { ...SWEET_CHILI_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SERVE },
         { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SERVE },
     ],
@@ -62,18 +61,26 @@ module.exports = {
         BASTING_BRUSH,
     ],
     directions: [
-        { step: `Preheat the oven to 375ºF.`, section: PREP_BAKING },
-        { step: `Line a baking sheet with parchment paper.`, section: PREP_BAKING },
-        { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: PREP_CRAB_RANGOON },
-        { step: `On a plate, place the biscuit dough and begin to flatten it.`, section: PREP_CRAB_RANGOON },
-        { step: `Add a spoonful of the crab filling into the center of the flattened dough.`, section: PREP_CRAB_RANGOON },
-        { step: `Fold and pinch the edges and form them into a ball.`, section: PREP_CRAB_RANGOON },
-        { step: `Place them on the baking sheet seam-side down.`, section: PREP_CRAB_RANGOON },
-        { step: `Add garlic powder to the melted butter.`, section: PREP_CRAB_RANGOON },
-        { step: `Brush with the melted butter mixture.`, section: PREP_CRAB_RANGOON },
-        { step: `Sprinkle with sesame seed.`, section: PREP_CRAB_RANGOON },
-        { step: `Bake until golden brown (about 12 to 15 minutes).`, section: COOK_CRAB_RANGOON },
-        { step: `Let cool for a few minutes.`, section: COOK_CRAB_RANGOON },
+        { step: `Preheat the oven to 375ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        
+        { step: `Line a baking sheet with parchment paper.`, section: SECTIONS.PREP_PAN },
+
+        { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING },
+
+        { step: `On a plate, place the biscuit dough and begin to flatten it.`, section: SECTIONS.PREP_FILLING },
+
+        { step: `Add a spoonful of the crab filling into the center of the flattened dough.`, section: SECTIONS.FORM_BALLS },
+        { step: `Fold and pinch the edges and form them into a ball.`, section: SECTIONS.FORM_BALLS },
+        { step: `Place them on the baking sheet seam-side down.`, section: SECTIONS.FORM_BALLS },
+
+        { step: `Add garlic powder to the melted butter.`, section: SECTIONS.TOP },
+        { step: `Brush with the melted butter mixture.`, section: SECTIONS.TOP },
+        { step: `Sprinkle with sesame seed.`, section: SECTIONS.TOP },
+
+        { step: `Bake until golden brown (about 12 to 15 minutes).`, section: SECTIONS.BAKE },
+
+        { step: `Let cool for a few minutes.`, section: SECTIONS.COOL },
+        
         { step: `Enjoy these with your favorite sauce.`, section: SECTIONS.SERVE },
     ],
     store: [

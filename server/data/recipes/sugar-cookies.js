@@ -71,8 +71,8 @@ module.exports = {
         { ...CONFECTIONERS_SUGAR, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ROYAL_ICING },
         { ...MERINGUE_POWDER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: ROYAL_ICING },
         { ...ROOM_TEMPERATURE_WATER, amount: 10, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: ROYAL_ICING },
-        { ...SPRINKLES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DECORATING },
-        { ...CRYSTAL_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DECORATING },
+        { ...SPRINKLES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DECORATION },
+        { ...CRYSTAL_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DECORATION },
     ],
     appliances: [
         { name: 'oven' },
@@ -110,9 +110,9 @@ module.exports = {
         { step: `In a stand mixer, combine the icing ingredients.`, section: ROYAL_ICING, img: [cookie19, cookie20] },
         { step: `Beat on high until mixed (about 2 minutes).`, section: ROYAL_ICING, img: cookie21 },
         { step: `When lifting the whisk, the icing should drip and smooth within 5 to 10 seconds. The longer you whisk the more air is added and the thicker the icing becomes. Normally the icing will dry in about 2 hours at room temperature. If the icing is too thin it will take longer to dry. If the icing is too thick it can also take longer to dry because of the layers. For intricate designs where you are layering the icing, you can place the decorated cookies in the refrigerator to speed up the drying process.`, section: ROYAL_ICING, img: cookie22 },
-        { step: `Use a knife to spread some icing on top of the cookies.`, section: SECTIONS.DECORATING },
-        { step: `Add sprinkles and/or crystal sugars.`, section: SECTIONS.DECORATING },
-        { step: `Let the decorated cookies cool for 2 hours.`, section: SECTIONS.DECORATING },
+        { step: `Use a knife to spread some icing on top of the cookies.`, section: SECTIONS.DECORATE },
+        { step: `Add sprinkles and/or crystal sugars.`, section: SECTIONS.DECORATE },
+        { step: `Let the decorated cookies cool for 2 hours.`, section: SECTIONS.DECORATE },
     ],
     store: [
         {

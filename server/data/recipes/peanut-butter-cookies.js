@@ -58,7 +58,7 @@ module.exports = {
         SILICON_BAKING_MAT,
     ],
     directions: [
-        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.MAIN },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `In a stand mixer, cream together butter, white sugar, and brown sugar.`, section: SECTIONS.MAIN, img: [cookies1, cookies2] },
         { step: `Mix in salt.`, section: SECTIONS.MAIN, img: cookies3 },
         { step: `Mix in egg and vanilla.`, section: SECTIONS.MAIN, img: cookies4 },

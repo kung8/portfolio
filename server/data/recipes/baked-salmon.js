@@ -40,10 +40,13 @@ module.exports = {
         BAKING_PAN,
     ],
     directions: [
-        { step: `Preheat oven to 450ºF.`, section: SECTIONS.BAKE },
-        { step: `Season salmon with salt and black pepper.`, section: SECTIONS.BAKE },
-        { step: `In a baking pan, place salmon skin side down.`, section: SECTIONS.BAKE },
+        { step: `Preheat oven to 450ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
+        { step: `Season salmon with salt and black pepper.`, section: SECTIONS.PREP_FISH },
+        { step: `In a baking pan, place salmon skin side down.`, section: SECTIONS.PREP_FISH },
+
         { step: `Bake until salmon is cooked through (about 12 to 15 minutes).`, section: SECTIONS.BAKE },
+
         { step: `Enjoy this simple dish with your favorite sides and grain.`, section: SECTIONS.SERVE },
     ],
     store: [

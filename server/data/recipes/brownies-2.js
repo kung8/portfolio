@@ -51,7 +51,7 @@ module.exports = {
         PARCHMENT_PAPER
     ],
     directions: [
-        { step: `Preheat the oven to 325ºF.`, section: SECTIONS.PREP_BATTER },
+        { step: `Preheat the oven to 325ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Spray an 8 x 8 baking pan with cooking spray and line with a parchment paper.`, section: SECTIONS.PREP_BATTER },
         { step: `In a medium bowl, combine the "${DRY_SECTION}" section ingredients.`, section: SECTIONS.PREP_BATTER },
         { step: `In a mixing bowl, combine the "${WET_SECTION}" section ingredients.`, section: SECTIONS.PREP_BATTER },

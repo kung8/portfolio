@@ -89,8 +89,8 @@ module.exports = {
         { step: `Cut sausage in half and dry with a paper towel.`, section: SECTIONS.PREP_FILLING },
         { step: `Cut the cheese thinly to match the length of the halved sausage.`, section: SECTIONS.PREP_FILLING, img: kolaches8 },
 
-        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.BAKE },
-        { step: `Line a baking sheet with parchment paper.`, section: SECTIONS.BAKE },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Line a baking sheet with parchment paper.`, section: SECTIONS.PREP_PAN },
         { step: `Roll out the dough and cut into 20 pieces.`, section: SECTIONS.BAKE },
         { step: `Flatten into discs and fill each with sausage and cheese.`, section: SECTIONS.BAKE, img: [kolaches9, kolaches10] },
         { step: `Fold dough around filling and pinch edges.`, section: SECTIONS.BAKE },

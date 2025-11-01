@@ -26,7 +26,6 @@ const COCONUT_FROSTING_HEATED_INGREDIENTS_SECTION = 'Coconut Frosting Heated Ing
 const COCONUT_FROSTING_ADDITIONAL_INGREDIENTS_SECTION = 'Coconut Frosting Additional Ingredients';
 const CHOCOLATE_BUTTERCREAM_FROSTING_SECTION = 'Chocolate Buttercream Frosting';
 
-const BAKE_CAKE = 'Bake Cake';
 const COOK_COCONUT_FROSTING = 'Cook Coconut Frosting';
 const COOK_CHOCOLATE_BUTTERCREAM_FROSTING = 'Cook Chocolate Buttercream Frosting';
 
@@ -91,16 +90,20 @@ module.exports = {
         SAUCEPAN,
     ],
     directions: [
-        { step: `Preheat oven to 375ºF.`, section: BAKE_CAKE },
-        { step: `Line baking pans with parchment paper.`, section: BAKE_CAKE },
-        { step: `In a mixing bowl, combine the "${CHOCOLATE_CAKE_DRY_INGREDIENTS_SECTION}" section ingredients.`, section: BAKE_CAKE },
-        { step: `In a medium bowl, combine the "${CHOCOLATE_CAKE_WET_INGREDIENTS_SECTION}" section ingredients.`, section: BAKE_CAKE },
-        { step: `Add the wet ingredients to the dry ingredients. Mix.`, section: BAKE_CAKE, img: cake1 },
-        { step: `Slowly stir in the boiling water.`, section: BAKE_CAKE, img: cake2 },
-        { step: `Pour batter into baking pans.`, section: BAKE_CAKE, img: cake3 },
-        { step: `Bake until an inserted toothpick comes out clean (about 25 to 35 minutes).`, section: BAKE_CAKE },
-        { step: `Cool for 5 minutes in the pan.`, section: BAKE_CAKE, img: cake9 },
-        { step: `Transfer to wire rack by just inverting it. Let it completely cool.`, section: BAKE_CAKE },
+        { step: `Preheat oven to 375ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
+        { step: `Line baking pans with parchment paper.`, section: SECTIONS.PREP_PAN },
+
+        { step: `In a mixing bowl, combine the "${CHOCOLATE_CAKE_DRY_INGREDIENTS_SECTION}" section ingredients.`, section: SECTIONS.PREP_BATTER },
+        { step: `In a medium bowl, combine the "${CHOCOLATE_CAKE_WET_INGREDIENTS_SECTION}" section ingredients.`, section: SECTIONS.PREP_BATTER },
+        { step: `Add the wet ingredients to the dry ingredients. Mix.`, section: SECTIONS.PREP_BATTER, img: cake1 },
+        { step: `Slowly stir in the boiling water.`, section: SECTIONS.PREP_BATTER, img: cake2 },
+        { step: `Pour batter into baking pans.`, section: SECTIONS.PREP_BATTER, img: cake3 },
+
+        { step: `Bake until an inserted toothpick comes out clean (about 25 to 35 minutes).`, section: SECTIONS.BAKE },
+
+        { step: `Cool for 5 minutes in the pan.`, section: SECTIONS.COOL, img: cake9 },
+        { step: `Transfer to wire rack by just inverting it. Let it completely cool.`, section: SECTIONS.COOL },
 
         { step: `In a saucepan, combine "${COCONUT_FROSTING_HEATED_INGREDIENTS_SECTION}" section ingredients.`, section: COOK_COCONUT_FROSTING, img: cake4 },
         { step: `Over medium heat, bring the sauce to a low boil. Stir constantly until mixture begins to thicken.`, section: COOK_COCONUT_FROSTING, img: [cake5, cake6] },

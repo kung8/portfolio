@@ -2,17 +2,12 @@
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BROWN_SUGAR, DOUGH_KNIFE, EGG, MILK, OVEN, PLASTIC_WRAP, ROLLING_PIN, SALT, SILICON_BAKING_MAT, STAND_MIXER, UNSALTED_BUTTER, YEAST } = require('./ingredients');
 
-const DOUGH_SECTION = 'Dough';
-const BUTTER_SECTION = 'Butter';
 const EGG_WASH_SECTION = 'Egg Wash';
-
-const MAKE_DOUGH = 'Make Dough';
 const PREP_BUTTER = 'Prep Butter';
 const FIRST_FOLD = 'First Fold';
 const ADDITIONAL_FOLDS = 'Additional Folds';
 const SHAPE_CROISSANTS = 'Shape Croissants';
 const PREP_EGG_WASH = 'Prepare Egg Wash';
-const BAKE_CROISSANTS = 'Bake Croissants';
 
 module.exports = {
     wip: true,
@@ -40,12 +35,12 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...MILK, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'lukewarm', section: DOUGH_SECTION },
-        { ...BROWN_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...YEAST, amount: 13 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...ALL_PURPOSE_FLOUR, amount: 13 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...UNSALTED_BUTTER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BUTTER_SECTION },
+        { ...MILK, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'lukewarm', section: SECTIONS.DOUGH },
+        { ...BROWN_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...YEAST, amount: 13 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...ALL_PURPOSE_FLOUR, amount: 13 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...UNSALTED_BUTTER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BUTTER },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: EGG_WASH_SECTION },
     ],
     appliances: [
@@ -60,11 +55,11 @@ module.exports = {
         SILICON_BAKING_MAT,
     ],
     directions: [
-        { step: `In a stand mixer, combine warm milk, brown sugar and yeast.`, section: MAKE_DOUGH },
-        { step: `Let it sit until it gets foamy and the yeast has dissolved (about 5 minutes).`, section: MAKE_DOUGH },
-        { step: `Add 3 cups of flour and salt. Mix on low until smooth and soft (about 5 minutes). If it is too sticky you can add more flour about 1 tablespoon at a time until the dough is soft and slightly sticky.`, section: MAKE_DOUGH },
-        { step: `Transfer the dough to a clean surface and knead for several minutes.`, section: MAKE_DOUGH },
-        { step: `Place dough back in bowl and cover the bowl with plastic wrap. Chill for an hour.`, section: MAKE_DOUGH },
+        { step: `In a stand mixer, combine warm milk, brown sugar and yeast.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Let it sit until it gets foamy and the yeast has dissolved (about 5 minutes).`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Add 3 cups of flour and salt. Mix on low until smooth and soft (about 5 minutes). If it is too sticky you can add more flour about 1 tablespoon at a time until the dough is soft and slightly sticky.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Transfer the dough to a clean surface and knead for several minutes.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Place dough back in bowl and cover the bowl with plastic wrap. Chill for an hour.`, section: SECTIONS.MAKE_DOUGH },
 
         { step: `On a clean surface, place a large piece of plastic wrap.`, section: PREP_BUTTER },
         { step: `Place the chilled sticks of butter on the plastic and cover with another piece of plastic wrap.`, section: PREP_BUTTER },
@@ -93,9 +88,9 @@ module.exports = {
 
         { step: `Beat the eggs and brush the croissants with the egg wash.`, section: PREP_EGG_WASH },
 
-        { step: `Preheat the oven to 400ºF.`, section: BAKE_CROISSANTS },
-        { step: `Bake for 8 to 12 minutes.`, section: BAKE_CROISSANTS },
-        { step: `Turn heat down to 375ºF and bake until golden brown for another 8 to 12 minutes.`, section: BAKE_CROISSANTS },
+        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Bake for 8 to 12 minutes.`, section: SECTIONS.BAKE },
+        { step: `Turn heat down to 375ºF and bake until golden brown for another 8 to 12 minutes.`, section: SECTIONS.BAKE },
 
         { step: `Enjoy these warm delicious flaky pastries.`, section: SECTIONS.SERVE },
     ],

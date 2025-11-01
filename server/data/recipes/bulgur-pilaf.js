@@ -81,7 +81,7 @@ module.exports = {
         LARGE_POT,
     ],
     directions: [
-        { step: `Preheat the oven to 425ºF.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Preheat the oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Place chicken breast between two pieces of plastic wrap.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Pound chicken with a meat mallet.`, section: SECTIONS.COOK_CHICKEN },
         { step: `In a medium bowl, combine together the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.COOK_CHICKEN },

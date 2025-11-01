@@ -67,7 +67,8 @@ module.exports = {
         COLANDER,
     ],
     directions: [
-        { step: `Preheat the oven to 375ºF.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Preheat the oven to 375ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
         { step: `Generously season the chicken breast with salt and pepper.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Over medium heat, melt butter in an oven-safe pan or pot.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Add the chicken and cook until each side is golden brown (about 4 to 6 minutes each side)`, section: SECTIONS.COOK_CHICKEN, img: chicken1 },
@@ -83,7 +84,8 @@ module.exports = {
         { step: `Add salt and pepper and let the bok choy wilt a little (about 2 minutes). Stir or toss to prevent burning or sticking and help cover the leaves with a little oil.`, section: SECTIONS.MAIN },
         { step: `Add the chopped up chicken and combine.`, section: SECTIONS.MAIN },
         { step: `Add soy sauce and stir for a minute. Turn off the heat for the wok.`, section: SECTIONS.MAIN },
-        { step: `Serve this with some sesame seeds and rice.`, section: SECTIONS.MAIN, img: bokChoy6 },
+
+        { step: `Serve this with some sesame seeds and rice.`, section: SECTIONS.SERVE, img: bokChoy6 },
     ],
     store: [
         {

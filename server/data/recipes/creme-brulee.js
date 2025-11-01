@@ -69,7 +69,7 @@ module.exports = {
         { step: `Use another spoon or knife to scrape off the residual seeds from the knife. Repeat as needed.`, section: VANILLA_SUGAR },
         { step: `Mix and submerge the empty pods in the sugar.`, section: VANILLA_SUGAR, img: brulee1 },
 
-        { step: `Preheat the oven to 325ºF.`, section: SECTIONS.MAIN },
+        { step: `Preheat the oven to 325ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Over medium-high heat, add heavy cream and scraped vanilla beans to a saucepan.`, section: SECTIONS.MAIN, img: [brulee2, brulee3] },
         { step: `Bring to a boil.`, section: SECTIONS.MAIN },
         { step: `Remove from heat.`, section: SECTIONS.MAIN },

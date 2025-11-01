@@ -169,7 +169,7 @@ module.exports = {
         { step: `Place the rolls in the pot and cover. Cooking for about 45 minutes.`, section: PORK_LOAF },
         { step: `Remove the rolls and let cool.`, section: PORK_LOAF },
         { step: `Once you are ready to make the sandwiches, remove the banana leaves, slice and add them to the sandwiches.`, section: PORK_LOAF, img: sandwich4 },
-        { step: `Preheat the oven to 350°F about 15 to 20 minutes before you want to assemble the sandwich.`, section: SECTIONS.MAIN },
+        { step: `Preheat the oven to 350°F about 15 to 20 minutes before you want to assemble the sandwich.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Cut open the roll and spread a light layer of mayo on one side and pate on the other. Add the desired meats.`, section: SECTIONS.MAIN },
         { step: `Warm the rolls in the oven for just a few minutes or until golden brown.`, section: SECTIONS.MAIN },
         { step: `Add the vegetables and a light drizzling of Maggi Seasoning on the pate.`, section: SECTIONS.MAIN },

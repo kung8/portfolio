@@ -43,8 +43,8 @@ module.exports = {
         { ...YEAST, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: YEAST_MIXTURE },
         { ...WHITE_SUGAR, amount: 7, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: YEAST_MIXTURE },
 
-        { ...EVAPORATED_MILK, amount: 1, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', section: LIQUID_MIXTURE },
-        { ...WATER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: LIQUID_MIXTURE },
+        { ...EVAPORATED_MILK, amount: 1, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...WATER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cold', section: SECTIONS.WET_INGREDIENTS },
 
         { ...SALT, amount: 9 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
         { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
@@ -65,11 +65,11 @@ module.exports = {
         { step: `In a medium bowl, combine the "${YEAST_MIXTURE}" section ingredients.`, section: YEAST_MIXTURE },
         { step: `Let mixture sit for 3 to 5 minutes.`, section: YEAST_MIXTURE, img: rolls1 },
 
-        { step: `In a mixing bowl, combine the "${LIQUID_MIXTURE}" section ingredients.`, section: LIQUID_MIXTURE, img: rolls2 },
-        { step: `Add yeast mixture into liquid mixture. Mix.`, section: LIQUID_MIXTURE },
+        { step: `In a mixing bowl, combine the "${SECTIONS.WET_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_WET_INGREDIENTS, img: rolls2 },
+        { step: `Add yeast mixture into liquid mixture. Mix.`, section: SECTIONS.PREP_WET_INGREDIENTS },
 
-        { step: `Preheat the oven to 325ºF.`, section: SECTIONS.MAIN },
-        { step: `Place silicon baking mat on baking sheet.`, section: SECTIONS.MAIN },
+        { step: `Preheat the oven to 325ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Place silicon baking mat on baking sheet.`, section: SECTIONS.PREP_PAN },
         { step: `Add main ingredients to the mixing bowl and combine.`, section: SECTIONS.MAIN, img: rolls3 },
         { step: `Split the dough into four equal parts.`, section: SECTIONS.MAIN, img: rolls4 },
         { step: `Roll out dough into large circles (like pizza dough shape).`, section: SECTIONS.MAIN, img: rolls5 },
@@ -77,8 +77,10 @@ module.exports = {
         { step: `Separate. Roll each wedge from the outside to the center.`, section: SECTIONS.MAIN, img: rolls7 },
         { step: `Place rolls on prepared baking sheet and let them rise for about 1 hour.`, section: SECTIONS.MAIN, img: rolls8 },
         { step: `Baste with butter.`, section: SECTIONS.MAIN },
-        { step: `Bake for 20 minutes.`, section: SECTIONS.MAIN },
-        { step: `Eat these rolls warm.`, section: SECTIONS.MAIN, img: rolls10 },
+
+        { step: `Bake for 20 minutes.`, section: SECTIONS.BAKE },
+
+        { step: `Eat these rolls warm.`, section: SECTIONS.SERVE, img: rolls10 },
     ],
     store: [
         {

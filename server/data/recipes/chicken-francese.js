@@ -66,7 +66,7 @@ module.exports = {
         { step: `Over medium heat, heat oil in a pan.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Add chicken and saute until almost cooked through (about 4 minutes per side).`, section: SECTIONS.COOK_CHICKEN },
         { step: `Transfer to the plate.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Preheat oven to 300ºF.`, section: SECTIONS.PREP_SAUCE },
+        { step: `Preheat oven to 300ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Over medium-low heat, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
         { step: `Cook until butter melts, stirring occasionally.`, section: SECTIONS.PREP_SAUCE },
         { step: `In a small bowl, combine cornstarch and water.`, section: SECTIONS.PREP_SAUCE },

@@ -52,17 +52,21 @@ module.exports = {
         BAKING_PAN,
     ],
     directions: [
-        { step: `Preheat the oven to 425ºF.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Combine the "${SECTIONS.SEASONINGS}" section ingredients in a small bowl.`, section: SECTIONS.COOK_CHICKEN, img: breast2 },
-        { step: `Cut the chicken breast in half horizontally.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Pound the chicken to 1/2 inch with the meat mallet.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Dry the chicken with paper towels.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Place chicken inside the baking pan.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Drizzle half of the olive oil. Sprinkle the seasoning over the chicken.`, section: SECTIONS.COOK_CHICKEN, img: breast1 },
-        { step: `Flip. Repeat the olive oil and seasoning on the other side.`, section: SECTIONS.COOK_CHICKEN, img: breast3 },
-        { step: `Bake until chicken is golden brown (about 18 minutes).`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Remove from the oven and transfer to serving plates immediately.`, section: SECTIONS.COOK_CHICKEN, img: breast4 },
-        { step: `Let the chicken rest for 3 to 5 minutes before serving.`, section: SECTIONS.COOK_CHICKEN, img: breast5 },
+        { step: `Preheat the oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
+        { step: `Combine the "${SECTIONS.SEASONINGS}" section ingredients in a small bowl.`, section: SECTIONS.PREP_CHICKEN, img: breast2 },
+        { step: `Cut the chicken breast in half horizontally.`, section: SECTIONS.PREP_CHICKEN },
+        { step: `Pound the chicken to 1/2 inch with the meat mallet.`, section: SECTIONS.PREP_CHICKEN },
+        { step: `Dry the chicken with paper towels.`, section: SECTIONS.PREP_CHICKEN },
+        { step: `Place chicken inside the baking pan.`, section: SECTIONS.PREP_CHICKEN },
+        { step: `Drizzle half of the olive oil. Sprinkle the seasoning over the chicken.`, section: SECTIONS.PREP_CHICKEN, img: breast1 },
+        { step: `Flip. Repeat the olive oil and seasoning on the other side.`, section: SECTIONS.PREP_CHICKEN, img: breast3 },
+
+        { step: `Bake until chicken is golden brown (about 18 minutes).`, section: SECTIONS.BAKE },
+        
+        { step: `Remove from the oven and transfer to serving plates immediately.`, section: SECTIONS.COOL, img: breast4 },
+        { step: `Let the chicken rest for 3 to 5 minutes before serving.`, section: SECTIONS.COOL, img: breast5 },
+
         { step: `Enjoy these juicy chicken slices.`, section: SECTIONS.SERVE },
     ],
     store: [

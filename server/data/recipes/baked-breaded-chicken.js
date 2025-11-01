@@ -79,7 +79,7 @@ module.exports = {
     directions: [
         { step: `In a mixing bowl, combine the breading ingredients.`, section: BREADING, img: chicken1 },
         { step: `In a small bowl, combine the dredging ingredients.`, section: DREDGING, img: chicken2 },
-        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.MAIN },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Season the chicken with salt and black pepper generously.`, section: SECTIONS.MAIN, img: chicken3 },
         { step: `Dip the chicken in the dredging bowl then dip the chicken into the breading. Make sure to cover all of it.`, section: SECTIONS.MAIN },
         { step: `Place the breaded chicken in a baking dish.`, section: SECTIONS.MAIN, img: chicken4 },

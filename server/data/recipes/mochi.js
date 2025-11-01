@@ -52,7 +52,7 @@ module.exports = {
         KNIFE,
     ],
     directions: [
-        { step: `Preheat the oven to 350ºF.`, section: MOCHI },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Grease the baking pan.`, section: MOCHI },
         { step: `In a mixing bowl, combine the "Mochi" ingredients.`, section: MOCHI, img: [mochi1, mochi2] },
         { step: `Pour mochi batter into the baking pan.`, section: MOCHI, img: mochi3 },

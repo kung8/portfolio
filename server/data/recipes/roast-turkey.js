@@ -30,11 +30,8 @@ const {
     UNSALTED_BUTTER,
 } = require('./ingredients');
 
-const TURKEY_SECTION = 'Turkey';
 const HERB_BUTTER_RUB = 'Herb Butter Rub';
 const CAVITY_FILLING = 'Cavity Filling';
-const PREPARING_TURKEY = 'Preparing Turkey';
-const COOKING_TURKEY = 'Cooking Turkey';
 
 module.exports = {
     cardName: 'Roast Turkey',
@@ -61,18 +58,19 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...TURKEY, amount: '', unit: '', additionalDetails: 'desired size', section: TURKEY_SECTION },
-
         { ...UNSALTED_BUTTER, amount: 16, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'softened', section: HERB_BUTTER_RUB },
         { ...THYME, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HERB_BUTTER_RUB },
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: HERB_BUTTER_RUB },
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: HERB_BUTTER_RUB },
         { ...BLACK_PEPPER, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: HERB_BUTTER_RUB },
-
+        
+        { ...TURKEY, amount: '', unit: '', additionalDetails: 'desired size', section: SECTIONS.TURKEY },
+        
         { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.HEAD, additionalDetails: 'halved', section: CAVITY_FILLING },
         { ...LEMON, amount: 2, unit: '', additionalDetails: 'sliced', section: CAVITY_FILLING },
         { ...ROSEMARY, amount: 6, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: '', section: CAVITY_FILLING },
-        { ...OLIVE_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: TURKEY_SECTION },
+
+        { ...OLIVE_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.OIL },
     ],
     appliances: [
         { name: 'oven' },
@@ -85,24 +83,26 @@ module.exports = {
         { name: 'internal thermometer' },
     ],
     directions: [
-        { step: `In a medium bowl, combine together the the herb butter ingredients.`, section: HERB_BUTTER_RUB, img: [turkey1, turkey2, turkey3] },
+        { step: `In a medium bowl, combine the "${HERB_BUTTER_RUB}" section ingredients.`, section: HERB_BUTTER_RUB, img: [turkey1, turkey2, turkey3] },
         { step: `Divide the rub in half. Place half in the fridge.`, section: HERB_BUTTER_RUB },
 
-        { step: `Preheat oven to 425ºF and set oven rack to the lowest level.`, section: PREPARING_TURKEY },
-        { step: `Bring turkey to room temperature, clean, and pat dry.`, section: PREPARING_TURKEY, img: turkey4 },
-        { step: `Loosen the skin of the turkey by gently sliding your fingers between the skin and the meat.`, section: PREPARING_TURKEY },
-        { step: `Using your hands, rub half the softened herb butter on the turkey and in between the loosened skin. Then generously season with salt and pepper.`, section: PREPARING_TURKEY, img: turkey5 },
-        { step: `Place turkey breast-side down and drizzle with part of the oil.`, section: PREPARING_TURKEY, img: [turkey6, turkey7] },
+        { step: `Preheat oven to 425ºF and set oven rack to the lowest level.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Bring turkey to room temperature, clean, and pat dry.`, section: SECTIONS.PREP_TURKEY, img: turkey4 },
+        { step: `Loosen the skin of the turkey by gently sliding your fingers between the skin and the meat.`, section: SECTIONS.PREP_TURKEY },
+        { step: `Using your hands, rub half the softened herb butter on the turkey and in between the loosened skin. Then generously season with salt and pepper.`, section: SECTIONS.PREP_TURKEY, img: turkey5 },
+        { step: `Place turkey breast-side down and drizzle with part of the oil.`, section: SECTIONS.PREP_TURKEY, img: [turkey6, turkey7] },
 
-        { step: `Roast uncovered for 30 min for small turkey or 45 min for large turkey.`, section: COOKING_TURKEY },
-        { step: `Remove turkey from oven. Turn down the oven to 325ºF.`, section: COOKING_TURKEY, img: turkey8 },
-        { step: `Carefully flip the turkey and baste with pan juice.`, section: COOKING_TURKEY },
-        { step: `Stuff the turkey cavity with the "Cavity Filling".`, section: COOKING_TURKEY, img: [turkey9, turkey10] },
-        { step: `Use a brush to spread some more herb rub on the turkey. Save some for one more slathering.`, section: COOKING_TURKEY },
-        { step: `Roast uncovered for another hour.`, section: COOKING_TURKEY },
-        { step: `Use a brush to spread the remaining herb rub and roast for an additional 30 min for small turkey or 1 hr for large turkey.`, section: COOKING_TURKEY, img: turkey11 },
-        { step: `Cook for an additional 30 minutes to 1 hour until the turkey reaches 165ºF. If the turkey is browning too quickly, tent the turkey with some foil.`, section: COOKING_TURKEY, img: turkey12 },
-        { step: `Let the turkey rest for 20 - 30 min before you carve and serve. Letting it rest allows for moisture and juices to spread throughout the turkey. While the turkey was cooking the juices were evaporated, so it would be dry.`, section: COOKING_TURKEY, img: turkey13 },
+        { step: `Roast uncovered for 30 min for small turkey or 45 min for large turkey.`, section: SECTIONS.BAKE },
+        { step: `Remove turkey from oven. Turn down the oven to 325ºF.`, section: SECTIONS.BAKE, img: turkey8 },
+        { step: `Carefully flip the turkey and baste with pan juice.`, section: SECTIONS.BAKE },
+        { step: `Stuff the turkey cavity with the "${CAVITY_FILLING}" section ingredients.`, section: SECTIONS.BAKE, img: [turkey9, turkey10] },
+        { step: `Use a brush to spread some more herb rub on the turkey. Save some for one more slathering.`, section: SECTIONS.BAKE },
+        { step: `Roast uncovered for another hour.`, section: SECTIONS.BAKE },
+        { step: `Use a brush to spread the remaining herb rub and roast for an additional 30 min for small turkey or 1 hr for large turkey.`, section: SECTIONS.BAKE, img: turkey11 },
+        { step: `Cook for an additional 30 minutes to 1 hour until the turkey reaches 165ºF. If the turkey is browning too quickly, tent the turkey with some foil.`, section: SECTIONS.BAKE, img: turkey12 },
+
+        { step: `Let the turkey rest for 20 - 30 min before you carve and serve. Letting it rest allows for moisture and juices to spread throughout the turkey. While the turkey was cooking the juices were evaporated, so it would be dry.`, section: SECTIONS.COOL, img: turkey13 },
+
         { step: `Enjoy the moist turkey slices with many other holiday favorites!`, section: SECTIONS.SERVE, img: turkey14 },
     ],
     notes: [

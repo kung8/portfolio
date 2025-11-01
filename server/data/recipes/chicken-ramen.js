@@ -92,7 +92,7 @@ module.exports = {
         SERVING_BOWL,
     ],
     directions: [
-        { step: `Preheat the oven to 375ºF.`, section: SECTIONS.CHICKEN },
+        { step: `Preheat the oven to 375ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Generously season the chicken breast with salt and pepper.`, section: SECTIONS.CHICKEN },
         { step: `Over medium heat, melt butter in an oven-safe pan or pot.`, section: SECTIONS.CHICKEN },
         { step: `Add the chicken and cook until each side is golden brown (about 4 to 6 minutes each side)`, section: SECTIONS.CHICKEN, img: ramen1 },

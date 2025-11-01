@@ -84,7 +84,7 @@ module.exports = {
         MEDIUM_BOWL,
     ],
     directions: [
-        { step: `Preheat the oven to 350ºF.`, section: CREAM_SUGARS },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Melt butter.`, section: CREAM_SUGARS, img: blondie1 },
         { step: `In a mixing bowl, combine "${SUGARS_SECTION}" section ingredients until well mixed.`, section: CREAM_SUGARS, img: blondie2 },
         { step: `Add "${WET_INGREDIENTS}" section ingredients. Combine.`, section: ADD_WET_INGREDIENTS, img: blondie3 },

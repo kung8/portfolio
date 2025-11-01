@@ -79,8 +79,8 @@ module.exports = {
     ],
     directions: [
         { step: `In a small bowl, combine the sugar and cinnamon together.`, section: COATING, img: cookie1 },
-        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.MAIN },
-        { step: `Place the silicon baking mat on the baking sheet.`, section: SECTIONS.MAIN },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Place the silicon baking mat on the baking sheet.`, section: SECTIONS.PREP_PAN },
         { step: `In a mixing bowl, mix the softened butter until it is a consistent cream-like texture.`, section: SECTIONS.MAIN, img: cookie2 },
         { step: `Cream together the sugar with the butter.`, section: SECTIONS.MAIN, img: cookie3 },
         { step: `Combine vanilla and eggs to the creamed butter mixture.`, section: SECTIONS.MAIN },
@@ -88,8 +88,8 @@ module.exports = {
         { step: `Create 1 inch dough balls and place them on a plate to be rolled in the cinnamon-sugar mixture in the next step. I recommend this to keep your hands clean of the cinnamon-sugar.`, section: SECTIONS.MAIN, img: cookie5 },
         { step: `Roll each ball in the cinnamon-sugar mixture.`, section: SECTIONS.MAIN, img: cookie6 },
         { step: `Place the coated dough balls on a baking sheet about 2-inches apart.`, section: SECTIONS.MAIN, img: cookie7 },
-        { step: `Bake for 8 to 10 minutes.`, section: SECTIONS.MAIN, img: cookie8 },
-        { step: `Enjoy these quick, light treats in any mood and any time of the day.`, section: SECTIONS.MAIN, img: cookie9 },
+        { step: `Bake for 8 to 10 minutes.`, section: SECTIONS.BAKE, img: cookie8 },
+        { step: `Enjoy these quick, light treats in any mood and any time of the day.`, section: SECTIONS.SERVE, img: cookie9 },
     ],
     store: [
         {

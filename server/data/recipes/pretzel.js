@@ -72,16 +72,18 @@ module.exports = {
         BAKING_SHEET,
     ],
     directions: [
-        { step: `In a stand mixer bowl, whisk yeast and warm water.`, section: SECTIONS.DOUGH },
-        { step: `Let it stand for 1 minute.`, section: SECTIONS.DOUGH },
-        { step: `Whisk in salt, brown sugar, and melted butter into mixer.`, section: SECTIONS.DOUGH, img: pretzel1 },
-        { step: `Add 3 cups of flour into the mix, one at a time.`, section: SECTIONS.DOUGH },
-        { step: `Continue to mix until the dough is no longer sticky. Add 3/4 to 1 cup of flour to help with the stickiness.`, section: SECTIONS.DOUGH, img: pretzel2 },
-        { step: `Once that is ready, continue mixing for a few more minutes (or you can knead the dough).`, section: SECTIONS.DOUGH },
-        { step: `Form the dough into a ball.`, section: SECTIONS.DOUGH, img: pretzel3 },
-        { step: `Cover with a light towel and let sit for 10 minutes.`, section: SECTIONS.DOUGH },
-        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.MAIN },
-        { step: `Prepare baking sheets by lining them with silicon baking mats.`, section: SECTIONS.MAIN },
+        { step: `In a stand mixer bowl, whisk yeast and warm water.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Let it stand for 1 minute.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Whisk in salt, brown sugar, and melted butter into mixer.`, section: SECTIONS.MAKE_DOUGH, img: pretzel1 },
+        { step: `Add 3 cups of flour into the mix, one at a time.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Continue to mix until the dough is no longer sticky. Add 3/4 to 1 cup of flour to help with the stickiness.`, section: SECTIONS.MAKE_DOUGH, img: pretzel2 },
+        { step: `Once that is ready, continue mixing for a few more minutes (or you can knead the dough).`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Form the dough into a ball.`, section: SECTIONS.MAKE_DOUGH, img: pretzel3 },
+        { step: `Cover with a light towel and let sit for 10 minutes.`, section: SECTIONS.MAKE_DOUGH },
+
+        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Prepare baking sheets by lining them with silicon baking mats.`, section: SECTIONS.PREP_PAN },
+
         { step: `Over medium heat, boil water and the baking soda.`, section: SECTIONS.MAIN },
         { step: `Divide the dough into about 12 balls (1/3 cup sections).`, section: SECTIONS.MAIN },
         { step: `Roll each dough ball into 20"-22" ropes on a clean counter.`, section: SECTIONS.MAIN, img: pretzel4 },
@@ -89,7 +91,8 @@ module.exports = {
         { step: `Once all of the pretzels are created, you will carefully drop in one or two pretzels at a time into the boiling water. And let each of the pretzels sit in the water for 20 to 30 seconds.`, section: SECTIONS.MAIN, img: pretzel6 },
         { step: `Remove each pretzel with a slotted spatula and let the excess water drain.`, section: SECTIONS.MAIN, img: pretzel7 },
         { step: `Place on the baking sheet and sprinkle coarse salt as desired.`, section: SECTIONS.MAIN, img: pretzel8 },
-        { step: `Bake for 12 to 15 minutes, or until they are golden brown.`, section: SECTIONS.MAIN, img: pretzel9 },
+        
+        { step: `Bake for 12 to 15 minutes, or until they are golden brown.`, section: SECTIONS.BAKE, img: pretzel9 },
     ],
     store: [
         {

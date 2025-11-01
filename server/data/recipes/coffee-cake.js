@@ -25,14 +25,10 @@ const cake23 = '../assets/Products/coffee-cake-23.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_PAN, BAKING_POWDER, BROWN_SUGAR, BUTTERMILK, CINNAMON, COOKING_SPRAY, CORNSTARCH, CREAM_CHEESE, EGG, MEDIUM_BOWL, MILK, MIXING_BOWL, OVEN, POWDERED_SUGAR, SALT, SMALL_BOWL, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
-const WET_CAKE_BATTER = 'Wet Cake Batter';
-const DRY_CAKE_BATTER = 'Dry Cake Batter';
 const CINNAMON_SWIRL_SECTION = 'Cinnamon Swirl';
 const STREUSEL_SECTION = 'Streusel';
 const GLAZE_SECTION = 'Glaze';
 
-const MAKE_WET_BATTER = 'Make Wet Batter';
-const MAKE_DRY_BATTER = 'Make Dry Batter';
 const COMBINE_BATTERS = 'Combine Batters';
 const MAKE_CINNAMON_SWIRL = 'Make Cinnamon Swirl';
 const MAKE_STREUSEL_CRUMBLE = 'Make Streusel Crumble';
@@ -54,26 +50,27 @@ module.exports = {
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Coffee Cake', 
+        {
+            label: 'Coffee Cake',
             link: 'https://sugarspunrun.com/cinnamon-coffee-cake/',
             authors: ['Sam Merritt'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_CAKE_BATTER },
-        { ...CREAM_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: WET_CAKE_BATTER },
-        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_CAKE_BATTER },
-        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_CAKE_BATTER },
-        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: WET_CAKE_BATTER },
-        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WET_CAKE_BATTER },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...CREAM_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...VANILLA_EXTRACT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
 
-        { ...ALL_PURPOSE_FLOUR, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_CAKE_BATTER },
-        { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_CAKE_BATTER },
-        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_CAKE_BATTER },
-        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_CAKE_BATTER },
-        { ...BUTTERMILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_CAKE_BATTER },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        
+        { ...BUTTERMILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
 
         { ...WHITE_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CINNAMON_SWIRL_SECTION },
         { ...CINNAMON, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CINNAMON_SWIRL_SECTION },
@@ -101,14 +98,14 @@ module.exports = {
         SMALL_BOWL,
     ],
     directions: [
-        { step: `Preheat the oven to 350ºF.`, section: MAKE_WET_BATTER },
-        { step: `Spray a baking pan with a cooking spray.`, section: MAKE_WET_BATTER },
-        { step: `In a stand mixer, cream together butter and cream cheese.`, section: MAKE_WET_BATTER, img: [cake1, cake2] },
-        { step: `Mix in white and brown sugars until combined.`, section: MAKE_WET_BATTER, img: [cake3, cake4] },
-        { step: `Beat in eggs, one at a time.`, section: MAKE_WET_BATTER, img: cake5 },
-        { step: `Add vanilla. Mix.`, section: MAKE_WET_BATTER, img: cake6 },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Spray a baking pan with a cooking spray.`, section: SECTIONS.PREP_WET_INGREDIENTS },
+        { step: `In a stand mixer, cream together butter and cream cheese.`, section: SECTIONS.PREP_WET_INGREDIENTS, img: [cake1, cake2] },
+        { step: `Mix in white and brown sugars until combined.`, section: SECTIONS.PREP_WET_INGREDIENTS, img: [cake3, cake4] },
+        { step: `Beat in eggs, one at a time.`, section: SECTIONS.PREP_WET_INGREDIENTS, img: cake5 },
+        { step: `Add vanilla. Mix.`, section: SECTIONS.PREP_WET_INGREDIENTS, img: cake6 },
 
-        { step: `In another mixing bowl, combine the flour, baking powder, cornstarch and salt.`, section: MAKE_DRY_BATTER, img: cake7 },
+        { step: `In another mixing bowl, combine the flour, baking powder, cornstarch and salt.`, section: SECTIONS.PREP_DRY_INGREDIENTS, img: cake7 },
 
         { step: `Measure out the buttermilk.`, section: COMBINE_BATTERS },
         { step: `Alternate adding ingredients to the wet batter: 1/3 dry, 1/2 buttermilk, 1/3 dry, 1/2 buttermilk, 1/3 dry.`, section: COMBINE_BATTERS, img: [cake8, cake9] },

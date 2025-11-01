@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BLACK_PEPPER, CHEDDAR_CHEESE, DICED_TOMATO, GARLIC_POWDER, GREEN_BELL_PEPPER, GROUND_BEEF, RED_BELL_PEPPER, SALT, WHITE_RICE, YELLOW_ONION } = require('./ingredients');
+const { BLACK_PEPPER, CHEDDAR_CHEESE, DICED_TOMATO, GARLIC_POWDER, GREEN_BELL_PEPPER, GROUND_BEEF, RED_BELL_PEPPER, SALT, WHITE_RICE, YELLOW_ONION, FRYING_PAN, BAKING_PAN, OVEN, STOVE } = require('./ingredients');
 
 const REST_OF_FILLING_SECTION = 'Rest of Filling';
 const COOK_INGREDIENTS = 'Cook Ingredients';
@@ -45,23 +45,26 @@ module.exports = {
         { ...CHEDDAR_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stove' },
+        OVEN,
+        STOVE,
     ],
     supplies: [
-        { name: 'frying pan' },
-        { name: 'baking pan' },
+        FRYING_PAN,
+        BAKING_PAN,
     ],
     directions: [
-        { step: `Preheat the oven to 350ºF.`, section: COOK_INGREDIENTS },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
         { step: `Over medium heat, brown ground beef until no longer pink.`, section: COOK_INGREDIENTS },
         { step: `Drain.`, section: COOK_INGREDIENTS },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Saute until vegetables are tender (about 5 minutes).`, section: COOK_INGREDIENTS },
         { step: `Add the "${REST_OF_FILLING_SECTION}" section ingredients. Mix and let simmer for 2 to 3 minutes.`, section: COOK_INGREDIENTS },
+
         { step: `Transfer to baking pan.`, section: COOK_CASSEROLE },
         { step: `Top with shredded cheese.`, section: COOK_CASSEROLE },
         { step: `Bake until cheese is golden and bubbly (about 20 minutes).`, section: COOK_CASSEROLE },
         { step: `Let it rest for a few minutes.`, section: COOK_CASSEROLE },
+
         { step: `Enjoy this recipe made easier as a casserole dish!`, section: SECTIONS.SERVE },
     ],
     store: [

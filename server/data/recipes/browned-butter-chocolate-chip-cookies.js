@@ -58,7 +58,7 @@ module.exports = {
         COOLING_RACK,
     ],
     directions: [
-        { step: `Preheat the oven to 415ºF.`, section: SECTIONS.MAIN },
+        { step: `Preheat the oven to 415ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Place silicon baking mats on baking sheets.`, section: SECTIONS.MAIN },
         { step: `In a mixing bowl, combine the "Sugars" ingredients.`, section: SECTIONS.MAIN },
         { step: `Add the "Eggs" ingredients one at a time.`, section: SECTIONS.MAIN },

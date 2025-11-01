@@ -9,7 +9,7 @@ const biscuits8 = '../assets/Products/biscuits-and-gravy-8.jpeg';
 const biscuits9 = '../assets/Products/biscuits-and-gravy-9.jpeg';
 const biscuits10 = '../assets/Products/biscuits-and-gravy-10.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS, ALLERGIES, DIET } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, SECTIONS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS, ALLERGIES, DIET } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
@@ -92,7 +92,8 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: `Preheat the oven to 475ºF.`, section: BISCUITS },
+        { step: `Preheat the oven to 475ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
         { step: `In a mixing bowl, add the flour, baking powder, baking soda, and salt. And combine.`, section: BISCUITS, img: biscuits1 },
         { step: `Add cold butter pieces to the mixture. Use your hands to coat the butter with the flour mixture then squeeze and squish the butter until they are the size of a pea.`, section: BISCUITS, img: biscuits2 },
         { step: `Make a well in the center of the mixture and pour in the buttermilk slowly. Combine with your hands until everything is well mixed. Do not overmix. It will look like it is too wet but that is okay. We are adding some flour later to help thicken and make it less sticky.`, section: BISCUITS, img: biscuits3 },

@@ -18,13 +18,14 @@ const meatball17 = '../assets/Products/swedish-meatball-17.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALLSPICE, ALL_PURPOSE_FLOUR, ALUMINUM_FOIL, BAKING_PAN, BEEF_BROTH, BLACK_PEPPER, BREADCRUMBS, BROWN_SUGAR, CHICKEN_BROTH, EGG, FRYING_PAN, GROUND_BEEF, GROUND_GINGER, GROUND_PORK, HEAVY_CREAM, MIXING_BOWL, NUTMEG, OVEN, SALT, SAUCEPAN, SERVING_PLATE, SMALL_BOWL, SOUR_CREAM, STOVE, UNSALTED_BUTTER, YELLOW_ONION } = require('./ingredients');
 
-const PREP_OVEN = 'Prep Oven';
 const BREADCRUMB_MIXTURE = 'Breadcrumb Mixture';
 const SWEDISH_MEATBALLS = 'Swedish Meatballs';
 const PAN_FRY_MEATBALLS = 'Pan Fry Meatballs';
 const BAKING = 'Baking';
 const GRAVY_SECTION = 'Gravy Section';
 
+const PREP_BREADCRUMB_MIXTURE = 'Prep Breadcrumb Mixture';
+const PREP_SWEDISH_MEATBALLS = 'Prep Swedish Meatballs';
 const MAKE_GRAVY = 'Make Gravy';
 
 module.exports = {
@@ -67,7 +68,9 @@ module.exports = {
         { ...GROUND_GINGER, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SWEDISH_MEATBALLS },
 
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PAN_FRY_MEATBALLS },
+
         { ...CHICKEN_BROTH, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BAKING },
+
         { ...ALL_PURPOSE_FLOUR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'or as needed', section: GRAVY_SECTION },
         { ...BEEF_BROTH, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'or as needed', section: GRAVY_SECTION },
         { ...SOUR_CREAM, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: GRAVY_SECTION },
@@ -86,28 +89,33 @@ module.exports = {
         SAUCEPAN,
     ],
     directions: [
-        { step: `Preheat the oven to 350ºF.`, section: PREP_OVEN },
-        { step: `In a small bowl, combine bread crumbs and cream.`, section: BREADCRUMB_MIXTURE, img: meatball1 },
-        { step: `Let sit for 10 minutes to absorb the cream.`, section: BREADCRUMB_MIXTURE },
-        { step: `Over medium heat, melt butter in a pan.`, section: SWEDISH_MEATBALLS },
-        { step: `Add onions and cook until light brown (about 10 minutes).`, section: SWEDISH_MEATBALLS, img: meatball2 },
-        { step: `In the mixing bowl, add the remaining "Swedish Meatball" ingredients and combine.`, section: SWEDISH_MEATBALLS, img: [meatball3, meatball4, meatball5, meatball6] },
-        { step: `Add onions to the mixing bowl.`, section: SWEDISH_MEATBALLS, img: [meatball7, meatball8] },
-        { step: `Lightly stir the breadcrumb mixture into the meat mixture.`, section: SWEDISH_MEATBALLS, img: [meatball9, meatball10] },
-        { step: `Form the meatballs into about 2 inch balls.`, section: SWEDISH_MEATBALLS, img: meatball11 },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
+        { step: `In a small bowl, combine bread crumbs and cream.`, section: PREP_BREADCRUMB_MIXTURE, img: meatball1 },
+        { step: `Let sit for 10 minutes to absorb the cream.`, section: PREP_BREADCRUMB_MIXTURE },
+
+        { step: `Over medium heat, melt butter in a pan.`, section: PREP_SWEDISH_MEATBALLS },
+        { step: `Add onions and cook until light brown (about 10 minutes).`, section: PREP_SWEDISH_MEATBALLS, img: meatball2 },
+        { step: `In the mixing bowl, add the remaining "${SWEDISH_MEATBALLS}" section ingredients and combine.`, section: PREP_SWEDISH_MEATBALLS, img: [meatball3, meatball4, meatball5, meatball6] },
+        { step: `Add onions to the mixing bowl.`, section: PREP_SWEDISH_MEATBALLS, img: [meatball7, meatball8] },
+        { step: `Lightly stir the breadcrumb mixture into the meat mixture.`, section: PREP_SWEDISH_MEATBALLS, img: [meatball9, meatball10] },
+        { step: `Form the meatballs into about 2 inch balls.`, section: PREP_SWEDISH_MEATBALLS, img: meatball11 },
+
         { step: `Over medium heat, melt butter in a pan.`, section: PAN_FRY_MEATBALLS },
         { step: `Add the meatballs to the pan.`, section: PAN_FRY_MEATBALLS, img: meatball13 },
         { step: `Cook while turning often until browned (about 5 minutes). The inside of the meatballs should still be pink.`, section: PAN_FRY_MEATBALLS },
-        { step: `Transfer meatballs to a baking dish.`, section: BAKING },
-        { step: `Add chicken broth and cover with aluminum foil.`, section: BAKING, img: [meatball15, meatball14] },
-        { step: `Bake until meatballs are tender (about 40 minutes).`, section: BAKING, img: meatball16 },
-        { step: `Transfer meatballs to a serving dish.`, section: BAKING },
+
+        { step: `Transfer meatballs to a baking dish.`, section: SECTIONS.BAKE },
+        { step: `Add chicken broth and cover with aluminum foil.`, section: SECTIONS.BAKE, img: [meatball15, meatball14] },
+        { step: `Bake until meatballs are tender (about 40 minutes).`, section: SECTIONS.BAKE, img: meatball16 },
+        { step: `Transfer meatballs to a serving dish.`, section: SECTIONS.BAKE },
 
         { step: `Pour drippings from the baking dish into a saucepan.`, section: MAKE_GRAVY },
         { step: `Over medium heat, whisk in flour.`, section: MAKE_GRAVY },
         { step: `Add beef broth and whisk. Add more beef broth until there is about 2 1/2 cups of gravy.`, section: MAKE_GRAVY },
         { step: `Let the gravy simmer while stirring constantly until it has thickened (about 5 minutes).`, section: MAKE_GRAVY },
         { step: `Right before serving, stir in sour cream, salt and pepper.`, section: MAKE_GRAVY },
+
         { step: `Serve the gravy sauce over the meatballs and enjoy!`, section: SECTIONS.SERVE },
     ],
     store: [

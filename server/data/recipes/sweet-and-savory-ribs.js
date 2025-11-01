@@ -71,7 +71,7 @@ module.exports = {
         { step: `Combine the ribs in the marinade.`, section: PREP_RIBS, img: [ribs2, ribs3, ribs4] },
         { step: `Cover and marinate the ribs overnight.`, section: PREP_RIBS },
 
-        { step: `Preheat the oven to 350ºF.`, section: COOK_RIBS },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Place ribs in a baking dish in a single layer.`, section: COOK_RIBS, img: [ribs5, ribs6] },
         { step: `Tent the aluminum foil.`, section: COOK_RIBS },
         { step: `Bake until the ribs are about 70% cooked (about 45 minutes to 1 hour depending on the rib thickness).`, section: COOK_RIBS, img: ribs7 },

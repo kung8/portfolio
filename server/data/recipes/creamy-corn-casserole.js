@@ -7,10 +7,6 @@ const casserole5 = '../assets/Products/corn-casserole-5.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CANNED_CREAMED_CORN, CANNED_SWEET_CORN, CASSEROLE_DISH, CORNBREAD_MIX, EGG, MIXING_BOWL, OVEN, SOUR_CREAM, UNSALTED_BUTTER } = require('./ingredients');
 
-const PREP_BAKE = 'Prep Bake';
-const PREP_BATTER = 'Prep Batter';
-const BAKE = 'Bake';
-
 module.exports = {
     cardName: 'Creamy Corn Casserole',
     name: 'Creamy Corn Casserole',
@@ -27,11 +23,11 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Creamy Corn Casserole', 
+        {
+            label: 'Creamy Corn Casserole',
             link: 'https://www.allrecipes.com/recipe/18906/awesome-and-easy-creamy-corn-casserole/',
             authors: ['Ruth Phillips'],
-            finder: 'Samantha Pham', 
+            finder: 'Samantha Pham',
         }
     ],
     ingredients: [
@@ -50,11 +46,11 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: `Preheat the oven to 350ºF.`, section: PREP_BAKE },
-        { step: `Lightly grease a casserole dish.`, section: PREP_BAKE },
-        { step: `In a mixing bowl, combine all the ingredients.`, section: PREP_BATTER, img: [casserole1, casserole2] },
-        { step: `Pour batter into the casserole dish.`, section: PREP_BATTER, img: casserole3 },
-        { step: `Bake until the top is golden brown and a toothpick comes out clean (about 45 minutes).`, section: BAKE, img: casserole4 },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Lightly grease a casserole dish.`, section: SECTIONS.PREP_PAN },
+        { step: `In a mixing bowl, combine all the ingredients.`, section: SECTIONS.PREP_BATTER, img: [casserole1, casserole2] },
+        { step: `Pour batter into the casserole dish.`, section: SECTIONS.PREP_BATTER, img: casserole3 },
+        { step: `Bake until the top is golden brown and a toothpick comes out clean (about 45 minutes).`, section: SECTIONS.BAKE, img: casserole4 },
         { step: `Enjoy this simple casserole and crowd pleaser.`, section: SECTIONS.SERVE },
     ],
     store: [

@@ -60,7 +60,7 @@ module.exports = {
         BASTING_BRUSH,
     ],
     directions: [
-        { step: `Preheat the oven to 450ºF.`, section: PREP_BATTER },
+        { step: `Preheat the oven to 450ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Line a baking sheet with aluminum foil.`, section: PREP_BATTER },
         { step: `In a mixing bowl, combine the "${FIRST_MIX_SECTION}" section ingredients.`, section: PREP_BATTER },
         { step: `Mix until flaky and small balls form.`, section: PREP_BATTER },

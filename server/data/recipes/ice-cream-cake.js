@@ -24,8 +24,6 @@ const SOFTEN_ICE_CREAM = 'Soften Ice Cream';
 const PREP_COOKIE_CRUMBLE = 'Prep Cookie Crumble';
 const PREP_CHOCOLATE_FUDGE = 'Prep Chocolate Fudge';
 const PREP_ICE_CREAM_CAKE = 'Prep Ice Cream Cake';
-const DECORATE_ICE_CREAM_CAKE = 'Decorate Ice Cream Cake';
-const FREEZE_ICE_CREAM_CAKE = 'Freeze Ice Cream Cake';
 
 module.exports = {
     cardName: 'Ice Cream Cake',
@@ -85,7 +83,7 @@ module.exports = {
     directions: [
         { step: `Take out the chocolate ice cream so it can soften for about 20 minutes while you make the cookie crumble.`, section: SOFTEN_ICE_CREAM },
 
-        { step: `Preheat the oven to 350°F.`, section: PREP_COOKIE_CRUMBLE },
+        { step: `Preheat the oven to 350°F.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Line a baking sheet with a silicon baking mat.`, section: PREP_COOKIE_CRUMBLE },
         { step: `In a small bowl, combine the "${COOKIE_CRUMBLE_SECTION}" section ingredients.`, section: PREP_COOKIE_CRUMBLE },
         { step: `Spread the cookie crumble onto the baking sheet.`, section: PREP_COOKIE_CRUMBLE },
@@ -111,9 +109,9 @@ module.exports = {
         { step: `Spread an even layer of vanilla ice cream.`, section: PREP_ICE_CREAM_CAKE, img: cake9 },
         { step: `Freeze until firm (about 2 to 3 hours).`, section: PREP_ICE_CREAM_CAKE, img: cake10 },
 
-        { step: `Decorate the cake as desired.`, section: DECORATE_ICE_CREAM_CAKE, img: cake11 },
+        { step: `Decorate the cake as desired.`, section: SECTIONS.DECORATE, img: cake11 },
 
-        { step: `Freeze overnight.`, section: FREEZE_ICE_CREAM_CAKE },
+        { step: `Freeze overnight.`, section: SECTIONS.FREEZE },
 
         { step: `Take cake out 10 minutes before slicing to soften it a little.`, section: SECTIONS.SERVE, img: [cake13, cake14] },
     ],

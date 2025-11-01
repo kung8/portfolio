@@ -134,10 +134,10 @@ module.exports = {
         { step: `Over medium-high heat, heat a large pan.`, section: COOK_SAUSAGE },
         { step: `Add the sausage. Cook for a few minutes.`, section: COOK_SAUSAGE, img: [lasagna2, lasagna3] },
 
-        { step: `Add the "${BEEF_AND_VEGGIES_SECTION}" section ingredients. Cook until browned.`, section: SECTIONS.SAUCE, img: lasagna4 },
-        { step: `Add the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.SAUCE, img: lasagna5 },
-        { step: `Add the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.SAUCE, img: lasagna6 },
-        { step: `Cover. Simmer for 90 minutes.`, section: SECTIONS.SAUCE },
+        { step: `Add the "${BEEF_AND_VEGGIES_SECTION}" section ingredients. Cook until browned.`, section: SECTIONS.COOK_SAUCE, img: lasagna4 },
+        { step: `Add the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE, img: lasagna5 },
+        { step: `Add the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.COOK_SAUCE, img: lasagna6 },
+        { step: `Cover. Simmer for 90 minutes.`, section: SECTIONS.COOK_SAUCE },
 
         { step: `In a mixing bowl, combine together the "${RICOTTA_MIXTURE}" section ingredients. Set aside.`, section: PREP_RICOTTA_MIXTURE, img: lasagna7 },
 
@@ -145,7 +145,8 @@ module.exports = {
         { step: `Add the noodles and make sure its submerged. Cook until just cooked (about 8 to 10 minutes).`, section: SECTIONS.COOK_NOODLES, img: lasagna8 },
         { step: `Drain. Rinse noodles with cold water.`, section: SECTIONS.COOK_NOODLES },
 
-        { step: `Preheat oven to 375ºF.`, section: SECTIONS.ASSEMBLE },
+        { step: `Preheat oven to 375ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
         { step: `In a baking pan, pour 1 1/2 cup of the meat sauce.`, section: SECTIONS.ASSEMBLE, img: lasagna9 },
         { step: `Layer 6 noodles length-wise over the meat sauce, overlapping a little.`, section: SECTIONS.ASSEMBLE, img: lasagna10 },
         { step: `Add half of the ricotta mixture evenly over the noodles.`, section: SECTIONS.ASSEMBLE, img: lasagna11 },

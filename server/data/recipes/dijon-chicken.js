@@ -52,7 +52,7 @@ module.exports = {
         DUTCH_OVEN_POT,
     ],
     directions: [
-        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Season both sides of the chicken with salt and pepper.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Over medium-high heat, heat oil and butter in a dutch oven pot.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Add chicken thigh, skin-side down. Cook until skin is golden (about 3 to 4 minutes).`, section: SECTIONS.COOK_CHICKEN },

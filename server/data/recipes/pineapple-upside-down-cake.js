@@ -3,14 +3,6 @@ const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_M
 const { BROWN_SUGAR, CANNED_PINEAPPLE_SLICES, EGG, MARASCHINO_CHERRIES, UNSALTED_BUTTER, VEGETABLE_OIL, YELLOW_CAKE_MIX } = require('./ingredients');
 
 const PREHEATED_PAN_SECTION = 'Preheated Pan';
-const PINEAPPLE_SUGAR_SAUCE = 'Pineapple Sugar Sauce';
-const YELLOW_CAKE_MIX_SECTION = 'Yellow Cake Mix';
-
-const PREP_BAKING_PAN = 'Prep Baking Pan';
-const PREP_PINEAPPLE_SUGAR_SAUCE = 'Prep Pineapple Sugar Sauce';
-const PREP_YELLOW_CAKE_MIX = 'Prep Yellow Cake Mix';
-const BAKE_CAKE = 'Bake Cake';
-const FLIP_CAKE = 'Flip Cake';
 
 module.exports = {
     wip: true,
@@ -40,12 +32,13 @@ module.exports = {
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PREHEATED_PAN_SECTION },
 
-        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PINEAPPLE_SUGAR_SAUCE },
-        { ...CANNED_PINEAPPLE_SLICES, amount: 20, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PINEAPPLE_SUGAR_SAUCE },
-        { ...MARASCHINO_CHERRIES, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PINEAPPLE_SUGAR_SAUCE },
-        { ...YELLOW_CAKE_MIX, amount: '', unit: '', additionalDetails: '', section: YELLOW_CAKE_MIX_SECTION },
-        { ...VEGETABLE_OIL, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'or as stated on the cake mix box', section: YELLOW_CAKE_MIX_SECTION },
-        { ...EGG, amount: 3, unit: '', additionalDetails: 'or as stated on the cake mix box', section: YELLOW_CAKE_MIX_SECTION },
+        { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...CANNED_PINEAPPLE_SLICES, amount: 20, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SAUCE },
+        { ...MARASCHINO_CHERRIES, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SAUCE },
+
+        { ...YELLOW_CAKE_MIX, amount: '', unit: '', additionalDetails: '', section: SECTIONS.BATTER },
+        { ...VEGETABLE_OIL, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'or as stated on the cake mix box', section: SECTIONS.BATTER },
+        { ...EGG, amount: 3, unit: '', additionalDetails: 'or as stated on the cake mix box', section: SECTIONS.BATTER },
     ],
     appliances: [
         { name: 'oven' },
@@ -56,24 +49,24 @@ module.exports = {
         { name: 'serving plates/pan' },
     ],
     directions: [
-        { step: `In a baking pan, add butter.`, section: PREP_BAKING_PAN },
-        { step: `Place baking pan on the center rack in the oven.`, section: PREP_BAKING_PAN },
-        { step: `Preheat the oven to 350ºF.`, section: PREP_BAKING_PAN },
-        { step: `Remove the pan once the butter has melted (about 5 to 7 minutes).`, section: PREP_BAKING_PAN },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `In a baking pan, add butter.`, section: SECTIONS.PREP_PAN },
+        { step: `Place baking pan on the center rack in the oven.`, section: SECTIONS.PREP_PAN },
+        { step: `Remove the pan once the butter has melted (about 5 to 7 minutes).`, section: SECTIONS.PREP_PAN },
 
-        { step: `Evenly sprinkle the brown sugar over the melted butter.`, section: PREP_PINEAPPLE_SUGAR_SAUCE },
-        { step: `Arrange pineapple slices over the brown sugar.`, section: PREP_PINEAPPLE_SUGAR_SAUCE },
-        { step: `Add cherries in the center of each pineapple slice. For any extra cherries, place them around the slices.`, section: PREP_PINEAPPLE_SUGAR_SAUCE },
-        { step: `Reserve the pineapple juice to replace the water needed for the yellow cake mix.`, section: PREP_PINEAPPLE_SUGAR_SAUCE },
+        { step: `Evenly sprinkle the brown sugar over the melted butter.`, section: SECTIONS.PREP_SAUCE },
+        { step: `Arrange pineapple slices over the brown sugar.`, section: SECTIONS.PREP_SAUCE },
+        { step: `Add cherries in the center of each pineapple slice. For any extra cherries, place them around the slices.`, section: SECTIONS.PREP_SAUCE },
+        { step: `Reserve the pineapple juice to replace the water needed for the yellow cake mix.`, section: SECTIONS.PREP_SAUCE },
 
-        { step: `Make the yellow cake batter as directed from the box.`, section: PREP_YELLOW_CAKE_MIX },
-        { step: `Pour batter over the pineapples.`, section: PREP_YELLOW_CAKE_MIX },
+        { step: `Make the yellow cake batter as directed from the box.`, section: SECTIONS.PREP_BATTER },
+        { step: `Pour batter over the pineapples.`, section: SECTIONS.PREP_BATTER },
 
-        { step: `Bake until an inserted toothpick comes out clean (about 40 to 46 minutes).`, section: BAKE_CAKE },
+        { step: `Bake until an inserted toothpick comes out clean (about 40 to 46 minutes).`, section: SECTIONS.BAKE },
 
-        { step: `After taking out the cake, loosen the cake by running a knife around the edges of the pan.`, section: FLIP_CAKE },
-        { step: `Place serving plates/pan upside down over cake.`, section: FLIP_CAKE },
-        { step: `Carefully turn plates and baking pan over. Leave the pan on top to let the sauce drizzle over the cake (about 5 minutes).`, section: FLIP_CAKE },
+        { step: `After taking out the cake, loosen the cake by running a knife around the edges of the pan.`, section: SECTIONS.FLIP },
+        { step: `Place serving plates/pan upside down over cake.`, section: SECTIONS.FLIP },
+        { step: `Carefully turn plates and baking pan over. Leave the pan on top to let the sauce drizzle over the cake (about 5 minutes).`, section: SECTIONS.FLIP },
 
         { step: `Let cool for 30 minutes and enjoy this simple dish!`, section: SECTIONS.SERVE },
     ],

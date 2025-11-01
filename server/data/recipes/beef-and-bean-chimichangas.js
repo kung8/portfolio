@@ -65,7 +65,7 @@ module.exports = {
         BAKING_PAN,
     ],
     directions: [
-        { step: `Preheat the oven to 350ºF.`, section: PREP_OVEN },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Over medium-high heat, brown beef in a frying pan.`, section: SECTIONS.COOK_BEEF, img: chimichangas1 },
         { step: `Drain the excess grease.`, section: SECTIONS.COOK_BEEF },
         { step: `Add the "Veggies" ingredients. Mix and cook until tender (about 5 minutes).`, section: SECTIONS.COOK_VEGGIES, img: chimichangas2 },

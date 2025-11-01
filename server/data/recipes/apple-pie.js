@@ -60,7 +60,7 @@ module.exports = {
     directions: [
         { step: `Peel and cut the apple into thin slices.`, section: PREP_APPLES, img: pie1 },
 
-        { step: `Preheat the oven to 425ºF.`, section: SECTIONS.PREP_FILLING },
+        { step: `Preheat the oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Over medium heat, melt butter in a saucepan.`, section: SECTIONS.PREP_FILLING, img: [pie2, pie3] },
         { step: `Add flour and mix until it becomes a paste and fragrant (about 1 to 2 minutes).`, section: SECTIONS.PREP_FILLING },
         { step: `Add sugars and water. Bring to a boil.`, section: SECTIONS.PREP_FILLING, img: pie4 },

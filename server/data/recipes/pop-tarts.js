@@ -49,7 +49,7 @@ module.exports = {
         PARCHMENT_PAPER,
     ],
     directions: [
-        { step: `Preheat the oven to 400ºF.`, section: COOK_POP_TARTS },
+        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Line a baking sheet with parchment paper.`, section: COOK_POP_TARTS },
         { step: `Roll out and cut pie crust dough into rectangular pieces (2 per each pop tart).`, section: COOK_POP_TARTS },
         { step: `Place pieces on the baking sheet.`, section: COOK_POP_TARTS },
@@ -57,7 +57,7 @@ module.exports = {
         { step: `Place the other rectangular piece on top.`, section: COOK_POP_TARTS },
         { step: `Use a fork to crimp each pop tart to seal the edges.`, section: COOK_POP_TARTS },
         { step: `Poke holes through the top to let steam to escape.`, section: COOK_POP_TARTS, img: tart2 },
-        { step: `Bake until golden (about 10 to 15 minutes).`, section: COOK_POP_TARTS },
+        { step: `Bake until golden (about 10 to 15 minutes).`, section: SECTIONS.BAKE },
         { step: `In a small bowl, combine milk and powdered sugar. Mix until it forms a thick glaze.`, section: MAKE_GLAZE },
         { step: `Optionally spread glaze and enjoy!`, section: SECTIONS.SERVE },
     ],

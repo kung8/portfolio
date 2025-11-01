@@ -13,19 +13,11 @@ const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SHEET, BAKING_SODA, CAKE_PAN, C
 const frosting = require('./chocolate-buttercream-frosting');
 
 const CAKE_PAN_SECTION = 'Cake Pan';
-const DRY_INGREDIENTS = 'Dry Ingredients';
-const WET_INGREDIENTS = 'Wet Ingredients';
 const BOILING_WATER_SECTION = 'Boiling Water';
 const CHOCOLATE_BUTTERCREAM_FROSTING = {
     name: 'Chocolate Buttercream Frosting',
     category: CATEGORIES.DESSERT,
-}
-
-const PREP_CAKE_PAN = 'Prep Cake Pan';
-const PREP_CAKE_BATTER = 'Prep Cake Batter';
-const BAKE_CAKE = 'Bake Cake';
-const COOL_CAKE = 'Cool Cake';
-const DECORATE_CAKE = 'Decorate Cake';
+};
 
 module.exports = {
     cardName: 'Chocolate Cake',
@@ -44,33 +36,33 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Chocolate Cake', 
+        {
+            label: 'Chocolate Cake',
             link: 'https://addapinch.com/the-best-chocolate-cake-recipe-ever/',
             authors: ['Robyn Stone'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: CAKE_PAN_SECTION },
         { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.SPRINKLE, additionalDetails: '', section: CAKE_PAN_SECTION },
 
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...COCOA_POWDER, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...BAKING_SODA, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
-        { ...COCOA_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DRY_INGREDIENTS },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...COCOA_POWDER, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...BAKING_POWDER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...BAKING_SODA, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...COCOA_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
 
-        { ...MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_INGREDIENTS },
-        { ...VEGETABLE_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WET_INGREDIENTS },
-        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: WET_INGREDIENTS },
-        { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WET_INGREDIENTS },
+        { ...MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...VEGETABLE_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
 
         { ...WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiling', section: BOILING_WATER_SECTION },
 
-        { ...CHOCOLATE_BUTTERCREAM_FROSTING, amount: frosting.yields.amount, unit: frosting.yields.unit, additionalDetails: '', section: SECTIONS.DECORATING, link: { id: frosting.name, url: `recipes/${frosting.name}` } },
+        { ...CHOCOLATE_BUTTERCREAM_FROSTING, amount: frosting.yields.amount, unit: frosting.yields.unit, additionalDetails: '', section: SECTIONS.FROSTING, link: { id: frosting.name, url: `recipes/${frosting.name}` } },
     ],
     appliances: [
         OVEN,
@@ -82,23 +74,23 @@ module.exports = {
         BAKING_SHEET,
     ],
     directions: [
-        { step: `Preheat the oven to 350ºF.`, section: PREP_CAKE_PAN },
-        { step: `Spray cake pans with cooking spray, small amount of butter and lightly flour.`, section: PREP_CAKE_PAN, img: cake1 },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Spray cake pans with cooking spray, small amount of butter and lightly flour.`, section: SECTIONS.PREP_PAN, img: cake1 },
 
-        { step: `In a stand mixer combine the "${DRY_INGREDIENTS}" section ingredients.`, section: PREP_CAKE_BATTER, img: cake2 },
-        { step: `Add the "${WET_INGREDIENTS}" section ingredients. Combine.`, section: PREP_CAKE_BATTER, img: [cake3, cake4] },
-        { step: `Carefully add the boiling water. Combine.`, section: PREP_CAKE_BATTER, img: cake5 },
+        { step: `In a stand mixer combine the "${SECTIONS.DRY_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_BATTER, img: cake2 },
+        { step: `Add the "${SECTIONS.WET_INGREDIENTS}" section ingredients. Combine.`, section: SECTIONS.PREP_BATTER, img: [cake3, cake4] },
+        { step: `Carefully add the boiling water. Combine.`, section: SECTIONS.PREP_BATTER, img: cake5 },
 
-        { step: `Pour batter into prepared cake pans.`, section: BAKE_CAKE, img: cake6 },
-        { step: `Place a baking sheet underneath in case the cake overflows as it cooks.`, section: BAKE_CAKE },
-        { step: `Bake until an inserted toothpick comes out clean (about 30 to 35 minutes).`, section: BAKE_CAKE },
+        { step: `Pour batter into prepared cake pans.`, section: SECTIONS.BAKE, img: cake6 },
+        { step: `Place a baking sheet underneath in case the cake overflows as it cooks.`, section: SECTIONS.BAKE },
+        { step: `Bake until an inserted toothpick comes out clean (about 30 to 35 minutes).`, section: SECTIONS.BAKE },
 
-        { step: `Remove the cake from the oven. Let it cool in the pan for about 10 to 15 minutes.`, section: COOL_CAKE, img: cake7 },
-        { step: `Remove the cake from the pan. Allow it to completely cool before decorating.`, section: COOL_CAKE },
+        { step: `Remove the cake from the oven. Let it cool in the pan for about 10 to 15 minutes.`, section: SECTIONS.COOL, img: cake7 },
+        { step: `Remove the cake from the pan. Allow it to completely cool before decorating.`, section: SECTIONS.COOL },
 
         {
             step: `Decorate with whatever frosting, icing and other toppings. Try out this `,
-            section: DECORATE_CAKE,
+            section: SECTIONS.DECORATE,
             link: {
                 text: 'Chocolate Buttercream Frosting',
                 link: `https://kevinung8.com/#/recipes/${frosting.name}`,

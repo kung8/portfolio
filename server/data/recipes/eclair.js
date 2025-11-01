@@ -68,7 +68,7 @@ module.exports = {
         COOLING_RACK,
     ],
     directions: [
-        { step: `Preheat the oven to 400ºF.`, section: PASTRY },
+        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Line a baking sheet with parchment paper.`, section: PASTRY },
         { step: `Over medium heat, bring a saucepan of water, butter, sugar and salt to a boil.`, section: PASTRY },
         { step: `Remove pan from heat.`, section: PASTRY },

@@ -106,13 +106,17 @@ module.exports = {
         { step: `In the stand mixer bowl, beat cream cheese and sugar at medium speed until smooth and fluffy (about 2 to 3 minutes).`, section: SECTIONS.FILLING, img: cheesecake5 },
         { step: `Add eggs one at a time and beat well.`, section: SECTIONS.FILLING },
         { step: `Add vanilla, sour cream, flour, and salt and continue to beat until all is combined.`, section: SECTIONS.FILLING, img: cheesecake6 },
-        { step: `Preheat oven to 325ºF.`, section: SECTIONS.MAIN },
-        { step: `Pour filling into the crust.`, section: SECTIONS.MAIN, img: cheesecake7 },
-        { step: `Place the cake pan in the roasting pan and fill the roasting pan with water (about halfway up the cake pan).`, section: SECTIONS.MAIN, img: cheesecake8 },
-        { step: `Place the roasting pan carefully in the oven and bake until just slightly jiggly, or until the center registers 145ºF (about 1 hour 30 minutes)`, section: SECTIONS.MAIN },
-        // { step: `Turn oven off, leave door open, and let cool for 1 hour.`, section: SECTIONS.MAIN, img: bath },
-        { step: `Remove from the oven, transfer to a cooling rack and carefully remove the tin foil.`, section: SECTIONS.MAIN, img: cheesecake9 },
-        { step: `Move cheesecake into the fridge and chill for about 5 hours to overnight.`, section: SECTIONS.MAIN, img: cheesecake10 },
+
+        { step: `Preheat oven to 325ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        
+        { step: `Pour filling into the crust.`, section: SECTIONS.BAKE, img: cheesecake7 },
+        { step: `Place the cake pan in the roasting pan and fill the roasting pan with water (about halfway up the cake pan).`, section: SECTIONS.BAKE, img: cheesecake8 },
+        { step: `Place the roasting pan carefully in the oven and bake until just slightly jiggly, or until the center registers 145ºF (about 1 hour 30 minutes)`, section: SECTIONS.BAKE },
+        // { step: `Turn oven off, leave door open, and let cool for 1 hour.`, section: SECTIONS.BAKE, img: bath },
+        { step: `Remove from the oven, transfer to a cooling rack and carefully remove the tin foil.`, section: SECTIONS.COOL, img: cheesecake9 },
+
+        { step: `Move cheesecake into the fridge and chill for about 5 hours to overnight.`, section: SECTIONS.CHILL, img: cheesecake10 },
+
         { step: `In a small bowl, whisk cornstarch and water until combined.`, section: SECTIONS.TOPPINGS },
         { step: `In a saucepan, add strawberries, sugar, lemon juice, and cornstarch mixture.`, section: SECTIONS.TOPPINGS, img: cheesecake11 },
         { step: `Bring mixture to a simmer over medium heat.`, section: SECTIONS.TOPPINGS, img: cheesecake12 },

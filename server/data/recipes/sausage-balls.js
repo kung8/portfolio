@@ -21,11 +21,11 @@ module.exports = {
     cookTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Sausage Balls', 
+        {
+            label: 'Sausage Balls',
             link: 'https://www.food.com/recipe/sausage-balls-46078',
             authors: ['Fauve'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -42,13 +42,13 @@ module.exports = {
     ],
     directions: [
         { step: `Allow the cheese and sausage to get to room temperature.`, section: '' },
-        { step: `Preheat the oven to 400ºF.`, section: '' },
-        { step: `In a mixing bowl, combine all the ingredients. It will be dry.`, section: '' },
-        { step: `Roll the sausage mixture into 1 inch balls.`, section: '' },
-        { step: `Place the balls in a baking dish an inch apart.`, section: '' },
-        { step: `Bake until golden brown (about 10 to 12 minutes).`, section: '' },
-        { step: `Drain on paper towels.`, section: '' },
-        { step: `Enjoy this simple breakfast dish.`, section: '' },
+        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `In a mixing bowl, combine all the ingredients. It will be dry.`, section: SECTIONS.PREP_BATTER },
+        { step: `Roll the sausage mixture into 1 inch balls.`, section: SECTIONS.FORM_BALLS },
+        { step: `Place the balls in a baking dish an inch apart.`, section: SECTIONS.FORM_BALLS },
+        { step: `Bake until golden brown (about 10 to 12 minutes).`, section: SECTIONS.BAKE },
+        { step: `Drain on paper towels.`, section: SECTIONS.DRAIN },
+        { step: `Enjoy this simple breakfast dish.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'You will not add any water or milk to this recipe.' },

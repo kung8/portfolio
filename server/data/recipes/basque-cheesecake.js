@@ -58,7 +58,7 @@ module.exports = {
         COOLING_RACK
     ],
     directions: [
-        { step: `Preheat oven to 450ºF.`, section: PREP_BAKE },
+        { step: `Preheat oven to 450ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Line a springform pan with two intersecting parchment paper so that it hangs about 2 inches over the edge.`, section: PREP_BAKE },
         { step: `In a stand mixer, combine the "${CREAM_CHEESE_MIXTURE}" section ingredients. Beat until smooth and creamy. Scrape down sides as needed.`, section: CREAM_CHEESE_SECTION },
         { step: `In a mixing bowl, whisk together "${FLOUR_MIXTURE}" section ingredients.`, section: PREP_FLOUR_MIXTURE },

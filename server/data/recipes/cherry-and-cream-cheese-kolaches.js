@@ -141,7 +141,7 @@ module.exports = {
         { step: `In a small bowl, whisk together the "Egg Wash" ingredients.`, section: MAKE_EGG_WASH, img: [kolaches15, kolaches16] },
         { step: `Set aside.`, section: MAKE_EGG_WASH },
 
-        { step: `Preheat the oven to 375ºF.`, section: SECTIONS.ASSEMBLE },
+        { step: `Preheat the oven to 375ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Make a 2 inch well in the center of each kolaches with your fingertips (or with a spoon).`, section: SECTIONS.ASSEMBLE },
         { step: `Brush the sides and outer edge with the egg wash.`, section: SECTIONS.ASSEMBLE, img: kolaches21 },
         { step: `Spread 1 tablespoon of the cream cheese filling in each kolaches.`, section: SECTIONS.ASSEMBLE, img: kolaches22 },

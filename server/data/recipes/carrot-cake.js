@@ -38,17 +38,17 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Carrot Cake', 
+        {
+            label: 'Carrot Cake',
             link: "https://www.allrecipes.com/recipe/17393/best-carrot-cake-ever/",
             authors: ['Nan'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         },
-        { 
-            label: 'Frosting', 
+        {
+            label: 'Frosting',
             link: "https://www.inspiredtaste.net/25753/carrot-cake-recipe/",
             authors: ['Joanne Gallagher'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         },
     ],
     ingredients: [
@@ -82,18 +82,21 @@ module.exports = {
     directions: [
         { step: `In a medium bowl, mix together the grated carrots and brown sugar.`, section: CARROT_MIXTURE, img: cake1 },
         { step: `Set aside for 1 hour.`, section: CARROT_MIXTURE },
-        { step: `Preheat the oven to 350ºF.`, section: CAKE },
-        { step: `Grease and flour the cake pans.`, section: CAKE },
-        { step: `In a mixing bowl, beat eggs until light and fluffy.`, section: CAKE, img: cake2 },
-        { step: `Slowly beat in sugar, oil and vanilla.`, section: CAKE },
-        { step: `Mix in cinnamon, baking soda, salt and flour one at a time.`, section: CAKE, img: [cake3, cake4, cake5] },
-        { step: `Mix in the carrot mixture and walnuts.`, section: CAKE, img: [cake6, cake7] },
-        { step: `Carefully pour the batter into the pans.`, section: CAKE, img: cake8 },
-        { step: `Bake until a toothpick comes out clean (about 45 to 50 minutes).`, section: CAKE, img: cake9 },
-        { step: `Cool for 10 minutes before taking the cake out of the pan.`, section: CAKE },
-        { step: `Cool completely before assembling and decorating the cake.`, section: CAKE },
-        { step: `In a mixing bowl, mix the softened cream cheese and butter.`, section: FROSTING, img: cake10 },
-        { step: `Add powdered sugar and vanilla and mix until well incorporated.`, section: FROSTING, img: cake11 },
+
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
+        { step: `Grease and flour the cake pans.`, section: SECTIONS.PREP_BATTER },
+        { step: `In a mixing bowl, beat eggs until light and fluffy.`, section: SECTIONS.PREP_BATTER, img: cake2 },
+        { step: `Slowly beat in sugar, oil and vanilla.`, section: SECTIONS.PREP_BATTER },
+        { step: `Mix in cinnamon, baking soda, salt and flour one at a time.`, section: SECTIONS.PREP_BATTER, img: [cake3, cake4, cake5] },
+        { step: `Mix in the carrot mixture and walnuts.`, section: SECTIONS.PREP_BATTER, img: [cake6, cake7] },
+        { step: `Carefully pour the batter into the pans.`, section: SECTIONS.PREP_BATTER, img: cake8 },
+        { step: `Bake until a toothpick comes out clean (about 45 to 50 minutes).`, section: SECTIONS.BAKE, img: cake9 },
+        { step: `Cool for 10 minutes before taking the cake out of the pan.`, section: SECTIONS.COOL },
+        { step: `Cool completely before assembling and decorating the cake.`, section: SECTIONS.DECORATE },
+
+        { step: `In a mixing bowl, mix the softened cream cheese and butter.`, section: SECTIONS.FROST, img: cake10 },
+        { step: `Add powdered sugar and vanilla and mix until well incorporated.`, section: SECTIONS.FROST, img: cake11 },
         { step: `Spread the frosting on one layer of the cake and place the other layer on top.`, section: ASSEMBLING, img: cake12 },
         { step: `Frost the top layer and sprinkle it with walnut, as desired.`, section: ASSEMBLING, img: cake13 },
         { step: `Slice up the cake and enjoy this tasty rabbit food (just kidding don't feed this to rabbits).`, section: SECTIONS.SERVE, img: cake14 },

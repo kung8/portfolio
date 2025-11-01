@@ -121,7 +121,8 @@ module.exports = {
         { step: `Bring to a simmer. Remove from heat.`, section: SECTIONS.PREP_SAUCE },
 
         // 20 minutes cook, 10 minutes prep
-        { step: `Preheat oven to 350ºF.`, section: SECTIONS.ASSEMBLE },
+        { step: `Preheat oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
         { step: `In the mixing bowl with the chicken, add a quarter of the enchilada sauce and as much salt and pepper as desired. Mix.`, section: SECTIONS.ASSEMBLE, img: enchiladas14 },
         { step: `Place tortillas on a plate and microwave for 30 seconds. Flip. Microwave for another 30 seconds.`, section: SECTIONS.ASSEMBLE, img: enchiladas15 },
         { step: `Evenly divide 1 cup of cheese and shredded chicken and fill the tortillas.`, section: SECTIONS.ASSEMBLE, img: enchiladas16 },

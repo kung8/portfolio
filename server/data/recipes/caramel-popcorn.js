@@ -53,7 +53,7 @@ module.exports = {
         ALUMINUM_FOIL,
     ],
     directions: [
-        { step: `Preheat the oven to 250ºF.`, section: WARM_POPCORN },
+        { step: `Preheat the oven to 250ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Spray a casserole dish with cooking spray.`, section: WARM_POPCORN },
         { step: `Fill it with popped popcorn.`, section: WARM_POPCORN },
         { step: `Add it to the preheated oven.`, section: WARM_POPCORN },

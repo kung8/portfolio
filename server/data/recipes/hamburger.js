@@ -38,10 +38,11 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...GROUND_TURKEY, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BREADCRUMBS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.MAIN },
+        { ...GROUND_TURKEY, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.HAMBURGER },
+        { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.HAMBURGER },
+        { ...BREADCRUMBS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.HAMBURGER },
+        { ...YELLOW_ONION, amount: 1 / 4, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.HAMBURGER },
+
         { ...HAMBURGER_BUNS, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...RED_ONION, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...PICKLES, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
@@ -58,13 +59,13 @@ module.exports = {
         { name: 'large mixing bowl' },
     ],
     directions: [
-        { step: `Preheat oven to 425ºF.`, section: SECTIONS.MAIN },
-        { step: `Mix together turkey, egg, bread crumb, and onion inside mixing bowl.`, section: SECTIONS.MAIN },
-        { step: `Ball up meat mixture and flatten into patties.`, section: SECTIONS.MAIN },
-        { step: `Place aluminum foil on baking sheet.`, section: SECTIONS.MAIN },
-        { step: `Place patties on baking sheet and bake for 30 minutes.`, section: SECTIONS.MAIN },
-        { step: `Broil for 5 minutes.`, section: SECTIONS.MAIN },
-        { step: `Serve on hamburger bun with preferred toppings and condiments (and fries or preferred side optional).`, section: SECTIONS.MAIN },
+        { step: `Preheat oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Place aluminum foil on baking sheet.`, section: SECTIONS.PREP_PAN },
+        { step: `In a mixing bowl, combine the "${SECTIONS.HAMBURGER}" section ingredients.`, section: SECTIONS.MAKE_HAMBURGER },
+        { step: `Ball up meat mixture and flatten into patties.`, section: SECTIONS.MAKE_HAMBURGER },
+        { step: `Place patties on baking sheet and bake for 30 minutes.`, section: SECTIONS.BAKE },
+        { step: `Broil for 5 minutes.`, section: SECTIONS.BROIL },
+        { step: `Serve on hamburger bun with preferred toppings and condiments (and fries or preferred side optional).`, section: SECTIONS.SERVE },
     ],
     store: [
         {

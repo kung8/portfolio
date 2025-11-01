@@ -13,8 +13,7 @@ const { DAIRY } = require('./ingredient-categories');
 
 const GARLIC_BUTTER = { name: 'garlic butter', category: DAIRY };
 const MEATBALL_SECTION = 'Meatball';
-const SUB_SECTION = 'Sub'
-const PREP_MEATBALLS = 'Prep Meatballs';
+const SUB_SECTION = 'Sub';
 const PREP_ROLLS = 'Prep Rolls';
 
 module.exports = {
@@ -68,17 +67,23 @@ module.exports = {
         BAKING_PAN,
     ],
     directions: [
-        { step: `Preheat oven to 350ºF.`, section: PREP_MEATBALLS },
-        { step: `In a mixing bowl, combine the "${MEATBALL_SECTION}" section ingredients.`, section: PREP_MEATBALLS },
-        { step: `Line a baking sheet with parchment paper.`, section: PREP_MEATBALLS },
-        { step: `Form 1 inch balls and place on sheet.`, section: PREP_MEATBALLS, img: sub1 },
-        { step: `Bake until cooked through (about 20 minutes).`, section: PREP_MEATBALLS, img: sub3 },
+        { step: `Preheat oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        
+        { step: `In a mixing bowl, combine the "${MEATBALL_SECTION}" section ingredients.`, section: SECTIONS.FORM_BALLS },
+        { step: `Line a baking sheet with parchment paper.`, section: SECTIONS.FORM_BALLS },
+        { step: `Form 1 inch balls and place on sheet.`, section: SECTIONS.FORM_BALLS, img: sub1 },
+
+        { step: `Bake until cooked through (about 20 minutes).`, section: SECTIONS.BAKE, img: sub3 },
+        
         { step: `Over medium-low heat, add meatball and pasta sauce in a saucepan.`, section: SECTIONS.PREP_SAUCE, img: sub4 },
         { step: `Cover and simmer for 10 minutes.`, section: SECTIONS.PREP_SAUCE },
+        
         { step: `Spread garlic butter inside roll.`, section: PREP_ROLLS, img: sub2 },
         { step: `Place rolls in a baking pan and broil until golden (about 2 minutes).`, section: PREP_ROLLS, img: sub5 },
+        
         { step: `Add 3 meatballs in each roll with a little sauce and cheese.`, section: SECTIONS.ASSEMBLE, img: sub6 },
         { step: `Broil until cheese is melted (about 2 minutes).`, section: SECTIONS.ASSEMBLE, img: sub7 },
+        
         { step: `Serve with more sauce and cheese.`, section: SECTIONS.SERVE },
     ],
     notes: [

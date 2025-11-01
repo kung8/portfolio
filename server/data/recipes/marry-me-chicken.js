@@ -71,7 +71,7 @@ module.exports = {
         TONGS,
     ],
     directions: [
-        { step: `Preheat the oven to 375ºF. Arrange the rack so the dutch oven pot will be cooked in the center of the oven.`, section: SECTIONS.CHICKEN, img: chicken1 },
+        { step: `Preheat the oven to 375ºF. Arrange the rack so the dutch oven pot will be cooked in the center of the oven.`, section: SECTIONS.PREHEAT_OVEN, img: chicken1 },
         { step: `Prepare chicken by removing any fat and pat dry.`, section: SECTIONS.CHICKEN, img: chicken2 },
         { step: `Season with salt and pepper generously on both sides.`, section: SECTIONS.CHICKEN, img: chicken3 },
         { step: `Over medium-high heat, add olive oil and spread until covered.`, section: SECTIONS.CHICKEN, img: chicken4 },

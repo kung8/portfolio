@@ -76,7 +76,7 @@ module.exports = {
         SPATULA
     ],
     directions: [
-        { step: `Preheat the oven to 350ºF.`, section: PREP_ROLLS },
+        { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Line a baking sheet with a silicon baking mat.`, section: PREP_ROLLS },
         { step: `Place rolls on a baking sheet.`, section: PREP_ROLLS },
         { step: `Brush rolls with melted butter on all sides.`, section: PREP_ROLLS, img: donut1 },

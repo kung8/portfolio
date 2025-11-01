@@ -61,7 +61,8 @@ module.exports = {
         LARGE_POT,
     ],
     directions: [
-        { step: `Preheat the oven to 400ºF.`, section: ROAST_SQUASH },
+        { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
         { step: `In a mixing bowl, combine the "${SQUASH_SECTION}" section ingredients.`, section: ROAST_SQUASH },
         { step: `On a baking pan, lay out the squash ingredients.`, section: ROAST_SQUASH },
         { step: `Bake until tender (about 30 to 35 minutes).`, section: ROAST_SQUASH },

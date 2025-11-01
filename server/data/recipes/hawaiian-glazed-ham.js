@@ -48,18 +48,21 @@ module.exports = {
         { name: 'baster' },
     ],
     directions: [
-        { step: `Preheat the oven to 325ºF.`, section: PREP_OVEN },
-        { step: `If the bone-in ham is not already pre-sliced, slice the ham until it is about an inch from the bone and about 1/2 inch thick. You are keeping the ham on the bone.`, section: PREP_HAM },
-        { step: `Place the bone-in ham within a roasting pan.`, section: PREP_HAM },
-        { step: `Lather the ham with mustard and make sure to get in between the slices.`, section: PREP_HAM },
-        { step: `Add brown sugar to the ham and massage all over and in between the slices.`, section: PREP_HAM },
-        { step: `Cover the ham with pineapple slices and pin them in with toothpicks.`, section: PREP_HAM },
-        { step: `Place the cherries in center of each pineapple slices and pin them with toothpicks.`, section: PREP_HAM },
-        { step: `Pour the pineapple and maraschino cherry juices over the ham.`, section: PREP_HAM },
-        { step: `Cover the ham with tin foil.`, section: PREP_HAM },
-        { step: `Place the ham in the oven and bake until heated (for about 45 minutes to an hour).`, section: BAKE_HAM },
-        { step: `Increase the oven to 400ºF and remove the foil.`, section: BAKE_HAM },
-        { step: `Baste the ham with its juices regularly and bake until it browns (for about 20 to 45 minutes).`, section: BAKE_HAM },
+        { step: `Preheat the oven to 325ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
+        { step: `If the bone-in ham is not already pre-sliced, slice the ham until it is about an inch from the bone and about 1/2 inch thick. You are keeping the ham on the bone.`, section: SECTIONS.PREP_HAM },
+        { step: `Place the bone-in ham within a roasting pan.`, section: SECTIONS.PREP_HAM },
+        { step: `Lather the ham with mustard and make sure to get in between the slices.`, section: SECTIONS.PREP_HAM },
+        { step: `Add brown sugar to the ham and massage all over and in between the slices.`, section: SECTIONS.PREP_HAM },
+        { step: `Cover the ham with pineapple slices and pin them in with toothpicks.`, section: SECTIONS.PREP_HAM },
+        { step: `Place the cherries in center of each pineapple slices and pin them with toothpicks.`, section: SECTIONS.PREP_HAM },
+        { step: `Pour the pineapple and maraschino cherry juices over the ham.`, section: SECTIONS.PREP_HAM },
+        { step: `Cover the ham with tin foil.`, section: SECTIONS.PREP_HAM },
+
+        { step: `Place the ham in the oven and bake until heated (for about 45 minutes to an hour).`, section: SECTIONS.BAKE },
+        { step: `Increase the oven to 400ºF and remove the foil.`, section: SECTIONS.BAKE },
+        { step: `Baste the ham with its juices regularly and bake until it browns (for about 20 to 45 minutes).`, section: SECTIONS.BAKE },
+
         { step: `Enjoy this delicious while it is still warm.`, section: SECTIONS.SERVE },
     ],
     store: [
