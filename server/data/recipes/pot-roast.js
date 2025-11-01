@@ -11,7 +11,15 @@ const {
     RED_WINE_VINEGAR,
     SALT,
     YELLOW_ONION,
+    OVEN,
+    ROASTING_PAN,
+    ALUMINUM_FOIL,
+    LARGE_PAN,
 } = require('./ingredients');
+
+const HERBS_AND_LIQUIDS = 'Herbs and Liquids';
+
+const SEAR = 'Sear';
 
 module.exports = {
     cardName: 'Pot Roast',
@@ -36,37 +44,45 @@ module.exports = {
             finder: 'Kevin Ung', 
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...BEEF_ROAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: 2, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'quartered', section: SECTIONS.MAIN },
-        { ...CARROT, amount: 8, unit: '', additionalDetails: 'cut into 2"', section: SECTIONS.MAIN },
-        { ...RED_WINE_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BEEF_BROTH, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...FRESH_ROSEMARY, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...FRESH_THYME, amount: 2, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BEEF_ROAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.BEEF },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.BEEF },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.BEEF },
+        
+        { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...YELLOW_ONION, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'quartered', section: SECTIONS.VEGGIES },
+        { ...CARROT, amount: 8, unit: '', additionalDetails: 'cut into 2-inch slices', section: SECTIONS.VEGGIES },
+        
+        { ...RED_WINE_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: HERBS_AND_LIQUIDS },
+        { ...BEEF_BROTH, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: HERBS_AND_LIQUIDS },
+        { ...FRESH_ROSEMARY, amount: 2, unit: '', additionalDetails: '', section: HERBS_AND_LIQUIDS },
+        { ...FRESH_THYME, amount: 2, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: '', section: HERBS_AND_LIQUIDS },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'roasting pan' },
-        { name: 'large pan' },
-        { name: 'aluminum foil' },
+        LARGE_PAN,
+        ROASTING_PAN,
+        ALUMINUM_FOIL,
     ],
     directions: [
-        { step: 'Preheat oven to 275ºF.', section: SECTIONS.MAIN },
-        { step: 'Salt and pepper the beef generously.', section: SECTIONS.MAIN },
-        { step: 'Heat the olive oil in large pan over medium-high heat.', section: SECTIONS.MAIN },
-        { step: 'Brown the onion on both sides. Then set aside in the roasting pan.', section: SECTIONS.MAIN },
-        { step: 'Brown the carrots in the same way. Then add it to the roasting pan.', section: SECTIONS.MAIN },
-        { step: 'Add a little more oil, and sear the beef on all sides.', section: SECTIONS.MAIN },
-        { step: 'Then add beef, red wine, broth, rosemary, and thyme to the roasting pan.', section: SECTIONS.MAIN },
-        { step: 'Add red wine, broth, rosemary, and thyme to the roasting pan.', section: SECTIONS.MAIN },
-        { step: 'Cover the roasting pan with aluminum foil and roast for 3 hours or until the roast is tender.', section: SECTIONS.MAIN },
+        { step: 'Preheat oven to 275ºF.', section: SECTIONS.PREHEAT_OVEN },
+
+        { step: 'Salt and pepper the beef generously.', section: SECTIONS.PREP_BEEF },
+
+        { step: 'Over medium-high heat, heat olive oil in a large pan.', section: SEAR },
+        { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Brown on both sides. Transfer to the roasting pan.`, section: SEAR },
+        { step: 'In the same pan, add a little more oil.', section: SEAR },
+        { step: 'Sear the beef on all sides. Transfer beef to the roasting pan.', section: SEAR },
+        
+        { step: `In the roasting pan, add the "${HERBS_AND_LIQUIDS}" section ingredients.`, section: SECTIONS.PREP_PAN },
+        { step: 'Cover the roasting pan with aluminum foil.', section: SECTIONS.PREP_PAN },
+
+        { step: 'Roast until tender (about 3 hours).', section: SECTIONS.BAKE },
+
+        { step: 'Enjoy this simple roast.', section: SECTIONS.SERVE },
     ],
     store: [
         {

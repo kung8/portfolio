@@ -281,7 +281,7 @@ const pumpkinSoup2 = require('./recipes/pumpkin-soup-2.js'); // TODO: finish add
 const ravioli = require("./recipes/ravioli");
 const redLobsterCheddarBayBiscuits = require("./recipes/red-lobster-cheddar-bay-biscuits");
 const reubenSandwich = require("./recipes/reuben-sandwich");
-const riceKrispyTreats = require("./recipes/rice-krispy-treats");
+const riceKrispiesTreats = require("./recipes/rice-krispies-treats");
 const ricePilaf = require("./recipes/rice-pilaf");
 const roastTurkey = require("./recipes/roast-turkey");
 const roastedAsparagus = require('./recipes/roasted-asparagus.js');
@@ -737,7 +737,7 @@ const recipes = [
     keyLimePie,
     noBakeCookie,
     muddyBuddies,
-    riceKrispyTreats,
+    riceKrispiesTreats,
     cinnamonRolls,
     creamPuffs,
     eclair,

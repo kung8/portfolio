@@ -17,7 +17,13 @@ const {
     SLICED_ALMONDS,
     STOVE,
     UNSALTED_BUTTER,
+    GARLIC,
 } = require('./ingredients');
+
+const BLANCHED_GREEN_BEANS = 'Blanched Green Beans';
+const SAUTEED_GREEN_BEANS = 'Sauteed Green Beans';
+
+const TOSSED_INGREDIENTS = 'Tossed Ingredients';
 
 module.exports = {
     cardName: 'Green Bean Almondine',
@@ -35,24 +41,28 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 4, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Green Bean Almondine', 
+        {
+            label: 'Green Bean Almondine',
             link: 'https://www.abeautifulplate.com/green-beans-almondine/',
             authors: [''],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...SALT, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
-        { ...FRENCH_GREEN_BEAN, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: '' },
-        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...SLICED_ALMONDS, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...SHALLOT, amount: 1, unit: '', additionalDetails: '', section: '' },
-        { ...LEMON_ZEST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
-        { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
-        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
-        { ...ICE, amount: '', unit: '', additionalDetails: '', section: '' },
+        { ...FRENCH_GREEN_BEAN, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BLANCHED_GREEN_BEANS },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'for boiling', section: BLANCHED_GREEN_BEANS },
+        { ...ICE, amount: '', unit: '', additionalDetails: '', section: BLANCHED_GREEN_BEANS },
+
+        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUTEED_GREEN_BEANS },
+        { ...SLICED_ALMONDS, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUTEED_GREEN_BEANS },
+        { ...SHALLOT, amount: 2, unit: '', additionalDetails: 'diced', section: SAUTEED_GREEN_BEANS },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SAUTEED_GREEN_BEANS },
+
+        { ...LEMON_ZEST, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TOSSED_INGREDIENTS },
+        { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TOSSED_INGREDIENTS },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'or to taste', section: TOSSED_INGREDIENTS },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'or to taste', section: TOSSED_INGREDIENTS },
     ],
     appliances: [
         STOVE,
@@ -62,15 +72,20 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'Over medium-high heat, boil water and salt in a saucepan.', section: SECTIONS.MAIN },
-        { step: 'Add beans into pan and cook until they become bright green (3 to 4 minutes).', section: SECTIONS.MAIN, img: bean1 },
-        { step: 'Fill a mixing bowl with ice and water.', section: SECTIONS.MAIN },
-        { step: 'Transfer green beans into ice water and let chill for 3 to 4 minutes.', section: SECTIONS.MAIN, img: bean2 },
-        { step: 'Drain.', section: SECTIONS.MAIN },
-        { step: 'Brown butter in pan.', section: SECTIONS.MAIN },
-        { step: 'Add almonds and shallots to pan and cook for 2 minutes.', section: SECTIONS.MAIN },
-        { step: 'Add green beans back into the pan and cook for a few minutes.', section: SECTIONS.MAIN, img: bean3 },
-        { step: 'Serve warm.', section: SECTIONS.MAIN },
+        { step: 'Over medium-high heat, boil water and salt in a saucepan.', section: SECTIONS.BLANCH },
+        { step: 'Add beans. Cook until bright green (about 3 to 4 minutes).', section: SECTIONS.BLANCH, img: bean1 },
+        { step: 'Fill a mixing bowl with ice and water.', section: SECTIONS.BLANCH },
+        { step: 'Transfer green beans to ice water.', section: SECTIONS.BLANCH, img: bean2 },
+        { step: 'Chill for 3 to 4 minutes.', section: SECTIONS.BLANCH },
+        { step: 'Drain.', section: SECTIONS.BLANCH },
+
+        { step: 'Brown butter in pan.', section: SECTIONS.SAUTE },
+        { step: 'Add "${}". Cook for 2 minutes.', section: SECTIONS.SAUTE },
+        { step: 'Add green beans. Cook for a few minutes.', section: SECTIONS.SAUTE, img: bean3 },
+
+        { step: `Add the "${TOSSED_INGREDIENTS}" section ingredients. Toss to combine.`, section: SECTIONS.SAUTE },
+
+        { step: 'Serve warm.', section: SECTIONS.SERVE },
     ],
     store: [
         {

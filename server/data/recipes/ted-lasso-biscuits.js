@@ -10,10 +10,11 @@ const {
     STAND_MIXER,
     UNSALTED_BUTTER,
     VANILLA_EXTRACT,
+    REFRIGERATOR,
 } = require('./ingredients');
 
 module.exports = {
-    cardName: 'Lasso Biscuits',
+    cardName: 'Ted Lasso Biscuits',
     name: 'Ted Lasso Biscuits',
     img: biscuits1,
     available: true,
@@ -27,38 +28,42 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 60, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Ted Lasso', 
+        {
+            label: 'Ted Lasso',
             link: 'https://www.thekitchn.com/the-official-ted-lasso-biscuit-recipe-23211497',
             authors: ['Laurel Randolph'],
-            finder: 'Justin Ung', 
+            finder: 'Justin Ung',
         },
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'at room temperature', section: SECTIONS.MAIN },
-        { ...POWDERED_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'at room temperature', section: SECTIONS.BATTER },
+        { ...POWDERED_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BATTER },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BATTER },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BATTER },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BATTER },
     ],
     appliances: [
-        OVEN,
         STAND_MIXER,
+        REFRIGERATOR,
+        OVEN,
     ],
     supplies: [
-        MIXING_BOWL,
         BAKING_PAN,
     ],
     directions: [
-        { step: 'Place butter in mixing bowl and beat until fluffy (about 3 to 5 minutes).', section: SECTIONS.MAIN },
-        { step: 'Gradually add powdered sugar while butter is mixing.', section: SECTIONS.MAIN },
-        { step: 'Add flour and salt to the bowl and continue mixing on low speed.', section: SECTIONS.MAIN },
-        { step: 'Pour batter into the baking pan and refrigerate for about 30 minutes.', section: SECTIONS.MAIN },
-        { step: 'Slice into rectangles.', section: SECTIONS.MAIN },
-        { step: 'Preheat the oven to 300ºF whenever ready to bake.', section: SECTIONS.MAIN },
-        { step: 'Bake until the biscuits are golden brown (about 45 to 60 minutes).', section: SECTIONS.MAIN },
-        { step: 'Enjoy these biscuits while you watch or re-watch the Ted Lasso television show. Cheers!', section: SECTIONS.MAIN },
+        { step: 'In a stand mixer, beat the butter until fluffy (about 3 to 5 minutes).', section: SECTIONS.PREP_BATTER },
+        { step: 'Gradually add powdered sugar while butter is mixing.', section: SECTIONS.PREP_BATTER },
+        { step: 'Add flour and salt. Mix on low.', section: SECTIONS.PREP_BATTER },
+        { step: 'Pour batter into the baking pan.', section: SECTIONS.PREP_BATTER },
+        { step: 'Refrigerate for about 30 minutes.', section: SECTIONS.PREP_BATTER },
+        { step: 'Slice into rectangles.', section: SECTIONS.PREP_BATTER },
+
+        { step: 'Preheat the oven to 300ºF.', section: SECTIONS.PREHEAT_OVEN },
+
+        { step: 'Bake until golden brown (about 45 to 60 minutes).', section: SECTIONS.BAKE },
+
+        { step: 'Enjoy these biscuits while you watch or re-watch the Ted Lasso television show. Cheers!', section: SECTIONS.SERVE },
     ],
     store: [
         {

@@ -270,6 +270,7 @@ const SECTIONS = {
     HERBS: 'Herbs',
     OIL: 'Oil',
     CHEESE: 'Cheese',
+    BATTER: 'Batter',
 
     MARINATE_CHICKEN: 'Marinate Chicken',
     MARINATE_BEEF: 'Marinate Beef',
@@ -357,6 +358,7 @@ const SECTIONS = {
     CREAM_BUTTER: 'Cream Butter',
     FORM_BALLS: 'Form Balls',
     FORM_DOUGH: 'Form Dough',
+    BLANCH: 'Blanch',
 };
 
 const STORAGE_CONTAINER = {

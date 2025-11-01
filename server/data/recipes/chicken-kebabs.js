@@ -19,6 +19,8 @@ const {
     ZIPLOC_BAG,
 } = require('./ingredients');
 
+const PREP_SKEWERS = 'Prep Skewers';
+
 module.exports = {
     cardName: 'Kebabs',
     name: 'Chicken Kebabs',
@@ -43,15 +45,17 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...TERIYAKI_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VEGETABLE_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...GARLIC_POWDER, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RED_BELL_PEPPER, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...LIGHT_SOY_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...TERIYAKI_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...VEGETABLE_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MARINADE },
+        { ...GARLIC_POWDER, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.MARINADE },
+
+        { ...CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1-inch pieces', section: SECTIONS.MAIN },
+
+        { ...RED_BELL_PEPPER, amount: 2, unit: '', additionalDetails: 'cut into 1-inch pieces', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'cut into 1-inch pieces', section: SECTIONS.MAIN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
@@ -67,14 +71,18 @@ module.exports = {
         ALUMINUM_FOIL,
     ],
     directions: [
-        { step: 'Make the marinade in a ziploc bag: adding soy sauce, sprite, oil, and garlic powder.', section: SECTIONS.MAIN },
-        { step: 'Cut the chicken into 1 inch pieces and marinate for 1 to 3 hours.', section: SECTIONS.MAIN },
-        { step: 'Cut the veggies into large pieces.', section: SECTIONS.MAIN },
-        { step: 'Preheat oven to 450ºF (whenever you are ready to actually cook).', section: SECTIONS.MAIN },
-        { step: 'Place aluminum foil on the baking sheet.', section: SECTIONS.MAIN },
-        { step: 'Thread the skewers with chicken and veggies leaving enough space between to allow the pieces to get cooked thoroughly.', section: SECTIONS.MAIN },
-        { step: 'Place the finished skewers on the baking sheet with space in between each other.', section: SECTIONS.MAIN },
-        { step: 'Once the oven is 450ºF, cook the kebabs for 15 to 25 minutes (cook time will depend on the size of meat).', section: SECTIONS.MAIN },
+        { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingrdients.`, section: SECTIONS.MARINATE_CHICKEN },
+        { step: 'Add cut chicken. Marinate for 1 to 3 hours.', section: SECTIONS.MARINATE_CHICKEN },
+
+        { step: 'Preheat oven to 450ºF.', section: SECTIONS.PREHEAT_OVEN },
+        { step: 'Place aluminum foil on the baking sheet.', section: SECTIONS.PREP_PAN },
+        { step: 'Thread the skewers with chicken and veggies leaving enough space between each piece.', section: PREP_SKEWERS },
+        { step: 'Place the prepared skewers on the baking sheet with space in between each other.', section: PREP_SKEWERS },
+        { step: 'Bake until cooked through (about 15 to 25 minutes).', section: SECTIONS.BAKE },
+        { step: 'Enjoy these simple appetizers.', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'Leaving space between each piece allows it to get cook evenly.' }
     ],
     store: [
         {

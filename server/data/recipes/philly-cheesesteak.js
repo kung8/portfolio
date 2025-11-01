@@ -1,7 +1,6 @@
 const cheesesteak1 = '../assets/Products/philly-cheesesteak-1.jpeg';
 const cheesesteak2 = '../assets/Products/philly-cheesesteak-2.jpeg';
 const cheesesteak3 = '../assets/Products/philly-cheesesteak-3.jpeg';
-const cheesesteak4 = '../assets/Products/philly-cheesesteak-4.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -45,17 +44,19 @@ module.exports = {
             finder: 'Kevin Ung',
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...RED_BELL_PEPPER, amount: 2, unit: '', additionalDetails: 'sliced strips', section: SECTIONS.MAIN },
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced strips', section: SECTIONS.MAIN },
-        { ...MUSHROOM, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: true, section: SECTIONS.MAIN },
-        { ...PROVOLONE_CHEESE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BEEF_RIBEYE_STEAK, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thin strips', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HOAGIE_BREAD, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...RED_BELL_PEPPER, amount: 2, unit: '', additionalDetails: 'sliced strips', section: SECTIONS.VEGGIES },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced strips', section: SECTIONS.VEGGIES },
+        { ...MUSHROOM, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: true, section: SECTIONS.VEGGIES },
+
+        { ...BEEF_RIBEYE_STEAK, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thin strips', section: SECTIONS.BEEF },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BEEF },
+        { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BEEF },
+
+        { ...PROVOLONE_CHEESE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.CHEESE },
+        { ...HOAGIE_BREAD, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
         STOVE,
@@ -68,13 +69,19 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: 'Over high heat, heat oil in pan.', section: SECTIONS.MAIN },
-        { step: 'Add onions, bell peppers and mushrooms into pan and caramelize. Saute until browned and set aside.', section: SECTIONS.MAIN, img: cheesesteak2 },
-        { step: 'In same pan, add beef and season with salt and pepper. Cook until beef is cooked and set aside.', section: SECTIONS.MAIN, img: [cheesesteak3, cheesesteak4] },
-        { step: 'Re-add the veggies to pan and stir.', section: SECTIONS.MAIN },
-        { step: 'Layer cheese slices and melt (about a minute).', section: SECTIONS.MAIN },
-        { step: 'Optionally toast the buns. Open up hoagie bread and layer with meat, cheese and vegetables to your hearts content.', section: SECTIONS.MAIN },
-        { step: 'Enjoy the taste of freedom!', section: SECTIONS.MAIN },
+        { step: 'Over high heat, heat oil in pan.', section: SECTIONS.COOK_VEGGIES },
+        { step: `Add the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Caramelize and saute until browned. Set aside.`, section: SECTIONS.COOK_VEGGIES, img: cheesesteak2 },
+
+        { step: `In the same pan, add the "${SECTIONS.BEEF}" section ingredients`, section: SECTIONS.COOK_BEEF },
+        { step: `Saute until cooked. Set aside.`, section: SECTIONS.COOK_BEEF, img: cheesesteak3 },
+
+        { step: 'Re-add the veggies. Stir.', section: SECTIONS.ASSEMBLE },
+        { step: 'Layer cheese slices on top. Let it melt (about a minute).', section: SECTIONS.ASSEMBLE },
+        { step: 'Optionally toast the buns.', section: SECTIONS.ASSEMBLE },
+        { step: 'Open up hoagie bread and fill to your heart\'s content.', section: SECTIONS.ASSEMBLE },
+
+        { step: 'Enjoy the taste of freedom!', section: SECTIONS.SERVE },
     ],
     store: [
         {

@@ -8,7 +8,6 @@ const frenchToast7 = '../assets/Products/french-toast-7.jpeg';
 const frenchToast8 = '../assets/Products/french-toast-8.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
-    BREAD,
     BRIOCHE_BUNS,
     CINNAMON,
     EGG,
@@ -22,6 +21,11 @@ const {
     UNSALTED_BUTTER,
     VANILLA_EXTRACT,
 } = require('./ingredients');
+
+const EGG_BATTER = 'Egg Batter';
+const FRENCH_TOAST_SECTION = 'French Toast';
+const PREP_FRENCH_TOAST = 'Prep French Toast';
+const COOK_FRENCH_TOAST = 'Cook French Toast';
 
 module.exports = {
     cardName: 'French Toast',
@@ -45,14 +49,15 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...CINNAMON, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...MILK, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BRIOCHE_BUNS, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: '', unit: '', additionalDetails: 'for cooking', section: SECTIONS.MAIN },
+        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: EGG_BATTER },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: EGG_BATTER },
+        { ...CINNAMON, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: EGG_BATTER },
+        { ...MILK, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: EGG_BATTER },
+        
+        { ...BRIOCHE_BUNS, amount: 8, unit: '', additionalDetails: '', section: FRENCH_TOAST_SECTION },
+        { ...UNSALTED_BUTTER, amount: '', unit: '', additionalDetails: 'for cooking', section: FRENCH_TOAST_SECTION },
     ],
     appliances: [
         STOVE,
@@ -65,11 +70,11 @@ module.exports = {
         MEASURING_CUPS,
     ],
     directions: [
-        { step: 'Mix eggs, vanilla, cinnamon, and milk together.', section: SECTIONS.MAIN, img: [frenchToast1, frenchToast2] },
-        { step: 'Dredge bread in on both sides in batter one at a time right before frying.', section: SECTIONS.MAIN, img: [frenchToast3, frenchToast4] },
-        { step: 'Heat a frying pan over medium heat and add some butter to pan.', section: SECTIONS.MAIN },
-        { step: 'Brown each side of bread (about 30 seconds on each side).', section: SECTIONS.MAIN, img: [frenchToast5, frenchToast6] },
-        { step: 'Serve and add fruits, syrup, and all your favorite toppings.', section: SECTIONS.MAIN, img: frenchToast7 },
+        { step: `In a medium bowl, combine the "${EGG_BATTER}" section ingredients.`, section: PREP_FRENCH_TOAST, img: [frenchToast1, frenchToast2] },
+        { step: 'Dredge bread on both sides one at a time right before pan frying.', section: PREP_FRENCH_TOAST, img: [frenchToast3, frenchToast4] },
+        { step: 'Over medium heat, heat butter in a pan.', section: COOK_FRENCH_TOAST },
+        { step: 'Brown each side of bread (about 30 seconds on each side).', section: COOK_FRENCH_TOAST, img: [frenchToast5, frenchToast6] },
+        { step: 'Serve and add fruits, syrup, and all your favorite toppings.', section: SECTIONS.SERVE, img: frenchToast7 },
     ],
     store: [
         // {
