@@ -15,10 +15,10 @@ const {
     LARGE_BOWL,
     LIGHT_SOY_SAUCE,
     SALT,
+    SERVING_BOWL,
     SPATULA,
     STOVE,
     WOK,
-    SERVING_BOWL,
 } = require('./ingredients');
 
 const GINGER_SECTION = 'Ginger';
