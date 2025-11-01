@@ -2,6 +2,8 @@ const blanket1 = '../assets/Products/pigs-in-a-blanket-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, BAKING_SHEET, BASTING_BRUSH, CROISSANT_DOUGH, CUTTING_BOARD, EGG, KNIFE, MINI_HOT_DOG, OVEN, PLATE } = require('./ingredients');
 
+const PIGS_IN_A_BLANKET = 'Pigs In A Blanket';
+
 module.exports = {
     cardName: 'Pigs In A Blanket',
     name: 'Pigs In A Blanket',
@@ -24,11 +26,11 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...CROISSANT_DOUGH, amount: 2, unit: INGREDIENT_UNITS.CAN, additionalDetails: '' },
-        { ...EGG, amount: 2, unit: '', additionalDetails: '' },
-        { ...MINI_HOT_DOG, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '' },
+        { ...CROISSANT_DOUGH, amount: 2, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', section: PIGS_IN_A_BLANKET },
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: PIGS_IN_A_BLANKET },
+        { ...MINI_HOT_DOG, amount: 14, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PIGS_IN_A_BLANKET },
     ],
     appliances: [
         OVEN,
@@ -42,12 +44,21 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: 'Preheat oven to 375ºF and line baking sheet with aluminum foil.', section: SECTIONS.MAIN },
-        { step: 'Tubs of croissant dough usually make about 8 croissants. Cut each croissant dough triangle into thirds.', section: SECTIONS.MAIN },
-        { step: 'Place hot dog on one end of the croissant piece and roll until it is snugly wrapped inside its blanket.', section: SECTIONS.MAIN },
-        { step: 'Separate the egg white and the yolk. Lightly brush some of the yolk over the blanket to create a seal.', section: SECTIONS.MAIN },
-        { step: 'Bake until golden brown (about 12 to 15 minutes).', section: SECTIONS.MAIN },
-        { step: 'Serve with your favorite condiment, and enjoy this easy tailgate hors d\'oeuvre!', section: SECTIONS.MAIN },
+        { step: 'Preheat oven to 375ºF.', section: SECTIONS.PREHEAT_OVEN },
+
+        { step: 'Line baking sheet with aluminum foil.', section: SECTIONS.PREP_PAN },
+
+        { step: 'Cut each croissant dough triangle into thirds.', section: SECTIONS.ASSEMBLE },
+        { step: 'Place hot dog on one end of the croissant piece.', section: SECTIONS.ASSEMBLE },
+        { step: 'Roll until it is snugly wrapped inside its blanket.', section: SECTIONS.ASSEMBLE },
+        { step: 'Separate the egg white and the yolk. Lightly brush some of the yolk over the blanket to create a seal.', section: SECTIONS.ASSEMBLE },
+
+        { step: 'Bake until golden brown (about 12 to 15 minutes).', section: SECTIONS.BAKE },
+
+        { step: 'Serve with your favorite condiment, and enjoy this easy tailgate hors d\'oeuvre!', section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'Tubs of croissant dough usually make about 8 croissants.' },
     ],
     store: [
         {

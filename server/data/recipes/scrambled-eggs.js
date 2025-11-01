@@ -14,6 +14,9 @@ const {
     YELLOW_ONION,
 } = require('./ingredients');
 
+const HAM_SECTION = 'Ham';
+const SCRAMBLE_EGGS = 'Scramble Eggs';
+
 module.exports = {
     cardName: 'Scrambled Eggs',
     name: 'Scrambled Eggs',
@@ -37,19 +40,20 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...EGG, amount: 3, unit: '', additionalDetails: '' },
-        { ...MILK, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '' },
-        { ...SOUR_CREAM, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '' },
-        { ...GREEN_BELL_PEPPER, amount: 1 / 8, unit: '', additionalDetails: 'diced' },
-        { ...YELLOW_ONION, amount: 1 / 8, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced' },
-        { ...ROMA_TOMATO, amount: 1 / 8, unit: '', additionalDetails: 'diced' },
-        { ...COOKED_HAM, amount: 1, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'diced' },
-        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '' },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste' },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste' },
-        { ...BASIL, amount: '', unit: '', additionalDetails: 'to taste' },
+        { ...EGG, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.EGGS },
+        { ...MILK, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.EGGS },
+        { ...SOUR_CREAM, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.EGGS },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.EGGS },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.EGGS },
+        { ...BASIL, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.EGGS },
+        
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...GREEN_BELL_PEPPER, amount: 1 / 8, unit: '', additionalDetails: 'diced', section: SECTIONS.VEGGIES },
+        { ...YELLOW_ONION, amount: 1 / 8, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.VEGGIES },
+        { ...ROMA_TOMATO, amount: 1 / 8, unit: '', additionalDetails: 'diced', section: SECTIONS.VEGGIES },
+        { ...COOKED_HAM, amount: 1, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'diced', section: HAM_SECTION },
     ],
     appliances: [
         { name: 'stove' },
@@ -63,15 +67,18 @@ module.exports = {
         { name: 'medium bowl' },
     ],
     directions: [
-        { step: 'Mix together the eggs, milk, sour cream, salt, pepper, and basil. Allow the seasonings some time to enrich the flavor.', section: SECTIONS.MAIN },
-        { step: 'While the seasonings are doing their thing, prep all the cutting of these ingredients (and any additional ingredients that you may want to add to your eggs). Be sure any meats are cooked or else you will need to add some additional time for those ingredients to cook.', section: SECTIONS.MAIN },
-        { step: 'Once the ingredients are prepped, heat up a pan over medium-high heat. Add just a little butter when the pan is hot.', section: SECTIONS.MAIN },
-        { step: 'Once butter has melted, add the vegetables and ham being sure they are spread around the pan to ensure proper browning.', section: SECTIONS.MAIN },
-        { step: 'Cook for about 3 - 4 minutes being sure to stir occasionally to prevent burnt pieces.', section: SECTIONS.MAIN },
-        { step: 'Now pour in the egg batter over the vegetables.', section: SECTIONS.MAIN },
-        { step: 'While still keeping it over the heat, tilt and angle the pan so the runny egg on top can spread to more parts of the pan and you can even take the spatula and lift the edges of the cooking egg and let gravity do its job to have the runny egg batter fill underneath it. Allow to cook for just a few minutes.', section: SECTIONS.MAIN },
-        { step: 'Start scrambling the eggs and continue to cook until the egg pieces are brownish-yellow (and you can cook them to your preferred egg state).', section: SECTIONS.MAIN },
-        { step: 'Serve and enjoy this nice warm start to a beautiful day!', section: SECTIONS.MAIN },
+        { step: `Mix together the "${SECTIONS.EGGS}". Let it rest for a few minutes.`, section: SECTIONS.PREP_EGGS },
+
+        { step: 'Over medium-high heat, melt a little butter in a hot pan.', section: SECTIONS.COOK_VEGGIES },
+        { step: `Add the "${SECTIONS.VEGGIES}" section ingredients and ham.`, section: SECTIONS.COOK_VEGGIES },
+        { step: 'Cook and stir (about 3 to 4 minutes).', section: SECTIONS.COOK_VEGGIES },
+
+        { step: 'Pour in the egg batter over the pan fried ingredients.', section: SECTIONS.COOK_EGGS },
+        { step: 'Within 30 seconds, lift the edges and tilt the pan so the runny eggs on top will go underneath. Cook for a few minutes.', section: SECTIONS.COOK_EGGS },
+
+        { step: 'Scramble the eggs. Cook until the egg pieces are brownish-yellow.', section: SCRAMBLE_EGGS },
+
+        { step: 'Serve and enjoy this nice warm start to a beautiful day!', section: SECTIONS.SERVE },
     ],
     store: [
         {

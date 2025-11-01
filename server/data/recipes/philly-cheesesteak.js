@@ -38,24 +38,24 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Philly Cheesesteak', 
+        {
+            label: 'Philly Cheesesteak',
             link: 'https://momsdish.com/easy-philly-cheesesteak',
             authors: ['Natalya Drozhzhin'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     separated: false,
     ingredients: [
-        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '' },
-        { ...RED_BELL_PEPPER, amount: 2, unit: '', additionalDetails: 'sliced strips' },
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced strips' },
-        { ...MUSHROOM, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: true },
-        { ...PROVOLONE_CHEESE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '' },
-        { ...BEEF_RIBEYE_STEAK, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thin strips' },
-        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '' },
-        { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '' },
-        { ...HOAGIE_BREAD, amount: 6, unit: '', additionalDetails: '' },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...RED_BELL_PEPPER, amount: 2, unit: '', additionalDetails: 'sliced strips', section: SECTIONS.MAIN },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'sliced strips', section: SECTIONS.MAIN },
+        { ...MUSHROOM, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'sliced', optional: true, section: SECTIONS.MAIN },
+        { ...PROVOLONE_CHEESE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BEEF_RIBEYE_STEAK, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'thin strips', section: SECTIONS.MAIN },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...HOAGIE_BREAD, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
     ],
     appliances: [
         STOVE,

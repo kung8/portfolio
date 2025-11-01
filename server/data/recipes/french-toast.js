@@ -47,12 +47,12 @@ module.exports = {
     ],
     separated: false,
     ingredients: [
-        { ...EGG, amount: 4, unit: '', additionalDetails: '' },
-        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '' },
-        { ...CINNAMON, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '' },
-        { ...MILK, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '' },
-        { ...BRIOCHE_BUNS, amount: 8, unit: '', additionalDetails: '' },
-        { ...UNSALTED_BUTTER, amount: '', unit: '', additionalDetails: 'for cooking' },
+        { ...EGG, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...CINNAMON, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...MILK, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...BRIOCHE_BUNS, amount: 8, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: '', unit: '', additionalDetails: 'for cooking', section: SECTIONS.MAIN },
     ],
     appliances: [
         STOVE,

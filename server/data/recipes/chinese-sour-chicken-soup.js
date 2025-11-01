@@ -12,6 +12,9 @@ const {
     STOVE,
 } = require('./ingredients');
 
+const SOUR_MIX = 'Sour Mix';
+const PREP_SOUR_MIX = 'Prep Sour Mix';
+
 module.exports = {
     cardName: 'Sour Chicken Soup',
     name: 'Chinese Sour Chicken Soup',
@@ -35,11 +38,11 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...CHICKEN_THIGH, amount: 6, unit: INGREDIENT_UNITS.POUND, additionalDetails: '' },
-        { ...KNORR_TAMARIND_SOUP_BASE, amount: 1, unit: INGREDIENT_UNITS.PACKET, additionalDetails: '' },
-        { ...LIME_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '' },
+        { ...CHICKEN_THIGH, amount: 6, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...KNORR_TAMARIND_SOUP_BASE, amount: 1, unit: INGREDIENT_UNITS.PACKET, additionalDetails: '', section: SOUR_MIX },
+        { ...LIME_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SOUR_MIX },
     ],
     appliances: [
         STOVE,
@@ -52,13 +55,17 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Cut up chicken using cleaver knife into about 1" thick pieces.', section: SECTIONS.MAIN },
-        { step: 'Place chicken into pot and fill with water.', section: SECTIONS.MAIN },
-        { step: 'Let the chicken boil for about 30 minutes.', section: SECTIONS.MAIN },
-        { step: 'Skim off the froth that develops on the top using a shallow spatula.', section: SECTIONS.MAIN },
-        { step: 'Ladle out about 1.5 cup of the soup for the sour mix. Pour in tamarind powder and lime juice and mix together.', section: SECTIONS.MAIN },
-        { step: 'When ready to eat, add sour mixture to the soup (as desired).', section: SECTIONS.MAIN },
-        { step: 'Serve soup over rice and enjoy this nostalgic piece of home for me.', section: SECTIONS.MAIN },
+        { step: 'Cut up chicken using cleaver knife into about 1" thick pieces.', section: SECTIONS.PREP_CHICKEN },
+
+        { step: 'Fill a large pot with chicken and cover with water.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Bring to a boil for 15 to 20 minutes.', section: SECTIONS.COOK_CHICKEN },
+        { step: 'Skim off the froth that develops on the top using a shallow spatula.', section: SECTIONS.COOK_CHICKEN },
+
+        { step: 'In a medium bowl, ladle about 1.5 cup of the soup for the sour mix.', section: PREP_SOUR_MIX },
+        { step: 'Add tamarind powder and lime juice. Mix.', section: PREP_SOUR_MIX },
+
+        { step: 'Serve soup over rice with as many scoops of the sour mix.', section: SECTIONS.SERVE },
+        { step: 'Enjoy this nostalgic piece of home for me.', section: SECTIONS.SERVE },
     ],
     store: [
         {

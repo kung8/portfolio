@@ -32,6 +32,9 @@ const {
     WHITE_SUGAR,
 } = require('./ingredients');
 
+const PREHEAT_WAFFLE_IRON = 'Preheat Waffle Iron';
+const COOK_WAFFLES = 'Cook Waffles';
+
 module.exports = {
     cardName: 'Waffles',
     name: 'Waffles',
@@ -48,23 +51,26 @@ module.exports = {
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 2, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Waffles', 
+        {
+            label: 'Waffles',
             link: 'https://www.spendwithpennies.com/fluffy-homemade-waffle-recipe/',
             authors: ['Holly Nilsson'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...BAKING_POWDER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGG, amount: 2, unit: '', additionalDetails: 'separated', section: SECTIONS.MAIN },
-        { ...MILK, amount: 5 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...UNSALTED_BUTTER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...BAKING_POWDER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DRY_INGREDIENTS },
+
+        { ...MILK, amount: 5 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+        { ...UNSALTED_BUTTER, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.WET_INGREDIENTS },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.WET_INGREDIENTS },
+
+        { ...EGG, amount: 2, unit: '', additionalDetails: 'separated', section: SECTIONS.EGGS },
+
         { ...STRAWBERRY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...BANANA, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...BLUEBERRY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
@@ -85,15 +91,18 @@ module.exports = {
         SMALL_BOWL,
     ],
     directions: [
-        { step: 'Preheat the waffle iron.', section: SECTIONS.MAIN },
-        { step: 'Whisk together flour, baking powder, salt and sugar in a mixing bowl.', section: SECTIONS.MAIN, img: waffles1 },
-        { step: 'In a large bowl, mix together milk, butter, and vanilla.', section: SECTIONS.MAIN, img: waffles2 },
-        { step: 'In a small bowl, beat egg whites with a mixer or with a fork.', section: SECTIONS.MAIN, img: waffles3 },
-        { step: 'Add egg yolk to dry ingredients.', section: SECTIONS.MAIN },
-        { step: 'Combine the wet and dry ingredients.', section: SECTIONS.MAIN },
-        { step: 'Fold egg whites into the the combined ingredients.', section: SECTIONS.MAIN, img: waffles4 },
-        { step: 'Once the waffle iron is heated, use a cooking spray on the waffle iron then fill between 3/4 way to almost full.', section: SECTIONS.MAIN, img: waffles5 },
-        { step: 'Cook for 3 to 5 minutes, or until golden brown.', section: SECTIONS.MAIN },
+        { step: 'Preheat the waffle iron.', section: PREHEAT_WAFFLE_IRON },
+
+        { step: `In a mixing bowl, combine the "${SECTIONS.DRY_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_BATTER, img: waffles1 },
+        { step: `In a large bowl, combine the "${SECTIONS.WET_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_BATTER, img: waffles2 },
+        { step: 'In a small bowl, beat egg whites with a mixer or with a fork.', section: SECTIONS.PREP_BATTER, img: waffles3 },
+        { step: 'Add egg yolk to dry ingredients.', section: SECTIONS.PREP_BATTER },
+        { step: 'Combine the wet and dry ingredients.', section: SECTIONS.PREP_BATTER },
+        { step: 'Fold egg whites into the the combined ingredients.', section: SECTIONS.PREP_BATTER, img: waffles4 },
+
+        { step: 'Once the waffle iron is heated, use a cooking spray on the waffle iron then fill between 3/4 way to almost full.', section: COOK_WAFFLES, img: waffles5 },
+        { step: 'Cook until golden brown (for 3 to 5 minutes).', section: COOK_WAFFLES },
+
         { step: 'Eat these warm topped with your favorite toppings.', section: SECTIONS.SERVE, img: waffles6 },
     ],
     notes: [

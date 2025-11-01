@@ -26,6 +26,10 @@ const {
     YELLOW_ONION,
 } = require('./ingredients');
 
+const CHICKEN_SALAD = 'Chicken Salad';
+const CRESCENT_ROLLS_SECTION = 'Crescent Rolls';
+const PREP_CHICKEN_SALAD = 'Prep Chicken Salad';
+
 module.exports = {
     cardName: 'Chicken Crescent Rolls',
     name: 'Chicken Stuffed Crescent Rolls',
@@ -48,9 +52,8 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...CRESCENT_ROLLS, amount: 1, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', section: SECTIONS.MAIN },
         { ...CHICKEN_BREAST, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked and shredded', section: SECTIONS.FILLING },
         { ...MOZZARELLA_CHEESE, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: SECTIONS.FILLING },
         { ...CREAM_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
@@ -61,7 +64,9 @@ module.exports = {
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.FILLING },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.FILLING },
         { ...CHILI_POWDER, amount: '', unit: '', additionalDetails: 'too taste', section: SECTIONS.FILLING },
-        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: SECTIONS.MAIN },
+        
+        { ...CRESCENT_ROLLS, amount: 1, unit: INGREDIENT_UNITS.CAN, additionalDetails: '', section: CRESCENT_ROLLS_SECTION },
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'melted', section: CRESCENT_ROLLS_SECTION },
     ],
     appliances: [
         OVEN,
@@ -72,14 +77,18 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: 'Preheat oven to 375ºF.', section: SECTIONS.MAIN },
-        { step: 'Combine shredded chicken, shredded cheese, cream cheese, bell peppers, onion, garlic powder, parsley, salt, pepper, and chili powder in a mixing bowl.', section: SECTIONS.MAIN, img: rolls1 },
-        { step: 'Unroll the crescent roll triangles and lay on the baking sheet.', section: SECTIONS.MAIN, img: rolls2 },
-        { step: 'Place a ball of chicken filling on the wide end of the crescent roll.', section: SECTIONS.MAIN, img: rolls3 },
-        { step: 'Roll the dough to enclose as much of the filling.', section: SECTIONS.MAIN },
-        { step: 'Brush rolls with melted butter and optionally sprinkle with cheese.', section: SECTIONS.MAIN, img: rolls4 },
-        { step: 'Bake in oven for 10 to 12 minutes, or until golden brown.', section: SECTIONS.MAIN, img: rolls5 },
-        { step: 'Serve warm and enjoy this light appetizer.', section: SECTIONS.MAIN, img: rolls6 },
+        { step: 'Preheat oven to 375ºF.', section: SECTIONS.PREHEAT_OVEN },
+        
+        { step: `In a mixing bowl, combine the "${CHICKEN_SALAD}" section ingredients.`, section: PREP_CHICKEN_SALAD, img: rolls1 },
+
+        { step: 'Unroll the crescent roll triangles and lay on the baking sheet.', section: SECTIONS.ASSEMBLE, img: rolls2 },
+        { step: 'Place a ball of chicken filling on the wide end of the crescent roll.', section: SECTIONS.ASSEMBLE, img: rolls3 },
+        { step: 'Roll the dough to enclose as much of the filling.', section: SECTIONS.ASSEMBLE },
+        { step: 'Brush rolls with melted butter and optionally sprinkle with cheese.', section: SECTIONS.ASSEMBLE, img: rolls4 },
+
+        { step: 'Bake until golden brown (for 10 to 12 minutes).', section: SECTIONS.BAKE, img: rolls5 },
+
+        { step: 'Serve warm and enjoy this light appetizer.', section: SECTIONS.SERVE, img: rolls6 },
     ],
     notes: [
         { note: 'Be sure to cook the dough completely.' }
