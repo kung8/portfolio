@@ -65,7 +65,7 @@ module.exports = {
         { step: `Reduce to medium heat.`, section: SECTIONS.CHICKEN },
         { step: `Cover and cook until the chicken is cooked through and reaches an internal temperature of 175ºF (about 10 to 12 minutes).`, section: SECTIONS.CHICKEN, img: [thigh4, thigh5] },
         { step: `Set aide chicken.`, section: SECTIONS.CHICKEN, img: thigh6 },
-        { step: `Keep drippings in pan and add wine and garlic.`, section: SECTIONS.SAUCE, img: thigh7 },
+        { step: `Keep drippings in the pan and add wine and garlic.`, section: SECTIONS.SAUCE, img: thigh7 },
         { step: `Bring to a boil and loosening the browned food particles (deglazing the fond). Cook until wine is reduced by half (about 1 to 2 minutes).`, section: SECTIONS.SAUCE, img: thigh8 },
         { step: `Stir in cream and rosemary.`, section: SECTIONS.SAUCE, img: thigh10 },
         { step: `Return to a boil.`, section: SECTIONS.SAUCE, img: thigh11 },

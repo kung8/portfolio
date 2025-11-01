@@ -70,7 +70,7 @@ module.exports = {
         { step: `In a medium bowl, combine together the dry ingredients.`, section: DRY_INGREDIENTS, img: bars2 },
         { step: `In a separate mixing bowl, combine butter and the sugars.`, section: WET_INGREDIENTS, img: [bars3, bars4] },
         { step: `Add eggs and vanilla. Mix.`, section: WET_INGREDIENTS, img: [bars5, bars6] },
-        { step: `Combine together the dry and wet ingredients.`, section: SECTIONS.MAIN, img: [bars7, bars8] },
+        { step: `Mix the dry and wet ingredients.`, section: SECTIONS.MAIN, img: [bars7, bars8] },
         { step: `Add the toffee bits.`, section: SECTIONS.MAIN, img: [bars9, bars10] },
         { step: `Scrape the batter into the baking pan.`, section: SECTIONS.MAIN, img: bars11 },
         { step: `Bake for 30 minutes.`, section: SECTIONS.MAIN },

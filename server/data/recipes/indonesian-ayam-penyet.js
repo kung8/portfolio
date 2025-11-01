@@ -79,7 +79,7 @@ module.exports = {
         { step: `Over medium-high heat, heat oil in a pan.`, section: FRY_CHICKEN },
         { step: `Add the boiled chicken to the pan. Fry until golden brown (about 5 to 10 minutes).`, section: FRY_CHICKEN },
 
-        { step: `Over medium heat, heat oil in pan.`, section: MAKE_SAMBAL },
+        { step: `Over medium heat, heat oil in the pan.`, section: MAKE_SAMBAL },
         { step: `Add shallots, tomato, and red chilies. Cook for 2 minutes.`, section: MAKE_SAMBAL },
         { step: `Transfer to a mortar.`, section: MAKE_SAMBAL },
         { step: `Add the rest of the sambal ingredients.`, section: MAKE_SAMBAL },

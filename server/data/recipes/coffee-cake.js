@@ -113,7 +113,7 @@ module.exports = {
         { step: `Measure out the buttermilk.`, section: COMBINE_BATTERS },
         { step: `Alternate adding ingredients to the wet batter: 1/3 dry, 1/2 buttermilk, 1/3 dry, 1/2 buttermilk, 1/3 dry.`, section: COMBINE_BATTERS, img: [cake8, cake9] },
 
-        { step: `In a small bowl, combine together the cinnamon and sugar.`, section: MAKE_CINNAMON_SWIRL },
+        { step: `In a small bowl, mix the cinnamon and sugar.`, section: MAKE_CINNAMON_SWIRL },
 
         { step: `In the greased baking pan, pour half of the batter.`, section: SECTIONS.ASSEMBLE, img: cake10 },
         { step: `Sprinkle the cinnamon swirl evenly over the batter.`, section: SECTIONS.ASSEMBLE, img: cake11 },

@@ -68,7 +68,7 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: `Over medium heat, heat oil in pan.`, section: SECTIONS.PREP_FILLING },
+        { step: `Over medium heat, heat oil in the pan.`, section: SECTIONS.PREP_FILLING },
         { step: `Add onion and garlic. Saute until golden brown.`, section: SECTIONS.PREP_FILLING },
         { step: `Add beef. Brown.`, section: SECTIONS.PREP_FILLING, img: dolmeh1 },
         { step: `Add "${SECTIONS.RICE}" section ingredients.`, section: SECTIONS.PREP_FILLING },

@@ -60,7 +60,7 @@ module.exports = {
     ],
     directions: [
         { step: `Place parchment paper on a baking sheet.`, section: COOK_SUGARS },
-        { step: `Over medium heat, combine together sugar and water in a saucepan.`, section: COOK_SUGARS },
+        { step: `Over medium heat, mix sugar and water in a saucepan.`, section: COOK_SUGARS },
         { step: `Add in corn syrup. Stirring occasionally and bring to a boil.`, section: COOK_SUGARS },
         { step: `Continue to cook until the temperature reading is 250ºF.`, section: COOK_SUGARS },
 

@@ -92,7 +92,7 @@ module.exports = {
         { step: `Bake until a toothpick comes out clean (about 45 to 50 minutes).`, section: CAKE, img: cake9 },
         { step: `Cool for 10 minutes before taking the cake out of the pan.`, section: CAKE },
         { step: `Cool completely before assembling and decorating the cake.`, section: CAKE },
-        { step: `In a mixing bowl, combine together the softened cream cheese and butter.`, section: FROSTING, img: cake10 },
+        { step: `In a mixing bowl, mix the softened cream cheese and butter.`, section: FROSTING, img: cake10 },
         { step: `Add powdered sugar and vanilla and mix until well incorporated.`, section: FROSTING, img: cake11 },
         { step: `Spread the frosting on one layer of the cake and place the other layer on top.`, section: ASSEMBLING, img: cake12 },
         { step: `Frost the top layer and sprinkle it with walnut, as desired.`, section: ASSEMBLING, img: cake13 },

@@ -97,7 +97,7 @@ module.exports = {
         { step: `Set up the three dredging stations in separate small bowls: (1) flour, (2) egg, and (3) panko bread crumbs.`, section: SECTIONS.MAIN, img: katsu1 },
         { step: `First dredge the chicken in flour and shake off any excess. A good way to do this is playing pat-a-cake with it between each hand. Be sure to keep it over the flour station.`, section: SECTIONS.MAIN, img: katsu2 },
         { step: `Dip it inside the egg bowl.`, section: SECTIONS.MAIN, img: katsu3 },
-        { step: `Finally put it inside the panko bread crumbs bowl and make sure that it is well coated.`, section: SECTIONS.MAIN, img: katsu4 },
+        { step: `Finally place it in the panko bread crumbs bowl and make sure that it is well coated.`, section: SECTIONS.MAIN, img: katsu4 },
         { step: `Place the finished chicken on a plate that will be fried soon. Repeat the dredging process for each of the chicken breasts.`, section: SECTIONS.MAIN, img: katsu5 },
         { step: `Heat oil in a pot over medium heat until it gets to about 350 ºF. You can use a cooking thermometer to gauge this.`, section: SECTIONS.MAIN },
         { step: `Be careful as the oil is very hot by this point, so be sure to wear oven mitts to help protect your hands from getting burned.`, section: SECTIONS.MAIN },

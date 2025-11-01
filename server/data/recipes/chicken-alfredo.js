@@ -96,7 +96,7 @@ module.exports = {
         { step: `Set the vegetables aside with the chicken.`, section: SECTIONS.COOK_VEGGIES },
 
         { step: `In the same pan, melt the butter.`, section: SECTIONS.COOK_SAUCE },
-        { step: `In a bowl, combine heavy cream and nutmeg. Add to pan.`, section: SECTIONS.COOK_SAUCE },
+        { step: `In a bowl, combine heavy cream and nutmeg. Add to the pan.`, section: SECTIONS.COOK_SAUCE },
         { step: `Bring to a simmer.`, section: SECTIONS.COOK_SAUCE },
         { step: `Cook for another 2 minutes.`, section: SECTIONS.COOK_SAUCE },
         { step: `Reduce to low heat.`, section: SECTIONS.COOK_SAUCE },

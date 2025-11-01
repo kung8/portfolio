@@ -68,7 +68,7 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: `Over high heat, heat oil in pan.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Over high heat, heat oil in the pan.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Caramelize and saute until browned. Set aside.`, section: SECTIONS.COOK_VEGGIES, img: cheesesteak2 },
 

@@ -78,7 +78,7 @@ module.exports = {
         { step: `Chill for 3 to 4 minutes.`, section: SECTIONS.BLANCH },
         { step: `Drain.`, section: SECTIONS.BLANCH },
 
-        { step: `Brown butter in pan.`, section: SECTIONS.SAUTE },
+        { step: `Brown butter in the pan.`, section: SECTIONS.SAUTE },
         { step: `Add "${SAUTEED_GREEN_BEANS}" section ingredients. Cook for 2 minutes.`, section: SECTIONS.SAUTE },
         { step: `Add green beans. Cook for a few minutes.`, section: SECTIONS.SAUTE, img: bean3 },
 

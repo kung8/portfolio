@@ -100,7 +100,7 @@ module.exports = {
         { step: `Boil the chicken breasts in a pot of water.`, section: SECTIONS.COOK_CHICKEN, img: gallina1 },
         { step: `Once the chicken is cooked, shred the chicken on a cutting board. Place the shredded chicken in a large mixing bowl. Keep some of the chicken broth in the pot.`, section: SECTIONS.COOK_CHICKEN, img: gallina2 },
         { step: `Add the "${SECTIONS.SAUCE}" section ingredients to a blender and blend together.`, section: SECTIONS.PREP_SAUCE, img: [gallina3, gallina4, gallina5] },
-        { step: `Over medium-high heat, heat oil in pan.`, section: COOK_AND_COMBINE },
+        { step: `Over medium-high heat, heat oil in the pan.`, section: COOK_AND_COMBINE },
         { step: `Add the garlic. Cook until the garlic is fragrant and is light brown.`, section: COOK_AND_COMBINE, img: gallina6 },
         { step: `Add the onions to the pan. Cook until the onions are browned.`, section: COOK_AND_COMBINE, img: gallina7 },
         { step: `Add the sauce and chicken to the pan.`, section: COOK_AND_COMBINE, img: gallina8 },

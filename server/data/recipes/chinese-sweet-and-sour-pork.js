@@ -87,7 +87,7 @@ module.exports = {
         { step: `Over medium-high heat, add oil to a large pot.`, section: DEEP_FRY },
         { step: `Line a baking sheet with paper towels and place a wire rack on top.`, section: DEEP_FRY },
         { step: `Once the oil is between 300ºF and 350ºF, you can begin frying the pork in batches.`, section: DEEP_FRY },
-        { step: `Carefully add the pork into the hot oil and fry until pork starts to brown and gets crispier (about 7 to 8 minutes). Once in the oil, avoid disrupting the pieces to prevent coating to come off.`, section: DEEP_FRY },
+        { step: `Carefully add the pork into the hot oil and fry until pork starts to brown and gets crispier (about 7 to 8 minutes). Once in the oil, avoid disrupting the pieces to prevent the coating to come off.`, section: DEEP_FRY },
         { step: `Transfer these pork pieces to the wire rack to drain.`, section: DEEP_FRY },
         { step: `Once all the pork pieces are cooked, you will raise the heat slightly until it get to 400ºF.`, section: DEEP_FRY },
         { step: `Again in batches, fry the pork for 1 to 2 minutes for this second fry.`, section: DEEP_FRY },

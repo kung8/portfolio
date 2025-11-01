@@ -106,7 +106,7 @@ module.exports = {
         // 25 minutes cook, 5 minutes prep
         { step: `Season both sides of the chicken with salt, pepper and garlic powder.`, section: SECTIONS.PREP_CHICKEN, img: enchiladas1 },
         { step: `Over medium-high heat, heat olive oil in a frying pan.`, section: SECTIONS.PREP_CHICKEN },
-        { step: `Add chicken to pan and sear each side (about 3 to 4 minutes per side).`, section: SECTIONS.PREP_CHICKEN, img: [enchiladas2, enchiladas4] },
+        { step: `Add chicken to the pan and sear each side (about 3 to 4 minutes per side).`, section: SECTIONS.PREP_CHICKEN, img: [enchiladas2, enchiladas4] },
         { step: `Add onions, bay leaf and broth.`, section: SECTIONS.PREP_CHICKEN, img: enchiladas5 },
         { step: `Cover and reduce to medium-low heat. Poach the chicken until it reaches 165ºF (about 8 to 10 minutes).`, section: SECTIONS.PREP_CHICKEN, img: [enchiladas6, enchiladas12] },
         { step: `Remove pan from heat.`, section: SECTIONS.PREP_CHICKEN },

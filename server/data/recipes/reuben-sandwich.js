@@ -55,7 +55,7 @@ module.exports = {
         { step: `Spread dressing on bread.`, section: SECTIONS.ASSEMBLE },
         { step: `Layer: 1 cheese slice, 2 corned beef slices, 1/4 sauerkraut, 1 cheese slice, and bread slice.`, section: SECTIONS.ASSEMBLE },
         { step: `Butter each bread top.`, section: SECTIONS.ASSEMBLE },
-        { step: `Place sandwich in pan (butter side down). Butter the bread top. Warm until golden brown (about 5 minutes).`, section: COOK_SANDWICH },
+        { step: `Place sandwich in the pan (butter side down). Butter the bread top. Warm until golden brown (about 5 minutes).`, section: COOK_SANDWICH },
         { step: `Flip and cook until the golden brown (about 5 minutes).`, section: COOK_SANDWICH },
         { step: `Enjoy this sandwich hot.`, section: SECTIONS.SERVE },
     ],

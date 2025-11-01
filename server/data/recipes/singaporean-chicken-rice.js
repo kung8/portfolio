@@ -84,7 +84,7 @@ module.exports = {
         { step: `Place the chicken thigh on top and cover with a lid.`, section: SECTIONS.RICE, img: rice2 },
         { step: `Cook until the chicken and rice is cooked (about 15 to 25 minutes).`, section: SECTIONS.RICE, img: rice3 },
         { step: `Cut the chicken into slices. If the chicken is still pink/raw, I recommend placing the sliced chicken in a pan filled with a layer of water and cover with a lid. Cook the chicken for 5 or so minutes over medium-high heat.`, section: SECTIONS.RICE },
-        { step: `Mix together garlic, ginger, sriracha, chicken stock, lime juice, and sugar in a bowl.`, section: CHILI_SAUCE, img: rice4 },
+        { step: `Mix garlic, ginger, sriracha, chicken stock, lime juice, and sugar in a bowl.`, section: CHILI_SAUCE, img: rice4 },
         { step: `Serve this dish with cucumbers and tomatoes. Top with chili sauce.`, section: SECTIONS.SERVE },
     ],
     store: [

@@ -85,7 +85,7 @@ module.exports = {
         { step: `Line a baking sheet with paper towels and place a wire cooling rack on top.`, section: DEEP_FRY },
         { step: `Dip the chicken into the egg dredge and then into the flour.`, section: DEEP_FRY, img: sesame2 },
         { step: `Place these coated chicken pieces onto a plate.`, section: DEEP_FRY, img: sesame3 },
-        { step: `Once the oil has reached 350ºF, you can begin to deep dry the chicken.`, section: DEEP_FRY },
+        { step: `Once the oil has reached 350ºF, you can begin to deep fry the chicken.`, section: DEEP_FRY },
         { step: `Carefully add the chicken in small batches to the oil. Cook until the chicken gets crispy and golden brown (about 5 minutes).`, section: DEEP_FRY },
         { step: `Using a spider strainer, remove the cooked chicken and set them on the wire rack to drain.`, section: DEEP_FRY },
         { step: `Repeat until all the chicken is cooked.`, section: DEEP_FRY },

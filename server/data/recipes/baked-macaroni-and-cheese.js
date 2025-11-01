@@ -92,7 +92,7 @@ module.exports = {
         { step: `Pour half of the macaroni and cheese into the baking dish.`, section: SECTIONS.ASSEMBLE },
         { step: `Add the last 2 cups of cheese on top of the mac and cheese.`, section: SECTIONS.ASSEMBLE, img: cheese15 },
         { step: `Add the last of the mac and cheese.`, section: SECTIONS.ASSEMBLE, img: cheese16 },
-        { step: `In a small bowl, combine together panko breadcrumbs, parmesan cheese, paprika and melted butter.`, section: SECTIONS.ASSEMBLE, img: cheese17 },
+        { step: `In a small bowl, mix panko breadcrumbs, parmesan cheese, paprika and melted butter.`, section: SECTIONS.ASSEMBLE, img: cheese17 },
         { step: `Sprinkle this mixture over the mac and cheese.`, section: SECTIONS.ASSEMBLE, img: cheese18 },
         { step: `Bake until bubbly and golden brown (about 30 minutes).`, section: SECTIONS.ASSEMBLE, img: [cheese19, cheese20] },
         { step: `Serve this warm and enjoy this comfort food.`, section: SECTIONS.SERVE, img: cheese21 },

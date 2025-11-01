@@ -99,7 +99,7 @@ module.exports = {
         { step: `Slowly stir in the boiling water.`, section: BAKE_CAKE, img: cake2 },
         { step: `Pour batter into baking pans.`, section: BAKE_CAKE, img: cake3 },
         { step: `Bake until an inserted toothpick comes out clean (about 25 to 35 minutes).`, section: BAKE_CAKE },
-        { step: `Cool for 5 minutes in pan.`, section: BAKE_CAKE, img: cake9 },
+        { step: `Cool for 5 minutes in the pan.`, section: BAKE_CAKE, img: cake9 },
         { step: `Transfer to wire rack by just inverting it. Let it completely cool.`, section: BAKE_CAKE },
 
         { step: `In a saucepan, combine "${COCONUT_FROSTING_HEATED_INGREDIENTS_SECTION}" section ingredients.`, section: COOK_COCONUT_FROSTING, img: cake4 },

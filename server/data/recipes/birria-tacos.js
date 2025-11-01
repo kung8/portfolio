@@ -89,7 +89,7 @@ module.exports = {
         { step: `Add 2 cups of sauce to the shredded beef.`, section: SECTIONS.PREP_FILLING, img: tacos7 },
 
         { step: `Add a little avocado oil to a pan.`, section: SECTIONS.ASSEMBLE },
-        { step: `Dip two tortillas into the sauce and place the two stacked tortillas in pan.`, section: SECTIONS.ASSEMBLE, img: [tacos8, tacos9] },
+        { step: `Dip two tortillas into the sauce and place the two stacked tortillas in the pan.`, section: SECTIONS.ASSEMBLE, img: [tacos8, tacos9] },
         { step: `On one half of the tortilla, add filling and fold.`, section: SECTIONS.ASSEMBLE, img: tacos10 },
         { step: `Over medium heat, pan fry (2 to 3 minutes).`, section: SECTIONS.ASSEMBLE },
         { step: `Flip and pan fry (2 to 3 minutes).`, section: SECTIONS.ASSEMBLE, img: tacos11 },

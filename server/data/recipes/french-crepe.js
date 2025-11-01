@@ -95,7 +95,7 @@ module.exports = {
         { step: `Cook for about 2 minutes on each side. Carefully flip by loosening the edges then flip.`, section: SECTIONS.MAIN },
         { step: `Continue this for each of the crepes. As the crepes begin to stick, add some more of the butter.`, section: SECTIONS.MAIN },
         { step: `Add your favorite toppings, fold them however you like, and enjoy this ingenious, light French dish: sweet, savory or a combination of both! Best eaten fresh!`, section: SECTIONS.SERVE },
-        { step: `Mix together some semisweet chocolate chips, milk, and sugar in a microwavable bowl. Heat in the microwave for 30 second intervals and mix.`, section: MELTED_CHOCOLATE, img: crepe5 },
+        { step: `Mix some semisweet chocolate chips, milk, and sugar in a microwavable bowl. Heat in the microwave for 30 second intervals and mix.`, section: MELTED_CHOCOLATE, img: crepe5 },
         { step: `Heat this closer to when you are about to use it.`, section: MELTED_CHOCOLATE },
     ],
     store: [

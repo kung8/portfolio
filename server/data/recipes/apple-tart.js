@@ -73,7 +73,7 @@ module.exports = {
         { step: `Bake until crust begins to become golden brown (about 12 to 15 minutes).`, section: SECTIONS.BAKE, img: tart7 },
         { step: `Reduce heat to 350ºF.`, section: SECTIONS.BAKE },
         { step: `Cook until the apples are tender but not soft and the frangipane is cooked through and is not sticky (about 20 to 30 minutes).`, section: SECTIONS.BAKE },
-        { step: `Remove the tart from the oven and let cool for 10 minutes.`, section: SECTIONS.BAKE, img: tart8 },
+        { step: `Remove the tart from the oven and let it cool for 10 minutes.`, section: SECTIONS.BAKE, img: tart8 },
 
         { step: `Brush melted/heated jelly over the warm tart.`, section: BRUSH, img: tart9 },
 
