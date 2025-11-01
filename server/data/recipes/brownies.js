@@ -17,6 +17,8 @@ const {
     WHITE_SUGAR,
 } = require('./ingredients');
 
+const BROWNIES_SECTION = 'Brownies';
+
 module.exports = {
     cardName: 'Brownies',
     name: 'Brownies',
@@ -39,15 +41,15 @@ module.exports = {
             finder: 'Kevin Ung'
         }
     ],
-    separated: false,
+    separated: true,
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...COCOA_POWDER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...WHITE_SUGAR, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...EGG, amount: 3, unit: INGREDIENT_UNITS.LARGE, additionalDetails: '', section: SECTIONS.MAIN },
-        { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BROWNIES_SECTION },
+        { ...COCOA_POWDER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BROWNIES_SECTION },
+        { ...WHITE_SUGAR, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BROWNIES_SECTION },
+        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BROWNIES_SECTION },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BROWNIES_SECTION },
+        { ...EGG, amount: 3, unit: INGREDIENT_UNITS.LARGE, additionalDetails: '', section: BROWNIES_SECTION },
+        { ...ALL_PURPOSE_FLOUR, amount: 5 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BROWNIES_SECTION },
     ],
     appliances: [
         OVEN,
@@ -58,14 +60,19 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: 'Preheat oven to 350ºF.', section: SECTIONS.MAIN },
-        { step: 'Grease and add a little cocoa powder on the baking pan.', section: SECTIONS.MAIN },
-        { step: 'Melt butter in the microwave.', section: SECTIONS.MAIN },
-        { step: 'In a mixing bowl, combine melted butter, cocoa powder, and sugar. Mix well.', section: SECTIONS.MAIN },
-        { step: 'Add salt, vanilla, and eggs. Mix.', section: SECTIONS.MAIN },
-        { step: 'Mix in the flour.', section: SECTIONS.MAIN },
-        { step: 'Spread the batter into the baking pan.', section: SECTIONS.MAIN },
-        { step: 'Bake for 30 to 35 minutes or until a toothpick comes out clean.', section: SECTIONS.MAIN, img: [brownies1, brownies2] },
+        { step: 'Preheat oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+        
+        { step: 'Grease and add a little cocoa powder on the baking pan.', section: SECTIONS.PREP_PAN },
+        
+        { step: 'Melt butter in the microwave.', section: SECTIONS.PREP_BATTER },
+        { step: 'In a mixing bowl, combine melted butter, cocoa powder, and sugar. Mix well.', section: SECTIONS.PREP_BATTER },
+        { step: 'Add salt, vanilla, and eggs. Mix.', section: SECTIONS.PREP_BATTER },
+        { step: 'Mix in the flour.', section: SECTIONS.PREP_BATTER },
+        { step: 'Spread the batter into the baking pan.', section: SECTIONS.PREP_BATTER },
+        
+        { step: 'Bake until an inserted toothpick comes out clean (about 30 to 35 minutes).', section: SECTIONS.BAKE, img: [brownies1, brownies2] },
+
+        { step: 'Enjoy these sweets!', section: SECTIONS.SERVE },
     ],
     store: [
         {
