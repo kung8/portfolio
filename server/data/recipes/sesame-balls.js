@@ -38,17 +38,17 @@ module.exports = {
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Sesame Balls (Jian Dui)', 
+        {
+            label: 'Sesame Balls (Jian Dui)',
             link: 'https://takestwoeggs.com/sesame-balls-with-red-bean-paste/',
             authors: ['Megan'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         },
-        { 
-            label: 'Banh Cam', 
+        {
+            label: 'Banh Cam',
             link: 'https://www.wokandkin.com/banh-cam/',
             authors: ['Jeannette'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -142,6 +142,7 @@ module.exports = {
         { note: 'Work with chilled red bean paste or preferred filling.' },
         { note: 'If the filling bursts out while frying, remove the exploded balls immediately to avoid contaminating the oil.' },
         { note: 'Do not forget to flip throughout this process. Do not overcook and do not have the heat too high or else the outside will brown and the inside will have a little raw flour inside.' },
+        { note: 'I had a hard time working with the flour and ended up only making 4 sesame balls which could be the reason that it might have been too thick of a layer.' },
     ],
     store: [
         {
