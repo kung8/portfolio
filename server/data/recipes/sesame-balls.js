@@ -1,4 +1,16 @@
-// const example = '../assets/Products/example.jpeg';
+const ball1 = '../assets/Products/sesame-ball-1.jpeg';
+const ball2 = '../assets/Products/sesame-ball-2.jpeg';
+const ball3 = '../assets/Products/sesame-ball-3.jpeg';
+const ball4 = '../assets/Products/sesame-ball-4.jpeg';
+const ball5 = '../assets/Products/sesame-ball-5.jpeg';
+const ball6 = '../assets/Products/sesame-ball-6.jpeg';
+const ball7 = '../assets/Products/sesame-ball-7.jpeg';
+const ball8 = '../assets/Products/sesame-ball-8.jpeg';
+const ball9 = '../assets/Products/sesame-ball-9.jpeg';
+const ball10 = '../assets/Products/sesame-ball-10.jpeg';
+const ball11 = '../assets/Products/sesame-ball-11.jpeg';
+const ball12 = '../assets/Products/sesame-ball-12.jpeg';
+
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, COLANDER, COOLING_RACK, DEEP_FRYER_OR_STOVE, GLUTINOUS_RICE_FLOUR, LARGE_BOWL, LARGE_POT, MIXING_BOWL, PAPER_TOWELS, PLASTIC_WRAP, RED_BEAN_PASTE, SALT, SESAME_SEEDS, SHREDDED_COCONUT, SLOTTED_SPOON, SMALL_BOWL, SPIDER_STRAINER, SPLIT_MUNG_BEAN, VANILLA_EXTRACT, VEGETABLE_OIL, WATER, WHITE_SUGAR } = require('./ingredients');
 
@@ -9,10 +21,9 @@ const FORM_FILLING_INTO_BALLS = 'Form Filling into Balls';
 const FORM_BALLS = 'Form Balls';
 
 module.exports = {
-    wip: true,
     cardName: 'Sesame Balls',
     name: 'Sesame Balls (Jian Dui or Banh Cam)',
-    img: '',
+    img: ball11,
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -90,16 +101,16 @@ module.exports = {
         { step: `On a flat surface, knead until it forms into a ball.`, section: SECTIONS.PREP_DOUGH },
         { step: `Place back in the mixing bowl and cover with plastic wrap. Let it rest for 30 minutes.`, section: SECTIONS.PREP_DOUGH },
 
-        { step: `In a colander, rinse the mung beans in cool water until the water runs clear.`, section: PREP_MUNG_BEAN_FILLING },
-        { step: `Transfer to a pot. Add the water for boiling.`, section: PREP_MUNG_BEAN_FILLING },
+        { step: `In a colander, rinse the mung beans in cool water until the water runs clear.`, section: PREP_MUNG_BEAN_FILLING, img: ball1 },
+        { step: `Transfer to a pot. Add the water for boiling.`, section: PREP_MUNG_BEAN_FILLING, img: ball2 },
         { step: `Over medium-high heat, bring the water to a boil.`, section: PREP_MUNG_BEAN_FILLING },
-        { step: `Cover and simmer over low-medium heat until water has evaporated (about 15 minutes).`, section: PREP_MUNG_BEAN_FILLING },
+        { step: `Cover. Simmer over low-medium heat until water has evaporated (about 15 minutes).`, section: PREP_MUNG_BEAN_FILLING, img: ball3 },
         { step: `Decrease to low heat. Add the water for mixture.`, section: PREP_MUNG_BEAN_FILLING },
         { step: `Mix until it becomes a lumpy paste.`, section: PREP_MUNG_BEAN_FILLING },
-        { step: `Add the remaining "${MUNG_BEAN_FILLING}" section ingredients except the oil. Stir.`, section: PREP_MUNG_BEAN_FILLING },
+        { step: `Add the remaining "${MUNG_BEAN_FILLING}" section ingredients except the oil. Stir.`, section: PREP_MUNG_BEAN_FILLING, img: ball4 },
         { step: `Add oil. Mix.`, section: PREP_MUNG_BEAN_FILLING },
-        { step: `Increase to medium-low heat. Cook until the paste is smooth (about 5 to 10 minutes). Stir constantly.`, section: PREP_MUNG_BEAN_FILLING },
-        { step: `In a large bowl, transfer mung bean filling and cover with plastic wrap. Let cool.`, section: PREP_MUNG_BEAN_FILLING },
+        { step: `Increase to medium-low heat. Cook until the paste is smooth (about 5 to 10 minutes). Stir constantly.`, section: PREP_MUNG_BEAN_FILLING, img: ball5 },
+        { step: `In a large bowl, transfer mung bean filling and cover with plastic wrap. Let cool.`, section: PREP_MUNG_BEAN_FILLING, img: ball6 },
 
         { step: `When ready, form equal sized balls with either of the preferred fillings.`, section: FORM_FILLING_INTO_BALLS },
 
@@ -107,19 +118,19 @@ module.exports = {
 
         { step: `Divide the dough into equal parts.`, section: FORM_BALLS },
         { step: `Flatten dough to about 2 to 3 inches discs.`, section: FORM_BALLS },
-        { step: `Place the red bean filling in the center.`, section: FORM_BALLS },
+        { step: `Place the filling in the center.`, section: FORM_BALLS, img: ball7 },
         { step: `Bring up the sides and pinch the dough to hide the filling.`, section: FORM_BALLS },
-        { step: `Lightly roll the balls between your hands to smooth the balls and get rid of any seams.`, section: FORM_BALLS },
+        { step: `Lightly roll the balls between your hands to smooth the balls and get rid of any seams.`, section: FORM_BALLS, img: ball8 },
 
         { step: `Dip each ball in the water then the sesame seeds.`, section: SECTIONS.DIP },
-        { step: `Gently roll the ball in your hands to press the sesame seeds into the dough.`, section: SECTIONS.DIP },
+        { step: `Gently roll the ball in your hands to press the sesame seeds into the dough.`, section: SECTIONS.DIP, img: ball9 },
 
         { step: `Heat enough oil to cover the height of about 3 sesame ball since they will expand and grow.`, section: SECTIONS.DEEP_FRY },
         { step: `Line paper towels on a baking sheet and place the wire rack on top.`, section: SECTIONS.DEEP_FRY },
-        { step: `Once the oil gets to 290ºF to 300ºF, carefully add a few sesame balls (up to 5 at a time).`, section: SECTIONS.DEEP_FRY },
+        { step: `Once the oil gets to 290ºF to 300ºF, carefully add a few sesame balls (up to 5 at a time).`, section: SECTIONS.DEEP_FRY, img: ball10 },
         { step: `Fry for 5 minutes. Flip. Fry another 5 minutes. They should float to the top.`, section: SECTIONS.DEEP_FRY },
         { step: `Increase the heat to 350ºF.`, section: SECTIONS.DEEP_FRY },
-        { step: `Fry until golden brown and crispy (about 5 minutes). Make sure to flip throughout this time for even cooking.`, section: SECTIONS.DEEP_FRY },
+        { step: `Fry until golden brown and crispy (about 5 minutes). Make sure to flip throughout this time for even cooking.`, section: SECTIONS.DEEP_FRY, img: ball12 },
 
         { step: `Remove the sesame balls from the oil with a spider strainer and place on the cooling rack.`, section: SECTIONS.COOL },
         { step: `Let it cool for about 10 minutes.`, section: SECTIONS.COOL },
@@ -130,6 +141,7 @@ module.exports = {
         { note: 'While making the dough, if it is too wet, add in more rice flour a tablespoon at a time. If it is too dry, add in warm water a tablespoon at a time.' },
         { note: 'Work with chilled red bean paste or preferred filling.' },
         { note: 'If the filling bursts out while frying, remove the exploded balls immediately to avoid contaminating the oil.' },
+        { note: 'Do not forget to flip throughout this process. Do not overcook and do not have the heat too high or else the outside will brown and the inside will have a little raw flour inside.' },
     ],
     store: [
         {
