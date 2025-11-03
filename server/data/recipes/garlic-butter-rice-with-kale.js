@@ -18,7 +18,7 @@ module.exports = {
     name: 'Garlic Butter Rice with Kale',
     img: kale6,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
