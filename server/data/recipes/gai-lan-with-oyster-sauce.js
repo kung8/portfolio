@@ -3,7 +3,7 @@ const gaiLan2 = '../assets/Products/gai-lan-with-oyster-sauce-2.jpeg';
 const gaiLan3 = '../assets/Products/gai-lan-with-oyster-sauce-3.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { STOVE, WOK, GAI_LAN, WATER, OLIVE_OIL, SALT, OYSTER_SAUCE, COLANDER } = require('./ingredients');
+const { COLANDER, GAI_LAN, OLIVE_OIL, OYSTER_SAUCE, SALT, STOVE, WATER, WOK } = require('./ingredients');
 
 const GAI_LAN_SECTION = 'Gai Lan';
 const BOILED_WATER = 'Boiled Water';
