@@ -13,7 +13,7 @@ const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN,
 const {
     BROWN_SUGAR,
     CHICKEN_THIGH,
-    CHINESE_BROCCOLI,
+    GAI_LAN,
     CORNSTARCH,
     DARK_SOY_SAUCE,
     EGG,
@@ -63,7 +63,7 @@ module.exports = {
 
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.MAIN },
-        { ...CHINESE_BROCCOLI, amount: 5, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'leaves and stems separated', section: SECTIONS.MAIN },
+        { ...GAI_LAN, amount: 5, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'leaves and stems separated', section: SECTIONS.MAIN },
         { ...RED_BELL_PEPPER, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'sliced', section: SECTIONS.MAIN },
         { ...SNOW_PEA, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.MAIN },

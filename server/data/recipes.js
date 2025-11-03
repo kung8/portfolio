@@ -153,6 +153,7 @@ const frenchCrepe = require("./recipes/french-crepe");
 const frenchOnionSoupGratinee = require("./recipes/french-onion-soup-gratinee");
 const frenchToast = require("./recipes/french-toast");
 const frozenMudPie = require("./recipes/frozen-mud-pie");
+const gaiLanWithOysterSauce = require('./recipes/gai-lan-with-oyster-sauce.js');
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const garlicButter = require("./recipes/garlic-butter");
 const garlicButterRiceWithKale = require('./recipes/garlic-butter-rice-with-kale.js');
@@ -416,6 +417,7 @@ const recipes = [
     pekingDuck,
     chineseGingerChicken,
     chineseCashewChicken,
+    gaiLanWithOysterSauce,
     chineseGreenBeanBeef,
     broccoliBeef, // use this one?
     broccoliBeef2, // use this one?

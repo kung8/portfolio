@@ -1386,7 +1386,6 @@ const INGREDIENTS = {
             name: 'celery', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1580391564590-aeca65c5e2d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3OTczfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         CHILI_PEPPER: { name: 'chili pepper', category: INGREDIENT_CATEGORY.PRODUCE },
-        CHINESE_BROCCOLI: { name: 'Chinese broccoli', category: INGREDIENT_CATEGORY.PRODUCE },
         CHINESE_CABBAGE: { name: 'Chinese cabbage', category: INGREDIENT_CATEGORY.PRODUCE },
         CHINESE_MUSTARD_GREEN: { name: 'Chinese mustard green', category: INGREDIENT_CATEGORY.PRODUCE },
         CHIPOTLE_SALAD_KITS: { name: 'chipotle salad kits', category: INGREDIENT_CATEGORY.PRODUCE },
@@ -1440,7 +1439,7 @@ const INGREDIENTS = {
         GARLIC: {
             name: 'garlic', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1625229466998-42ee9c597290?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4Mzk0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
-        GAI_CHOY: { name: 'gai choy', category: INGREDIENT_CATEGORY.PRODUCE },
+        GAI_LAN: { name: 'gai lan', category: INGREDIENT_CATEGORY.PRODUCE },
         GALA_APPLE: { name: 'gala apple', category: INGREDIENT_CATEGORY.PRODUCE },
         GARLIC_CHIVE: { name: 'garlic chive', category: INGREDIENT_CATEGORY.PRODUCE },
         GINGER: {

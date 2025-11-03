@@ -32,7 +32,7 @@ module.exports = {
     appliances: [],
     supplies: [],
     directions: [
-        { step: '', section: '' },
+        { step: ``, section: `` },
     ],
     store: [
         // {
