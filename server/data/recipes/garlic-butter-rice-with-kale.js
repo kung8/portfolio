@@ -38,7 +38,7 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...KALE, amount: 7, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'just leaves', section: KALE_SECTION },
+        { ...KALE, amount: 7, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'just leaves, chopped', section: KALE_SECTION },
         { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: KALE_SECTION },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: KALE_SECTION },
         { ...BLACK_PEPPER, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: KALE_SECTION },
