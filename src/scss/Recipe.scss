@@ -632,10 +632,7 @@
                 margin-bottom: 8px;
                 font-weight: normal;
                 font-style: italic;
-
-                &.direction-label {
-                    color: theme.$sunshine;
-                }
+                color: theme.$sunshine;
 
                 &.font-size-extra-large {
                     font-size: 28px;
