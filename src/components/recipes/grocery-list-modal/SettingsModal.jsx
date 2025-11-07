@@ -6,7 +6,7 @@ import { useDebouncedCallback } from 'use-debounce';
 import closeBtn from '../../../Assets/x.png';
 import { Dropdown } from '../../dropdown/dropdown';
 import { SwitchToggle } from '../../switch-toggle/SwitchToggle';
-import { fontSizeOptions } from '../utils';
+import { fontSizeOptions, pageLayoutOptions } from '../utils';
 import { useSettings } from '../hooks/use-settings';
 
 const SettingContainer = ({ children, heading, subheading }) => (
@@ -60,7 +60,7 @@ export const SettingsModal = ({ closeModal }) => {
     const {
         defaultVendor,
         recipeFontSize,
-        // recipePageLayout,
+        recipePageLayout,
         showRecipeFigures,
         showRecipeNotes,
         showRecipeReheatOptions,
@@ -69,7 +69,7 @@ export const SettingsModal = ({ closeModal }) => {
         startingDay,
         updateDefaultVendor,
         updateRecipeFontSize,
-        // updateRecipePageLayout,
+        updateRecipePageLayout,
         updateShowRecipeFigures,
         updateShowRecipeNotes,
         updateShowRecipeReheatOptions,
@@ -83,7 +83,7 @@ export const SettingsModal = ({ closeModal }) => {
 
     const [localDefaultVendor, setLocalDefaultVendor] = useState(defaultVendor);
     const [localRecipeFontSize, setLocalRecipeFontSize] = useState(recipeFontSize);
-    // const [localRecipePageLayout, setLocalRecipePageLayout] = useState(recipePageLayout);
+    const [localRecipePageLayout, setLocalRecipePageLayout] = useState(recipePageLayout);
     const [localShowRecipeFigures, setLocalShowRecipeFigures] = useState(showRecipeFigures);
     const [localShowRecipeNotes, setLocalShowRecipeNotes] = useState(showRecipeNotes);
     const [localShowRecipeReheatOptions, setLocalShowRecipeReheatOptions] = useState(showRecipeReheatOptions);
@@ -94,7 +94,7 @@ export const SettingsModal = ({ closeModal }) => {
 
     const [showDefaultVendorDropdown, setShowDefaultVendorDropdown] = useState(false);
     const [showRecipeFontSizeDropdown, setShowRecipeFontSizeDropdown] = useState(false);
-    // const [showPageLayoutDropdown, setShowPageLayoutDropdown] = useState(false);
+    const [showPageLayoutDropdown, setShowPageLayoutDropdown] = useState(false);
 
     // Vendor Options Handlers
     const addVendorOption = () => {
@@ -116,7 +116,7 @@ export const SettingsModal = ({ closeModal }) => {
     // Check if changes were made
     const defaultVendorUnchanged = defaultVendor === localDefaultVendor;
     const recipeFontSizeUnchanged = recipeFontSize === localRecipeFontSize;
-    // const recipePageLayoutUnchanged = recipePageLayout === localRecipePageLayout;
+    const recipePageLayoutUnchanged = recipePageLayout === localRecipePageLayout;
     const showRecipeFiguresUnchanged = showRecipeFigures === localShowRecipeFigures;
     const showRecipeNotesUnchanged = showRecipeNotes === localShowRecipeNotes;
     const showRecipeReheatOptionsUnchanged = showRecipeReheatOptions === localShowRecipeReheatOptions;
@@ -128,7 +128,7 @@ export const SettingsModal = ({ closeModal }) => {
     const disableApplyBtn =
         defaultVendorUnchanged &&
         recipeFontSizeUnchanged &&
-        // recipePageLayoutUnchanged &&
+        recipePageLayoutUnchanged &&
         showRecipeFiguresUnchanged &&
         showRecipeNotesUnchanged &&
         showRecipeReheatOptionsUnchanged &&
@@ -146,9 +146,9 @@ export const SettingsModal = ({ closeModal }) => {
         setLocalRecipeFontSize(recipeFontSize);
     }, [recipeFontSize]);
 
-    // useEffect(() => {
-    //     setLocalRecipePageLayout(recipePageLayout);
-    // }, [recipePageLayout]);
+    useEffect(() => {
+        setLocalRecipePageLayout(recipePageLayout);
+    }, [recipePageLayout]);
 
     useEffect(() => {
         setLocalShowRecipeFigures(showRecipeFigures);
@@ -316,7 +316,7 @@ export const SettingsModal = ({ closeModal }) => {
                         />
                     </SettingContainer>
 
-                    {/* <SettingContainer
+                    <SettingContainer
                         heading="Recipe Page Layout"
                         subheading="Adjust the preferred recipe page layout."
                     >
@@ -336,7 +336,7 @@ export const SettingsModal = ({ closeModal }) => {
                             optionsCount={pageLayoutOptions.length}
                             show={showPageLayoutDropdown}
                         />
-                    </SettingContainer> */}
+                    </SettingContainer>
 
                 </div>
                 <div className="modal-footer">
@@ -347,7 +347,7 @@ export const SettingsModal = ({ closeModal }) => {
                         onClick={() => {
                             updateDefaultVendor(localDefaultVendor);
                             updateRecipeFontSize(localRecipeFontSize);
-                            // updateRecipePageLayout(localRecipePageLayout);
+                            updateRecipePageLayout(localRecipePageLayout);
                             updateShowRecipeFigures(localShowRecipeFigures);
                             updateShowRecipeNotes(localShowRecipeNotes);
                             updateShowRecipeReheatOptions(localShowRecipeReheatOptions);

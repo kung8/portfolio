@@ -1,4 +1,5 @@
 import {
+    getRecipePageLayout,
     getShowRecipeFigures,
     getShowRecipeNotes,
     getShowRecipeReheatOptions,
@@ -23,6 +24,7 @@ import { Websites } from './Websites';
 import { Yield } from './Yield';
 
 export const RecipeDetails = () => {
+    const recipePageLayout = getRecipePageLayout();
     const showRecipeFigures = getShowRecipeFigures();
     const showRecipeNotes = getShowRecipeNotes();
     const showRecipeReheatOptions = getShowRecipeReheatOptions();
@@ -37,11 +39,37 @@ export const RecipeDetails = () => {
             <CookTime />
             <WaitTime />
             <Yield />
-            <Appliances />
-            <Supplies />
-            <IngredientsHeader />
-            <Ingredients />
-            <Directions />
+
+            {recipePageLayout === 'standard' && (
+                <div className={`recipe-layout-standard`}>
+                    <div className="recipe-ingredients-supplies-and-appliances-container">
+                        <div>
+                            <IngredientsHeader />
+                            <Ingredients />
+                        </div>
+                        <div>
+                            <Supplies />
+                        </div>
+                        <div>
+                            <Appliances />
+                        </div>
+                    </div>
+                    <div>
+                        <Directions />
+                    </div>
+                </div>
+            )}
+
+            {recipePageLayout === 'stacked' && (
+                <>
+                    <Appliances />
+                    <Supplies />
+                    <IngredientsHeader />
+                    <Ingredients />
+                    <Directions />
+                </>
+            )}
+
             {showRecipeStorageOptions && <Storage />}
             {showRecipeReheatOptions && <Reheat />}
             {showRecipeWebsiteReferences && <Websites />}

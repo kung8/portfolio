@@ -11,6 +11,10 @@
         .heading {
             margin-bottom: 0;
 
+            &.font-size-extra-large {
+                font-size: 36px;
+            }
+
             &.font-size-large {
                 font-size: 32px;
             }
@@ -21,6 +25,10 @@
 
             &.font-size-small {
                 font-size: 24px;
+            }
+
+            &.font-size-extra-small {
+                font-size: 20px;
             }
         }
 
@@ -53,6 +61,12 @@
             margin-bottom: 40px;
 
             .switch-toggle {
+                &.font-size-extra-large {
+                    .switch-label {
+                        font-size: 24px;
+                    }
+                }
+
                 &.font-size-large {
                     .switch-label {
                         font-size: 20px;
@@ -68,6 +82,12 @@
                 &.font-size-small {
                     .switch-label {
                         font-size: 16px;
+                    }
+                }
+
+                &.font-size-extra-small {
+                    .switch-label {
+                        font-size: 14px;
                     }
                 }
             }
@@ -98,6 +118,10 @@
             margin-bottom: 8px;
 
             .prep-time-label {
+                &.font-size-extra-large {
+                    font-size: 24px;
+                }
+
                 &.font-size-large {
                     font-size: 20px;
                 }
@@ -108,6 +132,10 @@
 
                 &.font-size-small {
                     font-size: 16px;
+                }
+
+                &.font-size-extra-small {
+                    font-size: 14px;
                 }
             }
         }
@@ -116,6 +144,10 @@
             margin-bottom: 8px;
 
             .cook-time-label {
+                &.font-size-extra-large {
+                    font-size: 24px;
+                }
+
                 &.font-size-large {
                     font-size: 20px;
                 }
@@ -126,6 +158,10 @@
 
                 &.font-size-small {
                     font-size: 16px;
+                }
+
+                &.font-size-small {
+                    font-size: 14px;
                 }
             }
         }
@@ -134,6 +170,10 @@
             margin-bottom: 8px;
 
             .wait-time-label {
+                &.font-size-extra-large {
+                    font-size: 24px;
+                }
+
                 &.font-size-large {
                     font-size: 20px;
                 }
@@ -144,6 +184,10 @@
 
                 &.font-size-small {
                     font-size: 16px;
+                }
+
+                &.font-size-extra-small {
+                    font-size: 14px;
                 }
             }
         }
@@ -167,6 +211,10 @@
                     display: inline-block;
                     margin-top: 6px;
 
+                    &.font-size-extra-large {
+                        font-size: 24px;
+                    }
+
                     &.font-size-large {
                         font-size: 20px;
                     }
@@ -177,6 +225,10 @@
 
                     &.font-size-small {
                         font-size: 16px;
+                    }
+
+                    &.font-size-extra-small {
+                        font-size: 14px;
                     }
                 }
 
@@ -201,6 +253,10 @@
                             padding: 6px 8px;
                             width: 60px;
 
+                            &.font-size-extra-large {
+                                font-size: 24px;
+                            }
+
                             &.font-size-large {
                                 font-size: 20px;
                             }
@@ -211,10 +267,18 @@
 
                             &.font-size-small {
                                 font-size: 16px;
+                            }
+
+                            &.font-size-extra-small {
+                                font-size: 14px;
                             }
                         }
 
                         .applied-yield-text {
+                            &.font-size-extra-large {
+                                font-size: 24px;
+                            }
+
                             &.font-size-large {
                                 font-size: 20px;
                             }
@@ -225,6 +289,10 @@
 
                             &.font-size-small {
                                 font-size: 16px;
+                            }
+
+                            &.font-size-extra-small {
+                                font-size: 14px;
                             }
                         }
                     }
@@ -232,6 +300,10 @@
                     .dash {
                         @include mixins.down(theme.$mobile) {
                             display: none;
+                        }
+
+                        &.font-size-extra-large {
+                            font-size: 24px;
                         }
 
                         &.font-size-large {
@@ -245,6 +317,10 @@
                         &.font-size-small {
                             font-size: 16px;
                         }
+                        
+                        &.font-size-extra-small {
+                            font-size: 14px;
+                        }
                     }
 
                     .quick-yield-adjustment-container {
@@ -253,6 +329,10 @@
                         align-items: center;
 
                         .scale-text {
+                            &.font-size-large {
+                                font-size: 24px;
+                            }
+
                             &.font-size-large {
                                 font-size: 20px;
                             }
@@ -263,6 +343,10 @@
 
                             &.font-size-small {
                                 font-size: 16px;
+                            }
+
+                            &.font-size-extra-small {
+                                font-size: 14px;
                             }
                         }
 
@@ -281,6 +365,10 @@
                                 border: 1px solid theme.$primary-blue;
                             }
 
+                            &.font-size-extra-large {
+                                font-size: 24px;
+                            }
+
                             &.font-size-large {
                                 font-size: 20px;
                             }
@@ -291,6 +379,10 @@
 
                             &.font-size-small {
                                 font-size: 16px;
+                            }
+
+                            &.font-size-extra-small {
+                                font-size: 14px;
                             }
                         }
                     }
@@ -323,6 +415,10 @@
                 .select-all-button {
                     cursor: pointer;
 
+                    &.font-size-extra-large {
+                        font-size: 24px;
+                    }
+
                     &.font-size-large {
                         font-size: 20px;
                     }
@@ -333,6 +429,10 @@
 
                     &.font-size-small {
                         font-size: 16px;
+                    }
+
+                    &.font-size-extra-small {
+                        font-size: 14px;
                     }
                 }
 
@@ -344,6 +444,10 @@
                         cursor: pointer;
                     }
 
+                    &.font-size-extra-large {
+                        font-size: 24px;
+                    }
+
                     &.font-size-large {
                         font-size: 20px;
                     }
@@ -355,12 +459,20 @@
                     &.font-size-small {
                         font-size: 16px;
                     }
+
+                    &.font-size-extra-small {
+                        font-size: 14px;
+                    }
                 }
             }
         }
 
         .recipe-detail-label {
             margin-bottom: 16px;
+
+            &.font-size-extra-large {
+                font-size: 32px;
+            }
 
             &.font-size-large {
                 font-size: 28px;
@@ -372,6 +484,10 @@
 
             &.font-size-small {
                 font-size: 20px;
+            }
+            
+            &.font-size-extra-small {
+                font-size: 18px;
             }
         }
 
@@ -396,6 +512,10 @@
                 .recipe-step-link,
                 .figure-label-anchor,
                 &.appliance-item {
+                    &.font-size-extra-large {
+                        font-size: 24px;
+                    }
+
                     &.font-size-large {
                         font-size: 20px;
                     }
@@ -407,6 +527,37 @@
                     &.font-size-small {
                         font-size: 16px;
                     }
+                    
+                    &.font-size-extra-small {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .recipe-layout-standard {
+            display: flex;
+            column-gap: 120px;
+            margin-top: 80px;
+
+            @include mixins.down(theme.$desktop) {
+                flex-direction: column;
+                margin-top: 40px;
+
+                .recipe-ingredients-supplies-and-appliances-container {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+
+            .recipe-ingredients-label-container {
+                flex-direction: column;
+                align-items: flex-start;
+                row-gap: 16px;
+                @include mixins.down(theme.$desktop) {
+                    flex-direction: row;
+                    align-items: center;
+                    row-gap: 8px;
                 }
             }
         }
@@ -419,6 +570,11 @@
             .checkbox-supply {
                 margin-right: 8px;
                 transform: translateY(4px);
+
+                &.font-size-extra-large {
+                    width: 24px;
+                    height: 24px;
+                }
 
                 &.font-size-large {
                     width: 20px;
@@ -434,9 +590,18 @@
                     width: 16px;
                     height: 16px;
                 }
+
+                &.font-size-extra-small {
+                    width: 14px;
+                    height: 14px;
+                }
             }
 
             .checkbox-supply-label {
+                &.font-size-extra-large {
+                    font-size: 24px;
+                }
+
                 &.font-size-large {
                     font-size: 20px;
                 }
@@ -447,6 +612,10 @@
 
                 &.font-size-small {
                     font-size: 16px;
+                }
+
+                &.font-size-extra-small {
+                    font-size: 14px;
                 }
             }
         }
@@ -468,6 +637,10 @@
                     color: theme.$sunshine;
                 }
 
+                &.font-size-extra-large {
+                    font-size: 28px;
+                }
+
                 &.font-size-large {
                     font-size: 24px;
                 }
@@ -478,6 +651,10 @@
 
                 &.font-size-small {
                     font-size: 18px;
+                }
+
+                &.font-size-extra-small {
+                    font-size: 16px;
                 }
             }
 
@@ -496,6 +673,11 @@
                     min-width: 20px;
                     transform: translateY(2px);
 
+                    &.font-size-extra-large {
+                        width: 24px;
+                        height: 24px;
+                    }
+
                     &.font-size-large {
                         width: 20px;
                         height: 20px;
@@ -509,6 +691,11 @@
                     &.font-size-small {
                         width: 16px;
                         height: 16px;
+                    }
+
+                    &.font-size-extra-small {
+                        width: 14px;
+                        height: 14px;
                     }
                 }
 
@@ -527,6 +714,10 @@
                 .ingredient-additional-details {
                     color: theme.$darkgrey;
 
+                    &.font-size-extra-large {
+                        font-size: 24px;
+                    }
+
                     &.font-size-large {
                         font-size: 20px;
                     }
@@ -537,10 +728,18 @@
 
                     &.font-size-small {
                         font-size: 16px;
+                    }
+
+                    &.font-size-extra-small {
+                        font-size: 14px;
                     }
                 }
 
                 .ingredient-name {
+                    &.font-size-extra-large {
+                        font-size: 24px;
+                    }
+
                     &.font-size-large {
                         font-size: 20px;
                     }
@@ -551,6 +750,10 @@
 
                     &.font-size-small {
                         font-size: 16px;
+                    }
+
+                    &.font-size-extra-small {
+                        font-size: 14px;
                     }
                 }
             }
@@ -570,11 +773,27 @@
                         grid-column-gap: 16px;
                         align-items: start;
                         text-wrap: auto;
-                        max-width: 400px;
                         padding: 24px 8px;
                         border-bottom: 1px solid theme.$default;
                         counter-increment: step-counter;
                         line-height: 150%;
+                        max-width: 600px;
+
+                        @include mixins.down(theme.$extra-large) {
+                            max-width: 500px;
+                        }
+
+                        @include mixins.down(theme.$mid-desktop) {
+                            max-width: 400px;
+                        }
+
+                        @include mixins.down(theme.$desktop) {
+                            max-width: 600px;
+                        }
+
+                        @include mixins.down(theme.$mobile-xl) {
+                            max-width: 100%;
+                        }
 
                         &:first-of-type {
                             padding-top: 16px;
@@ -600,6 +819,10 @@
                         .recipe-step,
                         .recipe-step-link,
                         .figure-label-anchor {
+                            &.font-size-extra-large {
+                                font-size: 24px;
+                            }
+
                             &.font-size-large {
                                 font-size: 20px;
                             }
@@ -610,6 +833,10 @@
 
                             &.font-size-small {
                                 font-size: 16px;
+                            }
+
+                            &.font-size-extra-small {
+                                font-size: 14px;
                             }
                         }
                     }
@@ -640,6 +867,10 @@
                 line-height: 1.35;
 
                 .recipe-note {
+                    &.font-size-extra-large {
+                        font-size: 24px;
+                    }
+
                     &.font-size-large {
                         font-size: 20px;
                     }
@@ -650,6 +881,10 @@
 
                     &.font-size-small {
                         font-size: 16px;
+                    }
+
+                    &.font-size-extra-small {
+                        font-size: 14px;
                     }
                 }
 
@@ -657,6 +892,10 @@
                     color: theme.$primary-blue;
                     font-weight: bold;
 
+                    &.font-size-extra-large {
+                        font-size: 24px;
+                    }
+
                     &.font-size-large {
                         font-size: 20px;
                     }
@@ -667,11 +906,19 @@
 
                     &.font-size-small {
                         font-size: 16px;
+                    }
+
+                    &.font-size-extra-small {
+                        font-size: 14px;
                     }
                 }
 
                 .storage,
                 .instruction {
+                    &.font-size-extra-large {
+                        font-size: 24px;
+                    }
+
                     &.font-size-large {
                         font-size: 20px;
                     }
@@ -682,6 +929,10 @@
 
                     &.font-size-small {
                         font-size: 16px;
+                    }
+
+                    &.font-size-extra-small {
+                        font-size: 14px;
                     }
                 }
 
@@ -714,6 +965,10 @@
                     margin-bottom: 6px;
                     color: theme.$primary-blue;
 
+                    &.font-size-extra-large {
+                        font-size: 24px;
+                    }
+
                     &.font-size-large {
                         font-size: 20px;
                     }
@@ -724,6 +979,10 @@
 
                     &.font-size-small {
                         font-size: 16px;
+                    }
+
+                    &.font-size-extra-small {
+                        font-size: 14px;
                     }
                 }
             }
@@ -751,6 +1010,10 @@
                         text-decoration: unset;
                         text-underline-offset: 4px;
 
+                        &.font-size-extra-large {
+                            font-size: 24px;
+                        }
+
                         &.font-size-large {
                             font-size: 20px;
                         }
@@ -761,12 +1024,20 @@
 
                         &.font-size-small {
                             font-size: 16px;
+                        }
+
+                        &.font-size-extra-small {
+                            font-size: 14px;
                         }
                     }
 
                     .recipe-author {
                         color: theme.$primary-blue;
 
+                        &.font-size-extra-large {
+                            font-size: 24px;
+                        }
+
                         &.font-size-large {
                             font-size: 20px;
                         }
@@ -777,12 +1048,20 @@
 
                         &.font-size-small {
                             font-size: 16px;
+                        }
+
+                        &.font-size-extra-small {
+                            font-size: 14px;
                         }
                     }
 
                     .no-link-label-and-author {
                         color: theme.$white;
 
+                        &.font-size-extra-large {
+                            font-size: 24px;
+                        }
+
                         &.font-size-large {
                             font-size: 20px;
                         }
@@ -794,11 +1073,19 @@
                         &.font-size-small {
                             font-size: 16px;
                         }
+
+                        &.font-size-extra-small {
+                            font-size: 14px;
+                        }
                     }
                 }
 
                 .recipe-finder {
                     color: theme.$default;
+
+                    &.font-size-extra-large {
+                        font-size: 24px;
+                    }
 
                     &.font-size-large {
                         font-size: 20px;
@@ -810,6 +1097,10 @@
 
                     &.font-size-small {
                         font-size: 16px;
+                    }
+
+                    &.font-size-extra-small {
+                        font-size: 14px;
                     }
                 }
             }
