@@ -105,7 +105,7 @@ module.exports = {
 
         { step: `Mix together sauce ingredients.`, section: SECTIONS.PREP_SAUCE },
 
-        { step: `Over medium-high heat, in a pan add potstickers and water.`, section: SECTIONS.STEAM, img: potstickers5 },
+        { step: `Over medium-high heat, add potstickers and water in a pan.`, section: SECTIONS.STEAM, img: potstickers5 },
         { step: `Cover pan with a lid. Steam (about 3 minutes).`, section: SECTIONS.STEAM, img: potstickers6 },
 
         { step: `Uncover. Reduce heat to medium.`, section: SECTIONS.PAN_FRY },
