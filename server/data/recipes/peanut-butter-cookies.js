@@ -13,7 +13,7 @@ const cookies13 = '../assets/Products/peanut-butter-cookies-13.jpeg';
 const cookies14 = '../assets/Products/peanut-butter-cookies-14.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SHEET, BROWN_SUGAR, EGG, OVEN, PEANUT_BUTTER, SALT, SILICON_BAKING_MAT, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SHEET, BROWN_SUGAR, EGG, OVEN, PEANUT_BUTTER, SALT, SILICONE_BAKING_MAT, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
     cardName: 'Peanut Butter Cookies',
@@ -55,7 +55,7 @@ module.exports = {
     ],
     supplies: [
         BAKING_SHEET,
-        SILICON_BAKING_MAT,
+        SILICONE_BAKING_MAT,
     ],
     directions: [
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },

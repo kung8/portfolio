@@ -6,7 +6,7 @@ const gravy5 = '../assets/Products/kfc-gravy-5.jpeg';
 const gravy6 = '../assets/Products/mash-potatoes-10.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BEEF_BOUILLON_CUBE, BLACK_PEPPER, CHICKEN_BOUILLON_CUBE, HOT_WATER, ONION_POWDER, SALT, SAUCEPAN, STOVE, UNSALTED_BUTTER, WHISK } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BEEF_BOUILLON_CUBE, BLACK_PEPPER, CHICKEN_BOUILLON_CUBE, ONION_POWDER, SALT, SAUCEPAN, STOVE, UNSALTED_BUTTER, WHISK, WATER } = require('./ingredients');
 
 const ROUX_SECTION = 'Roux';
 
@@ -41,7 +41,7 @@ module.exports = {
     ingredients: [
         { ...CHICKEN_BOUILLON_CUBE, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.BROTH },
         { ...BEEF_BOUILLON_CUBE, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.BROTH },
-        { ...HOT_WATER, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BROTH },
+        { ...WATER, amount: 9 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'hot', section: SECTIONS.BROTH },
 
         { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: ROUX_SECTION },
         { ...ALL_PURPOSE_FLOUR, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: ROUX_SECTION },

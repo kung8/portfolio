@@ -8,7 +8,7 @@ const cookies7 = '../assets/Products/pb-thumbprint-cookies-7.jpeg';
 const cookies8 = '../assets/Products/pb-thumbprint-cookies-8.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BAKING_SODA, BROWN_SUGAR, EGG, HERSHEYS_KISSES, OVEN, PEANUT_BUTTER, SALT, SILICON_BAKING_MAT, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BAKING_SODA, BROWN_SUGAR, EGG, HERSHEYS_KISSES, OVEN, PEANUT_BUTTER, SALT, SILICONE_BAKING_MAT, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
 const WET_INGREDIENTS = 'Wet Ingredients';
 const DRY_2_INGREDIENTS = 'Dry 2 Ingredients';
@@ -54,7 +54,7 @@ module.exports = {
     ],
     supplies: [
         BAKING_SHEET,
-        SILICON_BAKING_MAT,
+        SILICONE_BAKING_MAT,
     ],
     directions: [
         { step: `Preheat the oven to 375ºF.`, section: SECTIONS.PREHEAT_OVEN },

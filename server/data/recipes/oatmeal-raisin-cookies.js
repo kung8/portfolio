@@ -14,7 +14,7 @@ const {
     RAISINS,
     SALT,
     SEMI_SWEET_CHOCOLATE_CHIPS,
-    SILICON_BAKING_MAT,
+    SILICONE_BAKING_MAT,
     SPATULA,
     STEEL_OATS,
     UNSALTED_BUTTER,
@@ -77,7 +77,7 @@ module.exports = {
     supplies: [
         MIXING_BOWL,
         SPATULA,
-        SILICON_BAKING_MAT,
+        SILICONE_BAKING_MAT,
     ],
     directions: [
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },

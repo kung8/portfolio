@@ -13,12 +13,12 @@ const {
     BAKING_SODA,
     BROWN_SUGAR,
     EGG,
-    HOT_WATER,
     SALT,
     SEMI_SWEET_CHOCOLATE_CHIPS,
     UNSALTED_BUTTER,
     VANILLA_EXTRACT,
     WHITE_SUGAR,
+    WATER,
 } = require('./ingredients');
 
 const CREAMED_BUTTER = 'Creamed Butter';
@@ -67,7 +67,7 @@ module.exports = {
         { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: VANILLA_SECTION },
 
         { ...BAKING_SODA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BAKING_SODA_MIXTURE_SECTION },
-        { ...HOT_WATER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BAKING_SODA_MIXTURE_SECTION },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'hot', section: BAKING_SODA_MIXTURE_SECTION },
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BAKING_SODA_MIXTURE_SECTION },
 
         { ...ALL_PURPOSE_FLOUR, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FLOUR_SECTION },

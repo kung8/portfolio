@@ -183,6 +183,7 @@ const INGREDIENTS = {
         },
         ALE: { name: 'ale', category: INGREDIENT_CATEGORY.BEVERAGES },
         APPLE_CIDER: { name: 'apple cider', category: INGREDIENT_CATEGORY.BEVERAGES },
+        APPLE_CIDER_MIX: { name: 'apple cider mix', category: INGREDIENT_CATEGORY.BEVERAGES },
         APPLE_JUICE: { name: 'apple juice', category: INGREDIENT_CATEGORY.BEVERAGES },
         BARQS_ROOT_BEET: { name: 'barq\'s root beer', category: INGREDIENT_CATEGORY.BEVERAGES },
         BEER: { name: 'beer', category: INGREDIENT_CATEGORY.BEVERAGES },
@@ -220,9 +221,7 @@ const INGREDIENTS = {
         HIBISCUS_TEA: { name: 'hibiscus tea', category: INGREDIENT_CATEGORY.BEVERAGES },
         HERBAL_TEA: { name: 'herbal tea', category: INGREDIENT_CATEGORY.BEVERAGES },
         HI_C: { name: 'hi-c', category: INGREDIENT_CATEGORY.BEVERAGES },
-        HOT_WATER: {
-            name: 'hot water', category: INGREDIENT_CATEGORY.BEVERAGES, img: "https://images.unsplash.com/photo-1521207418485-99c705420785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDYwNDAzfA&ixlib=rb-4.0.3&q=80&w=400"
-        },
+        HOT_CHOCOLATE_MIX: { name: 'hot chocolate mix', category: INGREDIENT_CATEGORY.BEVERAGES },
         ICE: { name: 'ice', category: INGREDIENT_CATEGORY.BEVERAGES },
         KOOLAID: { name: 'koolaid', category: INGREDIENT_CATEGORY.BEVERAGES },
         LEMON_LIME: { name: 'lemon lime', category: INGREDIENT_CATEGORY.BEVERAGES },
@@ -309,6 +308,7 @@ const INGREDIENTS = {
         TRIX_CEREAL: { name: 'trix cereal', category: INGREDIENT_CATEGORY.BREAKFAST },
     },
     CANNED: {
+        APPLE_PIE_FILLING: { name: 'apple pie filling', category: INGREDIENT_CATEGORY.CANNED },
         BEEF_BOUILLON: { name: 'beef bouillon', category: INGREDIENT_CATEGORY.CANNED },
         BEEF_BOUILLON_CUBE: { name: 'beef bouillon cube', category: INGREDIENT_CATEGORY.CANNED },
         BEEF_BROTH: { name: 'beef broth', category: INGREDIENT_CATEGORY.CANNED },
@@ -635,7 +635,7 @@ const INGREDIENTS = {
         SERVING_BOWL: { name: 'serving bowl', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         SERVING_PLATE: { name: 'serving plate', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         SERVING_SPOON: { name: 'serving spoon', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
-        SILICON_BAKING_MAT: { name: 'silicon baking mat', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
+        SILICONE_BAKING_MAT: { name: 'silicone baking mat', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         SLOTTED_SPOON: { name: 'slotted spoon', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         SLOW_COOKER_LINER: { name: 'slow cooker liner', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         SMALL_BOWL: { name: 'small bowl', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },

@@ -21,7 +21,7 @@ const {
     PARSLEY,
     RED_BELL_PEPPER,
     SALT,
-    SILICON_BAKING_MAT,
+    SILICONE_BAKING_MAT,
     UNSALTED_BUTTER,
     YELLOW_ONION,
 } = require('./ingredients');
@@ -72,7 +72,7 @@ module.exports = {
     ],
     supplies: [
         BAKING_SHEET,
-        SILICON_BAKING_MAT,
+        SILICONE_BAKING_MAT,
         MIXING_BOWL,
     ],
     directions: [

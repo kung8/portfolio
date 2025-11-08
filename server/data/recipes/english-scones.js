@@ -17,9 +17,8 @@ const scones16 = '../assets/Products/english-scones-16.jpeg';
 const scones17 = '../assets/Products/english-scones-17.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SHEET, BASTING_BRUSH, EGG, FORK, LEMON_JUICE, MILK, MIXING_BOWL, OVEN, SALT, SILICON_BAKING_MAT, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SHEET, BASTING_BRUSH, EGG, FORK, LEMON_JUICE, MILK, MIXING_BOWL, OVEN, SALT, SILICONE_BAKING_MAT, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
-const PREP_BAKE = 'Prep Bake';
 const DRY_MIXTURE = 'Dry Mixture';
 const BUTTERMILK_MIXTURE = 'Buttermilk Mixture';
 const EGG_WASH = 'Egg Wash';
@@ -63,14 +62,14 @@ module.exports = {
     ],
     supplies: [
         BAKING_SHEET,
-        SILICON_BAKING_MAT,
+        SILICONE_BAKING_MAT,
         MIXING_BOWL,
         FORK,
         BASTING_BRUSH,
     ],
     directions: [
         { step: `Preheat oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
-        { step: `Line baking sheet with a silicon baking mat.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Line baking sheet with a silicon baking mat.`, section: SECTIONS.PREP_PAN },
         { step: `Place baking sheet in preheating oven.`, section: SECTIONS.PREP_PAN, img: scones1 },
         { step: `Beat egg. Set aside.`, section: EGG_WASH },
         { step: `In a mixing bowl, combine all the "Dry Ingredients" except the butter.`, section: DRY_MIXTURE, img: [scones2, scones3] },

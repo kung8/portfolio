@@ -18,7 +18,7 @@ const {
     COARSE_SALT,
     OVEN,
     SALT,
-    SILICON_BAKING_MAT,
+    SILICONE_BAKING_MAT,
     SLOTTED_SPOON,
     STAND_MIXER,
     STOVE,
@@ -68,7 +68,7 @@ module.exports = {
     ],
     supplies: [
         SLOTTED_SPOON,
-        SILICON_BAKING_MAT,
+        SILICONE_BAKING_MAT,
         BAKING_SHEET,
     ],
     directions: [

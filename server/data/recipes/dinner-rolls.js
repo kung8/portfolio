@@ -1,7 +1,7 @@
 const rolls1 = '../assets/Products/dinner-rolls-1.jpeg';
 const rolls2 = '../assets/Products/dinner-rolls-2.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BAKING_SHEET, EGG, MIXING_BOWL, OVEN, SALT, SILICON_BAKING_MAT, SPATULA, VEGETABLE_OIL, WATER, WHITE_SUGAR, YEAST } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BAKING_SHEET, EGG, MIXING_BOWL, OVEN, SALT, SILICONE_BAKING_MAT, SPATULA, VEGETABLE_OIL, WATER, WHITE_SUGAR, YEAST } = require('./ingredients');
 
 const YEAST_MIXTURE = 'Yeast Mixture';
 const SUGAR_MIXTURE = 'Sugar Mixture';
@@ -47,7 +47,7 @@ module.exports = {
     supplies: [
         MIXING_BOWL,
         SPATULA,
-        SILICON_BAKING_MAT,
+        SILICONE_BAKING_MAT,
         BAKING_SHEET,
     ],
     directions: [

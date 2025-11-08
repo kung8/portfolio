@@ -21,7 +21,7 @@ const {
     OVEN,
     PLATE,
     SALT,
-    SILICON_BAKING_MAT,
+    SILICONE_BAKING_MAT,
     SMALL_BOWL,
     SPATULA,
     UNSALTED_BUTTER,
@@ -75,7 +75,7 @@ module.exports = {
         SPATULA,
         PLATE,
         BAKING_SHEET,
-        SILICON_BAKING_MAT,
+        SILICONE_BAKING_MAT,
     ],
     directions: [
         { step: `In a small bowl, combine the sugar and cinnamon together.`, section: COATING, img: cookie1 },

@@ -7,7 +7,7 @@ const brulee6 = '../assets/Products/creme-brulee-6.jpeg';
 const brulee7 = '../assets/Products/creme-brulee-7.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BAKING_PAN, EGG_YOLK, HEAVY_CREAM, HOT_WATER, MEDIUM_BOWL, OVEN, RAMEKIN, SAUCEPAN, STOVE, VANILLA_BEAN, WHITE_SUGAR } = require('./ingredients');
+const { BAKING_PAN, EGG_YOLK, HEAVY_CREAM, MEDIUM_BOWL, OVEN, RAMEKIN, SAUCEPAN, STOVE, VANILLA_BEAN, WHITE_SUGAR, WATER } = require('./ingredients');
 
 const CREAM = 'Cream';
 const VANILLA_SUGAR = 'Vanilla Sugar';
@@ -50,7 +50,7 @@ module.exports = {
         { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.QUART, additionalDetails: '', section: CREAM },
         { ...VANILLA_BEAN, amount: 1, unit: '', additionalDetails: 'split and scraped', section: CREAM },
         { ...EGG_YOLK, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...HOT_WATER, amount: 2, unit: INGREDIENT_UNITS.QUART, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.QUART, additionalDetails: 'hot', section: SECTIONS.MAIN },
     ],
     appliances: [
         STOVE,

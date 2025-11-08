@@ -10,10 +10,9 @@ const rolls9 = '../assets/Products/crescent-rolls-9.jpeg';
 const rolls10 = '../assets/Products/crescent-rolls-10.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BAKING_SHEET, EGG, EVAPORATED_MILK, MEDIUM_BOWL, MIXING_BOWL, OVEN, SALT, SILICON_BAKING_MAT, UNSALTED_BUTTER, WATER, WHITE_SUGAR, YEAST } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BAKING_SHEET, EGG, EVAPORATED_MILK, MEDIUM_BOWL, MIXING_BOWL, OVEN, SALT, SILICONE_BAKING_MAT, UNSALTED_BUTTER, WATER, WHITE_SUGAR, YEAST } = require('./ingredients');
 
 const YEAST_MIXTURE = 'Yeast Mixture';
-const LIQUID_MIXTURE = 'Liquid Mixture';
 
 module.exports = {
     cardName: 'Crescent Rolls',
@@ -59,7 +58,7 @@ module.exports = {
         MEDIUM_BOWL,
         MIXING_BOWL,
         BAKING_SHEET,
-        SILICON_BAKING_MAT,
+        SILICONE_BAKING_MAT,
     ],
     directions: [
         { step: `In a medium bowl, combine the "${YEAST_MIXTURE}" section ingredients.`, section: YEAST_MIXTURE },

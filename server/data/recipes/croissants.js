@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BROWN_SUGAR, DOUGH_KNIFE, EGG, MILK, OVEN, PLASTIC_WRAP, ROLLING_PIN, SALT, SILICON_BAKING_MAT, STAND_MIXER, UNSALTED_BUTTER, YEAST } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BROWN_SUGAR, DOUGH_KNIFE, EGG, MILK, OVEN, PLASTIC_WRAP, ROLLING_PIN, SALT, SILICONE_BAKING_MAT, STAND_MIXER, UNSALTED_BUTTER, YEAST } = require('./ingredients');
 
 const EGG_WASH_SECTION = 'Egg Wash';
 const PREP_BUTTER = 'Prep Butter';
@@ -52,7 +52,7 @@ module.exports = {
         PLASTIC_WRAP,
         DOUGH_KNIFE,
         BAKING_SHEET,
-        SILICON_BAKING_MAT,
+        SILICONE_BAKING_MAT,
     ],
     directions: [
         { step: `In a stand mixer, combine warm milk, brown sugar and yeast.`, section: SECTIONS.MAKE_DOUGH },

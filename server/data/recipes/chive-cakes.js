@@ -19,7 +19,7 @@ const cakes18 = '../assets/Products/chive-cakes-18.jpeg';
 const cakes19 = '../assets/Products/chive-cakes-19.jpeg';
 
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BAKING_SODA, DARK_SOY_SAUCE, FRYING_PAN, GARLIC, GARLIC_CHIVE, GLUTINOUS_RICE_FLOUR, HOT_WATER, PEANUT_OIL, POWDERED_SUGAR, RED_PEPPER_FLAKES, RICE_FLOUR, ROLLING_PIN, SALT, SAUCEPAN, STAND_MIXER, STEAMER, STOVE, TAPIOCA_STARCH, UNSALTED_PEANUT, VEGETABLE_OIL, WATER, WHITE_VINEGAR } = require('./ingredients');
+const { BAKING_SODA, DARK_SOY_SAUCE, FRYING_PAN, GARLIC, GARLIC_CHIVE, GLUTINOUS_RICE_FLOUR, PEANUT_OIL, POWDERED_SUGAR, RED_PEPPER_FLAKES, RICE_FLOUR, ROLLING_PIN, SALT, SAUCEPAN, STAND_MIXER, STEAMER, STOVE, TAPIOCA_STARCH, UNSALTED_PEANUT, VEGETABLE_OIL, WATER, WHITE_VINEGAR } = require('./ingredients');
 
 const CHIVE_SECTION = 'Chive';
 const COOK_SECTION = 'Cook';
@@ -59,7 +59,7 @@ module.exports = {
         { ...RICE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...GLUTINOUS_RICE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...TAPIOCA_STARCH, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...HOT_WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiling', section: SECTIONS.DOUGH },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiling', section: SECTIONS.DOUGH },
         { ...VEGETABLE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...WATER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'warm', section: SECTIONS.DOUGH },
 
