@@ -17,8 +17,8 @@ const {
     SEMI_SWEET_CHOCOLATE_CHIPS,
     UNSALTED_BUTTER,
     VANILLA_EXTRACT,
-    WHITE_SUGAR,
     WATER,
+    WHITE_SUGAR,
 } = require('./ingredients');
 
 const CREAMED_BUTTER = 'Creamed Butter';

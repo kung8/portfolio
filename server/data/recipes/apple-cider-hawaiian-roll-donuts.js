@@ -1,6 +1,8 @@
 // const example = '../assets/Products/example.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    APPLE_CIDER_MIX,
+    APPLE_PIE_FILLING,
     BAKING_SHEET,
     BASTING_BRUSH,
     BOWL,
@@ -8,12 +10,10 @@ const {
     HAWAIIAN_ROLLS,
     MIXING_BOWL,
     OVEN,
+    SILICONE_BAKING_MAT,
     SPOON,
     UNSALTED_BUTTER,
     WHITE_SUGAR,
-    APPLE_PIE_FILLING,
-    APPLE_CIDER_MIX,
-    SILICONE_BAKING_MAT,
 } = require('./ingredients');
 
 const SUGAR_MIXTURE = 'Sugar Mixture';

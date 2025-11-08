@@ -7,7 +7,7 @@ const brulee6 = '../assets/Products/creme-brulee-6.jpeg';
 const brulee7 = '../assets/Products/creme-brulee-7.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BAKING_PAN, EGG_YOLK, HEAVY_CREAM, MEDIUM_BOWL, OVEN, RAMEKIN, SAUCEPAN, STOVE, VANILLA_BEAN, WHITE_SUGAR, WATER } = require('./ingredients');
+const { BAKING_PAN, EGG_YOLK, HEAVY_CREAM, MEDIUM_BOWL, OVEN, RAMEKIN, SAUCEPAN, STOVE, VANILLA_BEAN, WATER, WHITE_SUGAR } = require('./ingredients');
 
 const CREAM = 'Cream';
 const VANILLA_SUGAR = 'Vanilla Sugar';
