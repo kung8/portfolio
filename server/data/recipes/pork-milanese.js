@@ -1,16 +1,19 @@
-// const example = '../assets/Products/example.jpeg';
+const milanese1 = '../assets/Products/pork-milanese-1.jpeg';
+const milanese2 = '../assets/Products/pork-milanese-2.jpeg';
+const milanese3 = '../assets/Products/pork-milanese-3.jpeg';
+const milanese4 = '../assets/Products/pork-milanese-4.jpeg';
+const milanese5 = '../assets/Products/pork-milanese-5.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BABY_ARUGULA, BABY_KALE, BAKING_SHEET, BLACK_PEPPER, COOLING_RACK, CUTTING_BOARD, EGG, LEMON_JUICE, MEAT_MALLET, MIXING_BOWL, OLIVE_OIL, PANKO_BREADCRUMBS, PAPER_TOWELS, PARMESAN_CHEESE, PLASTIC_WRAP, PLATE, PORK_CHOPS, SALT, SMALL_BOWL, STOVE, UNSALTED_BUTTER } = require('./ingredients');
 
 const DREDGE_PORK = 'Dredge Pork';
 
 module.exports = {
-    wip: true,
     cardName: 'Pork Milanese',
     name: 'Pork Milanese',
-    img: '',
+    img: milanese5,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.PAN_FRY],
@@ -64,18 +67,18 @@ module.exports = {
     directions: [
         { step: `Place pork chop between two pieces of plastic wrap.`, section: SECTIONS.PREP_PORK },
         { step: `Pound the meat with a meat tenderizer until it is between 1/4 inch and 1/2 inch thick.`, section: SECTIONS.PREP_PORK },
-        { step: `Season both sides of the pork chop with salt and pepper.`, section: SECTIONS.PREP_PORK },
+        { step: `Season both sides of the pork chop with salt and pepper.`, section: SECTIONS.PREP_PORK, img: milanese1 },
         { step: `Line a baking sheet with paper towels and place a wire rack on top.`, section: DREDGE_PORK },
         { step: `Set up the dredging station bowls: (1) flour, (2) whisked eggs, and (3) panko breadcrumb.`, section: DREDGE_PORK },
         { step: `Dredge the pork on both sides in flour and shake excess off.`, section: DREDGE_PORK },
         { step: `Dredge in egg wash.`, section: DREDGE_PORK },
         { step: `Dredge in panko breadcrumbs.`, section: DREDGE_PORK },
-        { step: `Place the breaded pork chops on a plate.`, section: DREDGE_PORK },
+        { step: `Place the breaded pork chops on a plate.`, section: DREDGE_PORK, img: milanese2 },
         { step: `Over medium heat, add oil to a frying pan.`, section: SECTIONS.COOK_PORK },
         { step: `Add breaded pork. `, section: SECTIONS.COOK_PORK },
-        { step: `Cook until the pork is light golden brown (about 3 to 4 minutes).`, section: SECTIONS.COOK_PORK },
+        { step: `Cook until the pork is light golden brown (about 3 to 4 minutes).`, section: SECTIONS.COOK_PORK, img: milanese3 },
         { step: `Flip. Add 1 tablespoon of butter to the pan.`, section: SECTIONS.COOK_PORK },
-        { step: `Cook the other side until it is light golden brown (about 3 to 4 minutes).`, section: SECTIONS.COOK_PORK },
+        { step: `Cook the other side until it is light golden brown (about 3 to 4 minutes).`, section: SECTIONS.COOK_PORK, img: milanese4 },
         { step: `Let it drain on the wire rack.`, section: SECTIONS.COOK_PORK },
         { step: `In a mixing bowl, combine the "${SECTIONS.SALAD}" section ingredients.`, section: SECTIONS.PREP_SALAD },
         { step: `Plate the pork chop and top with the salad.`, section: SECTIONS.SERVE },
