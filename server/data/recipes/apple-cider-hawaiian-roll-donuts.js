@@ -5,16 +5,14 @@ const {
     APPLE_PIE_FILLING,
     BAKING_SHEET,
     BASTING_BRUSH,
-    BOWL,
     CINNAMON,
     HAWAIIAN_ROLLS,
+    MEDIUM_BOWL,
     MIXING_BOWL,
     OVEN,
     SILICONE_BAKING_MAT,
-    SPOON,
     UNSALTED_BUTTER,
     WHITE_SUGAR,
-    MEDIUM_BOWL,
 } = require('./ingredients');
 
 const SUGAR_MIXTURE = 'Sugar Mixture';
