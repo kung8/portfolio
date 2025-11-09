@@ -1,4 +1,7 @@
-// const example = '../assets/Products/example.jpeg';
+const casserole1 = '../assets/Products/stuffed-pepper-casserole-1.jpeg';
+const casserole2 = '../assets/Products/stuffed-pepper-casserole-2.jpeg';
+const casserole3 = '../assets/Products/stuffed-pepper-casserole-3.jpeg';
+
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BLACK_PEPPER, CHEDDAR_CHEESE, DICED_TOMATO, FRYING_PAN, GARLIC_POWDER, GREEN_BELL_PEPPER, GROUND_BEEF, OVEN, RED_BELL_PEPPER, SALT, STOVE, WHITE_RICE, YELLOW_ONION } = require('./ingredients');
 
@@ -7,12 +10,11 @@ const COOK_INGREDIENTS = 'Cook Ingredients';
 const COOK_CASSEROLE = 'Cook Casserole';
 
 module.exports = {
-    wip: true,
     cardName: 'Stuffed Pepper Casserole',
     name: 'Stuffed Pepper Casserole',
-    img: '',
+    img: casserole3,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -25,11 +27,11 @@ module.exports = {
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Stuffed Pepper Casserole', 
+        {
+            label: 'Stuffed Pepper Casserole',
             link: 'https://recipesfiber.com/stuffed-pepper-casserole/',
             authors: ['Patricia'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -55,17 +57,21 @@ module.exports = {
     directions: [
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: `Over medium heat, brown ground beef until no longer pink.`, section: COOK_INGREDIENTS },
+        { step: `Over medium heat, brown ground beef until no longer pink over a pan.`, section: COOK_INGREDIENTS },
         { step: `Drain.`, section: COOK_INGREDIENTS },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Saute until vegetables are tender (about 5 minutes).`, section: COOK_INGREDIENTS },
-        { step: `Add the "${REST_OF_FILLING_SECTION}" section ingredients. Mix and let simmer for 2 to 3 minutes.`, section: COOK_INGREDIENTS },
+        { step: `Add the "${REST_OF_FILLING_SECTION}" section ingredients. Mix and let simmer for 2 to 3 minutes.`, section: COOK_INGREDIENTS, img: casserole1 },
 
         { step: `Transfer to baking pan.`, section: COOK_CASSEROLE },
-        { step: `Top with shredded cheese.`, section: COOK_CASSEROLE },
+        { step: `Top with shredded cheese.`, section: COOK_CASSEROLE, img: casserole2 },
         { step: `Bake until cheese is golden and bubbly (about 20 minutes).`, section: COOK_CASSEROLE },
         { step: `Let it rest for a few minutes.`, section: COOK_CASSEROLE },
 
         { step: `Enjoy this recipe made easier as a casserole dish!`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `The casserole was a little dry. The only liquid component is from the diced tomatoes. Make sure the rice is not dry before it is added to the pan.` },
+        { note: `I feel this recipe will be added to the regular rotation. Easy to make and tastes great!` },
     ],
     store: [
         {
