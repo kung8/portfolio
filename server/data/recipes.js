@@ -1,7 +1,7 @@
 const almondCroissantCookieBars = require("./recipes/almond-croissant-cookie-bars");
 const americanOmelette = require("./recipes/american-omelette");
 const antsOnALog = require("./recipes/ants-on-a-log");
-const appleCiderHawaiianRollDonuts = require('./recipes/apple-cider-hawaiian-roll-donuts.js'); // TODO: finish adding recipe
+const appleCiderHawaiianRollDonuts = require('./recipes/apple-cider-hawaiian-roll-donuts.js');
 const appleDumpCake = require('./recipes/apple-dump-cake.js'); // TODO: finish adding recipe
 const appleDumplings = require('./recipes/apple-dumplings.js'); // TODO: finish adding recipe
 const applePie = require("./recipes/apple-pie");
@@ -39,7 +39,7 @@ const biscuitsAndGravy = require("./recipes/biscuits-and-gravy");
 const blondie = require("./recipes/blondie");
 const blt = require("./recipes/blt");
 const blueberryBagels = require('./recipes/blueberry-bagels.js'); // TODO: finish adding recipe
-const blueberryFrenchToastCasserole = require('./recipes/blueberry-french-toast-casserole.js'); // TODO: finish adding recipe
+const blueberryFrenchToastCasserole = require('./recipes/blueberry-french-toast-casserole.js');
 const bostonCreamHawaiianRollDonuts = require('./recipes/boston-cream-hawaiian-roll-donuts.js');
 const brazilianBlackBeans = require('./recipes/brazilian-black-beans.js'); // TODO: finish adding recipe
 const brazilianLemonade = require('./recipes/brazilian-lemonade.js');

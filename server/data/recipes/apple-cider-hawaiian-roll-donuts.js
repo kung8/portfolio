@@ -14,6 +14,7 @@ const {
     SPOON,
     UNSALTED_BUTTER,
     WHITE_SUGAR,
+    MEDIUM_BOWL,
 } = require('./ingredients');
 
 const SUGAR_MIXTURE = 'Sugar Mixture';
@@ -62,17 +63,16 @@ module.exports = {
     supplies: [
         BAKING_SHEET,
         SILICONE_BAKING_MAT,
-        BASTING_BRUSH,
-        BOWL,
         MIXING_BOWL,
-        SPOON,
+        {...MEDIUM_BOWL, amount: 2 },
+        BASTING_BRUSH,
     ],
     directions: [
         { step: `Preheat the oven to 350°F.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Line a baking sheet with a silicon baking mat.`, section: SECTIONS.PREP_PAN },
 
         { step: `Roughly chop the apple pie filling.`, section: SECTIONS.PREP_FILLING },
-        { step: `In a bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING },
+        { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING },
 
         { step: `Separate Hawaiian rolls.`, section: SECTIONS.PREP_ROLLS },
         { step: `Create a hole in the side of each roll, large enough for about a tablespoon of filling.`, section: SECTIONS.PREP_ROLLS },

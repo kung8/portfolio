@@ -969,6 +969,7 @@ const INGREDIENTS = {
         BOW_TIE_NOODLES: {
             name: 'bow tie noodles', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1723802451266-59fecf0546d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxOTA1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        BRIOCHE: { name: 'brioche', category: INGREDIENT_CATEGORY.GRAIN },
         BRIOCHE_BUNS: { name: 'brioche buns', category: INGREDIENT_CATEGORY.GRAIN },
         BREAD: {
             name: 'bread', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1675788939191-713c2abf3da6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcwODI4fA&ixlib=rb-4.0.3&q=80&w=400"
