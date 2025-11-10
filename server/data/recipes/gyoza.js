@@ -8,7 +8,6 @@ const gyoza7 = '../assets/Products/gyoza-7.jpeg';
 const gyoza8 = '../assets/Products/gyoza-8.jpeg';
 const gyoza9 = '../assets/Products/gyoza-9.jpeg';
 
-const { img } = require('./choy-sum-with-garlic-sauce');
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CABBAGE, FRYING_PAN, GARLIC, GREEN_ONION, GROUND_PORK, LIGHT_SOY_SAUCE, PLATE, SALT, SESAME_OIL, STOVE, VEGETABLE_OIL, WATER, WONTON_WRAPPER } = require('./ingredients');
 

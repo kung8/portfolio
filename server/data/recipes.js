@@ -275,7 +275,6 @@ const popcornBalls = require("./recipes/popcorn-balls");
 const porkMilanese = require("./recipes/pork-milanese");
 const potRoast = require("./recipes/pot-roast");
 const potatoGnocchi = require("./recipes/potato-gnocchi");
-const potstickers = require("./recipes/potstickers");
 const pretzel = require("./recipes/pretzel");
 const pumpkinSoup = require("./recipes/pumpkin-soup");
 const pumpkinSoup2 = require('./recipes/pumpkin-soup-2.js'); // TODO: finish adding recipe
@@ -432,7 +431,6 @@ const recipes = [
     chineseBao,
     dumplingSoup,
     springRolls,
-    potstickers,
     crabRangoon,
     chopSuey,
     fiveSpiceBlend,
