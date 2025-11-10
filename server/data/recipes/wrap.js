@@ -4,10 +4,10 @@ const {
     CHEDDAR_CHEESE,
     COOKED_HAM,
     HONEY_MUSTARD,
+    PLATE,
     ROMA_TOMATO,
     SPINACH,
     TORTILLA,
-    PLATE,
 } = require('./ingredients');
 
 const WRAP_SECTION = 'Wrap';

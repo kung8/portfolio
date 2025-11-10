@@ -6,7 +6,7 @@ const starter5 = '../assets/Products/sourdough-starter-5.jpeg';
 const starter6 = '../assets/Products/sourdough-starter-6.jpeg';
 const starter7 = '../assets/Products/sourdough-starter-7.jpeg';
 
-const { ALL_PURPOSE_FLOUR, WATER, CHEESECLOTH, GLASS_JAR } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, CHEESECLOTH, GLASS_JAR, WATER } = require('./ingredients');
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 
 const CREATING_STARTER = 'Creating Starter';

@@ -19,17 +19,17 @@ const {
     GINGER,
     GREEN_ONION,
     HOISIN_SAUCE,
+    LARGE_POT,
     LIGHT_SOY_SAUCE,
     LIME_JUICE,
+    MEDIUM_POT,
     MINT_LEAF,
     RED_CHILI_PASTE,
     SALT,
     SRIRACHA_SAUCE,
+    STOVE,
     WATER,
     YELLOW_ONION,
-    STOVE,
-    LARGE_POT,
-    MEDIUM_POT,
 } = require('./ingredients');
 
 module.exports = {

@@ -4,7 +4,7 @@ const blend3 = '../assets/Products/five-spices-blend-3.jpeg';
 const blend4 = '../assets/Products/five-spices-blend-4.jpeg';
 
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BLACK_PEPPER, CINNAMON, FENNEL_SEEDS, GROUND_CLOVES, STAR_ANISE, MORTAR_AND_PESTLE } = require('./ingredients');
+const { BLACK_PEPPER, CINNAMON, FENNEL_SEEDS, GROUND_CLOVES, MORTAR_AND_PESTLE, STAR_ANISE } = require('./ingredients');
 
 const SPICES_SECTION = 'Spices';
 

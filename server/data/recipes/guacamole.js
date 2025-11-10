@@ -5,7 +5,7 @@ const guacamole4 = '../assets/Products/guacamole-4.jpeg';
 const guacamole5 = '../assets/Products/guacamole-5.jpeg';
 
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { AVOCADO, CAYENNE_PEPPER, CILANTRO, GARLIC, LIME, ROMA_TOMATO, SALT, YELLOW_ONION, MEDIUM_BOWL } = require('./ingredients');
+const { AVOCADO, CAYENNE_PEPPER, CILANTRO, GARLIC, LIME, MEDIUM_BOWL, ROMA_TOMATO, SALT, YELLOW_ONION } = require('./ingredients');
 
 module.exports = {
     cardName: 'Guacamole',

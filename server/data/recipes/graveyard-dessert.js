@@ -1,6 +1,6 @@
 const graveyardDessert1 = '../assets/Products/graveyard-dessert-1.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
-const { CHOCOLATE_PUDDING_CUPS, MILANO_COOKIES, OREO_COOKIES, CUPS } = require('./ingredients');
+const { CHOCOLATE_PUDDING_CUPS, CUPS, MILANO_COOKIES, OREO_COOKIES } = require('./ingredients');
 
 const GRAVEYARD_DESSERTS = 'Graveyard Desserts';
 

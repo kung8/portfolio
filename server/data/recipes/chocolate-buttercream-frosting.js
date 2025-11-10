@@ -7,7 +7,7 @@ const frosting6 = '../assets/Products/chocolate-buttercream-frosting-6.jpeg';
 const frosting7 = '../assets/Products/chocolate-buttercream-frosting-7.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { COCOA_POWDER, HEAVY_CREAM, POWDERED_SUGAR, UNSALTED_BUTTER, VANILLA_EXTRACT, REFRIGERATOR, MIXING_BOWL, WHISK, SPATULA } = require('./ingredients');
+const { COCOA_POWDER, HEAVY_CREAM, MIXING_BOWL, POWDERED_SUGAR, REFRIGERATOR, SPATULA, UNSALTED_BUTTER, VANILLA_EXTRACT, WHISK } = require('./ingredients');
 
 const CREAM_SECTION = 'Cream';
 const POWDERED_SUGAR_SECTION = 'Powdered Sugar';

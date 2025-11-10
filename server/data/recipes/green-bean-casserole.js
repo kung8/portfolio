@@ -3,7 +3,7 @@ const casserole2 = '../assets/Products/green-bean-casserole-2.jpeg';
 const casserole3 = '../assets/Products/green-bean-casserole-3.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BLACK_PEPPER, CANNED_GREEN_BEANS, CREAM_OF_MUSHROOM, CRISPY_FRIED_ONIONS, LIGHT_SOY_SAUCE, MILK, SALT, OVEN, BAKING_PAN } = require('./ingredients');
+const { BAKING_PAN, BLACK_PEPPER, CANNED_GREEN_BEANS, CREAM_OF_MUSHROOM, CRISPY_FRIED_ONIONS, LIGHT_SOY_SAUCE, MILK, OVEN, SALT } = require('./ingredients');
 
 module.exports = {
     cardName: 'Green Bean Casserole',

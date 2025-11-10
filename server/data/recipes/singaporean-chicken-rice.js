@@ -6,25 +6,25 @@ const rice5 = '../assets/Products/singaporean-chicken-rice-5.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    BOWL,
     CHICKEN_BROTH,
     CHICKEN_THIGH,
     CUCUMBER,
+    CUTTING_BOARD,
     GARLIC,
     GINGER,
     GREEN_ONION,
     JASMINE_RICE,
+    KNIFE,
     LIME_JUICE,
+    POT,
     ROMA_TOMATO,
     SALT,
     SESAME_OIL,
     SRIRACHA_SAUCE,
+    STOVE,
     TURMERIC,
     WHITE_SUGAR,
-    STOVE,
-    POT,
-    BOWL,
-    CUTTING_BOARD,
-    KNIFE,
 } = require('./ingredients');
 
 const CHILI_SAUCE = 'Chili Sauce';

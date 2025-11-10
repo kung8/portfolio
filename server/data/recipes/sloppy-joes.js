@@ -9,17 +9,17 @@ const {
     GARLIC,
     GROUND_BEEF,
     HAMBURGER_BUNS,
+    LARGE_PAN,
     OLIVE_OIL,
     RED_BELL_PEPPER,
     SALT,
+    SMALL_PAN,
+    SPATULA,
+    STOVE,
     TOMATO_SAUCE,
     WORCESTERSHIRE_SAUCE,
     YELLOW_MUSTARD,
     YELLOW_ONION,
-    STOVE,
-    LARGE_PAN,
-    SPATULA,
-    SMALL_PAN,
 } = require('./ingredients');
 
 module.exports = {

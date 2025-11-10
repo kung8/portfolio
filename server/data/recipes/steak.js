@@ -2,7 +2,7 @@ const steak1 = '../assets/Products/steak-1.jpeg';
 const steak2 = '../assets/Products/steak-2.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BEEF_NEW_YORK_STRIP, BLACK_PEPPER, ONION_POWDER, SALT, UNSALTED_BUTTER, GRILL, FORK, TONGS, KNIFE } = require('./ingredients');
+const { BEEF_NEW_YORK_STRIP, BLACK_PEPPER, FORK, GRILL, KNIFE, ONION_POWDER, SALT, TONGS, UNSALTED_BUTTER } = require('./ingredients');
 
 const BUTTER_SECTION = 'Butter';
 const RESTING_BEEF = 'Resting Beef';

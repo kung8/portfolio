@@ -7,7 +7,7 @@ const mochi6 = '../assets/Products/easy-mochi-6.jpeg';
 const mochi7 = '../assets/Products/easy-mochi-7.jpeg';
 
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { CORNSTARCH, ICE_CREAM, MOCHIKO, MICROWAVE, MIXING_BOWL, PLASTIC_WRAP, SPATULA } = require('./ingredients');
+const { CORNSTARCH, ICE_CREAM, MICROWAVE, MIXING_BOWL, MOCHIKO, PLASTIC_WRAP, SPATULA } = require('./ingredients');
 
 const MOCHI_SECTION = 'Mochi';
 const DUSTING_SECTION = 'Dusting';

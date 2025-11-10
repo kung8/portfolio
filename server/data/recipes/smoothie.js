@@ -3,11 +3,11 @@ const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN,
 const {
     ALMOND_MILK,
     BANANA,
+    BLENDER,
     FROZEN_BERRIES,
     KALE,
     PEANUT_BUTTER,
     PLAIN_YOGURT,
-    BLENDER,
 } = require('./ingredients');
 
 const SMOOTHIE_SECTION = 'Smoothie';
