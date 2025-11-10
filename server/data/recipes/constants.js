@@ -314,6 +314,7 @@ const SECTIONS = {
     MAKE_DOUGH: 'Make Dough',
     MAKE_HAMBURGER: 'Make Hamburger',
     MAKE_SOUP: 'Make Soup',
+    MAKE_GLAZE: 'Make Glaze',
 
     // === MARINATE VERBS (Marination Actions) ===
     MARINATE_BEEF: 'Marinate Beef',

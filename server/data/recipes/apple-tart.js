@@ -46,7 +46,7 @@ module.exports = {
         { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FRANGIPANE },
 
-        { ...REFRIGERATED_PUFF_PASTRY, amount: '', unit: '', additionalDetails: 'chilled until ready to use', section: SECTIONS.ASSEMBLE },
+        { ...REFRIGERATED_PUFF_PASTRY, amount: 17.3, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'chilled until ready to use', section: SECTIONS.ASSEMBLE },
         { ...PINK_LADY_APPLE, amount: 4, unit: '', additionalDetails: 'cored, peeled and thinly sliced', section: SECTIONS.ASSEMBLE },
         { ...APRICOT_JELLY, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'heated until partially melted', section: SECTIONS.ASSEMBLE },
     ],
