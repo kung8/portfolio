@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BLACK_PEPPER, CHICKEN_BROTH, GARLIC, PARSLEY, SALT, UNSALTED_BUTTER, WHITE_RICE, YELLOW_ONION } = require('./ingredients');
+const { BLACK_PEPPER, CHICKEN_BROTH, GARLIC, PARSLEY, SALT, SAUCEPAN, STOVE, STRAINER, UNSALTED_BUTTER, WHITE_RICE, YELLOW_ONION } = require('./ingredients');
 
 const ONION_MIXTURE_SECTION = 'Onion Mixture';
 const COOK_ONION = 'Cook Onion';
@@ -24,11 +24,11 @@ module.exports = {
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Rice Pilaf', 
+        {
+            label: 'Rice Pilaf',
             link: 'https://tastesbetterfromscratch.com/how-to-make-easy-rice-pilaf/',
             authors: ['Lauren Allen'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -44,11 +44,11 @@ module.exports = {
         { ...PARSLEY, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'strainer' },
-        { name: 'saucepan with lid' },
+        STRAINER,
+        { ...SAUCEPAN, additionalDetails: 'with lid' },
     ],
     directions: [
         { step: `Run the rice under water until it comes out clear. Drain.`, section: SECTIONS.PREP_RICE },

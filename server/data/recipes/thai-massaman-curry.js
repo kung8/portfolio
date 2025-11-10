@@ -9,7 +9,7 @@ const curry8 = '../assets/Products/massaman-curry-8.jpeg';
 const curry9 = '../assets/Products/massaman-curry-9.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
-const { BROWN_SUGAR, CARROT, CHICKEN_BREAST, CILANTRO, COCONUT_MILK, FISH_SAUCE, GINGER, JASMINE_RICE, LIME_JUICE, MASSAMAN_CURRY_PASTE, PEANUT_BUTTER, RED_PEPPER_FLAKES, SRIRACHA_SAUCE, UNSALTED_PEANUT, VEGETABLE_OIL, WORCESTERSHIRE_SAUCE, YELLOW_ONION, YUKON_GOLD_POTATO } = require('./ingredients');
+const { BROWN_SUGAR, CARROT, CHICKEN_BREAST, CILANTRO, COCONUT_MILK, FISH_SAUCE, GINGER, JASMINE_RICE, LIME_JUICE, MASSAMAN_CURRY_PASTE, PEANUT_BUTTER, RED_PEPPER_FLAKES, SRIRACHA_SAUCE, UNSALTED_PEANUT, VEGETABLE_OIL, WORCESTERSHIRE_SAUCE, YELLOW_ONION, YUKON_GOLD_POTATO, STOVE, PEELER, KNIFE, CUTTING_BOARD, POT } = require('./ingredients');
 
 const PASTE_SECTION = 'Paste';
 const LIQUIDS_SECTION = 'Liquids';
@@ -69,13 +69,13 @@ module.exports = {
         { ...JASMINE_RICE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'peeler' },
-        { name: 'knife' },
-        { name: 'cutting board' },
-        { name: 'pot' },
+        PEELER,
+        KNIFE,
+        CUTTING_BOARD,
+        POT,
     ],
     directions: [
         { step: `Over medium heat, heat oil in pot.`, section: HEAT_PASTE },

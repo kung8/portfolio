@@ -2,9 +2,12 @@ const dinner1 = '../assets/Products/hobo-dinner-1.jpeg';
 const dinner2 = '../assets/Products/hobo-dinner-2.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    ALUMINUM_FOIL,
+    BAKING_PAN,
     BLACK_PEPPER,
     CARROT,
     OLIVE_OIL,
+    OVEN,
     POTATO,
     SALT,
     SUMMER_SAUSAGE,
@@ -47,11 +50,11 @@ module.exports = {
         { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: HOBO_DINNER },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking pan' },
-        { name: 'aluminum foil' },
+        BAKING_PAN,
+        ALUMINUM_FOIL,
     ],
     directions: [
         { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },

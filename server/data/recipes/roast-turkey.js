@@ -19,13 +19,19 @@ const turkey18 = '../assets/Products/roast-turkey-18.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    BASTING_BRUSH,
     BLACK_PEPPER,
+    COOKING_THERMOMETER,
     GARLIC,
     LEMON,
+    MEDIUM_BOWL,
     OLIVE_OIL,
+    OVEN,
+    ROASTING_PAN,
     ROSEMARY,
     SALT,
     THYME,
+    TONGS,
     TURKEY,
     UNSALTED_BUTTER,
 } = require('./ingredients');
@@ -73,14 +79,14 @@ module.exports = {
         { ...OLIVE_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.OIL },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'roasting pan' },
-        { name: '2 tongs' },
-        { name: 'medium bowl' },
-        { name: 'basting brush' },
-        { name: 'internal thermometer' },
+        ROASTING_PAN,
+        TONGS,
+        MEDIUM_BOWL,
+        BASTING_BRUSH,
+        COOKING_THERMOMETER,
     ],
     directions: [
         { step: `In a medium bowl, combine the "${HERB_BUTTER_RUB}" section ingredients.`, section: HERB_BUTTER_RUB, img: [turkey1, turkey2, turkey3] },

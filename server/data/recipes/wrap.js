@@ -7,6 +7,7 @@ const {
     ROMA_TOMATO,
     SPINACH,
     TORTILLA,
+    PLATE,
 } = require('./ingredients');
 
 const WRAP_SECTION = 'Wrap';
@@ -42,7 +43,7 @@ module.exports = {
         { ...HONEY_MUSTARD, amount: '', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
     ],
     supplies: [
-        { name: 'plate' },
+        PLATE,
     ],
     directions: [
         { step: `On a plate, place tortilla.`, section: SECTIONS.ASSEMBLE },

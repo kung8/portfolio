@@ -2,7 +2,7 @@ const steak1 = '../assets/Products/steak-1.jpeg';
 const steak2 = '../assets/Products/steak-2.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BEEF_NEW_YORK_STRIP, BLACK_PEPPER, ONION_POWDER, SALT, UNSALTED_BUTTER } = require('./ingredients');
+const { BEEF_NEW_YORK_STRIP, BLACK_PEPPER, ONION_POWDER, SALT, UNSALTED_BUTTER, GRILL, FORK, TONGS, KNIFE } = require('./ingredients');
 
 const BUTTER_SECTION = 'Butter';
 const RESTING_BEEF = 'Resting Beef';
@@ -40,12 +40,12 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BUTTER_SECTION },
     ],
     appliances: [
-        { name: 'grill' },
+        GRILL,
     ],
     supplies: [
-        { name: 'fork' },
-        { name: 'tongs' },
-        { name: 'knife' },
+        FORK,
+        TONGS,
+        KNIFE,
     ],
     directions: [
         { step: `With a fork, poke holes on both sides of the steak.`, section: SECTIONS.PREP_BEEF },

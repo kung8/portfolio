@@ -8,7 +8,7 @@ const bowl7 = '../assets/Products/spring-roll-bowl-7.jpeg';
 const bowl8 = '../assets/Products/spring-roll-bowl-8.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BASIL_LEAF, BLACK_PEPPER, BONELESS_CHICKEN_BREAST, CARROT, CUCUMBER, LIGHT_SOY_SAUCE, LIME, MAPLE_SYRUP, OLIVE_OIL, PEANUT_BUTTER, RED_BELL_PEPPER, RED_CABBAGE, ROMAINE_LETTUCE, SALT, SRIRACHA_SAUCE, UNSALTED_PEANUT, VERMICELLI_RICE_NOODLES, WATER, WHITE_VINEGAR } = require('./ingredients');
+const { BASIL_LEAF, BLACK_PEPPER, BONELESS_CHICKEN_BREAST, CARROT, CUCUMBER, FRYING_PAN, LIGHT_SOY_SAUCE, LIME, MAPLE_SYRUP, MEAT_MALLET, MEDIUM_BOWL, OLIVE_OIL, PEANUT_BUTTER, RED_BELL_PEPPER, RED_CABBAGE, ROMAINE_LETTUCE, SALT, SERVING_BOWL, SRIRACHA_SAUCE, STOVE, UNSALTED_PEANUT, VERMICELLI_RICE_NOODLES, WATER, WHITE_VINEGAR } = require('./ingredients');
 
 const BOWL_SECTION = 'Bowl';
 const PREP_BOWLS = 'Prep Bowls';
@@ -65,13 +65,13 @@ module.exports = {
         { ...UNSALTED_PEANUT, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'serving bowls' },
-        { name: 'meat mallet' },
-        { name: 'frying pan' },
+        MEDIUM_BOWL,
+        SERVING_BOWL,
+        MEAT_MALLET,
+        FRYING_PAN,
     ],
     directions: [
         { step: `In a medium bowl, combine the "${SECTIONS.DRESSING}" section ingredients. If the dressing is too thick, add more water as needed.`, section: SECTIONS.PREP_DRESSING, img: bowl1 },

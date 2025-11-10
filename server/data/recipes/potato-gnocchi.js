@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, DURUM_WHEAT, EGG, RED_POTATO, SALT } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, DURUM_WHEAT, EGG, FORK, KITCHEN_TOWEL, LARGE_POT, MASHER, PLATE, RED_POTATO, SALT, SMALL_BOWL, SPIDER_STRAINER, STOVE } = require('./ingredients');
 
 const PREP_POTATOES = 'Prep Potatoes';
 const MAKE_DOUGH = 'Make Dough';
@@ -38,16 +38,16 @@ module.exports = {
         { ...DURUM_WHEAT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.MAIN },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'masher' },
-        { name: 'small bowl' },
-        { name: 'fork' },
-        { name: 'towel' },
-        { name: 'spider strainer' },
-        { name: 'plate' },
+        LARGE_POT,
+        MASHER,
+        SMALL_BOWL,
+        FORK,
+        KITCHEN_TOWEL,
+        SPIDER_STRAINER,
+        PLATE,
     ],
     directions: [
         { step: `Peel the potatoes.`, section: PREP_POTATOES },

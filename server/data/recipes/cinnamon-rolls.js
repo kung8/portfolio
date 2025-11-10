@@ -13,7 +13,7 @@ const rolls12 = '../assets/Products/cinnamon-rolls-12.jpeg';
 const rolls13 = '../assets/Products/cinnamon-rolls-13.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BREAD_FLOUR, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, EGG, EGG_YOLK, MILK, POWDERED_SUGAR, SALT, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR, YEAST } = require('./ingredients');
+const { BREAD_FLOUR, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, EGG, EGG_YOLK, MILK, POWDERED_SUGAR, SALT, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR, YEAST, MICROWAVE, STAND_MIXER, OVEN, MEDIUM_BOWL, MIXING_BOWL, SMALL_BOWL } = require('./ingredients');
 
 module.exports = {
     cardName: 'Cinnamon Rolls',
@@ -32,11 +32,11 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 145, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Cinnamon Rolls', 
+        {
+            label: 'Cinnamon Rolls',
             link: 'https://www.ambitiouskitchen.com/best-cinnamon-rolls/',
             authors: ['Monique'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -48,7 +48,7 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: SECTIONS.DOUGH },
         { ...BREAD_FLOUR, amount: 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        
+
         { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'softened', section: SECTIONS.FILLING },
         { ...BROWN_SUGAR, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
         { ...CINNAMON, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
@@ -59,14 +59,14 @@ module.exports = {
         { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FROSTING },
     ],
     appliances: [
-        { name: 'microwave' },
-        { name: 'stand mixer' },
-        { name: 'oven' },
+        MICROWAVE,
+        STAND_MIXER,
+        OVEN,
     ],
     supplies: [
-        { name: 'microwavable bowl' },
-        { name: '2 mixing bowls' },
-        { name: 'small bowl' },
+        { ...MEDIUM_BOWL, additionalDetails: 'microwavable' },
+        { ...MIXING_BOWL, amount: 2 },
+        SMALL_BOWL,
     ],
     directions: [
         { step: `Add milk to a microwavable bowl and microwave for 40 to 45 seconds. It should be about 110ºF (or like warm bath water).`, section: SECTIONS.MAKE_DOUGH },

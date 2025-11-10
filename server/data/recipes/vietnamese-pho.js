@@ -27,6 +27,9 @@ const {
     SRIRACHA_SAUCE,
     WATER,
     YELLOW_ONION,
+    STOVE,
+    LARGE_POT,
+    MEDIUM_POT,
 } = require('./ingredients');
 
 module.exports = {
@@ -79,11 +82,11 @@ module.exports = {
         { ...SRIRACHA_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'medium pot' },
+        LARGE_POT,
+        MEDIUM_POT,
     ],
     directions: [
         { step: `Over medium heat, add onion and ginger in a large pot.`, section: SECTIONS.BROTH },

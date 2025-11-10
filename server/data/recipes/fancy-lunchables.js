@@ -1,6 +1,6 @@
 const lunchables1 = '../assets/Products/fancy-lunchables-1.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
-const { BUTTER_PICKLE_CHIPS, CHEDDAR_CHEESE, COOKED_HAM, CRACKERS, LETTUCE, ROMA_TOMATO } = require('./ingredients');
+const { BUTTER_PICKLE_CHIPS, CHEDDAR_CHEESE, COOKED_HAM, CRACKERS, LETTUCE, ROMA_TOMATO, PLATE } = require('./ingredients');
 
 const LUNCHABLES = 'Lunchables';
 
@@ -34,7 +34,7 @@ module.exports = {
         { ...BUTTER_PICKLE_CHIPS, amount: 6, unit: '', additionalDetails: '', section: LUNCHABLES },
     ],
     supplies: [
-        { name: 'plate' },
+        PLATE,
     ],
     directions: [
         { step: `Assemble together these delicious cracker sandwiches with your favorite toppings.`, section: SECTIONS.ASSEMBLE },

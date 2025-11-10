@@ -4,7 +4,7 @@ const blend3 = '../assets/Products/five-spices-blend-3.jpeg';
 const blend4 = '../assets/Products/five-spices-blend-4.jpeg';
 
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BLACK_PEPPER, CINNAMON, FENNEL_SEEDS, GROUND_CLOVES, STAR_ANISE } = require('./ingredients');
+const { BLACK_PEPPER, CINNAMON, FENNEL_SEEDS, GROUND_CLOVES, STAR_ANISE, MORTAR_AND_PESTLE } = require('./ingredients');
 
 const SPICES_SECTION = 'Spices';
 
@@ -38,7 +38,7 @@ module.exports = {
         { ...GROUND_CLOVES, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPICES_SECTION },
     ],
     supplies: [
-        { name: 'pestle and mortar' },
+        MORTAR_AND_PESTLE,
     ],
     directions: [
         { step: `In a pestle and mortar, combine the spices.`, section: SECTIONS.MAIN, img: [blend1, blend3] },

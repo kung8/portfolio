@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BLACK_PEPPER, BUTTERNUT_SQUASH, CARROT, GARLIC, GINGER, PUMPKIN_PUREE, PUMPKIN_SEEDS, SALT, SMOKED_PAPRIKA, SOUR_CREAM, TOMATO_PASTE, UNSALTED_BUTTER, VEGETABLE_BROTH, YELLOW_ONION } = require('./ingredients');
+const { BLACK_PEPPER, BLENDER, BUTTERNUT_SQUASH, CARROT, GARLIC, GINGER, LARGE_POT, PUMPKIN_PUREE, PUMPKIN_SEEDS, SALT, SMOKED_PAPRIKA, SOUR_CREAM, STOVE, TOMATO_PASTE, UNSALTED_BUTTER, VEGETABLE_BROTH, YELLOW_ONION } = require('./ingredients');
 
 const OTHER_VEGGIES_SECTION = 'Other Veggies';
 const SQUASH_SECTION = 'Squash';
@@ -50,11 +50,11 @@ module.exports = {
         { ...PUMPKIN_SEEDS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'blender' },
+        STOVE,
+        BLENDER,
     ],
     supplies: [
-        { name: 'large pot' },
+        LARGE_POT,
     ],
     directions: [
         { step: `Over medium heat, melt butter in a large pot.`, section: SECTIONS.MAKE_SOUP },

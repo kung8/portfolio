@@ -12,13 +12,21 @@ const bleu11 = '../assets/Products/chicken-cordon-bleu-11.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    BAKING_PAN,
+    BASTING_BRUSH,
     BLACK_PEPPER,
     BONELESS_AND_SKINLESS_CHICKEN_BREAST,
     COOKED_HAM,
     CORN_FLAKES_CEREAL,
+    CUTTING_BOARD,
+    KNIFE,
     MAYONNAISE,
+    OVEN,
+    PAPER_TOWELS,
     PROVOLONE_CHEESE,
     SALT,
+    SAUCEPAN,
+    SMALL_BOWL,
     UNSALTED_BUTTER,
     YELLOW_MUSTARD,
 } = require('./ingredients');
@@ -58,16 +66,16 @@ module.exports = {
         { ...YELLOW_MUSTARD, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN
     ],
     supplies: [
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: 'paper towel' },
-        { name: 'small bowls' },
-        { name: 'basting brush' },
-        { name: 'baking pan' },
-        { name: 'sauce pan' },
+        CUTTING_BOARD,
+        KNIFE,
+        PAPER_TOWELS,
+        SMALL_BOWL,
+        BASTING_BRUSH,
+        BAKING_PAN,
+        SAUCEPAN,
     ],
     directions: [
         { step: `Cut chicken breast in half horizontally so it is less thick and will be easier to work with.`, section: SECTIONS.MAIN, img: bleu1 },

@@ -28,6 +28,12 @@ const {
     WHITE_PEPPER,
     WHITE_VINEGAR,
     YELLOW_ONION,
+    STOVE,
+    POT,
+    BOWL,
+    WOK,
+    SMALL_BOWL,
+    MORTAR_AND_PESTLE,
 } = require('./ingredients');
 
 module.exports = {
@@ -81,14 +87,14 @@ module.exports = {
         { ...WHITE_VINEGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: THAI_CHILI_PEPPER_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'pot' },
-        { name: 'bowl' },
-        { name: 'wok' },
-        { name: 'small bowl' },
-        { name: 'mortar and pestle' },
+        POT,
+        BOWL,
+        WOK,
+        SMALL_BOWL,
+        MORTAR_AND_PESTLE,
     ],
     directions: [
         { step: `Dry fry the Thai chili peppers and garlic.`, section: THAI_CHILI_PEPPER_SECTION, img: noodles1 },

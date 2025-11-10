@@ -5,7 +5,7 @@ const teriyaki4 = '../assets/Products/teriyaki-chicken-4.jpeg';
 const teriyaki5 = '../assets/Products/teriyaki-chicken-5.jpeg';
 
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, BROWN_SUGAR, GARLIC, GINGER, GREEN_ONION, LIGHT_SOY_SAUCE, PINEAPPLE_JUICE } = require('./ingredients');
+const { ALUMINUM_FOIL, BAKING_PAN, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BROWN_SUGAR, GARLIC, GINGER, GREEN_ONION, GRILL, LIGHT_SOY_SAUCE, PINEAPPLE_JUICE, SAUCEPAN, ZIPLOC_BAG } = require('./ingredients');
 
 const GRILL_CHICKEN = 'Grill Chicken';
 
@@ -44,13 +44,13 @@ module.exports = {
         { ...GREEN_ONION, amount: '', unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'grill' },
+        GRILL,
     ],
     supplies: [
-        { name: 'ziploc bag' },
-        { name: 'saucepan' },
-        { name: 'aluminum foil' },
-        { name: 'baking pan' },
+        ZIPLOC_BAG,
+        SAUCEPAN,
+        ALUMINUM_FOIL,
+        BAKING_PAN,
     ],
     directions: [
         { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients. Mix until the sugar dissolves.`, section: SECTIONS.MARINATE_CHICKEN, img: teriyaki1 },

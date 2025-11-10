@@ -9,7 +9,7 @@ const rolls8 = '../assets/Products/fresh-spring-rolls-8.jpeg';
 const rolls9 = '../assets/Products/fresh-spring-rolls-9.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BASIL_LEAF, CARROT, CILANTRO, CUCUMBER, HOISIN_SAUCE, LIGHT_SOY_SAUCE, MINT_LEAF, PEANUT_BUTTER, PORK, SHRIMP, SPRING_ROLL_RICE_WRAPPERS, SWEET_CHILI_SAUCE, VEGETABLE_OIL, VERMICELLI_RICE_NOODLES } = require('./ingredients');
+const { BASIL_LEAF, CARROT, CILANTRO, CUCUMBER, HOISIN_SAUCE, LIGHT_SOY_SAUCE, MINT_LEAF, PEANUT_BUTTER, PORK, SHRIMP, SPRING_ROLL_RICE_WRAPPERS, SWEET_CHILI_SAUCE, VEGETABLE_OIL, VERMICELLI_RICE_NOODLES, BLENDER, STOVE, POT, PIE_PAN, PLATE, CUTTING_BOARD, KNIFE } = require('./ingredients');
 
 const VERMICELLI_RICE_NOODLES_SECTION = 'Vermicelli Rice Noodles';
 const WRAP_SECTION = 'Wrap';
@@ -70,15 +70,15 @@ module.exports = {
         { ...HOISIN_SAUCE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PEANUT_SAUCE },
     ],
     appliances: [
-        { name: 'blender' },
-        { name: 'stove' },
+        BLENDER,
+        STOVE,
     ],
     supplies: [
-        { name: 'pot' },
-        { name: 'pie pan' },
-        { name: 'plate' },
-        { name: 'cutting board' },
-        { name: 'knife' },
+        POT,
+        PIE_PAN,
+        PLATE,
+        CUTTING_BOARD,
+        KNIFE,
     ],
     directions: [
         { step: `Over medium-high heat, cook the vermicelli noodles for a few minutes or according to package instructions.`, section: VERMICELLI_RICE_NOODLES_SECTION },

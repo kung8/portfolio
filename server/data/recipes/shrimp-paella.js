@@ -12,7 +12,7 @@ const paella11 = '../assets/Products/shrimp-paella-11.jpeg';
 const paella12 = '../assets/Products/shrimp-paella-12.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ARBORIO_RICE, CAYENNE_PEPPER, CHICKEN_BROTH, CHORIZO, GARLIC, GREEN_PEA, LEMON, OLIVE_OIL, PAPRIKA, PARSLEY, RED_BELL_PEPPER, SAFFRON_THREADS, SALT, SHRIMP, YELLOW_ONION } = require('./ingredients');
+const { ARBORIO_RICE, CAYENNE_PEPPER, CHICKEN_BROTH, CHORIZO, GARLIC, GREEN_PEA, LEMON, OLIVE_OIL, PAPRIKA, PARSLEY, RED_BELL_PEPPER, SAFFRON_THREADS, SALT, SHRIMP, YELLOW_ONION, STOVE, OVEN, SAUCEPAN, STRAINER, BOWL, DUTCH_OVEN_POT } = require('./ingredients');
 
 const PAELLA = 'Paella';
 const MAKE_PAELLA = 'Make Paella';
@@ -64,14 +64,14 @@ module.exports = {
         { ...LEMON, amount: '', unit: '', additionalDetails: 'sliced wedges', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
-        { name: 'oven' },
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'strainer' },
-        { name: 'bowl' },
-        { name: 'dutch oven pan' },
+        SAUCEPAN,
+        STRAINER,
+        BOWL,
+        DUTCH_OVEN_POT,
     ],
     directions: [
         { step: `Peel the shrimp. Set aside the shell for the broth.`, section: SECTIONS.COOK_SAUCE },

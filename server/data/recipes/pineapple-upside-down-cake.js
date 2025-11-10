@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BROWN_SUGAR, CANNED_PINEAPPLE_SLICES, EGG, MARASCHINO_CHERRIES, UNSALTED_BUTTER, VEGETABLE_OIL, YELLOW_CAKE_MIX } = require('./ingredients');
+const { BAKING_PAN, BROWN_SUGAR, CANNED_PINEAPPLE_SLICES, EGG, KNIFE, MARASCHINO_CHERRIES, OVEN, SERVING_PLATE, UNSALTED_BUTTER, VEGETABLE_OIL, YELLOW_CAKE_MIX } = require('./ingredients');
 
 const PREHEATED_PAN_SECTION = 'Preheated Pan';
 
@@ -41,12 +41,12 @@ module.exports = {
         { ...EGG, amount: 3, unit: '', additionalDetails: 'or as stated on the cake mix box', section: SECTIONS.BATTER },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'baking pan' },
-        { name: 'knife' },
-        { name: 'serving plates/pan' },
+        BAKING_PAN,
+        KNIFE,
+        SERVING_PLATE,
     ],
     directions: [
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },

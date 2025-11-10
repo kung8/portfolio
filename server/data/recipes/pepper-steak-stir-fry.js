@@ -13,9 +13,11 @@ const {
     LIGHT_SOY_SAUCE,
     RED_BELL_PEPPER,
     SALT,
+    STOVE,
     VEGETABLE_OIL,
     WATER,
     WHITE_SUGAR,
+    WOK,
     YELLOW_ONION,
 } = require('./ingredients');
 
@@ -61,10 +63,10 @@ module.exports = {
         { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.SAUCE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'wok' },
+        WOK,
     ],
     directions: [
         { step: `Over medium-high heat, heat 1 Tbsp of vegetable oil in a wok.`, section: SECTIONS.MAIN },

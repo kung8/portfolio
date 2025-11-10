@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { CHICKEN_BROTH, PICANTE_SAUCE, VEGETABLE_OIL, WHITE_RICE, YELLOW_ONION } = require('./ingredients');
+const { CHICKEN_BROTH, PICANTE_SAUCE, VEGETABLE_OIL, WHITE_RICE, YELLOW_ONION, STOVE, LARGE_POT } = require('./ingredients');
 
 const RICE_SECTION = 'Rice';
 const COOK_RICE = 'Cook Rice';
@@ -23,11 +23,11 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Spanish Rice', 
+        {
+            label: 'Spanish Rice',
             link: 'https://www.allrecipes.com/recipe/33385/best-spanish-rice/',
             authors: ['Angela Sims'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -38,10 +38,10 @@ module.exports = {
         { ...PICANTE_SAUCE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: RICE_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot with lid' },
+        { ...LARGE_POT, additionalDetails: 'with lid' },
     ],
     directions: [
         { step: `Over medium heat, heat oil to a large pot.`, section: COOK_RICE },

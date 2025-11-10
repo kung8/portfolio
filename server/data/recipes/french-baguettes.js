@@ -9,7 +9,7 @@ const baguette8 = '../assets/Products/french-baguette-8.jpeg';
 const baguette9 = '../assets/Products/french-baguette-9.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, SALT, WATER, YEAST } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, SALT, WATER, YEAST, OVEN, STAND_MIXER, BAKING_PAN, BAGUETTE_PAN } = require('./ingredients');
 
 const BAGUETTES = 'Baguettes';
 
@@ -44,12 +44,12 @@ module.exports = {
         { ...YEAST, amount: 9 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BAGUETTES },
     ],
     appliances: [
-        { name: 'oven' },
-        { name: 'stand mixer' },
+        OVEN,
+        STAND_MIXER,
     ],
     supplies: [
-        { name: 'baking pan' },
-        { name: 'baguette pan' },
+        BAKING_PAN,
+        BAGUETTE_PAN,
     ],
     directions: [
         { step: `In a stand mixer, combine flour and water.`, section: SECTIONS.MAKE_DOUGH, img: baguette1 },

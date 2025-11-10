@@ -11,7 +11,7 @@ const bowl10 = '../assets/Products/piri-piri-chicken-bowl-10.jpeg';
 const bowl11 = '../assets/Products/piri-piri-chicken-bowl-11.jpeg';
 const bowl12 = '../assets/Products/piri-piri-chicken-bowl-12.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { AVOCADO, BABY_ARUGULA, BASMATI_RICE, BAY_LEAF, BLACK_PEPPER, BROWN_SUGAR, CAYENNE_PEPPER, CHICKEN_BROTH, CHICKEN_THIGH, CHIVE, CILANTRO, CORN, CRUSHED_TOMATOES, DIJON_MUSTARD, GARLIC, HOT_SAUCE, LEMON_JUICE, MAYONNAISE, NANDOS_PERI_PERI_SAUCE, OLIVE_OIL, OREGANO, PAPRIKA: PAPRIKA, SALT, SMOKED_PAPRIKA, THAI_CHILI_PEPPER, VEGETABLE_OIL } = require('./ingredients');
+const { AVOCADO, BABY_ARUGULA, BASMATI_RICE, BAY_LEAF, BLACK_PEPPER, BROWN_SUGAR, CAYENNE_PEPPER, CHICKEN_BROTH, CHICKEN_THIGH, CHIVE, CILANTRO, CORN, CRUSHED_TOMATOES, DIJON_MUSTARD, GARLIC, HOT_SAUCE, LEMON_JUICE, MAYONNAISE, NANDOS_PERI_PERI_SAUCE, OLIVE_OIL, OREGANO, PAPRIKA, SALT, SMOKED_PAPRIKA, THAI_CHILI_PEPPER, VEGETABLE_OIL, MIXING_BOWL, KNIFE, BASTING_BRUSH, LARGE_POT, SMALL_BOWL, STOVE, GRILL_OR_STOVE, BLENDER } = require('./ingredients');
 
 const CORN_SECTION = 'Corn';
 const GRILL_CHICKEN = 'Grill Chicken';
@@ -102,16 +102,16 @@ module.exports = {
         { ...CHIVE, amount: '', unit: '', additionalDetails: 'diced', section: SECTIONS.SAUCE },
     ],
     appliances: [
-        { name: 'grill/grill pan/grill griddle' },
-        { name: 'food processor or blender' },
-        { name: 'stove' },
+        GRILL_OR_STOVE,
+        BLENDER,
+        STOVE,
     ],
     supplies: [
-        { name: 'mixing bowls' },
-        { name: 'knife' },
-        { name: 'cooking brush' },
-        { name: 'large pot' },
-        { name: 'small bowl' },
+        MIXING_BOWL,
+        KNIFE,
+        BASTING_BRUSH,
+        LARGE_POT,
+        SMALL_BOWL,
     ],
     directions: [
         { step: `In a blender or food processor, combine all the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.PREP_MARINADE, img: bowl1 },

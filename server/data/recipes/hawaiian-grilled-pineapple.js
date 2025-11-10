@@ -2,7 +2,7 @@ const pineapple1 = '../assets/Products/hawaiian-grilled-pineapple-1.jpeg';
 const pineapple2 = '../assets/Products/hawaiian-grilled-pineapple-2.jpeg';
 
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BROWN_SUGAR, HONEY, PINEAPPLE, SALT, VEGETABLE_OIL, WATER } = require('./ingredients');
+const { BROWN_SUGAR, GRILL, HONEY, PINEAPPLE, SALT, VEGETABLE_OIL, WATER, ZIPLOC_BAG } = require('./ingredients');
 
 const PINEAPPLE_SECTION = 'Pineapple';
 const GRILL_SECTION = 'Grill';
@@ -44,10 +44,10 @@ module.exports = {
         { ...VEGETABLE_OIL, amount: '', unit: '', additionalDetails: '', section: GRILL_SECTION },
     ],
     appliances: [
-        { name: 'grill' },
+        GRILL,
     ],
     supplies: [
-        { name: 'ziploc bag' },
+        ZIPLOC_BAG,
     ],
     directions: [
         { step: `In a ziploc bag, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.PREP_MARINADE },

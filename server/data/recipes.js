@@ -213,7 +213,6 @@ const lemonChickenOnLettuce = require("./recipes/lemon-chicken-on-lettuce");
 const lemonChickenOrzoSoup = require("./recipes/lemon-chicken-orzo-soup");
 const lemonChickenRamen = require("./recipes/lemon-chicken-ramen");
 const lemonFreezeBars = require('./recipes/lemon-freeze-bars.js'); // TODO: finish adding recipe
-const lentilSloppyJoes = require("./recipes/lentil-sloppy-joes");
 const loadedChickenCasserole = require('./recipes/loaded-chicken-casserole.js'); // TODO: finish adding recipe
 const lomoSaltado = require("./recipes/lomo-saltado");
 const macaroniSalad = require("./recipes/macaroni-salad");
@@ -639,7 +638,6 @@ const recipes = [
     bakedChickenDrumsticks,
     bakedLemonChicken,
     sloppyJoes,
-    lentilSloppyJoes,
     hoboDinner,
     chickenMcNuggets,
     bigMac,

@@ -10,7 +10,7 @@ const limone9 = '../assets/Products/pasta-al-limone-9.jpeg';
 const limone10 = '../assets/Products/pasta-al-limone-10.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BLACK_PEPPER, FETTUCCINE_NOODLES, HEAVY_CREAM, LEMON_JUICE, LEMON_ZEST, PARMIGIANO_REGGIANO, SALT, UNSALTED_BUTTER } = require('./ingredients');
+const { BLACK_PEPPER, FETTUCCINE_NOODLES, HEAVY_CREAM, LARGE_PAN, LEMON_JUICE, LEMON_ZEST, PARMIGIANO_REGGIANO, SALT, SAUCEPAN, STOVE, UNSALTED_BUTTER } = require('./ingredients');
 
 const COMBINE = 'Combine';
 
@@ -54,11 +54,11 @@ module.exports = {
         { ...SALT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pan' },
-        { name: 'saucepan' },
+        LARGE_PAN,
+        SAUCEPAN,
     ],
     directions: [
         { step: `Over medium heat, add butter, lemon juice and lemon zest to a large pan. Stir occasionally.`, section: SECTIONS.COOK_SAUCE, img: limone1 },

@@ -23,7 +23,7 @@ const cookie22 = '../assets/Products/sugar-cookies-22.jpeg';
 const cookie23 = '../assets/Products/sugar-cookies-23.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, ALMOND_EXTRACT, BAKING_SODA, CONFECTIONERS_SUGAR, CRYSTAL_SUGAR, EGG, MERINGUE_POWDER, ROOM_TEMPERATURE_WATER, SALT, SPRINKLES, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, ALMOND_EXTRACT, BAKING_SHEET, BAKING_SODA, CONFECTIONERS_SUGAR, COOKIE_CUTTERS, COOLING_RACK, CRYSTAL_SUGAR, EGG, KNIFE, MEDIUM_BOWL, MERINGUE_POWDER, OVEN, ROLLING_PIN, ROOM_TEMPERATURE_WATER, SALT, SILICONE_BAKING_MAT, SPRINKLES, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
 const DRY_INGREDIENTS = 'Dry Ingredients';
 const WET_BATTER = 'Wet Batter';
@@ -75,17 +75,17 @@ module.exports = {
         { ...CRYSTAL_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.DECORATION },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'stand mixer' },
-        { name: 'medium bowl' },
-        { name: 'silicon baking mats' },
-        { name: 'baking sheets' },
-        { name: 'rolling pin' },
-        { name: 'cookie cutters' },
-        { name: 'knife' },
-        { name: 'cooling rack' },
+        STAND_MIXER,
+        MEDIUM_BOWL,
+        SILICONE_BAKING_MAT,
+        BAKING_SHEET,
+        ROLLING_PIN,
+        COOKIE_CUTTERS,
+        KNIFE,
+        COOLING_RACK,
     ],
     directions: [
         { step: `In medium bowl, combine the "Dry Ingredients" together.`, section: DRY_INGREDIENTS, img: cookie1 },

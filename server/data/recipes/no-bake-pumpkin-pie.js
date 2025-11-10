@@ -6,7 +6,7 @@ const pie5 = '../assets/Products/no-bake-pumpkin-pie-5.jpeg';
 const pie6 = '../assets/Products/no-bake-pumpkin-pie-6.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { CREAM_CHEESE, GRAHAM_CRACKER_PIE_CRUST, MILK, PUMPKIN_PIE_SPICE, PUMPKIN_PUREE, SEMI_SWEET_CHOCOLATE_BAR, VANILLA_EXTRACT, VANILLA_INSTANT_PUDDING_MIX, WHIPPED_TOPPING, WHITE_SUGAR } = require('./ingredients');
+const { CREAM_CHEESE, ELECTRIC_MIXER, GRAHAM_CRACKER_PIE_CRUST, MILK, PIE_PAN, PUMPKIN_PIE_SPICE, PUMPKIN_PUREE, SEMI_SWEET_CHOCOLATE_BAR, SPATULA, STAND_MIXER, VANILLA_EXTRACT, VANILLA_INSTANT_PUDDING_MIX, WHIPPED_TOPPING, WHITE_SUGAR } = require('./ingredients');
 
 const PUMPKIN_PUREE_FILLING_SECTION = 'Pumpkin Puree Filling';
 const CREAM_CHEESE_LAYER_SECTION = 'Cream Cheese Layer';
@@ -54,11 +54,12 @@ module.exports = {
         { ...SEMI_SWEET_CHOCOLATE_BAR, amount: '', unit: '', additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stand or hand mixer' },
+        STAND_MIXER,
+        ELECTRIC_MIXER,
     ],
     supplies: [
-        { name: 'pie pan' },
-        { name: 'spatula' },
+        PIE_PAN,
+        SPATULA,
     ],
     directions: [
         { step: `In a mixing bowl or stand mixer, combine the pudding mix and milk. Mix.`, section: CREATE_PUMPKIN_PUREE_LAYER },

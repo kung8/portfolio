@@ -9,7 +9,7 @@ const stew8 = '../assets/Products/yors-stew-8.jpeg';
 const stew9 = '../assets/Products/yors-stew-9.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BLACK_PEPPER, CARROT, CHICKEN_BOUILLON, CORNSTARCH, EGG, FENNEL_SEEDS, GARLIC, HOT_DOG, PAPRIKA, PORK_BUTT, POTATO, RED_BELL_PEPPER, RED_WINE, SALT, SOUR_CREAM, SWEET_ONION, VEGETABLE_OIL, WATER } = require('./ingredients');
+const { BLACK_PEPPER, CARROT, CHICKEN_BOUILLON, CORNSTARCH, EGG, FENNEL_SEEDS, GARLIC, HOT_DOG, PAPRIKA, PORK_BUTT, POTATO, RED_BELL_PEPPER, RED_WINE, SALT, SOUR_CREAM, SWEET_ONION, VEGETABLE_OIL, WATER, STOVE, LARGE_POT, FRYING_PAN } = require('./ingredients');
 
 const SEARING_SECTION = 'Searing';
 const CARAMELIZED_ONION_SECTION = 'Caramelized Onion';
@@ -73,11 +73,11 @@ module.exports = {
         { ...HOT_DOG, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'frying pan' },
+        LARGE_POT,
+        FRYING_PAN,
     ],
     directions: [
         { step: `Over medium heat, heat oil in a large pot.`, section: SEAR_PORK },

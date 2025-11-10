@@ -2,10 +2,12 @@ const parfait1 = '../assets/Products/parfait-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BERRY,
+    BOWL,
     CASHEWS,
     GRANOLA,
     HONEY,
     PLAIN_YOGURT,
+    SPOON,
     VANILLA_EXTRACT,
 } = require('./ingredients');
 
@@ -43,8 +45,8 @@ module.exports = {
         { ...CASHEWS, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
     ],
     supplies: [
-        { name: 'bowl' },
-        { name: 'spoon' },
+        BOWL,
+        SPOON,
     ],
     directions: [
         { step: `Fill a bowl with yogurt.`, section: PREP_PARFAIT },

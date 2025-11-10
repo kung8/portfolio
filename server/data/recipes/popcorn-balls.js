@@ -8,7 +8,7 @@ const balls7 = '../assets/Products/popcorn-balls-7.jpeg';
 const balls8 = '../assets/Products/popcorn-balls-8.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { COOKING_SPRAY, CORN_SYRUP, MINI_MARSHMALLOWS, POPCORN, POWDERED_SUGAR, UNSALTED_BUTTER, WATER } = require('./ingredients');
+const { COOKING_SPRAY, CORN_SYRUP, LARGE_POT, MINI_MARSHMALLOWS, MIXING_BOWL, PLASTIC_WRAP, POPCORN, POWDERED_SUGAR, STOVE, UNSALTED_BUTTER, WATER } = require('./ingredients');
 
 const POPCORN_SECTION = 'Popcorn';
 const SUGAR_MIXTURE_SECTION = 'Sugar Mixture';
@@ -52,12 +52,12 @@ module.exports = {
         { ...COOKING_SPRAY, amount: '', unit: '', additionalDetails: '', section: POPCORN_BALL_SECTION },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pot' },
-        { name: 'large mixing bowl' },
-        { name: 'plastic wrap or sandwich ziploc bag' },
+        LARGE_POT,
+        MIXING_BOWL,
+        PLASTIC_WRAP,
     ],
     directions: [
         { step: `Prepare a baking sheet and line with parchment paper before beginning to cook.`, section: SECTIONS.PREP_PAN },

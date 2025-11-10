@@ -7,6 +7,7 @@ const {
     KALE,
     PEANUT_BUTTER,
     PLAIN_YOGURT,
+    BLENDER,
 } = require('./ingredients');
 
 const SMOOTHIE_SECTION = 'Smoothie';
@@ -44,7 +45,7 @@ module.exports = {
         { ...ALMOND_MILK, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SMOOTHIE_SECTION },
     ],
     appliances: [
-        { name: 'blender' },
+        BLENDER,
     ],
     directions: [
         { step: `Place bananas at the bottom on the blender.`, section: PREP_SMOOTHIE },

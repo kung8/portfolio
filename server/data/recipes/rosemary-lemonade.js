@@ -7,7 +7,7 @@ const lemonade6 = '../assets/Products/rosemary-lemonade-6.jpeg';
 const lemonade7 = '../assets/Products/rosemary-lemonade-7.jpeg';
 
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { FRESH_ROSEMARY, HONEY, ICE, LEMON, LEMON_JUICE, WATER, WHITE_SUGAR } = require('./ingredients');
+const { FRESH_ROSEMARY, HONEY, ICE, LEMON, LEMON_JUICE, PITCHER, SAUCEPAN, STOVE, WATER, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
     cardName: 'Rosemary Lemonade',
@@ -43,11 +43,11 @@ module.exports = {
         { ...FRESH_ROSEMARY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'saucepan' },
-        { name: 'pitcher' },
+        SAUCEPAN,
+        PITCHER,
     ],
     directions: [
         { step: `Over medium-high heat, heat 2 cups of water in a saucepan. Bring to a boil.`, section: SECTIONS.MAIN, img: lemonade1 },

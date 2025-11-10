@@ -1,6 +1,6 @@
 const butter1 = '../assets/Products/garlic-butter-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { CHIVE, GARLIC, LEMON_JUICE, PARSLEY, UNSALTED_BUTTER } = require('./ingredients');
+const { CHIVE, GARLIC, LEMON_JUICE, PARSLEY, UNSALTED_BUTTER, MEDIUM_BOWL } = require('./ingredients');
 
 const GARLIC_BUTTER = 'Garlic Butter';
 
@@ -36,7 +36,7 @@ module.exports = {
         { ...LEMON_JUICE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: GARLIC_BUTTER },
     ],
     supplies: [
-        { name: 'medium bowl' },
+        MEDIUM_BOWL,
     ],
     directions: [
         { step: `In a medium bowl, combine the "${GARLIC_BUTTER}" section ingredients.`, section: SECTIONS.MIX },

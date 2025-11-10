@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ANGEL_HAIR_PASTA, BALSAMIC_VINEGAR, BASIL_LEAF, BLACK_PEPPER, CHICKEN_BROTH, GARLIC, OLIVE_OIL, PARMESAN_CHEESE, RED_PEPPER_FLAKES, ROMA_TOMATO, YELLOW_ONION } = require('./ingredients');
+const { ANGEL_HAIR_PASTA, BALSAMIC_VINEGAR, BASIL_LEAF, BLACK_PEPPER, CHICKEN_BROTH, FRYING_PAN, GARLIC, OLIVE_OIL, PARMESAN_CHEESE, POT, RED_PEPPER_FLAKES, ROMA_TOMATO, STOVE, YELLOW_ONION } = require('./ingredients');
 
 module.exports = {
     wip: true,
@@ -40,11 +40,11 @@ module.exports = {
         { ...PARMESAN_CHEESE, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'pot' },
-        { name: 'frying pan' },
+        POT,
+        FRYING_PAN,
     ],
     directions: [
         { step: `Bring a pot of water and salt to a boil.`, section: SECTIONS.COOK_PASTA },

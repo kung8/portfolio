@@ -1,6 +1,6 @@
 // const example1 = '../assets/Products/example-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { EGG_YOLK, SAUCEPAN, STAND_MIXER, STOVE, VANILLA_BEAN, WHITE_SUGAR, WHOLE_MILK, WOODEN_SPOON } = require('./ingredients');
+const { EGG_YOLK, SAUCEPAN, STAND_MIXER, STOVE, VANILLA_BEAN, WHITE_SUGAR, WHOLE_MILK, WOODEN_SPOON, ICE_CREAM_MAKER } = require('./ingredients');
 
 const GELATO_SECTION = 'Gelato';
 const FREEZING = 'Freezing';
@@ -38,7 +38,7 @@ module.exports = {
     appliances: [
         STOVE,
         STAND_MIXER,
-        { name: 'ice cream maker' },
+        ICE_CREAM_MAKER,
     ],
     supplies: [
         SAUCEPAN,

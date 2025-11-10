@@ -5,7 +5,7 @@ const roll4 = '../assets/Products/turkey-roll-up-4.jpeg';
 const roll5 = '../assets/Products/turkey-roll-up-5.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { CRANBERRY_SAUCE, CREAM_CHEESE, FLOUR_TORTILLA, PROVOLONE_CHEESE, ROMAINE_LETTUCE, SLICER_TOMATO, TURKEY } = require('./ingredients');
+const { CRANBERRY_SAUCE, CREAM_CHEESE, CUTTING_BOARD, FLOUR_TORTILLA, KNIFE, MEDIUM_BOWL, PROVOLONE_CHEESE, ROMAINE_LETTUCE, SLICER_TOMATO, TURKEY } = require('./ingredients');
 
 module.exports = {
     cardName: 'Turkey Roll Ups',
@@ -40,9 +40,9 @@ module.exports = {
         { ...SLICER_TOMATO, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'halved and sliced', section: SECTIONS.ASSEMBLE },
     ],
     supplies: [
-        { name: 'medium bowl' },
-        { name: 'cutting board' },
-        { name: 'knife' },
+        MEDIUM_BOWL,
+        CUTTING_BOARD,
+        KNIFE,
     ],
     directions: [
         { step: `In a medium bowl, combine cream cheese and cranberry sauce.`, section: SECTIONS.ASSEMBLE, img: roll1 },

@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BREADCRUMBS, COOLING_RACK, EGG, FRYING_PAN, MILK, PAPER_TOWELS, PIZZA_SAUCE, SHALLOW_BOWL, STOVE, STRING_CHEESE, VEGETABLE_OIL } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BREADCRUMBS, COOLING_RACK, EGG, FRYING_PAN, MILK, PAPER_TOWELS, PIZZA_SAUCE, STOVE, STRING_CHEESE, VEGETABLE_OIL, SMALL_BOWL } = require('./ingredients');
 
 const EGG_DREDGE_STATION = 'Egg Dredge Station';
 const FLOUR_DREDGE_STATION = 'Flour Dredge Station';
@@ -47,7 +47,7 @@ module.exports = {
         STOVE,
     ],
     supplies: [
-        { ...SHALLOW_BOWL, amount: 3 },
+        { ...SMALL_BOWL, amount: 3 },
         BAKING_SHEET,
         PAPER_TOWELS,
         COOLING_RACK,

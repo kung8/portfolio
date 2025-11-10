@@ -1,12 +1,15 @@
 const hamburger1 = '../assets/Products/hamburger-1.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
+    ALUMINUM_FOIL,
     BREADCRUMBS,
     CHEDDAR_CHEESE,
     EGG,
     GROUND_TURKEY,
     HAMBURGER_BUNS,
+    MIXING_BOWL,
     MUSHROOM,
+    OVEN,
     PICKLES,
     RED_ONION,
     ROMA_TOMATO,
@@ -52,11 +55,11 @@ module.exports = {
         { ...MUSHROOM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'aluminum foil' },
-        { name: 'large mixing bowl' },
+        ALUMINUM_FOIL,
+        MIXING_BOWL,
     ],
     directions: [
         { step: `Preheat oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },

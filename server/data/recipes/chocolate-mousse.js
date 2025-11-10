@@ -29,6 +29,13 @@ const {
     SEMI_SWEET_CHOCOLATE_CHIPS,
     UNSALTED_BUTTER,
     WHITE_SUGAR,
+    MICROWAVE,
+    MIXER,
+    MIXING_BOWL,
+    SMALL_BOWL,
+    SPATULA,
+    SERVING_BOWL,
+    WHISK,
 } = require('./ingredients');
 
 const CHOCOLATE = 'Chocolate';
@@ -74,15 +81,15 @@ module.exports = {
         { ...RASPBERRY, amount: '', unit: '', additionalDetails: 'washed', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'microwave' },
-        { name: 'mixer' },
+        MICROWAVE,
+        MIXER,
     ],
     supplies: [
-        { name: '2 mixing bowls' },
-        { name: '2 small bowls' },
-        { name: 'spatula' },
-        { name: 'whisk' },
-        { name: 'serving bowls or cups' },
+        {...MIXING_BOWL, amount: 2 },
+        { ...SMALL_BOWL, amount: 2 },
+        SPATULA,
+        WHISK,
+        SERVING_BOWL,
     ],
     directions: [
         { step: `Break up dark cooking chocolate bar into pieces and place in a microwavable bowl.`, section: CHOCOLATE, img: mousse1 },

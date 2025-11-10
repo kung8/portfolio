@@ -15,7 +15,7 @@ const thigh14 = '../assets/Products/pan-fried-chicken-thigh-14.jpeg';
 const thigh15 = '../assets/Products/pan-fried-chicken-thigh-15.jpeg';
 // const thigh16 = '../assets/Products/pan-fried-chicken-thigh-16.jpeg';
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BLACK_PEPPER, CHICKEN_THIGH, GARLIC, RED_WINE, ROSEMARY, SALT, UNSALTED_BUTTER, WHIPPED_CREAM } = require('./ingredients');
+const { BLACK_PEPPER, CHICKEN_THIGH, FRYING_PAN, GARLIC, PLATE, RED_WINE, ROSEMARY, SALT, SPATULA, STOVE, UNSALTED_BUTTER, WHIPPED_CREAM } = require('./ingredients');
 
 module.exports = {
     cardName: 'Pan-Fried Chicken Thighs',
@@ -51,12 +51,12 @@ module.exports = {
         { ...ROSEMARY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'frying pan' },
-        { name: 'spatula' },
-        { name: 'plate' },
+        FRYING_PAN,
+        SPATULA,
+        PLATE,
     ],
     directions: [
         { step: `Over medium-high heat, heat butter in frying pan.`, section: SECTIONS.CHICKEN, img: thigh1 },

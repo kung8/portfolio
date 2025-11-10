@@ -6,7 +6,7 @@ const starter5 = '../assets/Products/sourdough-starter-5.jpeg';
 const starter6 = '../assets/Products/sourdough-starter-6.jpeg';
 const starter7 = '../assets/Products/sourdough-starter-7.jpeg';
 
-const { ALL_PURPOSE_FLOUR, WATER } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, WATER, CHEESECLOTH, GLASS_JAR } = require('./ingredients');
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 
 const CREATING_STARTER = 'Creating Starter';
@@ -40,8 +40,8 @@ module.exports = {
         { ...WATER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: FEEDING_STARTER },
     ],
     supplies: [
-        { name: 'jar' },
-        { name: 'cheesecloth' },
+        GLASS_JAR,
+        CHEESECLOTH,
     ],
     directions: [
         { step: `In a jar, combine 1 cup of flour and 1/2 c of warm water until mixed. Make sure there are no lumps.`, section: CREATING_STARTER },

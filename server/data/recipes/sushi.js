@@ -17,6 +17,10 @@ const {
     WASABI,
     WHITE_SUGAR,
     WHITE_VINEGAR,
+    CUTTING_BOARD,
+    KNIFE,
+    PLATE,
+    SUSHI_MAT,
 } = require('./ingredients');
 
 module.exports = {
@@ -63,10 +67,10 @@ module.exports = {
         { ...LIGHT_SOY_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     supplies: [
-        { name: 'cutting board' },
-        { name: 'knife' },
-        { name: 'sushi mat' },
-        { name: 'plates' },
+        CUTTING_BOARD,
+        KNIFE,
+        SUSHI_MAT,
+        PLATE,
     ],
     directions: [
         { step: `Mix in sugar, salt, and vinegar until sugar dissolves.`, section: SECTIONS.RICE },

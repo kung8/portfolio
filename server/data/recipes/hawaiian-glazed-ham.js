@@ -1,12 +1,8 @@
 const ham1 = '../assets/Products/hawaiian-glazed-ham-1.jpeg';
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BONE_IN_HAM, BROWN_SUGAR, CANNED_PINEAPPLE_SLICES, MARASCHINO_CHERRIES, YELLOW_MUSTARD } = require('./ingredients');
+const { BASTER, BONE_IN_HAM, BROWN_SUGAR, CANNED_PINEAPPLE_SLICES, MARASCHINO_CHERRIES, OVEN, ROASTING_PAN, TOOTHPICK, YELLOW_MUSTARD } = require('./ingredients');
 
 const HAM_SECTION = 'Ham';
-
-const PREP_OVEN = 'Prep Oven';
-const PREP_HAM = 'Prep Ham';
-const BAKE_HAM = 'Bake Ham';
 
 module.exports = {
     cardName: 'Hawaiian Glazed Ham',
@@ -40,12 +36,12 @@ module.exports = {
         { ...MARASCHINO_CHERRIES, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'pitted and stemless', section: HAM_SECTION },
     ],
     appliances: [
-        { name: 'oven' },
+        OVEN,
     ],
     supplies: [
-        { name: 'roasting pan' },
-        { name: 'toothpicks' },
-        { name: 'baster' },
+        ROASTING_PAN,
+        TOOTHPICK,
+        BASTER,
     ],
     directions: [
         { step: `Preheat the oven to 325ºF.`, section: SECTIONS.PREHEAT_OVEN },

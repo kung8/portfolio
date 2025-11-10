@@ -7,7 +7,7 @@ const curry6 = '../assets/Products/yellow-curry-6.jpeg';
 const curry7 = '../assets/Products/yellow-curry-7.jpeg';
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, BROWN_SUGAR, CARROT, CILANTRO, COCONUT_MILK, CORNSTARCH, FISH_SAUCE, GARLIC, GINGER, LIME_JUICE, OLIVE_OIL, SRIRACHA_SAUCE, YELLOW_CURRY_PASTE, YELLOW_ONION, YUKON_GOLD_POTATO } = require('./ingredients');
+const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, BROWN_SUGAR, CARROT, CILANTRO, COCONUT_MILK, CORNSTARCH, FISH_SAUCE, GARLIC, GINGER, LIME_JUICE, OLIVE_OIL, SRIRACHA_SAUCE, YELLOW_CURRY_PASTE, YELLOW_ONION, YUKON_GOLD_POTATO, POT, STOVE } = require('./ingredients');
 
 const YELLOW_CURRY_SECTION = 'Yellow Curry';
 const MAKE_CURRY = 'Make Curry';
@@ -54,10 +54,10 @@ module.exports = {
         { ...SRIRACHA_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'pot' },
+        POT,
     ],
     directions: [
         { step: `Over medium-low heat, heat oil in a large pot.`, section: MAKE_CURRY },

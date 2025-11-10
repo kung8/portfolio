@@ -17,7 +17,7 @@ const roast15 = '../assets/Products/roasted-pork-belly-15.jpeg';
 const fiveSpicePowder = '../assets/Products/five-spices-blend-3.jpeg';
 
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { EGG_WHITES, HOISIN_SAUCE, PORK_BELLY, SALT, SHAOXING_WINE, VEGETABLE_OIL, WHITE_PEPPER, WHITE_SUGAR, WHITE_VINEGAR } = require('./ingredients');
+const { AIR_FRYER, ALUMINUM_FOIL, BASTING_BRUSH, EGG_WHITES, FORK, HOISIN_SAUCE, KNIFE, PORK_BELLY, SALT, SHAOXING_WINE, SMALL_BOWL, VEGETABLE_OIL, WHITE_PEPPER, WHITE_SUGAR, WHITE_VINEGAR } = require('./ingredients');
 
 const PORK_BELLY_SECTION = 'Pork Belly';
 const RUB_SECTION = 'Spices';
@@ -67,14 +67,14 @@ module.exports = {
 
     ],
     appliances: [
-        { name: 'air fryer' },
+        AIR_FRYER,
     ],
     supplies: [
-        { name: 'fork' },
-        { name: 'knife' },
-        { name: '3 small bowls' },
-        { name: 'aluminum foil' },
-        { name: 'cooking brush' },
+        FORK,
+        KNIFE,
+        { ...SMALL_BOWL, amount: 3 },
+        ALUMINUM_FOIL,
+        BASTING_BRUSH,
     ],
     directions: [
         { step: `Pat the pork belly dry with paper towels.`, section: PREP_PORK_BELLY },

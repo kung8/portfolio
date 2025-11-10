@@ -7,7 +7,7 @@ const mochi6 = '../assets/Products/easy-mochi-6.jpeg';
 const mochi7 = '../assets/Products/easy-mochi-7.jpeg';
 
 const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { CORNSTARCH, ICE_CREAM, MOCHIKO } = require('./ingredients');
+const { CORNSTARCH, ICE_CREAM, MOCHIKO, MICROWAVE, MIXING_BOWL, PLASTIC_WRAP, SPATULA } = require('./ingredients');
 
 const MOCHI_SECTION = 'Mochi';
 const DUSTING_SECTION = 'Dusting';
@@ -33,11 +33,11 @@ module.exports = {
     cookTime: { amount: 3, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
-        { 
-            label: 'Mochi', 
+        {
+            label: 'Mochi',
             link: 'https://parade.com/food/two-ingredient-mochi',
             authors: ['Kat Lieu'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -46,12 +46,12 @@ module.exports = {
         { ...CORNSTARCH, amount: '', unit: '', additionalDetails: 'dusting and needed', section: DUSTING_SECTION },
     ],
     appliances: [
-        { name: 'microwave' },
+        MICROWAVE,
     ],
     supplies: [
-        { name: 'glass mixing bowl' },
-        { name: 'plastic wrap' },
-        { name: 'spatula' },
+        { ...MIXING_BOWL, additionalDetails: 'microwavable' },
+        PLASTIC_WRAP,
+        SPATULA,
     ],
     directions: [
         { step: `In a glass mixing bowl, let ice cream completely melt at room temperature (about 1 hour).`, section: MELT_ICE_CREAM, img: mochi1 },

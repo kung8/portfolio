@@ -16,6 +16,10 @@ const {
     WORCESTERSHIRE_SAUCE,
     YELLOW_MUSTARD,
     YELLOW_ONION,
+    STOVE,
+    LARGE_PAN,
+    SPATULA,
+    SMALL_PAN,
 } = require('./ingredients');
 
 module.exports = {
@@ -60,12 +64,12 @@ module.exports = {
         { ...HAMBURGER_BUNS, amount: 4, unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'large pan' },
-        { name: 'spatula' },
-        { name: 'small pan' },
+        LARGE_PAN,
+        SPATULA,
+        SMALL_PAN,
     ],
     directions: [
         { step: `In a bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },

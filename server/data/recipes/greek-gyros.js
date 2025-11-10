@@ -32,11 +32,11 @@ module.exports = {
     cookTime: { amount: 6, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 3, unit: TIME_UNITS.HOUR },
     websites: [
-        { 
-            label: 'Greek Gyros', 
+        {
+            label: 'Greek Gyros',
             link: 'https://www.recipetineats.com/greek-chicken-gyros-with-tzatziki/',
             authors: ['Nagi Maehashi'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [

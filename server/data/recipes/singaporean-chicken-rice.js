@@ -20,6 +20,11 @@ const {
     SRIRACHA_SAUCE,
     TURMERIC,
     WHITE_SUGAR,
+    STOVE,
+    POT,
+    BOWL,
+    CUTTING_BOARD,
+    KNIFE,
 } = require('./ingredients');
 
 const CHILI_SAUCE = 'Chili Sauce';
@@ -41,11 +46,11 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Singaporean Chicken Rice', 
+        {
+            label: 'Singaporean Chicken Rice',
             link: 'https://www.youtube.com/shorts/yYKQK5_80p0',
             authors: ['Douglas Chau'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -68,13 +73,13 @@ module.exports = {
         { ...ROMA_TOMATO, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
-        { name: 'stove' },
+        STOVE,
     ],
     supplies: [
-        { name: 'pot with lid' },
-        { name: 'bowl' },
-        { name: 'cutting board' },
-        { name: 'knife' },
+        { ...POT, additionalDetails: 'with lid' },
+        BOWL,
+        CUTTING_BOARD,
+        KNIFE,
     ],
     directions: [
         { step: `Marinade the chicken thigh with salt and sesame oil.`, section: SECTIONS.CHICKEN },
