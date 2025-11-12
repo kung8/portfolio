@@ -1,6 +1,13 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BAKING_PAN, BLACK_PEPPER, OVEN, SALMON_FISH, SALT } = require('./ingredients');
+const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS, ALLERGIES } = require('./constants');
+const { BAKING_PAN, BLACK_PEPPER, OVEN, SALMON_FISH, SALT, SHALLOT, RED_WINE_VINEGAR, CAPER, PARSLEY, SLICED_ALMONDS, OLIVE_OIL } = require('./ingredients');
+
+const SALMON_SECTION = 'Salmon';
+const SHALLOT_MARINADE_SECTION = 'Shallot Marinade';
+const CAPER_MIXTURE_SECTION = 'Caper Mixture';
+
+const MARINATE_SHALLOTS = 'Marinate Shallots';
+const ASSEMBLE_SALSA = 'Assemble Salsa';
 
 module.exports = {
     wip: true,
@@ -14,12 +21,12 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.FISH],
     type: [TYPES.PROTEIN, TYPES.MAIN_COURSE],
-    allergies: [],
-    diet: [],
-    yields: { amount: '', unit: '' },
-    prepTime: { amount: '', unit: '' },
-    cookTime: { amount: '', unit: '' },
-    waitTime: { amount: '', unit: '' },
+    allergies: [ALLERGIES.FISH],
+    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
+    yields: { amount: 4, unit: YIELD_UNITS.SERVING },
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
         {
             label: 'Oven Baked Salmon',
@@ -29,9 +36,19 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...SALMON_FISH, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'cut into 4 pieces', section: '' },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: '' },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: '' },
+        { ...SALMON_FISH, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'cut into 4 pieces', section: SALMON_SECTION },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SALMON_SECTION },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SALMON_SECTION },
+
+        { ...SHALLOT, amount: 1, unit: '', additionalDetails: 'minced', section: SHALLOT_MARINADE_SECTION },
+        { ...RED_WINE_VINEGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SHALLOT_MARINADE_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SHALLOT_MARINADE_SECTION },
+
+        { ...CAPER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'rinsed and chopped', section: CAPER_MIXTURE_SECTION },
+        { ...PARSLEY, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: CAPER_MIXTURE_SECTION },
+        { ...SLICED_ALMONDS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: CAPER_MIXTURE_SECTION },
+
+        { ...OLIVE_OIL, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.OIL },
     ],
     appliances: [
         OVEN,
@@ -46,6 +63,11 @@ module.exports = {
         { step: `In a baking pan, place salmon skin side down.`, section: SECTIONS.PREP_FISH },
 
         { step: `Bake until salmon is cooked through (about 12 to 15 minutes).`, section: SECTIONS.BAKE },
+
+        { step: `In a small bowl, combine "${SHALLOT_MARINADE_SECTION}" section ingredients.`, section: MARINATE_SHALLOTS },
+        { step: `Let it marinate for 30 minutes.`, section: MARINATE_SHALLOTS },
+        { step: `Add the "${CAPER_MIXTURE_SECTION}" section ingredients to the marinated shallots.`, section: ASSEMBLE_SALSA },
+        { step: `Add olive oil. Mix. Taste and adjust seasonings.`, section: ASSEMBLE_SALSA },
 
         { step: `Enjoy this simple dish with your favorite sides and grain.`, section: SECTIONS.SERVE },
     ],
