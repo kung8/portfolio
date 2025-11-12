@@ -24,6 +24,8 @@ export const IngredientsHeader = () => {
                 <span
                     className={`add-to-list-button ${selectedIngredients.length > 0 ? 'active' : ''} ${getRecipeFontSizeClass()}`}
                     onClick={() => {
+                        if (selectedIngredients.length === 0) return;
+
                         // ensure that the selectedIngredients has the converted amount
                         const newSelectedIngredients = selectedIngredients.map((selectedIngredient) => {
                             const selectedIngredientId = selectedIngredient.id;

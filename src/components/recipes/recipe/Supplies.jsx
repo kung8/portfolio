@@ -55,6 +55,7 @@ export const Supplies = () => {
                     <span
                         className={`add-to-list-button ${selectedSupplies.length > 0 ? 'active' : ''} ${getRecipeFontSizeClass()}`}
                         onClick={async () => {
+                            if (selectedSupplies.length === 0) return;
                             // update the selectedSupplies
                             const newSelectedSupplies = selectedSupplies.map((supply) => supply);
                             setSelectedSupplies(newSelectedSupplies);
