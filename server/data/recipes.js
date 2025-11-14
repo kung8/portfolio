@@ -780,3 +780,4 @@ module.exports = recipes;
 // TODO: add timer clock per step to indicate how long each step takes
 // TODO: add checkmark state for each step to allow users to track progress through recipe
 // TODO: add user notes section for each recipe to allow users to add their own notes and modifications
+// TODO: style the upload text color
