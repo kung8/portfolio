@@ -55,11 +55,11 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Chicken Katsu', 
+        {
+            label: 'Chicken Katsu',
             link: 'https://www.justonecookbook.com/chicken-katsu/',
             authors: ['Namiko Hirasawa Chen'],
-            finder: 'Aldin Pope', 
+            finder: 'Aldin Pope',
         }
     ],
     ingredients: [
@@ -114,10 +114,14 @@ module.exports = {
         },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 375ºF until heated through (about 10 to 15 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Air fry at 375ºF until heated through (about 4 to 5 minutes). Flip halfway through.',
+        },
     ],
     mealPrep: true,
 }

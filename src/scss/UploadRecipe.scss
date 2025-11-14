@@ -1,0 +1,265 @@
+.upload-recipe {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .method-selection {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+
+        h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .method-options {
+            display: flex;
+            gap: 20px;
+
+            label {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: 10px 15px;
+                background-color: white;
+                border: 2px solid #ddd;
+                border-radius: 6px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    border-color: #007bff;
+                }
+
+                input[type="radio"] {
+                    margin-right: 8px;
+                }
+
+                input[type="radio"]:checked + label,
+                &:has(input[type="radio"]:checked) {
+                    border-color: #007bff;
+                    background-color: #e3f2fd;
+                }
+            }
+        }
+    }
+
+    .image-upload-section,
+    .website-scrape-section {
+        margin-bottom: 30px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: white;
+
+        h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .file-upload {
+            margin-bottom: 20px;
+
+            input[type="file"] {
+                width: 100%;
+                padding: 10px;
+                border: 2px dashed #ddd;
+                border-radius: 6px;
+                background-color: #fafafa;
+                cursor: pointer;
+
+                &:hover {
+                    border-color: #007bff;
+                }
+            }
+
+            .file-preview {
+                margin-top: 15px;
+                padding: 15px;
+                background-color: #f8f9fa;
+                border-radius: 6px;
+
+                p {
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                }
+
+                img {
+                    border-radius: 6px;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                }
+            }
+        }
+
+        .url-input {
+            margin-bottom: 20px;
+
+            input[type="url"] {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ddd;
+                border-radius: 6px;
+                font-size: 16px;
+
+                &:focus {
+                    outline: none;
+                    border-color: #007bff;
+                    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+                }
+            }
+        }
+    }
+
+    .upload-btn,
+    .scrape-btn,
+    .generate-btn,
+    .cancel-btn {
+        padding: 12px 24px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    }
+
+    .upload-btn,
+    .scrape-btn,
+    .generate-btn {
+        background-color: #007bff;
+        color: white;
+
+        &:hover:not(:disabled) {
+            background-color: #0056b3;
+        }
+    }
+
+    .cancel-btn {
+        background-color: #6c757d;
+        color: white;
+        margin-left: 10px;
+
+        &:hover:not(:disabled) {
+            background-color: #545b62;
+        }
+    }
+
+    .loading {
+        text-align: center;
+        padding: 30px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        margin: 20px 0;
+
+        p {
+            color: #666;
+            font-style: italic;
+        }
+    }
+
+    .extracted-data {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+
+        h3 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .recipe-preview {
+            background-color: white;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+
+            .recipe-header {
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #eee;
+
+                h4 {
+                    color: #333;
+                    margin-bottom: 10px;
+                    font-size: 1.5em;
+                }
+
+                p {
+                    margin: 5px 0;
+                    color: #666;
+                }
+            }
+
+            .ingredients-preview,
+            .directions-preview,
+            .appliances-preview,
+            .supplies-preview {
+                margin-bottom: 20px;
+
+                h5 {
+                    color: #333;
+                    margin-bottom: 10px;
+                    font-size: 1.2em;
+                }
+
+                ul, ol {
+                    margin-left: 20px;
+
+                    li {
+                        margin-bottom: 5px;
+                        color: #555;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .upload-recipe {
+        padding: 15px;
+
+        .method-selection .method-options {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .extracted-data .action-buttons {
+            flex-direction: column;
+            align-items: center;
+
+            .cancel-btn {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}

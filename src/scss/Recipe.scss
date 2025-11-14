@@ -597,7 +597,36 @@
                 }
             }
 
+            .supply-label {
+                display: inline;
+                cursor: pointer;
+            }
+
             .checkbox-supply-label {
+                &.font-size-extra-large {
+                    font-size: 24px;
+                }
+
+                &.font-size-large {
+                    font-size: 20px;
+                }
+
+                &.font-size-medium {
+                    font-size: 18px;
+                }
+
+                &.font-size-small {
+                    font-size: 16px;
+                }
+
+                &.font-size-extra-small {
+                    font-size: 14px;
+                }
+            }
+
+            .supply-additional-details {
+                color: theme.$darkgrey;
+
                 &.font-size-extra-large {
                     font-size: 24px;
                 }

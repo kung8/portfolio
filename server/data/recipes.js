@@ -2,7 +2,7 @@ const almondCroissantCookieBars = require("./recipes/almond-croissant-cookie-bar
 const americanOmelette = require("./recipes/american-omelette");
 const antsOnALog = require("./recipes/ants-on-a-log");
 const appleCiderHawaiianRollDonuts = require('./recipes/apple-cider-hawaiian-roll-donuts.js');
-const appleDumpCake = require('./recipes/apple-dump-cake.js'); // TODO: finish adding recipe
+const appleDumpCake = require('./recipes/apple-dump-cake.js');
 const appleDumplings = require('./recipes/apple-dumplings.js'); // TODO: finish adding recipe
 const applePie = require("./recipes/apple-pie");
 const appleTart = require("./recipes/apple-tart");
@@ -152,6 +152,7 @@ const frenchBaguettes = require("./recipes/french-baguettes");
 const frenchCrepe = require("./recipes/french-crepe");
 const frenchOnionSoupGratinee = require("./recipes/french-onion-soup-gratinee");
 const frenchToast = require("./recipes/french-toast");
+const friedChickenWithCrystalHotHoney = require('./recipes/fried-chicken-with-crystal-hot-honey');
 const frozenMudPie = require("./recipes/frozen-mud-pie");
 const gaiLanWithOysterSauce = require('./recipes/gai-lan-with-oyster-sauce.js');
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
@@ -249,7 +250,7 @@ const paoDeQueijo = require("./recipes/pao-de-queijo");
 const parfait = require("./recipes/parfait");
 const pastaAlLimone = require("./recipes/pasta-al-limone");
 const pastaPomodoro = require("./recipes/pasta-pomodoro");
-const pastaSalad = require('./recipes/pasta-salad.js'); // TODO: finish adding recipe
+const pastaSalad = require('./recipes/pasta-salad.js');
 const peachCobbler = require("./recipes/peach-cobbler");
 const peanutBrittle = require("./recipes/peanut-brittle");
 const peanutButterCookies = require("./recipes/peanut-butter-cookies");
@@ -589,6 +590,7 @@ const recipes = [
     butteredCorn,
     bbqPulledPorkAndFixins,
     bakedMacaroniAndCheese,
+    friedChickenWithCrystalHotHoney,
     creamyCornCasserole,
     coleslaw,
     bakedBeans,

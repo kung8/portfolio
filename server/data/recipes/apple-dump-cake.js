@@ -1,43 +1,60 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const {  } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require('./constants');
+const { APPLE_PIE_FILLING, YELLOW_CAKE_MIX, UNSALTED_BUTTER, OVEN, BAKING_PAN, SERVING_SPOON } = require('./ingredients');
+
+const APPLE_DUMP_CAKE_SECTION = 'Apple Dump Cake';
 
 module.exports = {
     wip: true,
     cardName: 'Apple Dump Cake',
     name: 'Apple Dump Cake',
     img: '',
-    available: false,
+    available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
-    type: [TYPES.DESSERT],
+    protein: [],
+    type: [TYPES.CAKE],
     allergies: [],
     diet: [],
-    yields: { amount: '', unit: '' },
-    prepTime: { amount: '', unit: '' },
-    cookTime: { amount: '', unit: '' },
-    waitTime: { amount: '', unit: '' },
+    yields: { amount: 20, unit: YIELD_UNITS.SERVING },
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
         {
             label: 'Apple Dump Cake',
             link: 'https://www.allrecipes.com/recipe/244777/apple-pie-cake-mix-cake/',
             authors: ['Marya Marta Krause'],
-            finder: 'Kevin Ung',
+            finder: 'Kevin Ung'
         }
     ],
     ingredients: [
-        { ...GENRES, amount: '', unit: '', additionalDetails: '', section: '' },
+        { ...APPLE_PIE_FILLING, amount: 42, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: APPLE_DUMP_CAKE_SECTION },
+        { ...YELLOW_CAKE_MIX, amount: 15.25, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: APPLE_DUMP_CAKE_SECTION },
+        { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'melted', section: APPLE_DUMP_CAKE_SECTION }
     ],
     appliances: [
-        { name: '' },
+        OVEN,
     ],
     supplies: [
-        { name: '' },
+        { ...BAKING_PAN, additionalDetails: '9x13 inch' },
+        SERVING_SPOON,
     ],
     directions: [
-        { step: ``, section: '' },
+        { step: 'Preheat the oven to 350ºF.', section: SECTIONS.PREHEAT_OVEN },
+
+        { step: 'In a baking dish, add apple pie filling.', section: SECTIONS.ASSEMBLE },
+        { step: 'Pour cake mix evenly over filling.', section: SECTIONS.ASSEMBLE },
+        { step: 'Top with melted butter.', section: SECTIONS.ASSEMBLE },
+
+        { step: 'Bake until golden brown and apple filling is bubbling (about 40 minutes).', section: SECTIONS.BAKE },
+        { step: 'Let cool (about 15 minutes).', section: SECTIONS.COOL },
+        { step: 'Enjoy this excellent dessert with ice cream!', section: SECTIONS.SERVE }
+    ],
+    notes: [
+        { note: 'Replace with your preferred pie filling.' },
+        { note: 'Serve with a large serving spoon instead of cutting like a cake since the base is not very sturdy.' },
     ],
     store: [
         {

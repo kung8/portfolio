@@ -105,7 +105,7 @@ module.exports = {
                     <p>${message}</p>
                     <p>Sincerely,<br/>${name}<br/>${email}</p>
                 </div>`
-            }, async (err, response) => {
+            }, async (err, _res) => {
                 if (err) {
                     console.log('err', err);
                 } else {

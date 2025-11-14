@@ -161,6 +161,7 @@ const METHODS = {
     DEEP_FRY: 'Deep Fry',
     FERMENT: 'Ferment',
     FREEZE: 'Freeze',
+    FRY: 'Fry',
     GRILL: 'Grill',
     KNEAD: 'Knead',
     MARINADE: 'Marinade',
@@ -237,6 +238,7 @@ const SECTIONS = {
     FLIP: 'Flip',
     FREEZE: 'Freeze',
     FROST: 'Frost',
+    FRY: 'Fry',
     LAYER: 'Layer',
     MIX: 'Mix',
     REHEAT: 'Reheat',
@@ -271,6 +273,7 @@ const SECTIONS = {
     FORM_BALLS: 'Form Balls',
     FORM_DOUGH: 'Form Dough',
     PREHEAT_OVEN: 'Preheat Oven',
+    HEAT_OIL: 'Heat Oil',
 
     // === PREP VERBS (Preparation Actions) ===
     // Ingredient Prep
@@ -278,6 +281,7 @@ const SECTIONS = {
     PREP_BREAD: 'Prep Bread',
     PREP_BUNS: 'Prep Buns',
     PREP_CASSEROLE: 'Prep Casserole',
+    PREP_COATING: 'Prep Coating',
     PREP_CRUST: 'Prep Crust',
     PREP_DIP: 'Prep Dip',
     PREP_DIPPING_STATIONS: 'Prep Dipping Stations',
@@ -307,6 +311,8 @@ const SECTIONS = {
     PREP_PORK: 'Prep Pork',
     PREP_SHRIMP: 'Prep Shrimp',
     PREP_TURKEY: 'Prep Turkey',
+
+    
 
     // === MAKE VERBS (Creation Actions) ===
     MAKE_BROTH: 'Make Broth',
@@ -382,6 +388,8 @@ const SECTIONS = {
     SAUCE: 'Sauce',
     SEASONINGS: 'Seasonings',
     WET_RUB: 'Wet Rub',
+    COATING: 'Coating',
+    DREDGE: 'Dredge',
 
     // Toppings & Garnishes
     FROSTING: 'Frosting',

@@ -441,6 +441,7 @@ const INGREDIENTS = {
         COOKIE_BUTTER: { name: 'cookie butter', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CORN_SYRUP: { name: 'corn syrup', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CRANBERRY_SAUCE: { name: 'cranberry sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        CRYSTAL_HOT_SAUCE: { name: 'crystal hot sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         DARK_SOY_SAUCE: {
             name: 'dark soy sauce', category: INGREDIENT_CATEGORY.CONDIMENTS, imig: "https://images.unsplash.com/photo-1582581720432-de83a98176ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3MzI2fA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -1263,6 +1264,7 @@ const INGREDIENTS = {
         CANOLA_OIL: { name: 'canola oil', category: INGREDIENT_CATEGORY.OILS },
         COOKING_SPRAY: { name: 'cooking spray', category: INGREDIENT_CATEGORY.OILS },
         GHEE: { name: 'ghee', category: INGREDIENT_CATEGORY.OILS },
+        GRAPESEED_OIL: { name: 'grapeseed oil', category: INGREDIENT_CATEGORY.OILS },
         OLIVE_OIL: {
             name: 'olive oil', category: INGREDIENT_CATEGORY.OILS, img: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4NzU5fA&ixlib=rb-4.0.3&q=80&w=400"
         },

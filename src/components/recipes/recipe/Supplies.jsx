@@ -26,7 +26,14 @@ const SupplyItem = ({ supply }) => {
                 className={`checkbox-supply ${getRecipeFontSizeClass()}`}
                 onChange={handleCheckboxChange}
             />
-            <label htmlFor={supply.id} className={`checkbox-supply-label ${getRecipeFontSizeClass()}`}>{supply.name}</label>
+
+            <label htmlFor={supply.id} className="supply-label">
+                <span className={`checkbox-supply-label ${getRecipeFontSizeClass()}`} itemProp="recipeSupply">{supply.name}</span>
+                {supply.additionalDetails && (
+                    <span className={`supply-additional-details ${getRecipeFontSizeClass()}`}>, {supply.additionalDetails}</span>
+                )}
+            </label>
+            {/* <label htmlFor={supply.id} className={`checkbox-supply-label ${getRecipeFontSizeClass()}`}>{supply.name}</label> */}
         </li>
     )
 }

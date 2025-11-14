@@ -34,6 +34,7 @@ import { GroceryListIcon } from './GroceryListIcon';
 import { RecipeSearchBar } from './RecipeSearchBar';
 import { AdvancedFilters } from './AdvancedFilters';
 import { getMenuFilterItems } from '../utils/get-menu-filter-items';
+import { UploadRecipe } from './UploadRecipe';
 
 export const defaultSelectedFilters = {
     available: [],
@@ -170,7 +171,7 @@ export const Recipes = ({ history }) => {
 
     const filteredRecipes = search ? matchingSearchResults : recipes;
     const { filterMapping, filteredRecipeBySelectedFilters } = useFilters({ filteredRecipes, selectedFilters });
-    const groupedFilteredRecipes = sortRecipes(filteredRecipeBySelectedFilters);    
+    const groupedFilteredRecipes = sortRecipes(filteredRecipeBySelectedFilters);
 
     const onScroll = () => {
         const scrollHeight = window.scrollY;
@@ -387,6 +388,10 @@ export const Recipes = ({ history }) => {
                     </>
                 ) : <EmptyRecipeContainer />
             ) : <LoaderContainer />}
+
+            {process.env.NODE_ENV === 'development' && (
+                <UploadRecipe />
+            )}
 
             {isLoaded && (
                 <EmailRecipe />

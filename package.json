@@ -5,13 +5,16 @@
   "dependencies": {
     "@tanstack/react-query": "^5.71.0",
     "axios": "^0.20.0",
+    "cheerio": "^1.1.2",
     "dayjs": "^1.11.13",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "fuse.js": "^7.0.0",
     "inquirer": "6.0.0",
+    "multer": "^2.0.2",
     "nodemailer": "^6.4.14",
+    "puppeteer": "^24.30.0",
     "react": "^19.1.0",
     "react-calendar": "^5.0.0",
     "react-dom": "^19.1.0",
@@ -19,6 +22,7 @@
     "react-scripts": "5.0.1",
     "react-toastify": "11.0.5",
     "sass": "1.86.0",
+    "tesseract.js": "^6.0.1",
     "use-debounce": "^10.0.3"
   },
   "scripts": {
