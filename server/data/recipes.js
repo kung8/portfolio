@@ -770,9 +770,13 @@ module.exports = recipes;
 // TODO: replace the brownies recipe
 // TODO: replace the chicken wing recipe
 // TODO: double check what other recipes can be replaced with better ones from websites
-// TODO: https://tastesbetterfromscratch.com/german-chocolate-cake/
+
 // TODO: https://www.wellmadebykiley.com/blog/cinnamon-crunch-apple-pie-cathead-biscuits
 // TODO: https://cookingwithkarli.com/crave-rockstar-cookie-recipe/?fbclid=IwY2xjawNagudleHRuA2FlbQIxMQABHqLXZW8qtuz8axoFXldWq9mzV45reZ3YqqH5-KVdq3_rwiJ27fszAEok4vpu_aem_LDtydRXK6zvnQRPyuUW4fw
 // TODO: https://www.allrecipes.com/lemon-ricotta-muffins-recipe-11826885
 // TODO: https://sweetcsdesigns.com/cabbage-and-noodles/
 // TODO: https://healthynibblesandbits.com/how-to-make-dumpling-wrappers/
+
+// TODO: add timer clock per step to indicate how long each step takes
+// TODO: add checkmark state for each step to allow users to track progress through recipe
+// TODO: add user notes section for each recipe to allow users to add their own notes and modifications
