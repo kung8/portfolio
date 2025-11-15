@@ -1,9 +1,21 @@
+import { useEffect, useState } from 'react';
 import { getRecipeFontSizeClass, getShowRecipeFigures } from '../utils';
 import { useRecipeContext } from './RecipeContext';
+import { cloneDeep } from 'lodash';
 
 export const Directions = () => {
     const { formattedDirections, setSelectedFigure } = useRecipeContext();
     const showRecipeFigures = getShowRecipeFigures();
+    const [checkedDirections, setCheckedDirections] = useState({});
+
+    useEffect(() => {
+        const newCheckedDirections = formattedDirections.reduce((acc, [section, directions]) => {
+            const newDirections = directions.map(step => step.checked);
+            acc[section] = newDirections;
+            return acc;
+        }, {});
+        setCheckedDirections(newCheckedDirections);
+    }, [formattedDirections]);
 
     const formatLink = (link) => link ? (
         <>
@@ -22,9 +34,22 @@ export const Directions = () => {
             {formattedDirections.map(([section, directions]) => (
                 <div key={section} className="separated-recipe-container direction-container">
                     <h5 className={`separated-recipe-detail-label direction-label ${getRecipeFontSizeClass()}`}>{section}</h5>
-                    <ol className="separated-recipe-detail-list numbered">
+                    <ol className="separated-recipe-detail-list">
                         {directions.map(({ step, figure, link }, index) => (
-                            <li key={step + '-' + index}>
+                            <li
+                                key={step + '-' + index}
+                                onClick={() => {
+                                    const newCheckedDirections = cloneDeep(checkedDirections);
+                                    const newSection = newCheckedDirections[section];
+                                    const currentValue = newSection[index];
+                                    const newValue = !currentValue;
+                                    newSection[index] = newValue;
+                                    newCheckedDirections[section] = newSection;
+                                    console.log('directions: ', newCheckedDirections);
+                                    setCheckedDirections(newCheckedDirections);
+                                }}
+                                className={`recipe-step-list-item ${checkedDirections[section][index] ? 'direction-checked' : ''}`}
+                            >
                                 <div>
                                     {step && (
                                         <span className={`recipe-step ${getRecipeFontSizeClass()}`}>{step}</span>

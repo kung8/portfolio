@@ -317,7 +317,7 @@
                         &.font-size-small {
                             font-size: 16px;
                         }
-                        
+
                         &.font-size-extra-small {
                             font-size: 14px;
                         }
@@ -485,7 +485,7 @@
             &.font-size-small {
                 font-size: 20px;
             }
-            
+
             &.font-size-extra-small {
                 font-size: 18px;
             }
@@ -527,7 +527,7 @@
                     &.font-size-small {
                         font-size: 16px;
                     }
-                    
+
                     &.font-size-extra-small {
                         font-size: 14px;
                     }
@@ -554,6 +554,7 @@
                 flex-direction: column;
                 align-items: flex-start;
                 row-gap: 16px;
+
                 @include mixins.down(theme.$desktop) {
                     flex-direction: row;
                     align-items: center;
@@ -785,85 +786,99 @@
             }
 
             .separated-recipe-detail-list {
-                margin-bottom: 24px;
-                padding-left: 16px;
+                padding-left: 0;
+                margin-bottom: 0;
+                counter-reset: step-counter;
 
-                &.numbered {
-                    padding-left: 0;
-                    margin-bottom: 0;
-                    counter-reset: step-counter;
+                .recipe-step-list-item {
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    grid-column-gap: 16px;
+                    align-items: start;
+                    text-wrap: auto;
+                    padding: 24px 8px;
+                    border-bottom: 1px solid theme.$default;
+                    counter-increment: step-counter;
+                    line-height: 150%;
+                    max-width: 600px;
 
-                    li {
-                        display: grid;
-                        grid-template-columns: auto 1fr;
-                        grid-column-gap: 16px;
-                        align-items: start;
-                        text-wrap: auto;
-                        padding: 24px 8px;
-                        border-bottom: 1px solid theme.$default;
-                        counter-increment: step-counter;
-                        line-height: 150%;
+                    @include mixins.down(theme.$extra-large) {
+                        max-width: 500px;
+                    }
+
+                    @include mixins.down(theme.$mid-desktop) {
+                        max-width: 400px;
+                    }
+
+                    @include mixins.down(theme.$desktop) {
                         max-width: 600px;
+                    }
 
-                        @include mixins.down(theme.$extra-large) {
-                            max-width: 500px;
-                        }
+                    @include mixins.down(theme.$mobile-xl) {
+                        max-width: 100%;
+                    }
 
-                        @include mixins.down(theme.$mid-desktop) {
-                            max-width: 400px;
-                        }
+                    &:first-of-type {
+                        padding-top: 16px;
+                    }
 
-                        @include mixins.down(theme.$desktop) {
-                            max-width: 600px;
-                        }
+                    &:last-of-type {
+                        border-bottom: none;
+                    }
 
-                        @include mixins.down(theme.$mobile-xl) {
-                            max-width: 100%;
-                        }
+                    &::before {
+                        content: counter(step-counter) ".";
+                        font-size: 40px;
+                        line-height: 1;
+                        grid-column: 1;
+                        align-self: start;
+                    }
 
-                        &:first-of-type {
-                            padding-top: 16px;
-                        }
-
-                        &:last-of-type {
-                            border-bottom: none;
-                        }
-
+                    &.direction-checked {
                         &::before {
-                            content: counter(step-counter) ".";
-                            font-size: 40px;
+                            content: '✓';
+                            font-weight: bold;
                             line-height: 1;
                             grid-column: 1;
                             align-self: start;
+                            background: theme.$forest;
+                            border-radius: 50%;
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: white;
+                            padding: 4px;
+                        }
+                    }
+
+                    >* {
+                        grid-column: 2;
+                        margin: 0;
+                    }
+
+                    .recipe-step,
+                    .recipe-step-link,
+                    .figure-label-anchor {
+                        &.font-size-extra-large {
+                            font-size: 24px;
                         }
 
-                        >* {
-                            grid-column: 2;
-                            margin: 0;
+                        &.font-size-large {
+                            font-size: 20px;
                         }
 
-                        .recipe-step,
-                        .recipe-step-link,
-                        .figure-label-anchor {
-                            &.font-size-extra-large {
-                                font-size: 24px;
-                            }
+                        &.font-size-medium {
+                            font-size: 18px;
+                        }
 
-                            &.font-size-large {
-                                font-size: 20px;
-                            }
+                        &.font-size-small {
+                            font-size: 16px;
+                        }
 
-                            &.font-size-medium {
-                                font-size: 18px;
-                            }
-
-                            &.font-size-small {
-                                font-size: 16px;
-                            }
-
-                            &.font-size-extra-small {
-                                font-size: 14px;
-                            }
+                        &.font-size-extra-small {
+                            font-size: 14px;
                         }
                     }
                 }
