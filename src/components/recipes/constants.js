@@ -8,7 +8,6 @@ export const STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY = 'startingDayOfWeek';
 export const RECIPES_FILTERS_LOCAL_STORAGE_KEY = 'recipesFilters';
 export const RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY = 'recipesFilterDrawerOpen';
 export const RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY = 'recipesGroupedBy';
-export const RECIPE_APP_USER = 'recipeAppUser';
 export const VENDOR_OPTIONS_LOCAL_STORAGE_KEY = 'vendorOptions';
 export const DEFAULT_VENDOR_LOCAL_STORAGE_KEY = 'defaultVendor';
 export const RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY = 'recipeFontSize';

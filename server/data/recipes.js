@@ -762,9 +762,7 @@ module.exports = recipes;
 // or fresh pineapple salsa, served with rice pilaf,
 // and sautéed vegetables. (32)
 
-// TODO: Add bulk actions logic?
 // TODO: Add picture with camera and scan text for you and interpret that into text to be used in grocery list
-// TODO: Add way to download and print recipes
 // TODO: Add way for Siri to add ingredients to the grocery list in my app (open chrome) (may need to create mobile app for this)
 // TODO: Add Frisee Salad with goat cheese and pine nuts, wild rice, roasted asparagus, salmon en croute recipe
 // TODO: Add Lox recipe
@@ -776,9 +774,10 @@ module.exports = recipes;
 // TODO: https://www.allrecipes.com/lemon-ricotta-muffins-recipe-11826885
 // TODO: https://sweetcsdesigns.com/cabbage-and-noodles/
 
-// TODO: add timer clock per step to indicate how long each step takes
-// TODO: add user notes section for each recipe to allow users to add their own notes and modifications
 
-// TODO: save the last email
-// TODO: add communication about "I have made this"...
+
+// TODO: Add way to download and print recipes
+// TODO: add user notes section for each recipe to allow users to add their own notes and modifications
+// TODO: add timer clock per step to indicate how long each step takes
+// TODO: Add bulk actions logic?
 // TODO: make click on figure and sections not check the step

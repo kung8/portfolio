@@ -326,7 +326,7 @@ export const Recipe = ({ match }) => {
                     </div>
                 )}
 
-                {item && isLoaded && <EmailRecipe />}
+                {item && isLoaded && <EmailRecipe recipeName={item.name} />}
                 <RecipeImageModal />
                 <div
                     id="settings-modal-action-overlay"
