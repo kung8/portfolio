@@ -4,7 +4,7 @@ const ramen3 = '../assets/Products/ground-beef-ramen-3.jpeg';
 const ramen4 = '../assets/Products/ground-beef-ramen-4.jpeg';
 const ramen5 = '../assets/Products/ground-beef-ramen-5.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { FROZEN_CARROTS, FROZEN_PEAS, GARLIC, GREEN_ONION, GROUND_BEEF, HOISIN_SAUCE, INSTANT_RAMEN, LARGE_PAN, LARGE_POT, LIGHT_SOY_SAUCE, RED_PEPPER_FLAKES, STOVE, VEGETABLE_OIL } = require('./ingredients');
 
 const BEEF_AND_GARLIC_SECTION = 'Beef and Garlic';
@@ -22,8 +22,6 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.NOODLE],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

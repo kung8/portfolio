@@ -1,5 +1,5 @@
 const egg = '../assets/Products/hard-boiled-egg.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BASIL,
     BLACK_PEPPER,
@@ -27,8 +27,6 @@ module.exports = {
     method: [METHODS.BOIL],
     protein: [PROTEIN.EGG],
     type: [TYPES.PROTEIN],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

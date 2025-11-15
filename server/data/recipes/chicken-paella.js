@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, REHEAT_METHODS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {  } = require('./ingredients');
 
 module.exports = {
@@ -14,8 +14,6 @@ module.exports = {
     method: [METHODS.PAN_FRY,METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE,TYPES.MAIN_COURSE],
-    allergies: [],
-    diet: [],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

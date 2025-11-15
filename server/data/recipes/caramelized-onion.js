@@ -4,7 +4,7 @@ const onion3 = '../assets/Products/caramelized-onion-3.jpeg';
 const onion4 = '../assets/Products/caramelized-onion-4.jpeg';
 const onion5 = '../assets/Products/caramelized-onion-5.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BALSAMIC_VINEGAR,
     BLACK_PEPPER,
@@ -29,8 +29,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SAUTE],
     type: [TYPES.VEGETABLE],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 2, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

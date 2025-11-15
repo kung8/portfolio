@@ -8,7 +8,7 @@ const rolls7 = '../assets/Products/fresh-spring-rolls-7.jpeg';
 const rolls8 = '../assets/Products/fresh-spring-rolls-8.jpeg';
 const rolls9 = '../assets/Products/fresh-spring-rolls-9.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BASIL_LEAF, BLENDER, CARROT, CILANTRO, CUCUMBER, CUTTING_BOARD, HOISIN_SAUCE, KNIFE, LIGHT_SOY_SAUCE, MINT_LEAF, PEANUT_BUTTER, PIE_PAN, PLATE, PORK, POT, SHRIMP, SPRING_ROLL_RICE_WRAPPERS, STOVE, SWEET_CHILI_SAUCE, VEGETABLE_OIL, VERMICELLI_RICE_NOODLES } = require('./ingredients');
 
 const VERMICELLI_RICE_NOODLES_SECTION = 'Vermicelli Rice Noodles';
@@ -29,8 +29,6 @@ module.exports = {
     method: [METHODS.WRAP, METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.WRAP],
-    allergies: [ALLERGIES.PEANUT, ALLERGIES.SHELLFISH],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB],
     yields: { amount: 15, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },

@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, REHEAT_METHODS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
 const {  } = require('./ingredients');
 
 module.exports = {
@@ -14,8 +14,6 @@ module.exports = {
     method: [],
     protein: [],
     type: [],
-    allergies: [],
-    diet: [],
     yields: { amount: '', unit: YIELD_UNITS.SERVING },
     prepTime: { amount: '', unit: TIME_UNITS.MINUTE },
     cookTime: { amount: '', unit: TIME_UNITS.MINUTE },

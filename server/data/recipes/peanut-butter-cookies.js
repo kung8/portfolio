@@ -12,7 +12,7 @@ const cookies12 = '../assets/Products/peanut-butter-cookies-12.jpeg';
 const cookies13 = '../assets/Products/peanut-butter-cookies-13.jpeg';
 const cookies14 = '../assets/Products/peanut-butter-cookies-14.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SHEET, BROWN_SUGAR, EGG, OVEN, PEANUT_BUTTER, SALT, SILICONE_BAKING_MAT, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
@@ -25,8 +25,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.COOKIE],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.PEANUT, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 3 / 2, unit: YIELD_UNITS.DOZEN },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

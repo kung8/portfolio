@@ -9,7 +9,7 @@ const noodles8 = '../assets/Products/pad-see-ew-8.jpeg';
 
 const THAI_CHILI_PEPPER_SECTION = 'Thai Chili Pepper';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BOWL,
     BROWN_SUGAR,
@@ -47,8 +47,6 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.NOODLE],
-    allergies: [ALLERGIES.EGG],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

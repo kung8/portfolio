@@ -7,7 +7,7 @@ const saltado6 = '../assets/Products/lomo-saltado-6.jpeg';
 const saltado7 = '../assets/Products/lomo-saltado-7.jpeg';
 const saltado8 = '../assets/Products/lomo-saltado-8.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { AJI_AMARILLO_PASTE, BEEF_SIRLOIN, CILANTRO, CORNSTARCH, FRENCH_FRIES, GARLIC, GREEN_ONION, LIGHT_SOY_SAUCE, MIXING_BOWL, OYSTER_SAUCE, RED_ONION, RED_WINE_VINEGAR, ROMA_TOMATO, SMALL_BOWL, STOVE, VEGETABLE_OIL, WHITE_RICE, WOK } = require('./ingredients');
 
 module.exports = {
@@ -21,8 +21,6 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.STIR_FRY],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

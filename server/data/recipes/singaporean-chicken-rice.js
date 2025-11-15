@@ -4,7 +4,7 @@ const rice3 = '../assets/Products/singaporean-chicken-rice-3.jpeg';
 const rice4 = '../assets/Products/singaporean-chicken-rice-4.jpeg';
 const rice5 = '../assets/Products/singaporean-chicken-rice-5.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BOWL,
     CHICKEN_BROTH,
@@ -40,8 +40,6 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    allergies: [ALLERGIES.SESAME],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },

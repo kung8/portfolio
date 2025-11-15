@@ -9,7 +9,7 @@ const biscuits8 = '../assets/Products/biscuits-and-gravy-8.jpeg';
 const biscuits9 = '../assets/Products/biscuits-and-gravy-9.jpeg';
 const biscuits10 = '../assets/Products/biscuits-and-gravy-10.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, SECTIONS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS, ALLERGIES, DIET } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, INGREDIENT_UNITS, SECTIONS, YIELD_UNITS, TIME_UNITS, STORAGE_CONTAINER, STORAGE_LOCATION, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_POWDER,
@@ -46,8 +46,6 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.BAKE],
     protein: [PROTEIN.PORK],
     type: [TYPES.BREAD],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

@@ -13,7 +13,7 @@ const naan12 = '../assets/Products/naan-12.jpeg';
 const naan13 = '../assets/Products/naan-13.jpeg';
 const naan14 = '../assets/Products/naan-14.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BASTING_BRUSH, CILANTRO, DUTCH_OVEN_POT, MIXING_BOWL, OLIVE_OIL, ROLLING_PIN, SALT, STOVE, UNSALTED_BUTTER, WATER, WHITE_SUGAR, YEAST, YOGURT } = require('./ingredients');
 
 const ACTIVATE_YEAST = 'Activate Yeast';
@@ -30,8 +30,6 @@ module.exports = {
     genre: [GENRES.INDIAN],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

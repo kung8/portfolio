@@ -5,7 +5,7 @@ const mcnuggets4 = '../assets/Products/chicken-mcnuggets-4.jpeg';
 const mcnuggets5 = '../assets/Products/chicken-mcnuggets-5.jpeg';
 const mcnuggets6 = '../assets/Products/chicken-mcnuggets-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SHEET, BAKING_SODA, CELERY_POWDER, COOLING_RACK, CORNSTARCH, EGG, GROUND_CHICKEN, MIXING_BOWL, PAPER_TOWELS, POT, ROOM_TEMPERATURE_WATER, SALT, SMALL_BOWL, SPIDER_STRAINER, STOVE, VEGETABLE_OIL, WATER, WHITE_PEPPER, WHITE_SUGAR } = require('./ingredients');
 
 const FLOUR_DREDGING_STATION = 'Flour Dredging Station';
@@ -24,8 +24,6 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.FINGER_FOOD],
-    allergies: [ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 8, unit: TIME_UNITS.MINUTE },

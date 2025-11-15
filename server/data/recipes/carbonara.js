@@ -9,7 +9,7 @@ const carbonara8 = '../assets/Products/carbonara-8.jpeg';
 const carbonara9 = '../assets/Products/carbonara-9.jpeg';
 const carbonara10 = '../assets/Products/carbonara-10.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, EGG, EGG_YOLK, GARLIC, GUANCIALE, LARGE_PAN, LARGE_POT, MIXING_BOWL, PARMIGIANO_REGGIANO, PARSLEY, SALT, SPAGHETTI_NOODLES, SPATULA, STOVE } = require('./ingredients');
 
 const GUANCIALE_SECTION = 'Guanciale';
@@ -26,8 +26,6 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.PASTA],
-    allergies: [ALLERGIES.EGG],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

@@ -7,7 +7,7 @@ const mango6 = '../assets/Products/mango-sticky-rice-6.jpeg';
 const mango7 = '../assets/Products/mango-sticky-rice-7.jpeg';
 const mango8 = '../assets/Products/mango-sticky-rice-8.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BROWN_SUGAR, CHEESECLOTH, COCONUT_MILK, LARGE_POT, MANGO, MEDIUM_BOWL, MIXING_BOWL, SALT, SAUCEPAN, STEAMER, STOVE, SWEET_RICE } = require('./ingredients');
 
 const MAKE_STICKY_RICE = 'Make Sticky Rice';
@@ -22,8 +22,6 @@ module.exports = {
     genre: [GENRES.THAI, GENRES.ASIAN],
     method: [METHODS.STEAM],
     type: [TYPES.DESSERT],
-    allergies: [],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

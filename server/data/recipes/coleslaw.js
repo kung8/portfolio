@@ -1,7 +1,7 @@
 const coleslaw1 = '../assets/Products/coleslaw-1.jpeg';
 const coleslaw2 = '../assets/Products/coleslaw-2.jpeg';
 const coleslaw3 = '../assets/Products/coleslaw-3.jpeg';
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { APPLE_CIDER_VINEGAR, BLACK_PEPPER, CABBAGE, CARROT, LEMON_JUICE, MAYONNAISE, MEDIUM_BOWL, MIXING_BOWL, SALT, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
@@ -13,8 +13,6 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.MIX],
     type: [TYPES.SALAD],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [

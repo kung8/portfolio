@@ -9,7 +9,7 @@ const limone8 = '../assets/Products/pasta-al-limone-8.jpeg';
 const limone9 = '../assets/Products/pasta-al-limone-9.jpeg';
 const limone10 = '../assets/Products/pasta-al-limone-10.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, FETTUCCINE_NOODLES, HEAVY_CREAM, LARGE_PAN, LEMON_JUICE, LEMON_ZEST, PARMIGIANO_REGGIANO, SALT, SAUCEPAN, STOVE, UNSALTED_BUTTER } = require('./ingredients');
 
 const COMBINE = 'Combine';
@@ -24,8 +24,6 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     type: [TYPES.PASTA],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

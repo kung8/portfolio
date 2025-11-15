@@ -5,7 +5,7 @@ const drumstick4 = '../assets/Products/baked-chicken-drumstick-4.jpeg';
 const drumstick5 = '../assets/Products/baked-chicken-drumstick-5.jpeg';
 const drumstick6 = '../assets/Products/baked-chicken-drumstick-6.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BAKING_PAN,
     BASTING_BRUSH,
@@ -32,8 +32,6 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },

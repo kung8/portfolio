@@ -12,7 +12,7 @@ const soup11 = '../assets/Products/marry-me-chicken-and-gnocci-soup-11.jpeg';
 const soup12 = '../assets/Products/marry-me-chicken-and-gnocci-soup-12.jpeg';
 const soup13 = '../assets/Products/marry-me-chicken-and-gnocci-soup-13.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BABY_SPINACH, BASIL, BLACK_PEPPER, CARROT, CELERY, CHICKEN_BOUILLON_CUBE, CREAM_CHEESE, GARLIC, GARLIC_AND_HERB, GNOCCHI, HEAVY_CREAM, ITALIAN_SEASONING, LARGE_POT, PARMESAN_CHEESE, RED_PEPPER_FLAKES, ROTISSERIE_CHICKEN, SALT, STOVE, SUN_DRIED_TOMATOES, TOMATO_PASTE, UNSALTED_BUTTER, WATER, YELLOW_ONION } = require('./ingredients');
 
 const OIL_SECTION = 'Oil';
@@ -32,8 +32,6 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SOUP],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

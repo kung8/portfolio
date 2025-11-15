@@ -5,7 +5,7 @@ const chimichangas4 = '../assets/Products/beef-and-bean-chimichangas-4.jpeg';
 const chimichangas5 = '../assets/Products/beef-and-bean-chimichangas-5.jpeg';
 const chimichangas6 = '../assets/Products/beef-and-bean-chimichangas-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, CHILI_POWDER, CORN, CUMIN, FLOUR_TORTILLA, FRYING_PAN, GARLIC_SALT, GREEN_BELL_PEPPER, GROUND_BEEF, LETTUCE, MONTEREY_JACK_CHEESE, OVEN, REFRIED_BEANS, ROMA_TOMATO, STOVE, TACO_SAUCE, UNSALTED_BUTTER, YELLOW_ONION } = require('./ingredients');
 
 const TORTILLA_AND_OTHER = 'Tortilla and Other';
@@ -23,8 +23,6 @@ module.exports = {
     method: [METHODS.SAUTE, METHODS.BAKE],
     protein: [PROTEIN.BEEF],
     type: [TYPES.CASSEROLE],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

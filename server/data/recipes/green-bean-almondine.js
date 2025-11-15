@@ -3,7 +3,7 @@ const bean2 = '../assets/Products/green-bean-almondine-2.jpeg';
 const bean3 = '../assets/Products/green-bean-almondine-3.jpeg';
 const bean4 = '../assets/Products/green-bean-almondine-4.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
     FRENCH_GREEN_BEAN,
@@ -34,8 +34,6 @@ module.exports = {
     genre: [GENRES.FRENCH],
     method: [METHODS.BOIL, METHODS.SAUTE],
     type: [TYPES.VEGETABLE],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

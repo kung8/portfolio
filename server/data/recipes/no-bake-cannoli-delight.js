@@ -14,7 +14,7 @@ const cannoli13 = '../assets/Products/no-bake-cannoli-delight-13.jpeg';
 const cannoli14 = '../assets/Products/no-bake-cannoli-delight-14.jpeg';
 const cannoli15 = '../assets/Products/no-bake-cannoli-delight-15.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, CHOCOLATE_INSTANT_PUDDING_MIX, CREAM_CHEESE, CUTTING_BOARD, GRAHAM_CRACKER, HEAVY_CREAM, KNIFE, MEDIUM_BOWL, MILK, MINI_CHOCOLATE_CHIPS, MIXING_BOWL, ORANGE_ZEST, PARCHMENT_PAPER, POWDERED_SUGAR, RICOTTA_CHEESE, SALT, SPATULA, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHISK, WHITE_SUGAR } = require('./ingredients');
 
 const PUDDING_MIXTURE_SECTION = 'Pudding Mixture';
@@ -36,8 +36,6 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.MIX, METHODS.CHILLED],
     type: [TYPES.DESSERT],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },

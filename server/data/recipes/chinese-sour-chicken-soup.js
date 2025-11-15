@@ -1,5 +1,5 @@
 const soup1 = '../assets/Products/sour-chicken-soup-1.jpeg';
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     CHICKEN_THIGH,
     CLEAVER,
@@ -25,8 +25,6 @@ module.exports = {
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE, TYPES.SOUP],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },

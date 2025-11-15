@@ -10,7 +10,7 @@ const soup9 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-9.jpeg
 const soup10 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-10.jpeg';
 const soup11 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-11.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BABY_SPINACH,
     BLACK_PEPPER,
@@ -45,8 +45,6 @@ module.exports = {
     method: [METHODS.BOIL],
     protein: [PROTEIN.TURKEY],
     type: [TYPES.NOODLE, TYPES.SOUP],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },

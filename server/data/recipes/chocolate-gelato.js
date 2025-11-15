@@ -1,7 +1,7 @@
 const gelato1 = '../assets/Products/chocolate-gelato-1.jpeg';
 const gelato2 = '../assets/Products/chocolate-gelato-2.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { COCOA_POWDER, DARK_COOKING_CHOCOLATE, EGG_YOLK, HEAVY_CREAM, ICE_CREAM_MAKER, MIXING_BOWL, SALT, SAUCEPAN, VANILLA_BEAN, WHITE_SUGAR, WHOLE_MILK } = require('./ingredients');
 
 const MILK_MIXTURE_SECTION = 'Milk Mixture';
@@ -28,8 +28,6 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.FREEZE],
     type: [TYPES.DESSERT],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

@@ -2,7 +2,7 @@ const sauce1 = '../assets/Products/bbq-sauce-1.jpeg';
 const sauce2 = '../assets/Products/bbq-sauce-2.jpeg';
 const sauce3 = '../assets/Products/bbq-sauce-3.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BROWN_SUGAR, DIJON_MUSTARD, GARLIC_POWDER, KETCHUP, PAPRIKA, RICE_WINE_VINEGAR, SALT, SAUCEPAN, STOVE, WATER, WHITE_VINEGAR, WORCESTERSHIRE_SAUCE } = require('./ingredients');
 
 module.exports = {
@@ -15,8 +15,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER],
     type: [TYPES.SAUCE],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

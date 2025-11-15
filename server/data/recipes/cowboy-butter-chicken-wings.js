@@ -4,7 +4,7 @@ const wings3 = '../assets/Products/cowboy-butter-chicken-wings-3.jpeg';
 const wings4 = '../assets/Products/cowboy-butter-chicken-wings-4.jpeg';
 const wings5 = '../assets/Products/cowboy-butter-chicken-wings-5.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, BAKING_SHEET, BLACK_PEPPER, CAYENNE_PEPPER, CHICKEN_WINGS, CHIVE, COOLING_RACK, DIJON_MUSTARD, GARLIC, LEMON_JUICE, MIXING_BOWL, OVEN, PARSLEY, SALT, SMOKED_PAPRIKA, UNSALTED_BUTTER } = require('./ingredients');
 
 module.exports = {
@@ -18,8 +18,6 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.FINGER_FOOD],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },

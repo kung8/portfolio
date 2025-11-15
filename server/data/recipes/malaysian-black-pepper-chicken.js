@@ -9,7 +9,7 @@ const pepper8 = '../assets/Products/black-pepper-chicken-8.jpeg';
 const pepper9 = '../assets/Products/black-pepper-chicken-9.jpeg';
 const pepper10 = '../assets/Products/black-pepper-chicken-10.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
     CHICKEN_BREAST,
@@ -41,8 +41,6 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

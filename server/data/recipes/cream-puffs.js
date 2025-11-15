@@ -7,7 +7,7 @@ const puffs6 = '../assets/Products/cream-puffs-6.jpeg';
 const puffs7 = '../assets/Products/cream-puffs-7.jpeg';
 const puffs8 = '../assets/Products/cream-puffs-8.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, EGG, HEAVY_CREAM, LARGE_POT, MILK, MIXING_BOWL, OVEN, SALT, STOVE, UNSALTED_BUTTER, VANILLA_INSTANT_PUDDING_MIX, WATER } = require('./ingredients');
 
 const PUFF = 'Puff';
@@ -23,8 +23,6 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.EGG],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT, TYPES.PASTRY],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

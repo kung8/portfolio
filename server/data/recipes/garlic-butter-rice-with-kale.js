@@ -6,7 +6,7 @@ const kale5 = '../assets/Products/butter-rice-with-kale-5.jpeg';
 const kale6 = '../assets/Products/butter-rice-with-kale-6.jpeg';
 const kale7 = '../assets/Products/butter-rice-with-kale-7.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CHICKEN_BROTH, GARLIC, KALE, LARGE_POT, MIXING_BOWL, OLIVE_OIL, SALT, SLICED_ALMONDS, STOVE, UNSALTED_BUTTER, WHITE_RICE } = require('./ingredients');
 
 const KALE_SECTION = 'Kale';
@@ -23,8 +23,6 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
     type: [TYPES.RICE],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },

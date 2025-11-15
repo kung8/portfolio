@@ -3,7 +3,7 @@ const kolo2 = '../assets/Products/kolo-mee-2.jpeg';
 const kolo3 = '../assets/Products/kolo-mee-3.jpeg';
 const kolo4 = '../assets/Products/kolo-mee-4.jpeg';
 const kolo5 = '../assets/Products/kolo-mee-5.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BABY_BOK_CHOY, CHOW_MEIN_NOODLES, DARK_SOY_SAUCE, FRIED_SHALLOTS, GARLIC, GREEN_ONION, GROUND_PORK, LARGE_POT, LIGHT_SOY_SAUCE, ONION_POWDER, OYSTER_SAUCE, SESAME_OIL, STOVE, THAI_CHILI_PEPPER, VEGETABLE_OIL, WHITE_PEPPER, WOK } = require('./ingredients');
 
 const MINCED_MEAT_SECTION = 'Minced Meat';
@@ -22,8 +22,6 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.NOODLE],
-    allergies: [ALLERGIES.SESAME],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

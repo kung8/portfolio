@@ -5,7 +5,7 @@ const bibimbap4 = '../assets/Products/bibimbap-4.jpeg';
 const bibimbap5 = '../assets/Products/bibimbap-5.jpeg';
 const bibimbap6 = '../assets/Products/bibimbap-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BROWN_SUGAR,
     CARROT,
@@ -39,8 +39,6 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.EGG, PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    allergies: [ALLERGIES.EGG, ALLERGIES.SESAME],
-    diet: [DIET.DAIRY_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

@@ -3,7 +3,7 @@ const milanese2 = '../assets/Products/pork-milanese-2.jpeg';
 const milanese3 = '../assets/Products/pork-milanese-3.jpeg';
 const milanese4 = '../assets/Products/pork-milanese-4.jpeg';
 const milanese5 = '../assets/Products/pork-milanese-5.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BABY_ARUGULA, BABY_KALE, BAKING_SHEET, BLACK_PEPPER, COOLING_RACK, CUTTING_BOARD, EGG, LEMON_JUICE, MEAT_MALLET, MIXING_BOWL, OLIVE_OIL, PANKO_BREADCRUMBS, PAPER_TOWELS, PARMESAN_CHEESE, PLASTIC_WRAP, PLATE, PORK_CHOPS, SALT, SMALL_BOWL, STOVE, UNSALTED_BUTTER } = require('./ingredients');
 
 const DREDGE_PORK = 'Dredge Pork';
@@ -19,8 +19,6 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.PROTEIN],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

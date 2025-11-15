@@ -6,7 +6,7 @@ const frenchToast5 = '../assets/Products/french-toast-5.jpeg';
 const frenchToast6 = '../assets/Products/french-toast-6.jpeg';
 const frenchToast7 = '../assets/Products/french-toast-7.jpeg';
 const frenchToast8 = '../assets/Products/french-toast-8.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BRIOCHE_BUNS,
     CINNAMON,
@@ -36,8 +36,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.BREAD],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

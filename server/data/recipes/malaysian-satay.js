@@ -2,7 +2,7 @@ const satay1 = '../assets/Products/malaysian-satay-1.jpeg';
 const satay2 = '../assets/Products/malaysian-satay-2.jpeg';
 const satay3 = '../assets/Products/malaysian-satay-3.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALUMINUM_FOIL,
     ASIAN_CHILI_GARLIC_SAUCE,
@@ -42,8 +42,6 @@ module.exports = {
     method: [METHODS.MARINADE, METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.FINGER_FOOD],
-    allergies: [ALLERGIES.FISH, ALLERGIES.PEANUT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 12, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },

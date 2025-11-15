@@ -9,7 +9,7 @@ const rolls8 = '../assets/Products/crescent-rolls-8.jpeg';
 const rolls9 = '../assets/Products/crescent-rolls-9.jpeg';
 const rolls10 = '../assets/Products/crescent-rolls-10.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, EGG, EVAPORATED_MILK, MEDIUM_BOWL, MIXING_BOWL, OVEN, SALT, SILICONE_BAKING_MAT, UNSALTED_BUTTER, WATER, WHITE_SUGAR, YEAST } = require('./ingredients');
 
 const YEAST_MIXTURE = 'Yeast Mixture';
@@ -23,8 +23,6 @@ module.exports = {
     genre: [GENRES.AUSTRIAN],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 32, unit: YIELD_UNITS.ROLL },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

@@ -17,7 +17,7 @@ const lasagna15 = '../assets/Products/lasagna-15.jpeg';
 const lasagna16 = '../assets/Products/lasagna-16.jpeg';
 const lasagna17 = '../assets/Products/lasagna-17.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_PAN,
     BASIL,
@@ -71,8 +71,6 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.BEEF, PROTEIN.PORK],
     type: [TYPES.NOODLE],
-    allergies: [ALLERGIES.EGG],
-    diet: [DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 3, unit: TIME_UNITS.HOUR },

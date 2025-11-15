@@ -14,7 +14,7 @@ const curry13 = '../assets/Products/japanese-curry-13.jpeg';
 const curry14 = '../assets/Products/japanese-curry-14.jpeg';
 const curry15 = '../assets/Products/japanese-curry-15.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { APPLE, BAMBOO_SKEWERS, BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_THIGH, CARROT, CHICKEN_BROTH, GARLIC, GINGER, HONEY, JAPANESE_CURRY_MIX, KETCHUP, LADLE, LARGE_POT, LIGHT_SOY_SAUCE, STOVE, STRAINER, VEGETABLE_OIL, YELLOW_ONION, YUKON_GOLD_POTATO } = require('./ingredients');
 
 const PREP_VEGGIES = 'Prep Veggies';
@@ -32,8 +32,6 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CURRY],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },

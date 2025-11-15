@@ -3,7 +3,7 @@ const cookie2 = '../assets/Products/no-bake-cookie-2.jpeg';
 const cookie3 = '../assets/Products/no-bake-cookie-3.jpeg';
 const cookie4 = '../assets/Products/no-bake-cookie-4.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     COCOA_POWDER,
     MILK,
@@ -33,8 +33,6 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.COOKIE],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.PEANUT],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 24, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

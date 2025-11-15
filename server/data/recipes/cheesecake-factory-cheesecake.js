@@ -16,7 +16,7 @@ const cheesecake15 = '../assets/Products/cheesecake-factory-cheesecake-15.jpeg';
 const cheesecake16 = '../assets/Products/cheesecake-factory-cheesecake-16.jpeg';
 const cheesecake17 = '../assets/Products/cheesecake-factory-cheesecake-17.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     ALUMINUM_FOIL,
@@ -52,8 +52,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 2, unit: TIME_UNITS.HOUR },

@@ -5,7 +5,7 @@ const curry4 = '../assets/Products/coconut-chicken-curry-4.jpeg';
 const curry5 = '../assets/Products/coconut-chicken-curry-5.jpeg';
 const curry6 = '../assets/Products/coconut-chicken-curry-6.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, COCONUT_MILK, CURRY_POWDER, DICED_TOMATO, GARLIC, LARGE_PAN, MEDIUM_BOWL, SALT, STOVE, TOMATO_SAUCE, VEGETABLE_OIL, WHITE_SUGAR, YELLOW_ONION } = require('./ingredients');
 
 module.exports = {
@@ -19,8 +19,6 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CURRY],
-    allergies: [],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },

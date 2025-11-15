@@ -8,8 +8,8 @@ const muddy7 = '../assets/Products/muddy-buddies-7.jpeg';
 const muddy8 = '../assets/Products/muddy-buddies-8.jpeg';
 const muddy9 = '../assets/Products/muddy-buddies-9.jpeg';
 const muddy11 = '../assets/Products/muddy-buddies-11.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { CHEX_CEREAL, MICROWAVE, MIXING_BOWL, PEANUT_BUTTER, POWDERED_SUGAR, REFRIGERATOR, SAUCEPAN, SEMI_SWEET_CHOCOLATE_CHIPS, STOVE } = require('./ingredients');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CHEX_CEREAL, MIXING_BOWL, PEANUT_BUTTER, POWDERED_SUGAR, REFRIGERATOR, SAUCEPAN, SEMI_SWEET_CHOCOLATE_CHIPS, STOVE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Muddy Buddies',
@@ -21,8 +21,6 @@ module.exports = {
     method: [METHODS.MIX],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.DESSERT],
-    allergies: [ALLERGIES.PEANUT],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 15, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [

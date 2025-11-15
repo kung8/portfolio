@@ -1,5 +1,5 @@
 const graveyardDessert1 = '../assets/Products/graveyard-dessert-1.jpeg';
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const { CHOCOLATE_PUDDING_CUPS, CUPS, MILANO_COOKIES, OREO_COOKIES } = require('./ingredients');
 
 const GRAVEYARD_DESSERTS = 'Graveyard Desserts';
@@ -13,8 +13,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],
     type: [TYPES.DESSERT],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     websites: [

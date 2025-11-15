@@ -3,7 +3,7 @@ const roll2 = '../assets/Products/spring-roll-2.jpeg';
 const roll3 = '../assets/Products/spring-roll-3.jpeg';
 const roll4 = '../assets/Products/spring-roll-4.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_SHEET,
     CABBAGE,
@@ -34,8 +34,6 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.FINGER_FOOD],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 20, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

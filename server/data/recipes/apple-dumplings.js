@@ -15,8 +15,6 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    allergies: [],
-    diet: [],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },

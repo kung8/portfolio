@@ -2,7 +2,7 @@ const stirFry1 = '../assets/Products/pepper-steak-stir-fry-1.jpeg';
 const stirFry2 = '../assets/Products/pepper-steak-stir-fry-2.jpeg';
 const stirFry3 = '../assets/Products/pepper-steak-stir-fry-3.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BEEF,
     BLACK_PEPPER,
@@ -31,8 +31,6 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.RICE],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },

@@ -7,7 +7,7 @@ const sub6 = '../assets/Products/meatball-sub-6.jpeg';
 const sub7 = '../assets/Products/meatball-sub-7.jpeg';
 const sub8 = '../assets/Products/meatball-sub-8.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BAKING_SHEET, BLACK_PEPPER, BREADCRUMBS, EGG, GROUND_BEEF, HOAGIE_BREAD, ITALIAN_SEASONING, MIXING_BOWL, MOZZARELLA_CHEESE, ONION_POWDER, OVEN, PARCHMENT_PAPER, SALT, SAUCEPAN, STOVE, TOMATO_SAUCE } = require('./ingredients');
 const { DAIRY } = require('./ingredient-categories');
 
@@ -27,8 +27,6 @@ module.exports = {
     method: [METHODS.BAKE, METHODS.PAN_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SANDWICH],
-    allergies: [ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

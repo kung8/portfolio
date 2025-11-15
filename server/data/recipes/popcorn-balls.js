@@ -7,7 +7,7 @@ const balls6 = '../assets/Products/popcorn-balls-6.jpeg';
 const balls7 = '../assets/Products/popcorn-balls-7.jpeg';
 const balls8 = '../assets/Products/popcorn-balls-8.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { COOKING_SPRAY, CORN_SYRUP, LARGE_POT, MINI_MARSHMALLOWS, MIXING_BOWL, PLASTIC_WRAP, POPCORN, POWDERED_SUGAR, STOVE, UNSALTED_BUTTER, WATER } = require('./ingredients');
 
 const POPCORN_SECTION = 'Popcorn';
@@ -27,8 +27,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.DESSERT],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 20, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

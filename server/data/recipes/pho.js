@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, REHEAT_METHODS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {  } = require('./ingredients');
 
 module.exports = {
@@ -14,8 +14,6 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.BEEF],
     type: [TYPES.NOODLE, TYPES.SOUP],
-    allergies: [],
-    diet: [],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.HOUR },
     cookTime: { amount: 7, unit: TIME_UNITS.HOUR },

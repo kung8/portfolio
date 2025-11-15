@@ -8,7 +8,7 @@ const gallina7 = '../assets/Products/aji-de-gallina-7.jpeg';
 const gallina8 = '../assets/Products/aji-de-gallina-8.jpeg';
 const gallina9 = '../assets/Products/aji-de-gallina-9.jpeg';
 const gallina10 = '../assets/Products/aji-de-gallina-10.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
     BLENDER,
@@ -49,8 +49,6 @@ module.exports = {
     method: [METHODS.BOIL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.RICE],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },

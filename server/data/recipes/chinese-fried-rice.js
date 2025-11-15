@@ -9,7 +9,7 @@ const rice8 = '../assets/Products/chinese-fried-rice-8.jpeg';
 const rice9 = '../assets/Products/chinese-fried-rice-9.jpeg';
 const rice10 = '../assets/Products/chinese-fried-rice-10.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CARROT, CHICKEN_BOUILLON, CHINESE_SAUSAGE, CHOPSTICKS, DARK_SOY_SAUCE, EGG, FROZEN_CORN, FROZEN_PEAS, GREEN_ONION, JASMINE_RICE, LIGHT_SOY_SAUCE, MEDIUM_BOWL, RICE_COOKER, SALT, SMALL_BOWL, SPATULA, STOVE, VEGETABLE_OIL, WATER, WHITE_SUGAR, WOK } = require('./ingredients');
 
 const FRIED_RICE_SECTION = 'Fried Rice';
@@ -26,8 +26,6 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.EGG],
     type: [TYPES.RICE],
-    allergies: [ALLERGIES.EGG],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

@@ -5,7 +5,7 @@ const cilantro4 = '../assets/Products/mexican-cilantro-lime-chicken-4.jpeg';
 const cilantro5 = '../assets/Products/mexican-cilantro-lime-chicken-5.jpeg';
 const cilantro6 = '../assets/Products/mexican-cilantro-lime-chicken-6.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     AVOCADO_OIL,
     BAKING_SHEET,
@@ -35,8 +35,6 @@ module.exports = {
     method: [METHODS.GRILL],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN, TYPES.RICE],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },

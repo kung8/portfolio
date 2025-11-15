@@ -15,8 +15,6 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [],
     type: [TYPES.CAKE],
-    allergies: [],
-    diet: [],
     yields: { amount: 20, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },

@@ -4,7 +4,7 @@ const pho3 = '../assets/Products/pho-3.jpeg';
 const pho4 = '../assets/Products/pho-4.jpeg';
 const pho5 = '../assets/Products/pho-5.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BEAN_SPROUT,
     BEEF_BROTH,
@@ -42,8 +42,6 @@ module.exports = {
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     protein: [PROTEIN.BEEF],
     type: [TYPES.NOODLE, TYPES.SOUP],
-    allergies: [ALLERGIES.FISH],
-    diet: [DIET.DAIRY_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },

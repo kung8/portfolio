@@ -6,7 +6,7 @@ const omelette4 = '../assets/Products/american-omelette-4.jpeg';
 const omelette5 = '../assets/Products/american-omelette-5.jpeg';
 const omelette6 = '../assets/Products/american-omelette-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BASIL,
     BLACK_PEPPER,
@@ -46,8 +46,6 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.EGG],
     type: [TYPES.MAIN_COURSE],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 1, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

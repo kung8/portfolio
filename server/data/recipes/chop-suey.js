@@ -3,7 +3,7 @@ const suey2 = '../assets/Products/chop-suey-2.jpeg';
 const suey3 = '../assets/Products/chop-suey-3.jpeg';
 const suey4 = '../assets/Products/chop-suey-4.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BABY_BOK_CHOY, BAKING_SODA, BEAN_SPROUT, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CARROT, CORNSTARCH, GARLIC, LIGHT_SOY_SAUCE, MEDIUM_BOWL, MIXING_BOWL, MUSHROOM, OYSTER_SAUCE, SESAME_OIL, SHAOXING_WINE, STOVE, VEGETABLE_OIL, WATER, WHITE_ONION, WHITE_PEPPER, WOK } = require('./ingredients');
 
 module.exports = {
@@ -17,8 +17,6 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SIDE_DISH],
-    allergies: [ALLERGIES.SESAME],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

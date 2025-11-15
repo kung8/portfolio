@@ -10,7 +10,7 @@ const pesto9 = '../assets/Products/basil-pesto-9.jpeg';
 const pesto10 = '../assets/Products/basil-pesto-10.jpeg';
 const pesto11 = '../assets/Products/basil-pesto-11.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BASIL_LEAF,
     BLACK_PEPPER,
@@ -36,8 +36,6 @@ module.exports = {
     method: [METHODS.BLEND],
     protein: [PROTEIN.PINE_NUT],
     type: [TYPES.SAUCE],
-    allergies: [ALLERGIES.TREE_NUT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 7, unit: TIME_UNITS.MINUTE },

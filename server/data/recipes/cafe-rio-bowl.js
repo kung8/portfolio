@@ -11,7 +11,7 @@ const bowl10 = '../assets/Products/cafe-rio-bowl-10.jpeg';
 const bowl11 = '../assets/Products/cafe-rio-bowl-11.jpeg';
 const bowl12 = '../assets/Products/cafe-rio-bowl-12.jpeg';
 
-const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS, ALLERGIES, DIET } = require("./constants");
+const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
     AVOCADO,
     BALSAMIC_VINEGAR,
@@ -56,8 +56,6 @@ module.exports = {
     method: [METHODS.MARINADE, METHODS.GRILL],
     protein: [PROTEIN.ALTERNATIVE],
     type: [TYPES.SALAD, TYPES.PROTEIN],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

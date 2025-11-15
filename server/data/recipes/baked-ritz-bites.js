@@ -1,7 +1,7 @@
 const bites1 = '../assets/Products/baked-ritz-bites-1.jpeg';
 const bites2 = '../assets/Products/baked-ritz-bites-2.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, BAKING_SHEET, BUTTER_PICKLE_CHIPS, EVERYTHING_BAGEL_SEASONING, HAVARTI_CHEESE, OVEN, RITZ_CRACKERS } = require('./ingredients');
 
 module.exports = {
@@ -14,8 +14,6 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.SIDE_DISH, TYPES.FINGER_FOOD],
-    allergies: [],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 3, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

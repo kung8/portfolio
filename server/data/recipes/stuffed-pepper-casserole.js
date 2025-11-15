@@ -2,7 +2,7 @@ const casserole1 = '../assets/Products/stuffed-pepper-casserole-1.jpeg';
 const casserole2 = '../assets/Products/stuffed-pepper-casserole-2.jpeg';
 const casserole3 = '../assets/Products/stuffed-pepper-casserole-3.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BLACK_PEPPER, CHEDDAR_CHEESE, DICED_TOMATO, FRYING_PAN, GARLIC_POWDER, GREEN_BELL_PEPPER, GROUND_BEEF, OVEN, RED_BELL_PEPPER, SALT, STOVE, WHITE_RICE, YELLOW_ONION } = require('./ingredients');
 
 const REST_OF_FILLING_SECTION = 'Rest of Filling';
@@ -20,8 +20,6 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.BEEF],
     type: [TYPES.CASSEROLE],
-    allergies: [],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

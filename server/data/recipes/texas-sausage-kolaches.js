@@ -13,7 +13,7 @@ const kolaches12 = '../assets/Products/texas-sausage-kolaches-12.jpeg';
 const kolaches13 = '../assets/Products/texas-sausage-kolaches-13.jpeg';
 const kolaches14 = '../assets/Products/texas-sausage-kolaches-14.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, CHEDDAR_CHEESE, DOUGH_KNIFE, EGG, MILK, OVEN, PARCHMENT_PAPER, SALT, SAUCEPAN, SAUSAGE_LINK, STAND_MIXER, STOVE, UNSALTED_BUTTER, WATER, WHITE_SUGAR, YEAST } = require('./ingredients');
 
 const SUGAR_MIXTURE_SECTION = 'Sugar Mixture';
@@ -32,8 +32,6 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.EGG, PROTEIN.PORK],
     type: [TYPES.MAIN_COURSE, TYPES.FINGER_FOOD],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 20, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

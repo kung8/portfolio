@@ -6,7 +6,7 @@ const ramen5 = '../assets/Products/lemon-chicken-ramen-5.jpeg';
 const ramen6 = '../assets/Products/lemon-chicken-ramen-6.jpeg';
 const ramen7 = '../assets/Products/lemon-chicken-ramen-7.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BLACK_PEPPER, CHICKEN_BREAST, CHICKEN_BROTH, CILANTRO, CUTTING_BOARD, FRESH_RAMEN_NOODLES, GARLIC, GREEN_ONION, KNIFE, LARGE_POT, LEMON, LIGHT_CREAM, OLIVE_OIL, OREGANO, PAPRIKA, RED_PEPPER_FLAKES, SALT, SESAME_SEEDS, SNOW_PEA, STOVE } = require('./ingredients');
 
 module.exports = {
@@ -20,8 +20,6 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.SOUP, TYPES.NOODLE],
-    allergies: [ALLERGIES.GLUTEN, ALLERGIES.SESAME, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

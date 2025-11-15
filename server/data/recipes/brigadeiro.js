@@ -7,7 +7,7 @@ const brigadeiro6 = '../assets/Products/brigadeiro-6.jpeg';
 const brigadeiro7 = '../assets/Products/brigadeiro-7.jpeg';
 const brigadeiro8 = '../assets/Products/brigadeiro-8.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BOWL, REFRIGERATOR, SAUCEPAN, SEMI_SWEET_CHOCOLATE_CHIPS, SPATULA, SPRINKLES, STOVE, SWEETENED_CONDENSED_MILK, UNSALTED_BUTTER } = require('./ingredients');
 
 const BRIGADEIRO_SECTION = 'Brigadeiro';
@@ -22,8 +22,6 @@ module.exports = {
     genre: [GENRES.BRAZILIAN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 20, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

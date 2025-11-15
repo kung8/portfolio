@@ -2,7 +2,7 @@ const sloppy1 = '../assets/Products/sloppy-joes-1.jpeg';
 const sloppy2 = '../assets/Products/sloppy-joes-2.jpeg';
 const sloppy3 = '../assets/Products/sloppy-joes-3.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLACK_PEPPER,
     BROWN_SUGAR,
@@ -32,8 +32,6 @@ module.exports = {
     method: [METHODS.SAUTE],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SANDWICH],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },

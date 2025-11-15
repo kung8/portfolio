@@ -10,7 +10,7 @@ const rolls9 = '../assets/Products/pizza-egg-rolls-9.jpeg';
 const rolls10 = '../assets/Products/pizza-egg-rolls-10.jpeg';
 const rolls11 = '../assets/Products/pizza-egg-rolls-11.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, COOLING_RACK, DEEP_FRYER_OR_STOVE, GREEN_BELL_PEPPER, ITALIAN_SAUSAGE, MIXING_BOWL, MOZZARELLA_CHEESE, PAPER_TOWELS, PEPPERONI, PIZZA_SAUCE, RED_BELL_PEPPER, SPRING_ROLL_WRAPPER, TALL_NARROW_POT, VEGETABLE_OIL, YELLOW_ONION } = require('./ingredients');
 
 const PREP_SPRING_ROLLS = 'Prep Spring Rolls';
@@ -26,8 +26,6 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.FINGER_FOOD],
-    allergies: [],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 32, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },

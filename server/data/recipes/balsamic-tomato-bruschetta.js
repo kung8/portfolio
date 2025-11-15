@@ -4,7 +4,7 @@ const bruschetta3 = '../assets/Products/bruschetta-3.jpeg';
 const bruschetta4 = '../assets/Products/bruschetta-4.jpeg';
 const bruschetta5 = '../assets/Products/bruschetta-5.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAGUETTE, BAKING_SHEET, BALSAMIC_VINEGAR, BASIL_LEAF, BLACK_PEPPER, CHERRY_TOMATO, GARLIC, MEDIUM_BOWL, OLIVE_OIL, OVEN, SALT, SHALLOT } = require('./ingredients');
 
 const BAGUETTE_SECTION = 'Baguette';
@@ -22,8 +22,6 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
     type: [TYPES.SIDE_DISH, TYPES.FINGER_FOOD],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 16, unit: YIELD_UNITS.SLICE },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

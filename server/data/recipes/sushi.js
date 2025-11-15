@@ -1,5 +1,5 @@
 const sushi1 = '../assets/Products/sushi-1.jpeg';
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     AVOCADO,
     CREAM_CHEESE,
@@ -34,8 +34,6 @@ module.exports = {
     method: [METHODS.RAW],
     protein: [PROTEIN.FISH, PROTEIN.SEAFOOD],
     type: [TYPES.RICE],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.SESAME],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.PESCATARIAN],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

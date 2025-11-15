@@ -11,7 +11,7 @@ const paella10 = '../assets/Products/shrimp-paella-10.jpeg';
 const paella11 = '../assets/Products/shrimp-paella-11.jpeg';
 const paella12 = '../assets/Products/shrimp-paella-12.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ARBORIO_RICE, BOWL, CAYENNE_PEPPER, CHICKEN_BROTH, CHORIZO, DUTCH_OVEN_POT, GARLIC, GREEN_PEA, LEMON, OLIVE_OIL, OVEN, PAPRIKA, PARSLEY, RED_BELL_PEPPER, SAFFRON_THREADS, SALT, SAUCEPAN, SHRIMP, STOVE, STRAINER, YELLOW_ONION } = require('./ingredients');
 
 const PAELLA = 'Paella';
@@ -28,8 +28,6 @@ module.exports = {
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
     protein: [PROTEIN.SHRIMP],
     type: [TYPES.MAIN_COURSE],
-    allergies: [ALLERGIES.SHELLFISH],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 55, unit: TIME_UNITS.MINUTE },

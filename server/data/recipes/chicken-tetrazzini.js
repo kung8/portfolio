@@ -6,7 +6,7 @@ const tetrazzini5 = '../assets/Products/chicken-tetrazzini-5.jpeg';
 const tetrazzini6 = '../assets/Products/chicken-tetrazzini-6.jpeg';
 const tetrazzini7 = '../assets/Products/chicken-tetrazzini-7.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, BLACK_PEPPER, CASSEROLE_DISH, CAYENNE_PEPPER, CHICKEN_BROTH, CREAM_OF_MUSHROOM, GARLIC_POWDER, LARGE_POT, MIXING_BOWL, MOZZARELLA_CHEESE, ONION_POWDER, OVEN, PARMESAN_CHEESE, PARSLEY, ROTISSERIE_CHICKEN, SALT, SOUR_CREAM, SPAGHETTI_NOODLES, STOVE, UNSALTED_BUTTER } = require('./ingredients');
 
 const PREP_CASSEROLE = 'Prep Casserole';
@@ -23,8 +23,6 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CASSEROLE],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },

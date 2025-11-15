@@ -4,7 +4,7 @@ const roll3 = '../assets/Products/turkey-roll-up-3.jpeg';
 const roll4 = '../assets/Products/turkey-roll-up-4.jpeg';
 const roll5 = '../assets/Products/turkey-roll-up-5.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CRANBERRY_SAUCE, CREAM_CHEESE, CUTTING_BOARD, FLOUR_TORTILLA, KNIFE, MEDIUM_BOWL, PROVOLONE_CHEESE, ROMAINE_LETTUCE, SLICER_TOMATO, TURKEY } = require('./ingredients');
 
 module.exports = {
@@ -18,8 +18,6 @@ module.exports = {
     method: [METHODS.RAW],
     protein: [PROTEIN.TURKEY],
     type: [TYPES.WRAP],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [

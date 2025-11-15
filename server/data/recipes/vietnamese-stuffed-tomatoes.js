@@ -12,7 +12,7 @@ const tomatoes11 = '../assets/Products/vietnamese-stuffed-tomatoes-11.jpeg';
 const tomatoes12 = '../assets/Products/vietnamese-stuffed-tomatoes-12.jpeg';
 const tomatoes13 = '../assets/Products/vietnamese-stuffed-tomatoes-13.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CORNSTARCH, FISH_SAUCE, FRYING_PAN, GARLIC, GREEN_ONION, GROUND_PORK, KNIFE, LIGHT_SOY_SAUCE, MEDIUM_BOWL, MIXING_BOWL, SALT, SMALL_BOWL, SPOON, STOVE, VEGETABLE_OIL, VINE_TOMATO, WATER, WHITE_SUGAR, YELLOW_ONION } = require('./ingredients');
 
 const TOMATOES_SECTION = 'Tomatoes';
@@ -28,8 +28,6 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.PORK],
     type: [TYPES.PROTEIN],
-    allergies: [ALLERGIES.FISH],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

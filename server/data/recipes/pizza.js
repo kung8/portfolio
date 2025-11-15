@@ -25,7 +25,7 @@ const pizza24 = '../assets/Products/pizza-24.jpeg';
 const pizza25 = '../assets/Products/pizza-25.jpeg';
 const pizza26 = '../assets/Products/pizza-26.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BACON,
@@ -90,8 +90,6 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
     type: [TYPES.PIZZA],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_LAMB, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },

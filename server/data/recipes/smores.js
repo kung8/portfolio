@@ -1,5 +1,5 @@
 const smores1 = '../assets/Products/smores-1.jpeg';
-const { CATEGORIES, DIET, GENRES, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALUMINUM_FOIL,
     BAKING_SHEET,
@@ -22,8 +22,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 8, unit: TIME_UNITS.MINUTE },

@@ -4,7 +4,7 @@ const pizza6 = '../assets/Products/pizza-6.jpeg';
 const pizza8 = '../assets/Products/pizza-8.MOV';
 const pizza25 = '../assets/Products/pizza-25.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BAKING_SHEET,
     BREAD_FLOUR,
@@ -35,8 +35,6 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

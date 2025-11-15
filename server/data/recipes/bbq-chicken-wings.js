@@ -3,7 +3,7 @@ const wings2 = '../assets/Products/bbq-chicken-wings-2.jpeg';
 const wings3 = '../assets/Products/bbq-chicken-wings-3.jpeg';
 const wings4 = '../assets/Products/bbq-chicken-wings-4.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BAKING_SODA,
     BLACK_PEPPER,
@@ -35,8 +35,6 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.FINGER_FOOD],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 3, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },

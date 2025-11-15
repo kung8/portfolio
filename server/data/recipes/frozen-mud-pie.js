@@ -7,7 +7,7 @@ const pie6 = '../assets/Products/frozen-mud-pie-6.jpeg';
 const pie7 = '../assets/Products/frozen-mud-pie-7.jpeg';
 const pie8 = '../assets/Products/frozen-mud-pie-8.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CHOCOLATE_ICE_CREAM, FREEZER, HOT_FUDGE_SAUCE, MIXING_BOWL, OREO_COOKIES, PIE_PAN, UNSALTED_BUTTER, UNSALTED_PEANUT, WHIPPED_CREAM } = require('./ingredients');
 
 const HOT_FUDGE_SECTION = 'Hot Fudge';
@@ -27,8 +27,6 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.FREEZE],
     type: [TYPES.DESSERT, TYPES.PIE],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },

@@ -11,7 +11,7 @@ const stuffing10 = '../assets/Products/stuffing-10.jpeg';
 const stuffing11 = '../assets/Products/stuffing-11.jpeg';
 const stuffing12 = '../assets/Products/stuffing-12.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BLACK_PEPPER, BREAD, CELERY, CHICKEN_BROTH, COOKING_SPRAY, EGG, FRESH_ROSEMARY, FRESH_SAGE, FRYING_PAN, GARLIC, OVEN, PARSLEY, SALT, SMALL_BOWL, STOVE, SWEET_ONION, UNSALTED_BUTTER, WHISK } = require('./ingredients');
 
 module.exports = {
@@ -23,8 +23,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.SIDE_DISH],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },

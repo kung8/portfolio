@@ -4,7 +4,7 @@ const tacos3 = '../assets/Products/beef-tacos-3.jpeg';
 const tacos4 = '../assets/Products/beef-tacos-4.jpeg';
 const tacos5 = '../assets/Products/beef-tacos-5.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CHILI_POWDER, CUMIN, FLOUR_TORTILLA, FRYING_PAN, GARLIC_POWDER, GROUND_BEEF, LETTUCE, MEXICAN_BLEND_CHEESE, MICROWAVE, OLIVE_OIL, OREGANO, PLATE, RED_ONION, ROMA_TOMATO, SALT, STOVE, TOMATO_PASTE, WATER } = require('./ingredients');
 
 const TACO_SHELLS = 'Taco Shells';
@@ -20,8 +20,6 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.TACO],
-    allergies: [],
-    diet: [DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

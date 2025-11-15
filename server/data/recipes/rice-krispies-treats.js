@@ -5,7 +5,7 @@ const treats4 = '../assets/Products/rice-krispies-treats-4.jpeg';
 const treats5 = '../assets/Products/rice-krispies-treats-5.jpeg';
 const treats6 = '../assets/Products/rice-krispies-treats-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const { BAKING_PAN, MINI_MARSHMALLOWS, RICE_KRISPIES_CEREAL, SAUCEPAN, STOVE, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
 
 const MARSHMALLOW_BUTTER = 'Marshmallow and Butter';
@@ -22,8 +22,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
     type: [TYPES.DESSERT],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

@@ -2,7 +2,7 @@ const casserole1 = '../assets/Products/green-bean-casserole-1.jpeg';
 const casserole2 = '../assets/Products/green-bean-casserole-2.jpeg';
 const casserole3 = '../assets/Products/green-bean-casserole-3.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BLACK_PEPPER, CANNED_GREEN_BEANS, CREAM_OF_MUSHROOM, CRISPY_FRIED_ONIONS, LIGHT_SOY_SAUCE, MILK, OVEN, SALT } = require('./ingredients');
 
 module.exports = {
@@ -14,8 +14,6 @@ module.exports = {
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.CASSEROLE],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },

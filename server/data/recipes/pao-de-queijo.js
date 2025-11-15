@@ -11,7 +11,7 @@ const cheeseball10 = '../assets/Products/pao-de-queijo-10.jpeg';
 const cheeseball11 = '../assets/Products/pao-de-queijo-11.jpeg';
 const cheeseball12 = '../assets/Products/pao-de-queijo-12.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_SHEET,
     EGG,
@@ -41,8 +41,6 @@ module.exports = {
     genre: [GENRES.BRAZILIAN, GENRES.LATIN],
     method: [METHODS.BAKE],
     type: [TYPES.BREAD, TYPES.FINGER_FOOD],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 2, unit: YIELD_UNITS.DOZEN },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

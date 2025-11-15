@@ -5,7 +5,7 @@ const gravy4 = '../assets/Products/kfc-gravy-4.jpeg';
 const gravy5 = '../assets/Products/kfc-gravy-5.jpeg';
 const gravy6 = '../assets/Products/mash-potatoes-10.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BEEF_BOUILLON_CUBE, BLACK_PEPPER, CHICKEN_BOUILLON_CUBE, ONION_POWDER, SALT, SAUCEPAN, STOVE, UNSALTED_BUTTER, WATER, WHISK } = require('./ingredients');
 
 const ROUX_SECTION = 'Roux';
@@ -25,8 +25,6 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.BEEF, PROTEIN.CHICKEN],
     type: [TYPES.SAUCE],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 1, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },

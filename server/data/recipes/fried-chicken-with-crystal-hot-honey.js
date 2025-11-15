@@ -14,8 +14,6 @@ module.exports = {
     method: [METHODS.FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.MAIN_COURSE],
-    allergies: [],
-    diet: [],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },

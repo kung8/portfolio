@@ -10,7 +10,7 @@ const apples9 = '../assets/Products/caramel-apples-9.jpeg';
 const apples10 = '../assets/Products/caramel-apples-10.jpeg';
 const apples11 = '../assets/Products/caramel-apples-11.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BAMBOO_SKEWERS, BROWN_SUGAR, COOKING_THERMOMETER, CORN_SYRUP, GRANNY_SMITH_APPLE, PARCHMENT_PAPER, SPIDER_STRAINER, STOVE, SWEETENED_CONDENSED_MILK, TALL_NARROW_POT, UNSALTED_BUTTER, VANILLA_EXTRACT } = require('./ingredients');
 
 const APPLE = 'Apple';
@@ -25,8 +25,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],
     type: [TYPES.DESSERT],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

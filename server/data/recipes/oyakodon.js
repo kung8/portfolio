@@ -11,7 +11,7 @@ const oyakodon10 = '../assets/Products/oyakodon-10.jpeg';
 const oyakodon11 = '../assets/Products/oyakodon-11.jpeg';
 const oyakodon12 = '../assets/Products/oyakodon-12.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BONELESS_AND_SKINLESS_CHICKEN_THIGH, CHOPSTICKS, DASHI, EGG, FRYING_PAN, GREEN_ONION, LIGHT_SOY_SAUCE, MEDIUM_BOWL, MIRIN, MIXING_BOWL, RICE_COOKER, SHAOXING_WINE, SHORT_GRAINED_RICE, STOVE, WHITE_SUGAR, YELLOW_ONION } = require('./ingredients');
 
 const SEASONING = 'Seasoning';
@@ -32,8 +32,6 @@ module.exports = {
     method: [METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN, PROTEIN.EGG],
     type: [TYPES.RICE],
-    allergies: [ALLERGIES.EGG],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

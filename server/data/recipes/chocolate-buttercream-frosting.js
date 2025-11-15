@@ -6,7 +6,7 @@ const frosting5 = '../assets/Products/chocolate-buttercream-frosting-5.jpeg';
 const frosting6 = '../assets/Products/chocolate-buttercream-frosting-6.jpeg';
 const frosting7 = '../assets/Products/chocolate-buttercream-frosting-7.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { COCOA_POWDER, HEAVY_CREAM, MIXING_BOWL, POWDERED_SUGAR, REFRIGERATOR, SPATULA, UNSALTED_BUTTER, VANILLA_EXTRACT, WHISK } = require('./ingredients');
 
 const CREAM_SECTION = 'Cream';
@@ -28,8 +28,6 @@ module.exports = {
     genre: [GENRES.AMERICAN],
     method: [METHODS.MIX],
     type: [TYPES.DESSERT],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 72, unit: YIELD_UNITS.TABLESPOON },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 0, unit: TIME_UNITS.MINUTE },

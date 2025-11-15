@@ -1,7 +1,7 @@
 const steak1 = '../assets/Products/steak-1.jpeg';
 const steak2 = '../assets/Products/steak-2.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BEEF_NEW_YORK_STRIP, BLACK_PEPPER, FORK, GRILL, KNIFE, ONION_POWDER, SALT, TONGS, UNSALTED_BUTTER } = require('./ingredients');
 
 const BUTTER_SECTION = 'Butter';
@@ -18,8 +18,6 @@ module.exports = {
     method: [METHODS.GRILL],
     protein: [PROTEIN.BEEF],
     type: [TYPES.PROTEIN, TYPES.MAIN_COURSE],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },

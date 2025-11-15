@@ -3,7 +3,7 @@ const bark2 = '../assets/Products/peppermint-bark-2.jpeg';
 const bark3 = '../assets/Products/peppermint-bark-3.jpeg';
 const bark4 = '../assets/Products/peppermint-bark-4.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, CANDY_CANES, KNIFE, MEDIUM_BOWL, MICROWAVE, PARCHMENT_PAPER, PEPPERMINT_EXTRACT, SEMI_SWEET_CHOCOLATE_CHIPS, SPATULA, WHITE_CHOCOLATE_CHIPS } = require('./ingredients');
 
 const SEMI_SWEET_CHOCOLATE_SECTION = 'Semi-Sweet Chocolate Layer';
@@ -24,8 +24,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.MELT, METHODS.CHILLED],
     type: [TYPES.DESSERT],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PLANT_BASED, DIET.VEGAN, DIET.VEGETARIAN],
     yields: { amount: 16, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },

@@ -16,7 +16,7 @@ const crostata15 = '../assets/Products/cherry-crostata-15.jpeg';
 const crostata16 = '../assets/Products/cherry-crostata-16.jpeg';
 const crostata17 = '../assets/Products/cherry-crostata-17.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_POWDER, CHERRY, CORNSTARCH, DARK_COOKING_CHOCOLATE, DOUGH_KNIFE, EGG, EGG_YOLK, LEMON_JUICE, LEMON_ZEST, OVEN, PIE_PAN, SALT, SAUCEPAN, STAND_MIXER, STOVE, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
@@ -29,8 +29,6 @@ module.exports = {
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
     type: [TYPES.PIE],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },

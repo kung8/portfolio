@@ -1,5 +1,5 @@
 // const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, REHEAT_METHODS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TYPES } = require('./constants');
 const {  } = require('./ingredients');
 
 module.exports = {
@@ -13,8 +13,6 @@ module.exports = {
     genre: [GENRES.ASIAN,GENRES.CHINESE],
     method: [METHODS.BOIL],
     type: [TYPES.SOUP,TYPES.DESSERT],
-    allergies: [],
-    diet: [],
     yields: { amount: '', unit: '' },
     prepTime: { amount: '', unit: '' },
     cookTime: { amount: '', unit: '' },

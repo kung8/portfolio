@@ -1,5 +1,5 @@
 const mexicanChickenBake = '../assets/Products/mexican-chicken-bake.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, METHODS, PROTEIN, REHEAT_METHODS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 // const {  } = require('./ingredients');
 
 module.exports = {
@@ -13,8 +13,6 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.CASSEROLE],
-    allergies: [],
-    diet: [],
     yields: { amount: '', unit: YIELD_UNITS.SERVING },
     prepTime: { amount: '', unit: TIME_UNITS.MINUTE },
     cookTime: { amount: '', unit: TIME_UNITS.MINUTE },

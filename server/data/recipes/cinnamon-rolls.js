@@ -12,7 +12,7 @@ const rolls11 = '../assets/Products/cinnamon-rolls-11.jpeg';
 const rolls12 = '../assets/Products/cinnamon-rolls-12.jpeg';
 const rolls13 = '../assets/Products/cinnamon-rolls-13.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BREAD_FLOUR, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, EGG, EGG_YOLK, MEDIUM_BOWL, MICROWAVE, MILK, MIXING_BOWL, OVEN, POWDERED_SUGAR, SALT, SMALL_BOWL, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR, YEAST } = require('./ingredients');
 
 module.exports = {
@@ -25,8 +25,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 9, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 2, unit: TIME_UNITS.HOUR },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

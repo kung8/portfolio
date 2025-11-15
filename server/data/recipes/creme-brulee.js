@@ -6,7 +6,7 @@ const brulee5 = '../assets/Products/creme-brulee-5.jpeg';
 const brulee6 = '../assets/Products/creme-brulee-6.jpeg';
 const brulee7 = '../assets/Products/creme-brulee-7.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, EGG_YOLK, HEAVY_CREAM, MEDIUM_BOWL, OVEN, RAMEKIN, SAUCEPAN, STOVE, VANILLA_BEAN, WATER, WHITE_SUGAR } = require('./ingredients');
 
 const CREAM = 'Cream';
@@ -23,8 +23,6 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.BAKE],
     protein: [PROTEIN.EGG],
     type: [TYPES.DESSERT],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 1, unit: TIME_UNITS.HOUR },

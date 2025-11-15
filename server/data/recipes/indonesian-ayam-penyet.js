@@ -4,7 +4,7 @@ const penyet3 = '../assets/Products/ayam-penyet-3.jpeg';
 const penyet4 = '../assets/Products/ayam-penyet-4.jpeg';
 const penyet5 = '../assets/Products/ayam-penyet-5.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CHICKEN_THIGH, CORIANDER_POWDER, CURRY_LEAF, FRYING_PAN, GARLIC, GINGER, KEY_LIME_JUICE, LARGE_POT, LEMON_BASIL, MORTAR_AND_PESTLE, RED_CHILI, ROMA_TOMATO, SALT, SHALLOT, SHRIMP_PASTE, STOVE, VEGETABLE_OIL, WATER, WHITE_SUGAR } = require('./ingredients');
 
 const GINGER_PASTE_SECTION = 'Ginger Paste';
@@ -27,8 +27,6 @@ module.exports = {
     method: [METHODS.BOIL, METHODS.PAN_FRY],
     protein: [PROTEIN.CHICKEN],
     type: [TYPES.PROTEIN, TYPES.MAIN_COURSE],
-    allergies: [],
-    diet: [DIET.DAIRY_FREE, DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },

@@ -5,7 +5,7 @@ const bars4 = '../assets/Products/lemon-bars-4.jpeg';
 const bars5 = '../assets/Products/lemon-bars-5.jpeg';
 const bars6 = '../assets/Products/lemon-bars-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_PAN, EGG, LEMON_JUICE, LEMON_ZEST, MIXING_BOWL, OVEN, PARCHMENT_PAPER, POWDERED_SUGAR, SALT, UNSALTED_BUTTER, WHITE_SUGAR } = require('./ingredients');
 
 module.exports = {
@@ -18,8 +18,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT, TYPES.BAR],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 3 / 2, unit: YIELD_UNITS.DOZEN },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 55, unit: TIME_UNITS.MINUTE },

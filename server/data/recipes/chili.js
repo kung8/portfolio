@@ -5,7 +5,7 @@ const chili4 = '../assets/Products/chili-4.jpeg';
 const chili5 = '../assets/Products/chili-5.jpeg';
 const chili6 = '../assets/Products/chili-6.jpeg';
 
-const { CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BEEF_BROTH,
     BLACK_PEPPER,
@@ -43,8 +43,6 @@ module.exports = {
     method: [METHODS.BOIL],
     protein: [PROTEIN.BEEF],
     type: [TYPES.SOUP],
-    allergies: [],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },

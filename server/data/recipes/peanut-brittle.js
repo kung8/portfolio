@@ -3,7 +3,7 @@ const brittle2 = '../assets/Products/peanut-brittle-2.jpeg';
 const brittle3 = '../assets/Products/peanut-brittle-3.jpeg';
 const brittle4 = '../assets/Products/peanut-brittle-4.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BAKING_SODA, COOKING_THERMOMETER, CORN_SYRUP, PARCHMENT_PAPER, SAUCEPAN, STOVE, UNSALTED_BUTTER, UNSALTED_PEANUT, VANILLA_EXTRACT, WATER, WHITE_SUGAR } = require('./ingredients');
 
 const SUGARS_SECTION = 'Sugars';
@@ -25,8 +25,6 @@ module.exports = {
     method: [METHODS.SIMMER],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.FINGER_FOOD],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 50, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },

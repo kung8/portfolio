@@ -2,7 +2,7 @@ const brownies1 = '../assets/Products/brownies-1.jpeg';
 const brownies2 = '../assets/Products/brownies-2.jpeg';
 const brownies3 = '../assets/Products/brownies-3.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BAKING_PAN,
@@ -28,8 +28,6 @@ module.exports = {
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 7, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },

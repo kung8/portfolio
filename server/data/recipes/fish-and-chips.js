@@ -5,7 +5,7 @@ const chips4 = '../assets/Products/fish-and-chips-4.jpeg';
 const chips5 = '../assets/Products/fish-and-chips-5.jpeg';
 const chips6 = '../assets/Products/fish-and-chips-6.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BEER, BLACK_PEPPER, COD_FISH, DEEP_FRYER_OR_STOVE, EGG, GARLIC_POWDER, MIXING_BOWL, PAPRIKA, SALT, TALL_NARROW_POT, VEGETABLE_OIL } = require('./ingredients');
 
 const BEER_BATTER_SECTION = 'Beer Batter';
@@ -22,8 +22,6 @@ module.exports = {
     method: [METHODS.DEEP_FRY],
     protein: [PROTEIN.FISH],
     type: [TYPES.MAIN_COURSE, TYPES.FINGER_FOOD],
-    allergies: [ALLERGIES.EGG, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
-    diet: [DIET.DAIRY_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.PESCATARIAN],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },

@@ -6,7 +6,7 @@ const noodles5 = '../assets/Products/pad-thai-5.jpeg';
 const noodles6 = '../assets/Products/pad-thai-6.jpeg';
 const noodles7 = '../assets/Products/pad-thai-7.jpeg';
 
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BEAN_SPROUT,
     BROWN_RICE_NOODLES,
@@ -49,8 +49,6 @@ module.exports = {
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.ALTERNATIVE, PROTEIN.CHICKEN, PROTEIN.PEANUT],
     type: [TYPES.NOODLE],
-    allergies: [ALLERGIES.DAIRY, ALLERGIES.EGG, ALLERGIES.FISH, ALLERGIES.PEANUT],
-    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },

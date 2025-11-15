@@ -5,7 +5,7 @@ const pie4 = '../assets/Products/biscoff-cookie-pie-4.jpeg';
 const pie5 = '../assets/Products/biscoff-cookie-pie-5.jpeg';
 const pie6 = '../assets/Products/biscoff-cookie-pie-6.jpeg';
 const pie7 = '../assets/Products/biscoff-cookie-pie-7.jpeg'; // TODO: get a photo of the plated pie
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BISCOFF_BUTTER, BISCOFF_COOKIES, COOKIE_BUTTER, CREAM_CHEESE, MIXING_BOWL, PIE_PAN, REFRIGERATOR, ROLLING_PIN, SALT, SEMI_SWEET_CHOCOLATE_CHIPS, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHIPPED_CREAM, WHITE_SUGAR, ZIPLOC_BAG } = require('./ingredients');
 
 const CHOCOLATE_GANACHE = 'Chocolate Ganache';
@@ -23,8 +23,6 @@ module.exports = {
     method: [METHODS.BAKE],
     // protein: [],
     type: [TYPES.PIE],
-    allergies: [ALLERGIES.DAIRY],
-    diet: [DIET.GLUTEN_FREE, DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
