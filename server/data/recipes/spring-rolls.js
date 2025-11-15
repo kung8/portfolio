@@ -20,7 +20,7 @@ const {
     STOVE,
     VEGETABLE_OIL,
     WATER,
-    WOK
+    WOK,
 } = require('./ingredients');
 
 module.exports = {
