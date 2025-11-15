@@ -258,10 +258,10 @@ class RecipeWebScraper {
             supplies: this.extractSuppliesFromInstructions(recipe.recipeInstructions),
             directions: parseInstructions(recipe.recipeInstructions),
             websites: [{
-                label: recipe.author?.name || 'Original Recipe',
+                label: recipe.name || '',
                 link: recipe.url || '',
-                authors: [recipe.author?.name || 'Unknown'],
-                finder: 'Web Scraper'
+                authors: [recipe.author?.name || ''],
+                finder: 'Kevin Ung'
             }]
         };
     }

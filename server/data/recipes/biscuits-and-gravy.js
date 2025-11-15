@@ -134,7 +134,7 @@ module.exports = {
         },
         {
             method: REHEAT_METHODS.MICROWAVE,
-            instruction: 'Wrap the biscuits in a paper towel and microwave until warmed through in 20 to 30 second bursts.',
+            instruction: 'Wrap the biscuits in a damp paper towel and microwave until warmed through in 20 to 30 second bursts.',
         },
         {
             method: REHEAT_METHODS.PAN_FRY,

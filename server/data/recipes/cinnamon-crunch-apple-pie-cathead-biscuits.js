@@ -1,86 +1,128 @@
 // Add image imports here if available
 
 const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { OVEN, BOWL, FRYING_PAN } = require('./ingredients');
+const { BOWL, FRYING_PAN, OVEN, ALL_PURPOSE_FLOUR, WHITE_SUGAR, BAKING_POWDER, BAKING_SODA, CINNAMON, SALT, APPLE_PIE_SPICE, MAPLE_SYRUP, BROWN_SUGAR, VANILLA_EXTRACT, GREEK_YOGURT, BUTTERMILK, UNSALTED_BUTTER, GRANNY_SMITH_APPLE, CORNSTARCH, WATER, SALTED_BUTTER, MEDIUM_SAUCEPAN, SMALL_BOWL, BAKING_PAN, STOVE, MIXING_BOWL, MEDIUM_BOWL, BASTING_BRUSH } = require('./ingredients');
+
+const FIRST_FILLING = 'First Filling';
+const CORNSTARCH_SLURRY = 'Cornstarch Slurry';
+const SECOND_FILLING = 'Second Filling';
+const BISCUITS_1 = 'Biscuits 1';
+const BISCUITS_2 = 'Biscuits 2';
+const BISCUITS_3 = 'Biscuits 3';
+const CINNAMON_SUGAR = 'Cinnamon Sugar';
 
 module.exports = {
     wip: true,
-    cardName: 'Cinnamon Crunch Apple Pie Cathead Biscuits',
+    cardName: 'Apple Pie Cathead Biscuits',
     name: 'Cinnamon Crunch Apple Pie Cathead Biscuits',
     img: '',
     available: true,
     recommended: false,
-    category: [CATEGORIES.Dessert],
-    genre: [GENRES.Greek],
-    method: [METHODS.Bake],
-    protein: [PROTEIN.Bean],
-    type: [TYPES.Pie],
-    allergies: [],
-    diet: [],
+    category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
+    genre: [GENRES.SOUTHERN],
+    method: [METHODS.BAKE],
+    type: [TYPES.BISCUIT, TYPES.DESSERT],
+    allergies: [ALLERGIES.DAIRY, ALLERGIES.GLUTEN, ALLERGIES.WHEAT],
+    diet: [DIET.NO_BEEF, DIET.NO_LAMB, DIET.NO_PORK, DIET.NO_RED_MEAT, DIET.NO_SHELLFISH, DIET.VEGETARIAN],
     yields: { amount: 7, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Kiley Heard', link: '', authors: ['Kiley Heard'], finder: 'Web Scraper' }
+        {
+            label: 'Cinnamon Crunch Apple Pie Cathead Biscuits',
+            link: 'https://www.wellmadebykiley.com/blog/cinnamon-crunch-apple-pie-cathead-biscuits',
+            authors: ['Kiley Heard'],
+            finder: 'Kevin Ung',
+        }
     ],
     ingredients: [
-        { name: '(256g) cake flour (see homemade version in the notes section below)', amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(130g) all-purpose flour', amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(30g) granulated sugar', amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(12g) baking powder', amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(3g) baking soda', amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(2g) cinnamon', amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(3g) salt', amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(171g) salted butter', amount: 12, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'cold and grated', section: SECTIONS.MAIN },
-        { name: '(120ml) buttermilk (or 1/2 tbsp apple cider vinegar or lemon juice mixed with 1/2 cup milk of choice)', amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(240g) Greek yogurt (substitution: sour cream)', amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(4g) vanilla bean paste or extract', amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(28g) salted butter', amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'apples or 1 large apple of choice', amount: 2, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'diced small (and peeled if desired; I used Granny Smith)', section: SECTIONS.MAIN },
-        { name: '(60g) light brown sugar', amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(40g) maple syrup', amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(2g) cinnamon', amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(1g) apple pie spice', amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'Pinch of salt', amount: '', unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(6g) cornstarch + 1 tbsp (15ml) water', amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'for slurry', section: SECTIONS.MAIN },
-        { name: '(4g) vanilla bean paste or extract', amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(45ml) buttermilk or heavy cream', amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'for brushing', section: SECTIONS.MAIN },
-        { name: '(60g) brown sugar', amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: '(2g) cinnamon', amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.MAIN }
+        { ...SALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FIRST_FILLING },
+        { ...GRANNY_SMITH_APPLE, amount: 2, unit: INGREDIENT_UNITS.SMALL, additionalDetails: 'peeled and diced', section: FIRST_FILLING },
+        { ...BROWN_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FIRST_FILLING },
+        { ...MAPLE_SYRUP, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FIRST_FILLING },
+        { ...CINNAMON, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FIRST_FILLING },
+        { ...APPLE_PIE_SPICE, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FIRST_FILLING },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: FIRST_FILLING },
+
+        { ...CORNSTARCH, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CORNSTARCH_SLURRY },
+        { ...WATER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CORNSTARCH_SLURRY },
+
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECOND_FILLING },
+
+        { ...BUTTERMILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BISCUITS_1 },
+        { ...GREEK_YOGURT, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BISCUITS_1 },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BISCUITS_1 },
+
+        { ...CORNSTARCH, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BISCUITS_2 },
+        { ...ALL_PURPOSE_FLOUR, amount: 11 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BISCUITS_2 },
+        { ...WHITE_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BISCUITS_2 },
+        { ...BAKING_POWDER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BISCUITS_2 },
+        { ...BAKING_SODA, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BISCUITS_2 },
+        { ...CINNAMON, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BISCUITS_2 },
+        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BISCUITS_2 },
+
+        { ...SALTED_BUTTER, amount: 12, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'cold and cut into 1/2" slices', section: BISCUITS_3 },
+
+        { ...BROWN_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CINNAMON_SUGAR },
+        { ...CINNAMON, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: CINNAMON_SUGAR },
+        { ...BUTTERMILK, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.COATING },
     ],
     appliances: [
-        OVEN
+        STOVE,
+        OVEN,
     ],
     supplies: [
-        BOWL,
-        FRYING_PAN,
+        MEDIUM_SAUCEPAN,
+        { ...SMALL_BOWL, amount: 2 },
+        BAKING_PAN,
+        MEDIUM_BOWL,
+        MIXING_BOWL,
+        BASTING_BRUSH,
     ],
     directions: [
-        { step: `Start by preparing the apple pie filling first so it has enough time to cool. In a medium saucepan over medium-high heat, add the butter, diced apples, brown sugar, maple syrup, cinnamon, apple pie spice, and salt. Cook until the sugar melts and the apples start to soften, stirring occasionally (~10 minutes). It can help to steam the apples by covering the pan with a lid for a few minutes.`, section: SECTIONS.MAIN },
-        { step: `Mix together the cornstarch and water in a small bowl to create a slurry. Pour the slurry into the apple mixture, stir, and cook until the mixture thickens (1-2 more minutes).`, section: SECTIONS.MAIN },
-        { step: `Remove from the heat and stir in the vanilla. Set aside to cool completely. You can transfer it to a bowl, covered, and place in the refrigerator or freezer to speed up the cooling process!`, section: SECTIONS.MAIN },
-        { step: `Preheat the oven to 425F. Grease a 12” cast iron skillet or large round baking pan with butter. Set aside.`, section: SECTIONS.MAIN },
-        { step: `In a medium bowl, whisk together the buttermilk, Greek yogurt, and vanilla until well combined. Set aside.`, section: SECTIONS.MAIN },
-        { step: `In a separate large bowl, whisk together the cake flour, all-purpose flour, sugar, baking powder, baking soda, cinnamon, and salt.`, section: SECTIONS.MAIN },
-        { step: `Add in the grated butter, and use a wooden spoon to toss until butter is coated in flour and the mixture resembles a ‘crumbly’ texture.`, section: SECTIONS.MAIN },
-        { step: `Make a well in the center of the dry mixture, and pour in the wet mixture. Mix with a wooden spoon until just combined, being careful not to over-mix. If needed, you can use your hands to mix and knead slightly until just combined.`, section: SECTIONS.MAIN },
-        { step: `Make a large dimple in the center of your dough, and place the apple pie filling inside the dimple. Use your hands to gently fold 3-4 times, until the apple pie filling is just evenly dispersed. You want to be careful not the mix the apple pie filling into the dough to make sure the butter stays intact and the dough doesn’t get too wet. You are just looking for ‘ribbons’ of the apple pie filling throughout the dough. It will be sticky, but should be soft enough to scoop!`, section: SECTIONS.MAIN },
-        { step: `Use a large cookie scoop or a ½ cup measuring cup to scoop the dough for each biscuit (if using a large cookie scoop, purposely overfill the scoop), and place in the prepared skillet or pan. At this point, if the dough seems like it’s gotten too warm and the butter isn’t in chunks anymore, cover the pan and place into the refrigerator to chill for 30 minutes.`, section: SECTIONS.MAIN },
-        { step: `Mix together the brown sugar and cinnamon in a small bowl for the cinnamon sugar topping.`, section: SECTIONS.MAIN },
-        { step: `Once ready, brush the tops of the biscuits with buttermilk or heavy cream. Then, sprinkle the tops with the cinnamon sugar mixture.`, section: SECTIONS.MAIN },
-        { step: `Bake for 20-25 minutes, or until fluffy and golden brown.`, section: SECTIONS.MAIN },
-        { step: `Remove the biscuits from the oven and let rest for at least 5-10 minutes. Then, serve them warm with butter, apple butter, flaky sea salt, and a hot cup of coffee, if desired.`, section: SECTIONS.MAIN },
-        { step: `Enjoy!`, section: SECTIONS.MAIN }
-    ],
-    notes: [
-        // Add any additional notes here
+        { step: `Over medium-high heat, add the "${FIRST_FILLING}" section ingredients to a medium saucepan.`, section: SECTIONS.PREP_FILLING },
+        { step: `Cook and stir occasionally until the sugar melts and the apple starts to soften (about 10 minutes).`, section: SECTIONS.PREP_FILLING },
+        { step: `In a small bowl, combine the "${CORNSTARCH_SLURRY}" section ingredients.`, section: SECTIONS.PREP_FILLING },
+        { step: `Add cornstarch slurry to apple mixture. Stir and cook until thickens (about 1 to 2 minutes).`, section: SECTIONS.PREP_FILLING },
+        { step: `Remove from heat. Stir in vanilla.`, section: SECTIONS.PREP_FILLING },
+        { step: `Let it cool completely.`, section: SECTIONS.PREP_FILLING },
+
+        { step: `Preheat the oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },
+        { step: `Grease baking pan with butter.`, section: SECTIONS.PREP_PAN },
+
+        { step: `In a medium bowl, combine the "${BISCUITS_1}" section ingredients. Set aside.`, section: SECTIONS.PREP_BATTER },
+        { step: `In a mixing bowl, combine the "${BISCUITS_2}" section ingredients.`, section: SECTIONS.PREP_BATTER },
+        { step: `Add the butter to the flour mixture. Coat butter until it is crumbly.`, section: SECTIONS.PREP_BATTER },
+        { step: `Make a well in the center. Slowly pour in the buttermilk mixture.`, section: SECTIONS.PREP_BATTER },
+        { step: `Mix until just combined. Avoid overmixing.`, section: SECTIONS.PREP_BATTER },
+        { step: `Pour apple pie filling in center and gently fold a few times.`, section: SECTIONS.PREP_BATTER },
+
+        { step: `Scoop about 1/2 cup of biscuit batter and place in the baking pan.`, section: SECTIONS.ASSEMBLE },
+        { step: `In a small bowl, combine the "${CINNAMON_SUGAR}" section ingredients.`, section: SECTIONS.ASSEMBLE },
+        { step: `Brush the biscuit with the buttermilk.`, section: SECTIONS.ASSEMBLE },
+        { step: `Sprinkle the cinnamon sugar over top.`, section: SECTIONS.ASSEMBLE },
+        { step: `Bake until fluffy and golden brown (about 20 to 25 minutes).`, section: SECTIONS.BAKE },
+
+        { step: `Let biscuits rest for at least 5 to 10 minutes.`, section: SECTIONS.COOL },
+        { step: `Enjoy this delicious breakfast!`, section: SECTIONS.SERVE },
     ],
     store: [
-        // Add storage instructions here if needed
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
-        // Add reheating instructions here if needed
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake at 350ºF until warmed through (about 5 to 10 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Wrap the biscuits in a damp paper towel and microwave until warmed through in 20 to 30 second bursts.',
+        },
     ],
     mealPrep: true,
 };

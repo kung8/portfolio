@@ -116,6 +116,7 @@ const chocolateMousse = require("./recipes/chocolate-mousse");
 const chopSuey = require("./recipes/chop-suey");
 const choySumWithGarlicSauce = require("./recipes/choy-sum-with-garlic-sauce");
 const churros = require("./recipes/churros");
+const cinnamonCrunchApplePieCatheadBiscuits = require("./recipes/cinnamon-crunch-apple-pie-cathead-biscuits");
 const cinnamonRolls = require("./recipes/cinnamon-rolls");
 const coconutChicken = require("./recipes/coconut-chicken");
 const coffeeCake = require("./recipes/coffee-cake");
@@ -675,6 +676,7 @@ const recipes = [
     creamCheeseStuffedBlackberryFrenchToast,
     waffles,
     buttermilkSyrup,
+    cinnamonCrunchApplePieCatheadBiscuits,
     biscuitsAndGravy,
     breakfastSausageBalls,
     breakfastBurrito,
