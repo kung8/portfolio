@@ -801,6 +801,7 @@
                     counter-increment: step-counter;
                     line-height: 150%;
                     max-width: 600px;
+                    cursor: pointer;
 
                     @include mixins.down(theme.$extra-large) {
                         max-width: 500px;
