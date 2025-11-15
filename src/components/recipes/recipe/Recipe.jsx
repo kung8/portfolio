@@ -12,7 +12,7 @@ import { GROCERY_LIST_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../con
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { useGroceryList } from '../hooks/use-grocery-list';
-import { categorizeRecipeType, formatYield, getIngredientData, getRecipeFontSizeClass, handleModalClass } from '../utils';
+import { categorizeRecipeType, formatYield, getIngredientData, getRecipeFontSizeClass, getRecipeRoute, handleModalClass } from '../utils';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
 import { RecipeContext } from './RecipeContext';
 import { RecipeDetails } from './RecipeDetails';
@@ -34,6 +34,7 @@ export const Recipe = ({ match }) => {
     const { data: recipes = [] } = useGetData('recipes');
 
     const item = recipe[0];
+    const recipeLink = getRecipeRoute(item);
     const [selectedFigure, setSelectedFigure] = useState(null);
     const [selectedFigureLabel, setSelectedFigureLabel] = useState(null);
     const [supplies, setSupplies] = useState(item?.supplies || []);
@@ -350,6 +351,7 @@ export const Recipe = ({ match }) => {
                     setSelectedView={setSelectedView}
                 />
 
+                {/* Add Ingredients to Grocery List Modal Logic  */}
                 <div id="add-ingredients-to-grocery-list-modal-overlay" className="overlay" onClick={handleAddIngredientsToGroceryListModalClose} />
                 <AddToGroceryListModal
                     closeModal={handleAddIngredientsToGroceryListModalClose}
@@ -366,7 +368,7 @@ export const Recipe = ({ match }) => {
                         );
                         const newMealPlan = [...mealPlan];
                         if (!hasMealPlanItem) {
-                            newMealPlan.push({ id: generateUUID(), recipeName: item.name, date, type, checked: false, mealPlanningDateRange });
+                            newMealPlan.push({ id: generateUUID(), recipeName: item.name, date, type, checked: false, mealPlanningDateRange, recipeLink });
                             setMealPlan(newMealPlan);
                         }
 
@@ -375,7 +377,7 @@ export const Recipe = ({ match }) => {
                         setSelectedView(GROCERY_LIST_VIEW);
 
                         // Adds to Grocery List
-                        const newIngredientsToAdd = await [...groceryList, ...selectedIngredients.map(async ingredientItem => {
+                        const newIngredientsToAdd = [...groceryList, ...selectedIngredients.map(async ingredientItem => {
                             if (ingredientItem.linkId) {
                                 const response = await getAsyncData('recipes', ingredientItem.linkId);
                                 return response?.data?.[0]?.ingredients?.map((ingredient) => getIngredientData(response.data[0].name, ingredient, ingredient.id ?? generateUUID()));
@@ -386,6 +388,7 @@ export const Recipe = ({ match }) => {
                                 checked: false,
                                 date,
                                 mealPlanningDateRange,
+                                recipeLink,
                                 recipeYield: item?.yields?.unit ? formatYield({ amount: appliedYieldAmount, unit: item?.yields?.unit }) : undefined,
                                 vendor: vendor || '',
                             };
@@ -403,25 +406,29 @@ export const Recipe = ({ match }) => {
                         });
                     }}
                 />
+                {/* End Add Ingredients to Grocery List Modal Logic  */}
 
+                {/* Add Supplies to Grocery List Modal Logic  */}
                 <div id="add-supplies-to-grocery-list-modal-overlay" className="overlay" onClick={handleAddSuppliesToGroceryListModalClose} />
                 <AddToGroceryListModal
                     closeModal={handleAddSuppliesToGroceryListModalClose}
                     initialType={categorizeRecipeType(item?.category?.[0])}
                     modalClassName='add-supplies-to-grocery-list-modal'
-                    onAdd={async ({ date, mealPlanningDateRange, vendor }) => {
+                    onAdd={async ({ date, mealPlanningDateRange, type, vendor }) => {
                         // Handle selected view for modal
                         localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, GROCERY_LIST_VIEW);
                         setSelectedView(GROCERY_LIST_VIEW);
 
                         // Adds to Grocery List
-                        const newIngredientsToAdd = await [...groceryList, ...selectedSupplies.map(async ingredientItem => {
+                        const newIngredientsToAdd = [...groceryList, ...selectedSupplies.map(ingredientItem => {
                             return {
                                 ...ingredientItem,
                                 checked: false,
                                 date,
                                 mealPlanningDateRange,
+                                recipeLink,
                                 // recipeYield: item?.yields?.unit ? formatYield({ amount: appliedYieldAmount, unit: item?.yields?.unit }) : undefined,
+                                type,
                                 vendor: vendor || '',
                             };
                         })];
@@ -438,6 +445,7 @@ export const Recipe = ({ match }) => {
                         });
                     }}
                 />
+                {/* End of Add Supplies to Grocery List Modal Logic  */}
             </RecipeContext.Provider>
         </NonDashboardPage>
     )

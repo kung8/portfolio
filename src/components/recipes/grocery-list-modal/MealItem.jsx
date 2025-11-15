@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 
 import edit from '../../../Assets/edit.png';
+import { baseUrl } from '../utils';
 
 export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChange, onInputChange, showDate, showType }) => {
-    const { checked, date, mealPlanningDateRange, recipeName, type } = item;
+    const { checked, date, mealPlanningDateRange, recipeName, recipeLink, type } = item;
     const [inputValue, setInputValue] = useState(recipeName);    
 
     useEffect(() => {
@@ -20,8 +21,7 @@ export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChan
     useEffect(() => {
         if (recipeName !== inputValue) setInputValue(recipeName);
         // eslint-disable-next-line
-    }, [recipeName])
-    
+    }, [recipeName]);
 
     return (
         <li className="meal-item-container">
@@ -30,40 +30,43 @@ export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChan
                 checked={checked}
                 onChange={() => onCheckboxChange()}
             />
-            {checked ? (
-                <div className="meal-item-content">
-                    <div className="meal-text-input-container">
-                        <label className={checked ? 'checked' : ''}>{inputValue}</label>
-                        <img
-                            onClick={onEditClick}
-                            src={edit} alt="edit" className="edit-icon" />
+            <div className="meal-item-details-container">
+                {checked ? (
+                    <div className="meal-item-content">
+                        <div className="meal-text-input-container">
+                            <label className={checked ? 'checked' : ''}>{inputValue}</label>
+                            <img
+                                onClick={onEditClick}
+                                src={edit} alt="edit" className="edit-icon" />
+                        </div>
+                        {showDate && <span className="meal-item-date">{mealPlanningDateRange?.length > 0 ? mealPlanningDateRange.join('-') : date}</span>}
+                        {showType && <span className="meal-item-meal-type">{type}</span>}
                     </div>
-                    {showDate && <span className="meal-item-date">{mealPlanningDateRange?.length > 0 ? mealPlanningDateRange.join('-') : date}</span>}
-                    {showType && <span className="meal-item-meal-type">{type}</span>}
-                </div>
-            ) : (
-                <div className="meal-item-content">
-                    <div className="meal-text-input-container">
-                        <input
-                            type="text"
-                            value={inputValue}
-                            onChange={(e) => setInputValue(e.target.value)}
-                            onKeyDown={(e) => {
-                                if (e.key === 'Enter') {
-                                    if (!inputValue) {
-                                        onEmptyInputChange();
+                ) : (
+                    <div className="meal-item-content">
+                        <div className="meal-text-input-container">
+                            <input
+                                type="text"
+                                value={inputValue}
+                                onChange={(e) => setInputValue(e.target.value)}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter') {
+                                        if (!inputValue) {
+                                            onEmptyInputChange();
+                                        }
                                     }
-                                }
-                            }}
-                        />
-                        <img
-                            onClick={onEditClick}
-                            src={edit} alt="edit" className="edit-icon" />
+                                }}
+                            />
+                            <img
+                                onClick={onEditClick}
+                                src={edit} alt="edit" className="edit-icon" />
+                        </div>
+                        {showDate && <span className="meal-item-date">{mealPlanningDateRange?.length > 0 ? mealPlanningDateRange.join('-') : date}</span>}
+                        {showType && <span className="meal-item-meal-type">{type}</span>}
                     </div>
-                    {showDate && <span className="meal-item-date">{mealPlanningDateRange?.length > 0 ? mealPlanningDateRange.join('-') : date}</span>}
-                    {showType && <span className="meal-item-meal-type">{type}</span>}
-                </div>
-            )}
+                )}
+                <a href={baseUrl + recipeLink} className="meal-item-recipe-link">View by Recipe</a>
+            </div>
         </li>
     )
 }

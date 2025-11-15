@@ -5,6 +5,7 @@ import { useDebounce } from 'use-debounce';
 
 import edit from '../../../Assets/edit.png';
 import { READABLE_SHORT_DATE } from '../constants';
+import { baseUrl } from '../utils';
 
 export const GroceryListItem = ({
     category,
@@ -15,6 +16,7 @@ export const GroceryListItem = ({
     onCheckboxChange,
     onEmptyInputChange,
     onInputChange,
+    recipeLink,
     recipeName,
     recipeYield,
     sortBy,
@@ -67,7 +69,13 @@ export const GroceryListItem = ({
                 {recipeName && (
                     <p className="recipe-name">
                         <span className="needed-for">Needed for</span>
-                        <span className="recipe-name-text">"{recipeName}"</span>
+                        {recipeLink ? (
+                            <a href={baseUrl + recipeLink} className="recipe-name-text">
+                                "{recipeName}"
+                            </a>
+                        ) : (
+                            <span className="recipe-name-text">"{recipeName}"</span>
+                        )}
                     </p>
                 )}
                 {recipeYield && (

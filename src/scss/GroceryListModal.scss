@@ -134,6 +134,9 @@
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
+                        color: theme.$secondary-blue;
+                        font-weight: bold;
+                        text-decoration: none;
                     }
                 }
 
@@ -263,7 +266,6 @@
             .meal-item-container {
                 font-size: 16px;
                 display: flex;
-                justify-content: space-between;
                 column-gap: 8px;
 
                 input[type="checkbox"] {
@@ -271,47 +273,62 @@
                     width: 20px;
                 }
 
-                .meal-item-content {
-                    width: 100%;
+                .meal-item-details-container {
+                    flex: 1;
                     display: flex;
                     flex-direction: column;
-                    row-gap: 6px;
-                }
+                    row-gap: 4px;
 
-                .meal-text-input-container {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    column-gap: 8px;
-
-                    input[type="text"] {
-                        background: transparent;
-                        outline: none;
-                        border: none;
-                        color: theme.$white;
-                        width: calc(100% - 24px);
-                        font-size: 16px;
+                    .meal-item-content {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 6px;
                     }
 
-                    label {
-                        &.checked {
-                            color: theme.$default;
-                            text-decoration: line-through;
+                    .meal-text-input-container {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        column-gap: 8px;
+
+                        input[type="text"] {
+                            background: transparent;
+                            outline: none;
+                            border: none;
+                            color: theme.$white;
+                            width: calc(100% - 24px);
                             font-size: 16px;
-                            width: 100%;
+                        }
+
+                        label {
+                            &.checked {
+                                color: theme.$default;
+                                text-decoration: line-through;
+                                font-size: 16px;
+                                width: 100%;
+                            }
                         }
                     }
+
+                    .meal-item-date {
+                        font-size: 12px;
+                        color: theme.$default;
+                    }
+    
+                    .meal-item-meal-type {
+                        font-size: 12px;
+                        color: theme.$light;
+                    }
+
+                    .meal-item-recipe-link {
+                        font-size: 14px;
+                        color: theme.$secondary-blue;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
                 }
 
-                .meal-item-date {
-                    font-size: 12px;
-                    color: theme.$default;
-                }
-
-                .meal-item-meal-type {
-                    font-size: 12px;
-                    color: theme.$light;
-                }
             }
 
             .add-meal-item-btn {

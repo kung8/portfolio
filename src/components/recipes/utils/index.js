@@ -11,6 +11,7 @@ export * from './get-recipe-font-size-class';
 export * from './get-show-recipe-figures';
 export * from './get-show-recipe-notes';
 export * from './get-recipe-page-layout';
+export * from './get-recipe-route';
 export * from './get-show-recipe-reheat-options';
 export * from './get-show-recipe-storage-options';
 export * from './get-show-recipe-website-references';

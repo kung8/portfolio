@@ -778,3 +778,7 @@ module.exports = recipes;
 
 // TODO: add timer clock per step to indicate how long each step takes
 // TODO: add user notes section for each recipe to allow users to add their own notes and modifications
+
+// TODO: save the last email
+// TODO: add communication about "I have made this"...
+// TODO: make click on figure and sections not check the step
