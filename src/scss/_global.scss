@@ -97,16 +97,20 @@ html {
 .Toastify__toast-container--top-right {
     position: fixed;
     top: 120px;
+
     .Toastify__toast {
         &.error {
             background: #ffbbbb;
         }
+
         &.success {
             background: #9fffba;
         }
+
         &.info {
             background: #d1e7ff;
         }
+
         .Toastify__toast-body {
             display: flex;
             justify-content: center;
@@ -115,6 +119,7 @@ html {
             text-align: center;
             color: black;
         }
+
         .Toastify__close-button {
             font-size: 16px;
         }
@@ -127,6 +132,7 @@ html {
     display: flex;
     justify-content: space-between;
     height: 100vh;
+
     @include mixins.down(theme.$desktop) {
         padding: 80px 32px;
         flex-direction: column;
@@ -142,6 +148,7 @@ html {
             color: theme.$primary-blue;
             margin-bottom: 8px;
             display: inline-block;
+
             &:hover {
                 color: theme.$primary-blue;
             }
@@ -157,6 +164,7 @@ html {
     position: fixed;
     transform: translate(-50%, -50%);
     transition: transform 0.5s ease-out;
+
     &:before {
         content: "";
         display: block;
