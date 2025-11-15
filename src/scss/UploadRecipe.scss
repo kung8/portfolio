@@ -1,3 +1,5 @@
+@use 'variables' as theme;
+
 .upload-recipe {
     max-width: 800px;
     margin: 0 auto;
@@ -34,6 +36,7 @@
                 border: 2px solid #ddd;
                 border-radius: 6px;
                 transition: all 0.3s ease;
+                color: theme.$default;
 
                 &:hover {
                     border-color: #007bff;

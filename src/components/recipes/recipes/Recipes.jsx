@@ -288,6 +288,10 @@ export const Recipes = ({ history }) => {
 
             <Greeting />
 
+            {process.env.NODE_ENV === 'development' && (
+                <UploadRecipe />
+            )}
+
             <FilterChips
                 formattedFilters={formattedFilters}
                 onChipClick={(filter) => {
@@ -388,10 +392,6 @@ export const Recipes = ({ history }) => {
                     </>
                 ) : <EmptyRecipeContainer />
             ) : <LoaderContainer />}
-
-            {process.env.NODE_ENV === 'development' && (
-                <UploadRecipe />
-            )}
 
             {isLoaded && (
                 <EmailRecipe />

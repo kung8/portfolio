@@ -142,7 +142,7 @@ const drunkenNoodles = require("./recipes/drunken-noodles");
 const dumplingSoup = require("./recipes/dumpling-soup");
 const easyMochi = require('./recipes/easy-mochi.js');
 const eclair = require("./recipes/eclair");
-const eggCasserole = require("./recipes/egg-casserole");
+const breakfastCasserole = require("./recipes/breakfast-casserole");
 const englishScones = require("./recipes/english-scones");
 const fajitas = require('./recipes/fajitas.js'); // TODO: finish adding recipe
 const fancyLunchables = require("./recipes/fancy-lunchables");
@@ -688,7 +688,7 @@ const recipes = [
     scrambledEggs,
     hardBoiledEggs,
     americanOmelette,
-    eggCasserole,
+    breakfastCasserole,
 
     //////////////////////////////////////////////////////////////////////// DESSERT ///////////////////////////////////////////////////////////////////////
     bananaBread,
@@ -768,18 +768,14 @@ module.exports = recipes;
 // TODO: Add way for Siri to add ingredients to the grocery list in my app (open chrome) (may need to create mobile app for this)
 // TODO: Add Frisee Salad with goat cheese and pine nuts, wild rice, roasted asparagus, salmon en croute recipe
 // TODO: Add Lox recipe
-// TODO: replace the egg-casserole recipe with this one - https://tastesbetterfromscratch.com/breakfast-casserole/
 // TODO: replace the brownies recipe
 // TODO: replace the chicken wing recipe
 // TODO: double check what other recipes can be replaced with better ones from websites
 
-// TODO: https://www.wellmadebykiley.com/blog/cinnamon-crunch-apple-pie-cathead-biscuits
 // TODO: https://cookingwithkarli.com/crave-rockstar-cookie-recipe/?fbclid=IwY2xjawNagudleHRuA2FlbQIxMQABHqLXZW8qtuz8axoFXldWq9mzV45reZ3YqqH5-KVdq3_rwiJ27fszAEok4vpu_aem_LDtydRXK6zvnQRPyuUW4fw
 // TODO: https://www.allrecipes.com/lemon-ricotta-muffins-recipe-11826885
 // TODO: https://sweetcsdesigns.com/cabbage-and-noodles/
-// TODO: https://healthynibblesandbits.com/how-to-make-dumpling-wrappers/
 
 // TODO: add timer clock per step to indicate how long each step takes
 // TODO: add checkmark state for each step to allow users to track progress through recipe
 // TODO: add user notes section for each recipe to allow users to add their own notes and modifications
-// TODO: style the upload text color

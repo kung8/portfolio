@@ -55,12 +55,20 @@ class RecipeWebScraper {
     }
 
     async scrapeRecipe(url) {
+        const startTime = Date.now();
         try {
-            console.log(`Scraping recipe from: ${url}`);
+            console.log(`[${new Date().toISOString()}] Starting recipe scrape from: ${url}`);
             
-            // First try with simple HTTP request
+            // Validate URL format
+            if (!url.match(/^https?:\/\/.+/)) {
+                throw new Error('Invalid URL format');
+            }
+            
+            // First try with simple HTTP request (faster)
             let html;
+            let method = 'HTTP';
             try {
+                console.log('Attempting simple HTTP request...');
                 const response = await axios.get(url, {
                     headers: {
                         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
@@ -73,48 +81,104 @@ class RecipeWebScraper {
                         'Sec-Fetch-Mode': 'navigate',
                         'Sec-Fetch-Site': 'none'
                     },
-                    timeout: 10000
+                    timeout: 8000,
+                    maxRedirects: 5
                 });
                 html = response.data;
-            } catch (error) {
-                console.log('Simple HTTP request failed, trying with Puppeteer...');
+                console.log(`HTTP request successful (${Date.now() - startTime}ms)`);
+            } catch (httpError) {
+                console.log(`HTTP request failed: ${httpError.message}. Falling back to Puppeteer...`);
+                method = 'Browser';
                 html = await this.scrapeWithPuppeteer(url);
+            }
+
+            if (!html || html.length < 100) {
+                throw new Error('Retrieved HTML is too short or empty');
             }
 
             const $ = cheerio.load(html);
             
             // Try to extract from JSON-LD first (most reliable)
+            console.log('Searching for JSON-LD structured data...');
             const jsonLdData = this.extractFromJsonLd($);
             if (jsonLdData) {
-                console.log('Successfully extracted from JSON-LD');
+                const elapsed = Date.now() - startTime;
+                console.log(`✅ Successfully extracted from JSON-LD via ${method} (${elapsed}ms)`);
                 return jsonLdData;
             }
             
             // Fallback to HTML scraping
-            console.log('Falling back to HTML selector scraping');
-            return this.extractFromHtml($, url);
+            console.log('JSON-LD not found, falling back to HTML selector scraping...');
+            const htmlData = this.extractFromHtml($, url);
+            const elapsed = Date.now() - startTime;
+            console.log(`✅ Successfully extracted via HTML selectors and ${method} (${elapsed}ms)`);
+            return htmlData;
             
         } catch (error) {
-            console.error('Error scraping recipe:', error);
-            throw new Error('Failed to scrape recipe from URL');
+            const elapsed = Date.now() - startTime;
+            console.error(`❌ Recipe scraping failed after ${elapsed}ms:`, error.message);
+            throw new Error(`Failed to scrape recipe: ${error.message}`);
         }
     }
 
     async scrapeWithPuppeteer(url) {
         let browser;
+        let page;
         try {
-            browser = await puppeteer.launch({ headless: true });
-            const page = await browser.newPage();
+            console.log('Launching Puppeteer browser...');
+            browser = await puppeteer.launch({ 
+                headless: true,
+                args: [
+                    '--no-sandbox',
+                    '--disable-setuid-sandbox',
+                    '--disable-dev-shm-usage',
+                    '--disable-accelerated-2d-canvas',
+                    '--no-first-run',
+                    '--no-zygote',
+                    '--disable-gpu'
+                ]
+            });
             
+            page = await browser.newPage();
+            
+            // Set reasonable resource limits
+            await page.setViewport({ width: 1024, height: 768 });
             await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36');
             
-            await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
+            // Block unnecessary resources to speed up loading
+            await page.setRequestInterception(true);
+            page.on('request', (req) => {
+                const resourceType = req.resourceType();
+                if (resourceType === 'image' || resourceType === 'stylesheet' || resourceType === 'font') {
+                    req.abort();
+                } else {
+                    req.continue();
+                }
+            });
+            
+            console.log(`Navigating to: ${url}`);
+            // Use domcontentloaded instead of networkidle0 for faster loading
+            await page.goto(url, { 
+                waitUntil: 'domcontentloaded', 
+                timeout: 15000 
+            });
+            
+            // Give a brief moment for any essential scripts to run
+            await new Promise(resolve => setTimeout(resolve, 1000));
             
             const html = await page.content();
+            console.log('Successfully retrieved page content');
             return html;
+        } catch (error) {
+            console.error('Puppeteer error:', error.message);
+            throw new Error(`Browser scraping failed: ${error.message}`);
         } finally {
-            if (browser) {
-                await browser.close();
+            try {
+                if (page) await page.close();
+                if (browser) await browser.close();
+                console.log('Browser closed successfully');
+            } catch (closeError) {
+                console.error('Error closing browser:', closeError.message);
             }
         }
     }

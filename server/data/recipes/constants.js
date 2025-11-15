@@ -362,6 +362,7 @@ const SECTIONS = {
     HAMBURGER: 'Hamburger',
     MEAT: 'Meat',
     PORK: 'Pork',
+    SAUSAGE: 'Sausage',
     SHRIMP: 'Shrimp',
     TURKEY: 'Turkey',
 
