@@ -1,5 +1,4 @@
-import { getRecipeFontSize } from './get-recipe-font-size.js';
-
+import { getRecipeFontSize } from './get-recipe-local-storage';
 
 export const getRecipeFontSizeClass = () => {
     const recipeFontSize = getRecipeFontSize();

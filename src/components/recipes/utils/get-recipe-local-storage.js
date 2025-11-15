@@ -39,9 +39,16 @@ export const setRecipeAppUserEmail = (email) => setLocalStorage(RECIPE_APP_USER_
 // export const getDefaultVendor = () => getLocalStorage(DEFAULT_VENDOR_LOCAL_STORAGE_KEY, '');
 // export const setDefaultVendor = (vendor) => setLocalStorage(DEFAULT_VENDOR_LOCAL_STORAGE_KEY, vendor);
 
-// const RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY = 'recipeFontSize';
-// export const getRecipeFontSize = () => getLocalStorage(RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, 'Large');
-// export const setRecipeFontSize = (size) => setLocalStorage(RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, size);
+export const fontSizeOptions = [
+    'Extra Small',
+    'Small',
+    'Medium',
+    'Large',
+    'Extra Large',
+];
+const RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY = 'recipeFontSize';
+export const getRecipeFontSize = () => getLocalStorage(RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, fontSizeOptions[3]); // Default to 'Large'
+export const setRecipeFontSize = (size) => setLocalStorage(RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, size);
 
 // const SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY = 'showRecipeFigures';
 // export const getShowRecipeFigures = () => getLocalStorage(SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY, true);
