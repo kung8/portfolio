@@ -2,6 +2,8 @@ const getLocalStorage = (key, defaultValue) => {
     const storedValue = localStorage.getItem(key);
     if (storedValue !== null) {
         try {
+            if (storedValue === 'true') return true;
+            if (storedValue === 'false') return false;
             return JSON.parse(storedValue);
         } catch {
             return storedValue;
@@ -21,16 +23,16 @@ const setLocalStorage = (key, value) => {
 /////////////////////////////////////////////////// USERS INFO ///////////////////////////////////////////////////////
 // user name
 const RECIPE_APP_USER_BY_LOCAL_STORAGE_KEY = 'recipeAppUser';
-export const getRecipeAppUser = () => getLocalStorage(RECIPE_APP_USER_BY_LOCAL_STORAGE_KEY, 'Guest');
-export const setRecipeAppUser = (user) => setLocalStorage(RECIPE_APP_USER_BY_LOCAL_STORAGE_KEY, user);
+export const getRecipeAppUserLocalStorageKey = () => getLocalStorage(RECIPE_APP_USER_BY_LOCAL_STORAGE_KEY, 'Guest');
+export const setRecipeAppUserLocalStorageKey = (user) => setLocalStorage(RECIPE_APP_USER_BY_LOCAL_STORAGE_KEY, user);
 
 // user email
 const RECIPE_APP_USER_EMAIL_LOCAL_STORAGE_KEY = 'recipeAppUserEmail';
-export const getRecipeAppUserEmail = () => getLocalStorage(RECIPE_APP_USER_EMAIL_LOCAL_STORAGE_KEY, '');
-export const setRecipeAppUserEmail = (email) => setLocalStorage(RECIPE_APP_USER_EMAIL_LOCAL_STORAGE_KEY, email);
+export const getRecipeAppUserEmailLocalStorageKey = () => getLocalStorage(RECIPE_APP_USER_EMAIL_LOCAL_STORAGE_KEY, '');
+export const setRecipeAppUserEmailLocalStorageKey = (email) => setLocalStorage(RECIPE_APP_USER_EMAIL_LOCAL_STORAGE_KEY, email);
 
-// /////////////////////////////////////////////////// USER SETTINGS ///////////////////////////////////////////////////// 
-// // (font size, page layout, vendors, preferred vendor, show notes, show figures, show storage, show reheat, show website references, starting day of week)
+/////////////////////////////////////////////////// USER SETTINGS ///////////////////////////////////////////////////// 
+// (font size, page layout, vendors, preferred vendor, show notes, show figures, show storage, show reheat, show website references, starting day of week)
 // const VENDOR_OPTIONS_LOCAL_STORAGE_KEY = 'vendorOptions';
 // export const getVendorOptions = () => getLocalStorage(VENDOR_OPTIONS_LOCAL_STORAGE_KEY, []);
 // export const setVendorOptions = (options) => setLocalStorage(VENDOR_OPTIONS_LOCAL_STORAGE_KEY, options);
@@ -47,12 +49,12 @@ export const fontSizeOptions = [
     'Extra Large',
 ];
 const RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY = 'recipeFontSize';
-export const getRecipeFontSize = () => getLocalStorage(RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, fontSizeOptions[3]); // Default to 'Large'
-export const setRecipeFontSize = (size) => setLocalStorage(RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, size);
+export const getRecipeFontSizeLocalStorageKey = () => getLocalStorage(RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, fontSizeOptions[3]); // Default to 'Large'
+export const setRecipeFontSizeLocalStorageKey = (size) => setLocalStorage(RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, size);
 
-// const SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY = 'showRecipeFigures';
-// export const getShowRecipeFigures = () => getLocalStorage(SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY, true);
-// export const setShowRecipeFigures = (show) => setLocalStorage(SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY, show);
+const SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY = 'showRecipeFigures';
+export const getShowRecipeFiguresLocalStorageKey = () => getLocalStorage(SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY, true);
+export const setShowRecipeFiguresLocalStorageKey = (show) => setLocalStorage(SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY, show);
 
 // const SHOW_RECIPE_STORAGE_OPTIONS_LOCAL_STORAGE_KEY = 'showRecipeStorageOptions';
 // export const getShowRecipeStorageOptions = () => getLocalStorage(SHOW_RECIPE_STORAGE_OPTIONS_LOCAL_STORAGE_KEY, true);

@@ -1,12 +1,12 @@
 import { useCallback, useState } from "react";
-import { getDefaultVendor, getRecipeFontSize, getRecipePageLayout, getShowRecipeFigures, getShowRecipeNotes, getShowRecipeReheatOptions, getShowRecipeStorageOptions, getShowRecipeWebsiteReferences, getStartingDay, getVendorOptions } from "../utils";
-import { DEFAULT_VENDOR_LOCAL_STORAGE_KEY, RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY, SHOW_RECIPE_NOTES_LOCAL_STORAGE_KEY, SHOW_RECIPE_PAGE_LAYOUT_LOCAL_STORAGE_KEY, SHOW_RECIPE_REHEAT_OPTIONS_LOCAL_STORAGE_KEY, SHOW_RECIPE_STORAGE_OPTIONS_LOCAL_STORAGE_KEY, SHOW_RECIPE_WEBSITE_REFERENCES_LOCAL_STORAGE_KEY, STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, VENDOR_OPTIONS_LOCAL_STORAGE_KEY } from "../constants";
+import { getDefaultVendor, getRecipeFontSizeLocalStorageKey, getRecipePageLayout, getShowRecipeFiguresLocalStorageKey, getShowRecipeNotes, getShowRecipeReheatOptions, getShowRecipeStorageOptions, getShowRecipeWebsiteReferences, getStartingDay, getVendorOptions, setRecipeFontSizeLocalStorageKey, setShowRecipeFiguresLocalStorageKey } from "../utils";
+import { DEFAULT_VENDOR_LOCAL_STORAGE_KEY, SHOW_RECIPE_NOTES_LOCAL_STORAGE_KEY, SHOW_RECIPE_PAGE_LAYOUT_LOCAL_STORAGE_KEY, SHOW_RECIPE_REHEAT_OPTIONS_LOCAL_STORAGE_KEY, SHOW_RECIPE_STORAGE_OPTIONS_LOCAL_STORAGE_KEY, SHOW_RECIPE_WEBSITE_REFERENCES_LOCAL_STORAGE_KEY, STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, VENDOR_OPTIONS_LOCAL_STORAGE_KEY } from "../constants";
 
 export const useSettings = () => {
     const [defaultVendor, setDefaultVendor] = useState(getDefaultVendor());
-    const [recipeFontSize, setRecipeFontSize] = useState(getRecipeFontSize());
+    const [recipeFontSize, setRecipeFontSize] = useState(getRecipeFontSizeLocalStorageKey());
     const [recipePageLayout, setRecipePageLayout] = useState(getRecipePageLayout());
-    const [showRecipeFigures, setShowRecipeFigures] = useState(getShowRecipeFigures());
+    const [showRecipeFigures, setShowRecipeFigures] = useState(getShowRecipeFiguresLocalStorageKey());
     const [showRecipeNotes, setShowRecipeNotes] = useState(getShowRecipeNotes());
     const [showRecipeReheatOptions, setShowRecipeReheatOptions] = useState(getShowRecipeReheatOptions());
     const [showRecipeStorageOptions, setShowRecipeStorageOptions] = useState(getShowRecipeStorageOptions());
@@ -20,7 +20,7 @@ export const useSettings = () => {
     }, []);
     const updateRecipeFontSize = useCallback((size) => {
         setRecipeFontSize(size);
-        localStorage.setItem(RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, size);
+        setRecipeFontSizeLocalStorageKey(size);
     }, []);
     const updateRecipePageLayout = useCallback((layout) => {
         setRecipePageLayout(layout);
@@ -28,7 +28,7 @@ export const useSettings = () => {
     }, []);
     const updateShowRecipeFigures = useCallback((showImages) => {
         setShowRecipeFigures(showImages);
-        localStorage.setItem(SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY, showImages);
+        setShowRecipeFiguresLocalStorageKey(showImages);
     }, []);
     const updateShowRecipeNotes = useCallback((showNotes) => {
         setShowRecipeNotes(showNotes);

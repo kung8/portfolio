@@ -1,6 +1,6 @@
 import {
     getRecipePageLayout,
-    getShowRecipeFigures,
+    getShowRecipeFiguresLocalStorageKey,
     getShowRecipeNotes,
     getShowRecipeReheatOptions,
     getShowRecipeStorageOptions,
@@ -25,7 +25,7 @@ import { Yield } from './Yield';
 
 export const RecipeDetails = () => {
     const recipePageLayout = getRecipePageLayout();
-    const showRecipeFigures = getShowRecipeFigures();
+    const showRecipeFigures = getShowRecipeFiguresLocalStorageKey();
     const showRecipeNotes = getShowRecipeNotes();
     const showRecipeReheatOptions = getShowRecipeReheatOptions();
     const showRecipeStorageOptions = getShowRecipeStorageOptions();

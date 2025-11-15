@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react'
 
 import { useDebounce } from 'use-debounce';
 
-import { getGreeting, getRecipeAppUser, setRecipeAppUser } from '../utils';
+import { getGreeting, getRecipeAppUserLocalStorageKey, setRecipeAppUserLocalStorageKey } from '../utils';
 
 
 export const Greeting = () => {
     const [greeting, setGreeting] = useState('');
-    const [user, setUser] = useState(getRecipeAppUser());
+    const [user, setUser] = useState(getRecipeAppUserLocalStorageKey());
     const [debouncedValue] = useDebounce(user, 300);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ export const Greeting = () => {
 
     useEffect(() => {
         if (debouncedValue && debouncedValue !== 'Guest') {
-            setRecipeAppUser(debouncedValue);
+            setRecipeAppUserLocalStorageKey(debouncedValue);
         }
     }, [debouncedValue]);
 

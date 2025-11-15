@@ -6,11 +6,11 @@ import { useDebounce } from 'use-debounce';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { validator } from "../../../utils/validator";
-import { getRecipeAppUser, getRecipeAppUserEmail, setRecipeAppUser, setRecipeAppUserEmail } from '../utils';
+import {  getRecipeAppUserEmailLocalStorageKey, getRecipeAppUserLocalStorageKey, setRecipeAppUserEmailLocalStorageKey, setRecipeAppUserLocalStorageKey } from '../utils';
 
 export const ShareRecipeForm = ({ showTitle }) => {
-    const [name, setName] = useState(getRecipeAppUser() === 'Guest' ? '' : getRecipeAppUser());
-    const [email, setEmail] = useState(getRecipeAppUserEmail());
+    const [name, setName] = useState(getRecipeAppUserLocalStorageKey() === 'Guest' ? '' : getRecipeAppUserLocalStorageKey());
+    const [email, setEmail] = useState(getRecipeAppUserEmailLocalStorageKey());
     const [recipeName, setRecipeName] = useState('');
     const [message, setMessage] = useState('');
 
@@ -25,14 +25,14 @@ export const ShareRecipeForm = ({ showTitle }) => {
     }
 
     useEffect(() => {
-        if (debouncedName && debouncedName !== 'Guest' && debouncedName !== getRecipeAppUser()) {
-            setRecipeAppUser(debouncedName);
+        if (debouncedName && debouncedName !== 'Guest' && debouncedName !== getRecipeAppUserLocalStorageKey()) {
+            setRecipeAppUserLocalStorageKey(debouncedName);
         }
     }, [debouncedName]);
 
     useEffect(() => {
-        if (debouncedEmail !== getRecipeAppUserEmail()) {
-            setRecipeAppUserEmail(debouncedEmail);
+        if (debouncedEmail !== getRecipeAppUserEmailLocalStorageKey()) {
+            setRecipeAppUserEmailLocalStorageKey(debouncedEmail);
         }
     }, [debouncedEmail]);
 

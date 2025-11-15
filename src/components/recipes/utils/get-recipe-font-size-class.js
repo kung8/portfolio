@@ -1,7 +1,7 @@
-import { getRecipeFontSize } from './get-recipe-local-storage';
+import { getRecipeFontSizeLocalStorageKey } from './get-recipe-local-storage';
 
 export const getRecipeFontSizeClass = () => {
-    const recipeFontSize = getRecipeFontSize();
+    const recipeFontSize = getRecipeFontSizeLocalStorageKey();
     const recipeFontSizeClass = `font-size-${recipeFontSize.toLowerCase().split(' ').join('-')}`;
     return recipeFontSizeClass;
 }

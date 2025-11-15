@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import { getRecipeFontSizeClass, getShowRecipeFigures } from '../utils';
+import { getRecipeFontSizeClass, getShowRecipeFiguresLocalStorageKey } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 import { cloneDeep } from 'lodash';
 
 export const Directions = () => {
     const { formattedDirections, setSelectedFigure } = useRecipeContext();
-    const showRecipeFigures = getShowRecipeFigures();
+    const showRecipeFigures = getShowRecipeFiguresLocalStorageKey();
     const [checkedDirections, setCheckedDirections] = useState({});
 
     useEffect(() => {

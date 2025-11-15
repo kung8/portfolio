@@ -7,7 +7,6 @@ export * from './get-default-vendor';
 export * from './get-greeting';
 export * from './get-ingredient-data';
 export * from './get-recipe-font-size-class';
-export * from './get-show-recipe-figures';
 export * from './get-show-recipe-notes';
 export * from './get-recipe-local-storage';
 export * from './get-recipe-page-layout';
