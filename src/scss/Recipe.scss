@@ -833,6 +833,7 @@
                         line-height: 1;
                         grid-column: 1;
                         align-self: start;
+                        min-width: 40px;
                     }
 
                     &.direction-checked {
@@ -850,7 +851,6 @@
                             align-items: center;
                             justify-content: center;
                             color: white;
-                            padding: 4px;
                         }
                     }
 
@@ -882,6 +882,17 @@
                             font-size: 14px;
                         }
                     }
+
+                    // .time-container {
+                    //     display: flex;
+                    //     align-items: center;
+                    //     gap: 8px;
+                    //     padding-top: 16px;
+
+                    //     .time-value {
+                    //         color: theme.$default;
+                    //     }
+                    // }
                 }
             }
 

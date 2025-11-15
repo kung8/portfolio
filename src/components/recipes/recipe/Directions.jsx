@@ -26,7 +26,7 @@ export const Directions = () => {
                 <span>{link.additionalText}</span>
             )}
         </>
-    ) : null;
+    ) : null;    
 
     return (
         <>
@@ -35,7 +35,7 @@ export const Directions = () => {
                 <div key={section} className="separated-recipe-container direction-container">
                     <h5 className={`separated-recipe-detail-label direction-label ${getRecipeFontSizeClass()}`}>{section}</h5>
                     <ol className="separated-recipe-detail-list">
-                        {directions.map(({ step, figure, link }, index) => (
+                        {directions.map(({ step, figure, link, _time }, index) => (
                             <li
                                 key={step + '-' + index}
                                 onClick={() => {
@@ -45,10 +45,9 @@ export const Directions = () => {
                                     const newValue = !currentValue;
                                     newSection[index] = newValue;
                                     newCheckedDirections[section] = newSection;
-                                    console.log('directions: ', newCheckedDirections);
                                     setCheckedDirections(newCheckedDirections);
                                 }}
-                                className={`recipe-step-list-item ${checkedDirections[section][index] ? 'direction-checked' : ''}`}
+                                className={`recipe-step-list-item ${checkedDirections?.[section]?.[index] ? 'direction-checked' : ''}`}
                             >
                                 <div>
                                     {step && (
@@ -62,6 +61,12 @@ export const Directions = () => {
                                         <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className={`figure-label-anchor ${getRecipeFontSizeClass()}`}>(See figure {figure})</span>
                                     )}
                                 </div>
+                                {/* {time && (
+                                    <div className="time-container">
+                                        <span className={`clock-icon ${getRecipeFontSizeClass()}`}>🕐</span>
+                                        <p className={`time-value ${getRecipeFontSizeClass()}`}>{time}</p>
+                                    </div>
+                                )} */}
                             </li>
                         ))}
                     </ol>

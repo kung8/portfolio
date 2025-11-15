@@ -1,4 +1,4 @@
-import { getRecipeFontSizeClass } from '../utils';
+import { formatIngredientItem, getRecipeFontSizeClass } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 
 const SupplyItem = ({ supply }) => {
@@ -17,6 +17,8 @@ const SupplyItem = ({ supply }) => {
         }
     }
 
+    const formattedSupply = formatIngredientItem({ ...supply, amount: supply.amount })    
+
     return (
         <li className="checkbox-supply-container">
             <input
@@ -28,7 +30,7 @@ const SupplyItem = ({ supply }) => {
             />
 
             <label htmlFor={supply.id} className="supply-label">
-                <span className={`checkbox-supply-label ${getRecipeFontSizeClass()}`} itemProp="recipeSupply">{supply.name}</span>
+                <span className={`checkbox-supply-label ${getRecipeFontSizeClass()}`} itemProp="recipeSupply">{formattedSupply}</span>
                 {supply.additionalDetails && (
                     <span className={`supply-additional-details ${getRecipeFontSizeClass()}`}>, {supply.additionalDetails}</span>
                 )}

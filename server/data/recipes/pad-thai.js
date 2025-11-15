@@ -95,12 +95,12 @@ module.exports = {
     ],
     directions: [
         { step: `Over medium-high heat, melt butter in a wok.`, section: COOK_CHICKEN_AND_VEGGIES },
-        { step: `Add chicken. Brown the chicken for a few minutes.`, section: COOK_CHICKEN_AND_VEGGIES },
-        { step: `Add garlic and bell peppers. Cook for a few minutes.`, section: COOK_CHICKEN_AND_VEGGIES, img: noodles1 },
+        { step: `Add chicken. Brown the chicken for a few minutes.`, section: COOK_CHICKEN_AND_VEGGIES, time: 'few minutes' },
+        { step: `Add garlic and bell peppers. Cook for a few minutes.`, section: COOK_CHICKEN_AND_VEGGIES, img: noodles1, time: 'few minutes' },
         { step: `Set aside.`, section: COOK_CHICKEN_AND_VEGGIES },
 
         { step: `Over medium-high heat, boil water in a saucepan.`, section: SECTIONS.COOK_NOODLES },
-        { step: `Add rice noodles. Cook until just barely tender (about 3 to 5 minutes). Be careful not to overcook the noodles.`, section: SECTIONS.COOK_NOODLES, img: noodles2 },
+        { step: `Add rice noodles. Cook until just barely tender (about 3 to 5 minutes). Be careful not to overcook the noodles.`, section: SECTIONS.COOK_NOODLES, img: noodles2, time: '3 to 5 minutes' },
         { step: `Drain in a strainer. Rinse noodles under cold water.`, section: SECTIONS.COOK_NOODLES },
 
         { step: `In a medium bowl, mix together the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
