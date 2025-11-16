@@ -5,7 +5,7 @@ import { baseUrl } from '../utils';
 
 export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChange, onInputChange, showDate, showType }) => {
     const { checked, date, mealPlanningDateRange, recipeName, recipeLink, type } = item;
-    const [inputValue, setInputValue] = useState(recipeName);    
+    const [inputValue, setInputValue] = useState(recipeName);
 
     useEffect(() => {
         if (inputValue !== recipeName) {
@@ -65,7 +65,11 @@ export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChan
                         {showType && <span className="meal-item-meal-type">{type}</span>}
                     </div>
                 )}
-                <a href={baseUrl + recipeLink} className="meal-item-recipe-link">View by Recipe</a>
+                {recipeLink && (
+                    <a href={baseUrl + recipeLink} className="meal-item-recipe-link">
+                        View by Recipe
+                    </a>
+                )}
             </div>
         </li>
     )
