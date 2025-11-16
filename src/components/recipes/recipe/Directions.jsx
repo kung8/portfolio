@@ -4,7 +4,7 @@ import { useRecipeContext } from './RecipeContext';
 import { cloneDeep } from 'lodash';
 
 export const Directions = () => {
-    const { formattedDirections, setSelectedFigure } = useRecipeContext();
+    const { formattedDirections } = useRecipeContext();
     const showRecipeFigures = getShowRecipeFiguresLocalStorageKey();
     const [checkedDirections, setCheckedDirections] = useState({});
 
@@ -16,6 +16,62 @@ export const Directions = () => {
         }, {});
         setCheckedDirections(newCheckedDirections);
     }, [formattedDirections]);
+
+    // Function to render step text with quoted text as clickable anchor links
+    const renderStepWithQuotedLinks = (text) => {
+        if (!text || typeof text !== 'string') return text;
+
+        // Use a different approach: replace quoted text with placeholders, then process
+        const quotedSections = [];
+        let processedText = text;
+
+        // Find all quoted sections and replace them with placeholders
+        const quotedTextRegex = /"([^"]*)"/g;
+        let match;
+        let placeholderIndex = 0;
+
+        while ((match = quotedTextRegex.exec(text)) !== null) {
+            const quotedText = match[1];
+            const placeholder = `__QUOTED_${placeholderIndex}__`;
+            quotedSections.push(quotedText);
+            processedText = processedText.replace(match[0], placeholder);
+            placeholderIndex++;
+        }
+
+        // Split by placeholders and reconstruct with React elements
+        const parts = processedText.split(/(__QUOTED_\d+__)/g);
+
+        return parts.map((part, index) => {
+            // Check if this part is a placeholder
+            const placeholderMatch = part.match(/^__QUOTED_(\d+)__$/);
+            if (placeholderMatch) {
+                const quotedIndex = parseInt(placeholderMatch[1]);
+                const quotedText = quotedSections[quotedIndex];
+                const anchorId = quotedText.toLowerCase().split(' ').join('-');
+
+                return (
+                    <a
+                        key={index}
+                        className="quoted-text-link"
+                        onClick={(e) => {
+                            e.stopPropagation(); // Prevent step checkbox toggle
+                            // 
+                            const element = document.getElementById('recipe-section-' + anchorId);
+                            console.log(element, anchorId);
+
+                            if (element) {
+                                element.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                    >
+                        "{quotedText}"
+                    </a>
+                );
+            }
+            // Return regular text as-is (excluding empty strings)
+            return part ? <span key={index}>{part}</span> : null;
+        }).filter(Boolean); // Remove null/empty elements
+    };
 
     const formatLink = (link) => link ? (
         <>
@@ -51,7 +107,9 @@ export const Directions = () => {
                             >
                                 <div>
                                     {step && (
-                                        <span className={`recipe-step ${getRecipeFontSizeClass()}`}>{step}</span>
+                                        <span className={`recipe-step ${getRecipeFontSizeClass()}`}>
+                                            {renderStepWithQuotedLinks(step)}
+                                        </span>
                                     )}
                                     &nbsp;
                                     {link && (
@@ -62,7 +120,10 @@ export const Directions = () => {
                                             id={`figure-label-${figure}`}
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                setSelectedFigure(figure)
+                                                const el = document.getElementById(`figure-${figure}`);
+                                                if (el) {
+                                                    el.scrollIntoView({ behavior: 'smooth' });
+                                                }
                                             }}
                                             className={`figure-label-anchor ${getRecipeFontSizeClass()}`}
                                         >

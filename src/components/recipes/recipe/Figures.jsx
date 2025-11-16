@@ -2,10 +2,21 @@ import { getRecipeFontSizeClass } from '../utils';
 import { useRecipeContext } from './RecipeContext';
 
 const Figure = ({ index, figure }) => {
-    const { openRecipeImageModal, setSelectedFigureLabel } = useRecipeContext();
+    const { openRecipeImageModal } = useRecipeContext();
     return (
         <div key={index} className="figure-container">
-            <label id={`figure-${index + 1}`} onClick={() => setSelectedFigureLabel(index + 1)} className={`figure-label ${getRecipeFontSizeClass()}`}>Figure {index + 1}</label>
+            <label
+                id={`figure-${index + 1}`}
+                onClick={() => {
+                    const el = document.getElementById(`figure-label-${index + 1}`);
+                    if (el) {
+                        el.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }}
+                className={`figure-label ${getRecipeFontSizeClass()}`}
+            >
+                Figure {index + 1}
+            </label>
             {figure.video ? (
                 <video className="additional-recipe-video" autoPlay loop muted>
                     <source src={figure.video} type="video/mp4" />

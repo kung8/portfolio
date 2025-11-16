@@ -67,7 +67,7 @@ export const Ingredients = () => {
         <div className="separated-recipe-container">
             {formattedIngredients.map(([section, ingredients]) => (
                 <div key={section} className="sectioned-recipe-container">
-                    <h5 className={`separated-recipe-detail-label ${getRecipeFontSizeClass()}`}>{section}</h5>
+                    <h5 id={`recipe-section-${section.toLowerCase().split(' ').join('-')}`} className={`separated-recipe-detail-label ${getRecipeFontSizeClass()}`}>{section}</h5>
                     {ingredients.map((ingredient, index) => {
                         const ingredientId = ingredient.id ?? generateUUID();
                         const formattedIngredient = formatIngredientItem({ ...ingredient, amount: (conversionRate || 1) * ingredient.amount });

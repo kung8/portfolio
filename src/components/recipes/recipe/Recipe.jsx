@@ -34,8 +34,6 @@ export const Recipe = ({ match }) => {
 
     const item = recipe[0];
     const recipeLink = getRecipeRoute(item);
-    const [selectedFigure, setSelectedFigure] = useState(null);
-    const [selectedFigureLabel, setSelectedFigureLabel] = useState(null);
     const [supplies, setSupplies] = useState(item?.supplies || []);
 
     const queryClient = useQueryClient();
@@ -106,8 +104,6 @@ export const Recipe = ({ match }) => {
         return () => {
             mounted = false;
             setIsLoaded(false);
-            setSelectedFigure(null);
-            setSelectedFigureLabel(null);
             setSelectedIngredients([]);
         }
         // eslint-disable-next-line
@@ -190,28 +186,6 @@ export const Recipe = ({ match }) => {
     }, [item?.directions]);
 
     const figures = formattedDirections?.flat(2)?.filter(step => step.video || step.img) ?? [];
-
-    useEffect(() => {
-        if (selectedFigure) {
-            const el = document.getElementById(`figure-${selectedFigure}`);
-            if (el) {
-                el.scrollIntoView({ behavior: 'smooth' });
-            }
-            setSelectedFigure(null);
-            setSelectedFigureLabel(null);
-        }
-    }, [selectedFigure]);
-
-    useEffect(() => {
-        if (selectedFigureLabel) {
-            const el = document.getElementById(`figure-label-${selectedFigureLabel}`);
-            if (el) {
-                el.scrollIntoView({ behavior: 'smooth' });
-            }
-            setSelectedFigure(null);
-            setSelectedFigureLabel(null);
-        }
-    }, [selectedFigureLabel]);
 
     // add ingredients to grocery list modal
     const { handleClose: handleAddIngredientsToGroceryListModalClose, handleOpen: handleAddIngredientsToGroceryListModalOpen } = handleModalClass('.add-ingredients-to-grocery-list-modal', 'add-ingredients-to-grocery-list-modal-overlay');
@@ -312,8 +286,6 @@ export const Recipe = ({ match }) => {
                     selectedRecipeImage,
                     selectedSupplies,
                     setAppliedYieldAmount,
-                    setSelectedFigure,
-                    setSelectedFigureLabel,
                     setSelectedIngredients,
                     setSelectedSupplies,
                     supplies,

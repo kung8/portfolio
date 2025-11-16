@@ -881,6 +881,12 @@
                         &.font-size-extra-small {
                             font-size: 14px;
                         }
+
+                        .quoted-text-link {
+                            color: theme.$primary-blue;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
                     }
 
                     // .time-container {
