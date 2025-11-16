@@ -120,7 +120,7 @@ export const getStartingDayLocalStorageKey = () => getLocalStorage(STARTING_DAY_
 export const setStartingDayLocalStorageKey = (day) => setLocalStorage(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, day);
 
 // /////////////////////////////////////////////////// GROCERY LIST ////////////////////////////////////////////////////////////
-// const GROCERY_LIST_LOCAL_STORAGE_KEY = 'groceryList';
+export const GROCERY_LIST_LOCAL_STORAGE_KEY = 'groceryList';
 // export const getGroceryList = () => getLocalStorage(GROCERY_LIST_LOCAL_STORAGE_KEY, []);
 // export const setGroceryList = (list) => setLocalStorage(GROCERY_LIST_LOCAL_STORAGE_KEY, list);
 
@@ -138,7 +138,7 @@ export const getGroceryListSortByLocalStorageKey = () => getLocalStorage(GROCERY
 export const setGroceryListSortByLocalStorageKey = (sortBy) => setLocalStorage(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY, sortBy);
 
 // /////////////////////////////////////////////////// MEAL PLAN //////////////////////////////////////////////////////////////
-// const MEAL_PLAN_LOCAL_STORAGE_KEY = 'mealPlan';
+export const MEAL_PLAN_LOCAL_STORAGE_KEY = 'mealPlan';
 // export const getMealPlan = () => getLocalStorage(MEAL_PLAN_LOCAL_STORAGE_KEY, []);
 // export const setMealPlan = (plan) => setLocalStorage(MEAL_PLAN_LOCAL_STORAGE_KEY, plan);
 

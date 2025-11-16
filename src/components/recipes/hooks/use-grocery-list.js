@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { GROCERY_LIST_LOCAL_STORAGE_KEY, MEAL_PLAN_LOCAL_STORAGE_KEY } from '../constants';
-import { getSelectedModalViewLocalStorageKey, handleModalClass } from '../utils';
+import {  GROCERY_LIST_LOCAL_STORAGE_KEY, MEAL_PLAN_LOCAL_STORAGE_KEY, getSelectedModalViewLocalStorageKey, handleModalClass } from '../utils';
 import { useCategoryName } from './use-category-name';
 
 export const useGroceryList = () => {
