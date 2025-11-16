@@ -12,7 +12,7 @@ const getLocalStorage = (key, defaultValue) => {
     return defaultValue;
 }
 
-const setLocalStorage = (key, value) => {
+const setLocalStorage = (key, value) => {    
     if (typeof value === 'object') {
         localStorage.setItem(key, JSON.stringify(value));
     } else {
@@ -32,15 +32,34 @@ export const getRecipeAppUserEmailLocalStorageKey = () => getLocalStorage(RECIPE
 export const setRecipeAppUserEmailLocalStorageKey = (email) => setLocalStorage(RECIPE_APP_USER_EMAIL_LOCAL_STORAGE_KEY, email);
 
 /////////////////////////////////////////////////// USER SETTINGS ///////////////////////////////////////////////////// 
-// (font size, page layout, vendors, preferred vendor, show notes, show figures, show storage, show reheat, show website references, starting day of week)
-// const VENDOR_OPTIONS_LOCAL_STORAGE_KEY = 'vendorOptions';
-// export const getVendorOptions = () => getLocalStorage(VENDOR_OPTIONS_LOCAL_STORAGE_KEY, []);
-// export const setVendorOptions = (options) => setLocalStorage(VENDOR_OPTIONS_LOCAL_STORAGE_KEY, options);
+// vendor options
+const defaultVendorOptions = [
+    'Walmart',
+    'Costco',
+    'Smith\'s',
+    'WinCo',
+    'Macey\'s',
+    'Trader Joe\'s',
+    'Target',
+    'Ocean Mart',
+    'Amazon',
+    // 'Whole Foods',
+    // 'H-Mart',
+    // 'Giant',
+    // 'Safeway',
+    // 'Kroger',
+    // 'Aldi',
+    // 'Sam\'s Club',
+];
+const VENDOR_OPTIONS_LOCAL_STORAGE_KEY = 'vendorOptions';
+export const getVendorOptionsLocalStorageKey = () => getLocalStorage(VENDOR_OPTIONS_LOCAL_STORAGE_KEY, defaultVendorOptions);
+export const setVendorOptionsLocalStorageKey = (options) => setLocalStorage(VENDOR_OPTIONS_LOCAL_STORAGE_KEY, options);
 
-// const DEFAULT_VENDOR_LOCAL_STORAGE_KEY = 'defaultVendor';
-// export const getDefaultVendor = () => getLocalStorage(DEFAULT_VENDOR_LOCAL_STORAGE_KEY, '');
-// export const setDefaultVendor = (vendor) => setLocalStorage(DEFAULT_VENDOR_LOCAL_STORAGE_KEY, vendor);
+const DEFAULT_VENDOR_LOCAL_STORAGE_KEY = 'defaultVendor';
+export const getDefaultVendorLocalStorageKey = () => getLocalStorage(DEFAULT_VENDOR_LOCAL_STORAGE_KEY, '');
+export const setDefaultVendorLocalStorageKey = (vendor) => setLocalStorage(DEFAULT_VENDOR_LOCAL_STORAGE_KEY, vendor);
 
+// recipe font size
 export const fontSizeOptions = [
     'Extra Small',
     'Small',
@@ -52,33 +71,53 @@ const RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY = 'recipeFontSize';
 export const getRecipeFontSizeLocalStorageKey = () => getLocalStorage(RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, fontSizeOptions[3]); // Default to 'Large'
 export const setRecipeFontSizeLocalStorageKey = (size) => setLocalStorage(RECIPE_FONT_SIZE_LOCAL_STORAGE_KEY, size);
 
+// show recipe figures
 const SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY = 'showRecipeFigures';
 export const getShowRecipeFiguresLocalStorageKey = () => getLocalStorage(SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY, true);
 export const setShowRecipeFiguresLocalStorageKey = (show) => setLocalStorage(SHOW_RECIPE_FIGURES_LOCAL_STORAGE_KEY, show);
 
-// const SHOW_RECIPE_STORAGE_OPTIONS_LOCAL_STORAGE_KEY = 'showRecipeStorageOptions';
-// export const getShowRecipeStorageOptions = () => getLocalStorage(SHOW_RECIPE_STORAGE_OPTIONS_LOCAL_STORAGE_KEY, true);
-// export const setShowRecipeStorageOptions = (show) => setLocalStorage(SHOW_RECIPE_STORAGE_OPTIONS_LOCAL_STORAGE_KEY, show);
+// show recipe storage options
+const SHOW_RECIPE_STORAGE_OPTIONS_LOCAL_STORAGE_KEY = 'showRecipeStorageOptions';
+export const getShowRecipeStorageOptionsLocalStorageKey = () => getLocalStorage(SHOW_RECIPE_STORAGE_OPTIONS_LOCAL_STORAGE_KEY, true);
+export const setShowRecipeStorageOptionsLocalStorageKey = (show) => setLocalStorage(SHOW_RECIPE_STORAGE_OPTIONS_LOCAL_STORAGE_KEY, show);
 
-// const SHOW_RECIPE_REHEAT_OPTIONS_LOCAL_STORAGE_KEY = 'showRecipeReheatOptions';
-// export const getShowRecipeReheatOptions = () => getLocalStorage(SHOW_RECIPE_REHEAT_OPTIONS_LOCAL_STORAGE_KEY, true);
-// export const setShowRecipeReheatOptions = (show) => setLocalStorage(SHOW_RECIPE_REHEAT_OPTIONS_LOCAL_STORAGE_KEY, show);
+// show recipe reheat options
+const SHOW_RECIPE_REHEAT_OPTIONS_LOCAL_STORAGE_KEY = 'showRecipeReheatOptions';
+export const getShowRecipeReheatOptionsLocalStorageKey = () => getLocalStorage(SHOW_RECIPE_REHEAT_OPTIONS_LOCAL_STORAGE_KEY, true);
+export const setShowRecipeReheatOptionsLocalStorageKey = (show) => setLocalStorage(SHOW_RECIPE_REHEAT_OPTIONS_LOCAL_STORAGE_KEY, show);
 
-// const SHOW_RECIPE_WEBSITE_REFERENCES_LOCAL_STORAGE_KEY = 'showRecipeWebsiteReferences';
-// export const getShowRecipeWebsiteReferences = () => getLocalStorage(SHOW_RECIPE_WEBSITE_REFERENCES_LOCAL_STORAGE_KEY, true);
-// export const setShowRecipeWebsiteReferences = (show) => setLocalStorage(SHOW_RECIPE_WEBSITE_REFERENCES_LOCAL_STORAGE_KEY, show);
+// show recipe website references
+const SHOW_RECIPE_WEBSITE_REFERENCES_LOCAL_STORAGE_KEY = 'showRecipeWebsiteReferences';
+export const getShowRecipeWebsiteReferencesLocalStorageKey = () => getLocalStorage(SHOW_RECIPE_WEBSITE_REFERENCES_LOCAL_STORAGE_KEY, true);
+export const setShowRecipeWebsiteReferencesLocalStorageKey = (show) => setLocalStorage(SHOW_RECIPE_WEBSITE_REFERENCES_LOCAL_STORAGE_KEY, show);
 
-// const SHOW_RECIPE_NOTES_LOCAL_STORAGE_KEY = 'showRecipeNotes';
-// export const getShowRecipeNotes = () => getLocalStorage(SHOW_RECIPE_NOTES_LOCAL_STORAGE_KEY, true);
-// export const setShowRecipeNotes = (show) => setLocalStorage(SHOW_RECIPE_NOTES_LOCAL_STORAGE_KEY, show);
+// show recipe notes
+const SHOW_RECIPE_NOTES_LOCAL_STORAGE_KEY = 'showRecipeNotes';
+export const getShowRecipeNotesLocalStorageKey = () => getLocalStorage(SHOW_RECIPE_NOTES_LOCAL_STORAGE_KEY, true);
+export const setShowRecipeNotesLocalStorageKey = (show) => setLocalStorage(SHOW_RECIPE_NOTES_LOCAL_STORAGE_KEY, show);
 
-// const SHOW_RECIPE_PAGE_LAYOUT_LOCAL_STORAGE_KEY = 'showRecipePageLayout';
-// export const getRecipePageLayout = () => getLocalStorage(SHOW_RECIPE_PAGE_LAYOUT_LOCAL_STORAGE_KEY, 'standard');
-// export const setRecipePageLayout = (layout) => setLocalStorage(SHOW_RECIPE_PAGE_LAYOUT_LOCAL_STORAGE_KEY, layout);
+// recipe page layout
+export const pageLayoutOptions = [
+    { id: 'standard', label: 'Standard' }, // DESKTOP: ingredients on left, directions on right; MOBILE: ingredients first, directions second
+    { id: 'stacked', label: 'Stacked' }, // Ingredients first, directions second (both DESKTOP and MOBILE)
+]
+const SHOW_RECIPE_PAGE_LAYOUT_LOCAL_STORAGE_KEY = 'showRecipePageLayout';
+export const getRecipePageLayoutLocalStorageKey = () => getLocalStorage(SHOW_RECIPE_PAGE_LAYOUT_LOCAL_STORAGE_KEY, 'standard');
+export const setRecipePageLayoutLocalStorageKey = (layout) => setLocalStorage(SHOW_RECIPE_PAGE_LAYOUT_LOCAL_STORAGE_KEY, layout);
 
-// const STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY = 'startingDayOfWeek';
-// export const getStartingDay = () => getLocalStorage(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, 'Sunday');
-// export const setStartingDay = (day) => setLocalStorage(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, day);
+// starting day of the week
+export const weekdayOptions = [
+    { label: 'Sun', value: 'sunday' },
+    { label: 'Mon', value: 'monday' },
+    { label: 'Tue', value: 'tuesday' },
+    { label: 'Wed', value: 'wednesday' },
+    { label: 'Thu', value: 'thursday' },
+    { label: 'Fri', value: 'friday' },
+    { label: 'Sat', value: 'saturday' }
+];
+const STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY = 'startingDayOfWeek';
+export const getStartingDayLocalStorageKey = () => getLocalStorage(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, weekdayOptions[0].value);
+export const setStartingDayLocalStorageKey = (day) => setLocalStorage(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, day);
 
 // /////////////////////////////////////////////////// GROCERY LIST ////////////////////////////////////////////////////////////
 // const GROCERY_LIST_LOCAL_STORAGE_KEY = 'groceryList';
@@ -99,19 +138,61 @@ export const setShowRecipeFiguresLocalStorageKey = (show) => setLocalStorage(SHO
 // export const setMealPlanSortBy = (sortBy) => setLocalStorage(MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY, sortBy);
 
 // //////////////////////////////////////////////////// MODAL VIEW /////////////////////////////////////////////////////////////
-// const SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY = 'selectedModalView';
-// export const getSelectedModalView = () => getLocalStorage(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, 'groceryList');
-// export const setSelectedModalView = (view) => setLocalStorage(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, view);
+export const GROCERY_LIST_VIEW = 'groceryList';
+export const MEAL_PLANNING_VIEW = 'mealPlanning';
+export const selectedModalViewOptions = [
+    { id: GROCERY_LIST_VIEW, label: 'Grocery List' },
+    { id: MEAL_PLANNING_VIEW, label: 'Meal Planning' },
+];
+const SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY = 'selectedModalView';
+export const getSelectedModalViewLocalStorageKey = () => getLocalStorage(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, GROCERY_LIST_VIEW);
+export const setSelectedModalViewLocalStorageKey = (view) => setLocalStorage(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, view);
 
-// const RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY = 'recipesGroupedBy';
-// export const getRecipesGroupedBy = () => getLocalStorage(RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, 'none');
-// export const setRecipesGroupedBy = (groupedBy) => setLocalStorage(RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, groupedBy);
+//////////////////////////////////////////////// RECIPES LISTING PAGE ////////////////////////////////////////////////////////////////
+// recipes grouped by for display on the recipes listing pages
+export const GROUPED_BY_NONE = 'none';
+export const GROUPED_BY_ALPHABETIC = 'alphabetic';
+export const GROUPED_BY_RANDOM = 'random';
+export const GROUPED_BY_GENRE = 'genre';
+export const GROUPED_BY_CATEGORY = 'category';
+export const GROUPED_BY_INGREDIENTS_COUNT_ASCENDING = 'ingredientCountAscending';
+export const GROUPED_BY_INGREDIENTS_COUNT_DESCENDING = 'ingredientCountDescending';
+const RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY = 'recipesGroupedBy';
+export const groupedByOptions = [
+    { id: GROUPED_BY_NONE, label: 'Default' },
+    { id: GROUPED_BY_ALPHABETIC, label: 'Alphabetic' },
+    // { id: GROUPED_BY_RANDOM, label: 'random' },
+    { id: GROUPED_BY_GENRE, label: 'Genre' },
+    // { id: GROUPED_BY_CATEGORY, label: 'Meal Category' },
+    { id: GROUPED_BY_INGREDIENTS_COUNT_ASCENDING, label: 'Ingredients Count (ASC)' },
+    { id: GROUPED_BY_INGREDIENTS_COUNT_DESCENDING, label: 'Ingredients Count (DESC)' },
+];
+export const getRecipesGroupedByLocalStorageKey = () => getLocalStorage(RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, GROUPED_BY_NONE);
+export const setRecipesGroupedByLocalStorageKey = (groupedBy) => setLocalStorage(RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, groupedBy);
 
-// //////////////////////////////////////////////// RECIPES ////////////////////////////////////////////////////////////////
-// const RECIPES_FILTERS_LOCAL_STORAGE_KEY = 'recipesFilters';
-// export const getRecipesFilters = () => getLocalStorage(RECIPES_FILTERS_LOCAL_STORAGE_KEY, {});
-// export const setRecipesFilters = (filters) => setLocalStorage(RECIPES_FILTERS_LOCAL_STORAGE_KEY, filters);
+// selected recipe filters to apply on the recipes listing pages (e.g. category, genre, method, type) 
+export const defaultSelectedFilters = {
+    available: [],
+    category: [],
+    diet: [],
+    genre: [],
+    method: [],
+    protein: [],
+    type: [],
+    image: [],
+    wip: [],
+    ingredients: [],
+    search: '',
+    recommended: [],
+};
+const RECIPES_FILTERS_LOCAL_STORAGE_KEY = 'recipesFilters';
+export const getRecipesFiltersLocalStorageKey = () => ({
+    ...defaultSelectedFilters,
+    ...getLocalStorage(RECIPES_FILTERS_LOCAL_STORAGE_KEY, defaultSelectedFilters),
+});
+export const setRecipesFiltersLocalStorageKey = (filters) => setLocalStorage(RECIPES_FILTERS_LOCAL_STORAGE_KEY, filters);
 
-// const RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY = 'recipesFilterDrawerOpen';
-// export const getRecipesFilterDrawerOpen = () => getLocalStorage(RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY, false);
-// export const setRecipesFilterDrawerOpen = (isOpen) => setLocalStorage(RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY, isOpen);
+// recipe filters drawer open/close state
+const RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY = 'recipesFilterDrawerOpen';
+export const getRecipesFilterDrawerOpenLocalStorageKey = () => getLocalStorage(RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY, false);
+export const setRecipesFilterDrawerOpenLocalStorageKey = (isOpen) => setLocalStorage(RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY, isOpen);

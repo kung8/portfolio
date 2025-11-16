@@ -6,7 +6,7 @@ import { useDebouncedCallback } from 'use-debounce';
 import closeBtn from '../../../Assets/x.png';
 import { Dropdown } from '../../dropdown/dropdown';
 import { SwitchToggle } from '../../switch-toggle/SwitchToggle';
-import { fontSizeOptions, pageLayoutOptions } from '../utils';
+import {  fontSizeOptions, pageLayoutOptions, weekdayOptions } from '../utils';
 import { useSettings } from '../hooks/use-settings';
 
 const SettingContainer = ({ children, heading, subheading }) => (
@@ -46,16 +46,6 @@ const VendorOptionItem = ({ originalOption, removeVendorOption, updateVendorOpti
     )
 }
 
-const days = [
-    { label: 'Sun', value: 'sunday' },
-    { label: 'Mon', value: 'monday' },
-    { label: 'Tue', value: 'tuesday' },
-    { label: 'Wed', value: 'wednesday' },
-    { label: 'Thu', value: 'thursday' },
-    { label: 'Fri', value: 'friday' },
-    { label: 'Sat', value: 'saturday' }
-];
-
 export const SettingsModal = ({ closeModal }) => {
     const {
         defaultVendor,
@@ -76,6 +66,7 @@ export const SettingsModal = ({ closeModal }) => {
         updateShowRecipeStorageOptions,
         updateShowRecipeWebsiteReferences,
         updateStartingDay,
+        updateVendorOptions,
         vendorOptions,
     } = useSettings();
 
@@ -104,12 +95,6 @@ export const SettingsModal = ({ closeModal }) => {
     const removeVendorOption = (index) => {
         const newOptions = [...localVendorOptions];
         newOptions.splice(index, 1);
-        setLocalVendorOptions(newOptions);
-    }
-
-    const updateVendorOptions = (index, value) => {
-        const newOptions = [...localVendorOptions];
-        newOptions[index] = value;
         setLocalVendorOptions(newOptions);
     }
 
@@ -191,7 +176,7 @@ export const SettingsModal = ({ closeModal }) => {
                         subheading="Day of the week your meal planning calendar will start from."
                     >
                         <ul className="starting-day-checklist">
-                            {days.map(({ label, value }) => (
+                            {weekdayOptions.map(({ label, value }) => (
                                 <li
                                     key={value}
                                     className={`starting-day-option ${value === localStartingDay ? 'selected-day' : ''}`}
@@ -213,7 +198,11 @@ export const SettingsModal = ({ closeModal }) => {
                                     key={index}
                                     originalOption={option}
                                     removeVendorOption={() => removeVendorOption(index)}
-                                    updateVendorOption={(updatedOption) => updateVendorOptions(index, updatedOption)}
+                                    updateVendorOption={(updatedOption) => {
+                                        const newVendorOptions = [...localVendorOptions];
+                                        newVendorOptions[index] = updatedOption;
+                                        setLocalVendorOptions(newVendorOptions);
+                                    }}
                                 />
                             ))}
                         </ul>

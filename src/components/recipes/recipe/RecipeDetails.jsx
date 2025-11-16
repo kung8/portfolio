@@ -1,10 +1,10 @@
 import {
-    getRecipePageLayout,
+    getRecipePageLayoutLocalStorageKey,
     getShowRecipeFiguresLocalStorageKey,
-    getShowRecipeNotes,
-    getShowRecipeReheatOptions,
-    getShowRecipeStorageOptions,
-    getShowRecipeWebsiteReferences
+    getShowRecipeNotesLocalStorageKey,
+    getShowRecipeReheatOptionsLocalStorageKey,
+    getShowRecipeStorageOptionsLocalStorageKey,
+    getShowRecipeWebsiteReferencesLocalStorageKey
 } from '../utils';
 import { Appliances } from './Appliances';
 import { CookMode } from './CookMode';
@@ -24,12 +24,12 @@ import { Websites } from './Websites';
 import { Yield } from './Yield';
 
 export const RecipeDetails = () => {
-    const recipePageLayout = getRecipePageLayout();
+    const recipePageLayout = getRecipePageLayoutLocalStorageKey();
     const showRecipeFigures = getShowRecipeFiguresLocalStorageKey();
-    const showRecipeNotes = getShowRecipeNotes();
-    const showRecipeReheatOptions = getShowRecipeReheatOptions();
-    const showRecipeStorageOptions = getShowRecipeStorageOptions();
-    const showRecipeWebsiteReferences = getShowRecipeWebsiteReferences();
+    const showRecipeNotes = getShowRecipeNotesLocalStorageKey();
+    const showRecipeReheatOptions = getShowRecipeReheatOptionsLocalStorageKey();
+    const showRecipeStorageOptions = getShowRecipeStorageOptionsLocalStorageKey();
+    const showRecipeWebsiteReferences = getShowRecipeWebsiteReferencesLocalStorageKey();
 
     return (
         <div className="recipe-details">

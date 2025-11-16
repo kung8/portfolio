@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { GROCERY_LIST_LOCAL_STORAGE_KEY, GROCERY_LIST_VIEW, MEAL_PLAN_LOCAL_STORAGE_KEY, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
-import { handleModalClass } from '../utils';
+import { GROCERY_LIST_LOCAL_STORAGE_KEY, MEAL_PLAN_LOCAL_STORAGE_KEY } from '../constants';
+import { getSelectedModalViewLocalStorageKey, handleModalClass } from '../utils';
 import { useCategoryName } from './use-category-name';
 
 export const useGroceryList = () => {
@@ -86,10 +86,7 @@ export const useGroceryList = () => {
 
     const { handleClose, handleOpen } = handleModalClass('.grocery-list-modal', 'grocery-list-modal-overlay');
 
-    const getSelectedViewFromLocalStorage = () => {
-        return localStorage.getItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY) || GROCERY_LIST_VIEW;
-    }
-    const [selectedView, setSelectedView] = useState(getSelectedViewFromLocalStorage());
+    const [selectedView, setSelectedView] = useState(getSelectedModalViewLocalStorageKey());
 
     return {
         show,

@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
 import { useCategoryName } from '../hooks/use-category-name';
-import { getDefaultVendor } from '../utils';
+import { getDefaultVendorLocalStorageKey } from '../utils';
 
 export const EmptyGroceryListItem = ({ generateUUID, setGroceryList, updateLocalStorage }) => {
     const [inputValue, setInputValue] = useState('');
     const [checked, setChecked] = useState(false);
     const { getCategoryName } = useCategoryName();
-    const defaultVendor = getDefaultVendor();
+    const defaultVendor = getDefaultVendorLocalStorageKey();
 
     return (
         <div className="grocery-list-item">

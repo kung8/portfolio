@@ -6,7 +6,7 @@ import { useGetIngredientCategories } from '../../../hooks';
 import { ModalBody, ModalContent, ModalFooter, ModalHeader } from '../../modal/ModalContent';
 import { DATE_FORMAT, READABLE_SHORT_DATE } from '../constants';
 import { useRecipeType } from '../hooks/use-recipe-type';
-import { getVendorOptions } from '../utils';
+import { getVendorOptionsLocalStorageKey } from '../utils';
 import { getValidDateRangeError } from './getValidDateRangeError';
 import { RecipeDateInput } from './RecipeDateInput';
 import { RecipeDropdownInput } from './RecipeDropdownInput';
@@ -34,7 +34,7 @@ export const EditGroceryListItemModal = ({
 
     const [vendor, setVendor] = useState(itemToEdit?.vendor || '');
     const [isVendorDropdownOpen, setIsVendorDropdownOpen] = useState(false);
-    const vendorOptions = getVendorOptions();
+    const vendorOptions = getVendorOptionsLocalStorageKey();
 
     useEffect(() => {
         setDate(itemToEdit.date);

@@ -15,16 +15,6 @@ import { EmptyRecipeContainer } from './EmptyRecipeContainer';
 import { LoaderContainer } from './LoaderContainer';
 import { RecipeItem } from './RecipeItem';
 import { TopArrow } from './TopArrow';
-import {
-    GROUPED_BY_ALPHABETIC,
-    GROUPED_BY_GENRE,
-    GROUPED_BY_INGREDIENTS_COUNT_ASCENDING,
-    GROUPED_BY_INGREDIENTS_COUNT_DESCENDING,
-    GROUPED_BY_NONE,
-    RECIPES_FILTERS_LOCAL_STORAGE_KEY,
-    RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY,
-    RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY
-} from '../constants';
 import { Legend } from './Legend';
 import { RecipeSortFilter } from './RecipeSortFilter';
 import { Greeting } from './Greeting';
@@ -35,6 +25,7 @@ import { RecipeSearchBar } from './RecipeSearchBar';
 import { AdvancedFilters } from './AdvancedFilters';
 import { getMenuFilterItems } from '../utils/get-menu-filter-items';
 import { UploadRecipe } from './UploadRecipe';
+import {  GROUPED_BY_ALPHABETIC, GROUPED_BY_GENRE, GROUPED_BY_INGREDIENTS_COUNT_ASCENDING, GROUPED_BY_INGREDIENTS_COUNT_DESCENDING, GROUPED_BY_NONE, getRecipesFilterDrawerOpenLocalStorageKey, getRecipesFiltersLocalStorageKey, getRecipesGroupedByLocalStorageKey, setRecipesFilterDrawerOpenLocalStorageKey, setRecipesFiltersLocalStorageKey, setRecipesGroupedByLocalStorageKey } from '../utils';
 
 export const defaultSelectedFilters = {
     available: [],
@@ -58,17 +49,7 @@ export const Recipes = ({ history }) => {
     const cache = queryClient.getQueryData(queryKey)?.data?.length;
     const { data: featuredRecipes = {} } = useGetFeaturedRecipes();
 
-    const getInitialSelectedFilters = () => {
-        const filters = localStorage.getItem(RECIPES_FILTERS_LOCAL_STORAGE_KEY);
-        if (filters) {
-            return { ...defaultSelectedFilters, ...JSON.parse(filters) };
-        }
-        return defaultSelectedFilters;
-    };
-
-    const setSelectedFiltersInLocalStorage = (value) => localStorage.setItem(RECIPES_FILTERS_LOCAL_STORAGE_KEY, JSON.stringify(value));
-
-    const [selectedFilters, setSelectedFilters] = useState(getInitialSelectedFilters());
+    const [selectedFilters, setSelectedFilters] = useState(getRecipesFiltersLocalStorageKey());
     const [search, setSearch] = useState(selectedFilters.search);
     const [debouncedValue] = useDebounce(search, 300);
 
@@ -78,7 +59,7 @@ export const Recipes = ({ history }) => {
     }, [debouncedValue]);
 
     useEffect(() => {
-        setSelectedFiltersInLocalStorage(selectedFilters);
+        setRecipesFiltersLocalStorageKey(selectedFilters);
         // eslint-disable-next-line
     }, [
         selectedFilters.available,
@@ -114,15 +95,7 @@ export const Recipes = ({ history }) => {
 
     const matchingSearchResults = fuse.search(search).flatMap(recipe => recipe.item);
 
-    const getInitialGroupedBy = () => {
-        const initialGroupedBy = localStorage.getItem(RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY)
-        if (initialGroupedBy) return JSON.parse(initialGroupedBy);
-        return GROUPED_BY_NONE;
-    };
-
-    const setInitialGroupedByInLocalStorage = (value) => localStorage.setItem(RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, JSON.stringify(value));
-
-    const [groupedBy, setGroupedBy] = useState(getInitialGroupedBy());
+    const [groupedBy, setGroupedBy] = useState(getRecipesGroupedByLocalStorageKey());
     const sortRecipes = (recipes) => {
         if (selectedFilters.ingredients?.length) return Object.entries(recipes.reduce((acc, recipe, index) => {
             const overlappingIngredientsCount = getOverlappingIngredientsCount(recipe.ingredients);
@@ -262,17 +235,8 @@ export const Recipes = ({ history }) => {
     }, []);
 
     // filter logic
-    const setFilterDrawerOpen = () => {
-        const value = localStorage.getItem(RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY);
-        setShowFilters(value === 'yes' ? true : false);
-    }
-    const [showFilters, setShowFilters] = useState();
+    const [showFilters, setShowFilters] = useState(getRecipesFilterDrawerOpenLocalStorageKey());
     const menuFilterProps = { selectedFilters, setSelectedFilters };
-
-    useEffect(() => {
-        setFilterDrawerOpen();
-        // eslint-disable-next-line
-    }, []);
 
     return (
         <NonDashboardPage mainClassName={`recipes ${isLoaded ? '' : 'isLoading'}`}>
@@ -312,7 +276,7 @@ export const Recipes = ({ history }) => {
                 onFilterDrawerClick={() => {
                     const newShowFilters = !showFilters;
                     setShowFilters(newShowFilters);
-                    localStorage.setItem(RECIPES_FILTER_DRAWER_OPEN_LOCAL_STORAGE_KEY, newShowFilters ? 'yes' : 'no');
+                    setRecipesFilterDrawerOpenLocalStorageKey(newShowFilters);
                 }}
                 showFilters={showFilters}
             />
@@ -385,7 +349,7 @@ export const Recipes = ({ history }) => {
                                 groupedBy={groupedBy}
                                 setGroupedBy={(value) => {
                                     setGroupedBy(value);
-                                    setInitialGroupedByInLocalStorage(value);
+                                    setRecipesGroupedByLocalStorageKey(value);
                                 }}
                             />
                         </div>

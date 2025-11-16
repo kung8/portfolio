@@ -8,11 +8,10 @@ import list from '../../../Assets/list.png';
 import { getAsyncData, useGetData } from '../../../hooks';
 import { Loader } from '../../Loader';
 import { NonDashboardPage } from '../../Page';
-import { GROCERY_LIST_VIEW, SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY } from '../constants';
 import { EmailRecipe } from '../email-recipe-form/EmailRecipeForm';
 import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { useGroceryList } from '../hooks/use-grocery-list';
-import { categorizeRecipeType, formatYield, getIngredientData, getRecipeFontSizeClass, getRecipeRoute, handleModalClass } from '../utils';
+import {  GROCERY_LIST_VIEW, categorizeRecipeType, formatYield, getIngredientData, getRecipeFontSizeClass, getRecipeRoute, handleModalClass, setSelectedModalViewLocalStorageKey } from '../utils';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
 import { RecipeContext } from './RecipeContext';
 import { RecipeDetails } from './RecipeDetails';
@@ -373,7 +372,7 @@ export const Recipe = ({ match }) => {
                         }
 
                         // Handle selected view for modal
-                        localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, GROCERY_LIST_VIEW);
+                        setSelectedModalViewLocalStorageKey(GROCERY_LIST_VIEW);
                         setSelectedView(GROCERY_LIST_VIEW);
 
                         // Adds to Grocery List
@@ -416,7 +415,7 @@ export const Recipe = ({ match }) => {
                     modalClassName='add-supplies-to-grocery-list-modal'
                     onAdd={async ({ date, mealPlanningDateRange, type, vendor }) => {
                         // Handle selected view for modal
-                        localStorage.setItem(SELECTED_MODAL_VIEW_LOCAL_STORAGE_KEY, GROCERY_LIST_VIEW);
+                        setSelectedModalViewLocalStorageKey(GROCERY_LIST_VIEW);
                         setSelectedView(GROCERY_LIST_VIEW);
 
                         // Adds to Grocery List

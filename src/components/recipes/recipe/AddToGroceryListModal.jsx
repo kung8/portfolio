@@ -8,7 +8,7 @@ import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_SHORT_DATE } from '../const
 import { getValidDateRangeError } from '../grocery-list-modal/getValidDateRangeError';
 import { RecipeDateInput } from '../grocery-list-modal/RecipeDateInput';
 import { RecipeDropdownInput } from '../grocery-list-modal/RecipeDropdownInput';
-import { categorizeRecipeType, getDefaultVendor, getVendorOptions } from '../utils';
+import { categorizeRecipeType, getDefaultVendorLocalStorageKey, getVendorOptionsLocalStorageKey } from '../utils';
 
 export const AddToGroceryListModal = ({
     closeModal,
@@ -30,10 +30,10 @@ export const AddToGroceryListModal = ({
     const { data: categoryData } = useGetRecipeCategories();
     const categories = categoryData?.CATEGORIES ?? [];
 
-    const defaultVendor = getDefaultVendor();
+    const defaultVendor = getDefaultVendorLocalStorageKey();
     const [vendor, setVendor] = useState(defaultVendor);
     const [isVendorDropdownOpen, setIsVendorDropdownOpen] = useState(false);
-    const vendorOptions = getVendorOptions();
+    const vendorOptions = getVendorOptionsLocalStorageKey();
 
     useEffect(() => {
         if (initialType) {

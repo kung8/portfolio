@@ -9,13 +9,11 @@ import { GroceryListModalHeader } from './GroceryListModalHeader';
 import { MealPlanningModalContent } from './MealPlanningModalContent';
 import {
     GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY,
-    GROCERY_LIST_VIEW,
-    MEAL_PLANNING_VIEW,
     MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY
 } from '../constants';
 import { ApplyToIngredientsInPlannedMealModal } from './ApplyToIngredientsInPlannedMealModal';
 import { SettingsModal } from './SettingsModal';
-import { getStartingDay } from '../utils';
+import {  GROCERY_LIST_VIEW, MEAL_PLANNING_VIEW, getStartingDayLocalStorageKey } from '../utils';
 
 export const GroceryListModal = ({
     generateUUID,
@@ -162,7 +160,7 @@ export const GroceryListModal = ({
     // SETTINGS MODAL
     const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
     const closeSettingsModal = () => setIsSettingsModalOpen(false);
-    const startingDay = getStartingDay();
+    const startingDay = getStartingDayLocalStorageKey();
 
     return (
         <>
