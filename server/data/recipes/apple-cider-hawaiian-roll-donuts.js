@@ -15,8 +15,6 @@ const {
     WHITE_SUGAR,
 } = require('./ingredients');
 
-const SUGAR_MIXTURE = 'Sugar Mixture';
-
 module.exports = {
     wip: true,
     cardName: 'Apple Cider Donuts',
@@ -40,7 +38,7 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...HAWAIIAN_ROLLS, amount: 1, unit: INGREDIENT_UNITS.PACKAGE, additionalDetails: '12-count', section: SECTIONS.BREAD },
+        { ...HAWAIIAN_ROLLS, amount: 12, unit: '', additionalDetails: '', section: SECTIONS.BREAD },
 
         { ...APPLE_PIE_FILLING, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
         { ...APPLE_CIDER_MIX, amount: 0.74, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
@@ -51,7 +49,7 @@ module.exports = {
         { ...CINNAMON, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...APPLE_CIDER_MIX, amount: 0.74, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.TOPPINGS },
 
-        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BUTTER },
     ],
     appliances: [
         OVEN,
@@ -79,7 +77,7 @@ module.exports = {
 
         { step: `Bake until golden brown (about 12 to 14 minutes).`, section: SECTIONS.BAKE },
 
-        { step: `In a medium bowl, combine the "${SUGAR_MIXTURE}" section ingredients.`, section: SECTIONS.TOP },
+        { step: `In a medium bowl, combine the "${SECTIONS.TOPPINGS}" section ingredients.`, section: SECTIONS.TOP },
         { step: `Melt butter.`, section: SECTIONS.TOP },
         { step: `Brush tops of rolls with melted butter.`, section: SECTIONS.TOP },
         { step: `Coat each roll in sugar mixture.`, section: SECTIONS.TOP },
