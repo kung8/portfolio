@@ -1,8 +1,6 @@
 // LOCAL STORAGE KEYS
 export const GROCERY_LIST_LOCAL_STORAGE_KEY = 'groceryList';
-export const GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY = 'groceryListSortBy';
 export const MEAL_PLAN_LOCAL_STORAGE_KEY = 'mealPlan';
-export const MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY = 'mealPlanSortBy';
 
 // DATE FORMATS
 export const DATE_FORMAT = 'M/D/YYYY';

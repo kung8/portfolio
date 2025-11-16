@@ -5,6 +5,7 @@ import dayjs from 'dayjs';
 import { DATE_FORMAT, MEAL_PLAN_MEAL_TYPES, READABLE_SHORT_DATE, READABLE_SHORT_DATE_WITH_DAY_OF_WEEK, READABLE_SHORT_DATE_WITH_YEAR } from '../constants';
 import { MealItem } from './MealItem';
 import { SortBy } from './SortBy';
+import { MEAL_PLAN_SORT_BY_DAILY, MEAL_PLAN_SORT_BY_WEEKLY, mealPlanSortByOptions } from '../utils';
 
 export const MealPlanningModalContent = ({
     generateUUID,
@@ -73,7 +74,7 @@ export const MealPlanningModalContent = ({
         return months;
     }
 
-    const dates = sortBy === 'daily' ? getDays() : sortBy === 'weekly' ? getWeeks() : getMonths();
+    const dates = sortBy === MEAL_PLAN_SORT_BY_DAILY ? getDays() : sortBy === MEAL_PLAN_SORT_BY_WEEKLY ? getWeeks() : getMonths();
 
     const createRange = (start, end) => {
         let range = [];
@@ -85,7 +86,7 @@ export const MealPlanningModalContent = ({
     }
 
     const data = useMemo(() => {
-        return sortBy === 'daily' ? mealPlan.reduce((acc, item) => {
+        return sortBy === MEAL_PLAN_SORT_BY_DAILY ? mealPlan.reduce((acc, item) => {
             const mealPlanningDateRange = item.mealPlanningDateRange ?? [];
 
             if (mealPlanningDateRange.length > 0) {
@@ -114,7 +115,7 @@ export const MealPlanningModalContent = ({
     }, [mealPlan.map(item => item.recipeName + item.date + item.mealPlanningDateRange + item.type + item.checked).join(','), sortBy, startingDay]);
 
     const groupedData = useMemo(() => {
-        return sortBy !== 'daily' ? mealPlan.reduce((acc, item) => {
+        return sortBy !== MEAL_PLAN_SORT_BY_DAILY ? mealPlan.reduce((acc, item) => {
             const foundRange = dates.filter(date => {
                 const mealPlanningDateRange = item.mealPlanningDateRange ?? [];
 
@@ -279,7 +280,7 @@ export const MealPlanningModalContent = ({
                     <span onClick={mealPlan.length > 0 ? () => openDeleteModal('all') : undefined} className={mealPlan.length > 0 ? 'has-values' : ''}>Delete All</span>
                 </div>
                 <SortBy
-                    options={[{ id: 'daily', label: 'Daily' }, { id: 'weekly', label: 'Weekly' }, { id: 'monthly', label: 'Monthly' }]}
+                    options={mealPlanSortByOptions}
                     setSortBy={setSortBy}
                     sortBy={sortBy}
                 />

@@ -6,6 +6,7 @@ import { READABLE_SHORT_DATE } from '../constants';
 import { EmptyGroceryListItem } from './EmptyGroceryListItem';
 import { GroceryListItem } from './GroceryListItem';
 import { SortBy } from './SortBy';
+import { GROCERY_LIST_SORT_BY_CATEGORY, GROCERY_LIST_SORT_BY_DATE, GROCERY_LIST_SORT_BY_VENDOR, groceryListSortByOptions } from '../utils';
 
 export const GroceryListModalContent = ({
     generateUUID,
@@ -35,7 +36,7 @@ export const GroceryListModalContent = ({
                 if (a[0] > b[0]) return 1;
                 return 0;
             });
-        if (sortBy === 'category') return displayedIngredientsListByCategory();
+        if (sortBy === GROCERY_LIST_SORT_BY_CATEGORY) return displayedIngredientsListByCategory();
 
         // Group ingredients by date
         const displayedIngredientsListByDate = () => {
@@ -61,7 +62,7 @@ export const GroceryListModalContent = ({
                     return [dayjs(date).format(READABLE_SHORT_DATE), ingredients];
                 });
         }
-        if (sortBy === 'date') return displayedIngredientsListByDate();
+        if (sortBy === GROCERY_LIST_SORT_BY_DATE) return displayedIngredientsListByDate();
 
         // Group ingredients by vendor
         const displayedIngredientsListByVendor = () => {
@@ -79,7 +80,7 @@ export const GroceryListModalContent = ({
                     return 0;
                 });
         }
-        if (sortBy === 'vendor') return displayedIngredientsListByVendor();
+        if (sortBy === GROCERY_LIST_SORT_BY_VENDOR) return displayedIngredientsListByVendor();
 
         // default to category
         return displayedIngredientsListByCategory();
@@ -109,7 +110,7 @@ export const GroceryListModalContent = ({
                 <EmptyGroceryListItem generateUUID={generateUUID} setGroceryList={setGroceryList} updateLocalStorage={updateLocalStorage} />
                 {displayedList.map(([category, ingredients], index) => (
                     <div key={category + '-' + index} className="category-ingredient-container">
-                        <h6 className={`${sortBy === 'date' ? 'ingredient-date' : sortBy === 'vendor' ? 'ingredient-vendor' : 'ingredient-category'}`}>{category}</h6>
+                        <h6 className={`${sortBy === GROCERY_LIST_SORT_BY_DATE ? 'ingredient-date' : sortBy === GROCERY_LIST_SORT_BY_VENDOR ? 'ingredient-vendor' : 'ingredient-category'}`}>{category}</h6>
                         {ingredients.map((ingredient, index) => (
                             <GroceryListItem
                                 key={ingredient.id + '-' + index + '-' + ingredient.name + '-' + ingredient.checked + '-' + ingredient.mealPlanningDateRange + '-' + ingredient.category + '-' + ingredient.date}
@@ -131,11 +132,7 @@ export const GroceryListModalContent = ({
                     <span onClick={groceryList.length > 0 ? () => openDeleteModal('all') : undefined} className={groceryList.length > 0 ? 'has-values' : ''}>Delete All</span>
                 </div>
                 <SortBy
-                    options={[
-                        { id: 'category', label: 'Category' },
-                        { id: 'date', label: 'Date' },
-                        { id: 'vendor', label: 'Vendor' },
-                    ]}
+                    options={groceryListSortByOptions}
                     setSortBy={setSortBy}
                     sortBy={sortBy}
                 />

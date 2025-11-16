@@ -12,7 +12,7 @@ const getLocalStorage = (key, defaultValue) => {
     return defaultValue;
 }
 
-const setLocalStorage = (key, value) => {    
+const setLocalStorage = (key, value) => {
     if (typeof value === 'object') {
         localStorage.setItem(key, JSON.stringify(value));
     } else {
@@ -124,18 +124,36 @@ export const setStartingDayLocalStorageKey = (day) => setLocalStorage(STARTING_D
 // export const getGroceryList = () => getLocalStorage(GROCERY_LIST_LOCAL_STORAGE_KEY, []);
 // export const setGroceryList = (list) => setLocalStorage(GROCERY_LIST_LOCAL_STORAGE_KEY, list);
 
-// const GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY = 'groceryListSortBy';
-// export const getGroceryListSortBy = () => getLocalStorage(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY, 'category');
-// export const setGroceryListSortBy = (sortBy) => setLocalStorage(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY, sortBy);
+// sort by for grocery list (e.g. date, category, vendor)
+export const GROCERY_LIST_SORT_BY_CATEGORY = 'category';
+export const GROCERY_LIST_SORT_BY_DATE = 'date';
+export const GROCERY_LIST_SORT_BY_VENDOR = 'vendor';
+export const groceryListSortByOptions = [
+    { id: GROCERY_LIST_SORT_BY_CATEGORY, label: 'Category' },
+    { id: GROCERY_LIST_SORT_BY_DATE, label: 'Date' },
+    { id: GROCERY_LIST_SORT_BY_VENDOR, label: 'Vendor' },
+]
+const GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY = 'groceryListSortBy';
+export const getGroceryListSortByLocalStorageKey = () => getLocalStorage(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY, GROCERY_LIST_SORT_BY_CATEGORY);
+export const setGroceryListSortByLocalStorageKey = (sortBy) => setLocalStorage(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY, sortBy);
 
 // /////////////////////////////////////////////////// MEAL PLAN //////////////////////////////////////////////////////////////
 // const MEAL_PLAN_LOCAL_STORAGE_KEY = 'mealPlan';
 // export const getMealPlan = () => getLocalStorage(MEAL_PLAN_LOCAL_STORAGE_KEY, []);
 // export const setMealPlan = (plan) => setLocalStorage(MEAL_PLAN_LOCAL_STORAGE_KEY, plan);
 
-// const MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY = 'mealPlanSortBy';
-// export const getMealPlanSortBy = () => getLocalStorage(MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY, 'date');
-// export const setMealPlanSortBy = (sortBy) => setLocalStorage(MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY, sortBy);
+// display for meal plan (e.g. daily, weekly, monthly)
+export const MEAL_PLAN_SORT_BY_DAILY = 'daily';
+export const MEAL_PLAN_SORT_BY_WEEKLY = 'weekly';
+export const MEAL_PLAN_SORT_BY_MONTHLY = 'monthly';
+export const mealPlanSortByOptions = [
+    { id: MEAL_PLAN_SORT_BY_DAILY, label: 'Daily' },
+    { id: MEAL_PLAN_SORT_BY_WEEKLY, label: 'Weekly' },
+    { id: MEAL_PLAN_SORT_BY_MONTHLY, label: 'Monthly' }
+];
+const MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY = 'mealPlanSortBy';
+export const getMealPlanSortByLocalStorageKey = () => getLocalStorage(MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY, MEAL_PLAN_SORT_BY_DAILY);
+export const setMealPlanSortByLocalStorageKey = (sortBy) => setLocalStorage(MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY, sortBy);
 
 // //////////////////////////////////////////////////// MODAL VIEW /////////////////////////////////////////////////////////////
 export const GROCERY_LIST_VIEW = 'groceryList';
@@ -150,24 +168,24 @@ export const setSelectedModalViewLocalStorageKey = (view) => setLocalStorage(SEL
 
 //////////////////////////////////////////////// RECIPES LISTING PAGE ////////////////////////////////////////////////////////////////
 // recipes grouped by for display on the recipes listing pages
-export const GROUPED_BY_NONE = 'none';
-export const GROUPED_BY_ALPHABETIC = 'alphabetic';
-export const GROUPED_BY_RANDOM = 'random';
-export const GROUPED_BY_GENRE = 'genre';
-export const GROUPED_BY_CATEGORY = 'category';
-export const GROUPED_BY_INGREDIENTS_COUNT_ASCENDING = 'ingredientCountAscending';
-export const GROUPED_BY_INGREDIENTS_COUNT_DESCENDING = 'ingredientCountDescending';
+export const RECIPE_LISTING_SCREEN_GROUPED_BY_NONE = 'none';
+export const RECIPE_LISTING_SCREEN_GROUPED_BY_ALPHABETIC = 'alphabetic';
+export const RECIPE_LISTING_SCREEN_GROUPED_BY_RANDOM = 'random';
+export const RECIPE_LISTING_SCREEN_GROUPED_BY_GENRE = 'genre';
+export const RECIPE_LISTING_SCREEN_GROUPED_BY_CATEGORY = 'category';
+export const RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_ASCENDING = 'ingredientCountAscending';
+export const RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_DESCENDING = 'ingredientCountDescending';
 const RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY = 'recipesGroupedBy';
-export const groupedByOptions = [
-    { id: GROUPED_BY_NONE, label: 'Default' },
-    { id: GROUPED_BY_ALPHABETIC, label: 'Alphabetic' },
+export const recipeListingScreenGroupedByOptions = [
+    { id: RECIPE_LISTING_SCREEN_GROUPED_BY_NONE, label: 'Default' },
+    { id: RECIPE_LISTING_SCREEN_GROUPED_BY_ALPHABETIC, label: 'Alphabetic' },
     // { id: GROUPED_BY_RANDOM, label: 'random' },
-    { id: GROUPED_BY_GENRE, label: 'Genre' },
+    { id: RECIPE_LISTING_SCREEN_GROUPED_BY_GENRE, label: 'Genre' },
     // { id: GROUPED_BY_CATEGORY, label: 'Meal Category' },
-    { id: GROUPED_BY_INGREDIENTS_COUNT_ASCENDING, label: 'Ingredients Count (ASC)' },
-    { id: GROUPED_BY_INGREDIENTS_COUNT_DESCENDING, label: 'Ingredients Count (DESC)' },
+    { id: RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_ASCENDING, label: 'Ingredients Count (ASC)' },
+    { id: RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_DESCENDING, label: 'Ingredients Count (DESC)' },
 ];
-export const getRecipesGroupedByLocalStorageKey = () => getLocalStorage(RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, GROUPED_BY_NONE);
+export const getRecipesGroupedByLocalStorageKey = () => getLocalStorage(RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, RECIPE_LISTING_SCREEN_GROUPED_BY_NONE);
 export const setRecipesGroupedByLocalStorageKey = (groupedBy) => setLocalStorage(RECIPES_GROUPED_BY_LOCAL_STORAGE_KEY, groupedBy);
 
 // selected recipe filters to apply on the recipes listing pages (e.g. category, genre, method, type) 

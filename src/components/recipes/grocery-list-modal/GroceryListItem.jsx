@@ -5,7 +5,7 @@ import { useDebounce } from 'use-debounce';
 
 import edit from '../../../Assets/edit.png';
 import { READABLE_SHORT_DATE } from '../constants';
-import { baseUrl } from '../utils';
+import {  GROCERY_LIST_SORT_BY_CATEGORY, GROCERY_LIST_SORT_BY_DATE, GROCERY_LIST_SORT_BY_VENDOR, baseUrl } from '../utils';
 
 export const GroceryListItem = ({
     category,
@@ -79,14 +79,14 @@ export const GroceryListItem = ({
                     </p>
                 )}
                 {recipeYield && (
-                    <p className={`recipe-yield ${sortBy === 'date' ? 'recipe-yield-date' : sortBy === 'vendor' ? 'recipe-yield-vendor' : 'recipe-yield-category'}`}>
+                    <p className={`recipe-yield ${sortBy === GROCERY_LIST_SORT_BY_DATE ? 'recipe-yield-date' : sortBy === GROCERY_LIST_SORT_BY_VENDOR ? 'recipe-yield-vendor' : 'recipe-yield-category'}`}>
                         <span>Yields</span>
                         <span className="recipe-yield-text">{recipeYield}</span>
                     </p>
                 )}
-                {sortBy !== 'category' && category && <p className="recipe-category"><span>{category}</span></p>}
-                {sortBy !== 'date' && date && <p className="recipe-date"><span>Needed on {dayjs(date).format(READABLE_SHORT_DATE)}</span></p>}
-                {sortBy !== 'vendor' && vendor && (<p className="recipe-vendor"><span>Buy at {vendor}</span></p>)}
+                {sortBy !== GROCERY_LIST_SORT_BY_CATEGORY && category && <p className="recipe-category"><span>{category}</span></p>}
+                {sortBy !== GROCERY_LIST_SORT_BY_DATE && date && <p className="recipe-date"><span>Needed on {dayjs(date).format(READABLE_SHORT_DATE)}</span></p>}
+                {sortBy !== GROCERY_LIST_SORT_BY_VENDOR && vendor && (<p className="recipe-vendor"><span>Buy at {vendor}</span></p>)}
             </div>
         </div>
     )

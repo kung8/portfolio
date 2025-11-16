@@ -25,7 +25,7 @@ import { RecipeSearchBar } from './RecipeSearchBar';
 import { AdvancedFilters } from './AdvancedFilters';
 import { getMenuFilterItems } from '../utils/get-menu-filter-items';
 import { UploadRecipe } from './UploadRecipe';
-import {  GROUPED_BY_ALPHABETIC, GROUPED_BY_GENRE, GROUPED_BY_INGREDIENTS_COUNT_ASCENDING, GROUPED_BY_INGREDIENTS_COUNT_DESCENDING, GROUPED_BY_NONE, getRecipesFilterDrawerOpenLocalStorageKey, getRecipesFiltersLocalStorageKey, getRecipesGroupedByLocalStorageKey, setRecipesFilterDrawerOpenLocalStorageKey, setRecipesFiltersLocalStorageKey, setRecipesGroupedByLocalStorageKey } from '../utils';
+import { RECIPE_LISTING_SCREEN_GROUPED_BY_ALPHABETIC, RECIPE_LISTING_SCREEN_GROUPED_BY_GENRE, RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_ASCENDING, RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_DESCENDING, RECIPE_LISTING_SCREEN_GROUPED_BY_NONE, getRecipesFilterDrawerOpenLocalStorageKey, getRecipesFiltersLocalStorageKey, getRecipesGroupedByLocalStorageKey, setRecipesFilterDrawerOpenLocalStorageKey, setRecipesFiltersLocalStorageKey, setRecipesGroupedByLocalStorageKey } from '../utils';
 
 export const defaultSelectedFilters = {
     available: [],
@@ -105,9 +105,9 @@ export const Recipes = ({ history }) => {
             acc[overlappingIngredientsCount].push({ ...recipe, id: index });
             return acc;
         }, {})).sort((a, b) => b[0] - a[0]); // sort by descending order
-        if (groupedBy === GROUPED_BY_NONE) return recipes;
-        if (groupedBy === GROUPED_BY_ALPHABETIC) return recipes.sort((a, b) => a.cardName.localeCompare(b.cardName));
-        if (groupedBy === GROUPED_BY_GENRE) return Object.entries(recipes.reduce((acc, recipe, index) => {
+        if (groupedBy === RECIPE_LISTING_SCREEN_GROUPED_BY_NONE) return recipes;
+        if (groupedBy === RECIPE_LISTING_SCREEN_GROUPED_BY_ALPHABETIC) return recipes.sort((a, b) => a.cardName.localeCompare(b.cardName));
+        if (groupedBy === RECIPE_LISTING_SCREEN_GROUPED_BY_GENRE) return Object.entries(recipes.reduce((acc, recipe, index) => {
             const genre = recipe.genre?.[0];
             if (!genre) return acc;
             if (!acc[genre]) {
@@ -122,7 +122,7 @@ export const Recipes = ({ history }) => {
             const idB = itemsB[0].id;
             return idA - idB;
         });
-        if (groupedBy === GROUPED_BY_INGREDIENTS_COUNT_ASCENDING) return Object.entries(recipes.reduce((acc, recipe, index) => {
+        if (groupedBy === RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_ASCENDING) return Object.entries(recipes.reduce((acc, recipe, index) => {
             const ingredientCount = recipe.ingredients.length;
             if (!acc[ingredientCount]) {
                 acc[ingredientCount] = [];
@@ -130,7 +130,7 @@ export const Recipes = ({ history }) => {
             acc[ingredientCount].push({ ...recipe, id: index });
             return acc;
         }, {})).sort((a, b) => a[0] - b[0]); // sort by ascending order        
-        if (groupedBy === GROUPED_BY_INGREDIENTS_COUNT_DESCENDING) return Object.entries(recipes.reduce((acc, recipe, index) => {
+        if (groupedBy === RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_DESCENDING) return Object.entries(recipes.reduce((acc, recipe, index) => {
             const ingredientCount = recipe.ingredients.length;
             if (!acc[ingredientCount]) {
                 acc[ingredientCount] = [];
@@ -314,15 +314,15 @@ export const Recipes = ({ history }) => {
             {isLoaded ? (
                 filteredRecipes.length ? (
                     <>
-                        {groupedBy === GROUPED_BY_GENRE ||
+                        {groupedBy === RECIPE_LISTING_SCREEN_GROUPED_BY_GENRE ||
                             !!selectedFilters.ingredients?.length ||
-                            groupedBy === GROUPED_BY_INGREDIENTS_COUNT_ASCENDING ||
-                            groupedBy === GROUPED_BY_INGREDIENTS_COUNT_DESCENDING ? groupedFilteredRecipes.map(([genre, recipes]) => {
+                            groupedBy === RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_ASCENDING ||
+                            groupedBy === RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_DESCENDING ? groupedFilteredRecipes.map(([genre, recipes]) => {
                                 let genreLabel = genre;
                                 if (selectedFilters.ingredients?.length) {
                                     const totalSearchIngredientsCount = selectedFilters.ingredients?.length;
                                     genreLabel = `${genre} / ${totalSearchIngredientsCount} matching ingredients`;
-                                } else if (groupedBy === GROUPED_BY_INGREDIENTS_COUNT_ASCENDING || groupedBy === GROUPED_BY_INGREDIENTS_COUNT_DESCENDING) {
+                                } else if (groupedBy === RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_ASCENDING || groupedBy === RECIPE_LISTING_SCREEN_GROUPED_BY_INGREDIENTS_COUNT_DESCENDING) {
                                     genreLabel += genre === '1' ? ' ingredient' : ' ingredients';
                                 }
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { Dropdown } from '../../dropdown/dropdown';
-import { groupedByOptions } from '../utils';
+import { recipeListingScreenGroupedByOptions } from '../utils';
 
 export const RecipeSortFilter = ({ groupedBy, setGroupedBy }) => {
     const [show, setShow] = useState(false);
@@ -10,9 +10,9 @@ export const RecipeSortFilter = ({ groupedBy, setGroupedBy }) => {
         <div className="recipes-sort-filter-container">
             <h4>Group/Sort Recipes By</h4>
             <Dropdown
-                DropdownSelectorLeftContent={<span className="dropdown-label">{groupedByOptions.find(({ id }) => id === groupedBy)?.label}</span>}
+                DropdownSelectorLeftContent={<span className="dropdown-label">{recipeListingScreenGroupedByOptions.find(({ id }) => id === groupedBy)?.label}</span>}
                 dropdownOnClick={() => setShow(!show)}
-                DropdownContent={groupedByOptions.map(({ id, label }) => (
+                DropdownContent={recipeListingScreenGroupedByOptions.map(({ id, label }) => (
                     <li
                         key={id}
                         onClick={() => {

@@ -7,13 +7,9 @@ import { EditMealPlanModal } from './EditMealPlanModal';
 import { GroceryListModalContent } from './GroceryListModalContent';
 import { GroceryListModalHeader } from './GroceryListModalHeader';
 import { MealPlanningModalContent } from './MealPlanningModalContent';
-import {
-    GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY,
-    MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY
-} from '../constants';
 import { ApplyToIngredientsInPlannedMealModal } from './ApplyToIngredientsInPlannedMealModal';
 import { SettingsModal } from './SettingsModal';
-import {  GROCERY_LIST_VIEW, MEAL_PLANNING_VIEW, getStartingDayLocalStorageKey } from '../utils';
+import { GROCERY_LIST_VIEW, MEAL_PLANNING_VIEW, getGroceryListSortByLocalStorageKey, getMealPlanSortByLocalStorageKey, getStartingDayLocalStorageKey, setGroceryListSortByLocalStorageKey, setMealPlanSortByLocalStorageKey } from '../utils';
 
 export const GroceryListModal = ({
     generateUUID,
@@ -31,10 +27,9 @@ export const GroceryListModal = ({
     const [isEditIngredientModalOpen, setIsEditIngredientModalOpen] = useState(false);
     const [originalItemToEdit, setOriginalItemToEdit] = useState(null);
     const [itemToEdit, setItemToEdit] = useState(null);
-    const groceryListSortByFromLocalStorage = localStorage.getItem(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY);
-    const [groceryListSortBy, setGroceryListSortBy] = useState(groceryListSortByFromLocalStorage || 'category');
+    const [groceryListSortBy, setGroceryListSortBy] = useState(getGroceryListSortByLocalStorageKey());
     useEffect(() => {
-        localStorage.setItem(GROCERY_LIST_SORT_BY_LOCAL_STORAGE_KEY, groceryListSortBy);
+        setGroceryListSortByLocalStorageKey(groceryListSortBy);
     }, [groceryListSortBy]);
 
     const closeDeleteIngredientModal = () => {
@@ -66,10 +61,9 @@ export const GroceryListModal = ({
     const [isEditMealPlanModalOpen, setIsEditMealPlanModalOpen] = useState(false);
     const [originalMealToEdit, setOriginalMealToEdit] = useState(null);
     const [mealToEdit, setMealToEdit] = useState(null);
-    const mealPlanSortByFromLocalStorage = localStorage.getItem(MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY);
-    const [mealPlanSortBy, setMealPlanSortBy] = useState(mealPlanSortByFromLocalStorage || 'daily');
+    const [mealPlanSortBy, setMealPlanSortBy] = useState(getMealPlanSortByLocalStorageKey());
     useEffect(() => {
-        localStorage.setItem(MEAL_PLAN_SORT_BY_LOCAL_STORAGE_KEY, mealPlanSortBy);
+        setMealPlanSortByLocalStorageKey(mealPlanSortBy);
     }, [mealPlanSortBy]);
 
     const closeDeleteMealPlanModal = () => {
