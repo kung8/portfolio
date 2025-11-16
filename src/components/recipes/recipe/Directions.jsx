@@ -26,7 +26,7 @@ export const Directions = () => {
                 <span>{link.additionalText}</span>
             )}
         </>
-    ) : null;    
+    ) : null;
 
     return (
         <>
@@ -58,7 +58,16 @@ export const Directions = () => {
                                         <span className={`recipe-step-link ${getRecipeFontSizeClass()}`}>{formatLink(link)}</span>
                                     )}
                                     {showRecipeFigures && figure && (
-                                        <span id={`figure-label-${figure}`} onClick={() => setSelectedFigure(figure)} className={`figure-label-anchor ${getRecipeFontSizeClass()}`}>(See figure {figure})</span>
+                                        <span
+                                            id={`figure-label-${figure}`}
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                setSelectedFigure(figure)
+                                            }}
+                                            className={`figure-label-anchor ${getRecipeFontSizeClass()}`}
+                                        >
+                                            (See figure {figure})
+                                        </span>
                                     )}
                                 </div>
                                 {/* {time && (
