@@ -82,6 +82,8 @@ module.exports = {
     notes: [
         { note: 'The tart will need to be refrigerated if not eaten within a few hours because of the egg and dairy.', },
         { note: 'The original recipe recommends using a stand mixer though it only makes a small amount that is difficult for the stand mixer to get to (so unless you are making a larger amount you may as well mix this either by hand or with a hand mixer).', },
+        { note: 'You can use other types of apples but Pink Lady apples give a nice balance of sweet and tart flavor.', },
+        { note: 'I recommend thawing the puff pastry a little so it is does not break apart when unrolling.' },
     ],
     store: [
         {
