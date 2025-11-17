@@ -1060,6 +1060,10 @@
             padding-left: 16px;
 
             .recipe-website-item {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+                
                 .recipe-website-link {
                     margin-bottom: 4px;
 

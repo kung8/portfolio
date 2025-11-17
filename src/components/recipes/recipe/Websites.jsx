@@ -11,7 +11,7 @@ export const Websites = () => {
         <>
             <h4 className={`recipe-detail-label ${getRecipeFontSizeClass()} website-label`}>Website References:</h4>
             <ul className="recipe-websites-list">
-                {websites?.map(({ authors, finder, label, link }, i) => (
+                {websites?.map(({ authors, bookTitle, finder, label, link }, i) => (
                     <li key={i} className="recipe-website-item">
                         <div className="recipe-website-link">
                             {link ? (
@@ -24,8 +24,10 @@ export const Websites = () => {
                             ) : (
                                 <span className={`no-link-label-and-author ${getRecipeFontSizeClass()}`}>{label}{authors && ` by ${authors}`}</span>
                             )}
-
                         </div>
+                        {bookTitle && (
+                            <p className={`recipe-book-title ${getRecipeFontSizeClass()}`}>Recipe from <em>{bookTitle}</em></p>
+                        )}
                         {finder && (
                             <span className={`recipe-finder ${getRecipeFontSizeClass()}`}>Referred by {finder}</span>
                         )}
