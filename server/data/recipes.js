@@ -153,7 +153,7 @@ const frenchBaguettes = require("./recipes/french-baguettes");
 const frenchCrepe = require("./recipes/french-crepe");
 const frenchOnionSoupGratinee = require("./recipes/french-onion-soup-gratinee");
 const frenchToast = require("./recipes/french-toast");
-const friedChickenWithCrystalHotHoney = require('./recipes/fried-chicken-with-crystal-hot-honey');
+const friedChickenWithHotHoney = require('./recipes/fried-chicken-with-hot-honey');
 const frozenMudPie = require("./recipes/frozen-mud-pie");
 const gaiLanWithOysterSauce = require('./recipes/gai-lan-with-oyster-sauce.js');
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
@@ -591,7 +591,7 @@ const recipes = [
     butteredCorn,
     bbqPulledPorkAndFixins,
     bakedMacaroniAndCheese,
-    friedChickenWithCrystalHotHoney,
+    friedChickenWithHotHoney,
     creamyCornCasserole,
     coleslaw,
     bakedBeans,
