@@ -3,7 +3,7 @@ const honey2 = '../assets/Products/fried-chicken-with-hot-honey-2.jpeg';
 const honey3 = '../assets/Products/fried-chicken-with-hot-honey-3.jpeg';
 const honey4 = '../assets/Products/fried-chicken-with-hot-honey-4.jpeg';
 const honey5 = '../assets/Products/fried-chicken-with-hot-honey-5.jpeg';
-
+const honey6 = '../assets/Products/fried-chicken-with-hot-honey-6.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_THIGH, BOWL, BUTTERMILK, CAYENNE_PEPPER, COOLING_RACK, CRYSTAL_HOT_SAUCE, FREEZER, GARLIC_POWDER, GRAPESEED_OIL, HONEY, LARGE_POT, LEMON_JUICE, LEMON_ZEST, MIXING_BOWL, PAPER_TOWELS, PLASTIC_WRAP, PLATE, SALT, SAUCEPAN, SMOKED_PAPRIKA, STOVE, THERMOMETER, WATER, WHISK, WHITE_SUGAR } = require('./ingredients');
@@ -11,7 +11,7 @@ const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BLACK_PEPPER, BONELESS_AND_SKINLESS_CHI
 module.exports = {
     cardName: 'Hot Honey Fried Chicken',
     name: 'Fried Chicken with Hot Honey',
-    img: honey5,
+    img: honey6,
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER],
@@ -106,7 +106,7 @@ module.exports = {
 
         { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
 
-        { step: `Enjoy the taste of southern cuisine.`, section: SECTIONS.SERVE },
+        { step: `Enjoy the taste of southern cuisine.`, section: SECTIONS.SERVE, img: honey5 },
     ],
     notes: [
         { note: `Do not worry the marinade is very watery and will not "lose" flavor. The buttermilk and flour dredges will make up the flavor profile of this dish.` },
