@@ -1,4 +1,12 @@
-// const example = '../assets/Products/example.jpeg';
+const crisp1 = '../assets/Products/deconstructed-apple-crisp-1.jpeg';
+const crisp2 = '../assets/Products/deconstructed-apple-crisp-2.jpeg';
+const crisp3 = '../assets/Products/deconstructed-apple-crisp-3.jpeg';
+const crisp4 = '../assets/Products/deconstructed-apple-crisp-4.jpeg';
+const crisp5 = '../assets/Products/deconstructed-apple-crisp-5.jpeg';
+const crisp6 = '../assets/Products/deconstructed-apple-crisp-6.jpeg';
+const crisp7 = '../assets/Products/deconstructed-apple-crisp-7.jpeg';
+const crisp8 = '../assets/Products/deconstructed-apple-crisp-8.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, ALUMINUM_FOIL, BAKING_PAN, BAKING_SHEET, BLENDER, BROWN_SUGAR, CARDAMOM, CINNAMON, CORNSTARCH, GRANNY_SMITH_APPLE, HONEY_CRISP_APPLE, LEMON_JUICE, MAPLE_SYRUP, NUTMEG, OVEN, PEPITAS, ROLLED_OATS, SALT, UNSALTED_BUTTER, VANILLA_EXTRACT, VANILLA_ICE_CREAM, WHITE_SUGAR } = require('./ingredients');
 
@@ -8,12 +16,11 @@ const OAT_TOPPING_SECTION_PART_3 = 'Oat Topping Part 3';
 const COOK_OAT_TOPPING = 'Cook Oat Topping';
 
 module.exports = {
-    wip: true,
     cardName: 'Deconstructed Apple Crisp',
     name: 'Deconstructed Apple Crisp',
-    img: '',
+    img: crisp8,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -33,8 +40,8 @@ module.exports = {
     ingredients: [
         { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...LEMON_JUICE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...HONEY_CRISP_APPLE, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...GRANNY_SMITH_APPLE, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...HONEY_CRISP_APPLE, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled, cored and 1/2 inch slices', section: SECTIONS.FILLING },
+        { ...GRANNY_SMITH_APPLE, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'peeled, cored and 1/2 inch slices', section: SECTIONS.FILLING },
         { ...BROWN_SUGAR, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...MAPLE_SYRUP, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.FILLING },
         { ...CINNAMON, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.FILLING },
@@ -71,24 +78,23 @@ module.exports = {
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
         { step: `In a baking dish, combine cornstarch and lemon juice.`, section: SECTIONS.PREP_FILLING },
-        { step: `Add the rest of the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING },
+        { step: `Add the rest of the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING, img: crisp1 },
         { step: `Cover with foil.`, section: SECTIONS.PREP_FILLING },
         { step: `Set aside.`, section: SECTIONS.PREP_FILLING },
 
         { step: `Line a baking sheet with aluminum foil.`, section: COOK_OAT_TOPPING },
-        { step: `In a blender, combine the "${OAT_TOPPING_SECTION_PART_1}" section ingredients. Blend until the oats are partially chopped.`, section: COOK_OAT_TOPPING },
-        { step: `Add "${OAT_TOPPING_SECTION_PART_2}" section ingredients.`, section: COOK_OAT_TOPPING },
+        { step: `In a blender, combine the "${OAT_TOPPING_SECTION_PART_1}" section ingredients. Blend until the oats are partially chopped.`, section: COOK_OAT_TOPPING, img: crisp2 },
+        { step: `Add "${OAT_TOPPING_SECTION_PART_2}" section ingredients.`, section: COOK_OAT_TOPPING, img: crisp3 },
         { step: `Pulse until clumps form (about 30 seconds). Scrape down sides as needed.`, section: COOK_OAT_TOPPING },
-        { step: `Add the "${OAT_TOPPING_SECTION_PART_3}" section ingredients. Pulse until combined.`, section: COOK_OAT_TOPPING },
-        { step: `Pack into a ball.`, section: COOK_OAT_TOPPING },
-        { step: `Break into 1/2 inch chunks and place on baking sheet in a single layer.`, section: COOK_OAT_TOPPING },
+        { step: `Add the "${OAT_TOPPING_SECTION_PART_3}" section ingredients. Pulse until combined.`, section: COOK_OAT_TOPPING, img: crisp4 },
+        { step: `Break into 1/2 inch chunks and place on baking sheet in a single layer.`, section: COOK_OAT_TOPPING, img: crisp5 },
         { step: `Place baking sheet on middle rack.`, section: COOK_OAT_TOPPING },
-        { step: `Bake about 12 to 15 minutes. Rotate pan. Bake until browned and crispy (another 12 to 15 minutes).`, section: COOK_OAT_TOPPING },
+        { step: `Bake about 12 to 15 minutes. Rotate pan. Bake until browned and crispy (another 12 to 15 minutes).`, section: COOK_OAT_TOPPING, img: crisp6 },
 
         { step: `Place the apple filling on lower rack.`, section: SECTIONS.BAKE },
         { step: `Bake apple filling with foil for 40 minutes.`, section: SECTIONS.BAKE },
         { step: `Remove foil. Stir apples.`, section: SECTIONS.BAKE },
-        { step: `Increase heat to 375ºF. Bake until juices are bubbly and thick and apples are tender (about 40 minutes).`, section: SECTIONS.BAKE },
+        { step: `Increase heat to 375ºF. Bake until juices are bubbly and thick and apples are tender (about 40 minutes).`, section: SECTIONS.BAKE, img: crisp7 },
 
         { step: `Serve filling and topping either together or separately. Enjoy this a la mode, if you want to experience happiness, or just as is.`, section: SECTIONS.SERVE },
     ],
