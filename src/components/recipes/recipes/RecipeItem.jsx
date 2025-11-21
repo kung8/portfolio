@@ -2,7 +2,7 @@ export const RecipeItem = ({ item, onClick }) => {
     return (
         <div className="recipe-item-container" onClick={onClick}>
             {item.img ? (
-                <img src={item.img ? item.image : null} alt={item.name} className="recipe-image" />
+                <img src={item.img ? item.img : null} alt={item.name} className="recipe-image" />
             ) : (
                 <div className="recipe-image empty-recipe-image">
                     <p>Image Coming Soon!</p>
