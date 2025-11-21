@@ -2,6 +2,10 @@
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BISQUICK_BAKING_MIX, CHEDDAR_CHEESE, MIXING_BOWL, OVEN, SAUSAGE } = require('./ingredients');
 
+const SAUSAGE_BALL_SECTION = 'Sausage Balls';
+
+const PREP_INGREDIENTS = 'Prep Ingredients';
+
 module.exports = {
     wip: true,
     cardName: 'Sausage Balls',
@@ -27,9 +31,9 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...SAUSAGE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'bulk', section: '' },
-        { ...CHEDDAR_CHEESE, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'shredded', section: '' },
-        { ...BISQUICK_BAKING_MIX, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
+        { ...SAUSAGE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'bulk', section: SAUSAGE_BALL_SECTION },
+        { ...CHEDDAR_CHEESE, amount: 10, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'shredded', section: SAUSAGE_BALL_SECTION },
+        { ...BISQUICK_BAKING_MIX, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SAUSAGE_BALL_SECTION },
     ],
     appliances: [
         OVEN,
@@ -39,7 +43,7 @@ module.exports = {
         BAKING_PAN,
     ],
     directions: [
-        { step: `Allow the cheese and sausage to get to room temperature.`, section: '' },
+        { step: `Allow the cheese and sausage to get to room temperature.`, section: PREP_INGREDIENTS },
         { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `In a mixing bowl, combine all the ingredients. It will be dry.`, section: SECTIONS.PREP_BATTER },
         { step: `Roll the sausage mixture into 1 inch balls.`, section: SECTIONS.FORM_BALLS },

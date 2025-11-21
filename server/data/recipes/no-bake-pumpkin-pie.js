@@ -37,7 +37,7 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...GRAHAM_CRACKER_PIE_CRUST, amount: 1, unit: '', additionalDetails: '10 inch', section: '' },
+        { ...GRAHAM_CRACKER_PIE_CRUST, amount: 1, unit: '', additionalDetails: '10 inch', section: SECTIONS.CRUST },
 
         { ...VANILLA_INSTANT_PUDDING_MIX, amount: 3.4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PUMPKIN_PUREE_FILLING_SECTION },
         { ...MILK, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUMPKIN_PUREE_FILLING_SECTION },

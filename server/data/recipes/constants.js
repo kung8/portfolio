@@ -412,6 +412,7 @@ const SECTIONS = {
     LIQUIDS: 'Liquids',
     OIL: 'Oil',
     SPICES: 'Spices',
+    WATER: 'Water',
     WET_INGREDIENTS: 'Wet Ingredients',
 
     // === DISH TYPE NOUNS (Categories) ===

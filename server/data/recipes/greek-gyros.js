@@ -57,12 +57,12 @@ module.exports = {
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: TZATZIKI_SAUCE_SECTION },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: TZATZIKI_SAUCE_SECTION },
 
-        { ...ROMA_TOMATO, amount: 3, unit: '', additionalDetails: '', section: '' },
-        { ...CUCUMBER, amount: 3, unit: '', additionalDetails: '', section: '' },
-        { ...RED_ONION, amount: 1 / 2, unit: '', additionalDetails: '', section: '' },
-        { ...PARSLEY, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...SALT, amount: '', unit: '', additionalDetails: '', section: '' },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: '' },
+        { ...ROMA_TOMATO, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.SALAD },
+        { ...CUCUMBER, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.SALAD },
+        { ...RED_ONION, amount: 1 / 2, unit: '', additionalDetails: '', section: SECTIONS.SALAD },
+        { ...PARSLEY, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SALAD },
+        { ...SALT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SALAD },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SALAD },
 
         { ...PITA_BREAD, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.SERVE },
     ],

@@ -4,6 +4,8 @@ const bites2 = '../assets/Products/baked-ritz-bites-2.jpeg';
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALUMINUM_FOIL, BAKING_SHEET, BUTTER_PICKLE_CHIPS, EVERYTHING_BAGEL_SEASONING, HAVARTI_CHEESE, OVEN, RITZ_CRACKERS } = require('./ingredients');
 
+const CRACKER_SECTION = 'Ritz Bites';
+
 module.exports = {
     cardName: 'Baked Ritz Bites',
     name: 'Baked Ritz Bites',
@@ -27,10 +29,10 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...RITZ_CRACKERS, amount: 32, unit: '', additionalDetails: '', section: '' },
-        { ...HAVARTI_CHEESE, amount: 6, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'cut into cracker sized squares', section: '' },
-        { ...BUTTER_PICKLE_CHIPS, amount: 32, unit: '', additionalDetails: '', section: '' },
-        { ...EVERYTHING_BAGEL_SEASONING, amount: '', unit: '', additionalDetails: 'to taste', section: '' },
+        { ...RITZ_CRACKERS, amount: 32, unit: '', additionalDetails: '', section: CRACKER_SECTION },
+        { ...HAVARTI_CHEESE, amount: 6, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'cut into cracker sized squares', section: CRACKER_SECTION },
+        { ...BUTTER_PICKLE_CHIPS, amount: 32, unit: '', additionalDetails: '', section: CRACKER_SECTION },
+        { ...EVERYTHING_BAGEL_SEASONING, amount: '', unit: '', additionalDetails: 'to taste', section: CRACKER_SECTION },
     ],
     appliances: [
         OVEN
