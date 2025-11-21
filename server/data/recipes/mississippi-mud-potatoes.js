@@ -1,14 +1,17 @@
-// const example = '../assets/Products/example.jpeg';
+const potatoes1 = '../assets/Products/mississippi-mud-pototoes-1.jpeg';
+const potatoes2 = '../assets/Products/mississippi-mud-pototoes-2.jpeg';
+const potatoes3 = '../assets/Products/mississippi-mud-pototoes-3.jpeg';
+const potatoes4 = '../assets/Products/mississippi-mud-pototoes-4.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BACON, BAKING_PAN, BLACK_PEPPER, CHEDDAR_CHEESE, CHIVE, DIJON_MUSTARD, FRYING_PAN, GARLIC, OVEN, SALT, SLOTTED_SPOON, SOUR_CREAM, STOVE, YUKON_GOLD_POTATO } = require('./ingredients');
 
 const COOK_BACON = 'Cook Bacon';
 
 module.exports = {
-    wip: true,
     cardName: 'Mississippi Mud Potatoes',
     name: 'Mississippi Mud Potatoes',
-    img: '',
+    img: potatoes4,
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -55,12 +58,12 @@ module.exports = {
         { step: `Over medium heat, cook the bacon pieces until crispy (about 8 to 10 minutes).`, section: COOK_BACON },
         { step: `Transfer bacon to a small bowl with a slotted spoon.`, section: COOK_BACON },
         { step: `In a mixing bowl, combine just half of the bacon with the remaining "${SECTIONS.CASSEROLE}" section ingredients.`, section: SECTIONS.ASSEMBLE },
-        { step: `Transfer the potato mixture to a baking dish in an even layer.`, section: SECTIONS.ASSEMBLE },
-        { step: `Bake until the potatoes are tender (about 1 hour).`, section: SECTIONS.BAKE },
+        { step: `Transfer the potato mixture to a baking dish in an even layer.`, section: SECTIONS.ASSEMBLE, img: potatoes1 },
+        { step: `Bake until the potatoes are tender (about 1 hour).`, section: SECTIONS.BAKE, img: potatoes2 },
         { step: `Remove the baking dish from the oven.`, section: SECTIONS.BAKE },
         { step: `Turn the oven to broil.`, section: SECTIONS.BROIL },
         { step: `Top the casserole with cheese.`, section: SECTIONS.BROIL },
-        { step: `Broil the casserole until the cheese is melted and browned (about 2 to 3 minutes).`, section: SECTIONS.BROIL },
+        { step: `Broil the casserole until the cheese is melted and browned (about 2 to 3 minutes).`, section: SECTIONS.BROIL, img: potatoes3 },
         { step: `Let casserole cool for about 10 minutes.`, section: SECTIONS.BROIL },
         { step: `Enjoy this casserole dish topped with bacon and chives.`, section: SECTIONS.SERVE },
     ],
