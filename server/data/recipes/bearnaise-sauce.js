@@ -15,7 +15,7 @@ module.exports = {
     cardName: 'Béarnaise Sauce',
     name: 'Béarnaise Sauce',
     img: '',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.SAUCE],
     genre: [GENRES.FRENCH],

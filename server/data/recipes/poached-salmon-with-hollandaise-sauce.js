@@ -7,7 +7,7 @@ module.exports = {
     cardName: 'Poached Salmon',
     name: 'Poached Salmon with Hollandaise Sauce',
     img: '',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.FRENCH],

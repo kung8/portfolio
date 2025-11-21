@@ -11,7 +11,7 @@ module.exports = {
     cardName: 'Mango Chutney',
     name: 'Mango Chutney',
     img: '',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.SAUCE],
     genre: [GENRES.INDIAN],

@@ -12,7 +12,7 @@ module.exports = {
     cardName: 'Brazilian Lemonade',
     name: 'Brazilian Lemonade',
     img: '',
-    available: true,
+    available: false,
     recommended: false,
     category: [CATEGORIES.DRINK],
     genre: [GENRES.BRAZILIAN],
