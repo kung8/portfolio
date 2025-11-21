@@ -9,4 +9,4 @@ export const getRecipeRoute = (recipe) => {
     return `/recipes/${formattedName}`;
 }
 
-export const baseUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3000/#' : 'https://www.kevinung.com/#';
+export const baseUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3000/#' : 'https://www.kevinung8.com/#';
