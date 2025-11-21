@@ -13,7 +13,7 @@ module.exports = {
     name: 'Mississippi Mud Potatoes',
     img: potatoes4,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.SOUTHERN],
     method: [METHODS.BAKE, METHODS.PAN_FRY],
