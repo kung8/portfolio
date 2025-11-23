@@ -90,6 +90,13 @@
                 font-size: 12px;
                 color: theme.$coral;
             }
+
+            .sticky-scroll-header {
+                position: sticky;
+                top: -1px;
+                background: theme.$aqua;
+                padding: 8px 0;
+            }
         }
 
         .grocery-list-item {
@@ -223,6 +230,10 @@
                 justify-content: space-between;
                 align-items: center;
                 column-gap: 8px;
+                position: sticky;
+                top: -1px;
+                background: theme.$aqua;
+                padding: 8px 0;
 
                 .meal-plan-date {
                     font-size: 12px;
@@ -315,7 +326,7 @@
                         font-size: 12px;
                         color: theme.$default;
                     }
-    
+
                     .meal-item-meal-type {
                         font-size: 12px;
                         color: theme.$light;

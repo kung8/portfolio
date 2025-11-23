@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { links } from '.';
 
 export const RightPanel = ({ setSelected }) => {
+    // this logic is to sync the left panel selection with the right panel scroll position
     const addScrollListener = () => {
         const container = document.querySelector('.right-panel-container')
         container.addEventListener('scroll', () => {
