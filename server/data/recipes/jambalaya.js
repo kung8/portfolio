@@ -1,14 +1,21 @@
-// const example = '../assets/Products/example.jpeg';
+const jambalaya1 = '../assets/Products/jambalaya-1.jpeg';
+const jambalaya2 = '../assets/Products/jambalaya-2.jpeg';
+const jambalaya3 = '../assets/Products/jambalaya-3.jpeg';
+const jambalaya4 = '../assets/Products/jambalaya-4.jpeg';
+const jambalaya5 = '../assets/Products/jambalaya-5.jpeg';
+const jambalaya6 = '../assets/Products/jambalaya-6.jpeg';
+const jambalaya7 = '../assets/Products/jambalaya-7.jpeg';
+const jambalaya8 = '../assets/Products/jambalaya-8.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ANDOUILLE_SAUSAGE, BAY_LEAF, BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CAJUN_SEASONING, CAYENNE_PEPPER, CELERY, CHICKEN_BROTH, CRUSHED_TOMATOES, GARLIC, GREEN_BELL_PEPPER, GREEN_ONION, HOT_SAUCE, JALAPENO_PEPPER, LARGE_POT, LARGE_SHRIMP, OKRA, OLIVE_OIL, PARSLEY, RED_BELL_PEPPER, SALT, STOVE, THYME, WHITE_ONION, WHITE_RICE, YELLOW_BELL_PEPPER } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Jambalaya',
     name: 'Jambalaya',
-    img: '',
+    img: jambalaya8,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CAJUN, GENRES.CREOLE],
     method: [METHODS.SAUTE, METHODS.SIMMER],
@@ -64,21 +71,21 @@ module.exports = {
     ],
     directions: [
         { step: `Over medium-high heat, heat oil in a large pot.`, section: SECTIONS.COOK_MEAT },
-        { step: `Add chicken and sausage. Saute until the chicken is cooked through and sausage is browned (about 5 to 7 minutes).`, section: SECTIONS.COOK_MEAT },
+        { step: `Add chicken and sausage. Saute until the chicken is cooked through and sausage is browned (about 5 to 7 minutes).`, section: SECTIONS.COOK_MEAT, img: jambalaya1 },
         { step: `Transfer meats to a plate and set aside.`, section: SECTIONS.COOK_MEAT },
 
         { step: `Over medium-high heat, add oil to the large pot.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Add the rest of the "${SECTIONS.VEGGIES}" section ingredients. If you prefer a mild spice level, leave out the jalapeno peppers.`, section: SECTIONS.COOK_VEGGIES },
-        { step: `Saute until the onions are softened (about 6 minutes).`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Saute until the onions are softened (about 6 minutes).`, section: SECTIONS.COOK_VEGGIES, img: jambalaya2 },
 
-        { step: `Add crushed tomatoes, broth, rice, Cajun seasoning, thyme, cayenne pepper, and bay leaf to the large pot. Stir.`, section: SECTIONS.COOK_RICE },
+        { step: `Add the "${SECTIONS.RICE}" section ingredients to the large pot. Stir.`, section: SECTIONS.COOK_RICE, img: [jambalaya3, jambalaya4] },
         { step: `Cook until it simmers.`, section: SECTIONS.COOK_RICE },
         { step: `Reduce to medium-low heat.`, section: SECTIONS.COOK_RICE },
-        { step: `Cover and simmer until the rice is almost cooked through (about 25 to 30 minutes). Stir every 5 minutes to prevent the rice burning.`, section: SECTIONS.COOK_RICE },
+        { step: `Cover and simmer until the rice is almost cooked through (about 25 to 30 minutes). Stir every 5 minutes to prevent the rice burning.`, section: SECTIONS.COOK_RICE, img: jambalaya5 },
 
         { step: `Add shrimp and okra. Stir.`, section: SECTIONS.COOK_SHRIMP },
-        { step: `Simmer and stir occasionally. Cook until shrimp is cooked through and pink.`, section: SECTIONS.COOK_SHRIMP },
-        { step: `Remove the bay leaf and re-add the chicken and sausage.`, section: SECTIONS.COOK_SHRIMP },
+        { step: `Simmer and stir occasionally. Cook until shrimp is cooked through and pink.`, section: SECTIONS.COOK_SHRIMP, img: jambalaya6 },
+        { step: `Remove the bay leaf and re-add the chicken and sausage.`, section: SECTIONS.COOK_SHRIMP, img: jambalaya7 },
         { step: `Taste and add salt, pepper and Cajun seasoning as needed.`, section: SECTIONS.COOK_SHRIMP },
 
         { step: `Serve warm with your favorite toppings.`, section: SECTIONS.SERVE },
