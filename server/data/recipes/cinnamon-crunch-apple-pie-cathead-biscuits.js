@@ -1,4 +1,9 @@
-// Add image imports here if available
+const biscuits1 = '../assets/Products/cinnamon-crunch-apple-pie-cathead-biscuits-1.jpeg';
+const biscuits2 = '../assets/Products/cinnamon-crunch-apple-pie-cathead-biscuits-2.jpeg';
+const biscuits3 = '../assets/Products/cinnamon-crunch-apple-pie-cathead-biscuits-3.jpeg';
+const biscuits4 = '../assets/Products/cinnamon-crunch-apple-pie-cathead-biscuits-4.jpeg';
+const biscuits5 = '../assets/Products/cinnamon-crunch-apple-pie-cathead-biscuits-5.jpeg';
+const biscuits6 = '../assets/Products/cinnamon-crunch-apple-pie-cathead-biscuits-6.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, APPLE_PIE_SPICE, BAKING_PAN, BAKING_POWDER, BAKING_SODA, BASTING_BRUSH, BROWN_SUGAR, BUTTERMILK, CINNAMON, CORNSTARCH, GRANNY_SMITH_APPLE, GREEK_YOGURT, MAPLE_SYRUP, MEDIUM_BOWL, MEDIUM_SAUCEPAN, MIXING_BOWL, OVEN, SALT, SALTED_BUTTER, SMALL_BOWL, STOVE, VANILLA_EXTRACT, WATER, WHITE_SUGAR } = require('./ingredients');
@@ -12,10 +17,9 @@ const BISCUITS_3 = 'Biscuits 3';
 const CINNAMON_SUGAR = 'Cinnamon Sugar';
 
 module.exports = {
-    wip: true,
     cardName: 'Apple Pie Cathead Biscuits',
     name: 'Cinnamon Crunch Apple Pie Cathead Biscuits',
-    img: '',
+    img: biscuits6,
     available: true,
     recommended: false,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
@@ -80,11 +84,11 @@ module.exports = {
     ],
     directions: [
         { step: `Over medium-high heat, add the "${FIRST_FILLING}" section ingredients to a medium saucepan.`, section: SECTIONS.PREP_FILLING },
-        { step: `Cook and stir occasionally until the sugar melts and the apple starts to soften (about 10 minutes).`, section: SECTIONS.PREP_FILLING },
+        { step: `Cook and stir occasionally until the sugar melts and the apple starts to soften (about 10 minutes).`, section: SECTIONS.PREP_FILLING, img: biscuits1 },
         { step: `In a small bowl, combine the "${CORNSTARCH_SLURRY}" section ingredients.`, section: SECTIONS.PREP_FILLING },
         { step: `Add cornstarch slurry to apple mixture. Stir and cook until thickens (about 1 to 2 minutes).`, section: SECTIONS.PREP_FILLING },
         { step: `Remove from heat. Stir in vanilla.`, section: SECTIONS.PREP_FILLING },
-        { step: `Let it cool completely.`, section: SECTIONS.PREP_FILLING },
+        { step: `Let it cool completely.`, section: SECTIONS.PREP_FILLING, img: biscuits2 },
 
         { step: `Preheat the oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Grease baking pan with butter.`, section: SECTIONS.PREP_PAN },
@@ -93,14 +97,14 @@ module.exports = {
         { step: `In a mixing bowl, combine the "${BISCUITS_2}" section ingredients.`, section: SECTIONS.PREP_BATTER },
         { step: `Add the butter to the flour mixture. Coat butter until it is crumbly.`, section: SECTIONS.PREP_BATTER },
         { step: `Make a well in the center. Slowly pour in the buttermilk mixture.`, section: SECTIONS.PREP_BATTER },
-        { step: `Mix until just combined. Avoid overmixing.`, section: SECTIONS.PREP_BATTER },
-        { step: `Pour apple pie filling in center and gently fold a few times.`, section: SECTIONS.PREP_BATTER },
+        { step: `Mix until just combined. Avoid overmixing.`, section: SECTIONS.PREP_BATTER, img: biscuits3 },
+        { step: `Pour apple pie filling in center and gently fold a few times.`, section: SECTIONS.PREP_BATTER, img: biscuits4 },
 
         { step: `Scoop about 1/2 cup of biscuit batter and place in the baking pan.`, section: SECTIONS.ASSEMBLE },
         { step: `In a small bowl, combine the "${CINNAMON_SUGAR}" section ingredients.`, section: SECTIONS.ASSEMBLE },
         { step: `Brush the biscuit with the buttermilk.`, section: SECTIONS.ASSEMBLE },
         { step: `Sprinkle the cinnamon sugar over top.`, section: SECTIONS.ASSEMBLE },
-        { step: `Bake until fluffy and golden brown (about 20 to 25 minutes).`, section: SECTIONS.BAKE },
+        { step: `Bake until fluffy and golden brown (about 20 to 25 minutes).`, section: SECTIONS.BAKE, img: biscuits5 },
 
         { step: `Let biscuits rest for at least 5 to 10 minutes.`, section: SECTIONS.COOL },
         { step: `Enjoy this delicious breakfast!`, section: SECTIONS.SERVE },
