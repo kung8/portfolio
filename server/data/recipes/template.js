@@ -1,19 +1,33 @@
 // const example1 = '../assets/Products/example-1.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const {
+    CATEGORIES, 
+    GENRES,
+    INGREDIENT_UNITS, 
+    METHODS, PROTEIN, 
+    REHEAT_METHODS, 
+    SECTIONS, 
+    STORAGE_CONTAINER, 
+    STORAGE_DURATION_UNIT, 
+    STORAGE_LOCATION,
+    TIME_UNITS,
+    TYPES, 
+    YIELD_UNITS 
+} = require('./constants');
 const {  } = require('./ingredients');
 
 module.exports = {
+    // wip = work in progress
     wip: true,
     cardName: '{{cardName}}',
     name: '{{name}}',
     img: '',
     available: '{{available}}',
     recommended: false,
-    category: '{{category}}',
-    genre: '{{genre}}',
-    method: '{{method}}',
-    protein: '{{protein}}',
-    type: '{{type}}', 
+    category: ['{{category}}'],
+    genre: ['{{genre}}'],
+    method: ['{{method}}'],
+    protein: ['{{protein}}'],
+    type: ['{{type}}'],
     yields: { amount: '{{yields}}', unit: '{{yieldUnit}}' },
     prepTime: { amount: '{{prepTime}}', unit: '{{prepTimeUnit}}' },
     cookTime: { amount: '{{cookTime}}', unit: '{{cookTimeUnit}}' },
