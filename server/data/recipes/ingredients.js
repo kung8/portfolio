@@ -750,6 +750,7 @@ const INGREDIENTS = {
         PROVOLONE_CHEESE: {
             name: 'provolone cheese', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1627935722051-395636b0d8a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4Nzg1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        PHYLLO_DOUGH: { name: 'phyllo dough', category: INGREDIENT_CATEGORY.DAIRY },
         REFRIGERATED_BISCUIT_DOUGH: { name: 'refrigerated biscuit dough', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1522237825450-a0c44eecddb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTgxMDM2fA&ixlib=rb-4.0.3&q=80&w=400" },
         REFRIGERATED_BUTTERMILK_BISCUITS: { name: 'refrigerated buttermilk biscuits', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1522237825450-a0c44eecddb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTgxMDM2fA&ixlib=rb-4.0.3&q=80&w=400" },
         REFRIGERATED_CINNAMON_ROLLS: {
@@ -1948,6 +1949,7 @@ const INGREDIENTS = {
             name: 'fennel seeds', category: INGREDIENT_CATEGORY.SPICES, img: "https://images.unsplash.com/photo-1587493053604-f943541023aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU4NjE5fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         FENUGREEK_LEAVES: { name: 'fenugreek leaves', category: INGREDIENT_CATEGORY.SPICES },
+        FLAKY_SEA_SALT: { name: 'flaky sea salt', category: INGREDIENT_CATEGORY.SPICES },
         GARAM_MASALA: { name: 'garam masala', category: INGREDIENT_CATEGORY.SPICES },
         GARLIC_AND_HERB: { name: 'garlic and herb', category: INGREDIENT_CATEGORY.SPICES },
         GARLIC_POWDER: { name: 'garlic powder', category: INGREDIENT_CATEGORY.SPICES },
