@@ -1,6 +1,7 @@
 const almondCroissantCookieBars = require("./recipes/almond-croissant-cookie-bars");
 const americanOmelette = require("./recipes/american-omelette");
 const antsOnALog = require("./recipes/ants-on-a-log");
+const appleBriePhylloGalette = require('./recipes/apple-brie-phyllo-galette.js');
 const appleCiderHawaiianRollDonuts = require('./recipes/apple-cider-hawaiian-roll-donuts.js');
 const appleDumpCake = require('./recipes/apple-dump-cake.js');
 const appleDumplings = require('./recipes/apple-dumplings.js');
@@ -531,6 +532,7 @@ const recipes = [
 
     // FRENCH
     beignets,
+    appleBriePhylloGalette,
     greenBeanAlmondine,
     chickenFrancese,
     bearnaiseSauce,
