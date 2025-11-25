@@ -143,6 +143,7 @@ const drunkenNoodles = require("./recipes/drunken-noodles");
 const dumplingSoup = require("./recipes/dumpling-soup");
 const easyMochi = require('./recipes/easy-mochi.js');
 const eclair = require("./recipes/eclair");
+const empadapDeFrango = require('./recipes/empadao-de-frango.js'); // TODO: finish adding recipe
 const breakfastCasserole = require("./recipes/breakfast-casserole");
 const englishScones = require("./recipes/english-scones");
 const fajitas = require('./recipes/fajitas.js'); // TODO: finish adding recipe
@@ -279,6 +280,7 @@ const porkMilanese = require("./recipes/pork-milanese");
 const potRoast = require("./recipes/pot-roast");
 const potatoGnocchi = require("./recipes/potato-gnocchi");
 const pretzel = require("./recipes/pretzel");
+const pumpkinBars = require("./recipes/pumpkin-bars"); // TODO: finish adding recipe
 const pumpkinSoup = require("./recipes/pumpkin-soup");
 const pumpkinSoup2 = require('./recipes/pumpkin-soup-2.js'); // TODO: finish adding recipe
 const ravioli = require("./recipes/ravioli");
@@ -467,6 +469,7 @@ const recipes = [
     peruvianChicken,
 
     // BRAZILIAN
+    empadapDeFrango,
     paoDeQueijo,
     brigadeiro,
     beijinhoDeCoco,
@@ -732,6 +735,7 @@ const recipes = [
     almondCroissantCookieBars,
     lemonBars,
     lemonFreezeBars,
+    pumpkinBars,
     appleTart,
     appleDumplings,
     appleTurnovers,
