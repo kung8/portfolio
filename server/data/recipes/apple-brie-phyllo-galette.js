@@ -21,9 +21,9 @@ module.exports = {
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
-    waitTime: { amount: 10, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Sally\'s Baking Addiction', link: 'https://sallysbakingaddiction.com/apple-brie-phyllo-galette/', authors: ['Sally McKenney'], finder: 'Recipe Creation' }
+        { label: 'Apple Brie Phyllo Galette', link: 'https://sallysbakingaddiction.com/apple-brie-phyllo-galette/', authors: ['Sally McKenney'], finder: 'Kevin Ung' }
     ],
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: THYME_BUTTER },
@@ -31,7 +31,7 @@ module.exports = {
 
         { ...PHYLLO_DOUGH, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'thawed', section: SECTIONS.CRUST },
         { ...BRIE_CHEESE, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.CHEESE },
-        
+
         { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: APPLES_SECTION },
         { ...HONEY_CRISP_APPLE, amount: 4, unit: INGREDIENT_UNITS.SMALL, additionalDetails: '', section: APPLES_SECTION },
 
@@ -62,7 +62,7 @@ module.exports = {
         { step: `Spread the brie in the center (about 4 inches from the border).`, section: SECTIONS.ASSEMBLE },
         { step: `In a mixing bowl, combine the "${APPLES_SECTION}" section ingredients.`, section: SECTIONS.ASSEMBLE },
         { step: `Arrange the apple slices, in an overlapping pattern.`, section: SECTIONS.ASSEMBLE },
-        { step: `Fold the edges over to form a crust around the apple and brie topping.`, section: SECTIONS.ASSEMBLE },
+        { step: `Fold the edges over to form a crust (it will partially cover some of the apples slices and brie).`, section: SECTIONS.ASSEMBLE },
         { step: `Brush the crust with the melted butter.`, section: SECTIONS.ASSEMBLE },
 
         { step: `Bake until dough is golden brown and crisp (about 40 to 45 minutes).`, section: SECTIONS.BAKE },

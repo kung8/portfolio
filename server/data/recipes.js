@@ -259,6 +259,7 @@ const peanutButterCookies = require("./recipes/peanut-butter-cookies");
 const peanutButterCup = require("./recipes/peanut-butter-cup");
 const peanutButterThumbprintCookies = require("./recipes/peanut-butter-thumbprint-cookies");
 const peanutChickenSpringRollBowl = require('./recipes/peanut-chicken-spring-roll-bowl.js');
+const pecanPieBars = require("./recipes/pecan-pie-bars");
 const pekingDuck = require("./recipes/peking-duck"); // TODO: find recipe 
 const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
 const peppermintBark = require("./recipes/peppermint-bark");
@@ -705,6 +706,7 @@ const recipes = [
     chocolateCake,
     chocolateButtercreamFrosting,
     yuleLog,
+    pecanPieBars,
     peachCobbler,
     appleDumpCake,
     pineappleUpsideDownCake,
