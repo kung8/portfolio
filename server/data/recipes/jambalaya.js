@@ -15,7 +15,7 @@ module.exports = {
     name: 'Jambalaya',
     img: jambalaya8,
     available: true,
-    recommended: true,
+    recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CAJUN, GENRES.CREOLE],
     method: [METHODS.SAUTE, METHODS.SIMMER],
@@ -92,6 +92,7 @@ module.exports = {
     ],
     notes: [
         { note: 'Fresh or frozen okra can be used. If frozen, just make sure it has thawed.' },
+        { note: 'The shrimp can be omitted if using to meal prep.' },
     ],
     store: [
         {
@@ -101,10 +102,10 @@ module.exports = {
         },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave until heated through (about 3 to 5 minutes). Stir halfway through.',
+        },
     ],
-    mealPrep: true,
+    mealPrep: false,
 };

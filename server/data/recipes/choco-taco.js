@@ -78,3 +78,10 @@ module.exports = {
     ],
     mealPrep: true,
 };
+
+/*
+    Reference this if wanting to make the cone from scratch
+    By Crowded Kitchen
+    Website: https://www.crowdedkitchen.com/homemade-choco-tacos/
+    Amazon Link for Waffle Iron: https://www.amazon.com/dp/B08464TZV5
+*/

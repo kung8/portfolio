@@ -781,7 +781,9 @@ module.exports = recipes;
 // TODO: https://cookingwithkarli.com/crave-rockstar-cookie-recipe/?fbclid=IwY2xjawNagudleHRuA2FlbQIxMQABHqLXZW8qtuz8axoFXldWq9mzV45reZ3YqqH5-KVdq3_rwiJ27fszAEok4vpu_aem_LDtydRXK6zvnQRPyuUW4fw
 // TODO: https://www.allrecipes.com/lemon-ricotta-muffins-recipe-11826885
 // TODO: https://sweetcsdesigns.com/cabbage-and-noodles/
-
+// TODO: https://www.tastyeverafter.com/asian-meatball-noodle-soup/
+// TODO: https://www.madewithlau.com/recipes/char-siu-chinese-bbq-pork
+// TODO: https://krollskorner.com/recipes/appetizers-snacks/philly-cheesesteak-sliders/
 
 
 // TODO: Add way to download and print recipes
@@ -789,3 +791,76 @@ module.exports = recipes;
 // TODO: add timer clock per step to indicate how long each step takes
 // TODO: Add bulk actions logic?
 // TODO: make click on figure and sections not check the step
+
+
+
+
+
+
+
+
+/*
+    TODO: Ceasar Salad Sandwich: 
+    This sandwich is divine. If you love a good Caesar salad will love this crispy creamy sandwich.
+    This is how you'll make it.
+    You will need 3 good chicken breasts, when pounded thinly you'll end up with 6 good pieces.
+    For the breading:
+    3 cups Italian seasoned panko crumbs
+    4 large eggs
+    1 cup of flour/ season lightly with salt and pepper
+    For the dressing:
+    3/4 cup mayonnaise
+    2 whole heads of roasted garlic
+    1/4 cup olive oil
+    Salt and pepper to taste
+    1 tosp champagne or red wine vinegar
+    1 tosp Dijon mustard
+    1/2 tosp Worcestershire sauce
+    The juice of 1/2 lemon
+    1/2 cup Parmesan cheese
+    You will also need ciabatta bread, more Parmesan cheese. And 3/ romaine heart lettuce.
+    Olive oil and butter to pan fry the Chicken. You can choose to pan fry in canola oil if you prefer.
+    Preparation:
+    First thing you're gonna do is roast two whole heads of garlic, simply wrap in foil and place in 375 degree F
+    oven for 30 minutes or until soft inside.
+    Place the each chicken breast inside a ziplock plastic bag and pound gently until thin and has even thickness on all sides.
+    Prepare the chicken coating by placing in different shallow plates, just make sure to season the flour lightly.
+    Dip the chicken in the flour then eggs then the panko and coat well. Cook in a skillet as shown for 5 minutes on each side. Make sure to clean the skillet in between.
+    Make the dressing by adding the roasted garlic mayonnaise, salt and pepper and the rest of the ingredients. Drizzle the oil towards the end and taste to adjust.
+    Toast the bread in a hot skillet and assemble the sandwich as shown.
+*/
+
+/* 
+    TODO: Upside Down Apple Tart
+    By Home Hacks & Easy Snacks
+    Website: https://www.facebook.com/watch/?v=1876068763306540
+    Yields: 6 mini tarts | Prep time: 10 minutes | Cook time: 15-20 minutes 
+    
+    Ingredients:
+    1 sheet frozen puff pastry, thawed
+    1 large apple (Granny Smith or Honeycrisp recommended), thinly sliced
+    6 tbsp honey or 2-4 tbsp brown sugar and butter
+    Dash of cinnamon (optional)
+    1 large egg, beaten with 1 tbsp water (for egg wash)
+    Powdered sugar or vanilla ice cream for serving (optional) 
+    
+    Instructions:
+    Prep: Preheat oven to 400°F (200°C) and line a baking sheet with parchment paper.
+    Caramel Base: Drizzle 1 tablespoon of honey (or a sprinkle of brown sugar and a small pat of butter) into six separate spots on the parchment paper. Spread slightly into a rectangle or circle shape.
+    Add Apples: Arrange 4-6 thinly sliced apple pieces over each honey spot, overlapping them slightly.
+    Cover with Pastry: Cut the thawed puff pastry sheet into 6 equal rectangles or squares. Place one piece of puff pastry over each apple arrangement, gently pressing down the edges to seal the apples and honey underneath.
+    Bake: Brush the tops of the pastry with the egg wash for a golden finish. Bake for 15–20 minutes, or until the pastry is puffed and golden brown.
+    Flip & Serve: Let the tarts cool for about 5 minutes, then carefully flip them over onto a serving plate to reveal the caramelized apples. Dust with powdered sugar and serve warm with a scoop of ice cream, if desired. 
+*/
+
+/*
+    TODO: Smores Cookie Cup
+    By Jen Glufling
+    Website: https://www.facebook.com/watch/?v=722477680835461
+*/
+
+/*
+    TODO: Muffin Tin Cinnamon Apple Pie
+    By Twisted
+    website: https://www.facebook.com/watch/?v=597676636305410 
+*/
