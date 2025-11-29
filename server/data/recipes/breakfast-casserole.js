@@ -1,16 +1,19 @@
-// const casserole1 = '../assets/Products/breakfast-casserole-1.jpeg';
+const casserole1 = '../assets/Products/breakfast-casserole-1.jpeg';
+const casserole2 = '../assets/Products/breakfast-casserole-2.jpeg';
+const casserole3 = '../assets/Products/breakfast-casserole-3.jpeg';
+const casserole4 = '../assets/Products/breakfast-casserole-4.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BLACK_PEPPER, CHEDDAR_CHEESE, COOKING_SPRAY, EGG, FRYING_PAN, GREEN_BELL_PEPPER, GREEN_ONION, MILK, OVEN, RED_BELL_PEPPER, SALT, SAUSAGE, SOUR_CREAM, STAND_MIXER, STOVE } = require('./ingredients');
 
 const EGG_MIXTURE = 'Egg Mixture';
 
 module.exports = {
-    wip: true,
     cardName: 'Breakfast Casserole',
     name: 'Breakfast Casserole',
-    img: '',
+    img: casserole4,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -61,10 +64,10 @@ module.exports = {
         { step: `Drain most of the oil. Transfer sausage to egg mixture.`, section: SECTIONS.PREP_CASSEROLE },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients to frying pan. Saute for 2 to 3 minutes.`, section: SECTIONS.PREP_CASSEROLE },
         { step: `Transfer veggies to the egg mixture.`, section: SECTIONS.PREP_CASSEROLE },
-        { step: `Mix everything.`, section: SECTIONS.PREP_CASSEROLE },
-        { step: `Pour mixture in baking pan.`, section: SECTIONS.PREP_CASSEROLE },
+        { step: `Mix everything.`, section: SECTIONS.PREP_CASSEROLE, img: casserole1  },
+        { step: `Pour mixture in baking pan.`, section: SECTIONS.PREP_CASSEROLE, img: casserole2  },
 
-        { step: `Bake until edges are set and. center is just jiggly (about 35 to 50 minutes).`, section: SECTIONS.BAKE },
+        { step: `Bake until edges are set and center is just jiggly (about 35 to 50 minutes).`, section: SECTIONS.BAKE, img: casserole3  },
 
         { step: `Enjoy this delicious breakfast dish!`, section: SECTIONS.SERVE },
     ],
