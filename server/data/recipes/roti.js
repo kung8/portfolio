@@ -71,6 +71,7 @@ module.exports = {
         { step: `Cook the second side until there are some brown spots all over (about 45 seconds to 1 minute).`, section: COOK_ROTI_OPEN_FLAME },
         { step: `Use a tong to heat the first side over direct flame until puffed up.`, section: COOK_ROTI_OPEN_FLAME },
         { step: `Flip and heat the second side over direct flame. Avoid burning it.`, section: COOK_ROTI_OPEN_FLAME },
+        { step: `Immediately brush with ghee.`, section: COOK_ROTI_OPEN_FLAME },
 
         { step: `Shake off excess flour.`, section: COOK_ROTI_INDUCTION },
         { step: `Over medium-high heat, heat a frying pan.`, section: COOK_ROTI_INDUCTION },
@@ -80,8 +81,8 @@ module.exports = {
         { step: `Cook the second side until there are some brown spots all over (about 1 to 2 minutes).`, section: COOK_ROTI_INDUCTION },
         { step: `Flip back to the first side.`, section: COOK_ROTI_INDUCTION },
         { step: `Cook until brown spots (about a few seconds).`, section: COOK_ROTI_INDUCTION },
+        { step: `Immediately brush with ghee.`, section: COOK_ROTI_INDUCTION },
 
-        { step: `Immediately brush with ghee.`, section: SECTIONS.BRUSH },
         { step: `Serve warm with your favorite dal, curry, or vegetables.`, section: SECTIONS.SERVE },
     ],
     notes: [
