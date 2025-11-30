@@ -39,13 +39,13 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
         { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
         { ...YELLOW_ONION, amount: 1, unit: '', additionalDetails: 'chopped', section: SECTIONS.VEGGIES },
-        { ...CELERY, amount: 1, unit: INGREDIENT_UNITS.STALK, additionalDetails: '', section: SECTIONS.VEGGIES },
-        { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...CELERY, amount: 1, unit: INGREDIENT_UNITS.STALK, additionalDetails: 'sliced', section: SECTIONS.VEGGIES },
+        { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'chopped', section: SECTIONS.VEGGIES },
         { ...THYME, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SEASONINGS },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SEASONINGS },
 
-        { ...CHICKEN_BROTH, amount: 1, unit: INGREDIENT_UNITS.QUART, additionalDetails: '', section: SECTIONS.SOUP },
+        { ...CHICKEN_BROTH, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
         { ...HEAVY_CREAM, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
     ],
     appliances: [

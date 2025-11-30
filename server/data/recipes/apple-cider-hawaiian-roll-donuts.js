@@ -15,6 +15,9 @@ const {
     WHITE_SUGAR,
 } = require('./ingredients');
 
+const BUTTER_FOR_PRE_BAKE = 'Butter for Pre-Bake';
+const BUTTER_FOR_COATING = 'Butter for Coating';
+
 module.exports = {
     wip: true,
     cardName: 'Apple Cider Donuts',
@@ -43,13 +46,13 @@ module.exports = {
         { ...APPLE_PIE_FILLING, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
         { ...APPLE_CIDER_MIX, amount: 0.74, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
 
-        { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BUTTER },
+        { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BUTTER_FOR_PRE_BAKE },
 
         { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...CINNAMON, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...APPLE_CIDER_MIX, amount: 0.74, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.TOPPINGS },
 
-        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BUTTER },
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BUTTER_FOR_COATING },
     ],
     appliances: [
         OVEN,
@@ -58,7 +61,7 @@ module.exports = {
         BAKING_SHEET,
         SILICONE_BAKING_MAT,
         MIXING_BOWL,
-        {...MEDIUM_BOWL, amount: 2 },
+        { ...MEDIUM_BOWL, amount: 2 },
         BASTING_BRUSH,
     ],
     directions: [
@@ -71,14 +74,14 @@ module.exports = {
         { step: `Separate Hawaiian rolls.`, section: SECTIONS.PREP_ROLLS },
         { step: `Create a hole in the side of each roll, large enough for about a tablespoon of filling.`, section: SECTIONS.PREP_ROLLS },
         { step: `Add a spoonful of filling in each roll.`, section: SECTIONS.PREP_ROLLS },
-        { step: `Melt butter.`, section: SECTIONS.PREP_ROLLS },
+        { step: `Melt butter (from "${BUTTER_FOR_PRE_BAKE}" section).`, section: SECTIONS.PREP_ROLLS },
         { step: `Brush butter on all sides of the roll with a basting brush.`, section: SECTIONS.PREP_ROLLS },
         { step: `Place rolls on a lined baking sheet.`, section: SECTIONS.PREP_ROLLS },
 
         { step: `Bake until golden brown (about 12 to 14 minutes).`, section: SECTIONS.BAKE },
 
         { step: `In a medium bowl, combine the "${SECTIONS.TOPPINGS}" section ingredients.`, section: SECTIONS.TOP },
-        { step: `Melt butter.`, section: SECTIONS.TOP },
+        { step: `Melt butter (from "${BUTTER_FOR_COATING}" section).`, section: SECTIONS.TOP },
         { step: `Brush tops of rolls with melted butter.`, section: SECTIONS.TOP },
         { step: `Coat each roll in sugar mixture.`, section: SECTIONS.TOP },
 
