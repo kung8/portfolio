@@ -48,7 +48,7 @@ module.exports = {
         { ...LEMON, amount: 1, unit: '', additionalDetails: '4 strips lemon zest and 1/4 cup lemon juice', section: SIMMER_SECTION },
         { ...BAY_LEAF, amount: 2, unit: '', additionalDetails: '', section: SIMMER_SECTION },
         { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'bone-in and skin-on', section: SIMMER_SECTION },
-        { ...CHICKEN_BROTH, amount: 2, unit: INGREDIENT_UNITS.QUART, additionalDetails: '', section: SIMMER_SECTION },
+        { ...CHICKEN_BROTH, amount: 8, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SIMMER_SECTION },
         { ...WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SIMMER_SECTION },
 
         { ...ORZO, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ORZO_SECTION },
