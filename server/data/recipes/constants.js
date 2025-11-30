@@ -386,14 +386,15 @@ const SECTIONS = {
     SOUP: 'Soup',
 
     // Sauces & Seasonings
+    COATING: 'Coating',
+    DREDGE: 'Dredge',
     DRESSING: 'Dressing',
     DRY_RUB: 'Dry Rub',
+    DUSTING: 'Dusting',
     MARINADE: 'Marinade',
     SAUCE: 'Sauce',
     SEASONINGS: 'Seasonings',
     WET_RUB: 'Wet Rub',
-    COATING: 'Coating',
-    DREDGE: 'Dredge',
 
     // Toppings & Garnishes
     FROSTING: 'Frosting',

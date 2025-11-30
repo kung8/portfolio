@@ -18,7 +18,7 @@ export const Directions = () => {
     }, [formattedDirections]);
 
     // Function to render step text with quoted text as clickable anchor links
-    const renderStepWithQuotedLinks = (text) => {
+    const renderStepWithQuotedLinks = (text, referenceType) => {
         if (!text || typeof text !== 'string') return text;
 
         // Use a different approach: replace quoted text with placeholders, then process
@@ -55,9 +55,14 @@ export const Directions = () => {
                         className="quoted-text-link"
                         onClick={(e) => {
                             e.stopPropagation(); // Prevent step checkbox toggle
-                            // 
-                            const element = document.getElementById('recipe-section-' + anchorId);
-                            console.log(element, anchorId);
+
+                            // Scroll to the referenced section (directions or ingredients)
+                            let element = null;
+                            if (referenceType === 'directions') {
+                                element = document.getElementById('directions-section-' + anchorId);
+                            } else {
+                                element = document.getElementById('ingredients-section-' + anchorId);
+                            }
 
                             if (element) {
                                 element.scrollIntoView({ behavior: 'smooth' });
@@ -89,9 +94,9 @@ export const Directions = () => {
             <h4 className={`recipe-detail-label ${getRecipeFontSizeClass()}`}>Directions:</h4>
             {formattedDirections.map(([section, directions]) => (
                 <div key={section} className="separated-recipe-container direction-container">
-                    <h5 className={`separated-recipe-detail-label direction-label ${getRecipeFontSizeClass()}`}>{section}</h5>
+                    <h5 id={`directions-section-${section.toLowerCase().split(' ').join('-')}`} className={`separated-recipe-detail-label direction-label ${getRecipeFontSizeClass()}`}>{section}</h5>
                     <ol className="separated-recipe-detail-list">
-                        {directions.map(({ step, figure, link, _time }, index) => (
+                        {directions.map(({ step, figure, link, referenceType = 'ingredients' }, index) => (
                             <li
                                 key={step + '-' + index}
                                 onClick={() => {
@@ -108,7 +113,7 @@ export const Directions = () => {
                                 <div>
                                     {step && (
                                         <span className={`recipe-step ${getRecipeFontSizeClass()}`}>
-                                            {renderStepWithQuotedLinks(step)}
+                                            {renderStepWithQuotedLinks(step, referenceType)}
                                         </span>
                                     )}
                                     &nbsp;

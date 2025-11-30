@@ -134,6 +134,9 @@ const INGREDIENTS = {
         WALNUTS: {
             name: 'walnuts', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1524593656068-fbac72624bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU3MzI3fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        WHEAT_FLOUR: {
+            name: 'wheat flour', category: INGREDIENT_CATEGORY.BAKING
+        },
         WHITE_CHOCOLATE_CHIPS: {
             name: 'white chocolate chips', category: INGREDIENT_CATEGORY.BAKING, img: "https://plus.unsplash.com/premium_photo-1726080419555-1a74a78a6813?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU3NjAzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -583,6 +586,7 @@ const INGREDIENTS = {
         CUTLERY: { name: 'cutlery', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         DOUGH_KNIFE: { name: 'dough knife', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         DUTCH_OVEN_POT: { name: 'dutch oven pot', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
+        DRYING_CLOTH: { name: 'drying cloth', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         ELECTRIC_MIXER: { name: 'electric mixer', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         EMULSIFIER: { name: 'emulsifier', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         FOOD_STORAGE_CONTAINER: { name: 'food storage container', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },

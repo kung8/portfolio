@@ -784,6 +784,7 @@ module.exports = recipes;
 // TODO: https://www.tastyeverafter.com/asian-meatball-noodle-soup/
 // TODO: https://www.madewithlau.com/recipes/char-siu-chinese-bbq-pork
 // TODO: https://krollskorner.com/recipes/appetizers-snacks/philly-cheesesteak-sliders/
+// TODO: add paletas recipe
 
 
 // TODO: Add way to download and print recipes
