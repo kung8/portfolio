@@ -25,6 +25,25 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: IN_PROGRESS,
+            title: "Skyward",
+            author: ["Brandon Sanderson"],
+            source: ["same author"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 528,
+            rating: NO_RATING,
+        },
+        {
             date: NO_DATE,
             title: "The Priory of the Orange Tree",
             author: ["Samantha Shannon"],
@@ -1401,8 +1420,8 @@ module.exports = {
                     context: "Charity Oakley is reflecting on Sidney Delamar's impact on her life."
                 },
             ],
-            pageCount: 0,
-            rating: NO_RATING,
+            pageCount: 248,
+            rating: 5,
         },
         {
             date: NO_DATE,
