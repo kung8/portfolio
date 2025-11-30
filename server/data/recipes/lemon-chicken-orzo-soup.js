@@ -1,6 +1,8 @@
-// const example = '../assets/Products/example.jpeg';
+const soup1 = '../assets/Products/lemon-chicken-orzo-soup-1.jpeg';
+const soup2 = '../assets/Products/lemon-chicken-orzo-soup-2.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { BAY_LEAF, CARROT, CELERY, CHICKEN_BREAST, CHICKEN_BROTH, CUTTING_BOARD, DILL, KNIFE, LARGE_POT, LEEK, LEMON, OLIVE_OIL, ORZO, SALT, STOVE, THYME, WATER } = require('./ingredients');
+const { BAY_LEAF, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CARROT, CELERY, CHICKEN_BROTH, CUTTING_BOARD, KNIFE, LARGE_POT, LEEK, LEMON, OLIVE_OIL, ORZO, SALT, STOVE, THYME, WATER } = require('./ingredients');
 
 const VEGGIES_SECTION = 'Veggies';
 const SIMMER_SECTION = 'Simmer';
@@ -13,10 +15,9 @@ const COOK_ORZO = 'Cook Orzo';
 const ADD_FINISHING_TOUCHES = 'Add Finishing Touches';
 
 module.exports = {
-    wip: true,
     cardName: 'Lemon Chicken Orzo Soup',
     name: 'Lemon Chicken Orzo Soup',
-    img: '',
+    img: soup2,
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -29,11 +30,11 @@ module.exports = {
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Lemon Chicken-Orzo Soup', 
+        {
+            label: 'Lemon Chicken-Orzo Soup',
             link: 'https://www.thepioneerwoman.com/food-cooking/recipes/a39296200/lemon-chicken-orzo-soup-recipe/',
             authors: ['Ree Drummond'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -46,13 +47,12 @@ module.exports = {
         { ...THYME, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SIMMER_SECTION },
         { ...LEMON, amount: 1, unit: '', additionalDetails: '4 strips lemon zest and 1/4 cup lemon juice', section: SIMMER_SECTION },
         { ...BAY_LEAF, amount: 2, unit: '', additionalDetails: '', section: SIMMER_SECTION },
-        { ...CHICKEN_BREAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'bone-in and skin-on', section: SIMMER_SECTION },
+        { ...BONELESS_AND_SKINLESS_CHICKEN_BREAST, amount: 3, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'bone-in and skin-on', section: SIMMER_SECTION },
         { ...CHICKEN_BROTH, amount: 2, unit: INGREDIENT_UNITS.QUART, additionalDetails: '', section: SIMMER_SECTION },
         { ...WATER, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SIMMER_SECTION },
 
         { ...ORZO, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: ORZO_SECTION },
         { ...SALT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...DILL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         STOVE,
@@ -76,10 +76,12 @@ module.exports = {
         { step: `Re-add the chicken. Cook for a few minutes.`, section: COOK_ORZO },
         { step: `Remove the lemon zest and bay leaves.`, section: COOK_ORZO },
 
-        { step: `Taste and adjust with salt.`, section: ADD_FINISHING_TOUCHES },
-        { step: `Add lemon juice and dill.`, section: ADD_FINISHING_TOUCHES },
+        { step: `Taste and adjust with the salt and lemon juice.`, section: ADD_FINISHING_TOUCHES, img: soup1 },
 
         { step: `Enjoy this simple soup dish.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `I did not like the taste of the dill in this soup, so I am omitting it from the ingredients.` },
     ],
     store: [
         {
@@ -89,10 +91,10 @@ module.exports = {
         },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave until heated through.',
+        },
     ],
     mealPrep: true,
 };
