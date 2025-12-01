@@ -766,15 +766,7 @@ const recipes = [
 
 module.exports = recipes;
 
-// Charbroiled salmon, topped with a choice of creamy dill sauce
-// or fresh pineapple salsa, served with rice pilaf,
-// and sautéed vegetables. (32)
-
-// TODO: Add picture with camera and scan text for you and interpret that into text to be used in grocery list
-// TODO: Add way for Siri to add ingredients to the grocery list in my app (open chrome) (may need to create mobile app for this)
-// TODO: Add Frisee Salad with goat cheese and pine nuts, wild rice, roasted asparagus, salmon en croute recipe
-// TODO: Add Lox recipe
-// TODO: replace the brownies recipe
+// TODO: Add Frisee Salad with goat cheese and pine nuts, wild rice, roasted asparagus, salmon en croute recipe (what Monica makes for Rachel's date in Friends)
 // TODO: replace the chicken wing recipe
 // TODO: double check what other recipes can be replaced with better ones from websites
 
@@ -784,9 +776,19 @@ module.exports = recipes;
 // TODO: https://www.tastyeverafter.com/asian-meatball-noodle-soup/
 // TODO: https://www.madewithlau.com/recipes/char-siu-chinese-bbq-pork
 // TODO: https://krollskorner.com/recipes/appetizers-snacks/philly-cheesesteak-sliders/
-// TODO: add paletas recipe
+// TODO: https://www.thespruceeats.com/how-make-paletas-or-mexican-style-ice-pops-4129109
+// TODO: https://www.lecremedelacrumb.com/easy-beef-empanadas/
+// TODO: https://www.babaganosh.org/how-to-cure-salmon-lox-recipe/
+// TODO: replace the brownies recipe with the brownies2 recipe or the one in my "recipes-to-add" notes
 
+// Intended to replicate the dish I had at Magleby's in Springville, UT
+// TODO: https://www.allrecipes.com/recipe/12720/grilled-salmon-i/ 
+// TODO: https://www.recipetineats.com/creamy-dill-sauce-for-salmon-or-trout/
+// TODO: https://www.wholesomeyum.com/sauteed-vegetables/ (replace roasted vegetables recipe with this?)
 
+///////////////////////////////////////////////////////////////////////// FUTURE FEATURES //////////////////////////////////////////////////////////////////////
+// TODO: Add picture with camera and scan text for you and interpret that into text to be used in grocery list
+// TODO: Add way for Siri to add ingredients to the grocery list in my app (open chrome) (may need to create mobile app for this)
 // TODO: Add way to download and print recipes
 // TODO: add user notes section for each recipe to allow users to add their own notes and modifications
 // TODO: add timer clock per step to indicate how long each step takes
