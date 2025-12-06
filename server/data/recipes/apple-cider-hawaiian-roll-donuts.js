@@ -19,9 +19,6 @@ const {
     WHITE_SUGAR,
 } = require('./ingredients');
 
-const BUTTER_FOR_PRE_BAKE = 'Butter for Pre-Bake';
-const BUTTER_FOR_COATING = 'Butter for Coating';
-
 module.exports = {
     cardName: 'Apple Cider Donuts',
     name: 'Apple Cider Hawaiian Roll Donuts',
@@ -49,13 +46,11 @@ module.exports = {
         { ...APPLE_PIE_FILLING, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
         { ...APPLE_CIDER_MIX, amount: 0.74, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
 
-        { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BUTTER_FOR_PRE_BAKE },
+        { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BUTTER },
 
         { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...CINNAMON, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...APPLE_CIDER_MIX, amount: 0.74, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.TOPPINGS },
-
-        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BUTTER_FOR_COATING },
+        { ...APPLE_CIDER_MIX, amount: 0.37, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         OVEN,
@@ -77,13 +72,13 @@ module.exports = {
         { step: `Separate Hawaiian rolls.`, section: SECTIONS.PREP_ROLLS },
         { step: `Create a hole in the side of each roll, large enough for about a tablespoon of filling.`, section: SECTIONS.PREP_ROLLS },
         { step: `Add a spoonful of filling in each roll.`, section: SECTIONS.PREP_ROLLS },
-        { step: `Melt butter (from "${BUTTER_FOR_PRE_BAKE}" section).`, section: SECTIONS.PREP_ROLLS },
+        { step: `Melt butter.`, section: SECTIONS.PREP_ROLLS },
         { step: `Brush butter on all sides of the roll with a basting brush.`, section: SECTIONS.PREP_ROLLS },
         { step: `In a medium bowl, combine the "${SECTIONS.TOPPINGS}" section ingredients.`, section: SECTIONS.PREP_ROLLS },
-        { step: `Dip each roll in the sugar mixture.` },
+        { step: `Dip each roll in the sugar mixture.`, section: SECTIONS.PREP_ROLLS },
         { step: `Place rolls on a lined baking sheet.`, section: SECTIONS.PREP_ROLLS, img: donuts2 },
 
-        { step: `Bake until golden brown (about 12 to 14 minutes).`, section: SECTIONS.BAKE },
+        { step: `Bake until golden brown (about 12 to 13 minutes).`, section: SECTIONS.BAKE },
 
         { step: `Serve warm and enjoy these delightful apple cider donuts!`, section: SECTIONS.SERVE, img: donuts4 },
     ],
@@ -91,6 +86,7 @@ module.exports = {
         { note: `The original recipe did the coating after baking, but I accidentally did it before baking and it turned out great!` },
         { note: `Be careful not to bake for too long, as the rolls can dry out.` },
         { note: `These rolls got stuck to the baking mat a bit, so be gentle when removing them. I did not use any liners, foil or parchment paper.` },
+        { note: `Feel free to adjust the amount of the apple cider mix in the filling and topping to suit your taste preference. I decreased the topping by half of the original recipe.` },
     ],
     store: [
         {
