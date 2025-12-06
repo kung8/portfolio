@@ -1,4 +1,8 @@
-// const example = '../assets/Products/example.jpeg';
+const donuts1 = '../assets/Products/apple-cider-hawaiian-roll-donuts-1.jpeg';
+const donuts2 = '../assets/Products/apple-cider-hawaiian-roll-donuts-2.jpeg';
+const donuts3 = '../assets/Products/apple-cider-hawaiian-roll-donuts-3.jpeg';
+const donuts4 = '../assets/Products/apple-cider-hawaiian-roll-donuts-4.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     APPLE_CIDER_MIX,
@@ -19,12 +23,11 @@ const BUTTER_FOR_PRE_BAKE = 'Butter for Pre-Bake';
 const BUTTER_FOR_COATING = 'Butter for Coating';
 
 module.exports = {
-    wip: true,
     cardName: 'Apple Cider Donuts',
     name: 'Apple Cider Hawaiian Roll Donuts',
-    img: '',
+    img: donuts3,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT, CATEGORIES.SNACK],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -69,23 +72,25 @@ module.exports = {
         { step: `Line a baking sheet with a silicon baking mat.`, section: SECTIONS.PREP_PAN },
 
         { step: `Roughly chop the apple pie filling.`, section: SECTIONS.PREP_FILLING },
-        { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING },
+        { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING, img: donuts1 },
 
         { step: `Separate Hawaiian rolls.`, section: SECTIONS.PREP_ROLLS },
         { step: `Create a hole in the side of each roll, large enough for about a tablespoon of filling.`, section: SECTIONS.PREP_ROLLS },
         { step: `Add a spoonful of filling in each roll.`, section: SECTIONS.PREP_ROLLS },
         { step: `Melt butter (from "${BUTTER_FOR_PRE_BAKE}" section).`, section: SECTIONS.PREP_ROLLS },
         { step: `Brush butter on all sides of the roll with a basting brush.`, section: SECTIONS.PREP_ROLLS },
-        { step: `Place rolls on a lined baking sheet.`, section: SECTIONS.PREP_ROLLS },
+        { step: `In a medium bowl, combine the "${SECTIONS.TOPPINGS}" section ingredients.`, section: SECTIONS.PREP_ROLLS },
+        { step: `Dip each roll in the sugar mixture.` },
+        { step: `Place rolls on a lined baking sheet.`, section: SECTIONS.PREP_ROLLS, img: donuts2 },
 
         { step: `Bake until golden brown (about 12 to 14 minutes).`, section: SECTIONS.BAKE },
 
-        { step: `In a medium bowl, combine the "${SECTIONS.TOPPINGS}" section ingredients.`, section: SECTIONS.TOP },
-        { step: `Melt butter (from "${BUTTER_FOR_COATING}" section).`, section: SECTIONS.TOP },
-        { step: `Brush tops of rolls with melted butter.`, section: SECTIONS.TOP },
-        { step: `Coat each roll in sugar mixture.`, section: SECTIONS.TOP },
-
-        { step: `Serve warm and enjoy these delightful apple cider donuts!`, section: SECTIONS.SERVE },
+        { step: `Serve warm and enjoy these delightful apple cider donuts!`, section: SECTIONS.SERVE, img: donuts4 },
+    ],
+    notes: [
+        { note: `The original recipe did the coating after baking, but I accidentally did it before baking and it turned out great!` },
+        { note: `Be careful not to bake for too long, as the rolls can dry out.` },
+        { note: `These rolls got stuck to the baking mat a bit, so be gentle when removing them. I did not use any liners, foil or parchment paper.` },
     ],
     store: [
         {

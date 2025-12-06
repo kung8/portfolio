@@ -1,14 +1,19 @@
-// const example = '../assets/Products/example.jpeg';
+const ziti1 = '../assets/Products/baked-ziti-1.jpeg';
+const ziti2 = '../assets/Products/baked-ziti-2.jpeg';
+const ziti3 = '../assets/Products/baked-ziti-3.jpeg';
+const ziti4 = '../assets/Products/baked-ziti-4.jpeg';
+const ziti5 = '../assets/Products/baked-ziti-5.jpeg';
+const ziti6 = '../assets/Products/baked-ziti-6.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BASIL_LEAF, CASSEROLE_DISH, COLANDER, CRUSHED_TOMATOES, GARLIC, HEAVY_CREAM, ITALIAN_SAUSAGE, LARGE_PAN, LARGE_POT, MOZZARELLA_CHEESE, OVEN, PARMIGIANO_REGGIANO, RED_PEPPER_FLAKES, SALT, STOVE, WHITE_SUGAR, WOODEN_SPOON, ZITI } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Baked Ziti',
     name: 'Baked Ziti',
-    img: '',
+    img: ziti5,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY, METHODS.BAKE],
@@ -65,18 +70,21 @@ module.exports = {
         { step: `Drain the sausage.`, section: SECTIONS.PREP_CASSEROLE },
         { step: `Re-add the fat to the pot.`, section: SECTIONS.PREP_CASSEROLE },
         { step: `Add garlic and cook until soft (about 2 minute).`, section: SECTIONS.PREP_CASSEROLE },
-        { step: `Add crushed tomatoes, salt, sugar and red pepper flakes. Simmer for 10 minutes.`, section: SECTIONS.PREP_CASSEROLE },
-        { step: `Add cream, parmesan, sausage and basil. Stir until mixed.`, section: SECTIONS.PREP_CASSEROLE },
-        { step: `Combine the filling with the pasta in the large pot.`, section: SECTIONS.PREP_CASSEROLE },
+        { step: `Add crushed tomatoes, salt, sugar and red pepper flakes. Simmer for 10 minutes.`, section: SECTIONS.PREP_CASSEROLE, img: ziti1 },
+        { step: `Add cream, parmesan, sausage and basil. Stir until mixed.`, section: SECTIONS.PREP_CASSEROLE, img: ziti2 },
+        { step: `Combine the filling with the pasta in the large pot.`, section: SECTIONS.PREP_CASSEROLE, img: ziti3 },
 
         { step: `Pour half the pasta mixture into a casserole dish.`, section: SECTIONS.LAYER },
         { step: `Layer half the mozzarella and parmesan evenly.`, section: SECTIONS.LAYER },
         { step: `Pour the remaining pasta mixture.`, section: SECTIONS.LAYER },
-        { step: `Layer the rest of the cheese evenly.`, section: SECTIONS.LAYER },
+        { step: `Layer the rest of the cheese evenly.`, section: SECTIONS.LAYER, img: ziti4 },
 
         { step: `Bake until the cheese has melted and browned (for about 15 to 20 minutes).`, section: SECTIONS.BAKE },
 
-        { step: `Serve with more basil.`, section: SECTIONS.SERVE },
+        { step: `Serve with more basil.`, section: SECTIONS.SERVE, img: ziti6 },
+    ],
+    notes: [
+        { note: `This tasted just like lasagna but was way easier to make!` },
     ],
     store: [
         {
