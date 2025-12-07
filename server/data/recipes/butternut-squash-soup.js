@@ -1,4 +1,8 @@
-// const example = '../assets/Products/example.jpeg';
+const soup1 = '../assets/Products/butternut-squash-soup-1.jpeg';
+const soup2 = '../assets/Products/butternut-squash-soup-2.jpeg';
+const soup3 = '../assets/Products/butternut-squash-soup-3.jpeg';
+const soup4 = '../assets/Products/butternut-squash-soup-4.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BLACK_PEPPER, BLENDER, BUTTERNUT_SQUASH, CARROT, CELERY, CHICKEN_BROTH, HEAVY_CREAM, LARGE_POT, MIXING_BOWL, OLIVE_OIL, OVEN, SALT, STOVE, SWEET_POTATO, THYME, UNSALTED_BUTTER, YELLOW_ONION } = require('./ingredients');
 
@@ -7,10 +11,9 @@ const ROAST_SQUASH = 'Roast Squash';
 const SAUTE_VEGGIES = 'Sauté Veggies';
 
 module.exports = {
-    wip: true,
     cardName: 'Butternut Squash Soup',
     name: 'Butternut Squash Soup',
-    img: '',
+    img: soup4,
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -62,7 +65,7 @@ module.exports = {
         { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
         { step: `In a mixing bowl, combine the "${SQUASH_SECTION}" section ingredients.`, section: ROAST_SQUASH },
-        { step: `On a baking pan, lay out the squash ingredients.`, section: ROAST_SQUASH },
+        { step: `On a baking pan, lay out the squash ingredients.`, section: ROAST_SQUASH, img: soup1 },
         { step: `Bake until tender (about 30 to 35 minutes).`, section: ROAST_SQUASH },
 
         { step: `Over medium heat, heat butter and olive oil in a large pot.`, section: SAUTE_VEGGIES },
@@ -70,8 +73,8 @@ module.exports = {
         { step: `Add the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SAUTE_VEGGIES },
 
         { step: `Add the roasted squash and potatoes and chicken broth.`, section: SECTIONS.MAKE_SOUP },
-        { step: `Simmer for 10 minutes.`, section: SECTIONS.MAKE_SOUP },
-        { step: `Carefully transfer to a blender in batches. Blend until creamy.`, section: SECTIONS.MAKE_SOUP },
+        { step: `Simmer for 10 minutes.`, section: SECTIONS.MAKE_SOUP, img: soup2 },
+        { step: `Carefully transfer to a blender in batches. Blend until creamy.`, section: SECTIONS.MAKE_SOUP, img: soup3 },
 
         { step: `Serve warm and enjoy this Fall season favorite!`, section: SECTIONS.SERVE },
     ],

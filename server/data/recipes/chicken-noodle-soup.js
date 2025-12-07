@@ -1,9 +1,22 @@
 const soup1 = '../assets/Products/chicken-noodle-soup-1.jpeg';
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    BLACK_PEPPER, CARROT, CELERY, CHICKEN_BREAST, CHICKEN_BROTH, EGG_NOODLES, LARGE_PAN, LARGE_POT, OLIVE_OIL, OREGANO, ROSEMARY, SALT, STOVE, THYME, YELLOW_ONION,  } = require('./ingredients');
-
-const PREP_VEGGIES_AND_CHICKEN = 'Prep Veggies and Chicken';
+    BLACK_PEPPER,
+    CARROT,
+    CELERY,
+    CHICKEN_BREAST,
+    CHICKEN_BROTH,
+    EGG_NOODLES,
+    LARGE_PAN,
+    LARGE_POT,
+    OLIVE_OIL,
+    OREGANO,
+    ROSEMARY,
+    SALT,
+    STOVE,
+    THYME,
+    YELLOW_ONION,
+} = require('./ingredients');
 
 module.exports = {
     cardName: 'Chicken Soup',
@@ -28,15 +41,15 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'chopped', section: SECTIONS.VEGGIES },
-        { ...CARROT, amount: 2, unit: '', additionalDetails: 'chopped', section: SECTIONS.VEGGIES },
-        { ...CELERY, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: 'chopped', section: SECTIONS.VEGGIES },
-
-        { ...CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cubed', section: SECTIONS.CHICKEN },
         { ...OLIVE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CHICKEN_BREAST, amount: 3 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cubed', section: SECTIONS.CHICKEN },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
         { ...OREGANO, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.CHICKEN },
+
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: 'chopped', section: SECTIONS.VEGGIES },
+        { ...CARROT, amount: 2, unit: '', additionalDetails: 'chopped', section: SECTIONS.VEGGIES },
+        { ...CELERY, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: 'chopped', section: SECTIONS.VEGGIES },
 
         { ...CHICKEN_BROTH, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
         { ...ROSEMARY, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SOUP },
@@ -52,18 +65,16 @@ module.exports = {
         LARGE_POT,
     ],
     directions: [
-        { step: `Chop the vegetables and chicken.`, section: PREP_VEGGIES_AND_CHICKEN },
-
         { step: `Over medium-high heat, heat oil in a hot pan.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Add the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Add the "${SECTIONS.CHICKEN}" section ingredients.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Brown both sides. Set aside.`, section: SECTIONS.COOK_CHICKEN },
 
-        { step: `In a large pot, combine the "${SECTIONS.SOUP}" section ingredients.`, section: SECTIONS.COOK_SOUP },
+        { step: `In a large pot, combine the "${SECTIONS.SOUP}" and "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_SOUP },
         { step: `Over medium-high heat, cook for 8 to 10 minutes.`, section: SECTIONS.COOK_SOUP },
 
         { step: `Add raw noodles. Bring to a boil (about 6 to 8 minutes).`, section: SECTIONS.COOK_NOODLES },
         { step: `Reduce to low heat.`, section: SECTIONS.COOK_NOODLES },
-        
+
         { step: `Add chicken.`, section: SECTIONS.SIMMER },
         { step: `Let it simmer for 10 minutes.`, section: SECTIONS.SIMMER },
 

@@ -31,7 +31,7 @@ module.exports = {
     type: [TYPES.FINGER_FOOD, TYPES.DESSERT],
     yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
-    cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
         {
             label: 'Apple Cider Hawaiian Roll Donuts',
@@ -44,7 +44,7 @@ module.exports = {
         { ...HAWAIIAN_ROLLS, amount: 12, unit: '', additionalDetails: '', section: SECTIONS.BREAD },
 
         { ...APPLE_PIE_FILLING, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.FILLING },
-        { ...APPLE_CIDER_MIX, amount: 0.74, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
+        { ...APPLE_CIDER_MIX, amount: 0.37, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.FILLING },
 
         { ...UNSALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BUTTER },
 
@@ -74,11 +74,13 @@ module.exports = {
         { step: `Add a spoonful of filling in each roll.`, section: SECTIONS.PREP_ROLLS },
         { step: `Melt butter.`, section: SECTIONS.PREP_ROLLS },
         { step: `Brush butter on all sides of the roll with a basting brush.`, section: SECTIONS.PREP_ROLLS },
-        { step: `In a medium bowl, combine the "${SECTIONS.TOPPINGS}" section ingredients.`, section: SECTIONS.PREP_ROLLS },
-        { step: `Dip each roll in the sugar mixture.`, section: SECTIONS.PREP_ROLLS },
         { step: `Place rolls on a lined baking sheet.`, section: SECTIONS.PREP_ROLLS, img: donuts2 },
-
-        { step: `Bake until golden brown (about 12 to 13 minutes).`, section: SECTIONS.BAKE },
+        
+        { step: `Bake until golden brown (about 10 minutes).`, section: SECTIONS.BAKE },
+        
+        { step: `In a medium bowl, combine the "${SECTIONS.TOPPINGS}" section ingredients.`, section: SECTIONS.COAT },
+        { step: `Immediately after removing rolls from the oven, brush the rolls with leftover melted butter.`, section: SECTIONS.COAT },
+        { step: `Coat each roll with the sugar mixture.`, section: SECTIONS.COAT },
 
         { step: `Serve warm and enjoy these delightful apple cider donuts!`, section: SECTIONS.SERVE, img: donuts4 },
     ],
