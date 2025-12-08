@@ -1,6 +1,6 @@
 // const example = '../assets/Products/example.jpeg';
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ANGEL_HAIR_PASTA, BLACK_PEPPER, CAPER, DICED_TOMATO, GARLIC_SALT, LARGE_POT, LEMON, MIXING_BOWL, OLIVE_OIL, PARSLEY, STOVE } = require('./ingredients');
+const { ANGEL_HAIR_PASTA, BLACK_PEPPER, CAPER, GARLIC_SALT, LARGE_POT, LEMON, MIXING_BOWL, OLIVE_OIL, PARSLEY, SLICER_TOMATO, STOVE } = require('./ingredients');
 
 const LEMON_JUICE_MIXTURE = 'Lemon Juice Mixture';
 
@@ -20,11 +20,11 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Lemon Capellini Salad', 
+        {
+            label: 'Lemon Capellini Salad',
             link: 'https://iwashyoudry.com/lemon-capellini-salad/',
             authors: ['Shawn'],
-            finder: 'Justin Ung', 
+            finder: 'Justin Ung',
         }
     ],
     ingredients: [
@@ -35,7 +35,7 @@ module.exports = {
         { ...GARLIC_SALT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: LEMON_JUICE_MIXTURE },
         { ...BLACK_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: LEMON_JUICE_MIXTURE },
 
-        { ...DICED_TOMATO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'seeded', section: SECTIONS.SALAD },
+        { ...SLICER_TOMATO, amount: 1, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.SALAD },
         { ...CAPER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'drained', section: SECTIONS.SALAD },
         { ...PARSLEY, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'finely chopped', section: SECTIONS.SALAD },
     ],

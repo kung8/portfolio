@@ -189,6 +189,7 @@ export const GroceryListModal = ({
                             {...{
                                 generateUUID,
                                 groceryList,
+                                handleClose,
                                 setGroceryList,
                                 setSortBy: setGroceryListSortBy,
                                 sortBy: groceryListSortBy,
@@ -206,6 +207,7 @@ export const GroceryListModal = ({
                         <MealPlanningModalContent
                             {...{
                                 generateUUID,
+                                handleClose,
                                 mealPlan,
                                 setMealPlan,
                                 setIsDeleteMealPlanModalOpen,

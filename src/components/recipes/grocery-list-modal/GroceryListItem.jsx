@@ -6,12 +6,12 @@ import { useDebounce } from 'use-debounce';
 import edit from '../../../Assets/edit.png';
 import { READABLE_SHORT_DATE } from '../constants';
 import { GROCERY_LIST_SORT_BY_CATEGORY, GROCERY_LIST_SORT_BY_DATE, GROCERY_LIST_SORT_BY_VENDOR, baseUrl } from '../utils';
-import { useGroceryList } from '../hooks/use-grocery-list';
 
 export const GroceryListItem = ({
     category,
     checked,
     date,
+    handleClose,
     name,
     openEditModal,
     onCheckboxChange,
@@ -36,11 +36,6 @@ export const GroceryListItem = ({
     const handleInputChange = (event) => {
         setInputValue(event.target.value);
     }
-
-    const {
-        setShow: setShowGroceryListModal,
-        handleClose: closeGroceryListModal,
-    } = useGroceryList();
 
     return (
         <div className="grocery-list-item">
@@ -78,13 +73,12 @@ export const GroceryListItem = ({
                         {recipeLink ? (
                             <span
                                 className="recipe-name-text"
-                                onClick={() => {
+                                onClick={async () => {
+                                    // close modal and remove some styling
+                                   handleClose();
+                                    
                                     // route to recipe page
                                     window.location.href = baseUrl + recipeLink;
-
-                                    // close modal and remove some styling
-                                    setShowGroceryListModal(false);
-                                    closeGroceryListModal();
                                 }}
                             >
                                 "{recipeName}"

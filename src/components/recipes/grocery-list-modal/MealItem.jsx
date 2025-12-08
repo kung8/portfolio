@@ -2,9 +2,8 @@ import { useEffect, useState } from 'react';
 
 import edit from '../../../Assets/edit.png';
 import { baseUrl } from '../utils';
-import { useGroceryList } from '../hooks/use-grocery-list';
 
-export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChange, onInputChange, showDate, showType }) => {
+export const MealItem = ({ handleClose, item, onCheckboxChange, onEditClick, onEmptyInputChange, onInputChange, showDate, showType }) => {
     const { checked, date, mealPlanningDateRange, recipeName, recipeLink, type } = item;
     const [inputValue, setInputValue] = useState(recipeName);
 
@@ -23,11 +22,6 @@ export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChan
         if (recipeName !== inputValue) setInputValue(recipeName);
         // eslint-disable-next-line
     }, [recipeName]);
-
-    const {
-        setShow: setShowGroceryListModal,
-        handleClose: closeGroceryListModal,
-    } = useGroceryList();
 
     return (
         <li className="meal-item-container">
@@ -75,12 +69,11 @@ export const MealItem = ({ item, onCheckboxChange, onEditClick, onEmptyInputChan
                     <span
                         className="meal-item-recipe-link"
                         onClick={() => {
+                            // close modal and remove some styling
+                            handleClose();
+                            
                             // route to recipe page
                             window.location.href = baseUrl + recipeLink;
-
-                            // close modal and remove some styling
-                            setShowGroceryListModal(false);
-                            closeGroceryListModal();
                         }}
                     >
                         View by Recipe

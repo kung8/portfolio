@@ -11,6 +11,7 @@ import { GROCERY_LIST_SORT_BY_CATEGORY, GROCERY_LIST_SORT_BY_DATE, GROCERY_LIST_
 export const GroceryListModalContent = ({
     generateUUID,
     groceryList,
+    handleClose,
     setGroceryList,
     setSortBy,
     sortBy,
@@ -115,6 +116,7 @@ export const GroceryListModalContent = ({
                             <GroceryListItem
                                 key={ingredient.id + '-' + index + '-' + ingredient.name + '-' + ingredient.checked + '-' + ingredient.mealPlanningDateRange + '-' + ingredient.category + '-' + ingredient.date}
                                 {...ingredient}
+                                handleClose={handleClose}
                                 onInputChange={(value) => updateItem(ingredient, { name: value })}
                                 onCheckboxChange={() => updateItem(ingredient, { checked: !ingredient.checked })}
                                 onCategoryChange={(value) => updateItem(ingredient, { category: value })}

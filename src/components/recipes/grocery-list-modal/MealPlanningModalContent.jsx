@@ -9,6 +9,7 @@ import { MEAL_PLAN_SORT_BY_DAILY, MEAL_PLAN_SORT_BY_WEEKLY, mealPlanSortByOption
 
 export const MealPlanningModalContent = ({
     generateUUID,
+    handleClose,
     mealPlan,
     setMealPlan,
     setSortBy,
@@ -203,6 +204,7 @@ export const MealPlanningModalContent = ({
                                 return (
                                     <MealItem
                                         key={id}
+                                        handleClose={handleClose}
                                         item={{ ...item, id }}
                                         onCheckboxChange={() => updateMeal(item, { checked: !item.checked })}
                                         onEditClick={() => {

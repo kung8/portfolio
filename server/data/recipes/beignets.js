@@ -36,12 +36,15 @@ module.exports = {
         { ...WATER, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: YEAST_MIXTURE_SECTION },
         { ...WHITE_SUGAR, amount: 2 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
         { ...YEAST, amount: 9 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: YEAST_MIXTURE_SECTION },
+
         { ...EGG, amount: 2, unit: '', additionalDetails: 'room temperature', section: DOUGH_SECTION },
         { ...EVAPORATED_MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
         { ...VANILLA_EXTRACT, amount: 5 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
-        { ...BREAD_FLOUR, amount: 7, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DOUGH_SECTION },
-        { ...SALT, amount: 1.5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+        { ...BREAD_FLOUR, amount: 3.5, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'first', section: DOUGH_SECTION },
         { ...UNSALTED_BUTTER, amount: 5, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'room temperature', section: DOUGH_SECTION },
+        { ...BREAD_FLOUR, amount: 3.5, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'second', section: DOUGH_SECTION },
+        { ...SALT, amount: 1.5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: DOUGH_SECTION },
+
         { ...PEANUT_OIL, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: DEEP_FRY },
         { ...POWDERED_SUGAR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
@@ -65,7 +68,7 @@ module.exports = {
 
         { step: `In a stand mixer, beat the eggs.`, section: MAKE_DOUGH },
         { step: `Add vanilla and evaporate milk. Combine.`, section: MAKE_DOUGH },
-        { step: `Add half the flour. Combine.`, section: MAKE_DOUGH },
+        { step: `Add the first flour. Combine.`, section: MAKE_DOUGH },
         { step: `Turn on to low speed and slowly pour the yeast mixture. Combine.`, section: MAKE_DOUGH },
         { step: `Add butter. Combine.`, section: MAKE_DOUGH },
         { step: `Add the last half of the flour and salt. Combine (about 2 minutes).`, section: MAKE_DOUGH },
