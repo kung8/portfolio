@@ -1,14 +1,17 @@
-// const example = '../assets/Products/example.jpeg';
+const pomodoro1 = '../assets/Products/pasta-pomodoro-1.jpeg';
+const pomodoro2 = '../assets/Products/pasta-pomodoro-2.jpeg';
+const pomodoro3 = '../assets/Products/pasta-pomodoro-3.jpeg';
+const pomodoro4 = '../assets/Products/pasta-pomodoro-4.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ANGEL_HAIR_PASTA, BALSAMIC_VINEGAR, BASIL_LEAF, BLACK_PEPPER, CHICKEN_BROTH, FRYING_PAN, GARLIC, OLIVE_OIL, PARMESAN_CHEESE, POT, RED_PEPPER_FLAKES, ROMA_TOMATO, STOVE, YELLOW_ONION } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Pasta Pomodoro',
     name: 'Pasta Pomodoro',
-    img: '',
+    img: pomodoro3,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.SIMMER],
@@ -53,12 +56,12 @@ module.exports = {
         { step: `Add onions and garlic. Saute until browned.`, section: SECTIONS.COOK_SAUCE },
         { step: `Reduce to medium-high heat.`, section: SECTIONS.COOK_SAUCE },
         { step: `Mix in tomatoes, vinegar and chicken broth. Simmer for about 8 minutes.`, section: SECTIONS.COOK_SAUCE },
-        { step: `Add spices and herb. Mix.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Add spices and herb. Mix.`, section: SECTIONS.COOK_SAUCE, img: pomodoro1 },
 
         { step: `Add pasta and toss.`, section: SECTIONS.ASSEMBLE },
-        { step: `Simmer for 5 minutes.`, section: SECTIONS.ASSEMBLE },
+        { step: `Simmer for 5 minutes.`, section: SECTIONS.ASSEMBLE, img: pomodoro2 },
 
-        { step: `Serve warm and topped with grated cheese.`, section: SECTIONS.SERVE },
+        { step: `Serve warm and topped with grated cheese.`, section: SECTIONS.SERVE, img: pomodoro4 },
     ],
     store: [
         {
@@ -68,10 +71,10 @@ module.exports = {
         },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave in 30 second intervals, stirring in between, until heated through.',
+        },
     ],
     mealPrep: true,
 };
