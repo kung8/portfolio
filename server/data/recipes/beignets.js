@@ -86,7 +86,7 @@ module.exports = {
         { step: `Lightly flour a clean surface, roll out the dough into 1/4 inch thick rectangle.`, section: DEEP_FRY },
         { step: `Cut the dough into 2 1/2 inch squares.`, section: DEEP_FRY, img: beignets4 },
         { step: `Once the oil has reached 360ºF, you can start deep frying.`, section: DEEP_FRY },
-        { step: `In batches, add up to 8 beignets at a time. The beignets will sink to the bottom. Slightly poke each beignet to get it to float up.`, section: DEEP_FRY, img: beignets5 },
+        { step: `In batches, add up to 6 beignets at a time. The beignets will sink to the bottom. Slightly poke each beignet to get it to float up.`, section: DEEP_FRY, img: beignets5 },
         { step: `Periodically check one beignet to see if the bottom is golden brown. Place a chopstick in each hand and put one on top and one on bottom of the beignet. Carefully push and pull in a circular motion to flip.`, section: DEEP_FRY, img: beignets6 },
         { step: `Transfer the beignets with a slotted spoon to the dripping station.`, section: DEEP_FRY },
         { step: `Continue deep frying the remaining beignets.`, section: DEEP_FRY },
