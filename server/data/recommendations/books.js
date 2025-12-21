@@ -34,6 +34,30 @@ module.exports = {
             ],
             quotes: [
                 {
+                    text: "\"That's a risk we all live with, M-Bot,\" I said. \"We can't know everything--and some of what we think we know is going ot turn out to be false.\"\n\n\"That doesn't frighten you?\"",
+                    pages: [231],
+                    thoughts: "As we build AI systems, it is easy to forget the limitations and uncertainties inherent in their design. This quote highlights the importance of embracing uncertainty and being open to the possibility of error in AI development.",
+                    context: "M-Bot is conversing with Spensa about AI."
+                },
+                {
+                    text: "It has always seemed to me...that a coward is a person who cares more about what people say than about what is right. Bravery isn't about what people call you, Spensa. It's about who you know yourself to be.",
+                    pages: [463],
+                    thoughts: "It really is true. Our bravery should be defined by our own values and actions, and not by the judgment of others.",
+                    context: "Spensa's mom responds to Spensa's question about how she deals with being a coward's wife."
+                },
+                {
+                    text: "You get to choose who you are. Legacy memories of the past, can serve us well. But we cannot let them define us. When heritage becomes a box instead of an inspiration, it has gone too far.",
+                    pages: [464],
+                    thoughts: "We cannot be bound by the legacies of our ancestors. We must forge our own paths and define our own identities.",
+                    context: "Spensa wants to hear more about her families heritage."
+                },
+                {
+                    text: "To sacrifice, Spensa. A warrior is nothing if she has nothing to fight for. But if has everything to fight for...well, then that means everything, doesn't it?",
+                    pages: [469],
+                    thoughts: "We must be willing to make sacrifices for the things we care about. A true warrior understands the value of what they are fighting for and is willing to give up everything to protect it.",
+                    context: "Spensa's grandmother explains what a warrior is."
+                },
+                {
                     text: "",
                     pages: [],
                     thoughts: "",
