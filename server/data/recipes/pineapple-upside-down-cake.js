@@ -1,16 +1,19 @@
-// const example = '../assets/Products/example.jpeg';
+const cake1 = '../assets/Products/pineapple-upside-down-cake-1.jpeg';
+const cake2 = '../assets/Products/pineapple-upside-down-cake-2.jpeg';
+const cake3 = '../assets/Products/pineapple-upside-down-cake-3.jpeg';
+const cake4 = '../assets/Products/pineapple-upside-down-cake-4.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BROWN_SUGAR, CANNED_PINEAPPLE_SLICES, EGG, KNIFE, MARASCHINO_CHERRIES, OVEN, SERVING_PLATE, UNSALTED_BUTTER, VEGETABLE_OIL, YELLOW_CAKE_MIX } = require('./ingredients');
 
 const PREHEATED_PAN_SECTION = 'Preheated Pan';
 
 module.exports = {
-    wip: true,
     cardName: 'Pineapple Cake',
     name: 'Pineapple Upside Down Cake',
-    img: '',
+    img: cake4,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -20,11 +23,11 @@ module.exports = {
     cookTime: { amount: 46, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Pineapple Upside Down Cake', 
+        {
+            label: 'Pineapple Upside Down Cake',
             link: 'https://www.bettycrocker.com/recipes/easy-pineapple-upside-down-cake/c4d3321d-fad9-41cb-8f29-8d91a4279b07',
             authors: ['Angela Ritchie'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -54,19 +57,22 @@ module.exports = {
 
         { step: `Evenly sprinkle the brown sugar over the melted butter.`, section: SECTIONS.PREP_SAUCE },
         { step: `Arrange pineapple slices over the brown sugar.`, section: SECTIONS.PREP_SAUCE },
-        { step: `Add cherries in the center of each pineapple slice. For any extra cherries, place them around the slices.`, section: SECTIONS.PREP_SAUCE },
+        { step: `Add cherries in the center of each pineapple slice. For any extra cherries, place them around the slices.`, section: SECTIONS.PREP_SAUCE, img: cake1 },
         { step: `Reserve the pineapple juice to replace the water needed for the yellow cake mix.`, section: SECTIONS.PREP_SAUCE },
 
         { step: `Make the yellow cake batter as directed from the box.`, section: SECTIONS.PREP_BATTER },
-        { step: `Pour batter over the pineapples.`, section: SECTIONS.PREP_BATTER },
+        { step: `Pour batter over the pineapples.`, section: SECTIONS.PREP_BATTER, img: cake2 },
 
-        { step: `Bake until an inserted toothpick comes out clean (about 40 to 46 minutes).`, section: SECTIONS.BAKE },
+        { step: `Bake until an inserted toothpick comes out clean (about 40 to 46 minutes).`, section: SECTIONS.BAKE, img: cake3 },
 
         { step: `After taking out the cake, loosen the cake by running a knife around the edges of the pan.`, section: SECTIONS.FLIP },
         { step: `Place serving plates/pan upside down over cake.`, section: SECTIONS.FLIP },
         { step: `Carefully turn plates and baking pan over. Leave the pan on top to let the sauce drizzle over the cake (about 5 minutes).`, section: SECTIONS.FLIP },
 
         { step: `Let cool for 30 minutes and enjoy this simple dish!`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `For shallow pans, bake for 35 to 40 minutes.` },
     ],
     store: [
         {

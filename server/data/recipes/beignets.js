@@ -5,6 +5,7 @@ const beignets4 = '../assets/Products/beignets-4.jpeg';
 const beignets5 = '../assets/Products/beignets-5.jpeg';
 const beignets6 = '../assets/Products/beignets-6.jpeg';
 const beignets7 = '../assets/Products/beignets-7.jpeg';
+const beignets8 = '../assets/Products/beignets-8.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BREAD_FLOUR, COOKING_THERMOMETER, COOLING_RACK, EGG, EVAPORATED_MILK, MIXING_BOWL, PAPER_TOWELS, PEANUT_OIL, PLASTIC_WRAP, POWDERED_SUGAR, SALT, SLOTTED_SPOON, STAND_MIXER, STOVE, TALL_NARROW_POT, UNSALTED_BUTTER, VANILLA_EXTRACT, WATER, WHITE_SUGAR, YEAST } = require('./ingredients');
@@ -19,7 +20,7 @@ const DEEP_FRY = 'Deep Fry';
 module.exports = {
     cardName: 'Beignets',
     name: 'Beignets',
-    img: beignets7,
+    img: beignets8,
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
@@ -91,7 +92,7 @@ module.exports = {
         { step: `Transfer the beignets with a slotted spoon to the dripping station.`, section: DEEP_FRY },
         { step: `Continue deep frying the remaining beignets.`, section: DEEP_FRY },
 
-        { step: `Serve right away with powdered sugar.`, section: SECTIONS.SERVE },
+        { step: `Serve right away with powdered sugar.`, section: SECTIONS.SERVE, img: beignets7 },
     ],
     notes: [
         { note: 'Something about poking beignets get them to float up.' },
