@@ -25,6 +25,82 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: NO_DATE,
+            title: "Psychocybernetics",
+            author: ["Maxwell Maltz"],
+            source: ["Jackilyn's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Great Divorce",
+            author: ["C.S. Lewis"],
+            source: ["Jackilyn's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Atlas of the Heart",
+            author: ["Brené Brown"],
+            source: ["Jackilyn's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Ruthless Elimination of Hurry",
+            author: ["John Mark Comer"],
+            source: ["Jackilyn's Mutual Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
             date: IN_PROGRESS,
             title: "Skyward",
             author: ["Brandon Sanderson"],
