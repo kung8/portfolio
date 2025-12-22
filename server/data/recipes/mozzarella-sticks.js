@@ -1,5 +1,10 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const sticks1 = '../assets/Products/mozzarella-sticks-1.jpeg';
+const sticks2 = '../assets/Products/mozzarella-sticks-2.jpeg';
+const sticks3 = '../assets/Products/mozzarella-sticks-3.jpeg';
+const sticks4 = '../assets/Products/mozzarella-sticks-4.jpeg';
+const sticks5 = '../assets/Products/mozzarella-sticks-5.jpeg';
+
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BREADCRUMBS, COOLING_RACK, EGG, FRYING_PAN, MILK, PAPER_TOWELS, PIZZA_SAUCE, SMALL_BOWL, STOVE, STRING_CHEESE, VEGETABLE_OIL } = require('./ingredients');
 
 const EGG_DREDGE_STATION = 'Egg Dredge Station';
@@ -7,12 +12,11 @@ const FLOUR_DREDGE_STATION = 'Flour Dredge Station';
 const BREADCRUMB_DREDGE_STATION = 'Breadcrumb Dredge Station';
 
 module.exports = {
-    wip: true,
     cardName: 'Mozzarella Sticks',
     name: 'Mozzarella Sticks',
-    img: '',
+    img: sticks5,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],
@@ -22,11 +26,11 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 24, unit: TIME_UNITS.HOUR },
     websites: [
-        { 
-            label: 'Mozzarella Sticks', 
+        {
+            label: 'Mozzarella Sticks',
             link: 'https://www.food.com/recipe/mozzarella-sticks-30977',
             authors: ['Karen'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -55,29 +59,20 @@ module.exports = {
         { step: `Set flour in a shallow bowl.`, section: SECTIONS.ASSEMBLE },
         { step: `In a shallow bowl, whisk the "${EGG_DREDGE_STATION}" section ingredients together.`, section: SECTIONS.ASSEMBLE },
         { step: `Set breadcrumb in a shallow bowl.`, section: SECTIONS.ASSEMBLE },
-        { step: `Dip each piece of cheese in the three dredging station: flour, egg mixture and breadcrumb.`, section: SECTIONS.ASSEMBLE },
-        { step: `Dip in egg mixture and breadcrumbs again.`, section: SECTIONS.ASSEMBLE },
+        { step: `Dip each piece of cheese in the three dredging station: flour, egg mixture and breadcrumb.`, section: SECTIONS.ASSEMBLE, img: sticks1 },
+        { step: `Dip in egg mixture and breadcrumbs again.`, section: SECTIONS.ASSEMBLE, img: sticks2 },
 
         { step: `Freeze for 6 to 24 hours.`, section: SECTIONS.FREEZE },
 
-        { step: `Heat oil in a frying pan.`, section: SECTIONS.DEEP_FRY },
+        { step: `Heat oil in a frying pan to about 350ºF.`, section: SECTIONS.DEEP_FRY },
         { step: `Place 2 layers of paper towels on top of a baking sheet and then place the cooling rack on top of the paper towels.`, section: SECTIONS.DEEP_FRY },
-        { step: `Deep fry until golden before cheese leaks (about 1 minute per side).`, section: SECTIONS.DEEP_FRY },
-        { step: `Place cooked mozzarella sticks on draining station.`, section: SECTIONS.DEEP_FRY },
+        { step: `Fry until golden before cheese leaks (about 1 minute per side).`, section: SECTIONS.DEEP_FRY, img: sticks3 },
+        { step: `Place cooked mozzarella sticks on draining station.`, section: SECTIONS.DEEP_FRY, img: sticks4 },
         { step: `Enjoy these fresh with warmed pizza sauce.`, section: SECTIONS.SERVE },
     ],
-    store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
-    ],
-    reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+    notes: [
+        { note: `Freezing the mozzarella sticks prevents the cheese from melting too quickly when frying.` },
+        { note: `I initially tried Panko breadcrumbs but it didn't stick very well so I'd recommend using regular breadcrumbs.` },
     ],
     mealPrep: false,
 };
