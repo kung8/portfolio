@@ -780,6 +780,8 @@ module.exports = recipes;
 // TODO: https://www.lecremedelacrumb.com/easy-beef-empanadas/
 // TODO: https://www.babaganosh.org/how-to-cure-salmon-lox-recipe/
 // TODO: replace the brownies recipe with the brownies2 recipe or the one in my "recipes-to-add" notes
+// TODO: https://dinnerthendessert.com/turkey-moist-maker-sandwich/
+// TODO: https://www.chilipeppermadness.com/recipes/nacho-cheese-sauce-recipe/?fbclid=IwY2xjawOqcmFleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA80MDk5NjI2MjMwODU2MDkAAR5UsZQk83u7FGtOgk6zeeJEUzkSFnmRtRH_BSe59SioG7oFOJe0bwZYFqjCag_aem_11tsJkQKF0IvE6u72OuD-w
 
 // Intended to replicate the dish I had at Magleby's in Springville, UT
 // TODO: https://www.allrecipes.com/recipe/12720/grilled-salmon-i/ 
@@ -866,4 +868,21 @@ module.exports = recipes;
     TODO: Muffin Tin Cinnamon Apple Pie
     By Twisted
     website: https://www.facebook.com/watch/?v=597676636305410 
+*/
+
+
+/*
+    TODO: Muffy's Scrumptuous Snackaroodles
+    Butter cookies (TODO: look for a simple butter cookie recipe)
+    threw in a strawberry (sliced)
+    banana (sliced)
+    peanuts
+    chocolate chips
+    oatmeal
+    raisins
+
+
+    Make balls
+    flatten slightly
+    bake at 350 for 10-12 minutes
 */

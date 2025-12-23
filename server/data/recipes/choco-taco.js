@@ -6,7 +6,7 @@ const taco5 = '../assets/Products/choco-taco-5.jpeg';
 const taco6 = '../assets/Products/choco-taco-6.jpeg';
 const taco7 = '../assets/Products/choco-taco-7.jpeg';
 
-const { CATEGORIES, GENRES, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { FREEZER, MICROWAVE, MIXING_BOWL, PAPER_TOWELS, SAUCEPAN, SEMI_SWEET_CHOCOLATE_CHIPS, STOVE, UNSALTED_PEANUT, VANILLA_ICE_CREAM, WAFFLE_CONE } = require('./ingredients');
 
 const TACO_SHELL = 'Taco Shell';
@@ -41,7 +41,7 @@ module.exports = {
     ingredients: [
         { ...WAFFLE_CONE, amount: 12, unit: '', additionalDetails: '', section: TACO_SHELL },
         { ...VANILLA_ICE_CREAM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.FILLING },
-        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...UNSALTED_PEANUT, amount: '', unit: '', additionalDetails: 'crushed', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
@@ -78,6 +78,7 @@ module.exports = {
     notes: [
         { note: `I ended up using a blender to crush the peanuts.` },
         { note: `I recommend holding the shell when filling it with ice cream to have more control. I placed the ice cream in the center then used the spoon to push it to one end.` },
+        { note: `I melted about 1 cup of chocolate chips to cover about 3 tacos.`}
     ],
     store: [
         {
