@@ -219,6 +219,7 @@ const lemonChickenRamen = require("./recipes/lemon-chicken-ramen");
 const lemonFreezeBars = require('./recipes/lemon-freeze-bars.js'); // TODO: finish adding recipe
 const loadedChickenCasserole = require('./recipes/loaded-chicken-casserole.js'); // TODO: finish adding recipe
 const lomoSaltado = require("./recipes/lomo-saltado");
+const loxAndBagel = require("./recipes/lox-and-bagel");
 const macaroniSalad = require("./recipes/macaroni-salad");
 const malaysianBlackPepperChicken = require("./recipes/malaysian-black-pepper-chicken");
 const malaysianLemonChicken = require("./recipes/malaysian-lemon-chicken");
@@ -530,6 +531,9 @@ const recipes = [
     // SWEDISH
     swedishMeatballs,
 
+    // NORWEGIAN / SCANDINAVIAN
+    loxAndBagel,
+
     // RUSSIAN
     beefStroganoff, // TODO: maybe replace with russianBeefStroganoff?
     russianBeefStroganoff, // use this one instead?
@@ -779,7 +783,6 @@ module.exports = recipes;
 // TODO: https://www.madewithlau.com/recipes/char-siu-chinese-bbq-pork
 // TODO: https://www.thespruceeats.com/how-make-paletas-or-mexican-style-ice-pops-4129109
 // TODO: https://www.lecremedelacrumb.com/easy-beef-empanadas/
-// TODO: https://www.babaganosh.org/how-to-cure-salmon-lox-recipe/
 // TODO: replace the brownies recipe with the brownies2 recipe or the one in my "recipes-to-add" notes
 // TODO: https://dinnerthendessert.com/turkey-moist-maker-sandwich/
 // TODO: https://www.chilipeppermadness.com/recipes/nacho-cheese-sauce-recipe/?fbclid=IwY2xjawOqcmFleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA80MDk5NjI2MjMwODU2MDkAAR5UsZQk83u7FGtOgk6zeeJEUzkSFnmRtRH_BSe59SioG7oFOJe0bwZYFqjCag_aem_11tsJkQKF0IvE6u72OuD-w

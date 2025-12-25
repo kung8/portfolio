@@ -87,6 +87,7 @@ const GENRES = {
     POLYNESIAN: 'Polynesian',
     PORTUGUESE: 'Portuguese',
     RUSSIAN: 'Russian',
+    SCANDINAVIAN: 'Scandinavian',
     SINGAPOREAN: 'Singaporean',
     SOUTHERN: 'Southern',
     SPANISH: 'Spanish',
@@ -158,6 +159,7 @@ const METHODS = {
     BOIL: 'Boil',
     BROIL: 'Broil',
     CHILLED: 'Chilled',
+    CURE: 'Cure',
     DEEP_FRY: 'Deep Fry',
     FERMENT: 'Ferment',
     FREEZE: 'Freeze',
@@ -179,6 +181,7 @@ const METHODS = {
     SLOW_COOK: 'Slow Cook',
     STEAM: 'Steam',
     STIR_FRY: 'Stir-Fry',
+    TOAST: 'Toast',
     WRAP: 'Wrap',
 };
 
@@ -372,6 +375,7 @@ const SECTIONS = {
     PASTA: 'Pasta',
     RICE: 'Rice',
     BISCUITS: 'Biscuits',
+    SANDWICH: 'Sandwich',
 
     // Prepared Items
     BATTER: 'Batter',
@@ -460,6 +464,7 @@ const TIME_UNITS = {
     SECOND: { s: 's', p: 's' },
     MINUTE: { s: 'm', p: 'm' },
     HOUR: { s: 'h', p: 'h' },
+    DAY: { s: 'd', p: 'd' },
 };
 
 const TYPES = {

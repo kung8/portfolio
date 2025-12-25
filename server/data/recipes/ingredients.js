@@ -665,6 +665,7 @@ const INGREDIENTS = {
         TUPPERWARE: { name: 'tupperware', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         TWINE: { name: 'twine', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         VEGETABLE_PEELER: { name: 'vegetable peeler', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
+        WOOD_CHIPS: { name: 'wood chips', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         WHISK: { name: 'whisk', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         WOK: { name: 'wok', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         WOODEN_SPOON: { name: 'wooden spoon', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
@@ -1445,6 +1446,7 @@ const INGREDIENTS = {
             name: 'eggplant', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1604321272882-07c73743be32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5OTk1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         FRENCH_GREEN_BEAN: { name: 'french green beans', category: INGREDIENT_CATEGORY.PRODUCE },
+        FRESH_DILL: { name: 'fresh dill', category: INGREDIENT_CATEGORY.PRODUCE },
         FRESH_ROSEMARY: {
             name: 'fresh rosemary', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1582745741856-1a5d68158ba3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTgwMDc3fA&ixlib=rb-4.0.3&q=80&w=400"
         },

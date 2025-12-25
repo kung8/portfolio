@@ -95,10 +95,17 @@ module.exports = {
         ${this.generateNotes(data.notes)}
     ],
     store: [
-        // Add storage instructions here if needed
+        // {
+        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+        //     location: STORAGE_LOCATION.FRIDGE,
+        //     container: STORAGE_CONTAINER.AIRTIGHT,
+        // },
     ],
     reheat: [
-        // Add reheating instructions here if needed
+        // {
+        //     method: REHEAT_METHODS.BAKE,
+        //     instruction: '',
+        // },
     ],
     mealPrep: true,
 };`;
@@ -126,11 +133,11 @@ module.exports = {
 
     generateWebsites(websites) {
         if (!websites || websites.length === 0) {
-            return "// { label: 'Original Recipe', link: '', authors: ['Unknown'], finder: 'Web Scraper' }";
+            return "// { label: '', link: '', authors: [''], finder: 'Kevin Ung' }";
         }
 
         return websites.map(website =>
-            `{ label: '${this.escapeString(website.label)}', link: '${website.link}', authors: [${website.authors.map(author => `'${this.escapeString(author)}'`).join(', ')}], finder: '${this.escapeString(website.finder)}' }`
+            `{ label: '${this.escapeString(website.label)}', link: '${website.link}', authors: [${website.authors.map(author => `'${this.escapeString(author)}'`).join(', ')}], finder: 'Kevin Ung' }`
         ).join(',\n        ');
     }
 
