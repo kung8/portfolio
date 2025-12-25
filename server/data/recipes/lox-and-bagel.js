@@ -98,7 +98,7 @@ module.exports = {
         { step: `Top cured salmon slices`, section: SECTIONS.ASSEMBLE },
         { step: `Top with the rest of the "${SECTIONS.SANDWICH}" section ingredients.`, section: SECTIONS.ASSEMBLE },
 
-        { step: `Enjoy this `, section: SECTIONS.SERVE },
+        { step: `Enjoy this delicious open faced sandwich.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: `Creating a pellicle is essential for properly smoking the salmon later on. If the pellicle hasn't formed the smoke will adhere to the water instead of penetrating the fish.` },
