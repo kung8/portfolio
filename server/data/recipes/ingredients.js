@@ -563,6 +563,7 @@ const INGREDIENTS = {
         BASTING_BRUSH: { name: 'basting brush', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         BOWL: { name: 'bowl', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         BOX_GRATER: { name: 'box grater', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
+        BREAD_KNIFE: { name: 'bread knife', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         BREAD_PAN: { name: 'bread pan', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         CAKE_PAN: { name: 'cake pan', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         CAN_OPENER: { name: 'can opener', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
@@ -1991,6 +1992,7 @@ const INGREDIENTS = {
             name: 'salt', category: INGREDIENT_CATEGORY.SPICES, img: "https://plus.unsplash.com/premium_photo-1672349888046-361807de476f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU5NDk5fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         SEA_SALT: { name: 'sea salt', category: INGREDIENT_CATEGORY.SPICES },
+        SEASONING_SALT: { name: 'seasoning salt', category: INGREDIENT_CATEGORY.SPICES },
         SESAME_SEEDS: {
             name: 'sesame seeds', category: INGREDIENT_CATEGORY.SPICES, img: "https://images.unsplash.com/photo-1628317321557-68729bee6644?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc5NDk5fA&ixlib=rb-4.0.3&q=80&w=400"
         },

@@ -267,6 +267,7 @@ const peppermintBark = require("./recipes/peppermint-bark");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
 const peruvianChicken = require("./recipes/peruvian-chicken");
 const phillyCheesesteak = require("./recipes/philly-cheesesteak");
+const phillyCheesesteakSliders = require("./recipes/philly-cheesesteak-sliders");
 const pho = require('./recipes/pho.js'); // TODO: finish adding recipe
 const pigsInABlanket = require("./recipes/pigs-in-a-blanket");
 const pineappleUpsideDownCake = require("./recipes/pineapple-upside-down-cake");
@@ -626,6 +627,7 @@ const recipes = [
     macaroniSalad,
     bakedBreadedChicken,
     phillyCheesesteak,
+    phillyCheesesteakSliders,
     meatballSub,
     garlicButter,
     frenchBaguettes,
@@ -775,7 +777,6 @@ module.exports = recipes;
 // TODO: https://sweetcsdesigns.com/cabbage-and-noodles/
 // TODO: https://www.tastyeverafter.com/asian-meatball-noodle-soup/
 // TODO: https://www.madewithlau.com/recipes/char-siu-chinese-bbq-pork
-// TODO: https://krollskorner.com/recipes/appetizers-snacks/philly-cheesesteak-sliders/
 // TODO: https://www.thespruceeats.com/how-make-paletas-or-mexican-style-ice-pops-4129109
 // TODO: https://www.lecremedelacrumb.com/easy-beef-empanadas/
 // TODO: https://www.babaganosh.org/how-to-cure-salmon-lox-recipe/

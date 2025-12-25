@@ -16,18 +16,18 @@ class RecipeFileGenerator {
 
             // Generate the recipe file content
             const fileContent = this.generateFileContent(recipeData);
-            
+
             // Write the file
             fs.writeFileSync(filepath, fileContent, 'utf8');
-            
+
             console.log(`Recipe file created: ${finalFilename}.js`);
-            return { 
+            return {
                 success: true,
-                filename: `${finalFilename}.js`, 
+                filename: `${finalFilename}.js`,
                 filePath: filepath,
-                message: `Recipe file ${finalFilename}.js created successfully` 
+                message: `Recipe file ${finalFilename}.js created successfully`
             };
-            
+
         } catch (error) {
             console.error('Error generating recipe file:', error);
             throw error;
@@ -37,13 +37,13 @@ class RecipeFileGenerator {
     resolveFilenameConflict(baseFilename) {
         let filename = baseFilename;
         let counter = 1;
-        
+
         // Keep checking and incrementing until we find an available filename
         while (fs.existsSync(path.join(this.recipesDir, `${filename}.js`))) {
             filename = `${baseFilename}-${counter}`;
             counter++;
         }
-        
+
         return filename;
     }
 
@@ -58,7 +58,7 @@ class RecipeFileGenerator {
 
     generateFileContent(data) {
         return `${this.generateImageImports(data)}
-const { ALLERGIES, CATEGORIES, DIET, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 
 module.exports = {
     wip: true,
@@ -67,13 +67,11 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
-    category: ${this.formatConstantArray('CATEGORIES', data.category, 'DINNER')},
-    genre: ${this.formatConstantArray('GENRES', data.genre, 'AMERICAN')},
-    method: ${this.formatConstantArray('METHODS', data.method, 'BAKE')},
-    protein: ${this.formatConstantArray('PROTEIN', data.protein, '')},
-    type: ${this.formatConstantArray('TYPES', data.type, 'MAIN_COURSE')},
-    allergies: [],
-    diet: [],
+    category: ${this.formatConstantArray('CATEGORIES', data.category.split(' ').join('_').toUpperCase(), 'DINNER')},
+    genre: ${this.formatConstantArray('GENRES', data.genre.split(' ').join('_').toUpperCase(), 'AMERICAN')},
+    method: ${this.formatConstantArray('METHODS', data.method.split(' ').join('_').toUpperCase(), 'BAKE')},
+    protein: ${this.formatConstantArray('PROTEIN', data.protein.split(' ').join('_').toUpperCase(), '')},
+    type: ${this.formatConstantArray('TYPES', data.type.split(' ').join('_').toUpperCase(), 'MAIN_COURSE')},
     yields: { amount: ${data.yields?.amount || 4}, unit: YIELD_UNITS.${data.yields?.unit || 'SERVING'} },
     prepTime: { amount: ${data.prepTime?.amount || 15}, unit: TIME_UNITS.${data.prepTime?.unit || 'MINUTE'} },
     cookTime: { amount: ${data.cookTime?.amount || 30}, unit: TIME_UNITS.${data.cookTime?.unit || 'MINUTE'} },
@@ -130,8 +128,8 @@ module.exports = {
         if (!websites || websites.length === 0) {
             return "// { label: 'Original Recipe', link: '', authors: ['Unknown'], finder: 'Web Scraper' }";
         }
-        
-        return websites.map(website => 
+
+        return websites.map(website =>
             `{ label: '${this.escapeString(website.label)}', link: '${website.link}', authors: [${website.authors.map(author => `'${this.escapeString(author)}'`).join(', ')}], finder: '${this.escapeString(website.finder)}' }`
         ).join(',\n        ');
     }
@@ -140,14 +138,14 @@ module.exports = {
         if (!ingredients || ingredients.length === 0) {
             return '// Add ingredients here';
         }
-        
+
         return ingredients.map(ingredient => {
             const name = this.escapeString(ingredient.name);
             const amount = this.convertAmountToNumber(ingredient.amount);
             const unit = ingredient.unit ? `INGREDIENT_UNITS.${ingredient.unit}` : "''";
             const additionalDetails = ingredient.additionalDetails || '';
-            const section = ingredient.section || 'SECTIONS.MAIN';
-            
+            const section = ingredient.section ? `SECTIONS.` + ingredient.section.split(' ').join('_').toUpperCase() : 'SECTIONS.MAIN';
+
             return `{ name: '${name}', amount: ${amount}, unit: ${unit}, additionalDetails: '${this.escapeString(additionalDetails)}', section: ${section} }`;
         }).join(',\n        ');
     }
@@ -156,7 +154,7 @@ module.exports = {
         if (!value || value === '') {
             return defaultValue ? `[${constantType}.${defaultValue}]` : '[]';
         }
-        
+
         // Handle arrays of values
         if (Array.isArray(value)) {
             const validValues = value.filter(v => v && v !== '');
@@ -165,7 +163,7 @@ module.exports = {
             }
             return `[${validValues.map(v => `${constantType}.${v}`).join(', ')}]`;
         }
-        
+
         // Handle single values - convert to array format
         return `[${constantType}.${value}]`;
     }
@@ -173,9 +171,9 @@ module.exports = {
     convertAmountToNumber(amount) {
         if (!amount || amount === '') return "''";
         if (typeof amount === 'number') return amount;
-        
+
         const amountStr = amount.toString().trim();
-        
+
         // Convert mixed fractions to improper fractions as mathematical expressions
         const mixedMatch = amountStr.match(/^(\d+)\s+(\d+)\/(\d+)$/);
         if (mixedMatch) {
@@ -185,13 +183,13 @@ module.exports = {
             const improperNumerator = (whole * denominator) + numerator;
             return `${improperNumerator} / ${denominator}`;
         }
-        
+
         // Convert simple fractions to mathematical expressions
         if (/^\d+\/\d+$/.test(amountStr)) {
             const [numerator, denominator] = amountStr.split('/');
             return `${numerator} / ${denominator}`;
         }
-        
+
         // Handle regular numbers (integers or decimals)
         const number = parseFloat(amountStr);
         return isNaN(number) ? "''" : number;
@@ -201,7 +199,7 @@ module.exports = {
         if (!appliances || appliances.length === 0) {
             return '// Add appliances here if needed';
         }
-        
+
         return appliances.map(appliance => {
             const constantName = this.nameToConstant(appliance.name);
             return constantName;
@@ -212,7 +210,7 @@ module.exports = {
         if (!supplies || supplies.length === 0) {
             return '// Add supplies here if needed';
         }
-        
+
         return supplies.map(supply => {
             const constantName = this.nameToConstant(supply.name);
             return constantName;
@@ -223,7 +221,7 @@ module.exports = {
         if (!notes || notes.length === 0) {
             return '// Add any additional notes here';
         }
-        
+
         return notes.map(note => {
             const noteText = typeof note === 'string' ? note : (note.note || note);
             return `        { note: '${noteText.replace(/'/g, "\\'")}' }`;
@@ -234,10 +232,10 @@ module.exports = {
         if (!directions || directions.length === 0) {
             return "{ step: 'Instructions were not clearly detected. Please review and add steps manually.', section: SECTIONS.MAIN }";
         }
-        
+
         return directions.map(direction => {
             const step = this.escapeString(direction.step);
-            const section = direction.section || 'SECTIONS.MAIN';
+            const section = direction.section ? `SECTIONS.` + direction.section.split(' ').join('_').toUpperCase() : 'SECTIONS.MAIN';
             return `{ step: \`${step}\`, section: ${section} }`;
         }).join(',\n        ');
     }
@@ -251,11 +249,11 @@ module.exports = {
     validateRecipeData(data) {
         const required = ['name'];
         const missing = required.filter(field => !data[field]);
-        
+
         if (missing.length > 0) {
             throw new Error(`Missing required fields: ${missing.join(', ')}`);
         }
-        
+
         return true;
     }
 }

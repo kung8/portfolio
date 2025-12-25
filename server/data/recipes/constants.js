@@ -313,8 +313,6 @@ const SECTIONS = {
     PREP_SHRIMP: 'Prep Shrimp',
     PREP_TURKEY: 'Prep Turkey',
 
-    
-
     // === MAKE VERBS (Creation Actions) ===
     MAKE_BROTH: 'Make Broth',
     MAKE_CRUST: 'Make Crust',
