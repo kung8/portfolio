@@ -335,6 +335,7 @@ const thaiBasilSesameCashewChicken = require('./recipes/thai-basil-sesame-cashew
 const thaiMassamanCurry = require("./recipes/thai-massaman-curry");
 const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
 const thaiPeanutSalad = require('./recipes/thai-peanut-salad.js'); // TODO: finish adding recipe
+const thanksgivingLeftoverSandwichWithMoistMaker = require('./recipes/thanksgiving-leftover-sandwich-with-moist-maker.js');
 const tunaOnigiri = require('./recipes/tuna-onigiri.js');
 const turkeyRollUps = require("./recipes/turkey-roll-ups");
 const udonNoodleSoup = require("./recipes/udon-noodle-soup");
@@ -586,6 +587,7 @@ const recipes = [
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
     marryMeChicken,
     roastTurkey,
+    thanksgivingLeftoverSandwichWithMoistMaker,
     kaluaPig,
     hawaiianGlazedHam,
     hawaiianTeriyakiChicken,
@@ -784,7 +786,6 @@ module.exports = recipes;
 // TODO: https://www.thespruceeats.com/how-make-paletas-or-mexican-style-ice-pops-4129109
 // TODO: https://www.lecremedelacrumb.com/easy-beef-empanadas/
 // TODO: replace the brownies recipe with the brownies2 recipe or the one in my "recipes-to-add" notes
-// TODO: https://dinnerthendessert.com/turkey-moist-maker-sandwich/
 // TODO: https://www.chilipeppermadness.com/recipes/nacho-cheese-sauce-recipe/?fbclid=IwY2xjawOqcmFleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA80MDk5NjI2MjMwODU2MDkAAR5UsZQk83u7FGtOgk6zeeJEUzkSFnmRtRH_BSe59SioG7oFOJe0bwZYFqjCag_aem_11tsJkQKF0IvE6u72OuD-w
 
 // Intended to replicate the dish I had at Magleby's in Springville, UT

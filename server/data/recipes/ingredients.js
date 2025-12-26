@@ -382,6 +382,7 @@ const INGREDIENTS = {
         REFRIED_BEANS: { name: 'refried beans', category: INGREDIENT_CATEGORY.CANNED },
         SPLIT_MUNG_BEAN: { name: 'split mung bean', category: INGREDIENT_CATEGORY.CANNED },
         SPLIT_PEA_SOUP: { name: 'split pea soup', category: INGREDIENT_CATEGORY.CANNED },
+        STUFFING_MIX: { name: 'stuffing mix', category: INGREDIENT_CATEGORY.CANNED },
         SUN_DRIED_TOMATOES: { name: 'sun dried tomatoes', category: INGREDIENT_CATEGORY.CANNED },
         TOMATO_PASTE: { name: 'tomato paste', category: INGREDIENT_CATEGORY.CANNED },
         TOMATO_SAUCE: { name: 'tomato sauce', category: INGREDIENT_CATEGORY.CANNED },
@@ -389,6 +390,7 @@ const INGREDIENTS = {
             name: 'tomato soup', category: INGREDIENT_CATEGORY.CANNED, img: "https://images.unsplash.com/photo-1608949621301-dc970e104c90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2NTk1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         TORTILLA_SOUP: { name: 'tortilla soup', category: INGREDIENT_CATEGORY.CANNED },
+        TURKEY_GRAVY: { name: 'turkey gravy', category: INGREDIENT_CATEGORY.CANNED },
         VEGETABLE_BROTH: { name: 'vegetable broth', category: INGREDIENT_CATEGORY.CANNED },
         VEGETABLE_SOUP: { name: 'vegetable soup', category: INGREDIENT_CATEGORY.CANNED },
         WILD_RICE_SOUP: { name: 'wild rice soup', category: INGREDIENT_CATEGORY.CANNED },
@@ -1032,6 +1034,7 @@ const INGREDIENTS = {
         HAWAIIAN_ROLLS: { name: 'hawaiian rolls', category: INGREDIENT_CATEGORY.GRAIN },
         HOAGIE_BREAD: { name: 'hoagie bread', category: INGREDIENT_CATEGORY.GRAIN },
         HOT_DOG_BUNS: { name: 'hot dog buns', category: INGREDIENT_CATEGORY.GRAIN },
+        ITALIAN_BREAD: { name: 'italian bread', category: INGREDIENT_CATEGORY.GRAIN },
         JASMINE_RICE: { name: 'jasmine rice', category: INGREDIENT_CATEGORY.GRAIN },
         KODIAK_CAKE_MIX: { name: 'kodiak cake mix', category: INGREDIENT_CATEGORY.GRAIN },
         KOREAN_GLASS_NOODLES: { name: 'korean glass noodles', category: INGREDIENT_CATEGORY.GRAIN },
