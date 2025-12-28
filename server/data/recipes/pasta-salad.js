@@ -1,12 +1,13 @@
-// const example = '../assets/Products/example.jpeg';
+const salad1 = '../assets/Products/pasta-salad-1.jpeg';
+const salad2 = '../assets/Products/pasta-salad-2.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BABY_ARUGULA, BASIL_LEAF, BLACK_PEPPER, CHERRY_TOMATO, CHICKPEA, CUCUMBER, DIJON_MUSTARD, FETA_CHEESE, FUSILLI_PASTA, GARLIC, ITALIAN_SEASONING, LARGE_POT, LEMON_JUICE, MINT_LEAF, MIXING_BOWL, OLIVE_OIL, PARSLEY, PINE_NUTS, RED_PEPPER_FLAKES, SALT, SMALL_BOWL, STOVE } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Pasta Salad',
     name: 'Pasta Salad',
-    img: '',
+    img: salad2,
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH],
@@ -18,11 +19,11 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Pasta Salad', 
+        {
+            label: 'Pasta Salad',
             link: 'https://www.loveandlemons.com/pasta-salad/',
             authors: ['Jeanine'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -37,13 +38,13 @@ module.exports = {
         { ...MINT_LEAF, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: SECTIONS.SALAD },
         { ...PINE_NUTS, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SALAD },
 
-        { ...OLIVE_OIL, amount: 1 / 4, unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...LEMON_JUICE, amount: 3, unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...DIJON_MUSTARD, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...GARLIC, amount: 3, unit: '', additionalDetails: 'minced', section: SECTIONS.DRESSING },
-        { ...ITALIAN_SEASONING, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...RED_PEPPER_FLAKES, amount: 1 / 4, unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
-        { ...SALT, amount: 3 / 4, unit: '', additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...OLIVE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...LEMON_JUICE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...DIJON_MUSTARD, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: SECTIONS.DRESSING },
+        { ...ITALIAN_SEASONING, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...RED_PEPPER_FLAKES, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRESSING },
+        { ...SALT, amount: 3 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DRESSING },
 
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPINGS },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.TOPPINGS },
@@ -65,7 +66,7 @@ module.exports = {
         { step: `Toss it in a little oil.`, section: SECTIONS.COOK_PASTA },
         { step: `Let it cool to room temperature.`, section: SECTIONS.COOK_PASTA },
 
-        { step: `In a small bowl, combine the "${SECTIONS.DRESSING}" section ingredients.`, section: SECTIONS.PREP_DRESSING },
+        { step: `In a small bowl, combine the "${SECTIONS.DRESSING}" section ingredients.`, section: SECTIONS.PREP_DRESSING, img: salad1 },
 
         { step: `In a mixing bowl, combine the "${SECTIONS.SALAD}" section ingredients.`, section: SECTIONS.ASSEMBLE },
         { step: `Pour the dressing over the salad. Toss.`, section: SECTIONS.ASSEMBLE },
