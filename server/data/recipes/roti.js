@@ -1,4 +1,8 @@
-// const example = '../assets/Products/example.jpeg';
+const roti1 = '../assets/Products/roti-1.jpeg';
+const roti2 = '../assets/Products/roti-2.jpeg';
+const roti3 = '../assets/Products/roti-3.jpeg';
+const roti4 = '../assets/Products/roti-4.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { DRYING_CLOTH, FRYING_PAN, GHEE, MIXING_BOWL, ROLLING_PIN, STOVE, WATER, WHEAT_FLOUR } = require('./ingredients');
 
@@ -8,10 +12,9 @@ const COOK_ROTI_INDUCTION = 'Cook Roti on Induction Stove';
 const COOK_ROTI_OPEN_FLAME = 'Cook Roti on Open Flame';
 
 module.exports = {
-    wip: true,
     cardName: 'Roti',
     name: 'Roti (or Chapati)',
-    img: '',
+    img: roti4,
     available: true,
     recommended: false,
     category: [CATEGORIES.SIDE_DISH],
@@ -48,7 +51,7 @@ module.exports = {
     directions: [
         { step: `In a mixing bowl, add flour.`, section: SECTIONS.MAKE_DOUGH },
         { step: `Slowly add water and mix with your hands. Mix until the dough comes together.`, section: SECTIONS.MAKE_DOUGH },
-        { step: `Knead and fold until the dough is soft and pliable.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Knead and fold until the dough is soft and pliable.`, section: SECTIONS.MAKE_DOUGH, img: roti1 },
         { step: `Cover with a damp cloth. Let rise for 30 minutes.`, section: SECTIONS.MAKE_DOUGH },
 
         { step: `Knead a little.`, section: MAKE_ROTI },
@@ -59,7 +62,7 @@ module.exports = {
         { step: `Dust counter with flour.`, section: MAKE_ROTI },
         { step: `Coat dough in flour on all sides.`, section: MAKE_ROTI },
         { step: `In another spot on the counter, roll out the dough until it is 5 to 6 inch circles. Add more flour as needed.`, section: MAKE_ROTI },
-        { step: `Set aside. Do not stack.`, section: MAKE_ROTI },
+        { step: `Set aside. Do not stack.`, section: MAKE_ROTI, img: roti2 },
 
         { step: `Follow the "${COOK_ROTI_OPEN_FLAME}" or "${COOK_ROTI_INDUCTION}" steps depending on what method you have available to you.`, section: COOK_ROTI, referenceType: 'directions' },
 
@@ -77,7 +80,7 @@ module.exports = {
         { step: `Over medium-high heat, heat a frying pan.`, section: COOK_ROTI_INDUCTION },
         { step: `Once it is hot, place roti in pan.`, section: COOK_ROTI_INDUCTION },
         { step: `Cook until small bubble forms on top (about 30 to 40 seconds).`, section: COOK_ROTI_INDUCTION },
-        { step: `Flip.`, section: COOK_ROTI_INDUCTION },
+        { step: `Flip.`, section: COOK_ROTI_INDUCTION, img: roti3 },
         { step: `Cook the second side until there are some brown spots all over (about 1 to 2 minutes).`, section: COOK_ROTI_INDUCTION },
         { step: `Flip back to the first side.`, section: COOK_ROTI_INDUCTION },
         { step: `Cook until brown spots (about a few seconds).`, section: COOK_ROTI_INDUCTION },
@@ -86,7 +89,9 @@ module.exports = {
         { step: `Serve warm with your favorite dal, curry, or vegetables.`, section: SECTIONS.SERVE },
     ],
     notes: [
-        { note: ' Add more water if the dough is too hard or flour if the dough is too sticky.' },
+        { note: 'Add more water if the dough is too hard or flour if the dough is too sticky.' },
+        { note: 'This roti should be rolled out thinly for best results. I think my thickness was still too thick, so try to roll it out as thin as possible without tearing.' },
+        { note: 'It was a bit dry before pan frying, so maybe when rolling it out, brush it with a little water or ghee to keep it moist.'},
     ],
     store: [
         {
