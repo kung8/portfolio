@@ -787,6 +787,7 @@ module.exports = recipes;
 // TODO: https://www.lecremedelacrumb.com/easy-beef-empanadas/
 // TODO: replace the brownies recipe with the brownies2 recipe or the one in my "recipes-to-add" notes
 // TODO: https://www.chilipeppermadness.com/recipes/nacho-cheese-sauce-recipe/?fbclid=IwY2xjawOqcmFleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA80MDk5NjI2MjMwODU2MDkAAR5UsZQk83u7FGtOgk6zeeJEUzkSFnmRtRH_BSe59SioG7oFOJe0bwZYFqjCag_aem_11tsJkQKF0IvE6u72OuD-w
+// TODO: https://www.braudogco.is/en-gb/kanilsn%C3%BA%C3%B0auppskriftin-okkar (referred by Jenny Richards)
 
 // Intended to replicate the dish I had at Magleby's in Springville, UT
 // TODO: https://www.allrecipes.com/recipe/12720/grilled-salmon-i/ 
