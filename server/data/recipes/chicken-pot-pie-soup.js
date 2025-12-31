@@ -1,4 +1,6 @@
-// const example = '../assets/Products/example.jpeg';
+const soup1 = '../assets/Products/chicken-pot-pie-soup-1.jpeg';
+const soup2 = '../assets/Products/chicken-pot-pie-soup-2.jpeg';
+const soup3 = '../assets/Products/chicken-pot-pie-soup-3.jpeg';
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BLACK_PEPPER, CARROT, CELERY, CHEDDAR_CHEESE, CHICKEN_BROTH, HEAVY_CREAM, LARGE_POT, OVEN, PARCHMENT_PAPER, PARSLEY, REFRIGERATED_PIE_CRUST, ROTISSERIE_CHICKEN, SALT, SALTED_BUTTER, STOVE, THYME, TURMERIC, WHITE_WINE, YELLOW_ONION } = require('./ingredients');
 
@@ -10,10 +12,9 @@ const SOUP_CHICKEN = 'Soup Chicken';
 const CREAMS = 'Creams';
 
 module.exports = {
-    wip: true,
     cardName: 'Chicken Pot Pie Soup',
     name: 'Chicken Pot Pie Soup',
-    img: '',
+    img: soup3,
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -73,8 +74,8 @@ module.exports = {
         { step: `Line sheet pans with parchment paper.`, section: SECTIONS.PREP_PAN },
 
         { step: `Unroll pie crust on baking sheets.`, section: SECTIONS.PREP_CRUST },
-        { step: `Sprinkle cheese and parsley over crust. Press lightly.`, section: SECTIONS.PREP_CRUST },
-        { step: `Bake until edges are golden, the cheese is bubbly and crust is cooked through (about 12 to 14 minutes).`, section: SECTIONS.PREP_CRUST },
+        { step: `Sprinkle cheese and parsley over crust. Press lightly.`, section: SECTIONS.PREP_CRUST, img: soup1 },
+        { step: `Bake until edges are golden, the cheese is bubbly and crust is cooked through (about 12 to 14 minutes).`, section: SECTIONS.PREP_CRUST, img: soup2 },
         { step: `Let cool.`, section: SECTIONS.PREP_CRUST },
 
         { step: `Over medium heat, melt butter in a large pot.`, section: SECTIONS.COOK_VEGGIES },
@@ -88,6 +89,9 @@ module.exports = {
         { step: `Add cream. Taste and adjust as needed.`, section: SECTIONS.COOK_SOUP },
 
         { step: `Enjoy this simple soup dish with pieces of the crust.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: 'I loved the crust dippers with the soup. The soup I thought was flavorful but was not as creamy as chicken pot pie. Next time I will add more heavy cream.' }
     ],
     store: [
         {
