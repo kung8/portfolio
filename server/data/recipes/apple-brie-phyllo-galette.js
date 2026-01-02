@@ -1,3 +1,10 @@
+const galette1 = '../assets/Products/apple-brie-phyllo-galette-1.jpeg';
+const galette2 = '../assets/Products/apple-brie-phyllo-galette-2.jpeg';
+const galette3 = '../assets/Products/apple-brie-phyllo-galette-3.jpeg';
+const galette4 = '../assets/Products/apple-brie-phyllo-galette-4.jpeg';
+const galette5 = '../assets/Products/apple-brie-phyllo-galette-5.jpeg';
+const galette6 = '../assets/Products/apple-brie-phyllo-galette-6.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BRIE_CHEESE, BROWN_SUGAR, FLAKY_SEA_SALT, HONEY, HONEY_CRISP_APPLE, OVEN, PARCHMENT_PAPER, PHYLLO_DOUGH, THYME, UNSALTED_BUTTER } = require('./ingredients');
 
@@ -7,12 +14,11 @@ const APPLES_SECTION = 'Apples';
 const PREP_BUTTER = 'Prep Thyme Butter';
 
 module.exports = {
-    wip: true,
     cardName: 'Apple Brie Phyllo Galette',
     name: 'Apple Brie Phyllo Galette',
-    img: '',
+    img: galette5,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],
@@ -58,16 +64,16 @@ module.exports = {
         { step: `Place one phyllo dough sheet on the baking sheet.`, section: SECTIONS.ASSEMBLE },
         { step: `Brush the dough with the melted butter.`, section: SECTIONS.ASSEMBLE },
         { step: `Lay another sheet on top rotated at 10º. Brush butter.`, section: SECTIONS.ASSEMBLE },
-        { step: `Continue to layer the sheets rotated at 10º angles and brush butter.`, section: SECTIONS.ASSEMBLE },
-        { step: `Spread the brie in the center (about 4 inches from the border).`, section: SECTIONS.ASSEMBLE },
+        { step: `Continue to layer the sheets rotated at 10º angles and brush butter.`, section: SECTIONS.ASSEMBLE, img: galette1 },
+        { step: `Spread the brie in the center (about 4 inches from the border).`, section: SECTIONS.ASSEMBLE, img: galette2 },
         { step: `In a mixing bowl, combine the "${APPLES_SECTION}" section ingredients.`, section: SECTIONS.ASSEMBLE },
-        { step: `Arrange the apple slices, in an overlapping pattern.`, section: SECTIONS.ASSEMBLE },
+        { step: `Arrange the apple slices, in an overlapping pattern.`, section: SECTIONS.ASSEMBLE, img: galette3 },
         { step: `Fold the edges over to form a crust (it will partially cover some of the apples slices and brie).`, section: SECTIONS.ASSEMBLE },
-        { step: `Brush the crust with the melted butter.`, section: SECTIONS.ASSEMBLE },
+        { step: `Brush the crust with the melted butter.`, section: SECTIONS.ASSEMBLE, img: galette4 },
 
         { step: `Bake until dough is golden brown and crisp (about 40 to 45 minutes).`, section: SECTIONS.BAKE },
 
-        { step: `Serve with drizzles of honey and sprinkle with salt.`, section: SECTIONS.SERVE },
+        { step: `Serve with drizzles of honey and sprinkle with salt.`, section: SECTIONS.SERVE, img: galette6 },
     ],
     store: [
         {

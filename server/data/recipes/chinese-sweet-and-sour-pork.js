@@ -42,10 +42,10 @@ module.exports = {
     ingredients: [
         { ...GARLIC_SALT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PORK_MARINADE },
         { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
+        { ...PORK_SHOULDER, amount: 5 / 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1/2 inch pieces', section: PORK_MARINADE },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: PORK_MARINADE },
         { ...ALL_PURPOSE_FLOUR, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
         { ...CORNSTARCH, amount: 6, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: PORK_MARINADE },
-        { ...PORK_SHOULDER, amount: 5 / 4, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1/2 inch pieces', section: PORK_MARINADE },
 
         { ...KETCHUP, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
         { ...BROWN_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SWEET_AND_SOUR_SAUCE },
