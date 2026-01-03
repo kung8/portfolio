@@ -25,6 +25,25 @@ module.exports = {
         //     rating: NO_RATING,
         // },
         {
+            date: IN_PROGRESS,
+            title: "Murder at an Irish Wedding (An Irish Village Mystery Book 2",
+            author: ["Carlene O'Connor"],
+            source: ["same author"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 320,
+            rating: NO_RATING,
+        },
+        {
             date: NO_DATE,
             title: "Psychocybernetics",
             author: ["Maxwell Maltz"],
@@ -101,12 +120,12 @@ module.exports = {
             rating: NO_RATING,
         },
         {
-            date: IN_PROGRESS,
+            date: "12/22/2025",
             title: "Skyward",
             author: ["Brandon Sanderson"],
             source: ["same author"],
             review: [
-                ""
+                "I really enjoyed this first book in the Skyward series. The premise was beautiful. I always love Brandon Sanderson's world-building and character development, and this book was no exception. The main character, Spensa, was funny, brave, and relatable. She struggles with her identity, her family legacy and her dreams of becoming a pilot."
             ],
             quotes: [
                 {
@@ -141,7 +160,7 @@ module.exports = {
                 },
             ],
             pageCount: 528,
-            rating: NO_RATING,
+            rating: 5,
         },
         {
             date: NO_DATE,
