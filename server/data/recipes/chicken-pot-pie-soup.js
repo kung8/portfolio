@@ -16,7 +16,7 @@ module.exports = {
     name: 'Chicken Pot Pie Soup',
     img: soup3,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.BRITISH, GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER, METHODS.SAUTE, METHODS.BAKE],
@@ -89,9 +89,6 @@ module.exports = {
         { step: `Add cream. Taste and adjust as needed.`, section: SECTIONS.COOK_SOUP },
 
         { step: `Enjoy this simple soup dish with pieces of the crust.`, section: SECTIONS.SERVE },
-    ],
-    notes: [
-        { note: 'I loved the crust dippers with the soup. The soup I thought was flavorful but was not as creamy as chicken pot pie. Next time I will add more heavy cream.' }
     ],
     store: [
         {
