@@ -39,7 +39,7 @@ module.exports = {
         { ...BRIE_CHEESE, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.CHEESE },
 
         { ...BROWN_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: APPLES_SECTION },
-        { ...HONEY_CRISP_APPLE, amount: 4, unit: INGREDIENT_UNITS.SMALL, additionalDetails: '', section: APPLES_SECTION },
+        { ...HONEY_CRISP_APPLE, amount: 2, unit: INGREDIENT_UNITS.SMALL, additionalDetails: '', section: APPLES_SECTION },
 
         { ...HONEY, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...FLAKY_SEA_SALT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },

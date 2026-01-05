@@ -26,11 +26,11 @@ module.exports = {
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Kolo Mee', 
+        {
+            label: 'Kolo Mee',
             link: 'https://tasteasianfood.com/kolo-mee-recipe/',
             authors: ['KP Kwan'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -42,8 +42,8 @@ module.exports = {
         { ...SESAME_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
         { ...WHITE_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
 
-        { ...CHOW_MEIN_NOODLES, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLE },
-        // { ...CHAR_SIU, amount: '', unit: '', additionalDetails: '', section: SECTIONS.NOODLE },
+        { ...CHOW_MEIN_NOODLES, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
+
         { ...BABY_BOK_CHOY, amount: 2, unit: INGREDIENT_UNITS.STALK, additionalDetails: '', section: BOK_CHOY_SECTION },
 
         { ...LIGHT_SOY_SAUCE, amount: 3 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.SAUCE },
@@ -91,10 +91,10 @@ module.exports = {
         },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Add a splash of water. Microwave until heated through.',
+        },
     ],
     mealPrep: true,
 };
