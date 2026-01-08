@@ -868,6 +868,7 @@ const INGREDIENTS = {
         EGGO_WAFFLES: { name: 'eggo waffles', category: INGREDIENT_CATEGORY.FROZEN },
         FRENCH_FRIES: { name: 'french fries', category: INGREDIENT_CATEGORY.FROZEN },
         FRENCH_VANILLA_ICE_CREAM: { name: 'french vanilla ice cream', category: INGREDIENT_CATEGORY.FROZEN },
+        FROZEN_BANANAS: { name: 'frozen bananas', category: INGREDIENT_CATEGORY.FROZEN },
         FROZEN_BERRIES: { name: 'frozen berries', category: INGREDIENT_CATEGORY.FROZEN },
         FROZEN_BURRITOS: { name: 'frozen burritos', category: INGREDIENT_CATEGORY.FROZEN },
         FROZEN_CARROTS: { name: 'frozen carrots', category: INGREDIENT_CATEGORY.FROZEN },
@@ -882,6 +883,7 @@ const INGREDIENTS = {
         FROZEN_PIZZA: { name: 'frozen pizza', category: INGREDIENT_CATEGORY.FROZEN },
         FROZEN_VEGETABLES: { name: 'frozen vegetables', category: INGREDIENT_CATEGORY.FROZEN },
         FROZEN_CHEESE_STICKS: { name: 'frozen cheese sticks', category: INGREDIENT_CATEGORY.FROZEN },
+        FROZEN_STRAWBERRIES: { name: 'frozen strawberries', category: INGREDIENT_CATEGORY.FROZEN },
         FROZEN_TAQUITOS: { name: 'frozen taquitos', category: INGREDIENT_CATEGORY.FROZEN },
         GRAHAM_CANYON_ICE_CREAM: { name: 'graham canyon ice cream', category: INGREDIENT_CATEGORY.FROZEN },
         GREEN_TEA_ICE_CREAM: { name: 'green tea ice cream', category: INGREDIENT_CATEGORY.FROZEN },
@@ -1047,6 +1049,9 @@ const INGREDIENTS = {
             name: 'macaroni and cheese', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1725635594774-e9d718ee4f12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY3MzIzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         MOCHIKO: { name: 'mochiko', category: INGREDIENT_CATEGORY.GRAIN },
+        NATURES_PATH_ORGANIC_PUMPKIN_SEED_AND_FLAX_GRANOLA: {
+            name: "Nature's path organic pumpkin seed and flax granola", category: INGREDIENT_CATEGORY.GRAIN
+        },
         ORZO: { name: 'orzo', category: INGREDIENT_CATEGORY.GRAIN },
         PAPPARDELLE_NOODLES: { name: 'pappardelle noodles', category: INGREDIENT_CATEGORY.GRAIN },
         PENNE: {

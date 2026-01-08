@@ -117,6 +117,7 @@ const chocolateGelato = require('./recipes/chocolate-gelato.js');
 const chocolateMousse = require("./recipes/chocolate-mousse");
 const chopSuey = require("./recipes/chop-suey");
 const choySumWithGarlicSauce = require("./recipes/choy-sum-with-garlic-sauce");
+const chunkyStrawberryBowl = require("./recipes/chunky-strawberry-bowl");
 const churros = require("./recipes/churros");
 const cinnamonCrunchApplePieCatheadBiscuits = require("./recipes/cinnamon-crunch-apple-pie-cathead-biscuits");
 const cinnamonRolls = require("./recipes/cinnamon-rolls");
@@ -682,6 +683,7 @@ const recipes = [
     turkeyRollUps,
     wrap,
     parfait,
+    chunkyStrawberryBowl,
     smoothie,
     antsOnALog,
 

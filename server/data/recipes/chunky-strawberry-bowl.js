@@ -1,0 +1,68 @@
+const bowl1 = '../assets/Products/chunky-strawberry-bowl-1.jpeg';
+const bowl2 = '../assets/Products/chunky-strawberry-bowl-2.jpeg';
+
+const {
+    CATEGORIES,
+    GENRES,
+    INGREDIENT_UNITS,
+    METHODS, PROTEIN,
+    SECTIONS,
+    TIME_UNITS,
+    TYPES,
+    YIELD_UNITS
+} = require('./constants');
+const { ALMOND_MILK, BANANA, BLENDER, BOWL, CUTTING_BOARD, FROZEN_BANANAS, FROZEN_STRAWBERRIES, GREEK_YOGURT, KNIFE, NATURES_PATH_ORGANIC_PUMPKIN_SEED_AND_FLAX_GRANOLA, PEANUT_BUTTER, STRAWBERRY } = require('./ingredients');
+
+const SMOOTHIE_SECTION = 'Smoothie Bowl';
+
+module.exports = {
+    cardName: 'Chunky Strawberry Bowl',
+    name: 'Chunky Strawberry Bowl',
+    img: bowl2,
+    available: true,
+    recommended: true,
+    category: [CATEGORIES.BREAKFAST, CATEGORIES.SNACK, CATEGORIES.LUNCH, CATEGORIES.DINNER],
+    genre: [GENRES.AMERICAN],
+    method: [METHODS.BLEND],
+    protein: [PROTEIN.PEANUT],
+    type: [TYPES.SMOOTHIE],
+    yields: { amount: 1, unit: YIELD_UNITS.SERVING },
+    prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
+    websites: [
+        {
+            label: 'Chunky Strawberry Bowl',
+            link: 'https://www.pinterest.com/pin/copycat-jamba-juice-chunky-strawberry-topper-bowl--1548181108883468/',
+            authors: ['Jessica Schmid'],
+            finder: 'Kevin Ung',
+        }
+    ],
+    ingredients: [
+        { ...ALMOND_MILK, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...PEANUT_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...GREEK_YOGURT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...FROZEN_STRAWBERRIES, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...FROZEN_BANANAS, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...NATURES_PATH_ORGANIC_PUMPKIN_SEED_AND_FLAX_GRANOLA, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SMOOTHIE_SECTION },
+
+        { ...NATURES_PATH_ORGANIC_PUMPKIN_SEED_AND_FLAX_GRANOLA, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...BANANA, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+        { ...STRAWBERRY, amount: 3, unit: '', additionalDetails: 'sliced', section: SECTIONS.TOPPINGS },
+    ],
+    appliances: [
+        BLENDER
+    ],
+    supplies: [
+        BOWL,
+        CUTTING_BOARD,
+        KNIFE
+    ],
+    directions: [
+        { step: `In a blender, combine the smoothie ingredients.`, section: SECTIONS.BLEND },
+        { step: `Pour the smoothie into a bowl and top with your favorite ingredients.`, section: SECTIONS.ASSEMBLE, img: bowl1 },
+        { step: `Enjoy this simple.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        `Feel free to customize the ingredients and ratios in the smoothie and the toppings to your liking!`,
+    ],
+    mealPrep: false,
+};

@@ -1,4 +1,6 @@
 const bagel1 = '../assets/Products/lox-and-bagel-1.jpeg';
+const bagel2 = '../assets/Products/lox-and-bagel-2.jpeg';
+const bagel3 = '../assets/Products/lox-and-bagel-3.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAGELS, BAKING_PAN, BLACK_PEPPER, BROWN_SUGAR, CAPER, COOLING_RACK, CREAM_CHEESE, FRESH_DILL, KOSHER_SALT, OVEN, PAPER_TOWELS, PARSLEY, PLASTIC_WRAP, RED_ONION, REFRIGERATOR, SALMON_FISH, SMALL_BOWL, STOVE, WOOD_CHIPS } = require('./ingredients');
@@ -73,8 +75,8 @@ module.exports = {
 
         { step: `Rinse the salmon. Pat dry with paper towel. Remove any bones if there are any.`, section: CURE_SALMON },
         { step: `In a baking pan, spread a layer of the seasoning mixture.`, section: CURE_SALMON },
-        { step: `Place the salmon skin-side down in the baking pan. Rub the seasoning all over the salmon. Make sure the top of the salmon is covered by the seasoning.`, section: CURE_SALMON },
-        { step: `Cover the salmon with plastic wrap and place something heavy on top.`, section: CURE_SALMON },
+        { step: `Place the salmon skin-side down in the baking pan. Rub the seasoning all over the salmon. Make sure the top of the salmon is covered by the seasoning.`, section: CURE_SALMON, img: bagel2 },
+        { step: `Cover the salmon with plastic wrap and place something heavy on top.`, section: CURE_SALMON, img: bagel3 },
         { step: `Place it in the fridge and let it cure for 24 hours.`, section: CURE_SALMON },
 
         { step: `Rinse under cold water.`, section: RINSE_SALMON },
