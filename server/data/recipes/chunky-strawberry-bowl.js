@@ -59,7 +59,7 @@ module.exports = {
     directions: [
         { step: `In a blender, combine the smoothie ingredients.`, section: SECTIONS.BLEND },
         { step: `Pour the smoothie into a bowl and top with your favorite ingredients.`, section: SECTIONS.ASSEMBLE, img: bowl1 },
-        { step: `Enjoy this simple.`, section: SECTIONS.SERVE },
+        { step: `Enjoy this simple Jamba Juice Chunky Strawberry Bowl copycat.`, section: SECTIONS.SERVE },
     ],
     notes: [
         `Feel free to customize the ingredients and ratios in the smoothie and the toppings to your liking!`,
