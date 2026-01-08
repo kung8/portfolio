@@ -62,7 +62,7 @@ module.exports = {
         { step: `Enjoy this simple Jamba Juice Chunky Strawberry Bowl copycat.`, section: SECTIONS.SERVE },
     ],
     notes: [
-        `Feel free to customize the ingredients and ratios in the smoothie and the toppings to your liking!`,
+        { note: `Feel free to customize the ingredients and ratios in the smoothie and the toppings to your liking!` },
     ],
     mealPrep: false,
 };
