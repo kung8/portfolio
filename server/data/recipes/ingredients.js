@@ -59,6 +59,9 @@ const INGREDIENTS = {
         COCOA_POWDER: {
             name: 'cocoa powder', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1603052875230-416ab3bc0545?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTgxNjg3fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        COCONUT_EXTRACT: {
+            name: 'coconut extract', category: INGREDIENT_CATEGORY.BAKING,
+        },
         CONFECTIONERS_SUGAR: {
             name: 'confectioners\' sugar', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1581268497089-7a975fb491a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU2Njc0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -1525,6 +1528,9 @@ const INGREDIENTS = {
         },
         LIME_JUICE: {
             name: 'lime juice', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1578855691621-8a08ea00d1fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc1NDYwfA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        LIME_ZEST: {
+            name: 'lime zest', category: INGREDIENT_CATEGORY.PRODUCE,
         },
         LOTUS_ROOT: { name: 'lotus root', category: INGREDIENT_CATEGORY.PRODUCE },
         MALANGA: { name: 'malanga', category: INGREDIENT_CATEGORY.PRODUCE },

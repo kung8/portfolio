@@ -45,6 +45,7 @@ const bostonCreamHawaiianRollDonuts = require('./recipes/boston-cream-hawaiian-r
 const brazilianBlackBeans = require('./recipes/brazilian-black-beans.js'); // TODO: finish adding recipe
 const brazilianLemonade = require('./recipes/brazilian-lemonade.js');
 const breakfastBurrito = require("./recipes/breakfast-burrito");
+const breakfastCasserole = require("./recipes/breakfast-casserole");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
 const breakfastSausageBalls = require("./recipes/breakfast-sausage-balls");
 const brickleBars = require("./recipes/brickle-bars");
@@ -120,6 +121,7 @@ const churros = require("./recipes/churros");
 const cinnamonCrunchApplePieCatheadBiscuits = require("./recipes/cinnamon-crunch-apple-pie-cathead-biscuits");
 const cinnamonRolls = require("./recipes/cinnamon-rolls");
 const coconutChicken = require("./recipes/coconut-chicken");
+const coconutLimeShortbread = require('./recipes/coconut-lime-shortbread.js');
 const coffeeCake = require("./recipes/coffee-cake");
 const coleslaw = require("./recipes/coleslaw");
 const cowboyButterChickenWings = require("./recipes/cowboy-butter-chicken-wings");
@@ -144,7 +146,6 @@ const dumplingSoup = require("./recipes/dumpling-soup");
 const easyMochi = require('./recipes/easy-mochi.js');
 const eclair = require("./recipes/eclair");
 const empadapDeFrango = require('./recipes/empadao-de-frango.js'); // TODO: finish adding recipe
-const breakfastCasserole = require("./recipes/breakfast-casserole");
 const englishScones = require("./recipes/english-scones");
 const fajitas = require('./recipes/fajitas.js'); // TODO: finish adding recipe
 const fancyLunchables = require("./recipes/fancy-lunchables");
@@ -740,6 +741,7 @@ const recipes = [
     brownies,
     brownies2,
     tedLassoBiscuits,
+    coconutLimeShortbread,
     almondCroissantCookieBars,
     lemonBars,
     lemonFreezeBars,
