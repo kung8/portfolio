@@ -1,5 +1,7 @@
 const bowl1 = '../assets/Products/chunky-strawberry-bowl-1.jpeg';
 const bowl2 = '../assets/Products/chunky-strawberry-bowl-2.jpeg';
+const bowl3 = '../assets/Products/chunky-strawberry-bowl-3.jpeg';
+const bowl4 = '../assets/Products/chunky-strawberry-bowl-4.jpeg';
 
 const {
     CATEGORIES,
@@ -18,7 +20,7 @@ const SMOOTHIE_SECTION = 'Smoothie Bowl';
 module.exports = {
     cardName: 'Chunky Strawberry Bowl',
     name: 'Chunky Strawberry Bowl',
-    img: bowl2,
+    img: bowl4,
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.SNACK, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -37,9 +39,9 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...ALMOND_MILK, amount: 12, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...ALMOND_MILK, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SMOOTHIE_SECTION },
         { ...PEANUT_BUTTER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SMOOTHIE_SECTION },
-        { ...GREEK_YOGURT, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SMOOTHIE_SECTION },
+        { ...GREEK_YOGURT, amount: 5.3, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SMOOTHIE_SECTION },
         { ...FROZEN_STRAWBERRIES, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SMOOTHIE_SECTION },
         { ...FROZEN_BANANAS, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SMOOTHIE_SECTION },
         { ...NATURES_PATH_ORGANIC_PUMPKIN_SEED_AND_FLAX_GRANOLA, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SMOOTHIE_SECTION },
@@ -57,9 +59,9 @@ module.exports = {
         KNIFE
     ],
     directions: [
-        { step: `In a blender, combine the smoothie ingredients.`, section: SECTIONS.BLEND },
-        { step: `Pour the smoothie into a bowl and top with your favorite ingredients.`, section: SECTIONS.ASSEMBLE, img: bowl1 },
-        { step: `Enjoy this simple Jamba Juice Chunky Strawberry Bowl copycat.`, section: SECTIONS.SERVE },
+        { step: `In a blender, combine the smoothie ingredients.`, section: SECTIONS.BLEND, img: bowl1 },
+        { step: `Pour the smoothie into a bowl and top with your favorite ingredients.`, section: SECTIONS.ASSEMBLE, img: bowl2 },
+        { step: `Enjoy this simple Jamba Juice Chunky Strawberry Bowl copycat.`, section: SECTIONS.SERVE, img: bowl3 },
     ],
     notes: [
         { note: `Feel free to customize the ingredients and ratios in the smoothie and the toppings to your liking!` },
