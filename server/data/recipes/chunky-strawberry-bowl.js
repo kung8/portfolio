@@ -28,7 +28,7 @@ module.exports = {
     method: [METHODS.BLEND],
     protein: [PROTEIN.PEANUT],
     type: [TYPES.SMOOTHIE],
-    yields: { amount: 1, unit: YIELD_UNITS.SERVING },
+    yields: { amount: 28, unit: YIELD_UNITS.OUNCE },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     websites: [
         {
