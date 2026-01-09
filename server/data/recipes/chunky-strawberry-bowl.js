@@ -59,7 +59,7 @@ module.exports = {
         KNIFE
     ],
     directions: [
-        { step: `In a blender, combine the smoothie ingredients.`, section: SECTIONS.BLEND, img: bowl1 },
+        { step: `In a blender, combine the smoothie ingredients. Blend to your desired consistency.`, section: SECTIONS.BLEND, img: bowl1 },
         { step: `Pour the smoothie into a bowl and top with your favorite ingredients.`, section: SECTIONS.ASSEMBLE, img: bowl2 },
         { step: `Enjoy this simple Jamba Juice Chunky Strawberry Bowl copycat.`, section: SECTIONS.SERVE, img: bowl3 },
     ],
