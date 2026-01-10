@@ -83,11 +83,11 @@ module.exports = {
 
         { step: `Line a baking sheet with parchment paper.`, section: SECTIONS.PREP_PAN },
 
-        { step: `Unfold puff pastry sheets. Cut each into 4 squares.`, section: SECTIONS.ASSEMBLE },
+        { step: `Unfold puff pastry sheets on baking sheet. Cut each into 4 squares.`, section: SECTIONS.ASSEMBLE },
         { step: `Add apple filling in the center of each square.`, section: SECTIONS.ASSEMBLE, img: turnover3 },
         { step: `Fold corner to opposite corner to form a triangle.`, section: SECTIONS.ASSEMBLE },
         { step: `Press to seal and crimp with a fork.`, section: SECTIONS.ASSEMBLE },
-        { step: `Place each turnover on baking sheet (about 1 inch apart).`, section: SECTIONS.ASSEMBLE, img: turnover4 },
+        { step: `Arrange turnovers about 1 inch apart.`, section: SECTIONS.ASSEMBLE, img: turnover4 },
 
         { step: `Bake until puffed and lightly browned (about 25 minutes).`, section: SECTIONS.BAKE, img: turnover5 },
 
