@@ -1,6 +1,10 @@
 const bagel1 = '../assets/Products/lox-and-bagel-1.jpeg';
 const bagel2 = '../assets/Products/lox-and-bagel-2.jpeg';
 const bagel3 = '../assets/Products/lox-and-bagel-3.jpeg';
+const bagel4 = '../assets/Products/lox-and-bagel-4.jpeg';
+const bagel5 = '../assets/Products/lox-and-bagel-5.jpeg';
+// const bagel6 = '../assets/Products/lox-and-bagel-6.jpeg';
+// const bagel7 = '../assets/Products/lox-and-bagel-7.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAGELS, BAKING_PAN, BLACK_PEPPER, BROWN_SUGAR, CAPER, COOLING_RACK, CREAM_CHEESE, FRESH_DILL, KOSHER_SALT, OVEN, PAPER_TOWELS, PARSLEY, PLASTIC_WRAP, RED_ONION, REFRIGERATOR, SALMON_FISH, SMALL_BOWL, STOVE, WOOD_CHIPS } = require('./ingredients');
@@ -70,21 +74,20 @@ module.exports = {
         WOOD_CHIPS,
     ],
     directions: [
-
         { step: `In a small bowl, combine the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SEASONINGS },
 
         { step: `Rinse the salmon. Pat dry with paper towel. Remove any bones if there are any.`, section: CURE_SALMON },
         { step: `In a baking pan, spread a layer of the seasoning mixture.`, section: CURE_SALMON },
         { step: `Place the salmon skin-side down in the baking pan. Rub the seasoning all over the salmon. Make sure the top of the salmon is covered by the seasoning.`, section: CURE_SALMON, img: bagel2 },
         { step: `Cover the salmon with plastic wrap and place something heavy on top.`, section: CURE_SALMON, img: bagel3 },
-        { step: `Place it in the fridge and let it cure for 24 hours.`, section: CURE_SALMON },
+        { step: `Place it in the fridge and let it cure for 24 hours.`, section: CURE_SALMON, img: bagel4 },
 
         { step: `Rinse under cold water.`, section: RINSE_SALMON },
         { step: `Soak it a baking pan filled with water for 30 minutes to continue to extract excess salt.`, section: RINSE_SALMON },
 
         { step: `Pat dry with paper towels.`, section: CREATE_PELLICLE },
         { step: `Place a wire rack on top of a baking dish.`, section: CREATE_PELLICLE },
-        { step: `Place the salmon on top of the wire rack with the skin side down uncovered.`, section: CREATE_PELLICLE },
+        { step: `Place the salmon on top of the wire rack with the skin side down uncovered.`, section: CREATE_PELLICLE, img: bagel5 },
         { step: `Place in the fridge for 48 hours. This will completely dry out the outer layer forming a hard crust called pellicle.`, section: CREATE_PELLICLE },
 
         { step: `Place wood chips in an oven-safe pan.`, section: COLD_SMOKE_SALMON },

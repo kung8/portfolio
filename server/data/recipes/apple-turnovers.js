@@ -1,4 +1,10 @@
-// const example = '../assets/Products/example.jpeg';
+const turnover1 = '../assets/Products/apple-turnover-1.jpeg';
+const turnover2 = '../assets/Products/apple-turnover-2.jpeg';
+const turnover3 = '../assets/Products/apple-turnover-3.jpeg';
+const turnover4 = '../assets/Products/apple-turnover-4.jpeg';
+const turnover5 = '../assets/Products/apple-turnover-5.jpeg';
+const turnover6 = '../assets/Products/apple-turnover-6.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, BROWN_SUGAR, CINNAMON, CORNSTARCH, FORK, FRYING_PAN, GRANNY_SMITH_APPLE, LEMON_JUICE, MILK, MIXING_BOWL, OVEN, PARCHMENT_PAPER, POWDERED_SUGAR, REFRIGERATED_PUFF_PASTRY, SMALL_BOWL, STOVE, UNSALTED_BUTTER, VANILLA_EXTRACT, WATER } = require('./ingredients');
 
@@ -7,18 +13,19 @@ const SUGAR_SPICE = 'Sugar & Spice';
 const CORNSTARCH_SLURRY = 'Cornstarch Slurry';
 const PUFF_PASTRY_SECTION = 'Puff Pastry';
 
+const THAW_PUFF_PASTRY = 'Thaw Puff Pastry';
+
 module.exports = {
-    wip: true,
     cardName: 'Apple Turnovers',
     name: 'Apple Turnovers',
-    img: '',
+    img: turnover6,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
     type: [TYPES.DESSERT, TYPES.PASTRY],
-    yields: { amount: 8, unit: YIELD_UNITS.SERVING },
+    yields: { amount: 16, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
@@ -33,7 +40,7 @@ module.exports = {
     ingredients: [
         { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: APPLE_PRESERVATION },
         { ...WATER, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: APPLE_PRESERVATION },
-        { ...GRANNY_SMITH_APPLE, amount: 4, unit: INGREDIENT_UNITS.PIECE, additionalDetails: 'peeled, cored and sliced', section: APPLE_PRESERVATION },
+        { ...GRANNY_SMITH_APPLE, amount: 4, unit: '', additionalDetails: 'peeled, cored and sliced', section: APPLE_PRESERVATION },
 
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SUGAR_SPICE },
         { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUGAR_SPICE },
@@ -42,7 +49,7 @@ module.exports = {
         { ...CORNSTARCH, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CORNSTARCH_SLURRY },
         { ...WATER, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CORNSTARCH_SLURRY },
 
-        { ...REFRIGERATED_PUFF_PASTRY, amount: 17.3, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'thawed', section: PUFF_PASTRY_SECTION },
+        { ...REFRIGERATED_PUFF_PASTRY, amount: 34.6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'thawed', section: PUFF_PASTRY_SECTION },
 
         { ...POWDERED_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.GLAZE },
         { ...MILK, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.GLAZE },
@@ -61,25 +68,39 @@ module.exports = {
         { ...PARCHMENT_PAPER },
     ],
     directions: [
-        { step: `In a mixing bowl, combine the "${APPLE_PRESERVATION}" section ingredients.`, section: SECTIONS.COOK_FILLING },
+        { step: `Take out the puff pastry from to freezer to thaw at room temperature.`, section: THAW_PUFF_PASTRY },
+
+        { step: `In a mixing bowl, combine the "${APPLE_PRESERVATION}" section ingredients.`, section: SECTIONS.COOK_FILLING, img: turnover1 },
         { step: `Over medium heat, melt butter in a frying pan.`, section: SECTIONS.COOK_FILLING },
         { step: `Drain apples.`, section: SECTIONS.COOK_FILLING },
         { step: `Add apples to the pan. Cook and stir for 2 minutes.`, section: SECTIONS.COOK_FILLING },
         { step: `Add the "${SUGAR_SPICE}" section ingredients. Cook and stir for 2 minutes.`, section: SECTIONS.COOK_FILLING },
         { step: `In a small bowl, combine the "${CORNSTARCH_SLURRY}" section ingredients.`, section: SECTIONS.COOK_FILLING },
-        { step: `Add the cornstarch slurry to the pan. Cook until sauce has thickened (about 1 minute).`, section: SECTIONS.COOK_FILLING },
+        { step: `Add the cornstarch slurry to the pan. Cook until sauce has thickened (about 1 minute).`, section: SECTIONS.COOK_FILLING, img: turnover2 },
         { step: `Remove from heat.`, section: SECTIONS.COOK_FILLING },
+
         { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
+
         { step: `Line a baking sheet with parchment paper.`, section: SECTIONS.PREP_PAN },
-        { step: `Unfold puff pastry sheets. Trim excess dough so it is a square. Cut the square into 4 squares.`, section: SECTIONS.ASSEMBLE },
-        { step: `Add apple filling to the center of each square.`, section: SECTIONS.ASSEMBLE },
+
+        { step: `Unfold puff pastry sheets. Cut each into 4 squares.`, section: SECTIONS.ASSEMBLE },
+        { step: `Add apple filling in the center of each square.`, section: SECTIONS.ASSEMBLE, img: turnover3 },
         { step: `Fold corner to opposite corner to form a triangle.`, section: SECTIONS.ASSEMBLE },
         { step: `Press to seal and crimp with a fork.`, section: SECTIONS.ASSEMBLE },
-        { step: `Place each turnover on baking sheet (about 1 inch apart).`, section: SECTIONS.ASSEMBLE },
-        { step: `Bake until puffed and lightly browned (about 25 minutes).`, section: SECTIONS.BAKE },
+        { step: `Place each turnover on baking sheet (about 1 inch apart).`, section: SECTIONS.ASSEMBLE, img: turnover4 },
+
+        { step: `Bake until puffed and lightly browned (about 25 minutes).`, section: SECTIONS.BAKE, img: turnover5 },
+
         { step: `Let it cool completely before glazing.`, section: SECTIONS.COOL },
+
         { step: `In a small bowl, combine the "${SECTIONS.GLAZE}" section ingredients.`, section: SECTIONS.MAKE_GLAZE },
+
         { step: `Enjoy these turnovers with the glaze.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `The original recipe says it yields 8 but the filling was actually enough to make 16 since I didn't want to overfill the apple turnovers.` },
+        { note: `Thawing the puff pastry properly is important to prevent cracking when folding and allowing for it to stick better. Let it sit at room temperature for about 15-20 minutes after taking it out of the freezer.` },
+        { note: `I found using a fork to drizzle the glaze over the turnovers worked perfectly.` },
     ],
     store: [
         {
