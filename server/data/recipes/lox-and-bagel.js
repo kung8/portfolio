@@ -3,8 +3,9 @@ const bagel2 = '../assets/Products/lox-and-bagel-2.jpeg';
 const bagel3 = '../assets/Products/lox-and-bagel-3.jpeg';
 const bagel4 = '../assets/Products/lox-and-bagel-4.jpeg';
 const bagel5 = '../assets/Products/lox-and-bagel-5.jpeg';
-// const bagel6 = '../assets/Products/lox-and-bagel-6.jpeg';
-// const bagel7 = '../assets/Products/lox-and-bagel-7.jpeg';
+const bagel6 = '../assets/Products/lox-and-bagel-6.jpeg';
+const bagel7 = '../assets/Products/lox-and-bagel-7.jpeg';
+const bagel8 = '../assets/Products/lox-and-bagel-8.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAGELS, BAKING_PAN, BLACK_PEPPER, BROWN_SUGAR, CAPER, COOLING_RACK, CREAM_CHEESE, FRESH_DILL, KOSHER_SALT, OVEN, PAPER_TOWELS, PARSLEY, PLASTIC_WRAP, RED_ONION, REFRIGERATOR, SALMON_FISH, SMALL_BOWL, STOVE, WOOD_CHIPS } = require('./ingredients');
@@ -16,12 +17,11 @@ const CREATE_PELLICLE = 'Create Pellicle';
 const COLD_SMOKE_SALMON = 'Cold Smoke Salmon';
 
 module.exports = {
-    wip: true,
     cardName: 'Lox and Bagel',
     name: 'Lox and Bagel',
-    img: '',
+    img: bagel8,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.SCANDINAVIAN],
     method: [METHODS.CURE, METHODS.TOAST],
@@ -92,10 +92,10 @@ module.exports = {
 
         { step: `Place wood chips in an oven-safe pan.`, section: COLD_SMOKE_SALMON },
         { step: `Heat it on the stove until the chips start to smoke.`, section: COLD_SMOKE_SALMON },
-        { step: `Place the pan on the lowest rack in the oven.`, section: COLD_SMOKE_SALMON },
+        { step: `Place the pan on the lowest rack in the oven.`, section: COLD_SMOKE_SALMON, img: bagel6 },
         { step: `Place a wire rack on top of a baking sheet. Place the salmon skin-side down on the wire rack.`, section: COLD_SMOKE_SALMON },
         { step: `Place the baking sheet on a higher rack.`, section: COLD_SMOKE_SALMON },
-        { step: `Close the oven door and let it cold smoke for 2 to 4 hours.`, section: COLD_SMOKE_SALMON },
+        { step: `Close the oven door and let it cold smoke for 2 to 4 hours.`, section: COLD_SMOKE_SALMON, img: bagel7 },
 
         { step: `Toast bagel.`, section: SECTIONS.ASSEMBLE },
         { step: `Spread cream cheese.`, section: SECTIONS.ASSEMBLE },
