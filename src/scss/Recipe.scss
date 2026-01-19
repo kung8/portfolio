@@ -1181,16 +1181,18 @@
     }
 
     .loader-container {
-        width: 100%;
+        width: 100vw;
         display: flex;
         justify-content: center;
-        margin-top: 200px;
+        align-items: center;
+        margin-top: 100px;
+        margin-left: calc(-50vw + 50%);
+        position: relative;
+        min-height: 200px;
 
-        .watermelon {
-            transform: unset;
-            position: relative;
-            left: unset;
-            top: unset;
+        @include mixins.down(theme.$mobile) {
+            margin-top: 50px;
+            min-height: 150px;
         }
     }
 

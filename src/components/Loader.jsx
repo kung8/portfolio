@@ -1,9 +1,8 @@
+import { Avocado } from './loaders/Avocado';
 import { Watermelon } from './loaders/Watermelon';
-// import { Avocado } from './loaders/Avocado';
 
 export const Loader = () => {
-    // const loaders = [Watermelon, Avocado];
-    // const randomLoader = loaders[Math.floor(Math.random() * loaders.length)];
-    // return randomLoader();
-    return <Watermelon />
+    const loaders = [Avocado, Watermelon];
+    const randomLoader = loaders[Math.floor(Math.random() * loaders.length)];
+    return randomLoader();
 }
