@@ -26,6 +26,25 @@ module.exports = {
         // },
         {
             date: NO_DATE,
+            title: "A Not So Fictional Fall",
+            author: ["Savannah Scott"],
+            source: ["Jennie's Dating Profile"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
             title: "Firesight",
             author: ["Jessica Deen Norris"],
             source: ["Author Herself"],
