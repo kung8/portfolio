@@ -987,6 +987,7 @@ const INGREDIENTS = {
         BAGUETTE: { name: 'baguette', category: INGREDIENT_CATEGORY.GRAIN },
         BASMATI_RICE: { name: 'basmati rice', category: INGREDIENT_CATEGORY.GRAIN },
         BISQUICK_BAKING_MIX: { name: 'bisquick baking mix', category: INGREDIENT_CATEGORY.GRAIN },
+        BOLILLO_BREAD: { name: 'bolillo bread', category: INGREDIENT_CATEGORY.GRAIN },
         BOW_TIE_NOODLES: {
             name: 'bow tie noodles', category: INGREDIENT_CATEGORY.GRAIN, img: "https://plus.unsplash.com/premium_photo-1723802451266-59fecf0546d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxOTA1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -1237,6 +1238,7 @@ const INGREDIENTS = {
         GROUND_PORK: { name: 'ground pork', category: INGREDIENT_CATEGORY.MEAT },
         GROUND_TURKEY: { name: 'ground turkey', category: INGREDIENT_CATEGORY.MEAT },
         GUANCIALE: { name: 'guanciale', category: INGREDIENT_CATEGORY.MEAT },
+        HEADCHEESE: { name: 'headcheese', category: INGREDIENT_CATEGORY.MEAT },
         LAMB: { name: 'lamb', category: INGREDIENT_CATEGORY.MEAT },
         PORK: {
             name: 'pork', category: INGREDIENT_CATEGORY.MEAT, img: "https://images.unsplash.com/photo-1602470521085-1ac1703ebbf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcwMzU3fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -1246,6 +1248,7 @@ const INGREDIENTS = {
         },
         PORK_BUTT: { name: 'pork butt', category: INGREDIENT_CATEGORY.MEAT },
         PORK_CHOPS: { name: 'pork chops', category: INGREDIENT_CATEGORY.MEAT },
+        PORK_LOAF: { name: 'pork loaf', category: INGREDIENT_CATEGORY.MEAT },
         PORK_LOIN: { name: 'pork loin', category: INGREDIENT_CATEGORY.MEAT },
         PORK_RIBS: { name: 'pork ribs', category: INGREDIENT_CATEGORY.MEAT },
         PORK_ROAST: { name: 'pork roast', category: INGREDIENT_CATEGORY.MEAT },
