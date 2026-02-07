@@ -6,6 +6,7 @@ const sub5 = '../assets/Products/meatball-sub-5.jpeg';
 const sub6 = '../assets/Products/meatball-sub-6.jpeg';
 const sub7 = '../assets/Products/meatball-sub-7.jpeg';
 const sub8 = '../assets/Products/meatball-sub-8.jpeg';
+const sub9 = '../assets/Products/meatball-sub-9.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BAKING_SHEET, BLACK_PEPPER, BREADCRUMBS, EGG, GROUND_BEEF, HOAGIE_BREAD, ITALIAN_SEASONING, MIXING_BOWL, MOZZARELLA_CHEESE, ONION_POWDER, OVEN, PARCHMENT_PAPER, SALT, SAUCEPAN, STOVE, TOMATO_SAUCE } = require('./ingredients');
@@ -32,11 +33,11 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Meatball Sub', 
+        {
+            label: 'Meatball Sub',
             link: 'https://www.spendwithpennies.com/meatball-sub/',
             authors: ['Holly Nilsson'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -66,26 +67,27 @@ module.exports = {
     ],
     directions: [
         { step: `Preheat oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
-        
+
         { step: `In a mixing bowl, combine the "${MEATBALL_SECTION}" section ingredients.`, section: SECTIONS.FORM_BALLS },
         { step: `Line a baking sheet with parchment paper.`, section: SECTIONS.FORM_BALLS },
         { step: `Form 1 inch balls and place on sheet.`, section: SECTIONS.FORM_BALLS, img: sub1 },
 
         { step: `Bake until cooked through (about 20 minutes).`, section: SECTIONS.BAKE, img: sub3 },
-        
+
         { step: `Over medium-low heat, add meatball and pasta sauce in a saucepan.`, section: SECTIONS.PREP_SAUCE, img: sub4 },
         { step: `Cover and simmer for 10 minutes.`, section: SECTIONS.PREP_SAUCE },
-        
+
         { step: `Spread garlic butter inside roll.`, section: PREP_ROLLS, img: sub2 },
         { step: `Place rolls in a baking pan and broil until golden (about 2 minutes).`, section: PREP_ROLLS, img: sub5 },
-        
+
         { step: `Add 3 meatballs in each roll with a little sauce and cheese.`, section: SECTIONS.ASSEMBLE, img: sub6 },
         { step: `Broil until cheese is melted (about 2 minutes).`, section: SECTIONS.ASSEMBLE, img: sub7 },
-        
-        { step: `Serve with more sauce and cheese.`, section: SECTIONS.SERVE },
+
+        { step: `Serve with more sauce and cheese.`, section: SECTIONS.SERVE, img: sub9 },
     ],
     notes: [
         { note: 'The original recipe says to broil for 3 minutes, but it burned the bread pretty badly. I recommend starting it at 2 minutes.' },
+        { note: 'Bolillo bread goes really well with this recipe. You would not need to use the garlic butter if using this bread.' },
     ],
     store: [
         {

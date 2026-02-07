@@ -1,16 +1,18 @@
-// const example = '../assets/Products/example.jpeg';
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const francese1 = '../assets/Products/chicken-francese-1.jpeg';
+const francese2 = '../assets/Products/chicken-francese-2.jpeg';
+const francese3 = '../assets/Products/chicken-francese-3.jpeg';
+
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_PAN, BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CHICKEN_BROTH, CORNSTARCH, EGG, LARGE_PAN, LEMON, OLIVE_OIL, OVEN, PAPER_TOWELS, PARSLEY, PLATE, SALT, SAUCEPAN, SMALL_BOWL, STOVE, UNSALTED_BUTTER, WATER, WHITE_WINE } = require('./ingredients');
 
 const CORNSTARCH_MIXTURE_SECTION = 'Cornstarch Mixture';
 
 module.exports = {
-    wip: true,
     cardName: 'Chicken Francese',
     name: 'Chicken Francese',
-    img: '',
+    img: francese3,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE, METHODS.SIMMER],
@@ -21,11 +23,11 @@ module.exports = {
     cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Chicken Francese', 
+        {
+            label: 'Chicken Francese',
             link: 'https://www.allrecipes.com/recipe/16681/delicious-easy-chicken-francese/',
             authors: ['Elaina'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -63,28 +65,31 @@ module.exports = {
         { step: `Line a plate with paper towel.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Over medium heat, heat oil in a pan.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Add chicken and saute until almost cooked through (about 4 minutes per side).`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Transfer to the plate.`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Transfer to the plate.`, section: SECTIONS.COOK_CHICKEN, img: francese1 },
         { step: `Preheat oven to 300ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Over medium-low heat, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
         { step: `Cook until butter melts, stirring occasionally.`, section: SECTIONS.PREP_SAUCE },
         { step: `In a small bowl, combine cornstarch and water.`, section: SECTIONS.PREP_SAUCE },
         { step: `Add cornstarch mixture to the saucepan. Cook until slightly thickens (about 2 to 3 minutes).`, section: SECTIONS.PREP_SAUCE },
         { step: `Add chicken and sauce to the baking dish.`, section: SECTIONS.BAKE },
-        { step: `Bake until the chicken is no longer pink and juices are clear (about 10 to 15 minutes).`, section: SECTIONS.BAKE },
+        { step: `Bake until the chicken is no longer pink and juices are clear (about 10 to 15 minutes).`, section: SECTIONS.BAKE, img: francese2 },
         { step: `Enjoy this dish.`, section: SECTIONS.SERVE },
     ],
+    notes: [
+        { note: 'Serve with mashed potatoes and steamed vegetables.' },
+    ],
     store: [
-        // {
-        //     duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
-        //     location: STORAGE_LOCATION.FRIDGE,
-        //     container: STORAGE_CONTAINER.AIRTIGHT,
-        // },
+        {
+            duration: { amount: 3, unit: STORAGE_DURATION_UNIT.DAY },
+            location: STORAGE_LOCATION.FRIDGE,
+            container: STORAGE_CONTAINER.AIRTIGHT,
+        },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave until heated through (about 2 to 3 minutes).',
+        },
     ],
     mealPrep: false,
 };
