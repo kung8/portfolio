@@ -898,3 +898,7 @@ module.exports = recipes;
     flatten slightly
     bake at 350 for 10-12 minutes
 */
+
+// https://www.hersheyland.com/recipes/hersheys-best-brownies.html
+// https://sugarspunrun.com/funnel-cake-recipe/
+// https://munchyesta.com/irish-curry-recipe-with-chips-irish-pub-sauce/
