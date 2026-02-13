@@ -1,11 +1,5 @@
 const shakingBeef1 = '../assets/Products/shaking-beef-1.jpeg';
 const shakingBeef2 = '../assets/Products/shaking-beef-2.jpeg';
-const shakingBeef3 = '../assets/Products/shaking-beef-3.jpeg';
-const shakingBeef4 = '../assets/Products/shaking-beef-4.jpeg';
-const shakingBeef5 = '../assets/Products/shaking-beef-5.jpeg';
-const shakingBeef6 = '../assets/Products/shaking-beef-6.jpeg';
-const shakingBeef7 = '../assets/Products/shaking-beef-7.jpeg';
-const shakingBeef8 = '../assets/Products/shaking-beef-8.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BABY_ARUGULA, BEEF_RIBEYE_STEAK, BLACK_PEPPER, BROWN_SUGAR, FISH_SAUCE, GARLIC, LIGHT_SOY_SAUCE, MIXING_BOWL, OYSTER_SAUCE, RED_ONION, ROMA_TOMATO, SERVING_PLATE, SMALL_BOWL, STOVE, VEGETABLE_OIL, WATER, WHITE_RICE, WHITE_SUGAR, WHITE_VINEGAR, WOK } = require('./ingredients');
@@ -20,7 +14,7 @@ const PLATE_UP_VEGETABLES = 'Plate Up Vegetables';
 module.exports = {
     cardName: 'Shaking Beef',
     name: 'Vietnamese Shaking Beef (Bo Luc Lac)',
-    img: shakingBeef7,
+    img: shakingBeef2,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -33,11 +27,11 @@ module.exports = {
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Vietnamese Shaking Beef', 
+        {
+            label: 'Vietnamese Shaking Beef',
             link: 'https://tasty.co/recipe/vietnamese-shaking-beef',
             authors: ['Matthew Johnson'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -72,18 +66,18 @@ module.exports = {
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.MARINATE_BEEF },
-        { step: `Marinate at room temperature for 30 minutes.`, section: SECTIONS.MARINATE_BEEF, img: shakingBeef1 },
+        { step: `Marinate at room temperature for 30 minutes.`, section: SECTIONS.MARINATE_BEEF },
 
-        { step: `In a small bowl, combine the "${RED_ONION_SAUCE}" section ingredients. Set aside.`, section: PREP_RED_ONION_SAUCE, img: shakingBeef2 },
-        { step: `Arrange arugula and tomato slices on a serving plate.`, section: PLATE_UP_VEGETABLES, img: shakingBeef3 },
+        { step: `In a small bowl, combine the "${RED_ONION_SAUCE}" section ingredients. Set aside.`, section: PREP_RED_ONION_SAUCE },
+        { step: `Arrange arugula and tomato slices on a serving plate.`, section: PLATE_UP_VEGETABLES },
 
         { step: `Over high heat, add oil to a wok. Tilt to spread the oil so it coats the wok.`, section: SECTIONS.COOK_BEEF },
-        { step: `Add beef in batches. Sear until all sides are charred and medium rare (about 3 to 5 minutes).`, section: SECTIONS.COOK_BEEF, img: shakingBeef4 },
+        { step: `Add beef in batches. Sear until all sides are charred and medium rare (about 3 to 5 minutes).`, section: SECTIONS.COOK_BEEF },
         { step: `Remove beef. Continue with as many batches as needed.`, section: SECTIONS.COOK_BEEF },
-        { step: `Arrange beef on top of the bed of arugula and tomatoes.`, section: SECTIONS.ASSEMBLE, img: shakingBeef5 },
+        { step: `Arrange beef on top of the bed of arugula and tomatoes.`, section: SECTIONS.ASSEMBLE },
         { step: `Optionally cook the red onion sauce over medium heat for 1 to 2 minutes (by itself or with the beef).`, section: SECTIONS.ASSEMBLE },
-        { step: `Top with the red onion sauce.`, section: SECTIONS.ASSEMBLE, img: shakingBeef6 },
-        { step: `Enjoy this Vietnamese dish with rice!`, section: SECTIONS.SERVE, img: shakingBeef8 },
+        { step: `Top with the red onion sauce.`, section: SECTIONS.ASSEMBLE },
+        { step: `Enjoy this Vietnamese dish with rice!`, section: SECTIONS.SERVE, img: shakingBeef1 },
     ],
     notes: [
         { note: 'The original recipe calls for watercress, but it had too strong of a peppery flavor and it overpowered the dish. Baby arugula is a great substitute that still gives a peppery flavor but is more mild. Plus baby arugula is easier to find.' },
