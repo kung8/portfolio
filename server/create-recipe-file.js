@@ -252,6 +252,8 @@ const createPrompt = async () => {
             .replace(/{{label}}/g, answers.label)
             .replace(/{{link}}/g, answers.link)
             .replace(/'{{available}}'/g, answers.available)
+            .replace(/\/\* eslint-disable no-unused-vars \*\/\n/g, '')
+            .replace(/\/\/ eslint-disable-next-line no-empty-pattern\n/g, '')
 
         // create the new recipe file
         fs.writeFileSync(filePath, customizedTemplate, 'utf8');

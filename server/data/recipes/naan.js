@@ -36,7 +36,8 @@ module.exports = {
     waitTime: { amount: 1, unit: TIME_UNITS.HOUR },
     websites: [
         {
-            label: 'Own Recipe',
+            bookTitle: 'Knife Drop: Creative Recipes Anyone Can Cook',
+            label: 'Naan',
             link: null,
             authors: ['Nick DiGiovanni'],
             finder: 'Justin Ung'

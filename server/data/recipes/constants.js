@@ -103,6 +103,7 @@ const INGREDIENT_UNITS = {
     BAG: { s: 'bag', p: 'bags' },
     BOTTLE: { s: 'bottle', p: 'bottles' },
     BOX: { s: 'box', p: 'boxes' },
+    BRANCH: { s: 'branch', p: 'branches' },
     BULB: { s: 'bulb', p: 'bulbs' },
     BUNCH: { s: 'bunch', p: 'bunches' },
     CAN: { s: 'can', p: 'cans' },
@@ -388,6 +389,7 @@ const SECTIONS = {
     SOUP: 'Soup',
 
     // Sauces & Seasonings
+    BRINE: 'Brine',
     COATING: 'Coating',
     DREDGE: 'Dredge',
     DRESSING: 'Dressing',

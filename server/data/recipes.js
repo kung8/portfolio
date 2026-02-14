@@ -296,6 +296,7 @@ const roastTurkey = require("./recipes/roast-turkey");
 const roastedAsparagus = require('./recipes/roasted-asparagus.js');
 const roastedPorkBelly = require("./recipes/roasted-pork-belly");
 const roastedVegetables = require('./recipes/roasted-vegetables.js'); // TODO: finish adding recipe
+const rosemaryBrinedButtermilkFriedChicken = require('./recipes/rosemary-brined-buttermilk-fried-chicken.js');
 const rosemaryFries = require("./recipes/rosemary-fries");
 const rosemaryLemonade = require("./recipes/rosemary-lemonade");
 const roti = require('./recipes/roti.js'); // TODO: finish adding recipe
@@ -606,6 +607,7 @@ const recipes = [
     butteredCorn,
     bbqPulledPorkAndFixins,
     bakedMacaroniAndCheese,
+    rosemaryBrinedButtermilkFriedChicken,
     friedChickenWithHotHoney,
     creamyCornCasserole,
     coleslaw,

@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 // const example1 = '../assets/Products/example-1.jpeg';
+
 const {
     CATEGORIES, 
     GENRES,
@@ -13,6 +15,7 @@ const {
     TYPES, 
     YIELD_UNITS 
 } = require('./constants');
+// eslint-disable-next-line no-empty-pattern
 const {  } = require('./ingredients');
 
 module.exports = {
@@ -23,11 +26,11 @@ module.exports = {
     img: '',
     available: '{{available}}',
     recommended: false,
-    category: ['{{category}}'],
-    genre: ['{{genre}}'],
-    method: ['{{method}}'],
-    protein: ['{{protein}}'],
-    type: ['{{type}}'],
+    category: '{{category}}',
+    genre: '{{genre}}',
+    method: '{{method}}',
+    protein: '{{protein}}',
+    type: '{{type}}',
     yields: { amount: '{{yields}}', unit: '{{yieldUnit}}' },
     prepTime: { amount: '{{prepTime}}', unit: '{{prepTimeUnit}}' },
     cookTime: { amount: '{{cookTime}}', unit: '{{cookTimeUnit}}' },
