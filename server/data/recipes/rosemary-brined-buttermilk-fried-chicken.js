@@ -1,4 +1,8 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const chicken1 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-1.jpeg';
+const chicken2 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-2.jpeg';
+const chicken3 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-3.jpeg';
+const chicken4 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-4.jpeg';
+const chicken5 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-5.jpeg';
 
 const {
     CATEGORIES,
@@ -14,7 +18,7 @@ const {
     TYPES,
     YIELD_UNITS
 } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SHEET, BLACK_PEPPER, BOWL, BUTTERMILK, CAYENNE_PEPPER, CHICKEN_DRUMSTICKS, CHICKEN_THIGH, COOLING_RACK, DEEP_FRYER, GARLIC, LEMON, LEMON_ZEST, MIXING_BOWL, PAPER_TOWELS, PAPRIKA, ROSEMARY, SALT, SAUCEPAN, SEA_SALT, STOVE, VEGETABLE_OIL, WATER, YELLOW_ONION, ZIPLOC_BAG } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SHEET, BLACK_PEPPER, BOWL, BUTTERMILK, CAYENNE_PEPPER, CHICKEN_DRUMSTICKS, CHICKEN_THIGH, COLANDER, COOLING_RACK, DEEP_FRYER, GARLIC, LARGE_POT, LEMON, LEMON_ZEST, PAPER_TOWELS, PAPRIKA, ROSEMARY, SALT, SEA_SALT, STOVE, VEGETABLE_OIL, WATER, YELLOW_ONION } = require('./ingredients');
 
 const DREDGING_STATION_1 = 'Dredging Station 1';
 const DREDGING_STATION_2 = 'Dredging Station 2';
@@ -26,7 +30,7 @@ const PREP_DREDGING_STATION = 'Prep Dredging Station';
 module.exports = {
     wip: true,
     cardName: 'Buttermilk Fried Chicken',
-    name: 'Rosemary Brined Buttermilk Fried Chicken',
+    name: 'Rosemary-Brined Buttermilk Fried Chicken',
     img: '',
     available: true,
     recommended: false,
@@ -79,9 +83,8 @@ module.exports = {
         DEEP_FRYER,
     ],
     supplies: [
-        SAUCEPAN,
-        ZIPLOC_BAG,
-        { ...MIXING_BOWL, amount: 2 },
+        LARGE_POT,
+        COLANDER,
         { ...BOWL, amount: 3 },
         { ...BAKING_SHEET, amount: 3 },
         PAPER_TOWELS,
@@ -89,29 +92,26 @@ module.exports = {
     ],
     directions: [
         // PREP BRINE for about 7 to 8 minutes (cook). CHILL for about 30 to 45 minutes (wait).
-        { step: `Over medium-high heat, heat oil in a saucepan.`, section: PREP_BRINE },
+        { step: `Over medium-high heat, heat oil in a large pot.`, section: PREP_BRINE },
         { step: `Add onion and garlic. Stir and cook for 30 seconds.`, section: PREP_BRINE },
         { step: `Add salt.`, section: PREP_BRINE },
-        { step: `Saute until translucent (about 3 to 3 1/2 minutes).`, section: PREP_BRINE },
+        { step: `Saute until translucent (about 3 to 3 1/2 minutes).`, section: PREP_BRINE, img: chicken1 },
         { step: `Add rosemary. Cook until warmed (about 30 seconds).`, section: PREP_BRINE },
         { step: `Squeeze lemon juice into water. Add mixture and halved lemons.`, section: PREP_BRINE },
-        { step: `Bring to a simmer.`, section: PREP_BRINE },
+        { step: `Bring to a simmer.`, section: PREP_BRINE, img: chicken2 },
         { step: `Remove from heat and let cool.`, section: PREP_BRINE },
         { step: `Refrigerate until chilled.`, section: PREP_BRINE },
 
         // BRINE CHICKEN for about 24 hours (wait) and 5 minutes (prep)
-        { step: `Place chicken in ziploc bag.`, section: BRINE_CHICKEN },
-        { step: `Place ziploc bag inside a large mixing bowl.`, section: BRINE_CHICKEN },
-        { step: `Carefully pour the chilled brine into the bag.`, section: BRINE_CHICKEN },
-        { step: `Remove as much air from the bag and seal.`, section: BRINE_CHICKEN },
-        { step: `Refrigerate for at least 8 hours (up to 24 hours). Occasionally agitate the bag.`, section: BRINE_CHICKEN },
+        { step: `Place chicken in the brine and cover pot with lid.`, section: BRINE_CHICKEN },
+        { step: `Refrigerate for at least 8 hours (up to 24 hours). Occasionally stir to adjust the brine and chicken.`, section: BRINE_CHICKEN, img: chicken3 },
 
         // PREP CHICKEN for about 1 day (wait) and 12 minutes (prep)
         { step: `Place some paper towels on a baking sheet and place a wire rack on top.`, section: SECTIONS.PREP_CHICKEN },
-        { step: `In the sink, transfer the chicken from the ziploc bag into the mixing bowl without the brine.`, section: SECTIONS.PREP_CHICKEN },
+        { step: `In the sink, transfer the chicken to a colander.`, section: SECTIONS.PREP_CHICKEN, img: chicken4 },
         { step: `Rinse the chicken under cold water.`, section: SECTIONS.PREP_CHICKEN },
         { step: `Pat dry.`, section: SECTIONS.PREP_CHICKEN },
-        { step: `Place chicken on rack.`, section: SECTIONS.PREP_CHICKEN },
+        { step: `Place chicken on rack.`, section: SECTIONS.PREP_CHICKEN, img: chicken5 },
         { step: `Refrigerate uncovered for a day if possible (up to 3 days) to dry out skin.`, section: SECTIONS.PREP_CHICKEN },
 
         // PREP DREDGING STATION for about 5 minutes (prep)
