@@ -30,11 +30,11 @@ module.exports = {
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Carbonara', 
+        {
+            label: 'Carbonara',
             link: 'https://www.recipetineats.com/carbonara/',
             authors: ['Nagi Maehashi'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -51,6 +51,7 @@ module.exports = {
 
         { ...PARSLEY, amount: '', unit: '', additionalDetails: 'chopped', section: SECTIONS.TOPPINGS },
         { ...PARMIGIANO_REGGIANO, amount: '', unit: '', additionalDetails: 'shredded', section: SECTIONS.TOPPINGS },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SAUCE },
     ],
     appliances: [
         STOVE,
@@ -70,7 +71,7 @@ module.exports = {
         { step: `Reserve 1 cup of pasta water to use for the sauce later. Set aside.`, section: SECTIONS.COOK_PASTA },
         { step: `Drain pasta.`, section: SECTIONS.COOK_PASTA },
 
-        { step: `Over medium-high heat, add the guanciale to a large pan.`, section: COOK_GUANCIALE},
+        { step: `Over medium-high heat, add the guanciale to a large pan.`, section: COOK_GUANCIALE },
         { step: `Cook for 3 to 4 minutes.`, section: COOK_GUANCIALE },
         { step: `Add the minced garlic. Mix and cook until the guanciale becomes golden (about 1 to 2 minutes).`, section: COOK_GUANCIALE, img: carbonara3 },
 

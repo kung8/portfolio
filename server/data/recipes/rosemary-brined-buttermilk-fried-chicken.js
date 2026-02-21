@@ -3,6 +3,13 @@ const chicken2 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-2.
 const chicken3 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-3.jpeg';
 const chicken4 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-4.jpeg';
 const chicken5 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-5.jpeg';
+const chicken6 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-6.jpeg';
+const chicken7 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-7.jpeg';
+const chicken8 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-8.jpeg';
+const chicken9 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-9.jpeg';
+const chicken10 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-10.jpeg';
+const chicken11 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-11.jpeg';
+const chicken12 = '../assets/Products/rosemary-brined-buttermilk-fried-chicken-12.jpeg';
 
 const {
     CATEGORIES,
@@ -28,12 +35,11 @@ const BRINE_CHICKEN = 'Brine Chicken';
 const PREP_DREDGING_STATION = 'Prep Dredging Station';
 
 module.exports = {
-    wip: true,
     cardName: 'Buttermilk Fried Chicken',
     name: 'Rosemary-Brined Buttermilk Fried Chicken',
-    img: '',
+    img: chicken11,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.SOUTHERN],
     method: [METHODS.DEEP_FRY],
@@ -117,21 +123,21 @@ module.exports = {
         // PREP DREDGING STATION for about 5 minutes (prep)
         { step: `In a bowl, combine the "${DREDGING_STATION_1}" section ingredients.`, section: PREP_DREDGING_STATION },
         { step: `Divide the mixture evenly between two bowls.`, section: PREP_DREDGING_STATION },
-        { step: `In a third bowl, pour buttermilk.`, section: PREP_DREDGING_STATION },
+        { step: `In a third bowl, pour buttermilk.`, section: PREP_DREDGING_STATION, img: chicken6 },
 
         // DREDGE and DEEP FRY CHICKEN for about 30 minutes (prep) and 12 to 15 minutes per batch (cook)
         { step: `Place some paper towels on a baking sheet and place a wire rack on top.`, section: SECTIONS.DREDGE },
         { step: `Dredge chicken in seasoning. Shake off excess and place on rack.`, section: SECTIONS.DREDGE },
-        { step: `Dredge in buttermilk and then in the second bowl of seasoning. Return to rack.`, section: SECTIONS.DREDGE },
+        { step: `Dredge in buttermilk and then in the second bowl of seasoning. Return to rack.`, section: SECTIONS.DREDGE, img: chicken7 },
 
         { step: `Prepare a dripping station by placing paper towels on another clean baking sheet and place a wire rack on top.`, section: SECTIONS.DEEP_FRY },
         { step: `Heat oil to 350ºF in a deep fryer or pot over a stove.`, section: SECTIONS.DEEP_FRY },
         { step: `Cook chicken in batches, occasionally flipping, until golden brown and cooked through (about 12 to 15 minutes).`, section: SECTIONS.DEEP_FRY },
-        { step: `Transfer the cooked chicken to the dripping station.`, section: SECTIONS.DEEP_FRY },
+        { step: `Transfer the cooked chicken to the dripping station.`, section: SECTIONS.DEEP_FRY, img: chicken8 },
 
         // SERVE for about 5 to 10 minutes (wait) and 2 minutes (prep)
         { step: `Let them rest for 5 to 10 minutes before serving.`, section: SECTIONS.COOL },
-        { step: `Enjoy this topped with lemon zest and toasted sprigs of rosemary.`, section: SECTIONS.SERVE },
+        { step: `Enjoy this topped with lemon zest and toasted sprigs of rosemary.`, section: SECTIONS.SERVE, img: [chicken9, chicken10, chicken12] },
     ],
     store: [
         {
