@@ -28,6 +28,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "BUILD_PATH=build-new npm run build && rm -rf build-old && mv build build-old 2>/dev/null || true && mv build-new build && pm2 restart portfolio",
     "eject": "react-scripts eject",
     "create-recipe": "node server/create-recipe-file.js",
     "create-initialized-recipe": "node server/create-initialized-recipe-file.js",
