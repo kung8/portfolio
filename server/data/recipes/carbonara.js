@@ -3,11 +3,6 @@ const carbonara2 = '../assets/Products/carbonara-2.jpeg';
 const carbonara3 = '../assets/Products/carbonara-3.jpeg';
 const carbonara4 = '../assets/Products/carbonara-4.jpeg';
 const carbonara5 = '../assets/Products/carbonara-5.jpeg';
-const carbonara6 = '../assets/Products/carbonara-6.jpeg';
-const carbonara7 = '../assets/Products/carbonara-7.jpeg';
-const carbonara8 = '../assets/Products/carbonara-8.jpeg';
-const carbonara9 = '../assets/Products/carbonara-9.jpeg';
-const carbonara10 = '../assets/Products/carbonara-10.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, EGG, EGG_YOLK, GARLIC, GUANCIALE, LARGE_PAN, LARGE_POT, MIXING_BOWL, PARMIGIANO_REGGIANO, PARSLEY, SALT, SPAGHETTI_NOODLES, SPATULA, STOVE } = require('./ingredients');
@@ -18,7 +13,7 @@ const COOK_GUANCIALE = 'Cook Guanciale';
 module.exports = {
     cardName: 'Carbonara',
     name: 'Carbonara',
-    img: carbonara9,
+    img: carbonara4,
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -63,8 +58,8 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: `In a mixing bowl, combine eggs and yolk.`, section: SECTIONS.PREP_SAUCE, img: carbonara1 },
-        { step: `Add parmesan and pepper. Mix.`, section: SECTIONS.PREP_SAUCE, img: carbonara2 },
+        { step: `In a mixing bowl, combine eggs and yolk.`, section: SECTIONS.PREP_SAUCE },
+        { step: `Add parmesan and pepper. Mix.`, section: SECTIONS.PREP_SAUCE },
 
         { step: `Over medium-high heat, bring a pot of water to a boil.`, section: SECTIONS.COOK_PASTA },
         { step: `Cook the pasta to al dente (follow the instructions on package).`, section: SECTIONS.COOK_PASTA },
@@ -73,17 +68,18 @@ module.exports = {
 
         { step: `Over medium-high heat, add the guanciale to a large pan.`, section: COOK_GUANCIALE },
         { step: `Cook for 3 to 4 minutes.`, section: COOK_GUANCIALE },
-        { step: `Add the minced garlic. Mix and cook until the guanciale becomes golden (about 1 to 2 minutes).`, section: COOK_GUANCIALE, img: carbonara3 },
+        { step: `Add the minced garlic. Mix and cook until the guanciale becomes golden (about 1 to 2 minutes).`, section: COOK_GUANCIALE, img: carbonara1 },
 
-        { step: `Add pasta to the large pan. Toss to coat the pasta with the fat.`, section: SECTIONS.ASSEMBLE, img: carbonara4 },
-        { step: `Transfer the contents of the large pan into the mixing bowl.`, section: SECTIONS.ASSEMBLE, img: carbonara5 },
-        { step: `Add 1/2 cup of pasta water and stir quickly for 1 minute. The sauce should become creamy and stick to the pasta.`, section: SECTIONS.ASSEMBLE, img: [carbonara6, carbonara7] },
+        { step: `Add pasta to the large pan. Toss to coat the pasta with the fat.`, section: SECTIONS.ASSEMBLE },
+        { step: `Transfer the contents of the large pan into the mixing bowl.`, section: SECTIONS.ASSEMBLE, img: carbonara2 },
+        { step: `Add 1/2 cup of pasta water and stir quickly for 1 minute. The sauce should become creamy and stick to the pasta.`, section: SECTIONS.ASSEMBLE, img: carbonara3 },
 
-        { step: `Enjoy this authentic Italian dish topped with parsley, parmesan and pepper.`, section: SECTIONS.SERVE, img: carbonara8 },
+        { step: `Enjoy this authentic Italian dish topped with parsley, parmesan and pepper.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'If the sauce is too thick, add more pasta water.' },
         { note: 'Guanciale is a type of Italian cured meat made from pork jowl or cheeks. If you cannot find guanciale, pancetta is a good substitute.' },
+        { note: `I keep forgetting that the closest thing that I can find is called cured salted pork at Macey's.` }
     ],
     store: [
         {
@@ -96,8 +92,7 @@ module.exports = {
         {
             method: REHEAT_METHODS.DOUBLE_BOIL,
             instruction: 'Reheat in a double boiler until heated through (about 5 to 10 minutes). Do not reheat in the microwave because of the raw eggs.',
-            img: carbonara10,
-            // TODO: add image logic for reheat
+            img: carbonara5,
         },
     ],
     mealPrep: true,
