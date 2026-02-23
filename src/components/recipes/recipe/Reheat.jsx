@@ -10,12 +10,13 @@ export const Reheat = () => {
         <>
             <h4 className={`recipe-detail-label ${getRecipeFontSizeClass()} reheat-label`}>Reheat Options:</h4>
             <ul className="recipe-reheat">
-                {reheat.map(({ method, instruction }, i) => (
+                {reheat.map(({ img, instruction, method }, i) => (
                     <li key={i}>
                         <p className={`method-type ${getRecipeFontSizeClass()}`}>{method}</p>
                         {instruction && (
                             <p className={`instruction ${getRecipeFontSizeClass()}`}>{instruction}</p>
                         )}
+                        {img && <img key={i} className="reheat-image" src={img} alt='reheat image' />}
                     </li>
                 ))}
             </ul>

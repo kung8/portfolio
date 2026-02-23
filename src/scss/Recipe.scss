@@ -32,6 +32,7 @@
             }
 
             @include mixins.down(theme.$mobile) {
+
                 &.font-size-extra-large,
                 &.font-size-large,
                 &.font-size-medium,
@@ -1005,7 +1006,9 @@
                     }
                 }
 
-                .note-image {
+                .note-image,
+                .reheat-image,
+                .storage-image {
                     margin-top: 12px;
                     width: 350px;
                     margin-bottom: 24px;

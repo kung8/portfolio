@@ -225,7 +225,7 @@ export const EditGroceryListItemModal = ({
                             date: finalItemToEdit.date,
                             mealPlanningDateRange: finalItemToEdit.mealPlanningDateRange,
                             recipeName: finalItemToEdit.recipeName,
-                            type: recipe?.category?.[0] ?? 'Dinner' // TODO: should look up the type based on the recipeName?
+                            type: recipe?.category?.[0] ?? 'Dinner',
                         }, originalItemToEdit);
 
                         const onlyItemNameChanged = originalItemToEdit.name !== finalItemToEdit.name &&

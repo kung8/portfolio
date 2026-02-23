@@ -26,12 +26,13 @@ export const Storage = () => {
         <>
             <h4 className={`recipe-detail-label ${getRecipeFontSizeClass()} storage-label`}>Storage Options:</h4>
             <ul className="recipe-storage">
-                {storage.map(({ duration, location, container, instruction }, i) => (
+                {storage.map(({ duration, container, img, instruction, location }, i) => (
                     <li key={i}>
                         <p className={`storage ${getRecipeFontSizeClass()}`}>{`${storageMap[location]} ${duration.amount} ${handleUnitPluralization(duration.amount, duration.unit)} ${containerMap[container]}.`}</p>
                         {instruction && (
                             <p className={`instruction ${getRecipeFontSizeClass()}`}>{instruction}</p>
                         )}
+                        {img && <img key={i} className="storage-image" src={img} alt='storage image' />}
                     </li>
                 ))}
             </ul>
