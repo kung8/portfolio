@@ -904,3 +904,5 @@ module.exports = recipes;
 // https://www.hersheyland.com/recipes/hersheys-best-brownies.html
 // https://sugarspunrun.com/funnel-cake-recipe/
 // https://munchyesta.com/irish-curry-recipe-with-chips-irish-pub-sauce/
+// https://leitesculinaria.com/7759/recipes-pasteis-de-nata.html
+// https://moribyan.com/beef-lamb-sausage-rolls/
