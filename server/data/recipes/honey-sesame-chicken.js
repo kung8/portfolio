@@ -4,9 +4,6 @@ const sesame3 = '../assets/Products/honey-sesame-chicken-3.jpeg';
 const sesame4 = '../assets/Products/honey-sesame-chicken-4.jpeg';
 const sesame5 = '../assets/Products/honey-sesame-chicken-5.jpeg';
 const sesame6 = '../assets/Products/honey-sesame-chicken-6.jpeg';
-const sesame7 = '../assets/Products/honey-sesame-chicken-7.jpeg';
-const sesame8 = '../assets/Products/honey-sesame-chicken-8.jpeg';
-const sesame9 = '../assets/Products/honey-sesame-chicken-9.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, BROWN_SUGAR, COOKING_THERMOMETER, COOLING_RACK, CORNSTARCH, EGG, GARLIC, GREEN_ONION, HONEY, KETCHUP, LIGHT_SOY_SAUCE, MEDIUM_BOWL, PAPER_TOWELS, PLATE, RICE_WINE_VINEGAR, SALT, SAUCEPAN, SESAME_OIL, SESAME_SEEDS, SPIDER_STRAINER, STOVE, TALL_NARROW_POT, VEGETABLE_OIL } = require('./ingredients');
@@ -19,7 +16,7 @@ const HONEY_SESAME_SAUCE = 'Honey Sesame Sauce';
 module.exports = {
     cardName: 'Honey Sesame Chicken',
     name: 'Honey Sesame Chicken',
-    img: sesame8,
+    img: sesame5,
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -89,11 +86,11 @@ module.exports = {
         { step: `Repeat until all the chicken is cooked.`, section: DEEP_FRY },
         { step: `In a medium bowl, combine all the "Honey Sesame Sauce" ingredients (except the vegetable oil and garlic).`, section: HONEY_SESAME_SAUCE, img: sesame1 },
         { step: `Over medium-high heat, heat the oil in a saucepan.`, section: HONEY_SESAME_SAUCE },
-        { step: `Add the garlic and cook until fragrant (about 30 seconds).`, section: HONEY_SESAME_SAUCE, img: sesame4 },
+        { step: `Add the garlic and cook until fragrant (about 30 seconds).`, section: HONEY_SESAME_SAUCE },
         { step: `Add the sauce mixture and bring to a simmer.`, section: HONEY_SESAME_SAUCE },
-        { step: `Cook until it starts to thicken (about 3 to 4 minutes).`, section: HONEY_SESAME_SAUCE, img: sesame5 },
-        { step: `Add the crispy chicken and stir until everything is coated in the sauce.`, section: HONEY_SESAME_SAUCE, img: [sesame6, sesame7] },
-        { step: `Serve this dish with jasmine rice and top with your favorite toppings.`, section: SECTIONS.SERVE, img: sesame9 },
+        { step: `Cook until it starts to thicken (about 3 to 4 minutes).`, section: HONEY_SESAME_SAUCE },
+        { step: `Add the crispy chicken and stir until everything is coated in the sauce.`, section: HONEY_SESAME_SAUCE, img: sesame4 },
+        { step: `Serve this dish with jasmine rice and top with your favorite toppings.`, section: SECTIONS.SERVE, img: sesame6 },
     ],
     notes: [
         { note: 'Do not try to fry too early or it will take longer to cook and will just soak oil.' },
@@ -107,10 +104,18 @@ module.exports = {
         },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.STIR_FRY,
+            instruction: 'Over medium heat, add a small amount of oil to a pan and reheat the chicken until warmed through.',
+        },
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Heat chicken at 350ºF until warmed through (about 5 to 10 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Not ideal but you can reheat in the microwave. Place the chicken in a microwave-safe dish and cover with a microwave-safe lid or plastic wrap. Heat on high for 1-2 minutes, then check and stir. Continue heating in 30-second intervals until warmed through.',
+        },
     ],
     mealPrep: true,
 };
