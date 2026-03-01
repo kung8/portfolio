@@ -421,6 +421,7 @@ const SECTIONS = {
     SPICES: 'Spices',
     WATER: 'Water',
     WET_INGREDIENTS: 'Wet Ingredients',
+    CONDIMENTS: 'Condiments',
 
     // === DISH TYPE NOUNS (Categories) ===
     DIP: 'Dip',

@@ -250,6 +250,7 @@ const noBakeCookie = require("./recipes/no-bake-cookie");
 const noBakePumpkinPie = require('./recipes/no-bake-pumpkin-pie.js');
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
 const orangeChicken = require("./recipes/orange-chicken");
+const orangeChickenDrumettes = require("./recipes/orange-chicken-drumettes");
 const oyakodon = require("./recipes/oyakodon");
 const padThai = require("./recipes/pad-thai");
 const panFriedChickenThighs = require("./recipes/pan-fried-chicken-thighs");
@@ -618,6 +619,7 @@ const recipes = [
     dinnerRolls,
     garlicButterRiceWithKale,
     bakedChickenBreast,
+    orangeChickenDrumettes,
     cowboyButterChickenWings,
     bbqChickenWings,
     dirtyPsGarlicGingerChickenThighs,
