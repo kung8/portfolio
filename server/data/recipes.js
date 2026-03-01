@@ -915,3 +915,4 @@ module.exports = recipes;
 // https://glebekitchen.com/tonkotsu-ramen-home/
 // https://www.thekitchn.com/pastelitos-recipe-2-23770800
 // https://www.justonecookbook.com/moms-korokke-croquette/
+// https://girlswhoeat.com/recipes/side-dishes/air-fryer-accordion-potatoes/
