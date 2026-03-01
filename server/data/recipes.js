@@ -328,6 +328,7 @@ const stuffedPepperCasserole = require('./recipes/stuffed-pepper-casserole.js');
 const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
 const sushi = require("./recipes/sushi");
+const sushiTacos = require('./recipes/sushi-tacos.js');
 const swedishMeatballs = require("./recipes/swedish-meatballs");
 const sweetAndSavoryRibs = require('./recipes/sweet-and-savory-ribs.js');
 const tacoInABag = require("./recipes/taco-in-a-bag");
@@ -399,6 +400,7 @@ const recipes = [
 
     // JAPANESE
     sushi,
+    sushiTacos,
     tunaOnigiri,
     japaneseChickenKatsu,
     japaneseKatsudon,
@@ -912,3 +914,4 @@ module.exports = recipes;
 // https://moribyan.com/beef-lamb-sausage-rolls/
 // https://glebekitchen.com/tonkotsu-ramen-home/
 // https://www.thekitchn.com/pastelitos-recipe-2-23770800
+// https://www.justonecookbook.com/moms-korokke-croquette/
