@@ -377,6 +377,7 @@ const SECTIONS = {
     RICE: 'Rice',
     BISCUITS: 'Biscuits',
     SANDWICH: 'Sandwich',
+    POTATOES: 'Potatoes',
 
     // Prepared Items
     BATTER: 'Batter',

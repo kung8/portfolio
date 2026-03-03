@@ -213,6 +213,7 @@ const khmerRedCurry = require("./recipes/khmer-red-curry");
 const koloMee = require("./recipes/kolo-mee");
 const koreanBeefBulgogi = require("./recipes/korean-beef-bulgogi");
 const koreanFriedChicken = require("./recipes/korean-fried-chicken");
+const korokkeCroquette = require("./recipes/korokke-croquette");
 const kungPaoChicken = require("./recipes/kung-pao-chicken");
 const lemonBars = require("./recipes/lemon-bars");
 const lemonCapelliniSalad = require("./recipes/lemon-capellini-salad");
@@ -405,6 +406,7 @@ const recipes = [
     japaneseChickenKatsu,
     japaneseKatsudon,
     karaage,
+    korokkeCroquette,
     gyoza,
     japaneseCurry,
     oyakodon,
@@ -914,5 +916,4 @@ module.exports = recipes;
 // https://moribyan.com/beef-lamb-sausage-rolls/
 // https://glebekitchen.com/tonkotsu-ramen-home/
 // https://www.thekitchn.com/pastelitos-recipe-2-23770800
-// https://www.justonecookbook.com/moms-korokke-croquette/
 // https://girlswhoeat.com/recipes/side-dishes/air-fryer-accordion-potatoes/

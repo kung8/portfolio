@@ -474,6 +474,7 @@ const INGREDIENTS = {
             name: 'hummus', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1637949385162-e416fb15b2ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3NDE4fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         ITALIAN_DRESSING: { name: 'italian dressing', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        JAPANESE_SESAME_DRESSING: { name: 'japanese sesame dressing', category: INGREDIENT_CATEGORY.CONDIMENTS },
         KETCHUP: {
             name: 'ketchup', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1582998488406-08750eeb6d7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2Mzk3fA&ixlib=rb-4.0.3&q=80&w=400"
         },
@@ -545,6 +546,7 @@ const INGREDIENTS = {
         TARTAR_SAUCE: { name: 'tartar sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         TERIYAKI_SAUCE: { name: 'teriyaki sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         THOUSAND_ISLAND_DRESSING: { name: 'thousand island dressing', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        TONKATSU_SAUCE: { name: 'tonkatsu sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         WASABI: {
             name: 'wasabi', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1599569958048-2051d3f9a3e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU5MzQ0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
