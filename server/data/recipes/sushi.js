@@ -61,7 +61,7 @@ module.exports = {
         { ...LEMON, amount: 1, unit: '', additionalDetails: 'thinly sliced', section: SECTIONS.FILLING },
         { ...SESAME_SEEDS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
         { ...WASABI, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
-        { ...PONZU_SAUCE, amount: 1, unit: '', additionalDetails: 'sliced', section: SECTIONS.SAUCE },
+        { ...PONZU_SAUCE, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
         { ...LIGHT_SOY_SAUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SAUCE },
     ],
     supplies: [
