@@ -1,4 +1,9 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const drumettes1 = '../assets/Products/orange-chicken-drumettes-1.jpeg';
+const drumettes2 = '../assets/Products/orange-chicken-drumettes-2.jpeg';
+const drumettes3 = '../assets/Products/orange-chicken-drumettes-3.jpeg';
+const drumettes4 = '../assets/Products/orange-chicken-drumettes-4.jpeg';
+const drumettes5 = '../assets/Products/orange-chicken-drumettes-5.jpeg';
+const drumettes6 = '../assets/Products/orange-chicken-drumettes-6.jpeg';
 
 const {
     CATEGORIES,
@@ -20,12 +25,11 @@ const COOK_CHICKEN_IN_JUICE = 'Cook Chicken in Juice';
 const COAT_CHICKEN = 'Coat Chicken';
 
 module.exports = {
-    wip: true,
     cardName: 'Orange Chicken Drumettes',
     name: 'Orange Chicken Drumettes',
-    img: '',
+    img: drumettes6,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH, CATEGORIES.APPETIZER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.SIMMER, METHODS.PAN_FRY],
@@ -33,7 +37,7 @@ module.exports = {
     type: [TYPES.PROTEIN, TYPES.MAIN_COURSE, TYPES.SIDE_DISH],
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
-    cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
         {
@@ -66,17 +70,17 @@ module.exports = {
         { ...SMALL_BOWL, amount: 2 },
     ],
     directions: [
-        { step: `In a large wok, add orange juice and chicken in a single layer.`, section: COOK_CHICKEN_IN_JUICE },
-        { step: `Over medium-high heat, cook the chicken cook until the orange juice reduces completely.`, section: COOK_CHICKEN_IN_JUICE },
+        { step: `In a large wok, add orange juice and chicken in a single layer.`, section: COOK_CHICKEN_IN_JUICE, img: drumettes1 },
+        { step: `Over medium-high heat, cook the chicken cook until the orange juice reduces completely (about 10 to 15 minutes).`, section: COOK_CHICKEN_IN_JUICE, img: drumettes2 },
 
         { step: `In a small bowl, combine the "${SECTIONS.SPICES}" section ingredients.`, section: SECTIONS.SIMMER },
-        { step: `Add spices. Mix until coated.`, section: SECTIONS.SIMMER },
-        { step: `Cover. Let it simmer for about 15 minutes.`, section: SECTIONS.SIMMER },
+        { step: `Add spices. Mix until coated.`, section: SECTIONS.SIMMER, img: drumettes3 },
+        { step: `Cover. Let it simmer for about 15 minutes.`, section: SECTIONS.SIMMER, img: drumettes4 },
 
         { step: `In a small bowl, combine the "${SECTIONS.CONDIMENTS}" section ingredients.`, section: COAT_CHICKEN },
         { step: `Add condiments. Mix until coated.`, section: COAT_CHICKEN },
 
-        { step: `Optionally broil these for a few minutes to crisp up the skin.`, section: SECTIONS.BROIL },
+        { step: `Optionally broil these for a few minutes to crisp up the skin.`, section: SECTIONS.BROIL, img: drumettes5 },
 
         { step: `Enjoy these delicious chicken wings!`, section: SECTIONS.SERVE },
     ],
