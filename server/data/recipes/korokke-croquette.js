@@ -79,7 +79,7 @@ module.exports = {
         { ...BOWL, amount: 3 },
     ],
     directions: [
-        { step: 'Wash, peel and cut the potatoes into 4 equal pieces.', section: SECTIONS.COOK_POTATOES },
+        { step: 'Wash, peel and cut each potatoes into 4 equal pieces (for larger potatoes cut into 16 parts).', section: SECTIONS.COOK_POTATOES },
         { step: 'Place potatoes in a large pot and cover with cold water. Cover pot with a lid slightly ajar.', section: SECTIONS.COOK_POTATOES },
         { step: 'Turn heat to medium-high. Bring to a boil (about 20 minutes).', section: SECTIONS.COOK_POTATOES, img: croquette1 },
         { step: 'Reduce to medium and let it simmer until potatoes are tender (about 15 to 20 minutes).', section: SECTIONS.COOK_POTATOES },
