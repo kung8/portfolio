@@ -1,4 +1,12 @@
-// const example = '../assets/Products/example.jpeg';
+const croquette1 = '../assets/Products/korokke-croquette-1.jpeg';
+const croquette2 = '../assets/Products/korokke-croquette-2.jpeg';
+const croquette3 = '../assets/Products/korokke-croquette-3.jpeg';
+const croquette4 = '../assets/Products/korokke-croquette-4.jpeg';
+const croquette5 = '../assets/Products/korokke-croquette-5.jpeg';
+const croquette6 = '../assets/Products/korokke-croquette-6.jpeg';
+const croquette7 = '../assets/Products/korokke-croquette-7.jpeg';
+const croquette8 = '../assets/Products/korokke-croquette-8.jpeg';
+// const croquette9 = '../assets/Products/korokke-croquette-9.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BLACK_PEPPER, BOWL, CABBAGE, COLANDER, DEEP_FRYER, EGG, FRYING_PAN, GROUND_BEEF, JAPANESE_SESAME_DRESSING, KOSHER_SALT, LARGE_POT, MASHER, MIXING_BOWL, PANKO_BREADCRUMBS, RUSSET_POTATO, STOVE, TONKATSU_SAUCE, UNSALTED_BUTTER, VEGETABLE_OIL, YELLOW_ONION } = require('./ingredients');
@@ -22,7 +30,7 @@ module.exports = {
     method: [METHODS.BAKE],
     protein: [PROTEIN.BEEF],
     type: [TYPES.MAIN_COURSE],
-    yields: { amount: 16, unit: YIELD_UNITS.SERVING },
+    yields: { amount: 12, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 45, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 15, unit: TIME_UNITS.MINUTE },
@@ -73,28 +81,28 @@ module.exports = {
     directions: [
         { step: 'Wash, peel and cut the potatoes into 4 equal pieces.', section: SECTIONS.COOK_POTATOES },
         { step: 'Place potatoes in a large pot and cover with cold water. Cover pot with a lid slightly ajar.', section: SECTIONS.COOK_POTATOES },
-        { step: 'Turn heat to medium. Bring to a boil (about 15 minutes).', section: SECTIONS.COOK_POTATOES },
-        { step: 'Reduce to medium-low and let it simmer until potatoes are tender (about 15 to 20 minutes).', section: SECTIONS.COOK_POTATOES },
+        { step: 'Turn heat to medium-high. Bring to a boil (about 20 minutes).', section: SECTIONS.COOK_POTATOES, img: croquette1 },
+        { step: 'Reduce to medium and let it simmer until potatoes are tender (about 15 to 20 minutes).', section: SECTIONS.COOK_POTATOES },
 
         { step: 'Over medium heat, heat a frying pan.', section: COOK_ONION_AND_BEEF },
         { step: 'Add vegetable oil and onion. Spread and let it cook undisturbed for a few minutes.', section: COOK_ONION_AND_BEEF },
-        { step: 'Saute until translucent and tender (about 12 to 15 minutes).', section: COOK_ONION_AND_BEEF },
-        { step: 'Add beef and break up with a spatula.', section: COOK_ONION_AND_BEEF },
-        { step: `Add salt and pepper. Cook until no longer pink.`, section: COOK_ONION_AND_BEEF },
+        { step: 'Saute until translucent and tender (about 12 to 15 minutes).', section: COOK_ONION_AND_BEEF, img: croquette2 },
+        { step: 'Add beef and break up with a spatula.', section: COOK_ONION_AND_BEEF, img: croquette3 },
+        { step: `Add salt and pepper. Cook until no longer pink.`, section: COOK_ONION_AND_BEEF, img: croquette4 },
         { step: 'Set aside.', section: COOK_ONION_AND_BEEF },
 
-        { step: 'Drain potatoes. Return to pot.', section: MASH_POTATOES },
+        { step: 'Drain potatoes. Return to pot.', section: MASH_POTATOES, img: croquette5 },
         { step: 'Over low heat, stir continuously to help the water evaporate (about 1 to 2 minutes).', section: MASH_POTATOES },
         { step: 'Transfer potatoes to a mixing bowl.', section: MASH_POTATOES },
         { step: 'Mash potatoes while leaving some chunks.', section: MASH_POTATOES },
-        { step: 'Add butter, salt, and pepper to the mashed potatoes.', section: MASH_POTATOES },
+        { step: 'Add butter, salt, and pepper to the mashed potatoes.', section: MASH_POTATOES, img: croquette6 },
 
         { step: 'Drain the cooked beef and onions.', section: SECTIONS.ASSEMBLE },
-        { step: 'Add beef and onions to the mashed potatoes.', section: SECTIONS.ASSEMBLE },
+        { step: 'Add beef and onions to the mashed potatoes.', section: SECTIONS.ASSEMBLE, img: croquette7 },
         { step: 'Gently mix.', section: SECTIONS.ASSEMBLE },
 
         { step: 'Form the mixture into 3 inch long patties.', section: PREP_PATTIES },
-        { step: 'Place patties on a tray.', section: PREP_PATTIES },
+        { step: 'Place patties on a tray.', section: PREP_PATTIES, img: croquette8 },
         { step: 'Let cool to room temperature.', section: PREP_PATTIES },
         { step: 'Place patties in the fridge (about 30 minutes).', section: PREP_PATTIES },
 
