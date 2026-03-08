@@ -6,7 +6,9 @@ const croquette5 = '../assets/Products/korokke-croquette-5.jpeg';
 const croquette6 = '../assets/Products/korokke-croquette-6.jpeg';
 const croquette7 = '../assets/Products/korokke-croquette-7.jpeg';
 const croquette8 = '../assets/Products/korokke-croquette-8.jpeg';
-// const croquette9 = '../assets/Products/korokke-croquette-9.jpeg';
+const croquette9 = '../assets/Products/korokke-croquette-9.jpeg';
+const croquette10 = '../assets/Products/korokke-croquette-10.jpeg';
+const croquette11 = '../assets/Products/korokke-croquette-11.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BLACK_PEPPER, BOWL, CABBAGE, COLANDER, DEEP_FRYER, EGG, FRYING_PAN, GROUND_BEEF, JAPANESE_SESAME_DRESSING, KOSHER_SALT, LARGE_POT, MASHER, MIXING_BOWL, PANKO_BREADCRUMBS, RUSSET_POTATO, STOVE, TONKATSU_SAUCE, UNSALTED_BUTTER, VEGETABLE_OIL, YELLOW_ONION } = require('./ingredients');
@@ -19,12 +21,11 @@ const MASH_POTATOES = 'Mash Potatoes';
 const PREP_PATTIES = 'Prep Patties';
 
 module.exports = {
-    wip: true,
     cardName: 'Korokke Croquette',
     name: 'Korokke Croquette',
-    img: '',
+    img: croquette11,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.JAPANESE, GENRES.FRENCH],
     method: [METHODS.BAKE],
@@ -110,12 +111,12 @@ module.exports = {
         { step: 'Dredge in flour, shake off excess.', section: SECTIONS.DREDGE },
         { step: 'Dip in egg.', section: SECTIONS.DREDGE },
         { step: 'Coat with panko. Press gently to adhere. Reshape as needed.', section: SECTIONS.DREDGE },
-        { step: 'Place on a tray.', section: SECTIONS.DREDGE },
+        { step: 'Place on a tray.', section: SECTIONS.DREDGE, img: croquette9 },
 
         { step: 'Line a baking sheet with paper towels and place a wire rack on top.', section: SECTIONS.DEEP_FRY },
         { step: 'Heat oil to 350ºF in a deep fryer or in a medium pot over medium heat (about 2 inches of oil).', section: SECTIONS.DEEP_FRY },
         { step: 'Deep fry until golden brown (about 2 to 3 minutes).', section: SECTIONS.DEEP_FRY },
-        { step: 'Transfer cooked croquettes to the drip station.', section: SECTIONS.DEEP_FRY },
+        { step: 'Transfer cooked croquettes to the drip station.', section: SECTIONS.DEEP_FRY, img: croquette10 },
 
         { step: 'Enjoy these with tonkatsu sauce and a side of shredded cabbage topped with Japanese sesame dressing.', section: SECTIONS.SERVE },
     ],
