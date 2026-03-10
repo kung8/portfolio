@@ -1,4 +1,7 @@
 const sushi1 = '../assets/Products/sushi-1.jpeg';
+const sushi2 = '../assets/Products/sushi-2.jpeg';
+const sushi3 = '../assets/Products/sushi-3.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     AVOCADO,
@@ -26,7 +29,7 @@ const {
 module.exports = {
     cardName: 'Sushi',
     name: 'Sushi',
-    img: sushi1,
+    img: sushi2,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -81,7 +84,7 @@ module.exports = {
         { step: `Fold the sushi mat over the newly placed interior ingredients to secure the roll. Then pull back the mat and roll up some of it so that it will not get caught inside the roll.`, section: SECTIONS.MAIN },
         { step: `Continue rolling up the sushi roll, and pulling back the mat as needed.`, section: SECTIONS.MAIN },
         { step: `Place the finished sushi rolls on a plate and repeat these steps until all the sushi rolls are completed.`, section: SECTIONS.MAIN },
-        { step: `Enjoy this American-adapted Japanese dish with some delicious, spicy wasabi. This type of sushi is called a California Roll.`, section: SECTIONS.MAIN },
+        { step: `Enjoy this American-adapted Japanese dish with some delicious, spicy wasabi. This type of sushi is called a California Roll.`, section: SECTIONS.MAIN, img: [sushi1, sushi3] },
     ],
     store: null,
     reheat: null,
