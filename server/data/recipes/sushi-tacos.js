@@ -1,4 +1,11 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const tacos1 = '../assets/Products/sushi-tacos-1.jpeg';
+const tacos2 = '../assets/Products/sushi-tacos-2.jpeg';
+const tacos3 = '../assets/Products/sushi-tacos-3.jpeg';
+const tacos4 = '../assets/Products/sushi-tacos-4.jpeg';
+const tacos5 = '../assets/Products/sushi-tacos-5.jpeg';
+const tacos6 = '../assets/Products/sushi-tacos-6.jpeg';
+const tacos7 = '../assets/Products/sushi-tacos-7.jpeg';
+const tacos8 = '../assets/Products/sushi-tacos-8.jpeg';
 
 const {
     CATEGORIES,
@@ -20,10 +27,9 @@ const TACO_SHELL = 'Taco Shell';
 const MAKE_TACO_SHELL = 'Make Taco Shell';
 
 module.exports = {
-    wip: true,
     cardName: 'Sushi Tacos',
     name: 'Sushi Tacos',
-    img: '',
+    img: tacos8,
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -56,14 +62,16 @@ module.exports = {
     ],
     directions: [
         { step: `Cook the sushi rice according to package instructions.`, section: SECTIONS.COOK_RICE },
-        { step: `Cut the seaweed into round shapes.`, section: MAKE_TACO_SHELL },
-        { step: `Press the rice onto the seaweed rounds.`, section: MAKE_TACO_SHELL },
+        { step: `Cut the seaweed into round shapes.`, section: MAKE_TACO_SHELL, img: tacos1 },
+        { step: `Press the rice onto the seaweed rounds.`, section: MAKE_TACO_SHELL, img: tacos2 },
         { step: `Add rice vinegar.`, section: MAKE_TACO_SHELL },
         { step: `Let rice cool slightly.`, section: MAKE_TACO_SHELL },
-        { step: `Shape the sheets into taco shells and place them in the air fryer really close.`, section: MAKE_TACO_SHELL },
-        { step: `Cook at 400ºF until crispy (about 5 minutes).`, section: MAKE_TACO_SHELL },
-        { step: `Fill the taco shell with your favorite sushi toppings.`, section: SECTIONS.ASSEMBLE },
-        { step: `Serve immediately and enjoy!`, section: SECTIONS.SERVE },
+        { step: `Shape the sheets into taco shells and place them in the air fryer really close.`, section: MAKE_TACO_SHELL, img: [tacos3, tacos4] },
+        { step: `Cook at 400ºF until crispy (about 5 minutes).`, section: MAKE_TACO_SHELL, img: tacos5 },
+        { step: `Fill the taco shell with your favorite sushi toppings and enjoy!`, section: SECTIONS.SERVE, img: [tacos6, tacos7] },
+    ],
+    notes: [
+        { note: 'I enjoyed them but the work of shaping the seaweed and forming them into a shell was not worth the end result. It is a fun idea but I would rather just roll up sushi.' }
     ],
     store: [
         {
