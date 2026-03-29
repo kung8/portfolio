@@ -10,11 +10,9 @@ const naan9 = '../assets/Products/naan-9.jpeg';
 const naan10 = '../assets/Products/naan-10.jpeg';
 const naan11 = '../assets/Products/naan-11.jpeg';
 const naan12 = '../assets/Products/naan-12.jpeg';
-const naan13 = '../assets/Products/naan-13.jpeg';
-const naan14 = '../assets/Products/naan-14.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BASTING_BRUSH, CILANTRO, DUTCH_OVEN_POT, MIXING_BOWL, OLIVE_OIL, ROLLING_PIN, SALT, STOVE, UNSALTED_BUTTER, WATER, WHITE_SUGAR, YEAST, YOGURT } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BASTING_BRUSH, CILANTRO, FRYING_PAN, MIXING_BOWL, OLIVE_OIL, ROLLING_PIN, SALT, STOVE, UNSALTED_BUTTER, WATER, WHITE_SUGAR, YEAST, YOGURT } = require('./ingredients');
 
 const ACTIVATE_YEAST = 'Activate Yeast';
 const MAKE_DOUGH = 'Make Dough';
@@ -23,7 +21,7 @@ const COOK_NAAN = 'Cook Naan';
 module.exports = {
     cardName: 'Naan',
     name: 'Naan',
-    img: naan14,
+    img: naan12,
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.APPETIZER],
@@ -59,7 +57,7 @@ module.exports = {
     ],
     supplies: [
         MIXING_BOWL,
-        DUTCH_OVEN_POT,
+        FRYING_PAN,
         BASTING_BRUSH,
         ROLLING_PIN,
     ],
@@ -78,22 +76,14 @@ module.exports = {
 
         { step: `Divide the dough into 8 pieces.`, section: COOK_NAAN, img: naan9 },
         { step: `Roll out the dough into 8 inch circles.`, section: COOK_NAAN, img: naan10 },
-        { step: `Over medium heat, heat a dutch oven pan.`, section: COOK_NAAN },
+        { step: `Over medium heat, heat a frying pan.`, section: COOK_NAAN },
         { step: `Brush one side of dough with water.`, section: COOK_NAAN },
-        { step: `Place the dough in the hot pan, wet side down. Cover pan with a lid. Cook until dough puffs and there are some charred spots (about 1 minute).`, section: COOK_NAAN, img: naan11 },
-        { step: `Flip and cook the other side uncovered (about 1 minute).`, section: COOK_NAAN, img: naan12 },
+        { step: `Place the dough in the hot pan, wet side down. Cook until dough puffs and there are some charred spots (about 1 minute).`, section: COOK_NAAN, img: naan11 },
+        { step: `Flip and cook the other side (about 1 minute).`, section: COOK_NAAN },
         { step: `Remove from pan and brush each cooked naan with melted butter and sprinkle salt and cilantro.`, section: COOK_NAAN },
         { step: `Repeat until all the other naan is cooked.`, section: COOK_NAAN },
 
-        { step: `Enjoy these delicious breads with your favorite curries.`, section: SECTIONS.SERVE, img: naan13 },
-    ],
-    notes: [
-        { note: 'Covering the pan with a lid immediately will help the naan puff up and be lighter in texture.' },
-        { note: 'The original recipe suggests cooking it over medium-high heat, but it was charring way too quickly.' },
-        { note: 'I missed the 8 inch circles for the size of the naan so I think this recipe actually only makes 4 naan.' },
-        { note: 'Be careful over charring the naan, but the texture of the naan was soft and on point.' },
-        { note: 'The larger recommended naan size might fix the issue of charring actually since it would be quicker to add and remove one at a time instead of three or four 😛.' },
-        { note: 'Even after it was charred a bit, it was still delicious.' },
+        { step: `Enjoy these delicious breads with your favorite curries.`, section: SECTIONS.SERVE },
     ],
     store: [
         {
