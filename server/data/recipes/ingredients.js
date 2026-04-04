@@ -574,6 +574,7 @@ const INGREDIENTS = {
         BREAD_PAN: { name: 'bread pan', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         CAKE_PAN: { name: 'cake pan', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         CAN_OPENER: { name: 'can opener', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
+        CANDY_THERMOMETER: { name: 'candy thermometer', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         CASSEROLE_DISH: { name: 'casserole dish', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         CHEESECLOTH: { name: 'cheesecloth', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         CHOPSTICKS: { name: 'chopstick', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },

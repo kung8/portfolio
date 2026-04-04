@@ -261,6 +261,7 @@ const parfait = require("./recipes/parfait");
 const pastaAlLimone = require("./recipes/pasta-al-limone");
 const pastaPomodoro = require("./recipes/pasta-pomodoro");
 const pastaSalad = require('./recipes/pasta-salad.js');
+const pasteisDeNata = require("./recipes/pasteis-de-nata");
 const peachCobbler = require("./recipes/peach-cobbler");
 const peanutBrittle = require("./recipes/peanut-brittle");
 const peanutButterCookies = require("./recipes/peanut-butter-cookies");
@@ -595,6 +596,7 @@ const recipes = [
 
     // SOUTH AFRICAN / PORTUGUESE
     piriPiriChickenBowl,
+    pasteisDeNata,
 
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
     marryMeChicken,
@@ -914,7 +916,6 @@ module.exports = recipes;
 // https://www.hersheyland.com/recipes/hersheys-best-brownies.html
 // https://sugarspunrun.com/funnel-cake-recipe/
 // https://munchyesta.com/irish-curry-recipe-with-chips-irish-pub-sauce/
-// https://leitesculinaria.com/7759/recipes-pasteis-de-nata.html
 // https://moribyan.com/beef-lamb-sausage-rolls/
 // https://glebekitchen.com/tonkotsu-ramen-home/
 // https://www.thekitchn.com/pastelitos-recipe-2-23770800
