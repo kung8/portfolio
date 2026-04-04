@@ -20,7 +20,7 @@ module.exports = {
     cookTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Chicken Piccata', link: 'https://www.saltandlavender.com/chicken-piccata/', authors: ['Unknown'], finder: 'Kevin Ung' }
+        { label: 'Chicken Piccata', link: 'https://www.saltandlavender.com/chicken-piccata/', authors: ['Natasha Bull'], finder: 'Kevin Ung' }
     ],
     ingredients: [
         { ...CHICKEN_BREAST, amount: 2, unit: '', additionalDetails: 'halved horizontally', section: SECTIONS.CHICKEN },
