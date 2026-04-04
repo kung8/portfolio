@@ -12,7 +12,7 @@ module.exports = {
     name: 'Kalua Pig',
     img: kalua4,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.HAWAIIAN],
     method: [METHODS.SLOW_COOK],

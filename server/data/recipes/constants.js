@@ -238,6 +238,7 @@ const SECTIONS = {
     COAT: 'Coat',
     COOL: 'Cool',
     DECORATE: 'Decorate',
+    DEGLAZE: 'Deglaze',
     DRAIN: 'Drain',
     FLIP: 'Flip',
     FREEZE: 'Freeze',

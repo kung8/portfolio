@@ -91,6 +91,7 @@ const chickenMcNuggets = require("./recipes/chicken-mcnuggets");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
 const chickenPaella = require("./recipes/chicken-paella"); // TODO: finish adding recipe
 const chickenParmesan = require("./recipes/chicken-parmesan");
+const chickenPiccata = require("./recipes/chicken-piccata");
 const chickenPotPie = require("./recipes/chicken-pot-pie");
 const chickenPotPieSoup = require('./recipes/chicken-pot-pie-soup.js');
 const chickenQuesadilla = require("./recipes/chicken-quesadilla");
@@ -523,6 +524,7 @@ const recipes = [
     shrimpScampi,
     potatoGnocchi,
     ravioli,
+    chickenPiccata,
     marryMeChickenAndGnocchiSoup,
     italianTurkeyMeatballSpinachTortelliniSoup,
     lemonChickenOrzoSoup,
