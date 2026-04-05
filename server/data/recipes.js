@@ -198,6 +198,7 @@ const indianChickenTikkaMasala = require("./recipes/indian-chicken-tikka-masala"
 const indianDosa = require('./recipes/indian-dosa.js'); // TODO: finish adding recipe
 const indonesianAyamGoreng = require('./recipes/indonesian-ayam-goreng.js'); // TODO: finish adding recipe
 const indonesianAyamPenyet = require('./recipes/indonesian-ayam-penyet.js');
+const irishCurryChips = require('./recipes/irish-curry-chips.js');
 const irishPotatoBoxty = require("./recipes/irish-potato-boxty");
 const italianLasagna = require("./recipes/italian-lasagna");
 const italianTurkeyMeatballSpinachTortelliniSoup = require("./recipes/italian-turkey-meatball-spinach-tortellini-soup");
@@ -580,6 +581,7 @@ const recipes = [
     englishScones,
     chickenPotPie,
     chickenPotPieSoup,
+    irishCurryChips,
     irishPotatoBoxty,
     stickyToffeePudding,
 
@@ -897,7 +899,6 @@ module.exports = recipes;
 
 // TODO: add https://www.hersheyland.com/recipes/hersheys-best-brownies.html
 // TODO: add https://sugarspunrun.com/funnel-cake-recipe/
-// TODO: add https://munchyesta.com/irish-curry-recipe-with-chips-irish-pub-sauce/
 // TODO: add https://moribyan.com/beef-lamb-sausage-rolls/
 // TODO: add https://glebekitchen.com/tonkotsu-ramen-home/
 // TODO: add https://girlswhoeat.com/recipes/side-dishes/air-fryer-accordion-potatoes/
