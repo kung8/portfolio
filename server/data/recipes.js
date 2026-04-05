@@ -177,6 +177,7 @@ const greekPasteli = require('./recipes/greek-pasteli.js');
 const greenBeanAlmondine = require("./recipes/green-bean-almondine");
 const greenBeanCasserole = require("./recipes/green-bean-casserole");
 const grilledCheeseSandwich = require("./recipes/grilled-cheese-sandwich");
+const groundBeefPastelitos = require('./recipes/ground-beef-pastelitos.js');
 const groundBeefRamen = require('./recipes/ground-beef-ramen.js');
 const guacamole = require("./recipes/guacamole");
 const gyoza = require('./recipes/gyoza.js');
@@ -319,6 +320,7 @@ const sloppyJoes = require("./recipes/sloppy-joes");
 const smoothie = require("./recipes/smoothie");
 const smores = require("./recipes/smores");
 const snickerdoodle = require("./recipes/snickerdoodle-cookies");
+const sofrito = require("./recipes/sofrito");
 const sourdoughBread = require("./recipes/sourdough-bread");
 const sourdoughStarter = require("./recipes/sourdough-starter");
 const southwestSalad = require("./recipes/southwest-salad"); // TODO: find recipe
@@ -503,6 +505,10 @@ const recipes = [
     mexicanChickenBake,
     mexicanMeatballSoup,
     guacamole,
+
+    // PUERTO RICAN
+    groundBeefPastelitos,
+    sofrito,
 
     ////////////////////////////////////////////////////////////////////// EUROPEAN //////////////////////////////////////////////////////////////////////  
     // ITALIAN
@@ -822,13 +828,6 @@ module.exports = recipes;
 // TODO: add timer clock per step to indicate how long each step takes
 // TODO: Add bulk actions logic?
 // TODO: make click on figure and sections not check the step
-
-
-
-
-
-
-
 
 /*
     TODO: Ceasar Salad Sandwich: 

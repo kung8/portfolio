@@ -351,6 +351,7 @@ const INGREDIENTS = {
         DRY_BEAN: { name: 'dry bean', category: INGREDIENT_CATEGORY.CANNED },
         DRY_NAVY_BEAN: { name: 'dry navy bean', category: INGREDIENT_CATEGORY.CANNED },
         DUMPLING_SOUP: { name: 'dumpling soup', category: INGREDIENT_CATEGORY.CANNED },
+        EMPANADA_DOUGH_DISCS: { name: 'empanada dough discs', category: INGREDIENT_CATEGORY.CANNED },
         ENCHILADA_SOUP: { name: 'enchilada soup', category: INGREDIENT_CATEGORY.CANNED },
         EVAPORATED_MILK: { name: 'evaporated milk', category: INGREDIENT_CATEGORY.CANNED },
         FIRE_ROASTED_DICED_TOMATOES: {
@@ -2013,6 +2014,7 @@ const INGREDIENTS = {
         SALT: {
             name: 'salt', category: INGREDIENT_CATEGORY.SPICES, img: "https://plus.unsplash.com/premium_photo-1672349888046-361807de476f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU5NDk5fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        SAZON_SEASONING_WITH_ANNATTO: { name: 'sazon seasoning with annatto', category: INGREDIENT_CATEGORY.SPICES },
         SEA_SALT: { name: 'sea salt', category: INGREDIENT_CATEGORY.SPICES },
         SEASONING_SALT: { name: 'seasoning salt', category: INGREDIENT_CATEGORY.SPICES },
         SESAME_SEEDS: {
