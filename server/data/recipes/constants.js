@@ -497,6 +497,7 @@ const TYPES = {
     DIP: 'Dip',
     DRINK: 'Drink',
     FINGER_FOOD: 'Finger Food',
+    FRIES: 'Fries',
     FRUIT: 'Fruit',
     FUDGE: 'Fudge',
     ICE_CREAM: 'Ice Cream',

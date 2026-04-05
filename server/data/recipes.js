@@ -237,6 +237,7 @@ const mangoStickyRice = require("./recipes/mango-sticky-rice");
 const marryMeChicken = require("./recipes/marry-me-chicken");
 const marryMeChickenAndGnocchiSoup = require('./recipes/marry-me-chicken-and-gnocchi-soup.js');
 const mashPotatoes = require("./recipes/mash-potatoes");
+const meatballNoodleSoup = require('./recipes/meatball-noodle-soup.js');
 const meatballSub = require("./recipes/meatball-sub");
 const mediterraneanFlatbread = require('./recipes/mediterranean-flatbread.js'); // TODO: finish adding recipe
 const mexicanChickenBake = require("./recipes/mexican-chicken-bake"); // TODO: find recipe
@@ -453,6 +454,7 @@ const recipes = [
     chineseBokChoyChicken,
     cabbageStirFry,
     chineseBao,
+    meatballNoodleSoup,
     dumplingSoup,
     springRolls,
     crabRangoon,
@@ -809,7 +811,6 @@ module.exports = recipes;
 // TODO: https://cookingwithkarli.com/crave-rockstar-cookie-recipe/?fbclid=IwY2xjawNagudleHRuA2FlbQIxMQABHqLXZW8qtuz8axoFXldWq9mzV45reZ3YqqH5-KVdq3_rwiJ27fszAEok4vpu_aem_LDtydRXK6zvnQRPyuUW4fw
 // TODO: https://www.allrecipes.com/lemon-ricotta-muffins-recipe-11826885
 // TODO: https://sweetcsdesigns.com/cabbage-and-noodles/
-// TODO: https://www.tastyeverafter.com/asian-meatball-noodle-soup/
 // TODO: https://www.madewithlau.com/recipes/char-siu-chinese-bbq-pork
 // TODO: https://www.thespruceeats.com/how-make-paletas-or-mexican-style-ice-pops-4129109
 // TODO: https://www.lecremedelacrumb.com/easy-beef-empanadas/
@@ -832,7 +833,7 @@ module.exports = recipes;
 // TODO: make click on figure and sections not check the step
 
 /*
-    TODO: Ceasar Salad Sandwich: 
+    TODO: Ceasar Salad Sandwich:
     This sandwich is divine. If you love a good Caesar salad will love this crispy creamy sandwich.
     This is how you'll make it.
     You will need 3 good chicken breasts, when pounded thinly you'll end up with 6 good pieces.
@@ -862,27 +863,27 @@ module.exports = recipes;
     Toast the bread in a hot skillet and assemble the sandwich as shown.
 */
 
-/* 
+/*
     TODO: Upside Down Apple Tart
     By Home Hacks & Easy Snacks
     Website: https://www.facebook.com/watch/?v=1876068763306540
-    Yields: 6 mini tarts | Prep time: 10 minutes | Cook time: 15-20 minutes 
-    
+    Yields: 6 mini tarts | Prep time: 10 minutes | Cook time: 15-20 minutes
+
     Ingredients:
     1 sheet frozen puff pastry, thawed
     1 large apple (Granny Smith or Honeycrisp recommended), thinly sliced
     6 tbsp honey or 2-4 tbsp brown sugar and butter
     Dash of cinnamon (optional)
     1 large egg, beaten with 1 tbsp water (for egg wash)
-    Powdered sugar or vanilla ice cream for serving (optional) 
-    
+    Powdered sugar or vanilla ice cream for serving (optional)
+
     Instructions:
     Prep: Preheat oven to 400°F (200°C) and line a baking sheet with parchment paper.
     Caramel Base: Drizzle 1 tablespoon of honey (or a sprinkle of brown sugar and a small pat of butter) into six separate spots on the parchment paper. Spread slightly into a rectangle or circle shape.
     Add Apples: Arrange 4-6 thinly sliced apple pieces over each honey spot, overlapping them slightly.
     Cover with Pastry: Cut the thawed puff pastry sheet into 6 equal rectangles or squares. Place one piece of puff pastry over each apple arrangement, gently pressing down the edges to seal the apples and honey underneath.
     Bake: Brush the tops of the pastry with the egg wash for a golden finish. Bake for 15–20 minutes, or until the pastry is puffed and golden brown.
-    Flip & Serve: Let the tarts cool for about 5 minutes, then carefully flip them over onto a serving plate to reveal the caramelized apples. Dust with powdered sugar and serve warm with a scoop of ice cream, if desired. 
+    Flip & Serve: Let the tarts cool for about 5 minutes, then carefully flip them over onto a serving plate to reveal the caramelized apples. Dust with powdered sugar and serve warm with a scoop of ice cream, if desired.
 */
 
 /*
@@ -894,7 +895,7 @@ module.exports = recipes;
 /*
     TODO: Muffin Tin Cinnamon Apple Pie
     By Twisted
-    website: https://www.facebook.com/watch/?v=597676636305410 
+    website: https://www.facebook.com/watch/?v=597676636305410
 */
 
 // TODO: add https://www.hersheyland.com/recipes/hersheys-best-brownies.html
