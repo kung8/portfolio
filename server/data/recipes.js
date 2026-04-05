@@ -803,8 +803,6 @@ const recipes = [
 module.exports = recipes;
 
 // TODO: Add Frisee Salad with goat cheese and pine nuts, wild rice, roasted asparagus, salmon en croute recipe (what Monica makes for Rachel's date in Friends)
-// TODO: replace the chicken wing recipe
-// TODO: double check what other recipes can be replaced with better ones from websites
 
 // TODO: https://cookingwithkarli.com/crave-rockstar-cookie-recipe/?fbclid=IwY2xjawNagudleHRuA2FlbQIxMQABHqLXZW8qtuz8axoFXldWq9mzV45reZ3YqqH5-KVdq3_rwiJ27fszAEok4vpu_aem_LDtydRXK6zvnQRPyuUW4fw
 // TODO: https://www.allrecipes.com/lemon-ricotta-muffins-recipe-11826885
