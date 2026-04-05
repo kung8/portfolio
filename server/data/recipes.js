@@ -917,5 +917,4 @@ module.exports = recipes;
 // https://munchyesta.com/irish-curry-recipe-with-chips-irish-pub-sauce/
 // https://moribyan.com/beef-lamb-sausage-rolls/
 // https://glebekitchen.com/tonkotsu-ramen-home/
-// https://www.thekitchn.com/pastelitos-recipe-2-23770800
 // https://girlswhoeat.com/recipes/side-dishes/air-fryer-accordion-potatoes/
