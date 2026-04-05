@@ -541,6 +541,7 @@ const YIELD_UNITS = {
     BAR: { s: 'bar', p: 'bars' },
     CUP: { s: 'cup', p: 'cups' },
     DOZEN: { s: 'dozen', p: 'dozens' },
+    EACH: { s: 'each', p: 'each' },
     LOAF: { s: 'loaf', p: 'loaves' },
     OUNCE: { s: 'ounce', p: 'ounces' },
     PINT: { s: 'pint', p: 'pints' },

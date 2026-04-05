@@ -60,6 +60,7 @@ const brownies = require("./recipes/brownies");
 const brownies2 = require("./recipes/brownies-2");
 const buffaloChickenCheeseBalls = require('./recipes/buffalo-chicken-cheese-balls.js'); // TODO: finish adding recipe
 const bulgurPilaf = require("./recipes/bulgur-pilaf");
+const butterCookies = require("./recipes/butter-cookies");
 const butteredCorn = require("./recipes/buttered-corn");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const butternutSquashSoup = require("./recipes/butternut-squash-soup");
@@ -246,6 +247,7 @@ const mochi = require("./recipes/mochi");
 const monteCristoSandwich = require("./recipes/monte-cristo-sandwich");
 const mozzarellaSticks = require('./recipes/mozzarella-sticks.js');
 const muddyBuddies = require("./recipes/muddy-buddies");
+const muffysScrumptiousSmackeroodles = require('./recipes/muffys-scrumptious-smackeroodles.js');
 const naan = require("./recipes/naan");
 const naan2 = require('./recipes/naan-2.js'); // TODO: finish adding recipe
 const noBakeCannoliDelight = require("./recipes/no-bake-cannoli-delight");
@@ -758,6 +760,8 @@ const recipes = [
     brownedButterChocolateChipCookies,
     sugarCookies,
     gingerbreadCookies,
+    butterCookies,
+    muffysScrumptiousSmackeroodles,
     blondie,
     brickleBars,
     brownies,
@@ -893,23 +897,6 @@ module.exports = recipes;
     TODO: Muffin Tin Cinnamon Apple Pie
     By Twisted
     website: https://www.facebook.com/watch/?v=597676636305410 
-*/
-
-
-/*
-    TODO: Muffy's Scrumptuous Snackaroodles
-    Butter cookies (TODO: look for a simple butter cookie recipe)
-    threw in a strawberry (sliced)
-    banana (sliced)
-    peanuts
-    chocolate chips
-    oatmeal
-    raisins
-
-
-    Make balls
-    flatten slightly
-    bake at 350 for 10-12 minutes
 */
 
 // https://www.hersheyland.com/recipes/hersheys-best-brownies.html
