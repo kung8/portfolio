@@ -324,6 +324,7 @@ const singaporeanChickenRice = require("./recipes/singaporean-chicken-rice");
 const sloppyJoes = require("./recipes/sloppy-joes");
 const smoothie = require("./recipes/smoothie");
 const smores = require("./recipes/smores");
+const smoresCookieCup = require('./recipes/smores-cookie-cup.js');
 const snickerdoodle = require("./recipes/snickerdoodle-cookies");
 const sofrito = require("./recipes/sofrito");
 const sourdoughBread = require("./recipes/sourdough-bread");
@@ -768,6 +769,7 @@ const recipes = [
     gingerbreadCookies,
     butterCookies,
     muffysScrumptiousSmackeroodles,
+    smoresCookieCup,
     blondie,
     brickleBars,
     brownies,
@@ -886,12 +888,6 @@ module.exports = recipes;
     Cover with Pastry: Cut the thawed puff pastry sheet into 6 equal rectangles or squares. Place one piece of puff pastry over each apple arrangement, gently pressing down the edges to seal the apples and honey underneath.
     Bake: Brush the tops of the pastry with the egg wash for a golden finish. Bake for 15–20 minutes, or until the pastry is puffed and golden brown.
     Flip & Serve: Let the tarts cool for about 5 minutes, then carefully flip them over onto a serving plate to reveal the caramelized apples. Dust with powdered sugar and serve warm with a scoop of ice cream, if desired.
-*/
-
-/*
-    TODO: Smores Cookie Cup
-    By Jen Glufling
-    Website: https://www.facebook.com/watch/?v=722477680835461
 */
 
 /*

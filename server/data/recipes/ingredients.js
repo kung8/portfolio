@@ -87,6 +87,7 @@ const INGREDIENTS = {
         },
         MILK_CHOCOLATE_CHIPS: { name: 'milk chocolate chips', category: INGREDIENT_CATEGORY.BAKING },
         MINI_CHOCOLATE_CHIPS: { name: 'mini chocolate chips', category: INGREDIENT_CATEGORY.BAKING },
+        MINI_GRAHAM_CRACKER_PIE_CRUST: { name: 'mini graham cracker pie crust', category: INGREDIENT_CATEGORY.BAKING },
         MOLASSES: { name: 'molasses', category: INGREDIENT_CATEGORY.BAKING },
         PECANS: {
             name: 'pecans', category: INGREDIENT_CATEGORY.BAKING, img: "https://images.unsplash.com/photo-1515544699701-86e5f26b66d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU3MzY2fA&ixlib=rb-4.0.3&q=80&w=400"
