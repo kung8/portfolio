@@ -900,3 +900,6 @@ module.exports = recipes;
 // TODO: add https://moribyan.com/beef-lamb-sausage-rolls/
 // TODO: add https://glebekitchen.com/tonkotsu-ramen-home/
 // TODO: add https://girlswhoeat.com/recipes/side-dishes/air-fryer-accordion-potatoes/
+// TODO: add https://www.thekitchn.com/cannoli-squares-recipe-23774116
+// TODO: add https://yejiskitchenstories.com/strawberry-tanghulu/
+// TODO: add https://theforkedspoon.com/pho-recipe/
