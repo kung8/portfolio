@@ -161,6 +161,7 @@ const frenchOnionSoupGratinee = require("./recipes/french-onion-soup-gratinee");
 const frenchToast = require("./recipes/french-toast");
 const friedChickenWithHotHoney = require('./recipes/fried-chicken-with-hot-honey');
 const frozenMudPie = require("./recipes/frozen-mud-pie");
+const funnelCake = require('./recipes/funnel-cake.js');
 const gaiLanWithOysterSauce = require('./recipes/gai-lan-with-oyster-sauce.js');
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
 const garlicButter = require("./recipes/garlic-butter");
@@ -632,6 +633,7 @@ const recipes = [
     bakedMacaroniAndCheese,
     rosemaryBrinedButtermilkFriedChicken,
     friedChickenWithHotHoney,
+    funnelCake,
     creamyCornCasserole,
     coleslaw,
     bakedBeans,
@@ -899,7 +901,6 @@ module.exports = recipes;
 */
 
 // TODO: add https://www.hersheyland.com/recipes/hersheys-best-brownies.html
-// TODO: add https://sugarspunrun.com/funnel-cake-recipe/
 // TODO: add https://moribyan.com/beef-lamb-sausage-rolls/
 // TODO: add https://glebekitchen.com/tonkotsu-ramen-home/
 // TODO: add https://girlswhoeat.com/recipes/side-dishes/air-fryer-accordion-potatoes/

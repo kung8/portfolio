@@ -614,6 +614,7 @@ const INGREDIENTS = {
         LARGE_BOWL: { name: 'large bowl', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         LARGE_PAN: { name: 'large pan', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         LARGE_POT: { name: 'large pot', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
+        LIQUID_MEASURING_CUP: { name: 'liquid measuring cup', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         MASHER: { name: 'masher', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         MASON_JAR_LID: { name: 'mason jar lid', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         MEASURING_CUPS: { name: 'measuring cups', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
