@@ -1,4 +1,8 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const soup1 = '../assets/Products/asian-meatball-noodle-soup-1.jpeg';
+const soup2 = '../assets/Products/asian-meatball-noodle-soup-2.jpeg';
+const soup3 = '../assets/Products/asian-meatball-noodle-soup-3.jpeg';
+const soup4 = '../assets/Products/asian-meatball-noodle-soup-4.jpeg';
+const soup5 = '../assets/Products/asian-meatball-noodle-soup-5.jpeg';
 
 const {
     CATEGORIES,
@@ -20,12 +24,11 @@ const MEATBALL_SECTION = 'Meatball';
 const PREP_MEATBALLS = 'Prep Meatballs';
 
 module.exports = {
-    wip: true,
     cardName: 'Meatball Noodle Soup',
     name: 'Meatball Noodle Soup',
-    img: '',
+    img: soup5,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     method: [METHODS.SIMMER],
@@ -34,7 +37,7 @@ module.exports = {
     yields: { amount: 4, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
-    waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         {
             label: 'Meatball Noodle Soup',
@@ -44,10 +47,10 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...GROUND_PORK, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: MEATBALL_SECTION },
+        { ...GROUND_PORK, amount: 1.5, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: MEATBALL_SECTION },
         { ...NAPA_CABBAGE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'shredded', section: MEATBALL_SECTION },
-        { ...GREEN_ONION, amount: 2, unit: '', additionalDetails: 'minced', section: MEATBALL_SECTION },
-        { ...GINGER, amount: 2, unit: '', additionalDetails: '', section: MEATBALL_SECTION },
+        { ...GREEN_ONION, amount: 1, unit: '', additionalDetails: 'minced', section: MEATBALL_SECTION },
+        { ...GINGER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: MEATBALL_SECTION },
         { ...LIGHT_SOY_SAUCE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: MEATBALL_SECTION },
         { ...SHAOXING_WINE, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: MEATBALL_SECTION },
         { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'minced', section: MEATBALL_SECTION },
@@ -74,20 +77,23 @@ module.exports = {
         LARGE_POT,
     ],
     directions: [
-        { step: `In a mixing bowl, combine the "${MEATBALL_SECTION}" section ingredients.`, section: PREP_MEATBALLS },
+        { step: `In a mixing bowl, combine the "${MEATBALL_SECTION}" section ingredients.`, section: PREP_MEATBALLS, img: soup1 },
         { step: `Cover and chill for 30 minutes.`, section: PREP_MEATBALLS },
 
         { step: `Over medium heat, add broth to a large pot. Bring to a simmer.`, section: SECTIONS.COOK_SOUP },
         { step: `Reduce to low.`, section: SECTIONS.COOK_SOUP },
-        { step: `Form 1.5 inch meatballs.`, section: SECTIONS.COOK_SOUP },
-        { step: `Carefully drop meatballs into the broth. Cook for 3 to 4 minutes.`, section: SECTIONS.COOK_SOUP },
+        { step: `Form 1.5 inch meatballs.`, section: SECTIONS.COOK_SOUP, img: soup2 },
+        { step: `Carefully drop meatballs into the broth. Cook for 3 to 4 minutes.`, section: SECTIONS.COOK_SOUP, img: soup3 },
         { step: `Add cabbage. Cook until everything is cooked (about 10 to 15 minutes).`, section: SECTIONS.COOK_SOUP },
-        { step: `Add soy sauce.`, section: SECTIONS.COOK_SOUP },
+        { step: `Add soy sauce.`, section: SECTIONS.COOK_SOUP, img: soup4 },
 
         { step: `Cook desired amount of noodles per packaging instructions.`, section: SECTIONS.COOK_NOODLES },
 
         { step: `Place cooked noodles in a bowl and ladle soup over.`, section: SECTIONS.SERVE },
         { step: `Enjoy topped with your favorite toppings.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `I used a whole napa cabbage for this recipe with 1.5 pounds of ground pork (with all the same measurements for everything else). It made about 25 meatballs. I still used 8 cups of broth which I was worried would not be enough liquid but it worked out perfectly. If you prefer more broth, you can probably add 2 more cups of broth.` },
     ],
     store: [
         {
