@@ -1,4 +1,10 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const chips1 = '../assets/Products/irish-curry-chips-1.jpeg';
+const chips2 = '../assets/Products/irish-curry-chips-2.jpeg';
+const chips3 = '../assets/Products/irish-curry-chips-3.jpeg';
+const chips4 = '../assets/Products/irish-curry-chips-4.jpeg';
+const chips5 = '../assets/Products/irish-curry-chips-5.jpeg';
+const chips6 = '../assets/Products/irish-curry-chips-6.jpeg';
+const chips7 = '../assets/Products/irish-curry-chips-7.jpeg';
 
 const {
     CATEGORIES,
@@ -19,12 +25,11 @@ const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BLACK_PEPPER, COLANDER, CORIANDER, CUMI
 const FLOUR_AND_SPICES = 'Flour and Spices';
 
 module.exports = {
-    wip: true,
     cardName: 'Irish Curry Chips',
     name: 'Irish Curry Chips',
-    img: '',
+    img: chips7,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
     genre: [GENRES.IRISH],
     method: [METHODS.PARBOIL, METHODS.BAKE, METHODS.SIMMER],
@@ -77,25 +82,25 @@ module.exports = {
         { step: `Cut potatoes into thick wedges (about 8 wedges per potato).`, section: SECTIONS.PREP_POTATOES },
 
         { step: `In a large pot, combine cold water, salt and potatoes.`, section: SECTIONS.PARBOIL },
-        { step: `Bring water to a boil and cook until potatoes are slightly tender (about 4 to 5 minutes).`, section: SECTIONS.PARBOIL },
+        { step: `Bring water to a boil and cook until potatoes are slightly tender (about 7 to 10 minutes).`, section: SECTIONS.PARBOIL, img: chips1 },
         { step: `Drain in a colander. Keep in the colander to let it continue to steam dry for a few minutes.`, section: SECTIONS.PARBOIL },
 
         { step: `Transfer potatoes to a mixing bowl.`, section: SECTIONS.SEASON },
         { step: `Drizzle potatoes with oil and add the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.SEASON },
-        { step: `Toss until the potatoes are coated.`, section: SECTIONS.SEASON },
+        { step: `Toss until the potatoes are coated.`, section: SECTIONS.SEASON, img: chips2 },
 
         { step: `Line baking sheets with parchment paper.`, section: SECTIONS.BAKE },
         { step: `Arrange wedges in a single layer with some space.`, section: SECTIONS.BAKE },
         { step: `Bake until wedges are golden brown and crispy (about 30 to 35 minutes). Flip them halfway.`, section: SECTIONS.BAKE },
-        { step: `Let them cool slightly.`, section: SECTIONS.BAKE },
+        { step: `Let them cool slightly.`, section: SECTIONS.BAKE, img: chips6 },
 
         { step: `Over medium heat, add butter to a saucepan.`, section: SECTIONS.COOK_CURRY },
         { step: `Add onions and garlic. Saute until softened (about 2 to 3 minutes).`, section: SECTIONS.COOK_CURRY },
-        { step: `Add the "${FLOUR_AND_SPICES}" section ingredients. Stir to form a paste. Toast the spices (about 1 to 2 minutes).`, section: SECTIONS.COOK_CURRY },
+        { step: `Add the "${FLOUR_AND_SPICES}" section ingredients. Stir to form a paste. Toast the spices (about 1 to 2 minutes).`, section: SECTIONS.COOK_CURRY, img: chips3 },
         { step: `Slowly add the broth while stirring constantly to avoid clumping. Bring to a boil.`, section: SECTIONS.COOK_CURRY },
         { step: `Reduce to low heat.`, section: SECTIONS.COOK_CURRY },
-        { step: `Let it simmer until your desired thickness (about 10 to 15 minutes). Stir occasionally.`, section: SECTIONS.COOK_CURRY },
-        { step: `Stir in cream. Bring to a simmer (about 2 to 3 minutes).`, section: SECTIONS.COOK_CURRY },
+        { step: `Let it simmer until your desired thickness (about 10 to 15 minutes). Stir occasionally.`, section: SECTIONS.COOK_CURRY, img: chips4 },
+        { step: `Stir in cream. Bring to a simmer (about 2 to 3 minutes).`, section: SECTIONS.COOK_CURRY, img: chips5 },
         { step: `Taste and adjust with salt and red pepper flakes.`, section: SECTIONS.COOK_CURRY },
 
         { step: `Serve the fries hot topped with the curry.`, section: SECTIONS.SERVE },
