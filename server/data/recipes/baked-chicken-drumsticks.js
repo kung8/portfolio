@@ -34,7 +34,7 @@ module.exports = {
     type: [TYPES.RICE],
     yields: { amount: 5, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 5, unit: TIME_UNITS.MINUTE },
-    cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 60, unit: TIME_UNITS.MINUTE },
     websites: [
         {
             label: 'Baked Chicken',
@@ -71,7 +71,7 @@ module.exports = {
 
         { step: `With a basting brush, coat the top of the chicken.`, section: SECTIONS.BASTE, img: drumstick3 },
 
-        { step: `Bake until chicken is cooked (about 40 to 50 minutes).`, section: SECTIONS.BAKE, img: drumstick4 },
+        { step: `Bake until chicken is cooked (about 50 to 60 minutes).`, section: SECTIONS.BAKE, img: drumstick4 },
 
         { step: `Transfer out of pan to avoid the oil gelatinizing around the chicken.`, section: SECTIONS.TRANSFER, img: drumstick5 },
 
