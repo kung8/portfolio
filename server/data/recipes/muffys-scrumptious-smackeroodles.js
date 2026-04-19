@@ -50,7 +50,7 @@ module.exports = {
 
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FLOUR_SECTION },
 
-        { ...STRAWBERRY, amount: 6, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'sliced', section: MUFFY_SECTION_INGREDIENTS },
+        { ...STRAWBERRY, amount: 6, unit: '', additionalDetails: 'sliced', section: MUFFY_SECTION_INGREDIENTS },
         { ...BANANA, amount: 1, unit: '', additionalDetails: 'sliced', section: MUFFY_SECTION_INGREDIENTS },
         { ...UNSALTED_PEANUT, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MUFFY_SECTION_INGREDIENTS },
         { ...SEMI_SWEET_CHOCOLATE_CHIPS, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: MUFFY_SECTION_INGREDIENTS },
