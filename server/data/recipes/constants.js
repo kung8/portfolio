@@ -447,6 +447,8 @@ const SECTIONS = {
     DIPPING_SAUCE: 'Dipping sauce',
     DREDGING_STATION: 'Dredging Station',
     WRAPPER: 'Wrapper',
+
+    SERVING: 'Serving',
 };
 
 const STORAGE_CONTAINER = {

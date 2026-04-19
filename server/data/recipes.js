@@ -10,6 +10,7 @@ const appleTart = require("./recipes/apple-tart");
 const appleTurnovers = require('./recipes/apple-turnovers.js');
 const bakedBeans = require("./recipes/baked-beans");
 const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
+const bakedBrie = require('./recipes/baked-brie.js');
 const bakedChickenBreast = require('./recipes/baked-chicken-breast.js');
 const bakedChickenDrumsticks = require("./recipes/baked-chicken-drumsticks");
 const bakedLemonChicken = require("./recipes/baked-lemon-chicken");
@@ -700,6 +701,7 @@ const recipes = [
     pigsInABlanket,
     chickenStuffedCrescentRolls,
     southwestSalad,
+    bakedBrie,
     cheeseballs,
     garlicBreadsticks,
     cheeseburgerSpringRolls,
