@@ -1,4 +1,6 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const sofrito1 = '../assets/Products/sofrito-1.jpeg';
+const sofrito2 = '../assets/Products/sofrito-2.jpeg';
+const sofrito3 = '../assets/Products/sofrito-3.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLENDER, CILANTRO, GARLIC, GREEN_BELL_PEPPER, ROMA_TOMATO, YELLOW_ONION } = require('./ingredients');
@@ -6,10 +8,9 @@ const { BLENDER, CILANTRO, GARLIC, GREEN_BELL_PEPPER, ROMA_TOMATO, YELLOW_ONION 
 const SOFRITO_SECTION = 'Sofrito';
 
 module.exports = {
-    wip: true,
     cardName: 'Sofrito',
     name: 'Sofrito',
-    img: '',
+    img: sofrito3,
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER],
@@ -37,9 +38,9 @@ module.exports = {
         BLENDER,
     ],
     directions: [
-        { step: `In a blender, blend the tomatoes.`, section: SECTIONS.BLEND },
+        { step: `In a blender, blend the tomatoes.`, section: SECTIONS.BLEND, img: sofrito1 },
         { step: `Add onion and garlic. Blend.`, section: SECTIONS.BLEND },
-        { step: `Add bell peppers and cilantro. Blend.`, section: SECTIONS.BLEND },
+        { step: `Add bell peppers and cilantro. Blend.`, section: SECTIONS.BLEND, img: sofrito2 },
         { step: `Enjoy this latin vegetable base for other dishes.`, section: SECTIONS.SERVE },
     ],
     store: [

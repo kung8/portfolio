@@ -1,4 +1,7 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const pastelitos1 = '../assets/Products/ground-beef-pastelitos-1.jpeg';
+const pastelitos2 = '../assets/Products/ground-beef-pastelitos-2.jpeg';
+const pastelitos3 = '../assets/Products/ground-beef-pastelitos-3.jpeg';
+const pastelitos4 = '../assets/Products/ground-beef-pastelitos-4.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { PRODUCE } = require('./ingredient-categories');
@@ -6,12 +9,11 @@ const { AMERICAN_CHEESE, BAKING_SHEET, COLANDER, COOLING_RACK, EMPANADA_DOUGH_DI
 const sofrito = require('./sofrito');
 
 module.exports = {
-    wip: true,
     cardName: 'Ground Beef Pastelitos',
     name: 'Ground Beef Pastelitos',
-    img: '',
+    img: pastelitos4,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.PUERTO_RICAN],
     method: [METHODS.PAN_FRY, METHODS.FRY],
@@ -54,16 +56,16 @@ module.exports = {
     directions: [
         { step: `Over medium heat, heat oil in a pan.`, section: SECTIONS.COOK_FILLING },
         { step: `Add sofrito and sazón seasoning. Cook until fragrant (about 1 minute).`, section: SECTIONS.COOK_FILLING },
-        { step: `Add ground beef and salt. Cook and break into pieces until cooked through and browned (about 5 to 7 minutes).`, section: SECTIONS.COOK_FILLING },
+        { step: `Add ground beef and salt. Cook and break into pieces until cooked through and browned (about 5 to 7 minutes).`, section: SECTIONS.COOK_FILLING, img: pastelitos1 },
         { step: `Drain in a colander.`, section: SECTIONS.COOK_FILLING },
         { step: `Transfer filling to a mixing bowl.`, section: SECTIONS.COOK_FILLING },
         { step: `Taste and add salt as needed.`, section: SECTIONS.COOK_FILLING },
 
         { step: `Wipe the pan with a paper towel.`, section: SECTIONS.ASSEMBLE },
         { step: `Place an empanada dough disc on the counter.`, section: SECTIONS.ASSEMBLE },
-        { step: `Place half a slice of cheese and 2 tablespoons of filling on the same side of the disc.`, section: SECTIONS.ASSEMBLE },
+        { step: `Place half a slice of cheese and 2 tablespoons of filling on the same side of the disc.`, section: SECTIONS.ASSEMBLE, img: pastelitos2 },
         { step: `Fold the dough over to make a semicircle and pinch closed. Add a little water to the edge to help seal if it is not sticking.`, section: SECTIONS.ASSEMBLE },
-        { step: `Use a fork to crimp the edges and avoid poking holes in the dough.`, section: SECTIONS.ASSEMBLE },
+        { step: `Use a fork to crimp the edges and avoid poking holes in the dough.`, section: SECTIONS.ASSEMBLE, img: pastelitos3 },
         { step: `Repeat.`, section: SECTIONS.ASSEMBLE },
 
         { step: `Over medium heat, heat the frying oil in the pan until 350ºF.`, section: SECTIONS.FRY },

@@ -1,4 +1,6 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const brie1 = '../assets/Products/baked-brie-1.jpeg';
+const brie2 = '../assets/Products/baked-brie-2.jpeg';
+const brie3 = '../assets/Products/baked-brie-3.jpeg';
 
 const {
     CATEGORIES,
@@ -19,12 +21,11 @@ const { BRIE_CHEESE, BROWN_SUGAR, GRANNY_SMITH_APPLE, KOSHER_SALT, LEMON_JUICE, 
 const PREP_APPLES = 'Prep Apples';
 
 module.exports = {
-    wip: true,
     cardName: 'Baked Brie',
     name: 'Baked Brie',
-    img: '',
+    img: brie3,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK, CATEGORIES.DIP],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -44,12 +45,12 @@ module.exports = {
     ],
     ingredients: [
         { ...BRIE_CHEESE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'wheel', section: SECTIONS.CHEESE },
-        
+
         { ...SALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'room temperature', section: SECTIONS.DIP },
         { ...BROWN_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DIP },
         { ...KOSHER_SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.DIP },
         { ...WATER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.DIP },
-        
+
         { ...PECANS, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DIP },
 
         { ...GRANNY_SMITH_APPLE, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.SERVING },
@@ -67,13 +68,13 @@ module.exports = {
 
         { step: `Place brie in the center of the pie pan.`, section: SECTIONS.PREP_DIP },
         { step: `In a stand mixer, combine all the "${SECTIONS.DIP}" section ingredients except the pecans. Mix until it becomes like paste.`, section: SECTIONS.PREP_DIP },
-        { step: `Add pecans. Mix until combined.`, section: SECTIONS.PREP_DIP },
-        { step: `Spread this over the brie (about 1 inch thick).`, section: SECTIONS.PREP_DIP },
+        { step: `Add pecans. Mix until combined.`, section: SECTIONS.PREP_DIP, img: brie1 },
+        { step: `Spread this over the brie (about 1 inch thick).`, section: SECTIONS.PREP_DIP, img: brie2 },
         { step: `Bake until the edges look like it is going to spill (about 10 to 15 minutes).`, section: SECTIONS.PREP_DIP },
-        
+
         { step: `Wash and core the apples. Slice them into wedges.`, section: PREP_APPLES },
         { step: `In a mixing bowl, toss apple wedges in lemon juice to prevent browning.`, section: PREP_APPLES },
-        
+
         { step: `Serve together and enjoy!`, section: SECTIONS.SERVE },
     ],
     store: [
