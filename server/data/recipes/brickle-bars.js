@@ -3,14 +3,6 @@ const bars2 = '../assets/Products/brickle-bars-2.jpeg';
 const bars3 = '../assets/Products/brickle-bars-3.jpeg';
 const bars4 = '../assets/Products/brickle-bars-4.jpeg';
 const bars5 = '../assets/Products/brickle-bars-5.jpeg';
-const bars6 = '../assets/Products/brickle-bars-6.jpeg';
-const bars7 = '../assets/Products/brickle-bars-7.jpeg';
-const bars8 = '../assets/Products/brickle-bars-8.jpeg';
-const bars9 = '../assets/Products/brickle-bars-9.jpeg';
-const bars10 = '../assets/Products/brickle-bars-10.jpeg';
-const bars11 = '../assets/Products/brickle-bars-11.jpeg';
-const bars12 = '../assets/Products/brickle-bars-12.jpeg';
-const bars13 = '../assets/Products/brickle-bars-13.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_PAN, BAKING_POWDER, BROWN_SUGAR, EGG, ENGLISH_TOFFEE_BITS, MEDIUM_BOWL, MIXING_BOWL, OVEN, SALT, SPATULA, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
@@ -22,7 +14,7 @@ const WET_INGREDIENTS = 'Wet Ingredients';
 module.exports = {
     cardName: 'Brickle Bar',
     name: 'Brickle Bar',
-    img: bars13,
+    img: bars5,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -63,16 +55,16 @@ module.exports = {
     ],
     directions: [
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
-        { step: `Grease a baking pan with a butter.`, section: SECTIONS.PREP_PAN, img: bars1 },
+        { step: `Grease a baking pan with a butter.`, section: SECTIONS.PREP_PAN },
 
-        { step: `In a medium bowl, combine together the dry ingredients.`, section: DRY_INGREDIENTS, img: bars2 },
-        { step: `In a separate mixing bowl, combine butter and the sugars.`, section: WET_INGREDIENTS, img: [bars3, bars4] },
-        { step: `Add eggs and vanilla. Mix.`, section: WET_INGREDIENTS, img: [bars5, bars6] },
-        { step: `Mix the dry and wet ingredients.`, section: SECTIONS.MAIN, img: [bars7, bars8] },
-        { step: `Add the toffee bits.`, section: SECTIONS.MAIN, img: [bars9, bars10] },
-        { step: `Scrape the batter into the baking pan.`, section: SECTIONS.MAIN, img: bars11 },
+        { step: `In a medium bowl, combine together the dry ingredients.`, section: DRY_INGREDIENTS },
+        { step: `In a separate mixing bowl, combine butter and the sugars.`, section: WET_INGREDIENTS },
+        { step: `Add eggs and vanilla. Mix.`, section: WET_INGREDIENTS },
+        { step: `Mix the dry and wet ingredients.`, section: SECTIONS.MAIN, img: bars1 },
+        { step: `Add the toffee bits.`, section: SECTIONS.MAIN, img: bars2 },
+        { step: `Scrape the batter into the baking pan.`, section: SECTIONS.MAIN, img: bars3 },
         { step: `Bake for 30 minutes.`, section: SECTIONS.MAIN },
-        { step: `Let it cool for a few minutes.`, section: SECTIONS.MAIN, img: bars12 },
+        { step: `Let it cool for a few minutes.`, section: SECTIONS.MAIN, img: bars4 },
         { step: `Cut these into bars and enjoy!`, section: SECTIONS.SERVE },
     ],
     store: [
