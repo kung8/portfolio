@@ -1,9 +1,6 @@
 const breast1 = '../assets/Products/baked-chicken-breast-1.jpeg';
 const breast2 = '../assets/Products/baked-chicken-breast-2.jpeg';
 const breast3 = '../assets/Products/baked-chicken-breast-3.jpeg';
-const breast4 = '../assets/Products/baked-chicken-breast-4.jpeg';
-const breast5 = '../assets/Products/baked-chicken-breast-5.jpeg';
-const breast6 = '../assets/Products/baked-chicken-breast-6.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BLACK_PEPPER, BROWN_SUGAR, CHICKEN_BREAST, GARLIC_POWDER, MEAT_MALLET, OLIVE_OIL, OREGANO, OVEN, PAPER_TOWELS, PAPRIKA, SALT } = require('./ingredients');
@@ -11,7 +8,7 @@ const { BAKING_PAN, BLACK_PEPPER, BROWN_SUGAR, CHICKEN_BREAST, GARLIC_POWDER, ME
 module.exports = {
     cardName: 'Baked Chicken Breast',
     name: 'Baked Chicken Breast',
-    img: breast6,
+    img: breast3,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -52,18 +49,18 @@ module.exports = {
     directions: [
         { step: `Preheat the oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: `Combine the "${SECTIONS.SEASONINGS}" section ingredients in a small bowl.`, section: SECTIONS.PREP_CHICKEN, img: breast2 },
+        { step: `Combine the "${SECTIONS.SEASONINGS}" section ingredients in a small bowl.`, section: SECTIONS.PREP_CHICKEN },
         { step: `Cut the chicken breast in half horizontally.`, section: SECTIONS.PREP_CHICKEN },
         { step: `Pound the chicken to 1/2 inch with the meat mallet.`, section: SECTIONS.PREP_CHICKEN },
         { step: `Dry the chicken with paper towels.`, section: SECTIONS.PREP_CHICKEN },
         { step: `Place chicken inside the baking pan.`, section: SECTIONS.PREP_CHICKEN },
-        { step: `Drizzle half of the olive oil. Sprinkle the seasoning over the chicken.`, section: SECTIONS.PREP_CHICKEN, img: breast1 },
-        { step: `Flip. Repeat the olive oil and seasoning on the other side.`, section: SECTIONS.PREP_CHICKEN, img: breast3 },
+        { step: `Drizzle half of the olive oil. Sprinkle the seasoning over the chicken.`, section: SECTIONS.PREP_CHICKEN },
+        { step: `Flip. Repeat the olive oil and seasoning on the other side.`, section: SECTIONS.PREP_CHICKEN, img: breast1 },
 
         { step: `Bake until chicken is golden brown (about 18 minutes).`, section: SECTIONS.BAKE },
         
-        { step: `Remove from the oven and transfer to serving plates immediately.`, section: SECTIONS.COOL, img: breast4 },
-        { step: `Let the chicken rest for 3 to 5 minutes before serving.`, section: SECTIONS.COOL, img: breast5 },
+        { step: `Remove from the oven and transfer to serving plates immediately.`, section: SECTIONS.COOL, img: breast2 },
+        { step: `Let the chicken rest for 3 to 5 minutes before serving.`, section: SECTIONS.COOL },
 
         { step: `Enjoy these juicy chicken slices.`, section: SECTIONS.SERVE },
     ],
