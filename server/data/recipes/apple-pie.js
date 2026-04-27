@@ -4,12 +4,6 @@ const pie3 = '../assets/Products/apple-pie-3.jpeg';
 const pie4 = '../assets/Products/apple-pie-4.jpeg';
 const pie5 = '../assets/Products/apple-pie-5.jpeg';
 const pie6 = '../assets/Products/apple-pie-6.jpeg';
-const pie7 = '../assets/Products/apple-pie-7.jpeg';
-const pie8 = '../assets/Products/apple-pie-8.jpeg';
-const pie9 = '../assets/Products/apple-pie-9.jpeg';
-const pie10 = '../assets/Products/apple-pie-10.jpeg';
-const pie11 = '../assets/Products/apple-pie-11.jpeg';
-const pie12 = '../assets/Products/apple-pie-12.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BROWN_SUGAR, DOUBLE_CRUST_PIE_CRUST, GRANNY_SMITH_APPLE, OVEN, PIE_PAN, SAUCEPAN, STOVE, UNSALTED_BUTTER, WATER, WHITE_SUGAR } = require('./ingredients');
@@ -20,7 +14,7 @@ const PREP_APPLES = 'Prep Apples';
 module.exports = {
     cardName: 'Apple Pie',
     name: 'Apple Pie',
-    img: pie12,
+    img: pie5,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -56,29 +50,29 @@ module.exports = {
         PIE_PAN,
     ],
     directions: [
-        { step: `Peel and cut the apple into thin slices.`, section: PREP_APPLES, img: pie1 },
+        { step: `Peel and cut the apple into thin slices.`, section: PREP_APPLES },
 
         { step: `Preheat the oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },
-        { step: `Over medium heat, melt butter in a saucepan.`, section: SECTIONS.PREP_FILLING, img: [pie2, pie3] },
+        { step: `Over medium heat, melt butter in a saucepan.`, section: SECTIONS.PREP_FILLING },
         { step: `Add flour and mix until it becomes a paste and fragrant (about 1 to 2 minutes).`, section: SECTIONS.PREP_FILLING },
-        { step: `Add sugars and water. Bring to a boil.`, section: SECTIONS.PREP_FILLING, img: pie4 },
+        { step: `Add sugars and water. Bring to a boil.`, section: SECTIONS.PREP_FILLING },
         { step: `Lower to low heat. Simmer (about 3 to 5 minutes).`, section: SECTIONS.PREP_FILLING },
-        { step: `Remove from heat.`, section: SECTIONS.PREP_FILLING, img: pie5 },
+        { step: `Remove from heat.`, section: SECTIONS.PREP_FILLING, img: pie1 },
 
-        { step: `Position one pastry crust in a pie pan.`, section: SECTIONS.PREP_CRUST, img: pie6 },
+        { step: `Position one pastry crust in a pie pan.`, section: SECTIONS.PREP_CRUST, img: pie2 },
         { step: `Roll the second pastry crust so it grows about 1 inch on all sides.`, section: SECTIONS.PREP_CRUST },
         { step: `Cut the pastry into 8 1-inch strip.`, section: SECTIONS.PREP_CRUST },
         { step: `Add the apple slices to the pie pan (a slight mound is fine).`, section: SECTIONS.PREP_CRUST },
         { step: `Lay out four of the pastry strips vertically evenly spaced.`, section: SECTIONS.PREP_CRUST },
         { step: `Weave the remaining pastry strips horizontally and alternating.`, section: SECTIONS.PREP_CRUST },
-        { step: `Fold the lattice over the pie, trim any excess, and pinch.`, section: SECTIONS.PREP_CRUST, img: pie7 },
+        { step: `Fold the lattice over the pie, trim any excess, and pinch.`, section: SECTIONS.PREP_CRUST, img: pie3 },
 
-        { step: `Pour the sugar mixture over the lattice and make sure that it (1) gets onto the apples and (2) does not spill over the sides.`, section: SECTIONS.ASSEMBLE, img: pie8 },
+        { step: `Pour the sugar mixture over the lattice and make sure that it (1) gets onto the apples and (2) does not spill over the sides.`, section: SECTIONS.ASSEMBLE, img: pie4 },
 
         { step: `Bake for 15 minutes.`, section: SECTIONS.BAKE },
         { step: `Reduce to 350ºF and bake until apples are soft (about 35 to 45 minutes).`, section: SECTIONS.BAKE },
 
-        { step: `Enjoy a taste of America's traditional dessert al la mode (i.e. topped with ice cream) or all by itself.`, section: SECTIONS.SERVE, img: [pie9, pie10, pie11] },
+        { step: `Enjoy a taste of America's traditional dessert al la mode (i.e. topped with ice cream) or all by itself.`, section: SECTIONS.SERVE, img: pie6 },
     ],
     notes: [
         { note: 'Slicing this pie is easier when it is cooled; however, it may come out crumbly but it\'s still good.' },
