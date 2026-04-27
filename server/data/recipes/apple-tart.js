@@ -3,11 +3,6 @@ const tart2 = '../assets/Products/apple-tart-2.jpeg';
 const tart3 = '../assets/Products/apple-tart-3.jpeg';
 const tart4 = '../assets/Products/apple-tart-4.jpeg';
 const tart5 = '../assets/Products/apple-tart-5.jpeg';
-const tart6 = '../assets/Products/apple-tart-6.jpeg';
-const tart7 = '../assets/Products/apple-tart-7.jpeg';
-const tart8 = '../assets/Products/apple-tart-8.jpeg';
-const tart9 = '../assets/Products/apple-tart-9.jpeg';
-const tart10 = '../assets/Products/apple-tart-10.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, ALMOND_FLOUR, APRICOT_JELLY, BAKING_SHEET, BASTING_BRUSH, EGG_YOLK, MIXING_BOWL, OVEN, PINK_LADY_APPLE, REFRIGERATED_PUFF_PASTRY, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
@@ -18,7 +13,7 @@ const MAKE_FRANGIPANE = 'Make Frangipane';
 module.exports = {
     cardName: 'Apple Tart',
     name: 'Apple Tart',
-    img: tart10,
+    img: tart5,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -57,25 +52,25 @@ module.exports = {
         BASTING_BRUSH,
     ],
     directions: [
-        { step: `In a mixing bowl, cream together butter and sugar.`, section: MAKE_FRANGIPANE, img: tart1 },
+        { step: `In a mixing bowl, cream together butter and sugar.`, section: MAKE_FRANGIPANE },
         { step: `Mix in almond flour.`, section: MAKE_FRANGIPANE },
-        { step: `Gently mix in the egg yolks and vanilla.`, section: MAKE_FRANGIPANE, img: [tart2, tart3] },
-        { step: `Mix in all-purpose flour.`, section: MAKE_FRANGIPANE, img: tart4 },
+        { step: `Gently mix in the egg yolks and vanilla.`, section: MAKE_FRANGIPANE },
+        { step: `Mix in all-purpose flour.`, section: MAKE_FRANGIPANE, img: tart1 },
         { step: `Refrigerate until ready to use.`, section: MAKE_FRANGIPANE },
 
         { step: `Preheat the oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
         { step: `Place the chilled puff pastry on a baking sheet.`, section: SECTIONS.ASSEMBLE },
-        { step: `Spread the frangipane evenly on the puff pastry.`, section: SECTIONS.ASSEMBLE, img: tart5 },
-        { step: `Arrange the apple slices in overlapping rows.`, section: SECTIONS.ASSEMBLE, img: tart6 },
+        { step: `Spread the frangipane evenly on the puff pastry.`, section: SECTIONS.ASSEMBLE, img: tart2 },
+        { step: `Arrange the apple slices in overlapping rows.`, section: SECTIONS.ASSEMBLE, img: tart3 },
 
-        { step: `Bake until crust begins to become golden brown (about 12 to 15 minutes).`, section: SECTIONS.BAKE, img: tart7 },
+        { step: `Bake until crust begins to become golden brown (about 12 to 15 minutes).`, section: SECTIONS.BAKE },
         { step: `Reduce heat to 350ºF.`, section: SECTIONS.BAKE },
         { step: `Cook until the apples are tender but not soft and the frangipane is cooked through and is not sticky (about 20 to 30 minutes).`, section: SECTIONS.BAKE },
 
-        { step: `Remove the tart from the oven and let it cool for 10 minutes.`, section: SECTIONS.COOL, img: tart8 },
+        { step: `Remove the tart from the oven and let it cool for 10 minutes.`, section: SECTIONS.COOL, img: tart4 },
 
-        { step: `Brush melted/heated jelly over the warm tart.`, section: SECTIONS.BRUSH, img: tart9 },
+        { step: `Brush melted/heated jelly over the warm tart.`, section: SECTIONS.BRUSH },
 
         { step: `Let the tart cool to room temperature and enjoy this light dessert!`, section: SECTIONS.SERVE },
     ],
