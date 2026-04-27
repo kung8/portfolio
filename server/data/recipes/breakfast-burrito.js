@@ -1,6 +1,9 @@
-// const example = '../assets/Products/example.jpeg';
+const burrito1 = '../assets/Products/breakfast-burrito-1.jpeg';
+const burrito2 = '../assets/Products/breakfast-burrito-2.jpeg';
+const burrito3 = '../assets/Products/breakfast-burrito-3.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { AVOCADO, CHORIZO, CILANTRO, CUMIN, EGG, GARLIC, JALAPENO_PEPPER, LARGE_PAN, LIME_JUICE, MEDIUM_BOWL, MONTEREY_JACK_CHEESE, PAPRIKA, PLATE, SALT, SHALLOT, SLOTTED_SPOON, STOVE, TORTILLA, VEGETABLE_OIL, VINE_TOMATO } = require('./ingredients');
+const { AVOCADO, BREAKFAST_SAUSAGE, CILANTRO, CUMIN, EGG, GARLIC, JALAPENO_PEPPER, LARGE_PAN, LIME_JUICE, MEDIUM_BOWL, MONTEREY_JACK_CHEESE, PAPRIKA, PLATE, SALT, SHALLOT, SLOTTED_SPOON, STOVE, TORTILLA, VEGETABLE_OIL, VINE_TOMATO } = require('./ingredients');
 
 const AVOCADO_TOMATO_SALSA_SECTION = 'Avocado Tomato Salsa';
 const BURRITO_SECTION = 'Burrito Section';
@@ -9,10 +12,9 @@ const PREPARE_SALSA = 'Prepare Salsa';
 const COOK_BURRITO = 'Cook Burrito';
 
 module.exports = {
-    wip: true,
     cardName: 'Breakfast Burrito',
     name: 'Breakfast Burrito',
-    img: '',
+    img: burrito3,
     available: true,
     recommended: false,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -45,7 +47,7 @@ module.exports = {
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: BURRITO_SECTION },
         { ...PAPRIKA, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BURRITO_SECTION },
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BURRITO_SECTION },
-        { ...CHORIZO, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BURRITO_SECTION },
+        { ...BREAKFAST_SAUSAGE, amount: 1 / 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: BURRITO_SECTION },
         { ...MONTEREY_JACK_CHEESE, amount: 6, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: BURRITO_SECTION },
         { ...TORTILLA, amount: 4, unit: '', additionalDetails: '10 inch size', section: BURRITO_SECTION },
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: BURRITO_SECTION },
@@ -60,7 +62,7 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: `In a medium bowl, combine the "${AVOCADO_TOMATO_SALSA_SECTION}" section ingredients.`, section: PREPARE_SALSA },
+        { step: `In a medium bowl, combine the "${AVOCADO_TOMATO_SALSA_SECTION}" section ingredients.`, section: PREPARE_SALSA, img: burrito1 },
         { step: `In a medium bowl, combine eggs, paprika and salt. Set aside.`, section: SECTIONS.COOK_FILLING },
         { step: `Over medium-high heat, heat a large pan.`, section: SECTIONS.COOK_FILLING },
         { step: `Add sausage. Cook and stir frequently until browned (about 4 to 5 minutes).`, section: SECTIONS.COOK_FILLING },
@@ -69,14 +71,18 @@ module.exports = {
         { step: `Transfer cooked eggs to plate.`, section: SECTIONS.COOK_FILLING },
         { step: `Wipe pan clean.`, section: SECTIONS.COOK_FILLING },
         { step: `Fill each tortilla with 1/4 cup salsa. There will be a little leftover for topping.`, section: SECTIONS.ASSEMBLE },
-        { step: `Add 1/4 of the sausage, eggs and cheese to each tortilla.`, section: SECTIONS.ASSEMBLE },
+        { step: `Add 1/4 of the sausage, eggs and cheese to each tortilla.`, section: SECTIONS.ASSEMBLE, img: burrito2 },
         { step: `Fold the sides and roll the burrito, tucking in the edges as you roll.`, section: SECTIONS.ASSEMBLE },
         { step: `Over medium heat, heat oil in the pan.`, section: COOK_BURRITO },
         { step: `Add burritos seam side down. Cover with a lid.`, section: COOK_BURRITO },
         { step: `Cook until the bottom is golden brown (about 3 minutes).`, section: COOK_BURRITO },
         { step: `Flip and continue cooking until bottom is golden brown (a few minutes).`, section: COOK_BURRITO },
         { step: `Enjoy this warm`, section: SECTIONS.SERVE },
-        { step: `Wrap in foil and warm them at 350ºF for 15 minutes. They won't be as crispy but are still good.`, section: SECTIONS.REHEAT },
+    ],
+    notes: [
+        {
+            note: 'I did not like chorizo as the protein for this recipe, so I am going to subsitute it with sausage next time.'
+        }
     ],
     store: [
         {
