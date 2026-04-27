@@ -3,11 +3,6 @@ const bars2 = '../assets/Products/almond-croissant-cookie-bar-2.jpeg';
 const bars3 = '../assets/Products/almond-croissant-cookie-bar-3.jpeg';
 const bars4 = '../assets/Products/almond-croissant-cookie-bar-4.jpeg';
 const bars5 = '../assets/Products/almond-croissant-cookie-bar-5.jpeg';
-const bars6 = '../assets/Products/almond-croissant-cookie-bar-6.jpeg';
-const bars7 = '../assets/Products/almond-croissant-cookie-bar-7.jpeg';
-const bars8 = '../assets/Products/almond-croissant-cookie-bar-8.jpeg';
-const bars9 = '../assets/Products/almond-croissant-cookie-bar-9.jpeg';
-const bars10 = '../assets/Products/almond-croissant-cookie-bar-10.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, ALMOND_EXTRACT, ALMOND_FLOUR, BAKING_POWDER, BAKING_SHEET, BROWN_SUGAR, CUTTING_BOARD, EGG, KNIFE, MIXING_BOWL, OVEN, PARCHMENT_PAPER, POWDERED_SUGAR, RUBBER_SPATULA, SALT, SLICED_ALMONDS, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
@@ -20,7 +15,7 @@ const MAKE_FRANGIPANE = 'Make Frangipane';
 module.exports = {
     cardName: 'Almond Croissant Cookie Bars',
     name: 'Almond Croissant Cookie Bars',
-    img: bars10,
+    img: bars5,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -77,19 +72,19 @@ module.exports = {
         
         { step: `Line a baking sheet with two sheets of parchment paper (perpendicular of each other).`, section: SECTIONS.PREP_PAN },
 
-        { step: `In a mixing bowl, combine all the "${SECTIONS.CRUST}" section ingredients except the flour and baking powder. Mix until smooth.`, section: SECTIONS.MAKE_CRUST, img: bars1 },
-        { step: `Add the flour and baking powder. Mix until it forms a thick batter.`, section: SECTIONS.MAKE_CRUST, img: bars2 },
-        { step: `Transfer the batter to the pan and spread to an even layer.`, section: SECTIONS.MAKE_CRUST, img: bars3 },
+        { step: `In a mixing bowl, combine all the "${SECTIONS.CRUST}" section ingredients except the flour and baking powder. Mix until smooth.`, section: SECTIONS.MAKE_CRUST },
+        { step: `Add the flour and baking powder. Mix until it forms a thick batter.`, section: SECTIONS.MAKE_CRUST },
+        { step: `Transfer the batter to the pan and spread to an even layer.`, section: SECTIONS.MAKE_CRUST },
 
-        { step: `In the same empty mixing bowl, combine butter, sugar and salt. Combine with a rubber spatula. Beat until fluffy (about 1 to 2 minutes). Scrape down sides.`, section: MAKE_FRANGIPANE, img: bars4 },
+        { step: `In the same empty mixing bowl, combine butter, sugar and salt. Combine with a rubber spatula. Beat until fluffy (about 1 to 2 minutes). Scrape down sides.`, section: MAKE_FRANGIPANE },
         { step: `Add vanilla and almond extracts. Mix.`, section: MAKE_FRANGIPANE },
-        { step: `Add in eggs one at a time. Wait until each are incorporated. Scrape down sides.`, section: MAKE_FRANGIPANE, img: bars5 },
-        { step: `Add in flour until just combined. Scrape down sides and fold in flour until smooth.`, section: MAKE_FRANGIPANE, img: bars6 },
+        { step: `Add in eggs one at a time. Wait until each are incorporated. Scrape down sides.`, section: MAKE_FRANGIPANE },
+        { step: `Add in flour until just combined. Scrape down sides and fold in flour until smooth.`, section: MAKE_FRANGIPANE, img: bars1 },
 
-        { step: `Spread frangipane over crust in an even layer.`, section: SECTIONS.ASSEMBLE, img: bars7 },
-        { step: `Sprinkle almonds over frangipane and press into frangipane.`, section: SECTIONS.ASSEMBLE, img: bars8 },
+        { step: `Spread frangipane over crust in an even layer.`, section: SECTIONS.ASSEMBLE, img: bars2 },
+        { step: `Sprinkle almonds over frangipane and press into frangipane.`, section: SECTIONS.ASSEMBLE, img: bars3 },
 
-        { step: `Bake until golden brown and the center is puffed (about 38 to 42 minutes).`, section: SECTIONS.BAKE, img: bars9 },
+        { step: `Bake until golden brown and the center is puffed (about 38 to 42 minutes).`, section: SECTIONS.BAKE, img: bars4 },
 
         { step: `Let it completely cool (about 2 hours).`, section: SECTIONS.COOL },
 
