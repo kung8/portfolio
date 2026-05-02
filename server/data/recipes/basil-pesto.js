@@ -1,14 +1,6 @@
 const pesto1 = '../assets/Products/basil-pesto-1.jpeg';
 const pesto2 = '../assets/Products/basil-pesto-2.jpeg';
 const pesto3 = '../assets/Products/basil-pesto-3.jpeg';
-const pesto4 = '../assets/Products/basil-pesto-4.jpeg';
-const pesto5 = '../assets/Products/basil-pesto-5.jpeg';
-const pesto6 = '../assets/Products/basil-pesto-6.jpeg';
-const pesto7 = '../assets/Products/basil-pesto-7.jpeg';
-const pesto8 = '../assets/Products/basil-pesto-8.jpeg';
-const pesto9 = '../assets/Products/basil-pesto-9.jpeg';
-const pesto10 = '../assets/Products/basil-pesto-10.jpeg';
-const pesto11 = '../assets/Products/basil-pesto-11.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -28,7 +20,7 @@ const {
 module.exports = {
     cardName: 'Basil Pesto',
     name: 'Basil Pesto',
-    img: pesto11,
+    img: pesto3,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -63,11 +55,11 @@ module.exports = {
         BLENDER,
     ],
     directions: [
-        { step: `In a blender, combine pine nuts, lemon juice, garlic, sea salt, and black pepper until blended.`, section: SECTIONS.SAUCE, img: [pesto1, pesto2] },
-        { step: `Add basil and oil. Blend.`, section: SECTIONS.SAUCE, img: [pesto3, pesto4, pesto5] },
+        { step: `In a blender, combine pine nuts, lemon juice, garlic, sea salt, and black pepper until blended.`, section: SECTIONS.SAUCE },
+        { step: `Add basil and oil. Blend.`, section: SECTIONS.SAUCE },
         { step: `Add cheese. Blend.`, section: SECTIONS.SAUCE },
-        { step: `For more smoother pesto, add more oil.`, section: SECTIONS.SAUCE, img: [pesto6, pesto7, pesto8] },
-        { step: `Top noodles and mix together.`, section: SECTIONS.SERVE, img: [pesto9, pesto10] },
+        { step: `For more smoother pesto, add more oil.`, section: SECTIONS.SAUCE, img: pesto1 },
+        { step: `Top noodles and mix together.`, section: SECTIONS.SERVE, img: pesto2 },
     ],
     store: [
         {
