@@ -1,8 +1,8 @@
 const tacos1 = '../assets/Products/beef-tacos-1.jpeg';
 const tacos2 = '../assets/Products/beef-tacos-2.jpeg';
-const tacos3 = '../assets/Products/beef-tacos-3.jpeg';
-const tacos4 = '../assets/Products/beef-tacos-4.jpeg';
-const tacos5 = '../assets/Products/beef-tacos-5.jpeg';
+// const tacos3 = '../assets/Products/beef-tacos-3.jpeg';
+// const tacos4 = '../assets/Products/beef-tacos-4.jpeg';
+// const tacos5 = '../assets/Products/beef-tacos-5.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CHILI_POWDER, CUMIN, FLOUR_TORTILLA, FRYING_PAN, GARLIC_POWDER, GROUND_BEEF, LETTUCE, MEXICAN_BLEND_CHEESE, MICROWAVE, OLIVE_OIL, OREGANO, PLATE, RED_ONION, ROMA_TOMATO, SALT, STOVE, TOMATO_PASTE, WATER } = require('./ingredients');
@@ -12,7 +12,7 @@ const TACO_SHELLS = 'Taco Shells';
 module.exports = {
     cardName: 'Beef Tacos',
     name: 'Beef Tacos',
-    img: tacos4,
+    img: tacos2,
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -58,12 +58,12 @@ module.exports = {
     ],
     directions: [
         { step: `Over medium-high heat, heat oil in a frying pan.`, section: SECTIONS.PREP_FILLING },
-        { step: `Add beef and cook until browned (about 5 to 7 minutes). Drain.`, section: SECTIONS.PREP_FILLING, img: tacos1 },
+        { step: `Add beef and cook until browned (about 5 to 7 minutes). Drain.`, section: SECTIONS.PREP_FILLING },
         { step: `Reduce the heat to medium-low.`, section: SECTIONS.PREP_FILLING },
-        { step: `Add the rest of the filling ingredients. Mix.`, section: SECTIONS.PREP_FILLING, img: tacos2 },
-        { step: `Cook until the sauce has thickened (about 3 to 5 minutes).`, section: SECTIONS.PREP_FILLING, img: tacos3 },
+        { step: `Add the rest of the filling ingredients. Mix.`, section: SECTIONS.PREP_FILLING },
+        { step: `Cook until the sauce has thickened (about 3 to 5 minutes).`, section: SECTIONS.PREP_FILLING, img: tacos1 },
         { step: `Place tortillas on a plate and microwave for 30 seconds. Flip. Microwave for another 30 seconds.`, section: SECTIONS.ASSEMBLE },
-        { step: `Fill the tortillas with the ground beef mixture and your favorite toppings.`, section: SECTIONS.ASSEMBLE, img: tacos5 },
+        { step: `Fill the tortillas with the ground beef mixture and your favorite toppings.`, section: SECTIONS.ASSEMBLE },
         { step: `Serve and enjoy!`, section: SECTIONS.SERVE },
     ],
     store: [
