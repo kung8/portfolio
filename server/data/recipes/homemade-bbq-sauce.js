@@ -1,6 +1,4 @@
 const sauce1 = '../assets/Products/bbq-sauce-1.jpeg';
-const sauce2 = '../assets/Products/bbq-sauce-2.jpeg';
-const sauce3 = '../assets/Products/bbq-sauce-3.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BROWN_SUGAR, DIJON_MUSTARD, GARLIC_POWDER, KETCHUP, PAPRIKA, RICE_WINE_VINEGAR, SALT, SAUCEPAN, STOVE, WATER, WHITE_VINEGAR, WORCESTERSHIRE_SAUCE } = require('./ingredients');
@@ -8,7 +6,7 @@ const { BROWN_SUGAR, DIJON_MUSTARD, GARLIC_POWDER, KETCHUP, PAPRIKA, RICE_WINE_V
 module.exports = {
     cardName: 'Homemade BBQ Sauce',
     name: 'Homemade BBQ Sauce',
-    img: sauce3,
+    img: sauce1,
     available: true,
     recommended: false,
     category: [CATEGORIES.SAUCE],
@@ -45,7 +43,7 @@ module.exports = {
         SAUCEPAN,
     ],
     directions: [
-        { step: `In a saucepan, combine the "${SECTIONS.SAUCE}" section ingredients. Whisk.`, section: SECTIONS.PREP_SAUCE, img: [sauce1, sauce2] },
+        { step: `In a saucepan, combine the "${SECTIONS.SAUCE}" section ingredients. Whisk.`, section: SECTIONS.PREP_SAUCE },
         { step: `Over medium heat, simmer for 15 to 20 minutes.`, section: SECTIONS.SIMMER },
         { step: `Transfer to a container once the sauce has thickened and cooled.`, section: SECTIONS.COOL },
         { step: `Enjoy with your favorite grilled meats or as a dipping sauce.`, section: SECTIONS.SERVE },
