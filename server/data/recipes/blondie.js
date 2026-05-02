@@ -1,12 +1,6 @@
 const blondie1 = '../assets/Products/blondie-1.jpeg';
 const blondie2 = '../assets/Products/blondie-2.jpeg';
 const blondie3 = '../assets/Products/blondie-3.jpeg';
-const blondie4 = '../assets/Products/blondie-4.jpeg';
-const blondie5 = '../assets/Products/blondie-5.jpeg';
-const blondie6 = '../assets/Products/blondie-6.jpeg';
-const blondie7 = '../assets/Products/blondie-7.jpeg';
-const blondie8 = '../assets/Products/blondie-8.jpeg';
-const blondie9 = '../assets/Products/blondie-9.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -40,7 +34,7 @@ const MIX_DRY_INGREDIENTS = 'Mix Dry Ingredients';
 module.exports = {
     cardName: 'Blondie',
     name: 'Blondie',
-    img: blondie9,
+    img: blondie3,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -83,14 +77,14 @@ module.exports = {
     ],
     directions: [
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
-        { step: `Melt butter.`, section: CREAM_SUGARS, img: blondie1 },
-        { step: `In a mixing bowl, combine "${SUGARS_SECTION}" section ingredients until well mixed.`, section: CREAM_SUGARS, img: blondie2 },
-        { step: `Add "${WET_INGREDIENTS}" section ingredients. Combine.`, section: ADD_WET_INGREDIENTS, img: blondie3 },
-        { step: `In a medium bowl, combine "${DRY_INGREDIENTS}" section ingredients.`, section: MIX_DRY_INGREDIENTS, img: blondie4 },
-        { step: `Slowly combine the dry ingredients into the wet ingredients.`, section: SECTIONS.ASSEMBLE, img: blondie5 },
-        { step: `Fold in chocolate chips or other desired fillings.`, section: SECTIONS.ASSEMBLE, img: blondie6 },
-        { step: `Pour in batter in a baking pan. Line with parchment paper if using a metal pan.`, section: SECTIONS.ASSEMBLE, img: blondie7 },
-        { step: `Bake for 25 to 30 minutes or until toothpick comes out clean when inserted.`, section: SECTIONS.BAKE, img: blondie8 },
+        { step: `Melt butter.`, section: CREAM_SUGARS },
+        { step: `In a mixing bowl, combine "${SUGARS_SECTION}" section ingredients until well mixed.`, section: CREAM_SUGARS },
+        { step: `Add "${WET_INGREDIENTS}" section ingredients. Combine.`, section: ADD_WET_INGREDIENTS },
+        { step: `In a medium bowl, combine "${DRY_INGREDIENTS}" section ingredients.`, section: MIX_DRY_INGREDIENTS },
+        { step: `Slowly combine the dry ingredients into the wet ingredients.`, section: SECTIONS.ASSEMBLE },
+        { step: `Fold in chocolate chips or other desired fillings.`, section: SECTIONS.ASSEMBLE },
+        { step: `Pour in batter in a baking pan. Line with parchment paper if using a metal pan.`, section: SECTIONS.ASSEMBLE, img: blondie1 },
+        { step: `Bake for 25 to 30 minutes or until toothpick comes out clean when inserted.`, section: SECTIONS.BAKE, img: blondie2 },
         { step: `Enjoy these tasty, simple and light desserts.`, section: SECTIONS.SERVE },
     ],
     notes: [
