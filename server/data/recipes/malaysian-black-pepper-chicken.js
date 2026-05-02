@@ -7,7 +7,6 @@ const pepper6 = '../assets/Products/black-pepper-chicken-6.jpeg';
 const pepper7 = '../assets/Products/black-pepper-chicken-7.jpeg';
 const pepper8 = '../assets/Products/black-pepper-chicken-8.jpeg';
 const pepper9 = '../assets/Products/black-pepper-chicken-9.jpeg';
-const pepper10 = '../assets/Products/black-pepper-chicken-10.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -34,7 +33,7 @@ const {
 module.exports = {
     cardName: 'Black Pepper Chicken',
     name: 'Malaysian Black Pepper Chicken',
-    img: pepper10,
+    img: pepper8,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MALAYSIAN, GENRES.ASIAN],
@@ -89,7 +88,7 @@ module.exports = {
         { step: `Add the shallots, garlic, ginger and black pepper to the wok. Cook and stir until fragrant.`, section: SECTIONS.MAIN, img: pepper5 },
         { step: `Add the sauces and water. Mix until combined.`, section: SECTIONS.MAIN, img: pepper6 },
         { step: `In a small bowl, combine cornstarch and a little warm water. Mix then add to the wok.`, section: SECTIONS.MAIN, img: pepper7 },
-        { step: `Re-add the chicken and mix until combined.`, section: SECTIONS.MAIN, img: pepper8 },
+        { step: `Re-add the chicken and mix until combined.`, section: SECTIONS.MAIN },
         { step: `Add sugar as desired.`, section: SECTIONS.MAIN },
         { step: `Serve over rice, garnish with a few sprigs of cilantro, and enjoy a small taste of Malaysian cuisine.`, section: SECTIONS.MAIN, img: pepper9 },
     ],
