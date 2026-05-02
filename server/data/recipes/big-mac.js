@@ -1,8 +1,8 @@
 const mac1 = '../assets/Products/big-mac-1.jpeg';
 const mac2 = '../assets/Products/big-mac-2.jpeg';
 const mac3 = '../assets/Products/big-mac-3.jpeg';
-const mac4 = '../assets/Products/big-mac-4.jpeg';
-const mac5 = '../assets/Products/big-mac-5.jpeg';
+// const mac4 = '../assets/Products/big-mac-4.jpeg';
+// const mac5 = '../assets/Products/big-mac-5.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BEEF_PATTIES, BLACK_PEPPER, CHEDDAR_CHEESE, GRILL_OR_STOVE, HAMBURGER_BUNS, KETCHUP, LETTUCE, MAYONNAISE, MIXING_BOWL, ONION_POWDER, PAPRIKA, PICKLES, SALT, YELLOW_MUSTARD, YELLOW_ONION } = require('./ingredients');
@@ -12,7 +12,7 @@ const BIG_MAC_SAUCE = 'Big Mac Sauce';
 module.exports = {
     cardName: 'Big Mac',
     name: 'Big Mac',
-    img: mac5,
+    img: mac3,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -54,10 +54,10 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: `In a mixing bowl, combine the sauce ingredients.`, section: BIG_MAC_SAUCE, img: [mac1, mac2] },
+        { step: `In a mixing bowl, combine the sauce ingredients.`, section: BIG_MAC_SAUCE, img: mac1 },
         { step: `Place sauce in fridge to chill until ready to assemble the burgers.`, section: BIG_MAC_SAUCE },
-        { step: `Cook the patties on a grill/skillet/pan to your preferred doneness.`, section: SECTIONS.MAIN, img: [mac3] },
-        { step: `Assemble the burgers.`, section: SECTIONS.MAIN, img: mac4 },
+        { step: `Cook the patties on a grill/skillet/pan to your preferred doneness.`, section: SECTIONS.MAIN, img: mac2 },
+        { step: `Assemble the burgers.`, section: SECTIONS.MAIN },
         { step: `You might not ever need to go to McDonald's ever again unless you are missing their fries, nuggets or McFlurries.`, section: SECTIONS.MAIN },
     ],
     notes: [
