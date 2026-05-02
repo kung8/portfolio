@@ -1,10 +1,5 @@
 const bread1 = '../assets/Products/banana-bread-1.jpeg';
 const bread2 = '../assets/Products/banana-bread-2.jpeg';
-const bread3 = '../assets/Products/banana-bread-3.jpeg';
-const bread4 = '../assets/Products/banana-bread-4.jpeg';
-const bread5 = '../assets/Products/banana-bread-5.jpeg';
-const bread6 = '../assets/Products/banana-bread-6.jpeg';
-const bread7 = '../assets/Products/banana-bread-7.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, YIELD_UNITS } = require('./constants');
 
@@ -37,7 +32,7 @@ const {
 module.exports = {
     cardName: 'Banana Bread',
     name: 'Banana Bread',
-    img: bread7,
+    img: bread2,
     available: true,
     recommended: true,
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -83,21 +78,21 @@ module.exports = {
     directions: [
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: `In large bowl, cream together the "${CREAMED_BUTTER_SECTION}" section ingredients.`, section: SECTIONS.CREAM_BUTTER, img: bread1 },
+        { step: `In large bowl, cream together the "${CREAMED_BUTTER_SECTION}" section ingredients.`, section: SECTIONS.CREAM_BUTTER },
 
-        { step: `In mixing bowl, mash bananas until its consistency is smooth.`, section: MASH_BANANA, img: bread2 },
+        { step: `In mixing bowl, mash bananas until its consistency is smooth.`, section: MASH_BANANA },
 
         { step: `In the mixing bowl with the mashed bananas, add the creamed butter and eggs.`, section: SECTIONS.PREP_BATTER },
 
-        { step: `In the large bowl, combine the "${SECTIONS.DRY_INGREDIENTS}" section ingredients. Transfer to the wet ingredients.`, section: SECTIONS.PREP_BATTER, img: bread3 },
+        { step: `In the large bowl, combine the "${SECTIONS.DRY_INGREDIENTS}" section ingredients. Transfer to the wet ingredients.`, section: SECTIONS.PREP_BATTER },
         { step: `Add vanilla.`, section: SECTIONS.PREP_BATTER },
-        { step: `Optionally add chocolate chips, walnuts or your favorite ingredients.`, section: SECTIONS.PREP_BATTER, img: bread4 },
+        { step: `Optionally add chocolate chips, walnuts or your favorite ingredients.`, section: SECTIONS.PREP_BATTER },
 
-        { step: `Pour the batter into the bread pan.`, section: SECTIONS.PREP_PAN, img: bread5 },
+        { step: `Pour the batter into the bread pan.`, section: SECTIONS.PREP_PAN },
 
         { step: `Bake until an inserted toothpick comes out clean (about 55 to 60 minutes).`, section: SECTIONS.BAKE },
 
-        { step: `Let bread rest for 10 minutes before serving.`, section: SECTIONS.SERVE, img: bread6 },
+        { step: `Let bread rest for 10 minutes before serving.`, section: SECTIONS.SERVE, img: bread1 },
     ],
     notes: [
         { note: 'Feel free to experiment with your favorite ingredients.' },
