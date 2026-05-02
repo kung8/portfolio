@@ -4,8 +4,6 @@ const shrimp3 = '../assets/Products/bang-bang-shrimp-3.jpeg';
 const shrimp4 = '../assets/Products/bang-bang-shrimp-4.jpeg';
 const shrimp5 = '../assets/Products/bang-bang-shrimp-5.jpeg';
 const shrimp6 = '../assets/Products/bang-bang-shrimp-6.jpeg';
-const shrimp7 = '../assets/Products/bang-bang-shrimp-7.jpeg';
-const shrimp8 = '../assets/Products/bang-bang-shrimp-8.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_SHEET, COOLING_RACK, CORNSTARCH, DEEP_FRYER_OR_STOVE, EGG_WHITES, GREEN_ONION, HONEY, MAYONNAISE, MIXING_BOWL, PAPER_TOWELS, SALT, SESAME_SEEDS, SHRIMP, SRIRACHA_SAUCE, SWEET_CHILI_SAUCE, TALL_NARROW_POT, VEGETABLE_OIL, WHITE_PEPPER } = require('./ingredients');
@@ -15,7 +13,7 @@ const COAT_SHRIMP = 'Coat Shrimp';
 module.exports = {
     cardName: 'Bang Bang Shrimp',
     name: 'Bang Bang Shrimp',
-    img: shrimp8,
+    img: shrimp6,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
@@ -64,18 +62,18 @@ module.exports = {
         PAPER_TOWELS,
     ],
     directions: [
-        { step: `In a mixing bowl, combine the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SHRIMP, img: shrimp2 },
-        { step: `Pat shrimp dry with a paper towel.`, section: SECTIONS.PREP_SHRIMP, img: shrimp1 },
-        { step: `Add shrimp to bowl. Coat shrimp.`, section: SECTIONS.PREP_SHRIMP, img: shrimp3 },
+        { step: `In a mixing bowl, combine the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SHRIMP },
+        { step: `Pat shrimp dry with a paper towel.`, section: SECTIONS.PREP_SHRIMP },
+        { step: `Add shrimp to bowl. Coat shrimp.`, section: SECTIONS.PREP_SHRIMP, img: shrimp1 },
 
-        { step: `In another mixing bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE, img: shrimp4 },
+        { step: `In another mixing bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE, img: shrimp2 },
 
         { step: `Heat oil to 350ºF.`, section: SECTIONS.DEEP_FRY },
         { step: `Lined a baking sheet with paper towel and place a cooling rack.`, section: SECTIONS.DEEP_FRY },
-        { step: `Add shrimp. Cook until golden brown (2 to 3 minutes). Do not overcrowd and do not overcook.`, section: SECTIONS.DEEP_FRY, img: shrimp5 },
-        { step: `Set them on the cooling rack to drain.`, section: SECTIONS.DEEP_FRY, img: shrimp6 },
+        { step: `Add shrimp. Cook until golden brown (2 to 3 minutes). Do not overcrowd and do not overcook.`, section: SECTIONS.DEEP_FRY, img: shrimp3 },
+        { step: `Set them on the cooling rack to drain.`, section: SECTIONS.DEEP_FRY, img: shrimp4 },
 
-        { step: `Toss the fried shrimp in the sauce.`, section: COAT_SHRIMP, img: shrimp7 },
+        { step: `Toss the fried shrimp in the sauce.`, section: COAT_SHRIMP, img: shrimp5 },
 
         { step: `Serve this hot topped with green onions.`, section: SECTIONS.SERVE },
     ],
