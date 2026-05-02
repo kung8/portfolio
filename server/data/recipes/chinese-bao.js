@@ -5,13 +5,6 @@ const bao4 = '../assets/Products/bao-4.jpeg';
 const bao5 = '../assets/Products/bao-5.jpeg';
 const bao6 = '../assets/Products/bao-6.jpeg';
 const bao7 = '../assets/Products/bao-7.jpeg';
-const bao8 = '../assets/Products/bao-8.jpeg';
-const bao9 = '../assets/Products/bao-9.jpeg';
-const bao10 = '../assets/Products/bao-10.jpeg';
-const bao11 = '../assets/Products/bao-11.jpeg';
-const bao12 = '../assets/Products/bao-12.jpeg';
-const bao13 = '../assets/Products/bao-13.jpeg';
-const bao14 = '../assets/Products/bao-14.jpeg';
 
 const { CATEGORIES, GENRES, METHODS, TYPES, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_LOCATION, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, REHEAT_METHODS } = require("./constants");
 const {
@@ -40,7 +33,7 @@ const {
 module.exports = {
     cardName: 'Bao',
     name: 'Chinese Bao',
-    img: bao14,
+    img: bao7,
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
@@ -97,25 +90,25 @@ module.exports = {
         { step: `Cover bowl, set it in a warm place, and let sit for 2 hours. It should double in size.`, section: SECTIONS.DOUGH },
         { step: `Remove cover, add baking powder and combine.`, section: SECTIONS.DOUGH },
 
-        { step: `Boil the eggs in a small pot. De-shell.`, section: SECTIONS.FILLING, img: bao1 },
-        { step: `Cut the eggs into quarters.`, section: SECTIONS.FILLING, img: bao2 },
-        { step: `Brown the ground pork in a small pan and remove from heat.`, section: SECTIONS.FILLING, img: bao3 },
-        { step: `Combine the minced mushrooms, garlic, oyster sauce to the pan until well mixed.`, section: SECTIONS.FILLING, img: bao4 },
-        { step: `Slice the chinese sausage at an angle.`, section: SECTIONS.FILLING, img: bao5 },
+        { step: `Boil the eggs in a small pot. De-shell.`, section: SECTIONS.FILLING },
+        { step: `Cut the eggs into quarters.`, section: SECTIONS.FILLING, img: bao1 },
+        { step: `Brown the ground pork in a small pan and remove from heat.`, section: SECTIONS.FILLING },
+        { step: `Combine the minced mushrooms, garlic, oyster sauce to the pan until well mixed.`, section: SECTIONS.FILLING, img: bao2 },
+        { step: `Slice the chinese sausage at an angle.`, section: SECTIONS.FILLING },
 
         { step: `On a clean counter, dust some flour and lightly knead the dough.`, section: SECTIONS.MAIN },
-        { step: `Cut dough into 12 equal parts.`, section: SECTIONS.MAIN, img: bao6 },
-        { step: `Roll out each dough piece into flat circles about 3 to 4 inches in diameter.`, section: SECTIONS.MAIN, img: bao7 },
-        { step: `Add filling in the center of circles (honestly you can add whatever ingredients you want inside the baos as long as they are cooked enough).`, section: SECTIONS.MAIN, img: bao8 },
+        { step: `Cut dough into 12 equal parts.`, section: SECTIONS.MAIN, img: bao3 },
+        { step: `Roll out each dough piece into flat circles about 3 to 4 inches in diameter.`, section: SECTIONS.MAIN },
+        { step: `Add filling in the center of circles (honestly you can add whatever ingredients you want inside the baos as long as they are cooked enough).`, section: SECTIONS.MAIN, img: bao4 },
         { step: `Bring up the sides of the dough to enclose the filling.`, section: SECTIONS.MAIN },
         { step: `Adjust the amount of filling as needed for future baos.`, section: SECTIONS.MAIN },
         { step: `Pinch the top to twist.`, section: SECTIONS.MAIN },
-        { step: `Fill a large pot with water and add 1 Tbsp of vinegar. The vinegar helps the baos to remain white as it cooks.`, section: SECTIONS.MAIN, img: bao9 },
+        { step: `Fill a large pot with water and add 1 Tbsp of vinegar. The vinegar helps the baos to remain white as it cooks.`, section: SECTIONS.MAIN },
         { step: `Over medium-high heat, boil the water.`, section: SECTIONS.MAIN },
-        { step: `Place the baos in the steamer tiers. Be careful not to crowd them. I recommend placing baos on individual parchment papers to prevent sticking to the steamer while still allowing for the ventilation for the steam to come through.`, section: SECTIONS.MAIN, img: bao10 },
-        { step: `Let the baos cook for 15 to 20 minutes. Check on the amount of water occasionally to ensure that the pot doesn't burn.`, section: SECTIONS.MAIN, img: bao11 },
-        { step: `Once the baos cooked, let them cool for a little bit before serving.`, section: SECTIONS.MAIN, img: bao12 },
-        { step: `Enjoy these delicious Chinese filled goodness. In China and other Asian countries, these could be eaten for breakfast too.`, section: SECTIONS.MAIN, img: bao13 },
+        { step: `Place the baos in the steamer tiers. Be careful not to crowd them. I recommend placing baos on individual parchment papers to prevent sticking to the steamer while still allowing for the ventilation for the steam to come through.`, section: SECTIONS.MAIN, img: bao5 },
+        { step: `Let the baos cook for 15 to 20 minutes. Check on the amount of water occasionally to ensure that the pot doesn't burn.`, section: SECTIONS.MAIN, img: bao6 },
+        { step: `Once the baos cooked, let them cool for a little bit before serving.`, section: SECTIONS.MAIN },
+        { step: `Enjoy these delicious Chinese filled goodness. In China and other Asian countries, these could be eaten for breakfast too.`, section: SECTIONS.MAIN },
     ],
     store: [
         {
