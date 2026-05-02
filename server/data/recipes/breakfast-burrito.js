@@ -1,20 +1,17 @@
 const burrito1 = '../assets/Products/breakfast-burrito-1.jpeg';
 const burrito2 = '../assets/Products/breakfast-burrito-2.jpeg';
-const burrito3 = '../assets/Products/breakfast-burrito-3.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { AVOCADO, BREAKFAST_SAUSAGE, CILANTRO, CUMIN, EGG, GARLIC, JALAPENO_PEPPER, LARGE_PAN, LIME_JUICE, MEDIUM_BOWL, MONTEREY_JACK_CHEESE, PAPRIKA, PLATE, SALT, SHALLOT, SLOTTED_SPOON, STOVE, TORTILLA, VEGETABLE_OIL, VINE_TOMATO } = require('./ingredients');
+const { BREAKFAST_SAUSAGE, EGG, LARGE_PAN, MEDIUM_BOWL, MONTEREY_JACK_CHEESE, PAPRIKA, PLATE, SALT, SLOTTED_SPOON, STOVE, TORTILLA, VEGETABLE_OIL } = require('./ingredients');
 
-const AVOCADO_TOMATO_SALSA_SECTION = 'Avocado Tomato Salsa';
 const BURRITO_SECTION = 'Burrito Section';
 
-const PREPARE_SALSA = 'Prepare Salsa';
 const COOK_BURRITO = 'Cook Burrito';
 
 module.exports = {
     cardName: 'Breakfast Burrito',
     name: 'Breakfast Burrito',
-    img: burrito3,
+    img: burrito1,
     available: true,
     recommended: false,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -26,24 +23,7 @@ module.exports = {
     prepTime: { amount: 25, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
-    websites: [
-        { 
-            label: 'Breakfast Burrito', 
-            link: 'https://www.onceuponachef.com/recipes/breakfast-burritos.html',
-            authors: ['Jennifer Segal'],
-            finder: 'Kevin Ung', 
-        }
-    ],
     ingredients: [
-        { ...AVOCADO, amount: 1, unit: '', additionalDetails: 'peeled, pitted and diced', section: AVOCADO_TOMATO_SALSA_SECTION },
-        { ...VINE_TOMATO, amount: 2, unit: '', additionalDetails: 'diced seeded parts', section: AVOCADO_TOMATO_SALSA_SECTION },
-        { ...SHALLOT, amount: 1, unit: '', additionalDetails: 'minced', section: AVOCADO_TOMATO_SALSA_SECTION },
-        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: AVOCADO_TOMATO_SALSA_SECTION },
-        { ...JALAPENO_PEPPER, amount: 1, unit: '', additionalDetails: 'seeded and minced', section: AVOCADO_TOMATO_SALSA_SECTION },
-        { ...LIME_JUICE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: AVOCADO_TOMATO_SALSA_SECTION },
-        { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: AVOCADO_TOMATO_SALSA_SECTION },
-        { ...CUMIN, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: AVOCADO_TOMATO_SALSA_SECTION },
-        { ...CILANTRO, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'chopped', section: AVOCADO_TOMATO_SALSA_SECTION },
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: BURRITO_SECTION },
         { ...PAPRIKA, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BURRITO_SECTION },
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: BURRITO_SECTION },
@@ -62,7 +42,6 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: `In a medium bowl, combine the "${AVOCADO_TOMATO_SALSA_SECTION}" section ingredients.`, section: PREPARE_SALSA, img: burrito1 },
         { step: `In a medium bowl, combine eggs, paprika and salt. Set aside.`, section: SECTIONS.COOK_FILLING },
         { step: `Over medium-high heat, heat a large pan.`, section: SECTIONS.COOK_FILLING },
         { step: `Add sausage. Cook and stir frequently until browned (about 4 to 5 minutes).`, section: SECTIONS.COOK_FILLING },
@@ -70,19 +49,17 @@ module.exports = {
         { step: `Bring to low heat, add the eggs. Scramble and cook until just cooked through.`, section: SECTIONS.COOK_FILLING },
         { step: `Transfer cooked eggs to plate.`, section: SECTIONS.COOK_FILLING },
         { step: `Wipe pan clean.`, section: SECTIONS.COOK_FILLING },
-        { step: `Fill each tortilla with 1/4 cup salsa. There will be a little leftover for topping.`, section: SECTIONS.ASSEMBLE },
-        { step: `Add 1/4 of the sausage, eggs and cheese to each tortilla.`, section: SECTIONS.ASSEMBLE, img: burrito2 },
+        { step: `Add 1/4 of the sausage, eggs and cheese to each tortilla.`, section: SECTIONS.ASSEMBLE },
         { step: `Fold the sides and roll the burrito, tucking in the edges as you roll.`, section: SECTIONS.ASSEMBLE },
         { step: `Over medium heat, heat oil in the pan.`, section: COOK_BURRITO },
         { step: `Add burritos seam side down. Cover with a lid.`, section: COOK_BURRITO },
         { step: `Cook until the bottom is golden brown (about 3 minutes).`, section: COOK_BURRITO },
         { step: `Flip and continue cooking until bottom is golden brown (a few minutes).`, section: COOK_BURRITO },
-        { step: `Enjoy this warm`, section: SECTIONS.SERVE },
+        { step: `Enjoy this warm`, section: SECTIONS.SERVE, img: burrito2 },
     ],
     notes: [
-        {
-            note: 'I did not like chorizo as the protein for this recipe, so I am going to subsitute it with sausage next time.'
-        }
+        { note: 'I did not like chorizo as the protein for this recipe, so I am going to subsitute it with sausage next time.' },
+        { note: 'I also did not like the avocado tomato salsa in this original recipe, so I have omitted it from the recipe all together.'}
     ],
     store: [
         {

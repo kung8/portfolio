@@ -1,4 +1,11 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const smackeroodles1 = '../assets/Products/muffy-scrumptious-smackeroodles-1.jpeg';
+const smackeroodles2 = '../assets/Products/muffy-scrumptious-smackeroodles-2.jpeg';
+const smackeroodles3 = '../assets/Products/muffy-scrumptious-smackeroodles-3.jpeg';
+const smackeroodles4 = '../assets/Products/muffy-scrumptious-smackeroodles-4.jpeg';
+const smackeroodles5 = '../assets/Products/muffy-scrumptious-smackeroodles-5.jpeg';
+const smackeroodles6 = '../assets/Products/muffy-scrumptious-smackeroodles-6.jpeg';
+const smackeroodles7 = '../assets/Products/muffy-scrumptious-smackeroodles-7.jpeg';
+const smackeroodles8 = '../assets/Products/muffy-scrumptious-smackeroodles-8.jpeg';
 
 const {
     CATEGORIES,
@@ -22,10 +29,9 @@ const MUFFY_SECTION_INGREDIENTS = 'Muffy\'s Special Ingredients';
 const FORM_COOKIES = 'Form Cookies';
 
 module.exports = {
-    wip: true,
     cardName: 'Muffy\'s Cookies',
     name: 'Muffy\'s Scrumptious Smackeroodles',
-    img: '',
+    img: smackeroodles8,
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -69,15 +75,14 @@ module.exports = {
     directions: [
         { step: `In a stand mixer, cream the "${BUTTER_MIXTURE}" section ingredients.`, section: SECTIONS.PREP_BATTER },
         { step: `Add "${SECTIONS.WET_INGREDIENTS}" section ingredients. Mix until combined.`, section: SECTIONS.PREP_BATTER },
-        { step: `Add flour. Mix until incorporated.`, section: SECTIONS.PREP_BATTER },
-        { step: `Add the "${MUFFY_SECTION_INGREDIENTS}" section ingredients. Mix until incorporated.`, section: SECTIONS.PREP_BATTER },
-        { step: `Transfer to a counter and knead until dough comes together.`, section: SECTIONS.PREP_BATTER },
-        { step: `Shape it to a long shape (12 inches long).`, section: SECTIONS.PREP_BATTER },
-        { step: `Cover with plastic wrap and chill for at least 1 hour.`, section: SECTIONS.PREP_BATTER },
+        { step: `Add flour. Mix until incorporated.`, section: SECTIONS.PREP_BATTER, img: smackeroodles1 },
+        { step: `Add the "${MUFFY_SECTION_INGREDIENTS}" section ingredients. Mix until incorporated and the fruit is smashed.`, section: SECTIONS.PREP_BATTER, img: [smackeroodles2, smackeroodles3] },
+        { step: `Spread on to parchment paper and carefully roll so it forms a log shape (about 12 inches long).`, section: SECTIONS.PREP_BATTER, img: [smackeroodles4, smackeroodles5] },
+        { step: `Cover with plastic wrap and chill for at least 1 hour.`, section: SECTIONS.PREP_BATTER, img: smackeroodles6 },
 
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Line baking sheets with silicone baking mats.`, section: SECTIONS.PREP_PAN },
-        { step: `Cut chilled dough into slices (about 3/4 inch thick) and place on lined baking sheet about an inch apart.`, section: FORM_COOKIES },
+        { step: `Cut chilled dough into slices (about 3/4 inch thick) and place on lined baking sheet about an inch apart.`, section: FORM_COOKIES, img: smackeroodles7 },
         { step: `Bake until edges are just golden brown (about 10 to 12 minutes).`, section: SECTIONS.BAKE },
         { step: `Let cookies cool completely on the baking sheets.`, section: SECTIONS.COOL },
         { step: `Enjoy these cookies from one of my childhood show!`, section: SECTIONS.SERVE },
