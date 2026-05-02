@@ -1,6 +1,7 @@
 const chicken1 = '../assets/Products/baked-lemon-chicken-1.jpeg';
 const chicken2 = '../assets/Products/baked-lemon-chicken-2.jpeg';
 const chicken3 = '../assets/Products/baked-lemon-chicken-3.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     BAKING_PAN,

@@ -1,9 +1,6 @@
 const drumstick1 = '../assets/Products/baked-chicken-drumstick-1.jpeg';
 const drumstick2 = '../assets/Products/baked-chicken-drumstick-2.jpeg';
 const drumstick3 = '../assets/Products/baked-chicken-drumstick-3.jpeg';
-const drumstick4 = '../assets/Products/baked-chicken-drumstick-4.jpeg';
-const drumstick5 = '../assets/Products/baked-chicken-drumstick-5.jpeg';
-const drumstick6 = '../assets/Products/baked-chicken-drumstick-6.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
@@ -24,7 +21,7 @@ const {
 module.exports = {
     cardName: 'Baked Chicken Drumsticks',
     name: 'Baked Chicken Drumsticks',
-    img: drumstick4,
+    img: drumstick1,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -66,16 +63,16 @@ module.exports = {
 
         { step: `Place the chicken in the baking pan in a single layer.`, section: SECTIONS.PREP_CHICKEN },
 
-        { step: `In a bowl, mix the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SEASONINGS, img: drumstick1 },
-        { step: `Add oil. Mix until incorporated.`, section: SECTIONS.PREP_SEASONINGS, img: drumstick2 },
+        { step: `In a bowl, mix the "${SECTIONS.SEASONINGS}" section ingredients.`, section: SECTIONS.PREP_SEASONINGS },
+        { step: `Add oil. Mix until incorporated.`, section: SECTIONS.PREP_SEASONINGS },
 
-        { step: `With a basting brush, coat the top of the chicken.`, section: SECTIONS.BASTE, img: drumstick3 },
+        { step: `With a basting brush, coat the top of the chicken.`, section: SECTIONS.BASTE },
 
-        { step: `Bake until chicken is cooked (about 50 to 60 minutes).`, section: SECTIONS.BAKE, img: drumstick4 },
+        { step: `Bake until chicken is cooked (about 50 to 60 minutes).`, section: SECTIONS.BAKE },
 
-        { step: `Transfer out of pan to avoid the oil gelatinizing around the chicken.`, section: SECTIONS.TRANSFER, img: drumstick5 },
+        { step: `Transfer out of pan to avoid the oil gelatinizing around the chicken.`, section: SECTIONS.TRANSFER, img: drumstick2 },
 
-        { step: `Serve with rice and your favorite veggies.`, section: SECTIONS.SERVE, img: drumstick6 },
+        { step: `Serve with rice and your favorite veggies.`, section: SECTIONS.SERVE, img: drumstick3 },
     ],
     store: [
         {
