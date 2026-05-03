@@ -595,6 +595,7 @@ const INGREDIENTS = {
         CUPS: { name: 'cups', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         CUTTING_BOARD: { name: 'cutting board', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         CUTLERY: { name: 'cutlery', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
+        DIGITAL_SCALE: { name: 'digital scale', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         DOUGH_KNIFE: { name: 'dough knife', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         DUTCH_OVEN_POT: { name: 'dutch oven pot', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         DRYING_CLOTH: { name: 'drying cloth', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },

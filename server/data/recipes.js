@@ -357,6 +357,7 @@ const thanksgivingLeftoverSandwichWithMoistMaker = require('./recipes/thanksgivi
 const tunaOnigiri = require('./recipes/tuna-onigiri.js');
 const turkeyRollUps = require("./recipes/turkey-roll-ups");
 const udonNoodleSoup = require("./recipes/udon-noodle-soup");
+const vanillaCake = require("./recipes/vanilla-cake");
 const vietnameseBanhMiSandwich = require("./recipes/vietnamese-banh-mi-sandwich");
 const vietnameseBanhTieu = require("./recipes/vietnamese-banh-tieu");
 const vietnameseFreshSpringRolls = require("./recipes/vietnamese-fresh-spring-rolls");
@@ -747,6 +748,7 @@ const recipes = [
     carrotCake,
     carrotCakeScones,
     coffeeCake,
+    vanillaCake,
     germanChocolateCake,
     chocolateCake,
     chocolateButtercreamFrosting,
