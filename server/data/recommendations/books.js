@@ -26,6 +26,139 @@ module.exports = {
         // },
         {
             date: NO_DATE,
+            title: "The Last Time I Lied",
+            author: ["Riley Sager"],
+            source: ["Lindsey Hunter"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 388,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Tattooist of Auschwitz",
+            author: ["Heather Morris"],
+            source: ["Emily Sabey"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 286,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "The Hiding Place",
+            author: ["Corrie Ten Boom"],
+            source: ["Courtney Ann"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Sky In The Deep",
+            author: ["Adrienne Young"],
+            source: [""],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Smoke Gets in Your Eyes",
+            author: ["Caitlyn Doughty"],
+            source: ["Emily Sabey"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 288,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Ranger's Apprentice (series)",
+            author: ["Michael Vey"],
+            source: ["Courtney Ann"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
+            title: "Tuesdays With Morrie",
+            author: ["Mitch Albom"],
+            source: ["Courtney Ann"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 224,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
             title: "Desperately Seeking Mr. Darcy",
             author: ["Becky Monson"],
             source: ["Author Herself on FB"],
