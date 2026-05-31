@@ -900,10 +900,36 @@ module.exports = recipes;
     website: https://www.facebook.com/watch/?v=597676636305410
 */
 
-// TODO: add https://www.hersheyland.com/recipes/hersheys-best-brownies.html
-// TODO: add https://moribyan.com/beef-lamb-sausage-rolls/
-// TODO: add https://glebekitchen.com/tonkotsu-ramen-home/
-// TODO: add https://girlswhoeat.com/recipes/side-dishes/air-fryer-accordion-potatoes/
-// TODO: add https://www.thekitchn.com/cannoli-squares-recipe-23774116
-// TODO: add https://yejiskitchenstories.com/strawberry-tanghulu/
-// TODO: add https://theforkedspoon.com/pho-recipe/
+/*
+    TODO: add https://www.hersheyland.com/recipes/hersheys-best-brownies.html
+    TODO: add https://moribyan.com/beef-lamb-sausage-rolls/
+    TODO: add https://glebekitchen.com/tonkotsu-ramen-home/
+    TODO: add https://girlswhoeat.com/recipes/side-dishes/air-fryer-accordion-potatoes/
+    TODO: add https://www.thekitchn.com/cannoli-squares-recipe-23774116
+    TODO: add https://yejiskitchenstories.com/strawberry-tanghulu/
+    TODO: add https://theforkedspoon.com/pho-recipe/
+    TODO: find recipes for foods that I loved from the Europe trip: 
+        - Couscous
+        - Spaghetti Aglio e Olio (Spaghetti with oil, chili flakes, fresh parsley (no cheese it needs to stay fresh):
+            - https://www.allrecipes.com/recipe/222000/spaghetti-aglio-e-olio/
+            - https://www.foodnetwork.com/recipes/ina-garten/spaghetti-aglio-e-olio-recipe-2043225
+        - Samarle a Romanian dish: 
+            - https://www.jocooks.com/recipes/sarmale/
+        - Suppli: 
+            - https://www.manusmenu.com/suppli-al-telefono
+        - Cacio e Pepe: 
+            - https://www.spoonforkbacon.com/cacio-e-pepe-recipe/
+        - Tiramisu (without coffee)
+            - https://foodtourrome.com/recipes-the-roman-food-tour/
+        - Tagliatelle
+        - Ravioli with white truffle butter sauce
+            - https://foodtourrome.com/recipes-the-roman-food-tour/
+        - Focaccia bread with Porchetta, Parmesan cream, grilled peppers and Parmesan slices
+        - Focaccia bread that was used in sandwiches:
+            - https://www.recipetineats.com/focaccia-recipe/
+            - https://www.loveandlemons.com/focaccia/
+        - Tramezzino (Italian tea sandwiches): 
+            - https://www.sugarlovespices.com/tramezzini-italian-cold-sandwiches/
+        - Kaiserschmarrn (Austrian shredded pancake with powdered sugar and fruit compote): 
+            - https://www.lilvienna.com/shredded-pancake-kaiserschmarrn/
+*/
