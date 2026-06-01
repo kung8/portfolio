@@ -57,7 +57,7 @@ module.exports = {
     ],
     directions: [
         { step: `In a saucepan, combine "${SUGAR_MIXTURE}" section ingredients.`, section: COOK_SUGAR_MIXTURE, img: syrup1 },
-        { step: `Over medium-high heat, bring to a boil (about 5 minutes). Stir occasionally.`, section: COOK_SUGAR_MIXTURE, img: syrup1 },
+        { step: `Over medium-high heat, bring to a boil (about 5 minutes). Stir occasionally.`, section: COOK_SUGAR_MIXTURE },
         { step: `Remove from heat.`, section: COOK_SUGAR_MIXTURE },
 
         { step: `Add baking soda and vanilla. Stir.`, section: MIX_FOAM_MIXTURE },
