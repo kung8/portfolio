@@ -4,15 +4,6 @@ const cake3 = '../assets/Products/carrot-cake-3.jpeg';
 const cake4 = '../assets/Products/carrot-cake-4.jpeg';
 const cake5 = '../assets/Products/carrot-cake-5.jpeg';
 const cake6 = '../assets/Products/carrot-cake-6.jpeg';
-const cake7 = '../assets/Products/carrot-cake-7.jpeg';
-const cake8 = '../assets/Products/carrot-cake-8.jpeg';
-const cake9 = '../assets/Products/carrot-cake-9.jpeg';
-const cake10 = '../assets/Products/carrot-cake-10.jpeg';
-const cake11 = '../assets/Products/carrot-cake-11.jpeg';
-const cake12 = '../assets/Products/carrot-cake-12.jpeg';
-const cake13 = '../assets/Products/carrot-cake-13.jpeg';
-const cake14 = '../assets/Products/carrot-cake-14.jpeg';
-const cake15 = '../assets/Products/carrot-cake-15.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SODA, BROWN_SUGAR, CAKE_PAN, CARROT, CINNAMON, CREAM_CHEESE, EGG, MEDIUM_BOWL, MIXING_BOWL, OVEN, POWDERED_SUGAR, SALT, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, VEGETABLE_OIL, WALNUTS, WHITE_SUGAR } = require('./ingredients');
@@ -25,7 +16,7 @@ const ASSEMBLING = 'Assembling';
 module.exports = {
     cardName: 'Carrot Cake',
     name: 'Carrot Cake',
-    img: cake15,
+    img: cake6,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -84,20 +75,20 @@ module.exports = {
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
         { step: `Grease and flour the cake pans.`, section: SECTIONS.PREP_BATTER },
-        { step: `In a mixing bowl, beat eggs until light and fluffy.`, section: SECTIONS.PREP_BATTER, img: cake2 },
+        { step: `In a mixing bowl, beat eggs until light and fluffy.`, section: SECTIONS.PREP_BATTER },
         { step: `Slowly beat in sugar, oil and vanilla.`, section: SECTIONS.PREP_BATTER },
-        { step: `Mix in cinnamon, baking soda, salt and flour one at a time.`, section: SECTIONS.PREP_BATTER, img: [cake3, cake4, cake5] },
-        { step: `Mix in the carrot mixture and walnuts.`, section: SECTIONS.PREP_BATTER, img: [cake6, cake7] },
-        { step: `Carefully pour the batter into the pans.`, section: SECTIONS.PREP_BATTER, img: cake8 },
-        { step: `Bake until a toothpick comes out clean (about 45 to 50 minutes).`, section: SECTIONS.BAKE, img: cake9 },
+        { step: `Mix in cinnamon, baking soda, salt and flour one at a time.`, section: SECTIONS.PREP_BATTER },
+        { step: `Mix in the carrot mixture and walnuts.`, section: SECTIONS.PREP_BATTER },
+        { step: `Carefully pour the batter into the pans.`, section: SECTIONS.PREP_BATTER, img: cake2 },
+        { step: `Bake until a toothpick comes out clean (about 45 to 50 minutes).`, section: SECTIONS.BAKE, img: cake3 },
         { step: `Cool for 10 minutes before taking the cake out of the pan.`, section: SECTIONS.COOL },
         { step: `Cool completely before assembling and decorating the cake.`, section: SECTIONS.DECORATE },
 
-        { step: `In a mixing bowl, mix the softened cream cheese and butter.`, section: SECTIONS.FROST, img: cake10 },
-        { step: `Add powdered sugar and vanilla and mix until well incorporated.`, section: SECTIONS.FROST, img: cake11 },
-        { step: `Spread the frosting on one layer of the cake and place the other layer on top.`, section: ASSEMBLING, img: cake12 },
-        { step: `Frost the top layer and sprinkle it with walnut, as desired.`, section: ASSEMBLING, img: cake13 },
-        { step: `Slice up the cake and enjoy this tasty rabbit food (just kidding don't feed this to rabbits).`, section: SECTIONS.SERVE, img: cake14 },
+        { step: `In a mixing bowl, mix the softened cream cheese and butter.`, section: SECTIONS.FROST },
+        { step: `Add powdered sugar and vanilla and mix until well incorporated.`, section: SECTIONS.FROST, img: cake4 },
+        { step: `Spread the frosting on one layer of the cake and place the other layer on top.`, section: ASSEMBLING },
+        { step: `Frost the top layer and sprinkle it with walnut, as desired.`, section: ASSEMBLING, img: cake5 },
+        { step: `Slice up the cake and enjoy this tasty rabbit food (just kidding don't feed this to rabbits).`, section: SECTIONS.SERVE },
     ],
     store: [
         {
