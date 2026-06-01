@@ -2,11 +2,8 @@ const rolls1 = '../assets/Products/chicken-stuffed-crescent-rolls-1.jpeg';
 const rolls2 = '../assets/Products/chicken-stuffed-crescent-rolls-2.jpeg';
 const rolls3 = '../assets/Products/chicken-stuffed-crescent-rolls-3.jpeg';
 const rolls4 = '../assets/Products/chicken-stuffed-crescent-rolls-4.jpeg';
-const rolls5 = '../assets/Products/chicken-stuffed-crescent-rolls-5.jpeg';
-const rolls6 = '../assets/Products/chicken-stuffed-crescent-rolls-6.jpeg';
-const rolls7 = '../assets/Products/chicken-stuffed-crescent-rolls-7.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BAKING_SHEET,
     BLACK_PEPPER,
@@ -33,7 +30,7 @@ const PREP_CHICKEN_SALAD = 'Prep Chicken Salad';
 module.exports = {
     cardName: 'Chicken Crescent Rolls',
     name: 'Chicken Stuffed Crescent Rolls',
-    img: rolls7,
+    img: rolls4,
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -78,14 +75,14 @@ module.exports = {
         
         { step: `In a mixing bowl, combine the "${CHICKEN_SALAD}" section ingredients.`, section: PREP_CHICKEN_SALAD, img: rolls1 },
 
-        { step: `Unroll the crescent roll triangles and lay on the baking sheet.`, section: SECTIONS.ASSEMBLE, img: rolls2 },
-        { step: `Place a ball of chicken filling on the wide end of the crescent roll.`, section: SECTIONS.ASSEMBLE, img: rolls3 },
+        { step: `Unroll the crescent roll triangles and lay on the baking sheet.`, section: SECTIONS.ASSEMBLE },
+        { step: `Place a ball of chicken filling on the wide end of the crescent roll.`, section: SECTIONS.ASSEMBLE, img: rolls2 },
         { step: `Roll the dough to enclose as much of the filling.`, section: SECTIONS.ASSEMBLE },
-        { step: `Brush rolls with melted butter and optionally sprinkle with cheese.`, section: SECTIONS.ASSEMBLE, img: rolls4 },
+        { step: `Brush rolls with melted butter and optionally sprinkle with cheese.`, section: SECTIONS.ASSEMBLE, img: rolls3 },
 
-        { step: `Bake until golden brown (for 10 to 12 minutes).`, section: SECTIONS.BAKE, img: rolls5 },
+        { step: `Bake until golden brown (for 10 to 12 minutes).`, section: SECTIONS.BAKE },
 
-        { step: `Serve warm and enjoy this light appetizer.`, section: SECTIONS.SERVE, img: rolls6 },
+        { step: `Serve warm and enjoy this light appetizer.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Be sure to cook the dough completely.' }
