@@ -1,13 +1,6 @@
 const broccoli1 = '../assets/Products/broccoli-beef-1.jpeg';
 const broccoli2 = '../assets/Products/broccoli-beef-2.jpeg';
 const broccoli3 = '../assets/Products/broccoli-beef-3.jpeg';
-const broccoli4 = '../assets/Products/broccoli-beef-4.jpeg';
-const broccoli5 = '../assets/Products/broccoli-beef-5.jpeg';
-const broccoli6 = '../assets/Products/broccoli-beef-6.jpeg';
-const broccoli7 = '../assets/Products/broccoli-beef-7.jpeg';
-const broccoli8 = '../assets/Products/broccoli-beef-8.jpeg';
-const broccoli9 = '../assets/Products/broccoli-beef-9.jpeg';
-const broccoli10 = '../assets/Products/broccoli-beef-10.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -37,7 +30,7 @@ const BROCCOLI_SECTION = 'Broccoli';
 module.exports = {
     cardName: 'Broccoli Beef',
     name: 'Chinese Broccoli Beef',
-    img: broccoli10,
+    img: broccoli3,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
@@ -85,18 +78,18 @@ module.exports = {
     ],
     directions: [
         { step: `In a large bowl, combine the beef marinade ingredients. Let it marinate for 30 minutes.`, section: BEEF_SECTION, img: broccoli1 },
-        { step: `In a medium bowl, combine the sauce ingredients and set aside.`, section: SECTIONS.SAUCE, img: broccoli2 },
+        { step: `In a medium bowl, combine the sauce ingredients and set aside.`, section: SECTIONS.SAUCE },
         { step: `In a large pot, boil water.`, section: BROCCOLI_SECTION },
-        { step: `Add broccoli to the boiling water.`, section: BROCCOLI_SECTION, img: broccoli3 },
-        { step: `Transfer to ice bath after 3 or 4 minutes.`, section: BROCCOLI_SECTION, img: broccoli4 },
+        { step: `Add broccoli to the boiling water.`, section: BROCCOLI_SECTION },
+        { step: `Transfer to ice bath after 3 or 4 minutes.`, section: BROCCOLI_SECTION },
         { step: `Over medium-high heat, heat up a wok and add beef.`, section: SECTIONS.MAIN },
         { step: `Cook beef just until cooked about 80% of the way.`, section: SECTIONS.MAIN },
-        { step: `Remove beef from the wok.`, section: SECTIONS.MAIN, img: broccoli5 },
+        { step: `Remove beef from the wok.`, section: SECTIONS.MAIN, img: broccoli2 },
         { step: `Add oil.`, section: SECTIONS.MAIN },
-        { step: `Add the garlic and ginger. Saute.`, section: SECTIONS.MAIN, img: broccoli6 },
-        { step: `Add sauce. Cook until it thickens.`, section: SECTIONS.MAIN, img: broccoli7 },
-        { step: `Add the beef and broccoli. Combine.`, section: SECTIONS.MAIN, img: broccoli8 },
-        { step: `Cook until beef is cooked through.`, section: SECTIONS.MAIN, img: broccoli9 },
+        { step: `Add the garlic and ginger. Saute.`, section: SECTIONS.MAIN },
+        { step: `Add sauce. Cook until it thickens.`, section: SECTIONS.MAIN },
+        { step: `Add the beef and broccoli. Combine.`, section: SECTIONS.MAIN },
+        { step: `Cook until beef is cooked through.`, section: SECTIONS.MAIN },
         { step: `Top with sesame seeds and serve with steamed rice.`, section: SECTIONS.SERVE },
     ],
     store: [
