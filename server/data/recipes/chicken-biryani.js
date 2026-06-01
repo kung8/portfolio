@@ -16,7 +16,6 @@ const biryani15 = '../assets/Products/chicken-biryani-15.jpeg';
 const biryani16 = '../assets/Products/chicken-biryani-16.jpeg';
 const biryani17 = '../assets/Products/chicken-biryani-17.jpeg';
 const biryani18 = '../assets/Products/chicken-biryani-18.jpeg';
-const biryani19 = '../assets/Products/chicken-biryani-19.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BASMATI_RICE, BAY_LEAF, CARDAMOM, CARDAMOM_PODS, CAYENNE_PEPPER, CHICKEN_THIGH, CILANTRO, CINNAMON, CLOVES, CORIANDER, CUMIN, GARAM_MASALA, GARLIC, GHEE, GINGER, LARGE_POT, PAPER_TOWELS, PAPRIKA, PLATE, POT, SAFFRON_THREADS, SALT, SAUCEPAN, SMALL_BOWL, STAR_ANISE, STOVE, TURMERIC, VEGETABLE_OIL, WATER, YELLOW_ONION, YOGURT } = require('./ingredients');
@@ -31,7 +30,7 @@ const COOK_BIRYANI = 'Cook Biryani';
 module.exports = {
     cardName: 'Chicken Biryani',
     name: 'Chicken Biryani',
-    img: biryani19,
+    img: biryani18,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -128,7 +127,7 @@ module.exports = {
         { step: `Once you see steam, turn down the heat to low and cook for 25 minutes.`, section: COOK_BIRYANI },
         { step: `Remove from heat and let it rest for 10 minutes with the lid on.`, section: COOK_BIRYANI },
 
-        { step: `Serve this authentic chicken rice dish with cilantro, yogurt, and sauteed onions.`, section: SECTIONS.SERVE, img: biryani18 },
+        { step: `Serve this authentic chicken rice dish with cilantro, yogurt, and sauteed onions.`, section: SECTIONS.SERVE },
     ],
     store: [
         {
