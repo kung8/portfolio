@@ -5,10 +5,6 @@ const bleu4 = '../assets/Products/chicken-cordon-bleu-4.jpeg';
 const bleu5 = '../assets/Products/chicken-cordon-bleu-5.jpeg';
 const bleu6 = '../assets/Products/chicken-cordon-bleu-6.jpeg';
 const bleu7 = '../assets/Products/chicken-cordon-bleu-7.jpeg';
-const bleu8 = '../assets/Products/chicken-cordon-bleu-8.jpeg';
-const bleu9 = '../assets/Products/chicken-cordon-bleu-9.jpeg';
-const bleu10 = '../assets/Products/chicken-cordon-bleu-10.jpeg';
-const bleu11 = '../assets/Products/chicken-cordon-bleu-11.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -34,7 +30,7 @@ const {
 module.exports = {
     cardName: 'Chicken Cordon Bleu',
     name: 'Chicken Cordon Bleu',
-    img: bleu11,
+    img: bleu7,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.FRENCH],
@@ -45,11 +41,11 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Chicken Cordon Bleu', 
+        {
+            label: 'Chicken Cordon Bleu',
             link: 'https://tastesbetterfromscratch.com/chicken-cordon-bleu/',
             authors: ['Lauren Allen'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -76,21 +72,21 @@ module.exports = {
         SAUCEPAN,
     ],
     directions: [
-        { step: `Cut chicken breast in half horizontally so it is less thick and will be easier to work with.`, section: SECTIONS.MAIN, img: bleu1 },
+        { step: `Cut chicken breast in half horizontally so it is less thick and will be easier to work with.`, section: SECTIONS.MAIN },
         { step: `Pat the chicken dry with paper towels.`, section: SECTIONS.MAIN },
-        { step: `Lay the halved cheese slices and halved ham slices on top of the breasts.`, section: SECTIONS.MAIN, img: bleu2 },
-        { step: `Fold over the chicken to enclose the ham and cheese.`, section: SECTIONS.MAIN, img: bleu3 },
+        { step: `Lay the halved cheese slices and halved ham slices on top of the breasts.`, section: SECTIONS.MAIN, img: bleu1 },
+        { step: `Fold over the chicken to enclose the ham and cheese.`, section: SECTIONS.MAIN, img: bleu2 },
         { step: `Preheat the oven to 400ºF when ready to bake.`, section: SECTIONS.MAIN },
         { step: `Crush the cornflakes cereal until it becomes fine and place in a bowl as a "dredging" station.`, section: SECTIONS.MAIN },
-        { step: `Add salt and pepper to the chicken on both sides.`, section: SECTIONS.MAIN, img: bleu4 },
+        { step: `Add salt and pepper to the chicken on both sides.`, section: SECTIONS.MAIN },
         { step: `Melt the butter and brush the chicken on both sides.`, section: SECTIONS.MAIN },
-        { step: `Dip the chicken into the cornflakes and place in a baking pan.`, section: SECTIONS.MAIN, img: bleu5 },
-        { step: `Bake on the center rack for 30 minutes, or until the chicken is cooked through (160ºF).`, section: SECTIONS.MAIN, img: bleu6 },
-        { step: `Warm mayo and mustard together in a sauce pan right before you serve it with the chicken cordon bleu.`, section: SECTIONS.SAUCE, img: [bleu7, bleu8] },
-        { step: `Serve the chicken cordon bleu with the warm mayo and mustard sauce.`, section: SECTIONS.SERVE, img: [bleu9, bleu10] },
+        { step: `Dip the chicken into the cornflakes and place in a baking pan.`, section: SECTIONS.MAIN, img: bleu3 },
+        { step: `Bake on the center rack for 30 minutes, or until the chicken is cooked through (160ºF).`, section: SECTIONS.MAIN, img: bleu4 },
+        { step: `Warm mayo and mustard together in a sauce pan right before you serve it with the chicken cordon bleu.`, section: SECTIONS.SAUCE, img: bleu5 },
+        { step: `Serve the chicken cordon bleu with the warm mayo and mustard sauce.`, section: SECTIONS.SERVE, img: bleu6 },
     ],
     notes: [
-        'You can choose to freeze the chicken cordon bleu up to 3 months. Thaw in the refrigerator overnight before baking.'
+        { note: 'You can choose to freeze the chicken cordon bleu up to 3 months. Thaw in the refrigerator overnight before baking.' },
     ],
     store: [
         {
