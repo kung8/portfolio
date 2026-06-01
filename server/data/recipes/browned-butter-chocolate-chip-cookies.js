@@ -6,7 +6,6 @@ const cookies5 = '../assets/Products/browned-butter-chocolate-chip-cookies-5.jpe
 const cookies6 = '../assets/Products/browned-butter-chocolate-chip-cookies-6.jpeg';
 const cookies7 = '../assets/Products/browned-butter-chocolate-chip-cookies-7.jpeg';
 const cookies8 = '../assets/Products/browned-butter-chocolate-chip-cookies-8.jpeg';
-const cookies9 = '../assets/Products/browned-butter-chocolate-chip-cookies-9.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BAKING_SODA, BROWNED_BUTTER, BROWN_SUGAR, CAKE_FLOUR, COOLING_RACK, CORNSTARCH, EGG, EGG_YOLK, MILK_CHOCOLATE, MIXING_BOWL, OVEN, SALT, SAUCEPAN, SEMI_SWEET_CHOCOLATE_CHIPS, SILICONE_BAKING_MAT, STOVE, VANILLA_EXTRACT, WALNUTS, WHITE_SUGAR } = require('./ingredients');
@@ -75,7 +74,7 @@ module.exports = {
         { step: `Divide the dough into 8 to 24 mounds (depending on how large you want the cookies). They will look about the same when they finish.`, section: SECTIONS.MAIN, img: [cookies5, cookies6] },
         { step: `Bake until golden brown (about 8 to 11 minutes).`, section: SECTIONS.MAIN, img: cookies7 },
         { step: `Let the cookies cool on a cooling rack (about 10 minutes).`, section: SECTIONS.MAIN },
-        { step: `Enjoy these warm, fluffy, gooey treats.`, section: SECTIONS.MAIN, img: cookies9 },
+        { step: `Enjoy these warm, fluffy, gooey treats.`, section: SECTIONS.MAIN },
     ],
     store: [
         {
