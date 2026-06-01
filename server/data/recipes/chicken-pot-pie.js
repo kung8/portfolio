@@ -3,10 +3,6 @@ const pie2 = '../assets/Products/chicken-pot-pie-2.jpeg';
 const pie3 = '../assets/Products/chicken-pot-pie-3.jpeg';
 const pie4 = '../assets/Products/chicken-pot-pie-4.jpeg';
 const pie5 = '../assets/Products/chicken-pot-pie-5.jpeg';
-const pie6 = '../assets/Products/chicken-pot-pie-6.jpeg';
-const pie7 = '../assets/Products/chicken-pot-pie-7.jpeg';
-const pie8 = '../assets/Products/chicken-pot-pie-8.jpeg';
-const pie9 = '../assets/Products/chicken-pot-pie-9.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -31,7 +27,7 @@ const {
 module.exports = {
     cardName: 'Chicken Pot Pie',
     name: 'Chicken Pot Pie',
-    img: pie8,
+    img: pie5,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.BRITISH, GENRES.WESTERN, GENRES.AMERICAN],
@@ -77,23 +73,23 @@ module.exports = {
     ],
     directions: [
         { step: `Over medium-high heat, boil water in a large pot.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Add chicken breast. Boil until chicken is cooked through (about 15 minutes).`, section: SECTIONS.COOK_CHICKEN, img: pie1 },
+        { step: `Add chicken breast. Boil until chicken is cooked through (about 15 minutes).`, section: SECTIONS.COOK_CHICKEN },
         { step: `Transfer chicken carefully to a cutting board. Cut into 1/2 inch pieces.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Set aside.`, section: SECTIONS.COOK_CHICKEN },
 
         { step: `Over medium heat, add butter to a large pan.`, section: SECTIONS.COOK_FILLING },
-        { step: `Add flour, onion, salt, and pepper. Cook until bubbling.`, section: SECTIONS.COOK_FILLING, img: pie2 },
-        { step: `Add milk and broth. Stir constantly until boils for 1 minute.`, section: SECTIONS.COOK_FILLING, img: pie3 },
-        { step: `Add chicken and the "${SECTIONS.FROZEN}" section ingredients. Cook until hot.`, section: SECTIONS.COOK_FILLING, img: pie4 },
+        { step: `Add flour, onion, salt, and pepper. Cook until bubbling.`, section: SECTIONS.COOK_FILLING },
+        { step: `Add milk and broth. Stir constantly until boils for 1 minute.`, section: SECTIONS.COOK_FILLING },
+        { step: `Add chicken and the "${SECTIONS.FROZEN}" section ingredients. Cook until hot.`, section: SECTIONS.COOK_FILLING, img: pie1 },
 
         { step: `Preheat the oven to 425ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: `Roll out the pie crust and place inside the pan. Be sure to get the crust up the sides too.`, section: SECTIONS.ASSEMBLE, img: pie5 },
-        { step: `Pour filling inside the pie crust.`, section: SECTIONS.ASSEMBLE, img: pie6 },
+        { step: `Roll out the pie crust and place inside the pan. Be sure to get the crust up the sides too.`, section: SECTIONS.ASSEMBLE, img: pie2 },
+        { step: `Pour filling inside the pie crust.`, section: SECTIONS.ASSEMBLE, img: pie3 },
         { step: `Roll the remaining dough on top of the mixture and turn edges over pie pan.`, section: SECTIONS.ASSEMBLE },
-        { step: `Poke holes through the top to allow for steam to be released.`, section: SECTIONS.ASSEMBLE, img: pie7 },
+        { step: `Poke holes through the top to allow for steam to be released.`, section: SECTIONS.ASSEMBLE, img: pie4 },
         { step: `Bake the pie until golden brown (about 30 to 35 minutes).`, section: SECTIONS.BAKE },
-        { step: `Enjoy this comfort food in the comforts of your own home.`, section: SECTIONS.SERVE, img: pie9 },
+        { step: `Enjoy this comfort food in the comforts of your own home.`, section: SECTIONS.SERVE },
     ],
     store: [
         {
