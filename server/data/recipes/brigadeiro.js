@@ -1,11 +1,8 @@
-const brigadeiro1 = '../assets/Products/brigadeiro-1.jpeg';
+const brigadeiro1 = '../assets/Products/brigadeiro-1.mp4';
 const brigadeiro2 = '../assets/Products/brigadeiro-2.jpeg';
-const brigadeiro3 = '../assets/Products/brigadeiro-3.mp4';
+const brigadeiro3 = '../assets/Products/brigadeiro-3.jpeg';
 const brigadeiro4 = '../assets/Products/brigadeiro-4.jpeg';
 const brigadeiro5 = '../assets/Products/brigadeiro-5.jpeg';
-const brigadeiro6 = '../assets/Products/brigadeiro-6.jpeg';
-const brigadeiro7 = '../assets/Products/brigadeiro-7.jpeg';
-const brigadeiro8 = '../assets/Products/brigadeiro-8.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BOWL, REFRIGERATOR, SAUCEPAN, SEMI_SWEET_CHOCOLATE_CHIPS, SPATULA, SPRINKLES, STOVE, SWEETENED_CONDENSED_MILK, UNSALTED_BUTTER } = require('./ingredients');
@@ -15,7 +12,7 @@ const BRIGADEIRO_SECTION = 'Brigadeiro';
 module.exports = {
     cardName: 'Brigadeiro',
     name: 'Brigadeiro',
-    img: brigadeiro8,
+    img: brigadeiro5,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -51,16 +48,16 @@ module.exports = {
         { ...BOWL, additionalDetails: 'for toppings' },
     ],
     directions: [
-        { step: `In a saucepan, combine "${BRIGADEIRO_SECTION}" section ingredients.`, section: SECTIONS.PREP_DOUGH, img: brigadeiro1 },
-        { step: `Over medium heat, bring to a boil and stir non-stop.`, section: SECTIONS.PREP_DOUGH, img: brigadeiro2 },
-        { step: `Cook until thick and the bottom is visible (about 10 minutes). Dough is ready when a spatula full falls in clumps instead of a steady stream.`, section: SECTIONS.PREP_DOUGH, video: brigadeiro3 },
-        { step: `Transfer to a bowl. Place in the fridge. Chill for 2 hours.`, section: SECTIONS.PREP_DOUGH, img: brigadeiro4 },
+        { step: `In a saucepan, combine "${BRIGADEIRO_SECTION}" section ingredients.`, section: SECTIONS.PREP_DOUGH },
+        { step: `Over medium heat, bring to a boil and stir non-stop.`, section: SECTIONS.PREP_DOUGH },
+        { step: `Cook until thick and the bottom is visible (about 10 minutes). Dough is ready when a spatula full falls in clumps instead of a steady stream.`, section: SECTIONS.PREP_DOUGH, video: brigadeiro1 },
+        { step: `Transfer to a bowl. Place in the fridge. Chill for 2 hours.`, section: SECTIONS.PREP_DOUGH, img: brigadeiro2 },
 
         { step: `In various bowls, prepare sprinkles and other toppings.`, section: SECTIONS.ASSEMBLE },
-        { step: `Set out paper cups on a plate.`, section: SECTIONS.ASSEMBLE, img: brigadeiro5 },
+        { step: `Set out paper cups on a plate.`, section: SECTIONS.ASSEMBLE },
         { step: `Run a little butter between your hands.`, section: SECTIONS.ASSEMBLE },
-        { step: `Scoop a spoonful of the dough and roll into a ball.`, section: SECTIONS.ASSEMBLE, img: brigadeiro6 },
-        { step: `Roll balls in sprinkles and/or toppings. Shake in cupped hand to help round the ball (like when rolling a dice).`, section: SECTIONS.ASSEMBLE, img: brigadeiro7 },
+        { step: `Scoop a spoonful of the dough and roll into a ball.`, section: SECTIONS.ASSEMBLE, img: brigadeiro3 },
+        { step: `Roll balls in sprinkles and/or toppings. Shake in cupped hand to help round the ball (like when rolling a dice).`, section: SECTIONS.ASSEMBLE, img: brigadeiro4 },
 
         { step: `Enjoy these Brazilian desserts.`, section: SECTIONS.SERVE },
     ],
