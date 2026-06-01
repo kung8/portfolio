@@ -1,10 +1,5 @@
 const curry1 = '../assets/Products/indian-chicken-tikka-masala-1.jpeg';
 const curry2 = '../assets/Products/indian-chicken-tikka-masala-2.jpeg';
-const curry3 = '../assets/Products/indian-chicken-tikka-masala-3.jpeg';
-const curry4 = '../assets/Products/indian-chicken-tikka-masala-4.jpeg';
-const curry5 = '../assets/Products/indian-chicken-tikka-masala-5.jpeg';
-const curry6 = '../assets/Products/indian-chicken-tikka-masala-6.jpeg';
-const curry7 = '../assets/Products/indian-chicken-tikka-masala-7.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CAYENNE_PEPPER, CINNAMON, CUMIN, CURRY_POWDER, GARLIC, GHEE, GINGER, HEAVY_CREAM, LARGE_PAN, LARGE_POT, PAPRIKA, SALT, STOVE, TOMATO_SAUCE, TURMERIC, VEGETABLE_OIL, WHITE_SUGAR, YELLOW_ONION } = require('./ingredients');
@@ -12,7 +7,7 @@ const { BONELESS_AND_SKINLESS_CHICKEN_BREAST, CAYENNE_PEPPER, CINNAMON, CUMIN, C
 module.exports = {
     cardName: 'Chicken Tikka Masala',
     name: 'Chicken Tikka Masala',
-    img: curry6,
+    img: curry2,
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -60,16 +55,16 @@ module.exports = {
         { step: `Add onions. Cook and stir until it becomes translucent (about 5 minutes).`, section: SECTIONS.SAUCE },
         { step: `Add garlic. Cook and stir until fragrant (about 1 minute).`, section: SECTIONS.SAUCE },
         { step: `Add cumin, salt, ginger, cayenne pepper, cinnamon, and turmeric. Cook and stir until fragrant (about 2 minutes).`, section: SECTIONS.SAUCE },
-        { step: `Add tomato sauce. Bring to a boil and reduce to low heat.`, section: SECTIONS.SAUCE, img: curry1 },
+        { step: `Add tomato sauce. Bring to a boil and reduce to low heat.`, section: SECTIONS.SAUCE },
         { step: `Simmer sauce for 10 minutes.`, section: SECTIONS.SAUCE },
-        { step: `Add cream, sugar and paprika.`, section: SECTIONS.SAUCE, img: curry2 },
-        { step: `Bring to a simmer and cook until sauce has thickened (about 10 to 15 minutes).`, section: SECTIONS.SAUCE, img: curry3 },
+        { step: `Add cream, sugar and paprika.`, section: SECTIONS.SAUCE },
+        { step: `Bring to a simmer and cook until sauce has thickened (about 10 to 15 minutes).`, section: SECTIONS.SAUCE },
         { step: `Over medium heat, heat vegetable oil in a large pan.`, section: SECTIONS.MAIN },
         { step: `Add chicken and curry powder.`, section: SECTIONS.MAIN },
-        { step: `Sear chicken until lightly browned (about 3 minutes). It is fine to not be cooked all the way through.`, section: SECTIONS.MAIN, img: curry4 },
-        { step: `Transfer chicken to the sauce. Simmer until sauce is cooked through (about 30 minutes).`, section: SECTIONS.MAIN, img: curry5 },
+        { step: `Sear chicken until lightly browned (about 3 minutes). It is fine to not be cooked all the way through.`, section: SECTIONS.MAIN },
+        { step: `Transfer chicken to the sauce. Simmer until sauce is cooked through (about 30 minutes).`, section: SECTIONS.MAIN, img: curry1 },
         { step: `Add salt and sugar to taste.`, section: SECTIONS.MAIN },
-        { step: `Serve with rice and naan or roti.`, section: SECTIONS.MAIN, img: curry7 },
+        { step: `Serve with rice and naan or roti.`, section: SECTIONS.MAIN },
     ],
     store: [
         // {
