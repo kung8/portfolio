@@ -1,8 +1,7 @@
 const cheeseballs1 = '../assets/Products/cheeseballs-1.jpeg';
-const pizza5 = '../assets/Products/pizza-5.jpeg';
-const pizza6 = '../assets/Products/pizza-6.jpeg';
-const pizza8 = '../assets/Products/pizza-8.MOV';
-const pizza25 = '../assets/Products/pizza-25.jpeg';
+const pizza2 = '../assets/Products/pizza-2.jpeg';
+const pizza4 = '../assets/Products/pizza-4.MOV';
+const pizza9 = '../assets/Products/pizza-9.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
@@ -75,16 +74,16 @@ module.exports = {
         { step: `Form a well in the center of the mixture and slowly add water and honey.`, section: SECTIONS.PREP_DOUGH },
         { step: `Continue to work the liquid into the entire mixture until the dough becomes only a little sticky.`, section: SECTIONS.PREP_DOUGH },
         { step: `Coat the inside of a large bowl with some oil.`, section: SECTIONS.PREP_DOUGH },
-        { step: `Place the dough inside that oiled bowl and cover with plastic wrap or a cooking towel and refrigerate between 48 to 72 hours. This allows the dough to rise and adds flavor.`, section: SECTIONS.PREP_DOUGH, img: pizza6 },
+        { step: `Place the dough inside that oiled bowl and cover with plastic wrap or a cooking towel and refrigerate between 48 to 72 hours. This allows the dough to rise and adds flavor.`, section: SECTIONS.PREP_DOUGH, img: pizza2 },
         
         { step: `When you are ready to make the cheeseballs, preheat the oven to 450ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
         { step: `Grease a baking sheet with 1 Tablespoon olive oil.`, section: SECTIONS.FORM_DOUGH },
         { step: `This is the fun part where you will work the dough. Again on a clean counter sprinkle some flour (and you may need to add some more later so keep that flour handy).`, section: SECTIONS.FORM_DOUGH },
-        { step: `Cut a portion of the dough (about a 4 inch ball). Freeze the remainder in the freezer. Note that the dough will rise slightly more as it returns to room temperature.`, section: SECTIONS.FORM_DOUGH, img: pizza25 },
-        { step: `Place the dough ball on the floured counter. And begin kneading and pulling and stretching the dough. Continue until the dough has become less sticky. Add more flour conservatively. If you have added too much flour, you can add more water but try to avoid doing that.`, section: SECTIONS.FORM_DOUGH, img: pizza5 },
+        { step: `Cut a portion of the dough (about a 4 inch ball). Freeze the remainder in the freezer. Note that the dough will rise slightly more as it returns to room temperature.`, section: SECTIONS.FORM_DOUGH, img: pizza9 },
+        { step: `Place the dough ball on the floured counter. And begin kneading and pulling and stretching the dough. Continue until the dough has become less sticky. Add more flour conservatively. If you have added too much flour, you can add more water but try to avoid doing that.`, section: SECTIONS.FORM_DOUGH },
         { step: `Tossing the dough helps form the crust and gives the dough texture and flavor. Flatten the dough using a rolling pin until it's about 8 inches wide and you will place your closed fists beneath it (at about 10-and-2 steering wheel position). The tricky part is to avoid tearing the dough by making it too thin and accidentally ripping the dough with your fingers. So tuck those fingers in and use just your knuckles.`, section: SECTIONS.FORM_DOUGH },
-        { step: `Pull your fists apart to pull the dough edges and try to get all around. Then with a quick flick of the wrists throw the dough directly up in the air and catch the dough with your closed fists.`, section: SECTIONS.FORM_DOUGH, video: pizza8 },
+        { step: `Pull your fists apart to pull the dough edges and try to get all around. Then with a quick flick of the wrists throw the dough directly up in the air and catch the dough with your closed fists.`, section: SECTIONS.FORM_DOUGH, video: pizza4 },
         { step: `Keep doing this until you are satisfied with the dough size and thickness.`, section: SECTIONS.FORM_DOUGH },
 
         { step: `Cut the dough into about 2 to 2-1/2 inch squares and fill the center with shredded cheese.`, section: FORM_CHEESEBALLS},

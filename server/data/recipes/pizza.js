@@ -1,29 +1,12 @@
 const pizza1 = '../assets/Products/pizza-1.jpeg';
 const pizza2 = '../assets/Products/pizza-2.jpeg';
 const pizza3 = '../assets/Products/pizza-3.jpeg';
-const pizza4 = '../assets/Products/pizza-4.jpeg';
+const pizza4 = '../assets/Products/pizza-4.MOV';
 const pizza5 = '../assets/Products/pizza-5.jpeg';
 const pizza6 = '../assets/Products/pizza-6.jpeg';
 const pizza7 = '../assets/Products/pizza-7.jpeg';
-const pizza8 = '../assets/Products/pizza-8.MOV';
+const pizza8 = '../assets/Products/pizza-8.jpeg';
 const pizza9 = '../assets/Products/pizza-9.jpeg';
-const pizza10 = '../assets/Products/pizza-10.jpeg';
-const pizza11 = '../assets/Products/pizza-11.jpeg';
-const pizza12 = '../assets/Products/pizza-12.jpeg';
-const pizza13 = '../assets/Products/pizza-13.jpeg';
-const pizza14 = '../assets/Products/pizza-14.jpeg';
-const pizza15 = '../assets/Products/pizza-15.jpeg';
-const pizza16 = '../assets/Products/pizza-16.jpeg';
-const pizza17 = '../assets/Products/pizza-17.jpeg';
-const pizza18 = '../assets/Products/pizza-18.jpeg';
-const pizza19 = '../assets/Products/pizza-19.jpeg';
-const pizza20 = '../assets/Products/pizza-20.jpeg';
-const pizza21 = '../assets/Products/pizza-21.jpeg';
-const pizza22 = '../assets/Products/pizza-22.jpeg';
-const pizza23 = '../assets/Products/pizza-23.jpeg';
-const pizza24 = '../assets/Products/pizza-24.jpeg';
-const pizza25 = '../assets/Products/pizza-25.jpeg';
-const pizza26 = '../assets/Products/pizza-26.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
@@ -83,7 +66,7 @@ const SUPREME_PIZZA = 'Supreme Pizza';
 module.exports = {
     cardName: 'Homemade Pizza',
     name: 'Homemade Pizza',
-    img: pizza26,
+    img: pizza8,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -197,39 +180,41 @@ module.exports = {
     ],
     directions: [
         { step: `On a clean counter, combine flour, salt, and yeast by hand. We are making focaccia bread.`, section: SECTIONS.DOUGH },
-        { step: `Form a well in the center of the mixture and slowly add water and honey.`, section: SECTIONS.DOUGH, img: [pizza1, pizza2] },
-        { step: `Continue to work the liquid into the entire mixture until the dough becomes only a little sticky.`, section: SECTIONS.DOUGH, img: [pizza3, pizza4] },
+        { step: `Form a well in the center of the mixture and slowly add water and honey.`, section: SECTIONS.DOUGH },
+        { step: `Continue to work the liquid into the entire mixture until the dough becomes only a little sticky.`, section: SECTIONS.DOUGH, img: pizza1 },
         { step: `Coat the inside of a large bowl with some oil.`, section: SECTIONS.DOUGH },
-        { step: `Place the dough inside that oiled bowl and cover with plastic wrap or a cooking towel and refrigerate between 48 to 72 hours. This allows the dough to rise and adds flavor.`, section: SECTIONS.DOUGH, img: [pizza5, pizza6] },
+        { step: `Place the dough inside that oiled bowl and cover with plastic wrap or a cooking towel and refrigerate between 48 to 72 hours. This allows the dough to rise and adds flavor.`, section: SECTIONS.DOUGH, img: pizza2 },
         { step: `When you are ready to make the pizza, preheat the oven too 450ºF.`, section: SECTIONS.DOUGH },
         { step: `Grease a baking sheet with 1 Tablespoon olive oil.`, section: SECTIONS.DOUGH },
         { step: `This is the fun part where you will work the dough. Again on a clean counter sprinkle some flour (and you may need to add some more later so keep that flour handy).`, section: SECTIONS.DOUGH },
-        { step: `Depending on how much the dough rose you might be able to make 2 to 3 pizzas. Note that the dough will rise slightly more as it returns to room temperature. Cut the dough to that number of desired pizzas and re-ball each of the dough parts and set aside.`, section: SECTIONS.DOUGH, img: pizza7 },
+        { step: `Depending on how much the dough rose you might be able to make 2 to 3 pizzas. Note that the dough will rise slightly more as it returns to room temperature. Cut the dough to that number of desired pizzas and re-ball each of the dough parts and set aside.`, section: SECTIONS.DOUGH, img: pizza3 },
         { step: `Place one of dough balls on the floured counter. And begin kneading and pulling and stretching the dough. Continue until the dough has become less sticky. Add more flour conservatively. If you have added too much flour, you can add more water but try to avoid doing that.`, section: SECTIONS.DOUGH },
         { step: `Tossing the dough helps form the crust and gives the dough texture and flavor. Flatten the dough using a rolling pin until it's about 8 inches wide and you will place your closed fists beneath it (at about 10-and-2 steering wheel position). The tricky part is to avoid tearing the dough by making it too thin and accidentally ripping the dough with your fingers. So tuck those fingers in and use just your knuckles.`, section: SECTIONS.DOUGH },
-        { step: `Pull your fists apart to pull the dough edges and try to get all around. Then with a quick flick of the wrists throw the dough directly up in the air and catch the dough with your closed fists.`, section: SECTIONS.DOUGH, video: pizza8 },
+        { step: `Pull your fists apart to pull the dough edges and try to get all around. Then with a quick flick of the wrists throw the dough directly up in the air and catch the dough with your closed fists.`, section: SECTIONS.DOUGH, video: pizza4 },
         { step: `Keep doing this until you are satisfied with the pizza size and thickness.`, section: SECTIONS.DOUGH },
         { step: `Over medium-high heat, combine olive oil, honey, and red pepper flakes in a saucepan.`, section: BOBO_BRAZIL_SAUCE },
         { step: `Cook for 1 to 2 minutes and set aside. Top the Bobo Brazil pizza with this sauce after baking.`, section: BOBO_BRAZIL_SAUCE },
-        { step: `Over medium heat, melt the butter in a saucepan.`, section: PHILLY_CHEESESTEAK_SAUCE, img: pizza9 },
-        { step: `Mix in flour and cook (about 1 minute).`, section: PHILLY_CHEESESTEAK_SAUCE, img: [pizza10, pizza11] },
-        { step: `Slowly mix in cold milk and garlic. Bring the sauce to a simmer.`, section: PHILLY_CHEESESTEAK_SAUCE, img: pizza12 },
+
+        { step: `Over medium heat, melt the butter in a saucepan.`, section: PHILLY_CHEESESTEAK_SAUCE },
+        { step: `Mix in flour and cook (about 1 minute).`, section: PHILLY_CHEESESTEAK_SAUCE },
+        { step: `Slowly mix in cold milk and garlic. Bring the sauce to a simmer.`, section: PHILLY_CHEESESTEAK_SAUCE },
         { step: `Add salt, black pepper and nutmeg. Mix.`, section: PHILLY_CHEESESTEAK_SAUCE },
-        { step: `Remove from heat and add parmesan cheese.`, section: PHILLY_CHEESESTEAK_SAUCE, img: pizza13 },
+        { step: `Remove from heat and add parmesan cheese.`, section: PHILLY_CHEESESTEAK_SAUCE },
         { step: `Let the sauce cool for 5 to 10 minutes.`, section: PHILLY_CHEESESTEAK_SAUCE },
         { step: `Over medium-high heat, add olive oil in a frying pan.`, section: PHILLY_CHEESESTEAK_PIZZA },
-        { step: `Add the thin steak slices to the pan and season with salt and pepper.`, section: PHILLY_CHEESESTEAK_PIZZA, img: pizza14 },
-        { step: `Sear for 1 to 2 minutes total, making sure to flip halfway.`, section: PHILLY_CHEESESTEAK_PIZZA, img: [pizza15, pizza16] },
-        { step: `Cut the steak into strips or bite-sized pieces. Set aside to top the pizza.`, section: PHILLY_CHEESESTEAK_PIZZA, img: pizza17 },
+        { step: `Add the thin steak slices to the pan and season with salt and pepper.`, section: PHILLY_CHEESESTEAK_PIZZA },
+        { step: `Sear for 1 to 2 minutes total, making sure to flip halfway.`, section: PHILLY_CHEESESTEAK_PIZZA },
+        { step: `Cut the steak into strips or bite-sized pieces. Set aside to top the pizza.`, section: PHILLY_CHEESESTEAK_PIZZA },
         { step: `Add a layer of Philly cheesesteak sauce on the dough.`, section: PHILLY_CHEESESTEAK_PIZZA },
-        { step: `Add the other ingredients evenly across the pizza and follow the baking steps below.`, section: PHILLY_CHEESESTEAK_PIZZA, img: pizza18 },
+        { step: `Add the other ingredients evenly across the pizza and follow the baking steps below.`, section: PHILLY_CHEESESTEAK_PIZZA, img: pizza5 },
+
         { step: `Place the shaped dough on the pan and add your favorite toppings.`, section: SECTIONS.MAIN },
         { step: `Bake the pizza for 20 to 25 minutes or until a nice golden brown.`, section: SECTIONS.MAIN },
-        { step: `Enjoy these slices of heaven with friends and family.`, section: SECTIONS.MAIN, img: [pizza19, pizza20, pizza21, pizza22, pizza23, pizza24] },
-        { step: `If you have any leftover dough that you aren't ready to use, you can freeze it and make pizzas, breadsticks, or cheeseballs.`, section: SECTIONS.MAIN, img: pizza25 },
+        { step: `Enjoy these slices of heaven with friends and family.`, section: SECTIONS.MAIN, img: [pizza6, pizza7] },
     ],
     notes: [
         { note: "If you need to slice the beef into thin slices, you can place the beef in the freezer for 20 to 30 minutes to make it easier to slice." },
+        { note: `If you have any leftover dough that you aren't ready to use, you can freeze it and make pizzas, breadsticks, or cheeseballs.`, section: SECTIONS.MAIN, img: pizza9 },
     ],
     store: [
         {
