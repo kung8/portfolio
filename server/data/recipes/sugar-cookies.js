@@ -4,23 +4,6 @@ const cookie3 = '../assets/Products/sugar-cookies-3.jpeg';
 const cookie4 = '../assets/Products/sugar-cookies-4.jpeg';
 const cookie5 = '../assets/Products/sugar-cookies-5.jpeg';
 const cookie6 = '../assets/Products/sugar-cookies-6.jpeg';
-const cookie7 = '../assets/Products/sugar-cookies-7.jpeg';
-const cookie8 = '../assets/Products/sugar-cookies-8.jpeg';
-const cookie9 = '../assets/Products/sugar-cookies-9.jpeg';
-const cookie10 = '../assets/Products/sugar-cookies-10.jpeg';
-const cookie11 = '../assets/Products/sugar-cookies-11.jpeg';
-const cookie12 = '../assets/Products/sugar-cookies-12.jpeg';
-const cookie13 = '../assets/Products/sugar-cookies-13.jpeg';
-const cookie14 = '../assets/Products/sugar-cookies-14.jpeg';
-const cookie15 = '../assets/Products/sugar-cookies-15.jpeg';
-const cookie16 = '../assets/Products/sugar-cookies-16.jpeg';
-const cookie17 = '../assets/Products/sugar-cookies-17.jpeg';
-const cookie18 = '../assets/Products/sugar-cookies-18.jpeg';
-const cookie19 = '../assets/Products/sugar-cookies-19.jpeg';
-const cookie20 = '../assets/Products/sugar-cookies-20.jpeg';
-const cookie21 = '../assets/Products/sugar-cookies-21.jpeg';
-const cookie22 = '../assets/Products/sugar-cookies-22.jpeg';
-const cookie23 = '../assets/Products/sugar-cookies-23.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, ALMOND_EXTRACT, BAKING_SHEET, BAKING_SODA, CONFECTIONERS_SUGAR, COOKIE_CUTTERS, COOLING_RACK, CRYSTAL_SUGAR, EGG, KNIFE, MEDIUM_BOWL, MERINGUE_POWDER, OVEN, ROLLING_PIN, ROOM_TEMPERATURE_WATER, SALT, SILICONE_BAKING_MAT, SPRINKLES, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
@@ -33,7 +16,7 @@ const ROYAL_ICING = 'Royal Icing';
 module.exports = {
     cardName: 'Sugar Cookies',
     name: 'Sugar Cookies',
-    img: cookie23,
+    img: cookie6,
     available: true,
     recommended: false,
     category: [CATEGORIES.DESSERT],
@@ -86,28 +69,29 @@ module.exports = {
         COOLING_RACK,
     ],
     directions: [
-        { step: `In medium bowl, combine the "Dry Ingredients" together.`, section: DRY_INGREDIENTS, img: cookie1 },
-        { step: `In a stand mixer bowl, cream butter and sugar (about 3 minutes on high).`, section: WET_BATTER, img: [cookie2, cookie3] },
-        { step: `Add egg, vanilla, and almond extract (about 1 minute on high).`, section: WET_BATTER, img: cookie4 },
+        { step: `In medium bowl, combine the "Dry Ingredients" together.`, section: DRY_INGREDIENTS },
+        { step: `In a stand mixer bowl, cream butter and sugar (about 3 minutes on high).`, section: WET_BATTER },
+        { step: `Add egg, vanilla, and almond extract (about 1 minute on high).`, section: WET_BATTER },
         { step: `Scrape the sides down and continue beating if needed.`, section: WET_BATTER },
-        { step: `Add the dry ingredients to the stand mixer.`, section: WET_BATTER, img: cookie5 },
-        { step: `Beat on low. The dough should be soft. But if it is too soft add 1 Tbsp of flour.`, section: WET_BATTER, img: [cookie6, cookie7] },
-        { step: `Lightly flour two silicon baking mats.`, section: SUGAR_COOKIES, img: cookie8 },
-        { step: `Divide the dough in half and place each on the mats.`, section: SUGAR_COOKIES, img: cookie9 },
-        { step: `With a floured rolling pin, roll out dough until it is about 1/4 inch thick. Add more flour if it is still sticky.`, section: SUGAR_COOKIES, img: [cookie10, cookie11] },
-        { step: `Sprinkle flour on top of each of the rolled-out dough.`, section: SUGAR_COOKIES, img: cookie12 },
-        { step: `Place parchment paper on top of one. Stack the second mat on top.`, section: SUGAR_COOKIES, img: [cookie13, cookie14] },
-        { step: `Cover with plastic wrap. Refrigerate for 1 to 2 hours (up to 2 days).`, section: SUGAR_COOKIES, img: [cookie15, cookie16] },
+        { step: `Add the dry ingredients to the stand mixer.`, section: WET_BATTER },
+        { step: `Beat on low. The dough should be soft. But if it is too soft add 1 Tbsp of flour.`, section: WET_BATTER },
+        { step: `Lightly flour two silicon baking mats.`, section: SUGAR_COOKIES },
+        { step: `Divide the dough in half and place each on the mats.`, section: SUGAR_COOKIES, img: cookie1 },
+        { step: `With a floured rolling pin, roll out dough until it is about 1/4 inch thick. Add more flour if it is still sticky.`, section: SUGAR_COOKIES, img: cookie2 },
+        { step: `Sprinkle flour on top of each of the rolled-out dough.`, section: SUGAR_COOKIES },
+        { step: `Place parchment paper on top of one. Stack the second mat on top.`, section: SUGAR_COOKIES, img: cookie3 },
+        { step: `Cover with plastic wrap. Refrigerate for 1 to 2 hours (up to 2 days).`, section: SUGAR_COOKIES },
         { step: `Preheat the oven to 350ºF when ready to bake.`, section: SUGAR_COOKIES },
-        { step: `Cut dough into your favorite shapes using cookie cutters.`, section: SUGAR_COOKIES, img: cookie17 },
+        { step: `Cut dough into your favorite shapes using cookie cutters.`, section: SUGAR_COOKIES },
         { step: `Re-roll the scraps and repeat until all the dough is used.`, section: SUGAR_COOKIES },
         { step: `Place the cookies on silicon baking sheet an inch apart. They do not spread very much but they will rise slightly.`, section: SUGAR_COOKIES },
         { step: `Bake until the edges are lightly browned (about 11 to 12 minutes).`, section: SUGAR_COOKIES },
-        { step: `Let cookies cool for 5 minutes before transferring to a cooling rack.`, section: SUGAR_COOKIES, img: cookie18 },
+        { step: `Let cookies cool for 5 minutes before transferring to a cooling rack.`, section: SUGAR_COOKIES, img: cookie4 },
         { step: `Let the cookies cool completely before decorating.`, section: SUGAR_COOKIES },
-        { step: `In a stand mixer, combine the icing ingredients.`, section: ROYAL_ICING, img: [cookie19, cookie20] },
-        { step: `Beat on high until mixed (about 2 minutes).`, section: ROYAL_ICING, img: cookie21 },
-        { step: `When lifting the whisk, the icing should drip and smooth within 5 to 10 seconds. The longer you whisk the more air is added and the thicker the icing becomes. Normally the icing will dry in about 2 hours at room temperature. If the icing is too thin it will take longer to dry. If the icing is too thick it can also take longer to dry because of the layers. For intricate designs where you are layering the icing, you can place the decorated cookies in the refrigerator to speed up the drying process.`, section: ROYAL_ICING, img: cookie22 },
+
+        { step: `In a stand mixer, combine the icing ingredients.`, section: ROYAL_ICING },
+        { step: `Beat on high until mixed (about 2 minutes).`, section: ROYAL_ICING },
+        { step: `When lifting the whisk, the icing should drip and smooth within 5 to 10 seconds. The longer you whisk the more air is added and the thicker the icing becomes. Normally the icing will dry in about 2 hours at room temperature. If the icing is too thin it will take longer to dry. If the icing is too thick it can also take longer to dry because of the layers. For intricate designs where you are layering the icing, you can place the decorated cookies in the refrigerator to speed up the drying process.`, section: ROYAL_ICING, img: cookie5 },
         { step: `Use a knife to spread some icing on top of the cookies.`, section: SECTIONS.DECORATE },
         { step: `Add sprinkles and/or crystal sugars.`, section: SECTIONS.DECORATE },
         { step: `Let the decorated cookies cool for 2 hours.`, section: SECTIONS.DECORATE },
