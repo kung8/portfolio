@@ -5,17 +5,8 @@ const turkey4 = '../assets/Products/roast-turkey-4.jpeg';
 const turkey5 = '../assets/Products/roast-turkey-5.jpeg';
 const turkey6 = '../assets/Products/roast-turkey-6.jpeg';
 const turkey7 = '../assets/Products/roast-turkey-7.jpeg';
-const turkey8 = '../assets/Products/roast-turkey-8.jpeg';
-const turkey9 = '../assets/Products/roast-turkey-9.jpeg';
-const turkey10 = '../assets/Products/roast-turkey-10.jpeg';
-const turkey11 = '../assets/Products/roast-turkey-11.jpeg';
-const turkey12 = '../assets/Products/roast-turkey-12.jpeg';
-const turkey13 = '../assets/Products/roast-turkey-13.jpeg';
-const turkey14 = '../assets/Products/roast-turkey-14.jpeg';
-const turkey15 = '../assets/Products/roast-turkey-15.jpeg';
-const turkey16 = '../assets/Products/roast-turkey-16.png';
-const turkey17 = '../assets/Products/roast-turkey-17.png';
-const turkey18 = '../assets/Products/roast-turkey-18.jpeg';
+const turkey8 = '../assets/Products/roast-turkey-8.png';
+const turkey9 = '../assets/Products/roast-turkey-9.png';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -42,7 +33,7 @@ const CAVITY_FILLING = 'Cavity Filling';
 module.exports = {
     cardName: 'Roast Turkey',
     name: 'Garlic Herb Butter Roast Turkey',
-    img: turkey18,
+    img: turkey6,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -54,11 +45,11 @@ module.exports = {
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 260, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Roast Turkey', 
+        {
+            label: 'Roast Turkey',
             link: 'https://cafedelites.com/roast-turkey/',
             authors: ['Karina Carrel'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -67,9 +58,9 @@ module.exports = {
         { ...GARLIC, amount: 4, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: HERB_BUTTER_RUB },
         { ...SALT, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: HERB_BUTTER_RUB },
         { ...BLACK_PEPPER, amount: 2, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: HERB_BUTTER_RUB },
-        
+
         { ...TURKEY, amount: '', unit: '', additionalDetails: 'desired size', section: SECTIONS.TURKEY },
-        
+
         { ...GARLIC, amount: 3, unit: INGREDIENT_UNITS.HEAD, additionalDetails: 'halved', section: CAVITY_FILLING },
         { ...LEMON, amount: 2, unit: '', additionalDetails: 'sliced', section: CAVITY_FILLING },
         { ...ROSEMARY, amount: 6, unit: INGREDIENT_UNITS.SPRIG, additionalDetails: '', section: CAVITY_FILLING },
@@ -87,33 +78,33 @@ module.exports = {
         COOKING_THERMOMETER,
     ],
     directions: [
-        { step: `In a medium bowl, combine the "${HERB_BUTTER_RUB}" section ingredients.`, section: HERB_BUTTER_RUB, img: [turkey1, turkey2, turkey3] },
+        { step: `In a medium bowl, combine the "${HERB_BUTTER_RUB}" section ingredients.`, section: HERB_BUTTER_RUB, img: turkey1 },
         { step: `Divide the rub in half. Place half in the fridge.`, section: HERB_BUTTER_RUB },
 
         { step: `Preheat oven to 425ºF and set oven rack to the lowest level.`, section: SECTIONS.PREHEAT_OVEN },
-        { step: `Bring turkey to room temperature, clean, and pat dry.`, section: SECTIONS.PREP_TURKEY, img: turkey4 },
+        { step: `Bring turkey to room temperature, clean, and pat dry.`, section: SECTIONS.PREP_TURKEY },
         { step: `Loosen the skin of the turkey by gently sliding your fingers between the skin and the meat.`, section: SECTIONS.PREP_TURKEY },
-        { step: `Using your hands, rub half the softened herb butter on the turkey and in between the loosened skin. Then generously season with salt and pepper.`, section: SECTIONS.PREP_TURKEY, img: turkey5 },
-        { step: `Place turkey breast-side down and drizzle with part of the oil.`, section: SECTIONS.PREP_TURKEY, img: [turkey6, turkey7] },
+        { step: `Using your hands, rub half the softened herb butter on the turkey and in between the loosened skin. Then generously season with salt and pepper.`, section: SECTIONS.PREP_TURKEY, img: turkey2 },
+        { step: `Place turkey breast-side down and drizzle with part of the oil.`, section: SECTIONS.PREP_TURKEY },
 
         { step: `Roast uncovered for 30 min for small turkey or 45 min for large turkey.`, section: SECTIONS.BAKE },
-        { step: `Remove turkey from oven. Turn down the oven to 325ºF.`, section: SECTIONS.BAKE, img: turkey8 },
+        { step: `Remove turkey from oven. Turn down the oven to 325ºF.`, section: SECTIONS.BAKE },
         { step: `Carefully flip the turkey and baste with pan juice.`, section: SECTIONS.BAKE },
-        { step: `Stuff the turkey cavity with the "${CAVITY_FILLING}" section ingredients.`, section: SECTIONS.BAKE, img: [turkey9, turkey10] },
+        { step: `Stuff the turkey cavity with the "${CAVITY_FILLING}" section ingredients.`, section: SECTIONS.BAKE, img: turkey3 },
         { step: `Use a brush to spread some more herb rub on the turkey. Save some for one more slathering.`, section: SECTIONS.BAKE },
         { step: `Roast uncovered for another hour.`, section: SECTIONS.BAKE },
-        { step: `Use a brush to spread the remaining herb rub and roast for an additional 30 min for small turkey or 1 hr for large turkey.`, section: SECTIONS.BAKE, img: turkey11 },
-        { step: `Cook for an additional 30 minutes to 1 hour until the turkey reaches 165ºF. If the turkey is browning too quickly, tent the turkey with some foil.`, section: SECTIONS.BAKE, img: turkey12 },
+        { step: `Use a brush to spread the remaining herb rub and roast for an additional 30 min for small turkey or 1 hr for large turkey.`, section: SECTIONS.BAKE, img: turkey4 },
+        { step: `Cook for an additional 30 minutes to 1 hour until the turkey reaches 165ºF. If the turkey is browning too quickly, tent the turkey with some foil.`, section: SECTIONS.BAKE, img: turkey5 },
 
-        { step: `Let the turkey rest for 20 - 30 min before you carve and serve. Letting it rest allows for moisture and juices to spread throughout the turkey. While the turkey was cooking the juices were evaporated, so it would be dry.`, section: SECTIONS.COOL, img: turkey13 },
+        { step: `Let the turkey rest for 20 - 30 min before you carve and serve. Letting it rest allows for moisture and juices to spread throughout the turkey. While the turkey was cooking the juices were evaporated, so it would be dry.`, section: SECTIONS.COOL },
 
-        { step: `Enjoy the moist turkey slices with many other holiday favorites!`, section: SECTIONS.SERVE, img: turkey14 },
+        { step: `Enjoy the moist turkey slices with many other holiday favorites!`, section: SECTIONS.SERVE },
     ],
     notes: [
-        { note: 'Butterball is my favorite brand of turkey.', img: turkey15 },
+        { note: 'Butterball is my favorite brand of turkey.', img: turkey7 },
         { note: 'Sizes of the turkey: Small = 13 lb or less; large = 14 lb or more.' },
-        { note: 'Typically it takes 1 day to thaw 5 pounds of turkey in the fridge.', img: turkey16 },
-        { note: 'Typically you need to cook a turkey for about 13 - 15 min per pound.', img: turkey17 },
+        { note: 'Typically it takes 1 day to thaw 5 pounds of turkey in the fridge.', img: turkey8 },
+        { note: 'Typically you need to cook a turkey for about 13 - 15 min per pound.', img: turkey9 },
         { note: 'Plan for about 1 lb of turkey per person (or 1.5 lb per person if you want leftovers).' },
         { note: 'Avoid opening the oven door too often. It will cause the oven to lose heat and the turkey will take longer to cook.' },
     ],
