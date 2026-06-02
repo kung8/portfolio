@@ -1,10 +1,10 @@
+const omelette1 = '../assets/Products/american-omelette-1.jpeg';
 const omelette2 = '../assets/Products/american-omelette-2.jpeg';
-const omelette3 = '../assets/Products/american-omelette-3.jpeg';
 // E.g. of flipping method result
-const omelette4 = '../assets/Products/american-omelette-4.jpeg';
+const omelette3 = '../assets/Products/american-omelette-3.jpeg';
 // E.g. of folding method result
+const omelette4 = '../assets/Products/american-omelette-4.jpeg';
 const omelette5 = '../assets/Products/american-omelette-5.jpeg';
-const omelette6 = '../assets/Products/american-omelette-6.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -39,7 +39,7 @@ const FOLDING_METHOD = 'Folding Method';
 module.exports = {
     cardName: 'American Omelette',
     name: 'American Omelette',
-    img: omelette6,
+    img: omelette5,
     available: true,
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -90,7 +90,7 @@ module.exports = {
         { step: `Over medium-high heat, add butter to a hot pan.`, section: SECTIONS.COOK_VEGGIES },
         { step: `Add the "${SECTIONS.VEGGIES}" section ingredients. Cook until onions have browned a little.`, section: SECTIONS.COOK_VEGGIES },
 
-        { step: `Turn down to medium heat. Pour the egg batter over the veggies.`, section: ADD_EGG_BATTER, img: [omelette2, omelette3] },
+        { step: `Turn down to medium heat. Pour the egg batter over the veggies.`, section: ADD_EGG_BATTER, img: [omelette1, omelette2] },
         { step: `While still keeping it over the heat, tilt and angle and lift the edges to spread the runny egg on top and get it underneath.`, section: ADD_EGG_BATTER },
 
         { step: `Follow either the "${FLIPPING_METHOD}" or the "${FOLDING_METHOD}" directions. The folding method is much easier and quicker, but will definitely have a more gooey center.`, section: FLIP_OR_FOLD_METHOD },
@@ -100,9 +100,9 @@ module.exports = {
         { step: `I recommend doing this next step over the sink: flipping time. You are going to flip the egg in the air about the height of the diameter of the egg. Angle the pan about 45 degrees downward, and quickly catapult it up in the air with a quick thrust downward, causing it to flip. The tricky part is make sure you catch it.`, section: FLIPPING_METHOD },
         { step: `If you have successfully flipped it then the rest of this will be a piece of cake. Put it right back over the heat and add the tomatoes and ham to one half of the egg.`, section: FLIPPING_METHOD },
         { step: `Let the other side of the egg cook a few minutes.`, section: FLIPPING_METHOD },
-        { step: `Fold over the side that doesn't have the tomatoes. If the egg could use more time you can carefully flip the egg over again using your spatula this time.`, section: FLIPPING_METHOD, img: omelette4 },
+        { step: `Fold over the side that doesn't have the tomatoes. If the egg could use more time you can carefully flip the egg over again using your spatula this time.`, section: FLIPPING_METHOD, img: omelette3 },
 
-        { step: `Slowly check the bottom of the egg to see if it is a nice golden brown, add the spinach and cheese before folding the egg.`, section: FOLDING_METHOD, img: omelette5 },
+        { step: `Slowly check the bottom of the egg to see if it is a nice golden brown, add the spinach and cheese before folding the egg.`, section: FOLDING_METHOD, img: omelette4 },
 
         { step: `Enjoy this beautiful piece of art.`, section: SECTIONS.SERVE },
     ],
