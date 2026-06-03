@@ -4,14 +4,6 @@ const kolaches3 = '../assets/Products/texas-sausage-kolaches-3.jpeg';
 const kolaches4 = '../assets/Products/texas-sausage-kolaches-4.jpeg';
 const kolaches5 = '../assets/Products/texas-sausage-kolaches-5.jpeg';
 const kolaches6 = '../assets/Products/texas-sausage-kolaches-6.jpeg';
-const kolaches7 = '../assets/Products/texas-sausage-kolaches-7.jpeg';
-const kolaches8 = '../assets/Products/texas-sausage-kolaches-8.jpeg';
-const kolaches9 = '../assets/Products/texas-sausage-kolaches-9.jpeg';
-const kolaches10 = '../assets/Products/texas-sausage-kolaches-10.jpeg';
-const kolaches11 = '../assets/Products/texas-sausage-kolaches-11.jpeg';
-const kolaches12 = '../assets/Products/texas-sausage-kolaches-12.jpeg';
-const kolaches13 = '../assets/Products/texas-sausage-kolaches-13.jpeg';
-const kolaches14 = '../assets/Products/texas-sausage-kolaches-14.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, CHEDDAR_CHEESE, DOUGH_KNIFE, EGG, MILK, OVEN, PARCHMENT_PAPER, SALT, SAUCEPAN, SAUSAGE_LINK, STAND_MIXER, STOVE, UNSALTED_BUTTER, WATER, WHITE_SUGAR, YEAST } = require('./ingredients');
@@ -24,7 +16,7 @@ const PREP_YEAST_MIXTURE = 'Prep Yeast Mixture';
 module.exports = {
     cardName: 'Texas Sausage Kolaches',
     name: 'Texas Sausage Kolaches',
-    img: kolaches14,
+    img: kolaches6,
     available: true,
     recommended: true,
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -73,28 +65,28 @@ module.exports = {
     ],
     directions: [
         { step: `Over medium heat, heat milk in a saucepan until it bubbles. Remove from heat.`, section: PREP_SUGAR_MIXTURE },
-        { step: `Add the remaining "${SUGAR_MIXTURE_SECTION}" section ingredients. Stir until sugar is dissolved.`, section: PREP_SUGAR_MIXTURE, img: kolaches1 },
-        { step: `Let the sugar mixture come to room temperature (about 10 minutes).`, section: PREP_SUGAR_MIXTURE, img: kolaches2 },
+        { step: `Add the remaining "${SUGAR_MIXTURE_SECTION}" section ingredients. Stir until sugar is dissolved.`, section: PREP_SUGAR_MIXTURE },
+        { step: `Let the sugar mixture come to room temperature (about 10 minutes).`, section: PREP_SUGAR_MIXTURE },
 
-        { step: `In a stand mixer, combine "Yeast Mixture". Stir until dissolved.`, section: PREP_YEAST_MIXTURE, img: kolaches3 },
+        { step: `In a stand mixer, combine "Yeast Mixture". Stir until dissolved.`, section: PREP_YEAST_MIXTURE },
 
-        { step: `Add 2 cups of flour, sugar mixture, and eggs. Beat with a dough hook attachment until smooth.`, section: SECTIONS.MAKE_DOUGH, img: [kolaches4, kolaches5] },
-        { step: `Slowly add remaining flour while mixing until dough just becomes elastic and a little firm (not dry).`, section: SECTIONS.MAKE_DOUGH, img: [kolaches6, kolaches7] },
+        { step: `Add 2 cups of flour, sugar mixture, and eggs. Beat with a dough hook attachment until smooth.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Slowly add remaining flour while mixing until dough just becomes elastic and a little firm (not dry).`, section: SECTIONS.MAKE_DOUGH, img: kolaches1 },
         { step: `Transfer dough to floured surface.`, section: SECTIONS.MAKE_DOUGH },
         { step: `Knead until dough is smooth and very elastic (about 10 to 15 minutes).`, section: SECTIONS.MAKE_DOUGH },
         { step: `Cover with plastic wrap. Place in a warm place until it double in size (about 1 hour).`, section: SECTIONS.MAKE_DOUGH },
 
         { step: `Cut sausage in half and dry with a paper towel.`, section: SECTIONS.PREP_FILLING },
-        { step: `Cut the cheese thinly to match the length of the halved sausage.`, section: SECTIONS.PREP_FILLING, img: kolaches8 },
+        { step: `Cut the cheese thinly to match the length of the halved sausage.`, section: SECTIONS.PREP_FILLING, img: kolaches2 },
 
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Line a baking sheet with parchment paper.`, section: SECTIONS.PREP_PAN },
         { step: `Roll out the dough and cut into 20 pieces.`, section: SECTIONS.BAKE },
-        { step: `Flatten into discs and fill each with sausage and cheese.`, section: SECTIONS.BAKE, img: [kolaches9, kolaches10] },
+        { step: `Flatten into discs and fill each with sausage and cheese.`, section: SECTIONS.BAKE, img: kolaches3 },
         { step: `Fold dough around filling and pinch edges.`, section: SECTIONS.BAKE },
-        { step: `Place kolaches on the baking sheet with the seam-side down.`, section: SECTIONS.BAKE, img: kolaches11 },
-        { step: `Brush tops with melted butter.`, section: SECTIONS.BAKE, img: kolaches12 },
-        { step: `Bake until golden brown (about 12 to 15 minutes).`, section: SECTIONS.BAKE, img: kolaches13 },
+        { step: `Place kolaches on the baking sheet with the seam-side down.`, section: SECTIONS.BAKE },
+        { step: `Brush tops with melted butter.`, section: SECTIONS.BAKE, img: kolaches4 },
+        { step: `Bake until golden brown (about 12 to 15 minutes).`, section: SECTIONS.BAKE, img: kolaches5 },
         { step: `Enjoy these delicious balls of goodness.`, section: SECTIONS.SERVE },
     ],
     store: [
