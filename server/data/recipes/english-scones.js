@@ -4,17 +4,6 @@ const scones3 = '../assets/Products/english-scones-3.jpeg';
 const scones4 = '../assets/Products/english-scones-4.jpeg';
 const scones5 = '../assets/Products/english-scones-5.jpeg';
 const scones6 = '../assets/Products/english-scones-6.jpeg';
-const scones7 = '../assets/Products/english-scones-7.jpeg';
-const scones8 = '../assets/Products/english-scones-8.jpeg';
-const scones9 = '../assets/Products/english-scones-9.jpeg';
-const scones10 = '../assets/Products/english-scones-10.jpeg';
-const scones11 = '../assets/Products/english-scones-11.jpeg';
-const scones12 = '../assets/Products/english-scones-12.jpeg';
-const scones13 = '../assets/Products/english-scones-13.jpeg';
-const scones14 = '../assets/Products/english-scones-14.jpeg';
-const scones15 = '../assets/Products/english-scones-15.jpeg';
-const scones16 = '../assets/Products/english-scones-16.jpeg';
-const scones17 = '../assets/Products/english-scones-17.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_POWDER, BAKING_SHEET, BASTING_BRUSH, EGG, FORK, LEMON_JUICE, MILK, MIXING_BOWL, OVEN, SALT, SILICONE_BAKING_MAT, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR } = require('./ingredients');
@@ -26,7 +15,7 @@ const EGG_WASH = 'Egg Wash';
 module.exports = {
     cardName: 'English Scones',
     name: 'English Scones',
-    img: scones16,
+    img: scones5,
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.BREAKFAST, CATEGORIES.SNACK],
@@ -68,22 +57,22 @@ module.exports = {
     directions: [
         { step: `Preheat oven to 400ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Line baking sheet with a silicon baking mat.`, section: SECTIONS.PREP_PAN },
-        { step: `Place baking sheet in preheating oven.`, section: SECTIONS.PREP_PAN, img: scones1 },
+        { step: `Place baking sheet in preheating oven.`, section: SECTIONS.PREP_PAN },
         { step: `Beat egg. Set aside.`, section: EGG_WASH },
-        { step: `In a mixing bowl, combine all the "Dry Ingredients" except the butter.`, section: DRY_MIXTURE, img: [scones2, scones3] },
-        { step: `Add the butter. Work the mixture with your hands until it looks like fine crumbs.`, section: DRY_MIXTURE, img: [scones4, scones5] },
+        { step: `In a mixing bowl, combine all the "Dry Ingredients" except the butter.`, section: DRY_MIXTURE },
+        { step: `Add the butter. Work the mixture with your hands until it looks like fine crumbs.`, section: DRY_MIXTURE, img: [scones1, scones2] },
         { step: `Heat up the milk until it is warm (not hot).`, section: BUTTERMILK_MIXTURE },
-        { step: `Add vanilla and lemon juice. And set it aside.`, section: BUTTERMILK_MIXTURE, img: [scones6, scones7] },
-        { step: `Combine the buttermilk mixture and dry mixture. Mix quickly with a fork.`, section: SECTIONS.MAIN, img: scones8 },
-        { step: `Flour a clean surface and place the dough on top.`, section: SECTIONS.MAIN, img: [scones9, scones10] },
+        { step: `Add vanilla and lemon juice. And set it aside.`, section: BUTTERMILK_MIXTURE },
+        { step: `Combine the buttermilk mixture and dry mixture. Mix quickly with a fork.`, section: SECTIONS.MAIN },
+        { step: `Flour a clean surface and place the dough on top.`, section: SECTIONS.MAIN },
         { step: `Sprinkle the dough with flour.`, section: SECTIONS.MAIN },
         { step: `Fold the dough a few times until smooth (do not overwork).`, section: SECTIONS.MAIN },
         { step: `Flatten the dough into a disc about 1.5 inches in thickness.`, section: SECTIONS.MAIN },
-        { step: `Cut the dough into 2 inch biscuits using a biscuit cutter. And continue to use the scraps to form additional biscuits. You should be able to get 6 to 8.`, section: SECTIONS.MAIN, img: [scones11, scones12] },
+        { step: `Cut the dough into 2 inch biscuits using a biscuit cutter. And continue to use the scraps to form additional biscuits. You should be able to get 6 to 8.`, section: SECTIONS.MAIN, img: [scones3, scones4] },
         { step: `Place the scones on the hot baking sheet.`, section: SECTIONS.MAIN },
-        { step: `Brush the scones with the egg wash.`, section: SECTIONS.MAIN, img: scones13 },
-        { step: `Bake until the top is golden (about 10 to 15 minutes).`, section: SECTIONS.MAIN, img: scones14 },
-        { step: `Serve warm with jam or favorite toppings.`, section: SECTIONS.MAIN, img: [scones15, scones17] },
+        { step: `Brush the scones with the egg wash.`, section: SECTIONS.MAIN },
+        { step: `Bake until the top is golden (about 10 to 15 minutes).`, section: SECTIONS.MAIN },
+        { step: `Serve warm with jam or favorite toppings.`, section: SECTIONS.MAIN, img: scones6 },
     ],
     store: [
         {
