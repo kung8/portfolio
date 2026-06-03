@@ -6,13 +6,6 @@ const cannoli5 = '../assets/Products/no-bake-cannoli-delight-5.jpeg';
 const cannoli6 = '../assets/Products/no-bake-cannoli-delight-6.jpeg';
 const cannoli7 = '../assets/Products/no-bake-cannoli-delight-7.jpeg';
 const cannoli8 = '../assets/Products/no-bake-cannoli-delight-8.jpeg';
-const cannoli9 = '../assets/Products/no-bake-cannoli-delight-9.jpeg';
-const cannoli10 = '../assets/Products/no-bake-cannoli-delight-10.jpeg';
-const cannoli11 = '../assets/Products/no-bake-cannoli-delight-11.jpeg';
-const cannoli12 = '../assets/Products/no-bake-cannoli-delight-12.jpeg';
-const cannoli13 = '../assets/Products/no-bake-cannoli-delight-13.jpeg';
-const cannoli14 = '../assets/Products/no-bake-cannoli-delight-14.jpeg';
-const cannoli15 = '../assets/Products/no-bake-cannoli-delight-15.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, CHOCOLATE_INSTANT_PUDDING_MIX, CREAM_CHEESE, CUTTING_BOARD, GRAHAM_CRACKER, HEAVY_CREAM, KNIFE, MEDIUM_BOWL, MILK, MINI_CHOCOLATE_CHIPS, MIXING_BOWL, ORANGE_ZEST, PARCHMENT_PAPER, POWDERED_SUGAR, RICOTTA_CHEESE, SALT, SPATULA, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHISK, WHITE_SUGAR } = require('./ingredients');
@@ -29,7 +22,7 @@ const CUT = 'Cut';
 module.exports = {
     cardName: 'Cannoli Delight',
     name: 'No Bake Cannoli Delight',
-    img: cannoli15,
+    img: cannoli8,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -83,30 +76,30 @@ module.exports = {
         KNIFE,
     ],
     directions: [
-        { step: `In a mixing bowl, combine the "${PUDDING_MIXTURE_SECTION}" section ingredients. Mix until it begins to thicken (about 2 minutes).`, section: PREP_PUDDING_MIXTURE, img: [cannoli5, cannoli6] },
+        { step: `In a mixing bowl, combine the "${PUDDING_MIXTURE_SECTION}" section ingredients. Mix until it begins to thicken (about 2 minutes).`, section: PREP_PUDDING_MIXTURE, img: cannoli1 },
         { step: `Set aside. It will continue to thicken.`, section: PREP_PUDDING_MIXTURE },
 
         { step: `Line a baking pan with two sheets of parchment paper (perpendicular of each other).`, section: SECTIONS.MAKE_CRUST },
-        { step: `In a stand mixer, combine all the "${SECTIONS.CRUST}" section ingredients except the melted butter.`, section: SECTIONS.MAKE_CRUST, img: cannoli1 },
-        { step: `I used a pestle to pound the graham crackers into sand (about 15 to 30 seconds).`, section: SECTIONS.MAKE_CRUST, img: cannoli2 },
-        { step: `Add melted butter. Mix until combined.`, section: SECTIONS.MAKE_CRUST, img: cannoli3 },
+        { step: `In a stand mixer, combine all the "${SECTIONS.CRUST}" section ingredients except the melted butter.`, section: SECTIONS.MAKE_CRUST },
+        { step: `I used a pestle to pound the graham crackers into sand (about 15 to 30 seconds).`, section: SECTIONS.MAKE_CRUST },
+        { step: `Add melted butter. Mix until combined.`, section: SECTIONS.MAKE_CRUST },
         { step: `Transfer graham cracker crust mixture onto the baking pan.`, section: SECTIONS.MAKE_CRUST },
-        { step: `Use your fingers or the bottom of a measuring cup to flatten the crust to an even layer.`, section: SECTIONS.MAKE_CRUST, img: cannoli4 },
+        { step: `Use your fingers or the bottom of a measuring cup to flatten the crust to an even layer.`, section: SECTIONS.MAKE_CRUST, img: cannoli2 },
         { step: `Place the crust in the fridge.`, section: SECTIONS.MAKE_CRUST },
 
         { step: `In a medium bowl, combine the "${WHIPPED_CREAM_SECTION}" section ingredients.`, section: WHIP_CREAM },
-        { step: `Whisk until stiff peaks form (about 2 to 4 minutes).`, section: WHIP_CREAM, img: cannoli7 },
+        { step: `Whisk until stiff peaks form (about 2 to 4 minutes).`, section: WHIP_CREAM, img: cannoli3 },
 
         { step: `In a stand mixer, combine the "${CREAM_CHEESE_MIXTURE}" section ingredients.`, section: MAKE_CREAM_CHEESE_MIXTURE },
-        { step: `Mix until light and fluffy (about 3 minutes). Scrape sides as needed during this process.`, section: MAKE_CREAM_CHEESE_MIXTURE, img: cannoli8 },
-        { step: `Fold in 1 cup of the whipped cream and 1/2 cup of the mini chocolate chips with a spatula.`, section: MAKE_CREAM_CHEESE_MIXTURE, img: [cannoli9, cannoli10] },
+        { step: `Mix until light and fluffy (about 3 minutes). Scrape sides as needed during this process.`, section: MAKE_CREAM_CHEESE_MIXTURE },
+        { step: `Fold in 1 cup of the whipped cream and 1/2 cup of the mini chocolate chips with a spatula.`, section: MAKE_CREAM_CHEESE_MIXTURE },
 
-        { step: `Evenly layer the cream cheese mixture over the crust.`, section: SECTIONS.ASSEMBLE, img: cannoli11 },
-        { step: `Evenly layer the chocolate pudding.`, section: SECTIONS.ASSEMBLE, img: cannoli12 },
-        { step: `Evenly layer the whipped cream.`, section: SECTIONS.ASSEMBLE, img: cannoli13 },
+        { step: `Evenly layer the cream cheese mixture over the crust.`, section: SECTIONS.ASSEMBLE, img: cannoli4 },
+        { step: `Evenly layer the chocolate pudding.`, section: SECTIONS.ASSEMBLE, img: cannoli5 },
+        { step: `Evenly layer the whipped cream.`, section: SECTIONS.ASSEMBLE, img: cannoli6 },
         { step: `Cover and chill for at least 4 hours (or overnight).`, section: SECTIONS.ASSEMBLE },
 
-        { step: `Sprinkle the remaining chocolate chips on top.`, section: CUT, img: cannoli14 },
+        { step: `Sprinkle the remaining chocolate chips on top.`, section: CUT, img: cannoli7 },
         { step: `Carefully transfer the parchment paper slab over to a cutting board.`, section: CUT },
         { step: `Cut--wiping the knife between cuts.`, section: CUT },
 
