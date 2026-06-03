@@ -4,12 +4,6 @@ const bowl3 = '../assets/Products/cafe-rio-bowl-3.jpeg';
 const bowl4 = '../assets/Products/cafe-rio-bowl-4.jpeg';
 const bowl5 = '../assets/Products/cafe-rio-bowl-5.jpeg';
 const bowl6 = '../assets/Products/cafe-rio-bowl-6.jpeg';
-const bowl7 = '../assets/Products/cafe-rio-bowl-7.jpeg';
-const bowl8 = '../assets/Products/cafe-rio-bowl-8.jpeg';
-const bowl9 = '../assets/Products/cafe-rio-bowl-9.jpeg';
-const bowl10 = '../assets/Products/cafe-rio-bowl-10.jpeg';
-const bowl11 = '../assets/Products/cafe-rio-bowl-11.jpeg';
-const bowl12 = '../assets/Products/cafe-rio-bowl-12.jpeg';
 
 const { CATEGORIES, GENRES, TYPES, METHODS, PROTEIN, SECTIONS, INGREDIENT_UNITS, YIELD_UNITS, TIME_UNITS, STORAGE_DURATION_UNIT, STORAGE_LOCATION, STORAGE_CONTAINER, REHEAT_METHODS } = require("./constants");
 const {
@@ -49,7 +43,7 @@ const CILANTRO_RANCH_DRESSING = 'Cilantro Ranch Dressing';
 module.exports = {
     cardName: 'Cafe Rio Bowl',
     name: 'Cafe Rio Bowl',
-    img: bowl12,
+    img: bowl6,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN, GENRES.AMERICAN],
@@ -107,18 +101,18 @@ module.exports = {
         SPATULA,
     ],
     directions: [
-        { step: `In a ziploc bag or mixing bowl, mix together all the marinade ingredients except the steak and parsley.`, section: SECTIONS.MEAT, img: bowl1 },
-        { step: `Add the steak to the marinade.`, section: SECTIONS.MEAT, img: bowl2 },
+        { step: `In a ziploc bag or mixing bowl, mix together all the marinade ingredients except the steak and parsley.`, section: SECTIONS.MEAT },
+        { step: `Add the steak to the marinade.`, section: SECTIONS.MEAT },
         { step: `Marinate for 20 minutes.`, section: SECTIONS.MEAT },
         { step: `Preheat a grill (or griddle).`, section: SECTIONS.MEAT },
-        { step: `Add steak to the grill using tongs and cook until the preferred doneness.`, section: SECTIONS.MEAT, img: [bowl3, bowl4] },
+        { step: `Add steak to the grill using tongs and cook until the preferred doneness.`, section: SECTIONS.MEAT, img: bowl1 },
         { step: `Top the steak with parsley.`, section: SECTIONS.MEAT },
-        { step: `Blend together the cilantro ranch dressing ingredients.`, section: CILANTRO_RANCH_DRESSING, img: [bowl5, bowl6] },
+        { step: `Blend together the cilantro ranch dressing ingredients.`, section: CILANTRO_RANCH_DRESSING, img: bowl2 },
         { step: `Serve and mix in your homemade Cafe Rio bowl.`, section: CILANTRO_RANCH_DRESSING },
-        { step: `After the steak is cooked and remove from the grill, optionally cook the fajitas on the grill. Use any of the residual sauce leftover from the steak on the grill.`, section: SECTIONS.MAIN, img: [bowl7, bowl8] },
+        { step: `After the steak is cooked and remove from the grill, optionally cook the fajitas on the grill. Use any of the residual sauce leftover from the steak on the grill.`, section: SECTIONS.MAIN, img: bowl3 },
         { step: `Warm the beans in a saucepan.`, section: SECTIONS.MAIN },
-        { step: `Warm the tortillas on the grill.`, section: SECTIONS.MAIN, img: bowl9 },
-        { step: `Assemble the salad bowls with the warmed tortilla, cooked rice, warmed beans, cooked steak, salad kit, and all the other desired toppings.`, section: SECTIONS.MAIN, img: [bowl10, bowl11] },
+        { step: `Warm the tortillas on the grill.`, section: SECTIONS.MAIN, img: bowl4 },
+        { step: `Assemble the salad bowls with the warmed tortilla, cooked rice, warmed beans, cooked steak, salad kit, and all the other desired toppings.`, section: SECTIONS.MAIN, img: bowl5 },
     ],
     notes: [
         { note: 'I sometimes forget items in fridge or pantry when I am ready to make the salad. I recommend making a list of items beforehand, so you can reference at the time of assembly and not miss your favorite ingredients.' }
