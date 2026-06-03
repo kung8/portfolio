@@ -5,12 +5,6 @@ const tacos4 = '../assets/Products/birria-tacos-4.jpeg';
 const tacos5 = '../assets/Products/birria-tacos-5.jpeg';
 const tacos6 = '../assets/Products/birria-tacos-6.jpeg';
 const tacos7 = '../assets/Products/birria-tacos-7.jpeg';
-const tacos8 = '../assets/Products/birria-tacos-8.jpeg';
-const tacos9 = '../assets/Products/birria-tacos-9.jpeg';
-const tacos10 = '../assets/Products/birria-tacos-10.jpeg';
-const tacos11 = '../assets/Products/birria-tacos-11.jpeg';
-const tacos12 = '../assets/Products/birria-tacos-12.jpeg';
-const tacos13 = '../assets/Products/birria-tacos-13.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { APPLE_CIDER_VINEGAR, AVOCADO_OIL, BAY_LEAF, BEEF_BROTH, BEEF_CHUCK_ROAST, BLACK_PEPPER, BLENDER, CHIPOTLE_PEPPERS_IN_ADOBO, CILANTRO, CINNAMON_STICK, CORIANDER, CUMIN, FIRE_ROASTED_DICED_TOMATOES, FLOUR_TORTILLA, FRYING_PAN, GARLIC, GINGER, GUAJILLO_CHILI_PEPPER, LIME, OAXACAN_CHEESE, OREGANO, RED_ONION, SALT, SLOW_COOKER, SMOKED_PAPRIKA, STOVE, TOMATO_PASTE, WHITE_ONION } = require('./ingredients');
@@ -18,7 +12,7 @@ const { APPLE_CIDER_VINEGAR, AVOCADO_OIL, BAY_LEAF, BEEF_BROTH, BEEF_CHUCK_ROAST
 module.exports = {
     cardName: 'Crockpot Birria Tacos',
     name: 'Crockpot Birria Tacos',
-    img: tacos12,
+    img: tacos7,
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -76,23 +70,23 @@ module.exports = {
     directions: [
         { step: `Over high heat, add avocado oil to a pan.`, section: SECTIONS.COOK_BEEF },
         { step: `Generously season beef with salt and pepper.`, section: SECTIONS.COOK_BEEF },
-        { step: `Sear both sides of the beef (about 5 to 6 minutes per side).`, section: SECTIONS.COOK_BEEF, img: tacos2 },
+        { step: `Sear both sides of the beef (about 5 to 6 minutes per side).`, section: SECTIONS.COOK_BEEF },
 
-        { step: `Transfer beef and the "${SECTIONS.FILLING}" section ingredients to the crockpot.`, section: SECTIONS.PREP_FILLING, img: [tacos1, tacos3] },
+        { step: `Transfer beef and the "${SECTIONS.FILLING}" section ingredients to the crockpot.`, section: SECTIONS.PREP_FILLING, img: tacos1 },
         { step: `Cover and cook on low for 8 hours.`, section: SECTIONS.PREP_FILLING },
-        { step: `Transfer beef to a mixing bowl and shred with 2 forks.`, section: SECTIONS.PREP_FILLING, img: tacos4 },
+        { step: `Transfer beef to a mixing bowl and shred with 2 forks.`, section: SECTIONS.PREP_FILLING, img: tacos2 },
         { step: `Remove bay leaves and cinnamon stick from crockpot.`, section: SECTIONS.PREP_FILLING },
-        { step: `Wait until the sauce cools before blending in a traditional blender. And be sure not to overfill.`, section: SECTIONS.PREP_FILLING, img: tacos5 },
-        { step: `Transfer blended sauce back to crockpot.`, section: SECTIONS.PREP_FILLING, img: tacos6 },
-        { step: `Add 2 cups of sauce to the shredded beef.`, section: SECTIONS.PREP_FILLING, img: tacos7 },
+        { step: `Wait until the sauce cools before blending in a traditional blender. And be sure not to overfill.`, section: SECTIONS.PREP_FILLING },
+        { step: `Transfer blended sauce back to crockpot.`, section: SECTIONS.PREP_FILLING },
+        { step: `Add 2 cups of sauce to the shredded beef.`, section: SECTIONS.PREP_FILLING, img: tacos3 },
 
         { step: `Add a little avocado oil to a pan.`, section: SECTIONS.ASSEMBLE },
-        { step: `Dip two tortillas into the sauce and place the two stacked tortillas in the pan.`, section: SECTIONS.ASSEMBLE, img: [tacos8, tacos9] },
-        { step: `On one half of the tortilla, add filling and fold.`, section: SECTIONS.ASSEMBLE, img: tacos10 },
+        { step: `Dip two tortillas into the sauce and place the two stacked tortillas in the pan.`, section: SECTIONS.ASSEMBLE, img: tacos4 },
+        { step: `On one half of the tortilla, add filling and fold.`, section: SECTIONS.ASSEMBLE, img: tacos5 },
         { step: `Over medium heat, pan fry (2 to 3 minutes).`, section: SECTIONS.ASSEMBLE },
-        { step: `Flip and pan fry (2 to 3 minutes).`, section: SECTIONS.ASSEMBLE, img: tacos11 },
+        { step: `Flip and pan fry (2 to 3 minutes).`, section: SECTIONS.ASSEMBLE, img: tacos6 },
 
-        { step: `Enjoy these simple tacos topped with your favorite toppings and a ladleful of sauce.`, section: SECTIONS.SERVE, img: tacos13 },
+        { step: `Enjoy these simple tacos topped with your favorite toppings and a ladleful of sauce.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'I think it came out too salty, because of the extra beef bouillon cubes I innocently added (I added a couple more).' }
