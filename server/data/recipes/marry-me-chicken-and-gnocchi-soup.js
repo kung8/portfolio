@@ -1,16 +1,9 @@
-const soup1 = '../assets/Products/marry-me-chicken-and-gnocci-soup-1.jpeg';
-const soup2 = '../assets/Products/marry-me-chicken-and-gnocci-soup-2.jpeg';
-const soup3 = '../assets/Products/marry-me-chicken-and-gnocci-soup-3.jpeg';
-const soup4 = '../assets/Products/marry-me-chicken-and-gnocci-soup-4.jpeg';
-const soup5 = '../assets/Products/marry-me-chicken-and-gnocci-soup-5.jpeg';
-const soup6 = '../assets/Products/marry-me-chicken-and-gnocci-soup-6.jpeg';
-const soup7 = '../assets/Products/marry-me-chicken-and-gnocci-soup-7.jpeg';
-const soup8 = '../assets/Products/marry-me-chicken-and-gnocci-soup-8.jpeg';
-const soup9 = '../assets/Products/marry-me-chicken-and-gnocci-soup-9.jpeg';
-const soup10 = '../assets/Products/marry-me-chicken-and-gnocci-soup-10.jpeg';
-const soup11 = '../assets/Products/marry-me-chicken-and-gnocci-soup-11.jpeg';
-const soup12 = '../assets/Products/marry-me-chicken-and-gnocci-soup-12.jpeg';
-const soup13 = '../assets/Products/marry-me-chicken-and-gnocci-soup-13.jpeg';
+const soup1 = '../assets/Products/marry-me-chicken-and-gnocchi-soup-1.jpeg';
+const soup2 = '../assets/Products/marry-me-chicken-and-gnocchi-soup-2.jpeg';
+const soup3 = '../assets/Products/marry-me-chicken-and-gnocchi-soup-3.jpeg';
+const soup4 = '../assets/Products/marry-me-chicken-and-gnocchi-soup-4.jpeg';
+const soup5 = '../assets/Products/marry-me-chicken-and-gnocchi-soup-5.jpeg';
+const soup6 = '../assets/Products/marry-me-chicken-and-gnocchi-soup-6.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BABY_SPINACH, BASIL, BLACK_PEPPER, CARROT, CELERY, CHICKEN_BOUILLON_CUBE, CREAM_CHEESE, GARLIC, GARLIC_AND_HERB, GNOCCHI, HEAVY_CREAM, ITALIAN_SEASONING, LARGE_POT, PARMESAN_CHEESE, RED_PEPPER_FLAKES, ROTISSERIE_CHICKEN, SALT, STOVE, SUN_DRIED_TOMATOES, TOMATO_PASTE, UNSALTED_BUTTER, WATER, YELLOW_ONION } = require('./ingredients');
@@ -24,7 +17,7 @@ const HERB_SECTION = 'Herb';
 module.exports = {
     cardName: 'Chicken + Gnocchi Soup',
     name: 'Marry Me Chicken and Gnocchi Soup',
-    img: soup12,
+    img: soup6,
     available: true,
     recommended: false,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -78,19 +71,19 @@ module.exports = {
         LARGE_POT,
     ],
     directions: [
-        { step: `Over medium heat, heat "${OIL_SECTION}" section ingredients in a large pot.`, section: SECTIONS.MAKE_SOUP, img: soup1 },
-        { step: `Add "${SECTIONS.VEGGIES}" section ingredients. Cook for 5 minutes.`, section: SECTIONS.MAKE_SOUP, img: soup2 },
-        { step: `Add sun-dried tomatoes.`, section: SECTIONS.MAKE_SOUP, img: [soup3, soup4] },
-        { step: `Make a well, add tomato paste. Cook for 3 minutes. Mix.`, section: SECTIONS.MAKE_SOUP, img: [soup5, soup6] },
-        { step: `Add garlic. Cook for 1 minute.`, section: SECTIONS.MAKE_SOUP, img: soup7 },
-        { step: `Add "${SECTIONS.LIQUIDS}" section ingredients. Bring to a boil.`, section: SECTIONS.MAKE_SOUP, img: soup8 },
-        { step: `Add gnocchi and chicken. Boil until gnocchi float (about 3 to 4 minutes).`, section: SECTIONS.MAKE_SOUP, img: soup9 },
+        { step: `Over medium heat, heat "${OIL_SECTION}" section ingredients in a large pot.`, section: SECTIONS.MAKE_SOUP },
+        { step: `Add "${SECTIONS.VEGGIES}" section ingredients. Cook for 5 minutes.`, section: SECTIONS.MAKE_SOUP },
+        { step: `Add sun-dried tomatoes.`, section: SECTIONS.MAKE_SOUP },
+        { step: `Make a well, add tomato paste. Cook for 3 minutes. Mix.`, section: SECTIONS.MAKE_SOUP },
+        { step: `Add garlic. Cook for 1 minute.`, section: SECTIONS.MAKE_SOUP, img: soup1 },
+        { step: `Add "${SECTIONS.LIQUIDS}" section ingredients. Bring to a boil.`, section: SECTIONS.MAKE_SOUP, img: soup2 },
+        { step: `Add gnocchi and chicken. Boil until gnocchi float (about 3 to 4 minutes).`, section: SECTIONS.MAKE_SOUP, img: soup3 },
         { step: `Turn off heat.`, section: SECTIONS.MAKE_SOUP },
         { step: `Add cream cheese. Stir until melted.`, section: SECTIONS.MAKE_SOUP },
-        { step: `Add parmesan.`, section: SECTIONS.MAKE_SOUP, img: soup10 },
-        { step: `Add spinach and basil. Stir.`, section: SECTIONS.MAKE_SOUP, img: soup11 },
+        { step: `Add parmesan.`, section: SECTIONS.MAKE_SOUP, img: soup4 },
+        { step: `Add spinach and basil. Stir.`, section: SECTIONS.MAKE_SOUP, img: soup5 },
         { step: `Let it thicken (about 5 to 10 minutes).`, section: SECTIONS.MAKE_SOUP },
-        { step: `Enjoy this great year round soup!`, section: SECTIONS.SERVE, img: soup13 },
+        { step: `Enjoy this great year round soup!`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'This definitely had a good flavor. Initially I did not think there was enough liquid, but over time it released liquid and was enough.' },
