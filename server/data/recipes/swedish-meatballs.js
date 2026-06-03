@@ -2,18 +2,6 @@ const meatball1 = '../assets/Products/swedish-meatball-1.jpeg';
 const meatball2 = '../assets/Products/swedish-meatball-2.jpeg';
 const meatball3 = '../assets/Products/swedish-meatball-3.jpeg';
 const meatball4 = '../assets/Products/swedish-meatball-4.jpeg';
-const meatball5 = '../assets/Products/swedish-meatball-5.jpeg';
-const meatball6 = '../assets/Products/swedish-meatball-6.jpeg';
-const meatball7 = '../assets/Products/swedish-meatball-7.jpeg';
-const meatball8 = '../assets/Products/swedish-meatball-8.jpeg';
-const meatball9 = '../assets/Products/swedish-meatball-9.jpeg';
-const meatball10 = '../assets/Products/swedish-meatball-10.jpeg';
-const meatball11 = '../assets/Products/swedish-meatball-11.jpeg';
-const meatball13 = '../assets/Products/swedish-meatball-13.jpeg';
-const meatball14 = '../assets/Products/swedish-meatball-14.jpeg';
-const meatball15 = '../assets/Products/swedish-meatball-15.jpeg';
-const meatball16 = '../assets/Products/swedish-meatball-16.jpeg';
-const meatball17 = '../assets/Products/swedish-meatball-17.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALLSPICE, ALL_PURPOSE_FLOUR, ALUMINUM_FOIL, BAKING_PAN, BEEF_BROTH, BLACK_PEPPER, BREADCRUMBS, BROWN_SUGAR, CHICKEN_BROTH, EGG, FRYING_PAN, GROUND_BEEF, GROUND_GINGER, GROUND_PORK, HEAVY_CREAM, MIXING_BOWL, NUTMEG, OVEN, SALT, SAUCEPAN, SERVING_PLATE, SMALL_BOWL, SOUR_CREAM, STOVE, UNSALTED_BUTTER, YELLOW_ONION } = require('./ingredients');
@@ -31,7 +19,7 @@ const MAKE_GRAVY = 'Make Gravy';
 module.exports = {
     cardName: 'Swedish Meatballs',
     name: 'Swedish Meatballs (Kottbullar)',
-    img: meatball17,
+    img: meatball4,
     available: true,
     recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.MAIN_DISH],
@@ -89,23 +77,23 @@ module.exports = {
     directions: [
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: `In a small bowl, combine bread crumbs and cream.`, section: PREP_BREADCRUMB_MIXTURE, img: meatball1 },
+        { step: `In a small bowl, combine bread crumbs and cream.`, section: PREP_BREADCRUMB_MIXTURE },
         { step: `Let sit for 10 minutes to absorb the cream.`, section: PREP_BREADCRUMB_MIXTURE },
 
         { step: `Over medium heat, melt butter in a pan.`, section: PREP_SWEDISH_MEATBALLS },
-        { step: `Add onions and cook until light brown (about 10 minutes).`, section: PREP_SWEDISH_MEATBALLS, img: meatball2 },
-        { step: `In the mixing bowl, add the remaining "${SWEDISH_MEATBALLS}" section ingredients and combine.`, section: PREP_SWEDISH_MEATBALLS, img: [meatball3, meatball4, meatball5, meatball6] },
-        { step: `Add onions to the mixing bowl.`, section: PREP_SWEDISH_MEATBALLS, img: [meatball7, meatball8] },
-        { step: `Lightly stir the breadcrumb mixture into the meat mixture.`, section: PREP_SWEDISH_MEATBALLS, img: [meatball9, meatball10] },
-        { step: `Form the meatballs into about 2 inch balls.`, section: PREP_SWEDISH_MEATBALLS, img: meatball11 },
+        { step: `Add onions and cook until light brown (about 10 minutes).`, section: PREP_SWEDISH_MEATBALLS },
+        { step: `In the mixing bowl, add the remaining "${SWEDISH_MEATBALLS}" section ingredients and combine.`, section: PREP_SWEDISH_MEATBALLS },
+        { step: `Add onions to the mixing bowl.`, section: PREP_SWEDISH_MEATBALLS },
+        { step: `Lightly stir the breadcrumb mixture into the meat mixture.`, section: PREP_SWEDISH_MEATBALLS, img: meatball1 },
+        { step: `Form the meatballs into about 2 inch balls.`, section: PREP_SWEDISH_MEATBALLS },
 
         { step: `Over medium heat, melt butter in a pan.`, section: PAN_FRY_MEATBALLS },
-        { step: `Add the meatballs to the pan.`, section: PAN_FRY_MEATBALLS, img: meatball13 },
+        { step: `Add the meatballs to the pan.`, section: PAN_FRY_MEATBALLS, img: meatball2 },
         { step: `Cook while turning often until browned (about 5 minutes). The inside of the meatballs should still be pink.`, section: PAN_FRY_MEATBALLS },
 
         { step: `Transfer meatballs to a baking dish.`, section: SECTIONS.BAKE },
-        { step: `Add chicken broth and cover with aluminum foil.`, section: SECTIONS.BAKE, img: [meatball15, meatball14] },
-        { step: `Bake until meatballs are tender (about 40 minutes).`, section: SECTIONS.BAKE, img: meatball16 },
+        { step: `Add chicken broth and cover with aluminum foil.`, section: SECTIONS.BAKE },
+        { step: `Bake until meatballs are tender (about 40 minutes).`, section: SECTIONS.BAKE, img: meatball3 },
         { step: `Transfer meatballs to a serving dish.`, section: SECTIONS.BAKE },
 
         { step: `Pour drippings from the baking dish into a saucepan.`, section: MAKE_GRAVY },
