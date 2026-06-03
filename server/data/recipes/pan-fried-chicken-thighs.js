@@ -1,26 +1,13 @@
 const thigh1 = '../assets/Products/pan-fried-chicken-thigh-1.jpeg';
 const thigh2 = '../assets/Products/pan-fried-chicken-thigh-2.jpeg';
-// const thigh3 = '../assets/Products/pan-fried-chicken-thigh-3.jpeg';
-const thigh4 = '../assets/Products/pan-fried-chicken-thigh-4.jpeg';
-const thigh5 = '../assets/Products/pan-fried-chicken-thigh-5.jpeg';
-const thigh6 = '../assets/Products/pan-fried-chicken-thigh-6.jpeg';
-const thigh7 = '../assets/Products/pan-fried-chicken-thigh-7.jpeg';
-const thigh8 = '../assets/Products/pan-fried-chicken-thigh-8.jpeg';
-// const thigh9 = '../assets/Products/pan-fried-chicken-thigh-9.jpeg';
-const thigh10 = '../assets/Products/pan-fried-chicken-thigh-10.jpeg';
-const thigh11 = '../assets/Products/pan-fried-chicken-thigh-11.jpeg';
-const thigh12 = '../assets/Products/pan-fried-chicken-thigh-12.jpeg';
-const thigh13 = '../assets/Products/pan-fried-chicken-thigh-13.jpeg';
-const thigh14 = '../assets/Products/pan-fried-chicken-thigh-14.jpeg';
-const thigh15 = '../assets/Products/pan-fried-chicken-thigh-15.jpeg';
-// const thigh16 = '../assets/Products/pan-fried-chicken-thigh-16.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, CHICKEN_THIGH, FRYING_PAN, GARLIC, PLATE, RED_WINE, ROSEMARY, SALT, SPATULA, STOVE, UNSALTED_BUTTER, WHIPPED_CREAM } = require('./ingredients');
 
 module.exports = {
     cardName: 'Pan-Fried Chicken Thighs',
     name: 'Pan-Fried Chicken Thighs',
-    img: thigh15,
+    img: thigh2,
     available: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -57,19 +44,19 @@ module.exports = {
         PLATE,
     ],
     directions: [
-        { step: `Over medium-high heat, heat butter in frying pan.`, section: SECTIONS.CHICKEN, img: thigh1 },
-        { step: `Brown both sides of the chicken.`, section: SECTIONS.CHICKEN, img: thigh2 },
+        { step: `Over medium-high heat, heat butter in frying pan.`, section: SECTIONS.CHICKEN },
+        { step: `Brown both sides of the chicken.`, section: SECTIONS.CHICKEN },
         { step: `Season with salt and pepper.`, section: SECTIONS.CHICKEN },
         { step: `Reduce to medium heat.`, section: SECTIONS.CHICKEN },
-        { step: `Cover and cook until the chicken is cooked through and reaches an internal temperature of 175ºF (about 10 to 12 minutes).`, section: SECTIONS.CHICKEN, img: [thigh4, thigh5] },
-        { step: `Set aide chicken.`, section: SECTIONS.CHICKEN, img: thigh6 },
-        { step: `Keep drippings in the pan and add wine and garlic.`, section: SECTIONS.SAUCE, img: thigh7 },
-        { step: `Bring to a boil and loosening the browned food particles (deglazing the fond). Cook until wine is reduced by half (about 1 to 2 minutes).`, section: SECTIONS.SAUCE, img: thigh8 },
-        { step: `Stir in cream and rosemary.`, section: SECTIONS.SAUCE, img: thigh10 },
-        { step: `Return to a boil.`, section: SECTIONS.SAUCE, img: thigh11 },
-        { step: `Cook until slightly thickened (about 1 to 2 minutes).`, section: SECTIONS.SAUCE, img: thigh12 },
-        { step: `Re-add the chicken to the pan. Ladle the sauce over the chicken.`, section: SECTIONS.SAUCE, img: thigh13 },
-        { step: `Top the chicken with the creamy sauce and serve with your favorite sides.`, section: SECTIONS.SERVE, img: thigh14 },
+        { step: `Cover and cook until the chicken is cooked through and reaches an internal temperature of 175ºF (about 10 to 12 minutes).`, section: SECTIONS.CHICKEN },
+        { step: `Set aide chicken.`, section: SECTIONS.CHICKEN, img: thigh1 },
+        { step: `Keep drippings in the pan and add wine and garlic.`, section: SECTIONS.SAUCE },
+        { step: `Bring to a boil and loosening the browned food particles (deglazing the fond). Cook until wine is reduced by half (about 1 to 2 minutes).`, section: SECTIONS.SAUCE },
+        { step: `Stir in cream and rosemary.`, section: SECTIONS.SAUCE },
+        { step: `Return to a boil.`, section: SECTIONS.SAUCE },
+        { step: `Cook until slightly thickened (about 1 to 2 minutes).`, section: SECTIONS.SAUCE },
+        { step: `Re-add the chicken to the pan. Ladle the sauce over the chicken.`, section: SECTIONS.SAUCE },
+        { step: `Top the chicken with the creamy sauce and serve with your favorite sides.`, section: SECTIONS.SERVE },
     ],
     store: [
         {
