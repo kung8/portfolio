@@ -8,9 +8,6 @@ const rolls7 = '../assets/Products/cinnamon-rolls-7.jpeg';
 const rolls8 = '../assets/Products/cinnamon-rolls-8.jpeg';
 const rolls9 = '../assets/Products/cinnamon-rolls-9.jpeg';
 const rolls10 = '../assets/Products/cinnamon-rolls-10.jpeg';
-const rolls11 = '../assets/Products/cinnamon-rolls-11.jpeg';
-const rolls12 = '../assets/Products/cinnamon-rolls-12.jpeg';
-const rolls13 = '../assets/Products/cinnamon-rolls-13.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BREAD_FLOUR, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, EGG, EGG_YOLK, MEDIUM_BOWL, MICROWAVE, MILK, MIXING_BOWL, OVEN, POWDERED_SUGAR, SALT, SMALL_BOWL, STAND_MIXER, UNSALTED_BUTTER, VANILLA_EXTRACT, WHITE_SUGAR, YEAST } = require('./ingredients');
@@ -18,7 +15,7 @@ const { BREAD_FLOUR, BROWN_SUGAR, CINNAMON, CREAM_CHEESE, EGG, EGG_YOLK, MEDIUM_
 module.exports = {
     cardName: 'Cinnamon Rolls',
     name: 'Cinnamon Rolls',
-    img: rolls13,
+    img: rolls10,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -76,24 +73,24 @@ module.exports = {
         { step: `Cover with plastic wrap and warm towel.`, section: SECTIONS.MAKE_DOUGH, img: [rolls2, rolls3] },
         { step: `Let the dough double in size (about 1 to 1 1/2 hours).`, section: SECTIONS.MAKE_DOUGH },
         { step: `Line a baking sheet with a silicon baking mat.`, section: SECTIONS.MAKE_DOUGH },
-        { step: `Roll out the dough on a clean, well-floured surface to about 14x9 inches.`, section: SECTIONS.MAKE_DOUGH, img: rolls4 },
+        { step: `Roll out the dough on a clean, well-floured surface to about 14x9 inches.`, section: SECTIONS.MAKE_DOUGH },
 
-        { step: `Spread softened butter on dough with a quarter inch from the border.`, section: SECTIONS.PREP_FILLING, img: rolls5 },
+        { step: `Spread softened butter on dough with a quarter inch from the border.`, section: SECTIONS.PREP_FILLING, img: rolls4 },
         { step: `In a small bowl, combine brown sugar and cinnamon.`, section: SECTIONS.PREP_FILLING },
         { step: `Sprinkle cinnamon sugar over buttered dough.`, section: SECTIONS.PREP_FILLING },
-        { step: `Rub cinnamon sugar into the butter.`, section: SECTIONS.PREP_FILLING, img: rolls6 },
-        { step: `Tightly roll the dough from the shorter side.`, section: SECTIONS.PREP_FILLING, img: rolls7 },
-        { step: `Using a serrated knife, cut the rolls into 1 inch.`, section: SECTIONS.PREP_FILLING, img: rolls8 },
-        { step: `Cover the rolls with plastic wrap and a warm towel. Let it rise again for 30 to 45 minutes.`, section: SECTIONS.PREP_FILLING, img: rolls9 },
+        { step: `Rub cinnamon sugar into the butter.`, section: SECTIONS.PREP_FILLING, img: rolls5 },
+        { step: `Tightly roll the dough from the shorter side.`, section: SECTIONS.PREP_FILLING },
+        { step: `Using a serrated knife, cut the rolls into 1 inch.`, section: SECTIONS.PREP_FILLING, img: rolls6 },
+        { step: `Cover the rolls with plastic wrap and a warm towel. Let it rise again for 30 to 45 minutes.`, section: SECTIONS.PREP_FILLING, img: rolls7 },
 
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
         { step: `Remove the plastic wrap and the towel.`, section: SECTIONS.BAKE },
-        { step: `Bake until the edges are slightly golden brown (about 20 to 25 minutes). Do not bake all the way through to prevent it from being dried out in the center.`, section: SECTIONS.BAKE, img: rolls10 },
+        { step: `Bake until the edges are slightly golden brown (about 20 to 25 minutes). Do not bake all the way through to prevent it from being dried out in the center.`, section: SECTIONS.BAKE, img: rolls8 },
 
         { step: `Let the rolls cooled for 5 to 10 minutes.`, section: SECTIONS.COOL },
-        { step: `In a mixing bowl, combine frosting ingredients.`, section: SECTIONS.FROSTING, img: rolls11 },
-        { step: `Spread frosting over cinnamon rolls and enjoy warm!`, section: SECTIONS.SERVE, img: rolls12 },
+        { step: `In a mixing bowl, combine frosting ingredients.`, section: SECTIONS.FROSTING, img: rolls9 },
+        { step: `Spread frosting over cinnamon rolls and enjoy warm!`, section: SECTIONS.SERVE },
     ],
     store: [
         {
