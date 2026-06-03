@@ -8,11 +8,6 @@ const roast7 = '../assets/Products/roasted-pork-belly-7.jpeg';
 const roast8 = '../assets/Products/roasted-pork-belly-8.jpeg';
 const roast9 = '../assets/Products/roasted-pork-belly-9.jpeg';
 const roast10 = '../assets/Products/roasted-pork-belly-10.jpeg';
-const roast11 = '../assets/Products/roasted-pork-belly-11.jpeg';
-const roast12 = '../assets/Products/roasted-pork-belly-12.jpeg';
-const roast13 = '../assets/Products/roasted-pork-belly-13.jpeg';
-const roast14 = '../assets/Products/roasted-pork-belly-14.jpeg';
-const roast15 = '../assets/Products/roasted-pork-belly-15.jpeg';
 
 const fiveSpicePowder = '../assets/Products/five-spices-blend-3.jpeg';
 
@@ -28,7 +23,7 @@ const COOK_PORK_BELLY = 'Cook Pork Belly';
 module.exports = {
     cardName: 'Roasted Pork Belly',
     name: 'Roasted Pork Belly',
-    img: roast14,
+    img: roast9,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
@@ -76,20 +71,20 @@ module.exports = {
     ],
     directions: [
         { step: `Pat the pork belly dry with paper towels.`, section: PREP_PORK_BELLY },
-        { step: `Poke holes on the pork skin (not the meat) using a fork or knife.`, section: PREP_PORK_BELLY, img: roast2 },
-        { step: `Score the meat in a criss cross pattern (1 inch apart, 1/4 inch deep).`, section: PREP_PORK_BELLY, img: roast3 },
-        { step: `In a small bowl, combine the "${RUB_SECTION}" section ingredients.`, section: PREP_PORK_BELLY, img: roast1 },
-        { step: `Brush the meat side with the rub mixture.`, section: PREP_PORK_BELLY, img: [roast4, roast5] },
-        { step: `Cover the pork in aluminum foil except the skin.`, section: PREP_PORK_BELLY, img: roast6 },
-        { step: `In a small bowl, combine egg whites and salt until it becomes a paste.`, section: PREP_PORK_BELLY, img: [roast7, roast8] },
+        { step: `Poke holes on the pork skin (not the meat) using a fork or knife.`, section: PREP_PORK_BELLY, img: roast1 },
+        { step: `Score the meat in a criss cross pattern (1 inch apart, 1/4 inch deep).`, section: PREP_PORK_BELLY, img: roast2 },
+        { step: `In a small bowl, combine the "${RUB_SECTION}" section ingredients.`, section: PREP_PORK_BELLY },
+        { step: `Brush the meat side with the rub mixture.`, section: PREP_PORK_BELLY, img: roast3 },
+        { step: `Cover the pork in aluminum foil except the skin.`, section: PREP_PORK_BELLY, img: roast4 },
+        { step: `In a small bowl, combine egg whites and salt until it becomes a paste.`, section: PREP_PORK_BELLY },
         { step: `Brush the skin with vinegar.`, section: PREP_PORK_BELLY },
-        { step: `Cover with the salt mixture and rub into the pork.`, section: PREP_PORK_BELLY, img: [roast9, roast10] },
-        { step: `Air fry at 250ºF until the salt has dried (about 30 minutes).`, section: COOK_PORK_BELLY, img: roast11 },
-        { step: `Remove the salt and pat dry with a paper towel.`, section: COOK_PORK_BELLY, img: roast12 },
+        { step: `Cover with the salt mixture and rub into the pork.`, section: PREP_PORK_BELLY, img: roast5 },
+        { step: `Air fry at 250ºF until the salt has dried (about 30 minutes).`, section: COOK_PORK_BELLY, img: roast6 },
+        { step: `Remove the salt and pat dry with a paper towel.`, section: COOK_PORK_BELLY, img: roast7 },
         { step: `Brush the skin with oil.`, section: COOK_PORK_BELLY },
-        { step: `Air fry at 400ºF until the skin is golden and crispy (about 30 to 40 minutes). Check the pork at 20 minutes and then every 5 minutes after that. Cover the areas that are beginning to burn with tin foil.`, section: COOK_PORK_BELLY, img: roast13 },
+        { step: `Air fry at 400ºF until the skin is golden and crispy (about 30 to 40 minutes). Check the pork at 20 minutes and then every 5 minutes after that. Cover the areas that are beginning to burn with tin foil.`, section: COOK_PORK_BELLY, img: roast8 },
         { step: `Let it rest for about 10 minutes before carving.`, section: COOK_PORK_BELLY },
-        { step: `Serve and enjoy! It will be salty so best eaten with rice.`, section: SECTIONS.SERVE, img: roast15 },
+        { step: `Serve and enjoy! It will be salty so best eaten with rice.`, section: SECTIONS.SERVE, img: roast10 },
     ],
     notes: [
         { note: 'Rubbing the skin with salt helps draw moisture from the pork skin and helps it crisp up better.' },
