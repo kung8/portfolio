@@ -1,14 +1,5 @@
 const soup1 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-1.jpeg';
 const soup2 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-2.jpeg';
-const soup3 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-3.jpeg';
-const soup4 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-4.jpeg';
-const soup5 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-5.jpeg';
-const soup6 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-6.jpeg';
-const soup7 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-7.jpeg';
-const soup8 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-8.jpeg';
-const soup9 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-9.jpeg';
-const soup10 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-10.jpeg';
-const soup11 = '../assets/Products/turkey-meatball-spinach-tortellini-soup-11.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -37,7 +28,7 @@ const MEATBALLS = 'Meatballs';
 module.exports = {
     cardName: 'Tortellini Soup',
     name: 'Turkey Meatball Spinach Tortellini Soup',
-    img: soup11,
+    img: soup2,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -82,16 +73,16 @@ module.exports = {
         LARGE_POT,
     ],
     directions: [
-        { step: `Combine the ground turkey, breadcrumbs, parmesan cheese, parsley, egg, garlic, and salt in a large bowl.`, section: MEATBALLS, img: [soup1, soup2, soup3] },
-        { step: `Make small meatballs (about 1 Tbsp each).`, section: MEATBALLS, img: soup4 },
+        { step: `Combine the ground turkey, breadcrumbs, parmesan cheese, parsley, egg, garlic, and salt in a large bowl.`, section: MEATBALLS },
+        { step: `Make small meatballs (about 1 Tbsp each).`, section: MEATBALLS, img: soup1 },
         { step: `Melt butter in a large pot over medium heat.`, section: SECTIONS.MAIN },
-        { step: `Once melted, add the celery, onion, carrot, and garlic. Cover and reduce heat to low. Cook until vegetables begin to soften (about 8 to 10 minutes).`, section: SECTIONS.MAIN, img: soup5 },
-        { step: `Remove lid. Add the chicken broth and increase heat to medium-high. Bring to a boil.`, section: SECTIONS.MAIN, img: soup6 },
+        { step: `Once melted, add the celery, onion, carrot, and garlic. Cover and reduce heat to low. Cook until vegetables begin to soften (about 8 to 10 minutes).`, section: SECTIONS.MAIN },
+        { step: `Remove lid. Add the chicken broth and increase heat to medium-high. Bring to a boil.`, section: SECTIONS.MAIN },
         { step: `Add black pepper to taste.`, section: SECTIONS.MAIN },
-        { step: `Reduce heat to medium and drop in the meatballs. Cook for about 4 minutes.`, section: SECTIONS.MAIN, img: soup7 },
-        { step: `Add tortellini and simmer until cooked (about 7 minutes).`, section: SECTIONS.MAIN, img: soup8 },
-        { step: `Once cooked, add the baby spinach and stir to combine.`, section: SECTIONS.MAIN, img: soup9 },
-        { step: `Serve warm.`, section: SECTIONS.SERVE, img: [soup10] },
+        { step: `Reduce heat to medium and drop in the meatballs. Cook for about 4 minutes.`, section: SECTIONS.MAIN },
+        { step: `Add tortellini and simmer until cooked (about 7 minutes).`, section: SECTIONS.MAIN },
+        { step: `Once cooked, add the baby spinach and stir to combine.`, section: SECTIONS.MAIN },
+        { step: `Serve warm.`, section: SECTIONS.SERVE },
     ],
     store: [
         {
@@ -101,10 +92,10 @@ module.exports = {
         },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave until heated through (about 2 to 3 minutes).',
+        },
     ],
     mealPrep: true,
 }
