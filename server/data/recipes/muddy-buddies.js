@@ -1,20 +1,12 @@
 const muddy1 = '../assets/Products/muddy-buddies-1.jpeg';
-const muddy2 = '../assets/Products/muddy-buddies-2.jpeg';
-const muddy3 = '../assets/Products/muddy-buddies-3.jpeg';
-const muddy4 = '../assets/Products/muddy-buddies-4.jpeg';
-const muddy5 = '../assets/Products/muddy-buddies-5.jpeg';
-const muddy6 = '../assets/Products/muddy-buddies-6.jpeg';
-const muddy7 = '../assets/Products/muddy-buddies-7.jpeg';
-const muddy8 = '../assets/Products/muddy-buddies-8.jpeg';
-const muddy9 = '../assets/Products/muddy-buddies-9.jpeg';
-const muddy11 = '../assets/Products/muddy-buddies-11.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CHEX_CEREAL, MIXING_BOWL, PEANUT_BUTTER, POWDERED_SUGAR, REFRIGERATOR, SAUCEPAN, SEMI_SWEET_CHOCOLATE_CHIPS, STOVE } = require('./ingredients');
 
 module.exports = {
     cardName: 'Muddy Buddies',
     name: 'Muddy Buddies',
-    img: muddy11,
+    img: muddy1,
     available: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -24,11 +16,11 @@ module.exports = {
     yields: { amount: 15, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Muddy Buddies', 
+        {
+            label: 'Muddy Buddies',
             link: 'https://joyfoodsunshine.com/puppy-chow-recipe/',
             authors: ['Laura'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -46,16 +38,16 @@ module.exports = {
         { ...SAUCEPAN, additionalDetails: 'or microwavable bowl' },
     ],
     directions: [
-        { step: `Either over the stove or in a microwavable bowl, melt the peanut butter and chocolate chips.`, section: SECTIONS.MAIN, img: [muddy1, muddy2] },
-        { step: `In a mixing bowl, add 3 cups of cereal.`, section: SECTIONS.MAIN, img: muddy3 },
-        { step: `Pour half the chocolate mixture over the cereal. Mix until evenly coated.`, section: SECTIONS.MAIN, img: [muddy4, muddy5] },
-        { step: `Repeat this process with adding 3 more cups of cereal and the remaining chocolate mixture. Mix until evenly coated.`, section: SECTIONS.MAIN, img: muddy6 },
+        { step: `Either over the stove or in a microwavable bowl, melt the peanut butter and chocolate chips.`, section: SECTIONS.MAIN },
+        { step: `In a mixing bowl, add 3 cups of cereal.`, section: SECTIONS.MAIN },
+        { step: `Pour half the chocolate mixture over the cereal. Mix until evenly coated.`, section: SECTIONS.MAIN },
+        { step: `Repeat this process with adding 3 more cups of cereal and the remaining chocolate mixture. Mix until evenly coated.`, section: SECTIONS.MAIN },
         { step: `If there are pools of the chocolate mixture, add 1/4 cup of cereal at a time until all the chocolate mixture is used.`, section: SECTIONS.MAIN },
         { step: `Place this in the fridge for maybe 15 minutes. You do not want it to harden because it makes the powdered sugar more difficult to stick.`, section: SECTIONS.MAIN },
         { step: `Let the mixture come to room temperature.`, section: SECTIONS.MAIN },
-        { step: `Add 1 cup of powdered sugar and mix.`, section: SECTIONS.MAIN, img: [muddy7, muddy8] },
+        { step: `Add 1 cup of powdered sugar and mix.`, section: SECTIONS.MAIN },
         { step: `Chill in the fridge again for 15 minutes.`, section: SECTIONS.MAIN },
-        { step: `Add 1/4 cup of powdered sugar and mix. Repeat with the remaining powdered sugar.`, section: SECTIONS.MAIN, img: muddy9 },
+        { step: `Add 1/4 cup of powdered sugar and mix. Repeat with the remaining powdered sugar.`, section: SECTIONS.MAIN },
         { step: `Enjoy these sweet goodies while watching a movie or reading a book.`, section: SECTIONS.SERVE },
     ],
     store: [
