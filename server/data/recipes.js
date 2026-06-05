@@ -299,7 +299,7 @@ const pretzel = require("./recipes/pretzel");
 const pumpkinBars = require("./recipes/pumpkin-bars");
 const pumpkinSoup = require("./recipes/pumpkin-soup");
 const pumpkinSoup2 = require('./recipes/pumpkin-soup-2.js'); // TODO: finish adding recipe
-const ravioli = require("./recipes/ravioli");
+const ravioli = require('./recipes/ravioli.js');
 const redLobsterCheddarBayBiscuits = require("./recipes/red-lobster-cheddar-bay-biscuits");
 const reubenSandwich = require("./recipes/reuben-sandwich");
 const riceKrispiesTreats = require("./recipes/rice-krispies-treats");
@@ -922,8 +922,6 @@ module.exports = recipes;
         - Tiramisu (without coffee)
             - https://foodtourrome.com/recipes-the-roman-food-tour/
         - Tagliatelle
-        - Ravioli with white truffle butter sauce
-            - https://foodtourrome.com/recipes-the-roman-food-tour/
         - Focaccia bread with Porchetta, Parmesan cream, grilled peppers and Parmesan slices
         - Focaccia bread that was used in sandwiches:
             - https://www.recipetineats.com/focaccia-recipe/
