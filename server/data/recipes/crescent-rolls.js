@@ -4,10 +4,6 @@ const rolls3 = '../assets/Products/crescent-rolls-3.jpeg';
 const rolls4 = '../assets/Products/crescent-rolls-4.jpeg';
 const rolls5 = '../assets/Products/crescent-rolls-5.jpeg';
 const rolls6 = '../assets/Products/crescent-rolls-6.jpeg';
-const rolls7 = '../assets/Products/crescent-rolls-7.jpeg';
-const rolls8 = '../assets/Products/crescent-rolls-8.jpeg';
-const rolls9 = '../assets/Products/crescent-rolls-9.jpeg';
-const rolls10 = '../assets/Products/crescent-rolls-10.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, EGG, EVAPORATED_MILK, MEDIUM_BOWL, MIXING_BOWL, OVEN, SALT, SILICONE_BAKING_MAT, UNSALTED_BUTTER, WATER, WHITE_SUGAR, YEAST } = require('./ingredients');
@@ -17,7 +13,7 @@ const YEAST_MIXTURE = 'Yeast Mixture';
 module.exports = {
     cardName: 'Crescent Rolls',
     name: 'Crescent Rolls',
-    img: rolls9,
+    img: rolls6,
     available: true,
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.AUSTRIAN],
@@ -60,24 +56,24 @@ module.exports = {
     ],
     directions: [
         { step: `In a medium bowl, combine the "${YEAST_MIXTURE}" section ingredients.`, section: YEAST_MIXTURE },
-        { step: `Let mixture sit for 3 to 5 minutes.`, section: YEAST_MIXTURE, img: rolls1 },
+        { step: `Let mixture sit for 3 to 5 minutes.`, section: YEAST_MIXTURE },
 
-        { step: `In a mixing bowl, combine the "${SECTIONS.WET_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_WET_INGREDIENTS, img: rolls2 },
+        { step: `In a mixing bowl, combine the "${SECTIONS.WET_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_WET_INGREDIENTS },
         { step: `Add yeast mixture into liquid mixture. Mix.`, section: SECTIONS.PREP_WET_INGREDIENTS },
 
         { step: `Preheat the oven to 325ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Place silicon baking mat on baking sheet.`, section: SECTIONS.PREP_PAN },
-        { step: `Add main ingredients to the mixing bowl and combine.`, section: SECTIONS.MAIN, img: rolls3 },
-        { step: `Split the dough into four equal parts.`, section: SECTIONS.MAIN, img: rolls4 },
-        { step: `Roll out dough into large circles (like pizza dough shape).`, section: SECTIONS.MAIN, img: rolls5 },
-        { step: `Cut the dough into eighths (or more depending on the desired size).`, section: SECTIONS.MAIN, img: rolls6 },
-        { step: `Separate. Roll each wedge from the outside to the center.`, section: SECTIONS.MAIN, img: rolls7 },
-        { step: `Place rolls on prepared baking sheet and let them rise for about 1 hour.`, section: SECTIONS.MAIN, img: rolls8 },
+        { step: `Add main ingredients to the mixing bowl and combine.`, section: SECTIONS.MAIN },
+        { step: `Split the dough into four equal parts.`, section: SECTIONS.MAIN, img: rolls1 },
+        { step: `Roll out dough into large circles (like pizza dough shape).`, section: SECTIONS.MAIN, img: rolls2 },
+        { step: `Cut the dough into eighths (or more depending on the desired size).`, section: SECTIONS.MAIN, img: rolls3 },
+        { step: `Separate. Roll each wedge from the outside to the center.`, section: SECTIONS.MAIN, img: rolls4 },
+        { step: `Place rolls on prepared baking sheet and let them rise for about 1 hour.`, section: SECTIONS.MAIN, img: rolls5 },
         { step: `Baste with butter.`, section: SECTIONS.MAIN },
 
         { step: `Bake for 20 minutes.`, section: SECTIONS.BAKE },
 
-        { step: `Eat these rolls warm.`, section: SECTIONS.SERVE, img: rolls10 },
+        { step: `Eat these rolls warm.`, section: SECTIONS.SERVE },
     ],
     store: [
         {
