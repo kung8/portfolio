@@ -1,15 +1,4 @@
 const stuffing1 = '../assets/Products/stuffing-1.jpeg';
-const stuffing2 = '../assets/Products/stuffing-2.jpeg';
-const stuffing3 = '../assets/Products/stuffing-3.jpeg';
-const stuffing4 = '../assets/Products/stuffing-4.jpeg';
-const stuffing5 = '../assets/Products/stuffing-5.jpeg';
-const stuffing6 = '../assets/Products/stuffing-6.jpeg';
-const stuffing7 = '../assets/Products/stuffing-7.jpeg';
-const stuffing8 = '../assets/Products/stuffing-8.jpeg';
-const stuffing9 = '../assets/Products/stuffing-9.jpeg';
-const stuffing10 = '../assets/Products/stuffing-10.jpeg';
-const stuffing11 = '../assets/Products/stuffing-11.jpeg';
-const stuffing12 = '../assets/Products/stuffing-12.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BLACK_PEPPER, BREAD, CELERY, CHICKEN_BROTH, COOKING_SPRAY, EGG, FRESH_ROSEMARY, FRESH_SAGE, FRYING_PAN, GARLIC, OVEN, PARSLEY, SALT, SMALL_BOWL, STOVE, SWEET_ONION, UNSALTED_BUTTER, WHISK } = require('./ingredients');
@@ -17,7 +6,7 @@ const { BAKING_PAN, BLACK_PEPPER, BREAD, CELERY, CHICKEN_BROTH, COOKING_SPRAY, E
 module.exports = {
     cardName: 'Stuffing',
     name: 'Stuffing',
-    img: stuffing12,
+    img: stuffing1,
     available: true,
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
@@ -65,23 +54,23 @@ module.exports = {
     directions: [
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: `Brush the baking pan with some cooking spray.`, section: SECTIONS.PREP_PAN, img: stuffing1 },
-        { step: `Place cubed bread in baking pan.`, section: SECTIONS.PREP_PAN, img: stuffing2 },
+        { step: `Brush the baking pan with some cooking spray.`, section: SECTIONS.PREP_PAN },
+        { step: `Place cubed bread in baking pan.`, section: SECTIONS.PREP_PAN },
 
-        { step: `Over medium heat, heat butter in a pan.`, section: SECTIONS.COOK_VEGGIES, img: stuffing3 },
-        { step: `Once melted, add the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES, img: stuffing4 },
-        { step: `Cook until the veggies are tender (about 8 to 10 minutes).`, section: SECTIONS.COOK_VEGGIES, img: stuffing5 },
+        { step: `Over medium heat, heat butter in a pan.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Once melted, add the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Cook until the veggies are tender (about 8 to 10 minutes).`, section: SECTIONS.COOK_VEGGIES },
 
-        { step: `Add in chopped fresh herbs. Mix and cook for 1 minute.`, section: SECTIONS.COOK_HERBS, img: [stuffing6, stuffing7] },
+        { step: `Add in chopped fresh herbs. Mix and cook for 1 minute.`, section: SECTIONS.COOK_HERBS },
 
-        { step: `Stir in 1 cup of stock.`, section: SECTIONS.PREP_CASSEROLE, img: stuffing8 },
+        { step: `Stir in 1 cup of stock.`, section: SECTIONS.PREP_CASSEROLE },
         { step: `If you like a crispier stuffing, you can scoop out some of the bread and set it aside.`, section: SECTIONS.PREP_CASSEROLE },
-        { step: `Pour mixture over the cubed bread. Mix until coated.`, section: SECTIONS.PREP_CASSEROLE, img: stuffing9 },
+        { step: `Pour mixture over the cubed bread. Mix until coated.`, section: SECTIONS.PREP_CASSEROLE },
         { step: `If you scooped out some bread, you can add it back in now.`, section: SECTIONS.PREP_CASSEROLE },
-        { step: `In a small bowl, combine the eggs and the remaining stock.`, section: SECTIONS.PREP_CASSEROLE, img: stuffing10 },
+        { step: `In a small bowl, combine the eggs and the remaining stock.`, section: SECTIONS.PREP_CASSEROLE },
         { step: `Pour egg mixture over the cubed bread and fold until combined.`, section: SECTIONS.PREP_CASSEROLE },
 
-        { step: `Bake until the internal temperature is 160ºF (about 45 to 50 minutes). If getting browned and it isn't finished yet, you can cover it with foil in a tent shape.`, section: SECTIONS.BAKE, img: stuffing11 },
+        { step: `Bake until the internal temperature is 160ºF (about 45 to 50 minutes). If getting browned and it isn't finished yet, you can cover it with foil in a tent shape.`, section: SECTIONS.BAKE },
 
         { step: `Serve warm on the side of your holiday feast or on any occasion.`, section: SECTIONS.SERVE },
     ],
