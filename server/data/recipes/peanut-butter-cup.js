@@ -4,10 +4,6 @@ const cup3 = '../assets/Products/peanut-butter-cup-3.jpeg';
 const cup4 = '../assets/Products/peanut-butter-cup-4.jpeg';
 const cup5 = '../assets/Products/peanut-butter-cup-5.jpeg';
 const cup6 = '../assets/Products/peanut-butter-cup-6.jpeg';
-const cup7 = '../assets/Products/peanut-butter-cup-7.jpeg';
-const cup8 = '../assets/Products/peanut-butter-cup-8.jpeg';
-const cup9 = '../assets/Products/peanut-butter-cup-9.jpeg';
-const cup10 = '../assets/Products/peanut-butter-cup-10.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CUPCAKE_LINER, MILK_CHOCOLATE_CHIPS, MIXING_BOWL, MUFFIN_TIN, PEANUT_BUTTER, POWDERED_SUGAR, REFRIGERATOR, SALT } = require('./ingredients');
@@ -19,7 +15,7 @@ const SECOND_CHILL = 'Second Chill';
 module.exports = {
     cardName: 'Peanut Butter Cup',
     name: 'Peanut Butter Cup',
-    img: cup9,
+    img: cup6,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -55,15 +51,15 @@ module.exports = {
     directions: [
         { step: `Fill the muffin tin with cupcake liners.`, section: FIRST_CHILL },
         { step: `In a microwavable bowl, add half of the chocolate chips.`, section: FIRST_CHILL },
-        { step: `Microwave until melted (about 2 or 2 1/2 minutes).`, section: FIRST_CHILL, img: cup1 },
-        { step: `Spoon chocolate into cupcake liners about halfway. Carefully bring up the chocolate slightly up the side.`, section: FIRST_CHILL, img: cup2 },
-        { step: `Chill the chocolate in the fridge (about 1 hour).`, section: FIRST_CHILL, img: cup5 },
-        { step: `In a mixing bowl, combine the peanut butter, powdered sugar and salt.`, section: SECOND_CHILL, img: [cup3, cup4] },
-        { step: `Place peanut butter mixture in the center of the chocolate.`, section: SECOND_CHILL, img: cup6 },
+        { step: `Microwave until melted (about 2 or 2 1/2 minutes).`, section: FIRST_CHILL },
+        { step: `Spoon chocolate into cupcake liners about halfway. Carefully bring up the chocolate slightly up the side.`, section: FIRST_CHILL },
+        { step: `Chill the chocolate in the fridge (about 1 hour).`, section: FIRST_CHILL, img: cup1 },
+        { step: `In a mixing bowl, combine the peanut butter, powdered sugar and salt.`, section: SECOND_CHILL, img: cup2 },
+        { step: `Place peanut butter mixture in the center of the chocolate.`, section: SECOND_CHILL, img: cup3 },
         { step: `Melt the rest of the chocolate.`, section: SECOND_CHILL },
-        { step: `Pour chocolate over the peanut butter mixture. Smooth as much as you can.`, section: SECOND_CHILL, img: cup7 },
-        { step: `Chill the chocolate until firm (about 1 hour).`, section: SECOND_CHILL, img: cup8 },
-        { step: `Enjoy these Reese's Cup copycat!`, section: SECTIONS.SERVE, img: cup10 },
+        { step: `Pour chocolate over the peanut butter mixture. Smooth as much as you can.`, section: SECOND_CHILL, img: cup4 },
+        { step: `Chill the chocolate until firm (about 1 hour).`, section: SECOND_CHILL, img: cup5 },
+        { step: `Enjoy these Reese's Cup copycat!`, section: SECTIONS.SERVE },
     ],
     store: [
         {
