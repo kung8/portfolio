@@ -3,13 +3,6 @@ const naan2 = '../assets/Products/naan-2.jpeg';
 const naan3 = '../assets/Products/naan-3.jpeg';
 const naan4 = '../assets/Products/naan-4.jpeg';
 const naan5 = '../assets/Products/naan-5.jpeg';
-const naan6 = '../assets/Products/naan-6.jpeg';
-const naan7 = '../assets/Products/naan-7.jpeg';
-const naan8 = '../assets/Products/naan-8.jpeg';
-const naan9 = '../assets/Products/naan-9.jpeg';
-const naan10 = '../assets/Products/naan-10.jpeg';
-const naan11 = '../assets/Products/naan-11.jpeg';
-const naan12 = '../assets/Products/naan-12.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BASTING_BRUSH, CILANTRO, FRYING_PAN, MIXING_BOWL, OLIVE_OIL, ROLLING_PIN, SALT, STOVE, UNSALTED_BUTTER, WATER, WHITE_SUGAR, YEAST, YOGURT } = require('./ingredients');
@@ -21,7 +14,7 @@ const COOK_NAAN = 'Cook Naan';
 module.exports = {
     cardName: 'Naan',
     name: 'Naan',
-    img: naan12,
+    img: naan5,
     available: true,
     recommended: true,
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.APPETIZER],
@@ -64,21 +57,21 @@ module.exports = {
     directions: [
         { step: `In a mixing bowl, combine warm water and sugar.`, section: ACTIVATE_YEAST },
         { step: `Slowly add the yeast.`, section: ACTIVATE_YEAST },
-        { step: `Let the yeast activate and begin to foam (about 5 minutes).`, section: ACTIVATE_YEAST, img: naan1 },
+        { step: `Let the yeast activate and begin to foam (about 5 minutes).`, section: ACTIVATE_YEAST },
 
-        { step: `Mix in flour.`, section: MAKE_DOUGH, img: naan2 },
-        { step: `Add yogurt, salt and oil. Mix.`, section: MAKE_DOUGH, img: naan3 },
-        { step: `Transfer dough to a clean work station.`, section: MAKE_DOUGH, img: naan4 },
-        { step: `Knead until the dough is smooth and shiny (about 10 minutes).`, section: MAKE_DOUGH, img: naan5 },
+        { step: `Mix in flour.`, section: MAKE_DOUGH },
+        { step: `Add yogurt, salt and oil. Mix.`, section: MAKE_DOUGH },
+        { step: `Transfer dough to a clean work station.`, section: MAKE_DOUGH },
+        { step: `Knead until the dough is smooth and shiny (about 10 minutes).`, section: MAKE_DOUGH },
         { step: `Lightly grease bowl.`, section: MAKE_DOUGH },
-        { step: `Place dough in bowl and cover with a damp towel.`, section: MAKE_DOUGH, img: [naan6, naan7] },
-        { step: `Place bowl in a warm location and let it double in size (about 1 hour).`, section: MAKE_DOUGH, img: naan8 },
+        { step: `Place dough in bowl and cover with a damp towel.`, section: MAKE_DOUGH },
+        { step: `Place bowl in a warm location and let it double in size (about 1 hour).`, section: MAKE_DOUGH, img: naan1 },
 
-        { step: `Divide the dough into 8 pieces.`, section: COOK_NAAN, img: naan9 },
-        { step: `Roll out the dough into 8 inch circles.`, section: COOK_NAAN, img: naan10 },
+        { step: `Divide the dough into 8 pieces.`, section: COOK_NAAN, img: naan2 },
+        { step: `Roll out the dough into 8 inch circles.`, section: COOK_NAAN, img: naan3 },
         { step: `Over medium heat, heat a frying pan.`, section: COOK_NAAN },
         { step: `Brush one side of dough with water.`, section: COOK_NAAN },
-        { step: `Place the dough in the hot pan, wet side down. Cook until dough puffs and there are some charred spots (about 1 minute).`, section: COOK_NAAN, img: naan11 },
+        { step: `Place the dough in the hot pan, wet side down. Cook until dough puffs and there are some charred spots (about 1 minute).`, section: COOK_NAAN, img: naan4 },
         { step: `Flip and cook the other side (about 1 minute).`, section: COOK_NAAN },
         { step: `Remove from pan and brush each cooked naan with melted butter and sprinkle salt and cilantro.`, section: COOK_NAAN },
         { step: `Repeat until all the other naan is cooked.`, section: COOK_NAAN },
