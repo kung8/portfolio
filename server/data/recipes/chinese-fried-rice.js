@@ -1,13 +1,4 @@
 const rice1 = '../assets/Products/chinese-fried-rice-1.jpeg';
-const rice2 = '../assets/Products/chinese-fried-rice-2.jpeg';
-const rice3 = '../assets/Products/chinese-fried-rice-3.jpeg';
-const rice4 = '../assets/Products/chinese-fried-rice-4.jpeg';
-const rice5 = '../assets/Products/chinese-fried-rice-5.jpeg';
-const rice6 = '../assets/Products/chinese-fried-rice-6.jpeg';
-const rice7 = '../assets/Products/chinese-fried-rice-7.jpeg';
-const rice8 = '../assets/Products/chinese-fried-rice-8.jpeg';
-const rice9 = '../assets/Products/chinese-fried-rice-9.jpeg';
-const rice10 = '../assets/Products/chinese-fried-rice-10.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { CARROT, CHICKEN_BOUILLON, CHINESE_SAUSAGE, CHOPSTICKS, DARK_SOY_SAUCE, EGG, FROZEN_CORN, FROZEN_PEAS, GREEN_ONION, JASMINE_RICE, LIGHT_SOY_SAUCE, MEDIUM_BOWL, RICE_COOKER, SALT, SMALL_BOWL, SPATULA, STOVE, VEGETABLE_OIL, WATER, WHITE_SUGAR, WOK } = require('./ingredients');
@@ -18,7 +9,7 @@ const FLUFF_RICE = 'Fluff Rice';
 module.exports = {
     cardName: 'Chinese Fried Rice',
     name: 'Chinese Fried Rice',
-    img: rice9,
+    img: rice1,
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -76,25 +67,25 @@ module.exports = {
 
         { step: `In a medium bowl, combine the carrots, corn and peas.`, section: SECTIONS.PREP_VEGGIES },
         { step: `Fill the bowl with water and microwave for 2 minutes.`, section: SECTIONS.PREP_VEGGIES },
-        { step: `Drain and set aside.`, section: SECTIONS.PREP_VEGGIES, img: rice3 },
+        { step: `Drain and set aside.`, section: SECTIONS.PREP_VEGGIES },
 
-        { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE, img: rice1 },
+        { step: `In a small bowl, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.PREP_SAUCE },
 
         { step: `Leave the lid on the rice cooker after it finishes cooking for a few minutes.`, section: FLUFF_RICE },
         { step: `Remove the lid and use chopsticks to stir and lift up the rice. This releases steam and helps prevent sticking.`, section: FLUFF_RICE },
 
-        { step: `In a medium bowl, combine the eggs and salt. Beat and set aside for a few minutes.`, section: SECTIONS.COOK_EGGS, img: rice2 },
+        { step: `In a medium bowl, combine the eggs and salt. Beat and set aside for a few minutes.`, section: SECTIONS.COOK_EGGS },
         { step: `Over high heat, heat a wok.`, section: SECTIONS.COOK_EGGS },
-        { step: `Turn down the heat to low and add oil to a wok. Spread the oil to coat the wok.`, section: SECTIONS.COOK_EGGS, img: rice4 },
-        { step: `Add eggs. Lightly stir and cook for 20 to 30 seconds.`, section: SECTIONS.COOK_EGGS, img: rice5 },
-        { step: `Optionally add the Chinese sausage and cook for 2 to 3 minutes.`, section: SECTIONS.COOK_EGGS, img: rice6 },
+        { step: `Turn down the heat to low and add oil to a wok. Spread the oil to coat the wok.`, section: SECTIONS.COOK_EGGS },
+        { step: `Add eggs. Lightly stir and cook for 20 to 30 seconds.`, section: SECTIONS.COOK_EGGS },
+        { step: `Optionally add the Chinese sausage and cook for 2 to 3 minutes.`, section: SECTIONS.COOK_EGGS },
         { step: `Add rice on top of the eggs.`, section: SECTIONS.COOK_EGGS },
         { step: `Stir fry and break up any clumps (for about 2 minutes). Make sure to get to the bottom and the sides to prevent burning and sticking.`, section: SECTIONS.COOK_EGGS },
-        { step: `Lightly press down on the rice.`, section: SECTIONS.COOK_EGGS, img: rice7 },
+        { step: `Lightly press down on the rice.`, section: SECTIONS.COOK_EGGS },
 
         { step: `Turn up the heat to high.`, section: SECTIONS.STIR_FRY },
-        { step: `Add the veggies. Stir fry for 2 to 3 minutes.`, section: SECTIONS.STIR_FRY, img: rice8 },
-        { step: `Add the sauce. Stir fry for another 2 to 3 minutes.`, section: SECTIONS.STIR_FRY, img: rice10 },
+        { step: `Add the veggies. Stir fry for 2 to 3 minutes.`, section: SECTIONS.STIR_FRY },
+        { step: `Add the sauce. Stir fry for another 2 to 3 minutes.`, section: SECTIONS.STIR_FRY },
         { step: `Add the oil and green onions. Stir fry for another minute.`, section: SECTIONS.STIR_FRY },
         { step: `Turn the heat off.`, section: SECTIONS.STIR_FRY },
         { step: `Taste and add any additional seasonings.`, section: SECTIONS.STIR_FRY },
