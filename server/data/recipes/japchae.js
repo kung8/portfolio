@@ -1,15 +1,5 @@
 const japchae1 = '../assets/Products/japchae-1.jpeg';
 const japchae2 = '../assets/Products/japchae-2.jpeg';
-const japchae3 = '../assets/Products/japchae-3.jpeg';
-const japchae4 = '../assets/Products/japchae-4.jpeg';
-const japchae5 = '../assets/Products/japchae-5.jpeg';
-const japchae6 = '../assets/Products/japchae-6.jpeg';
-const japchae7 = '../assets/Products/japchae-7.jpeg';
-const japchae8 = '../assets/Products/japchae-8.jpeg';
-const japchae9 = '../assets/Products/japchae-9.jpeg';
-const japchae10 = '../assets/Products/japchae-10.jpeg';
-const japchae11 = '../assets/Products/japchae-11.jpeg';
-const japchae12 = '../assets/Products/japchae-12.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, BROWN_SUGAR, CARROT, COLANDER, EGG, FRYING_PAN, GARLIC, GREEN_ONION, KITCHEN_SCISSORS, KOREAN_GLASS_NOODLES, LARGE_POT, LIGHT_SOY_SAUCE, MIXING_BOWL, ORANGE_BELL_PEPPER, RED_BELL_PEPPER, SALT, SESAME_OIL, SESAME_SEEDS, SHIITAKE_MUSHROOM, SMALL_BOWL, SPINACH, STOVE, YELLOW_ONION } = require('./ingredients');
@@ -22,7 +12,7 @@ const COOK_SECOND_VEGGIES = 'Cook Second Veggies';
 module.exports = {
     cardName: 'Japchae',
     name: 'Japchae (Korean Glass Noodles)',
-    img: japchae12,
+    img: japchae2,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -80,30 +70,30 @@ module.exports = {
         MIXING_BOWL,
     ],
     directions: [
-        { step: `Boil water in a pot and cook glass noodles as instructed from the packaging.`, section: SECTIONS.COOK_NOODLES, img: japchae1 },
-        { step: `Drain and rinse in cold water.`, section: SECTIONS.COOK_NOODLES, img: japchae2 },
+        { step: `Boil water in a pot and cook glass noodles as instructed from the packaging.`, section: SECTIONS.COOK_NOODLES },
+        { step: `Drain and rinse in cold water.`, section: SECTIONS.COOK_NOODLES },
         { step: `Cut the noodles a few times with cooking scissors.`, section: SECTIONS.COOK_NOODLES },
 
         { step: `In a small bowl, whisk eggs.`, section: SECTIONS.COOK_EGGS },
         { step: `Over medium heat, heat oil in a frying pan.`, section: SECTIONS.COOK_EGGS },
         { step: `Add whisked eggs into pan. Tilt the pan in a circular motion to spread the egg.`, section: SECTIONS.COOK_EGGS },
         { step: `Cook the egg for a minute.`, section: SECTIONS.COOK_EGGS },
-        { step: `Flip and cook for another minute.`, section: SECTIONS.COOK_EGGS, img: japchae3 },
+        { step: `Flip and cook for another minute.`, section: SECTIONS.COOK_EGGS },
         { step: `Transfer to a cutting board to cool.`, section: SECTIONS.COOK_EGGS },
-        { step: `Cut eggs into thin strips.`, section: SECTIONS.COOK_EGGS, img: japchae4 },
+        { step: `Cut eggs into thin strips.`, section: SECTIONS.COOK_EGGS, img: japchae1 },
 
         { step: `Over medium-high heat, heat oil in a frying pan.`, section: COOK_FIRST_VEGGIES },
-        { step: `Saute the carrots and bell peppers until softened (about 3 to 4 minutes). Set aside.`, section: COOK_FIRST_VEGGIES, img: japchae5 },
+        { step: `Saute the carrots and bell peppers until softened (about 3 to 4 minutes). Set aside.`, section: COOK_FIRST_VEGGIES },
 
         { step: `Over medium-high heat, heat oil in a frying pan.`, section: COOK_SECOND_VEGGIES },
-        { step: `Saute the onion, mushrooms, garlic, and green onions until softened.`, section: COOK_SECOND_VEGGIES, img: japchae6 },
-        { step: `Add spinach and salt. Cook until spinach wilts. Set aside.`, section: COOK_SECOND_VEGGIES, img: japchae7 },
+        { step: `Saute the onion, mushrooms, garlic, and green onions until softened.`, section: COOK_SECOND_VEGGIES },
+        { step: `Add spinach and salt. Cook until spinach wilts. Set aside.`, section: COOK_SECOND_VEGGIES },
 
-        { step: `Over medium-high heat, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.ASSEMBLE, img: japchae8 },
-        { step: `Once the sugar dissolves, add noodles. Toss to coat noodles in the sauce.`, section: SECTIONS.ASSEMBLE, img: japchae9 },
-        { step: `Add vegetables back in and combine until mixed.`, section: SECTIONS.ASSEMBLE, img: japchae10 },
+        { step: `Over medium-high heat, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.ASSEMBLE },
+        { step: `Once the sugar dissolves, add noodles. Toss to coat noodles in the sauce.`, section: SECTIONS.ASSEMBLE },
+        { step: `Add vegetables back in and combine until mixed.`, section: SECTIONS.ASSEMBLE },
 
-        { step: `Serve topped with eggs and sesame seed.`, section: SECTIONS.SERVE, img: japchae11 },
+        { step: `Serve topped with eggs and sesame seed.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'Feel free to add or replace veggies with your favorites and you can even add whatever protein you like.' },
