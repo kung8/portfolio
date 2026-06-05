@@ -1,13 +1,5 @@
 const limone1 = '../assets/Products/pasta-al-limone-1.jpeg';
 const limone2 = '../assets/Products/pasta-al-limone-2.jpeg';
-const limone3 = '../assets/Products/pasta-al-limone-3.jpeg';
-const limone4 = '../assets/Products/pasta-al-limone-4.jpeg';
-const limone5 = '../assets/Products/pasta-al-limone-5.jpeg';
-const limone6 = '../assets/Products/pasta-al-limone-6.jpeg';
-const limone7 = '../assets/Products/pasta-al-limone-7.jpeg';
-const limone8 = '../assets/Products/pasta-al-limone-8.jpeg';
-const limone9 = '../assets/Products/pasta-al-limone-9.jpeg';
-const limone10 = '../assets/Products/pasta-al-limone-10.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, FETTUCCINE_NOODLES, HEAVY_CREAM, LARGE_PAN, LEMON_JUICE, LEMON_ZEST, PARMIGIANO_REGGIANO, SALT, SAUCEPAN, STOVE, UNSALTED_BUTTER } = require('./ingredients');
@@ -17,7 +9,7 @@ const COMBINE = 'Combine';
 module.exports = {
     cardName: 'Pasta al Limone',
     name: 'Pasta al Limone',
-    img: limone10,
+    img: limone2,
     available: true,
     recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -59,18 +51,18 @@ module.exports = {
         SAUCEPAN,
     ],
     directions: [
-        { step: `Over medium heat, add butter, lemon juice and lemon zest to a large pan. Stir occasionally.`, section: SECTIONS.COOK_SAUCE, img: limone1 },
-        { step: `Let the butter melt and simmer for 20 seconds.`, section: SECTIONS.COOK_SAUCE, img: limone2 },
-        { step: `Add the heavy cream, black pepper and salt. Mix.`, section: SECTIONS.COOK_SAUCE, img: limone3 },
+        { step: `Over medium heat, add butter, lemon juice and lemon zest to a large pan. Stir occasionally.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Let the butter melt and simmer for 20 seconds.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Add the heavy cream, black pepper and salt. Mix.`, section: SECTIONS.COOK_SAUCE },
         { step: `Reduce to medium-low heat. Bring to a gentle simmer. Let it simmer while you cook the pasta.`, section: SECTIONS.COOK_SAUCE },
 
         { step: `Over medium-high heat, bring a pot of salted water to a boil.`, section: SECTIONS.COOK_NOODLES },
-        { step: `Add the pasta and cook until al dente.`, section: SECTIONS.COOK_NOODLES, img: limone5 },
+        { step: `Add the pasta and cook until al dente.`, section: SECTIONS.COOK_NOODLES },
         { step: `Drain the pasta.`, section: SECTIONS.COOK_NOODLES },
 
-        { step: `Reduce to low heat. Add the parmesan to the sauce and stir.`, section: COMBINE, img: limone4 },
-        { step: `Add pasta to the sauce. Combine.`, section: COMBINE, img: [limone6, limone7] },
-        { step: `Serve immediately and garnish with more of the toppings as desired. Enjoy the fresh bright flavors of this dish.`, section: SECTIONS.SERVE, img: [limone8, limone9] },
+        { step: `Reduce to low heat. Add the parmesan to the sauce and stir.`, section: COMBINE, img: limone1 },
+        { step: `Add pasta to the sauce. Combine.`, section: COMBINE },
+        { step: `Serve immediately and garnish with more of the toppings as desired. Enjoy the fresh bright flavors of this dish.`, section: SECTIONS.SERVE },
     ],
     store: [
         {
