@@ -2,12 +2,6 @@ const cookies1 = '../assets/Products/gingerbread-cookies-1.jpeg';
 const cookies2 = '../assets/Products/gingerbread-cookies-2.jpeg';
 const cookies3 = '../assets/Products/gingerbread-cookies-3.jpeg';
 const cookies4 = '../assets/Products/gingerbread-cookies-4.jpeg';
-const cookies5 = '../assets/Products/gingerbread-cookies-5.jpeg';
-const cookies6 = '../assets/Products/gingerbread-cookies-6.jpeg';
-const cookies7 = '../assets/Products/gingerbread-cookies-7.jpeg';
-const cookies8 = '../assets/Products/gingerbread-cookies-8.jpeg';
-const cookies9 = '../assets/Products/gingerbread-cookies-9.jpeg';
-const cookies10 = '../assets/Products/gingerbread-cookies-10.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BAKING_SODA, BROWN_SUGAR, CINNAMON, COOLING_RACK, GROUND_CLOVES, GROUND_GINGER, MILK, MIXING_BOWL, MOLASSES, OVEN, PASTRY_BLENDER_ATTACHMENT, POWDERED_SUGAR, ROLLING_PIN, SALT, SILICONE_BAKING_MAT, STAND_MIXER, UNSALTED_BUTTER } = require('./ingredients');
@@ -15,7 +9,7 @@ const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BAKING_SODA, BROWN_SUGAR, CINNAMON, COO
 module.exports = {
     cardName: 'Gingerbread Cookies',
     name: 'Gingerbread Cookies',
-    img: cookies8,
+    img: cookies3,
     available: true,
     recommended: true,
     category: [CATEGORIES.DESSERT],
@@ -65,28 +59,28 @@ module.exports = {
     ],
     directions: [
         { step: `In a stand mixer, combine all the the "${SECTIONS.DRY_INGREDIENTS}" section ingredients.`, section: SECTIONS.PREP_DOUGH },
-        { step: `Add the divided butter to the dry ingredients.`, section: SECTIONS.PREP_DOUGH, img: cookies1 },
-        { step: `Cut the butter using a pastry blender until it becomes very fine.`, section: SECTIONS.PREP_DOUGH, img: cookies2 },
-        { step: `Add the molasses and milk to the bowl. Mix on low for about 30 seconds.`, section: SECTIONS.PREP_DOUGH, img: cookies3 },
-        { step: `Divide the dough into two. Form them into balls.`, section: SECTIONS.PREP_DOUGH, img: cookies4 },
-        { step: `Wrap the balls with plastic wrap and refrigerate for 2 hours or overnight. This is to help the dough be less sticky.`, section: SECTIONS.PREP_DOUGH, img: cookies5 },
+        { step: `Add the divided butter to the dry ingredients.`, section: SECTIONS.PREP_DOUGH },
+        { step: `Cut the butter using a pastry blender until it becomes very fine.`, section: SECTIONS.PREP_DOUGH },
+        { step: `Add the molasses and milk to the bowl. Mix on low for about 30 seconds.`, section: SECTIONS.PREP_DOUGH },
+        { step: `Divide the dough into two. Form them into balls.`, section: SECTIONS.PREP_DOUGH },
+        { step: `Wrap the balls with plastic wrap and refrigerate for 2 hours or overnight. This is to help the dough be less sticky.`, section: SECTIONS.PREP_DOUGH, img: cookies1 },
 
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
         { step: `Place silicon baking mats on baking sheets.`, section: SECTIONS.BAKE },
         { step: `Flour a clean surface and place one ball of dough on top.`, section: SECTIONS.BAKE },
         { step: `Lightly flatten the dough so there is more surface area for the flour. Lightly top the dough and rolling pin with flour.`, section: SECTIONS.BAKE },
-        { step: `Roll out the dough to about 1/4 inch thick.`, section: SECTIONS.BAKE, img: cookies6 },
+        { step: `Roll out the dough to about 1/4 inch thick.`, section: SECTIONS.BAKE, img: cookies2 },
         { step: `Use a cookie cutter to cut out gingerbread men or whatever design you want.`, section: SECTIONS.BAKE },
         { step: `Place these cookies on a baking sheet and refrigerate while you prepare the second dough ball.`, section: SECTIONS.BAKE },
         
         { step: `Bake until the center is set and does not give much when lightly pressed (about 8 to 11 minutes). Avoid overbaking.`, section: SECTIONS.BAKE },
         { step: `Transfer to a cooling rack and let cool completely before frosting.`, section: SECTIONS.COOL },
 
-        { step: `In a mixing bowl, combine butter, milk and half of the powdered sugar. Mix until uniform.`, section: SECTIONS.FROST, img: cookies9 },
-        { step: `Add remaining powdered sugar. Mix until uniform.`, section: SECTIONS.FROST, img: cookies10 },
+        { step: `In a mixing bowl, combine butter, milk and half of the powdered sugar. Mix until uniform.`, section: SECTIONS.FROST },
+        { step: `Add remaining powdered sugar. Mix until uniform.`, section: SECTIONS.FROST, img: cookies4 },
 
-        { step: `Optionally frost the gingerbread men and enjoy these simple childhood treats.`, section: SECTIONS.SERVE, img: cookies7 },
+        { step: `Optionally frost the gingerbread men and enjoy these simple childhood treats.`, section: SECTIONS.SERVE },
     ],
     notes: [
         { note: 'I personally prefer this without the frosting.' }
