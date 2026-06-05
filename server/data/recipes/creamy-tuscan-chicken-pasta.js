@@ -1,13 +1,5 @@
 const pasta1 = '../assets/Products/creamy-tuscan-chicken-pasta-1.jpeg';
 const pasta2 = '../assets/Products/creamy-tuscan-chicken-pasta-2.jpeg';
-const pasta3 = '../assets/Products/creamy-tuscan-chicken-pasta-3.jpeg';
-const pasta4 = '../assets/Products/creamy-tuscan-chicken-pasta-4.jpeg';
-const pasta5 = '../assets/Products/creamy-tuscan-chicken-pasta-5.jpeg';
-const pasta6 = '../assets/Products/creamy-tuscan-chicken-pasta-6.jpeg';
-const pasta7 = '../assets/Products/creamy-tuscan-chicken-pasta-7.jpeg';
-const pasta8 = '../assets/Products/creamy-tuscan-chicken-pasta-8.jpeg';
-const pasta9 = '../assets/Products/creamy-tuscan-chicken-pasta-9.jpeg';
-const pasta10 = '../assets/Products/creamy-tuscan-chicken-pasta-10.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BABY_SPINACH, BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_BREAST, CUTTING_BOARD, DUTCH_OVEN_POT, GARLIC, HEAVY_CREAM, ITALIAN_SEASONING, KNIFE, MILK, OLIVE_OIL, PARMESAN_CHEESE, PENNE, SALT, STOVE, SUN_DRIED_TOMATOES, UNSALTED_BUTTER } = require('./ingredients');
@@ -17,7 +9,7 @@ const COMBINE = 'Combine';
 module.exports = {
     cardName: 'Creamy Tuscan Chicken',
     name: 'Creamy Tuscan Chicken Pasta',
-    img: pasta9,
+    img: pasta1,
     available: true,
     recommended: false,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
@@ -64,23 +56,23 @@ module.exports = {
     ],
     directions: [
         { step: `Pat chicken dry.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Season chicken with salt and pepper.`, section: SECTIONS.COOK_CHICKEN, img: pasta1 },
+        { step: `Season chicken with salt and pepper.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Over medium-high heat, heat olive oil in a dutch oven pot.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Add chicken to pot. Cook until both sides are browned (for about 3 to 4 minutes).`, section: SECTIONS.COOK_CHICKEN, img: pasta2 },
+        { step: `Add chicken to pot. Cook until both sides are browned (for about 3 to 4 minutes).`, section: SECTIONS.COOK_CHICKEN },
         { step: `Remove the chicken from the pot and place on a cutting board.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Cut the chicken into 1 inch pieces. Set aside.`, section: SECTIONS.COOK_CHICKEN, img: pasta3 },
+        { step: `Cut the chicken into 1 inch pieces. Set aside.`, section: SECTIONS.COOK_CHICKEN },
 
         { step: `Over medium heat, melt butter in the dutch oven pot.`, section: SECTIONS.COOK_SAUCE },
-        { step: `Add the rest of the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE, img: pasta4 },
+        { step: `Add the rest of the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
         { step: `Saute until it becomes fragrant.`, section: SECTIONS.COOK_SAUCE },
 
-        { step: `Add the "${SECTIONS.PASTA}" section ingredients to the pot. Stir.`, section: SECTIONS.COOK_PASTA, img: pasta5 },
-        { step: `Cook until the pasta is al dente (for about 10 minutes). Stir occasionally.`, section: SECTIONS.COOK_PASTA, img: pasta6 },
+        { step: `Add the "${SECTIONS.PASTA}" section ingredients to the pot. Stir.`, section: SECTIONS.COOK_PASTA },
+        { step: `Cook until the pasta is al dente (for about 10 minutes). Stir occasionally.`, section: SECTIONS.COOK_PASTA },
 
-        { step: `Add chicken and cook until the chicken is almost cooked through.`, section: COMBINE, img: pasta7 },
-        { step: `Add the spinach and cook until it wilts (about 1 to 2 minutes).`, section: COMBINE, img: pasta8 },
+        { step: `Add chicken and cook until the chicken is almost cooked through.`, section: COMBINE },
+        { step: `Add the spinach and cook until it wilts (about 1 to 2 minutes).`, section: COMBINE },
 
-        { step: `Enjoy this Italian dish warm.`, section: SECTIONS.SERVE, img: pasta10 },
+        { step: `Enjoy this Italian dish warm.`, section: SECTIONS.SERVE, img: pasta2 },
     ],
     notes: [
         { note: 'This dish was really good but a little dry which caused it to stick to the pot. I have increased the liquids ratio 3:2 from the original recipe. If you have the time I think the "Marry Me Chicken" recipe was overall better, but for a quicker meal this turned out well.' },
