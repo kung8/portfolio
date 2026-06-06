@@ -1,4 +1,10 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const ravioli1 = '../assets/Products/ravioli-1.jpeg';
+const ravioli2 = '../assets/Products/ravioli-2.jpeg';
+const ravioli3 = '../assets/Products/ravioli-3.mov';
+const ravioli4 = '../assets/Products/ravioli-4.jpeg';
+const ravioli5 = '../assets/Products/ravioli-5.jpeg';
+const ravioli6 = '../assets/Products/ravioli-6.jpeg';
+const ravioli7 = '../assets/Products/ravioli-7.jpeg';
 
 const {
     CATEGORIES,
@@ -27,16 +33,14 @@ const COOK_RAVIOLI = 'Cook Ravioli';
 const PREP_WHITE_TRUFFLE_CREAM_SAUCE = 'Prep White Truffle Cream Sauce';
 
 module.exports = {
-    wip: true,
     cardName: 'Ravioli',
     name: 'Ravioli',
-    img: '',
+    img: ravioli7,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.SIMMER],
-    protein: [],
     type: [TYPES.PASTA],
     yields: { amount: 2, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
@@ -51,7 +55,7 @@ module.exports = {
         { ...SPINACH, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: RICOTTA_AND_SPINACH_FILLING },
         { ...PARMIGIANO_REGGIANO, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: RICOTTA_AND_SPINACH_FILLING },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: RICOTTA_AND_SPINACH_FILLING },
-        { ...NUTMEG, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'to taste', section: RICOTTA_AND_SPINACH_FILLING },
+        { ...NUTMEG, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: RICOTTA_AND_SPINACH_FILLING },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: RICOTTA_AND_SPINACH_FILLING },
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: RICOTTA_AND_SPINACH_FILLING },
 
@@ -60,11 +64,11 @@ module.exports = {
 
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
         { ...HEAVY_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
-        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
+        { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', section: WHITE_TRUFFLE_CREAM_SAUCE },
         { ...PARMIGIANO_REGGIANO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
         { ...WHITE_TRUFFLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
-        { ...SALT, amount: '', unit: 'to taste', additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
-        { ...BLACK_PEPPER, amount: '', unit: 'to taste', additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: WHITE_TRUFFLE_CREAM_SAUCE },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: WHITE_TRUFFLE_CREAM_SAUCE },
     ],
     appliances: [
         STOVE,
@@ -94,7 +98,7 @@ module.exports = {
         { step: `Run spinach under cold water. Drain.`, section: PREP_SPINACH },
         { step: `Chop spinach.`, section: PREP_SPINACH },
 
-        { step: `In a medium bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: PREP_RICOTTA_SPINACH_FILLING },
+        { step: `In a medium bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: PREP_RICOTTA_SPINACH_FILLING, img: ravioli1 },
         { step: `Chill in fridge for at least one hour.`, section: PREP_RICOTTA_SPINACH_FILLING },
 
         // Ravioli
@@ -105,16 +109,16 @@ module.exports = {
         */
         { step: `In another medium bowl, add flour.`, section: MAKE_RAVIOLI },
         { step: `Make a well in the flour.`, section: MAKE_RAVIOLI },
-        { step: `Add eggs in the center. Slowly mix the flour into the eggs with a fork.`, section: MAKE_RAVIOLI },
+        { step: `Add eggs in the center. Slowly mix the flour into the eggs with a fork.`, section: MAKE_RAVIOLI, img: ravioli2 },
         { step: `Continue to mix until the dough comes to a ball.`, section: MAKE_RAVIOLI },
         { step: `Knead dough with your palm, stretch and fold.`, section: MAKE_RAVIOLI },
-        { step: `Run the dough through the pasta maker several times gradually until it gets to the thinnest level.`, section: MAKE_RAVIOLI },
+        { step: `Run the dough through the pasta maker several times gradually until it gets to level 6. I ran it through levels: 0, 4 and 6.`, section: MAKE_RAVIOLI, video: ravioli3 },
         { step: `Cut dough strip in half length-wise. Now you have a top and bottom layer.`, section: MAKE_RAVIOLI },
         { step: `Place a dollop of filling in the center about 2 inches apart.`, section: MAKE_RAVIOLI },
-        { step: `Place the top layer of dough and cut ravioli into squares. If the dough does not stick, brush the dough with water to seal.`, section: MAKE_RAVIOLI },
+        { step: `Place the top layer of dough and cut ravioli into squares. Brush egg wash along the edges so the squares can seal.`, section: MAKE_RAVIOLI, img: ravioli4 },
 
         { step: `Over medium-high heat, bring a pot of salted water to a boil.`, section: COOK_RAVIOLI },
-        { step: `Cook ravioli (about 4 to 5 minutes).`, section: COOK_RAVIOLI },
+        { step: `Cook ravioli (about 4 to 5 minutes).`, section: COOK_RAVIOLI, img: ravioli5 },
         { step: `Transfer ravioli to a plate and reserve pasta water.`, section: COOK_RAVIOLI },
 
         // White Truffle Cream Sauce
@@ -126,13 +130,16 @@ module.exports = {
         { step: `Over medium-low heat, melt butter in a saucepan.`, section: PREP_WHITE_TRUFFLE_CREAM_SAUCE },
         { step: `Add garlic. Saute until fragrant (about 1 minute).`, section: PREP_WHITE_TRUFFLE_CREAM_SAUCE },
         { step: `Add heavy cream and bring to a simmer.`, section: PREP_WHITE_TRUFFLE_CREAM_SAUCE },
-        { step: `Let it thicken (about 3 to 5 minutes).`, section: PREP_WHITE_TRUFFLE_CREAM_SAUCE },
+        { step: `Let it thicken (about 3 to 5 minutes).`, section: PREP_WHITE_TRUFFLE_CREAM_SAUCE, img: ravioli6 },
         { step: `Remove from heat. Stir in cheese until smooth.`, section: PREP_WHITE_TRUFFLE_CREAM_SAUCE },
         { step: `Add white truffle oil and reserved pasta water.`, section: PREP_WHITE_TRUFFLE_CREAM_SAUCE },
 
         { step: `Toss cooked ravioli in white truffle cream sauce until coated.`, section: SECTIONS.ASSEMBLE },
 
-        { step: `Serve and enjoy the best ravioli I have ever had!`, section: `` },
+        { step: `Serve and enjoy the best ravioli I have ever had!`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `The recommended pasta maker is the Marcato Atlas 150.` },
     ],
     store: [
         {
