@@ -1,8 +1,8 @@
-const schnitzel1 = '../assets/Products/german-schnitzel-1.jpeg';
-const schnitzel2 = '../assets/Products/german-schnitzel-2.jpeg';
-const schnitzel3 = '../assets/Products/german-schnitzel-3.jpeg';
-const schnitzel4 = '../assets/Products/german-schnitzel-4.jpeg';
-const schnitzel5 = '../assets/Products/german-schnitzel-5.jpeg';
+const schnitzel1 = '../assets/Products/wiener-schnitzel-1.jpeg';
+const schnitzel2 = '../assets/Products/wiener-schnitzel-2.jpeg';
+const schnitzel3 = '../assets/Products/wiener-schnitzel-3.jpeg';
+const schnitzel4 = '../assets/Products/wiener-schnitzel-4.jpeg';
+const schnitzel5 = '../assets/Products/wiener-schnitzel-5.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BLACK_PEPPER, BONELESS_PORK_CHOPS, BREADCRUMBS, COOLING_RACK, EGG, FRYING_PAN, LEMON, MEAT_MALLET, PAPER_TOWELS, PARSLEY, PLASTIC_WRAP, SALT, SMALL_BOWL, STOVE, VEGETABLE_OIL } = require('./ingredients');
@@ -17,8 +17,8 @@ const PREP_PORK_CHOPS = 'Prep Pork Chops';
 const FRY_PORK_CHOPS = 'Fry Pork Chops';
 
 module.exports = {
-    cardName: 'German Schnitzel',
-    name: 'German Schnitzel',
+    cardName: 'Wiener Schnitzel',
+    name: 'Wiener Schnitzel',
     img: schnitzel5,
     available: true,
     recommended: true,
@@ -32,11 +32,11 @@ module.exports = {
     cookTime: { amount: 5, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'German Schnitzel', 
+        {
+            label: 'Wiener Schnitzel',
             link: 'https://www.daringgourmet.com/traditional-german-pork-schnitzel/',
             authors: ['Kimberly Killebrew'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [

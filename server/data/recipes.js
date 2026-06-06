@@ -172,7 +172,6 @@ const garlicParmesanShrimp = require('./recipes/garlic-parmesan-shrimp.js');
 const garlicShrimp = require("./recipes/garlic-shrimp");
 const gelato = require("./recipes/gelato");
 const germanChocolateCake = require('./recipes/german-chocolate-cake.js');
-const germanSchnitzel = require("./recipes/german-schnitzel");
 const gingerbreadCookies = require("./recipes/gingerbread-cookies");
 const graveyardDessert = require("./recipes/graveyard-dessert");
 const greekGyros = require('./recipes/greek-gyros.js');
@@ -365,6 +364,7 @@ const vietnamesePho = require("./recipes/vietnamese-pho");
 const vietnameseShakingBeef = require('./recipes/vietnamese-shaking-beef.js');
 const vietnameseStuffedTomatoes = require("./recipes/vietnamese-stuffed-tomatoes");
 const waffles = require("./recipes/waffles");
+const wienerSchnitzel = require("./recipes/wiener-schnitzel");
 const wrap = require("./recipes/wrap");
 const yellowCurry = require("./recipes/yellow-curry");
 const yuleLog = require('./recipes/yule-log.js'); // TODO: finish adding recipe
@@ -592,7 +592,7 @@ const recipes = [
     stickyToffeePudding,
 
     // GERMAN
-    germanSchnitzel,
+    wienerSchnitzel,
 
     // CZECH
     texasSausageKolaches,

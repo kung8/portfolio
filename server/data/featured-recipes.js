@@ -17,7 +17,7 @@ const churros = require("./recipes/churros");
 const crescentRolls = require("./recipes/crescent-rolls");
 const englishScones = require("./recipes/english-scones");
 const frenchCrepe = require("./recipes/french-crepe");
-const germanSchnitzel = require("./recipes/german-schnitzel");
+const wienerSchnitzel = require("./recipes/wiener-schnitzel");
 const greekGyros = require("./recipes/greek-gyros");
 const guacamole = require("./recipes/guacamole");
 const hawaiianGlazedHam = require("./recipes/hawaiian-glazed-ham");
@@ -89,7 +89,7 @@ const featured = {
         [genres.EUROPEAN]: undefined,
         [genres.FILIPINO]: undefined,
         [genres.FRENCH]: frenchCrepe, // TODO: use croissants once that's ready
-        [genres.GERMAN]: germanSchnitzel,
+        [genres.GERMAN]: wienerSchnitzel,
         [genres.GREEK]: greekGyros,
         [genres.HAWAIIAN]: hawaiianGlazedHam,
         [genres.INDIAN]: indianButterChicken,
