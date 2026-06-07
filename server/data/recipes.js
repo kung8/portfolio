@@ -345,6 +345,7 @@ const sweetAndSavoryRibs = require('./recipes/sweet-and-savory-ribs.js');
 const tacoInABag = require("./recipes/taco-in-a-bag");
 const tandooriChicken = require("./recipes/tandoori-chicken");
 const tangYuan = require('./recipes/tang-yuan.js'); // TODO: finish adding recipe
+const tanghulu = require('./recipes/tanghulu.js');
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
 const texasSausageKolaches = require("./recipes/texas-sausage-kolaches");
 const thaiBasil = require("./recipes/thai-basil");
@@ -805,6 +806,7 @@ const recipes = [
     chocolateMousse,
     caramelApples,
     graveyardDessert,
+    tanghulu,
     smores,
     brownedButter,
 
@@ -906,18 +908,17 @@ module.exports = recipes;
     TODO: add https://glebekitchen.com/tonkotsu-ramen-home/
     TODO: add https://girlswhoeat.com/recipes/side-dishes/air-fryer-accordion-potatoes/
     TODO: add https://www.thekitchn.com/cannoli-squares-recipe-23774116
-    TODO: add https://yejiskitchenstories.com/strawberry-tanghulu/
     TODO: add https://theforkedspoon.com/pho-recipe/
-    TODO: find recipes for foods that I loved from the Europe trip: 
+    TODO: find recipes for foods that I loved from the Europe trip:
         - Couscous
         - Spaghetti Aglio e Olio (Spaghetti with oil, chili flakes, fresh parsley (no cheese it needs to stay fresh):
             - https://www.allrecipes.com/recipe/222000/spaghetti-aglio-e-olio/
             - https://www.foodnetwork.com/recipes/ina-garten/spaghetti-aglio-e-olio-recipe-2043225
-        - Samarle a Romanian dish: 
+        - Samarle a Romanian dish:
             - https://www.jocooks.com/recipes/sarmale/
-        - Suppli: 
+        - Suppli:
             - https://www.manusmenu.com/suppli-al-telefono
-        - Cacio e Pepe: 
+        - Cacio e Pepe:
             - https://www.spoonforkbacon.com/cacio-e-pepe-recipe/
         - Tiramisu (without coffee)
             - https://foodtourrome.com/recipes-the-roman-food-tour/
@@ -926,9 +927,9 @@ module.exports = recipes;
         - Focaccia bread that was used in sandwiches:
             - https://www.recipetineats.com/focaccia-recipe/
             - https://www.loveandlemons.com/focaccia/
-        - Tramezzino (Italian tea sandwiches): 
+        - Tramezzino (Italian tea sandwiches):
             - https://www.sugarlovespices.com/tramezzini-italian-cold-sandwiches/
-        - Kaiserschmarrn (Austrian shredded pancake with powdered sugar and fruit compote): 
+        - Kaiserschmarrn (Austrian shredded pancake with powdered sugar and fruit compote):
             - https://www.lilvienna.com/shredded-pancake-kaiserschmarrn/
 */
 
