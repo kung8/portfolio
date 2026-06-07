@@ -340,6 +340,7 @@ const stickyToffeePudding = require("./recipes/sticky-toffee-pudding");
 const stuffedPepperCasserole = require('./recipes/stuffed-pepper-casserole.js');
 const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
+const suppli = require('./recipes/suppli.js');
 const sushi = require("./recipes/sushi");
 const sushiTacos = require('./recipes/sushi-tacos.js');
 const swedishMeatballs = require("./recipes/swedish-meatballs");
@@ -550,6 +551,7 @@ const recipes = [
     italianTurkeyMeatballSpinachTortelliniSoup,
     lemonChickenOrzoSoup,
     chickenGnocchiSoup,
+    suppli,
     lemonCapelliniSalad,
     noBakeCannoliDelight,
     chocolateGelato,
@@ -915,13 +917,8 @@ module.exports = recipes;
     TODO: add https://theforkedspoon.com/pho-recipe/
     TODO: find recipes for foods that I loved from the Europe trip:
         - Couscous
-        - Spaghetti Aglio e Olio (Spaghetti with oil, chili flakes, fresh parsley (no cheese it needs to stay fresh):
-            - https://www.allrecipes.com/recipe/222000/spaghetti-aglio-e-olio/
-            - https://www.foodnetwork.com/recipes/ina-garten/spaghetti-aglio-e-olio-recipe-2043225
         - Samarle a Romanian dish:
             - https://www.jocooks.com/recipes/sarmale/
-        - Suppli:
-            - https://www.manusmenu.com/suppli-al-telefono
         - Tiramisu (without coffee)
             - https://foodtourrome.com/recipes-the-roman-food-tour/
         - Tagliatelle

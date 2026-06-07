@@ -391,6 +391,7 @@ const INGREDIENTS = {
         STUFFING_MIX: { name: 'stuffing mix', category: INGREDIENT_CATEGORY.CANNED },
         SUN_DRIED_TOMATOES: { name: 'sun dried tomatoes', category: INGREDIENT_CATEGORY.CANNED },
         TOMATO_PASTE: { name: 'tomato paste', category: INGREDIENT_CATEGORY.CANNED },
+        TOMATO_PUREE: { name: 'tomato puree', category: INGREDIENT_CATEGORY.CANNED },
         TOMATO_SAUCE: { name: 'tomato sauce', category: INGREDIENT_CATEGORY.CANNED },
         TOMATO_SOUP: {
             name: 'tomato soup', category: INGREDIENT_CATEGORY.CANNED, img: "https://images.unsplash.com/photo-1608949621301-dc970e104c90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2NTk1fA&ixlib=rb-4.0.3&q=80&w=400"

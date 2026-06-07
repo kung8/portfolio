@@ -269,6 +269,8 @@ const SECTIONS = {
     PAN_FRY: 'Pan Fry',
     STIR_FRY: 'Stir Fry',
 
+    FOR_FRYING: 'For Frying',
+
     // Specialized Cooking Methods
     GRILL: 'Grill',
     MICROWAVE: 'Microwave',
