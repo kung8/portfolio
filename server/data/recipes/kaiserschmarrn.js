@@ -46,19 +46,30 @@ module.exports = {
         { ...EGG_WHITES, amount: 4, unit: '', additionalDetails: '', section: EGG_WHITE_MIXTURE },
         { ...SALT, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: EGG_WHITE_MIXTURE },
         { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: EGG_WHITE_MIXTURE },
-        
+
         { ...EGG_YOLK, amount: 4, unit: '', additionalDetails: '', section: EGG_YOLK_MIXTURE },
         { ...MILK, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: EGG_YOLK_MIXTURE },
         { ...VANILLA_EXTRACT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: EGG_YOLK_MIXTURE },
         { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: EGG_YOLK_MIXTURE },
-        
+
         { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BATTER_SECTION },
         { ...MILK, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BATTER_SECTION },
 
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.OIL },
 
         { ...POWDERED_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { name: compote.name.toLowerCase(), category: 'Condiments, Dressings & Sauces', amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS, link: { id: compote.name, url: `recipes/${compote.name}` } },
+        {
+            name: compote.name.toLowerCase(),
+            category: 'Condiments, Dressings & Sauces',
+            amount: '',
+            unit: '',
+            additionalDetails: '',
+            section: SECTIONS.TOPPINGS,
+            link: {
+                id: compote.name,
+                url: `recipes/${compote.name}`
+            }
+        },
     ],
     appliances: [
         OVEN,
@@ -68,7 +79,7 @@ module.exports = {
     supplies: [
         MIXING_BOWL,
         RUBBER_SPATULA,
-        {...SPATULA, amount: 2}
+        { ...SPATULA, amount: 2 }
     ],
     directions: [
         { step: `Preheat the oven to 400ºF and set to the center rack.`, section: SECTIONS.PREHEAT_OVEN },
