@@ -211,6 +211,7 @@ const japaneseKatsudon = require("./recipes/japanese-katsudon");
 const japchae = require("./recipes/japchae");
 const javaneseChickenCoconutCurry = require("./recipes/javanese-chicken-coconut-curry");
 const jumboShrimpParmesan = require("./recipes/jumbo-shrimp-parmesan");
+const kaiserschmarrn = require('./recipes/kaiserschmarrn.js');
 const kaluaPig = require('./recipes/kalua-pig.js');
 const karaage = require("./recipes/karaage");
 const keyLimePie = require("./recipes/key-lime-pie");
@@ -253,7 +254,6 @@ const mozzarellaSticks = require('./recipes/mozzarella-sticks.js');
 const muddyBuddies = require("./recipes/muddy-buddies");
 const muffysScrumptiousSmackeroodles = require('./recipes/muffys-scrumptious-smackeroodles.js');
 const naan = require("./recipes/naan");
-const naan2 = require('./recipes/naan-2.js'); // TODO: finish adding recipe
 const noBakeCannoliDelight = require("./recipes/no-bake-cannoli-delight");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const noBakePumpkinPie = require('./recipes/no-bake-pumpkin-pie.js');
@@ -396,7 +396,6 @@ const recipes = [
     indianChickenTikkaMasala,
     tandooriChicken,
     naan,
-    naan2,
     roti,
     indianDosa,
     samosa,
@@ -598,8 +597,9 @@ const recipes = [
     irishPotatoBoxty,
     stickyToffeePudding,
 
-    // GERMAN
+    // GERMAN / AUSTRIAN
     wienerSchnitzel,
+    kaiserschmarrn,
 
     // CZECH
     texasSausageKolaches,
@@ -928,8 +928,6 @@ module.exports = recipes;
             - https://www.loveandlemons.com/focaccia/
         - Tramezzino (Italian tea sandwiches):
             - https://www.sugarlovespices.com/tramezzini-italian-cold-sandwiches/
-        - Kaiserschmarrn (Austrian shredded pancake with powdered sugar and fruit compote):
-            - https://www.lilvienna.com/shredded-pancake-kaiserschmarrn/
 */
 
 // https://thecozycook.com/copycat-texas-roadhouse-butter/

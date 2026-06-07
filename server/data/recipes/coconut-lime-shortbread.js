@@ -62,8 +62,8 @@ module.exports = {
         { ...LIME_ZEST, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: FLAVORINGS },
         { ...SHREDDED_COCONUT, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: FLAVORINGS },
 
-        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: '' },
-        { ...WHITE_CHOCOLATE_CHIPS, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: '' },
+        { ...WATER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...WHITE_CHOCOLATE_CHIPS, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         OVEN,

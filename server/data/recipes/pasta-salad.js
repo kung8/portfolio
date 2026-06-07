@@ -74,7 +74,7 @@ module.exports = {
         { step: `Enjoy this simple pasta salad dish with more toppings if desired!`, section: SECTIONS.SERVE },
     ],
     notes: [
-        { note: 'The dressing will have a strong flavor, but once it is combined with the pasta salad it will mellow out.', section: '' },
+        { note: 'The dressing will have a strong flavor, but once it is combined with the pasta salad it will mellow out.' },
     ],
     store: [
         {

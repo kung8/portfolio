@@ -12,6 +12,9 @@ const {
 } = require('./constants');
 const { BAMBOO_SKEWERS, CANDY_THERMOMETER, GRAPE, STOVE, WATER, WHITE_SUGAR } = require('./ingredients');
 
+const SYRUP_SECTION = 'Syrup';
+const FRUIT_SECTION = 'Fruit';
+
 const MAKE_TANGHULU = 'Make Tanghulu';
 
 module.exports = {
@@ -32,9 +35,9 @@ module.exports = {
         { label: 'Tanghulu', link: 'https://yejiskitchenstories.com/strawberry-tanghulu/', authors: ['Yejiskitchenstories'], finder: 'Kevin Ung' }
     ],
     ingredients: [
-        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: '' },
-        { ...GRAPE, amount: 10, unit: '', additionalDetails: '', section: '' },
+        { ...WHITE_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SYRUP_SECTION },
+        { ...WATER, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SYRUP_SECTION },
+        { ...GRAPE, amount: 10, unit: '', additionalDetails: '', section: FRUIT_SECTION },
     ],
     appliances: [
         STOVE,

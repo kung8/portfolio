@@ -38,9 +38,9 @@ module.exports = {
     protein: [PROTEIN.BEEF],
     type: [TYPES.FINGER_FOOD, TYPES.SIDE_DISH],
     yields: { amount: 20, unit: YIELD_UNITS.SERVING },
-    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
-    cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
-    waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 1, unit: TIME_UNITS.HOUR },
+    waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
         { label: 'Supplì', link: 'https://www.manusmenu.com/suppli-al-telefono', authors: ['Giallo Zafferano'], finder: 'Kevin Ung' }
     ],
