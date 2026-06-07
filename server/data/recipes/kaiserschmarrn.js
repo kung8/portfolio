@@ -15,6 +15,7 @@ const {
     YIELD_UNITS
 } = require('./constants');
 const { ALL_PURPOSE_FLOUR, EGG_WHITES, EGG_YOLK, MILK, MIXING_BOWL, OVEN, POWDERED_SUGAR, RUBBER_SPATULA, SALT, SPATULA, STAND_MIXER, STOVE, VANILLA_EXTRACT, VEGETABLE_OIL, WHITE_SUGAR } = require('./ingredients');
+const compote = require('./fruit-compote');
 
 const EGG_WHITE_MIXTURE = 'Egg White Mixture';
 const EGG_YOLK_MIXTURE = 'Egg Yolk Mixture';
@@ -57,7 +58,7 @@ module.exports = {
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.OIL },
 
         { ...POWDERED_SUGAR, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        // { ..., amount: '', unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { name: compote.name.toLowerCase(), category: 'Condiments, Dressings & Sauces', amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS, link: { id: compote.name, url: `recipes/${compote.name}` } },
     ],
     appliances: [
         OVEN,

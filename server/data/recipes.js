@@ -163,6 +163,7 @@ const frenchOnionSoupGratinee = require("./recipes/french-onion-soup-gratinee");
 const frenchToast = require("./recipes/french-toast");
 const friedChickenWithHotHoney = require('./recipes/fried-chicken-with-hot-honey');
 const frozenMudPie = require("./recipes/frozen-mud-pie");
+const fruitCompote = require('./recipes/fruit-compote.js');
 const funnelCake = require('./recipes/funnel-cake.js');
 const gaiLanWithOysterSauce = require('./recipes/gai-lan-with-oyster-sauce.js');
 const garlicBreadsticks = require("./recipes/garlic-breadsticks");
@@ -793,6 +794,7 @@ const recipes = [
     lemonBars,
     lemonFreezeBars,
     pumpkinBars,
+    fruitCompote,
     appleTart,
     appleDumplings,
     appleTurnovers,
