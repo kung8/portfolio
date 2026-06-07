@@ -14,7 +14,6 @@ const CHILL_CAKE = 'Chill Cake';
 const MAKE_BUTTERCREAM_FROSTING_SECTION = 'Make Buttercream Frosting';
 
 module.exports = {
-    wip: true,
     cardName: 'Vanilla Cake',
     name: 'Vanilla Cake',
     img: cake1,
