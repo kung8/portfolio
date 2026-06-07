@@ -298,6 +298,7 @@ const SECTIONS = {
     PREP_DIP: 'Prep Dip',
     PREP_DIPPING_STATIONS: 'Prep Dipping Stations',
     PREP_DOUGH: 'Prep Dough',
+    PREP_DREDGING_STATION: 'Prep Dredging Station',
     PREP_DRESSING: 'Prep Dressing',
     PREP_DRY_INGREDIENTS: 'Prep Dry Ingredients',
     PREP_EGGS: 'Prep Eggs',

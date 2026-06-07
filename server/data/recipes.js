@@ -334,6 +334,7 @@ const sourdoughStarter = require("./recipes/sourdough-starter");
 const southwestSalad = require("./recipes/southwest-salad"); // TODO: find recipe
 const spaghettiAglioEOlio = require("./recipes/spaghetti-aglio-e-olio");
 const spanishRice = require("./recipes/spanish-rice");
+const spicyGingeryChicken = require('./recipes/spicy-gingery-chicken.js');
 const spicyItalianFlatbread = require('./recipes/spicy-italian-flatbread.js'); // TODO: finish adding recipe
 const springRolls = require('./recipes/spring-rolls.js');
 const steak = require('./recipes/steak.js');
@@ -446,6 +447,7 @@ const recipes = [
     orangeChicken,
     chineseSweetAndSourPork,
     kungPaoChicken,
+    spicyGingeryChicken,
     roastedPorkBelly,
     pekingDuck,
     chineseGingerChicken,

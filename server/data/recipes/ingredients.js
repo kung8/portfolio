@@ -1935,6 +1935,7 @@ const INGREDIENTS = {
     SPICES: {
         ALLSPICE: { name: 'allspice', category: INGREDIENT_CATEGORY.SPICES },
         APPLE_PIE_SPICE: { name: 'apple pie spice', category: INGREDIENT_CATEGORY.SPICES },
+        ARROWROOT_POWDER: { name: 'arrowroot powder', category: INGREDIENT_CATEGORY.SPICES },
         BASIL: {
             name: 'basil', category: INGREDIENT_CATEGORY.SPICES, img: "https://plus.unsplash.com/premium_photo-1673264299641-397fa130e4a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY5OTM5fA&ixlib=rb-4.0.3&q=80&w=400"
         },
