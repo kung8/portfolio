@@ -66,6 +66,7 @@ const butteredCorn = require("./recipes/buttered-corn");
 const buttermilkSyrup = require("./recipes/buttermilk-syrup");
 const butternutSquashSoup = require("./recipes/butternut-squash-soup");
 const cabbageStirFry = require("./recipes/cabbage-stir-fry");
+const cacioEPepe = require("./recipes/cacio-e-pepe");
 const cafeRioBowl = require("./recipes/cafe-rio-bowl");
 const cajunGarlicButterShrimp = require('./recipes/cajun-garlic-butter-shrimp.js');
 const cajunShrimp = require("./recipes/cajun-shrimp");
@@ -330,6 +331,7 @@ const sofrito = require("./recipes/sofrito");
 const sourdoughBread = require("./recipes/sourdough-bread");
 const sourdoughStarter = require("./recipes/sourdough-starter");
 const southwestSalad = require("./recipes/southwest-salad"); // TODO: find recipe
+const spaghettiAglioEOlio = require("./recipes/spaghetti-aglio-e-olio");
 const spanishRice = require("./recipes/spanish-rice");
 const spicyItalianFlatbread = require('./recipes/spicy-italian-flatbread.js'); // TODO: finish adding recipe
 const springRolls = require('./recipes/spring-rolls.js');
@@ -523,6 +525,8 @@ const recipes = [
     ////////////////////////////////////////////////////////////////////// EUROPEAN //////////////////////////////////////////////////////////////////////  
     // ITALIAN
     carbonara,
+    cacioEPepe,
+    spaghettiAglioEOlio,
     italianLasagna,
     pizza,
     spicyItalianFlatbread,
@@ -918,8 +922,6 @@ module.exports = recipes;
             - https://www.jocooks.com/recipes/sarmale/
         - Suppli:
             - https://www.manusmenu.com/suppli-al-telefono
-        - Cacio e Pepe:
-            - https://www.spoonforkbacon.com/cacio-e-pepe-recipe/
         - Tiramisu (without coffee)
             - https://foodtourrome.com/recipes-the-roman-food-tour/
         - Tagliatelle

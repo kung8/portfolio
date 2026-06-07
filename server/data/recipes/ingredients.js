@@ -760,6 +760,9 @@ const INGREDIENTS = {
         PARMIGIANO_REGGIANO: {
             name: 'parmigiano reggiano', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1589881133595-a3c085cb731d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU4ODMzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        PECORINO_ROMANO: {
+            name: 'pecorino romano', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1589881133595-a3c085cb731d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU4ODMzfA&ixlib=rb-4.0.3&q=80&w=400"
+        },
         PEPPER_JACK_CHEESE: {
             name: 'pepper jack cheese', category: INGREDIENT_CATEGORY.DAIRY, img: "https://images.unsplash.com/photo-1627935722051-395636b0d8a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY4Nzg1fA&ixlib=rb-4.0.3&q=80&w=400"
         },
