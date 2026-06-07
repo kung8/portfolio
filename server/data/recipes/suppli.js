@@ -1,50 +1,34 @@
 // const example1 = '../assets/Products/example-1.jpeg';
 
 const {
-    ARBORIO_RICE,
-    BEEF_BROTH,
-    BLACK_PEPPER,
     CATEGORIES,
-    DEEP_FRYER,
-    EGG,
     GENRES,
-    GROUND_BEEF,
     INGREDIENT_UNITS,
-    LARGE_PAN,
     METHODS, PROTEIN,
-    MOZZARELLA_CHEESE,
-    OLIVE_OIL,
-    PANKO_BREADCRUMBS,
-    PARMIGIANO_REGGIANO,
     REHEAT_METHODS,
-    SALT,
     SECTIONS,
     STORAGE_CONTAINER,
     STORAGE_DURATION_UNIT,
     STORAGE_LOCATION,
-    STOVE,
     TIME_UNITS,
-    TOMATO_PUREE,
     TYPES,
-    UNSALTED_BUTTER,
-    VEGETABLE_OIL,
-    WHITE_WINE,
-    YELLOW_ONION,
-    YIELD_UNITS,
-} = require('./ingredients');
+    YIELD_UNITS
+} = require('./constants');
+
+const { ARBORIO_RICE, BEEF_BROTH, BLACK_PEPPER, DEEP_FRYER, EGG, GROUND_BEEF, LARGE_PAN, MOZZARELLA_CHEESE, OLIVE_OIL, PANKO_BREADCRUMBS, PARMIGIANO_REGGIANO, SALT, STOVE, TOMATO_PUREE, UNSALTED_BUTTER, VEGETABLE_OIL, WHITE_WINE, YELLOW_ONION } = require('./ingredients');
 
 const MEAT_SAUCE = 'Meat Sauce';
 const RICE_MIXTURE = 'Rice Mixture';
-const SUPPLI_BALL = 'Suppli Ball';
+const SUPPLI_BALL = 'Supplì Ball';
 
 const COOK_MEAT_SAUCE = 'Cook Meat Sauce';
 const COOK_RICE_MIXTURE = 'Cook Rice Mixture';
-const FORM_SUPPLI = 'Form Suppli';
+const FORM_SUPPLI = 'Form Supplì';
 
 module.exports = {
     wip: true,
-    cardName: 'Suppli',
-    name: 'Suppli',
+    cardName: 'Supplì',
+    name: 'Supplì',
     img: '',
     available: true,
     recommended: false,
@@ -58,7 +42,7 @@ module.exports = {
     cookTime: { amount: 50, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { label: 'Suppli', link: 'https://www.manusmenu.com/suppli-al-telefono', authors: ['Giallo Zafferano'], finder: 'Kevin Ung' }
+        { label: 'Supplì', link: 'https://www.manusmenu.com/suppli-al-telefono', authors: ['Giallo Zafferano'], finder: 'Kevin Ung' }
     ],
     ingredients: [
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: MEAT_SAUCE },
@@ -71,7 +55,7 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: MEAT_SAUCE },
 
         { ...ARBORIO_RICE, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: RICE_MIXTURE },
-        { ...BEEF_BROTH, amount: 1, unit: INGREDIENT_UNITS.LITER, additionalDetails: '', section: RICE_MIXTURE },
+        { ...BEEF_BROTH, amount: 1, unit: INGREDIENT_UNITS.QUART, additionalDetails: '', section: RICE_MIXTURE },
         { ...UNSALTED_BUTTER, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RICE_MIXTURE },
         { ...PARMIGIANO_REGGIANO, amount: 4.25, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'grated', section: RICE_MIXTURE },
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: RICE_MIXTURE },
@@ -92,13 +76,12 @@ module.exports = {
     directions: [
         { step: `Over medium-high heat, add butter and olive oil to a large pan.`, section: COOK_MEAT_SAUCE },
         { step: `Add onion. Saute until soft.`, section: COOK_MEAT_SAUCE },
-        { step: `Add ground beef. Cook and break up until browned.`, section: COOK_MEAT_SAUCE },
+        { step: `Add ground beef. Cook until browned and break up.`, section: COOK_MEAT_SAUCE },
         { step: `Add wine. Let alcohol evaporate.`, section: COOK_MEAT_SAUCE },
         { step: `Add tomato puree, salt and black pepper.`, section: COOK_MEAT_SAUCE },
         { step: `Reduce to low heat. Simmer until sauce thickens (about 20 minutes).`, section: COOK_MEAT_SAUCE },
 
-        { step: `Add rice to the sauce.`, section: COOK_RICE_MIXTURE },
-        { step: `Add broth. Cook about 13 minutes.`, section: COOK_RICE_MIXTURE },
+        { step: `Add rice and broth. Cook about 13 minutes.`, section: COOK_RICE_MIXTURE },
         { step: `Remove from heat.`, section: COOK_RICE_MIXTURE },
         { step: `Add butter and parmesan. Mix.`, section: COOK_RICE_MIXTURE },
         { step: `Add egg. Stir.`, section: COOK_RICE_MIXTURE },
@@ -110,15 +93,18 @@ module.exports = {
         { step: `Enclose cheese and shape balls to egg.`, section: FORM_SUPPLI },
 
         { step: `Prepare two dredging bowls: eggs and breadcrumbs.`, section: SECTIONS.DREDGE },
-        { step: `Dredge suppli in egg and breadcrumbs. Press breadcrumb gently with your palm.`, section: SECTIONS.DREDGE },
-        { step: `Re-dredge each suppli for a double coat.`, section: SECTIONS.DREDGE },
+        { step: `Dredge supplì in egg and breadcrumbs. Press breadcrumb gently with your palm.`, section: SECTIONS.DREDGE },
+        { step: `Re-dredge each supplì for a double coat.`, section: SECTIONS.DREDGE },
 
         { step: `Line a baking sheet with paper towels and place a wire rack on top.`, section: SECTIONS.FRY },
-        { step: `Heat oil in a deep fryer until it gets to ºF.`, section: SECTIONS.FRY },
+        { step: `Heat oil in a deep fryer until it gets to 350ºF.`, section: SECTIONS.FRY },
         { step: `Add and fry in batches. Cook until golden brown, turning occasionally with a slotted spoon.`, section: SECTIONS.FRY },
         { step: `Transfer to the dripping station.`, section: SECTIONS.FRY },
 
         { step: `Enjoy these delicious Italian street food.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `You can tell the alcohol evaporates based on the smell of rubbing alcohol or the density of the liquid.` },
     ],
     store: [
         {
