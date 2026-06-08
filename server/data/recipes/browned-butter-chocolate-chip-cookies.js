@@ -8,7 +8,8 @@ const cookies7 = '../assets/Products/browned-butter-chocolate-chip-cookies-7.jpe
 const cookies8 = '../assets/Products/browned-butter-chocolate-chip-cookies-8.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BAKING_SODA, BROWNED_BUTTER, BROWN_SUGAR, CAKE_FLOUR, COOLING_RACK, CORNSTARCH, EGG, EGG_YOLK, MILK_CHOCOLATE, MIXING_BOWL, OVEN, SALT, SAUCEPAN, SEMI_SWEET_CHOCOLATE_CHIPS, SILICONE_BAKING_MAT, STOVE, VANILLA_EXTRACT, WALNUTS, WHITE_SUGAR } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BAKING_SODA, BROWN_SUGAR, CAKE_FLOUR, COOLING_RACK, CORNSTARCH, EGG, EGG_YOLK, MILK_CHOCOLATE, MIXING_BOWL, OVEN, SALT, SAUCEPAN, SEMI_SWEET_CHOCOLATE_CHIPS, SILICONE_BAKING_MAT, STOVE, VANILLA_EXTRACT, WALNUTS, WHITE_SUGAR } = require('./ingredients');
+const brownedButter = require('./browned-butter.js');
 
 const BROWNED_BUTTER_SECTION = 'Browned Butter';
 const SUGARS = 'Sugars';
@@ -38,7 +39,7 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...BROWNED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BROWNED_BUTTER_SECTION, link: { id: 'browned-butter', url: 'recipes/browned-butter' } },
+        { name: brownedButter.name.toLowerCase(), amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: BROWNED_BUTTER_SECTION, link: { id: brownedButter.name, url: `recipes/${brownedButter.name}` } },
         { ...BROWN_SUGAR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUGARS },
         { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUGARS },
         { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SUGARS },

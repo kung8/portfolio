@@ -10,9 +10,8 @@ const sub9 = '../assets/Products/meatball-sub-9.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BAKING_SHEET, BLACK_PEPPER, BREADCRUMBS, EGG, GROUND_BEEF, HOAGIE_BREAD, ITALIAN_SEASONING, MIXING_BOWL, MOZZARELLA_CHEESE, ONION_POWDER, OVEN, PARCHMENT_PAPER, SALT, SAUCEPAN, STOVE, TOMATO_SAUCE } = require('./ingredients');
-const { DAIRY } = require('./ingredient-categories');
+const garlicButter = require('./garlic-butter.js');
 
-const GARLIC_BUTTER = { name: 'garlic butter', category: DAIRY };
 const MEATBALL_SECTION = 'Meatball';
 const SUB_SECTION = 'Sub';
 const PREP_ROLLS = 'Prep Rolls';
@@ -50,7 +49,7 @@ module.exports = {
         { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: MEATBALL_SECTION },
 
         { ...TOMATO_SAUCE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUB_SECTION },
-        { ...GARLIC_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SUB_SECTION, link: { id: 'garlic-butter', url: 'recipes/garlic-butter' } },
+        { name: garlicButter.name.toLowerCase(), amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SUB_SECTION, link: { id: garlicButter.name, url: `recipes/${garlicButter.name}` } },
         { ...HOAGIE_BREAD, amount: 4, unit: '', additionalDetails: '', section: SUB_SECTION },
         { ...MOZZARELLA_CHEESE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SUB_SECTION },
     ],

@@ -43,7 +43,7 @@ module.exports = {
         { ...SESAME_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
         { ...WHITE_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: MINCED_MEAT_SECTION },
 
-        { name: 'roasted pork belly', amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: ROASTED_PORK_BELLY_SECTION, link: { id: roastedPorkBelly.name, url: `recipes/${roastedPorkBelly.name}` } },
+        { name: roastedPorkBelly.name.toLowerCase(), amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: ROASTED_PORK_BELLY_SECTION, link: { id: roastedPorkBelly.name, url: `recipes/${roastedPorkBelly.name}` } },
 
         { ...CHOW_MEIN_NOODLES, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.NOODLES },
 

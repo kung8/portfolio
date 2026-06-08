@@ -3,7 +3,7 @@ const sandwich2 = '../assets/Products/thanksgiving-leftover-sandwich-with-moist-
 const sandwich3 = '../assets/Products/thanksgiving-leftover-sandwich-with-moist-maker-3.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { CRANBERRY_SAUCE, ITALIAN_BREAD, LETTUCE, MAYONNAISE, PLATE, SAUCEPAN, SLICER_TOMATO, STOVE, STUFFING_MIX, TURKEY, TURKEY_GRAVY } = require('./ingredients');
+const { CRANBERRY_SAUCE, ITALIAN_BREAD, LETTUCE, MAYONNAISE, PLATE, SAUCEPAN, SLICER_TOMATO, STOVE, STUFFING_MIX, TURKEY_GRAVY } = require('./ingredients');
 const turkey = require('./roast-turkey');
 
 const PREP_INGREDIENTS = 'Prep Ingredients';
@@ -38,7 +38,7 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...TURKEY, amount: 12, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN, link: { id: turkey.name, url: `recipes/${turkey.name}` } },
+        { name: turkey.name.toLowerCase(), amount: 12, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SECTIONS.MAIN, link: { id: turkey.name, url: `recipes/${turkey.name}` } },
         { ...TURKEY_GRAVY, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.MAIN },
         { ...STUFFING_MIX, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'cooked', section: SECTIONS.MAIN },
         { ...ITALIAN_BREAD, amount: 12, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'toasted', section: SECTIONS.MAIN },

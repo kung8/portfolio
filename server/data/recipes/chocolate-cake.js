@@ -14,10 +14,6 @@ const frosting = require('./chocolate-buttercream-frosting');
 
 const CAKE_PAN_SECTION = 'Cake Pan';
 const BOILING_WATER_SECTION = 'Boiling Water';
-const CHOCOLATE_BUTTERCREAM_FROSTING = {
-    name: 'Chocolate Buttercream Frosting',
-    category: CATEGORIES.DESSERT,
-};
 
 module.exports = {
     cardName: 'Chocolate Cake',
@@ -60,7 +56,7 @@ module.exports = {
 
         { ...WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'boiling', section: BOILING_WATER_SECTION },
 
-        { ...CHOCOLATE_BUTTERCREAM_FROSTING, amount: frosting.yields.amount, unit: frosting.yields.unit, additionalDetails: '', section: SECTIONS.FROSTING, link: { id: frosting.name, url: `recipes/${frosting.name}` } },
+        { name: frosting.name.toLowerCase(), amount: frosting.yields.amount, unit: frosting.yields.unit, additionalDetails: '', section: SECTIONS.FROSTING, link: { id: frosting.name, url: `recipes/${frosting.name}` } },
     ],
     appliances: [
         OVEN,

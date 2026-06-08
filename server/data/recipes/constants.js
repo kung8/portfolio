@@ -156,6 +156,7 @@ const INGREDIENT_UNITS = {
 
 const METHODS = {
     AIR_FRY: 'Air Fry',
+    ASSEMBLE: 'Assemble',
     BAKE: 'Bake',
     BLANCH: 'Blanch',
     BLEND: 'Blend',
@@ -248,6 +249,7 @@ const SECTIONS = {
     FROST: 'Frost',
     FRY: 'Fry',
     LAYER: 'Layer',
+    MARINATE: 'Marinate',
     MIX: 'Mix',
     PARBOIL: 'Parboil',
     REHEAT: 'Reheat',

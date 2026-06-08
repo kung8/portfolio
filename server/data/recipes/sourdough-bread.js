@@ -8,16 +8,8 @@ const bread7 = '../assets/Products/sourdough-bread-7.jpeg';
 const bread8 = '../assets/Products/sourdough-bread-8.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const {
-    ALL_PURPOSE_FLOUR,
-    CHEESECLOTH,
-    DUTCH_OVEN_POT,
-    MIXING_BOWL,
-    OVEN,
-    SALT,
-    SOURDOUGH_STARTER,
-    WATER,
-} = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, CHEESECLOTH, DUTCH_OVEN_POT, MIXING_BOWL, OVEN, SALT, WATER } = require('./ingredients');
+const sourdoughStarter = require('./sourdough-starter');
 const starter = require('./sourdough-starter');
 
 const BAKING = 'Baking';
@@ -45,7 +37,7 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...SOURDOUGH_STARTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH, link: { id: starter.name, url: `recipes/${starter.name}` } },
+        { name: sourdoughStarter.name.toLowerCase(), amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH, link: { id: starter.name, url: `recipes/${starter.name}` } },
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...WATER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.DOUGH },
         { ...SALT, amount: 3 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },

@@ -4,7 +4,6 @@ const pastelitos3 = '../assets/Products/ground-beef-pastelitos-3.jpeg';
 const pastelitos4 = '../assets/Products/ground-beef-pastelitos-4.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { PRODUCE } = require('./ingredient-categories');
 const { AMERICAN_CHEESE, BAKING_SHEET, COLANDER, COOLING_RACK, EMPANADA_DOUGH_DISCS, FRYING_PAN, GROUND_BEEF, KOSHER_SALT, MIXING_BOWL, PAPER_TOWELS, SAZON_SEASONING_WITH_ANNATTO, STOVE, VEGETABLE_OIL } = require('./ingredients');
 const sofrito = require('./sofrito');
 
@@ -32,7 +31,7 @@ module.exports = {
     ],
     ingredients: [
         { ...VEGETABLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
-        { name: 'sofrito', category: PRODUCE, amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN, link: { id: sofrito.name, url: `recipes/${sofrito.name}` } },
+        { name: sofrito.name.toLowerCase(), amount: 3, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN, link: { id: sofrito.name, url: `recipes/${sofrito.name}` } },
         { ...SAZON_SEASONING_WITH_ANNATTO, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.MAIN },
 
         { ...GROUND_BEEF, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.MAIN },

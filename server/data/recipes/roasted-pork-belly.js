@@ -14,6 +14,8 @@ const fiveSpicePowder = '../assets/Products/five-spices-blend-3.jpeg';
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { AIR_FRYER, ALUMINUM_FOIL, BASTING_BRUSH, EGG_WHITES, FORK, HOISIN_SAUCE, KNIFE, PORK_BELLY, SALT, SHAOXING_WINE, SMALL_BOWL, VEGETABLE_OIL, WHITE_PEPPER, WHITE_SUGAR, WHITE_VINEGAR } = require('./ingredients');
 
+const fiveSpiceBlend = require('./five-spice-blend.js');
+
 const PORK_BELLY_SECTION = 'Pork Belly';
 const RUB_SECTION = 'Spices';
 
@@ -49,7 +51,7 @@ module.exports = {
         { ...SHAOXING_WINE, amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION },
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION },
         { ...WHITE_PEPPER, amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION },
-        { name: '5-Spice', amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION, link: { id: 'five-spice-blend', url: 'recipes/five-spice-blend' }, img: fiveSpicePowder },
+        { name: fiveSpiceBlend.name.toLowerCase(), amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION, link: { id: fiveSpiceBlend.name, url: `recipes/${fiveSpiceBlend.name}` }, img: fiveSpicePowder },
         { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: RUB_SECTION },
 
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PORK_BELLY_SECTION },

@@ -158,6 +158,7 @@ const fancyLunchables = require("./recipes/fancy-lunchables");
 const fishAndChips = require("./recipes/fish-and-chips");
 const fishSticksWithTartarSauce = require("./recipes/fish-sticks-with-tartar-sauce"); // TODO: find recipe
 const fiveSpiceBlend = require("./recipes/five-spice-blend");
+const focacciaBread = require('./recipes/focaccia-bread.js');
 const frenchBaguettes = require("./recipes/french-baguettes");
 const frenchCrepe = require("./recipes/french-crepe");
 const frenchOnionSoupGratinee = require("./recipes/french-onion-soup-gratinee");
@@ -279,6 +280,7 @@ const peanutButterThumbprintCookies = require("./recipes/peanut-butter-thumbprin
 const peanutChickenSpringRollBowl = require('./recipes/peanut-chicken-spring-roll-bowl.js');
 const pecanPieBars = require("./recipes/pecan-pie-bars");
 const pekingDuck = require("./recipes/peking-duck"); // TODO: find recipe 
+const peperoniGrigliati = require('./recipes/peperoni-grigliati.js');
 const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
 const peppermintBark = require("./recipes/peppermint-bark");
 const peruvianAjiDeGallina = require("./recipes/peruvian-aji-de-gallina");
@@ -319,6 +321,7 @@ const samosa = require("./recipes/samosa");
 const sausageBalls = require('./recipes/sausage-balls.js');
 const sausageMcGriddle = require('./recipes/sausage-mcgriddle.js');
 const sauteedSquash = require("./recipes/sauteed-squash");
+const schiacciata = require('./recipes/schiacciata.js');
 const scrambledEggs = require("./recipes/scrambled-eggs");
 const sesameBalls = require('./recipes/sesame-balls.js');
 const shrimpPaella = require("./recipes/shrimp-paella");
@@ -553,6 +556,9 @@ const recipes = [
     potatoGnocchi,
     ravioli,
     chickenPiccata,
+    focacciaBread,
+    peperoniGrigliati,
+    schiacciata,
     marryMeChickenAndGnocchiSoup,
     italianTurkeyMeatballSpinachTortelliniSoup,
     lemonChickenOrzoSoup,
@@ -930,10 +936,6 @@ module.exports = recipes;
         - Tiramisu (without coffee)
             - https://foodtourrome.com/recipes-the-roman-food-tour/
         - Tagliatelle
-        - Focaccia bread with Porchetta, Parmesan cream, grilled peppers and Parmesan slices
-        - Focaccia bread that was used in sandwiches:
-            - https://www.recipetineats.com/focaccia-recipe/
-            - https://www.loveandlemons.com/focaccia/
         - Tramezzino (Italian tea sandwiches):
             - https://www.sugarlovespices.com/tramezzini-italian-cold-sandwiches/
 */

@@ -852,6 +852,7 @@ const INGREDIENTS = {
             name: 'pepperoni', category: INGREDIENT_CATEGORY.DELI, img: "https://images.unsplash.com/photo-1563299416-3244785dbf1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDYwNDcyfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         POLISH_KIELBASA: { name: 'polish kielbasa', category: INGREDIENT_CATEGORY.DELI },
+        PORCHETTA: { name: 'porchetta', category: INGREDIENT_CATEGORY.DELI },
         PORK_PATE: { name: 'pork pate', category: INGREDIENT_CATEGORY.DELI },
         PROSCIUTTO: { name: 'prosciutto', category: INGREDIENT_CATEGORY.DELI },
         ROASTED_CHICKEN: { name: 'roasted chicken', category: INGREDIENT_CATEGORY.DELI },
