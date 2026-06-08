@@ -4,8 +4,8 @@ const {  } = require('./ingredients');
 
 module.exports = {
     wip: true,
-    cardName: 'Beijinjo De Coco',
-    name: 'Beijinjo De Coco',
+    cardName: 'Beijinho De Coco',
+    name: 'Beijinho De Coco',
     img: '',
     available: false,
     recommended: false,
@@ -19,7 +19,7 @@ module.exports = {
     waitTime: { amount: '', unit: '' },
     websites: [
         { 
-            label: 'Beijinjo De Coco', 
+            label: 'Beijinho De Coco', 
             link: 'https://braziliankitchenabroad.com/beijinho-de-coco-brazilian-coconut-balls-recipe-with-condensed-milk/',
             authors: ['Aline Shaw'],
             finder: 'Sarah Miller', 

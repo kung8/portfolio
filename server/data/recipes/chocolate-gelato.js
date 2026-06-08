@@ -76,7 +76,7 @@ module.exports = {
         { step: `Run through a strainer. Let cool and refrigerate.`, section: THICKEN_CUSTARD },
 
         { step: `In a small bowl, combine the "${CHOCOLATE_MIXTURE_SECTION}" section ingredients.`, section: PREP_CHOCOLATE },
-        { step: `Disard vanilla pods.`, section: PREP_CHOCOLATE },
+        { step: `Discard vanilla pods.`, section: PREP_CHOCOLATE },
         { step: `Pour custard through a strainer over chocolate. Whisk until chocolate is melted.`, section: PREP_CHOCOLATE },
 
         { step: `Cover with parchment paper to prevent a film from forming. Let it touch the surface of the custard.`, section: CHILL_CUSTARD },

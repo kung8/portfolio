@@ -86,7 +86,7 @@ module.exports = {
         { step: `Add garlic and mushroom. Cook until softened (about 4 minutes).`, section: SECTIONS.COOK_VEGGIES },
         { step: `Add flour. Cook for 1 minute.`, section: SECTIONS.COOK_VEGGIES },
 
-        { step: `Add broth, worchestershire sauce, mustard and thyme. Bring to a boil.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Add broth, Worcestershire sauce, mustard and thyme. Bring to a boil.`, section: SECTIONS.COOK_SAUCE },
         { step: `Reduce heat to low. Simmer uncovered for 5 minutes.`, section: SECTIONS.COOK_SAUCE },
 
         { step: `Add back beef. Cook until beef is heated through (about 2 minutes).`, section: SECTIONS.ASSEMBLE },

@@ -58,7 +58,7 @@ module.exports = {
         { step: `Enjoy this warm`, section: SECTIONS.SERVE, img: burrito2 },
     ],
     notes: [
-        { note: 'I did not like chorizo as the protein for this recipe, so I am going to subsitute it with sausage next time.' },
+        { note: 'I did not like chorizo as the protein for this recipe, so I am going to substitute it with sausage next time.' },
         { note: 'I also did not like the avocado tomato salsa in this original recipe, so I have omitted it from the recipe all together.'}
     ],
     store: [

@@ -85,7 +85,7 @@ module.exports = {
     reheat: [
         {
             method: REHEAT_METHODS.MICROWAVE,
-            instruction: 'Microwave individual portions until heated through (about 1 to 2 mintues).',
+            instruction: 'Microwave individual portions until heated through (about 1 to 2 minutes).',
         },
         {
             method: REHEAT_METHODS.BAKE,
