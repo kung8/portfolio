@@ -81,7 +81,7 @@ module.exports = {
         { step: `Add the last half of the flour and salt. Combine (about 2 minutes).`, section: MAKE_DOUGH },
         { step: `Cover the bowl with plastic wrap. Chill for 2 hours (or up to 24 hours).`, section: MAKE_DOUGH, img: beignets3 },
 
-        { step: `Line a baking sheet with 3 layers of paper towels and a wire rack.`, section: DEEP_FRY },
+        { step: `Line a baking sheet with paper towels and a wire rack.`, section: DEEP_FRY },
         { step: `Over medium-high heat, add 4 inches of oil to a deep pot. Bring it to 360ºF.`, section: DEEP_FRY },
         { step: `Remove the dough from the fridge.`, section: DEEP_FRY },
         { step: `Lightly flour a clean surface, roll out the dough into 1/4 inch thick rectangle.`, section: DEEP_FRY },
