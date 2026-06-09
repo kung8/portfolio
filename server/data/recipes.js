@@ -364,6 +364,7 @@ const thaiPadSeeEw = require("./recipes/thai-pad-see-ew");
 const thaiPeanutSalad = require('./recipes/thai-peanut-salad.js'); // TODO: finish adding recipe
 const thanksgivingLeftoverSandwichWithMoistMaker = require('./recipes/thanksgiving-leftover-sandwich-with-moist-maker.js');
 const tortilla = require('./recipes/tortilla.js');
+const tramezzini = require('./recipes/tramezzini.js');
 const tunaOnigiri = require('./recipes/tuna-onigiri.js');
 const turkeyRollUps = require("./recipes/turkey-roll-ups");
 const udonNoodleSoup = require("./recipes/udon-noodle-soup");
@@ -559,6 +560,7 @@ const recipes = [
     focacciaBread,
     peperoniGrigliati,
     schiacciata,
+    tramezzini,
     marryMeChickenAndGnocchiSoup,
     italianTurkeyMeatballSpinachTortelliniSoup,
     lemonChickenOrzoSoup,
@@ -935,9 +937,6 @@ module.exports = recipes;
             - https://www.jocooks.com/recipes/sarmale/
         - Tiramisu (without coffee)
             - https://foodtourrome.com/recipes-the-roman-food-tour/
-        - Tagliatelle
-        - Tramezzino (Italian tea sandwiches):
-            - https://www.sugarlovespices.com/tramezzini-italian-cold-sandwiches/
 */
 
 // https://thecozycook.com/copycat-texas-roadhouse-butter/

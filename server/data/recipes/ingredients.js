@@ -1098,6 +1098,7 @@ const INGREDIENTS = {
         WHEAT_TORTILLA: {
             name: 'wheat tortilla', category: INGREDIENT_CATEGORY.GRAIN, img: "https://images.unsplash.com/photo-1600935926387-12d9b03066f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTcxMDIwfA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        WHITE_BREAD: { name: 'white bread', category: INGREDIENT_CATEGORY.GRAIN },
         WHITE_RICE: {
             name: 'white rice', category: INGREDIENT_CATEGORY.GRAIN, img: "https://images.unsplash.com/photo-1586201375761-83865001e31c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTU5ODE4fA&ixlib=rb-4.0.3&q=80&w=400"
         },
