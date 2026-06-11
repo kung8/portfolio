@@ -1948,6 +1948,7 @@ const INGREDIENTS = {
         BLACK_PEPPER: {
             name: 'black pepper', category: INGREDIENT_CATEGORY.SPICES, img: "https://images.unsplash.com/photo-1506085621370-98b475435879?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTYwNDc0fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        CARAWAY_SEEDS: { name: 'caraway seeds', category: INGREDIENT_CATEGORY.SPICES },
         CAJUN_SEASONING: { name: 'cajun seasoning', category: INGREDIENT_CATEGORY.SPICES },
         CAROM_SEEDS: { name: 'carom seeds', category: INGREDIENT_CATEGORY.SPICES },
         CARDAMOM: {

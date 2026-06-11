@@ -188,6 +188,7 @@ const groundBeefPastelitos = require('./recipes/ground-beef-pastelitos.js');
 const groundBeefRamen = require('./recipes/ground-beef-ramen.js');
 const guacamole = require("./recipes/guacamole");
 const gyoza = require('./recipes/gyoza.js');
+const halušky = require('./recipes/halušky.js');
 const hamburger = require("./recipes/hamburger");
 const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
 const hawaiianGlazedHam = require("./recipes/hawaiian-glazed-ham");
@@ -639,6 +640,9 @@ const recipes = [
     piriPiriChickenBowl,
     pasteisDeNata,
 
+    // SLOVAKIAN
+    halušky,
+
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
     marryMeChicken,
     roastTurkey,
@@ -943,3 +947,4 @@ module.exports = recipes;
 
 // https://www.recipetineats.com/penne-all-arrabbiata-spicy-tomato-pasta/
 // https://www.facebook.com/groups/390994394103438/posts/785863451283195/ (butterfinger pie)
+// https://www.allrecipes.com/recipe/80398/serbian-cevapcici/
