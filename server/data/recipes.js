@@ -850,7 +850,6 @@ module.exports = recipes;
 
 // TODO: https://cookingwithkarli.com/crave-rockstar-cookie-recipe/?fbclid=IwY2xjawNagudleHRuA2FlbQIxMQABHqLXZW8qtuz8axoFXldWq9mzV45reZ3YqqH5-KVdq3_rwiJ27fszAEok4vpu_aem_LDtydRXK6zvnQRPyuUW4fw
 // TODO: https://www.allrecipes.com/lemon-ricotta-muffins-recipe-11826885
-// TODO: https://sweetcsdesigns.com/cabbage-and-noodles/
 // TODO: https://www.madewithlau.com/recipes/char-siu-chinese-bbq-pork
 // TODO: https://www.thespruceeats.com/how-make-paletas-or-mexican-style-ice-pops-4129109
 // TODO: https://www.lecremedelacrumb.com/easy-beef-empanadas/
