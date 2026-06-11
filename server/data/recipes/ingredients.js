@@ -1249,6 +1249,7 @@ const INGREDIENTS = {
             name: 'ground beef', category: INGREDIENT_CATEGORY.MEAT, img: "https://plus.unsplash.com/premium_photo-1668616816678-5f82734f1f40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTYwOTgzfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         GROUND_CHICKEN: { name: 'ground chicken', category: INGREDIENT_CATEGORY.MEAT },
+        GROUND_LAMB: { name: 'ground lamb', category: INGREDIENT_CATEGORY.MEAT },
         GROUND_PORK: { name: 'ground pork', category: INGREDIENT_CATEGORY.MEAT },
         GROUND_TURKEY: { name: 'ground turkey', category: INGREDIENT_CATEGORY.MEAT },
         GUANCIALE: { name: 'guanciale', category: INGREDIENT_CATEGORY.MEAT },

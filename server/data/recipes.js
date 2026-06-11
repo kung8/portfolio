@@ -27,6 +27,7 @@ const bbqChickenWings = require("./recipes/bbq-chicken-wings");
 const bbqPulledPorkAndFixins = require("./recipes/bbq-pulled-pork-and-fixins");
 const bearnaiseSauce = require("./recipes/bearnaise-sauce");
 const beefAndBeanChimichangas = require("./recipes/beef-and-bean-chimichangas");
+const beefLambSausageRolls = require('./recipes/beef-lamb-sausage-rolls.js');
 const beefRagu = require("./recipes/beef-ragu");
 const beefStroganoff = require("./recipes/beef-stroganoff");
 const beefStroganoffSoup = require('./recipes/beef-stroganoff-soup.js'); // TODO: finish adding recipe
@@ -607,6 +608,7 @@ const recipes = [
     // BRITISH
     fishAndChips,
     englishScones,
+    beefLambSausageRolls,
     chickenPotPie,
     chickenPotPieSoup,
     irishCurryChips,
@@ -928,10 +930,8 @@ module.exports = recipes;
 
 /*
     TODO: add https://www.hersheyland.com/recipes/hersheys-best-brownies.html
-    TODO: add https://moribyan.com/beef-lamb-sausage-rolls/
     TODO: add https://glebekitchen.com/tonkotsu-ramen-home/
     TODO: add https://girlswhoeat.com/recipes/side-dishes/air-fryer-accordion-potatoes/
-    TODO: add https://www.thekitchn.com/cannoli-squares-recipe-23774116
     TODO: add https://theforkedspoon.com/pho-recipe/
     TODO: find recipes for foods that I loved from the Europe trip:
         - Couscous
