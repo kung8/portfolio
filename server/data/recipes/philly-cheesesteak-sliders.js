@@ -1,4 +1,4 @@
-// Add image imports here if available
+const slider1 = '../assets/Products/philly-cheesesteak-sliders-1.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BAKING_PAN, BEEF_SIRLOIN, BLACK_PEPPER, BREAD_KNIFE, FRYING_PAN, GARLIC, GARLIC_SALT, GREEN_BELL_PEPPER, HAWAIIAN_ROLLS, MAYONNAISE, OVEN, PARSLEY, PLATE, PROVOLONE_CHEESE, RED_BELL_PEPPER, SALT, SEASONING_SALT, SLOTTED_SPOON, SMALL_BOWL, STOVE, UNSALTED_BUTTER, VEGETABLE_OIL, WORCESTERSHIRE_SAUCE, YELLOW_ONION } = require('./ingredients');
@@ -8,12 +8,11 @@ const MAKE_GARLIC_MAYO_SPREAD = 'Make Garlic Mayo Spread';
 const SLIDER_SECTION = 'Slider';
 
 module.exports = {
-    wip: true,
     cardName: 'Philly Cheesesteak Sliders',
     name: 'Philly Cheesesteak Sliders',
-    img: '',
+    img: slider1,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH, CATEGORIES.APPETIZER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
