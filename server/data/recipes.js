@@ -356,6 +356,7 @@ const tandooriChicken = require("./recipes/tandoori-chicken");
 const tangYuan = require('./recipes/tang-yuan.js'); // TODO: finish adding recipe
 const tanghulu = require('./recipes/tanghulu.js');
 const tedLassoBiscuits = require("./recipes/ted-lasso-biscuits");
+const texasRoadhouseButterRolls = require('./recipes/texas-roadhouse-butter-rolls.js');
 const texasSausageKolaches = require("./recipes/texas-sausage-kolaches");
 const thaiBasil = require("./recipes/thai-basil");
 const thaiBasilSesameCashewChicken = require('./recipes/thai-basil-sesame-cashew-chicken.js'); // TODO: finish adding recipe
@@ -691,6 +692,7 @@ const recipes = [
     phillyCheesesteakSliders,
     meatballSub,
     garlicButter,
+    texasRoadhouseButterRolls,
     frenchBaguettes,
     sourdoughStarter,
     sourdoughBread,
@@ -939,6 +941,5 @@ module.exports = recipes;
             - https://foodtourrome.com/recipes-the-roman-food-tour/
 */
 
-// https://thecozycook.com/copycat-texas-roadhouse-butter/
 // https://www.recipetineats.com/penne-all-arrabbiata-spicy-tomato-pasta/
 // https://www.facebook.com/groups/390994394103438/posts/785863451283195/ (butterfinger pie)

@@ -48,7 +48,7 @@ module.exports = {
         { ...GARLIC_SALT, amount: 1, unit: INGREDIENT_UNITS.PINCH, additionalDetails: '', section: SECTIONS.COATING },
         { ...WORCESTERSHIRE_SAUCE, amount: 1, unit: INGREDIENT_UNITS.DASH, additionalDetails: '', section: SECTIONS.COATING },
 
-        { ...HAWAIIAN_ROLLS, amount: 12, unit: INGREDIENT_UNITS.EACH, additionalDetails: '', section: SLIDER_SECTION },
+        { ...HAWAIIAN_ROLLS, amount: 12, unit: '', additionalDetails: '', section: SLIDER_SECTION },
         { ...PROVOLONE_CHEESE, amount: 12, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SLIDER_SECTION },
 
         { ...PARSLEY, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS }
