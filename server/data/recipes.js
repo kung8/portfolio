@@ -90,7 +90,7 @@ const chickenCordonBleu = require("./recipes/chicken-cordon-bleu");
 const chickenCurry = require('./recipes/chicken-curry.js');
 const chickenFettuccineAlfredo = require('./recipes/chicken-fettuccine-alfredo.js');
 const chickenFrancese = require("./recipes/chicken-francese");
-const chickenGnocchiSoup = require("./recipes/chicken-gnocchi-soup.js"); // TODO: finish adding recipe
+const chickenGnocchiSoup = require("./recipes/chicken-gnocchi-soup.js");
 const chickenKebab = require("./recipes/chicken-kebabs");
 const chickenMcNuggets = require("./recipes/chicken-mcnuggets");
 const chickenNoodleSoup = require("./recipes/chicken-noodle-soup");
@@ -152,7 +152,7 @@ const drunkenNoodles = require("./recipes/drunken-noodles");
 const dumplingSoup = require("./recipes/dumpling-soup");
 const easyMochi = require('./recipes/easy-mochi.js');
 const eclair = require("./recipes/eclair");
-const empadapDeFrango = require('./recipes/empadao-de-frango.js'); // TODO: finish adding recipe
+const empadaoDeFrango = require('./recipes/empadao-de-frango.js');
 const englishScones = require("./recipes/english-scones");
 const fajitas = require('./recipes/fajitas.js'); // TODO: finish adding recipe
 const fancyLunchables = require("./recipes/fancy-lunchables");
@@ -509,7 +509,7 @@ const recipes = [
     peruvianChicken,
 
     // BRAZILIAN
-    empadapDeFrango,
+    empadaoDeFrango,
     paoDeQueijo,
     brigadeiro,
     beijinhoDeCoco,
