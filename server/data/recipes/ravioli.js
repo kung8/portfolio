@@ -63,8 +63,8 @@ module.exports = {
         { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
 
         { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
-        { ...HEAVY_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
         { ...GARLIC, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'minced', section: WHITE_TRUFFLE_CREAM_SAUCE },
+        { ...HEAVY_CREAM, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
         { ...PARMIGIANO_REGGIANO, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
         { ...WHITE_TRUFFLE_OIL, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: WHITE_TRUFFLE_CREAM_SAUCE },
         { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: WHITE_TRUFFLE_CREAM_SAUCE },
