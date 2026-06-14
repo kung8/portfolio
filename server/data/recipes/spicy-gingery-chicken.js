@@ -15,7 +15,7 @@ const {
     TYPES,
     YIELD_UNITS
 } = require('./constants');
-const { ALUMINUM_FOIL, ARROWROOT_POWDER, BAKING_SHEET, BLACK_PEPPER, CHICKEN_THIGH, EGG, GARLIC, GINGER, GREEN_BELL_PEPPER, GREEN_ONION, GROUND_GINGER, HONEY, JASMINE_RICE, LIGHT_SOY_SAUCE, MIXING_BOWL, OLIVE_OIL, OVEN, PANKO_BREADCRUMBS, POMEGRANATE_JUICE, RED_BELL_PEPPER, RED_PEPPER_FLAKES, RICE_WINE_VINEGAR, SALT, SHALLOT, TONGS, UNSALTED_PEANUT, WOK } = require('./ingredients');
+const { ALUMINUM_FOIL, BAKING_SHEET, BLACK_PEPPER, CHICKEN_THIGH, CORNSTARCH, EGG, GARLIC, GINGER, GREEN_BELL_PEPPER, GREEN_ONION, GROUND_GINGER, HONEY, JASMINE_RICE, LIGHT_SOY_SAUCE, MIXING_BOWL, OLIVE_OIL, OVEN, PANKO_BREADCRUMBS, POMEGRANATE_JUICE, RED_BELL_PEPPER, RED_PEPPER_FLAKES, RICE_WINE_VINEGAR, SALT, SHALLOT, TONGS, UNSALTED_PEANUT, WOK } = require('./ingredients');
 
 const BELL_PEPPER_SECTIONS = 'Bell Peppers';
 const SHALLOT_AND_PEANUTS = 'Shallots and Peanuts';
@@ -48,7 +48,7 @@ module.exports = {
     ],
     ingredients: [
         { ...CHICKEN_THIGH, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1 inch pieces', section: SECTIONS.CHICKEN },
-        { ...ARROWROOT_POWDER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CHICKEN },
+        { ...CORNSTARCH, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...GROUND_GINGER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: SECTIONS.CHICKEN },
         { ...PANKO_BREADCRUMBS, amount: 1.5, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CHICKEN },
