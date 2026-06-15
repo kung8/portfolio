@@ -98,7 +98,7 @@ module.exports = {
         { step: `Bake for 12 minutes.`, section: SECTIONS.BAKE },
         { step: `Flip chicken and toss peppers.`, section: SECTIONS.BAKE },
         { step: `Add "${SHALLOT_AND_PEANUTS}" section ingredients.`, section: SECTIONS.BAKE },
-        { step: `Bake until chicken is cooked through (about 3 to 5 minutes).`, section: SECTIONS.BAKE },
+        { step: `Broil until chicken is cooked through (about 5 minutes). Be careful not to burn the peanuts and shallots.`, section: SECTIONS.BAKE },
         { step: `Remove baking sheet from the oven.`, section: SECTIONS.BAKE },
 
         { step: `In a wok, combine the "${SECTIONS.SAUCE}" section ingredients.`, section: SECTIONS.COOK_SAUCE },
@@ -106,12 +106,9 @@ module.exports = {
         { step: `Cook until the sauce thickens and reduces (about 5 to 8 minutes).`, section: SECTIONS.COOK_SAUCE },
         { step: `Remove wok from stovetop.`, section: SECTIONS.COOK_SAUCE },
 
-        { step: `Pour sauce over chicken and peppers. Toss to coat.`, section: SECTIONS.ASSEMBLE, img: chicken2 },
+        { step: `Add the chicken and peppers into the sauce. Toss to coat.`, section: SECTIONS.ASSEMBLE, img: chicken2 },
 
         { step: `Enjoy this Chinese dish with rice topped with green onions.`, section: SECTIONS.SERVE },
-    ],
-    notes: [
-        { note: `After adding the shallots and peanuts, I ended up turning on the broiler for 5 minutes to crisp up the chicken and peanuts instead of baking it.`}
     ],
     store: [
         {
