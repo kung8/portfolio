@@ -1,4 +1,6 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const chicken1 = '../assets/Products/spicy-gingery-chicken-1.jpeg';
+const chicken2 = '../assets/Products/spicy-gingery-chicken-2.jpeg';
+const chicken3 = '../assets/Products/spicy-gingery-chicken-3.jpeg';
 
 const {
     CATEGORIES,
@@ -22,12 +24,11 @@ const SHALLOT_AND_PEANUTS = 'Shallots and Peanuts';
 const PREP_PEPPERS = 'Prep Peppers';
 
 module.exports = {
-    wip: true,
     cardName: 'Spicy Gingery Chicken',
     name: 'Spicy Gingery Chicken',
-    img: '',
+    img: chicken3,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE],
     method: [METHODS.BAKE],
@@ -92,7 +93,7 @@ module.exports = {
         { step: `Place chicken on one side of the baking sheet.`, section: SECTIONS.PREP_CHICKEN },
 
         { step: `In the mixing bowl, combine the "${BELL_PEPPER_SECTIONS}" section ingredients.`, section: PREP_PEPPERS },
-        { step: `Place the bell peppers on the other side of the baking sheet.`, section: PREP_PEPPERS },
+        { step: `Place the bell peppers on the other side of the baking sheet.`, section: PREP_PEPPERS, img: chicken1 },
 
         { step: `Bake for 12 minutes.`, section: SECTIONS.BAKE },
         { step: `Flip chicken and toss peppers.`, section: SECTIONS.BAKE },
@@ -105,9 +106,12 @@ module.exports = {
         { step: `Cook until the sauce thickens and reduces (about 5 to 8 minutes).`, section: SECTIONS.COOK_SAUCE },
         { step: `Remove wok from stovetop.`, section: SECTIONS.COOK_SAUCE },
 
-        { step: `Pour sauce over chicken and peppers. Toss to coat.`, section: SECTIONS.ASSEMBLE },
+        { step: `Pour sauce over chicken and peppers. Toss to coat.`, section: SECTIONS.ASSEMBLE, img: chicken2 },
 
         { step: `Enjoy this Chinese dish with rice topped with green onions.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `After adding the shallots and peanuts, I ended up turning on the broiler for 5 minutes to crisp up the chicken and peanuts instead of baking it.`}
     ],
     store: [
         {
