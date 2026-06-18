@@ -103,6 +103,7 @@ const chickenQuesadilla = require("./recipes/chicken-quesadilla");
 const chickenRamen = require("./recipes/chicken-ramen");
 const chickenStuffedCrescentRolls = require("./recipes/chicken-stuffed-crescent-rolls");
 const chickenTetrazzini = require("./recipes/chicken-tetrazzini");
+const chileBeefLettuceWraps = require('./recipes/chile-beef-lettuce-wraps.js');
 const chili = require("./recipes/chili");
 const chineseBao = require("./recipes/chinese-bao");
 const chineseBokChoyChicken = require("./recipes/chinese-bok-choy-chicken");
@@ -469,6 +470,7 @@ const recipes = [
     chineseSourChickenSoup,
     pepperSteakStirFry,
     lemonChickenOnLettuce,
+    chileBeefLettuceWraps,
     choySumWithGarlicSauce,
     chineseBokChoyChicken,
     cabbageStirFry,

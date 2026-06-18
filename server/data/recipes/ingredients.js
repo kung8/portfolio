@@ -1402,6 +1402,7 @@ const INGREDIENTS = {
         BRUSSELS_SPROUT: {
             name: 'brussels sprout', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1438118907704-7718ee9a191a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc4OTg5fA&ixlib=rb-4.0.3&q=80&w=400"
         },
+        BUTTER_LETTUCE: { name: 'butter lettuce', category: INGREDIENT_CATEGORY.PRODUCE },
         BUTTERNUT_SQUASH: { name: 'butternut squash', category: INGREDIENT_CATEGORY.PRODUCE },
         CABBAGE: {
             name: 'cabbage', category: INGREDIENT_CATEGORY.PRODUCE, img: "https://images.unsplash.com/photo-1591586007768-40725cc562a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc4OTE2fA&ixlib=rb-4.0.3&q=80&w=400"
