@@ -26,6 +26,25 @@ module.exports = {
         // },
         {
             date: NO_DATE,
+            title: "The Peter Potential",
+            author: ["Emily Belle Freeman"],
+            source: ["Amelia Taylor"],
+            review: [
+                ""
+            ],
+            quotes: [
+                {
+                    text: "",
+                    pages: [],
+                    thoughts: "",
+                    context: ""
+                },
+            ],
+            pageCount: 0,
+            rating: NO_RATING,
+        },
+        {
+            date: NO_DATE,
             title: "The Last Time I Lied",
             author: ["Riley Sager"],
             source: ["Lindsey Hunter"],
