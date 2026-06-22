@@ -46,6 +46,7 @@ const blueberryFrenchToastCasserole = require('./recipes/blueberry-french-toast-
 const bostonCreamHawaiianRollDonuts = require('./recipes/boston-cream-hawaiian-roll-donuts.js');
 const brazilianBlackBeans = require('./recipes/brazilian-black-beans.js'); // TODO: finish adding recipe
 const brazilianLemonade = require('./recipes/brazilian-lemonade.js');
+const breadedChickenAlfredo = require('./recipes/breaded-chicken-alfredo.js');
 const breakfastBurrito = require("./recipes/breakfast-burrito");
 const breakfastCasserole = require("./recipes/breakfast-casserole");
 const breakfastSandwich = require("./recipes/breakfast-sandwich");
@@ -88,7 +89,6 @@ const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenBiryani = require("./recipes/chicken-biryani");
 const chickenCordonBleu = require("./recipes/chicken-cordon-bleu");
 const chickenCurry = require('./recipes/chicken-curry.js');
-const chickenFettuccineAlfredo = require('./recipes/chicken-fettuccine-alfredo.js');
 const chickenFrancese = require("./recipes/chicken-francese");
 const chickenGnocchiSoup = require("./recipes/chicken-gnocchi-soup.js");
 const chickenKebab = require("./recipes/chicken-kebabs");
@@ -548,7 +548,7 @@ const recipes = [
     balsamicTomatoBruschetta,
     chickenCordonBleu,
     porkMilanese,
-    chickenFettuccineAlfredo,
+    breadedChickenAlfredo,
     chickenAlfredo,
     chickenParmesan,
     basilPesto,

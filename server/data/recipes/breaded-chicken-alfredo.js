@@ -1,4 +1,7 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const alfredo1 = '../assets/Products/breaded-chicken-alfredo-1.jpeg';
+const alfredo2 = '../assets/Products/breaded-chicken-alfredo-2.jpeg';
+const alfredo3 = '../assets/Products/breaded-chicken-alfredo-3.jpeg';
+const alfredo4 = '../assets/Products/breaded-chicken-alfredo-4.jpeg';
 
 const {
     CATEGORIES,
@@ -22,10 +25,9 @@ const BREADCRUMB_MIXTURE = 'Breadcrumb Mixture';
 const ALFREDO_SAUCE = 'Alfredo Sauce';
 
 module.exports = {
-    wip: true,
-    cardName: 'Chicken Fettuccine Alfredo',
-    name: 'Chicken Fettuccine Alfredo',
-    img: '',
+    cardName: 'Breaded Chicken Alfredo',
+    name: 'Breaded Chicken Alfredo',
+    img: alfredo4,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -59,7 +61,7 @@ module.exports = {
         { ...PARMESAN_CHEESE, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'grated', section: BREADCRUMB_MIXTURE },
 
         { ...OLIVE_OIL, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'plus some more as needed', section: SECTIONS.FOR_FRYING },
-        { ...SALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'plus some more as needed', section: SECTIONS.CHICKEN },
+        { ...SALTED_BUTTER, amount: 4, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'plus some more as needed', section: SECTIONS.FOR_FRYING },
 
         { ...SALT, amount: '', unit: '', additionalDetails: '', section: SECTIONS.PASTA },
         { ...FETTUCCINE_NOODLES, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: SECTIONS.PASTA },
@@ -95,7 +97,7 @@ module.exports = {
         { step: `Gently pound to get chicken to 1/2 inch thick.`, section: SECTIONS.PREP_CHICKEN },
         { step: `Prep dredging station: (1) flour mixture, (2) eggs, and (3) panko mixture.`, section: SECTIONS.PREP_DREDGING_STATION },
         { step: `Dredge chicken in each bowl making sure to get both sides of the chicken and shake off the excess between each bowl.`, section: SECTIONS.DREDGE },
-        { step: `Place coated chicken on a plate.`, section: SECTIONS.DREDGE },
+        { step: `Place coated chicken on a plate.`, section: SECTIONS.DREDGE, img: alfredo1 },
 
         { step: `Line a baking sheet with paper towels and place a wire rack on top.`, section: SECTIONS.FRY },
         { step: `Over medium heat, add olive oil and butter to a frying pan.`, section: SECTIONS.FRY },
@@ -112,9 +114,9 @@ module.exports = {
         { step: `Over low heat, melt butter in a saucepan.`, section: SECTIONS.COOK_SAUCE },
         { step: `Add garlic. Saute until fragrant and softened (about 2 minutes).`, section: SECTIONS.COOK_SAUCE },
         { step: `Add cream. Cook, and whisk often, until bubbling and thickened (about 6 minutes).`, section: SECTIONS.COOK_SAUCE },
-        { step: `Add parmesan and white pepper. Whisk until combined and cheese is melted.`, section: SECTIONS.COOK_SAUCE },
+        { step: `Add parmesan and white pepper. Whisk until combined and cheese is melted.`, section: SECTIONS.COOK_SAUCE, img: alfredo2 },
 
-        { step: `Add fettuccine. Toss until coated.`, section: SECTIONS.ASSEMBLE },
+        { step: `Add fettuccine. Toss until coated.`, section: SECTIONS.ASSEMBLE, img: alfredo3 },
 
         { step: `Enjoy this delicious elevated chicken alfredo dish.`, section: SECTIONS.SERVE },
     ],
