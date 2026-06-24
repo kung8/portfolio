@@ -105,6 +105,7 @@ module.exports = {
         { step: `Fry until golden brown on both sides (about 3 minutes per side).`, section: SECTIONS.FRY },
         { step: `Transfer chicken to the drip station.`, section: SECTIONS.FRY },
         { step: `Repeat with the remaining chicken. Add more oil and butter as needed.`, section: SECTIONS.FRY },
+        { step: `Slice the fried chicken into strips or bite-sized pieces.`, section: SECTIONS.FRY },
         { step: `Place fried chicken in the oven to keep warm while you cook the pasta and make the sauce.`, section: SECTIONS.FRY },
 
         { step: `Over medium-high heat, bring a pot of salted water to a boil.`, section: SECTIONS.COOK_PASTA },

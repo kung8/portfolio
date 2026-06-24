@@ -1,3 +1,4 @@
+const ravioli0 = '../assets/Products/ravioli-0.jpeg';
 const ravioli1 = '../assets/Products/ravioli-1.jpeg';
 const ravioli2 = '../assets/Products/ravioli-2.jpeg';
 const ravioli3 = '../assets/Products/ravioli-3.mov';
@@ -140,6 +141,7 @@ module.exports = {
     ],
     notes: [
         { note: `The recommended pasta maker is the Marcato Atlas 150.` },
+        { note: `Best ravioli I had was in Florence at Zaza Tarttoria.`, img: ravioli0 }
     ],
     store: [
         {

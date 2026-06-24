@@ -1,3 +1,4 @@
+const gelato0 = '../assets/Products/gelato-0.jpeg';
 const gelato1 = '../assets/Products/chocolate-gelato-1.jpeg';
 const gelato2 = '../assets/Products/chocolate-gelato-2.jpeg';
 
@@ -88,6 +89,9 @@ module.exports = {
         { step: `Freeze until set (about 4 to 6 hours).`, section: SECTIONS.FREEZE, img: gelato1 },
 
         { step: `Enjoy this delicious Italian dessert.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `Pure joy in a cone!`, img: gelato0 },
     ],
     store: [
         {

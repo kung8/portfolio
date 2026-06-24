@@ -1,4 +1,4 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const kaiserschmarrn0 = '../assets/Products/kaiserschmarrn-0.jpeg';
 
 const {
     CATEGORIES,
@@ -105,6 +105,9 @@ module.exports = {
         { step: `Tear into pieces and transfer to serving plates.`, section: COOK_KAISERSCHMARRN },
 
         { step: `Serve warm and enjoy this delicious Austrian dish as a main course or dessert.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `Kaiserschmarrn with the cherry compote was my favorite.`, img: kaiserschmarrn0 },
     ],
     store: [
         {

@@ -1,4 +1,4 @@
-const schiacciata1 = '../assets/Products/schiacciata-1.jpeg';
+const schiacciata0 = '../assets/Products/schiacciata-0.jpeg';
 
 const {
     CATEGORIES,
@@ -66,7 +66,7 @@ module.exports = {
         { step: `Enjoy this delicious slice of Italy!`, section: SECTIONS.SERVE },
     ],
     notes: [
-        { note: `The best schiacciata I had was in Manarola at a sandwich shop called "Il Salumaio". I constructed it from the "Make your 'Schiacciata'" menu: Hot porchetta, di parmigiano cream, pecorinio semistagionato, and peperoni grigliati.`, img: schiacciata1 },
+        { note: `The best schiacciata I had was in Manarola at a sandwich shop called "Il Salumaio". I constructed it from the "Make your 'Schiacciata'" menu: Hot porchetta, di parmigiano cream, pecorinio semistagionato, and peperoni grigliati.`, img: schiacciata0 },
         { note: `It might be difficult to find hot fresh porchetta so a cold cut from the deli section might be the closest you can get.` },
     ],
     mealPrep: false,

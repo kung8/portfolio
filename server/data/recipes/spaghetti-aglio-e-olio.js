@@ -1,4 +1,6 @@
-// Add image imports here if available
+const olio1 = '../assets/Products/spaghetti-aglio-e-olio-1.jpeg';
+const olio2 = '../assets/Products/spaghetti-aglio-e-olio-2.jpeg';
+const olio3 = '../assets/Products/spaghetti-aglio-e-olio-3.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, GARLIC, LARGE_PAN, OLIVE_OIL, PARSLEY, POT, RED_PEPPER_FLAKES, SALT, SPAGHETTI_NOODLES, STOVE } = require('./ingredients');
@@ -7,12 +9,11 @@ const GARLIC_AND_OLIVE_OIL = 'Garlic & Olive Oil';
 const TOAST_GARLIC = 'Toast Garlic';
 
 module.exports = {
-    wip: true,
     cardName: 'Spaghetti Aglio e Olio',
     name: 'Spaghetti Aglio e Olio',
-    img: '',
+    img: olio3,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.SAUTE],
@@ -49,18 +50,18 @@ module.exports = {
     ],
     directions: [
         { step: `Over high heat, bring a pot of salted water to a boil.`, section: SECTIONS.COOK_PASTA },
-        { step: `Add noodles. Cook until cooked through but still firm (about 10 to 12 minutes).`, section: SECTIONS.COOK_PASTA },
+        { step: `Add noodles. Cook until al dente (about 7 to 8 minutes).`, section: SECTIONS.COOK_PASTA },
         { step: `Drain.`, section: SECTIONS.COOK_PASTA },
 
         { step: `Over medium heat, add olive oil and sliced garlic in a large pan.`, section: TOAST_GARLIC },
-        { step: `Reduce to medium-low heat, once olive oil bubbles.`, section: TOAST_GARLIC },
-        { step: `Cook until golden brown (about 5 minutes).`, section: TOAST_GARLIC },
+        { step: `Once the oil bubbles reduce to medium-low heat.`, section: TOAST_GARLIC },
+        { step: `Cook until golden brown (about 5 minutes).`, section: TOAST_GARLIC, img: olio1 },
         { step: `Remove from heat.`, section: TOAST_GARLIC },
 
         { step: `Add "${SECTIONS.SPICES}" section ingredients to pasta. Toss.`, section: SECTIONS.ASSEMBLE },
         { step: `Add "${GARLIC_AND_OLIVE_OIL}" section ingredients. Toss.`, section: SECTIONS.ASSEMBLE },
 
-        { step: `Serve and enjoy this simple Italian dish!`, section: SECTIONS.SERVE },
+        { step: `Serve and enjoy this simple Italian dish!`, section: SECTIONS.SERVE, img: olio2 },
     ],
     notes: [
         { note: `An Italian local said do not add parmesan or it will ruin the freshness of this recipe.` },

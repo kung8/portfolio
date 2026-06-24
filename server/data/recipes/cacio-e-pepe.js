@@ -1,4 +1,4 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const pepe0 = '../assets/Products/cacio-e-pepe-0.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, COLANDER, PECORINO_ROMANO, SAUCEPAN, SPAGHETTI_NOODLES, STOVE, TONGS, UNSALTED_BUTTER } = require('./ingredients');
@@ -50,6 +50,9 @@ module.exports = {
         { step: `Add cheese and black pepper.`, section: SECTIONS.SAUTE },
 
         { step: `Serve and optionally top with more cheese.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `Cacio e Pepe served in a tostada was the best! "Benso" in Rome by the Colosseum!`, img: pepe0 },
     ],
     store: [
         {
