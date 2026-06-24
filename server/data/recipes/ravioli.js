@@ -141,7 +141,7 @@ module.exports = {
     ],
     notes: [
         { note: `The recommended pasta maker is the Marcato Atlas 150.` },
-        { note: `Best ravioli I had was in Florence at Zaza Tarttoria.`, img: ravioli0 }
+        { note: `Best ravioli I had was at Trattoria Zaza in Florence.`, img: ravioli0 }
     ],
     store: [
         {
