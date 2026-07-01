@@ -247,6 +247,7 @@ export const MealPlanningModalContent = ({
                                             {(displayedData[date].filter(item => item.type === type) ?? [])?.map((item) =>
                                                 <MealItem
                                                     key={item.id}
+                                                    handleClose={handleClose}
                                                     item={item}
                                                     onCheckboxChange={() => updateMeal(item, { checked: !item.checked })}
                                                     onEditClick={() => {
