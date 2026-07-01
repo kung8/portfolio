@@ -76,7 +76,7 @@ export const MealItem = ({ handleClose, item, onCheckboxChange, onEditClick, onE
                             window.location.href = baseUrl + recipeLink;
                         }}
                     >
-                        View by Recipe
+                        View Recipe
                     </span>
                 )}
             </div>
