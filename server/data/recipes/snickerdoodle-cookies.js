@@ -2,10 +2,6 @@ const cookie1 = '../assets/Products/snickerdoodle-cookies-1.jpeg';
 const cookie2 = '../assets/Products/snickerdoodle-cookies-2.jpeg';
 const cookie3 = '../assets/Products/snickerdoodle-cookies-3.jpeg';
 
-// const cookie6 = '../assets/Products/snickerdoodle-cookies-6.jpeg';
-// const cookie7 = '../assets/Products/snickerdoodle-cookies-7.jpeg';
-// const cookie10 = '../assets/Products/snickerdoodle-cookies-10.jpeg';
-
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     ALL_PURPOSE_FLOUR,
@@ -50,16 +46,19 @@ module.exports = {
         },
     ],
     ingredients: [
-        { ...ALL_PURPOSE_FLOUR, amount: 11 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: COATING },
+        { ...CINNAMON, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: COATING },
+        
+        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...WHITE_SUGAR, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
+        
+        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
+        
         { ...CREAM_OF_TARTAR, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...BAKING_SODA, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
         { ...SALT, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WHITE_SUGAR, amount: 3 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...EGG, amount: 2, unit: '', additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.DOUGH },
-        { ...WHITE_SUGAR, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: COATING },
-        { ...CINNAMON, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: COATING },
+        { ...ALL_PURPOSE_FLOUR, amount: 11 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.DOUGH },
     ],
     appliances: [
         OVEN,
@@ -76,13 +75,13 @@ module.exports = {
         { step: `In a small bowl, combine the sugar and cinnamon together.`, section: COATING },
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Place the silicon baking mat on the baking sheet.`, section: SECTIONS.PREP_PAN },
-        { step: `In a mixing bowl, mix the softened butter until it is a consistent cream-like texture.`, section: SECTIONS.MAIN },
-        { step: `Cream together the sugar with the butter.`, section: SECTIONS.MAIN },
-        { step: `Combine vanilla and eggs to the creamed butter mixture.`, section: SECTIONS.MAIN },
-        { step: `Add the dry ingredients one at a time to the wet batter and mix well. I recommend adding the flour last.`, section: SECTIONS.MAIN },
-        { step: `Create 1 inch dough balls and place them on a plate to be rolled in the cinnamon-sugar mixture in the next step. I recommend this to keep your hands clean of the cinnamon-sugar.`, section: SECTIONS.MAIN },
-        { step: `Roll each ball in the cinnamon-sugar mixture.`, section: SECTIONS.MAIN, img: cookie1 },
-        { step: `Place the coated dough balls on a baking sheet about 2-inches apart.`, section: SECTIONS.MAIN, img: cookie2 },
+        { step: `In a mixing bowl, mix the softened butter until it is a consistent cream-like texture.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Cream together the sugar with the butter.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Combine vanilla and eggs to the creamed butter mixture.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Add the dry ingredients one at a time to the wet batter and mix well. I recommend adding the flour last.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Create 1 inch dough balls and place them on a plate to be rolled in the cinnamon-sugar mixture in the next step. I recommend this to keep your hands clean of the cinnamon-sugar.`, section: SECTIONS.FORM_BALLS },
+        { step: `Roll each ball in the cinnamon-sugar mixture.`, section: SECTIONS.COAT, img: cookie1 },
+        { step: `Place the coated dough balls on a baking sheet about 2-inches apart.`, section: SECTIONS.COAT, img: cookie2 },
         { step: `Bake for 8 to 10 minutes.`, section: SECTIONS.BAKE },
         { step: `Enjoy these quick, light treats in any mood and any time of the day.`, section: SECTIONS.SERVE },
     ],

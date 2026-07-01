@@ -1,4 +1,6 @@
-// const wraps1 = '../assets/Products/chile-beef-lettuce-wraps-1.jpeg';
+const wraps1 = '../assets/Products/chile-beef-lettuce-wraps-1.jpeg';
+const wraps2 = '../assets/Products/chile-beef-lettuce-wraps-2.jpeg';
+const wraps3 = '../assets/Products/chile-beef-lettuce-wraps-3.jpeg';
 
 const {
     CATEGORIES,
@@ -22,14 +24,13 @@ const LAST_TOUCHES = 'Last Touches';
 const COOK_BEEF_AND_PORK = 'Cook Beef and Pork';
 
 module.exports = {
-    wip: true,
     cardName: 'Chile Beef Lettuce Wraps',
     name: 'Chile Beef Lettuce Wraps',
-    img: '',
+    img: wraps2,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
-    genre: [GENRES.ASIAN, GENRES.CHINESE],
+    genre: [GENRES.ASIAN, GENRES.CHINESE, GENRES.THAI],
     method: [METHODS.STIR_FRY],
     protein: [PROTEIN.BEEF],
     type: [TYPES.FINGER_FOOD, TYPES.MAIN_COURSE, TYPES.WRAP],
@@ -95,11 +96,11 @@ module.exports = {
         { step: `Add fish sauce. Cook until heated through.`, section: SECTIONS.COOK_FILLING },
         { step: `Add the lime zest and juice. Mix.`, section: SECTIONS.COOK_FILLING },
         { step: `Add green onions. Cook for 30 seconds.`, section: SECTIONS.COOK_FILLING },
-        { step: `Turn off heat.`, section: SECTIONS.COOK_FILLING },
+        { step: `Turn off heat.`, section: SECTIONS.COOK_FILLING, img: wraps1 },
 
         { step: `In a mixing bowl, combine the "${SECTIONS.DRESSING}" section ingredients. Taste and adjust.`, section: SECTIONS.PREP_DRESSING },
         { step: `In lettuce leaves, spoon meat mixture. Top with dressing.`, section: SECTIONS.ASSEMBLE },
-        { step: `Enjoy these Asian flavorful wraps!`, section: SECTIONS.SERVE },
+        { step: `Enjoy these Asian flavorful wraps!`, section: SECTIONS.SERVE, img: wraps3 },
     ],
     store: [
         {
