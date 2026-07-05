@@ -1,4 +1,6 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const pepper1 = '../assets/Products/peperoni-grigliati-1.jpeg';
+const pepper2 = '../assets/Products/peperoni-grigliati-2.jpeg';
+const pepper3 = '../assets/Products/peperoni-grigliati-3.jpeg';
 
 const {
     CATEGORIES, 
@@ -22,16 +24,14 @@ const PREP_PEPPERS = 'Prep Peppers';
 const PEEL_PEPPERS = 'Peel Peppers';
 
 module.exports = {
-    wip: true,
     cardName: 'Peperoni Grigliati',
     name: 'Peperoni Grigliati',
-    img: '',
+    img: pepper3,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER,CATEGORIES.SIDE_DISH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.GRILL],
-    protein: [],
     type: [TYPES.VEGETABLE],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
@@ -62,9 +62,9 @@ module.exports = {
         { step: `Slice peppers in half length-wise.`, section: PREP_PEPPERS },
         { step: `Place bell peppers on the baking sheet in a single layer. Press down on them to flatten.`, section: PREP_PEPPERS },
         { step: `Lightly brush with a little olive oil.`, section: PREP_PEPPERS },
-        { step: `Broil until the skin blisters (about 3 to 5 minutes). Flip every few minutes to get both sides.`, section: SECTIONS.BROIL },
-        { step: `Once taken out of the oven, immediately transfer the peppers to a ziploc bag and seal for 20 to 30 minutes.`, section: PEEL_PEPPERS },
-        { step: `Peel the skin of the peppers.`, section: PEEL_PEPPERS },
+        { step: `Broil until the skin blisters (about 3 to 5 minutes). Flip every few minutes to get both sides.`, section: SECTIONS.BROIL, img: pepper1 },
+        { step: `Once taken out of the oven, immediately transfer the peppers to a ziploc bag and seal for 20 to 30 minutes.`, section: PEEL_PEPPERS, img: pepper2 },
+        { step: `Optionally peel the skin off the peppers.`, section: PEEL_PEPPERS },
         { step: `In a mixing bowl, place the peppers and add "${SECTIONS.MARINADE}" section ingredients.`, section: SECTIONS.MARINATE },
 
         { step: `Chill in the fridge for at least 2 hours.`, section: SECTIONS.CHILL },

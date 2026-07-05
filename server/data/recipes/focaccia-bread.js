@@ -1,4 +1,5 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const focaccia1 = '../assets/Products/focaccia-bread-1.jpeg';
+const focaccia2 = '../assets/Products/focaccia-bread-2.jpeg';
 
 const {
     CATEGORIES,
@@ -22,12 +23,11 @@ const PREP_YEAST_MIXTURE = 'Prep Yeast Mixture';
 const DIMPLE_DOUGH = 'Dimple Dough';
 
 module.exports = {
-    wip: true,
     cardName: 'Focaccia Bread',
     name: 'Focaccia Bread',
-    img: '',
+    img: focaccia2,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.APPETIZER, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
@@ -92,7 +92,7 @@ module.exports = {
         
         { step: `Uncover pan. Drizzle 2 tablespoons of olive oil.`, section: DIMPLE_DOUGH },
         { step: `Rub your hands with oil. Use your fingers to poke holes in the dough.`, section: DIMPLE_DOUGH },
-        { step: `Optionally sprinkle dough with any desired toppings.`, section: DIMPLE_DOUGH },
+        { step: `Optionally sprinkle dough with any desired toppings.`, section: DIMPLE_DOUGH, img: focaccia1 },
 
         { step: `Bake until golden brown (about 20 to 30 minutes).`, section: SECTIONS.BAKE },
         

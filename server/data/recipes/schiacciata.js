@@ -1,4 +1,5 @@
 const schiacciata0 = '../assets/Products/schiacciata-0.jpeg';
+const schiacciata1 = '../assets/Products/schiacciata-1.jpeg';
 
 const {
     CATEGORIES,
@@ -19,12 +20,11 @@ const FOCACCIA_BREAD = 'Focaccia Bread';
 const SANDWICH_FILLING = 'Sandwich Filling';
 
 module.exports = {
-    wip: true,
     cardName: 'Schiacciata',
     name: 'Schiacciata',
-    img: '',
+    img: schiacciata1,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.ASSEMBLE, METHODS.AIR_FRY, METHODS.BAKE],
@@ -49,8 +49,6 @@ module.exports = {
         { ...PARMIGIANO_REGGIANO, amount: 2, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_FILLING },
         { name: peperoniGrigliati.name.toLowerCase(), amount: '', unit: '', additionalDetails: '', section: SANDWICH_FILLING, link: { id: peperoniGrigliati.name, url: `recipes/${peperoniGrigliati.name}` } },
     ],
-    appliances: [],
-    supplies: [],
     directions: [
         {
             step: `Follow the reheat instructions for the `,

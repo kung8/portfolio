@@ -19,12 +19,11 @@ const CHILL_CUSTARD = 'Chill Custard';
 const CHURN_CUSTARD = 'Churn Custard';
 
 module.exports = {
-    wip: true,
     cardName: 'Chocolate Gelato',
     name: 'Chocolate Gelato',
     img: gelato2,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.ITALIAN],
     method: [METHODS.FREEZE],

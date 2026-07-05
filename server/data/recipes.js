@@ -176,7 +176,6 @@ const garlicButterRiceWithKale = require('./recipes/garlic-butter-rice-with-kale
 const garlicChickenWithHerbs = require("./recipes/garlic-chicken-with-herbs");
 const garlicParmesanShrimp = require('./recipes/garlic-parmesan-shrimp.js');
 const garlicShrimp = require("./recipes/garlic-shrimp");
-const gelato = require("./recipes/gelato");
 const germanChocolateCake = require('./recipes/german-chocolate-cake.js');
 const gingerbreadCookies = require("./recipes/gingerbread-cookies");
 const graveyardDessert = require("./recipes/graveyard-dessert");
@@ -346,6 +345,7 @@ const spicyItalianFlatbread = require('./recipes/spicy-italian-flatbread.js'); /
 const springRolls = require('./recipes/spring-rolls.js');
 const steak = require('./recipes/steak.js');
 const stickyToffeePudding = require("./recipes/sticky-toffee-pudding");
+const strawberryGelato = require("./recipes/strawberry-gelato");
 const stuffedPepperCasserole = require('./recipes/stuffed-pepper-casserole.js');
 const stuffing = require("./recipes/stuffing");
 const sugarCookies = require("./recipes/sugar-cookies");
@@ -574,7 +574,7 @@ const recipes = [
     lemonCapelliniSalad,
     noBakeCannoliDelight,
     chocolateGelato,
-    gelato,
+    strawberryGelato,
 
     // SPANISH
     shrimpPaella,

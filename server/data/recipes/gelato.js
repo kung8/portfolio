@@ -20,11 +20,11 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Gelato', 
+        {
+            label: 'Gelato',
             link: 'https://foodnouveau.com/how-to-make-gelato/',
             authors: ['Marie Asselin'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
