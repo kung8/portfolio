@@ -119,6 +119,10 @@ const STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY = 'startingDayOfWeek';
 export const getStartingDayLocalStorageKey = () => getLocalStorage(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, weekdayOptions[0].value);
 export const setStartingDayLocalStorageKey = (day) => setLocalStorage(STARTING_DAY_OF_WEEK_LOCAL_STORAGE_KEY, day);
 
+const SHOW_ALL_PLANNING_DATE_RANGES_LOCAL_STORAGE_KEY = 'showAllPlanningDateRanges';
+export const getShowAllPlanningDateRangesLocalStorageKey = () => getLocalStorage(SHOW_ALL_PLANNING_DATE_RANGES_LOCAL_STORAGE_KEY, false);
+export const setShowAllPlanningDateRangesLocalStorageKey = (showAllDateRanges) => setLocalStorage(SHOW_ALL_PLANNING_DATE_RANGES_LOCAL_STORAGE_KEY, showAllDateRanges);
+
 // /////////////////////////////////////////////////// GROCERY LIST ////////////////////////////////////////////////////////////
 export const GROCERY_LIST_LOCAL_STORAGE_KEY = 'groceryList';
 // export const getGroceryList = () => getLocalStorage(GROCERY_LIST_LOCAL_STORAGE_KEY, []);

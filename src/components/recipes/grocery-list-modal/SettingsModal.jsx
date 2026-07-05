@@ -51,6 +51,7 @@ export const SettingsModal = ({ closeModal }) => {
         defaultVendor,
         recipeFontSize,
         recipePageLayout,
+        showAllPlanningDateRanges,
         showRecipeFigures,
         showRecipeNotes,
         showRecipeReheatOptions,
@@ -60,6 +61,7 @@ export const SettingsModal = ({ closeModal }) => {
         updateDefaultVendor,
         updateRecipeFontSize,
         updateRecipePageLayout,
+        updateShowAllPlanningDateRanges,
         updateShowRecipeFigures,
         updateShowRecipeNotes,
         updateShowRecipeReheatOptions,
@@ -75,6 +77,7 @@ export const SettingsModal = ({ closeModal }) => {
     const [localDefaultVendor, setLocalDefaultVendor] = useState(defaultVendor);
     const [localRecipeFontSize, setLocalRecipeFontSize] = useState(recipeFontSize);
     const [localRecipePageLayout, setLocalRecipePageLayout] = useState(recipePageLayout);
+    const [localShowAllPlanningDateRanges, setLocalShowAllPlanningDateRanges] = useState(showAllPlanningDateRanges);
     const [localShowRecipeFigures, setLocalShowRecipeFigures] = useState(showRecipeFigures);
     const [localShowRecipeNotes, setLocalShowRecipeNotes] = useState(showRecipeNotes);
     const [localShowRecipeReheatOptions, setLocalShowRecipeReheatOptions] = useState(showRecipeReheatOptions);
@@ -102,6 +105,7 @@ export const SettingsModal = ({ closeModal }) => {
     const defaultVendorUnchanged = defaultVendor === localDefaultVendor;
     const recipeFontSizeUnchanged = recipeFontSize === localRecipeFontSize;
     const recipePageLayoutUnchanged = recipePageLayout === localRecipePageLayout;
+    const showAllPlanningDateRangesUnchanged = showAllPlanningDateRanges === localShowAllPlanningDateRanges;
     const showRecipeFiguresUnchanged = showRecipeFigures === localShowRecipeFigures;
     const showRecipeNotesUnchanged = showRecipeNotes === localShowRecipeNotes;
     const showRecipeReheatOptionsUnchanged = showRecipeReheatOptions === localShowRecipeReheatOptions;
@@ -114,6 +118,7 @@ export const SettingsModal = ({ closeModal }) => {
         defaultVendorUnchanged &&
         recipeFontSizeUnchanged &&
         recipePageLayoutUnchanged &&
+        showAllPlanningDateRangesUnchanged &&
         showRecipeFiguresUnchanged &&
         showRecipeNotesUnchanged &&
         showRecipeReheatOptionsUnchanged &&
@@ -134,6 +139,10 @@ export const SettingsModal = ({ closeModal }) => {
     useEffect(() => {
         setLocalRecipePageLayout(recipePageLayout);
     }, [recipePageLayout]);
+
+    useEffect(() => {
+        setLocalShowAllPlanningDateRanges(showAllPlanningDateRanges);
+    }, [showAllPlanningDateRanges]);
 
     useEffect(() => {
         setLocalShowRecipeFigures(showRecipeFigures);
@@ -227,6 +236,7 @@ export const SettingsModal = ({ closeModal }) => {
                                     }}
                                 >{option}</li>
                             ))}
+                            onClickOutside={() => setShowDefaultVendorDropdown(false)}
                             openAbove
                             optionsCount={localVendorOptions.length}
                             show={showDefaultVendorDropdown}
@@ -249,6 +259,7 @@ export const SettingsModal = ({ closeModal }) => {
                                     }}
                                 >{option}</li>
                             ))}
+                            onClickOutside={() => setShowRecipeFontSizeDropdown(false)}
                             openAbove
                             optionsCount={fontSizeOptions.length}
                             show={showRecipeFontSizeDropdown}
@@ -262,6 +273,16 @@ export const SettingsModal = ({ closeModal }) => {
                         <SwitchToggle
                             enabled={localShowRecipeFigures}
                             onClick={() => setLocalShowRecipeFigures(!localShowRecipeFigures)}
+                        />
+                    </SettingContainer>
+
+                    <SettingContainer
+                        heading="Show Past Planning Windows"
+                        subheading="Keep older meal plan date ranges visible instead of limiting the planner to the current window."
+                    >
+                        <SwitchToggle
+                            enabled={localShowAllPlanningDateRanges}
+                            onClick={() => setLocalShowAllPlanningDateRanges(!localShowAllPlanningDateRanges)}
                         />
                     </SettingContainer>
 
@@ -321,6 +342,7 @@ export const SettingsModal = ({ closeModal }) => {
                                     }}
                                 >{label}</li>
                             ))}
+                            onClickOutside={() => setShowPageLayoutDropdown(false)}
                             openAbove
                             optionsCount={pageLayoutOptions.length}
                             show={showPageLayoutDropdown}
@@ -337,6 +359,7 @@ export const SettingsModal = ({ closeModal }) => {
                             updateDefaultVendor(localDefaultVendor);
                             updateRecipeFontSize(localRecipeFontSize);
                             updateRecipePageLayout(localRecipePageLayout);
+                            updateShowAllPlanningDateRanges(localShowAllPlanningDateRanges);
                             updateShowRecipeFigures(localShowRecipeFigures);
                             updateShowRecipeNotes(localShowRecipeNotes);
                             updateShowRecipeReheatOptions(localShowRecipeReheatOptions);

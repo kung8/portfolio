@@ -9,7 +9,7 @@ import { GroceryListModalHeader } from './GroceryListModalHeader';
 import { MealPlanningModalContent } from './MealPlanningModalContent';
 import { ApplyToIngredientsInPlannedMealModal } from './ApplyToIngredientsInPlannedMealModal';
 import { SettingsModal } from './SettingsModal';
-import { GROCERY_LIST_VIEW, MEAL_PLANNING_VIEW, getGroceryListSortByLocalStorageKey, getMealPlanSortByLocalStorageKey, getStartingDayLocalStorageKey, setGroceryListSortByLocalStorageKey, setMealPlanSortByLocalStorageKey } from '../utils';
+import { GROCERY_LIST_VIEW, MEAL_PLANNING_VIEW, getGroceryListSortByLocalStorageKey, getMealPlanSortByLocalStorageKey, getShowAllPlanningDateRangesLocalStorageKey, getStartingDayLocalStorageKey, setGroceryListSortByLocalStorageKey, setMealPlanSortByLocalStorageKey } from '../utils';
 
 export const GroceryListModal = ({
     generateUUID,
@@ -155,6 +155,7 @@ export const GroceryListModal = ({
     const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
     const closeSettingsModal = () => setIsSettingsModalOpen(false);
     const startingDay = getStartingDayLocalStorageKey();
+    const showAllPlanningDateRanges = getShowAllPlanningDateRangesLocalStorageKey();
 
     return (
         <>
@@ -217,6 +218,7 @@ export const GroceryListModal = ({
                                 setOriginalMealToEdit,
                                 setMealToEdit,
                                 setDeleteType,
+                                showAllPlanningDateRanges,
                                 startingDay,
                                 updateMeal,
                                 updateLocalStorage,

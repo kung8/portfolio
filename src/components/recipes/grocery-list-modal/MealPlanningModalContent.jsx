@@ -19,19 +19,11 @@ export const MealPlanningModalContent = ({
     setOriginalMealToEdit,
     setMealToEdit,
     setDeleteType,
+    showAllPlanningDateRanges,
     startingDay,
     updateMeal,
     updateLocalStorage,
 }) => {
-    const getDays = () => {
-        // get only a month out
-        const days = [];
-        for (let i = 0; i < 30; i++) {
-            days.push(dayjs().add(i, 'day').format(DATE_FORMAT));
-        }
-        return days;
-    }
-
     const dayMap = {
         sunday: 0,
         monday: 1,
@@ -42,36 +34,86 @@ export const MealPlanningModalContent = ({
         saturday: 6,
     }
 
+    const getWeekStart = (date) => {
+        const candidateStart = dayjs(date).startOf('week').add(dayMap[startingDay], 'day');
+        return dayjs(date).isBefore(candidateStart) ? candidateStart.subtract(1, 'week') : candidateStart;
+    }
+
+    const getDateBounds = () => {
+        const relevantDates = mealPlan.reduce((dates, item) => {
+            if (item?.mealPlanningDateRange?.[0]) {
+                dates.push(dayjs(item.mealPlanningDateRange[0]));
+            }
+            if (item?.mealPlanningDateRange?.[1]) {
+                dates.push(dayjs(item.mealPlanningDateRange[1]));
+            }
+            if (item?.date) {
+                dates.push(dayjs(item.date));
+            }
+            return dates;
+        }, []).filter(date => date.isValid());
+
+        if (relevantDates.length === 0) {
+            return null;
+        }
+
+        return relevantDates.reduce((acc, date) => ({
+            earliest: date.isBefore(acc.earliest) ? date.startOf('day') : acc.earliest,
+            latest: date.isAfter(acc.latest) ? date.startOf('day') : acc.latest,
+        }), {
+            earliest: relevantDates[0].startOf('day'),
+            latest: relevantDates[0].startOf('day'),
+        });
+    }
+
+    const getDays = () => {
+        const defaultStart = dayjs().startOf('day');
+        const defaultEnd = defaultStart.add(29, 'day');
+        const dateBounds = showAllPlanningDateRanges ? getDateBounds() : null;
+        const startDate = dateBounds?.earliest?.isBefore(defaultStart) ? dateBounds.earliest : defaultStart;
+        const endDate = dateBounds?.latest?.isAfter(defaultEnd) ? dateBounds.latest : defaultEnd;
+        const days = [];
+
+        for (let date = startDate; date.isBefore(endDate) || date.isSame(endDate, 'day'); date = date.add(1, 'day')) {
+            days.push(date.format(DATE_FORMAT));
+        }
+
+        return days;
+    }
+
     const getWeeks = () => {
-        // gets 12 weeks out
         const weeks = [];
-        const closestDay = dayjs().startOf('week').add(dayMap[startingDay], 'day').format(DATE_FORMAT);
+        const defaultStart = getWeekStart(dayjs().startOf('day'));
+        const defaultEnd = defaultStart.add(12, 'week').add(6, 'day');
+        const dateBounds = showAllPlanningDateRanges ? getDateBounds() : null;
+        const startDate = dateBounds?.earliest?.isBefore(defaultStart) ? getWeekStart(dateBounds.earliest) : defaultStart;
+        const endDate = dateBounds?.latest?.isAfter(defaultEnd) ? dateBounds.latest : defaultEnd;
 
-        // check to see if we are missing any weeks (i.e. today until the upcoming week's starting day).
-        const today = dayjs().startOf('day');
-        const startDate = dayjs().startOf('week').add(dayMap[startingDay], 'day');
-        const excludesToday = today.isBefore(startDate);
-        const actualStartDay = excludesToday ? dayjs(closestDay).subtract(1, 'week') : dayjs(closestDay);
-
-        for (let i = 0; i < 13; i++) {
+        for (let date = startDate; date.isBefore(endDate) || date.isSame(endDate, 'day'); date = date.add(1, 'week')) {
             weeks.push([
-                dayjs(actualStartDay).add(i, 'week').format(DATE_FORMAT),
-                dayjs(actualStartDay).add(i, 'week').add(6, 'day').format(DATE_FORMAT)
+                date.format(DATE_FORMAT),
+                date.add(6, 'day').format(DATE_FORMAT)
             ]);
         }
+
         return weeks;
     }
 
     const getMonths = () => {
-        // get 6 months out
         const months = [];
-        const closestFirstOfMonth = dayjs().startOf('month').format(DATE_FORMAT);
-        for (let i = 0; i < 7; i++) {
+        const defaultStart = dayjs().startOf('month');
+        const defaultEnd = defaultStart.add(6, 'month').endOf('month');
+        const dateBounds = showAllPlanningDateRanges ? getDateBounds() : null;
+        const startDate = dateBounds?.earliest?.isBefore(defaultStart) ? dateBounds.earliest.startOf('month') : defaultStart;
+        const endDate = dateBounds?.latest?.isAfter(defaultEnd) ? dateBounds.latest.endOf('month') : defaultEnd;
+
+        for (let date = startDate; date.isBefore(endDate) || date.isSame(endDate, 'month'); date = date.add(1, 'month')) {
             months.push([
-                dayjs(closestFirstOfMonth).add(i, 'month').format(DATE_FORMAT),
-                dayjs(closestFirstOfMonth).add(i, 'month').endOf('month').format(DATE_FORMAT)
+                date.format(DATE_FORMAT),
+                date.endOf('month').format(DATE_FORMAT)
             ]);
         }
+
         return months;
     }
 
