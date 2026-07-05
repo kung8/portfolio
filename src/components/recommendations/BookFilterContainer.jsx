@@ -32,6 +32,7 @@ const FilterDropdown = ({
                     {selectedFilters[category] === value && <img className="icon" src={check} alt="check" />}
                 </li>
             ))}
+            onClickOutside={() => setShow(false)}
             show={show}
         />
     )

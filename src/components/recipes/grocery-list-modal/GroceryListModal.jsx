@@ -162,12 +162,12 @@ export const GroceryListModal = ({
             <div className="grocery-list-modal-container">
                 <div
                     id="grocery-list-modal-overlay"
-                    className="overlay"
+                    className="overlay no-blur"
                     onClick={checkLayeredOpenedClassName() ? undefined : handleClose}
                 />
                 <div
                     id="grocery-list-modal-action-overlay"
-                    className={`overlay ${checkLayeredOpenedClassName() ? 'layered-opened' : ''}`}
+                    className={`overlay no-blur ${checkLayeredOpenedClassName() ? 'layered-opened' : ''}`}
                     onClick={checkLayeredOpenedClassName() ?
                         () => {
                             if (isDeleteIngredientModalOpen) closeDeleteIngredientModal();

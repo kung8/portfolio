@@ -9,13 +9,14 @@
 
 .grocery-list-modal {
     background: theme.$aqua;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     width: unquote("min(85vw, 450px)");
     z-index: 3;
     padding: 24px;
     height: 100vh;
+    overscroll-behavior: contain;
 
     @media (hover: none) and (pointer: coarse) {
         height: calc(100vh - 108px);
@@ -70,6 +71,8 @@
         overflow-y: auto;
         scrollbar-width: none;
         padding-bottom: 120px;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
 
         .category-ingredient-container {
             display: flex;
@@ -216,6 +219,8 @@
         overflow-y: auto;
         scrollbar-width: none;
         max-height: 100vh;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
 
         @media (hover: none) and (pointer: coarse) {
             max-height: calc(100vh - 108px);
@@ -398,13 +403,16 @@
     }
 
     .dropdown-container {
-        padding: 4px 8px;
+        padding: 0;
         min-width: 80px;
 
+        .dropdown-selector {
+            padding: 4px 8px;
+        }
+
         .dropdown-options-container {
-            &.open-above {
-                top: -62px;
-            }
+            border-color: theme.$default;
+            box-shadow: none;
         }
 
         .dropdown-label {
@@ -413,13 +421,14 @@
 
         li {
             list-style: none;
-            padding: 8px;
+            padding: 6px 8px;
             cursor: pointer;
             font-size: 12px;
 
-            &:hover {
-                background: theme.$light;
-                color: theme.$aqua;
+            &:hover,
+            &:focus-visible {
+                background: theme.$hover;
+                color: theme.$white;
             }
         }
 
@@ -525,6 +534,8 @@
             overflow-y: auto;
             max-height: 400px;
             row-gap: 0;
+            overscroll-behavior: contain;
+            -webkit-overflow-scrolling: touch;
         }
 
         .setting-container {
@@ -616,6 +627,31 @@
                 width: fit-content;
             }
         }
+
+        .dropdown-container {
+            background: theme.$dark-aqua;
+
+            .dropdown-selector,
+            .dropdown-options-container,
+            .dropdown-options-container li {
+                background: theme.$dark-aqua;
+            }
+
+            .dropdown-options-container li {
+                &:hover,
+                &:focus-visible {
+                    background: theme.$hover;
+                    color: theme.$white;
+                }
+            }
+        }
+
+        .dropdown-container {
+            .dropdown-options-container {
+                border-color: theme.$default;
+                box-shadow: none;
+            }
+        }
     }
 
     .modal-content {
@@ -700,6 +736,8 @@
         max-height: 150px;
         overflow-y: auto;
         width: 100%;
+        border: 1.5px solid theme.$default;
+        border-top: none;
 
         &.is-open {
             display: block;
@@ -709,10 +747,15 @@
         .dropdown-list-item {
             padding: 6px 12px;
             background: theme.$aqua;
-            border: 1.5px solid theme.$default;
+            border: none;
             cursor: pointer;
-            border-top: none;
             font-size: 12px;
+
+            &:hover,
+            &:focus-visible {
+                background: theme.$hover;
+                color: theme.$white;
+            }
         }
     }
 }

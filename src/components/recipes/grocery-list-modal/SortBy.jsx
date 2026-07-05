@@ -18,6 +18,7 @@ export const SortBy = ({ options, setSortBy, sortBy }) => {
                     }}
                 >{label}</li>
             ))}
+            onClickOutside={() => setShow(false)}
             openAbove
             optionsCount={options.length}
             show={show}

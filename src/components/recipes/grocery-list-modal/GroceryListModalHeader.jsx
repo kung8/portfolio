@@ -29,6 +29,7 @@ export const GroceryListModalHeader = ({
                             }}
                         >{label}</li>
                     ))}
+                    onClickOutside={() => setShowViewOptions(false)}
                     show={showViewOptions}
                 />
                 <img src={settingsBtn} alt="settings" className="settings-img" onClick={openSettingsModal} />

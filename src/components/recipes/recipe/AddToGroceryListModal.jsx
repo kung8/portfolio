@@ -66,6 +66,7 @@ export const AddToGroceryListModal = ({
                                 setIsTypeDropdownOpen(false);
                             }}
                             label={type || 'Meal Type'}
+                            onClickOutside={() => setIsTypeDropdownOpen(false)}
                             options={MEAL_PLAN_MEAL_TYPES}
                         />
                         <RecipeDateInput
@@ -85,6 +86,7 @@ export const AddToGroceryListModal = ({
                             initialDate={new Date(date || mealPlanningDateRange?.[0] || mealPlanningDateRange?.[1] || today)}
                             isCalendarOpen={isCalendarOpen}
                             label={date ? dayjs(date).format(READABLE_SHORT_DATE) : '(Optional) Set when you need it by...'}
+                            onClickOutside={() => setIsCalendarOpen(false)}
                         />
                         <div className="edit-recipe-date-range-container">
                             <RecipeDateInput
@@ -115,6 +117,7 @@ export const AddToGroceryListModal = ({
                                     dayjs(mealPlanningDateRange[0]).format(READABLE_SHORT_DATE) :
                                     'Starting range...'
                                 }
+                                onClickOutside={() => setIsStartMealPlanningCalendarOpen(false)}
                             />
                             <RecipeDateInput
                                 date={mealPlanningDateRange?.[1]}
@@ -144,6 +147,7 @@ export const AddToGroceryListModal = ({
                                     dayjs(mealPlanningDateRange[1]).format(READABLE_SHORT_DATE) :
                                     'Ending range...'
                                 }
+                                onClickOutside={() => setIsEndMealPlanningCalendarOpen(false)}
                             />
                         </div>
                         <RecipeDropdownInput
@@ -155,6 +159,7 @@ export const AddToGroceryListModal = ({
                                 setIsVendorDropdownOpen(false);
                             }}
                             label={vendor || 'Vendor (Optional)'}
+                            onClickOutside={() => setIsVendorDropdownOpen(false)}
                             options={vendorOptions}
                         />
                     </ModalBody>
