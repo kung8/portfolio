@@ -1,5 +1,7 @@
 const schiacciata0 = '../assets/Products/schiacciata-0.jpeg';
 const schiacciata1 = '../assets/Products/schiacciata-1.jpeg';
+const schiacciata2 = '../assets/Products/schiacciata-2.jpeg';
+const schiacciata3 = '../assets/Products/schiacciata-3.jpeg';
 
 const {
     CATEGORIES,
@@ -22,7 +24,7 @@ const SANDWICH_FILLING = 'Sandwich Filling';
 module.exports = {
     cardName: 'Schiacciata',
     name: 'Schiacciata',
-    img: schiacciata1,
+    img: schiacciata2,
     available: true,
     recommended: true,
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
@@ -61,7 +63,7 @@ module.exports = {
         },
         { step: `Optionally heat the porchetta in the oven if you want it warmed up.`, section: SECTIONS.REHEAT },
         { step: `Assemble the sandwich with your favorite ingredients.`, section: SECTIONS.ASSEMBLE },
-        { step: `Enjoy this delicious slice of Italy!`, section: SECTIONS.SERVE },
+        { step: `Enjoy this delicious slice of Italy!`, section: SECTIONS.SERVE, img: [schiacciata1, schiacciata3] },
     ],
     notes: [
         { note: `The best schiacciata I had was in Manarola at a sandwich shop called "Il Salumaio". I constructed it from the "Make your 'Schiacciata'" menu: Hot porchetta, di parmigiano cream, pecorinio semistagionato, and peperoni grigliati.`, img: schiacciata0 },
