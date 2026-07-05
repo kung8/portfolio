@@ -491,7 +491,18 @@
 
                     &>div {
                         width: 50%;
-                        position: unset;
+                        position: relative;
+
+                        .react-calendar {
+                            max-width: 350px;
+                        }
+                    }
+
+                    &>div:last-child {
+                        .react-calendar {
+                            left: auto;
+                            right: -1.5px;
+                        }
                     }
                 }
 
@@ -680,6 +691,11 @@
 
         .edit-recipe-date-input {
             position: relative;
+
+            .react-calendar {
+                left: -1.5px;
+                top: calc(100% + 1.5px);
+            }
 
             .edit-recipe-date-label-container {
                 display: flex;
