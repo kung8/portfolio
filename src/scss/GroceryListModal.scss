@@ -751,24 +751,13 @@
         position: absolute;
         max-height: 150px;
         overflow-y: auto;
-        overflow-x: hidden;
         width: 100%;
         border: 1.5px solid theme.$default;
         border-top: none;
-        background: theme.$aqua;
-        margin: 0;
-        padding: 0;
-        overscroll-behavior: contain;
-        overscroll-behavior-y: none;
-        -webkit-overflow-scrolling: auto;
-        contain: paint;
-        isolation: isolate;
-        transform: translateZ(0);
-        backface-visibility: hidden;
 
         &.is-open {
             display: block;
-            z-index: 10;
+            z-index: 1;
         }
 
         .dropdown-list-item {
@@ -777,7 +766,6 @@
             border: none;
             cursor: pointer;
             font-size: 12px;
-            transform: translateZ(0);
 
             &:hover,
             &:focus-visible {
