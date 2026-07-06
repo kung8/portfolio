@@ -21,6 +21,7 @@ export const RecipeSortFilter = ({ groupedBy, setGroupedBy }) => {
                         }}
                     >{label}</li>
                 ))}
+                onClickOutside={() => setShow(false)}
                 show={show}
             />
         </div>

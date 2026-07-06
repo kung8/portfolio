@@ -78,6 +78,7 @@ export const EditGroceryListItemModal = ({
                                 setIsCategoryDropdownOpen(false);
                             }}
                             label={itemToEdit.category}
+                            onClickOutside={() => setIsCategoryDropdownOpen(false)}
                             options={categories}
                         />
                         <input className="edit-recipe-name-input" placeholder="(Optional) Add what this is needed for..." value={itemToEdit?.recipeName} onChange={(e) => setItemToEdit({ ...itemToEdit, recipeName: e.target.value })} />
@@ -102,6 +103,7 @@ export const EditGroceryListItemModal = ({
                             initialDate={new Date(mealPlanningDateRange?.[0] || mealPlanningDateRange?.[1] || date || today)}
                             isCalendarOpen={isCalendarOpen}
                             label={date ? dayjs(date).format(READABLE_SHORT_DATE) : '(Optional) Need by date...'}
+                            onClickOutside={() => setIsCalendarOpen(false)}
                         />
                         <div className="edit-recipe-date-range-container">
                             <RecipeDateInput
@@ -132,6 +134,7 @@ export const EditGroceryListItemModal = ({
                                 label={mealPlanningDateRange?.[0] ?
                                     dayjs(mealPlanningDateRange[0]).format(READABLE_SHORT_DATE) :
                                     'Starting range...'}
+                                onClickOutside={() => setIsStartMealPlanningCalendarOpen(false)}
                             />
                             <RecipeDateInput
                                 date={mealPlanningDateRange?.[1]}
@@ -158,6 +161,7 @@ export const EditGroceryListItemModal = ({
                                 label={mealPlanningDateRange?.[1] ?
                                     dayjs(mealPlanningDateRange[1]).format(READABLE_SHORT_DATE) :
                                     'Ending range...'}
+                                onClickOutside={() => setIsEndMealPlanningCalendarOpen(false)}
                             />
                         </div>
                         <RecipeDropdownInput
@@ -169,6 +173,7 @@ export const EditGroceryListItemModal = ({
                                 setIsVendorDropdownOpen(false);
                             }}
                             label={vendor || 'Vendor (Optional)'}
+                            onClickOutside={() => setIsVendorDropdownOpen(false)}
                             options={vendorOptions}
                         />
                     </ModalBody>
