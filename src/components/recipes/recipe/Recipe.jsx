@@ -191,7 +191,7 @@ export const Recipe = ({ match }) => {
     const { handleClose: handleAddIngredientsToGroceryListModalClose, handleOpen: handleAddIngredientsToGroceryListModalOpen } = handleModalClass('.add-ingredients-to-grocery-list-modal', 'add-ingredients-to-grocery-list-modal-overlay');
 
     // add supplies to grocery list modal
-    const { handleClose: handleAddSuppliesToGroceryListModalClose, handleOpen: handleAddSuppliesToGroceryListModalOpen } = handleModalClass('.add-supplies-to-grocery-list-modal', 'add-ingredients-to-grocery-list-modal-overlay');
+    const { handleClose: handleAddSuppliesToGroceryListModalClose, handleOpen: handleAddSuppliesToGroceryListModalOpen } = handleModalClass('.add-supplies-to-grocery-list-modal', 'add-supplies-to-grocery-list-modal-overlay');
 
     // handle settings modal
     const { handleClose: handleSettingsModalClose, handleOpen: handleSettingsModalOpen } = handleModalClass('.settings-modal', 'settings-modal-action-overlay');
