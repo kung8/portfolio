@@ -8,16 +8,13 @@
 
     .modal-tray {
         background: theme.$aqua;
-        position: fixed;
+        position: absolute;
         top: 0;
         width: unquote("min(95vw, 300px)");
         z-index: 3;
         left: -100%;
         padding: 24px;
         height: 100vh;
-        overflow-y: auto;
-        overscroll-behavior: contain;
-        -webkit-overflow-scrolling: touch;
         @media (hover: none) and (pointer: coarse) {
             height: calc(100vh - 108px);
         }

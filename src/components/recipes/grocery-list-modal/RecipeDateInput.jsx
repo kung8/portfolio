@@ -1,5 +1,3 @@
-import { useEffect, useRef } from 'react';
-
 import dayjs from 'dayjs';
 import Calendar from 'react-calendar';
 
@@ -16,32 +14,12 @@ export const RecipeDateInput = ({
     initialDate,
     isCalendarOpen,
     label,
-    onClickOutside,
     selectRange,
 }) => {
     const today = dayjs();
-    const dateInputRef = useRef(null);
-
-    useEffect(() => {
-        if (!isCalendarOpen || !onClickOutside) {
-            return undefined;
-        }
-
-        const handleDocumentMouseDown = (event) => {
-            if (!dateInputRef.current?.contains(event.target)) {
-                onClickOutside();
-            }
-        };
-
-        document.addEventListener('mousedown', handleDocumentMouseDown);
-
-        return () => {
-            document.removeEventListener('mousedown', handleDocumentMouseDown);
-        };
-    }, [isCalendarOpen, onClickOutside]);
 
     return (
-        <div ref={dateInputRef} className="edit-recipe-date-input">
+        <div className="edit-recipe-date-input">
             <p className="edit-recipe-date-label-container">
                 <span
                     className={`edit-recipe-date-label ${hasDate ? '' : 'is-default'}`}

@@ -51,7 +51,6 @@ export const EditMealPlanModal = ({
                                 setIsTypeDropdownOpen(false);
                             }}
                             label={mealToEdit.type}
-                            onClickOutside={() => setIsTypeDropdownOpen(false)}
                             options={MEAL_PLAN_MEAL_TYPES}
                         />
                         <RecipeDateInput
@@ -75,7 +74,6 @@ export const EditMealPlanModal = ({
                             initialDate={new Date(date || mealPlanningDateRange?.[0] || mealPlanningDateRange?.[1] || today)}
                             isCalendarOpen={isCalendarOpen}
                             label={date ? dayjs(date).format(READABLE_SHORT_DATE) : '(Optional) Need by date...'}
-                            onClickOutside={() => setIsCalendarOpen(false)}
                         />
                         <div className="edit-recipe-date-range-container">
                             <RecipeDateInput
@@ -111,7 +109,6 @@ export const EditMealPlanModal = ({
                                     dayjs(mealPlanningDateRange[0]).format(READABLE_SHORT_DATE) :
                                     'Starting range...'
                                 }
-                                onClickOutside={() => setIsStartMealPlanningCalendarOpen(false)}
                             />
                             <RecipeDateInput
                                 date={mealPlanningDateRange[1]}
@@ -146,7 +143,6 @@ export const EditMealPlanModal = ({
                                     dayjs(mealPlanningDateRange[1]).format(READABLE_SHORT_DATE) :
                                     'Ending range...'
                                 }
-                                onClickOutside={() => setIsEndMealPlanningCalendarOpen(false)}
                             />
                         </div>
                     </ModalBody>

@@ -237,6 +237,7 @@ export const SettingsModal = ({ closeModal }) => {
                                 >{option}</li>
                             ))}
                             onClickOutside={() => setShowDefaultVendorDropdown(false)}
+                            openAbove
                             optionsCount={localVendorOptions.length}
                             show={showDefaultVendorDropdown}
                         />
@@ -259,6 +260,7 @@ export const SettingsModal = ({ closeModal }) => {
                                 >{option}</li>
                             ))}
                             onClickOutside={() => setShowRecipeFontSizeDropdown(false)}
+                            openAbove
                             optionsCount={fontSizeOptions.length}
                             show={showRecipeFontSizeDropdown}
                         />
