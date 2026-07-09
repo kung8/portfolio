@@ -13,7 +13,7 @@ const {
     TYPES,
     YIELD_UNITS
 } = require('./constants');
-const { LEMON_JUICE, SAUCEPAN, STOVE, STRAWBERRY, WHITE_SUGAR } = require('./ingredients');
+const { SALT, SAUCEPAN, STOVE, STRAWBERRY, SYRUP } = require('./ingredients');
 
 const COMPOTE_SECTION = 'Compote';
 const COOK_COMPOTE = 'Cook Compote';
@@ -34,17 +34,12 @@ module.exports = {
     cookTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        {
-            label: 'Own Recipe',
-            link: null,
-            authors: ['Caroline Vance'],
-            finder: 'Caroline Vance',
-        }
+        { label: 'Fruit Compote', link: 'https://cookieandkate.com/simple-fruit-compote-recipe/', authors: ['Kathryne Taylor'], finder: 'Kevin Ung' }
     ],
     ingredients: [
-        { ...STRAWBERRY, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'or preferred fruit', section: COMPOTE_SECTION },
-        { ...WHITE_SUGAR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: COMPOTE_SECTION },
-        { ...LEMON_JUICE, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: COMPOTE_SECTION },
+        { ...STRAWBERRY, amount: 1, unit: INGREDIENT_UNITS.POUND, additionalDetails: '', section: COMPOTE_SECTION },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.DASH, additionalDetails: '', section: COMPOTE_SECTION },
+        { ...SYRUP, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: COMPOTE_SECTION },
     ],
     appliances: [
         STOVE,
@@ -53,9 +48,11 @@ module.exports = {
         SAUCEPAN,
     ],
     directions: [
-        { step: `Over medium heat, combine all the ingredients in a saucepan.`, section: COOK_COMPOTE },
-        { step: `Bring to a boil stirring occasionally.`, section: COOK_COMPOTE },
-        { step: `Once the fruit breaks down, turn the heat to low, and let simmer until the sauce is thick.`, section: COOK_COMPOTE },
+        { step: `Over medium-high heat, combine all the ingredients in a saucepan.`, section: COOK_COMPOTE },
+        { step: `Bring to a boil stirring occasionally (about 5 minutes for fresh fruits or 10 minutes for frozen fruits).`, section: COOK_COMPOTE },
+        { step: `Reduce to medium heat. Mash, if needed, to get a smoother consistency.`, section: COOK_COMPOTE },
+        { step: `Let it simmer, thicken and reduce in half (about 5 minutes).`, section: COOK_COMPOTE },
+        { step: `Remove from heat. Taste and adjust the sweetness.`, section: COOK_COMPOTE },
         { step: `Let it cool before serving.`, section: SECTIONS.SERVE },
     ],
     notes: [
