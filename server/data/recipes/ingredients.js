@@ -673,6 +673,7 @@ const INGREDIENTS = {
         STOCK_PAN: { name: 'stock pan', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         SUSHI_MAT: { name: 'sushi mat', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         TALL_NARROW_POT: { name: 'tall, narrow pot', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
+        TART_PAN: { name: 'tart pan', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         THERMOMETER: { name: 'thermometer', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         TONGS: { name: 'tongs', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         TOOTHPICK: { name: 'toothpick', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
