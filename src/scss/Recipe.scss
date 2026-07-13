@@ -402,6 +402,34 @@
             }
         }
 
+        .recipe-updated-at-container {
+            margin-bottom: 24px;
+
+            .recipe-updated-at-label {
+                color: theme.$darkgrey;
+
+                &.font-size-extra-large {
+                    font-size: 24px;
+                }
+
+                &.font-size-large {
+                    font-size: 20px;
+                }
+
+                &.font-size-medium {
+                    font-size: 18px;
+                }
+
+                &.font-size-small {
+                    font-size: 16px;
+                }
+
+                &.font-size-extra-small {
+                    font-size: 14px;
+                }
+            }
+        }
+
         .recipe-ingredients-label-container {
             display: flex;
             justify-content: space-between;
