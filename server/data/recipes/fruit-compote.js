@@ -1,4 +1,5 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const compote1 = '../assets/Products/fruit-compote-1.jpeg';
+const compote2 = '../assets/Products/fruit-compote-2.jpeg';
 
 const {
     CATEGORIES,
@@ -19,12 +20,11 @@ const COMPOTE_SECTION = 'Compote';
 const COOK_COMPOTE = 'Cook Compote';
 
 module.exports = {
-    wip: true,
     cardName: 'Fruit Compote',
     name: 'Fruit Compote',
-    img: '',
+    img: compote2,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.SAUCE, CATEGORIES.TOPPING],
     genre: [GENRES.FRENCH],
     method: [METHODS.SIMMER],
@@ -54,7 +54,7 @@ module.exports = {
     ],
     directions: [
         { step: `Over medium heat, combine all the ingredients in a saucepan.`, section: COOK_COMPOTE },
-        { step: `Bring to a boil stirring occasionally.`, section: COOK_COMPOTE },
+        { step: `Bring to a boil stirring occasionally.`, section: COOK_COMPOTE, img: compote1 },
         { step: `Once the fruit breaks down, turn the heat to low, and let simmer until the sauce is thick.`, section: COOK_COMPOTE },
         { step: `Let it cool before serving.`, section: SECTIONS.SERVE },
     ],

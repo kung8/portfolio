@@ -31,7 +31,7 @@ module.exports = {
     yields: { amount: 8, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 15, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 40, unit: TIME_UNITS.MINUTE },
-    waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 3.5, unit: TIME_UNITS.HOUR },
     websites: [
         { label: 'Fruit Tart', link: 'https://preppykitchen.com/fruit-tart/#recipe', authors: ['John Kanell'], finder: 'Justin Ung' }
     ],
