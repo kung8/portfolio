@@ -1,7 +1,12 @@
+const pie1 = '../assets/Products/empadao-de-frango-1.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BLACK_PEPPER, BOWL, CHICKEN_BREAST, CHICKEN_BROTH, CORN, EGG_YOLK, FORK, GARLIC, GREEN_PEA, HOT_SAUCE, LARGE_PAN, MILK, MIXING_BOWL, OLIVE_OIL, OVEN, PARSLEY, ROLLING_PIN, ROMA_TOMATO, SALT, SPRINGFORM_PAN, STOVE, TOMATO_SAUCE, UNSALTED_BUTTER, WATER, YELLOW_ONION } = require('./ingredients');
 
-const CHICKEN_FILLING = 'Chicken Filling';
+const CHICKEN_SECTION = 'Chicken';
+const FRAGRANCES_AND_VEGGIES_SECTION = 'Fragrances and Veggies';
+const LIQUIDS_SECTION = 'Liquids';
+const SPICES_AND_HERBS_SECTION = 'Spices';
 
 const MAKE_CHICKEN_FILLING = 'Make Chicken Filling';
 const FORM_PIE = 'Form Pie';
@@ -31,23 +36,24 @@ module.exports = {
         }
     ],
     ingredients: [
-        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_FILLING },
-        { ...YELLOW_ONION, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'finely chopped', section: CHICKEN_FILLING },
-        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: CHICKEN_FILLING },
-        { ...ROMA_TOMATO, amount: 2, unit: '', additionalDetails: 'chopped', section: CHICKEN_FILLING },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: FRAGRANCES_AND_VEGGIES_SECTION },
+        { ...YELLOW_ONION, amount: 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'finely chopped', section: FRAGRANCES_AND_VEGGIES_SECTION },
+        { ...GARLIC, amount: 2, unit: INGREDIENT_UNITS.CLOVE, additionalDetails: 'minced', section: FRAGRANCES_AND_VEGGIES_SECTION },
+        { ...ROMA_TOMATO, amount: 2, unit: '', additionalDetails: 'chopped', section: FRAGRANCES_AND_VEGGIES_SECTION },
 
-        { ...CHICKEN_BREAST, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cooked and shredded', section: CHICKEN_FILLING },
-        { ...CORN, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHICKEN_FILLING },
-        { ...GREEN_PEA, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHICKEN_FILLING },
-        { ...TOMATO_SAUCE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHICKEN_FILLING },
-        { ...HOT_SAUCE, amount: 2, unit: INGREDIENT_UNITS.DASH, additionalDetails: '', section: CHICKEN_FILLING },
+        { ...CHICKEN_BREAST, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cooked and shredded', section: CHICKEN_SECTION },
+        { ...CORN, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...GREEN_PEA, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...TOMATO_SAUCE, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHICKEN_SECTION },
+        { ...HOT_SAUCE, amount: 2, unit: INGREDIENT_UNITS.DASH, additionalDetails: '', section: CHICKEN_SECTION },
 
-        { ...CHICKEN_BROTH, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHICKEN_FILLING },
-        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: CHICKEN_FILLING },
-        { ...MILK, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHICKEN_FILLING },
-        { ...PARSLEY, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: CHICKEN_FILLING },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: CHICKEN_FILLING },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: CHICKEN_FILLING },
+        { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: LIQUIDS_SECTION },
+        { ...MILK, amount: 1 / 3, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: LIQUIDS_SECTION },
+        { ...CHICKEN_BROTH, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: LIQUIDS_SECTION },
+
+        { ...PARSLEY, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SPICES_AND_HERBS_SECTION },
+        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SPICES_AND_HERBS_SECTION },
+        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SPICES_AND_HERBS_SECTION },
 
         { ...ALL_PURPOSE_FLOUR, amount: 5, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CRUST },
         { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.CRUST },
@@ -73,13 +79,13 @@ module.exports = {
         { step: `Over medium heat, add olive oil to a large pan.`, section: MAKE_CHICKEN_FILLING },
         { step: `Add onion and garlic. Saute until translucent (about 2 minutes).`, section: MAKE_CHICKEN_FILLING },
         { step: `Add tomatoes. Cook until softened.`, section: MAKE_CHICKEN_FILLING },
-        { step: `Add cooked shredded chicken, corn, green peas, tomato sauce and hot sauce.`, section: MAKE_CHICKEN_FILLING },
+        { step: `Add the "${CHICKEN_SECTION}" section ingredients.`, section: MAKE_CHICKEN_FILLING },
         { step: `In a bowl, combine flour and milk. Let the flour dissolve.`, section: MAKE_CHICKEN_FILLING },
-        { step: `Add broth and flour mixture.`, section: MAKE_CHICKEN_FILLING },
+        { step: `Add the "${LIQUIDS_SECTION}" section ingredients.`, section: MAKE_CHICKEN_FILLING },
         { step: `Lower heat to medium-low. Cook, stirring often, until liquid has reduced and is creamy and thick (about 10 minutes).`, section: MAKE_CHICKEN_FILLING },
         { step: `Add parsley. Stir.`, section: MAKE_CHICKEN_FILLING },
         { step: `Taste and adjust with salt and pepper.`, section: MAKE_CHICKEN_FILLING },
-        { step: `Let it completely cool before filling it in pie.`, section: MAKE_CHICKEN_FILLING },
+        { step: `Let it completely cool before filling it in pie.`, section: MAKE_CHICKEN_FILLING, img: pie1 },
 
         { step: `In a mixing bowl, combine flour and salt.`, section: SECTIONS.MAKE_CRUST },
         { step: `Add egg yolks. Combine.`, section: SECTIONS.MAKE_CRUST },
