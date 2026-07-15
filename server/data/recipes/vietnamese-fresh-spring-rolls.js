@@ -24,6 +24,8 @@ module.exports = {
     img: rolls9,
     available: true,
     recommended: true,
+    createdAt: '12/09/2024 20:50:58',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     method: [METHODS.WRAP, METHODS.BOIL, METHODS.PAN_FRY],

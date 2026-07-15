@@ -28,6 +28,8 @@ module.exports = {
     img: focaccia2,
     available: true,
     recommended: true,
+    createdAt: '06/07/2026 23:25:41',
+    modifiedAt: '07/04/2026 20:12:36',
     category: [CATEGORIES.APPETIZER, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],

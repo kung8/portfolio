@@ -22,6 +22,8 @@ module.exports = {
     img: onigiri6,
     available: true,
     recommended: true,
+    createdAt: '09/29/2025 23:35:32',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
     genre: [GENRES.ASIAN, GENRES.JAPANESE],
     method: [METHODS.WRAP],

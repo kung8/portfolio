@@ -14,6 +14,8 @@ module.exports = {
     img: olio3,
     available: true,
     recommended: true,
+    createdAt: '06/06/2026 21:07:13',
+    modifiedAt: '06/23/2026 22:25:30',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.SAUTE],

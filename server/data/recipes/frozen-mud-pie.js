@@ -23,6 +23,8 @@ module.exports = {
     img: pie8,
     available: true,
     recommended: true,
+    createdAt: '05/18/2025 16:43:21',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.FREEZE],

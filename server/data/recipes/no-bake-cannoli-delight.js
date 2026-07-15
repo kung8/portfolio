@@ -25,6 +25,8 @@ module.exports = {
     img: cannoli8,
     available: true,
     recommended: true,
+    createdAt: '05/11/2025 18:30:36',
+    modifiedAt: '06/02/2026 21:27:17',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.ITALIAN],
     method: [METHODS.MIX, METHODS.CHILLED],

@@ -16,6 +16,8 @@ module.exports = {
     img: carbonara4,
     available: true,
     recommended: true,
+    createdAt: '12/11/2024 20:00:40',
+    modifiedAt: '02/22/2026 19:50:31',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],

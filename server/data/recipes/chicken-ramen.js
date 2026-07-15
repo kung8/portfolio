@@ -40,6 +40,8 @@ module.exports = {
     img: ramen6,
     available: true,
     recommended: true,
+    createdAt: '06/02/2024 20:34:42',
+    modifiedAt: '05/31/2026 21:33:48',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.JAPANESE, GENRES.ASIAN],
     method: [METHODS.PAN_FRY, METHODS.ROAST, METHODS.SIMMER],

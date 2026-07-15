@@ -23,6 +23,8 @@ module.exports = {
     img: pesto3,
     available: true,
     recommended: true,
+    createdAt: '08/02/2024 21:05:53',
+    modifiedAt: '05/02/2026 14:50:16',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BLEND],

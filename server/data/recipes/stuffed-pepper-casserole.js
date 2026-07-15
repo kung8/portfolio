@@ -15,6 +15,8 @@ module.exports = {
     img: casserole3,
     available: true,
     recommended: true,
+    createdAt: '09/13/2025 19:47:18',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

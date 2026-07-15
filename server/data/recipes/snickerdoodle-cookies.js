@@ -30,6 +30,8 @@ module.exports = {
     img: cookie3,
     available: true,
     recommended: true,
+    createdAt: '05/11/2024 12:03:40',
+    modifiedAt: '06/30/2026 22:06:56',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],

@@ -16,6 +16,8 @@ module.exports = {
     img: shrimp6,
     available: true,
     recommended: true,
+    createdAt: '05/24/2025 18:47:13',
+    modifiedAt: '05/02/2026 14:24:14',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.DEEP_FRY],

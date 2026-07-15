@@ -20,6 +20,8 @@ module.exports = {
     img: choy8,
     available: true,
     recommended: false,
+    createdAt: '03/29/2025 00:02:06',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],

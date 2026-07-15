@@ -10,6 +10,8 @@ module.exports = {
     img: ham1,
     available: true,
     recommended: true,
+    createdAt: '12/27/2024 23:11:08',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.HAWAIIAN],
     method: [METHODS.BAKE],

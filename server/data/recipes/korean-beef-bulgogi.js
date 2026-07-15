@@ -33,6 +33,8 @@ module.exports = {
     img: bulgogi3,
     available: true,
     recommended: true,
+    createdAt: '02/04/2024 15:23:00',
+    modifiedAt: '02/13/2026 11:33:34',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.KOREAN, GENRES.ASIAN],
     method: [METHODS.MARINADE, METHODS.PAN_FRY],

@@ -28,6 +28,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '02/28/2026 19:09:34',
+    modifiedAt: '02/28/2026 19:09:34',
     category: [CATEGORIES.SNACK, CATEGORIES.DESSERT],
     genre: [GENRES.GREEK, GENRES.MEDITERRANEAN, GENRES.MIDDLE_EASTERN],
     method: [METHODS.BAKE, METHODS.SIMMER],

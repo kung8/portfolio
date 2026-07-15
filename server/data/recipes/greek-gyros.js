@@ -20,6 +20,8 @@ module.exports = {
     img: gryo8,
     available: true,
     recommended: true,
+    createdAt: '08/05/2025 21:53:42',
+    modifiedAt: '11/20/2025 19:30:13',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.GREEK, GENRES.MEDITERRANEAN],
     method: [METHODS.PAN_FRY],

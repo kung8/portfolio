@@ -25,6 +25,8 @@ module.exports = {
     img: compote2,
     available: true,
     recommended: true,
+    createdAt: '06/07/2026 01:43:24',
+    modifiedAt: '07/12/2026 19:47:33',
     category: [CATEGORIES.SAUCE, CATEGORIES.TOPPING],
     genre: [GENRES.FRENCH],
     method: [METHODS.SIMMER],

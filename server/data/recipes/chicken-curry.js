@@ -12,6 +12,8 @@ module.exports = {
     img: curry2,
     available: true,
     recommended: true,
+    createdAt: '07/06/2025 18:56:07',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     method: [METHODS.SIMMER, METHODS.STIR_FRY],

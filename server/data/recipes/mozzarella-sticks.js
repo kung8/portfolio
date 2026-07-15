@@ -17,6 +17,8 @@ module.exports = {
     img: sticks5,
     available: true,
     recommended: true,
+    createdAt: '09/13/2025 22:01:33',
+    modifiedAt: '12/21/2025 19:46:07',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],

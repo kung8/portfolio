@@ -9,6 +9,8 @@ module.exports = {
     img: '',
     available: false,
     recommended: false,
+    createdAt: '07/16/2025 18:20:58',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

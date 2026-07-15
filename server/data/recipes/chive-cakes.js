@@ -31,6 +31,8 @@ module.exports = {
     img: cakes19,
     available: true,
     recommended: false,
+    createdAt: '12/28/2024 20:23:40',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.THAI],
     method: [METHODS.PAN_FRY],

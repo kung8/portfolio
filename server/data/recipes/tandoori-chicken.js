@@ -20,6 +20,8 @@ module.exports = {
     img: tandoori8,
     available: true,
     recommended: true,
+    createdAt: '12/17/2024 20:38:49',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.INDIAN],
     method: [METHODS.BAKE],

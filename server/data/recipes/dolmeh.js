@@ -17,6 +17,8 @@ module.exports = {
     img: dolmeh5,
     available: true,
     recommended: false,
+    createdAt: '08/08/2025 23:08:52',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.MIDDLE_EASTERN, GENRES.PERSIAN, GENRES.IRANIAN],
     method: [METHODS.SAUTE, METHODS.SIMMER],

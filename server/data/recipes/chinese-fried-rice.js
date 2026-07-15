@@ -12,6 +12,8 @@ module.exports = {
     img: rice1,
     available: true,
     recommended: true,
+    createdAt: '01/04/2025 23:21:32',
+    modifiedAt: '06/04/2026 19:57:51',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.CHINESE],
     method: [METHODS.STIR_FRY],

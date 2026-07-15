@@ -20,6 +20,8 @@ module.exports = {
     img: gravy5,
     available: true,
     recommended: false,
+    createdAt: '12/11/2024 08:12:48',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.SAUCE],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER],

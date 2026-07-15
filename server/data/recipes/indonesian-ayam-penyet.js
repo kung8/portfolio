@@ -22,6 +22,8 @@ module.exports = {
     img: penyet5,
     available: true,
     recommended: false,
+    createdAt: '05/23/2025 00:24:03',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.INDONESIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],

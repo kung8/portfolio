@@ -19,6 +19,8 @@ module.exports = {
     img: oyakodon2,
     available: true,
     recommended: true,
+    createdAt: '12/28/2024 13:39:44',
+    modifiedAt: '06/04/2026 18:43:00',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.JAPANESE],
     method: [METHODS.PAN_FRY],

@@ -18,6 +18,8 @@ module.exports = {
     img: mango8,
     available: true,
     recommended: true,
+    createdAt: '12/10/2024 23:29:20',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.THAI, GENRES.ASIAN],
     method: [METHODS.STEAM],

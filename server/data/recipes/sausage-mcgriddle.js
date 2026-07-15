@@ -19,6 +19,8 @@ module.exports = {
     img: mcgriddle6,
     available: true,
     recommended: true,
+    createdAt: '05/18/2025 19:21:24',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],

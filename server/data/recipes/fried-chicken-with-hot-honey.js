@@ -14,6 +14,8 @@ module.exports = {
     img: honey6,
     available: true,
     recommended: true,
+    createdAt: '11/16/2025 21:39:47',
+    modifiedAt: '11/18/2025 00:39:29',
     category: [CATEGORIES.DINNER],
     genre: [GENRES.SOUTHERN],
     method: [METHODS.FRY],

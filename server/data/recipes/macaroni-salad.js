@@ -32,6 +32,8 @@ module.exports = {
     img: salad5,
     available: true,
     recommended: true,
+    createdAt: '02/04/2024 15:23:00',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],

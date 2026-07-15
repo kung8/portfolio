@@ -18,6 +18,8 @@ module.exports = {
     img: puffs8,
     available: true,
     recommended: true,
+    createdAt: '10/19/2024 02:31:33',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH, GENRES.ITALIAN],
     method: [METHODS.BAKE],

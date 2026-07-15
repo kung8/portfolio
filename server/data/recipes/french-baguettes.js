@@ -19,6 +19,8 @@ module.exports = {
     img: baguette9,
     available: true,
     recommended: true,
+    createdAt: '12/08/2024 22:54:19',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],

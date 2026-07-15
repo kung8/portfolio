@@ -9,6 +9,8 @@ module.exports = {
     img: '',
     available: false,
     recommended: false,
+    createdAt: '12/15/2024 10:08:17',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
     genre: [GENRES.SPANISH],
     method: [METHODS.PAN_FRY,METHODS.SIMMER],

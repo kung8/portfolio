@@ -29,6 +29,8 @@ module.exports = {
     img: roll4,
     available: true,
     recommended: true,
+    createdAt: '09/13/2025 19:07:31',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.CHINESE],
     method: [METHODS.DEEP_FRY],

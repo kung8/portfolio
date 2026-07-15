@@ -20,6 +20,8 @@ module.exports = {
     img: ragu9,
     available: true,
     recommended: false,
+    createdAt: '12/14/2024 15:19:38',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.SIMMER],

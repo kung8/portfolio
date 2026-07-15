@@ -16,6 +16,8 @@ module.exports = {
     img: enchiladas8,
     available: true,
     recommended: false,
+    createdAt: '12/13/2024 00:51:24',
+    modifiedAt: '06/01/2026 22:31:54',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.MEXICAN],
     method: [METHODS.BAKE],

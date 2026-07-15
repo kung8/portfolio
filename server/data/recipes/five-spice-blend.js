@@ -14,6 +14,8 @@ module.exports = {
     img: blend2,
     available: true,
     recommended: false,
+    createdAt: '02/04/2025 23:19:18',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.TOPPING],
     genre: [GENRES.CHINESE],
     method: [METHODS.BLEND],

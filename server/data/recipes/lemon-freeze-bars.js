@@ -9,6 +9,8 @@ module.exports = {
     img: '',
     available: false,
     recommended: false,
+    createdAt: '06/28/2025 17:12:34',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.FREEZE],

@@ -24,6 +24,8 @@ module.exports = {
     img: pie8,
     available: true,
     recommended: true,
+    createdAt: '06/13/2026 23:37:35',
+    modifiedAt: '07/14/2026 18:54:16',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.BRAZILIAN, GENRES.LATIN],
     method: [METHODS.BAKE, METHODS.SAUTE],

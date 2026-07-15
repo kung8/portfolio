@@ -15,6 +15,8 @@ module.exports = {
     img: brigadeiro5,
     available: true,
     recommended: true,
+    createdAt: '08/09/2025 00:19:21',
+    modifiedAt: '05/31/2026 18:21:45',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.BRAZILIAN],
     method: [METHODS.PAN_FRY],

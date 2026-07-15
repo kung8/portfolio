@@ -19,6 +19,8 @@ module.exports = {
     img: mcnuggets6,
     available: true,
     recommended: false,
+    createdAt: '12/08/2024 15:48:43',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.DEEP_FRY],

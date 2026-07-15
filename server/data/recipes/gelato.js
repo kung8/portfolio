@@ -12,6 +12,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '12/11/2024 22:43:09',
+    modifiedAt: '07/04/2026 20:12:36',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.FREEZE],

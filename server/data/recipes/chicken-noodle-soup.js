@@ -24,6 +24,8 @@ module.exports = {
     img: soup1,
     available: true,
     recommended: true,
+    createdAt: '02/04/2024 15:23:00',
+    modifiedAt: '12/07/2025 16:11:00',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],

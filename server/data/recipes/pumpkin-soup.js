@@ -12,6 +12,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '05/11/2025 21:48:54',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.SIMMER],

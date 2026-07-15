@@ -30,6 +30,8 @@ module.exports = {
     img: cilantro6,
     available: true,
     recommended: true,
+    createdAt: '10/27/2024 15:18:11',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN],
     method: [METHODS.GRILL],

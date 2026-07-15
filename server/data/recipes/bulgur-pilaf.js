@@ -14,6 +14,8 @@ module.exports = {
     img: pilaf3,
     available: true,
     recommended: true,
+    createdAt: '04/28/2025 22:33:15',
+    modifiedAt: '05/31/2026 19:06:01',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.LEBANESE, GENRES.MEDITERRANEAN, GENRES.MIDDLE_EASTERN],
     method: [METHODS.PAN_FRY],

@@ -15,6 +15,8 @@ module.exports = {
     img: teriyaki5,
     available: true,
     recommended: true,
+    createdAt: '07/06/2025 16:12:49',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.HAWAIIAN],
     method: [METHODS.GRILL],

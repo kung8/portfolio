@@ -13,6 +13,8 @@ module.exports = {
     img: francese3,
     available: true,
     recommended: true,
+    createdAt: '04/04/2025 21:36:52',
+    modifiedAt: '02/06/2026 21:11:14',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE, METHODS.SIMMER],

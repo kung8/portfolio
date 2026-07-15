@@ -22,6 +22,8 @@ module.exports = {
     img: ribs9,
     available: true,
     recommended: true,
+    createdAt: '08/04/2025 20:55:51',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     method: [METHODS.BAKE],

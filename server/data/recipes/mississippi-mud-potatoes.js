@@ -14,6 +14,8 @@ module.exports = {
     img: potatoes4,
     available: true,
     recommended: true,
+    createdAt: '09/14/2025 16:55:35',
+    modifiedAt: '11/20/2025 20:46:06',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.SOUTHERN],
     method: [METHODS.BAKE, METHODS.PAN_FRY],

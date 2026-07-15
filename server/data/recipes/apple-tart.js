@@ -16,6 +16,8 @@ module.exports = {
     img: tart5,
     available: true,
     recommended: true,
+    createdAt: '12/08/2024 22:08:23',
+    modifiedAt: '04/26/2026 19:39:19',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],

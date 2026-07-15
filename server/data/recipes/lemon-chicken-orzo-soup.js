@@ -20,6 +20,8 @@ module.exports = {
     img: soup2,
     available: true,
     recommended: false,
+    createdAt: '05/11/2025 20:38:31',
+    modifiedAt: '11/29/2025 19:59:04',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.SIMMER],

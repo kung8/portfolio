@@ -17,6 +17,8 @@ module.exports = {
     img: chips6,
     available: true,
     recommended: false,
+    createdAt: '04/05/2025 22:41:19',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.BRITISH],
     method: [METHODS.DEEP_FRY],

@@ -15,6 +15,8 @@ module.exports = {
     img: pineapple2,
     available: true,
     recommended: true,
+    createdAt: '07/06/2025 16:31:54',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH, CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN, GENRES.HAWAIIAN],
     method: [METHODS.GRILL],

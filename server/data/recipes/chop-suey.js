@@ -12,6 +12,8 @@ module.exports = {
     img: suey4,
     available: true,
     recommended: false,
+    createdAt: '04/03/2025 19:50:35',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE],
     method: [METHODS.STIR_FRY],

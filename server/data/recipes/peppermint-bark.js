@@ -20,6 +20,8 @@ module.exports = {
     img: bark4,
     available: true,
     recommended: true,
+    createdAt: '09/20/2024 15:00:24',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.MELT, METHODS.CHILLED],

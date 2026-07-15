@@ -15,6 +15,8 @@ module.exports = {
     img: mac3,
     available: true,
     recommended: true,
+    createdAt: '11/27/2024 12:00:08',
+    modifiedAt: '05/02/2026 15:24:32',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.GRILL],

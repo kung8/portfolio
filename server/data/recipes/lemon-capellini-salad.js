@@ -11,6 +11,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '04/27/2025 22:10:39',
+    modifiedAt: '12/07/2025 20:55:28',
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.MIX],

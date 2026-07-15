@@ -9,6 +9,8 @@ module.exports = {
     img: '',
     available: false,
     recommended: false,
+    createdAt: '05/20/2025 21:21:12',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER],
     genre: [GENRES.INDIAN],
     method: [METHODS.PAN_FRY],

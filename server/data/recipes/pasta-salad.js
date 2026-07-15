@@ -10,6 +10,8 @@ module.exports = {
     img: salad2,
     available: true,
     recommended: false,
+    createdAt: '09/14/2025 15:34:44',
+    modifiedAt: '06/07/2026 00:16:26',
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BOIL, METHODS.MIX],

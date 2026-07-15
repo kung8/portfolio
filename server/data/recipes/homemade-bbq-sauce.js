@@ -9,6 +9,8 @@ module.exports = {
     img: sauce1,
     available: true,
     recommended: false,
+    createdAt: '12/08/2024 15:48:43',
+    modifiedAt: '05/02/2026 15:07:36',
     category: [CATEGORIES.SAUCE],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER],

@@ -14,6 +14,8 @@ module.exports = {
     img: '',
     available: false,
     recommended: false,
+    createdAt: '09/13/2025 21:24:59',
+    modifiedAt: '11/20/2025 20:45:13',
     category: [CATEGORIES.DRINK],
     genre: [GENRES.BRAZILIAN],
     method: [METHODS.BLEND],

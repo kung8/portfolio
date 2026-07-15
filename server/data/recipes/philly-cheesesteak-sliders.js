@@ -13,6 +13,8 @@ module.exports = {
     img: slider1,
     available: true,
     recommended: true,
+    createdAt: '12/24/2025 20:20:48',
+    modifiedAt: '06/10/2026 20:46:27',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH, CATEGORIES.APPETIZER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

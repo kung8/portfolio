@@ -21,6 +21,8 @@ module.exports = {
     img: salmon5,
     available: true,
     recommended: true,
+    createdAt: '10/24/2025 23:41:01',
+    modifiedAt: '11/18/2025 00:39:29',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

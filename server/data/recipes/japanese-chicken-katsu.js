@@ -44,6 +44,8 @@ module.exports = {
     img: katsu9,
     available: true,
     recommended: true,
+    createdAt: '02/04/2024 15:23:00',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.JAPANESE, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY],

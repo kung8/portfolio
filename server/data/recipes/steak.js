@@ -13,6 +13,8 @@ module.exports = {
     img: steak1,
     available: true,
     recommended: true,
+    createdAt: '06/28/2025 16:22:01',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.GRILL],

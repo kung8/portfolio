@@ -25,6 +25,8 @@ module.exports = {
     img: syrup2,
     available: true,
     recommended: true,
+    createdAt: '02/07/2024 22:36:48',
+    modifiedAt: '05/31/2026 19:21:15',
     category: [CATEGORIES.SAUCE, CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL],

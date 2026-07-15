@@ -12,6 +12,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '04/01/2025 21:38:29',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.CHINESE, GENRES.AMERICAN],
     method: [METHODS.BAKE],

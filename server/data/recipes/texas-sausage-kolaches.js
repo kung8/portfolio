@@ -19,6 +19,8 @@ module.exports = {
     img: kolaches6,
     available: true,
     recommended: true,
+    createdAt: '04/04/2025 23:08:46',
+    modifiedAt: '06/02/2026 21:50:50',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CZECH],
     method: [METHODS.BAKE],

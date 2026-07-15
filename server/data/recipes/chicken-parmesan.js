@@ -19,6 +19,8 @@ module.exports = {
     img: parmesan8,
     available: true,
     recommended: true,
+    createdAt: '04/05/2025 21:56:15',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE, METHODS.DEEP_FRY],

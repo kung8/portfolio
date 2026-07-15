@@ -13,6 +13,8 @@ module.exports = {
     img: roll4,
     available: true,
     recommended: false,
+    createdAt: '03/23/2025 21:58:09',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.RAW],

@@ -21,6 +21,8 @@ module.exports = {
     img: turnover6,
     available: true,
     recommended: true,
+    createdAt: '11/09/2025 22:15:18',
+    modifiedAt: '01/10/2026 16:53:30',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

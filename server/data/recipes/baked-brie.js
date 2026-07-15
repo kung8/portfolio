@@ -26,6 +26,8 @@ module.exports = {
     img: brie3,
     available: true,
     recommended: true,
+    createdAt: '04/18/2026 18:04:28',
+    modifiedAt: '04/22/2026 20:40:49',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK, CATEGORIES.DIP],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

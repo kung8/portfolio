@@ -25,6 +25,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '06/07/2026 01:01:56',
+    modifiedAt: '06/07/2026 01:01:56',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.LATIN],
     method: [METHODS.PAN_FRY],

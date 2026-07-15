@@ -12,6 +12,8 @@ module.exports = {
     img: asparagus4,
     available: true,
     recommended: false,
+    createdAt: '06/28/2025 15:59:56',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

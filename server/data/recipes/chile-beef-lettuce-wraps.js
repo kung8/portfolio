@@ -29,6 +29,8 @@ module.exports = {
     img: wraps2,
     available: true,
     recommended: true,
+    createdAt: '06/17/2026 22:07:53',
+    modifiedAt: '06/30/2026 22:06:56',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.ASIAN, GENRES.CHINESE, GENRES.THAI],
     method: [METHODS.STIR_FRY],

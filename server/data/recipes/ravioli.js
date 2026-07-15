@@ -39,6 +39,8 @@ module.exports = {
     img: ravioli7,
     available: true,
     recommended: true,
+    createdAt: '01/01/2025 14:44:15',
+    modifiedAt: '06/23/2026 22:28:21',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.SIMMER],

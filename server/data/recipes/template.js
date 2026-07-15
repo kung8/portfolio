@@ -26,6 +26,8 @@ module.exports = {
     img: '',
     available: '{{available}}',
     recommended: false,
+    createdAt: '{{createdAt}}',
+    modifiedAt: '{{modifiedAt}}',
     category: '{{category}}',
     genre: '{{genre}}',
     method: '{{method}}',

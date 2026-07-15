@@ -9,6 +9,8 @@ module.exports = {
     img: '',
     available: false,
     recommended: false,
+    createdAt: '09/29/2025 21:21:09',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.ASIAN,GENRES.CHINESE],
     method: [METHODS.BOIL],

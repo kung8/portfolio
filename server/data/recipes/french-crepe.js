@@ -40,6 +40,8 @@ module.exports = {
     img: crepe4,
     available: true,
     recommended: true,
+    createdAt: '02/04/2024 15:23:00',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH],
     method: [METHODS.PAN_FRY],

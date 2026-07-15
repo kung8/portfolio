@@ -23,6 +23,8 @@ module.exports = {
     img: biscuits7,
     available: true,
     recommended: true,
+    createdAt: '05/11/2025 00:22:01',
+    modifiedAt: '11/27/2025 12:36:28',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

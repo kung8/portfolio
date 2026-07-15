@@ -14,6 +14,8 @@ module.exports = {
     img: burrito1,
     available: true,
     recommended: false,
+    createdAt: '04/02/2025 20:24:47',
+    modifiedAt: '06/07/2026 20:07:34',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],

@@ -17,6 +17,8 @@ module.exports = {
     img: gelato2,
     available: true,
     recommended: true,
+    createdAt: '07/04/2026 20:12:36',
+    modifiedAt: '07/04/2026 20:12:36',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BLEND, METHODS.FREEZE],

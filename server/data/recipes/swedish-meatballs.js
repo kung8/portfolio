@@ -22,6 +22,8 @@ module.exports = {
     img: meatball4,
     available: true,
     recommended: true,
+    createdAt: '12/11/2024 09:05:21',
+    modifiedAt: '06/02/2026 21:18:27',
     category: [CATEGORIES.APPETIZER, CATEGORIES.MAIN_DISH],
     genre: [GENRES.SWEDISH],
     method: [METHODS.PAN_FRY, METHODS.BAKE],

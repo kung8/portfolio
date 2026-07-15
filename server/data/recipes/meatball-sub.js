@@ -22,6 +22,8 @@ module.exports = {
     img: sub8,
     available: true,
     recommended: true,
+    createdAt: '04/02/2025 21:10:39',
+    modifiedAt: '06/07/2026 23:25:41',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.ITALIAN],
     method: [METHODS.BAKE, METHODS.PAN_FRY],

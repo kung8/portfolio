@@ -14,6 +14,8 @@ module.exports = {
     img: casserole4,
     available: true,
     recommended: true,
+    createdAt: '11/14/2025 23:17:05',
+    modifiedAt: '11/28/2025 18:56:06',
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],

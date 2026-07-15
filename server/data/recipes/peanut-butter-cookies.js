@@ -12,6 +12,8 @@ module.exports = {
     img: cookies4,
     available: true,
     recommended: false,
+    createdAt: '12/10/2024 07:37:58',
+    modifiedAt: '06/02/2026 22:17:08',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],

@@ -19,6 +19,8 @@ module.exports = {
     img: galette5,
     available: true,
     recommended: true,
+    createdAt: '11/24/2025 17:01:07',
+    modifiedAt: '01/04/2026 21:15:32',
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],

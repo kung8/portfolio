@@ -12,6 +12,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '11/24/2025 22:34:06',
+    modifiedAt: '11/24/2025 22:34:06',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN, GENRES.SOUTHERN],
     method: [METHODS.BAKE],

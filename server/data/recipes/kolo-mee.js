@@ -18,6 +18,8 @@ module.exports = {
     img: kolo3,
     available: true,
     recommended: true,
+    createdAt: '02/28/2025 23:57:20',
+    modifiedAt: '06/07/2026 23:25:41',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.MALAYSIAN, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],

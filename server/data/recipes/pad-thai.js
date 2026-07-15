@@ -44,6 +44,8 @@ module.exports = {
     img: noodles5,
     available: true,
     recommended: true,
+    createdAt: '02/04/2024 15:23:00',
+    modifiedAt: '11/15/2025 02:26:07',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.THAI, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],

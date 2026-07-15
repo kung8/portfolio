@@ -19,6 +19,8 @@ module.exports = {
     img: churros5,
     available: true,
     recommended: true,
+    createdAt: '12/14/2024 22:10:16',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.SPANISH],
     method: [METHODS.DEEP_FRY],

@@ -12,6 +12,8 @@ module.exports = {
     img: limone2,
     available: true,
     recommended: true,
+    createdAt: '01/04/2025 23:46:26',
+    modifiedAt: '06/04/2026 20:18:26',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],

@@ -15,6 +15,8 @@ module.exports = {
     img: tacos2,
     available: true,
     recommended: false,
+    createdAt: '12/14/2024 16:35:48',
+    modifiedAt: '05/02/2026 15:15:48',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MEXICAN],
     method: [METHODS.PAN_FRY],

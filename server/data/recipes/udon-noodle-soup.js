@@ -12,6 +12,8 @@ module.exports = {
     img: '',
     available: false,
     recommended: false,
+    createdAt: '03/01/2025 17:46:57',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.JAPANESE, GENRES.ASIAN],
     method: [METHODS.SIMMER],

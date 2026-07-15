@@ -9,6 +9,8 @@ module.exports = {
     img: '',
     available: false,
     recommended: false,
+    createdAt: '08/05/2025 22:14:52',
+    modifiedAt: '06/07/2026 20:07:34',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.BRAZILIAN],
     method: [METHODS.PAN_FRY],

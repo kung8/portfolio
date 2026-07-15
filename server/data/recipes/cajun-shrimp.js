@@ -9,6 +9,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '04/05/2025 14:25:53',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CAJUN],
     method: [METHODS.STIR_FRY],

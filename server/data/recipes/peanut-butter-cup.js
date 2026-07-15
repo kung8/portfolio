@@ -18,6 +18,8 @@ module.exports = {
     img: cup6,
     available: true,
     recommended: true,
+    createdAt: '05/03/2025 21:28:05',
+    modifiedAt: '06/04/2026 20:24:57',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.CHILLED, METHODS.MIX, METHODS.MELT],

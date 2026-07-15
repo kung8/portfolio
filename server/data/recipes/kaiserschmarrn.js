@@ -37,6 +37,8 @@ module.exports = {
     img: kaiserschmarrn7,
     available: true,
     recommended: true,
+    createdAt: '06/07/2026 00:16:26',
+    modifiedAt: '07/12/2026 19:47:33',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DESSERT],
     genre: [GENRES.AUSTRIAN],
     method: [METHODS.BAKE, METHODS.PAN_FRY],

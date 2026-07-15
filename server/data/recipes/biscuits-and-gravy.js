@@ -36,6 +36,8 @@ module.exports = {
     img: biscuits5,
     available: true,
     recommended: true,
+    createdAt: '02/11/2024 15:31:59',
+    modifiedAt: '06/04/2026 19:53:53',
     category: [CATEGORIES.BREAKFAST],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY, METHODS.BAKE],

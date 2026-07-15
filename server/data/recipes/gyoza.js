@@ -20,6 +20,8 @@ module.exports = {
     img: gyoza8,
     available: true,
     recommended: true,
+    createdAt: '09/11/2025 21:45:13',
+    modifiedAt: '11/20/2025 19:30:13',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.ASIAN, GENRES.JAPANESE],
     method: [METHODS.PAN_FRY],

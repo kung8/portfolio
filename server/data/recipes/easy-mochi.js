@@ -22,6 +22,8 @@ module.exports = {
     img: mochi7,
     available: true,
     recommended: true,
+    createdAt: '05/23/2025 22:44:20',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.SNACK, CATEGORIES.DESSERT],
     genre: [GENRES.JAPANESE],
     method: [METHODS.MELT, METHODS.MICROWAVE, METHODS.KNEAD],

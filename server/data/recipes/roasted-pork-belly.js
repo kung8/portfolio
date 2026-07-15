@@ -28,6 +28,8 @@ module.exports = {
     img: roast9,
     available: true,
     recommended: true,
+    createdAt: '02/04/2025 23:19:18',
+    modifiedAt: '06/07/2026 23:25:41',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.AIR_FRY],

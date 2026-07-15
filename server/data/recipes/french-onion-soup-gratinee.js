@@ -17,6 +17,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '04/05/2025 16:30:55',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE, METHODS.SIMMER],

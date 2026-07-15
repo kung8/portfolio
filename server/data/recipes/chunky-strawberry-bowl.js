@@ -23,6 +23,8 @@ module.exports = {
     img: bowl4,
     available: true,
     recommended: true,
+    createdAt: '01/07/2026 23:22:16',
+    modifiedAt: '01/08/2026 19:07:07',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.SNACK, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BLEND],

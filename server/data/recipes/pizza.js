@@ -69,6 +69,8 @@ module.exports = {
     img: pizza8,
     available: true,
     recommended: true,
+    createdAt: '02/10/2024 15:54:22',
+    modifiedAt: '06/01/2026 21:43:33',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],

@@ -12,6 +12,8 @@ module.exports = {
     img: pasta1,
     available: true,
     recommended: false,
+    createdAt: '01/03/2025 21:10:33',
+    modifiedAt: '06/04/2026 20:05:11',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.SIMMER, METHODS.PAN_FRY],

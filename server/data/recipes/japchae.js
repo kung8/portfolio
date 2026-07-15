@@ -15,6 +15,8 @@ module.exports = {
     img: japchae2,
     available: true,
     recommended: true,
+    createdAt: '02/04/2025 23:19:18',
+    modifiedAt: '06/04/2026 18:28:27',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.KOREAN, GENRES.ASIAN],
     method: [METHODS.BOIL, METHODS.SAUTE],

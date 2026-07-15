@@ -19,6 +19,8 @@ module.exports = {
     img: croquette4,
     available: true,
     recommended: true,
+    createdAt: '03/02/2026 23:11:01',
+    modifiedAt: '06/04/2026 19:33:03',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.JAPANESE, GENRES.FRENCH],
     method: [METHODS.BAKE],

@@ -13,6 +13,8 @@ module.exports = {
     img: wings5,
     available: true,
     recommended: false,
+    createdAt: '02/16/2025 15:57:15',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN, GENRES.WESTERN],
     method: [METHODS.BAKE],

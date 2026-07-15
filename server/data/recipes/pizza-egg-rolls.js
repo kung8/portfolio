@@ -17,6 +17,8 @@ module.exports = {
     img: rolls7,
     available: true,
     recommended: true,
+    createdAt: '05/26/2025 01:01:02',
+    modifiedAt: '06/04/2026 19:42:54',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
     genre: [GENRES.AMERICAN],
     method: [METHODS.DEEP_FRY],

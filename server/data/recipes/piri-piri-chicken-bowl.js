@@ -19,6 +19,8 @@ module.exports = {
     img: bowl7,
     available: true,
     recommended: true,
+    createdAt: '01/21/2025 22:25:49',
+    modifiedAt: '06/04/2026 19:02:35',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AFRICAN, GENRES.PORTUGUESE],
     method: [METHODS.GRILL],

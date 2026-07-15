@@ -25,6 +25,8 @@ module.exports = {
     img: tieu2,
     available: true,
     recommended: true,
+    createdAt: '02/11/2024 00:14:08',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY],

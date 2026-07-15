@@ -11,6 +11,8 @@ module.exports = {
     img: cheese3,
     available: true,
     recommended: true,
+    createdAt: '10/22/2024 21:36:31',
+    modifiedAt: '05/02/2026 14:03:03',
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BOIL, METHODS.BAKE],

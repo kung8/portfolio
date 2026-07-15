@@ -29,6 +29,8 @@ module.exports = {
     img: cobbler3,
     available: true,
     recommended: true,
+    createdAt: '05/04/2024 22:08:54',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],

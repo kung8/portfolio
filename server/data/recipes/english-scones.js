@@ -18,6 +18,8 @@ module.exports = {
     img: scones5,
     available: true,
     recommended: true,
+    createdAt: '11/30/2024 10:22:35',
+    modifiedAt: '06/02/2026 20:50:38',
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.BREAKFAST, CATEGORIES.SNACK],
     genre: [GENRES.BRITISH],
     method: [METHODS.BAKE],

@@ -13,6 +13,8 @@ module.exports = {
     img: kalua4,
     available: true,
     recommended: true,
+    createdAt: '07/17/2025 19:32:46',
+    modifiedAt: '04/04/2026 14:41:35',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.HAWAIIAN],
     method: [METHODS.SLOW_COOK],

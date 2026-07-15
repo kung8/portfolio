@@ -9,6 +9,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '05/24/2025 18:47:13',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER, CATEGORIES.APPETIZER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.AIR_FRY],

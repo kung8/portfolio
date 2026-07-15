@@ -47,6 +47,8 @@ module.exports = {
     img: chicken8,
     available: true,
     recommended: true,
+    createdAt: '02/10/2024 22:59:57',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.KOREAN, GENRES.ASIAN],
     method: [METHODS.MARINADE, METHODS.DEEP_FRY],

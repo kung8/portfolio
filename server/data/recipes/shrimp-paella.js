@@ -14,6 +14,8 @@ module.exports = {
     img: paella3,
     available: true,
     recommended: true,
+    createdAt: '12/11/2024 21:26:48',
+    modifiedAt: '06/04/2026 19:22:12',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.SPANISH],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],

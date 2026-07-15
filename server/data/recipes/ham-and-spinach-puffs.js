@@ -32,6 +32,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '07/14/2026 21:33:40',
+    modifiedAt: '07/14/2026 21:33:40',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

@@ -16,6 +16,8 @@ module.exports = {
     img: quesadilla5,
     available: true,
     recommended: true,
+    createdAt: '12/12/2024 23:55:43',
+    modifiedAt: '05/31/2026 21:26:40',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.MEXICAN],
     method: [METHODS.PAN_FRY],

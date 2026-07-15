@@ -19,6 +19,8 @@ module.exports = {
     img: sesame5,
     available: true,
     recommended: true,
+    createdAt: '12/10/2024 22:40:42',
+    modifiedAt: '02/28/2026 18:16:55',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY],

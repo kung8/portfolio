@@ -60,6 +60,8 @@ module.exports = {
     img: sandwich6,
     available: true,
     recommended: true,
+    createdAt: '02/06/2024 21:41:17',
+    modifiedAt: '01/25/2026 00:14:05',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.VIETNAMESE, GENRES.ASIAN],
     protein: [PROTEIN.PORK],

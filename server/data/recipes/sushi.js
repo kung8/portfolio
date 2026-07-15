@@ -32,6 +32,8 @@ module.exports = {
     img: sushi2,
     available: true,
     recommended: true,
+    createdAt: '02/04/2024 15:23:00',
+    modifiedAt: '03/09/2026 22:01:12',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.JAPANESE, GENRES.ASIAN],
     method: [METHODS.RAW],

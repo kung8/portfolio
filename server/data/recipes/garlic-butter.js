@@ -10,6 +10,8 @@ module.exports = {
     img: butter1,
     available: true,
     recommended: true,
+    createdAt: '04/02/2025 21:10:39',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.TOPPING],
     genre: [GENRES.AMERICAN],
     method: [METHODS.MIX],

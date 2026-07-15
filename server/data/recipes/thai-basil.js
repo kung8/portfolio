@@ -16,6 +16,8 @@ module.exports = {
     img: basil8,
     available: true,
     recommended: true,
+    createdAt: '12/11/2024 22:16:38',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.THAI],
     method: [METHODS.PAN_FRY],

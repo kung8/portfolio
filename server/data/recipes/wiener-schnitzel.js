@@ -22,6 +22,8 @@ module.exports = {
     img: schnitzel5,
     available: true,
     recommended: true,
+    createdAt: '06/06/2026 14:58:22',
+    modifiedAt: '06/06/2026 14:58:22',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AUSTRIAN, GENRES.GERMAN],
     method: [METHODS.DEEP_FRY],

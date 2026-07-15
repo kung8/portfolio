@@ -16,6 +16,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '01/04/2025 22:28:02',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.SNACK, CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN],
     method: [METHODS.BAKE, METHODS.BOIL],

@@ -14,6 +14,8 @@ module.exports = {
     img: curry6,
     available: true,
     recommended: false,
+    createdAt: '03/31/2025 23:01:14',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.THAI, GENRES.ASIAN],
     method: [METHODS.PAN_FRY],

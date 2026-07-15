@@ -18,6 +18,8 @@ module.exports = {
     img: pie6,
     available: true,
     recommended: true,
+    createdAt: '11/28/2024 00:05:42',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],

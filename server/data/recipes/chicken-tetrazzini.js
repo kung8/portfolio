@@ -18,6 +18,8 @@ module.exports = {
     img: tetrazzini7,
     available: true,
     recommended: false,
+    createdAt: '02/19/2025 20:52:59',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],

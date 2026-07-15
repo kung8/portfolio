@@ -19,6 +19,8 @@ module.exports = {
     img: bowl8,
     available: true,
     recommended: true,
+    createdAt: '07/06/2025 19:56:47',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.VIETNAMESE],
     method: [METHODS.BOIL, METHODS.MIX, METHODS.PAN_FRY],

@@ -30,6 +30,8 @@ module.exports = {
     img: drumettes6,
     available: true,
     recommended: true,
+    createdAt: '03/01/2026 00:32:34',
+    modifiedAt: '03/06/2026 13:36:28',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH, CATEGORIES.APPETIZER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.SIMMER, METHODS.PAN_FRY],

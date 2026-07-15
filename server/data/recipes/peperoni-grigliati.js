@@ -29,6 +29,8 @@ module.exports = {
     img: pepper3,
     available: true,
     recommended: true,
+    createdAt: '06/07/2026 23:25:41',
+    modifiedAt: '07/04/2026 20:12:36',
     category: [CATEGORIES.LUNCH,CATEGORIES.DINNER,CATEGORIES.SIDE_DISH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.GRILL],

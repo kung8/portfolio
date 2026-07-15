@@ -22,6 +22,8 @@ module.exports = {
     img: sandwich6,
     available: true,
     recommended: false,
+    createdAt: '01/01/2025 21:48:37',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.FRENCH],
     method: [METHODS.PAN_FRY],

@@ -15,6 +15,8 @@ module.exports = {
     img: curry3,
     available: true,
     recommended: false,
+    createdAt: '12/14/2024 10:51:01',
+    modifiedAt: '06/02/2026 21:32:51',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.JAPANESE, GENRES.ASIAN],
     method: [METHODS.SIMMER],

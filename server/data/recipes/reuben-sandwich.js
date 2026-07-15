@@ -13,6 +13,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '04/02/2025 19:46:27',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY],

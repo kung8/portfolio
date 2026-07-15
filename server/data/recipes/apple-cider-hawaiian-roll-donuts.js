@@ -25,6 +25,8 @@ module.exports = {
     img: donuts3,
     available: true,
     recommended: true,
+    createdAt: '11/08/2025 15:26:03',
+    modifiedAt: '12/07/2025 16:11:00',
     category: [CATEGORIES.DESSERT, CATEGORIES.SNACK],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

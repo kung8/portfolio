@@ -14,6 +14,8 @@ module.exports = {
     img: chimichangas3,
     available: true,
     recommended: true,
+    createdAt: '12/14/2024 00:48:32',
+    modifiedAt: '05/02/2026 15:15:48',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.MEXICAN],
     method: [METHODS.SAUTE, METHODS.BAKE],

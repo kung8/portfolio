@@ -21,6 +21,8 @@ module.exports = {
     img: orange8,
     available: true,
     recommended: true,
+    createdAt: '12/08/2024 20:18:25',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.DEEP_FRY],

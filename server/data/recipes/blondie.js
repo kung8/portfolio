@@ -37,6 +37,8 @@ module.exports = {
     img: blondie3,
     available: true,
     recommended: true,
+    createdAt: '06/05/2024 20:48:03',
+    modifiedAt: '05/02/2026 15:55:58',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],

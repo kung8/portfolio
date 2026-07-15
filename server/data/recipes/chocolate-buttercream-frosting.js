@@ -24,6 +24,8 @@ module.exports = {
     img: frosting7,
     available: true,
     recommended: true,
+    createdAt: '06/22/2025 09:11:04',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.MIX],

@@ -29,6 +29,8 @@ module.exports = {
     img: alfredo1,
     available: true,
     recommended: true,
+    createdAt: '02/11/2024 13:06:19',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.PAN_FRY],

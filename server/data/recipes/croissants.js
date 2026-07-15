@@ -16,6 +16,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '01/14/2025 21:29:56',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.APPETIZER, CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],

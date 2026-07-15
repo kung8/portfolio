@@ -14,6 +14,8 @@ module.exports = {
     img: milanese5,
     available: true,
     recommended: true,
+    createdAt: '01/06/2025 20:43:14',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.PAN_FRY],

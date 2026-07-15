@@ -14,6 +14,8 @@ module.exports = {
     img: eclair2,
     available: true,
     recommended: false,
+    createdAt: '10/19/2024 02:31:33',
+    modifiedAt: '07/12/2026 23:20:34',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH],
     method: [METHODS.BAKE],

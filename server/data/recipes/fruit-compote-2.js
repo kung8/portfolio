@@ -25,6 +25,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '07/08/2026 21:45:48',
+    modifiedAt: '07/08/2026 21:45:48',
     category: [CATEGORIES.SAUCE, CATEGORIES.TOPPING],
     genre: [GENRES.FRENCH],
     method: [METHODS.SIMMER],

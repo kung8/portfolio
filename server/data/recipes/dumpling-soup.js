@@ -18,6 +18,8 @@ module.exports = {
     img: dumpling7,
     available: true,
     recommended: true,
+    createdAt: '05/11/2025 20:38:31',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN],
     method: [METHODS.SIMMER],

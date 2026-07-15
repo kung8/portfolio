@@ -9,6 +9,8 @@ module.exports = {
     img: '',
     available: false,
     recommended: false,
+    createdAt: '{{createdAt}}',
+    modifiedAt: '{{modifiedAt}}',
     category: '{{category}}',
     genre: '{{genre}}',
     method: '{{method}}',

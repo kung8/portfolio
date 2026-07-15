@@ -35,6 +35,8 @@ module.exports = {
     img: kolaches7,
     available: true,
     recommended: true,
+    createdAt: '01/01/2025 23:11:07',
+    modifiedAt: '06/01/2026 21:23:45',
     category: [CATEGORIES.DESSERT, CATEGORIES.BREAKFAST],
     genre: [GENRES.CZECH],
     method: [METHODS.BAKE],

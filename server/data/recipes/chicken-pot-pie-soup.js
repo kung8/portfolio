@@ -17,6 +17,8 @@ module.exports = {
     img: soup3,
     available: true,
     recommended: true,
+    createdAt: '11/29/2025 16:31:23',
+    modifiedAt: '01/02/2026 21:19:44',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.BRITISH, GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SIMMER, METHODS.SAUTE, METHODS.BAKE],

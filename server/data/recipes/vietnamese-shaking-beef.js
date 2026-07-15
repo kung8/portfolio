@@ -17,6 +17,8 @@ module.exports = {
     img: shakingBeef2,
     available: true,
     recommended: true,
+    createdAt: '09/13/2025 20:53:25',
+    modifiedAt: '02/13/2026 11:33:34',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.VIETNAMESE],
     method: [METHODS.PAN_FRY],

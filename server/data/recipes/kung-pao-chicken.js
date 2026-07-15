@@ -17,6 +17,8 @@ module.exports = {
     img: kung8,
     available: true,
     recommended: false,
+    createdAt: '12/10/2024 22:08:56',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],

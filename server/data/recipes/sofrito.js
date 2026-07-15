@@ -13,6 +13,8 @@ module.exports = {
     img: sofrito3,
     available: true,
     recommended: false,
+    createdAt: '04/05/2026 00:18:07',
+    modifiedAt: '04/22/2026 20:40:49',
     category: [CATEGORIES.DINNER],
     genre: [GENRES.PUERTO_RICAN, GENRES.CARIBBEAN],
     method: [METHODS.BLEND],

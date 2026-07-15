@@ -17,6 +17,8 @@ module.exports = {
     img: drunken8,
     available: true,
     recommended: true,
+    createdAt: '02/17/2025 20:03:07',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.THAI, GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],

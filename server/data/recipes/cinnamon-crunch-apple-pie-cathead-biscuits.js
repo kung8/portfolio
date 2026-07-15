@@ -22,6 +22,8 @@ module.exports = {
     img: biscuits6,
     available: true,
     recommended: false,
+    createdAt: '11/14/2025 20:05:37',
+    modifiedAt: '11/23/2025 20:16:31',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
     genre: [GENRES.SOUTHERN],
     method: [METHODS.BAKE],

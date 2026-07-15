@@ -41,6 +41,8 @@ module.exports = {
     img: waffles7,
     available: true,
     recommended: true,
+    createdAt: '05/05/2024 12:33:33',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.GRILL],

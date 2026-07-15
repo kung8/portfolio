@@ -48,6 +48,8 @@ module.exports = {
     img: cheesecake5,
     available: true,
     recommended: true,
+    createdAt: '03/29/2024 18:47:54',
+    modifiedAt: '05/31/2026 20:27:43',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],

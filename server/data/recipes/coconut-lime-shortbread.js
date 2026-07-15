@@ -32,6 +32,8 @@ module.exports = {
     img: shortbread6,
     available: true,
     recommended: true,
+    createdAt: '01/07/2026 22:50:33',
+    modifiedAt: '06/07/2026 00:16:26',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

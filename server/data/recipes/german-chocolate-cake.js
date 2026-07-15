@@ -25,6 +25,8 @@ module.exports = {
     img: cake7,
     available: true,
     recommended: true,
+    createdAt: '10/26/2025 22:16:17',
+    modifiedAt: '06/02/2026 20:57:22',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

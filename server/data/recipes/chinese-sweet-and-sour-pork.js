@@ -23,6 +23,8 @@ module.exports = {
     img: pork9,
     available: true,
     recommended: true,
+    createdAt: '12/09/2024 22:58:38',
+    modifiedAt: '01/01/2026 21:07:04',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.STIR_FRY],

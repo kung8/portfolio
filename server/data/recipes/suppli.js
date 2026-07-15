@@ -32,6 +32,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '06/06/2026 22:26:27',
+    modifiedAt: '06/07/2026 00:16:26',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
     genre: [GENRES.ITALIAN],
     method: [METHODS.DEEP_FRY],

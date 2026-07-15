@@ -14,6 +14,8 @@ module.exports = {
     img: bruschetta2,
     available: true,
     recommended: true,
+    createdAt: '04/27/2025 21:43:50',
+    modifiedAt: '05/31/2026 18:59:43',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],

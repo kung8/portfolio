@@ -35,6 +35,8 @@ module.exports = {
     img: rice5,
     available: true,
     recommended: true,
+    createdAt: '06/18/2024 21:24:50',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.SINGAPOREAN, GENRES.ASIAN],
     method: [METHODS.SIMMER],

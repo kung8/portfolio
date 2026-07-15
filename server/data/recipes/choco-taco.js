@@ -23,6 +23,8 @@ module.exports = {
     img: taco7,
     available: true,
     recommended: true,
+    createdAt: '09/29/2025 21:04:39',
+    modifiedAt: '12/24/2025 18:53:34',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.FREEZE],

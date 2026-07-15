@@ -16,6 +16,8 @@ module.exports = {
     img: tomatoes5,
     available: true,
     recommended: true,
+    createdAt: '12/08/2024 19:13:20',
+    modifiedAt: '02/21/2026 14:38:40',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.VIETNAMESE, GENRES.CAMBODIAN, GENRES.ASIAN],
     method: [METHODS.PAN_FRY],

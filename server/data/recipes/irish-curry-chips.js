@@ -30,6 +30,8 @@ module.exports = {
     img: chips7,
     available: true,
     recommended: true,
+    createdAt: '04/05/2026 11:42:17',
+    modifiedAt: '04/12/2026 20:00:16',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH, CATEGORIES.SNACK],
     genre: [GENRES.IRISH],
     method: [METHODS.PARBOIL, METHODS.BAKE, METHODS.SIMMER],

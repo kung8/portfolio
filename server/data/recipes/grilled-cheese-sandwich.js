@@ -16,6 +16,8 @@ module.exports = {
     img: grilled6,
     available: true,
     recommended: true,
+    createdAt: '12/31/2024 17:30:30',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.WESTERN],
     method: [METHODS.PAN_FRY],

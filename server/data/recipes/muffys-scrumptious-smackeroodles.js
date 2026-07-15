@@ -34,6 +34,8 @@ module.exports = {
     img: smackeroodles8,
     available: true,
     recommended: false,
+    createdAt: '04/05/2026 02:09:28',
+    modifiedAt: '05/02/2026 13:18:01',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],

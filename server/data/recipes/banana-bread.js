@@ -35,6 +35,8 @@ module.exports = {
     img: bread2,
     available: true,
     recommended: true,
+    createdAt: '04/22/2024 19:45:54',
+    modifiedAt: '05/02/2026 14:19:48',
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     type: [CATEGORIES.DESSERT],
     yields: { amount: 10, unit: YIELD_UNITS.SERVING },

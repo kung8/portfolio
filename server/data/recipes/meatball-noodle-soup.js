@@ -29,6 +29,8 @@ module.exports = {
     img: soup5,
     available: true,
     recommended: true,
+    createdAt: '04/05/2026 12:26:09',
+    modifiedAt: '04/09/2026 22:56:24',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     method: [METHODS.SIMMER],

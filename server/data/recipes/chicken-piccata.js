@@ -10,6 +10,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '04/04/2026 14:41:35',
+    modifiedAt: '04/04/2026 14:43:16',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],

@@ -19,6 +19,8 @@ module.exports = {
     img: fries7,
     available: true,
     recommended: true,
+    createdAt: '11/19/2024 00:45:21',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.SIDE_DISH],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],

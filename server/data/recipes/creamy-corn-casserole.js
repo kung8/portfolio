@@ -13,6 +13,8 @@ module.exports = {
     img: casserole5,
     available: true,
     recommended: false,
+    createdAt: '12/27/2024 22:11:28',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.SIDE_DISH, CATEGORIES.APPETIZER],
     genre: [GENRES.SOUTHERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],

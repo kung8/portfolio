@@ -13,6 +13,8 @@ module.exports = {
     img: kale1,
     available: true,
     recommended: true,
+    createdAt: '09/13/2025 15:19:48',
+    modifiedAt: '05/31/2026 19:17:26',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],

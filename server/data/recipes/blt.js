@@ -11,6 +11,8 @@ module.exports = {
     img: blt2,
     available: true,
     recommended: true,
+    createdAt: '01/04/2025 22:02:49',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN],
     method: [METHODS.PAN_FRY],

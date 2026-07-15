@@ -9,6 +9,8 @@ module.exports = {
     img: '',
     available: false,
     recommended: false,
+    createdAt: '05/24/2025 01:30:56',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.APPETIZER,CATEGORIES.SIDE_DISH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE,METHODS.KNEAD],

@@ -29,6 +29,8 @@ module.exports = {
     img: chicken3,
     available: true,
     recommended: true,
+    createdAt: '06/07/2026 02:58:05',
+    modifiedAt: '06/14/2026 19:54:00',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.CHINESE],
     method: [METHODS.BAKE],

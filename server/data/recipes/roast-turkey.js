@@ -36,6 +36,8 @@ module.exports = {
     img: turkey6,
     available: true,
     recommended: true,
+    createdAt: '10/15/2025 22:47:43',
+    modifiedAt: '06/01/2026 22:44:35',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.ROAST],

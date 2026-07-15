@@ -22,6 +22,8 @@ module.exports = {
     img: bagel8,
     available: true,
     recommended: true,
+    createdAt: '12/24/2025 22:21:24',
+    modifiedAt: '01/13/2026 20:21:42',
     category: [CATEGORIES.DINNER],
     genre: [GENRES.AMERICAN, GENRES.SCANDINAVIAN],
     method: [METHODS.CURE, METHODS.TOAST],

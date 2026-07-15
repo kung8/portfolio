@@ -16,6 +16,8 @@ module.exports = {
     img: curry6,
     available: true,
     recommended: false,
+    createdAt: '04/03/2025 21:12:09',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.INDONESIAN],
     method: [METHODS.SIMMER],

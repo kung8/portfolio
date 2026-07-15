@@ -32,6 +32,8 @@ module.exports = {
     img: stew9,
     available: false,
     recommended: false,
+    createdAt: '04/23/2025 21:35:10',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.JAPANESE],
     method: [METHODS.PAN_FRY],

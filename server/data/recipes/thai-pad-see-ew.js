@@ -42,6 +42,8 @@ module.exports = {
     img: noodles8,
     available: true,
     recommended: true,
+    createdAt: '06/22/2024 22:34:24',
+    modifiedAt: '11/14/2025 23:38:52',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.THAI, GENRES.ASIAN],
     method: [METHODS.PAN_FRY],

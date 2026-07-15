@@ -23,6 +23,8 @@ module.exports = {
     img: tanghulu1,
     available: true,
     recommended: false,
+    createdAt: '06/06/2026 19:38:38',
+    modifiedAt: '06/07/2026 00:16:26',
     category: [CATEGORIES.SNACK, CATEGORIES.DESSERT],
     genre: [GENRES.CHINESE],
     method: [METHODS.SIMMER],

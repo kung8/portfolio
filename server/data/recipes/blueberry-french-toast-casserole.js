@@ -21,6 +21,8 @@ module.exports = {
     img: '',
     available: true,
     recommended: false,
+    createdAt: '11/08/2025 17:28:48',
+    modifiedAt: '06/07/2026 20:07:34',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH, GENRES.AMERICAN],
     method: [METHODS.BAKE],

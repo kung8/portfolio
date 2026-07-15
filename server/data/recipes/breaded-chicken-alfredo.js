@@ -30,6 +30,8 @@ module.exports = {
     img: alfredo4,
     available: true,
     recommended: true,
+    createdAt: '06/21/2026 22:16:09',
+    modifiedAt: '06/23/2026 22:25:30',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
