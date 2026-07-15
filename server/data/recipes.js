@@ -1,4 +1,7 @@
+require('dotenv').config();
 const withRecipeMetadata = require('./with-recipe-metadata');
+
+const isDevelopment = process.env.NODE_ENV === 'development';
 
 const almondCroissantCookieBars = require("./recipes/almond-croissant-cookie-bars");
 const americanOmelette = require("./recipes/american-omelette");
@@ -850,7 +853,7 @@ const recipes = [
     rosemaryLemonade,
 ]
 
-module.exports = withRecipeMetadata(recipes);
+module.exports = isDevelopment ? recipes : withRecipeMetadata(recipes);
 
 // TODO: Add Frisee Salad with goat cheese and pine nuts, wild rice, roasted asparagus, salmon en croute recipe (what Monica makes for Rachel's date in Friends)
 

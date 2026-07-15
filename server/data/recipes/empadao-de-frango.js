@@ -1,4 +1,11 @@
 const pie1 = '../assets/Products/empadao-de-frango-1.jpeg';
+const pie2 = '../assets/Products/empadao-de-frango-2.jpeg';
+const pie3 = '../assets/Products/empadao-de-frango-3.jpeg';
+const pie4 = '../assets/Products/empadao-de-frango-4.jpeg';
+const pie5 = '../assets/Products/empadao-de-frango-5.jpeg';
+const pie6 = '../assets/Products/empadao-de-frango-6.jpeg';
+const pie7 = '../assets/Products/empadao-de-frango-7.jpeg';
+const pie8 = '../assets/Products/empadao-de-frango-8.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BLACK_PEPPER, BOWL, CHICKEN_BREAST, CHICKEN_BROTH, CORN, EGG_YOLK, FORK, GARLIC, GREEN_PEA, HOT_SAUCE, LARGE_PAN, MILK, MIXING_BOWL, OLIVE_OIL, OVEN, PARSLEY, ROLLING_PIN, ROMA_TOMATO, SALT, SPRINGFORM_PAN, STOVE, TOMATO_SAUCE, UNSALTED_BUTTER, WATER, YELLOW_ONION } = require('./ingredients');
@@ -12,12 +19,11 @@ const MAKE_CHICKEN_FILLING = 'Make Chicken Filling';
 const FORM_PIE = 'Form Pie';
 
 module.exports = {
-    wip: true,
     cardName: 'Empadão de Frango',
     name: 'Empadão de Frango',
-    img: '',
+    img: pie8,
     available: true,
-    recommended: false,
+    recommended: true,
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.BRAZILIAN, GENRES.LATIN],
     method: [METHODS.BAKE, METHODS.SAUTE],
@@ -89,24 +95,24 @@ module.exports = {
 
         { step: `In a mixing bowl, combine flour and salt.`, section: SECTIONS.MAKE_CRUST },
         { step: `Add egg yolks. Combine.`, section: SECTIONS.MAKE_CRUST },
-        { step: `Add butter. Work butter into batter until it becomes like sand.`, section: SECTIONS.MAKE_CRUST },
+        { step: `Add butter. Work butter into batter until it becomes like sand.`, section: SECTIONS.MAKE_CRUST, img: pie2 },
         { step: `Add water, a few tablespoons at a time. Work until the dough comes together.`, section: SECTIONS.MAKE_CRUST },
-        { step: `Wrap the dough. Chill for 20 minutes.`, section: SECTIONS.MAKE_CRUST },
+        { step: `Wrap the dough. Chill for 20 minutes.`, section: SECTIONS.MAKE_CRUST, img: pie3 },
 
         { step: `Preheat the oven to 350ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
         { step: `Set aside a third of the dough (crust top).`, section: FORM_PIE },
         { step: `Roll out the dough to about a 12-inch circle.`, section: FORM_PIE },
         { step: `Place dough in center of springform pan and let it go up the sides of the pan.`, section: FORM_PIE },
-        { step: `Poke holes all over the pie crust with a fork.`, section: FORM_PIE },
-        { step: `Add cold filling evenly.`, section: FORM_PIE },
+        { step: `Poke holes all over the pie crust with a fork.`, section: FORM_PIE, img: pie4 },
+        { step: `Add cold filling evenly.`, section: FORM_PIE, img: pie5 },
         { step: `Roll out the remaining dough to top the pie.`, section: FORM_PIE },
         { step: `Make two slits in the center of the top crust.`, section: FORM_PIE },
-        { step: `In a small bowl, beat egg yolk.`, section: FORM_PIE },
+        { step: `In a small bowl, beat egg yolk.`, section: FORM_PIE, img: pie6 },
         { step: `Brush pie with egg wash.`, section: FORM_PIE },
 
         { step: `Bake until golden brown and filling is hot (about 25 to 35 minutes).`, section: SECTIONS.BAKE },
-        { step: `Remove from oven and let it cool for a few minutes.`, section: SECTIONS.COOL },
+        { step: `Remove from oven and let it cool for a few minutes.`, section: SECTIONS.COOL, img: pie7 },
         { step: `Enjoy this Brazilian dish.`, section: SECTIONS.SERVE },
     ],
     store: [
