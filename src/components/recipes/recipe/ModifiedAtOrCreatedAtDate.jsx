@@ -6,17 +6,15 @@ const parseRecipeDate = (dateString) => {
         return null;
     }
 
-    // New recipe timestamp format: MM/DD/YYYY HH:MM:SS
-    const slashMatch = dateString.match(/^(\d{2})\/(\d{2})\/(\d{4})(?:\s+(\d{2}):(\d{2}):(\d{2}))?$/);
-    if (slashMatch) {
-        const [, month, day, year, hour = '00', minute = '00', second = '00'] = slashMatch;
+    // Canonical recipe timestamp format: YYYY-MM-DD HH:MM:SS
+    const fullYearMatch = dateString.match(/^(\d{4})-(\d{2})-(\d{2})\s(\d{2}):(\d{2}):(\d{2})$/);
+    if (fullYearMatch) {
+        const [, year, month, day, hour, minute, second] = fullYearMatch;
         const date = new Date(Number(year), Number(month) - 1, Number(day), Number(hour), Number(minute), Number(second));
         return Number.isNaN(date.getTime()) ? null : date;
     }
 
-    // Legacy/ISO fallback.
-    const isoDate = new Date(dateString);
-    return Number.isNaN(isoDate.getTime()) ? null : isoDate;
+    return null;
 };
 
 const formatDate = (dateString) => {

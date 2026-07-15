@@ -16,14 +16,14 @@ function runGit(args) {
 function nowTimestamp() {
     const date = new Date();
 
+    const yyyy = String(date.getFullYear());
     const mm = String(date.getMonth() + 1).padStart(2, '0');
     const dd = String(date.getDate()).padStart(2, '0');
-    const yyyy = String(date.getFullYear());
     const hh = String(date.getHours()).padStart(2, '0');
     const min = String(date.getMinutes()).padStart(2, '0');
     const ss = String(date.getSeconds()).padStart(2, '0');
 
-    return `${mm}/${dd}/${yyyy} ${hh}:${min}:${ss}`;
+    return `${yyyy}-${mm}-${dd} ${hh}:${min}:${ss}`;
 }
 
 // Reads `available: true|false` from a recipe module.
@@ -193,6 +193,12 @@ function processFile(filePath, timestamp) {
     const meaningfulChange = isNewFile
         ? true
         : contentWithoutTimestamps(original) !== contentWithoutTimestamps(previousContent || '');
+
+    // If the staged diff only touches createdAt/modifiedAt values,
+    // do not mutate timestamps again during pre-commit.
+    if (currentAvailable && !resetCreatedAtToNow && !meaningfulChange) {
+        return { updated: false };
+    }
 
     const createdAtValue = currentAvailable
         ? (resetCreatedAtToNow ? timestamp : (existingCreatedAt || timestamp))
