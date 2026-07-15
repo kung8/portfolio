@@ -190,6 +190,7 @@ const groundBeefRamen = require('./recipes/ground-beef-ramen.js');
 const guacamole = require("./recipes/guacamole");
 const gyoza = require('./recipes/gyoza.js');
 const halušky = require('./recipes/halušky.js');
+const hamAndSpinachPuffs = require('./recipes/ham-and-spinach-puffs.js');
 const hamburger = require("./recipes/hamburger");
 const hardBoiledEggs = require("./recipes/hard-boiled-eggs");
 const hawaiianGlazedHam = require("./recipes/hawaiian-glazed-ham");
@@ -647,6 +648,7 @@ const recipes = [
     halušky,
 
     ////////////////////////////////////////////////////////////////////// AMERICAN //////////////////////////////////////////////////////////////////////  
+    hamAndSpinachPuffs, // 
     marryMeChicken,
     roastTurkey,
     thanksgivingLeftoverSandwichWithMoistMaker,

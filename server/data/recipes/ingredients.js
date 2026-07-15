@@ -830,6 +830,7 @@ const INGREDIENTS = {
             name: 'bacon', category: INGREDIENT_CATEGORY.DELI, img: "https://images.unsplash.com/photo-1592086326871-f7cf2f1801ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTY2NzAxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         BACON_BITS: { name: 'bacon bits', category: INGREDIENT_CATEGORY.DELI },
+        BLACK_FOREST_HAM: { name: 'black forest ham', category: INGREDIENT_CATEGORY.DELI },
         BOLOGNA: { name: 'bologna', category: INGREDIENT_CATEGORY.DELI },
         BREAKFAST_SAUSAGE: { name: 'breakfast sausage', category: INGREDIENT_CATEGORY.DELI },
         CANADIAN_BACON: { name: 'canadian bacon', category: INGREDIENT_CATEGORY.DELI },

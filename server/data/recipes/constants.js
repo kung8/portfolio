@@ -263,6 +263,7 @@ const SECTIONS = {
     SIMMER: 'Simmer',
     STEAM: 'Steam',
     STORE: 'Store',
+    THAW: 'Thaw',
     THIN: 'Thin',
     TOP: 'Top',
     TOSS: 'Toss',
