@@ -19,7 +19,6 @@ import { RecipeImage } from './RecipeImage';
 import { Reheat } from './Reheat';
 import { Storage } from './Storage';
 import { Supplies } from './Supplies';
-import { UpdatedAtOrCreatedAtDate } from './UpdatedAtOrCreatedAtDate';
 import { WaitTime } from './WaitTime';
 import { Websites } from './Websites';
 import { Yield } from './Yield';
@@ -34,7 +33,6 @@ export const RecipeDetails = () => {
 
     return (
         <div className="recipe-details">
-            <UpdatedAtOrCreatedAtDate />
             <CookMode />
             <RecipeImage />
             <PrepTime />
