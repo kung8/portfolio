@@ -1,5 +1,6 @@
 const tramezzini1 = '../assets/Products/tramezzini-1.jpeg';
 const tramezzini2 = '../assets/Products/tramezzini-2.jpeg';
+const tramezzini3 = '../assets/Products/tramezzini-3.jpeg';
 
 const {
     CATEGORIES,
@@ -18,14 +19,13 @@ const NON_VEGETARIAN = 'Non-Vegetarian';
 const VEGETARIAN = 'Vegetarian';
 
 module.exports = {
-    wip: true,
     cardName: 'Tramezzini',
     name: 'Tramezzini',
-    img: '',
+    img: tramezzini3,
     available: true,
-    recommended: false,
+    recommended: true,
     createdAt: '2026-06-08 23:07:33',
-    modifiedAt: '2026-06-08 23:07:33',
+    modifiedAt: '2026-07-18 17:08:47',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SNACK],
     genre: [GENRES.ITALIAN],
     method: [METHODS.ASSEMBLE],
