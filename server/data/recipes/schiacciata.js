@@ -14,8 +14,9 @@ const {
     TYPES,
     YIELD_UNITS
 } = require('./constants');
-const { MAYONNAISE, PARMIGIANO_REGGIANO, PORCHETTA } = require('./ingredients');
+const { MAYONNAISE, PARMIGIANO_REGGIANO } = require('./ingredients');
 const focacciaBread = require('./focaccia-bread.js');
+const porkBelly = require('./roasted-pork-belly');
 const peperoniGrigliati = require('./peperoni-grigliati');
 
 const FOCACCIA_BREAD = 'Focaccia Bread';
@@ -28,7 +29,7 @@ module.exports = {
     available: true,
     recommended: true,
     createdAt: '2026-06-07 23:25:41',
-    modifiedAt: '2026-07-04 20:22:57',
+    modifiedAt: '2026-07-18 10:01:41',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.ASSEMBLE, METHODS.AIR_FRY, METHODS.BAKE],
@@ -48,7 +49,7 @@ module.exports = {
     ],
     ingredients: [
         { name: focacciaBread.name.toLowerCase(), amount: '', unit: '', additionalDetails: '', section: FOCACCIA_BREAD, link: { id: focacciaBread.name, url: `recipes/${focacciaBread.name}` } },
-        { ...PORCHETTA, amount: 4, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_FILLING },
+        { name: porkBelly.name.toLowerCase(), amount: 4, unit: INGREDIENT_UNITS.SLICE, additionalDetails: 'or porchetta', section: SANDWICH_FILLING, link: { id: porkBelly.name, url: `recipes/${porkBelly.name}` } },
         { ...MAYONNAISE, amount: '', unit: '', additionalDetails: '', section: SANDWICH_FILLING },
         { ...PARMIGIANO_REGGIANO, amount: 2, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: SANDWICH_FILLING },
         { name: peperoniGrigliati.name.toLowerCase(), amount: '', unit: '', additionalDetails: '', section: SANDWICH_FILLING, link: { id: peperoniGrigliati.name, url: `recipes/${peperoniGrigliati.name}` } },
@@ -63,13 +64,13 @@ module.exports = {
                 additionalText: '.',
             },
         },
-        { step: `Optionally heat the porchetta in the oven if you want it warmed up.`, section: SECTIONS.REHEAT },
+        { step: `Optionally heat the pork belly in the oven if you want it warmed up.`, section: SECTIONS.REHEAT },
         { step: `Assemble the sandwich with your favorite ingredients.`, section: SECTIONS.ASSEMBLE },
         { step: `Enjoy this delicious slice of Italy!`, section: SECTIONS.SERVE, img: [schiacciata1, schiacciata3] },
     ],
     notes: [
         { note: `The best schiacciata I had was in Manarola at a sandwich shop called "Il Salumaio". I constructed it from the "Make your 'Schiacciata'" menu: Hot porchetta, di parmigiano cream, pecorinio semistagionato, and peperoni grigliati.`, img: schiacciata0 },
-        { note: `It might be difficult to find hot fresh porchetta so a cold cut from the deli section might be the closest you can get.` },
+        { note: `It might be difficult to find hot fresh porchetta so a cold cut from the deli section might be the closest you can get or if you can find pork belly, that would work as well.` },
     ],
     mealPrep: false,
 };
