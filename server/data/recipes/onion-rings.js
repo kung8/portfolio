@@ -31,7 +31,7 @@ module.exports = {
     available: true,
     recommended: false,
     createdAt: '2026-07-18 18:18:32',
-    modifiedAt: '2026-07-18 18:22:27',
+    modifiedAt: '2026-07-18 22:55:50',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.DEEP_FRY],
@@ -70,7 +70,7 @@ module.exports = {
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: EGG_DREDGE },
         { ...MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: EGG_DREDGE },
 
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: '', section: ONION_SECTION },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: '1/2 inch thick rings', section: ONION_SECTION },
     ],
     appliances: [
         DEEP_FRYER,

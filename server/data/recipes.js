@@ -955,3 +955,8 @@ module.exports = recipes;
 // https://www.recipetineats.com/penne-all-arrabbiata-spicy-tomato-pasta/
 // https://www.facebook.com/groups/390994394103438/posts/785863451283195/ (butterfinger pie)
 // https://www.allrecipes.com/recipe/80398/serbian-cevapcici/
+
+
+// https://www.everylastbite.com/one-pan-red-thai-curry-noodles/?fbclid=IwdGRjcATDQKRwZG9mA2ZkaWQWUKh1BQFMMr6pE-SWhH-jAgu1yKfe8GV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5cXdQRw2GpsVcDe8_sbusZ2rm-v_a6rUebdfCQM1bN8-qCkW1tFwS__fUYHQ_aem_qeK-tMp__4bjGTtXeUA8rg
+// https://pinchofyum.com/red-chile-tostadas-with-eggs?fbclid=IwdGRjcATGqilwZG9mA2ZkaWQWUKvHIPOfelfswE5Je569HOs5vSOQGGV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR7a_DRdhEG0au4V2VCvaxJQap8Xrf3-yjg0QzKKVg76lGBlYJt2urhWNIoekg_aem_EgTs1MCrIPIDpyKaE3t0Ew
+// https://cicili.tv/15-min-chicken-blanket-dumplings/?fbclid=IwdGRleATIWKdwZG9mBWZkaWQWUKxZ11VR_3IH2E8OYvyM3IMsD4nKAGV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR4ISbm5jTlWlge1b8xfSU6p4_A3jRw1Xq6tLlaPVz_gpdW_kaJndHVsVCODEg_aem_RADmssD2Bdeeyqmq8PySfg
