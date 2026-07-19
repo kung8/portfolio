@@ -19,6 +19,7 @@ const { ALL_PURPOSE_FLOUR, BAKING_PAN, BAKING_POWDER, BLACK_PEPPER, BUTTERMILK, 
 const SPICY_RANCH_DRESSING = 'Spicy Ranch Dressing';
 const FLOUR_DREDGE = 'Flour Dredge';
 const EGG_DREDGE = 'Egg Dredge';
+const ONION_SECTION = 'Onion';
 
 const PREP_SPICY_RANCH_DRESSING = 'Prep Spicy Ranch Dressing';
 
@@ -30,7 +31,7 @@ module.exports = {
     available: true,
     recommended: false,
     createdAt: '2026-07-18 18:18:32',
-    modifiedAt: '2026-07-18 18:18:32',
+    modifiedAt: '2026-07-18 18:22:27',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.DEEP_FRY],
@@ -69,7 +70,7 @@ module.exports = {
         { ...EGG, amount: 1, unit: '', additionalDetails: '', section: EGG_DREDGE },
         { ...MILK, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: EGG_DREDGE },
 
-        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: '', section: '' },
+        { ...YELLOW_ONION, amount: 1, unit: INGREDIENT_UNITS.LARGE, additionalDetails: '', section: ONION_SECTION },
     ],
     appliances: [
         DEEP_FRYER,
