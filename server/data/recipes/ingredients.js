@@ -609,6 +609,7 @@ const INGREDIENTS = {
         GLASS_JAR: { name: 'glass jar', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         GLASSWARE: { name: 'glassware', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         GRATER: { name: 'grater', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
+        JAR_WITH_LID: { name: 'jar with lid', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         KETTLE: { name: 'kettle', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         KITCHEN_SCISSORS: { name: 'kitchen scissors', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         KITCHEN_TOWEL: { name: 'kitchen towel', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },

@@ -265,6 +265,7 @@ const noBakeCannoliDelight = require("./recipes/no-bake-cannoli-delight");
 const noBakeCookie = require("./recipes/no-bake-cookie");
 const noBakePumpkinPie = require('./recipes/no-bake-pumpkin-pie.js');
 const oatmealRaisinCookies = require("./recipes/oatmeal-raisin-cookies");
+const onionRings = require('./recipes/onion-rings.js');
 const orangeChicken = require("./recipes/orange-chicken");
 const orangeChickenDrumettes = require("./recipes/orange-chicken-drumettes");
 const oyakodon = require("./recipes/oyakodon");
@@ -704,6 +705,7 @@ const recipes = [
     meatballSub,
     garlicButter,
     texasRoadhouseButterRolls,
+    onionRings,
     frenchBaguettes,
     sourdoughStarter,
     sourdoughBread,
