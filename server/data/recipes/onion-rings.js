@@ -1,4 +1,4 @@
-// const rings1 = '../assets/Products/onion-rings-1.jpeg';
+const rings1 = '../assets/Products/onion-rings-1.jpeg';
 
 const {
     CATEGORIES,
@@ -24,14 +24,13 @@ const ONION_SECTION = 'Onion';
 const PREP_SPICY_RANCH_DRESSING = 'Prep Spicy Ranch Dressing';
 
 module.exports = {
-    wip: true,
     cardName: 'Onion Rings',
     name: 'Onion Rings',
-    img: '',
+    img: rings1,
     available: true,
-    recommended: false,
+    recommended: true,
     createdAt: '2026-07-18 18:18:32',
-    modifiedAt: '2026-07-18 22:55:50',
+    modifiedAt: '2026-07-19 22:38:37',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.DEEP_FRY],

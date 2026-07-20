@@ -1,4 +1,5 @@
-// const puffs1 = '../assets/Products/ham-and-spinach-puffs-1.jpeg';
+const puffs1 = '../assets/Products/ham-and-spinach-puffs-1.jpeg';
+const puffs2 = '../assets/Products/ham-and-spinach-puffs-2.jpeg';
 
 const {
     CATEGORIES,
@@ -26,14 +27,13 @@ const PREP_SPINACH_FILLING = 'Prep Spinach Filling';
 const PREP_PASTRY_DOUGH = 'Prep Pastry Dough';
 
 module.exports = {
-    wip: true,
     cardName: 'Ham and Spinach Puffs',
     name: 'Ham and Spinach Puffs',
-    img: '',
+    img: puffs2,
     available: true,
-    recommended: false,
+    recommended: true,
     createdAt: '2026-07-14 21:33:40',
-    modifiedAt: '2026-07-14 21:33:40',
+    modifiedAt: '2026-07-19 22:38:37',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -55,7 +55,7 @@ module.exports = {
     ingredients: [
         { ...REFRIGERATED_PUFF_PASTRY, amount: 17.3, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: PUFF_PASTRY_SECTION },
 
-        { ...BABY_SPINACH, amount: 3, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SPINACH_FILLING_SECTION },
+        { ...BABY_SPINACH, amount: 3, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'chopped', section: SPINACH_FILLING_SECTION },
         { ...OLIVE_OIL, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPINACH_FILLING_SECTION },
         { ...SALT, amount: 1 / 8, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPINACH_FILLING_SECTION },
         { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SPINACH_FILLING_SECTION },
@@ -64,7 +64,7 @@ module.exports = {
 
         { ...DIJON_MUSTARD, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: OTHER_FILLING_SECTION },
         { ...BLACK_FOREST_HAM, amount: 18, unit: INGREDIENT_UNITS.SLICE, additionalDetails: '', section: OTHER_FILLING_SECTION },
-        { ...GRUYERE_CHEESE, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: OTHER_FILLING_SECTION },
+        { ...GRUYERE_CHEESE, amount: 4, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: 'grated', section: OTHER_FILLING_SECTION },
     ],
     appliances: [
         OVEN,
@@ -89,7 +89,7 @@ module.exports = {
         { step: `Top with a slice of ham (fold slices as needed to fit).`, section: SECTIONS.ASSEMBLE },
         { step: `Lightly spray the pockets of a muffin tin with cooking spray.`, section: SECTIONS.ASSEMBLE },
         { step: `Set dough squares in each pocket of the muffin tin.`, section: SECTIONS.ASSEMBLE },
-        { step: `Fill each dough square with 2 tablespoon of spinach filling and 1 tablespoon of gruyere.`, section: SECTIONS.ASSEMBLE },
+        { step: `Fill each dough square with 2 tablespoon of spinach filling and 1 tablespoon of gruyere.`, section: SECTIONS.ASSEMBLE, img: puffs1 },
 
         { step: `Bake until golden brown (about 15 minutes).`, section: SECTIONS.BAKE },
 
