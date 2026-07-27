@@ -22,7 +22,7 @@ module.exports = {
     available: true,
     recommended: false,
     createdAt: '2024-03-10 21:37:46',
-    modifiedAt: '2025-11-14 23:38:52',
+    modifiedAt: '2026-07-27 08:39:31',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -30,6 +30,7 @@ module.exports = {
     yields: { amount: 15, unit: YIELD_UNITS.SERVING },
     prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 60, unit: TIME_UNITS.MINUTE },
+    waitTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
         {
             label: 'Ted Lasso',

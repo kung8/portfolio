@@ -1,17 +1,17 @@
 const pepe0 = '../assets/Products/cacio-e-pepe-0.jpeg';
+const pepe1 = '../assets/Products/cacio-e-pepe-1.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { BLACK_PEPPER, COLANDER, PECORINO_ROMANO, SAUCEPAN, SPAGHETTI_NOODLES, STOVE, TONGS, UNSALTED_BUTTER } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Cacio e Pepe',
     name: 'Cacio e Pepe',
-    img: '',
+    img: pepe1,
     available: true,
-    recommended: false,
+    recommended: true,
     createdAt: '2026-06-06 21:07:13',
-    modifiedAt: '2026-06-23 22:25:30',
+    modifiedAt: '2026-07-27 08:39:31',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.SAUTE],
