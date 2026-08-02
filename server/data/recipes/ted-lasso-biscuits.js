@@ -22,7 +22,7 @@ module.exports = {
     available: true,
     recommended: false,
     createdAt: '2024-03-10 21:37:46',
-    modifiedAt: '2026-07-27 08:39:31',
+    modifiedAt: '2026-08-02 15:57:04',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -43,8 +43,8 @@ module.exports = {
         { ...UNSALTED_BUTTER, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'at room temperature', section: SECTIONS.BATTER },
         { ...POWDERED_SUGAR, amount: 3 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BATTER },
         { ...ALL_PURPOSE_FLOUR, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.BATTER },
-        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BATTER },
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BATTER },
+        { ...VANILLA_EXTRACT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BATTER },
     ],
     appliances: [
         STAND_MIXER,
@@ -52,12 +52,12 @@ module.exports = {
         OVEN,
     ],
     supplies: [
-        BAKING_PAN,
+        { ...BAKING_PAN, additionalDetails: '9 x 9 inches' },
     ],
     directions: [
         { step: `In a stand mixer, beat the butter until fluffy (about 3 to 5 minutes).`, section: SECTIONS.PREP_BATTER },
         { step: `Gradually add powdered sugar while butter is mixing.`, section: SECTIONS.PREP_BATTER },
-        { step: `Add flour and salt. Mix on low.`, section: SECTIONS.PREP_BATTER },
+        { step: `Add flour, salt and vanilla. Mix on low.`, section: SECTIONS.PREP_BATTER },
         { step: `Pour batter into the baking pan.`, section: SECTIONS.PREP_BATTER },
         { step: `Refrigerate for about 30 minutes.`, section: SECTIONS.PREP_BATTER },
         { step: `Slice into rectangles.`, section: SECTIONS.PREP_BATTER, img: biscuits2 },
@@ -67,6 +67,9 @@ module.exports = {
         { step: `Bake until golden brown (about 45 to 60 minutes).`, section: SECTIONS.BAKE, img: biscuits3 },
 
         { step: `Enjoy these biscuits while you watch or re-watch the Ted Lasso television show. Cheers!`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `When the batter is set, it won't grow very much in the oven. Aim to get the batter height to about an inch.` },
     ],
     store: [
         {

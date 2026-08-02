@@ -6,20 +6,21 @@ const puffs5 = '../assets/Products/cream-puffs-5.jpeg';
 const puffs6 = '../assets/Products/cream-puffs-6.jpeg';
 const puffs7 = '../assets/Products/cream-puffs-7.jpeg';
 const puffs8 = '../assets/Products/cream-puffs-8.jpeg';
+const puffs9 = '../assets/Products/cream-puffs-9.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
-const { ALL_PURPOSE_FLOUR, BAKING_SHEET, EGG, HEAVY_CREAM, LARGE_POT, MILK, MIXING_BOWL, OVEN, SALT, STOVE, UNSALTED_BUTTER, VANILLA_INSTANT_PUDDING_MIX, WATER } = require('./ingredients');
+const { ALL_PURPOSE_FLOUR, BAKING_SHEET, BLUEBERRY, EGG, HEAVY_CREAM, LARGE_POT, MILK, MIXING_BOWL, OVEN, RASPBERRY, SALT, STOVE, STRAWBERRY, UNSALTED_BUTTER, VANILLA_INSTANT_PUDDING_MIX, WATER } = require('./ingredients');
 
 const PUFF = 'Puff';
 
 module.exports = {
     cardName: 'Cream Puffs',
     name: 'Cream Puffs',
-    img: puffs8,
+    img: puffs9,
     available: true,
     recommended: true,
     createdAt: '2024-10-19 02:31:33',
-    modifiedAt: '2025-11-14 23:38:52',
+    modifiedAt: '2026-08-02 15:57:04',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH, GENRES.ITALIAN],
     method: [METHODS.BAKE],
@@ -29,11 +30,11 @@ module.exports = {
     prepTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 30, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Cream Puffs', 
+        {
+            label: 'Cream Puffs',
             link: 'https://www.allrecipes.com/recipe/15869/cream-puffs/',
-            authors: [''],
-            finder: 'Kevin Ung', 
+            authors: ['Shellie Wendel'],
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -45,6 +46,10 @@ module.exports = {
         { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: PUFF },
         { ...ALL_PURPOSE_FLOUR, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: PUFF },
         { ...EGG, amount: 4, unit: '', additionalDetails: '', section: PUFF },
+
+        { ...STRAWBERRY, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
+        { ...RASPBERRY, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
+        { ...BLUEBERRY, amount: '', unit: '', additionalDetails: 'optional', section: SECTIONS.TOPPINGS },
     ],
     appliances: [
         STOVE,
@@ -69,7 +74,8 @@ module.exports = {
         { step: `Let cool.`, section: PUFF, img: puffs5 },
 
         { step: `Either carefully split the puffs and fill with the cream filling or pipe into the shell.`, section: SECTIONS.ASSEMBLE, img: [puffs6, puffs7] },
-        { step: `Enjoy these delicious desserts.`, section: SECTIONS.SERVE },
+        { step: `Optionally add berries and top puffs.`, section: SECTIONS.ASSEMBLE },
+        { step: `Enjoy these delicious desserts.`, section: SECTIONS.SERVE, img: puffs8 },
     ],
     store: [
         {
