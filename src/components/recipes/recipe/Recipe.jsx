@@ -245,7 +245,7 @@ export const Recipe = ({ match }) => {
                         <h1 className={`heading ${getRecipeFontSizeClass()}`}>{item?.name ?? ''}</h1>
 
                         <div className="icons-wrapper">
-                            <RecipePageShareMenu item={item} />
+                            <RecipePageShareMenu isLoaded={isLoaded} item={item} />
                             <img
                                 src={settingsBtn}
                                 alt="settings"

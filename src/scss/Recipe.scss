@@ -117,6 +117,16 @@
                 &:hover {
                     background: theme.$tan;
                 }
+
+                &:disabled {
+                    color: theme.$darkgrey;
+                    cursor: not-allowed;
+                    opacity: 0.7;
+
+                    &:hover {
+                        background: transparent;
+                    }
+                }
             }
         }
 
@@ -1467,6 +1477,395 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media print {
+    @page {
+        margin: 0.35in;
+    }
+
+    .page.recipe {
+        background: #fff !important;
+        color: #000 !important;
+        min-width: auto !important;
+        padding: 0 !important;
+        height: auto !important;
+    }
+
+    .recipe {
+        overflow: visible !important;
+        color: #000 !important;
+
+        .heading-container {
+            margin-bottom: 8px;
+
+            .back-btn,
+            .icons-wrapper,
+            .recipe-page-share-menu-container,
+            .recipe-page-share-menu-button,
+            .recipe-page-share-popover,
+            .recipe-share-menu-container,
+            .recipe-share-menu-button,
+            .recipe-share-popover,
+            .settings-img,
+            .list-img {
+                display: none !important;
+                visibility: hidden !important;
+            }
+
+            .heading {
+                color: #000 !important;
+                margin-bottom: 8px;
+            }
+        }
+
+        .overlay,
+        .recipe-image-modal-container,
+        .add-ingredients-to-grocery-list-modal,
+        .add-supplies-to-grocery-list-modal,
+        .grocery-list-modal-container,
+        .email-recipe-form-with-tabs,
+        .cook-mode,
+        .loader-container {
+            display: none !important;
+            visibility: hidden !important;
+        }
+
+        .recipe-details {
+            color: #000 !important;
+            font-size: 11pt;
+            line-height: 1.25;
+
+            .recipe-layout-standard {
+                display: block;
+                margin-top: 0;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+
+                .recipe-ingredients-supplies-and-appliances-container {
+                    float: left;
+                    width: 34%;
+                    margin-right: 18px;
+                    margin-bottom: 0;
+                    break-inside: auto;
+                    page-break-inside: auto;
+                }
+
+                > div:last-child {
+                    overflow: hidden;
+                }
+            }
+
+            .recipe-layout-stacked {
+                margin-top: 0;
+            }
+
+            .direction-container {
+                margin-top: 0;
+                margin-bottom: 12px;
+                break-inside: auto;
+                page-break-inside: auto;
+
+                &:not(:first-of-type) {
+                    border-top: 1px solid #d9d9d9;
+                    margin-top: 14px;
+                    padding-top: 6px;
+                }
+            }
+
+            .recipe-modified-at-container {
+                margin-bottom: 2px;
+            }
+
+            .prep-time,
+            .cook-time,
+            .wait-time {
+                margin-bottom: 2px;
+            }
+
+            .yields-container {
+                margin-bottom: 6px;
+
+                .yields {
+                    display: inline-flex;
+                    align-items: baseline;
+                    flex-wrap: nowrap;
+                    column-gap: 6px;
+                    white-space: nowrap;
+
+                    .yield-text {
+                        margin-top: 0;
+                        white-space: nowrap;
+                    }
+
+                    .yield-amount-container {
+                        display: inline-flex;
+                        column-gap: 4px;
+                        align-items: baseline;
+                        flex-wrap: nowrap;
+                        white-space: nowrap;
+
+                        .applied-yield-input-container {
+                            display: inline-flex;
+                            column-gap: 3px;
+                            align-items: baseline;
+                            flex-wrap: nowrap;
+
+                            .applied-yield-text {
+                                white-space: nowrap;
+                            }
+
+                            .applied-yield-input {
+                                width: 3ch !important;
+                                min-width: 0 !important;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                                font-size: 11pt !important;
+                                line-height: 1 !important;
+                                text-align: right;
+                                appearance: none;
+                                -webkit-appearance: none;
+                                -moz-appearance: textfield;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .recipe-modified-at-label,
+            .inaccurate-badge,
+            .method-type,
+            .ingredient-additional-details,
+            .supply-additional-details,
+            .recipe-finder,
+            .recipe-author,
+            .no-link-label-and-author {
+                color: #555 !important;
+            }
+
+            .recipe-ingredients-label-container .grocery-list-button-container,
+            .supply-label-container .grocery-list-button-container,
+            .quick-yield-adjustment-container,
+            .dash,
+            .checkbox-ingredient,
+            .checkbox-supply {
+                display: none !important;
+            }
+
+            .recipe-image,
+            .additional-recipe-image,
+            .additional-recipe-video,
+            .note-image,
+            .reheat-image,
+            .storage-image,
+            .figures-container,
+            .recipe-notes,
+            .recipe-storage,
+            .recipe-reheat,
+            .recipe-websites-list,
+            .notes-label,
+            .storage-label,
+            .reheat-label,
+            .website-label {
+                display: none !important;
+                visibility: hidden !important;
+            }
+
+            .recipe-detail-label,
+            .separated-recipe-detail-label,
+            .figure-label,
+            .recipe-step,
+            .recipe-step-link,
+            .ingredient-name,
+            .ingredient-additional-details,
+            .checkbox-supply-label,
+            .supply-additional-details,
+            .appliance-item,
+            .recipe-note,
+            .instruction,
+            .storage,
+            .prep-time-label,
+            .cook-time-label,
+            .wait-time-label,
+            .yield-text,
+            .applied-yield-text {
+                color: #000 !important;
+                font-size: 11pt !important;
+            }
+
+            .recipe-detail-label {
+                margin-bottom: 6px;
+                font-size: 12pt !important;
+            }
+
+            .separated-recipe-detail-label {
+                margin-bottom: 4px;
+                font-size: 10pt !important;
+            }
+
+            .recipe-detail-list,
+            .separated-recipe-detail-list,
+            .recipe-notes,
+            .recipe-storage,
+            .recipe-reheat,
+            .recipe-websites-list {
+                margin-bottom: 10px;
+            }
+
+            .applied-yield-input {
+                border: 0 !important;
+                padding: 0 !important;
+                width: auto !important;
+                color: #000 !important;
+                background: transparent !important;
+            }
+
+            .recipe-container,
+            .separated-recipe-container {
+                margin-bottom: 8px;
+            }
+
+            .recipe-detail-list li,
+            .separated-recipe-detail-list li,
+            .recipe-websites-list .recipe-website-item {
+                margin-bottom: 0;
+                line-height: 1.1;
+            }
+
+            .recipe-ingredients-label-container,
+            .supply-label-container {
+                margin-bottom: 8px;
+            }
+
+            .separated-recipe-detail-list {
+                list-style: none;
+                counter-reset: print-step-counter;
+                padding-left: 0;
+                margin: 0;
+                break-inside: auto;
+                page-break-inside: auto;
+
+                .recipe-step-list-item {
+                    display: grid !important;
+                    list-style: none !important;
+                    counter-increment: print-step-counter;
+                    grid-template-columns: 18px 1fr;
+                    column-gap: 6px;
+                    align-items: start;
+                    padding: 0 0 4px !important;
+                    border: 0 !important;
+                    border-bottom: 0 !important;
+                    margin: 0 !important;
+                    line-height: 1.25 !important;
+                    cursor: default;
+                    max-width: 100%;
+                    font-size: 10pt !important;
+                    min-height: 0 !important;
+                    break-inside: auto;
+                    page-break-inside: auto;
+
+                    grid-template-columns: none;
+                    grid-column-gap: 0;
+                    align-items: initial;
+
+                    &::before {
+                        content: counter(print-step-counter) ".";
+                        display: block !important;
+                        width: 18px;
+                        margin-right: 0;
+                        font-size: 10pt !important;
+                        font-weight: 400;
+                        color: #000;
+                        line-height: 1.35 !important;
+                        text-align: right;
+                    }
+
+                    &.direction-checked {
+                        &::before {
+                            content: counter(print-step-counter) ".";
+                            display: block !important;
+                        }
+                    }
+
+                    > * {
+                        grid-column: 2;
+                        display: inline !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                    }
+
+                    > div {
+                        display: block !important;
+                        line-height: 1.35 !important;
+                        width: auto;
+                    }
+
+                    .recipe-step,
+                    .recipe-step-link,
+                    .figure-label-anchor,
+                    .quoted-text-link {
+                        display: inline !important;
+                        font-size: 10pt !important;
+                        line-height: 1.35 !important;
+                    }
+                }
+
+                li + li {
+                    margin-top: 0 !important;
+                }
+            }
+
+            .checkbox-ingredient-container {
+                margin-bottom: 1px;
+                line-height: 1.12 !important;
+            }
+
+            .checkbox-supply-container {
+                margin-bottom: 8px;
+                padding-bottom: 3px;
+                line-height: 1.35 !important;
+
+                .supply-label {
+                    display: block;
+                }
+            }
+
+            .recipe-detail-list li.appliance-item {
+                display: block;
+                margin-bottom: 8px;
+                padding-bottom: 3px;
+                line-height: 1.35 !important;
+            }
+
+            .ingredient-name,
+            .ingredient-additional-details {
+                line-height: 1.12 !important;
+            }
+
+            .checkbox-supply-label,
+            .supply-additional-details,
+            .appliance-item {
+                line-height: 1.35 !important;
+            }
+
+            .sectioned-recipe-container {
+                margin-bottom: 6px;
+            }
+
+            .figure-label-anchor,
+            .ingredient-label-with-link,
+            .link-text,
+            .quoted-text-link,
+            .recipe-link {
+                color: #000 !important;
+                text-decoration: none !important;
             }
         }
     }

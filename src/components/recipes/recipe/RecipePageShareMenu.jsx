@@ -1,6 +1,6 @@
 import { useRecipeShareMenu } from '../hooks/use-recipe-share-menu';
 
-export const RecipePageShareMenu = ({ item }) => {
+export const RecipePageShareMenu = ({ isLoaded, item }) => {
     const {
         copyLinkLabel,
         handleShareAction,
@@ -9,6 +9,17 @@ export const RecipePageShareMenu = ({ item }) => {
         shareMenuRef,
         showShareMenu,
     } = useRecipeShareMenu({ item });
+
+    const handleDownloadPdf = () => {
+        if (!isLoaded) return;
+
+        setShowShareMenu(false);
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                window.print();
+            });
+        });
+    };
 
     return (
         <div className="recipe-page-share-menu-container" ref={shareMenuRef}>
@@ -32,6 +43,7 @@ export const RecipePageShareMenu = ({ item }) => {
                     onClick={(event) => event.stopPropagation()}
                     role="menu"
                 >
+                    <button disabled={!isLoaded} onClick={handleDownloadPdf} role="menuitem" type="button">Print Compact Recipe</button>
                     <button onClick={() => handleShareAction('copy')} role="menuitem" type="button">{copyLinkLabel}</button>
                     <button onClick={() => handleShareAction('text-message')} role="menuitem" type="button">Text Recipe</button>
                     <button onClick={() => handleShareAction('facebook')} role="menuitem" type="button">Share to Facebook</button>
