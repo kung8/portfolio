@@ -13,6 +13,7 @@ import { GroceryListModal } from '../grocery-list-modal/GroceryListModal';
 import { useGroceryList } from '../hooks/use-grocery-list';
 import {  GROCERY_LIST_VIEW, categorizeRecipeType, formatYield, getIngredientData, getRecipeFontSizeClass, getRecipeRoute, handleModalClass, setSelectedModalViewLocalStorageKey } from '../utils';
 import { AddToGroceryListModal } from './AddToGroceryListModal';
+import { RecipePageShareMenu } from './RecipePageShareMenu';
 import { RecipeContext } from './RecipeContext';
 import { RecipeDetails } from './RecipeDetails';
 import { RecipeImageModal } from './RecipeImageModal';
@@ -244,6 +245,7 @@ export const Recipe = ({ match }) => {
                         <h1 className={`heading ${getRecipeFontSizeClass()}`}>{item?.name ?? ''}</h1>
 
                         <div className="icons-wrapper">
+                            <RecipePageShareMenu item={item} />
                             <img
                                 src={settingsBtn}
                                 alt="settings"

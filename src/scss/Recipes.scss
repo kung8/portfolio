@@ -295,6 +295,10 @@
             width: 16.66%;
             padding: 4px;
 
+            &:has(.recipe-share-menu-button.open) {
+                z-index: 20;
+            }
+
             &:hover {
                 opacity: 0.7;
                 transition-property: all;
@@ -348,6 +352,76 @@
                     text-shadow: 1px 1px 1px theme.$black;
                     letter-spacing: 1.5px;
                     font-size: 12px;
+                }
+            }
+
+            .recipe-share-menu-container {
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                z-index: 21;
+            }
+
+            .recipe-share-menu-button {
+                width: 30px;
+                height: 30px;
+                border: 0;
+                border-radius: 50%;
+                background: rgba(0, 0, 0, 0.65);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                column-gap: 3px;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgba(0, 0, 0, 0.82);
+                }
+
+                span {
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background: theme.$white;
+                }
+
+                &.open {
+                    background: rgba(0, 0, 0, 0.82);
+                }
+            }
+
+            .recipe-share-popover {
+                position: absolute;
+                top: 38px;
+                left: 0;
+                right: auto;
+                bottom: auto;
+                min-width: 190px;
+                z-index: 22;
+                background: theme.$white;
+                border: 1px solid theme.$grey;
+                border-radius: 8px;
+                padding: 6px;
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+
+                button {
+                    border: 0;
+                    border-radius: 4px;
+                    background: transparent;
+                    color: theme.$black;
+                    font-size: 12px;
+                    text-align: left;
+                    padding: 8px 10px;
+                    white-space: nowrap;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: theme.$tan;
+                    }
                 }
             }
 

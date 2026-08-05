@@ -1,6 +1,10 @@
+import { RecipeShareMenu } from './RecipeShareMenu';
+
 export const RecipeItem = ({ item, onClick }) => {
     return (
         <div className="recipe-item-container" onClick={onClick}>
+            <RecipeShareMenu item={item} />
+
             {item.img ? (
                 <img src={item.img ? item.img : null} alt={item.name} className="recipe-image" />
             ) : (
