@@ -81,6 +81,26 @@ export const useRecipeShareMenu = ({ item }) => {
         }
     };
 
+    const openNativeShareSheet = async () => {
+        if (!navigator.share) return false;
+
+        try {
+            await navigator.share({
+                title: recipeName,
+                url: sharedUrl,
+            });
+            setShowShareMenu(false);
+            return true;
+        } catch (error) {
+            // If user cancels, do not force a fallback flow.
+            if (error?.name === 'AbortError') {
+                setShowShareMenu(false);
+                return true;
+            }
+            return false;
+        }
+    };
+
     const handleShareAction = async (type) => {
         const encodedShareUrl = encodeURIComponent(sharedUrl);
         const encodedShareText = encodeURIComponent(sharedText);
@@ -88,6 +108,11 @@ export const useRecipeShareMenu = ({ item }) => {
         if (type === 'copy') {
             await handleCopyLink();
             return;
+        }
+
+        if (['facebook', 'text-message', 'email', 'instagram', 'whatsapp'].includes(type)) {
+            const openedNativeSheet = await openNativeShareSheet();
+            if (openedNativeSheet) return;
         }
 
         if (type === 'facebook') {
@@ -98,21 +123,13 @@ export const useRecipeShareMenu = ({ item }) => {
             window.location.href = `sms:?&body=${encodedShareText}`;
         }
 
+        if (type === 'email') {
+            window.location.href = `mailto:?subject=${encodeURIComponent(`Kevin's ${recipeName} recipe`)}&body=${encodedShareText}`;
+        }
+
         if (type === 'instagram') {
-            if (navigator.share) {
-                try {
-                    await navigator.share({
-                        title: recipeName,
-                        text: sharedText,
-                        url: sharedUrl,
-                    });
-                } catch (error) {
-                    // No-op: user canceled native share picker.
-                }
-            } else {
-                await handleCopyLink();
-                openInNewTab('https://www.instagram.com/');
-            }
+            await handleCopyLink();
+            openInNewTab('https://www.instagram.com/');
         }
 
         if (type === 'whatsapp') {

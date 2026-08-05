@@ -44,6 +44,10 @@ export const RecipeShareMenu = ({ item }) => {
                     }} role="menuitem" type="button">Text Recipe</button>
                     <button onClick={(event) => {
                         event.stopPropagation();
+                        handleShareAction('email');
+                    }} role="menuitem" type="button">Email Recipe</button>
+                    <button onClick={(event) => {
+                        event.stopPropagation();
                         handleShareAction('facebook');
                     }} role="menuitem" type="button">Share to Facebook</button>
                     <button onClick={(event) => {
