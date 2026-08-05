@@ -45,11 +45,7 @@ export const RecipePageShareMenu = ({ isLoaded, item }) => {
                 >
                     <button disabled={!isLoaded} onClick={handleDownloadPdf} role="menuitem" type="button">Print Compact Recipe</button>
                     <button onClick={() => handleShareAction('copy')} role="menuitem" type="button">{copyLinkLabel}</button>
-                    <button onClick={() => handleShareAction('text-message')} role="menuitem" type="button">Text Recipe</button>
-                    <button onClick={() => handleShareAction('email')} role="menuitem" type="button">Email Recipe</button>
-                    <button onClick={() => handleShareAction('facebook')} role="menuitem" type="button">Share to Facebook</button>
-                    <button onClick={() => handleShareAction('instagram')} role="menuitem" type="button">Share to Instagram</button>
-                    <button onClick={() => handleShareAction('whatsapp')} role="menuitem" type="button">Share to WhatsApp</button>
+                    <button onClick={() => handleShareAction('share')} role="menuitem" type="button">Share</button>
                 </div>
             )}
         </div>

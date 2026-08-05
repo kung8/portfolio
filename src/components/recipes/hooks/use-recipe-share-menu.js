@@ -2,10 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 
 import { baseUrl, getRecipeRoute } from '../utils';
 
-const openInNewTab = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
-};
-
 export const useRecipeShareMenu = ({ item }) => {
     const [showShareMenu, setShowShareMenu] = useState(false);
     const [copyLinkLabel, setCopyLinkLabel] = useState('Copy Link');
@@ -14,7 +10,6 @@ export const useRecipeShareMenu = ({ item }) => {
 
     const sharedUrl = `${baseUrl}${getRecipeRoute(item)}`;
     const recipeName = item?.name ?? '';
-    const sharedText = `Check out Kevin's "${recipeName}" recipe at ${sharedUrl}.`;
 
     useEffect(() => {
         if (!showShareMenu) return;
@@ -102,41 +97,20 @@ export const useRecipeShareMenu = ({ item }) => {
     };
 
     const handleShareAction = async (type) => {
-        const encodedShareUrl = encodeURIComponent(sharedUrl);
-        const encodedShareText = encodeURIComponent(sharedText);
-
         if (type === 'copy') {
             await handleCopyLink();
             return;
         }
 
-        if (['facebook', 'text-message', 'email', 'instagram', 'whatsapp'].includes(type)) {
+        if (type === 'share') {
             const openedNativeSheet = await openNativeShareSheet();
-            if (openedNativeSheet) return;
-        }
+            if (openedNativeSheet) {
+                return;
+            }
 
-        if (type === 'facebook') {
-            openInNewTab(`https://www.facebook.com/sharer/sharer.php?u=${encodedShareUrl}`);
-        }
-
-        if (type === 'text-message') {
-            window.location.href = `sms:?&body=${encodedShareText}`;
-        }
-
-        if (type === 'email') {
-            window.location.href = `mailto:?subject=${encodeURIComponent(`Kevin's ${recipeName} recipe`)}&body=${encodedShareText}`;
-        }
-
-        if (type === 'instagram') {
             await handleCopyLink();
-            openInNewTab('https://www.instagram.com/');
+            setShowShareMenu(false);
         }
-
-        if (type === 'whatsapp') {
-            openInNewTab(`https://wa.me/?text=${encodedShareText}`);
-        }
-
-        setShowShareMenu(false);
     };
 
     return {

@@ -40,24 +40,8 @@ export const RecipeShareMenu = ({ item }) => {
                     }} role="menuitem" type="button">{copyLinkLabel}</button>
                     <button onClick={(event) => {
                         event.stopPropagation();
-                        handleShareAction('text-message');
-                    }} role="menuitem" type="button">Text Recipe</button>
-                    <button onClick={(event) => {
-                        event.stopPropagation();
-                        handleShareAction('email');
-                    }} role="menuitem" type="button">Email Recipe</button>
-                    <button onClick={(event) => {
-                        event.stopPropagation();
-                        handleShareAction('facebook');
-                    }} role="menuitem" type="button">Share to Facebook</button>
-                    <button onClick={(event) => {
-                        event.stopPropagation();
-                        handleShareAction('instagram');
-                    }} role="menuitem" type="button">Share to Instagram</button>
-                    <button onClick={(event) => {
-                        event.stopPropagation();
-                        handleShareAction('whatsapp');
-                    }} role="menuitem" type="button">Share to WhatsApp</button>
+                        handleShareAction('share');
+                    }} role="menuitem" type="button">Share</button>
                 </div>
             )}
         </div>
