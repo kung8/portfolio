@@ -20,7 +20,7 @@ module.exports = {
     available: true,
     recommended: true,
     createdAt: '2024-09-20 15:00:24',
-    modifiedAt: '2026-05-31 19:59:15',
+    modifiedAt: '2026-08-04 23:52:26',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -68,7 +68,7 @@ module.exports = {
     supplies: [
         MEDIUM_BOWL,
         { ...MIXING_BOWL, amount: 2, unit: '' },
-        { ...CAKE_PAN, amount: 2, additionalDetails: '10 inch' },
+        { ...CAKE_PAN, amount: 2, additionalDetails: '9 inch' },
     ],
     directions: [
         { step: `In a medium bowl, mix together the grated carrots and brown sugar.`, section: CARROT_MIXTURE, img: cake1 },
@@ -91,6 +91,9 @@ module.exports = {
         { step: `Spread the frosting on one layer of the cake and place the other layer on top.`, section: ASSEMBLING },
         { step: `Frost the top layer and sprinkle it with walnut, as desired.`, section: ASSEMBLING, img: cake5 },
         { step: `Slice up the cake and enjoy this tasty rabbit food (just kidding don't feed this to rabbits).`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `This recipe makes about 3 layers of cake in a 9-inch cake pan. It might be 2 layers in a 10-inch.` },
     ],
     store: [
         {
