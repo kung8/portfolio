@@ -22,7 +22,7 @@ module.exports = {
     available: true,
     recommended: false,
     createdAt: '2025-11-08 17:28:48',
-    modifiedAt: '2026-06-07 20:07:34',
+    modifiedAt: '2026-08-08 22:11:16',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH, GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -47,8 +47,8 @@ module.exports = {
         { ...CINNAMON, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BATTER },
         { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BATTER },
 
-        { ...MILK, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'for glaze', section: SECTIONS.GLAZE },
-        { ...CONFECTIONERS_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'for glaze', section: SECTIONS.GLAZE },
+        { ...MILK, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.GLAZE },
+        { ...CONFECTIONERS_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.GLAZE },
     ],
     appliances: [
         OVEN,
@@ -67,8 +67,7 @@ module.exports = {
         { step: `Set aside.`, section: SECTIONS.PREP_CASSEROLE },
 
         { step: `In a mixing bowl, combine the "${SECTIONS.BATTER}" section ingredients.`, section: SECTIONS.PREP_BATTER },
-        { step: `Pour batter.`, section: SECTIONS.PREP_BATTER },
-
+        { step: `Pour batter over the torn bread.`, section: SECTIONS.PREP_BATTER },
 
         { step: `Bake until edges are browned and center is set (about 35 minutes).`, section: SECTIONS.BAKE },
 

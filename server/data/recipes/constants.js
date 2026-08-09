@@ -365,6 +365,7 @@ const SECTIONS = {
     PREP_EGGS: 'Prep Eggs',
     PREP_FILLING: 'Prep Filling',
     PREP_FISH: 'Prep Fish',
+    PREP_GLAZE: 'Prep Glaze',
     PREP_HAM: 'Prep Ham',
     PREP_MARINADE: 'Prep Marinade',
     PREP_NOODLES: 'Prep Noodles',
