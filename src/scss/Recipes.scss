@@ -359,6 +359,7 @@
                 position: absolute;
                 top: 12px;
                 left: 12px;
+                right: 12px;
                 z-index: 21;
             }
 
@@ -395,9 +396,12 @@
                 position: absolute;
                 top: 38px;
                 left: 0;
-                right: auto;
+                right: 0;
                 bottom: auto;
-                min-width: 190px;
+                width: 100%;
+                min-width: 0;
+                max-width: 100%;
+                box-sizing: border-box;
                 z-index: 22;
                 background: theme.$white;
                 border: 1px solid theme.$grey;

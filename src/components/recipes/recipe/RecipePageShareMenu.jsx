@@ -1,4 +1,5 @@
 import { useRecipeShareMenu } from '../hooks/use-recipe-share-menu';
+import shareIcon from '../../../Assets/send.png';
 
 export const RecipePageShareMenu = ({ isLoaded, item }) => {
     const {
@@ -34,7 +35,7 @@ export const RecipePageShareMenu = ({ isLoaded, item }) => {
                 }}
                 type="button"
             >
-                Share
+                <img alt="" aria-hidden="true" className="recipe-page-share-menu-icon" src={shareIcon} />
             </button>
 
             {showShareMenu && (
