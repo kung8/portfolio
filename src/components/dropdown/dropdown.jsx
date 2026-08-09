@@ -8,7 +8,6 @@ export const Dropdown = ({
     DropdownSelectorLeftContent,
     onClickOutside,
     openAbove,
-    optionsCount,
     show,
 }) => {
     const dropdownRef = useRef(null);
@@ -31,13 +30,12 @@ export const Dropdown = ({
         };
     }, [onClickOutside, show]);
 
-    const getTopPosition = () => {
-        if (optionsCount === 3) {
-            return { top: '-93px' };
-        } else if (optionsCount === 2) {
-            return { top: '-62px' };
+    const getMenuPosition = () => {
+        if (openAbove) {
+            return { bottom: 'calc(100% + 1px)', top: 'auto' };
         }
-        return { top: '100%' };
+
+        return { top: 'calc(100% + 1px)', bottom: 'auto' };
     }
 
     return (
@@ -47,7 +45,7 @@ export const Dropdown = ({
                 <img src={arrow} alt="arrow" className={`icon chevron-arrow ${show ? 'is-open' : ''} ${openAbove ? 'reverse' : ''}`} />
             </div>
             {show && (
-                <div className={`dropdown-options-container ${openAbove ? 'open-above' : ''}`} style={getTopPosition()}>
+                <div className={`dropdown-options-container ${openAbove ? 'open-above' : ''}`} style={getMenuPosition()}>
                     {DropdownContent}
                 </div>
             )}
