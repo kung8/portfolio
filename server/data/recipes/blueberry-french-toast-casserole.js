@@ -1,28 +1,28 @@
-// const example = '../assets/Products/example.jpeg';
+const casserole1 = '../assets/Products/blueberry-french-toast-casserole-1.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     BLUEBERRY,
     BRIOCHE,
     CASSEROLE_DISH,
     CINNAMON,
-    CONFECTIONERS_SUGAR,
     EGG,
     MILK,
     MIXING_BOWL,
     OVEN,
+    POWDERED_SUGAR,
     VANILLA_EXTRACT,
     WHISK,
 } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'French Toast Casserole',
     name: 'Blueberry French Toast Casserole',
-    img: '',
+    img: casserole1,
     available: true,
-    recommended: false,
+    recommended: true,
     createdAt: '2025-11-08 17:28:48',
-    modifiedAt: '2026-08-08 22:11:16',
+    modifiedAt: '2026-08-12 21:12:16',
     category: [CATEGORIES.BREAKFAST, CATEGORIES.DESSERT],
     genre: [GENRES.FRENCH, GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -31,11 +31,11 @@ module.exports = {
     prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
     cookTime: { amount: 35, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Blueberry French Toast Casserole', 
+        {
+            label: 'Blueberry French Toast Casserole',
             link: 'https://mixandmatchmama.com/2025/06/blueberry-french-toast-casserole-3/',
             authors: ['Shay'],
-            finder: 'Kevin Ung', 
+            finder: 'Kevin Ung',
         }
     ],
     ingredients: [
@@ -47,8 +47,8 @@ module.exports = {
         { ...CINNAMON, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BATTER },
         { ...VANILLA_EXTRACT, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.BATTER },
 
-        { ...MILK, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.GLAZE },
-        { ...CONFECTIONERS_SUGAR, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.GLAZE },
+        { ...MILK, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.GLAZE },
+        { ...POWDERED_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.GLAZE },
     ],
     appliances: [
         OVEN,
