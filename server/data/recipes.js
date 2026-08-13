@@ -254,6 +254,7 @@ const mexicanChickenBake = require("./recipes/mexican-chicken-bake"); // TODO: f
 const mexicanCilantroLimeChicken = require("./recipes/mexican-cilantro-lime-chicken");
 const mexicanEnchiladas = require("./recipes/mexican-enchiladas");
 const mexicanMeatballSoup = require("./recipes/mexican-meatball-soup");
+const miniDetroitPizza = require('./recipes/mini-detroit-pizza.js');
 const mississippiMudPotatoes = require('./recipes/mississippi-mud-potatoes.js');
 const mochi = require("./recipes/mochi");
 const monteCristoSandwich = require("./recipes/monte-cristo-sandwich");
@@ -547,6 +548,7 @@ const recipes = [
     spaghettiAglioEOlio,
     italianLasagna,
     pizza,
+    miniDetroitPizza,
     spicyItalianFlatbread,
     balsamicTomatoBruschetta,
     chickenCordonBleu,

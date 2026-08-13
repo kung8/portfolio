@@ -473,6 +473,7 @@ const INGREDIENTS = {
             name: 'honey', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1587049352851-8d4e89133924?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc2ODMxfA&ixlib=rb-4.0.3&q=80&w=400"
         },
         HONEY_MUSTARD: { name: 'honey mustard', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        HOT_HONEY: { name: 'hot honey', category: INGREDIENT_CATEGORY.CONDIMENTS },
         HOT_SAUCE: { name: 'hot sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         HUMMUS: {
             name: 'hummus', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1637949385162-e416fb15b2ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3NDE4fA&ixlib=rb-4.0.3&q=80&w=400"
@@ -629,6 +630,7 @@ const INGREDIENTS = {
         MEDIUM_POT: { name: 'medium pot', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         MEDIUM_SAUCEPAN: { name: 'medium saucepan', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         MICROWAVE: { name: 'microwave', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
+        MINI_BREAD_PAN: { name: 'mini bread pan', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         MIXER: { name: 'mixer', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         MIXING_BOWL: { name: 'mixing bowl', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },
         MORTAR_AND_PESTLE: { name: 'mortar and pestle', category: INGREDIENT_CATEGORY.COOKING_SUPPLIES },

@@ -8,7 +8,7 @@ const pizza7 = '../assets/Products/pizza-7.jpeg';
 const pizza8 = '../assets/Products/pizza-8.jpeg';
 const pizza9 = '../assets/Products/pizza-9.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
+const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require("./constants");
 const {
     ALL_PURPOSE_FLOUR,
     BACON,
@@ -70,7 +70,7 @@ module.exports = {
     available: true,
     recommended: true,
     createdAt: '2024-02-10 15:54:22',
-    modifiedAt: '2026-06-01 21:43:33',
+    modifiedAt: '2026-08-12 22:15:35',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
@@ -226,10 +226,14 @@ module.exports = {
         },
     ],
     reheat: [
-        // {
-        //     method: REHEAT_METHODS.BAKE,
-        //     instruction: '',
-        // },
+        {
+            method: REHEAT_METHODS.BAKE,
+            instruction: 'Bake pizza at 375ºF until cheese bubbles and crust is golden brown (about 8 to 12 minutes).',
+        },
+        {
+            method: REHEAT_METHODS.AIR_FRY,
+            instruction: 'Bake pizza at 350ºF until warmed through (about 4 to 6 minutes).',
+        },
     ],
     mealPrep: true,
 };
