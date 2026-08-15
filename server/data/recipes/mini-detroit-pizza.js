@@ -2,6 +2,7 @@ const pizza1 = '../assets/Products/mini-detroit-pizza-1.jpeg';
 const pizza2 = '../assets/Products/mini-detroit-pizza-2.jpeg';
 const pizza3 = '../assets/Products/mini-detroit-pizza-3.jpeg';
 const pizza4 = '../assets/Products/mini-detroit-pizza-4.jpeg';
+const pizza5 = '../assets/Products/mini-detroit-pizza-5.jpeg';
 
 const {
     CATEGORIES,
@@ -22,11 +23,11 @@ const { ALL_PURPOSE_FLOUR, COOLING_RACK, HOT_HONEY, MINI_BREAD_PAN, MOZZARELLA_C
 module.exports = {
     cardName: 'Mini Detroit Pizza',
     name: 'Mini Detroit Pizza',
-    img: pizza4,
+    img: pizza5,
     available: true,
     recommended: true,
     createdAt: '2026-08-12 22:15:35',
-    modifiedAt: '2026-08-15 15:18:30',
+    modifiedAt: '2026-08-15 15:23:33',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
@@ -79,7 +80,7 @@ module.exports = {
 
         { step: `Build the pizza as desired.`, section: SECTIONS.ASSEMBLE },
         { step: `Bake for 10 minutes.`, section: SECTIONS.BAKE },
-        { step: `Let it rest for 5 minutes in pan.`, section: SECTIONS.REST },
+        { step: `Let it rest for 5 minutes in pan.`, section: SECTIONS.REST, img: pizza4 },
         { step: `Enjoy these delicious pizzas topped with whatever!`, section: SECTIONS.SERVE },
     ],
     store: [
