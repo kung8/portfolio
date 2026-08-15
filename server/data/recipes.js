@@ -8,6 +8,7 @@ const appleDumplings = require('./recipes/apple-dumplings.js');
 const applePie = require("./recipes/apple-pie");
 const appleTart = require("./recipes/apple-tart");
 const appleTurnovers = require('./recipes/apple-turnovers.js');
+const bakedAsianChickenThighs = require('./recipes/baked-asian-chicken-thighs.js');
 const bakedBeans = require("./recipes/baked-beans");
 const bakedBreadedChicken = require("./recipes/baked-breaded-chicken");
 const bakedBrie = require('./recipes/baked-brie.js');
@@ -486,6 +487,7 @@ const recipes = [
     chopSuey,
     fiveSpiceBlend,
     tangYuan,
+    bakedAsianChickenThighs,
 
     // SINGAPOREAN
     singaporeanChickenRice,
