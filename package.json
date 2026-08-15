@@ -26,7 +26,6 @@
     "use-debounce": "^10.0.3"
   },
   "scripts": {
-    "dev": "node scripts/dev.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "BUILD_PATH=build-new npm run build && rm -rf build-old && mv build build-old 2>/dev/null || true && mv build-new build && pm2 restart portfolio",
