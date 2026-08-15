@@ -1,4 +1,7 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const pizza1 = '../assets/Products/mini-detroit-pizza-1.jpeg';
+const pizza2 = '../assets/Products/mini-detroit-pizza-2.jpeg';
+const pizza3 = '../assets/Products/mini-detroit-pizza-3.jpeg';
+const pizza4 = '../assets/Products/mini-detroit-pizza-4.jpeg';
 
 const {
     CATEGORIES,
@@ -17,14 +20,13 @@ const {
 const { ALL_PURPOSE_FLOUR, COOLING_RACK, HOT_HONEY, MINI_BREAD_PAN, MOZZARELLA_CHEESE, OLIVE_OIL, OVEN, PARMESAN_CHEESE, PEPPERONI, PIZZA_SAUCE, RUBBER_SPATULA, SALT, WATER, WHITE_SUGAR, YEAST } = require('./ingredients');
 
 module.exports = {
-    wip: true,
     cardName: 'Mini Detroit Pizza',
     name: 'Mini Detroit Pizza',
-    img: '',
+    img: pizza4,
     available: true,
-    recommended: false,
+    recommended: true,
     createdAt: '2026-08-12 22:15:35',
-    modifiedAt: '2026-08-14 16:48:22',
+    modifiedAt: '2026-08-15 15:18:30',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BAKE],
@@ -66,12 +68,13 @@ module.exports = {
     ],
     directions: [
         { step: `In a mixing bowl, combine the "${SECTIONS.DOUGH}" section ingredients until there are no clumps.`, section: SECTIONS.MAKE_DOUGH },
-        { step: `Divide between each loaf spot. Flatten the dough with a spatula.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Add about 1/6 cup in each loaf spot. Flatten the dough with a spatula.`, section: SECTIONS.MAKE_DOUGH },
         { step: `Cover. Let it double in size for about 2 hours.`, section: SECTIONS.MAKE_DOUGH },
+        { step: `Use a spatula to clean up the edges.`, section: SECTIONS.MAKE_DOUGH, img: [pizza1, pizza2] },
 
         { step: `Preheat the oven to 500ºF.`, section: SECTIONS.PREHEAT_OVEN },
 
-        { step: `Parbake for 6 minutes.`, section: SECTIONS.PARBAKE },
+        { step: `Parbake for 6 minutes.`, section: SECTIONS.PARBAKE, img: pizza3 },
         { step: `Transfer to cooling rack. Let it cool for 20 minutes.`, section: SECTIONS.PARBAKE },
 
         { step: `Build the pizza as desired.`, section: SECTIONS.ASSEMBLE },
