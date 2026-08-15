@@ -24,7 +24,7 @@ module.exports = {
     available: true,
     recommended: false,
     createdAt: '2026-08-15 16:06:43',
-    modifiedAt: '2026-08-15 16:06:43',
+    modifiedAt: '2026-08-15 16:09:30',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.ASIAN],
     method: [METHODS.BAKE],
@@ -63,6 +63,9 @@ module.exports = {
         { step: `Preheat the oven to 450ºF.`, section: SECTIONS.PREHEAT_OVEN },
         { step: `Bake until chicken reaches internal temperature of 165ºF (about 25 to 30 minutes).`, section: SECTIONS.BAKE },
         { step: `Enjoy this simple chicken dish with rice or your favorite grain.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `If the chicken is cooked but not browned, broil for a few minutes but keep an eye on it so it does not burn.`, section: SECTIONS.BAKE },
     ],
     store: [
         {
