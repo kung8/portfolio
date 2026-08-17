@@ -1,4 +1,4 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const thigh1 = '../assets/Products/honey-mustard-chicken-thigh-1.jpeg';
 
 const {
     CATEGORIES,
@@ -17,12 +17,11 @@ const {
 const { BAKING_PAN, BLACK_PEPPER, BONELESS_AND_SKINLESS_CHICKEN_THIGH, GARLIC, HONEY, MIXING_BOWL, ONION_POWDER, OVEN, SALT, VEGETABLE_OIL, WHITE_VINEGAR, YELLOW_MUSTARD } = require('./ingredients');
 
 module.exports = {
-    wip: true,
-    cardName: 'Asian Chicken Thighs',
-    name: 'Baked Asian Chicken Thighs',
-    img: '',
+    cardName: 'Honey Mustard Chicken Thighs',
+    name: 'Honey Mustard Chicken Thighs',
+    img: thigh1,
     available: true,
-    recommended: false,
+    recommended: true,
     createdAt: '2026-08-15 16:06:43',
     modifiedAt: '2026-08-15 16:09:30',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
