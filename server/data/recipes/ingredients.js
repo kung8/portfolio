@@ -324,6 +324,7 @@ const INGREDIENTS = {
         BLACK_BEANS: { name: 'black beans', category: INGREDIENT_CATEGORY.CANNED },
         BLACK_BEAN_SOUP: { name: 'black bean soup', category: INGREDIENT_CATEGORY.CANNED },
         BROCCOLI_CHEDDAR_SOUP: { name: 'broccoli cheddar soup', category: INGREDIENT_CATEGORY.CANNED },
+        BROWN_GRAVY: { name: 'brown gravy', category: INGREDIENT_CATEGORY.CANNED },
         CAMPBELLS: { name: 'campbell\'s', category: INGREDIENT_CATEGORY.CANNED },
         CAMPBELLS_CHICKEN_NOODLE_SOUP: { name: 'campbell\'s chicken noodle soup', category: INGREDIENT_CATEGORY.CANNED },
         CANNED_CREAMED_CORN: {
@@ -352,6 +353,7 @@ const INGREDIENTS = {
         DICED_TOMATO: { name: 'diced tomato', plural: 'diced tomatoes', category: INGREDIENT_CATEGORY.CANNED },
         DRY_BEAN: { name: 'dry bean', category: INGREDIENT_CATEGORY.CANNED },
         DRY_NAVY_BEAN: { name: 'dry navy bean', category: INGREDIENT_CATEGORY.CANNED },
+        DRY_BROWN_GRAVY_MIX: { name: 'dry brown gravy mix', category: INGREDIENT_CATEGORY.CANNED },
         DUMPLING_SOUP: { name: 'dumpling soup', category: INGREDIENT_CATEGORY.CANNED },
         EMPANADA_DOUGH_DISCS: { name: 'empanada dough discs', category: INGREDIENT_CATEGORY.CANNED },
         ENCHILADA_SOUP: { name: 'enchilada soup', category: INGREDIENT_CATEGORY.CANNED },
@@ -458,6 +460,7 @@ const INGREDIENTS = {
             name: 'dark soy sauce', category: INGREDIENT_CATEGORY.CONDIMENTS, imig: "https://images.unsplash.com/photo-1582581720432-de83a98176ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQwOTc3MzI2fA&ixlib=rb-4.0.3&q=80&w=400"
         },
         DIJON_MUSTARD: { name: 'dijon mustard', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        DRY_ITALIAN_DRESSING_MIX: { name: 'dry italian dressing mix', category: INGREDIENT_CATEGORY.CONDIMENTS },
         FISH_SAUCE: {
             name: 'fish sauce', category: INGREDIENT_CATEGORY.CONDIMENTS, img: "https://images.unsplash.com/photo-1638324395681-9f6509ebb3f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQxMDU4OTIxfA&ixlib=rb-4.0.3&q=80&w=400"
         },

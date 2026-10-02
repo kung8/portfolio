@@ -142,6 +142,7 @@ const creamyTuscanChickenPasta = require("./recipes/creamy-tuscan-chicken-pasta"
 const cremeBrulee = require("./recipes/creme-brulee");
 const cremeBruleeFrenchToast = require('./recipes/creme-brulee-french-toast.js'); // TODO: finish adding recipe
 const crescentRolls = require("./recipes/crescent-rolls");
+const crockpotRoast = require('./recipes/crockpot-roast.js');
 const croissants = require("./recipes/croissants");
 const curryPuff = require('./recipes/curry-puff.js');
 const deconstructedAppleCrisp = require('./recipes/deconstructed-apple-crisp.js');
@@ -691,6 +692,7 @@ const recipes = [
     panFriedChickenThighs,
     chickenKebab,
     potRoast,
+    crockpotRoast,
     chickenNoodleSoup,
     broccoliCheddarSoup,
     butternutSquashSoup,
@@ -956,12 +958,35 @@ module.exports = recipes;
             - https://foodtourrome.com/recipes-the-roman-food-tour/
 */
 
-// https://www.recipetineats.com/penne-all-arrabbiata-spicy-tomato-pasta/
-// https://www.facebook.com/groups/390994394103438/posts/785863451283195/ (butterfinger pie)
-// https://www.allrecipes.com/recipe/80398/serbian-cevapcici/
+// penne all'arrabbiata (spicy tomato pasta) - https://www.recipetineats.com/penne-all-arrabbiata-spicy-tomato-pasta/
+// butterfinger pie - https://www.facebook.com/groups/390994394103438/posts/785863451283195
+// serbian cevapcici - https://www.allrecipes.com/recipe/80398/serbian-cevapcici/
 
 
-// https://www.everylastbite.com/one-pan-red-thai-curry-noodles/?fbclid=IwdGRjcATDQKRwZG9mA2ZkaWQWUKh1BQFMMr6pE-SWhH-jAgu1yKfe8GV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5cXdQRw2GpsVcDe8_sbusZ2rm-v_a6rUebdfCQM1bN8-qCkW1tFwS__fUYHQ_aem_qeK-tMp__4bjGTtXeUA8rg
-// https://pinchofyum.com/red-chile-tostadas-with-eggs?fbclid=IwdGRjcATGqilwZG9mA2ZkaWQWUKvHIPOfelfswE5Je569HOs5vSOQGGV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR7a_DRdhEG0au4V2VCvaxJQap8Xrf3-yjg0QzKKVg76lGBlYJt2urhWNIoekg_aem_EgTs1MCrIPIDpyKaE3t0Ew
-// https://cicili.tv/15-min-chicken-blanket-dumplings/?fbclid=IwdGRleATIWKdwZG9mBWZkaWQWUKxZ11VR_3IH2E8OYvyM3IMsD4nKAGV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR4ISbm5jTlWlge1b8xfSU6p4_A3jRw1Xq6tLlaPVz_gpdW_kaJndHVsVCODEg_aem_RADmssD2Bdeeyqmq8PySfg
-// https://www.cheatdayeats.com/@cheatdayeats/fried-lasagna-rolls?fbclid=IwdGRleATYFdNwZG9mBWZkaWQWULh73_IhZ_ABAnTw1wh6dF1WGXKwNWV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5PRzjMBTiwDk48nUywz0XrKubytH5tN9Xe_B87--Iy7paOHNhHP1Hj_DwwvA_aem_R0rQxEHZQztnpnA8qUXb-w
+// thai red curry noodles - https://www.everylastbite.com/one-pan-red-thai-curry-noodles/?fbclid=IwdGRjcATDQKRwZG9mA2ZkaWQWUKh1BQFMMr6pE-SWhH-jAgu1yKfe8GV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5cXdQRw2GpsVcDe8_sbusZ2rm-v_a6rUebdfCQM1bN8-qCkW1tFwS__fUYHQ_aem_qeK-tMp__4bjGTtXeUA8rg
+// red chile tostadas with eggs - https://pinchofyum.com/red-chile-tostadas-with-eggs?fbclid=IwdGRjcATGqilwZG9mA2ZkaWQWUKvHIPOfelfswE5Je569HOs5vSOQGGV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR7a_DRdhEG0au4V2VCvaxJQap8Xrf3-yjg0QzKKVg76lGBlYJt2urhWNIoekg_aem_EgTs1MCrIPIDpyKaE3t0Ew
+// chicken blanket dumplings - https://cicili.tv/15-min-chicken-blanket-dumplings/?fbclid=IwdGRleATIWKdwZG9mBWZkaWQWUKxZ11VR_3IH2E8OYvyM3IMsD4nKAGV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR4ISbm5jTlWlge1b8xfSU6p4_A3jRw1Xq6tLlaPVz_gpdW_kaJndHVsVCODEg_aem_RADmssD2Bdeeyqmq8PySfg
+// fried lasagna rolls - https://www.cheatdayeats.com/@cheatdayeats/fried-lasagna-rolls?fbclid=IwdGRleATYFdNwZG9mBWZkaWQWULh73_IhZ_ABAnTw1wh6dF1WGXKwNWV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5PRzjMBTiwDk48nUywz0XrKubytH5tN9Xe_B87--Iy7paOHNhHP1Hj_DwwvA_aem_R0rQxEHZQztnpnA8qUXb-w
+// salt bread shiopan - https://erinscozykitchen.com/recipe/salt-bread-shiopan/?fbclid=IwdGRleAT5-sNwZG9mBWZkaWQWUNLhTatqlKlP0O1kS_is-cceeFQQL2V4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR44XgeNDmlKelOYpl1bR_G596FDxgjSVoVzOuUhWFBdaxn5KYua2YwyHMFH0A_aem_u4nbENxpM4jNXseMO_oorg
+// * crispy honey garlic chicken thighs - https://delish.ilyrecipes.com/crispy-honey-garlic-chicken-thighs/?fbclid=IwdGRleAUlijJleHRuA2FlbQIxMQBwZG9mBWZkaWQWUPOjemnGI8YgQhGQq369LdB7GGpM4HNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR4cDFmve7obOfTyUqgjeMTMSv2QwWMqPa2BYckH6IKzZP0oTlao-6EuDgeSbg_aem_G4uzy-j-5lHbf2KpIrd4yg#google_vignette
+// sourdough croissant bread - https://amybakesbread.com/sourdough-croissant-bread/?fbclid=IwdGRleAT9W9JwZG9mBWZkaWQWUNSxZPggmS6sJgS_xZOkN0ixJlAEzGV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5FFpSCzI6Ai4thiD2W24dIMLuSPhD3y_z6lMYkpab6npaDWA7MeDgjVCIzcw_aem_plrSW7vp-dUrT1PVXwaStw
+// cowboy butter fries - https://www.landolakes.com/recipe/11307/cowboy-butter-fries/?utm_medium=social&utm_source=facebook&utm_campaign=7437295&utm_content=cowboybutterfries&cdj=a&UTM_Medium=social&UTM_Source=facebook&UTM_Campaign=7437295&UTM_Content=21017692983&CDJ=a&fbclid=IwVERFWATxTClwZG9mBWZkaWQWUMt3bTH_nntTK0gdoCSKJcrLC19xhmV4dG4DYWVtATAAYWRpZAGrNgLM_rpVc3J0YwZhcHBfaWQKNjYyODU2ODM3OQABHgMD05tCDJApKgx9zoY1Od23cK0fe-0P22PAKAs5OvC9q1xE2cDRjjFO9MtW_aem_7_Etgyw3JwsYNi9mUUEt_A
+// * perfect scrambled eggs - https://southernbite.com/perfect-scrambled-eggs/
+
+// Instagram recipes:
+// McChicken - https://www.facebook.com/share/r/1EXY7BGdT6
+// Low calorie mcchicken - https://www.facebook.com/share/r/18PRXT57hk
+// Pancake - https://www.facebook.com/share/v/1F6oh2JcU9
+// Cooking crispy fish on one side - https://www.facebook.com/share/r/1Ep3kHPTBq
+// Chicken garlic bread - https://www.facebook.com/share/r/1EN4QiLbfq
+// Onion burger - https://www.facebook.com/share/r/14sh6XUg9ZK
+// * Rice and chicken street cart - https://www.facebook.com/share/v/1Jvhp2tE1v
+// Jalapeño poppers smash burger - https://www.facebook.com/share/r/18hzKhaGf7
+// Chicken parm egg roll - https://www.facebook.com/share/r/19knZL6QMf
+// Crispy chicken salad taco - https://www.facebook.com/share/r/1FCW8Px5rj
+// Taco Bell - https://www.facebook.com/share/v/1GY6hqHR4E
+// Garlic butter soy chicken sandwiches - https://www.facebook.com/share/r/172Y3fXpgD
+// Pizza log - https://www.facebook.com/share/r/1DWSrKgcWM
+// Chick fil a nuggets - https://www.facebook.com/share/v/19FiwKSsJC
+// Garlic cheese bread - https://www.facebook.com/share/r/1BzyTf3uZ2
+

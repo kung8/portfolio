@@ -276,6 +276,7 @@ const SECTIONS = {
     COOK_PORK: 'Cook Pork',
     COOK_POTATOES: 'Cook Potatoes',
     COOK_RICE: 'Cook Rice',
+    COOK_ROAST: 'Cook Roast',
     COOK_SAUCE: 'Cook Sauce',
     COOK_SHRIMP: 'Cook Shrimp',
     COOK_SOUP: 'Cook Soup',

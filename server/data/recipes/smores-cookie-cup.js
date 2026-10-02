@@ -1,4 +1,5 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const cup1 = '../assets/Products/smores-cookie-cup-1.jpeg';
+const cup2 = '../assets/Products/smores-cookie-cup-2.jpeg';
 
 const {
     CATEGORIES,
@@ -16,14 +17,13 @@ const COOKIE_PIE = 'Cookie Pie';
 const PREP_DESSERT = 'Prep Dessert';
 
 module.exports = {
-    wip: true,
     cardName: "S'mores Cookie Cup",
     name: "S'mores Cookie Cup",
-    img: '',
+    img: cup2,
     available: true,
-    recommended: false,
+    recommended: true,
     createdAt: '2026-04-05 22:10:41',
-    modifiedAt: '2026-08-02 15:57:04',
+    modifiedAt: '2026-10-02 09:35:58',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.AIR_FRY],
@@ -50,8 +50,8 @@ module.exports = {
     ],
     directions: [
         { step: `Fill each pie crust with chocolate chip and marshmallows.`, section: PREP_DESSERT },
-        { step: `Scoop some of the cookie dough and flatten to fit the width of the crust.`, section: PREP_DESSERT },
-        { step: `Air fry at 325ºF for 10 minutes.`, section: SECTIONS.AIR_FRY },
+        { step: `Scoop some of the cookie dough and flatten to fit the width of the crust.`, section: PREP_DESSERT, img: cup1 },
+        { step: `Air fry at 325ºF for 12 minutes.`, section: SECTIONS.AIR_FRY },
         { step: `Make an indentation in the center with the back of a spoon.`, section: SECTIONS.SERVE },
         { step: `Serve this with a scoop of ice cream.`, section: SECTIONS.SERVE },
     ],
