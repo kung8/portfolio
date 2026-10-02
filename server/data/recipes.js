@@ -989,4 +989,4 @@ module.exports = recipes;
 // Pizza log - https://www.facebook.com/share/r/1DWSrKgcWM
 // Chick fil a nuggets - https://www.facebook.com/share/v/19FiwKSsJC
 // Garlic cheese bread - https://www.facebook.com/share/r/1BzyTf3uZ2
-// Crispy chicken strips - https://www.facebook.com/share/r/1C4v64DoyQ
+// * Crispy chicken strips - https://www.facebook.com/share/r/1C4v64DoyQ
