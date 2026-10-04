@@ -1,4 +1,4 @@
-// const rolls1 = '../assets/Products/texas-roadhouse-butter-rolls-1.jpeg';
+const rolls1 = '../assets/Products/texas-roadhouse-butter-rolls-1.jpeg';
 
 const {
     CATEGORIES,
@@ -22,14 +22,13 @@ const MAKE_TEXAS_ROADHOUSE_BUTTER = 'Make Texas Roadhouse Butter';
 const WARM_UP_ROLLS = 'Warm Up Rolls';
 
 module.exports = {
-    wip: true,
     cardName: 'Texas Roadhouse Butter Rolls',
     name: 'Texas Roadhouse Butter Rolls',
-    img: '',
+    img: rolls1,
     available: true,
-    recommended: false,
+    recommended: true,
     createdAt: '2026-06-10 20:46:27',
-    modifiedAt: '2026-06-10 20:46:55',
+    modifiedAt: '2026-10-03 22:35:31',
     category: [CATEGORIES.APPETIZER, CATEGORIES.SIDE_DISH],
     genre: [GENRES.AMERICAN],
     method: [METHODS.MIX],
