@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 
 import App from './App';
+import { register as registerServiceWorker } from './serviceWorker';
 
 import './index.css';
 // import { ReactQueryDevtools } from "@tanstack/react-query/devtools";
@@ -22,3 +23,6 @@ root.render(
     </React.StrictMode>
   </HashRouter>
 );
+
+// Register service worker for PWA functionality
+registerServiceWorker();
