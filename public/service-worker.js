@@ -13,9 +13,9 @@ self.addEventListener('install', (event) => {
     caches.open(CACHE_NAME)
       .then((cache) => {
         console.log('Opened cache');
-        return cache.addAll(urlsToCache.map(url => new Request(url, { cache: 'reload' })))
-          .catch(() => {
-            console.log('Cache addAll failed, continuing anyway');
+        return cache.addAll(urlsToCache)
+          .catch((error) => {
+            console.error('Cache addAll failed:', error);
           });
       })
   );
@@ -52,8 +52,8 @@ self.addEventListener('fetch', (event) => {
           return response;
         }
         return fetch(event.request).then((response) => {
-          // Don't cache non-successful responses
-          if (!response || response.status !== 200 || response.type === 'basic') {
+          // Don't cache non-successful responses or non-basic types
+          if (!response || response.status !== 200 || response.type !== 'basic') {
             return response;
           }
           // Clone the response
@@ -61,12 +61,16 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME)
             .then((cache) => {
               cache.put(event.request, responseToCache);
+            })
+            .catch((error) => {
+              console.error('Cache put failed:', error);
             });
           return response;
         });
       })
       .catch(() => {
         // Return a cached offline page if needed
+        console.log('Fetch failed, attempting to serve fallback');
         return caches.match('/index.html');
       })
   );
