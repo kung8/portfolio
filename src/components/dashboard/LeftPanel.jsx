@@ -1,11 +1,12 @@
+import { memo, useCallback } from 'react';
 import githubLogo from '../../Assets/github.png';
 import gmailLogo from '../../Assets/gmail.png';
 import linkedInLogo from '../../Assets/linkedin.png';
 import messageLogo from '../../Assets/messages.png';
 import { links } from '.';
 
-export const LeftPanel = ({ selected, setSelected }) => {
-    const handleScroll = (num) => {
+const LeftPanelComponent = ({ selected, setSelected }) => {
+    const handleScroll = useCallback((num) => {
         setSelected(num);
         let top = 0 + (96 * num);
         for (let i = 0; i < num; i++) {
@@ -17,7 +18,7 @@ export const LeftPanel = ({ selected, setSelected }) => {
             top,
             behavior: 'smooth',
         })
-    }
+    }, [setSelected]);
 
     return (
         <div className='left-panel-container'>
@@ -25,8 +26,16 @@ export const LeftPanel = ({ selected, setSelected }) => {
                 <h2 className='name'>Kevin Ung</h2>
                 <h4 className='title'>Senior Software Engineer | Tabletop Game Designer</h4>
                 <p className='headline'>Building stuff to make life easier and more enjoyable and hoping to inspire others.</p>
-                <ul className="link-container">
-                    {links.filter(link => link.show).map((link, index) => <li key={index} onClick={() => handleScroll(index)} className={`${selected === index ? 'selected-link' : ''}`}>{link.label}</li>)}
+            <ul className="link-container">
+                    {links.filter(link => link.show).map((link, index) => (
+                        <li 
+                            key={index} 
+                            onClick={() => handleScroll(index)} 
+                            className={`${selected === index ? 'selected-link' : ''}`}
+                        >
+                            {link.label}
+                        </li>
+                    ))}
                 </ul>
             </div>
             <div className='bottom-container'>
@@ -46,3 +55,5 @@ export const LeftPanel = ({ selected, setSelected }) => {
         </div>
     )
 }
+
+export const LeftPanel = memo(LeftPanelComponent);

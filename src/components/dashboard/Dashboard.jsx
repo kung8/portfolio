@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {  useMemo, useState } from 'react';
 
 import { Cursor } from '../Cursor';
 import { LeftPanel, RightPanel } from '.';
@@ -6,10 +6,10 @@ import { LeftPanel, RightPanel } from '.';
 export const Dashboard = () => {
     const [selected, setSelected] = useState(0);
 
-    const props = {
+    const props = useMemo(() => ({
         selected,
         setSelected,
-    }
+    }), [selected]);
 
     return (
         <div className='dashboard page'>

@@ -1,39 +1,47 @@
-import { useEffect } from 'react';
-
+import {  memo, useCallback, useEffect } from 'react';
 import { links } from '.';
 
-export const RightPanel = ({ setSelected }) => {
-    // this logic is to sync the left panel selection with the right panel scroll position
-    const addScrollListener = () => {
-        const container = document.querySelector('.right-panel-container')
-        container.addEventListener('scroll', () => {
-            setTimeout(() => {
-                const position = container.scrollTop;
-                const max = links.filter(link => link.show).length;
-                let height = -80;
-                for (let i = 0; i < max; i++) {
-                    const itemHeight = document.getElementById(i)?.getBoundingClientRect().height + 96;
-                    const bottom = height + itemHeight;
+const RightPanelComponent = ({ setSelected }) => {
+    const handleScroll = useCallback(() => {
+        setTimeout(() => {
+            const container = document.querySelector('.right-panel-container');
+            if (!container) return;
+            
+            const position = container.scrollTop;
+            const max = links.filter(link => link.show).length;
+            let height = -80;
+            for (let i = 0; i < max; i++) {
+                const itemHeight = document.getElementById(i)?.getBoundingClientRect().height + 96;
+                const bottom = height + itemHeight;
 
-                    if (height < position && bottom > position) {
-                        setSelected(i);
-                        break;
-                    } else {
-                        height += itemHeight;
-                    }
+                if (height < position && bottom > position) {
+                    setSelected(i);
+                    break;
+                } else {
+                    height += itemHeight;
                 }
-            }, 250);
-        });
-    }
+            }
+        }, 250);
+    }, [setSelected]);
 
     useEffect(() => {
-        addScrollListener();
-        // eslint-disable-next-line
-    }, []);
+        const container = document.querySelector('.right-panel-container');
+        if (!container) return;
+
+        container.addEventListener('scroll', handleScroll);
+        
+        return () => {
+            container.removeEventListener('scroll', handleScroll);
+        };
+    }, [handleScroll]);
 
     return (
         <div className='right-panel-container'>
-            {links.filter(link => !!link.show).map((link, index) => <link.component key={index} id={index} />)}
+            {links.filter(link => !!link.show).map((link, index) => (
+                <link.component key={index} id={index} />
+            ))}
         </div>
     )
 }
+
+export const RightPanel = memo(RightPanelComponent);
