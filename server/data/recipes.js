@@ -991,3 +991,12 @@ module.exports = recipes;
 // Garlic cheese bread - https://www.facebook.com/share/r/1BzyTf3uZ2
 // * Crispy chicken strips - https://www.facebook.com/share/r/1C4v64DoyQ
 // Chili cheeseburger - https://www.facebook.com/reel/1736433057432085
+// Cheese bread https://www.facebook.com/share/v/18NXqkrUum
+// Air fryer chicken breast https://www.facebook.com/share/r/1H7BEgP76P
+// Tex-mex: https://www.facebook.com/share/r/1Pys392oCt
+// Punjabi masala fried chicken https://www.facebook.com/share/v/1EnwMxnpm2
+// Open faced gyozas https://www.facebook.com/share/r/1C2YvhSRrg
+// Crispy chicken popcorn https://www.facebook.com/share/r/1JjtLuJthh
+// Snickers: https://www.facebook.com/share/r/1HzeHuYXyK
+// Pretzel bites: https://www.facebook.com/share/r/1BkuWbK5mU
+// Crispy chicken salad wraps https://www.facebook.com/share/r/1DqpQF1Sac
