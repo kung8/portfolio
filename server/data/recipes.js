@@ -189,6 +189,7 @@ const grilledCheeseSandwich = require("./recipes/grilled-cheese-sandwich");
 const groundBeefPastelitos = require('./recipes/ground-beef-pastelitos.js');
 const groundBeefRamen = require('./recipes/ground-beef-ramen.js');
 const guacamole = require("./recipes/guacamole");
+const halalCartChickenAndRice = require('./recipes/halal-cart-chicken-and-rice.js');
 const gyoza = require('./recipes/gyoza.js');
 const halušky = require('./recipes/halušky.js');
 const hamAndSpinachPuffs = require('./recipes/ham-and-spinach-puffs.js');
@@ -641,6 +642,9 @@ const recipes = [
     // PERSIAN / IRANIAN
     dolmeh,
 
+    // MIDDLE EASTERN
+    halalCartChickenAndRice,
+
     // GREEK
     greekGyros,
     mediterraneanFlatbread,
@@ -862,13 +866,13 @@ module.exports = recipes;
 
 // TODO: Add Frisee Salad with goat cheese and pine nuts, wild rice, roasted asparagus, salmon en croute recipe (what Monica makes for Rachel's date in Friends)
 
-// TODO: https://cookingwithkarli.com/crave-rockstar-cookie-recipe/?fbclid=IwY2xjawNagudleHRuA2FlbQIxMQABHqLXZW8qtuz8axoFXldWq9mzV45reZ3YqqH5-KVdq3_rwiJ27fszAEok4vpu_aem_LDtydRXK6zvnQRPyuUW4fw
+// TODO: https://cookingwithkarli.com/crave-rockstar-cookie-recipe
 // TODO: https://www.allrecipes.com/lemon-ricotta-muffins-recipe-11826885
 // TODO: https://www.madewithlau.com/recipes/char-siu-chinese-bbq-pork
 // TODO: https://www.thespruceeats.com/how-make-paletas-or-mexican-style-ice-pops-4129109
 // TODO: https://www.lecremedelacrumb.com/easy-beef-empanadas/
 // TODO: replace the brownies recipe with the brownies2 recipe or the one in my "recipes-to-add" notes
-// TODO: https://www.chilipeppermadness.com/recipes/nacho-cheese-sauce-recipe/?fbclid=IwY2xjawOqcmFleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA80MDk5NjI2MjMwODU2MDkAAR5UsZQk83u7FGtOgk6zeeJEUzkSFnmRtRH_BSe59SioG7oFOJe0bwZYFqjCag_aem_11tsJkQKF0IvE6u72OuD-w
+// TODO: https://www.chilipeppermadness.com/recipes/nacho-cheese-sauce-recipe
 // TODO: https://www.braudogco.is/en-gb/kanilsn%C3%BA%C3%B0auppskriftin-okkar (referred by Jenny Richards)
 
 // Intended to replicate the dish I had at Magleby's in Springville, UT
@@ -959,18 +963,17 @@ module.exports = recipes;
 */
 
 // penne all'arrabbiata (spicy tomato pasta) - https://www.recipetineats.com/penne-all-arrabbiata-spicy-tomato-pasta/
-// butterfinger pie - https://www.facebook.com/groups/390994394103438/posts/785863451283195
 // serbian cevapcici - https://www.allrecipes.com/recipe/80398/serbian-cevapcici/
 
 
-// thai red curry noodles - https://www.everylastbite.com/one-pan-red-thai-curry-noodles/?fbclid=IwdGRjcATDQKRwZG9mA2ZkaWQWUKh1BQFMMr6pE-SWhH-jAgu1yKfe8GV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5cXdQRw2GpsVcDe8_sbusZ2rm-v_a6rUebdfCQM1bN8-qCkW1tFwS__fUYHQ_aem_qeK-tMp__4bjGTtXeUA8rg
-// red chile tostadas with eggs - https://pinchofyum.com/red-chile-tostadas-with-eggs?fbclid=IwdGRjcATGqilwZG9mA2ZkaWQWUKvHIPOfelfswE5Je569HOs5vSOQGGV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR7a_DRdhEG0au4V2VCvaxJQap8Xrf3-yjg0QzKKVg76lGBlYJt2urhWNIoekg_aem_EgTs1MCrIPIDpyKaE3t0Ew
-// chicken blanket dumplings - https://cicili.tv/15-min-chicken-blanket-dumplings/?fbclid=IwdGRleATIWKdwZG9mBWZkaWQWUKxZ11VR_3IH2E8OYvyM3IMsD4nKAGV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR4ISbm5jTlWlge1b8xfSU6p4_A3jRw1Xq6tLlaPVz_gpdW_kaJndHVsVCODEg_aem_RADmssD2Bdeeyqmq8PySfg
-// fried lasagna rolls - https://www.cheatdayeats.com/@cheatdayeats/fried-lasagna-rolls?fbclid=IwdGRleATYFdNwZG9mBWZkaWQWULh73_IhZ_ABAnTw1wh6dF1WGXKwNWV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5PRzjMBTiwDk48nUywz0XrKubytH5tN9Xe_B87--Iy7paOHNhHP1Hj_DwwvA_aem_R0rQxEHZQztnpnA8qUXb-w
-// salt bread shiopan - https://erinscozykitchen.com/recipe/salt-bread-shiopan/?fbclid=IwdGRleAT5-sNwZG9mBWZkaWQWUNLhTatqlKlP0O1kS_is-cceeFQQL2V4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR44XgeNDmlKelOYpl1bR_G596FDxgjSVoVzOuUhWFBdaxn5KYua2YwyHMFH0A_aem_u4nbENxpM4jNXseMO_oorg
-// * crispy honey garlic chicken thighs - https://delish.ilyrecipes.com/crispy-honey-garlic-chicken-thighs/?fbclid=IwdGRleAUlijJleHRuA2FlbQIxMQBwZG9mBWZkaWQWUPOjemnGI8YgQhGQq369LdB7GGpM4HNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR4cDFmve7obOfTyUqgjeMTMSv2QwWMqPa2BYckH6IKzZP0oTlao-6EuDgeSbg_aem_G4uzy-j-5lHbf2KpIrd4yg#google_vignette
-// sourdough croissant bread - https://amybakesbread.com/sourdough-croissant-bread/?fbclid=IwdGRleAT9W9JwZG9mBWZkaWQWUNSxZPggmS6sJgS_xZOkN0ixJlAEzGV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5FFpSCzI6Ai4thiD2W24dIMLuSPhD3y_z6lMYkpab6npaDWA7MeDgjVCIzcw_aem_plrSW7vp-dUrT1PVXwaStw
-// cowboy butter fries - https://www.landolakes.com/recipe/11307/cowboy-butter-fries/?utm_medium=social&utm_source=facebook&utm_campaign=7437295&utm_content=cowboybutterfries&cdj=a&UTM_Medium=social&UTM_Source=facebook&UTM_Campaign=7437295&UTM_Content=21017692983&CDJ=a&fbclid=IwVERFWATxTClwZG9mBWZkaWQWUMt3bTH_nntTK0gdoCSKJcrLC19xhmV4dG4DYWVtATAAYWRpZAGrNgLM_rpVc3J0YwZhcHBfaWQKNjYyODU2ODM3OQABHgMD05tCDJApKgx9zoY1Od23cK0fe-0P22PAKAs5OvC9q1xE2cDRjjFO9MtW_aem_7_Etgyw3JwsYNi9mUUEt_A
+// thai red curry noodles - https://www.everylastbite.com/one-pan-red-thai-curry-noodles
+// red chile tostadas with eggs - https://pinchofyum.com/red-chile-tostadas-with-eggs
+// chicken blanket dumplings - https://cicili.tv/15-min-chicken-blanket-dumplings
+// fried lasagna rolls - https://www.cheatdayeats.com/@cheatdayeats/fried-lasagna-rolls
+// salt bread shiopan - https://erinscozykitchen.com/recipe/salt-bread-shiopan
+// * crispy honey garlic chicken thighs - https://delish.ilyrecipes.com/crispy-honey-garlic-chicken-thighs
+// sourdough croissant bread - https://amybakesbread.com/sourdough-croissant-bread
+// cowboy butter fries - https://www.landolakes.com/recipe/11307/cowboy-butter-fries
 // * perfect scrambled eggs - https://southernbite.com/perfect-scrambled-eggs/
 
 // Instagram recipes:
@@ -980,7 +983,6 @@ module.exports = recipes;
 // Cooking crispy fish on one side - https://www.facebook.com/share/r/1Ep3kHPTBq
 // Chicken garlic bread - https://www.facebook.com/share/r/1EN4QiLbfq
 // Onion burger - https://www.facebook.com/share/r/14sh6XUg9ZK
-// * Rice and chicken street cart - https://www.facebook.com/share/v/1Jvhp2tE1v
 // Jalapeño poppers smash burger - https://www.facebook.com/share/r/18hzKhaGf7
 // Chicken parm egg roll - https://www.facebook.com/share/r/19knZL6QMf
 // Crispy chicken salad taco - https://www.facebook.com/share/r/1FCW8Px5rj
@@ -1000,3 +1002,15 @@ module.exports = recipes;
 // Snickers: https://www.facebook.com/share/r/1HzeHuYXyK
 // Pretzel bites: https://www.facebook.com/share/r/1BkuWbK5mU
 // Crispy chicken salad wraps https://www.facebook.com/share/r/1DqpQF1Sac
+// Honey Garlic Chicken Tenders: https://www.facebook.com/share/r/1DiNga1Us9
+// Fries bun around burger: https://www.facebook.com/share/v/1PfmfpQuic
+// Raising canes chicken: https://www.facebook.com/share/r/1DeZKaVqqR
+// Tortilla https://www.facebook.com/share/v/1KAeVnxsXA
+// Teriyaki chicken https://www.facebook.com/share/r/19tjvQam1L
+// Chicken tikka masala: https://www.facebook.com/share/v/1HyJa8CkcH
+// Chicken schwarma: https://www.facebook.com/share/r/1D1uvo8cSi
+// Twix https://www.facebook.com/share/r/1DZa26bZ4g
+// Spaghetti stuffed garlic bread https://www.facebook.com/share/v/19yC7hxYoE
+// Boneless wings: https://www.facebook.com/share/v/1ETze6egLa
+// Apple muffins https://www.facebook.com/share/r/1JeGrs3BVL
+// Cookie chocolate balls: https://www.facebook.com/share/r/1FFoHUWiVR
