@@ -87,6 +87,7 @@ const cherryAndDarkChocolateCrostata = require("./recipes/cherry-and-dark-chocol
 const chickenAdobo = require('./recipes/chicken-adobo.js'); // TODO: finish adding recipe
 const chickenAlfredo = require("./recipes/chicken-alfredo");
 const chickenBiryani = require("./recipes/chicken-biryani");
+const chickenBlanketDumplings = require('./recipes/chicken-blanket-dumplings.js');
 const chickenCordonBleu = require("./recipes/chicken-cordon-bleu");
 const chickenCurry = require('./recipes/chicken-curry.js');
 const chickenFrancese = require("./recipes/chicken-francese");
@@ -458,6 +459,7 @@ const recipes = [
     bibimbap,
 
     // CHINESE
+    chickenBlanketDumplings,
     chineseLoMeinNoodles,
     honeySesameChicken,
     orangeChicken,
@@ -968,7 +970,6 @@ module.exports = recipes;
 
 // thai red curry noodles - https://www.everylastbite.com/one-pan-red-thai-curry-noodles
 // red chile tostadas with eggs - https://pinchofyum.com/red-chile-tostadas-with-eggs
-// chicken blanket dumplings - https://cicili.tv/15-min-chicken-blanket-dumplings
 // fried lasagna rolls - https://www.cheatdayeats.com/@cheatdayeats/fried-lasagna-rolls
 // salt bread shiopan - https://erinscozykitchen.com/recipe/salt-bread-shiopan
 // * crispy honey garlic chicken thighs - https://delish.ilyrecipes.com/crispy-honey-garlic-chicken-thighs
