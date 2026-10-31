@@ -144,6 +144,7 @@ const creamyTuscanChickenPasta = require("./recipes/creamy-tuscan-chicken-pasta"
 const cremeBrulee = require("./recipes/creme-brulee");
 const cremeBruleeFrenchToast = require('./recipes/creme-brulee-french-toast.js'); // TODO: finish adding recipe
 const crescentRolls = require("./recipes/crescent-rolls");
+const crispyChickenRicePaperBites = require('./recipes/crispy-chicken-rice-paper-bites.js');
 const crockpotRoast = require('./recipes/crockpot-roast.js');
 const croissants = require("./recipes/croissants");
 const curryPuff = require('./recipes/curry-puff.js');
@@ -461,6 +462,7 @@ const recipes = [
 
     // CHINESE
     chickenBlanketDumplings,
+    crispyChickenRicePaperBites,
     chineseLoMeinNoodles,
     honeySesameChicken,
     orangeChicken,

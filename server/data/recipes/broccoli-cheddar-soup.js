@@ -26,7 +26,7 @@ module.exports = {
     available: true,
     recommended: false,
     createdAt: '{{createdAt}}',
-    modifiedAt: '2026-10-31 13:56:56',
+    modifiedAt: '2026-10-31 15:54:04',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SLOW_COOK],
@@ -51,7 +51,7 @@ module.exports = {
         { ...ONION_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
         { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
 
-        { ...WATER, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.LIQUIDS },
+        { ...WATER, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'warm', section: SECTIONS.LIQUIDS },
         { ...CHICKEN_BOUILLON, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.LIQUIDS },
         { ...CORNSTARCH, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.LIQUIDS },
 
