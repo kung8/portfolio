@@ -1872,6 +1872,7 @@ const INGREDIENTS = {
         POTATO_CHIPS: { name: 'potato chips', category: INGREDIENT_CATEGORY.SNACKS },
         PREMIUM_CRACKERS: { name: 'premium crackers', category: INGREDIENT_CATEGORY.SNACKS },
         PRETZELS: { name: 'pretzels', category: INGREDIENT_CATEGORY.SNACKS },
+        PRETZEL_RODS: { name: 'pretzel rods', category: INGREDIENT_CATEGORY.SNACKS },
         PRINGLES: { name: 'pringles', category: INGREDIENT_CATEGORY.SNACKS },
         PUDDING: { name: 'pudding', category: INGREDIENT_CATEGORY.SNACKS },
         QUAKER_RICE_CAKES: { name: 'quaker rice cakes', category: INGREDIENT_CATEGORY.SNACKS },

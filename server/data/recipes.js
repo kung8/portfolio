@@ -123,6 +123,7 @@ const chocolateCake = require('./recipes/chocolate-cake.js');
 const chocolateChipCookies = require("./recipes/chocolate-chip-cookies");
 const chocolateGelato = require('./recipes/chocolate-gelato.js');
 const chocolateMousse = require("./recipes/chocolate-mousse");
+const chocolateWand = require('./recipes/chocolate-wand.js');
 const chopSuey = require("./recipes/chop-suey");
 const choySumWithGarlicSauce = require("./recipes/choy-sum-with-garlic-sauce");
 const chunkyStrawberryBowl = require("./recipes/chunky-strawberry-bowl");
@@ -190,8 +191,8 @@ const grilledCheeseSandwich = require("./recipes/grilled-cheese-sandwich");
 const groundBeefPastelitos = require('./recipes/ground-beef-pastelitos.js');
 const groundBeefRamen = require('./recipes/ground-beef-ramen.js');
 const guacamole = require("./recipes/guacamole");
-const halalCartChickenAndRice = require('./recipes/halal-cart-chicken-and-rice.js');
 const gyoza = require('./recipes/gyoza.js');
+const halalCartChickenAndRice = require('./recipes/halal-cart-chicken-and-rice.js');
 const halušky = require('./recipes/halušky.js');
 const hamAndSpinachPuffs = require('./recipes/ham-and-spinach-puffs.js');
 const hamburger = require("./recipes/hamburger");
@@ -855,6 +856,7 @@ const recipes = [
     popcornBalls,
     chocolateMousse,
     caramelApples,
+    chocolateWand,
     graveyardDessert,
     tanghulu,
     smores,
