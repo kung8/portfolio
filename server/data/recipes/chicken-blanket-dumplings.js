@@ -23,13 +23,14 @@ const {
 const COOK_DUMPLINGS = 'Cook Dumplings';
 
 module.exports = {
+    wip: true,
     cardName: 'Chicken Blanket Dumplings',
     name: 'Chicken Blanket Dumplings',
     img: '',
     available: true,
     recommended: false,
     createdAt: '2026-10-26 00:05:45',
-    modifiedAt: '2026-10-26 00:05:45',
+    modifiedAt: '2026-10-31 08:51:32',
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.PAN_FRY, METHODS.STEAM],
