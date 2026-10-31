@@ -1,88 +1,76 @@
-const soup1 = '../assets/Products/broccoli-cheddar-soup-1.jpeg';
-const soup2 = '../assets/Products/broccoli-cheddar-soup-2.jpeg';
-const soup3 = '../assets/Products/broccoli-cheddar-soup-3.jpeg';
+// const example1 = '../assets/Products/example-1.jpeg';
 
-const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
-    ALL_PURPOSE_FLOUR,
-    BACON_BITS,
-    BLACK_PEPPER,
-    BREAD_BOWLS,
-    BROCCOLI,
-    CARROT,
-    CHEDDAR_CHEESE,
-    CHICKEN_BROTH,
-    GREEN_ONION,
-    HALF_AND_HALF,
-    NUTMEG,
-    SALT,
-    SAUCEPAN,
-    SOUR_CREAM,
-    SPATULA,
-    STOVE,
-    UNSALTED_BUTTER,
-    YELLOW_ONION,
-} = require('./ingredients');
+    CATEGORIES,
+    GENRES,
+    INGREDIENT_UNITS,
+    METHODS,
+    REHEAT_METHODS,
+    SECTIONS,
+    STORAGE_CONTAINER,
+    STORAGE_DURATION_UNIT,
+    STORAGE_LOCATION,
+    TIME_UNITS,
+    TYPES,
+    YIELD_UNITS
+} = require('./constants');
+const { BLACK_PEPPER, BROCCOLI, CARROT, CHEDDAR_CHEESE, CHICKEN_BOUILLON, CORNSTARCH, GARLIC_POWDER, HEAVY_CREAM, ONION_POWDER, SALT, SLOW_COOKER, UNSALTED_BUTTER, WATER } = require('./ingredients');
+
+const ADD_CHEESE = 'Add Cheese';
 
 module.exports = {
+    wip: true,
     cardName: 'Broccoli Cheddar Soup',
     name: 'Broccoli Cheddar Soup',
-    img: soup2,
+    img: '',
     available: true,
     recommended: false,
-    createdAt: '2024-10-06 14:00:33',
-    modifiedAt: '2026-05-31 18:41:43',
+    createdAt: '{{createdAt}}',
+    modifiedAt: '2026-10-31 13:56:56',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SLOW_COOK],
-    type: [TYPES.BREAD, TYPES.SOUP],
+    type: [TYPES.SOUP],
     yields: { amount: 6, unit: YIELD_UNITS.SERVING },
-    prepTime: { amount: 10, unit: TIME_UNITS.MINUTE },
-    cookTime: { amount: 25, unit: TIME_UNITS.MINUTE },
+    prepTime: { amount: 20, unit: TIME_UNITS.MINUTE },
+    cookTime: { amount: 4.5, unit: TIME_UNITS.HOUR },
+    waitTime: { amount: 0, unit: TIME_UNITS.MINUTE },
     websites: [
-        { 
-            label: 'Panera Broccoli Cheese Soup', 
-            link: 'https://www.the-girl-who-ate-everything.com/panera-broccoli-cheese-soup/',
-            authors: ['Christy Denney'],
-            finder: 'Kevin Ung', 
+        {
+            label: 'Broccoli Cheddar Soup',
+            link: 'https://www.facebook.com/100088945650113/videos/2243389206616528/',
+            authors: ["Caitlyn's Kitchen"],
+            finder: 'Kevin Ung'
         }
     ],
     ingredients: [
-        { ...UNSALTED_BUTTER, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
-        { ...YELLOW_ONION, amount: 1 / 2, unit: INGREDIENT_UNITS.MEDIUM, additionalDetails: 'diced', section: SECTIONS.SOUP },
-        { ...ALL_PURPOSE_FLOUR, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
-        { ...HALF_AND_HALF, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
-        { ...CHICKEN_BROTH, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.SOUP },
-        { ...BROCCOLI, amount: 2, unit: INGREDIENT_UNITS.HEAD, additionalDetails: 'chopped', section: SECTIONS.SOUP },
-        { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'matchstick', section: SECTIONS.SOUP },
-        { ...NUTMEG, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.SOUP },
-        { ...CHEDDAR_CHEESE, amount: 8, unit: INGREDIENT_UNITS.OUNCE, additionalDetails: '', section: SECTIONS.SOUP },
-        { ...SALT, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SOUP },
-        { ...BLACK_PEPPER, amount: '', unit: '', additionalDetails: 'to taste', section: SECTIONS.SOUP },
-        { ...BREAD_BOWLS, amount: 6, unit: '', additionalDetails: '', section: SECTIONS.MAIN },
-        { ...SOUR_CREAM, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...GREEN_ONION, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...CHEDDAR_CHEESE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
-        { ...BACON_BITS, amount: '', unit: '', additionalDetails: '', section: SECTIONS.TOPPINGS },
+        { ...BROCCOLI, amount: 5, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...CARROT, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...SALT, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...GARLIC_POWDER, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...ONION_POWDER, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+        { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: SECTIONS.VEGGIES },
+
+        { ...WATER, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.LIQUIDS },
+        { ...CHICKEN_BOUILLON, amount: 1, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.LIQUIDS },
+        { ...CORNSTARCH, amount: 1 / 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.LIQUIDS },
+
+        { ...UNSALTED_BUTTER, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.BUTTER },
+
+        { ...HEAVY_CREAM, amount: 1, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CHEESE },
+        { ...CHEDDAR_CHEESE, amount: 4, unit: INGREDIENT_UNITS.CUP, additionalDetails: '', section: SECTIONS.CHEESE },
     ],
     appliances: [
-        STOVE,
-    ],
-    supplies: [
-        { ...SAUCEPAN, additionalDetails: 'large' },
-        SPATULA,
+        SLOW_COOKER,
     ],
     directions: [
-        { step: `Over medium heat, melt butter.`, section: SECTIONS.SOUP },
-        { step: `Sauté onions in butter until soft.`, section: SECTIONS.SOUP },
-        { step: `Sprinkle flour over mixture.`, section: SECTIONS.SOUP },
-        { step: `Stir for 1 to 2 minutes.`, section: SECTIONS.SOUP },
-        { step: `Stir in half and half and broth.`, section: SECTIONS.SOUP },
-        { step: `Bring to a boil and reduce to a low heat.`, section: SECTIONS.SOUP },
-        { step: `Add broccoli and carrots and cook for 20 to 25 minutes.`, section: SECTIONS.SOUP, img: soup1 },
-        { step: `Add salt, pepper, and nutmeg as desired.`, section: SECTIONS.SOUP },
-        { step: `Optionally blend the soup if you would like a smoother texture.`, section: SECTIONS.SOUP },
-        { step: `Eat this in bread bowls or just serve with bread. Top with cheese and your favorite toppings.`, section: SECTIONS.SERVE, img: soup3 },
+        { step: `In a crockpot, combine the "${SECTIONS.VEGGIES}" section ingredients.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `In a mixing bowl, combine the "${SECTIONS.LIQUIDS}" section ingredients.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Add the liquid mixture with the butter to the crockpot.`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Cook on low until the vegetables are tender (about 4 hours).`, section: SECTIONS.COOK_VEGGIES },
+        { step: `Stir in "${SECTIONS.CHEESE}" section ingredients.`, section: ADD_CHEESE },
+        { step: `Cook on high until the cheese is melted (about 30 minutes).`, section: ADD_CHEESE },
+        { step: `Enjoy this broccoli cheddar soup in a soup bowl or bread bowl!`, section: SECTIONS.SERVE },
     ],
     store: [
         {
@@ -93,8 +81,8 @@ module.exports = {
     ],
     reheat: [
         {
-            method: REHEAT_METHODS.SIMMER,
-            instruction: 'Over medium-low heat, reheat in a saucepan until heated through (about 5 to 10 minutes). Stir frequently.',
+            method: REHEAT_METHODS.MICROWAVE,
+            instruction: 'Microwave until heated through (about 2-3 minutes).',
         },
     ],
     mealPrep: true,
