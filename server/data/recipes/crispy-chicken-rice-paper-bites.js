@@ -21,14 +21,14 @@ const PAPER_SECTION = 'Rice Paper';
 const PREP_RICE_PAPER = 'Prep Rice Paper';
 
 module.exports = {
-    wip: false,
+    wip: true,
     cardName: 'Rice Paper Bites',
     name: 'Crispy Chicken Rice Paper Bites',
     img: '',
     available: true,
     recommended: false,
     createdAt: '2026-10-31 15:54:04',
-    modifiedAt: '2026-10-31 15:54:04',
+    modifiedAt: '2026-10-31 15:55:20',
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.ASIAN, GENRES.CHINESE],
     method: [METHODS.AIR_FRY],

@@ -36,13 +36,14 @@ const RICE_LIQUIDS = 'Rice Liquids';
 const WHITE_SAUCE = 'White Sauce';
 
 module.exports = {
+    wip: true,
     cardName: 'Halal Cart Chicken and Rice',
     name: 'Halal Cart Chicken and Rice',
     img: '',
     available: true,
     recommended: false,
     createdAt: '2026-10-25 23:09:03',
-    modifiedAt: '2026-10-25 23:09:03',
+    modifiedAt: '2026-10-31 15:55:20',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MIDDLE_EASTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
