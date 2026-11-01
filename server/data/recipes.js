@@ -1019,3 +1019,6 @@ module.exports = recipes;
 // Boneless wings: https://www.facebook.com/share/v/1ETze6egLa
 // Apple muffins https://www.facebook.com/share/r/1JeGrs3BVL
 // Cookie chocolate balls: https://www.facebook.com/share/r/1FFoHUWiVR
+// Arroz con pollo: https://www.facebook.com/share/v/1C8ihmoy1t
+// Vodka sauce pasta: https://www.facebook.com/share/v/1DizwPFFrK
+// Pretzels: https://www.facebook.com/share/v/1QtVvAuMxw/?mibextid=wwXIfr

@@ -1,6 +1,6 @@
-const soup1 = '../assets/Products/broccoli-cheddar-soup-1.jpeg';
-const soup2 = '../assets/Products/broccoli-cheddar-soup-2.jpeg';
-const soup3 = '../assets/Products/broccoli-cheddar-soup-3.jpeg';
+const soup1 = '../assets/Products/panera-broccoli-cheddar-soup-1.jpeg';
+const soup2 = '../assets/Products/panera-broccoli-cheddar-soup-2.jpeg';
+const soup3 = '../assets/Products/panera-broccoli-cheddar-soup-3.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -31,7 +31,7 @@ module.exports = {
     available: true,
     recommended: false,
     createdAt: '2024-10-06 14:00:33',
-    modifiedAt: '2026-05-31 18:41:43',
+    modifiedAt: '2026-10-31 19:07:47',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SLOW_COOK],

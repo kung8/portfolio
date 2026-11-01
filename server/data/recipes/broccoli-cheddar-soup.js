@@ -1,4 +1,4 @@
-// const example1 = '../assets/Products/example-1.jpeg';
+const soup1 = '../assets/Products/broccoli-cheddar-soup-1.jpeg';
 
 const {
     CATEGORIES,
@@ -19,14 +19,13 @@ const { BLACK_PEPPER, BROCCOLI, CARROT, CHEDDAR_CHEESE, CHICKEN_BOUILLON, CORNST
 const ADD_CHEESE = 'Add Cheese';
 
 module.exports = {
-    wip: true,
     cardName: 'Broccoli Cheddar Soup',
     name: 'Broccoli Cheddar Soup',
-    img: '',
+    img: soup1,
     available: true,
-    recommended: false,
-    createdAt: '{{createdAt}}',
-    modifiedAt: '2026-10-31 15:54:04',
+    recommended: true,
+    createdAt: '2026-10-31 15:54:04',
+    modifiedAt: '2026-10-31 19:07:47',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.WESTERN, GENRES.AMERICAN],
     method: [METHODS.SLOW_COOK],
