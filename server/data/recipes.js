@@ -1021,4 +1021,4 @@ module.exports = recipes;
 // Cookie chocolate balls: https://www.facebook.com/share/r/1FFoHUWiVR
 // Arroz con pollo: https://www.facebook.com/share/v/1C8ihmoy1t
 // Vodka sauce pasta: https://www.facebook.com/share/v/1DizwPFFrK
-// Pretzels: https://www.facebook.com/share/v/1QtVvAuMxw/?mibextid=wwXIfr
+// Pretzels: https://www.facebook.com/share/v/1QtVvAuMxw/
