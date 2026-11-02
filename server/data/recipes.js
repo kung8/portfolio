@@ -292,6 +292,7 @@ const peanutButterThumbprintCookies = require("./recipes/peanut-butter-thumbprin
 const peanutChickenSpringRollBowl = require('./recipes/peanut-chicken-spring-roll-bowl.js');
 const pecanPieBars = require("./recipes/pecan-pie-bars");
 const pekingDuck = require("./recipes/peking-duck"); // TODO: find recipe 
+const penneAllaVodka = require("./recipes/penne-alla-vodka");
 const peperoniGrigliati = require('./recipes/peperoni-grigliati.js');
 const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
 const peppermintBark = require("./recipes/peppermint-bark");
@@ -572,6 +573,7 @@ const recipes = [
     creamyTuscanChickenPasta,
     pastaPomodoro,
     pastaAlLimone,
+    penneAllaVodka,
     shrimpScampi,
     potatoGnocchi,
     ravioli,
@@ -1020,5 +1022,4 @@ module.exports = recipes;
 // Apple muffins https://www.facebook.com/share/r/1JeGrs3BVL
 // Cookie chocolate balls: https://www.facebook.com/share/r/1FFoHUWiVR
 // Arroz con pollo: https://www.facebook.com/share/v/1C8ihmoy1t
-// Vodka sauce pasta: https://www.facebook.com/share/v/1DizwPFFrK
 // Pretzels: https://www.facebook.com/share/v/1QtVvAuMxw/
