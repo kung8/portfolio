@@ -1,3 +1,8 @@
+const dumplings1 = '../assets/Products/chicken-blanket-dumplings-1.jpeg';
+const dumplings2 = '../assets/Products/chicken-blanket-dumplings-2.jpeg';
+const dumplings3 = '../assets/Products/chicken-blanket-dumplings-3.jpeg';
+const dumplings4 = '../assets/Products/chicken-blanket-dumplings-4.jpeg';
+
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
     CABBAGE,
@@ -23,14 +28,13 @@ const {
 const COOK_DUMPLINGS = 'Cook Dumplings';
 
 module.exports = {
-    wip: true,
     cardName: 'Chicken Blanket Dumplings',
     name: 'Chicken Blanket Dumplings',
-    img: '',
+    img: dumplings4,
     available: true,
-    recommended: false,
+    recommended: true,
     createdAt: '2026-10-26 00:05:45',
-    modifiedAt: '2026-10-31 08:51:32',
+    modifiedAt: '2026-11-06 02:49:48',
     category: [CATEGORIES.APPETIZER],
     genre: [GENRES.CHINESE, GENRES.ASIAN],
     method: [METHODS.PAN_FRY, METHODS.STEAM],
@@ -81,11 +85,11 @@ module.exports = {
         { step: `In a mixing bowl, combine the "${SECTIONS.FILLING}" section ingredients.`, section: SECTIONS.PREP_FILLING },
         
         { step: `In a pan, add the oil.`, section: COOK_DUMPLINGS },
-        { step: `Add filling into portions to the pan.`, section: COOK_DUMPLINGS },
-        { step: `Cover each portion with the wonton wrapper.`, section: COOK_DUMPLINGS },
+        { step: `Add filling into portions to the pan.`, section: COOK_DUMPLINGS, img: dumplings1 },
+        { step: `Cover each portion with the wonton wrapper.`, section: COOK_DUMPLINGS, img: dumplings2 },
         { step: `Turn on medium heat. Pan fry until the bottom sets (about 1 minute).`, section: COOK_DUMPLINGS },
         { step: `Add water. Cover and steam until the chicken is cooked through (about 5 minutes).`, section: COOK_DUMPLINGS },
-        { step: `To crisp the bottom, uncover and cook for another 2 minutes until the bottoms turn golden brown and crispy.`, section: COOK_DUMPLINGS },
+        { step: `To crisp the bottom, uncover and cook for another 2 minutes until the bottoms turn golden brown and crispy.`, section: COOK_DUMPLINGS, img: dumplings3 },
 
         { step: `Enjoy these simplified dumplings. Serve hot with your favorite dipping sauce.`, section: SECTIONS.SERVE },
     ],
