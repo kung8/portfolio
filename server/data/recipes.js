@@ -293,6 +293,7 @@ const peanutChickenSpringRollBowl = require('./recipes/peanut-chicken-spring-rol
 const pecanPieBars = require("./recipes/pecan-pie-bars");
 const pekingDuck = require("./recipes/peking-duck"); // TODO: find recipe 
 const penneAllaVodka = require("./recipes/penne-alla-vodka");
+const penneArrabbiata = require("./recipes/penne-arrabbiata");
 const peperoniGrigliati = require('./recipes/peperoni-grigliati.js');
 const pepperSteakStirFry = require("./recipes/pepper-steak-stir-fry");
 const peppermintBark = require("./recipes/peppermint-bark");
@@ -574,6 +575,7 @@ const recipes = [
     pastaPomodoro,
     pastaAlLimone,
     penneAllaVodka,
+    penneArrabbiata,
     shrimpScampi,
     potatoGnocchi,
     ravioli,
@@ -970,9 +972,7 @@ module.exports = recipes;
             - https://foodtourrome.com/recipes-the-roman-food-tour/
 */
 
-// penne all'arrabbiata (spicy tomato pasta) - https://www.recipetineats.com/penne-all-arrabbiata-spicy-tomato-pasta/
 // serbian cevapcici - https://www.allrecipes.com/recipe/80398/serbian-cevapcici/
-
 
 // thai red curry noodles - https://www.everylastbite.com/one-pan-red-thai-curry-noodles
 // red chile tostadas with eggs - https://pinchofyum.com/red-chile-tostadas-with-eggs
