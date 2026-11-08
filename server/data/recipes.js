@@ -72,6 +72,7 @@ const cacioEPepe = require("./recipes/cacio-e-pepe");
 const cafeRioBowl = require("./recipes/cafe-rio-bowl");
 const cajunGarlicButterShrimp = require('./recipes/cajun-garlic-butter-shrimp.js');
 const cajunShrimp = require("./recipes/cajun-shrimp");
+const caramelAppleCrisp = require('./recipes/caramel-apple-crisp.js');
 const caramelApples = require("./recipes/caramel-apples")
 const caramelPopcorn = require("./recipes/caramel-popcorn");
 const caramelizedMushroom = require("./recipes/caramelized-mushroom");
@@ -848,6 +849,7 @@ const recipes = [
     applePie,
     noBakePumpkinPie,
     deconstructedAppleCrisp,
+    caramelAppleCrisp,
     biscoffCookiePie,
     frozenMudPie,
     keyLimePie,

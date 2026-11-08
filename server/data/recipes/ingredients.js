@@ -450,6 +450,7 @@ const INGREDIENTS = {
         },
         CAESAR_DRESSING: { name: 'caesar dressing', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CAPER: { name: 'caper', category: INGREDIENT_CATEGORY.CONDIMENTS },
+        CARAMEL_SAUCE: { name: 'caramel sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CHILI_OIL: { name: 'chili oil', category: INGREDIENT_CATEGORY.CONDIMENTS },
         CHIPOTLE_SAUCE: { name: 'chipotle sauce', category: INGREDIENT_CATEGORY.CONDIMENTS },
         COOKIE_BUTTER: { name: 'cookie butter', category: INGREDIENT_CATEGORY.CONDIMENTS },
