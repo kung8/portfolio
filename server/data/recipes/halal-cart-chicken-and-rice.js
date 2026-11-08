@@ -43,7 +43,7 @@ module.exports = {
     available: true,
     recommended: false,
     createdAt: '2026-10-25 23:09:03',
-    modifiedAt: '2026-10-31 15:55:20',
+    modifiedAt: '2026-11-07 22:18:18',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MIDDLE_EASTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],
@@ -88,7 +88,7 @@ module.exports = {
         { ...BONELESS_AND_SKINLESS_CHICKEN_THIGH, amount: 2, unit: INGREDIENT_UNITS.POUND, additionalDetails: 'cut into 1-inch pieces', section: SECTIONS.CHICKEN },
 
         { ...BASMATI_RICE, amount: 2, unit: INGREDIENT_UNITS.CUP, additionalDetails: 'rinsed', section: SECTIONS.RICE },
-        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: 'extra-virgin', section: SECTIONS.RICE },
+        { ...OLIVE_OIL, amount: 2, unit: INGREDIENT_UNITS.TABLESPOON, additionalDetails: '', section: SECTIONS.RICE },
         { ...YELLOW_ONION, amount: 1, unit: '', additionalDetails: 'diced', section: SECTIONS.RICE },
         { ...TURMERIC, amount: 1.5, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: RICE_SEASONINGS },
         { ...CUMIN, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: RICE_SEASONINGS },
@@ -102,9 +102,9 @@ module.exports = {
         { ...WATER, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WHITE_SAUCE },
         { ...LEMON_JUICE, amount: 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WHITE_SAUCE },
         { ...WHITE_SUGAR, amount: 1 / 2, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'adjust to taste', section: WHITE_SAUCE },
-        { ...PARSLEY, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'dried', section: WHITE_SAUCE },
+        { ...PARSLEY, amount: 1, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WHITE_SAUCE },
         { ...BLACK_PEPPER, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WHITE_SAUCE },
-        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: 'kosher', section: WHITE_SAUCE },
+        { ...SALT, amount: 1 / 4, unit: INGREDIENT_UNITS.TEASPOON, additionalDetails: '', section: WHITE_SAUCE },
 
         { ...LETTUCE, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVING },
         { ...ROMA_TOMATO, amount: '', unit: '', additionalDetails: '', section: SECTIONS.SERVING },
@@ -139,7 +139,7 @@ module.exports = {
 
         { step: `Over medium-high heat, heat a large pan.`, section: SECTIONS.COOK_CHICKEN },
         { step: `Cook the chicken in batches as needed. Add the chicken in a single layer. Cook, without stirring, 5 to 7 minutes.`, section: SECTIONS.COOK_CHICKEN },
-        { step: `Stir the chicken. Cook until fully cooked and caramelized on all sides (about 5 minutes).`, section: SECTIONS.COOK_CHICKEN },
+        { step: `Stir the chicken. Cook until fully cooked and caramelized on all sides (about 5 more minutes).`, section: SECTIONS.COOK_CHICKEN },
         { step: `Transfer to a plate. Repeat with the remaining chicken.`, section: SECTIONS.COOK_CHICKEN },
 
         { step: `Enjoy this street cart classic! Serve the chicken over the yellow rice with the white sauce, lettuce, tomatoes, and pita.`, section: SECTIONS.SERVE },
