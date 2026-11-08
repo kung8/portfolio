@@ -3,13 +3,13 @@ const { BLACK_PEPPER, CAYENNE_PEPPER, CRUSHED_TOMATOES, GARLIC, LARGE_POT, OLIVE
 
 module.exports = {
     wip: true,
-    cardName: "Penne Arrabbiata",
-    name: "Penne Arrabbiata",
+    cardName: 'Penne Arrabbiata',
+    name: 'Penne Arrabbiata',
     img: '',
     available: true,
     recommended: false,
     createdAt: '2026-11-07 11:18:00',
-    modifiedAt: '2026-11-07 11:18:00',
+    modifiedAt: '2026-11-07 22:19:49',
     category: [CATEGORIES.DINNER, CATEGORIES.LUNCH],
     genre: [GENRES.ITALIAN],
     method: [METHODS.BOIL, METHODS.SAUTE, METHODS.SIMMER],
