@@ -1,4 +1,4 @@
-// const halalCartChickenAndRice1 = '../assets/Products/halal-cart-chicken-and-rice-1.jpeg';
+const halalCartChickenAndRice1 = '../assets/Products/halal-cart-chicken-and-rice-1.jpeg';
 
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, PROTEIN, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const {
@@ -36,14 +36,13 @@ const RICE_LIQUIDS = 'Rice Liquids';
 const WHITE_SAUCE = 'White Sauce';
 
 module.exports = {
-    wip: true,
     cardName: 'Halal Cart Chicken and Rice',
     name: 'Halal Cart Chicken and Rice',
-    img: '',
+    img: halalCartChickenAndRice1,
     available: true,
-    recommended: false,
+    recommended: true,
     createdAt: '2026-10-25 23:09:03',
-    modifiedAt: '2026-11-07 22:18:18',
+    modifiedAt: '2026-11-08 23:19:12',
     category: [CATEGORIES.LUNCH, CATEGORIES.DINNER],
     genre: [GENRES.MIDDLE_EASTERN, GENRES.AMERICAN],
     method: [METHODS.PAN_FRY, METHODS.SIMMER],

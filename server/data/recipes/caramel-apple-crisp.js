@@ -1,3 +1,4 @@
+const caramelAppleCrisp1 = '../assets/Products/caramel-apple-crisp-1.jpeg';
 const { CATEGORIES, GENRES, INGREDIENT_UNITS, METHODS, REHEAT_METHODS, SECTIONS, STORAGE_CONTAINER, STORAGE_DURATION_UNIT, STORAGE_LOCATION, TIME_UNITS, TYPES, YIELD_UNITS } = require('./constants');
 const { ALL_PURPOSE_FLOUR, BAKING_PAN, BROWN_SUGAR, CARAMEL_SAUCE, CINNAMON, COOKING_SPRAY, CORNSTARCH, GRANNY_SMITH_APPLE, LEMON_JUICE, MIXING_BOWL, OVEN, ROLLED_OATS, SERVING_SPOON, UNSALTED_BUTTER, VANILLA_ICE_CREAM } = require('./ingredients');
 
@@ -8,14 +9,13 @@ const PREP_APPLE_FILLING = 'Prep Apple Filling';
 const PREP_OAT_CRUMBLE = 'Prep Oat Crumble';
 
 module.exports = {
-    wip: true,
     cardName: 'Caramel Apple Crisp',
     name: 'Caramel Apple Crisp',
-    img: '',
+    img: caramelAppleCrisp1,
     available: true,
     recommended: false,
     createdAt: '2026-11-08 01:26:23',
-    modifiedAt: '2026-11-08 01:26:23',
+    modifiedAt: '2026-11-08 23:19:12',
     category: [CATEGORIES.DESSERT],
     genre: [GENRES.AMERICAN],
     method: [METHODS.BAKE],
@@ -70,6 +70,9 @@ module.exports = {
         { step: `Bake until the apples are tender and topping is golden and bubbling (about 35 to 45 minutes).`, section: SECTIONS.BAKE },
 
         { step: `Serve this warm topped with vanilla ice cream and caramel sauce.`, section: SECTIONS.SERVE },
+    ],
+    notes: [
+        { note: `I want to work on this recipe a little more to get the top a bit crispier. I might actually try a struessel.` },
     ],
     store: [
         {
