@@ -1025,3 +1025,11 @@ module.exports = recipes;
 // Cookie chocolate balls: https://www.facebook.com/share/r/1FFoHUWiVR
 // Arroz con pollo: https://www.facebook.com/share/v/1C8ihmoy1t
 // Pretzels: https://www.facebook.com/share/v/1QtVvAuMxw/
+// Butterfingers https://www.facebook.com/share/r/1CLf3dhMd4
+// Hand pot pie https://www.facebook.com/share/r/1Gfxga3v9z
+// Pretzel bites https://www.facebook.com/share/r/1Duyt3Tbyd
+// Nashville hot honey chicken https://www.facebook.com/share/r/19z3mMY5Vr
+// Crockpot Mongolian beef noodles https://www.facebook.com/share/r/19nVoksvt1
+// Pita https://www.facebook.com/share/r/1Cb8HP8zW6
+// Quesarito https://www.facebook.com/share/v/19zP325kTT
+// Carbonara https://www.facebook.com/share/v/16V6xguxwgq
